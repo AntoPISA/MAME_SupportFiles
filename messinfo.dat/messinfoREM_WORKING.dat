@@ -1,4 +1,4 @@
-﻿#    MESSINFO_REM.DAT v0.261 Latest update:  Dec 09, 2023
+﻿#    MESSINFO_REM.DAT v0.262 Latest update:  Feb 11, 2024
 #                             Project start: Nov 07, 2011
 #
 #    Author:  Antonio Paradossi (AntoPISA) from Pisa (Tuscany/Italy)
@@ -9,8 +9,8 @@
 #    homepage: http://www.progettosnaps.net/messinfo
 #
 #
-#    Internal version: 1.39
-#    Total items: 306
+#    Internal version: 1.40
+#    Total items: 310
 #
 #
 $info=24c16a
@@ -4489,6 +4489,127 @@ WIP:
 - 0.149u1: Added PC_KBDC_SLOT device.
 
 $end
+$info=pc8401a
+$mame
+0.154 [Curt Coder]
+
+PC-8401A-LS, NEC, 1984
+
+The NEC 8401 A is the second generation NEC notebook portable computer. It is significantly different from the 8201. The 8401 has a 16-line by 80-column fold-up LCD screen, 64K of RAM, and a built-in 300 baud modem, and can be operated using batteries or an AC adapter. It uses the CP/M operating system and has four built-in software packages including Wordstar-To-Go, Calc-To-Go, Telcom (telecommunications utility), and Filer (personal card filing program). BASIC is not included in the system (source: http://www.old-computers.com/museum/computer.asp?c=350&st=1).
+
+DRIVER:
+nec/pc8401a.cpp
+
+DRIVER STATUS:
+Emulation: Preliminary
+Color: Good
+Sound: Preliminary
+Graphics: Good
+Save State: Unsupported
+
+SOFTWARE LIST:
+-
+
+RESOURCES:
+Snap and Title.
+
+WIP:
+- 0.262: Machine removed.
+- 0.237: Remove wrong comment [hap].
+- 0.154: Curt Coder added 'NEC PC-8401A-LS' system.
+
+ROMSET:
+None dumped.
+
+$end
+$info=pce_cdsys3
+$mame
+0.149
+
+PCE/TG16 CD-System HuCard v3.00, <unknown>, ????
+
+DRIVER:
+devices/bus/pce/pce_rom.cpp
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Unsupported
+
+WIP:
+- 0.262: Device removed.
+- 0.253: Changed description to 'PCE/TG16 CD-System HuCard v3.00'.
+- 0.186: Changed description to 'PCE/TG16 CD-System Cart v3.00'.
+- 0.149: Added 'PCE & TG16 CD-System Cart v3.00' device.
+
+$end
+$info=pcimga
+$mame
+0.259 [Angelo Salese]
+
+Sandbox PCI PC (430HX with Matrox Millennium), Hack Inc., 1998
+
+<No certified information found. If you have info on this machine, please contact us!>
+
+DRIVER:
+pc/pcipc.cpp
+
+DRIVER STATUS:
+Emulation: Preliminary
+Color: Good
+Sound: Preliminary
+Graphics: Good
+Save State: Unsupported
+
+SOFTWARE LIST:
+-
+
+RESOURCES:
+Snap and Title.
+
+WIP:
+- 0.262: Machine removed.
+- 0.259: Angelo Salese added 'Hack Inc. Sandbox PCI PC (430HX with Matrox Millennium)' system.
+
+ROMSET:
+131072 bytes in 1 file / 114Kb packed
+
+$end
+$info=pcinv3
+$mame
+0.256 [Angelo Salese]
+
+Sandbox PCI PC (430HX with nVidia Riva 128), Hack Inc., 1998
+
+<No certified information found. If you have info on this machine, please contact us!>
+
+DRIVER:
+pc/pcipc.cpp
+
+DRIVER STATUS:
+Emulation: Preliminary
+Color: Good
+Sound: Preliminary
+Graphics: Imperfect
+Save State: Unsupported
+
+SOFTWARE LIST:
+-
+
+RESOURCES:
+Snap and Title.
+
+WIP:
+- 0.262: Machine removed.
+- 0.259: Changed description to 'Sandbox PCI PC (430HX with nVidia Riva 128)'.
+- 0.256: Angelo Salese added 'Hack Inc. Sandbox PCI PC (430HX with Riva 128)' system.
+
+ROMSET:
+131072 bytes in 1 file / 63.1Kb packed
+
+$end
 $info=psion_asic5_peripheral
 $mame
 0.253 [Nigel Barnes]
@@ -6202,4 +6323,4 @@ WIP:
 $end
 #
 #
-#  © 2011/2023 AntoPISA
+#  © 2011/2024 AntoPISA
