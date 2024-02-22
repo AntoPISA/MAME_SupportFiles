@@ -1,4 +1,4 @@
-MAME CATEGORY.ini 0.262 (Feb  9, 2024)
+MAME CATEGORY.ini 0.262 (Feb 22, 2024)
 © AntoPISA       www.progettoSNAPS.net
 ======================================
 
@@ -25,6 +25,7 @@ In this package you can find these ini files:
 - Not Working Arcade: List of not working arcade machines (to complete MAMEUI).
 - Parents Arcade: List of arcade parent machines (to complete MAMEUI).
 - Players: List of MAME arcade machines divided by number of players.
+- Prototype: List of machines identified as "prototype".
 - Resolution: MAME machines divided by original resolution.
 - Screenless: Only MAME machines without screen.
 - Working Arcade: List of working arcade machines (to complete MAMEUI).
@@ -34,6 +35,7 @@ These files must be copied to the directory called "folders" of your MAME.
 
 WhatsNew:
 =========
+2024/02/22: Added a new ini file: Prototype.ini that lists MAME machines identified as "prototype".
 2024/02/09: Aligned files to MAME 0.262. The files can also be found here https://github.com/AntoPISA/MAME_SupportFiles.
 2023/12/05: Aligned files to MAME 0.261.
 2023/11/03: Fixed files: arcade.ini. arcade_BIOS.ini and arcade_NOBIOS.ini, upon user feedback.
