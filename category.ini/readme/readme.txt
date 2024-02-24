@@ -1,4 +1,4 @@
-MAME CATEGORY.ini 0.262 (Feb 22, 2024)
+MAME CATEGORY.ini 0.262 (Feb 24, 2024)
 © AntoPISA       www.progettoSNAPS.net
 ======================================
 
@@ -35,6 +35,7 @@ These files must be copied to the directory called "folders" of your MAME.
 
 WhatsNew:
 =========
+2024/02/24: Fixed the query that generates "Bootlegs.ini" and "Not Bootlegs.ini" ini files.
 2024/02/22: Added a new ini file: Prototype.ini that lists MAME machines identified as "prototype".
 2024/02/09: Aligned files to MAME 0.262. The files can also be found here https://github.com/AntoPISA/MAME_SupportFiles.
 2023/12/05: Aligned files to MAME 0.261.
