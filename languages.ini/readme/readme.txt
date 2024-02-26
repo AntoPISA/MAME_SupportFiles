@@ -1,4 +1,4 @@
-MAME LANGUAGES.ini 0.262 (Feb  9, 2024)
+MAME LANGUAGES.ini 0.262 (Feb 26, 2024)
 (C) AntoPISA      www.progettoSNAPS.net
 =======================================
 
@@ -7,12 +7,11 @@ The file, extracted from the zip file, should be placed in the folder named 'Fol
 
 items  - Language
 =========================
-    1  - Belgian
     1  - Bulgarian
    68  - Chinese
     5  - Croatian
     3  - Czech
-  106  - Dutch
+  107  - Dutch
 31867  - English
   148  - French
   303  - German
@@ -36,6 +35,7 @@ items  - Language
 
 WhatsNew:
 ==================================
+2024/02/26 1.56: Removed "Belgian" language and replaced with "Dutch".
 2024/02/09 1.55: Added 0.262 sets. The files can also be found here https://github.com/AntoPISA/MAME_SupportFiles.
 2023/12/05 1.54: Added 0.261 sets.
 2023/11/01 1.53: Added 0.260 sets.
