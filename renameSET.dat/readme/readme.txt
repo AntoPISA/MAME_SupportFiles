@@ -1,11 +1,11 @@
-MAME RENAMESET.dat 0.262 (Feb  9, 2024)
+MAME RENAMESET.dat 0.263 (Mar  1, 2024)
 (C) AntoPISA      www.progettoSNAPS.net
 ---------------------------------------
 
 WhatsNew:
 ---------
+5.21 2024/03/00: Added 0.263 infos, also update all the other files.
 5.20 2024/02/09: From today you can also find the files here: https://github.com/AntoPISA/MAME_SupportFiles.
-2023/12/05: Aligned files to MAME 0.261.
 5.19 2024/02/05: Added 0.262 infos, also update all the other files.
 5.18 2023/26/12: Corrected the name of a game removed in version 0.84u6.
 5.17 2023/25/12: Various corrections in old MAME versions: added 1 "delete" game in version 0.142u2; removed 2 "deletes" in version $0.142; removed 4 repeated "renames" and added 1 "delete" in version 0.79; added 1 "rename" in version 0.76u1; added 1 "delete" from version 0.74; changed 1 "rename" from version 0.72; removed 1 "rename" from version 0.71u2; removed 1 "delete" from version 0.34b7.
