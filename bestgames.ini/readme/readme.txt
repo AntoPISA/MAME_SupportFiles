@@ -1,4 +1,4 @@
-MAME BESTGAMES.ini 0.250 (Feb  9, 2024)
+MAME BESTGAMES.ini 0.263 (Mar  5, 2024)
 (C) AntoPISA      www.progettoSNAPS.net
 =======================================
 
@@ -22,8 +22,8 @@ and the vote that you would like him to be assigned. I will consider all your ma
 
 WhatsNew:
 -----------------------------------------
+2024/03/05 1.33: Online the version 0.263; 2 games renamed and 23 added (3,497 evaluated).
 2024/02/09 1.32: The files can also be found here https://github.com/AntoPISA/MAME_SupportFiles.
-2023/12/05: Aligned files to MAME 0.261.
 2022/12/07 1.31: Online the version 0.250; 1 clone game removed (victlapa) and 3 new games added (3,474 evaluated).
 2022/10/06 1.30: Online the version 0.248; 2 games removed, 3 renamed and 15 new games added (3,471 evaluated).
 2022/01/09 1.29: Online the version 0.239; 8 new games added (3,458 evaluated).
@@ -91,14 +91,14 @@ Number of Assigning Scores:
 *  10 >  20 :   89
 *  20 >  30 :   33
 *  30 >  40 :  328
-*  40 >  50 :  112
-*  50 >  60 : 1021  (+  2)
-*  60 >  70 :  273  (+  1)
-*  70 >  80 :  997
-*  80 >  90 :  220
-*  90 > 100 :  383
+*  40 >  50 :  112  (+  2)
+*  50 >  60 : 1021  (+  3)
+*  60 >  70 :  273  (+  8)
+*  70 >  80 :  997  (+  4)
+*  80 >  90 :  220  (+  3)
+*  90 > 100 :  383  (+  3)
 ===========================
-             3,474  (+  3)
+             3,497  (+ 23)
 
 
 (C) 2016/2024 AntoPISA
