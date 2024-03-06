@@ -1,10 +1,12 @@
-﻿# MAME GAMEINIT.DAT v0.250   Latest Update:  December 6, 2022
+﻿# MAME GAMEINIT.DAT v0.263   Latest Update:    March  6, 2024
 #                         Project started: September 10, 2015
 #
-#                         Homepage: https://www.progettosnaps.net/gameinit.dat
+# Homepage         : https://www.progettosnaps.net/gameinit.dat
+# Githun repository: https://github.com/AntoPISA/MAME_SupportFiles
+# Edited and verified with motoschifo's MDE, downloadable here: http://adb.arcadeitalia.net/?page=download
 #
 #
-# Version: 0.43
+# Version: 0.47
 #
 #
 $info=3bagflnz
@@ -502,6 +504,15 @@ SOURCE:
 https://www.progettosnaps.net/gameinit.dat
 
 $end
+$info=blkrhinonz
+$mame
+INITIALIZATION:
+At the first start, "CALL ATTENDANT" will flash at the top, to start press in sequence: [ F1 ] and [ F2 ] to do this. Now press [ Z ] + [ X ] + [ C ] simultaneously; you'll see a number show up for the value "RF/AMT" if done correctly. After this value is set, return to the game by taking off the [ F2 ].
+
+SOURCE:
+https://www.progettosnaps.net/gameinit.dat
+
+$end
 $info=bm3
 $mame
 INITIALIZATION:
@@ -965,6 +976,51 @@ $info=cb3f
 $mame
 TIPS:
 If a hopper status error appear when the player try to take score, pressing Key Out [ W ] will discharge the credits won.
+
+SOURCE:
+mameinfo.dat
+
+$end
+$info=cbrava
+$mame
+INITIALIZATION:
+Insert coin [ 5 ] and keep pressed Aux Lever [ 2 ] and Lever [ 1 ] until the reels will start to roll.
+
+SOURCE:
+mameinfo.dat
+
+$end
+$info=cbravaa
+$mame
+INITIALIZATION:
+Insert coin [ 5 ] and keep pressed Aux Lever [ 2 ] and Lever [ 1 ] until the reels will start to roll.
+
+SOURCE:
+mameinfo.dat
+
+$end
+$info=cbravab
+$mame
+INITIALIZATION:
+Insert coin [ 5 ] and keep pressed Aux Lever [ 2 ] and Lever [ 1 ] until the reels will start to roll.
+
+SOURCE:
+mameinfo.dat
+
+$end
+$info=cbravac
+$mame
+INITIALIZATION:
+Insert coin [ 5 ] and keep pressed Aux Lever [ 2 ] and Lever [ 1 ] until the reels will start to roll.
+
+SOURCE:
+mameinfo.dat
+
+$end
+$info=cbravad
+$mame
+INITIALIZATION:
+Insert coin [ 5 ] and keep pressed Aux Lever [ 2 ] and Lever [ 1 ] until the reels will start to roll.
 
 SOURCE:
 mameinfo.dat
@@ -1987,6 +2043,15 @@ SOURCE:
 https://www.progettosnaps.net/gameinit.dat
 
 $end
+$info=defenderom
+$mame
+INITIALIZATION:
+The first time you run the game, it will say '01  0000 COINS LEFT'. To proceed, just hit [ F3 ].
+
+SOURCE:
+mameinfo.dat
+
+$end
 $info=defenderw
 $mame
 INITIALIZATION:
@@ -2086,31 +2151,40 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
+$info=dtrvwz5v
+$mame
+INITIALIZATION:
+When you see "PUSH ANY SWITCH", press [ C ] key to proceed.
+
+SOURCE:
+mameinfo.dat
+
+$end
 $info=eforest
+$mame
+INITIALIZATION:
+At the first start, "CALL ATTENDANT" will flash at the top, to start press in sequence: [ F1 ] and [ F2 ] to do this. Now press [ Z ] + [ X ] + [ C ] simultaneously; you'll see a number show up for the value "RF/AMT" if done correctly. After this value is set, return to the game by taking off the [ F2 ].
+
+SOURCE:
+https://www.progettosnaps.net/gameinit.dat
+
+$end
+$info=eforestnz
+$mame
+INITIALIZATION:
+At the first start, "CALL ATTENDANT" will flash at the top, to start press in sequence: [ F1 ] and [ F2 ] to do this. Now press [ Z ] + [ X ] + [ C ] simultaneously; you'll see a number show up for the value "RF/AMT" if done correctly. After this value is set, return to the game by taking off the [ F2 ].
+
+SOURCE:
+https://www.progettosnaps.net/gameinit.dat
+
+$end
+$info=eforestu
 $mame
 INITIALIZATION:
 At the first start, "CALL ATTENDANT" will flash at the top, Key in with the Jackpot Key followed by the Audit Key [ F1 ] [ F2 ]. Press PB4, PB5 and PB6 keys simultaneously ([ Z ] + [ X ] + [ C ] keys by default). Press Service (default [ A ]) 4 times until you are in the Setup Screen, showing Printer Pay Limit etc. Press Bet 2 (default [ D ]) to change the Jackpot Win Limit. A higher value is better (3000 max). Key out both the Jackpot and Audit Keys [ F2 ].
 
 SOURCE:
 aristmk4.cpp mame driver
-
-$end
-$info=eforesta
-$mame
-INITIALIZATION:
-At the first start, "CALL ATTENDANT" will flash at the top, to start press in sequence: [ F1 ] and [ F2 ] to do this. Now press [ Z ] + [ X ] + [ C ] simultaneously; you'll see a number show up for the value "RF/AMT" if done correctly. After this value is set, return to the game by taking off the [ F2 ].
-
-SOURCE:
-https://www.progettosnaps.net/gameinit.dat
-
-$end
-$info=eforestb
-$mame
-INITIALIZATION:
-At the first start, "CALL ATTENDANT" will flash at the top, to start press in sequence: [ F1 ] and [ F2 ] to do this. Now press [ Z ] + [ X ] + [ C ] simultaneously; you'll see a number show up for the value "RF/AMT" if done correctly. After this value is set, return to the game by taking off the [ F2 ].
-
-SOURCE:
-https://www.progettosnaps.net/gameinit.dat
 
 $end
 $info=elecyoyo
@@ -2842,6 +2916,24 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
+$info=findout
+$mame
+INITIALIZATION:
+The first time you run the game, an ERROR appears because the NVRAM needs initialising. Press fast forward [ Insert ] key to speed this up.
+
+SOURCE:
+mameinfo.dat
+
+$end
+$info=findouta
+$mame
+INITIALIZATION:
+The first time you run the game, an ERROR appears because the NVRAM needs initialising. Press fast forward [ Insert ] key to speed this up.
+
+SOURCE:
+mameinfo.dat
+
+$end
 $info=fiveside
 $mame
 INITIALIZATION:
@@ -2980,6 +3072,24 @@ The first time they are launched, these games stop to the "Factory settings rest
 
 SOURCE:
 https://www.progettosnaps.net/gameinit.dat
+
+$end
+$info=gampo812
+$mame
+INITIALIZATION:
+Turn ON Service Key (key [ 9 ]). The screen will show "Elektronik Defekt 5". Turn ON Personal A key (key [ 0 ]).
+
+SOURCE:
+mameinfo.dat
+
+$end
+$info=gampo816
+$mame
+INITIALIZATION:
+Turn ON Service Key (key [ 9 ]). The screen will show "Elektronik Defekt 5". Turn ON Personal A key (key [ 0 ]).
+
+SOURCE:
+mameinfo.dat
 
 $end
 $info=garage
@@ -3196,6 +3306,15 @@ To initialize the game, turn Service Mode ON [ F2 ] and press reset [ F3 ]. Move
 
 SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
+
+$end
+$info=gderby
+$mame
+INITIALIZATION:
+To clear 'BACKUP DATA' press [ 9 ] (Reset) twice.
+
+SOURCE:
+mameinfo.dat
 
 $end
 $info=geimulti
@@ -3670,6 +3789,15 @@ At the first start, "CALL ATTENDANT" will flash at the top, to start press in se
 
 SOURCE:
 https://www.progettosnaps.net/gameinit.dat
+
+$end
+$info=gtsers11b
+$mame
+INITIALIZATION:
+The first time you run the game, an ERROR appears because the NVRAM needs initialising. Press fast forward [ Ins ] key to speed this up.
+
+SOURCE:
+mameinfo.dat
 
 $end
 $info=gtsers18
@@ -4246,6 +4374,15 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
+$info=hipoly
+$mame
+INITIALIZATION:
+To have the high score table properly initialized, the first time you run the game you should go into the dip switch menu, set World Records to 'Erase on Reset', reset the game [ F3 ] and then set the dip switch back to 'Don't Erase'.
+
+SOURCE:
+http://wiki.mamedev.org/index.php/FAQ:Games
+
+$end
 $info=hpolym84
 $mame
 INITIALIZATION:
@@ -4280,6 +4417,15 @@ To have the high score table properly initialized, the first time you run the ga
 
 SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
+
+$end
+$info=hyprolyma
+$mame
+INITIALIZATION:
+xxx
+
+SOURCE:
+mameinfo.dat
 
 $end
 $info=hyprolymb
@@ -4597,7 +4743,7 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
-$info=jojobaj
+$info=jojobajr1
 $mame
 INITIALIZATION:
 There is no avoiding the NVRAM initialization process. The game must be allowed to create a complete and valid NVRAM file. This process takes nearly an hour and only needs to be done once. Once a proper NVRAM is created, the game will start quickly.
@@ -4606,7 +4752,7 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
-$info=jojobajr1
+$info=jojobajr2
 $mame
 INITIALIZATION:
 There is no avoiding the NVRAM initialization process. The game must be allowed to create a complete and valid NVRAM file. This process takes nearly an hour and only needs to be done once. Once a proper NVRAM is created, the game will start quickly.
@@ -4624,7 +4770,7 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
-$info=jojobane
+$info=jojobaner1
 $mame
 INITIALIZATION:
 There is no avoiding the NVRAM initialization process. The game must be allowed to create a complete and valid NVRAM file. This process takes nearly an hour and only needs to be done once. Once a proper NVRAM is created, the game will start quickly.
@@ -4633,7 +4779,7 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
-$info=jojobaner1
+$info=jojobaner2
 $mame
 INITIALIZATION:
 There is no avoiding the NVRAM initialization process. The game must be allowed to create a complete and valid NVRAM file. This process takes nearly an hour and only needs to be done once. Once a proper NVRAM is created, the game will start quickly.
@@ -4651,7 +4797,25 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
+$info=jojobanr2
+$mame
+INITIALIZATION:
+There is no avoiding the NVRAM initialization process. The game must be allowed to create a complete and valid NVRAM file. This process takes nearly an hour and only needs to be done once. Once a proper NVRAM is created, the game will start quickly.
+
+SOURCE:
+http://wiki.mamedev.org/index.php/FAQ:Games
+
+$end
 $info=jojobar1
+$mame
+INITIALIZATION:
+There is no avoiding the NVRAM initialization process. The game must be allowed to create a complete and valid NVRAM file. This process takes nearly an hour and only needs to be done once. Once a proper NVRAM is created, the game will start quickly.
+
+SOURCE:
+http://wiki.mamedev.org/index.php/FAQ:Games
+
+$end
+$info=jojobar2
 $mame
 INITIALIZATION:
 There is no avoiding the NVRAM initialization process. The game must be allowed to create a complete and valid NVRAM file. This process takes nearly an hour and only needs to be done once. Once a proper NVRAM is created, the game will start quickly.
@@ -4849,6 +5013,15 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
+$info=jolygame
+$mame
+INITIALIZATION:
+Press and hold Service 1 + 2 ([ 0 ]+[ 9 ]), press reset [ F3 ] then release all keys and either reset or restart MAME.
+
+SOURCE:
+http://wiki.mamedev.org/index.php/FAQ:Games
+
+$end
 $info=jolyjokr
 $mame
 INITIALIZATION:
@@ -4904,6 +5077,24 @@ http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
 $info=jolyjokrp
+$mame
+INITIALIZATION:
+Press and hold Service 1 + 2 ([ 0 ]+[ 9 ]), press reset [ F3 ] then release [ 0 ]+[ 9 ] and you'll see a few rows of numbers appear. Reset or restart MAME.
+
+SOURCE:
+http://wiki.mamedev.org/index.php/FAQ:Games
+
+$end
+$info=jolyjokrs
+$mame
+INITIALIZATION:
+Press and hold Service 1 + 2 ([ 0 ]+[ 9 ]), press reset [ F3 ] then release [ 0 ]+[ 9 ] and you'll see a few rows of numbers appear. Reset or restart MAME.
+
+SOURCE:
+http://wiki.mamedev.org/index.php/FAQ:Games
+
+$end
+$info=jolyjokrt
 $mame
 INITIALIZATION:
 Press and hold Service 1 + 2 ([ 0 ]+[ 9 ]), press reset [ F3 ] then release [ 0 ]+[ 9 ] and you'll see a few rows of numbers appear. Reset or restart MAME.
@@ -5682,6 +5873,15 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
+$info=losttrea
+$mame
+INITIALIZATION:
+The first time you run the game, it will say 'RAM ERROR'. To proceed, just keep pressed both service keys [ 9 ] & [ 0 ] and reset [ F3 ].
+
+SOURCE:
+mameinfo.dat
+
+$end
 $info=lostwsga
 $mame
 INITIALIZATION:
@@ -5888,6 +6088,15 @@ The first time you run the game, it will say 'ONSEI BOARD ERROR'. Press 'SERVICE
 
 SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
+
+$end
+$info=matchem
+$mame
+INITIALIZATION:
+When you see "PUSH ANY SWITCH", press [ DOWN ] key to proceed.
+
+SOURCE:
+mameinfo.dat
 
 $end
 $info=matchemg
@@ -6981,6 +7190,36 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
+$info=newhunter
+$mame
+TIPS:
+To enter test mode, keep STATS/TEST [ 9 ] pressed during boot. HOLD3 [ C ] to increase the tune/sound number, START [ 2 ] to decrease it.
+To enter the bookkeeping mode press STATS/TEST [ 9 ]. Press START/TAKE [ 2 ] to exit.
+
+SOURCE:
+mameinfo.dat
+
+$end
+$info=newhunterb
+$mame
+TIPS:
+To enter test mode, keep STATS/TEST [ 9 ] pressed during boot. HOLD3 [ C ] to increase the tune/sound number, START [ 2 ] to decrease it.
+To enter the bookkeeping mode press STATS/TEST [ 9 ]. Press START/TAKE [ 2 ] to exit.
+
+SOURCE:
+mameinfo.dat
+
+$end
+$info=newhunterc
+$mame
+TIPS:
+To enter test mode, keep STATS/TEST [ 9 ] pressed during boot. HOLD3 [ C ] to increase the tune/sound number, START [ 2 ] to decrease it.
+To enter the bookkeeping mode press STATS/TEST [ 9 ]. Press START/TAKE [ 2 ] to exit.
+
+SOURCE:
+mameinfo.dat
+
+$end
 $info=opengolf
 $mame
 INITIALIZATION:
@@ -7015,6 +7254,24 @@ The volume of the game is too low. When the game is running, hit [ F2 ] to get t
 
 SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
+
+$end
+$info=optigera
+$mame
+INITIALIZATION:
+The first time you run the game, it will say 'BACKUP DATA FAILED  PUSH TEST BUTTON'. Press [ F2 ] and wait for the calibration screen. To calibrate Player 1 gun press [ 1 ] and shoot on the red crosshair. For Player 2 gun press [ 2 ]. Exit calibration screen with F2 and save the DATA with CTRL key. Now you can press [ F3 ] to start the game or continue to changed other settings.
+
+SOURCE:
+mameinfo.dat
+
+$end
+$info=optigerj
+$mame
+INITIALIZATION:
+The first time you run the game, it will say 'BACKUP DATA FAILED  PUSH TEST BUTTON'. Press [ F2 ] and wait for the calibration screen. To calibrate Player 1 gun press [ 1 ] and shoot on the red crosshair. For Player 2 gun press [ 2 ]. Exit calibration screen with F2 and save the DATA with CTRL key. Now you can press [ F3 ] to start the game or continue to changed other settings.
+
+SOURCE:
+mameinfo.dat
 
 $end
 $info=orius
@@ -7062,6 +7319,15 @@ SOURCE:
 mameinfo.dat
 
 $end
+$info=pebe0013
+$mame
+INITIALIZATION:
+Be sure the door is opened (if not, press [ O ] by default). 'CMOS DATA' will be displayed press the self-test button (default is [ K ]). Be sure the door is opened (if not, press [ O ] by default), 'EEPROM DATA' will be displayed press the self-test button (default is [ K ]). Be sure the door is closed (if not, press [ O ] by default).
+
+SOURCE:
+http://wiki.mamedev.org/index.php/FAQ:Games
+
+$end
 $info=pebe0014
 $mame
 INITIALIZATION:
@@ -7090,6 +7356,15 @@ http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
 $info=peke0017
+$mame
+INITIALIZATION:
+Be sure the door is opened (if not, press [ O ] by default). 'CMOS DATA' will be displayed press the self-test button (default is [ K ]). Be sure the door is opened (if not, press [ O ] by default), 'EEPROM DATA' will be displayed press the self-test button (default is [ K ]). Be sure the door is closed (if not, press [ O ] by default).
+
+SOURCE:
+http://wiki.mamedev.org/index.php/FAQ:Games
+
+$end
+$info=peke0026
 $mame
 INITIALIZATION:
 Be sure the door is opened (if not, press [ O ] by default). 'CMOS DATA' will be displayed press the self-test button (default is [ K ]). Be sure the door is opened (if not, press [ O ] by default), 'EEPROM DATA' will be displayed press the self-test button (default is [ K ]). Be sure the door is closed (if not, press [ O ] by default).
@@ -7381,6 +7656,28 @@ SOURCE:
 https://www.progettosnaps.net/gameinit.dat
 
 $end
+$info=pepk0785
+$mame
+INITIALIZATION:
+At the first start, you will read the message "CALL ATTENDANT".
+Press [ O ], and you will read the message "BAD DATA MEMORY". Now press [ K ] and [ O ] again.
+Now the machine is initialized.
+
+SOURCE:
+https://www.progettosnaps.net/gameinit.dat
+
+$end
+$info=pepk0788
+$mame
+INITIALIZATION:
+At the first start, you will read the message "CALL ATTENDANT".
+Press [ O ], and you will read the message "BAD DATA MEMORY". Now press [ K ] and [ O ] again.
+Now the machine is initialized.
+
+SOURCE:
+https://www.progettosnaps.net/gameinit.dat
+
+$end
 $info=pepk0810
 $mame
 INITIALIZATION:
@@ -7568,6 +7865,17 @@ SOURCE:
 https://www.progettosnaps.net/gameinit.dat
 
 $end
+$info=pepk1015
+$mame
+INITIALIZATION:
+At the first start, you will read the message "CALL ATTENDANT".
+Press [ O ], and you will read the message "BAD DATA MEMORY". Now press [ K ] and [ O ] again.
+Now the machine is initialized.
+
+SOURCE:
+https://www.progettosnaps.net/gameinit.dat
+
+$end
 $info=pepk1020
 $mame
 INITIALIZATION:
@@ -7591,6 +7899,17 @@ https://www.progettosnaps.net/gameinit.dat
 
 $end
 $info=pepk1030
+$mame
+INITIALIZATION:
+At the first start, you will read the message "CALL ATTENDANT".
+Press [ O ], and you will read the message "BAD DATA MEMORY". Now press [ K ] and [ O ] again.
+Now the machine is initialized.
+
+SOURCE:
+https://www.progettosnaps.net/gameinit.dat
+
+$end
+$info=pepk1031
 $mame
 INITIALIZATION:
 At the first start, you will read the message "CALL ATTENDANT".
@@ -7631,6 +7950,15 @@ http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
 $info=pepp0002a
+$mame
+INITIALIZATION:
+Be sure the door is opened (if not, press [ O ] by default); "CMOS DATA" will be displayed press the self-test button (default is [ K ]) until a "beep" is heard. Be sure the door is closed (if not, press [ O ] by default) and press the jackpot reset button (default is [ L ]); be sure the door is opened (if not, press [ O ] by default) and "EEPROM DATA" will be displayed press the self-test button (default is [ K ]). Be sure the door is closed (if not, press [ O ] by default).
+
+SOURCE:
+http://wiki.mamedev.org/index.php/FAQ:Games
+
+$end
+$info=pepp0005
 $mame
 INITIALIZATION:
 Be sure the door is opened (if not, press [ O ] by default); "CMOS DATA" will be displayed press the self-test button (default is [ K ]) until a "beep" is heard. Be sure the door is closed (if not, press [ O ] by default) and press the jackpot reset button (default is [ L ]); be sure the door is opened (if not, press [ O ] by default) and "EEPROM DATA" will be displayed press the self-test button (default is [ K ]). Be sure the door is closed (if not, press [ O ] by default).
@@ -7783,6 +8111,15 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
+$info=pepp0042b
+$mame
+INITIALIZATION:
+Be sure the door is opened (if not, press [ O ] by default); "CMOS DATA" will be displayed press the self-test button (default is [ K ]) until a "beep" is heard. Be sure the door is closed (if not, press [ O ] by default) and press the jackpot reset button (default is [ L ]); be sure the door is opened (if not, press [ O ] by default) and "EEPROM DATA" will be displayed press the self-test button (default is [ K ]). Be sure the door is closed (if not, press [ O ] by default).
+
+SOURCE:
+http://wiki.mamedev.org/index.php/FAQ:Games
+
+$end
 $info=pepp0043
 $mame
 INITIALIZATION:
@@ -7891,6 +8228,15 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
+$info=pepp0052
+$mame
+INITIALIZATION:
+Be sure the door is opened (if not, press [ O ] by default); "CMOS DATA" will be displayed press the self-test button (default is [ K ]) until a "beep" is heard. Be sure the door is closed (if not, press [ O ] by default) and press the jackpot reset button (default is [ L ]); be sure the door is opened (if not, press [ O ] by default) and "EEPROM DATA" will be displayed press the self-test button (default is [ K ]). Be sure the door is closed (if not, press [ O ] by default).
+
+SOURCE:
+http://wiki.mamedev.org/index.php/FAQ:Games
+
+$end
 $info=pepp0059
 $mame
 INITIALIZATION:
@@ -7963,7 +8309,25 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
+$info=pepp0079
+$mame
+INITIALIZATION:
+Be sure the door is opened (if not, press [ O ] by default); "CMOS DATA" will be displayed press the self-test button (default is [ K ]) until a "beep" is heard. Be sure the door is closed (if not, press [ O ] by default) and press the jackpot reset button (default is [ L ]); be sure the door is opened (if not, press [ O ] by default) and "EEPROM DATA" will be displayed press the self-test button (default is [ K ]). Be sure the door is closed (if not, press [ O ] by default).
+
+SOURCE:
+http://wiki.mamedev.org/index.php/FAQ:Games
+
+$end
 $info=pepp0083
+$mame
+INITIALIZATION:
+Be sure the door is opened (if not, press [ O ] by default); "CMOS DATA" will be displayed press the self-test button (default is [ K ]) until a "beep" is heard. Be sure the door is closed (if not, press [ O ] by default) and press the jackpot reset button (default is [ L ]); be sure the door is opened (if not, press [ O ] by default) and "EEPROM DATA" will be displayed press the self-test button (default is [ K ]). Be sure the door is closed (if not, press [ O ] by default).
+
+SOURCE:
+http://wiki.mamedev.org/index.php/FAQ:Games
+
+$end
+$info=pepp0083a
 $mame
 INITIALIZATION:
 Be sure the door is opened (if not, press [ O ] by default); "CMOS DATA" will be displayed press the self-test button (default is [ K ]) until a "beep" is heard. Be sure the door is closed (if not, press [ O ] by default) and press the jackpot reset button (default is [ L ]); be sure the door is opened (if not, press [ O ] by default) and "EEPROM DATA" will be displayed press the self-test button (default is [ K ]). Be sure the door is closed (if not, press [ O ] by default).
@@ -7991,6 +8355,15 @@ http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
 $info=pepp0094
+$mame
+INITIALIZATION:
+Be sure the door is opened (if not, press [ O ] by default); "CMOS DATA" will be displayed press the self-test button (default is [ K ]) until a "beep" is heard. Be sure the door is closed (if not, press [ O ] by default) and press the jackpot reset button (default is [ L ]); be sure the door is opened (if not, press [ O ] by default) and "EEPROM DATA" will be displayed press the self-test button (default is [ K ]). Be sure the door is closed (if not, press [ O ] by default).
+
+SOURCE:
+http://wiki.mamedev.org/index.php/FAQ:Games
+
+$end
+$info=pepp0094a
 $mame
 INITIALIZATION:
 Be sure the door is opened (if not, press [ O ] by default); "CMOS DATA" will be displayed press the self-test button (default is [ K ]) until a "beep" is heard. Be sure the door is closed (if not, press [ O ] by default) and press the jackpot reset button (default is [ L ]); be sure the door is opened (if not, press [ O ] by default) and "EEPROM DATA" will be displayed press the self-test button (default is [ K ]). Be sure the door is closed (if not, press [ O ] by default).
@@ -8035,6 +8408,15 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
+$info=pepp0117
+$mame
+INITIALIZATION:
+Be sure the door is opened (if not, press [ O ] by default); "CMOS DATA" will be displayed press the self-test button (default is [ K ]) until a "beep" is heard. Be sure the door is closed (if not, press [ O ] by default) and press the jackpot reset button (default is [ L ]); be sure the door is opened (if not, press [ O ] by default) and "EEPROM DATA" will be displayed press the self-test button (default is [ K ]). Be sure the door is closed (if not, press [ O ] by default).
+
+SOURCE:
+http://wiki.mamedev.org/index.php/FAQ:Games
+
+$end
 $info=pepp0118
 $mame
 INITIALIZATION:
@@ -8044,7 +8426,34 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
+$info=pepp0122
+$mame
+INITIALIZATION:
+Be sure the door is opened (if not, press [ O ] by default); "CMOS DATA" will be displayed press the self-test button (default is [ K ]) until a "beep" is heard. Be sure the door is closed (if not, press [ O ] by default) and press the jackpot reset button (default is [ L ]); be sure the door is opened (if not, press [ O ] by default) and "EEPROM DATA" will be displayed press the self-test button (default is [ K ]). Be sure the door is closed (if not, press [ O ] by default).
+
+SOURCE:
+http://wiki.mamedev.org/index.php/FAQ:Games
+
+$end
+$info=pepp0125a
+$mame
+INITIALIZATION:
+Be sure the door is opened (if not, press [ O ] by default); "CMOS DATA" will be displayed press the self-test button (default is [ K ]) until a "beep" is heard. Be sure the door is closed (if not, press [ O ] by default) and press the jackpot reset button (default is [ L ]); be sure the door is opened (if not, press [ O ] by default) and "EEPROM DATA" will be displayed press the self-test button (default is [ K ]). Be sure the door is closed (if not, press [ O ] by default).
+
+SOURCE:
+http://wiki.mamedev.org/index.php/FAQ:Games
+
+$end
 $info=pepp0132
+$mame
+INITIALIZATION:
+Be sure the door is opened (if not, press [ O ] by default); "CMOS DATA" will be displayed press the self-test button (default is [ K ]) until a "beep" is heard. Be sure the door is closed (if not, press [ O ] by default) and press the jackpot reset button (default is [ L ]); be sure the door is opened (if not, press [ O ] by default) and "EEPROM DATA" will be displayed press the self-test button (default is [ K ]). Be sure the door is closed (if not, press [ O ] by default).
+
+SOURCE:
+http://wiki.mamedev.org/index.php/FAQ:Games
+
+$end
+$info=pepp0143
 $mame
 INITIALIZATION:
 Be sure the door is opened (if not, press [ O ] by default); "CMOS DATA" will be displayed press the self-test button (default is [ K ]) until a "beep" is heard. Be sure the door is closed (if not, press [ O ] by default) and press the jackpot reset button (default is [ L ]); be sure the door is opened (if not, press [ O ] by default) and "EEPROM DATA" will be displayed press the self-test button (default is [ K ]). Be sure the door is closed (if not, press [ O ] by default).
@@ -8431,6 +8840,15 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
+$info=pepp0418a
+$mame
+INITIALIZATION:
+Be sure the door is opened (if not, press [ O ] by default); "CMOS DATA" will be displayed press the self-test button (default is [ K ]) until a "beep" is heard. Be sure the door is closed (if not, press [ O ] by default) and press the jackpot reset button (default is [ L ]); be sure the door is opened (if not, press [ O ] by default) and "EEPROM DATA" will be displayed press the self-test button (default is [ K ]). Be sure the door is closed (if not, press [ O ] by default).
+
+SOURCE:
+http://wiki.mamedev.org/index.php/FAQ:Games
+
+$end
 $info=pepp0419
 $mame
 INITIALIZATION:
@@ -8467,6 +8885,15 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
+$info=pepp0420a
+$mame
+INITIALIZATION:
+Be sure the door is opened (if not, press [ O ] by default); "CMOS DATA" will be displayed press the self-test button (default is [ K ]) until a "beep" is heard. Be sure the door is closed (if not, press [ O ] by default) and press the jackpot reset button (default is [ L ]); be sure the door is opened (if not, press [ O ] by default) and "EEPROM DATA" will be displayed press the self-test button (default is [ K ]). Be sure the door is closed (if not, press [ O ] by default).
+
+SOURCE:
+http://wiki.mamedev.org/index.php/FAQ:Games
+
+$end
 $info=pepp0423
 $mame
 INITIALIZATION:
@@ -8495,6 +8922,24 @@ http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
 $info=pepp0423c
+$mame
+INITIALIZATION:
+Be sure the door is opened (if not, press [ O ] by default); "CMOS DATA" will be displayed press the self-test button (default is [ K ]) until a "beep" is heard. Be sure the door is closed (if not, press [ O ] by default) and press the jackpot reset button (default is [ L ]); be sure the door is opened (if not, press [ O ] by default) and "EEPROM DATA" will be displayed press the self-test button (default is [ K ]). Be sure the door is closed (if not, press [ O ] by default).
+
+SOURCE:
+http://wiki.mamedev.org/index.php/FAQ:Games
+
+$end
+$info=pepp0425
+$mame
+INITIALIZATION:
+Be sure the door is opened (if not, press [ O ] by default); "CMOS DATA" will be displayed press the self-test button (default is [ K ]) until a "beep" is heard. Be sure the door is closed (if not, press [ O ] by default) and press the jackpot reset button (default is [ L ]); be sure the door is opened (if not, press [ O ] by default) and "EEPROM DATA" will be displayed press the self-test button (default is [ K ]). Be sure the door is closed (if not, press [ O ] by default).
+
+SOURCE:
+http://wiki.mamedev.org/index.php/FAQ:Games
+
+$end
+$info=pepp0430
 $mame
 INITIALIZATION:
 Be sure the door is opened (if not, press [ O ] by default); "CMOS DATA" will be displayed press the self-test button (default is [ K ]) until a "beep" is heard. Be sure the door is closed (if not, press [ O ] by default) and press the jackpot reset button (default is [ L ]); be sure the door is opened (if not, press [ O ] by default) and "EEPROM DATA" will be displayed press the self-test button (default is [ K ]). Be sure the door is closed (if not, press [ O ] by default).
@@ -8548,6 +8993,24 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
+$info=pepp0451
+$mame
+INITIALIZATION:
+Be sure the door is opened (if not, press [ O ] by default); "CMOS DATA" will be displayed press the self-test button (default is [ K ]) until a "beep" is heard. Be sure the door is closed (if not, press [ O ] by default) and press the jackpot reset button (default is [ L ]); be sure the door is opened (if not, press [ O ] by default) and "EEPROM DATA" will be displayed press the self-test button (default is [ K ]). Be sure the door is closed (if not, press [ O ] by default).
+
+SOURCE:
+http://wiki.mamedev.org/index.php/FAQ:Games
+
+$end
+$info=pepp0459
+$mame
+INITIALIZATION:
+Be sure the door is opened (if not, press [ O ] by default); "CMOS DATA" will be displayed press the self-test button (default is [ K ]) until a "beep" is heard. Be sure the door is closed (if not, press [ O ] by default) and press the jackpot reset button (default is [ L ]); be sure the door is opened (if not, press [ O ] by default) and "EEPROM DATA" will be displayed press the self-test button (default is [ K ]). Be sure the door is closed (if not, press [ O ] by default).
+
+SOURCE:
+http://wiki.mamedev.org/index.php/FAQ:Games
+
+$end
 $info=pepp0467
 $mame
 INITIALIZATION:
@@ -8557,7 +9020,25 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
+$info=pepp0469
+$mame
+INITIALIZATION:
+Be sure the door is opened (if not, press [ O ] by default); "CMOS DATA" will be displayed press the self-test button (default is [ K ]) until a "beep" is heard. Be sure the door is closed (if not, press [ O ] by default) and press the jackpot reset button (default is [ L ]); be sure the door is opened (if not, press [ O ] by default) and "EEPROM DATA" will be displayed press the self-test button (default is [ K ]). Be sure the door is closed (if not, press [ O ] by default).
+
+SOURCE:
+http://wiki.mamedev.org/index.php/FAQ:Games
+
+$end
 $info=pepp0488
+$mame
+INITIALIZATION:
+Be sure the door is opened (if not, press [ O ] by default); "CMOS DATA" will be displayed press the self-test button (default is [ K ]) until a "beep" is heard. Be sure the door is closed (if not, press [ O ] by default) and press the jackpot reset button (default is [ L ]); be sure the door is opened (if not, press [ O ] by default) and "EEPROM DATA" will be displayed press the self-test button (default is [ K ]). Be sure the door is closed (if not, press [ O ] by default).
+
+SOURCE:
+http://wiki.mamedev.org/index.php/FAQ:Games
+
+$end
+$info=pepp0508
 $mame
 INITIALIZATION:
 Be sure the door is opened (if not, press [ O ] by default); "CMOS DATA" will be displayed press the self-test button (default is [ K ]) until a "beep" is heard. Be sure the door is closed (if not, press [ O ] by default) and press the jackpot reset button (default is [ L ]); be sure the door is opened (if not, press [ O ] by default) and "EEPROM DATA" will be displayed press the self-test button (default is [ K ]). Be sure the door is closed (if not, press [ O ] by default).
@@ -8576,6 +9057,15 @@ http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
 $info=pepp0510
+$mame
+INITIALIZATION:
+Be sure the door is opened (if not, press [ O ] by default); "CMOS DATA" will be displayed press the self-test button (default is [ K ]) until a "beep" is heard. Be sure the door is closed (if not, press [ O ] by default) and press the jackpot reset button (default is [ L ]); be sure the door is opened (if not, press [ O ] by default) and "EEPROM DATA" will be displayed press the self-test button (default is [ K ]). Be sure the door is closed (if not, press [ O ] by default).
+
+SOURCE:
+http://wiki.mamedev.org/index.php/FAQ:Games
+
+$end
+$info=pepp0540
 $mame
 INITIALIZATION:
 Be sure the door is opened (if not, press [ O ] by default); "CMOS DATA" will be displayed press the self-test button (default is [ K ]) until a "beep" is heard. Be sure the door is closed (if not, press [ O ] by default) and press the jackpot reset button (default is [ L ]); be sure the door is opened (if not, press [ O ] by default) and "EEPROM DATA" will be displayed press the self-test button (default is [ K ]). Be sure the door is closed (if not, press [ O ] by default).
@@ -8620,7 +9110,25 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
+$info=pepp0729
+$mame
+INITIALIZATION:
+Be sure the door is opened (if not, press [ O ] by default); "CMOS DATA" will be displayed press the self-test button (default is [ K ]) until a "beep" is heard. Be sure the door is closed (if not, press [ O ] by default) and press the jackpot reset button (default is [ L ]); be sure the door is opened (if not, press [ O ] by default) and "EEPROM DATA" will be displayed press the self-test button (default is [ K ]). Be sure the door is closed (if not, press [ O ] by default).
+
+SOURCE:
+http://wiki.mamedev.org/index.php/FAQ:Games
+
+$end
 $info=pepp0750
+$mame
+INITIALIZATION:
+Be sure the door is opened (if not, press [ O ] by default); "CMOS DATA" will be displayed press the self-test button (default is [ K ]) until a "beep" is heard. Be sure the door is closed (if not, press [ O ] by default) and press the jackpot reset button (default is [ L ]); be sure the door is opened (if not, press [ O ] by default) and "EEPROM DATA" will be displayed press the self-test button (default is [ K ]). Be sure the door is closed (if not, press [ O ] by default).
+
+SOURCE:
+http://wiki.mamedev.org/index.php/FAQ:Games
+
+$end
+$info=pepp0750a
 $mame
 INITIALIZATION:
 Be sure the door is opened (if not, press [ O ] by default); "CMOS DATA" will be displayed press the self-test button (default is [ K ]) until a "beep" is heard. Be sure the door is closed (if not, press [ O ] by default) and press the jackpot reset button (default is [ L ]); be sure the door is opened (if not, press [ O ] by default) and "EEPROM DATA" will be displayed press the self-test button (default is [ K ]). Be sure the door is closed (if not, press [ O ] by default).
@@ -8639,6 +9147,15 @@ http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
 $info=pepp0764
+$mame
+INITIALIZATION:
+Be sure the door is opened (if not, press [ O ] by default); "CMOS DATA" will be displayed press the self-test button (default is [ K ]) until a "beep" is heard. Be sure the door is closed (if not, press [ O ] by default) and press the jackpot reset button (default is [ L ]); be sure the door is opened (if not, press [ O ] by default) and "EEPROM DATA" will be displayed press the self-test button (default is [ K ]). Be sure the door is closed (if not, press [ O ] by default).
+
+SOURCE:
+http://wiki.mamedev.org/index.php/FAQ:Games
+
+$end
+$info=pepp0777
 $mame
 INITIALIZATION:
 Be sure the door is opened (if not, press [ O ] by default); "CMOS DATA" will be displayed press the self-test button (default is [ K ]) until a "beep" is heard. Be sure the door is closed (if not, press [ O ] by default) and press the jackpot reset button (default is [ L ]); be sure the door is opened (if not, press [ O ] by default) and "EEPROM DATA" will be displayed press the self-test button (default is [ K ]). Be sure the door is closed (if not, press [ O ] by default).
@@ -8683,7 +9200,43 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
+$info=pex0014p
+$mame
+INITIALIZATION:
+Be sure the door is opened (if not, press [ O ] by default); "CMOS DATA" will be displayed press the self-test button (default is [ K ]) until a "beep" is heard. Be sure the door is closed (if not, press [ O ] by default) and press the jackpot reset button (default is [ L ]); be sure the door is opened (if not, press [ O ] by default) and "EEPROM DATA" will be displayed press the self-test button (default is [ K ]). Be sure the door is closed (if not, press [ O ] by default).
+
+SOURCE:
+http://wiki.mamedev.org/index.php/FAQ:Games
+
+$end
+$info=pex0127p
+$mame
+INITIALIZATION:
+Be sure the door is opened (if not, press [ O ] by default); "CMOS DATA" will be displayed press the self-test button (default is [ K ]) until a "beep" is heard. Be sure the door is closed (if not, press [ O ] by default) and press the jackpot reset button (default is [ L ]); be sure the door is opened (if not, press [ O ] by default) and "EEPROM DATA" will be displayed press the self-test button (default is [ K ]). Be sure the door is closed (if not, press [ O ] by default).
+
+SOURCE:
+http://wiki.mamedev.org/index.php/FAQ:Games
+
+$end
+$info=pex0444p
+$mame
+INITIALIZATION:
+Be sure the door is opened (if not, press [ O ] by default); "CMOS DATA" will be displayed press the self-test button (default is [ K ]) until a "beep" is heard. Be sure the door is closed (if not, press [ O ] by default) and press the jackpot reset button (default is [ L ]); be sure the door is opened (if not, press [ O ] by default) and "EEPROM DATA" will be displayed press the self-test button (default is [ K ]). Be sure the door is closed (if not, press [ O ] by default).
+
+SOURCE:
+http://wiki.mamedev.org/index.php/FAQ:Games
+
+$end
 $info=pex0998s
+$mame
+INITIALIZATION:
+Be sure the door is opened (if not, press [ O ] by default); "CMOS DATA" will be displayed press the self-test button (default is [ K ]) until a "beep" is heard. Be sure the door is closed (if not, press [ O ] by default) and press the jackpot reset button (default is [ L ]); be sure the door is opened (if not, press [ O ] by default) and "EEPROM DATA" will be displayed press the self-test button (default is [ K ]). Be sure the door is closed (if not, press [ O ] by default).
+
+SOURCE:
+http://wiki.mamedev.org/index.php/FAQ:Games
+
+$end
+$info=pex2004p
 $mame
 INITIALIZATION:
 Be sure the door is opened (if not, press [ O ] by default); "CMOS DATA" will be displayed press the self-test button (default is [ K ]) until a "beep" is heard. Be sure the door is closed (if not, press [ O ] by default) and press the jackpot reset button (default is [ L ]); be sure the door is opened (if not, press [ O ] by default) and "EEPROM DATA" will be displayed press the self-test button (default is [ K ]). Be sure the door is closed (if not, press [ O ] by default).
@@ -8702,6 +9255,15 @@ http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
 $info=pex2035p
+$mame
+INITIALIZATION:
+Be sure the door is opened (if not, press [ O ] by default); "CMOS DATA" will be displayed press the self-test button (default is [ K ]) until a "beep" is heard. Be sure the door is closed (if not, press [ O ] by default) and press the jackpot reset button (default is [ L ]); be sure the door is opened (if not, press [ O ] by default) and "EEPROM DATA" will be displayed press the self-test button (default is [ K ]). Be sure the door is closed (if not, press [ O ] by default).
+
+SOURCE:
+http://wiki.mamedev.org/index.php/FAQ:Games
+
+$end
+$info=pex2046p
 $mame
 INITIALIZATION:
 Be sure the door is opened (if not, press [ O ] by default); "CMOS DATA" will be displayed press the self-test button (default is [ K ]) until a "beep" is heard. Be sure the door is closed (if not, press [ O ] by default) and press the jackpot reset button (default is [ L ]); be sure the door is opened (if not, press [ O ] by default) and "EEPROM DATA" will be displayed press the self-test button (default is [ K ]). Be sure the door is closed (if not, press [ O ] by default).
@@ -10420,10 +10982,28 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
+$info=redline
+$mame
+INITIALIZATION:
+Let the initial test ends. Turn ON Service Key (key [ F2 ]). Press once Start key (key [ 1 ]).
+
+SOURCE:
+mameinfo.dat
+
+$end
 $info=reelfun
 $mame
 INITIALIZATION:
 The first time you run the game, an ERROR appears because the NVRAM needs initialising. Press fast forward ([ Ins ]) key to speed this up.
+
+SOURCE:
+mameinfo.dat
+
+$end
+$info=reelfun0
+$mame
+INITIALIZATION:
+The first time you run the game, an ERROR appears because the NVRAM needs initialising. Press fast forward [ Ins ] key to speed this up.
 
 SOURCE:
 mameinfo.dat
@@ -11212,6 +11792,60 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
+$info=setaroula
+$mame
+INITIALIZATION:
+The first time you run the game, it will say 'BACKUP DATA IS WRONG...'. Press key [ 9 ] (Reset) to proceed.
+
+SOURCE:
+mameinfo.dat
+
+$end
+$info=sevilla
+$mame
+INITIALIZATION:
+Insert coin [ 5 ] and keep pressed Aux Lever [ 2 ] and Lever [ 1 ] until the reels will start to roll.
+
+SOURCE:
+mameinfo.dat
+
+$end
+$info=sevillaa
+$mame
+INITIALIZATION:
+Insert coin [ 5 ] and keep pressed Aux Lever [ 2 ] and Lever [ 1 ] until the reels will start to roll.
+
+SOURCE:
+mameinfo.dat
+
+$end
+$info=sevillab
+$mame
+INITIALIZATION:
+Insert coin [ 5 ] and keep pressed Aux Lever [ 2 ] and Lever [ 1 ] until the reels will start to roll.
+
+SOURCE:
+mameinfo.dat
+
+$end
+$info=sevillac
+$mame
+INITIALIZATION:
+Insert coin [ 5 ] and keep pressed Aux Lever [ 2 ] and Lever [ 1 ] until the reels will start to roll.
+
+SOURCE:
+mameinfo.dat
+
+$end
+$info=sevillad
+$mame
+INITIALIZATION:
+Insert coin [ 5 ] and keep pressed Aux Lever [ 2 ] and Lever [ 1 ] until the reels will start to roll.
+
+SOURCE:
+mameinfo.dat
+
+$end
 $info=sexappl
 $mame
 INITIALIZATION:
@@ -11662,8 +12296,11 @@ $mame
 INITIALIZATION:
 When you see "FACTORY SETTINGS RESTORED", hit [ F2 ] (Service Mode).
 
+TIPS:
+Press [ F1 ]+[ F2 ] for Bookkeeping/Setup.
+
 SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
+http://wiki.mamedev.org/index.php/FAQ:Games and mameinfo.dat
 
 $end
 $info=sinistar2
@@ -11671,8 +12308,35 @@ $mame
 INITIALIZATION:
 When you see "FACTORY SETTINGS RESTORED", hit [ F2 ] (Service Mode).
 
+TIPS:
+Press [ F1 ]+[ F2 ] for Bookkeeping/Setup.
+
 SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
+http://wiki.mamedev.org/index.php/FAQ:Games and mameinfo.dat
+
+$end
+$info=sinistarc
+$mame
+INITIALIZATION:
+When you see "FACTORY SETTINGS RESTORED", hit [ F2 ] (Service Mode).
+
+TIPS:
+Press [ F1 ]+[ F2 ] for Bookkeeping/Setup.
+
+SOURCE:
+http://wiki.mamedev.org/index.php/FAQ:Games and mameinfo.dat
+
+$end
+$info=sinistarc2
+$mame
+INITIALIZATION:
+When you see "FACTORY SETTINGS RESTORED", hit [ F2 ] (Service Mode).
+
+TIPS:
+Press [ F1 ]+[ F2 ] for Bookkeeping/Setup.
+
+SOURCE:
+http://wiki.mamedev.org/index.php/FAQ:Games and mameinfo.dat
 
 $end
 $info=sinistarp
@@ -11680,8 +12344,11 @@ $mame
 INITIALIZATION:
 When you see "FACTORY SETTINGS RESTORED", hit [ F2 ] (Service Mode).
 
+TIPS:
+Press [ F1 ]+[ F2 ] for Bookkeeping/Setup.
+
 SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
+http://wiki.mamedev.org/index.php/FAQ:Games and mameinfo.dat
 
 $end
 $info=sjcd2kx3
@@ -12098,6 +12765,24 @@ SOURCE:
 mameinfo.dat
 
 $end
+$info=supst834
+$mame
+INITIALIZATION:
+Turn ON Service Key (key [ F2 ]). Press once Start key (key [ 1 ]).
+
+SOURCE:
+mameinfo.dat
+
+$end
+$info=supst839
+$mame
+INITIALIZATION:
+Turn ON Service Key (key [ F2 ]). Press once Start key (key [ 1 ]).
+
+SOURCE:
+mameinfo.dat
+
+$end
 $info=sweetl
 $mame
 INITIALIZATION:
@@ -12287,6 +12972,42 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
+$info=teddybb
+$mame
+INITIALIZATION:
+When first started, the "IC CHECK" procedure is really very slow. Press [ INS ] to speed it up as much as possible.
+
+SOURCE:
+https://www.progettosnaps.net/gameinit.dat
+
+$end
+$info=teddybbo
+$mame
+INITIALIZATION:
+When first started, the "IC CHECK" procedure is really very slow. Press [ INS ] to speed it up as much as possible.
+
+SOURCE:
+https://www.progettosnaps.net/gameinit.dat
+
+$end
+$info=teddybboa
+$mame
+INITIALIZATION:
+When first started, the "IC CHECK" procedure is really very slow. Press [ INS ] to speed it up as much as possible.
+
+SOURCE:
+https://www.progettosnaps.net/gameinit.dat
+
+$end
+$info=teddybbobl
+$mame
+INITIALIZATION:
+When first started, the "IC CHECK" procedure is really very slow. Press [ INS ] to speed it up as much as possible.
+
+SOURCE:
+https://www.progettosnaps.net/gameinit.dat
+
+$end
 $info=tekkenbs
 $mame
 TIPS:
@@ -12303,6 +13024,15 @@ To initialize NVRAM, Hold ESTATISTICA [ 9 ] and MANAGEMENT [ 0 ] then press RESE
 
 SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
+
+$end
+$info=teqsun
+$mame
+INITIALIZATION:
+Press [ F1 ] (Jackpot) and [ F2 ] (Audit), then press [ Z ]+[ X ]+[ C ] simultaneously (HOP RESET + AUX + MEMTEST) until you see a number show up after "RF/AMT" on the right side. To return to the game press keys [ F1 ] and [ F2 ] again.
+
+SOURCE:
+mameinfo.dat
 
 $end
 $info=tgtpanic
@@ -12339,6 +13069,195 @@ The first time you run the game, the EEPROM 17F shows as BAD in the RAM/ROM Chec
 
 SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
+
+$end
+$info=thrilld
+$mame
+INITIALIZATION:
+The first time you run the game, it will say 'BACKUP DATA ERROR'. Press [ F2 ] to proceed.
+
+SOURCE:
+mameinfo.dat
+
+$end
+$info=thrillda
+$mame
+INITIALIZATION:
+The first time you run the game, it will say 'BACKUP DATA ERROR'. Press [ F2 ] to proceed.
+
+SOURCE:
+mameinfo.dat
+
+$end
+$info=thrilldab
+$mame
+INITIALIZATION:
+The first time you run the game, it will say 'BACKUP DATA ERROR'. Press [ F2 ] to proceed.
+
+SOURCE:
+mameinfo.dat
+
+$end
+$info=thrilldb
+$mame
+INITIALIZATION:
+The first time you run the game, it will say 'BACKUP DATA ERROR'. Press [ F2 ] to proceed.
+
+SOURCE:
+mameinfo.dat
+
+$end
+$info=thrilldba
+$mame
+INITIALIZATION:
+The first time you run the game, it will say 'BACKUP DATA ERROR'. Press [ F2 ] to proceed.
+
+SOURCE:
+mameinfo.dat
+
+$end
+$info=thrilldbab
+$mame
+INITIALIZATION:
+The first time you run the game, it will say 'BACKUP DATA ERROR'. Press [ F2 ] to proceed.
+
+SOURCE:
+mameinfo.dat
+
+$end
+$info=thrilldbe
+$mame
+INITIALIZATION:
+The first time you run the game, it will say 'BACKUP DATA ERROR'. Press [ F2 ] to proceed.
+
+SOURCE:
+mameinfo.dat
+
+$end
+$info=thrilldbj
+$mame
+INITIALIZATION:
+The first time you run the game, it will say 'BACKUP DATA ERROR'. Press [ F2 ] to proceed.
+
+SOURCE:
+mameinfo.dat
+
+$end
+$info=thrilldbja
+$mame
+INITIALIZATION:
+The first time you run the game, it will say 'BACKUP DATA ERROR'. Press [ F2 ] to proceed.
+
+SOURCE:
+mameinfo.dat
+
+$end
+$info=thrillde
+$mame
+INITIALIZATION:
+The first time you run the game, it will say 'BACKUP DATA ERROR'. Press [ F2 ] to proceed.
+
+SOURCE:
+mameinfo.dat
+
+$end
+$info=thrilldgej
+$mame
+INITIALIZATION:
+The first time you run the game, it will say 'BACKUP DATA ERROR'. Press [ F2 ] to proceed.
+
+SOURCE:
+mameinfo.dat
+
+$end
+$info=thrilldgeu
+$mame
+INITIALIZATION:
+The first time you run the game, it will say 'BACKUP DATA ERROR'. Press [ F2 ] to proceed.
+
+SOURCE:
+mameinfo.dat
+
+$end
+$info=thrilldgke
+$mame
+INITIALIZATION:
+The first time you run the game, it will say 'BACKUP DATA ERROR'. Press [ F2 ] to proceed.
+
+SOURCE:
+mameinfo.dat
+
+$end
+$info=thrilldgkee
+$mame
+INITIALIZATION:
+The first time you run the game, it will say 'BACKUP DATA ERROR'. Press [ F2 ] to proceed.
+
+SOURCE:
+mameinfo.dat
+
+$end
+$info=thrilldgkk
+$mame
+INITIALIZATION:
+The first time you run the game, it will say 'BACKUP DATA ERROR'. Press [ F2 ] to proceed.
+
+SOURCE:
+mameinfo.dat
+
+$end
+$info=thrilldgmj
+$mame
+INITIALIZATION:
+The first time you run the game, it will say 'BACKUP DATA ERROR'. Press [ F2 ] to proceed.
+
+SOURCE:
+mameinfo.dat
+
+$end
+$info=thrilldgnj
+$mame
+INITIALIZATION:
+The first time you run the game, it will say 'BACKUP DATA ERROR'. Press [ F2 ] to proceed.
+
+SOURCE:
+mameinfo.dat
+
+$end
+$info=thrilldgpj
+$mame
+INITIALIZATION:
+The first time you run the game, it will say 'BACKUP DATA ERROR'. Press [ F2 ] to proceed.
+
+SOURCE:
+mameinfo.dat
+
+$end
+$info=thrilldj
+$mame
+INITIALIZATION:
+The first time you run the game, it will say 'BACKUP DATA ERROR'. Press [ F2 ] to proceed.
+
+SOURCE:
+mameinfo.dat
+
+$end
+$info=thrilldja
+$mame
+INITIALIZATION:
+The first time you run the game, it will say 'BACKUP DATA ERROR'. Press [ F2 ] to proceed.
+
+SOURCE:
+mameinfo.dat
+
+$end
+$info=tictac
+$mame
+INITIALIZATION:
+The first time you run the game, 'WAIT - TESTING' appears because the NVRAM needs initialising. Press fast forward [ Ins ] key to speed this up.
+
+SOURCE:
+mameinfo.dat
 
 $end
 $info=timecris
@@ -12420,6 +13339,33 @@ The first time you run the game, the EEPROM 22D shows as BAD in the RAM/ROM Chec
 
 SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
+
+$end
+$info=toledo
+$mame
+INITIALIZATION:
+Insert coin [ 5 ] and keep pressed Aux Lever [ 2 ] and Lever [ 1 ] until the reels will start to roll.
+
+SOURCE:
+mameinfo.dat
+
+$end
+$info=toledoa
+$mame
+INITIALIZATION:
+Insert coin [ 5 ] and keep pressed Aux Lever [ 2 ] and Lever [ 1 ] until the reels will start to roll.
+
+SOURCE:
+mameinfo.dat
+
+$end
+$info=toledob
+$mame
+INITIALIZATION:
+Insert coin [ 5 ] and keep pressed Aux Lever [ 2 ] and Lever [ 1 ] until the reels will start to roll.
+
+SOURCE:
+mameinfo.dat
 
 $end
 $info=topgear
@@ -12510,6 +13456,42 @@ When you see "FACTORY SETTINGS RESTORED", hit [ F2 ] (Service Mode).
 
 SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
+
+$end
+$info=turbosubb8
+$mame
+TIPS:
+At first startup the game performs hardware tests (with the screen completely black), to start gameplay hold down [ F3 ] and [ * ] (on the keypad) for a few seconds. During gameplay you can access the operator menu always by pressing [ * ]. To choose options press the numbers on the numeric keypad.
+
+SOURCE:
+https://www.progettosnaps.net/gameinit.dat
+
+$end
+$info=turbosubc5
+$mame
+TIPS:
+At first startup the game performs hardware tests (with the screen completely black), to start gameplay hold down [ F3 ] and [ * ] (on the keypad) for a few seconds. During gameplay you can access the operator menu always by pressing [ * ]. To choose options press the numbers on the numeric keypad.
+
+SOURCE:
+https://www.progettosnaps.net/gameinit.dat
+
+$end
+$info=turbosubc5s
+$mame
+TIPS:
+At first startup the game performs hardware tests (with the screen completely black), to start gameplay hold down [ F3 ] and [ * ] (on the keypad) for a few seconds. During gameplay you can access the operator menu always by pressing [ * ]. To choose options press the numbers on the numeric keypad.
+
+SOURCE:
+https://www.progettosnaps.net/gameinit.dat
+
+$end
+$info=turbosubc8
+$mame
+TIPS:
+At first startup the game performs hardware tests (with the screen completely black), to start gameplay hold down [ F3 ] and [ * ] (on the keypad) for a few seconds. During gameplay you can access the operator menu always by pressing [ * ]. To choose options press the numbers on the numeric keypad.
+
+SOURCE:
+https://www.progettosnaps.net/gameinit.dat
 
 $end
 $info=twcup94b
@@ -12794,6 +13776,15 @@ http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
 $info=viostormub
+$mame
+INITIALIZATION:
+The first time you run the game, the EEPROM 13B shows as BAD in the RAM/ROM Check. Hold down the Test switch F2 and then also hit [ F3 ] to reset the machine, creating the EEPROM for you.
+
+SOURCE:
+http://wiki.mamedev.org/index.php/FAQ:Games
+
+$end
+$info=viostormubbl
 $mame
 INITIALIZATION:
 The first time you run the game, the EEPROM 13B shows as BAD in the RAM/ROM Check. Hold down the Test switch F2 and then also hit [ F3 ] to reset the machine, creating the EEPROM for you.
@@ -13183,4 +14174,4 @@ http://wiki.mamedev.org/index.php/FAQ:Games
 $end
 #
 #
-# © 2015/2022  AntoPISA
+# © 2015/2024  AntoPISA
