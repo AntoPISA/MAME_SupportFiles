@@ -1,8 +1,9 @@
-MAME CHD-Info v0.262
+MAME CHD-Info v0.263
 progetto-SNAPS © 2016/2024 AntoPISA
 ===================================
 
 Home-page: https://www.progettosnaps.net/chdinfo/
+Github   : https://github.com/AntoPISA/MAME_SupportFiles
 
 In this package you can find these ini files:
 - SL folder: All SL CHD dats.
