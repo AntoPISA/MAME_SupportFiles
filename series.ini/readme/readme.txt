@@ -1,4 +1,4 @@
-MAME SERIES.ini 0.262 (Feb  9, 2024)
+MAME SERIES.ini 0.263 (Mar 11, 2024)
 (C) AntoPISA   www.progettoSNAPS.net
 ==================================== 
 
@@ -10,12 +10,19 @@ From 0.162 version, the file deals only for arcade sets. From the 0.177 version 
 and verification of the .ini files, created by motoschifo. Many thanks to Alexis B. of https://www.arcade-history.com/. 
 
 
+WhatsNew 0.263 (11.03.2024) (712 supported Series):
+=====================================================
+Items RENAMED (1): (sidebs) to (sidebsj).
+Series NEW (1): Scud Race.
+Series REMOVED (1): Makaimura.
+Series UPDATED (4): Denjin Makai, Operation Wolf, Phoenix and Side By Side.
+
+
 WhatsNew 0.262 (09.02.2024) (712 supported Series):
 =====================================================
-Series RENAMED (24): (blkrhino) to (blkrhinonz), (bumblbugql) to (bumblbugq), (chariotcv) to (chariotcpe), (chickna5ql) to (chickna5q), (dolphntrql) to (dolphntrq), (eforest) to (eforestu), (eforesta) to (eforest), (eforestb) to (eforestnz), (galpansu) to (galpansua), (hthero) to (htheroj), (indrema5ql) to (indrema5q), (jojoba) to (jojobar1), (jojobaj) to (jojobajr1), (jojobajr1) to (jojobajr2), (jojoban) to (jojobanr1), (jojobane) to (jojobaner1), (jojobaner1) to (jojobaner2), (jojobanr1) to (jojobanr2), (jojobar1) to (jojobar2), (pbss330) to (pbss330a), (qnileql) to (qnileq), (qnilev) to (qnilepe), (reelrockql) to (reelrockq) and (tekken2) to (tekken2ud).
+Items RENAMED (24): (blkrhino) to (blkrhinonz), (bumblbugql) to (bumblbugq), (chariotcv) to (chariotcpe), (chickna5ql) to (chickna5q), (dolphntrql) to (dolphntrq), (eforest) to (eforestu), (eforesta) to (eforest), (eforestb) to (eforestnz), (galpansu) to (galpansua), (hthero) to (htheroj), (indrema5ql) to (indrema5q), (jojoba) to (jojobar1), (jojobaj) to (jojobajr1), (jojobajr1) to (jojobajr2), (jojoban) to (jojobanr1), (jojobane) to (jojobaner1), (jojobaner1) to (jojobaner2), (jojobanr1) to (jojobanr2), (jojobar1) to (jojobar2), (pbss330) to (pbss330a), (qnileql) to (qnileq), (qnilev) to (qnilepe), (reelrockql) to (reelrockq) and (tekken2) to (tekken2ud).
 Series UPDATED (15): Aristocrat MK Hardware, Black Rhino, Cherry Master, Crime Fighters, Cruis'n USA, Dolphin Treasure, Enchanted Forest, Gals Panic, Hat Trick Hero, JoJo's Bizarre Adventure, Mahjong Gakuensai, Operation Wolf, Pit Boss, Reelin-n-Rockin and Tekken.
 Series ADDED (3): Altair, Euro Champ '92 and Treasures of the Inca.
-
 
 WhatsNew 0.261 (05.12.2023) (709 supported Series):
 =====================================================
@@ -643,4 +650,4 @@ Series ADDED: 10 x 10 Slot, 777 Heaven Slot, A Nightmare On Elm Street Slot, Ace
 Series UPDATED: 194X, All Japan Pro Wrestling, Alpha Mission, Area 51, Arkanoid, Asteroids, Bagman, Battle Garegga, Battle Gear, beatmania, Bishi Bashi, Bloody Roar, Bomb Jack, Bubble Bobble, Boulder Dash, Centipede, Champion Poker, Chase H.Q., Cherry Master, Columns, Commando, Contra, Crackin' DJ, Crazy Climber, Crime Fighters, Crown Golf, Cruis'n USA, Crystal Maze, Dancing Stage, Darkstalkers, Daytona USA, DJ Boy, Donkey Kong, DonPachi, Double Dragon, Dragon Ball Z, Dragon's Lair, Drift Out, Dynamite Baseball, Dynasty Wars, Elvira Pinball, Empire City, ESP Ra.De., Exciting Soccer, Fantasia, Fantasy Zone, Fatal Fury, Fighter's History, Final Fight, Final Furlong, Flying Shark, Fruit Bonus, Fun Cube, Galaxian, Gals Panic, Gauntlet, Get Bass, Ghosts'n Goblins, Giga Wing, Golden Axe, Golden Tee, Gradius, Green Beret, GTI Club, Gunforce, Gunlock, Hang-On, Hat Trick Hero, Head On, Hidden Catch, House of the Dead, Hunting, Ikari, Initial D, Intrepid, Island, Janputer, Joe & Mac, JoJo's Bizarre Adventure, Jurassic Park, Jurassic Park Pinball, Killer Instinct, Killing Blade, King of Fighters, King of the Monsters, Knights of Valour, Kung-Fu Master, Last Blade, Lethal Enforcers, Lode Runner, Long Hu Bang, Lucky 8 Lines, Magic Card, Magic's 10, Major League, Major Title, Match It, Mario Bros., Marvel Vs. Capcom, Medal Mahjong, Mega Man, Megatouch, Melty Blood, Mobile Suit Gundam, Monaco GP, Monopoly, Moon Cresta, Mortal Kombat, Mr. Driller, Mr. Do!, Multi Champ, Multi Game, NBA Jam, NFL Blitz, Ninja-Kid, Nova 2001, Numan Athletics, Operation Wolf, Oriental Legend, Othello, Out Run, Out Zone, P-47, Pac-Man, Pac-Man Pinball, Paitoride, Pang, ParaParaParadise, Parodius, Phoenix, Photo Y2K, Pinball Action, Pirate Igrosoft, Pit Boss, Pocket Gal, Point Blank, Pole Position, Police Trainer, Pop'n Music, Power Instinct, Power Spikes, Primal Rage, Print Club, Psychic Force, Punch-Out!!, Puzz Loop, Puzzle Bobble, Puzzle-Dama, Q*Bert, Qix, Quarterback, Quiz Tonosama no Yabou, Racin' Force, Rad Mobile, Raiden, Rally X, Rastan, Ridge Racer, Rival Schools, Robin's Adventure, Robocop, Robotron, Rolling Thunder, Samba de Amigo, Samurai Aces, Samurai Shodown, Scramble, SD Gundam, Sega Rally, Sengoku, Shanghai, Sharpshooter Pinball, Shikigami no Shiro, Shinobi, Shock Troopers, Shogun Warriors, Side By Side, Silkroad, Sky Adventure, Sky Kid, Slam Masters, SNK Vs. Capcom, Snow Bros., Sorcer Striker, Soul Edge, Space Harrier, Space Invaders, Special Forces, Spelunker, Sprint, Spy Hunter, Stadium Hero, Star Force, Star Gladiator, Star Wars, Star Wars Arcade, Star Wars Pinball, Steel Gunner, Street Fighter, Street Fighter EX, Strider, Super Real Mahjong, Super Volleyball, Suzuka 8 Hours, Sweet Life, Taisen Hot Gimmick, Tank Battalion, Targ, Tecmo World Cup, Teenage Mutant Ninja Turtles, Tekken, Tetris, Thunder & Lightning, Thunder Cross, Time Crisis, Time Killers, Time Pilot, Touchmaster, Track & Field, Triv, Trivia, Trivia Master, Trivia ? Whiz, Trivial Pursuit, Twin Cobra, TX-1, U.N. Squadron, Vanguard, Vapor Trail, Victor, Violence Fight, Virtua Cop, Virtua Striker, Wangan Midnight, Wonder Boy, World Class Bowling, World Combat, World Stadium, WWF Superstars, Xevious, Zero Gunner, Zero Point.
 
 
-(C) 2013/2023 AntoPISA progetto-SNAPS
+(C) 2013/2024 AntoPISA progetto-SNAPS
