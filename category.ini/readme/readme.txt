@@ -1,4 +1,4 @@
-MAME CATEGORY.ini 0.262 (Feb 24, 2024)
+MAME CATEGORY.ini 0.263 (Mar 11, 2024)
 © AntoPISA       www.progettoSNAPS.net
 ======================================
 
@@ -16,7 +16,7 @@ In this package you can find these ini files:
 - CHD (no BIOS): List all the machines that need a CHD to run (BIOS excluded).
 - CHD (Working): List all the machines working that need a CHD to run (BIOS excluded).
 - Driver: MAME machines divided by drivers.
-- FreePlay: MAME machines with free-play option (only arcade - by b4nd1t0).
+- FreePlay: MAME machines with free-play option (only arcade).
 - Mechanical Arcade: List of mechanical arcade machines (to complete MAMEUI).
 - mess: List with all others machines in MAME.
 - MonoChrome: MAME machines divided by colors.
@@ -33,8 +33,13 @@ In this package you can find these ini files:
 
 These files must be copied to the directory called "folders" of your MAME.
 
+
 WhatsNew:
 =========
+2024/03/11: Aligned files to MAME 0.263.
+2024/03/09: Completely revised the update queries in the "players.ini" file.
+2024/03/05: Created a new MAME xlm analysis query to extract useful information from the "freeplay.ini" file. Therefore, from this version the file is no longer derived from the one produced by b4nd1t0.
+2024/03/03: The "Puzzle/Match" category has been completely revised.
 2024/02/24: Fixed the query that generates "Bootlegs.ini" and "Not Bootlegs.ini" ini files.
 2024/02/22: Added a new ini file: Prototype.ini that lists MAME machines identified as "prototype".
 2024/02/09: Aligned files to MAME 0.262. The files can also be found here https://github.com/AntoPISA/MAME_SupportFiles.
