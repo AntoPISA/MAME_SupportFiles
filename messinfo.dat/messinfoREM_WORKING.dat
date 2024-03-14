@@ -1,4 +1,4 @@
-﻿#    MESSINFO_REM.DAT v0.262 Latest update:  Feb 11, 2024
+﻿#    MESSINFO_REM.DAT v0.263 Latest update:  Mar 14, 2024
 #                             Project start: Nov 07, 2011
 #
 #    Author:  Antonio Paradossi (AntoPISA) from Pisa (Tuscany/Italy)
@@ -9,8 +9,8 @@
 #    homepage: http://www.progettosnaps.net/messinfo
 #
 #
-#    Internal version: 1.40
-#    Total items: 310
+#    Internal version: 1.41
+#    Total items: 312
 #
 #
 $info=24c16a
@@ -6218,6 +6218,18 @@ WIP:
 - 0.132: Sandro Ronco added sc1.cpp driver.
 
 $end
+$info=snova.cpp
+$drv
+0.227 [hap]
+
+WIP:
+- 0.263: Merged with primo.cpp.
+- 0.262: Small tweak to internal artwork [hap]. Redo svg from lcd scan (old one was based on scan from manual) [hap, Berger].
+- 0.246: Renamed (novag_snova.cpp) to (snova.cpp) and placed in the sub-folder "novag/".
+- 0.229: Merged (novag_supremo.cpp) with (novag_snova.cpp).
+- 0.227: hap added novag_snova.cpp driver.
+
+$end
 $info=splitsec.cpp
 $drv
 0.158
@@ -6319,6 +6331,16 @@ $drv
 WIP:
 - 0.224: Driver removed.
 - 0.217: David Haywood added unkmandd.cpp driver.
+
+$end
+$info=vip.cpp
+$drv
+0.114 [Curt Coder]
+
+WIP:
+- 0.263: Merged with svip.cpp.
+- 0.246: Driver placed in the sub-folder "rca/".
+- 0.114: Curt Coder added vip.cpp driver.
 
 $end
 #
