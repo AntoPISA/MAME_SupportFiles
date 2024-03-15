@@ -1,9 +1,10 @@
-MESSINFO.DAT 0.262  (Feb 16, 2024)
+MESSINFO.DAT 0.263  (Mar 15, 2024)
 (C) AntoPISA www.progettoSNAPS.net
 ==================================
 
 WhatsNew:
 =========
+11.54 04/15/2024: Aligned files to 0.263 version.
 11.53 02/16/2024: Aligned files to 0.262 version.
 11.52 02/09/2024: The file is now available on GitHub; you can find it here: https://github.com/AntoPISA/MAME_SupportFiles
 11.52 12/09/2023: Aligned files to 0.261 version.
