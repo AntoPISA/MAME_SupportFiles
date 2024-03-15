@@ -11,6 +11,7 @@ The following files have been updated in this MAME cycle:
 - CatVer pack
 - GameInit.dat
 - Languages.ini
+- messINFO.dat
 - renameSET.dat
 - Series.ini
 - Version pack
