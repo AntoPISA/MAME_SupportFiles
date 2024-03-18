@@ -36,6 +36,7 @@ These files must be copied to the directory called "folders" of your MAME.
 
 WhatsNew:
 =========
+2024/03/17: One more change to the query for detecting games with "Free Play"; as of today, a match is searched in the xml node <dipswitch name= and also in <dipvalue name=".
 2024/03/11: Aligned files to MAME 0.263.
 2024/03/09: Completely revised the update queries in the "players.ini" file.
 2024/03/05: Created a new MAME xlm analysis query to extract useful information from the "freeplay.ini" file. Therefore, from this version the file is no longer derived from the one produced by b4nd1t0.
