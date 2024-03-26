@@ -1,4 +1,4 @@
-MAME CATVER.ini 0.263 (Mar 11, 2024)
+MAME CATVER.ini 0.263 (Mar 26, 2024)
 (C) AntoPISA   www.progettoSNAPS.net
 ====================================
 
@@ -16,6 +16,7 @@ In this package you can find these ini files:
 
 WhatsNew:
 =========
+2024/03/26: Thanks to a report from a Github user, I revised the "mature" flag of "danceyes" games (and clones) by removing it where it was present. There are no nude scenes.
 2024/03/11: Aligned files to MAME 0.263.
 2024/03/03: The "Puzzle/Match" category/genre has been completely revised.
 2024/02/09: Aligned files to MAME 0.262. The files can also be found here https://github.com/AntoPISA/MAME_SupportFiles.
