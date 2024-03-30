@@ -1,4 +1,4 @@
-MAME CATEGORY.ini 0.263 (Mar 11, 2024)
+MAME CATEGORY.ini 0.264 (Apr 01, 2024)
 © AntoPISA       www.progettoSNAPS.net
 ======================================
 
@@ -6,36 +6,38 @@ ReadMe:
 =======
 In this package you can find these ini files:
 
-- Arcade: List with arcade machines in MAME.
-- Arcade_BIOS: List with arcade BIOSes only.
-- Arcade_NOBIOS: List with arcade machines in MAME (BIOS excluded).
-- ArcadeWokingParents: List with parent working arcade machines in MAME.
-- Bootlegs: List of 'Bootleg' machines.
-- Cabinets: MAME machines divided by type of cabinets (only arcade - by b4nd1t0).
-- Category: MAME machines divided by category.
-- CHD (no BIOS): List all the machines that need a CHD to run (BIOS excluded).
-- CHD (Working): List all the machines working that need a CHD to run (BIOS excluded).
-- Driver: MAME machines divided by drivers.
-- FreePlay: MAME machines with free-play option (only arcade).
-- Mechanical Arcade: List of mechanical arcade machines (to complete MAMEUI).
+- arcade.ini: List with arcade machines in MAME.
+- arcade_BIOS.ini: List with arcade BIOSes only.
+- arcade_NOBIOS.ini: List with arcade machines in MAME (BIOS excluded).
+- ArcadeWokingParents.ini: List with parent working arcade machines in MAME.
+- Bootlegs.ini: List of 'Bootleg' machines.
+- category.ini: MAME machines divided by category.
+- CHD (no BIOS).ini: List all the machines that need a CHD to run (BIOS excluded).
+- CHD Working.ini: List all the machines working that need a CHD to run (BIOS excluded).
+- Clones Arcade.ini: List of arcade clone machines (to complete MAMEUI).
+- driver.ini: MAME machines divided by drivers.
+- freeplay.ini: MAME machines with free-play option (only arcade).
+- Mechanical Arcade.ini: List of mechanical arcade machines (to complete MAMEUI).
 - mess: List with all others machines in MAME.
-- MonoChrome: MAME machines divided by colors.
-- Non Bootlegs: List the machines excluding all 'bootlegs'.
-- Non Mechanical Arcade: List of not mechanical arcade machines (to complete MAMEUI).
-- Not Working Arcade: List of not working arcade machines (to complete MAMEUI).
-- Parents Arcade: List of arcade parent machines (to complete MAMEUI).
-- Players: List of MAME arcade machines divided by number of players.
-- Prototype: List of machines identified as "prototype".
-- Resolution: MAME machines divided by original resolution.
-- Screenless: Only MAME machines without screen.
-- Working Arcade: List of working arcade machines (to complete MAMEUI).
-- Working Arcade Clean: List all the working machines excluding: Casino, Electromechanical, Medal Game, Quiz, Slot Machine, Whac-A-Mole, Tabletop (Mahjong, Othello, Pachino, etc.) and Utilities.
+- monochrome.ini: MAME machines divided by colors.
+- Non Bootlegs.ini: List the machines excluding all 'bootlegs'.
+- Non Mechanical Arcade.ini: List of not mechanical arcade machines (to complete MAMEUI).
+- Not Working Arcade.ini: List of not working arcade machines (to complete MAMEUI).
+- Parents Arcade.ini: List of arcade parent machines (to complete MAMEUI).
+- Players.ini: List of MAME arcade machines divided by number of players.
+- Prototype.ini: List of machines identified as "prototype".
+- resolution.ini: MAME machines divided by original resolution.
+- screenless.ini: Only MAME machines without screen.
+- Working Arcade.ini: List of working arcade machines (to complete MAMEUI).
+- Working Arcade Clean.ini: List all the working machines excluding: Casino, Electromechanical, Medal Game, Quiz, Slot Machine, Whac-A-Mole, Tabletop (Mahjong, Othello, Pachino, etc.) and Utilities.
 
 These files must be copied to the directory called "folders" of your MAME.
 
 
 WhatsNew:
 =========
+2024/04/01: Aligned files to MAME 0.264.
+2024/03/31: Removed support for the "Cabinets.ini" file, which has not been updated for years by its creator b4nd1t0. 
 2024/03/17: One more change to the query for detecting games with "Free Play"; as of today, a match is searched in the xml node <dipswitch name= and also in <dipvalue name=".
 2024/03/11: Aligned files to MAME 0.263.
 2024/03/09: Completely revised the update queries in the "players.ini" file.

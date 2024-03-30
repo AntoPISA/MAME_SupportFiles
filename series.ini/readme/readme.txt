@@ -1,5 +1,5 @@
-MAME SERIES.ini 0.263 (Mar 11, 2024)
-(C) AntoPISA   www.progettoSNAPS.net
+MAME SERIES.ini 0.264 (Apr 01, 2024)
+© AntoPISA     www.progettoSNAPS.net
 ==================================== 
 
 Home-page:          https://www.progettosnaps.net/series/
@@ -10,13 +10,17 @@ From 0.162 version, the file deals only for arcade sets. From the 0.177 version 
 and verification of the .ini files, created by motoschifo. Many thanks to Alexis B. of https://www.arcade-history.com/. 
 
 
+WhatsNew 0.264 (01.04.2024) (712 supported Series):
+=====================================================
+Series UPDATED (6): 194X, Bagman, Cal Omega, Galaxian, Mr. Do! and Pac-Man.
+
+
 WhatsNew 0.263 (11.03.2024) (712 supported Series):
 =====================================================
 Items RENAMED (1): (sidebs) to (sidebsj).
 Series NEW (1): Scud Race.
 Series REMOVED (1): Makaimura.
 Series UPDATED (4): Denjin Makai, Operation Wolf, Phoenix and Side By Side.
-
 
 WhatsNew 0.262 (09.02.2024) (712 supported Series):
 =====================================================
@@ -203,7 +207,7 @@ Whatsnews 0.229 (27.02.2021) (678 supported Series):
 Items RENAMED (1): (asteroidb) to (asteroidb1).
 Items REMOVED (1): (blitz11).
 Series UPDATED (10): Asteroids, beatmania, Defender, Drift Out, Galaxian, Pac-Man, ParaParaParadise, Player's Edge, Pop'n Music and Street Fighter.
-Series RENAMED (1): (ï¿½6-X) to (L.6-X) to work around a problem caused by the "ï¿½" character.
+Series RENAMED (1): (?6-X) to (L.6-X) to work around a problem caused by the "?" character.
 
 Whatsnews 0.228 (05.02.2021) (678 supported series, -1/+2):
 ===========================================================
@@ -234,7 +238,7 @@ Whatsnews 0.224 (01.09.2020) (672 supported series, +15):
 =========================================================
 Items RENAMED (15): (crusnusa) to (crusnusa41), (v4cmaze2a) to (v4cmaze2_amld), (v4cmaze3a) to (v4cmaze3_amld), (v4cmazea) to (v4cmaze_amld), (dwpc) to (dwpc101j), (doa) to (doab), (drgw2c) to (drgw2100c), (drgw2hk) to (drgw2100hk), (drgw2j) to (drgw2100j), (dw2v100x) to (drgw2100x), (kov100) to (kov111), (kovshpa) to (kovshp100), (monopolya) to (monopoly4), (photoy2k102) to (photoy2k102j) and (kov100hk) to (kov114).
 Items REMOVED (1): (sirio2a).
-Series ADDED (16): ï¿½6-X, Bare Knuckle, Big 40 Poker, Cash Inferno, Gold Rush, Miami Dice, Monte Carlo Or Bust, Red Hot Mazooma Belle, Red Hot Poker, Reno Casino, Reno Reels, Shop Window, Sunburst, Time Bandit and Time Machine.
+Series ADDED (16): ?6-X, Bare Knuckle, Big 40 Poker, Cash Inferno, Gold Rush, Miami Dice, Monte Carlo Or Bust, Red Hot Mazooma Belle, Red Hot Poker, Reno Casino, Reno Reels, Shop Window, Sunburst, Time Bandit and Time Machine.
 Series UPDATED (15): Astro Fighter, Cherry Master, Chuugokuryuu, Cruis'n USA, Crystal Maze, Dead or Alive, Dragon World, Galaxian, Knights of Valour, Monopoly, Mr. Do!, Oriental Legend, Pac-Man, Pang, Photo Y2K and Slam Masters.
 
 Whatsnews 0.222 (14.07.2020) (657 supported series, +1):
@@ -650,4 +654,4 @@ Series ADDED: 10 x 10 Slot, 777 Heaven Slot, A Nightmare On Elm Street Slot, Ace
 Series UPDATED: 194X, All Japan Pro Wrestling, Alpha Mission, Area 51, Arkanoid, Asteroids, Bagman, Battle Garegga, Battle Gear, beatmania, Bishi Bashi, Bloody Roar, Bomb Jack, Bubble Bobble, Boulder Dash, Centipede, Champion Poker, Chase H.Q., Cherry Master, Columns, Commando, Contra, Crackin' DJ, Crazy Climber, Crime Fighters, Crown Golf, Cruis'n USA, Crystal Maze, Dancing Stage, Darkstalkers, Daytona USA, DJ Boy, Donkey Kong, DonPachi, Double Dragon, Dragon Ball Z, Dragon's Lair, Drift Out, Dynamite Baseball, Dynasty Wars, Elvira Pinball, Empire City, ESP Ra.De., Exciting Soccer, Fantasia, Fantasy Zone, Fatal Fury, Fighter's History, Final Fight, Final Furlong, Flying Shark, Fruit Bonus, Fun Cube, Galaxian, Gals Panic, Gauntlet, Get Bass, Ghosts'n Goblins, Giga Wing, Golden Axe, Golden Tee, Gradius, Green Beret, GTI Club, Gunforce, Gunlock, Hang-On, Hat Trick Hero, Head On, Hidden Catch, House of the Dead, Hunting, Ikari, Initial D, Intrepid, Island, Janputer, Joe & Mac, JoJo's Bizarre Adventure, Jurassic Park, Jurassic Park Pinball, Killer Instinct, Killing Blade, King of Fighters, King of the Monsters, Knights of Valour, Kung-Fu Master, Last Blade, Lethal Enforcers, Lode Runner, Long Hu Bang, Lucky 8 Lines, Magic Card, Magic's 10, Major League, Major Title, Match It, Mario Bros., Marvel Vs. Capcom, Medal Mahjong, Mega Man, Megatouch, Melty Blood, Mobile Suit Gundam, Monaco GP, Monopoly, Moon Cresta, Mortal Kombat, Mr. Driller, Mr. Do!, Multi Champ, Multi Game, NBA Jam, NFL Blitz, Ninja-Kid, Nova 2001, Numan Athletics, Operation Wolf, Oriental Legend, Othello, Out Run, Out Zone, P-47, Pac-Man, Pac-Man Pinball, Paitoride, Pang, ParaParaParadise, Parodius, Phoenix, Photo Y2K, Pinball Action, Pirate Igrosoft, Pit Boss, Pocket Gal, Point Blank, Pole Position, Police Trainer, Pop'n Music, Power Instinct, Power Spikes, Primal Rage, Print Club, Psychic Force, Punch-Out!!, Puzz Loop, Puzzle Bobble, Puzzle-Dama, Q*Bert, Qix, Quarterback, Quiz Tonosama no Yabou, Racin' Force, Rad Mobile, Raiden, Rally X, Rastan, Ridge Racer, Rival Schools, Robin's Adventure, Robocop, Robotron, Rolling Thunder, Samba de Amigo, Samurai Aces, Samurai Shodown, Scramble, SD Gundam, Sega Rally, Sengoku, Shanghai, Sharpshooter Pinball, Shikigami no Shiro, Shinobi, Shock Troopers, Shogun Warriors, Side By Side, Silkroad, Sky Adventure, Sky Kid, Slam Masters, SNK Vs. Capcom, Snow Bros., Sorcer Striker, Soul Edge, Space Harrier, Space Invaders, Special Forces, Spelunker, Sprint, Spy Hunter, Stadium Hero, Star Force, Star Gladiator, Star Wars, Star Wars Arcade, Star Wars Pinball, Steel Gunner, Street Fighter, Street Fighter EX, Strider, Super Real Mahjong, Super Volleyball, Suzuka 8 Hours, Sweet Life, Taisen Hot Gimmick, Tank Battalion, Targ, Tecmo World Cup, Teenage Mutant Ninja Turtles, Tekken, Tetris, Thunder & Lightning, Thunder Cross, Time Crisis, Time Killers, Time Pilot, Touchmaster, Track & Field, Triv, Trivia, Trivia Master, Trivia ? Whiz, Trivial Pursuit, Twin Cobra, TX-1, U.N. Squadron, Vanguard, Vapor Trail, Victor, Violence Fight, Virtua Cop, Virtua Striker, Wangan Midnight, Wonder Boy, World Class Bowling, World Combat, World Stadium, WWF Superstars, Xevious, Zero Gunner, Zero Point.
 
 
-(C) 2013/2024 AntoPISA progetto-SNAPS
+© 2013/2024 AntoPISA progetto-SNAPS

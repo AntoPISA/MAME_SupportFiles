@@ -1,9 +1,11 @@
-MAME RENAMESET.dat 0.263 (Mar  5, 2024)
+MAME RENAMESET.dat 0.264 (Mar 30, 2024)
 (C) AntoPISA      www.progettoSNAPS.net
 ---------------------------------------
 
 WhatsNew:
----------
+=========
+5.23 2024/03/30: Added 0.264 infos, also update all the other files.
+5.22 2024/03/15: motoschifo has begun a deep upgrade of the tool I use for all the calculations in renameSET.dat (ProgettoSnaps Tool); in a few months the calculations will all be regenerated and the renameSET.dat and renameSET_SL.dat files will be merged together.
 5.21 2024/03/05: Added 0.263 infos, also update all the other files.
 5.20 2024/02/09: From today you can also find the files here: https://github.com/AntoPISA/MAME_SupportFiles.
 5.19 2024/02/05: Added 0.262 infos, also update all the other files.

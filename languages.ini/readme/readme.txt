@@ -1,4 +1,4 @@
-MAME LANGUAGES.ini 0.263 (Mar 11, 2024)
+MAME LANGUAGES.ini 0.264 (Apr 01, 2024)
 (C) AntoPISA      www.progettoSNAPS.net
 =======================================
 
@@ -8,18 +8,17 @@ The file, extracted from the zip file, should be placed in the folder named 'Fol
 items  - Language
 =========================
     1  - Bulgarian
-   68  - Chinese
+   71  - Chinese
     5  - Croatian
     3  - Czech
   107  - Dutch
-31887  - English
+31923  - English
   148  - French
   303  - German
     4  - Greek
     5  - Hungarian
   250  - Italian
- 2154  - Japanese
-    2  - Japanese/English
+ 2162  - Japanese
    98  - Korean
    15  - Latvian
     2  - Norwegian
@@ -27,7 +26,7 @@ items  - Language
    21  - Portuguese
   146  - Russian
     1  - Slovak
-  323  - Spanish
+  327  - Spanish
     1  - Swedish
     1  - Turkish
   139  - Ukrainian
@@ -35,6 +34,7 @@ items  - Language
 
 WhatsNew:
 ==================================
+2024/04/01 1.58: Added 0.264 sets.
 2024/03/11 1.57: Added 0.263 sets.
 2024/02/26 1.56: Removed "Belgian" (it's not a language) replaced with "Dutch" where it was needed.
 2024/02/09 1.55: Added 0.262 sets. The files can also be found here https://github.com/AntoPISA/MAME_SupportFiles.

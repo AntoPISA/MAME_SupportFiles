@@ -1,5 +1,5 @@
 #     ===========================================================
-#     MAME RENAMESET.DAT v0.263 Latest update:     March  5, 2024
+#     MAME RENAMESET.DAT v0.264 Latest update:     March 30, 2024
 #     ===========================================================
 #
 #     Home-page: https://www.progettosnaps.net/renameset/
@@ -16,21 +16,33 @@
 #     Thanks to MAMEDevs for whatsnew.txt
 #               Guy Peters for the "ini_generator"
 #               M.A.S.H. for "mameinfo.dat"
-#               motoschifo for "ADB Tool" and for the constant support!
+#               motoschifo for "ADB Tool", "ProgettoSnaps Tool" and for the constant support!
 #
-#               Internal Version 5.21
+#               Internal Version 5.23
 #
-#     =============================================
-#     REDO ALL THE COUNTS FROM VERSION #101 TO #474
-#     =============================================
-#
-#       746 removed machines/devices overall in the history of MAME
-#     6.464 renamed machines/devices overall in the history of MAME
-#
-#     "use CHDs" and "parents" TO FIXING: FROM 0.103u2 TO 0.170
-#     ADDING ITEMS "horizontal" AND "vertical": FROM 0.202 to 0.231 TO DO
+#       751 removed machines/devices overall in the history of MAME
+#     6.469 renamed machines/devices overall in the history of MAME
 #
 #
+$0.264 [#703]
+2024/03/27
+46.695 items, 40.275 machines (-1/+82), 13.824 parents (+51), 26.527 clones (+30), 76 BIOS, 6.344 device (-4/+50), 1.194 use CHDs (+3), 1.840 use Samples (+1), Working 15.355 (+31), NotWorking 24.996 (+50), Mechanical 15.617 (+7), NotMechanical 24.734 (+74), SaveState Supported 13.845 (+46), SaveState Not Supported 26.506 (+35), Horizontal Screen 37.147 (+74), Vertical Screen 3.204 (+7)
+349.911 roms (+459), 347.968 program roms (+455), 619 BIOS roms, 1.324 CHD roms (+4), 355 sample roms, no dumps roms 5.696 (+24), bad dumps roms 4.608 (+17), bug fixed 2
+702 active SL (+1), 11 orphan SL (+1), 136.726 active software (-2/+100), 763 orphan software (+3)
+5 ren (1/4/0):
+driblingbr       > driblingvm          (mID: 18967)
+epic12           > ep1c12              (mID: 29605)
+plg100_connector > plg1x0_connector    (mID: 47171)
+s3_vga           > s3_86c764_vga       (mID: 34171)
+sis630_svga      > sis6236_vga         (mID: 45173)
+5 del (1/4/0):
+dms3d2kp                               (mID: 31784)
+h8_adc_2320                            (mID: 32193)
+lilprofa                               (mID: 32682)
+s3virge                                (mID: 34175)
+s3virgedx                              (mID: 34176)
+
+
 $0.263 [#702]
 2024/02/28
 46.568 items, 40.194 machines (+54), 13.773 parents (+33), 26.497 clones (+21), 76 BIOS, 6.298 device (+49), 1.191 use CHDs (+2), 1.839 use Samples (+1), Working 15.324 (+33), NotWorking 24.946 (+21), Mechanical 15.610 (+2), NotMechanical 24.660 (+52), SaveState Supported 13.799 (+28), SaveState Not Supported 26.471 (+26), Horizontal Screen 37.073 (+52), Vertical Screen 3.197 (+2)
@@ -2924,223 +2936,117 @@ othunder    > othundero
 
 
 $0.175 [#614]
-2016/06/291
+2016/06/29
 36.541 items, 33.403 machines (-6/+72), 10.867 parents (-30), 22.536 clones (+96), 69 BIOS, 3.069 device (-1/+26), 799  use CHDs (+3), 988 use Samples (+11), Working 11.595 (+52), NotWorking 21.808 (+14), Mechanical 15.014 (+1), NotMechanical 18.389, SaveState Supported 7.633 (+46), SaveState Not Supported 25.770 (+20), Horizontal Screen 30.734 (+56), Vertical Screen 2.669 (+10)
 265.450 roms (+1305), 264.110 program roms (+1299), 453 BIOS roms (+3), 887 CHD roms (+3), 640 sample roms (+2)
 414 active SL (+3), 19 orphan SL (+1), 91.413 active software (-10/+2119), 3.699 orphan software (-5)
-212 ren (2/0/0):
-50lionr        > 50lionrr
-50lionsa       > 50lionsm
-5draga         > 5drag
-5dragons       > 5dragsp
-adonis6        > adonisa6
-adonise        > adonisu
-adonishl       > adonisce
-aftrhrs        > afterhrs
-alchemya       > alchemy
-amzqnar        > amzqueen
-amzteml        > amztempl
-antcleo        > antcleom
-arbngts        > arabnga6u
-arbnigar       > arabnga6
-badbog         > baddog
-bigbenpj       > bigben
-bigredjp       > bigred2
-birredar       > bigred
-bmbgs          > bmbugs
-bobdolu1       > bobdolly
-bootscot       > bootsctn
-bootsctn       > bootsctnu
-brazilar       > brazil
-bucanar        > bucaneer
-buffalar       > buffalo
-buffaloa       > buffalou
-bumblbug       > bumblbugu
-bumbugs        > bumblbug
-butdeli        > buttdeli
-callwlar       > callwld
-canary2        > canaryrc
-cashcham       > cashchamu
-cashchm        > cashcham
-cashcroa       > cashcra5
-chickena       > chickna5u
-chkmatar       > checkma5
-chkrun         > chickna5
-choysun        > csdm
-cmpacman       > cmpacmana
-coralr2v       > coralrc2
-crspru         > cryspriu
-crystals       > crysprim
-cshcat         > cashcat
-cuckoo         > cuckoou
-cuckooa        > cuckoo
-dangar         > dangara
-dangar2        > dangarb
-dangarb        > dangarbt
-davedrag       > 5dragce
-dblagus        > dblagent
-deltqn         > deltaqn
-dinoaris       > dinosa6
-dltbel         > deltabel
-dmddove        > diamdove
-dmdtouch       > dimtouch
-dmneye2        > dimeye
-dmneyeus       > dimeyece
-dolptra        > dolphntrb
-dolphtra       > dolphntra
-dolphtre       > dolphntru
-doubdolp       > dbldolph
-drawpka        > multidrw
-drfz6us        > deepfrzu
-drgnlrd        > drgnlord
-dstblom        > dstbloom
-dyjack         > dynajack
-eaglst2        > estrike
-efcashex       > efce
-eggsrich       > eggsrccm
-eldora         > eldorda5
-enchfore       > eforsta5u
-enchfrst       > eforsta5
-encspela       > encspell
-ent6r          > enchantr
-firedan        > firednc
-flamolusa      > flamolce
-flamoly2       > flamoljc
-fortela        > fortellr
-gb_rom_m161m12 > gb_rom_m161
-geishaar       > geishaa6
-geishanz       > geisha
-gldincas       > goldincu
-gnomatw        > gnomeatw
-goapear        > goape
-goldarjp       > goldarch
-goldphm        > qnilemax
-goldprmd       > goldpyr
-goldra         > goldenra
-heartgar       > heartgld
-highnoar       > highnoon
-hlntry         > hlntroy
-hlsunmon       > sunmonbb
-houhear        > househrt
-hrttrhb        > swhr2
-incanz         > incasunnz
-incsun         > incasun
-indce          > indremce
-inddrma        > indream
-indgcm         > indgldcm
-indiandr       > indrema5
-indianmm       > indremmm
-indll          > indremll
-indsc          > indrem2c
-indsrp         > drmcatch
-jailbrar       > jailbrk
-jewelunc       > jewelcm
-koalmnt        > koalama6
-kookabk        > kookabuk
-loconz         > locolootnz
-lonwolf        > lonewolf
-luck88         > lucky88
-luigball       > luigibal
-lw3_207        > lw3_207c
-magicmsk       > magimask
-magicmska      > magimaska
-margmgc        > marmagic
-marmagic       > marmagicu
-mgctouc        > magtcha5
-mgforst        > magforst
-mgmerm         > magmerm
-monmous        > monmouse
-moutmon        > mountmon
-mtreenz        > montree
-mysteyec       > mysteycmu
-mystgrd        > mystgard
-oscarar        > oscara5
-pariligh       > parislgt
-parilius       > parislgtu
-pcfava         > pcfavor
-pcnewz         > pcgold
-pelpetus       > pelipeteu
-pengpays       > pengpayu
-penpay20       > pengpaya
-penpaya        > pengpayb
-penpayus       > pengpyce
-petshopa       > petshop
-pharpor        > pharfor
-piratar        > pirata6
-pompeiar       > pompeia6
-pompus2        > pompeia6u
-prophar        > prophecy
-prtygras       > partygrsa
-przfigha       > przfight
-pwsp1          > pwsuper
-qncsh          > qcash
-qnile          > qnilea6
-qnilecj        > qnilejc
-qonilea        > qnile
-qonileb        > qnilea
-qotn           > qnileb
-qotna          > qnileu
-rdtripus       > roadtrip
-redbarar       > redbara6
-retsam20       > retrsama
-retsam5        > retrsamb
-rpatrol        > rpatrola
-rubmgc         > rubymag
-rumbrel        > rumbreel
-rwarhl         > rainwrce
-sbucks3        > sbuk3
-scatmg2        > scatmag2
-shamnmg        > shamnmgu
-sharmnm        > shamnmg
-sidebs2        > sidebs2u
-sidebsja       > sidebsjb
-silgolar       > silgola6
-silkrdus       > silkrda6
-skydncra       > skydnca6
-smtmar         > smtma6
-ssf2tbj        > ssf2tbj1
-stardrfu       > stardrftu
-sunmon2        > sunmoon
-supbuk2        > sbuk2
-swheart2       > swhr2u
-swhr2us        > swhr2a6
-swthrt2v       > swhr2v
-thaiprar       > thaiprnc
-thaiprin       > thaiprncm
-thgamblr       > gambler
-tigresar       > tigress
-tiktoru        > tiktorch
-timwolfu       > timbwolf
-topshtar       > topshta6
-torpdice       > toprdice
-tretrva        > trstrove
-triptrea       > tritreat
-trjhrs         > trojhors
-trkinus        > trsking
-turtrea        > turtreas
-venicus        > venice
-wheregld       > wheregldm
-whlcshus       > whalecshu
-whlcshusa      > whalecshua
-whtwtr         > whtwater
-wildways       > wwaysm
-wingolus       > wingoly
-witgold        > wheregld
-witgoldd       > wheregldsp
-wldafus        > wldafr
-wldamz1        > wamazon
-wldamz3        > wamazona
-wldcatsa       > wldcata6
-wldcoug        > wcougar
-wldcougr       > wcougaru
-wldpan2        > wldpanda
-wldpntus       > wldpanth
-wldstal2       > wldstall
-wldthg         > wthing
-wwaysar        > wways
-wwaysll        > wzwaysll
-zorrojp        > zorroa6
-zorrous        > zorroa6u
+212 ren (212/0/0):
+50lionr        > 50lionrr         lonwolf        > lonewolf
+50lionsa       > 50lionsm         luck88         > lucky88
+5draga         > 5drag            luigball       > luigibal
+davedrag       > 5dragce          lw3_207        > lw3_207c
+5dragons       > 5dragsp          mgforst        > magforst
+adonis6        > adonisa6         magicmsk       > magimask
+adonishl       > adonisce         magicmska      > magimaska
+adonise        > adonisu          mgmerm         > magmerm
+aftrhrs        > afterhrs         mgctouc        > magtcha5
+alchemya       > alchemy          margmgc        > marmagic
+amzqnar        > amzqueen         marmagic       > marmagicu
+amzteml        > amztempl         monmous        > monmouse
+antcleo        > antcleom         mtreenz        > montree
+arbnigar       > arabnga6         moutmon        > mountmon
+arbngts        > arabnga6u        drawpka        > multidrw
+badbog         > baddog           mysteyec       > mysteycmu
+bigbenpj       > bigben           mystgrd        > mystgard
+birredar       > bigred           oscarar        > oscara5
+bigredjp       > bigred2          pariligh       > parislgt
+bmbgs          > bmbugs           parilius       > parislgtu
+bobdolu1       > bobdolly         prtygras       > partygrsa
+bootscot       > bootsctn         pcfava         > pcfavor
+bootsctn       > bootsctnu        pcnewz         > pcgold
+brazilar       > brazil           pelpetus       > pelipeteu
+bucanar        > bucaneer         penpay20       > pengpaya
+buffalar       > buffalo          penpaya        > pengpayb
+buffaloa       > buffalou         pengpays       > pengpayu
+bumbugs        > bumblbug         penpayus       > pengpyce
+bumblbug       > bumblbugu        petshopa       > petshop
+butdeli        > buttdeli         pharpor        > pharfor
+callwlar       > callwld          piratar        > pirata6
+canary2        > canaryrc         pompeiar       > pompeia6
+cshcat         > cashcat          pompus2        > pompeia6u
+cashchm        > cashcham         prophar        > prophecy
+cashcham       > cashchamu        przfigha       > przfight
+cashcroa       > cashcra5         pwsp1          > pwsuper
+chkmatar       > checkma5         qncsh          > qcash
+chkrun         > chickna5         qonilea        > qnile
+chickena       > chickna5u        qonileb        > qnilea
+cmpacman       > cmpacmana        qnile          > qnilea6
+coralr2v       > coralrc2         qotn           > qnileb
+crystals       > crysprim         qnilecj        > qnilejc
+crspru         > cryspriu         goldphm        > qnilemax
+choysun        > csdm             qotna          > qnileu
+cuckooa        > cuckoo           rwarhl         > rainwrce
+cucko          > cuckoou          redbarar       > redbara6
+dangar         > dangara          retsam20       > retrsama
+dangar2        > dangarb          retsam5        > retrsamb
+dangarb        > dangarbt         rdtripus       > roadtrip
+dblagus        > dblagent         rpatrol        > rpatrola
+doubdolp       > dbldolph         rubmgc         > rubymag
+drfz6us        > deepfrzu         rumbrel        > rumbreel
+dltbel         > deltabel         supbuk2        > sbuk2
+deltqn         > deltaqn          sbucks3        > sbuk3
+dmddove        > diamdove         scatmg2        > scatmag2
+dmneye2        > dimeye           sharmnm        > shamnmg
+dmneyeus       > dimeyece         shamnmg        > shamnmgu
+dmdtouch       > dimtouch         sidebs2        > sidebs2u
+dinoaris       > dinosa6          sidebsja       > sidebsjb
+dolphtra       > dolphntra        silgolar       > silgola6
+dolptra        > dolphntrb        silkrdus       > silkrda6
+dolphtre       > dolphntru        skydncra       > skydnca6
+drgnlrd        > drgnlord         smtmar         > smtma6
+indsrp         > drmcatch         ssf2tbj        > ssf2tbj1
+dstblom        > dstbloom         stardrfu       > stardrftu
+dyjack         > dynajack         hlsunmon       > sunmonbb
+efcashex       > efce             sunmon2        > sunmoon
+enchfrst       > eforsta5         hrttrhb        > swhr2
+enchfore       > eforsta5u        swhr2us        > swhr2a6
+eggsrich       > eggsrccm         swheart2       > swhr2u
+eldora         > eldorda5         swthrt2v       > swhr2v
+ent6r          > enchantr         thaiprar       > thaiprnc
+encspela       > encspell         thaiprin       > thaiprncm
+eaglst2        > estrike          tigresar       > tigress
+firedan        > firednc          tiktoru        > tiktorch
+flamolusa      > flamolce         timwolfu       > timbwolf
+flamoly2       > flamoljc         torpdice       > toprdice
+fortela        > fortellr         topshtar       > topshta6
+thgamblr       > gambler          triptrea       > tritreat
+gb_rom_m161m12 > gb_rom_m161      trjhrs         > trojhors
+geishanz       > geisha           trkinus        > trsking
+geishaar       > geishaa6         tretrva        > trstrove
+gnomatw        > gnomeatw         turtrea        > turtreas
+goapear        > goape            venicus        > venice
+goldarjp       > goldarch         wldamz1        > wamazon
+goldra         > goldenra         wldamz3        > wamazona
+gldincas       > goldincu         wldcoug        > wcougar
+goldprmd       > goldpyr          wldcougr       > wcougaru
+heartgar       > heartgld         whlcshus       > whalecshu
+highnoar       > highnoon         whlcshusa      > whalecshua
+hlntry         > hlntroy          witgold        > wheregld
+houhear        > househrt         wheregld       > wheregldm
+incsun         > incasun          witgoldd       > wheregldsp
+incanz         > incasunnz        whtwtr         > whtwater
+indgcm         > indgldcm         wingolus       > wingoly
+inddrma        > indream          wldafus        > wldafr
+indsc          > indrem2c         wldcatsa       > wldcata6
+indiandr       > indrema5         wldpan2        > wldpanda
+indce          > indremce         wldpntus       > wldpanth
+indll          > indremll         wldstal2       > wldstall
+indianmm       > indremmm         wldthg         > wthing
+jailbrar       > jailbrk          wwaysar        > wways
+jewelunc       > jewelcm          wildways       > wwaysm
+koalmnt        > koalama6         wwaysll        > wzwaysll
+kookabk        > kookabuk         zorrojp        > zorroa6
+loconz         > locolootnz       zorrous        > zorroa6u
 7 del (6/1/0):
 eaglst1
 flamoly
