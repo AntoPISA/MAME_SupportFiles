@@ -1,4 +1,4 @@
-#    MESSINFO_REM.DAT v0.263 Latest update:  Mar 15, 2024
+#    MESSINFO_REM.DAT v0.264 Latest update:  Apr  5, 2024
 #                             Project start: Nov 07, 2011
 #
 #    Author:  Antonio Paradossi (AntoPISA) from Pisa (Tuscany/Italy)
@@ -9,10 +9,135 @@
 #    homepage: http://www.progettosnaps.net/messinfo
 #
 #
-#    Internal version: 1.41
-#    Total items: 312
+#    Internal version: 1.42
+#    Total items: 315
 #
 #
+$info=s3virgedx
+$mame
+0.148u3
+
+S3 ViRGE/DX Graphics Card, <unknown>, ????
+
+DRIVER:
+devices/bus/isa/svga_s3.cpp
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Unsupported
+
+WIP:
+- 0.264: Device removed.
+- 0.148u3: Added 'S3 ViRGE/DX Graphics Card' device.
+
+$end
+$info=s3virge
+$mame
+0.148u3
+
+S3 ViRGE Graphics Card, <unknown>, ????
+
+DRIVER:
+devices/bus/isa/svga_s3.cpp
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Unsupported
+
+WIP:
+- 0.264: Device removed.
+- 0.263: Add VGA core moniker so to differentiate with the PCI/ISA equivalents [Angelo Salese].
+- 0.262: Denote hack in background pen BitBlt [Angelo Salese].
+- 0.258: Add DPSDxax ROP, fix regression with Win98SE 256 colors [Angelo Salese].
+- 0.252: Add Sn ROP for Windows 98 invert colors in Magnifier [Angelo Salese].
+- 0.220: Added support for mapping the linear frame buffer to S3 ViRGE (used by "Analog 801" demo) [Ryan Holtz].
+- 0.218: Started implementing bit-blit operations, making Windows 3.1 usable with ViRGE drivers [Barry Rodewald].
+- 0.213: Added 'PCI interface and linear framebuffer support [Barry Rodewald].
+- 0.148u3: Added 'S3 ViRGE Graphics Card' device.
+
+$end
+$info=lilprofa
+$mame
+0.160 [hap, Sean Riddle]
+
+Little Professor (1978 version), Texas Instruments, 1978
+
+The Little Professor is a backwards calculator designed for children ages 5 to 9. Instead of providing the answer to a mathematical expression entered by the user, it generates unsolved expressions and prompts the user for the answer (source: http://en.wikipedia.org/wiki/Little_Professor).
+
+DRIVER:
+handheld/hh_tms1k.cpp
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Supported
+
+SOFTWARE LIST:
+-
+
+RESOURCES:
+Snap and Title.
+
+WIP:
+- 0.264: Machine removed.
+- 0.254: Renamed (lilprof78) to (lilprofa).
+- 0.160: hap and Sean Riddle added 'TI Little Professor (1978 version)' system.
+
+ROMSET:
+3175 bytes in 5 files / 1.62Kb packed
+
+$end
+$info=h8_adc_2320
+$mame
+0.153
+
+H8/2320 ADC, <unknown>, ????
+
+DRIVER:
+devices/cpu/h8/h8_adc.cpp
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Unsupported
+
+WIP:
+- 0.264: Device removed.
+- 0.186: Changed description to 'H8/2320 ADC'.
+- 0.153: Added 'H8 ADC 2320' device.
+
+$end
+$info=dms3d2kp
+$mame
+0.154
+
+Diamond Stealth 3D 2000 Pro, <unknown>, ????
+
+DRIVER:
+devices/bus/isa/svga_s3.cpp
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Unsupported
+
+WIP:
+- 0.264: Device removed.
+- 0.154: Added 'Diamond Stealth 3D 2000 Pro' device.
+
+$end
 $info=24c16a
 $mame
 0.207 [smf]
