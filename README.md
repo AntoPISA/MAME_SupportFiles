@@ -9,7 +9,7 @@ The following files have been updated in this MAME cycle:
 - Category pack
 - CatVer pack
 - Languages.ini
-- messINFO.dat (Work in Progres)
+- messINFO.dat
 - renameSET.dat
 - Series.ini
 - Version pack
