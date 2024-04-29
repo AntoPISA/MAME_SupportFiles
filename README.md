@@ -8,6 +8,7 @@ The following files have been updated in this MAME cycle:
 
 - Category pack (WIP)
 - CatVer pack (WIP)
+- CHD-Info
 - Languages.ini (WIP)
 - messINFO.dat (WIP)
 - renameSET.dat
