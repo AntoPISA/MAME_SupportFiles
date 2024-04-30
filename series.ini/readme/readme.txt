@@ -1,4 +1,4 @@
-MAME SERIES.ini 0.264 (Apr 01, 2024)
+MAME SERIES.ini 0.265 (Apr 30, 2024)
 © AntoPISA     www.progettoSNAPS.net
 ==================================== 
 
@@ -10,10 +10,16 @@ From 0.162 version, the file deals only for arcade sets. From the 0.177 version 
 and verification of the .ini files, created by motoschifo. Many thanks to Alexis B. of https://www.arcade-history.com/. 
 
 
+WhatsNew 0.265 (30.04.2024) (714 supported Series):
+=====================================================
+Items RENAMED (1): (galgame4) to (galgame4p).
+Series NEW (2): Mahjong Gekisha and Mahjong Reach.
+Series UPDATED (2): Cal Omega and Pac-Man.
+
+
 WhatsNew 0.264 (01.04.2024) (712 supported Series):
 =====================================================
 Series UPDATED (6): 194X, Bagman, Cal Omega, Galaxian, Mr. Do! and Pac-Man.
-
 
 WhatsNew 0.263 (11.03.2024) (712 supported Series):
 =====================================================
