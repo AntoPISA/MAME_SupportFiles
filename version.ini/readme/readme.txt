@@ -1,4 +1,4 @@
-MAME VERSION.ini 0.264 (Apr 01, 2024)
+MAME VERSION.ini 0.265 (Apr 30, 2024)
 © AntoPISA      www.progettoSNAPS.net
 =====================================
 
@@ -12,6 +12,7 @@ In this package you can find these ini files:
 
 WhatsNew:
 =========
+2024/04/30: Aligned to MAME 0.265.
 2024/04/01: Aligned to MAME 0.264.
 2024/03/11: Aligned to MAME 0.263.
 2024/02/09: Aligned to MAME 0.262. The files can also be found here https://github.com/AntoPISA/MAME_SupportFiles.
