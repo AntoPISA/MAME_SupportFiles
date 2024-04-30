@@ -1,4 +1,4 @@
-MAME CATEGORY.ini 0.264 (Apr 01, 2024)
+MAME CATEGORY.ini 0.265 (Apr 30, 2024)
 © AntoPISA       www.progettoSNAPS.net
 ======================================
 
@@ -36,6 +36,7 @@ These files must be copied to the directory called "folders" of your MAME.
 
 WhatsNew:
 =========
+2024/04/30: Aligned files to MAME 0.265.
 2024/04/01: Aligned files to MAME 0.264.
 2024/03/31: Removed support for the "Cabinets.ini" file, which has not been updated for years by its creator b4nd1t0. 
 2024/03/17: One more change to the query for detecting games with "Free Play"; as of today, a match is searched in the xml node <dipswitch name= and also in <dipvalue name=".
