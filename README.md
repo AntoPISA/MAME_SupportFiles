@@ -6,14 +6,14 @@ MAME Support Files v0.265
 
 The following files have been updated in this MAME cycle:
 
-- Category pack (WIP)
-- CatVer pack (WIP)
+- Category pack
+- CatVer pack
 - CHD-Info
-- Languages.ini (WIP)
+- Languages.ini
 - messINFO.dat (WIP)
 - renameSET.dat
-- Series.ini (WIP)
-- Version pack (WIP)
+- Series.ini
+- Version pack
 
 Home-page: https://www.progettosnaps.net/support/
 Github   : https://github.com/AntoPISA/MAME_SupportFiles
