@@ -10,7 +10,7 @@ The following files have been updated in this MAME cycle:
 - CatVer pack
 - CHD-Info
 - Languages.ini
-- messINFO.dat (WIP)
+- messINFO.dat
 - renameSET.dat
 - Series.ini
 - Version pack
