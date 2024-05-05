@@ -1,9 +1,10 @@
-MESSINFO.DAT 0.264  (Apr 12, 2024)
+MESSINFO.DAT 0.265   (May 5, 2024)
 (C) AntoPISA www.progettoSNAPS.net
 ==================================
 
 WhatsNew:
 =========
+11.56 05/05/2024: Aligned files to 0.265 version.
 11.55 04/12/2024: Aligned files to 0.264 version.
 11.54 03/15/2024: Aligned files to 0.263 version.
 11.53 02/16/2024: Aligned files to 0.262 version.
