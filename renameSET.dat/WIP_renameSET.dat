@@ -1,5 +1,5 @@
 #     ===========================================================
-#     MAME RENAMESET.DAT v0.265b Latest update:      May 10, 2024
+#     MAME RENAMESET.DAT v0.265b Latest update:      May 14, 2024
 #     ===========================================================
 #
 #     Home-page: https://www.progettosnaps.net/renameset/
@@ -8,8 +8,13 @@
 #     Statistic information of MAME (tm) updating sets by AntoPISA
 #     THE INFOS IN THIS FILE IS NOT OFFICIAL, IT IS FOR DEMONSTRATIVE PURPOSE ONLY
 #     OFFICIAL DATA CONCERNS: "drivers", "machines", "parents", "clones", "BIOSes", "devices", "working", "not working", "mechanicals",
-#     "not mechanicals", "savestate supported", "savestate not supported", "horizontal screen", "vertical screen",
+#     "not mechanicals", "save supported", "save unsupported", "horizontal screen", "vertical screen",
 #     "no dump", "bad dumps" and "bug fixed".
+#
+#     Regarding the items "Requires CHDs", "Horizontal Screen" and "Vertical Screen" the data are official but formally
+#     incorrect! In fact, 10 more CHDs are counted (some really incomprehensible...) and in the machines that MAME
+#     lists having as horizontal screen there are also all those that have no screens. When and if these counts are
+#     fixed I will also fix renameSET.dat (thanks to motoschifo for all the verification done!).
 #
 #     "mID" is the unique progressive number that I have assigned to each machine/BIOS/device added to MAME. You can see this updated list here: https:\\www.progettosnaps.net\mameID_latest.txt
 #
@@ -27,8 +32,8 @@
 $0.265 [#704]
 2024/04/25
 46.750 total items, 3.002 drivers (+8), 40.309 machines (+34), 13.841 parents (+17), 26.544 clones (+17), 76 BIOSes, 6.365 devices (-1/+22), 1.195 requires CHDs (+1), 1.862 use samples (+22)
-Working 15.378 (+23), NotWorking 25.007 (+11), mechanicals 15.618 (+1), not mechanicals 24.767 (+33), save supported 13.859 (+14), save unsupported 26.526 (+20), horizontal screen 37.175 (+28), vertical screen 3.210 (+6)
-350.158 total roms (+247) [348.213 program roms (+245), 620 BIOS roms (+1), 1.325 CHD roms (+1)], 355 sample roms, no dumps 5.700 (+4), bad dumps 4.597 (-11), bug fixed 6
+15.378 working (+23), 25.007 not working (+11), 15.618 (+1) mechanicals, 24.767 (+33) not mechanicals, 13.859 (+14) save supported, 26.526 (+20) save unsupported, horizontal screen 37.175 (+28), vertical screen 3.210 (+6)
+351.491 total roms (+247) [348.213 machines (+245), 2.658 devices, 620 BIOSes (+1)], 1.325 CHD roms (+1)], 355 samples, 342.506 good dumps, 5.701 no dumps (+5), 4.609 bad dumps (+1), 6 bug fixed
 704 active SL (+2), 10 orphan SL (-1), 137.072 active software (+346), 760 orphan software (-3)
 2 ren (2/0/0):
 galgame4         > galgame4p           (mID: 38074)
@@ -41,7 +46,7 @@ $0.264 [#703]
 2024/03/27
 46.695 total items, 2.994 drivers (+12), 40.275 machines (-1/+82), 13.824 parents (+51), 26.527 clones (+30), 76 BIOSes, 6.344 devices (-4/+50), 1.194 requires CHDs (+3), 1.840 use samples (+1)
 Working 15.355 (+31), NotWorking 24.996 (+50), mechanicals 15.617 (+7), not mechanicals 24.734 (+74), save supported 13.845 (+46), save unsupported 26.506 (+35), horizontal screen 37.147 (+74), vertical screen 3.204 (+7)
-349.911 total roms (+459) [347.968 program roms (+455), 619 BIOS roms, 1.324 CHD roms (+4)], 355 sample roms, no dumps 5.696 (+24), bad dumps 4.608 (+17), bug fixed 2
+349.911 total roms (+459) [347.968 machines (+455), 619 BIOSes], 1.324 CHD roms (+4), 355 sample roms, no dumps 5.696 (+24), bad dumps 4.608 (+17), bug fixed 2
 702 active SL (+1), 11 orphan SL (+1), 136.726 active software (-2/+100), 763 orphan software (+3)
 5 ren (1/4/0):
 driblingbr       > driblingvm          (mID: 18967)
@@ -61,7 +66,7 @@ $0.263 [#702]
 2024/02/28
 46.568 total items, 2.972 drivers (+12), 40.194 machines (+54), 13.773 parents (+33), 26.497 clones (+21), 76 BIOSes, 6.298 devices (+49), 1.191 requires CHDs (+2), 1.839 use samples (+1)
 Working 15.324 (+33), NotWorking 24.946 (+21), mechanicals 15.610 (+2), not mechanicals 24.660 (+52), save supported 13.799 (+28), save unsupported 26.471 (+26), horizontal screen 37.073 (+52), vertical screen 3.197 (+2)
-349.452 total roms (+514) [347.513 program roms (+510), 619 BIOS roms (+2), 1.320 CHD roms (+2)], 355 sample roms, no dumps 5.672 (+9), bad dumps 4.591 (+75), bug fixed 6
+349.452 total roms (+514) [347.513 program roms (+510), 619 BIOS roms (+2)], 1.320 CHD roms (+2), 355 sample roms, no dumps 5.672 (+9), bad dumps 4.591 (+75), bug fixed 6
 701 active SL (+3), 10 orphan SL, 136.628 active software (-9/+371), 760 orphan software
 5 ren (5/0/0):
 lordgun          > lordgunu            (mID:  4916)
@@ -77,7 +82,7 @@ $0.262 [#701]
 2024/01/31
 46.465 total items, 2.960 drivers (+26), 40.140 machines (-5/+123), 13.740 parents (+47), 26.476 clones (+72), 76 BIOS (+1), 6.249 devices (-1/+64), 1.189 requires CHDs (-1/+7), 1.838 use samples (+13)
 Working 15.291 (+129), NotWorking 24.925 (-10), mechanicals 15.608 (+13), not mechanicals 24.608 (+106), save supported 13.771 (+71), save unsupported 26.445 (+48), horizontal screen 37.021 (+118), vertical screen 3.195 (+1)
-348.938 total roms (+1073) [347.003 program roms (+1065), 617 BIOS roms (+2), 1.318 CHD roms (+6)], 355 sample roms, no dumps 5.663 (-40), bad dumps 4.516 (+20), bug fixed 7
+348.938 total roms (+1073) [347.003 program roms (+1065), 617 BIOS roms (+2)], 1.318 CHD roms (+6), 355 sample roms, no dumps 5.663 (-40), bad dumps 4.516 (+20), bug fixed 7
 698 active SL (+6), 10 orphan SL, 136.266 active software (+655), 760 orphan software
 35 ren (33/2/0):
 amsterda         > amsterdg            (mID: 40996)
@@ -128,7 +133,7 @@ $0.261 [#700]
 2023/11/29
 46.283 total items, 2.934 drivers (+12), 40.022 machines (+77), 13.693 parents (+34), 26.404 clones (+43), 75 BIOSes, 6.186 devices (-5/+25), 1.183 requires CHDs (+1), 1.825 use samples (+6)
 Working 15.162 (+46), NotWorking 24.935 (+31), mechanicals 15.595 (+1), not mechanicals 24.502 (+76), save supported 13.700 (+50), save unsupported 26.397 (+27), horizontal screen 36.903 (+65), vertical screen 3.194 (+12)
-347.865 total roms (+533) [345.938 program roms (+532), 615 BIOS roms, 1.312 CHD roms (+1)], 355 sample roms, no dumps 5.703 (+34), bad dumps 4.496 (+8), bug fixed 7
+347.865 total roms (+533) [345.938 program roms (+532), 615 BIOS roms], 1.312 CHD roms (+1), 355 sample roms, no dumps 5.703 (+34), bad dumps 4.496 (+8), bug fixed 7
 692 active SL (+2), 10 orphan SL, 135.611 active software (-6/+383), 760 orphan software
 8 ren (6/2/0):
 eldoradd         > eldoraddo           (mID: 41245)
@@ -151,7 +156,7 @@ $0.260 [#699]
 2023/10/25
 46.186 total items, 2.922 drivers, 39.945 machines (+38), 13.659 parents (+9), 26.361 clones (+29), 75 BIOSes, 6.166 devices (+12), 1.182 requires CHDs (+3), 1.819 use samples (+14)
 Working 15.116 (+27), NotWorking 24.904 (+11), mechanicals 15.594 (+11), not mechanicals 24.426 (+27), save supported 13.650 (+16), save unsupported 26.370 (+22), horizontal screen 36.838 (+35), vertical screen 3.182 (+3)
-347.332 total roms (+345) [345.406 program roms (+342), 615 BIOS roms, 1.311 CHD roms (+3)], 355 sample roms (+5), no dumps 5.669 (+18), bad dumps 4.488 (+12), bug fixed 3
+347.332 total roms (+345) [345.406 program roms (+342), 615 BIOS roms], 1.311 CHD roms (+3), 355 sample roms (+5), no dumps 5.669 (+18), bad dumps 4.488 (+12), bug fixed 3
 690 active SL, 10 orphan SL, 135.234 active software (+98), 760 orphan software
 15 ren (14/1/0):
 phrcraze         > phrcrazeb           (mID:  5096)
