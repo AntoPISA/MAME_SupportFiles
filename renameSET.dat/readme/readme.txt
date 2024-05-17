@@ -1,10 +1,11 @@
-MAME RENAMESET.dat 0.266 (May 14, 2024)
+MAME RENAMESET.dat 0.265 (May 17, 2024)
 (C) AntoPISA      www.progettoSNAPS.net
 ---------------------------------------
 
 WhatsNew:
 =========
-5.27 2024/00/00: Added 0.266 infos, also update all the other files.
+5.28 2024/00/00: Added 0.266 infos, also update all the other files.
+5.27 2024/05/17: Recalculated all third lines, from 0.200 to 0.265, those inherent in the various ROMs.
 5.26 2024/05/14: Added two more data: device-related rom counts and good dumps.
 5.25 2024/05/10: Added a new count: drivers. For now only from version 0.260 to 0.265, later any renames/removes over time will also be listed. Also fixed various other items (for details check here https://github.com/AntoPISA/MAME_SupportFiles/commit/a2823bd3d8ac5b7c8da24800a50dc867ea709de5).
 5.24 2024/04/27: Added 0.265 infos, also update all the other files.
