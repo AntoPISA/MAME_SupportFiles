@@ -4,6 +4,7 @@ MAME RENAMESET.dat 0.266 (Jun  5, 2024)
 
 WhatsNew:
 =========
+5.31 2024/06/05: Removed the rename blockages.
 5.30 2024/06/05: Added 0.266 infos, also update all the other files.
 5.29 2024/05/30: Still many counts fixed or added.
 5.28 2024/05/24: Imported software list counts into the main file (renameSET_SL.dat will still be published at least for the time being). Added/fixed a lot of information.
