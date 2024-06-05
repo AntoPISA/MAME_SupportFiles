@@ -1,5 +1,5 @@
 ï»¿#     ==============================================================
-#     MAME RENAMESET_SL.DAT v0.265 Latest update:     April 27, 2024
+#     MAME RENAMESET_SL.DAT v0.266  Latest update:      June 5, 2024
 #     ==============================================================
 #
 #     Home-page: https://www.progettosnaps.net/renameset/
@@ -11,13 +11,187 @@
 #               Thanks to:
 #               motoschifo for "ADB Tool"
 #
-#               Internal Version 0.57
+#               Internal Version 0.58
 #
 #
+$0.266 [#705]
+2024/05/31
+703 software list (-17/+6), 137.979 software (-227/+374), 693 active SL (-17/+6), 10 orphan SL, 137.219 active software (-227/+374), 760 orphan software, 94.443 software parents (-17/+148), 42.776 software clones (-2/+18)
+232.226 software roms (+211), 11.077 software CHD (+38), 96.859 supported software (+4), 1.764 partially supported software (+26), 38.596 unsupported software (+117)
+
+17 actvive software-list removed:
+ekara_japan_p (Takara e-kara (Japan) Platinum Cartridge series (P-xx / PCxxxx-))
+ekara_us (Takara e-kara (US) cartridges)
+ekara_pal (Takara e-kara (UK/Europe, PAL) cartridges)
+ekara_japan (Takara e-kara (Japan) ECxxxx- series cartridges)
+ekara_japan_g (Takara e-kara (Japan) Gold Cartridge series (G-xx / GCxxxx-))
+ekara_japan_s (Takara e-kara (Japan) Saiten Cartridge series (S-xx / SCxxxx-))
+ekara_japan_m (Takara e-kara (Japan) Saiten Cartridge mini series (M-xx / MCxxxx-))
+ekara_japan_d (Takara e-kara (Japan) Dream Cartridge series (D-xx / DCxxxx-))
+ekara_japan_en (Takara e-kara (Japan) EN-xx series cartridges)
+ekara_japan_kd (Takara e-kara (Japan) KD-xx series cartridges)
+ekara_japan_sp (Takara e-kara (Japan) Super Cartridge series (SP-xx))
+ekara_japan_web (Takara e-kara (Japan) Web cartridges)
+ekara_japan_a (Takara e-pitch / e-kara (Japan) A-x series cartridges)
+ekara_japan_gk (Takara e-kara (Japan) Game and Karaoke Cartridge series (GK-xx))
+ekara_japan_bh (Takara e-kara (Japan) BH-xx series cartridges)
+ekara_japan_packin (Takara e-kara (Japan) Pack-in cartridges)
+jpopira_jp (Takara Jumping Popira (Japan) JP-xx series cartridges)
+
+6 active software-list added:
+cubieboard4 (Cubieboard4 software)
+ekara_cart (Takara e-kara / Popira / Jumping Popira / Taiko de Popira / Dance Dance Revolution Family Mat cartridges)
+kisssite_cd (Tomy Kiss-Site CD-ROMs)
+mm2_flop (Nokia MikroMikko 2 floppies)
+ramstar (Ram Star multi-game cartridges)
+tmc600_quik (Telmac TMC-600 quickload)
+
+2 active software-lists description renamed:
+intvecs (Intellivision ECS cartridges) to (Mattel Intellivision ECS cartridges)
+wicat (Millennium Systems Wicat) to (Millennium Systems Wicat disk images)
+
+software added/removed:
+a2600_cass (-13)
+aim65_cart (+1)
+apple2_flop_clcracked (-8/+16)
+apple2_flop_orig (+55)
+apple2gs_flop_orig (+2)
+bbc_rom (+15)
+bkrankp_cart (+12)
+coleco_homebrew (+3)
+cubieboard4 (+8)
+ekara_cart (+217)
+ekara_japan (-5)
+ekara_japan_a (-10)
+ekara_japan_bh (-10)
+ekara_japan_d (-85)
+ekara_japan_en (-19)
+ekara_japan_g (-20)
+ekara_japan_gk (-14)
+ekara_japan_kd (-6)
+ekara_japan_m (-4)
+ekara_japan_p (-2)
+ekara_japan_packin (-6)
+ekara_japan_s (-4)
+ekara_japan_sp (-8)
+ekara_japan_web (-3)
+ekara_pal (-4)
+ekara_us (-3)
+electron_rom (+1)
+evio (+1)
+hikara (+10)
+ibm5170 (+4)
+jpopira_jp (-2)
+kisssite_cd (+30)
+megadriv (+3)
+mm1_flop (+3)
+mm2_flop (+1)
+neogeo (+10)
+pc8801_flop (+1)
+psion_ssd (+2)
+ramstar (+13)
+saitek_egr (+1)
+segaai (+3)
+tmc600_quik (+3)
+x1_flop (-1)
+
+65 software renamed:
+apple2_flop_clcracked   | abttime           > mmitsabttm
+apple2_flop_clcracked   | cndalman          > dqcarmndalm
+apple2_flop_clcracked   | confvtv2          > confviet
+apple2_flop_clcracked   | creu128k          > cruseurop
+apple2_flop_clcracked   | creu64k           > cruseuropv1
+apple2_flop_clcracked   | crmusa89          > carmusa
+apple2_flop_clcracked   | crmwld89          > carmwrld
+apple2_flop_clcracked   | gacookie          > grancook
+apple2_flop_clcracked   | gaflndd           > dqgovflnd
+apple2_flop_clcracked   | mabttime          > itsabttm
+apple2_flop_clcracked   | ndagridb          > dqndagr
+apple2_flop_clcracked   | ndc500b           > dqndcpopu500
+apple2_flop_clcracked   | ndc500u           > dqndcpop500a
+apple2_flop_clcracked   | ndcarmen          > carmnd
+apple2_flop_clcracked   | ndcnty            > dqndcount
+apple2_flop_clcracked   | ndexplor          > dqndexp
+apple2_flop_clcracked   | ndindtrb          > dqndindtr
+apple2_flop_clcracked   | ndminrls          > dqminnd
+apple2_flop_clcracked   | ndnotper          > dqnpeopnd
+apple2_flop_clcracked   | ndplants          > dqndplant
+apple2_flop_clcracked   | ndpride           > dqndpride
+apple2_flop_clcracked   | ndprkhs           > dqndparkhs
+apple2_flop_clcracked   | ndsenrep          > dqndsenrep
+apple2_flop_clcracked   | ndsymbls          > dqndsymb
+apple2_flop_clcracked   | ndwildlf          > dqndwildlf
+apple2_flop_clcracked   | nmbrball          > numbball
+apple2_flop_clcracked   | olcrswrd          > olvcword
+apple2_flop_clcracked   | shppatrn          > shpspatt
+apple2_flop_clcracked   | uccsbc            > uccsbcon
+apple2_flop_clcracked   | uccscbd           > uccsbldg
+apple2_flop_clcracked   | uccsec            > uccsecon
+apple2_flop_orig        | bblsadjadv        > grbblsadjadv
+apple2_flop_orig        | bblscapit         > capbbls
+apple2_flop_orig        | bblsnouns         > grbblsnoun
+apple2_flop_orig        | carmntime         > carmtime_525
+apple2_flop_orig        | cndalman          > dqcarmndalm
+apple2_flop_orig        | crmneu35          > carmeur
+apple2_flop_orig        | crmtime35         > carmtime
+apple2_flop_orig        | crmusa35          > carmusa90
+apple2_flop_orig        | dsktopzoo         > desktzoo
+apple2_flop_orig        | gaflndd           > dqgovflnd
+apple2_flop_orig        | hugohound         > hhlngvwl
+apple2_flop_orig        | ndagridb          > dqndagr
+apple2_flop_orig        | ndc500b           > dqndcpopu500
+apple2_flop_orig        | ndc500u           > dqndcpop500a
+apple2_flop_orig        | ndcarmen          > carmnd
+apple2_flop_orig        | ndcity16          > ndcity
+apple2_flop_orig        | ndcnty            > dqndcount
+apple2_flop_orig        | ndcrmn98          > carmndv98b
+apple2_flop_orig        | ndcrmnb1          > carmndv10fb
+apple2_flop_orig        | ndexplor          > dqndexp
+apple2_flop_orig        | ndindtrb          > dqndindtr
+apple2_flop_orig        | ndminrls          > dqminnd
+apple2_flop_orig        | ndnotper          > dqnpeopnd
+apple2_flop_orig        | ndplants          > dqndplant
+apple2_flop_orig        | ndpride           > dqndpride
+apple2_flop_orig        | ndprkhs           > dqndparkhs
+apple2_flop_orig        | ndsenrep          > dqndsenrep
+apple2_flop_orig        | ndsymbls          > dqndsymb
+apple2_flop_orig        | ndwildlf          > dqndwildlf
+apple2_flop_orig        | ochess70          > chesso
+bbc_rom                 | tcl125            > tcl125_2
+hikara                  | anime1            > bh4anim1
+hikara                  | jpop1             > bh1jpop1
+hikara                  | jpop2             > bh2jpop2
+
+22 software removed:
+a2600_cass              | commumutepv
+a2600_cass              | commumutpv
+a2600_cass              | dstomperepv
+a2600_cass              | dstomperpv
+a2600_cass              | fireballepv
+a2600_cass              | fireballpv
+a2600_cass              | mindmstrepv
+a2600_cass              | mindmstrpv
+a2600_cass              | partymixepv
+a2600_cass              | partymixpv
+a2600_cass              | rabbitpv
+a2600_cass              | suicidemepv
+a2600_cass              | suicidempv
+apple2_flop_clcracked   | carmneurb
+apple2_flop_clcracked   | carmntime
+apple2_flop_clcracked   | carmntime10
+apple2_flop_clcracked   | carmntime35
+apple2_flop_clcracked   | cartime10b
+apple2_flop_clcracked   | crmusa89b
+apple2_flop_clcracked   | crmwld89b
+apple2_flop_clcracked   | ndcarmenb
+x1_flop                 | advfantd
+
+=====================================================================================================================================================================================================
+
 $0.265 [#704]
 2024/04/25
-714 Software List (+1), 137.832 software (+343) [704 active SL (+2), 10 orphan SL (-1), 137.072 active software (+346), 760 orphan software (-3)], 95.046 SL parents (+274), 42.786 SL clones (+69)
-233.686 SL roms (+407), 11.065 SL CHD (+1), Supported Software 97.578 (+245), Partially Supported Software 1.738 (+5), Unsupported Software 38.516 (+93)
+714 software list (+1), 137.832 software (+343), 704 active SL (+2), 10 orphan SL (-1), 137.072 active software (+346), 760 orphan software (-3), 95.046 software parents (+274), 42.786 software clones (+69)
+233.686 software roms (+407), 11.065 software CHD (+1), supported software 97.578 (+245), partially supported software 1.738 (+5), unsupported software 38.516 (+93)
 
 1 active software-list promoted to working:
 msx2p_cart (MSX2+ cartridges)
@@ -234,8 +408,8 @@ msxr_flop               | spanic
 
 $0.264 [#703]
 2024/03/27
-713 Software List (+2), 137.489 software (-2/+103) [702 active SL (+1), 11 orphan SL (+1), 136.726 active software (-2/+100), 763 orphan software (+3)], 94.772 SL parents (+55), 42.717 SL clones (+46)
-233.279 SL roms (+173), 11.064 SL CHD (+1), Supported Software 97.333 (+87), Partially Supported Software 1.733 (+1), Unsupported Software 38.423 (+13)
+713 software list (+2), 137.489 software (-2/+103), 702 active SL (+1), 11 orphan SL (+1), 136.726 active software (-2/+100), 763 orphan software (+3), 94.772 software parents (+55), 42.717 software clones (+46)
+233.279 software roms (+173), 11.064 software CHD (+1), supported software 97.333 (+87), partially supported software 1.733 (+1), unsupported software 38.423 (+13)
 
 1 active software-list added:
 jaminator (Jaminator cartridges)
@@ -288,8 +462,8 @@ spectrum_cass           | scrabble_b
 
 $0.263 [#702]
 2024/02/28
-711 Software List (+3), 137.388 software (-9/+371) [701 active SL (+3), 10 orphan SL, 136.628 active software (-9/+371), 760 orphan software], 94.717 SL parents (+116), 42.671 SL clones (+246)
-233.106 SL roms (+497), 11.063 SL CHD, Supported Software 97.246 (+348), Partially Supported Software 1.732 (+4), Unsupported Software 38.410 (+10)
+711 software list (+3), 137.388 software (-9/+371), 701 active SL (+3), 10 orphan SL, 136.628 active software (-9/+371), 760 orphan software, 94.717 software parents (+116), 42.671 software clones (+246)
+233.106 software roms (+497), 11.063 software CHD, supported software 97.246 (+348), partially supported software 1.732 (+4), unsupported software 38.410 (+10)
 
 3 active software-lists added:
 ekara_japan_kd (Takara e-kara (Japan) KD-xx series cartridges)
@@ -474,8 +648,8 @@ apple2_flop_clcracked   | stymkr64b
 
 $0.262 [#701]
 2024/01/31
-708 Software List (+6), 137.026 software (+655) [698 active SL (+6), 10 orphan SL, 136.266 active software (+655), 760 orphan software], 94.601 SL parents (+733), 42.425 SL clones (+222)
-232.609 SL roms (+923), 11.063 SL CHD (+22), Supported Software 96.898 (+567), Partially Supported Software 1.728 (+33), Unsupported Software 38.400 (+55)
+708 software list (+6), 137.026 software (+655), 698 active SL (+6), 10 orphan SL, 136.266 active software (+655), 760 orphan software, 94.601 software parents (+733), 42.425 software clones (+222)
+232.609 software roms (+923), 11.063 software CHD (+22), supported software 96.898 (+567), partially supported software 1.728 (+33), unsupported software 38.400 (+55)
 
 6 active software-lists added:
 ctvboy (Gakken Compact Vision TV Boy cartridges)
@@ -606,8 +780,8 @@ spectrum_cass           | nemwarer
 
 $0.261 [#700]
 2023/11/29
-702 Software List (+2), 136.371 software (-6/+383) [692 active SL (+2), 10 orphan SL, 135.611 active software (-6/+383), 760 orphan software], 94.168 SL parents (+276), 42.203 SL clones (+101)
-231.686 SL roms (+773), 11.041 SL CHD (+22), Supported Software 96.331 (+318), Partially Supported Software 1.695 (+19), Unsupported Software 38.345 (+40)
+702 software list (+2), 136.371 software (-6/+383), 692 active SL (+2), 10 orphan SL, 135.611 active software (-6/+383), 760 orphan software, 94.168 software parents (+276), 42.203 software clones (+101)
+231.686 software roms (+773), 11.041 software CHD (+22), supported software 96.331 (+318), partially supported software 1.695 (+19), unsupported software 38.345 (+40)
 
 2 active software-lists added:
 cz1_cart (Casio CZ-1 ROM cartridges)
@@ -636,12 +810,12 @@ samcoupe_flop (+2)
 sega_beena_cart (+33)
 specpls3_flop (+8)
 spectrum_betadisc_flop (+30)
-spectrum_cass (-1/+154)
+spectrum_cass (-2/+154)
 videoart (+9)
 x68k_flop (+9)
 zx81_cass (+1)
 
-95 software renamed:
+94 software renamed:
 apple2_flop_clcracked   | endestim          > rndestim
 apple2_flop_clcracked   | kmwldhis          > kmwldhis1
 apple2_flop_clcracked   | knwmbtrd          > kmbuildt1
@@ -708,7 +882,6 @@ spectrum_cass           | jbsquashz         > jbsquash_e
 spectrum_cass           | jwildced          > jwildc_a
 spectrum_cass           | jwildcmast        > jwildc_b
 spectrum_cass           | missioni_b        > misimpos
-spectrum_cass           | retroinv48        > retroinv
 spectrum_cass           | rugbyman_a        > rugmanag
 spectrum_cass           | starquakr         > starquak_b
 spectrum_cass           | starquakz         > starquak_c
@@ -738,20 +911,20 @@ spectrum_cass           | worldcla_a        > wcleader
 spectrum_cass           | worldcla_e        > wcleader_a
 spectrum_cass           | worldcla_g        > wcrugby
 
-6 software removed:
+7 software removed:
 apple2_flop_clcracked   | mfamilyr
 apple2_flop_clcracked   | mreadwrk
 msx2_flop               | vectrona
 msx2_flop               | zooa
 msx2_flop               | zoob
 spectrum_cass           | jokerswi_a
-
+spectrum_cass           | retroinv48
 =====================================================================================================================================================================================================
 
 $0.260 [#699]
 2023/10/25
-700 Software List, 135.994 software (+98) [690 active SL, 10 orphan SL, 135.234 active software (+98), 760 orphan software], 93.892 SL parents (+59), 42.102 SL clones (+39)
-230.913 SL roms (+88), 11.019 SL CHD (+13), Supported Software 96.013 (+63), Partially Supported Software 1.676 (+14), Unsupported Software 38.305 (+21)
+700 software list, 135.994 software (+98), 690 active SL, 10 orphan SL, 135.234 active software (+98), 760 orphan software, 93.892 software parents (+59), 42.102 software clones (+39)
+230.913 software roms (+88), 11.019 software CHD (+13), supported software 96.013 (+63), partially supported software 1.676 (+14), unsupported software 38.305 (+21)
 
 software added/removed:
 casloopy (+1)
@@ -764,8 +937,8 @@ msx2_cart (+83)
 
 $0.259 [#698]
 2023/09/29
-700 Software List, 135.896 software (-8/+251) [690 active SL, 10 orphan SL, 135.136 active software (-8/+251), 760 orphan software], 93.833 SL parents (+202), 42.063 SL clones (+41)
-230.825 SL roms (+326), 11.006 SL CHD (+6), Supported Software 95.950 (+228), Partially Supported Software 1.662 (+11), Unsupported Software 38.284 (+4)
+700 software list, 135.896 software (-8/+251), 690 active SL, 10 orphan SL, 135.136 active software (-8/+251), 760 orphan software, 93.833 software parents (+202), 42.063 software clones (+41)
+230.825 software roms (+326), 11.006 software CHD (+6), supported software 95.950 (+228), partially supported software 1.662 (+11), unsupported software 38.284 (+4)
 
 6 active software-lists with changed description:
 mac_cdrom ("Mac CD-ROMs" to "Apple Macintosh CD-ROMs")
@@ -807,8 +980,8 @@ msx1_flop               | gfxartst
 
 $0.258 [#697]
 2023/08/31
-700 Software List (+3), 135.653 software (+541) [690 active SL (+3), 10 orphan SL, 134.893 active software (+541), 760 orphan software], 93.631 SL parents (+425), 42.022 SL clones (+116)
-230.499 SL roms (+624), 11.000 SL CHD (+16), no dumps roms 121, Supported Software 95.722 (+523), Partially Supported Software 1.651 (+7), Unsupported Software 38.280 (+11)
+700 software list (+3), 135.653 software (+541), 690 active SL (+3), 10 orphan SL, 134.893 active software (+541), 760 orphan software, 93.631 software parents (+425), 42.022 software clones (+116)
+230.499 software roms (+624), 11.000 software CHD (+16), supported software 95.722 (+523), partially supported software 1.651 (+7), unsupported software 38.280 (+11)
 
 3 active software-lists added:
 mac_flop_orig (Macintosh 400K/800K Original disk images)
@@ -877,8 +1050,8 @@ spectrum_cass           | urbanfin          > urban
 
 $0.257 [#696]
 2023/07/28
-697 Software List, 135.112 software (-8/+701) [687 active SL (+1), 10 orphan SL (-1), 134.352 active software (-8/+701), 760 orphan software], 93.206 SL parents (+561), 41.906 SL clones (+132)
-229.875 SL roms (+798), 10.984 SL CHD (+2), Supported Software 95.199 (+672), Partially Supported Software 1.644 (+3), Unsupported Software 38.269 (+18)
+697 software list, 135.112 software (-8/+701), 687 active SL (+1), 10 orphan SL (-1), 134.352 active software (-8/+701), 760 orphan software, 93.206 software parents (+561), 41.906 software clones (+132)
+229.875 software roms (+798), 10.984 software CHD (+2), supported software 95.199 (+672), partially supported software 1.644 (+3), unsupported software 38.269 (+18)
 
 1 software-list promoted to active:
 vc4000 (Interton VC 4000 cartridges)
@@ -966,8 +1139,8 @@ spectrum_cass           | software_n
 
 $0.256 [#695]
 2023/06/28
-697 Software List (+2), 134.419 software (-2/+254) [686 active SL (-2/+3), 11 orphan SL (+1), 133.659 active software (-1/+253), 760 orphan software], 92.645 SL parents (+164), 41.774 SL clones (+88)
-229.077 SL roms (+280), 10.982 SL CHD (+22), Supported Software 94.527 (+173), Partially Supported Software 1.641 (+44), Unsupported Software 38.251 (+35)
+697 software list (+2), 134.419 software (-2/+254), 686 active SL (-2/+3), 11 orphan SL (+1), 133.659 active software (-1/+253), 760 orphan software, 92.645 software parents (+164), 41.774 software clones (+88)
+229.077 software roms (+280), 10.982 software CHD (+22), supported software 94.527 (+173), partially supported software 1.641 (+44), unsupported software 38.251 (+35)
 
 2 active software-lists added:
 abc1600_hdd (Luxor ABC 1600 hard disks)
@@ -1065,8 +1238,8 @@ a800_flop               | writer
 
 $0.255 [#694]
 2023/05/31
-695 Software List (+1), 134.167 software (-1/+250) [685 active SL (+1), 10 orphan SL (-1), 133.407 active software (-1/+278), 760 orphan software (-28)], 92.481 SL parents (+142), 41.686 SL clones (+107)
-228.797 SL roms (+273), 10.960 SL CHD (-15), Supported Software 94.354 (-767), Partially Supported Software 1.597 (+8), Unsupported Software 38.216 (+1008)
+695 software list (+1), 134.167 software (-1/+250), 685 active SL (+1), 10 orphan SL (-1), 133.407 active software (-1/+278), 760 orphan software (-28), 92.481 software parents (+142), 41.686 software clones (+107)
+228.797 software roms (+273), 10.960 software CHD (-15), supported software 94.354 (-767), partially supported software 1.597 (+8), unsupported software 38.216 (+1008)
 
 1 active software-list added:
 n64_lodgenet (LodgeNet 64 software)
@@ -1117,8 +1290,8 @@ spectrum_cass           | merlinad
 
 $0.254 [#693]
 2023/04/26
-694 Software List (+4), 133.918 software (-6/+221) [684 active SL (+4), 11 orphan SL (+1), 133.130 active software (-6/+193), 788 orphan software (+28)], 92.339 SL parents (+148), 41.579 SL clones (+67)
-228.524 SL roms (+202), 10.975 SL CHD (+41), Supported Software 95.121 (-500), Partially Supported Software 1.589 (+32), Unsupported Software 37.208 (+683)
+694 software list (+4), 133.918 software (-6/+221), 684 active SL (+4), 11 orphan SL (+1), 133.130 active software (-6/+193), 788 orphan software (+28), 92.339 software parents (+148), 41.579 software clones (+67)
+228.524 software roms (+202), 10.975 software CHD (+41), supported software 95.121 (-500), partially supported software 1.589 (+32), unsupported software 37.208 (+683)
 
 4 active software-list added:
 abc80_rom (Luxor ABC 80 memory card ROMs)
@@ -1238,8 +1411,8 @@ abc800                  | ufd631            > abc832_flop
 
 $0.253 [#692]
 2023/03/30
-690 Software List (-2/+5), 133.703 software (-69/+515) [680 active SL (-2/+5), 10 orphan SL, 132.943 active software (-69/+515), 760 orphan software], 92.191 SL parents (+399), 41.512 SL clones (+47)
-228.322 SL roms (+455), 10.934 SL CHD (+28), Supported Software 95.621 (+369), Partially Supported Software 1.557 (+33), Unsupported Software 36.525 (+44)
+690 software list (-2/+5), 133.703 software (-69/+515), 680 active SL (-2/+5), 10 orphan SL, 132.943 active software (-69/+515), 760 orphan software, 92.191 software parents (+399), 41.512 software clones (+47)
+228.322 software roms (+455), 10.934 software CHD (+28), supported software 95.621 (+369), partially supported software 1.557 (+33), unsupported software 36.525 (+44)
 
 4 active software-list added:
 conchess (Conchess library modules)
@@ -1384,8 +1557,8 @@ msx1_cart               | yiear2b
 
 $0.252 [#691]
 2023/02/22
-687 Software List (+1), 133.257 software (-179/+142) [677 active SL (+1), 10 orphan SL, 132.497 active software (-179/+142), 760 orphan software], 91.792 SL parents (+8), 41.465 SL clones (-45)
-227.867 SL roms (-39), 10.906 SL CHD (+71), Supported Software 95.252 (-89), Partially Supported Software 1.524 (+2), Unsupported Software 36.481 (+50)
+687 software list (+1), 133.257 software (-179/+142), 677 active SL (+1), 10 orphan SL, 132.497 active software (-179/+142), 760 orphan software, 91.792 software parents (+8), 41.465 software clones (-45)
+227.867 software roms (-39), 10.906 software CHD (+71), supported software 95.252 (-89), partially supported software 1.524 (+2), unsupported software 36.481 (+50)
 
 1 active software-list added:
 chessking_cart (Chess King cartridges)
@@ -1628,8 +1801,8 @@ msx2_flop               | zombihuna
 
 $0.251 [#690]
 2022/12/31
-686 Software List (+7), 133.294 software (+126/-994) [676 active SL (+7), 10 orphan SL, 132.534 active software (+126/-994), 760 orphan software], 91.784 SL parents (-679), 41.510 SL clones (-189)
-227.906 SL roms (-733), 10.835 SL CHD (+22), Supported Software 95.341 (-788), Partially Supported Software 1.522 (+19), Unsupported Software 36.431 (-99)
+686 software list (+7), 133.294 software (+126/-994), 676 active SL (+7), 10 orphan SL, 132.534 active software (+126/-994), 760 orphan software, 91.784 software parents (-679), 41.510 software clones (-189)
+227.906 software roms (-733), 10.835 software CHD (+22), supported software 95.341 (-788), partially supported software 1.522 (+19), unsupported software 36.431 (-99)
 
 1 sofyware-list renamed:
 hp9825b_rom         > hp9825_rom
@@ -1985,8 +2158,8 @@ msx1_flop               | cubita         msx1_flop               | knighost     
 
 $0.250 [#689]
 2022/11/29
-679 Software List (+1), 134.162 software (-7/+158) [669 active SL (+1), 10 orphan SL, 133.402 active software (-7/+158), 760 orphan software], 92.463 SL parents (+104), 41.699 SL clones (+47)
-228.639 SL roms (+193), 10.813 SL CHD, Supported Software 96.129 (+132), Partially Supported Software 1.503 (+12), Unsupported Software 36.530 (+7)
+679 software list (+1), 134.162 software (-7/+158), 669 active SL (+1), 10 orphan SL, 133.402 active software (-7/+158), 760 orphan software, 92.463 software parents (+104), 41.699 software clones (+47)
+228.639 software roms (+193), 10.813 software CHD, supported software 96.129 (+132), partially supported software 1.503 (+12), unsupported software 36.530 (+7)
 
 1 active software-list added:
 msx1_flop_525 (MSX1 5.25" disk images)
@@ -2051,8 +2224,8 @@ spectrum_cass           | nonamedss
 
 $0.249 [#688]
 2022/10/27
-678 Software List (+4), 134.011 software (+4) [668 active SL (+4), 10 orphan SL, 133.251 active software (+174), 760 orphan software], 92.359 SL parents (+125), 41.652 SL clones (+49)
-228.446 SL roms (+233), 10.813 SL CHD, Supported Software 95.997 (+32), Partially Supported Software 1.491 (+24), Unsupported Software 36.523 (+118)
+678 software list (+4), 134.011 software (+4), 668 active SL (+4), 10 orphan SL, 133.251 active software (+174), 760 orphan software, 92.359 software parents (+125), 41.652 software clones (+49)
+228.446 software roms (+233), 10.813 software CHD, supported software 95.997 (+32), partially supported software 1.491 (+24), unsupported software 36.523 (+118)
 
 4 active software-lists added:
 einstein_rom (Tatung Einstein ROM images)
@@ -2112,8 +2285,8 @@ spectrum_cass           | topguner_a        > topgun_a
 
 $0.248 [#687]
 2022/09/28
-674 Software List (-1/+1), 133.837 software (-28/+66) [664 active SL (+1), 10 orphan SL (-1), 133.077 active software (+66), 760 orphan software (-28)], 92.234 SL parents (+22), 41.603 SL clones (+16)
-228.213 SL roms (+88), 10.813 SL CHD (-25), Supported Software 95.965 (+50), Partially Supported Software 1.467 (+21), Unsupported Software 36.405 (-33)
+674 software list (-1/+1), 133.837 software (-28/+66), 664 active SL (+1), 10 orphan SL (-1), 133.077 active software (+66), 760 orphan software (-28), 92.234 software parents (+22), 41.603 software clones (+16)
+228.213 software roms (+88), 10.813 software CHD (-25), supported software 95.965 (+50), partially supported software 1.467 (+21), unsupported software 36.405 (-33)
 
 1 active software-lists added:
 digiblast_cart (Nikko Entertainment B.V. / Grey Innovation digiBLAST Cartridges)
@@ -2200,8 +2373,8 @@ playdia                 | ultseven
 
 $0.247 [#686]
 2022/08/31
-674 Software List (+4), 133.799 software (-1/+320) [663 active SL (+4), 11 orphan SL, 133.011 active software (-1/+299), 788 orphan software (+21)], 92.212 SL parents (+245), 41.587 SL clones (+74)
-228.125 SL roms (+1397), 10.838 SL CHD (+62), Supported Software 95.915 (+308), Partially Supported Software 1.446, Unsupported Software 36.438 (+11)
+674 software list (+4), 133.799 software (-1/+320), 663 active SL (+4), 11 orphan SL, 133.011 active software (-1/+299), 788 orphan software (+21), 92.212 software parents (+245), 41.587 software clones (+74)
+228.125 software roms (+1397), 10.838 software CHD (+62), supported software 95.915 (+308), partially supported software 1.446, unsupported software 36.438 (+11)
 
 3 active software-lists added:
 kpython2 (Python 2 upgrade DVD-ROM images)
@@ -2272,8 +2445,8 @@ nes                     | myctv
 
 $0.246 [#685]
 2022/07/31
-670 Software List (+1), 133.480 software (-1/+198) [659 active SL (+1), 11 orphan SL, 132.713 active software (-1/+198), 767 orphan software], 91.967 SL parents (+147), 41.513 SL clones (+50)
-226.728 SL roms (+907), 10.776 SL CHD (+9), Supported Software 95.607 (+147), Partially Supported Software 1.446 (-1), Unsupported Software 36.427 (+20)
+670 software list (+1), 133.480 software (-1/+198), 659 active SL (+1), 11 orphan SL, 132.713 active software (-1/+198), 767 orphan software, 91.967 software parents (+147), 41.513 software clones (+50)
+226.728 software roms (+907), 10.776 software CHD (+9), supported software 95.607 (+147), partially supported software 1.446 (-1), unsupported software 36.427 (+20)
 
 1 active software-list added:
 nes_vt_cart (Cartridges compatible with VRT VT0x based units)
@@ -2325,8 +2498,8 @@ nes                     | blockset
 
 $0.245 [#684]
 2022/06/29
-669 Software List (+1), 133.283 software (-3/+580) [658 active SL (+1), 11 orphan SL, 132.516 active software (-3/+580), 767 orphan software], 91.820 SL parents (+450), 41.463 SL clones (+127)
-225.821 SL roms (+3311), 10.767 SL CHD (+1), Supported Software 95.429 (+468), Partially Supported Software 1.447 (+38), Unsupported Software 36.407 (+71)
+669 software list (+1), 133.283 software (-3/+580), 658 active SL (+1), 11 orphan SL, 132.516 active software (-3/+580), 767 orphan software, 91.820 software parents (+450), 41.463 software clones (+127)
+225.821 software roms (+3311), 10.767 software CHD (+1), supported software 95.429 (+468), partially supported software 1.447 (+38), unsupported software 36.407 (+71)
 
 1 active software-list added:
 x37_flop (Luxor X37 diskettes)
@@ -2394,8 +2567,8 @@ vgmplay                 | sonic2b_md
 
 $0.244 [#683]
 2022/05/25
-668 Software List (+1), 132.706 software (-9/+114) [657 active SL (+1), 11 orphan SL, 131.939 active software (-9/+114), 767 orphan software], 91.370 SL parents (+61), 41.336 SL clones (+44)
-222.510 SL roms (+102), 10.766 SL CHD (+34), Supported Software 94.961 (+84), Partially Supported Software 1.409 (+8), Unsupported Software 36.336 (+13)
+668 software list (+1), 132.706 software (-9/+114), 657 active SL (+1), 11 orphan SL, 131.939 active software (-9/+114), 767 orphan software, 91.370 software parents (+61), 41.336 software clones (+44)
+222.510 software roms (+102), 10.766 software CHD (+34), supported software 94.961 (+84), partially supported software 1.409 (+8), unsupported software 36.336 (+13)
 
 1 active software-list added:
 mtx_hdd (Memotech MTX Compact Flash images)
@@ -2449,8 +2622,8 @@ timex_cass              | perigosns
 
 $0.243 [#682]
 2022/04/29
-667 Software List (+2), 132.601 software (-45/+185) [656 active SL (+2), 11 orphan SL 131.834 active software (-45/+185), 767 orphan software], 91.309 SL parents (+89), 41.292 SL clones (+51)
-222.408 SL roms (+221), 10.732 SL CHD (+1), Supported Software 94.877 (+117), Partially Supported Software 1.401 (+2), Unsupported Software 36.323 (+21)
+667 software list (+2), 132.601 software (-45/+185), 656 active SL (+2), 11 orphan SL 131.834 active software (-45/+185), 767 orphan software, 91.309 software parents (+89), 41.292 software clones (+51)
+222.408 software roms (+221), 10.732 software CHD (+1), supported software 94.877 (+117), partially supported software 1.401 (+2), unsupported software 36.323 (+21)
 
 2 active software-lists added:
 fm8_cass (Fujitsu FM-8 cassettes)
@@ -2542,8 +2715,8 @@ spectrum_cass           | savageis_c
 
 $0.242 [#681]
 2022/03/30
-665 Software List (+4), 132.461 software (-3/+574) [654 active SL (+4), 11 orphan SL, 131.694 active software (-3/+574), 767 orphan software], 91.220 SL parents (+468), 41.241 SL clones (+103)
-222.187 SL roms (+1690), 10.731 SL CHD (+148), Supported Software 94.760 (+504), Partially Supported Software 1.399 (+51), Unsupported Software 36.302 (+16)
+665 software list (+4), 132.461 software (-3/+574), 654 active SL (+4), 11 orphan SL, 131.694 active software (-3/+574), 767 orphan software, 91.220 software parents (+468), 41.241 software clones (+103)
+222.187 software roms (+1690), 10.731 software CHD (+148), supported software 94.760 (+504), partially supported software 1.399 (+51), unsupported software 36.302 (+16)
 
 4 active software-lists added:
 amiga_demos (Commodore Amiga demos)
@@ -2603,8 +2776,8 @@ ibm5170                 | nightsft
 
 $0.241 [#680]
 2022/02/23
-661 Software List (+2), 131.890 software (+232) [650 active SL (+2), 11 orphan SL, 131.123 active software (+232), 767 orphan software], 90.752 SL parents (+177), 41.138 SL clones (+55)
-220.497 SL roms (+840), 10.583 SL CHD (+70), Supported Software 94.256 (+217), Partially Supported Software 1.348 (+7), Unsupported Software 36.286 (+8)
+661 software list (+2), 131.890 software (+232), 650 active SL (+2), 11 orphan SL, 131.123 active software (+232), 767 orphan software, 90.752 software parents (+177), 41.138 software clones (+55)
+220.497 software roms (+840), 10.583 software CHD (+70), supported software 94.256 (+217), partially supported software 1.348 (+7), unsupported software 36.286 (+8)
 
 2 active software-lists added:
 digilog320 (Digilog 320 Disks)
@@ -2652,8 +2825,8 @@ spectrum_cass           | theplagu          > plagegypt
 
 $0.240 [#679]
 2022/01/30
-659 Software List (+1), 131.658 software (+234) [648 active SL (+1), 11 orphan SL, 130.891 active software (+234), 767 orphan software], 90.575 SL parents (+172), 41.083 SL clones (+62)
-219.657 SL roms (+703), 10.513 SL CHD (+18), Supported Software 94.039 (+225), Partially Supported Software 1.341 (+7), Unsupported Software 36.278 (+2)
+659 software list (+1), 131.658 software (+234), 648 active SL (+1), 11 orphan SL, 130.891 active software (+234), 767 orphan software, 90.575 software parents (+172), 41.083 software clones (+62)
+219.657 software roms (+703), 10.513 software CHD (+18), supported software 94.039 (+225), partially supported software 1.341 (+7), unsupported software 36.278 (+2)
 
 1 active software-list added:
 r8_card (Roland R-8 PCM memory cards)
@@ -2697,8 +2870,8 @@ vgmplay                 | volleyfr_gb       > warblast_gb
 
 $0.239 [#678]
 2021/12/29
-658 Software List (+1), 131.424 software (-7/+242) [647 active SL (+2), 11 orphan SL (-1), 130.657 active software (-7/+361), 767 orphan software (-119)], 90.403 SL parents (+220), 41.021 SL clones (+15)
-218.954 SL roms (+378), 10.495 SL CHD (+7), Supported Software 93.814 (+190), Partially Supported Software 1.334 (+22), Unsupported Software 36.276 (+23)
+658 software list (+1), 131.424 software (-7/+242), 647 active SL (+2), 11 orphan SL (-1), 130.657 active software (-7/+361), 767 orphan software (-119), 90.403 software parents (+220), 41.021 software clones (+15)
+218.954 software roms (+378), 10.495 software CHD (+7), supported software 93.814 (+190), partially supported software 1.334 (+22), unsupported software 36.276 (+23)
 
 1 active software-list added:
 z80clock (Z80 Clock ROMs)
@@ -2969,8 +3142,8 @@ spectrum_cass           | ace248kg
 
 $0.238 [#677]
 2021/11/23
-657 Software List (+3), 131.189 software (-2/+188) [645 active SL (+3), 12 orphan SL, 130.303 active software (-2/+188), 886 orphan software], 90.183 SL parents (+154), 41.006 SL clones (+32)
-218.576 SL roms (+265), 10.488 SL CHD (+105), Supported Software 93.624 (+196), Partially Supported Software 1.312 (-11), Unsupported Software 36.253 (+1)
+657 software list (+3), 131.189 software (-2/+188), 645 active SL (+3), 12 orphan SL, 130.303 active software (-2/+188), 886 orphan software, 90.183 software parents (+154), 41.006 software clones (+32)
+218.576 software roms (+265), 10.488 software CHD (+105), supported software 93.624 (+196), partially supported software 1.312 (-11), unsupported software 36.253 (+1)
 
 3 active software-lists added:
 archimedes_hdd (Acorn Archimedes hard disks)
@@ -3011,8 +3184,8 @@ nes                     | mc_hh210
 
 $0.237 [#676]
 2021/10/26
-654 Software List (+2), 131.003 software (-6/+487), [642 active SL (+1), 12 orphan SL (+1), 130.117 active software (-6/+368), 886 orphan software (+119)], 90.029 SL parents (+361), 40.974 SL clones (+120)
-218.311 SL roms (+1512), 10.383 SL CHD, Supported Software 93.428 (+494), Partially Supported Software 1.323 (+24), Unsupported Software 36.252 (-37)
+654 software list (+2), 131.003 software (-6/+487), [642 active SL (+1), 12 orphan SL (+1), 130.117 active software (-6/+368), 886 orphan software (+119), 90.029 software parents (+361), 40.974 software clones (+120)
+218.311 software roms (+1512), 10.383 software CHD, supported software 93.428 (+494), partially supported software 1.323 (+24), unsupported software 36.252 (-37)
 
 1 active software-list added:
 pc6001_cart (NEC PC-6001 cartridges)
@@ -3050,8 +3223,8 @@ apple2gs_flop_misc      | thexdero
 
 $0.236 [#675]
 2021/09/29
-652 Software List (+5), 130.522 software (-68/+440) [641 active SL (+5), 11 orphan SL, 129.755 active software (-68/+440), 767 orphan software], 89.668 SL parents (+267), 40.854 SL clones (+105)
-216.799 SL roms (+1060), 10.383 SL CHD (+29), Supported Software 92.934, Partially Supported Software 1.299, Unsupported Software 36.289
+652 software list (+5), 130.522 software (-68/+440), 641 active SL (+5), 11 orphan SL, 129.755 active software (-68/+440), 767 orphan software, 89.668 software parents (+267), 40.854 software clones (+105)
+216.799 software roms (+1060), 10.383 software CHD (+29), supported software 92.934, partially supported software 1.299, unsupported software 36.289
 
 5 active software-lists added:
 apxen_flop (ACT Apricot XEN floppy disks)
@@ -3188,8 +3361,8 @@ pc8801_flop             | zaxus
 
 $0.235 [#674]
 2021/08/27
-647 Software List (+1), 130.150 software (-7/+197), [636 active SL (+1), 11 orphan SL, 129.383 active software (-7/+197), 767 orphan software], 89.401 SL parents (+198), 40.749 SL clones (-8)
-215.739 SL roms (+182), 10.354 SL CHD (+71)
+647 software list (+1), 130.150 software (-7/+197), [636 active SL (+1), 11 orphan SL, 129.383 active software (-7/+197), 767 orphan software, 89.401 software parents (+198), 40.749 software clones (-8)
+215.739 software roms (+182), 10.354 software CHD (+71), 0 supported software, 0 partially supported software, 0 unsupported software
 
 1 software-lists added:
 amiga_hdd (Amiga hard disk images)
@@ -3305,8 +3478,8 @@ spectrum_cass           | attackon_a
 
 $0.234 [#673]
 2021/07/28
-646 Software List (+3), 129.960 software (-2/+368), [635 active SL (+3), 11 orphan SL, 129.193 active software (-2/+368), 767 orphan software], 89.203 SL parents (+318), 40.757 SL clones (+48)
-215.557 SL roms (+1057), 10.283 SL CHD (+56)
+646 software list (+3), 129.960 software (-2/+368), [635 active SL (+3), 11 orphan SL, 129.193 active software (-2/+368), 767 orphan software, 89.203 software parents (+318), 40.757 software clones (+48)
+215.557 software roms (+1057), 10.283 software CHD (+56), 0 supported software, 0 partially supported software, 0 unsupported software
 
 3 software-lists added:
 apexc_cyl (APEXC Cylinder images)
@@ -3383,8 +3556,8 @@ nes                     | mrmary2
 
 $0.233 [#672]
 2021/07/01
-643 Software List (+5), 129.594 software (-44/+1.175) [632 active SL (+5), 11 orphan SL, 128.827 active software (-44/+1.175), 767 orphan software], 88.885 SL parents (+998), 40.709 SL clones (+133)
-214.500 SL roms (+2.378), 10.227 SL CHD (+49)
+643 software list (+5), 129.594 software (-44/+1.175), 632 active SL (+5), 11 orphan SL, 128.827 active software (-44/+1.175), 767 orphan software, 88.885 software parents (+998), 40.709 software clones (+133)
+214.500 software roms (+2.378), 10.227 software CHD (+49), 0 supported software, 0 partially supported software, 0 unsupported software
 
 5 software-lists added:
 apple2gs_flop_orig (Apple IIgs 3.5" original disks)
@@ -3513,8 +3686,8 @@ super80_cass            | zipzapa
 
 $0.232 [#671]
 2021/05/27
-638 Software List (+3), 128.463 software (-14/+671) [627 active SL (+4), 11 orphan SL, 127.696 active software (-14/+674), 767 orphan software], 87.887 SL parents (+543), 40.576 SL clones (+114)
-212.122 SL roms (+74), 10.178 SL CHD (+8)
+638 software list (+3), 128.463 software (-14/+671), 627 active SL (+4), 11 orphan SL, 127.696 active software (-14/+674), 767 orphan software, 87.887 software parents (+543), 40.576 software clones (+114)
+212.122 software roms (+74), 10.178 software CHD (+8), 0 supported software, 0 partially supported software, 0 unsupported software
 
 3 software-lists added:
 mbee_cass (Microbee cassettes)
@@ -3613,8 +3786,8 @@ spectrum_cass           | matchdy2er
 
 $0.231 [#670]
 2021/04/28
-635 Software List (+6), 127.806 software (-5/+232) [623 active SL (+6), 127.036 active software (-5/+232)], 87.344 SL parents (+206), 40.462 SL clones (+21)
-211.382 SL roms (+296), 10.170 SL CHD (+62)
+635 software list (+6), 127.806 software (-5/+232), 623 active SL (+6), 127.036 active software (-5/+232), 87.344 software parents (+206), 40.462 software clones (+21)
+211.382 software roms (+296), 10.170 software CHD (+62), 0 supported software, 0 partially supported software, 0 unsupported software
 
 6 software-list added/removed:
 basf7100
@@ -3676,8 +3849,8 @@ spectrum_cass           | renegad2hs
 
 $0.230 [#669]
 2021/03/31
-629 Software List (-1/+4), 127.579 software (-4/+262) [617 active SL (-1/+6), 126.809 active software (-4/+265)], 87.138 SL parents (+234), 40.441 SL clones (+24)
-211.086 SL roms (+379), 10.108 SL CHD (+64)
+629 software list (-1/+4), 127.579 software (-4/+262), 617 active SL (-1/+6), 126.809 active software (-4/+265), 87.138 software parents (+234), 40.441 software clones (+24)
+211.086 software roms (+379), 10.108 software CHD (+64), 0 supported software, 0 partially supported software, 0 unsupported software
 
 1 software-list added:
 leapfrog_zippity_cart (LeapFrog Zippity Cartridges)
@@ -3712,8 +3885,8 @@ fmtowns_flop            | tssl51a
 
 $0.229 [#668]
 2021/02/24
-626 Software List (+1), 127.321 software (-2/+112) [612 active SL, 126.548 active software (-2/+112)], 86.904 SL parents (+82), 40.417 SL clones (+28)
-210.707 SL roms (+621), 10.044 SL CHD (+11)
+626 software list (+1), 127.321 software (-2/+112), 612 active SL, 126.548 active software (-2/+112), 86.904 software parents (+82), 40.417 software clones (+28)
+210.707 software roms (+621), 10.044 software CHD (+11), 0 supported software, 0 partially supported software, 0 unsupported software
 
 software-list added:
 hp_ipc_rom (HP Integral PC optional ROMs)
@@ -3964,8 +4137,8 @@ vsmile_cart             | noddyp
 
 $0.228 [#667]
 2021/01/27
-625 Software List (+3), 127.211 software (+263) [612 active SL (+3), 126.438 active software (+263)], 86.822 SL parents (+157), 40.389 SL clones (+106)
-210.086 SL roms (+206), 10.033 SL CHD (+110)
+625 software list (+3), 127.211 software (+263), 612 active SL (+3), 126.438 active software (+263), 86.822 software parents (+157), 40.389 software clones (+106)
+210.086 software roms (+206), 10.033 software CHD (+110), 0 supported software, 0 partially supported software, 0 unsupported software
 
 1 sofyware-list renamed:
 abc1600             > abc1600_flop
@@ -3985,8 +4158,8 @@ videopac                | barona
 
 $0.227 [#666]
 2020/12/31
-622 Software List (+9), 126.948 software (-3/+284) [609 active SL (+9), 126.175 active software (-3/+284)], 86.665 SL parents (+237), 40.283 SL clones (+44)
-209.880 SL roms (+1277), 9.923 SL CHD (+56)
+622 software list (+9), 126.948 software (-3/+284), 609 active SL (+9), 126.175 active software (-3/+284), 86.665 software parents (+237), 40.283 software clones (+44)
+209.880 software roms (+1277), 9.923 software CHD (+56), 0 supported software, 0 partially supported software, 0 unsupported software
 
 13 software renamed:
 aquarius_cart           | quikdisk          > qdisk
@@ -4012,8 +4185,8 @@ ibm5170                 | sserv2
 
 $0.226 [#665]
 2020/10/28
-613 Software List (+1), 126.667 software (-2/+315) [600 active SL (+2), 125.894 active software (-2/+315)], 86.428 SL parents (+214), 40.239 SL clones (+99)
-208.603 SL roms (+1114), 9.867 SL CHD (+32)
+613 software list (+1), 126.667 software (-2/+315), 600 active SL (+2), 125.894 active software (-2/+315), 86.428 software parents (+214), 40.239 software clones (+99)
+208.603 software roms (+1114), 9.867 software CHD (+32), 0 supported software, 0 partially supported software, 0 unsupported software
 
 2 software-lists merged:
 kaypro484               | 
@@ -4038,8 +4211,8 @@ gameboy                 | xu
 
 $0.225 [#664]
 2020/09/30
-612 Software List (-2/+5), 126.354 software (-180/+355) [598 active SL (+3), 125.581 active software (-180/+354)], 86.214 SL parents (+147), 40.140 SL clones (+28)
-207.489 SL roms (+294), 9.835 SL CHD (+41)
+612 software list (-2/+5), 126.354 software (-180/+355), 598 active SL (+3), 125.581 active software (-180/+354), 86.214 software parents (+147), 40.140 software clones (+28)
+207.489 software roms (+294), 9.835 software CHD (+41), 0 supported software, 0 partially supported software, 0 unsupported software
 
 2 lists merged:
 g7400                   |
@@ -4110,8 +4283,8 @@ hp9k3xx_cdrom           | hpux_9_10_prog
 
 $0.224 [#663]
 2020/08/26
-609 Software List (+3), 126.179 software (-5/+221) [595 active SL (+3), 125.407 active software (-5/+221)], 86.067 SL parents (+187), 40.112 SL clones (+29)
-207.195 SL roms (+906), 9.794 SL CHD (+25)
+609 software list (+3), 126.179 software (-5/+221), 595 active SL (+3), 125.407 active software (-5/+221), 86.067 software parents (+187), 40.112 software clones (+29)
+207.195 software roms (+906), 9.794 software CHD (+25), 0 supported software, 0 partially supported software, 0 unsupported software
 
 36 software renamed:
 g7400                   | 2bsktbwl          > 2bsktbwlpl
@@ -4162,8 +4335,8 @@ vgmplay                 | atetris_syse
 
 $0.223 [#662]
 2020/08/06
-606 Software List (+8), 125.963 software (-4/+142) [592 active SL (+2), 125.191 active software (-4/+142)], 85.880 SL parents (+94), 40.083 SL clones (+44)
-206.289 SL roms (+159), 9.769 SL CHD (+84)
+606 software list (+8), 125.963 software (-4/+142), 592 active SL (+2), 125.191 active software (-4/+142), 85.880 software parents (+94), 40.083 software clones (+44)
+206.289 software roms (+159), 9.769 software CHD (+84), 0 supported software, 0 partially supported software, 0 unsupported software
 
 14 software renamed:
 cpc_flop                | secretag02        > slyspy01
@@ -4191,8 +4364,8 @@ pc98                    | hldruna
 
 $0.222 [#661]
 2020/06/26
-604 Total Software List (-4/+10), 125.825 total software (-27/+821) [590 active SL (-4/+8), 125.053 active software (-27/+814)], 85.786 SL parents (+720), 40.039 SL clones (+74)
-206.130 SL roms (+1005), 9.685 SL CHD (+343)
+604 Total software list (-4/+10), 125.825 total software (-27/+821), 590 active SL (-4/+8), 125.053 active software (-27/+814), 85.786 software parents (+720), 40.039 software clones (+74)
+206.130 software roms (+1005), 9.685 software CHD (+343), 0 supported software, 0 partially supported software, 0 unsupported software
 
 4 software-lists merged:
 bbca_cass               |
@@ -4249,8 +4422,8 @@ psi98                   | util605d
 
 $0.221 [#660]
 2020/05/19
-598 Total Software List (-1/+6), 125.031 total software (+305) [586 active SL (-1/+7), 124.266 active software (+305)], 85.066 SL parents (+275), 39.965 SL clones (+30)
-205.125 SL roms (+579), 9.342 SL CHD (+29)
+598 Total software list (-1/+6), 125.031 total software (+305), 586 active SL (-1/+7), 124.266 active software (+305), 85.066 software parents (+275), 39.965 software clones (+30)
+205.125 software roms (+579), 9.342 software CHD (+29), 0 supported software, 0 partially supported software, 0 unsupported software
 
 7 software renamed:
 c64_cass                | 10cohit2          > 10hits2
@@ -4272,8 +4445,8 @@ vgmplay                 | timetrax_md
 
 $0.220 [#659]
 2020/04/05
-593 Software List (+4), 124.726 software (-1/+265) [580 active SL (+4), 123.961 active software (-1/+398)], 84.791 SL parents (+), 39.935 SL clones (+51)
-204.546 SL roms (+1811), 9.313 SL CHD (+23)
+593 software list (+4), 124.726 software (-1/+265), 580 active SL (+4), 123.961 active software (-1/+398), 84.791 software parents (+), 39.935 software clones (+51)
+204.546 software roms (+1811), 9.313 software CHD (+23), 0 supported software, 0 partially supported software, 0 unsupported software
 
 21 software renamed:
 fmtowns_cd              | cancanb           > cancanbx
@@ -4306,8 +4479,8 @@ vgmplay                 | sfex2
 
 $0.219 [#658]
 2020/02/28
-589 Total Software List (+12), 124.462 total software (-2/+293) [576 active SL (+10), 123.737 active software (-2/+175)], 84.618 SL parents (+231), 39.884 SL clones (+60)
-202.735 SL roms (+410), 9.290 SL CHD (+11)
+589 Total software list (+12), 124.462 total software (-2/+293), 576 active SL (+10), 123.737 active software (-2/+175), 84.618 software parents (+231), 39.884 software clones (+60)
+202.735 software roms (+410), 9.290 software CHD (+11), 0 supported software, 0 partially supported software, 0 unsupported software
 
 1 software renamed:
 nes                    | worldjen             > wordjen
@@ -4320,8 +4493,8 @@ n64                    | wcwnitro1
 
 $0.218 [#657]
 2020/02/01
-577 Total Software List (+10), 124.171 total software (+209) [566 active SL (+10), 123.564 active software (+209)], 84.387 SL parents (+181), 39.824 SL clones (+28)
-202.325 SL roms (+427), 9.279 SL CHD (+3)
+577 Total software list (+10), 124.171 total software (+209), 566 active SL (+10), 123.564 active software (+209), 84.387 software parents (+181), 39.824 software clones (+28)
+202.325 software roms (+427), 9.279 software CHD (+3), 0 supported software, 0 partially supported software, 0 unsupported software
 
 1 software renamed:
 clickstart_cart        | backyardingans       > backyardigans
@@ -4330,8 +4503,8 @@ clickstart_cart        | backyardingans       > backyardigans
 
 $0.217 [#656]
 2019/12/25
-567 Software List (-1/+3), 123.962 software (+83) [556 active SL (+12), 123.355 active software (+354)], 84.206 SL parents (+70), 39.796 SL clones (+13)
-201.898 SL roms (+226), 9.276 SL CHD
+567 software list (-1/+3), 123.962 software (+83), 556 active SL (+12), 123.355 active software (+354), 84.206 software parents (+70), 39.796 software clones (+13)
+201.898 software roms (+226), 9.276 software CHD, 0 supported software, 0 partially supported software, 0 unsupported software
 
 1 lists removed:
 c64_flop
@@ -4347,8 +4520,8 @@ gameboy                | racedaysu       > racedayse
 
 $0.216 [#655]
 2019/11/27
-564 Software List (+1), 123.879 software (-2/+121) [544 active SL, 123.001 active software (-2/+113)], 84.136 SL parents (+101), 39.783 SL clones (+19)
-201.672 SL roms (+190), 9.276 SL CHD
+564 software list (+1), 123.879 software (-2/+121), 544 active SL, 123.001 active software (-2/+113), 84.136 software parents (+101), 39.783 software clones (+19)
+201.672 software roms (+190), 9.276 software CHD, 0 supported software, 0 partially supported software, 0 unsupported software
 
 1 software renamed:
 gameking3              | flycab               > flycar
@@ -4361,8 +4534,8 @@ spectrum_cass           | plusdsys_c
 
 $0.215 [#654]
 2019/10/30
-563 Software List (+5), 123.760 software (-1/+313) [544 active SL (+5), 122.890 active software (-1/+258)], 84.035 SL parents (+253), 39.764 SL clones (+4)
-201.482 SL roms (-957), 9.276 SL CHD (+20)
+563 software list (+5), 123.760 software (-1/+313), 544 active SL (+5), 122.890 active software (-1/+258), 84.035 software parents (+253), 39.764 software clones (+4)
+201.482 software roms (-957), 9.276 software CHD (+20), 0 supported software, 0 partially supported software, 0 unsupported software
 
 1 software renamed:
 fmtowns_cd             | airwar               >  airwar12
@@ -4374,8 +4547,8 @@ megadriv               | btlmanidp
 
 $0.214 [#653]
 2019/09/25
-558 Software List (+6), 123.542 software (-95/+224) [539 active SL (+6), 122.633 active software (-95/+227)], 83.782 SL parents (+177), 39.760 SL clones (-48)
-202.439 SL roms (+582), 9.256 SL CHD (+5)
+558 software list (+6), 123.542 software (-95/+224), 539 active SL (+6), 122.633 active software (-95/+227), 83.782 software parents (+177), 39.760 software clones (-48)
+202.439 software roms (+582), 9.256 software CHD (+5), 0 supported software, 0 partially supported software, 0 unsupported software
 
 1 list removed:
 genius
@@ -4840,8 +5013,8 @@ spectrum_cass           | xybotssi
 
 $0.213 [#652]
 2019/09/04
-552 Software List (-1/+9), 123.413 software (-78/+593) [533 active SL (+6), 122.501 active software (-78/+519)], 83.605 SL parents (+410), 39.808 SL clones (+105)
-201.857 SL roms (+703), 9.251 SL CHD
+552 software list (-1/+9), 123.413 software (-78/+593), 533 active SL (+6), 122.501 active software (-78/+519), 83.605 software parents (+410), 39.808 software clones (+105)
+201.857 software roms (+703), 9.251 software CHD, 0 supported software, 0 partially supported software, 0 unsupported software
 
 1 list removed:
 mephisto
@@ -5405,8 +5578,8 @@ spectrum_cass           | theshipo_a
 
 $0.212 [#651]
 2019/08/02
-544 Software List (+4), 122.898 software (-1/+13303) [527 active SL (+4), 122.060 active software (-1/+13303)], 83.195 SL parents (+8735), 39.703 SL clones (+4567)
-201.154 SL roms (+18087), 9.251 SL CHD (+44)
+544 software list (+4), 122.898 software (-1/+13303), 527 active SL (+4), 122.060 active software (-1/+13303), 83.195 software parents (+8735), 39.703 software clones (+4567)
+201.154 software roms (+18087), 9.251 software CHD (+44), 0 supported software, 0 partially supported software, 0 unsupported software
 
 3 software renamed:
 apple2_flop_clcracked  | papermodels          > pmdlxmas
@@ -5420,8 +5593,8 @@ cd32                   | wormstdc
 
 $0.211 [#650]
 2019/06/26
-540 Software List (+3), 109.596 software (-6/+1049) [523 active SL (+3), 108.758 active software (-6/+1049)], 74.460 SL parents (+890), 35.136 SL clones (+153)
-183.067 SL roms (+1858), 9.207 SL CHD (+5)
+540 software list (+3), 109.596 software (-6/+1049), 523 active SL (+3), 108.758 active software (-6/+1049), 74.460 software parents (+890), 35.136 software clones (+153)
+183.067 software roms (+1858), 9.207 software CHD (+5), 0 supported software, 0 partially supported software, 0 unsupported software
 
 4 software renamed:
 pc98                   | darakuni             > angieomk
@@ -5441,8 +5614,8 @@ pc98                   | dstallexk
 
 $0.210 [#649]
 2019/05/30
-537 Software List (+1), 108.553 software (-11/+330) [520 active SL (+1), 107.715 active software (-11/+330)], 73.570 SL parents (+291), 34.983 SL clones (+28)
-181.209 SL roms (+396), 9.202 SL CHD (+27)
+537 software list (+1), 108.553 software (-11/+330), 520 active SL (+1), 107.715 active software (-11/+330), 73.570 software parents (+291), 34.983 software clones (+28)
+181.209 software roms (+396), 9.202 software CHD (+27), 0 supported software, 0 partially supported software, 0 unsupported software
 
 37 software renamed:
 apple2_flop_clcracked  | berserkerraids       > berraids
@@ -5500,8 +5673,8 @@ cgenie_cass            | fraggles
 
 $0.209 [#648]
 2019/04/24
-536 Software List (+2), 108.234 software (+277) [519 active SL (+2), 107.396 active software (+276)], 73.279 SL parents (+276), 34.955 SL clones (+1)
-180.813 SL roms (+428), 9.175 SL CHD (+7)
+536 software list (+2), 108.234 software (+277), 519 active SL (+2), 107.396 active software (+276), 73.279 software parents (+276), 34.955 software clones (+1)
+180.813 software roms (+428), 9.175 software CHD (+7), 0 supported software, 0 partially supported software, 0 unsupported software
 
 4 software renamed:
 apple2_flop_clcracked  | algebra2             > ewalgeb2
@@ -5513,8 +5686,8 @@ i7000_card             | set-78               > 503550
 
 $0.208 [#647]
 2019/03/27
-534 Software List (+3), 107.957 software (-4/+1.479) [517 active SL (+4), 107.120 active software (-4/+1.439)], 73.003 SL parents (+1053), 34.954 SL clones (+422)
-180.385 SL roms (+2042), 9.168 SL CHD (+20)
+534 software list (+3), 107.957 software (-4/+1.479), 517 active SL (+4), 107.120 active software (-4/+1.439), 73.003 software parents (+1053), 34.954 software clones (+422)
+180.385 software roms (+2042), 9.168 software CHD (+20), 0 supported software, 0 partially supported software, 0 unsupported software
 
 2 lists renamed:
 apple2                      > apple2_flop_misc
@@ -5543,8 +5716,8 @@ vsmile_cart            | zayzmac
 
 $0.207 [#646]
 2019/02/27
-531 Software List (+17), 106.482 software (+226) [513 active SL (+7), 105.685 active software (+226)], 71.950 SL parents (+189), 34.532 SL clones (+37)
-178.343 SL roms (+803), 9.148 SL CHD
+531 software list (+17), 106.482 software (+226), 513 active SL (+7), 105.685 active software (+226), 71.950 software parents (+189), 34.532 software clones (+37)
+178.343 software roms (+803), 9.148 software CHD, 0 supported software, 0 partially supported software, 0 unsupported software
 
 22 software renamed:
 vsmile_cart             | appilote             > fredf
@@ -5574,8 +5747,8 @@ vsmilem_cart            | wintrspt             > wintrsptmg
 
 $0.206 [#645]
 2019/01/30
-514 Software List (-1/+17), 106.256 software (-5/+358) [496 active SL (-1/+19), 105.459 active software (-5/+375)], 71.761 SL parents (+338), 34.495 SL clones (+20)
-177.540 SL roms (+440), 9.148 SL CHD (+2)
+514 software list (-1/+17), 106.256 software (-5/+358), 496 active SL (-1/+19), 105.459 active software (-5/+375), 71.761 software parents (+338), 34.495 software clones (+20)
+177.540 software roms (+440), 9.148 software CHD (+2), 0 supported software, 0 partially supported software, 0 unsupported software
 
 1 list removed:
 ekara
@@ -5597,8 +5770,8 @@ vsmileb_cart           | poohhawag
 
 $0.205 [#644]
 2018/12/25
-498 Software List (+2), 105.898 software (+615) [478 active SL (+1), 105.089 active software (+613)], 71.423 SL parents (+576), 34.475 SL clones (+39)
-177.100 SL roms (+804), 9.146 SL CHD
+498 software list (+2), 105.898 software (+615), 478 active SL (+1), 105.089 active software (+613), 71.423 software parents (+576), 34.475 software clones (+39)
+177.100 software roms (+804), 9.146 software CHD, 0 supported software, 0 partially supported software, 0 unsupported software
 
 1 software renamed:
 bbc_rom                | ats259               > ats259m
@@ -5607,15 +5780,15 @@ bbc_rom                | ats259               > ats259m
 
 $0.204 [#643]
 2018/11/28
-496 Software List (+1), 105.283 software (+626) [477 active SL (+1), 104.476 active software (+626)], 70.847 SL parents (+382), 34.436 SL clones (+244)
-176.296 SL roms (+646), 9.146 SL CHD
+496 software list (+1), 105.283 software (+626), 477 active SL (+1), 104.476 active software (+626), 70.847 software parents (+382), 34.436 software clones (+244)
+176.296 software roms (+646), 9.146 software CHD, 0 supported software, 0 partially supported software, 0 unsupported software
 
 =====================================================================================================================================================================================================
 
 $0.203 [#642]
 2018/10/31
-495 Software List (+2), 104.657 software (-2/+168) [476 active SL (+1), 103.850 active software (-2/+191)], 70.465 SL parents (+116), 34.192 SL clones (+50)
-175.650 SL roms (+601), 9.146 SL CHD
+495 software list (+2), 104.657 software (-2/+168), 476 active SL (+1), 103.850 active software (-2/+191), 70.465 software parents (+116), 34.192 software clones (+50)
+175.650 software roms (+601), 9.146 software CHD, 0 supported software, 0 partially supported software, 0 unsupported software
 
 7 software renamed:
 pc98                   | brandnewa            > brandnewca
@@ -5640,15 +5813,15 @@ x68k_flop              | kensoson
 
 $0.202 [#641]
 2018/09/26
-493 Software List, 104.491 software (+25) [475 active SL (-1), 103.685 active software (+24)], 70.349 SL parents (+25), 34.142 SL clones
-175.049 SL roms (+27), 9.146 SL CHD (+8)
+493 software list, 104.491 software (+25), 475 active SL (-1), 103.685 active software (+24), 70.349 software parents (+25), 34.142 SL clones
+175.049 software roms (+27), 9.146 software CHD (+8), 0 supported software, 0 partially supported software, 0 unsupported software
 
 =====================================================================================================================================================================================================
 
 $0.201 [#640]
 2018/08/29
-493 Software List, 104.466 software (-2/+3.330) [476 active SL (+), 103.661 active software (+3.296)], 70.324 SL parents (+3.255), 34.142 SL clones (+73)
-175.022 SL roms (+50538), 9.138 SL CHD (+), Supported Software 000 (+), Partially Supported Software 000 (+), Unsupported Software 000 (+)
+493 software list, 104.466 software (-2/+3.330), 476 active SL, 103.661 active software (+3.296), 70.324 software parents (+3.255), 34.142 software clones (+73)
+175.022 software roms (+50538), 9.138 software CHD, 0 supported software, 0 partially supported software, 0 unsupported software
 
 1 software renamed:
 pc98                   | assisart             > assart
@@ -5661,8 +5834,8 @@ pc98                   | albiona
 
 $0.200 [#639]
 2018/07/25
-493 Software List (+3), 101.138 software (+106) [476 active SL (+3), 17 orphan SL, 100.365 active software (+106), 773 orphan software (-128)], 67.069 SL parents (+94), 34.069 SL clones (+12)
-124.484 SL roms (+158), 8.982 SL CHD, Supported Software 64.462 (+96), Partially Supported Software 711 (+6), Unsupported Software 35.965 (+4)
+493 software list (+3), 101.138 software (+106), 476 active SL (+3), 17 orphan SL, 100.365 active software (+106), 773 orphan software (-128), 67.069 software parents (+94), 34.069 software clones (+12)
+124.484 software roms (+158), 8.982 software CHD, supported software 64.462 (+96), partially supported software 711 (+6), unsupported software 35.965 (+4)
 
 3 active software-lists added:
 acrnsys_flop (Acorn System disk images)
@@ -5683,8 +5856,8 @@ x68k_flop              | nininbtla
 
 $0.199 [#638]
 2018/06/27
-490 Software List (+2), 101.032 software (+39) [473 active SL (+2), 17 orphan SL, 100.259 active software (+39), 901 orphan software], 66.975 SL parents (+35), 34.057 SL clones (+4)
-124.326 SL roms (+201), 8.982 SL CHD (+1), Supported Software 64.366 (+39), Partially Supported Software 705 (+1), Unsupported Software 35.961 (-1)
+490 software list (+2), 101.032 software (+39), 473 active SL (+2), 17 orphan SL, 100.259 active software (+39), 901 orphan software, 66.975 software parents (+35), 34.057 software clones (+4)
+124.326 software roms (+201), 8.982 software CHD (+1), supported software 64.366 (+39), partially supported software 705 (+1), unsupported software 35.961 (-1)
 
 2 active software-lists added:
 hp9k3xx_flop (HP9000/300 disks)
@@ -5711,8 +5884,8 @@ pc98                   | msdetef2
 
 $0.198 [#637]
 2018/05/30
-488 Software List, 100.993 software (+230) [471 active SL, 17 orphan SL, 100.220 active software (+230), 901 orphan software], 66.940 SL parents (+213), 34.053 SL clones (+17)
-124.125 SL roms (+264), 8.981 SL CHD (+46), Supported Software 64.327 (+239), Partially Supported Software 704 (+1), Unsupported Software 35.962 (-10)
+488 software list, 100.993 software (+230), 471 active SL, 17 orphan SL, 100.220 active software (+230), 901 orphan software, 66.940 software parents (+213), 34.053 software clones (+17)
+124.125 software roms (+264), 8.981 software CHD (+46), supported software 64.327 (+239), partially supported software 704 (+1), unsupported software 35.962 (-10)
 
 16 active software-lists with changed description:
 bbc_flop_32016 ("32016 Co-Processor Discs" to "Acorn 32016 Co-Processor discs")
@@ -5751,8 +5924,8 @@ vic10 (+1)
 
 $0.197 [#636]
 2018/04/25
-488 Software List, 100.763 software (+147) [471 active SL (+1), 17 orphan SL (-1), 99.990 active software (+147), 901 orphan software], 66.727 SL parents (+115), 34.036 SL clones (+32)
-123.861 SL roms (+104), 8.935 SL CHD (+110), Supported Software 64.088 (+67), Partially Supported Software 703 (+13), Unsupported Software 35.972 (+67)
+488 software list, 100.763 software (+147), 471 active SL (+1), 17 orphan SL (-1), 99.990 active software (+147), 901 orphan software, 66.727 software parents (+115), 34.036 software clones (+32)
+123.861 software roms (+104), 8.935 software CHD (+110), supported software 64.088 (+67), partially supported software 703 (+13), unsupported software 35.972 (+67)
 
 1 software-list promoted to active:
 vc4000 (Interton VC 4000 cartridges)
@@ -5781,8 +5954,8 @@ leapster                | zahl              > numraidg
 
 $0.196 [#635]
 2018/03/28
-488 Software List (+3), 100.616 software (+400) [470 active SL (-1/+4), 18 orphan SL (-1/+1), 99.843 active software (+567), 901 orphan software (-167)], 66.612 SL parents (+239), 34.004 SL clones (+161)
-123.757 SL roms (+152), 8.825 SL CHD (+334), Supported Software 64.021 (+379), Partially Supported Software 690, Unsupported Software 35.905 (+21)
+488 software list (+3), 100.616 software (+400), 470 active SL (-1/+4), 18 orphan SL (-1/+1), 99.843 active software (+567), 901 orphan software (-167), 66.612 software parents (+239), 34.004 software clones (+161)
+123.757 software roms (+152), 8.825 software CHD (+334), supported software 64.021 (+379), partially supported software 690, unsupported software 35.905 (+21)
 
 3 active software-lists added:
 interpro (Intergraph InterPro software)
@@ -5829,8 +6002,8 @@ leapster                | spongez           > spongewrmg
 
 $0.195 [#634]
 2018/02/28
-485 Software List (+3), 100.216 software (+243) [467 active SL (+2), 18 orphan SL (+1), 99.276 active software (+76), 1.068 orphan software (+167)] 66.373 SL parents (+154), 33.843 SL clones (+89)
-123.605 SL roms (+93), 8.491 SL CHD (+208), Supported Software 63.642 (+255), Partially Supported Software 690, Unsupported Software 35.884 (-12)
+485 software list (+3), 100.216 software (+243), 467 active SL (+2), 18 orphan SL (+1), 99.276 active software (+76), 1.068 orphan software (+167)] 66.373 software parents (+154), 33.843 software clones (+89)
+123.605 software roms (+93), 8.491 software CHD (+208), supported software 63.642 (+255), partially supported software 690, unsupported software 35.884 (-12)
 
 2 active software-list added:
 ews286_flop (Ericsson PC AT WS286 diskettes)
@@ -5864,8 +6037,8 @@ electron_cart           | sndexpc           > sndexp3
 
 $0.194 [#633]
 2018/01/31
-482 Software List (+2), 99.973 software (-2/+332) [465 active SL (+5), 17 orphan SL (-3), 99.200 active software (-2/+332), 901 orphan software], 66.219 SL parents (+253), 33.754 SL clones (+77)
-123.512 SL roms (+217), 8.283 SL CHD (+215), Supported Software 63.387 (+60), Partially Supported Software 690 (+92), Unsupported Software 35.896 (+178)
+482 software list (+2), 99.973 software (-2/+332), 465 active SL (+5), 17 orphan SL (-3), 99.200 active software (-2/+332), 901 orphan software, 66.219 software parents (+253), 33.754 software clones (+77)
+123.512 software roms (+217), 8.283 software CHD (+215), supported software 63.387 (+60), partially supported software 690 (+92), unsupported software 35.896 (+178)
 
 2 active software-lists added:
 electron_rom (Acorn Electron ROMs)
@@ -5904,8 +6077,8 @@ megadriv                | radicav1
 
 $0.193 [#632]
 2017/12/27
-480 Software List (+3), 99.643 software (+134) [460 active SL, 20 orphan SL (+3), 98.870 active software (+134), 901 orphan software], 65.966 SL parents (+122), 33.677 SL clones (+12)
-123.295 SL roms (+100), 8.068 SL CHD (+95), Supported Software 63.327 (+69), Partially Supported Software 598 (+21), Unsupported Software 35.718 (+44)
+480 software list (+3), 99.643 software (+134), 460 active SL, 20 orphan SL (+3), 98.870 active software (+134), 901 orphan software, 65.966 software parents (+122), 33.677 software clones (+12)
+123.295 software roms (+100), 8.068 software CHD (+95), supported software 63.327 (+69), partially supported software 598 (+21), unsupported software 35.718 (+44)
 
 3 software-lists added:
 pcfx (NEC PC-FX CD-ROMs)
@@ -5932,8 +6105,8 @@ ti95_cart (+2)
 $0.192 [#631]
 2017/11/29
 
-477 Software List (+3), 99.509 software (-1/+144) [460 active SL (+3), 17 orphan SL, 98.736 active software (-1/+144), 901 orphan software], 65.844 SL parents (+100), 33.665 SL clones (+43)
-123.195 SL roms (+286), 7.973 SL CHD (+8), Supported Software 63.258 (+94), Partially Supported Software 577 (+2), Unsupported Software 35.674 (+47)
+477 software list (+3), 99.509 software (-1/+144), 460 active SL (+3), 17 orphan SL, 98.736 active software (-1/+144), 901 orphan software, 65.844 software parents (+100), 33.665 software clones (+43)
+123.195 software roms (+286), 7.973 software CHD (+8), supported software 63.258 (+94), partially supported software 577 (+2), unsupported software 35.674 (+47)
 
 3 active software-lists added:
 mtx_cart (Memotech MTX ROMPAK cartridges)
@@ -5967,8 +6140,8 @@ ibmpcjr_cart            | quiksilv
 
 $0.191 [#630]
 2017/10/25
-474 Software List (+2), 99.366 software (-10/+185) [457 active SL (+3), 17 orphan SL (-1), 98.593 active software (-10/+196), 901 orphan software (-11)], 65.744 SL parents (+108), 33.622 SL clones (+67)
-122.909 SL roms (+), 7.965 SL CHD (+), Supported Software 63.164 (+237), Partially Supported Software 575 (+4), Unsupported Software 35.627 (-66)
+474 software list (+2), 99.366 software (-10/+185), 457 active SL (+3), 17 orphan SL (-1), 98.593 active software (-10/+196), 901 orphan software (-11), 65.744 software parents (+108), 33.622 software clones (+67)
+122.909 software roms (+), 7.965 software CHD (+), supported software 63.164 (+237), partially supported software 575 (+4), unsupported software 35.627 (-66)
 
 2 active software-lists added:
 hx20_rom (Epson HX-20 Optional ROMs)
@@ -6010,8 +6183,8 @@ psx                     | spyrod
 
 $0.190 [#629]
 2017/09/27
-472 Software List (+3), 99.191 software (+37) [454 active SL (-1/+3), 18 orphan SL (+1), 98.407 active software (+16), 912 orphan software (+21)], 65.636 SL parents (+32), 33.555 SL clones (+5)
-122.652 SL roms (+81), 7.888 SL CHD, Supported Software 62.927 (+36), Partially Supported Software 571, Unsupported Software 35.693 (+1)
+472 software list (+3), 99.191 software (+37), 454 active SL (-1/+3), 18 orphan SL (+1), 98.407 active software (+16), 912 orphan software (+21), 65.636 software parents (+32), 33.555 software clones (+5)
+122.652 software roms (+81), 7.888 software CHD, supported software 62.927 (+36), partially supported software 571, unsupported software 35.693 (+1)
 
 3 active software-lists added:
 apple2_cass (Apple II cassettes)
@@ -6057,8 +6230,8 @@ neogeo                  | tws96             > twsoc96
 
 $0.189 [#628]
 2017/08/30
-469 Software List (+3), 99.154 software (+165) [452 active SL (-2/+3), 17 orphan SL (+2), 98.391 active software (+153), 891 orphan software (+12)], 65.604 SL parents (+90), 33.550 SL clones (+75)
-122.571 SL roms (+210), 7.888 SL CHD (+7), Supported Software 62.891 (+176), Partially Supported Software 571, Unsupported Software 35.692 (-11)
+469 software list (+3), 99.154 software (+165), 452 active SL (-2/+3), 17 orphan SL (+2), 98.391 active software (+153), 891 orphan software (+12), 65.604 software parents (+90), 33.550 software clones (+75)
+122.571 software roms (+210), 7.888 software CHD (+7), supported software 62.891 (+176), partially supported software 571, unsupported software 35.692 (-11)
 
 3 active software-lists added:
 alphatro_cart (Triumph-Adler Alphatronic PC cartridges)
@@ -6096,8 +6269,8 @@ sms (+1)
 
 $0.188 [#627]
 2017/07/26
-466 Software List, 98.989 software (+63) [451 active SL, 15 orphan SL, 98.238 active software (+63), 879 orphan software], 65.514 SL parents (+52), 33.475 SL clones (+11)
-122.361 SL roms (+170), 7.881 SL CHD, Supported Software 62.715, Partially Supported Software 571, Unsupported Software 35.703
+466 software list, 98.989 software (+63), 451 active SL, 15 orphan SL, 98.238 active software (+63), 879 orphan software, 65.514 software parents (+52), 33.475 software clones (+11)
+122.361 software roms (+170), 7.881 software CHD, supported software 62.715, partially supported software 571, unsupported software 35.703
 
 software added/removed:
 abc80_flop (+1)
@@ -6115,8 +6288,8 @@ ibm5170                 | msdos622g         > msdos622de
 
 $0.187 [#626]
 2017/06/28
-466 Software List (+1), 98.926 software (-20/+154) [451 active SL (+1), 15 orphan SL, 98.175 active software (-20/+154), 879 orphan software], 65.462 SL parents (+113), 33.464 SL clones (+21)
-122.191 SL roms (+233), 7.881 SL CHD, Supported Software 62.715 (+196), Partially Supported Software 571 (+1), Unsupported Software 35.703
+466 software list (+1), 98.926 software (-20/+154), 451 active SL (+1), 15 orphan SL, 98.175 active software (-20/+154), 879 orphan software, 65.462 software parents (+113), 33.464 software clones (+21)
+122.191 software roms (+233), 7.881 software CHD, supported software 62.715 (+196), partially supported software 571 (+1), unsupported software 35.703
 
 1 active software-list added:
 pet_quik (Commodore PET quickload)
@@ -6171,8 +6344,8 @@ x68k_flop               | ssf2
 
 $0.186 [#625]
 2017/05/31
-465 Software List (+2), 98.792 software (-1/+298) [450 active SL (+7), 15 orphan SL (-5), 98.041 active software (-1/+3548), 879 orphan software (-3.250)], 65.349 SL parents (+208), 33.443 SL clones (+89)
-121.958 SL roms (+381), 7.881 SL CHD, Supported Software 62.519 (+298), Partially Supported Software 570, Unsupported Software 35.703 (-1)
+465 software list (+2), 98.792 software (-1/+298), 450 active SL (+7), 15 orphan SL (-5), 98.041 active software (-1/+3548), 879 orphan software (-3.250), 65.349 software parents (+208), 33.443 software clones (+89)
+121.958 software roms (+381), 7.881 software CHD, supported software 62.519 (+298), partially supported software 570, unsupported software 35.703 (-1)
 
 2 active software-lists added:
 z80ne_cass (Nuova Elettronica Z80NE cassettes)
@@ -6212,8 +6385,8 @@ nes                     | mc_dgear
 
 $0.185 [#624]
 2017/04/26
-463 Software List (+8), 98.495 software (-1/+1215) [443 active SL (+9), 20 orphan SL (-1), 94.494 active software (-1/+1350), 4.129 orphan software (-135)] 65.141 SL parents (+1109), 33.354 SL clones (+105)
-121.577 SL roms (+1573), 7.881 SL CHD (+8), Supported Software 62.221 (+1213), Partially Supported Software 570, Unsupported Software 35.704 (+1)
+463 software list (+8), 98.495 software (-1/+1215), 443 active SL (+9), 20 orphan SL (-1), 94.494 active software (-1/+1350), 4.129 orphan software (-135), 65.141 software parents (+1109), 33.354 software clones (+105)
+121.577 software roms (+1573), 7.881 software CHD (+8), supported software 62.221 (+1213), partially supported software 570, unsupported software 35.704 (+1)
 
 8 active software-lists added:
 dgnalpha_flop (Dragon Alpha (Professional) diskettes)
@@ -6263,8 +6436,8 @@ coco_cart              | chargen
 
 $0.184 [#623]
 2017/03/29
-455 Software List (+3), 97.281 software (-1/+121) [434 active SL (+4), 21 orphan SL (-1), 93.145 active software (-1/+159), 4.264 orphan software (-38)], 64.032 SL parents (+97), 33.249 SL clones (+23)
-120.004 SL roms (+191), 7.873 SL CHD, Supported Software 61.008 (+117), Partially Supported Software 570 (-1), Unsupported Software 35.703 (+4)
+455 software list (+3), 97.281 software (-1/+121), 434 active SL (+4), 21 orphan SL (-1), 93.145 active software (-1/+159), 4.264 orphan software (-38), 64.032 software parents (+97), 33.249 software clones (+23)
+120.004 software roms (+191), 7.873 software CHD, supported software 61.008 (+117), partially supported software 570 (-1), unsupported software 35.703 (+4)
 
 3 active software-lists added:
 quizwiz (Coleco Quiz Wiz cartridges)
@@ -6305,8 +6478,8 @@ bbcb_flop              | tyb13
 
 $0.183 [#622]
 2017/02/22
-452 Software List (+4), 97.161 software (+667) [430 active SL (+4), 22 orphan SL, 92.987 active software (+667), 4.302 orphan software (-39)], 63.935 SL parents (+565), 33.226 SL clones (+102)
-119.813 SL roms (+1197), 7.873 SL CHD, Supported Software 60.891 (+662), Partially Supported Software 571, Unsupported Software 35.699 (+5)
+452 software list (+4), 97.161 software (+667), 430 active SL (+4), 22 orphan SL, 92.987 active software (+667), 4.302 orphan software (-39), 63.935 software parents (+565), 33.226 software clones (+102)
+119.813 software roms (+1197), 7.873 software CHD, supported software 60.891 (+662), partially supported software 571, unsupported software 35.699 (+5)
 
 4 active software-lists added:
 sitcom (SITCOM)
@@ -6345,8 +6518,8 @@ ibm5170                 | raptor12           > raptor
 
 $0.182 [#621]
 2017/01/25
-448 Software List (+4), 96.494 software (-19/+204) [426 active SL (+2), 22 orphan SL (+2), 92.320 active software (-19/+192), 4.341 orphan software (+12)], 63.370 SL parents (+161), 33.124 SL clones (+24)
-118.616 SL roms (+450), 7.873 SL CHD, Supported Software 60.229 (+411), Partially Supported Software 571 (+1), Unsupported Software 35.694 (-227)
+448 software list (+4), 96.494 software (-19/+204), 426 active SL (+2), 22 orphan SL (+2), 92.320 active software (-19/+192), 4.341 orphan software (+12), 63.370 software parents (+161), 33.124 software clones (+24)
+118.616 software roms (+450), 7.873 software CHD, supported software 60.229 (+411), partially supported software 571 (+1), unsupported software 35.694 (-227)
 
 2 active software-lists added:
 ibm6580 (IBM Displaywriter disk images)
@@ -6416,8 +6589,8 @@ vsmile_cart            | poohvb
 
 $0.181 [#620]
 2016/12/28
-444 Software List (-1/+2), 96.309 software (-1/+65) [424 active SL (-1/+1), 20 orphan SL (+1), 92.147 active software (+26), 4.329 orphan software (+38)], 63.209 SL parents (+41), 33.100 SL clones (+23)
-118.166 SL roms (+179), 7.873 SL CHD, Supported Software 59.818 (+56), Partially Supported Software 570 (+2), Unsupported Software 35.921 (+6)
+444 software list (-1/+2), 96.309 software (-1/+65), 424 active SL (-1/+1), 20 orphan SL (+1), 92.147 active software (+26), 4.329 orphan software (+38), 63.209 software parents (+41), 33.100 software clones (+23)
+118.166 software roms (+179), 7.873 software CHD, supported software 59.818 (+56), partially supported software 570 (+2), unsupported software 35.921 (+6)
 
 1 active software-list added:
 apricot_flop (ACT Apricot PC/Xi floppy disks)
@@ -6473,8 +6646,8 @@ ibm5150                | pcdos110
 
 $0.180 [#619]
 2016/11/30
-443 Software List (+1), 96.245 software (-1/+306) [424 active SL (+1), 19 orphan SL, 92.121 active software (-1/+306), 4.291 orphan software], 63.168 SL parents (+291), 33.077 SL clones (+14)
-117.987 SL roms (+376), 7.873 SL CHD, Supported Software 59.762 (+253), Partially Supported Software 568 (+1), Unsupported Software 35.915 (+51)
+443 software list (+1), 96.245 software (-1/+306), 424 active SL (+1), 19 orphan SL, 92.121 active software (-1/+306), 4.291 orphan software, 63.168 software parents (+291), 33.077 software clones (+14)
+117.987 software roms (+376), 7.873 software CHD, supported software 59.762 (+253), partially supported software 568 (+1), unsupported software 35.915 (+51)
 
 1 active software-list added:
 zorba (Telcon Zorba floppy disks)
@@ -6504,8 +6677,8 @@ bbcb_cass               | airline
 
 $0.179 [#618]
 2016/10/26
-442 Software List (+1), 95.940 software (-13/+73) [423 active SL (+1), 19 orphan SL, 91.816 active software (-13/+73), 4.291 orphan software], 62.877 SL parents (+49), 33.063 SL clones (+11)
-117.611 SL roms (+103), 7.873 SL CHD (+11), Supported Software 59.509 (+59), Partially Supported Software 567 (+1), Unsupported Software 35.864
+442 software list (+1), 95.940 software (-13/+73), 423 active SL (+1), 19 orphan SL, 91.816 active software (-13/+73), 4.291 orphan software, 62.877 software parents (+49), 33.063 software clones (+11)
+117.611 software roms (+103), 7.873 software CHD (+11), supported software 59.509 (+59), partially supported software 567 (+1), unsupported software 35.864
 
 1 active software-list added:
 octopus (LSI Octopus floppy disk images)
@@ -6550,8 +6723,8 @@ x68k_flop              | fortatk
 
 $0.178 [#617]
 2016/09/28
-441 Software List (+6), 95.880 software (-9/+631) [422 active SL (+6), 19 orphan SL, 91.756 active software (-9/+220), 4.291 orphan software (+411)], 62.828 SL parents (+600), 33.052 SL clones (+22)
-117.508 SL roms (+664), 7.862 SL CHD (-4), Supported Software 59.450 (+607), Partially Supported Software 566 (+2), Unsupported Software 35.864 (+13)
+441 software list (+6), 95.880 software (-9/+631), 422 active SL (+6), 19 orphan SL, 91.756 active software (-9/+220), 4.291 orphan software (+411), 62.828 software parents (+600), 33.052 software clones (+22)
+117.508 software roms (+664), 7.862 software CHD (-4), supported software 59.450 (+607), partially supported software 566 (+2), unsupported software 35.864 (+13)
 
 6 active software-lists added:
 chessmstdm (Chess-Master Diamond Modules)
@@ -6633,8 +6806,8 @@ psx                    | intcdv9
 
 $0.177 [#616]
 2016/08/31
-435 Software List, 95.258 software (-1/+110) [416 active SL (+1), 19 orphan SL (-1), 91.545 active software (-1/+34), 3.880 orphan software (+76)], 62.228 SL parents (+109), 33.030 SL clones
-116.844 SL roms (+80), 7.866 SL CHD (+33), Supported Software 58.843 (+111), Partially Supported Software 564, Not Supported 35.851 (-2)
+435 software list, 95.258 software (-1/+110), 416 active SL (+1), 19 orphan SL (-1), 91.545 active software (-1/+34), 3.880 orphan software (+76), 62.228 software parents (+109), 33.030 SL clones
+116.844 software roms (+80), 7.866 software CHD (+33), supported software 58.843 (+111), partially supported software 564, Not Supported 35.851 (-2)
 
 1 software-list promoted to active:
 pofo (Atari Portfolio cartridges)
@@ -6668,8 +6841,8 @@ coco_cart              | cclimber
 
 $0.176 [#615]
 2016/07/27
-435 Software List (+2), 95.149 software (-3/+168) [415 active SL (+1), 20 orphan SL (+1), 91.512 active software (-3/+102), 3.804 orphan software (+105)], 62.119 SL parents (+157), 33.030 SL clones (+8)
-116.764 SL roms (+138), 7.833 SL CHD (+31), Supported Software 58.732 (+144), Partially Supported Software 564, Not Supported 35.853 (+21)
+435 software list (+2), 95.149 software (-3/+168), 415 active SL (+1), 20 orphan SL (+1), 91.512 active software (-3/+102), 3.804 orphan software (+105), 62.119 software parents (+157), 33.030 software clones (+8)
+116.764 software roms (+138), 7.833 software CHD (+31), supported software 58.732 (+144), partially supported software 564, Not Supported 35.853 (+21)
 
 1 active software-list added:
 poisk1_flop (Poisk-1 disk images)
@@ -6709,8 +6882,8 @@ bbcb_cass               | physic
 
 $0.175 [#614]
 2016/06/29
-433 Software List (+4), 94.984 software (-10/+2114) [414 active SL (+3), 19 orphan SL (+1), 91.413 active software (-10/+2119), 3.699 orphan software (-5)], 61.962 SL parents (+1840), 33.022 SL clones (+264)
-116.626 SL roms (+440), 7.802 SL CHD (+1994), Supported Software 58.588 (+2096), Partially Supported Software 564 (-7), Unsupported Software 35.832 (+15)
+433 software list (+4), 94.984 software (-10/+2114), 414 active SL (+3), 19 orphan SL (+1), 91.413 active software (-10/+2119), 3.699 orphan software (-5), 61.962 software parents (+1840), 33.022 software clones (+264)
+116.626 software roms (+440), 7.802 software CHD (+1994), supported software 58.588 (+2096), partially supported software 564 (-7), unsupported software 35.832 (+15)
 
 2 active software-lists added:
 fmtowns_flop (Fujitsu FM Towns disk images)
@@ -7095,8 +7268,8 @@ sorcerer_cass          | elizaa
 
 $0.174 [#613]
 2016/05/25
-429 Software List (-1/+17), 92.880 software (-33/+4564) [411 active SL (-1/+17), 18 orphan SL (-1/+1), 89.304 active software (-33/+4.561), 3.704 orphan software (+4)], 60.122 SL parents (+2517), 32.758 SL clones (+2014)
-116.186 SL roms (+5527), 5.808 SL CHD (+247), Supported Software 56.492 (+4119), Partially Supported Software 571 (+17), Unsupported Software 35.817 (+395)
+429 software list (-1/+17), 92.880 software (-33/+4564), 411 active SL (-1/+17), 18 orphan SL (-1/+1), 89.304 active software (-33/+4.561), 3.704 orphan software (+4), 60.122 software parents (+2517), 32.758 software clones (+2014)
+116.186 software roms (+5527), 5.808 software CHD (+247), supported software 56.492 (+4119), partially supported software 571 (+17), unsupported software 35.817 (+395)
 
 16 active software-lists added:
 mo5_cass (Thomson MO5 cassettes)
@@ -7366,8 +7539,8 @@ ti99_cart              | yathzee
 
 $0.173 [#612]
 2016/04/27
-413 Software List (+1), 88.349 software (+75) [395 active SL (+1), 18 orphan SL, 84.777 active software (+75), 3.700 orphan software], 57.605 SL parents (+73), 30.744 SL clones (+2)
-110.659 SL roms (+93), 5.561 SL CHD, Supported Software 52.373 (+74), Partially Supported Software 554 (+1), Unsupported Software 35.422
+413 software list (+1), 88.349 software (+75), 395 active SL (+1), 18 orphan SL, 84.777 active software (+75), 3.700 orphan software, 57.605 software parents (+73), 30.744 software clones (+2)
+110.659 software roms (+93), 5.561 software CHD, supported software 52.373 (+74), partially supported software 554 (+1), unsupported software 35.422
 
 1 active software-list added:
 pce_tourvision (Tourvision (bootleg Arcade NEC PC-Engine) cartridges)
@@ -7383,8 +7556,8 @@ pce_tourvision (+69)
 
 $0.172 [#611]
 2016/03/30
-412 Software List (+2), 88.274 software (-7/+49) [394 active SL (-1/+2), 18 orphan SL (+1), 84.702 active software (-7/+44), 3.700 orphan software (+5)], 57.532 SL parents (+36), 30.742 SL clones (+6)
-110.566 SL roms (+68), 5.561 SL CHD, Supported Software 52.299 (+24), Partially Supported Software 553, Not Supported 35.422 (+18)
+412 software list (+2), 88.274 software (-7/+49), 394 active SL (-1/+2), 18 orphan SL (+1), 84.702 active software (-7/+44), 3.700 orphan software (+5), 57.532 software parents (+36), 30.742 software clones (+6)
+110.566 software roms (+68), 5.561 software CHD, supported software 52.299 (+24), partially supported software 553, Not Supported 35.422 (+18)
 
 2 active software-lists added:
 pockchalv1 (Pocket Challenge V1 cartridges)
@@ -7419,8 +7592,8 @@ sms                    | treinam
 
 $0.171 [#610]
 2016/02/24
-410 Software List (+4), 88.232 software (+924) [393 active SL (+4), 17 orphan SL, 84.665 active software (+924), 3.695 orphan software], 57.496 SL parents (+848), 30.736 SL clones (+76)
-110.498 SL roms (+1047), 5.561 SL CHD, Supported Software 52.275 (+914), Partially Supported Software 553 (+1), Unsupported Software 35.404 (+9)
+410 software list (+4), 88.232 software (+924), 393 active SL (+4), 17 orphan SL, 84.665 active software (+924), 3.695 orphan software, 57.496 software parents (+848), 30.736 software clones (+76)
+110.498 software roms (+1047), 5.561 software CHD, supported software 52.275 (+914), partially supported software 553 (+1), unsupported software 35.404 (+9)
 
 4 active software-lists added:
 electron_cass (Electron cassettes)
@@ -7444,8 +7617,8 @@ snotec (+3)
 
 $0.170 [#609]
 2016/01/27
-406 Software List (+6), 87.308 software (-3/+93), [389 active SL (+7), 17 orphan SL (-1), 83.741 active software (-3/+99), 3.695 orphan software (-6)], 56.648 SL parents (+85), 30.660 SL clones (+5)
-109.451 SL roms (+130), 5.561 SL CHD, Supported Software 51.361 (+84), Partially Supported Software 552, Not Supported 35.395 (+6)
+406 software list (+6), 87.308 software (-3/+93), [389 active SL (+7), 17 orphan SL (-1), 83.741 active software (-3/+99), 3.695 orphan software (-6), 56.648 software parents (+85), 30.660 software clones (+5)
+109.451 software roms (+130), 5.561 software CHD, supported software 51.361 (+84), partially supported software 552, Not Supported 35.395 (+6)
 
 6 active software-lists added:
 atom_cass (Acorn Atom cassettes)
@@ -7503,8 +7676,8 @@ bbcb_orig_flop          | fieldfil
 
 $0.169 [#608]
 2015/12/30
-400 Software List (+4), 87.218 software (-16/+59), [382 active SL (+5), 18 orphan SL (-1), 83.645 active software (-16/+60), 3.701 orphan software (-1)], 56.563 SL parents (+44), 30.655 SL clones (-1)
-109.321 SL roms (+57), 5.561 SL CHD (+1), Supported Software 51.277 (+10), Partially Supported Software 552 (+39), Unsupported Software 35.389 (+32)
+400 software list (+4), 87.218 software (-16/+59), [382 active SL (+5), 18 orphan SL (-1), 83.645 active software (-16/+60), 3.701 orphan software (-1), 56.563 software parents (+44), 30.655 software clones (-1)
+109.321 software roms (+57), 5.561 software CHD (+1), supported software 51.277 (+10), partially supported software 552 (+39), unsupported software 35.389 (+32)
 
 4 active software-lists added:
 bbc_torch_flop (Torch Z80 Co-Processor Discs)
@@ -7575,8 +7748,8 @@ vc4000                  | comefrut
 
 $0.168 [#607]
 2015/11/25
-396 Software List (+2), 87.175 software (-1/+546), [377 active SL (+1), 19 orphan SL (+1), 83.601 active software (-1/+545), 3.702 orphan software (+1)], 56.519 SL parents (+497), 30.656 SL clones (+48)
-109.264 SL roms (+651), 5.560 SL CHD (+16), Supported Software 51.267 (+513), Partially Supported Software 551 (+2), Unsupported Software 35.357 (+30)
+396 software list (+2), 87.175 software (-1/+546), [377 active SL (+1), 19 orphan SL (+1), 83.601 active software (-1/+545), 3.702 orphan software (+1), 56.519 software parents (+497), 30.656 software clones (+48)
+109.264 software roms (+651), 5.560 software CHD (+16), supported software 51.267 (+513), partially supported software 551 (+2), unsupported software 35.357 (+30)
 
 1 active software-list added:
 bbcb_orig_flop (BBC Micro Model B Original disks)
@@ -7611,8 +7784,8 @@ nes                     | sk5
 
 $0.167 [#606]
 2015/10/28
-394 Software List (+9), 86.786 software (-1/+157) [376 active SL (+14), 18 orphan SL (-5), 83.213 active software (-1/+279), 3.701 orphan software (-122)] 56.155 SL parents (+133), 30.631 SL clones (+23)
-108.768 SL roms (+155), 5.545 SL CHD (+1), Supported Software 50.846 (+92), Partial Support 551 (+2), Not Supported 35.389 (+62)
+394 software list (+9), 86.786 software (-1/+157), 376 active SL (+14), 18 orphan SL (-5), 83.213 active software (-1/+279), 3.701 orphan software (-122)] 56.155 software parents (+133), 30.631 software clones (+23)
+108.768 software roms (+155), 5.545 software CHD (+1), supported software 50.846 (+92), Partial Support 551 (+2), Not Supported 35.389 (+62)
 
 4 active software-lists added:
 bbcb_flop (BBC Micro Model B disks)
@@ -7661,8 +7834,8 @@ nes                     | sk5
 
 $0.166 [#605]
 2015/09/30
-385 Software List (+4), 86.630 software (-7/+54) [362 active SL (+3), 23 orphan SL (+1), 82.935 active software (-7/+50), 3.823 orphan software (+4)], 56.022 SL parents (+54), 30.608 SL clones (-7)
-108.613 SL roms (+50), 5.544 SL CHD, Supported Software 50.754 (+74), Partially Supported Software 549, Not Supported 35.327 (+20)
+385 software list (+4), 86.630 software (-7/+54), 362 active SL (+3), 23 orphan SL (+1), 82.935 active software (-7/+50), 3.823 orphan software (+4), 56.022 software parents (+54), 30.608 software clones (-7)
+108.613 software roms (+50), 5.544 software CHD, supported software 50.754 (+74), partially supported software 549, Not Supported 35.327 (+20)
 
 3 active software-lists added:
 bbcb_de_cass (BBC Micro Model B (German) cassettes)
@@ -7706,8 +7879,8 @@ bbcb_cass               | treeknowg
 
 $0.165 [#604]
 2015/08/26
-381 Software List (+1), 86.583 software (+11) [359 active SL (+1), 22 orphan SL, 82.892 active software (+11), 3.819 orphan software (-2)], 55.968 SL parents (+12), 30.615 SL clones (-1)
-108.563 SL roms (+23), 5.544 SL CHD, Supported Software 50.680 (-35), Partially Supported Software 549 (+1), Unsupported Software 35.307 (-2)
+381 software list (+1), 86.583 software (+11), 359 active SL (+1), 22 orphan SL, 82.899 active software (+20), 3.819 orphan software (-2), 55.968 software parents (+12), 30.615 software clones (-1)
+108.563 software roms (+23), 5.544 software CHD, supported software 50.680 (-35), partially supported software 549 (+1), unsupported software 35.307 (-2)
 
 1 active software-list added:
 tntell (Touch & Tell modules)
@@ -7727,8 +7900,8 @@ gameking                | trojanla          > trojanl
 
 $0.164 [#603]
 2015/07/29
-380 Software List (+3), 86.572 software (-23/+167) [358 active SL (+2), 22 orphan SL, 82.881 active software (-23/+167), 3.819 orphan software], 55.956 SL parents (+152), 30.616 SL clones (-8)
-108.540 SL roms (+219), 5.544 SL CHD (+11), Supported Software 50.715 (+142), Partially Supported Software 548 (+4), Unsupported Software 35.309 (-2)
+380 software list (+3), 86.572 software (-23/+167), 358 active SL (+2), 22 orphan SL, 82.879 active software (-23/+20), 3.819 orphan software, 55.956 software parents (+152), 30.616 software clones (-8)
+108.540 software roms (+219), 5.544 software CHD (+11), supported software 50.715 (+142), partially supported software 548 (+4), unsupported software 35.309 (-2)
 
 3 active software-lists added:
 gameking3 (TimeTop GameKing 3 cartridges)
@@ -7784,8 +7957,8 @@ msx1_cart               | toobin
 
 $0.163 [#602]
 2015/06/24
-377 Software List (-1/+1), 86.428 software (-3/+29) [356 active SL (+1), 22 orphan SL, 82.737 active software (-3/+29), 3.819 orphan software (+1)], 55.804 SL parents (+14), 30.624 SL clones (+12)
-108.321 SL roms (+47), 5.533 SL CHD, Supported Software 50.573 (+88), Partially Supported Software 544 (+1), Unsupported Software 35.311 (-63)
+377 software list (-1/+1), 86.428 software (-3/+29), 356 active SL (+1), 22 orphan SL, 82.882 active software (-3/+173), 3.819 orphan software (+1), 55.804 software parents (+14), 30.624 software clones (+12)
+108.321 software roms (+47), 5.533 software CHD, supported software 50.573 (+88), partially supported software 544 (+1), unsupported software 35.311 (-63)
 
 1 active software-list added:
 i7000_card (Itautec I-7000 cartridges)
@@ -7823,10 +7996,10 @@ cgenie_cass             | monrom
 
 =====================================================================================================================================================================================================
 
-$0.162 [#601] [MESS merges with MAME and added the Software Lists]
+$0.162 [#601] [MESS merges with MAME and added the software lists]
 2015/05/27
-377 Software List (+377), 86.402 software (+86.402) [355 active SL (+355), 22 orphan SL (+22), 82.712 active software (+82.712), 3.818 orphan software (+3.818)], 55.790 SL parents (+55.790), 30.612 SL clones (+30.612)
-108.274 SL roms (+108.274), 5.533 SL CHD (+5.533), Supported Software 50.485, Partial Support 543, Not Supported 35.374
+377 software list (+377), 86.402 software (+86.402), 355 active SL (+355), 22 orphan SL (+22), 82.712 active software (+82.712), 3.818 orphan software (+3.818), 55.790 software parents (+55.790), 30.612 software clones (+30.612)
+108.274 software roms (+108.274), 5.533 software CHD (+5.533), supported software 50.485, Partial Support 543, Not Supported 35.374
 
 355 active software-lists added:
 32x (Sega 32X cartridges)
@@ -8210,4 +8383,4 @@ vsmile_cd (VTech V.Flash/V.Smile Pro V.Disc images)
 wicat (Millennium Systems Wicat)
 #
 #
-© 2020/2024 AntoPISA
+(C) 2020/2024 AntoPISA

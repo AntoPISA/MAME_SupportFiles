@@ -1,10 +1,11 @@
-MAME RENAMESET.dat 0.265 (May 24, 2024)
+MAME RENAMESET.dat 0.266 (Jun  5, 2024)
 (C) AntoPISA      www.progettoSNAPS.net
 ---------------------------------------
 
 WhatsNew:
 =========
-5.29 2024/00/00: Added 0.266 infos, also update all the other files.
+5.30 2024/06/05: Added 0.266 infos, also update all the other files.
+5.29 2024/05/30: Still many counts fixed or added.
 5.28 2024/05/24: Imported software list counts into the main file (renameSET_SL.dat will still be published at least for the time being). Added/fixed a lot of information.
 5.27 2024/05/17: Recalculated all third lines, from 0.200 to 0.265, those inherent in the various ROMs.
 5.26 2024/05/14: Added two more data: device-related rom counts and good dumps.
