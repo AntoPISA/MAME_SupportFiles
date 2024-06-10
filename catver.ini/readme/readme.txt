@@ -1,4 +1,4 @@
-MAME CATVER.ini 0.265 (Apr 30, 2024)
+MAME CATVER.ini 0.266 (Jun 10, 2024)
 (C) AntoPISA   www.progettoSNAPS.net
 ====================================
 
@@ -16,6 +16,7 @@ In this package you can find these ini files:
 
 WhatsNew:
 =========
+2024/06/10: Aligned files to MAME 0.266.
 2024/04/30: Aligned files to MAME 0.265.
 2024/04/01: Aligned files to MAME 0.264.
 2024/03/30: Fixed the genre and category of the games "Alien Storm," "Armored Warriors," "Wild Fang" and all their clones, suggested by a user.
