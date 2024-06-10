@@ -1,4 +1,4 @@
-MAME LANGUAGES.ini 0.265 (Apr 30, 2024)
+MAME LANGUAGES.ini 0.266 (Jun 10, 2024)
 (C) AntoPISA      www.progettoSNAPS.net
 =======================================
 
@@ -8,17 +8,17 @@ The file, extracted from the zip file, should be placed in the folder named 'Fol
 items  - Language
 =========================
     1  - Bulgarian
-   72  - Chinese
+   74  - Chinese
     5  - Croatian
     3  - Czech
   107  - Dutch
-31945  - English
+31973  - English
   148  - French
   303  - German
     4  - Greek
     5  - Hungarian
-  250  - Italian
- 2165  - Japanese
+  251  - Italian
+ 2168  - Japanese
     2  - Japanese/English
    98  - Korean
    15  - Latvian
@@ -27,73 +27,73 @@ items  - Language
    21  - Portuguese
   146  - Russian
     1  - Slovak
-  329  - Spanish
+  330  - Spanish
     1  - Swedish
     1  - Turkish
   139  - Ukrainian
 
-
 WhatsNew:
 ==================================
-2024/04/30 1.59: Added 0.265 sets.
-2024/04/01 1.58: Added 0.264 sets.
-2024/03/11 1.57: Added 0.263 sets.
-2024/02/26 1.56: Removed "Belgian" (it's not a language) replaced with "Dutch" where it was needed.
-2024/02/09 1.55: Added 0.262 sets. The files can also be found here https://github.com/AntoPISA/MAME_SupportFiles.
-2023/12/05 1.54: Added 0.261 sets.
-2023/11/01 1.53: Added 0.260 sets.
-2023/10/06 1.52: Added 0.259 sets.
-2023/09/05 1.51: Added 0.258 sets.
-2023/08/03 1.50: Added 0.257 sets.
-2023/07/06 1.49: Added 0.256 sets.
-2023/07/01 1.48: Made some corrections thanks to the reports sent to the site http://adb.arcadeitalia.net/ .
-2023/06/08 1.47: Added 0.255 sets.
-2023/05/05 1.46: Added 0.254 sets.
-2023/04/07 1.45: Added 0.253 sets.
-2023/03/06 1.44: Added 0.252 sets.
-2023/01/04 1.43: Added 0.251 sets.
-2022/12/08 1.42: Added 0.250 sets.
-2022/11/05 1.41: Added 0.249 sets.
-2022/10/06 1.40: Added 0.248 sets.
-2022/09/09 1.39: Added 0.247 sets.
-2022/08/06 1.38: Added 0.246 sets.
-2022/07/22 1.37: Added 0.245 sets.
-2022/05/31 1.36: Added 0.244 sets.
-2022/05/05 1.35: Added 0.243 sets.
-2022/04/07 1.34: Added 0.242 sets.
-2022/02/28 1.33: Added 0.241 sets.
-2022/02/08 1.32: Added 0.240 sets.
-2022/01/04 1.31: Added 0.239 sets.
-2021/11/27 1.30: Added 0.238 sets.
-2021/10/31 1.29: Added 0.237 sets.
-2021/10/03 1.28: Added 0.236 sets.
-2021/08/30 1.27: Added 0.235 sets.
-2021/08/02 1.26: Added 0.234 sets.
-2021/07/06 1.25: Added 0.233 sets.
-2021/06/02 1.24: Added 0.232 sets.
-2021/05/02 1.23: Added 0.231 sets.
-2021/04/05 1.22: Added 0.230 sets.
-2021/02/27 1.21: Added 0.229 sets.
-2021/02/05 1.20: Added 0.228 sets.
-2021/02/01 1.19: Added Bulgarian, Latvian and Ukrainian languages. 
-2021/01/13 1.18: Added 0.227 sets.
-2020/11/01 1.17: Added 0.226 sets.
-2020/10/07 1.16: Added 0.225 sets.
-2020/09/01 1.15: Added 0.224 sets.
-2020/07/14 1.14: Added 0.222 sets.
-2020/05/20 1.13: Added 0.221 sets.
-2020/04/07 1.12: Added 0.220 sets.
-2020/03/04 1.11: Added 0.219 sets.
-2020/02/21 1.10: Corrected the languages of dw2001, ejihon and hanagumi.
-2020/02/05 1.09: Added 0.218 sets.
-2020/01/27 1.08: Corrected the languages of topbladv, powyakex, semibase, killbldp and doncdoon, thanks to an another anonymous user.
-2020/01/09 1.07: Corrected the languages of bestri, bishi, dendego, dendego2, dendego23k, dendegox, driftout and rpatrol thanks to an anonymous user.
-2019/12/27 1.06: Added 0.217 sets.
-2019/11/30 1.05: Added 0.216 sets.
-2019/11/02 1.04: Added 0.215 sets.
-2019/09/28 1.03: Added 0.214 sets.
-2019/09/08 1.02: Added 0.213 sets.
-2019/08/05 1.01: Added 0.212 sets.
+2024/06/10: Added 0.266 sets.
+2024/04/30: Added 0.265 sets.
+2024/04/01: Added 0.264 sets.
+2024/03/11: Added 0.263 sets.
+2024/02/26: Removed "Belgian" (it's not a language) replaced with "Dutch" where it was needed.
+2024/02/09: Added 0.262 sets. The files can also be found here https://github.com/AntoPISA/MAME_SupportFiles.
+2023/12/05: Added 0.261 sets.
+2023/11/01: Added 0.260 sets.
+2023/10/06: Added 0.259 sets.
+2023/09/05: Added 0.258 sets.
+2023/08/03: Added 0.257 sets.
+2023/07/06: Added 0.256 sets.
+2023/07/01: Made some corrections thanks to the reports sent to the site http://adb.arcadeitalia.net/ .
+2023/06/08: Added 0.255 sets.
+2023/05/05: Added 0.254 sets.
+2023/04/07: Added 0.253 sets.
+2023/03/06: Added 0.252 sets.
+2023/01/04: Added 0.251 sets.
+2022/12/08: Added 0.250 sets.
+2022/11/05: Added 0.249 sets.
+2022/10/06: Added 0.248 sets.
+2022/09/09: Added 0.247 sets.
+2022/08/06: Added 0.246 sets.
+2022/07/22: Added 0.245 sets.
+2022/05/31: Added 0.244 sets.
+2022/05/05: Added 0.243 sets.
+2022/04/07: Added 0.242 sets.
+2022/02/28: Added 0.241 sets.
+2022/02/08: Added 0.240 sets.
+2022/01/04: Added 0.239 sets.
+2021/11/27: Added 0.238 sets.
+2021/10/31: Added 0.237 sets.
+2021/10/03: Added 0.236 sets.
+2021/08/30: Added 0.235 sets.
+2021/08/02: Added 0.234 sets.
+2021/07/06: Added 0.233 sets.
+2021/06/02: Added 0.232 sets.
+2021/05/02: Added 0.231 sets.
+2021/04/05: Added 0.230 sets.
+2021/02/27: Added 0.229 sets.
+2021/02/05: Added 0.228 sets.
+2021/02/01: Added Bulgarian, Latvian and Ukrainian languages. 
+2021/01/13: Added 0.227 sets.
+2020/11/01: Added 0.226 sets.
+2020/10/07: Added 0.225 sets.
+2020/09/01: Added 0.224 sets.
+2020/07/14: Added 0.222 sets.
+2020/05/20: Added 0.221 sets.
+2020/04/07: Added 0.220 sets.
+2020/03/04: Added 0.219 sets.
+2020/02/21: Corrected the languages of dw2001, ejihon and hanagumi.
+2020/02/05: Added 0.218 sets.
+2020/01/27: Corrected the languages of topbladv, powyakex, semibase, killbldp and doncdoon, thanks to an another anonymous user.
+2020/01/09: Corrected the languages of bestri, bishi, dendego, dendego2, dendego23k, dendegox, driftout and rpatrol thanks to an anonymous user.
+2019/12/27: Added 0.217 sets.
+2019/11/30: Added 0.216 sets.
+2019/11/02: Added 0.215 sets.
+2019/09/28: Added 0.214 sets.
+2019/09/08: Added 0.213 sets.
+2019/08/05: Added 0.212 sets.
 2019/07/06 1.00: Added 0.211 sets.
 2019/06/09 0.99: Added 0.210 sets; fixed all "Touchmaster" sets.
 2019/04/27 0.98: Added 0.209 sets.
