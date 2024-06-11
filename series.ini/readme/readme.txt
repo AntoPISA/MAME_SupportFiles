@@ -1,4 +1,4 @@
-MAME SERIES.ini 0.265 (Apr 30, 2024)
+MAME SERIES.ini 0.266 (Jun 11, 2024)
 © AntoPISA     www.progettoSNAPS.net
 ==================================== 
 
@@ -10,12 +10,18 @@ From 0.162 version, the file deals only for arcade sets. From the 0.177 version 
 and verification of the .ini files, created by motoschifo. Many thanks to Alexis B. of https://www.arcade-history.com/. 
 
 
+WhatsNew 0.266 (10.06.2024) (715 supported Series):
+=====================================================
+Items RENAMED (12): (avengers) to (avengersa), (avengersa) to (avengersb), (avengersb) to (avengersc), (avengersc) to (avengers), (ddragon) to (ddragonj), (ddragon2b) to (ddragon2bl), (ddragonb) to (ddragonbl), (ddragonb2) to (ddragonbl2), (ddragonba) to (ddragonbla), (ddragonw) to (ddragon), (ddragonw1) to (ddragona) and (zerotimeu) to (zerotimea)
+Series NEW (1): New DongmulDongmul.
+Series UPDATED (5): Double Dragon, Galaxian, Pac-Man, Tetris and Video Hustler.
+
+
 WhatsNew 0.265 (30.04.2024) (714 supported Series):
 =====================================================
 Items RENAMED (1): (galgame4) to (galgame4p).
 Series NEW (2): Mahjong Gekisha and Mahjong Reach.
 Series UPDATED (2): Cal Omega and Pac-Man.
-
 
 WhatsNew 0.264 (01.04.2024) (712 supported Series):
 =====================================================
