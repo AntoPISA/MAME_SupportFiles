@@ -1,9 +1,10 @@
-MAME RENAMESET.dat 0.267 (Jul  7, 2024)
+MAME RENAMESET.dat 0.267 (Jul 13, 2024)
 (C) AntoPISA      www.progettoSNAPS.net
 ---------------------------------------
 
 WhatsNew:
 =========
+5.33 2024/07/13: Revised and corrected version counts from 0.125 to 0.150.
 5.32 2024/07/07: Added 0.267 infos, also update all the other files.
 5.31 2024/06/05: Removed the rename blockages.
 5.30 2024/06/05: Added 0.266 infos, also update all the other files.
