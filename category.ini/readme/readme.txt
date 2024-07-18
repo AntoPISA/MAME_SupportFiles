@@ -1,4 +1,4 @@
-MAME CATEGORY.ini 0.266 (Jun 10, 2024)
+MAME CATEGORY.ini 0.267 (Jul 18, 2024)
 © AntoPISA       www.progettoSNAPS.net
 ======================================
 
@@ -36,6 +36,7 @@ These files must be copied to the directory called "folders" of your MAME.
 
 WhatsNew:
 =========
+2024/07/18: Aligned files to MAME 0.267.
 2024/06/10: Aligned files to MAME 0.266.
 2024/04/30: Aligned files to MAME 0.265.
 2024/04/01: Aligned files to MAME 0.264.

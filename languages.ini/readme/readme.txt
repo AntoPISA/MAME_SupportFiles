@@ -1,4 +1,4 @@
-MAME LANGUAGES.ini 0.266 (Jun 10, 2024)
+MAME LANGUAGES.ini 0.267 (Jul 18, 2024)
 (C) AntoPISA      www.progettoSNAPS.net
 =======================================
 
@@ -12,13 +12,13 @@ items  - Language
     5  - Croatian
     3  - Czech
   107  - Dutch
-31973  - English
+32002  - English
   148  - French
   303  - German
     4  - Greek
     5  - Hungarian
-  251  - Italian
- 2168  - Japanese
+  252  - Italian
+ 2172  - Japanese
     2  - Japanese/English
    98  - Korean
    15  - Latvian
@@ -27,13 +27,14 @@ items  - Language
    21  - Portuguese
   146  - Russian
     1  - Slovak
-  330  - Spanish
+  331  - Spanish
     1  - Swedish
     1  - Turkish
   139  - Ukrainian
 
 WhatsNew:
 ==================================
+2024/07/18: Added 0.267 sets.
 2024/06/10: Added 0.266 sets.
 2024/04/30: Added 0.265 sets.
 2024/04/01: Added 0.264 sets.

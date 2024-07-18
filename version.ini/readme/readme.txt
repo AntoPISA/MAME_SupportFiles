@@ -1,5 +1,5 @@
-MAME VERSION.ini 0.266 (Jun 10, 2024)
-© AntoPISA      www.progettoSNAPS.net
+ï»¿MAME VERSION.ini 0.267 (Jul 18, 2024)
+Â© AntoPISA      www.progettoSNAPS.net
 =====================================
 
 ReadMe:
@@ -12,6 +12,7 @@ In this package you can find these ini files:
 
 WhatsNew:
 =========
+2024/07/18: Aligned to MAME 0.267.
 2024/06/10: Aligned to MAME 0.266.
 2024/04/30: Aligned to MAME 0.265.
 2024/04/01: Aligned to MAME 0.264.
@@ -141,4 +142,4 @@ WhatsNew:
 2015/01/05: Complete overhaul of the old file.
 
 
-© 2015/2024 AntoPISA
+Â© 2015/2024 AntoPISA
