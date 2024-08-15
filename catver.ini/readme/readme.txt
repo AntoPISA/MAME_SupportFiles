@@ -1,4 +1,4 @@
-﻿MAME CATVER.ini 0.267 (Jul 18, 2024)
+﻿MAME CATVER.ini 0.268 (Aug 15, 2024)
 (C) AntoPISA   www.progettoSNAPS.net
 ====================================
 
@@ -16,6 +16,8 @@ In this package you can find these ini files:
 
 WhatsNew:
 =========
+2024/08/15: Aligned files to MAME 0.268.
+2024/08/05: Changed the name of the category "Casino" to "Gambling."
 2024/07/18: Aligned files to MAME 0.267.
 2024/06/10: Aligned files to MAME 0.266.
 2024/04/30: Aligned files to MAME 0.265.
