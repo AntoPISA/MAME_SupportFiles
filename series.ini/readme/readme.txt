@@ -1,4 +1,4 @@
-﻿MAME SERIES.ini 0.267 (Jul 18, 2024)
+﻿MAME SERIES.ini 0.268 (Aug 15, 2024)
 © AntoPISA     www.progettoSNAPS.net
 ==================================== 
 
@@ -10,12 +10,19 @@ From 0.162 version, the file deals only for arcade sets. From the 0.177 version 
 and verification of the .ini files, created by motoschifo. Many thanks to Alexis B. of https://www.arcade-history.com/. 
 
 
+WhatsNew 0.268 (15.08.2024) (718 supported Series):
+=====================================================
+Items RENAMED (1): (missw02) to (missw02d).
+Items REMOVED (4): (p911ea), (thrild2ab), (thrild2ac) and (wcombatb).
+Series UPDATED 6): Battle Gear, Miss World, Police 24/7, Pop'n Music, Thrill Drive and World Combat.
+Series NEW (1): Crazy Bugs.
+
+
 WhatsNew 0.267 (18.07.2024) (717 supported Series):
 =====================================================
 Items RENAMED (10): (gtmr2u) to (gtmr2ua), (matchit) to (matchitb), (shisen) to (shisena), (othunderuo) to (othunderua), (lkageb) to (lkagebl1), (lkageb2) to (lkagebl2), (lkageb3) to (lkagebl3), (lkageb4) to (lkagebl4), (lkageo) to (lkagea) and (lkageo2) to (lkageb).
 Series NEW (2): Cherry Bonus and Cherry Master.
 Series UPDATED (9): Asteroids, Great 1000 Miles Rally, Match It, Operation Wolf, Pac-Man, Phoenix, Print Club, The Legend of Kage and Trivia.
-
 
 WhatsNew 0.266 (10.06.2024) (715 supported Series):
 =====================================================
