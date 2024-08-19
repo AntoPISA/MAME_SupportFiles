@@ -1,5 +1,5 @@
 #     ===========================================================
-#     MAME RENAMESET.DAT v0.268  Latest update:    August 5, 2024
+#     MAME RENAMESET.DAT v0.268  Latest update:   August 19, 2024
 #     ===========================================================
 #
 #     Home-page: https://www.progettosnaps.net/renameset/
@@ -16,10 +16,10 @@
 #               M.A.S.H. for "mameinfo.dat"
 #               motoschifo for "ADB Tool", "ProgettoSnaps Tool" and for the constant support!
 #
-#               Internal Version 5.34
+#               Internal Version 5.35
 #
 #       746 removed machines/devices overall in the history of MAME
-#     6.530 renamed machines/devices overall in the history of MAME
+#     6.531 renamed machines/devices overall in the history of MAME
 #
 #     GENERAL OVERHAUL: 0.001 > 0.070 and 0.125 > 0.268 verify completed
 #                       0.100 > 0.124u5 .............. check in progress
@@ -32,7 +32,7 @@ $0.268 [#707]
 352.900 total roms (+539), 349.585 machines roms (+508), 2.694 devices roms (+31), 621 BIOSes roms, 1.333 CHDs (+5), 595 sample files, 77 sample packs, 343.755 good dumps (+472), 5.817 no dumps (+37), 4.661 bad dumps (+35), 2 bugs fixed
 708 software list (+2), 138.242 software (-3/+174), 697 software list (+1), 11 orphan SL (+1), 137.481 active software (-3/+173), 761 orphan software (+1), 95.382 software parents (+160), 42.860 software clones (+11)
 234.346 software roms (+350), 11.144 software CHD (+1), 97.745 supported software (+137), 1.791 partially supported software (+12), 38.706 unsupported software (+22)
-24 ren (23/1/0):
+25 ren (24/1/0):
 crzybugs         > crzybugsj           (mID: 46830)
 diamond          > diamrun             (mID:   113)
 dodgectya        > dodgectyba          (mID: 26496)
@@ -53,7 +53,8 @@ mephisto2e       > mephistoe2          (mID: 41154)
 missilea         > missilebl           (mID: 37547)
 missw02          > missw02d            (mID: 37364)
 mj1              > mj1b                (mID: 40716)
-mm1b             > mm1a                (mID: 41058)
+mm1              > mm1a                (mID: 41057)
+mm1b             > mm1                 (mID: 41058)
 monzagpb         > monzagpa            (mID: 28566)
 powb             > powbl               (mID: 43195)
 unkmerit         > msupstar            (mID: 46754)
@@ -684,22 +685,22 @@ $0.249 [#688]
 678 software list (+4), 134.011 software (+4), 668 active SL (+4), 10 orphan SL, 133.251 active software (+174), 760 orphan software, 92.359 software parents (+125), 41.652 software clones (+49)
 228.446 software roms (+233), 10.813 software CHD (+22), 95.997 supported software (+32), 1.491 partially supported software (+24), 36.523 unsupported software (+118)
 9 ren (7/2/0):
-arm_le        > arm_cpu
-bosco         > bosco3
-boscoo        > bosco1
-boscoo2       > bosco1o
-ktiger        > ktigera
-pitbossma     > pitbossmb
-pitbossm      > pitbossma
-primrage      > primrageo
-qx10_keyboard > qx10_keyboard_ascii
+arm_le        > arm_cpu                (mID: 31125)
+bosco         > bosco3                 (mID: 42505)
+boscoo        > bosco1                 (mID:   229)
+boscoo2       > bosco1o                (mID:  2093)
+ktiger        > ktigera                (mID:   668)
+pitbossma     > pitbossmb              (mID:  6408)
+pitbossm      > pitbossma              (mID:  8302)
+primrage      > primrageo              (mID:  3366)
+qx10_keyboard > qx10_keyboard_ascii    (mID: 34099)
 6 del (0/6/0):
-a2diskii
-iwml
-apple_fdcl
-arm_be
-floppy_apple
-fscpu32
+a2diskii                               (mID: 30833)
+iwml                                   (mID: 31082)
+apple_fdcl                             (mID: 31082)
+arm_be                                 (mID: 37637)
+floppy_apple                           (mID: 32000)
+fscpu32                                (mID: 37715)
 
 
 $0.248 [#687]
@@ -710,28 +711,28 @@ $0.248 [#687]
 674 software list (-1/+1), 133.837 software (-28/+66), 664 active SL (+1), 10 orphan SL (-1), 133.077 active software (+66), 760 orphan software (-28), 92.234 software parents (+22), 41.603 software clones (+16)
 228.213 software roms (+88), 10.813 software CHD (-25), 95.965 supported software (+801), 1.467 partially supported software (+21), 36.405 unsupported software (+4)
 13 ren (12/1/0):
-ddr2mla       > ddr2mlb
-ddr2ml        > ddr2mla
-drmn9m        > drmn9ma
-fscc12b       > fscc12a
-gtgt          > gtgt20
-gtgt1         > gtgt10
-n2a03         > rp2a03
-n2a03_core    > rp2a03_core
-nf_10         > nf_10f
-pcnfrk10m     > pcnfrk10ma
-pcnfrk9m      > pcnfrk9ma
-sblast2ba     > tmntmwb
-tgpachi       > slepachi
+ddr2mla       > ddr2mlb                (mID: 00000)
+ddr2ml        > ddr2mla                (mID: 00000)
+drmn9m        > drmn9ma                (mID: 00000)
+fscc12b       > fscc12a                (mID: 00000)
+gtgt          > gtgt20                 (mID: 00000)
+gtgt1         > gtgt10                 (mID: 00000)
+n2a03         > rp2a03                 (mID: 00000)
+n2a03_core    > rp2a03_core            (mID: 00000)
+nf_10         > nf_10f                 (mID: 00000)
+pcnfrk10m     > pcnfrk10ma             (mID: 00000)
+pcnfrk9m      > pcnfrk9ma              (mID: 00000)
+sblast2ba     > tmntmwb                (mID: 00000)
+tgpachi       > slepachi               (mID: 00000)
 8 del (2/6/0):
-floppy_sonny
-gb_rom_188in1
-gb_rom_atvrac
-gb_rom_mbc7
-gb_sm3sp
-m82p
-n2a03_core_swap_op_d5_d6
-sfrusha
+floppy_sonny                           (mID: 32001)
+gb_rom_188in1                          (mID: 32077)
+gb_rom_atvrac                          (mID: 32078)
+gb_rom_mbc7                            (mID: 32090)
+gb_sm3sp                               (mID: 32099)
+m82p                                   (mID: 37808)
+n2a03_core_swap_op_d5_d6               (mID: 43264)
+sfrusha                                (mID: 37965)
 
 
 $0.247 [#686]
@@ -742,32 +743,32 @@ $0.247 [#686]
 674 software list (+4), 133.799 software (-1/+320), 663 active SL (+4), 11 orphan SL, 133.011 active software (-1/+299), 788 orphan software (+21), 92.212 software parents (+245), 41.587 software clones (+48)
 228.125 software roms (+1397), 10.838 software CHD (+62), 95.915 supported software (+308), 1.446 partially supported software, 36.438 unsupported software (+11)
 22 ren (21/1/0):
-axc51core     > ax208p
-cmtetrsa      > cmtetrisa
-cmtetrsb      > cmtetrisb
-cmtetrsc      > cmtetrisc
-cmtetrsd      > cmtetrisd
-danceyes      > danceyesu
-j_ewsbl       > j_supsh
-lantutor      > lantransp
-magicarda     > magicrd1a
-magicardb     > magicrd1b
-magicarde     > magicrde
-magicardea    > magicrdea
-magicardeb    > magicrdec
-magicardec    > magicrdj
-magicardf     > magicrdeb
-magicardj     > magicrdja
-magicardw     > magicrd1c
-pjustic       > pjustica
-spellb79      > spellba
-unkpkr_w      > magicrd1d
-unkte06       > magicrd1
-zulu          > zoo
+axc51core     > ax208p                 (mID: 00000)
+cmtetrsa      > cmtetrisa              (mID: 00000)
+cmtetrsb      > cmtetrisb              (mID: 00000)
+cmtetrsc      > cmtetrisc              (mID: 00000)
+cmtetrsd      > cmtetrisd              (mID: 00000)
+danceyes      > danceyesu              (mID: 00000)
+j_ewsbl       > j_supsh                (mID: 00000)
+lantutor      > lantransp              (mID: 00000)
+magicarda     > magicrd1a              (mID: 00000)
+magicardb     > magicrd1b              (mID: 00000)
+magicarde     > magicrde               (mID: 00000)
+magicardea    > magicrdea              (mID: 00000)
+magicardeb    > magicrdec              (mID: 00000)
+magicardec    > magicrdj               (mID: 00000)
+magicardf     > magicrdeb              (mID: 00000)
+magicardj     > magicrdja              (mID: 00000)
+magicardw     > magicrd1c              (mID: 00000)
+pjustic       > pjustica               (mID: 00000)
+spellb79      > spellba                (mID: 00000)
+unkpkr_w      > magicrd1d              (mID: 00000)
+unkte06       > magicrd1               (mID: 00000)
+zulu          > zoo                    (mID: 00000)
 3 del (3/0/0):
-m3nudge
-m3winagna
-merlina
+m3nudge                                (mID: 11356)
+m3winagna                              (mID: 11394)
+merlina                                (mID: 44864)
 
 
 $0.246 [#685]
@@ -778,26 +779,26 @@ $0.246 [#685]
 670 software list (+1), 133.480 software (-1/+198), 659 active SL (+1), 11 orphan SL, 132.713 active software (-1/+198), 767 orphan software, 91.967 software parents (+147), 41.513 software clones (+50)
 226.728 software roms (+907), 10.776 software CHD (+9), 95.607 supported software (+178), 1.446 partially supported software (-1), 36.427 unsupported software (+20)
 13 ren (10/3/0):
-avengers       > avengersc
-avengers2      > avengersa
-dac_2bit_bw_oc > dac_2bit_oc
-m4jok300       > m4jok300a
-m4jokmil       > m4jok300
-m4remag        > m4tbplayd
-m4rmg          > m4tbplayc
-marukin        > marukina
-seta001        > x1_001
-prtchess       > scptchessa
-totcarnp       > totcarnp1
-unkm1          > carboule
-vcs_2k         > vcs_2k_4k
+avengers       > avengersc             (mID: 00000)
+avengers2      > avengersa             (mID: 00000)
+dac_2bit_bw_oc > dac_2bit_oc           (mID: 00000)
+m4jok300       > m4jok300a             (mID: 00000)
+m4jokmil       > m4jok300              (mID: 00000)
+m4remag        > m4tbplayd             (mID: 00000)
+m4rmg          > m4tbplayc             (mID: 00000)
+marukin        > marukina              (mID: 00000)
+seta001        > x1_001                (mID: 00000)
+prtchess       > scptchessa            (mID: 00000)
+totcarnp       > totcarnp1             (mID: 00000)
+unkm1          > carboule              (mID: 00000)
+vcs_2k         > vcs_2k_4k             (mID: 00000)
 6 del (4/2/0):
-dac_4bit_bw_sm
-m4blkbuld
-m4casot
-m4jpmcla
-m4tridic
-vcs_4k
+dac_4bit_bw_sm                         (mID: 37122)
+m4blkbuld                              (mID: 11478)
+m4casot                                (mID: 11518)
+m4jpmcla                               (mID: 11698)
+m4tridic                               (mID: 11934)
+vcs_4k                                 (mID: 34905)
 
 
 $0.245 [#684]
@@ -808,234 +809,235 @@ $0.245 [#684]
 669 software list (+1), 133.283 software (-3/+580), 658 active SL (+1), 11 orphan SL, 132.516 active software (-3/+580), 767 orphan software, 91.820 software parents (+450), 41.463 software clones (+127)
 225.821 software roms (+3311), 10.767 software CHD (+1), 95.429 supported software (+468), 1.447 partially supported software (+38), 36.407 unsupported software (+71)
 222 ren (218/4/0):
-andretti    > andretti0
-andretti4   > andretti
-butrfly     > butrflybl
-cueball2    > cueballa
-cueball3    > cueballb
-deco_back06 > deco_bac06
-doaab       > doaae
-europc_keyb > europc_kbd
-freddy      > freddy3
-freddy4     > freddy
-gokidetor   > cucaracha
-gokidetor2  > cucaracha2
-j_ews       > j_ewsb
-j_ews8a     > j_ews
-j_luck2     > j_lt
-j_luckac    > j_la
-j_unk       > j_ewnc
-m4addrc__e  > m4nnww2__hx3
-m4addrc__f  > m4nnww2__hx4
-m4addrc__n  > m4nnww2__hx5
-m4c9__a0    > m4c999e
-m4c9__a1    > m4c999f
-m4c9__a2    > m4c999g
-m4c9__a3    > m4c999h
-m4c9__ay    > m4c999i
-m4c9__az    > m4c999j
-m4c9__n     > m4c999
-m4c999      > m4c999c
-m4c999a     > m4c999d
-m4c999b     > m4c999a
-m4c999c     > m4c999b
-m4centpt    > m4swpnotb
-m4centpta   > m4centpt
-m4ch30      > m4nnww__ay
-m4cld02     > m4rhrc__9
-m4crzjwl    > m4crzjwle
-m4crzjwle   > m4crzjwl
-m4crzjwlh   > m4cjdlx
-m4csoc      > m4csoc__j
-m4csoc__a   > m4csoc
-m4csoc__b   > m4csoc__a
-m4csoc__c   > m4csoc__b
-m4csoc__d   > m4csoc__c
-m4csoc__e   > m4csoc__d
-m4csoc__f   > m4csoc__e
-m4csoc__j   > m4csoc__f
-m4eaw__bz   > m4eaw51
-m4exotic    > m4exotic__c
-m4exotic__a > m4exotic
-m4exotic__b > m4exotic__a
-m4exotic__c > m4exotic__b
-m4hvhel__f  > m4hvhel__g
-m4hvhel__g  > m4hvhel__h
-m4hvhel__h  > m4hvhel__f
-m4hypvip    > m4shv
-m4hypvip__a > m4shv__q
-m4hypvip__b > m4shv__g
-m4hypvip__c > m4shv__b
-m4hypvip__d > m4shv__c
-m4hypvip__e > m4shv__a
-m4hypvip__f > m4shv__d
-m4hypvip__g > m4shv__0
-m4hypvip__h > m4shv__1
-m4hypvip__i > m4shv__6
-m4hypvip__j > m4shv__7
-m4hypvip__k > m4shv__10
-m4hypvip__l > m4shv__h
-m4hypvip__m > m4shv__r
-m4hypvip__n > m4shv__f
-m4hypvip__o > m4shv__2
-m4hypvip__p > m4shv__3
-m4hypvip__q > m4shv__5
-m4hypvip__r > m4shv__9
-m4hypvip__s > m4shv__11
-m4hypvip__t > m4shv__4
-m4hypvip__u > m4shv__8
-m4hypvip__v > m4shv__12
-m4indycr__a > m4indycr__e
-m4indycr__b > m4indycr__a
-m4indycr__c > m4indycr__b
-m4indycr__d > m4indycr__f
-m4indycr__e > m4indycr__c
-m4indycr__f > m4indycr__d
-m4montez    > m4przmc__g
-m4nnww__0   > m4nnww2__c
-m4nnww__1   > m4nnww2__d
-m4nnww__2   > m4nnww2__e
-m4nnww__3   > m4nnww2__f
-m4nnww__4   > m4nnww2__g
-m4nnww__5   > m4nnww2__h
-m4nnww__6   > m4nnww2__i
-m4nnww__7   > m4nnww2
-m4nnww__8   > m4nnww2__j
-m4nnww__as  > m4nnww2__o
-m4nnww__at  > m4nnww2__k
-m4nnww__au  > m4nnww2__l
-m4nnww__av  > m4nnww2__m
-m4nnww__aw  > m4nnww2__n
-m4nnww__ay  > m4nnww2__hx1
-m4nnww__az  > m4nnww2__hx2
-m4nnww__y   > m4nnww2__a
-m4nnww__z   > m4nnww2__b
-m4przmon__0 > m4przmc__q
-m4przmon__1 > m4przmc__s
-m4przmon__q > m4przmc__h
-m4przmon__r > m4przmc__p
-m4przmon__s > m4przmc__i
-m4przmon__t > m4przmc__j
-m4przmon__u > m4przmc__k
-m4przmon__v > m4przmc__l
-m4przmon__w > m4przmc__r
-m4przmon__x > m4przmc__m
-m4przmon__y > m4przmc__n
-m4przmon__z > m4przmc__o
-m4ra__r     > m4redunk
-m4rackem    > m4rackem__a
-m4rackem__a > m4rackem
-m4rhr__9    > m4supst__b7
-m4ssclas__f > m4supst__b6
-m4sss       > m4przsss__1
-m4sss__a    > m4sss
-m4suphv     > m4shv__e
-m4suphv__a  > m4shv__i
-m4suphv__b  > m4shv__s
-m4suphv__c  > m4shv__x
-m4suphv__d  > m4shv__j
-m4suphv__e  > m4shv__t
-m4suphv__f  > m4shv__y
-m4suphv__g  > m4shv__k
-m4suphv__h  > m4shv__u
-m4suphv__i  > m4shv__l
-m4suphv__j  > m4shv__m
-m4suphv__k  > m4shv__v
-m4suphv__l  > m4shv__n
-m4suphv__m  > m4shv__w
-m4suphv__n  > m4shv__z
-m4suphv__o  > m4shv__o
-m4suphv__p  > m4shv__p
-m4supscr    > m4supscr__n
-m4supscr__a > m4supscr
-m4supscr__b > m4supscr__a
-m4supscr__c > m4supscr__b
-m4supscr__d > m4supscr__c
-m4supscr__e > m4supscr__d
-m4supscr__f > m4supscr__e
-m4supscr__g > m4supscr__f
-m4supscr__h > m4supscr__g
-m4supscr__i > m4supscr__h
-m4supscr__j  > m4supscr__i
-m4supscr__k  > m4supscr__j
-m4supscr__l  > m4supscr__k
-m4supscr__m  > m4supscr__l
-m4supscr__n  > m4supscr__m
-m4tutfrt__a0 > m4tutbwb_e
-m4tutfrt__a1 > m4tutbwb_f
-m4tutfrt__a2 > m4tutbwb_g
-m4tutfrt__a3 > m4tutbwb_h
-m4tutfrt__a4 > m4tutbwb_i
-m4tutfrt__a5 > m4tutbwb_j
-m4tutfrt__av > m4tutbwb
-m4tutfrt__aw > m4tutbwb_a
-m4tutfrt__ax > m4tutbwb_b
-m4tutfrt__ay > m4tutbwb_c
-m4tutfrt__az > m4tutbwb_d
-m4vivalv     > m4vivalv__z
-m4vivalv__0  > m4vivalv__l
-m4vivalv__1  > m4vivalv__m
-m4vivalv__2  > m4vivalv__n
-m4vivalv__3  > m4vivalv__o
-m4vivalv__4  > m4vivalv__p
-m4vivalv__5  > m4vivalv__q
-m4vivalv__6  > m4vivalv__r
-m4vivalv__7  > m4vivalv__s
-m4vivalv__8  > m4vivalv__t
-m4vivalv__9  > m4vivalv__h
-m4vivalv__a  > m4vivalv__i
-m4vivalv__b  > m4vegast__0
-m4vivalv__c  > m4vegast__1
-m4vivalv__e  > m4vivalv__0
-m4vivalv__f  > m4vivalv__1
-m4vivalv__g  > m4vivalv__u
-m4vivalv__h  > m4vivalv__v
-m4vivalv__i  > m4vivalv__2
-m4vivalv__j  > m4vivalv__3
-m4vivalv__k  > m4vivalv__4
-m4vivalv__l  > m4vivalv__5
-m4vivalv__m  > m4vivalv__6
-m4vivalv__n  > m4vivalv__w
-m4vivalv__o  > m4vivalv__x
-m4vivalv__p  > m4vivalv__y
-m4vivalv__q  > m4vivalv__a
-m4vivalv__r  > m4vivalv__b
-m4vivalv__s  > m4vivalv__c
-m4vivalv__t  > m4vivalv__d
-m4vivalv__u  > m4vivalv__e
-m4vivalv__v  > m4vivalv__f
-m4vivalv__w  > m4vivalv
-m4vivalv__x  > m4vivalv__g
-m4vivalv__y  > m4vivalv__j
-m4vivalv__z  > m4vivalv__k
-m4xtrm       > m4xtrm__b
-m4xtrm__b    > m4xtrm
-nb_48gc      > nb_mdc48
-nb_824gc     > nb_mdc824
-pongf        > pong
-prospdp      > dibifpspdp
-samurai      > samuraij
-sekaikh      > sekaikha
-sfight2      > sfightii
-sfight2a     > sfightiia
-sfight2b     > sfightiib
-smb          > smbp
-smb1         > smbpa
-smb2         > smbpb
-smb3         > smbpc
-stargatp     > stargatp0
-stargatp5    > stargatp
-supstarf     > supstarfa
-teedoffp     > teedoffp0
-teedoffp3    > teedoffp
-unkigs       > cpoker2
-wcsoccerd2   > wcsoccer1a
+andretti       > andretti0             (mID: 00000)
+andretti4      > andretti              (mID: 00000)
+butrfly        > butrflybl             (mID: 00000)
+cueball2       > cueballa              (mID: 00000)
+cueball3       > cueballb              (mID: 00000)
+deco_back06    > deco_bac06            (mID: 00000)
+doaab          > doaae                 (mID: 00000)
+europc_keyb    > europc_kbd            (mID: 00000)
+freddy         > freddy3               (mID: 00000)
+freddy4        > freddy                (mID: 00000)
+gokidetor      > cucaracha             (mID: 00000)
+gokidetor2     > cucaracha2            (mID: 00000)
+j_ews          > j_ewsb                (mID: 00000)
+j_ews8a        > j_ews                 (mID: 00000)
+j_luck2        > j_lt                  (mID: 00000)
+j_luckac       > j_la                  (mID: 00000)
+j_unk          > j_ewnc                (mID: 00000)
+m4addrc__e     > m4nnww2__hx3          (mID: 00000)
+m4addrc__f     > m4nnww2__hx4          (mID: 00000)
+m4addrc__n     > m4nnww2__hx5          (mID: 00000)
+m4c9__a0       > m4c999e               (mID: 00000)
+m4c9__a1       > m4c999f               (mID: 00000)
+m4c9__a2       > m4c999g               (mID: 00000)
+m4c9__a3       > m4c999h               (mID: 00000)
+m4c9__ay       > m4c999i               (mID: 00000)
+m4c9__az       > m4c999j               (mID: 00000)
+m4c9__n        > m4c999                (mID: 00000)
+m4c999         > m4c999c               (mID: 00000)
+m4c999a        > m4c999d               (mID: 00000)
+m4c999b        > m4c999a               (mID: 00000)
+m4c999c        > m4c999b               (mID: 00000)
+m4centpt       > m4swpnotb             (mID: 00000)
+m4centpta      > m4centpt              (mID: 00000)
+m4ch30         > m4nnww__ay            (mID: 00000)
+m4cld02        > m4rhrc__9             (mID: 00000)
+m4crzjwl       > m4crzjwle             (mID: 00000)
+m4crzjwle      > m4crzjwl              (mID: 00000)
+m4crzjwlh      > m4cjdlx               (mID: 00000)
+m4csoc         > m4csoc__j             (mID: 00000)
+m4csoc__a      > m4csoc                (mID: 00000)
+m4csoc__b      > m4csoc__a             (mID: 00000)
+m4csoc__c      > m4csoc__b             (mID: 00000)
+m4csoc__d      > m4csoc__c             (mID: 00000)
+m4csoc__e      > m4csoc__d             (mID: 00000)
+m4csoc__f      > m4csoc__e             (mID: 00000)
+m4csoc__j      > m4csoc__f             (mID: 00000)
+m4eaw__bz      > m4eaw51               (mID: 00000)
+m4exotic       > m4exotic__c           (mID: 00000)
+m4exotic__a    > m4exotic              (mID: 00000)
+m4exotic__b    > m4exotic__a           (mID: 00000)
+m4exotic__c    > m4exotic__b           (mID: 00000)
+m4hvhel__f     > m4hvhel__g            (mID: 00000)
+m4hvhel__g     > m4hvhel__h            (mID: 00000)
+m4hvhel__h     > m4hvhel__f            (mID: 00000)
+m4hypvip       > m4shv                 (mID: 00000)
+m4hypvip__a    > m4shv__q              (mID: 00000)
+m4hypvip__b    > m4shv__g              (mID: 00000)
+m4hypvip__c    > m4shv__b              (mID: 00000)
+m4hypvip__d    > m4shv__c              (mID: 00000)
+m4hypvip__e    > m4shv__a              (mID: 00000)
+m4hypvip__f    > m4shv__d              (mID: 00000)
+m4hypvip__g    > m4shv__0              (mID: 00000)
+m4hypvip__h    > m4shv__1              (mID: 00000)
+m4hypvip__i    > m4shv__6              (mID: 00000)
+m4hypvip__j    > m4shv__7              (mID: 00000)
+m4hypvip__k    > m4shv__10             (mID: 00000)
+m4hypvip__l    > m4shv__h              (mID: 00000)
+m4hypvip__m    > m4shv__r              (mID: 00000)
+m4hypvip__n    > m4shv__f              (mID: 00000)
+m4hypvip__o    > m4shv__2              (mID: 00000)
+m4hypvip__p    > m4shv__3              (mID: 00000)
+m4hypvip__q    > m4shv__5              (mID: 00000)
+m4hypvip__r    > m4shv__9              (mID: 00000)
+m4hypvip__s    > m4shv__11             (mID: 00000)
+m4hypvip__t    > m4shv__4              (mID: 00000)
+m4hypvip__u    > m4shv__8              (mID: 00000)
+m4hypvip__v    > m4shv__12             (mID: 00000)
+m4indycr__a    > m4indycr__e           (mID: 00000)
+m4indycr__b    > m4indycr__a           (mID: 00000)
+m4indycr__c    > m4indycr__b           (mID: 00000)
+m4indycr__d    > m4indycr__f           (mID: 00000)
+m4indycr__e    > m4indycr__c           (mID: 00000)
+m4indycr__f    > m4indycr__d           (mID: 00000)
+m4montez       > m4przmc__g            (mID: 00000)
+m4nnww__0      > m4nnww2__c            (mID: 00000)
+m4nnww__1      > m4nnww2__d            (mID: 00000)
+m4nnww__2      > m4nnww2__e            (mID: 00000)
+m4nnww__3      > m4nnww2__f            (mID: 00000)
+m4nnww__4      > m4nnww2__g            (mID: 00000)
+m4nnww__5      > m4nnww2__h            (mID: 00000)
+m4nnww__6      > m4nnww2__i            (mID: 00000)
+m4nnww__7      > m4nnww2               (mID: 00000)
+m4nnww__8      > m4nnww2__j            (mID: 00000)
+m4nnww__as     > m4nnww2__o            (mID: 00000)
+m4nnww__at     > m4nnww2__k            (mID: 00000)
+m4nnww__au     > m4nnww2__l            (mID: 00000)
+m4nnww__av     > m4nnww2__m            (mID: 00000)
+m4nnww__aw     > m4nnww2__n            (mID: 00000)
+m4nnww__ay     > m4nnww2__hx1          (mID: 00000)
+m4nnww__az     > m4nnww2__hx2          (mID: 00000)
+m4nnww__y      > m4nnww2__a            (mID: 00000)
+m4nnww__z      > m4nnww2__b            (mID: 00000)
+m4przmon__0    > m4przmc__q            (mID: 00000)
+m4przmon__1    > m4przmc__s            (mID: 00000)
+m4przmon__q    > m4przmc__h            (mID: 00000)
+m4przmon__r    > m4przmc__p            (mID: 00000)
+m4przmon__s    > m4przmc__i            (mID: 00000)
+m4przmon__t    > m4przmc__j            (mID: 00000)
+m4przmon__u    > m4przmc__k            (mID: 00000)
+m4przmon__v    > m4przmc__l            (mID: 00000)
+m4przmon__w    > m4przmc__r            (mID: 00000)
+m4przmon__x    > m4przmc__m            (mID: 00000)
+m4przmon__y    > m4przmc__n            (mID: 00000)
+m4przmon__z    > m4przmc__o            (mID: 00000)
+m4ra__r        > m4redunk              (mID: 00000)
+m4rackem       > m4rackem__a           (mID: 00000)
+m4rackem__a    > m4rackem              (mID: 00000)
+m4rhr__9       > m4supst__b7           (mID: 00000)
+m4ssclas__f    > m4supst__b6           (mID: 00000)
+m4sss          > m4przsss__1           (mID: 00000)
+m4sss__a       > m4sss                 (mID: 00000)
+m4suphv        > m4shv__e              (mID: 00000)
+m4suphv__a     > m4shv__i              (mID: 00000)
+m4suphv__b     > m4shv__s              (mID: 00000)
+m4suphv__c     > m4shv__x              (mID: 00000)
+m4suphv__d     > m4shv__j              (mID: 00000)
+m4suphv__e     > m4shv__t              (mID: 00000)
+m4suphv__f     > m4shv__y              (mID: 00000)
+m4suphv__g     > m4shv__k              (mID: 00000)
+m4suphv__h     > m4shv__u              (mID: 00000)
+m4suphv__i     > m4shv__l              (mID: 00000)
+m4suphv__j     > m4shv__m              (mID: 00000)
+m4suphv__k     > m4shv__v              (mID: 00000)
+m4suphv__l     > m4shv__n              (mID: 00000)
+m4suphv__m     > m4shv__w              (mID: 00000)
+m4suphv__n     > m4shv__z              (mID: 00000)
+m4suphv__o     > m4shv__o              (mID: 00000)
+m4suphv__p     > m4shv__p              (mID: 00000)
+m4supscr       > m4supscr__n           (mID: 00000)
+m4supscr__a    > m4supscr              (mID: 00000)
+m4supscr__b    > m4supscr__a           (mID: 00000)
+m4supscr__c    > m4supscr__b           (mID: 00000)
+m4supscr__d    > m4supscr__c           (mID: 00000)
+m4supscr__e    > m4supscr__d           (mID: 00000)
+m4supscr__f    > m4supscr__e           (mID: 00000)
+m4supscr__g    > m4supscr__f           (mID: 00000)
+m4supscr__h    > m4supscr__g           (mID: 00000)
+m4supscr__i    > m4supscr__h           (mID: 00000)
+m4supscr__j    > m4supscr__i           (mID: 00000)
+m4supscr__k    > m4supscr__j           (mID: 00000)
+m4supscr__l    > m4supscr__k           (mID: 00000)
+m4supscr__m    > m4supscr__l           (mID: 00000)
+m4supscr__n    > m4supscr__m           (mID: 00000)
+m4tutfrt__a0   > m4tutbwb_e            (mID: 00000)
+m4tutfrt__a1   > m4tutbwb_f            (mID: 00000)
+m4tutfrt__a2   > m4tutbwb_g            (mID: 00000)
+m4tutfrt__a3   > m4tutbwb_h            (mID: 00000)
+m4tutfrt__a4   > m4tutbwb_i            (mID: 00000)
+m4tutfrt__a5   > m4tutbwb_j            (mID: 00000)
+m4tutfrt__av   > m4tutbwb              (mID: 00000)
+m4tutfrt__aw   > m4tutbwb_a            (mID: 00000)
+m4tutfrt__ax   > m4tutbwb_b            (mID: 00000)
+m4tutfrt__ay   > m4tutbwb_c            (mID: 00000)
+m4tutfrt__az   > m4tutbwb_d            (mID: 00000)
+m4vivalv       > m4vivalv__z           (mID: 00000)
+m4vivalv__0    > m4vivalv__l           (mID: 00000)
+m4vivalv__1    > m4vivalv__m           (mID: 00000)
+m4vivalv__2    > m4vivalv__n           (mID: 00000)
+m4vivalv__3    > m4vivalv__o           (mID: 00000)
+m4vivalv__4    > m4vivalv__p           (mID: 00000)
+m4vivalv__5    > m4vivalv__q           (mID: 00000)
+m4vivalv__6    > m4vivalv__r           (mID: 00000)
+m4vivalv__7    > m4vivalv__s           (mID: 00000)
+m4vivalv__8    > m4vivalv__t           (mID: 00000)
+m4vivalv__9    > m4vivalv__h           (mID: 00000)
+m4vivalv__a    > m4vivalv__i           (mID: 00000)
+m4vivalv__b    > m4vegast__0           (mID: 00000)
+m4vivalv__c    > m4vegast__1           (mID: 00000)
+m4vivalv__e    > m4vivalv__0           (mID: 00000)
+m4vivalv__f    > m4vivalv__1           (mID: 00000)
+m4vivalv__g    > m4vivalv__u           (mID: 00000)
+m4vivalv__h    > m4vivalv__v           (mID: 00000)
+m4vivalv__i    > m4vivalv__2           (mID: 00000)
+m4vivalv__j    > m4vivalv__3           (mID: 00000)
+m4vivalv__k    > m4vivalv__4           (mID: 00000)
+m4vivalv__l    > m4vivalv__5           (mID: 00000)
+m4vivalv__m    > m4vivalv__6           (mID: 00000)
+m4vivalv__n    > m4vivalv__w           (mID: 00000)
+m4vivalv__o    > m4vivalv__x           (mID: 00000)
+m4vivalv__p    > m4vivalv__y           (mID: 00000)
+m4vivalv__q    > m4vivalv__a           (mID: 00000)
+m4vivalv__r    > m4vivalv__b           (mID: 00000)
+m4vivalv__s    > m4vivalv__c           (mID: 00000)
+m4vivalv__t    > m4vivalv__d           (mID: 00000)
+m4vivalv__u    > m4vivalv__e           (mID: 00000)
+m4vivalv__v    > m4vivalv__f           (mID: 00000)
+m4vivalv__w    > m4vivalv              (mID: 00000)
+m4vivalv__x    > m4vivalv__g           (mID: 00000)
+m4vivalv__y    > m4vivalv__j           (mID: 00000)
+m4vivalv__z    > m4vivalv__k           (mID: 00000)
+m4xtrm         > m4xtrm__b             (mID: 00000)
+m4xtrm__b      > m4xtrm                (mID: 00000)
+nb_48gc        > nb_mdc48              (mID: 00000)
+nb_824gc       > nb_mdc824             (mID: 00000)
+pongf          > pong                  (mID: 00000)
+prospdp        > dibifpspdp            (mID: 00000)
+samurai        > samuraij              (mID: 00000)
+sekaikh        > sekaikha              (mID: 00000)
+sfight2        > sfightii              (mID: 00000)
+sfight2a       > sfightiia             (mID: 00000)
+sfight2b       > sfightiib             (mID: 00000)
+smb            > smbp                  (mID: 00000)
+smb1           > smbpa                 (mID: 00000)
+smb2           > smbpb                 (mID: 00000)
+smb3           > smbpc                 (mID: 00000)
+stargatp       > stargatp0             (mID: 00000)
+stargatp5      > stargatp              (mID: 00000)
+supstarf       > supstarfa             (mID: 00000)
+teedoffp       > teedoffp0             (mID: 00000)
+teedoffp3      > teedoffp              (mID: 00000)
+unkigs         > cpoker2               (mID: 00000)
+wcsoccerd2     > wcsoccer1a            (mID: 00000)
+
 5 del (5/0/0):
-m4bigmt__e
-m4chaseif
-m4reeltm
-m4vegast__v
-pong
+m4bigmt__e                             (mID: 21972)
+m4chaseif                              (mID: 22406)
+m4reeltm                               (mID: 11815)
+m4vegast__v                            (mID: 11958)
+pong                                   (mID:  1875)
 
 
 $0.244 [#683]
@@ -1046,16 +1048,16 @@ $0.244 [#683]
 668 software list (+1), 132.706 software (-9/+114), 657 active SL (+1), 11 orphan SL, 131.939 active software (-9/+114), 767 orphan software, 91.370 software parents (+61), 41.336 software clones (+44)
 222.510 software roms (+102), 10.766 software CHD (+34), 94.961 supported software (+84), 1.409 partially supported software (+8), 36.336 unsupported software (+13)
 8 ren (8/0/0):
-hotd        > hotdo
-j_ewnd20    > j_ewn
-j_ewnda     > j_ewnb
-j_ewnud     > j_ewna
-j_nuddup    > j_dud
-j_nuddup2   > j_duda
-unkdarts    > dardos
-vgoalsca    > vgoalsoca
+hotd        > hotdo                    (mID: 00000)
+j_ewnd20    > j_ewn                    (mID: 00000)
+j_ewnda     > j_ewnb                   (mID: 00000)
+j_ewnud     > j_ewna                   (mID: 00000)
+j_nuddup    > j_dud                    (mID: 00000)
+j_nuddup2   > j_duda                   (mID: 00000)
+unkdarts    > dardos                   (mID: 00000)
+vgoalsca    > vgoalsoca                (mID: 00000)
 1 del (0/1/0):
-nes_bmc_mario7in1
+nes_bmc_mario7in1                      (mID: 33338)
 
 
 $0.243 [#682]
@@ -1066,14 +1068,14 @@ $0.243 [#682]
 667 software list (+2), 132.601 software (-45/+185), 656 active SL (+2), 11 orphan SL, 131.834 active software (-45/+185), 767 orphan software, 91.309 software parents (+89), 41.292 software clones (+51)
 222.408 software roms (+221), 10.732 software CHD (+1), 94.877 supported software (+117), 1.401 partially supported software (+2), 36.323 unsupported software (+21)
 5 ren (5/0/0):
-bloodstm10  > bloodstm104
-bloodstm11  > bloodstm110
-bloodstm21  > bloodstm210
-bloodstm22  > bloodstm220
-dendego     > dendegoa
+bloodstm10  > bloodstm104              (mID: 00000)
+bloodstm11  > bloodstm110              (mID: 00000)
+bloodstm21  > bloodstm210              (mID: 00000)
+bloodstm22  > bloodstm220              (mID: 00000)
+dendego     > dendegoa                 (mID: 00000)
 2 del (0/2/0):
-nes_bmc_gold150
-nes_tengen008
+nes_bmc_gold150                        (mID: 33332)
+nes_tengen008                          (mID: 33524)
 
 
 $0.242 [#681]
@@ -1084,18 +1086,18 @@ $0.242 [#681]
 665 software list (+4), 132.461 software (-3/+574), 654 active SL (+4), 11 orphan SL, 131.694 active software (-3/+574), 767 orphan software, 91.220 software parents (+468), 41.241 software clones (+103)
 222.187 software roms (+1690), 10.731 software CHD (+148), 94.760 supported software (+504), partially 1.399 supported software (+51), 36.302 unsupported software (+16)
 12 ren (11/1/0):
-2001tgm     > gamemach
-7in1ss      > t7in1ss
-acedrvrw    > acedrive
-bmcompmx    > bmcompmxb
-gotsndr0    > gotsndp2
-raveracj    > raveracej
-raveracja   > raveraceja
-raveracw    > raverace
-ridgerac    > ridgeracb
-ridgerac3   > ridgeracc
-ridgeracb   > ridgeraca
-victlapw    > victlapa
+2001tgm     > gamemach                 (mID: 00000)
+7in1ss      > t7in1ss                  (mID: 00000)
+acedrvrw    > acedrive                 (mID: 00000)
+bmcompmx    > bmcompmxb                (mID: 00000)
+gotsndr0    > gotsndp2                 (mID: 00000)
+raveracj    > raveracej                (mID: 00000)
+raveracja   > raveraceja               (mID: 00000)
+raveracw    > raverace                 (mID: 00000)
+ridgerac    > ridgeracb                (mID: 00000)
+ridgerac3   > ridgeracc                (mID: 00000)
+ridgeracb   > ridgeraca                (mID: 00000)
+victlapw    > victlapa                 (mID: 00000)
 0 del (0/0/0):
 -
 
@@ -1108,13 +1110,13 @@ $0.241 [#680]
 661 software list (+2), 131.890 software (+232), 650 active SL (+2), 11 orphan SL, 131.123 active software (+232), 767 orphan software, 90.752 software parents (+177), 41.138 software clones (+55)
 220.497 software roms (+840), 10.583 software CHD (+70), 94.256 supported software (+217), 1.348 partially supported software (+7), 36.286 unsupported software (+8)
 7 ren (6/1/0):
-devilfsg    > devilfshgb
-kungfu      > kungfua
-kungfum2    > bkungfu
-majest12ua  > majest12ub
-majest12u   > majest12ua
-nes_mk2     > nes_jy830623c
-saurob      > saurobl
+devilfsg    > devilfshgb               (mID: 00000)
+kungfu      > kungfua                  (mID: 00000)
+kungfum2    > bkungfu                  (mID: 00000)
+majest12ua  > majest12ub               (mID: 00000)
+majest12u   > majest12ua               (mID: 00000)
+nes_mk2     > nes_jy830623c            (mID: 00000)
+saurob      > saurobl                  (mID: 00000)
 0 del (0/0/0):
 -
 
@@ -1127,24 +1129,24 @@ $0.240 [#679]
 659 software list (+1), 131.658 software (+234), 648 active SL (+1), 11 orphan SL, 130.891 active software (+234), 767 orphan software, 90.575 software parents (+172), 41.083 software clones (+62)
 219.657 software roms (+703), 10.513 software CHD (+18), 94.039 supported software (+225), 1.341 partially supported software (+7), 36.278 unsupported software (+2)
 15 ren (15/0/0):
-aerofgts    > aerofgtst
-dietgo      > dietgoe
-dietgoe     > dietgoea
-fruitstb    > fruitstba
-goldhexa    > hexaprsz
-hexapres    > hexaprs
-pepk0756    > pepk0756a
-pepk0756a   > pepk0756b
-pepk0756b   > pepk0756c
-pepk0756c   > pepk0756d
-pepp0046b   > pepp0046c
-pepp0516b   > pepp0516c
-pexmp017b   > pexmp017a
-st_game     > st_sam
-tail2nos    > tail2nosa
+aerofgts    > aerofgtst                (mID: 00000)
+dietgo      > dietgoe                  (mID: 00000)
+dietgoe     > dietgoea                 (mID: 00000)
+fruitstb    > fruitstba                (mID: 00000)
+goldhexa    > hexaprsz                 (mID: 00000)
+hexapres    > hexaprs                  (mID: 00000)
+pepk0756    > pepk0756a                (mID: 00000)
+pepk0756a   > pepk0756b                (mID: 00000)
+pepk0756b   > pepk0756c                (mID: 00000)
+pepk0756c   > pepk0756d                (mID: 00000)
+pepp0046b   > pepp0046c                (mID: 00000)
+pepp0516b   > pepp0516c                (mID: 00000)
+pexmp017b   > pexmp017a                (mID: 00000)
+st_game     > st_sam                   (mID: 00000)
+tail2nos    > tail2nosa                (mID: 00000)
 2 del (2/0/0):
-akatana
-pexmp017a
+akatana                                (mID: 38764)
+pexmp017a                              (mID: 29514)
 
 
 $0.239 [#678]
