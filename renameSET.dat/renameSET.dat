@@ -1,9 +1,10 @@
 #     ===========================================================
-#     MAME RENAMESET.DAT v0.268  Latest update:    August 5, 2024
+#     MAME RENAMESET.DAT v0.269  Latest update: September 1, 2024
 #     ===========================================================
 #
 #     Home-page: https://www.progettosnaps.net/renameset/
 #     Do you want to contact me? Contact me here: https://www.mameworld.info/ubbthreads/postlist.php?Cat=&Board=snaps
+#     Follow the progress (and send suggestions or corrections) of the file here: https://github.com/AntoPISA/MAME_SupportFiles/tree/main/renameSET.dat
 #
 #     Statistic information of MAME (tm) updating sets by AntoPISA
 #     THE INFOS IN THIS FILE IS NOT OFFICIAL, IT IS FOR DEMONSTRATIVE PURPOSE ONLY
@@ -14,17 +15,45 @@
 #     Thanks to MAMEDevs for whatsnew.txt
 #               Guy Peters for the "ini_generator"
 #               M.A.S.H. for "mameinfo.dat"
-#               motoschifo for "ADB Tool", "ProgettoSnaps Tool" and for the constant support!
+#               motoschifo for "ADB Tool", "pS_Tool" and for the constant support!
 #
-#               Internal Version 5.34
+#               Internal Version 5.36
 #
-#       746 removed machines/devices overall in the history of MAME
-#     6.530 renamed machines/devices overall in the history of MAME
+#       748 removed machines/devices overall in the history of MAME
+#     6.546 renamed machines/devices overall in the history of MAME
 #
-#     GENERAL OVERHAUL: 0.001 > 0.070 and 0.125 > 0.268 verify completed
-#                       0.100 > 0.124u5 .............. check in progress
+#     GENERAL OVERHAUL: 0.001   > 0.070 and 0.125 > 0.269 verify completed
+#                       0.107u4 > 0.124u5 .............. check in progress
 #
 #
+$0.269 [#708]
+2024/08/29
+47.083 total items, 3.055 drivers (+14), 40.558 machines (-2/+62), 13.983 parents (+37), 26.651 clones (-2/+25), 76 BIOSes,6.449 devices (+7), 1.202 requires CHDs (+1), 1.873 use samples (+1)
+15.507 working(-2/+16), 25.127 not working (+46), 15.638 mechanicals (+2), 24.996 not mechanicals (-2/+60), 13.975 save supported (-2/+29), 26.659 save unsupported (+33), 37.414 horizontal screen (+59), 3.220 vertical screen (+1)
+353.279 total roms (+379), 349.963 machines roms (+378), 2.695 devices roms (+1), 621 BIOSes roms, 1.334 CHDs (+1), 595 sample files, 77 sample packs, 344.108 good dumps (+353), 5.846 no dumps (+29), 4.659 bad dumps (-2), 1 bug fixed
+711 software list (+3), 138.275 software (+33), 700 software list (+3), 11 orphan SL, 137.514 active software (+33), 761 orphan software, 95.391 software parents (+9), 42.884 software clones (+24)
+234.380 software roms (+34), 11.144 software CHD, 97.732 supported software (-13), 1.791 partially supported software, 38.752 unsupported software (+46)
+15 ren (14/1/0):
+fexcel12         > fexcel12a           (mID: 37148)
+fexcel124        > fexcel12            (mID: 37711)
+fexcelpb         > fexcelpa            (mID: 37712)
+gambit           > classic             (mID: 42367)
+hbarrelu         > hbarrelua           (mID:   489)
+hsf2j1           > hsf2j2              (mID:  6458)
+mgfx             > mgzz                (mID:  6565)
+mgzz             > mgzza               (mID: 47374)
+n7751            > upd7751             (mID: 29221)
+umipoker         > umipokera           (mID: 15927)
+uvc              > avcc                (mID: 34864)
+xmvsfj           > xmvsfjr1            (mID: 36706)
+xmvsfjr1         > xmvsfjr2            (mID:  4114)
+xmvsfjr2         > xmvsfjr3            (mID:  2897)
+xmvsfjr3         > xmvsfjr4            (mID:  3388)
+2 del (2/0/0):
+fdes2000                               (mID: 37137)
+fdes2100                               (mID: 37710)
+
+
 $0.268 [#707]
 2024/07/31
 47.016 total items, 3.041 drivers (+10), 40.498 machines (-6/+82), 13.946 parents (+52), 26.628 clones (-6/+30), 76 BIOSes, 6.442 devices (-1/+31), 1.201 requires CHDs (+3), 1.872 use samples
@@ -32,7 +61,7 @@ $0.268 [#707]
 352.900 total roms (+539), 349.585 machines roms (+508), 2.694 devices roms (+31), 621 BIOSes roms, 1.333 CHDs (+5), 595 sample files, 77 sample packs, 343.755 good dumps (+472), 5.817 no dumps (+37), 4.661 bad dumps (+35), 2 bugs fixed
 708 software list (+2), 138.242 software (-3/+174), 697 software list (+1), 11 orphan SL (+1), 137.481 active software (-3/+173), 761 orphan software (+1), 95.382 software parents (+160), 42.860 software clones (+11)
 234.346 software roms (+350), 11.144 software CHD (+1), 97.745 supported software (+137), 1.791 partially supported software (+12), 38.706 unsupported software (+22)
-24 ren (23/1/0):
+25 ren (24/1/0):
 crzybugs         > crzybugsj           (mID: 46830)
 diamond          > diamrun             (mID:   113)
 dodgectya        > dodgectyba          (mID: 26496)
@@ -53,7 +82,8 @@ mephisto2e       > mephistoe2          (mID: 41154)
 missilea         > missilebl           (mID: 37547)
 missw02          > missw02d            (mID: 37364)
 mj1              > mj1b                (mID: 40716)
-mm1b             > mm1a                (mID: 41058)
+mm1              > mm1a                (mID: 41057)
+mm1b             > mm1                 (mID: 41058)
 monzagpb         > monzagpa            (mID: 28566)
 powb             > powbl               (mID: 43195)
 unkmerit         > msupstar            (mID: 46754)
@@ -684,22 +714,22 @@ $0.249 [#688]
 678 software list (+4), 134.011 software (+4), 668 active SL (+4), 10 orphan SL, 133.251 active software (+174), 760 orphan software, 92.359 software parents (+125), 41.652 software clones (+49)
 228.446 software roms (+233), 10.813 software CHD (+22), 95.997 supported software (+32), 1.491 partially supported software (+24), 36.523 unsupported software (+118)
 9 ren (7/2/0):
-arm_le        > arm_cpu
-bosco         > bosco3
-boscoo        > bosco1
-boscoo2       > bosco1o
-ktiger        > ktigera
-pitbossma     > pitbossmb
-pitbossm      > pitbossma
-primrage      > primrageo
-qx10_keyboard > qx10_keyboard_ascii
+arm_le        > arm_cpu                (mID: 31125)
+bosco         > bosco3                 (mID: 42505)
+boscoo        > bosco1                 (mID:   229)
+boscoo2       > bosco1o                (mID:  2093)
+ktiger        > ktigera                (mID:   668)
+pitbossma     > pitbossmb              (mID:  6408)
+pitbossm      > pitbossma              (mID:  8302)
+primrage      > primrageo              (mID:  3366)
+qx10_keyboard > qx10_keyboard_ascii    (mID: 34099)
 6 del (0/6/0):
-a2diskii
-iwml
-apple_fdcl
-arm_be
-floppy_apple
-fscpu32
+a2diskii                               (mID: 30833)
+iwml                                   (mID: 31082)
+apple_fdcl                             (mID: 31082)
+arm_be                                 (mID: 37637)
+floppy_apple                           (mID: 32000)
+fscpu32                                (mID: 37715)
 
 
 $0.248 [#687]
@@ -710,28 +740,28 @@ $0.248 [#687]
 674 software list (-1/+1), 133.837 software (-28/+66), 664 active SL (+1), 10 orphan SL (-1), 133.077 active software (+66), 760 orphan software (-28), 92.234 software parents (+22), 41.603 software clones (+16)
 228.213 software roms (+88), 10.813 software CHD (-25), 95.965 supported software (+801), 1.467 partially supported software (+21), 36.405 unsupported software (+4)
 13 ren (12/1/0):
-ddr2mla       > ddr2mlb
-ddr2ml        > ddr2mla
-drmn9m        > drmn9ma
-fscc12b       > fscc12a
-gtgt          > gtgt20
-gtgt1         > gtgt10
-n2a03         > rp2a03
-n2a03_core    > rp2a03_core
-nf_10         > nf_10f
-pcnfrk10m     > pcnfrk10ma
-pcnfrk9m      > pcnfrk9ma
-sblast2ba     > tmntmwb
-tgpachi       > slepachi
+ddr2mla       > ddr2mlb                (mID: 00000)
+ddr2ml        > ddr2mla                (mID: 00000)
+drmn9m        > drmn9ma                (mID: 00000)
+fscc12b       > fscc12a                (mID: 00000)
+gtgt          > gtgt20                 (mID: 00000)
+gtgt1         > gtgt10                 (mID: 00000)
+n2a03         > rp2a03                 (mID: 00000)
+n2a03_core    > rp2a03_core            (mID: 00000)
+nf_10         > nf_10f                 (mID: 00000)
+pcnfrk10m     > pcnfrk10ma             (mID: 00000)
+pcnfrk9m      > pcnfrk9ma              (mID: 00000)
+sblast2ba     > tmntmwb                (mID: 00000)
+tgpachi       > slepachi               (mID: 00000)
 8 del (2/6/0):
-floppy_sonny
-gb_rom_188in1
-gb_rom_atvrac
-gb_rom_mbc7
-gb_sm3sp
-m82p
-n2a03_core_swap_op_d5_d6
-sfrusha
+floppy_sonny                           (mID: 32001)
+gb_rom_188in1                          (mID: 32077)
+gb_rom_atvrac                          (mID: 32078)
+gb_rom_mbc7                            (mID: 32090)
+gb_sm3sp                               (mID: 32099)
+m82p                                   (mID: 37808)
+n2a03_core_swap_op_d5_d6               (mID: 43264)
+sfrusha                                (mID: 37965)
 
 
 $0.247 [#686]
@@ -742,32 +772,32 @@ $0.247 [#686]
 674 software list (+4), 133.799 software (-1/+320), 663 active SL (+4), 11 orphan SL, 133.011 active software (-1/+299), 788 orphan software (+21), 92.212 software parents (+245), 41.587 software clones (+48)
 228.125 software roms (+1397), 10.838 software CHD (+62), 95.915 supported software (+308), 1.446 partially supported software, 36.438 unsupported software (+11)
 22 ren (21/1/0):
-axc51core     > ax208p
-cmtetrsa      > cmtetrisa
-cmtetrsb      > cmtetrisb
-cmtetrsc      > cmtetrisc
-cmtetrsd      > cmtetrisd
-danceyes      > danceyesu
-j_ewsbl       > j_supsh
-lantutor      > lantransp
-magicarda     > magicrd1a
-magicardb     > magicrd1b
-magicarde     > magicrde
-magicardea    > magicrdea
-magicardeb    > magicrdec
-magicardec    > magicrdj
-magicardf     > magicrdeb
-magicardj     > magicrdja
-magicardw     > magicrd1c
-pjustic       > pjustica
-spellb79      > spellba
-unkpkr_w      > magicrd1d
-unkte06       > magicrd1
-zulu          > zoo
+axc51core     > ax208p                 (mID: 00000)
+cmtetrsa      > cmtetrisa              (mID: 00000)
+cmtetrsb      > cmtetrisb              (mID: 00000)
+cmtetrsc      > cmtetrisc              (mID: 00000)
+cmtetrsd      > cmtetrisd              (mID: 00000)
+danceyes      > danceyesu              (mID: 00000)
+j_ewsbl       > j_supsh                (mID: 00000)
+lantutor      > lantransp              (mID: 00000)
+magicarda     > magicrd1a              (mID: 00000)
+magicardb     > magicrd1b              (mID: 00000)
+magicarde     > magicrde               (mID: 00000)
+magicardea    > magicrdea              (mID: 00000)
+magicardeb    > magicrdec              (mID: 00000)
+magicardec    > magicrdj               (mID: 00000)
+magicardf     > magicrdeb              (mID: 00000)
+magicardj     > magicrdja              (mID: 00000)
+magicardw     > magicrd1c              (mID: 00000)
+pjustic       > pjustica               (mID: 00000)
+spellb79      > spellba                (mID: 00000)
+unkpkr_w      > magicrd1d              (mID: 00000)
+unkte06       > magicrd1               (mID: 00000)
+zulu          > zoo                    (mID: 00000)
 3 del (3/0/0):
-m3nudge
-m3winagna
-merlina
+m3nudge                                (mID: 11356)
+m3winagna                              (mID: 11394)
+merlina                                (mID: 44864)
 
 
 $0.246 [#685]
@@ -778,26 +808,26 @@ $0.246 [#685]
 670 software list (+1), 133.480 software (-1/+198), 659 active SL (+1), 11 orphan SL, 132.713 active software (-1/+198), 767 orphan software, 91.967 software parents (+147), 41.513 software clones (+50)
 226.728 software roms (+907), 10.776 software CHD (+9), 95.607 supported software (+178), 1.446 partially supported software (-1), 36.427 unsupported software (+20)
 13 ren (10/3/0):
-avengers       > avengersc
-avengers2      > avengersa
-dac_2bit_bw_oc > dac_2bit_oc
-m4jok300       > m4jok300a
-m4jokmil       > m4jok300
-m4remag        > m4tbplayd
-m4rmg          > m4tbplayc
-marukin        > marukina
-seta001        > x1_001
-prtchess       > scptchessa
-totcarnp       > totcarnp1
-unkm1          > carboule
-vcs_2k         > vcs_2k_4k
+avengers       > avengersc             (mID: 00000)
+avengers2      > avengersa             (mID: 00000)
+dac_2bit_bw_oc > dac_2bit_oc           (mID: 00000)
+m4jok300       > m4jok300a             (mID: 00000)
+m4jokmil       > m4jok300              (mID: 00000)
+m4remag        > m4tbplayd             (mID: 00000)
+m4rmg          > m4tbplayc             (mID: 00000)
+marukin        > marukina              (mID: 00000)
+seta001        > x1_001                (mID: 00000)
+prtchess       > scptchessa            (mID: 00000)
+totcarnp       > totcarnp1             (mID: 00000)
+unkm1          > carboule              (mID: 00000)
+vcs_2k         > vcs_2k_4k             (mID: 00000)
 6 del (4/2/0):
-dac_4bit_bw_sm
-m4blkbuld
-m4casot
-m4jpmcla
-m4tridic
-vcs_4k
+dac_4bit_bw_sm                         (mID: 37122)
+m4blkbuld                              (mID: 11478)
+m4casot                                (mID: 11518)
+m4jpmcla                               (mID: 11698)
+m4tridic                               (mID: 11934)
+vcs_4k                                 (mID: 34905)
 
 
 $0.245 [#684]
@@ -808,234 +838,235 @@ $0.245 [#684]
 669 software list (+1), 133.283 software (-3/+580), 658 active SL (+1), 11 orphan SL, 132.516 active software (-3/+580), 767 orphan software, 91.820 software parents (+450), 41.463 software clones (+127)
 225.821 software roms (+3311), 10.767 software CHD (+1), 95.429 supported software (+468), 1.447 partially supported software (+38), 36.407 unsupported software (+71)
 222 ren (218/4/0):
-andretti    > andretti0
-andretti4   > andretti
-butrfly     > butrflybl
-cueball2    > cueballa
-cueball3    > cueballb
-deco_back06 > deco_bac06
-doaab       > doaae
-europc_keyb > europc_kbd
-freddy      > freddy3
-freddy4     > freddy
-gokidetor   > cucaracha
-gokidetor2  > cucaracha2
-j_ews       > j_ewsb
-j_ews8a     > j_ews
-j_luck2     > j_lt
-j_luckac    > j_la
-j_unk       > j_ewnc
-m4addrc__e  > m4nnww2__hx3
-m4addrc__f  > m4nnww2__hx4
-m4addrc__n  > m4nnww2__hx5
-m4c9__a0    > m4c999e
-m4c9__a1    > m4c999f
-m4c9__a2    > m4c999g
-m4c9__a3    > m4c999h
-m4c9__ay    > m4c999i
-m4c9__az    > m4c999j
-m4c9__n     > m4c999
-m4c999      > m4c999c
-m4c999a     > m4c999d
-m4c999b     > m4c999a
-m4c999c     > m4c999b
-m4centpt    > m4swpnotb
-m4centpta   > m4centpt
-m4ch30      > m4nnww__ay
-m4cld02     > m4rhrc__9
-m4crzjwl    > m4crzjwle
-m4crzjwle   > m4crzjwl
-m4crzjwlh   > m4cjdlx
-m4csoc      > m4csoc__j
-m4csoc__a   > m4csoc
-m4csoc__b   > m4csoc__a
-m4csoc__c   > m4csoc__b
-m4csoc__d   > m4csoc__c
-m4csoc__e   > m4csoc__d
-m4csoc__f   > m4csoc__e
-m4csoc__j   > m4csoc__f
-m4eaw__bz   > m4eaw51
-m4exotic    > m4exotic__c
-m4exotic__a > m4exotic
-m4exotic__b > m4exotic__a
-m4exotic__c > m4exotic__b
-m4hvhel__f  > m4hvhel__g
-m4hvhel__g  > m4hvhel__h
-m4hvhel__h  > m4hvhel__f
-m4hypvip    > m4shv
-m4hypvip__a > m4shv__q
-m4hypvip__b > m4shv__g
-m4hypvip__c > m4shv__b
-m4hypvip__d > m4shv__c
-m4hypvip__e > m4shv__a
-m4hypvip__f > m4shv__d
-m4hypvip__g > m4shv__0
-m4hypvip__h > m4shv__1
-m4hypvip__i > m4shv__6
-m4hypvip__j > m4shv__7
-m4hypvip__k > m4shv__10
-m4hypvip__l > m4shv__h
-m4hypvip__m > m4shv__r
-m4hypvip__n > m4shv__f
-m4hypvip__o > m4shv__2
-m4hypvip__p > m4shv__3
-m4hypvip__q > m4shv__5
-m4hypvip__r > m4shv__9
-m4hypvip__s > m4shv__11
-m4hypvip__t > m4shv__4
-m4hypvip__u > m4shv__8
-m4hypvip__v > m4shv__12
-m4indycr__a > m4indycr__e
-m4indycr__b > m4indycr__a
-m4indycr__c > m4indycr__b
-m4indycr__d > m4indycr__f
-m4indycr__e > m4indycr__c
-m4indycr__f > m4indycr__d
-m4montez    > m4przmc__g
-m4nnww__0   > m4nnww2__c
-m4nnww__1   > m4nnww2__d
-m4nnww__2   > m4nnww2__e
-m4nnww__3   > m4nnww2__f
-m4nnww__4   > m4nnww2__g
-m4nnww__5   > m4nnww2__h
-m4nnww__6   > m4nnww2__i
-m4nnww__7   > m4nnww2
-m4nnww__8   > m4nnww2__j
-m4nnww__as  > m4nnww2__o
-m4nnww__at  > m4nnww2__k
-m4nnww__au  > m4nnww2__l
-m4nnww__av  > m4nnww2__m
-m4nnww__aw  > m4nnww2__n
-m4nnww__ay  > m4nnww2__hx1
-m4nnww__az  > m4nnww2__hx2
-m4nnww__y   > m4nnww2__a
-m4nnww__z   > m4nnww2__b
-m4przmon__0 > m4przmc__q
-m4przmon__1 > m4przmc__s
-m4przmon__q > m4przmc__h
-m4przmon__r > m4przmc__p
-m4przmon__s > m4przmc__i
-m4przmon__t > m4przmc__j
-m4przmon__u > m4przmc__k
-m4przmon__v > m4przmc__l
-m4przmon__w > m4przmc__r
-m4przmon__x > m4przmc__m
-m4przmon__y > m4przmc__n
-m4przmon__z > m4przmc__o
-m4ra__r     > m4redunk
-m4rackem    > m4rackem__a
-m4rackem__a > m4rackem
-m4rhr__9    > m4supst__b7
-m4ssclas__f > m4supst__b6
-m4sss       > m4przsss__1
-m4sss__a    > m4sss
-m4suphv     > m4shv__e
-m4suphv__a  > m4shv__i
-m4suphv__b  > m4shv__s
-m4suphv__c  > m4shv__x
-m4suphv__d  > m4shv__j
-m4suphv__e  > m4shv__t
-m4suphv__f  > m4shv__y
-m4suphv__g  > m4shv__k
-m4suphv__h  > m4shv__u
-m4suphv__i  > m4shv__l
-m4suphv__j  > m4shv__m
-m4suphv__k  > m4shv__v
-m4suphv__l  > m4shv__n
-m4suphv__m  > m4shv__w
-m4suphv__n  > m4shv__z
-m4suphv__o  > m4shv__o
-m4suphv__p  > m4shv__p
-m4supscr    > m4supscr__n
-m4supscr__a > m4supscr
-m4supscr__b > m4supscr__a
-m4supscr__c > m4supscr__b
-m4supscr__d > m4supscr__c
-m4supscr__e > m4supscr__d
-m4supscr__f > m4supscr__e
-m4supscr__g > m4supscr__f
-m4supscr__h > m4supscr__g
-m4supscr__i > m4supscr__h
-m4supscr__j  > m4supscr__i
-m4supscr__k  > m4supscr__j
-m4supscr__l  > m4supscr__k
-m4supscr__m  > m4supscr__l
-m4supscr__n  > m4supscr__m
-m4tutfrt__a0 > m4tutbwb_e
-m4tutfrt__a1 > m4tutbwb_f
-m4tutfrt__a2 > m4tutbwb_g
-m4tutfrt__a3 > m4tutbwb_h
-m4tutfrt__a4 > m4tutbwb_i
-m4tutfrt__a5 > m4tutbwb_j
-m4tutfrt__av > m4tutbwb
-m4tutfrt__aw > m4tutbwb_a
-m4tutfrt__ax > m4tutbwb_b
-m4tutfrt__ay > m4tutbwb_c
-m4tutfrt__az > m4tutbwb_d
-m4vivalv     > m4vivalv__z
-m4vivalv__0  > m4vivalv__l
-m4vivalv__1  > m4vivalv__m
-m4vivalv__2  > m4vivalv__n
-m4vivalv__3  > m4vivalv__o
-m4vivalv__4  > m4vivalv__p
-m4vivalv__5  > m4vivalv__q
-m4vivalv__6  > m4vivalv__r
-m4vivalv__7  > m4vivalv__s
-m4vivalv__8  > m4vivalv__t
-m4vivalv__9  > m4vivalv__h
-m4vivalv__a  > m4vivalv__i
-m4vivalv__b  > m4vegast__0
-m4vivalv__c  > m4vegast__1
-m4vivalv__e  > m4vivalv__0
-m4vivalv__f  > m4vivalv__1
-m4vivalv__g  > m4vivalv__u
-m4vivalv__h  > m4vivalv__v
-m4vivalv__i  > m4vivalv__2
-m4vivalv__j  > m4vivalv__3
-m4vivalv__k  > m4vivalv__4
-m4vivalv__l  > m4vivalv__5
-m4vivalv__m  > m4vivalv__6
-m4vivalv__n  > m4vivalv__w
-m4vivalv__o  > m4vivalv__x
-m4vivalv__p  > m4vivalv__y
-m4vivalv__q  > m4vivalv__a
-m4vivalv__r  > m4vivalv__b
-m4vivalv__s  > m4vivalv__c
-m4vivalv__t  > m4vivalv__d
-m4vivalv__u  > m4vivalv__e
-m4vivalv__v  > m4vivalv__f
-m4vivalv__w  > m4vivalv
-m4vivalv__x  > m4vivalv__g
-m4vivalv__y  > m4vivalv__j
-m4vivalv__z  > m4vivalv__k
-m4xtrm       > m4xtrm__b
-m4xtrm__b    > m4xtrm
-nb_48gc      > nb_mdc48
-nb_824gc     > nb_mdc824
-pongf        > pong
-prospdp      > dibifpspdp
-samurai      > samuraij
-sekaikh      > sekaikha
-sfight2      > sfightii
-sfight2a     > sfightiia
-sfight2b     > sfightiib
-smb          > smbp
-smb1         > smbpa
-smb2         > smbpb
-smb3         > smbpc
-stargatp     > stargatp0
-stargatp5    > stargatp
-supstarf     > supstarfa
-teedoffp     > teedoffp0
-teedoffp3    > teedoffp
-unkigs       > cpoker2
-wcsoccerd2   > wcsoccer1a
+andretti       > andretti0             (mID: 00000)
+andretti4      > andretti              (mID: 00000)
+butrfly        > butrflybl             (mID: 00000)
+cueball2       > cueballa              (mID: 00000)
+cueball3       > cueballb              (mID: 00000)
+deco_back06    > deco_bac06            (mID: 00000)
+doaab          > doaae                 (mID: 00000)
+europc_keyb    > europc_kbd            (mID: 00000)
+freddy         > freddy3               (mID: 00000)
+freddy4        > freddy                (mID: 00000)
+gokidetor      > cucaracha             (mID: 00000)
+gokidetor2     > cucaracha2            (mID: 00000)
+j_ews          > j_ewsb                (mID: 00000)
+j_ews8a        > j_ews                 (mID: 00000)
+j_luck2        > j_lt                  (mID: 00000)
+j_luckac       > j_la                  (mID: 00000)
+j_unk          > j_ewnc                (mID: 00000)
+m4addrc__e     > m4nnww2__hx3          (mID: 00000)
+m4addrc__f     > m4nnww2__hx4          (mID: 00000)
+m4addrc__n     > m4nnww2__hx5          (mID: 00000)
+m4c9__a0       > m4c999e               (mID: 00000)
+m4c9__a1       > m4c999f               (mID: 00000)
+m4c9__a2       > m4c999g               (mID: 00000)
+m4c9__a3       > m4c999h               (mID: 00000)
+m4c9__ay       > m4c999i               (mID: 00000)
+m4c9__az       > m4c999j               (mID: 00000)
+m4c9__n        > m4c999                (mID: 00000)
+m4c999         > m4c999c               (mID: 00000)
+m4c999a        > m4c999d               (mID: 00000)
+m4c999b        > m4c999a               (mID: 00000)
+m4c999c        > m4c999b               (mID: 00000)
+m4centpt       > m4swpnotb             (mID: 00000)
+m4centpta      > m4centpt              (mID: 00000)
+m4ch30         > m4nnww__ay            (mID: 00000)
+m4cld02        > m4rhrc__9             (mID: 00000)
+m4crzjwl       > m4crzjwle             (mID: 00000)
+m4crzjwle      > m4crzjwl              (mID: 00000)
+m4crzjwlh      > m4cjdlx               (mID: 00000)
+m4csoc         > m4csoc__j             (mID: 00000)
+m4csoc__a      > m4csoc                (mID: 00000)
+m4csoc__b      > m4csoc__a             (mID: 00000)
+m4csoc__c      > m4csoc__b             (mID: 00000)
+m4csoc__d      > m4csoc__c             (mID: 00000)
+m4csoc__e      > m4csoc__d             (mID: 00000)
+m4csoc__f      > m4csoc__e             (mID: 00000)
+m4csoc__j      > m4csoc__f             (mID: 00000)
+m4eaw__bz      > m4eaw51               (mID: 00000)
+m4exotic       > m4exotic__c           (mID: 00000)
+m4exotic__a    > m4exotic              (mID: 00000)
+m4exotic__b    > m4exotic__a           (mID: 00000)
+m4exotic__c    > m4exotic__b           (mID: 00000)
+m4hvhel__f     > m4hvhel__g            (mID: 00000)
+m4hvhel__g     > m4hvhel__h            (mID: 00000)
+m4hvhel__h     > m4hvhel__f            (mID: 00000)
+m4hypvip       > m4shv                 (mID: 00000)
+m4hypvip__a    > m4shv__q              (mID: 00000)
+m4hypvip__b    > m4shv__g              (mID: 00000)
+m4hypvip__c    > m4shv__b              (mID: 00000)
+m4hypvip__d    > m4shv__c              (mID: 00000)
+m4hypvip__e    > m4shv__a              (mID: 00000)
+m4hypvip__f    > m4shv__d              (mID: 00000)
+m4hypvip__g    > m4shv__0              (mID: 00000)
+m4hypvip__h    > m4shv__1              (mID: 00000)
+m4hypvip__i    > m4shv__6              (mID: 00000)
+m4hypvip__j    > m4shv__7              (mID: 00000)
+m4hypvip__k    > m4shv__10             (mID: 00000)
+m4hypvip__l    > m4shv__h              (mID: 00000)
+m4hypvip__m    > m4shv__r              (mID: 00000)
+m4hypvip__n    > m4shv__f              (mID: 00000)
+m4hypvip__o    > m4shv__2              (mID: 00000)
+m4hypvip__p    > m4shv__3              (mID: 00000)
+m4hypvip__q    > m4shv__5              (mID: 00000)
+m4hypvip__r    > m4shv__9              (mID: 00000)
+m4hypvip__s    > m4shv__11             (mID: 00000)
+m4hypvip__t    > m4shv__4              (mID: 00000)
+m4hypvip__u    > m4shv__8              (mID: 00000)
+m4hypvip__v    > m4shv__12             (mID: 00000)
+m4indycr__a    > m4indycr__e           (mID: 00000)
+m4indycr__b    > m4indycr__a           (mID: 00000)
+m4indycr__c    > m4indycr__b           (mID: 00000)
+m4indycr__d    > m4indycr__f           (mID: 00000)
+m4indycr__e    > m4indycr__c           (mID: 00000)
+m4indycr__f    > m4indycr__d           (mID: 00000)
+m4montez       > m4przmc__g            (mID: 00000)
+m4nnww__0      > m4nnww2__c            (mID: 00000)
+m4nnww__1      > m4nnww2__d            (mID: 00000)
+m4nnww__2      > m4nnww2__e            (mID: 00000)
+m4nnww__3      > m4nnww2__f            (mID: 00000)
+m4nnww__4      > m4nnww2__g            (mID: 00000)
+m4nnww__5      > m4nnww2__h            (mID: 00000)
+m4nnww__6      > m4nnww2__i            (mID: 00000)
+m4nnww__7      > m4nnww2               (mID: 00000)
+m4nnww__8      > m4nnww2__j            (mID: 00000)
+m4nnww__as     > m4nnww2__o            (mID: 00000)
+m4nnww__at     > m4nnww2__k            (mID: 00000)
+m4nnww__au     > m4nnww2__l            (mID: 00000)
+m4nnww__av     > m4nnww2__m            (mID: 00000)
+m4nnww__aw     > m4nnww2__n            (mID: 00000)
+m4nnww__ay     > m4nnww2__hx1          (mID: 00000)
+m4nnww__az     > m4nnww2__hx2          (mID: 00000)
+m4nnww__y      > m4nnww2__a            (mID: 00000)
+m4nnww__z      > m4nnww2__b            (mID: 00000)
+m4przmon__0    > m4przmc__q            (mID: 00000)
+m4przmon__1    > m4przmc__s            (mID: 00000)
+m4przmon__q    > m4przmc__h            (mID: 00000)
+m4przmon__r    > m4przmc__p            (mID: 00000)
+m4przmon__s    > m4przmc__i            (mID: 00000)
+m4przmon__t    > m4przmc__j            (mID: 00000)
+m4przmon__u    > m4przmc__k            (mID: 00000)
+m4przmon__v    > m4przmc__l            (mID: 00000)
+m4przmon__w    > m4przmc__r            (mID: 00000)
+m4przmon__x    > m4przmc__m            (mID: 00000)
+m4przmon__y    > m4przmc__n            (mID: 00000)
+m4przmon__z    > m4przmc__o            (mID: 00000)
+m4ra__r        > m4redunk              (mID: 00000)
+m4rackem       > m4rackem__a           (mID: 00000)
+m4rackem__a    > m4rackem              (mID: 00000)
+m4rhr__9       > m4supst__b7           (mID: 00000)
+m4ssclas__f    > m4supst__b6           (mID: 00000)
+m4sss          > m4przsss__1           (mID: 00000)
+m4sss__a       > m4sss                 (mID: 00000)
+m4suphv        > m4shv__e              (mID: 00000)
+m4suphv__a     > m4shv__i              (mID: 00000)
+m4suphv__b     > m4shv__s              (mID: 00000)
+m4suphv__c     > m4shv__x              (mID: 00000)
+m4suphv__d     > m4shv__j              (mID: 00000)
+m4suphv__e     > m4shv__t              (mID: 00000)
+m4suphv__f     > m4shv__y              (mID: 00000)
+m4suphv__g     > m4shv__k              (mID: 00000)
+m4suphv__h     > m4shv__u              (mID: 00000)
+m4suphv__i     > m4shv__l              (mID: 00000)
+m4suphv__j     > m4shv__m              (mID: 00000)
+m4suphv__k     > m4shv__v              (mID: 00000)
+m4suphv__l     > m4shv__n              (mID: 00000)
+m4suphv__m     > m4shv__w              (mID: 00000)
+m4suphv__n     > m4shv__z              (mID: 00000)
+m4suphv__o     > m4shv__o              (mID: 00000)
+m4suphv__p     > m4shv__p              (mID: 00000)
+m4supscr       > m4supscr__n           (mID: 00000)
+m4supscr__a    > m4supscr              (mID: 00000)
+m4supscr__b    > m4supscr__a           (mID: 00000)
+m4supscr__c    > m4supscr__b           (mID: 00000)
+m4supscr__d    > m4supscr__c           (mID: 00000)
+m4supscr__e    > m4supscr__d           (mID: 00000)
+m4supscr__f    > m4supscr__e           (mID: 00000)
+m4supscr__g    > m4supscr__f           (mID: 00000)
+m4supscr__h    > m4supscr__g           (mID: 00000)
+m4supscr__i    > m4supscr__h           (mID: 00000)
+m4supscr__j    > m4supscr__i           (mID: 00000)
+m4supscr__k    > m4supscr__j           (mID: 00000)
+m4supscr__l    > m4supscr__k           (mID: 00000)
+m4supscr__m    > m4supscr__l           (mID: 00000)
+m4supscr__n    > m4supscr__m           (mID: 00000)
+m4tutfrt__a0   > m4tutbwb_e            (mID: 00000)
+m4tutfrt__a1   > m4tutbwb_f            (mID: 00000)
+m4tutfrt__a2   > m4tutbwb_g            (mID: 00000)
+m4tutfrt__a3   > m4tutbwb_h            (mID: 00000)
+m4tutfrt__a4   > m4tutbwb_i            (mID: 00000)
+m4tutfrt__a5   > m4tutbwb_j            (mID: 00000)
+m4tutfrt__av   > m4tutbwb              (mID: 00000)
+m4tutfrt__aw   > m4tutbwb_a            (mID: 00000)
+m4tutfrt__ax   > m4tutbwb_b            (mID: 00000)
+m4tutfrt__ay   > m4tutbwb_c            (mID: 00000)
+m4tutfrt__az   > m4tutbwb_d            (mID: 00000)
+m4vivalv       > m4vivalv__z           (mID: 00000)
+m4vivalv__0    > m4vivalv__l           (mID: 00000)
+m4vivalv__1    > m4vivalv__m           (mID: 00000)
+m4vivalv__2    > m4vivalv__n           (mID: 00000)
+m4vivalv__3    > m4vivalv__o           (mID: 00000)
+m4vivalv__4    > m4vivalv__p           (mID: 00000)
+m4vivalv__5    > m4vivalv__q           (mID: 00000)
+m4vivalv__6    > m4vivalv__r           (mID: 00000)
+m4vivalv__7    > m4vivalv__s           (mID: 00000)
+m4vivalv__8    > m4vivalv__t           (mID: 00000)
+m4vivalv__9    > m4vivalv__h           (mID: 00000)
+m4vivalv__a    > m4vivalv__i           (mID: 00000)
+m4vivalv__b    > m4vegast__0           (mID: 00000)
+m4vivalv__c    > m4vegast__1           (mID: 00000)
+m4vivalv__e    > m4vivalv__0           (mID: 00000)
+m4vivalv__f    > m4vivalv__1           (mID: 00000)
+m4vivalv__g    > m4vivalv__u           (mID: 00000)
+m4vivalv__h    > m4vivalv__v           (mID: 00000)
+m4vivalv__i    > m4vivalv__2           (mID: 00000)
+m4vivalv__j    > m4vivalv__3           (mID: 00000)
+m4vivalv__k    > m4vivalv__4           (mID: 00000)
+m4vivalv__l    > m4vivalv__5           (mID: 00000)
+m4vivalv__m    > m4vivalv__6           (mID: 00000)
+m4vivalv__n    > m4vivalv__w           (mID: 00000)
+m4vivalv__o    > m4vivalv__x           (mID: 00000)
+m4vivalv__p    > m4vivalv__y           (mID: 00000)
+m4vivalv__q    > m4vivalv__a           (mID: 00000)
+m4vivalv__r    > m4vivalv__b           (mID: 00000)
+m4vivalv__s    > m4vivalv__c           (mID: 00000)
+m4vivalv__t    > m4vivalv__d           (mID: 00000)
+m4vivalv__u    > m4vivalv__e           (mID: 00000)
+m4vivalv__v    > m4vivalv__f           (mID: 00000)
+m4vivalv__w    > m4vivalv              (mID: 00000)
+m4vivalv__x    > m4vivalv__g           (mID: 00000)
+m4vivalv__y    > m4vivalv__j           (mID: 00000)
+m4vivalv__z    > m4vivalv__k           (mID: 00000)
+m4xtrm         > m4xtrm__b             (mID: 00000)
+m4xtrm__b      > m4xtrm                (mID: 00000)
+nb_48gc        > nb_mdc48              (mID: 00000)
+nb_824gc       > nb_mdc824             (mID: 00000)
+pongf          > pong                  (mID: 00000)
+prospdp        > dibifpspdp            (mID: 00000)
+samurai        > samuraij              (mID: 00000)
+sekaikh        > sekaikha              (mID: 00000)
+sfight2        > sfightii              (mID: 00000)
+sfight2a       > sfightiia             (mID: 00000)
+sfight2b       > sfightiib             (mID: 00000)
+smb            > smbp                  (mID: 00000)
+smb1           > smbpa                 (mID: 00000)
+smb2           > smbpb                 (mID: 00000)
+smb3           > smbpc                 (mID: 00000)
+stargatp       > stargatp0             (mID: 00000)
+stargatp5      > stargatp              (mID: 00000)
+supstarf       > supstarfa             (mID: 00000)
+teedoffp       > teedoffp0             (mID: 00000)
+teedoffp3      > teedoffp              (mID: 00000)
+unkigs         > cpoker2               (mID: 00000)
+wcsoccerd2     > wcsoccer1a            (mID: 00000)
+
 5 del (5/0/0):
-m4bigmt__e
-m4chaseif
-m4reeltm
-m4vegast__v
-pong
+m4bigmt__e                             (mID: 21972)
+m4chaseif                              (mID: 22406)
+m4reeltm                               (mID: 11815)
+m4vegast__v                            (mID: 11958)
+pong                                   (mID:  1875)
 
 
 $0.244 [#683]
@@ -1046,16 +1077,16 @@ $0.244 [#683]
 668 software list (+1), 132.706 software (-9/+114), 657 active SL (+1), 11 orphan SL, 131.939 active software (-9/+114), 767 orphan software, 91.370 software parents (+61), 41.336 software clones (+44)
 222.510 software roms (+102), 10.766 software CHD (+34), 94.961 supported software (+84), 1.409 partially supported software (+8), 36.336 unsupported software (+13)
 8 ren (8/0/0):
-hotd        > hotdo
-j_ewnd20    > j_ewn
-j_ewnda     > j_ewnb
-j_ewnud     > j_ewna
-j_nuddup    > j_dud
-j_nuddup2   > j_duda
-unkdarts    > dardos
-vgoalsca    > vgoalsoca
+hotd        > hotdo                    (mID: 00000)
+j_ewnd20    > j_ewn                    (mID: 00000)
+j_ewnda     > j_ewnb                   (mID: 00000)
+j_ewnud     > j_ewna                   (mID: 00000)
+j_nuddup    > j_dud                    (mID: 00000)
+j_nuddup2   > j_duda                   (mID: 00000)
+unkdarts    > dardos                   (mID: 00000)
+vgoalsca    > vgoalsoca                (mID: 00000)
 1 del (0/1/0):
-nes_bmc_mario7in1
+nes_bmc_mario7in1                      (mID: 33338)
 
 
 $0.243 [#682]
@@ -1066,14 +1097,14 @@ $0.243 [#682]
 667 software list (+2), 132.601 software (-45/+185), 656 active SL (+2), 11 orphan SL, 131.834 active software (-45/+185), 767 orphan software, 91.309 software parents (+89), 41.292 software clones (+51)
 222.408 software roms (+221), 10.732 software CHD (+1), 94.877 supported software (+117), 1.401 partially supported software (+2), 36.323 unsupported software (+21)
 5 ren (5/0/0):
-bloodstm10  > bloodstm104
-bloodstm11  > bloodstm110
-bloodstm21  > bloodstm210
-bloodstm22  > bloodstm220
-dendego     > dendegoa
+bloodstm10  > bloodstm104              (mID: 00000)
+bloodstm11  > bloodstm110              (mID: 00000)
+bloodstm21  > bloodstm210              (mID: 00000)
+bloodstm22  > bloodstm220              (mID: 00000)
+dendego     > dendegoa                 (mID: 00000)
 2 del (0/2/0):
-nes_bmc_gold150
-nes_tengen008
+nes_bmc_gold150                        (mID: 33332)
+nes_tengen008                          (mID: 33524)
 
 
 $0.242 [#681]
@@ -1084,18 +1115,18 @@ $0.242 [#681]
 665 software list (+4), 132.461 software (-3/+574), 654 active SL (+4), 11 orphan SL, 131.694 active software (-3/+574), 767 orphan software, 91.220 software parents (+468), 41.241 software clones (+103)
 222.187 software roms (+1690), 10.731 software CHD (+148), 94.760 supported software (+504), partially 1.399 supported software (+51), 36.302 unsupported software (+16)
 12 ren (11/1/0):
-2001tgm     > gamemach
-7in1ss      > t7in1ss
-acedrvrw    > acedrive
-bmcompmx    > bmcompmxb
-gotsndr0    > gotsndp2
-raveracj    > raveracej
-raveracja   > raveraceja
-raveracw    > raverace
-ridgerac    > ridgeracb
-ridgerac3   > ridgeracc
-ridgeracb   > ridgeraca
-victlapw    > victlapa
+2001tgm     > gamemach                 (mID: 00000)
+7in1ss      > t7in1ss                  (mID: 00000)
+acedrvrw    > acedrive                 (mID: 00000)
+bmcompmx    > bmcompmxb                (mID: 00000)
+gotsndr0    > gotsndp2                 (mID: 00000)
+raveracj    > raveracej                (mID: 00000)
+raveracja   > raveraceja               (mID: 00000)
+raveracw    > raverace                 (mID: 00000)
+ridgerac    > ridgeracb                (mID: 00000)
+ridgerac3   > ridgeracc                (mID: 00000)
+ridgeracb   > ridgeraca                (mID: 00000)
+victlapw    > victlapa                 (mID: 00000)
 0 del (0/0/0):
 -
 
@@ -1108,13 +1139,13 @@ $0.241 [#680]
 661 software list (+2), 131.890 software (+232), 650 active SL (+2), 11 orphan SL, 131.123 active software (+232), 767 orphan software, 90.752 software parents (+177), 41.138 software clones (+55)
 220.497 software roms (+840), 10.583 software CHD (+70), 94.256 supported software (+217), 1.348 partially supported software (+7), 36.286 unsupported software (+8)
 7 ren (6/1/0):
-devilfsg    > devilfshgb
-kungfu      > kungfua
-kungfum2    > bkungfu
-majest12ua  > majest12ub
-majest12u   > majest12ua
-nes_mk2     > nes_jy830623c
-saurob      > saurobl
+devilfsg    > devilfshgb               (mID: 00000)
+kungfu      > kungfua                  (mID: 00000)
+kungfum2    > bkungfu                  (mID: 00000)
+majest12ua  > majest12ub               (mID: 00000)
+majest12u   > majest12ua               (mID: 00000)
+nes_mk2     > nes_jy830623c            (mID: 00000)
+saurob      > saurobl                  (mID: 00000)
 0 del (0/0/0):
 -
 
@@ -1127,24 +1158,24 @@ $0.240 [#679]
 659 software list (+1), 131.658 software (+234), 648 active SL (+1), 11 orphan SL, 130.891 active software (+234), 767 orphan software, 90.575 software parents (+172), 41.083 software clones (+62)
 219.657 software roms (+703), 10.513 software CHD (+18), 94.039 supported software (+225), 1.341 partially supported software (+7), 36.278 unsupported software (+2)
 15 ren (15/0/0):
-aerofgts    > aerofgtst
-dietgo      > dietgoe
-dietgoe     > dietgoea
-fruitstb    > fruitstba
-goldhexa    > hexaprsz
-hexapres    > hexaprs
-pepk0756    > pepk0756a
-pepk0756a   > pepk0756b
-pepk0756b   > pepk0756c
-pepk0756c   > pepk0756d
-pepp0046b   > pepp0046c
-pepp0516b   > pepp0516c
-pexmp017b   > pexmp017a
-st_game     > st_sam
-tail2nos    > tail2nosa
+aerofgts    > aerofgtst                (mID: 00000)
+dietgo      > dietgoe                  (mID: 00000)
+dietgoe     > dietgoea                 (mID: 00000)
+fruitstb    > fruitstba                (mID: 00000)
+goldhexa    > hexaprsz                 (mID: 00000)
+hexapres    > hexaprs                  (mID: 00000)
+pepk0756    > pepk0756a                (mID: 00000)
+pepk0756a   > pepk0756b                (mID: 00000)
+pepk0756b   > pepk0756c                (mID: 00000)
+pepk0756c   > pepk0756d                (mID: 00000)
+pepp0046b   > pepp0046c                (mID: 00000)
+pepp0516b   > pepp0516c                (mID: 00000)
+pexmp017b   > pexmp017a                (mID: 00000)
+st_game     > st_sam                   (mID: 00000)
+tail2nos    > tail2nosa                (mID: 00000)
 2 del (2/0/0):
-akatana
-pexmp017a
+akatana                                (mID: 38764)
+pexmp017a                              (mID: 29514)
 
 
 $0.239 [#678]
@@ -10243,9 +10274,9 @@ twinbrat   > twinbrta
 
 $0.109 [#342]
 2006/09/26
-6.279 total items, 0 drivers, 6.253 machines, 3.386 parents, 2.893 clones, 26 BIOSes, 0 devices, 86 requires CHDs, 169 use samples
-5.755 working, 472 not working, 0 mechanicals, 0 not mechanicals, 0 save supported, 0 save unsupported, 0 horizontal screen, 0 vertical screen
-95.743 roms, 95.572 machines roms, 0 devices roms, 85 BIOSes roms, 86 CHDs, 598 sample files, 0 sample packs, 0 good dumps, 0 no dumps, 0 bad dumps, 0 bugs fixed
+6.279 total items, 877 drivers, 6.253 machines (+2), 3.382 parents, 2.897 clones (+2), 26 BIOSes, 0 devices, 86 requires CHDs, 169 use samples
+5.546 working (+2), 707 not working, 0 mechanicals, 6.279 not mechanicals (+2), 694 save supported, 5.559 save unsupported (+2), 4.490 horizontal screen, 1.789 vertical screen (+2)
+95.752 total roms (+20), 95.667 machines roms (+20), 0 devices roms, 85 BIOSes roms, 86 CHDs, 598 sample files, 36 sample packs, 94.787 good dumps (+20), 743 no dumps, 308 bad dumps, 2 bugs fixed
 0 ren (0/0/0):
 -
 0 del (0/0/0):
@@ -10254,9 +10285,9 @@ $0.109 [#342]
 
 $0.108u5 [#341]
 2006/09/21
-6.277 total items, 0 drivers, 6.251 machines, 3.386 parents, 2.891 clones, 26 BIOSes, 0 devices, 86 requires CHDs, 168 use samples
-5.753 working, 472 not working, 0 mechanicals, 0 not mechanicals, 0 save supported, 0 save unsupported, 0 horizontal screen, 0 vertical screen
-95.723 roms, 95.552 machines roms, 0 devices roms, 85 BIOSes roms, 86 CHDs, 598 sample files, 0 sample packs, 0 good dumps, 0 no dumps, 0 bad dumps, 0 bugs fixed
+6.277 total items, 877 drivers (+1), 6.251 machines (+11), 3.382 parents (+2), 2.895 clones (+9), 26 BIOSes, 0 devices, 86 requires CHDs, 168 use samples
+5.544 working (+11), 707 not working, 0 mechanicals, 6.277 not mechanicals (+11), 694 save supported (+8), 5.557 save unsupported (+3), 4.490 horizontal screen (+9), 1.787 vertical screen (+2)
+95.732 roms (+201), 95.647 machines roms (+201), 0 devices roms, 85 BIOSes roms, 86 CHDs, 598 sample files, 36 sample packs, 94.767 good dumps (+202), 743 no dumps (-2), 308 no dumps (+1), 1 bug fixed
 7 ren (7/0/0):
 bigboy     > goldnpkr
 finalapr   > finalapb
@@ -10271,9 +10302,9 @@ yard       > 10yardj
 
 $0.108u4 [#340]
 2006/09/14
-6.266 total items, 0 drivers, 6.240 machines, 3.383 parents, 2.883 clones, 26 BIOSes, 0 devices, 86 requires CHDs, 168 use samples
-5.742 working, 472 not working, 0 mechanicals, 0 not mechanicals, 0 save supported, 0 save unsupported, 0 horizontal screen, 0 vertical screen
-95.522 roms, 95.351 machines roms, 0 devices roms, 85 BIOSes roms, 86 CHDs, 598 sample files, 0 sample packs, 0 good dumps, 0 no dumps, 0 bad dumps, 0 bugs fixed
+6.266 total items, 876 drivers, 6.240 machines (+8), 3.380 parents, 2.886 clones (+8), 26 BIOSes, 0 devices, 86 requires CHDs, 168 use samples
+5.533 working (+7), 707 not working (+1), 0 mechanicals, 6.266 not mechanicals (+8), 686 save supported (+8), 5.554 save unsupported, 4.481 horizontal screen (+4), 1.785 vertical screen (+4)
+95.531 total roms (+113), 95.446 machines roms (+113), 0 devices roms, 85 BIOSes roms, 86 CHDs, 598 sample files, 36 sample packs, 94.565 good dumps (+111), 745 no dumps, 307 bad dumps (+2), 4 bugs fixed
 2 ren (2/0/0):
 arkatayt   > arktayt2
 lockload   > locklodu
@@ -10283,9 +10314,9 @@ lockload   > locklodu
 
 $0.108u3 [#339]
 2006/09/07
-6.258 total items, 0 drivers, 6.232 machines, 3.383 parents, 2.875 clones, 26 BIOSes, 0 devices, 86 requires CHDs, 168 use samples
-5.736 working, 470 not working, 0 mechanicals, 0 not mechanicals, 0 save supported, 0 save unsupported, 0 horizontal screen, 0 vertical screen
-95.409 roms, 95.238 machines roms, 0 devices roms, 85 BIOSes roms, 86 CHDs, 598 sample files, 0 sample packs, 0 good dumps, 0 no dumps, 0 bad dumps, 0 bugs fixed
+6.258 total items, 876 drivers (+1), 6.232 machines (+6), 3.380 parents (+3), 2.878 clones (+3), 26 BIOSes, 0 devices, 86 requires CHDs, 168 use samples
+5.526 working (+5), 706 not working (+1), 0 mechanicals, 6.258 not mechanicals (+6), 678 save supported (+3), 5.554 save unsupported (+3), 4.477 horizontal screen (+5), 1.781 vertical screen (+1)
+95.418 total roms (+54), 95.333 machines roms (+54), 0 devices roms, 85 BIOSes roms, 86 CHDs, 598 sample files, 36 sample packs, 94.454 good dumps (+53), 745 no dumps (+4), 305 bad dumps (-3), 0 bugs fixed
 5 ren (5/0/0):
 arkbl2     > arkmcubl
 arkbl3     > arkgcbl
@@ -10298,9 +10329,9 @@ solomon    > solomonj
 
 $0.108u2 [#338]
 2006/08/31
-6.252 total items, 0 drivers, 6.226 machines, 3.380 parents, 2.872 clones, 26 BIOSes, 0 devices, 86 requires CHDs, 168 use samples
-5.725 working, 475 not working, 0 mechanicals, 0 not mechanicals, 0 save supported, 0 save unsupported, 0 horizontal screen, 0 vertical screen
-95.355 roms, 95.184 machines roms, 0 devices roms, 85 BIOSes roms, 86 CHDs, 598 sample files, 0 sample packs, 0 good dumps, 0 no dumps, 0 bad dumps, 0 bugs fixed
+6.252 total items, 875 drivers (+1), 6.226 machines (+6), 3.377 parents (+1), 2.875 clones (+5), 26 BIOSes, 0 devices, 86 requires CHDs, 168 use samples
+5.521 working (+9), 705 not working (-3), 0 mechanicals, 6.252 not mechanicals (+6), 675 save supported (+1), 5.551 save unsupported (+5), 4.472 horizontal screen (+6), 1.780 vertical screen
+95.364 total roms (+56), 95.279 machines roms (+56), 0 devices roms, 85 BIOSes roms, 86 CHDs, 598 sample files, 36 sample packs, 94.401 good dumps (+53), 741 no dumps, 308 bad dumps (+3), 5 bugs fixed
 0 ren (0/0/0):
 -
 0 del (0/0/0):
@@ -10309,9 +10340,9 @@ $0.108u2 [#338]
 
 $0.108u1 [#337]
 2006/08/24
-6.246 total items, 0 drivers, 6.220 machines, 3.379 parents, 2.867 clones, 26 BIOSes, 0 devices, 86 requires CHDs, 168 use samples
-5.719 working, 475 not working, 0 mechanicals, 0 not mechanicals, 0 save supported, 0 save unsupported, 0 horizontal screen, 0 vertical screen
-95.299 roms, 95.128 machines roms, 0 devices roms, 85 BIOSes roms, 86 CHDs, 598 sample files, 0 sample packs, 0 good dumps, 0 no dumps, 0 bad dumps, 0 bugs fixed
+6.246 total items, 874 drivers, 6.220 machines (+4), 3.376 parents (+1), 2.870 clones (+3), 26 BIOSes, 0 devices, 86 requires CHDs, 168 use samples
+5.512 working (+6), 708 not working (-2), 0 mechanicals, 6.246 not mechanicals (+4), 674 save supported (+1), 5.546 save unsupported (+3), 4.466 horizontal screen (+2), 1.780 vertical screen (+2)
+95.308 total roms (+47), 95.223 machines roms (+143), 0 devices roms, 85 BIOSes roms, 86 CHDs, 598 sample files, 36 sample packs, 94.348 good dumps (+52), 741 no dumps (-6), 305 bad dumps (+1), 2 bugs fixed
 0 ren (0/0/0):
 -
 0 del (0/0/0):
@@ -10320,9 +10351,9 @@ $0.108u1 [#337]
 
 $0.108 [#336]
 2006/08/20
-6.242 total items, 0 drivers, 6.216 machines, 3.380 parents, 2.862 clones, 26 BIOSes, 0 devices, 86 requires CHDs, 168 use samples
-5.7015 working, 475 not working, 0 mechanicals, 0 not mechanicals, 0 save supported, 0 save unsupported, 0 horizontal screen, 0 vertical screen
-95.251 roms, 95.080 machines roms, 0 devices roms, 85 BIOSes roms, 86 CHDs, 598 sample files, 0 sample packs, 0 good dumps, 0 no dumps, 0 bad dumps, 0 bugs fixed
+6.242 total items, 874 drivers (+1), 6.216 machines (+5), 3.375 parents (+1), 2.867 clones (+4), 26 BIOSes, 0 devices, 86 requires CHDs, 168 use samples
+5.506 working (+4), 710 not working (+1), 0 mechanicals, 6.242 not mechanicals (+5), 673 save supported (+1), 5.543 save unsupported (+4), 4.464 horizontal screen (+4), 1.778 vertical screen (+1)
+95.261 total roms (+65), 95.080 machines roms (+176), 0 devices roms, 85 BIOSes roms, 86 CHDs, 598 sample files (+4), 36 sample packs (+1), 94.296 good dumps (+64), 747 no dumps, 304 bad dumps (+1), 1 bug fixed
 1 ren (1/0/0):
 tmnt22p    > tmnt22pu
 0 del (0/0/0):
@@ -10331,9 +10362,9 @@ tmnt22p    > tmnt22pu
 
 $0.107u4 [#335]
 2006/08/17
-6.237 total items, 0 drivers, 6.211 machines, 3.379 parents, 2.858 clones, 26 BIOSes, 0 devices, 86 requires CHDs, 167 use samples
-5.710 working, 475 not working, 0 mechanicals, 0 not mechanicals, 0 save supported, 0 save unsupported, 0 horizontal screen, 0 vertical screen
-95.186 roms, 95.015 machines roms, 0 devices roms, 85 BIOSes roms, 86 CHDs, 594 sample files, 0 sample packs, 0 good dumps, 0 no dumps, 0 bad dumps, 0 bugs fixed
+6.237 total items, 873 drivers, 6.211 machines (+4), 3.374 parents (+1), 2.863 clones (+3), 26 BIOSes, 0 devices, 86 requires CHDs, 167 use samples
+5.502 working (+3), 709 not working (+1), 0 mechanicals, 6.237 not mechanicals (+4), 672 save supported (+1), 5.539 save unsupported (+3), 4.460 horizontal screen (+4), 1.777 vertical screen
+95.196 total roms (+53), 95.111 machines roms (+53), 0 devices roms, 85 BIOSes roms, 86 CHDs, 594 sample files, 35 sample packs, 94.232 good dumps (+56), 747 no dumps (-2), 303 bad dumps (-1), 4 bugs fixed
 2 ren (2/0/0):
 astdelu1   > astdelu2
 f15se      > f15se21
@@ -10343,9 +10374,9 @@ f15se      > f15se21
 
 $0.107u3 [#334]
 2006/08/10
-6.233 total items, 0 drivers, 6.207 machines, 3.378 parents, 2.855 clones, 26 BIOSes, 0 devices, 86 requires CHDs, 167 use samples
-5.706 working, 475 not working, 0 mechanicals, 0 not mechanicals, 0 save supported, 0 save unsupported, 0 horizontal screen, 0 vertical screen
-95.133 roms, 94.962 machines roms, 0 devices roms, 85 BIOSes roms, 86 CHDs, 594 sample files, 0 sample packs, 0 good dumps, 0 no dumps, 0 bad dumps, 0 bugs fixed
+6.233 total items, 873 drivers, 6.207 machines (+10), 3.373 parents (+3), 2.860 clones (+7), 26 BIOSes, 0 devices, 86 requires CHDs, 167 use samples
+5.499 working (+10), 708 not working, 0 mechanicals, 6.233 not mechanicals (+10), 671 save supported (+2), 5.536 save unsupported (+8), 4.456 horizontal screen (+5), 1.777 vertical screen (+5)
+95.143 total roms (+183), 95.058 machines roms (+183), 0 devices roms, 85 BIOSes roms, 86 CHDs, 594 sample files, 35 sample packs, 94.176 good dumps (+171), 749 no dumps, 304 bad dumps (+2), 3 bugs fixed
 4 ren (4/0/0):
 armchmp2   > armchm2o
 sb2003     > sb2003a
@@ -10357,9 +10388,9 @@ vsnetscr   > vsnetscu
 
 $0.107u2 [#333]
 2006/08/03
-6.223 total items, 0 drivers, 6.197 machines, 3.375 parents, 2.848 clones, 26 BIOSes, 0 devices, 86 requires CHDs, 167 use samples
-5.705 working, 466 not working, 0 mechanicals, 0 not mechanicals, 0 save supported, 0 save unsupported, 0 horizontal screen, 0 vertical screen
-94.960 roms, 94.789 machines roms, 0 devices roms, 85 BIOSes roms, 86 CHDs, 594 sample files, 0 sample packs, 0 good dumps, 0 no dumps, 0 bad dumps, 0 bugs fixed
+6.223 total items, 873 drivers, 6.197 machines (+3), 3.370 parents, 2.853 clones (+3), 26 BIOSes, 0 devices, 86 requires CHDs, 167 use samples
+5.489 working (+1), 708 not working (+2), 0 mechanicals, 6.223 not mechanicals (+3), 669 save supported (+5), 5.528 save unsupported (-2), 4.451 horizontal screen (+1), 1.772 vertical screen (+2)
+94.960 total roms (+46), 94.875 machines roms (+46), 0 devices roms, 85 BIOSes roms, 86 CHDs, 594 sample files, 35 sample packs, 94.005 good dumps (+56), 749 no dumps (-1), 302 bad dumps (+1), 3 bugs fixed
 9 ren (9/0/0):
 galpani2   > galpan2t
 quartet2   > quart21
@@ -10376,9 +10407,9 @@ vstrikra   > vstriker
 
 $0.107u1 [#332]
 2006/07/29
-6.220 total items, 0 drivers, 6.194 machines, 3.375 parents, 2.845 clones, 26 BIOSes, 0 devices, 86 requires CHDs, 167 use samples
-5.703 working, 465 not working, 0 mechanicals, 0 not mechanicals, 0 save supported, 0 save unsupported, 0 horizontal screen, 0 vertical screen
-94.904 roms, 94.733 machines roms, 0 devices roms, 85 BIOSes roms, 86 CHDs, 594 sample files, 0 sample packs, 0 good dumps, 0 no dumps, 0 bad dumps, 0 bugs fixed
+6.220 total items, 873 drivers (+1), 6.194 machines (+7), 3.370 parents (+2), 2.850 clones (+5), 26 BIOSes, 0 devices, 86 requires CHDs, 167 use samples
+5.488 working (+6), 706 not working (+1), 0 mechanicals, 6.220 not mechanicals (+7), 664 save supported (+4), 5.530 save unsupported (+3), 4.450 horizontal screen (+7), 1.770 vertical screen
+94.914 total roms (+88), 94.829 machines roms (+88), 0 devices roms, 85 BIOSes roms, 86 CHDs, 594 sample files, 35 sample packs, 93.949 good dumps (+83), 750 no dumps (+5), 301 bad dumps, 13 bugs fixed
 0 ren (0/0/0):
 -
 0 del (0/0/0):
@@ -10387,9 +10418,9 @@ $0.107u1 [#332]
 
 $0.107 [#331]
 2006/07/24
-6.213 total items, 0 drivers, 6.187 machines, 3.373 parents, 2.840 clones, 26 BIOSes, 0 devices, 86 requires CHDs, 167 use samples
-5.696 working, 465 not working, 0 mechanicals, 0 not mechanicals, 0 save supported, 0 save unsupported, 0 horizontal screen, 0 vertical screen
-94.816 roms, 94.645 machines roms, 0 devices roms, 85 BIOSes roms, 86 CHDs, 594 sample files, 0 sample packs, 0 good dumps, 0 no dumps, 0 bad dumps, 0 bugs fixed
+6.213 total items, 872 drivers (+3), 6.187 machines (+18), 3.368 parents (+8), 2.845 clones (+10), 26 BIOSes, 0 devices, 86 requires CHDs, 167 use samples
+5.482 working (+8), 705 not working (+10), 0 mechanicals, 6.213 not mechanicals (+18), 660 save supported (+4), 5.527 save unsupported (+14), 4.443 horizontal screen (+13), 1.770 vertical screen (+5)
+94.826 total roms (+256), 94.741 machines roms (+256), 0 devices roms, 85 BIOSes roms, 86 CHDs, 594 sample files, 35 sample packs, 93.866 good dumps (+256), 745 no dumps, 301 bad dumps, 5 bugs fixed
 0 ren (0/0/0):
 -
 0 del (0/0/0):
@@ -10398,9 +10429,9 @@ $0.107 [#331]
 
 $0.106u13 [#330]
 2006/07/20
-6.195 total items, 0 drivers, 6.169 machines, 3.365 parents, 2.830 clones, 26 BIOSes, 0 devices, 86 requires CHDs, 165 use samples
-5.681 working, 462 not working, 0 mechanicals, 0 not mechanicals, 0 save supported, 0 save unsupported, 0 horizontal screen, 0 vertical screen
-94.553 roms, 94.382 machines roms, 0 devices roms, 85 BIOSes roms, 86 CHDs, 594 sample files, 0 sample packs, 0 good dumps, 0 no dumps, 0 bad dumps, 0 bugs fixed
+6.195 total items, 869 drivers, 6.169 machines (+2), 3.360 parents (+2), 2.835 clones, 26 BIOSes, 0 devices, 86 requires CHDs, 165 use samples
+5.474 working (+2), 695 not working, 0 mechanicals, 6.195 not mechanicals (+2), 656 save supported (+2), 5.513 save unsupported, 4.404 horizontal screen (+2), 1.765 vertical screen
+94.570 total roms (+158), 94.485 machines roms (+158), 0 devices roms, 85 BIOSes roms, 86 CHDs, 594 sample files, 35 sample packs, 93.610 good dumps (+103), 745 no dumps (+51), 301 bad dumps (+4), 1 bug fixed
 0 ren (0/0/0):
 -
 0 del (0/0/0):
@@ -10409,9 +10440,9 @@ $0.106u13 [#330]
 
 $0.106u12 [#329]
 2006/07/16
-6.193 total items, 0 drivers, 6.167 machines, 3.363 parents, 2.830 clones, 26 BIOSes, 0 devices, 86 requires CHDs, 165 use samples
-5.679 working, 462 not working, 0 mechanicals, 0 not mechanicals, 0 save supported, 0 save unsupported, 0 horizontal screen, 0 vertical screen
-94.395 roms, 94.224 machines roms, 0 devices roms, 85 BIOSes roms, 86 CHDs, 594 sample files, 0 sample packs, 0 good dumps, 0 no dumps, 0 bad dumps, 0 bugs fixed
+6.193 total items, 869 drivers, 6.167 machines, 3.358 parents, 2.835 clones, 26 BIOSes, 0 devices, 86 requires CHDs, 165 use samples
+5.472 working, 695 not working, 0 mechanicals, 6.193 not mechanicals, 654 save supported (+3), 5.513 save unsupported (-3), 4.402 horizontal screen, 1.765 vertical screen
+94.412 total roms (+474), 94.327 machines roms (+474), 0 devices roms, 85 BIOSes roms, 86 CHDs, 594 sample files, 35 sample packs, 93.507 good dumps (+328), 694 no dumps (+146), 297 bad dumps, 1 bug fixed
 0 ren (0/0/0):
 -
 0 del (0/0/0):
@@ -10420,9 +10451,9 @@ $0.106u12 [#329]
 
 $0.106u11 [#328]
 2006/07/10
-6.193 total items, 0 drivers, 6.167 machines, 3.362 parents, 2.831 clones, 26 BIOSes, 0 devices, 86 requires CHDs, 165 use samples
-5.679 working, 462 not working, 0 mechanicals, 0 not mechanicals, 0 save supported, 0 save unsupported, 0 horizontal screen, 0 vertical screen
-93.921 roms, 93.750 machines roms, 0 devices roms, 85 BIOSes roms, 86 CHDs, 594 sample files, 0 sample packs, 0 good dumps, 0 no dumps, 0 bad dumps, 0 bugs fixed
+6.193 total items, 869 drivers (+1), 6.167 machines (+4), 3.358 parents (+2), 2.835 clones (+2), 26 BIOSes, 0 devices, 86 requires CHDs, 165 use samples
+5.472 working (+2), 695 not working (+2), 0 mechanicals, 6.193 not mechanicals (+4), 651 save supported, 5.516 save unsupported (+4), 4.402 horizontal screen (+4), 1.765 vertical screen
+93.938 total roms (+51), 93.853 machines roms (+51), 0 devices roms, 85 BIOSes roms, 86 CHDs, 594 sample files, 35 sample packs, 93.179 good dumps (+50), 548 no dumps (+1), 297 bad dumps, 1 bug fixed
 2 ren (2/0/0):
 emeralda   > emeraldj
 emerldaa   > emerldja
@@ -10432,9 +10463,9 @@ emerldaa   > emerldja
 
 $0.106u10 [#327]
 2006/07/04
-6.189 total items, 0 drivers, 6.163 machines, 3.360 parents, 2.829 clones, 26 BIOSes, 0 devices, 86 requires CHDs, 165 use samples
-5.675 working, 462 not working, 0 mechanicals, 0 not mechanicals, 0 save supported, 0 save unsupported, 0 horizontal screen, 0 vertical screen
-93.870 roms, 93.699 machines roms, 0 devices roms, 85 BIOSes roms, 86 CHDs, 594 sample files, 0 sample packs, 0 good dumps, 0 no dumps, 0 bad dumps, 0 bugs fixed
+6.189 total items, 868 drivers, 6.163 machines (+2), 3.356 parents, 2.833 clones (+2), 26 BIOSes, 0 devices, 86 requires CHDs, 165 use samples
+5.470 working (+1), 693 not working (+1), 0 mechanicals, 6.189 not mechanicals (+2), 651 save supported (+20), 5.512 save unsupported (-18), 4.398  horizontal screen (+2), 1.765 vertical screen
+93.887 total roms (+46), 93.802 machines roms (+46), 0 devices roms, 85 BIOSes roms, 86 CHDs, 594 sample files, 35 sample packs, 93.129 good dumps (+44), 547 no dumps (+2), 297 bad dumps, 2 bugs fixed
 1 ren (1/0/0):
 crusnwld   > crusnw23
 0 del (0/0/0):
@@ -10443,9 +10474,9 @@ crusnwld   > crusnw23
 
 $0.106u9 [#326]
 2006/06/28
-6.187 total items, 0 drivers, 6.161 machines, 3.360 parents, 2.827 clones, 26 BIOSes, 0 devices, 86 requires CHDs, 165 use samples
-5.673 working, 462 not working, 0 mechanicals, 0 not mechanicals, 0 save supported, 0 save unsupported, 0 horizontal screen, 0 vertical screen
-93.824 roms, 93.653 machines roms, 0 devices roms, 85 BIOSes roms, 86 CHDs, 594 sample files, 0 sample packs, 0 good dumps, 0 no dumps, 0 bad dumps, 0 bugs fixed
+6.187 total items, 868 drivers, 6.161 machines, 3.356 parents (-4), 2.831 clones (+4), 26 BIOSes, 0 devices, 86 requires CHDs, 165 use samples
+5.469 working, 692 not working, 0 mechanicals, 6.187 not mechanicals, 631 save supported, 5.530 save unsupported, 4.396 horizontal screen, 1.765 vertical screen
+93.841 total roms (+112), 93.756 machines roms (+112), 0 devices roms, 85 BIOSes roms, 86 CHDs, 594 sample files, 35 sample packs, 93.085 good dumps (+103), 545 no dumps (+9), 297 bad dumps, 0 bugs fixed
 0 ren (0/0/0):
 -
 0 del (0/0/0):
@@ -10454,9 +10485,9 @@ $0.106u9 [#326]
 
 $0.106u8 [#325]
 2006/06/25
-6.187 total items, 0 drivers, 6.161 machines, 3.360 parents, 2.827 clones, 26 BIOSes, 0 devices, 86 requires CHDs, 165 use samples
-5.673 working, 462 not working, 0 mechanicals, 0 not mechanicals, 0 save supported, 0 save unsupported, 0 horizontal screen, 0 vertical screen
-93.815 roms, 93.644 machines roms, 0 devices roms, 85 BIOSes roms, 86 CHDs, 594 sample files, 0 sample packs, 0 good dumps, 0 no dumps, 0 bad dumps, 0 bugs fixed
+6.187 total items, 868 drivers, 6.161 machines, 3.360 parents (+4), 2.827 clones (-4), 26 BIOSes, 0 devices, 86 requires CHDs, 165 use samples
+5.469 working, 692 not working, 0 mechanicals, 6.187 not mechanicals, 631 save supported, 5.530 save unsupported, 4.396 horizontal screen, 1.765 vertical screen
+93.729 total roms (-103), 93.644 machines roms (-103), 0 devices roms, 85 BIOSes roms, 86 CHDs, 594 sample files, 35 sample packs, 92.982 good dumps (-103), 536 no dumps, 297 bad dumps, 2 bugs fixed
 0 ren (0/0/0):
 -
 0 del (0/0/0):
@@ -10465,9 +10496,9 @@ $0.106u8 [#325]
 
 $0.106u7 [#324]
 2006/06/22
-6.187 total items, 0 drivers, 6.161 machines, 3.360 parents, 2.827 clones, 26 BIOSes, 0 devices, 86 requires CHDs, 165 use samples
-5.673 working, 462 not working, 0 mechanicals, 0 not mechanicals, 0 save supported, 0 save unsupported, 0 horizontal screen, 0 vertical screen
-93.815 roms, 93.644 machines roms, 0 devices roms, 85 BIOSes roms, 86 CHDs, 594 sample files, 0 sample packs, 0 good dumps, 0 no dumps, 0 bad dumps, 0 bugs fixed
+6.187 total items, 868 drivers, 6.161 machines, 3.356 parents, 2.831 clones, 26 BIOSes, 0 devices, 86 requires CHDs, 165 use samples
+5.469 working, 692 not working, 0 mechanicals, 6.187 not mechanicals, 631 save supported, 5.530 save unsupported, 4.396 horizontal screen, 1.765 vertical screen
+93.832 total roms, 93.747 machines roms, 0 devices roms, 85 BIOSes roms, 86 CHDs, 594 sample files, 35 sample packs, 93.085 good dumps, 536 no dumps, 297 bad dumps, 1 bug fixed
 0 ren (0/0/0):
 -
 0 del (0/0/0):
@@ -10476,9 +10507,9 @@ $0.106u7 [#324]
 
 $0.106u6 [#323]
 2006/06/18
-6.187 total items, 0 drivers, 6.161 machines, 3.360 parents, 2.827 clones, 26 BIOSes, 0 devices, 86 requires CHDs, 165 use samples
-5.673 working, 462 not working, 0 mechanicals, 0 not mechanicals, 0 save supported, 0 save unsupported, 0 horizontal screen, 0 vertical screen
-93.815 roms, 93.644 machines roms, 0 devices roms, 85 BIOSes roms, 86 CHDs, 594 sample files, 0 sample packs, 0 good dumps, 0 no dumps, 0 bad dumps, 0 bugs fixed
+6.187 total items, 868 drivers (+4), 6.161 machines (+12), 3.356 parents (+9), 2.831 clones (+3), 26 BIOSes, 0 devices, 86 requires CHDs, 165 use samples
+5.469 working (+7), 692 not working (+5), 0 mechanicals, 6.187 not mechanicals (+12), 631 save supported, 5.530 save unsupported (+12), 4.396 horizontal screen (+6), 1.765 vertical screen (+6)
+93.832 total roms (+136), 93.747 machines roms (+136), 0 devices roms, 85 BIOSes roms, 86 CHDs, 594 sample files, 35 sample packs, 93.085 good dumps (+109), 536 no dumps (+23), 297 bad dumps (+4), 1 bug fixed
 1 ren (1/0/0):
 dblpoint   > dblpoind
 0 del (0/0/0):
@@ -10487,9 +10518,9 @@ dblpoint   > dblpoind
 
 $0.106u5 [#322]
 2006/06/08
-6.175 total items, 0 drivers, 6.149 machines, 3.351 parents, 2.824 clones, 26 BIOSes, 0 devices, 86 requires CHDs, 164 use samples
-5.666 working, 457 not working, 0 mechanicals, 0 not mechanicals, 0 save supported, 0 save unsupported, 0 horizontal screen, 0 vertical screen
-93.679 roms, 93.508 machines roms, 0 devices roms, 85 BIOSes roms, 86 CHDs, 594 sample files, 0 sample packs, 0 good dumps, 0 no dumps, 0 bad dumps, 0 bugs fixed
+6.175 total items, 864 drivers, 6.149 machines (+1), 3.347 parents (+1), 2.828 clones, 26 BIOSes, 0 devices, 86 requires CHDs, 164 use samples
+5.462 working (+1), 687 not working, 0 mechanicals, 6.175 not mechanicals (+1), 631 save supported, 5.518 save unsupported (+1), 4.390 horizontal screen (+1), 1.759 vertical screen
+93.696 total roms (+20), 93.611 machines roms (+20), 0 devices roms, 85 BIOSes roms, 86 CHDs, 594 sample files, 35 sample packs, 92.976 good dumps (+18), 513 no dumps (+4), 293 bad dumps (-2), 2 bugs fixed
 0 ren (0/0/0):
 -
 0 del (0/0/0):
@@ -10498,9 +10529,9 @@ $0.106u5 [#322]
 
 $0.106u4 [#321]
 2006/06/05
-6.174 total items, 0 drivers, 6.148 machines, 3.350 parents, 2.824 clones, 26 BIOSes, 0 devices, 86 requires CHDs, 164 use samples
-5.665 working, 457 not working, 0 mechanicals, 0 not mechanicals, 0 save supported, 0 save unsupported, 0 horizontal screen, 0 vertical screen
-93.659 roms, 93.488 machines roms, 0 devices roms, 85 BIOSes roms, 86 CHDs, 594 sample files, 0 sample packs, 0 good dumps, 0 no dumps, 0 bad dumps, 0 bugs fixed
+6.174 total items, 864 drivers, 6.148 machines, 3.346 parents, 2.828 clones, 26 BIOSes, 0 devices, 86 requires CHDs, 164 use samples
+5.461 working (+1), 687 not working (-1), 0 mechanicals, 6.174 not mechanicals, 631 save supported, 5.517 save unsupported, 4.389 horizontal screen, 1.759 vertical screen
+93.676 total roms, 93.591 machines roms, 0 devices roms, 85 BIOSes roms, 86 CHDs, 594 sample files, 35 sample packs, 92.958 good dumps, 509 no dumps, 295 bad dumps, 3 bugs fixed
 0 ren (0/0/0):
 -
 0 del (0/0/0):
@@ -10509,9 +10540,9 @@ $0.106u4 [#321]
 
 $0.106u3 [#320]
 2006/06/01
-6.174 total items, 0 drivers, 6.148 machines, 3.350 parents, 2.824 clones, 26 BIOSes, 0 devices, 86 requires CHDs, 164 use samples
-5.622 working, 460 not working, 0 mechanicals, 0 not mechanicals, 0 save supported, 0 save unsupported, 0 horizontal screen, 0 vertical screen
-93.659 roms, 93.488 machines roms, 0 devices roms, 85 BIOSes roms, 86 CHDs, 594 sample files, 0 sample packs, 0 good dumps, 0 no dumps, 0 bad dumps, 0 bugs fixed
+6.174 total items, 864 drivers, 6.148 machines (+3), 3.346 parents (+2), 2.828 clones (+1), 26 BIOSes, 0 devices, 86 requires CHDs, 164 use samples
+5.460 working (+4), 688 not working (-1), 0 mechanicals, 6.174 not mechanicals (+3), 631 save supported (+4), 5.517 save unsupported (-1), 4.389 horizontal screen (+2), 1.759 vertical screen (+1)
+93.676 total roms (+43), 93.591 machines roms (+43), 0 devices roms, 85 BIOSes roms, 86 CHDs, 594 sample files, 35 sample packs, 92.958 good dumps (+33), 509 no dumps (+5), 295 bad dumps (+5), 1 bug fixed
 1 ren (1/0/0):
 turtship   > turtshij
 0 del (0/0/0):
@@ -10520,9 +10551,9 @@ turtship   > turtshij
 
 $0.106u2 [#319]
 2006/05/25
-6.171 total items, 0 drivers, 6.145 machines, 3.346 parents, 2.825 clones, 26 BIOSes, 0 devices, 86 requires CHDs, 164 use samples
-5.662 working, 457 not working, 0 mechanicals, 0 not mechanicals, 0 save supported, 0 save unsupported, 0 horizontal screen, 0 vertical screen
-93.616 roms, 93.445 machines roms, 0 devices roms, 85 BIOSes roms, 86 CHDs, 594 sample files, 0 sample packs, 0 good dumps, 0 no dumps, 0 bad dumps, 0 bugs fixed
+6.171 total items, 864 drivers (+4), 6.145 machines (+5), 3.344 parents (+2), 2.827 clones (+3), 26 BIOSes, 0 devices, 86 requires CHDs, 164 use samples
+5.456 working (+3), 689 not working (+2), 0 mechanicals, 6.171 not mechanicals (+5), 627 save supported, 5.518 save unsupported (+5), 4.387 horizontal screen (+4), 1.758 vertical screen (+1)
+93.633 total roms (+72), 93.548 machines roms (+72), 0 devices roms, 85 BIOSes roms, 86 CHDs, 594 sample files, 35 sample packs, 92.925 good dumps (+72), 504 no dumps, 290 bad dumps, 1 bug fixed
 0 ren (0/0/0):
 -
 0 del (0/0/0):
@@ -10531,9 +10562,9 @@ $0.106u2 [#319]
 
 $0.106u1 [#318]
 2006/05/18
-6.166 total items, 0 drivers, 6.140 machines, 3.344 parents, 2.822 clones, 26 BIOSes, 0 devices, 86 requires CHDs, 164 use samples
-5.662 working, 452 not working, 0 mechanicals, 0 not mechanicals, 0 save supported, 0 save unsupported, 0 horizontal screen, 0 vertical screen
-93.544 roms, 93.373 machines roms, 0 devices roms, 85 BIOSes roms, 86 CHDs, 594 sample files, 0 sample packs, 0 good dumps, 0 no dumps, 0 bad dumps, 0 bugs fixed
+6.166 total items, 862 drivers, 6.140 machines, 3.342 parents, 2.824 clones, 26 BIOSes, 0 devices, 86 requires CHDs, 164 use samples
+5.453 working, 687 not working, 0 mechanicals, 6.166 not mechanicals, 627 save supported, 5.513 save unsupported, 4.383 horizontal screen, 1.757 vertical screen
+93.561 toal roms, 93.476 machines roms, 0 devices roms, 85 BIOSes roms, 86 CHDs, 594 sample files, 35 sample packs, 92.853 good dumps, 504 no dumps, 290 bad dumps, 1 bug fixed
 0 ren (0/0/0):
 -
 0 del (0/0/0):
@@ -10542,9 +10573,9 @@ $0.106u1 [#318]
 
 $0.106 [#317]
 2006/05/13
-6.166 total items, 0 drivers, 6.140 machines, 3.344 parents, 2.822 clones, 26 BIOSes, 0 devices, 86 requires CHDs, 164 use samples
-5.658 working, 456 not working, 0 mechanicals, 0 not mechanicals, 0 save supported, 0 save unsupported, 0 horizontal screen, 0 vertical screen
-93.544 roms, 93.373 machines roms, 0 devices roms, 85 BIOSes roms, 86 CHDs, 594 sample files, 0 sample packs, 0 good dumps, 0 no dumps, 0 bad dumps, 0 bugs fixed
+6.166 total items, 862 drivers, 6.140 machines, 3.342 parents, 2.824 clones, 26 BIOSes, 0 devices, 86 requires CHDs, 164 use samples
+5.453 working, 687 not working, 0 mechanicals, 6.166 not mechanicals, 627 save supported, 5.513 save unsupported, 4.383 horizontal screen, 1.757 vertical screen
+93.561 total roms, 93.476 machines roms, 0 devices roms, 85 BIOSes roms, 86 CHDs, 594 sample files, 35 sample packs, 92.853 good dumps, 504 no dumps, 290 bad dumps, 0 bugs fixed
 0 ren (0/0/0):
 -
 0 del (0/0/0):
@@ -10553,9 +10584,9 @@ $0.106 [#317]
 
 $0.105u5 [#316]
 2006/05/10
-6.166 total items, 0 drivers, 6.140 machines, 3.344 parents, 2.822 clones, 26 BIOSes, 0 devices, 86 requires CHDs, 164 use samples
-5.658 working, 456 not working, 0 mechanicals, 0 not mechanicals, 0 save supported, 0 save unsupported, 0 horizontal screen, 0 vertical screen
-93.544 roms, 93.373 machines roms, 0 devices roms, 85 BIOSes roms, 86 CHDs, 594 sample files, 0 sample packs, 0 good dumps, 0 no dumps, 0 bad dumps, 0 bugs fixed
+6.166 total items, 862 drivers (+2), 6.140 machines (-1/+9), 3.342 parents (-1/+5), 2.824 clones (+4), 26 BIOSes, 0 devices, 86 requires CHDs, 164 use samples
+5.453 working (+7), 687 not working (-1/+2), 0 mechanicals, 6.166 not mechanicals (-1/+9), 627 save supported, 5.513 save unsupported (-1/+9), 4.383 horizontal screen (+8), 1.757 vertical screen
+93.561 total roms (+65), 93.476 machines roms (+65), 0 devices roms, 85 BIOSes roms, 86 CHDs, 594 sample files, 35 sample packs, 92.853 good dumps (+55), 504 no dumps (+10), 290 bad dumps, 1 bug fixed
 0 ren (0/0/0):
 -
 1 del (1/0/0):
@@ -10564,9 +10595,9 @@ ddp3
 
 $0.105u4 [#315]
 2006/05/03
-6.158 total items, 0 drivers, 6.132 machines, 3.340 parents, 2.818 clones, 26 BIOSes, 0 devices, 86 requires CHDs, 164 use samples
-5.650 working, 456 not working, 0 mechanicals, 0 not mechanicals, 0 save supported, 0 save unsupported, 0 horizontal screen, 0 vertical screen
-93.479 roms, 93.308 machines roms, 0 devices roms, 85 BIOSes roms, 86 CHDs, 594 sample files, 0 sample packs, 0 good dumps, 0 no dumps, 0 bad dumps, 0 bugs fixed
+6.158 total items, 860 drivers, 6.132 machines (+8), 3.338 parents (+4), 2.820 clones (+4), 26 BIOSes, 0 devices, 86 requires CHDs, 164 use samples
+5.446 working (+7), 686 not working (+1), 0 mechanicals, 6.158 not mechanicals (+8), 627 save supported (+1), 5.505 save unsupported (+7), 4.375 horizontal screen (+8), 1.757 vertical screen
+93.496 total roms (+299), 93.411 machines roms (+299), 0 devices roms, 85 BIOSes roms, 86 CHDs, 594 sample files, 35 sample packs, 92.798 good dumps (+291), 494 no dumps (+8), 290 bad dumps, 3 bugs fixed
 2 ren (2/0/0):
 espial     > espialu
 espiale    > espial
@@ -10576,9 +10607,9 @@ espiale    > espial
 
 $0.105u3 [#314]
 2006/04/26
-6.150 total items, 0 drivers, 6.124 machines, 3.336 parents, 2.814 clones, 26 BIOSes, 0 devices, 86 requires CHDs, 164 use samples
-5.643 working, 455 not working, 0 mechanicals, 0 not mechanicals, 0 save supported, 0 save unsupported, 0 horizontal screen, 0 vertical screen
-93.180 roms, 93.009 machines roms, 0 devices roms, 85 BIOSes roms, 86 CHDs, 594 sample files, 0 sample packs, 0 good dumps, 0 no dumps, 0 bad dumps, 0 bugs fixed
+6.150 total items, 860 drivers (+1), 6.124 machines (+8), 3.334 parents (+3), 2.816 clones (+5), 26 BIOSes, 0 devices, 86 requires CHDs, 164 use samples
+5.439 working (+10), 685 not working (-2), 0 mechanicals, 6.150 not mechanicals (+8), 626 save supported (+2), 5.498 save unsupported (+6), 4.367 horizontal screen (+5), 1.757 vertical screen (+3)
+93.197 total roms (+282), 93.112 machines roms (+282), 0 devices roms, 85 BIOSes roms, 86 CHDs, 594 sample files, 35 sample packs, 92.507 good dumps (+97), 486 no dumps (+191), 290 bad dumps (-6), 5 bugs fixed
 0 ren (0/0/0):
 -
 0 del (0/0/0):
@@ -10587,9 +10618,9 @@ $0.105u3 [#314]
 
 $0.105u2 [#313]
 2006/04/19
-6.142 total items, 0 drivers, 6.116 machines, 3.333 parents, 2.809 clones, 26 BIOSes, 0 devices, 86 requires CHDs, 164 use samples
-5.636 working, 454 not working, 0 mechanicals, 0 not mechanicals, 0 save supported, 0 save unsupported, 0 horizontal screen, 0 vertical screen
-92.898 roms, 92.727 machines roms, 0 devices roms, 85 BIOSes roms, 86 CHDs, 594 sample files, 0 sample packs, 0 good dumps, 0 no dumps, 0 bad dumps, 0 bugs fixed
+6.142 total items, 859 drivers (+1), 6.116 machines (+13), 3.331 parents (+6), 2.811 clones (+7), 26 BIOSes, 0 devices, 86 requires CHDs, 164 use samples
+5.429 working (+7), 687 not working (+6), 0 mechanicals, 6.142 not mechanicals (+13), 624 save supported (+2), 5.492 save unsupported (+11), 4.362 horizontal screen (+11), 1.754 vertical screen (+2)
+92.915 total roms (+156), 92.830 machines roms (+156), 0 devices roms, 85 BIOSes roms, 86 CHDs, 594 sample files, 35 sample packs, 92.410 good dumps (+166), 295 no dumps (-12), 296 bad dumps (+2), 2 bugs fixed
 1 ren (1/0/0):
 evilngt    > btltryst
 0 del (0/0/0):
@@ -10598,9 +10629,9 @@ evilngt    > btltryst
 
 $0.105u1 [#312]
 2006/04/13
-6.129 total items, 0 drivers, 6.103 machines, 3.329 parents, 2.800 clones, 26 BIOSes, 0 devices, 86 requires CHDs, 164 use samples
-5.627 working, 450 not working, 0 mechanicals, 0 not mechanicals, 0 save supported, 0 save unsupported, 0 horizontal screen, 0 vertical screen
-92.742 roms, 92.571 machines roms, 0 devices roms, 85 BIOSes roms, 86 CHDs, 594 sample files, 0 sample packs, 0 good dumps, 0 no dumps, 0 bad dumps, 0 bugs fixed
+6.129 total items, 858 drivers, 6.103 machines (+7), 3.325 parents (+3), 2.804 clones (+4), 26 BIOSes, 0 devices, 86 requires CHDs, 164 use samples
+5.422 working (+10), 681 not working (-3), 0 mechanicals, 6.129 not mechanicals (+7), 622 save supported, 5.481 save unsupported (+7), 4.351 horizontal screen (+7), 1.752 vertical screen
+92.759 total roms (+96), 92.674 machines roms (+96), 0 devices roms, 85 BIOSes roms, 86 CHDs, 594 sample files, 35 sample packs, 92.244 good dumps (+83), 307 no dumps (+10), 294 bad dumps (+3), 1 bug fixed
 2 ren (2/0/0):
 fghthist   > fghthstu
 fghthstw   > fghthist
@@ -10610,9 +10641,9 @@ fghthstw   > fghthist
 
 $0.105 [#311]
 2006/04/04
-6.122 total items, 0 drivers, 6.096 machines, 3.324 parents, 2.798 clones, 26 BIOSes, 0 devices, 86 requires CHDs, 164 use samples
-5.620 working, 450 not working, 0 mechanicals, 0 not mechanicals, 0 save supported, 0 save unsupported, 0 horizontal screen, 0 vertical screen
-92.646 roms, 92.475 machines roms, 0 devices roms, 85 BIOSes roms (+2), 86 CHDs, 594 sample files, 0 sample packs, 0 good dumps, 0 no dumps, 0 bad dumps, 0 bugs fixed
+6.122 total items, 858 drivers, 6.096 machines, 6.122 parents, 2.780 clones, 26 BIOSes, 0 devices, 86 requires CHDs, 164 use samples
+5.412 working, 684 not working, 0 mechanicals, 6.122 not mechanicals, 622 save supported, 5.474 save unsupported, 4.344 horizontal screen (+10), 1.752 vertical screen
+92.663 total roms (+96), 92.578 machines roms (+94), 0 devices roms, 85 BIOSes roms (+2), 86 CHDs, 594 sample files, 35 sample packs, 92.161 good dumps (+94), 297 no dumps, 291 bad dumps (+2), 1 bug fixed
 0 ren (0/0/0):
 -
 0 del (0/0/0):
@@ -10621,9 +10652,9 @@ $0.105 [#311]
 
 $0.104u9 [#310]
 2006/04/02
-6.122 total items, 0 drivers, 6.096 machines, 3.324 parents, 2.798 clones, 26 BIOSes, 0 devices, 86 requires CHDs, 164 use samples
-5.620 working, 450 not working, 0 mechanicals, 0 not mechanicals, 0 save supported, 0 save unsupported, 0 horizontal screen, 0 vertical screen
-92.550 roms, 92.381 machines roms, 0 devices roms, 83 BIOSes roms, 86 CHDs, 594 sample files, 0 sample packs, 0 good dumps, 0 no dumps, 0 bad dumps, 0 bugs fixed
+6.122 total items, 858 drivers (+2), 6.096 machines (+15), 3.322 parents (+6), 2.800 clones (+9), 26 BIOSes, 0 devices, 86 requires CHDs, 164 use samples
+5.412 working (+10), 684 not working (+5), 0 mechanicals, 6.122 not mechanicals (+15), 622 save supported (+2), 5.474 save unsupported (+13), 4.334 horizontal screen (+3), 1.752 vertical screen (+2)
+92.567 total roms (+222), 92.484 machines roms (+222), 0 devices roms, 83 BIOSes roms, 86 CHDs, 594 sample files, 35 sample packs, 92.067 good dumps (+224), 297 no dumps (+1), 289 bad dumps, 4 bugs fixed
 2 ren (2/0/0):
 tappyrap   > toppyrap
 uopoko     > uopokoj
@@ -10633,9 +10664,9 @@ uopoko     > uopokoj
 
 $0.104u8 [#309]
 2006/03/30
-6.107 total items, 0 drivers, 6.081 machines, 3.318 parents, 2.789 clones, 26 BIOSes, 0 devices, 83 requires CHDs, 164 use samples
-5.612 working, 443 not working, 0 mechanicals, 0 not mechanicals, 0 save supported, 0 save unsupported, 0 horizontal screen, 0 vertical screen
-92.325 roms, 92.159 machines roms, 0 devices roms, 83 BIOSes roms, 83 CHDs, 594 sample files, 0 sample packs, 0 good dumps, 0 no dumps, 0 bad dumps, 0 bugs fixed
+6.107 total items, 856 drivers, 6.081 machines (+14), 3.316 parents (+3), 2.791 clones (+11), 26 BIOSes, 0 devices, 83 requires CHDs, 164 use samples
+5.402 working (+23), 679 not working (-9), 0 mechanicals, 6.107 not mechanicals (+14), 620 save supported (+32), 5.461 save unsupported (-18), 4.331 horizontal screen (+11), 1.750 vertical screen (+3)
+92.345 total roms (+174), 92.262 machines roms (+174), 0 devices roms, 83 BIOSes roms, 83 CHDs, 594 sample files, 35 sample pack, 91.843 good dumps (+174), 296 no dumps (+3), 289 bad dumps (-3), 8 bugs fixed
 2 ren (2/0/0):
 orunners   > orunneru
 raveracj   > raveraja
@@ -10645,9 +10676,9 @@ raveracj   > raveraja
 
 $0.104u7 [#308]
 2006/03/23
-6.093 total items, 0 drivers, 6.067 machines, 3.315 parents, 2.778 clones, 26 BIOSes, 0 devices, 83 requires CHDs, 164 use samples
-5.599 working, 442 not working, 0 mechanicals, 0 not mechanicals, 0 save supported, 0 save unsupported, 0 horizontal screen, 0 vertical screen
-92.152 roms, 91.986 machines roms, 0 devices roms, 83 BIOSes roms, 83 CHDs, 594 sample files, 0 sample packs, 0 good dumps, 0 no dumps, 0 bad dumps, 0 bugs fixed
+6.093 total items, 856 drivers, 6.067 machines (+3), 3.313 parents (+1), 2.780 clones (+2), 26 BIOSes, 0 devices, 83 requires CHDs, 164 use samples
+5.379 working (+4), 688 not working (-1), 0 mechanicals, 6.093 not mechanicals (+3), 588 save supported (+1), 5.479 save unsupported (+2), 4.320 horizontal screen (+2), 1.747 vertical screen (+1)
+92.171 total roms (+86), 92.088 machines roms (+86), 0 devices roms, 83 BIOSes roms, 83 CHDs, 594 sample files, 35 sample packs, 91.669 good dumps (+84), 293 no dumps (+2), 292 bad dumps, 10 bugs fixed
 2 ren (2/0/0):
 circusc2   > circusc3
 tx1        > tx1a
@@ -10657,9 +10688,9 @@ tx1        > tx1a
 
 $0.104u6 [#307]
 2006/03/16
-6.090 total items, 0 drivers, 6.064 machines, 3.314 parents, 2.776 clones, 26 BIOSes, 0 devices, 83 requires CHDs, 164 use samples
-5.596 working, 442 not working, 0 mechanicals, 0 not mechanicals, 0 save supported, 0 save unsupported, 0 horizontal screen, 0 vertical screen
-92.067 roms, 91.901 machines roms, 0 devices roms, 83 BIOSes roms, 83 CHDs, 594 sample files, 0 sample packs, 0 good dumps, 0 no dumps, 0 bad dumps, 0 bugs fixed
+6.090 total items, 856 drivers, 6.064 machines (+4), 3.312 parents (+2), 2.778 clones (+2), 26 BIOSes, 0 devices, 83 requires CHDs, 164 use samples
+5.375 working (+5), 689 not working (-1), 0 mechanicals, 6.090 not mechanicals (+4), 587 save supported, 5.477 save unsupported (+4), 4.318 horizontal screen (+4), 1.746 vertical screen
+92.085 total roms (+78), 92.002 machines roms (+78), 0 devices roms, 83 BIOSes roms, 83 CHDs, 594 sample files (-44), 35 sample packs, 91.585 good dumps (+78), 291 no dumps, 292 bad dumps, 5 bugs fixed
 2 ren (2/0/0):
 multchmp   > multchmk
 sdib       > sdibl
@@ -10669,9 +10700,9 @@ sdib       > sdibl
 
 $0.104u5 [#306]
 2006/03/09
-6.086 total items, 0 drivers, 6.060 machines, 3.312 parents, 2.774 clones, 26 BIOSes, 0 devices, 83 requires CHDs, 164 use samples
-5.593 working, 441 not working, 0 mechanicals, 0 not mechanicals, 0 save supported, 0 save unsupported, 0 horizontal screen, 0 vertical screen
-91.989 roms, 91.823 machines roms, 0 devices roms, 83 BIOSes roms, 83 CHDs, 638 sample files, 0 sample packs, 0 good dumps, 0 no dumps, 0 bad dumps, 0 bugs fixed
+6.086 total items, 856 drivers, 6.060 machines (+17), 3.310 parents (+5), 2.776 clones (+12), 26 BIOSes, 0 devices, 83 requires CHDs, 164 use samples
+5.370 working (+11), 690 not working (+6), 0 mechanicals, 6.086 not mechanicals (+17), 587 save supported (+10), 5.473 save unsupported (+7), 4.314 horizontal screen (+15), 1.746 vertical screen (+2)
+92.007 total roms (+237), 91.924 machines roms (+237), 0 devices roms, 83 BIOSes roms, 83 CHDs, 638 sample files, 35 sample packs, 91.507 good dumps (+218), 291 no dumps (+21), 292 bad dumps (-2), 12 bugs fixed
 8 ren (8/0/0):
 alienar    > alienaru
 outzone    > outzonea
@@ -10687,9 +10718,9 @@ tekken3a   > tekken3b
 
 $0.104u4 [#305]
 2006/03/02
-6.069 total items, 0 drivers, 6.043 machines, 3.307 parents, 2.762 clones, 26 BIOSes, 0 devices, 83 requires CHDs, 164 use samples
-5.579 working, 438 not working, 0 mechanicals, 0 not mechanicals, 0 save supported, 0 save unsupported, 0 horizontal screen, 0 vertical screen
-91.752 roms, 91.586 machines roms, 0 devices roms, 83 BIOSes roms, 83 CHDs, 638 sample files, 0 sample packs, 0 good dumps, 0 no dumps, 0 bad dumps, 0 bugs fixed
+6.069 total items, 856 drivers, 6.043 machines (+9), 3.305 parents (+7), 2.764 clones (+2), 26 BIOSes, 0 devices, 83 requires CHDs, 164 use samples
+5.359 working (+2), 684 not working (+7), 0 mechanicals, 6.069 not mechanicals (+9), 577 save supported (+144), 5.466 save unsupported (-135), 4.299 horizontal screen (+9), 1.744 vertical screen
+91.770 total roms (+88), 91.687 machines roms (+88), 0 devices roms, 83 BIOSes roms, 83 CHDs, 638 sample files, 35 sample packs, 91.289 good dumps (+88), 270 no dumps, 294 bad dumps, 7 bugs fixed
 1 ren (1/0/0):
 dbreed     > dbreed72
 0 del (0/0/0):
@@ -10698,9 +10729,9 @@ dbreed     > dbreed72
 
 $0.104u3 [#304]
 2006/02/22
-6.060 total items, 0 drivers, 6.034 machines, 3.300 parents, 2.760 clones, 26 BIOSes, 0 devices, 83 requires CHDs, 164 use samples
-5.576 working, 432 not working, 0 mechanicals, 0 not mechanicals, 0 save supported, 0 save unsupported, 0 horizontal screen, 0 vertical screen
-91.664 roms, 91.498 machines roms, 0 devices roms, 83 BIOSes roms, 83 CHDs, 638 sample files, 0 sample packs, 0 good dumps, 0 no dumps, 0 bad dumps, 0 bugs fixed
+6.060 total items, 856 drivers, 6.034 machines (+3), 3.298 parents (+1), 2.762 clones (+2), 26 BIOSes, 0 devices, 83 requires CHDs, 164 use samples
+5.357 working (+3), 677 not working, 0 mechanicals, 6.060 not mechanicals (+3), 433 save supported (+64), 5.601 save unsupported (-61), 4.290 horizontal screen (+2), 1.744 vertical screen (+1)
+91.682 total roms (+40), 91.599 machines roms (+40), 0 devices roms, 83 BIOSes roms, 83 CHDs, 638 sample files, 35 sample packs, 91.201 good dumps (+39), 270 no dumps (+1), 294 bad dumps, 6 bugs fixed
 1 ren (1/0/0):
 tokio      > tokiou
 0 del (0/0/0):
@@ -10709,9 +10740,9 @@ tokio      > tokiou
 
 $0.104u2 [#303]
 2006/02/16
-6.057 total items, 0 drivers, 6.031 machines, 3.299 parents, 2.758 clones, 26 BIOSes, 0 devices, 83 requires CHDs, 164 use samples
-5.574 working, 431 not working, 0 mechanicals, 0 not mechanicals, 0 save supported, 0 save unsupported, 0 horizontal screen, 0 vertical screen
-91.624 roms, 91.458 machines roms, 0 devices roms, 83 BIOSes roms, 83 CHDs, 638 sample files, 0 sample packs, 0 good dumps, 0 no dumps, 0 bad dumps, 0 bugs fixed
+6.057 total items, 856 drivers, 6.031 machines (+2), 3.297 parents, 2.760 clones (+2), 26 BIOSes, 0 devices, 83 requires CHDs, 164 use samples
+5.354 working (+4), 677 not working (-2), 0 mechanicals, 6.057 not mechanicals (+2), 369 save supported (+14), 5.662 save unsupported (-12), 4.288 horizontal screen (+1), 1.743 vertical screen (+1)
+91.642 total roms (+37), 91.559 machines roms (+37), 0 devices roms, 83 BIOSes roms, 83 CHDs, 638 sample files, 35 sample packs, 91.162 good dumps (+68), 269 no dumps (-22), 294 bad dumps (-9), 3 bugs fixed
 5 ren (5/0/0):
 dbldyn     > dbldynf
 dbldynj    > dbldyn
@@ -10724,9 +10755,9 @@ sharrier   > sharrirb
 
 $0.104u1 [#302]
 2006/02/09
-6.055 total items, 0 drivers, 6.029 machines, 3.299 parents, 2.756 clones, 26 BIOSes, 0 devices, 83 requires CHDs, 164 use samples
-5.571 working, 432 not working, 0 mechanicals, 0 not mechanicals, 0 save supported, 0 save unsupported, 0 horizontal screen, 0 vertical screen
-91.588 roms, 91.422 machines roms, 0 devices roms, 83 BIOSes roms, 83 CHDs, 638 sample files, 0 sample packs, 0 good dumps, 0 no dumps, 0 bad dumps, 0 bugs fixed
+6.055 total items, 856 drivers, 6.029 machines (+5), 3.297 parents (+1), 2.758 clones (+4), 26 BIOSes, 0 devices, 83 requires CHDs, 164 use samples
+5.350 working (+3), 679 not working (+2), 0 mechanicals, 6.055 not mechanicals (+5), 355 save supported, 5.674 save unsupported (+5), 4.287 horizontal screen (+5), 1.742 vertical screen
+91.605 total roms (+139), 91.522 machines roms (+139), 0 devices roms, 83 BIOSes roms, 83 CHDs, 638 sample files, 35 sample packs, 91.094 good dumps (+115), 291 no dumps (+24), 303 bad dumps, 1 bug fixed
 0 ren (0/0/0):
 -
 0 del (0/0/0):
@@ -10735,9 +10766,9 @@ $0.104u1 [#302]
 
 $0.104 [#301]
 2006/02/06
-6.050 total items, 0 drivers, 6.024 machines, 3.298 parents, 2.752 clones, 26 BIOSes, 0 devices, 83 requires CHDs, 164 use samples
-5.568 working, 430 not working, 0 mechanicals, 0 not mechanicals, 0 save supported, 0 save unsupported, 0 horizontal screen, 0 vertical screen
-91.449 roms, 91.283 machines roms, 0 devices roms, 83 BIOSes roms, 83 CHDs, 638 sample files, 0 sample packs, 0 good dumps, 0 no dumps, 0 bad dumps, 0 bugs fixed
+6.050 total items, 856 drivers, 6.024 machines (+8), 3.296 parents (+5), 2.754 clones (+3), 26 BIOSes, 0 devices, 83 requires CHDs, 164 use samples
+5.347 working (+10), 677 not working (-2), 0 mechanicals, 6.050 not mechanicals (+8), 355 save supported, 5.669 save unsupported (+8), 4.282 horizontal screen (+3), 1.742 vertical screen (+5)
+91.466 total roms (-102), 91.383 machines roms (+102), 0 devices roms, 83 BIOSes roms, 83 CHDs, 638 sample files, 35 sample packs, 90.979 good dumps (+98), 267 no dumps, 303 bad dumps (+4), 1 bug fixed
 5 ren (5/0/0):
 block      > blockjoy
 blocka     > block
@@ -10750,9 +10781,9 @@ trvwhza	   > trvwhzha
 
 $0.103u5 [#300]
 2006/02/02
-6.042 total items, 0 drivers, 6.016 machines, 3.293 parents, 2.749 clones, 26 BIOSes, 0 devices, 83 requires CHDs, 164 use samples
-5.562 working, 428 not working, 0 mechanicals, 0 not mechanicals, 0 save supported, 0 save unsupported, 0 horizontal screen, 0 vertical screen
-91.347 roms, 91.181 machines roms, 0 devices roms, 83 BIOSes roms, 83 CHDs, 638 sample files, 0 sample packs, 0 good dumps, 0 no dumps, 0 bad dumps, 0 bugs fixed
+6.042 total items, 856 drivers, 6.016 machines (-1/+11), 3.291 parents, 2.751 clones (-1/+11), 26 BIOSes, 0 devices, 83 requires CHDs, 164 use samples
+5.337 working (-1/+7), 679 not working (+4), 0 mechanicals, 6.042 not mechanicals (-1/+11), 355 save supported (-1), 5.661 save unsupported (-1/+12), 4.279 horizontal screen (+9), 1.737 vertical screen (+1)
+91.364 total roms (+256), 91.281 machines roms (+256), 0 devices roms, 83 BIOSes roms, 83 CHDs, 638 sample files, 35 sample packs, 90.881 good dumps (+256), 267 no dumps, 299 bad dumps, 1 bug fixed
 6 ren (6/0/0):
 joustg     > joust
 rockn2b    > rockn2
@@ -10766,9 +10797,9 @@ svcpcbj
 
 $0.103u4 [#299]
 2006/01/26
-6.032 total items, 0 drivers, 6.006 machines, 3.293 parents, 2.739 clones, 26 BIOSes, 0 devices, 83 requires CHDs, 164 use samples
-5.551 working, 429 not working, 0 mechanicals, 0 not mechanicals, 0 save supported, 0 save unsupported, 0 horizontal screen, 0 vertical screen
-91.091 roms, 90.925 machines roms, 0 devices roms, 83 BIOSes roms, 83 CHDs, 638 sample files, 0 sample packs, 0 good dumps, 0 no dumps, 0 bad dumps, 0 bugs fixed
+6.032 total items, 856 drivers (+2), 6.006 machines (+6), 3.291 parents (+3), 2.741 clones (+3), 26 BIOSes, 0 devices, 83 requires CHDs, 164 use samples
+5.331 working (+7), 675 not working (-1), 0 mechanicals, 6.032 not mechanicals (+6), 356 save supported (+7), 5.650 save unsupported (-1), 4.270 horizontal screen (+4), 1.736 vertical screen (+2)
+91.108 total roms (+73), 91.025 machines roms (+73), 0 devices roms, 83 BIOSes roms, 83 CHDs, 638 sample files, 35 sample packs, 90.625 good dumps (+72), 267 no dumps (-2), 299 bad dumps (+3), 1 bug fixed
 1 ren (1/0/0):
 catnmous   > catmousa
 0 del (0/0/0):
@@ -10777,9 +10808,9 @@ catnmous   > catmousa
 
 $0.103u3 [#298]
 2006/01/19
-6.026 total items, 0 drivers, 6.000 machines, 3.291 parents, 2.735 clones, 26 BIOSes, 0 devices, 83 requires CHDs, 163 use samples
-5.547 working, 427 not working, 0 mechanicals, 0 not mechanicals, 0 save supported, 0 save unsupported, 0 horizontal screen, 0 vertical screen
-91.018 roms, 90.852 machines roms, 0 devices roms, 83 BIOSes roms, 83 CHDs, 638 sample files, 0 sample packs, 0 good dumps, 0 no dumps, 0 bad dumps, 0 bugs fixed
+6.026 total items, 854 drivers, 6.000 machines (+7), 3.288 parents (+3), 2.738 clones (+4), 26 BIOSes, 0 devices, 83 requires CHDs, 163 use samples
+5.324 working (+12), 676 not working (-5), 0 mechanicals, 6.026 not mechanicals (+7), 349 save supported, 5.651 save unsupported (+7), 4.266 horizontal screen (+7), 1.734 vertical screen
+91.035 total roms (+147), 90.952 machines roms (+147), 0 devices roms, 83 BIOSes roms, 83 CHDs, 638 sample files, 35 sample packs, 90.553 good dumps (+149), 269 no dumps (-6), 296 bad dumps (+4), 0 bugs fixed
 1 ren (1/0/0):
 sf2049te   > sf2049
 0 del (0/0/0):
@@ -10788,9 +10819,9 @@ sf2049te   > sf2049
 
 $0.103u2 [#297]
 2006/01/11
-6.021 total items, 0 drivers, 5.995 machines, 3.288 parents, 2.733 clones, 26 BIOSes, 0 devices, 83 requires CHDs, 163 use samples
-5.541 working, 418 not working, 0 mechanicals, 0 not mechanicals, 0 save supported, 0 save unsupported, 0 horizontal screen, 0 vertical screen
-90.934 roms, 90.768 machines roms, 0 devices roms, 83 BIOSes roms (+1), 83 CHDs, 638 sample files, 0 sample packs, 0 good dumps, 0 no dumps, 0 bad dumps, 0 bugs fixed
+6.019 total items, 854 drivers (+3), 5.993 machines (+41), 3.285 parents (+29), 2.734 clones (+13), 26 BIOSes (+1), 0 devices, 83 requires CHDs, 163 use samples
+5.312 working (+35), 681 not working (+6), 0 mechanicals, 6.019 not mechanicals (+42), 349 save supported, 5.644 save unsupported (+41), 4.259 horizontal screen (+35), 1.734 vertical screen (+6)
+90.888 total roms (+626), 90.805 machines roms (+625), 0 devices roms, 83 BIOSes roms (+1), 83 CHDs, 638 sample files, 35 sample packs, 90.404 good dumps (+623), 275 no dumps (+3), 292 bad dumps, 5 bugs fixed
 2 ren (2/0/0):
 kf2k2pa    > kf2k2pla
 mgcrystl   > mgcrysto
@@ -10800,9 +10831,9 @@ mgcrystl   > mgcrysto
 
 $0.103u1 [#296]
 2006/01/04
-5.977 total items, 0 drivers, 5.952 machines, 3.261 parents, 2.716 clones, 25 BIOSes, 0 devices, 83 requires CHDs, 163 use samples
-5.507 working, 420 not working, 0 mechanicals, 0 not mechanicals, 0 save supported, 0 save unsupported, 0 horizontal screen, 0 vertical screen
-90.263 roms, 90.098 machines roms, 0 devices roms, 82 BIOSes roms, 83 CHDs, 638 sample files, 0 sample packs, 0 good dumps, 0 no dumps, 0 bad dumps, 0 bugs fixed
+5.977 total items, 851 drivers, 5.952 machines (+9), 3.256 parents (+4), 2.721 clones (+5), 25 BIOSes, 0 devices, 83 requires CHDs, 163 use samples
+5.277 working (+14), 675 not working (-5), 0 mechanicals, 5.977 not mechanicals (+9), 349 save supported, 5.603 save unsupported (+9), 4.224 horizontal screen (+7), 1.728 vertical screen (+2)
+90.262 total roms (+122), 90.180 machines roms (+122), 0 devices roms, 82 BIOSes roms, 83 CHDs, 638 sample files, 35 sample packs, 89.781 good dumps (+126), 272 no dumps (+1), 292 bad dumps (-5), 1 bug fixed
 1 ren (1/0/0):
 tstrike	   > tstrikea
 0 del (0/0/0):
@@ -10811,9 +10842,9 @@ tstrike	   > tstrikea
 
 $0.103 [#295]
 2005/12/29
-5.968 total items, 0 drivers, 5.943 machines, 3.255 parents, 2.713 clones, 25 BIOSes, 0 devices, 83 requires CHDs, 162 use samples
-5.498 working, 420 mechanicals 0, 0 not mechanicals, 0 save supported, 0 save unsupported, 0 horizontal screen, 0 vertical screen
-90.129 roms, 89.964 machines roms, 0 devices roms, 82 BIOSes roms, 83 CHDs, 638 sample files, 0 sample packs, 0 good dumps, 0 no dumps, 0 bad dumps, 0 bugs fixed
+5.968 total items, 851 drivers (+2), 5.943 machines (+28), 3.252 parents (+13), 2.716 clones (+15), 25 BIOSes, 0 devices, 83 requires CHDs, 162 use samples
+5.263 working (+20), 680 not working (+8), 0 mechanicals, 5.968 not mechanicals (+28), 349 save supported (+6), 5.594 save unsupported (+22), 4.217 horizontal screen (+22), 1.726 vertical screen (+6)
+90.140 total roms (+473), 90.058 machines roms (+473), 0 devices roms, 82 BIOSes roms, 83 CHDs, 638 sample files, 35 sample packs, 89.655 good dumps (+462), 271 no dumps (+8), 297 bad dumps (+3), 1 bug fixed
 4 ren (4/0/0):
 powerina   > powerinb
 powerinj   > powernjb
@@ -10825,9 +10856,9 @@ swcourt    > swcourtj
 
 $0.102u5 [#294]
 2005/12/22
-5.940 total items, 0 drivers, 5.915 machines, 3.243 parents, 2.697 clones, 25 BIOSes, 0 devices, 83 requires CHDs, 162 use samples
-5.471 working, 419 not working, 0 mechanicals, 0 not mechanicals, 0 save supported, 0 save unsupported, 0 horizontal screen, 0 vertical screen
-89.656 roms, 89.491 machines roms, 0 devices roms, 82 BIOSes roms, 83 CHDs, 638 sample files, 0 sample packs, 0 good dumps, 0 no dumps, 0 bad dumps, 0 bugs fixed
+5.940 total items, 849 drivers (-3), 5.915 machines (+22), 3.239 parents (+9), 2.701 clones (+13), 25 BIOSes, 0 devices, 83 requires CHDs, 162 use samples
+5.243 working (+14), 672 not working (+8), 0 mechanicals, 5.940 not mechanicals (+22), 343 save supported (+1), 5.572 save unsupported (+21), 4.195 horizontal screen (+19), 1.720 vertical screen (+3)
+89.667 total roms (+303), 89.585 machines roms (+303), 0 devices roms, 82 BIOSes roms, 83 CHDs, 638 sample files, 35 sample packs, 89.193 good dumps (+301), 263 no dumps (+4), 294 bad dumps (+2), 15 bugs fixed
 3 ren (3/0/0):
 sfru2049   > sf2049te
 soulclba   > soulclbb
@@ -10838,9 +10869,9 @@ tekkentt   > tektagt
 
 $0.102u4 [#293]
 2005/12/15
-5.918 total items, 0 drivers, 5.893 machines, 3.232 parents, 2.686 clones, 25 BIOSes, 0 devices, 79 requires CHDs, 162 use samples
-5.455 working, 413 not working, 0 mechanicals, 0 not mechanicals, 0 save supported, 0 save unsupported, 0 horizontal screen, 0 vertical screen
-89.349 roms, 89.188 machines roms, 0 devices roms, 82 BIOSes roms, 79 CHDs, 638 sample files, 0 sample packs, 0 good dumps, 0 no dumps, 0 bad dumps, 0 bugs fixed
+5.918 total items, 846 drivers, 5.893 machines (+11), 3.230 parents (+4), 2.688 clones (+7), 25 BIOSes, 0 devices, 79 requires CHDs, 162 use samples
+5.229 working (+11), 664 not working, 0 mechanicals, 5.918 not mechanicals (+11), 342 save supported, 5.551 save unsupported (+11), 4.176 horizontal screen (+10), 1.717 vertical screen (+1)
+89.364 total roms (+140), 89.282 machines roms (+140), 0 devices roms, 82 BIOSes roms, 79 CHDs, 638 sample files, 35 sample packs, 88.892 good dumps (+143), 259 no dumps (-2), 292 bad dumps, 0 bugs fixed
 7 ren (7/0/0):
 arabfgt	   > arabfgtu
 jollycdb   > jolycdcr
@@ -10855,9 +10886,9 @@ mchampdx   > mchampda
 
 $0.102u3 [#292]
 2005/12/08
-5.907 total items, 0 drivers, 5.882 machines, 3.229 parents, 2.678 clones, 25 BIOSes, 0 devices, 78 requires CHDs, 162 use samples
-5.445 working, 412 not working, 0 mechanicals, 0 not mechanicals, 0 save supported, 0 save unsupported, 0 horizontal screen, 0 vertical screen
-89.208 roms, 89.048 machines roms, 0 devices roms, 82 BIOSes roms (+1), 78 CHDs, 638 sample files, 0 sample packs, 0 good dumps, 0 no dumps, 0 bad dumps, 0 bugs fixed
+5.907 total items, 846 drivers (+1), 5.882 machines (+11), 3.226 parents (+2), 2.681 clones (+9), 25 BIOSes, 0 devices, 78 requires CHDs, 162 use samples
+5.218 working (+6), 664 not working (+5), 0 mechanicals, 5.907 not mechanicals (+11), 342 save supported, 5.540 save unsupported (+11), 4.166 horizontal screen (+10), 1.716 vertical screen (+1)
+89.224 total roms (+243), 89.142 machines roms (+242), 0 devices roms, 82 BIOSes roms (+1), 78 CHDs, 638 sample files, 35 sample packs, 88.749 good dumps (+246), 261 no dumps, 292 bad dumps (-3), 2 bugs fixed
 4 ren (4/0/0):
 kidniki	   > kidnikiu
 mvsc       > mvscu
@@ -10869,9 +10900,9 @@ xmvsf      > xmvsfr1
 
 $0.102u2 [#291]
 2005/12/01
-5.896 total items, 0 drivers, 5.871 machines, 3.226 parents, 2.670 clones, 25 BIOSes, 0 devices, 78 requires CHDs, 162 use samples
-5.436 working, 410 not working, 0 mechanicals, 0 not mechanicals, 0 save supported, 0 save unsupported, 0 horizontal screen, 0 vertical screen
-88.965 roms, 88.806 machines roms, 0 devices roms, 81 BIOSes roms, 78 CHDs, 638 sample files, 0 sample packs, 0 good dumps, 0 no dumps, 0 bad dumps, 0 bugs fixed
+5.896 total items, 845 drivers, 5.871 machines (+13), 3.224 parents (+6), 2.672 clones (+7), 25 BIOSes, 0 devices, 78 requires CHDs, 162 use samples
+5.212 working (+7), 659 not working (+6), 0 mechanicals, 5.896 not mechanicals (+13), 342 save supported, 5.529 save unsupported (+13), 4.156 horizontal screen (+11), 1.715 vertical screen (+2)
+88.981 total roms (+261), 88.900 machines roms (+261), 0 devices roms, 81 BIOSes roms, 78 CHDs, 638 sample files, 35 sample packs, 88.503 good dumps (+234), 261 no dumps (+4), 295 bad dumps (+23), 2 bugs fixed
 5 ren (5/0/0):
 splatter   > splattej
 strider2   > stridr2a
@@ -10884,9 +10915,9 @@ touchgo2   > touchgoe
 
 $0.102u1 [#290]
 2005/11/20
-5.883 total items, 0 drivers, 5.858 machines, 3.220 parents, 2.663 clones, 25 BIOSes, 0 devices, 78 requires CHDs, 162 use samples
-5.427 working, 406 not working, 0 mechanicals, 0 not mechanicals, 0 save supported, 0 save unsupported, 0 horizontal screen, 0 vertical screen
-88.704 roms, 88.545 machines roms, 0 devices roms, 81 BIOSes roms, 78 CHDs, 638 sample files, 0 sample packs, 0 good dumps, 0 no dumps, 0 bad dumps, 0 bugs fixed
+5.883 total items, 845 drivers, 5.858 machines (+10), 3.218 parents (+1), 2.665 clones (+9), 25 BIOSes, 0 devices, 78 requires CHDs, 162 use samples
+5.205 working (+9), 653 not working (+1), 0 mechanicals, 5.883 not mechanicals (+10), 342 save supported, 5.516 save unsupported (+10), 4.145 horizontal screen (+8), 1.713 vertical screen (+2)
+88.720 total roms (+86), 88.639 machines roms (+86), 0 devices roms, 81 BIOSes roms, 78 CHDs, 638 sample files, 35 sample packs, 88.269 good dumps (+87), 257 no dumps (+1), 272 bad dumps (-2), 0 bugs fixed
 8 ren (8/0/0):
 berlwall   > berlwalt
 berlwalt   > berlwall
@@ -10902,9 +10933,9 @@ stkclmns   > stkclmnj
 
 $0.102 [#289]
 2005/11/14
-5.873 total items, 0 drivers, 5.848 machines, 3.219 parents, 2.654 clones, 25 BIOSes, 0 devices, 78 requires CHDs, 162 use samples
-5.417 working, 406 not working, 0 mechanicals, 0 not mechanicals, 0 save supported, 0 save unsupported, 0 horizontal screen, 0 vertical screen
-88.618 roms, 88.459 machines roms, 0 devices roms, 81 BIOSes roms, 78 CHDs, 638 sample files, 0 sample packs, 0 good dumps, 0 no dumps, 0 bad dumps, 0 bugs fixed
+5.873 total items, 845 drivers (+1), 5.848 machines (+15), 3.217 parents (+2), 2.656 clones (+13), 25 BIOSes, 0 devices, 78 requires CHDs, 162 use samples
+5.196 working (+17), 652 not working (-2), 0 mechanicals, 5.873 not mechanicals (+15), 342 save supported (+1), 5.506 save unsupported (+14), 4.137 horizontal screen (+10), 1.711 vertical screen (+5)
+88.634 total roms (+212), 88.553 machines roms (+212), 0 devices roms, 81 BIOSes roms, 78 CHDs, 638 sample files, 35 sample packs, 88.182 good dumps (+205), 256 no dumps (+8), 274 bad dumps, 4 bugs fixed
 8 ren (8/0/0):
 avengrgs   > avengrgj
 downtown   > downtow2
@@ -10920,9 +10951,9 @@ varth      > varthr1
 
 $0.101u5 [#288]
 2005/11/04
-5.858 total items, 0 drivers, 5.833 machines, 3.217 parents, 2.641 clones, 25 BIOSes, 0 devices, 77 requires CHDs, 162 use samples
-5.405 working, 403 not working, 0 mechanicals, 0 not mechanicals, 0 save supported, 0 save unsupported, 0 horizontal screen, 0 vertical screen
-88.405 roms, 88.247 machines roms, 0 devices roms, 81 BIOSes roms, 77 CHDs, 638 sample files, 0 sample packs, 0 good dumps, 0 no dumps, 0 bad dumps, 0 bugs fixed
+5.858 total items, 844 drivers, 5.833 machines (+5), 3.215 parents (+3), 2.643 clones (+2), 25 BIOSes, 0 devices, 77 requires CHDs, 162 use samples
+5.179 working (+4), 654 not working (+1), 0 mechanicals, 5.858 not mechanicals (+5), 341 save supported, 5.492 save unsupported (+5), 4.127 horizontal screen (+5), 1.706 vertical screen
+88.422 total roms (+108), 88.341 machines roms (+108), 0 devices roms, 81 BIOSes roms, 77 CHDs, 638 sample files, 35sample packs, 87.977 good dumps (+108), 248 no dumps, 274 bad dumps, 3 bugs fixed
 1 ren (1/0/0):
 raimais	   > raimaisj
 0 del (0/0/0):
@@ -10931,9 +10962,9 @@ raimais	   > raimaisj
 
 $0.101u4 [#287]
 2005/10/30
-5.853 total items, 0 drivers, 5.828 machines, 3.214 parents, 2.639 clones, 25 BIOSes, 0 devices, 77 requires CHDs, 162 use samples
-5.401 working, 402 not working, 0 mechanicals, 0 not mechanicals, 0 save supported, 0 save unsupported, 0 horizontal screen, 0 vertical screen
-88.297 roms, 88.139 machines roms, 0 devices roms, 81 BIOSes roms, 77 CHDs, 638 sample files, 0 sample packs, 0 good dumps, 0 no dumps, 0 bad dumps, 0 bugs fixed
+5.853 total items, 844 drivers (+3), 5.828 machines (+7), 3.212 parents (+3), 2.641 clones (+4), 25 BIOSes, 0 devices, 77 requires CHDs, 162 use samples
+5.175 working (+4), 653 not working (+3), 0 mechanicals, 5.853 not mechanicals (+7), 341 save supported, 5.487 save unsupported (+7), 4.122 horizontal screen (+5), 1.706 vertical screen (+2)
+88.314 total roms, 88.233 machines roms (+72), 0 devices roms, 81 BIOSes roms, 77 CHDs, 638 sample files, 35 sample packs, 87.869 good dumps (+72), 248 no dumps, 274 bad dumps, 9 bugs fixed
 2 ren (2/0/0):
 glass      > glass10
 glassa     > glass10a
@@ -10943,9 +10974,9 @@ glassa     > glass10a
 
 $0.101u3 [#286]
 2005/10/24
-5.846 total items, 0 drivers, 5.821 machines, 3.211 parents, 2.635 clones, 25 BIOSes, 0 devices, 77 requires CHDs, 161 use samples
-5.396 working, 400 not working, 0 mechanicals, 0 not mechanicals, 0 save supported, 0 save unsupported, 0 horizontal screen, 0 vertical screen
-88.225 roms, 88.067 machines roms, 0 devices roms, 81 BIOSes roms, 77 CHDs, 638 sample files, 0 sample packs, 0 good dumps, 0 no dumps, 0 bad dumps, 0 bugs fixed
+5.846 total items, 841 drivers, 5.821 machines (+4), 3.209 parents, 2.637 clones (+4), 25 BIOSes, 0 devices, 77 requires CHDs, 161 use samples
+5.171 working (+4), 650 not working, 0 mechanicals, 5.846 not mechanicals (+4), 341 save supported, 5.480 save unsupported (+4), 4.117 horizontal screen (+3), 1.704 vertical screen (+1)
+88.242 total roms (+45), 88.161 machines roms (+45), 0 devices roms, 81 BIOSes roms, 77 CHDs, 638 sample files, 35 sample packs, 87.797 good dumps (+46), 248 no dumps, 274 bad dumps (-1), 1 bug fixed
 0 ren (0/0/0):
 -
 0 del (0/0/0):
@@ -10954,9 +10985,9 @@ $0.101u3 [#286]
 
 $0.101u2 [#285]
 2005/10/17
-5.842 total items, 0 drivers, 5.817 machines, 3.211 parents, 2.631 clones, 25 BIOSes, 0 devices, 77 requires CHDs, 161 use samples
-5.393 working, 399 not working, 0 mechanicals, 0 not mechanicals, 0 save supported, 0 save unsupported, 0 horizontal screen, 0 vertical screen
-88.180 roms, 88.022 machines roms, 0 devices roms, 81 BIOSes roms, 77 CHDs, 638 sample files, 0 sample packs, 0 good dumps, 0 no dumps, 0 bad dumps, 0 bugs fixed
+5.842 total items, 841 drivers (+2), 5.817 machines (+4), 3.209 parents (+3), 2.633 clones (+1), 25 BIOSes, 0 devices, 77 requires CHDs, 161 use samples
+5.167 working (+1), 650 not working (+3), 0 mechanicals, 5.842 not mechanicals (+4), 341 save supported, 5.476 save unsupported (+4), 4.114 horizontal screen (+4), 1.703 vertical screen
+88.197 total roms (+78), 88.116 machines roms (+78), 0 devices roms, 81 BIOSes roms, 77 CHDs, 638 sample files, 35 sample packs, 87.751 good dumps (+77), 248 no dumps (+1), 275 bad dumps (+1), 2 bugs fixed
 0 ren (0/0/0):
 -
 0 del (0/0/0):
@@ -10965,9 +10996,9 @@ $0.101u2 [#285]
 
 $0.101u1 [#284]
 2005/10/13
-5.838 total items, 0 drivers, 5.813 machines, 3.208 parents, 2.630 clones, 25 BIOSes, 0 devices, 76 requires CHDs, 161 use samples
-5.392 working, 396 not working, 0 mechanicals, 0 not mechanicals, 0 save supported, 0 save unsupported, 0 horizontal screen, 0 vertical screen
-88.101 roms, 87.944 machines roms, 0 devices roms, 81 BIOSes roms (+1), 76 CHDs, 638 sample files, 0 sample packs, 0 good dumps, 0 no dumps, 0 bad dumps, 0 bugs fixed
+5.838 total items, 839 drivers, 5.813 machines (+3), 3.206 parents, 2.632 clones (+3), 25 BIOSes, 0 devices, 76 requires CHDs, 161 use samples
+5.166 working (+2), 647 not working (+1), 0 mechanicals, 5.838 not mechanicals (+3), 341 save supported (+58), 5.472 save unsupported (-55), 4.110 horizontal screen (+3), 1.703 vertical screen
+88.119 total roms, 88.038 machines roms, 0 devices roms, 81 BIOSes roms (+1), 76 CHDs, 638 sample files, 35 sample packs, 87.674 good dumps (+94), 247 no dumps (-1), 274 bad dumps, 1 bug fixed
 0 ren (0/0/0):
 -
 0 del (0/0/0):
@@ -10976,9 +11007,9 @@ $0.101u1 [#284]
 
 $0.101 [#283]
 2005/10/09
-5.835 total items, 0 drivers, 5.810 machines, 3.208 parents, 2.627 clones, 25 BIOSes, 0 devices, 76 requires CHDs, 161 use samples
-5.390 working, 395 not working, 0 mechanicals, 0 not mechanicals, 0 save supported, 0 save unsupported, 0 horizontal screen, 0 vertical screen
-88.008 roms, 87.852 machines roms, 0 devices roms, 80 BIOSes roms, 76 CHDs, 638 sample files, 0 sample packs, 0 good dumps, 0 no dumps, 0 bad dumps, 0 bugs fixed
+5.835 total items, 839 drivers, 5.810 machines, 3.206 parents, 2.629 clones, 25 BIOSes, 0 devices, 76 requires CHDs, 161 use samples
+5.164 working, 646 not working, 0 mechanicals, 5.835 not mechanicals, 283 save supported (+236), 5.527 save unsupported (-236), 4.107 horizontal screen, 1.703 vertical screen
+88.106 total roms, 88.026 machines roms, 0 devices roms, 80 BIOSes roms, 76 CHDs, 638 sample files, 35 sample packs, 87.580 good dumps, 248 no dumps, 274 bad dumps, 0 bugs fixed
 1 ren (1/0/0):
 magic10_2  > magic102
 0 del (0/0/0):
@@ -10987,9 +11018,9 @@ magic10_2  > magic102
 
 $0.100u4 [#282]
 2005/10/06
-5.835 total items, 0 drivers, 843 drivers (+1), 5.810 machines, 3.208 parents, 2.627 clones, 25 BIOSes, 0 devices, 76 requires CHDs, 161 use samples
-5.390 working, 395 not working, 0 mechanicals, 0 not mechanicals, 0 save supported, 0 save unsupported, 0 horizontal screen, 0 vertical screen
-88.008 roms, 87.852 machines roms, 0 devices roms, 80 BIOSes roms, 76 CHDs, 638 sample files, 0 sample packs, 0 good dumps, 0 no dumps, 0 bad dumps, 0 bugs fixed
+5.835 total items, 839 drivers (+1), 5.810 machines (+7), 3.206 parents, 2.629 clones (+7), 25 BIOSes, 0 devices, 76 requires CHDs, 161 use samples
+5.164 working (+9), 646 not working (-2), 0 mechanicals, 5.835 not mechanicals (+7), 47 save supported (+47), 5.763 save unsupported (-40), 4.107 horizontal screen (+6), 1.703 vertical screen (+1)
+88.106 total roms (+71), 88.026 machines roms (+71), 0 devices roms, 80 BIOSes roms, 76 CHDs, 638 sample files, 35 sample packs, 87.580 good dumps (+74), 248 no dumps, 274 bad dumps (-3), 1 bug fixed
 4 ren (4/0/0):
 bonuscrd   > jollycdd
 igpoker    > jollycde
@@ -11001,9 +11032,9 @@ poker8 	   > bigdealb
 
 $0.100u3 [#281]
 2005/09/29
-5.828 total items, 0 drivers, 842 drivers (+2), 5.803 machines, 3.209 parents, 2.619 clones, 25 BIOSes, 0 devices, 76 requires CHDs, 161 use samples
-5.381 working, 397 not working, 0 mechanicals, 0 not mechanicals, 0 save supported, 0 save unsupported, 0 horizontal screen, 0 vertical screen
-87.937 roms, 87.781 machines roms, 0 devices roms, 80 BIOSes roms, 76 CHDs, 638 sample files, 0 sample packs, 0 good dumps, 0 no dumps, 0 bad dumps, 0 bugs fixed
+5.828 total items, 838 drivers (+2), 5.803 machines (-1/+13), 3.206 parents (+9), 2.622 clones (-1/+4), 25 BIOSes, 0 devices, 76 requires CHDs, 161 use samples
+5.155 working (+7), 648 not working (-1/+6), 0 mechanicals, 5.828 not mechanicals (-1/+13), 0 save supported, 5.803 save unsupported (+12), 4.101 horizontal screen (+9), 1.702 vertical screen (+3)
+88.035 total roms (+152), 87.955 machines roms (+152), 0 devices roms, 80 BIOSes roms, 76 CHDs, 638 sample files, 35 sample packs, 87.506 good dumps (+142), 248 no dumps (+10), 277 bad dumps, 1 bugs fixed
 1 ren (1/0/0):
 esckids	   > esckidsj
 1 del (1/0/0):
@@ -11012,9 +11043,9 @@ eaglshta
 
 $0.100u2 [#280]
 2005/09/22
-5.816 total items, 0 drivers, 840 drivers (+6), 5.791 machines, 3.200 parents, 2.616 clones, 25 BIOSes, 0 devices, 76 requires CHDs, 161 use samples
-5.370 working, 396 not working, 0 mechanicals, 0 not mechanicals, 0 save supported, 0 save unsupported, 0 horizontal screen, 0 vertical screen
-87.785 roms, 87.629 machines roms, 0 devices roms, 80 BIOSes roms, 76 CHDs, 638 sample files, 0 sample packs, 0 good dumps, 0 no dumps, 0 bad dumps, 0 bugs fixed
+5.816 total items, 836 drivers (+5), 5.791 machines (+8), 3.197 parents (+2), 2.619 clones (+6), 25 BIOSes, 0 devices, 76 requires CHDs, 161 use samples
+5.148 working (+4), 643 not working (+4), 0 mechanicals, 5.816 not mechanicals (+8), 0 save supported, 5.791 save unsupported (+8), 4.092 horizontal screen (+8), 1.699 vertical screen
+87.883 total roms (+244), 87.803 machines roms, 0 devices roms, 80 BIOSes roms, 76 CHDs, 638 sample files, 35 sample packs, 87.364 good dumps (+82), 238 no dumps (-12), 277 bad dumps, 5 bugs fixed
 2 ren (2/0/0):
 jollypkr   > jollycdb
 royalcrd   > royalcdb
@@ -11024,9 +11055,9 @@ royalcrd   > royalcdb
 
 $0.100u1 [#279]
 2005/09/15
-5.808 total items, 0 drivers, 834 drivers, 5.783 machines, 3.197 parents, 2.611 clones, 25 BIOSes, 0 devices, 76 requires CHDs, 161 use samples
-5.370 working, 396 not working, 0 mechanicals, 0 not mechanicals, 0 save supported, 0 save unsupported, 0 horizontal screen, 0 vertical screen
-87.715 roms, 87.559 machines roms, 0 devices roms, 80 BIOSes roms, 76 CHDs, 638 sample files, 0 sample packs, 0 good dumps, 0 no dumps, 0 bad dumps, 0 bugs fixed
+5.808 total items, 831 drivers (+1), 5.783 machines (+5), 3.195 parents (+4), 2.613 clones (+1), 25 BIOSes, 0 devices, 76 requires CHDs, 161 use samples
+5.144 working (+5), 639 not working, 0 mechanicals, 5.808 not mechanicals (+5), 0 save supported, 5.783 save unsupported (+5), 4.084 horizontal screen (+5), 1.699 vertical screen
+87.639 total roms (-24), 87.559 machines roms (-24), 0 devices roms, 80 BIOSes roms, 76 CHDs, 638 sample files, 35 sample packs, 87.282 good dumps (+69), 250 no dumps (-25), 277 bad dumps (+2), 0 bugs fixed
 1 ren (1/0/0):
 r360       > glocr360
 0 del (0/0/0):
@@ -11035,9 +11066,9 @@ r360       > glocr360
 
 $0.100 [#278]
 2005/09/14
-5.803 total items, 830 drivers, 5.803 machines, 3.191 parents, 2.612 clones, 0 BIOSes, 0 devices, 76 requires CHDs, 161 use samples
-5.139 working, 639 not working, 0 mechanicals, 5.803 not mechanicals, 0 save supported, 0 save unsupported, 0 horizontal screen, 0 vertical screen
-87.663 total roms, 87.663 machines roms, 0 devices roms, 80 BIOSes roms, 76 CHDs, 638 sample files, 0 sample packs, 87.213 good dumps, 251 no dumps, 275 bad dumps, 0 bugs fixed
+5.803 total items, 830 drivers, 5.778 machines, 3.191 parents, 2.612 clones, 25 BIOSes, 0 devices, 76 requires CHDs, 161 use samples
+5.139 working, 639 not working, 0 mechanicals, 5.803 not mechanicals, 0 save supported, 5.778 save unsupported, 4.079 horizontal screen, 1.699 vertical screen
+87.663 total roms, 87.583 machines roms, 0 devices roms, 80 BIOSes roms, 76 CHDs, 638 sample files, 35 sample packs, 87.213 good dumps, 251 no dumps, 275 bad dumps, 0 bugs fixed
 2 ren (2/0/0):
 tumblep2   > tumbleb2
 tumblepb   > tumbleb
