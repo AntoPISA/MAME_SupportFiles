@@ -1,7 +1,7 @@
 # MAME_SupportFiles
 
 progetto-SNAPS © 2020/2024 AntoPISA
-MAME Support Files v0.267
+MAME Support Files v0.268
 -----------------------------------
 
 The following files have been updated in this MAME cycle:
