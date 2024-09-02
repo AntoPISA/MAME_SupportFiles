@@ -1,0 +1,48 @@
+0.84u6 2004/08/03 [#193 - David Haywood]
+----------------------------------------
+
+
+New Clones supported or promoted from GAME_NOT_WORKING status:
+--------------------------------------------------------------
+Capcom Bowling (set 4) [Aaron Giles]
+Columns II: The Voyage Through Time [Brian Troha]
+Fax (alt. questions) [Pierpaolo Prazzoli]
+Le Bagnard (set 2) [Pierpaolo Prazzoli]
+Ms. Pac-Man (with speedup hack) [Aaron Giles]
+Pac-Man (Midway, with speedup hack) [Aaron Giles]
+PuckMan (Japan set 1 with speedup hack) [Aaron Giles]
+
+
+Source changes:
+---------------
+- Added a command line parameter to control which joystick axes are considered digital. If you are using a digital gamepad with MAME,  you will want to use this option. There are a number of ways to  do this:
+  * -digital all means that all axes of all connected joysticks will be treated as digital.
+  * -digital none means that all axes of all connected joysticks will be treated as analog (this is the previous behavior).
+  * -digital j2 will treat all axes of joystick #2 as digital; axes on all other joysticks will be treated as analog.
+  * -digital j1a0a1 will treat axis 0 and 1 on joystick #1 as digital; all other axes will be treated as analog.
+  * -digital j1a0a1,j2a5 will treat axis 0 and 1 on joystick #1 as digital, as well as axis 5 on joystick #2; all other axes will be treated as analog.
+  Make use of the new -verbose information to determine which joysticks and axes you should be configuring this way.
+- Added core-level support for the previously only Windows-supported controller files. These files now have the extension .cfg instead of .ini and are in the same format as the new XML-based .cfg files. See the ctrlr directory for some examples [Aaron Giles].
+- Added groupings to the master controls list so that the list size is not so unwieldy [Aaron Giles].
+- Added several more default strings and some MESS-specific fixes [Nathan Woods].
+- Added several new command line options to assist in the automatic enabling of analog controls:
+  * -paddle (keyboard|mouse|joystick|lightgun).
+  * -adstick (keyboard|mouse|joystick|lightgun).
+  * -lightgun (keyboard|mouse|joystick|lightgun).
+  * -pedal (keyboard|mouse|joystick|lightgun).
+  * -dial (keyboard|mouse|joystick|lightgun).
+  * -trackball (keyboard|mouse|joystick|lightgun).
+  For example -dial mouse will automatically enable mouse controls (just like -mouse) if a dial control is present for the selected game [Aaron Giles].
+- Added support for conditional dipswitch settings. This allows for multiple equivalent entries but with different text depending on the state of another dipswitch. See mappy.c for an example of how this works to handle the changing bonuses based on the number of lives [Aaron Giles].
+- Disabled input to the game while the user interface is in active use (prevents keypresses from affecting the underlying game) [Aaron Giles].
+- Fixed Colony 7 DIP switches [Aaron Giles].
+- Fixed enumeration of lightgun and joysticks in the Windows build. Joysticks now no longer show up unless you specify -joystick. And lightguns should work properly as absolute devices [Aaron Giles].
+- Fixed several makefile errors in the last version [Aaron Giles].
+- Fixed Williams coin inputs [Arthur Peale].
+- Hooked up 49-way joysticks in Arch Rivals and Pigskin 621AD [Aaron Giles].
+- Improved handling of interpolation for analog ports so that they don't wrap around and cause artifacts [Aaron Giles].
+- Improved -verbose output display to enumerate all joysticks and joystick axes that have been detected. Useful for the new -digital command line parameter below [Aaron Giles].
+- Made it possible to assign game-specific inputs to "None", effectively disabling them. To do this, select the input and hit enter, then cancel by hitting escape. Previously, cancelling would always reset you to the default key sequence for that input. Now, MAME alternates between the default key sequence and "None" [Aaron Giles].
+- Removed existing speedup cheat hack from Pacman/Ms Pac Man as the way it was implemented in MAME is NOT how it was implemented in the arcades. I have added the hacked software ROMs as three separate sets for Puck Man, Pac Man, and Ms. Pac Man. These hacked ROMs do not let you control the speed of the game with a button; the game is always fast, and Pac Man is faster than the ghosts. Also added a fake DIP switch to control the equivalent of the hardware version of the speedup hack. It can be set to "Disabled", "Enabled Always", or "Enabled with Button". Note that this hack speeds up everyone, including the ghosts, as the original hack did [Aaron Giles].
+- Removed hacky cheat controls from Defender/Stargate [Aaron Giles].
+- Removed PORT_CHEAT from a number of drivers and documented the cheats in the port names [El Condor].

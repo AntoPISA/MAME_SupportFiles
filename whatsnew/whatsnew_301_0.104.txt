@@ -1,0 +1,39 @@
+0.104 2006/02/06 [#301 - Aaron Giles]
+-------------------------------------
+
+
+New games added or promoted from NOT_WORKING status
+---------------------------------------------------
+Lord of Gun (USA) [Luca Elia]
+
+New clones added
+----------------
+Trivia ? Whiz (Vertical versions) [Pierpaolo Prazzoli]
+Trivia ? Whiz (Edition 4) [Pierpaolo Prazzoli]
+Phraze Craze (Sex Kit) [Pierpaolo Prazzoli]
+Police Trainer (Rev 1.0) [Brian Troha]
+
+New games marked as GAME_NOT_WORKING
+------------------------------------
+Huang Fei Hong [Luca Elia]
+
+
+MAMETesters Bug Fixed (1)
+-------------------------
+centiped0103u3ora
+
+
+Source changes:
+---------------
+- Fixed tiny.mak for the changes from 0.103u5 [Derrick Renaud].
+- Fixed NVRAM handling in Star Wars/ESB (only affects test mode) [Mathis Rosenhauer].
+- Decrypted the question ROMs in the coinmstr.c games [Nicola Salmoria].
+- Updated djboy driver with more protection information [Phil Stroffolino].
+- More NeoGeo cleanups [David Haywood].
+- Phoenix Discrete Sounds - Changed R22 to 470 ohm per real board. This should fix the remaining complaints with the discrete sound. The shot & explosion noise sounds still need discrete emulation [Derrick Renaud].
+- Added 16-segment drawing code to the vacfdisp module [El Condor].
+- Made 8-bit A,B,C,D,E,H and L registers available in the Z80 debugger [Nicola Salmoria, Aaron Giles].
+- Ensured that all core and windows files have some indication of copyright on them [Aaron Giles].
+- Shuffled a few more files around in mame.mak; rebuild clean once again to ensure correctness [Aaron Giles].
+- Removed all but the default debugger font from the source distribution [Aaron Giles].
+- Fixed miscomputed registers view size in debugger [Aaron Giles].

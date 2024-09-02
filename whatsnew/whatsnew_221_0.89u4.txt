@@ -1,0 +1,37 @@
+0.89u4 2004/12/11 [#221 - David Haywood]
+----------------------------------------
+
+
+New Games / Clones supported or promoted from GAME_NOT_WORKING status:
+----------------------------------------------------------------------
+Desert Breaker (FD1094 317-0196) [Gerald, David Haywood]
+
+Clones
+------
+Alien Storm (US, 3 Players, FD1094 317-0147) [Gerald]
+Greyhound Trivia (alt questions) [Pierpaolo Prazzoli]
+Jump Coaster (Taito) [Thierry, Gerald]
+Shinobi (set 3, System 16A, unprotected) [Gerald, Thierry]
+Tetris (Japan, System 16A, FD1094 317-0093a) [Thierry]
+Wrestle War (FD1094, 317-0102) [Andy Conroy]
+
+New Non-working
+---------------
+Jackie Chan in Fists of Fire (protection issues)
+
+
+Source changes:
+---------------
+- 074u1ora.diff fix [Rene Single].
+- Added difficulty dips in Scorpion [Chaneman].
+- Added MVP dips [Brian Troha].
+- Added support for alt bios set and changed games to use generic unknown dips in decocass driver [David Haywood].
+- Added support for DASMFLAG_STEP_OVER and DASMFLAG_STEP_OUT flags in i386 core [Nathan Woods].
+- Additional 64-bit integer related cleanups in model3/ppc [Lawrence Gold].
+- artwork070u4 fix [BUT].
+- Cleaned up z80 core, removing the optional inexact emulation mode and the leading underscores from macro names to comply with C99 naming conventions [Juergen Buchmueller].
+- Cleanup of Jackal and Mikie driver [Curt Coder].
+- Fixed a history list overrun in New Debugger when the down arrow key is pressed when the history list is empty [Nathan Woods].
+- Fixed memory.c MAX BANKS problem [Nathan Woods].
+- Fixed missing sprites in Steel Gunner [Phil Stroffolino].
+- Fixed Reset crash in decocass driver [Juergen Buchmueller].

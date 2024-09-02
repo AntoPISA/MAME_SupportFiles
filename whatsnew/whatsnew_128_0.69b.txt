@@ -1,0 +1,32 @@
+0.69b 2003/6/2 [#128 - David Haywood, aka 0.69u2]
+-------------------------------------------------
+Another source diff update, this fixes some of the problems MameTesters discovered with the new timer code, please test this well too, if anything else is broken which worked in 0.69 let us know, it could be important.
+
+
+New games supported:
+--------------------
+Evil Stone [Tomasz Slanina]
+Glass [Manuel Abadia] (this isn't playable due to protection but I've enabled it anyway)
+Mustache Boy [Tomasz Slanina, Nicola Salmoria] (previously a TESTDRIVER, decryption completed by Nicola still bad colours and no sound due to missing roms / mcu?)
+Space Cruiser [Tomasz Slanina]
+Tri-Pool [David Haywood]
+
+New clones supported
+--------------------
+Final Fight (Japan Set 2) [Razoola]
+
+
+Source changes:
+---------------
+- Added PGM Calender [Pierpaolo Prazzoli].
+- Added 'Right' in Moon Shuttle [David Haywood].
+- Changed NeoGeo to use boost_interleave for tight CPU communications instead of throwing cyces away [Aaron Giles].
+- Fixed a bug in the V60 CPU core causing it to break with the new timer system [Aaron Giles].
+- Fixed a few Misc Typos [Santeri Saarimaa].
+- Fixed a problem in snprintf.c printing out floats with fractional partswith leading zeroes [Chris Kirmse].
+- Fixed a problem which caused sound to break in games using a YM2610 using the new timer system [Aaron Giles].
+- Fixed bug in K054539 causing bad vocals in Dadandarn [R. Belmont].
+- Fixed Dipswitches and Inputs in Atlantic City Action / Broadwalk Casion [Peter Storey].
+- Sound working in BIGTWIN [Quench].
+- The use of the PIC HEX dumps for DRGNMST and BIGTWIN [Quench].
+- Various fixes to the PIC16C5x core [Quench].

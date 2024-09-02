@@ -1,0 +1,57 @@
+0.94u5 2005/03/22 [#243 - Aaron Giles]
+--------------------------------------
+
+
+New Games / Clones supported or promoted from GAME_NOT_WORKING status:
+----------------------------------------------------------------------
+Cookie & Bibi [David Haywood]
+Search Eye [Pierpaolo Prazzoli]
+Pachinko Gindama Shoubu [Angelo Salese]
+Pachinko Gindama Shoubu Deluxe [Angelo Salese]
+Shrike Avenger [Peter Sealy]
+GP Rider [Aaron Giles]
+Line of Fire [Aaron Giles]
+Bull Fighter (without Sega license) [Brian Troha, Mame Italia Forum]
+Best League (bootleg of Big Striker) [Angelo Salese, David Haywood]
+
+New games marked as GAME_NOT_WORKING
+------------------------------------
+Mazin Wars (Mega Play)
+Grand Slam Tennis (Mega Play) (These have problems with the MegaPlay / Genesis emulation)
+
+
+Source changes:
+--------------
+- segaxbd.c: Fixed missing sound in rachero/abcop. Used explicit sync to get rid of high interleave on loffire. Marked 317-0136.key bad until Nicola fixes it. Marked loffire as working now that the divide chip is better [Aaron Giles].
+- segaic16.c: Fixed several divide chip behaviors, fixing loffire and gprider. Divide by zero just returns the divisor (needs to be verified). Mode 1 divides are unsigned. Divides are only triggered by a write with A4 set [Aaron Giles].
+- midvunit.c: Turned off debugging code in the hotspots, giving a HUGE speed improvement to the V-unit games (d'oh!) [Aaron Giles].
+- realbrk.c: Fixed Pachinko Gindama Shoubu sets (Normal and DX) and added specific controls to them. Games are now playable but with a hack on the backup ram,I don't know what's going on, probably it's just missing NVRAM emulation. Reorganized a bit the memory map in the driver [Angelo Salese].
+- 2413intf: Added two new functions for the YM2413 sound chip, YM2413_register_port_0_msb_w() and YM2413_data_port_0_msb_w(),they are used y pkgnsh [Angelo Salese].
+- splash.c: Fixed Funny Strip sprite graphics [Angelo Salese].
+- jalmah.c: Improved the MCU protection code for Mahjong Daireikai & fixed various ROM loading issues now more graphics are correctly displayed [Angelo Salese].
+- dominos: Updated discrete sound to the new component value code [Derrick Renaud].
+- clowns: Added coin counter and proper watchdog. Added discrete emmulation for music and balloon popping. Added discrete emulation of the springboard hit. Fixed dipswitches [Derrick Renaud].
+- firetrk, montecar, superbug: Updated to use new 7492 counter. Changed adjusters so frequency goes higher when adjusted to the right [Derrick Renaud].
+- Changes from [Nathan Woods]:
+  6502dasm.c:
+  * Implemented dasmflags.
+  * Minor cleanups.
+  src/cpu/m6502/m6502.c:
+  * Removed RUNTIME_LOADED cruft.
+- Updated FD1094 documentation [Nicola Salmoria].
+- Corrected 'Shisen 2' visible area (it was too small) [Nicola Salmoria].
+- Fixed dipswitches in 'Shisen 2' [Pierpaolo Prazzoli].
+- Fixed transparency issue in 'Buccaneers' [Pierpaolo Prazzoli].
+- Minor update to SRMP6 driver, adding dips and updating the memory map [Sebastien Volpe].
+- The GFX format on this hardware is still not understood, however the chip used could be related to the ST0016 chip [Sebastien Volpe].
+- Update to the Kaneko drivers, loading correct roms for 'Blood Warrior' [Sebastien Volpe].
+- Model 3 video emulation update [Ville Linde].
+- Improves rendering on all the games that currently run [Aaron Giles].
+- 'Risky Challenge', 'Pushman', 'Olibochu', 'Funny Strip' dipswitches [Brian Troha].
+- Fixed ROM names in 'Shadow Dancer' sets [Chack'n].
+- sprint1/sprint2: Updated discrete sound to the new component value code [Hans Andersson].
+- Fixed seibuspi link warning [Lawrence Gold].
+- Corrected 'Galaga' and 'Bosconian Starfields' [James Rowan].
+- Fixed problem with Nemesis sound created during sound rewrite [R. Belmont].
+- Reorganized makefile slightly [Atari Ace].
+- Added P3 controls to 'Gain Ground' and fixed Dips [Unknown]

@@ -1,0 +1,68 @@
+0.35b12 1998/05/01 [#068 - Nicola Salmoria]
+-------------------------------------------
+
+
+New games supported
+-------------------
+(actfancr) Act Fancer [Bryan McPhail] (not working due to bad ROM)
+(airbustr) Air Buster (Japan) [Luca Elia]
+(alibaba)  Ali Baba and 40 Thieves [Zsolt Vasvari]
+(ballbomb) Balloon Bomber [Mike Coates]
+(cloud9)   Cloud 9 (prototype) [Mike Balfour]
+(cninja)   Caveman Ninja (World revision 3) [Gerald Vanderick]
+(combasc)  Combat School [Manuel Abadia, Phil Stroffolino]
+(dyger)    Dyger [Nicola Salmoria]
+(forgottn) Forgotten Worlds (US) [Nicola Salmoria]
+(megazone) Mega Zone [Chris Hardy]
+(mnight)   Mutant Night [Leandro Dardini, Mirko Buffoni]
+(qtono1)   Quiz Tonosama no Yabou [Nicola Salmoria] (doesn't work well, likely bad ROMs)
+(salamand) Salamander [Bryan McPhail]
+(sspaceat) Sega Space Attack (Upright) [Nicola Salmoria]
+(wtennis)  World Tennis [Zsolt Vasvari]
+(yamyam)   Yam! Yam!? [Nicola Salmoria]
+
+New clones supported
+--------------------
+(bagnard)  Le Bagnard [Gerald Vanderick]
+(combascb) Combat School (bootleg) [Manuel Abadia, Phil Stroffolino]
+(lifefrce) Lifeforce (US) [Bryan McPhail]
+(lifefrcj) Lifeforce (Japan) [Bryan McPhail]
+(mooncrs2) Moon Cresta (bootleg set 2) [Zsolt Vasvari]
+(sf2cea)   Street Fighter II' - Champion Edition (US rev A) [Nicola Salmoria]
+(sf2ceb)   Street Fighter II' - Champion Edition (US rev B) [Nicola Salmoria]
+(spaceinv) Space Invasion [Nicola Salmoria]
+(vigilntu) Vigilante (US) [Eric Hustvedt]
+(wiseguy)  Wise Guy [Nicola Salmoria]
+
+
+These drivers have improved GRAPHICS
+------------------------------------
+- Fixed Block Block title screen [Nicola Salmoria].
+- Fixed missing arrow in the radar in Over Top, but this breaks the Nam-1975 screen when you insert a coin [Nicola Salmoria].
+- Fixed the spider gfx, and sky color, in Rainbow Islands [Mike Coates].
+
+
+These drivers have new or improved SOUND
+----------------------------------------
+- Major improvements to Atari sound (e.g. speech in Toobin') [Aaron Giles].
+- Sound in Rainbow Islands [Mike Coates].
+
+
+Other drivers changes
+---------------------
+- Boss order in Super Real Darwin should be correct [José Miguel Morales Farreras].
+- Drastically reduced load times of the larger NeoGeo games [Nicola Salmoria].
+- Emulated the protection in Hippodrome, which is now working 100% [Byan McPhail].
+- Fixed F1 Dream protection workaround (note that the game still doesn't work correctly with the 68000 C core) [Mike Coates].
+- Memory card support in the NeoGeo driver. Card data is saved to the MEMCARD directory (you have to create it). Use the TAB menu to access the memory card options [Fabrice Martinez].
+- Rainbow Islands is playable (using the C-Chip dump from Jumping) [Mike Coates].
+
+
+Changes to the main program
+---------------------------
+- [DOS] All flickering problems with triple buffering should now be solved, so it's now always ON. Let me know if you have problems with it, and I'll add back an option to disable it. vsync and waitvsync are automatically disabled, so you can leave them enabled - they will only be used in tweaked VGA modes or if your video card doesn't have enough RAM to do triple buffering [Nicola Salmoria].
+
+
+Source changes:
+---------------
+- OSD_FILETYPE_MEMCARD for memory cards [Fabrice Martinez].

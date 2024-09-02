@@ -1,0 +1,28 @@
+0.88u7 2004/11/20 [#216 - David Haywood]
+----------------------------------------
+
+
+New Clones supported or promoted from GAME_NOT_WORKING status:
+--------------------------------------------------------------
+M.V.P. (Japan) [Chris Hardy]
+Dynamic Country Club (US, Encrypted, Floppy Disk) [Chris Hardy, David Haywood]
+Vanguard (Japan) [Mame32Plus]
+
+New Non-Working games / clones supported
+----------------------------------------
+Wizz Quiz (Konami) [Pierpaolo Prazzoli] (bad program rom)
+
+
+Source changes:
+---------------
+- Alien Storm is fully playable. DD Crew is fully playable but requires inputs to be fixed (currently only service coin and controls for 1 player work) [Aaron Giles].
+- Cleanups in bublbobl driver [Curt Coder].
+- Fixed colours in Super Stingray with new proms [Pierpaolo Prazzoli].
+- Improved sample support for rockola driver [Mame32Plus].
+- Laser Ghost would probably be playable if the controls were correctly hooked up [Aaron Giles].
+- M6803 patch: Modified M6803 CPU core to use an internal memory map [Nathan Woods].
+- Many improvements to Sega System Pre16,16a,16b,18 drivers: Drivers cleaned up [Aaron Giles].
+- Moonwalker requires improvements to the MCU emulation [Aaron Giles].
+- More Sega sets decrypted [Chris Hardy].
+- Most known video issues are now fixed. Alien Storm, DDCrew, Clutch Hitter, Laser Ghost, Cotton and many others have greatly improved video [Aaron Giles].
+- We will now accept bug reports at Mametesters.org for any games running on the following drivers segas16a.c, segas16b.c, segas18.c. Most of the bootlegs are still running on system16.c, please do not report bugs for these, nor for outrun or afterburner hardware [Aaron Giles].

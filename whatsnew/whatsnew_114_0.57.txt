@@ -1,0 +1,125 @@
+0.57 2002/01/01 [#114 - Nicola Salmoria]
+----------------------------------------
+
+
+New games supported:
+--------------------
+Acrobat Mission [Bryan McPhail]
+Air Gallet [Luca Elia]
+AV2Mahjong No.2 Rouge no Kaori [Takahiro Nogi]
+Battle Toads [Aaron Giles]
+Buck Rogers: Planet of Zoom [Aaron Giles]
+Car Jamboree [inside out boy]
+Chinese Casino [Takahiro Nogi]
+Crystal Gal [Takahiro Nogi]
+Destroyer [Stefan Jokisch]
+Dramatic Adventure Quiz Keith & Lucy [Luca Elia]
+Drift Out '94 - The Hard Order [Luca Elia]
+F/A [Phil Stroffolino]
+Forty-Love [Uki]
+Gourmet Battle Quiz Ryorioh CooKing [Luca Elia]
+Lovely Pop Mahjong Jan Jan Shimasyo [Luca Elia]
+Mahjong Hyper Reaction 2 [Luca Elia]
+Mahjong Pon Chin Kan [Takahiro Nogi, Uki]
+Mahjong Ren-ai Club [Takahiro Nogi]
+Mahjong Uchuu yori Ai wo komete [Takahiro Nogi]
+Meosis Magic [Luca Elia]
+Monster Slider [Luca Elia]
+Mosaic [Nicola Salmoria]
+Numan Athletics [Phil Stroffolino]
+Ojanko High School [Takahiro Nogi]
+Ojanko Yakata [Takahiro Nogi]
+Ojanko Yakata 2bankan [Takahiro Nogi]
+Onna Sansirou  - Typhoon Gal [Uki]
+Pachinko Sexy Reaction [Luca Elia]
+Playball! [Aaron Giles]
+Popper [inside out boy]
+Quiz Kokology 2 [Luca Elia]
+Reikai Doushi [Phil Stroffolino]
+Rettou Juudan Nekkyoku Janshi - Higashi Nippon Hen [Takahiro Nogi]
+Revolution X [Aaron Giles]
+SD Gundam Psycho Salamander no Kyoui [Bryan McPhail]
+Sky Base [inside out boy]
+Subroc 3D [Aaron Giles]
+Super Cross 2 [inside out boy]
+Survival Arts [Luca Elia]
+Taisen Idol-Mahjong Final Romance 2 [Takahiro Nogi, Uki]
+Taisen Mahjong FinalRomance 4 [Takahiro Nogi, Uki]
+Taisen Mahjong FinalRomance R [Takahiro Nogi, Uki]
+The Undoukai [Uki]
+Ultra Maru-hi Mahjong [Takahiro Nogi]
+Welltris [David Haywood]
+Wit's [Luca Elia]
+
+New clones supported:
+---------------------
+Block Out (Japan) [David Haywood]
+Catch-22 (= Combat) [Aaron Giles]
+Demon's World (set 2) [Brian Troha]
+Don Pachi (Korea) [Brian Troha]
+Gun Bird (Korea) [Brian Troha]
+Mahjong CLUB 90's (set 2) [Takahiro Nogi]
+Pop Flamer (protected) [Paul Priest]
+Pretty Soldier Sailor Moon (set 2) [Gansuke]
+Road Blasters (set 2) [Aaron Giles]
+Space Echo (= Speak & Rescue) [InsideOutBoy]
+Volfied (US & World) [Jarek Burczynski]
+
+
+MAME Testers bugs fixed (there are probably more)
+-----------------------
+ajax056red
+alleymas055yel
+alpha68k055red
+asukac37b16gre1.
+brkthruc055red
+captcomm36b11yel
+champbas056gre
+cvs056gre
+dariusg053gre
+elvactr37b15gre
+excitbkj37b15gre
+exterm055red
+gameplan055red
+ghouls37b11gra
+gunbird056red (to be checked)
+harddriv055red
+ironhors056gre
+msword056gre
+paperboy055yel
+razmataz056yel
+rbibb37b11red
+ridingf053gre
+snowbros056gre
+taitof3c053yel
+truxton2055gra
+wwfmaniab13gre
+
+
+These drivers have improved GRAPHICS:
+-------------------------------------
+- Fixed background color in 'Van-Van Car' [Nicola Salmoria].
+- Fixed colors in 'Battle City' and 'Vs. Tetris', plus other fixes to the vsnes driver [Angelo Salese].
+- Fixed 'Quantum' colors [Aaron Giles].
+- Misc fixes to Taito F3 [Bryan McPhail].
+
+
+These drivers have improved SOUND:
+----------------------------------
+- Added reverb to the 054539, improving sound in 'Xexex' and 'Twinbee Yahhoo' [Olivier Galibert].
+- Fixed missing speech in 'Twinbee' [Uki].
+- Fixed sound in 'Kirameki' [Uki].
+- MSM5232 support in 'Fairy Land Story' and 'Buggy Challenge' [Jarek Burczynski].
+
+
+Source changes:
+--------------------
+- Improved C-Chip simulation in 'Bonze Adventure' [Stefan Jokisch, Ruben Panossian].
+- Simulated protection in 'Pop Flamer' [Paul Priest].
+- BSMT2000 sound emulator [Aaron Giles].
+- Fixed a bug in the nec V30 disassembler [Bart].
+- Fixed OUTSB/OUTSW bugs in I86 emulation [Julien Frelat].
+- MSM5232 sound emulator [Jarek Burczynski, Hiromitsu Shioya].
+- New function get_black_pen() which allows to fillbitmap() the background with black without relying on a palette entry.
+- SSG EG type support added to YM2203 emulation (which is now complete). This fixes hbarrel wave sound on start of level 1, and some sound effects in other games (e.g. Dark Seal) [Jarek Burczynski].
+- Z180 emulator [Juergen Buchmueller].

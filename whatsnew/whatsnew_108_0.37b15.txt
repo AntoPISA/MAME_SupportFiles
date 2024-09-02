@@ -1,0 +1,63 @@
+0.37b15 2001/05/24 [#108 - Nicola Salmoria]
+-------------------------------------------
+
+
+New games supported:
+--------------------
+Bang Bang Ball [Luca Elia]
+Clash Road [Luca Elia]
+Darius Gaiden [Bryan McPhail]
+Dommy [David Haywood]
+Elevator Action Returns [Bryan McPhail]
+Gekiridan [Bryan McPhail]
+Go Go! Mile Smile [Luca Elia]
+Ixion [David Haywood]
+J. J. Squawkers [Luca Elia]
+Jitsuryoku!! Pro Yakyuu [Luca Elia]
+Land Maker [Bryan McPhail]
+Magic Bubble [Luca Elia]
+Neck & Neck [Aaron Giles]
+Power Play [Aaron Giles]
+Puzzle Bobble 4 [Bryan McPhail]
+Shuffleshot [Aaron Giles]
+Tunnel Hunt [Phil Stroffolino, Owen Rubin]
+Twin Qix [Bryan McPhail]
+Vandyke [David Haywood]
+
+
+New clones supported:
+---------------------
+Double Dragon 2 (World)
+Jungle Hunt (Brazil)
+Marble Madness (set 1)
+Rim Rockin' Basketball (v1.6)
+Shingen Samurai-Fighter (= Takeda Shingen)
+Slick Shot (V2.2)
+Strahl (set 2)
+Street Fighter: The Movie (v1.12)
+TMNT (Japan 4 Players)
+Vindicators (4/26/88)
+Wheel of Fortune (set 2)
+
+
+These drivers have improved GRAPHICS:
+-------------------------------------
+- Fixed scrolling in 'Top Secret' [Ian Patterson].
+- Fixed sprites in 'World Grand Prix' [David Graves].
+- Improved special effects and fixed pixel layer colors in the Taito F3 games [Bryan McPhail].
+
+
+These drivers have improved SOUND:
+----------------------------------
+- Fixed sound in 'Atari Basketball' [Stefan Jokisch].
+
+
+Source changes:
+--------------------
+- Fixed 'Arkanoid' "instant death in final round" bug [Frotz].
+- Fixed the NEC cpu bug that caused slowdowns in 'Raiden' [Bryan McPhail].
+- Fixed the spinner in 'Dark Planet' [Zsolt Vasvari].
+- Simulated controls in 'Slick Shot' [Aaron Giles].
+- Fixed 68020 emulation bugs that prevented many Taito F3 games from working [Bryan McPhail].
+- Rewritten the cheat engine [Ian Patterson].
+- The main binary distribution of MAME is now a completely new win32 console port. Some of the benefits are: support for full screen hardware stretching (if you have a decent video card), and a much better command line / options file parsing (ported from xmame). To create the mame.ini configuration file on startup, use the -createconfig option. -showusage lists all available options [Aaron Giles, Bernd Wiebelt].

@@ -1,0 +1,25 @@
+0.88u6 2004/11/17 [#215 - David Haywood]
+----------------------------------------
+
+
+New Non-Working games / clones supported
+----------------------------------------
+Bullet [David Haywood]
+MVP (Japan) [David Haywood] (not decrypted)
+
+
+Source changes:
+---------------
+- Fixed tinklepit p2 input [Pierpaolo Prazzoli].
+- Further improvements to S16 decryption code [Nicola Salmoria].
+- Improved sound in 'Ring Rage' [Pierpaolo Prazzoli].
+- Minor MESS specific patch [Nathan Woods].
+- More Sega S16 improvements: Video improvements, cotton title screen looks better but game currently suffers from other issues [Aaron Giles].
+- PPmast93 driver cleanups [Pierpaolo Prazzoli].
+- Support for Extra Effects in Taito F2 driver [Bryan McPhail]:
+  * Transparent sun in 1st level of Metal Black.
+  * Special effect on Metal Black level 5 boss who slides in under the bottom.
+  * Tilemap.
+  * All known effects in Gun Frontier (see the attract mode).
+  * The highlight effect in Quiz Crayon 2 map.
+  * The update also provides full 5 tilemap layer priority support in Metal Black (was previously 4 due to pdrawgfx limitation), and fixes priority problems in Ninja Kids (ninjak058gre).

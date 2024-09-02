@@ -1,0 +1,43 @@
+0.100u1 2005/09/15 [#279 - Aaron Giles]
+---------------------------------------
+
+
+New games added or promoted from NOT_WORKING status
+---------------------------------------------------
+Cookie & Bibi 3 [David Haywood, Corrado Tomaselli]
+Dragonball Z V.R.V.S. [anonymous]
+Final Lap R [R. Belmont, El Semi]
+Quiz Syukudai wo Wasuremashita [Brian Troha, Guru]
+Rough Racer [David Haywood, Team Japump]
+Speed Racer [R. Belmont, El Semi]
+
+New clone added
+----------------
+Crack Down (Japan) [David Haywood, Team Japump]
+
+New games marked as GAME_NOT_WORKING
+------------------------------------
+Quizmaster [Pierpaolo Prazzoli]
+Trail Blazer [Pierpaolo Prazzoli]
+Super Nudger II [Pierpaolo Prazzoli]
+Thunder Hurricane (ver UAA) [R. Belmont, Guru]
+
+
+Source changes:
+---------------
+- Fixed incorrect voices in the NB-1 games [R. Belmont].
+- Namco FL system updates [R. Belmont, El Semi]:
+  * Complete MCU simulation including controls and coinage (see important note about calibrating the steering at the top of the driver).
+  * Hooked up sprite banking.
+  * Added sound/music.
+  * Fixed palette bank selection.
+  * Fixed road in both games.
+  * Fixed rotation sign.
+- Namco System 22 improvements [R. Belmont]:
+  * Added real MCU-managed controls and coinage for 'Time Crisis'.
+  * Fixed reversed stereo channels for Super System 22.
+  * Fixed RAM test failure in 'Ridge Racer 2', but it still won't start up.
+  * Fixed analog controls for 'Cyber Cycles' and Ace Driver.
+  * MCU now reads the controls for Air Combat 22.
+  * Added coinage for all (non-Super) System 22 games - don't use '9' to coin up 'Ridge Racer' anymore :)
+- Fixed 'Truco Clemente' colors [David Haywood, Pierpaolo Prazzoli].

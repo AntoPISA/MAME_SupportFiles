@@ -1,0 +1,70 @@
+0.107u3 2006/08/10 [#334 - Aaron Giles]
+---------------------------------------
+
+
+New games added or promoted from NOT_WORKING status
+---------------------------------------------------
+Catacomb [Mike Coates]
+Dambusters [Norbert Kehrer]
+Legend of Heroes [Pierpaolo Prazzoli]
+Super Bubble 2003 [Pierpaolo Prazzoli]
+Trivia ? Whiz (Edition 3) [Pierpaolo Prazzoli]
+
+New clones added
+----------------
+Ace Attacker (System 16A) [Arzeno Fabrice]
+Arm Champs II v2.6 [Gerald Coy]
+Galaga (Midway set 1 with fast shoot hack) [David Widel]
+Versus Net Soccer (3 new versions) [R. Belmont, f205v]
+
+New games marked as GAME_NOT_WORKING
+------------------------------------
+Casino 5 [Pierpaolo Prazzoli]
+
+
+MAMETesters Bugs Fixed (3)
+--------------------------
+blueprnt0107u2red (Aaron Giles)
+pignewt0106u3gre([Aaron Giles)
+ui_draw_text0.107u2red (Aaron Giles)
+
+
+Source changes:
+---------------
+- 65816/377xx update [R. Belmont]:
+  * Made block transfer instructions interruptable as they are on both actual chips (previously a single opcode could eat >400,000 cycles with obvious consequences for interrupt timing).
+  * M377xx block transfers move one less byte than the 65816, fixed.
+- Added beam width control to the UI sliders [Aaron Giles].
+- Added new macro PORT_SERVICE_DIPLOC for specifying a PORT_SERVICE and a DIPLOCATION [Aaron Giles].
+- Added new option -video none which can be used for CPU benchmarking without the overhead of the video system [Aaron Giles].
+- Added options -screen, -aspect, -resolution, and -view which apply to all windows. These values can be individually overridden for each specific window by using the existing -screen<n>, -aspect<n>, -resolution<n>, and -view<n> options [Aaron Giles].
+- Added several common generic graphics layouts to vidhrdw/generic.c, for use by multiple drivers [Aaron Giles].
+- Added support for real Bubble Bobble MCU [Trinity, Nicola Salmoria].
+- Adjusted the DAC sound level on the 2612 to something more reasonable [David Haywood].
+- Began cleanup/rewrite of the Sega G-80 raster games. This is still very much a WIP, so don't report any bugs [Aaron Giles]:
+  * Cleaned up input port handling similar to the G-80 vectors.
+  * Proper clock and video speeds.
+  * Reimplemented 'Space Odyssey' background including collision detect.
+  * Fully implemented 'Pig Newton' background.
+  * Connected 2-board 'Monster Bash' more correctly.
+- Fixed bug that caused the sound sampling code to not track changes in the refresh rate [Aaron Giles].
+- Fixed remaining crashes in GDI/ddraw mode when drawing vector games [Aaron Giles].
+- Fixed track lookup implementation in Virtua Racing, bringing the game much closer to playable [Olivier Galibert].
+- Improved DIP switches in benberob [Brian Troha].
+- Improved magicfly driver. All graphics are properly decoded / banked now [Roberto Fresca].
+- Minor cleanup and speed hack removal in the konamigx.c [R. Belmont].
+- More 'Zaxxon' driver cleanups/fixes [Aaron Giles]:
+  * Fixed sound problems in 'Razmataz'.
+  * Corrected background and sprite positioning.
+  * Fixed bugs introduced in sample handling.
+  * Bootlegs and alternate versions work again.
+  * Added state saving support to the Sega universal sound board.
+- More improvements to the 6840 timer module. Updated the MPU4 driver to the most recent implementation. Convert Cosmic Chasm over to using the new system [El Condor].
+- Properly documented and connected the MCU code in the Namco System 1, System 86, Baraduke, Pacland, and Sky Kid drivers [Brian Troha].
+- Removed the -artwork option to avoid confusion. If you want to run without any artwork, use -view standard instead [Aaron Giles].
+- Renamed "Native" views to "Pixel Aspect" views to avoid the confusion that they are anything but artificial aspect ratios [Aaron Giles].
+- Taito JC update [Ville Linde]:
+  * Some general improvements to the driver.
+  * Added some more opcodes to the TMS320C51 core.
+  * Improved the M2 driver so that the M2 kernel starts to boot, but it hangs quite soon due to some multiprocessor issues [Ville Linde].
+- Updated several games' input ports to use IPT_BILL1 for bill acceptors [ClawGrip].

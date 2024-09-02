@@ -1,0 +1,86 @@
+0.37b6 2000/08/20 [#099 - Nicola Salmoria]
+-----------------------------------------
+
+
+New games supported:
+--------------------
+(batugnsp) Batsugun (Special Ver.) [Quench]
+(bigkarnk) Big Karnak [Manuel Abadia]
+(biomtoy)  Biomechanical Toy (Unprotected) [Manuel Abadia]
+(bluehawk) Blue Hawk [Nicola Salmoria]
+(bssoccer) Back Street Soccer [Luca Elia]
+(exerizrb) Exerizer (Japan) (bootleg) [Luca Elia]
+(galspnbl) Gals Pinball [Nicola Salmoria]
+(karianx)  Karian Cross [Nicola Salmoria]
+(knightsu) Knights of the Round (US) [Nicola Salmoria]
+(kurikina) Kuri Kinton (prototype?) [Nicola Salmoria]
+(kurikint) Kuri Kinton (World) [Nicola Salmoria]
+(lastday)  The Last Day (set 1) [Nicola Salmoria]
+(lastdaya) The Last Day (set 2) [Nicola Salmoria]
+(logicpr2) Logic Pro 2 (Japan) [Nicola Salmoria]
+(logicpro) Logic Pro [Nicola Salmoria]
+(megab)    Mega Blast (World) [Brad Oliver]
+(megabj)   Mega Blast (Japan) [Brad Oliver]
+(metalb)   Metal Black (World) [David Graves]
+(metalbj)  Metal Black (Japan) [David Graves]
+(pc_cntra) PlayChoice-10: Contra [Ernesto Corvi]
+(pc_ddrgn) PlayChoice-10: Double Dragon [Ernesto Corvi]
+(pc_duckh) PlayChoice-10: Duck Hunt [Ernesto Corvi]
+(pc_ebike) PlayChoice-10: Excite Bike [Ernesto Corvi]
+(pc_goons) PlayChoice-10: The Goonies [Ernesto Corvi]
+(pc_miket) PlayChoice-10: Mike Tyson's Punchout [Ernesto Corvi]
+(pc_ngaid) PlayChoice-10: Ninja Gaiden [Ernesto Corvi]
+(pc_pwrst) PlayChoice-10: Pro Wrestling [Ernesto Corvi]
+(pc_rnatk) PlayChoice-10: Rush N' Attack [Ernesto Corvi]
+(pc_smb)   PlayChoice-10: Super Mario Bros. [Ernesto Corvi]
+(pc_smb3)  PlayChoice-10: Super Mario Bros. 3 [Ernesto Corvi]
+(pc_tkfld) PlayChoice-10: Track & Field [Ernesto Corvi]
+(pipibibi) Pipi & Bibis / Whoopee (Japan) (bootleg ?) [Nicola Salmoria]
+(playch10) PlayChoice-10 BIOS [Ernesto Corvi]
+(plgirls)  Play Girls [Nicola Salmoria]
+(plgirls2) Play Girls 2 [Nicola Salmoria]
+(pollux)   Pollux [Nicola Salmoria]
+(popeyef)  Popeye (rev. F) [Nicola Salmoria]
+(primella) Primella [Nicola Salmoria]
+(rshark)   R-Shark [Nicola Salmoria]
+(skyfox)   Sky Fox [Luca Elia]
+(slammasu) Saturday Night Slam Masters (US) [Nicola Salmoria]
+(spacbeam) Space Beam [Peter Trauner]
+(tatsujn2) Truxton II / Tatsujin II / Tatsujin Oh (Japan) [Yochizo]
+(videopin) Video Pinball [Sebastien Monassa]
+
+New clones supported:
+---------------------
+(batugnsp) Batsugun (Special Ver.) [Quench]
+(exerizrb) Exerizer (Japan) (bootleg) [Luca Elia]
+(knightsu) Knights of the Round (US) [Nicola Salmoria]
+(kurikina) Kuri Kinton (prototype?) [Nicola Salmoria]
+(lastdaya) The Last Day (set 2) [Nicola Salmoria]
+(megabj)   Mega Blast (Japan) [Brad Oliver]
+(metalbj)  Metal Black (Japan) [David Graves]
+(pipibibi) Pipi & Bibis / Whoopee (Japan) (bootleg ?) [Nicola Salmoria]
+(popeyef)  Popeye (rev. F) [Nicola Salmoria]
+(slammasu) Saturday Night Slam Masters (US) [Nicola Salmoria]
+
+
+Source changes:
+----------------------
+- I hope you didn't throw away unused PROMs from your archives [Nicola Salmoria].
+- Several fixes and improvements to the Taito L games (sound, priorities, speed) [Nicola Salmoria, Jarek Burczynski].
+- [DOS] Instead of the internal game name, you can use on the command line the .zip file name, it can also include path, so for example:
+  
+  MAME G:\MyBoards\pacman.zip
+
+  will be equivalent to MAME pacman -rompath G:\MyBoards [David Widel].
+- [DOS] The makefile now uses rm instead of deltree. If you don't have rm you can find it here: http://www.simtel.net/pub/simtelnet/gnu/gnuish/gnufut21.zip
+- TMS5110 emulator, used by Bagman [Jarek Burczynski].
+- Several changes to have the debugger run in the game screen under DOS. The debugger display is now entirely rendered in the core using a standard bitmap, instead of relying on the OS dependant code to simulate a character mapped display. Changes affecting porters are:
+  osd_set_display() removed
+  osd_set_screen_size() removed
+  osd_screen_update() removed
+  osd_wait_keypress() removed
+  osd_debugger_focus() added
+  osd_dbg.h removed
+  osd_update_video_and_audio() has extra debug_bitmap argument osd_allocate_colors() has parameters for the debugger palette  mamedbg.c no longer requires clock_t and clock(). It's entirely up to the OS dependant code what to do with the game and debug  bitmaps. They can be shown one at a time (giving the user a means to switch between them), or in two separate windows. osd_debugger_focus() is used to request that one of the two bitmaps be made visible to the user. Under DOS, you can switch at any time between the game and debugger display by pressing F5 [Juergen Buchmueller].
+- Removed osd_poll_joysticks(). Ports requiring polling of the joystick can do so in osd_update_video_and_audio() [Juergen Buchmueller].
+- True HD6309 emulation (instead of using the M6809) [Tim Lindner].

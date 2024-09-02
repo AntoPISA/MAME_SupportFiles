@@ -1,0 +1,63 @@
+0.36b6 1999/09/29 [#079 - Nicola Salmoria]
+------------------------------------------
+
+
+New games supported:
+--------------------
+Arch Rivals [Aaron Giles]
+Blade Master [Bryan McPhail]
+Blades of Steel (not working due to protection) [Manuel Abadia]
+Blasted [Aaron Giles]
+Gallop [Nicola Salmoria]
+Gunforce (preliminary) [Bryan McPhail]
+Hammerin' Harry [Nicola Salmoria]
+Hook (preliminary) [Bryan McPhail]
+In The Hunt (preliminary) [Bryan McPhail]
+Lethal Thunder [Bryan McPhail]
+Major Title (preliminary) [Nicola Salmoria]
+Major Title 2 (preliminary) [Bryan McPhail]
+Meikyu Jima (Kickle Cubicle) [Nicola Salmoria]
+Name that Tune [Aaron Giles]
+Pandora's Palace [Manuel Abadia]
+Pigskin 621AD [Aaron Giles]
+Power Drive [Aaron Giles]
+Rock 'n Rage [Manuel Abadia]
+R-Type [Nicola Salmoria]
+R-Type II [Nicola Salmoria]
+R-Type Leo [Bryan McPhail]
+Spy Hunter 2 [Aaron Giles]
+Tri-Sports [Aaron Giles]
+Trivial Pursuit (Baby Boomer Edition) [Aaron Giles]
+Trivial Pursuit (Genus II) [Aaron Giles]
+Trivial Pursuit (Young Player's Edition) [Aaron Giles]
+Turbo Tag [Aaron Giles]
+Undercover Cops [Bryan McPhail]
+Zwackery [Aaron Giles]
+
+New clones supported:
+---------------------
+Demolition Derby (2 players) [Aaron Giles]
+Tapper (set 2) [Aaron Giles]
+
+
+These drivers have improved GRAPHICS:
+-------------------------------------
+- Improved screen priority in 'Lifeforce', 'Salamander', 'Gradius', etc [E. Watanabe].
+- Fixed priorities and scroll offset in the Toaplan games [suz].
+
+
+These drivers have new or improved SOUND:
+-----------------------------------------
+- Fixed 'Genpei Toumaden' [Takahiro Nogi].
+- Fixed 'Ginga Ninkyouden' [Takahiro Nogi].
+- Fixed 'Xenophobe' [Aaron Giles].
+- Samples and DAC support in 'Space Panic' [Mike Coates].
+
+
+Source changes:
+--------------------
+- Gun support in 'Terminator 2'. You must use the calibration screen to calibrate the gun. When it asks the shoot the upper left corner, move the mouse towards (0,0), the middle is (128, 128) and the lower right corneris obviously (255, 255). If you have problems, delete hi/term2.hi [Zsolt Vasvari].
+- Simulated the protection in 'Renegade' [Phil Stroffolino].
+- Changed the 6821 PIA interface [Aaron Giles].
+- Fixed bug in the 6800 CMPX instructions [Jess Askey].
+- New NEC CPU cores [Oliver Bergmann].

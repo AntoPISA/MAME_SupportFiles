@@ -1,0 +1,38 @@
+0.143 2011/06/28 [#543 - Angelo Salese]
+---------------------------------------
+
+
+MAMETesters Bugs Fixed
+----------------------
+- 04340: [Crash/Freeze] firefox, firefoxa: Crash after OK (smf).
+- 04341: [Crash/Freeze] All playable sets in deco_ld.c, dlair.c, esh.c, gpworld.c, istellar.c, lpg.c, segald.c, superdq.c: Crash after OK (smf).
+- 04342: [Crash/Freeze] cubeqst, cubeqsta: Crash/Assertion after OK (smf).
+- 04343: [Crash/Freeze] All sets in baraduke.c, namcos1.c, namcos86.c, skykid.c: Immediate crash while using -DEBUG (Wilbert Pol).
+- 04347: [Crash/Freeze] mach3, cobram3, usvsthem: Stalls on its opening diagnostic screen (smf).
+- 04349: [Crash/Freeze] All sets in cliffhgr.c: Halts at "** DISC NOT UP TO SPEED *** screen (smf).
+- 04380: [Crash/Freeze] sfish2, sfish2j: Crash after OK (R. Belmont).
+- 04384: [Crash/Freeze] cottonbm: Black screen instead of intro (Angelo Salese).
+- 04388: [Documentation] specfrce: Wrong SHA1 check sum in XML data for CHD (v3 vs. v4) (Tafoid).
+
+
+Source changes:
+---------------
+- Added analog controls to Warp Speed [Mariusz Wojcieszek].
+- Added BUSRQ and WAIT input lines to the Z80 CPU core [Curt Coder].
+- Added byuu's cothread library, along with a wrapper class. Switched to using one cothread for each executable device. This functionality is strictly internal and should result in no changes in scheduling behavior. However, it now becomes possible to exit out of a device's execution in the midst of an instruction by calling machine().scheduler().make_active(). Note that this is somewhat dangerous for cores that have logic at the start of their execute loop to check for interrupts or other conditions, as those checks will be skipped upon resume, so consider this sort of early exiting to be highly experimental for now. [Aaron Giles, Miodrag Milanovic, byuu] (Please Note: cothread usage is behind a compile-time define as per now, they will be reenabled in the next dev cycle).
+- Added DE, CURSOR, HSYNC, and VSYNC line read members to MC6845 [Curt Coder].
+- Added device-relative functions for memory banking [Curt Coder].
+- Added index and ready line read functions to floppy drive [Curt Coder].
+- Added preliminary circle drawing for Warp Speed [Mariusz Wojcieszek].
+- Added support for multi level slot devices [Miodrag Milanovic].
+- cdrom: Convert Mode 1 Form 1 sectors to Mode 1 raw if requested [R. Belmont].
+- Convert Namco C352 to modern C++ device [R. Belmont].
+- eeprom: Add tag name in eeprom's verbosity [O. Galibert].
+- Fixed a bad ROM dump in pss62 (Super Famicom Box) [Y~K, MESSfan].
+- Fixed line zero irq condition and provided a sync update for MPU4 HW games [J. Wallace].
+- Fixed state saving for OKIM6376 (hopefully) [J. Wallace].
+- Readme replacement for Crusin' USA to include 'Off Road Challenge' [Guru].
+- SH4: Misc cleanups, added support for VERSION register. Naomi rev H BIOS now boots games [O. Galibert, Deunan Knute, R. Belmont].
+- Slightly improved the preliminary emulation of sfcbox [Y~K, MESSfan].
+- This is a temporary fix for Mating Game which disables the 'Line Zero' interrupt condition [J. Wallace].
+- Used a Dolbeck Systems flyer to correct the colours of the Connect 4 built-in layout [J. Wallace].

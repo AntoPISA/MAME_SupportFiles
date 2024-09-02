@@ -1,0 +1,28 @@
+0.70u1 2003/06/12 [#131 - David Haywood]
+----------------------------------------
+
+
+New games supported:
+--------------------
+Grand Tour [Tomasz Slanina]
+
+
+Source changes:
+---------------
+- Adds four new calls to control showing the fps count and the profiler [David Haywood]:
+  * void ui_show_fps_set(int show);
+  * int ui_show_fps_get(void);
+  * void ui_show_profiler_set(int show);
+  * int ui_show_profiler_get(void);
+- Adds ROM_LOAD32_DWORD [David Haywood].
+- Changed a few MAME core files for MESS (shouldn't change Mame behavior) [Nathan Woods].
+- D3D Code fixes / Improvements [Leon van Rooij].
+- Enhances the hard disk code to support sector sizes other than 512 bytes (a non-IDE harddisk in MESS for one of the TI systems uses this). src/machine/idectrl.c has been modified to take this into account; it requires that HD images be 512 bytes. The new code is fully backwards compatible with old CHDs that do not have a sector size within them [David Haywood].
+- Fixed Night Striker dips [Brian A. Troha].
+- Fixed some problems with the new alt. bios code [Chris Kirmse, Paul Priest].
+- Konami Updates and Fixes (including fix for dbz / moo / simpsons crashes in 0.70) [Acho A. Tang].
+- Made dbg_show_scanline the default [Bryan McPhail].
+- Rewrote Wolf Pack driver based on schematics [Stefan Jokisch].
+- This fixes the bug where SAVE only worked on 8bit cpus in the debugger [smf].
+- This fixes the data size parameter of the DUMP command in the debugger [smf].
+- Tiny changes to enable easy compiling under VC6/7 & older non-c99 compilers [Bryan McPhail].

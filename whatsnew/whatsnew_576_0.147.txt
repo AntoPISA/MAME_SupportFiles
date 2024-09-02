@@ -1,0 +1,141 @@
+0.147 2012/09/17 [#576 - Miodrag Milanovic]
+-------------------------------------------
+
+
+MAMETesters Bugs Fixed
+----------------------
+- 03398: [Graphics] (nss.c) nss_rob3: Unable to see enemies (Angelo Salese)
+- 04060: [Crash/Freeze] (taitogn.c) All sets in taitogn.c: NVRAM written incorrectly - games never start. (hap)
+- 04323: mjflove, rongrongg, rongrongj: [debug] Crash after exit (Phil Bennett)
+- 04831: [Crash/Freeze] (galaga.c) All sets in galaga.c: [debug] Crash immedately after OK (debug) (s.ronco)
+- 04978: [Sound] (scregg.c) dommy: Sound effects seem to be incomplete/missing (hap)
+- 04994: [Crash/Freeze] (segas16b.c) tetrbx, shinfz, isgam : Black screen (Aaron Giles)
+- 04997: [Crash/Freeze] (namcos23.c) crszoneb: [debug] Crash before OK (Tafoid)
+- 04998: [Crash/Freeze] All/Most sets in superchs.c, gunbustr.c, groundfx.c, galastrm.c, taitojc.c, undrfire.c, taito_f3.c, macrossp.c: [debug] assert: src/emu/attotime.h:146: frequency > 0 (Phil Bennett)
+- 04999: [Crash/Freeze] (pong.c) All sets in pong.c: [debug] Crash after OK (Couriersud)
+- 05000: [Crash/Freeze] (gcpinbal.c) gcpinbal: [debug] Crash before OK (Robbbert)
+- 05001: [Crash/Freeze] (bfm_sc4.c) Many sets in bfm_sc4.c: [debug] Assert after OK (Phil Bennett)
+
+
+New games added or promoted from NOT_WORKING status
+---------------------------------------------------
+Brick Zone (2 sets) [Luca Elia]
+Dodge City (9131-02) [Brian Troha, The Dumping Union]
+Draw Poker (Bally, 03-20) [S. Rider, Andrew Gardner, hap]
+F1 Super Lap [David Haywood]
+Ganbare Jajamaru Saisho wa Goo / Ganbare Jajamaru Hop Step & Jump [letoram, Gyrovision, Yohji, Smitdogg, The Dumping Union, hap]
+GTI Club [Ville Linde]
+Hang Pilot [Ville Linde]
+Little Robin [David Haywood]
+Magicball Fighting (Korea) [Guru, David Haywood]
+Solar Assault [Ville Linde]
+Thrill Drive (JAE, JAB) [Ville Linde]
+Turbo Out Run (cockpit, FD1094 317-0106) [Chris Hardy, The Dumping Union]
+
+New clones added
+----------------
+Dodge City (2131-82, set 2) - Not working [Brian Troha, The Dumping Union]
+Exciting Soccer (US) [Tirino73]
+F1 Super Lap (World) [Uncle Tom]
+Fantasia (940307 PCB) [Brian Troha, The Dumping Union]
+Ghosts'n Goblins (prototype) [Antonio Gonzalez Jr.]
+Ms. Pac-Man Heart Burn [hap]
+Superman (US) [Dave France, The Dumping Union]
+Thunder Zone (World 4 Player) [Guru]
+
+New games marked as GAME_NOT_WORKING
+------------------------------------
+LD Mahjong #4 Shabon-Dama [Yohji, ranger_lennier, Smitdogg, The Dumping Union]
+Sega Clay Challenge [Super Menteur, R. Belmont]
+
+
+Source changes:
+---------------
+- i386: xlat implementation fix [Alegend45].
+- Fixed a sign bug with CVT.WS opcode in v810 CPU core [Angelo Salese].
+- Updated netlist implementation [Couriersud]::
+  * Now supports any resolution fitting reasonably into a UINT64
+  * Execution now uses a list sorted by execution time.
+  * Implementation now supports analog and digital inputs/outputs.
+  * First step in a move to "terminals" being both input/output.
+  * Improved object model.
+  Pong:
+  * Rewrote video code, now emulates a monitor by analyzing the analog video signal and identifying vsync and hysnc pulses.
+  * Removed all hacks. Overall performance increase of about 10% over the previous "pongf" implementation.
+- Patch that enables output of <info> elements stored in software lists through -listsoftware [qmc2].
+- Flicker: Boots up, some buttons working. WIP [Robbbert].
+- Continuing new device implementation for SN76496 and clones - mrdo.c, pachifev.c, tp84.c [Osso].
+- Flicker: Added remaining inputs, some notes, sound (of sorts), marked as working [Robbbert].
+- Implemented remaining BSU opcodes in V810 CPU core [Angelo Salese].
+- Written up a bare-bones M50458 OSD video chip device, used by Nintendo Super System HW [Angelo Salese].
+- Continuing new device implementation for SN76496 and clones [Osso].
+- Written a preliminary S-3520CF RTC chip device, used by Nintendo Super System [Angelo Salese].
+- zac_1: added display, inputs, notes. ewf and sshtlzac marked as working [Robbbert].
+- Fixed G-Stream G2020's sound banking. Compared with a real PCB and everything sounds as it should [trap15].
+- Added IGT ID-023 Protocol to driver. This additional DBV protocol allows all remaining unsupported sets to accept dollar bills in-game. The protocol is switchable via driver configuration (along with denomination) [Jim Stolis].
+- Shared palette fix for certain sms-based games in Mega Tech [David Haywood].
+- 20pacgal.c: Add PCB layout for 'Pacman - 25th Anniversary Edition' [Brian Troha].
+- Preliminary implementation of the Fujitsu MB90092 OSD chip, used by Super Famicom Box [Angelo Salese].
+- Fixed for an SDL sound bug surrounding use of -speed and pausing frequently causing corrupt sound [Antonio Giner].
+- Basic emulation of the Z180 in Super Famicom Box HW [Angelo Salese, nocash].
+- Fixed default SDL OSX UI toggle key name [Curt Coder].
+- Added Swedish/Finnish SDL keymaps for OSX and Linux [Curt Coder].
+- ppc: Implemented PPC403 DMA chaining [Ville Linde].
+- Created new sprite device base class, which manages a bitmap and a sparse bitmap for tracking which areas got updated. This allows sprites to be rendered independently to their own bitmap and then mixed in a final step. Converted the Sega sprite device over to this new model, and moved the mixing steps out of the sprite implementations and into the driver- specific video updates where it belongs [Aaron Giles].
+- Added some further methods and helpers to the bitmap_t and rectangle classes [Aaron Giles].
+- Created a sega_16bit_common_base class which handles the common Sega palette RAM mappings and open bus reads [Aaron Giles].
+- nwk-tr.c: Improved LAN controller emulation [Ville Linde].
+- segaorun.c: Identified the Turbo Outrun "FD1094 317-unknown" set as 317-0106 and provided a working decryption key [Chris Hardy].
+- Verified Dip Settings using Dip Sheet and through playtesting for deadconx, deadconxj [Tafoid].
+- PowerPC: Fixed 601-type BAT processing [R. Belmont].
+- taito_x.c: Corrected the ROM names for the Superman sets. Added info about an alternate ROM layout using a daughter card and half sized mask roms. Changed 'Gigandes (Japan)' to 'Gigandes (earlier)' as both sets support English/Japanese via dipswitch. But one set has a revised and corrected service mode [Brian Troha, Dave France, The Dumping Union].
+- Improved SPC700 cycle opcode timings [Angelo Salese, byuu].
+- Fixed a major bug with 5A22 timings, that was incorrectly taking extra steals at every read, write and rmw types of opcode [Angelo Salese].
+- Moved multiplication and division operation from SNES to 5A22 CPU core file [Angelo Salese].
+- Updated looping.c to use the new tms52xx device implementation [Osso].
+- Made core able to use bios selection per slot device [Miodrag Milanovic].
+- Made S1410 device act as a SCSIHD with the custom commands, added D9060HD & ACB4070 devices to do the same thing [smf].
+- Numerous jedutil tool improvements [Kevin Eshbach]:
+  * Made some modifications to the jedutil tool to allow the viewing of simple combinatorial jeds (adding support for registered and gals in the future) by taking a jed file and printing out human-readable equations. Changed the command line options of the jedutil tool to know take an initial argument to specify what the tool should do.
+  * For example to convert a jed to bin the command is now: jedutil
+ –convert <source.jed> <dest.bin> jedutil –convert <source.bin> <dest.jed>.
+  * To view a jed file with human-readable equations the command is jedutil –view <source.jed> <pal type>.
+- gfx_element is now a class. Accessors are provided for all necessary elements. Updated some of the more, ah, creative uses/abuses of the gfx_elements [Aaron Giles].
+- Split out callbacks from scsibus_device into scscb_device, eventually this will be a SCSI device. SCSIBus_interface is no longer required and has been removed [smf].
+- DRC: Give C backend x86/x64 shift=0 behavior for consistency [R. Belmont].
+- PowerPC: 100% pass of integer portion of PPCTorture on all DRC backends [R. Belmont].
+- es5503: Preserve phase when oscillators loop [R. Belmont].
+- nwk-tr.c: Fixed LAN controller issues in 'Thrill Drive' [Ville Linde].
+- xforce: Fixed display [Robbbert].
+- Promoted brickzn to playable state [Luca Elia]
+  * Fixed gfx ROMs loading.
+  * Fixed inputs in joystick version.
+  * Alternate data decryption.
+  * Fixed alternate opcode decryption ranges.
+  * Palette encryption, banking and writes disable.
+  * Work RAM disable 
+  * Multiplexing of registers through protection.
+  * Added cheat / debugging inputs.
+- Understood how the Seibu COP collision detection really works, greatly improving Godzilla, Heated Barrel and SD Gundam RT gameplay [Angelo Salese, Smitdogg].
+- Generalized the PLS100 into a PLA device of variable amounts of inputs/outputs/terms [Curt Coder].
+- In device_state_interface, rename state() to state_int() and set_state() to set_state_int() for consistency. Update all callers. Also add set_pc() helper and updated all callers to use that instead of set_state_int(STATE_GENPC) [Aaron Giles].
+- Added device_t::state() method to get the state interface. Added redundant device_state_interface::state() method to catch redundant use of it [Aaron Giles].
+- segac2.c: Corrected the ROM names for 'ThunderForce AC' [Arzeno Fabrice].
+- Removed cpu_get_reg() and cpu_set_reg() macros in favor of using the above methods [Aaron Giles].
+- Add ambiguous execute() and memory() methods to the device_execute/memory_interfaces respectively in order to catch unnecessary usage of the corresponding device_t methods. Removed all existing redundant usage [Aaron Giles].
+- merit.c: Added dipswitches to the 'Pit Boss' sets with dipswitch locations. Reordered sets from oldest to newest. Added GAME_NO_COCKTAIL flag as these games support a cocktail mode. Mapped player 2 controls for cocktail mode [Brian Troha].
+- Closeout on old macros. Retired cputag_set_input_line and cputag_set_input_line_and_vector, replacing them with machine.device("tag")->execute().set_input_line[_and_vector] [Aaron Giles].
+- meritm.c: Various ROM name corrections and additional minor documentation [Brian Troha].
+- meritm.c: Added PCB layout and pinout for the Merit CRT-250 PCB [Brian Troha].
+- Fixed an horizontal scrolling bug in 'Sengoku Mahjong' [Angelo Salese].
+- Rotation: Fixed displays, fixed sensors so that the game is now playable [Robbbert].
+- es5503: Fix IRQ timing error introduced when I did the device conversion [R. Belmont].
+- Made accurate trigonometry maths in Seibu COP [Angelo Salese, Smitdogg].
+- Rewrote the SAA5050 Teletext character generator. Removed saa505x.c which was used by bbc.c, and refactored all drivers to use the new implementation [Curt Coder].
+- idetrl.c: Support IDE command 0x31 (IDE_COMMAND_WRITE_MULTIPLE_NORETRY) [Phil Bennett].
+- splash.c: Changed the Machine Config to use actual OSC values and measured clocks as listed in the driver. Added a note about a Splash PCB with alternate (higher) OSC clocks. Added a note about The Return of Lady Frog 9 ROM and the 1 bit difference between the two sets [Brian Troha].
+- Fixes so MESS on PowerPC OS X builds and works again. MAME is still lost cause [R. Belmont].
+- Updated DOCS config.txt and windows.txt with recent commands that were never added to documentation as well as some clarifications [Tafoid].
+- expro02.c: Added PCB layouts for the Comad 940429 and 940307 boards used for the two different versions of Fantasia [Brian Troha].
+- segaybd.c: Fix 0.146u5 sound regression [Alex Jackson].
+- tumbleb.c: Filled in a few dipswitches for Magicball Fighting [Brian Troha].

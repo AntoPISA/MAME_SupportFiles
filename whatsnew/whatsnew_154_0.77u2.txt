@@ -1,0 +1,41 @@
+0.77u2 2003/12/01 [#154 - David Haywood]
+----------------------------------------
+Make sure you do a CLEAN build or this won't work.
+
+
+New Games supported or promoted from GAME_NOT_WORKING status:
+-------------------------------------------------------------
+Gundam Ex Revue [Pierpaolo Prazzoli, David Haywood]
+Kyuukyoku no Striker / Last Striker [Luca Elia]
+MegaTech : Tournament Golf [David Haywood]
+Nettoh Quiz Champion [Luca Elia]
+NFL Blitz [Aaron Giles]
+NFL Blitz 2000 [Aaron Giles]
+Runaway (prototype) [Stefan Jokisch]
+
+New Clones supported or promoted from GAME_NOT_WORKING status:
+--------------------------------------------------------------
+Capitol (clone of pleiads) [Pierpaolo Prazzoli]
+Thunder ceptor [BUT]
+
+New Non-Working games / clones supported:
+-----------------------------------------
+BioFreaks [Aaron Giles] (missing hd image)
+Jackie Chan [David Haywood] (Protection? gfx decode not worked out either, does nothing, may look at it again one day but probably not, no work has been done on it for about a year)
+Rabbit
+Tokimeki Mahjong Paradise - Dear My Love (these look tricky, blitter based gfx / sound chip, maybe i'll come back to them at a later date)
+
+
+Source changes:
+---------------
+- CHDman updates, with added checks to make sure source chd's aren't corrupt when doing updates etc [Aaron Giles].
+- Fixed a few v60 floating point opcodes [Olivier Galibert].
+- Fixed Grand Striker 2 dipswitches [Pierpaolo Prazzoli].
+- Found the way the OTIR/INIR instructions affect the PF flag and removed the look-up tables [Ramsoft, Sean Young].
+- Improved / Fixed Ym2610 save states [Leon van Rooij].
+- Improved bg gfxdecode in missb2, but the backgrounds still haven't been hooked up yet [David Haywood].
+- Improved Mysterious Stone driver based on schematics [Curt Coder]
+- Improved Raiden drum volume Balance [R. Belmont].
+- Merged taito_x.c and seta.c video hardware, this is correct but due to some differences in the drivers a few glitches have been introduced in twinhawk that will need investigating [David Haywood].
+- MESS related updates: Merged in some #ifdef MESS'd code [Nathan Woods].
+- SCSP fixes (improves music in some games a little) [ElSemi, R. Belmont].

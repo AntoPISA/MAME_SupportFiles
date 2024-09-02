@@ -1,0 +1,66 @@
+0.121u4 2007/12/13 [#411 - Aaron Giles]
+---------------------------------------
+
+
+MAMETesters Bugs Fixed
+----------------------
+namcos22.c_0121u1red (Aaron Giles)
+
+
+New games added or promoted from NOT_WORKING status
+---------------------------------------------------
+Mortal Kombat 4 [Aaron Giles]
+Shin Nihon Pro Wrestling Toukon Retsuden 3 Arcade Edition  [R. Belmont, smf, Guru]
+Super World Stadium '98 [R. Belmont, smf, Guru]
+
+New clones added
+----------------
+Trivia Master (set 3) [Eric Marks]
+
+New games marked as GAME_NOT_WORKING
+------------------------------------
+Kaiun Quiz [R. Belmont, smf, Guru]
+Super World Stadium 2000 [R. Belmont, smf, Guru]
+
+
+Source changes:
+---------------
+- Added new option -update_in_pause which enables updating the screen bitmap while the game is paused. This is useful for debuggin in some scenarios (and gets in the way in others) [Olivier Galibert].
+- Added new VIDEO_TYPE_NONE to indicate that there is no screen, and fixed internal UI displays to ignore resolution parameters if it is specified [Dirk Best].
+- Added missing consts to the files in the emu, lib, and osd directories [Atari Ace].
+- Updated drivers to use const structs and arrays where possible [Atari Ace].
+- shisen improvements [Sonikos]:
+  * Added dips condition.
+  * Added dips location.
+  * Fix tow dips in matchit.
+  * Remove fake dips coinage.
+- Updated inputs in qrouka to support the 3rd and 4th stick [Sonikos].
+- Fixed crash in mngwrite if the game does not have a palette [Nathan Woods].
+- SCSP updates [kingshriek]:
+  * Added bounds check to the DECAY1 EG output.
+  * Added DSP floating-point support.
+  * Added effect-in mixer.
+  * Fixed loop points so loops no longer go out of tune/include garbage samples.
+  * Fixed the saw PLFO waveform.
+- Fixed missing profiler call in video.c [Christophe Jaillet].
+- Implemented status flag in 'Star Wars' matrix processor, which affects gameplay speed [Mathis Rosenhauer].
+- Changed M37710 CPU to use the CPU clock for its internal timer rather than a hard-coded value. Fixes tempo in Namco NA-1 games [Phillip Bennett].
+- Fixed accidentally included change that allowed MAME to run in windowed mode if switchres was off [Aaron Giles].
+- Midway Zeus improvements [Aaron Giles]:
+  * Added bilinear filtering.
+  * Added lightgun support to invasn.
+  * Added missing U/V scale factors.
+  * Added proper video timing configuration.
+  * Added solid polygon rendering support.
+  * Added support for splitting model commands.
+  * Added Z offsets.
+  * Cleaned up video code, removed unnecessary math.
+  * Correct PIC values for invasn.
+  * Fixed screen clear trigger.
+  * Fixed texture addresses to only count even rows.
+  * Hooked up FIFO empty IRQ to make invasn work nicely.
+  * Hooked up writes to registers during model data processing.
+  * Implemented fade out effect.
+  * Implemented per-quad texture offsets.
+  * Increased resolution on fixed point math to prevent overflows.
+  * Removed perspective correction.

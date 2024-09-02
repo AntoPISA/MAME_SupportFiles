@@ -1,0 +1,50 @@
+0.107u2 2006/08/03 [#333 - Aaron Giles]
+---------------------------------------
+
+
+New clones added
+----------------
+Gals Panic II (Asia) [Patrik Styrnell]
+Viper Phase 1 (World, New Version) [Corrado Tomaselli]
+Wonder Boy in Monster Land (Galaxy Electronics English bootleg) [Aaron Giles]
+
+
+MAMETesters Bugs Fixed (3)
+--------------------------
+cuebrckj0104u2gra_fix (Canim)
+ripoff097gre (Adam Bousley)
+savestate0104u7ora (Adam Bousley)
+
+
+Source changes:
+---------------
+- Added macros to prevent use of strcasecmp and strncasecmp for better cross-platform compatibility [Nathan Woods].
+- Added MDRV_SCREEN_RAW_PARAMS() which lets you specify a pixel clock, horizontal, and vertical video timing values in place of the usual screen size, visible area, refresh rate, and VBLANK timing values [Aaron Giles].
+- Added service_coin_lockout_w() to lockout service coins [Aaron Giles].
+- Changed mode selection logic so that refresh is weighted more strongly when picking a mode. This allows you to specify -resolution 0x0@60 to force MAME to pick a 60Hz screen refresh while allowing it to choose the best resolution [Aaron Giles].
+- Connected unimplemented opcode $01 on the 6809 core [Antoine Mine].
+- Fixed bug in 8039 CPU handling of A11 latch [Aaron Giles].
+- Fixed bug that prevented save/restore from working in the UI [Aaron Giles].
+- Implemented CNT pin and some serial features of the 6526 CIA chip [Nathan Woods].
+- Mapped service button in slammast [Canim].
+- Massive cleanup/fixing of 16-bit Sega drivers [AWJ]:
+  * Many corrections to descriptive set names, adding revision letters, cabinet types, etc.
+  * Fixed many DIP switches and added PORT_DIPLOCATION support.
+  * Adjusted min/max values for analog controls to improve response.
+  * Fixed button ordering between System 16A/B.
+  * Cleaned up a number of ROM names and fixed some incorrect guesses.
+  * Some cleanup of turbo.c as well.
+  * Fixed visible area in 'Hang-On' hardware.
+  * Actually disabling 8751 in games that have a fake replacement.
+  * Hooked up 8255 PPI correctly now that it has mode 2 support.
+  * Fixed behavior of NMI line in later sega sound boards.
+  * Fixed addressing in the SegaPCM sound system.
+  * Some hardware/documentation cleanup.
+- Rewrote 'Zaxxon' driver from the schematics. This is still a WIP (not finished yet) [Aaron Giles]:
+  * Correct clock speeds and video timing.
+  * Complete memory maps.
+  * Connected universal sound board to 'Ixion' and 'Razmataz'.
+  * Simplified video code and merged common cases together.
+  * Palette derived from resistor weights.
+  * Background positioning still a little off.
+- Some cleanups in the new UI/video code to make MESS happy [Nathan Woods].

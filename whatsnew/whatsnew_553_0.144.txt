@@ -1,0 +1,69 @@
+﻿0.144 2011/11/13 [#553 - Angelo Salese]
+---------------------------------------
+
+
+MAMETesters Bugs Fixed
+----------------------
+- 00504: [Graphics] hharryu, dkgensan: They have some background misplacement (Roberto Zandonà).
+- 04500: [Doc] ep_simbg: The correct description is "SIMPSONS - Duff Beer Guide".
+- 04514: [Doc] mousn_l1, mousn_l4, mousn_lu, mousn_lx: The correct description is "Mousin' Around!".
+- 04515: [Doc] megaaton: The correct name is "Meg Aaton".
+- 04516: [Doc] j5suphi: The correct description is "Super Hi-Lo (Jpm) (SYSTEM5)."
+- 04517: [Doc] j2cshfil: The correct description is "Cash-Filla (Pcp (MPS)".
+- 04519: [Doc] nudgeit: The correct description is "Nudge-It".
+- 04520: [Doc] j2supsft: The correct description is "Supashifta (Jpm) (MPS)".
+- 04521: [Doc] j6cas5: The correct description is "Casino 5ive Liner (Jpm) (IMPACT)".
+- 04522: [Doc] m5bwaves: The correct description is "Brain Waves (Barcrest) (MPU5)".
+- 04523: [Doc] m4click: The correct description is "Clickity Click (Barcrest) (MPU4)".
+- 04524: [Doc] j6rh6: The correct year is 2002.
+- 04525: [Doc] ep_smoke: The correct description is "Holy Smoke! (Impulse) (EPOCH)".
+- 04526: [Doc] m4bigapl and clones: The correct description is "The Big Apple (Mdm)".
+- 04527: [Doc] m4uuaw: The correct description is "Up Up and Away (Barcrest) (MPU4)".
+
+
+New games added or promoted from NOT_WORKING status
+---------------------------------------------------
+Dirt Dash [Phil Bennett, hap]
+Galaxy Game [Mariusz Wojcieszek, hap, Quantum Leaper]
+
+New clones added
+----------------
+18 Wheeler (Rev. A) [Arzeno Fabrice]
+Alien Front (Rev T) [Arzeno Fabrice]
+House of the Dead 2 (prototype) [Arzeno Fabrice]
+King of the Monsters 2 - The Next Thing (prototype) [Tormod, Kevin Eshbach, f205v, Smitdogg, The Dumping Union]
+Zero Team (set 5, Korea, Dream Soft license) [Guru, gp-lee]
+
+New games marked as GAME_NOT_WORKING
+------------------------------------
+Arcana Heart Full [Tormod, Smitdogg, The Dumping Union]
+Gunbalina (GNN1 Ver.A) [Yohji, hap, Krusty, B. Munger, Brian Troha, D. Edwardson, Kevin Eshbach, R. Weidinger, J. Kretschmer, Smitdogg, The Dumping Union]
+Melty Blood Actress Again [The Dumping Union]
+
+
+Source changes:
+---------------
+- Fixed up the flicky and clones (system1.c) Dip Switches after a fair amount of playtesting. Also, added some specific set notes related to oddness/differences observed [Tafoid].
+- Start of input ports cleanup in the Toaplan drivers [Alex Jackson, kanikani]:
+  * Removed some unused macros from toaplipt.h.
+  * Fixed polarity of DIPLOCATIONs in toaplan2.c.
+  * Added some missing inputs.
+- Fixed tms99xx STCR command [Michael Zapf].
+- xmultipl: Fixed tilemaps offsets [Roberto Zandona'].
+- SDL: Add TAP/TUN networking capability and shell script for configuration [Carl].
+- Added some common country and language names to the default strings, and removed some unused and/or redundant strings [Alex Jackson].
+- Various improvement to Amiga FDC system [O. Galibert].
+- ipf: Describe the remaining fields [O. Galibert, SPS].
+- Rewrote NCR539x SCSI emulation from scratch [R. Belmont].
+- More Toaplan input fixes [Alex Jackson, kanikani]:
+  * Added DIPLOCATIONs and missing inputs to twincobr.c, wardner.c, toaplan2.c.
+  * Added information about ingame test/debug features to comments it toaplan2.c.
+  * Unified toaplan2.c inputs with the other Toaplan drivers.
+- Converted neogeo MVS driver to use software lists in preparation for multislot support [David Haywood].
+- neogeo.c: Fixed kof98 on non-Windows builds [Alex Jackson].
+- Added per-channel volume control to ES5505/ES5506 sound chip, and hooked it up to the Taito F3 driver [Angelo Salese].
+- Added a preliminary ES5510 DSP DRAM input/output latches support in Taito F3 driver, fixes sound in Ring Rage and Riding Fight [Angelo Salese].
+- Implemented FRC hook-up to Sega System 24 HW, fixes missing SFXs to Bonanza Bros. [Angelo Salese, Phil Bennett, Charles MacDonald].
+- 6522VIA: Implemented CA2 pulse output mode, and output interrupt state only when it changes [Curt Coder].
+- 6532RIOT: Output interrupt state only when it changes [Curt Coder].
+- hikaru: Added 0.84 BIOS [Arzeno Fabrice].

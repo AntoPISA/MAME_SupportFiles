@@ -1,0 +1,39 @@
+0.35b10 1999/04/08 [#066 - Nicola Salmoria]
+-------------------------------------------
+Please report any problem you find with the C 68000 core. There are no known bugs as of now (apart from ball movement in Power Spikes 2), if no new bugs are found we'll switch back to test the asm core.
+
+
+New games supported
+-------------------
+(avspirit) Avenging Spirit [Luca Elia]
+(disco)    Disco No.1 [Zsolt Vasvari]
+(edf)      Earth Defense Force [Luca Elia]
+(flipshot) Battle Flip Shot [Nicola Salmoria]
+(rodlandj) RodLand (Japan) [Luca Elia]
+(senjyo)   Senjyo [Mirko Buffoni]
+(shtngmst) Shooting Masters [Nicola Salmoria]
+(starcrus) Star Cruiser (preliminary) [Frank Palazzolo]
+
+New clones supported
+--------------------
+(starfore) Star Force (encrypted) [Nicola Salmoria]
+
+
+These drivers have improved GRAPHICS
+------------------------------------
+- Fixed colors in 'Birdie King 2' [Zsolt Vasvari].
+
+
+Other drivers changes
+---------------------
+- "kbmame" multi-button key equivalents for the NeoGeo games. They are only available if cheats are enabled [Nicola Salmoria].
+
+
+Source changes:
+---------------
+- [DOS] Fixed severe slowdowns when 16-bit audio was selected [Nicola Salmoria].
+- [DOS] The parameters which control tweaked VGA modes can be changed by editing mame.cfg, so they can be fine tuned to match each particular video card/monitor combination (these are non standard modes so they can't be made to work in the same way on all setups). If you want to try that (warning: only experienced users should try) make sure to read vgatweak.txt [Valerio Verrando].
+- Added menu option to configure the default joystick settings (like the default keys) [Nicola Salmoria].
+- Added support for up to 4 analog controllers (multiple trackballs are NOT supported under DOS, but multiple joysticks should work) [Brad Oliver].
+- Changed format of the history database [John Butler].
+- Reorganized the sound subsystems, hopefully I didn't break anything in the process [Nicola Salmoria].

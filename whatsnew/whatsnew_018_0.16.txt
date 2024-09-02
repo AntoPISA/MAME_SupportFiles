@@ -1,0 +1,41 @@
+0.16 1997/04/13 [#018 - Nicola Salmoria]
+----------------------------------------
+[NOTE: only important changes are listed]
+
+
+New games supported
+-------------------
+(fantasy)  Fantasy [Nicola Salmoria]
+(fantazia) Fantazia (bootleg?) [Nicola Salmoria]
+(gberet)   Green Beret [Nicola Salmoria]
+(jbugsega) Jump Bug (bootleg) [Richard Davies, Brad Oliver]
+(venture)  Venture (version 5 set 1) [Marc Lafontaine]
+
+
+Program changes
+---------------
+- Added joystick support to Vanguard [Nicola Salmoria].
+- Fixed a couple of remaining graphic glitches in the Wizard of Wor driver [Nicola Salmoria].
+- Provided a Venture driver. It is partially playable, sprites are wrong. On startup, keep 1 or 2 pressed to proceed [Marc Lafontaine].
+- Submitted a new palette for Donkey Kong 3. It is not intended to be correct, but at least it gets rid of the annoying checkerboard effect [Matthew Hillmer].
+- Provided drivers for the so-called "Sega" version of Jump Bug (it's actually a bootleg with the protection checks removed). The driver supports sound [Richard Davies, Brad Oliver].
+- Provided a much better palette for Mario Bros. [Stefano Mozzi].
+- Support for Fantasy on the Nibbler driver. There are several problems, it's not playable [Nicola Salmoria].
+- Support for Fantazia (bootleg version of Moon Cresta) [Nicola Salmoria].
+- Support for Green Beret, with partial sound (probably inaccurate). Colors are terrible. If you can see what you are doing, it's playable (but should it be this fast? I find it very hard) [Nicola Salmoria].
+- Carnival now has colors [Mike Coates, Peter Clare].
+- Provided updated Space Invaders (and clones) drivers which support sound. They use samples, derived from Michael Strutts' emulator [Tormod Tjaberg].
+- Various fixes to Burger Time [Nicola Salmoria]:
+  * Fixed CPU clock speed to avoid slowdowns on fourth level.
+  * It's much faster on a 486.
+  * Sprites no longer "stick" on the screen on a level change.
+  * Fixed a bug in high score save (DELETE BTIME\BTIME.HI, OTHERWISE THE HIGH SCORE TABLE WILL BE CORRUPTED).
+
+
+Source changes:
+---------------
+- Brad Oliver modified pokey.c and pokey.h to make them more portable.
+- Fixed a couple of bugs in M6502 BCD arithmetic. One of them was causing the pepper counter in Burger Time to behave strangely [Nicola Salmoria].
+- I finally took the time to change Z80.h/M6502.h to make them work together. This allowed me to remove some kludges in cpuintrf.c. I also added some new functions, which can be used regardless of the CPU type: cpu_getpc(), cpu_geticount(), cpu_seticount() [Nicola Salmoria].
+- I wrote some general purpose routines to simplify interface with the AY8910. They are in 8910intf.c. See the existing drivers for usage examples [Nicola Salmoria].
+- To solve the problem with garbled text messages in Time Pilot, modified the GameDriver structure replacing letters_start and numbers_start with the array charset[36] [Nicola Salmoria].

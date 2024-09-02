@@ -1,0 +1,63 @@
+0.130 2009/03/09 [#475 - Aaron Giles]
+-------------------------------------
+
+
+MAMETesters Bugs Fixed
+----------------------
+- 00268: [Graphics] captaven: In attract mode, the small pictures of the heroes appear before they should (Pierpaolo Prazzoli).
+- 00421: [Graphics] fghthist, fghthsta, fghthstj, fghthstu: Some priority problems in Ryoko's stage. Namely, the old man, the cat and the kid (Pierpaolo Prazzoli).
+- 00826: [Graphics] wc90b, wc90: Some players are cut at left and bottom of the screen (robiza).
+- 02057: [Graphics] buckrog, buckrogn, zoom909, subroc3d: Graphics Corruption on Title Screen + in game (using -AFS) (Aaron Giles).
+- 02854: [Graphics] hypreact: Buggy text in scoring screen (Pierpaolo Prazzoli).
+- 03001: [Interface] "Working clones" display problem (Aaron Giles).
+- 03006: [Graphics] blocken: Color / Missing gfx (Phil Bennett).
+
+
+New games added or promoted from NOT_WORKING status
+---------------------------------------------------
+Puzzle Time (Prototype) [Angelo Salese, Pierpaolo Prazzoli, Yoshi]
+
+New clones added
+----------------
+Gals Panic S2 (Asia) [Andy Henderson]
+Jansou (alt) [Uki]
+
+
+Source changes:
+---------------
+- Fixed a paletteram entry bug in GP World [Angelo Salese].
+- Fixed sprite positioning bug in Zero Target [Angelo Salese].
+- Added new graphic roms to the 1999 head panic set. Also added sprite flicker flag, based on tumble pop etc [David Haywood].
+- Add locations to ROM names for Mazer Blazer (and alt) roms. Add NO_DUMP entries for undumped voice roms, video prom, and pal. [Lord Nightmare].
+- Preliminary proper roz effects hooked up for Zero Target [Olivier Galibert, Angelo Salese].
+- Added function calls to replace the MIPS3 and PowerPC DRC's various CPU_SET_INFO bits [Aaron Giles].
+- Fixed DCS2 speedup handler so it doesn't get lost during a memory remap. This should give a slight speed bump to the Seattle/Vegas games and to War Gods [Aaron Giles].
+- Added service1 button tested in Dynamite Bomber (but doesn't work in game) and fixed little sprites priority problems in limenko.c [Pierpaolo Prazzoli].
+- Fixed a sprite bug when flip y flag is used and cleaned-up the whole routine in Zero Target [Angelo Salese].
+- Fixed sound regression in Tryout and removed deprecat.h dependancy [Angelo Salese].
+- tms57002: Add two missing instructions and hack up the coef update. The real way coefficient updates are handled is a little too complex for now, but the hack throttles the update speed to the real rate given the way konami uses it (once per sync).  It's near impossible to use it in a different way anyway [Olivier Galibert].
+- Fixed bug that caused 64-bit PowerPC systems to fetch opcodes in the wrong order [Aaron Giles].
+- Fixed Analog settings so Digital and Autocenter Speeds are applied properly in real time. Fixed Digital Speed = 0 so it increments in single steps per button press [Derrick Renaud].
+- Merged memory maps in the rpunch driver [Aaron Giles].
+- Fixed PSX CPU disassembly of -$8000, it was showing up as -$0 [smf].
+- Allow chds to be directly in the ROM directory without a subdirectory [Olivier Galibert].
+- wc90b1 and wc90b2 improvements [robiza]:
+  * Sprite priorities.
+  * Sprite x position.
+  * Fixed y sprite wrapping.
+  * Fixed bg and fg scroll.
+  * Fixed bg and fg offsets.
+- Fixed colors in Cultures (Jibun wo Migaku Culture School Mahjong Hen) [Tomasz Slanina].
+- Refactored sfbonus and improved the inputs [David Haywood].
+- Hooked up paletteram in Midnight Landing [Angelo Salese].
+- royalmah update [Uki]:
+  * Added some notes.
+  * Fixed DIPSW of makaijan.
+  * Fixed visible area.
+  * Fixed CPU clock.
+- Add muting just before saving the NVRAM, and de-mute just after loading the NVRAM. Should cure the stuck sound issue for games with large NVRAM [Aaron Giles].
+- Added placeholders for the two PAL's on Atari's version of Pole Position 1 and 2 (I could not read the last digit of the PAL at 5c.) [Kevin Eshbach].
+- Added board numbers to SEGA's Quartet 2 documentation [Kevin Eshbach].
+- Corrected the ROM names for Tutankham [Kevin Eshbach].
+- Hooked up 2D layer in Driver's Eyes [Naibo Zhang].
+- Fixed Konami zr-107, GTI Club hardware, background layer lost (black sky) [Naibo Zhang].

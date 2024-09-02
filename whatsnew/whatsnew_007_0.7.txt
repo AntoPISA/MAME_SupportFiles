@@ -1,0 +1,28 @@
+0.7 1997/02/27 [#007 - Nicola Salmoria]
+---------------------------------------
+Note: only important changes are listed.
+
+
+New games supported:
+--------------------
+(amidarus) Amidar (US version) [Nicola Salmoria]
+(ccjap)    Crazy Climber (Japan) [Nicola Salmoria]
+(gorf)     Gorf [Nicola Salmoria, Mike Coates]
+(moonqsr)  Moon Quasar [Nicola Salmoria, Mike Coates, Robert Anschuetz]
+(pleiades) Pleiades [Nicola Salmoria]
+(pooyan)   Pooyan [Nicola Salmoria]
+(robby)    The Adventures of Robby Roto! [Nicola Salmoria, Mike Coates]
+(scobra)   Super Cobra [Nicola Salmoria]
+
+
+Program:
+--------
+- Support for:
+  Amidar US version
+  Crazy Climber Japanese version
+  Phoenix/Pleiades (no sound)
+  Pooyan (wrong colors, no sound)
+  Super Cobra (version running on a modified Scramble board)
+- Scramble has 100% correct colors. The same palette is used by Super Cobra, but it doesn't look right.
+- Gorf and Robby Roto boot but don't work.
+- Added some support for Moon Quasar, but it doesn't work. Since the ROMs are encrypted, I don't know if this is due to wrong decryption, bad ROM, or wrong driver (I'm using the Moon Cresta one). I think that either MQ3 (which maps at 1000-17ff) is bad, or it uses a different encryption.

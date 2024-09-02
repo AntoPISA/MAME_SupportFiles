@@ -1,0 +1,31 @@
+0.94u4 2005/03/18 [#242 - Aaron Giles]
+--------------------------------------
+
+
+New Games / Clones supported or promoted from GAME_NOT_WORKING status:
+----------------------------------------------------------------------
+Buccaneers [David Haywood]
+Calorie Kun vs Moguranian [David Haywood, Pierpaolo Prazzoli]	(only bootleg works, original is encrypted)
+Gain Ground [David Haywood]
+Libero Grande [smf]
+Pipeline [Tomasz Slanina] (no sound)
+Crazy Rally (Gecas license) [Manuel Assoni]
+Passing Shot (Japan, FD1094 317-0070) [Chack'n]
+Wonder Boy III (Japan, FD1094 317-0087) [Chack'n]
+Tekken (TE2/VERC) [smf]
+
+New games marked as GAME_NOT_WORKING
+------------------------------------
+Snapper [David Haywood] 
+
+
+Source changes:
+---------------
+- Fix crash games using FM sound chips when you load state [BUT].
+- Changed FD1094 state change behavior slightly to keep Gain Ground happy [Nicola Salmoria].
+- Improved NMK004 simulation and prevented hang in Black Heart [Nicola Salmoria].
+- Fixed some sprite colours in playmark.c [Pierpaolo Prazzoli].
+- Hooked up guns in Deadeye for when it works [smf].
+- Fixed memory dumping problem in debugger at very high addresses [Ville Linde].
+- Fixed bugs in PSX texture window (pitch in libero grande & playfield in aquarush) [smf].
+- Fixed Pengo ROM loading [shimapong].

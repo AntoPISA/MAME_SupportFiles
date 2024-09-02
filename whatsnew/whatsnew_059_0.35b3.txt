@@ -1,0 +1,94 @@
+0.35b3 1999/02/15 [#059 - Nicola Salmoria]
+------------------------------------------
+
+
+New games supported
+-------------------
+(ambush)   Ambush [Zsolt Vasvari]
+(breakers) Breakers [Nicola Salmoria]
+(csilver)  Captain Silver [Bryan McPhail]
+(cworld2j) Capcom World 2 (Japan) [Steve S.]
+(devilfsh) Devil Fish [Chris Hardy]
+(devzone)  Devil Zone [Mike Coates]
+(dino)     Cadillacs and Dinosaurs (World) [Russell Nash]
+(fireone)  Fire One [Olivier Galibert]
+(gondo)    Gondomania [Bryan McPhail]
+(lastmiss) Last Mission (Rev 6) [Bryan McPhail]
+(magspot2) Magical Spot II [Zsolt Vasvari]
+(marukodq) Maruko Deluxe Quiz [Nicola Salmoria]
+(punisher) Punisher (World) [Nicola Salmoria]
+(qad)      Quiz & Dragons (US) [Steve S.]
+(sf1)      Street Fighter (World) [Olivier Galibert]
+(shackled) Shackled [Bryan McPhail]
+(slammast) Slam Masters (World) [Nicola Salmoria]
+(spaceint) Space Intruder [Lee Taylor]
+(stakwin2) Stakes Winner 2 [Nicola Salmoria]
+(troangel) Tropical Angel [Phil Stroffolino]
+(turbofrc) Turbo Force [Nicola Salmoria]
+(wof)      Warriors of Fate (World) [Russell Nash]
+
+New clones supported
+--------------------
+(amidaro)  Amidar (Olympia) [Zsolt Vasvari]
+(astdelu1) Asteroids Deluxe (rev 1) [Julian Eggebrecht]
+(breywood) Breywood [Bryan McPhail]
+(canbprot) Canyon Bomber (prototype) [Mike Balfour]
+(fitter)   Fitter [Nicola Salmoria]
+(lastmss2) Last Mission (Rev 5) [Bryan McPhail]
+(mbomber)  Muscle Bomber Duo (World) [Russell Nash]
+(mbomberj) Muscle Bomber Duo (Japan) [Russell Nash]
+(mbrush)   Magic Brush [Zsolt Vasvari]
+(mekyosen) Mekyo Sensi [Bryan McPhail]
+(punishrj) Punisher (Japan) [Nicola Salmoria]
+(qadj)     Quiz & Dragons (Japan) [Steve S.]
+(qixa)     Qix (set 2) [Nicola Salmoria]
+(sf1jp)    Street Fighter (Japan) [Olivier Galibert]
+(sf1us)    Street Fighter (US) [Olivier Galibert]
+(spacbatt) Space Battle [Nicola Salmoria]
+(vsyard2)  10 Yard Fight (Vs. version, set 2) [Zsolt Vasvari]
+(wofj)     Tenchi o Kurau 2 (Japan) [Russell Nash]
+(zookeep2) Zoo Keeper (set 2) [Nicola Salmoria]
+
+
+These drivers have improved GRAPHICS
+------------------------------------
+- 16-bit color support in the NeoGeo driver. It's enabled in a few games which were particularly affected by reduction to 256 colors [Nicola Salmoria].
+- Added the interesting parts to Gals Panic [Nicola Salmoria].
+- CPS1 games are being worked on, they are temporarily slower but accuracy is improved.
+- Fixed big sprites in Tokio, and unified it with Bubble Bobble [Nicola Salmoria].
+- Improved Star Fire [Olivier Galibert].
+- Sprite zoom support in Aero Fighters [Nicola Salmoria].
+
+
+These drivers have new or improved SOUND
+----------------------------------------
+- New sample support in Tac/Scan [Jim Hernandez].
+- Samples support in Cosmic Guerilla [Mike Coates].
+
+
+These drivers have HIGH SCORE support
+-------------------------------------
+- Ghost Busters, Maze Hunter, Canyon Bomber [Roberto Fresca].
+- Last Duel, Mad Gear, M79 Ambush, Lode Runner 2 & 3, Lot Lot, Dead Eye [Howie Cohen].
+- Speed Rumbler, Liquid Kids, Growl [Eugenio De Renzi].
+
+
+Other drivers changes
+---------------------
+- Emulated the protection (TMS32010) in Twin Cobra, which is now fully playable [Quench].
+- Fixed speed in Oscar [Bryan McPhail].
+- Fixed the protection in Frisky Tom [Andrew Prime].
+- Improved Birdie King 2 which is now playable [Zsolt Vasvari].
+- Properly emulated the 68705 protection in The Electric Yo-Yo, Kram, Space Dungeon, Zoo Keeper [Nicola Salmoria].
+- Removed the protection in Fatal Fury 2 [Eugenio De Renzi].
+- Simulated the 8751 protection in F1 Dream, but it seems to work on Macs only (endian issue?) [Eric Hustvedt].
+- Super Real Darwin is fully working [Bryan McPhail].
+- Support for the ORIGINAL version of Bubble Bobble, with 68705 code from a pirate board. Wizards *do* throw stones in this version [Nicola Salmoria].
+
+
+Source changes:
+---------------
+- [DOS] X86 asm Z80 core [Juergen Buchmueller].
+- A couple of bug fixes in the 6808 core [Brad Oliver].
+- New experimental TileMap code, used by Ninja Gaiden and Ghosts and Goblins. This makes the driver code cleaner and gives a major performance boost in the video rendering. DON'T USE IN NEW CODE UNTIL FURTHER NOTICE!! [Phil Stroffolino].
+- TMS32010 emulator. This is used by Twin Cobra [Quench].

@@ -1,0 +1,29 @@
+0.71 2003/07/05 [#136 - David Haywood]
+--------------------------------------
+Everything from 0.70u1 - u5 (see details below) as well as.
+
+
+New games supported:
+--------------------
+Boxer (prototype) [Stefan Jokisch]
+Magical Spot [Pierpaolo Prazzoli]
+Star Sweep [smf, MooglyGuy]
+
+New clones supported
+--------------------
+Maximum Force (v1.05) [Brian A. Troha] (note: there seems to be a problem with the way mame handles chd filenames for clones)
+Puzzle Bobble (NeoGeo) (set 2) [Razoola]
+Sengekis Striker (Asia) [Brian A. Troha, David Haywood]
+Space Invasion (Europe Original?) [Brian A. Troha]
+Underfire (US and Japan) [Brian A. Troha]
+
+
+Source changes:
+---------------
+- Added Rougien as TestDriver. Video hardware emulation needs finishing [Pierpaolo Prazzoli]
+- Added Various ZN based systems [smf, MooglyGuy] as TestDriver.
+- Converted a bunch of drivers to tilemaps, fixed dipswitches etc [Curt Coder]..
+- Corrected some filenames for Ajax [Brian A. Troha].
+- Fixed MultiPCM banking for Stadium Cross [R. Belmont].
+- Improved Ay8910 Noise Generator [Jarek Burczynski].
+- Improved Graphics in Strato Fighter and Super Pinball Action [Leon van Rooij].

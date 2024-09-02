@@ -1,0 +1,110 @@
+0.53 2001/08/12 [#110 - Nicola Salmoria]
+----------------------------------------
+We have abandoned the "beta" numbering scheme, which was becoming pointless. The current version is 0.53 because 0.36 (the last "non-beta" release) + .16 (the number of "beta" releases since then) = 0.52.
+
+
+New games supported:
+--------------------
+Aqua Jack [David Graves]
+Battle Shark [David Graves]
+Big Run [Luca Elia]
+Chase HQ [David Graves]
+Continental Circus [David Graves]
+Dirt Fox
+Double Axle [David Graves]
+Funky Jet [Bryan McPhail, Nicola Salmoria]
+Hasamu [Bryan McPhail, Nicola Salmoria]
+Kengo [Bryan McPhail, Nicola Salmoria]
+Magical Crystals [Luca Elia]
+Mahjong Doukyuusei [Luca Elia]
+Mahjong Doukyuusei Special [Luca Elia]
+Mahjong Yuugi [Takahiro Nogi]
+Mazinger Z [Luca Elia, Nicola Salmoria]
+Mighty Guy [Victor Trucco]
+Night Striker [David Graves]
+Pretty Soldier Sailor Moon [Luca Elia, Nicola Salmoria]
+Sand Scorpion [Luca Elia]
+Sokonuke Taisen Game [Luca Elia]
+Sotsugyo Shousho [Bryan McPhail, Nicola Salmoria]
+Special Criminal Investigation [David Graves]
+Super Real Mahjong Part 3 [Takahiro Nogi]
+Ultra Tank [Phil Stroffolino]
+World Grand Prix 2 [David Graves]
+
+New clones supported:
+---------------------
+Astro Flash (= Transformer)
+Boulder Dash (Japan)
+Camel Try (US, alt sound)
+Chelnov (World)
+Don Doko Don (US)
+Gingateikoku No Gyakushu (bootleg, set 2)
+Great 1000 Miles Rally (USA)
+Klax (2 prototypes)
+Omega (= The End)
+Pit Fighter (bootleg)
+Point Blank (= Gun Bullet)
+Robocop (Japan)
+Robocop (World rev 4)
+Robocop 2 (World, Japan)
+Super Real Darwin (World)
+Swimmer (set 3)
+Thunder Fox (World)
+Twin Hawk (= Daisenpu)
+Twin Hawk (World)
+Up'n Down (encrypted)
+
+
+Removed:
+--------
+- 'Speak & Rescue' bootleg (stratvxb): Identical to 'Speak & Rescue' with copyright notice removed [Nicola Salmoria].
+
+
+These drivers have improved GRAPHICS:
+-------------------------------------
+- Fixed background in 'Bioship Paladin' [Nicola Salmoria].
+- Fixed colors in 'Berlin Wall" [Nicola Salmoria].
+- Fixed colors in 'Major Title 2' [Nicola Salmoria].
+- Fixed radar display in 'Aztarac' [Mathis Rosenhauer].
+- Fixed some issues in Taito B system games [Nicola Salmoria].
+- Fixed some protection related issues in 'Sunset Riders' [Nicola Salmoria].
+- Real shadows in 'Cisco Heat' and 'F1 Grand Prix Star' [Luca Elia].
+- Real shadows in some Konami games ('88 Games', 'Chequered Flag', 'X-Men', 'Asterix', 'Surprise Attack', 'Sunset Riders', etc.) [Nicola Salmoria].
+- Real shadows in some SNK games ('Ikari Warriors', 'Victory Road', etc.) [David Haywood].
+
+
+These drivers have improved SOUND:
+----------------------------------
+- Decrypted the sound CPU in "Gunforce', 'Blade Master', 'Lethal Thunder', 'Undercover Cops', 'Mystic Riders', 'Major Title 2', 'Hook', 'R-Type Leo', 'In the Hunt', and 'Perfect Soldiers' [Bryan McPhail, Nicola Salmoria].
+- Fixed a EX550x bug that caused Taito F3 and Incredible Tech games to sound bad [Aaron Giles].
+
+
+Source changes:
+--------------------
+- Added support for the target data extracted from the laserdisc to 'MACH 3' [Fabrice Frances].
+- Decrypted the original 'Popeye' [Nicola Salmoria].
+- Fixed Free Play mode in "Galaga' [Scott Brasington].
+- Fixed the protection in the original 'Robocop' [Bryan McPhail].
+- Fixed the remaining issues in 'Slapstic' emulation [Aaron Giles]:
+  * 'Pit Fighter' works to the end.
+  * 'Rampart' works to the end.
+  * 'Tetris' now uses the slapstic code.
+- The Windows port is now called "MAME" (instead of "MAMEW"). The DOS port is called "DMAME" [Nicola Salmoria].
+- [Windows] CLI improvements [Paul Priest, Bernd Wiebelt]:
+  * Config option for steadykey (default: OFF).
+  * Parse debug.ini in debug builds.
+  * mamew \anywhere\roms\pacman.zip works.
+  * Improved -log option.
+  * MAME will now parse argv[0].ini instead of mame.ini.  i.e. if the mame executable is called "m37b17.exe" it will parse m37b17.ini instead of mame.ini.
+- [DOS] Support for C64/Atari/Sinclair joysticks connected via DB9 or Turbografix interface [Aley Keprt].
+- Big changes to the palette system. 8-bit modes are no longer supported, only 16-bit ones are used. 8-bit support may be removed from the OS dependant code; the core will never ask for an 8-bit deep screen. 8-bit bitmaps could still be used though [Nicola Salmoria].
+- IMPORTANT CHANGE FOR PORTERS: the OS dependant code is now required to guarantee, in 16-bit palettized mode, that Machine->pens[i] == i. The "pens" argument to osd_allocate_colors() will be NULL, actually it has been renamed "rgb_components" since direct RGB modes are the only ones that will pass that argument [Nicola Salmoria].
+- MachineDriver.color_table_len can now be 0, meaning that the colortable is a 1:1 mapping from the palette. Note that you CANNOT use this feature if you use TRANSPARENCY_COLOR; but of course, if you need TRANSPARENCY_COLOR you'll not have a 1:1 colortable [Nicola Salmoria].
+- New flags VIDEO_HAS_SHADOWS and VIDEO_HAS_HIGHLIGHTS that automatically extend the palette creating a darker(brighter copy for shadows handling. palette_set_shadow_factor() and palette_set_highlight_factor() allow to control the adjustment to apply (shadow can be > 1.0, making it an highlight, and highlight can be < 1.0 making it a shadow - the names are just conventional) [Nicola Salmoria].
+- New function auto_malloc(); this is the same as malloc(), but the memory is automatically freed when the driver exits [Aaron Giles].
+- New function palette_set_brightness(), allowing selective control of palette brightness independently of the palette RAM contents [Nicola Salmoria].
+- New function tilemap_draw_roz() [Phil Stroffolino].
+- osd_bitmap.line is now a void ** to prevent confusion [Nicola Salmoria].
+- Palette compression has been removed. palette_recalc(), palette_transparent_pen and palette_used_colors[] are not available anymore. Drivers that relied on PALETTE_COLOR_TRANSPARENT for transparency effects must be rewritten to implement them differently. As a result of this, all games using the Taito TC0480SCP video chip, and all Taito F3 games, are broken in this release [Nicola Salmoria].
+- Remove VIDEO_MODIFIES_PALETTE and the "modifiable" parameter from osd_allocate_colors() [Nicola Salmoria].
+- tilemap_update() is gone. Everything is handled by tilemap_draw() [Nicola Salmoria].

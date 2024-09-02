@@ -1,0 +1,88 @@
+0.138 2010/05/15 [#517 - Aaron Giles]
+-------------------------------------
+
+
+MAMETesters Bugs Fixed
+----------------------
+- 03683: [Crash/Freeze] topgunnr: Crashes MAME after INSERT COIN/GAME START (hap).
+- 02878: [Speed] simpsons and clones: Vertical refresh rate (hap).
+- 03273: [Original Reference] brubber, bnj, caractn: Incorrect screen resolution for Burnin' Rubber and clones (hap).
+- 03492: [Crash/Freeze] hunchbkg: Does not boot (Couriersud).
+- 03657: [Crash/Freeze] All sets in maxaflex.c: Random crashes (Firewave).
+- 03765: [Crash/Freeze] qdrmfgp2: ASSERT after OK (hap).
+- 03823: [Color/Palette] pc_miket: Bad colours (Alex Jackson).
+- 03047: [Graphics] elevator, elevatorb: Some graphics on the escalators shift when you ride on them (hap).
+- 03628: [Graphics] alpine: Red point on the title screen (MASH).
+- 03033: [Graphics] vendetta: Sprite priority problem in the 3rd stage (hap).
+- 03647: [Graphics] All games in vendetta.c: Graphical error in the intro scene of the game (hap).
+- 03834: [Sound] qtheater: No sound (hap).
+- 03830: [Crash/Freeze] All sets in harddriv.c: Message: Duplicate save state registration entry (DSP32C/dsp32/0/cpustate->pin) (Tafoid).
+- 00390: [DIP/Input] spaceftr: does not allow you to turn to the right (hap).
+
+
+New games added or promoted from NOT_WORKING status
+---------------------------------------------------
+New Lucky 8 Lines / New Super 8 Lines (F-5, Witch Bonus) [Roberto Fresca, incog, Smitdogg, The Dumping Union]
+International Team Laser (prototype) [ranger_lennier, genieta1, J. Ferneborg, Smitdogg, italie, David Haywood, The Dumping Union]
+
+New clones added
+----------------
+Desert Breaker (Japan) [Team Japump, Dumping Union]
+Youma Ninpouchou (Japan, alt) [Takahiro Nogi]
+Armed F (Japan) [Takahiro Nogi]
+Champion Baseball II (Japan, not working) [Takahiro Nogi]
+Wing War (Japan) [Team Japump, The Dumping Union]
+Street Fighter EX 2 (HISPANIC 980312) [Layne, J. Bijl, Smitdogg, The Dumping Union]
+Giga Wing (Hispanic 990222) [dopefishjustin, A. Hoekman, Smitdogg, David Haywood, The Dumping Union]
+Street Fighter Alpha 3 (Hispanic 980629) [dopefishjustin, Smitdogg, David Haywood, The Dumping Union]
+Eco Fighters (Hispanic 931203) [Kevin Eshbach, wild eyed, Smitdogg, David Haywood, The Dumping Union]
+X-Men: Children of the Atom (Hispanic 950105) [ranger_lennier, tormod, Smitdogg, The Dumping Union]
+Dungeons & Dragons: Tower of Doom (Hispanic 940113) [Kevin Eshbach, Layne, Gor, blokey, Smitdogg, The Dumping Union]
+Pac-land (Japan, older) [Team Japump]
+Photo Y2K (ver. 105) [XingXing]
+
+New games marked as GAME_NOT_WORKING
+------------------------------------
+Taiko no Tatsujin 10 (T101001-NA-A) [Guru]
+Dragon World 3 EX (ver. 100) [Guru]
+Dragon World 2001 [Guru]
+Royal Queen [Hikari, Spyder, S. S. Neilson, Smitdogg, The Dumping Union]
+Chance Kun [ranger_lennier, incog, Smitdogg, The Dumping Union]
+Photo Y2K 2 [Guru]
+
+
+Source changes:
+---------------
+- New Lucky 8 Lines hardware [Roberto Fresca]:
+  * Added lamps support to lucky8, lucky8a, lucky8b, ns8liner, ns8linew and kkojnoli.
+  * Created lamps layout for the above sets.
+  * New inputs for ns8linew. This set has a second set of inputs, and can be switched between them. No lamps activity or Big/Small buttons are present while this alternative controls are used. Maybe is a leftover.
+  * Some DIP Switches were figured out. Coinage and limits are still a real mystery since all DIP switches are reflected in the test mode.
+  * Remapped inputs to be straightforward with the control panel.
+  * Added the type (W-4/F-5) to the sets description.
+  * General inputs clean-up.
+- suna8.c: Updated documentation for Strike Fighter to include the game number, PCB number and epoxy CPU [Fabrizio Vasile].
+- Jaguar: Fixed RGB VARMOD mode [Angelo Salese].
+- namcops2: add DVD image for taiko10 [Guru].
+- Added DIP Locations for all games in the jack.c driver.  Changed copyright on joinem to match displayed year [Tafoid].
+- More cleanup of the lpc tables; Replaced tms5220C pitch table with the tms5220 one as that one is more likely to be correct [Lord Nightmare].
+- Add 'Unrealistically Perfect Interpolation' debug mode; Fix a potential issue with 16 bit overflow in the lattice filter; Made idle state emulation more accurate to real chip; Clean out variables before VSM speech starts; Mask out low 4 bits of 14 bit lattice result before output [Lord Nightmare].
+- Fix a mistake in the interpolation logic, it should now properly delay interpolation until the final cycle of each frame when INHIBIT is set. [Lord Nightmare].
+- tms5220: Remove unnecessary interpolation code; Add extra check to make unvoiced mode trigger at the correct sample. [Lord Nightmare].
+- Fixed up tms52xx clip/wrap function arrangement to be much more sane, and properly handled range extension. [Lord Nightmare].
+- Made tms5220 DEBUG_GENERATION more useful and simplified the code in the process [Lord Nightmare].
+- lib/util/cdrom.c: Fixed stack corruption in CHD code [Oliver Stoeneberg].
+- Implemented default EEPROMs for GTIClub, Hang Pilot, Asterix, X-Men and Polygonet Commanders [David Haywood].
+- Fixed the texture ROM loading/order in Wave Shark.  Textures look better now, and the ROM check passes [David Haywood].
+- Fix for Target Hits missing sound [Tafoid].
+- fspiderb: Added projectiles, game is playable now [hap].
+- General cleanup of PGM code [David Haywood].
+- Removed ROM Patch in Killing Blade and replaced with correct IGS025 return sequence fo China region (other sequences still unknown) [XingXing].
+- pengadvb: Improved inputs, the game can now be coined up. It magically has sound too now [hap].
+- S2650_SENSE_PORT is now active when data written is != 0 and inactive when data == 0. It now acts as a line in a mame-sense [Couriersud].
+- btime: Background vertical offset was off by one pixel, burger parts positions are correct now. This also means Peter Pepper awkwardly walks in the air, which is the way it is on the PCB [hap].
+- Fixed ROM names of tp84a (tp84 needs confirmation) [Team Japump].
+- Fixed hunchbkg ports [Couriersud].
+- sprtmtch: Added Intermissions DIP Switch [David Bain].
+- Fixed coinage of desertbr [yasuhiro].
+- Fixed ROM labels for 'Pac-Land', 'Scramble Egg', and 'Straight Flush' [Team Japump].

@@ -1,0 +1,98 @@
+0.136 2010/01/01 [#507 - Aaron Giles]
+-------------------------------------
+
+
+MAMETesters Bugs Fixed
+----------------------
+- 03142: [DIP/Input] All drivers using PORT_CHANGED callbacks: Input port callback functions are not triggered correctly during INP playback (mahlemiut).
+- 03493: [Gameplay] spacedxo: The game reboots itself after title screen (Fabio Priuli).
+- 03593: [Graphics] captaven & clones: Intro text scrolls from wrong direction (Pierpaolo Prazzoli).
+- 03596: [Crash/Freeze] All sets in konamigv.c, mitchell.c: Attempt to register save state entry after state registration is closed (Aaron Giles).
+- 03597: [Original Reference] outrun, outrunra, outruno, outrundx, outrunb: Incorrect vsync speed on Outrun (Tafoid).
+- 03598: [Original Reference] plotting, flipull: YM2203 speed adjustment (Tafoid).
+- 03603: [DIP/Input] karnov, karnovj: incorrect difficulty dipswitch (Tafoid).
+- 03604: [DIP/Input] oscar, oscaru, oscarj1, oscarj2: Incorrect difficulty dipswitch (Tafoid).
+- 03608: [Multisession] scontra, scontraj: Tile/graphic corruption on multiple launches of Super Contra (Fabio Priuli).
+- 03611: [Crash/Freeze] 1943, 1943j, 1943kai: Crash when starting 1943 in Service Mode (Fabio Priuli).
+
+New games added or promoted from NOT_WORKING status
+---------------------------------------------------
+Final Fight (Japan, hack) [bonky0013, JacKc, Fabio Priuli]
+
+
+New clones added
+----------------
+Block (Game Corporation bootleg, set 3) [David Haywood]
+Cherry Master I (ver.1.01) (various bootleg? sets) [David Haywood]
+Multi Fish (030124) [MetalliC]
+Shaolin's Road (bootleg) [Kevin Eshbach]
+Spark Man (v 2.0, set 2) [Stefan Lindberg] (Not Working)
+
+New games marked as GAME_NOT_WORKING
+------------------------------------
+Cycle Mahbou [Angelo Salese, Chack'n, Team Japump, Dumping Union]
+Metal Maniax (prototype) [David Haywood]
+Race Drivin' Panorama [David Haywood]
+
+
+Source changes:
+---------------
+- hng64 improvements [Andrew Gardner]:
+  * RoadsEdge & XRally polygons are now visible.
+  * Improved geometry chunk type 0x2e.
+  * Fleshed out the 'chunk type bits' a little. This will be verified against type 0x24.
+  * Xrally and roadedge hng64 screens no longer run at 10fps.
+  * Fixed polygon lookup in driving games.
+- Changed behavior of -watchdog option to act like a real watchdog. It now specifies the number of seconds after the last video update that  will cause auto-termination of MAME. Also modified it to output a message when the watchdog triggers the exit [Aaron Giles].
+- Updated windows.txt to reflect this option and the debugger_font options which were never previously documented [Aaron Giles].
+- EEPROM changes [Aaron Giles]:
+  * Fixed auto EEPROM region to properly handle 16-bit data.
+  * Changed EEPROM device to initialize EEPROM at NVRAM load time rather than init time, giving DEVICE_INIT handlers a chance to muck with the data first.
+  * Removed _NODEFAULT_ forms of EEPROM driver macros. If you need to add default data, follow the MDRV_EEPROM_ADD() with MDRV_EEPROM_DATA().
+  * Updated remaining drivers to the new EEPROM device code. Many of them now require a default EEPROM to be loaded along with the ROMs, rather than hard-coded data in the driver.
+  * Exposed an address space for EEPROM devices, meaning the memory is now visible in the debugger and can be accessed via expressions.
+  * Updated all systems that muck directly with EEPROM memory to use memory accessors instead on the EEPROM address space.
+  * Removed old EEPROM implementation.
+ - cb2001: Added many new opcodes [robiza].
+- Split ADC1038, Konami 033906 and Konami 056230 emulation from gticlub.c and konppc.c. Also, converted them to be devices and updated PPC Konami games to use the new code [Fabio Priuli].
+- Added a bunch of new protection handlers for Spark Man [Angelo Salese].
+- sub.c - Put in board XTAL and came up with some seeming better clock speed approximations until board readings can be done [Tafoid].
+- mcr.c - Sets tron3 and tron4 don't appear to have a valid working cocktail mode video or controls (upright player2 works fine). Flagged as GAME_NO_COCKTAIL [Tafoid].
+- subs.c - Added DIP LOCATIONS [Tafoid].
+- Updated qdrmfgp.c to use Konami video devices [Fabio Priuli].
+- Cleaned up a bunch of things in the gladiatr.c driver [Angelo Salese].
+- Removed sysconfig section from game_driver struct. Made compatible_with attribute available for MAME too (with NULL value set in GAMEL macro) [Miodrag Milanovic].
+- Added preliminary device version of Konami video ICs used in PowerPC games (001005, 001006, 001604 and 037122) [Fabio Priuli].
+- Converted all Taito custom I/O and video ICs to devices and updated all drivers to use them [Fabio Priuli].
+- Simplified bloodbro gfx decoding and removed unnecessary DRIVER_INIT. Marked two weststry sprite ROMs as BAD_DUMP [David Haywood].
+- Converted Namco IO chips 56xx, 58xx and 59xx to be devices and converted gaplus.c, mappy.c and toypop.c to use the new code [Fabio Priuli].
+- Allow any device memory (not just CPU's) to be accessed via debug expressions. Removed support in the expression engine for EEPROM-specific accesses [Aaron Giles].
+- Converted Fujitsu MB87078 Volume Controller to be a device and updated taito_b.c to use the new code (it's the only driver emulating this chip atm) [Fabio Priuli].
+- merit.c - Fixed what might be a copy/paste error in two sets (trvwz3h, trvwz3v) where two roms had the same filename in the same romset [Tafoid].
+- Renamed tilemap -> tilemap_t, as the name 'tilemap' is too commonly used for statics and structure members, and some compilers (esp. C++ compilers) don't allow that [Aaron Giles].
+- Fix for INP recording ports that have changed notification. Also prevents new inputs from affecting recorded inputs during playback [mahlemiut].
+- Updated srcclean to remove "invisible spaces" immediately preceding tabs [Atari Ace].
+- Cleaned up braces in the code so that they are properly balanced [Atari Ace].
+- Optimized RDP implementation further with more flattened branches [Harmony].
+- Converted a number of vector opcodes to the RSP DRC core [Harmony].
+- Unrolled and optimized a number of vector opcodes in the interpreter RSP core [Harmony].
+- Extended the devtempl.h file to support device address spaces [Aaron Giles].
+- cmmb.c - Identified and marked Service Mode DIP [Tafoid].
+- Converted the NMK112 to be a device and updated drivers using it accordingly [Fabio Priuli].
+- Added GAME_SUPPORTS_SAVE flag to psikyosh.c, since the conversion to eeprom devices fixed the remaining issues with save states [Fabio Priuli, Aaron Giles].
+- Changed Caveman Ninja driver to use Partial Updates for Raster Effects instead of buffering scanline data [David Haywood].
+- Changed Deco32 driver to use Partial Updates for Raster Effects instead of buffering scanline data (but left Dragon Gun using the buffering, because the video rendering code is far too slow with 224 partial updates for now) [David Haywood].
+- Commented out some harmful and suspicious looking interrupt generation in NamcoND1 driver until it's being properly verified; fixes Game Options menu in NCV2 test mode [David Haywood].
+- adp.c improvements [Angelo Salese]:
+  * Fixed some minor quirks.
+  * Improved Backgammon memory map.
+  * Implemented RAMDAC for Fun Land Deluxe.
+- Fixed error in codegen for drol/dror opcodes in the x86 back-end [Aaron Giles].
+- Re-implemented misaligned memory handling in the RSP DRC as before [Aaron Giles].
+- Explicitly sign-extend 32-bit indexes for load/loads/store on 64-bit machines to prevent overflow issues. Fixes DRC crash in mtetrisc [Aaron Giles].
+- Fixed a few DRC-ized vector load/store opcodes in the RSP core [Harmony].
+- Hardware multiplication and division on the SNES takes 8 machine cycles to complete [Wilbert Pol].
+- Fixed x86 HLT instruction handling [Phill Harvey-Smith].
+- Made LA Girls and clone of Play Girls. It's clearly a bootleg hardware clone. Title and background change, but the demo play and block arrangement are identical. Added info from the Guru's website about the reported manufacture company and year for 'LA Girls'. Added a note about Tube-it having the copyright and manufacture info removed [Brian Troha].
+- Added additional information to the DIP Switches and configurations sections in the -listxml output [Oliver Stoneberg].
+- Changed "Green Beret' sound chip to SN76489 and indicated that the bootleg has an undumped PAL and PROMs [Kevin Eshbach].

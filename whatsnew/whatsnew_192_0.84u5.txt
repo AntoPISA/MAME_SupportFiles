@@ -1,0 +1,75 @@
+0.84u5 2004/07/27 [#192 - David Haywood]
+----------------------------------------
+
+
+New Games supported or promoted from GAME_NOT_WORKING status:
+-------------------------------------------------------------
+beatmania 6th MIX (ver JA-A)
+Mayjinsen 2 [Tomasz Slanina]
+Rabbit [David Haywood]
+Sengoku 3
+Zupapa!
+
+New Clones supported or promoted from GAME_NOT_WORKING status:
+--------------------------------------------------------------
+Bloxeed (US, C System) [Arzeno Fabrice]
+Dunk Mania (DM2/VER.C) [R. Belmont]
+Flashgal (set 2) [f205v]
+Gals Panic (set 3) [Paul Priest]
+High Impact Football (rev LA4 02/04/91) [Brian Troha]
+Last Fortress - Toride (German) [David Haywood]
+Mille Miglia 2: Great 1000 Miles Rally (95/05/24) [David Haywood]
+Rad Rally (US) [Arzeno Fabrice]
+
+New Non-Working games / clones supported
+----------------------------------------
+Altered Beast (8571 protected) [Arzeno Fabrice]
+Champion List II [David Haywood]
+Chuugokuryuu (Japan) [David Haywood]
+Harem [Pierpaolo Prazzoli]
+Jyuohki (Japan, 8571 protected) [Arzeno Fabrice]
+Long Hu Bang [David Haywood]
+Puzzle Star [David Haywood]
+Virtual Bowling [David Haywood]
+Xing Yen Man Guan [David Haywood]
+
+
+Source changes:
+---------------
+- 4bpp/8bpp tilemaps in ST-0016 driver [Tomasz Slanina].
+- Added generic support for save states on games using the generic bitmap video hardware. Also converted a number of drivers over to using that system [Andrew Gardner].
+- Added new function: compute_resistor_net_outputs() in res_net.h. This  function calculates outputs (not weights) of color circuits where the hardware consists of open collector PROMs [Jarek Burczynski].
+- Fixed an issue in the H8/3002 core where the timer start register would mess up timers that were already running.  Improves the music tempo for S12 games.
+- Fixed DIP switches in the Midway Zeus games [Brian Troha].
+- Fixed disassembly in mirrored regions for the 6502 [Curt Coder].
+- Fixed incorrect graphics decode in the Donkey Kong driver [Andrea Mazzoleni].
+- Fixed input ports in the megasys1 driver [Mamesick].
+- Fixed mame_fprintf to output various text file formats based on the compile-time define CRLF. This must be set and can be equal to 1 (CR only), 2 (LF only) or 3 (CR+LF) [Aaron Giles].
+- Fixed memory crash in the TMS34010 core [Andrea Mazzoleni].
+- Fixed naming of the various Centipede bootlegs [Stefan Jokisch].
+- Fixed several bugs in the new input system and improved the CFG file format [Aaron Giles].
+- Fixed several compilation issues for LinuxPPC and other ports [Lawrence Gold].
+- Fixed subtle behavior in the ALLPOT handlers for the POKEY when held in reset [MikeJ].
+- Fixed the mixer code so it doesn't crash if the OSD layer returns an error [Andrea Mazzoleni].
+- Hooked up NVRAM for Namco system 12 correctly [smf].
+- Improved colors in Strike Bowling [Jarek Burczynski].
+- Improved i386 disassembly format [Ville Linde].
+- Improved QSound in ZN games by fixing ROM loading [Barry Rodewald].
+- Included all the worthwhile sound changes from MAME32FX (most of these in turn are from MAME32Plus). List and (credits) follows:
+  * airbustr.c: FM/PCM balance (RND)
+  * crimfght.c: adjusted YM and Z80 clock to 4 MHz, matches real PCB better (???)
+  * darkseal.c: FM/PCM balance (UNZU)
+  * ddragon.c: FM/PCM balance (???)
+  * mitchell.c: adjusted pitches (AKIN)
+  * namcos1.c: FM/PCM balance (UNZU)
+  * namcos2.c: FM/PCM balance (RND)
+  * nemesis.c: PSG/WSG balance (UNZU)
+  * rohga.c: FM/PCM balance (RND)
+  * shadfrce.c: FM/PCM balance (RND)
+  * simpsons.c: Z80+YM2151 clocks, FM/PCM balance (???)
+  * toki.c: FM/PCM balance (???)
+  * vaportra.c: FM/PCM balance (UNZU)
+  * xmen.c: FM/PCM balance, Z80 clock is 8 MHz (???)
+- Preliminary NEC V810 core (needed for mayjinsen, mayjinsen2 and jsk) [Thomasz Slanina].
+- Removed PORT_CENTER from drivers that were using it for autocentering and added a user-configurable autocentering property that applies to all absolute analog controls. Also made this autocentering intelligent so that it shouldn't need to be manually set to 0 if using a real analog device [Aaron Giles].
+- Significant improvements to the Rabbit driver [David Haywood].

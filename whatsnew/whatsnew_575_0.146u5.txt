@@ -1,0 +1,102 @@
+0.146u5 2012/08/20 [#575 - Miodrag Milanovic]
+---------------------------------------------
+
+
+MAMETesters Bugs Fixed
+----------------------
+- 03696: [Crash/Freeze] (tetrisp2.c) nndmseal: [debug] Assertion (after ok) in Debug build (Luca Elia).
+- 04960: [Crash/Freeze] (cdi.c) All sets in cdi.c: Quizard games do not boot after initial startup screen (David Haywood).
+- 04961: [Gameplay] (darkhors.c) darkhors: Game no longer allows for boot up (David Haywood).
+- 04962: [Crash/Freeze] (taito_l.c) plottinga: Crash during init before OK (David Haywood).
+- 04972: [Documentation] (vega.c) vega: Olympia is misspelled.
+
+
+New games added or promoted from NOT_WORKING status
+---------------------------------------------------
+Cyber Tank [David Haywood, Angelo Salese, hap]
+Cycle Maabou [Angelo Salese]
+Last Survivor [ShouTime, Charles MacDonald, Aaron Giles, 9ofzeven, TrevEB, Dr. Spankenstein, ghoolster, Surgeville, Tormod, Tjaberg, Waremonger]
+Pairs Redemption (V1.0, 10/25/94) [Brian Troha, The Dumping Union]
+Sky Destroyer [Gnoppi, P. Vining, C. Bristow, gatt9, Phil Bennett, Tormod, Andrew Welburn, Smitdogg, The Dumping Union, Angelo Salese, David Haywood]
+Space Invaders / Qix Silver Anniversary Edition [Tormod, Smitdogg, The Dumping Union, R. Belmont, Angelo Salese]
+
+New clones added
+----------------
+777 Heaven (Project) (10GBP Jackpot) (PROCONN)[launton  /MPU Mecca] (NOT WORKING)
+777 Heaven (Project) (10p 3GBP Jackpot Version 380) (PROCONN) [sam20sam  /MPU Mecca] (NOT WORKING)
+777 Heaven (Project) (20p 6GBP Jackpot Version 114) (PROCONN) [launton /MPU Mecca] (NOT WORKING)
+777 Heaven (Project) (5p 3GBP Jackpot Version 105) (PROCONN) [sam20sam  /MPU Mecca] (NOT WORKING)
+AB Cop (Japan) [ShouTime]
+Blood Storm v1.04 [Brian Troha, The Dumping Union]
+GP Rider (Japan) [ShouTime, Charles MacDonald, Aaron Giles]
+GTI Club (ver UAA) [Brian Troha, The Dumping Union] (NOT WORKING)
+Initial D Arcade Stage Ver. 3 Cycraft Edition (Rev. B) (GDS-0029B) [The Dumping Union]
+JuJu Densetsu (Playmark bootleg)  [skiltz]
+Jumping Jacks (Project) (set 2) (PROCONN) [Pete W. /MPU Mecca] (NOT WORKING)
+Megatouch IV (9255-40-01 ROA, Standard version) [Brian Troha, The Dumping Union]
+Nandemo Seal Iinkai (Astro Boy ver.) [Guru, Luca Elia] 
+Ninja Baseball Bat Man II (bootleg/hack) [Smitdogg, The Dumping Union, David Haywood] (NOT WORKING)
+Olympic Soccer '92 (set 2) [Corrado Tomaselli, The Dumping Union] (NOT WORKING)
+Panic Road (Germany) [ShouTime] (NOT WORKING)
+Parodius DA! (Asia) [Andrew Welburn, The Dumping Union]
+Samba de Amigo (prototype) [Arzeno Fabrice] (NOT WORKING)
+Sega Network Taisen Mahjong MJ 3 (Rev F) (GDX-0017F) [The Dumping Union]
+Sega Rally Championship - DX (Revision A) [Brian Troha, The Dumping Union] (NOT WORKING)
+Thunder Zone (Japan) [ShouTime]
+Thunder Zone (Rev 1, World) [Stefan Lindberg]
+Trojan (US set 2) [Corrado Tomaselli, The Dumping Union]
+
+
+Source changes:
+---------------
+- [SAA5050] Fixed double high character mode, and forced character data to 7-bit [Curt Coder].
+- 8080bw.c: Moon Lander color proms verified correct [Smitdogg, The Dumping Union].
+- Added ANDNBSU and ORBSU opcodes in V810 CPU core [Angelo Salese].
+- Added dynamic length to the color PROMs decode routines based on ROM region length. This fixes a horrible hang/crash in DEBUG=1 builds [Roberto Fresca].
+- Added inputs, sound, graphics and fixed colors to 'Bega's Battle' and 'Road Blaster' hardware [Angelo Salese].
+- Added internal mouse cursor visible in menus and when clickable artwork is used [Miodrag Milanovic].
+- Added PLD from Xenophobe Sounds Good board [Kevin Eshbach].
+- Added preliminary colour cycling effect to Sky Destroyer [David Haywood].
+- addrmap: Fix device mapping on big-endian systems [O. Galibert].
+- bzone: Corrected bonus tanks typos [Don Hodges].
+- crgolf.c: Adjusted ROM names to better represent actual ROM labels improved documentation for other dumped sets. Added protected PAL dump [Kevin Eshbach, Tafoid].
+- dassault.c: Added PCB locations to all the 'Thunder Zone' and 'Desert Assault' sets [Brian Troha, ShouTime].
+- dassault.c: Better documented the PCB stack and changed clocks to be derived by on board OSC [Brian Troha, Stefan Lindberg].
+- drcbec: Calculate NZ flags properly for 32x32=32 form of MULS [R. Belmont].
+- drcbec: Compute flags correctly for ADDC/SUBB [R. Belmont].
+- emucore: Make downcast errors more useful [O. Galibert].
+- First round of GD-ROM redumps.  Many more to come [The Dumping Union, R. Belmont].
+- Fixed remaining input issues in Sky Destroyer [Angelo Salese].
+- Fixed sprite GFX order in Cycle Maabou [Angelo Salese].
+- Fully modernized Sega 16-bit drivers. Converted FD1089, FD1094, and Sega memory mapper, divide, multiply, and compare/timer chips to modern devices [Aaron Giles].
+- Further major organization, documentation, reordering and making of clones causing numerous (over 6000) new gambling / Fruit machine sets to be created, covering multiple systems [David Haywood].
+- H8/H8S: Correct disassembly of MULXS.B and MULXS.W [R. Belmont].
+- H8/H8S: Fix MULXS.B to select the proper source register.  Fixes text in 'Qix' section of invqix [R. Belmont].
+- H8: Very preliminary H8S/2294 support [R. Belmont].
+- Hooked up Epson 62423 RTC device to Hyper Neo Geo 64 [Angelo Salese].
+- Hooked up i8255 in Kikiippatsu Mayumi-chan [Angelo Salese].
+- Hooked up inputs in Cycle Maabou [Angelo Salese].
+- Hooked up preliminary sound to 'Lock N Loaded' [Angelo Salese].
+- Implemented irq ack/pending mechanism to Hyper Neo Geo 64 [Angelo Salese].
+- invqix.c: Added PCB layout for 'Space Invaders' and 'Qix Silver Anniversary Edition' [Brian Troha].
+- invqix: Some cleanup, mapped all 4 start buttons, cocktail flip works. General EEPROM, FPGA, and IRQ hookups. Added inputs and sound, promoted to working.  Qix has some TBD text weirdness [R. Belmont].
+- Kaneko sprites are now a device.  This should facilitate cleaning up video related files as well (sprites and tilemaps) [David Haywood].
+- lwings.c: Added PCB locations to the Trojan sets [Brian Troha].
+- Made 24/12h bit register to be correctly activated in Epson 62423 RTC device [Angelo Salese].
+- memory: Add support for dynamically mapping devices [O. Galibert].
+- model2.c: Fixed the loading of the sound samples for the 'Sega Rally Championship' sets and added correct IC locations to the roms. Labeled the current sets "Twin" and added a "DX" set. Documented the missing (undumped) roms for the DX set [Brian Troha].
+- parodius.c: Corrected ROM PCB locations for all the Parodius DA! sets [Brian Troha].
+- peplus.c: Added dollar bill validator (DBV) to emulate IGT's IDO22 pulse protocol. All non-superboard games (and a few superboards) now accept bills via IPT_COIN2. Denomination is determined via driver configuration settings. The Set Chip steps are still required to enable the DBV before use [Jim Stolis].
+- PowerPC: Fix CMP/CMPI instructions; they were behaving as CMPL/CMPLI and generating wrong flags [R. Belmont].
+- ppc: Added callbacks for buffered external DMAs [Ville Linde].
+- PPC: fix SRAW behavior with C backend. x86/x64 BEs need work to pass [R. Belmont].
+- Preliminary implementation of the MOVBSU opcode in V810 CPU core [Angelo Salese].
+- rp5c15: Initialize at power-on (makes the x68k boot reliable) [O. Galibert].
+- SDL: Fix -prescale option for SDL builds [Matthias Reichl].
+- st0020 (seta blitter + zooming sprites) is now a device [David Haywood].
+- Started the process of converting some Kaneko games to use devices [David Haywood].
+- Tank Force - 4 Player (tankfrce4): Inputs were switched so that Player 2 was no longer assigned to Player 3 and vise versa [Tafoid].
+- tickee.c: Correct the dipswitches for Mouse Attack and add dipswitch locations [Brian Troha].
+- Updated some drivers to use the new SN76496 device implementation [Osso].
+- v30mz.c: Converted to C++ [Wilbert Pol].
+- Vulgus information confirmated from PCB for clock speed and vsync [Corrado Tomaselli].

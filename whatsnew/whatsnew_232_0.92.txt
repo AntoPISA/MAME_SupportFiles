@@ -1,0 +1,93 @@
+0.92 2005/02/13 [#232 - David Haywood]
+--------------------------------------
+This release comes prior to some major changes to the sound system from Aaron. Once Aaron has submitted his sound system changes 0.93 will be released to allow for easy testing of them.
+
+
+New Games / Clones supported or promoted from GAME_NOT_WORKING status:
+----------------------------------------------------------------------
+Bronx (Cycle Shooting bootleg) [Tomasz Slanina]
+Colt (NY Captor bootleg) [Tomasz Slanina]
+Egg Venture (ver 7) [Brian Troha]
+Golden Tee 2k [Brian Troha, Aaron Giles]
+Golden Tee 3D Golf [Brian Troha, Aaron Giles]
+Golden Tee 97 [Brian Troha, Aaron Giles]
+Golden Tee 98 [Brian Troha, Aaron Giles]
+Golden Tee 99 [Brian Troha, Aaron Giles]
+Golden Tee Classic [Brian Troha, Aaron Giles]
+Join 'em [Pierpaolo Prazzoli]
+Land Breaker [Tomasz Slanina]
+Lightning Fighters (World) [Gerald]
+Minesweeper (4 player) [Frank Palazzolo]
+Point Blank II [smf]
+Puckman (Falcom bootleg) [smf]
+Rack + Roll [Pierpaolo Prazzoli, siftware]
+Super Trio [David Haywood]
+Updated some NeoGeo sets to match Kawaks support (not tested) [Kawaks]
+Wall Crash (alt encryption) [Pierpaolo Prazzoli]
+World Class Bowling Deluxe [Brian Troha, Aaron Giles]
+
+New games marked as GAME_NOT_WORKING
+------------------------------------
+Championship Bowling [Pierpaolo Prazzoli] (sprite glitches, no controls)
+Dambusters [Tomasz Slanina] (skeleton driver, does nothing useful yet)
+Gunpey [Tomasz Slanina] (skeleton driver, does nothing useful yet)
+Kyuukyoku no Othello [Tomasz Slanina] (incomplete video emulation)
+Laser Base / Future Flash [Tomasz Slanina] (unemulated protection)
+Ping Pong King [Tomasz Slanina] (missing MCU simulation etc.)
+Space Guerilla [Jarek Burczynski, Tomasz Slanina] (graphical problems, no sound)
+Trivia Challenge [Pierpaolo Prazzoli] (missing question roms)
+Wild Arrow [Tomasz Slanina] (seems to be some kind of gambling machine anyway)
+
+
+Source changes:
+---------------
+- Fixed most of the remaining issues with Taito F3 sound [Nicola Salmoria]:
+  * Sound in Ring Rage and Riding Fight still doesn't work.
+  * Quiz Theater has a bad sound rom.
+  * Bust-A-Move Again (US) sound roms need checking again real (non-conversion) cart.
+- Improvements in the Microprose 3D driver [Philip J Bennett]:
+  * Games not playable, but still a big improvement over the skeleton driver.
+- Improvements to MACs driver [Tomasz Slanina]:
+  * Now using ST0016 Video, however emulation is still incomplete so it doesn't do much more yet.
+- Improvements to Hyperstone based drivers [Tomasz Slanina].
+- Added missing PROMs to many drivers [HIGHWAYMAN].
+- Fixed Vs. Goonies Dips [chaneman].
+- Lethal Enforcers Improvements [R. Belmont]:
+  Fixes:
+  * Tilemap colors.
+  * Guns hooked up and aligned properly.
+  * Tilemap and sprite layers aligned with the guns.
+  * Various other cleanups - added a sprite ROM that was missing previously.
+  To do:
+  * Figure out the correct sprite decode.
+  * Sprite/tilemap priorities.
+  * "Reload" indicator is funky, probably needs tilemap flip bits.
+  * Fix K056832 external linescroll RAM support (used for high scores, parallax in scrolling stages).
+- Misc changes [Nathan Woods]:
+  * Added a hook that allows a driver to install a custom read handler for reading interrupt vectors (the 65816 has a signal that is asserted  when reading a vector and certain hardware needs to reroute the read).
+  * Created a memory_get_op_ptr() call.  This call is equivalent to memory_get_read_ptr() in ADDRESS_SPACE_PROGRAM with the exception that it is aware of the opbase handler. 
+  * Modified debugger to use memory_get_op_ptr() to determine if opcode memory is unmapped. 
+- Misc compiler fixes [Lawrence Gold]:
+  * Taito SJ update [Nicola Salmoria].
+  * Added sound CPU -> main CPU communication (fixes Tin Star hangs without need for a kludge, and makes tunes between levels correctly play until the end).
+  * Added memory map derived from schematics
+  * Added DAC volume control (I hear little difference, even if it's used).
+  * Coin lockout (important otherwise games could accept more than 9 coins).
+- Correct Hyperstone Iram mirroring [Pierpaolo Prazzoli].
+- Added real noise generator to TMS5110 [Jarek Burczynski].
+- Workaround for Dipswitch problem in Mr Do's Castle [Nicola Salmoria].
+- Fixed bug in M37710 cpu core [R. Belmont].
+- More Sega improvements, including lots of set renaming and cleaning up of drivers by removing unused code [Aaron Giles].
+- Updated some mahjong drivers to use the new standard inputs. Note, there was a further submission, this will need resyncing and resubmitting [James Wallace].
+- PSX based driver improvments [smf]:
+  * New board notes from Guru.
+  * Removed 8.3 restrictions on namco system 11 ROM names.
+  * Improved root counter emulation.
+  * Improved dma acknowledge emulation.
+  * Changes visible area immediately instead of during video update.
+- Hooked up sound cpu in fitfight.c [Tomasz Slanina].
+- Misc compiler fixes for VC [Bryan McPhail].
+- Sound in Minesweeper driver [Frank Palazzolo].
+
+... and probably a whole bunch of other bits and pieces I've forgotten to mention (the WIP updates might give a better overview).
+ Anything that is missing will probably need resubmitting after Aaron's changes.

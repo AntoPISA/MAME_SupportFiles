@@ -1,0 +1,32 @@
+0.87u4 2004/10/16 [#208 - David Haywood]
+----------------------------------------
+
+
+New Games supported or promoted from GAME_NOT_WORKING status:
+-------------------------------------------------------------
+Puzzle Club (Yun Sung) [Pierpaolo Prazzoli]
+Pop Bingo [David Haywood]
+
+New Clones supported or promoted from GAME_NOT_WORKING status:
+--------------------------------------------------------------
+Explosive Breaker (parent of bakubrkr) [David Haywood]
+Street Fighter 2 EX (USA) [Brian Troha]
+Top Racer (bootleg, set 2) [Pierpaolo Prazzoli]
+
+New Non-Working games / clones supported
+----------------------------------------
+Funny Strip [David Haywood] (unemulated protection?)
+Mighty Warriors (these four drivers are still being worked on)
+Ping Pong Masters '93
+Twin Brats
+Twins
+
+
+Source changes:
+---------------
+- Changed instr86.c based on comment below: In the cpu/i86 code emulating the CMPSW instruction there is what seems to be a cut+paste bug: It calls the SUBB() macro where it should call SUBW(). Line 524 of instr86.c [Juergen Buchmueller].
+- Changed where source filename based config files are stored to avoid conflicts with set name configs [René Single].
+- Changes the static function implementations in memory.h to inline [Brad Oliver].
+- Code to decrypt FD1094 CPU 317-0092 in states 0x00-0xff (0x00 is reset, 0x10 is IRQ) this is the CPU used by tetris, code is not hooked up yet [Nicola Salmoria].
+- Fixed bugs introduced in u3 causing Atari / Midway drivers to crash [Olivier Galibert].
+- Improvements to Hyper Neogeo 64 rendering, 3d graphics can now be seen although emulation is still incomplete and Fatal Fury WA still needs a hack to boot [Andrew Gardner, Rasterizing code provided in part by Andrew Zaferakis].

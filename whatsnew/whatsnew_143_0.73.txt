@@ -1,0 +1,27 @@
+0.73 2003/09/04 [#143 - David Haywood]
+--------------------------------------
+Sorry, this list of changes isn't complete due to hardware problems I'm having.
+
+
+New games supported
+-------------------
+Hanagumi Taisen Columns - Sakura Wars  [Angelo Salese, David Haywood] (this the first st-v game to be supported by MAME, please note that due to the complexity of the system emulation is still preliminary and thereare still various issues that will need ironing out, there is currently no sound)
+Sprint 8 [Stefan Jokisch]
+Super Trivia Master [Pierpaolo Prazzoli] (wrong colours)
+Twin Eagle 2 [Tomasz Slanina] (DOES NOT WORK due to protection involving the directions in which objects travel, and as a side-effect collisions don't work	correctly either, if somebody fixes this then itmight be fine apart from a few offset problems)
+Ultra X Weapons [Tomasz Slanina] (some gfx offset problems / alignment (sprite handle can move?)
+
+New Clones supported
+--------------------
+Lady Bug (bootleg on Galaxian Hardware) [Mike Coates] (input ports incomplete)
+Video Pool (Moon Cresta hardware) (bootleg of Video Hustler) [Mike Coates] (dipswitches incomplete)
+
+
+Source changes:
+---------------
+- Added 8 Player Support to the Core [Stefan Jokisch].
+- Attempted to Improve Super Dodge Ball MCU Simulation [Acho A. Tang].
+- Continued MegaPlay Improvements (still none fulyl working yet but more of the BIOS menu tests pass now) [Barry Rodewald].
+- Many Improvements to the ST-V emulation, resulting in Hanagumi Columns being playable and other games on the driver starting to show some graphics [Angelo Salese, David Haywood].
+- Some System GX Improvements, mainly to the not yet working games [R. Belmont].
+- Various Changes to keep the code inline with MESS [Nathan Woods].

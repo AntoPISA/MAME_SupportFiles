@@ -1,0 +1,59 @@
+0.59 2002/03/22 [#116 - Nicola Salmoria]
+----------------------------------------
+
+
+New games supported:
+--------------------
+Bucky O'Hare [Olivier Galibert, R. Belmont]
+Daraku Tenshi - The Fallen Angels [David Haywood]
+Gunbird 2 [David Haywood]
+Mahjong Sisters [Uki]
+Paddle Mania [Acho A. Tang]
+Pass [David Haywood, Stephan Humbert]
+Police Trainer [Aaron Giles]
+Quiz DNA no Hanran [Uki]
+Quiz Gakuen Paradise [Uki]
+Quiz Gekiretsu Scramble [Uki]
+Scorpion [Stephane Humbert]
+Sol Divide [David Haywood]
+Space Bomber [David Haywood]
+Strikers 1945 II [David Haywood]
+Super Bug [Stefan Jokisch]
+Super Pinball Action [David Haywood, Stephan Humbert]
+Wild West C.O.W.boys of Moo Mesa [Olivier Galibert, R. Belmont]
+
+New clones supported:
+---------------------
+Beraboh Man (Japan version B) [Nicola Salmoria]
+Captain America (Japan) [Chack'n]
+Crystal Castles (version 4) [Chris Hardy]
+Dynasty Wars (World) [David Haywood]
+Galaxian (Midway, old rev) [Nicola Salmoria]
+Gradius 3 (World?) [Chack'n]
+Haunted Castle (Japan version N) [Stephane Humbert]
+Magical Crystals (World) [Brian Troha]
+Moon Cresta (Nichibutsu set 2) [Guru]
+Pisces (original) [Mike Coates]
+
+
+MAME Testers bugs fixed (there are probably more)
+-----------------------
+captaven058gre_2
+captaven058gre_5
+eto37b9gre
+gangwars37b15gre
+punchoutc37b15gre
+skyadvnt136b8gre
+thndrx2058red
+
+
+Source changes:
+--------------------
+- Fixed 'Rainbow Islands' and 'Rainbow Islands Extra' c-chip emulation [Robert Gallagher, Tormod Tjaberg].
+- Fixed 'Super Stingray' and Kyros, and most problems in 'Gold Medalist' [Acho A. Tang].
+- Loads of fixes to input ports etc. in several drivers [Stephane Humbert].
+- [Windows] Some changes to use less CPU time when it's not needed. Use -nosleep to disable this behaviour during gameplay [Aaron Giles].
+- [Windows] MMX implementation of the tilemap drawing code, providing a 5-10% speed increase with some games [Andrea Mazzoleni].
+- New function tilemap_set_palette_offset() to set a global palette offset without having to use tilemap_mark_all_tiles_dirty() [Aaron Giles].
+- Rewritten the UPD7759 emulator (used by TMNT etc) [Olivier Galibert].
+- Support for compressed hard disk images [Aaron Giles].

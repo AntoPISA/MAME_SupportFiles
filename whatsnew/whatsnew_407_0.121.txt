@@ -1,0 +1,66 @@
+0.121 2007/11/19 [#407 - Aaron Giles]
+-------------------------------------
+
+
+MAMETesters Bugs Fixed
+----------------------
+dunhuang0120u3gra (Vas Crabb)
+
+
+New games added or promoted from NOT_WORKING status
+---------------------------------------------------
+Best Of Best [Luca Elia]
+
+New clones added
+----------------
+Cluedo (prod. 2) [James Wallace]
+
+
+Source changes:
+---------------
+- Updated DIP locations in the following drivers [Vas Crabb]:
+  * bublbobl.c: bublbobl, tokio
+  * cps1.c: all games
+  * dunhuang.c: dunhuang
+  * mario.c: marked all as active high (confirmed from manuals).
+  * segag80r.c: astrob2, astrob1, spaceod and pignewt.
+  * segag80v.c: all games, fixed switch ordering.
+- Made more functions static to reduce namespace pollution [Atari Ace].
+- Improvements to the Touchmaster driver, still labelled not working. You can actually play tm and tm3k, but sometimes you have to reset because they stop registering the touchscreen input. tm4k is protected and hence totally unplayable [Luca Elia].
+- Fixed compilation problems with altivec accelerators [Vas Crabb].
+- Fixed bug in Voodoo statistics accumulation [Atari Ace].
+- Reverted to old behavior where even with -switchres disabled, MAME will use exclusive mode when rendering with Direct3D. This means some of the switching to/from fullscreen mode problems will come back, but should prevent confusion over poor performance by default [Aaron Giles].
+- Made it a non-fatal error if we are unable to change a joystick to absolute mode in the Windows input code. Some drivers apparently freak out about this [Aaron Giles].
+- Defined a couple more inline functions: div_64x32_rem and the unsigned equivalent divu_64x32_rem. Added inline implementations for GCC x86 and MSVC [Aaron Giles, Vas Crabb].
+- Cleaned up timer interfaces. Created new module attotime which manages a new structure type attotime, equivalent to the old mame_time. All time math functions are now implemented in attotime and have been removed from timer.h. The following search/replace over the code has been made [Aaron Giles]:
+
+  add_mame_times                -> attotime_add
+  add_subseconds_to_mame_time   -> attotime_add_subseconds
+  compare_mame_times            -> attotime_compare
+  double_to_mame_time           -> double_to_attotime
+  make_mame_make                -> attotime_make
+  mame_time                     -> attotime
+  mame_time_to_double           -> attotime_to_double
+  mame_time_to_subseconds       -> attotime_to_attoseconds
+  scale_down_mame_time          -> attotime_div
+  scale_up_mame_time            -> attotime_mul
+  sub_mame_times                -> attotime_sub
+  sub_subseconds_from_mame_time -> attotime_sub_subseconds
+  subseconds_t                  -> attoseconds_t
+  time_never                    -> attotime_never
+  time_zero                     -> attotime_zero
+
+  DOUBLE_TO_SUBSECONDS          -> DOUBLE_TO_ATTOSECONDS
+  HZ_TO_SUBSECONDS              -> HZ_TO_ATTOSECONDS
+  MAME_TIME_IN_CYCLES           -> ATTOTIME_IN_CYCLES
+  MAME_TIME_IN_HZ               -> ATTOTIME_IN_HZ
+  MAME_TIME_IN_MSEC             -> ATTOTIME_IN_MSEC
+  MAME_TIME_IN_NSEC             -> ATTOTIME_IN_NSEC
+  MAME_TIME_IN_SEC              -> ATTOTIME_IN_SEC
+  MAME_TIME_IN_USEC             -> ATTOTIME_IN_USEC
+  MAME_TIME_TO_CYCLES           -> ATTOTIME_TO_CYCLES
+  SUBSECONDS_TO_DOUBLE          -> ATTOSECONDS_TO_DOUBLE
+  SUBSECONDS_TO_HZ              -> ATTOSECONDS_TO_HZ
+  USEC_TO_SUBSECONDS            -> ATTOSECONDS_IN_USEC
+   
+In addition, all the mame_timer_* functions have been renamed back to their original names timer_*, so it is timer_set() instead of mame_timer_set() once again. The mame_timer object itself has been renamed to emu_timer.

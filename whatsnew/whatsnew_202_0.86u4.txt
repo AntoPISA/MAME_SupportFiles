@@ -1,0 +1,39 @@
+0.86u4 2004/09/09 [#202 - David Haywood]
+----------------------------------------
+
+
+New Games supported or promoted from GAME_NOT_WORKING status:
+-------------------------------------------------------------
+Fighting Basketball [Pierpaolo Prazzoli] (Some problems with sprites flickering, incomplete sound emulation)
+Hot Blocks - Tetrix II [David Haywood] (eprom not hooked up)
+
+New Clones supported or promoted from GAME_NOT_WORKING status:
+--------------------------------------------------------------
+Street Fighter II' - Hyper Fighting (World 921209) [smf]
+Tetris (B-System, YM2203 sound) [Charles MacDonald]
+
+New Non-Working games / clones supported
+----------------------------------------
+Paint & Puzzle [David Haywood] (work on this is being continued by another dev)
+
+
+Source changes:
+---------------
+- Added sound to SWA [R. Belmont].
+- Beast Busters DSW fix [Inigo Luja].
+- Fixed broken controls in Hydra [Pierpaolo Prazzoli]
+- Hooked up eeprom in rabbit driver [R. Belmont].
+- Improvements to SPI decryption [Ville Linde].
+- M37710 update [R. Belmont]:
+  * Added support for externally-pulsed timers (Prop Cycle uses this to read the pedals).
+- Misc name changes [Darren Hatton].
+- Misc changes [Curt Coder]:
+  * Lovely Cards: Converted to use tilemaps. Fixed tile rendering, the tile ROM is not a bad dump, the gfx routine was bad!
+  * Outrunners: Changed name to "OutRunners" as per title screen and flyers.
+  * Sonic the Hedgehog: Changed "Sonic the Hedgehog" to "Sonic The Hedgehog". "The" is Sonic's	middle name according to "The Ultimate History of Video Games", p. 428: ''The "T" in Sonic The Hedgehog is capitalized. Sega Marketing wizard Al	Nilsen had the "The" registered as Sonic's middle name.''
+  * Changed "The Revenge Of Shinobi" to "The Revenge of Shinobi"
+  * Changed "MegaPlay" to "Mega Play" as per system16.com.
+- Preliminary background zoom in HNG64 [David Haywood].
+- Reorganised and cleaned up the kaneko16.c and related drivers splitting protection related code into a separate file [Sebastien Volpe].
+- Some improvements to tmmjprds in rabbit driver [David Haywood].
+- Tile Flipping in NCV2 [Mark McDougall].

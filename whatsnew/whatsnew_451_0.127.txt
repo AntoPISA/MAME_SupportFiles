@@ -1,0 +1,88 @@
+0.127 2008/08/19 [#451 - Aaron Giles]
+-------------------------------------
+
+
+MAMETesters Bugs Fixed
+----------------------
+- 01992: [Crash/Freeze] timecrsa, timecris: SubCPU start wait fails test (robiza).
+- 02105: [Graphics] qbert and clones: Misplaced graphics (Aaron Giles).
+- 02114: [Color/Palette] all sets in eolith.c: colors shifted to blue (Fabio Priuli).
+- 02115: [DIP/Input] berlwall, berlwalt: Player 1 inputs not working (Fabio Priuli).
+- 02116: [Graphics] all sets in cps2.c : corrupted graphics (robiza).
+- 02119: [Sound] cischeat, bigrun: no sound (Aaron Giles).
+- 02121: [DIP/Input] reactor: input controls and startup tone (Aaron Giles).
+
+
+New games added or promoted from NOT_WORKING status
+---------------------------------------------------
+Cube Quest [Philip Bennett, Joe Magiera, Warren Ondras]
+WW III [Stefan Lindberg, Couriersud]
+
+New clones added
+----------------
+Red Hawk (Haedong Corp.) [David Haywood, Tirino73 / Mame Italia]
+Snow Bros. - Nick & Tom (Dooyong license) [Tirino73 / Mame Italia]
+Shogun Warriors (Europe Rev.xx)(Kaneko 1992) [Pythagoras573]
+
+New games marked as GAME_NOT_WORKING
+------------------------------------
+Astro Wars [MASH]
+Hot Slot (ver 05.01) [Roberto Fresca]
+I P M Invader (Incomplete Dump) [unknown dumper, Couriersud]
+Magic Colors (ver 1.7a) [Roberto Fresca]
+
+
+Source changes:
+---------------
+- Converted adp to 4bpp rendering [robiza].
+- Began implementing 68681 device in skattv. Improved hd63484 core to support some initial graphics [robiza].
+- Added correct CRCs for DOA2 [Guru].
+- Fixed graphics in cps2 games [robiza].
+- Updated documentation in paradise.c [Brian Troha]:
+  * Added PCB layout for 'Torus' and 'Mad Ball'.
+  * Corrected ROM names and/or added U locations.
+- Changed at28c16 memory handlers to 8 bits and perform the conversion in the memory mapping [smf].
+- Update the t5182.c documentation/pinout [Lord Nightmare].
+- Magic10 updates [Roberto Fresca]:
+  * Simulated the co-processor to pass the initial test.
+  * All Inputs worked from the scratch.
+  * Fixed position of tilemap layers.
+  * Added scroll register preliminary support.
+  * Fixed Super Pool graphics.
+- Added save states to 65816 CPU [R. Belmont].
+- SH-2 DRC updates [R. Belmont]:
+  * Moved IRQ handling front-end into recompiled code.
+  * Added TSTM/ANDM/XORM instructions.
+  * Added SH-1 CPU support, including lower precision on MAC.W and locking out SH-2 only instructions.
+- Split out SH-4 non-interpreter-specific stuff to sh4comn.c [R. Belmont].
+- Identified compatible timekeeper used by Midway Zeus II. Removed all the timekeeper memory handlers, except for 8 bit & changed the drivers to use the conversion built into the memory system [smf].
+- Added new generic laserdisc VIDEO_UPDATE handler to the laserdisc code. This handler works for both disc-only games and those with overlays. For disc-only games, the base macro is sufficient. For games with overlays, an additional set of configuration macros are provided:
+  MDRV_LASERDISC_OVERLAY - specifies update function, width, height, and bitmap format of the overlay.
+  MDRV_LASERDISC_OVERLAY_CLIP - specifies the visible area of the overlay bitmap.
+  MDRV_LASERDISC_OVERLAY_POSITION - specifies default x,y position.
+  MDRV_LASERDISC_OVERLAY_SCALE - specifies default x,y scale factors.
+- The update function provided to MDRV_LASERDISC_OVERLAY is identical to a normal VIDEO_UPDATE callback, so a standard one can be used. All existing laserdisc drivers have been updated to support this new rendering mechanism, removing much duplicated code [Aaron Giles].
+- Added the ability to configure the overlay position and scale parameters at runtime. Added OSD menus to control them. Added logic to save/restore the data in the game's configuration file [Aaron Giles].
+- Added new macros MDRV_LASERDISC_SCREEN_ADD_NTSC and _PAL, which defines a standard screen with the correct video timing characteristics and update function for laserdiscs. Updated all drivers to use these macros instead of defining their own screens [Aaron Giles].
+- Added DISK_REGIONS to all laserdisc drivers [Aaron Giles].
+- Added DISK_IMAGE_READONLY_OPTIONAL to support games (like Cube Quest) where the disk is non-essential to the game's operation [Aaron Giles].
+- Fixed bug in identifying the custom sound driver for the laserdisc [Aaron Giles].
+- Updated ldverify to identify blank regions of the disc for post-processing [Aaron Giles].
+- Fixed rendering 16bpp with alpha using bilinear filters (fixes screenshots of laserdisc games with overlays) [Aaron Giles].
+- Included support for parsing .gdi files in chdman [ElSemi].
+- Added new driver for 'Cube Quest'. This includes CPU cores for the three bitslice processors, as well as laserdisc support for the hacked laserdisc that was used to drive the games [Philip Bennett, Joe Magiera, Warren Ondras].
+- Updated cps1 to use proper gfx ROMs (+ PALs) for varthj, and to load correct A-Board PALs for QSound games [Nicola Salmoria].
+- Added address decode prom 5e to dkong3/dkong3j [Couriersud].
+- Reduced YM2612 DAC level relative to FM. This better matches real hardware [R. Belmont].
+- Added validity check to ensure that AM_READ_PORT() macros reference valid ports. Fixed several cases where the check failed [Aaron Giles].
+- Added new Guru readme for namcos22 driver [Guru].
+- Added validity check to ensure that ports referenced by a condition actually exist. Fixed a case where this was violated [Aaron Giles].
+- Added DIP locations to dooyong.c [Guy Hufkens].
+- Added cheat functions frombcd() and tobcd() to convert numbers to/from BCD format. Changed "Activate" to "Set" in the menus [Aaron Giles].
+- A couple of minor cleanups [Oliver Stoenberg]:
+  * Removed obsolete ENABLE_DEBUGGER occurance.
+  * Removed more unprintable characters in SH-2 disassembler.
+  * memset() usage cleanups.
+  * Removed duplicated TMS5110 entry in sound.mak.
+  * Use machine in uigfx.c where it's already available.
+- Removed included "profiler.h" from files that do not use profiling functions [Christophe Jaillet].

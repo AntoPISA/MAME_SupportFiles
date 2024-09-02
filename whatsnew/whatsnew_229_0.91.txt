@@ -1,0 +1,69 @@
+0.91 2005/01/29 [#229 - David Haywood]
+--------------------------------------
+
+
+New Games / Clones supported or promoted from GAME_NOT_WORKING status:
+----------------------------------------------------------------------
+Clash Road (Status License) [Steve Rice, Pierpaolo Prazzoli]
+Dacholer [Pierpaolo Prazzoli]
+Golden Axe RODA (Japan) [Tormod Tjaberg]
+Kick Boy [Pierpaolo Prazzoli] ( both are missing proms - causes bad colours - and lack sound)
+PushMan (Korea) [Andreas Thorsen]
+Thunder Cross (World?) [Andreas Thorsen]
+
+New games marked as GAME_NOT_WORKING
+------------------------------------
+Eleven Beat [David Haywood] (hese are n64 based, skeleton driver only with board layouts, maybe more useful to n64 emulator authors)
+Magical Tetris Challenge [David Haywood]
+See See Find Out [Tomasz Slanina] (mostly ok, but sometimes pauses)
+Tarzan (IGS) [David Haywood] (no work been done on it, might be gambling)
+
+
+Source changes:
+---------------
+- Fixed pengo (was broken in u4) [smf].
+- Increased interleave in megasys1 driver, fixing speed in avspirit [David Haywood].
+- Fixed a problem in palette_get_color() causing an incorrect value to be returned in some specific cases [Nicola Salmoria].
+- Fixed kaneko16.c which was broken in u4 [Sebastien Volpe].
+- Debugger enhancements [Nathan Woods]:
+  * Adds a 'source' command, that reads in a set of debugger commands similar to the UNIX shell command of the same name.
+  * Added a debug_trace_printf() call, for use during debugging to emit text into a trace file.
+  * Petty compiler warning fixes.
+- Kludged reset in Crystal System so it no longer crashes Mame [ElSemi].
+- Memory System update with improved mirroring support [Aaron Giles].
+- Removed obsolete orientation code from tilemap code and drivers [Aaron Giles].
+- Sega update [Aaron Giles]:
+    segas16a:
+  * Added proper mirroring for the memory map (needs my memory update).
+  * Fixed sense of Time Scanner cocktail DIP.
+  * Fixed SDI.
+    segas16b:
+  * Fixed sense of Time Scanner cocktail DIP.
+  * Fixed SDI.
+    machine/segaic16:
+  * Added support for 3 multiply chips and 3 divide chips.
+  * Fixed timer/compare chip implementation to match real PCB.
+    vidhrdw/segaic16:
+  * Added tilemap flipping support.
+  * Added sprite flipping support for 16A and 16B sprites.
+- Changed outrun and outruna to use a better set of GFX roms [David Haywood].
+- Fixed some NeoGeo G FX bugs [A nonymous].
+- Fixed some vasara2 dipswitch text [Mamesick].
+- Fixed popeye crash + water colour [Nicola Salmoria].
+- Fixed vs. Wrecking Crew colours [Roberto Gandola].
+- Improved workaround for hang bug in tnzs [Nicola Salmoria].
+- Improvements to PPC core / Model 3 driver. some step 2.0 games now show something [Ville Linde].
+- MC68HC11 CPU core [Ville Linde].
+- Lethal Enforcers update [R. Belmont]:
+  * Fixes/resolves:
+    - Both versions now boot and run.
+    - Tilemaps and sprites display.
+    - Sound now works.
+    - Memory maps unified.
+    - All digital inputs added (including DIPs).
+  * Still to do:
+    - Colors.
+    - Gun inputs.
+    - Tilemap enable/disable.
+    - Priorities.
+    - K054000 protection chip hookup.

@@ -1,0 +1,50 @@
+0.36b11 1999/12/06 [#085 - Nicola Salmoria]
+-------------------------------------------
+
+
+New games supported:
+--------------------
+Atari Soccer [Brad Oliver]
+Cisco Heat [Luca Elia]
+Dragon Buster [Manuel Abadia]
+F1 Grand Prix Star [Luca Elia]
+Pole Position [Aaron Giles, Ernesto Corvi, Juergen Buchmueller]
+Pole Position II [Aaron Giles, Ernesto Corvi, Juergen Buchmueller]
+Sky Kid [Manuel Abadia]
+The Percussor [Zsolt Vasvari]
+Turbo [Aaron Giles, Ernesto Corvi]
+
+
+New clones supported:
+---------------------
+Blades of Steel (version T) [Nicola Salmoria]
+Centipede (bootleg set 2) [Nicola Salmoria]
+Dai-ressya Goutou (= Iron Horse) [Nicola Salmoria]
+MX5000 (= Flak Attack) [Nicola Salmoria]
+Phoenix (Centuri) [Nicola Salmoria]
+Punisher (US) [Nicola Salmoria]
+Search and Rescue (World) [Nicola Salmoria]
+Vimana (Nova Apparate GMBH & Co) [Nicola Salmoria]
+
+
+These drivers have improved GRAPHICS:
+-------------------------------------
+- Fixed gfx in 'Muscle Bomber Duo' and continue screen in 'Captain Commando' [Paul Leaman].
+
+
+These drivers have new or improved SOUND:
+-----------------------------------------
+- 051649 emulation, used in 'Haunted Castle' [CAB, Bryan McPhail].
+- Improved emulation of the 'Galaxians' sound subsystem. Samples are no longer used [Juergen Buchmueller, Tatsuyuki Satoh].
+
+
+Source changes:
+--------------------
+- Fixed 'Bosconian' score handling [Vernon C. Brooks].
+- Fixed 'Frisky Tom' (note: delete friskyt.hi to fix coins) [Zsolt Vasvari].
+- [DOS] New command -verifysets, this verifies all available games and reports their status (good/best available/bad). Also changed the format of the -verifyroms output. Some frontends might need small adjustments to parse the new output [Bernd Wiebelt].
+- Rewritten the sample listing routines for -listsamples, -listsamdir, -verifysamples and -listinfo [Juergen Buchmueller].
+- QSound player (preliminary) [CAB, Paul Leaman, Miguel Angel Horna].
+- Some changes to the TMS9900 emulation that completely screw up Cosmic Guerilla [Raphael Nabet].
+- Taken the 005289 emulation out of namco.c [Bryan McPhail].
+- Y8950 emulator, used by ginganin [Tatsuyuki Satoh].

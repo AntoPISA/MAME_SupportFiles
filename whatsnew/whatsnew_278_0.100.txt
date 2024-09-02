@@ -1,0 +1,35 @@
+0.100 2005/09/14 [#278 - Aaron Giles]
+-------------------------------------
+
+
+New game marked as GAME_NOT_WORKING
+------------------------------------
+Rebus [David Haywood]
+
+New clone added
+----------------
+G-LOC R360 [Craig Walker]
+
+
+Source changes:
+---------------
+- Fixed crash in some games when using a low sample rate or -nosound [Aaron Giles].
+- Fixes crashes in the following drivers [Aaron Giles]:
+  * 'Beat Head' (video update).
+  * 'Hit Me' (graphics decode).
+  * 'Imago' (palette setup).
+  * 'Legend of Kage' bootlegs (accessing invalid CPU).
+  * 'Rock Climber'.
+  * 'Speed Attack' (palette out of range).
+- 'Tumble Pop' driver updates [David Haywood]:
+  * Split driver into tumblep.c and tumbleb.c.
+  * tumblep.c runs the original tumble pop sets and use now using deco16ic.c for the gfx.
+  * tumbleb.c runs the bootlegs and games which use hardware which works in a similar way to tumble pop (semicom titles etc.).
+- Kludged around glitches in 'Monster World' [David Haywood].
+- Cross Pang is now using the sprite draw copied from tumbleb.c instead as the game also seems to be based around "Tumble Pop' designs, as a result the 'Alpha Blend' bit has been removed and replaced with a flicker sprite bit like Tumble Pop which looks more correct to me. Also changed some default settings [David Haywood].
+- Corrected 'Indian Battle' DIP switches [ShimaPong].
+- Updated 'D-Day' DIP switches to use conditionals [James Wallace].
+- More Namco sound/MCU updates [R. Belmont]:
+  * Fixed analog controls for 'Ridge Racer'.
+  * Fixed sound/music to play in System 22 games
+  * Fully share the sound part of the MCU RAM for System 11. This allows games to read back the song names and fixes the sound test menu in 'Tekken' and 'Tekken 2'.

@@ -1,0 +1,28 @@
+0.85u1 2004/08/10 [#195 - David Haywood]
+----------------------------------------
+
+
+New Non-Working games / clones supported
+----------------------------------------
+Party Time: Gonta the Diver II [Brian Troha]
+Phraze Craze [Pierpaolo Prazzoli]
+Tic Tac Trivia [Pierpaolo Prazzoli]
+Trivia Whiz [Pierpaolo Prazzoli]
+Trivia Whiz II [Pierpaolo Prazzoli]
+Versus Net Soccer (ver JAB) [Brian Troha]
+
+
+Source changes:
+---------------
+- Added the ability for analog axes to return "invalid" as a value from the OSD layer, allowing them to dynamically disable themselves. Using this feature, the Windows version now autodetects analog versus digital axes and dynamically disables the analog values if it thinks you are using a digital axis. Note that this even works if you have a "switchable" gamepad [Aaron Giles].
+- Changed 720' controls to use an analog joystick instead of a dial so that the original controller motion can be replicated. Thanks to MAME Analog+ for the logic [Aaron Giles].
+- Changed all the analog mapping defaults back to 'keyboard' as the default values were confusing people [Aaron Giles].
+- Cleaned up some #ifdef MESS and united the two definitions of my_stricmp [Rene Single].
+- Conditional DIP switches in rallyx, mcatadv, galpanic [Inigo Luja].
+- Fixed bug preventing saving of lightgun control changes [Aaron Giles].
+- Fixed debugger crash when using F10 with the i960 core [R. Belmont].
+- Fixed input port definition errors in megasys1 [Mamesick].
+- Fixed input port definition errors in taitosj, galaxian [Aaron Giles].
+- Fixed input port definition errors in tnzs [Inigo Luja].
+- Fixed loading of ctrlr files so that they actually take effect now [Aaron Giles].
+- Fixed the colors in the Status trivia games [Stefan Jokisch].

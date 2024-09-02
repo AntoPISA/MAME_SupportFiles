@@ -1,0 +1,90 @@
+0.35b13 1999/05/24 [#069 - Nicola Salmoria]
+----------------------
+
+
+New games supported:
+--------------------
+(arabian)  Arabian [Gerald Vanderick]
+(badlands) Bad Lands [Aaron Giles]
+(bombjack) Bomb Jack (set 1) [Nicola Salmoria]
+(changes)  Changes [Zsolt Vasvari]
+(crush)    Crush Roller (Kural Samno) [Gerald Vanderick] (also note that the main set is now crush instead of 'maketrax')
+(cyberb2p) Cyberball 2072 (2 player) [Aaron Giles]
+(dogfight) Dogfight [Zsolt Vasvari]
+(extrmatn) Extermination (US) [Nicola Salmoria]
+(funkybee) Funky Bee [Zsolt Vasvari]
+(genpeitd) Genpei ToumaDen [Nicola Salmoria]
+(grobda)   Grobda (set 1) [Manuel Abadia]
+(hatena)   Adventure Quiz 2 Hatena no Dai-Bouken (Japan) [Nicola Salmoria]
+(hitnmiss) Hit 'n Miss (version 3.0) [Nicola Salmoria]
+(hoccer)   Hoccer (set 1) [Zsolt Vasvari]
+(lastbld2) The Last Blade 2 / Bakumatsu Roman - Dai Ni Maku Gekkano Kenshi [Nicola Salmoria]
+(marineb)  Marine Boy [Zsolt Vasvari]
+(mmonkey)  Minky Monkey [Zsolt Vasvari]
+(moguchan) Moguchan [Zsolt Vasvari]
+(nomnlnd)  No Man's Land [Mike Coates]
+(outzone)  Out Zone [Darren Olafson]
+(phozon)   Phozon [Manuel Abadia]
+(quizkof)  Quiz King of Fighters [Nicola Salmoria]
+(rampart)  Rampart (3-player Trackball) [Aaron Giles]
+(retofinv) Return of the Invaders [Jarek Parchanski]
+(roishtar) The Return of Ishtar [Nicola Salmoria]
+(shuuz)    Shuuz (version 8.0) [Aaron Giles]
+(skullxbo) Skull & Crossbones (set 1) [Aaron Giles]
+(skylancr) Sky Lancer [Zsolt Vasvari]
+(springer) Springer [Zsolt Vasvari]
+(truxton)  Truxton / Tatsujin [Darren Olafson]
+(wanted)   Wanted [Zsolt Vasvari]
+(xsleena)  Xain'd Sleena [Nicola Salmoria]
+(zodiack)  Zodiack [Zsolt Vasvari]
+
+New clones supported:
+---------------------
+(cruisin)  Cruisin [Nicola Salmoria]
+(dangarb)  Dangar - Ufo Robo (bootleg) [Nicola Salmoria]
+(galaga84) Galaga '84 [Valerio Verrando]
+(grobda2)  Grobda (set 2) [Manuel Abadia]
+(grobda3)  Grobda (set 3) [Manuel Abadia]
+(hangly2)  Hangly-Man (set 2) [Gerald Vanderick]
+(headonb)  Head On (1 player) [Nicola Salmoria]
+(hoccer2)  Hoccer (set 2) [Zsolt Vasvari]
+(mtrap3)   Mouse Trap (version 3) [Eric Hustvedt]
+(mtrap4)   Mouse Trap (version 4) [Eric Hustvedt]
+(ninjak2b) Ninja Kid II (set 3) [Nicola Salmoria]
+(nomnlndg) No Man's Land (Gottlieb) [Mike Coates]
+(popflama) Pop Flamer (set 2) [Gerald Vanderick] (note the different gameplay)
+(quantump) Quantum (prototype) [Zsolt Vasvari]
+(ramprt2p) Rampart (2-player Joystick) [Aaron Giles]
+(rdaction) Rad Action [Jarek Parchanski]
+(retofin1) Return of the Invaders (bootleg set 1) [Jarek Parchanski]
+(retofin2) Return of the Invaders (bootleg no MCU set 1) [Jarek Parchanski]
+(ringkin2) Ring King (set 2) [Nicola Salmoria]
+(sf2red)   Street Fighter II' - Champion Edition (Red Wave) [Nicola Salmoria]
+(shisen)   Shisensho - Joshiryo-Hen (Japan) [Yasuhiro Ogawa]
+(shuuz2)   Shuuz (version 7.1) [Aaron Giles]
+(skullxb2) Skull & Crossbones (set 2) [Aaron Giles]
+(tnk3j)    Tank (Japan) [Roberto Fresca]
+(zzyzzyx2) Zzyzzyxx (set 2) [Zsolt Vasvari]
+
+
+These drivers have new or improved SOUND:
+-----------------------------------------
+- Fixed sound in 'World Tennis' [Zsolt Vasvari].
+- Sound in 'Demolition Derby' [Bret Wallace].
+
+
+Source changes:
+----------------------
+- Fixed all known problems in 'Xain'd Sleena' [Nicola Salmoria].
+- Fixed decryption in 'Treasure Hunt' [Zsolt Vasvari].
+- Lots of improvements in the Atari drivers [Aaron Giles].
+- [DOS] Enabled again the -triplebuffer option, and triple buffering is disabled by default. Remember that -triplebuffer disables -vsync, so if you absolutely want to use -vsync in VESA modes, don't use -triplebuffer [Nicola Salmoria].
+- [DOS] -stretch 1024x768 can be used with Sichuan II and Golden Star [Nicola Salmoria].
+- Fixed a couple of bugs in the 68000 emulation (both asm and C). They affected Power Spikes 2 and F1 Dream [Mike Coates].
+- Improved uPD7759 ADPCM decode [Juergen Buchmueller].
+- Improved VLM5030 emulation [Tatsuyuki Satoh].
+- Moved mixer control out of streams.c and into the new mixer.c. Now the On Screen Display can be used to change the volume of any channel, not just ones handled by streams.c. The configuration is also saved on exit and is automatically reloaded the next time you start the game [Nicola Salmoria].
+- PNG save support. save_screen_snapshot() may be called by osd_save_snapshot() to save a standardized shot. Under DOS, .png files go go to the SNAP directory [Mathis Rosenhauer, Mike Haaland].
+- Replaced osd_adjust_sample() with osd_set_sample_freq() and osd_set_sample_volume(), and the OSD_PAN_xxx macros with MIXER_PAN_xxx.
+- struct GameSample no longer has a volume field (since it is not stored in .wav files), to replace that struct Samplesinterface has an additional volume field which affects all samples played [Nicola Salmoria].
+- The zlib library is required to build MAME, it can be downloaded from http://www.cdrom.com/pub/infozip/zlib/.

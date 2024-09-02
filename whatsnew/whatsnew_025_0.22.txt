@@ -1,0 +1,42 @@
+0.22 1997/05/25 [#025 - Mirko Buffoni]
+--------------------------------------
+Sorry to be late, but this is my birthday MAME release and I wanted it to be as good as possible. Enjoy, and send a postcard if you like ;)  NdMix.
+
+
+New games supported:
+--------------------
+(commando) Commando [Nicola Salmoria]
+(diamond)  Diamond Run [Mirko Buffoni]
+(gng)      Ghost 'n Goblin [Roberto Ventura, Mirko Buffoni] *** CORREGGI QUESTO AUTORE!!!
+(phoenix)  Phoenix [Nicola Salmoria]
+(vulgus)   Vulgus [Mirko Buffoni]
+
+New clone supported:
+--------------------
+(pacplus)  Pac Man Plus [Mirko Buffoni]
+
+
+Program changes:
+---------
+- Added high score support to 'Amidar' and 'Frogger' [Mirko Buffoni].
+- Added 'Phoenix Amstar' (clone) support, 'Pac Man Plus' (clone) and fixed all 'Invader's' clones bugs. Also fixed charset of all Invader's clones [Mirko Buffoni].
+- Added preliminary sound support to 'Elevator Action' and 'Jungle King'. Tarzan yell scream sample missing [Mirko Buffoni].
+- Added 'Vulgus' support. Colors are wrong unless I find the color proms. High score save supported. I played around with Dip Switches: they are almost right, though, but there should be also a sound toggle while in attract mode [Mirko Buffoni].
+- And here it is: thanks to Roberto Ventura's superdetailed documentation I'v added 'Ghost 'n Goblin' support. I lost one week because of a bug in the new 6809 emulator, so I switch back to the previous one. Big thanks to Nicola that fixed some stupid bugs in color palette generation. ;) We need a skilled player. READ THE README.TXT FILE! [Roberto Ventura, Mirko Buffoni].
+- Another one added: based on GnG hardware I'v added 'Diamond Run' support. Don't know if the banks mode switch is right, it's too slow for me to go further the first level! [Mirko Buffoni].
+- Brad Oliver provided me a lot of suggestions to improve portability and fixed a lot of bugs [Brad Oliver, Mirko Buffoni].
+- Fixed credit bugs in 'Elevator Action' and Turtles. REMEMBER TO DELETE THE PREVIOUS .DSW FILES OTHERWISE THE GAMES WON'T WORK PROPERLY! [Mirko Buffoni].
+- I have fixed colors in 'Centipede'. Thanks to  Ivan for sending me the info [Ivan Mackintosh, Mirko Buffoni]
+- Nicola added cars in radar update of 'RallyX' and improved color palette emulation in 'Bombjack' which has now perfect colors.
+- Nicola added COMMANDO!! Another of my favourite games back to life ;) High score supported as well. Original Sound is done by YM2203 (FM synthesis) while now is done by 8910 (no FM). So music is not present [Nicola Salmoria].
+- Fixed some colors of 'Congo Bongo'. They are not right but a lot better of the previous. Screenshots could be useful [Paul Berberich].
+-  Proposed a better optimization to Cpu_readmem and Cpu_writemem. Speed results are good under DOS and Windows [Rick Wirch].
+- Some fixes to sprite priority in 'Frogger' [Mirko Buffoni].
+- 'Time Pilot' has now 100% correct colors [Mirko Buffoni, Virtu-Al!].
+
+
+Sources changes:
+-----------------
+- Provided modifications to MSDOS.C for Vesa 2.0 linear and banked extensions. Also inline assembly double pixeling provided a faster approach on slower videocards. Check the readme.txt file for new video options [Bernd Wiebelt].
+- Changed CPUIntrf regarding readmem/writemem optimizations [Mirko Buffoni].
+- Minor fixes to some drivers [Mirko Buffoni].

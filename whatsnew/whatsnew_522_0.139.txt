@@ -1,0 +1,69 @@
+0.139 2010/07/29 [#522 - Aaron Giles]
+-------------------------------------
+
+
+MAMETesters Bugs Fixed
+----------------------
+- 03318: [Crash/Freeze] -burnin causes crash in vector games (Atari Ace).
+- 03777: [Multisession] a51site4: Hang after loading via internal UI (multisession) (Atari Ace).
+- 03898: [Crash/Freeze] Atomiswave-based games in naomi.c: Game gets stuck in boot process (Aaron Giles).
+- 03957: [Documentation] samsh5sp & clones: according to title, year is 2004 not 2003 (moa).
+
+
+New games added or promoted from NOT_WORKING status
+---------------------------------------------------
+Speed Drop [Brian Troha, Luca Elia, The Dumping Union]
+
+New clones added
+----------------
+AmeriDarts (set 3) [Brian Troha, The Dumping Union]
+Captain Commando (Japan 910928) [john666, Dr. Spankenstein, Smitdogg, The Dumping Union]
+Forgotten Worlds (USA, 88621B B-Board) [Corrado Tomaselli, The Dumping Union]
+Galaxy Force II (Japan, Newer) [Team Japump, The Dumping Union]
+Mystic Warriors (ver AAA) [J. Wilke, Smitdogg, The Dumping Union]
+Quiz Daisousa Sen - The Last Count Down (Korean release)
+Quiz King of Fighters (Korean release)
+Real Bout Fatal Fury Special / Real Bout Garou Densetsu Special (Korean release)
+
+New games marked as GAME_NOT_WORKING
+------------------------------------
+Southern Systems Joker Poker [Roberto Fresca, Siftware]
+
+
+Source changes:
+---------------
+- arm.c: Added big endian mode support to the LDRB and STRB instructions [Wilbert Pol].
+- CPS-1 update [Team CPS-1]:
+  * Added missing PALs as reference to most of remaining sets.
+  * Dumped and added TK24B1.1A to dynwar [Corrado Tomaselli].
+  * Fixed LW-13.10D ROM loading in forgottn to match real PCB.
+  * Identified, verified and documented a ton of pcbs, adding/fixing missing/wrong infos as ROMs labels and positions, B-Board, C-Board and CPSB IDs, PALs [Stefan Lindberg, Dlfrsilver, MKL].
+  * Reordered all sets per release date in cps1.c and video\cps1.c.
+  * Updated games table in video\cps1.c and added some notes on PALs table.
+  * Minor cleanups.
+- djboy.c: Hooked up Beast MCU and removed simulation code [Phil Bennett].
+- arm.c: Fixed word reading from non-aligned address in big endian mode [Wilbert Pol].
+- skyfox.c: Corrected clocks and Vsync for the Sky Fox & Exerizer sets based on actual OSCs and measurements taken from a real PCB [Corrado Tomaselli].
+- arm.c: Added a big endian version of the arm2/3/6 cpu core and cleaned up the little/big endian handling [Wilbert Pol].
+- djboy.c: Added DIP switch locations and corrected the vsync to 57.5Hz as per the readme info listed at the top of the driver [Brian Troha].
+- mediagx.c: Converted to use driver_data [Atari Ace].
+- Fixed sprite coordinates in astrocorp.c [Luca Elia].
+- Corrected Ameri Darts audio playback rate. This exposed some cycle timing errors in the TMS32010 CPU core which are also fixed [Quench].
+- Added support for Southern Systems Joker Poker (1982), from Southern Systems & Assembly, Ltd. Figured out the memory map. Also added technical notes about the hardware [Roberto Fresca].
+- Corrected the address for the freezing of the movies for the Terminator 2 LA4 set [stephh].
+- emu/info.c: Search all parents of a clone for merged ROMs [Atari Ace].
+- Fixed HD63701 SLP opcode [Sandro Ronco].
+- mpu4.c: Added splitscreen support to SCN2674 for MPU4 Video [AGEMAME].
+- neodrv.c updates [Johnboy]:
+  * Identified several more sets as MVS / AES Version and tagged them properly.
+  * Updated game PCB info.
+  * bakatono: Removed BAD_DUMP from m1 - is correct, corrected game name.
+  * mahretsu: Added correct s1, corrected game name.
+  * strhoop: Added correct v2.
+  * sdodgeb: Replaced 16mbit v1/v2 with 32mbit v1 as found on two original cards.
+  * Added Japan J3 BIOS.
+- neogeo.c changes:
+  * Documented AES mode and 1-slot (MVS/AES) settings [Barry Rodewald].
+  * Documented MVS 4-slot and 6-slot settings [Johnboy].
+  * Changed 6-slot setting (old default) to 1-slot [Johnboy].
+- Add notification of orientation of all monitors at startup via the output system [Laszlo Schulteisz]

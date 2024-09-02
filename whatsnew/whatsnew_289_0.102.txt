@@ -1,0 +1,62 @@
+0.102 2005/11/14 [#289 - Aaron Giles]
+-------------------------------------
+
+
+New games added or promoted from NOT_WORKING status
+---------------------------------------------------
+D-Day (Jaleco) [Tomasz Slanina]
+Gradius 4: Fukkatsu [Ville Linde]
+Jockey Grand Prix [Mamesick]
+NBA Play By Play [Ville Linde]
+Pang Pang Car [Tomasz Slanina]
+See See Find Out [Tomasz Slanina]
+
+New clones added
+----------------
+Avengers In Galactic Storm (World) [Corrado Tomaselli]
+DownTown (Set 2) [Stefan Lindberg]
+Martial Champion (ver EAB) [Stefan Lindberg]
+Metamorphic Force (ver EAA) [Stefan Lindberg]
+NFL Blitz (boot ROM 1.1) [Brian Troha]
+Rohga v3.0 Asia/Europe (Alt) [Stefan Lindberg]
+Rohga v5.0 Asia/Europe [Stefan Lindberg]
+Super Monaco GP (US, Rev B) [Arzeno Fabrice]
+Touch & Go (newer revision) [Corrado Tomaselli]
+Tricky Doc (Alt) [Stefan Lindberg]
+Vandyke (Jaleco lic. Alt set) [Stefan Lindberg]
+Varth - Operation Thunderstorm (World 920714) [Stefan Lindberg]
+
+
+MAMETesters Bugs Fixed (4)
+--------------------------
+bbmanw0101u4red (Pierpaolo Prazzoli)
+dirtfoxj063gra (Mamesick, Pierpaolo Prazzoli)
+mouja0101u5gre (Hau)
+starblad0101u5yel (Aaron Giles)
+
+
+Source changes:
+---------------
+- Added some missing sounds to 'Wonder Stick' and 'Search Eye' [Pierpaolo Prazzoli].
+- Added Tilemap0 color banking to esd16 [Pierpaolo Prazzoli].
+- Began adding support for SCRIPTS programs to the 53C810 emulation [Nathan Woods, R. Belmont].
+- Changed the makefile so that debug objects are not compiled on non-debug builds [Aaron Giles].
+- Fixed 6502 initialization so that all internal states are reset properly [Nathan Woods].
+- Fixed a few more remaining issues from the 0.101u1 update [Aaron Giles, Pierpaolo Prazzoli].
+- Fixed bug in PSX GTE flag settings [Olivier Galibert].
+- Fixed handling of the FR bit in the Status register on MIPS3. This fixes a few problems in CarnEvil, and probably affects a few other games as well. Also fixed bug where TLB exceptions were not filling in the Context and EntryHi registers correctly [Aaron Giles].
+- Fixed implementation of mame_stricmp [William Krick].
+- Fixed inputs in Passing Shot (Japan) [Ange Albertini, Barry Rodewald].
+- Fixed music tempo in 'T.N.K.3'/'T.A.N.K' [R. Belmont, Kold666].
+- Fixed save/restore of 8253 PIT. Also several updates to 'Top Gunner' [Mathis Rosenhauer]:
+  * Removed shift register since it just seems to be needed to compensate for different DAC speeds.
+  * Added 8254 PIT from PC emulation.
+  * Added state saving.
+- Fixed some bad tiles in naname [Pierpaolo Prazzoli].
+- Fixed status flag from MCU in Taito SJ games, fixing the last digit of the score in Front Line [Nicola Salmoria].
+- Implemented pixel-accurate dithering in the Voodoo emulation [Aaron Giles].
+- Many fixes to the SHARC core and Konami PPC drivers [Ville Linde].
+- Marked most gfx_layout and gfx_decode structures in the code as const [Aaron Giles].
+- Removed ROMREGION_SOUNDONLY. Since -nosound no longer disables sound CPUs or sound cores (and hasn't for a while), failing to load sound ROMs was only leading to crashes [Aaron Giles].
+- Renamed my_stricmp to mame_stricmp, converted all uses of stricmp in the code to call mame_stricmp, and #defined stricmp to something invalid to prevent code from using it in the future [Aaron Giles].
+- Updated the discrete thump sound in 'Asteroids' to use component values instead of derived equations [Hans Andersson, Derrick Renaud].

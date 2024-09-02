@@ -1,0 +1,50 @@
+0.36b16 2000/02/04 [#090 - Nicola Salmoria]
+-------------------------------------------
+
+
+New games supported:
+--------------------
+Berlin Wall [Luca Elia]
+Bomb Bee [Nicola Salmoria]
+Cutie Q [Nicola Salmoria]
+Fighting Soccer [Phil Stroffolino]
+Kaitei Takara Sagash [Juergen Buchmueller]
+Kodure Ookami [Takahiro Nogi]
+Navalone [Juergen Buchmueller]
+SOS [Juergen Buchmueller]
+Toryumon [Andrew Prime]
+
+
+New clones supported:
+---------------------
+Bermuda Triangle (older) [Nicola Salmoria]
+Big Pro Wrestling (= Tag Team Wrestling) [Nicola Salmoria]
+Champion Wrestler (Japan) [Nicola Salmoria]
+Crazy Cop (= Gang Busters) [Nicola Salmoria]
+Gee Bee (Namco) [Nicola Salmoria]
+Great 1000 Miles Rally (set 2) [Nicola Salmoria]
+Guerilla War (version 1) [Nicola Salmoria]
+Guevara (= Guerilla War) [Nicola Salmoria]
+World Wars (= Bermuda Triangle) [Nicola Salmoria]
+
+
+These drivers have improved GRAPHICS:
+-------------------------------------
+- Fixed shadow/highlight in the Namco System 1 games (check 'Dangerous Seed's' title screen!) [Vernon C. Brooks].
+
+
+These drivers have new or improved SOUND:
+-----------------------------------------
+- Fixed sound in 'Sindbad Mystery' [Zsolt Vasvari].
+- Sound in 'Warp Warp' [Juergen Buchmueller].
+
+
+Source changes:
+----------------
+- [DOS] MMX optimized video blitting functions [Bernd Wiebelt].
+- Added vector intensity control to the On Screen Display (for vector games) [Mathis Rosenhauer].
+- Unified keyboard and joystick interface, now they are all assigned in the "Input" menu and you can mix them at will [Andrea Mazzoleni].
+- mixer.c now does all sound mixing, generating one single sample stream, played using the new osd_XXX_audio_stream() functions. All other OS dependant sample functions (osd_play_sample() etc.) have been removed. This should standardize the sound output across ports, and allow porters to write much cleaner sound code [Aaron Giles].
+- Removed some obsolete fields from struct GameOptions [Nicola Salmoria].
+- The functionality of osd_skip_this_frame() is now more strictly defined (see osdepend.h). Ports not complying with that must be updated, otherwise problems with certain drivers might arise [Nicola Salmoria].
+- The transition to the GAME() macro is complete. struct GameDriver must no longer be used. Alro removed the old ROM_REGION() and ROM_REGION_DISPOSE() macros, and renamed ROM_REGIONX() to ROM_REGION() [Nicola Salmoria].

@@ -1,0 +1,43 @@
+0.114 2007/04/02 [#371 - Aaron Giles]
+-------------------------------------
+
+
+New games added or promoted from NOT_WORKING status
+---------------------------------------------------
+Virtua Racing [Ernesto Corvi, ElSemi]
+
+New clones added
+----------------
+Air Attack (set 2) [Guru]
+
+New games marked as GAME_NOT_WORKING
+------------------------------------
+Wonder League '96 (Korea) [David Haywood]
+
+
+MAMETesters Bugs Fixed
+----------------------
+dsound0113u4ora (Aaron Giles)
+fghthist0113u2red (Aaron Giles)
+hardreset0113u3red (Aaron Giles)
+hardreset0113u3yel (Aaron Giles)
+
+
+Source changes:
+---------------
+- Added complete discrete sound to Double Play/Extra Inning. Emulated foul sound in Bowling Alley. Emulated all sounds except the screech and wind sounds in Space Encounters [Derrick Renaud].
+- Added DIP locations to the commando driver [Justin Szczap].
+- Added save state support to the konamigv driver, specifically enabled for nagano98 and simpbowl [Couriersud].
+- Added save state to several Atari games: batman, eprom, eprom2, klaxp1, klaxp2. Also added general save state support to the atarijsa and atarigen modules [Couriersud].
+- Added small optimization to rand_memory() [Nathan Woods].
+- Added validity checks to ensure that LSB_FIRST and PTR64 are set correctly for the current platform [Aaron Giles].
+- Adds save state support to the Cidelsa games and fixed reset behavior [Curt Coder].
+- Avoided a memset in the hyperstone core to give ~4% speedup in hidden catch [David Haywood].
+- Fixed autoframeskip so it doesn't immediately spike on startup or after a pause [Dave Dribin].
+- Fixed bug introduced in the memory pool code when hashing was added [Nathan Woods].
+- Konami NWK-TR update [Ville Linde]:
+  * Improved the LANC board emulation.
+  * Improved the graphics board emulation so that it passes all the self-tests.
+- Made behavior of ES5503 IRQ status register more accurate [R. Belmont].
+- Removed obsolete assembly code and compiler definitions [Aaron Giles].
+- Updated Virtua Racing to use the TGP core, based on guessing from the Daytona TGP code [Ernesto Corvi].

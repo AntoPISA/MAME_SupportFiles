@@ -1,0 +1,54 @@
+0.89u3 2004/12/07 [#220 - David Haywood]
+----------------------------------------
+
+
+New Games / Clones supported or promoted from GAME_NOT_WORKING status:
+----------------------------------------------------------------------
+Progressive Music Trivia [Pierpaolo Prazzoli]
+Trivia Master [Pierpaolo Prazzoli]
+Racing Hero [Gerald, David Haywood]
+
+(AB Cop and SMGP are also now 'working' but still have some fairly serious issues)
+
+Clones
+------
+Blood Brothers (set 2)
+E-swat (Japan) [Thierry]
+
+New Non-working
+---------------
+Line of Fire (Japan) [Charles Macdonald, bmoto] (no controls, xboard emulation problems)
+
+
+Source changes:
+---------------
+- Model 3 Cleanups [R. Belmont]:
+  * Added init for mpc105 bridge.
+  * Synchronized VS2 CROMs.
+  * Fixed missing VROMs in Sega Rally 2 and Virtual On 2.
+  * Added VS2 '99 set, fixed incorrect ROMs in vs2v991.
+  * Added Virtual On 2 v5.4g, Daytona USA 2, and Dirt Devils sets.
+- Model 3 / PPC updates [Ville Linde]:
+  > Major bugfixes to the PPC603 emulation, especially the FPU.
+  * Improved MPC105 emulation.
+  * Preliminary 53c810 SCSI emulation.  Lost World now tries to download everything necessary to the Real3D stuff.
+  * Added export version of Scud Race.
+- Sega System16 updates [Aaron Giles]:
+  * Hooked up sound in atomicp (tempo is just a guess right now).
+  * Created new machine/segaic16.c to hold non-video common hardware.
+  * Preliminary multiply/compare implementation moved there.
+  * Updated some game info against Thierry's spreadsheet; altbeast needs an encrypted Z80 for sound now.
+  * Included eswatj update from Thierry.
+  * Fixed reset bug when running 16B/18 games
+  * changed segaic_init_palette to take a number of palette entries.
+- Decryption of MC-8123B 317-0066 encrypted z80 used by altbeas2 [Nicola Salmoria, Dave Widel].
+- Hooked up controls in some Sega X-Board games (smgp, rachero, abcop) [David Haywood].
+- Added coin counters to prehisle driver [Pierpaolo Prazzoli].
+- Fixed remaining GFX issues in flower [Bryan McPhail].
+- Fixed GFX problem in Superman [Bryan McPhail].
+- Fixed? overdraw in atomic robokid [Pierpaolo Prazzoli].
+- Fixed some compiler related issues with >32-bit integers in PPC / Model 3 [Lawrence Gold].
+- Attempted to make Pokey random number generator work better with recordings (not verified to improve things yet) [Juergen Buchmueller].
+- Trace in debugger now defaults to current active CPU if non specified [Nathan Woods].
+- Naughtyb / Popflame cocktail support [HobbesAtPlay].
+- Moved jrpacmbl to jrpacman driver [MASH].

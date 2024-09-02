@@ -1,0 +1,83 @@
+0.81u5 2004/04/14 [#177 - David Haywood]
+----------------------------------------
+
+
+New Games supported or promoted from GAME_NOT_WORKING status:
+-------------------------------------------------------------
+Brave Blade [smf, David Haywood]
+Ray Storm [smf, Olivier Galibert]
+Pirate Treasure [Stefan Jokisch]
+
+New Clones supported or promoted from GAME_NOT_WORKING status:
+--------------------------------------------------------------
+NBA Maximum Hangtime v1.03 [Asure]
+Leprechaun (Pacific Polytechnical license) [Stefan Jokisch]
+
+New Non-Working games / clones supported
+----------------------------------------
+MegaPlay: Tecmo World Cup [David Haywood] (MegaPlay emulation is still incomplete)
+Vapor TRX [Aaron Giles] (locks up when you attempt to start a game)
+San Francisco Rush: The Rock [Aaron Giles]
+Hyperdrive [Aaron Giles] (missing harddisks)
+
+
+Source changes:
+----------------------
+- Removed vblank callback logging left in by mistake [Aaron Giles].
+- Fixed slow Seattle boot times caused by recent IDE change [Aaron Giles].
+- DCS2 upload command HLE optimization (to make driver easier to work with) [Aaron Giles].
+- MIPS core interrupt fixes [Aaron Giles].
+- MIPS core MIPS3DRC_FLUSH_PC option for accurate PC handling when debugging [Aaron Giles].
+- Fixed MIPS bug when directly accessing 2-byte values in big endian mode [Aaron Giles].
+- Seattle Update [Aaron Giles]:
+  * Improved VBLANK interrupt handling.
+  * Cleaned up handling of DMA operations.
+  * DMA operations now properly pause if they can't write to the voodoo.
+  * Now returning proper PCI IDs for the bridge device.
+  * Mapped more inputs and DIP switches for Biofreaks.
+  * Fixed clock speed for Wayne Gretzky's 3D Hockey.
+  * Cleaned up memory maps.
+  * Added Vapor TRX to the supported games.
+  * Added entries for Hyperdrive and SF Rush: The Rock (no hard disks ATM).
+  * Added faux support for setting the real time clock (to pass diags).
+  * Added shuffle map for Vapor TRX.
+  * Implemented crude loopback in UART (to pass diags).
+  * Added full memory FIFO emulation.
+  * Removed hack for fastfill operations after a buffer swap.
+  * Added compile time option to reduce the resolution.
+  * Added client callbacks for VBLANK. synchronization.
+  * Cleaned up handling of statistics and debugging info.
+  * Added optional R/B component swapping (for vaportrx).
+  * Fixed crashing problems when executing Midway POSTs.
+  * Now dynamically computing refresh rate based on hSync/vSync registers.
+- Improved Raiden 2 Sprite Drawing [David Haywood]:
+  * Game still not playable due to banking / protection issues.
+- Misc Fixes [Nathan Woods]:
+  * Added __attribute__((noreturn)) to osd_die() when compiling under GCC 2.5 and greater.
+  * Converted printf()/exit() combination of calls to osd_die().
+  * osd_die() messages now get sent to both logerror and console output.
+  * Implemented i386 in/out instructions.
+- Model 1 lighting improvements [ElSemi].
+- TMS32025 Fixes [Phil Stroffolino, Quench].
+- SPI System Updates [Ville Linde]:
+  * Applied text layer decrypt to the regular tiles, it also improves them a lot.
+  * Greatly improved tilemap emulation including scrolling, layer disables, etc.
+  * Improved tilemap emulation further, including tile bank select and palette bank select.
+  * Supports alternate (older?) video hardware in viperp1 with one fewer tilemap and a different VRAM layout.
+  * Added mahjong keyboard controller for ejanhs, but it doesn't coin up yet.
+  * Improved sprite drawing.
+  * Sound starting to work in the single-board rf2_us.
+- Konami GX Cleanups [R. Belmont]:
+  * Removed Acho's fake dipswitches to avoid confusing real PCB owners.
+  * Unified and cleaned up memory maps to latest specs.
+  * Some more protection emulation for rushhero (the spritelist is now copied to the right place), but no visible results.
+  * Removed unused routines to stop warnings on GCC 3.3+
+  * Fixed the PSAC tile decode for type 3 and type 4 games.
+  * Fixed the PSAC tilemap flipx/y flags for type 3.
+- Rock-ola Improvements [Curt Coder]:
+  * More cleanup.
+  * Added sn76477 interfaces to other games, not connected yet, needs discrete sound expert (wink wink).
+  * Added vanguard SHOTB sound effect.
+  * Added NO_DUMP to vangrdce fake roms.
+  * Correct ROM names for nibbler from manual.
+- MegaPlay Improvements allowing it to pass more checks [Barry Rodewald].

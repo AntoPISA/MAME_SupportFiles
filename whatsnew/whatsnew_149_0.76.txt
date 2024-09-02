@@ -1,0 +1,26 @@
+0.76 2003/10/19 [#149 - David Haywood]
+--------------------------------------
+It appears no new timer system related bugs were found with 0.75u1 so *hopefully* this release will be better than the last, 0.75 ended up not being not too great due to the problems with the YM2151 sound etc.
+
+
+New Games supported or promoted from GAME_NOT_WORKING status:
+-------------------------------------------------------------
+Bishi Bashi Championship Mini Game Senshuken [R. Belmont] (some gfx problems)
+VS. Freedom Force [Pierpaolo Prazzoli]
+VS. Super Xevious [Pierpaolo Prazzoli]
+
+New Clones supported or promoted from GAME_NOT_WORKING status:
+--------------------------------------------------------------
+A couple of Gauntlet, Gauntlet 2 and Vindicators Pt 2 clones [Aaron Giles]
+Mad Planets (UK Taitel license) [Tom McClintock]
+Q*Bert (early test) [Peter Rittwage]
+Street Fighter II CE bootlegs (sf2yyc, sf2koryu, sf2m4 - sf2m7) [Barry Harris]
+
+
+Source changes:
+---------------
+- Added Insector sound ROM loading [Fabrice Frances].
+- Changed Jumping Cross default dipswitches.
+- Fixed invalid dipswitch in Big Event Golf.
+- Readded a bit of code that was removed from blockage driver when it was converted to use tilemap (blasto needed it).
+- Various ST-V and SH-2 improvements, shienryu is improved as are many other games but no more are really playable yet (although I have changed Shienryu to IMPERFECT_GFX instead of NOT_WORKING as it seems ok, just the sprites are black) [David Haywood, Olivier Galibert, sthief, Angelo Salese].

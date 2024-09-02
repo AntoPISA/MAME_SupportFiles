@@ -1,0 +1,54 @@
+0.116 2007/06/11 [#381 - Aaron Giles]
+-------------------------------------
+
+
+MAMETesters Bugs Fixed
+----------------------
+oscar0111u3yel (ShimaPong)
+toypop0115u4red (Aaron Giles)
+profpac0115u4gre (Aaron Giles)
+seawolf2_0115u2gra (Aaron Giles)
+konek0115u4yel (Aaron Giles)
+9ballsht0115u3gre (Aaron Giles)
+csuperas0104u7gre (ShimaPong)
+exerion0112u4yel (ShimaPong)
+
+
+New games added or promoted from NOT_WORKING status
+---------------------------------------------------
+Mahjong G-Taste [David Haywood]
+
+New clones added
+----------------
+Buzzard [Zsolt Vasvari]
+
+
+Source changes:
+---------------
+- Major Donkey Kong driver update [Couriersud]:
+  * Implemented discrete sound from schematics: dkong, radarscp.
+  * Implemented discrete background from schematics for radarscp and various effects:
+  - Blue to black to blue background.
+  - Exact priorities.
+  - Grid will flip open and close, vertical flipping on hit.
+  * Changed inputs for radarscp
+  * Color generation from schematics (resistor mixer) for radarscp, dkong, dkongjr and dkong3.
+- Added new components to the discrete sound system [Couriersud]:
+  * Added a "inverter oscillator" component. This can also be used as a raw sine generator - needed by radarscp.
+  * Added a "integration circuit" based on transistor and RC.
+  * Added a "modulated RC discharge" component.
+- Removed unused return value from VIDEO_START callbacks [Zsolt Vasvari].
+- Improved independence of CPU and sound core variants in order to make them more properly separated by the existing compile-time flags [Atari Ace].
+- More TIA updates from MESS [Wilbert Pol]:
+  * Rewrote drawing of playing graphics.
+  * Improved handling of player graphics reset signals.
+  * Improved handling of HMOVE signals.
+- Updates to Change Lanes [Adam Bousley]:
+  * Fixed the broken graphics.
+  * Fixed the dipswitches.
+  * Hooked up the steering wheel controls.
+  * Made some changes to the sprite and text layers. based on schematics.
+- Fixed up a number of places where malloc results weren't being checked correctly [Atari Ace].
+- Renamed palette_set_color() to palette_set_color_rgb().  palette_set_color() now matches palette_get_color() and deals in rgb_t data only. Also changed palette_set_colors() to deal with rgb_t data instead of R,G,B triples [Aaron Giles].
+- Flattened colormap and palette in the 1942 driver [Aaron Giles].
+- Removed usage of unsigned char/short/int from the drivers code in favor of UINT8/UINT16/UINT32.

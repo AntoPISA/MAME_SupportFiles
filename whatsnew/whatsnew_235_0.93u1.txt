@@ -1,0 +1,60 @@
+0.93u1 2005/03/01 [#235 - David Haywood]
+----------------------------------------
+Some quick fixes, please test with this build now. Do a clean compile or this won't work.
+
+
+New games marked as GAME_NOT_WORKING
+------------------------------------
+Time Crisis 2 (added to namcos23, skeleton ROM loader, does nothing)
+
+
+Source changes:
+---------------
+- tank8: Added explosion gain control [David Haywood].
+- Sound system update fixes [Aaron Giles]:
+  * cninja games OKI frequency fixed.
+  * cps1 games OKI frequency fixed.
+  * cps1 QSound games properly remove the 2151.
+  * nemesis no longer references non-existant k005289.
+  * tnzs has missing 2203 interface reinstated.
+  * ay8910 no longer attempts to free memory allocated with auto_malloc.
+  * Streams engine oversamples by averaging now.
+  * Removed some obsolete code from the streams code.
+  * konamigx crash [R. Belmont].
+  * Fixed swapped left/right samples in 'Cyberball'.
+  * Fixed crash in 'Darius'.
+  * Made bbakraid mono again.
+  * Fixed running with -nosound.
+  * Fixed several issues with banking and playback in the OKI6295.
+  * Removed obsolete macro in sound/streams.c.
+  * nbmj9195 crashes.
+  * Adding missing memset when initializing the tms5110 and tms5220 structures; should prevent the crashes.
+  * Fixed signed/unsigned error in 5110 core.
+  * As an experiment, removed oversampling from namco.c now that the sound core will do it for you.
+- 10 Yard Fight driver update [Curt Coder]:
+  * Converted to use tilemaps.
+  * Cleaned up driver.
+  * Conditional coinage doesn't work due to PORT_DIPCONDITION limitations.
+  * Fixed ROM names slightly.
+  * Changed names to match title screen and flyer.
+- Flash ROM support update [R. Belmont]:
+  * Added support for arbitrary manufacturer and chip IDs instead of hardcoding.
+  * Added support for the extended chip ID protocol favored by AMD and Fujitsu.
+  * Bumped limit up to 8 chips.
+- Rebalanced 'Gyruss' sound [Nicola Salmoria].
+- UI changes [Nicola Salmoria]:
+  * Now shows grouped consecutive identical CPUs and sound chips in the game. information screen, so games like Gyruss fit again.
+  * Bumped the MAX dip switches that can be handled by the dip switch menu to 256 (and adds bounds checking so it doesn't crash anyway).
+- Fixed visible area in Steel Force driver [Pierpaolo Prazzoli].
+- Misc compiler fixes [Lawrence Gold].
+- Fixed Itech32 64-bit crash [R. Belmont].
+- Input corrections in 'Bubble Bobble' (dipswitches etc.) [Nicola Salmoria].
+- Discrete sound update [Derrick Renaud]:
+  * Various tweaks to the discrete modules and updated all drivers to use new code.
+* DISCRETE_COUNTER, DISCRETE_LFSR_NOISE, DISCRETE_NOTE
+  * Added different clocking types to be more flexable.
+  * DISCRETE_COUNTER_FIX - removed and merged with DISCRETE_COUNTER.
+- Discrete modules:
+  * DISCRETE_DIODE_MIXERx - Mixes signals through diodes.
+  * DISCRETE_MULTIPLEXx - 1 of 2/4/8 signal multiplexer.
+  * DISCRETE_RCDISC4 - Various charge/discharge circuits.

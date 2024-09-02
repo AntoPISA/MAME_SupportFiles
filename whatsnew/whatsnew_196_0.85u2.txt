@@ -1,0 +1,27 @@
+0.85u2 2004/08/13 [#196 - David Haywood]
+----------------------------------------
+
+
+New Games supported or promoted from GAME_NOT_WORKING status:
+-------------------------------------------------------------
+The Return of Lady Frog [David Haywood]
+Virtua Fighter 1 [Andrew Gardner, Olivier Galibert]
+
+New Clones supported or promoted from GAME_NOT_WORKING status:
+--------------------------------------------------------------
+Counter Run (bootleg set 1) [Tomasz Slanina]
+Twin Cobra 2 (World) (2 sets) [Brian Troha]
+
+
+Source changes:
+---------------
+- Added a WIP Mitsu M7700 series CPU core, specifically targeting  the M37710 [R. Belmont].
+- Added conditional coinage to snowbros [Inigo Luja].
+- Fixed a number of recent errors introduced into the input port definitions of several drivers [El Condor].
+- Fixed backwards controls in ckong [Inigo Luja].
+- Fixed bug that prevented the mixer from loading data unless all channels had been modified [Aaron Giles].
+- Fixed various stuff with the jalmah.c driver, including suchipi booting, improved the video emulation a bit & attempted to add controls [Angelo Salese].
+- Removed the static MAX_DATAFILE_ENTRIES define, by retrieving the game count at runtime [Rene Single].
+- Renamed PORT_CENTER to PORT_RESET to more accurates describe what it does. Also added PORT_CENTERDELTA(x) to control the autocentering behavior [Aaron Giles].
+- Turned off autocentering by default in warlords, sbrkout, and destroyr. There are probably others that should have this as well. Please post on www.mametesters.org if you have suggestions [Aaron Giles].
+- Updated Namco Super System 22 driver to use preliminary M37710 core, but it doesn't do anything useful yet [R. Belmont].

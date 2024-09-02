@@ -1,0 +1,30 @@
+0.70u4 2003/06/21 [#134 - David Haywood]
+----------------------------------------
+
+
+New games supported:
+--------------------
+Final Lap [Phil Stroffolino]
+Final Lap 2 [Phil Stroffolino]
+Final Lap 3 [Phil Stroffolino] (not working due to incomplete emulation but enabled anyway)
+Four Trax [Phil Stroffolino] (some gfx / sound problems but mostly working)
+Suzuka 8 Hours [Phil Stroffolino] (not working due to bad / missing roms and / or incomplete emulation but enabled anyway)
+Suzuka 8 Hours 2 [Phil Stroffolino]
+
+
+Source changes:
+---------------
+- A Few Data East Rom Name Fixes / Board Info [Brian A. Troha].
+- Added Air Combat 22 as TestDriver [Phil Stroffolino].
+- Added Cyber Commando as TestDriver [Phil Stroffolino].
+- Added Cyber Cycles as TestDriver [Phil Stroffolino].
+- Added R2D Tank as TestDriver. Still being worked on [Pierpaolo Prazzoli].
+- Added Time Crisis as TestDriver [Phil Stroffolino] (very preliminary).
+- Broadened support for palette_offset, and made it work in tilemap viewer [Phil Stroffolino].
+- Silent Dragon Dipswitch Fixes [Brian A. Troha]:
+- Tilemap viewer now displays a more logical ordering for "tilemap#1", "tilemap#2", etc. [Phil Stroffolino].
+- Various Namco improvements [Phil Stroffolino]:
+  * Improved Namco road emulation.
+  * Speedup when ROZ layer rapidly switches palettes (Metal Hawk 2nd stage)
+  * Window registers in namconb1 sprite drawing (fixes the "Tank" stage of Point Blank.
+  * Lots of consolidation/cleanup in vidhdrw/namcos2.c.

@@ -1,0 +1,24 @@
+0.78u6 2004/01/20 [#162 - David Haywood]
+----------------------------------------
+
+
+Source changes:
+---------------
+- Another big memory change [Aaron Giles]:
+The biggest change is the way address maps are declared in the drivers. Rather than having separate read and write address maps, there is now support for a single, merged map. In order to minimize the amount of code churn, there is currently still support for two separate address maps per address space, but they are combined into one internally early on in the memory initialization and setup. Because of this change, the 'start' macro for address maps has changed. The old set of macros:
+
+   PROGRAM_READ*_MAP_START(name)
+   DATA_READ*_MAP_START(name)
+   IO_READ*_MAP_START(name)
+
+has been replaced by a single macro:
+
+   ADDRESS_MAP_START(name, address_space, bits)
+
+and all drivers have been updated to use this new mechanism. In addition, all the PROGRAM_*, DATA_*, and IO_* synonyms are now merged into a single ADDRESS_* macro. For example, PROGRAM_MAP_FLAGS is now just ADDRESS_MAP_FLAGS.
+
+- The next big change is that the address maps, in addition to being unified, are no longer static arrays. Rather, they are constructed in much the same way the machine drivers are constructed. Through a series of macros, the address maps are built up in code and type-checked along the way. All existing MAME drivers have been updated to the new macros. In addition, there are many new options available to support extra features like mirroring,  automatic pointer assignment, and shared memory pointers. As of this version, only seattle.c and system24.c have been updated to support the new constructs. Use these as examples of what can be done. Also, see the top of memory.c for an explanation of all the new macros. Once again, the way memory is automatically allocated has changed. It is now done based on the memory maps, like it used to be, but with the added support for shared pointers and hard-coded pointers into memory regions.
+- Save states should now work, but once again, they are saving more data than is strictly necessary.
+- Internally, the way address map lookup tables has changed, so that subtables can be reused. This is important if a small memory region is mirrored across a large address space; the old code didn't coalesce identical subtables, which would have blown up in a big way with tricky mirrors.
+- Renamed a bunch of internal memory state, including OP_ROM, OP_RAM, and several others.
+- Added save state support for 64-bit data types. [Olivier Galibert].

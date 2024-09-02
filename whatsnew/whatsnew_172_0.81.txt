@@ -1,0 +1,41 @@
+0.81 2004/04/01 [#172 - David Haywood]
+--------------------------------------
+
+
+New Games supported or promoted from GAME_NOT_WORKING status:
+-------------------------------------------------------------
+Beastorizer [R.Belmont, smf] (both of these have very bad sound emulation)
+Gallop Racer [smf]
+
+New Non-Working games / clones supported
+----------------------------------------
+D-Day (Jaleco) [Pierpaolo Prazzoli] (unemulated Jaleco protection chip)
+E-Jan High School [Ville Linde]
+Raiden Fighters [Ville Linde]
+Raiden Fighters 2 [Ville Linde]
+Senkyu / Battle Balls [Ville Linde]
+Viper Phase 1 [Ville Linde]
+
+
+Source changes:
+---------------
+- Various ZN related updates. Several games now display more, for example primrag2 plays the intro movie [smf, R.Belmont].
+- i386 CPU core (used by the SPI driver) [Ville Linde].
+- ST-V Improvements. GFX in colmns97 / sassisu / ejihon are improved [Mariusz Wojcieszek]:
+- CHDMan CHDCD creation fix [R. Belmont].
+- Improved timing of several 68k instructions. These changes could do with being verified on a real 68k. [Sebastien VOLPE]:
+
+  m68kcpu.h, m68kcpu.c:
+  ---------------------
+  A) scc (68000 only): CYC_SCC_R_FALSE was defined, not used, and misnamed as the extra 2 cycles happens when CC is true: now used and renamed to CYC_SCC_R_TRUE.
+
+  m68kmake.c:
+  -----------
+  B) add/adda/and/or/sub/suba (68000 only): the 'extra 2 cycles' cases were not handled correctly: corrected to be effective on .l only, and also on register direct (previously, all sizes were affected, and only in immediate mode).
+  C) jmp d(An,Xn) / pea (An) (68000/68010): tables corrected.
+  D) movem (68000/68010): generated basecount were incorrect in many cases, so I added a dedicated table.
+
+  m68k_in.c:
+  ----------
+  E) movem.l d(PC),reglist / movem.l d(PC,Xn),reglist (68000/68010): changed basecount.
+  F) asr/asl/lsr/lsl/ror/rol/roxr/roxl (68000/68010): added '+2n' cycles where missing, as the shift/rotate memory is the only case where '+2n' does not apply, and is treated in a specific opcode handler.

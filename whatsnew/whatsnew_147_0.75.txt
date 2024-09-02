@@ -1,0 +1,67 @@
+0.75 2003/10/13 [#147 - David Haywood]
+--------------------------------------
+
+
+New Games supported or promoted from GAME_NOT_WORKING status:
+-------------------------------------------------------------
+Dodgem [Mike Coates, Pierpaolo Prazzoli] (no sound, the video hardware emulation was also rewritten for this driver, its quite slow now but more accurate)
+Lady Frog [Tomasz Slanina] (old 'ladyfrog' set (not working) renamed to 'roldfrog' (Return Of Lady Frog))
+Main Event (SNK) [Tomasz Slanina] (controls probably need work)
+Sundance [Stefan Jokisch] (controls now emulated)
+
+New Clones supported or promoted from GAME_NOT_WORKING status:
+--------------------------------------------------------------
+Cloak & Dagger (International Versions, Spanish, French, German) [Aaron Giles]
+Dig Dug (newer Atari rev) [Aaron Giles]
+Lunar Battle (prototype, later) (clone of gravitar) [Aaron Giles]
+Route X (bootleg)
+Sub Hunter (clone of depthch) [Stefan Jokisch]
+Tempest (rev ?) [Aaron Giles]
+
+New Non-Working games / clones supported
+----------------------------------------
+Gorkans [Tomasz Slanina] (gameplay works but there are no good gfx roms)
+Marine Date [insideoutboy] (collisions not emulated + various other issues)
+Task Force Harrier (Japan)
+Various Sf2 bootlegs (Please note, I have no intention of fixing these, however if you want to try and think you can do it in a clean way then feel free)
+Whizz [Tomasz Slanina] (main program ROM appears to be bad, maybe a gfx ROM too)
+
+
+Source changes:
+---------------
+- TESTDRIVERS still enabled (see note for 0.74u2).
+- Fixed bug in the time accounting for the V60 which was causing Outrunners to run with flickering sprites and slow music [Aaron Giles].
+- Fixed another V60 bug introduced in 0.74u2 which broke the v70 games (and further broke Outrunners) [Kobat, Olivier Galibert].
+- Fixed some bugs introduced with the timer system changes a while back [Aaron Giles]
+- Fixes Exterminator and the Atari polygon games. Hopefully doesn't break anything in the process:
+  * Changed scanline timing to use floor() to get consistent results.
+  * Fixed bug in time computation if requesting a scanline in the next frame.
+  * Removed 4x executes per loop which screwed up timing.
+  * Fixed internal interrupt generation to get consistent timing results.
+  * Now uses the active callback as a base time when adjusting timers outside of a CPU context.
+  * Fixed all the games again, but they are slower now due to more necessary interleaving.
+- Fixed Dorachan Orientation [Tomasz Slanina].
+- Various Fixes [Nathan Woods]:
+  * Fixes a screenshot handling bug that affected Space Invaders.
+  * Moves the MESS specific code into a separate module, reducing #ifdef clutter.
+  * Moved some variable declarations out of for loops so that it can compile in non-GCC compilers.
+  * Fixes REP CMPSW so that it uses words and not bytes.
+  * Adds a call cpuintrf_set_dasm_override() that gives drivers	the ability to customize disassemblies. This probably isn't very useful	for MAME, but it is useful for MESS or things like software interrupts	used for BIOS calls.
+  * Increases the size of the buffer used when logerror() output goes to OutputDebugString().
+  * Moves config.c externs to a header file.
+  * Adds another call, cli_rc_create(), which creates MAME's rc	struct for use elsewhere. (I'm actually creating a debug time consistency check feature for MAME32, to verify at runtime that the arguments that MAME32 has are consistent with MAME's).
+  * When rc_destroy() is now called, freed pointers to strings and files will now be NULLed out.
+- Overhauled the Canyon Bomber driver with a number of minor fixes like correct RAM size and VBLANK duration [Stefan Jokisch]:
+  * hiscore reset button added.
+  * Sprite positions should be fixed according to the schems.
+  * Language ROM added (i.e. the language dip works now).
+  * Prototype set renamed from canbprot to canyonp.
+- Improved Super Chase sample loading [sedn].
+- Replaced instances of "inline", "static inline", and "static __inline" with "INLINE".  This fixes some build problems with  xmame and makes things more consistent [Lawrence Gold].
+- Corrected CPU speeds etc. in snowbros.c [Guru].
+- Reversed inptport.c changes to 0.74u1 as the version in 0.74u2 wasn't correcly merged, these will need resubmitting.
+- Some namcos22 Improvements [Phil Stroffolino]:
+  The major things improved are:
+  * Fixes to display list processing (affects Prop Cycle ending).
+  * Gouraud shading.
+  * Misc improvements for the not-working games.

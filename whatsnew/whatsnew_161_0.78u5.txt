@@ -1,0 +1,63 @@
+0.78u5 2004/01/18 [#161 - David Haywood]
+----------------------------------------
+Some updates before Aaron changes things again :-)
+
+
+New Games supported or promoted from GAME_NOT_WORKING status:
+-------------------------------------------------------------
+Hard Head 2 [Luca Elia]
+
+New Clones supported or promoted from GAME_NOT_WORKING status:
+--------------------------------------------------------------
+Outrun (Japan Prototype?)
+Xevious (Atari set 3)  [Pierpaolo Prazzoli]
+Strafe Bomb (scramble bootleg) [Pierpaolo Prazzoli]
+Dogou Souken (Joystick bootleg) [Pierpaolo Prazzoli]
+
+
+Source changes:
+----------------------
+- Fixed some bad colours in 'Shienryu' [Mariusz Wojcieszek].
+- Discrete Sound System updates [Derrick Renaud]:
+  * Fixed/added more documentation of functions at top of discrete.h.
+  * DISCRETE_RCFILTER - fixed bug that allowed module to use nodes not available to it. Can't beleive it did not crash before.
+- New Discrete Modules added [Derrick Renaud]:
+  * DISCRETE_CRFILTER - high pass R/C filter.
+  * DISCRETE_COUNTER - Presettable up/down counter, external clock with selectable count edge.
+  * DISCRETE_COUNTER_FIX - Presettable up/down counter with bult-in frequency generator.
+  * DISCRETE_ONESHOT - Fixed it. Added selectable: edge trigger; re-trigger; output active state.
+  * DISCRETE_ONESHOTR - Same as DISCRETE_ONESHOT but with reset.
+  * poolshrk - Discrete sound emulation added.
+  * bsktball - changed bounce sound to use DISCRETE_CRFILTER.
+- Updates to the Gameplan driver [Nicola Salmoria]:
+  * Rewritten using machine/6522via.c and machine/6532riot.c, which weren't available at the time it was created. This fixed the gfx problems and bad sound.
+  * vidhrdw/gameplan.c is no longer needed.
+  * machine/6532riot: added PA7 adge detect and irq callback.
+  * machine/6522via: fixed port writes so that pins set as input are pulled high. This is required by the gameplan games and is confirmed by the 65422 data sheet. Added support for CA2 pulse handshake.
+- System 21 updates [Phil Stroffolino]:
+  * Hooked up preliminary support for System21's "depth bias" feature, used as a corrective factor when sorting polygons by representative z value. It's not perfect, but a step in the right direction.
+  * Improved polygon colors in 'CyberSled'.
+  * Better parsing of CyberSled's display list; title screen and ingame graphics now appear and are mostly correct.
+  * Hooked up CyberSled input ports; they can be configured with the usual mechanism: hold the 'service' key while flipping the test dipswitch.
+  * Added near-plane clipping for System21's flat-shaded polygons.
+  * Hooked up the view transform, used in 'Starblade' to tilt the screen when player is targeting the edges of the playfield.
+  * Hooked up a private (placeholder) implementation of zdrawgfx() for C355 sprite rendering, adding sprite-tilemap orthogonality for all games using that chip.  This fixes MAMEtesters bug ptblank056gre.
+  * C355 sprite rendering no longer relies on game-specific hacks for XY placement or cropping.
+  * Some rudimentary work has been done for 'Winning Run '91'; this game runs on prototype System21 hardware, and as such is quite different from the other titles.  It uses a 3rd 68k CPU to render graphics to a bitmap layer (there is no sprite chip), but still appears to rely on DSPs for 3d graphics.
+  * Updated System21 notes/comments.
+- Fixed the following bugs created / revealed by Aaron's updates VSNes dual games not working [Pierpaolo Prazzoli]
+- Warning messages on decocass.c, tnzs.c, cvs.c, raiga sound, gsword bad RAM message	gberet bad RAM message [Stefan Jokisch].
+- MX5000 / Flak Attack bad RAM [R. Belmont].
+- Fixed DIPS:
+  * Indoor Soccer [Brian A. Troha].
+  * Radical Radial [Stefan Jokisch].
+- SUpport USB Keyboard LEDs [smf]:
+  -led_mode ps/2 is the default and uses DeviceIOControl.
+  -led_mode usb uses keybd_event(). This only affects windows nt/2000/xp. 	There might be a way of using DeviceIOControl to change the led's on usb 	keyboards, but I can't find it. Using keybd_event() may have problems restoring on exit, but at least it	does work.
+- Save state loading from command line [smf]:
+  * Adds -state to the windows version. The code was already in the core to	handle it, all this patch does is allows you to set options.savegame.
+  * Not sure how reliable it is, it worked for galaxian.
+- Fixed Discrete sound system crash with -nosound [R. Belmont].
+- Added extra roms to alibaba [Pierpaolo Prazzoli].
+- Attempt to fix 'Space Thunderbird' gfx [Pierpaolo Prazzoli].
+- Removed some 'smart' code from CHD filename handling [Olivier Galibert].

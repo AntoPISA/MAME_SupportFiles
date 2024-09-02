@@ -1,0 +1,85 @@
+0.145 2012/02/05 [#561 - Miodrag Milanovic]
+-------------------------------------------
+Happy 15th Anniversary! Over its 15 years of existence since MAME 0.01 was released for MS-DOS with an initial library of 5 sets, MAME has grown exponentially to the point that no one thought we would be, boasting 18,650 different sets and operable on more OS platforms than thought possible. While video-based arcade games were the original targets for MAME, the scope of the project has grown to include documentation of virtually all coin-operated amusement devices including gambling (video/slots), coin droppers, pinball machines and more. Through the efforts of the literally thousands of developers, players and others who have provided assistance and feedback over the project's history, we would like to thank all of them that made this possible!
+
+
+MAMETesters Bugs Fixed
+----------------------
+- 03444: [Debugger] Registered RAM blocks registered with save state cannot be viewed with debugger (R. Belmont).
+- 04455: [Crash/Freeze] All sets in cliffhgr.c: Crash/assert and graphic issues (Aaron Giles).
+- 04607: [Graphics] All sets in cliffhgr.c: Video playback is faulty - screen flashes (Aaron Giles).
+- 04622: [Crash/Freeze] anmlbskt: Crash before OK (R. Belmont).
+- 04626: [DIP/Input] ddragon2 and clones: Wrong dipswitch settings - default settings.
+- 04628: [Crash/Freeze] agress, agressb: Black screen (R. Belmont).
+- 04632: [Crash/Freeze] oldsplus: [debug] Assert before OK (David Haywood).
+- 04635: [Graphics] terrafb, terrafjb: [debug] Graphics corruption on both sides of the screen (David Haywood).
+- 04636: [Crash/Freeze] mquake: [debug] Exception after OK (R. Belmont).
+- 04644: [Core] Tilemap viewer always broken / displays in shades of Blue (Aaron Giles).
+- 04647: [DIP/Input] cabal and all clones: "Bonus Lives" settings are wrong (stephh).
+- 04648: [Graphics] All sets in btime.c: Misplaced graphics for player 2 in cocktail mode (hap).
+- 04650: [Documentation] m1coro11n, m1coro11np, m1coro12n, m1coro12np, m1coro21n, m1coro21np, m1coro22n, m1coro31p, m1coro32n, m1coro32np: Game descriptions contain a TAB character.
+- 04654: [Timing] All sets in stv.c: All sets do not start or play correctly (Timing, Auto Credit, Sound) (R. Belmont).
+- 04656: [Misc.] Various Sets: "Timer Error" shows before start of game each time, showing odd time during setting (Angelo Salese).
+- 04661: [Crash/Freeze] calchase: Assert while doing initial memory test (Carl).
+
+
+New games added or promoted from NOT_WORKING status
+---------------------------------------------------
+Boong-Ga Boong-Ga (Spank'em!) [R. Mucciarelli, pongplaya, ranger_lennier, Kevin Eshbach, gamerfan,  M. Ponweiser, emuLOAD, R. Gatzke, Smitdogg, The Dumping Union, Pierpaolo Prazzoli]
+Street Games II [Angelo Salese, Mariusz Wojcieszek]
+
+
+New clones added
+----------------
+Dumped HDD for Photo Play 2000 v2.01 [Team Europe]
+Hyperspace (bootleg of Asteroids) [Byte Surfer]
+Print Club 2 '98 Autumn Ver (J 980827 V1.000) [f205v, ranger_lennier, dopefishjustin, Yohji, Smitdogg, The Dumping Union]
+Print Club 2 '98 Spring Ver [f205v, ranger_lennier, dopefishjustin, Yohji, Smitdogg, The Dumping Union]
+Print Club 2 Felix The Cat (Rev. A) [f205v, ranger_lennier, dopefishjustin, Yohji, Smitdogg, The Dumping Union]
+Print Club Goukakenran (J 991104 V1.000) [f205v, ranger_lennier, dopefishjustin, Yohji, Smitdogg, The Dumping Union]
+Print Club Kome Kome Club (J 970203 V1.000) [f205v, ranger_lennier, dopefishjustin, Yohji, Smitdogg, The Dumping Union]
+Print Club Olive (J 980717 V1.000) [f205v, ranger_lennier, dopefishjustin, Yohji, Smitdogg, The Dumping Union]
+Tekken Tag Tournament (Asia, TEG2/VER.C1, set 1) [Brian Troha, Smitdogg, The Dumping Union]
+Ultimate Arctic Thunder [gamerfan, Smitdogg, The Dumping Union]
+Warriors of Fate ('sgyxz' bootleg) (not working) [Angelo Salese]
+X-Men (4 Players ver ADA) [Bonky0013]
+
+New games marked as GAME_NOT_WORKING
+------------------------------------
+Bounty Hunter [Gatinho]
+Chess Challenge 2 [SoftwareThis]
+Dungeon Explorer (Tourvision PCE bootleg) [Charles McDonald, Clawgrip, AUMAP]
+EZ Touch [XingXing]
+Gone Fishing 2
+Sega Shooting Zone
+Unknown BMC Poker Game
+
+
+Source changes:
+---------------
+- Fixed disassembly of far jump instructions in the u'nSP core [trap15].
+- Correct loading for dragngun video data, identified as standard DVI data [David Haywood].
+- Slight fix to the way captaven rasters were handled [David Haywood].
+- Added proper widescreen layout on Super Chase [David Haywood].
+- Improved inputs in Tourvision driver [Stephh].
+- Added sprites wrap-around in Donkey Kong HW, seen in DK3 when clearing stage 1 [hap].
+- chd: Fix error where FLAC was encoding 4 times too much data (samples vs. bytes) [David Haywood].
+- Converted Boogie Wings to generic sprite device plus added manual mixing. Converted various bootleg implementations of the chip to use the common code as well. (tumbleb.c, esd16.c, crospang.c, nmg5.c) [David Haywood].
+- Implemented preliminary support for Trident SVGA cards, fixes graphics in California Chase loading screen [Grull Osgo, Angelo Salese].
+- Hooked up inputs and sound in california chase, game is now more or less working without steer inputs and still needs the user to launch boot.exe first from MS-DOS prompt [Grull Osgo, Angelo Salese].
+- Various wav/flac sample changes [David Haywood]:
+  * Remove hardcoded ".wav" sample extensions from within drivers.
+  * Update samples.c to check for both .flac and .wav extensions when loading a sample.
+  * Made sample loading failure a bit more verbose (various zips contained 0 byte samples, I assume to keep clrmame happy or something).
+  * Fixed memory allocation with 8-bit flac samples.
+- Act Fancer: Fixed background tilemap size, corrects level boss bg (partial fix for MT #4585) [David Haywood].
+- RDP optimizations and memory system shunting in N64 driver; relative speedup of 1.4x to 1.5x [MooglyGuy].
+- Truco Tron reverse engineering [Roberto Fresca]:
+  * Identified and added EF6821P PIA for I/O.
+  * Identified and added the CRTC as HD/UM6845.
+  * Identified a Maxim MAX691 and hooked watchdog/reset functions based on the PIA line where is tied. Also hooked others minor related things.
+  * Identified a Darlington Array ULN2003.
+  * Added correct clocks for main crystal, CPU and CRTC through #define.
+  * Improved inputs/jumpers with PCB traces.
+  * Added technical notes.
+- Model 1: add skeleton device for Z80 version of the MPEG sound board. No playback, just running the Z80 [R. Belmont].

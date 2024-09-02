@@ -1,0 +1,48 @@
+0.36b13 1999/12/30 [#087 - Nicola Salmoria]
+-------------------------------------------
+
+
+New games supported:
+--------------------
+Dottori Kun (a cabinet test board) [Takahiro Nogi]
+Fast Lane (not playable due to protection) [Manuel Abadia]
+Gradius III [Nicola Salmoria]
+Minivader (a cabinet test board) [Takahiro Nogi]
+Ninja Emaki [Takahiro Nogi]
+Splash [Manuel Abadia]
+Thunder Cross II [Nicola Salmoria]
+
+New clones supported:
+---------------------
+'99 The Last War (alternate version with different gameplay)
+Aliens (US)
+Bells & Whistles (= Detana Twin Bee)
+Block Hole (= Quarth)
+Dark Seal (Japan)
+Devastators (version V)
+Donkey Kong (Japan, old version)
+Mr. Viking (Japan)
+Nova 2001
+Pac-Man & Chomp Chomp (= Pac & Pal)
+
+
+These drivers have improved GRAPHICS:
+-------------------------------------
+- 16-bit support in the vector games [Mathis Rosenhauer].
+- Grid and stars in 'Radar Scope' [Nicola Salmoria].
+
+
+These drivers have new or improved SOUND:
+-----------------------------------------
+- 'Blood Bros.' [Bryan McPhail].
+- Fixed many SNK 8-bit games ('Guerilla War', 'Psycho Soldier', 'Ikari Warriors', etc.) [wwtk@mail.com].
+
+
+Source changes:
+-------------------
+- Fixed crash at the end of 'Gun Smoke' level 3 [Paul Leaman].
+- Fixed protection in 'Devastators' and 'Blades of Steel' [Manuel Abadia].
+- Fixed protection in 'Slam Masters' [Paul Leaman].
+- Alongside the AND key sequences introduced in the previous beta, it is now possible to have OR and NOT sequences. For recording OR key/joy sequences in the key/joy setup menu simply press UI_SELECT (usually ENTER) after the first recorded sequence. Don't press any UI_UP/UI_DOWN/UI_CANCEL keys beetwen the two sequences. To insert a NOT key/joy simply press it two times. The first obvious use for this is to wire button 1 to both the joystick and mouse button [Andrea Mazzoleni].
+- Added other members of the TMS99xx family [Raphael Nabet].
+- New NES sound emulation for 'Punch Out' and 'Donkey Kong 3' [Matthew Conte, wwtk@mail.com].

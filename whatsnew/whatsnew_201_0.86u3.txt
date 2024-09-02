@@ -1,0 +1,38 @@
+0.86u3 2004/09/03 [#201 - David Haywood]
+----------------------------------------
+
+
+New Games supported or promoted from GAME_NOT_WORKING status:
+-------------------------------------------------------------
+Namco Classics Vol.2 [R. Belmont] (some tile flip problems in classic pacman/rallyx. Some sound problems [hanging sound in digdug classic])
+	
+New Non-Working games / clones supported
+----------------------------------------
+Zero (bootleg of Defender) [Pierpaolo Prazzoli]
+
+
+Source changes:
+---------------
+- CHDMAN update [R. Belmont]:
+  * This makes the parser deal with .toc files output by current cdrdao better. I need to just give in and rewrite it for 2-pass operation sometime, it'll be much cleaner then.
+  * Incidentally, if anyone has any idea where to get specs for e.g. CloneCD or some other popularish image format(s) let me know and I'll add support.
+- Converted some CD images to CHD [R. Belmont].
+- Donkey Kong Sample improvements [Pete Rittwage Derrick Renaud].
+- Fixed black squares in ozon1 [Pierpaolo Prazzoli].
+- Fixed filenames in some of the sets added in the previous update [Pierpaolo Prazzoli].
+- Fixed for the random key mappings bug with new config system [Aaron Giles].
+- Gottlieb input changes [B.S. Ruggeri].
+- H8/3002 fixes [R. Belmont]:
+  * Fixed btst #imm, @Rn instruction - it was giving reversed results, which crashed ncv2's MCU program.
+- Hyper Neogeo 64 Improvements [David Haywood]:
+  * I won't be doing much work on this again until I buy some more RAM so don't expect too much. Needs a kludge in the MIPS core so the changes aren't very visible in a normal build (details of the required kludge are in the source).
+- Input Port Fixes [Aaron Giles]:
+  * Reversed pedals now work correctly (e.g., brake in Hard Drivin').
+  * All relative controls (dial, trackball, mouse) scale the same regardless of the number of bits allocated for that port.
+- Namco C352 update [R. Belmont]:
+  * Many many fixes to wave start/end/bank handling plus added chain mode support. Thanks to cap @ VivaNonno for the tips.
+- Namco Classics improvements [R. Belmont]:
+  * Added H8/3002 MCU and C352 sound chip. Both ncv1 and ncv2 are now fully playable with full sound and music.
+- Regression Fixes for Starblad and Simpsons [R. Belmont]:
+  * Restored polygon drawing in starblad.
+  * Corrected clocks in simpsons.

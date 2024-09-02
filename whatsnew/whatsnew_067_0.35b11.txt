@@ -1,0 +1,92 @@
+0.35b11 1999/04/22 [#067 - Nicola Salmoria]
+-------------------------------------------
+
+
+New games supported
+-------------------
+(armedf)   Armed Formation [Carlos A. Lozano, Phil Stroffolino]
+(blstroid) Blasteroids (version 4) [Aaron Giles]
+(cabal)    Cabal (US set 1) [Carlos A. Lozano, Phil Stroffolino]
+(dangar)   Ufo Robo Dangar (12/1/1986) [Carlos A. Lozano]
+(dday)     D-Day [Zsolt Vasvari]
+(ddribble) Double Dribble [Manuel Abadia]
+(goindol)  Goindol [Jarek Parchanski]
+(insectx)  Insector X [Nicola Salmoria]
+(naughtyb) Naughty Boy [Brad Oliver]
+(offroad)  Super Off-road Racer [Paul Leaman]
+(prehisle) Prehistoric Isle in 1930 (World) [Bryan McPhail, Carlos A. Lozano]
+(punkshot) Punk Shot (4 Players) [Nicola Salmoria]
+(sichuan2) Sichuan II [Nicola Salmoria] (it's 100% emulated, but one ROM is missing so it doesn't work correctly)
+(starwars) Star Wars (rev 2) [Brad Oliver]
+(terraf)   Terra Force [Carlos A. Lozano, Phil Stroffolino]
+(toki)     Toki (set 1) [Nicola Salmoria]
+(vindctr2) Vindicators part II [Aaron Giles]
+(wiping)   Wiping [Allard van der Bas]
+(wndrmomo) Wonder Momo [Nicola Salmoria, Ernesto Corvi]
+
+New clones supported
+--------------------
+(aerofgtc) Aero Fighters (Turbo Force hardware set 2) [Nicola Salmoria]
+(blckout2) Block Out (set 2) [Nicola Salmoria]
+(breakrev) Breakers Revenge [Nicola Salmoria]
+(bublbobr) Bubble Bobble (US) [Brad Oliver]
+(cabal2)   Cabal (US set 2) [Carlos A. Lozano, Phil Stroffolino]
+(cabalbl)  Cabal (bootleg) [Carlos A. Lozano, Phil Stroffolino]
+(dangar2)  Ufo Robo Dangar (9/26/1986) [Carlos A. Lozano]
+(dorunru2) Mr. Do! Run Run (set 2) [Marco Cassili]
+(dorunruc) Mr. Do! Run Run (Do's Castle hardware) [Nicola Salmoria]
+(eagle2)   Eagle (set 2) [Marco Cassili]
+(eprom2)   Escape from the Planet of the Robot Monsters (set 2) [Aaron Giles]
+(galivan2) Cosmo Police Galivan (12/11/1985) [Nicola Salmoria]
+(gberetb)  Green Beret (bootleg) [Mirko Buffoni]
+(gensitou) Genshi-Tou 1930's [Bryan McPhail, Carlos A. Lozano]
+(homo)     Homo [Jarek Parchanski]
+(indytem2) Indiana Jones and the Temple of Doom (set 2) [Aaron Giles]
+(intrepi2) Intrepid (set 2) [Thierry Lescot]
+(ledstorm) Led Storm (US) [Byan McPhail]
+(lstduela) Last Duel (US set 2) [Byan McPhail]
+(majest12) Majestic Twelve [Marco Cassili]
+(myheroj)  My Hero (Japan) [Nicola Salmoria]
+(naughtya) Naughty Boy (bootleg) [Brad Oliver]
+(pacgal)   Pac Gal [Victor Trucco]
+(prehislu) Prehistoric Isle in 1930 (US) [Bryan McPhail, Carlos A. Lozano]
+(rastanu)  Rastan (US set 1) [Nicola Salmoria]
+(rastanu2) Rastan (US set 2) [Nicola Salmoria]
+(rugrats)  Rug Rats [Allard van der Bas]
+(spiders2) Spiders (set 2) [Nicola Salmoria]
+(stratvxb) Stratovox (bootleg) [Nicola Salmoria]
+(suprmou2) Funny Mouse (bootleg?) [Thierry Lescot]
+(terrafu)  Terra Force (US) [Carlos A. Lozano, Phil Stroffolino]
+(toki2)    Toki (set 2) [Nicola Salmoria]
+(toki3)    Toki (set 3) [Nicola Salmoria]
+(tokiu)    Toki (US) [Nicola Salmoria]
+(zaxxon2)  Zaxxon (set 2) [Marco Cassili]
+
+
+These drivers have improved GRAPHICS
+------------------------------------
+- Better backdrop for Battle Zone (bzone.png) [Nathan Sturm].
+- Fixed background in Street Fighter 1 [Olivier Galibert].
+- Fixed foreground transparency in Pac-Land round 19 [Nicola Salmoria].
+- Fixed sprite glitches in Jail Break and Iron Horse [Nicola Salmoria].
+- Fixed sprites colors in Galivan [Nicola Salmoria].
+- Several fixes and improvements to D-Day [Zsolt Vasvari].
+
+
+These drivers have new or improved SOUND
+----------------------------------------
+- Added ADPCM samples to Mad Gear [Bryan McPhail].
+- Fixed tune in Phoenix [Richard Davies].
+- Support for Eliminator 2/4 player samples and additional sounds for Zektor [Jim Hernandez].
+
+
+Changes to the main program
+---------------------------
+- [DOS] Rough triple buffering support in VESA modes. You can turn it on with the -triplebuffer switch. It is not guaranteed to work well, but if it does, it offers results similar to -waitvsync but without the performance drop. Do NOT use it together with -vsync or -waitvsync [Nicola Salmoria].
+- A missing ROM for which no good dump is known to exist is no longer a fatal error - you can start the emulation even if the file is missing. Its space will be filled with random data. Of course the game will probably malfunction. The output of -verifyroms is slightly changed, it says "NO GOOD DUMP KNOWN" now and doesn't print 00000000 checksums [Nicola Salmoria].
+- Added support for .wav samples. The custom .sam samples are no longer supported (you can use the sam2wav converter to convert them) [Aaron Giles].
+
+
+Source changes:
+---------------
+- Major overhaul to the Atari games, and fixes to the 68000 and 6502 cores to get them going properly [Aaron Giles].

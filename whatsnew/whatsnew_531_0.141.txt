@@ -1,0 +1,118 @@
+0.141 2011/01/01 [#531 - Aaron Giles]
+-------------------------------------
+
+
+MAMETesters Bugs Fixed
+----------------------
+- 04161: [Crash/Freeze] nibbler and clones: Mame crashes after pressing OK (Aaron Giles).
+- 00859: [Color/Palette] blandia, blandiap: Tilemap colors issue (Pierpaolo Prazzoli).
+- 00860: [Color/Palette] blandia, blandiap: Incorrect colors (Pierpaolo Prazzoli).
+- 04120: [Misc.] SDLMAME for Windows does not work unless you use -window (Couriersud).
+- 04156: [Crash/Freeze] cabal, cabala, cabalbl2, cabalus, cabalus2, tharrier, tharrierj: memory_set_bank called for unknown bank 'bank1' (hap).
+- 04153: [Misc.] hydrthnd: SHA1 of CHD reported incorrectly (David Haywood).
+- 03916: [Graphics] arabian: Missing bird at top of the screen (Phil Bennett).
+
+
+New games added or promoted from NOT_WORKING status
+---------------------------------------------------
+Heavy Unit [Phil Bennett, Dr. Decapitator, Andrew Gardner]
+Poizone [Tim Schuerewegen]
+Silver Game [Roberto Fresca, Team Europe & HAL9K]
+Jack Potten's Poker (NGold) (3 sets) [Roberto Fresca, Darran]
+
+New clones added
+----------------
+Multi Champ Deluxe (ver. 1114, 14/11/1999) [caius] (not working)
+Gran Tesoro? / Play 2000 (v4.0) (Italy) [Corrado Tomaselli] (not working)
+Raiden (US, set 2)  [Smitdogg, The Dumping Union]
+Golden Tee Golf (Trackball, v2.0)  [Smitdogg, The Dumping Union]
+Relief Pitcher (set 2, 26 Apr 1992 / 08 Apr 1992) [Smitdogg, The Dumping Union]
+G.I. Joe (World, EB8, prototype?) [caius]
+Space Firebird (2 sets) [Andrew Welburn]
+
+New games marked as GAME_NOT_WORKING
+------------------------------------
+Bank Robbery (Ver. 2.00) [ChrisQC, Smitdogg, Luca Elia, The Dumping Union]
+Bank Robbery (Ver. 3.32) [ChrisQC, Smitdogg, Luca Elia, The Dumping Union]
+Deuces Wild 2 - American Heritage (Ver. 2.02F) [ChrisQC, Smitdogg, Luca Elia, The Dumping Union]
+Maxi Double Poker (Ver. 1.10) [ChrisQC, Smitdogg, Luca Elia, The Dumping Union]
+Mega Double Poker (Ver. 1.63 Espagnol) [ChrisQC, Smitdogg, Luca Elia, The Dumping Union]
+Mega Double Poker Jackpot (Ver. 1.26) [ChrisQC, Smitdogg, Luca Elia, The Dumping Union]
+Poker 52 (Ver. 1.2) [ChrisQC, Smitdogg, Luca Elia, The Dumping Union]
+The Hermit (Ver. 1.14) [ChrisQC, Smitdogg, Luca Elia, The Dumping Union]
+Mambo A Go-Go (GQA40 VER. JAB) [Kevin Eshbach, Tormod, gatt9, Smitdogg, The Dumping Union, smf]
+"Unknown french poker game" [Roberto Fresca, Team Europe & HAL9K]
+"Unknown encrypted poker game" [Roberto Fresca, Team Europe & HAL9K]
+
+
+Source changes:
+---------------
+- Redumped sprite roms in X Se Dae Quiz [Guru].
+- Added preliminary (disabled by default) discrete sound emulation to Dai San Wakusei Meteor [Derrick Renaud, Andy Welburn].
+- Added DMA slots to Legionnaire HW, fixes Godzilla regression [Angelo Salese].
+- Fixed Bullet key back to what we dumped from original PCB [Aaron Giles].
+- Improved sprite GFX ROM order in Godzilla [Angelo Salese].
+- AY-3-8910 unused bits in registers read back as 0 [hap]
+- Fixed Seibu logo tilemap colors in Seibu Cup Soccer [Angelo Salese].
+- s3c24xx.c: Fixing compiling process on Linux and MacOSX [qmc2].
+- Assigned MB88xx interrupt sources unique vectors, as expected by the Arabian MCU program [Phil Bennett].
+- Hooked up Arabian MB8841 MCU and removed obsolete simulation code [Phil Bennett].
+- Adjusted ym2203 clock speed and added XTAL for goindol.c based on a reference video recording [Tafoid, Rogerio].
+- Rewrote ics2115 sound core using modern device standards, improving audio in 'Oriental Legend', 'Killing Blade' and other PGM titles in the process [austere, nimitz, trap15].
+- Implemented pdrawgfx for sprite routines in Legionnaire HW, and added wraparound for horizontal area smaller than 320, fixing left-border sprites in 'Legionnaire' and 'Heated Barrel' [David Haywood].
+- Implemented a preliminary sort-DMA in Seibu COP routines, fixes sprite-sprite priorities in Seibu Cup Soccer [Angelo Salese].
+- z80dart.c [Wilbert Pol]:
+  * The channel B modified interrupt vector can be read immediately after setting it.
+  * Reading from a read register other than 0 also masks out the register index.
+- Fixed RAM fill in Seibu DMA COP command 0x116, allowing Godzilla to boot [Angelo Salese].
+- Neo-Geo updates [Johnboy]:
+  * burningfh - Renamed p1 to hp1.
+  * gowcaizr - Added correct C8 ROM.
+  * 8man: Tagged MVS and AES version.
+  * jockeygpa: Added alternate jockeygp set.
+  * mslug5h: Corrected chip labels.
+- Hooked up cocktail mode and proper controls for both players in Maze Invaders, adding button labels to describe the action of each [sxevious, Tafoid].
+- Fixed LDM opcode register writeback in ARM CPU core [Tim Schuerewegen].
+- General stability issues with 64-bit builds fixed for cybertnk.c [David Haywood].
+- Implemented palette DMA brightness algorythm mode 5 in Seibu COP games, used by Seibu Cup Soccer, Godzilla, SD Gundam Rainbow Tairiku Senki and Legionnaire for fading effects [Angelo Salese].
+- hvyunit.c: Hooked up Mermaid protection MCU and removed obsolete simulation code. Also updated the driver to use a state class [Phil Bennett, Dr. Decapitator, Andrew Gardner].
+- Implemented preliminary road emulation in Cyber Tank [David Haywood].
+- Renamed ilpag.c as blitz68k.c and added several games to the driver [Luca Elia].
+- sdlmame now also looks for fonts in "-fontpath". In addition, moved font config stuff into function search_font_config. This is in preparation to add ttf support to windows sdlmame build [Couriersud].
+- Fixed an ARM CPU core bug with pre-indexed addressing opcodes, that was preventing Poizone to boot [Tim Schuerewegen].
+- Fix most-likely-to-fail SDL_TTF version check. Added a warning if strikethrough is specified but not supported [Couriersud].
+- Reimplemented scatter-gather Sprite DMA in Seibu COP used by SD Gundam Rainbow Tairiku Senki, also improving the functionality in it [Angelo Salese].
+- Greatly improved inputs and dip switches for ertictac.c [Tafoid].
+- Fixed playfield color issues in Seibu Cup Soccer [David Haywood].
+- Fixed *BSD compilation for SDLMAME [ElBarto].
+- Fixed sfx in Chouji Meikyuu Legion [Tomasz Slanina].
+- Implemented preliminary Seibu COP macro command 0xdde5, used by Seibu Cup Soccer x/y radar positions [Angelo Salese].
+- Implemented ROM banking support in Raiden 2 HW, improving Raiden 2 and Zero Team behaviour [O. Galibert].
+- plygonet.c: Fixed save state & device handler regressions [Andrew Gardner].
+- Golden Poker driver: Added new sets, and some notes about ipc-1 daughterboard encryption [Roberto Fresca].
+- Preliminary simulation of text layer protection in Chouji Meikyuu Legion [Tomasz Slanina].
+- Further ICS2115 work [austere, nimitz, trap15].
+- mpu4drvr.c: Account for the 45 degree trackball mounting [James Wallace].
+- Adds the recent 87C52 MCU decaps to Wonder League Star and Wonder League '96 [Dr. Decapitator].
+- superchs.c - Moved Button 6 assignment to a DIP selection which is more appropriate for "Freeze Screen" behavior and added some missing port names [Tafoid].
+- Updated the RSP and RDP implementations to be largely bit-perfect and pixel-accurate [angrylion, Harmony].
+- Fixed alpha compare in the N64 RDP implementation [Harmony].
+- More Golden Poker driver cleanup. Added more references and reorganized some parent-clone relationship. Added some new sets [Roberto Fresca].
+- Implemented Seibu COP macro 0x905, used for ark movements in Legionnaire / Zero Team when a knock down occurs [Angelo Salese].
+- ARM7+ updates [Tim Schuerewegen]:
+  * Enhanced MMU with page fault support.
+  * Preliminary 26-bit mode support.
+  * Fixed bugs with S-flag operations on R15.
+  * Fixed STRH involving R15.
+  * Support for ARM models 7500 and 920T.
+- Add directxor parameter to direct memory accessors. Update all callers that manually XORed addresses to pass the XOR instead. This improves behavior when direct accessors hit non-RAM regions, or when watchpoints are used, because we now know the original, un-xored address and can fall back to standard read/write handlers properly. Also fixes glitched disassembly when read watchpoints are enabled [Aaron Giles].
+- s3c24xx: some improvements and fixes [Tim Schuerewegen].
+- Removed public decodechar function [Aaron Giles].
+- Fixed writes in the MIPS III interpreter [MooglyGuy].
+- Some bulk naming cleanups across the whole source base [Aaron Giles]:
+  MDRV_* -> MCFG_*
+  running_device -> device_t
+  mame_rand() -> machine->rand()
+  memory_region() -> machine->region()->base()
+  memory_region_length() -> machine->region()->bytes()
+  region_info -> memory_region

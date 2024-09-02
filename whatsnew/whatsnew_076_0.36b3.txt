@@ -1,0 +1,56 @@
+0.36b3 1999/08/22 [#076 - Nicola Salmoria]
+------------------------------------------
+
+
+New games supported:
+--------------------
+'88 Games [Nicola Salmoria]
+Air Wolf [Nicola Salmoria]
+Capcom Baseball [Nicola Salmoria]
+Dokaben [Nicola Salmoria]
+Enduro Racer [Andrew Prime]
+Flash Gal [Nicola Salmoria]
+Go Go Mr. Yamaguchi / Yuke Yuke Yamaguchi-kun (not working) [Phil Stroffolino]
+Hunchback (Scramble and Donkey Kong conversions) [Mike Coates]
+Nunchackun [Phil Stroffolino]
+Off the Wall [Aaron Giles]
+Parodius [Nicola Salmoria]
+Samurai (Taito) [Phil Stroffolino]
+Super Contra [Manuel Abadia]
+Thunder Cross (no collision detection, probably protection) [Bryan McPhail]
+Vendetta [Phil Stroffolino]
+
+New clones supported:
+---------------------
+64th Street (Japan) [Alessio Manuele]
+'99 The Last War (= Son of Phoenix) [Gerald Vanderick]
+Akuma-Jou Dracula (= Haunted Castle) [Yasuhiro Ogawa]
+Aliens (Japan) [Yasuhiro Ogawa]
+Bermuda Triangle (Japan) [Alessio Manuele]
+Empire City: 1931 (= Street Fight) [Gerald Vanderick]
+E-Swat (protected, not working) [Andrew Prime]
+Gryzor (= Contra) [Yasuhiro Ogawa]
+Repulse (= Son of Phoenix) [Gerald Vanderick]
+Simpsons (Japan) [Yasuhiro Ogawa]
+Strider (Japan set 2) [Marco Cassili]
+Sunset Riders (5 new sets) [Nicola Salmoria]
+
+
+These drivers have improved GRAPHICS:
+-------------------------------------
+- Added the zooming/rotating layer to 'Ajax' [Nicola Salmoria].
+- Fixed colors in 'Empire City: 1931' [Nicola Salmoria].
+- Fixed the background in 'Led Storm' [Bryan McPhail].
+
+
+These drivers have new or improved SOUND:
+-----------------------------------------
+- Added support for external volume control to the K007232 and fixed 'Aliens', 'Ajax', etc. [Nicola Salmoria].
+
+
+Source changes:
+--------------------
+- Emulated the 68705 protection in 'Mania Challenge' [Nicola Salmoria].
+- Changed the UPD7759 emulator to support two chips ('88 Games needed this) and fixed a bug in the ADPCM decoding [Ernesto Corvi].
+- The gfxdata field of the GfxElement structure is no longer a osd_bitmap *; it is instead a simple unsigned char *, pointing to a continuous stream of pixel data. The new line_modulo and char_modulo fields are helpers to find the offset in the array [Nicola Salmoria].
+- Updated the 68000 C core [Karl Stenerud].

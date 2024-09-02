@@ -1,0 +1,41 @@
+0.109u4 2006/10/26 [#346 - Aaron Giles]
+---------------------------------------
+
+
+New games added or promoted from NOT_WORKING status
+---------------------------------------------------
+Bowling 3D [Pierpaolo Prazzoli]
+Dark Horse Legend [R. Belmont, smf]
+Konami 80s Gallery [R. Belmont, smf]
+Powerful Pro Baseball EX [R. Belmont, smf]
+
+New clones added
+----------------
+Arian Mission [Brian Troha]
+Trivia (Version 1.03a) (alt 4) [Brian Troha]
+
+
+MAMETesters Bugs Fixed
+----------------------
+hvysmsh0103u3gre (robiza)
+
+
+Source changes:
+---------------
+- Added a COP410 core to the COP4xx collection [Nathan Woods].
+- Added new debugger command 'history' which dumps the most recent instructions executed [Aaron Giles].
+- Cleaned up tms99xx core debugging and converted to new disassembler syntax, adding step over/out support [Aaron Giles].
+- Fixed bug in displaying disassembly of CPUs whose minimum instruction size was larger than their data bus size [Aaron Giles].
+- Fixed lamps in funworld/cardline drivers [wolf676].
+- Fixed memory leak when writing MNG files [Buddabing].
+- Fixed several audit bugs introduced with the rewrite [Mamesick].
+- Fixed sound frequencies for 2650 conversions [Aaron Giles].
+- Improved banking in the alpha68k games [robiza].
+- Improvements to the Looping driver [Aaron Giles]:
+  * Fixed clock speeds.
+  * Proper video timing.
+  * Fixed protection (game would reset; should never have been marked 'working' in the first place!).
+  * Various other driver cleanups.
+- Normalized realtime clock accesses across drivers. Now ensure that realtime clocks are reset when recording/saving INP files [Nathan Woods].
+- Removed obsolete CPUINFO_PTR_REGISTER_LAYOUT and CPUINFO_PTR_WINDOW_LAYOUT data items [Aaron Giles].
+- Updated documentation in pacman driver to reflect actual sync chain.

@@ -1,0 +1,26 @@
+0.119 2007/09/12 [#397 - Aaron Giles]
+-------------------------------------
+
+
+MAMETesters Bugs Fixed
+----------------------
+vr0118u6yel (Aaron Giles)
+
+
+New clones added
+----------------
+Turpin (bootleg on Scramble hardware) [David Haywood]
+Operation Wolf (World, set 2) [David Haywood]
+Star Force (encrypted, bootleg) [David Haywood]
+Galaxian (bootleg) [David Haywood]
+Crazy Kong (bootleg on Galaxian hardware, set 2) [David Haywood]
+Vandyke (bootleg with PIC16c57) [David Haywood]
+
+
+Source changes:
+---------------
+- Improved graphics and cleaned up driver for srmp6 [David Haywood, Tomasz Slanina].
+- Fixed bug in model 2 polygon clipping [Ernesto Corvi].
+- Fixed input port so that shadfrcj doesn't skip straight to the end sequence [stephh].
+- Fixed recent changes to the MB86233 core that broke Virtua Racing [Aaron Giles].
+- Added intelligence around the UPDATE_HAS_NOT_CHANGED flag, which is returned from VIDEO_UPDATE. If all screens in the game return UPDATE_HAS_NOT_CHANGED, then that frame is effectively skipped (up to 3 frames in a row) in terms of throttling. This allows games that render every other frame to not throttle during their "off frames". Updated the midvunit driver to return UPDATE_HAS_NOT_CHANGED. You should see an improvement in framerate with throttling enabled for these games. Note that this only kicks in if frameskip is set to 0 [Aaron Giles].

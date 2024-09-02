@@ -1,0 +1,33 @@
+0.6 1997/02/23 [#006 - Nicola Salmoria]
+---------------------------------------
+Note: only important changes are listed.
+
+
+New games supported:
+--------------------
+(amidar)   Amidar [Nicola Salmoria]
+(frogger)  Frogger [Nicola Salmoria]
+(froggers) Froggers (bootleg) [Nicola Salmoria]
+(rallyx)   Rally X (Midway) [Nicola Salmoria]
+(scramble) Scramble [Nicola Salmoria]
+(turtles)  Turtles [Nicola Salmoria, Robert Anschuetz, Alan J. Mccormick]
+(uniwars)  UniWar S [Nicola Salmoria]
+
+
+Program:
+--------
+- Support for:
+  Amidar (wrong colors, no sound)
+  Frogger (including bootleg version running on a Scramble board) (wrong colors, no sound)
+  Rally X (wrong colors, no sound, slowdowns)
+  Scramble (wrong colors, no sound)
+  Turtles (wrong colors, no sound)
+  Uniwars (US version of Japanese Irem game)
+- I'm beginning to understand how the Wizard of Wor video hardware works, gameplay hasn't changed but the graphics are more faithfully reproduced.
+- Star background in Galaxians & co. The way I calculate it is probably not correct, anyway it looks reasonable.
+- Fixed staccato notes in Pacman and other games using the same hardware. There are still some minor glitches (especially in Ms. Pac Man) but Pac Man tunes are now very close to the original.
+
+
+Source:
+-------
+- I reorganized the source directory tree, instead of one directory for every game there are now four directories (drivers, machine, vidhrdw, sndhrdw) which contain files named after the game.

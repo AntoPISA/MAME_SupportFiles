@@ -1,0 +1,79 @@
+0.90 2005/01/04 [#224 - David Haywood]
+--------------------------------------
+
+
+New Games / Clones supported or promoted from GAME_NOT_WORKING status:
+----------------------------------------------------------------------
+Astro Battle [HIGHWAYMAN, Pierpaolo Prazzoli]
+Astro Fire [Pierpaolo Prazzoli]
+Bay Route (Japan, FD1094 317-0115) [Chris Hardy]
+Cotton (US, FD1094 317-0180) [Gerald]
+Evolution Soccer [ElSemi]
+Great Gurianos (Japan?) [Nicola Salmoria]
+Kabuki-Z (Japan) [Pierpaolo Prazzoli]
+Karaoke Quiz Intro Don Don [Angelo Salese]
+Rad Mobile (World) [Chris Hardy]
+Riot (Japan) [Pierpaolo Prazzoli]
+Super Qix (set 1 & 2) [Nicola Salmoria]
+The Crystal of Kings [ElSemi]
+Ultimate Mortal Kombat 3 (rev 1.0) [Brian Troha]
+Virtual Mahjong [Angelo Salese]
+
+New Non-Working
+---------------
+Arrow Flash (Mega-Tech) [Gerald, Thierry]
+Buccaneers [Tomasz Slanina] (missing one program rom)
+
+
+Source changes:
+---------------------
+- Fixed sound in Desert Breaker with new roms [Aaron Giles, Gerald, Thierry].
+- Fixed dip-switches to nmk16 driver [Brian Troha].
+- New Discrete Sound Functionality [Derrick Renaud, Frank Palazzolo]
+  * DISCRETE_OP_AMP_FILTER - properly emulated DISC_OP_AMP_FILTER_IS_BAND_PASS_1M type filter. Used by many games. See: http://home.cogeco.ca/~derrickmame/galaga/Galaga_filters.html
+  * atafifb, abaseb - Re-wrote to use component value only code and use new filter.
+- Fixed crash in i8x41 cpu core reading uninitialized internal RAM [Juergen Buchmueller].
+- Super Qix driver update [Nicola Salmoria]
+  * Manually repaired the ROM code and added support for the I8751 MCU, so the two original sets work.
+  * Swapped sqix and sqixa, because the the former was dumped from a bootleg board (though there's no reason to believe the ROMs were modified, so I didn't mark it as bootleg).
+  * Merged with pbillian.
+  * Fixed pbillian/hotsmash sample playback.
+  * Fixed pbillian MCU simulation and inputs.
+  * Improved hotsmash MCU simulation, the game is playable now though still incomplete.
+- Bubble Bobble driver update [Nicola Salmoria]
+  * Removed the 68705 CPU emulation, since that's not what the original used.
+  * Simulated the 68701 MCU.
+  * Enemy movement should now be correct (bublbobl36rc2yel).
+  * Fixed clock item behaviour. Now enemies start moving again after 10 seconds (bublbobl36b3yel).
+  * Supported coin lockout.
+  * Emulated the boblbobl protection device, getting rid of the ROM patches.
+  * Adjusted PSG volume in tokio (tokiob067gre).
+- Fixed gaplus driver to use its samples [Brian Troha].
+- Fixes the undocumented bit test opcodes in hd6309 cpu core [Nathan Woods].
+- Some i386 cpu core fixes [Nathan Woods]
+  * Fixed algorithm for identifying 32-bit segments.
+  * Near branches now won't force a segment reload.
+  * Implemented RET imm16 under 16-bit mode.
+  * Fixed SBB instruction (the borrow was deducted from the second operand, not the result).
+  * Fixed LDS, LSS, LES, LFS, LGS under 32-bit mode.
+  * Partially implemented LLDT, LTR, CLTS, WAIT and MOV dr instructions.
+- Some C89 compilers fixes [Lawrence Gold]
+- Renamed arcadia machine/vidhrdw/include files from arcadia.* to amiga.* [Nathan Woods].
+- Fixed Vs. Stroke & Match Golf name [chaneman].
+- Fixed oisipuzl inputs [Pierpaolo Prazzoli].
+- Fixed Rainbow Islands visible area [Nicola Salmoria].
+- ST-V fixes [Angelo Salese]
+  * Fixed various DMA bugs, including a missing save/update mode in indirect mode and added a default add value for the A-Bus transfer, to avoid strange uploads.
+  * Further improved the SCU emulation, added two unemulated irqs (PAD and SCSP), improved the "illegal" DMA operations and started to work out with the games headers.
+- Fixed a disassembler bug with the Nec cpu core [Angelo Salese]
+- Fixed player 2 and 3 inputs in xenophob [Hans Andersson].
+- Fixed sound banking in taito_f3 driver [Nicola Salmoria].
+- Fixed memory leaking and added a check in debug builds [Nicola Salmoria].
+- Hyperstone cpu core fixes
+  * Added and fixed the timer and removed the hack [Pierpaolo Prazzoli].
+  * Fixed delayed branching for delay instructions longer than 2 bytes [Tomasz Slanina].
+- Fixed colors and Cocktail support in Enigma 2 [chaneman, Pierpaolo Prazzoli].
+- Added SE3208 cpu core emulation [ElSemi].
+- Fixed model1 driver compiling problem with OpenVMS [Robert Alan Byer].
+- Fixed itech32 driver crash on AMD64 cpus [R. Belmont].
+- Fixed namco54 sound driver compiling in VisualC++ [Kenneth Miller].

@@ -1,0 +1,33 @@
+0.70u5 2003/06/29 [#135 - David Haywood]
+----------------------------------------
+Please, if you submit dipswitch changes to me make sure they've been tested with a DEBUG compile, fixing 'fixed' dipswitches is time consuming, there are extra warnings when you attempt to run Mame in a DEBUG compile.
+
+
+New games supported:
+--------------------
+Stadium Cross [Jason Lo] (there seem to be some sound problems)
+R2D Tank [Pierpaolo Prazzoli]
+
+New clones supported
+--------------------
+Some namco ones that were forgotten last time
+
+
+Source changes:
+---------------
+- A Few Namco Fixes for things broken in u4 [Phil Stroffolino].
+- Added a call win_ddraw_fullscreen_margins() that given the dwWidth and dwHeight parameters of a DirectDraw surface, comes up with a RECT that represents the margins.  For MAME, this is a very simple	operation (a rectangle from (0,0)-(dwWidth,dwHeight)) (and the implementation that I've submitted is corrspondingly simple), but in MESS the window can have a menu bar so this operation works differently. I've also modified winddraw.c and wind3d.c to use this call [David Haywood].
+- Added Counter Run (bootleg) (encrypted?) as TestDriver [David Haywood].
+- Changed drivers to use mame_rand for random numbers [Barry Rodewald].
+- Changed message for Double Clicking on EXE slightly [Leon van Rooij].
+- Changed Steel Gunner to use Correct Rom [Bryan McPhail].
+- Changes timers so that they are now 'mame_timer *' instead of 'void *'.  mame_timer is an opaque structure, similar to mame_file in fileio.h.  I didn't update any code using timers yet; it doesn't seem to me that there isn't a rush and since they used 'void *' before, everything compiles just fine. I hope noone objects to this one [David Haywood].
+- Fixed some Misplaced Sprites in Tricky Doc [Pierpaolo Prazzoli].
+- Fixed Sprites in simpsons [Acho A Tang].
+- Fixes a bug in visible area changing in windowed, non-stretch mode. Previously, when the visible area changed, the code would simply change the visible area, and look at the resulting window size and tweak	it accordingly with win_adjust_window().  The problem with this is thatif you have a sequence where the visible area is made larger, then smaller again, what would happen is you wouldn't get the original window size; you would simply get the enlarged window with a bunch of buffer area. Now instead of calling win_adjust_window(), I added code that preserves the "scale" factors, and the space between the emulation	rectangle and the window client area [David Haywood].
+- Fixes a potential crash in jaguar_tom_regs_w() (while this crash doesn't occur under normal execution of the cojag games though, it can occur if modified ROMs are being used) [David Haywood].
+- Improved ncv1 filenames [Guru].
+- Improvements and Fixes to Strato Fighter / Raiga. There are still some graphics problems (priority, incomplete alpha blending effects, bad tiles) [David Haywood, TheGuru, Leon van Rooij].
+- Introduced a "debug cookie"; when in debug mode, puts a cookie value in the mame_file structure to prevent files from being closed twice without an assertion [David Haywood].
+- Some Dipswitch Fixes [Inigo Luja].
+- Various Changes [Nathan Woods].

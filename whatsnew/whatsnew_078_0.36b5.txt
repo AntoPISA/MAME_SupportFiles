@@ -1,0 +1,62 @@
+0.36b5 1999/09/18 [#078 - Nicola Salmoria]
+------------------------------------------
+
+
+New games supported:
+--------------------
+Battlantis [Manuel Abadia]
+Chicken Shift [Aaron Giles]
+Cybattler [Luca Elia]
+Gang Busters [Manuel Abadia]
+Gimme A Break [Aaron Giles]
+Goalie Ghost [Aaron Giles]
+Hachoo! [Luca Elia]
+Hat Trick [Aaron Giles]
+Mad Motor [Bryan McPhail]
+Mini Golf [Aaron Giles]
+Mr. Goemon [Nicola Salmoria]
+Night Stocker [Aaron Giles]
+Off the Wall (Sente) [Aaron Giles]
+Quarth [Nicola Salmoria]
+Rescue Raider [Aaron Giles]
+Saint Dragon [Luca Elia]
+Sente Diagnostic Cartridge [Aaron Giles]
+Snacks'n Jaxson [Aaron Giles]
+Snake Pit [Aaron Giles]
+Stocker [Aaron Giles]
+Street Football [Aaron Giles]
+The Astyanax [Luca Elia]
+Toggle [Aaron Giles]
+Trivial Pursuit (All Sports Edition) [Aaron Giles]
+Trivial Pursuit (Genus I) [Aaron Giles]
+
+New clones supported:
+---------------------
+Indiana Jones and the Temple of Doom (set 4) [Aaron Giles]
+Lost Worlds [Yasuhiro Ogawa]
+Phantasm [Luca Elia]
+RodLand [Luca Elia]
+Secret Agent (= Sly Spy) [Bryan McPhail]
+Trojan (US) [Quench]
+
+
+These drivers have improved GRAPHICS:
+-------------------------------------
+- Fixed colors in 'Return of the Invaders' [Andrea Mazzoleni].
+
+
+These drivers have new or improved SOUND:
+-----------------------------------------
+- Improved sound in the Exidy 440 games [Aaron Giles].
+- Samples support in 'Depthcharge' [Zsolt Vasvari].
+
+
+Source changes:
+--------------------
+- Artwork in 'Space Wars' [Nathan Sturm].
+- Extracted all the data from the 'Heavy Barrel' microcontroller, so all special weapons and powerups appear correctly. Also a lot of other fixes to Data East games [Bryan McPhail].
+- Fixed steering wheel in 'Speed Freak' [Mathis Rosenhauer].
+- The Cinematronics driver now can handle games with backdrop + overlay [Mathis Rosenhauer]. The pngs have to be renamed:
+  backdrop: drivername + b.png
+  overlay:  drivername + o.png
+- New input type IPT_PEDAL [Aaron Giles].

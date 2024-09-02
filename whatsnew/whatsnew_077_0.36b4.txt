@@ -1,0 +1,63 @@
+0.36b4 1999/09/04 [#077 - Nicola Salmoria]
+------------------------------------------
+
+
+New games supported:
+--------------------
+American Horseshoes [Olivier Galibert]
+Ark Area [Paolo Venturi]
+Blast Off [Ernesto Corvi, Tatsuyuki Satoh]
+Blazer [Ernesto Corvi, Tatsuyuki Satoh]
+Bottom of the Ninth [Nicola Salmoria]
+Cachat [Olivier Galibert]
+Champion Wrestler [Olivier Galibert]
+Dangerous Seed [Ernesto Corvi, Tatsuyuki Satoh]
+Detana!! Twin Bee [Nicola Salmoria]
+Dragon Spirit [Ernesto Corvi, Tatsuyuki Satoh]
+Fighting Hawk [Olivier Galibert]
+Galaga '88 [Ernesto Corvi, Tatsuyuki Satoh]
+Hot Chase [Luca Elia]
+Marchen Maze [Ernesto Corvi, Tatsuyuki Satoh]
+Pacmania [Ernesto Corvi, Tatsuyuki Satoh]
+Palamedes [Olivier Galibert]
+Pistol Daimyo no Bouken [Ernesto Corvi, Tatsuyuki Satoh]
+Plotting [Olivier Galibert]
+Puzznic [Olivier Galibert]
+Raimais [Olivier Galibert]
+Rollergames [Nicola Salmoria]
+Rompers [Ernesto Corvi, Tatsuyuki Satoh]
+Shadow Land [Ernesto Corvi, Tatsuyuki Satoh]
+Souko Ban Deluxe [Ernesto Corvi, Tatsuyuki Satoh]
+Splatter House [Ernesto Corvi, Tatsuyuki Satoh]
+Surprise Attack [Nicola Salmoria]
+WEC Le Mans 24 [Luca Elia]
+World Court [Ernesto Corvi, Tatsuyuki Satoh]
+World Stadium 90 [Ernesto Corvi, Tatsuyuki Satoh]
+
+New clones supported:
+---------------------
+Block (= Arkanoid) [HIGHWAYMAN]
+Crime Fighters (Japan) [Nicola Salmoria]
+Garuka (= Devastators) [Nicola Salmoria]
+Konami '88 [Gerald Vanderick]
+Thunder Cross (Japan) [Yasuhiro Ogawa]
+
+
+These drivers have improved GRAPHICS:
+-------------------------------------
+- Fixed colors in 'Mysterious Stones' [Zsolt Vasvari].
+
+
+Source changes:
+--------------------
+- Fixed cocktail mode in several games [Chad Hendrickson].
+- Fixed scores in 'Bosconian' [Gamester].
+- Improved the protection workaround in 'Sunset Riders' [Ernesto Corvi].
+- Protection workaround in 'Thunder Cross' - still not perfect [Ernesto Corvi].
+- Several fixes and improvmeents to the System 16 games [Andrew Prime].
+- [DOS] Changed the tweked VGA modes definitions to be more compatible. It is suggested to delete mame.cfg to get rid of the obsolete tweak parameters. Remember to set tweak = yes after doing so [Brian Lewis].
+- Fixed a 68000 "bug" (actually an undocumented feature of the cpu) that caused the timer to roll over from 00 to 99 in KOF98 [Darren Olafson].
+- Fixed a Konami CPU bug which caused problems with Parodius [Ernesto Corvi].
+- Screen shots can be saved while the game is paused [Phil Hopely].
+- You can single step while the game is paused, press Shift+P to advance to next frame [Phil Hopely].
+- New PORT_SERVICE() macro, use it instead of the long declaration needed for the service mode dip switch [Nicola Salmoria].

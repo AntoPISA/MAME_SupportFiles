@@ -1,0 +1,123 @@
+0.36b1 1999/07/19 [#074 - Nicola Salmoria]
+------------------------------------------
+
+
+New games supported:
+--------------------
+(atomicp)  Atomic Point [Andrew Prime]
+(bloodbro) Blood Bros. [Carlos A. Lozano, Phil Stroffolino, Richard Bush]
+(bodyslam) Body Slam [Andrew Prime]
+(cchasm)   Cosmic Chasm (set 1) [Mathis Rosenhauer]
+(csk227it) Champion Skill (with Ability) [Mirko Buffoni]
+(cyberbal) Cyberball [Aaron Giles]
+(gangwars) Gang Wars [Bryan McPhail]
+(goldmedl) Gold Medalist [Bryan McPhail]
+(hangon)   Hang-On [Andrew Prime]
+(hopprobo) Hopper Robo [Zsolt Vasvari]
+(hwrace)   High Way Race [Zsolt Vasvari]
+(hydra)    Hydra [Aaron Giles]
+(ikari3)   Ikari III - The Rescue [Bryan McPhail]
+(kikstart) Kick Start [Zsolt Vasvari]
+(marvins)  Marvin's Maze [Nicola Salmoria]
+(meteor)   Meteoroids [Zsolt Vasvari]
+(mnchmobl) Munch Mobile [Phil Stroffolino]
+(moonwlkb) Moon Walker (bootleg) [Andrew Prime]
+(pitfight) Pit Fighter (version 4) [Aaron Giles]
+(psurge)   Power Surge [Nicola Salmoria]
+(quartet)  Quartet [Andrew Prime]
+(raiden)   Raiden [Oliver Bergmann, Bryan McPhail, Randy Mongenel]
+(razmataz) Razzmatazz [Nicola Salmoria]
+(riotcity) Riot City [Andrew Prime]
+(sbasebal) Super Champion Baseball [Bryan McPhail]
+(shdancer) Shadow Dancer [Andrew Prime]
+(skyadvnt) Sky Adventure [Bryan McPhail]
+(skysoldr) Sky Soldiers [Bryan McPhail]
+(timesold) Time Soldiers (Rev 3) [Bryan McPhail]
+(tturf)    Tough Turf [Andrew Prime]
+(vaportra) Vapor Trail - Hyper Offence Formation (US) [Bryan McPhail]
+(wb3)      Wonder Boy III - Monster Lair [Andrew Prime]
+
+New clones supported:
+---------------------
+(altbeas2) Altered Beast (Version 2) [Andrew Prime]
+(bootcamp) Boot Camp [Manuel Abadia]
+(btlfield) Battlefield (Japan) [Bryan McPhail]
+(cchasm1)  Cosmic Chasm (set 2) [Mathis Rosenhauer]
+(combasct) Combat School (trackball version) [Manuel Abadia]
+(csk234it) Champion Skill (Ability, Poker & Symbols) [Mirko Buffoni]
+(cyberbt)  Tournament Cyberball 2072 [Aaron Giles]
+(gangwarb) Gang Wars (bootleg) [Bryan McPhail]
+(goldnaxa) Golden Axe (Version 2) [Andrew Prime]
+(kuhga)    Kuhga - Operation Code 'Vapor Trail' (Japan revision 3) [Bryan McPhail]
+(kuniokun) Nekketsu Kouha Kunio-kun (Japan) [Nicola Salmoria]
+(mariojp)  Mario Bros. (Japan) [Nicola Salmoria]
+(midresj)  Midnight Resistance (Japan) [Yasuhiro Ogawa]
+(pitfigh3) Pit Fighter (version 3) [Aaron Giles]
+(pompingw) Pomping World (Japan) [Yasuhiro Ogawa]
+(sf2rb)    Street Fighter II' - Champion Edition (Rainbow) [Nicola Salmoria]
+(shdancrj) Shadow Dancer (Japan) [Andrew Prime]
+(shinobl)  Shinobi (Bootleg) [Andrew Prime]
+(timesol2) Time Soldiers (Rev 1) [Bryan McPhail]
+(toobin2)  Toobin' (version 2) [Aaron Giles]
+(toobinp)  Toobin' (prototype) [Aaron Giles]
+(wbmlj)    Wonder Boy in Monster Land (Japan set 1) [Andrew Prime]
+(wbmlj2)   Wonder Boy in Monster Land (Japan set 2) [Andrew Prime]
+(wbmlju)   Wonder Boy in Monster Land (Japan not encrypted) [Andrew Prime]
+(weststry) West Story [Carlos A. Lozano, Phil Stroffolino, Richard Bush]
+(wwester1) Wild Western (set 2) [Zsolt Vasvari]
+
+
+These drivers have new or improved SOUND:
+-----------------------------------------
+- Fixed hanging sound in '4D Warriors' [Zsolt Vasvari].
+- Added "Get Ready!" speech to 'Grobda' [Zsolt Vasvari].
+- Fixed sound in 'Ninja Kid 2' [Jarek Parchanski].
+
+
+These drivers have improved GRAPHICS:
+-------------------------------------
+- Fixed bad tiles in some CPS1 games [Paul Leaman].
+- Fixed sprite flipping in 'Xevious' [Nicola Salmoria].
+- Fixed title colors in 'Pinball Action' [Mirko Buffoni].
+- Improved sprite colors in 'Great Swordman' [Jarek Parchanski, Charlie Miltenberger].
+- Sprite-sprite collision detection and other improvements in the Taito SJ games. This fixes 'Bio Attack'. 'Wild Western' is now fully playable [Zsolt Vasvari].
+- Fixed 'Mega Zone' high score display [Chris Hardy].
+- Fixed text colors in 'Legend of Kage' [Phil Stroffolino].
+
+
+Other drivers changes:
+----------------------
+- Major improvements to the System 16 driver, most games are working now. Many still lack sound though [Andrew Prime].
+- Fixed controls and graphics in 'Commando (Sega)', which is now fully playable. This also fixes diagonal shots in 'Bosconian'. 'Jungler' shots are broken though [Nicola Salmoria].
+
+
+Changes to the main program:
+----------------------------
+- [DOS] If you are using a HotRod, use the -hotrod switch to adjust the default keyboard settings [Nicola Salmoria].
+- [DOS] Triple buffer support in tweaked VGA modes. Warning: this is slower than standard tweaked modes [Brian Lewis].
+- New digital YM3812/YM3526 emulator (in the DOS version, use -noym3812opl to enable it). It doesn't support the rhythm section yet, but is overall better than the old one [Tatsuyuki Satoh].
+
+
+Source changes:
+----------------
+- [DOS] Compiled with Allegro WIP 3.9.23. IMPORTANT: there is a bug in Allegro's new keyboard hangling, which will prevent numeric pad keys from working properly when used together with ctrl and alt. Until it is fixed in the main Allegro distribution, you will have to replace the source file allegro\src\misc\pckeys.c with the provided one, and recompile Allegro [Nicola Salmoria].
+- [DOS] The new Allegro provides support for PSX and N64 pads (info here: http://www.debaser.force9.co.uk/ccmame), and for the Wingman Warrior [Nicola Salmoria]. The names for the -joy parameter are:
+
+  psxlpt1
+  psxlpt2
+  psxlpt3
+  n64lpt1
+  n64lpt2
+  n64lpt3
+  wingwarrior
+
+- Rewritten the OS dependant keyboard interface. A rewrite of the koystick interface will follow. The OS dependant code now only has to provide four functions:
+
+  osd_get_key_list()
+  osd_is_key_pressed()
+  osd_customize_inputport_defaults() [optional]
+  osd_wait_keypress() [optional]
+
+  everything else is handled by the main core [Nicola Salmoria].
+- New sprite manager, used in System 16, 'Ninja Gaiden', Shoot Out, Blood Bros [Phil Stroffolino].
+- Took the gfx drawing functions out of common.c into the new dragfx.c. In preparation for further changes to the data structures, abstracted the low level data copying and used macros to generate 8-bit and 16-bit versions [Nicola Salmoria].

@@ -1,0 +1,77 @@
+0.131 2009/04/23 [#480 - Aaron Giles]
+-------------------------------------
+
+
+MAMETesters Bugs Fixed
+----------------------
+- 00767: [DIP/Input] bshark, bsharkj: Analog stick input is broken since 0.112u4 (Derrick Renaud).
+- 02399: [Known Issues/To-Do's] qmhayaku : Sound CPU is running at 4MHz in real machine (Luigi30).
+- 03070: [DIP/Input] harddriv, racedriv, steeltal and clones: Games map some P1 inputs to P2 controls (Fabio Priuli).
+- 03105: [Documentation] quizmeku: Year is listed as 1994, but title screen shows 1992 (Fabio Priuli).
+- 03115: [Graphics] nss_smw: Tilemap issue when displaying game map (Angelo Salese).
+
+
+New games added or promoted from NOT_WORKING status
+---------------------------------------------------
+Fantastic Journey [Olivier Galibert]
+Multi Game 2 [Mariusz Wojcieszek]
+Status Blackjack [Aaron Giles]
+Status Fun Casino [Aaron Giles]
+Super Lucky Roulette [robiza]
+
+New clones added
+----------------
+Ashura Blaster (World) [Tirino73]
+Asterix (Japan) [Chack'n]
+
+New games marked as GAME_NOT_WORKING
+------------------------------------
+Casino Strip [Aaron Giles]
+Death Crimson OX [Guru]
+Dengen Tenshi Taisen Janshi Shangri-la [Guru]
+Derby Owners Club II [Guru]
+Dynamite Baseball '99 [Guru]
+Dynamite Baseball Naomi [Guru]
+Giant Gram Zen-Nippon Pro Wresring 2 [Guru]
+Guilty Gear X [Guru]
+Marvel vs. Capcom 2 [Guru]
+Quiz Ah Megamisama [Guru]
+The Key Of Avalon - The Wizard Master - Server (GDT-0005C) (V4.001) [Alex's Rom Dumping Project]
+Tripple Draw [Aaron Giles]
+Virtua NBA [Guru]
+Virtua Striker 2002 (GDT-0001) [Alex's Rom Dumping Project]
+Virtua Striker 4 (Japan) [Guru]
+Virtua Striker 4 ver. 2006 (Rev D) (Japan) [Alex's Rom Dumping Project]
+Wild Riders [Guru]
+WWF Royal Rumble [Guru]
+Zombie Revenge [Guru]
+
+
+Source changes:
+---------------
+- Added basic implementation of the TMS9927 video controller [Aaron Giles].
+- Added T6W28 sound core (SNK(?) custom sn76489a clone) [Wilbert Pol].
+- Added Toshiba TLCS-900/H cpu core [Wilbert Pol].
+- Changed generic NVRAM behavior so that all the variants look for a memory region named "nvram". If it is found and is of the same length as the generic_nvram_size, data is copied from there instead of filling the RAM with the fallback pattern [Aaron Giles].
+- Crystallized 1945kiii.c, maygay1b.c, maygayv1.c, mwarr.c, n8080.c (20.16MHz crystal confirmed with schematics), pacman.c, panicr.c, rallyx.c [Luigi30].
+- Documented PALs from Xenophobe board [Kevin Eshbach].
+- Fixed bug where repeating axis values were being selected for button input in UI [Derrick Renaud].
+- Fixed frontend messages to leave enough space for clone longer names [Fabio Priuli].
+- Fixed mouse/lightgun buttons to individually select when using -mouse/-multimouse and -lightgun. Meaning you will not receive Mouse Button 0 Gun Button 0 when selecting in the UI [Derrick Renaud].
+- Fixed P2 gun reload in Lethal Enforcers II [Derrick Renaud].
+- Fixed verbose output of RAW device names for XP [Derrick Renaud].
+- Fixed XF flag in the 8085A core [Aaron Giles].
+- Merged findout.c memory map [Angelo Salese].
+- Merged memory map and attempted to add proper colors in 'Carrera' [Angelo Salese].
+- Merged memory maps in the suna8, supbtime, superchs, suprnova, suprslam, subs, suna16, stepstag, stfight, strnskill drivers [Aaron Giles].
+- Miscellaneous Naomi work and improvements. Some refactoring done, new games hooked up. Moved NAOMI DRIVER_INITs to specific machine/naomi.c & includes/naomi.h files, in preparation to add per-game JVS settings [Angelo Salese, David Haywood].
+- Numerous improvements to the roul driver [robiza].
+- Removed the last use of PORT_PLAYER(2) for P1 inputs [Fabio Priuli].
+- Removed YM2151 from gijoe which is not present on real PCB [Yasuhiro Ogawa].
+- Status games driver rewrite [Aaron Giles]:
+  * Reduced multiple drivers down to a primary one with minor tweaks.
+  * Hooked up TMS9927 video generator.
+  * Fixed statriv2v character generator to be more. accurate.
+  * Fixed incorrect colors.
+  * Correct video timing.
+- When using RawInput - Fixed UI selection of Gun axis so Gun 1 is not always selected with the desired gun [Derrick Renaud].

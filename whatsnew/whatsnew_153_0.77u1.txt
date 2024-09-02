@@ -1,0 +1,31 @@
+0.77u1 2003/11/21 [#153 - private release - David Haywood]
+----------------------------------------------------------
+NOTE: Credit for the Z80 DAA emulation improvement in the previous release should have been given to 'Ramsoft' ( http://www.ramsoft.bbk.org/ ).
+
+
+New Games supported or promoted from GAME_NOT_WORKING status:
+-------------------------------------------------------------
+Angel Kiss [David Haywood] (no sound)
+Cookie & Bibi 2 [David Haywood]
+Grand Striker 2 [David Haywood] (priority glitch inbetween round)
+Hatch Catch [David Haywood]
+Quiz Panicuru Fantasy [Pierpaolo Prazzoli] (incorrect sample banking)
+Video Pinball [Stefan Jokisch] (driver was rewritten, it works now)
+
+New Non-Working games / clones supported
+----------------------------------------
+BC Story (SemiCom) (protection (missing 0x200 bytes of program code))
+
+
+Source changes:
+---------------
+- New CHD format and management tools [Aaron Giles]:
+  * hdcomp is now chdman, old chd files are _not_ compatible, they will need to be updated using chdman -update oldchd.chd newchd.chd.
+  * CHD now stands for 'Compressed Hunks of Data' not 'Compressed.
+  * Hard Drive' as the format is more flexible.
+- Misc Changes [Nathan Woods]:
+  * Minor cleanups (specifically changed some variables to static).
+  * Fixes and updates from MESS
+- Updated a couple of drivers with new Hard Drive SHA1s [Roman Scherzer].
+- Fixed sound in tpgolf [Leon van Rooij].
+- Various other changes (dip fixes, tilemap conversions etc.) [various people].

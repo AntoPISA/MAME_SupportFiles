@@ -1,0 +1,70 @@
+0.76u2 2003/11/01 [#151 - David Haywood]
+----------------------------------------
+
+
+New Games supported or promoted from GAME_NOT_WORKING status:
+------------------------------------------------------------
+Puyo Puyo Sun [David Haywood, Angelo Salese, Olivier Galibert] (some priority glitches, otherwise looks good)
+Mausuke Ojama the World [David Haywood, Angelo Salese, Olivier Galibert] (mostly ok)
+Ejihon Tantei Jimusyo [David Haywood, Angelo Salese, Olivier Galibert] (missing alpha effect on lens)
+Virtua Fighter Kids [David Haywood, Angelo Salese, Olivier Galibert] (bad sprite colours, missing ground effects)
+Columns 97 [David Haywood, Angelo Salese, Olivier Galibert] (miscoloured sprites, background not correctly scaled)
+Cotton 2 [David Haywood, Angelo Salese, Olivier Galibert] (missing ground in places)
+Cotton Boomerang [David Haywood, Angelo Salese, Olivier Galibert] (missing ground in places)
+Die Hard Arcade / Dynamite Deka [David Haywood, Angelo Salese, Olivier Galibert] (missing floors / ceilings there might be others too, a few can certainly be watched. This driver still needs a lot of work, I don't expect it to be completed soon due to the	incredible complexity of this hardware)
+Sega Dual Space Attack / Head On Dual board [Stefan Jokisch]
+
+New Non-Working games / clones supported
+----------------------------------------
+Quiz Panicuru Fantasy [David Haywood] (haven't found any time for this in the last 6 months so included it anyway so it doesn't get lost, if anybody wants to finish it they're welcome)
+
+
+Source changes:
+----------------------
+- Several ST-V games are probably now playable, however be warned many are very very slow, this is not a bug, sound is still poor or non-existant in most titles, these haven't been tested for long so could easily fail at later levels. Games which were marked as working in previous updates are also improved (shienryu etc.) [David Haywood, Angelo Salese, Olivier Galibert]
+- Rewrote rf5c68 sound core [Olivier Galibert].
+- Misc Changes [Nathan Woods]:
+  * Integrates some MESS specific fileio functionality (within #ifdef MESS).
+  * Removing the update procedure in a MESS specific sound core.
+- Some Hyperstone Fixes / Improvements (MooglyGuy].
+- Fixed SCSP crash with -nosound [R. Belmont].
+- Attempted to fix some hangs in the Soul Edge clones [smf].
+- Added new function: activecpu_eat_cycles(cycles), needed for idle skipping in certain situations [Aaron Giles].
+- Midway V-Unit Update [Aaron Giles]:
+  - WarGods sound is 100% now.
+	* Added some pre-initialization of the WarGods NVRAM
+	* Added speedup handlers for all games (it makes a little difference).
+	* Revamped the DCS2 handling to support stereo output.
+	* Fixed a number of synchronization issues in the DCS2 handling.
+	* Implemented a few missing features in the Midway I/O ASIC.
+- CPU Fixes / Tweaks [Aaron Giles]:
+  - ADSP2100:
+    * Fixed loading of 0 counters so they don't execute infinitely.
+    * Fixed initial state of the SSTAT register.
+  - MIPS3 (R4000/R5000):
+	  * Fixed timer handling so we don't set a timer too far in advance.
+	  * Changed timer handling so that the default. Compare value doesn't trigger	timers.
+	  * Fixed cycle chomping to make sure we don't go over an interrupt boundary.
+	  * Added correct cycle times for MULT/DIV instructions.
+  	* Fixed display of the Count reigster in the debugger.
+  - MIPS3DRC:
+  	* Same fixes as above, plus:
+  	* Fixed FP rounding glitches.
+	  * Now actually respecting the global FP rounding mode.
+  - R3000:
+    * Fxed instruction timings for MULT/DIV
+  - X86DRC:
+    * Added better support for tweaking the FP rounding modes.
+- MagMax sound improvements (Emulated some op.amps and RC filter circuits giving more exact results) [Jarek Burczynski].
+- Fixes to the ymdeltat module. Generally - even more flags work correctly now. These changes are
+necessary for the msx sound emulation (Y8950) and were tested in nlmsx emulator by Frits Hilderink [Jarek Burczynski].
+- Improved Sound in Cabal / Dead Angle by adding ADPCM sounds [R.Belmont, Jarek Burczynski].
+- Added OKI6295 sounds in 'Grand Cross' [R. Belmont].
+- Asterock dipswitches [Pierpaolo Prazzoli].
+- Fixed Aspect Ratio calculationbug on some rotated games (galspnbl for example) [Sébastien Volpe].
+- Added Sample support to Armor Attack and Sundance [Tim Cottrill].
+- Decoded BG graphics in Thunder Ceptor II but BG's still aren't hooked up yet, improved existing graphics a bit [David Haywood, BUT].
+- Fixed Dragon Unit Dipswitches [Iñigo Luja]
+- Some twin16.c / tmnt.c cleanups, fg layer converted to tilemaps [Curt Coder].
+- Some input fixes [HowardC].
+- Fixed 'Xain'd Sleena' hang? [David Haywood].

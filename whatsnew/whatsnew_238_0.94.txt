@@ -1,0 +1,26 @@
+0.94 2005/03/06 [#238 - David Haywood]
+--------------------------------------
+
+
+New Games / Clones supported or promoted from GAME_NOT_WORKING status:
+----------------------------------------------------------------------
+Galaxy Force 2 [Aaron Giles]
+Power Drift [Aaron Giles]
+Strike Fighter [Aaron Giles]
+Rail Chase [Aaron Giles]
+Mortal Kombat (Yawdim bootleg) [Aaron Giles]
+
+
+Source changes:
+---------------
+- SPI update [Ville Linde]:
+  * Preliminary sprite Alpha (no tilemap alpha).
+  * Added sprite / tilemap DMA.
+  * Proper RTC emulation.
+- Removed SAMPLES support from sndhrdw/galaxian.c [Aaron Giles].
+- Removed extraneous clipping when passing streams from one output to the next input [Aaron Giles].
+- Added macros for ROM_REGION64_LE and ROM_REGION64_BE [Aaron Giles].
+- SegaPCM now does stream_update on reads/writes for slightly better accuracy [Aaron Giles].
+- Fixed System24 crash due to sound update [Aaron Giles].
+- ADSP2100 big endian fix [Alex Eddy].
+- Fixed Star Force crash [Aaron Giles].

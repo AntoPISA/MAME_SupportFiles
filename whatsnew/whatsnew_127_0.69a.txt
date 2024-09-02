@@ -1,0 +1,52 @@
+0.69a 2003/05/31 [#127 - David Haywood aka 0.69u1]
+--------------------------------------------------
+This version is provided as a source diff only, more releases like this may follow depending on how this one goes down, the intention is to allow people to have the latest code without the hassle and bandwidth requirements of a new binary. If you can't compile this then don't worry, normal releases will still happen, this doesn't change anything as normal release plans are concerned, please don't hassle whoever maintains your favourite port of Mame to add the updates here, not everybody is going to have time to make new binaries on a regular basis.
+
+
+New games supported:
+--------------------
+Dragonball Z [R. Belmont]
+Guts'n [Paul Priest]
+Ozon I [Pierpaolo Prazzoli] (bad colours due to missing prom)
+
+New clones supported
+--------------------
+Ambush (Tecfri) [David Haywood]
+Frisky Tom (set 2) [David Haywood]
+King of Fighters '95 (set 2) [Jarek Burczynski] (note, we use the new v1,c1,c2,c3,c4 from this set in the parent too)
+Kyros No Yakata (Japan) [David Haywood]
+
+New TESTDRIVERS in source
+-------------------------
+Photo Y2K [ElSemi] (unemulated protection)
+Stadium Cross [David Haywood] (graphic problems, no controls)
+
+
+Source changes:
+---------------
+- Added Photo Y2K (unemulated protection) as TestDriver [ElSemi].
+- Added Stadium Cross (graphic problems, no controls) as TestDriver [David Haywood].
+- Fixed eeprom in Head Panic [Paul Priest].
+- Few tweaks/minor optimizations to MIPS3 Dynacrec [Aaron Giles].
+- Improved Save-State support for NeoGeo games [Mame32Plus].
+- Changed NeoGeo Resolution to be 320 wide, this is correct, the glitches it causes are verified against a real MVS [David Haywood].
+- Verified and corrected clock speeds etc. for NeoGeo [Guru].
+- Removed analog input definition and encoded it directly from Joystick input in Metal Soldier Isaac II [Jarek Burczynski].
+- IDE Update adding support for a few things needed in the future [Aaron Giles].
+- TMS32010 BIO fix [Aaron Giles].
+- C 68k core is now default, this fixes collisions in Assault.
+- Fixed bug causing Timings to be broken when using D3D [Leon van Rooij].
+- Optional XML output and xml to info converter (see xmlinfo.txt) [Andrea Mazzoleni]:
+  * use -listxml, converter isn't fully set up yet.
+- A number of Changes to the Timer System [Aaron Giles].
+- All the CPU scheduling has moved into cpuexec.c and been taken out of timer.c. A number of bugs relating to time tracking for suspended CPUs have been fixed.
+- A side effect of all this is a change in the behavior of the CPU scheduling [David Haywood].
+- For the most part, games are fine with this. - However, there were a few exceptions [David Haywood]:
+  * taitosj.c: timing of the MCU communication broke
+  * arkanoid.c: timing of the MCU communication broke
+  * harddriv.c: stunrun timing glitches, racedriv/steeltal/hdrivair broken (There may be more, but I haven't found them yet)
+- The first two problems have been fixed, as has racedriv, but steeltal, hdrivair, and stunrun still have issues [David Haywood]:
+  * Oh, one other useful function I added is this: cpu_boost_interleave(double timeslice_duration, double boost_duration).
+  * You call this if you need to temporarily crank up the interleave for a short period of time in order to get CPU synchronization working. I used this in arkanoid and taitosj to get the MCU communications working. For example, you could say: cpu_boost_interleave(TIME_IN_USEC(1), TIME_IN_USEC(100));
+  * Which would interleave the CPUs on 1 usec boundaries for the next 100 usecs. Even more useful is this: cpu_boost_interleave(0, TIME_IN_USEC(10)); a very small value (0) for the first parameter means "use perfect synchronization", which should guarantee cycle-accurate synchronization for the specified duration. Note that this is *really* slow, so you don't want to be doing it too much!
+- Let us know ASAP if anything else is broken as a result of this update [David Haywood].

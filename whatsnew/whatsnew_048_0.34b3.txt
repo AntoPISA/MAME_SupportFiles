@@ -1,0 +1,88 @@
+0.34b3 1998/09/17 [#048 - Nicola Salmoria]
+------------------------------------------
+
+
+New games supported:
+--------------------
+(brain)    Brain [Nicola Salmoria]
+(dakkochn) DakkoChan Jansoh [Nicola Salmoria]
+(gardia)   Gardia (317-0006) [Nicola Salmoria]
+(hvymetal) Heavy Metal [Nicola Salmoria]
+(ldrun)    Lode Runner (set 1) [Nicola Salmoria]
+(neomrdo)  Neo Mr. Do! [Bud Crittenden]
+(pkunwar)  Penguin-Kun Wars (US) [Allard van der Bas]
+(pooyan)   Pooyan (Konami) [Nicola Salmoria]
+(regulus)  Regulus [Nicola Salmoria]
+(ripcord)  Rip Cord [Nicola Salmoria]
+(rpatrolb) River Patrol (bootleg) [Zsolt Vasvari]
+(stinger)  Stinger [Nicola Salmoria]
+(swat)     SWAT [Nicola Salmoria]
+(terracre) Terra Cresta (YM3526) [Carlos A. Lozano]
+(tokisens) Toki no Senshi [Nicola Salmoria]
+(ufosensi) Ufo Senshi Yohko Chan [Nicola Salmoria]
+(waterski) Water Ski [Nicola Salmoria]
+(zigzag)   Zig Zag (set 1) [Nicola Salmoria]
+
+New clones supported:
+--------------------
+(600)      600 [John Dondzila]
+(720b)     720 Degrees (set 2) [Nicola Salmoria]
+(area88)   Area 88 [Santeri Saarimaa]
+(ccastle2) Crystal Castles (set 2) [Nicola Salmoria]
+(jumping)  Jumping [Mike Coates]
+(kangarob) Kangaroo (bootleg) [Nicola Salmoria]
+(klax3)    Klax (set 3) [Nicola Salmoria]
+(ladybugb) Lady Bug (bootleg) [Marco Cassili]
+(ldrun2p)  Lode Runner (2 Players) [Nicola Salmoria]
+(lstduelb) Last Duel (bootleg) [Bryan McPhail]
+(missile2) Missile Command (set 2) [Nicola Salmoria]
+(pitfallu) Pitfall II (not encrypted) [Nicola Salmoria]
+(pkunwarj) Penguin-Kun Wars (Japan) [Allard van der Bas]
+(silvland) Silver Land [Zsolt Vasvari]
+(terracra) Terra Cresta (YM2203) [Carlos A. Lozano]
+(wboy3)    Wonder Boy (set 3) [Nicola Salmoria]
+(wboy4)    Wonder Boy (set 4) [Nicola Salmoria]
+(wboy4u)   Wonder Boy (set 4 not encrypted) [Nicola Salmoria]
+(xevios)   Xevios [Nicola Salmoria]
+(zigzag2)  Zig Zag (set 2) [Nicola Salmoria]
+
+
+These drivers have improved GRAPHICS:
+-------------------------------------
+- Fixed fg/bg priority in TeddyBoy Blues and Choplifter [Nicola Salmoria].
+- Colors in Shark Attack [Mike Balfour].
+- Fixed transparency in Fire Trap [Nicola Salmoria].
+- Fixed gfx banks in Pop Flamer [Brad Oliver].
+
+
+These drivers have new or improved SOUND:
+-----------------------------------------
+- Fixed speech in Karate Champ [Ernesto Corvi].
+- Fixed pitch in the System 8 games [Hiromitsu Shioya].
+- Sound in Exterminator. Have your PII/900 handy ;-) [Zsolt Vasvari].
+- Added smoothing to ADPCM playback [Juergen Buchmueller].
+- Added RC filter emulation to Gyruss. This improves some sound effects, e.g. the force field noise [Francesco Caporali].
+- Added ADPCM sounds to Renegade [Phil Stroffolino].
+- Fixed speech in King & Balloon [Brad Oliver].
+- Added ADPCM sample playback to the bootleg Hyper Olympic [Nicola Salmoria].
+- Sound in Mysterious Stones [Nicola Salmoria].
+
+
+These drivers have HIGH SCORE support:
+--------------------------------------
+- Shark Attack [Mike Balfour].
+- Flicky, Bull Fight, I'm Sorry, Star Jacker, Mr Viking, 4d Warrior, TeddyBoy Blues, Beastie Feastie, Contra, Cobra Command, Super Qix, Vigilante, Pang, HigeMaru, Hexa [Juan Carlos Lorente].
+- Tiger Road, Karnov, Chelnov, Heavy Barrel, Bad Dudes, Robocop, Hippodrome, Sly Spy, Midnight Resistance [Dani Portillo].
+- Fixed Star Force [Dani Portillo].
+
+
+Source changes:
+---------------
+- [DOS] New -romident option. Use "MAME -romident dirname" to identify unknown ROM sets.
+- CRC-32 checksums for most files are in place [Bernd Wiebelt].
+- Fixed movement of the squares in Checkman [Brad Oliver].
+- Fixed SBCD in M68000 disassembler [Mike Coates].
+- Improved Gladiator input handling [Tatsuyuki Satoh].
+- Improved the System 16 drivers [Phil Stroffolino].
+- Improved unzip code robustness when dealing with corrupt archives [John Butler].
+- Rewritten the SN76496 emulator. This fixes speech in Choplifter [Nicola Salmoria].

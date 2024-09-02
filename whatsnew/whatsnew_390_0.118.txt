@@ -1,0 +1,30 @@
+0.118 2007/08/05 [#390 - Aaron Giles]
+-------------------------------------
+
+
+New games added or promoted from NOT_WORKING status
+---------------------------------------------------
+Dancing Stage Euro Mix 2 [smf]
+
+New clones added
+----------------
+Maximum Force (No Gore version) [Brian Troha]
+
+
+Source changes:
+---------------
+- Changed INI parsing so that mame.ini is parsed twice, picking up changes to the inipath [Aaron Giles].
+- Fixed bug in options handling introduced with recent changes [Nathan Woods].
+- Fixed macros in stvcd.c to work with C89 compilers [Mike Haaland].
+- Fixed some more 64-bit warnings and unused functions [Oliver Stoneberg].
+- Fixed DIP switch "Difficulty" in fstarfrc. Also added DIP locations to the tecmo16 driver [BisonSAS].
+- Simplified the nemesis video driver code [Atari Ace].
+- Modularized the TMS5220 code. [Lord Nightmare].
+- Fixed issues with recent R-Type ROMset [Brian Troha].
+- Fixed a number of issues in the HD6309 core [Darren Atkinson].
+- Sync with AGEMAME [James Wallace]:
+  * Removed the 'lamps.c' module from the source tree.
+  * Cleaned up names in the BFM BD1 driver.
+  * Moved VFD drawing functions out of the video update.
+  * Overhauled the sound system in the MPU4 driver.
+- Changed windows builds so that all tools use the utf8_main entry point consistently [Aaron Giles].

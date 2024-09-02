@@ -1,0 +1,110 @@
+0.34b5 1998/10/16 [#050 - Nicola Salmoria]
+------------------------------------------
+
+
+New games supported:
+--------------------
+Aero Fighters 3 / Sonic Wings 3 [Nicola Salmoria]
+Aggressors of Dark Kombat  [Nicola Salmoria]
+Art of Fighting 2 [Nicola Salmoria]
+Art of Fighting 3 [Nicola Salmoria]
+Baseball Stars 2 [Nicola Salmoria]
+Bio Attack (no collision detection) [Thierry Lescot]
+Black Tiger (bootleg) (merged) [Marco Cassili]
+Blazing Star [Nicola Salmoria]
+Exerion (Taito) (merged) [Nicola Salmoria]
+Far East of Eden [Nicola Salmoria]
+Fatal Fury 2 [Nicola Salmoria]
+Fatal Fury 3 [Nicola Salmoria]
+Fatal Fury Special [Nicola Salmoria]
+Galaxy Fight [Nicola Salmoria]
+Legend of Success Joe [Nicola Salmoria]
+Magical Drop III [Nicola Salmoria]
+Metal Slug 2 [Nicola Salmoria]
+Neo Drift Out [Nicola Salmoria]
+Neo Turf Masters [Nicola Salmoria]
+Ninja Master's [Nicola Salmoria]
+Over Top [Nicola Salmoria]
+Panic Bomber [Nicola Salmoria]
+Phoenix (IRECSA) (merged) [David Winter]
+Pinball Action (set 2) (merged) [Marco Cassili]
+Pulstar [Nicola Salmoria]
+Regulus (not encrypted) (merged) [Thierry Lescot]
+Ring King / King of Boxer (merged) [Ernesto Corvi]
+Samurai Shodown III [Nicola Salmoria]
+Samurai Shodown IV [Nicola Salmoria]
+Savage Reign [Nicola Salmoria]
+Sea Fighter Poseidon (not working due to protection) [Nicola Salmoria]
+Shock Troopers (set 2) [Nicola Salmoria]
+Space Trek (cocktail version) [Nicola Salmoria]
+Spin Master / Miracle Adventure [Nicola Salmoria]
+Stakes Winner [Nicola Salmoria]
+Street Hoop [Nicola Salmoria]
+Super Sidekicks 2 [Nicola Salmoria]
+The King of Fighters '94 [Nicola Salmoria]
+The King of Fighters '95 [Nicola Salmoria]
+The King of Fighters '96 [Nicola Salmoria]
+Time Tunnel [Thierry Lescot]
+Top Gunner (bootleg; also fixed the original set) [Nicola Salmoria]
+Twinkle Star Sprites [Nicola Salmoria]
+Waku Waku 7 [Nicola Salmoria]
+World Heroes 2 [Nicola Salmoria]
+Zed Blade [Nicola Salmoria]
+
+New clones supported:
+--------------------
+xxx
+
+
+These drivers have improved GRAPHICS:
+-------------------------------------
+- Fixed sprite flipping in 'Super Qix' [Mirko Buffoni].
+
+
+These drivers have new or improved SOUND:
+-----------------------------------------
+- Partial sound in 'Punk Shot' [Nicola Salmoria].
+
+
+These drivers have HIGH SCORE support:
+--------------------------------------
+- 'Champion Baseball' [Howie Cohen].
+- 'Quantum' [Nicola Salmoria].
+
+
+Changes to the main program:
+----------------------------
+- Improved the user interface. Use "the key on the left of 1" (tilde on some leyboards) to turn on the On Screen Display which lets you change Volume, Gamma Correction, Brightess, and independently set the volume levels of the sound chips. Tab still brings up the setup menu, which is now asynchronous [Nicola Salmoria].
+- [DOS] Improved the profiler. It now REQUIRES the Pentium-class RDTSC instruction. It will not work on 486s, older Pentiums, and maybe other non-Intel CPUs [Nicola Salmoria].
+
+
+Source changes:
+----------------
+- x86 ASM 68000 core. This is a major speed improvement [Mike Coates, Darren Olafson].
+- YM3812 and YM3526 software emulator. In the DOS version it is disabled because we are using the 100% compatible SoundBlaster OPL chip [Carl-Henrik Skårstedt].
+- A begginning for a YM2413 emulator. It pushes data through the YM3812 [Paul Leaman, Ernesto Corvi].
+- I86 disassembler for the debugger, based on code by Robin Hilliard [Andrea Mazzoleni].
+- New functions install_mem_read_handler() and install_mem_write_handler(). They can be used to install special memory handlers (for example, to trap busy loops, or to make small changes to the memory map for games running on similar hardware) [Alex Pasadyn].
+- New field driver_init in the GameDriver structure. It's an optional function which can be used to do some game specific initialization, for example by adding memory handlers using the above functions [Nicola Salmoria].
+- Changes to the cheat system [Stephane Humbert]:
+
+
+New in MAME 0.34b5 [Nicola Salmoria]:
+-------------------
+- 15 active cheats instead of 10.
+- Free memory before the start of a new search.
+- Possibility of searches in CPUs other than 0 : a question is asked to the user to choose a CPU (0 default) when he starts a new search and the game has more than one CPU.
+- Possibility to view watches for CPUs other than 0.
+- CPU is displayed with the watches.
+- Possibility to change the CPU of a watch by pressing 9 (previous CPU) and 0 (next CPU).
+- Possibility to copy a cheat code by pressing F4.
+- Possibility to rename the cheat filename by pressing F5.
+- Possibility to save all the cheat codes to disk by pressing F6.
+- Possibility to remove all the cheat codes from the active list by pressing F7.
+- In the edit cheat, on the data line:
+
+  * Home sets the value to 0
+  * End sets the value to 0x80
+
+- Possibility to use to use Home, End, PgDown and PgUp to select a cheat code in the list.
+- Data is saved on 2 hex digits (%02X) .

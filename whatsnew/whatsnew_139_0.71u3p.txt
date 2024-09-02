@@ -1,0 +1,65 @@
+0.71u3p 2003/08/07 [#139 - David Haywood]
+-----------------------------------------
+
+
+New games supported:
+--------------------
+Eight Ball Action [Pierpaolo Prazzoli] (bad colours, missing proms)
+Imago [Pierpaolo Prazzoli] (gfx problems, bad colours due to missing proms)
+Pit 'n' Run [fTomasz Slanina, Pierpaolo Prazzoli] (missing analog sounds)
+Power Instinct 2 [Olivier Galibert, ShiRiRu] (todo: figure out why we need a ROM patch to avoid an ingame problem)
+Sengoku Mahjong [Angelo Salese]
+Special Forces [Pierpaolo Prazzoli] (no sound, missing rom?)
+Sprint 4 [Stefan Jokisch]
+
+New Clones supported:
+--------------------
+Acrobatic Dog Fight [Brian Troha]
+Parodius (World) [Brian Troha]
+Pit Fighter (Japan) [Aaron Giles]
+Shuffle Shot 1.37 [Brian Troha]
+Sprint 2 (set 2) [Stefan Jokisch]
+Sunset Riders (bootleg) [R. Belmont] (doesn't work)
+Various CPS2 clones [Razoola]
+WC Bowling 1.61 [Brian Troha]
+
+
+Source changes:
+---------------
+- Cleaned up tmnt.c cuebrick addition, added SSriders bootleg (not working) [R. Belmont].
+- Added some Slapstics used in Europe / Japan [Aaron Giles].
+- This patch adds some minor callbacks to the artwork system in order to enable some MESS specific functionality without polluting artwork.c with a bunch of ugly #ifdef MESS's [Nathan Woords].
+- Fixed Tile flip in mermaid driver [Pierpaolo Prazzoli].
+- NSS Fixes [Pierpaolo Prazzoli].
+- Vector Cleanups / Improvements [Frank Palazzolo]:
+  * Removed VEC_SHIFT and "magic numbers" stuff from all drivers, vector.c: all fixed point stuff is now always 16.16.
+  * Removed "bad trench vectors hack" from Star Wars which I created in 1997. Appears not to be necessary any more :)
+  * Moved flipping and swapping API stuff from vector.c to avgdvg.c, this is specific to tempest and quantum only.
+  * Added clipping to Sega games per the schematics.
+  * Using floating point in vector.c to do scaling.
+  * Removed dead code using Machine->orientation from vector.c.
+  * Added capability to register an external vector renderer.
+- Fixed compile problems [Brad Oliver].
+- Re-written and merged the drivers for Sprint 1/2 and Dominos [Stefan Jokisch].
+- Fixed some problems with Vector Patch [Frank Palazzolo]
+- Various Fixes [Nathan Woods]:
+  * Fixes a bug in mame_fgetc() when reading characters between 0x80 and 0xFF.
+  * Adds a new function, hash_verify_string(), that takes a string and checks to see if it is a valid hash string.
+  * Added a consistency check that uses hash_verify_string() to make sure all of the hash strings are valid.
+- Tiger Heli MCU simulation improvements [Angelo Salese].
+- Coverted Text Layer of Act Fancer to Tilemaps [Angelo Salese].
+- Fix drawgfx 1:1 optimization [Olivier Galibert].
+- Fixed i803x jumps [Olivier Galibert].
+- sp0250 sound / g80 speech board emulation [Olivier Galibert].
+- Fixed Power Instinct Dips [Brian Troha].
+- Improved Risky Challenge decryption [Angelo Salese].
+- Misc Patches [Nathan Woods]
+  * Raises the maximum number of ports to thirty.
+  * Adds a few MESS specific IPT_* types (within #ifdef MESS).
+  * Adds state save support.
+  * Update from Anthony Kruize (MESS SNES driver author).
+- Starsweep GFX improvements [smf].
+- Fixed register editing when Scanline display is enabled in debugger [Nathan Woods].
+- Fixed the BCD conversion when using the Decimal Flag in ADC and SBC opcodes in the G65816 CPU core.This fixes at least the Act Raiser timer/score bugs [Angelo Salese].
+- Added correct roms to Genix but it still doesn't work due to protection [David Haywood].
+- Improvements to Megatech emulation, although its still far from being correct and still under development, will be split from segac2.c once finished [Barry Rodewald, David Haywood].

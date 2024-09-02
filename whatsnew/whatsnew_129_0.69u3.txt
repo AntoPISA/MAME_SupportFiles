@@ -1,0 +1,32 @@
+0.69u3 2003/06/05 [#129 - David Haywood]
+----------------------
+Source diff, changed numbering system to ux instead of a,b,c because people were getting confused and thinking mame069b.zip (mame 0.69 _b_inary) was the updated version when it wasn't. Misc fixes and improvements this time, no changes related to the timer system so as far as testing that goes this isn't an essential upgrade. If you use this code in your own build of Mame please make sure you use the correct version number to reflect the inclusion of this updated code.
+
+
+New clones supported
+--------------------
+Field Day (now the parent of The Undoukai) [Tomasz Slanina]
+King of Fighters '98 (alt M1) [Razoola]
+King of the Monsters (set 2) [Razoola]
+Various CPS2 clones [Razoola]
+
+
+Source changes:
+---------------
+- Added correct roms to Mighty Monkey (bootleg on Super Cobra Hardware) [Pierpaolo Prazzoli].
+- Added Ozon 1 Prom [Pierpaolo Prazzoli].
+- Added Sparkman as TestDriver (not working, protection) [Luca Elia].
+- Bug fix to loop addressing on YMF278B which helps stablise the tuning on looped samples (noticable in parts of s1945 at least) [OpenMSX].
+- Changed MULU timing in asm 68k core so that it matches the C ones [Razoola].
+- Corrected various clocks in the vball driver [Guru].
+- Direct 3D update to change the way cleanstretch is handled [Leon van Rooij]:
+  -cleanstretch works like this:
+  -cleanstretch auto: let blitter decide, the same as -nocs in 0.69 (default).
+  -cleanstretch full: same as -cs in 0.69.
+  -cleanstretch none: disable (won't look good with scanlines).
+  -cleanstretch horizontal: horz only.
+  -cleanstretch vertical: vert only.
+- Fixed crash in usclssic [David Haywood].
+- Fixed hedpanic sound banking [David Haywood].
+- Fixed problem where controls stopped working after the first level in Tugboat [Tomasz Slanina].
+- Fixed some problems in the makefile for the xml2info program [Andrea Mazzoleni].

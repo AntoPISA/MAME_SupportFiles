@@ -1,0 +1,37 @@
+0.108 2006/08/20 [#336 - Aaron Giles]
+-------------------------------------
+
+
+New games added or promoted from NOT_WORKING status
+---------------------------------------------------
+Konek-Gorbunok [Eugene Sandulenko]
+
+New clones added
+----------------
+Teenage Mutant Hero Turtles (UK 2 Players, set 2) [Patrik Styrnell]
+Teenage Mutant Hero Turtles - Turtles in Time (2 Players ver EBA) [Patrik Styrnell]
+Wonder Boy (set 4) [Nicola Salmoria]
+
+
+MAMETesters Bug Fixed (1)
+-------------------------
+darius2056gre (robiza)
+
+
+Source changes:
+---------------
+- Added more extensive documentation to several of the Sega 16-bit drivers [Brian Troha].
+- Added sample_get_base_freq() to allow for querying to the base frequency of samples [Aaron Giles].
+- Changed debugger to default to 'on' in debug builds [Aaron Giles].
+- Fixed bug that prevented in-game MNG recording from working [Rene Single].
+- Fixed color decoding in 'Cheeky Mouse' [Nicola Salmoria].
+- Improved DIP switches for headoni and spacbeam [wolf676].
+- More debugger comments fixes [Andrew Gardner]:
+  * Adding a comment no longer redefines the disasm range.
+  * A comments properly save and load special characters (&,", etc).
+- More G80 work [Aaron Giles]:
+  * Finished video cleanup.
+  * Fixed Space Odyssey controls.
+  * Added crude support for Astro Blaster attack rate.
+  * Hooked up 005 melody generator, but missing sound PROM.
+  * Finished sound cleanup.

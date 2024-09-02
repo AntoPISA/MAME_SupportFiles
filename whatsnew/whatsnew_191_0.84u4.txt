@@ -1,0 +1,31 @@
+0.84u4 2004/07/25 [#191 - David Haywood]
+----------------------------------------
+WARNING: Because of the extension to 32-bits, all existing INP files are invalid. MAME now writes 4 bytes per INP entry instead of 2.
+WARNING: There have been some major internal changes as of this build. Furthermore, the controller.ini support is temporarily disabled. Any other input-related bugs, please report to www.mametesters.org.
+
+
+Source changes:
+---------------
+- Added 32-bit port read handlers, and extended input port internals to 32 bits [Aaron Giles].
+- Added a number of commented-out default strings and modified all drivers to use them [Aaron Giles].
+- Changed the format of .cfg files to use XML. All old .cfg files are useless, just toss them away. This should allow for easier backwards compatibility in the future [Aaron Giles].
+- MAME now requires the expat library for XML support. This is included in the distribution, and is built automatically by default. You can comment out BUILD_EXPAT in the main makefile to disable this behavior and link against a precompiled version if you wish. Similarly, zlib has been modified to do the same thing and is now included with the MAME source. Comment out th BUILD_ZLIB flag to turn off this behavior and link against a precompiled lib [Aaron Giles].
+- Revamped most of the input and input port system. This means a number of changes for those who do their own OSD layer. All input APIs are now unified -- there is no notion of "keyboard" versus "joystick" anymore. The following APIs are now obsolete:
+
+  osd_get_key_list
+  osd_is_key_pressed
+  osd_get_joy_list
+  osd_is_joy_pressed
+  osd_is_joystick_axis_code
+  osd_lightgun_read
+  osd_trak_read
+  osd_analogjoy_read
+  osd_customize_inputport_defaults
+
+  Instead there is a new set of simpler APIs:
+
+  osd_get_code_list
+  osd_get_code_value
+  osd_customize_inputport_list
+- The code list returned by osd_get_code_list should include entries for every keyboard key, every joystick and mouse button, digital versions of joystick analog axes (e.g., joystick X axis up), as well as entries for analog axes on joysticks, mice, lightguns, etc. Essentially any input you wish to expose to the user should be added to this list. Note that if you add items to this list that don't map to the standard defaults, you must specify one of: CODE_OTHER_DIGITAL, CODE_OTHER_ANALOG_ABSOLUTE, or CODE_OTHER_ANALOG_RELATIVE to indicate what type of input you are providing. osd_get_code_value is then later called to retrieve the value for a given code. Digital inputs should return either 0 or 1. Absolute analog inputs should return values between ANALOG_VALUE_MIN (-65536) and ANALOG_VALUE_MAX (65536). Relative analog inputs should return values that approximately scale to 512 units per pixel (e.g., an X axis moving left 4 pixels should return -4*512 = -2048). Finally, osd_customize_inputport_list replaces osd_customize_inputport_defaults and allows you to add any OSD-specific UI input ports, as well as mess with the default configuration. Note that at this time, the controller.ini file support is currently disabled in the Windows build [Aaron Giles].
+- The configuration of ports has changed a bit now as well. You can now map any analog axis to an analog port in the standard input UI. There are now three entries per analog port. The first entry is the analog mapping. The second and third control the digital decrementing and incrementing sequences. To map an analog axis, just hit ENTER and then move the axis in question by a large amount [Aaron Giles].

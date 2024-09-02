@@ -1,0 +1,38 @@
+0.36b15 2000/01/21 [#089 - Nicola Salmoria]
+-------------------------------------------
+
+
+New games supported:
+--------------------
+Gee Bee [Juergen Buchmueller]
+Great 1000 Miles Rally [Luca Elia]
+Shanghai [Nicola Salmoria]
+
+
+New clones supported:
+---------------------
+Super Volley '91 (= Power Spikes) [Nicola Salmoria]
+Tora eno Michi (= Tiger Road) [Nicola Salmoria]
+Wiz (Taito) [Nicola Salmoria]
+
+
+These drivers have improved GRAPHICS:
+-------------------------------------
+- Enabled raster effets in 'Metal Slug 2' (needed for the dunes at the beginning) [Sebastian Ojeda].
+- Fixed colors in 'Cosmic Alien' [Zsolt Vasvari].
+- Fixed colors in 'Side Pocket' [Nicola Salmoria].
+- Fixed System 16 games in 16-bit video modes. With -depth 16, shadows are also color accurate, otherwise the old gray scale shadows are used [Andrew Prime].
+
+
+These drivers have new or improved SOUND:
+-----------------------------------------
+- Added samples to 'Star Cruiser' [Frank Palazzolo].
+
+
+Source changes:
+----------------
+- Added collision detection to 'Star Cruiser' [Frank Palazzolo].
+- Simulated the protection in the original version of 'Side Pocket' [Bryan McPhail].
+- Added gain support to mixer.c, through the new MIXERG() macro (extension of MIXER()). Removed the gain filed from AY8910, YM2204, YM2610 structures [Nicola Salmoria].
+- make68k.exe now requires as parameter the path of the comptab.asm include file (see makefile) [Nicola Salmoria].
+- stream_init() and stream_init_multi() no longer have a sample_bits parameter. Sound emulators are required to generate 16-bit samples. Also removed osd_play_streamed_sample() and mixer_play_streamed_sample(): only the 16-bit version is available now [Nicola Salmoria].

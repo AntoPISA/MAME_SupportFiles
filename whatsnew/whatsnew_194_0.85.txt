@@ -1,0 +1,23 @@
+0.85 2004/08/70 [#194 - David Haywood]
+--------------------------------------
+
+
+Source changes:
+---------------
+- Added conditional coinage to a number of games [El Condor].
+- Added conditional DIP switch support to Asterock [Pierpaolo Prazzoli].
+- Added feature to the general input settings so that if you hit Esc to cancel setting a new input sequence, it toggles between "None" (old behavior) and the default. This is similar to the change that went into u6 for the game-specific inputs [Aaron Giles].
+- Added new port type IPT_OTHER to use for controls that don't map in a standard way. Modified all the Mahjong games to use this instead of 0 for the port type, and changed the UI to recognize this and show it in the game-specific inputs [Aaron Giles].
+- Added sourcefile attribute to the -listxml output [Logiqx].
+- Changed the way the remapping works in the ctrlr .cfg files so that it works more like the way the old system did [Aaron Giles].
+- Fixed bug that prevented default controls that were set to "None" from saving/restoring properly [Aaron Giles].
+- Fixed bug with new command line options when using -createconfig [Aaron Giles].
+- Fixed crasher in the new Mappy DIP switches [Pierpaolo Prazzoli].
+- Fixed debugger memory access for 64-bit CPUs [Nicola Salmoria].
+- Fixed load order for ctrlr files so that they don't stick in the default.cfg if you switch between ctrlrs. [Aaron Giles].
+- Fixed sound balance in Bowlorama [Aaron Giles].
+- Fixed sprite vs. tilemap priority and sprite vs. tilemap positioning for the FL games [R. Belmont].
+- Fixed Superman frame rate to match real PCB [Robert Flory].
+- Hooked up player 3 trackball in Rampart [Aaron Giles].
+- Renamed the paddle/adstick/pedal/dial/trackball/lightgun default device selection options to paddle_device/adstick_device/pedal_device/dial_device/trackball_device/lightgun_device to prevent naming conflicts [Aaron Giles].
+- Some MESS-specific additions to the new input configuration code [Nathan Woods].

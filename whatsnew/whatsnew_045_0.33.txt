@@ -1,0 +1,188 @@
+0.33 1998/08/10 [#045 - Nicola Salmoria]
+----------------------------------------
+(0.32 doesn't exist to avoid confusion with MAME32). A lot of ROM renaming and moving around has been done. I know this is annoying but it was necessary. See merged.txt for details.
+
+
+These drivers have improved GRAPHICS
+------------------------------------
+- Fixed glitches in Gemini Wing and Rygar [Li Jih Hwa].
+- Fade-in/fade-out in Robocop [Nicola Salmoria].
+- Fixed colors in Centipede, including service mode multiplexed color test [Nicola Salmoria].
+- Fixed background layer colors in Trojan [Paul Leaman].
+- Fixed invisible ball in Champion Baseball. Some of the graphics are still broken. The reason is unknown [Nicola Salmoria].
+- Adjusted the brightness of the background in Popeye, which should make it correct according to the schematics. Maybe now it's too dark? [Nicola Salmoria].
+- Fixed colors in Road Runner [Aaron Giles].
+- Accurate colors:
+
+  * Eggs [Gerald Vanderick]
+  * Fast Freddie/Fly-Boy (not sure about this one) [Zsolt Vasvari]
+  * Jump Coaster [Zsolt Vasvari]
+  * Mega Attack and possibly the other Gameplan games [Chris Moore]
+  * Road Fighter [Paul Swan]
+  * Warlords [Zsolt Vasvari]
+  * Warp Warp [Nicola Salmoria]
+  * Wonder Boy Deluxe, Up'n Down, Pitfall II [Nicola Salmoria]
+  * Zoar [Zsolt Vasvari]
+
+- Some fiddling with the Atari vector games frame rates [Nicola Salmoria].
+- Slightly reduced the visible area of the Williams games, I'm not sure which would be the correct setting though [Nicola Salmoria].
+- Better colors in Red Alert [Mike Balfour].
+- Zaxxon and Congo Bongo support rotation [John Butler].
+- Fixed colors in Space Firebird [Chris Hardy].
+- Fixed sprite/background priority in Gemini Wing [Nicola Salmoria].
+- Fixed some wrong graphics in Lode Runner [Nicola Salmoria].
+- Accurate colors, and many other fixes, in TNZS [Richard Mitton].
+- Fixed colors in Crater Raider [Aaron Giles].
+- Cocktail mode support in some games (invaders, btime, etc.) [Martin Sandiford].
+- Inspired by Retrocade and Vector Dream, changed the vector games to use translucent vectors. Color intensities had to be lowered, if it feels too dark for you now, increase the gamma correction value [Bernd Wiebelt].
+- Fixed sprite priorities and tile flip in Pinball Action [Nicola Salmoria].
+- Fixed Motos High Score display [Zsolt Vasvari].
+- Moon Cresta uses the original gfx ROMs, fixing graphics glitches on the title screen.
+
+These drivers have new or improved SOUND
+----------------------------------------
+- Added speech to Champion Baseball [Nicola Salmoria].
+- Attempt at making the main Galaxian / Moon Cresta sound channel more accurate [Nicola Salmoria].
+- Emulated music in Carnival, and support for a new set of samples [Peter Clare].
+- Emulated sound in Lunar Lander [Keith Wilkins].
+- Emulated sound in Yie Ar Kung Fu (speech is missing for now) [Nicola Salmoria].
+- Fixed bug in ADPCM sample playback. Many games are affected, e.g. Robocop, Bad Dudes [Nicola Salmoria].
+- Fixed bug in VLM5030 emulator which caused samples not to work [Tatuyuki Satoh].
+- Fixed D-Day [Zsolt Vasvari].
+- Fixed fuel alert sound in Lunar Lander [Keith Wilkins].
+- Increased music tempo in Snow Bros.
+- Music in 3 Stooges [Nicola Salmoria].
+- New Zealand Story [Carlos A. Lozano].
+- Partial sound in Midnight Resistance and Sly Spy [Bryan McPhail].
+- Put back sample support in Q*Bert Qubes [Rodimus Prime].
+- Sound in Pinball Action [Mirko Buffoni].
+- Sound in Space Firebird [Dan Boris].
+- Sound in the Gameplan games [Chris Moore].
+- Sound in Toki [Nicola Salmoria].
+- Sped up music tempo in Gun Dealer.
+- The YM3812 emulator still passes commands to the Sound Blaster OPL chip, but it handles timers in software. osd_ym3812_status and osd_ym3812_read removed [Aaron Giles].
+- Updated VLM5030 emulation (Punch Out etc.). Since quality is still bad, the emulator is only used when samples are not available [Tatsuyuki Satoh].
+- Wizard of Wor supports word samples. Only 70% of the needed samples are available, however [Alex Judd].
+
+These drivers have HIGH SCORE support
+-------------------------------------
+- Challenger, MegaTack, Killer Comet [Santeri Saarimaa].
+- Fixed Black Tiger, Bank Panic and The End [Nicola Salmoria].
+- Fixed Diamond Run [Mike Balfour].
+- Fixed Rygar (you'll have to delete your old .hi file) [Dani Portillo].
+- Fixed Wonder Boy Deluxe [Chris Moore].
+- Front Line [Steve Ellenoff].
+- Locomotion, Jungler, Commando (Sega), Wonder Boy in Monster Land, Rygar, Gemini Wing, Silkworm, City Connection, Trojan, Up'n Down [Dani Portillo].
+- Swimmer, Pop Flamer [Brad Oliver].
+- TNZS [Santeri Saarimaa].
+- Vastar [Dani Portillo].
+- World Cup '90 [Juan Carlos Lorente].
+
+
+Other drivers changes
+---------------------
+- Added support for coin counters to some games [Brad Oliver].
+- Adjusted timing in the vector games [Bernd Wiebelt].
+- Another step forward in getting Super Punch Out to work (still NOT playable) [Tatsuyuki Satoh].
+- Changed the 6502 emulation to disable interrupts on a reset. Not sure if this is the correct behavior, but Centipede needed it for the service mode to work.
+- Fixed Atari System 1 games not accepting coins with -fm (actually -fm was supposed to be a no-op in this case since emulation of the YM2151 through OPL is not supported). You still have to keep sound on, however; disabling it will disable coins. Of course you can set the dip switches to Free Play and forget about coins.
+- Fixed bug in the I8086 emulator which caused MACH3 not to work. MACH3 now does the attract mode, but it will never be playable without the laser disc.
+- Fixed hangs in Tapper, and hopefully other MCR games as well [Aaron Giles].
+- Fixed Snow Bros hanging after level 30 [Nicola Salmoria].
+- Fixed speed in Berzerk/Frenzy [Zsolt Vasvari].
+- Fixes to the Gameplan games [Santeri Saarimaa].
+- Heavy Barrel is playable to the end, but there are still some problems [Bryan McPhail].
+- Improved speed in the CPS1 games [Paul Leaman].
+- Improved Spy Hunter controls (you can play with the mouse or even a wheel now) [Alex Judd].
+- Lots of clean up, consolidation, dip switches additions, color fixes to the Carnival driver (which is now called vicdual.c, since Carnival is just one of the many games which run on that hardware) [Marco Cassili].
+- Many improvements to the DECO games, especially Heavy Barrel [Bryan McPhail].
+- Mapped the unknown dip switch in Wonder Boy Deluxe [David Calandra].
+- Proper emulation of the ROM decryption in Burger Time [Zsolt Vasvari].
+- Red Alert accepts coins [Mike Balfour].
+- Service mode in Centipede and Millipede works [Brad Oliver].
+- Slowed down a little the Sega raster games.
+- Some fixes to Quantum [Paul Forgey].
+- Sped up Route 16 [Zsolt Vasvari].
+- Super Qix might be running at the proper speed now [Nicola Salmoria].
+- Support for the complete Curveball set. This also fixes the crash.
+- The default scores in Paperboy and Super Sprint are correct (though of course you must delete the .HI files) [Aaron Giles].
+- Us vs Them is playable, though of course you can't see the backgrounds which were stored on the laser disc. MACH 3 still doesn't work.
+- You can assign a joystick button to the gear shift in Spy Hunter.
+
+
+Changes to the main program
+---------------------------
+- [DOS] Allegro (3.0+diffmay) now supports SideWinders and Gravis Gamepad Pro's and so does Mame [Bud Crittenden].
+- [DOS] Fixed the NTSC mode. For feedback on this mode, please contact sta@carinthia.com [Zerza].
+- [DOS] Increased the default gamma correction to 1.2. This will not have effect unless you change it in MAME.CFG (or just delete the file).
+- [DOS] New -listdetails option, to create a detailed list of drivers and the hardware they use [Santeri Saarimaa].
+- [DOS] New -listgames command, which lists all games along with production year and manufacturer. Also -noclones option which removes clones from -list, -listfull etc [Nicola Salmoria].
+- [DOS] Set back the default vgafreq to -1 (=auto). This is necessary for -vsync to pick the correct freq (most of the time) when used with tweaked VGA modes. This will not have effect unless you change it in MAME.CFG (or just delete the file).
+- [DOS] -vsync is supported for games running at 57fps (e.g. Moon Patrol). However, due to the sync rate being different, the game runs 6% faster than it should [Nicola Salmoria].
+- Close to accurate 68000 instruction timing [Brian Verre].
+- Emulating analog devices via joystick no longer deactivates the mouse. IMPORTANT NOTE FOR PORTERS: osd_analog_read() had to be changed. The mame.cfg setting for joysticks was renamed to "joystick" instead of "joytype". The numbering of joystick types has changed, look into readme.txt [Bernd Wiebelt].
+- Fixed -ror and -rol with ORIENTATION_SWAP_XY games (e.g. Kick) and ORIENTATION_FLIP_X games (e.g. Discs of Tron) [Nicola Salmoria].
+- Improved handling of 4 way joysticks [Martin Sandiford].
+- Slightly improved speed of the 68000 emulator [Darren Olafson].
+- Some game information is displayed in the introduction screen. The copyright disclaimer and driver credits screens are shown only the first time a game is run. The game information screen is always shown since it may contain important info [Nicola Salmoria].
+- [DOS] Modified the code so that to start a game you can use:
+
+  a) the full game name as listed in "mame -listfull";
+  b) any ordered subset of the characters used in the full game name;
+
+  So you can start Asteroids Deluxe like:
+
+  mame "Asteroids Deluxe"         !note the quotes!
+  mame astdelx
+  mame adlx
+
+  The less characters you use, the more likely you'll be surprised which game actually gets chosen [Bernd Wiebelt].
+- [DOS] To improve compatibility, older VESA modes are back. If your card doesn't work in VESA mode, try "vesamode=vesa2b" or "vesamode=vesa1" in mame.cfg [Bernd Wiebelt].
+- [DOS] Slightly changed the resolution picker, so that when -vesa and -noscanlines are requested, it will use e.g. 320x240 instead of 640x480 with pixel doubling, and 400x300 instead of 800x600 with pixel doubling. If the lower res mode is not available, it automatically switches back to the pixel doubled mode [Nicola Salmoria].
+- [DOS] New -listclones command, which lists in two columns the clones and the game they are clone of [Nicola Salmoria].
+- Changed the AY8910 emulation to generate three separate audio streams for the three channels instead of premixing them. This improves audio quality, increases the volume, and doesn't seem to affect performance too much [Nicola Salmoria].
+
+
+Source changes:
+---------------
+- The DOS version is now compiled with GCC 2.8.1 and using Allegro 3.0 + WIP (30th May).
+- [DOS] To improve portability, the makefile is more conservative, using the -pedantic and -Wshadow switches. Note that to compile with these switches, several changes had to be made to allegro.h, which is included.
+- Drivers that dynamically change the palette are no longer required to initialize it in convert_color_prom(); they also can avoid initializing the color table, if the default layout for it (a 1:1 mapping) fits their needs. This is also useful when starting new drivers: you don't need to provide a fake palette or prom conversion function, the graphics will be visible somehow (but badly, so you had better change the defaults soon ;-) ) Also, games using PROMs don't need to initialize the colortable if the GfxDecodeInfo structure is properly initialized to make the correspondence 1:1.
+- Further changes to the palette handling code.
+
+  * osd_create_display() no longer takes the total_colors, palette, pens arguments. They are handled by osd_allocate_colors(), which is called after osd_create_display().
+  * The convert_color_prom() functions now take a unsigned short *colortable parameter instead of unsigned char *.
+  * Drivers for games which have a FIXED palette (i.e. they don't call osd_modify_pen()) of more than 256 colors are now allowed to declare it as such in the MachineDriver. The palette will be automatically shrinked to fit in 256 colors. Note: this assumes that the palette is actually composed of no more than 256 unique colors. This is currently the case in all the games. Examples: Kung Fu Master, Lode Runner, Arkanoid, Popeye.
+  * Instead of calling osd_modify_pen(Machine->pens[color],r,g,b), drivers should call palette_change_color(color,r,g,b). Note that the function does the Machine->pens[] mapping for you.
+
+- Dynamic palette support for games with >256 colors. Drivers who want to use it must first of all set up like the static palette ones (put the real number of colors in MachineDriver-> total_colors, etc.), and call palette_recalc() in vh_screenrefresh() before drawing anything. A color usage table must be set before calling palette_recalc() so that the function knows which colors are needed. To help drivers in better optimizing video refreshes, palette_recalc() returns a pointer to an array indicating which colors have been remapped and need a refresh. If you don't need it (most likely), you can just consider it a boolean value (0 = no need to redraw) [Nicola Salmoria].
+- Drivers using the VIDEO_SUPPORTS_16BIT mode must use the same API as VIDEO_MODIFIES_PALETTE ones (palette_change_color(), palette_recalc()). The old setgfxcolorentry() method is discontinued. To use the new API, you must set BOTH the VIDEO_SUPPORTS_16BIT and the VIDEO_MODIFIES_PALETTE flags. Removing the _16BIT flag is all it takes to switch from 16-bit to dynamic mode, so you can quickly test if the palette can be compressed (_16BIT is much slower, so don't use it unless absolutely necessary) [Nicola Salmoria].
+- On the Mac, the dynamic palette uses 254 colors instead of 256. Due to this, now ALL drivers using VIDEO_MODIFIES_COLOR and 256 colors must call palette_recalc() like the others. Also be warned that 256 colors static palettes will be shrinked, so if you are using colors for copybitmap() transparency you'll have to make sure that they are assigned an unique pen.
+- IMPORTANT: drawgfx(...,TRANSPARENCY_THROUGH) now requires the caller to do the mapping with Machine->pens[]. This was necessary to allow for TRANSPARENCY_THROUGH, palette_transparent_color in dynamic palette games.
+- Color PROMs no longer have to be included in the source. They can be loaded from disk just like the other ROMs. You just have to replace the color_prom pointer with the PROM_MEMORY_REGION() macro, to tell the core where the PROMs have been loaded [Nicola Salmoria].
+- For drivers using the GfxLayer system, dirty rectangle support is partially built-in into the core. The OS dependent rendering functions must use Machine->dirtylayer to know which portions of the screen need to be refreshed. Drivers which use the GfxLayer system no longer need the VIDEO_SUPPORTS_DIRTY flag in the MachineDriver structure - it must be turned on automatically by the OS dependent code.
+- Added support for undocumented Z80 opcodes to the C Z80 core [Juergen Buchmueller].
+- Improved speed of the C 68000 core [Juergen Buchmueller] (this is supposed to give a good speed increase, but I don't see any appreciable difference on my K6 - Nicola).
+- Added WatchPoint support to the debugger (i.e. check a RAM location and stop execution when it is changed) [Ernesto Corvi].
+- Fixed a bug in 6502/dasm.c (this only applies if you compile it to get a standalone disassembler - it is not part of MAME) [Christophe Verre].
+- Fixed bug in the 6809 disassembler [Keith Wilkins].
+- T11 CPU emulator. This is used by the Atari System 2 drivers [Aaron Giles].
+- I8085 emulator [Juergen Buchmueller].
+- The 68000 memory handlers can again be word-aligned instead of longword-aligned [Aaron Giles].
+- New flag IPF_RESETCPU for input ports. When this flag is set, CPU #0 is reset when the key is pressed. This cleaned up the vicdual driver [Nicola Salmoria].
+- Several fixes to improve Unix portability [Hans de Goede].
+- Sygnetics 2650 emulator [Juergen Buchmueller].
+- Improved cycle counting in the 6809 emulator [Mathis Rosenhauer].
+- Added new fields to the GameDriver structure:
+
+  * "source_file" (set it to __FILE__, this is used to automatically generate reference lists);
+  * "clone_of", used to link clones to the main version of the game;
+  * "year" and "manufacturer", for production year and company;
+  * "flags", for various info (currently only GAME_NOT_WORKING is defined).
+
+- [DOS] The average FPS is printed on exit [Nicola Salmoria].
+- [DOS] Included Neil Bradley's asm M6808 emulator. Note: you need NASM to compile. The official DOS binary of NASM is a 16-bit application and it cannot compile this file; either use a recompiled version, or just use NASMW (of course the latter only works under Windows) [Alex Pasadyn].
+- The (*vh_update)() call has an additional parameter, full_refresh. When it is 0, the driver may assume that the screen has not been altered by the main engine since the last call, and do an incremental update instead of redrawing the full screen [Brad Oliver].
+- For convenience, added some commonly used palette read/write functions to palette.c [Nicola Salmoria].
+- Support for 16 bit samples in sndhrdw/samples.c. IMPORTANT NOTE FOR PORTERS: for consistency with the sound libraries, osd_play_sample_16() and osd_play_streamed_sample_16() now want the length in _bytes_ of the array, instead of the length in _shorts_ as it was before [Peter Clare].
+- Added the I8039 to the debugger, using Mike Cuddy's disassembler [Andrea Mazzoleni].

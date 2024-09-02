@@ -1,0 +1,52 @@
+0.107 2006/07/24 [#331 - Aaron Giles]
+-------------------------------------
+NOTE: This is the first full release of MAME with the new rendering system. Before freaking out that things don't work the way you expected, please read the docs/newvideo.txt file that gives some suggestions for how to set up your base configuration. If you still encounter issues, then run your system with the -v option and post about your problem at http://mametesters.org.
+
+
+New clones added
+----------------
+Agent X (prototype) [Aaron Giles]
+Borderline (Sidam bootleg) [David Haywood]
+Head On (Sidam bootleg) [David Haywood]
+Lunar Rescue (Model Racing bootleg) [David Haywood]
+Super Crash (bootleg of Head On) [David Haywood]
+
+New games marked as GAME_NOT_WORKING
+------------------------------------
+Chicken Farm [Guru]
+Crazzy Clownz [Guru]
+Hidden Catch 3 [Pierpaolo Prazzoli]
+Legend of Heroes [Pierpaolo Prazzoli]
+Midnight Landing [David Haywood]
+Pro Golf [Pierpaolo Prazzoli]
+Ripper Ribbit [Guru]
+Super Bubble 2003 [Pierpaolo Prazzoli]
+
+
+MAMETesters Bugs Fixed (5)
+--------------------------
+cheatwatchpoint0106u11ora (ShimaPong)
+kof10th0106u1ora (f205v)
+laser0106u10ora (gregf)
+pignewt0106u3gra (Machone)
+xxmissio0106u12yel (quzz)
+
+
+Source changes:
+---------------
+- Added tile flipx to tilemaps in yunsung16.c (bomb kick needs it) and changed the DIP switches used for protection to real DIP switches [Pierpaolo Prazzoli].
+- Additional updates to the magicfly driver. Improved documentation and input port mapping [Roberto Fresca].
+- Fixed assertion when the MAME window was minimized [Aaron Giles].
+- Fixed bug that prevented resizing of secondary windows [Aaron Giles].
+- Fixed crash in the PGM driver [David Haywood].
+- Fixed default flicker value to 0 [Aaron Giles].
+- Fixed gamma and brightness ranges in the UI to match the limits from the command line [Aaron Giles].
+- Fixed keyboard inputs in the Taito Wolf driver [Ville Linde].
+- Fixed scrolling in the palette view [Aaron Giles].
+- Properly emulated the sprite overdraw effect in ninjakd2. Now you can see the "opening" effect and the previously 2 bugged levels are fixed. Converted the driver to use tilemaps as well [Pierpaolo Prazzoli].
+- Rewrote Missile Command driver from schematics [Aaron Giles]:
+  * CPU speed now correct (slows down for lower 32 scanlines)
+  * Proper frame rate and IRQ signal timing.
+  * Service mode works on some sets, fails on others due to 6502 bug.
+  * Accurate bitmap mapping and cycle counts for 3-bit accesses.
+  * Using bitmap access PROM for bit mode writes.

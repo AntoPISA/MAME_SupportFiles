@@ -1,0 +1,79 @@
+0.37b3 2000/05/27 [#096 - Nicola Salmoria]
+------------------------------------------
+
+
+New games supported:
+--------------------
+(aafb)     All American Football (rev E) [Paul Leaman, Aaron Giles]
+(alleymas) Alley Master [Paul Leaman, Aaron Giles]
+(ashura)   Ashura Blaster (Japan) [Jarek Burczynski]
+(ataxx)    Ataxx (rev 5) [Aaron Giles, Paul Leaman]
+(basebal2) Baseball: The Season II [Paul Leaman, Aaron Giles]
+(cerberus) Cerberus [Aaron Giles, Paul Leaman]
+(crimec)   Crime City (World) [Jarek Burczynski]
+(dangerz)  Danger Zone [Paul Leaman, Aaron Giles]
+(dblplay)  Super Baseball Double Play Home Run Derby [Paul Leaman, Aaron Giles]
+(hatris)   Hatris (Japan) [Aaron Giles]
+(indyheat) Danny Sullivan's Indy Heat (rev 1) [Aaron Giles, Paul Leaman]
+(magix)    Magix / Rock [Luca Elia]
+(mayhem)   Mayhem 2002 [Aaron Giles, Paul Leaman]
+(nastar)   Nastar (World) [Jarek Burczynski]
+(offroad)  Ironman Stewart's Super Off-Road [Aaron Giles, Paul Leaman]
+(ohmygod)  Oh My God! (Japan) [Nicola Salmoria]
+(pigout)   Pig Out: Dine Like a Swine! (rev 2?) [Aaron Giles, Paul Leaman]
+(powerins) Power Instinct (USA) [bootleg] [Luca Elia]
+(quarterb) Quarterback (rev 5) [Aaron Giles, Paul Leaman]
+(redlin2p) Redline Racer (2 players) [Aaron Giles, Paul Leaman]
+(safarir)  Safari Rally [Zsolt Vasvari]
+(strkzone) Strike Zone Baseball [Aaron Giles, Paul Leaman]
+(teamqb)   John Elway's Team Quarterback (rev 3) [Aaron Giles, Paul Leaman]
+(viper)    Viper (rev 3) [Aaron Giles, Paul Leaman]
+(wseries)  World Series: The Season (rev 1) [Aaron Giles, Paul Leaman]
+(wsf)      World Soccer Finals [Aaron Giles, Paul Leaman]
+
+New clones supported:
+---------------------
+(aafbb)    All American Football (rev B) [Paul Leaman, Aaron Giles]
+(aafbd2p)  All American Football (rev D, 2 Players) [Paul Leaman, Aaron Giles]
+(ataxxa)   Ataxx (rev 4) [Aaron Giles, Paul Leaman]
+(ataxxj)   Ataxx (Japan) [Aaron Giles, Paul Leaman]
+(champbbj) Champion Base Ball (Japan set 1) [Nicola Salmoria]
+(crimecj)  Crime City (Japan) [Jarek Burczynski]
+(crimecu)  Crime City (US) [Jarek Burczynski]
+(nastarw)  Nastar Warrior (US) [Jarek Burczynski]
+(offroadt) Ironman Ivan Stewart's Super Off-Road Track-Pak [Aaron Giles, Paul Leaman]
+(pacnpal2) Pac & Pal (older) [Nicola Salmoria]
+(pigouta)  Pig Out: Dine Like a Swine! (rev 1) [Aaron Giles, Paul Leaman]
+(quartrba) Quarterback (set 2) [Aaron Giles, Paul Leaman]
+(rastsag2) Rastan Saga 2 (Japan) [Jarek Burczynski]
+(teamqb2)  John Elway's Team Quarterback (rev 2) [Aaron Giles, Paul Leaman]
+(tetrist)  Tetris (Japan, Taito B-System, Nastar Conversion Kit) [Nicola Salmoria]
+(zerotime) Zero Time (Petaco S.A.) [Nicola Salmoria]
+
+
+These drivers have improved GRAPHICS:
+-------------------------------------
+- Fixed colors in Joyful Road [Phil Stroffolino].
+
+
+These drivers have improved SOUND:
+----------------------------------
+- Sound in Jumping [Jarek Burczynski].
+
+
+Other drivers changes:
+----------------------
+- Alternate control system in Assault, only available when cheats are enabled [Maurizio Zanello].
+- Fixed dipswitches in many games [Gerardo Oporto].
+- Lots of fixes to the 8080bw games [Zsolt Vasvari].
+
+
+Source:
+-------
+- Fixed YM2608 adpcm support [Aaron Giles].
+- Lots of changes to some CPU cores (mostly i86). I186 support [Peter Trauner, Juergen Buchmueller, Aaron Giles].
+- Major redesign of the artwork support. All the drivers need to do is call overlay_create() or overlay_load() and the rest is handled by the core. Opacity/translucency support in 16-bit mode.  Check out Space Invaders for example, the colored strips that make up the overlay is faintly visible under the black areas [Mathis Rosenhauer, Zsolt Vasvari].
+- Moved logerror() from mame.c to the OS dependant code, and removed errorlog from the GameOptions structure.
+- New makefile, easier to port, split into multiple files [Juergen Buchmueller].
+- New modes for drawgfx(): TRANSPARENCY_NONE_RAW, TRANSPARENCY_PEN_RAW, TRANSPARENCY_PENS_RAW, TRANSPARENCY_THROUGH_RAW. The purpose of these is to allow you to work in "raw" colorspace (that is, unremapped pens) and then perform the palette lookup at the end. This is useful for a number of games that do collision detection or foreground/background blends (e.g., the palette index is ((fgpen << 4) | bgpen)). When you use these modes, the "color" parameter doesn't refer to the palette any longer. Instead, it is just a value that is added to the raw pen value of the graphics you are drawing. That way, if your background layer uses pens 0-63 and your foreground layer uses pens 64-127, you can pass in a color of 0 when drawing the background layer and 64 when drawing the foreground. Also added copybitmap_remap() and copyscrollbitmap_remap(). These take the same parameters as the originals, but don't make the assumption that TRANSPARENCY_NONE means TRANSPARENCY_NONE_RAW (which, if you think about it, is the way they work). This means that you can do all your work with raw palette indexes until the very end, and then do a copybitmap_remap(TRANSPARENCY_NONE) to copy the result and do the remap step in the end. Finally, there's a new pair of modes that are only supported in copybitmap(): TRANSPARENCY_BLEND and TRANSPARENCY_BLEND_RAW. For these modes, the source bitmap is shifted left by the "color" parameter and then ORed into the destination bitmap. This lets you compute the palette indexes (and optionally do the lookup) for games that look up the palette by combining forground and background pen indices [Aaron Giles].
+- Preliminary MIPS CPU emulation [smf].

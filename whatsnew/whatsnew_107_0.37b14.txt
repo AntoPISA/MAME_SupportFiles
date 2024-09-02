@@ -1,0 +1,66 @@
+0.37b14 2001/04/07 [#107 - Nicola Salmoria]
+-------------------------------------------
+
+
+New games supported:
+--------------------
+Bakuretsu Quiz Ma-Q Dai Bouken [Phil Stroffolino]
+Bigfoot Bonkers [Juergen Buchmueller]
+Cyby Bop [David Haywood]
+Dynamic Ski [Phil Stroffolino]
+Exbania [Phil Stroffolino]
+Gyakuten!! Puzzle Bancho [Luca Elia]
+Hard Head [Luca Elia, Phil Stroffolino]
+Hexion [Nicola Salmoria]
+IGMO [Zsolt Vasvari]
+Knuckle Heads [Phil Stroffolino]
+Mouja [Nicola Salmoria]
+Nettou! Gekitou! Quiztou!! [Phil Stroffolino]
+Quiz Gakumon no Susume [Uki]
+Rough Ranger [Luca Elia, Phil Stroffolino]
+Ryu Jin [Jarek Burczynski]
+Shanghai Kid [Phil Stroffolino]
+Super World Court [Phil Stroffolino]
+Thunder Dragon 2 [David Haywood]
+Wonder Planet [Bryan McPhail]
+XX Mission [Uki]
+
+
+New clones supported:
+---------------------
+Block Block (World 911106)
+Boxy Boy (= Souko Ban Deluxe)
+Fighting Fantasy (Japan revision 2)
+Final Round (version M)
+Galaga 3 (set 1)
+Punk Shot (Japan)
+Puyo Puyo (English) (bootleg)
+Rim Rockin' Basketball (V1.2)
+RodLand (Japan original)
+Sky Adventure (Japan)
+Super Glob
+Super World Stadium '92 Gekitouban
+Tant-R (Puzzle & Action) (Japan) (bootleg set 2)
+The Glob (dedicated)
+Trick Trap (= Labyrinth Runner)
+Tube-It (= Cachat)
+
+
+These drivers have improved GRAPHICS:
+-------------------------------------
+- Fixed sprite priorities in 'Hachoo' [Nicola Salmoria].
+
+
+These drivers have improved SOUND:
+----------------------------------
+- Improved speech in 'Double Dribble' [Tatsuyuki Satoh].
+- Improved subwoofer sounds in ninjaw and darius2d [Andrea Mazzoleni].
+- Sound in 'Looping' [Mathis Rosenhauer].
+
+
+Source changes:
+----------------------
+- [DOS] The keyboard special handling introduced in the previous beta, which makes it easier to register two- or three-button presses, is now optional. By default it's off; to turn it on, use -steadykey [Mike Coates].
+- Changed 4-way emulation on a 8-way joystick to "sticky" mode. This makes Lady Bug and other 4-way games more playable. Explanation here: http://www.rentrondesign.homestead.com/JoyPrimer.html [Jeoff Krontz].
+- MB87078 emulation, used by some Taito B games [Jarek Burczynski].
+- New helper macros BITSWAP8(), BITSWAP16() and BITSWAP24().

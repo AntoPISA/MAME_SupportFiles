@@ -1,0 +1,67 @@
+0.37b1 2000/04/06 [#094 - Nicola Salmoria]
+------------------------------------------
+
+
+New games supported
+-------------------
+(airduel)  Air Duel (Japan) [Nicola Salmoria]
+(arbalest) Arbalester [Luca Elia]
+(crazyblk) Crazy Blocks [Takahiro Nogi]
+(downtown) DownTown [Luca Elia]
+(fnkyfish) Funky Fish [Zsolt Vasvari]
+(karatblu) Karate Blazers (US) [Nicola Salmoria]
+(metafox)  Meta Fox [Luca Elia]
+(mrjong)   Mr. Jong (Japan) [Takahiro Nogi]
+(poundfor) Pound for Pound (World) [Nicola Salmoria]
+(rabiolep) Rabio Lepus (Japan) [Aaron Giles]
+(rpunch)   Rabbit Punch (US) [Aaron Giles]
+(rtype)    R-Type (World) [Nicola Salmoria]
+(spinlbrk) Spinal Breakers (US) [Nicola Salmoria]
+(svolley)  Super Volleyball (Japan) [Aaron Giles]
+(tndrcade) Thundercade / Twin Formation [Luca Elia]
+(twineagl) Twin Eagle (Japan) [Luca Elia]
+(usclssic) U.S. Classic [Luca Elia]
+(wrofaero) War of Aero - Project MEIOU [Luca Elia]
+(zingzip)  Zing Zing Zip [Luca Elia]
+
+New clones supported
+--------------------
+(dygera)   Dyger (set 2) [Nicola Salmoria]
+(karatblz) Karate Blazers (World?) [Nicola Salmoria]
+(ryukendn) Ninja Ryukenden (Japan) [Nicola Salmoria]
+(poundfou) Pound for Pound (US) [Nicola Salmoria]
+(spinlbrj) Spinal Breakers (Japan) [Nicola Salmoria]
+(spyhunt2) Spy Hunter 2 (rev 2) [Nicola Salmoria]
+(svolleyk) Super Volleyball (Korea) [Aaron Giles]
+
+
+These drivers have improved GRAPHICS
+------------------------------------
+- Artwork support in Space Encounters [Zsolt Vasvari].
+- Background in Exerion [Aaron Giles].
+- Fixed colors and stars in the Astrocade games (Gorf, Wizard of Wor, etc.) [Nicola Salmoria].
+- Fixed colors in Lupin III [Zsolt Vasvari].
+- Fixed front layer in Turbo Force [Nicola Salmoria].
+- Fixed sprite colors in the MCR2 games, however overlapping sprites are still  wrong [Aaron Giles].
+
+
+These drivers have improved SOUND
+---------------------------------
+- Completed sound in Splash [Manuel Abadia].
+- Emulated saucer sound in Space Invaders - sample no longer used (the other samples are still required) [Zsolt Vasvari].
+- Samples support in Got-Ya [Zsolt Vasvari].
+- Sound in Berlin Wall [Luca Elia].
+
+
+Changes to the main program
+---------------------------
+- Support for 24-bit artwork [Mathis Rosenhauer].
+
+
+Source changes:
+---------------
+- 6803/63701 external port writes no longer set to 1 the bits that are set as inputs in the DDR register. Instead, they are set to the value returned by a read from the port [Tatsuyuki Satoh].
+- Change the API for tilemap_mark_tile_dirty() and the get_tile_info hooks, now a single parameter tile_index is used instead of (col,row). A function passed to tilemap_create() does the (col,row)->tile_index mapping, two standard functions are provided for the common cases. All drivers have been converted to the new API except for namcos2.c, which is therefore broken at the moment [Phil Stroffolino].
+- New GAME_UNEMULATED_PROTECTION flag [Nicola Salmoria].
+- Support for a priority buffer, updated by tilemap.c, which can be used to draw sprites using the new function pdrawgfx(). This allowed to fix many tile/sprite priority bugs e.g. in Ajax, Lightning Thunder, Simpsons, Vendetta, Punk Shot, Gradius III and others [Phil Stroffolino, Nicola Salmoria].
+- Updated all memory handlers to the new READ_HANDLER()/WRITE_HANDLER() macro declarations. The old "function(int offset,int data)" style must not be used anymore [Nicola Salmoria].

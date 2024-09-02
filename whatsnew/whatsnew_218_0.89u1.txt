@@ -1,0 +1,69 @@
+0.89u1 2004/11/28 [#218 - David Haywood]
+----------------------------------------
+
+
+New Games / Clones supported or promoted from GAME_NOT_WORKING status:
+----------------------------------------------------------------------
+Alien Storm (World, 3 Players) [Thierry]
+Bayroute (World) [Thierry]
+Bloxeed (Japan) [Thierry]
+DD Crew (World, 4 Players) [Thierry]
+Laser Ghost [Aaron Giles]
+Moonwalker (3 original sets) [Aaron Giles]
+Passing Shot (World, 2 Player) [Gerald]
+Ryu Kyu [Thierry]
+Shinobi (System 16A) [Thierry]
+Where's Wally [Thierry, Aaron Giles]
+
+New Non-Working games / clones supported
+----------------------------------------
+Deadeye [R. Belmont] (CD-Rom emulation problems)
+Sega Model 3 preliminary driver [Ville Linde, Andrew Gardiner, R. Belmont] (some basic 2d hooked up, nothing more)
+Super Monaco GP (another set) [Gerald]
+
+
+Source changes:
+---------------
+- Sega Improvements [Aaron Giles]:
+  Sega System 16A:
+  * Included detailed readme in the driver file.
+  * Hooked up column/row scroll (see quartet title screen) -- don't know if it's really right yet.
+  * Reintroduced tilemap/text priorities.
+  * Corrected Z80 clock speed.
+  * Incorporated Brian Troha's updated DIPs.
+  * Minor cleanups.
+  Sega System 16B:
+  * Fixed ROM bank mapping so it doesn't fall through to unmapped handlers.
+  * IncorporatedBrian Troha's updated DIPs.
+  * Minor cleanups.
+  * Fixed column scroll after talking to Charles about how it works.
+  Sega System 18:
+  * Fixed ROM bank mapping so it doesn't fall through to unmapped handlers (fixes Shadow Dancer crash).
+  * Expanded memory mapping code so it works from the 8751 as well as the 68000.
+  * Hooked up the 8751 in mwalk/mwalka/mwalkb -- these all work now.
+  * Removed coin lockouts as they were breaking several games' coin inputs.
+  * Hooked up Laser Ghost controls and added crosshair drawing (not 100% yet, feel free to tweak).
+  * Hooked up Where's Wally controls
+  * Fixed astorm's Player 3 controls
+  * Cleaned up ddcrew's inputs
+  * Fixed sound ROM loading in astorma/astorm2p/mwalk*
+  * Incorporated Brian Troha's updated DIPs.
+  * Minor cleanups.
+  * Added sprite masking effect used by Where's Wally.
+  * Fixed column scroll after talking to Charles about how it works (ddcrew attract mode scrolls properly now).
+  * Went through and fixed VDP priorities in all S18 games; everything should be correct now, let me know if you find anything not right.
+- Fixed i8051 cpu core bugs. Uses correct read/write memory routines for external accesses	support for external IRQs [Aaron Giles].
+- Fixed an rf5c68 memory access bug [Aaron Giles].
+- Improvements to Hyper Crash: Now mostly working apart from controls and a gfx glitch on the player car [Angelo Salese].
+- More Taito F2 Blending Improvements [Bryan McPhail]:
+  * Added the TC0360PRI blending modes to the games with rotation layers. This	includes Pulirula & Liquid Kids. One of the blending modes is new to these games (not used in Gun Frontier) and I have no way to verify it's actually correct - someone with a working board will need to verify (Liquid Kids -fish going in water in attract mode, Pulirula - crystals on level 2).
+- Fixed colours in Flower [Bryan McPhail]
+- Fixed small problem in CHDCD [R. Belmont].
+- Fixed stereo sound in Jaleco MegaSystem1 games [R. Belmont].
+- Misc Compiler Patches [Lawrence Gold].
+- Modified Frogs driver to only use samples when actually needed [Derrick Renaud].
+- PPC Core improvements (603 support) for Sega Model 3 [Ville Linde].
+- Several fd1094 games now run with new keys [Thierry, Gerald].
+- Temporarily disabled ym2151 save states until we work out why its crashing in debug/symbol/map builds.
+- Various cleanups [Atari Ace].
+- Workaround for excessive RAM use in Hyperstone based games [Pierpaolo Prazzoli].

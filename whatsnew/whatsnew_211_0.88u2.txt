@@ -1,0 +1,67 @@
+0.88u2 2004/10/31 [#211 - David Haywood]
+----------------------------------------
+
+
+New Games supported or promoted from GAME_NOT_WORKING status:
+-------------------------------------------------------------
+Bonks Adventure [Sebastien Volpe] (some gfx/sound issues)
+Professor Pacman [Frank Palazzolo]
+
+New Clones supported or promoted from GAME_NOT_WORKING status:
+--------------------------------------------------------------
+Force Break [Pierpaolo Prazzoli]
+Gun Ball [Bryan McPhail] *edit - actually i missed (this one from driver.c, it'll be in u3)
+Hot Bubble [David Haywood]
+Superman (Japan) [Fabrice Arzeno]
+
+New Non-Working games / clones supported
+----------------------------------------
+Born to Fight (gfx emulation problems)
+Raiden Fighters Jet (encrypted gfx)
+Super Lup Lup Puzzle (hyperstone CPU core bugs)
+
+
+Discrete Sound Changes:
+-----------------------
+- DISCRETE_555_ASTABLE - added option to use quick charge diode (will be needed for frogs). Added option to disable oscillation if R1 (charge) is out of circuit (will be needed by invaders.)
+- DISCRETE_555_CC - modified to discharge cap due to natural losses if there is no charging current (needed by frogs). This makes it more accurate then the current perfect cap that will retain a charge forever.
+- Modified all current drivers to use new code.
+
+New Discrete Modules Added:
+---------------------------
+- DISCRETE_555_MSTABLE - 555 Monostable simulation.
+- frogs: Added sound hooks.  Added discrete "tongue" sound effect.
+
+
+Source changes:
+---------------
+- Further improvements to the FD1094 decryption, this is now almost fully understood, additional FD1094 cpus are needed to work out the remaining details. Keys are now stored in the romsets as they should be a close representation of the data stored in the FD1094 CPUs [Nicola Salmoria].
+- Fixed a few things which missed the Namco update in u1 [Phil Stroffolino].
+- Corrected some rom names in 'Crowns Golf' [ShinobiZ].
+- Corrected some rom names in Pengo [Gerald].
+- Improvements in 'Mighty Warriors' driver [Pierpaolo Prazzoli]:
+  * Added sprites buffer which fixed the "invisible" sprites.
+  * Fixed text tilemap scrollx offset.
+  * Haze added palette brightness.
+- Improvements to Twin Brats [Pierpaolo Prazzoli]:
+  * Fixed sound banking.
+  * Changed service switch button.
+  * Changed visible area.
+  * Merged memory map.
+- Moved gamename prefixes to end in pc10, nss and megatech [Aaron Giles].
+- Fixed Joystick Axis problem [Aaron Giles].
+- Discrete Sound Improvements [Derrick Renaud].
+- Fixed bug in discrete code [Brad Oliver].
+- Improvements to 'Astrocade' driver [Frank Palazzolo].
+- Professor Pacman Driver - works but fails 2 self-tests yet.
+- Fixed collision detection in all games.
+- Added NVRAM handling to robby (and profpac) - still not working always but self-tests pass.
+- Fixed bugs in astrocade sound code.
+- Switched astrocade sound to stream system.
+- Support stereo in wow, robby, gorf, profpac (sounds great now!).
+- Leds and coin counters added.
+- All activecpu_get_reg() calls from astrocde games have been replaced with proper 16-bit Z80 port support through memory system.
+- Renamed sndhrdw/astrocde.c to sndhrdw/wow.c since it is game-specific.
+- Fixed NMI handling in NEC cores [Bryan McPhail].
+- Cleaned up Twins driver and changed to use V20 [Pierpaolo Prazzoli].
+- Some hyperstone debugger cleanups [Pierpaolo Prazzoli].

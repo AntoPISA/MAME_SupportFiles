@@ -1,0 +1,28 @@
+0.80u3 2004/03/28 [#171 - David Haywood]
+----------------------------------------
+
+
+New Games supported or promoted from GAME_NOT_WORKING status
+------------------------------------------------------------
+Baby Phoenix/GV System [R. Belmont]
+Hyper Athlete [R. Belmont]
+Powerful Baseball '96 [R. Belmont]
+Susume! Taisen Puzzle-Dama [R. Belmont]
+Wedding Rhapsody [R. Belmont]
+
+
+Source changes:
+---------------
+- CHDCD / Konami GV update [R. Belmont].
+- Preliminary CD-ROM support for CHDMAN. Input is from CDRDAO .toc/.bin  images (cdrdao.sourceforge.net). CDRDAO comes with utilities to convert CDRWIN .cue/.bin images to toc/.bin format [David Haywood].
+- Intel Flash ROM emulation support [David Haywood].
+- CDROM emulation primitives, including Red Book audio playback [David Haywood].
+- CDROM support for the AM53cf96 SCSI controller [David Haywood].
+- Konami GV System driver. GV System is identical to a home Playstation/PSOne console, except the CD-ROM is SCSI instead of proprietary [David Haywood].
+- The SPU emulation needs a lot of help, especially on Wedding Rhapsody. smf is working on it [David Haywood].
+- The SCSI CD-ROM emulation needs to be separated out from the AM53cf96 if  we ever emulate other SCSI controllers or CD-ROM drives [David Haywood].
+- CHDMAN doesn't output anything useful when you extract a CHD-CD. It should write out a CDRDAO image [David Haywood].
+- Audio tracks on CDs are not compressed at present (or more accurately they're gzip compressed, which is useless). The plan is to use FLAC at some point [David Haywood].
+- Misc fixes [Nathan Woods]:
+  * Changed options.savegame to be a string.  If this is a one character string, then the save state is loaded as before.  If it is a	larger string, then cpu_loadsave_schedule_file() is used.
+  * Added a state_save_check_file(); a call that front ends can use to	validate a state save file.

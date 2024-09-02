@@ -1,0 +1,38 @@
+0.94u1 2005/03/07 [#239 - Aaron Giles]
+--------------------------------------
+Mostly bugfixes related to problems caused by the 0.93 sound update.
+
+
+New Games / Clones supported or promoted from GAME_NOT_WORKING status:
+----------------------------------------------------------------------
+Excelsior [Pierpaolo Prazzoli] (no sound (PIC not dumped))
+Star Fire 2 [David Rolfe]
+Tecmo World Cup Millenium [smf]
+
+New games marked as GAME_NOT_WORKING
+------------------------------------
+Calorie Kun [David Haywood] (preliminary driver, basic tilemap + sprites hooked up)
+Pipeline [David Haywood] (rom loading, not much else)
+
+
+Source changes:
+----------------
+- Fixed itech32 driver, the previous 64-bit fix caused graphical problems both should be fixed now [Aaron Giles].
+- Fixed '3 speaker problem' with Qsound [Aaron Giles].
+- Fixed 'deadang' crashing [Aaron Giles].
+- Fixed games using the 5110 which refused to start (bagman, cvs driver etc.) [Aaron Giles].
+- Other sound fixes [Aaron Giles]:
+  * Fixed initialization order problem in niyanpai.
+  * Removed unused filters in othunder.
+  * Fixed initialization order problem in rungun.
+  * Prevented setting negative timers to fix stkclmns crash.
+  * Fixed triplfun by making sure the X1-010 chip is present before trying to reset it.
+   * Sound in outrun.
+- Fixed cheat.c typo + other [Atari Ace].
+- Attempted to fix batrider crash [Aaron Giles].
+- Intel Flash improvements [smf].
+- Fixed Laser Ghost title screen [Aaron Giles] .
+- Discrete sound updates [Derrick Renaud].
+- Started cleaning up konamigx driver [R. Belmont].
+- Fixed auto_malloc compiler warning with DOS tools [smf].
+- Updates to XML output [Logiqx].

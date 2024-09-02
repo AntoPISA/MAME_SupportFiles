@@ -1,0 +1,56 @@
+0.35b8 1999/03/24 [#064 - Nicola Salmoria]
+------------------------------------------
+Most of the problems of beta 7 have been fixed, but the C 68000 core still isn't 100%.
+
+
+New games supported
+-------------------
+(aso)      ASO (Armored Scrum Object) [Carlos A. Lozano, Phil Stroffolino]
+(athena)   Athena [Carlos A. Lozano, Phil Stroffolino]
+(bermudat) Bermuda Triangle [Carlos A. Lozano, Phil Stroffolino]
+(chopper)  Chopper I [Carlos A. Lozano, Phil Stroffolino]
+(cninja)   Caveman Ninja (World) [Bryan McPhail]
+(fitegolf) Fighting Golf [Carlos A. Lozano, Phil Stroffolino]
+(psychos)  Psycho Soldier (set 1) [Carlos A. Lozano, Phil Stroffolino]
+(rallyx)   Rally X [Yasuhiro Ogawa]
+(skychut)  Sky Chuter [Lee Taylor]
+(spdcoin)  Speed Coin (prototype) [Frank Palazzolo]
+(tnk3)     TNK3 [Carlos A. Lozano, Phil Stroffolino]
+(tumblep)  Tumble Pop (bootleg set 1) [Bryan McPhail]
+(warpwarp) Warp & Warp [Yasuhiro Ogawa]
+
+New clones supported
+--------------------
+(aerofgtb) Aero Fighters (Turbo Force hardware) [Nicola Salmoria]
+(cninjau)  Caveman Ninja (US) [Bryan McPhail]
+(joemac)   Joe & Mac (Japan) [Bryan McPhail]
+(kingbalj) King & Balloon (Japan) [Yasuhiro Ogawa]
+(legofair) Legend of Air Cavalry, The [Carlos A. Lozano, Phil Stroffolino]
+(psychosa) Psycho Soldier (set 2) [Carlos A. Lozano, Phil Stroffolino]
+(stoneage) Stoneage [Bryan McPhail]
+(todruagb) Tower of Druaga (set 2) [Yasuhiro Ogawa]
+(tumblep2) Tumble Pop (bootleg set 2) [Bryan McPhail]
+
+
+These drivers have improved GRAPHICS
+------------------------------------
+- Fixed again the colors in Lode Runner 2. This time it should really be 100% [Nicola Salmoria].
+- Fixed missing item at the bottom of the screen in Tower of Druaga [Nicola Salmoria].
+
+
+These drivers have new or improved SOUND
+----------------------------------------
+- Added voices to Rolling Thunder [Ernesto Corvi].
+- Implemented the RC filters in early Konami games (Time Pilot, Pooyan, etc.) [Zsolt Vasvari].
+
+
+Other drivers changes
+---------------------
+- Fixed 1 player start button not working on level 31 of Tower of Druaga [Nicola Salmoria].
+
+
+Changes to the main program
+---------------------------
+- [DOS] Switches -noartwork and -nosamples to turn off artwork or sample loading [Valerio Verrando].
+- Added a "Game History" entry to the menu. Data is fetched from the file HISTORY.DAT. Thanks to Brian Deuel, Neil Bradley and the Retrocade dev team for allowing us to use Retrocade's game history database [John Butler].
+- All new, completely rewritten debugger (not finished yet) [Juergen Buchmueller].

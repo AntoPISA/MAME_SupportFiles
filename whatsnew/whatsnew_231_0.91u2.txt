@@ -1,0 +1,40 @@
+0.91u2 2005/02/03 [#231 - David Haywood]
+----------------------------------------
+Main purpose of this update is to clean up the compile warnings.
+
+
+New Games / Clones supported or promoted from GAME_NOT_WORKING status:
+----------------------------------------------------------------------
+Kabuki-Z [Nicola Salmoria]
+
+New clones added:
+-------------
+Karate Blazers (Japan) [Gerald]
+
+New games marked as GAME_NOT_WORKING
+------------------------------------
+Super Trio - background emulation not complete (encrypted tiles?) (sound emulation not complete)
+Join 'Em [David Haywood] (basic driver, not much work done on it yet)
+The Couples [Angelo Salese] (basic driver, not much work done on it yet)
+
+
+Source changes:
+---------------
+- Warning Cleanups [Nathan Woods, David Haywood].
+- ST-V update [Angelo Salese]:
+  * Added a kludge for Astra Super Stars to let it run past a nasty code, nasty because I highly suspect it's a sh-2 bug,will be worked out in the future.
+  * Added some new vdp2 registers,for example the DISP one for avoid transitions draws.
+  * Re-added the layer disable/enable code that I sent in the past which was lost,and removed the possibility to disable layers with non-debug builds.
+  * Started to add default eeproms for the various games,for now I've hooked	 up the one in Shienryu to let it run already with Vertical Switch.
+  * Added the dynamic clocks,hopefully now 100% working.
+- TNZS driver update [Nicola Salmoria]:
+  * Fixed crash due to code execution across bank cboundary (tnzs36b16yel).
+  * Removed kludges which were required to run Arkanoid 2 (they were just	mirror addresses).
+  * Added sprite banking (same as seta.c). Insecotr X and other were obvoisly running at 30fps before, now they are ok. Also fixes insectx13b16gre and insectx236b16gre.
+  * Added sprite buffering (not quite the same as seta.c). Fixes kabukiz sprites and backgrounds, though there might still be a few glitches.
+  * Fixed kabukiz sound.
+- Correct NeoGeo Mirroring + additional information on coin counters etc. [Razoola].
+- Lethal Enforcers updates [Nicola Salmoria, R. Belmont].
+- uPD7759 rewrite, fixing sound in System 16 games [Aaron Giles].
+- Small jalmah.c update to fix a crash [Angelo Salese].
+- Fixed Gunsmoke transparency [Nicola Salmoria].

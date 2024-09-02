@@ -1,0 +1,90 @@
+0.37b2 2000/05/06 [#095 - Nicola Salmoria]
+------------------------------------------
+
+
+New games supported:
+--------------------
+(astrob)   Astro Blaster (version 3) [Nicola Salmoria]
+(battlera) Battle Rangers (World) [Bryan McPhail]
+(dfeveron) Dangun Feveron (Japan) [Luca Elia]
+(insector) Insector (prototype) [Fabrice Frances]
+(kyros)    Kyros [Bryan McPhail]
+(mermaid)  Mermaid [Zsolt Vasvari]
+(pipedrm)  Pipe Dream (Japan) [Bryan McPhail, Aaron Giles]
+(polyplay) Poly-Play [Martin Buchholz]
+(screwloo) Screw Loose (prototype) [Fabrice Frances]
+(sheriff)  Sheriff [Zsolt Vasvari]
+(sstingry) Super Stingray [Bryan McPhail]
+(supbtime) Super Burger Time (World) [Nicola Salmoria]
+(tail2nos) Tail to Nose - Great Championship [Nicola Salmoria]
+(uopoko)   Uo Poko (Japan) [Luca Elia]
+(vaportra) Vapor Trail - Hyper Offence Formation (World revision 1) [Nicola Salmoria]
+
+New clones supported:
+---------------------
+(800fath)  800 Fathoms [Nicola Salmoria]
+(bldwolf)  Bloody Wolf (US) [Bryan McPhail]
+(boscoo2)  Bosconian (older version) [Nicola Salmoria]
+(esprade)  ESP Ra.De. (Japan) [Luca Elia]
+(grindstm) Grind Stormer (Korea) [Nicola Salmoria]
+(inthuntu) In The Hunt (US) [Nicola Salmoria]
+(junofstg) Juno First (Gottlieb) [Nicola Salmoria]
+(moonbase) Moon Base [Nicola Salmoria]
+(oscarj)   Psycho-Nics Oscar (Japan revision 2) [Nicola Salmoria]
+(oscarj1)  Psycho-Nics Oscar (Japan revision 1) [Nicola Salmoria]
+(schasrcv) Space Chaser (CV version) [Nicola Salmoria]
+(sinvzen)  Super Invaders (Zenitone-Microsec) [Nicola Salmoria]
+(spinlbru) Spinal Breakers (US) [Nicola Salmoria]
+(sspacat2) Space Attack (upright, older) [Nicola Salmoria]
+(superinv) Super Invaders [Nicola Salmoria]
+
+
+These drivers have improved GRAPHICS:
+-------------------------------------
+- Accurate sprite drawing in MCR 1 & 2 games (see Satan's Hollow) [Aaron Giles].
+- Correct colors in Lasso [Phil Stroffolino].
+- Fixed colors in Reactor [Fabrice Frances].
+- Fixed rowscroll in Ghostbusters [Bryan McPhail].
+- Fixed sprite / tile priority in Mad Gear and Garyo Retsuden [Bryan McPhail].
+
+
+These drivers have improved SOUND:
+----------------------------------
+- Fixed adpcm decoding in the K053260, this improves several Konami games [Ernesto Corvi].
+- Samples in Warrior [Mathis Rosenhauer].
+- Sound in Demon [Zsolt Vasvari].
+- Sound in Lasso [Phil Stroffolino].
+
+
+Other drivers changes:
+----------------------
+- Fixed Gang Wars original version, Super Baseball, Battlefield, Time Solders rev 1 [Bryan McPhail].
+
+
+Changes to the main program:
+----------------------------
+- Extended the internal font to support characters 128-255 (ISO Latin-1) [Juergen Buchmueller].
+- First pass for multi language support with external translation files [Brad Oliver].
+- Fixed Hu6280 emulation bugs which caused missing levels in Trio the Punch [Bryan McPhail].
+- Massive rewrite of the cheat system user interface. This is still a work in progress [Brad Oliver].
+
+
+Source:
+-------
+- Replaced instances of "if (errorlog) fprintf(errorlog," with a call to the new function logerror().
+- New filetypes that must be supported by the OS dependant code:
+  FILETYPE_HIGHSCORE_DB
+  FILETYPE_HISTORY
+  FILETYPE_CHEAT
+  FILETYPE_LANGUAGE
+
+  new functions:
+  osd_readkey_unicode
+  osd_fgetc
+  osd_ungetc
+  osd_fgets
+  osd_feof
+  osd_ftell
+
+  new filed in struct Gameoptions: language_file. The OS dependant code must initialize it if it wants to use a translation file [Brad Oliver].
+- I added a new parameter to the end of the EEPROM interface to enable multiple reads to occur after a single read command. Added an EEPROM_set_data() routine that can be used to explicitly initialize the contents of the EEPROM if the NVRAM file isn't found [Aaron Giles].

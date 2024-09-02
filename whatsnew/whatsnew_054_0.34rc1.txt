@@ -1,0 +1,34 @@
+0.34rc1 1998/12/14 [#054 - Nicola Salmoria]
+-------------------------------------------
+
+
+New ROM sets supported (in no particular order):
+------------------------------------------------
+Cook Race (this was previously called hamburge) [Nicola Salmoria]
+Space Panic (German) [Mike Coates]
+
+
+These drivers have improved GRAPHICS:
+-------------------------------------
+- Accurate colors in 'Space Panic' [Mike Coates].
+
+
+These drivers have new or improved SOUND:
+-----------------------------------------
+- Fixed music in 'Moon Patrol', 'Traverse USA' and the other Irem games [Nicola Salmoria].
+- Preliminary sound support in the Exidy games [Dan Boris].
+- Samples support in 'Astro Fighter' [Zsolt Vasvari].
+
+
+These drivers have HIGH SCORE support:
+--------------------------------------
+NOTE: the high score save format has changed in some games to make it cross platform. The old scores for those games will be lost. If you see garbage in the high score table, or otherwise strange behaviour, delete the .hi file.
+- 'Block Out', 'Dark Seal', 'Cosmic Alien', 'Crazy Balloon', 'Radarscope', 'Side Track' [Howie Cohen].
+- 'Lode Runner' (all versions), 'Kid Niki', 'Spelunker II', 'Jail Break', 'The Main Event', 'King of Boxer', 'Express Raider', 'Pac Land', 'Speed Ball' [Dave W.].
+- 'Scion', 'Stinger' [Zsolt Vasvari].
+
+
+Source changes:
+----------------------
+- Fixed srumbler2 [Paul Leaman].
+- When using the SoundBlaster OPL chip, YM3812 commands are converted to play at the correct frequency [Carl-Henrik Skarstedt].

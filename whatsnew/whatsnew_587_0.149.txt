@@ -1,0 +1,135 @@
+0.149 2013/06/11 [#587 - Miodrag Milanovic]
+-------------------------------------------
+
+
+MAMETesters Bugs Fixed
+----------------------
+- 04420: [Crash/Freeze] (crystal.c) crysbios, donghaer, officeye, topbladv: [debug] Crash after OK (Robbbert)
+- 04836: [Crash/Freeze] (mpu5.c) Many sets in mpu5.c: Crash after OK (Robbbert)
+- 04839: [Crash/Freeze] (pluto5.c) hb_dacz: Crash after OK (Robbbert)
+- 05013: [Crash/Freeze] (vegas.c) sf2049: Integer Divide By Zero (Firewave)
+- 05197: [Graphics] (armedf.c) cclimbr2: Missing blinking white dot (hap)
+- 05198: [Sound] (galdrvr.c) explorer: No sound and effect (hap)
+- 05199: [Documentation] (ddenlovr.c) ultrchmph: The correct description is "Cheng Ba Shi Jie - Chao Shi Kong Guan Jun" and the region is Taiwan instead Hong Kong (Fujix)
+- 05201: [Crash/Freeze] mhavoc, starwars and clones: Various vector games will crash/freeze in MAME (MooglyGuy)
+- 05205: [Crash/Freeze] (bwidow.c) bwidow: After last life the game crashes (MooglyGuy)
+
+
+New games added or promoted from NOT_WORKING status
+---------------------------------------------------
+Attack Force [Piero Andreini]
+Top XXI (Version 1.2) [Roberto Fresca, ANY]
+
+New clones added
+----------------
+18 Challenge Pro Golf [Tormod, The Dumping Union]
+Aerolitos (Spanish bootleg of Asteroids) [Basilio Garcia]
+Air Inferno (Japan)  [Shoutime]
+Ave Fenix (Spanish bootleg of Phoenix) [Basilio Garcia]
+Battle Zone (bootleg of Mayday) [Basilio Garcia]
+Borderline (Tranquilizer Gun conversion) [Ricky2001 (from AUMAP)] (not working, bad ROM)
+Car Action (set 2)  [any]
+Commando Bootleg 2 [Kevin Eshbach]
+Contra (Japan, set 2) [Artemio Urbina, The Dumping Union]
+Crazy Climber (Spanish, Operamatic bootleg) [Basilio Garcia]
+Cresta Mundo (Laguna S.A. Spanish Moon Cresta bootleg) [Roselson (from AUMAP)]
+Crisis Zone (CSZO3 Ver. B, set 2) [Tormod, BrianT, Smitdogg, The Dumping Union]
+Crisis Zone (CSZO4 Ver. A) [Tormod, BrianT, Smitdogg, The Dumping Union]
+Galaxian (bootleg, set 2) [ANY]
+Impacto (Billport S.A., Spanish bootleg of Scramble) [Basilio Garcia]
+Mission Craft (version 2.7) [Artemio Urbina, The Dumping Union]
+Mysterious Stones - Dr. Kick in Adventure (Itisa PCB) [Ricky2001 (from AUMAP)]
+Nudge Double Up (JPM SRU) [jameswal]
+Pajaro del Espacio (Spanish bootleg of UniWar S) [Basilio Garcia]
+Satan of Saturn (Inder S.A., bootleg) [Basilio Garcia]
+Scramble (Petaco S.A., Spanish bootleg) [Basilio Garcia]
+Scramble (Reben S.A. Spanish bootleg) [Roselson (from Aumap)]
+Sky Soldiers (bootleg) [ANY]
+Space Chaser (set 4)  [any]
+Suzuka 8 Hours 2 (Japan) [ShouTime, The Dumping Union]
+TeddyBoy Blues (Old Ver. bootleg)  [any]
+ThunderJaws (rev 3) [Artemio Urbina, The Dumping Union]
+Unknown SRU Game [jameswal]
+WWF: Wrestlemania (rev 1.1 07/11/95) [Brian Troha, The Dumping Union]
+
+New games marked as GAME_NOT_WORKING
+------------------------------------
+Guttang Gottong (bootleg on Galaxian type hardware) [Basilio Garcia]
+Music Ball [AUMAP]
+Reel Good Time (Rebuild) (EPOCH) (Version 1.0) [Dr Slots/MPU Mecca]
+Treasure Hunt (Global) (EPOCH) (Version 1.6) [Dr Slots/MPU Mecca]
+
+
+Source changes:
+---------------
+- Added NVRAMs for devices in software item named folder [Miodrag Milanovic].
+- Changed keycus into a device and moved it into it's own file, only 3 parameters are saved instead of 64k. Changed I/O to 16 bits & uses memory maps instead of installing at runtime. Simplified digital player 3 inputs that are hooked up to dac inputs [smf].
+- diserial: Added methods for clocking the receiver/transmitter outside of the timers [Curt Coder].
+- Removes more MAME anonymous timers [Andrew Gardner].
+- Added DIP switch location to Namco System 11 & 12, also removed unused test dip switches [smf].
+- HLSL changes [MooglyGuy]:
+  * Upped vertex buffer size to 64k verts, fixes assert in starwars and alphaone, please include the printed error message in any subsequent encounterings of the assert.
+  * Improved vector rendering (beam width 1.5 suggested).
+  * Ducked raster bloom default to 0.225 to reduce washout.
+-i386dasm.c: Fix improper signed display in some opcode parameters [Peter Ferrie].
+- Register the device post load after the devices are started, in case starting the device causes something (like sound_stream) to register it's own post load [smf].
+- audit.c: Fixed software list CHD verification  [qmc2].
+- mazerbla.c: Add notes about the game pcbs [Lord Nightmare, Quarterarcade].
+- Replace first ROM of Ambush with a fresh dump, marked the old set as likely hacked [Ricky2001 (from AUMAP).
+- zn.c: Added YMZ280 sound emulation to hvnsgate [smf, hap].
+- m6800: Resolved out_sc2_func for M6808/HD6301/HD63701 variants [Curt Coder].
+- ksys573: Externalize the digital board [O. Galibert].
+- Added a check for a bus error when fetching an instruction, the bus error condition is cleared before the fetch so bus errors in the debugger don't cause an exception to be triggered [smf].
+- m6502: Redo the prefetch and reset the state on debugger PC change [O. Galibert].
+- savquest.c: added HASP emulator; marked BIOS as bad dump because it's incomplete [Peter Ferrie].
+- z80dart: Merged in uPD7201 and modernized the interface [Curt Coder].
+- emuopts.c: Added a new option -statename which allows to specify the location of state saving, relative to -state_directory (whose usage remains unchanged). Syntax is basically the same as snapname, allowing for the  / character as path separator, %g as the driver name, and %d_[media] as the image name mounted in the "media" device. For example, using -statename foo/%g when running "mame wrally" will store save states into the folder sta/foo/wrally/ ; using -statename %g/%d_cart when running "mess nes -cart smb" will store save states into the folder sta/nes/smb/ ; using -statename %g/%d_cdrm when running "mess pce -cart cdsys -cdrm draculax" will store save states into sta/pce/draculax/ Specifying a media switch which is not available (e.g. %d_cdrm in a c64) or a media switch where no image is mounted (e.g. %d_cdrm in pce while playing a hucard game) will revert the option to its default value %g and save states will be stored in sta/*gamename*/ as in previous versions [Fabio Priuli].
+- msm5205.c: Modernized the device [Fabio Priuli].
+- Added ds2401 ROM loading to digital i/o board, rather than specifying it in each game. Fixes Mambo A Go-Go booting [smf].
+- snes_snd: Modernized the SNES sound device [Fabio Priuli].
+- tms6100: Modernized theTMS6100 and M58819 devices [Osso].
+- Moved default card config, device inputs and clock off the slot interface so they can be specified for all cards [smf].
+- Added support for machine config fragments that are applied when the cart is loaded, converted NCR 53C7xx to devcb2 as an example [smf].
+- Converted NCR5380N to devcb2 [smf].
+- Converted NCR5390 to devcb2 & use MCFG_DEVICE_CLOCK to set SCSI chip clock [smf].
+- pcshare: Make all the common pc hardware in various pc based drivers inherit from pcat_base_state [Carl].
+- Adds the Image menu to the QT debugger's main window. This allows the user to mount disk/c images from the UI [Andrew Gardner].
+- uiimage.c: When creating a new file from the File Manager, require the user to enter an extension too [Fabio Priuli].
+- Modernized the RP5H01 device [Osso].
+- Converted the Konami System 573 Security Cassettes to use slots. The current setting is no longer saved, so the default cassette is "game". Some games have additional I/O connected via the security cassette, which is now hooked up when the cassette is loaded instead of patched directly into the memory map. If the game has a separate "install" cassette then you need to select this and hard reset (shift+F3 or select reset from the slot menu) before it will let you install from the CD [smf].
+- Modernized the MB14241 and MathBox devices [Osso].
+- inpttype.h: Use O1 instead of O0 on the critical function [Hans Ostermeyer].
+- Fixed clipping of device address maps if the size of the map caused the end address to wrap. Added a proof of concept implementation of a address map bank device, which allows you to bank memory maps. Hooked it up to Taito GNET as an example [smf].
+- Finished converting Taito GNET to use address maps instead of
+ installing at run time [smf].
+- Modernized the geebee and warpwarp sound devices [Osso].
+- Finished modernizing gp9001 [smf].
+- Modernized the MM58274C RTC device [Fabio Priuli].
+- Allow AM_NOP in device address maps, there may be others that should be allowed [smf].
+- Created a PCCARD slot and Linear Flash Card for System 573. Uses bankdev.c for banking the onboard flash chips and the pccard slots. This adds an extra two calls to the memory system & intelfsh.c already called the memory system for accessing the data [smf].
+- Split rf5c296 and ata flash functionality from taitogn.c into their own devices. The pccard slot has had to revert to use memory handlers instead of device maps for the moment [smf].
+-Modernized Kaneko Pandora device [Osso].
+- Modernized the TMS9927 device [Fabio Priuli].
+- Modernized the PIT8253 device [Fabio Priuli].
+- Modernized speaker device [Fabio Priuli].
+- Modernized Taito I/O devices [Osso].
+- Roms renamed for set gtmrusa to match actual labels [Porchy].
+- Started to split ide hd from ide controller [smf].
+- firebeat: split midi keyboard to separate device [Carl].
+- Modernized Flower sound device [Osso].
+- Added better .ini defaults for HLSL, and hooked up bloom sliders [MooglyGuy].
+- Added macros for read/write delegates [Curt Coder].
+- QT Debugger: WIP for a new breakpoints window [Andrew Gardner].
+- Modernized nmk112 device [Osso].
+- Modernized Namco I/O devices (56xx, 58xx, 59xx) [Osso, Fabio Priuli].
+- naomi video: Pretend-modernize the powervr2 [O. Galibert]
+- powervr2: Some register groups are obviously 32 bits, so make them so [O. Galibert].
+- naomi: Better IRQ isolation [O. Galibert].
+- naomig1: Make the dma cpu-independant [O. Galibert].
+- First pass at tidying up ide interface. It no longer tries to force everything to act as a PC. A copy of the VIA VT83C461 datasheet would be useful to remove some of the hacks added to make the games using it work again [smf].
+- Modernize adc1038 and adc12138 devices [Osso].
+- Added USE_SIMD flag to RSP headers and began converting some opcodes to use SSE* intrinsics. Current plan is to target SSSE3-capable hardware (Core2 and up), with the resulting speedup theorized to be on the order of 5-10x when conversion is complete, though this applies only to situations where the emulation is heavily bottlenecked by the RSP [MooglyGuy].
+- nmk16.c: raphero sound improvements [trap15].
+- Added SIMD code for the rest of the RSP vector load instructions [MooglyGuy].
+- Improved Dragon World II protection routines [iq_132].
+- Verified pacuman gfx roms [elnaib and Santy14].

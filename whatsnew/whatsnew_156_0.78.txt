@@ -1,0 +1,118 @@
+0.78 2003/12/25 [#156 - David Haywood]
+--------------------------------------
+
+
+New Games supported or promoted from GAME_NOT_WORKING status:
+-------------------------------------------------------------
+7jigen no Youseitachi [Luca Elia]
+Aquarush
+Ashita no Joe [David Haywood, Pierpaolo Prazzoli] (sound problems)
+Biofreaks (Prototype) [Aaron Giles]
+Bonanza Bros [Olivier Galibert]
+Borderline (bootleg) [David Haywood] (no sound)
+California Speed [Aaron Giles]
+Cross Pang [Pierpaolo Prazzoli] (no sound, some sprite glitches, will try to clean up for u1)
+Crypt Killer [R.Belmont, smf]
+Dynamic Country Club [Olivier Galibert]
+Ehrgeiz
+Fighting Layer
+Funny Bubble [David Haywood] (sound banking problem, some sprite glitches, will try to clean up for u1)
+Mahjong Angels [Luca Elia]
+Mahjong Campus Hunting [Luca Elia]
+Mahjong Yarunara [Luca Elia]
+Mr Driller
+Quiz Rouka Ni Tattenasai [Olivier Galibert, David Haywood]
+Quiz TV Gassyuukoku [Luca Elia]
+Super Tank [Norbert Kehrer]
+Tekken 3 [smf]
+
+New Clones supported or promoted from GAME_NOT_WORKING status:
+--------------------------------------------------------------
+Chinese Hero (older) [Stefan Jokisch]
+Delta Race (omega Race bootleg) 
+Fighting Hawk (World) [Fabrice Arzeno]
+Lode Runner III - The Golden Labyrinth [Pierpaolo Prazzoli]
+Pairs V1.2 [Taucher]
+Premier Soccer (EAB) [Taucher]
+Vs. Atari R.B.I. Baseball (set 2) [Pierpaolo Prazzoli]
+
+New Non-Working games / clones supported
+----------------------------------------
+Ace Driver [Guru]
+Battle Arena Toshinden 2 (USA)
+Beastorizer
+Brave Blade
+Champion Baseball Japan set 2 [Stefan Jokisch]
+Crackdown [Olivier Galibert]
+Gain Ground [Olivier Galibert]
+Gallop Racer 2 (USA)
+Judge Dredd (Rev B)
+Judge Dredd (Rev C)
+Mr Driller 2 [smf]
+NBA Jam Extreme
+Primal Rage 2
+Quiz Syukudai wo Wasuremashita [Olivier Galibert]
+Scramble Spirits [Olivier Galibert]
+Star Gladiator [smf]
+Strider 2 (ASIA)
+Strider 2 (USA)
+Super Masters Golf [Olivier Galibert]
+Target Balls [David Haywood] (not looked at it much yet, seems to be paradise.c)
+
+
+Source changes:
+----------------------
+- Various System 24 Improvements, Fixing Priorities, Clipping issues etc. [Olivier Galibert].
+- Improved Lightgun Code/Reload Handling [Bryan McPhail]:
+  * '-lightgun' now enables the lightgun only - no button remapping is performed.
+  * '-reload' (formally '-offscreen_reload') is now needed for 2nd button presses to map to offscreen shots.
+  * '-dual' (formally '-dual_lightgun') adds support for the Actlabs Dual Lightgun setup, it may be used with and without '-reload' and it requires '-lightgun'. 
+  This mode attempts to automatically remap the player 1 & 2 buttons to suit the lightgun setup.  If it doesn't work you probably need to delete the .cfg file for that game.
+- Removed '(hack?) from descriptions of newly added raizing games, stickers on the boards seem to indicate they are genuine Korean release versions [David Haywood].
+- Improved ms32 sound a bit [Tomasz Slanina].
+- Removed 8.3 ROM filename limitation [Olivier Galibert].
+- Removed neomame/cpmame [David Haywood].
+- Various Seattle + related updates [Aaron Giles]:
+  - MIPS3 core:
+  * Fixed handling of condition codes so they are stored in CCR31 now.
+  * Fixed handling of CCR31 so that rounding modes are set correctly (in the 	DRC only).
+  Seattle:
+  * Added support for 'Biofreaks'.
+  * Fixed remaining issues in 'California Speed'.
+  * Verified California Speed HDD dump (works in self test, not in boot ROM	test).
+  * Fixed timer change that broke 'Blitz 2000'.
+  * Added proper PIC IDs for 'Wayne Gretzky' and 'Mace'.
+  - IDE controller:
+  * Fixed final sector handling for 'Gauntlet: Dark Legacy'.
+  - Midway IC:
+  * Added sound auto acknowledgement option.
+  * Added new PIC mapping for 'Gauntlet: Dark Legacy'.
+  * Fixed initial sound IRQ state.
+  - DCS:
+  * Fixxed reporting of input full/output empty states.
+  - Voodoo:
+  * Added initial Voodoo 2 support.
+  * Removed hack to toss what I thought were bogus triangles.
+  * Improved W buffer handling.
+  * Improved accuracy of depth buffer handling.
+- PSX core Improvements [smf]:
+  * Added GPU packet 41, 52 & 77.
+  * Added preliminary looped DMA detection.
+  * Added SQR & CC opcodes.
+  * Fixed MVMVA disassembly.
+  * Fixed MVMVA with LM bit set.
+  * Improved root counter emulation.
+  * Improved SIO emulation.
+  * Preliminary screen flipping / blanking support.
+  * Preliminary SPU emulation.
+  * Resetting GPU sets default texture window.
+  * Supports uploading 1024 pixel wide. textures.
+  * SWC bit in SR is ignored.
+- GP-13 board layout [Brian A. Troha]
+- NCR 53CF96-2 SCSI controller emulation [R. Belmont].
+- Added ADPCM and fixed jerky music in Pass [Tomasz Slanina].
+- Fixed the colors in Hana Oriduru [Luca Elia].
+- ROM patch to fix sound CPU communication in Gundam Psycho Salamander [Tomasz Slanina].
+- Improvements to 'Speed Attack' colours [Pierpaolo Prazzoli].
+- Misc fixes/tilemap conversions (prehisle, psychic5, tunhunt + more) [Curt Coder].
+- More MS32 sound Improvements [Tomasz Slanina].

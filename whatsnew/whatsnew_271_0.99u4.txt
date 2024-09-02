@@ -1,0 +1,46 @@
+0.99u4 2005/08/24 [#271 - Aaron Giles]
+--------------------------------------
+
+
+New clones added
+----------------
+Plotting (US) [David Haywood]
+
+
+MAMETesters Bugs Fixed
+----------------------
+quarth37b1gre [Pierpaolo Prazzoli]
+devilw36b10yel [Pierpaolo Prazzoli]
+vulcan137b1gre, part 7 [Pierpaolo Prazzoli]
+
+
+Source changes:
+---------------
+- Added memory card and cheat menus back into the system [Aaron Giles].
+- Fixed MNG recording problem that was introduced in u3 [Aaron Giles].
+- Fixed crash when running vector games that was introduced in u3 [Aaron Giles].
+- Cleaned up/normalized the naming of several core structures in an attempt to impose some order on coding conventions in the core code:
+
+  struct InputPortDefinition   -> input_port_default_entry
+  struct InputPort             -> input_port_entry
+  struct RegionInfo            -> region_info
+  struct RunningMachine        -> running_machine
+  struct GameOptions           -> global_options
+  struct GameDriver            -> game_driver
+  struct InternalMachineDriver -> machine_config
+  struct MachineCPU            -> cpu_config
+  struct MachineSoundRoute     -> sound_route
+  struct MachineSound          -> sound_config
+  struct MachineSpeaker        -> speaker_config
+  struct RomModule             -> rom_entry
+  struct SystemBios            -> bios_entry
+  struct GfxLayout             -> gfx_layout
+  struct GfxElement            -> gfx_element
+  struct GfxDecodeInfo         -> gfx_decode
+
+Plus many others along the same lines (follow the pattern). Note that this work is not yet complete. In addition, a few of the more pervasive structs (mame_bitmap, rectangle) will be left until a non-diff release (0.100) [Aaron Giles].
+- Removed -skip_disclaimer since it automatically goes away after the first time execution [Aaron Giles].
+- Created new NMK112 ROM banking module and connected it up to a number of drivers that made use of it. Affected games are in cave.c, nmk16.c, powerins.c, quizpani.c, toaplan2.c [Alex W. Jackson].
+- Added missing buttons to 'Showdown' [David Widel].
+- Fixed the PULUW instruction on the 6309 disassembler [Nathan Woods].
+- Fixed the state save facility play better on multisession ports if initialization fails [Tim Lindner].

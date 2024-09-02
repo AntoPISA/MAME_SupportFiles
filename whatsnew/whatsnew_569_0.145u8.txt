@@ -1,0 +1,100 @@
+0.145u8 2012/05/07 [#569 - Miodrag Milanovic]
+---------------------------------------------
+
+
+MAMETesters Bugs Fixed
+----------------------
+- 00413: [Sound] (crimfght.c) crimfght: The speed of the music is playing ever so slightly too slowly. (Mamesick)
+- 01232: [Sound] (aliens.c) aliens: Comparing to the pcb, the music in MAME is slower. (Mamesick)
+- 04745: [Interface] Game select UI hangs when using cursor keys (Couriersud)
+- 04766: [Graphics] (mario.c) mario and clones: Missing Title/Game Graphics (Phil Bennett)
+- 04768: [Graphics] (nova2001.c) ninjakun: Missing game Graphics and Tilemap Scroll (Phil Bennett)
+- 04769: [Crash/Freeze] (flower.c) All sets in flower.c: Black screen (hap)
+- 04771: [Speed] (hyprduel.c) magerror: Massive drop in performance at Warning Screen and onwards (Phil Bennett)
+- 04772: [Crash/Freeze] (midtunit.c) jdreddp: Crash before OK (Phil Bennett)
+- 04774: [Crash/Freeze] (naomi.c) Most sets in naomi.c: Crash before OK (R. Belmont)
+- 04775: [Crash/Freeze] (pgm.c) ddpdoj, ddpdoja, ddpdojb, espgal,  ket, keta, ketb: Crash before OK (mahlemiut)
+- 04777: [Crash/Freeze] (scramble.c) 800fath, ad2083, knockout, mariner, triplep: Crash before OK (Tafoid)
+- 04778: [Crash/Freeze] (subsino2.c) bishjan, mtrain, wtrnymph: Crash before OK (Tafoid)
+- 04779: [Crash/Freeze] (scobra.c) billiard, hustler, hustlerb2, hustlerd: Crash before OK (Tafoid)
+- 04781: [Documentation] (bfm_sc5.c) sc5potp and clone: The correct year of production is '2005'.
+- 04782: [Documentation] (bfm_sc4.c) sc4slc and clones: The correct year of production is '2003'.
+- 04783: [Documentation] (bfm_sc4.c) sc4jjunc and clones: The correct year of production is '2002'.
+- 04784: [Documentation] (mpu5.c) m5doshpk: The correct description is 'Do$h 'n' Pecks (Barcrest) (MPU5).
+- 04785: [Compiling] Default 'tiny' does not build. (micko)
+- 04786: [Original Reference] (cps2.c) vhunt2d: In-Game selftest fails on Program Rom 04
+- 04787: [Sound] (epos.c) dealer: Missing sounds
+- 04788: [Original Reference] (cps2.c) vsav2d: Several roms do not pass selftest.
+- 04794: [Graphics] (bombjack.c) bombjack & clone: Missing  sprites (Phil Bennett)
+
+
+New games added or promoted from NOT_WORKING status
+---------------------------------------------------
+Dungeon Explorer (Tourvision PCE bootleg) [Charles MacDonald, AUMAP, ClawGrip]
+Funcube 5 [Luca Elia, Yohji, Tormod, The Dumping Union]
+Golden Arrow (Standard G8-03) [hap, dox, DHS]
+Jue Zhan Tian Huang [Yohji, Mr. CAST, B. Stahl, Smitdogg, The Dumping Union, David Haywood]
+Super Stars [Roberto Fresca, Angelo Salese, Andreas Naive]
+Super Volleyball (Tourvision PCE bootleg) [Charles MacDonald, AUMAP, ClawGrip]
+
+New clones added
+----------------
+Congo Bongo (3 board stack) [Kevin Eshbach, The Dumping Union]
+Erotictac/Tactic (ver 01) [Bonky0013]
+Gulf Storm (set 2) [Bonky0013]
+Mahjong Yoshimoto Gekijou [BET] [Takahiro Nogi]
+Moon Cresta (Nichibutsu UK, unencrypted) [Andy Welburn]
+Red Fox War Planes II (China) [B. Stahl, Smitdogg, The Dumping Union]
+Sharpshooter (Rev 1.9) [Brian Troha, The Dumping Union]
+Space Firebird (rev. 02-a) [Andy Welburn]
+Top Racer (bootleg of Driving Force) [Team Europe]
+Zoku Mahjong Housoukyoku [Takahiro Nogi]
+
+New games marked as GAME_NOT_WORKING
+------------------------------------
+Bikkuri Card [Yohji, Mr. CAST, Tormod, CptGuapo, Smitdogg, The Dumping Union]
+Chance Thirty Two [Team Europe, Marcus Jendroska,Y~K, The Dumping Union, Smitdogg]
+Mahjong Hanafuda Cosplay Tengoku 8 [Yohji, Mr. CAST, Smitdogg, The Dumping Union]
+Multi Game III (V.Ger 3.64) [Roberto Fresca, Andreas Naive, Team Europe]
+
+
+Source changes:
+---------------
+- 6551acia.c: m_status_register was not being initialized properly [Robbbert].
+- Added ability to add the graphics in the external drwho art file to the new reel structure [David Haywood].
+- Added basic protection simulation for Battle Emporer, allowing for gameplay to the end [David Haywood].
+- Added Rev "H" USA Naomi BIOS [Brian Troha, The Dumping Union].
+- Added the clock counter chain and other common functions into device_rtc_interface, removing duplicated code in RTC implementations. Rewrote the Dallas DS1302 to support additional features needed by IDE64 in MESS [Curt Coder].
+- Added/filled in about 110 missing Scorpion 4/5 romsets [Brian Griffin].
+- Amatic AMA-8000 improvements [Roberto Fresca]:
+  * Found the hopper motor signal. Mapped the hopper pay pulse to key 'Q'. Now is possible to payout manually, avoiding the hang for hopper empty or timeout.
+  * Renamed amaticmg3 to amaticmg2 since is the AMA-8000-2 system.
+- Amatic Multi Game System driver improvements [Roberto Fresca]:
+  * Added a button-lamps layout.
+  * Added support for outputs: lamps and counters.
+  * Added technical notes.
+  * Changed am_uslot to suprstar.
+  * Identified the slots game as Super Stars.
+  * Promoted the game to working state.
+  * Reworked inputs from the scratch.
+- Clean-ups to sound and fixed volume balance in Nichibutsu Mahjong drivers [Takahiro Nogi].
+- cps2.c: fixed vhunt2d and vsav2d ROM loading [Pythagoras].
+- Fix error in decompression for avhuff. Converted cubeqst CHD now pass verification [Aaron Giles].
+- Fix invalid ISO C syntax in neogeo driver noted by Clang [Balrog, R. Belmont].
+- Fix PowerPC OS X compile [R. Belmont].
+- Fix video counter reporting on Williams games (should stay at maximum value until reset) [Sean Riddle].
+- Fixed gameplay crash regression in 'Zero Team' [Angelo Salese].
+- Fixed missing sprites/HUD regression in Lock-On [Phil Bennett].
+- gei.c: Sorted out the correct question roms for 'Trivia (Questions Series 12)' and 'Trivia (Questions Series 14)' [Brian Troha].
+- Hikaru: Added some new technical findings [Stefano Teso].
+- i386: Big pmode update [Carl].
+- i386: Fix for bt? instructions [Carl].
+- Implemented new paletteram_xGGGGGRRRRRBBBBB_byte_le_w() function, used by Chance 32 [Angelo Salese].
+- Marked all remaining old-style CDs without gap information BAD_DUMP. These will still run (where applicable), but need to be re-ripped for best accuracy (and proper audio track timing for some Bemani games) [R. Belmont, Firewave].
+- naomi: Redumped Azumanga Daioh Puzzle Bobble GD-ROM [Team Japump!].
+- niyanpai.c: Fixed graphics draw speed [Takahiro Nogi].
+- Started adding support for scrolling reel displays, currently text only, but should be pretty easy to get graphics in there and add different direction scrolling - updating sc4 code to use these new types [David Haywood].
+- Stepper display output fix  [James Wallace].
+- Updated layouts for numerous slots to take advantage of new reel development [James Wallace].
+- Updated ROM label.locations for Star Force based on PCB pictures provided by bonky0013 [Tafoid].
+- zaxxon.c: Corrected ROM labels and U locations for the Congo Bongo sets. Added the 3 board stack version with correct PBROM. Added additional documentation about the 2 board stack and the 3 board stack [Kevin Eshbach, The Dumping Union].

@@ -1,0 +1,61 @@
+0.81u8 2004/04/27 [#180 - David Haywood]
+----------------------------------------
+Private release due to some code cleanups being needed.
+
+
+New Games supported or promoted from GAME_NOT_WORKING status:
+-------------------------------------------------------------
+Atari Mini Golf (prototype) [Stefan Jokisch]
+Inca (clone of Maya) [ClawGrip]
+	
+New Non-Working games / clones supported
+----------------------------------------
+MACS (Multi Amenity Cassette System) [David Haywood] (unknown cpu, seems to be z80 based (16-bit?) with extra opcodes)
+Namco FL (Speed Racer / Final Lap R) [R. Belmont] (preliminary emulation (doesn't get very far) to test i960 core)
+
+
+Source changes:
+----------------------
+- 386 updates [Nathan Woods]:
+  * Implemented usage of segment limits (or whatever they are called).
+  * Implemented 16-bit interrupts.
+  * Initial values of IDTR are now properly specified.
+  * i386_interrupt() is no longer called when i386_set_irq_line() is called with a state of zero.
+  * Actual cycle count is now returned.
+  * Partially implemented far CALL and JMP instruction.
+  * Implemented PUSH rm8 instruction.
+- i960 cpu core / disassembler [Olivier Galibert, R.Belmont, Farfetch'd].
+- SPI Improvements [Ville Linde]:
+  - SPI:
+  * The "old" video hardware (viperp1) does have 3 layers after all, but no rowscroll. Fixed.
+  - 386:
+  * Bugfixed Nathan's REP.
+- Fixed YMF271 pitch: Improves music in Brave Blade [Ville Linde].
+- Fixed small fileio problem [Nathan Woods].
+- 386 updates [Nathan Woods]:
+  * Added a distinction between maskable and non maskable interrupts (like int 3, illegal instruction etc).
+  * Added a distinction between invalid and unimplemented instructions. Invalid instructions raise an interrupt, and unimplemented instructions call osd_die() for now.
+  * i386_set_irq_line() will no longer raise an interrupt when passed with state=0.
+  * Various string intructions now use SI/DI instead of ESI/EDI when in 16-bit mode.
+  * Implemented LOCK and RETF.
+  * Fixed a bug in LMSW.
+  * Minor disassembler fixes.
+- Improved PSX sio [smf].
+- Various DIP fixes [Brian Troha]:
+  * American Horseshoes & Plotting (taito_l.c)
+  * Break Through (brkthru.c)
+  * Gold Medalist (alpha68k.c)
+  * Got-Ya (gotya.c)
+- Phil's 'if I get hit by a bus' Namco S22 MLE update [Phil Stroffolino]:
+  - TMS32025:
+  * Bugfix for lst and lst1 opcodes; the "ignore ARP" hack has been replaced with a better hack, that doesn't interfere with indirect addressing.
+  * Preliminary serial I/O support has been added, to update DRR/DXR on RINT and XINT interrupts.  set_irq_line() no longer masks the lines with 0x7; this allows external triggering of RINT/XINT interrupts.
+  - System22 driver changes:
+  * Display list processing is now done by the master DSP.
+  * The slave DSP's in-game graphics processing and "custom render devices" are currently simulated, which works only for Prop Cycle.
+  * Support for PDP block-based memory transfers.
+  - Support for DSP data/code uploads from main CPU.
+  - Support for "Point RAM" and "Point ROM" access.
+  - Most self tests are working in Prop Cycle and Ridge Racer (Japan).
+  - Prelim hand-crafted "internal ROMs" for master and slave DSP.
+  - Various notes regarding DSP ports/addressing.

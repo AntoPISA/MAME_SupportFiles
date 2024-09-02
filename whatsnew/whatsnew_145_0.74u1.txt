@@ -1,0 +1,33 @@
+0.74u1 2003/09/23 [#145 - David Haywood]
+----------------------------------------
+
+
+New games supported
+-------------------
+Big Bucks [Pierpaolo Prazzoli]
+Driving Force [Pierpaolo Prazzoli]
+Embargo [Stefan Jokisch, MASH]
+Porky [Pierpaolo Prazzoli, Peter Storey] (no sound)
+
+New Clones supported
+--------------------
+8 Ball ACtion (Pacman Kit) [Pierpaolo Prazzoli, David Widel] (bad colours no sound)
+PuzzLoop (USA) [Brian Troha]
+
+
+Source changes:
+----------------------
+- Added (Medal) Yumefuda as TestDriver. Preliminary, doesn't boot yet [Angelo Salese].
+- Added Competition Golf as TestDriver. Incomplete video emulation [Angelo Salese].
+- Added Paddle support to pop 'n' bounce (use -mouse, enable it in test mode, the default is joystick not paddle) [David Haywood].
+- Changed frogs to use a 3 way joystick instead of a 3 way joystick and 2 buttons which was incorrect [Robin Merrill].
+- Fixed Crash with the original mustang set [R. Belmont].
+- Fixed SegaPCM bug [Olivier Galibert].
+- Fixed some problems with defaults in inptport.c [Robin Merrill].
+- Further ST-V improvements [Angelo Salese, David Haywood].
+- Hopefully fixed crash some people were having with Nostradamus [David Haywood].
+- Improved the type 1 GX games a bit but none are working well enough to enable yet [R. Belmont].
+- MAME now recognises off-screen shots with the Act-Labs gun in a way which works better with certain drivers (Area 51 etc,) [Bryan McPhail].
+- Moved Some Config Code around [Nathan Woods].
+- Remapped some of the mid*unit.c buttons to match the real board inputs.
+- Various SH2 fixes improving Master/Slave support (this improves shienryu on st-v but its not yet playable due to incomplete st-v emulation) [Olivier Galibert].

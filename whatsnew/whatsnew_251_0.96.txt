@@ -1,0 +1,62 @@
+0.96 2005/5/3 [#251 - Aaron Giles]
+--------------------------------------
+IMPORTANT: As of MAME 0.96, the source code license has changed. Please see the new file license.txt for details. The new license is based off the BSD license, with additional prohibitions against commercial usage. See http://mamedev.org for additional details.
+
+
+New games added or promoted from NOT_WORKING status 
+---------------------------------------------------
+Boogie Wings [Bryan McPhail]
+Pocket Gal Deluxe [Bryan McPhail]
+Pro Mahjong Kiwame S [Angelo Salese]
+Rohga Armour Force [Bryan McPhail]
+Schmeiser Robo [Bryan McPhail]
+Torus [Pierpaolo Prazzoli]
+Treasure Hunt [Angelo Salese]
+X the Ball [Aaron Giles]
+
+New clones added
+----------------
+Atomic Punk (US) [Brian Troha]
+Golden Tee 3D Golf Tournament (v2.11) [Brian Troha]
+Lup Lup Puzzle (version 2.9 / 990108) [Brian Troha]
+Progressive Music Trivia (Question set 2) [Pierpaolo Prazzoli]
+Rave Racer (Rev. RV1, Japan)
+Ridge Racer (Rev. RR2, World)
+Ridge Racer 2 (Rev. RRS1, Ver.B, Japan)
+Ridge Racer 2 (Rev. RRS2, US)
+Rong Rong (Europe) [Pierpaolo Prazzoli]
+Slick Shot (V1.6) [Aaron Giles]
+Survival Arts (World) [Brian Troha]
+
+New games marked as GAME_NOT_WORKING
+------------------------------------
+Double Wings [Bryan McPhail]
+Lock-On [Philip Bennett]
+
+
+Source changes:
+---------------
+- Added step in/out support to TMS34010 disassembler [Aaron Giles].
+- Added explanation that left/right joystick wiggle works on "OK" screens [Aaron Giles].
+- Fixed -dual_lightguns option [Jonathan Lunman].
+- Hooked up Pocket Gal Deluxe bootleg graphics ROMs [David Haywood].
+- Removed abort() calls from v60 CPU driver [Brad Oliver].
+- Fixed collision detection in bioatack, added missing RAM to the Taito SJ memory map [Peter Sealy].
+- Decrypted Calorie Kun, and cleaned up sega Z80 encryption code [Nicola Salmoria].
+- Some improvements to Dream World [David Haywood].
+- Fixed implementation of memory_get_op_ptr() [Nathan Woods].
+- Fixed coin inputs and dip-switches in joinem [Pierpaolo Prazzoli].
+- Fixed problem with beatmania games on the Mac [Brad Oliver].
+- Updated Vendetta chip frequencies to match real PCB [Mamesick].
+- Some improvements to Turbo Sub [Philip Bennett].
+- Fixed endianness problems in the Sega System 32 games ROM loading [Brad Oliver].
+- A number of ST-V improvements [Angelo Salese]:
+  * Fixed a DSP bug which was causing Treasure Hunt to hang. The game is working but with graphics artifacts because of other DSP bugs...
+  * Added the possibility on the VDP1 to double the horizontal  resolution under some circumstances. This affects Astra Super Stars, Virtual Mahjong & Virtual Mahjong 2.
+  * Removed the Baku Baku Animal hack since it's not needed anymore (dunno when this was fixed).
+  * Fixed a bug in the A-Bus protection handling for games which have ROM data mapped here.
+  * Made some small fixes to the SCU.
+  * Added a quick hack to avoid the sound reading "hang",disabled by default.
+  * There's also some WIP code for the protection in astrass & ffreveng.
+- Fixed endianness problems in the Eolith games [Brad Oliver].
+- Fixed graphics in Joyful Road [QWERTY].

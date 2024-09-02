@@ -1,0 +1,93 @@
+0.37b10 2000/12/06 [#103 - Nicola Salmoria]
+-------------------------------------------
+
+
+New games supported:
+--------------------
+(8ball)    Video Eight Ball [Mike Coates]
+(amspdwy)  American Speedway (set 1) [Luca Elia]
+(argus)    Argus [Yochizo]
+(beathead) BeatHead (prototype) [Aaron Giles]
+(chinatwn) China Town (Japan) [Bryan McPhail]
+(cosmos)   Cosmos [Mike Coates]
+(darius2)  Darius II (Japan) [David Graves]
+(darkwar)  Dark Warrior [Mike Coates]
+(dazzler)  Dazzler [Mike Coates]
+(dleague)  Dynamite League (Japan) [Yochizo]
+(goldbug)  Gold Bug [Mike Coates]
+(gtg)      Golden Tee Golf [Aaron Giles]
+(gtg2)     Golden Tee Golf II (Trackball, V2.2) [Aaron Giles]
+(heartatk) Heart Attack [Mike Coates]
+(hero)     Hero [Mike Coates]
+(holeland) Hole Land [Mathis Rosenhauer]
+(hstennis) Hot Shots Tennis [Aaron Giles]
+(hunchbak) Hunchback [Mike Coates]
+(huncholy) Hunchback Olympic [Mike Coates]
+(logger)   Logger [Mike Coates]
+(mrflea)   Mr. F. Lea [Phil Stroffolino]
+(ninclown) Ninja Clowns [Aaron Giles]
+(ninjaw)   The Ninja Warriors (Japan) [David Graves]
+(omegaf)   Omega Fighter [Yochizo]
+(peggle)   Peggle (Joystick) [Aaron Giles]
+(perfrman) Performan [Quench]
+(pipedrm)  Pipe Dream (US) [Bryan McPhail]
+(radarzon) Radar Zone [Mike Coates]
+(recordbr) Recordbreaker (World) [Yochizo]
+(rimrockn) Rim Rockin' Basketball (V2.2) [Aaron Giles]
+(robokid)  Atomic Robokid [Yochizo]
+(slikshot) Slick Shot [Aaron Giles]
+(stompin)  Stompin' [Aaron Giles]
+(superbik) Superbike [Mike Coates]
+(syvalion) Syvalion (Japan) [Yochizo]
+(topspeed) Top Speed (World) [David Graves]
+(valtric)  Valtric [Yochizo]
+(wallst)   Wall Street [Mike Coates]
+(warriorb) Warrior Blade (Japan) [David Graves]
+(wfortune) Wheel Of Fortune [Aaron Giles]
+(wgp)      World Grand Prix (US) [Nicola Salmoria]
+
+New clones supported:
+---------------------
+(8ball1)   Video Eight Ball - Rev.1 [Mike Coates]
+(amspdwya) American Speedway (set 2) [Luca Elia]
+(bzonec)   Battle Zone (cocktail) [MASH]
+(darius2d) Darius II (dual screen) (Japan) [David Graves]
+(fullthrl) Full Throttle (Japan) [David Graves]
+(ghostmun) Ghost Muncher [Guru]
+(gtg2j)    Golden Tee Golf II (Joystick, V1.0) [Aaron Giles]
+(gtg2t)    Golden Tee Golf II (Trackball, V1.1) [Aaron Giles]
+(indytemd) Indiana Jones and the Temple of Doom (German) [Nicola Salmoria]
+(mk2chal)  Mortal Kombat II Challenger (hack) [Nicola Salmoria]
+(mk2r91)   Mortal Kombat II (rev L9.1, hack) [Nicola Salmoria]
+(omegafs)  Omega Fighter Special [Yochizo]
+(outline)  Outline [Mike Coates]
+(pegglet)  Peggle (Trackball) [Aaron Giles]
+(pkladiel) Poker Ladies (Leprechaun) [Nicola Salmoria]
+(radarzn1) Radar Zone - Rev.1 [Mike Coates]
+(radarznt) Radar Zone - Tuni [Mike Coates]
+(rimrocka) Rim Rockin' Basketball (V2.0) [Aaron Giles]
+(robokidj) Atomic Robokid (Japan) [Yochizo]
+(silentdj) Silent Dragon (Japan) [Nicola Salmoria]
+(topspedu) Top Speed (US) [David Graves]
+(wgpj)     World Grand Prix (Japan) [Nicola Salmoria]
+
+
+These drivers have improved GRAPHICS:
+-------------------------------------
+- Fixed priorities in "Pac 'n Pal' [Aaron Giles].
+- Fixes to "Xexex' [Olivier Galibert].
+- Improved colors in "Mr. Do!' [Nicola Salmoria].
+
+
+These drivers have improved SOUND:
+----------------------------------
+- Improved sound in 'World Cup '90' [John (and Philip) Bennett].
+- Fixed a YMZ280B bug that caused bad sound in the Cave games [Bernd Wiebelt].
+
+
+Source changes:
+-------------------
+- Improved C-chip simulation in Rainbow Island, fixing secret rooms [Stefan Jokisch].
+- Improved collision detection in 'Thunder Cross' [Eddie Edwards].
+- Paddles now map linearly to the analog joystick.
+- New functions draw_scanline8() and draw_scanline16() to help bitmap based games in supporting display rotation and 16-bit video modes. Converted a number of drivers to this new system [Aaron Giles].

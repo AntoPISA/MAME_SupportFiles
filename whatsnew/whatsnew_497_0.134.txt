@@ -1,0 +1,50 @@
+0.134 2009/09/10 [#497 - Aaron Giles]
+-------------------------------------
+
+
+MAMETesters Bugs Fixed
+----------------------
+- 03430: [Crash/Freeze] Drivers having empty INPUT definitions: Access Violation (Curt Coder).
+- 03432: [Sound] circusc and clones: Partially missing sounds (rte).
+- 03433: [Misc.] Jolly Card, Royal Card, Lucky Lady, Royal Vegas sets (and others): All games that need NVRAM initialized aren't working anymore (Roberto Fresca).
+- 03434: [Sound] dingo: Sound is messed up (Couriersud).
+
+
+New games added or promoted from NOT_WORKING status
+---------------------------------------------------
+Povar / Sobrat' Buran / Agroprom [Mariusz Wojcieszek]
+Czernyj Korabl [Mariusz Wojcieszek]
+Brodjaga [Mariusz Wojcieszek]
+
+
+Source changes:
+---------------
+- Partial fix to CIA timer: avoid timer's desync in read count operation [robiza].
+- Fixed access violation in MESS skeleton drivers with empty INPUT_PORT sections [Curt Coder].
+- [Z8] Fixed disassembler argument order [Curt Coder].
+- MAMEUI uses input_seq_from_tokens() outside the context of a running emulation, so this code will crash if machine == NULL and the keycode was not a built in keycode. Changed this so that it will gracefully fail if machine == NULL [Nathan Woods].
+- Naomi/AW: Enforce read-only status of PowerVR ID registers [R. Belmont].
+- Added debug_global_input_code_pressed() for use in debugging [Aaron Giles].
+- Remove remaining references to machine->cpu[n]. Removed cpu[n] array. Replaced with machine->firstcpu which is a fast access to the head of the list of CPUs [Aaron Giles].
+- Minor cleanup of machine/generic.c. Changed watchdog_read handlers to return the address space's unmapped value rather than 0xff [Aaron Giles].
+- Fixed CIA PRA, PRB, DDRA, DDRB ports [robiza].
+- Added discrete sound to the Noraut Poker games [Derrick Renaud, Roberto Fresca].
+- Funworld.c changes [Roberto Fresca]:
+  * Discovered and documented new features in Jolly Card (Evona Electronics).
+  * Removed the commented hack for joly980 driver init since is not needed anymore.
+  * Fixed a bug introduced with the massive input change, that didn't allow initialize all sets that need the normal procedure to do it.
+  * Updated technical notes.
+- PIC16C5x CPU - Fixed the T0CKI count input being controlled by the wrong edge sensing [Quench].
+- SNES: Added emulation for the DSP-3 and DSP-4 add-on chips, based on latest ZSNES [ZSNES Team, Fabio Priuli].
+- G65816: Fixed a bug with SBC opcode N flag behaviour in Decimal Mode [Angelo Salese].
+- Segas24 ROM games don't have NVRAM; fixed nvram_save writing 0KB file [hap].
+- 68681/2681 duart: When a channel is in loopback mode, do not actually transmit bytes sent to that duart channel over the TX pin. [Lord Nightmare].
+- Hooked up F6 again as a global cheat enable/disable [Pugsy].
+- i386 fixes [Gabriele Gorla]:
+  * Add missing arpl instruction.
+  * Fixed BCD carry.
+  * Fixed disassembly of group D8 when modrm > 0xc0.
+  * Add fucompp instruction to disassembler.
+- Added "increase or equal" and "decrease or equal" options to the new cheat commands [Sandro Ronco].
+- Added helper function core_i64_hex_format. Replaced several printf cases in the debugger with this function to avoid runtime differences on older Windows systems. Also fixed up some error logging messages to output the correct number of characters for addresses and data, using the new function [Aaron Giles].
+- Added missing static and const qualifiers, and fixed up some header files [Atari Ace].

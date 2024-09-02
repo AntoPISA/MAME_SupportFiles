@@ -1,0 +1,54 @@
+0.117 2007/07/10 [#386 - Aaron Giles]
+-------------------------------------
+
+
+MAMETesters Bugs Fixed
+----------------------
+gauntleg0116u4red (Zsolt Vasvari, Aaron Giles)
+vlm5030_0116u4gre (Zsolt Vasvari)
+tetrisp2_0116u4red (Zsolt Vasvari)
+primrage0116u3yel (Aaron Giles)
+debuggerandmt_0116u2red (Aaron Giles)
+memleak0116u4ora (Aaron Giles)
+term2_0116u1yel (Aaron Giles)
+
+
+New games added or promoted from NOT_WORKING status
+---------------------------------------------------
+Taisen Hot Gimmick 4 Ever (Japan) [Guru, David Haywood]
+
+New clones added
+----------------
+Photo Finish [Tomasz Slanina]
+Golden Poker (no double up) [Roberto Fresca]
+
+New games marked as GAME_NOT_WORKING
+------------------------------------
+39 in 1 MAME bootleg [R. Belmont, Guru]
+Super Pool (Italy) [Roberto Fresca]
+Guitar Freaks 6th Mix (G*B06 VER. JAA) [smf]
+Guitar Freaks 11th Mix (G*D39 VER. JAA) [smf]
+
+
+Source changes:
+---------------
+- Added save state support to bzone.c games [R. Belmont].
+- Fixed missing sound in Leprechaun [Zsolt Vasvari].
+- Fixed some bugs involving empty or null ROM regions [Nathan Woods].
+- Fixed potential crash in speglsht driver [Atari Ace].
+- Changed the 6532riot code to split r6532_init into r6532_init and r6532_reset [Wilbert Pol].
+- Fixed CPS3 code to be big-endian friendly [R. Belmont].
+- Added alpha blending effects to the CPS driver and improved sprite positioning [David Haywood].
+- Moved "Pandora" sprite chip implementation to its own file. Updated Snow Bros, Air Buster, DJ Boy and Heavy Unit to use ths new generic implementation [David Haywood].
+- Fixed regression in segasyse driver [Zsolt Vasvari].
+- Reverted patch to the 6526CIA as it was causing issues with Amiga/Arcadia emulation [Pete Rittwage].
+- Deduced a few more opcodes for gussun. The game now boots and you can coin up [robiza].
+- Fixed regression in vmetal and tatsumi drivers [Zsolt Vasvari].
+- Fixed Taito version of chinhero [Zsolt Vasvari].
+- Simplified code in tms9928 video system [Zsolt Vasvari].
+- Fixed ROL opcode in the 68000 emulator [Zsolt Vasvari].
+- Cleaned up tiny MAME target [neoforma].
+- Fixed regression in Exidy sounds [Zsolt Vasvari].
+- Improved accuracy of mame_timer_scale_up [Aaron Giles].
+- Rotated the mame_rand() results by 16 bits to reduce periodicity of the resuls [Aaron Giles].
+- Fixed winalloc.c to be thread-safe [Aaron Giles].

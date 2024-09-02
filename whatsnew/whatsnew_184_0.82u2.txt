@@ -1,0 +1,75 @@
+0.82u2 2004/05/23 [#184 - David Haywood]
+----------------------------------------
+
+
+New Games supported or promoted from GAME_NOT_WORKING status:
+-------------------------------------------------------------
+Quiz Do Re Mi Fa Grand Prix [Eisuke Watanabe]
+Quiz Do Re Mi Fa Grand Prix 2 [Eisuke Watanabe]
+- Many ZN Based games [special thanks to Tourniquet, Olivier Galibert, smf, R. Belmont [red], Malice, Renegade, Twisty, Dox, But & many other mame.net board users]
+Victorious Nine [BUT]
+Golden Par Golf [Brian Troha]
+San Francisco Rush [Aaron Giles]
+Vapor TRX [Aaron Giles]
+
+New Clones supported or promoted from GAME_NOT_WORKING status:
+--------------------------------------------------------------
+Anteater (German) [Pierpaolo Prazzoli, MASH]
+Monster Maulers [R. Belmont]
+
+New Non-Working games / clones supported
+----------------------------------------
+Heaven's Gate [R. Belmont] (incomplete banking or psx bugs?)
+Gals Panic II - Quiz version [Pierpaolo Prazzoli]
+Dingo (encrypted set) [MASH] (bad rom)
+
+
+Source changes:
+----------------------
+- onetwo: Fixed glitch on Title screen. Colours could do with being checked on this [Pierpaolo Prazzoli].
+- goal92: Fixed clock, visible area and found it's missing the adpcm emulation. I tried to add it, but i had no luck, so if anyone want to have a look, please do it ;-) [Pierpaolo Prazzoli].
+- I386 and Mame Debugger Enhancements [Nathan Woods]:
+  * Attempting to start a trace with non-existant registers will now	raise a warning in the MAME debugger.
+  * Implemented mame_debug_trace_write() call, an API to allow injecting text into the trace files of the MAME debugger.
+  * CALL16 opcode will now only adjust IP instead of EIP when in 16-bit mode.
+  * Minor bug fix in RETF opcode.
+  * Changed REP and REPNE opcode implementations to use the same code.
+  * INTO will now interrupt even if IF is zero.
+- Misc Improvements [Curt Coder]:
+  * Memory map merge.
+  * Moved paddle2 trickery to machine.
+- Nintendo 8080 hardware update: The driver has now been split into three parts. A few features that have been missing in Helifire since my last update are back, i.e. the flickering colors when you're shot and the volume decay effect (this affects the melody at the start of a game and a few tunes that can be heard during the bonus scenes every twelve attack waves). The starfield should now scroll at the correct speed, it's only 75% of what it used to be. Finally, I have decided to use the color prom from Space Fever in Space Launcher, I think it's correct [Stefan Jokisch].
+- Change to eeprom_interface_93C46: please check games using this to make sure non broke [Tomasz Slanina].
+- Debugger: With this patch you can output traces to the console ( or grep etc ) by typing: TRACE CONSOLE [smf].
+- ST-V updates [Mariusz Wojcieszek]:
+  * Fixed bugs introduced in previous update: RGB sprites bad colors and incorrect sprite clipping.
+  * Added color offset for RGB sprites.
+  * Fixed horizontal scrolling for bitmaps (corrects mausuke ingame background).
+- Change to EEPROM_interface eeprom_interface_93C46 [Tomasz Slanina].
+- Seattle update [Aaron Giles]:
+  * x86drc.c: Fleshed out SSE support. Made it optional for recompilers to keep the PC/ICount in registers. Made append_verify_code work for sizes > 4.
+  * CPU/mips/mips3.c: Added support for the Config register. Added support for new variants: R4700, QED5271, RM7000. Fixed bug in LWXC1/LDXC1/SWXC1/SDXC1 instructions.
+  * Added support for the Config register.
+  * Added support for new variants: R4700, QED5271, RM7000.
+  * Extracted core codegen portion into new #include file mdrcold.c.
+  * Added more extensive documentation on the various boardsets.
+  * Added constants for the GT64010 and all interrupts.
+  * Added ethernet device interrupt support.
+  * Made the IDE controller visible on the PCI bus.
+  * Formalized support for the "widget" board used in vaportrx & calspeed.
+  * Hooked up CMOS protection bit.
+  * Corrected sfrushrk audio CRCs and hooked up hard disk.
+  * Marked sfrush and vaportrx as working.
+  * Added support for sfrushrk PIC.
+  * Added timeout on PIC reads to speed up sfrushrk.
+  * Fixed missing sound reset latch at startup.
+  * New implementation of SMC91C94 ethernet controller.
+  * Only loopback mode supported.
+  * Cleaned up logging.
+  * All stats now accessible via the backslash key.
+  * Got rid of ugly red/blue swap hack.
+  * Fixed missing truncation on vertex coordinates (fixes vaportrx graphics).
+  * Added support for alternate LFB write modes.
+- horshoes: fixed DIPS [Brian Troha].
+- PreGX Cleanups [R. Belmont].
+- 6532 RIOT patch (fixes some things in MESS) [Judge].

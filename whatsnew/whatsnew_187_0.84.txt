@@ -1,0 +1,152 @@
+0.84 2004/07/02 [#187 - David Haywood]
+--------------------------------------
+
+
+New Games supported or promoted from GAME_NOT_WORKING status:
+-------------------------------------------------------------
+Double Point [David Haywood]
+Dragon Bowl [Pierpaolo Prazzoli]
+Hangman [Pierpaolo Prazzoli]
+Knightmare (prototype) [Pierpaolo Prazzoli]
+Many new sets of Grayhound Trivia [Pierpaolo Prazzoli]
+Psychic Force EX [smf]
+
+New Clones supported or promoted from GAME_NOT_WORKING status:
+--------------------------------------------------------------
+Dragon World II (ver. 110X, Export) [David Haywood]
+Empire City: 1931 (US) [David Haywood]
+Fantasy Land (set 2) [MASH]
+Final Blow (US) [David Haywood]
+Gold Medalist (alt) [Pierpaolo Prazzoli]
+Mega Zone (3 alternate sets) [David Haywood]
+Puchi Carat (World) [Brian Troha]
+Saboten Bombers (set 2) [David Haywood]
+Street Drivin' (prototype) [Aaron Giles]
+Street Fight [David Haywood]
+Vapor TRX (prototype) [Aaron Giles]
+
+New Non-Working games / clones supported
+----------------------------------------
+Backfire! [David Haywood]
+BMC Bowling [David Haywood]
+Boogie Wings [David Haywood]
+Chain Reaction [David Haywood]
+Charlie Ninja [David Haywood]
+Diet Go Go [David Haywood]
+Double Wings [David Haywood]
+Gals Panic 3 [David Haywood, Sebastien Volpe]
+Ganbare! Gonta!! 2 [David Haywood]
+Heavy Smash [David Haywood]
+Idol Janshi Su-Chi-Pi Special [Pierpaolo Prazzoli]
+Joe & Mac Returns [David Haywood]
+Magical Drop [David Haywood]
+Magical Drop Plus [David Haywood]
+Mahjong Block Jongbou (Japan) [Pierpaolo Prazzoli]
+Marvel Vs. Capcom: Clash of Super Heroes (Brazil 980123) [Razoola]
+Meijinsen [David Haywood]
+Moto Frenzy (3 new sets) [Aaron Giles]
+Osman [David Haywood]
+Pocket Gal Deluxe [David Haywood]
+Space Lords (2 new sets) [Aaron Giles]
+Squash (Ver. 1.0) [Pierpaolo Prazzoli]
+Street Fighter Alpha 3 (Brazil 980629) [Razoola]
+Street Fighter Alpha: Warriors' Dreams (Euro 950605) [Razoola]
+Street Fighter Zero 2 (Oceania 960229) [Razoola]
+The Killing Blade [David Haywood]
+Thunder Hoop [Pierpaolo Prazzoli]
+Tornado (2 sets) [David Haywood]
+World Cup Volley '95 [David Haywood]
+
+
+MAME Testers bugs fixed (there are probably more)
+-----------------------
+mouja059yel [Hau]
+rimrockn057yel [Aaron Giles]
+
+
+Driver Improvements:
+--------------------
+- Added cocktail support to Super Stingray and Kyros, and coin counters to The Next Space [Pierpaolo Prazzoli].
+- Added missing SHA1 checksums to several ROMsets [Logiqx].
+- Added some newly discovered PIC IDs to the Seattle driver [Aaron Giles].
+- Added vertical flip to the sprites in Dragon Bowl [Pierpaolo Prazzoli].
+- Cleaned up the itech8 driver, now using new memory maps and standard VIA support [Aaron Giles].
+- Correct clock speed for Head On (Irem) [Guru].
+- Factored machine/turbo.c into two parts, one containing all the sound code. Includes some very crude attempts at making the beeps discrete [Aaron Giles].
+- Fix Red Robin [MASH].
+- Fixed improper use of memcpy in the Sega C2 driver [Andrea Mazzoleni].
+- Fixed intro in Gaiapolis [R. Belmont].
+- Fixed save/restore crash in the YM2610 emulation [Blip].
+- Fixed several endian issues in the PSX-related drivers [R. Belmont, smf].
+- Fixed sound clock frequency for Zero Point 1 [El Condor].
+- Fixed Super Pacman DIP switches [Pierpaolo Prazzoli].
+- Fixed the Speaker Puncturing Unit in the PSX games [darkcoder].
+- Fixed the SPU/CDDA volume balance in the konamigv games [R. Belmont].
+- Fixed the trackball & tidied up the flash load/save in Simpsons Bowling [smf].
+- Improved DIP switches in LSA Squad, Whizz, Chase HQ, and SCI [Brian Troha].
+- Improved DIP switches in Rim Rockin' Basketball [Brian Troha].
+- Improved PSX root counters [smf].
+- Improved sound in the Metro games [Hau].
+- Improved YMF271C sound quality [Toshiaki Nijiura].
+- Many improvements to Jackie Chan, but still not playable [Sebastien Volpe, David Haywood].
+- Several PSX SPU improvements [smf]:
+  * Added pio spu RAM writes.
+  * Fixed status register read/write.
+  * Internal mixer clamps output to 16 bits to fix distortion.
+  * State saves all registers.
+  * Removed the need for casts by making the decoded sample buffer signed.
+  * DMA read/writes are limited to the spu ram.
+- Some cleanups/renaming in the PGM driver [David Haywood].
+- Some minor NeoGeo and Super Kaneko Nova rendering speedups [Carlos Santillan].
+- ZN updates [smf]:
+  * Added japanese translations of magical date title.
+  * Fixed sfchamp/sfchampj parent/clone relationship.
+  * Emulates taitofx1 watchdog properly.
+  * Fixed system 11 NVRAM hookup.
+  * Added a kludge to start sonic wings ltd in attract mode.
+  * Fixed some issues with vertical display start/end registers.
+  * Added horizontal start/send register emulation.
+  * Fixed sound in qsound games.
+
+
+
+Source changes:
+---------------
+- A number of obsolete backward compatibility macros have been removed [Aaron Giles]:
+  See this list for the equivalents if you have a driver that is using them:
+
+  cpu_set_reset_line -> cpunum_set_input_line
+  cpu_set_halt_line -> cpunum_set_input_line
+  cpu_set_irq_line -> cpunum_set_input_line
+  cpu_set_irq_line_and_vector -> cpunum_set_input_line_and_vector
+  timer_suspendcpu -> cpunum_suspend/cpunum_resume
+  timer_holdcpu -> cpunum_suspend/cpunum_resume
+  cpu_getstatus -> cpunum_is_suspended
+  timer_get_overclock -> cpunum_get_clockscale
+  timer_set_overclock -> cpunum_set_clockscale
+  cpu_gettotalcycles -> cpunum_gettotalcycles
+  cpu_gettotalcycles64 -> cpunum_gettotalcycles64
+  keyboard_name -> code_name
+  keyboard_pressed -> code_pressed
+  keyboard_pressed_memory -> code_pressed_memory
+  keyboard_pressed_memory_repeat -> code_pressed_memory_repeat
+  keyboard_read_async -> code_read_async
+  install_mem_read*_handler -> memory_install_read*_handler
+  install_mem_write*_handler -> memory_install_write*_handler
+  install_port_read*_handler -> memory_install_read*_handler
+  install_port_write*_handler -> memory_install_write*_handler
+  memory_install_read*_handler_mirror -> memory_install_read*_handler
+  memory_install_write*_handler_mirror -> memory_install_write*_handler
+
+  READ_HANDLER -> READ8_HANDLER
+  WRITE_HANDLER -> WRITE8_HANDLER
+
+- Added ADSP2181 variant to the ADSP21xx CPU cores [Aaron Giles].
+- Added consistency checking for the year field [Nathan Woods].
+- Added support for many more instruction forms in x86drc.h [Aaron Giles].
+- Miscellaneous cleanups and refactorings done primarily to support a new MESS specific feature. Also removed some '#if 0' code [Nathan Woods].
+- New input port definitions, similar to the new memory map definitions. You can continue to use the old PORT_BIT, PORT_BITX, and PORT_ANALOG macros for now, but it is preferred going forward that all ports use only PORT_BIT, and append all other flags and options using the new macros. See pacman.c for an example of the new format. The new input ports also support tagging for easier tracking of ports, and the ability to import port definitions from another set [Nathan Woods].
+- New option in the Windows version: -wavwrite to save sound output to a WAV file [smf].
+- Removed -listinfo option now that xml2info produces fully correct output [Aaron Giles].
+- Removed some silly 6502 speedups in the Atari games [Aaron Giles].
+- Two minor fixes to xml2info so that 'MAME -listxml|xml2info' matches 'mame -listinfo' exactly [Logiqx].

@@ -1,0 +1,99 @@
+0.60 2002/05/01 [#117 - Nicola Salmoria]
+----------------------------------------
+
+
+New games supported:
+--------------------
+Black Heart [Kamel]
+Block Gal [Angelo Salese]
+Drag Race [Stefan Jokisch]
+Formation Z [Acho A. Tang]
+Hyper Duel [E. Watanabe]
+Hyper Pacman [David Haywood, Stephan Humbert]
+IQ Block [Nicola Salmoria, Ernesto Corvi]
+Judge Dredd [Aaron Giles]
+Many Bloc [David Haywood, Stephan Humbert]
+Mille Miglia 2: Great 1000 Miles Rally [David Haywood, Stephan Humbert]
+Miss Bubble 2 [David Haywood]
+Mustang [Kamel]
+News [David Haywood]
+Oriental Legend [ElSemi, David Haywood]
+Pool Shark [Stefan Jokisch]
+Primal Rage [Aaron Giles]
+Road Riot's Revenge [Aaron Giles]
+Shadow Force [David Haywood]
+Tactician [Nicola Salmoria, Stephane Humbert]
+Tank Busters [Jarek Burczynski]
+Taxi Driver [Nicola Salmoria]
+The Legend of Silk Road [David Haywood, Stephane Humbert, R. Belmont]
+The Masters of Kin [Nicola Salmoria]
+The Outfoxies [Phil Stroffolino]
+World Class Bowling [Aaron Giles]
+Xyonix [David Haywood, Stephan Humbert, Nicola Salmoria]
+
+New clones supported:
+---------------------
+Blood Storm (v1.10) [ Aaron Giles]
+Bone Crusher (= Knuckle Joe) [Smitdogg]
+Bubble Symphony (Europe) [Pekka Salmia, Brian Troha]
+C.O.W. Boys of Moo Mesa (World) [Pekka Salmia, Brian Troha]
+Clowns (rev 1) [Nicola Salmoria]
+Dragon Punch (= Sports Match) [Uki]
+Fighter & Attacker (= F/A) [Brian Troha]
+Fighting Golf (set 2) [Nicola Salmoria]
+Gun Bird (World) [Brian Troha]
+Hero in the Castle of Doom (Donkey Kong conversion) [Nicola Salmoria]
+Hot Shots Tennis (V1.0) [Aaron Giles]
+Knuckle Heads (World) [Brian Troha]
+Magic Worm (= Centipede) [Aaron Giles]
+Nebulas Ray (World) [Brian Troha]
+Pengo (bootleg) [Nicola Salmoria]
+Pirate Pete (= Jungle King) [MASH]
+R-Type Leo (World) [Nicola Salmoria]
+Space Invaders '95 (US) [Brian Troha]
+Strata Bowling (V1) [Aaron Giles]
+Street Fighter (prototype) [Aaron Giles]
+
+
+MAME Testers bugs fixed (there are probably more):
+--------------------------------------------------
+blmbycar059red
+uopoko059red
+gcpinbal059red
+jitsupro059red
+metroc059red
+phelios059red
+paclandc059red
+ncv1058red
+av2mj059red
+fromancec058red
+neogeoc37b15gre
+fround056red
+bioatack37b6gre
+crush057gre
+driverc056ora
+batsugun37b6gre
+
+
+These drivers have improved GRAPHICS:
+-------------------------------------
+- Fixed disappearing enemies in later levels of 'Batsugun' [Angelo Salese].
+
+
+These drivers have improved SOUND:
+----------------------------------
+- Improved Irem GA20 emulation, used by M92 games [Acho A. Tang].
+
+
+Source changes:
+--------------------
+- Fixed several problems in 'Kiki KaiKai' [Acho A. Tang].
+- Fixed colors in 'Wec Le Mans' and wrong graphics in 'Hot Chase' [Acho A. Tang].
+- Several fixes to Psikyo games [Paul Priest, David Haywood].
+- Several fixes to nemesis.c [Hau].
+- Complete rewrite of the cheat engine [Ian Patterson].
+- Support for external configuration files for special controllers; this replaces the -hotrod and -hotrodse options. See ctrl.txt for the detailed explanation [Ron Fries].
+- Complete rewrite of YM3812/YM3526/Y8950 emulation, verified on the real chip [Jarek Burczynski].
+- Fixes to Y8950 sample playback [Acho A. Tang].
+- New function memory_set_unmap_value(), to specify the value returned when an unmapped memory address is read [Aaron Giles].
+- osd_opl_control() and osd_opl_write() removed; direct access to the SoundBlaster OPL chip is no longer useful.

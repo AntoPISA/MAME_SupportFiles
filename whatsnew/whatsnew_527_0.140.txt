@@ -1,0 +1,63 @@
+0.140 2010/10/21 [#527 - Aaron Giles]
+-------------------------------------
+
+
+MAMETesters Bugs Fixed
+----------------------
+- 03074: [Sound] dkongjr and clones: Discrete audio output is lower pitched than normal (Derrick Renaud)
+- 03770: [Interface] Setting 'snapname %g' does not allow snap to be saved with F12 (Aaron Giles)
+- 03800: [Debugger] Many sets in snk.c: Viewing c000-c700 in debugger for "SUB" Z-80 causes memory corruption (MooglyGuy)
+- 03835: [Compiling] Visual Studio compiler warning in src\mame\video\n64.c
+- 03915: [Interface] All sets using -autosave: "auto.sta" can mistakenly be erased (Aaron Giles)
+- 03930: [Compiling] LDPLAYER fails to link (Aaron Giles)
+- 03937: [Misc.] Using CTRL-C to end MAME no longer works reliably (Aaron Giles)
+- 04059: [Graphics] qix, zookeep and clones: Player's character disappears during gameplay. (Aaron Giles)
+- 04065: [Compiling] Default 'tiny' does not build (Aaron Giles)
+- 04075: [Crash/Freeze] All sets in cps3.c: Black screen/Hang (Aaron Giles)
+- 04076: [Misc.] Artwork cropping not working correctly (Aaron Giles)
+- 04077: [Misc.] Crash when -effect is used (Aaron Giles)
+- 04078: [Crash/Freeze] mtrap + clones: Crash/Assert after OK (Aaron Giles)
+- 04080: [Crash/Freeze] [debug] Massive memory leaks + crash upon exit in debug build (Aaron Giles)
+- 04081: [Crash/Freeze] Games/drivers with no screen: When you exit MAME, you do not get control back (Aaron Giles)
+- 04083: [Graphics] All sets in balsente.c: Black screen corruption (missing graphics) (MooglyGuy)
+- 04085: [Sound] All sets in seibuspi.c: sound issue
+- 04091: [Misc.] simpbowl: NVRAM is not created correctly (Aaron Giles)
+
+
+New games added or promoted from NOT_WORKING status
+---------------------------------------------------
+Devil Island (2 sets) [Brian Troha, The Dumping Union]
+
+New clones added
+----------------
+Streaking (set 2) [Roberto Fresca]
+
+New games marked as GAME_NOT_WORKING
+------------------------------------
+Magical Touch [Siftware, Mariusz Wojcieszek]
+
+
+Source changes:
+---------------
+- Added explicit control handler for the console. Ctrl+C/Ctrl+Break now explicitly terminate the process forcefully, rather than unwinding through the system in an unexpected state. Other console events (exit, shutdown, logoff) request a graceful exit [Aaron Giles].
+- Added new devcb type DEVCB_TYPE_DRIVER, which implies the driver_device [Aaron Giles].
+- Added new macros DEVCB_DRIVER_LINE_MEMBER and DEVCB_DRIVER_MEMBER to specify member functions of the driver device in callbacks [Aaron Giles].
+- Added new method reset_origin() to screen devices to allow manual synchronization of VBLANK start against an external timing source. Updated the MC6845 device to call reset_origin() on its screen at the start of each frame if a screen is present [Aaron Giles].
+- Attempt to provide a correct M50458 char rom, used by the Nintendo Super System [Pat Dardenko, Angelo Salese].
+- Considerably improved UART communications in the CD-i 68070 implementation, increasing Quizard stability as a result [Harmony].
+- Convert rendlay objects into C++, reduce the number of unused textures allocated [Aaron Giles].
+- Converted the RCA CDP1802 CPU into a C++ device. Refactored cidelsa.c to use the new RCA COSMAC CPU [Curt Coder].
+- Correctly free textures when screen size dynamically changes. Fixes texture assert when exiting on a number of games [Aaron Giles].
+- Fix custom mapping for dsp56k internal memory [Aaron Giles].
+- Fix texture leak in crsshair.c [Aaron Giles].
+- Fixed use of the sign bits on the SegaCD Roz parameters, improves the SegaCD intro rotations etc. which now appear correct. Clamp Roz stuff to 24-bit, seems to fix the remaining issues with the Sega logos [David Haywood].
+- More Clang fixes (verified OK with GCC) [Balrog].
+- Moved -effect implementation out of OSD code and into core since the implementations were identical across Windows/SDL and implemented in the core itself [Aaron Giles].
+- Refactored the CDP1869 chip into a C++ device [Curt Coder].
+- Removed deprecat.h usage and did some minor clean-ups to the 4enraya driver [Angelo Salese].
+- Removed deprecat.h usage from '1943' driver [Angelo Salese].
+- Removed deprecat.h usage from 40love driver [Angelo Salese].
+- Reworked '1942' interrupts by not using cpu_getiloops() function [Angelo Salese].
+- Reworked NMK16 irqs by not using cpu_getiloops() function [Angelo Salese].
+- Re-worked Quizard MCU communications handling to be more easily expanded [Harmony].
+- Rewrote Alien Command irqs by not using cpu_getiloops() function [Angelo Salese].
