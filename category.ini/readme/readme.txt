@@ -1,4 +1,4 @@
-MAME CATEGORY.ini 0.268 (Aug 15, 2024)
+MAME CATEGORY.ini 0.269 (Sep  3, 2024)
 © AntoPISA       www.progettoSNAPS.net
 ======================================
 
@@ -36,6 +36,7 @@ These files must be copied to the directory called "folders" of your MAME.
 
 WhatsNew:
 =========
+2024/09/03: Aligned files to MAME 0.269.
 2024/08/15: Aligned files to MAME 0.268.
 2024/08/05: Changed the name of the category "Casino" to "Gambling."
 2024/07/18: Aligned files to MAME 0.267.
