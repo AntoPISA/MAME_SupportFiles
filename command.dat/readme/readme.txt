@@ -1,4 +1,4 @@
-MAME COMMAND.dat 0.262       (Feb  9, 2023)
+MAME COMMAND.dat 0.269       (Sep  3, 2024)
 (C) Fabricio Coroquer www.progettoSNAPS.net
 Revised and distributed by: AntoPISA
 -------------------------------------------
@@ -8,7 +8,8 @@ revised, updated and maintained by Fabricio Coroquer and distributed AntoPISA.
 
 
 WhatsNew:
----------
+=========
+1.19 0.269 2024/09/03: Some renames and 2 games added.
 1.18 0.262 2024/02/02/09: From today you can also find the files here: https://github.com/AntoPISA/MAME_SupportFiles
 1.17 0.262 2024/02/05: Fabricio2012 has added 1 new item.
 1.16 0.261 2023/12/03: Fabricio2012 has updated 1 item. I will add some new games in next year.
