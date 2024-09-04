@@ -1,4 +1,4 @@
-﻿MAME SERIES.ini 0.268 (Aug 15, 2024)
+﻿MAME SERIES.ini 0.269 (Sep  4, 2024)
 © AntoPISA     www.progettoSNAPS.net
 ==================================== 
 
@@ -10,190 +10,195 @@ From 0.162 version, the file deals only for arcade sets. From the 0.177 version 
 and verification of the .ini files, created by motoschifo. Many thanks to Alexis B. of https://www.arcade-history.com/. 
 
 
+WhatsNew 0.269 (04.09.2024) (718 supported Series):
+===================================================
+Items RENAMED (5): (hbarrelu) to (hbarrelua), (xmvsfjr2) to (xmvsfjr3), (xmvsfjr3) to (xmvsfjr4), (xmvsfj) to (xmvsfjr1) and (xmvsfjr1) to (xmvsfjr2).
+Series UPDATED (4): Heavy Barrel, Marvel Vs. Capcom, Quiz Gakuen Paradise and Street Fighter.
+
+
 WhatsNew 0.268 (15.08.2024) (718 supported Series):
-=====================================================
+===================================================
 Items RENAMED (1): (missw02) to (missw02d).
 Items REMOVED (4): (p911ea), (thrild2ab), (thrild2ac) and (wcombatb).
-Series UPDATED 6): Battle Gear, Miss World, Police 24/7, Pop'n Music, Thrill Drive and World Combat.
+Series UPDATED (6): Battle Gear, Miss World, Police 24/7, Pop'n Music, Thrill Drive and World Combat.
 Series NEW (1): Crazy Bugs.
 
-
 WhatsNew 0.267 (18.07.2024) (717 supported Series):
-=====================================================
+===================================================
 Items RENAMED (10): (gtmr2u) to (gtmr2ua), (matchit) to (matchitb), (shisen) to (shisena), (othunderuo) to (othunderua), (lkageb) to (lkagebl1), (lkageb2) to (lkagebl2), (lkageb3) to (lkagebl3), (lkageb4) to (lkagebl4), (lkageo) to (lkagea) and (lkageo2) to (lkageb).
 Series NEW (2): Cherry Bonus and Cherry Master.
 Series UPDATED (9): Asteroids, Great 1000 Miles Rally, Match It, Operation Wolf, Pac-Man, Phoenix, Print Club, The Legend of Kage and Trivia.
 
 WhatsNew 0.266 (10.06.2024) (715 supported Series):
-=====================================================
+===================================================
 Items RENAMED (12): (avengers) to (avengersa), (avengersa) to (avengersb), (avengersb) to (avengersc), (avengersc) to (avengers), (ddragon) to (ddragonj), (ddragon2b) to (ddragon2bl), (ddragonb) to (ddragonbl), (ddragonb2) to (ddragonbl2), (ddragonba) to (ddragonbla), (ddragonw) to (ddragon), (ddragonw1) to (ddragona) and (zerotimeu) to (zerotimea).
 Series NEW (1): New DongmulDongmul.
 Series UPDATED (5): Double Dragon, Galaxian, Pac-Man, Tetris and Video Hustler.
 
 WhatsNew 0.265 (30.04.2024) (714 supported Series):
-=====================================================
+===================================================
 Items RENAMED (1): (galgame4) to (galgame4p).
 Series NEW (2): Mahjong Gekisha and Mahjong Reach.
 Series UPDATED (2): Cal Omega and Pac-Man.
 
 WhatsNew 0.264 (01.04.2024) (712 supported Series):
-=====================================================
+===================================================
 Series UPDATED (6): 194X, Bagman, Cal Omega, Galaxian, Mr. Do! and Pac-Man.
 
 WhatsNew 0.263 (11.03.2024) (712 supported Series):
-=====================================================
+===================================================
 Items RENAMED (1): (sidebs) to (sidebsj).
 Series NEW (1): Scud Race.
 Series REMOVED (1): Makaimura.
 Series UPDATED (4): Denjin Makai, Operation Wolf, Phoenix and Side By Side.
 
 WhatsNew 0.262 (09.02.2024) (712 supported Series):
-=====================================================
+===================================================
 Items RENAMED (24): (blkrhino) to (blkrhinonz), (bumblbugql) to (bumblbugq), (chariotcv) to (chariotcpe), (chickna5ql) to (chickna5q), (dolphntrql) to (dolphntrq), (eforest) to (eforestu), (eforesta) to (eforest), (eforestb) to (eforestnz), (galpansu) to (galpansua), (hthero) to (htheroj), (indrema5ql) to (indrema5q), (jojoba) to (jojobar1), (jojobaj) to (jojobajr1), (jojobajr1) to (jojobajr2), (jojoban) to (jojobanr1), (jojobane) to (jojobaner1), (jojobaner1) to (jojobaner2), (jojobanr1) to (jojobanr2), (jojobar1) to (jojobar2), (pbss330) to (pbss330a), (qnileql) to (qnileq), (qnilev) to (qnilepe), (reelrockql) to (reelrockq) and (tekken2) to (tekken2ud).
 Series UPDATED (15): Aristocrat MK Hardware, Black Rhino, Cherry Master, Crime Fighters, Cruis'n USA, Dolphin Treasure, Enchanted Forest, Gals Panic, Hat Trick Hero, JoJo's Bizarre Adventure, Mahjong Gakuensai, Operation Wolf, Pit Boss, Reelin-n-Rockin and Tekken.
 Series ADDED (3): Altair, Euro Champ '92 and Treasures of the Inca.
 
 WhatsNew 0.261 (05.12.2023) (709 supported Series):
-=====================================================
+===================================================
 Series RENAMED (1): (Cosmic) to (Cosmic Monsters).
 Series UPDATED (11): Astro Fighter, BombJack, Cosmic Monsters, Pac-Man, Phoenix, Pole Position, Rally X, Scramble, Sea Wolf, Stadium Hero and Track & Field.
 
 WhatsNew 0.260 (01.11.2023) (709 supported Series):
-=====================================================
+===================================================
 Series UPDATED (3): Gunforce, Pit Boss and Trivia ? Whiz.
 Items RENAMED (7): (trvwz3h) to (trvwz3b), (trvwz3ha) to (trvwz3), (trvwz4) to (trvwz4v), (trvwz4a) to (trvwz4va), (trvwzh) to (trvwz), (trvwzha) to (trvwza) and (trvwzhb) to (trvwzb).
 
 WhatsNew 0.259 (05.10.2023) (709 supported Series):
-=====================================================
+===================================================
 Series UPDATED (5): beatmania, Big Pro Wrestling!, Danger Zone, Super Volleyball and Zero Team.
 
 WhatsNew 0.258 (05.09.2023) (709 supported Series):
-=====================================================
+===================================================
 Series ADDED (1): Makaimura.
 Series UPDATED (8): Deal Or No Deal, Final Fight, Ghosts'n Goblins, Killer Instinct, Player's Edge, Racing Jam, Snow Bros. and The Legend of Kage.
 Items RENAMED (1): (lkageoo) to (lkageo2).
 
 WhatsNew 0.257 (03.08.2023) (708 supported Series):
-=====================================================
+===================================================
 Series UPDATED (6): Bare Knuckle, Frogger, Mortal Kombat, Player's Edge, Print Club and Zero Team.
 Items RENAMED (1): (nzeroteama) to (nzeroteamb).
 
 WhatsNew 0.256 (06.07.2023) (708 supported Series):
-=====================================================
+===================================================
 Series UPDATED (8): Amidar, Arkanoid, Pac-Man, Phoenix, Player's Edge, Raiden, Sprint, Taiko no Tatsujin and Tecmo World Cup.
 Items RENAMED (14): (pepp0042) to (pepp0042a), (pepp0042a) to (pepp0042b), (pepp0083) to (pepp0083a), (pepp0420) to (pepp0420a), (pepp0430) to (pepp0430a), (pepp0459) to (pepp0459a), (pepp0508) to (pepp0508a), (pepp0540) to (pepp0540a), (pepp0750) to (pepp0750a), (puckpkmn) to (puckpkmnb), (puckpkmna) to (jingling), (raiden) to (raidenj), (raidena) to (raiden) and (sprint4) to (sprint4b).
 
 WhatsNew 0.255 (09.06.2023) (708 supported Series):
-=====================================================
+===================================================
 Series UPDATED (9): Ace Driver, DrumMania, Galaxian, Guitar Freaks, Percussion Freaks, Pop'n Music, Street Fighter, Taiko no Tatsujin and WWF Superstars.
 Items RENAMED (2): (popnanm) to (popnanma) and (popnanm2) to (popnanm2a).
 Items REMOVED (6): (drmn10ma), (drmn9mb), (gtfrk10mb), (gtfrk11ma), (pcnfrk10ma) and (pcnfrk9ma).
 
 WhatsNew 0.254 (04.05.2023) (708 supported Series):
-=====================================================
+===================================================
 Series UPDATED (8): Aristocrat MK Hardware, F-1 Grand Prix, Mr. Driller, Reelin-n-Rockin, Space Invaders, Strikers 1945, Taiko no Tatsujin and World Club Champion Football.
 Series NEW (3): GAHAHA Ippatsudou, Medal no Tatsujin and Soreike! Anpanman.
 Items RENAMED (17): (50lionsm) to (50lionsa), (5koipp) to (5koi), (antcleom) to (antcleoa), (crysprim) to (cryspria), (csdm) to (csda), (dimeye) to (dimeyeu), (f1gpb) to (f1gpbl), (gldgong) to (gldgongu), (holdrma) to (holdrma6), (mrdrilr2) to (mrdrilr2j), (mrdrilrga) to (mrdrilrg), (mrdrlr2a) to (mrdrilr2), (silkrda6) to (silkrda6u), (thaiprncm) to (thaiprnca), (wheregldm) to (whereglda), (wingoly) to (wingolyu) and (wwaysm) to (wwaysa).
 Items REMOVED (1): (mrdrilrg).
 
 WhatsNew 0.253 (08.04.2023) (705 supported Series):
-=====================================================
+===================================================
 Series UPDATED (5): Gals Panic, Jockey Club, Multi Game, The Pit and WWF Superstars.
 Series NEW (1): Hot Body.
 
 WhatsNew 0.252 (06.03.2023) (704 supported Series):
-=====================================================
+===================================================
 Series UPDATED (6): Galaxian, Moon Cresta, Pac-Man, Raiden, Soul Edge and Tekken.
 Items RENAMED (2): (soulclbraa) to (soulclbra) and (soulclbrwb) to (soulclbrab).
 
 WhatsNew 0.251 (05.01.2023) (704 supported Series):
-=====================================================
+===================================================
 Series NEW (1): Racing Jam.
 Series UPDATED (4): Final Fight, Pocket Gal,  Power Instinct and Thrill Drive.
 Items RENAMED (4): (pwrinst2) to (pwrinst2a),(thrilld) to (thrilldja), (thrilldb) to (thrilldbja) and (thrilldbu) to (thrilldgeu).
 
 WhatsNew 0.250 (07.12.2022) (703 supported Series):
-=====================================================
+===================================================
 Series UPDATED (8): Cherry Master, Cross Pang, Gradius, Ibara, Quizard, Silent Scope, Trivia and Trivial Pursuit.
 Items RENAMED (8): (ibara) to (ibarao), (sscope2b) to (sscope2ubvd1), (sscope2c) to (sscope2ucvd1), (sscopea) to (sscopeua), (sscopeb) to (sscopeub), (sscopec) to (sscopeuc), (sscoped) to (sscopevd2) and (trivia12) to (triviag1a).
 
 WhatsNew 0.249 (05.11.2022) (703 supported Series):
-=====================================================
+===================================================
 Series NEW (1): Dynablaster.
 Series UPDATED (10): Arm Champs, beatmania, Bosconian, Club Kart, Gun Dealer, Pit Boss, Primal Rage, Street Fighter, Twin Cobra and X-Men.
 Items RENAMED (7): (bosco) to (bosco3), (boscoo) to (bosco1), (boscoo2) to (bosco1o), (ktiger) to (ktigera), (pitbossm) to (pitbossma), (pitbossma) to (pitbossmb) and (primrage) to (primrageo).
 
 WhatsNew 0.248 (06.10.2022) (702 supported Series):
-=====================================================
+===================================================
 Series UPDATED (9): Dance Dance Revolution, Dance Maniax, DrumMania, Golden Tee, Guitar Freaks, Mario Bros., Percussion Freaks, Soul Edge and Strikers 1945.
 Items RENAMED (7): (ddr2ml) to (ddr2mla), (drmn9m) to (drmn9ma), (gtgt) to (gtgt20), (gtgt1) to (gtgt10), (pcnfrk10m) to (pcnfrk10ma), (pcnfrk9m) to (pcnfrk9ma) and (sblast2ba) to (tmntmwb).
 Items REMOVED (1): (sfrush).
 
 WhatsNew 0.247 (09.09.2022) (702 supported Series):
-=====================================================
+===================================================
 Series NEW (1): Toy's March.
 Series UPDATED (9): Battle Garegga, Crazy Kong, Dance Dance Revolution, DJ Boy, DrumMania, Pac-Man, Silent Scope, Thrill Drive and Trivia Master.
 Items RENAMED (16): (cmtetrsa) to (cmtetrisa), (cmtetrsa) to (cmtetrisa), (cmtetrsb) to (cmtetrisb), (cmtetrsb) to (cmtetrisb), (cmtetrsc) to (cmtetrisc), (cmtetrsc) to (cmtetrisc), (cmtetrsd) to (cmtetrisd), (cmtetrsd) to (cmtetrisd), (magicarda) to (magicrd1a), (magicardb) to (magicrd1b), (magicarde) to (magicrde), (magicardea) to (magicrdea), (magicardeb) to (magicrdec), (magicardec) to (magicrdj), (magicardj) to (magicrdja) and (pjustic) to (pjustica).
 
 WhatsNew 0.246 (06.08.2022) (701 supported Series):
-=====================================================
+===================================================
 Series UPDATED (5): Cherry Master, Crazy Climber, Derby Owners Club, Tetris and Thunder & Lightning.
 
 WhatsNew 0.245 (22.07.2022) (701 supported Series):
-=====================================================
+===================================================
 Items RENAMED (11): (doaab) to (doaae), (m4addrc__e) to (m4nnww2__hx3), (m4addrc__f) to (m4nnww2__hx4), (m4addrc__n) to (m4nnww2__hx5), (sfight2) to (sfightii), (sfight2a) to (sfightiia), (sfight2b) to (sfightiib), (smb) to (smbp), (smb1) to (smbpa), (smb2) to (smbpb) and (smb3) to (smbpc).
 Series NEW (1): Marble Madness.
 Series UPDATED (6): Arkanoid, Cookie & Bibi, Dead or Alive, Moon Cresta, Star Force and Wonder Boy.
 
 WhatsNew 0.244 (31.05.2022) (700 supported Series):
-=====================================================
+===================================================
 Items RENAMED (3): (hotd) to (hotdo), (j_nuddup) to (j_dud) and (j_nuddup2) to (j_duda).
 Series UPDATED (7): House of the Dead, Knights of Valour, Magic Card, Moon Cresta, Neo Print, Nudge Double Up and Thunder Dragon.
 
 WhatsNew 0.243 (06.05.2022) (700 supported Series):
-=====================================================
+===================================================
 Items RENAMED (5): (bloodstm10) to (bloodstm104), (bloodstm11) to (bloodstm110), (bloodstm21) to (bloodstm210), (bloodstm22) to (bloodstm220) and (dendego) to (dendegoa).
 Series UPDATED (6): Densha de GO!, Galaxian, Photo Play, Sprint, Street Fighter and Time Killers.
 Series ADDED (1): Cal Omega (38 new items).
 
 Whatsnews 0.242 (07.04.2022) (699 supported Series):
-=====================================================
+===================================================
 Items RENAMED (9): (acedrvrw) to (acedrive), (victlapw) to (victlapa), (bmcompmx) to (bmcompmxb), (raveracj) to (raveracej), (raveracja) to (raveraceja), (raveracw) to (raverace), (ridgerac) to (ridgeracb), (ridgerac3) to (ridgeracc) and (ridgeracb) to (ridgeraca).
 Series UPDATED (10): Ace Driver, Amidar, beatmania, Cruis'n USA, Dead or Alive, Frogger, Pac-Man, Pang!, Ridge Racer and Royal Card.
 Series RENAMED (1): (Pang) to (Pang!)
 
 Whatsnews 0.241 (01.03.2022) (699 supported Series):
-=====================================================
+===================================================
 Items RENAMED (2): (majest12u) to (majest12ua) and (majest12ua) to (majest12ub).
 Series UPDATED (4): Crime Fighters, Heavy Barrel, Space Invaders and Teenage Mutant Ninja Turtles.
 
 Whatsnews 0.240 (09.02.2022) (699 supported Series):
-=====================================================
+===================================================
 Items RENAMED (8): (aerofgts) to (aerofgtst), (pepk0756) to (pepk0756a), (pepk0756a) to (pepk0756b), (pepk0756b) to (pepk0756c), (pepk0756c) to (pepk0756d), (pepp0046b) to (pepp0046c), (pepp0516b) to (pepp0516c) and (pexmp017b) to (pexmp017a).
 Series NEW (7): Fruit Cocktail, Garage, Gnome, Multi Fish, Resident, Rock Climber and Super Formula.
 Series UPDATED (12): Aero Fighters, Crazy Monkey, Gals Panic, Island, Keks, Lucky Haunter, Pirate, Player's Edge, Rastan, Roll Fruit, Sweet Life and Tetris.
 
 Whatsnews 0.239 (04.01.2022) (692 supported Series):
-=====================================================
+===================================================
 Items RENAMED (4): (ddpdojblka) to (ddpdojblkb), (majest12u) to (majest12ua), (srmvs) to (srmvsa) and (peps0280) to (peps0280a).
 Series UPDATED (9): DonPachi, Fantasia, Final Fight, Gals Panic, Golden Tee, Off Road, Player's Edge, Puyo Puyo, Space Invaders and Super Real Mahjong.
 
 Whatsnews 0.238 (27.11.2021) (692 supported Series):
-=====================================================
+===================================================
 Items RENAMED (1): (popn1) to (popn1a).
 Series UPDATED (2): Pop'n Music, Street Fighter and Teenage Mutant Ninja Turtles.
 
 Whatsnews 0.237 (31.10.2021) (692 supported Series):
-=====================================================
+===================================================
 Items RENAMED (3): (cosmica2) to (cosmica2a), (cosmica3) to (cosmica22) and (spcdraga) to (floritas).
 Series UPDATED (6): Amidar, Cosmic, Moon Cresta, Pac-Man, Phoenix and Street Fighter.
 
 Whatsnews 0.236 (03.10.2021) (692 supported Series):
-=====================================================
+===================================================
 Series UPDATED (3): beatmania, Head On and Mushiking - The King Of Beetle.
 
 Whatsnews 0.235 (30.08.2021) (692* supported Series):
-=====================================================
+===================================================
 Items RENAMED (6): (gtrfrks) to (gtrfrksc), (gtrfrksa) to (gtrfrksac), (gtrfrksj) to (gtrfrksjc), (gtrfrksu) to (gtrfrksuc), (p911e) to (p911ed) and (p911uc) to (p911ac).
 Series RENAMED (1): "Killing Blade" to "The Killing Blade".
 Series UPDATED (7): Bubble Bobble, ESP Ra.de., Guitar Freaks, Police 24/7, Police 911, Puzzle Bobble and Time Crisis.
@@ -205,7 +210,7 @@ Items RENAMED (1): (rainwrce) to (rainwarrce).
 Series UPDATED (6): Aristocrat MK Hardware, Armored Warriors, Flying Shark, Scramble, Silent Scope and Twin Bee.
 
 Whatsnews 0.233 (06.07.2021) (681 supported series, +2):
-========================================================
+======================================================
 Items RENAMED (3): (asurabus) to (asurabusj), (asurabusa) to (asurabusjr) and (pcnfrku) to (drmnu).
 Series ADDED (2): Crush Roller and Invinco.
 Series UPDATED (4): Asura, Crazy Kong, Gals Panic and Percussion Freaks.
@@ -222,7 +227,7 @@ Items RENAMED (4): (nbahangt) to (nbahangtl11), (nbajamte2) to (nbajamte2a), (ou
 Series UPDATED (8): Bare Knuckle, DrumMania, JoJo's Bizarre Adventure, NBA Jam, Out Run, Percussion Freaks, Point Blank and Tekken.
 
 Whatsnews 0.230 (05.04.2021) (679 supported series, +1):
-========================================================
+======================================================
 Items RENAMED (6): (pepp0419) to (pepp0419b), (dotron) to (dotrona), (dotrona) to (dotron), (vs299b) to (vs299j), (vs29915) to (vs29915a) and (von) to (vonu).
 Series Added (2): Keyboardmania (4 items) and Pool 10 (14 items).
 Series UPDATED (8): beatmania, Mega Man, Player's Edge, Shogun Warriors, Super Mario Bros., Tron, Virtua Striker and Virtual On - Cyber Troopers.
@@ -235,14 +240,14 @@ Series UPDATED (10): Asteroids, beatmania, Defender, Drift Out, Galaxian, Pac-Ma
 Series RENAMED (1): (?6-X) to (L.6-X) to work around a problem caused by the "?" character.
 
 Whatsnews 0.228 (05.02.2021) (678 supported series, -1/+2):
-===========================================================
+=========================================================
 Items RENAMED (20): (bass) to (getbassur), (bassdx) to (getbassdx), (j6roller) to (j6rollerk), (j6rollera) to (j6rollerl), (j6rollerb) to (j6rollerm), (j6rollerc) to (j6rollern), (j6rollerd) to (j6roller), (j6rollere) to (j6rollera), (j6rollerf) to (j6rollerb), (j6rollerg) to (j6rollerc), (j6rollerh) to (j6rollerf), (j6rolleri) to (j6rollerg), (j6rollerj) to (j6rollerh), (j6rollerk) to (j6rolleri), (j6rollerl) to (j6rollere), (j6rollerm) to (j6rollero), (j6rollern) to (j6rollerp), (j6rollero) to (j6rollerd), (j6rollerp) to (j6rollerj) and (srally2x) to (srally2dx).
 Series ADDED (2): Port Man and The Pit.
 Series REMOVED (1): Bare Knuckle (MegaDrive)
 Series UPDATED (27): Aristocrat MK Hardware, Astro Fighter, Bagman, beatmania, Cookie & Bibi, Crime Patrol, Darius, Dragon Ball Z, DrumMania, F-1 Grand Prix, Fatal Fury, Flying Shark, Forgotten Worlds, Get Bass - Sega Bass Fishing, Hang-On, Hat Trick Hero, Jolly Card, Jurassic Park [pinball], Moon Cresta, Pac-Man, Photo Play, Pole Position, Pool 10 [slot], Roller Coaster [slot], Scramble, Sega Rally and Street Fighter.
 
 Whatsnews 0.227 (13.01.2021) (677 supported series, +2):
-========================================================
+======================================================
 Items RENAMED (11): (1944) to (1944u), (gdarius) to (gdariusj), (gdariusb) to (gdariusu), (f1gp) to (f1gpa), (scfinalso) to (scfinalsoc), (jupk_g51) to (jupk_501g), (croquis) to (croquisg), (finalapro) to (finalapr1), (stwr_a14) to (stwr_103_a104), (stwr_e12) to (stwr_102e) and (stwr_g11) to (stwr_101g).
 Series ADDED (2): 10-Yard Fight and The Legend of Kage.
 Series UPDATED (8): 19XX, Darius, F-1 Grand Prix, Hat Trick Hero, Jurassic Park [pinball], Logic Pro, Pole Position and Star Wars [pinball].
@@ -254,32 +259,32 @@ Items RENAMED (3): (bagmans2) to (bagmans4), (raycris) to (raycrisj) and (thrill
 Series UPDATED (6): Bagman, Gunlock, Pac-Man, Space Invaders, Super Mario Bros. and Thrill Drive.
 
 Whatsnews 0.225 (07.10.2020) (675 supported series, +3):
-========================================================
+======================================================
 Items RENAMED (7): (airduelm72) to (airdueljm72), (bagnardi) to (bagnardio), (galpani2e2) to (galpani2i2), (jojoba) to (jojobaj), (jojobar1) to (jojobajr1), (joustwr) to (jousty) and (crusnusa) to (crusnusa44).
 Series ADDED (3): Bare Knuckle, Photo Play and Sunset Riders. 
 Series UPDATED (16): Air Duel, Amidar, Asteroids, Astro Fighter, Bagman, Battle Garegga, Bubble Bobble, Cruis'n USA, Gals Panic, JoJo's Bizarre Adventure, Joust, Pac-Man, Road Fighter, Space Invaders, Star Horse and Street Fighter.
 
 Whatsnews 0.224 (01.09.2020) (672 supported series, +15):
-=========================================================
+=======================================================
 Items RENAMED (15): (crusnusa) to (crusnusa41), (v4cmaze2a) to (v4cmaze2_amld), (v4cmaze3a) to (v4cmaze3_amld), (v4cmazea) to (v4cmaze_amld), (dwpc) to (dwpc101j), (doa) to (doab), (drgw2c) to (drgw2100c), (drgw2hk) to (drgw2100hk), (drgw2j) to (drgw2100j), (dw2v100x) to (drgw2100x), (kov100) to (kov111), (kovshpa) to (kovshp100), (monopolya) to (monopoly4), (photoy2k102) to (photoy2k102j) and (kov100hk) to (kov114).
 Items REMOVED (1): (sirio2a).
 Series ADDED (16): ?6-X, Bare Knuckle, Big 40 Poker, Cash Inferno, Gold Rush, Miami Dice, Monte Carlo Or Bust, Red Hot Mazooma Belle, Red Hot Poker, Reno Casino, Reno Reels, Shop Window, Sunburst, Time Bandit and Time Machine.
 Series UPDATED (15): Astro Fighter, Cherry Master, Chuugokuryuu, Cruis'n USA, Crystal Maze, Dead or Alive, Dragon World, Galaxian, Knights of Valour, Monopoly, Mr. Do!, Oriental Legend, Pac-Man, Pang, Photo Y2K and Slam Masters.
 
 Whatsnews 0.222 (14.07.2020) (657 supported series, +1):
-========================================================
+======================================================
 Items RENAMED (5): (galsnew) to (galsnewu), (galsnewa) to (galsnew), (headonb) to (foolrace), (policetr) to (policetr13) and (roadf3) to (roadfh).
 Series ADDED (1): Vampire.
 Series UPDATED (15): Air Duel, Cleopatra Fortune, Darkstalkers, Densha de GO!, DonPachi, Gals Panic, Head On, Pit Boss, Police Trainer, Raiden, Road Fighter, Shinobi, Street Fighter and Trivia.
 
 Whatsnews 0.221 (21.05.2020) (656 supported series, +1):
-========================================================
+======================================================
 Items RENAMED (5): (elevator) to (elevatora), (elevator4) to (elevator), (mooncrstu) to (mooncrstuu), (xmen) to (xmenu) and (xmene) to (xmen).
 Series ADDED (1): Mario Kart Arcade GP.
 Series UPDATED (13): Bishi Bashi, DonPachi, Elevator Action, Final Fight, Galaxian, Metal Slug, Moon Cresta, Pang, Raiden, Space Invaders, Street Fighter, Touchmaster and X-Men.
 
 Whatsnews 0.220 (07.04.2020) (655 supported Series):
-========================================================
+======================================================
 Series UPDATED (6): Crazy Kong, Galaxian, New Cherry '96, Pang, Scramble and Tetris.
 
 Whatsnews 0.219 (04.03.2020) (655 supported Series):
@@ -288,13 +293,13 @@ Items RENAMED (3): (p47aces) to (p47acesa), (tmntua) to (tmntub) and (tmntub) to
 Series UPDATED (18): Amidar, Battle Balls, Cabal, Club Kart, Galaxian, Moon Cresta, Mr. Do!, New Cherry '96, P-47, Pang, Puzzle & Action, Puzzli, Raiden, Star Force, Street Fighter, Teenage Mutant Ninja Turtles, Time Crisis and Time Killers.
 
 Whatsnews 0.218 (03.02.2020) (655 supported series, +1):
-========================================================
+======================================================
 Items RENAMED (4): (sbagman) to (sbagman2), (denjinmk) to (denjinmka), (lsrquiz2) to (lsrquiz2i) and (popnstage) to (popnstex).
 Series ADDED (1): Odeon Twister.
 Series UPDATED (8): Bagman, Dance Dance Revolution, Denjin Makai, Laser Quiz, Mario Bros, New Cherry '96, Pop'n Stage and Quizard.
 
 Whatsnews 0.217 (27.12.2019) (654 supported series, +1):
-========================================================
+======================================================
 Series ADDED (1): Super Mario Fushigi no Korokoro Party.
 Series UPDATED (5): Cabal, MegaTouch, Raiden, Snow Bros. and Tetris.
 
@@ -320,13 +325,13 @@ Items RENAMED (4): (hbarrel) to (hbarrelu), (hbarrelw) to (hbarrel), (swa) to (s
 Series UPDATED (9): Commando, Crazy Kong, Heavy Barrel, Player's Edge, Power Instinct, Shanghai, Star Wars Arcade, Street Fighter and Victor.
 
 Whatsnews 0.212 (07.08.2019) (653 supported series, +2):
-========================================================
+======================================================
 Series UPDATED (3): Dragon World, Teenage Mutant Ninja Turtles and Thunder & Lightning.
 Series ADDED (3): F1 Exhaust Note, Lucky 21 and Video Hustler.
 Series DELETED (1): Virtual On.
 
 Whatsnews 0.211 (08.07.2019) (651 supported series, +1):
-========================================================
+======================================================
 Series UPDATED (9): Champion Poker, Gals Panic, Mushiking - The King Of Beetle, Photo Y2K, Puzz Loop, Queen Bee, Space Invaders, Taiko no Tatsujin and Thunder & Lightning.
 Series ADDED (1): Virtual On - Cyber Troopers. 
 
@@ -346,20 +351,20 @@ Items RENAMED (2): (djboy) to (djboyu) and (djboya) to (djboyua).
 Series UPDATED (4): DJ Boy, Neo Print, Raiden and Sega Rally.
 
 Whatsnews 0.207 (01.03.2019) (650 supported series, +5):
-========================================================
+======================================================
 Items RENAMED (1): (samesamech) to (samesamecn).
 Series RENAMED (2): (Pirate * Igrosoft) to (Pirate * Slot) and (Sweet Life) to (Sweet Life * Slot).
 Series ADDED (4): Crazy Monkey, Hi Pai Paradise, Keks and Roll Fruit.
 Series UPDATED (15): 18 Wheeler, Fire Shark, Gals Panic, Hi Sho Zame, Island, Lethal Enforcers, Neo Print, Pasha Pasha, Pirate (Igrosoft), Queen Bee, Queen of the Nile, Raiden, Sweet Life, World Class Bowling and X-Men.
 
 Whatsnews 0.206 (03.02.2019) (645 supported series, +1):
-========================================================
+======================================================
 Items RENAMED (5): (lostwsgo) to (lostwsgp), (lupinsho) to (lupinshoo), (s1945jn) to (s1945nj), (vs4) to (vs4o) and (vs4e) to (vs4eo).
 Series ADDED (1): Fire Shark.
 Series UPDATED (22): Aristocrat MK Hardware, Club Kart, Denjin Makai, F-Zero, Fantasy Zone, Fire Shark, Fruit Bonus, Initial D, Jurassic Park, Key of Avalon, Lupin The Third,  Mobile Suit Gundam, Pang, Queen of the Nile, Scramble, Sega Network Taisen Mahjong, Space Invaders, Stadium Hero, Strikers 1945, Tank Battalion, Tetris Plus and Virtua Striker.
 
 Whatsnews 0.205 (28.12.2018) (644 supported series, +2):
-========================================================
+======================================================
 Items RENAMED (4): (f1gpstar) to (f1gpstar3), (f1gpstaro) to (f1gpstar2), (sfex2p) to (sfex2pu) and (sftmj) to (sftmj112).
 Series ADDED (2): Pool 10 and Super Mario Bros..
 Series UPDATED (6): F1 Grand Prix Star, Player's Edge, Queen of the Nile, Street Fighter, Street Fighter EX and Trivial Pursuit.
@@ -375,21 +380,21 @@ Items RENAMED (1): (armchmp2) to (armchmp2o2).
 Series UPDATED (9): Ace Driver, Arm Champs, Pac-Man, Pang, Phoenix, Player's Edge, Pocket Gal, Street Fighter and Tetris.
 
 Whatsnews 0.202 (28.09.2018) (642 supported series, +5):
-========================================================
+======================================================
 Items RENAMED (5): (cybsledj) to (cybsleda), (galpani4) to (galpani4j), (wecleman) to (weclemana), (weclemana) to (weclemanb) and (weclemanb) to (weclemanc).
 Serie RENAMED (1): (Racin' Force) to (WEC Le Mans).
 Series UPDATED (8): Asteroids, Crime Fighters, Frogger, Gals Panic, Hard Head, House of the Dead, Pac-Man and Road Fighter.
 Series ADDED (5): Amidar, Lucky Balls Casino Slot, Lucky Haunter Slot, Lucky Las Vegas Slot and Midnight Landing. 
 
 Whatsnews 0.201 (31.08.2018) (637 supported series, -5):
-========================================================
+======================================================
 Items RENAMED (2): (sshangha) to (sshanghaj) and (wwfwfestb) to (wwfwfestub).
 Items and Series REMOVED (39): Various game duplicated removed.
 Series UPDATED (12): 18 Wheeler, Club Kart, Golfing Greats, House of the Dead, Ikari, King of Fighters, Mario Bros., Raiden, Shanghai, Tecmo World Cup, Virtua Striker and WWF Superstars.
 Series ADDED (1): F-Zero.
 
 Whatsnews 0.200 (27.07.2018) (642 supported series, +1):
-========================================================
+======================================================
 Series UPDATED (7): Donkey Kong, Hayaoshi Quiz, Ibara, Mario Bros., Raiden, Scramble and Street Fighter.
 Serie ADDED (1): Battle Balls.
 
@@ -399,12 +404,12 @@ Items RENAMED (2): (gtg) to (gtgj31) and (puyofev) to (puyofevj).
 Series UPDATED (2): Golden Tee and Puyo Puyo.
 
 Whatsnews 0.198 (01.06.2018) (641 supported series, +3):
-========================================================
+======================================================
 Series ADDED (3): Jikkyou Powerful Pro Yakyuu, Marvel Super Heroes and V-Liner.
 Series UPDATED (11): Centipede, Donkey Kong, Final Fight, King of Fighters, Marvel Vs. Capcom, Sonic Blast Man, Sengoku, Spy Hunter, Street Fighter, Strider and World Heroes.
 
 Whatsnews 0.197 (27.04.2018) (638 supported series, +4):
-========================================================
+======================================================
 Item RENAMED (1): (wrally2) to (wrally2a).
 Series ADDED (4): Amazonia King, Cross Pang, Jolly Card and WWF Wrestlemania.
 Series UPDATED (5): Fatal Fury, Popeye, Street Fighter, Time Killers and World Rally.
@@ -414,12 +419,12 @@ Whatsnews 0.196 (01.04.2018) (634 supported Series):
 Series UPDATED (4): Big Buck Hunter, Daytona USA, Fantasy Zone and Street Fighter.
 
 Whatsnews 0.195 (01.03.2018) (634 supported series, +1):
-========================================================
+======================================================
 Series ADDED (1): Tecmo Bowl.
 Series UPDATED (7): Donkey Kong, Gee Bee, Gigas, Pac-Man, Player's Edge, Quarterback and Street Fighter.
 
 Whatsnews 0.194 (03.02.2018) (633 supported series, -11):
-=========================================================
+=======================================================
 Items RENAMED (12): (47pie2) to (suchie2), (47pie2o) to (suchie2o), (ddpdojh) to (ddpdojt), (gnw_dj101) to (gnw_dkjr), (gnw_jr55) to (gnw_dkong2), (gnw_mw56) to (gnw_mario), (kov2nl) to (kov2nl_302cn), (kov2nl_300) to (kov2nl_300cn), (kov2nl_301) to (kov2nl_301cn), (sstrikera) to (sstrikerk), (suchipi) to (suchiesp) and (weststory) to (weststry).
 Series UPDATED (2): 777 Heaven and Bar 7's.
 
@@ -428,7 +433,7 @@ Whatsnews 0.193 (28.12.2017) (644 supported Series):
 Items RENAMED (9): (bloodbro) to (bloodbroja), (bloodbroa) to (bloodbroj), (bloodbrob) to (bloodbro), (mario) to (mariof), (marioo) to (mario), (orleg2) to (orleg2_104cn), (orleg2_101) to (orleg2_101cn), (orleg2_103) to (orleg2_103cn) and (weststry) to (weststory).
 
 Whatsnews 0.192 (29.11.2017) (644 supported series, +1):
-========================================================
+======================================================
 Items RENAMED (6): (champbb2a) to (tbasebal), (kov2nlo) to (kov2nl_301), (kov2nloa) to (kov2nl_300), (mtkob2) to (mushike), (orleg2o) to (orleg2_103) and (orleg2oa) to (orleg2_101).
 Series UPDATED (1): SD Gundam.
 Series ADDED (1): Cyberball.
@@ -440,12 +445,12 @@ Series UPDATED (10): After Burner, Athena, Cabal, Casino Strip, Eight Ball (Pinb
 Series ADDED (1): E-Touch Mahjong.
 
 Whatsnews 0.190 (29.09.2017) (643 supported series, +1):
-========================================================
+======================================================
 Items RENAMED (12): (bbhsc) to (bbhsca), (mp_twc) to (mp_twcup), (tecmowcm) to (twcupmil), (twrldc94) to (twcup94), (twrldc94a) to (twcup94a), (tws96) to (twsoc96), (wc90) to (twcup90), (wc90a) to (twcup90a), (wc90b) to (twcup90b), (wc90b1) to (twcup90b1), (wc90b2) to (twcup90b2) and (wc90t) to (twcup90t).
 Series UPDATED (3): Big Buck Hunter, Beast Busters and Shootout Pool.
 
 Whatsnews 0.189 (03.09.2017) (642 supported series, +4):
-========================================================
+======================================================
 Items RENAMED (13): (1943ja) to (1943jah), (brapboysj) to (brapboyspj), (brapboysu) to (brapboyspu), (cawingu) to (cawingur1), (inttootea) to (inttoote2), (podrace) to (swracer), (shocktro) to (shocktroa), (shocktroa) to (shocktro), (vendetta2p) to (vendetta2pw), (vendettaj) to (vendetta2pp), (vf4evo) to (vf4evob), (wwfsstaru) to (wwfsstaru7) and (wwfsstarua) to (wwfsstaru4).
 Series UPDATED (15): 194X, Chase H.Q., Crazy Climber, Crime Fighters, Derby Owners Club, DJ Boy, DonPachi, Donkey Kong, Popeye, Print Club, Street Fighter, Tekken, U.N. Squadron, Virtua Fighter and WWF Superstars.
 Series ADDED (1): Sexy Gal.
@@ -462,12 +467,12 @@ Whatsnews 0.187 (30.06.2017) (638 supported Series):
 Series UPDATED (7): E-Swat Cyber Police, Out Run, Player's Edge, Power Instinct, Rally X, Scramble and Super Spacefortress Macross.
 
 Whatsnews 0.186 (04.06.2017) (638 supported series, +2):
-========================================================
+======================================================
 Items RENAMED (23): (cvs2gd) to (cvs2mf), (jclub2) to (jclub2v200), (jclub2o) to (jclub2v112), (jclub2ob) to (jclub2v203), (jgakuen) to (jgakuen1), (megaforc) to (megaforcu), (qnilese) to (qnilesea), (rastsaga) to (rastsagaa), (rastsagaa) to (rastsagab), (souledgeaa) to (souledgea), (specfrce) to (specfrceo), (tekken) to (tekkenac), (tekken2aa) to (tekken2a), to (tekken2ab) to (tekken2b), (tekken3) to (tekken3je1), (tekken3aa), to (tekken3a), (tekken3ab) to (tekken3b), (tekken3ae) to (tekken3), (tekkenab) to (tekkenb), (tekkenac) to (tekken), (tektagt) to (tektagtuc1), (tektagtac) to (tektagt) and (tektagtac1) to (tektagtc1).
 Series UPDATED (13): Bagman, Dragon Treasure, Jockey Club, Megatouch, Pac-Man, Pang, Player's Edge, Queen of the Nile, Rastan, SNK vs. Capcom, Star Force, Tekken and Touchmaster. 
 
 Whatsnews 0.185 (30.04.2017) (636 supported series, +1):
-========================================================
+======================================================
 Items RENAMED (1): (machbrkr) to (machbrkrj).
 Series UPDATED (7): Gals Panic, Knights of Valour, MegaTouch, Police Trainer, Prehistoric Isle, Rastan and Street Fighter.
 Series ADDED (2): Galaxy Games and Sonic Blast Man.
