@@ -11,7 +11,7 @@ The following files have been updated in this MAME cycle:
 - CHD-Info
 - Command.dat
 - Languages.ini
-- MESSInfo.dat (WIP)
+- MESSInfo.dat
 - renameSET.dat
 - Series.ini
 - Version pack
