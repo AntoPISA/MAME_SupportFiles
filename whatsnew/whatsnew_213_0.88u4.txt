@@ -2,8 +2,8 @@
 ----------------------------------------
 
 
-New Games supported or promoted from GAME_NOT_WORKING status:
--------------------------------------------------------------
+New Games supported or promoted from GAME_NOT_WORKING status
+------------------------------------------------------------
 Astro Chase (Max-A-Flex) [Mariusz Wojcieszek]
 Boulder Dash (Max-A-Flex) [Mariusz Wojcieszek]
 Bristles (Max-A-Flex) [Mariusz Wojcieszek]
@@ -11,8 +11,8 @@ Cotton [Chris Hardy, Lodewijk, Asure, Nicola Salmoria, David Haywood] (many gfx 
 Flip & Flop (Max-A-Flex) [Mariusz Wojcieszek]
 Woodpecker [Tomasz Slanina, Pierpaolo Prazzoli]
 
-New Clones supported or promoted from GAME_NOT_WORKING status:
---------------------------------------------------------------
+New Clones supported or promoted from GAME_NOT_WORKING status
+-------------------------------------------------------------
 Jr Pacman (bootleg on pengo hw) [smf]
 Shinobi (set 3, 317-0049) [Chris Hardy]
 
@@ -23,8 +23,8 @@ Twin Squash (protection issues)
 Wonderboy 3, System 16a [Chris Hardy] (incomplete s16a emulation)
 
 
-Discrete Sound Changes:
------------------------
+Discrete Sound Changes [David Haywood]:
+---------------------------------------
   * Removed the memory mapping system from the discrete inputs. It served no purpose and was never functional.  It only added a layer of confusion to the code by forcing it's use on all current drivers that do not need it. If memory mapped inputs are needed in the future (not likely), then they can be added with a DISCRETE_INPUT_MAP function.
   * Now the discrete inputs are written to by their node name only. eg: discrete_sound_w(NODE_xx, data)
   * DISCRETE_INPUT and DISCRETE_INPUTX have been removed in favour of new easier to use input modules.
@@ -32,8 +32,8 @@ Discrete Sound Changes:
   * Moved discrete sound code from drivers and put in sndhrdw\
 
 
-New Discrete Modules Added:
----------------------------
+New Discrete Modules Added [David Haywood]:
+-------------------------------------------
 - DISCRETE_INPUT_DATA(node)  - accepts 8-bit data from discrete_sound_w. Output at reset is 0.
 - DISCRETE_INPUT_LOGIC(node) - 0 if data=0; 1 if data=!0. Output at reset is 0.
 - DISCRETE_INPUT_NOT(node)   - 0 if data=!0; 1 if data=0. Output at reset is 1.
@@ -70,6 +70,6 @@ Source changes:
   * Changed debug memory accessors so they don't log on invalid memory accesses.
   * Tweaked the help text to indicate that help <command> works.
   * Added a new text attribute DCA_CURRENT, which is separate from DCA_SELECTED -- the main visible difference is that the memory view editing cursor is now hilighted red instead of yellow. In-line memory editing is now supported. To do this, I added a generic cursor concept to the view system.
-- skydiver - Added proper watchdog.  Merged memory map and added proper mirroring. Fixed coin input bug skydiver078u3yel.  It's not a 100% accurate fix, but will work until I get the exact interrupt time. The current interrupt time was 100% off. It is now less then 25% off.  :-)
+- skydiver: Added proper watchdog.  Merged memory map and added proper mirroring. Fixed coin input bug skydiver078u3yel.  It's not a 100% accurate fix, but will work until I get the exact interrupt time. The current interrupt time was 100% off. It is now less then 25% off.  :-)
 - Updated psx core to show more registers [smf].
 - Various Sega system 16/18 updates: (moonwalker decryption keys etc.). Note moonwalker needs a cpu core for the mcu (i8051 core?) before it will work [Chris Hardy].

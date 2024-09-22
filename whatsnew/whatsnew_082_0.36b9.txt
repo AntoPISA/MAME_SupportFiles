@@ -3,8 +3,8 @@
 IMPORTANT: due to changes in the palette system, there might be games that had correct colors before, and wrong now. Please let us know if you find any.
 
 
-New games supported:
---------------------
+New games supported
+-------------------
 Big Striker [Luca Elia]
 Dream Soccer '94 [Bryan McPhail]
 Kageki [Takahiro Nogi]
@@ -14,8 +14,8 @@ KiKi KaiKai [Nicola Salmoria, Ernesto Corvi]
 Perfect Soldiers [Bryan McPhail]
 
 
-New clones supported:
----------------------
+New clones supported
+--------------------
 Ajax (Japan) [Nicola Salmoria]
 Blue Print (Jaleco) [Nicola Salmoria]
 Checkman (Galaxian hardware) [Zsolt Vasvari]
@@ -37,7 +37,7 @@ These drivers have improved GRAPHICS:
 
 
 Source changes:
---------------------
+---------------
 - Fixes to 'Lazer Command' and 'Meadows Lanes' [Malcolm Lear].
 - [DOS] Changed the -depth option behaviour, now it can be either 8, 16, or auto. The default is auto, which uses the color depth appropriate for the game. 8 forces use of a 256 colors display (faster but less accurate), 16 forces use of a 16-bit display (not suggested, doesn't work with all games). MAKE SURE TO SET depth = auto IN MAME.CFG, OR YOU'LL USE 16-BIT IN ALL GAMES [Nicola Salmoria].
 - 16 bit support in the tilemap manager, so the Namco System 2 games no longer require -depth 8 [Phil Stroffolino].

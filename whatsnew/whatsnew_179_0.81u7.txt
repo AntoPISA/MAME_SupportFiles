@@ -2,15 +2,15 @@
 ----------------------------------------
 
 
-New Games supported or promoted from GAME_NOT_WORKING status:
--------------------------------------------------------------
+New Games supported or promoted from GAME_NOT_WORKING status
+------------------------------------------------------------
 Megaplay : Golden Axe 2 [Barry Rodewald, GreyRogue] (Megaplay still has a few issues (continue without extra coins etc.))
 Megaplay : Sonic the Hedgehog [Barry Rodewald, GreyRogue]
 Megaplay : Tecmo World Cup [Barry Rodewald, GreyRogue]
 Twin Eagle 2 [Olivier Galibert]
 
-New Clones supported or promoted from GAME_NOT_WORKING status:
---------------------------------------------------------------
+New Clones supported or promoted from GAME_NOT_WORKING status
+-------------------------------------------------------------
 Area 51 (R3000 Version) [Brian Troha] (still needs speedup finding)
 Ninja (clone of Sega Ninja) [Pierpaolo Prazzoli]
 
@@ -39,7 +39,7 @@ Source changes:
   * Adds a check enabled when MAME_DEBUG is defined that raises an error if the CPU core executed a negative cycle count.
   * Fixed a bug in i386_set_info() when changing the EIP register.
   * Fixed some compilation errors under non-GCC compilers
-	 * Implemented ES, BOUND, DAA, DAS, AAS, INSB, INSW, OUTSB, OUTSW, LES, LDS, HLT, LSS, LFS, LGS, IMUL with a 32 bit adjustment.
+  * Implemented ES, BOUND, DAA, DAS, AAS, INSB, INSW, OUTSB, OUTSW, LES, LDS, HLT, LSS, LFS, LGS, IMUL with a 32 bit adjustment.
 - 386 Improvements [Ville Linde]:
 	* Added DS and SS segment prefixes. renamed fs,gs -> segment_FS, segment_GS.
 	* Added INTO opcode.

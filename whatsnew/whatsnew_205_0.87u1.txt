@@ -2,8 +2,8 @@
 ----------------------------------------
 
 
-New Clones supported or promoted from GAME_NOT_WORKING status:
---------------------------------------------------------------
+New Clones supported or promoted from GAME_NOT_WORKING status
+-------------------------------------------------------------
 Painted Lady (Splash) (Ver 1.3 US) [Manuel Abadia]
 
 New Non-Working games / clones supported
@@ -49,15 +49,14 @@ Source changes:
 - Dynagears dip fix [Derrick Renaud].
 - ZN1/ZN2 big endian fix [smf].
 - SPI decryption improvements (for rf2_2k) [Ville Linde].
-- Tatsumi driver [Bryan McPhail] (playable to a degree, but not really working properly):
-  Incredibly complex hardware! These are all different boards, but share a similar sprite chip (TZB215 on Apache 3, TZB315 on others). Other graphics (road, sky, bg/fg layers) all differ between games. Todo:
-  * Sprite rotation;
-  * Finish road layer (Round Up 5);
-  * Implement road layer (Apache 3, Cycle Warriors);
-  * BG layer(s) (Cycle Warriors);
-  * BG layer (Round Up 5) - May be driven by missing VRAM data;
-  * Round Up 5 always boots with a coin inserted;
+- Tatsumi driver [Bryan McPhail] (playable to a degree, but not really working properly): Incredibly complex hardware! These are all different boards, but share a similar sprite chip (TZB215 on Apache 3, TZB315 on others). Other graphics (road, sky, bg/fg layers) all differ between games. Todo:
+  * Sprite rotation.
+  * Finish road layer (Round Up 5).
+  * Implement road layer (Apache 3, Cycle Warriors).
+  * BG layer(s) (Cycle Warriors).
+  * BG layer (Round Up 5) - May be driven by missing VRAM data.
+  * Round Up 5 always boots with a coin inserted.
   * Round Up 5 doesn't survive a reset.
-  * Dip switches;
-  * Various other things...
+  * DIP switches.
+  * Various other things.
 - Sega Model 2 driver (see model2.c for list of games): Tilemaps, sound, and inputs working to varying degrees in various games.  Most of the games at least start up, although some don't and some crash [R. Belmont].

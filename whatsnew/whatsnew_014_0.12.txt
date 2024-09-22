@@ -15,8 +15,8 @@ New games supported
 (timeplt)  Time Pilot [Nicola Salmoria]
 
 
-Program changes
----------------
+Program changes:
+----------------
 - Sound support in Burger Time. This is the first multiple CPU game supported by MAME (two 6502, one for code, one for sound). It's not perfect, but we're getting there. Also, as you can guess, this is slow. A 486/100 cannot handle it at 60 fps. Runs reasonably with -frameskip 1, though [Nicola Salmoria].
 - I also set up the second CPU to emulate sound in Scramble, but the sound that comes out is completely wrong. I don't know what I'm missing, anyone can help? [Nicola Salmoria].
 - Since the 8910 emulator doesn't allow to set the clock frequency at runtime, I temporarily switched to using the default one. This affects sound in Crazy Climber, Crazy Kong and Bagman. Let me know whether it's better or worse than before [Nicola Salmoria].

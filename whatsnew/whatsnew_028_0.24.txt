@@ -3,8 +3,8 @@
 *** TO ALL CONTRIBUTORS: Please do not make use of C++ // comments in your sources. I loose a lot of time every release to adjust them. Then use official source release as a base for your next updates. Use a comment style like in Williams.c sources (this is actually my comment style and almost clear to read). Thanks ***
 
 
-New games supported:
---------------------
+New games supported
+-------------------
 (blaster) Blaster [Marc Lafontaine]
 (bubbles) Bubbles [Marc Lafontaine]
 (defender) Defender [Marc Lafontaine]
@@ -19,9 +19,9 @@ New games supported:
 
 Program changes:
 ----------------
-- Added support for Jr. Pacman. Decryption method provided by David. Colors should be 100% right too. Hiscore saving not supported yet. [Nicola Salmoria, Lee Taylor, David Caldwell].
+- Added support for Jr. Pacman. Decryption method provided by David. Colors should be 100% right too. Hiscore saving not supported yet [Nicola Salmoria, Lee Taylor, David Caldwell].
 - I'v found the decryption scheme for garbled chars of 'Lost Tomb' which is now playable. Colors are still wrong [Mirko Buffoni].
-- Also, I'v finally fixed my problems with ADPCM decoding, so now 'Kung Fu Master' doesn't need separate samples anymore (I didn't distribuite them because of copyright on sounds). The samples are now calculated during bootstrap of the game [Mirko Buffoni].
+- Also, I've finally fixed my problems with ADPCM decoding, so now 'Kung Fu Master' doesn't need separate samples anymore (I didn't distribuite them because of copyright on sounds). The samples are now calculated during bootstrap of the game [Mirko Buffoni].
 - Added 'Turpin' (another version of Turtles) support. Also colors are 100% correct the two games now [Nicola Salmoria].
 - Added support for 'Qbert Qubes'. Only hitch with the driver: you have to reset (F3) the game at first time when the empty supreme noser table appears, then the table will be correctly filled. Alternatively, you can insert a coin before this empty table appears... Hiscore save not supported yet [Fabrice Frences].
 - New option in the setup menu: "CREDITS". It displays a list of the people who contributed to the current driver. I have surely left out many people, and apologize in advance for that. If you contributed to a driver and your name doesn't appear in the list, please let me know [Mirko Buffoni].
@@ -33,7 +33,7 @@ Program changes:
 
 
 Sources changes:
------------------
+----------------
 - Provided new Vesamodes:  320x240 and 512x384. You can select a mode either by -X (e.g. -640) or -XxY (e.g. -640x480). Also fixed a bug that caused -vesaskip 0 not to run properly. Also added -rotate option [Bernd Wiebelt].
 - Also, any vesa mode in combination with -noscanlines option can be used to achieve correct aspect ratio on most monitors. This method is of course slower, and can work flawlessy on P166+ class [Mirko Buffoni].
 - Modifications to support Driver Description and Credits [Mirko Buffoni].

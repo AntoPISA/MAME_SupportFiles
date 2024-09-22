@@ -4,16 +4,12 @@ Well, you know that I usually don't celebrate recurrences, but we have just hit 
 'Faster, Harder, More Challenging Q*Bert'. This is a sequel to 'Q*Bert' which was never released to the public. You can find its story, as recalled by the author, Warren Davis, at http://www.coinop.org/coinop/features/qbstory.html. Thanks to everyone who made this possible.
 
 
-New games supported:
---------------------
+New games supported
+-------------------
 Heavy Barrel (new, complete set). The old one has been renamed & modified to include 4 ROMs which were missing. [Bryan McPhail]
 Magic Sword [Paul Leaman]
 Slap Fight (preliminary) [Keith Wilkins]
 Space Dungeon [Dan Boris]
-
-New clones supported:
---------------------
-xxx
 
 
 These drivers have improved GRAPHICS:
@@ -45,7 +41,7 @@ Other drivers changes:
 
 
 Source changes:
-----------------
+---------------
 - Further changes to the palette handling code [Nicola Salmoria]:
   * osd_create_display() no longer takes the total_colors, palette, pens arguments. They are handled by osd_allocate_colors(), which is called after osd_create_display().
   * The convert_color_prom() functions now take a unsigned short *colortable parameter instead of unsigned char *.

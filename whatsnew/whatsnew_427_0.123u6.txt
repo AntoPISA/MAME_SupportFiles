@@ -2,8 +2,19 @@
 ---------------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
+New games added or promoted from NOT_WORKING status
+---------------------------------------------------
+Gekisou [Nicola Salmoria]
+Pot Game (italian) [Roberto Fresca]
+
+New clones added
+----------------
+Pitfall II (315-5093, Flicky Conversion) [Corrado Tomaselli]
+Thunder Dragon (4th Jun. 1991) [Corrado Tomaselli]
+
+
+MAMETesters Bugs Fixed (52):
+----------------------------
 - 00150: [Misc.] alpinr2b, alpinesa : Assertion with -debug.
 - 00217: [Graphics] splndrbt: On boot the pcb displays a clean light blu screen while in mame there is a black road.
 - 00220: [Graphics] splndrbt: Concerning the gfx, on the pcb the background is not linear as shown in MAME.
@@ -55,22 +66,11 @@ MAMETesters Bugs Fixed
 - 01534: [Misc.] ajax, ajaxj, typhoon: Access Violation with -debug.
 - 01535: [Misc.] usclssic: Access Violation with -debug.
 - 01536: [Misc.] uballoon: Access Violation with -debug.
-- 01538: [Core] -verifysamples: Inconsistent handling of missing sample sets
-
-
-New games added or promoted from NOT_WORKING status
----------------------------------------------------
-Gekisou [Nicola Salmoria]
-Pot Game (italian) [Roberto Fresca]
-
-New clones added
-----------------
-Pitfall II (315-5093, Flicky Conversion) [Corrado Tomaselli]
-Thunder Dragon (4th Jun. 1991) [Corrado Tomaselli]
+- 01538: [Core] -verifysamples: Inconsistent handling of missing sample sets.
 
 
 Source changes:
---------------
+---------------
 - Added a new device type for timers. Where applicable, added a parallel set of timer functions that take a device_config instead of an emu_timer. Added MDRV_TIMER_* macros to define the timers in the machine driver. Implemented both periodic and scanline-based timer variants. Modified Space Encounters and Centipede to make use of this feature. Going forward, this is the preferred way of creating periodic timers [Zsolt Vasvari].
 - Renamed *_vbl_cb to *_vblank_callback [Aaron Giles].
 - Magicfly updates [Roberto Fresca]:
@@ -133,7 +133,7 @@ Source changes:
 - DIP switch improvements [RansAckeR]:
   * 1945kiii.c, 88games.c and 40love.c: Made use of PORT_DIPUNKNOWN_DIPLOC.
   * 40love.c: Made use of PORT_INCLUDE
- 8080bw.c: Added more dip locations; Made use of PORT_INCLUDE.
+  * 8080bw.c: Added more dip locations; Made use of PORT_INCLUDE.
   * wilytowr.c: Added dip locations for atomboy/wilytowr; Fixed coin modes.
   * battlane.c, battlera.c, battlnts.c, bbusters.c: added dip locations.
   * battlnts.c: made use of PORT_INCLUDE; fixed unknown dip switch.
@@ -143,7 +143,5 @@ Source changes:
   * blockade.c: made use of PORT_INCLUDE.
   * beezer.c: Added dip locations.
   * bfm_sc2.c: dip switch improvements, made use of PORT_INCLUDE.
-- Conerted the MPU4 driver to use an HD6845, as the Hitachi part was on the
-PCB, while also using it to generate the VBLANK, rather than hardcoding a value. Added the pulldown resistor to the network, and added all the conditional inputs. Please note that on the later Cabinet Types (Ready
-Steady Go-1 onwards), the 10p slot is locked out (location of the true register for this is unknown), but the input setting is correct - you have to use Coin 2 or higher to get money in [James Wallace].
+- Converted the MPU4 driver to use an HD6845, as the Hitachi part was on the PCB, while also using it to generate the VBLANK, rather than hardcoding a value. Added the pulldown resistor to the network, and added all the conditional inputs. Please note that on the later Cabinet Types (Ready Steady Go-1 onwards), the 10p slot is locked out (location of the true register for this is unknown), but the input setting is correct - you have to use Coin 2 or higher to get money in [James Wallace].
 - Fixed "garbage" (newlines) in the debugger window when debugging the SH-4 CPU [Oliver Stoenberg].

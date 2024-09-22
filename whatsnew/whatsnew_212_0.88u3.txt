@@ -2,13 +2,13 @@
 ----------------------------------------
 
 
-New Games supported or promoted from GAME_NOT_WORKING status:
--------------------------------------------------------------
+New Games supported or promoted from GAME_NOT_WORKING status
+------------------------------------------------------------
 Mission Craft [Tomasz Slanina, Pierpaolo Prazzoli] (these now run due to cpu core fixes being made)
 Super Lup Lup Puzzle [Tomasz Slanina, Pierpaolo Prazzoli]
 
-New Clones supported or promoted from GAME_NOT_WORKING status:
---------------------------------------------------------------
+New Clones supported or promoted from GAME_NOT_WORKING status
+-------------------------------------------------------------
 Hot Rod (4 player, Japan) [Chris Hardy]
 Liberator (set 2) [Aaron Giles]
 Meteorites [Pierpaolo Prazzoli] (italian clone of asteroids)
@@ -23,8 +23,8 @@ Woodpecker (2 sets)
 Yachtsman
 
 
-New Windows based debugger [Aaron Giles]  
-----------------------------------------
+New Windows based debugger [Aaron Giles]:
+-----------------------------------------
 Note: The new debugger is enabled as the default debugger for the next few u releases (in a debug build only) to allow feedback, it can be disabled by changing the makefile.
 Description of 1st update: There are some new behaviors and new ways of doing things you should be aware of. By default the debugger no longer "auto hides". This was a remnant of the way the old debugger worked that I have gotten rid of. If you want to  hide all the debugger windows, just close the "main" debug window. It will return if you break in the debugger at a future time. The "main" window has four panes: a register list on the left, a disassembly around the current PC at the top, a console output window in the middle, and an input line at the bottom. The input line supports full editing features, and you can also use up arrow/down arrow to cycle through recently typed  commands.
 Hitting Enter on a blank line in the console is equivalent to single stepping once. You can also do that with F11. To run, either use the "go" command or hit F12 (or close the "main" window). To run until the next CPU, either use the "next" command or hit F6. You can bring up multiple independent memory and/or disassembly windows by using the Debug menu. Each window can look at a different address space on any CPU. You can enter any expression (including those using registers from the CPU) into the entry line at the top of these windows in order to specify which address to begin displaying at. I've implemented a number of useful commands in the console. Type "help" to navigate the extensive online documentation for a number of examples on how to use these features. You can do some really cool stuff now with the conditional watchpoints and breakpoints.

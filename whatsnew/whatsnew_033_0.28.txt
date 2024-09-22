@@ -2,8 +2,8 @@
 ----------------------------------------
 
 
-New games supported:
---------------------
+New games supported
+-------------------
 (bankp)    Bank Panic [Nicola Salmoria]
 (destderb) Demolition Derby [Christopher Kirmse, Aaron Giles, Brad Oliver]
 (domino)   Domino Man [Christopher Kirmse, Aaron Giles, Brad Oliver]
@@ -27,15 +27,15 @@ New games supported:
 (twotiger) Two Tigers [Christopher Kirmse, Aaron Giles, Brad Oliver]
 (wacko)    Wacko [Christopher Kirmse, Aaron Giles, Brad Oliver]
 
-New games supported:
---------------------
+New games supported
+-------------------
 (amigo)    Amigo (Amidar US bootleg) [David Winter]
 (commandj) Commando (Japanese version) [Nicola Salmoria]
 (docastl2) Mr. Do's Castle (alternate version) [Nicola Salmoria]
 
 
 Program changes:
--------------
+----------------
 - Added *emulated* sound to 'Q*Bert', 'Reactor', 'Krull' and 'Mad Planets'. The samples are no longer needed and may be removed. 'Q*Bert' bes would work as well, if we had the sound ROM ;-( Speech is not emulated... yet! Please do not complain because there is no speech in 'Q*Bert'. We are aware of that [Fabrice Frances].
 - Provided a new 6809 emulator. It is faster than the previous one, and fixes some bugs including the ship moving in the wrong direction on the tower level of 'Star Wars' and the bonus maze in 'Pac & Pal' and also added optimizations to some Williams games, GnG and Qix. He also fixed several problems in Qix.[John Butler].
 - Provided a driver for 'Omega Race' and added a "director's cut" mode to 'Battle Zone'. DELETE BZONE\BZONE.CFG OTHERWISE THE GAME WILL NOT WORK CORRECTLY [Bernd Wiebelt].
@@ -73,7 +73,7 @@ Program changes:
 
 
 Source changes:
-------------
+---------------
 - New osd_modify_pen() function. It allows drivers to dynamically modify the palette. WARNING: since this feature can severely reduce performance on some systems, it must only be used when necessary - that is, when the emulated game dynamically modifies the palette. The other games should continue to use the static palette as before. Many games already use this feature (e.g. Crystal Castles, the Gottlieb games, Tapper, Bubble Bobble, and many others). There's also osd_get_pen(), which is used by usrintf.c to dynamically pick the pens used to render menus [Aaron Giles].
 
 
@@ -91,14 +91,14 @@ Program (the following changes were done by Nicola Salmoria):
 - 'Zaxxon' and 'Congo Bongo' can go in service mode (F2).
 - 'Bank Panic' support. Thanks to Virtu-Al, colors are correct.
 - Colors in 'Donkey Kong' are now 100% accurate. Several people complained that girders should be pink instead of red, but to the best of my knowledge the current colors are an accurate conversion of the color PROMs, and this has been confirmed by some people. There might be two different versions of 'Donkey Kong', with slightly different colors. If someone has a "pink" board and wants to read the PROMs from there, I'll be happy to include them.
-- Dip switches now work in 'Xevious'. Also fixed a bug in the targeting cursor colors (black corners while firing). 'Super Xevious' works. Explosions are emulated with samples, thanks to Andrew Scott.
+- DIP switches now work in 'Xevious'. Also fixed a bug in the targeting cursor colors (black corners while firing). 'Super Xevious' works. Explosions are emulated with samples, thanks to Andrew Scott.
 - Support for another version of 'Mr Do's Castle' ("docastl2").
 - Support for the Japanese version of 'Commando' ("commandj").
 - Thanks to Gary Walton, fixed sprite placement in 'Turtles'.
 
 
 Sources changes:
---------------
+----------------
 - All-new handling of rotation. The GameDriver structure now has a "orientation" field which allows driver writers to handle fairly easily games which run on the same hardware but with different orientations. Crazy Climber/Crazy Kong, Lady Bug/Snap Jack/Cosmic Avenger and the Gottlieb games are examples of drivers using this feature. Rotation is handled automatically by gfxdecode(), which creates a prerotated charset, and drawgfx(), which swaps the arguments appropriately. Drivers which use only the standard functions to render their display will automatically handle the "orientation" field. If a driver writes directly to the bitmap, it must handle the rotation itself. IMPORTANT NOTE: osd_create_bitmap() swaps width and height when a rotation is requested. Take that into account or you'll risk trashing memory. IMPORTANT NOTE TO PORTERS: remember to update osd_create_bitmap() and osd_create_display() to take into account the rotation. Check msdos.c to see how this must be done.
 - Totally new Input port definition structure. See driver.h for the new structures definition; several drivers already use it, check them for working examples. The new definition is much more powerful and easier to maintain than the previous one. It isn't complete yet, but it will eventually handle everything, including trackballs and analog joysticks. Drivers using the old definition will gradually be converted to the new one. Please do not submit new drivers using the old definition. It is obsolete and will be removed as soon as the conversion of the existing drivers is finished.
 - Moved the input handling to the new source file inptport.c.

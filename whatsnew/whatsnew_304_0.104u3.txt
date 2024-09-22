@@ -18,8 +18,8 @@ Bomb Kick [Pierpaolo Prazzoli]
 Tokio / Scramble Formation [Nicola Salmoria, Arzeno Fabrice]
 
 
-MAMETesters Bugs Fixed (6)
---------------------------
+MAMETesters Bugs Fixed (6):
+---------------------------
 twinhawk0104u1gra (Alex Jackson)
 twinhawk0104u1gre (Alex Jackson)
 gtmr0100u1gre (Luigi30)
@@ -65,8 +65,7 @@ Source changes:
 - Removed VIDEO_DUAL_MONITOR flag [Aaron Giles].
 - Added a number of new properties to the debug views to allow for more flexibility in the way the views are displayed. Also added an option to the disassembly window to display encrypted opcode data on the right [Aaron Giles].
 - Save state changes: [Aaron Giles]:
-  * Audited the use of save state registrations throughout the code, switching most cases over to using the state_save_register_global.
-    or state_save_register_item macros to simplify the code.
+  * Audited the use of save state registrations throughout the code, switching most cases over to using the state_save_register_global or state_save_register_item macros to simplify the code.
   * Deprecated the save_state_register_<type> calls since nearly all cases can be automatically handled by the macros. For odd cases, there is now a save_state_register_memory call which is generic.
   * Simplified the save state logic, allowing for unlimited instances and reducing the complexity of the code. This breaks existing save states. Sorry, I'll try not to do it again.
 - Fixed save state support in 'Missile Command' [Aaron Giles].

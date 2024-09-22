@@ -2,37 +2,6 @@
 -----------------------------------
 
 
-MAME Testers Bugs Fixed
------------------------
-- 05191: [Save/Restore] (megadriv.cpp) megadriv [evander,wboymw]: EEPROM data is not saved (Ryan Holtz).
-- 05580: [DIP/Input] (royalmah.cpp) cafetime: DIP switch settings are incorrect (kamilz).
-- 05785: [DIP/Input] (cabal.cpp) cabal and clones (except cabalbl): Coins don’t work when Demo Sound DIP switch is off (AJR).
-- 05800: [Sound] (megadriv.cpp) genesis / megadriv / megadrij [microm96] [microm96a] [micromm]: Incorrect horn sound (Aaron Giles).
-- 05875: [Misc.] (magictg.cpp) magictg: AddressSanitizer: Buffer overrun in ZR36120 emulation (Robbbert).
-- 06166: [Sound] (megadriv.cpp) megadriv [batman]: Bad emulated sound effects when hitting enemies (Aaron Giles).
-- 06740: [Sound] (dec0.cpp) slyspy, bouldash: Sound randomly speeds up and eventually stops working (Aaron Giles).
-- 06789: [Graphics] (namconb1.cpp) vshoot: Black screen after winning first match (O. Galibert).
-- 06930: [Sound] (dec0.cpp) robocop, robocopu, robocopw: The sound effect of the van’s back door cuts off suddenly (Aaron Giles).
-- 07023: [Misc.] (megadriv.cpp) megadriv [fatfury, fatfuryu]: Description is incomplete (ArcadeShadow).
-- 07052: [Gameplay] (mac128.cpp) macplus [bdrkcast]: Mac Plus interrupt timing is incorrect (Lord Nightmare).
-- 07161: [Sound] (dec0.cpp) baddudes: Missing sound in stage 3 boss transformation (Aaron Giles).
-- 07193: [Documentation] (megadriv.cpp) megadriv [jellyboy]: Release year is incomplete (ArcadeShadow).
-- 07303: [Media Support] (coco3.cpp) coco3 [tharogad]: The Castle of Tharogad game cartridge does not run (AJR).
-- 07389: [Sound] (williams.cpp) inferno: DAC sound is incorrect (Ivan Vangelista).
-- 07767: [Documentation] (megadriv.cpp) [megadriv] tecmowc, tecmow92: These are regional variants of the same game (ArcadeShadow).
-- 07831: [Sound] (gaelco3d.cpp) surfplnt, surfplnt40, speedup: Sound has repeating distortion/crackling (Ivan Vangelista).
-- 07849: [DIP/Input] (taitosj.cpp) sfposeid: Identified bonus life and infinite lives DIP switch settings (jkburks).
-- 07856: [Core] (ksys573.cpp) ddr2mla, ddrbocd, Analog DDR games: Songs run at half frame rate (Windy Fairy).
-- 07885: [Media Support] (xerox820.cpp) x820: Can no longer boot CP/M from floppy disk (O. Galibert).
-- 07886: [Media Support] (plus4.cpp) c16: Cartridges are ignored, system boots to BASIC (Ivan Vangelista).
-- 07887: [Crash/Freeze] (divebomb.cpp) divebomb: [debug] K051316 ROM region is not a power-of-two size (Ivan Vangelista).
-- 07889: [Crash/Freeze] (ti99_4p.cpp) ti99_4p, ti99_4ev: [debug] Assertion fails as VRAM size is unset on start (Ivan Vangelista).
-- 07898: [Interface] (gaelco3d.cpp) speedup: Speed Up is missing a shifter overlay (Ivan Vangelista).
-- 07904: [Documentation] (monkey_king_3b.cpp) rs70_648: Manufacturer is not set (AntoPISA).
-- 07909: [Sound] (tecmo16.cpp) ginkun: Level Select, Minigame Select and Credits music doesn’t play (David Haywood).
-- 07916: [Crash/Freeze] (playch10.cpp) pc_pinbt: Exception when using single screen BIOS (Ivan Vangelista).
-
-
 New working machines
 --------------------
 Andrew Holme Mark 1 FORTH Computer [AJR]
@@ -199,6 +168,7 @@ Thunder Dragon (bootleg, set 2) [hammy, EMG]
 Virtua Striker 2 '99.1 (Step 1.5, Export, USA, Revision B) [Brian Troha, The Dumping Union]
 Virtua Striker 2 '99.1 (Step 1.5, Japan, Revision B) [Brian Troha, The Dumping Union]
 
+
 New working software list additions
 -----------------------------------
 apple2_flop_clcracked:
@@ -248,586 +218,286 @@ Translations added or modified
 Portuguese (Brazil) [Chrystian Rafael Rubio de Melo]
 
 
+MAME Testers Bugs Fixed (27):
+-----------------------------
+- 05191: [Save/Restore] (megadriv.cpp) megadriv [evander,wboymw]: EEPROM data is not saved (Ryan Holtz)
+- 05580: [DIP/Input] (royalmah.cpp) cafetime: DIP switch settings are incorrect (kamilz)
+- 05785: [DIP/Input] (cabal.cpp) cabal and clones (except cabalbl): Coins don’t work when Demo Sound DIP switch is off (AJR)
+- 05800: [Sound] (megadriv.cpp) genesis / megadriv / megadrij [microm96] [microm96a] [micromm]: Incorrect horn sound (Aaron Giles)
+- 05875: [Misc.] (magictg.cpp) magictg: AddressSanitizer: Buffer overrun in ZR36120 emulation (Robbbert)
+- 06166: [Sound] (megadriv.cpp) megadriv [batman]: Bad emulated sound effects when hitting enemies (Aaron Giles)
+- 06740: [Sound] (dec0.cpp) slyspy, bouldash: Sound randomly speeds up and eventually stops working (Aaron Giles)
+- 06789: [Graphics] (namconb1.cpp) vshoot: Black screen after winning first match (O. Galibert)
+- 06930: [Sound] (dec0.cpp) robocop, robocopu, robocopw: The sound effect of the van’s back door cuts off suddenly (Aaron Giles)
+- 07023: [Misc.] (megadriv.cpp) megadriv [fatfury, fatfuryu]: Description is incomplete (ArcadeShadow)
+- 07052: [Gameplay] (mac128.cpp) macplus [bdrkcast]: Mac Plus interrupt timing is incorrect (Lord Nightmare)
+- 07161: [Sound] (dec0.cpp) baddudes: Missing sound in stage 3 boss transformation (Aaron Giles)
+- 07193: [Documentation] (megadriv.cpp) megadriv [jellyboy]: Release year is incomplete (ArcadeShadow)
+- 07303: [Media Support] (coco3.cpp) coco3 [tharogad]: The Castle of Tharogad game cartridge does not run (AJR)
+- 07389: [Sound] (williams.cpp) inferno: DAC sound is incorrect (Ivan Vangelista)
+- 07767: [Documentation] (megadriv.cpp) [megadriv] tecmowc, tecmow92: These are regional variants of the same game (ArcadeShadow)
+- 07831: [Sound] (gaelco3d.cpp) surfplnt, surfplnt40, speedup: Sound has repeating distortion/crackling (Ivan Vangelista)
+- 07849: [DIP/Input] (taitosj.cpp) sfposeid: Identified bonus life and infinite lives DIP switch settings (jkburks)
+- 07856: [Core] (ksys573.cpp) ddr2mla, ddrbocd, Analog DDR games: Songs run at half frame rate (Windy Fairy)
+- 07885: [Media Support] (xerox820.cpp) x820: Can no longer boot CP/M from floppy disk (O. Galibert)
+- 07886: [Media Support] (plus4.cpp) c16: Cartridges are ignored, system boots to BASIC (Ivan Vangelista)
+- 07887: [Crash/Freeze] (divebomb.cpp) divebomb: [debug] K051316 ROM region is not a power-of-two size (Ivan Vangelista)
+- 07889: [Crash/Freeze] (ti99_4p.cpp) ti99_4p, ti99_4ev: [debug] Assertion fails as VRAM size is unset on start (Ivan Vangelista)
+- 07898: [Interface] (gaelco3d.cpp) speedup: Speed Up is missing a shifter overlay (Ivan Vangelista)
+- 07904: [Documentation] (monkey_king_3b.cpp) rs70_648: Manufacturer is not set (AntoPISA)
+- 07909: [Sound] (tecmo16.cpp) ginkun: Level Select, Minigame Select and Credits music doesn’t play (David Haywood)
+- 07916: [Crash/Freeze] (playch10.cpp) pc_pinbt: Exception when using single screen BIOS (Ivan Vangelista)
+
+
 Merged pull requests
 --------------------
 - 7695: Added synchronous I/O for RS232 port and HP98046 module [F. Ulivi].
 - 7718: Added save state support for Namco System 21 family [cam900].
 - 7756: machine/tc009xlvc.cpp: Integrated Z80 CPU core in device, and fixed background drawing (visible in gemcrush) [cam900].
-- 7763: machine/fdc37c665gt.cpp: Reimplemented with added floppy and parallel port support. [Windy Fairy]
-- 7789: hng64.cpp: Implemented priority Z sort mode for sprites. [Happy]
-- 7792: hash/sgi_mips.xml: Added three entries, and missing discs for various entries. [nixzone.nl, pixelbart.net, Davide Cavalca]
+- 7763: machine/fdc37c665gt.cpp: Reimplemented with added floppy and parallel port support [Windy Fairy].
+- 7789: hng64.cpp: Implemented priority Z sort mode for sprites [Happy].
+- 7792: hash/sgi_mips.xml: Added three entries, and missing discs for various entries [nixzone.nl, pixelbart.net, Davide Cavalca].
 - 7800: sound/setapcm.cpp: Added preliminary 16-voice ST0032 internal sound support (used by jclub2) [cam900].
-- 7808: sound/ymfm.cpp: Added new BSD-licensed implementation of Yamaha OPN/OPM FM synthesis emulation. [Aaron Giles]
-- 7810: hng64.cpp: Improved projection matrix calculation and 3D clipping. [Happy]
-- 7811: sound/cdda.cpp: Return LBA position as currently playing LBA (fixes issues with Konami System 573 games). [Windy Fairy]
-- 7815: apple2gs.xml: Added descriptions for sys504 and sys601. [Kelvin Sherlock]
+- 7808: sound/ymfm.cpp: Added new BSD-licensed implementation of Yamaha OPN/OPM FM synthesis emulation [Aaron Giles].
+- 7810: hng64.cpp: Improved projection matrix calculation and 3D clipping [Happy].
+- 7811: sound/cdda.cpp: Return LBA position as currently playing LBA (fixes issues with Konami System 573 games) [Windy Fairy]
+- 7815: apple2gs.xml: Added descriptions for sys504 and sys601 [Kelvin Sherlock].
 - 7816: Added two TV games, and several LeapFrog and e-kara software list entries [David Haywood].
-- 7817: twinkle.cpp: Removed periodic source for IRQ2. [Ziemas]
-- 7818: firebeat.cpp: Re-dumped CDs for two games, and added Keyboardheaven (Korea). [Jennifer, Taylor, David Haywood]
-- 7819: neptunp2.cpp: Added Corsario (Cirsa slot machine). [jordigahan, ClawGrip]
-- 7821: spg2xx.cpp: Added Dora the Explorer - Dora TV Adventure Globe. [Sean Riddle, David Haywood]
-- 7822: machine/t10mmc.cpp: Handle LBA zero correctly when first track is audio. [Windy Fairy]
-- 7824: elan_ep3a19a.cpp: Added two TV Board Games 6-in-1 games. [Sean Riddle, David Haywood]
-- 7825: cps2.cpp: Added Mega Man: The Power Battle (CPS2, USA 950925, SAMPLE Version). [bdlou, r09]
-- 7826: nova2001.cpp: Added Raiders5 (Japan, set 2, bootleg?). [Paul Wood, David Haywood]
-- 7827: Added dongle dumps, improved cabinet info register settings, and updated notes. [Jennifer Taylor]
-- 7828: firebeat.cpp: Improved IN1 values, and added notes on DIP switches. [Windy Fairy]
-- 7829: ksys573.cpp: Use ddr2ml disc as base for ddr2mc2. [Windy Fairy]
+- 7817: twinkle.cpp: Removed periodic source for IRQ2 [Ziemas].
+- 7818: firebeat.cpp: Re-dumped CDs for two games, and added Keyboardheaven (Korea) [Jennifer Taylor, David Haywood].
+- 7819: neptunp2.cpp: Added Corsario (Cirsa slot machine) [jordigahan, ClawGrip].
+- 7821: spg2xx.cpp: Added Dora the Explorer - Dora TV Adventure Globe [Sean Riddle, David Haywood].
+- 7822: machine/t10mmc.cpp: Handle LBA zero correctly when first track is audio [Windy Fairy].
+- 7824: elan_ep3a19a.cpp: Added two TV Board Games 6-in-1 games [Sean Riddle, David Haywood].
+- 7825: cps2.cpp: Added Mega Man: The Power Battle (CPS2, USA 950925, SAMPLE Version) [bdlou, r09].
+- 7826: nova2001.cpp: Added Raiders5 (Japan, set 2, bootleg?) [Paul Wood, David Haywood].
+- 7827: Added dongle dumps, improved cabinet info register settings, and updated notes [Jennifer Taylor].
+- 7828: firebeat.cpp: Improved IN1 values, and added notes on DIP switches [Windy Fairy].
+- 7829: ksys573.cpp: Use ddr2ml disc as base for ddr2mc2 [Windy Fairy]
 - 7831: psikyo.cpp: Fixed crash in samuraia and clones accessing non-existent ROM region [cam900].
-- 7832: merits.cpp: Added Scorpion (Dec 24, 1993). [jordigahan, ClawGrip]
-- 7833: twinkle.cpp: Added all missing CD and hard disk dumps, and added three beatmania IIDX variants. [Jennifer Taylor]
-- 7834: Improved Brazilian Portuguese translation. [Chrystian Rafael Rubio de Melo]
-- 7834: firebeat.cpp: Added support for beatmania III floppy disk drive and spectrum analyzer. [Windy Fairy]
-- 7837: debugger: Added “wpsize” variable for accessing the access size that triggered a watchpoint. [moralrecordings]
-- 7838: elan_ep3a19a.cpp: Added three TV Board Games 3-in-1 variants. [Sean Riddle, David Haywood]
+- 7832: merits.cpp: Added Scorpion (Dec 24, 1993) [jordigahan, ClawGrip].
+- 7833: twinkle.cpp: Added all missing CD and hard disk dumps, and added three beatmania IIDX variants [Jennifer Taylor].
+- 7834: Improved Brazilian Portuguese translation [Chrystian Rafael Rubio de Melo].
+- 7834: firebeat.cpp: Added support for beatmania III floppy disk drive and spectrum analyzer [Windy Fairy].
+- 7837: debugger: Added “wpsize” variable for accessing the access size that triggered a watchpoint [moralrecordings].
+- 7838: elan_ep3a19a.cpp: Added three TV Board Games 3-in-1 variants [Sean Riddle, David Haywood].
 - 7840: momoko.cpp: Fixed video code reading beyond the end of ROM region (caused glitches on high score table) [David Haywood].
-- 7841: Fixed rewind functionality (GitHub #7806). [feos]
-- 7845: alg.cpp: Added 100 Hz display versions of Tierras Salvajes and Marbella Vice. [Arcade Planet, Recreativas.org, ClawGrip]
-- 7846: video/k057714.cpp: Implemented raster timing registers (fixes timings on some Konami Firebeat games). [Windy Fairy]
+- 7841: Fixed rewind functionality (GitHub #7806) [feos].
+- 7845: alg.cpp: Added 100 Hz display versions of Tierras Salvajes and Marbella Vice [Arcade Planet, Recreativas.org, ClawGrip].
+- 7846: video/k057714.cpp: Implemented raster timing registers (fixes timings on some Konami Firebeat games) [Windy Fairy].
 - 7847: jpmimpct.cpp, jpmimpctsw.cpp: Fixed reel display in j6big50, and added sound ROM for j6untch [David Haywood].
-- 7848: generalplus_gpl16250_spi_direct.cpp: Added Pac-Man (mini arcade) and Ms. Pac-Man (mini arcade). [Sean Riddle, David Haywood]
+- 7848: generalplus_gpl16250_spi_direct.cpp: Added Pac-Man (mini arcade) and Ms. Pac-Man (mini arcade) [Sean Riddle, David Haywood].
 - 7849: midzeus.cpp: Disabled waveram drawing feature by default [David Haywood].
-- 7850: spg2xx.cpp: Added Teléfono interactivo de TV (Spain). [ClawGrip, Sean Riddle, David Haywood]
+- 7850: spg2xx.cpp: Added Teléfono interactivo de TV (Spain) [ClawGrip, Sean Riddle, David Haywood].
 - 7851: zaxxon.cpp: Fixed tilemap/sprite priority for ixion; also demoted lastfght and raccoon to not working [David Haywood].
 - 7856: joystand.cpp: Converted cartridge access function to address_map_bank_device and cleaned up code [cam900].
-- 7857: leapfrog_iquest.cpp: Added Turbo Twist Spelling (US) and Turbo Twist Vocabulator (US). [Sean Riddle, David Haywood]
-- 7858: sega_beena_cart.xml: Added ten entries, and corrected pokebw scan sizes and checksums. [TeamEurope, ClawGrip]
-- 7859: apple2gs.cpp: Added checks for special key combinations to ADB GLU microcontroller simulation. [Kelvin Sherlock]
-- 7860: leapfrog_iquest.cpp: Added Turbo Twist Fact Blaster (US). [Sean Riddle, David Haywood]
-- 7861: spectrum_cass.xml: Updated metadata for six entries. [ArcadeShadow]
+- 7857: leapfrog_iquest.cpp: Added Turbo Twist Spelling (US) and Turbo Twist Vocabulator (US) [Sean Riddle, David Haywood].
+- 7858: sega_beena_cart.xml: Added ten entries, and corrected pokebw scan sizes and checksums [TeamEurope, ClawGrip].
+- 7859: apple2gs.cpp: Added checks for special key combinations to ADB GLU microcontroller simulation [Kelvin Sherlock].
+- 7860: leapfrog_iquest.cpp: Added Turbo Twist Fact Blaster (US) [Sean Riddle, David Haywood].
+- 7861: spectrum_cass.xml: Updated metadata for six entries [ArcadeShadow].
 - 7864: fmtowns_flop.xml: Split into separate lists for original, cracked and miscellaneous software, and added seven entries [r09].
 - 7866: tecmo16.cpp: Improved interrupt acknowledge mechanism; 1943.cpp: Fixed drawing past the end of sprite RAM [David Haywood].
-- 7871: apple2gs.cpp: Check for presence of floppy drives before deselecting them. [Kelvin Sherlock]
-- 7872: bgfx: Made crt-geom and crt-geom-deluxe scan lines adjustable, and added a low-pass filter for crt-geom-deluxe. [cgwg]
-- 7873: firebeat.cpp: Replaced Keyboardmania 1st Mix and 2nd Mix CD dumps with images including subchannel data. [Windy Fairy]
+- 7871: apple2gs.cpp: Check for presence of floppy drives before deselecting them [Kelvin Sherlock].
+- 7872: bgfx: Made crt-geom and crt-geom-deluxe scan lines adjustable, and added a low-pass filter for crt-geom-deluxe [cgwg].
+- 7873: firebeat.cpp: Replaced Keyboardmania 1st Mix and 2nd Mix CD dumps with images including subchannel data [Windy Fairy].
 - 7874: fmtowns_cd.xml: Added thirteen entries, replaced twelve entries with better dumps, and added five missing floppies [r09].
 - 7857: Added UI option to mute audio when emulation is not throttled (GitHub #7843) [Ryan Holtz].
-- 7876: spectrum_cass.xml: Filled in year and publisher for many entries. [ArcadeShadow]
-- 7879: ibm5170.xml: Added Museum Madness and Top Gun: Danger Zone. [The Good Old Days, ArcadeShadow]
+- 7876: spectrum_cass.xml: Filled in year and publisher for many entries [ArcadeShadow].
+- 7879: ibm5170.xml: Added Museum Madness and Top Gun: Danger Zone [The Good Old Days, ArcadeShadow].
 - 7881: coco12.cpp: Set proper tri-state value for keyboard PIA port B (fixes MT07701) [Tim Lindner].
 - 7882: alg.cpp: Added notes about Picmatic games [ClawGrip].
 - 7883: machine/i2cmem.cpp: Added Xicor X24C01 support (used for save data in some Mega Drive cartridges) [Ryan Holtz].
 - 7885: bus/megadrive/jcart.cpp: Fixed I²C read address for Codemasters games [Ryan Holtz].
 - 7886: bus/megadrive/sk.cpp: Fixed saving in Sonic 3 & Knuckles, and allowed all cartridges to be locked on [Ryan Holtz].
-- 7887: apple2gs.cpp: Configure SCC Baud rate generator input clocks. [Kelvin Sherlock]
-- 7889: apple2_flop_clcracked.xml: Added latest cracks, with lots of MECC software. [4am, Firehawke]
-- 7893: gaelco3d.cpp: Added Surf Planet (Version 3.0). [jordigahan, ClawGrip]
+- 7887: apple2gs.cpp: Configure SCC Baud rate generator input clocks [Kelvin Sherlock].
+- 7889: apple2_flop_clcracked.xml: Added latest cracks, with lots of MECC software [4am, Firehawke].
+- 7893: gaelco3d.cpp: Added Surf Planet (Version 3.0) [jordigahan, ClawGrip].
 - 7894: apple2_flop_clcracked.xml: Fixed CRC for mcwacs10 [Firehawke].
 - 7895: ssv.cpp: Fixed gdfs (Mobile Suit Gundam Final Shooting) sound ROM loading [David Haywood].
 
 
 Source changes:
 ---------------
--missile, mpz80, mz700, pockstat, pofo, proteus3, savquest: initialized some variables which were causing incorrect behaviours in
- drvnoclear debug builds [Ivan Vangelista]
-
--video/hng64.cpp: Implemented priority Z sort mode for sprites (#7789) [Happy-yappH]
-
--iwm/swim: Small write fixes [Olivier Galibert]
-
--iwm: compile fix [R. Belmont]
-
--iwm: Finish the fix, sorry about the mistake [Olivier Galibert]
-
--mac: Correctly sync the main cpu to the via.  Fixes the floppy writes, probably need to be propagated to other handlers
- [Olivier Galibert]
-
--iwm/swim1: correct sense value when drive is not connectd [Olivier Galibert]
-
--apple2gs.xml: Add descriptions for sys504/sys601 [ksherlock]
-
--sound/cdda.cpp: Return LBA position as currently playing LBA (#7811) [987123879113]
-
--Refactored Seta sound, adding preliminary ST0032 sound support (#7800) [cam900]
- * Renamed sound/nile.cpp to sound/setapcm.cpp.
- * Added preliminary support for 16-voice ST0032 variant.
- * jclub2.cpp: Hooked up ST0032 sound.
- * jclub2.cpp, srmp6.cpp: Derive sound clocks from crystal frequencies.
-
--m3: XTAL updates [Steve Hunt]
-
--mac128: Implement the PWM (NEW_IWM only), fix the via clocks superdrive: Hopefully implement the HD/DD detection [Olivier Galibert]
-
--fromanc2, hp_ipc, hp3478a, hp80, hp9k_3xx, inder, iris3130, news_r3k, pc4: initialized some variables which were causing incorrect
- behaviours in drvnoclear debug builds [Ivan Vangelista]
-
--simple_st0016.cpp: got rid of tagmap lookups and other small cleanups [Ivan Vangelista]
-
--hh_cops1: qkracerm RAM is 8x12 [hap]
-
--68HC05EG: use the HCMOS cycle timings [R. Belmont, Vas Crabb]
-
--byte8251, ccs7710: Don't take over C800-CFFF space [AJR]
-
--addrmap: Allow creators in the memory map [Olivier Galibert]
-
--alphatpc16, amstr_pc, cischeat, kaypro, m72, pdp11, peplus, pt68k4, rm380z, sapi1, taito, tandy1t, tk80bs, univac, vegas, videopkr,
- votrpss, vsnes, williams: initialized some variables which were causing incorrect behaviours in drvnoclear debug builds
- [Ivan Vangelista]
-
--simple_st0016.cpp: enabled save state support [Ivan Vangelista]
-
--68hc05EG: use proper HC05 base cycle timings and disassembler [R. Belmont, Vas Crabb]
-
--mac updates: [R. Belmont]
- * Adjust macadb timings to work with real timings from the microcontrollers
- * Eliminate via_cycles timing hack
- * Preliminary working ADB on Portable and PowerBook 100
-
--mac.cpp: set correct floppy drive types for most machines [R. Belmont]
-
--new WORKING machines (Dora TV Explorer Phone plug+play) + some leapfrog softlists + ekara carts (#7816) [David Haywood]
-
-new WORKING machines
---------------------
-Dora the Explorer - Dora TV Explorer Phone / Boots's Special Day [Sean Riddle, David Haywood, Kamaal Brown]
-Namco Classics Vol.1 (3-in-1) (MSI Plug & Play) [Sean Riddle]
-
-new NOT WORKING software list additions
----------------------------------------
-leapfrog_zippity_cart.xml [David Haywood]:
-The World of Cars - Driven to Learn (500-13589-B) (UK) [David Haywood, TeamEurope]
-Disney Princess - Magical Movement & Learning (500-13590-A) (UK) [David Haywood, TeamEurope]
-leapfrog_didj_cart.xml [David Haywood]:
-Super Chicks (USA) [TeamEurope]
-
-new software list additions
----------------------------
-ekara_japan_s.xml [David Haywood]:
-Hello Kitty Special (Japan) (SC0001-KTY) [TeamEurope]
-ekara_japan_sp.xml [David Haywood]:
-SP-05 Super Cartridge - SP-05 Super Cartridge - TV POP Junior with Chibi Marukochan & Anpanman (Japan) [TeamEurope]
-ekara_japan_gk.xml [David Haywood]:
-GK-2 - Disney Princess: Princess Debut (Japan) [TeamEurope]
-GK-3 - Disney Tinkerbell to Tinkle Star Uranai (Japan) [TeamEurope]
-
--hng64 : Improved projection matrix calculation, also improving 3D clipping (#7810) [Happy-yappH]
-
--cvs, dkong, hec2hrp, igs011, namcos21_dsp, nbmj9195, realbrk, seattle, skylancr, sorcerer, subsino, superqix, trs80m3: initialized
- some variables which were causing incorrect behaviours in drvnoclear debug builds [Ivan Vangelista]
-
--d64plus: Re-implemented RAM banks into SAM address space [Nigel Barnes].
-
--dkong.h: reverted unwanted changes [Ivan Vangelista]
-
--x1_010: Clamp output samples to within range [AJR]
-
--esqkt.cpp: backed out change to use required pointers, as the driver has a mix of sets using 16 and 32 bit regions
- [Ivan Vangelista]
-
--mac: correct IIsi FDC and drive types [R. Belmont]
-
--pmac6100: fix boot video [R. Belmont]
-
-New clones marked as NOT_WORKING
---------------------------------
-Cyber Troopers Virtual-On - Twin (Export) [twistedsymphony]
-
--egret, cuda: don't include mac.h, they're independent devices now [R. Belmont]
-
--upd765_dsk, wd177x_dsk: Do not crash on damaged disks [Olivier Galibert]
-
--swim2: Remove leftover verbosity [Olivier Galibert]
-
--namcos21*.cpp: Added save state support, and made pixel clocks more clear (#7718) [cam900]
- * namcos21_de.cpp: Fixed configuration flag (driveyes has 4 2Mbit PCM ROMs). namcos21.cpp: Removed unnecessary driver init, added
-    hardware notes.
-
--New WORKING machine (Dora TV Adventure Globe) (#7821) [David Haywood]
-
-new WORKING machine
--------------------
-Dora the Explorer - Dora TV Adventure Globe [Sean Riddle, David Haywood]
-
--Set some of the previous ekara additions to unsupported as they actually use the alt seeprom hookup that isn't currently
- functional, and lock up in places as a result [David Haywood].
-
--firebeat.cpp: Re-dumped and re-converted CDs for Keyboardmania and Keyboardmania 2nd Mix. [Jennifer Taylor]
-
-new NOT WORKING clones
-----------------------
-Keyboardheaven (Korea) [Jennifer Taylor]
-
--fddebug.cpp: Remove from build [AJR]
-
--fileio.cpp: This doesn't technically require emu.h [AJR]
-
-New machines marked as NOT_WORKING
-----------------------------------
-Mini Money [jordigahan, ClawGrip]
-
--4dpi, amstrad, apple2, bebox, besta, dkong, m24: initialized some variables which were causing incorrect behaviours in drvnoclear
- debug builds [Ivan Vangelista]
-
--added MM76 disassembler and preliminary PPS-4/1 MCU core [hap]
-
-New machines marked as NOT_WORKING
-----------------------------------
-Electronic Master Mind (Invicta) [hap, Sean Riddle]
-
--machine/t10mmc.cpp: Added CD media type check for special LBA 0 case (#7822) [987123879113]
- * The special case of setting m_lba to 150 when m_lba is 0 is only applicable to data and mixed mode media CDs.
-
--New BSD-licensed implementation of Yamaha OPN and OPM FM audio chips (#7808) [Aaron Giles]
- * New BSD-licensed implementation of Yamaha OPN and OPM FM audio chips, along with new device drivers for YM2203, YM2608, YM2610,
-    YM2610B, YM2612, YM3438, and YM2151 based upon these.
-
-new WORKING clones
-------------------
-Raiders5 (Japan, set 2, bootleg?) [Paul Wood]
-
--rc759: Fix cassette error, add keyboard [Dirk Best]
-
--i8251: Allow write_cts before device has started [AJR]
-
-New working machines
---------------------
-Mark 1 FORTH Computer [AJR]
-
--tatsumi.cpp: Remove obsolete YM2151 hack [AJR]
-
--swim2: Remove leftover debugging variables [Olivier Galibert]
-
--emuview: Fix init_handlers in specific cases, fix mapping ioports in views [Olivier Galibert]
-
--coolridr.cpp: Use measured clocks for Cool Riders by correct XTAL usage based on documentation in header of coolridr.cpp
- [Brian Troha]
-
-New working clones
-------------------
-Player's Edge Plus (PP0419) Standard Draw Poker (set 1) [Brian Troha]
-Player's Edge Plus (PP0419) Standard Draw Poker (Old Chicago Casino) [Brian Troha]
-
--Fix ADPCM-B processing logic. Force external mode on for YM2610. Fixes neogeo sound playback. [Aaron Giles]
-
--Fix MSVC build [Aaron Giles]
-
--swim: local var "bit" is int instead of bool [hap]
-
--Corrected some ymsnd regions that had been overlooked [Robbbert].
-
--econx25: Added the dual Z80 co-processor board (incomplete) [Nigel Barnes].
-
--Revert "fileio.cpp: This doesn't technically require emu.h" [AJR]
- * This reverts commit 6d6073054b9155592a6022d66751422ff3b3a372.
-
--midtunit.cpp: Correct a typo for a ROM in 2 Mortal Kombat sets [Brian Troha].
-
--psikyo.cpp: Fix crash in samuraia and clones (#7831) [cam900]
-
--ksys573.cpp: Use ddr2ml disc as base for ddr2mc2 (#7829) [987123879113]
- * ddr2mc2 expects a different CD when the memory card reader is present.
-
--firebeat.cpp: Fix IN1 values, and added notes about DIP switches (#7828) [987123879113]
-
--firebeat.cpp: Added dongle dumps and expanded documentation (#7827) [Jennifer Taylor]
- * Added dongle dumps for all missing dongles that I own and could dump.
- * Added KBM 2ndMIX dongle dump [Johan Veenstra (Dexx)]
- * Documented cabinet info register bits meanings for various games. [Jennifer Taylor, Windy Fairy]
- * Documented how dongles are used in various game series.
-
-New WORKING clones (#7825)
---------------------------
-Mega Man: The Power Battle (CPS2, USA 950925, SAMPLE Version) [bdlou]
-
--tc009xlvc.cpp: Include Z80 core (interrupt handler not yet ported) (#7756) [cam900]
- * Fixed opaque background used in gemcrush.
- * Converted banked video RAM handler into internal memory space.
-
--electra.cpp: documented PCB code for Wings [gregf]
-
--pacman.cpp: removed outdated comment [gregf]
-
--pgm.cpp: correct some chips locations according to PCB scans [JacKc]
-
-New clones marked as NOT_WORKING
---------------------------------
-A.G. Soccer Ball (R18u, 2.5L sound) [PinMAME]
-Bad Cats (LG-4) [PinMAME]
-Lucky Draw (pinball, set 2) [PinMAME]
-No Fear: Dangerous Sports (0.8X) [PinMAME]
-The Flintstones (LA-5) [PinMAME]
-Theatre Of Magic (1.2A) [PinMAME]
-
--s11c.cpp, wpc_95.cpp: synced sets with PinMAME [Ivan Vangelista]
-
--mame.lst: corrected spelling for Electro-Sport [gregf]
-
--device/bus/ti99/pecb/evpc.cpp: fixed MT07889 [Ivan Vangelista]
-
--divebomb.cpp: fixed MT7887 [Ivan Vangelista]
-
--Update strings.po [Chrystian Rafael Rubio de Melo]
- * Changes for a better Portuguese-Brasil.
-
--system1.cpp: Redumped and verified the 315-5159A iC8751 MCU for Shooting Master.
- [Joe Magiera, TeamEurope, Brian Troha, The Dumping Union]
-
--macquadra700.cpp: Converted to use new SWIM1 and improved VIA timing. [R. Belmont, O. Galibert]
-
--machine/fdc37c665gt.cpp: Reimplemented with floppy and parallel support. [987123879113]
-
--mahine/upd765.cpp: Implemented sector-based termination conditions for read commands. [987123879113]
-
--flopimg: don't fault on nibble extraction on degenerated tracks [Olivier Galibert]
-
--iwm/swim: Fix annoyingly subtle write issue in the iwm and add some paranoia [Olivier Galibert]
-
--Fix YM synchronization in Seibu sound device. [Aaron Giles]
-
--machine.lua: correct applefdintf file pointer [hap]
-
--floppies: Turn the format arrays into function calls.  Create a default "mfm", "fm" and "pc" list of formats.  Their contents, and
- which driver uses what, may need some tuning. [Olivier Galibert]
-
--balsente, dgn_beta, esripsys, fastfred, galaxian, galaxold, goldstar, mbee, model3, pcfx, pcw, prestige, royalmah, seattle, sun3,
- system16: initialized some variables which were causing incorrect behaviours in drvnoclear debug builds [Ivan Vangelista]
-
--Revert "Fix YM synchronization in Seibu sound device." [Aaron Giles]
- * This reverts commit c89cbcd0e599d7baca6d294e451fcd4249b4a74e.
-
--Schedule all interrupt changes via timers to ensure proper ordering. Fixes the seibu sound issue in a more generic fashion.
- [Aaron Giles]
-
--bw12: Coverity 140173 (buffer overflow) [Robbbert]
-
--mastmind: shuffle around bit/byte ordering, disasm looks better now [hap]
-
--new WORKING machines (TV Board Games 6-in-1) (#7824) [David Haywood]
-
-new WORKING machines
---------------------
-TV Board Games 6-in-1: Silly 6 Pins, Candy Land, Hungry Hungry Hippos, Match 'em, Mixin' Pics, Checkers [Sean Riddle, David Haywood]
-TV Board Games 6-in-1: Simon, Battleship, Mouse Trap, Checkers, Link-a-Line, Roll Over [Sean Riddle, David Haywood]
-
--defaults: pc format is in, ipf is out [Olivier Galibert]
-
--Fix dependencies [Olivier Galibert]
-
--imgtool: Neutralize the link error [Olivier Galibert]
-
--konamigs.cpp dumped runpuppy boot ROM [Houpela]
-
--New machines marked as NOT_WORKING (#7819) [ClawGrip]
-
-New machines marked as NOT_WORKING
-----------------------------------
-Corsario (Cirsa slot machine) [jordigahan, ClawGrip]
-
--New clones marked as NOT_WORKING (#7832) [ClawGrip]
-
-New clones marked as NOT_WORKING
---------------------------------
-Scorpion (Dec 24, 1993) [jordigahan, ClawGrip]
-
--nzeroteam,nzeroteama: correct extend DIP switches [Barry Rodewald]
-
--ymfm: Also explicitly sync writes to the mode register to ensure timer control bits are handled in sync. [Aaron Giles]
-
--neogeo: Coverity 140102 (buffer overflow) [Robbbert]
-
--avgdvg: Coverity 316107 (wrong variable?) regression check needed [Robbbert].
-
--1942p: Coverity 180504 (unused code) [Robbbert]
-
--vgmplay: Coverity 183775 (buffer overflow and nonsensical code) [Robbbert]
-
--pt68k4: Coverity 139050 (null reference) [Robbbert]
-
--pcw16: Coverity 140126 (buffer overflow) rtc month table out by 1 [Robbbert].
-
--mz2500: Coverity 138615 (wrong calculations) [Robbbert]
-
--magictg: Coverity 315123 (crash at start due to buffer overrun) [Robbbert]
-
--ymfm: Improve LFO noise behavior. Add logging (under verbose) when LFO noise sounds are played to help ID cases for further study.
- This will be removed prior to release. [Aaron Giles]
-
--Fix TMNT audio decoding so that it doesn't invoke undefined C++ behavior. Also don't bother registering decoded sample data for
- saving. [Aaron Giles]
-
--Add 'wpsize' variable to access the data size from a watchpoint (#7837) [Scott Percival]
-
--3c505: remove duplicate reset logic [Patrick Mackinlay]
-
--views: Keep a reference to the handlers so that installs overlapping them don't kill them [Olivier Galibert]
-
--rc759: Add RTC and floppy, start cleanup [Dirk Best]
-
--atarist, fmtowns, megadriv, model3, pc6001: initialized some variables which were causing incorrect behaviours in drvnoclear debug
- builds [Ivan Vangelista]
-
--geneve: Fixed address decoding in IDE card for standard Geneve; changed default for RTC chip [Michael Zapf].
-
-Clones promoted to working
---------------------------
-Big 50 (JPM) (IMPACT) (BF12 L12) [James Wallace]
-Big 50 (JPM) (IMPACT) (BF12P F12, Protocol) [James Wallace]
-Big 50 (JPM) (IMPACT) (BF12 AH12) [James Wallace]
-Big 50 (JPM) (IMPACT) (BF12 L12, Whitbread) [James Wallace]
-Big 50 (JPM) (IMPACT) (BF L8) [James Wallace]
-Big Bucks (JPM) (IMPACT) (set 1) [James Wallace]
-Big Bucks (JPM) (IMPACT) (set 2) [James Wallace]
-Big Bucks (JPM) (IMPACT) (set 3) [James Wallace]
-Big Bucks (JPM) (IMPACT) (set 4) [James Wallace]
-Big Bucks (JPM) (IMPACT) (set 5) [James Wallace]
-Big Bucks (JPM) (IMPACT) (set 6) [James Wallace]
-Big Bucks (JPM) (IMPACT) (set 7) [James Wallace]
-Big Bucks (JPM) (IMPACT) (set 8) [James Wallace]
-Big Bucks (JPM) (IMPACT) (set 9) [James Wallace]
-Big Bucks (JPM) (IMPACT) (set 10) [James Wallace]
-Camelot (JPM) (IMPACT) (CA8 C10) [James Wallace]
-Camelot (JPM) (IMPACT) (CA8P C10, Protocol) [James Wallace]
-Camelot (JPM) (IMPACT) (CA8 AC10) [James Wallace]
-Camelot (JPM) (IMPACT) (CA8 C10, Whitbread) [James Wallace]
-Camelot (JPM) (IMPACT) (CA6 C8) [James Wallace]
-Casino Crazy (JPM) (IMPACT) (CC07C L12) (set 1) [James Wallace]
-Casino Crazy (JPM) (IMPACT) (CC07C L12) (set 2) [James Wallace]
-Casino Crazy (JPM) (IMPACT) (CC11C L16) (set 4) [James Wallace]
-Casino Crazy (JPM) (IMPACT) (CC16C L23) (set 6) [James Wallace]
-Casino Crazy (JPM) (IMPACT) (CC16C L23) (set 7) [James Wallace]
-Casino Crazy (JPM) (IMPACT) (CC16C L23) (set 9) [James Wallace]
-Casino Crazy (JPM) (IMPACT) (CC12C L17) (set 12) [James Wallace]
-Casino Crazy (JPM) (IMPACT) (CC02C L08) (set 14) [James Wallace]
-Go For Gold (JPM) (IMPACT) (set 1) [James Wallace]
-Go For Gold (JPM) (IMPACT) (set 2, Protocol) [James Wallace]
-Go For Gold (JPM) (IMPACT) (set 3) [James Wallace]
-Go For Gold (JPM) (IMPACT) (set 4, Whitbread) [James Wallace]
-
--mastmind: reordered ROM pages [hap]
-
--jpmimpct.cpp - Fixed flags (nw) [James Wallace]
-
--formats: Create mame_formats_full_list which gives access to all the supported formats, make floptool use it.  Castool should use
- it too probably, but I don't want to touch it. [Olivier Galibert]
-
--ui audit: tell user to get the correct files [hap]
-
-New working software items
---------------------------
-sorcerer_cass.xml: Cosmic Fighter [exidyboy]
-
--formats: Fix missed RC759 format [Dirk Best]
-
--sorcerer_cass.xml: removed unwanted comments [Robbbert]
-
--pps41: add skeleton MM76-derived devices [hap]
-
--mac128: Only adjust the rpm on drives which use the PWM [Olivier Galibert]
-
--apple2gs, pc9801, slapshot, viper, x68k: initialized some variables which were causing incorrect behaviours in drvnoclear debug
- builds [Ivan Vangelista]
-
--apple_gcr: Refuse 800K images on single-sided drives [Olivier Galibert]
-
--mz2000: Add pure mfm containers [Olivier Galibert]
-
--crashrd: Coverity 315390 (unused code). Also added notes [Robbbert].
-
--itt3030: Add missing terminator [Olivier Galibert]
-
--superdrive: Theoretically support 720K MFM [Olivier Galibert]
-
--jaleco_ms32_sysctrl.cpp: added missing save item [Ivan Vangelista]
-
--audio/seibu.cpp: Implement in-service lockout for IRQs; prevent Cabal from locking up the sound CPU with an unacknowledged
- interrupt after reset [AJR]
-
-New working machines
---------------------
-Sub Wars (LED version) [hap, Sean Riddle, Rik]
-
--srmp2.cpp: Add NO_DUMP entries for suspected undumped MCUs [AJR]
-
--floppy: Beginning of the support for preformatted floppy images. [Olivier Galibert]
- * What's missing:
-   - parameters (like the disk name when it exists)
-   - possibly a cleanup of ram_open and friends (but not sure of the appropriate direction in which to go)
-
--Try to fix osx compile [Olivier Galibert]
-
--fs_prodos: Explain the init better floppy: Don't fail creation because the extension is unknown [Olivier Galibert]
-
--Copypasta my love, finish fixing for osx [Olivier Galibert]
-
--C++ wart.  Why can't the C++ standard say that the default destructor of a class that has inheritance or virtual methods is
- automatically virtual?  But thou shalt is a little annoying [Olivier Galibert]
-
--Fix messed-up merge [Olivier Galibert]
-
--mac: disable NEW_SWIM set by mistake [Olivier Galibert]
-
--floppy: make format determination earlier [Olivier Galibert]
-
--fix #7806 (#7841) [feos]
-
--corefile.cpp: Make core_filename_extract_base behave more robustly in degenerate cases [AJR]
-
--rocnrope.cpp: fixed state saving, minor cleanups [Ivan Vangelista]
-
--triviaquiz.cpp: updated list of copyright holders [Ivan Vangelista]
-
--pps41: added most of the mm76 opcodes except for i/o [hap]
-
--swim1: fix iwm clocking [Olivier Galibert]
-
--2mg: tolerate a standard mistake [Olivier Galibert]
-
--fidel_cc7: bcc ROM is older [hap]
-
--emumem_mview.cpp: Use count_leading_zeros to simplify awidth calculation [AJR]
-
--Fix 'arcade' build [Brian Troha]
-
-New clones marked as NOT_WORKING
---------------------------------
-Virtua Striker 2 '99.1 (Step 1.5, Export, USA, Revision B) [Brian Troha, The Dumping Union]
-Virtua Striker 2 '99.1 (Step 1.5, Japan, Revision B) [Brian Troha, The Dumping Union]
-
--model3.cpp: Fix longstanding cut-n-paste exposed by set reordering [Brian Troha].
-
--swim2: Correct writing floppy: Correct index duration (2ms, not 20us) and polarity in superdrive [Olivier Galibert]
-
-new NOT_WORKING machine
------------------------
-Mushiking The King Of Beetles 2006 First (Japan) [Darksoft, rtw]
-
-new WORKING machines (TV Board Games) (#7838)
----------------------------------------------
-TV Board Games 3-in-1: Boggle, Connect 4, Roll Over [Sean Riddle, David Haywood]
-TV Board Games 3-in-1: Silly 6 Pins, Hungry Hungry Hippos, Match 'em [Sean Riddle, David Haywood]
-TV Board Games 3-in-1: Simon, Battleship, Checkers [Sean Riddle, David Haywood]
-
--pps41: add some i/o opcodes [hap]
-
--ap_dsk35: updates [R. Belmont]
- * Set form factor for 2mg and dc42 disks so the SuperDrive can handle them
- * Accept ProDOS-format dc42 3.5" disks
-
--arcade.lua: Remove unnecessary BUS device [Brian Troha].
-
--model3.cpp: Correct spelling mistake [Brian Troha].
-
--plugins: fix missed lua api changes [cracyc]
-
--electra.cpp: some more info updates [gregf]
-
--taitosj.cpp: fixed MT07849 [Ivan Vangelista]
-
--ssp1601.cpp: dumped internal ROM [Javier de Silóniz Sandino, krom / Peter Lemon]
-
--jpmimpctsw.cpp: Demoted disc reel games (Big 50) due to opto bugs [James Wallace]
-
--mm58174: Small fixes [AJR]
- * Initialize interrupt control register (prevents fatal error in wicat on some builds)
- * Set interrupt period to attotime::never instead of zero when lower 3 bits of control register are 0
- * Eliminate device_reset method (IC does not have a reset input)
-
-
-
-
-
-
+- missile, mpz80, mz700, pockstat, pofo, proteus3, savquest: initialized some variables which were causing incorrect behaviours in drvnoclear debug builds [Ivan Vangelista].
+- video/hng64.cpp: Implemented priority Z sort mode for sprites (#7789) [Happy-yappH].
+- iwm/swim: Small write fixes [Olivier Galibert].
+- iwm: Compile fix [R. Belmont].
+- iwm: Finish the fix, sorry about the mistake [Olivier Galibert].
+- mac: Correctly sync the main cpu to the via.  Fixes the floppy writes, probably need to be propagated to other handlers [Olivier Galibert].
+- iwm/swim1: Correct sense value when drive is not connectd [Olivier Galibert].
+- apple2gs.xml: Add descriptions for sys504/sys601 [ksherlock].
+- sound/cdda.cpp: Return LBA position as currently playing LBA (#7811) [987123879113].
+- Refactored Seta sound, adding preliminary ST0032 sound support (#7800) [cam900]:
+  * Renamed sound/nile.cpp to sound/setapcm.cpp.
+  * Added preliminary support for 16-voice ST0032 variant.
+  * jclub2.cpp: Hooked up ST0032 sound.
+  * jclub2.cpp, srmp6.cpp: Derive sound clocks from crystal frequencies.
+- m3: XTAL updates [Steve Hunt].
+- mac128: Implement the PWM (NEW_IWM only), fix the via clocks superdrive: Hopefully implement the HD/DD detection [Olivier Galibert].
+- fromanc2, hp_ipc, hp3478a, hp80, hp9k_3xx, inder, iris3130, news_r3k, pc4: initialized some variables which were causing incorrect behaviours in drvnoclear debug builds [Ivan Vangelista].
+- simple_st0016.cpp: Got rid of tagmap lookups and other small cleanups [Ivan Vangelista].
+- hh_cops1: qkracerm RAM is 8x12 [hap].
+- 68HC05EG: Use the HCMOS cycle timings [R. Belmont, Vas Crabb].
+- byte8251, ccs7710: Don't take over C800-CFFF space [AJR].
+- addrmap: Allow creators in the memory map [Olivier Galibert].
+- alphatpc16, amstr_pc, cischeat, kaypro, m72, pdp11, peplus, pt68k4, rm380z, sapi1, taito, tandy1t, tk80bs, univac, vegas, videopkr, votrpss, vsnes, williams: initialized some variables which were causing incorrect behaviours in drvnoclear debug builds [Ivan Vangelista].
+- simple_st0016.cpp: Enabled save state support [Ivan Vangelista].
+- 68hc05EG: Use proper HC05 base cycle timings and disassembler [R. Belmont, Vas Crabb].
+- mac updates: [R. Belmont]:
+  * Adjust macadb timings to work with real timings from the microcontrollers.
+  * Eliminate via_cycles timing hack.
+  * Preliminary working ADB on Portable and PowerBook 100.
+- mac.cpp: Set correct floppy drive types for most machines [R. Belmont].
+- new WORKING machines (Dora TV Explorer Phone plug+play) + some leapfrog softlists + ekara carts (#7816) [David Haywood].
+- hng64 : Improved projection matrix calculation, also improving 3D clipping (#7810) [Happy-yappH].
+- cvs, dkong, hec2hrp, igs011, namcos21_dsp, nbmj9195, realbrk, seattle, skylancr, sorcerer, subsino, superqix, trs80m3: initialized some variables which were causing incorrect behaviours in drvnoclear debug builds [Ivan Vangelista].
+- d64plus: Re-implemented RAM banks into SAM address space [Nigel Barnes].
+- dkong.h: Reverted unwanted changes [Ivan Vangelista].
+- x1_010: Clamp output samples to within range [AJR].
+- esqkt.cpp: Backed out change to use required pointers, as the driver has a mix of sets using 16 and 32 bit regions [Ivan Vangelista].
+- mac: Correct IIsi FDC and drive types [R. Belmont].
+- pmac6100: Fix boot video [R. Belmont].
+- egret, cuda: Don't include mac.h, they're independent devices now [R. Belmont].
+- upd765_dsk, wd177x_dsk: Do not crash on damaged disks [Olivier Galibert].
+- swim2: Remove leftover verbosity [Olivier Galibert].
+- namcos21*.cpp: Added save state support, and made pixel clocks more clear (#7718) [cam900].
+- namcos21_de.cpp: Fixed configuration flag (driveyes has 4 2Mbit PCM ROMs). namcos21.cpp: Removed unnecessary driver init, added hardware notes [cam900].
+- New WORKING machine (Dora TV Adventure Globe) (#7821) [David Haywood].
+- Set some of the previous ekara additions to unsupported as they actually use the alt seeprom hookup that isn't currently functional, and lock up in places as a result [David Haywood].
+- firebeat.cpp: Re-dumped and re-converted CDs for Keyboardmania and Keyboardmania 2nd Mix [Jennifer Taylor].
+- fddebug.cpp: Remove from build [AJR].
+- fileio.cpp: This doesn't technically require emu.h [AJR].
+- 4dpi, amstrad, apple2, bebox, besta, dkong, m24: Initialized some variables which were causing incorrect behaviours in drvnoclear debug builds [Ivan Vangelista].
+- Added MM76 disassembler and preliminary PPS-4/1 MCU core [hap].
+- machine/t10mmc.cpp: Added CD media type check for special LBA 0 case (#7822). The special case of setting m_lba to 150 when m_lba is 0 is only applicable to data and mixed mode media CDs [987123879113].
+- New BSD-licensed implementation of Yamaha OPN and OPM FM audio chips, along with new device drivers for YM2203, YM2608, YM2610, YM2610B, YM2612, YM3438, and YM2151 based upon these (#7808) [Aaron Giles].
+- rc759: Fix cassette error, add keyboard [Dirk Best].
+- i8251: Allow write_cts before device has started [AJR].
+- tatsumi.cpp: Remove obsolete YM2151 hack [AJR].
+- swim2: Remove leftover debugging variables [Olivier Galibert].
+- emuview: Fix init_handlers in specific cases, fix mapping ioports in views [Olivier Galibert].
+- coolridr.cpp: Use measured clocks for Cool Riders by correct XTAL usage based on documentation in header of coolridr.cpp [Brian Troha].
+- Fix ADPCM-B processing logic. Force external mode on for YM2610. Fixes neogeo sound playback [Aaron Giles].
+- Fix MSVC build [Aaron Giles].
+- swim: Local var "bit" is int instead of bool [hap].
+- Corrected some ymsnd regions that had been overlooked [Robbbert].
+- econx25: Added the dual Z80 co-processor board (incomplete) [Nigel Barnes].
+- Revert "fileio.cpp: This doesn't technically require emu.h". This reverts commit 6d6073054b9155592a6022d66751422ff3b3a372 [AJR].
+- midtunit.cpp: Correct a typo for a ROM in 2 Mortal Kombat sets [Brian Troha].
+- psikyo.cpp: Fix crash in samuraia and clones (#7831) [cam900].
+- ksys573.cpp: Use ddr2ml disc as base for ddr2mc2 (#7829). ddr2mc2 expects a different CD when the memory card reader is present [987123879113].
+- firebeat.cpp: Fix IN1 values, and added notes about DIP switches (#7828) [987123879113].
+- firebeat.cpp: Added dongle dumps and expanded documentation (#7827) [Jennifer Taylor]:
+  * Added dongle dumps for all missing dongles that I own and could dump.
+  * Added KBM 2ndMIX dongle dump [Johan Veenstra (Dexx)]
+  * Documented cabinet info register bits meanings for various games. [Jennifer Taylor, Windy Fairy]
+  * Documented how dongles are used in various game series.
+- tc009xlvc.cpp: Include Z80 core (interrupt handler not yet ported) (#7756) [cam900]:
+  * Fixed opaque background used in gemcrush.
+  * Converted banked video RAM handler into internal memory space.
+- electra.cpp: Documented PCB code for Wings [gregf].
+- pacman.cpp: Removed outdated comment [gregf].
+- pgm.cpp: Correct some chips locations according to PCB scans [JacKc].
+- s11c.cpp, wpc_95.cpp: Synced sets with PinMAME [Ivan Vangelista].
+- mame.lst: Corrected spelling for Electro-Sport [gregf].
+- device/bus/ti99/pecb/evpc.cpp: Fixed MT07889 [Ivan Vangelista].
+- divebomb.cpp: Fixed MT7887 [Ivan Vangelista].
+- Update strings.po. Changes for a better Portuguese-Brasil [Chrystian Rafael Rubio de Melo].
+- system1.cpp: Redumped and verified the 315-5159A iC8751 MCU for Shooting Master [Joe Magiera, TeamEurope, Brian Troha, The Dumping Union].
+- macquadra700.cpp: Converted to use new SWIM1 and improved VIA timing [R. Belmont, Olivier Galibert]
+- machine/fdc37c665gt.cpp: Reimplemented with floppy and parallel support [987123879113].
+- mahine/upd765.cpp: Implemented sector-based termination conditions for read commands [987123879113].
+- flopimg: Don't fault on nibble extraction on degenerated tracks [Olivier Galibert].
+- iwm/swim: Fix annoyingly subtle write issue in the iwm and add some paranoia [Olivier Galibert].
+- Fix YM synchronization in Seibu sound device [Aaron Giles].
+- machine.lua: Correct applefdintf file pointer [hap].
+- floppies: Turn the format arrays into function calls.  Create a default "mfm", "fm" and "pc" list of formats. Their contents, and which driver uses what, may need some tuning [Olivier Galibert].
+- balsente, dgn_beta, esripsys, fastfred, galaxian, galaxold, goldstar, mbee, model3, pcfx, pcw, prestige, royalmah, seattle, sun3, system16: initialized some variables which were causing incorrect behaviours in drvnoclear debug builds [Ivan Vangelista].
+- Revert "Fix YM synchronization in Seibu sound device". This reverts commit c89cbcd0e599d7baca6d294e451fcd4249b4a74e [Aaron Giles].
+- Schedule all interrupt changes via timers to ensure proper ordering. Fixes the seibu sound issue in a more generic fashion [Aaron Giles].
+- bw12: Coverity 140173 (buffer overflow) [Robbbert].
+- mastmind: Shuffle around bit/byte ordering, disasm looks better now [hap].
+- New WORKING machines (TV Board Games 6-in-1) (#7824) [David Haywood].
+- defaults: PC format is in, ipf is out [Olivier Galibert].
+- Fix dependencies [Olivier Galibert].
+- imgtool: Neutralize the link error [Olivier Galibert].
+- konamigs.cpp: Dumped runpuppy boot ROM [Houpela].
+- New machine marked as NOT_WORKING (#7819) [ClawGrip].
+- New clone marked as NOT_WORKING (#7832) [ClawGrip].
+- nzeroteam,nzeroteama: Correct extend DIP switches [Barry Rodewald].
+- ymfm: Also explicitly sync writes to the mode register to ensure timer control bits are handled in sync [Aaron Giles].
+- neogeo: Coverity 140102 (buffer overflow) [Robbbert].
+- avgdvg: Coverity 316107 (wrong variable?) regression check needed [Robbbert].
+- 1942p: Coverity 180504 (unused code) [Robbbert].
+- vgmplay: Coverity 183775 (buffer overflow and nonsensical code) [Robbbert].
+- pt68k4: Coverity 139050 (null reference) [Robbbert].
+- pcw16: Coverity 140126 (buffer overflow) RTC month table out by 1 [Robbbert].
+- mz2500: Coverity 138615 (wrong calculations) [Robbbert].
+- magictg: Coverity 315123 (crash at start due to buffer overrun) [Robbbert].
+- ymfm: Improve LFO noise behavior. Add logging (under verbose) when LFO noise sounds are played to help ID cases for further study. This will be removed prior to release. [Aaron Giles]
+- Fix TMNT audio decoding so that it doesn't invoke undefined C++ behavior. Also don't bother registering decoded sample data for saving [Aaron Giles].
+- Add 'wpsize' variable to access the data size from a watchpoint (#7837) [Scott Percival].
+- 3c505: Remove duplicate reset logic [Patrick Mackinlay].
+- views: Keep a reference to the handlers so that installs overlapping them don't kill them [Olivier Galibert].
+- rc759: Add RTC and floppy, start cleanup [Dirk Best].
+- atarist, fmtowns, megadriv, model3, pc6001: initialized some variables which were causing incorrect behaviours in drvnoclear debug builds [Ivan Vangelista].
+- geneve: Fixed address decoding in IDE card for standard Geneve; changed default for RTC chip [Michael Zapf].
+- mastmind: Reordered ROM pages [hap].
+- jpmimpct.cpp: Fixed flags (nw) [James Wallace].
+- formats: Create mame_formats_full_list which gives access to all the supported formats, make floptool use it. Castool should use it too probably, but I don't want to touch it [Olivier Galibert].
+- UI audit: tell user to get the correct files [hap].
+- formats: Fix missed RC759 format [Dirk Best].
+- sorcerer_cass.xml: Removed unwanted comments [Robbbert].
+- pps41: Add skeleton MM76-derived devices [hap].
+- bmac128: Only adjust the rpm on drives which use the PWM [Olivier Galibert].
+- apple2gs, pc9801, slapshot, viper, x68k: initialized some variables which were causing incorrect behaviours in drvnoclear debug builds [Ivan Vangelista].
+- apple_gcr: Refuse 800K images on single-sided drives [Olivier Galibert].
+- mz2000: Add pure mfm containers [Olivier Galibert].
+- crashrd: Coverity 315390 (unused code). Also added notes [Robbbert].
+- itt3030: Add missing terminator [Olivier Galibert].
+- superdrive: Theoretically support 720K MFM [Olivier Galibert].
+- jaleco_ms32_sysctrl.cpp: Added missing save item [Ivan Vangelista].
+- audio/seibu.cpp: Implement in-service lockout for IRQs; prevent Cabal from locking up the sound CPU with an unacknowledged interrupt after reset [AJR].
+- srmp2.cpp: Add NO_DUMP entries for suspected undumped MCUs [AJR].
+- floppy: Beginning of the support for preformatted floppy images [Olivier Galibert]:
+  * What's missing:
+  - Parameters (like the disk name when it exists).
+  - Possibly a cleanup of ram_open and friends (but not sure of the appropriate direction in which to go).
+- Try to fix osx compile [Olivier Galibert].
+- fs_prodos: Explain the init better floppy: Don't fail creation because the extension is unknown [Olivier Galibert].
+- Copypasta my love, finish fixing for OSX [Olivier Galibert].
+- C++ wart. Why can't the C++ standard say that the default destructor of a class that has inheritance or virtual methods is automatically virtual?  But thou shalt is a little annoying [Olivier Galibert]
+- Fix messed-up merge [Olivier Galibert].
+- mac: Disable NEW_SWIM set by mistake [Olivier Galibert].
+- floppy: Make format determination earlier [Olivier Galibert].
+- Fix #7806 (#7841) [feos].
+- corefile.cpp: Make core_filename_extract_base behave more robustly in degenerate cases [AJR].
+- rocnrope.cpp: Fixed state saving, minor cleanups [Ivan Vangelista].
+- triviaquiz.cpp: Updated list of copyright holders [Ivan Vangelista].
+- pps41: Added most of the mm76 opcodes except for I/O [hap].
+- swim1: Fix iwm clocking [Olivier Galibert].
+- 2mg: Tolerate a standard mistake [Olivier Galibert].
+- fidel_cc7: bcc ROM is older [hap].
+- emumem_mview.cpp: Use count_leading_zeros to simplify awidth calculÄtion [AJR].
+- Fix 'arcade' build [Brian Troha].
+- model3.cpp: Fix longstanding cut-n-paste exposed by set reordering [Brian Troha].
+- swim2: Correct writing floppy: Correct index duration (2ms, not 20us) and polarity in superdrive [Olivier Galibert].
+- pps41: Add some I/O opcodes [hap].
+- ap_dsk35:  Updates [R. Belmont]:
+ * Set form factor for 2mg and dc42 disks so the SuperDrive can handle them.
+ * Accept ProDOS-format dc42 3.5" disks.
+- arcade.lua: Remove unnecessary BUS device [Brian Troha].
+- model3.cpp: Correct spelling mistake [Brian Troha].
+- plugins: Fix missed lua api changes [cracyc].
+- electra.cpp: Some more info updates [gregf].
+- taitosj.cpp: Fixed MT07849 [Ivan Vangelista].
+- ssp1601.cpp: Dumped internal ROM [Javier de Silóniz Sandino, krom / Peter Lemon].
+- jpmimpctsw.cpp: Demoted disc reel games (Big 50) due to opto bugs [James Wallace].
+- mm58174: Small fixes [AJR]:
+  * Initialize interrupt control register (prevents fatal error in wicat on some builds).
+  * Set interrupt period to attotime::never instead of zero when lower 3 bits of control register are 0.
+  * Eliminate device_reset method (IC does not have a reset input).
 - devices/bus/plus4: Fixed MT07886 [Ivan Vangelista].
 - liberate.cpp: Added  prosoccr PCB infos [f205v].
 - williams.cpp: Fixed MT07389 [Ivan Vangelista].
@@ -878,8 +548,8 @@ TV Board Games 3-in-1: Simon, Battleship, Checkers [Sean Riddle, David Haywood]
 - eolith.cpp, lastfght.cpp: Demoted raccoon and lastfght to not working due to timing issues [David Haywood].
 - m62.cpp: Removed outdated comment [David Haywood].
 - joystand.cpp: Converted cartridge access function into address_map_bank_device (#7856) [cam900]:
- * Added MACHINE_NODEVICE_PRINTER flag because printer emulation is missing.
- * Added notes and cleaned up code.
+  * Added MACHINE_NODEVICE_PRINTER flag because printer emulation is missing.
+  * Added notes and cleaned up code.
 - twinkle.cpp: Added missing data except for encrypted dongles (1st, club, substream) (#7833) [Jennifer Taylor].
   * Added all missing hard disk and CD images.
   * Replaced CD images marked as bad dumps.
@@ -934,7 +604,7 @@ TV Board Games 3-in-1: Simon, Battleship, Checkers [Sean Riddle, David Haywood]
 - apple2gs: Don't segfault if floppy not present, eg -fdc:3 "" (#7871) [ksherlock].
 - wc90: Fix ADPCM sound [Aaron Giles].
 - vgmplay.xml: Fixed some shortnames to match MAME [Scott Stone].
-- mac128: Updates [R. Belmont, O. Galibert, Patrick Mackinlay]:
+- mac128: Updates [R. Belmont, Olivier Galibert, Patrick Mackinlay]:
   * Legacy IWM/floppy replaced by modern IWM and SWIM.
   * 1.44MB floppy supported on SE FDHD and Classic.
   * PWM 400K floppy drive supported on Mac 128 and 512.
@@ -958,7 +628,7 @@ TV Board Games 3-in-1: Simon, Battleship, Checkers [Sean Riddle, David Haywood]
 - ti99: Fixed some rarely used TDF floppy format variants [Michael Zapf].
 - Turned off log output per step [Michael Zapf].
 - ymfm: Backport active channel detection to help improve performance. Further performance improvements will come in the next cycle, but require more extensive changes [Aaron Giles].
-- mac128: Fix the keyboard [O. Galibert, AJR] via6522: Don't retrigger the shift register timer on a second sr access [Olivier Galibert]:
+- mac128: Fix the keyboard [Olivier Galibert, AJR] via6522: Don't retrigger the shift register timer on a second sr access [Olivier Galibert]:
   * This is a slightly hacky change.  The 68k starts the shift register in internal clock mode just long enough that cb2 is set to zero, then stops it and restarts it in external clocking mode.
   * The retrigger-corrected via code wants to change cb2 40 cycles in the future (8 edges of the 10 clocks/cycle E clock). The instruction that stops the shift register starts ~38 cycles in the future but does the actual write 50 cycles in. But the instructions not being interruptible, the write happens before the timer timeout is called.
   * There are two problems there: the lack of interruptibility for the 68k, which is a hard problem that is worked on but is still going to take some time, and the fact that the via is supposed to change cb2 (data) at +35 (well, +34, but lets not get in the intricacies of the E clock) and cb1 (clock) at +40. But changing the serial output behaviour of the via is a very ugly "here be dragons" case. Which will have ot be done, but still.
@@ -988,12 +658,12 @@ TV Board Games 3-in-1: Simon, Battleship, Checkers [Sean Riddle, David Haywood]
 - megadriv.xml: Fixed MT07023, MT07193, MT7767 [Ivan Vangelista].
 - hh_pps41: mwcfootb is mm78 [hap].
 - vgmplay.xml: Assorted metadata fixes [Scott Stone].
-- mac128: Re-promote drivers now that basic things all work [O. Galibert, AJR].
-- mac.cpp: New FDCs and drives for all of the II and LC series machines [R. Belmont, O. Galibert]
+- mac128: Re-promote drivers now that basic things all work [Olivier Galibert, AJR].
+- mac.cpp: New FDCs and drives for all of the II and LC series machines [R. Belmont, Olivier Galibert]
 - asc.cpp: Add IMPERFECT_SOUND flag to Apple Sound Chip for now [R. Belmont].
 - apple2cp: Correct a misunderstanding of the built-in accelerator's registers [R. Belmont]
 - mac128.cpp: Cleanup obsolete #include [R. Belmont].
-- macpwrbk030: New SWIM1 and SuperDrives for everyone [R. Belmont, O. Galibert].
+- macpwrbk030: New SWIM1 and SuperDrives for everyone [R. Belmont, Olivier Galibert].
 - machine/playch10.cpp: Fixed MT07916 [Ivan Vangelista].
 - royalmah.cpp: Fixed MT05580 [Ivan Vangelista].
 - Fixed arcade build [Robbbert].
@@ -1045,7 +715,6 @@ TV Board Games 3-in-1: Simon, Battleship, Checkers [Sean Riddle, David Haywood]
 - mac.cpp: More dead code removal. Cleanup some leftover PowerMac bits [R. Belmont].
 - srcclean in preparation for release [Vas Crabb].
 - asma2k: Fix memory-related regression [AJR].
-- Fix building with clang 6 [Vas Crabb]:
- * Annoyingly, clang 6 produces warnings for unused private static data members, but does not recognise the [[maybe_unused]] attribute for them.
+- Fix building with clang 6: Annoyingly, clang 6 produces warnings for unused private static data members, but does not recognise the [[maybe_unused]] attribute for them [Vas Crabb].
 - floppy: Fix an annoyingly subtle write bug [Olivier Galibert].
 - Restore legacy pc_dsk floppy support for imgtool only [AJR].

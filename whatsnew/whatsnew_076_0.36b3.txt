@@ -2,8 +2,8 @@
 ------------------------------------------
 
 
-New games supported:
---------------------
+New games supported
+-------------------
 '88 Games [Nicola Salmoria]
 Air Wolf [Nicola Salmoria]
 Capcom Baseball [Nicola Salmoria]
@@ -20,8 +20,8 @@ Super Contra [Manuel Abadia]
 Thunder Cross (no collision detection, probably protection) [Bryan McPhail]
 Vendetta [Phil Stroffolino]
 
-New clones supported:
----------------------
+New clones supported
+--------------------
 64th Street (Japan) [Alessio Manuele]
 '99 The Last War (= Son of Phoenix) [Gerald Vanderick]
 Akuma-Jou Dracula (= Haunted Castle) [Yasuhiro Ogawa]
@@ -49,7 +49,7 @@ These drivers have new or improved SOUND:
 
 
 Source changes:
---------------------
+---------------
 - Emulated the 68705 protection in 'Mania Challenge' [Nicola Salmoria].
 - Changed the UPD7759 emulator to support two chips ('88 Games needed this) and fixed a bug in the ADPCM decoding [Ernesto Corvi].
 - The gfxdata field of the GfxElement structure is no longer a osd_bitmap *; it is instead a simple unsigned char *, pointing to a continuous stream of pixel data. The new line_modulo and char_modulo fields are helpers to find the offset in the array [Nicola Salmoria].

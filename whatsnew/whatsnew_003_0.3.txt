@@ -1,20 +1,20 @@
 0.3 1997/02/13 [#003 - Nicola Salmoria]
 ---------------------------------------
-Note: only important changes are listed.
+[NOTE: only important changes are listed]
 
 
-New game supported:
--------------------
+New game supported
+------------------
 (dkong)    Donkey Kong (US set 1) [Nicola Salmoria, Gary Shepherdson, Brad Thomas, Edward Massey]
 
 
-Program:
---------
-- Donkey Kong support (wrong colors, no sound).
-- Lady Bug and Crazy Climber should run a little faster on slow machines (Crazy Climber is still too slow, I know).
-- New definition of custom video modes, this will hopefully be compatible with more systems.
+Program changes:
+----------------
+- Donkey Kong support (wrong colors, no sound) [Nicola Salmoria, Gary Shepherdson, Brad Thomas, Edward Massey].
+- Lady Bug and Crazy Climber should run a little faster on slow machines (Crazy Climber is still too slow, I know) [Nicola Salmoria].
+- New definition of custom video modes, this will hopefully be compatible with more systems [Nicola Salmoria].
 
-Source:
--------
-- New general purpose readinputport() function used to handle reads of input ports and dip switches. This saves some work when creating a game driver. Required changes to struct MachineDriver.
-- Struct GfxLayout now contains a planeoffset array instead of planeincrement, to better support more than 2 bitplanes. I also fixed (I hope) all the code which assumed 2 bitplanes. struct GfxDecodeInfo had to be changed as well.
+Source changes:
+---------------
+- New general purpose readinputport() function used to handle reads of input ports and dip switches. This saves some work when creating a game driver. Required changes to struct MachineDriver [Nicola Salmoria].
+- Struct GfxLayout now contains a planeoffset array instead of planeincrement, to better support more than 2 bitplanes. I also fixed (I hope) all the code which assumed 2 bitplanes. struct GfxDecodeInfo had to be changed as well [Nicola Salmoria].

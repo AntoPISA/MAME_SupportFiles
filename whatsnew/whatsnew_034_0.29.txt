@@ -4,8 +4,8 @@ IMPORTANT: CONFIGURATION AND HIGH SCORE SAVE FILES HAVE BEEN MOVED. MAKE SURE YO
 NOTE: 'Bubble Bobble' doesn't work in this release. We are aware of that. Use 'Bobble Bobble' or 'Super Bobble Bobble" instead, they work much better than "Bubble Bobble' ever did.
 
 
-New games supported:
---------------------
+New games supported
+-------------------
 (1943)     1943 [Mirko Buffoni, Paul Leaman, Nicola Salmoria]
 (berzerk)  Berzerk [Zsolt Vasvari, Christopher Kirmse]
 (blktiger) Black Tiger [Paul Leaman]
@@ -31,7 +31,7 @@ New games supported:
 (triplep)  Triple Punch [Nicola Salmoria]
 (zookeep)  Zookeeper [John Butler, Ed Mueller]
 
-New clones supported:
+New clones supported
 --------------------
 (berzerk1) Berzerk (version 1) [Zsolt Vasvari, Christopher Kirmse]
 (bosconm)  Bosconian (Namco) [Toninho]
@@ -135,7 +135,7 @@ Changes to the main program:
   MAME.EXE %1 %2 %3 %4 %5 %6 %7 %8 %9
   deltree >nil: /y %1
 
-But even better, if you have ZipFolders or ZipMagic installed, MAME will automatically look into the .zip or .zif directory. ZipFolders and ZipMagic are trademarks of Mijenix Corporation. You can download a trial version from www.mijenix.com. I am in no way associated with Mijenix Corp. - I'm just a happy costumer [Nicola Salmoria].
+  But even better, if you have ZipFolders or ZipMagic installed, MAME will automatically look into the .zip or .zif directory. ZipFolders and ZipMagic are trademarks of Mijenix Corporation. You can download a trial version from www.mijenix.com. I am in no way associated with Mijenix Corp. - I'm just a happy costumer [Nicola Salmoria].
 - Removed "-trak" and "-mouse" options. Mouse support is now enabled by default. To disable it, use "-nomouse" [Bernd Wiebelt].
 - "-vesa" picks the best VESA mode available. The new "-vesa1" forces VESA 1.2 [Bernd Wiebelt].
 - "-vg" removed. It is on by default now [Bernd Wiebelt].
@@ -143,7 +143,7 @@ But even better, if you have ZipFolders or ZipMagic installed, MAME will automat
 
 Source changes:
 ----------------
-- We are now using the "WIP 2.8" version of Allegro to compile the DOS version. You can get it from http://www.talula.demon.co.uk/allegro/.
+- We are now using the "WIP 2.8" version of Allegro to compile the DOS version. You can get it from http://www.talula.demon.co.uk/allegro/ [Nicola Salmoria].
 - Two new OSD_KEY definitions: RCONTROL and ALTGR. CONTROL has been replaced by LCONTROL [Nicola Salmoria].
 - Aligned to version 1.2 of Marcel de Kogel's Z80 emulator [Nicola Salmoria].
 - New memory handling functions, about 10%-30% faster than before. Moved the memory code from cpuintrf.c to memory.c. Banked ROMs can now be handled in a cleaner and faster way. Use the new MRA_BANK1... types in the memory handler arrays, and cpu_setbank() to set the current bank. The Z80 and M6809 emulators natively support bank switching. IMPORTANT: for 24 bit addressing (i.e. 68000) you cannot associate a memory handler to a single byte. You must use four consecutive bytes, longword aligned. This was done to speedup word (2 bytes) and dword (4 bytes) operations [Tatsuyuki Satoh, Aaron Giles].

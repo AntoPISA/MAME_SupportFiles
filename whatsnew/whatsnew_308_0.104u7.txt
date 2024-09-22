@@ -13,8 +13,8 @@ Circus Charlie (Selectable level set 2) [Brian Troha]
 Mahjong Hana no Momoko gumi (Japan 881125) [Takahiro Nogi]
 
 
-MAMETesters Bugs Fixed (10)
----------------------------
+MAMETesters Bugs Fixed (10):
+----------------------------
 upsidedown0103yel (Takahiro Nogi)
 mgion0104u6yel (Takahiro Nogi)
 hyouban095u2red (Takahiro Nogi)
@@ -43,7 +43,7 @@ Source changes:
 - Switched MDEC decoding input from CbCrY to CrCbY, and switched MDEC 15bit output from rgb to bgr [smf].
 - Removed unnecessary #includes from a number of files. Added #includes to files that were defining items that were declared in the header. Better documented where items are defined in the header files from the includes directory [Atari Ace].
 - Fixed some crashes in the debugger if you tried to set breakpoints while the game was running and there was no active CPU [Nathan Woods].
-' Fixed crash when calling fatalerror before the system was ready for it [Nathan Woods].
+- Fixed crash when calling fatalerror before the system was ready for it [Nathan Woods].
 - More improvements to the Sega universal sound board. 'Star Trek' is almost identical to the samples. 'Tac/Scan' is not that far off, surprisingly [Aaron Giles].
 - Added new function input_port_set_changed_callback() which lets you receive a change notification when certain bits in an input port have changed. See sega.c for an example [Nathan Woods, Aaron Giles].
 - Added new PORT_CUSTOM() macro which allows you to specify a callback to return the value of bits in an input port. This saves you from needing to intercept the port read and modify the bits there. See sega.c for an example [Aaron Giles].

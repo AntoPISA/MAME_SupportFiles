@@ -3,8 +3,8 @@
 IMPORTANT NOTE: This will be the last version of MAME released by me (Nicola Salmoria). From now on, the project will be maintained by Mirko Buffoni (mix@lim.dsi.unimi.it). Contact him if you have material to submit for inclusion into MAME. Please don't send such material to me.
 
 
-New games supported:
---------------------
+New games supported
+-------------------
 (ckongs)   Crazy Kong (Scramble hardware) [Nicola Salmoria]
 (elevator) Elevator Action [Nicola Salmoria]
 (jungleh)  Jungle Hunt (US) [Nicola Salmoria]
@@ -16,8 +16,8 @@ New games supported:
 (seicross) Seicross [Nicola Salmoria]
 
 
-Program changes
----------------
+Program changes:
+----------------
 - Added support for the original, Universal version of Mr. Do!. I renamed the other, which has an additional Taito copyright notice, "mrdot" [Nicola Salmoria].
 - Bomb Jack is much faster on a 486. Now runs very well with -frameskip 1 on my 486/100 [Nicola Salmoria].
 - Submitted a much faster version of the 8086 emulation. Q*Bert now runs at full speed with -frameskip 1 on my 486/100 [Fabrice Frances].
@@ -46,4 +46,4 @@ Program changes
 
 Source changes:
 ---------------
-- Samples are now loadaed by the main engine, not the single drivers. This is done via the new field samplenames in the GameDriver structure. Samples can then be retrieved by the drivers in Machine->samples.
+- Samples are now loadaed by the main engine, not the single drivers. This is done via the new field samplenames in the GameDriver structure. Samples can then be retrieved by the drivers in Machine->samples [Nicola Salmoria].

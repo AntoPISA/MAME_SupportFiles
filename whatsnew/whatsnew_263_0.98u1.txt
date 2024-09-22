@@ -19,25 +19,24 @@ New games marked as GAME_NOT_WORKING
 Wink [Pierpaolo Prazzoli]
 
 
-MAMETesters Bugs Fixed
-----------------------
-slither094u1red [Aaron Giles, with a hint from MASH]
-sf2accp2070u5red [Aaron Giles]
-nemesis097u1gre1 [Mamesick]
-nemesis097u1gre2 [Mamesick]
-karatblz137b4gre [Pierpaolo Prazzoli]
-mystwarr098gre [Mamesick]
-esckids076yel [David Haywood]
-spyhunt097gre1 [Aaron Giles]
-spyhunt097gre2 [Aaron Giles]
-turbotag097u3gra [Aaron Giles]
+MAMETesters Bugs Fixed (10):
+----------------------------
+slither094u1red (Aaron Giles, MASH)
+sf2accp2070u5red (Aaron Giles)
+nemesis097u1gre1 (Mamesick)
+nemesis097u1gre2 (Mamesick)
+karatblz137b4gre (Pierpaolo Prazzoli)
+mystwarr098gre (Mamesick)
+esckids076yel (David Haywood)
+spyhunt097gre1 (Aaron Giles)
+spyhunt097gre2 (Aaron Giles)
+turbotag097u3gra (Aaron Giles)
 
 
 Source changes:
 ---------------
 - Changed how perodic timers are defined. Previously, you would specify a number which was interpreted either as Hz (if less than 50000) or as nanoseconds (if greater than 50000). Now, the time is specified as a period and you use the standard TIME_IN_HZ or TIME_IN_NS macros [Aaron Giles].
-- Turned on address error checking in the 68000 core. This slows things down a
-bit but is more accurate and allows correct behavior of a couple of badly-programmed games [Aaron Giles].
+- Turned on address error checking in the 68000 core. This slows things down a bit but is more accurate and allows correct behavior of a couple of badly-programmed games [Aaron Giles].
 - Fixed several issues with address error checking in the 68000 core [Aaron Giles].
 - Fixed 68000 bug that treated 8-bit branches with $FF offsets as illegal, rather than allowing them and generating an address error [Aaron Giles].
 - Created a new header file mamecore.h, which contains the core common useful macros and typedefs that were scattered throughout the header files. Also added endian swapping macros from MESS [Aaron Giles].
@@ -60,7 +59,6 @@ bit but is more accurate and allows correct behavior of a couple of badly-progra
   * Added SRR0 and SRR1 to the debug view.
 - Did some cleanups in the vamphalf.c driver [Pierpaolo Prazzoli].
 - Fixed speedbal again, after breaking it in the last update [Pierpaolo Prazzoli].
-- Changed 'Nitro Ball' to use the new deco16_tilemap_34_combine_draw function 
-Bryan added some time ago [Pierpaolo Prazzoli].
+- Changed 'Nitro Ball' to use the new deco16_tilemap_34_combine_draw function Bryan added some time ago [Pierpaolo Prazzoli].
 - Added a sprite wrap around needed in 'Riot level 2' [Pierpaolo Prazzoli].
 - Added sound to 'Dragon Bowl' [Pierpaolo Prazzoli].

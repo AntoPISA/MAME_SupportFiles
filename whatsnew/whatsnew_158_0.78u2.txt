@@ -4,21 +4,21 @@ The only change in u2 is the overhaul of the memory system mentioned below, no n
  
 
 Source changes:
-----------------------
+---------------
 - Significant overhaul of the memory system. This is the first of several phases, but it lays the groundwork for future improvements. This first change will also be the most disruptive, touching every CPU core and every driver file [Aaron Giles].
 
 
-Memory system changes
----------------------
-- The biggest change is the introduction of the concept of address spaces. Each CPU can have up to 3  separate address spaces now, with the possibility of easily adding more in the future. Each address space has its own addressing semantics, including databus width, address bus width, address shift, and unmapped memory value. The three existing address spaces are defined to be program, data, and I/O. The program address space is  where code is assumed to live; it is also where all memory lives in standard von Neumann architecture CPUs. The data address space is for Harvard architecture CPUs, and will be used in the future to do proper program/data separation for the CCPU, PIC16C5x, ADSP210x, TMS32010, and TMS32025. The I/O address space is used for port accesses, such as those performed by the Z80 and x86 CPUs. The read/write handlers used by CPUs to access memory have all been renamed in the shuffle, both in order to match the address space naming conventions (program/data/io) and in order to make it clearer what they do. In addition, they have been unified to a large degree. Instead of separate memory accessors based on both the address bus width and the data bus width, there is now just one shared set of memory accessors for each data bus width. Here are some examples of how older functions map to newer ones:
+Memory system changes:
+----------------------
+- The biggest change is the introduction of the concept of address spaces. Each CPU can have up to 3  separate address spaces now, with the possibility of easily adding more in the future. Each address space has its own addressing semantics, including databus width, address bus width, address shift, and unmapped memory value. The three existing address spaces are defined to be program, data, and I/O. The program address space is  where code is assumed to live; it is also where all memory lives in standard von Neumann architecture CPUs. The data address space is for Harvard architecture CPUs, and will be used in the future to do proper program/data separation for the CCPU, PIC16C5x, ADSP210x, TMS32010, and TMS32025. The I/O address space is used for port accesses, such as those performed by the Z80 and x86 CPUs. The read/write handlers used by CPUs to access memory have all been renamed in the shuffle, both in order to match the address space naming conventions (program/data/io) and in order to make it clearer what they do. In addition, they have been unified to a large degree. Instead of separate memory accessors based on both the address bus width and the data bus width, there is now just one shared set of memory accessors for each data bus width. Here are some examples of how older functions map to newer ones [David Haywood]:
 
   cpu_readmem16, cpu_readmem17, cpu_readmem20,     -> program_read_byte_8
   cpu_readmem21, cpu_readmem24
- ccpu_writemem_16bew_word, cpu_writemem18bew_word, -> program_write_word_16be
+  ccpu_writemem_16bew_word, cpu_writemem18bew_word, -> program_write_word_16be
   cpu_writemem_24bew_word, cpu_writemem32bew_word
   cpu_readport -> io_read_byte_8
 
-- A common annoyance used to be that drivers would need to know which of these functions to call in order to read memory. A table of accessors is now included as part of the memory context switch, which allows the addition of generic functions that can be used by the drivers to access memory. For example, a driver trying to read a word from a 68000's address space used to have to call cpu_readmem24bew_word(). Now the driver can just call program_read_word(), and the memory system will do the right thing. In addition, there is now a single change_pc() macro used by all CPU cores, regardless of the databus or address bus width. Along with these changes, the macros for defining memory maps has changed for consistency as well, as follows:
+- A common annoyance used to be that drivers would need to know which of these functions to call in order to read memory. A table of accessors is now included as part of the memory context switch, which allows the addition of generic functions that can be used by the drivers to access memory. For example, a driver trying to read a word from a 68000's address space used to have to call cpu_readmem24bew_word(). Now the driver can just call program_read_word(), and the memory system will do the right thing. In addition, there is now a single change_pc() macro used by all CPU cores, regardless of the databus or address bus width. Along with these changes, the macros for defining memory maps has changed for consistency as well, as follows [David Haywood]:
 
   MEMORY_READ_START -> PROGRAM_READ8_MAP_START
   MEMORY_READ16_START -> PROGRAM_READ16_MAP_START
@@ -36,40 +36,34 @@ Memory system changes
   PORT_WRITE32_START -> IO_WRITE32_MAP_START
   PORT_END -> IO_MAP_END
 
-- Along the way, support has been also added for CPUs with a 64-bit data bus, so there are also macros for PROGRAM_READ64_MAP_START, etc.
-One of the future goals of the memory system is to support not just ranges of memory, but also better
-support for mirrors and more complicated situations where addressing is repeated at regular intervals.
-In order to facilitate this, macros have been created that must be used when defining a memory map:
+- Along the way, support has been also added for CPUs with a 64-bit data bus, so there are also macros for PROGRAM_READ64_MAP_START, etc. One of the future goals of the memory system is to support not just ranges of memory, but also better support for mirrors and more complicated situations where addressing is repeated at regular intervals. In order to facilitate this, macros have been created that must be used when defining a memory map [David Haywood]:
 
   MEMORY_READ_START                  PROGRAM_READ8_MAP_START { 0x0000, 0xffff, MRA_RAM }, -> READ_RANGE( 0x0000, 0xffff, MRA8_RAM ) MEMORY_END                                         PROGRAM_MAP_END
-
   MEMORY_WRITE_START                 PROGRAM_WRITE8_MAP_START { 0x0000, 0x0fff, MRA_RAM }, WRITE_RANGE ( 0x0000, 0x0fff, MRA_RAM ) { 0x1000, 0x7fff, MRA_RAM, &foo },            -> WRITE_RANGE_P ( 0x1000, 0x7fff, MRA_RAM, &foo ) { 0x8000, 0xffff, MRA_RAM, &bar, &bar_size },      WRITE_RANGE_PS( 0x8000, 0xffff, MRA_RAM, &bar, &bar_size ) MEMORY_END                                         PROGRAM_MAP_END
 
-- Since all the memory maps were changing anyway, static 8-bit handlers have been renamed for consistency. This means that MRA_NOP becomes MRA8_NOP, etc. Prior versions of MAME allowed special entries in the read/write maps to control the number of effective address bits. This mechanism has changed so that you can supply an arbitrary combination of flags:
+- Since all the memory maps were changing anyway, static 8-bit handlers have been renamed for consistency. This means that MRA_NOP becomes MRA8_NOP, etc. Prior versions of MAME allowed special entries in the read/write maps to control the number of effective address bits. This mechanism has changed so that you can supply an arbitrary combination of flags [David Haywood]:
 
   MEMORY_ADDRESS_BITS(20) -> PROGRAM_MAP_FLAGS( MEMORY_ABITS(20) )
 
-and it has been enhanced to also allow you to specify the unmapped memory value:
+  and it has been enhanced to also allow you to specify the unmapped memory value:
+
   PROGRAM_MAP_FLAGS( MEMORY_UNMAPPED_0 ) /* unmapped reads return all 0's */
   PROGRAM_MAP_FLAGS( MEMORY_UNMAPPED_1 ) /* unmapped reads return all 1's */
 
-- Because of this mechanism, the old function memory_set_unmap_value() has been deprecated. All drivers using this have been updated to use the new mechanism instead. Also note that the MRA_NOP handlers have been changed to return the unmapped value as well, instead of always returning 0. Another "feature" that has changed is that unmapped reads and writes to address spaces of less than 20 bits no longer act like RAM. This may break some drivers, but it ends the special treatment of 8-bit address spaces. In the machine driver macros, the address space is now explicitly specified:
+- Because of this mechanism, the old function memory_set_unmap_value() has been deprecated. All drivers using this have been updated to use the new mechanism instead. Also note that the MRA_NOP handlers have been changed to return the unmapped value as well, instead of always returning 0. Another "feature" that has changed is that unmapped reads and writes to address spaces of less than 20 bits no longer act like RAM. This may break some drivers, but it ends the special treatment of 8-bit address spaces. In the machine driver macros, the address space is now explicitly specified [David Haywood]:
 
   MDRV_CPU_MEMORY(read,write) -> MDRV_CPU_PROGRAM_MAP(read,write)
-   /* not applicable */ -> MDRV_CPU_DATA_MAP(read,write)
+  /* not applicable */ -> MDRV_CPU_DATA_MAP(read,write)
   MDRV_CPU_PORTS(read,write) -> MDRV_CPU_IO_MAP(read,write)
 
 
-CPU Interface Changes
----------------------
-- The other significant change in this release is the way CPUs are defined and referenced. Previously,
-the file cpuintrf.c contained a huge table with many pointers into each CPU, and a bunch of data about
-each CPU type. This was problematic to maintain, and left a bunch of data out of the CPU core to be
-defined by MAME instead. The new release defines a new function that every CPU core must implement, of the form:
+CPU Interface Changes:
+----------------------
+- The other significant change in this release is the way CPUs are defined and referenced. Previously, the file cpuintrf.c contained a huge table with many pointers into each CPU, and a bunch of data about each CPU type. This was problematic to maintain, and left a bunch of data out of the CPU core to be defined by MAME instead. The new release defines a new function that every CPU core must implement, of the form [David Haywood]:
 
-<cputype>_get_info(UINT32 state, union cpuinfo *info)
+  <cputype>_get_info(UINT32 state, union cpuinfo *info)
 
-- This is the only public function defined for each CPU core. The table in cpuintrf.c now simply consists of an enumerated index for the CPU type, followed by the pointer to the actual CPU's get_info function. The flexible get_info function is then responsible for providing pointers to all the remaining functions. In addition, the number of other functions has been greatly reduced:
+- This is the only public function defined for each CPU core. The table in cpuintrf.c now simply consists of an enumerated index for the CPU type, followed by the pointer to the actual CPU's get_info function. The flexible get_info function is then responsible for providing pointers to all the remaining functions. In addition, the number of other functions has been greatly reduced [David Haywood]:
 
   void  set_info(UINT32 state, union cpuinfo *info);
   void. get_context(void *context);
@@ -81,9 +75,5 @@ defined by MAME instead. The new release defines a new function that every CPU c
   void. burn(int cycles);
   offs_t disassemble(char *buffer, offs_t pc);
 
-- The old functions get_reg, set_reg, set_irq_line, set_irq_callback, info, get_cycle_table, set_cycle_table
-have all been incorporated into get_info and set_info.
-All the existing MAME CPU cores have been updated to work with this new system. Also, for most cores, all functions and the icount global variable have been made static apart from the get_info function. A number of selectors for get_info/set_info have been defined to return information about the CPU, including the
-address and data bus sizes for all address spaces, clock dividers, IRQ line size, context size, etc.
-
-- NOTE TO PORTERS: The cpuintrf[] array is now populated dynamically by the cpuintrf_init() function. This means that if you have informational code or other code that relies on the CPU information being present (i.e., if you call any of the cputype_* functions) before calling run_game(), you must manually call cpuintrf_init() first. Don't worry, it is safe to call cpuintrf_init() multiple times.
+- The old functions get_reg, set_reg, set_irq_line, set_irq_callback, info, get_cycle_table, set_cycle_table have all been incorporated into get_info and set_info. All the existing MAME CPU cores have been updated to work with this new system. Also, for most cores, all functions and the icount global variable have been made static apart from the get_info function. A number of selectors for get_info/set_info have been defined to return information about the CPU, including the address and data bus sizes for all address spaces, clock dividers, IRQ line size, context size, etc. [David Haywood].
+- NOTE TO PORTERS: The cpuintrf[] array is now populated dynamically by the cpuintrf_init() function. This means that if you have informational code or other code that relies on the CPU information being present (i.e., if you call any of the cputype_* functions) before calling run_game(), you must manually call cpuintrf_init() first. Don't worry, it is safe to call cpuintrf_init() multiple times [David Haywood].

@@ -2,8 +2,8 @@
 ------------------------------------------
 
 
-New games supported:
---------------------
+New games supported
+-------------------
 A lot of ROM renaming and moving around has been done.
 
 Bagman (original Valadon Automation version; the Stern version has been renamed "bagmans") [Nicola Salmoria]
@@ -30,10 +30,6 @@ The Main Event [Bryan McPhail]
 Two new Mikie sets (US/Japan). The old one was bad and has been removed [Nicola Salmoria]
 Vindicators [Aaron Giles]
 Zoo Keeper (alternate) [Nicola Salmoria]
-
-New games supported:
---------------------
-xxx
 
 
 These drivers have improved GRAPHICS:
@@ -99,7 +95,7 @@ The less characters you use, the more likely you'll be surprised which game actu
 
 
 Source changes:
------------------
+---------------
 - [DOS] Included Neil Bradley's asm M6808 emulator. Note: you need NASM to compile (the makefile defaults to NASMW, the Win32 version) [Alex Pasadyn].
 - The (*vh_update)() call has an additional parameter, full_refresh. When it is 0, the driver may assume that the screen has not been altered by the main engine since the last call, and do an incremental update instead of redrawing the full screen [Brad Oliver].
 - For convenience, added some commonly used palette read/write fucntions to vidhrdw/generic.c [Nicola Salmoria].

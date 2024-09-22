@@ -214,14 +214,14 @@ psion_ssd:
   EROS Ver.4.0 (Licensed to The Yorkshire Post), Spreadsheet, System Disk (MC Word) V2.50 [zedstarr]
 
 
-MAME Testers bugs fixed (2)
----------------------------
+MAME Testers bugs fixed (2):
+----------------------------
 - 08878: [DIP/Input] DIP switches and machine configuration menus do not refresh conditional setting correctly (Vas Crabb)
 - 08886: [Sound] (nichibutsu/terracre.cpp) terracren: Bass channel in background music is inaudible (Lord Nightmare)
 
 
-Merged pull requests
---------------------
+Merged pull requests:
+---------------------
 - 12088: bus/mc10: Added minimum ROM size and block size checks for cartridge ROMs, and cleaned up code [Sylvain Glaize].
 - 12387: rockwell/aim65.cpp: Added DRAC-1 ROM BIOS option; aim65_cart.xml: Added another BASIC version [OldComputers ES, ClawGrip].
 - 12395: ibm5170.xml: Added fifteen working items and replaced one item with a better dump [Total DOS Collection, ArcadeShadow].
@@ -308,8 +308,8 @@ Merged pull requests
 - 12621: nmk/macrossp.cpp: Cleaned up code and marked quizmoon as having imperfect graphics emulation [cam900].
 
 
-Source changes
---------------
+Source changes:
+---------------
 - apple/macii.cpp: Cleanup pass and RAM support improvements [R. Belmont]:
   * Properly emulate how the GLUE ASIC lays out memory.
   * All RAM sizes that were valid on hardware now work, and sizes >8 MiB that caused the original Mac II ROM to malfunction are locked out for that machine.

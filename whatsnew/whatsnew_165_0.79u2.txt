@@ -2,16 +2,16 @@
 ----------------------------------------
 
 
-New Games supported or promoted from GAME_NOT_WORKING status:
--------------------------------------------------------------
+New Games supported or promoted from GAME_NOT_WORKING status
+------------------------------------------------------------
 Bongo [Pierpaolo Prazzoli]
 Botanic [David Haywood]
 Kusayakyuu [Tomasz Slanina] (incomplete driver, various sound / gfx issues)
 Mad Alien [Norbert Kehrer]
 Pro Yakyuu Nyuudan Test Tryout [Pierpaolo Prazzoli, Bryan McPhail]
 
-New Clones supported or promoted from GAME_NOT_WORKING status:
---------------------------------------------------------------
+New Clones supported or promoted from GAME_NOT_WORKING status
+-------------------------------------------------------------
 Area 51 (newer 68020 Version) [Brian Troha]
 Hunchback (galaxian hardware) [Pierpaolo Prazzoli]
 Strikers 1945 (alt) [Brian Troha]
@@ -23,13 +23,11 @@ Gaelco 3D games (Radikal Bikers, Surf Planet) [Aaron Giles] (Incomplete emulatio
 Microprose 3D (botss, stankatk etc.) [David Haywood] (skeleton driver, just loads the roms)
 
 
-Source changes
-----------------------
+Source changes:
+---------------
 - Timer System update [Aaron Giles]:
-  * The timer system is now integer-based instead of floating-point based. It requires 64-bit ints. I've defined a new type 'mame_time' which is a 96-bit time value. There are 32 bits for counting full seconds, and 64 bits for counting subseconds. This type is used extensively in the core timer system and the CPU scheduler.
-The accuracy of the new system is down to 1 attosecond (10^-18 seconds). This may seem excessive, but for a 100MHz CPU, each clock cycle is 10^10 attoseconds. That works nicely because 100MHz divides evenly. For a 96MHz CPU, each clock cycle is 1.041666667 * 10^10 attoseconds. Rounding, we lose 1/3 of an attosecond per cycle in error. Multiply that error by 96000000 and you end up with an error of 32000000 attoseconds. Fortunately, that's only 0.032ns, but if I had much less accuracy than this, the errors would start to add up in a more significant way.
-  * All the existing APIs are still around, and doubles can still be passed as arguments. But they are all immediately connverted to 'mame_time' values for
-processing. The old system had some drifting errors due to FP rounding which are gone now.
+  * The timer system is now integer-based instead of floating-point based. It requires 64-bit ints. I've defined a new type 'mame_time' which is a 96-bit time value. There are 32 bits for counting full seconds, and 64 bits for counting subseconds. This type is used extensively in the core timer system and the CPU scheduler. The accuracy of the new system is down to 1 attosecond (10^-18 seconds). This may seem excessive, but for a 100MHz CPU, each clock cycle is 10^10 attoseconds. That works nicely because 100MHz divides evenly. For a 96MHz CPU, each clock cycle is 1.041666667 * 10^10 attoseconds. Rounding, we lose 1/3 of an attosecond per cycle in error. Multiply that error by 96000000 and you end up with an error of 32000000 attoseconds. Fortunately, that's only 0.032ns, but if I had much less accuracy than this, the errors would start to add up in a more significant way.
+  * All the existing APIs are still around, and doubles can still be passed as arguments. But they are all immediately connverted to 'mame_time' values for processing. The old system had some drifting errors due to FP rounding which are gone now.
 - Fixed Unix compile (renamed rand_r in namconb1 driver) [R .Belmont].
 - Misc fixes [Nathan Woods]:
   * src/cpuintrf.c: Fixups for the CP1610 core. Fixed the declaration of activecpu_set_irq_callback().

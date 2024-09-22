@@ -27,8 +27,8 @@ New clones supported
 (zaxxonb)  Jackson [Nicola Salmoria]
 
 
-These drivers have improved GRAPHICS
-------------------------------------
+These drivers have improved GRAPHICS:
+-------------------------------------
 - 16-bit color support in the NeoGeo driver. It's enabled in a few games which were particularly affected by reduction to 256 colors [Nicola Salmoria].
 - Accurate colors in Galivan [Nicola Salmoria].
 - Accurate colors in Spelunker II [Nicola Salmoria].
@@ -68,8 +68,8 @@ These drivers have improved GRAPHICS
 - Several fixes and improvements to D-Day [Zsolt Vasvari].
 
 
-These drivers have new or improved SOUND
-----------------------------------------
+These drivers have new or improved SOUND:
+-----------------------------------------
 - Added ADPCM samples to Mad Gear [Bryan McPhail].
 - Added PCM samples to Ninja Kid II [Jarek Parchanski].
 - Added support for the 7751 sound chip in Monster Bash. Two samples are still needed (discrete circuits) [Mike Balfour].
@@ -99,8 +99,8 @@ These drivers have new or improved SOUND
 - uPD7759 support in Golden Axe, Shinobi, Passshtb, Alien Syndrome, Altered Beast [Howie Cohen].
 
 
-Other drivers changes
----------------------
+Other drivers changes:
+----------------------
 - "kbmame" multi-button key equivalents for the NeoGeo games. They are only available if cheats are enabled [Nicola Salmoria].
 - Added dip switches to the Atari System 2 games [Nicola Salmoria].
 - Added rotary control support to Top Gunner. This works in topgunbl *only* - the gun turret cannot be rotated in jackal and topgunr, those games don't support the rotary joystick [Karl Stenerud].
@@ -136,8 +136,8 @@ Other drivers changes
 - Worked out the Super Punch Out protection [Tatsuyuki Satoh, Ernesto Corvi].
 
 
-Changes to the main program
----------------------------
+Changes to the main program:
+----------------------------
 - Support for the Namco System 1 sound system [Ernesto Corvi].
 - [DOS] Widened the frameskip range. It now is 0-11, meaning the number of frames to skip out of 12. For example, if the game normally runs at 60 fps, "-frameskip 2" will make it run at 50 fps, and "-frameskip 6" at 30 fps. Also, if a frame takes more than the allotted time to display, the lost time can be recovered in the following frames. Moreover, improved the way audio streams are handled, so they stay more in sync with the video. There should never be any more audio breakups EVER (as long as your system can keep the game running at 100% speed). All of these changes together mean that it is now possible to run at much higher frame rates than before (if your system is fast enough) [Nicola Salmoria].
 - [DOS] Implemented auto frameskip. It dynamically adjusts the frameskip setting to display the maximum possible frames without dropping below 100% speed. It is on by default; to turn it off, specify an explicit frameskip value, e.g. "-frameskip 0". Autoframeskip only works well if your machine is fast enough to run the game at 100% speed. If it isn't, you had better use a fixed frameskip. NOTE: you must delete mame.cfg (or manually change the line "frameskip = 0" to "frameskip = auto") for the auto frameskip to become the default [Nicola Salmoria].

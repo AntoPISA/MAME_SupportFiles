@@ -114,13 +114,13 @@ leapfrog_leappad_cart:
 psion1: Science Pack (alt), Utility Pack (alt) [Nigel Barnes]
 
 
-MAME Testers bugs fixed (1)
+MAME Testers bug fixed (1):
 ---------------------------
 - 08902: [Gameplay] (casio/pv1000.cpp) pv1000: Running any game causes the emulated system to crash (lidnariq)
 
 
-Merged pull requests
---------------------
+Merged pull requests:
+---------------------
 - 11670: altos/altos586.cpp: Added preliminary Altos ACS586 emulation [Lubomir Rintel].
 - 12494: machine/z80dma.cpp: Implemented burst mode and refactored code, and hooked up BUSRQ/BUSAK in systems using it [holub].
 - 12564: misc/marywu.cpp: Improved peripherals – it’s now possible to trigger music from the debugger [flama12333].
@@ -174,8 +174,8 @@ Merged pull requests
 - 12685: igs/pgmcrypt.cpp: Fixed decryption for mgcs3 and mgzz; igs/igs_m027.cpp corrected a game title [XingXing, Happy].
 
 
-Source changes
---------------
+Source changes:
+---------------
 - commodore/c65.cpp: Basic convert DMAgic to device [Angelo Salese].
 - blitz: Add note about calibration [hap].
 - ioport: Offset analog value by half a step because of rounding issue when crossing 0 (crossing 0 now takes 1 step instead of 2, and there's 0.5 step wiggle room at edges) [hap].

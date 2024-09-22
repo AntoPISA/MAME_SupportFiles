@@ -10,7 +10,7 @@ Source changes:
 - Added a number of commented-out default strings and modified all drivers to use them [Aaron Giles].
 - Changed the format of .cfg files to use XML. All old .cfg files are useless, just toss them away. This should allow for easier backwards compatibility in the future [Aaron Giles].
 - MAME now requires the expat library for XML support. This is included in the distribution, and is built automatically by default. You can comment out BUILD_EXPAT in the main makefile to disable this behavior and link against a precompiled version if you wish. Similarly, zlib has been modified to do the same thing and is now included with the MAME source. Comment out th BUILD_ZLIB flag to turn off this behavior and link against a precompiled lib [Aaron Giles].
-- Revamped most of the input and input port system. This means a number of changes for those who do their own OSD layer. All input APIs are now unified -- there is no notion of "keyboard" versus "joystick" anymore. The following APIs are now obsolete:
+- Revamped most of the input and input port system. This means a number of changes for those who do their own OSD layer. All input APIs are now unified -- there is no notion of "keyboard" versus "joystick" anymore. The following APIs are now obsolete [Aaron Giles]:
 
   osd_get_key_list
   osd_is_key_pressed

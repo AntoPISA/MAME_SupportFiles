@@ -46,7 +46,7 @@ TwinBee [Andrew Prime]
 Yankee Do! (merged with Mr. Do!) [Lee Taylor]
 
 
-Neo Geo status
+NeoGeo status:
 --------------
 - "ROM length mismatch" errors. If you get these, you are just using ROMs larger than the ones MAME expects. This is not a fatal error and the game will still run fine (provided the ROMs are good, of course). You can "fix" the ROMs yourself just by removing the second half of the file. Note that the sizes used by MAME are sort of arbitrary. In many cases it is difficult to know for sure which size the ROMs are really supposed to be, so we decided to consistently use the smallest possible files. The real ROMs *might* be larger than that, but the extra space is not used by the game - it is either all FF, or contains a verbatim copy of the first half.
 - A few games have graphics glitches which are not easily fixed.
@@ -55,8 +55,8 @@ Neo Geo status
 - Sound support is 95% complete. If you experience garbled sound and you get NO GOOD DUMP EXISTS errors, this is caused by bad ROMs, not by imperfect emulation. There is NO WAY to fix that apart from redumping the bad ROMs.
 
 
-These drivers have improved GRAPHICS
-------------------------------------
+These drivers have improved GRAPHICS:
+-------------------------------------
 - Added artwork support to Asteroid Deluxe [Peter Hirschberg, Mathis Rosenhauer].
 - Added artwork support to Lunar Lander [Cristopher Kirmse].
 - Background light support in Discs of Tron [Mathis Rosenhauer].
@@ -67,29 +67,29 @@ These drivers have improved GRAPHICS
 - Rooms in Intrepid are now properly hidden until you enter them. Also fixed the bridges in Round Up [Nicola Salmoria].
 
 
-These drivers have HIGH SCORE support
--------------------------------------
+These drivers have HIGH SCORE support:
+--------------------------------------
 - Bionic Commando, Blasto, Tomahawk, Astro Invader, plus many fixes [Howie Cohen].
 - Cloak and Dagger, Frenzy, Future Spy, Cop 01 [Dave W.].
 - Exciting Soccer [Jarek Parchanski].
 - Penguin-Kun Wars [Roberto Fresca].
 
 
-These drivers have new or improved SOUND
-----------------------------------------
+These drivers have new or improved SOUND:
+-----------------------------------------
 - Fixed bass track in Do Run Run [Jim Hernandez].
 - Improved the Pokey emulation [Juergen Buchmueller].
 - Partial sound in Satan of Saturn [Nicola Salmoria].
 - Support for stereo output. This is implelemented in the YM2610 and in Tatsuyuki's YM2151. It can be used by other games, for example the Atari System 2 games (Paper Boy etc.) have two Pokeys, one per channel [Nicola Salmoria].
 
 
-Other drivers changes
----------------------
+Other drivers changes:
+----------------------
 - Chelnov is now playable! Plus many other fixes to the driver including slowdowns in Karnov [Bryan McPhail].
 
 
-Changes to the main program
----------------------------
+Changes to the main program:
+----------------------------
 - [DOS] New -listinfo command to give details on all of the supported games [Andrea Mazzoleni].
 - [DOS] Now using a new beta version of the SEAL audio library which further improves the dynamic range. You'll notice louder and better balanced sound in many games. Let me know about games with bad balance [Nicola Salmoria].
 - [DOS] Stereo sound support. It is a little slower than mono, to turn it off use -nostereo. Stereo is enabled only for YM2610 and YM2151 games. The others always use mono [Nicola Salmoria].

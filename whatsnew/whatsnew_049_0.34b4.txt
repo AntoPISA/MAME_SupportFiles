@@ -2,8 +2,8 @@
 ------------------------------------------
 
 
-New games supported:
---------------------
+New games supported
+-------------------
 1942 (set 3) (merged) [Nicola Salmoria]
 Alex Kidd (not working) [Phil Stroffolino]
 Alien Storm (not working) [Phil Stroffolino]
@@ -41,10 +41,6 @@ Vanguard (Centuri) (merged) [Nicola Salmoria]
 Vulgus (set 2) (merged) [Nicola Salmoria]
 Wonder Boy Monster Lair [Phil Stroffolino]
 Wrestle War [Phil Stroffolino]
-
-New clones supported:
---------------------
-xxx
 
 
 These drivers have improved GRAPHICS:
@@ -95,19 +91,18 @@ Source changes:
 - New file types for osd_fopen(): OSD_FILETYPE_STATE and OSD_FILETYPE_ARTWORK [Nicola Salmoria].
 
 
-NeoGeo MAME support [Nicola Salmoria]:
-------------------------
-This beta contains a major update to the NeoGeo driver. It is still far fromerfect but has many improvements over the previous version. This is still very much a 'work-in-progress' driver with many known problems. Hopefully these problems will be fixed soon. How to: You need a zip file called neogeo.zip in your rompath. It should contain at least two files:
+NeoGeo MAME support:
+--------------------
+This beta contains a major update to the NeoGeo driver. It is still far fromerfect but has many improvements over the previous version. This is still very much a 'work-in-progress' driver with many known problems. Hopefully these problems will be fixed soon. How to: You need a zip file called neogeo.zip in your rompath. It should contain at least two files [Nicola Salmoria]:
 
-neo-geo.rom (128k)
-ng-sfix.rom (128k)
+  neo-geo.rom (128k)
+  ng-sfix.rom (128k)
 
-There should also be two other roms which are not yet used by Mame, they _will_ be used in future versions of this driver so do not delete them. You also need to place the game zip in your rompath. If you do not know what 8 character filename the NeoGeo game you want to play has you can type:
+  There should also be two other roms which are not yet used by Mame, they _will_ be used in future versions of this driver so do not delete them. You also need to place the game zip in your rompath. If you do not know what 8 character filename the NeoGeo game you want to play has you can type:
 
-mame -listclones neogeo
+  mame -listclones neogeo
 
-That will list the 8 character zip names of all currently supported games.
-  - What's New?
+  That will list the 8 character zip names of all currently supported games.
 - Many graphics improvements:
   * 'Missing tiles' in games such as 'Puzzle Bobble' are fixed.
   * Scaling is improved, but still not perfect. Full screen zooms tend to break (eg, Thrash Rally, Art of Fighting).
@@ -118,20 +113,19 @@ That will list the 8 character zip names of all currently supported games.
   * Custom drawgfx routine in place. This is slower than the previous MAME release but allows the graphics to be drawn from their native data. This allows:
   * MEMORY REQUIREMENTS APPROXIMATELY HALVED! And also quicker loading time.
   * If you experience a 'black screen' for a few seconds after loading it is because the 'pen usage' arrays are being calculated. MAME NeoGeo uses a compressed palette system to give the full NeoGeo 12 bit colour on an 8 bit display. (This is nothing new, almost every other MAME driver for high colour games works in the same way, by choosing only the colours that are actually displayed at any one time). Although this gives better quality it actually takes around 10-15% of the processor time each frame.
-  * There is no 'black screen' at the end of each games demo. All games now behave as per the arcade version and cycle to the 'NeoGeo logo' screen.
-Notes on soft dipswitches: You can access these from pressing F2 (self test) or setting the test mode dipswitch and resetting the virtual machine. Both soft dips and cabinet settings are saved for each game. If, for some reason, you experience strange gameplay (NOT graphics glitches), the soft dips may have become corrupt (this _is_ still a beta release!), to clear them you can wipe the file in the hiscore directory for the game OR go into the hardware test and select the 'clear backup ram' option (recommended).
-Other Fixes:
-- Emulation of soft dips fixed many problems games had in previous versions, for example, the game timers being set low in games such as KOTM and Art of Fighting are fixed. Almost all 'gameplay' issues are fixed by this.
-- Sidenote: The 'blood bios' is not needed, nor supported. All games affected by the blood bios actually have the 'blood' option in their soft dip options. It can be turned on & off there without having to use a special bios. In fact any non-standard bios may not work at this point.
-- Due to the much decreased memory requirements large games such as Karnov's Revenge now work.
+  * There is no 'black screen' at the end of each games demo. All games now behave as per the arcade version and cycle to the 'NeoGeo logo' screen. Notes on soft dipswitches: You can access these from pressing F2 (self test) or setting the test mode dipswitch and resetting the virtual machine. Both soft dips and cabinet settings are saved for each game. If, for some reason, you experience strange gameplay (NOT graphics glitches), the soft dips may have become corrupt (this _is_ still a beta release!), to clear them you can wipe the file in the hiscore directory for the game OR go into the hardware test and select the 'clear backup ram' option (recommended).
+  * Emulation of soft dips fixed many problems games had in previous versions, for example, the game timers being set low in games such as KOTM and Art of Fighting are fixed. Almost all 'gameplay' issues are fixed by this.
+  * Sidenote: The 'blood bios' is not needed, nor supported. All games affected by the blood bios actually have the 'blood' option in their soft dip options. It can be turned on & off there without having to use a special bios. In fact any non-standard bios may not work at this point.
+  * Due to the much decreased memory requirements large games such as Karnov's Revenge now work.
   - What isn't fixed?
-- 'New' games such as Metal Slug, Pulstar, Shock Troopers do not work, either due to protection or bankswitching used in these games (information needed!).
-- The animation in the 'rain' scenes of Karnov's Revenge does not animate!
-- As mentioned before, full screen zooms are not correct.
-- The MVS memory card is not supported.
-- ...probably many other small bugs too.
+  * 'New' games such as Metal Slug, Pulstar, Shock Troopers do not work, either due to protection or bankswitching used in these games (information needed!).
+  * The animation in the 'rain' scenes of Karnov's Revenge does not animate!
+  * As mentioned before, full screen zooms are not correct.
+  * The MVS memory card is not supported.
+  * ...probably many other small bugs too.
   - And finally:
-Q: Why don't you MAME guys do something original instead of doing something  that's already done?
-A: Tell that to a Mac/Arm/Amiga owner!
-Q: It's a bit slow...
-A: The custom graphics draw routine will be improved soon! It was felt that the  slowdown was merited due to the advantages of halving memory usage.
+  
+  Q: Why don't you MAME guys do something original instead of doing something  that's already done?
+  A: Tell that to a Mac/Arm/Amiga owner!
+  Q: It's a bit slow...
+  A: The custom graphics draw routine will be improved soon! It was felt that the  slowdown was merited due to the advantages of halving memory usage.

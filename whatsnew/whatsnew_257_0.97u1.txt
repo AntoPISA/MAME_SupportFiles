@@ -22,26 +22,22 @@ Driver's Eyes [Phil Stroffolino]
 Winning Run [Phil Stroffolino]
 
 
-MAMETesters Bugs Fixed
-----------------------
-wwfwfsta37b16gre1 [Pierpaolo Prazzoli]
-ddragon336rc2gre [Pierpaolo Prazzoli]
-cookrace093u2red [ShimaPong]
-ddragn2u077gre [Pierpaolo Prazzoli]
-starforc097gre [Aaron Giles]
-wotw094u3gra [Aaron Giles]
+MAMETesters Bugs Fixed (6):
+---------------------------
+wwfwfsta37b16gre1 (Pierpaolo Prazzoli)
+ddragon336rc2gre (Pierpaolo Prazzoli)
+cookrace093u2red (ShimaPong)
+ddragn2u077gre (Pierpaolo Prazzoli)
+starforc097gre (Aaron Giles)
+wotw094u3gra (Aaron Giles)
 
 
 
 Source changes:
 ---------------
-- Changed v60 CPU to clock multiple cycles per instruction instead of requiring
-every driver to divide the clock; updated all drivers to use the correct clock
-speed [Aaron Giles].
-- Made the expression engine in the debugger a little more generic to support
-its use in other tools [Aaron Giles].
-- Began cleanup of the Sega System 32 driver. Things may not work as well as
-before; this will be fixed over time. Do not report bugs on it [Aaron Giles].
+- Changed v60 CPU to clock multiple cycles per instruction instead of requiring every driver to divide the clock; updated all drivers to use the correct clock speed [Aaron Giles].
+- Made the expression engine in the debugger a little more generic to support its use in other tools [Aaron Giles].
+- Began cleanup of the Sega System 32 driver. Things may not work as well as before; this will be fixed over time. Do not report bugs on it [Aaron Giles].
 - Hooked up Pest Place redump, fixed dkong3b colors, and added support for Control Type dipswitch in Street Heat [Pierpaolo Prazzoli].
 - Fixed vblank handling and some bad sprites in wwfsstar [Pierpaolo Prazzoli].
 - Fixed missing speech in 'Hyper Crash' [MASH].

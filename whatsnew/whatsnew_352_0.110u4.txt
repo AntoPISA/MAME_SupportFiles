@@ -2,8 +2,8 @@
 ---------------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
+MAMETesters Bug Fixed (1):
+--------------------------
 raiga0104u4yel (Mamesick)
 
 
@@ -21,5 +21,5 @@ Source changes:
 - Reworked the SNES raster timing to use MDRV_SCREEN_RAW_PARAMS() and friends. All but one of the "electronics tests" in the SNES diagnostics cart now pass with flying colors [R. Belmont].
 - Rewrote the Dragon's Lair driver from the schematics. Added new module machine/laserdsc.c which has laserdisc emulation for the PR-7280 and LD-V1000 laserdisc players. Full emulation of the laserdisc is pending support for CHD audio/video and high quality rips, but you can operate the game and see the frame numbers that would be displayed. Added built-in layout to display the scores, lives, and credit information [Aaron Giles].
 - SCSI CD emulation improvements [Ville Linde]:
-  * Added Play Audio (12) command
+  * Added Play Audio (12) command.
   * Fixed track number and added MSF support to Read Sub-Channel  command.

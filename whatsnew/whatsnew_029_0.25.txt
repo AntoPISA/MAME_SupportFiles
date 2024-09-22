@@ -2,8 +2,8 @@
 --------------------------------------
 
 
-New games supported:
---------------------
+New games supported
+-------------------
 (anteater) Anteater [Malcor]
 (frontlin) Front Line [Nicola Salmoria]
 (hunchy)   Hunchback [James R. Twine, Chris Hardy]
@@ -15,14 +15,14 @@ New games supported:
 (tutankhm) Tutankham (Stern Electronics) [Mirko Buffoni]
 (wwestern) Wild Western [Nicola Salmoria]
 
-New clones supported:
+New clones supported
 --------------------
 (ckongjeu) Crazy Kong (Copyright Jeutel) [Mirko Buffoni]
 (mspacatk) Ms. Pac Man Attacks [Mirko Buffoni]
 
 
 Program changes:
---------
+----------------
 - We have added 'Starforce'! Another one that rocks!! Sound is not supported yet [Mirko Buffoni].
 - Finally I've added 'Tutankham'. (Hi Moose!! ;) Moose provided me a good bunch of information and I lost much time on a stupid bug in bank selection. Thanks to David Dahl (techt@juno.com) that provided me a driver too, and I found the light!!  Also thanks to Rob Jarrett for the exaustive memory map (I've included it in sources, it's better than mine) [Mirko Buffoni].
 - I've decrypted the garbled graphics of 'AntEater' and 'Rescue' which are now fully playable. And Fabio Buffoni improved the decode routines with thrilling code. Colors are wrong, unless someone provides me a good set of screenshots to study. Hunchback doesn't work yet [Fabio Buffoni, Mirko Buffoni].
@@ -40,18 +40,15 @@ Program changes:
 - Provided me info about how to enable a shot sample with moonquasar, mooncresta, galaxian and clones [Robert Anschuetz].
 - Fixed the Williams driver to support joystick in Blaster, Defender, Joust, Robotron, Splat, Stargate. Also fixed the Space Invaders driver to include high score saving and 100% arcade-perfect colors for Lunar Rescue; since some bootleg machines did not use this colorful overlay, Destination Earth retains the Space Invaders color scheme [Valerio Verrando].
 - Bernd has cleaned up VESA command line options:
-
-  No longer supported:
+  * No longer supported:
   '-vesascan'   --> use '-vesa' or (faster, if it works) '-vesa2l'
   '-vesaskip N' --> use '-640x480 -skiplines N'  instead
   '-rotate'     --> use '-rol' or '-ror' instead
-
-  New:
+  * New:
   '-ror'
   '-rol'         Rotate the display (anti)clockwise. Since this uses the standard VESA scanline mode, you'll get *vertical* scanlines on rotated games (authentic?).
-  '-nodouble'    Prevents pixel doubling, if you like miniaturised arcade emulation. It's also faster than the standard  pixel-doubling VESA modes.
-  '-skiplines N' Does what '-vesaskip N' used to do, except it does not select 640x480 VESA mode [Mirko Buffoni].
-
+  * '-nodouble'    Prevents pixel doubling, if you like miniaturised arcade emulation. It's also faster than the standard  pixel-doubling VESA modes.
+  * '-skiplines N' Does what '-vesaskip N' used to do, except it does not select 640x480 VESA mode [Mirko Buffoni].
 - Minor modifications to 'Arabian' palette. Ville Laitinen also provided some modifications to Kangaroo driver [Mirko Buffoni].
 - Pause key back to 'P'. Sorry, you cannot use it for your redefinitions, but, hey, you have 101 keys left!!! ;) [Mirko Buffoni].
 - Found the meaning of SW1 in 'Moon Cresta' [Mirko Buffoni, Mikiya Yadohisa].

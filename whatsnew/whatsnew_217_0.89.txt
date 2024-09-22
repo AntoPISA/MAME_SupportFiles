@@ -10,7 +10,7 @@ Super Monaco GP (2 new sets, Japan and US, without logos) [Charles MacDonald, Da
 
 
 Source changes:
----------------------
+---------------
 - frogs - Removed discrete tongue sound for now.  Added sample support. The buzz sound of flys is constant because it can't be emulated properly until full discrete support is added. Samples are from the ones posted by Twisty [David Haywood].
 - Misc. Sega Improvements:
   * Improved inputs in DDCrew, all 4 players can now be used, although only the service coin works [David Haywood].
@@ -49,7 +49,8 @@ Discrete sound changes [Derrick Renaud]:
   * Modified Discrete core node inputs to use pointers to the data, instead of moving the data into the inputs at each step. This speeds up discrete emulation.
   * Modified all current modules and drivers to use new code.
 
+
 New discrete modules added:
------------------
-  * DISCRETE_555_ASTABL has been modified to remove control voltage support.
-  * DISCRETE_555_ASTABL_CV has been added if control voltage is used.
+---------------------------
+  * DISCRETE_555_ASTABL has been modified to remove control voltage support [David Haywood].
+  * DISCRETE_555_ASTABL_CV has been added if control voltage is used [David Haywood].

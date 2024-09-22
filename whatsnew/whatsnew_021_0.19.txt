@@ -3,8 +3,8 @@
 Sorry to be late, I just taken my graduation in Computer Science and I was a little busy. Here we go! :> NdMix.
 
 
-New games supported:
---------------------
+New games supported
+-------------------
 (1942)     1942 [Paul Leaman]
 (arabian)  Arabian [Jarek Burczynski]
 (elevatob) Elevator Action (bootleg) [Nicola Salmoria]
@@ -13,23 +13,23 @@ New games supported:
 (warpwarp) Warp Warp [Nicola Salmoria]
 
 
-Program:
---------
-- Added partial sound support to RallyX (no explosions yet). Thankx to Ron Fries.
-- Added preliminar unplayable WarpWarp. Graphic is ok, but the game hangs during diagnostic.
-- Changed noise_lenght and noise_rate values in Moon Cresta audio driver, so now noise is much more noisier!
-- Fabrice Frences fixed the Qbert driver and added support for Reactor.
-- Jarek Burczynski provided a preliminar but playable driver for Arabian. Colors are wrong, but it support sound already.
-- Mike Coates fixed the Space Panic background colors. Also added hiscore support.
-- Nicola Salmoria found how Elevator Action background works. Also updated all drivers that have a scrolling background. Support for the bootleg version of Elevator Action ("elevatob"). The original version doesn't work because of copy protection. The graphics are almost OK now, albeit quite slow.
-- Paul Leaman (author of the 1942 emulator) provided exhaustive information on (guess what) 1942, which is now supported.
-- Shaun Stephenson provided me original Phoenix sound samples, so I adjusted sound driver to achieve correct sound modulation and frequency, and substituted noise generator for shots and explosions with a couple of samples. Noise generator can be still used (just don't put the samples in the directory) with Phoenix and it's used in Pleiads. I changed white noise waveshape and adjusted frequency, so now it sounds better.
-- Some changes to music tempo of Frogger.
-- Thanks to Marc LaFontaine that provided me bootleg version we have now support for Popeye. It's not yet playable (when the game starts the machine resets) but it has music already. It's also very slow, since it uses a 512x480 screen. I'm looking for decryption scheme for original Popeye board using Lionel's idea [pain!].
+Program changes:
+----------------
+- Added partial sound support to 'Rally X' (no explosions yet) [Ron Fries, Mirko Buffoni].
+- Added preliminar unplayable 'Warp Warp'. Graphic is ok, but the game hangs during diagnostic [Mirko Buffoni].
+- Changed noise_lenght and noise_rate values in 'Moon Cresta' audio driver, so now noise is much more noisier! [Mirko Buffoni].
+- Fixed the 'Q*Bert' driver and added support for 'Reactor' [Fabrice Frences].
+- Provided a preliminar but playable driver for 'Arabian'. Colors are wrong, but it support sound already [Jarek Burczynski].
+- Fixed the 'Space Panic' background colors. Also added hiscore support [Mike Coates].
+- Found how 'Elevator Action' background works. Also updated all drivers that have a scrolling background. Support for the bootleg version of 'Elevator Action' (elevatob). The original version doesn't work because of copy protection. The graphics are almost OK now, albeit quite slow [Nicola Salmoria].
+- Author of the 1942 emulator provided exhaustive information on (guess what) 1942, which is now supported [Paul Leaman].
+- Provided me original 'Phoenix' sound samples, so I adjusted sound driver to achieve correct sound modulation and frequency, and substituted noise generator for shots and explosions with a couple of samples. Noise generator can be still used (just don't put the samples in the directory) with Phoenix and it's used in Pleiads. I changed white noise waveshape and adjusted frequency, so now it sounds better [Shaun Stephenson].
+- Some changes to music tempo of 'Frogger' [Mirko Buffoni].
+- Provided bootleg version we have now support for 'Popeye'. It's not yet playable (when the game starts the machine resets) but it has music already. It's also very slow, since it uses a 512x480 screen. I'm looking for decryption scheme for original Popeye board using Lionel's idea [pain!] [Marc LaFontaine].
 
-Source:
--------
-- Added copyscrollbitmap() to COMMON.C, that semplifies programming for those games that use scroll.
-- Added input ports 5 and 6 in CPUINTRF module.
-- Fixes to setdipswitches() and the fps counter in COMMON.C, to make them work correctly with non 8x8 fonts.
-- Substituted strcmp() with case insensitive stricmp() in MAME.C and MSDOS.C. This solve the problem with upcase gamename (ex: Win95 and NDOS).
+Source changes:
+---------------
+- Added copyscrollbitmap() to COMMON.C, that semplifies programming for those games that use scroll [Mirko Buffoni].
+- Added input ports 5 and 6 in CPUINTRF module [Mirko Buffoni].
+- Fixes to setdipswitches() and the fps counter in COMMON.C, to make them work correctly with non 8x8 fonts [Mirko Buffoni].
+- Substituted strcmp() with case insensitive stricmp() in MAME.C and MSDOS.C. This solve the problem with upcase gamename (ex: Win95 and NDOS) [Mirko Buffoni].

@@ -2,23 +2,6 @@
 ---------------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
-- 00233: [Graphics] ikari: The current implementation of the shadow in Ikari Warriors and Victory Road is wrong (Nicola Salmoria).
-- 00491: [Crash/Freeze] drgwrld3: When you continue by inserting credit and play, the game crashes (Luca Elia).
-- 00492: [Crash/Freeze] vbowl: In every case, after the 3rd launched ball, the game resets (Luca Elia).
-- 01802: [Multisession] cybrcomm, raveracw, raveracj, raveraja, ridgerac, ridgerab, ridgeraj, acedrvrw, victlapw: No sound in games after reloading via the MAME UI (Atari Ace).
-- 02021: [Graphics] cottonbm: Sprite layer offset toward upper-left (R. Belmont).
-- 02022: [Crash/Freeze] cottonbm: Fatal Error Crash (R. Belmont).
-- 02027: [Crash/Freeze] lhba: lhba does not work (Luca Elia).
-- 02059: [Crash/Freeze] panicstr: Game hangs after choosing Stage (R. Belmont).
-- 02071: [Crash/Freeze] coolridr: Access Violation (R. Belmont).
-- 02095: [Misc.] chqflag, chqflagj, -listxml: memory leaks (Aaron Giles).
-- 02101: [Crash/Freeze] wboy, wboysys2: Access Violation (Nicola Salmoria).
-- 02110: [Side-by-side] All sets in cps3.c: video from a DV cam proves the refresh rate of CPS3 in MAME is wrong (Aaron Giles).
-- 02113: [Misc.] xymg: xymg title mispelled (Aaron Giles).
-
-
 New games added or promoted from NOT_WORKING status
 ---------------------------------------------------
 Da Ban Cheng [Pierpaolo Prazzoli, Luca Elia]
@@ -34,6 +17,23 @@ Free Kick (bootleg set 2) [David Haywood]
 Sonic Blast Man TURBO 2 (SNES bootleg) [Corrado Tomaselli]
 Zhong Guo Long (China, V010C) [Luca Elia]
 Zhong Guo Long? (Hong Kong, V011H) [Luca Elia]
+
+
+MAMETesters Bugs Fixed (13):
+----------------------------
+- 00233: [Graphics] ikari: The current implementation of the shadow in Ikari Warriors and Victory Road is wrong (Nicola Salmoria)
+- 00491: [Crash/Freeze] drgwrld3: When you continue by inserting credit and play, the game crashes (Luca Elia)
+- 00492: [Crash/Freeze] vbowl: In every case, after the 3rd launched ball, the game resets (Luca Elia)
+- 01802: [Multisession] cybrcomm, raveracw, raveracj, raveraja, ridgerac, ridgerab, ridgeraj, acedrvrw, victlapw: No sound in games after reloading via the MAME UI (Atari Ace)
+- 02021: [Graphics] cottonbm: Sprite layer offset toward upper-left (R. Belmont)
+- 02022: [Crash/Freeze] cottonbm: Fatal Error Crash (R. Belmont)
+- 02027: [Crash/Freeze] lhba: lhba does not work (Luca Elia)
+- 02059: [Crash/Freeze] panicstr: Game hangs after choosing Stage (R. Belmont)
+- 02071: [Crash/Freeze] coolridr: Access Violation (R. Belmont)
+- 02095: [Misc.] chqflag, chqflagj, -listxml: memory leaks (Aaron Giles)
+- 02101: [Crash/Freeze] wboy, wboysys2: Access Violation (Nicola Salmoria)
+- 02110: [Side-by-side] All sets in cps3.c: video from a DV cam proves the refresh rate of CPS3 in MAME is wrong (Aaron Giles)
+- 02113: [Misc.] xymg: xymg title mispelled (Aaron Giles)
 
 
 Source changes:
@@ -90,15 +90,19 @@ Source changes:
 - Updated cheat parser to preserve the format of attribute values used for cheat parameters and items [Aaron Giles].
 - Added support for information-only cheat items, which will be displayed in the menu but which are not selectable and have no action associated with them. Empty information-only items are automatically converted to menu separators [Aaron Giles].
 - Moved several include files from mame/ to emu/, as they were included by generic components in emu/ and thus should have no dependencies on the MAME code [Aaron Giles].
-- Added new target ldplayer, which is based on MAME but serves as a standalone laserdisc player for CHDs. Right now only the Pioneer LD-V1000 is connected, and limited commands are available. Each player type is a driver, so you specify the player type on the command-line. The driver then opens the first CHD it finds in your ROM path and uses that as the laserdisc. The intention is that you specify the  -rompath each time on the command-line, so a typical approach might be:
-  ldplayer ldv1000 -rompath j:\mach3
-where it will pick up the mach3.chd lurking in your j:\mach3 folder. Several basic commands are supported:
+- Added new target ldplayer, which is based on MAME but serves as a standalone laserdisc player for CHDs. Right now only the Pioneer LD-V1000 is connected, and limited commands are available. Each player type is a driver, so you specify the player type on the command-line. The driver then opens the first CHD it finds in your ROM path and uses that as the laserdisc. The intention is that you specify the  -rompath each time on the command-line, so a typical approach might be [Aaron Giles]:
+  
+ldplayer ldv1000 -rompath j:\mach3
+  
+  where it will pick up the mach3.chd lurking in your j:\mach3 folder. Several basic commands are supported:
+
   Space = play/pause.
   Alt   = toggle frame display.
   Left  = scan forward (when playing) or step forward (when paused).
   Right = scan backward (when playing) or step backward (when paused).
   0-9   = enter numbers for search.
-  Enter = execute search to frame [Aaron Giles].
+  Enter = execute search to frame.
+
 - Implemented proper shadow handling in SNK drivers [Nicola Salmoria].
 - Corrected ROM names with PCB locations for Lady Bug and verified the dump against an original Universal Lady Bug PCB. Added information about the Universal PCB number and prom type [Brian Troha].
 - Improved input ports for drivers starting with F->M. In particular: They add AM_READ_PORT whenever suitable, they make inputs fully 32bit where needed, they remove indexed input read handlers from INITs, they replace many read handlers with appropriate CUSTOM_INPUTs [Fabio Priuli].
