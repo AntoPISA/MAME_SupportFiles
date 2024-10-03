@@ -1,4 +1,4 @@
-﻿MAME SERIES.ini 0.269 (Sep  4, 2024)
+﻿MAME SERIES.ini 0.270 (Oct  3, 2024)
 © AntoPISA     www.progettoSNAPS.net
 ==================================== 
 
@@ -10,11 +10,17 @@ From 0.162 version, the file deals only for arcade sets. From the 0.177 version 
 and verification of the .ini files, created by motoschifo. Many thanks to Alexis B. of https://www.arcade-history.com/. 
 
 
+WhatsNew 0.270 (03.10.2024) (719 supported Series):
+===================================================
+Items RENAMED (2): (p47b) to (p47bl) and (scherrym) to (scherrymp).
+Series ADDED (1): Moon Alien.
+Series UPDATED (5): Cherry Bonus, Cherry Master, Galaxian, P-47 and Robocop.
+
+
 WhatsNew 0.269 (04.09.2024) (718 supported Series):
 ===================================================
 Items RENAMED (5): (hbarrelu) to (hbarrelua), (xmvsfjr2) to (xmvsfjr3), (xmvsfjr3) to (xmvsfjr4), (xmvsfj) to (xmvsfjr1) and (xmvsfjr1) to (xmvsfjr2).
 Series UPDATED (4): Heavy Barrel, Marvel Vs. Capcom, Quiz Gakuen Paradise and Street Fighter.
-
 
 WhatsNew 0.268 (15.08.2024) (718 supported Series):
 ===================================================
