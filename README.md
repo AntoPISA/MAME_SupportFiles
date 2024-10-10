@@ -8,9 +8,8 @@ The following files have been updated in this MAME cycle:
 
 - Category pack
 - CatVer pack
-- CHD-Info
 - Languages.ini
-- MESSInfo.dat (WIP)
+- MESSInfo.dat
 - renameSET.dat
 - Series.ini
 - Version pack
