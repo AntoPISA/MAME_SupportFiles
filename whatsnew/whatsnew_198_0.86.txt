@@ -3,8 +3,8 @@
 While there are no new working games in this release it remains interesting from a technical and development point of view mainly due to the new PPC core as well as the Hyperstone and 37710 fixes. It should also be a fairly stable release after the many input changes which have taken place recently.
 
 
-New Clones supported or promoted from GAME_NOT_WORKING status:
---------------------------------------------------------------
+New Clones supported or promoted from GAME_NOT_WORKING status
+-------------------------------------------------------------
 Field Goal (different) [Andy Welburn]
 
 New Non-Working games / clones supported
@@ -21,8 +21,8 @@ Source changes:
 - Various Konami PPC based games added: gticlub, gradius4, sscope, sscope2, racingj, racingj2, thrilld, midnrun, windheat. These are to demonstrate the PPC core in action, they contain only very preliminary emulation and do nothing more than display the initial test screens [Ville Linde].
 - M37710, NamcoSS22 and C352 improvements [R. Belmont]:
   M37710 changes (m37710.diff):
-  * Data bus is actually 16 bit, not 8
-  *  Fixed saving of status register on interrupts
+  * Data bus is actually 16 bit, not 8.
+  * Fixed saving of status register on interrupts.
   * Fixed errors in PHB, PHT, PLT, and ANDB opcodes.
   * Added XAB, PLB, and ROLB opcodes.
   * Fixed IRQ dispatch errors.
@@ -32,7 +32,7 @@ Source changes:
   * Handle the changed M37710 bus width.
   * Temporarily disconnect shared RAM. 
   * There's a problem where the 68020's shared RAM test wipes out the 37710's work variables and causes it to crash. I 	suspect there's a register that halts or resets the 37710  Note: Prop Cycle has no POST and doesn't cause this problem, but all the other games do.
-  C352 change (c352.diff):
+  - C352 change (c352.diff):
   * Remove debug printf that accidentally snuck in.
 - SPI Improvements [Ville Linde]:
   * Improved (but not yet correct) tilemap decryption.

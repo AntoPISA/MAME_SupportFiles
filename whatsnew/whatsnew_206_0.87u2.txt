@@ -2,14 +2,14 @@
 ----------------------------------------
 
 
-New Games supported or promoted from GAME_NOT_WORKING status:
--------------------------------------------------------------
+New Games supported or promoted from GAME_NOT_WORKING status
+------------------------------------------------------------
 Fix Eight (bootleg) [Tomasz Slanina] (turn on invunerability dipswitch to see an intro!)
 Raiders [Mash]
 Title Fight [David Haywood]
 
-New Clones supported or promoted from GAME_NOT_WORKING status:
---------------------------------------------------------------
+New Clones supported or promoted from GAME_NOT_WORKING status
+-------------------------------------------------------------
 Crazy climber 2 (Japan Harder) [chaneman]
 Eagle (set 3) [chaneman]
 Nibbler (Olympia) [Costa Sgantzos]
@@ -23,6 +23,7 @@ Dynamite Deka 2 (clone of Dynamite cop) [Chris Hardy]
 Farmer Rebelion (clone of ikki) [Pierpaolo Prazzoli] (Maybe a ROM is bad?)
 Mazer Blazer (set 2) [chaneman]
 Zero Team (set 2)
+
 
 Source changes:
 ---------------
@@ -58,10 +59,10 @@ Source changes:
   * Fixed issue on big-endian machines.
   * Added framework so the DSP program uploads are now handled correctly.
 - C352 pitch adjustment [R.Belmont, Cap].
-- Analog Port Fixes [Derrick Renaud]
+- Analog Port fixes [Derrick Renaud]:
   * downtown: Both analog controls were set to player 1.
   * eterm: Crashed, due to inc/dec buttons not being defined for the analog ports.
-- Now loading sync prom in 'Atari Soccer' [Stefan Jokisch].
+- Now loading sync PROM in 'Atari Soccer' [Stefan Jokisch].
 - Added EEPROM and flipscreen to the games in vamphalf driver [Pierpaolo Prazzoli].
 - Improved sound in Hard Head/Popper [Pierpaolo Prazzoli, Corrado Tomaselli].
 - Misc updates [Nathan Woods]:

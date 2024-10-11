@@ -3,8 +3,8 @@
 Thanks to Pierpaolo Prazzoli (Reip) for putting together the 0.90 release while I was away.
 
 
-New Games / Clones supported or promoted from GAME_NOT_WORKING status:
-----------------------------------------------------------------------
+New Games / Clones supported or promoted from GAME_NOT_WORKING status
+---------------------------------------------------------------------
 Merlins Money Maze [Pierpaolo Prazzoli] (maybe impossible to win?)
 Spot (Arcadia) [Mariusz Wojcieszek]
 Magic Johnson's Fast Break (Arcadia) [Mariusz Wojcieszek]
@@ -13,13 +13,12 @@ Xenon (Arcadia) [Mariusz Wojcieszek]
 Sea Bass Fishing [Angelo Salese] (set to 1 player in system assignments menu)
 Dunk Shot [Nicola Salmoria, Charles MacDonald, Aaron Giles]
 Action Fighter [Nicola Salmoria, Charles MacDonald, Aaron Giles]
-Various Sega Sets [Nicola Salmoria, Charles MacDonald, Aaron Giles]
-	sdioj, shangona, shangnle, alexkidd
+Various Sega Sets: sdioj, shangona, shangnle, alexkidd [Nicola Salmoria, Charles MacDonald, Aaron Giles]
 Tazzmania (bootleg on Galaxian Hardware) [Pierpaolo Prazzoli]
 
 
 Source changes:
----------------------
+---------------
 - FD1089 decryption [Nicola Salmoria, Charles MacDonald]:
   * 100% accurate emulation of FD1089A, FD1089B should be considered 99%  because it will have to be verified with other CPUs (it is 100% for all currently supported games).
   * Complete tables provided by Charles MacDonald for 317-0018 (Action Fighter), 317-0022 (Dunk Shot), 317-0168 (Aurail).
@@ -37,7 +36,7 @@ Source changes:
 - Some ST-V fixes which allow seabass to run [Angelo Salese].
 - Taken out the resource file from the windows objs when UI=1 (for MAME32) [Chris Kirmse].
 - Improved Polaris sound (real board differs from Schematics) [Derrick Renaud].
-Fixed cloud scroll direction in 'Polaris' [Pierpaolo Prazzoli].
+- Fixed cloud scroll direction in Polaris [Pierpaolo Prazzoli].
 - Fixed enigma2 colours [Pierpaolo Prazzoli].
 - Fixed the m6509 core to appease the new compiler [Nathan Woods].
 - Arcadia update [Mariusz Wojcieszek]:

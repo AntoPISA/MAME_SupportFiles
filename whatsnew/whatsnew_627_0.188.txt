@@ -2,23 +2,6 @@
 -----------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
-- 05900: [Sound] (ddenlovr.cpp) funkyfig, funkyfiga: Missing music and partial sound FX (Ivan Vangelista)
-- 06261: [Sound] (polepos.cpp) polepos2: Crowd Cheering sounds are messed up at the chequered flag (goal). (Robbbert)
-- 06370: [Save/Restore] (vegas.cpp) sf2049se, sf2049te: Crashes on reload (-str 8) in a staggered -str 20 run (Ted Green)
-- 06562: [Crash/Freeze] All sets in octopus.cpp, zorba.cpp: Fatal Error when using various terminal/printers in slots (Ivan Vangelista)
-- 06564: [Crash/Freeze] (ti99_4x.cpp) All sets in ti99_4x.cpp, ti99_4p.cpp: SuperAMS memory expansion card (samsmem) Fatal Error when mounted (Ivan Vangelista)
-- 06581: [Interface] Various problems with software loading/unloading: Various problems with software loading (Nathan Woods)
-- 06588: [Interface] Regression loading softlist items from the command line with changed slot options (Nathan Woods)
-- 06592: [DIP/Input] (nbmj8891.cpp) chinmoku: DSW B should not exist. (Robbbert)
-- 06613: [Crash/Freeze] (rohga.cpp) schmeisr: Exception on exit (David Haywood)
-- 06620: [Crash/Freeze] (itech8.cpp) ninclown: During final boss Twisto the game can potentially crash (Phil Bennett)
-- 06624: [Misc.] (mc10.cpp) Emulation of the right-shift and rotate instructions (ASR, LSR, ROR) do not correctly modify the overflow flag (V) (AJR)
-- 06627: [Sound] (segas32.cpp) kokoroj2: Missing voice in game (Arzeno Fabrice)
-- 06631: [Sound] (vgmplay.cpp) vgmplay: Attempting to play a .vgm/.vgz file containing 2 X POKEY does not play back correctly. (AJR)
-
-
 New working machines
 --------------------
 A-One Arrange Ball/Tandy Zingo/LJN Computer Impulse [hap, Sean Riddle]
@@ -149,6 +132,23 @@ New NOT_WORKING software list additions
 --------------------------------------
 ibm5150: Boulder Dash Construction Kit [Justin Kerk]
 ibm5170: IBM Personal Computer DOS (Version J5.00/V) (Japanese), PC-DOS (multiple sets using XDF disk format) [Justin Kerk]
+
+
+MAMETesters Bugs Fixed (13):
+----------------------------
+- 05900: [Sound] (ddenlovr.cpp) funkyfig, funkyfiga: Missing music and partial sound FX (Ivan Vangelista)
+- 06261: [Sound] (polepos.cpp) polepos2: Crowd Cheering sounds are messed up at the chequered flag (goal) (Robbbert)
+- 06370: [Save/Restore] (vegas.cpp) sf2049se, sf2049te: Crashes on reload (-str 8) in a staggered -str 20 run (Ted Green)
+- 06562: [Crash/Freeze] All sets in octopus.cpp, zorba.cpp: Fatal Error when using various terminal/printers in slots (Ivan Vangelista)
+- 06564: [Crash/Freeze] (ti99_4x.cpp) All sets in ti99_4x.cpp, ti99_4p.cpp: SuperAMS memory expansion card (samsmem) Fatal Error when mounted (Ivan Vangelista)
+- 06581: [Interface] Various problems with software loading/unloading: Various problems with software loading (Nathan Woods)
+- 06588: [Interface] Regression loading softlist items from the command line with changed slot options (Nathan Woods)
+- 06592: [DIP/Input] (nbmj8891.cpp) chinmoku: DSW B should not exist (Robbbert)
+- 06613: [Crash/Freeze] (rohga.cpp) schmeisr: Exception on exit (David Haywood)
+- 06620: [Crash/Freeze] (itech8.cpp) ninclown: During final boss Twisto the game can potentially crash (Phil Bennett)
+- 06624: [Misc.] (mc10.cpp) Emulation of the right-shift and rotate instructions (ASR, LSR, ROR) do not correctly modify the overflow flag (V) (AJR)
+- 06627: [Sound] (segas32.cpp) kokoroj2: Missing voice in game (Arzeno Fabrice)
+- 06631: [Sound] (vgmplay.cpp) vgmplay: Attempting to play a .vgm/.vgz file containing 2 X POKEY does not play back correctly (AJR)
 
 
 Source changes:

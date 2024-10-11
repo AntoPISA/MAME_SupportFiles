@@ -2,27 +2,26 @@
 ----------------------------------------
 
 
-New Games supported or promoted from GAME_NOT_WORKING status:
--------------------------------------------------------------
+New Games supported or promoted from GAME_NOT_WORKING status
+------------------------------------------------------------
 Drakton [Pierpaolo Prazzoli] (no sound)
 Various games on the System 22 driver [Phil Stroffolino] (*disclaimer* I had trouble getting controls working in several of them)
 
-New Clones supported or promoted from GAME_NOT_WORKING status:
---------------------------------------------------------------
+New Clones supported or promoted from GAME_NOT_WORKING status
+-------------------------------------------------------------
 Raystorm (ver 2.06O) [Brian Troha]
 Rival Schools (USA) [Brian Troha]
 
 New Non-Working games / clones supported
 ----------------------------------------
 Diamond Derby [David Haywood] (this is a gambling game and will probably be removed once the driver is complete, it's just here while it is developed)
-Super Golf [Tomasz Slanina] (very preliminary. simple graphic layer hooked up, ROM banking hooked up in a way which allows ROM test to pass etc.)
+Super Golf [Tomasz Slanina] (Very preliminary. Simple graphic layer hooked up, ROM banking hooked up in a way which allows ROM test to pass etc.)
 Wing War (World Set) (other set was US set (Recycle It Logo))
 
 
 Source changes:
 ---------------
-- M37710 fixes [R. Belmont]:
-  * Adds the following opcodes: ROR B, LDB direct indexed, MPY stack relative, and DIV direct.  
+- M37710 fixes: Adds the following opcodes: ROR B, LDB direct indexed, MPY stack relative, and DIV direct [R. Belmont].
 - Misc patches [Lawrence Gold]:
   * Substituted isnan() for inunordered(), which is only available in C99.
   * Fixed a few C89 warnings about an extra comma at the end of enums.
@@ -33,8 +32,7 @@ Source changes:
   * Texture banking for old hardware hooked up.
   * Patches to tms32025 emulation (DSP math bugs).
   * Preliminary dynamic lighting for system22 (rarely actually used - see Prop Cycle turning score/time digits).
-- Imago improvements [Pierpaolo Prazzoli, Chris Hardy]:
-  * Hooked up starfield and background tilemap, fixed colours still problems with the sprites.
+- Imago improvements: Hooked up starfield and background tilemap, fixed colours still problems with the sprites [Pierpaolo Prazzoli, Chris Hardy].
 - Fixed endianness problem in h83002 [R. Belmont].
 - Added Sound to the Gaelco 3d driver [Aaron Giles].
 - Fixed some bugs that were in 0.86: Tube Panic, Namco S12, Zero Point etc [various].

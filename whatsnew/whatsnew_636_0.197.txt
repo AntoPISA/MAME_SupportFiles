@@ -2,19 +2,6 @@
 -----------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
-- 06775: [Media Support] (coco12.cpp) coco, coco2, dragon and clones: Software list does not work for floppy devices (Nigel Barnes)
-- 06843: [Misc.] (saturn.cpp) All saturn.cpp sets: CD Block unknown command e2, contact MAMEdev (Angelo Salese)
-- 06886: [Graphics] (stv.cpp) vfkids: Corrupt background graphics (Angelo Salese)
-- 06926: [Documentation] (galaxian.cpp) amidars: Values are incorrect for "Lives" DIP switch (Tafoid)
-- 06928: [Graphics] (mpu4vid.cpp) All sets in mpu4vid.cpp: Graphics corruption (regression) (Carl)
-- 06929: [Sound] (suprnova.cpp) All sets in suprnova.cpp: No Audio is present (O. Galibert)
-- 06936: [Crash/Freeze] (zn.cpp) techromn and clones: Fatal error: memory_bank::set_entry called with out-of-range entry 255 (Robbbert)
-- 06937: [DIP/Input] (galpanic.cpp) galspanic and clones: Second button not assigned (AJR)
-- 06942: [Media Support] (x68k.cpp) x68000: Can't save game data to disk (Carl)
-
-
 New working machines
 --------------------
 Home Alone (Tiger handheld) [hap, Sean Riddle]
@@ -135,6 +122,19 @@ pc98_cd:
   Psychic Detective Series Vol. 3 - Aya, Schwarzschild EX - Tessa no Seigun, Sensual Angels, Tanjou - Debut,
   Vastness - Kuukyo no Ikenie-tachi, Venus & Mug-R, Windows 2000 Professional + Server (MSDN), Windows 95 (OSR2, v4.00.950 B),
   Windows 95 Upgrade for Epson PC Series (OSR1, v4.00.950a), Windows 98 (Upgrade), Windows 98 Second Edition [r09]
+
+
+MAMETesters Bugs Fixed (9):
+---------------------------
+- 06775: [Media Support] (coco12.cpp) coco, coco2, dragon and clones: Software list does not work for floppy devices (Nigel Barnes)
+- 06843: [Misc.] (saturn.cpp) All saturn.cpp sets: CD Block unknown command e2, contact MAMEdev (Angelo Salese)
+- 06886: [Graphics] (stv.cpp) vfkids: Corrupt background graphics (Angelo Salese)
+- 06926: [Documentation] (galaxian.cpp) amidars: Values are incorrect for "Lives" DIP switch (Tafoid)
+- 06928: [Graphics] (mpu4vid.cpp) All sets in mpu4vid.cpp: Graphics corruption (regression) (Carl)
+- 06929: [Sound] (suprnova.cpp) All sets in suprnova.cpp: No Audio is present (O. Galibert)
+- 06936: [Crash/Freeze] (zn.cpp) techromn and clones: Fatal error: memory_bank::set_entry called with out-of-range entry 255 (Robbbert)
+- 06937: [DIP/Input] (galpanic.cpp) galspanic and clones: Second button not assigned (AJR)
+- 06942: [Media Support] (x68k.cpp) x68000: Can't save game data to disk (Carl)
 
 
 Source changes:

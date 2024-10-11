@@ -2,8 +2,8 @@
 --------------------------------------
 
 
-New Games supported or promoted from GAME_NOT_WORKING status:
--------------------------------------------------------------
+New Games supported or promoted from GAME_NOT_WORKING status
+------------------------------------------------------------
 Seattle Hardware [Aaron Giles]
 Mace - The Dark Age [Aaron Giles]
 Blitz '99 [Aaron Giles]
@@ -14,8 +14,8 @@ Goal '92 (bootleg of Seibu Cup Soccer) [Pierpaolo Prazzoli]
 T-Mek (prototype) [Aaron Giles] (bad sound)
 Guardians of the Hood [Aaron Giles]
 
-New Clones supported or promoted from GAME_NOT_WORKING status:
---------------------------------------------------------------
+New Clones supported or promoted from GAME_NOT_WORKING status
+-------------------------------------------------------------
 Double Dragon (World) [Bryan McPhail]
 The Simpsons (2 player, alt) [R. Belmont]
 Martial Champion [EAA] [R. Belmont]
@@ -63,14 +63,14 @@ Source changes:
   * Changes character 14 to a solid circle; previously this character was blank and unused.
   * Miscellaneous changes within #ifdef MESS.
 - Various Atari Improvements [David Haywood]:
-  * CAGE works.
-	* Motion object checksums work for growth games.
-	* Sprite/playfield priorities work for growth games.
-	* No more 6502 speedups.
-	* drivers/atarig1.c: Added support for the MO command register -- MO checksums now work. Added missing SHA1 values and marked some ROMs as NO_DUMP. Removed 6502 speedups.
-	* drivers/atarig42.c: Added support for the MO command register -- MO checksums now work. Added SLOOP emulation for 'Guardians of the Hood', which is fully playable. Added missing SHA1 values. Removed 6502 speedups. Documented color MUXing. Removed old orientation code. Added MO/playfield priorities.
-	* drivers/atarigx2.c: Added support for the MO command register -- MO checksums now work. Hooked up CAGE audio. Added missing SHA1 values. Documented the overly complicated color MUXing. Added MO/playfield priorities. Added support for the MO command register -- MO checksums now work. Added missing SHA1 values. Added another 'Road Riot's' Revenge variant. Some input port tweaks. Removed 6502 speedups.
-	* machine/asic65.c: Improved logic for 'Road Riot 4WD' -- almost playable. Added support for 'Guardians of the Hood'. 
+  - CAGE works.
+  * Motion object checksums work for growth games.
+  * Sprite/playfield priorities work for growth games.
+  * No more 6502 speedups.
+  * drivers/atarig1.c: Added support for the MO command register -- MO checksums now work. Added missing SHA1 values and marked some ROMs as NO_DUMP. Removed 6502 speedups.
+  * drivers/atarig42.c: Added support for the MO command register -- MO checksums now work. Added SLOOP emulation for 'Guardians of the Hood', which is fully playable. Added missing SHA1 values. Removed 6502 speedups. Documented color MUXing. Removed old orientation code. Added MO/playfield priorities.
+  * drivers/atarigx2.c: Added support for the MO command register -- MO checksums now work. Hooked up CAGE audio. Added missing SHA1 values. Documented the overly complicated color MUXing. Added MO/playfield priorities. Added support for the MO command register -- MO checksums now work. Added missing SHA1 values. Added another 'Road Riot's' Revenge variant. Some input port tweaks. Removed 6502 speedups.
+  * machine/asic65.c: Improved logic for 'Road Riot 4WD' -- almost playable. Added support for 'Guardians of the Hood'. 
   * machine/atarigen.c: Fixed bad handling of EEPROM data in 32-bit mode.
   * sndhrdw/cage.c: Fixed frequency computation -- it now works ok! Added speedup mechanism. Fixed positioning of the 4 voices.
   * vidhrdw/atarirle.c: Implemented the MO command register and checksumming.

@@ -3,8 +3,8 @@
 There have been some changes to the MAME licence, please check it in readme.txt.
 
 
-New games supported:
---------------------
+New Games Added
+---------------
 (005)      005 [Mike Balfour, Dave Fish]
 (alpine)   Alpine Ski [Nicola Salmoria, Tatsuyuki Satoh]
 (arkanoid) Arkanoid [Brad Oliver]
@@ -55,8 +55,8 @@ New games supported:
 (travrusa) Traverse USA [Lee Taylor, John Clegg]
 (vastar)   Vastar [Allard van der Bas]
 
-New clones supported:
---------------------
+New Clones Added
+----------------
 (1943kai)  1943 Kai (1943 sequel) [Mirko Buffoni]
 (amidars)  Amidars [Mike Coates]
 (arknoidu) Arkanoid (U.S. Romstar) [Brad Oliver]
@@ -158,7 +158,7 @@ These drivers have HIGH SCORE support:
 Other drivers changes:
 ----------------------
 - A note about 'Tempest': Several people complained that mouse control is reversed. This is not the case. The more obvious place where this can be seen is the level selection screen at the beginning: move the mouse right, the block goes right. Anyway, you can now reverse the controls (see below).
-- 'Radarscope' works [Andy White].
+- Radarscope works [Andy White].
 - Dirty rectangles support in 'Qix', all Williams games, 'Cloak & Dagger', 'Berzerk', 'Arabian', 'Space Invaders' and clones, 'Kangaroo', 'Space Panic', 'Warp Warp' [Aaron Giles].
 - Some tweaks to dip switches in the 'Super Cobra', 'Lost Tomb' and 'Rescue' driver [James R. Twine].
 - Fixes to dip switches and input ports in several games [Marco Cassili].
@@ -196,7 +196,7 @@ Changes to the main program:
 
   mame gyruss -sr 22050 -sb 16
 
-will use a 22kHz sample rate and 16 bits. The -sb option currently doesn't change anything because none of the audio subsystems support 16 bit samples [Nicola Salmoria].
+  will use a 22kHz sample rate and 16 bits. The -sb option currently doesn't change anything because none of the audio subsystems support 16 bit samples [Nicola Salmoria].
 - You can keep the ROMs in a subdirectory called "ROMS", if you want to. When loading ROMs for 'gamename', the program will look in these directories in this order:
 
   1) gamename
@@ -228,6 +228,7 @@ Source changes:
   * Star Trek
   * Tac/Scan
   * Zektor
+  
 - Redesigned cpuintrf.c to be more modular and readable [Aaron Giles].
 - Removed samples field from the MachineDriver structure; added sound_prom field to the GameDriver structure [Nicola Salmoria].
 - Some changes to the 68000 emulator memory interface, and a new 68000 disassembler. Improved the 68000 cpu interface [Aaron Giles].

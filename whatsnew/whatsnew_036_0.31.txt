@@ -3,8 +3,8 @@
 SOME DEFAULT SETTINGS HAVE CHANGED. MAKE SURE TO DELETE MAME.CFG TO MAKE THEM UP TO DATE. BEFORE COMPLAINING THAT 0.31 IS SLOWER THAN 0.30, READ THIS WHOLE SECTION, OK? ESPECIALLY WHERE IT TALKS ABOUT 16 BIT COLOR SUPPORT. You'll need -depth 8 and -sr 11025 to run some of the bigger games at an acceptable speed. In the MS-DOS version, some games might require you to increase the memory available to DPMI.
 
 
-New games supported:
---------------------
+New Games Added
+---------------
 (astinvad) Astro Invader [Lee Taylor]
 (atetris)  Tetris (Atari) [Zsolt Vasvari]
 (baddudes) Bad Dudes [Bryan McPhail]
@@ -93,8 +93,8 @@ New games supported:
 (willow)   Willow [Paul Leaman]
 (wiz)      Wiz [Zsolt Vasvari]
 
-New games supported:
---------------------
+New Games Added
+---------------
 (arkabeta) Arkanoid (BETA bootleg) [Thierry Lescot]
 (arkatayt) Arkanoid (Tayto bootleg) [Thierry Lescot]
 (arkbl2)   Arkanoid (Bootleg) [Aaron Giles]
@@ -284,8 +284,8 @@ Source changes:
 - The DOS version is now compiled with GCC 2.8.0, optimized for Pentium [Nicola Salmoria].
 - New timer-based event scheduler. This is a major change which is used throughout the code. See timer.c and cpuintrf.c to get an idea of the many things it does. One of the many benefits this has is that dip switches in Do's Castle now work, but there's an endless list of things affected [Aaron Giles].
 - New vblank_duration field in MachineDriver, which controls how long to delay screen refresh after a vblank interrupt. This is important to get video properly in sync in some games (e.g. sprites and background in Commando) [Aaron Giles].
-- Memory for the 68000 is allocated automatically. You no longer have to do it yourself. The memory interface reads/writes 16 bits at a time to improve performance. Writing a single byte is a bit tricky, because the 68000 can cause write to either the high or the low byte without affecting the other; thus the second parameter for a 16-bit write is a bit more complicated. The top 16 bits are a mask which is supposed to be ANDed with the 16-bit value already in memory; the bottom 16 bits are the actual data values, to be ORed with the result. To aid in doing these operations, use the macros READ_WORD(), WRITE_WORD(), COMBINE_WORD() and COMBINE_WORD_MEM() [Aaron Giles].
-- New function: cpu_setOPbaseoverride(). This function is called whenever the code jumps into an area of memory that is in a different bank than the current one (i.e., the code jumps from RAM to BANK1). It takes the destination PC as a parameter and returns a new PC which is to be used to determine which bank to switch to by the standard function. The main purpose of adding this is for slapstic coding.  Empire Strikes Back and at least one of the System 1 games jumps to code in the slapstic memory region, but since we read the opcodes directly out of ROM, we never call the read handler.  Although this won't solve the problem completely, we can at least detect when the code jumps into the slapstic memory region, and based on the registers and the PC, cause the proper bank switching to occur [Aaron Giles].
+- Memory for the 68000 is allocated automatically. You no longer have to do it yourself. The memory interface reads/writes 16 bits at a time to improve performance. Writing a single byte is a bit tricky, because the 68000 can cause write to either the high or the low byte without affecting the other; thus the second parameter for a 16-bit write is a bit more complicated.ï¿½The top 16 bits are a mask which is supposed to be ANDed with the 16-bit value already in memory; the bottom 16 bits are the actual data values, to be ORed with the result. To aid in doing these operations, use the macros READ_WORD(), WRITE_WORD(), COMBINE_WORD() and COMBINE_WORD_MEM() [Aaron Giles].
+- New function: cpu_setOPbaseoverride(). This function is called whenever the code jumps into an area of memory that is in a different bank than the current one (i.e., the code jumps from RAM to BANK1). It takes the destination PC as a parameter and returns a new PC which is to be used to determine which bank to switch to by the standard function. The main purpose of adding this is for slapstic coding.ï¿½ Empire Strikes Back and at least one of the System 1 games jumps to code in the slapstic memory region, but since we read the opcodes directly out of ROM, we never call the read handler.ï¿½ Although this won't solve the problem completely, we can at least detect when the code jumps into the slapstic memory region, and based on the registers and the PC, cause the proper bank switching to occur [Aaron Giles].
 - Improved debugger [Martin Scragg, Mirko Buffoni, John Butler].
 - Moved the speed throttling code to the OS dependant stuff [Nicola Salmoria].
 - Support for Z80 daisy chain interrupts [Tatsuyuki Satoh].

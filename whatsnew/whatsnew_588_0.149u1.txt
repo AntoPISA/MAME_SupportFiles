@@ -2,18 +2,6 @@
 ---------------------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
-- 00419: dragngun: Hang at last boss (David Haywood)
-- 03863: [Gameplay] (bking.c) All sets in bking.c: Gameplay doesn't mirror what graphics indicate (hap)
-- 04466: [Graphics] (tx1.c) buggyboy, buggyboyjr, tx1, tx1a: Graphics totally missed, audio start and suddenly stop (Olivier Galibert)
-- 04841: [Crash/Freeze] (mpu4.c) m4exotic, m4jflash, m4madmnc, m4mmm, m4przrfm, m4rhfev, m4spinbt, m4xch, m4xs, m4xtrm: [debug] Crash after OK (Robbbert)
-- 05219: [Misc.] (tetrisp2.c) tetrisp2: Priority RAM test fails. (hap)
-- 05226: [Crash/Freeze] (mogura.c) mogura: Crashed after playing sound (hap)
-- 05228: [DIP/Input] (leland.c) cerberus: Player 1's buttons control Player 2's actions; Player 2's buttons do nothing (Fabio Priuli)
-- 05231: [Graphics] (namcos11.c) tekken2aa, tekken2ab, tekken2ub: There’s a problem with the graphics (hap)
-
-
 New games added or promoted from NOT_WORKING status
 ---------------------------------------------------
 Desert Dan [Alberto Grego, Mariusz Wojcieszek, hap]
@@ -25,7 +13,6 @@ Wonder Boy III - Monster Lair (set 5, System 16A, FD1089A 317-0086) [Chris Hardy
 
 New clones added
 ----------------
-  [Smitdogg, The Dumping Union]
 3 Wonders (bootleg) [Robbbert, Any, The Dumping Union]
 Arcadia [system11]
 Dragon Gun (Japan) [M]
@@ -63,6 +50,18 @@ Shikigami no Shiro III (v2.06J) [Shoutime]
 Spica Adventure (v2.03J) [Shoutime]
 The King of Fighters '98: Ultimate Match (v1.00) [Shoutime]
 Trouble Witches AC (v1.00J) [Shoutime]
+
+
+MAMETesters Bugs Fixed (8):
+---------------------------
+- 00419: dragngun: Hang at last boss (David Haywood)
+- 03863: [Gameplay] (bking.c) All sets in bking.c: Gameplay doesn't mirror what graphics indicate (hap)
+- 04466: [Graphics] (tx1.c) buggyboy, buggyboyjr, tx1, tx1a: Graphics totally missed, audio start and suddenly stop (Olivier Galibert)
+- 04841: [Crash/Freeze] (mpu4.c) m4exotic, m4jflash, m4madmnc, m4mmm, m4przrfm, m4rhfev, m4spinbt, m4xch, m4xs, m4xtrm: [debug] Crash after OK (Robbbert)
+- 05219: [Misc.] (tetrisp2.c) tetrisp2: Priority RAM test fails. (hap)
+- 05226: [Crash/Freeze] (mogura.c) mogura: Crashed after playing sound (hap)
+- 05228: [DIP/Input] (leland.c) cerberus: Player 1's buttons control Player 2's actions; Player 2's buttons do nothing (Fabio Priuli)
+- 05231: [Graphics] (namcos11.c) tekken2aa, tekken2ab, tekken2ub: There’s a problem with the graphics (hap)
 
 
 Source changes:
@@ -104,11 +103,10 @@ Source changes:
 - sec: Fix obvious typo [dgame].
 - Modernized phoenix custom sound device [Osso].
 - Modernized MSM5232 device [Osso].
-- chihiro: few updates to the i386 processor and chihiro driver.
- [Samuele Zannoli]
- * Adds lots of mmx and sse opcodes to the i386 processor.
- * Adds the fcomip x87 opcode.
- * Adds a "UINT8 *memory(UINT32 &size)" method to the naomi_gdrom_board device that returns the size and a pointer to the decrypted gdrom data (used by chihiro). Then for the chihiro driver:
+- chihiro: few updates to the i386 processor and chihiro driver [Samuele Zannoli]:
+  * Adds lots of mmx and sse opcodes to the i386 processor.
+  * Adds the fcomip x87 opcode.
+  * Adds a "UINT8 *memory(UINT32 &size)" method to the naomi_gdrom_board device that returns the size and a pointer to the decrypted gdrom data (used by chihiro). Then for the chihiro driver:
   * Adds basic stuff for the Nvidia audio APU.
   * Adds the "chihiro curthread" debugger command, shows information about the current active thread.
   * Adds the "chihiro irq,<number>" debugger command, to generate an interrupt with irq number 0-15 by hand.
@@ -220,7 +218,7 @@ Source changes:
 - shanghai.c: Added dipswitch locations to 'Shanghai' and 'Shanghai 2' [Brian Troha].
 - itech32.c: Some minor corrections of dipswitches. Added a note about the Japanese World Class Bowling trackball input is read at an 45 degree offset compared to normal orientation [Brian Troha].
 - Data East Protection Work [Charles MacDonald, David Haywood]:
- * Complete new Data East 146 emulation based on extensive hardware tests. The following now use a single implementation rather than incomplete per-game implementations:
+  * Complete new Data East 146 emulation based on extensive hardware tests. The following now use a single implementation rather than incomplete per-game implementations:
   Edward Randy (60)
   Mutant Fighter (66)
   Captain America (75)

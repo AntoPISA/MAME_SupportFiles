@@ -2,15 +2,15 @@
 ----------------------------------------
 
 
-New Games supported or promoted from GAME_NOT_WORKING status:
--------------------------------------------------------------
+New Games supported or promoted from GAME_NOT_WORKING status
+------------------------------------------------------------
 Bloody Roar 2 [smf] (one ROM is bad)
 FireHawk [Pierpaolo Prazzoli] (actually still marked as non-working due to standard 'afega' hardware protection issues in attract mode)
 Head On (Irem M15 Hardware) [David Haywood] (no sound)
 Shanghai - The Great Wall [Mariusz Wojcieszek] (some glitches on the title screen)
 	
-New Clones supported or promoted from GAME_NOT_WORKING status:
---------------------------------------------------------------
+New Clones supported or promoted from GAME_NOT_WORKING status
+-------------------------------------------------------------
 Target Ball (no nudity set) [David Haywood]
 
 New Non-Working games / clones supported
@@ -21,7 +21,7 @@ Pachinko Gindama Shoubu [Brian Troha] (hardware is similar to realbreak but they
 
 
 Source changes:
-----------------------
+---------------
 - Made R3000 version of Area 51 parent set [smf].
 - memory.c patch. Introduces memory_install_[read|write][8|16|32|64]_handler_mirror() calls, which install memory handlers that can mirror similar to the AM_MIRROR macro [Nathan Woods].
 - STV VDP-1 update [Mariusz Wojcieszek]:

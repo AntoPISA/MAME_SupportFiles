@@ -52,8 +52,8 @@ Source changes:
   * Indoor Soccer [Brian A. Troha].
   * Radical Radial [Stefan Jokisch].
 - SUpport USB Keyboard LEDs [smf]:
-  -led_mode ps/2 is the default and uses DeviceIOControl.
-  -led_mode usb uses keybd_event(). This only affects windows nt/2000/xp. 	There might be a way of using DeviceIOControl to change the led's on usb 	keyboards, but I can't find it. Using keybd_event() may have problems restoring on exit, but at least it	does work.
+  * led_mode ps/2 is the default and uses DeviceIOControl.
+  * led_mode usb uses keybd_event(). This only affects windows nt/2000/xp. 	There might be a way of using DeviceIOControl to change the led's on usb 	keyboards, but I can't find it. Using keybd_event() may have problems restoring on exit, but at least it	does work.
 - Save state loading from command line [smf]:
   * Adds -state to the windows version. The code was already in the core to	handle it, all this patch does is allows you to set options.savegame.
   * Not sure how reliable it is, it worked for galaxian.

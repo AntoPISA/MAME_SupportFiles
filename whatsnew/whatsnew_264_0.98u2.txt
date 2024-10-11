@@ -15,8 +15,8 @@ Line of Fire (US) [Aaron Giles]
 Street Fighter Zero (Asia 950627) [Razoola]
 
 
-MAMETesters Bugs Fixed
-----------------------
+MAMETesters Bugs Fixed (2):
+---------------------------
 pleiads061gre [MASH]
 47pie2077gra [Mamesick]
 
@@ -24,22 +24,20 @@ pleiads061gre [MASH]
 Source changes:
 ---------------
 - Added new 'screen' parameter to the VIDEO_UPDATE callbacks. It is not currently used but is a placeholder for the future [Aaron Giles].
-- Replaced direct access to Machine->scrbitmap in the following drivers with the use of force_partial_update(): m92.c, m107.c, astrocde.c, battlera.c,
-snes.c [Aaron Giles].
+- Replaced direct access to Machine->scrbitmap in the following drivers with the use of force_partial_update(): m92.c, m107.c, astrocde.c, battlera.c, snes.c [Aaron Giles].
 - Rewrote the Z80/Z180 daisy chaining logic to work a little closer to the hardware. Updated the Z80 CTC and PIO modules to support the new model. Changed the CTC module to not generate interrupts if there is an outstanding request on the same timer is currently in service; this allows Journey to (finally) run with the correct CPU speed [Aaron Giles].
 - Partial rewrite of the MCR video system. Should still work roughly the same, just a little different under the covers. This is still very much a work in progress [Aaron Giles].
 - Fixed clipping in nemesis.c [Fujix].
 - Normalized names in Konami drivers according R. Belmont's wishes [Mamesick].
-More PowerPC updates [Nathan Woods]:
-  * Moved update_counters() to be executed after the DRC epilogue code is appended; now behaves more like the non-DRC core.
-* Fixed some bugs in DRC exeception handling (SRR1 was not being set up properly, and not all MSR flags were being cleared).
+- More PowerPC updates: Moved update_counters() to be executed after the DRC epilogue code is appended; now behaves more like the non-DRC core [Nathan Woods].
+- Fixed some bugs in DRC exeception handling (SRR1 was not being set up properly, and not all MSR flags were being cleared) [Aaron Giles]:
   * Refactored DRC core to call MMU hooks.
   * ISI exceptions will now be thrown if the MMU hooks report an unexecutable address in the DRC core.
   * Fixed a rounding error in the decrementer.
   * Added support for decrementer exceptions when the DEC register is written to in both cores
   * Added support for ISI/DSI exceptions with setjmp()/longjmp() in the non-DRC core.
-- Significant rewrite of the 'Legend of Kage' driver [Phil Stroffolino]:
-  * Correct/added dipswitches.
+- Significant rewrite of the Legend of Kage driver [Phil Stroffolino]:
+  * Correct/added  DIP switches.
   * Converted to use pdrawgfx; affects stage#4.
   * A priority effect on the title screen has been mapped - this gives the foreground layer priority over all sprites, and screenshots now match those from arcade flyers.
   * The "virtual palette" hack has been removed; it was an optimization from back when we used 8 bit color and hardware palettes.

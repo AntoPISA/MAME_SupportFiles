@@ -2,20 +2,20 @@
 --------------------------------------
 
 
-New Games supported or promoted from GAME_NOT_WORKING status:
--------------------------------------------------------------
+New Games Supported or Promoted from GAME_NOT_WORKING Status
+------------------------------------------------------------
 Cannonball (Atari, prototype) [Stefan Jokisch] (one ROM is missing from the only known PCB causing some GFX problems)
 Greyhound Trivia (various sets) [Pierpaolo Prazzoli, Chris Hardy]
 Miss Puzzle [David Haywood] (bad ROM causes some gfx glitches)
 VS. Gumshoe [Pierpaolo Prazzoli] (banking fixed, game now works properly)
 
-New Non-Working games / clones supported
-----------------------------------------
+New Non-Working Games/Clones Supported
+--------------------------------------
 GP500 [R. Belmont] (reliminary driver 'Hopeless Hardware' doesn't do anything yet)
 
 
 Source changes:
-----------------------
+---------------
 - Misc changes [Nathan Woods]:
   * Switched input_port_allocate() to use auto_malloc(), removing the need for input_port_free().
   * Added an optional definition for the S_ISDIR macro for when it is not present.

@@ -2,14 +2,14 @@
 ----------------------------------------
 
 
-New Games supported or promoted from GAME_NOT_WORKING status:
--------------------------------------------------------------
+New Games supported or promoted from GAME_NOT_WORKING status
+------------------------------------------------------------
 Gals Hustler [Pierpaolo Prazzoli, David Haywood]
 Hot Rod [GreyRogue, Olivier Galibert] ** you must init the default settings or it won't work properly **
 Monkey Mole Panic [Luca Elia]
 
-New Clones supported or promoted from GAME_NOT_WORKING status:
---------------------------------------------------------------
+New Clones supported or promoted from GAME_NOT_WORKING status
+-------------------------------------------------------------
 Street Fighter the Movie (1.11) [Brian Troha]
 Sorcer Striker (hack?) [Brian Troha]
 Kingdom Grand Prix (hack?) [Brian Troha] (difficult to verify if these are genuine)
@@ -31,24 +31,24 @@ Source changes:
   * Fixed several minor bugs that affected Biofreaks and California Speed.
   * Included several DIP switch fixes from Brian Troha.
   * Fixed input ports for California Speed and SF Rush.
-	* increased default visible area to handle Biofreaks
-	* added speedups to Blitz and Blitz 2000
-	* made sure the IDE controller waits a minimum amount of time before generating an interrupt
-	* the IDE controller features buffer is now filled in completely
-	* fixed code that reads the bus master status register from a word offset
-	* tweaked the Midway PIC handling so that Biofreaks can read its serial number
-	* changed the mechanism for DCS to report buffer full/empty states
-	* added IOASIC support for buffer full/buffer empty interrupts from DCS
-	* added preliminary DCS support for ADSP-2104-based sound
-	* added code to clip the Voodoo vertexes to 1/16th of a pixel increments
-	* Fixed writes to the palette RAM on the Voodoo.
-	* Fixed small errors in the Voodoo rendering when bilinear filtering.
-	* Fixed handling of local alpha blending on the Voodoo
+  * Increased default visible area to handle Biofreaks
+  * Added speedups to Blitz and Blitz 2000
+  * Made sure the IDE controller waits a minimum amount of time before generating an interrupt
+  * The IDE controller features buffer is now filled in completely
+  * Fixed code that reads the bus master status register from a word offset
+  * Tweaked the Midway PIC handling so that Biofreaks can read its serial number
+  * Changed the mechanism for DCS to report buffer full/empty states
+  * Added IOASIC support for buffer full/buffer empty interrupts from DCS
+  * Added preliminary DCS support for ADSP-2104-based sound
+  * Added code to clip the Voodoo vertexes to 1/16th of a pixel increments
+  * Fixed writes to the palette RAM on the Voodoo.
+  * Fixed small errors in the Voodoo rendering when bilinear filtering.
+  * Fixed handling of local alpha blending on the Voodoo
 - STV Improvements [Angelo Salese. Mariusz Wojcieszek].
 - Attempted to improve quizpani sound banking [Pierpaolo Prazzoli].
 - SNES emulation improvements from MESS (used for NSS). Misc changes and improvements from the SNES driver in MESS [Nathan Woods].
 - Fixed Uncio sound frequency with values taken from real pcb [El Condor].
-- YMF271 sound core plus very preliminary hook up in ms32.c (only Desert War makes any sound at all and it doesn't really seem to be anytihng like correct, this is probably due to a combination of z80 communication and banking issues) [R. Belmont]
+- YMF271 sound core plus very preliminary hook up in ms32.c (only Desert War makes any sound at all and it doesn't really seem to be anytihng like correct, this is probably due to a combination of z80 communication and banking issues) [R. Belmont].
 - Made sure each bitmap is aligned on a 16-bit boundary [Brad Oliver].
 - Updated Vball driver to use graphics extracted from origianl PCB [Jarek Burczynski].
 - Fixed viofight to only have one OKI [Jarek Burczynski]:
@@ -62,9 +62,9 @@ Source changes:
   * Adds osd_die() function; a friendlier way to die in some	unexpected fatal way than exit(-1) or [shudder] raise(SIGABRT).
   * Adds #ifndef <headername>_H protection.
   * Adds minor code within #ifdef MESS.
-- TMS9900 inline asm update. The syntax for the inline ppc assembly in the tms9900 core has changed slightly.
+- TMS9900 inline asm update. The syntax for the inline ppc assembly in the tms9900 core has changed slightly [David Haywood].
 - Hooked up Backgrounds in Miss Bubble 2 [Angelo Salese].
 - SCSP updates [Elsemi, R.Belmont].
 - Path for Solaris. Attached is a patch for Solaris that replaces uses of sqrtf and floorf, which aren't available on that platform, with their double-precision counterparts. Please let me know if this is a problem, in which case I can add some special-case #defines for Solaris [Lawrence Gold].
 - Changed Liberator to use Proms, proper PROMS are not dumped however [Stefan Jokisch].
-- Improved Namco Sound core {BUT].
+- Improved Namco Sound core [BUT].

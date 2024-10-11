@@ -2,31 +2,6 @@
 -----------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
-- 02076: [Graphics] (playch10.cpp) playch10 ALL: Playchoice-10 driver needs LEDs added for single-screen BIOS (Vas Crabb)
-- 03790: [Crash/Freeze] (ms32.cpp) gratia, gratiaa: Unhandled priority type f8 (Angelo Salese)
-- 05632: [Crash/Freeze] (nwk-tr.c) racingj2, racingj2j: [debug] Crash shortly after OK
-- 06282: [Crash/Freeze] (snes.cpp) snes [rivaltrfu, rushbeat]: Black Screen (Angelo Salese)
-- 06548: [Crash/Freeze] (namcos21.cpp) winrun, winrun91, winrungp: [debug] Assert when starting emulation (Vas Crabb)
-- 06623: [Interface] Full Screen Brightness/Contrast/Gamma settings not working anymore (smf)
-- 06710: [Crash/Freeze] (snes.cpp) snes [blackhwk]: On the "blackhawk" cartridge ROM, the game didn't start (Angelo Salese)
-- 06791: [Graphics] (splash.cpp) splash and clones: Wrong sprite priority on bonus items (AJR)
-- 06799: [Crash/Freeze] (dynax.cpp) hjingi: Emulation hang (AJR)
-- 06804: [Crash/Freeze] (midyunit.cpp) strkforc: Black screen after ROM check (sjy96525)
-- 06806: [Graphics] Bitmap overlays don't display with bgfx video output [Ryan Holtz]
-- 06810: [Misc.] Memory leak in m6502 CPU cores (AJR)
-- 06811: [Misc.] Memory leak in m6809 CPU core (AJR)
-- 06813: [Misc.] Memory leak in options (AJR)
-- 06816: [Interface] AddressSanitizer: alloc/dealloc mismatch when closing DIP switch menu (Firewave)
-- 06817: [Misc.] (naomi.cpp) mushi2k4: Runtime error: index out of bounds (MetalliC)
-- 06825: [Sound] (gng.cpp) diamond: Missing Level Start Music (AJR)
-- 06831: [Crash/Freeze] (compucolor.cpp) compclr2: AddressSanitizer: FPE with -flop asndware (Firewave)
-- 06845: [Gameplay] (sms.cpp) gamegear [shinfrc2]: Corrupt tiles on first in-game textbox, corrupt audio when loading save (Tafoid)
-- 06847: [Graphics] (hh_tms1k.cpp) bankshot: Missing leftmost column (hap)
-- 06857: [Cheat System] (btoads.cpp) 34010 & 34020: Cheats not working in btoads and other games (O. Galibert)
-
-
 New working machines
 --------------------
 Alphie - The Electronic Robot (patent) [hap]
@@ -261,6 +236,31 @@ German [RafTacker]
 Greek [BraiNKilleRGR]
 
 
+MAMETesters Bugs Fixed (21):
+----------------------------
+- 02076: [Graphics] (playch10.cpp) playch10 ALL: Playchoice-10 driver needs LEDs added for single-screen BIOS (Vas Crabb)
+- 03790: [Crash/Freeze] (ms32.cpp) gratia, gratiaa: Unhandled priority type f8 (Angelo Salese)
+- 05632: [Crash/Freeze] (nwk-tr.c) racingj2, racingj2j: [debug] Crash shortly after OK
+- 06282: [Crash/Freeze] (snes.cpp) snes [rivaltrfu, rushbeat]: Black Screen (Angelo Salese)
+- 06548: [Crash/Freeze] (namcos21.cpp) winrun, winrun91, winrungp: [debug] Assert when starting emulation (Vas Crabb)
+- 06623: [Interface] Full Screen Brightness/Contrast/Gamma settings not working anymore (smf)
+- 06710: [Crash/Freeze] (snes.cpp) snes [blackhwk]: On the "blackhawk" cartridge ROM, the game didn't start (Angelo Salese)
+- 06791: [Graphics] (splash.cpp) splash and clones: Wrong sprite priority on bonus items (AJR)
+- 06799: [Crash/Freeze] (dynax.cpp) hjingi: Emulation hang (AJR)
+- 06804: [Crash/Freeze] (midyunit.cpp) strkforc: Black screen after ROM check (sjy96525)
+- 06806: [Graphics] Bitmap overlays don't display with bgfx video output [Ryan Holtz]
+- 06810: [Misc.] Memory leak in m6502 CPU cores (AJR)
+- 06811: [Misc.] Memory leak in m6809 CPU core (AJR)
+- 06813: [Misc.] Memory leak in options (AJR)
+- 06816: [Interface] AddressSanitizer: alloc/dealloc mismatch when closing DIP switch menu (Firewave)
+- 06817: [Misc.] (naomi.cpp) mushi2k4: Runtime error: index out of bounds (MetalliC)
+- 06825: [Sound] (gng.cpp) diamond: Missing Level Start Music (AJR)
+- 06831: [Crash/Freeze] (compucolor.cpp) compclr2: AddressSanitizer: FPE with -flop asndware (Firewave)
+- 06845: [Gameplay] (sms.cpp) gamegear [shinfrc2]: Corrupt tiles on first in-game textbox, corrupt audio when loading save (Tafoid)
+- 06847: [Graphics] (hh_tms1k.cpp) bankshot: Missing leftmost column (hap)
+- 06857: [Cheat System] (btoads.cpp) 34010 & 34020: Cheats not working in btoads and other games (O. Galibert)
+
+
 Source changes:
 ---------------
 - ygv608.cpp improvements [Agiri]:
@@ -445,7 +445,7 @@ Source changes:
   * Draw background directly into bitmap and include the area above the background buffer.
 - Fixed Z80 disassembly when $ed, $dd and $fd prefixes are used but the instruction is not valid [smf].
 - vg5k: Removed bad ROM dump. [Sylvain Glaize].
--Use C locale for int/float in XML files [Vas Crabb].
+- Use C locale for int/float in XML files [Vas Crabb].
 - Detect attached debugger on OSX before generating trace/breakpoint trap [Vas Crabb].
 - Converted zippath directory to a C++ interface [Vas Crabb].
 - playch10: Exposed countdown LEDs through output system and added internal layout to display them [Vas Crabb].

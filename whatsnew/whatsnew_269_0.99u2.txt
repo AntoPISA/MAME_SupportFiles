@@ -33,8 +33,8 @@ Starspinner [Curt Coder]
 906III Video Poker [Curt Coder]
 
 
-MAMETesters Bugs Fixed
-----------------------
+MAMETesters Bugs Fixed (6):
+---------------------------
 namcos1099u1red [Aaron Giles]
 mcr3099u1yel [Aaron Giles]
 zaxxon088u2gre [Derrick Renaud]
@@ -62,15 +62,15 @@ Source changes:
   * Hooked up IRQ control.
   * Renamed ROMs for both games to include PCB location information.
 - Some improvements to the DECO cassette games [Juergen Buchmueller]: 
-  * 'Treasure Island' graphics ROMs (overlay board) mapped according to findings by debugging the game code.
+  * Treasure Island graphics ROMs (overlay board) mapped according to findings by debugging the game code.
   * Swapped image names for ctislnd2 and ctislnd3 to match the driver names; ctislnd3 is the not yet working set; removed IMPERFECT_GRAPHICS flag.
- - Found bitswap for Zeroize type #3 dongle; found hack to get it running w/o the dongle ROM by debugging the game code; changed year to 1983; removed NOT_WORKING flag.
+  * Found bitswap for Zeroize type #3 dongle; found hack to get it running w/o the dongle ROM by debugging the game code; changed year to 1983; removed NOT_WORKING flag.
 - SHARC/Model 2 updates [Ville Linde]:
   * Reworked the SHARC internal RAM implementation so that multiple instances of the core work.
   * Added data address space.
   * Added coprocessor input and output FIFO's to Model 2.
-  * Updated Konami zr107, gticlub, nwk-tr, hornet to work with the SHARC changes.
-Seibu SPI improvements [Ville Linde]:
+  * Updated Konami zr107, gticlub, nwk-tr, hornet to work with the SHARC changes
+- Seibu SPI improvements [Ville Linde]:
   * Fixed sprite priority issues.
   * Added support for pen-based alpha to sprites and tilemaps. It's currently using fixed alpha table for all games, but this seems to break some games, so it probably isn't correct.
 - Fixed the discrete sound 555 timer modules when using actual DC mode [Derrick Renaud].

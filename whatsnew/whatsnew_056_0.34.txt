@@ -2,8 +2,8 @@
 ----------------------------------------
 
 
-New ROM sets supported (in alphabetical order):
------------------------------------------------
+New Games Supported (in alphabetical order)
+-------------------------------------------
 1942 (set 3) (merged) [Nicola Salmoria]
 4D Warriors [Nicola Salmoria]
 600 (merged with Turtles) [John Dondzila]
@@ -233,30 +233,30 @@ Zig Zag (2 sets merged) [Nicola Salmoria]
 
 NeoGeo Support
 --------------
-- You need a zip file called neogeo.zip in your rompath.  It should contain at least three files:
+- You need a zip file called neogeo.zip in your rompath. It should contain at least three files [Nicola Salmoria]:
 
-neo-geo.rom (128k)
-ng-sfix.rom (128k)
-ng-sm1.rom (128k)
+  neo-geo.rom (128k)
+  ng-sfix.rom (128k)
+  ng-sm1.rom (128k)
 
-Important! The bios zip file must be called neogeo.zip NOT neo-geo.zip, ie, here should be no dash in the middle.
+  Important! The bios zip file must be called neogeo.zip NOT neo-geo.zip, ie, here should be no dash in the middle.
 
-- You also need to place the game zip in your rompath.  If you do not know what 8 character filename the NeoGeo game you want to play has you can type:
+- You also need to place the game zip in your rompath. If you do not know what 8 character filename the NeoGeo game you want to play has you can type [Nicola Salmoria]:
 
-mame -listclones neogeo
+  mame -listclones neogeo
 
-That will list the 8 character zip names of all currently supported games.
+  That will list the 8 character zip names of all currently supported games.
 
 - Optional ROM loading of samples:  You may find games that do not work now due to lack of memory as all the sound roms need to be loaded. Some games will require an extra 16 megabytes of memory to load the sound roms. You can force Mame NOT to load these samples if you specify no sound BEFORE ROM loading takes place. In Dos this means you must type: 
 
   mame game -soundcard 0
 
   If you DO NOT specify soundcard 0 then all sound roms will be loaded and you may experience memory problems.
-- All games work, both in arcade and home mode. If you are stuck with a copyright message or the coin inputs don't work, delete the .CFG and .HI file for that game. This will fix the problem. Super Sidekicks controls stop working after a couple of minutes, though.
-- Sound support is 99% complete. If you experience garbled sound and you get NO GOOD DUMP EXISTS errors, this is caused by bad ROMs, not by imperfect emulation. There is NO WAY to fix that apart from redumping the bad ROMs.
-- If you get a Z80 ERROR message, it means that the sound program ROM is bad. Run the game without sound.
-- A few games have graphics glitches which are not easily fixed (raster line effects).
-- "ROM length mismatch" errors. If you get these, and you are using ROMs larger than the ones MAME expects, then this is not a fatal error and the game will still run fine (provided the ROMs are good, of course). You can "fix" the ROMs yourself just by removing the second half of the file. Note that the sizes used by MAME are sort of arbitrary. In many cases it is difficult to know for sure which size the ROMs are really supposed to be, so we decided to consistently use the smallest possible files. The real ROMs *might* be larger than that, but the extra space is not used by the game - it is either all FF, or contains a verbatim copy of the first half.
+- All games work, both in arcade and home mode. If you are stuck with a copyright message or the coin inputs don't work, delete the .CFG and .HI file for that game. This will fix the problem. Super Sidekicks controls stop working after a couple of minutes, though [Nicola Salmoria].
+- Sound support is 99% complete. If you experience garbled sound and you get NO GOOD DUMP EXISTS errors, this is caused by bad ROMs, not by imperfect emulation. There is NO WAY to fix that apart from redumping the bad ROMs [Nicola Salmoria].
+- If you get a Z80 ERROR message, it means that the sound program ROM is bad. Run the game without sound [Nicola Salmoria].
+- A few games have graphics glitches which are not easily fixed (raster line effects) [Nicola Salmoria].
+- "ROM length mismatch" errors. If you get these, and you are using ROMs larger than the ones MAME expects, then this is not a fatal error and the game will still run fine (provided the ROMs are good, of course). You can "fix" the ROMs yourself just by removing the second half of the file. Note that the sizes used by MAME are sort of arbitrary. In many cases it is difficult to know for sure which size the ROMs are really supposed to be, so we decided to consistently use the smallest possible files. The real ROMs *might* be larger than that, but the extra space is not used by the game - it is either all FF, or contains a verbatim copy of the first half [Nicola Salmoria].
 
 
 These drivers have improved GRAPHICS:
@@ -331,7 +331,7 @@ NOTE: the high score save format has changed in some games to make it cross plat
 
 
 Source changes:
---------------------
+---------------
 - *FINALLY* fixed Commando sometimes not starting. It was a bug in the decode routine, which has been completely rewritten [Nicola Salmoria].
 - Chelnov is now playable! Plus many other fixes to the driver including slowdowns in Karnov [Bryan McPhail].
 - Fixed Blasto [Juergen Buchmueller].

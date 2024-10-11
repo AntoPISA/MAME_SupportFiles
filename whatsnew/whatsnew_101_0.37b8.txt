@@ -2,8 +2,8 @@
 ------------------------------------------
 
 
-New games supported:
---------------------
+New Games Added
+---------------
 (apparel)  Apparel Night (Japan) [Takahiro Nogi]
 (av2mj1)   AV2Mahjong No.1 Bay Bridge no Seijo [Takahiro Nogi]
 (bananadr) Mahjong Banana Dream [BET] (Japan) [Takahiro Nogi]
@@ -63,8 +63,8 @@ New games supported:
 (triplew2) Mahjong Triple Wars 2 (Japan) [Takahiro Nogi]
 (vanilla)  Mahjong Vanilla Syndrome (Japan) [Takahiro Nogi]
 
-New clones supported:
----------------------
+New Clones Added
+----------------
 (atompunk) New Atomic Punk - Global Quest (US) [Bryan McPhail]
 (bbmanwj)  Bomber Man World (Japan) [Bryan McPhail]
 (beezer1)  Beezer (set 2) [Mathis Rosenhauer]
@@ -94,7 +94,7 @@ These drivers have improved SOUND:
 
 
 Source changes:
-----------------
+---------------
 - Major changes to the memory interface. Drivers must use the new MEMORY_READ_START etc. macros, and for 16-bit CPUs the API is completely changed: the new READ16_HANDLER, WRITE16_HANDLER function types must be used for memory handlers. The macros READ_WORD(), WRITE_WORD() etc. are obsolete: handlers must directly access 16-bit wide arrays (use data16_t * instead of the old unsigned char *); always use the new macro COMBINE_DATA() to store data in the arrays correctlyhandling 8-bit wide memory accesses. Use ACCESSING_MSB and ACCESSING_LSB to know if the specified byte is being accessed (necessary for 8-bit wide external hardware). You no longer have to use MRA_BANKx for sparse RAM areas, you can use MRA_RAM just like with the 8-bit games. A handful of drivers haven't beenconverted to the new API yet, and therefore don't work. On startup, they will give the error cpu # uses wrong data width memory handlers! and refuse to start. The cheat system might be broken for 16-bit CPUs (untested) [Juergen Buchmueller].
 - Changes to the tilemap API [Phil Stroffolino]:
   * tilemap_render() is obsolete.

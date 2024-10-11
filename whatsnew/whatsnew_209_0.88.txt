@@ -2,8 +2,8 @@
 --------------------------------------
 
 
-New Games supported or promoted from GAME_NOT_WORKING status:
--------------------------------------------------------------
+New Games supported or promoted from GAME_NOT_WORKING status
+------------------------------------------------------------
 BMC Bowling [Tomasz Slanina] (missing music, some wrong gfx)
 F1 Grand Prix Star II [Brian Troha] (roms redumped)
 Field Combat [Tomasz Slanina] (bad sprite colours)
@@ -14,8 +14,8 @@ Sonic Boom [Charles MacDonald, Nicola Salmoria]
 Tank 8 [Stefan Jokisch]
 Twins [David Haywood] (missing EEPROM)
 
-New Clones supported or promoted from GAME_NOT_WORKING status:
---------------------------------------------------------------
+New Clones supported or promoted from GAME_NOT_WORKING status
+-------------------------------------------------------------
 Astro Blaster (version 2a) [MASH]
 Greyhound trivia (alt questions) [Pierpaolo Prazzoli]
 Tetris (Sega) (2 encrypted sets) [Charles MacDonald, Nicola Salmoria]
@@ -52,9 +52,9 @@ Source changes:
   * scsp.diff: Fixed undersized array causing stack trashing.
   * ssv.diff: Fixed hypreac2 sound loading.
 - I960 and Model 2 update [R.Belmont, ElSemi]:
-  * i960:
+  - i960:
     * Fixed bug in movl (ElSemi).
-  * Model2:
+  - (Model2:
     * Removed hotd and lastbrnx hacks, the i960 fix obsoletes them.
     * Added port 0 switching, player 2 start works in several games now (ElSemi).
     * Added working timer support, including timer IRQs.
@@ -74,7 +74,7 @@ Source changes:
   * MDRV_WATCHDOG_TIME_INIT(time)- Initializes the watchdog in MACHINE_DRIVER_ time is the time in seconds before a forced reset.
   * New function to enable/disable the watchdog in game. watchdog_enable(0 or 1) - used to 0=disable or !0=enable.
   * Made a macro that calculates the pulse time of a 74LS122 or LS123. TIME_OF_74LS123(r,c) r is in Ohms.  c is in Farads.c must be greater then 1000pF to use this function.
--[no]skip_validitychecks:
+- [no]skip_validitychecks:
   * Forces MAME to skip doing the code validity checks. The default is OFF (-noskip_validitychecks).This new option will default to doing the test and force you to confirm you do not want to use it. This way users can test their submissions easily and then speed things up when confirmed ok. NOTE: DO NOT disable the checks when submitting code.
 - Fixed voodoo code broken by cleanup in u3 [Aaron Giles].
 - Fixed qdrmfgp broken by cleanup in u3 [Olivier Galibert].

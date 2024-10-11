@@ -2,38 +2,38 @@
 --------------------------------------
 
 
-New Games supported or promoted from GAME_NOT_WORKING status:
--------------------------------------------------------------
+New Games Supported or Promoted from GAME_NOT_WORKING Status
+------------------------------------------------------------
 Dodgem [Mike Coates, Pierpaolo Prazzoli] (no sound, the video hardware emulation was also rewritten for this driver, its quite slow now but more accurate)
 Lady Frog [Tomasz Slanina] (old 'ladyfrog' set (not working) renamed to 'roldfrog' (Return Of Lady Frog))
 Main Event (SNK) [Tomasz Slanina] (controls probably need work)
 Sundance [Stefan Jokisch] (controls now emulated)
 
-New Clones supported or promoted from GAME_NOT_WORKING status:
---------------------------------------------------------------
+New Clones Supported or Promoted from GAME_NOT_WORKING Status
+-------------------------------------------------------------
 Cloak & Dagger (International Versions, Spanish, French, German) [Aaron Giles]
 Dig Dug (newer Atari rev) [Aaron Giles]
 Lunar Battle (prototype, later) (clone of gravitar) [Aaron Giles]
-Route X (bootleg)
+Route X (bootleg) [David Haywood]
 Sub Hunter (clone of depthch) [Stefan Jokisch]
 Tempest (rev ?) [Aaron Giles]
 
-New Non-Working games / clones supported
-----------------------------------------
+New Non-Working Games/Clones Supported
+--------------------------------------
 Gorkans [Tomasz Slanina] (gameplay works but there are no good gfx roms)
 Marine Date [insideoutboy] (collisions not emulated + various other issues)
-Task Force Harrier (Japan)
-Various Sf2 bootlegs (Please note, I have no intention of fixing these, however if you want to try and think you can do it in a clean way then feel free)
+Task Force Harrier (Japan) [David Haywood]
+Various Sf2 bootlegs [David Haywood] (Please note, I have no intention of fixing these, however if you want to try and think you can do it in a clean way then feel free)
 Whizz [Tomasz Slanina] (main program ROM appears to be bad, maybe a gfx ROM too)
 
 
 Source changes:
 ---------------
-- TESTDRIVERS still enabled (see note for 0.74u2).
+- TESTDRIVERS still enabled (see note for 0.74u2) [David Haywood].
 - Fixed bug in the time accounting for the V60 which was causing Outrunners to run with flickering sprites and slow music [Aaron Giles].
 - Fixed another V60 bug introduced in 0.74u2 which broke the v70 games (and further broke Outrunners) [Kobat, Olivier Galibert].
 - Fixed some bugs introduced with the timer system changes a while back [Aaron Giles]
-- Fixes Exterminator and the Atari polygon games. Hopefully doesn't break anything in the process:
+- Fixes Exterminator and the Atari polygon games. Hopefully doesn't break anything in the process [David Haywood]:
   * Changed scanline timing to use floor() to get consistent results.
   * Fixed bug in time computation if requesting a scanline in the next frame.
   * Removed 4x executes per loop which screwed up timing.

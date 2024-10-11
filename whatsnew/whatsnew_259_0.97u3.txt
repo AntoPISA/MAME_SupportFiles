@@ -14,8 +14,8 @@ Raiden Fighters (Dream Island co. license) [Corrado Tomaselli]
 Raiden Fighters (US, Fabtek License) [Chris Hardy]
 
 
-MAMETesters Bugs Fixed
-----------------------
+MAMETesters Bug Fixed (1):
+--------------------------
 irobot058gre [MASH]
 
 
@@ -23,7 +23,7 @@ Source changes:
 ---------------
 - Added some sanity checking, and changed a printf() to logerror() to intelfsh.c [Nathan Woods].
 - Made the DRC PowerPC core compilable when HAS_PPC403 is 0 [Nathan Woods].
-Improvements to Sega Model 3 [Ville Linde]:
+- Improvements to Sega Model 3 [Ville Linde]:
   * Fixed a bug in the MPC106 emulation -> Star Wars Trilogy and Sega.
   * Rally 2 work.
 - Improvements to the PowerPC cores [Ville Linde]:
@@ -48,7 +48,7 @@ Improvements to Sega Model 3 [Ville Linde]:
   * Fixed disassembly of gte instructions.
   * Fixed dismips.mak.
 - Did another overhaul on the PPC603 counters (timebase should increment once every four core clock cycles and decrementer should decrement once every four bus cycles) [Ville Linde].
-Namco System 2 updates [Brian Troha]:
+- Namco System 2 updates [Brian Troha]:
   * Added 'Final Lap' road clut prom to all Final Lap sets.
   * Made 'Final Lap 3 World' the parent, new clone is finalp3j.
   * Added "Final Lap's' road clut to 'Four Trax' (marked as bad_dump).

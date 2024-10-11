@@ -2,8 +2,8 @@
 --------------------------------------
 
 
-New Games supported or promoted from GAME_NOT_WORKING status:
--------------------------------------------------------------
+New Games supported or promoted from GAME_NOT_WORKING status
+------------------------------------------------------------
 1945k III (sample banking needs adding)
 Agress [David Haywood] (some video issues)
 Dynagears [David Haywood, Tomasz Slanina] (todo: clean up video emulation a bit (uses SSV vidhrdw in a strange way))
@@ -16,8 +16,8 @@ Time Crisis (Version A) [Phil Stroffolino] (some gun aiming problems? (or is it 
 Tylz (prototype) [ENGCameraman] (some sound issues)
 Various Megatech sets [David Haywood] (note megatech is still marked as NON-WORKING anyway due to bios issues)
 
-New Clones supported or promoted from GAME_NOT_WORKING status:
---------------------------------------------------------------
+New Clones supported or promoted from GAME_NOT_WORKING status
+-------------------------------------------------------------
 Continental Circus (US set 2)
 
 New Non-Working games / clones supported
@@ -27,19 +27,19 @@ Racing Beat [David Graves] (serious video emulation issues (raster irq?))
 
 
 Source changes:
-----------------------
+---------------
 - 6502 cycle count fix [Stefan Jokisch].
 - Some cleanups to Flower driver [Pierpaolo Prazzoli].
 - Fixed 4enraya colours [Pierpaolo Prazzoli].
 - i960: Added a bunch of fp opcodes, stylistic fixes [Olivier Galibert].
 - Small VC compile fixes [Bryan McPhail].
 - Fixed S22 crash [R. Belmont].
-- i386 improvements [Nathan Woods]
-  * Implemented zeroing out A20 lines
-  * Implemented state save support
-  * Unknown instructions now disassemble as '???'
-  * Implemented XLAT opcode
-  * DAA fixes
+- i386 improvements [Nathan Woods]:
+  * Implemented zeroing out A20 lines.
+  * Implemented state save support.
+  * Unknown instructions now disassemble as '???'.
+  * Implemented XLAT opcode.
+  * DAA fixes.
 - Fixed the MEM_DUMP debug code [Nathan Woods].
 - Added MC68008 support to the MC68000 core [Curt Coder].
 - Simulated protection in FlyBoy [MASH].

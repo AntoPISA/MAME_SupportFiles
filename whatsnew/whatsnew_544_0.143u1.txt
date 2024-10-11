@@ -2,8 +2,25 @@
 -----------------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
+New Clones Added
+----------------
+Pit Boss Megatouch II (9255-10-01 ROD, Standard version) [Brian Troha, The Dumping Union]
+Galivan - Cosmo Police (12/26/1985) [Stefan Lindberg, The Dumping Union]
+Missile Command (rev 3) [Joe Barbara]
+
+New Games Marked as GAME_NOT_WORKING
+------------------------------------
+Tap-a-Tune [Mariusz Wojcieszek, Phil Bennett, R. Belmont]
+Asian Dynamite (Dynamite Deka EX) [The Dumping Union]
+Shooting Love 2007 [The Dumping Union]
+Akatsuki Blitzkampf Ausf Achse [The Dumping Union]
+Illvelo (Illmatic Envelope) [The Dumping Union]
+Pokasuka Ghost [The Dumping Union]
+Bubble System BIOS [Guru, Angelo Salese]
+
+
+MAMETesters Bugs Fixed (9):
+---------------------------
 - 00335: [DIP/Input] quasar: 3 players start mapped even though it is a 2 player game (Tafoid)
 - 00042: [DIP/Input] oigas: Problem with keyboard control (Tafoid)
 - 04412: [Documentation] dynabb: Year should be 1997.
@@ -13,23 +30,6 @@ MAMETesters Bugs Fixed
 - 04248: [Crash/Freeze] All sets in naomi.c: Hang/Black Screen attempting to enter Service Mode (Olivier Galibert)
 - 04407: [Crash/Freeze] jdredd, jdreddb: After splash screens, the game goes to black screen (micko)
 - 04402: [Sound] Drivers using BSMT2000 Sound: Sound is missing or corrupt (micko)
-
-
-New clones added
-----------------
-Pit Boss Megatouch II (9255-10-01 ROD, Standard version) [Brian Troha, The Dumping Union]
-Galivan - Cosmo Police (12/26/1985) [Stefan Lindberg, The Dumping Union]
-Missile Command (rev 3) [Joe Barbara]
-
-New games marked as GAME_NOT_WORKING
-------------------------------------
-Tap-a-Tune [Mariusz Wojcieszek, Phil Bennett, R. Belmont]
-Asian Dynamite (Dynamite Deka EX) [The Dumping Union]
-Shooting Love 2007 [The Dumping Union]
-Akatsuki Blitzkampf Ausf Achse [The Dumping Union]
-Illvelo (Illmatic Envelope) [The Dumping Union]
-Pokasuka Ghost [The Dumping Union]
-Bubble System BIOS [Guru, Angelo Salese]
 
 
 Source changes:
@@ -88,7 +88,7 @@ Source changes:
  * Set IF after the instruction following STI.
  * Reset IF after MOV SS or POP SS for one instruction.
  * Fixed LSL instruction when modrm < 0xc0.
-- NVRAM - in case of multiple bioses, system NVRAM will be saved in form systemname_biosnum.nv in cases when non-default bios is used. For default bios selection all stay the same [Miodrag Milanovic] .
+- NVRAM: In case of multiple bioses, system NVRAM will be saved in form systemname_biosnum.nv in cases when non-default bios is used. For default bios selection all stay the same [Miodrag Milanovic] .
 - Various ROM name fixes [Kevin Eshbach]:
   * Corrects Super Zaxxon ROM names.
   * Updates the name of the Bally Sente sound board ROM and adds the date code.

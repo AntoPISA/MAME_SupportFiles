@@ -3,8 +3,8 @@
 Note: the CPU cores are still in a state of flux. Most of the problems in 0.35b1 have been fixed, however some still remain (e.g. Gauntlet doesn't accept coins and Exterminator crashes).
 
 
-New games supported:
---------------------
+New games supported
+-------------------
 (3wonders) Three Wonders (US) [Paul Leaman]
 (abaseb)   Atari Baseball (set 1) [Brad Oliver]
 (aerofgt)  Aero Fighters (World / USA + Canada / Korea / Hong Kong / Taiwan) (newer hardware) [Nicola Salmoria]
@@ -30,8 +30,8 @@ New games supported:
 (ssideki4) Super Sidekicks 4 - Ultimate 11 [Nicola Salmoria]
 (victroad) Victory Road [Jarek Parchanski]
 
-New clones supported:
----------------------
+New clones supported
+--------------------
 (3wonderj) Wonder 3 (Japan) [Paul Leaman]
 (abaseb2)  Atari Baseball (set 2) [Brad Oliver]
 (alieninv) Alien Invasion Part II [Lee Taylor]
@@ -115,19 +115,17 @@ Changes to the main program:
 - [DOS] The key to change frameskip is now F9 instead of F8 [Nicola Salmoria].
 
 
-Source:
--------
+Source changes:
+---------------
 - CVSD emulation, used for speech in Sinistar and in the 34010 games (Smash TV etc.) [Larry Bank, Alex Pasadyn].
 - Fixed some bugs in the I8039 emulation [Brian Stern].
 - NEC uPD7759 emulation. This is used by TMNT, System 16, and others [Juergen Buchmueller, Mike Balfour, Howie Cohen].
-- New 68000 C core. For testing purposes, this is also being used in the DOS version instead of the asm core [Karl Stenerud].
-
-  Differences:
-
-  1. Faster. This code is, barring RAM fetch time, almost twice as fast as the existing C core in MAME.  I've done extensive speed profiling on both engines.  The only problem now is the slow memory access in MAME due to bankswitching et al.
-  2. Emulation more correct. I found many bugs in the MAME engine (and many, many more in mine for that matter) when I pitted them head-to-head. I have run random instructions from each opcode class at least 10 million times, comparing the resultant CPU states, and have left it running random instructions for 1 billion iterations. In every case, I have adhered to the specs defined in M68000PM/AD REV. 1.
-  3. Disassembler is correct. The current M68000 disassembler in mame has a tendency to disassemble instructions that have an invalid EA mode.
-  4. Cycle counting is 99.9% correct.  The only instructions which don't have correct cycle counts are divs, divu, muls, mulu, and they're not worth counting correctly. (I'm not about to waste emulation time counting 0-1 and 1-0 sequences).
-  5. > 32 bit friendly.  I've taken care to ensure maximum portability without sacrificing speed. The result is conditional compiling dependant on your architecture.  I've also implemented and tested a compatible solution for architectures that lack 8, 16, or 32 bit signed storage types.
-  6. The code is carefully laid out to be readable (I beg to differ - NS).
+- New 68000 C core. For testing purposes, this is also being used in the DOS version instead of the asm core [Karl Stenerud]:
+  - Differences:
+  * Faster. This code is, barring RAM fetch time, almost twice as fast as the existing C core in MAME.  I've done extensive speed profiling on both engines.  The only problem now is the slow memory access in MAME due to bankswitching et al.
+  * Emulation more correct. I found many bugs in the MAME engine (and many, many more in mine for that matter) when I pitted them head-to-head. I have run random instructions from each opcode class at least 10 million times, comparing the resultant CPU states, and have left it running random instructions for 1 billion iterations. In every case, I have adhered to the specs defined in M68000PM/AD REV. 1.
+  * Disassembler is correct. The current M68000 disassembler in mame has a tendency to disassemble instructions that have an invalid EA mode.
+  * Cycle counting is 99.9% correct.  The only instructions which don't have correct cycle counts are divs, divu, muls, mulu, and they're not worth counting correctly. (I'm not about to waste emulation time counting 0-1 and 1-0 sequences).
+  * > 32 bit friendly.  I've taken care to ensure maximum portability without sacrificing speed. The result is conditional compiling dependant on your architecture.  I've also implemented and tested a compatible solution for architectures that lack 8, 16, or 32 bit signed storage types.
+  * The code is carefully laid out to be readable (I beg to differ - NS).
 - Z8000 emulator [Juergen Buchmueller].

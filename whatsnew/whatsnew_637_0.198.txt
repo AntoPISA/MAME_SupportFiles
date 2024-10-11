@@ -2,24 +2,6 @@
 -----------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
-- 04539: [Misc.] (stv.cpp) dnmtdeka, diehard: Illegal Sprite Mode - Contact MAMEDEV (Angelo Salese)
-- 05484: [Crash/Freeze] (jpmsys5sw.cpp) Various jpmsys5sw.c sets: [debug] Assert in Debug (Vas Crabb)
-- 06543: [Crash/Freeze] (segapico.cpp) All sets in segapico.cpp: [debug] Assert when starting emulation (Vas Crabb)
-- 06934: [Color/Palette] (x1.cpp) x1turbo40: Colors missing in all X1 Turbo (CZ-862C) software (Vas Crabb)
-- 06948: [Media Support] (ptcsol.cpp) sol20 [basic5]: Program does not start after loading (Robbbert)
-- 06954: [Core] (coco3.cpp) coco3dw1: Emulated system crashes when trying to access floppy disk image (David Ladd)
-- 06958: [Crash/Freeze] (attache.cpp) Fatal error: No screen specified for device ':crtc', but multiple screens found (Ivan Vangelista)
-- 06960: [Crash/Freeze] (qtsbc.cpp) qtsbc: Exception when using certain -rs232 slot options (AJR)
-- 06962: [Crash/Freeze] (atlantis.cpp) Fatal error: No screen specified for device ':zeus2', but multiple screens found (Ivan Vangelista)
-- 06963: [Crash/Freeze] (ms6102.cpp) Fatal error: No screen specified for device ':i8275_1', but multiple screens found (Ivan Vangelista)
-- 06964: [Crash/Freeze] (apollo.cpp) dsp3000, dsp3500, dsp5500: Exception when using most -rs232 options (Vas Crabb)
-- 06966: [DIP/Input] (missile.cpp) missile: DIP switch “Trackball Size” label reversed and R8 dip switch graphic inverted (Tafoid)
-- 06971: [Graphics] (1945kiii.cpp) 1945kiiio, 1945kiiin, 1945kiii: Enemy damage flashes missing (AJR)
-- 06982: [Gameplay] (coco12.cpp) Other Coco related drivers: 1bit audio DAC issue (AJR)
-
-
 New working machines
 --------------------
 Batman: The Animated Series (Tiger handheld) [hap, Sean Riddle]
@@ -212,6 +194,24 @@ Japanese [Katsuhiko Kagami]
 Korean [Neius]
 Portuguese (Brazil) [Wellington Uemura]
 Spanish [A. Viloria]
+
+
+MAMETesters Bugs Fixed (14):
+----------------------------
+- 04539: [Misc.] (stv.cpp) dnmtdeka, diehard: Illegal Sprite Mode - Contact MAMEDEV (Angelo Salese)
+- 05484: [Crash/Freeze] (jpmsys5sw.cpp) Various jpmsys5sw.c sets: [debug] Assert in Debug (Vas Crabb)
+- 06543: [Crash/Freeze] (segapico.cpp) All sets in segapico.cpp: [debug] Assert when starting emulation (Vas Crabb)
+- 06934: [Color/Palette] (x1.cpp) x1turbo40: Colors missing in all X1 Turbo (CZ-862C) software (Vas Crabb)
+- 06948: [Media Support] (ptcsol.cpp) sol20 [basic5]: Program does not start after loading (Robbbert)
+- 06954: [Core] (coco3.cpp) coco3dw1: Emulated system crashes when trying to access floppy disk image (David Ladd)
+- 06958: [Crash/Freeze] (attache.cpp) Fatal error: No screen specified for device ':crtc', but multiple screens found (Ivan Vangelista)
+- 06960: [Crash/Freeze] (qtsbc.cpp) qtsbc: Exception when using certain -rs232 slot options (AJR)
+- 06962: [Crash/Freeze] (atlantis.cpp) Fatal error: No screen specified for device ':zeus2', but multiple screens found (Ivan Vangelista)
+- 06963: [Crash/Freeze] (ms6102.cpp) Fatal error: No screen specified for device ':i8275_1', but multiple screens found (Ivan Vangelista)
+- 06964: [Crash/Freeze] (apollo.cpp) dsp3000, dsp3500, dsp5500: Exception when using most -rs232 options (Vas Crabb)
+- 06966: [DIP/Input] (missile.cpp) missile: DIP switch “Trackball Size” label reversed and R8 dip switch graphic inverted (Tafoid)
+- 06971: [Graphics] (1945kiii.cpp) 1945kiiio, 1945kiiin, 1945kiii: Enemy damage flashes missing (AJR)
+- 06982: [Gameplay] (coco12.cpp) Other Coco related drivers: 1bit audio DAC issue (AJR)
 
 
 Source changes:

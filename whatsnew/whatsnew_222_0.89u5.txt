@@ -2,8 +2,8 @@
 ----------------------------------------
 
 
-New Games / Clones supported or promoted from GAME_NOT_WORKING status:
-----------------------------------------------------------------------
+New Games / Clones supported or promoted from GAME_NOT_WORKING status
+---------------------------------------------------------------------
 Flying Ball (Deco Cassette) [Juergen Buchmueller]
 Leader Board Golf (Arcadia) [Mariusz Wojcieszek, Ernesto Corvi]
 Ninja Mission (Arcadia) [Mariusz Wojcieszek, Ernesto Corvi]
@@ -37,20 +37,20 @@ Source changes:
   * Added macros for pushfd() and popfd().
 - Added 'TRACEOVER' support to debugger (see help) [Nathan Woods].
 - New Debugger Commands [Aaron Giles]:
-  * snap [<filename>] - takes a snapshot and saves it to the given <filename>; if <filename> is omitted, this is equivalent to hitting F12.
-  * gi[int] [<irqline>] - executes until the current CPU takes the interrupt line specified by <irqline>; if <irqline> is omitted, executes until any IRQ is taken on the current CPU. This has been mapped to F7 as well.
-  * gv[blank] - executes until the next VBLANK; this is useful for stepping frame-by-frame from within the debugger. This has been mapped to F8.
+  * snap [<filename>]: takes a snapshot and saves it to the given <filename>; if <filename> is omitted, this is equivalent to hitting F12.
+  * gi[int] [<irqline>]: executes until the current CPU takes the interrupt line specified by <irqline>; if <irqline> is omitted, executes until any IRQ is taken on the current CPU. This has been mapped to F7 as well.
+  * gv[blank]: executes until the next VBLANK; this is useful for stepping frame-by-frame from within the debugger. This has been mapped to F8.
 - Various Improvements [Sebastien Volpe]:
-  galpani3:
+  - galpani3:
   * Palette, inputs, sound hooked up, backgounds 'decoded' (RLE).
-  jchan:
+  - jchan:
   * Slight cleanup, sound hooked up, tile area identified.
   * jchan2 now passes initial checks.
-  kaneko16 (bonkadv):
+  - kaneko16 (bonkadv):
   * Priorities corrected according Luca's scheme & sound 'improvements' (both banking and ROM loading).
   * Game name updated.
   * Interrupts scheduling change (not correct, but somewhat improved, see comment) and as a consequence, fake region dsw is removed.
-  srmp6:
+  - srmp6:
   * New driver, Seta System 12?
   * Many things todo, gfx decoding would be nice!
   toki:

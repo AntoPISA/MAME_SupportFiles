@@ -2,20 +2,30 @@
 ----------------------------------------
 
 
-New Clones supported or promoted from GAME_NOT_WORKING status
--------------------------------------------------------------
-Invasion (clone of invaders) [Pierpaolo Prazzoli]
-Super Earth Invasion (set 2) [David Haywood]
-Ninja Combat (set 2)
+New BIOS Added
+--------------
+(hng64)    Hyper NeoGeo 64 Bios [David Haywood]
 
-New Non-Working games / clones supported
-----------------------------------------
-Air Rescue (uses an unemulated math DSP and may also require emulation of two system32 boards	at once, not an easy task)
-Buriki One (Hyper NeoGeo 64) (very preliminary driver, loads and decodes the gfx, attempts to run some of the code. No Video or Sound emulation is done.  For now the GFX can be viewed with F4)
+New Games Added
+---------------
+(arescue)  Air Rescue [David Haywood] (1])
+(buriki)   Buriki One [Guru] (2)
+(searthia) Super Earth Invasion (set 2) [David Haywood]
+
+New Clones Added
+----------------
+(invasion) Invasion [Pierpaolo Prazzoli]
+(ncombata) Ninja Combat (set 2) [David Haywood]
+
+
+Notes:
+------
+[1]: Uses an unemulated math DSP and may also require emulation of two system32 boards	at once, not an easy task.
+[2]: Very preliminary driver, loads and decodes the gfx, attempts to run some of the code. No Video or Sound emulation is done.  For now the GFX can be viewed with F4).
 
 
 Source changes:
-----------------------
+---------------
 - Improved Discrete Sound System / Sound in 'Hit Me' [Aaron Giles]:
   * New node type DISCRETE_LOGIC_DFLIPFLOP.
   * Changed the way multichannel output is done; affects some existing drivers.

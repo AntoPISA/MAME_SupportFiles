@@ -3,34 +3,58 @@
 Mainly a bugfix release for problems discovered with new features in 0.68, it also further clears the backlog. Put together by David Haywood. If you submit changes please make sure they're up to date with the latest source code, if not it means more work for us in sorting them out. Several people have asked about the SHA1Merger program for updating their own drivers, if you need this it should be on www.mame.net within a few hours of this release. Note, we are aware of some problems with the Direct 3D core which cause some games to function incorrectly (Rolling Thunder title screen, Hard Drivin' Dashboard, Puyo Puyo title screen raster etc.) if you have problems with games when using -d3d try them without before reporting a bug. (although please do report games broken with -d3d if you find them but make sure to specify the problem is with -d3d). The cause of this problem seems to lie somewhere in result = IDirect3D7_CreateDevice(d3d7, &IID_IDirect3DHALDevice, back_surface, &d3d_device7); however we don't know how to fix this nor why it happens, could the real problem be elsewhere?
 
 
-New games supported:
---------------------
-Broadwalk Casino / Atlantic City Action [Dave Widel] (this doesn't appear to be a gambling game)
-Naughty Mouse [Dave Widel]
-Paradise [Luca Elia] (there seems to be a problem with the hi-score system)
-Wolf Pack (prototype) [Stefan Jokisch] (graphic emulation might not be perfect, no sound)
+New Games Added
+---------------
+(bwcasino) Boardwalk Casino [Dave Widel] (1)
+(friskyta) Frisky Tom (set 2) [David Haywood]
+(gutsn)    Guts'n (Japan) [Paul Priest]
+(kof95a)   The King of Fighters '95 (set 2) [Jarek Burczynski]
+(kyrosj)   Kyros No Yakata (Japan) [David Haywood]
+(newpuc2b) Newpuc2 (set 2) [Dave Widel]
+(nmouse)   Naughty Mouse (set 1) [Dave Widel]
+(ozon1)    Ozon I [Pierpaolo Prazzoli]
+(paradise) Paradise [Luca Elia]] (2)
+(tunhunt)  Tunnel Hunt [David Haywood] (3)
+(wcbowl)   World Class Bowling (v1.66) [Brian Troha]
+(wolfpack) Wolf Pack (prototype) [Stefan Jokisch] (4)
 
-New clones supported
---------------------
-Arkanoid (US, older) [Stephane Humbert]
-Chopper [US set 2 & set 3]
-Falcon (Phoenix bootleg) [Smitdogg]
-Flash Point (Japan, bootleg) (no, these have nothing to do with the system16 rewrite)
-GI Joe (Japan) [GMB]
-Labyrinth Runner (World Ver. K)
-Make Trax (set 2) [Dave Widel]
-Metamorphic Force (Japan JAA) [GMB]
-Mr. Do's Castle (older) [Lee Taylor]
-NewPuc2 (hack) [Dave Widel] (this hack was common in the arcades, it has intermissions between each maze and a slot machine every 3 mazes)
-Police Trainer 1.3B (Sharpshooter Hardware) [Brian Troha] (fails ROM check, does so on original hardware too)
-Quartet 2 (Japan)
-Rallys (bootleg? of Spectar)
-Route 16 (set 2)
-Street Fighter 2 (USA 911101) [David Haywood]
-Targ (cocktail?)
-The Main Event (2 Players ver. X)
-Tunnel Hunt (Atari Original) [David Haywood] (this is now the parent, old set is tunhuntc)
-World Class Bowling (v1.66, v1.65) [Brian Troha] (v1.66 is now the parent)
+New Clones Added
+----------------
+(acitya)   Atlantic City Action [Dave Widel]
+(ambusht)  Ambush (Tecfri) [David Haywood]
+(arknoiuo) Arkanoid (US, older) [Stephane Humbert]
+(choppera) Chopper I (US set 2) [Robert Hunt]
+(chopperb) Chopper I (US set 3) [Robert Hunt]
+(docastlo) Mr. Do's Castle (older) [Lee Taylor]
+(falcon)   Falcon [Smitdogg]
+(fpointbj) Flash Point (Japan, bootleg) [David Haywood] (5)
+(gijoej)   GI Joe (Japan) [GMB]
+(ichidntb) Ichidant-R (Puzzle & Action 2) (Japan) (bootleg) [David Haywood]
+(labyrunk) Labyrinth Runner (World Ver. K) [David Haywood]
+(mainev2p) The Main Event (2 Players ver. X) [Stephane Humbert]
+(maketrxb) Make Trax (set 2) [Dave Widel]
+(metamrpj) Metamorphic Force (Japan ver JAA) [GMB]
+(newpuc2)  Newpuc2 [Dave Widel] (6)
+(nmouseb)  Naughty Mouse (set 2) [Dave Widel]
+(plctr13b) Police Trainer (Rev 1.3B) [Brian Troha] (7)
+(quartt2j) Quartet 2 (Japan) [MASH]
+(rallys)   Rallys (bootleg?) [MASH]
+(route16a) Route 16 (set 2) [MASH]
+(sf2uk)    Street Fighter II - The World Warrior (US 911101) [David Haywood]
+(targc)    Targ (cocktail?) [MASH]
+(wcbwl165) World Class Bowling (v1.65) [Brian Troha] (8)
+
+
+Notes:
+------
+(1): This doesn't appear to be a gambling game.
+(2): There seems to be a problem with the hi-score system.
+(3): v1.66 is now the parent.
+(4): Graphic emulation might not be perfect, no sound.
+(5): No, these have nothing to do with the system16 rewrite.
+(6): This hack was common in the arcades, it has intermissions between each maze and a slot machine every 3 mazes.
+(7): Fails ROM check, does so on original hardware too.
+(8): This is now the parent, old set is tunhuntc.
 
 
 Source changes:

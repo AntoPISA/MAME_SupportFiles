@@ -2,20 +2,37 @@
 --------------------------------------
 
 
-New Games supported or promoted from GAME_NOT_WORKING status:
--------------------------------------------------------------
-Radikal Bikers [Aaron Giles]
-Surf Planet [Aaron Giles]
-Wiggie Waggie [David Haywood]
-Zintrick (hack / bootleg) (his was thought to be a prototype but actually appears to be a from an unofficial bootleg made from the CD version (see notes in driver), supported for reference incase a real prototype shows up one day)
+New BIOS added
+--------------
+(atpsx)     Atari PSX [smf]
 
-New Non-Working games / clones supported
-----------------------------------------
-Lethal Enforcers [R. Belmont] (hardware is an ugly kludge with an 8-bit CPU using 16-bit video chips, as a result there is a lot of strange banking going on making it very difficult to emulate)
+New games/machines supported
+----------------------------
+(cbaj)      Cool Boarder Arcade Jam [Guru]
+(lethalen)  Lethal Enforcers (US ver UAE) [R. Belmont]
+(psyfrcex)  Psychic Force EX (?) [David Haywood]
+(shngmtkb)  Shanghai Matekibuyuu [David Haywood]
+(wiggie)    Wiggie Waggie [David Haywood]
+(zintrckb)  Zintrick / Oshidashi Zentrix (hack / bootleg) [David Haywood] (1)
+
+New Non-Working game/clone supported
+------------------------------------
+(lethalej)  Lethal Enforcers (Japan ver JAD) [R. Belmont] (2)
+
+New Promoted Games from GAME_NOT_WORKING status
+-----------------------------------------------
+(radikalb ) Radikal Bikers [Aaron Giles]
+(surfplnt)  Surf Planet [Aaron Giles]
+
+
+Notes:
+------
+(1): His was thought to be a prototype but actually appears to be a from an unofficial bootleg made from the CD version (see notes in driver), supported for reference incase a real prototype shows up one day.
+(2): Hardware is an ugly kludge with an 8-bit CPU using 16-bit video chips, as a result there is a lot of strange banking going on making it very difficult to emulate.
 
 
 Source changes:
-----------------------
+---------------
 - Large Namco update [Nicola Salmoria]:
   * pacland: Fixed sprite RAM, it was too big and included normal program RAM, causing sprites to be drawn twice. Fixed IRQ enable. Fixed tilemap scroll offsets and sprite positions. Accurate emulation of tile/sprite priority (including fix of bugs introduced when the driver was converted to tilemaps) and sprite visibility area. pacland36b16 is not a bug - colors match the real game.
   * Added SOUND_NAMCO_CUS30 for better documentation (alias for the standard SOUND_NAMCO).

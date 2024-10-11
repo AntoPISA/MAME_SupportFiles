@@ -2,21 +2,13 @@
 ---------------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
-- 03964: [Documentation] shangonro: Year is wrong (Smitdogg)
-- 03969: [Crash/Freeze] All sets and drivers using OKI audio: Eventual crash using Save States (Aaron Giles)
-- 03977: [Graphics] tceptor2: Graphics are incorrect, the top and bottom roads are displayed with grids and it looks like there should be 4 instead of 2. (Phil Bennett)
-- 03981: [Crash/Freeze] bosco, xevious and clones: Game reboots or hangs (Alex Jackson)
-
-
-New games added or promoted from NOT_WORKING status
+New Games Added or Promoted from NOT_WORKING Status
 ---------------------------------------------------
 Pacman - 25th Anniversary Edition (V2.0) [Sara S.]
 The Last Starfighter (prototype) [Phil Bennett, Ken Van Mersbergen]
 Air Race (prototype) [Phil Bennett, Ken Van Mersbergen]
 
-New clones added
+New Clones Added
 ----------------
 Clash-Road (Data East license) [Tirino 73]
 Quizard v1.2 [Team Europe, The Dumping Union]
@@ -28,7 +20,7 @@ Area 88 (Japan Resale Ver.) [Team Japump]
 Ms. Pac-Man/Galaga - 20th Anniversary Class of 1981 Reunion (V1.00) [Mark F.]
 Ms. Pac-Man/Galaga - 20th Anniversary Class of 1981 Reunion (V1.03) [Sara S.]
 
-New games marked as GAME_NOT_WORKING
+New Games Marked as GAME_NOT_WORKING
 ------------------------------------
 Mini Boy 7 (set 1) [Roberto Fresca, Siftware]
 Mega Double Poker (conversion kit) [Roberto Fresca, ChrisQC, Smitdogg]
@@ -36,9 +28,17 @@ Magic Train [Roberto Fresca]
 Gundam Seed: Federation vs. Z.A.F.T. (SED1 Ver. A) [Guru, Smitdogg]
 
 
+MAMETesters Bugs Fixed (4):
+---------------------------
+- 03964: [Documentation] shangonro: Year is wrong (Smitdogg)
+- 03969: [Crash/Freeze] All sets and drivers using OKI audio: Eventual crash using Save States (Aaron Giles)
+- 03977: [Graphics] tceptor2: Graphics are incorrect, the top and bottom roads are displayed with grids and it looks like there should be 4 instead of 2. (Phil Bennett)
+- 03981: [Crash/Freeze] bosco, xevious and clones: Game reboots or hangs (Alex Jackson)
+
+
 Source changes:
 ---------------
-- raiden2.c: Add missing "VOICE2" sample ROM to Raiden 2 sets where it was missing.  Corrected ROM names for MASK roms soldered to the PCB [Brian Troha].
+- raiden2.c: Add missing "VOICE2" sample ROM to Raiden 2 sets where it was missing. Corrected ROM names for MASK roms soldered to the PCB [Brian Troha].
 - Southern Systems Joker Poker: Added missing CPU IO map to the machine driver. This allow boot the game and enter into the attract mode [Roberto Fresca].
 - Mini Boy 7 improvements [Roberto Fresca]:
   * Added a new complete set. Now set as parent.
@@ -65,13 +65,12 @@ Source changes:
 - Fix crash when exiting the debugger if breakpoints are set [Aaron Giles].
 - The dsp561xx CPU core now generates accurate disassembly for Konami Polygonet hardware (verified against Motorola's reference disassembler) [Andrew Gardner, Stiletto].
 - Fixed image device error handling [ShimaPong, Miodrag Milanovic].
-- Defined new class driver_data_t, which all driver_data classes must
-derive from. Updated all class definitions to inherit from the new class, and to call it in the constructor. Also changed the alloc() signature to return a driver_data_t pointer instead of a void *.
-- Renamed and hid machine->driver_data as machine->m_driver_data. Added a new templatized method machine->driver_data<class> which returns a properly downcast'ed version of the driver data. Updated all code which looked like this:
+- Defined new class driver_data_t, which all driver_data classes must derive from. Updated all class definitions to inherit from the new class, and to call it in the constructor. Also changed the alloc() signature to return a driver_data_t pointer instead of a void * [Aaron Giles].
+- Renamed and hid machine->driver_data as machine->m_driver_data. Added a new templatized method machine->driver_data<class> which returns a properly downcast'ed version of the driver data. Updated all code which looked like this [Aaron Giles]:
 
   mydriver_state *state = (mydriver_state *)machine->driver_data;
 
-to this:
+  to this:
 
   mydriver_state *state = machine->driver_data<mydriver_state>();
 
@@ -81,8 +80,7 @@ to this:
 - Converted seta.c, seta2.c, and ssv.c to driver_data [Atari Ace].
 - Updated SAA5050 to form 12x20 chars as noted in documentation. Updated malzak driver to support SAA5050 changes [Miodrag Milanovic].
 - taitotz: add HDD image for Battle Gear 2 (2.04J) [gtbb08, R. Belmont].
-- namcoic.c: Fixed incorrect road colours in tceptor2, finallap and
-others [Phil Bennett].
+- namcoic.c: Fixed incorrect road colours in tceptor2, finallap and others [Phil Bennett].
 - Fixed road transparency in 'Thunder Ceptor' [Phil Bennett].
 - Fixed Z80 SIO interrupts by clearing them at constructor time so Z80 daisy chain works properly and doesn't stall on a non-existant IEO condition [Curt Coder].
 - Z80 DMA changes [Curt Coder]:
@@ -90,9 +88,8 @@ others [Phil Bennett].
   * Allowed illegal mode 0 DMA operation since trs80m2 in MESS is abusing this.
   * Fixed ready signal handling by adding a check for ready condition on each byte.
 - Started converting the Toaplan2 VDP into a device [David Haywood].
-- dsp56k : Hooked up new execution engine [Andrew Gardner].
-- plygonet.c : Updates Polygonet driver to use driver_data class.
-[Atari Ace].
+- dsp56k: Hooked up new execution engine [Andrew Gardner].
+- plygonet.c: Updates Polygonet driver to use driver_data class [Atari Ace].
 - More refactoring to the Toaplan 2 / GP9001 VDP device [David Haywood].
 - CPS-1 update [Team CPS-1]:
   * Expanded and updated games table in video\cps1.c.
@@ -103,15 +100,14 @@ others [Phil Bennett].
   * Removed knightsja set (roms were split & hacked to work on a suicided board).
   * Added roms relationship between parent/clones where missing.
   * Fixed some incorrect notes added in previous update.
-  * dynwaru -> dynwara, forgottnua -> forgottnu, forgottnu -> forgottnua wofhfb -> wofhfh, as real name Huo Feng Huang.
+  * Renames (dynwaru) to (dynwara), (forgottnua) to (forgottnu), (forgottnu) to (forgottnua) and (wofhfb) to (wofhfh), as real name Huo Feng Huang.
   * Reordered some sets.
   * Minor cleanups.
   * Fixed sf2ceua labels and added PCB infos.
   * Fixed sf2ceub labels and added pcb infos, removed 1 incorrect ROM  and replaced with proper redump done by Dumping Union.
   * Fixed punisher, punisheru Q-Sound labels and added D-Board PALs.
 - dsp56k.c: Remove globals from dsp56k cpu core [AtariAce].
-- cps1.c: Documentation update for some CPS1 sets (B-Board chip
-information) verified via Team Japump PCB photos [Brian Troha].
+- cps1.c: Documentation update for some CPS1 sets (B-Board chip information) verified via Team Japump PCB photos [Brian Troha].
 - Improved memory banking in 'Puzzle Star' (Sang Ho Soft) [Mariusz Wojcieszek].
 - Fixed term2 (rev. LA4) freeze during the Cyberdyne stage opening cinematic [Phil Bennett].
 - Merged aladbl.c and ssf2md.c to create genesisb.c [Sonikos].

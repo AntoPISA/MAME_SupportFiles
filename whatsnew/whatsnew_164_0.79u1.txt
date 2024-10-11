@@ -2,8 +2,8 @@
 ----------------------------------------
 
 
-New Games supported or promoted from GAME_NOT_WORKING status:
--------------------------------------------------------------
+New Games Added or Promoted from GAME_NOT_WORKING status
+--------------------------------------------------------
 Bulls Eye Darts [Pierpaolo Prazzoli] - colour problems
 Drivers Edge [Aaron Giles]
 Mahjong Electron Base [Luca Elia, yong]
@@ -11,8 +11,8 @@ Mahjong Neruton Haikujirada [Luca Elia]
 Space Launcher [Pierpaolo Prazzoli]
 Varia Metal [David Haywood] - no sound, some gfx issues
 
-New Clones supported or promoted from GAME_NOT_WORKING status:
---------------------------------------------------------------
+New Clones Added or Promoted from GAME_NOT_WORKING status
+---------------------------------------------------------
 Atari Tetris (bootleg set 2) [Kevin Eshbach]
 Battle Garegga (older Hong Kong version) [Brian Troha]
 Fever SOS
@@ -31,16 +31,14 @@ Talbot [Pierpaolo Prazzoli]
 
 
 Source changes:
-----------------------
+---------------
 - Big 80s Namco update (this affects the first Namco games that used custom I/O chips) [Nicola Salmoria]:
   * These files are no longer needed and should be removed: drivers/bosco.c, drivers/xevious.c, drivers/digdug.c, machine/digdug.c, machine/galaga.c, machine/bosco.c, machine/polepos.c, sndhrdw/bosco.c.
-  * Added three new sound chips: NAMCO_15XX, NAMCO_52XX, NAMCO_54XX, and changed drivers to use them (NAMCO_54XX is just a placeholder playing
-  samples, until the chip is reverse engineered).
+  * Added three new sound chips: NAMCO_15XX, NAMCO_52XX, NAMCO_54XX, and changed drivers to use them (NAMCO_54XX is just a placeholder playing samples, until the chip is reverse engineered).
   * MAME testers bugs fixed: digdug063gre, galaga057gre, bosco071u2gre, poleposc059gra.
   * Added EAROM support to digdug.
   * Fixed the polepos2 title screen which had been broken since day 1, strange that nobody noticed.
-  * Fixed various mistakes in the polepos ROM loading (one missing speech ROM in polepos,  polepos2 was using the wrong engine sound ROMs (it's turbo!),
-  added missing vertical scaling PROMs).
+  * Fixed various mistakes in the polepos ROM loading (one missing speech ROM in polepos,  polepos2 was using the wrong engine sound ROMs (it's turbo!), added missing vertical scaling PROMs).
   * Extensive documentation of ROM names and placement, and differences between Namco and licensed versions.
   * Converted all drivers to tilemaps, and made gfx emulation more accurate according to schematics.
   * polepos sprite zooming should now be closer to the hardware.
@@ -48,8 +46,8 @@ Source changes:
   * Support for start lamps, coin counters and coin lockout (all internallyhandled by the custom I/O chip).
   * Toggling the test switch while the game is running enters test mode without need to manually reset.
   * Found and documented test mode Easter eggs in all games except 'Xevious'.
-  * 'Bosconian' now uses a different sound PROM, which seems more correct.
-  * 'Galaga' uses better dumps of the PROMs, with the unused top 4 bits set to 0.
+  * Bosconian now uses a different sound PROM, which seems more correct.
+  * Galaga uses better dumps of the PROMs, with the unused top 4 bits set to 0.
   * Correct handling of 52XX sample start/end pointers in ROM.
   * Better emulation of 50XX custom, no more need for hacks in 'Bosconian'.
   * Swapped digdug and digdugb, the main set should be the newer one.
@@ -80,8 +78,7 @@ Source changes:
   * Fixed firebattle dips.
   * Updated docastle.c memory maps.
   * Added MSM5205 to idsoccer.
-- Cleaned up/Merged various Atari drivers: clayshoo.c, cloak.c, cloud9.c, copsnrob.c, cyberbal.c, destroyr.c, eprom.c
-	fastfred.c, firetrk.c, flyball.c, foodf.c [Aaron Giles].
+- Cleaned up/Merged various Atari drivers: clayshoo.c, cloak.c, cloud9.c, copsnrob.c, cyberbal.c, destroyr.c, eprom.c, fastfred.c, firetrk.c, flyball.c, foodf.c [Aaron Giles].
 - Protection fix for Sonic Arcade; still crashes due to video emulation bug [Roger Sanders].
 - Misc fixes [Nathan Woods]:
   * src/cpu/hd6309/6309tbl.c, src/cpu/hd6309/hd6309.c: Minor timing enhancements, and changed a few indexing modes to be illegal.
@@ -91,7 +88,7 @@ Source changes:
 - Fixed 'Mortal Kombat' damage that was broken in 0.79 [Aaron Giles].
 - Simulated sound in 'Super Slam' [Quench].
 - Fixed 'bad colour RAM' error in hyrda / pitfight [Aaron Giles].
-- 'Fixed' escape kids so it boots again [Aaron Giles].
+- Fixed escape kids so it boots again [Aaron Giles].
 - Support for CPU-specific internal memory maps [Aaron Giles].
 - Reverted RF5c68 to old version [R. Belmont].
 - Fixed outrundx sound (was checking for outrunp) [Santeri Saarimaa].

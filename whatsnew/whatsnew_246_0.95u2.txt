@@ -2,8 +2,8 @@
 --------------------------------------
 
 
-New Games / Clones supported or promoted from GAME_NOT_WORKING status:
-----------------------------------------------------------------------
+New Games / Clones supported or promoted from GAME_NOT_WORKING status
+---------------------------------------------------------------------
 Up Your Alley [Aaron Giles]
 Dr. Tomy [Pierpaolo Prazzoli]
 Snapper [Aaron Giles, Simon White]
@@ -31,7 +31,7 @@ Source changes:
   * Reorganized drivers to match PCB information.
   * Fixed paging/flicker problems in 'Poker Dice/Dyno Bop'.
   * Fixed lack of announcer voices in Rim 'Rockin' Basketball' (rimrockn057gre).
-   * Fixed P3/P4 controls in Rim Rockin' Basketball.
+  * Fixed P3/P4 controls in Rim Rockin' Basketball.
   * Added "behind the beam" updating for 'Super Strike Bowling'.
   * Redid Slick Shot input to use a crosshair for starting point and trackball movement for velocity.
   * Hooked up inputs for 'Dyno Bop'/'Super Strike Bowling', which are now somewhat playable.
@@ -48,9 +48,9 @@ Source changes:
 - Removed hack from 'Ghox' controls so it acts like real PCB [Corrado Tomaselli].
 - Attempted to fix crash in 'Crackdown' [David Haywood].
 - Misc patch [Nathan Woods]:
-  src/cpu/m6502/m6502.c:
+  - src/cpu/m6502/m6502.c:
   * Added a hook that allows drivers to override the indexed addressing mode (there is a certain system on the MESS side that does some very ugly tricks to change the behavior of this mode).
-  src/machine/6821pia.c:
+  - src/machine/6821pia.c:
   * PIA fix.
 - Fixed error introduced in 'Splash' when Funny Strip gfx were fixed [Pierpaolo Prazzoli].
 - Improved SSlam audio MCU sim [Quench].

@@ -9,9 +9,8 @@ Winning Spike (EAA version)  [Fabrice Arzeno] (maybe others as some of the Model
 
 Source changes:
 ---------------
-- Fixed colours in 'Battle City' [Roberto Gandola].
-- Slight change to the Arcadia driver [Nathan Woods]:
-  * Refactors code specific to the Arcadia arcade system and the Amiga computer out of src/machine/amiga.c into callbacks. This allowed me to get rid of all #ifdef MESS code out of src/machine/amiga.c.
+- Fixed colours in Battle City [Roberto Gandola].
+- Slight change to the Arcadia driver: Refactors code specific to the Arcadia arcade system and the Amiga computer out of src/machine/amiga.c into callbacks. This allowed me to get rid of all #ifdef MESS code out of src/machine/amiga.c [Nathan Woods].
 - ST-V updates [Angelo Salese]:
   * Fixed a bug with the VDP-1 RAM reading, SH-2 can do byte or word access, it's implicit that can't do long word access. This fixes the Steep Slope Sliders booting so the game now works.
   * VDP-1 PTM's "draw by request" was actually causing sprites to flicker in kiwames, reversed back to old implementation until I or somebody else understand what the current issue is (clear_framebuffer?).
@@ -27,19 +26,18 @@ Source changes:
 - Fixed priority in 'Lot Lot' [Pierpaolo Prazzoli].
 - Decrypted 'Sukeban Jansi Ryuko' [Nicola Salmoria].
 - ARM7 CPU core [Steve Ellenoff].
-- G65816 CPU core patch [Nathan Woods]:
-  * Cleaned up the code a bit; make some functions static and added step over/out support to the disassembler.
+- G65816 CPU core patch: Cleaned up the code a bit; make some functions static and added step over/out support to the disassembler [Nathan Woods].
 - Fixed 6809dasm.c compile warning [Hans de Goede].
 - Model 3 Updates [Ville Linde].
-  PowerPC core: 
+  - PowerPC core: 
   * Better interrupt handling. Nested interrupts work properly.
   * Some support for PPC602.
   * Major bugfixes.
   * Added some unimplemented opcodes.
-  53c810 SCSI:
+  - 53c810 SCSI:
   * Fixed single-stepping mode DMA.
   * Added memory moves and DMA callback.
-  Model 3:
+  - Model 3:
   * Added Epson RTC-72421 emulation.
   * Preliminary polygon emulation.
   * Preliminary (not working yet) sound emulation.
@@ -47,4 +45,4 @@ Source changes:
 - Fixed multiple port recording [Chad Hurwitz].
 - Fixed several compile warnings [Lawrence Gold].
 - Upgraded to zlib 1.2.2 [Santeri Saarimaa].
-- Added unused proms to 'Crystal Castles' [Santeri Saarimaa].
+- Added unused proms to Crystal Castles [Santeri Saarimaa].

@@ -2,16 +2,16 @@
 ----------------------------------------
 
 
-New Games supported or promoted from GAME_NOT_WORKING status:
--------------------------------------------------------------
+New Games supported or promoted from GAME_NOT_WORKING status
+------------------------------------------------------------
 B.C. Story [David Haywood]
 Clutch Hitter [Charles MacDonald, Nicola Salmoria, David Haywood] (incomplete sound emulation, some gfx problems)
 D. D. Crew [Charles MacDonald, Nicola Salmoria, David Haywood] (incomplete sound emulation, still some serious gfx problems in places)
 Ping Pong Masters '93 [David Haywood] (sound not yet emulated)
 Twin Brats [Pierpaolo Prazzoli] (incorrect sound banking)
 
-New Clones supported or promoted from GAME_NOT_WORKING status:
---------------------------------------------------------------
+New Clones supported or promoted from GAME_NOT_WORKING status
+-------------------------------------------------------------
 Flash Point (Japan, Original) [Charles MacDonald, Nicola Salmoria]
 Senkyu (set 2) [Fabrice Arzeno]
 
@@ -20,20 +20,23 @@ New Non-Working games / clones supported
 Several system18 sets
 
 
+Mametesters Bugs Fixed (5):
+---------------------------
+nebulray066gre (kludge, real behavior not understood)
+namcosx36rc2gre (for system2)
+finehour053gre
+ordyne080u1gre
+rthun237b16gre
+  
+  
 Source changes:
 ---------------
-Namco Update [Phil Stroffolino]:
+- Namco Update [Phil Stroffolino]:
   * Fixes priority in the NB1 games.
   * POSIRQ support for Namco System 2 games no longer requires game-specific hacks.
   * Hack for Metal Hawk tile size is no longer needed.
   * Screen blanking (window) support added for System 2 hardware.
   * Sprite-tilemap orthogonality for System 2 rendering.
-  - Mametesters bugs:
-  * nebulray066gre (kludge, real behavior not understood).
-  * namcosx36rc2gre (for system2).
-  * finehour053gre
-  * ordyne080u1gre
-  * rthun237b16gre
 - i960 fix [R.Belmont, Stephan Cecchinel]:
   * Fixed errors in atanr and logepr.
 - Improvements to FD1094 emulation [Charles MacDonald, Nicola Salmoria]:
@@ -41,20 +44,20 @@ Namco Update [Phil Stroffolino]:
 - Fixed scroll offset and rain priority in mwarr [Pierpaolo Prazzoli]
 - Added EEprom support to Steel Force [Pierpaolo Prazzoli].
 - Misc fixes [Curt Coder]:
-  1943:
+  - 1943:
   * Converted to use tilemaps.
   * Cleaned up driver.
   * Merged memory maps.
   * Fixed inputs/dips based on manuals.
   * Renamed 1943j to '1943: Midway Kaisen (Japan)'.
   * Renamed 1943kai to '1943 Kai: Midway Kaisen (Japan)'.
-  Gun.Smoke:
+  - Gun.Smoke:
   * Converted to use tilemaps.
   * Cleaned up driver.
   * Merged memory maps.
   * Fixed inputs/dips based on manuals.
   * Removed GUNSMOKE_HACK and fake dips.
-  Blue Print:
+  - Blue Print:
   * Fixed clocks per schematic, sound pitch now higher.
   * Tilemap conversion.
   * Merged memory maps.
@@ -62,16 +65,15 @@ Namco Update [Phil Stroffolino]:
   * Fixed ROM names per schematic.
   * Clean up.
   * Correct 2H/4H clocks.
-  Night Driver:
+  - Night Driver:
   * Removed gear/track display hack.
   * Merged memory map.
   * Fixed clock per schematic.
   * Added early revision roms info.
   * Fixed ROM names per schematic.
   * Clean up.
-  1942:
+  - 1942:
   * Merged memory maps.
   * Fixed inputs/dips per manual.
 - Confirmed Libble Rabble Custom IO chip numbers [Shaun Stephenson].
-- jalmah.c improvements [Angelo Salese]:
-  * Further improved the first version protection. Now you can boot in urashima/mjzoomin/daireika,with wrong colors(data is extracted from MCU code) and wrong tilemap positioning(these games uses the RANGE register,which needs further investigation).
+- jalmah.c improvements: Further improved the first version protection. Now you can boot in urashima/mjzoomin/daireika,with wrong colors(data is extracted from MCU code) and wrong tilemap positioning(these games uses the RANGE register,which needs further investigation) [Angelo Salese].

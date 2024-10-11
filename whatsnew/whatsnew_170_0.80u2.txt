@@ -2,35 +2,52 @@
 ----------------------------------------
 
 
-New Games supported or promoted from GAME_NOT_WORKING status
-------------------------------------------------------------
-Dynamic Dice [Tomasz Slanina] (might be a gambling game)
-Lovely Cards (doesn't actually appear to be a gambling game, just gambling themed)
-Rock 'n' Roll Trivia (part 2) [Pierpaolo Prazzoli]
-Scooter Shooter [Pierpaolo Prazzoli]
+New Games Added
+---------------
+(changela) Change Lanes [Phil Stroffolino, Jarek Burczynski, Tomasz Slanina] (1)
+(cntsteer) Counter Steer [Bryan McPhail] (2)
+(dw3)      Dragon World 3 [Guru] (3)
+(dynadice) Dynamic Dice [Tomasz Slanina] (4)
+(lvcards)  Lovely Cards [El Condor, Uki] (5)
+(pturn)    Parallel Turn [Tomasz Slanina] (6)
+(rocktrv2) MTV Rock-N-Roll Trivia (Part 2) [Pierpaolo Prazzoli]
+(scotrsht) Scooter Shooter [Pierpaolo Prazzoli]
+(ssingles) Swinging Singles [Tomasz Slanina] (7)
+(tcl)      Taiwan Chess Legend [Tomasz Slanina] (8)
+(wwally)   Where's Wally? [Charles MacDonald]
+(zerotrgt) Zero Target (World) [Bryan McPhail] (9)
 
-New Clones supported or promoted from GAME_NOT_WORKING status
--------------------------------------------------------------
-2020 Super Baseball (set 2) (2020bba) [HPMAN]
-Blaster (early 30 wave version)
-Griffon [Pierpaolo Prazzoli]
-Gyrodine (Crux license?) [Pierpaolo Prazzoli / f205v]
-Spinner (Spiders bootleg) [Pierpaolo Prazzoli]
+New Clones Added
+----------------
+(2020bba)  2020 Super Baseball (set 2) [HPMAN]
+(blast30)  Blaster [David Haywood] (10)
+(capbowl3) Capcom Bowling (set 3) [David Haywood]
+(dw3k)     Dragon World 3 (Korean Board) [Guru]
+(gekitsui) Gekitsui Oh (Japan) [Bryan McPhail]
+(griffon)  Griffon [Pierpaolo Prazzoli]
+(gyrodinc) Gyrodine (Crux) [Pierpaolo Prazzoli, f205v]
+(mshj)     Marvel Super Heroes (Japan 951117) [David Haywood]
+(shdancrb) Shadow Dancer (Rev.B) [Charles MacDonald]
+(spf2ta)   Super Puzzle Fighter 2 Turbo (Asia 960529) [David Haywood]
+(spinner)  Spinner [Pierpaolo Prazzoli]
+(vhuntjr1) Vampire Hunter: Darkstalkers' Revenge (Japan 950307) [David Haywood]
 
-New Non-Working games / clones supported
-----------------------------------------
-Change Lanes [Phil Stroffolino, Jarek Burczynski, Tomasz Slanina] (weird early Taito hardware)
-Counter Steer [Bryan McPhail, Pierpaolo Prazzoli, David Haywood] (various things not yet understood)
-Dragon World 3 (unemulated protection)
-Parallel Turn [Tomasz Slanina] (Jaleco protection chip not emulated)
-Swinging Singles [Tomasz Slanina] (not much work done on it)
-Taiwan Chess Legend [Tomasz Slanina] (only partially decrypted)
-Various Non-working CPS2 clones
-Zero Target [Bryan McPhail, Pierpaolo Prazzoli, David Haywood] (various things not yet understood)
+Notes:
+------
+( 1): Weird early Taito hardware.
+( 2): Various things not yet understood.
+( 3): Unemulated protection.
+( 4): Might be a gambling game.
+( 5): Doesn't actually appear to be a gambling game, just gambling themed.
+( 6): Jaleco protection chip not emulated.
+( 7): Not much work done on it.
+( 8): Only partially decrypted.
+( 9): Various things not yet understood.
+(10): Early 30 wave version.
 
 
 Source changes:
-----------------------
+---------------
 - Various Sega 16-bit game driver updaes [Charles MacDonald, http://cgfm2.emuviews.com]
 - Added correctly dumped ROM set for eswat to replace the old one. Game is encrypted and unplayable [David Haywood].
 - Moved 'Ace Attacker' to system16.c, it's not a System 18 game [David Haywood].

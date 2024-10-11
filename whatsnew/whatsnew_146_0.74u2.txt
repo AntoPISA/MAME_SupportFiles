@@ -2,8 +2,8 @@
 ----------------------------------------
 
 
-New games supported:
---------------------
+New games supported
+-------------------
 Bakuretsu Breaker [David Haywood] (sound problems)
 Demoneye-X [Pierpaolo Prazzoli] (gfx problems, no sound)
 Dorachan [Tomasz Slanina] (no sound)
@@ -13,8 +13,8 @@ Moero Pro Yakyuu Homerun [Tomasz Slanina (missing voices)
 Suzuka 8 Hours [Dang Spot]
 Touchdown Fever II [Smitdogg]
 
-New Clones supported:
----------------------
+New Clones supported
+--------------------
 Champion Golf (original?) [Brian Troha]
 Depthcharge (rev 1) [MASH]
 Donkey Kong 3 (bootleg on DKJr hw) [Pierpaolo Prazzoli]
@@ -25,18 +25,18 @@ Mighty Monkey (original) [Pierpaolo Prazzoli]
 Phantomas (clone of spectar) [Pierpaolo Prazzoli]
 
 New Non-Working games supported (All drivers that were previously TESTDRIVERS)
--------------------------------
+------------------------------------------------------------------------------
 Dealer [Pierpaolo Prazzoli] (bad ROM or bad decryption)
 
 
 Source changes:
 ---------------
-- Added MCU emulation to Tiger Heli [Tomasz Slanina]
+- Added MCU emulation to Tiger Heli [Tomasz Slanina].
 - Fixed Config Saving Bug [BUT].
-- Fixed recently introduced tp84 video bug [David Haywood]
-- Fixed some V60 Floating Point Operations and made core exit on unhandled opcodes, note UltraX doesn't work again [Olivier Galibert]
-- Fixing missing continue graphics on actfancr [Bryan McPhail]
+- Fixed recently introduced tp84 video bug [David Haywood].
+- Fixed some V60 Floating Point Operations and made core exit on unhandled opcodes, note UltraX doesn't work again [Olivier Galibert].
+- Fixing missing continue graphics on actfancr [Bryan McPhail].
 - If any GAME_NOT_WORKING flags have been missed let us know at Mametesters [David Haywood].
 - The TESTDRIVER system has been removed, all drivers are now enabled working or not, this decision was made by several members of the development team. The drivers that were previously TESTDRIVERS are still marked as GAME_NOT_WORKING so can be filtered out easily with a front-end. Please note, the enabling of these drivers does not indicate they're any closer to working than when they were first added and in many cases it could still be several years before they work depending on l when they're worked on and how difficult they prove to be. We're always looking for talented programmers to work on and improve Mame, some of these drivers could be a good place to start (others may be near impossible to fix) [David Haywood].
 - Various Dipswitch Fixes [Inigo Luja].
-- Various SegaPCM fixes [Olivier Galibert]
+- Various SegaPCM fixes [Olivier Galibert].

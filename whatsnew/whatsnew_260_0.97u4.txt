@@ -18,8 +18,8 @@ New games marked as GAME_NOT_WORKING
 <unknown> Meyco game [Pierpaolo Prazzoli]
 
 
-MAMETesters Bugs Fixed
-----------------------
+MAMETesters Bugs Fixed (13):
+----------------------------
 getstarb093u3gra [Mamesick]
 wintbob079u1gre [Mamesick]
 htchctch096u1gre [Mamesick]
@@ -40,7 +40,7 @@ Source changes:
 - Fixed v60 SBR handling to ignore the low 12 bits. This allows the hack in tp2m32 to be removed [Aaron Giles].
 - Adjusted volume balance in ddragon3, ctribe, mugsmash [Mamesick].
 - Added correct sound ROMs to "World Class Bowling Tournament' and Deluxe [Brian Troha].
-- Replaced old 'Outrun' bootleg with a new dump that passes the ROM test and has proper ROM names [David Haywood].
+- Replaced old Outrun bootleg with a new dump that passes the ROM test and has proper ROM names [David Haywood].
 - More PowerPC improvements [Nathan Woods]:
   * Fixed exception handling; previously the MSR register was stored in EDX, and EDX is not preserved across the call to ppc_set_msr().
   * Implemented recompile_fcmpo().
@@ -61,10 +61,9 @@ Source changes:
   * Mask setting & dma setup updates status fields correctly.
   * Reverse flag only has an effect on original GPU's.
 - Yet another fix to the PowerPC counters, reimplementing them from scratch [Ville Linde].
-Some improvements to the Model 2 driver [Ville Linde]:
-  *Added the second SHARC.
-  *Fixed all the problems caused by the previous update.
+- Some improvements to the Model 2 driver [Ville Linde]:
+  * Added the second SHARC.
+  * Fixed all the problems caused by the previous update.
   * Fixed incorrect test in sauro.c video system [Pierpaolo Prazzoli].
 - Improved Lethal Enforces sprites, allowing 2 sprite chips to be created [David Haywood].
-- Rewrote the System 32 mixer to support accurate implementation of the alpha blending modes. Sprite shadows and several other effects are still not yet
-implemented. And it's much slower than before [Aaron Giles].
+- Rewrote the System 32 mixer to support accurate implementation of the alpha blending modes. Sprite shadows and several other effects are still not yet implemented. And it's much slower than before [Aaron Giles].
