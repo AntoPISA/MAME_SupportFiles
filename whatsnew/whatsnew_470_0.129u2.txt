@@ -2,27 +2,27 @@
 ---------------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
-- 02810: [DIP/Input] hanaroku,hanaawas: Input keys are inconsistent with other hanafuda games (Sonikos)
-- 02842: [Graphics] logger: gfx issue (Aaron Giles)
-- 02847: [Crash/Freeze] all cloak.c and midzeus.c sets: [debug] Access Violation (Phil Bennett)
-- 02852: [Known Issues/To-Do's] cloak and clones: Message "SLAVE COM BAD" flashes before game startup (Phil Bennett)
-
-
-New games added or promoted from NOT_WORKING status
+New Games Added or Promoted from NOT_WORKING Status
 ---------------------------------------------------
 Give us a Break (2 sets) [Phil Bennett]
 Himeshikibu (Japan) [Uki]
 Super Othello [Tomasz Slanina]
 Ten Up (2 sets) [Phil Bennett]
 
-New clones added
+New Clones Added
 ----------------
 Cannon Ball (Yun Sung) (vertical) [David Haywood]
 Raiden Fighters 2 (USA, SPI) [Arzeno Fabrice]
 Sega Water Ski (Japan, Revision A) [Smitdogg Jones]
 Stepping 3 Surperior [Naibo Zhang]
+
+
+MAMETesters Bugs Fixed (4):
+---------------------------
+- 02810: [DIP/Input] hanaroku,hanaawas: Input keys are inconsistent with other hanafuda games (Sonikos)
+- 02842: [Graphics] logger: gfx issue (Aaron Giles)
+- 02847: [Crash/Freeze] all cloak.c and midzeus.c sets: [debug] Access Violation (Phil Bennett)
+- 02852: [Known Issues/To-Do's] cloak and clones: Message "SLAVE COM BAD" flashes before game startup (Phil Bennett)
 
 
 Source changes:
@@ -58,7 +58,7 @@ Source changes:
 - Tidied up the micro3d driver and fixed sound [Phil Bennett].
 - Increased Cloak & Dagger interleave quantum to eliminate 'SLAVE COM BAD' startup message [Phil Bennett].
 - Major cleanup to IGS poker games [Mirko Buffoni]:
-  * Renamed csk driver to igspoker. This includes 'Champion Poker', 'Champion Skill', 'New Champion Skill'.
+  * Renamed csk driver to igspoker. This includes Champion Poker, Champion Skill and New Champion Skill.
   * Converted drivers to tilemap system and unified video section
   * Unified memory maps and checked all input ports.
   * Removed obsolete palette handlers and made use of generic handlers.
@@ -74,12 +74,11 @@ Source changes:
   * Corrected RAM sizes to match what is present on the PCBs.
   * Hooked up NVRAM.
 - Fixed clamping to 12 bit range to Okim6376, and adjusted volume attenuation accordingly [Mirko Buffoni].
-- Fixed TMS5220 speech in 'Turbo Sub' [Phil Bennett, Jay Gallagher].
-- ADP improvements [robiza]:
-  * Implemented p1 inputs in skattv and fashiong (service mode is working).
+- Fixed TMS5220 speech in Turbo Sub [Phil Bennett, Jay Gallagher].
+- ADP improvements: Implemented p1 inputs in skattv and fashiong (service mode is working) [robiza].
 - Defined ROM_LOAD64_WORD/ROM_LOAD64_WORD_SWAP in emu/romload.h [Phil Bennett].
 - cb2001: mapped two more opcodes [robiza].
-- Fixed 'Soul Calibur' (vs. Inferno) [4oj9/xJ+0] 
+- Fixed Soul Calibur (vs. Inferno) [4oj9/xJ+0] 
 - Added custom 3-screen layout to Stepping Stage driver [Naibo Zhang].
 - Changed yunsung8 oki xtal to 400khz, verified on PCB. Unfortunately I couldn't verify the main xtal which was missing on my PCB [Corrado Tomaselli].
 - Restored previous cycle eating behavior in gstream [Mamesick].

@@ -2,28 +2,28 @@
 ---------------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
+New Games Added or Promoted from NOT_WORKING Status
+---------------------------------------------------
+Wheels Runner [Luca Elia]
+
+New Clones Added
+----------------
+Lock-On (rev. C) [Philip Bennett]
+Progressive Music Trivia (Question set 4) [Andrew Gardner]
+
+New Games Marked as GAME_NOT_WORKING
+------------------------------------
+Galaxy Games BIOS [Andrew Gardner]
+Puzzlet (Japan) [Luca Elia]
+
+
+MAMETesters Bugs Fixed (5):
+---------------------------
 cmv801_0116gra (RansAckeR)
 stadhero0122u3gra (RansAckeR)
 strahl0122u6yel (Mamesick)
 wboy3_0119u3gra (RansAckeR)
 zerohour0122u6gra (RansAckeR)
-
-
-New games added or promoted from NOT_WORKING status
----------------------------------------------------
-Wheels Runner [Luca Elia]
-
-New clones added
-----------------
-Lock-On (rev. C) [Philip Bennett]
-Progressive Music Trivia (Question set 4) [Andrew Gardner]
-
-New games marked as GAME_NOT_WORKING
-------------------------------------
-Galaxy Games BIOS [Andrew Gardner]
-Puzzlet (Japan) [Luca Elia]
 
 
 Source changes:
@@ -68,15 +68,15 @@ Source changes:
 - Removed non-existent, second M6295 from Hit the Ice. Fixes missing sounds (e.g. team select screen). Hit the Ice/Violence Fight now share the same sound CPU memory maps [Philip Bennett].
 - Improved DIP switches according to manuals for the following drivers: wboy, chplft, extdwnhl, zingzip, zaxxon, congo, vanguard, zarzon,nibbler, segag80r.c, yard, kaneko16.c [RansAckeR].
 - Verified the sound roms for Rock'n 3 and added proper names. Added PCB layout for sound rom board only [Brian Troha].
-- Cleaned up 'Time Pilot' sound board implementation [Aaron Giles]:
+- Cleaned up Time Pilot sound board implementation [Aaron Giles]:
   * Full memory maps.
   * Partial machine driver removes need for replicating filtering logic.
   * Updated all relevant drivers.
-- Cleaned up 'Time Pilot' and 'Tutankham' drivers [Aaron Giles]:
+- Cleaned up Time Pilot and Tutankham drivers [Aaron Giles]:
   * Correct clocks where possible.
   * Merged memory maps.
   * Fully decoded memory maps.
-  * Replaced hacky sprite. rendering in 'Time Pilot' with partial updates.
+  * Replaced hacky sprite. rendering in Time Pilot with partial updates.
   * Save state support.
   * Removed Power Surge kludge, replaced with unmapped handler control.
   * Tutankham runs at 60fps, with IRQs every other frame.

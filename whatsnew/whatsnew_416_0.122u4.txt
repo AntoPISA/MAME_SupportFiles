@@ -2,8 +2,20 @@
 ---------------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
+New Games Added or Promoted from NOT_WORKING Status
+---------------------------------------------------
+Big Fight [Bryan McPhail]
+Dangerous Curves [Philip Bennett, Dazzer]
+
+New Clones Added
+----------------
+Alien Syndrome (set 5, System 16A, FD1089B 317-0037) [Nicola Salmoria]
+Dragon Spirit (Atari license) [Satoshi Suzuki]
+Invasion - The Abductors (version 5.0) [Brian Troha]
+
+
+MAMETesters Bugs Fixed (42):
+----------------------------
 abaseb0122u3red (Zsolt Vasvari)
 ad2083_0111u5gra (Couriersud)
 aleck64_0120red (Aaron Giles)
@@ -48,18 +60,6 @@ warriorb0109u2gre (David Haywood)
 wotw36b1gre (Zsolt Vasvari)
 
 
-New games added or promoted from NOT_WORKING status
----------------------------------------------------
-Big Fight [Bryan McPhail]
-Dangerous Curves [Philip Bennett, Dazzer]
-
-New clones added
-----------------
-Alien Syndrome (set 5, System 16A, FD1089B 317-0037) [Nicola Salmoria]
-Dragon Spirit (Atari license) [Satoshi Suzuki]
-Invasion - The Abductors (version 5.0) [Brian Troha]
-
-
 Source changes:
 ---------------
 - Corrected btoads clocks according XTALs on the PCB [Aaron Giles].
@@ -89,15 +89,15 @@ Source changes:
   * Added save state support to YM2413.
   * Modified slapstic code to support address range mirrors.
   * Cleaned up Rampart driver:
-    - Simplified rendering code.
-    - Full memory map.
-    - Added save state support.
+  - Simplified rendering code.
+  - Full memory map.
+  - Added save state support.
 - Implemented decent-sounding FM in the SCSP [kingshriek].
 - Updated Naomi driver, now boots and shows some test menus (press F2 to get into test, use 9 to navigate). Also hooked up ROM board PIO and skeleton for DMA [R. Belmont, Samuele Zannoli, ElSemi].
 - N64 improvements [SGINut]:
   * Move texture masking to occur after coordinate adjustment
   * Fix 32-bit texturing in load_tile (Mario Kart 64 title screen).
- - Add zero-alpha early-out (Mario 64 trees/stars, Mario Kart 64 trees/karts).
+  * Add zero-alpha early-out (Mario 64 trees/stars, Mario Kart 64 trees/karts).
 - ad2083 improvements [Couriersud]:
   * Completed tms5110A code.
   * Working speech synthesis.
@@ -113,11 +113,11 @@ Source changes:
 - Major improvements to Cycle Warriors video code (still not perfect, but road layer works now) [Bryan McPhail].
 - Major rewrite of skychut.c. There are still some glitches and it is not perfect but the following has been achieved [Couriersud]:
   * Adds samples to ipm invaders - just rename your old invaders samples to ipminvad to test.
-  * Added - amongst others - "capsule" dip switch to ipm invaders.
+  * Added - amongst others - "capsule" DIP switch to ipm invaders.
   * Sound ports identified.
   * Demo sound and cabinet type driver configuration.
 - Updated memory configuration for Superboard game versions in peplus driver. Fixes CMOS DATA errors on reload [Jim Stolis].
 - Rewrote the CVS system video code [Zsolt Vasvari].
 - Fixed S2650 register window display [Zsolt Vasvari].
-- Added sound to 'Cycle Warriors' and 'Big Fight'. Corrected OKI M6295 clock values [Philip Bennett].
+- Added sound to Cycle Warriors and Big Fight. Corrected OKI M6295 clock values [Philip Bennett].
 - Fixed missing arrow in Venture on the zoomed out map, and the incorrect fading twister in 'Hard Hat' [Zsolt Vasvari].

@@ -2,15 +2,15 @@
 ---------------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
+MAMETesters Bug Fixed (1):
+--------------------------
 00817 (RansAckeR)
 
 
 Source changes:
 ---------------
 - MC6845 updates [Zsolt Vasvari]:
- * Now signalling both 0->1 and 1->0 transitions of synching pins.
+  * Now signalling both 0->1 and 1->0 transitions of synching pins.
   * Added mc6845_assert_light_pen_input; uses a timer for latching the light pen address.
   * Added reset device function.
   * Implemented VSYNC height computation difference between the Motorola and the Rockwell devices.
@@ -78,10 +78,10 @@ Source changes:
 - Meadows driver updates [Zsolt Vasvari]:
   * Merged memory maps.
   * Uses PORT_CHANGED for coins
-  * Renamed 'Inferno (S2650) to 'Inferno (Meadows)'.
-  * Renamed 'Bowling 3D' to '3-D Bowling'
+  * Changed description from "Inferno (S2650)" to "Inferno (Meadows)".
+  * Changed description from "Bowling 3D" to "3-D Bowling".
   * Added NO_DUMP entries for Gypsy Juggler's ball graphics and added GAME_IMPERFECT_GRAPHICS flag.
-- Fixed sprite colors in 'Exerion' [Zsolt Vasvari].
+- Fixed sprite colors in Exerion [Zsolt Vasvari].
 - Added new macros AM_DEVREAD, AM_DEVWRITE, and AM_DEVREADWRITE,which specify device read/write handlers in address maps, along with the type/tag of the device they reference [Aaron Giles].
 - Converted MC6845 read/write handlers to READ/WRITE8_DEVICE_HANDLERs. Updated all MC6845-using drivers to use the new macros and call the updated functions. Removed the many little helper functions that used to do this work. [Aaron Giles].
 - Added validity checks to ensure that the devices referenced actually exist [Aaron Giles].

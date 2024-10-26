@@ -2,23 +2,7 @@
 ---------------------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
-- 00012: [DIP/Input] (dooyong.c) lastday: [possible] Coin input in the test mode (Sonikos)
-- 01797: [DIP/Input] (tank8.c) tank8: Game time DIP settings incorrect (Sonikos)
-- 02117: [DIP/Input] (dooyong.c) superx: [possible] Service mode DIP switch has no effect (Sonikos)
-- 03388: [DIP/Input] (atarisy1.c) roadrunn and clones: Input (Button) labels not logical (Sonikos)
-- 03642: [DIP/Input] (cps1.c) 1941: Difficulty dipswitch has wrong values in tab menu (Sonikos)
-- 04196: [DIP/Input] (leland.c) offroadt2p: [possible] Inputs for 3 players when it's a 2-player only game (Sonikos)
-- 04851: [Crash/Freeze] (pcxt.c) filetto: Can't boot (crazyc)
-- 05119: [DIP/Input] (kaneko16.c) bloodwar oedfight: DIP switch for attract sound is inverted (Sonikos)
-- 05120: [DIP/Input] (namcos1.c) bakutotu: misplaced DIPs (Sonikos)
-- 05189: [Sound] (attckufo.c) attckufo: No sound (hap)
-- 05190: [Crash/Freeze] (gomoku.c) gomoku: Crashed after ROM/RAM test (hap)
-- 05194: [Graphics] (tx1.c) buggyboy, tx1: Screen 1 and 2 freezes (Phil Bennett)
-
-
-New games added or promoted from NOT_WORKING status
+New Games Added or Promoted from NOT_WORKING Status
 ---------------------------------------------------
 Crystals Colours (Ver 1.01) [Roberto Fresca, Any]
 Fruit Land [Carl, R. Belmont, Any]
@@ -30,7 +14,7 @@ Stunt Air [f205v, Tirino73, David Haywood] (imperfect gfx, sound, colours, need 
 Videotron Poker (cards selector) [Roberto Fresca, Any]
 Videotron Poker (normal controls) [Roberto Fresca, Any]
 
-New clones added
+New Clones Added
 ----------------
 Altered Beast (Datsu bootleg) [ANY] (not working)
 Ataque Sideral (Spanish bootleg of UniWar S) [Ricky2001 (from AUMAP)]
@@ -68,7 +52,7 @@ The Next Space (set 2) [ANY]
 Traverse USA (I.P. - American Top Bootleg) [ANY]
 Vastar (set 4) [ANY]
 
-New games marked as GAME_NOT_WORKING
+New Games Marked as GAME_NOT_WORKING
 ------------------------------------
 Bonne Chance! (Golden Poker prequel hardware) [Roberto Fresca, Any]
 Kono Tako [Tormod, Smitdogg, The Dumping Union]
@@ -77,6 +61,22 @@ Sea Battle [ANY]
 The Drink [Any]
 Time Fighter (Time Pilot conversion on Galaxian hardware)  [Marcello Mancini, the hands of the hap]
 Unknown H8 Italian Gambling game [Any]
+
+
+MAMETesters Bugs Fixed (12):
+----------------------------
+- 00012: [DIP/Input] (dooyong.c) lastday: [possible] Coin input in the test mode (Sonikos)
+- 01797: [DIP/Input] (tank8.c) tank8: Game time DIP settings incorrect (Sonikos)
+- 02117: [DIP/Input] (dooyong.c) superx: [possible] Service mode DIP switch has no effect (Sonikos)
+- 03388: [DIP/Input] (atarisy1.c) roadrunn and clones: Input (Button) labels not logical (Sonikos)
+- 03642: [DIP/Input] (cps1.c) 1941: Difficulty dipswitch has wrong values in tab menu (Sonikos)
+- 04196: [DIP/Input] (leland.c) offroadt2p: [possible] Inputs for 3 players when it's a 2-player only game (Sonikos)
+- 04851: [Crash/Freeze] (pcxt.c) filetto: Can't boot (crazyc)
+- 05119: [DIP/Input] (kaneko16.c) bloodwar oedfight: DIP switch for attract sound is inverted (Sonikos)
+- 05120: [DIP/Input] (namcos1.c) bakutotu: misplaced DIPs (Sonikos)
+- 05189: [Sound] (attckufo.c) attckufo: No sound (hap)
+- 05190: [Crash/Freeze] (gomoku.c) gomoku: Crashed after ROM/RAM test (hap)
+- 05194: [Graphics] (tx1.c) buggyboy, tx1: Screen 1 and 2 freezes (Phil Bennett)
 
 
 Source changes:
@@ -88,7 +88,7 @@ Source changes:
 - Metadata updates for Naomi and Triforce [f205v].
 - PSX bios ROM memory map is now handled by the CPU core as the size is controlled by an internal register. Simplified System 12 protection hack so that it doesn't involve remapping the bios ROM area, which also allows the default value for RAM to be removed [smf].
 - Redump Chocovader 0.8e ROM [Smitdogg].
-- nbbatman2bl: Replace bad dumps of gfx roms [Smitdogg].
+- nbbatman2bl: Replace bad dumps of GFX ROMs [Smitdogg].
 - silkroad: Replaced bad rom, removed init hack [Brian Troha, Smitdogg, The Dumping Union].
 - Autoboot command support added [Ben Geeves,Miodrag Milanovic].
 - Added proper sized maincpu ROM for World Tennis from recent dump and updated labels [any, Tafoid].
@@ -105,7 +105,7 @@ Source changes:
 - flstory.c: Corrected a couple of dipswitch names for Rumba Lumber and change clocks to be XTAL based [Brian Troha].
 - Modernised the YM3526, which also required adding write lines to the 6502, 6809 and z80 [smf].
 - Modernised Y8950,YMF262,YM3812,YM2413,YMF278 [smf].
-- Re-dumped 'Sport Fishing 2 (JPN)' & 'Sport Fishing 2 (EXP)' [f205v].
+- Re-dumped Sport Fishing 2 (JPN) and Sport Fishing 2 (EXP) [f205v].
 - Crystals Colours improvements [Roberto Fresca]:
   * Decrypted the tile matrix / video RAM.
   * Wrote proper memory map and inputs from the scratch.
@@ -158,6 +158,6 @@ Source changes:
 - libflac: Improve portability for older versions of Xcode [John Gilbert].
 - input/DIP bugs fixed in several drivers [Sonikos].
 - PGM improvements [iq132]:
-  * Implemented the bitswap  protection for 'Killing Blade' allowing all regions to work.
-  * Implemented additional protection required by 'Dragon World 3', the game is not any further along, but it is much cleaner code.
+  * Implemented the bitswap  protection for Killing Blade allowing all regions to work.
+  * Implemented additional protection required by Dragon World 3, the game is not any further along, but it is much cleaner code.
   * Implemented bitswap protection and several DMA modes for olds. The ram_dump hack is no longer required. The protection simulation is still somewhat incomplete.

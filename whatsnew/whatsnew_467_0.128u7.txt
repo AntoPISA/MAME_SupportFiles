@@ -3,17 +3,7 @@
 NOTE: As of this release, we have two more major changes. These should be the last "huge" changes of this dev cycle. The most major change is the final retirement of the global Machine pointer, which has been part of MAME for many years. Frankly, I never thought we'd hit this point so quickly, so my hats off to Atari Ace who helped push through the final round of changes needed to make this happen finally. As a result of this change, it should be possible in the coming year to finally write a driver that runs two full machines simultaneously. The second big change is that the CPUs are now full-fledged devices, and participate like all other devices in the system configuration. This is mainly an internal structural change, but in the end removes some redundant code and behavior. In a future dev cycle, a similar thing will happen with the sound cores.Starting now, the focus for MAME will be to iron out remaining issues and release a 0.129 sometime around the 1st of the year. Please keep reporting bugs to MAMETesters as you find things.
 
 
-MAMETesters Bugs Fixed
-----------------------
-- 02745: [Crash/Freeze] all sets using autosave: Games using autosave segfault on startup (Aaron Giles)
-- 02750: [Sound] All Sets in equites.c: no background music (Aaron Giles)
-- 02753: [Crash/Freeze] gradius4: hardware error -1 (Aaron Giles)
-- 02755: [Crash/Freeze] All Sets in metro.c: Crash with access violation. (Aaron Giles)
-- 02756: [Crash/Freeze] hyprduel, hyprdelj: Colors on the title screen wrong, games crash mame with ACCESS VIOLATION (Mamesick)
-- 02757: [Documentation] sengoku3: manufacturer should be "Noise Factory / SNK" (Phil Bennett)
-
-
-New games added or promoted from NOT_WORKING status
+New Games Added or Promoted from NOT_WORKING Status
 ---------------------------------------------------
 4nin-uchi Mahjong Jantotsu [David Haywood, Angelo Salese]
 Butterfly Video Game (ver.U350C) [Roberto Fresca, David Haywood]
@@ -24,18 +14,28 @@ Mad Zoo (ver.U450C) [Roberto Fresca, David Haywood]
 Sky Lancer (Bordun, ver.U450C) [Roberto Fresca, David Haywood]
 Three Ds - Three Dealers Casino House [David Haywood, Angelo Salese]
 
-New clones added
+New Clones Added
 ----------------
 Double Dragon 3 - The Rosetta Stone (prototype) [Guru]
 Jolly Card (italian, encrypted bootleg) [Roberto Fresca]
 
-New games marked as GAME_NOT_WORKING
+New Games marked as GAME_NOT_WORKING
 ------------------------------------
 Cherry Master I (v1.01) [Roberto Fresca, David Haywood]
 Grand Prix 98 [David Haywood]
 Janshi [David Haywood]
 Leader [Roberto Fresca, David Haywood]
 Parent Jack [David Haywood]
+
+
+MAMETesters Bugs Fixed (6):
+---------------------------
+- 02745: [Crash/Freeze] all sets using autosave: Games using autosave segfault on startup (Aaron Giles)
+- 02750: [Sound] All Sets in equites.c: no background music (Aaron Giles)
+- 02753: [Crash/Freeze] gradius4: hardware error -1 (Aaron Giles)
+- 02755: [Crash/Freeze] All Sets in metro.c: Crash with access violation. (Aaron Giles)
+- 02756: [Crash/Freeze] hyprduel, hyprdelj: Colors on the title screen wrong, games crash mame with ACCESS VIOLATION (Mamesick)
+- 02757: [Documentation] sengoku3: manufacturer should be "Noise Factory / SNK" (Phil Bennett)
 
 
 Source changes:

@@ -2,8 +2,34 @@
 ---------------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
+New Games Added or Promoted from NOT_WORKING Status
+---------------------------------------------------
+Unknown Poker [robiza, Angelo Salese]
+
+New Clones Added
+----------------
+Chase H.Q. (US) [Smitdogg]
+Crush Roller (bootleg?) [Tafoid, f205v]
+Exciting Soccer (Japan) [Uki]
+Pit Fighter (rev 7) [Smitdogg]
+Super Megatouch IV Tournament Edition (9255-51-01 ROB, Standard version) [Brian Troha]
+
+New Games Marked as GAME_NOT_WORKING
+------------------------------------
+Initial D : Arcade Stage Ver. 3 (Japan) (Rev B) [Alex's Rom Dumping Project]
+Key of Avalon 1.30 - Client [Alex's Rom Dumping Project]
+Key of Avalon 2.0 - Client [Alex's Rom Dumping Project]
+Sega Network Taisen Mahjong MJ 2 [Alex's Rom Dumping Project]
+Sega Network Taisen Mahjong MJ 3 (Rev D) [Alex's Rom Dumping Project]
+Triforce DIMM Updater [Alex's Rom Dumping Project]
+Virtua Fighter 4 Evolution (Rev A) [Alex's Rom Dumping Project]
+Virtua Fighter 4 Final Tuned (Rev A) [Alex's Rom Dumping Project]
+Virtua Fighter 4 Final Tuned (Rev D) [Alex's Rom Dumping Project]
+Wangan Midnight Maximum Tune 2 (Japan?) [Alex's Rom Dumping Project]
+
+
+MAMETesters Bugs Fixed (17):
+----------------------------
 - 00256: [Graphics] seganinj: [possible] Sprites leaving on the left side on the screen aren't clipped properly (Aaron Giles).
 - 00257: [Graphics] wbmlb, wbmljb: When the player sprite reaches the right side of the playfield, some garbage gfx appear on the left side (Aaron Giles).
 - 00303: [Graphics] regulus: In cocktail mode when it is player 2's turn graphics from the top of the screen flash at the bottom of the screen (Aaron Giles).
@@ -23,44 +49,18 @@ MAMETesters Bugs Fixed
 - 03098: [Color/Palette] all sets in mcatadv.c: Palette regression (Christophe Jaillet, Fabio Priuli).
 
 
-New games added or promoted from NOT_WORKING status
----------------------------------------------------
-Unknown Poker [robiza, Angelo Salese]
-
-New clones added
-----------------
-Chase H.Q. (US) [Smitdogg]
-Crush Roller (bootleg?) [Tafoid, f205v]
-Exciting Soccer (Japan) [Uki]
-Pit Fighter (rev 7) [Smitdogg]
-Super Megatouch IV Tournament Edition (9255-51-01 ROB, Standard version) [Brian Troha]
-
-New games marked as GAME_NOT_WORKING
-------------------------------------
-Initial D : Arcade Stage Ver. 3 (Japan) (Rev B) [Alex's Rom Dumping Project]
-Key of Avalon 1.30 - Client [Alex's Rom Dumping Project]
-Key of Avalon 2.0 - Client [Alex's Rom Dumping Project]
-Sega Network Taisen Mahjong MJ 2 [Alex's Rom Dumping Project]
-Sega Network Taisen Mahjong MJ 3 (Rev D) [Alex's Rom Dumping Project]
-Triforce DIMM Updater [Alex's Rom Dumping Project]
-Virtua Fighter 4 Evolution (Rev A) [Alex's Rom Dumping Project]
-Virtua Fighter 4 Final Tuned (Rev A) [Alex's Rom Dumping Project]
-Virtua Fighter 4 Final Tuned (Rev D) [Alex's Rom Dumping Project]
-Wangan Midnight Maximum Tune 2 (Japan?) [Alex's Rom Dumping Project]
-
-
 Source changes:
 ---------------
 - Crosshair update [Derrick Renaud]:
-  * Added Crosshair Options menu
-    - Ability to individually enable/disable crosshairs.
-    - Ability for them to automatically disappear after a set amount of time (this is now the default).
-    - Ability to select crosshair graphic.
-    - All settings are saved in the cfg file.
+  * Added Crosshair Options menu:
+  - Ability to individually enable/disable crosshairs.
+  - Ability for them to automatically disappear after a set amount of time (this is now the default).
+  - Ability to select crosshair graphic.
+  - All settings are saved in the cfg file.
   * Removed F1 toggle for crosshairs.
-  * Added new command option -crsshairpath.
-    - Store all selectable graphics here.
-    - See config.txt for further info.
+  * Added new command option -crsshairpath:
+  - Store all selectable graphics here.
+  - See config.txt for further info.
 - Merged memory maps, renamed sets in the following drivers: vendetta, videopkr, wrally, vball, unico, tsamuri, triplhnt, toypop, tnzs, topshoot, topspeed, tecmo, tecmo16, tecmosys, terracre, thoop2, tunderx, tiamc1, timelimt, taito_z [Aaron Giles].
 - Added direct mode JVS command, used by the i/o for the later Naomi games [ElSemi, Angelo Salese].
 - hyprduel fix [Hau].
@@ -101,7 +101,7 @@ Source changes:
   * Added a note about service menu browsing when mahjong panel is ON.
 - Konami inputs improvements [Fabio Priuli]:
   * Added source file konamipt.h to unify Konami inputs where possible (e.g. most 80s-90s games were using basically the same coinage  settings and joystick inputs).
- * While at it, verified all 0x00 coinage effects in drivers which now use konamipt.h (fixing a few mistakes: hexion, mikie, crimfgtj...).
+  * While at it, verified all 0x00 coinage effects in drivers which now use konamipt.h (fixing a few mistakes: hexion, mikie, crimfgtj...).
   * Added finalizb service coin. Removed roadf coin4 & asterix coin3 (neither used by the games nor present in service mode). 
   * Fixed gberetb coin inputs (they were switched). 
   * Added port_condition to hcrash so that brake appears only when present in the chosen cabinet.

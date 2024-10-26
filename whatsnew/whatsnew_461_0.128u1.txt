@@ -2,18 +2,7 @@
 ---------------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
-- 00359: [Sound] blocken: Some of the enemy voices are totally wrong (Phil Bennett)
-- 00436: [Sound] kyukaidk: Some of sound effects are wrong. Umpire's voice is most notable. Also, music is not correct (Phil Bennett)
-- 00468: [DIP/Input] gogomile, gogomilj: Inserting coins or pressing start has no effect at the continue screen (Phil Bennett)
-- 01702: [Gameplay] cloak + clones: Can't pick up items (Phil Bennett)
-- 01722: [Crash/Freeze] sokonuke: Game hangs after you choose stage (Aaron Giles)
-- 02140: [Save/Restore] cubeqst: cube quest crashes mame when saving state (Phil Bennett)
-- 02577: [DIP/Input] crush and clones: Broken Dips (Fabio Priuli)
-
-
-New games added or promoted from NOT_WORKING status
+New Games Added or Promoted from NOT_WORKING Status
 ---------------------------------------------------
 (Medal) Yumefuda [Bet] [Angelo Salese]
 Double Dealer [Angelo Salese, David Haywood]
@@ -21,7 +10,7 @@ Grudge Match (Yankee Game Technology) [Aaron Giles]
 Mirage Youjuu Mahjongden [Angelo Salese]
 Super Megatouch IV (9255-41-07 ROG, New Jersey version) [Mariusz Wojcieszek]
 
-New clones added
+New Clones Added
 ----------------
 Egg Venture (Release 8) [Brian Troha]
 Fire Shark (Korea, set 1, easier) [Guru]
@@ -31,10 +20,21 @@ Police Trainer (v1.3B Newer) [Brian Troha]
 Seibu Cup Soccer (set 2) [Chris Hardy] (NOT WORKING)
 The King of Fighters 2002 (bootleg) [Kawaks]
 
-New games marked as GAME_NOT_WORKING
+New Games Marked as GAME_NOT_WORKING
 ------------------------------------
 Magic the Gathering: Armageddon [David Haywood]
 P's Attack [Guru]
+
+
+MAMETesters Bugs Fixed (7):
+---------------------------
+- 00359: [Sound] blocken: Some of the enemy voices are totally wrong (Phil Bennett)
+- 00436: [Sound] kyukaidk: Some of sound effects are wrong. Umpire's voice is most notable. Also, music is not correct (Phil Bennett)
+- 00468: [DIP/Input] gogomile, gogomilj: Inserting coins or pressing start has no effect at the continue screen (Phil Bennett)
+- 01702: [Gameplay] cloak + clones: Can't pick up items (Phil Bennett)
+- 01722: [Crash/Freeze] sokonuke: Game hangs after you choose stage (Aaron Giles)
+- 02140: [Save/Restore] cubeqst: cube quest crashes mame when saving state (Phil Bennett)
+- 02577: [DIP/Input] crush and clones: Broken Dips (Fabio Priuli)
 
 
 Source changes:
@@ -59,11 +59,8 @@ Source changes:
 - Cleaned up STV ROM loading a bit [David Haywood].
 - NamcoNBx: Fixed C75 BIOS loading for big-endian targets [R. Belmont].
 - Updated tnzs.c driver [stephh]:
-  * Renamed sets :
-  - tnzsjn   -> tnzsj
-  - tnzsj    -> tnzsjo
-  - kagekia  -> kagekih
-  * Fixed Dip Switches for all games (2 remaining unknown Dips in 'plumppop' and 'jpopnics' though).
+  * Renamed sets: (tnzsjn) to (tnzsj), (tnzsj) to (tnzsjo) and (kagekia) to (kagekih).
+  * Fixed DIP Switches for all games (2 remaining unknown DIPs in plumppop and jpopnics though).
   * Added many notes.
 - Small cleanups to the ST-V driver. Make some work for magzun, still not working [Angelo Salese].
 - AICA: Fix sample addressing for the full 8 MB [kingshriek].

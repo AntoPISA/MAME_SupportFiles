@@ -3,18 +3,7 @@
 NOTE TO OSD PORTERS: The work interfaces have changed again. Please read details below. The updated interfaces remove functionality, so in the end it should be simpler(!) to port.
 
 
-MAMETesters Bugs Fixed
-----------------------
-finalizr0102u5gra (Mike Green)
-futspy0114gra (Mike Green)
-ghostb0105u4gra (Mike Green)
-gijoe0114gra (Mike Green)
-parodius0111u3gra (Mike Green)
-playch10_0109gre (Mike Green)
-seibuspisingle099u9yel (Couriersud)
-
-
-New games added or promoted from NOT_WORKING status
+New Games Added or Promoted from NOT_WORKING Status
 ---------------------------------------------------
 Hana wo Yaraneba! (Japan) [Luca Elia]
 Hanafuda Hana Tengoku (Japan) [Luca Elia]
@@ -24,7 +13,7 @@ Jongkyo [David Haywood, Nicola Salmoria]
 Player's Edge Plus (PP0516) Double Bonus Poker [Jim Stolis]
 Super Real Mahjong Part 1 (Japan) [David Haywood]
 
-New clones added
+New Clones Added
 ----------------
 Airwolf (US) [David Haywood]
 Golden Tee '97 Tournament (v2.43) [Brian Troha]
@@ -32,7 +21,7 @@ Pang (bootleg, set 3) [David Haywood]
 Super Bobble Bobble (set 1) [David Haywood]
 Toride II Adauchi Gaiden (Japan) [David Haywood]
 
-New games marked as GAME_NOT_WORKING
+New Games Marked as GAME_NOT_WORKING
 ------------------------------------
 GP World [Andrew Gardner]
 GTI Poker [David Haywood]
@@ -40,9 +29,20 @@ Hanajingi [Luca Elia]
 Poker? (IGS) [David Haywood]
 
 
+MAMETesters Bugs Fixed (7):
+---------------------------
+finalizr0102u5gra (Mike Green)
+futspy0114gra (Mike Green)
+ghostb0105u4gra (Mike Green)
+gijoe0114gra (Mike Green)
+parodius0111u3gra (Mike Green)
+playch10_0109gre (Mike Green)
+seibuspisingle099u9yel (Couriersud)
+
+
 Source changes:
 ---------------
-- Moved 'Hayaoshi Quiz Ouza Ketteisen' to its own driver [David Haywood].
+- Moved Hayaoshi Quiz Ouza Ketteisen to its own driver [David Haywood].
 - Added coin counters to cabal bootleg and hooked up the 2 sample player CPUs in cabal bootleg. It seems there still are some problems, because  the coin up music is played during the game [Pierpaolo Prazzoli].
 - More improvements to the Vs. Janshi Brandnew Stars driver [David Haywood].
 - More SCSP improvements [El Semi]:

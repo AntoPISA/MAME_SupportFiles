@@ -2,8 +2,32 @@
 ---------------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
+New Games Added or Promoted from NOT_WORKING Status
+---------------------------------------------------
+Poker Master (Tony-Poker V3.A, hack?) [David Haywood, William Ostronic]
+Shinobi / FZ-2006 (Korean System 16 bootleg)  (ISG Selection Master Type 2006) [anonymous]
+
+New Clones Added
+----------------
+Sega Rally Championship (Revision B) [Alex's Blog]
+Touchmaster 2000 Plus (v4.63 Standard) [Brian Troha, The Dumping Union]
+Touchmaster 4000 (v6.01 Standard) [Brian Troha, The Dumping Union]
+Vigilante (World, set 2) [porchy]
+
+New Games Marked as GAME_NOT_WORKING
+------------------------------------
+Crisis Zone (CSZO2 Ver. A) [Guru]
+Jubilee Double-Up Poker [Roberto Fresca]
+Maximum Speed [Guru]
+Movie Card [Roberto Fresca, Team Europe & Housi]
+Piccolo Poker [Roberto Fresca, Team Europe & Housi]
+Soul Calibur 2 (SC22 Ver. A) [Guru]
+Swiss Poker ('50 SG-.10', V2.5 [Roberto Fresca, Tomasz Slanina, Team Europe & Housi]
+White Tiger [Palindrome]
+
+
+MAMETesters Bugs Fixed (10):
+----------------------------
 - 00944: [Graphics] ghox: There are gfx glitches on the background in the ending scene (robiza)
 - 00945: [Graphics] bkraidu: Text glitch in the flip screen mode (robiza)
 - 01993: [Graphics] stmblade: Graphical corruption on left side of screen beginining stage 3 (robiza)
@@ -14,30 +38,6 @@ MAMETesters Bugs Fixed
 - 04036: [Graphics] astrowar: [debug] Severe graphic corruption (Fabio Priuli)
 - 04044: [Graphics] batsugun and clones: [possible] batsugun VDP mixing still not correct (David Haywood)
 - 04050: [Graphics] twineag2: Missing graphic effect in screen transitions (robiza)
-
-
-New games added or promoted from NOT_WORKING status
----------------------------------------------------
-Poker Master (Tony-Poker V3.A, hack?) [David Haywood, William Ostronic]
-Shinobi / FZ-2006 (Korean System 16 bootleg)  (ISG Selection Master Type 2006) [anonymous]
-
-New clones added
-----------------
-Sega Rally Championship (Revision B) [Alex's Blog]
-Touchmaster 2000 Plus (v4.63 Standard) [Brian Troha, The Dumping Union]
-Touchmaster 4000 (v6.01 Standard) [Brian Troha, The Dumping Union]
-Vigilante (World, set 2) [porchy]
-
-New games marked as GAME_NOT_WORKING
-------------------------------------
-Crisis Zone (CSZO2 Ver. A) [Guru]
-Jubilee Double-Up Poker [Roberto Fresca]
-Maximum Speed [Guru]
-Movie Card [Roberto Fresca, Team Europe & Housi]
-Piccolo Poker [Roberto Fresca, Team Europe & Housi]
-Soul Calibur 2 (SC22 Ver. A) [Guru]
-Swiss Poker ('50 SG-.10', V2.5 [Roberto Fresca, Tomasz Slanina, Team Europe & Housi]
-White Tiger [Palindrome]
 
 
 Source changes:
@@ -90,8 +90,7 @@ Source changes:
 - Integrated comments into debugcpu.c, and removed debugcmt.c. Modernized the code and updated so it actually works with the modern debug classes [Aaron Giles].
 - Added AM_DEVREAD_MODERN/AM_DEVWRITE_MODERN/etc. macros for the non-modern address map case so that updated devices can shed their old-style read/write handlers in favor of member functions [Aaron Giles].
 - Bulk converted all okim6295_r/okim6295_w references in the address maps to call to the modern member functions [Aaron Giles].
-- quizpani (quizpani.c) [stephh]:
-  * Improved Dip Switches and fixed Inputs (after verification of the M68000 code).
+- quizpani (quizpani.c): Improved DIP switches and fixed Inputs (after verification of the M68000 code) [stephh].
 - Renamed namcops2 DVDs to match labels [Guru].
 - Added read_status() and write_command() methods to the okim6295_device for the common case where these are done outside the context of a read or write handler (it was annoying to pass in the fake address space for these cases) [Aaron Giles].
 - Added DEVCB_DEVICE_MEMBER() macros which allow you to specify a READ8_MEMBER or WRITE8_MEMBER in a device callback (via dynamically generated trampolines) [Aaron Giles].
@@ -130,13 +129,13 @@ Source changes:
   * Changed to use the new device timer mechanism.
   * Removed all trampolines in favor of modern methods.
 - ssv: removed kludge for sprite x offset and implemented 1 bit of 7a-7b register [Roberto Zandona'].
-- ssv [Roberto Zandona']:
+- ssv [Roberto Zandonà]:
   * Implemented y sprite inversion CRT register.
   * Added a kludge for dynagear.
   * Used CRT registers to get the sprite x offset.
 - ssv: Removed offset values from the init; the offset now are handled by the CRT registers. Fixed bit #a of 7a-7b CRT register [Roberto Zandona'].
 - Converted intelfsh to a device, updated all users [Aaron Giles].
-- ssv: Fixed background disable condition [Roberto Zandona'].
+- ssv: Fixed background disable condition [Roberto Zandonà].
 - New build tool makedep.c, derived from src2html.c (really!). Does basic dependency analysis and supports excluding paths [Aaron Giles].
 - Makefile now supports a depend target which will run makedep on the src/$(TARGET) tree and create dependencies. It deliberately excludes the root of src/emu as well as the osd directories in order to keep the dependency file down to a reasonable size, so if a core header file changes, you still need to clean and build all [Aaron Giles].
 - CHDMAN: improved -extractcd bin/cue output, improved error handling [R. Belmont].
@@ -149,7 +148,7 @@ Source changes:
   * savagere, kizuna - Added correct c1.
   * crsword: Tagged MVS AND AES VERSION, added correct m1.
   * legendos: Added correct m1.
-- 'Triple Punch'/'Knock Out'.
+- Triple Punch/Knock Out.
 - AY-3-8910 clock speed was incorrect, fixed and verified from real hardware [plgDavid].
 - Verified clocks and oki pin on quiz channel question boardset [plgDavid].
 - Added an integral device_timer_id to device timers. This is a cleaner way to differentiate between multiple timers rather than relying on the pointers. These values are also saved with the timers. Updated the few devices using device timers to leverage this [Aaron Giles].

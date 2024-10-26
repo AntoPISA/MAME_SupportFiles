@@ -2,8 +2,25 @@
 ---------------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
+New Games Added or Promoted from NOT_WORKING Status
+---------------------------------------------------
+Astropal (Sidam?) [Couriersud]
+Baby Dado [Grull Osgo, Roberto Fresca]
+Baby Poker [Grull Osgo, Roberto Fresca]
+Megatouch 5 (9255-60-07 RON, New Jersey version) [Brian Troha]
+Sonic Blast Man 2 Special Turbo (SNES bootleg) [Andreas Naive, Tomasz Slanina]
+
+New Clones Added
+----------------
+Armored Warriors (US 940920) [Razoola]
+Decathlete V1.001 [Andrea Turci]
+Megatouch III (9255-20-07 ROG, New Jersey version) [Brian Troha]
+Mortal Kombat 3 (rev 1 chip label p4.0) [Andrea Turci]
+Super Megatouch IV (9255-41-07 ROG, New Jersey version) [Brian Troha] (Not Working)
+
+
+MAMETesters Bugs Fixed (26):
+----------------------------
 - 00081: [Crash/Freeze] dcclub: Game crash and freeze (Olivier Galibert)
 - 00989: [Graphics] qgh: If you do a metamorphose, the screen turns black without displaying words/pictures (David Haywood)
 - 00998: [Crash/Freeze] dcclubfd: Hangs during playing with an access violation error (Olivier Galibert)
@@ -32,23 +49,6 @@ MAMETesters Bugs Fixed
 - 02502: [Crash/Freeze] fax, hardhat, mtrap, pepper2, teetert, venture and clones: Accessing a certain portion of memory in the debugger causes crash (Aaron Giles)
 
 
-New games added or promoted from NOT_WORKING status
----------------------------------------------------
-Astropal (Sidam?) [Couriersud]
-Baby Dado [Grull Osgo, Roberto Fresca]
-Baby Poker [Grull Osgo, Roberto Fresca]
-Megatouch 5 (9255-60-07 RON, New Jersey version) [Brian Troha]
-Sonic Blast Man 2 Special Turbo (SNES bootleg) [Andreas Naive, Tomasz Slanina]
-
-New clones added
-----------------
-Armored Warriors (US 940920) [Razoola]
-Decathlete V1.001 [Andrea Turci]
-Megatouch III (9255-20-07 ROG, New Jersey version) [Brian Troha]
-Mortal Kombat 3 (rev 1 chip label p4.0) [Andrea Turci]
-Super Megatouch IV (9255-41-07 ROG, New Jersey version) [Brian Troha] (Not Working)
-
-
 Source changes:
 ---------------
 - Removed unneeded UI keys by removing the constants. Readded UI_ON_SCREEN_DISPLAY to be changed again in the "Inputs" menu [stephh].
@@ -74,10 +74,10 @@ Source changes:
   * worldwar, bermudaa
   * psychos, psychosj
 - Added correct overlay positioning, font, and behavior to PR-8210 emulation [Aaron Giles, Warren Ondras].
-- Sonic Blast Man 2 Special Turbo (SNES bootleg) changes [Andreas Naive, Tomasz Slanina]
- - Added ROM decryption.
- - Patched protection checks.
- - Mapped extra inputs.
+- Sonic Blast Man 2 Special Turbo (SNES bootleg) changes [Andreas Naive, Tomasz Slanina]:
+  * Added ROM decryption.
+  * Patched protection checks.
+  * Mapped extra inputs.
 - Fixed timers in i8051 core [Grull Osgo].
 - Fixed the i8051 AJMP opcode to take 2 bytes instead of 3 [Grull Osgo].
 - Improved the button-lamps layout to all games in ampoker2.c driver: Now buttons are more realistic. Also improved the Lucky 74 button-lamps layout to be more realistic [Roberto Fresca].

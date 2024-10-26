@@ -5,9 +5,28 @@ IMPORTANT NOTICE: This update represents the first part of a monumental internal
 2. If you are up to coding, help us by submitting patches that remove the use of [Mm]achine->activecpu and/or cpunum_get_active(). You should be able to derive which CPU you are referencing through other means. To avoid duplication of effort, either send these quickly in small bunches, or better yet, send a message to the submission address announcing your intention to work on a certain class of drivers.
 
 
+New Games Added or Promoted from NOT_WORKING Status
+---------------------------------------------------
+Filetto [Angelo Salese]
+Firefox [Aaron Giles, smf]
+Jackie Chan - The Kung-Fu Master [David Haywood, Andreas Naive, stephh, Angelo Salese]
 
-MAMETesters Bugs Fixed
-----------------------
+New Clones Added
+----------------
+Beast Busters (US, Version 2) [Brian Hargrove]
+Daitoride (YMF278B version) [Stefan Lindberg]
+Puzzle Bobble 2 (Ver 2.3O 1995/07/31) [Ross Myers]
+Soldam (World?) [Gerald]
+Street Fighter II' - Champion Edition (Rainbow set 3, bootleg) [Bill DeLeo]
+Violent Storm (ver UAC) [Bill DeLeo]
+
+New Games Marked as GAME_NOT_WORKING
+------------------------------------
+Motocross Go! (MG3 Ver. A) [Guru]
+
+
+MAMETesters Bugs Fixed (9):
+---------------------------
 - 02092: [Graphics] spinlbrk and clones: Priorities issues (robiza)
 - 02196: [DIP/Input] scross: Five Player 2 buttons are mapped twice (Luigi30)
 - 02641: [Graphics] strider and clones: Problem with graphics layer (Nicola Salmoria)
@@ -17,26 +36,6 @@ MAMETesters Bugs Fixed
 - 02660: [Crash/Freeze] All sets in decocass.c: Games freeze when the  count reach 15, 14 or 13 (Couriersud)
 - 02667: [Sound] bbmanwj: No sound since 0.123u2. (robiza)
 - 02668: [DIP/Input] vendetta + clones: NVRAM being corrupted (Mamesick)
-
-
-New games added or promoted from NOT_WORKING status
----------------------------------------------------
-Filetto [Angelo Salese]
-Firefox [Aaron Giles, smf]
-Jackie Chan - The Kung-Fu Master [David Haywood, Andreas Naive, stephh, Angelo Salese]
-
-New clones added
-----------------
-Beast Busters (US, Version 2) [Brian Hargrove]
-Daitoride (YMF278B version) [Stefan Lindberg]
-Puzzle Bobble 2 (Ver 2.3O 1995/07/31) [Ross Myers]
-Soldam (World?) [Gerald]
-Street Fighter II' - Champion Edition (Rainbow set 3, bootleg) [Bill DeLeo]
-Violent Storm (ver UAC) [Bill DeLeo]
-
-New games marked as GAME_NOT_WORKING
-------------------------------------
-Motocross Go! (MG3 Ver. A) [Guru]
 
 
 Source changes:
@@ -113,7 +112,7 @@ Source changes:
   cpu_spinuntil_trigger
   cpu_triggerint
 
-  *  Merged cpuint.c into cpuexec.c. One side-effect of this change is that driver reset callbacks are called AFTER the CPUs and devices are reset. This means that if you make changes to the CPU state and expect the reset vectors to recognize the changes in your reset routine, you will need to manually reset the CPU after making the change (since it has already been reset).
+  * Merged cpuint.c into cpuexec.c. One side-effect of this change is that driver reset callbacks are called AFTER the CPUs and devices are reset. This means that if you make changes to the CPU state and expect the reset vectors to recognize the changes in your reset routine, you will need to manually reset the CPU after making the change (since it has already been reset).
   * Added a number of inline helper functions to cpuintrf.h for managing addresses.
   * Removed cpu_gettotalcpu(). This information is rarely needed outside of the core and can be obtained by looking at the machine->cpu[] array.
   * Changed CPU interrupt acknowledge callbacks to pass a CPU device instead of machine/cpunum pair.
@@ -129,7 +128,7 @@ Source changes:
   * Reorganized some code for simpler comparison of 68xx cores.
 - Pre-irq rewrite submission in ST-V driver [Angelo Salese]:
   * Better management of hblank/vblank bits.
- * Makes dynamic resolutions to be called with a timer instead of run-time.
+  * Makes dynamic resolutions to be called with a timer instead of run-time.
   * Makes dynamic resolutions to not be changed at every frame but only when there's an actual change.
   * Fixed Final Arch broken Test Mode.
   * Demoted Super Major League / Final Arch as GAME_NOT_WORKING, they hangs randomly due of SH-2 master/slave communication RAM issues.
@@ -167,8 +166,7 @@ Source changes:
   * Pointer-ified all H8 cores
   * Some cleanup and renames toward additional future work.
 - System 23: Added extremely preliminary support for I/O boards with the H8/3344 [R. Belmont].
-- Removed the change_pc() macro. Changed memory_set_direct_region() to return a boolean indicating whether the given address was successfully located in a bank. Change raw/decrypted access to look at this result, and if the given address is not in a bank, calls through to the standard read handlers. This should prevent most crashes when 
-accessing opcodes [Aaron Giles].
+- Removed the change_pc() macro. Changed memory_set_direct_region() to return a boolean indicating whether the given address was successfully located in a bank. Change raw/decrypted access to look at this result, and if the given address is not in a bank, calls through to the standard read handlers. This should prevent most crashes when accessing opcodes [Aaron Giles].
 - Fixed address space mapping handlers to invalidate direct access regions if a change is made to the mapping. This is needed to prevent the Sega dynamic memory mapping chips from falling over [Aaron Giles].
 - Refactored the CDP1802 and COP400 CPU cores to use the new memory functions [Curt Coder].
 - Switched m6809 and hd6309 to new memory functions [Couriersud]:

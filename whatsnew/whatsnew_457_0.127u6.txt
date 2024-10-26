@@ -2,8 +2,19 @@
 ---------------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
+New Games Added or Promoted from NOT_WORKING Status
+---------------------------------------------------
+Gals Panic (US, EXPRO-02 PCB)
+Pit Boss [Couriersud]
+
+New Clones Added
+----------------
+20 Year Reunion (V1.04) [Johan Samuelsson]
+Capcom Sports Club (EURO 971017) [Corrado Tomaselli]
+
+
+MAMETesters Bugs Fixed (8):
+---------------------------
 - 01090: [Crash/Freeze] invadpt2, sicv: Watchdog reset. (Couriersud)
 - 02024: [Color/Palette] pbobble3, pbobble4, ringrage and clones: Color Regression (Nicola Salmoria)
 - 02194: [Misc.] All Sets in othunder.c: Black screen, game does not start (Couriersud)
@@ -13,38 +24,28 @@ MAMETesters Bugs Fixed
 - 02441: [Crash/Freeze] rdft22kc: rdft22kc just shows a black screen and fails to boot (Couriersud)
 - 02442: [Core] -aviwrite produces faulty files (Aaron Giles)
 
-New games added or promoted from NOT_WORKING status
----------------------------------------------------
-Gals Panic (US, EXPRO-02 PCB)
-Pit Boss [Couriersud]
-
-New clones added
-----------------
-20 Year Reunion (V1.04) [Johan Samuelsson]
-Capcom Sports Club (EURO 971017) [Corrado Tomaselli]
-
 
 Source changes:
 ---------------
 - NeoGeo update [Johnboy]:
-  - Updated Neo-Geo game pcb infos.
-  - 2020bba: Marked MVS and AES version.
-  - sonicwi2: Added correct sized v2.
+  - Updated Neo-Geo game PCB infos.
+  * 2020bba: Marked MVS and AES version.
+  * sonicwi2: Added correct sized v2.
   - kof95/kof95a:
-  * Renamed kof95 to kof95h.
+  * Renamed (kof95) to (kof95h).
   * Renamed p1 to correct chip label.
   * Added note.
-  * Renamed kof95a to kof95.
-  * Renamed p1
+  * Renamed (kof95a) to (kof95).
+  * Renamed p1.
   - samsho3/samsho3a:
-  * Renamed samsho3a to samsho3.
-  * Renamed samsho3 to samsho3h.
+  * Renamed (samsho3a) to (samsho3).
+  * Renamed (samsho3) to (samsho3h).
   * Renamed p1 to correct chip label.
   * Marked AES version.
   - kof98/kof98n:
   * Renamed m1 in kof98 to correct chip label.
-  * Renamed m1 in kof98n to correct chip label (kof98n should be latest revision, cart had very high SN 1xx.xxx)
-  - kof97: Marked MVS version
+  * Renamed m1 in kof98n to correct chip label (kof98n should be latest revision, cart had very high SN 1xx.xxx).
+  - kof97: Marked MVS version.
   - samsho5/samsho5h:
   * Correct text layer size.
   * Marked samsho5h AES version.
@@ -54,7 +55,7 @@ Source changes:
   - ms5pcb:
   * Hooked up BIOS DIP.
   * Renamed BIOS to correct chip label.
-  * Renamed p1/p2 to correct chip label, marked NO_DUMP
+  * Renamed p1/p2 to correct chip label, marked NO_DUMP.
   * Added note.
 - Added pen_mask tile attribute to the tilemap system. Implemented dynamic tile & sprite bit depth in the Taito F3 driver [Nicola Salmoria].
 - Changed MAKE_RGB macro to set the alpha to 255 instead of 0. Updated palette.c to preserve the alpha when transforming palette values.These changes should be transparent to almost all drivers and rendering (ha-ha), but there may be an occasional instance where a driver relied on the alpha being 0 in the system palette. This also means that the palette_set_color() function preserves any alpha value that is set [Aaron Giles].
@@ -62,8 +63,8 @@ Source changes:
 - Removed render_container_set_palette_alpha() hack. Now the alpha value can be set directly in the palette entry and will be respected for laserdisc overlays [Aaron Giles].
 - Minor NSS/SNES cleanups [Fabio Priuli].
 - Updated warpwarp.c driver [stephh]:
-  * Reworked 'geebee', 'navarone' and 'warpwarp' INPUT_PORTS definitions by using conditional DIP Switches.
-  * Added 'geebeeb' INPUT_PORTS definition (this game has specific "Replay" settings).
+  * Reworked geebee, navarone and warpwarp INPUT_PORTS definitions by using conditional DIP Switches.
+  * Added geebeeb INPUT_PORTS definition (this game has specific "Replay" settings).
 - Removed unneeded keys [stephh]:
   * UI_ON_SCREEN_DISPLAY (there is now a "Slider Controls" menu)
   * UI_ADD_CHEAT, UI_DELETE_CHEAT, UI_SAVE_CHEAT, UI_WATCH_VALUE, UI_EDIT_CHEAT, UI_RELOAD_CHEAT (these keys belonged to the old cheat engine).
@@ -116,8 +117,7 @@ Source changes:
   * Added MDRV_PPI8255_ADD, MDRV_PPI8255_RECONFIG and MDRV_PPI8255_REMOVE macros; updated all drivers to use them
   * Changed callbacks to device read/write handlers intead of machine read/write handlers; updated all drivers accordingly.
   * Normalized function and variable names to be lower_under.
-  * Removed a number of redundant interfaces from the galaxian/
-    scamble line of games.
+  * Removed a number of redundant interfaces from the galaxian/scamble line of games.
 - LD-V1000: Added some (compile-time removed) information about the ROM and memory map [Aaron Giles].
 - Changed 68000 interrupts to only trigger during execution. This means that multiple changes without any execution will be seen as atomic. It also means that PULSE_LINE no longer works for signalling IRQs [Aaron Giles].
 - Added checks in the debug build to catch people who try to use PULSE_LINE for non-NMI and non-RESET input lines on CPUs that no longer support direct interrupt generation. Over time expect this list to increase [Aaron Giles].

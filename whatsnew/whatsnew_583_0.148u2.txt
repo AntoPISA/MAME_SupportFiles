@@ -2,20 +2,7 @@
 ---------------------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
-- 02657: [Graphics] (saturn.c) puyosun: Part of graphics disappear (Angelo Salese)
-- 03086: [Graphics] (saturn.c) prikura: Glitches in attract mode and ending (Angelo Salese)
-- 03871: [DIP/Input] (saturn.c) suikoenb: Game boots with credits being entered (Angelo Salese)
-- 04501: [Gameplay] (stv.c) groovef: Game starts with 2 credits (Angelo Salese)
-- 04837: [Crash/Freeze] (aleck64.c) mtetrisc, starsldr: [debug] Crash after OK (Firewave)
-- 05122: [Graphics] (psikyosh.c) daraku:  Game has corrupted font used for "insert coin" "game over" etc. It covers first screen used for monitor calibration as well and sometimes appears when it should not be [David Haywood)
-- 05145: [Color/Palette] (vicdual.c) hocrash: The game has no blue color.  When you go in the tab and select game configuration and switch to color it remains black/white (hap)
-- 05155: [Misc.] (wwfsstar.c) wwfsstar: Japanese text displayed in euro version (David Haywood)
-- 05165: [Graphics] (moo.c) buckyaab and buckyuab: Graphics are missing (hap)
-
-
-New games added or promoted from NOT_WORKING status
+New Games Added or Promoted from NOT_WORKING Status
 ---------------------------------------------------
 Cool Riders [David Haywood,  Angelo Salese]
 Dream Ball [J. Finney, TrevEB, Yohji, Smitdogg, The Dumping Union, David Haywood]
@@ -24,7 +11,7 @@ Stadium Hero '96 [David Haywood, Angelo Salese]
 Williams 6-in-1 Multigame [robbbert]
 Zenkoku Seifuku Bishoujo Grand Prix Find Love [Angelo Salese]
 
-New clones added
+New Clones Added
 ----------------
 Bomb Kick (set 2) [ANY]
 Chinese Hero (older, set 2) [Zab]
@@ -45,10 +32,23 @@ Super Ranger (older) [ANY]
 Three Wonders (World 910513) [Bonky0013, The Dumping Union]
 WWF WrestleFest (Korea) [Simon Dennison]
 
-New games marked as GAME_NOT_WORKING
+New Games Marked as GAME_NOT_WORKING
 ------------------------------------
 Hot Slots (6.00) [Roberto Fresca, Gerald (COY)]
 unknown 186 based gambling game (2 sets) [ANY]
+
+
+MAMETesters Bugs Fixed (9):
+---------------------------
+- 02657: [Graphics] (saturn.c) puyosun: Part of graphics disappear (Angelo Salese)
+- 03086: [Graphics] (saturn.c) prikura: Glitches in attract mode and ending (Angelo Salese)
+- 03871: [DIP/Input] (saturn.c) suikoenb: Game boots with credits being entered (Angelo Salese)
+- 04501: [Gameplay] (stv.c) groovef: Game starts with 2 credits (Angelo Salese)
+- 04837: [Crash/Freeze] (aleck64.c) mtetrisc, starsldr: [debug] Crash after OK (Firewave)
+- 05122: [Graphics] (psikyosh.c) daraku: Game has corrupted font used for "insert coin" "game over" etc. It covers first screen used for monitor calibration as well and sometimes appears when it should not be [David Haywood)
+- 05145: [Color/Palette] (vicdual.c) hocrash: The game has no blue color.  When you go in the tab and select game configuration and switch to color it remains black/white (hap)
+- 05155: [Misc.] (wwfsstar.c) wwfsstar: Japanese text displayed in euro version (David Haywood)
+- 05165: [Graphics] (moo.c) buckyaab and buckyuab: Graphics are missing (hap)
 
 
 Source changes:
@@ -59,10 +59,10 @@ Source changes:
 - Modernized the MOS6526, MOS6560, MOS7360, MOS6581, CBM IEC, and IEEE-488 devices [Curt Coder].
 - mos6551: Added serial callbacks [Curt Coder].
 - fmtowns: Preliminary implementation of the CD-ROM controller's software mode.  Enough to get the CD-ROM working under Win95 [Barry Rodewald].
-- Improved protection in 'Steep Slope Sliders' [Angelo Salese].
+- Improved protection in Steep Slope Sliders [Angelo Salese].
 - Added a more sane ST-V SMPC Intback command emulation, based off Saturn version. Fixes inputs in 'Find Love' [Angelo Salese].
 - emuopts.c: Avoid slots without user configurable options to write their configs at exit [Fabio Priuli].
-- Fixed protection check in 'Tecmo World Cup '98', game is now playable (Tecmo logo & Title Screen still garbled) [Angelo Salese].
+- Fixed protection check in Tecmo World Cup '98, game is now playable (Tecmo logo & Title Screen still garbled) [Angelo Salese].
 - Fixed SMPC change clock behaviour, fixes 2 credits at start-up for various ST-V games [Angelo Salese].
 - input: Support up to 32 buttons and harmonize Windows and SDL behavior if you exceed the limit [Nick3092].
 - Fixed SH-2 DMAC irqs, fixes at least hard-locking on 'Baroque' [Angelo Salese].

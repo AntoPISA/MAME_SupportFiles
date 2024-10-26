@@ -2,8 +2,25 @@
 ---------------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
+New Games Added or Promoted from NOT_WORKING Status
+---------------------------------------------------
+Fire Fox (still needs proper laserdisc support) [smf]
+
+New Clones Added
+----------------
+Hot Mind (adjustable prize) [David Haywood, Roberto Fresca]
+Marvel Vs. Capcom: Clash of Super Heroes (Euro 980123) [bonky_0013]
+Pool 10 (italian, set 4) [Roberto Fresca]
+Tengai (World) [Jet Black / Tormod]
+Three Wonders (hack?) [EMMA team]
+
+New Games Marked as GAME_NOT_WORKING
+------------------------------------
+Funny Land de Luxe [Tomasz Slanina]
+
+
+MAMETesters Bugs Fixed (9):
+---------------------------
 - 01897: [Original Reference] birdtry: DIP switch settings from manual (Tafoid)
 - 02210: [Misc.] fieldday, undoukai: Game doesn't start. Source typo in 0.126u2 (MASH)
 - 02233: [Speed] chboxing, chwrestl, dokidoki: Game Speed/Timing issue (Curt Coder)
@@ -13,23 +30,6 @@ MAMETesters Bugs Fixed
 - 02242: [Gameplay] ikarijp, ikarijpb: Test screen now required to be cycled to enter game (Nicola Salmoria)
 - 02248: [Sound] All sets in m58.c: No sound in game (Aaron Giles)
 - 02249: [Crash/Freeze] All Sets in zn.c: Game Hangs (Aaron Giles)
-
-
-New games added or promoted from NOT_WORKING status
----------------------------------------------------
-Fire Fox (still needs proper laserdisc support) [smf]
-
-New clones added
-----------------
-Hot Mind (adjustable prize) [David Haywood, Roberto Fresca]
-Marvel Vs. Capcom: Clash of Super Heroes (Euro 980123) [bonky_0013]
-Pool 10 (italian, set 4) [Roberto Fresca]
-Tengai (World) [Jet Black / Tormod]
-Three Wonders (hack?) [EMMA team]
-
-New games marked as GAME_NOT_WORKING
-------------------------------------
-Funny Land de Luxe [Tomasz Slanina]
 
 
 Source changes:
@@ -59,7 +59,7 @@ Source changes:
   * Improved lamps layout for all games.
   * Added Pool 10 pinout and DIP switches info.
   * Updated technical notes.
-- Jaleco 'Bomb's Away' Improvements [aDG4W+qp0].
+- Jaleco Bomb's Away Improvements [aDG4W+qp0].
 - Modified the laserdisc core to leverage the pre-decoded frame metadata, which is now required. This improves seek times when searching and allows the player-specific emulation access to the VBI data as soon as it would really be available. Changed update callback timing to fire just before the first line of VBI data would be read; at that point, the frame selection is assumed to be committed [Aaron Giles].
 - Separate NBA Jam TE from NBA Jam as they are not technically clones of each other [Atari Ace].
 - Updated ldplayer to support slow/fast forward movement, frame/chapter display, and separate controls for scanning/stepping [Aaron Giles].

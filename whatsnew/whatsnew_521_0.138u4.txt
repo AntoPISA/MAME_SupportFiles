@@ -2,28 +2,17 @@
 ---------------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
-- 00790: [Documentation] armwrest: DIP switch inspection (hap)
-- 02813: [Sound] amerdart, amerdart2: No sound due to missing ROM (Quench)
-- 03536: [Misc.] PowerPC core: Overlapping data buffers (Atari Ace)
-- 03606: [Multisession] altbeast, aliensyn3: Graphic corruption on multiple segas16b.c launches in single session (Atari Ace)
-- 03928: [Crash/Freeze] Many sets: Out of memory crash using -cheat (Aaron Giles)
-- 03938: [Crash/Freeze] torus: Crash after completing Level 1 (Fabio Priuli)
-- 03943: [Graphics] tknight, wildfang: The screen shaking effect is missing in MAME (hap)
-
-
-New games added or promoted from NOT_WORKING status
+New Games Added or Promoted from NOT_WORKING Status
 ---------------------------------------------------
 Puzzle Break [David Haywood, Smitdogg, The Dumping Union]
 
-New clones added
+New Clones Added
 ----------------
 Captain Commando (World 911202) [Stefan Lindberg, The Dumping Union]
 Fruit Bonus '06 - 10th anniversary (Version 1.3R CGA) [Brian Troha, The Dumping Union]
 Juuouki (set 5, Japan, FD1094 317-0069, not working) [Stefan Lindberg, The Dumping Union]
 Magical Odds (set 2) [W. Herve, Smitdogg, The Dumping Union]
-Mystic Riders (bootleg?)  [David Raingeard]
+Mystic Riders (bootleg?) [David Raingeard]
 Raiden Fighters Jet - 2000 (China) [Brian Troha, Guru]
 Space Ship [f4brice]
 Street Fighter Zero (Hispanic 950718) [Layne, N. Francfort, R. Mucciarelli, Smitdogg, The Dumping Union]
@@ -31,12 +20,23 @@ Terminator 2 - Judgment Day (rev LA4 08/03/92) [Gor, Smitdogg, The Dumping Union
 Wild Fang [Stefan Lindberg, The Dumping Union]
 Wonder Boy III - Monster Lair (set 6, System 16A, FD1089A 317-xxxx) (better dump?) [Team Europe]
 
-New games marked as GAME_NOT_WORKING
+New Games Marked as GAME_NOT_WORKING
 ------------------------------------
 Gundam Battle Operating Simulator (GDX-0013) [Team Europe, Joerg Hartenberger]
 Ollie King (GDX-0007) [Team Europe, Joerg Hartenberger]
 Sega Club Golf 2006 Next Tours (Rev A) (GDX-0018A) [Team Europe, Joerg Hartenberger]
 Tokio/Scramble Formation (japanese?, newer) [Guru, Roger Coltrane, Smitdogg, The Dumping Union]
+
+
+MAMETesters Bugs Fixed (7):
+---------------------------
+- 00790: [Documentation] armwrest: DIP switch inspection (hap)
+- 02813: [Sound] amerdart, amerdart2: No sound due to missing ROM (Quench)
+- 03536: [Misc.] PowerPC core: Overlapping data buffers (Atari Ace)
+- 03606: [Multisession] altbeast, aliensyn3: Graphic corruption on multiple segas16b.c launches in single session (Atari Ace)
+- 03928: [Crash/Freeze] Many sets: Out of memory crash using -cheat (Aaron Giles)
+- 03938: [Crash/Freeze] torus: Crash after completing Level 1 (Fabio Priuli)
+- 03943: [Graphics] tknight, wildfang: The screen shaking effect is missing in MAME (hap)
 
 
 Source changes:
@@ -48,10 +48,12 @@ Source changes:
 - Renamed feof to image_feof (in device_image_interface) in order to compile on FreeBSD [El Barto].
 - Removed devtag_get_device(); use machine->device() instead [Aaron Giles].
 - Removed the global clock accessors and cpu_* aliases [Aaron Giles]:
+
   cpu_get_clock == device->unscaled_clock
   cpu_set_clock == device->set_unscaled_clock
   cpu_get_clockscale == device->get_clock_scale 
   cpu_set_clockscale == device->set_clock_scale
+  
 - Fix bad loop condition that shows up with -cheat enabled [Aaron Giles].
 - Adding ability to support other types of software lists, so floppies, cassettes, cd-roms are now possible to be used [Miodrag Milanovic].
 - MAMEdev kant spel (Ubuntu/Canonical cares about this) [wallyweek].
@@ -74,12 +76,12 @@ Source changes:
   * revx
   * topbladv (no CPU core for this yet)
   * topshoot
-- Added the proms to 'Magical Odds' [Smitdogg, The Dumping Union].
+- Added the proms to Magical Odds [Smitdogg, The Dumping Union].
 - Converted at28c16 to a C++ device [smf].
-- arkanoid.c: Added or corrected the PCB location for the genuine 'Arkanoid' ROM sets and documented the MCU Taito ID number [Brian Troha].
-- Replaced the old MCU dump with the decapped version for 'Kick Start Wheelie King' [Dr. Decapitator].
-- Replaced the old MCU dump with the decapped version for 'Pipeline' [Dr. Decapitator].
-- [cb2001] New opcodes [robiza].
+- arkanoid.c: Added or corrected the PCB location for the genuine Arkanoid ROM sets and documented the MCU Taito ID number [Brian Troha].
+- Replaced the old MCU dump with the decapped version for Kick Start Wheelie King [Dr. Decapitator].
+- Replaced the old MCU dump with the decapped version for Pipeline [Dr. Decapitator].
+- cb2001: New opcodes [robiza].
 - Fixed image unload and creation [Sandro Ronco, Miodrag Milanovic].
 - cb2001: Hooked up reels [David Haywood].
 - Rewrite of 'Wheels & Fire' driver [Tomasz Slanina]:

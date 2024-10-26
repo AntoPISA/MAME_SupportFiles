@@ -2,12 +2,7 @@
 ---------------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
-ym2610_0119u2gre (Philip Bennett)
-
-
-New games added or promoted from NOT_WORKING status
+New Games Added or Promoted from NOT_WORKING Status
 ---------------------------------------------------
 Black Heart [David Haywood, Tomasz Slanina]
 Buggy Boy Junior/Speed Buggy (Upright) [Philip Bennett]
@@ -20,9 +15,14 @@ Stagger I [David Haywood, Tomasz Slanina]
 Task Force Harrier [David Haywood, Tomasz Slanina]
 US AAF Mustang [David Haywood, Tomasz Slanina]
 
-New clones added
+New Clones Added
 ----------------
 World Class Bowling (v1.3) [Brian Troha]
+
+
+MAMETesters Bug Fixed (1):
+--------------------------
+ym2610_0119u2gre (Philip Bennett)
 
 
 Source changes:
@@ -57,8 +57,8 @@ Source changes:
   * Changed Halley Comet main cpu clock to 1.664mhz (it's not a mistake, the clock is very low).
   * Changed Pang M6295 clock from 990khz to 1Mhz.
   * Changed Success Joe Ym2203 clock from 3mhz to 4mhz.
-  - Aerofighters and Turbo Force sound z80 to 5mhz.
-  - Midnight Resitance 68k cpu to 10mhz (20mhz crystal) and modified m6295 clock to 1mhz. Also confirmed pin 7 is high. (Midnight resistance has a lot of slow downs on the pcb too).
+  * Aerofighters and Turbo Force sound z80 to 5mhz.
+  * Midnight Resitance 68k cpu to 10mhz (20mhz crystal) and modified m6295 clock to 1mhz. Also confirmed pin 7 is high. (Midnight resistance has a lot of slow downs on the pcb too).
 - Minor "code quality" improvements [Atari Ace]:
   * A few global names were modified to make them less generic/more consistent (voodoo.c, vrender0.c, lethal.c, rungun.c, zac2650.c).
   * Fixed some missing #include "foo.h".

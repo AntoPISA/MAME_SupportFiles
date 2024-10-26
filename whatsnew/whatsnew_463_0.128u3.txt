@@ -2,19 +2,19 @@
 ---------------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
+New Games Added or Promoted from NOT_WORKING Status
+---------------------------------------------------
+Snezhnaja Koroleva [Antro]
+
+
+MAMETesters Bugs Fixed (6):
+---------------------------
 - 02542: [DIP/Input] ghoulsu: Doesn't remove the original port when replacing it with a conditional port (Aaron Giles)
 - 02544: [Core] Dip Condition / Port Include limitation (Aaron Giles)
 - 02607: [Crash/Freeze] frogs: Taking a screenshot in Frogs (Gremlin) exits the game with an error (Aaron Giles)
 - 02618: [Sound] samuraia and clones: No SFX sound (Pierpaolo Prazzoli)
 - 02626: [DIP/Input] crimfgt2, crimfgtj: Cannot start a game (Fabio Priuli)
 - 02633: [Crash/Freeze] Many sets using the MC6845: Crash/hanging in many games (Curt Coder)
-
-
-New games added or promoted from NOT_WORKING status
----------------------------------------------------
-Snezhnaja Koroleva [Antro]
 
 
 Source changes:
@@ -24,8 +24,8 @@ Source changes:
   * Added Dip locations for 'halleys' and clones [stephh].
   * More improvements to the 32x code [David Haywood].
 - Irem M10: first results from schematics [Couriersud]:
- * Updated video timing and CPU/pixel clocks.
- * Rewrote irq for m10/m11 to use two 74LS123.
+  * Updated video timing and CPU/pixel clocks.
+  * Rewrote irq for m10/m11 to use two 74LS123.
 - AICA: fix missing instruments in DTPK driver games [R. Belmont, Deunan Knute, kingshriek].
 - Naomi: unmapped words in the AICA address range must read as zero [R. Belmont].
 - Corrected YM2203 balance in powerins [Jim Hernandez].

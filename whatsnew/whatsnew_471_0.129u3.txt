@@ -2,8 +2,32 @@
 ---------------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
+New Games Added or Promoted from NOT_WORKING Status
+---------------------------------------------------
+Big 10 [Angelo Salese, Roberto Fresca, Tomasz Slanina]
+Big Apple Games [Mariusz Wojcieszek]
+Bottle 10 (italian, 2 sets) [Roberto Fresca]
+Casino Five [Mariusz Wojcieszek]
+Funcube 2 [Luca Elia]
+Funcube 4 [Luca Elia]
+Super Poker (v116IT) [Mirko Buffoni]
+
+New Clones Added
+----------------
+Armed Police Batrider (several versions) [Josh W.]
+Battle Bakraid - Unlimited Version (U.S.A.) [Josh W.]
+Mortal Kombat (prototype, rev 8.0 07/21/92) [Brian Troha]
+Noboranka (Japan) (NOT WORKING, undumped 8751 MCU) [Guru]
+Turbo Sub (prototype rev. TSC7) [Jay Gallagher]
+
+New Games Marked as GAME_NOT_WORKING
+------------------------------------
+Jansou
+Noraut Poker [Roberto Fresca, Angelo Salese]
+
+
+MAMETesters Bugs Fixed (16):
+----------------------------
 - 01017: [Sound] nslasher: The music stops at some points in the game when fighting bosses and some points in level 2 (Mamesick)
 - 02574: [DIP/Input] yumefuda: Game controls are not fully implemented (Fabio Priuli)
 - 02697: [DIP/Input] hkagerou: Inputs apparently incorrectly mapped or not mapped (Fabio Priuli)
@@ -20,30 +44,6 @@ MAMETesters Bugs Fixed
 - 02880: [Original Reference] stactics: Scratchpad RAM is too large (currently 2 KB, should be 256 bytes with mirroring) (chowell)
 - 02884: [Original Reference] kopunch: CPU is specified as a 4 MHz 8080 when it should be a 4 MHz Z80 (Tomasz Slanina)
 - 02888: [Graphics] All sets in megaplay.c: Large black box obscuring game (Aaron Giles)
-
-
-New games added or promoted from NOT_WORKING status
----------------------------------------------------
-Big 10 [Angelo Salese, Roberto Fresca, Tomasz Slanina]
-Big Apple Games [Mariusz Wojcieszek]
-Bottle 10 (italian, 2 sets) [Roberto Fresca]
-Casino Five [Mariusz Wojcieszek]
-Funcube 2 [Luca Elia]
-Funcube 4 [Luca Elia]
-Super Poker (v116IT) [Mirko Buffoni]
-
-New clones added
-----------------
-Armed Police Batrider (several versions) [Josh W.]
-Battle Bakraid - Unlimited Version (U.S.A.) [Josh W.]
-Mortal Kombat (prototype, rev 8.0 07/21/92) [Brian Troha]
-Noboranka (Japan) (NOT WORKING, undumped 8751 MCU) [Guru]
-Turbo Sub (prototype rev. TSC7) [Jay Gallagher]
-
-New games marked as GAME_NOT_WORKING
-------------------------------------
-Jansou
-Noraut Poker [Roberto Fresca, Angelo Salese]
 
 
 Source changes:
@@ -69,11 +69,13 @@ Source changes:
 - Added new module devcb, which can generically handle conversions between device read/write functions and various other types of functions. Introduced new structures and macros to make this possible [Aaron Giles]:
   * To take advantage of this, a device must change its interface to replace any read/write callbacks with the new devcb_read/write structures. During device start time, the device then uses this new devcb module to resolve the information in the devcb_read/write structures into a more efficient form.
   * When the device needs to call one of the callbacks, it uses the inline devcb_call_read/write functions. Once a device has defined its callbacks as devcb_read/write structures, users of the device must use the DEVCB_* macros to specify the type and information about the handler to use:
+  
   DEVCB_NULL = no handler
   DEVCB_HANDLER = a standard device read/write handler
   DEVCB_MEMORY_HANDLER = a memory address space read/write handler 
   DEVCB_DEVICE_HANDLER = a device read/write handler for a different device
   DEVCB_INPUT_PORT = an input port.
+
 - Converted the 8255PPI device to use this new structure, and updated all users to use the DEVCB macros, removing some unnecessary trampoline functions along the way [Aaron Giles].
 - Added calculation for caps >= 100pf to buck rogers LS626 frequency calculation. Formula was derived from figure 6 of LS624/628/629 and 625/626/627 datasheet. "BUCK ROGERS" is now centered and big ship appears centered over br's ship. [Couriersud, Guru].
 - Converted 6821new device to use devcb. Updated Williams drivers to remove trampoline functions [Nathan Woods].

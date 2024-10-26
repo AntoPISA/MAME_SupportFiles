@@ -2,8 +2,23 @@
 ---------------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
+New Games Added or Promoted from NOT_WORKING Status
+---------------------------------------------------
+Buena Suerte '94 [Grull Osgo, Roberto Fresca]
+Ruleta RE-900 [Grull Osgo]
+Virtual Mahjong 2 - My Fair Lady
+
+New Clones Added
+----------------
+Power Instinct (USA) [Jim Hernandez]
+
+New Games Marked as GAME_NOT_WORKING
+------------------------------------
+Joker's Wild (encrypted) [Roberto Fresca]
+
+
+MAMETesters Bugs Fixed (10):
+----------------------------
 - 00224: [Sound] macross2: After stage 1, the sound keeps going out and coming back (Nicola Salmoria)
 - 00893: [Sound] All games in playch10.c, punchout.c, vsnes.c: It seems that some sound channels are missing (Aaron Giles)
 - 01679: [Crash/Freeze] kuniokub, kuniokun, renegade: Game freezes after Title Screen (Mamesick)
@@ -14,21 +29,6 @@ MAMETesters Bugs Fixed
 - 02456: [Core] wrong sector size at CD_TRACK_MODE2 conversion routine (R. Belmont)
 - 02587: [Gameplay] lohtb2: lohtb2 protection emulation is imperfect (Couriersud)
 - 02605: [Color/Palette] funnymou, suprmous: Wrong colors in Funny Mouse and clone (David Haywood)
-
-
-New games added or promoted from NOT_WORKING status
----------------------------------------------------
-Buena Suerte '94 [Grull Osgo, Roberto Fresca]
-Ruleta RE-900 [Grull Osgo]
-Virtual Mahjong 2 - My Fair Lady
-
-New clones added
-----------------
-Power Instinct (USA) [Jim Hernandez]
-
-New games marked as GAME_NOT_WORKING
-------------------------------------
-Joker's Wild (encrypted) [Roberto Fresca]
 
 
 Source changes:
@@ -132,8 +132,8 @@ Source changes:
 - Synchronized 6502 disassembly with CPU core [Pugsy].
 - Added missing const/statics, added/removed entries in header files, and fixed a few potential multisession issues by explicitly adding initializers. asic65.c has significant changes to accomodate using a struct instead of 16 variables, otherwise the changes are modest and obvious [Atari Ace].
 - expro02 driver improvements [Sonikos]:
-  * Fixed dips in all galsnew sets and  fantasia.
-  * Added dips location.
+  * Fixed DIPs in all galsnew sets and  fantasia.
+  * Added DIPs location.
   * A little driver clean up.
 - Added save state support to the toaplan2 driver [Atari Ace].
 - Changed the coinage settings and swapped coin A mech with coin B to match the behaviour of Chelnov (world) PCB [Corrado Tomaselli].

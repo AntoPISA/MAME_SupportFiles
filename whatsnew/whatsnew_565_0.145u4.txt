@@ -2,29 +2,17 @@
 ---------------------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
-- 04592: [Interface] GUI last menu item shows "Return to Game" instead of "Return to Prior Menu" (hap)
-- 04677: [DIP/Input] ebases: The analog controls do not work. (hap)
-- 04684: [Graphics] All sets in vmetal.c: graphics garbage (hap)
-- 04699: [Core] cubeqst: Upgrade to chd v5 changes SHA1 (Aaron Giles)
-- 04702: [Interface] UI Menus: Bottom menu option problems (hap)
-- 04715: [DIP/Input] cavenger: Second Player Bomb (in cocktail) does not function (Tafoid)
-- 04720: [Sound] mainevt and clones: Missing Audio (hap)
-- 04721: [Sound] opwolf: Music and sound effects are completely messed up (hap)
-
-
-New games added or promoted from NOT_WORKING status
+New Games Added or Promoted from NOT_WORKING Status
 ---------------------------------------------------
 Metal Slug 5 (JAMMA PCB) [Guru]
 Skater (cassette) [Chack'n & Team Japump!!!, Charles MacDonald, Dr. Spankenstein, Kevin Eshbach, T. Huff, SteveS, E. Page-Hanify, Hikari, ArcadeDude, F. Bukor, N. Francfort, jmurjr, arcade-history.com, ThumB, Hurray Banana, Paratech, Xiaou2, Cornishdavey, A. Costin, M. Ponweiser, Tormod & Rambo]
 Super Doubles Tennis (cassette) [Chack'n & Team Japump!!!, Charles MacDonald, Dr. Spankenstein, Kevin Eshbach, T. Huff, SteveS, E. Page-Hanify, Hikari, ArcadeDude, F. Bukor, N. Francfort, murjr, arcade-history.com, ThumB, Hurray Banana, Paratech, Xiaou2, Cornishdavey, A. Costin, M. Ponweiser, Tormod & Rambo]
 
-New clones added
+New Clones Added
 ----------------
 Arkanoid - Revenge of DOH (Japan bootleg) [ANY, R. Belmont, The Dumping Union]
 Battle Gear 2 (2.01J) [Uncle Tom, The Dumping Union]
-Caveman Ninja (alternate)  [Corrado Tomaselli]
+Caveman Ninja (alternate) [Corrado Tomaselli]
 Deer Hunting USA V3 [Brian Troha, The Dumping Union]
 Dynablaster / Bomber Man (bootleg, alt) [ANY, R. Belmont, The Dumping Union]
 Final Fight (World, set 2) [Bonky0013, JacKc]
@@ -47,8 +35,20 @@ New games marked as GAME_NOT_WORKING
 Fantastic (Galaga clone on Galaxian/Moon Cresta HW) [Augusto Garcia, Silvio Finotti, Marcello Mancini, Haze & hap]
 Mazan: Flash of the Blade (MAZ1 Ver. A) [Hans Johanson]
 Power Shovel Simulator [Uncle Tom, The Dumping Union]
-World Soccer Winning Eleven Arcade Game 2003  [Team Japump, Guru]
-World Soccer Winning Eleven Arcade Game Style  [Team Japump, Guru]
+World Soccer Winning Eleven Arcade Game 2003 [Team Japump, Guru]
+World Soccer Winning Eleven Arcade Game Style [Team Japump, Guru]
+
+
+MAMETesters Bugs Fixed (8):
+---------------------------
+- 04592: [Interface] GUI last menu item shows "Return to Game" instead of "Return to Prior Menu" (hap)
+- 04677: [DIP/Input] ebases: The analog controls do not work. (hap)
+- 04684: [Graphics] All sets in vmetal.c: graphics garbage (hap)
+- 04699: [Core] cubeqst: Upgrade to chd v5 changes SHA1 (Aaron Giles)
+- 04702: [Interface] UI Menus: Bottom menu option problems (hap)
+- 04715: [DIP/Input] cavenger: Second Player Bomb (in cocktail) does not function (Tafoid)
+- 04720: [Sound] mainevt and clones: Missing Audio (hap)
+- 04721: [Sound] opwolf: Music and sound effects are completely messed up (hap)
 
 
 Source Changes
@@ -65,7 +65,7 @@ Source Changes
   * Fixed ROMs labels, added pcb locations and a better documentation about sub-revisions. Renamed some romsets to use revision codes.
 - Fix for potential driver conflicts with same named machine states between MAME and MESS [David Haywood].
 - megatech.c: Implemented outputs for the time limit alarm sound and screen flash [bdam].
-- undrfire.c: Implement outputs for undrfire and cbombers.  Lamps, gun recoil, and wheel vibration are implemented [bdam].
+- undrfire.c: Implement outputs for undrfire and cbombers. Lamps, gun recoil, and wheel vibration are implemented [bdam].
 - Fixed colors in senjyo.c driver (mostly noticeable with senjyo background colors) [Tsuyoshi Hasegawa].
 - 68k: Add 68301/68307 aliases for better documentation [David Haywood].
 - ins8250: Support for the 16550 fifo [Carl].

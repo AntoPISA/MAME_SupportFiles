@@ -2,14 +2,7 @@
 ---------------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
-- 04060: [Crash/Freeze] All sets in taitogn.c: NVRAM written incorrectly - games never start (Aaron Giles)
-- 04063: [Gameplay] All sets in solomon.c: All characters in the game are missing (player and enemies) (hap)
-- 04068: [DIP/Input] viofight: Missing Player 2 button 3 (Tafoid)
-
-
-New games added or promoted from NOT_WORKING status
+New Games Added or Promoted from NOT_WORKING Status
 ---------------------------------------------------
 Falcons Wild - Wild Card 1991 (TVG) [Roberto Fresca, Team Europe]
 Falcons Wild - World Wide Poker (Video Klein) [Roberto Fresca, Team Europe]
@@ -24,7 +17,7 @@ Witch Card (Falcon, enhanced sound) [Roberto Fresca, Team Europe]
 Witch Card (German, set 3, alt gfx) [Roberto Fresca, Team Europe]
 Witch Game (Video Klein) [Roberto Fresca, Team Europe]
 
-New clones added
+New Clones Added
 ----------------
 Final Lap 3 (Japan - Rev C) [Smitdogg, Guru, The Dumping Union]
 Gun Fight (older?) [Siftware]
@@ -35,7 +28,7 @@ Sea Wolf (older?) [Siftware]
 Star Raker [Andreas Kraemer, Steffen & Laschek]
 X-Men: Children of the Atom (Asia 950105) [Razoola]
 
-New games marked as GAME_NOT_WORKING
+New Games Marked as GAME_NOT_WORKING
 ------------------------------------
 5-Aces Poker [Roberto Fresca]
 Arrow Bingo [Roberto Fresca, Dave Ormiston]
@@ -51,6 +44,13 @@ Symbols (ver 1.4) [Roberto Fresca, Dave Ormiston]
 Symbols (ver 2.5) [Roberto Fresca, Dave Ormiston]
 Virtua Striker 3 (rev. B) [ANY]
 Wave Runner GP [Cah4e3, R. Belmont]
+
+
+MAMETesters Bugs Fixed (3):
+---------------------------
+- 04060: [Crash/Freeze] All sets in taitogn.c: NVRAM written incorrectly - games never start (Aaron Giles)
+- 04063: [Gameplay] All sets in solomon.c: All characters in the game are missing (player and enemies) (hap)
+- 04068: [DIP/Input] viofight: Missing Player 2 button 3 (Tafoid)
 
 
 Source changes:
@@ -79,7 +79,7 @@ Source changes:
 - Improvements to Piccolo Poker 100 [Roberto Fresca]:
   * Added a workaround to get the game booting.
   * Created inputs from the scratch.
-  * Promoted to 'working'.
+  * Promoted to "working".
   * Added technical and game notes.
 - Fixed Fairchild F8 CPU interrupt handling [Curt Coder].
 - Implemented support for SH-2 cycle steal mode, used by 'Fever Soccer' [David Haywood].
@@ -134,22 +134,22 @@ Source changes:
   * Hooked the AY-3-8910.
   * Added games notes.
   * Added technical notes.
-- Patched out the majority of the 'Quizard 1.7' protection check and emulated the game's inputs [Harmony].
-- Patched out the majority of the 'Quizard 1.2' protection check and made the patch more generic [Harmony].
-- Added incomplete protection patches to 'Quizard 3.2' and 'Quizard Rainbow 4.1'; both now run through attract mode and coin up, but crash when going in-game [Harmony].
+- Patched out the majority of the Quizard 1.7 protection check and emulated the game's inputs [Harmony].
+- Patched out the majority of the Quizard 1.2'protection check and made the patch more generic [Harmony].
+- Added incomplete protection patches to 'Quizard 3.2' and Quizard Rainbow 4.1; both now run through attract mode and coin up, but crash when going in-game [Harmony].
 - video/neogeo.c: Call optimize_sprite_data() at VIDEO_RESET (for the convenience of Neo Geo CD) [Barry Rodewald].
 - Attempt to untie the shared mapping for all games in zr107.c (midnrun, windheat, waveshrk).  Buttons now have labels and match up to test mode, even if you cannot play the games [Tafoid].
 - Fixed vspinbalj (vsnes.c) flipper control and eliminated duplicated inputs [Tafoid].
 - Converted render.c objects into C++ objects. Updated all callers [Aaron Giles].
 - Improvements to Subsino driver [Roberto Fresca]:
-  * Created proper inputs for all 'Victor 6' sets.
+  * Created proper inputs for all Victor 6 sets.
   * Fixed/extended Magic Train technical notes.
-  * Eliminated the 3 undumped bipolar PROMs from 'Magic Train' since these are in fact 'Darlington Arrays' instead of bipolar PROMs.
+  * Eliminated the 3 undumped bipolar PROMs from Magic Train since these are in fact Darlington Arrays instead of bipolar PROMs.
 - Replaced the excessively large Quizard patch scheme with a much smaller 4-byte patch plus basic protection obfuscation simulation [Harmony].
-- Found the appropriate patch values for 'Quizard 2.2' and promoted it to working [Harmony].
+- Found the appropriate patch values for Quizard 2.2 and promoted it to working [Harmony].
 - Removed RAM protection patches from Quizard games.  All games now at least boot with simulated protection, and the ones that were playable before remain playable [Harmony].
 - Changes LIVES to use only a single DIP instead of being split up between two input ports by using a CUSTOM_INPUT [Tafoid, Fabio Priuli].
-- Eliminated non-functioning service mode mapping which was a duplicate (ssridersb - tmnt.c).  Added new labels to bombkick (yunsun16.c) to better describe the status required for each DIP, rather than the duplicate label "DON"T CHANGE IT!" [Tafoid].
+- Eliminated non-functioning service mode mapping which was a duplicate (ssridersb - tmnt.c). Added new labels to bombkick (yunsun16.c) to better describe the status required for each DIP, rather than the duplicate label "DON"T CHANGE IT!" [Tafoid].
 - 8237dma.c: Initialize the command register to 0 on reset [Wilbert Pol].
 - Update psx drivers to use a driver_device [Atari Ace].
 - Update driver-specific sound devices to use tokens and store their state like other devices [Atari Ace].

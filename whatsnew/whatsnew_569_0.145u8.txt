@@ -2,8 +2,38 @@
 ---------------------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
+New Games Added or Promoted from NOT_WORKING Status
+---------------------------------------------------
+Dungeon Explorer (Tourvision PCE bootleg) [Charles MacDonald, AUMAP, ClawGrip]
+Funcube 5 [Luca Elia, Yohji, Tormod, The Dumping Union]
+Golden Arrow (Standard G8-03) [hap, dox, DHS]
+Jue Zhan Tian Huang [Yohji, Mr. CAST, B. Stahl, Smitdogg, The Dumping Union, David Haywood]
+Super Stars [Roberto Fresca, Angelo Salese, Andreas Naive]
+Super Volleyball (Tourvision PCE bootleg) [Charles MacDonald, AUMAP, ClawGrip]
+
+New Clones Added
+----------------
+Congo Bongo (3 board stack) [Kevin Eshbach, The Dumping Union]
+Erotictac/Tactic (ver 01) [Bonky0013]
+Gulf Storm (set 2) [Bonky0013]
+Mahjong Yoshimoto Gekijou [BET] [Takahiro Nogi]
+Moon Cresta (Nichibutsu UK, unencrypted) [Andy Welburn]
+Red Fox War Planes II (China) [B. Stahl, Smitdogg, The Dumping Union]
+Sharpshooter (Rev 1.9) [Brian Troha, The Dumping Union]
+Space Firebird (rev. 02-a) [Andy Welburn]
+Top Racer (bootleg of Driving Force) [Team Europe]
+Zoku Mahjong Housoukyoku [Takahiro Nogi]
+
+New Games Marked as GAME_NOT_WORKING
+------------------------------------
+Bikkuri Card [Yohji, Mr. CAST, Tormod, CptGuapo, Smitdogg, The Dumping Union]
+Chance Thirty Two [Team Europe, Marcus Jendroska,Y~K, The Dumping Union, Smitdogg]
+Mahjong Hanafuda Cosplay Tengoku 8 [Yohji, Mr. CAST, Smitdogg, The Dumping Union]
+Multi Game III (V.Ger 3.64) [Roberto Fresca, Andreas Naive, Team Europe]
+
+
+MAMETesters Bugs Fixed (22):
+----------------------------
 - 00413: [Sound] (crimfght.c) crimfght: The speed of the music is playing ever so slightly too slowly. (Mamesick)
 - 01232: [Sound] (aliens.c) aliens: Comparing to the pcb, the music in MAME is slower. (Mamesick)
 - 04745: [Interface] Game select UI hangs when using cursor keys (Couriersud)
@@ -26,36 +56,6 @@ MAMETesters Bugs Fixed
 - 04787: [Sound] (epos.c) dealer: Missing sounds
 - 04788: [Original Reference] (cps2.c) vsav2d: Several roms do not pass selftest.
 - 04794: [Graphics] (bombjack.c) bombjack & clone: Missing  sprites (Phil Bennett)
-
-
-New games added or promoted from NOT_WORKING status
----------------------------------------------------
-Dungeon Explorer (Tourvision PCE bootleg) [Charles MacDonald, AUMAP, ClawGrip]
-Funcube 5 [Luca Elia, Yohji, Tormod, The Dumping Union]
-Golden Arrow (Standard G8-03) [hap, dox, DHS]
-Jue Zhan Tian Huang [Yohji, Mr. CAST, B. Stahl, Smitdogg, The Dumping Union, David Haywood]
-Super Stars [Roberto Fresca, Angelo Salese, Andreas Naive]
-Super Volleyball (Tourvision PCE bootleg) [Charles MacDonald, AUMAP, ClawGrip]
-
-New clones added
-----------------
-Congo Bongo (3 board stack) [Kevin Eshbach, The Dumping Union]
-Erotictac/Tactic (ver 01) [Bonky0013]
-Gulf Storm (set 2) [Bonky0013]
-Mahjong Yoshimoto Gekijou [BET] [Takahiro Nogi]
-Moon Cresta (Nichibutsu UK, unencrypted) [Andy Welburn]
-Red Fox War Planes II (China) [B. Stahl, Smitdogg, The Dumping Union]
-Sharpshooter (Rev 1.9) [Brian Troha, The Dumping Union]
-Space Firebird (rev. 02-a) [Andy Welburn]
-Top Racer (bootleg of Driving Force) [Team Europe]
-Zoku Mahjong Housoukyoku [Takahiro Nogi]
-
-New games marked as GAME_NOT_WORKING
-------------------------------------
-Bikkuri Card [Yohji, Mr. CAST, Tormod, CptGuapo, Smitdogg, The Dumping Union]
-Chance Thirty Two [Team Europe, Marcus Jendroska,Y~K, The Dumping Union, Smitdogg]
-Mahjong Hanafuda Cosplay Tengoku 8 [Yohji, Mr. CAST, Smitdogg, The Dumping Union]
-Multi Game III (V.Ger 3.64) [Roberto Fresca, Andreas Naive, Team Europe]
 
 
 Source changes:
@@ -83,9 +83,9 @@ Source changes:
 - Fix invalid ISO C syntax in neogeo driver noted by Clang [Balrog, R. Belmont].
 - Fix PowerPC OS X compile [R. Belmont].
 - Fix video counter reporting on Williams games (should stay at maximum value until reset) [Sean Riddle].
-- Fixed gameplay crash regression in 'Zero Team' [Angelo Salese].
+- Fixed gameplay crash regression in Zero Team [Angelo Salese].
 - Fixed missing sprites/HUD regression in Lock-On [Phil Bennett].
-- gei.c: Sorted out the correct question roms for 'Trivia (Questions Series 12)' and 'Trivia (Questions Series 14)' [Brian Troha].
+- gei.c: Sorted out the correct question roms for Trivia (Questions Series 12) and Trivia (Questions Series 14) [Brian Troha].
 - Hikaru: Added some new technical findings [Stefano Teso].
 - i386: Big pmode update [Carl].
 - i386: Fix for bt? instructions [Carl].
@@ -94,7 +94,7 @@ Source changes:
 - naomi: Redumped Azumanga Daioh Puzzle Bobble GD-ROM [Team Japump!].
 - niyanpai.c: Fixed graphics draw speed [Takahiro Nogi].
 - Started adding support for scrolling reel displays, currently text only, but should be pretty easy to get graphics in there and add different direction scrolling - updating sc4 code to use these new types [David Haywood].
-- Stepper display output fix  [James Wallace].
+- Stepper display output fix [James Wallace].
 - Updated layouts for numerous slots to take advantage of new reel development [James Wallace].
 - Updated ROM label.locations for Star Force based on PCB pictures provided by bonky0013 [Tafoid].
 - zaxxon.c: Corrected ROM labels and U locations for the Congo Bongo sets. Added the 3 board stack version with correct PBROM. Added additional documentation about the 2 board stack and the 3 board stack [Kevin Eshbach, The Dumping Union].

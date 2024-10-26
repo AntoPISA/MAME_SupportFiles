@@ -2,19 +2,7 @@
 ---------------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
-- 00593: [DIP/Input] patimono: DIP switch info (RansAckeR)
-- 00898: [Graphics] gseeker: Graphic problem without .nv file (Couriersud)
-- 01216: [Sound] kncljoe: No music (Tomasz Slanina)
-- 01429: [Crash/Freeze] ddragon3, ddragon3j: They locks up immediately on Technos logo (RansAckeR)
-- 01436: [Crash/Freeze] esb: Insert a coin, start a game and it will reset by itself after few seconds (Aaron Giles)
-- 01478: [DIP/Input] bullet: DIP switch info (RansAckeR)
-- 01480: [Graphics] gyruss, gyrussce, venus: graphic garbage for one frame (robiza)
-- 01482: [Gameplay] exprraid, exprraida, wexpress, wexpressb, wexpressb2: Game doesn't start (Zsolt Vasvari)
-
-
-New games added or promoted from NOT_WORKING status
+New Games Added or Promoted from NOT_WORKING Status
 ---------------------------------------------------
 Amuse (Version 50.08 IBA) [Pierpaolo Prazzoli]
 Joker Poker (Version 16.03B) [Pierpaolo Prazzoli]
@@ -26,9 +14,21 @@ Pit Boss Megastar [Mariusz Wojcieszek]
 Super Bowl (Version 16.03B) [Pierpaolo Prazzoli]
 Super Pit Boss [Mariusz Wojcieszek]
 
-New clones added
+New Clones Added
 ----------------
 Raiden Fighters (Austria) [Corrado Tomaselli]
+
+
+MAMETesters Bugs Fixed (8):
+---------------------------
+- 00593: [DIP/Input] patimono: DIP switch info (RansAckeR)
+- 00898: [Graphics] gseeker: Graphic problem without .nv file (Couriersud)
+- 01216: [Sound] kncljoe: No music (Tomasz Slanina)
+- 01429: [Crash/Freeze] ddragon3, ddragon3j: They locks up immediately on Technos logo (RansAckeR)
+- 01436: [Crash/Freeze] esb: Insert a coin, start a game and it will reset by itself after few seconds (Aaron Giles)
+- 01478: [DIP/Input] bullet: DIP switch info (RansAckeR)
+- 01480: [Graphics] gyruss, gyrussce, venus: graphic garbage for one frame (robiza)
+- 01482: [Gameplay] exprraid, exprraida, wexpress, wexpressb, wexpressb2: Game doesn't start (Zsolt Vasvari)
 
 
 Source changes:
@@ -44,7 +44,7 @@ Source changes:
   * Combined video_global and video_private into a single structure.
   * Moved populating screen_state from mame.c to video.c.
   * Removed defstate; the default screen parameters live in screen_config directly.
-   * Moved 'refresh' from public to internal video state and renamed it to 'frame_period'.
+  * Moved 'refresh' from public to internal video state and renamed it to 'frame_period'.
   * Changed all drivers that previously accessed 'refresh' to use video_screen_get_frame_period().
   * Changed VIDEO_UPDATE signature to pass the screen device.
   * Added const device_config *primary_screen to running_machine

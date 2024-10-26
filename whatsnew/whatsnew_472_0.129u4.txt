@@ -3,24 +3,7 @@
 WARNING: This build has a major change in it (sound chips are now devices) that may lead to some unexpected errors or sound problems. Please report any issues you find over at http://mametesters.org/mantis.
 
 
-MAMETesters Bugs Fixed
-----------------------
-- 00754: [Sound] mikie: Background music problem in the locker room level (Nicola Salmoria)
-- 00808: [Graphics] xsleena: There appears to be a small line of graphics missing on a couple of characters.
-- 01785: [Misc.] mjmyornt and more: AM/PM is ignored when the clock time is retrieved from RTC (Couriersud)
-- 02801: [Misc.] cafetime: Clock shows AM instead of PM (Couriersud)
-- 02860: [Crash/Freeze] mach3, usvsthem: Error at the start (Aaron Giles)
-- 02890: [Crash/Freeze] pitboss, pitbossa: Pit Boss and clone crashes with devcb dialog (Roberto Fresca)
-- 02893: [Crash/Freeze] Most sets in galdrvr.c: Crashes with devcb dialog (Aaron Giles)
-- 02895: [Color/Palette] macrossp: Wrong colors in "area clear" screen (Angelo Salese)
-- 02896: [Misc.] Drivers using MSM6242.h: MSM6242 ignores AM/PM bit (Couriersud)
-- 02897: [Sound] soldivid: Audio regression (David Haywood)
-- 02907: [Gameplay] spnchout, spnchotj: Time count on insert coin screen runs out very quickly - Play buttons not working (Nicola Salmoria)
-- 02917: [Misc.] himesiki: Array index out of bound (Phil Bennett)
-- 02918: [Graphics] psychosj psychos: Title screen graphic glitch (Nicola Salmoria)
-
-
-New games added or promoted from NOT_WORKING status
+New Games Added or Promoted from NOT_WORKING Status
 ---------------------------------------------------
 Age Of Heroes - Silkroad 2 (v0.63 - 2001/02/07) [Pierpaolo Prazzoli]
 Carriage Bonus 2003 (bootleg) [Roberto Fresca, Olivier Galibert, David Haywood]
@@ -44,7 +27,7 @@ Squash (Itisa) [Angelo Salese]
 Super Draw Poker [Angelo Salese]
 TomCat (prototype) [Mariusz Wojcieszek]
 
-New clones added
+New Clones Added
 ----------------
 American Poker II (iamp2 v28) [Roberto Fresca]
 Extermination (World) [Stefan Lindberg]
@@ -66,7 +49,7 @@ Tecmo World Cup '90 (Euro set 2) [Tomasz Slanina]
 Virtua Striker 3 (Cart) (USA, EXP, KOR, AUS) [Andrea Turci]
 Volfied (Japan, older) [Brian Troha]
 
-New games marked as GAME_NOT_WORKING
+New Games Marked as GAME_NOT_WORKING
 ------------------------------------
 Ciclone [f205v, Mirko Buffoni]
 Margarita Magic (A - 07/07/2000) [Heihachi_73]
@@ -74,9 +57,26 @@ Pachi Fever [Angelo Salese]
 Sweet Hearts II (C - 07/09/95, Venezuela version) [Heihachi_73]
 
 
+MAMETesters Bugs Fixed (13):
+----------------------------
+- 00754: [Sound] mikie: Background music problem in the locker room level (Nicola Salmoria)
+- 00808: [Graphics] xsleena: There appears to be a small line of graphics missing on a couple of characters.
+- 01785: [Misc.] mjmyornt and more: AM/PM is ignored when the clock time is retrieved from RTC (Couriersud)
+- 02801: [Misc.] cafetime: Clock shows AM instead of PM (Couriersud)
+- 02860: [Crash/Freeze] mach3, usvsthem: Error at the start (Aaron Giles)
+- 02890: [Crash/Freeze] pitboss, pitbossa: Pit Boss and clone crashes with devcb dialog (Roberto Fresca)
+- 02893: [Crash/Freeze] Most sets in galdrvr.c: Crashes with devcb dialog (Aaron Giles)
+- 02895: [Color/Palette] macrossp: Wrong colors in "area clear" screen (Angelo Salese)
+- 02896: [Misc.] Drivers using MSM6242.h: MSM6242 ignores AM/PM bit (Couriersud)
+- 02897: [Sound] soldivid: Audio regression (David Haywood)
+- 02907: [Gameplay] spnchout, spnchotj: Time count on insert coin screen runs out very quickly - Play buttons not working (Nicola Salmoria)
+- 02917: [Misc.] himesiki: Array index out of bound (Phil Bennett)
+- 02918: [Graphics] psychosj psychos: Title screen graphic glitch (Nicola Salmoria)
+
+
 Source changes:
 ---------------
-- Fixed 'Casino 5' hang on the Horse Racing game [Angelo Salese].
+- Fixed Casino 5 hang on the Horse Racing game [Angelo Salese].
 - Fixed compile quirk with Funcube2/4 [Angelo Salese].
 - Added minor additional information and OSC info to volfied driver. Also added two BPROMs not included before [Brian Troha].
 - Opcode accesses are now marked debugger_access. This is important with the recent changes to automatically call the read handler if the opcode base cannot be found. Changed logging for non-RAM opcode bases so that it does not output in the case of debugger_access being set [Aaron Giles].
@@ -86,12 +86,12 @@ Source changes:
 - Added the ability to invoke CPU input lines with devcb callbacks. Changed sp0256 to use devcb callbacks. Updated sauro driver to use this new feature [Nathan Woods].
 - Added PCB layout for Funcube and corrected ROM names based on a hi-res photo of the PCB [Brian Troha].
 - Improve disassembly of R3000 code that uses the TLB or FPU [R. Belmont].
-- Added new game 'Number Dieci'  [Mirko Buffoni]:
+- Added new game Number Dieci [Mirko Buffoni]:
   * Seems a IGS poker hack to comply with 2000's Italian law
   * Sound synthesys have been replaced by OKIM ADPCM samples.
   * Some patched out routines have been recovered to allow test mode dsw mapping.
   * Mapped Stelle e Cubi to this memory map, something shows but graphic is from a bad dump.
-- Added new game 'PK Tetris' [Mirko Buffoni]:
+- Added new game PK Tetris [Mirko Buffoni]:
   * Strange game with an amusement part (sort of Tetris mixed with Poker).
   * Amuse input not mapped, may be necessary for the amusement part which can be disabled via DSW.
 - Fixed various issues with 'Il Pagliaccio' driver [Angelo Salese]:
@@ -122,10 +122,10 @@ Source changes:
   * Reviewed parts list, schematics and pcb pictures
   * Brought mario run sound in line with recordings from Smitdogg.
   * VCO voltage needs to be 0V for this to happen. Verification outstanding
- -l * Capacitors needed some ageing applied as well. To be removed once the VCO issue is clarified.
+  * Capacitors needed some ageing applied as well. To be removed once the VCO issue is clarified.
 - Refactored the ACIA6850 to use devcb [Curt Coder].
 - Added a patch to Jackie driver, game now works [Mirko Buffoni]:
- * Added complete reel emulation (thanks to Luca, Angelo and David drivers studied to better understand hardware similarities).
+  * Added complete reel emulation (thanks to Luca, Angelo and David drivers studied to better understand hardware similarities).
   * Press T to toggle amuse game, used to mask gambling activities.
 - Added 'Champion League' [Mirko Buffoni]:
   * Same encryption and patches used in Numero10, but on standard IGS Poker V220I board
@@ -160,7 +160,7 @@ Source changes:
 - Correct ROM names and PCB locations in the twincobr driver. Corrected and added missing proms for Flying Shark (and clones) [Brian Troha, Stefan Lindberg].
 - Merged brasil.c and highvdeo.c drivers [Angelo Salese].
 - Added basic support of RP5C01 to remove (most) protection kludges in 'Super Punchout' [Nicola Salmoria, Bob Seidel].
-- Added correct 'Midnight Run' ROM names [Guru].
+- Added correct Midnight Run ROM names [Guru].
 - Added Read Parameter Register support to the hd63484. Moved logging behind a define [Phil Bennett].
 - Added PCB layout for Zoar. Corrected AY-3-8910 clocks and added missing PROM [Guru].
 - More improvements to goldstar.c [Roberto Fresca]:

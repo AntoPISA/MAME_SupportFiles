@@ -2,20 +2,20 @@
 ---------------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
-cidelsa0114u4gre (Aaron Giles, for real this time)
-pignewta0115u1gra (ShimaPong)
-gorf0115u1ora (Aaron Giles)
-
-
-New games added or promoted from NOT_WORKING status
+New Games Added or Promoted from NOT_WORKING Status
 ---------------------------------------------------
 Multi Game [Mariusz Wojcieszek]
 
-New games marked as GAME_NOT_WORKING
+New Games Marked as GAME_NOT_WORKING
 ------------------------------------
 Chameleon 24 [Mariusz Wojcieszek]
+
+
+MAMETesters Bugs Fixed (3):
+---------------------------
+cidelsa0114u4gre (Aaron Giles, for real this time)
+pignewta0115u1gra (ShimaPong)
+gorf0115u1ora (Aaron Giles)
 
 
 Source changes:
@@ -24,8 +24,7 @@ Source changes:
 - Fixed 'China Gate' high scores [Robbbert].
 - Fixed Final Lap R/Speed Racer graphics [Zsolt Vasvari].
 - Added a new opcode for Match It 2. There still are 4 unknown opcodes  and the "no tiles" bug before it will be promoted to working status [Pierpaolo Prazzoli].
-- Changed the CRTC6845 emulator to optionally control the screen configuration and video rendering. Updated the Qix and Spiders driver 
-to use the new functionality. Added notifications for when the display enable pin changes in order to drive blanking signals [Zsolt Vasvari].
+- Changed the CRTC6845 emulator to optionally control the screen configuration and video rendering. Updated the Qix and Spiders driver to use the new functionality. Added notifications for when the display enable pin changes in order to drive blanking signals [Zsolt Vasvari].
 - New 74123 timer emulator. It supports different ways a 74123 can be hooked up that affect the timing period. The old implementation was  incorrect in lots of respects [Zsolt Vasvari].
 - Removed the addressing order parameter from pia_config() and replaced it with dedicated write and read handlers [Zsolt Vasvari].
 - Rewrote nyny driver [Zsolt Vasvari]:

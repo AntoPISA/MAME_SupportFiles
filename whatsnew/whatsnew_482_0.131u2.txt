@@ -2,8 +2,27 @@
 ---------------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
+New Games Added or Promoted from NOT_WORKING Status
+---------------------------------------------------
+Choplifter (8751 315-5151) [The Decapping Project, Aaron Giles]
+Noboranka [The Decapping Project, Aaron Giles]
+Otenami Haiken (V2.04J) [Joerg Hartenberger, Guru]
+PT Reach Mahjong [Angelo Salese]
+Shanghai Sangokuhai Tougi (Ver 2.01J) [Joerg Hartenberger, Guru]
+Shooting Master (EVG, 8751 315-5159a) [The Decapping Project, Aaron Giles]
+
+New Clones Added
+----------------
+Hatris (US) [Andrew Welburn]
+Samurai Nihon-ichi (set 3, harder) [f205v]
+
+New Games Marked as GAME_NOT_WORKING
+------------------------------------
+IQ Pipe [SoftwareThis]
+
+
+MAMETesters Bugs Fixed (20):
+----------------------------
 - 03146: [Compiling] cpu\vtlb.c 64 bit warning: 64bit vs compile warnings (smf).
 - 03147: [Misc.] shtngmst, shtngmst1: wrong sha1 values for shooting master ic74 (Nicola Salmoria).
 - 03148: [Crash/Freeze] All sets in konamigx.c: Access Violation (Fabio Priuli).
@@ -26,25 +45,6 @@ MAMETesters Bugs Fixed
 - 03173: [Sound] Many sets using atarijsa.c: Audio samples are incorrectly pitched (Phil Bennett).
 
 
-New games added or promoted from NOT_WORKING status
----------------------------------------------------
-Choplifter (8751 315-5151) [The Decapping Project, Aaron Giles]
-Noboranka [The Decapping Project, Aaron Giles]
-Otenami Haiken (V2.04J) [Joerg Hartenberger, Guru]
-PT Reach Mahjong [Angelo Salese]
-Shanghai Sangokuhai Tougi (Ver 2.01J) [Joerg Hartenberger, Guru]
-Shooting Master (EVG, 8751 315-5159a) [The Decapping Project, Aaron Giles]
-
-New clones added
-----------------
-Hatris (US) [Andrew Welburn]
-Samurai Nihon-ichi (set 3, harder) [f205v]
-
-New games marked as GAME_NOT_WORKING
-------------------------------------
-IQ Pipe [SoftwareThis]
-
-
 Source changes:
 ---------------
 - Added notes to several drivers indicating specifically that an MCUis needed for decapping [Angelo Salese].
@@ -63,7 +63,7 @@ Source changes:
 - Added bilinear filtering to Naomi video emulation. Textures are still a bit crawly since we're always using the lowest MIP level [MooglyGuy, Aaron Giles].
 - Short-circuit the naomi rendering in non-textured cases, prevents a lot of bad graphics [David Haywood].
 - Fixed tubepb regression [Fabio Priuli].
-- Added MC-8123 key for 'Gigas'. Of course the game still doesn't work because the program ROM is missing [Nicola Salmoria].
+- Added MC-8123 key for Gigas. Of course the game still doesn't work because the program ROM is missing [Nicola Salmoria].
 - Applied some of the Naomi exclusive texture mode rules [David Haywood].
 - Added a work-around for the UART FIFO read only status register on the SH-4 to make 'Tetris Kiwamemichi' happy to boot. It crashes shortly after that like 'La Keyboard' though (jumps to an unmapped address) [Angelo Salese].
 - Hacked the Naomi YUV interrupt to fire when the base register is written (currently looking at implementing properly, but this prevents KuruCham and SS2005 from hanging) [David Haywood].

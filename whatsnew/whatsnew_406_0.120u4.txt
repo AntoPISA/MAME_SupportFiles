@@ -2,13 +2,7 @@
 ---------------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
-gradius4_0120u3yel (Aaron Giles)
-vegas.c0120u3yel (Aaron Giles)
-
-
-New games added or promoted from NOT_WORKING status
+New Games Added or Promoted from NOT_WORKING Status
 ---------------------------------------------------
 MPU4 Unit Test [James Wallace]
 Player's Edge Plus (BE0014) Blackjack [Jim Stolis]
@@ -23,17 +17,23 @@ Player's Edge Plus (XP000019) Deuces Wild Poker [Jim Stolis]
 Player's Edge Plus (XS000006) Triple Triple Diamond Slots [Jim Stolis]
 Sigma Poker [Roberto Fresca]
 
-New clones added
+New Clones Added
 ----------------
 American Poker 95 [Roberto Fresca]
 Kick and Run (US) [Brian Troha]
 Poker De Win [Roberto Fresca]
 Slipstream (950515 HISPANIC) [Guru]
 
-New games marked as GAME_NOT_WORKING
+New Games Marked as GAME_NOT_WORKING
 ------------------------------------
 Sigma Poker 2000 [Roberto Fresca]
 Vegas Poker (Prototype) [James Wallace]
+
+
+MAMETesters Bugs Fixed (2):
+---------------------------
+gradius4_0120u3yel (Aaron Giles)
+vegas.c0120u3yel (Aaron Giles)
 
 
 Source changes:
@@ -84,7 +84,7 @@ Source changes:
   * Improved support for LPSLNK and SBCTL.
   * Fixed panning calculation bug.
   * Fixed case where key-rate scaling is off.
-- Added support for indicating that DIP Switches are reversed in the DIP locations view [Vas Crabb].
+- Added support for indicating that DIP switches are reversed in the DIP locations view [Vas Crabb].
 - Added DIP locations for Midway Tron and the Nintendo Donkey Kong series (dkong.c) [Vas Crabb].
 - Added an Altivec/VMX implementation of the RGB utilities for our friends with G4, G5 and POWER5 CPUs (rgbvmx.h) and added rgbint_bilinear_filter and rgbaint_bilinear_filter to rgbsse.h (based on rgb_bilinear_filter/rgba_bilinear_filter) for completeness, as these functions exist in rgbgen.h [Vas Crabb].
 - Updated model2.c, taitojc.c, and gticlub.c to use the new polygon routines. Deprecated the old poly.c and renamed polynew.* to poly.* [Aaron Giles].

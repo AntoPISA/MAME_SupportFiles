@@ -2,8 +2,28 @@
 ---------------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
+New Games Added or Promoted from NOT_WORKING Status
+---------------------------------------------------
+18 Holes Pro Golf [robiza, Angelo Salese]
+Python (Photon System) [Mick, Mariusz Wojcieszek]
+Pop n' Music 2 [Guru]
+beatmania ClubMIX [Team Japump!!!, The Guru]
+Ridge Racer (3 screen? Rev. RR2, World) [Guru, Smitdogg]
+Sky Love [bbmmamoh, David Haywood]
+Triple Draw Poker [Team Europe, David Haywood] (Wrong Colours)
+
+New Clones Added
+----------------
+Gun Bullet (World, GN3 Rev B) [Brian Troha, Dumping Union]
+Megatouch 5 (9255-60-01 ROI, Standard version) [Brian Troha, Dumping Union]
+Dragon World (V021O) [f205v, Olivier Galibert, David Haywood]
+Winding Heat (JAA, JPN v2.11) [Guru]
+Qix (set 2, smaller roms) [Team Europe]
+9-Ball Shootout Championship [SiftWare]
+
+
+MAMETesters Bugs Fixed (10):
+----------------------------
 - 00191: [Graphics] miaj: some text of the boot-up screen is not correctly displayed (hap)
 - 02267: [Graphics] devilw, darkadv, majuu: Some rogue sprites (hap)
 - 03370: [Sound] gng and clones: Music slows down while shooting (Corrado Tomaselli)
@@ -16,59 +36,35 @@ MAMETesters Bugs Fixed
 - 03370: gng and clones: Music slows down while shooting
 
 
-New games added or promoted from NOT_WORKING status
----------------------------------------------------
-18 Holes Pro Golf [robiza, Angelo Salese]
-Python (Photon System) [Mick, Mariusz Wojcieszek]
-Pop n' Music 2 [Guru]
-beatmania ClubMIX [Team Japump!!!, The Guru]
-Ridge Racer (3 screen? Rev. RR2, World) [Guru, Smitdogg]
-Sky Love [bbmmamoh, David Haywood]
-Triple Draw Poker [Team Europe, David Haywood] (Wrong Colours)
-
-New clones added
-----------------
-Gun Bullet (World, GN3 Rev B) [Brian Troha, Dumping Union]
-Megatouch 5 (9255-60-01 ROI, Standard version) [Brian Troha, Dumping Union]
-Dragon World (V021O) [f205v, Olivier Galibert, David Haywood]
-Winding Heat (JAA, JPN v2.11) [Guru]
-Qix (set 2, smaller roms) [Team Europe]
-9-Ball Shootout Championship [SiftWare]
-
-
 Source changes:
 ---------------
-Add PCB locations to the ROM names for Dream Land (Bubble Bobble 
-bootleg). [Briah Troha]
+- Add PCB locations to the ROM names for Dream Land (Bubble Bobble bootleg) [Briah Troha].
+- Added preliminary sound to 39in1, still buggy [MooglyGuy].
+- Hand-tuned BGM tempo in Tryout thanks to a side-by-side reference [Angelo Salese].
 
-Added preliminary sound to 39in1, still buggy. [MooglyGuy]
 
-Hand-tuned BGM tempo in Tryout thanks to a side-by-side reference.
-[Angelo Salese]
+
 
 SNES fixes (mostly MESS specific) [Angelo Salese]
  - Fixed Super Kick Boxing booting and sound.
- - Preliminary open bus emulation for allowing Shien's Revenge / 
-    Shien the Blade Chaser to boot
- - Fixed mode 5/6 bg drawing cutted in half bug
- - Fixed (presumably) broken gfxs in nss_sten
+ - Preliminary open bus emulation for allowing Shien's Revenge/Shien the Blade Chaser to boot.
+ - Fixed mode 5/6 bg drawing cutted in half bug.
+ - Fixed (presumably) broken gfxs in nss_sten.
  - More accurate behaviour of the last scroll register.
  - Improved mode 5/6 gfxs when tile size = 16x16.
- - Fixed rowscroll line bugs in many games
- - Made the unsupported reads on i/o open bus, fixed a layer enable 
-    in Super Kick Boxing
- - Fixed vram size when in hires mode
- - Hooked up interlace mode
- - Fixed doubled y-axis sprites when in interlace mode
+ - Fixed rowscroll line bugs in many games.
+ - Made the unsupported reads on i/o open bus, fixed a layer enable in Super Kick Boxing.
+ - Fixed vram size when in hires mode.
+ - Hooked up interlace mode.
+ - Fixed doubled y-axis sprites when in interlace mode.
  - Improved window effects when in H-512 mode.
  - Removed a kludge with color windows.
- - Fixed buggy layer clearance when in H-512 modes
- - Fixed the x scrolling wrap around bug when hscroll == 0
- - Fixed a bug that were causing a row of corrupted tiles during 
-    scrolling situations
+ - Fixed buggy layer clearance when in H-512 modes.
+ - Fixed the x scrolling wrap around bug when hscroll == 0.
+ - Fixed a bug that were causing a row of corrupted tiles during scrolling situations.
  - Fixed irq ack and fixed TIMEUP register open bus behaviour.
  - Even more aggressive open bus fixes.
- - Fixed a partial update bug when the screen is in interlace mode
+ - Fixed a partial update bug when the screen is in interlace mode.
  - Fixed 8bpp layer colors.
 
 Patched progolfa ROM like progolf. Removed bad dump flag in progolf; 

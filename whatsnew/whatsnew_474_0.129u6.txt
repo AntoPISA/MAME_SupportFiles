@@ -2,8 +2,28 @@
 ---------------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
+New Games Added or Promoted from NOT_WORKING Status
+---------------------------------------------------
+Daisyarin [Yasuhiro Ogawa]
+Great Sluggers 94 (Japan) [Phil Bennett]
+Mahjong Club [Yasuhiro Ogawa]
+
+New Clones Added
+----------------
+Joker Poker (Version 16.03BI) [Jim Stolis] (not working)
+New clones: T-MEK (3 sets) [Lars Bull]
+Scud Race (Japan) [Leif Hurst] (not working)
+Splatter House (World new version) [Andy Henderson]
+Violence Fight (Japan)
+
+New Games Marked as GAME_NOT_WORKING
+------------------------------------
+E-Jan Sakurasou [Uki]
+Tokimeki Mahjong Paradise Doki Doki Hen [Uki]
+
+
+MAMETesters Bugs Fixed (26):
+----------------------------
 - 00015: [Sound] Noticeable static in OKI 6295 audio (Aaron Giles)
 - 02180: [Core] Corrupt archives are read without problems (Couriersud)
 - 02368: [DIP/Input] fourtrax: Controls are glitched (Phil Bennett)
@@ -30,26 +50,6 @@ MAMETesters Bugs Fixed
 - 02995: [Crash/Freeze] liberate, dualaslt: Black screen shows after disclaimer (Phil Bennett)
 - 02996: [Crash/Freeze] hotchase: [debug] Access Violation (Phil Bennett)
 - 02998: [Crash/Freeze] pkunwar, ninjakun, raiders5: These games don't make it through their ROM checks. (Phil Bennett)
-
-
-New games added or promoted from NOT_WORKING status
----------------------------------------------------
-Daisyarin [Yasuhiro Ogawa]
-Great Sluggers 94 (Japan) [Phil Bennett]
-Mahjong Club [Yasuhiro Ogawa]
-
-New clones added
-----------------
-Joker Poker (Version 16.03BI) [Jim Stolis] (not working)
-New clones: T-MEK (3 sets) [Lars Bull]
-Scud Race (Japan) [Leif Hurst] (not working)
-Splatter House (World new version) [Andy Henderson]
-Violence Fight (Japan)
-
-New games marked as GAME_NOT_WORKING
-------------------------------------
-E-Jan Sakurasou [Uki]
-Tokimeki Mahjong Paradise Doki Doki Hen [Uki]
 
 
 Source changes:
@@ -82,11 +82,13 @@ Source changes:
 - Added port names to the taito8741 device pending its proper devicification [Aaron Giles].
 - Removed all remaining uses of input_port_n_r() functions, and purged them from src/emu/machine/generic [Aaron Giles].
 - Removed device types from device queries that use tags, under the assumption that all device tags are unique. Specifically, the following no longer need to provide a device type:
+
   AM_DEVREAD/WRITE
   DEVCB_DEVICE_HANDLER
   devtag_get_device
   devtag_reset
   device_list_find_by_tag
+  
   as well as several device interfaces that referenced other devices [Aaron Giles].
 - Moved SH2 set info functions to direct calls [Aaron Giles].
 - Various improvements to the 'Zero Target' and 'Counter Steer' HW and cleaned-up the driver. Fixed foreground & background colors and hand-tuned sound in 'Zero Target' based on a side-by-side test. Fixed sprite colors [Angelo Salese].

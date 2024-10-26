@@ -2,26 +2,19 @@
 ---------------------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
-- 03873: [Misc.] (megaplay.c and megatech.c): Individual games incorrectly writing an NVRAM file.  (Fabio Priuli)
-- 05139: [Color Palette): ryorioh: Wrong Colors (Angelo Salese)
-- 05179: [Interface] -burnin option not functioning  (Fabio Priuli)
-  
-
-New games added or promoted from NOT_WORKING status
+New Ggames Added or Promoted from NOT_WORKING Status
 ---------------------------------------------------
 Bases Loaded (Prototype, PlayChoice-10) [Lost Levels]
-Caribbean Gold (3VXEC449, USA)  [Heihachi73]
-Caribbean Gold II (3XF5182H04, USA)  [Heihachi73]
-Fortune Hunter (2XF5196I01, USA)  [Heihachi73]
-Fortune Hunter (2XF5196I02, USA)  [Heihachi73]
-Magic Card II (blue TAB board, encrypted)  [Peter Ferrie, Roberto Fresca]
-Magic Card II (green TAB or Impera board)  [Peter Ferrie, Roberto Fresca]
-Royal Card v2.0 Professional  [Peter Ferrie]
+Caribbean Gold (3VXEC449, USA) [Heihachi73]
+Caribbean Gold II (3XF5182H04, USA) [Heihachi73]
+Fortune Hunter (2XF5196I01, USA) [Heihachi73]
+Fortune Hunter (2XF5196I02, USA) [Heihachi73]
+Magic Card II (blue TAB board, encrypted) [Peter Ferrie, Roberto Fresca]
+Magic Card II (green TAB or Impera board) [Peter Ferrie, Roberto Fresca]
+Royal Card v2.0 Professional [Peter Ferrie]
 Sex Appeal (Version 6.02) [Brian Troha, The Dumping Union]
 
-New clones added
+New Clones Added
 ----------------
 (U.S.) Games V18.5 [Bad A Billy, Smitdogg, The Dumping Union]
 Capcom Vs. SNK Millennium Fight 2000 (JPN, USA, EXP, KOR, AUS) [Porchy, The Dumping Union]
@@ -43,7 +36,7 @@ Side by Side (Ver 2.7 J) [Guru]
 The Pit Boss (2214-03, U5-1C) [Brian Troha, The Dumping Union]
 Virus (Dr. Mario prototype, PlayChoice-10) [Lost Levels]
 
-New games marked as GAME_NOT_WORKING
+New Games Marked as GAME_NOT_WORKING
 ------------------------------------
 Crackin' DJ Part 2 [ShouTime, f205v, The Dumping Union, R. Belmont]
 Fruit Star (encrypted) [Team Europe, Roberto Fresca]
@@ -52,12 +45,19 @@ Saturday Night Slam Masters (bootleg with PIC16C57) [ANY, The Dumping Union, Rob
 Winning Streak (Version 1.1) (Coinworld) [albaki77]
 
 
+MAMETesters Bugs Fixed (3):
+---------------------------
+- 03873: [Misc.] (megaplay.c and megatech.c): Individual games incorrectly writing an NVRAM file.  (Fabio Priuli)
+- 05139: [Color Palette): ryorioh: Wrong Colors (Angelo Salese)
+- 05179: [Interface] -burnin option not functioning  (Fabio Priuli)
+
+
 Source changes:
 ---------------
 - QT Debugger fixes [Andrew Gardner]:
   * New memory windows start focused on the active CPU.
   * Opening a utility window, closing it, and stepping no longer re-opens the window.
-- shangha3.c: Added dipswitch locations to 'Shanghai III', 'Hebereke no Ponpoon' and 'Blocken' [Brian Troha].
+- shangha3.c: Added dipswitch locations to Shanghai III, Hebereke no Ponpoon and Blocken [Brian Troha].
 - m6502: Seriously untested multi-dispatch-table support [O. Galibert].
 - coolridr: Work around miscompile on newer versions of Clang [Phil Bennett].
 - Modernized k053260 device [Andrew Gardner].
@@ -77,7 +77,7 @@ Source changes:
 - sf2m3, sf2m8: Fixed remaining gfx issues, marked as WORKING [Robbbert].
 - Improved sf2m1, dinopic, dinopic2, punipic, punipic2, punipic3 [Robbbert].
 - shangha3.c: Corrected clock speed for Shanghai 3 and added misc documentation [Brian Troha].
-- Treat x and y coordinates as 11 bit signed, 'Ridge Racer Revolution' loading game sets unused bits [smf].
+- Treat x and y coordinates as 11 bit signed, Ridge Racer Revolution loading game sets unused bits [smf].
 - m740: correct disassembly of bbs/bbc on A register [R. Belmont].
 - tms5220.c: Added correct tms5200 chirp ROM derived from decap; This is now correctly used for 5200, 5220 and 5220c, improving the voice quality significantly [digshadow, Sarayan, Lord Nightmare].
 - m740: Correct disassembly for seb x,A/clb x,A [R. Belmont].

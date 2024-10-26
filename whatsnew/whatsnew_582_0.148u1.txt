@@ -2,24 +2,14 @@
 ---------------------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
-- 04028: [Crash/Freeze] (pinkiri8.c) ronjan: Crash after OK (Firewave)
-- 04487: [Graphics] all games with PlayStation GPU: shifted lines in textured quads (smf)
-- 04844: [Crash/Freeze] (jaguar.c) fishfren: black screen after EEPROM initialize (Peter Ferrie)
-- 05104: [Crash/Freeze] (qix.c) slither, slithera: [debug] Error: bad downcast<> or device<> (Phil Bennett)
-- 05134: [Graphics] (m92.c) ppan: No sprites present in the game (Phil Bennett)
-- 05137: [Gameplay] (nbmj8991.c) galkaika, galkoku, mcontest, tokimbsj, tokyogal, uchuuai: No sound, lock up in attract mode or gameplay (Phil Bennett)
-
-
-New games added or promoted from NOT_WORKING status
+New Games Added or Promoted from NOT_WORKING Status
 ---------------------------------------------------
 Bonne Chance! (French/English) [Roberto Fresca, Any, The Dumping Union]
 Brixian [David Haywood, Zabanitu]
 New York Joker [Roberto Fresca, David Haywood, Any, The Dumping Union]
 Number One [Roberto Fresca, David Haywood, Any, The Dumping Union]
 
-New clones added
+New Clones Added
 ----------------
 Continental Circus (Japan) [ShouTime, The Dumping Union]
 Demon Front (68k label V103, ROM M103XX 07/05/02) (ARM label V103, ROM 07/05/02 S103XX) [R. Mucciarelli, Layne, Smitdogg, The Dumping Union]
@@ -38,7 +28,7 @@ Wonder Boy in Monster Land (English bootleg set 3) [RanaElia]
 WWF Superstars (bootleg) [Brian Troha]
 X-Men (4 Players ver AEA) [RevisionX]
 
-New games marked as GAME_NOT_WORKING
+New Games Marked as GAME_NOT_WORKING
 ------------------------------------
 Fruit Fresh [ANY]
 Print Club 2 '97 Winter Ver (J 971017 V1.100) [f205v, ranger_lennier, dopefishjustin, Yohji, Smitdogg, The Dumping Union]
@@ -46,6 +36,16 @@ Rugby? (four roses hardware) [Any, The Dumping Union, Roberto Fresca]
 Several IGS036 based sets [XingXing]
 Super Pinball Action (prototype) [TrevEB, f205v, Tormod, Smitdogg, The Dumping Union]
 Tumble Pop (Playmark bootleg) [ANY] (not working)
+
+
+MAMETesters Bugs Fixed (6):
+---------------------------
+- 04028: [Crash/Freeze] (pinkiri8.c) ronjan: Crash after OK (Firewave)
+- 04487: [Graphics] all games with PlayStation GPU: shifted lines in textured quads (smf)
+- 04844: [Crash/Freeze] (jaguar.c) fishfren: black screen after EEPROM initialize (Peter Ferrie)
+- 05104: [Crash/Freeze] (qix.c) slither, slithera: [debug] Error: bad downcast<> or device<> (Phil Bennett)
+- 05134: [Graphics] (m92.c) ppan: No sprites present in the game (Phil Bennett)
+- 05137: [Gameplay] (nbmj8991.c) galkaika, galkoku, mcontest, tokimbsj, tokyogal, uchuuai: No sound, lock up in attract mode or gameplay (Phil Bennett)
 
 
 Source changes:
@@ -144,7 +144,7 @@ Source changes:
   * Labeled inputs in 'GTI Club' [RetroRepair].
   * RF5c400 envelope timing based on chip output rate instead of MAME output rate [R. Belmont].
 - SDL: Update manpages to reflect the -lr alias for -listroms [Wallyweek].
-- aviio.c - Fix bad frames occurring on 2GB RIFF splits [Phil Bennett].
+- aviio.c: Fix bad frames occurring on 2GB RIFF splits [Phil Bennett].
 - video/gticlub.c: Fixed "sticky" 3D in gticlub and thunderh [Ville Linde].
 - namcops2: Add JVS and Steering I/O board ROMs [Guru].
 - uimain.c: fixed handling of slot options which have only internal options available (and hence are not configurable by the end-user) [Fabio Priuli].
@@ -156,7 +156,7 @@ Source changes:
 - arm.c: Add fine page table lvl2 lookup, fixes ldrink fatalerror [MooglyGuy].
 - k001604: Rewrote the ROZ rendering [Ville Linde].
 - clifront.c: Faster enumeration during -verifyroms [Peter Ferrie].
-- idectrl.c: Fix regression in 'Fishin' Frenzy' without breaking 'Area 51 Site 4' [Peter Ferrie].
+- idectrl.c: Fix regression in Fishin' Frenzy without breaking Area 51 Site 4 [Peter Ferrie].
 - arm7ops.c: Fixed behavior of SMLAxy opcode [MooglyGuy].
 - arm7ops.c: Fix SMLAL, SMULW, SMLAW opcodes [MooglyGuy].
 - Add server socket support instead of just client [SailorSat, R. Belmont].

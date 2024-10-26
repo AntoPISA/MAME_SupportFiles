@@ -2,8 +2,26 @@
 ---------------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
+New Games Added or Promoted from NOT_WORKING Status
+---------------------------------------------------
+Kyuukyoku no Othello [robiza, Fabio Priuli]
+S.O.S. [Alex, Max, Antro]
+
+New Clones Added
+----------------
+Champion Poker (v200G) [Luca Elia]
+Indianapolis 500 Deluxe [Kris Anks]
+Megatouch III (9255-20-01 RON) [Brian Troha]
+New clone: Crystal Castles (joystick version) [Guru]
+
+New Games Marked as GAME_NOT_WORKING
+------------------------------------
+Jingle Bell [Luca Elia]
+Quiz Punch 2 [Luca Elia]
+
+
+MAMETesters Bugs Fixed (13):
+----------------------------
 01817: [Crash/Freeze] intrepi2: Game stops at PCB test (Pierpaolo Prazzoli).
 01958: [Crash/Freeze] skns: Segfaults on load (Pierpaolo Prazzoli).
 02033: [Crash/Freeze] soccerss and clones: the romtest report  two bad roms (robiza).
@@ -17,24 +35,6 @@ MAMETesters Bugs Fixed
 02070: [Crash/Freeze] atlantol: Access Violation (Aaron Giles).
 02079: [DIP/Input] radr, radru: Dipswitch info (robiza).
 02090: [Crash/Freeze] thedeep: Game didn't start (black screen) (Pierpaolo Prazzoli).
-
-
-New games added or promoted from NOT_WORKING status
----------------------------------------------------
-Kyuukyoku no Othello [robiza, Fabio Priuli]
-S.O.S. [Alex, Max, Antro]
-
-New clones added
-----------------
-Champion Poker (v200G) [Luca Elia]
-Indianapolis 500 Deluxe [Kris Anks]
-Megatouch III (9255-20-01 RON) [Brian Troha]
-New clone: Crystal Castles (joystick version) [Guru]
-
-New games marked as GAME_NOT_WORKING
-------------------------------------
-Jingle Bell [Luca Elia]
-Quiz Punch 2 [Luca Elia]
 
 
 Source changes:
@@ -66,7 +66,7 @@ Source changes:
 - Fixed window in shanghai and shangha2 [robiza].
 - 8257dma, z80dma (devices) now require device callback handlers instead of machine handlers. Updated affected drivers accordingly [Couriersud].
 - Improved Dsp56k CPU interrupt handling. Polygonet Commanders now advances past its first dsp handshake [Andrew Gardner].
-- Added proper laserdisc support for 'MACH 3', 'Us vs. Them' and 'Cobra Commander' (MACH 3 hardware). Old laserdisc hacks are now removed. The code now talks to the standard Pioneer PR-8210 interface. Also removed hacky "target list" from the MACH 3 ROMs; this information is now decoded on the fly from the right channel laserdisc audio [Aaron Giles].
+- Added proper laserdisc support for MACH 3, Us vs. Them and Cobra Commander (MACH 3 hardware). Old laserdisc hacks are now removed. The code now talks to the standard Pioneer PR-8210 interface. Also removed hacky "target list" from the MACH 3 ROMs; this information is now decoded on the fly from the right channel laserdisc audio [Aaron Giles].
 - Other Gottlieb cleanups [Aaron Giles]:
   * Fixed rev 2 sound again.
   * Fleshed out memory maps and behaviors according to the schematics.
@@ -86,7 +86,7 @@ Source changes:
   * Moved a couple of exp(x) from _step into _reset where appropriate.
   * Use tabulated function values for the transfer function in DSS_INVERTER_OSC.
 - Forced synchronization (stream_update()) before the YM2151 status is actually read [Jarek Burczynski].
-- Added Discrete Sound to 'Fantasy', 'Nibbler' and 'Pioneer Balloon' [Derrick Renaud].
+- Added Discrete Sound to Fantasy, Nibbler and Pioneer Balloon [Derrick Renaud].
 - Fixed I/O watchpoints [Aaron Giles].
 - Changes to the cheat.xml format [Aaron Giles]:
   * New tag <comment> (within <cheat>) is read and preserved when saved.
@@ -100,8 +100,7 @@ Source changes:
 - Removed PORT_START macro. Renamed old PORT_START_TAG to PORT_START. All input ports must have tags [Aaron Giles].
 - Added support for DEL as well as BS for backspacing in the game select menu. Also limited input to ASCII characters [Aaron Giles].
 - Fixed 'Rim Rockin' Basketball' to use the HD6309 core [Tim Lindner].
-- Added diplocations to bigrun, scudhamm, cischeat and f1gpstar. Removed the current hacky handling of f1gpstar coinage dips to use conditional ports instead. In order to do this, the possible conditions were extended to support less than/greater than 
-comparisons [Fabio Priuli].
+- Added diplocations to bigrun, scudhamm, cischeat and f1gpstar. Removed the current hacky handling of f1gpstar coinage dips to use conditional ports instead. In order to do this, the possible conditions were extended to support less than/greater than comparisons [Fabio Priuli].
 - Fixed bug that would break conditions on ports using the PORT_DIPUNKNOWN_DIPLOC macro. [Aaron Giles].
 - Added diplocations to the following drivers: combatsc.c, copsnrob.c, cosmic.c, crgolf.c, crimfght.c, crospang.c (here I also added service dips to heuksun and bestri, which allowed me to verify locations), crshrace.c, dambustr.c, darkseal.c, dassault.c, dblewing.c, ddrible.c, deadang.c. Also added locations to the following games: ddragon & ddragon2 on ddragon.c and docastle, dorunrun & dowild in docastle.c [Fabio Priuli].
 - Verified CPU clocks for athena [Corrado Tomaselli].
@@ -112,6 +111,7 @@ comparisons [Fabio Priuli].
 - Changed sound cpu clock of Spinal Breakers to 5Mhz as verified on the PCB [Corrado Tomaselli].
 - Corrected MPU4 AY8910 output weightings [James Wallace].
 - Added word alternates for operators in expressions [Aaron Giles]:
+
   -   minus
   !   not
   %   mod
@@ -130,6 +130,7 @@ comparisons [Fabio Priuli].
   le  <=
   lt  <
   ne  !=
+  
 - Changed cheat escaping to automatically escape && & < and <= to and band lt and le [Aaron Giles] 
 - Decrypted 'Da Ban Cheng' (dbc set in igs_blit.c) [Pierpaolo Prazzoli].
 - Removed bad dumps from ad2083 [Pierpaolo Prazzoli].

@@ -2,8 +2,38 @@
 ---------------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
+New Games Added or Promoted from NOT_WORKING Status
+---------------------------------------------------
+Gals Panic S3  [Uki, David Haywood] (see http://mamedev.emulab.it/haze/ for details)
+King Derby [Stefan Lindberg, Andrew Gardner, Angelo Salese, Roberto Fresca]
+Makaijan [Yasuhiro Ogawa]
+Monoshiri Quiz Osyaberi Macha [Yasuhiro Ogawa]
+
+New Clones Added
+----------------
+10's or Better [Gyrovision]
+Apache 3 (Kana Corporation license) [Guru]
+Automat (bootleg of Robocop) [Andrew Welburn, Philip Bennett, David Haywood]
+Dangerous Dungeons (The Game Room) (newer?) [Smitdogg] 
+Great Sluggers 94 (Japan) (not working) [Yasuhiro Ogawa]
+Pipe Dream (World) [Corrado Tomaselli]
+Super Heli (Super Cobra bootleg) [Smitdogg]
+The New Zealand Story (World, old version, older pcb) [Corrado Tomaselli]
+The Pit Boss (set 4) [Brian Troha]
+U.S. Championship V'ball (US) [Smitdogg]
+
+New Games Marked as GAME_NOT_WORKING
+------------------------------------
+Adonis (A - 25-05-98, NSW/ACT) [Heihachi_73]
+Diamond Touch (E - 30-06-97, Local) [Heihachi_73]
+Gran Tesoro? [f205v]
+Heavy Unit (3 sets)  [Tomasz Slanina, Corrado Tomaselli]
+Kung-Fu Roushi [Angelo Salese, Roberto Fresca]
+Super Jolly [f205v]
+
+
+MAMETesters Bugs Fixed (31):
+----------------------------
 - 01059: [Sound] brubber: Low pass filtering on engine and explosion sounds is not emulated in MAME (Couriersud)
 - 02212: [Save/Restore] bzone: vector drawing corruption when using a save state (Couriersud)
 - 02825: [Crash/Freeze] crossbow: Crash on "Crossing Bridge" stage (Aaron Giles)
@@ -37,36 +67,6 @@ MAMETesters Bugs Fixed
 - 02962: [Sound] All Sets in thepit.c: No Audio (Aaron Giles)
 
 
-New games added or promoted from NOT_WORKING status
----------------------------------------------------
-Gals Panic S3  [Uki, David Haywood] (see http://mamedev.emulab.it/haze/ for details)
-King Derby [Stefan Lindberg, Andrew Gardner, Angelo Salese, Roberto Fresca]
-Makaijan [Yasuhiro Ogawa]
-Monoshiri Quiz Osyaberi Macha [Yasuhiro Ogawa]
-
-New clones added
-----------------
-10's or Better [Gyrovision]
-Apache 3 (Kana Corporation license) [Guru]
-Automat (bootleg of Robocop) [Andrew Welburn, Philip Bennett, David Haywood]
-Dangerous Dungeons (The Game Room) (newer?) [Smitdogg] 
-Great Sluggers 94 (Japan) (not working) [Yasuhiro Ogawa]
-Pipe Dream (World) [Corrado Tomaselli]
-Super Heli (Super Cobra bootleg) [Smitdogg]
-The New Zealand Story (World, old version, older pcb) [Corrado Tomaselli]
-The Pit Boss (set 4) [Brian Troha]
-U.S. Championship V'ball (US) [Smitdogg]
-
-New games marked as GAME_NOT_WORKING
-------------------------------------
-Adonis (A - 25-05-98, NSW/ACT) [Heihachi_73]
-Diamond Touch (E - 30-06-97, Local) [Heihachi_73]
-Gran Tesoro? [f205v]
-Heavy Unit (3 sets)  [Tomasz Slanina, Corrado Tomaselli]
-Kung-Fu Roushi [Angelo Salese, Roberto Fresca]
-Super Jolly [f205v]
-
-
 Source changes:
 ---------------
 - Fixed Pachi Fever ADPCM test regression [Angelo Salese].
@@ -81,7 +81,7 @@ Source changes:
   * Corrected CPU clock frequencies.
   * Fixed YM-2151 volume.
   * Added road stripe PROM.
-- Removed earom from bzone [Couriersud].
+- Removed EEPROM from bzone [Couriersud].
 - Impemented CRCL command in hd63484 (used in skattv test mode) [robiza].
 - Added save state support to tomcat, tempest, quantum, asteroid, bwidow, mhavoc, omegrace [Couriersud].
 - Device-ified the Atari mathbox [Couriersud].
@@ -98,6 +98,7 @@ Source changes:
 - Added a debug viewer for the blitter-based gfxs in the itgambl2.c [Angelo Salese].
 - Renamed a number of commonly-used but confusing device tags. The plan is to move away from generic names like "main" to names that capture the device type as well. This will allow searches for devices to be based on tags alone. Added validity checks to prevent the continuance of this pattern (which I started :), and to ensure that all devices have unique tags, regardless of type [Aaron Giles]:
   * Changes:
+  
   CPU/"main" -> "maincpu"
   CPU/"audio" -> "audiocpu"
   CPU/"sound" -> "soundcpu"
@@ -108,6 +109,7 @@ Source changes:
   SCREEN/"right" -> "rscreen"
   SCREEN/"middle" -> "mscreen"
   SCREEN/"center" -> "cscreen"
+  
 - Corrected ROM names in tnzs.c for older TNZS sets [Brian Troha].
 - Hooked up the reel background colour writes to cherry master / new Fruit Bonus '96, etc [David Haywood].
 - Fixed ROM loading in secretab [Angelo Salese].
