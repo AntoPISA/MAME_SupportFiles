@@ -2,8 +2,8 @@ MAME RENAMESET.DAT/INI
 ======================
 (C) progetto-SNAPS 2009/2024 AntoPISA
 
-renameSET.dat:    0.270
-Internal version:  5.37
+renameSET.dat:    0.271
+Internal version:  5.39
 
 The package contains:
 
@@ -12,48 +12,55 @@ The package contains:
 - allMAMEset.txt          : List with all the machines/BIOS/devices added to MAME from the first version; each machine has a unique progressive number (called mameID).
 - renameSET.dat           : All data and counts relating to each published MAME, including renamed and deleted machines.
 - renameSET.ini           : Like the previous file but in another format, which can be used with the "MAMErenSET" tool to automate updating operations of resources.
-- renameSET_269-270.ini   : Like "renameSET.ini" but only includes the last two releases of the MAME.
+- renameSET_270-271.ini   : Like "renameSET.ini" but only includes the last two releases of the MAME.
 - renameSET_SL.dat        : Like "renameSET.dat" but related to software lists.
 
 ====================================================================================================================================================================
 
 How to read "renameSET.dat"
+---------------------------
 
 For each version of MAME released, are provided, in order:
 
-Line 1 : Official version and [progressive numbering].
+Line 1 : Official version and [progressive release number].
 
 Line 2 : Release date (yyyy/mm/dd).
 
 Line 3 : Summary of the various items (with any differences highlighted -/+):
 
-         total items   - The total number of all elements that make up MAME: drivers, machines, devices and BIOSes;
-         drivers       - Count of all drivers inherent to the machines;
-         machines      - Count of all machines (Parents + Clones);
-         parents       - Count of all "Parent" machines (including BIOS but excluding Devices);
-         clones        - Count of all "Clones" machines (always excluding Devices);
-         BIOSes        - Count of all "BIOSes";
-         devices       - Count of all "Devices".
-         requires CHDs - Count of machines and BIOS using CHDs;
-         use Samples   - Count of machines using Samples.
+         total items          - The total number of all elements that make up MAME: drivers, machines, devices and BIOSes;
+         drivers              - Count of all drivers inherent to the machines;
+         machines             - Count of all machines (Parents + Clones);
+         parents              - Count of all "Parent" machines (including BIOSes but excluding Devices);
+         clones               - Count of all "Clones" machines (always excluding Devices);
+         BIOSes               - Count of all "BIOSes";
+         devices              - Count of all "Devices".
+         requires CHDs        - Count of machines and BIOS using CHDs;
+         use Samples          - Count of machines using Samples;
+         audio mono           - Counting machines with without audio (channels 0);
+         audio stereo         - Counting machines with mono audio (channels 1);
+         no audio             - Counting machines with stereo audio (channels 2);
+         audio multi-channels - Counting machines with multi-channel audio (channels 3 or more).
 
 Line 4:  The operating characteristics of machines supported (with any differences highlighted -/+):
 
-         working           - Count of all "Working" machines;
-         not working       - Count of "Non Working" machines;
-         mechanicals       - Count of "Mechanical" machines;
-         not mechanicals   - Count of non "Mechanical" machines;
-         save supported    - Count of machines that support "SaveState";
-         save unsupported  - Count of machines that do not support the "SaveState";
-         horizontal screen - Count of machines that have a horizontal screen;
-         vertical screen   - Count of machines that have a vertical screen.
+         working            - Count of all "Working" machines;
+         not working        - Count of "Non Working" machines;
+         mechanicals        - Count of "Mechanical" machines;
+         not mechanicals    - Count of non "Mechanical" machines;
+         save supported     - Count of machines that support "SaveState";
+         save unsupported   - Count of machines that do not support the "SaveState";
+         horizontal screen  - Count of machines that have a horizontal screen;
+         vertical screen    - Count of machines that have a vertical screen;
+         vectorial graphics - Machine counting with vector graphics;
+         raster graphics    - Machine counting with raster graphics.
 
 Line 5:  Counting of all types of ROMs supported (with any differences highlighted -/+):
 
          total roms     - Count of all roms (including BIOSes and devices); subdivided into:
-         machines roms   - Count of roms belonging to machines; 
-         devices roms    - Count of roms belonging to the devices;
-         BIOSes roms     - Count of roms belonging to the BIOSes;
+         machines roms  - Count of roms belonging to machines; 
+         devices roms   - Count of roms belonging to the devices;
+         BIOSes roms    - Count of roms belonging to the BIOSes;
          CHDs           - Count of all CHDs;
          sample files   - Count of all sample files;
          sample packs   - Count of "Sample" packages needed by MAME;
