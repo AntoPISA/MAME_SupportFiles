@@ -1,9 +1,28 @@
-0.145u7 2012/04/22 [#568 - Miodrag Milanovic]
+﻿0.145u7 2012/04/22 [#568 - Miodrag Milanovic]
 ---------------------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
+New Games Added or Promoted from NOT_WORKING Status
+---------------------------------------------------
+Draw Poker - Joker's Wild (02-11) [hap, Roberto Fresca]
+Draw Poker - Joker's Wild (Standard) [hap, Roberto Fresca]
+Silver Millennium  [Bonky0013, David Haywood]
+
+New Clones Added
+----------------
+Hot Mind (Fit of Fighting Hardware) [f20v] (NOT WORKING)
+Zeke's Peak  [Sandro Ronco]
+
+New Games Marked as GAME_NOT_WORKING
+------------------------------------
+Golden Arrow [hap, Kevin Mullins]
+Knights of Valour: Aoshi Sanguo / Sangoku Senki: Aoshi Sanguo (ver. 202CN, bootleg)
+Ninja Assault [Guru, Deunan Knute]
+Star Trek: Voyager [R. Belmont, Mr. CAST, Smitdogg, The Dumping Union]
+
+
+MAMETesters Bugs Fixed (15):
+----------------------------
 - 00485: [Sound] gotcha: The woman's voice gets cut off (hap).
 - 04746: [Crash/Freeze] All sets in midzeus.c, seattle.c, vegas.c: Crash before OK (Aaron Giles).
 - 04747: [Crash/Freeze] All sets in psikyo.c: Crash after OK (Aaron Giles).
@@ -21,43 +40,21 @@ MAMETesters Bugs Fixed
 - 04764: [Documentation] sfight2 and clones.: The correct description is "Street Fighter II".
 
 
-New games added or promoted from NOT_WORKING status
----------------------------------------------------
-Draw Poker - Joker's Wild (02-11) [hap, Roberto Fresca]
-Draw Poker - Joker's Wild (Standard) [hap, Roberto Fresca]
-Silver Millennium  [Bonky0013, David Haywood]
-
-New clones added
-----------------
-Hot Mind (Fit of Fighting Hardware) [f20v] (NOT WORKING)
-Zeke's Peak  [Sandro Ronco]
-
-New games marked as GAME_NOT_WORKING
-------------------------------------
-Golden Arrow [hap, Kevin Mullins]
-Knights of Valour: Aoshi Sanguo / Sangoku Senki: Aoshi Sanguo (ver. 202CN, bootleg)
-Ninja Assault [Guru, Deunan Knute]
-Star Trek: Voyager [R. Belmont, Mr. CAST, Smitdogg, The Dumping Union]
-
-
 Source changes:
 ---------------
 - m68k improvements [Hans Ostermeyer]:
   * Fixed BFINS, BFEXTU, and BFEXTS to fetch 8-bit quantities as 8 bits (corrects Domain/OS 10.3.5 crash on page boundry).
   * Added SoftFloat log functions and m68k FLOGNP1, FLOGN, FLOG2, and FLOG10 instructions.
-' kinstb, ffight2b, iron, denseib, sblast2b (snesb.c) [stephh] :
-  * Fixed Dip Switches and Coin Inputs (after verification of the 5A22 code).
+- kinstb, ffight2b, iron, denseib, sblast2b (snesb.c): Fixed DIP Switches and Coin Inputs (after verification of the 5A22 code) [stephh].
 - PGM, Scorpion 4/5 and Astra Fruit Machine [David Haywood]:
   * Slightly reworked some previous PGM submissions.
   * Reorganized many bfm_sc4/sc5 sound roms.
   * Added some notes, code and alternate revisions to astrafr.c.
 - nbmj8891.c: Fixed font graphics in hanamomo [Takahiro Nogi].
 - uPD1990AC: Only latch CSx bits when STB is high [R. Belmont].
-- proconn.c [David Haywood]:
-  * Added the basic device definitions for this driver with some NULL callbacks for now, setting the framework for more progress later.
-- globalfr.c VFD improvement to allow for better debugging as well as some ROM splitting of clones for the driver. Also did some stepper motor work to support more types [James Wallace].
-- ecoinf3.c  [David Haywood]:
-  * Added some 8255s (maybe too many, not sure how many the PCBs have) and identified where it writes the 'VFD' strings.
+- proconn.c: Added the basic device definitions for this driver with some NULL callbacks for now, setting the framework for more progress later [David Haywood].
+- globalfr.c: VFD improvement to allow for better debugging as well as some ROM splitting of clones for the driver. Also did some stepper motor work to support more types [James Wallace].
+- ecoinf3.c: Added some 8255s (maybe too many, not sure how many the PCBs have) and identified where it writes the 'VFD' strings [David Haywood].
 - silvmil.c: Added known dipswitches & locations. Derived clock speeds from actual OSCs located on the PCB [Brian Troha].
 - Revamped the sprite decryption of raiden2-like Seibu boards [Andreas Naive]:
   * Added support for Zero Team.
@@ -92,7 +89,7 @@ Source changes:
   * Realigned the games table.
 - amaticmg.c: Figured out encryption [Andreas Naive].
 - paradise.c: Corrected Difficulty DSW for Penky and added notes about alternate DSW settings as found in scanned Pins & Dip manual [Brian Troha].
-- gumbo.c: Added dipswitch locations to all sets in the driver [Brian Troha].
+- gumbo.c: Added DIP switch locations to all sets in the driver [Brian Troha].
 - sliver.c: Filled in / Corrected all dipswitches for Sliver and added dipswitch locations [Brian Troha].
 - sangho.c: Filled in some dipswitches for 'Sexy Boom' and 'Puzzle Star' and added DIP Switch locations [Brian Troha].
 - pokechmp.c: Correct dipswitches as per manual and add dipswitch locations [Brian Troha].

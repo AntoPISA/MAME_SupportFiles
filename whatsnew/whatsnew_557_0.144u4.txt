@@ -1,38 +1,38 @@
-0.144u4 2011/12/24 [#557 - Miodrag Milanovic]
+﻿0.144u4 2011/12/24 [#557 - Miodrag Milanovic]
 ---------------------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
-- 03457: [Graphics] choplift: Choplifter (8751 315-5151) scrolling problems (hap).
-- 03538: [Sound] salamand, lifefrce, lifefrcej, salamandj: Music is too quiet in Salamander and Lifeforce (Fujix).
-- 04536: [Sound] flicky, flickys2: Z80 PIO issues causing missing music (hap).
-- 04556: [Interface] Changing INC and DEC inputs, results in .cfg file issue (hap).
-- 04557: [Documentation] m5bankrl: The correct description is "The Bank Roll (Barcrest) (MPU5)".
-- 04558: [Gameplay] wboy and clones: 'gameplay smoothness' issue (hap).
-- 04559: [Documentation] m5draclb: The correct description is "Ooh Aah Dracula Club (Barcrest) (MPU5)".
-- 04562: [Crash/Freeze] All sets in namconb1.c: Failure to boot past post or disclaimer screen (Angelo Salese).
-- 04563: [Crash/Freeze] thedeep: Access Violation (Angelo Salese).
-- 04564: [Crash/Freeze] dwex, drgw3 and clones: Access Violation after OK (Angelo Salese).
-- 04565: [Sound] salamand, lifefrce: Reversed Stereo (Angelo Salese).
-- 04566: [Sound] rockragej, rockrage, rockragea: Stereo output is not implemented (Angelo Salese).
-- 04569: [Interface] Changing INC in UI menu changes DEC instead (Olivier Galibert).
-- 04570: [Crash/Freeze] wof: Black screen (Brian Troha).
-- 04572: [Crash/Freeze] Many sets in dynax.c, royalmah.c: Failure to boot/Hang at Post (Angelo Salese).
-- 04574: [Speed] Many sets in snowbros.c: Graphic and gameplay slowdown (Angelo Salese).
-- 04575: [Interface] [UI] Box no longer drawn around physical DIP locations (Olivier Galibert).
-- 04576: [Crash/Freeze] geebee, geebeeb, geebeeg: freeze when starting the game (hap).
-- 04578: [Graphics] mwalk: Graphics corruption after a few seconds of gameplay (Alex Jackson).
-
-
-New games added or promoted from NOT_WORKING status
+New Games Added or Promoted from NOT_WORKING Status
 ---------------------------------------------------
 Forte Card (Spanish) [Angelo Salese, Roberto Fresca, Rob Ragon]
 Itazura Tenshi [Team Japump!!!, Hau, Yohji]
 
-New games marked as GAME_NOT_WORKING
+New Games Marked as GAME_NOT_WORKING
 ------------------------------------
 Special Criminal Investigation (Tourvision PCE bootleg) [Mariusz Wojcieszek, Clawgrip, Charles MacDonald, AUMAP]
+
+
+MAMETesters Bugs Fixed (19):
+----------------------------
+- 03457: [Graphics] choplift: Choplifter (8751 315-5151) scrolling problems (hap)
+- 03538: [Sound] salamand, lifefrce, lifefrcej, salamandj: Music is too quiet in Salamander and Lifeforce (Fujix)
+- 04536: [Sound] flicky, flickys2: Z80 PIO issues causing missing music (hap)
+- 04556: [Interface] Changing INC and DEC inputs, results in .cfg file issue (hap)
+- 04557: [Documentation] m5bankrl: The correct description is "The Bank Roll (Barcrest) (MPU5)"
+- 04558: [Gameplay] wboy and clones: 'gameplay smoothness' issue (hap)
+- 04559: [Documentation] m5draclb: The correct description is "Ooh Aah Dracula Club (Barcrest) (MPU5)"
+- 04562: [Crash/Freeze] All sets in namconb1.c: Failure to boot past post or disclaimer screen (Angelo Salese)
+- 04563: [Crash/Freeze] thedeep: Access Violation (Angelo Salese)
+- 04564: [Crash/Freeze] dwex, drgw3 and clones: Access Violation after OK (Angelo Salese)
+- 04565: [Sound] salamand, lifefrce: Reversed Stereo (Angelo Salese)
+- 04566: [Sound] rockragej, rockrage, rockragea: Stereo output is not implemented (Angelo Salese)
+- 04569: [Interface] Changing INC in UI menu changes DEC instead (Olivier Galibert)
+- 04570: [Crash/Freeze] wof: Black screen (Brian Troha)
+- 04572: [Crash/Freeze] Many sets in dynax.c, royalmah.c: Failure to boot/Hang at Post (Angelo Salese)
+- 04574: [Speed] Many sets in snowbros.c: Graphic and gameplay slowdown (Angelo Salese)
+- 04575: [Interface] [UI] Box no longer drawn around physical DIP locations (Olivier Galibert)
+- 04576: [Crash/Freeze] geebee, geebeeb, geebeeg: freeze when starting the game (hap)
+- 04578: [Graphics] mwalk: Graphics corruption after a few seconds of gameplay (Alex Jackson)
 
 
 Source changes:
@@ -57,7 +57,7 @@ Source changes:
 - eeprom.c: Changed the 'erase' function to force all data bits of the specified address to 1s [Wilbert Pol].
 - Fix for 8042kbc.c irq generation, now 'California Chase' correctly accept keyboard inputs [Grull Osgo].
 - Fix to CD-i video code [fgs].
-- Fixed irq ack in 'Itazura Tenshi' [Angelo Salese].
+- Fixed IRQ hack in Itazura Tenshi [Angelo Salese].
 - Fixed VGA line compare register masking, makes Windows 98 logo to display correctly [Angelo Salese].
 - Forte Card improvements [Roberto Fresca]:
   * A lot of work on inputs.
@@ -70,11 +70,11 @@ Source changes:
   * Improved the button-lamps layout with the half and double addition for betting in the gamble stage.
   * Lamps documentation and support.
   * Reverse engineering and partially documented the serial EEPROM data.
-- Hooked up VGA device to 'Photo Play' [Angelo Salese].
+- Hooked up VGA device to Photo Play [Angelo Salese].
 - Improved SN76477 interface [Curt Coder].
 - Merged dacholer.c and itaten.c drivers, fixes priority and sprite Y positions in Dacholer and 'Kick Boy' [Angelo Salese].
 - Modernized MSM6242 RTC device [Angelo Salese].
-- Other improvements to 'California Chase', it shows Windows 98 logo [Grull Osgo].
+- Other improvements to California Chase, it shows Windows 98 logo [Grull Osgo].
 - Preliminary save state support to Naomi / AW / DC driver [Angelo Salese].
 - Properly hooked up MSM6242 device to Super Kaneko Nova System [Angelo Salese].
 - Removed PC-based sound hack from Mirax [Angelo Salese].

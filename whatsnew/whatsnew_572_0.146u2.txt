@@ -1,16 +1,8 @@
-0.146u2 2012/07/02 [#572 - Miodrag Milanovic]
+﻿0.146u2 2012/07/02 [#572 - Miodrag Milanovic]
 ---------------------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
-- 04759: [Crash/Freeze] (pinkiri8.c) All sets in pinkiri8.c: Crash after OK (David Haywood).
-- 04821: [Gameplay] (cd32.c) All sets in cd32.c:: All games fail to boot properly (R. Belmont).
-- 04892: [Misc.] (zaxxon.c) zaxxon, congo, congoa: INPs do not play back correctly (micko).
-- 04923: [Crash/Freeze] Many sets in bfm_sc2.c and bfm_sc4.c: Crash after OK (Tafoid).
-
-
-New games added or promoted from NOT_WORKING status
+New Games Added or Promoted from NOT_WORKING Status
 ---------------------------------------------------
 Fantasy Zone II (System 16C version) [David Haywood]
 Fishing (DECO Cassette). [SRI, Charles MacDonald, Team Japump!]
@@ -23,7 +15,7 @@ Space Invaders Multigame (several versions) [hap, Dave France, Scott Brasington]
 Super ABC (Pac-Man multigame kit) [hap, Guru, MiSFiTMAME]
 Touryuumon [Tim Schuerewegen]
 
-New clones added
+New Clones Added
 ----------------
 Arkanoid (bootleg with MCU, set 2) [Smitdogg, The Dumping Union]
 Dynamite League (US) [Mr. CAST, Smitdogg, The Dumping Union]
@@ -36,7 +28,7 @@ War Gods (HD 08/15/1996) [alca]
 War Gods (HD 10/09/1996 - Dual Resolution) [B. Stahl, N. Francfort, ranger_lennier, Smitdogg, The Dumping Union]
 War Of The Bugs (US)  [B. Stahl, Smitdogg, The Dumping Union]
 
-New games marked as GAME_NOT_WORKING
+New Games Marked as GAME_NOT_WORKING
 ------------------------------------
 beatmania IIDX 2nd style (GC985 JA) [phillw]
 Multipede [hap, JunoMan, Scott Brasington]
@@ -44,6 +36,14 @@ Skins Game (1.08) [Mr. CAST, M. Ponweiser, Mojo2000, Smitdogg, The Dumping Union
 Skins Game (unknown alt. version) [Guru, R. Belmont]
 Triple Play (Ver. 1.10) [Kevin Eshbach, Smitdogg, Luca Elia, The Dumping Union]
 Wild Poker (ver. D 1.01) [Roberto Fresca, Team Europe]
+
+
+MAMETesters Bugs Fixed (4):
+---------------------------
+- 04759: [Crash/Freeze] (pinkiri8.c) All sets in pinkiri8.c: Crash after OK (David Haywood)
+- 04821: [Gameplay] (cd32.c) All sets in cd32.c:: All games fail to boot properly (R. Belmont)
+- 04892: [Misc.] (zaxxon.c) zaxxon, congo, congoa: INPs do not play back correctly (micko)
+- 04923: [Crash/Freeze] Many sets in bfm_sc2.c and bfm_sc4.c: Crash after OK (Tafoid)
 
 
 Source changes:
@@ -68,11 +68,10 @@ Source changes:
 - seta.c: Fill in some missing PCB board numbers. Correct the board numbers as they are silkscreened on the PCB. Corrected the ROM names for JJ Swuawkers [Brian Troha].
 - taito_en.c: Corrected 68000 clock [Stefan Lindberg].
 - Two TMS32031 fixes [Daniel Filner]:
-  * Don't set underflow when doing a floating point subtract that
-    results in 0.
+  * Don't set underflow when doing a floating point subtract that results in 0.
   * Don't overwrite the exponent during a FIX operation.
 - tx1.c: Add documentation about the TX-1 (Japan) PCBs. Added dipswitch locations to TX-1 and Buggy Boy sets [Brian Troha].
 - upd7810.c: Fixed setting of flags in the ACI_[VABCDEHL]_xx functions. Fixed handling of Carry flag in the DAA instruction [Wilbert Pol].
 - Updated labels.locations for all Crazy Kong PT 2 sets based on a recently dumped board [Smitdogg, Tafoid].
-- vegaeo.c - Hooked up sound in 'Crazy War' [Phil Bennett].
-- Verified DIPs for 'Space Firebird' and clones (spacefb.c) [Tafoid].
+- vegaeo.c: Hooked up sound in Crazy War [Phil Bennett].
+- Verified DIPs for Space Firebird and clones (spacefb.c) [Tafoid].

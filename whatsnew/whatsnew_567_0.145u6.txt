@@ -1,30 +1,30 @@
-0.145u6 2012/04/08 [#567 - Miodrag Milanovic]
+﻿0.145u6 2012/04/08 [#567 - Miodrag Milanovic]
 ---------------------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
+New Games Added or Promoted from NOT_WORKING Status
+---------------------------------------------------
+Fun River [Sara S.]
+unknown Japanese horse gambling game (preliminary) [hap, Paul Swan]
+
+New Clones Added
+----------------
+Rastan (US) [Stefan Lindberg]
+
+New Games Marked as GAME_NOT_WORKING
+------------------------------------
+Dragon World Pretty Chance [Smitdogg, Tjeerd Carter]
+Quiz Show [hap, Siftware]
+
+
+MAMETesters Bugs Fixed (6):
+---------------------------
 - 02675: [Sound] rdft, rdft2: Music used in the boss levels of Raiden Fighters and Raiden Fighters 2 play (Mssion 1-3, 2-3) slower than the original (Sonikos).
 - 04734: [Crash/Freeze] tylz: Crash after OK (Pugsy).
 - 04735: [Crash/Freeze] breywood, shackled: Black screen (stephh).
 - 04737: [Original Reference] ckong: correct manufacturer found for Crazy Kong (Falcon?).
 - 04741: [Sound] xmen: Instruments in the music are playing back at the wrong volume (hap).
 - 04743: [Crash/Freeze] pzloop2jr1: Black Screen (Tafoid).
-
-
-New games added or promoted from NOT_WORKING status
----------------------------------------------------
-Fun River [Sara S.]
-unknown Japanese horse gambling game (preliminary) [hap, Paul Swan]
-
-New clones added
-----------------
-Rastan (US) [Stefan Lindberg]
-
-New games marked as GAME_NOT_WORKING
-------------------------------------
-Dragon World Pretty Chance [Smitdogg, Tjeerd Carter]
-Quiz Show [hap, Siftware]
 
 
 Source changes:
@@ -46,8 +46,8 @@ Source changes:
 - Decrypted the rest of the gambling sets in igs_m027.c. No further advancements in visible emulation to report, though [iq132].
 - Fixed ymf271.c core timer allowing for greater accuracy [Sonikos]
 - galaxia.c: Improved colors and hooked up cvs stars circuit [hap].
-- galdrvr.c: Added preliminary protection emulation to 'Monster Zero' [hap].
-- Hooked up TMS9928 and PIA devices to Baby Pac-Man video CPU, gives some gfx if you press the service switch [Angelo Salese].
+- galdrvr.c: Added preliminary protection emulation to Monster Zero [hap].
+- Hooked up TMS9928 and PIA devices to Baby Pac-Man video CPU, gives some GFX if you press the service switch [Angelo Salese].
 - Implemented flip screen support to Mirax [Angelo Salese].
 - Improved irqs in Little Robin, and added preliminary sound to it [Angelo Salese].
 - m68k: add preliminary on-board peripherals to 68307 and 68340 [David Haywood].

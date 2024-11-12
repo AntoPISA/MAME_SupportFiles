@@ -1,52 +1,52 @@
-0.144u7 2012/01/29 [#560 - Miodrag Milanovic]
+﻿0.144u7 2012/01/29 [#560 - Miodrag Milanovic]
 ---------------------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
-- 03600: [Gameplay] gberet: 30fps framerate seems abnormal (hap).
-- 03761: [Graphics] edrandy and clones: Do not see the clouds in the background (hap).
-- 04268: [Crash/Freeze] All sets using OKI6295 audio: Use of save states eventually crashes MAME upon loading (R. Belmont).
-- 04508: [Graphics] charlien: Little graphic garbage (David Haywood).
-- 04595: [Crash/Freeze] cryptklr: Crashes MAME before it can display the disclaimer (Curt Coder).
-- 04606: [Graphics] mach3, cobram3: Missing and/or corrupted graphics (Aaron Giles).
-- 04610: [Crash/Freeze] Multiple sets in cave.c: Segfaults in various places; sprites clipped in middle of screen (Aaron Giles).
-- 04611: [Crash/Freeze] galpanis galpanisj: both sets freeze on region information (hap).
-- 04612: [Crash/Freeze] All sets in aleck64.c: Crash before OK (MooglyGuy).
-- 04613: [Graphics] pballoon: Scrolling problem (hap).
-- 04615: [Documentation] rackempp: The correct description is "Rack 'em Up! (Pinball)".
-- 04616: [Documentation] radcl_l1 and clones: The correct description is "Radical!..." with the exclamation point.
-- 04617: [Documentation] rally: According to ipdb.org reports, the exact release year is 1980.
-- 04618: [Documentation] All sets in taito.c: All sets in this driver are made by "Taito do Brasil".
-- 04620: [Documentation] j6cpalb: In according with ACE flyer, the exact release year is 1998.
-- 04623: [Timing] drivers that use SCREEN_VBLANK: change from SCREEN_EOF to SCREEN_VBLANK regressed timing (hap).
-- 04624: [Graphics] blswhstl, detawin: Missing graphics (hap).
-- 04629: [Crash/Freeze] topgunnr: [debug] Assert after OK (Aaron Giles).
-- 04630: [Crash/Freeze] skyraid: [debug] Assert after OK (Aaron Giles).
-- 04633: [Graphics] rollerg and clones: Graphics corruption on right side of screen (Aaron Giles).
-- 04637: [Graphics] chukatai: Garbage sprites on the left side of the screen (David Haywood).
-- 04638: [Graphics] All sets in hng64.c: Missing 3D graphics (Aaron Giles).
-- 04639: [Graphics] wheelfir: Missing foreground layer (Aaron Giles).
-- 04643: [Crash/Freeze] All sets in chsuper.c: [debug] Exception after OK with debug build (Aaron Giles).
-
-
-New games added or promoted from NOT_WORKING status
+New Games Added or Promoted from NOT_WORKING Status
 ---------------------------------------------------
 Steal See (& Get Land) [N. A. Jimenez, M. Krug, ShiggsUnderground, C. Stefano, Ted Bailey, R. Mucciarelli, Smitdogg, The Dumping Union]
 
-New clones added
+New Clones Added
 ----------------
 Arcana Heart [Dumping Union]
 Carrier Air Wing (bootleg) [Bonky0013] (not working)
 Flying Shark (bootleg, set 2) [Bonky0013]
 Rapid Fire v1.1 (Build 238) [Brian Troha, The Dumping Union]
 
-New games marked as GAME_NOT_WORKING
+New Games Marked as GAME_NOT_WORKING
 ------------------------------------
 Ichi Ban Jyan [Guru]
 Mushiking The King Of Beetle 2K3 2nd [f205v, The Dumping Union]
 Popo Bear [R. Mucciarelli, N. Francfort, Smitdogg, The Dumping Union]
 Virtua NBA (prototype) [Arzeno Fabrice]
+
+
+MAMETesters Bugs Fixed (24):
+----------------------------
+- 03600: [Gameplay] gberet: 30fps framerate seems abnormal (hap)
+- 03761: [Graphics] edrandy and clones: Do not see the clouds in the background (hap).
+- 04268: [Crash/Freeze] All sets using OKI6295 audio: Use of save states eventually crashes MAME upon loading (R. Belmont)
+- 04508: [Graphics] charlien: Little graphic garbage (David Haywood)
+- 04595: [Crash/Freeze] cryptklr: Crashes MAME before it can display the disclaimer (Curt Coder)
+- 04606: [Graphics] mach3, cobram3: Missing and/or corrupted graphics (Aaron Giles)
+- 04610: [Crash/Freeze] Multiple sets in cave.c: Segfaults in various places; sprites clipped in middle of screen (Aaron Giles)
+- 04611: [Crash/Freeze] galpanis galpanisj: both sets freeze on region information (hap)
+- 04612: [Crash/Freeze] All sets in aleck64.c: Crash before OK (MooglyGuy)
+- 04613: [Graphics] pballoon: Scrolling problem (hap)
+- 04615: [Documentation] rackempp: The correct description is "Rack 'em Up! (Pinball)"
+- 04616: [Documentation] radcl_l1 and clones: The correct description is "Radical!..." with the exclamation point
+- 04617: [Documentation] rally: According to ipdb.org reports, the exact release year is 1980
+- 04618: [Documentation] All sets in taito.c: All sets in this driver are made by "Taito do Brasil"
+- 04620: [Documentation] j6cpalb: In according with ACE flyer, the exact release year is 1998
+- 04623: [Timing] drivers that use SCREEN_VBLANK: change from SCREEN_EOF to SCREEN_VBLANK regressed timing (hap)
+- 04624: [Graphics] blswhstl, detawin: Missing graphics (hap)
+- 04629: [Crash/Freeze] topgunnr: [debug] Assert after OK (Aaron Giles)
+- 04630: [Crash/Freeze] skyraid: [debug] Assert after OK (Aaron Giles)
+- 04633: [Graphics] rollerg and clones: Graphics corruption on right side of screen (Aaron Giles)
+- 04637: [Graphics] chukatai: Garbage sprites on the left side of the screen (David Haywood)
+- 04638: [Graphics] All sets in hng64.c: Missing 3D graphics (Aaron Giles)
+- 04639: [Graphics] wheelfir: Missing foreground layer (Aaron Giles)
+- 04643: [Crash/Freeze] All sets in chsuper.c: [debug] Exception after OK with debug build (Aaron Giles)
 
 
 Source changes:
@@ -58,7 +58,7 @@ Source changes:
 - Added Pluto 5 technical notes about clocks, EPROM config, and addresses/data scrambling for different EPROM types on 16-bit mode [Roberto Fresca].
 - CGA: Fixed display disable read flag [Angelo Salese].
 - Changes for GCC 4.7 compatibility [Belegdol].
-- Converted 'Lemmings', 'Wizard Fire', 'Desert Assault', 'Rohga' and 'Schmeiser Robo' to use DECO generic sprite device [David Haywood].
+- Converted Lemmings, Wizard Fire, Desert Assault, Rohga and Schmeiser Robo to use DECO generic sprite device [David Haywood].
 - Fixed bad assumption by the (pre)GX video mixer [R. Belmont].
 - Fixed pcap network device search [Carl].
 - Fixed some dipswitch defaults and added diplocations to many Konami and Namco games [kanikani].
