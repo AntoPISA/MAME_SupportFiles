@@ -1,4 +1,4 @@
-﻿MAME SERIES.ini 0.270 (Oct 21, 2024)
+﻿MAME SERIES.ini 0.271 (Nov 13, 2024)
 © AntoPISA     www.progettoSNAPS.net
 ==================================== 
 
@@ -7,13 +7,17 @@ GitHub repository:  https://github.com/AntoPISA/MAME_SupportFiles
 
 A project started by PaolinoF15 and maintained by Xain D'Sleena (since version 0.143);  from 0.144 updated by AntoPISA.
 From 0.162 version, the file deals only for arcade sets. From the 0.177 version it is helped by a tool for the creation
-and verification of the .ini files, created by motoschifo. Many thanks to Alexis B. of https://www.arcade-history.com/. 
+and verification of the .ini files, created by motoschifo. Many thanks to Alexis B. of https://www.arcade-history.com/.
+In the file are both "Series" recognized as such (thus games and their official sequels) but also clones in other  lan-
+guages or with minor variations (official and unofficial).
 
 
-WhatsNew 0.271 (00.00.2024) (000 supported Series):
+WhatsNew 0.271 (13.11.2024) (718 supported Series):
 ===================================================
+Items RENAMED (9): (crzybugsa) to (crzybugs202us), (crzybugsb) to (crzybugs200us), (crzybugsj) to (crzybugs103jp), (mrdrillrj) to (mrdrillrja2), (soulclbr) to (soulclbrac), (soulclbra) to (soulclbr), (soulclbrja) to (soulclbrja2), (tektagtc1) to (tektagtc1a) and (tektagtja) to (tektagtja3).
+Series ADDED (1): Multistar.
 Series REMOVED (2): Cherry Bonus and Street Fighter EX.
-Series UPDATED (7): Cherry Bonus * Slot, Cherry Master * Slot, Double Dragon, Multi Game, Raiden, Rock Climber and Street Fighter.
+Series UPDATED (16): Cherry Bonus * Slot, Cherry Master * Slot, Crazy Bugs * Slot, Double Dragon, Mr. Driller, Multi Game, Raiden, Space Invaders, Rock Climber, Soul Edge, Street Fighter, Teenage Mutant Ninja Turtles, Sunset Riders, Twin Cobra, Tekken and Tron.
 
 
 WhatsNew 0.270 (03.10.2024) (719 supported Series):
