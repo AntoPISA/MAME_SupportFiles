@@ -1,5 +1,5 @@
-MAME LANGUAGES.ini 0.270 (Oct  3, 2024)
-(C) AntoPISA      www.progettoSNAPS.net
+MAME LANGUAGES.ini 0.271 (Nov 13, 2024)
+© AntoPISA        www.progettoSNAPS.net
 =======================================
 
 This support file for MAME, attempts to catalog all of the MAME sets based on the language used by the game.
@@ -8,11 +8,11 @@ The file, extracted from the zip file, should be placed in the folder named 'Fol
 items  - Language
 =========================
     1  - Bulgarian
-   87  - Chinese
+   99  - Chinese
     5  - Croatian
     3  - Czech
   107  - Dutch
-32094  - English
+32156  - English
   148  - French
   303  - German
     4  - Greek
@@ -26,13 +26,14 @@ items  - Language
    21  - Portuguese
   146  - Russian
     1  - Slovak
-  331  - Spanish
+  332  - Spanish
     1  - Swedish
     1  - Turkish
   139  - Ukrainian
 
 WhatsNew:
 =========
+2024/11/13: Added 0.271 sets.
 2024/10/03: Added 0.270 sets.
 2024/09/03: Added 0.269 sets.
 2024/08/15: Added 0.268 sets.
@@ -207,4 +208,4 @@ Addictional sources:
 * sega-naomi.com
 
 
-(C) 2012/2024 AntoPISA
+© 2012/2024 AntoPISA
