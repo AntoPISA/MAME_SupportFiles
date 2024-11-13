@@ -1,4 +1,4 @@
-MAME CATEGORY.ini 0.270 (Oct  3, 2024)
+MAME CATEGORY.ini 0.271 (Nov 13, 2024)
 © AntoPISA       www.progettoSNAPS.net
 ======================================
 
@@ -36,6 +36,7 @@ These files must be copied to the directory called "folders" of your MAME.
 
 WhatsNew:
 =========
+2024/11/13: Aligned files to MAME 0.271.
 2024/10/03: Aligned files to MAME 0.270.
 2024/09/12: Renamed 3 ini files: arcade.ini to mame.ini, arcade_BIOS.ini to mame_BIOS.ini and arcade_NOBIOS.ini to mame_NOBIOS.ini; the "arcade" designation was not quite correct, the files in question include all the machines that were included in MAME before the merger with MESS.
 2024/09/03: Aligned files to MAME 0.269.
