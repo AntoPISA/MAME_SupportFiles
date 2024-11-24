@@ -1,9 +1,10 @@
-MESSINFO.DAT 0.270  (Oct 10, 2024)
-(C) AntoPISA www.progettoSNAPS.net
+﻿MESSINFO.DAT 0.271  (Nov 24, 2024)
+© AntoPISA   www.progettoSNAPS.net
 ==================================
 
 WhatsNew:
 =========
+11.61 11/24/2024: Aligned files to 0.271 version.
 11.60 10/10/2024: Aligned files to 0.270 version.
 11.59 09/07/2024: Aligned files to 0.269 version.
 11.58 08/20/2024: Aligned files to 0.268 version.
@@ -406,4 +407,4 @@ WhatsNew:
  0.00 05/08/2011: He was born the idea for this new MESS project, drawing inspiration from mameinfo.dat of MASH.
 
 
-(C) 2011/2024 AntoPISA
+© 2011/2024 AntoPISA

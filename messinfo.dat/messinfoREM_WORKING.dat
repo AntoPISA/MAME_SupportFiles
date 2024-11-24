@@ -1,4 +1,4 @@
-﻿#    MESSINFO_REM.DAT v0.271 Latest update:  Nov 20, 2024
+﻿#    MESSINFO_REM.DAT v0.271 Latest update:  Nov 24, 2024
 #                             Project start: Nov  7, 2011
 #
 #    Author:  Antonio Paradossi (AntoPISA) from Pisa (Tuscany/Italy)
@@ -12,54 +12,6 @@
 #    Total items: 323
 #
 #
-$info=spi_sdhccard
-$mame
-0.236 [R. Belmont]
-
-SDHC Card (SPI Interface), <unknown>, ????
-
-DRIVER:
-devices/machine/spi_sdcard.cpp
-
-DRIVER STATUS:
-Emulation: Good
-Color: Good
-Sound: Good
-Graphics: Good
-Save State: Unsupported
-
-WIP:
-- 0.271: Device removed.
-- 0.265: Report status for requests of CMD58 (READ_OCR) (#12212). Report status for CMD58 (READ_OCR) requests. Don't write received data to the command shift register (#12249) [holub].
-- 0.264: Implemented send CSD command for SD 2.x cards [holub].
-- 0.245: Fixed CMD24 - WRITE_BLOCK [Nigel Barnes].
-- 0.236: R. Belmont added 'SDHC Card (SPI Interface)' device.
-
-$end
-$info=spi_sdv2card
-$mame
-0.236 [R. Belmont]
-
-SDV2 Card (SPI Interface), <unknown>, ????
-
-DRIVER:
-devices/machine/spi_sdcard.cpp
-
-DRIVER STATUS:
-Emulation: Good
-Color: Good
-Sound: Good
-Graphics: Good
-Save State: Unsupported
-
-WIP:
-- 0.271: Device removed.
-- 0.265: Report status for requests of CMD58 (READ_OCR) (#12212). Report status for CMD58 (READ_OCR) requests. Don't write received data to the command shift register (#12249) [holub].
-- 0.264: Implemented send CSD command for SD 2.x cards [holub].
-- 0.245: Fixed CMD24 - WRITE_BLOCK [Nigel Barnes].
-- 0.236: R. Belmont added 'SDV2 Card (SPI Interface)' device.
-
-$end
 $info=24c16a
 $mame
 0.207 [smf]
@@ -5070,6 +5022,54 @@ TI SN74S381 ALU / Function Generator, ???, ????
 WIP:
 - 0.222: Device removed.
 - 0.211: Added TI SN74S381 ALU / Function Generator device.
+
+$end
+$info=spi_sdhccard
+$mame
+0.236 [R. Belmont]
+
+SDHC Card (SPI Interface), <unknown>, ????
+
+DRIVER:
+devices/machine/spi_sdcard.cpp
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Unsupported
+
+WIP:
+- 0.271: Device removed.
+- 0.265: Report status for requests of CMD58 (READ_OCR) (#12212). Report status for CMD58 (READ_OCR) requests. Don't write received data to the command shift register (#12249) [holub].
+- 0.264: Implemented send CSD command for SD 2.x cards [holub].
+- 0.245: Fixed CMD24 - WRITE_BLOCK [Nigel Barnes].
+- 0.236: R. Belmont added 'SDHC Card (SPI Interface)' device.
+
+$end
+$info=spi_sdv2card
+$mame
+0.236 [R. Belmont]
+
+SDV2 Card (SPI Interface), <unknown>, ????
+
+DRIVER:
+devices/machine/spi_sdcard.cpp
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Unsupported
+
+WIP:
+- 0.271: Device removed.
+- 0.265: Report status for requests of CMD58 (READ_OCR) (#12212). Report status for CMD58 (READ_OCR) requests. Don't write received data to the command shift register (#12249) [holub].
+- 0.264: Implemented send CSD command for SD 2.x cards [holub].
+- 0.245: Fixed CMD24 - WRITE_BLOCK [Nigel Barnes].
+- 0.236: R. Belmont added 'SDV2 Card (SPI Interface)' device.
 
 $end
 $info=srarb
