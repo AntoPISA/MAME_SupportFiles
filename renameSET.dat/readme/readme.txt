@@ -2,17 +2,13 @@
 ===================================
 © progetto-SNAPS 2009/2024 AntoPISA
 
-renameSET.dat:    0.271
-Internal version:  5.39
+renameSET.dat:    0.272
+Internal version:  5.40
 
 The package contains:
 
-- allMAMEremoved.txt      : List with all machines/BIOS/devices removed from MAME.
-- allMAMErenamed.txt      : List with all machines/BIOS/devices renamed in MAME.
-- allMAMEset.txt          : List with all the machines/BIOS/devices added to MAME from the first version; each machine has a unique progressive number (called mameID).
 - renameSET.dat           : All data and counts relating to each published MAME, including renamed and deleted machines.
 - renameSET.ini           : Like the previous file but in another format, which can be used with the "MAMErenSET" tool to automate updating operations of resources.
-- renameSET_270-271.ini   : Like "renameSET.ini" but only includes the last two releases of the MAME.
 - renameSET_SL.dat        : Like "renameSET.dat" but related to software lists.
 
 ====================================================================================================================================================================
@@ -37,10 +33,10 @@ Line 3 : Summary of the various items (with any differences highlighted -/+):
          devices              - Count of all "Devices".
          requires CHDs        - Count of machines and BIOS using CHDs;
          use Samples          - Count of machines using Samples;
-         audio mono           - Counting machines with without audio (channels 0);                    ******************* NEW! *******************
-         audio stereo         - Counting machines with mono audio (channels 1);                       ******************* NEW! *******************
-         no audio             - Counting machines with stereo audio (channels 2);                     ******************* NEW! *******************
-         audio multi-channels - Counting machines with multi-channel audio (channels 3 or more).      ******************* NEW! *******************
+         audio mono           - Counting machines with without audio (channels 0);
+         audio stereo         - Counting machines with mono audio (channels 1);
+         no audio             - Counting machines with stereo audio (channels 2);
+         audio multi-channels - Counting machines with multi-channel audio (channels 3 or more).
 
 Line 4:  The operating characteristics of machines supported (with any differences highlighted -/+):
 
@@ -52,9 +48,9 @@ Line 4:  The operating characteristics of machines supported (with any differenc
          save unsupported     - Count of machines that do not support the "SaveState";
          horizontal screen    - Count of machines that have a horizontal screen;
          vertical screen      - Count of machines that have a vertical screen;
-         vector graphics      - Machine counting with vector graphics;                                  ******************* NEW! *******************
-         raster graphics      - Machine counting with raster graphics;                                  ******************* NEW! *******************
-         screenless           - Screenless machine counting.                                            ******************* NEW! *******************
+         vector graphics      - Machine counting with vector graphics;
+         raster graphics      - Machine counting with raster graphics;
+         screenless           - Screenless machine counting.
 
 Line 5:  Counting of all types of ROMs supported (with any differences highlighted -/+):
 
