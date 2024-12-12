@@ -1,4 +1,4 @@
-﻿MAME SERIES.ini 0.271 (Nov 13, 2024)
+﻿MAME SERIES.ini 0.272 (Dec 12, 2024)
 © AntoPISA     www.progettoSNAPS.net
 ==================================== 
 
@@ -12,13 +12,21 @@ In the file are both "Series" recognized as such (thus games and their official 
 guages or with minor variations (official and unofficial).
 
 
+WhatsNew 0.272 (12.12.2024) (723 supported Series):
+===================================================
+Items REMOVED (6): (m4nnww2__hx3), (m4nnww2__hx4), (m4nnww2__hx5), (naltair), (nd8lines) and (pomp_l1).
+Series ADDED (5): Royal Mahjong, Makaimura, Major Poker, Pump It Up and Ron Jan.
+Series RENAMED (3): "Enchanted Forest" to "Enchanted Forest * Slot", "Golden Canaries" to "Golden Canaries * Slot" and "Sweet Hearts" to "Sweet Hearts * Slot".
+Series REMOVED (1): Black Rhino.
+Series UPDATED (14): Adders & Ladders * Slot, Air Duel, Aladdin's Cave * Slot, All Japan Pro Wrestling, Altair, Aristocrat MK Hardware, Cabal, Carnival, Double Dragon, Dragon Ball Z, Lode Runner, Reelin-n-Rockin * Slot, Wonder Boy and World Rally.
+
+
 WhatsNew 0.271 (13.11.2024) (718 supported Series):
 ===================================================
 Items RENAMED (9): (crzybugsa) to (crzybugs202us), (crzybugsb) to (crzybugs200us), (crzybugsj) to (crzybugs103jp), (mrdrillrj) to (mrdrillrja2), (soulclbr) to (soulclbrac), (soulclbra) to (soulclbr), (soulclbrja) to (soulclbrja2), (tektagtc1) to (tektagtc1a) and (tektagtja) to (tektagtja3).
 Series ADDED (1): Multistar.
 Series REMOVED (2): Cherry Bonus and Street Fighter EX.
 Series UPDATED (16): Cherry Bonus * Slot, Cherry Master * Slot, Crazy Bugs * Slot, Double Dragon, Mr. Driller, Multi Game, Raiden, Space Invaders, Rock Climber, Soul Edge, Street Fighter, Teenage Mutant Ninja Turtles, Sunset Riders, Twin Cobra, Tekken and Tron.
-
 
 WhatsNew 0.270 (03.10.2024) (719 supported Series):
 ===================================================
