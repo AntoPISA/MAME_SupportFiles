@@ -1,4 +1,4 @@
-﻿MAME VERSION.ini 0.271 (Nov 13, 2024)
+﻿MAME VERSION.ini 0.272 (Dec 12, 2024)
 © AntoPISA      www.progettoSNAPS.net
 =====================================
 
@@ -8,11 +8,14 @@ In this package you can find these ini files:
 
 - Version: List of machines for inclusion version in MAME.
 - Version_NEW: Lists only the machines added in the latest MAME version released.
+- Version_ON: (ON stands for "Original Names") List of machines added version by version but with the original names (so exactly as they were added to MAME in their first implementation). The file is still Work in Progress.
 
 
 WhatsNew:
 =========
-2024/11/13: Aligned to MAME 0.270.
+2024/12/12: Aligned to MAME 0.272.
+2024/11/24: Added the first WIP version of the"Version_ON.ini".
+2024/11/13: Aligned to MAME 0.271.
 2024/10/03: Aligned to MAME 0.270.
 2024/09/03: Aligned to MAME 0.269.
 2024/08/15: Aligned to MAME 0.268.
