@@ -2,8 +2,38 @@
 ---------------------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
+New Games Added or Promoted from NOT_WORKING Status
+---------------------------------------------------
+Dragon World 2001 [David Haywood, Smitdogg]
+Dragon World Pretty Chance [David Haywood, Smitdogg]
+Flipper Jack [Yohji, Mr. CAST, Smitdogg, The Dumping Union, hap, Angelo Salese]
+Funcube [Guru, Yasuhiro Ogawa, Luca Elia]
+Konami Test Board GX800 [Yohji, Tormod, Smitdogg, The Dumping Union, Angelo Salese]
+Linky Pipe [Gerald (COY), The Dumping Union]
+Magical Speed [NoVArcade]
+Racing Beat [hap]
+
+New Clones Added
+----------------
+Battlantis (program code F) [Paul Canham]
+Bulls Eye Darts (Galaxian conversion) [Mariusz Wojcieszek, Paul Swan]
+Crisis Zone (CSZO3 Ver. A) [Mr. CAST, Smitdogg, The Dumping Union]
+Dynamite Duke (Euro) [Tirino73]
+Express Raider (Italy) [Tirino73]
+Nagano Winter Olympics '98 (GX720 JAA) [Yohji, Mr. CAST, Smitdogg, The Dumping Union, smf]
+Over Rev (Model 2B, Revision B) [Brian Troha, The Dumping Union]
+Red Barron [Andrew Welburn, The Dumping Union]
+Space Ranger [Marcello Mancini]
+Virtua Striker 2 (Step 1.5, older) [Mr. CAST, Yohji, Smitdogg, The Dumping Union]
+
+New Games Marked as GAME_NOT_WORKING
+------------------------------------
+Exciting Black Jack [Mr.CAST, Smitdogg, The Dumping Union, Roberto Fresca]
+Pong (Rev E) [Couriersud]
+
+
+MAMETesters Bugs Fixed (23):
+----------------------------
 - 00653: [DIP/Input] (topspeed.c) topspeed: Turning left doesn't work in analog input mode. (hap)
 - 02339: [Flip Screen/Cocktail] (metro.c) mouja: Flip screen doesn't work correctly in Mouja due to asymmetrical visible area. (hap)
 - 03990: [Save/Restore] (bfm_sc2.c) sc2drwho + clones: Reload of state causes momentary loss of LCD (JWallace)
@@ -29,36 +59,6 @@ MAMETesters Bugs Fixed
 - 04893: [Sound] ym2413.c - A block that is never executed :-D
 
 
-New games added or promoted from NOT_WORKING status
----------------------------------------------------
-Dragon World 2001 [David Haywood, Smitdogg]
-Dragon World Pretty Chance [David Haywood, Smitdogg]
-Flipper Jack [Yohji, Mr. CAST, Smitdogg, The Dumping Union, hap, Angelo Salese]
-Funcube [Guru, Yasuhiro Ogawa, Luca Elia]
-Konami Test Board GX800 [Yohji, Tormod, Smitdogg, The Dumping Union, Angelo Salese]
-Linky Pipe [Gerald (COY), The Dumping Union]
-Magical Speed [NoVArcade]
-Racing Beat [hap]
-
-New clones added
-----------------
-Battlantis (program code F) [Paul Canham]
-Bulls Eye Darts (Galaxian conversion) [Mariusz Wojcieszek, Paul Swan]
-Crisis Zone (CSZO3 Ver. A) [Mr. CAST, Smitdogg, The Dumping Union]
-Dynamite Duke (Euro) [Tirino73]
-Express Raider (Italy) [Tirino73]
-Nagano Winter Olympics '98 (GX720 JAA) [Yohji, Mr. CAST, Smitdogg, The Dumping Union, smf]
-Over Rev (Model 2B, Revision B) [Brian Troha, The Dumping Union]
-Red Barron [Andrew Welburn, The Dumping Union]
-Space Ranger [Marcello Mancini]
-Virtua Striker 2 (Step 1.5, older) [Mr. CAST, Yohji, Smitdogg, The Dumping Union]
-
-New games marked as GAME_NOT_WORKING
-------------------------------------
-Exciting Black Jack [Mr.CAST, Smitdogg, The Dumping Union, Roberto Fresca]
-Pong (Rev E) [Couriersud]
-
-
 Source changes:
 ---------------
 - Naomi/Chihiro documentation update [f205v].
@@ -73,8 +73,7 @@ Source changes:
 - 04862: smashtv and clones: Smash T.V. crashes while a game begins [Phil Bennett].
 - Fuxed memory leak in libflac/libflac/md5.c (fixes memory issues with chdman) [Oliver Stöneberg].
 - Added cycle exact potentiometer and keyboard support to pokey device [Couriersud].
-- Fixed sprite colors in Bikkuri Card and Chance Kun
-  [Smitdogg, Angelo Salese].
+- Fixed sprite colors in Bikkuri Card and Chance Kun [Smitdogg, Angelo Salese].
 - megatech.c:  Added a new revision of the BIOS [iGREKKESS, ElBarto].
 - Added some bits to get the V53 (V33 core) running at least some sane sound code for hng64.c  There is no sound yet tho, and the banking mechanism will need hooking up but the initial banks should be correct [David Haywood].
 - vsnes.c: Documentation update and corrects several roms names. Added set information to game names where possible. Tried to correct region information by copyright [Mark F., Brian Troha, The Dumping Union].

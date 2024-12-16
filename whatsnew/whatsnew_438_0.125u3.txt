@@ -2,8 +2,23 @@
 ---------------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
+New Games Added or Promoted from NOT_WORKING Status
+---------------------------------------------------
+beatmania THE FINAL (ver JA-A) [Chizzy]
+ChuckECheese's Match Game [Exodus]
+Coronation Street Quiz Game [Phil Bennett]
+Player's Edge Plus (XP000112) White Hot Aces Poker [hammer300]
+
+New Clones Added
+----------------
+Atomic Boy (revision B) [Stefan Lindberg]
+Dynamite Cop (USA, Model 2C) [The Guru]
+Fred Flintstones' Memory Match (5 new sets) [Exodus]
+Mighty! Pang (Euro 001010) [Bonky]
+
+
+MAMETesters Bugs Fixed (33):
+----------------------------
 - 00070: [Misc.] nettoqc: In-game message (Couriersud).
 - 00208: [Original Reference] monymony: I am measuring clocks on my Money Money pcb but I have a problem with the tms5200 clock (Nicola Salmoria).
 - 00237: [Sound] jumping: I have a Jumping bootleg and the music has the same tempo of the original rainbow islands (Nicola Salmoria).
@@ -38,36 +53,21 @@ MAMETesters Bugs Fixed
 - 01837: [DIP/Input] Missing input definitions (Aaron Giles).
 
 
-New games added or promoted from NOT_WORKING status
----------------------------------------------------
-beatmania THE FINAL (ver JA-A) [Chizzy]
-ChuckECheese's Match Game [Exodus]
-Coronation Street Quiz Game [Phil Bennett]
-Player's Edge Plus (XP000112) White Hot Aces Poker [hammer300]
-
-New clones added
-----------------
-Atomic Boy (revision B) [Stefan Lindberg]
-Dynamite Cop (USA, Model 2C) [The Guru]
-Fred Flintstones' Memory Match (5 new sets) [Exodus]
-Mighty! Pang (Euro 001010) [Bonky]
-
-
 Source changes:
 ---------------
 - Changed default DIP switches in onetwo.c. Common coinslot mode seems broken, or our code is wrong [David Haywood].
 - Updated documentation in several drivers based on old readmes and other data that might get lost [Andrew Gardner].
 - Fixed COP420 instructions JSRP, LBI, LQID, and SKT. Draco now has sound. Also fixed COP420 instructions XAS and INIL. Fixed cycle count for extended opcodes. Added CKO general purpose input [Curt Coder].
-- Improvements to 'American Poker II' driver [Roberto Fresca]:
-  * Reworked the color routines switching to resnet system.
-  * Added a resistor network diagram.
-  * Switch to pre-defined crystal value.
-  * Changed the WATCHDOG_TIME_INIT to be based on miliseconds instead of hertz.
-  * Other minor cleanup/fixes.
+- Improvements to "American Poker II" driver [Roberto Fresca]:
+  * Reworked the color routines switching to resnet system;
+  * Added a resistor network diagram;
+  * Switch to pre-defined crystal value;
+  * Changed the WATCHDOG_TIME_INIT to be based on miliseconds instead of hertz;
+  * Other minor cleanup/fixes;
   * Updated technical notes.
 - peplus driver changes [Jim Stolis]:
-  * Updated coin-in timing.
-  * Extended memory address range of DUART.
+  * Updated coin-in timing;
+  * Extended memory address range of DUART;
   * Fixed overlapping input port bits.
 - Fixed PORT_IMPULSE handling. The old code would force inputs to be asserted for at least the number of frames indicated, but keeping the button pressed would keep the input asserted. Now the input is asserted far exactly the number of frames indicated [Nicola Salmoria].
 - Fixed memory access in the 80286 cpu core which made i286.h obsolete. Changed CPUINFO_INT_MAX_INSTRUCTION_BYTES to prevent crashes during disassembly [Wilbert Pol].
@@ -84,27 +84,27 @@ Source changes:
 - Made gijoe not crash, but still don't understand what the original code was trying to do [David Haywood].
 - Moved suprpool to a better match hardware. Fixed the ROM load and added a list of PCB components [Roberto Fresca].
 - Implemented autoload mode in 8257 DMA [Miodrag Milanovic]:
-  * Added support for autoload mode.
+  * Added support for autoload mode;
   * Fixed bug in calculating count.
 - Fixed duplicate input port bits in dkong.c [Couriersud].
 - MIPS core changes [Aaron Giles]:
-  * Renamed struct mips3_config -> mips3_config.
-  * Updated all drivers to the new names.
-  * Removed MIPS3DRC_STRICT_COP0 flag, which is no longer used
- - a few minor cleanups.
-  * Moved implementation-specific state into a pointer hanging off of the core MIPS3 state.
+  * Renamed struct mips3_config -> mips3_config;
+  * Updated all drivers to the new names;
+  * Removed MIPS3DRC_STRICT_COP0 flag, which is no longer used.
+- A few minor cleanups [Aaron Giles]:
+  * Moved implementation-specific state into a pointer hanging off of the core MIPS3 state;
   * Removed large context in favor of a pointer to the large context to help improve context switch times.
 - Changed the behavior of the translate callback in the CPU interface [Aaron Giles]:
-  * Added new 'intention' parameter to the translate callback to indicate read/write/fetch access, user/supervisor mode, and a flag for debugging.
-  * Updated all call sites to pass an appropriate value.
+  * Added new 'intention' parameter to the translate callback to indicate read/write/fetch access, user/supervisor mode, and a flag for debugging;
+  * Updated all call sites to pass an appropriate value;
   * Updated all CPU cores to the new prototype.
 - UML updates [Aaron Giles]:
-  * Added new opcode SETC to set the carry flag from a source bit
-  * Added new opcode BSWAP to swap bytes within a value.
-  * Updated C, x86, x64 back-ends to support the new opcodes.
+  * Added new opcode SETC to set the carry flag from a source bit;
+  * Added new opcode BSWAP to swap bytes within a value;
+  * Updated C, x86, x64 back-ends to support the new opcodes;
   * Updated disassembler to support the new opcodes.
 - DRC frontend changes [Aaron Giles]:
-  * Fixed bug in handling edge case with the PC near the 0 or ~0
+  * Fixed bug in handling edge case with the PC near the 0 or ~0;
   * Added new flag to tag privileged instructions.
 - Added new option -snapname which lets you provide a template for how snapshot names are generated. See config.txt for details [Aaron Giles].
 - Added new astring functions astring_del, astring_replace, and astring_replacec [Aaron Giles].
@@ -112,29 +112,29 @@ Source changes:
 - Fixed bug that caused DIP switches to be improperly read from game cfg file in certain circumstances [Aaron Giles].
 - Added internal default tags for input ports when saving/loading [Aaron Giles].
 - Updated cheat sytem drastically [ShimaPong]:
-  * Supported (preliminary) new cheat format.
-  * Added new operations: PDWWrite, RWrite, VRWrite, CWrite, Move, Branch, Loop, Popup.
-  * Added new options ValueSelectNegative, Return, AddressReadFrom, DataReadFrom.
-  * Added cheat variables. You can store data with Write or Move operations and read as an address or data from each fields.
-  * Added condition check for CWrite, Branch and Popup operations.
-  * Added new custom codes Separator, Layer.
-  * Supported Shared Code [MESS ONLY] different machine shares common code for a game.
-  * Allowed mixed label-select or user-select with standard code.
-  * Added label selector menu for label-selection code.
-  * Added extend comment displayer for multi-line comments
-  * Added command menu for cheat list and watchpoint. Easy selectable cheat commands in this menu.
-  * Added debug view menu [DEBUG BUILD ONLY]. It displays internal info to debug cheat system.
-  * Supported unique separator by ui_draw_menu() in several menus.
-  * Added user defined search region. You can set free memory range from cheat database.
-  * Enhanced error check for cheat code to prevent from unexpected working. Error code is locked. If you select this code, the analyser works instead of the code activater.
-  * Enhanced value input with keyboard-less. Cheat edit key gives new input system in several menus. Left/right keys moves the edit cursor and up/down keys changes a value.
-  * Added cheat command save, reload, reset in option menu.
-  * Supported address shift in searching. Now searchable default region in TMS340*0 cpu games (Trog, Smash T.V. etc).
-  * Refined cheat menu handling with function pointer called cheat_menu_handler.
-  * Added format strings table to manage in an integrated fashion.
-  * Deleted unused hacks of default search region for Neo Geo and TMS34010.
+  * Supported (preliminary) new cheat format;
+  * Added new operations: PDWWrite, RWrite, VRWrite, CWrite, Move, Branch, Loop, Popup;
+  * Added new options ValueSelectNegative, Return, AddressReadFrom, DataReadFrom;
+  * Added cheat variables. You can store data with Write or Move operations and read as an address or data from each fields;
+  * Added condition check for CWrite, Branch and Popup operations;
+  * Added new custom codes Separator, Layer;
+  * Supported Shared Code [MESS ONLY] different machine shares common code for a game;
+  * Allowed mixed label-select or user-select with standard code;
+  * Added label selector menu for label-selection code;
+  * Added extend comment displayer for multi-line comments;
+  * Added command menu for cheat list and watchpoint. Easy selectable cheat commands in this menu;
+  * Added debug view menu [DEBUG BUILD ONLY]. It displays internal info to debug cheat system;
+  * Supported unique separator by ui_draw_menu() in several menus;
+  * Added user defined search region. You can set free memory range from cheat database;
+  * Enhanced error check for cheat code to prevent from unexpected working. Error code is locked. If you select this code, the analyser works instead of the code activater;
+  * Enhanced value input with keyboard-less. Cheat edit key gives new input system in several menus. Left/right keys moves the edit cursor and up/down keys changes a value;
+  * Added cheat command save, reload, reset in option menu;
+  * Supported address shift in searching. Now searchable default region in TMS340*0 cpu games (Trog, Smash T.V. etc);
+  * Refined cheat menu handling with function pointer called cheat_menu_handler;
+  * Added format strings table to manage in an integrated fashion;
+  * Deleted unused hacks of default search region for Neo Geo and TMS34010;
   * Refined code based on MAME coding guidelines.
   - Renamed many functions/structures/constants. But not complete due to too many items.
-  * Converted small but often used functions to INLINE.
-  * Fixed a comparison in case of 0 or NULL.
+  * Converted small but often used functions to INLINE;
+  * Fixed a comparison in case of 0 or NULL;
   * Added missing function prototype for several functions.

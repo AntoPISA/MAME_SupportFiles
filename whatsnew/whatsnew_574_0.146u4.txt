@@ -2,17 +2,7 @@
 ---------------------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
-- 04404: [Misc.] (tnzs.c) tnzs: Significant negative performance spike after intro sequence (David Haywood).
-- 04485: [Misc.] (wardner.c) All sets in wardner.c: Slowdown due to memory mapping changes (David Haywood).
-- 04714: [Documentation] (micro3d.c) botss, botssa: Clone set is newest revision.
-- 04844: [Crash/Freeze] (jaguar.c) fishfren: black screen after EEPROM initialize (micko).
-- 04953: [Misc.] pnchmna, hypbbc2p, jingystm, jojobar1: disks need to be set to baddump (R. Belmont, Firewave, Roman).
-- 04957: [DIP/Input] (fantland.c) galaxygn: life dipswitch is broken. There's only 1 life (David Haywood).
-
-
-New games added or promoted from NOT_WORKING status
+New Games Added or Promoted from NOT_WORKING Status
 ---------------------------------------------------
 Fruit Dream [Angelo Salese]
 Get Rich [Sara S.]
@@ -24,7 +14,7 @@ Race Drivin' (cockpit, rev 1) [Phil Bennett]
 Race Drivin' (cockpit, rev 2) [Phil Bennett]
 Race Drivin' (cockpit, rev 3) [Phil Bennett]
 
-New clones added
+New Clones Added
 ----------------
 Action Bank (set 2) (Barcrest) (NOT WORKING) [James Wallace]
 Cops 'n' Robbers (Bellfruit) (set 2) (Scorpion 1) (NOT WORKING) [James Wallace]
@@ -40,7 +30,7 @@ Nudge Bonanza Deluxe (Set 2) (Jpm) (MPS) (NOT WORKING) [C J Wren/MPU Mecca]
 Pipi & Bibis / Whoopee!! (Prototype) [Antonio Gonzalez Jr.]
 Trick or Treat (Proconn) (NOT WORKING) [Captain Haddock]
 
-New games marked as GAME_NOT_WORKING
+New Games Marked as GAME_NOT_WORKING
 ------------------------------------
 Bank Raid (Jpm) (MPS) [C J Wren/MPU Mecca]
 Cops 'n' Robbers (Bellfruit) (set 1) (Scorpion 1) [James Wallace]
@@ -53,6 +43,16 @@ Special Effects V2 (Maygay V1) [James Wallace]
 The Big Game (Barcrest) (MPU 3) [James Wallace]
 
 
+MAMETesters Bugs Fixed (6):
+---------------------------
+- 04404: [Misc.] (tnzs.c) tnzs: Significant negative performance spike after intro sequence (David Haywood)
+- 04485: [Misc.] (wardner.c) All sets in wardner.c: Slowdown due to memory mapping changes (David Haywood)
+- 04714: [Documentation] (micro3d.c) botss, botssa: Clone set is newest revision.
+- 04844: [Crash/Freeze] (jaguar.c) fishfren: black screen after EEPROM initialize (micko)
+- 04953: [Misc.] pnchmna, hypbbc2p, jingystm, jojobar1: disks need to be set to baddump (R. Belmont, Firewave, Roman)
+- 04957: [DIP/Input] (fantland.c) galaxygn: life dipswitch is broken. There's only 1 life (David Haywood)
+
+
 Source changes:
 ---------------
 - vsnes.c: Corrected dipswitch settings for 'Vs. Wrecking Crew' and 'Vs. Balloon Fight' [Brian Troha].
@@ -62,7 +62,7 @@ Source changes:
 - gunpey.c: Added dipswitch locations to 'Gunpey' [Brian Troha].
 - seta.c: Added dipswitch locations to 'Masked Riders Club Battle Race' [Brian Troha].
 - metro.c: Corrected and explained the DIP Switches in Dharma Doujou [Brian Troha].
-- galdrvr.c: fixed fantastc colors with a redumped prom [Marcello Mancini].
+- galdrvr.c: Fixed fantastc colors with a redumped prom [Marcello Mancini].
 - aristmk6.c: Cleaned up ROM names and corrected spelling of 'Crystal Springs'. '50 Lions' parent/clone swapped (Australian set is now parent) [Heihachi_73].
 - Improved 'Last Bank' driver, added bare-bones graphics and inputs [Angelo Salese].
 - Makyosen was redumped with corrected ROM names which are now documented in driver [Yohji, Smitdogg, The Dumping Union].
@@ -85,7 +85,7 @@ Source changes:
   * Design ready to be split into a generic and a MAME implementation part.
   * Design prepared to merge in discrete components from discrete.
   * Supports code based as well as external net list parsing. Ultimately, net lists and discrete emulation should share one code base. The class design was set up to accomplish this. There is no point in having multiple 555, 7474 implementations around. Most of the code will be moved to lib/netlist going forward to allow usage in other projects.
-- 'Pong' now uses netlist.h. This implementation reproduces all gate timing and 555 related effects as described by Dr. H. Holden in his 2012 publication "ATARI PONG E CIRCUIT ANALYSIS & LAWN TENNIS" [Couriersud].
+- Pong now uses netlist.h. This implementation reproduces all gate timing and 555 related effects as described by Dr. H. Holden in his 2012 publication "ATARI PONG E CIRCUIT ANALYSIS & LAWN TENNIS" [Couriersud].
 - cshooter.c: Added dipswitch locations to the 'Air Raid' and 'Cross Shooter' sets [Brian Troha].
 - tlcs900: Added support for TMP95C063 [Ville Linde].
 - taitotz.c: Major driver update [Ville Linde]:
@@ -113,9 +113,9 @@ Source changes:
 - Removed a sound kludge to 'Combat School' [Angelo Salese].
 - Fixed gameplay inputs and cleaned up I/Os in 'Cyber Tank' [Angelo Salese].
 - cybertnk.c [David Haywood]:
- * Hooked up tilemaps as tilemaps, with scrolling.
- * Hooked up palette select on road drawing (road now appears to 'move').
- * Did some priority related bits, which may or may not be correct.
+  * Hooked up tilemaps as tilemaps, with scrolling.
+  * Hooked up palette select on road drawing (road now appears to 'move').
+  * Did some priority related bits, which may or may not be correct.
 - Updated expat to 2.1.0 [Oliver Stöneberg].
 - Updated zlib to 1.2.7 / renamed zconf.in.h to zconf.h [Oliver Stöneberg].
 - esd16.c: Move 'Jumping Pop' from tumbleb.c to esd16.c and clean up said driver [David Haywood].

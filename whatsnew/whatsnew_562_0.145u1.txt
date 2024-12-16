@@ -2,8 +2,32 @@
 ---------------------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
+New Games Added or Promoted from NOT_WORKING Status
+---------------------------------------------------
+Diet Family [Dr. Spankenstein, Paratech, joe35car, tormod, M. Hoenig, Mosquito2001, M. Ponweiser, M. Viste, Phil Bennett, N. Francfort, A. Costin, J. Finney, gamerfan, Smitdogg, The Dumping Union]
+Kung-Fu Roushi [hap]
+Oozumou - The Grand Sumo (DECO Cassette) [Charles MacDonald, Dr. Spankenstein, Kevin Eshbach, T. Huff, SteveS, E. Page-Hanify, Hikari, ArcadeDude, F. Bukor, N. Francfort, jmurjr, arcade-history.com, ThumB, Hurray Banana, Paratech, Xiaou2, Cornishdavey, A. Costin, M. Ponweiser, Tormod, Rambo, Smitdogg, The Dumping Union]
+Winning Run [gamerfan, Smitdogg, The Dumping Union]
+Winning Run 91 [Phil Bennett]
+Winning Run Suzuka Grand Prix [Phil Bennett]
+
+New Clones Added
+----------------
+Dynamite Baseball [Layne, Yohji, hap, Smitdogg, The Dumping Union]
+Eyes (bootleg set) [f205v, Antro]
+JoJo's Bizarre Adventure (990927) [Layne, Smitdogg, The Dumping Union]
+Print Club 2 Earth Limited Kobe (Print Club Custom) (J 970808 V1.000) [f205v, ranger_lennier, dopefishjustin, Yohji, Smitdogg, The Dumping Union]
+Space Invaders Part II (Brazil) [Marcello Mancini]
+Wyvern Wings (alt) [RetroRepair]
+
+New Games Marked as GAME_NOT_WORKING
+------------------------------------
+Initial D Arcade Stage Ver. 3 (Export) [f205v, The Dumping Union]
+Soul Surfer (Rev A) [f205v. The Dumping Union]
+
+
+MAMETesters Bugs Fixed (15):
+----------------------------
 - 02580: [Crash/Freeze] dirtfoxj: Game freezes immediately after the race start countdown (Phil Bennett)
 - 04655: [Graphics] All sets in stv.c: Graphic corruption (hap)
 - 04666: [Sound] spacelnc: Missing one DAC sound. (hap)
@@ -19,30 +43,6 @@ MAMETesters Bugs Fixed
 - 04688: [Documentation] sc2rock: The correct description is "How Big's Your Rock? (Global) (Scorpion 2/3)".
 - 04689: [Documentation] ep_pkni: The correct description is "Phoenix Knights (The) (Global) (EPOCH)".
 - 04690: [Documentation] ep_beavr and clone: The correct description is "Casino Beaver Las Vegas! (Global) (EPOCH, set 1)".
-
-
-New games added or promoted from NOT_WORKING status
----------------------------------------------------
-Diet Family [Dr. Spankenstein, Paratech, joe35car, tormod, M. Hoenig, Mosquito2001, M. Ponweiser, M. Viste, Phil Bennett, N. Francfort, A. Costin, J. Finney, gamerfan, Smitdogg, The Dumping Union]
-Kung-Fu Roushi [hap]
-Oozumou - The Grand Sumo (DECO Cassette) [Charles MacDonald, Dr. Spankenstein, Kevin Eshbach, T. Huff, SteveS, E. Page-Hanify, Hikari, ArcadeDude, F. Bukor, N. Francfort, jmurjr, arcade-history.com, ThumB, Hurray Banana, Paratech, Xiaou2, Cornishdavey, A. Costin, M. Ponweiser, Tormod, Rambo, Smitdogg, The Dumping Union]
-Winning Run [gamerfan, Smitdogg, The Dumping Union]
-Winning Run 91 [Phil Bennett]
-Winning Run Suzuka Grand Prix [Phil Bennett]
-
-New clones added
-----------------
-Dynamite Baseball [Layne, Yohji, hap, Smitdogg, The Dumping Union]
-Eyes (bootleg set) [f205v, Antro]
-JoJo's Bizarre Adventure (990927) [Layne, Smitdogg, The Dumping Union]
-Print Club 2 Earth Limited Kobe (Print Club Custom) (J 970808 V1.000) [f205v, ranger_lennier, dopefishjustin, Yohji, Smitdogg, The Dumping Union]
-Space Invaders Part II (Brazil) [Marcello Mancini]
-Wyvern Wings (alt) [RetroRepair]
-
-New games marked as GAME_NOT_WORKING
-------------------------------------
-Initial D Arcade Stage Ver. 3 (Export) [f205v, The Dumping Union]
-Soul Surfer (Rev A) [f205v. The Dumping Union]
 
 
 Source changes:
@@ -69,7 +69,7 @@ Source changes:
   * Updated README_SDL20.txt
   Currently, SDL 2.0 is only supported on *nix. Volunteers welcome.
 - Various N64 stability fixes [Ryan Holtz].
-- 'Steel Talons': Fixed controls and removed the MSP speedup hack which was causing the game to reset at certain points [Phil Bennett].
+- Steel Talons: Fixed controls and removed the MSP speedup hack which was causing the game to reset at certain points [Phil Bennett].
 - NMK16 priority fixes [Raiden II Project Team].
 - N64: Partially fix PIF access, several more games recognize cart SRAM, cart FlashROM, cart EEPROM, and controller paks [Ryan Holtz].
 - 68040: Fix for fsave opcode [O. Galibert].
@@ -83,7 +83,7 @@ Source changes:
   diff\game.dif -op roms\game.chd -c none
 
   - Specifics regarding this change:
-Defined a new CHD version 5. New features/behaviors of this version:
+  - Defined a new CHD version 5. New features/behaviors of this version:
   * Support for up to 4 codecs; each block can use 1 of the 4.
   * New LZMA codec, which tends to do better than zlib overall.
   * New FLAC codec, primarily used for CDs (but can be applied anywhere).
@@ -139,7 +139,7 @@ Defined a new CHD version 5. New features/behaviors of this version:
 - m68k: fix FSGLMUL/FSGLDIV plus some minor MMU improvements [Hans Ostermeyer].
 - m68k: slightly less stubby CINV [Hans Ostermeyer].
 - namcos23: documentation update [Guru].
-- vamphalf.c: Added correct speed up to 'Diet Family' [Dave Haywood].
+- vamphalf.c: Added correct speed up to Diet Family [Dave Haywood].
 - Assorted N64 SP/DP/CPU comms accuracy fixes [Ryan Holtz].
 - Rewrote SAMPLES as a modern device. Updated all callers. FLAC reading is now done using the FLAC wrapper. There is now a samples_iterator class to centralize the logic for handling the sample list walking [Aaron Giles].
 - Redid the cheesy half-baked votrax device since it relied on some old samples-based handling. Until we have a real implementation, it would be good to route the various clients through the current one to at least wire it up properly, even if it just plays samples in the end. Will look into that shortly [Aaron Giles].
@@ -147,6 +147,6 @@ Defined a new CHD version 5. New features/behaviors of this version:
 - Fixed N64 RDP to not try to render a triangle with no spans [Ryan Holtz].
 - SEGA Model 2 update [Layne]:
   * Dumped and hooked up Dynamite Baseball.
-  * 'Dynamite Baseball 97' renamed as dynabb97.
-  * Properly renamed 4 MASK ROMs in dynabb97 to match pcb manual.
+  * Dynamite Baseball 97 renamed as dynabb97.
+  * Properly renamed 4 MASK ROMs in dynabb97 to match PCB manual.
   * Minor cleanups and fixes.

@@ -2,17 +2,7 @@
 ---------------------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
-- 00007: [DIP/Input] (8080bw.c) invrvnge: The cocktail DIP has no effect (hap).
-- 04948: [Gameplay] (pgm.c) kov and clones: resets to title screen stage 6 (winter stage) (iq_132).
-- 05028: [Gameplay] (system1.c) shtngmste: The gun crosshair vs gun hit position offset is wrong (hap).
-- 05036: [Gameplay] (ninjakd2.c) omegafs: Failure to finish post + reset (hap).
-- 05042: [Documentation] (ataxx.c) ataxxj: Missing documentation that is on the title screen.
-- 05046: [Crash/Freeze] (megatech.c) megatech, all sms-based sets: [debug] Crash after OK (Sandro Ronco).
-
-
-New games added or promoted from NOT_WORKING status
+New Games Added or Promoted from NOT_WORKING Status
 ---------------------------------------------------
 3 On 3 Dunk Madness (US, prototype? 1997/02/04) [David Haywood, ShouTime, Smitdogg, The Dumping Union]
 3X3 Puzzle [Mariusz Wojcieszek, David Haywood, Guru]
@@ -25,7 +15,7 @@ Scoop (Peter Simper, prototype?) (MPU3) [Superbank/MPU Mecca]
 Spark Man (v2.0, 2 sets) [Luca Elia, Stefan Lindberg]
 Talk of the Town (MPU3) [Fruitsim/MPU Mecca]
 
-New clones added
+New Clones Added
 ----------------
 19-in-1 MAME bootleg [David Haywood]
 48-in-1 MAME bootleg (set 2, ver 3.09, alt flash) [David Haywood]
@@ -53,7 +43,7 @@ The Speed Rumbler (set 3) [Corrado Tomaselli]
 WEC Le Mans 24 (set 2) [Corrado Tomaselli]
 Xain'd Sleena (World) [Corrado Tomaselli]
 
-New games marked as GAME_NOT_WORKING
+New Games Marked as GAME_NOT_WORKING
 ------------------------------------
 3 On 3 Dunk Madness (US, prototype?) [ShouTime, Smitdogg, The Dumping Union]
 Bingo Mania (A03) [Team Europe, Angelo Salese, Roberto Fresca]
@@ -69,6 +59,16 @@ Secret Service (2.6 alternate sound) [PinMAME]
 Star Wars (Sonic, alternate set) [PinMAME]
 Still Crazy [Robbbert]
 Verne's World [PinMAME]
+
+
+MAMETesters Bugs Fixed (6):
+---------------------------
+- 00007: [DIP/Input] (8080bw.c) invrvnge: The cocktail DIP has no effect (hap)
+- 04948: [Gameplay] (pgm.c) kov and clones: resets to title screen stage 6 (winter stage) (iq_132)
+- 05028: [Gameplay] (system1.c) shtngmste: The gun crosshair vs gun hit position offset is wrong (hap)
+- 05036: [Gameplay] (ninjakd2.c) omegafs: Failure to finish post + reset (hap)
+- 05042: [Documentation] (ataxx.c) ataxxj: Missing documentation that is on the title screen.
+- 05046: [Crash/Freeze] (megatech.c) megatech, all sms-based sets: [debug] Crash after OK (Sandro Ronco)
 
 
 Source changes:
@@ -153,11 +153,11 @@ Source changes:
 - Fun World driver improvements [Roberto Fresca]:
   * Added 'Bonus Card (Austrian)' from Fun World.
   * Added PCB layouts.
-  * Set 'Big Deal' sets and 'Jolly Card' hybrid as clones of 'Bonus Card'.
+  * Set Big Deal sets and Jolly Card hybrid as clones of Bonus Card.
   * Cleaned up the code.
-  * Changed company name 'Funworld' to 'Fun World'.
-  * Changed 'Mega Card' to 'Power Card' after check the real hardware running.
-  * Fixed 'Power Card' graphics ROM load.
+  * Changed company name Funworld to Fun World.
+  * Changed Mega Card to Power Card after check the real hardware running.
+  * Fixed Power Card graphics ROM load.
   * Added technical notes.
 - romload: Tell in which zips a missing ROM was searched for [O. Galibert].
 - Moved jolycdat program to Bonus Card, making it parent. This program is a real original Bonus Card program, and the PCB was populated with common 'Jolly Card' graphics wrongly. The other 'Bonus Card' set was turned as clone, since has a fake copyright string (hack). Also added some technical notes [Roberto Fresca].
@@ -170,7 +170,7 @@ Source changes:
 - Remove hack patch for tdragonb and emulated protection instead [IQ_132].
 - Comet is now WORKING [Robbbert].
 - Magic Card II improvements [Roberto Fresca]:
-  * Added new Yugoslavian set of 'Magic Card 2 (Nov/New)'.
+  * Added new Yugoslavian set of Magic Card 2 (Nov/New).
   * Added default NVRAM, needed to boot properly.
-  * Rearrange the whole 'Magic Card 2' sets, and improved descriptions.
+  * Rearrange the whole Magic Card 2 sets, and improved descriptions.
   * Added technical notes.

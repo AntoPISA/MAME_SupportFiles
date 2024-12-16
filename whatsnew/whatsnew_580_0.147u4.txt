@@ -2,17 +2,7 @@
 ---------------------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
-- 00340: [Flip Screen/Cocktail] (rotaryf.c) rotaryf: Screen is not flipped for the player 2 in cocktail mode (Robbbert).
-- 02710: [Flip Screen/Cocktail] (astinvad.c) spaceint, spaceintj: Corrupt screen in cocktail mode (Robbbert).
-- 03461: [DIP/Input] (starfire.c) starfire, starfirea, starfir2: Scratchpad Ram test not available in emulation (hap).
-- 03718: [Crash/Freeze] (segas18.c) shdancer: Freeze on stage 2-4 (Phil Bennett).
-- 05062: [Sound] (segag80r.c) monsterb: Buzzing sound during opening and gameplay (Phil Bennett).
-- 05063: [Sound] (segas16a.c) shinobi, aliensyn2, quartet: Missing speech in sega16a games (Phil Bennett).
-
-
-New games added or promoted from NOT_WORKING status
+New Games Added or Promoted from NOT_WORKING Status
 ---------------------------------------------------
 Gachaga Champ (GE877 VER. JAA) [smf, Yasuhiro, Tormod, Paratach, M. Healey, Dr. Spankenstein, f205v, T. Bailey, Mr. CAST, J. Finney, M.David, anonymous, Pernod, hap, gatt9, redk9258, L. Genier, Yohji, Smitdogg, The Dumping Union]
 Ganbare Marin-kun (Marine 2K0411 JPN) [redk9258, A. Babich, D. Leipold / bisboch, joe35car, Dr. Spankenstein, A. Brown / B2K24, Surgeville, krick, J. Miller, M. Ritchings / theHam, R. Mucciarelli, F. Bukor, M. Ponweiser, Manlio De Pasquale, F. Marsaud, D. Haist, Layne, M. Gutierrez, N. Alston / Fyrecrypts, C. Trutmann / anonymous, Yohji, Smitdogg, The Dumping Union]
@@ -20,7 +10,7 @@ Jong Yu Ki (Japan) [Takahiro Nogi, Luca Elia]
 Kuru Kuru Pyon Pyon (Japan) [Roberto Fresca, hap, Fyrecrypts, anonymous, btribble, Yohji, Smitdogg, The Dumping Union]
 Riviera Hi-Score (2131-08, U5-4A) [Brian Troha, The Dumping Union]
 
-New clones added
+New Clones Added
 ----------------
 Astrians (clone of Swarm) [Robbbert, MisfitMAME]
 Bomber (bootleg of Scramble) [Robbbert, MisfitMAME]
@@ -67,7 +57,7 @@ World Class Bowling (v1.3J, Japan) [Yohji, Smitdogg, The Dumping Union]
 X-Men: Children of the Atom (Euro 950331) [Bonky0013]
 Zero Point (Japan) [Takahiro Nogi]
 
-New games marked as GAME_NOT_WORKING
+New Games Marked as GAME_NOT_WORKING
 ------------------------------------
 Beatmania III Append 7th Mix [anonymous, R. Belmont]
 Beatmania III The Final [anonymous, R. Belmont]
@@ -81,13 +71,23 @@ Raizin Ping Pong [Guru]
 Space Ace (DL2 Conversion) (US v1.3) [tafoid]
 
 
+MAMETesters Bugs Fixed (6):
+---------------------------
+- 00340: [Flip Screen/Cocktail] (rotaryf.c) rotaryf: Screen is not flipped for the player 2 in cocktail mode (Robbbert).
+- 02710: [Flip Screen/Cocktail] (astinvad.c) spaceint, spaceintj: Corrupt screen in cocktail mode (Robbbert).
+- 03461: [DIP/Input] (starfire.c) starfire, starfirea, starfir2: Scratchpad Ram test not available in emulation (hap).
+- 03718: [Crash/Freeze] (segas18.c) shdancer: Freeze on stage 2-4 (Phil Bennett).
+- 05062: [Sound] (segag80r.c) monsterb: Buzzing sound during opening and gameplay (Phil Bennett).
+- 05063: [Sound] (segas16a.c) shinobi, aliensyn2, quartet: Missing speech in sega16a games (Phil Bennett).
+
+
 Source changes:
 ---------------
-- Fixed 'Lethal Enforcers 2' duplicated input [Tafoid].
-- sstarcrs: Fixed loading of gfx roms [Robbbert].
+- Fixed Lethal Enforcers 2 duplicated input [Tafoid].
+- sstarcrs: Fixed loading of GFX roms [Robbbert].
 - Added Sanyo LC8670 CPU core [Sandro Ronco].
 - i8243.c: Fixed write handler regression following devcb2 conversion [Phil Bennett].
-- Correct DAC frequency in 'Hayaoshi Taisen Quiz Hyhoo' [Takahiro Nogi].
+- Correct DAC frequency in Hayaoshi Taisen Quiz Hyhoo [Takahiro Nogi].
 - CPS-1 update [Team CPS-1]:
   * Redumped TN2J_09.12A to match real pcb and added missing documentation to qtono2j [Bonky0013, JacKc].
 - Firebeat updates [anonymous, R. Belmont]:
@@ -105,7 +105,7 @@ Source changes:
 - Corrected romname on US BIOS for neogeo [Guru].
 - CPS-1 update [Team CPS-1]:
   * Added CCPRG.11D, QAD63B.1A, TN2292.1A PALs.
- * Replaced the old PAL S224B.1A with the one coming from the real dump [Corrado Tomaselli].
+  * Replaced the old PAL S224B.1A with the one coming from the real dump [Corrado Tomaselli].
   * Identified and documented qadj as a genuine Japan Resale Ver. board, qadj -> qadjr
   * Added "Japan Resale Ver." note where needed.
   * Updated and realigned games table in video\cps1.c.
@@ -130,7 +130,7 @@ Source changes:
   * Added X-Men: Children of the Atom (Euro 950331), now set as new parent [Bonky0013]
   * Fixed missing ROMs labels in xmcotah.
   * xmcotad -> xmcotar1d.
--xtal.h: Fix an error with one of the crystals listed. [Lord Nightmare].
+- xtal.h: Fix an error with one of the crystals listed. [Lord Nightmare].
 - Added the ability to view peel18cv8 jed files to the jedutil [Kevin Eshbach].
 - Fixed cawingbl [Barry Harris].
 - kodb: Fixed sound [Barry Harris].

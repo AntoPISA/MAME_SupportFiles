@@ -2,30 +2,13 @@
 ---------------------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
-- 03464: [Debugger] (seattle.c) All sets in seattle.c: MAME crash when try to read the voodoo region (Firewave).
-- 03751: [Crash/Freeze] (gunpey.c) gunpey: [debug] Assert in debug build (Phil Bennett).
-- 03831: [Gameplay] (vicdual.c) carnivalh, carnivalha: Gameplay is unusually fast (hap).
-- 04717: [Documentation] (vicdual.c) nsub: Coinage dipswitch settings (hap).
-- 04718: [Documentation] (vicdual.c) invds: Dipswitch settings from manual.
-- 04719: [Documentation] (vicdual.c) invho2: Dipswitch settings from manual.
-- 05007: [Crash/Freeze] All sets in midtunit.c, midwunit.c, midxunit.c: Corrupted graphics, quickly crashes when starting (Firewave).
-- 05008: [Core] CHDMAN: Error creating CHD file (new.chd): file not writeable (smf).
-- 05012: [Documentation] Typos in internal MAME list.
-- 05015: [Graphics] (segaxbd.c) Most sets in segaxbd.c: Sprites glitching or disappearing (hap).
-- 05017: [Sound] (poo.c) unclepoo: Sounds incomplete/slow or misplayed (hap).
-- 05020: [Documentation] (royalmah.c) janputer: This game is a hack/copy of "Janputer", named "New Double Bet Mahjong".
-- 05022: [Color/Palette] (segaybd.c) gloc, strkfgtr, rchase, pdrift: Incorrect colors on some text, HUD, outer view of aircraft (hap).
-
-
-New games added or promoted from NOT_WORKING status
+New Games Added or Promoted from NOT_WORKING Status
 ---------------------------------------------------
 Claybuster [Any, hap]
 Gun Champ [hap]
 Star Fighter (v1) [Luca Elia]
  
-New clones added
+New Clones Added
 ----------------
 Asterock (Videotron bootleg) [Any]
 Cruis'n Exotica (version 1.3) [Brian Troha, Smitdogg, The Dumping Union] (not working)
@@ -34,12 +17,29 @@ Enforce (World) [ShouTime, The Dumping Union]
 Jurassic Park (Japan) [ShouTime]
 Sega Bass Fishing Deluxe (Japan) [Tormod, Yohji, Smitdogg, The Dumping Union] (not working)
 
-New games marked as GAME_NOT_WORKING
+New Games Marked as GAME_NOT_WORKING
 ------------------------------------
 99 Bottles of Beer [Grull Osgo]
 Blankity Bank (PCP) (SYSTEM80) [TTX]
 Game Magic [Grull Osgo]
 VLC Nevada [Yves]
+
+
+MAMETesters Bugs Fixed (13):
+----------------------------
+- 03464: [Debugger] (seattle.c) All sets in seattle.c: MAME crash when try to read the voodoo region (Firewave)
+- 03751: [Crash/Freeze] (gunpey.c) gunpey: [debug] Assert in debug build (Phil Bennett)
+- 03831: [Gameplay] (vicdual.c) carnivalh, carnivalha: Gameplay is unusually fast (hap)
+- 04717: [Documentation] (vicdual.c) nsub: Coinage dipswitch settings (hap)
+- 04718: [Documentation] (vicdual.c) invds: Dipswitch settings from manual.
+- 04719: [Documentation] (vicdual.c) invho2: Dipswitch settings from manual.
+- 05007: [Crash/Freeze] All sets in midtunit.c, midwunit.c, midxunit.c: Corrupted graphics, quickly crashes when starting (Firewave)
+- 05008: [Core] CHDMAN: Error creating CHD file (new.chd): file not writeable (smf)
+- 05012: [Documentation] Typos in internal MAME list.
+- 05015: [Graphics] (segaxbd.c) Most sets in segaxbd.c: Sprites glitching or disappearing (hap)
+- 05017: [Sound] (poo.c) unclepoo: Sounds incomplete/slow or misplayed (hap)
+- 05020: [Documentation] (royalmah.c) janputer: This game is a hack/copy of "Janputer", named "New Double Bet Mahjong".
+- 05022: [Color/Palette] (segaybd.c) gloc, strkfgtr, rchase, pdrift: Incorrect colors on some text, HUD, outer view of aircraft (hap)
 
 
 Source changes:
@@ -51,7 +51,7 @@ Source changes:
 - aftor: Fixed display, marked as WORKING [Robbbert].
 - Better simulation of 'Metal Slug X's' protection device [IQ_132].
 - Changed CPS-1 video timings to SCREEN_RAW_PARAMS [Angelo Salese].
-- Emulated 'Lord of Gun's' protection rather than patching it out [iq_132].
+- Emulated Lord of Gun's protection rather than patching it out [iq_132].
 - Fix for "file note writeable" when creating, plus consolidated some duplicate/redundant code [smf].
 - Fixed M68K and hooked up SCREEN_RAW_PARAMS for Blocken. Game was definitely running at erratic speeds before [Angelo Salese, Tafoid].
 - gunpey.c - Corrected OKI M6925 frequency [Phil Bennett].

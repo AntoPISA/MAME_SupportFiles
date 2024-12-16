@@ -2,16 +2,7 @@
 ---------------------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
-- 03696: [Crash/Freeze] (tetrisp2.c) nndmseal: [debug] Assertion (after ok) in Debug build (Luca Elia).
-- 04960: [Crash/Freeze] (cdi.c) All sets in cdi.c: Quizard games do not boot after initial startup screen (David Haywood).
-- 04961: [Gameplay] (darkhors.c) darkhors: Game no longer allows for boot up (David Haywood).
-- 04962: [Crash/Freeze] (taito_l.c) plottinga: Crash during init before OK (David Haywood).
-- 04972: [Documentation] (vega.c) vega: Olympia is misspelled.
-
-
-New games added or promoted from NOT_WORKING status
+New Games Added or Promoted from NOT_WORKING Status
 ---------------------------------------------------
 Cyber Tank [David Haywood, Angelo Salese, hap]
 Cycle Maabou [Angelo Salese]
@@ -20,7 +11,7 @@ Pairs Redemption (V1.0, 10/25/94) [Brian Troha, The Dumping Union]
 Sky Destroyer [Gnoppi, P. Vining, C. Bristow, gatt9, Phil Bennett, Tormod, Andrew Welburn, Smitdogg, The Dumping Union, Angelo Salese, David Haywood]
 Space Invaders / Qix Silver Anniversary Edition [Tormod, Smitdogg, The Dumping Union, R. Belmont, Angelo Salese]
 
-New clones added
+New Clones Added
 ----------------
 777 Heaven (Project) (10GBP Jackpot) (PROCONN)[launton  /MPU Mecca] (NOT WORKING)
 777 Heaven (Project) (10p 3GBP Jackpot Version 380) (PROCONN) [sam20sam  /MPU Mecca] (NOT WORKING)
@@ -47,9 +38,18 @@ Thunder Zone (Rev 1, World) [Stefan Lindberg]
 Trojan (US set 2) [Corrado Tomaselli, The Dumping Union]
 
 
+MAMETesters Bugs Fixed (5):
+----------------------
+- 03696: [Crash/Freeze] (tetrisp2.c) nndmseal: [debug] Assertion (after ok) in Debug build (Luca Elia)
+- 04960: [Crash/Freeze] (cdi.c) All sets in cdi.c: Quizard games do not boot after initial startup screen (David Haywood)
+- 04961: [Gameplay] (darkhors.c) darkhors: Game no longer allows for boot up (David Haywood)
+- 04962: [Crash/Freeze] (taito_l.c) plottinga: Crash during init before OK (David Haywood)
+- 04972: [Documentation] (vega.c) vega: Olympia is misspelled.
+
+
 Source changes:
 ---------------
-- [SAA5050] Fixed double high character mode, and forced character data to 7-bit [Curt Coder].
+- saa5050: Fixed double high character mode, and forced character data to 7-bit [Curt Coder].
 - 8080bw.c: Moon Lander color proms verified correct [Smitdogg, The Dumping Union].
 - Added ANDNBSU and ORBSU opcodes in V810 CPU core [Angelo Salese].
 - Added dynamic length to the color PROMs decode routines based on ROM region length. This fixes a horrible hang/crash in DEBUG=1 builds [Roberto Fresca].
@@ -89,7 +89,7 @@ Source changes:
 - peplus.c: Added dollar bill validator (DBV) to emulate IGT's IDO22 pulse protocol. All non-superboard games (and a few superboards) now accept bills via IPT_COIN2. Denomination is determined via driver configuration settings. The Set Chip steps are still required to enable the DBV before use [Jim Stolis].
 - PowerPC: Fix CMP/CMPI instructions; they were behaving as CMPL/CMPLI and generating wrong flags [R. Belmont].
 - ppc: Added callbacks for buffered external DMAs [Ville Linde].
-- PPC: fix SRAW behavior with C backend. x86/x64 BEs need work to pass [R. Belmont].
+- PPC: Fix SRAW behavior with C backend. x86/x64 BEs need work to pass [R. Belmont].
 - Preliminary implementation of the MOVBSU opcode in V810 CPU core [Angelo Salese].
 - rp5c15: Initialize at power-on (makes the x68k boot reliable) [O. Galibert].
 - SDL: Fix -prescale option for SDL builds [Matthias Reichl].

@@ -2,19 +2,7 @@
 -----------------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
-- 04483: [Compiling] sdlmame does not build in OpenBSD (R. Belmont)
-- 04488: [Sound] All games in ms32.c: Jaleco Mega System 32 is mono only (Angelo Salese)
-- 03541: [DIP/Input] victlapw: Cannot insert coins (hap)
-- 02543: [Color/Palette] raveracw, raveracj, raveracja: Sudden in-game darkness (hap)
-- 01949: [Graphics] cybrcycc: No background graphics when choosing Hard course (hap)
-- 00136: [Crash/Freeze] acedrvrw: I was passing the first checkpoint on the first track and was heading off the track, it crashed (hap)
-- 02008: [Crash/Freeze] acedrvrw, victlapw: The 2 Ace Drivers game crash during attract mode (hap)
-- 04480: [Misc.] All sets in mpu4.c and mpu5.c: Running any sets cause "validation checks failed" message (Tafoid)
-
-
-New games added or promoted from NOT_WORKING status
+New Games Added or Promoted from NOT_WORKING Status
 ---------------------------------------------------
 Bingo (set 1) [Roberto Fresca, EMMA Italian Dumping Team]
 Bingo (set 2) [Roberto Fresca, The Dumping Union]
@@ -26,17 +14,29 @@ Super Shot [Mariusz Wojcieszek, Team Europe & fallout]
 Umi de Poker / Marine Paradise [Angelo Salese, Yasuhiro Ogawa]
 Slot Poker Saiyuki [Angelo Salese, Yasuhiro Ogawa]
 
-New clones added
+New Clones Added
 ----------------
 Ikari 3 (Japan) [ShouTime]
 Exvania (World) [Tormod, The Dumping Union]
 
-New games marked as GAME_NOT_WORKING
+New Games Marked as GAME_NOT_WORKING
 ------------------------------------
 Croupier (Playmark Roulette v.20.05) [Roberto Fresca]
 Video Poker (v1403) [Roberto Fresca]
 Funcube 3 [Luca Elia]
 Mahjong Momotarou [Angelo Salese]
+
+
+MAMETesters Bugs Fixed (8):
+---------------------------
+- 04483: [Compiling] sdlmame does not build in OpenBSD (R. Belmont)
+- 04488: [Sound] All games in ms32.c: Jaleco Mega System 32 is mono only (Angelo Salese)
+- 03541: [DIP/Input] victlapw: Cannot insert coins (hap)
+- 02543: [Color/Palette] raveracw, raveracj, raveracja: Sudden in-game darkness (hap)
+- 01949: [Graphics] cybrcycc: No background graphics when choosing Hard course (hap)
+- 00136: [Crash/Freeze] acedrvrw: I was passing the first checkpoint on the first track and was heading off the track, it crashed (hap)
+- 02008: [Crash/Freeze] acedrvrw, victlapw: The 2 Ace Drivers game crash during attract mode (hap)
+- 04480: [Misc.] All sets in mpu4.c and mpu5.c: Running any sets cause "validation checks failed" message (Tafoid)
 
 
 Source changes:
@@ -55,71 +55,33 @@ Source changes:
 - Implemented save support to HC11 core [Angelo Salese].
 - Added preliminary 7-seg artwork for King Derby [Angelo Salese].
 - dogpatch - added shot sounds [Derrick Renaud, iritis].
-
-Yet more Neo-Geo work on game ROMs structures [Johnboy]
- * Finished to document used pcb's for cartridges
- * Finished removal of .bin extension in favour of
-    chiplabel.socketlabel naming convention
-
-Whitestar: added main CPU FIRQ, fixed main/DMD CPU comms, DMD VRAM is
-now populated [R. Belmont]
-
-Update raiden 2 driver with guru-style readme for raiden 2 pcb itself,
-based on the raiden dx guru-readme [Lord Nightmare].
-
-Figured out BIOS loading in Super Kaneko Nova System
-[Joerg Hartenberger]
-
-model3: added drive board ROMs for Scud Race, Scud Race Plus, Sega
-Rally 2, and Daytona USA 2 [Andy Geezer]
-
-naomi: added drive board ROM for f355 [Andy Geezer]
-
-Whitestar: correct sample loading for games with 4Mbit ROMs
-[R. Belmont]
-
-Various Nibbler clean-ups:  [Tafoid]
- * Set up Nibbler and clones to allow the Pioneer Balloon sound ROM as
-    OPTIONAL as some board configurations has this ROM on board.  If
-    it is missing from your romset, the game will be allowed to play
-    without the music is desired.
- * Nibbler and clones have been reordered and renamed based on version
-    information.
- * Added notes to the driver.
-
-Various wiz.c fixes :  [Tafoid]
- * Fixed cocktail controls for scion and clone.
- * Took ROM_LOAD_OPTIONAL out of ROM_START that uses the audiocpu rom
-    from scionc for scion.  The original scion audiocpu is not
-    emulated correctly, is a known issue, and was only covered up by
-    the use of this other dump from scionc.
-
-whitestar: correct sample ROM loading for games with 8Mbit sample ROMs
-[R. Belmont, Tafoid]
-
-Allow region tags starting with a : to mean "absolute" so devices can
-access the parent base driver's ROM regions [R. Belmont]
-
-Moved DECO BSMT2000 sound board out to a device shared between
-Whitestar and tattass [R. Belmont]
-
-WD17xx: Connected Side Select Output for variants that support it.
-[Curt Coder]
-
-More minor notes about different raiden 2 set sound roms and suspected
-(but as of yet unproven) version order. [Lord Nightmare, trap15]
-
-Update sp0256 core to use correctly ordered resroms; update sauro
-driver to use correctly ordered sp0256-al2 resroms.
-[Huygens, Lord Nightmare]
-
-namcos22.c updates [hap]
- * fixed acedrvrw and victlapw crash from buffer overflow
- * fixed dirtdash crash due to pointrom size, the game still doesn't
-    work though
- * improved display fader (used in raveracw)
- * cleaned up inputs and added default NVRAM where useful
- * properly emulated step lock motor status for the skiing games
-
+- Yet more Neo-Geo work on game ROMs structures [Johnboy]
+  * Finished to document used PCB's for cartridges.
+  * Finished removal of .bin extension in favour of chiplabel.socketlabel naming convention.
+- Whitestar: added main CPU FIRQ, fixed main/DMD CPU comms, DMD VRAM is now populated [R. Belmont].
+- Update raiden 2 driver with guru-style readme for Raiden 2 PCB itself, based on the raiden dx guru-readme [Lord Nightmare].
+- Figured out BIOS loading in Super Kaneko Nova System [Joerg Hartenberger].
+- model3: Added drive board ROMs for Scud Race, Scud Race Plus, Sega Rally 2, and Daytona USA 2 [Andy Geezer].
+- naomi: Added drive board ROM for f355 [Andy Geezer].
+- Whitestar: correct sample loading for games with 4Mbit ROMs [R. Belmont].
+- Various Nibbler clean-ups:  [Tafoid]
+  * Set up Nibbler and clones to allow the Pioneer Balloon sound ROM as OPTIONAL as some board configurations has this ROM on board. If it is missing from your romset, the game will be allowed to play without the music is desired.
+  * Nibbler and clones have been reordered and renamed based on version information.
+  * Added notes to the driver.
+- Various wiz.c fixes [Tafoid]:
+  * Fixed cocktail controls for scion and clone.
+  * Took ROM_LOAD_OPTIONAL out of ROM_START that uses the audiocpu ROM from scionc for scion. The original scion audiocpu is not emulated correctly, is a known issue, and was only covered up by the use of this other dump from scionc.
+- Whitestar: correct sample ROM loading for games with 8Mbit sample ROMs [R. Belmont, Tafoid].
+- Allow region tags starting with a : to mean "absolute" so devices can access the parent base driver's ROM regions [R. Belmont].
+- Moved DECO BSMT2000 sound board out to a device shared between Whitestar and tattass [R. Belmont].
+- wd17xx: Connected Side Select Output for variants that support it [Curt Coder].
+- More minor notes about different raiden 2 set sound roms and suspected (but as of yet unproven) version order [Lord Nightmare, trap15].
+- Update sp0256 core to use correctly ordered resroms; update sauro driver to use correctly ordered sp0256-al2 resroms [Huygens, Lord Nightmare].
+- namcos22.c updates [hap]:
+  * Fixed acedrvrw and victlapw crash from buffer overflow.
+  * Fixed dirtdash crash due to pointrom size, the game still doesn't work though.
+  * Improved display fader (used in raveracw).
+  * Cleaned up inputs and added default NVRAM where useful.
+  * Properly emulated step lock motor status for the skiing games.
 - Added basic PCB layout for Reel'N Quake! [Brian Troha].
 - Further major organization, documentation and reordering of numerous (over 1700) gambling / Fruit machine titles covering multiple systems [David Haywood / James Wallace].

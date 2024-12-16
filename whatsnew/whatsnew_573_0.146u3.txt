@@ -2,15 +2,7 @@
 ---------------------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
-- 04094: [Interface] [debug] Use of -profile in debug causes massive memory leaks (micko).
-- 04338: [Crash/Freeze] (sigmab98.c) animalc: Hang at black screen (hap).
-- 04932: [Sound] (taito_f3.c) gunlock: No Sound (Phil Bennett).
-- 04945: [Sound] (zn.c) strider2 and clones: Missing Qsound Music (hap).
-
-
-New clones added
+New Clones Added
 ----------------
 Cruis'n World v1.9 [Brian Troha, The Dumping Union]
 Cruis'n World v2.5 [Brian Troha, The Dumping Union]
@@ -32,7 +24,7 @@ Super Megatouch IV (9255-41-02 ROC, Minnesota version) [Brian Troha, The Dumping
 Tank Battalion (bootleg)  [Mr. CAST, Smitdogg, The Dumping Union]
 Time Crisis 3 (TST2 Ver. A) [Tormod, Smitdogg, The Dumping Union]
 
-New games marked as GAME_NOT_WORKING
+New Games Marked as GAME_NOT_WORKING
 ------------------------------------
 Beach Head 2000 Install - 05/27/03 [Smitdogg, The Dumping Union]
 Beach Head 2000 Install - 09/16/01 [Smitdogg, The Dumping Union]
@@ -53,6 +45,14 @@ Soul Calibur II (SC2? world version) [J. Wilke, Smitdogg, The Dumping Union, R. 
 Super Dragon Ball Z [Guru, R. Belmont]
 The Battle of Yu Yu Hakusho: Shitou! Ankoku Bujutsukai! [Smitdogg, The Dumping Union]
 Wangan Midnight (WMN1 Ver. A) [Guru, Yasuhiro Ogawa]
+
+
+MAMETesters Bugs Fixed (4):
+---------------------------
+- 04094: [Interface] [debug] Use of -profile in debug causes massive memory leaks (micko)
+- 04338: [Crash/Freeze] (sigmab98.c) animalc: Hang at black screen (hap)
+- 04932: [Sound] (taito_f3.c) gunlock: No Sound (Phil Bennett)
+- 04945: [Sound] (zn.c) strider2 and clones: Missing Qsound Music (hap)
 
 
 Source changes:
@@ -82,5 +82,5 @@ Source changes:
 - tms99xx: Introduced symbolic constants for interrupt lines. Added a special RESET line handled by the CPU, not by the emulator core [Michael Zapf].
 - Various changes to i386 CPU core and Chihiro emulation, allowing it to show a basic logo and text [Samuele Zannoli].
 - voodoo.c: Fixed video dimensions register on Voodoo 2 [Ville Linde].
-- z80dma: Support for search & transfer mode [Angelo Salese].
+- z80dma: Support for search and transfer mode [Angelo Salese].
 - zn.c: Corrected the ROM names for the 'Psychic Force' sets [Brian Troha].

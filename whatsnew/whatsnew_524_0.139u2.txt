@@ -2,8 +2,38 @@
 ---------------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
+New Games Added or Promoted from NOT_WORKING Status
+---------------------------------------------------
+3 Bags Full - 5VXFC790 (Victorian) [Roberto Fresca, Ogoun]
+Cal Omega - Game 24.0 (Gaming Draw Poker, hold) [Roberto Fresca]
+Cal Omega - Game 8.0 (Arcade Black Jack) [Roberto Fresca]
+Doki Doki Idol Star Seeker [Hurray Banana, cacis, Team Japump, David Haywood, The Dumping Union]
+Fire Trap (Japan) [stephh]
+Genie [Roberto Fresca, Ogoun]
+Raiden Fighters (Asia?, Metrotainment license) [anondumper]
+Royal Card (Nichibutsu) [Roberto Fresca, Tomasz Slanina, Ogoun]
+
+New Clones Added
+----------------
+Eco Fighters (Phoenix Edition)
+Knights of the Round (Japan 911127, B-Board 89625B-1) [Layne, john666, Ricky74, ranger_lennier, Smitdogg, The Dumping Union]
+Legion (bootleg of Legend) [Team Europe]
+Pioneer Balloon (Rock-Ola license) [gamerfan, Smitdogg, The Dumping Union]
+Street Fighter II': Champion Edition (World 920513) [john666, Smitdogg, The Dumping Union]
+Super Poker (Version 10.15S) [anondumper]
+The King of Dragons (Japan 910805, B-Board 89625B-1) [Kevin Eshbach, takearushfan, M. De Pasquale, Smitdogg, The Dumping Union]
+Willow (Japan, Japanese) [Layne, john666, C. Trutmann, Smitdogg, The Dumping Union]
+Yie Ar Kung-Fu (GX361 conversion) [Team Europe]
+
+New Games Marked as GAME_NOT_WORKING
+------------------------------------
+Cal Omega - Game 51.08 (CEI Video Poker, Jacks or Better) [Roberto Fresca, Dave Ormiston]
+Olympic Hot Stuff [Ogoun]
+Savage Quest [TrevEB]
+
+
+MAMETesters Bugs Fixed (27):
+----------------------------
 - 00229: [Color/Palette] truxton: The background colour on the title screen of Truxton should be green. (robiza)
 - 00949: [Graphics] outzone: In stage 6 there are two blank box on the background. (robiza)
 - 01215: [Crash/Freeze] combatscb: Crashes on level 3 and experiences various graphics glitches.
@@ -31,36 +61,6 @@ MAMETesters Bugs Fixed
 - 04006: [Graphics] fixeightb: Graphic glitches (David Haywood)
 - 04009: [Save/Restore] pacland and clones: Reload of state cause game issues (Phil Bennett)
 - 04026: [Graphics] combatscb: Experiences various graphics glitches (robiza)
-
-
-New games added or promoted from NOT_WORKING status
----------------------------------------------------
-3 Bags Full - 5VXFC790 (Victorian) [Roberto Fresca, Ogoun]
-Cal Omega - Game 24.0 (Gaming Draw Poker, hold) [Roberto Fresca]
-Cal Omega - Game 8.0 (Arcade Black Jack) [Roberto Fresca]
-Doki Doki Idol Star Seeker [Hurray Banana, cacis, Team Japump, David Haywood, The Dumping Union]
-Fire Trap (Japan) [stephh]
-Genie [Roberto Fresca, Ogoun]
-Raiden Fighters (Asia?, Metrotainment license) [anondumper]
-Royal Card (Nichibutsu) [Roberto Fresca, Tomasz Slanina, Ogoun]
-
-New clones added
-----------------
-Eco Fighters (Phoenix Edition)
-Knights of the Round (Japan 911127, B-Board 89625B-1) [Layne, john666, Ricky74, ranger_lennier, Smitdogg, The Dumping Union]
-Legion (bootleg of Legend) [Team Europe]
-Pioneer Balloon (Rock-Ola license) [gamerfan, Smitdogg, The Dumping Union]
-Street Fighter II': Champion Edition (World 920513) [john666, Smitdogg, The Dumping Union]
-Super Poker (Version 10.15S) [anondumper]
-The King of Dragons (Japan 910805, B-Board 89625B-1) [Kevin Eshbach, takearushfan, M. De Pasquale, Smitdogg, The Dumping Union]
-Willow (Japan, Japanese) [Layne, john666, C. Trutmann, Smitdogg, The Dumping Union]
-Yie Ar Kung-Fu (GX361 conversion) [Team Europe]
-
-New games marked as GAME_NOT_WORKING
-------------------------------------
-Cal Omega - Game 51.08 (CEI Video Poker, Jacks or Better) [Roberto Fresca, Dave Ormiston]
-Olympic Hot Stuff [Ogoun]
-Savage Quest [TrevEB]
 
 
 Source changes:
@@ -212,8 +212,7 @@ Source changes:
 - 6255via: added support for shift mode 5 (shift out under T2 control) [Miodrag Milanovic].
 - mrflea (mrflea.c) [stephh]:
   * Fixed Dip Switches and Inputs (after verification of the Z80 code).
-- Converted ertictac / poizone driver to use shared AA devices
-[Angelo Salese].
+- Converted ertictac / poizone driver to use shared AA devices [Angelo Salese].
 - Added a set of macros to minimize the amount of copy/pasting necessary to convert a device to the new style [Harmony].
 - Updated the ACIA 6850 device to no longer be legacy [Harmony].
 - Updated the PTM 6840 device to no longer be legacy [Harmony].

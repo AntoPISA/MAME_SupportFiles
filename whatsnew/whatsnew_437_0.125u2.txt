@@ -2,28 +2,28 @@
 ---------------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
-01497: [Graphics] numanath, numanatj: Graphics corruption on title screen (Phil Stroffolino).
-01671: [Interface] every set with PORT_MODIFY used for DIPs (e.g. arknoidj): the modified dipswitches are always listed at the bottom of the list (Aaron Giles).
-01804: [Core] carnevil, sfrush: Seattle games crash on startup (Aaron Giles).
-01814: [Sound] YM2608 games (tail2nos, sformula, wc90, mechatt): Only basic music, no more samples (Couriersud).
-01815: [Save/Restore] All Sets: Saved machine states do not properly adjust to changes in -samplerate (Aaron Giles).
-
-
-New games added or promoted from NOT_WORKING status
+New Games Added or Promoted from NOT_WORKING Status
 ---------------------------------------------------
 1991 Spikes (Italian bootleg) [robiza]
 
-New clones added
+New Clones Added
 ----------------
 Gals Panic SU (Korea) [The Guru]
 Last Fortress - Toride (Korea) [The Guru]
 Miss Puzzle (Clone of Gumbo) [The Guru]
 
-New games marked as GAME_NOT_WORKING
+New Games Marked as GAME_NOT_WORKING
 ------------------------------------
 Beauty Block [David Haywood]
+
+
+MAMETesters Bugs Fixed (5):
+---------------------------
+01497: [Graphics] numanath, numanatj: Graphics corruption on title screen (Phil Stroffolino).
+01671: [Interface] every set with PORT_MODIFY used for DIPs (e.g. arknoidj): the modified dipswitches are always listed at the bottom of the list (Aaron Giles).
+01804: [Core] carnevil, sfrush: Seattle games crash on startup (Aaron Giles).
+01814: [Sound] YM2608 games (tail2nos, sformula, wc90, mechatt): Only basic music, no more samples (Couriersud).
+01815: [Save/Restore] All Sets: Saved machine states do not properly adjust to changes in -samplerate (Aaron Giles).
 
 
 Source changes:
@@ -101,6 +101,6 @@ Source changes:
   * Updated technical notes.
 - Corrected several bugs in the emulation of the saturn CPU. These corrections are needed to make new HP48 drivers (to be submitted to MESS imminently) work [Antoine Mine].
 - Eliminated a large number of global Machine references. Added machine parameters to IRQ callbacks throughout the system to help remove more. Reduced the number of files needing deprecat.h by ~200 [Atari Ace].
-- Some work on lwings.c: Input clean up, added dip locations, fixed lwingsb life DIP Switches, and merged machine drivers [Sonikos].
-- Updated 'Gorf' sample volume to match new samples [Chris Law].
+- Some work on lwings.c: Input clean up, added dip locations, fixed (lwingsb) life DIP Switches, and merged machine drivers [Sonikos].
+- Updated Gorf sample volume to match new samples [Chris Law].
 - Added built-in overlay for 'Moon Shuttle' [Deacon Blue].
