@@ -8,16 +8,8 @@
 # Github repository: https://github.com/AntoPISA/MAME_SupportFiles
 # Verified with motoschifo's MDE, downloadable here: http://adb.arcadeitalia.net/?page=download
 #
+# RIMOZIONE "CLONEs" OK: # - C
 #
-$info=3bagflnz
-$mame
-INITIALIZATION:
-At the first start, "CALL ATTENDANT" will flash at the top, to start press in sequence: [ F1 ] and [ F2 ] to do this. Now press [ Z ] + [ X ] + [ C ] simultaneously; you'll see a number show up for the value "RF/AMT" if done correctly. After this value is set, return to the game by taking off the [ F2 ].
-
-SOURCE:
-https://www.progettosnaps.net/gameinit.dat
-
-$end
 $info=3bagflvt
 $mame
 INITIALIZATION:
@@ -302,16 +294,6 @@ your game is over.
 Game doesn't have any backup battery, so all info is lost at poweroff.
 
 $end
-$info=alphahob
-$mame
-TIPS:
-
-Press [ Alt ] to select game "AlphaFighter" or "Head On".
-
-SOURCE:
-mameinfo.dat
-
-$end
 $info=alphatro
 $mame
 TIPS:
@@ -370,33 +352,6 @@ GO : X
 Test Paste:
 =11^22^33^44^55^66^77^88^99^-0000
 Now press up-arrow to confirm the data has been entered.
-
-$end
-$info=ampkr2jsp
-$mame
-INITIALIZATION:
-Turn ON with Operator Key [ 9 ], then Door Switch [ O ] to enter the Operator Mode. Press Hold 1 [ Z ] to clear page. Turn OFF with Operator Key [ 9 ].
-
-SOURCE:
-mameinfo.dat
-
-$end
-$info=ampkr2jspa
-$mame
-INITIALIZATION:
-Turn ON with Operator Key [ 9 ], then Door Switch [ O ] to enter the Operator Mode. Press Hold 1 [ Z ] to clear page. Turn OFF with Operator Key [ 9 ].
-
-SOURCE:
-mameinfo.dat
-
-$end
-$info=ampkr2jspb
-$mame
-INITIALIZATION:
-Turn ON with Operator Key [ 9 ], then Door Switch [ O ] to enter the Operator Mode. Press Hold 1 [ Z ] to clear page. Turn OFF with Operator Key [ 9 ].
-
-SOURCE:
-mameinfo.dat
 
 $end
 $info=ampoker2
@@ -522,9 +477,10 @@ To save a tape: Oa,b  (where a = start address, b = end address)
 To load a tape: I then Play then G
 
 $end
-$info=apollo13,austin,elvisp,godzillp,gldneye,goldcue,gprix,gprixf,gprixg,gprixi,gprixl,harl_a13,harl_a40,hirolcas,id4,lostspc,monopolp,nascar,nfl,playboys,ripleys,rctycn,shrkysht,sprk_103,spacejam,swtril43,startrp,strikext,term3,lotr,jplstw22,simpprty,sopranos,xfilesp,twst_405,viprsega,monopred,titanic,wackadoo,ctchzdlx
+$info=apollo13,austin,ctcheese,elvisp,gldneye,godzillp,goldcue,gprix,gprixf,gprixg,gprixi,gprixl,harl_a13,harl_a40,hirolcas,id4,jplstw22,lostspc,lotr,monopolp,monopred,nascar,nfl,playboys,rctycn,ripleys,shrkysht,simpprty,sopranos,spacejam,sprk_103,startrp,strikext,swtril43,term3,titanic,twst_405,viprsega,wackadoo,xfilesp
 $mame
-INITIALIZATION:
+TIPS:
+
 Here are the key codes to enable play:
 - "End ball" code, if it says BALL SAVED you need to play a while longer.
 - May have to hold the key or hit it a few times
@@ -723,24 +679,6 @@ SOURCE:
 mameinfo.dat
 
 $end
-$info=armchmp2o
-$mame
-INITIALIZATION:
-After the 'MEMORY TEST', when the 'MOTOR TEST' message comes on the screen, you must move the joystick Left then Right for a second or two in each direction. The Title should soon appear.
-
-SOURCE:
-mameinfo.dat
-
-$end
-$info=armchmp2o2
-$mame
-INITIALIZATION:
-After the 'MEMORY TEST', when the 'MOTOR TEST' message comes on the screen, you must move the joystick Left then Right for a second or two in each direction. The Title should soon appear.
-
-SOURCE:
-mameinfo.dat
-
-$end
 $info=asterix
 $mame
 INITIALIZATION:
@@ -750,43 +688,7 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
-$info=asterixaad
-$mame
-INITIALIZATION:
-The first time you run the game, the EEPROM 17B shows as BAD in the RAM/ROM Check. Hold down the Test switch [ F2 ] and then also hit [ F3 ] to reset the machine, creating the EEPROM for you.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=asterixeaa
-$mame
-INITIALIZATION:
-The first time you run the game, the EEPROM 17B shows as BAD in the RAM/ROM Check. Hold down the Test switch [ F2 ] and then also hit [ F3 ] to reset the machine, creating the EEPROM for you.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=asterixeac
-$mame
-INITIALIZATION:
-The first time you run the game, the EEPROM 17B shows as BAD in the RAM/ROM Check. Hold down the Test switch [ F2 ] and then also hit [ F3 ] to reset the machine, creating the EEPROM for you.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=asterixj
-$mame
-INITIALIZATION:
-The first time you run the game, the EEPROM 17B shows as BAD in the RAM/ROM Check. Hold down the Test switch [ F2 ] and then also hit [ F3 ] to reset the machine, creating the EEPROM for you.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=atarians,aavenger,midearth,specrider,time2000
+$info=aavenger,atarians,midearth,specrider,time2000
 $mame
 TIPS:
 
@@ -798,27 +700,20 @@ Outhole for each game:
 - aavenger: X  (solenoid 4)
 
 $end
-$info=athenab
+$info=athena
 $mame
-INITIALIZATION:
+TIPS:
+
 To enter service mode hold P1 Start [ 1 ] during ROM test.
 
 SOURCE:
 mameinfo.dat
 
 $end
-$info=atlantol
-$mame
-INITIALIZATION:
-To have the high score table properly initialized, the first time you run the game you should go into the dip switch menu, set World Records to 'Erase on Reset', reset the game [ F3 ] and then set the dip switch back to 'Don't Erase'.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
 $info=atom
 $mame
-INITIALIZATION:
+TIPS:
+
 ACORN ATOM
 ==========
 LOAD"X"   - to load. Must use eact name, or use *LOAD. Use *CAT to find out the name.
@@ -830,7 +725,8 @@ TAP files are really ATM files.
 $end
 $info=attache
 $mame
-INITIALIZATION:
+TIPS:
+
 OTRONA ATTACHE
 ==============
 
@@ -840,15 +736,6 @@ This doesn't boot due to a regression, but after it gets stuck, hit F3, then it 
 The homebrew disks must go into drive B as they have no system tracks.
 
 The cursor is missing and there's a scroll issue.
-
-$end
-$info=attackf
-$mame
-INITIALIZATION:
-The first time you run the game, it will say '01  0000 COINS LEFT'. To proceed, just hit [ F3 ]. Press [ F2 ] for Test-Mode, press [ F1 ]+[ F2 ] for Bookkeeping/Setup
-
-SOURCE:
-mameinfo.dat
 
 $end
 $info=autmoon
@@ -861,42 +748,6 @@ https://www.progettosnaps.net/gameinit.dat
 
 $end
 $info=avengers
-$mame
-INITIALIZATION:
-Press [ F2 ] to enter Test Mode. Hit [ Up-ARROW ] once which will bring you to the "Game Mode" selection then press [ Left CTRL ] (Button 1) to return to game.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=avengersa
-$mame
-INITIALIZATION:
-Press [ F2 ] to enter Test Mode. Hit [ Up-ARROW ] once which will bring you to the "Game Mode" selection then press [ Left CTRL ] (Button 1) to return to game.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=avengersb
-$mame
-INITIALIZATION:
-Press [ F2 ] to enter Test Mode. Hit [ Up-ARROW ] once which will bring you to the "Game Mode" selection then press [ Left CTRL ] (Button 1) to return to game.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=avengersc
-$mame
-INITIALIZATION:
-Press [ F2 ] to enter Test Mode. Hit [ Up-ARROW ] once which will bring you to the "Game Mode" selection then press [ Left CTRL ] (Button 1) to return to game.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=avengrgsj
 $mame
 INITIALIZATION:
 Press [ F2 ] to enter Test Mode. Hit [ Up-ARROW ] once which will bring you to the "Game Mode" selection then press [ Left CTRL ] (Button 1) to return to game.
@@ -1017,43 +868,16 @@ Status:
 - Star Trax has no pinball, but instead has many ball bearings (800 was mentioned). Although it can be started, and a score attained, it will eventually say PUMP ERROR and stop responding.
 
 $end
+$info=avengrgs
+$mame
+INITIALIZATION:
+Press [ F2 ] to enter Test Mode. Hit [ Up-ARROW ] once which will bring you to the "Game Mode" selection then press [ Left CTRL ] (Button 1) to return to game.
+
+SOURCE:
+http://wiki.mamedev.org/index.php/FAQ:Games
+
+$end
 $info=bbusters
-$mame
-TIPS:
-For the game to work properly, you need to calibrate ALL 3 guns! If you try to do only one, as the manual states, the eprom has invalid gun data and the screen go black after rebooting. Fire at indicated spots with P1, P2 and P3 controls. Only then will a proper eprom be made.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=bbustersj
-$mame
-TIPS:
-For the game to work properly, you need to calibrate ALL 3 guns! If you try to do only one, as the manual states, the eprom has invalid gun data and the screen go black after rebooting. Fire at indicated spots with P1, P2 and P3 controls. Only then will a proper eprom be made.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=bbustersja
-$mame
-TIPS:
-For the game to work properly, you need to calibrate ALL 3 guns! If you try to do only one, as the manual states, the eprom has invalid gun data and the screen go black after rebooting. Fire at indicated spots with P1, P2 and P3 controls. Only then will a proper eprom be made.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=bbustersu
-$mame
-TIPS:
-For the game to work properly, you need to calibrate ALL 3 guns! If you try to do only one, as the manual states, the eprom has invalid gun data and the screen go black after rebooting. Fire at indicated spots with P1, P2 and P3 controls. Only then will a proper eprom be made.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=bbustersua
 $mame
 TIPS:
 For the game to work properly, you need to calibrate ALL 3 guns! If you try to do only one, as the manual states, the eprom has invalid gun data and the screen go black after rebooting. Fire at indicated spots with P1, P2 and P3 controls. Only then will a proper eprom be made.
@@ -1154,18 +978,10 @@ X - change banks
 Note: floppy-disk code is not complete.
 
 $end
-$info=bigdeal
+$info=bonuscrd
 $mame
-INITIALIZATION:
-Nothing special here, just be patient! It takes about 40 seconds to initiate the game.
+TIPS:
 
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=bigdealb
-$mame
-INITIALIZATION:
 Nothing special here, just be patient! It takes about 40 seconds to initiate the game.
 
 SOURCE:
@@ -1189,18 +1005,10 @@ INITIALIZATION:
 - All game except Chance: When starting a ball, hit Z to increment the ball number. Skipping this step can lead to weird bugs happening.
 
 $end
-$info=biliard
-$mame
-INITIALIZATION:
-Press and hold Service 1 + 2 (Keys [ 0 ]+[ 9 ]), then press reset [ F3 ]. When you see 'RAM-INIZIALIZZATA!', release.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
 $info=binbug
 $mame
-INITIALIZATION:
+TIPS:
+
 All input must be in uppercase.
 
 Commands:
@@ -1213,9 +1021,10 @@ L - cassette load
 S - See and alter registers
 
 $end
-$info=bjtwinpa
+$info=bjtwin
 $mame
 TIPS:
+
 Secret Message: Reset game and hold down Player 2 buttons 1 and 2. If you did it fast enough, you will see the message 'Ready?'. If not try again. Press the following Player 1 buttons : 2(x3) 1(x3) 2(x3), 1(x3). If you did this correctly, you should see another message '9th Mar. 1992'. And you are in the test mode.
 
 SOURCE:
@@ -1306,24 +1115,7 @@ $end
 $info=blaster
 $mame
 INITIALIZATION:
-When you see "FACTORY SETTINGS RESTORED", hit [ F2 ] (Service Mode).
 
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=blasterkit
-$mame
-INITIALIZATION:
-When you see "FACTORY SETTINGS RESTORED", hit [ F2 ] (Service Mode).
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=blastero
-$mame
-INITIALIZATION:
 When you see "FACTORY SETTINGS RESTORED", hit [ F2 ] (Service Mode).
 
 SOURCE:
@@ -1342,15 +1134,7 @@ $end
 $info=blkrhino
 $mame
 INITIALIZATION:
-At the first start, "CALL ATTENDANT" will flash at the top, to start press in sequence: [ F1 ] and [ F2 ] to do this. Now press [ Z ] + [ X ] + [ C ] simultaneously; you'll see a number show up for the value "RF/AMT" if done correctly. After this value is set, return to the game by taking off the [ F2 ].
 
-SOURCE:
-https://www.progettosnaps.net/gameinit.dat
-
-$end
-$info=blkrhinonz
-$mame
-INITIALIZATION:
 At the first start, "CALL ATTENDANT" will flash at the top, to start press in sequence: [ F1 ] and [ F2 ] to do this. Now press [ Z ] + [ X ] + [ C ] simultaneously; you'll see a number show up for the value "RF/AMT" if done correctly. After this value is set, return to the game by taking off the [ F2 ].
 
 SOURCE:
@@ -1402,18 +1186,10 @@ SOURCE:
 https://youtu.be/WkFOUoZBwOU and https://www.progettosnaps.net/gameinit.dat
 
 $end
-$info=bm3rdeaa
+$infobm3rdmix
 $mame
 TIPS:
-Press fast forward key [ Ins ] to speed up ROM/RAM test.
 
-SOURCE:
-mameinfo.dat
-
-$end
-$info=bmcmxaac
-$mame
-TIPS:
 Press fast forward key [ Ins ] to speed up ROM/RAM test.
 
 SOURCE:
@@ -1447,24 +1223,6 @@ SOURCE:
 https://www.progettosnaps.net/gameinit.dat
 
 $end
-$info=bmiidx3a
-$mame
-INITIALIZATION:
-Wait a few seconds (if you want to speed up this wait, keep the usual [ INS ] key pressed) until the red writing "E150 BACKUP DATA ERROR" appears in the penultimate line displayed; press [ 1 ] clear the RAM and start playing.
-
-SOURCE:
-https://www.progettosnaps.net/gameinit.dat
-
-$end
-$info=bmiidx3b
-$mame
-INITIALIZATION:
-To initialize the game, after booting and when the "DEVICE CHECK" stops with an error, press this key sequence: [ Alt ], [ X ], [ Alt ], [ C ] and finally [ Alt ].
-
-SOURCE:
-https://www.progettosnaps.net/gameinit.dat
-
-$end
 $info=bmiidx4
 $mame
 INITIALIZATION:
@@ -1492,25 +1250,7 @@ SOURCE:
 https://www.progettosnaps.net/gameinit.dat
 
 $end
-$info=bmiidx6a
-$mame
-INITIALIZATION:
-At the first start of the game, wait for the word "DEVICE CHECK". After a few seconds the message (in red) "1P START = BACKUP CLEAR" will appear. Now press 1P (the [ 1 ] key) and the BACKUP RAM will be initialized.
-
-SOURCE:
-https://www.progettosnaps.net/gameinit.dat
-
-$end
 $info=bmiidx7
-$mame
-INITIALIZATION:
-At the first start of the game, wait for the word "DEVICE CHECK". After a few seconds the message (in red) "1P START = BACKUP CLEAR" will appear. Now press 1P (the [ 1 ] key) and the BACKUP RAM will be initialized.
-
-SOURCE:
-https://www.progettosnaps.net/gameinit.dat
-
-$end
-$info=bmiidx7a
 $mame
 INITIALIZATION:
 At the first start of the game, wait for the word "DEVICE CHECK". After a few seconds the message (in red) "1P START = BACKUP CLEAR" will appear. Now press 1P (the [ 1 ] key) and the BACKUP RAM will be initialized.
@@ -1540,15 +1280,7 @@ $end
 $info=bmiidxs
 $mame
 INITIALIZATION:
-Wait a few seconds (if you want to speed up this wait, keep the usual [ INS ] key pressed) until the red writing "E150 BACKUP DATA ERROR" appears in the penultimate line displayed; press [ 1 ] clear the RAM and start playing.
 
-SOURCE:
-https://www.progettosnaps.net/gameinit.dat
-
-$end
-$info=bmiidxsa
-$mame
-INITIALIZATION:
 Wait a few seconds (if you want to speed up this wait, keep the usual [ INS ] key pressed) until the red writing "E150 BACKUP DATA ERROR" appears in the penultimate line displayed; press [ 1 ] clear the RAM and start playing.
 
 SOURCE:
@@ -1557,7 +1289,8 @@ https://www.progettosnaps.net/gameinit.dat
 $end
 $info=bmjr
 $mame
-INITIALIZATION:
+TIPS:
+
 HITACHI BMJR (aka L2)
 =====================
 
@@ -1598,7 +1331,8 @@ The monitor E command goes back to Basic.
 $end
 $info=bml3
 $mame
-INITIALIZATION:
+TIPS:
+
 HITACHI BML3
 ============
 
@@ -1626,7 +1360,8 @@ Loads on the screen and won't run.
 $end
 $info=bob85
 $mame
-INITIALIZATION:
+TIPS:
+
 To save a tape: RQaaaa up nn (press record) up  (aaaa = start address, nn = number of bytes 01-FF).
 
 To load a tape: RWaaaa up nn up (press play)    (it loads correctly but then shows an error indication)
@@ -1642,18 +1377,10 @@ Test Paste:
 Now press up-arrow to confirm the data has been entered.
 
 $end
-$info=bottl10b
-$mame
-INITIALIZATION:
-Press and hold Service 1 + 2 (Keys [ 0 ]+[ 9 ]), then press Reset [ F3 ]. When you see "RAM-INIZIALIZZATA!", release.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
 $info=bottle10
 $mame
 INITIALIZATION:
+
 Press and hold Service 1 + 2 (Keys [ 0 ]+[ 9 ]), then press Reset [ F3 ]. When you see "RAM-INIZIALIZZATA!", release.
 
 SOURCE:
@@ -1740,9 +1467,10 @@ INITIALIZATION:
 You need to hold X when starting a game.
 
 $end
-$info=brkthrubl
+$info=brkthru
 $mame
 TIPS:
+
 Keep [ 1 ] & [ 2 ] pressed and hit [ F3 ] to enter test mode, then hit [ 5 ] to proceed through the tests.
 
 SOURCE:
@@ -1762,7 +1490,8 @@ It can be played by pressing 5 (insert coin), press 1 (start) for each player, p
 $end
 $info=bttf_a28,kiko_a10,lwar_a83,mnfb_c29,poto_a32,play_a24,robo_a34,ssvc_a26,simp_a27,tmac_a24,torp_e21
 $mame
-INITIALIZATION:
+TIPS:
+
 Here are the key codes to enable play:
 
 Game                                   NUM    Start game                 End ball
@@ -1787,43 +1516,7 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
-$info=bubblemj
-$mame
-INITIALIZATION:
-The first time you run the game, it will say '...BACKUP DATA FAILED'. Press [ F2 ] to enter test mode and exit to start.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=bubblemu
-$mame
-INITIALIZATION:
-The first time you run the game, it will say '...BACKUP DATA FAILED'. Press [ F2 ] to enter test mode and exit to start.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
 $info=bubbles
-$mame
-INITIALIZATION:
-When you see "FACTORY SETTINGS RESTORED", hit [ F2 ] (Service Mode).
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=bubblesp
-$mame
-INITIALIZATION:
-When you see "FACTORY SETTINGS RESTORED", hit [ F2 ] (Service Mode).
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=bubblesr
 $mame
 INITIALIZATION:
 When you see "FACTORY SETTINGS RESTORED", hit [ F2 ] (Service Mode).
@@ -1841,61 +1534,7 @@ SOURCE:
 mameinfo.dat
 
 $end
-$info=bubbletrj
-$mame
-INITIALIZATION:
-Hold Service 1 [ 9 ] then press [ F2 ] to enter Service Mode. Shoot at the targets it shows using the crosshair. After you've shot the target, press Service 1 [ 9 ] again to move onto the next one. Once you finished and have returned to the start again, hit [ F2 ].
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
 $info=bucky
-$mame
-INITIALIZATION:
-The first time you run the game, the EEPROM N2 shows as BAD in the RAM/ROM Check. Hold down the Test switch [ F2 ] and then also hit [ F3 ] to reset the machine, creating the EEPROM for you.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=buckyaa
-$mame
-INITIALIZATION:
-The first time you run the game, the EEPROM N2 shows as BAD in the RAM/ROM Check. Hold down the Test switch [ F2 ] and then also hit [ F3 ] to reset the machine, creating the EEPROM for you.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=buckyaab
-$mame
-INITIALIZATION:
-The first time you run the game, the EEPROM N2 shows as BAD in the RAM/ROM Check. Hold down the Test switch [ F2 ] and then also hit [ F3 ] to reset the machine, creating the EEPROM for you.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=buckyea
-$mame
-INITIALIZATION:
-The first time you run the game, the EEPROM N2 shows as BAD in the RAM/ROM Check. Hold down the Test switch [ F2 ] and then also hit [ F3 ] to reset the machine, creating the EEPROM for you.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=buckyjaa
-$mame
-INITIALIZATION:
-The first time you run the game, the EEPROM N2 shows as BAD in the RAM/ROM Check. Hold down the Test switch [ F2 ] and then also hit [ F3 ] to reset the machine, creating the EEPROM for you.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=buckyuab
 $mame
 INITIALIZATION:
 The first time you run the game, the EEPROM N2 shows as BAD in the RAM/ROM Check. Hold down the Test switch [ F2 ] and then also hit [ F3 ] to reset the machine, creating the EEPROM for you.
@@ -1909,24 +1548,6 @@ $mame
 INITIALIZATION:
 A boot disk must be present or you get a black unresponsive screen.
 Software-list items cpm30,wmate3,wmate4 will work. When asked to enter date and time, hit enter.
-
-$end
-$info=buraiken
-$mame
-INITIALIZATION:
-Press [ F2 ] to enter Test Mode. Hit [ ↑ Up-ARROW ] once which will bring you to the "Game Mode" selection then press [ Left CTRL ] (Button 1) to return to game.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=buraikenb
-$mame
-INITIALIZATION:
-Press [ F2 ] to enter Test Mode. Hit [ ↑ Up-ARROW ] once which will bring you to the "Game Mode" selection then press [ Left CTRL ] (Button 1) to return to game.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
 $info=busicom
@@ -1998,7 +1619,8 @@ Cassette LOAD: Press F1 2 aaaa DOWN bbbb UP
 $end
 $info=can09t
 $mame
-INITIALIZATION:
+TIPS:
+
 At start, press A to enter Basic
 
 Then, to save a tape: TSAVE, and to load a tape: TLOAD
@@ -2006,67 +1628,15 @@ Then, to save a tape: TSAVE, and to load a tape: TLOAD
 $end
 $info=canons80,canonts3
 $mame
-INITIALIZATION:
+TIPS:
+
 When the red warning screen appears, press enter a few times. Now you can type characters in.
 
 $end
 $info=captcomm
 $mame
 TIPS:
-With this and some other multiplayer games, the default number of players for a cabinet is two — even if the program supports more. You can usually set these settings with a dip switch assignment or adjusting an option in the Service Mode (Using [ F2 ] to enter and exit).
 
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=captcommb
-$mame
-TIPS:
-With this and some other multiplayer games, the default number of players for a cabinet is two — even if the program supports more. You can usually set these settings with a dip switch assignment or adjusting an option in the Service Mode (Using [ F2 ] to enter and exit).
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=captcommb2
-$mame
-TIPS:
-With this and some other multiplayer games, the default number of players for a cabinet is two — even if the program supports more. You can usually set these settings with a dip switch assignment or adjusting an option in the Service Mode (Using [ F2 ] to enter and exit).
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=captcommj
-$mame
-TIPS:
-With this and some other multiplayer games, the default number of players for a cabinet is two — even if the program supports more. You can usually set these settings with a dip switch assignment or adjusting an option in the Service Mode (Using [ F2 ] to enter and exit).
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=captcommjr1
-$mame
-TIPS:
-With this and some other multiplayer games, the default number of players for a cabinet is two — even if the program supports more. You can usually set these settings with a dip switch assignment or adjusting an option in the Service Mode (Using [ F2 ] to enter and exit).
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=captcommr1
-$mame
-TIPS:
-With this and some other multiplayer games, the default number of players for a cabinet is two — even if the program supports more. You can usually set these settings with a dip switch assignment or adjusting an option in the Service Mode (Using [ F2 ] to enter and exit).
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=captcommu
-$mame
-TIPS:
 With this and some other multiplayer games, the default number of players for a cabinet is two — even if the program supports more. You can usually set these settings with a dip switch assignment or adjusting an option in the Service Mode (Using [ F2 ] to enter and exit).
 
 SOURCE:
@@ -2077,15 +1647,6 @@ $info=carnevil
 $mame
 INITIALIZATION:
 To calibrate the gun use [ F2 ] to enter Service mode. When the "Carnevil Main Menu" comes up, use the volume keys [ - ] and [ = ] to navigate yourself to the second option "Gun Calibration", then press [ F2 ] to select. Follow the on-screen cues, aiming Left Top and Lower Left for each gun, shooting at the X targets. When complete, navigate to "Exit" in the menu, them press [ F2 ] to exit Service mode and return to the game.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=carnevil1
-$mame
-INITIALIZATION:
-To calibrate the gun use [ F2 ] to enter Service mode. When the "Carnevil Main Menu" comes up, use the volume keys [ - ] and [ = ] to navigate yourself to the second option "Gun Calibration", then press [ F2 ] to select. Follow the on-screen cues, aiming Left Top and Lower Left for each gun, shooting at the X targets. When complete, navigate to "Exit" in the menu, them press [ F2 ] to exit Service mode and return to the game
 
 SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
@@ -2108,9 +1669,10 @@ All commands to be in uppercase.
 Press Enter twice. You will see the Monitor logo. To get into the BASIC, enter GE400. To return to the monitor, use the QUIT command followed by pressing Enter twice. All monitor commands must be in uppercase. The only storage is paper-tape.
 
 $end
-$info=cb3f
+$info=ncb3
 $mame
 TIPS:
+
 If a hopper status error appear when the player try to take score, pressing Key Out [ W ] will discharge the credits won.
 
 SOURCE:
@@ -2126,45 +1688,10 @@ SOURCE:
 mameinfo.dat
 
 $end
-$info=cbravaa
-$mame
-INITIALIZATION:
-Insert coin [ 5 ] and keep pressed Aux Lever [ 2 ] and Lever [ 1 ] until the reels will start to roll.
-
-SOURCE:
-mameinfo.dat
-
-$end
-$info=cbravab
-$mame
-INITIALIZATION:
-Insert coin [ 5 ] and keep pressed Aux Lever [ 2 ] and Lever [ 1 ] until the reels will start to roll.
-
-SOURCE:
-mameinfo.dat
-
-$end
-$info=cbravac
-$mame
-INITIALIZATION:
-Insert coin [ 5 ] and keep pressed Aux Lever [ 2 ] and Lever [ 1 ] until the reels will start to roll.
-
-SOURCE:
-mameinfo.dat
-
-$end
-$info=cbravad
-$mame
-INITIALIZATION:
-Insert coin [ 5 ] and keep pressed Aux Lever [ 2 ] and Lever [ 1 ] until the reels will start to roll.
-
-SOURCE:
-mameinfo.dat
-
-$end
 $info=cc40
 $mame
-INITIALIZATION:
+TIPS:
+
 CC-40 is powered by 4 AA batteries. These will also save internal RAM, provided that the machine is turned off properly by pressing [OFF]. If a program is running, you may have to press [BREAK] before turning the CC-40 off. If RAM contents ends up dodgy somehow, just delete the nvram files.
 
 Officially, minimum total RAM size is 6KB. The system will still boot with less, but don't expect all software to work properly.
@@ -2292,15 +1819,6 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
-$info=champbwla
-$mame
-INITIALIZATION:
-The first time you run the game, an ERROR appears because the NVRAM needs initializing. To proceed, just press [ 1 ] (P1 Start).
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
 $info=chaos
 $mame
 INITIALIZATION:
@@ -2311,33 +1829,6 @@ These are:
 access, ask, ascdis, bpclr, bpset, close, control, copy, devfive, dir, end, exec, execute, fill, find, goto, if, input, let, list, load, lowercase, memdis, memset, open, port, read, reboot, runhex, run, save, type, typesl, verify.
 An example is: memdis 0 8 (memory dump starting at 0, show 8 lines)
 Don't try 'fill' - it fills all memory with zeroes, crashing the system.
-
-$end
-$info=chmpnum
-$mame
-INITIALIZATION:
-Press and hold Service 1 + 2 Keys [ 0 ]+[ 9 ], then press reset [ F3 ]. Now the NVRAM has been initialized.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=chmpnuma
-$mame
-INITIALIZATION:
-Press and hold Service 1 + 2 Keys [ 0 ]+[ 9 ], then press reset [ F3 ]. Now the NVRAM has been initialized.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=chsuper2
-$mame
-INITIALIZATION:
-Press and hold Service 1 + 2 Keys [ 0 ]+[ 9 ], then press reset [ F3 ]. Now the NVRAM has been initialized.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
 $info=chsuper3
@@ -2364,15 +1855,6 @@ SOURCE:
 https://www.progettosnaps.net/gameinit.dat
 
 $end
-$info=cmpacmana
-$mame
-TIPS:
-[ K ] is the hidden key to switch from one game to another.
-
-SOURCE:
-https://www.progettosnaps.net/gameinit.dat
-
-$end
 $info=cms6502,gs6502,gs6809,eurocom2
 $mame
 INITIALIZATION:
@@ -2382,33 +1864,17 @@ $end
 $info=cmtetris
 $mame
 TIPS:
+
 [ K ] is the hidden key to switch from one game to another.
 
 SOURCE:
 https://www.progettosnaps.net/gameinit.dat
 
 $end
-$info=cmtetrisc
-$mame
-TIPS:
-Need to press [ K ] / [ L ] to switch between games.
-
-SOURCE:
-mameinfo.dat
-
-$end
-$info=cmtetrisd
-$mame
-TIPS:
-Need to press [ K ] / [ L ] to switch between games.
-
-SOURCE:
-mameinfo.dat
-
-$end
 $info=coco
 $mame
-INITIALIZATION:
+TIPS:
+
 CASSETTES
 ---------
 
@@ -2573,33 +2039,6 @@ HEX-monitor
 C - start user program from address 0000
 
 $end
-$info=couple
-$mame
-INITIALIZATION:
-If you get a screen which says "PUSH ANY SWITCH", hold down arrow (default controller down) to access game.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=couplei
-$mame
-INITIALIZATION:
-If you get a screen which says "PUSH ANY SWITCH", hold down arrow (default controller down) to access game.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=couplep
-$mame
-INITIALIZATION:
-If you get a screen which says "PUSH ANY SWITCH", hold down arrow (default controller down) to access game.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
 $info=cp1
 $mame
 INITIALIZATION:
@@ -2609,9 +2048,10 @@ To load a tape: L
 Emulation is incomplete and the tapes are not compatible with real ones.
 
 $end
-$info=cpc464,cpc464p,gx4000,cpc6128p
+$info=cpc464,cpc464p,cpc6128p,gx4000
 $mame
-INITIALIZATION:
+TIPS:
+
 Amstrad
 =======
 
@@ -2657,18 +2097,10 @@ After the first block, hit Enter again.
 It will load and run.
 
 $end
-$info=cps3bs32
+$info=cps3boot
 $mame
 INITIALIZATION:
-There is no avoiding the NVRAM initialization process. In order to use any game that is not labeled as NO CD, the game must be allowed to create a complete and valid NVRAM file. This process takes nearly an hour and only needs to be done once. Once a proper NVRAM is created, the game will start quickly.
 
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=cps3bs32a
-$mame
-INITIALIZATION:
 There is no avoiding the NVRAM initialization process. In order to use any game that is not labeled as NO CD, the game must be allowed to create a complete and valid NVRAM file. This process takes nearly an hour and only needs to be done once. Once a proper NVRAM is created, the game will start quickly.
 
 SOURCE:
@@ -2721,18 +2153,10 @@ SOURCE:
 mamenfo.dat
 
 $end
-$info=crusnusa11
+$info=crusnusa
 $mame
 INITIALIZATION:
-The first time you run the game, it will say 'CALIBRATE CONTROLS...'. Follow the instructions and press [ F2 ] for the next screen. Then the game will automatically start.
 
-SOURCE:
-mameinfo.dat
-
-$end
-$info=crusnusa20
-$mame
-INITIALIZATION:
 The first time you run the game, it will say 'CALIBRATE CONTROLS...'. Follow the instructions and press [ F2 ] for the next screen. Then the game will automatically start.
 
 SOURCE:
@@ -2781,169 +2205,7 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
-$info=crzmon2_10
-$mame
-INITIALIZATION:
-To initialize the game, turn Service Mode ON [ F2 ] and press reset [ F3 ]. Move pointer to INIT with [ C ], then press [ 1 ]. Hold Cancel [ Z ] for 5 seconds while counter counts down. When complete, turn Service Mode OFF with [ F2 ] and restart or reboot.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=crzmon2_11
-$mame
-INITIALIZATION:
-To initialize the game, turn Service Mode ON [ F2 ] and press reset [ F3 ]. Move pointer to INIT with [ C ], then press [ 1 ]. Hold Cancel [ Z ] for 5 seconds while counter counts down. When complete, turn Service Mode OFF with [ F2 ] and restart or reboot.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=crzmon2_12
-$mame
-INITIALIZATION:
-To initialize the game, turn Service Mode ON [ F2 ] and press reset [ F3 ]. Move pointer to INIT with [ C ], then press [ 1 ]. Hold Cancel [ Z ] for 5 seconds while counter counts down. When complete, turn Service Mode OFF with [ F2 ] and restart or reboot.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=crzmon2_13
-$mame
-INITIALIZATION:
-To initialize the game, turn Service Mode ON [ F2 ] and press reset [ F3 ]. Move pointer to INIT with [ C ], then press [ 1 ]. Hold Cancel [ Z ] for 5 seconds while counter counts down. When complete, turn Service Mode OFF with [ F2 ] and restart or reboot.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=crzmon2_14
-$mame
-INITIALIZATION:
-To initialize the game, turn Service Mode ON [ F2 ] and press reset [ F3 ]. Move pointer to INIT with [ C ], then press [ 1 ]. Hold Cancel [ Z ] for 5 seconds while counter counts down. When complete, turn Service Mode OFF with [ F2 ] and restart or reboot.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=crzmon2_2
-$mame
-INITIALIZATION:
-To initialize the game, turn Service Mode ON [ F2 ] and press reset [ F3 ]. Move pointer to INIT with [ C ], then press [ 1 ]. Hold Cancel [ Z ] for 5 seconds while counter counts down. When complete, turn Service Mode OFF with [ F2 ] and restart or reboot.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=crzmon2_3
-$mame
-INITIALIZATION:
-To initialize the game, turn Service Mode ON [ F2 ] and press reset [ F3 ]. Move pointer to INIT with [ C ], then press [ 1 ]. Hold Cancel [ Z ] for 5 seconds while counter counts down. When complete, turn Service Mode OFF with [ F2 ] and restart or reboot.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=crzmon2_5
-$mame
-INITIALIZATION:
-To initialize the game, turn Service Mode ON [ F2 ] and press reset [ F3 ]. Move pointer to INIT with [ C ], then press [ 1 ]. Hold Cancel [ Z ] for 5 seconds while counter counts down. When complete, turn Service Mode OFF with [ F2 ] and restart or reboot.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=crzmon2_6
-$mame
-INITIALIZATION:
-To initialize the game, turn Service Mode ON [ F2 ] and press reset [ F3 ]. Move pointer to INIT with [ C ], then press [ 1 ]. Hold Cancel [ Z ] for 5 seconds while counter counts down. When complete, turn Service Mode OFF with [ F2 ] and restart or reboot.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=crzmon2_7
-$mame
-INITIALIZATION:
-To initialize the game, turn Service Mode ON [ F2 ] and press reset [ F3 ]. Move pointer to INIT with [ C ], then press [ 1 ]. Hold Cancel [ Z ] for 5 seconds while counter counts down. When complete, turn Service Mode OFF with [ F2 ] and restart or reboot.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=crzmon2_8
-$mame
-INITIALIZATION:
-To initialize the game, turn Service Mode ON [ F2 ] and press reset [ F3 ]. Move pointer to INIT with [ C ], then press [ 1 ]. Hold Cancel [ Z ] for 5 seconds while counter counts down. When complete, turn Service Mode OFF with [ F2 ] and restart or reboot.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=crzmon2_9
-$mame
-INITIALIZATION:
-To initialize the game, turn Service Mode ON [ F2 ] and press reset [ F3 ]. Move pointer to INIT with [ C ], then press [ 1 ]. Hold Cancel [ Z ] for 5 seconds while counter counts down. When complete, turn Service Mode OFF with [ F2 ] and restart or reboot.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
 $info=cuoreuno
-$mame
-INITIALIZATION:
-Press and hold Service [ 0 ]+[ 9 ], then press Reset [ F3 ]. When you see "RAM-INIZIALIZZATA!", release.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=cuoreunoa
-$mame
-INITIALIZATION:
-Press and hold Service [ 0 ]+[ 9 ], then press Reset [ F3 ]. When you see "RAM-INIZIALIZZATA!", release.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=cuoreunob
-$mame
-INITIALIZATION:
-Press and hold Service [ 0 ]+[ 9 ], then press Reset [ F3 ]. When you see "RAM-INIZIALIZZATA!", release.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=cuoreunoc
-$mame
-INITIALIZATION:
-Press and hold Service [ 0 ]+[ 9 ], then press Reset [ F3 ]. When you see "RAM-INIZIALIZZATA!", release.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=cuoreunod
-$mame
-INITIALIZATION:
-Press and hold Service [ 0 ]+[ 9 ], then press Reset [ F3 ]. When you see "RAM-INIZIALIZZATA!", release.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=cuoreunoe
-$mame
-INITIALIZATION:
-Press and hold Service [ 0 ]+[ 9 ], then press Reset [ F3 ]. When you see "RAM-INIZIALIZZATA!", release.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=cuoreunof
 $mame
 INITIALIZATION:
 Press and hold Service [ 0 ]+[ 9 ], then press Reset [ F3 ]. When you see "RAM-INIZIALIZZATA!", release.
@@ -2983,9 +2245,10 @@ No support for the common .app loose software. You're supposed to use a complex 
 Probably better off using the c4pc emulator, even though it's over 20 years old.
 
 $end
-$info=cybrcyccj
+$info=cybrcycc
 $mame
 TIPS:
+
 To enter service mode hold down Service [ 9 ] and tap Test [ F2 ].
 
 SOURCE:
@@ -3001,288 +2264,10 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
-$info=czmon_12
-$mame
-INITIALIZATION:
-To initialize the game, turn Service Mode ON [ F2 ] and press reset [ F3 ]. Move pointer to INIT with [ C ], then press [ 1 ]. Hold Cancel [ Z ] for 5 seconds while counter counts down. When complete, turn Service Mode OFF with [ F2 ] and restart or reboot.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
 $info=czmon_13
 $mame
 INITIALIZATION:
-To initialize the game, press [ F2 ] and using [ C ] to go on the "INIT" and pressing [ 1 ]. Now hold down the [ Z ] button for about 5 seconds. Now the game is initialized; press [ F2 ] and [ C ] until you are on the "EXIT" and confirm with [ 1 ].
 
-SOURCE:
-https://www.progettosnaps.net/gameinit.dat
-
-$end
-$info=czmon_15
-$mame
-INITIALIZATION:
-To initialize the game, press [ F2 ] and using [ C ] to go on the "INIT" and pressing [ 1 ]. Now hold down the [ Z ] button for about 5 seconds. Now the game is initialized; press [ F2 ] and [ C ] until you are on the "EXIT" and confirm with [ 1 ].
-
-SOURCE:
-https://www.progettosnaps.net/gameinit.dat
-
-$end
-$info=czmon_16
-$mame
-INITIALIZATION:
-To initialize the game, press [ F2 ] and using [ C ] to go on the "INIT" and pressing [ 1 ]. Now hold down the [ Z ] button for about 5 seconds. Now the game is initialized; press [ F2 ] and [ C ] until you are on the "EXIT" and confirm with [ 1 ].
-
-SOURCE:
-https://www.progettosnaps.net/gameinit.dat
-
-$end
-$info=czmon_17
-$mame
-INITIALIZATION:
-To initialize the game, turn Service Mode ON [ F2 ] and press reset [ F3 ]. Move pointer to INIT with [ C ], then press [ 1 ]. Hold Cancel [ Z ] for 5 seconds while counter counts down. When complete, turn Service Mode OFF with [ F2 ] and restart or reboot.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=czmon_18
-$mame
-INITIALIZATION:
-To initialize the game, turn Service Mode ON [ F2 ] and press reset [ F3 ]. Move pointer to INIT with [ C ], then press [ 1 ]. Hold Cancel [ Z ] for 5 seconds while counter counts down. When complete, turn Service Mode OFF with [ F2 ] and restart or reboot.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=czmon_19
-$mame
-INITIALIZATION:
-To initialize the game, turn Service Mode ON [ F2 ] and press reset [ F3 ]. Move pointer to INIT with [ C ], then press [ 1 ]. Hold Cancel [ Z ] for 5 seconds while counter counts down. When complete, turn Service Mode OFF with [ F2 ] and restart or reboot.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=czmon_2
-$mame
-INITIALIZATION:
-To initialize the game, turn Service Mode ON [ F2 ] and press reset [ F3 ]. Move pointer to INIT with [ C ], then press [ 1 ]. Hold Cancel [ Z ] for 5 seconds while counter counts down. When complete, turn Service Mode OFF with [ F2 ] and restart or reboot.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=czmon_20
-$mame
-INITIALIZATION:
-To initialize the game, turn Service Mode ON [ F2 ] and press reset [ F3 ]. Move pointer to INIT with [ C ], then press [ 1 ]. Hold Cancel [ Z ] for 5 seconds while counter counts down. When complete, turn Service Mode OFF with [ F2 ] and restart or reboot.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=czmon_21
-$mame
-INITIALIZATION:
-To initialize the game, turn Service Mode ON [ F2 ] and press reset [ F3 ]. Move pointer to INIT with [ C ], then press [ 1 ]. Hold Cancel [ Z ] for 5 seconds while counter counts down. When complete, turn Service Mode OFF with [ F2 ] and restart or reboot.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=czmon_22
-$mame
-INITIALIZATION:
-To initialize the game, turn Service Mode ON [ F2 ] and press reset [ F3 ]. Move pointer to INIT with [ C ], then press [ 1 ]. Hold Cancel [ Z ] for 5 seconds while counter counts down. When complete, turn Service Mode OFF with [ F2 ] and restart or reboot.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=czmon_23
-$mame
-INITIALIZATION:
-To initialize the game, turn Service Mode ON [ F2 ] and press reset [ F3 ]. Move pointer to INIT with [ C ], then press [ 1 ]. Hold Cancel [ Z ] for 5 seconds while counter counts down. When complete, turn Service Mode OFF with [ F2 ] and restart or reboot.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=czmon_24
-$mame
-INITIALIZATION:
-To initialize the game, turn Service Mode ON [ F2 ] and press reset [ F3 ]. Move pointer to INIT with [ C ], then press [ 1 ]. Hold Cancel [ Z ] for 5 seconds while counter counts down. When complete, turn Service Mode OFF with [ F2 ] and restart or reboot.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=czmon_25
-$mame
-INITIALIZATION:
-To initialize the game, turn Service Mode ON [ F2 ] and press reset [ F3 ]. Move pointer to INIT with [ C ], then press [ 1 ]. Hold Cancel [ Z ] for 5 seconds while counter counts down. When complete, turn Service Mode OFF with [ F2 ] and restart or reboot.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=czmon_3
-$mame
-INITIALIZATION:
-To initialize the game, turn Service Mode ON [ F2 ] and press reset [ F3 ]. Move pointer to INIT with [ C ], then press [ 1 ]. Hold Cancel [ Z ] for 5 seconds while counter counts down. When complete, turn Service Mode OFF with [ F2 ] and restart or reboot.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=czmon_4
-$mame
-INITIALIZATION:
-To initialize the game, turn Service Mode ON [ F2 ] and press reset [ F3 ]. Move pointer to INIT with [ C ], then press [ 1 ]. Hold Cancel [ Z ] for 5 seconds while counter counts down. When complete, turn Service Mode OFF with [ F2 ] and restart or reboot.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=czmon_5
-$mame
-INITIALIZATION:
-To initialize the game, press [ F2 ] and using [ C ] to go on the "INIT" and pressing [ 1 ]. Now hold down the [ Z ] button for about 5 seconds. Now the game is initialized; press [ F2 ] and [ C ] until you are on the "EXIT" and confirm with [ 1 ].
-
-SOURCE:
-https://www.progettosnaps.net/gameinit.dat
-
-$end
-$info=czmon_6
-$mame
-INITIALIZATION:
-To initialize the game, turn Service Mode ON [ F2 ] and press reset [ F3 ]. Move pointer to INIT with [ C ], then press [ 1 ]. Hold Cancel [ Z ] for 5 seconds while counter counts down. When complete, turn Service Mode OFF with [ F2 ] and restart or reboot.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=czmon_7
-$mame
-INITIALIZATION:
-To initialize the game, press [ F2 ] and using [ C ] to go on the "INIT" and pressing [ 1 ]. Now hold down the [ Z ] button for about 5 seconds. Now the game is initialized; press [ F2 ] and [ C ] until you are on the "EXIT" and confirm with [ 1 ].
-
-SOURCE:
-https://www.progettosnaps.net/gameinit.dat
-
-$end
-$info=czmon_7a
-$mame
-INITIALIZATION:
-To initialize the game, press [ F2 ] and using [ C ] to go on the "INIT" and pressing [ 1 ]. Now hold down the [ Z ] button for about 5 seconds. Now the game is initialized; press [ F2 ] and [ C ] until you are on the "EXIT" and confirm with [ 1 ].
-
-SOURCE:
-https://www.progettosnaps.net/gameinit.dat
-
-$end
-$info=czmon_7b
-$mame
-INITIALIZATION:
-To initialize the game, press [ F2 ] and using [ C ] to go on the "INIT" and pressing [ 1 ]. Now hold down the [ Z ] button for about 5 seconds. Now the game is initialized; press [ F2 ] and [ C ] until you are on the "EXIT" and confirm with [ 1 ].
-
-SOURCE:
-https://www.progettosnaps.net/gameinit.dat
-
-$end
-$info=czmon_8
-$mame
-INITIALIZATION:
-To initialize the game, press [ F2 ] and using [ C ] to go on the "INIT" and pressing [ 1 ]. Now hold down the [ Z ] button for about 5 seconds. Now the game is initialized; press [ F2 ] and [ C ] until you are on the "EXIT" and confirm with [ 1 ].
-
-SOURCE:
-https://www.progettosnaps.net/gameinit.dat
-
-$end
-$info=czmon_8a
-$mame
-INITIALIZATION:
-To initialize the game, press [ F2 ] and using [ C ] to go on the "INIT" and pressing [ 1 ]. Now hold down the [ Z ] button for about 5 seconds. Now the game is initialized; press [ F2 ] and [ C ] until you are on the "EXIT" and confirm with [ 1 ].
-
-SOURCE:
-https://www.progettosnaps.net/gameinit.dat
-
-$end
-$info=czmon_8b
-$mame
-INITIALIZATION:
-To initialize the game, press [ F2 ] and using [ C ] to go on the "INIT" and pressing [ 1 ]. Now hold down the [ Z ] button for about 5 seconds. Now the game is initialized; press [ F2 ] and [ C ] until you are on the "EXIT" and confirm with [ 1 ].
-
-SOURCE:
-https://www.progettosnaps.net/gameinit.dat
-
-$end
-$info=czmon_8c
-$mame
-INITIALIZATION:
-To initialize the game, press [ F2 ] and using [ C ] to go on the "INIT" and pressing [ 1 ]. Now hold down the [ Z ] button for about 5 seconds. Now the game is initialized; press [ F2 ] and [ C ] until you are on the "EXIT" and confirm with [ 1 ].
-
-SOURCE:
-https://www.progettosnaps.net/gameinit.dat
-
-$end
-$info=czmon_8d
-$mame
-INITIALIZATION:
-To initialize the game, press [ F2 ] and using [ C ] to go on the "INIT" and pressing [ 1 ]. Now hold down the [ Z ] button for about 5 seconds. Now the game is initialized; press [ F2 ] and [ C ] until you are on the "EXIT" and confirm with [ 1 ].
-
-SOURCE:
-https://www.progettosnaps.net/gameinit.dat
-
-$end
-$info=czmon_8e
-$mame
-INITIALIZATION:
-To initialize the game, press [ F2 ] and using [ C ] to go on the "INIT" and pressing [ 1 ]. Now hold down the [ Z ] button for about 5 seconds. Now the game is initialized; press [ F2 ] and [ C ] until you are on the "EXIT" and confirm with [ 1 ].
-
-SOURCE:
-https://www.progettosnaps.net/gameinit.dat
-
-$end
-$info=czmon_8f
-$mame
-INITIALIZATION:
-To initialize the game, press [ F2 ] and using [ C ] to go on the "INIT" and pressing [ 1 ]. Now hold down the [ Z ] button for about 5 seconds. Now the game is initialized; press [ F2 ] and [ C ] until you are on the "EXIT" and confirm with [ 1 ].
-
-SOURCE:
-https://www.progettosnaps.net/gameinit.dat
-
-$end
-$info=czmon_9
-$mame
-INITIALIZATION:
-To initialize the game, press [ F2 ] and using [ C ] to go on the "INIT" and pressing [ 1 ]. Now hold down the [ Z ] button for about 5 seconds. Now the game is initialized; press [ F2 ] and [ C ] until you are on the "EXIT" and confirm with [ 1 ].
-
-SOURCE:
-https://www.progettosnaps.net/gameinit.dat
-
-$end
-$info=czmon_9a
-$mame
-INITIALIZATION:
-To initialize the game, press [ F2 ] and using [ C ] to go on the "INIT" and pressing [ 1 ]. Now hold down the [ Z ] button for about 5 seconds. Now the game is initialized; press [ F2 ] and [ C ] until you are on the "EXIT" and confirm with [ 1 ].
-
-SOURCE:
-https://www.progettosnaps.net/gameinit.dat
-
-$end
-$info=czmon_9b
-$mame
-INITIALIZATION:
-To initialize the game, press [ F2 ] and using [ C ] to go on the "INIT" and pressing [ 1 ]. Now hold down the [ Z ] button for about 5 seconds. Now the game is initialized; press [ F2 ] and [ C ] until you are on the "EXIT" and confirm with [ 1 ].
-
-SOURCE:
-https://www.progettosnaps.net/gameinit.dat
-
-$end
-$info=czmon_9c
-$mame
-INITIALIZATION:
 To initialize the game, press [ F2 ] and using [ C ] to go on the "INIT" and pressing [ 1 ]. Now hold down the [ Z ] button for about 5 seconds. Now the game is initialized; press [ F2 ] and [ C ] until you are on the "EXIT" and confirm with [ 1 ].
 
 SOURCE:
