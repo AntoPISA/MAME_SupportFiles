@@ -1,5 +1,6 @@
 ﻿# MAME GAMEINIT.DAT v0.272   Latest Update: December 18, 2024
 #                         Project started: September 10, 2015
+#          Merged to the file startup.dat:  December 17, 2024
 #
 # File designed and maintained by AntoPISA and Robbbert
 #
@@ -28,7 +29,8 @@ https://www.progettosnaps.net/gameinit.dat
 $end
 $info=4004clk
 $mame
-INITIALIZATION:
+TIPS:
+
 4004 Nixie Clock
 
 When switched on, the display is blank with 4 flashing dots. Press 1 to start the clock. The clock has 4 displays
@@ -48,15 +50,7 @@ $end
 $info=4roses
 $mame
 INITIALIZATION:
-Turn on the machine getting STATISTIC & MANAGEMENT buttons pressed. STATISTICS == Show credits in/out. To cancel statistics press CANCEL for some seconds. MANAGEMENT == Settings. The following menu will show up: HOLD3 == Verify In/Out, even when the stats were cleared. HOLD2 + HOLD4 == Modify maximum bet, pressing HOLD1. Modify minimum bet, pressing HOLD2. Modify percentage (1, 2, 3, 4), pressing HOLD3. Press START to exit from programming mode.
 
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=4rosesa
-$mame
-INITIALIZATION:
 Turn on the machine getting STATISTIC & MANAGEMENT buttons pressed. STATISTICS == Show credits in/out. To cancel statistics press CANCEL for some seconds. MANAGEMENT == Settings. The following menu will show up: HOLD3 == Verify In/Out, even when the stats were cleared. HOLD2 + HOLD4 == Modify maximum bet, pressing HOLD1. Modify minimum bet, pressing HOLD2. Modify percentage (1, 2, 3, 4), pressing HOLD3. Press START to exit from programming mode.
 
 SOURCE:
@@ -65,7 +59,8 @@ http://wiki.mamedev.org/index.php/FAQ:Games
 $end
 $info=68ksbc
 $mame
-INITIALIZATION:
+TIPS:
+
 This computer has no sound, and no facility for saving or loading programs.
 
 When started, press ? key for a list of commands.
@@ -73,7 +68,8 @@ When started, press ? key for a list of commands.
 $end
 $info=990189v
 $mame
-INITIALIZATION:
+TIPS:
+
 To save a tape: SAVE
 
 To load a tape: LOAD
@@ -91,7 +87,8 @@ Bug - The input buffer of character segments isn't fully cleared. If you press S
 $end
 $info=a2600
 $mame
-INITIALIZATION:
+TIPS:
+
 ATARI 2600 (VCS)
 ================
 If you want to load cassettes, you need to attach the "scharger" software item.
@@ -104,7 +101,8 @@ Once done, press PLAY when asked.
 $end
 $info=a5105
 $mame
-INITIALIZATION:
+TIPS:
+
 ROBOTRON A5105
 ==============
 
@@ -114,9 +112,10 @@ CSAVE"x" - save a tape
 but, it doesn't work.
 
 $end
-$info=aa500,aa310,am4,aa680,aa5000,aa3010
+$info=aa3010,aa310,aa500,aa5000,aa680,am4
 $mame
-INITIALIZATION:
+TIPS:
+
 * Notes:
 * - Hold DEL down during boot reset the CMOS memory to the default values.
 * - default NVRAM is plainly wrong. Use the status/configure commands to set up properly
@@ -130,7 +129,8 @@ INITIALIZATION:
 $end
 $info=abc80,abc800c,abc802,abc806
 $mame
-INITIALIZATION:
+TIPS:
+
 LUXOR ABC-80 series
 ===================
 LOAD CAS:   to load a tape
@@ -143,7 +143,8 @@ Cassette works in ABC80 only
 $end
 $info=ac1
 $mame
-INITIALIZATION:
+TIPS:
+
 The Z command will get you into BASIC, and BYE command takes you back to the Monitor.
 
 S xxxx yyyy = to save memory to tape.
@@ -154,7 +155,8 @@ Since there is no motor control, type in L then mount the tape.
 $end
 $info=acrnsys1
 $mame
-INITIALIZATION:
+TIPS:
+
 ACORN SYSTEM 1
 ==============
 -   (modify) Memory display and modification    l   (load) Reads a block of bytes from tape
@@ -185,7 +187,8 @@ Note that left-most digit is not wired up, and therefore will always be blank.
 $end
 $info=acrnsys2,acrnsys3_6809
 $mame
-INITIALIZATION:
+TIPS:
+
 LOAD"x"                to load a tape
 SAVE"x" a b [c]        to save a region of memory (a to b) with optional go address c
 
@@ -194,7 +197,8 @@ Doesn't work.
 $end
 $info=adam
 $mame
-INITIALIZATION:
+TIPS:
+
 COLECO ADAM
 ===========
 
@@ -204,6 +208,7 @@ $end
 $info=aftor
 $mame
 INITIALIZATION:
+
 Press num-0 to enter service/selftest. Press 1 to step through the tests.
 When you reach the audit stages, press 6 to advance and 5 to clear.
 In the switch test, it will report any closed dip as a failure. You can
@@ -216,7 +221,8 @@ To activate the end-of-ball, hold down X then tap END.
 $end
 $info=agat7
 $mame
-INITIALIZATION:
+TIPS:
+
 Press Ctrl F10 to get a prompt.
 R  to load a tape
 W  to save.
@@ -224,15 +230,17 @@ W  to save.
 $end
 $info=agat9
 $mame
-INITIALIZATION:
+TIPS:
+
 Press Ctrl F10 to get a prompt.
 
 Tape commands are unknown.
 
 $end
-$info=agsoccer,wrldtour,usafootb,usafootf,mystcast,pstlpkr,punchy,dinoeggs
+$info=agsoccer,dinoeggs,mystcast,pstlpkr,punchy,usafootb,usafootf,wrldtour
 $mame
-INITIALIZATION:
+TIPS:
+
 Here are the key codes to enable play:
 
 Game                                     NUM    Start game                          End ball
@@ -248,7 +256,8 @@ USA Football (redemption)                 11    Hold A, hit 1                   
 $end
 $info=aim65
 $mame
-INITIALIZATION:
+TIPS:
+
 ROCKWELL AIM-65
 ===============
 If you want to use the TTY, you must do these things:
@@ -264,7 +273,8 @@ L to load a tape, and D to save. Answer the questions: OUT=T, FNAME=1, T=1, MORE
 $end
 $info=al8800bt
 $mame
-INITIALIZATION:
+TIPS:
+
 ALTAIR
 ======
 
@@ -282,7 +292,8 @@ M - Modify memory
 $end
 $info=allied
 $mame
-INITIALIZATION:
+TIPS:
+
 Hold down X while inserting a coin.
 At the start of each ball, the display will be flashing. You need to
 hit Z, and then you can get a score. When the ball indicator goes out,
@@ -294,6 +305,7 @@ $end
 $info=alphahob
 $mame
 TIPS:
+
 Press [ Alt ] to select game "AlphaFighter" or "Head On".
 
 SOURCE:
@@ -302,7 +314,8 @@ mameinfo.dat
 $end
 $info=alphatro
 $mame
-INITIALIZATION:
+TIPS:
+
 ALPHATRONIC PC
 ==============
 
@@ -312,27 +325,26 @@ CSAVE"x" to save
 $end
 $info=altos486
 $mame
-INITIALIZATION:
+TIPS:
+
 ALTOS 486
 =========
 
-
-
 No software list.
-
-
 Does nothing with my boot disk.
 
 $end
 $info=altos5
 $mame
-INITIALIZATION:
+TIPS:
+
 Only the diag disk works now. A regression broke booting of the CP/M disks.
 
 $end
 $info=altos8600
 $mame
-INITIALIZATION:
+TIPS:
+
 ALTOS 8600
 ==========
 
@@ -346,7 +358,8 @@ The DIAG disk works.
 $end
 $info=amico2k
 $mame
-INITIALIZATION:
+TIPS:
+
 Pasting:
 0-F : as is
 ^ (inc) : ^
@@ -357,51 +370,6 @@ GO : X
 Test Paste:
 =11^22^33^44^55^66^77^88^99^-0000
 Now press up-arrow to confirm the data has been entered.
-
-$end
-$info=ampkr228
-$mame
-INITIALIZATION:
-Turn ON Operator Key [ 9 ]. Hit the DOOR key [ O ]. After a moment, the Operator Mode will appear. Turn OFF the Operator Key [ 9 ] to allow play, resetting with [ F3 ] if needed.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=ampkr2b1
-$mame
-INITIALIZATION:
-Turn ON Operator Key [ 9 ]. Hit the DOOR key [ O ]. After a moment, the Operator Mode will appear. Turn OFF the Operator Key [ 9 ] to allow play, resetting with [ F3 ] if needed.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=ampkr2b2
-$mame
-INITIALIZATION:
-Turn ON Operator Key [ 9 ]. Hit the DOOR key [ O ]. After a moment, the Operator Mode will appear. Turn OFF the Operator Key [ 9 ] to allow play, resetting with [ F3 ] if needed.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=ampkr2b3
-$mame
-INITIALIZATION:
-Turn ON Operator Key [ 9 ]. Hit the DOOR key [ O ]. After a moment, the Operator Mode will appear. Turn OFF the Operator Key [ 9 ] to allow play, resetting with [ F3 ] if needed.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=ampkr2b4
-$mame
-INITIALIZATION:
-Turn ON Operator Key [ 9 ]. Hit the DOOR key [ O ]. After a moment, the Operator Mode will appear. Turn OFF the Operator Key [ 9 ] to allow play, resetting with [ F3 ] if needed.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
 $info=ampkr2jsp
@@ -431,18 +399,10 @@ SOURCE:
 mameinfo.dat
 
 $end
-$info=ampkr95
-$mame
-INITIALIZATION:
-Turn ON Operator Key [ 9 ]. Hit the DOOR key [ O ]. After a moment, the Operator Mode will appear. Turn OFF the Operator Key [ 9 ] to allow play, resetting with [ F3 ] if needed.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
 $info=ampoker2
 $mame
 INITIALIZATION:
+
 Turn ON Operator Key [ 9 ]. Hit the DOOR key [ O ]. After a moment, the Operator Mode will appear. Turn OFF the Operator Key [ 9 ] to allow play, resetting with [ F3 ] if needed.
 
 SOURCE:
@@ -451,7 +411,8 @@ http://wiki.mamedev.org/index.php/FAQ:Games
 $end
 $info=amu880
 $mame
-INITIALIZATION:
+TIPS:
+
 Cassette considerations
 
 - It operates at 4883 baud but may not be fully compatible with real hardware. A partial translation of the available text seems to indicate an overcomplicated and unreliable interface. The one implemented is 100% reliable at the same speed. Unable to locate any real recordings to compare against.
@@ -465,25 +426,8 @@ Cassette considerations
 $end
 $info=amuse
 $mame
-INITIALIZATION:
-The first time you run the game, an ERROR appears because the NVRAM needs initializing. Press [ F2 ] + [ F3 ] to enter TEST MODE. Exit with [ F2 ].
+TIPS:
 
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=amuse1
-$mame
-INITIALIZATION:
-The first time you run the game, an ERROR appears because the NVRAM needs initializing. Press [ F2 ] + [ F3 ] to enter TEST MODE. Exit with [ F2 ].
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=amuse1a
-$mame
-INITIALIZATION:
 The first time you run the game, an ERROR appears because the NVRAM needs initializing. Press [ F2 ] + [ F3 ] to enter TEST MODE. Exit with [ F2 ].
 
 SOURCE:
@@ -492,7 +436,8 @@ http://wiki.mamedev.org/index.php/FAQ:Games
 $end
 $info=amust
 $mame
-INITIALIZATION:
+TIPS:
+
 Monitor Commands:
 -----------------
 B = Boot from floppy
@@ -503,6 +448,7 @@ $end
 $info=animalc
 $mame
 INITIALIZATION:
+
 Hold [ F2 ] to enter Service Mode while booting or after resetting. Use [ F2 ] to select the option "3. Set Mode", then hit CTRL. Using [ F2 ], keep scrolling the options until you hit "RAM CLEAR". Hold [ CTRL ] key down until you see the screen display "OK". Press [ F3 ] to reboot.
 
 SOURCE:
@@ -745,13 +691,13 @@ SOURCE:
 aristmk4.cpp mame driver
 
 $end
-$info=arizona,atla_ltd,discodan,hustlerp,marqueen,kkongltd,vikngkng,force,bhol_ltd,spcpoker,hhouse
+$info=arizona,atla_ltd,bhol_ltd,discodan,force,hhouse,hustlerp,kkongltd,marqueen,spcpoker,vikngkng
 $mame
 INITIALIZATION:
 Status:
-- All games can accept coins and start up
+- All games can accept coins and start up.
 - System 3 2-players games are playable.
-- hhouse, press 2 to start
+- hhouse, press 2 to start.
 
 System 3:
 - Games are 2 players, except zephy and cowboy which have 3.
@@ -842,22 +788,14 @@ http://wiki.mamedev.org/index.php/FAQ:Games
 $end
 $info=atarians,aavenger,midearth,specrider,time2000
 $mame
-INITIALIZATION:
+TIPS:
+
 Outhole for each game:
 - spcrider: M  (solenoid 5)
 - midearth: M  (solenoid 1)
 - atarians: G  (solenoid unknown)
 - time2000: J  (solenoid 12)
 - aavenger: X  (solenoid 4)
-
-$end
-$info=atetrisb5
-$mame
-INITIALIZATION:
-To start a game, press the ROTATE button.
-
-SOURCE:
-mameinfo.dat
 
 $end
 $info=athenab
@@ -1722,9 +1660,10 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
-$info=bountyh,triplay,rock,tagteamp,raven,hlywoodh,genesisp,amazonh2,sprbreak,goldwing,mntecrlo,arena,victoryp,diamondp,txsector,bighouse,robowars,excalibr,badgirls,hotshots,bonebstr,nmoves,amazonh3,mmaster,topsound
+$info=amazonh2,amazonh3,arena,badgirls,bighouse,bonebstr,bountyh,diamondp,excalibr,genesisp,goldwing,hlywoodh,hotshots,mmaster,mntecrlo,nmoves,raven,robowars,rock,sprbreak,tagteamp,topsound,triplay,txsector,victoryp
 $mame
-INITIALIZATION:
+TIPS:
+
 The test rom says U4 is faulty. Using MOS6532 fixes this error, but the games ramdomly slam-tilt instead.
 
 When asked to enter your initials, use the Advance buttons to select a letter, and the Start button to enter it.
@@ -1766,9 +1705,10 @@ Status:
 - bighouse: after game ends, the display freezes. Game keeps running though.
 
 $end
-$info=br_l4,drac_l1,cftbl_l4,dw_l2,ft_l5,tafg_lx3,gw_l5,tz_92,ww_l5,strik_l4,lc_l1,rush
+$info=br_l4,cftbl_l4,drac_l1,dw_l2,ft_l5,gw_l5,lc_l1,rush,strik_l4,tafg_lx3,tz_92,ww_l5
 $mame
 INITIALIZATION:
+
 Since NVRAM is not working, when it starts factory settings will be applied.
 Press F3, and wait for the game attract mode to commence.
 
@@ -2531,7 +2471,8 @@ http://wiki.mamedev.org/index.php/FAQ:Games
 $end
 $info=comx35
 $mame
-INITIALIZATION:
+TIPS:
+
 To save a tape: PSAVE
 To load a tape: TLOAD
 
@@ -3495,7 +3436,8 @@ mameinfo.dat
 $end
 $info=db32016
 $mame
-INITIALIZATION:
+TIPS:
+
 At start, issue the IT command to initialise the system correctly.
 
 To save a tape: TW
@@ -3505,96 +3447,7 @@ $end
 $info=ddragon
 $mame
 TIPS:
-Although the FPS counter shows 100% speed for these games, they may appear choppy. This is true to the original — even the original hardware of these games struggled with them and therefore the choppiness is actually accurate emulation of these games. You may be able to get rid of it in some cases by using the -cheat parameter, hitting the tilde key [ ~ ] and browsing the on screen menu until you find "CPU overclocking". This will run the emulated CPU faster which may or may not fix it. It may also cause the emulation to have errors, so don't bug people if overclocking screws up a game.
 
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=ddragon6809
-$mame
-TIPS:
-Although the FPS counter shows 100% speed for these games, they may appear choppy. This is true to the original — even the original hardware of these games struggled with them and therefore the choppiness is actually accurate emulation of these games. You may be able to get rid of it in some cases by using the -cheat parameter, hitting the tilde key [ ~ ] and browsing the on screen menu until you find "CPU overclocking". This will run the emulated CPU faster which may or may not fix it. It may also cause the emulation to have errors, so don't bug people if overclocking screws up a game.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=ddragon6809a
-$mame
-TIPS:
-Although the FPS counter shows 100% speed for these games, they may appear choppy. This is true to the original — even the original hardware of these games struggled with them and therefore the choppiness is actually accurate emulation of these games. You may be able to get rid of it in some cases by using the -cheat parameter, hitting the tilde key [ ~ ] and browsing the on screen menu until you find "CPU overclocking". This will run the emulated CPU faster which may or may not fix it. It may also cause the emulation to have errors, so don't bug people if overclocking screws up a game.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=ddragonb
-$mame
-TIPS:
-Although the FPS counter shows 100% speed for these games, they may appear choppy. This is true to the original — even the original hardware of these games struggled with them and therefore the choppiness is actually accurate emulation of these games. You may be able to get rid of it in some cases by using the -cheat parameter, hitting the tilde key [ ~ ] and browsing the on screen menu until you find "CPU overclocking". This will run the emulated CPU faster which may or may not fix it. It may also cause the emulation to have errors, so don't bug people if overclocking screws up a game.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=ddragonb2
-$mame
-TIPS:
-Although the FPS counter shows 100% speed for these games, they may appear choppy. This is true to the original — even the original hardware of these games struggled with them and therefore the choppiness is actually accurate emulation of these games. You may be able to get rid of it in some cases by using the -cheat parameter, hitting the tilde key [ ~ ] and browsing the on screen menu until you find "CPU overclocking". This will run the emulated CPU faster which may or may not fix it. It may also cause the emulation to have errors, so don't bug people if overclocking screws up a game.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=ddragonba
-$mame
-TIPS:
-Although the FPS counter shows 100% speed for these games, they may appear choppy. This is true to the original — even the original hardware of these games struggled with them and therefore the choppiness is actually accurate emulation of these games. You may be able to get rid of it in some cases by using the -cheat parameter, hitting the tilde key [ ~ ] and browsing the on screen menu until you find "CPU overclocking". This will run the emulated CPU faster which may or may not fix it. It may also cause the emulation to have errors, so don't bug people if overclocking screws up a game.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=ddragonu
-$mame
-TIPS:
-Although the FPS counter shows 100% speed for these games, they may appear choppy. This is true to the original — even the original hardware of these games struggled with them and therefore the choppiness is actually accurate emulation of these games. You may be able to get rid of it in some cases by using the -cheat parameter, hitting the tilde key [ ~ ] and browsing the on screen menu until you find "CPU overclocking". This will run the emulated CPU faster which may or may not fix it. It may also cause the emulation to have errors, so don't bug people if overclocking screws up a game.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=ddragonua
-$mame
-TIPS:
-Although the FPS counter shows 100% speed for these games, they may appear choppy. This is true to the original — even the original hardware of these games struggled with them and therefore the choppiness is actually accurate emulation of these games. You may be able to get rid of it in some cases by using the -cheat parameter, hitting the tilde key [ ~ ] and browsing the on screen menu until you find "CPU overclocking". This will run the emulated CPU faster which may or may not fix it. It may also cause the emulation to have errors, so don't bug people if overclocking screws up a game.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=ddragonub
-$mame
-TIPS:
-Although the FPS counter shows 100% speed for these games, they may appear choppy. This is true to the original — even the original hardware of these games struggled with them and therefore the choppiness is actually accurate emulation of these games. You may be able to get rid of it in some cases by using the -cheat parameter, hitting the tilde key [ ~ ] and browsing the on screen menu until you find "CPU overclocking". This will run the emulated CPU faster which may or may not fix it. It may also cause the emulation to have errors, so don't bug people if overclocking screws up a game.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=ddragonw
-$mame
-TIPS:
-Although the FPS counter shows 100% speed for these games, they may appear choppy. This is true to the original — even the original hardware of these games struggled with them and therefore the choppiness is actually accurate emulation of these games. You may be able to get rid of it in some cases by using the -cheat parameter, hitting the tilde key [ ~ ] and browsing the on screen menu until you find "CPU overclocking". This will run the emulated CPU faster which may or may not fix it. It may also cause the emulation to have errors, so don't bug people if overclocking screws up a game.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=ddragonw1
-$mame
-TIPS:
 Although the FPS counter shows 100% speed for these games, they may appear choppy. This is true to the original — even the original hardware of these games struggled with them and therefore the choppiness is actually accurate emulation of these games. You may be able to get rid of it in some cases by using the -cheat parameter, hitting the tilde key [ ~ ] and browsing the on screen menu until you find "CPU overclocking". This will run the emulated CPU faster which may or may not fix it. It may also cause the emulation to have errors, so don't bug people if overclocking screws up a game.
 
 SOURCE:
@@ -3604,6 +3457,7 @@ $end
 $info=ddrkara
 $mame
 INITIALIZATION:
+
 Press [ F2 ], wait for the FLASH-ROM to initialize, press [ F2 ] again and start playing.
 
 SOURCE:
@@ -3613,6 +3467,7 @@ $end
 $info=ddrusa
 $mame
 TIPS:
+
 With this and some other multiplayer games, the default number of players for a cabinet is two — even if the program supports more. You can usually set these settings with a dip switch assignment or adjusting an option in the Service Mode (Using [ F2 ] to enter and exit).
 
 SOURCE:
@@ -4265,9 +4120,10 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
-$info=elecyoyo2
+$info=elecyoyoa
 $mame
 INITIALIZATION:
+
 You can use [ F1 ] to proceed through all the configuration screens, stopping when you see the title screen. Setup is complete.
 
 SOURCE:
@@ -5599,7 +5455,8 @@ ST - save tape binary file - no filename - example: ST start-address end-address
 $end
 $info=fp200,pb1000
 $mame
-INITIALIZATION:
+TIPS:
+
 CASIO FP-200
 ============
 
@@ -8916,7 +8773,7 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
-$info=kram2
+$info=krama
 $mame
 INITIALIZATION:
 You can use [ F1 ] to proceed through all the configuration screens, stopping when you see the title screen. Setup is complete.
@@ -8925,7 +8782,7 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
-$info=kram3
+$info=krame
 $mame
 INITIALIZATION:
 You can use [ F1 ] to proceed through all the configuration screens, stopping when you see the title screen. Setup is complete.
@@ -19130,9 +18987,10 @@ SOURCE:
 mameinfo.dat
 
 $end
-$info=smbp,smbmush,cueball,sfightii,teedoffp,gladiatp,wipeout,rescu911,wsoccer,stargatp,shaqattq,freddy,bighurt,waterwld,snspares,andretti,barbwire,brooks
+$info=andretti,barbwire,bighurt,brooks,cueball,freddy,gladiatp,rescu911,sfightii,shaqattq,smbmush,smbp,snspares,stargatp,teedoffp,waterwld,wipeout,wsoccer,
 $mame
 INITIALIZATION:
+
 Setting up must be done before you can play. Press NUM-0, press Left Flipper 3 times, press Right
 Flipper, Press 1 to accept Factory Settings, press 1, quit and restart.
 
@@ -19460,9 +19318,10 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
-$info=spain82,megaaton,nautilus,theraid,ufo_x,kz26,rock2500,starfirp,trailer,fldragon,phntnshp,sklflite,flashman,ridersrf,ironball,terrlake,msdisco
+$info=flashman,fldragon,ironball,kz26,megaaton,msdisco,nautilus,phntnshp,ridersrf,rock2500,sklflite,spain82,starfirp,terrlake,theraid,trailer,ufo_x
 $mame
 INITIALIZATION:
+
 First time:
 - The default settings are fine, so start with a clean slate
 - Wait for it to say No Ball, then hold down X.
@@ -22284,13 +22143,18 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
-$info=zookeep,zookeep2,zookeep3,zookeepbl
+$info=zookeep
 $mame
 INITIALIZATION:
-You can use [ F1 ] to proceed through all the configuration screens, stopping when you see the title screen. Setup is complete.
+
+- The first time you run the game, it will ask the location. You can change the name using [ F5 ]/[ F6 ] and [ F2 ], then [ F1 ] to proceed through all the configuration screens, or just reset [ F3 ].
+
+- Keep [ F2 ] pressed to enter test mode, then F1 to advance to the next test.
+
+- There are no dipswitches, press F1 to enter the service mode, then [ F1 ]= Next screen, [ F2 ]= Next line, [ F5 ]= Up and [ F6 ]= Down.
 
 SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
+mameinfo.dat
 
 $end
 $info=zsbc3
@@ -22349,4 +22213,4 @@ Shift-0 = backspace
 $end
 #
 #
-# © 2015/2024  AntoPIS and Robbbert
+# © 2015/2024  AntoPISA and Robbbert
