@@ -1,4 +1,4 @@
-﻿# MAME GAMEINIT.DAT v0.272   Latest Update: December 18, 2024
+﻿# MAME GAMEINIT.DAT v0.272   Latest Update: December 19, 2024
 #                         Project started: September 10, 2015
 #          Merged to the file startup.dat:  December 17, 2024
 #
@@ -438,8 +438,10 @@ $end
 $info=apfimag
 $mame
 INITIALIZATION:
+
 APF IMAGINATION MACHINE
 =======================
+
 The monitor
 -----------
 From Basic, do CALL 28672 to enter the monitor - you get a * prompt. Commands:
@@ -459,6 +461,12 @@ A tape can only be successfully loaded if the machine it was recorded on has the
 Even then, tape loading is unreliable and there's no error if things go wrong.
 
 $end
+$info=aplscar,atc1425a,cdibios,cjddzsp,dragntr,dragntr2,gj4000,gjmovie,gjrstar,gjrstar3,gln,gls,goldnjkra,hmxpro,imac,ktx20t02,lhfy,megapc,megapcpl,mghammer,mj1,nextc,ochipvlp,parcade,pcd4nl,pcompelr,pitagjr,scumimon,sm48650usc,tagalaga,taspinv,taturtf,tenkai2b,thinkpad850,vbaby,vp415,vs29815,vs29915,vs29915a,vs29915j,wccf1dup,wccf2chk,wto2840sp
+$mame
+TIPS:
+
+This system doesn't work and may crash the emulator. Don't run it.
+$end
 $info=apogee
 $mame
 INITIALIZATION:
@@ -477,7 +485,7 @@ To save a tape: Oa,b  (where a = start address, b = end address)
 To load a tape: I then Play then G
 
 $end
-$info=apollo13,austin,ctcheese,elvisp,gldneye,godzillp,goldcue,gprix,gprixf,gprixg,gprixi,gprixl,harl_a13,harl_a40,hirolcas,id4,jplstw22,lostspc,lotr,monopolp,monopred,nascar,nfl,playboys,rctycn,ripleys,shrkysht,simpprty,sopranos,spacejam,sprk_103,startrp,strikext,swtril43,term3,titanic,twst_405,viprsega,wackadoo,xfilesp
+$info=apollo13,austin,ctchzdlx,elvisp,gldneye,godzillp,goldcue,gprix,gprixf,gprixg,gprixi,gprixl,harl_a13,harl_a40,hirolcas,id4,jplstw22,lostspc,lotr,monopolp,monopred,nascar,nfl,playboys,rctycn,ripleys,shrkysht,simpprty,sopranos,spacejam,sprk_103,startrp,strikext,swtril43,term3,titanic,twst_405,viprsega,wackadoo,xfilesp
 $mame
 TIPS:
 
@@ -647,7 +655,7 @@ SOURCE:
 aristmk4.cpp mame driver
 
 $end
-$info=arizona,atla_ltd,bhol_ltd,discodan,force,hhouse,hustlerp,kkongltd,marqueen,spcpoker,vikngkng
+$info=arizona,atla_ltd,bhol_ltd,discodan,force,hhotel,hustlerp,kkongltd,marqueen,spcpoker,vikngkng
 $mame
 INITIALIZATION:
 Status:
@@ -688,7 +696,7 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
-$info=aavenger,atarians,midearth,specrider,time2000
+$info=aavenger,atarians,midearth,spcrider,time2000
 $mame
 TIPS:
 
@@ -765,6 +773,74 @@ Follow the setup prompts until done.
 
 The inputs stop working at times, making it quite difficult to use. The crosshair still moves though, even when the machine appears to be frozen.
 
+$end
+$info=ax150,ax170,ax200,ax230,ax350ii,ax370,ax500,bruc100,canonv20,canonv8,cf1200,cf2000,cf2700,cf2700uk,cf3000,cf3300,cpc330k,cpc51,cpc88,cx5f,cx5miib,cx5mu,cx7m128,dgnmsx,dpc200,dpc200e,expert13,expert20,expertdp,expertpl,fdpc200,fmx,fpc500,fpc900,fs1300,fs4000,fs4500,fs4600f,fs4700f,fs5000f2,fs5500f2,fspc800,gfc1080,gfc1080a,gsfc200,gsfc80u,hb101p,hb10p,hb201p,hb20p,hb501p,hb55p,hb701fd,hb75p,hb8000,hc7,hx10,hx20,hx21,hx22,hx32,hx51i,jvchc7gb,mbh1,mbh2,mbh25,mbh50,ml8000,mlf110,mlf120,mlf48,mlf80,mlfx1,mpc10,mpc100,mpc200,mpc64,mx15,mx64,nms801,perfect1,phc2,phc28,phc28l,phc28s,piopx7,pv16,spc800,svi728,svi738,sx100,vg8010,vg802020,yc64,yis503
+$mame
+TIPS:
+
+MSX usage
+
+
+Need to use the LEFT shift key
+
+
+
+Cartridge
+---------
+Runs by itself
+
+
+Floppy Disk (use hbf1xdj)
+-----------
+Runs by itself
+
+
+
+
+Cassette (use vg8010)
+--------
+RUN "CAS:
+
+or
+
+CLOAD
+
+or
+
+BLOAD "CAS:" ,R
+$end
+$info=canonv25,canonv30f,cpc300,cpc300e,cpc400,cpc400s,cpc61,cpg120,expert3i,expert3t,expertac,expertdx,fsa1a,fsa1f,fsa1fm,fsa1fx,fsa1gt,fsa1mk2,fsa1st,fsa1wsx,fsa1wxa,fstm1,hbf1xd,hbf1xdj,hbf1xv,hbf5,hbf500p,hbf700p,hbf900a,hbf9p,hbg900p,hotbit20,hx23f,hx34,kmc5000,mbh3,mbh70,mlg1,mlg10,mlg3,mlg30,mlg30_2,mpc2300,mpc2500f,mpc25fd,mpc25fs,mpc27,nms8220,nms8245,nms8255,nms8260,nms8280,phc23,phc23jb,phc35j,phc55fd2,phc70fd2,phc77,tpc310,tpp311,tps312,ucv102,vg8230,vg8235,vg8240,victhc80,victhc95,y503iiir,y805256,yis604
+$mame
+MSX usage
+
+
+Need to use the LEFT shift key
+
+
+
+Cartridge
+---------
+Runs by itself
+
+
+Floppy Disk (use hbf1xdj)
+-----------
+Runs by itself
+
+
+
+
+Cassette (use vg8010)
+--------
+RUN "CAS:
+
+or
+
+CLOAD
+
+or
+
+BLOAD "CAS:" ,R
 $end
 $info=b128hp,b500,p500
 $mame
@@ -1387,7 +1463,7 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
-$info=amazonh2,amazonh3,arena,badgirls,bighouse,bonebstr,bountyh,diamondp,excalibr,genesisp,goldwing,hlywoodh,hotshots,mmaster,mntecrlo,nmoves,raven,robowars,rock,sprbreak,tagteamp,topsound,triplay,txsector,victoryp
+$info=amazonh2,amazonh3,arena,badgirls,bighouse,bonebstr,bountyh,diamondp,excalibr,genesisp,goldwing,hlywoodh,hotshots,mmmaster,mntecrlo,nmoves,raven,robowars,rock,sprbreak,tagteamp,topsound,triplay,txsector,victoryp
 $mame
 TIPS:
 
@@ -1432,7 +1508,7 @@ Status:
 - bighouse: after game ends, the display freezes. Game keeps running though.
 
 $end
-$info=br_l4,cftbl_l4,drac_l1,dw_l2,ft_l5,gw_l5,lc_l1,rush,strik_l4,tafg_lx3,tz_92,ww_l5
+$info=br_l4,cftbl_l4,drac_l1,dw_l2,ft_l5,gw_l5,lc_11,rush,strik_l4,tafg_lx3,tz_92,ww_l5
 $mame
 INITIALIZATION:
 
@@ -1935,7 +2011,7 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
-$info=comx35
+$info=comx35p
 $mame
 TIPS:
 
@@ -2255,15 +2331,6 @@ SOURCE:
 mameinfo.dat
 
 $end
-$info=czmon
-$mame
-INITIALIZATION:
-To initialize the game, turn Service Mode ON [ F2 ] and press reset [ F3 ]. Move pointer to INIT with [ C ], then press [ 1 ]. Hold Cancel [ Z ] for 5 seconds while counter counts down. When complete, turn Service Mode OFF with [ F2 ] and restart or reboot.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
 $info=czmon_13
 $mame
 INITIALIZATION:
@@ -2296,15 +2363,6 @@ FN 2 - Tape save. You must have entered the start address at 0002, and the end a
 FN 3 - Run. To use, press RST, then enter the 4-digit start address (nothing happens until the 4th digit is pressed), then FN, then 3.
 
 All CHIP-8 programs load at 0200 (max size 4k), and exec address is C000.
-
-$end
-$info=dadandrn
-$mame
-INITIALIZATION:
-The first time you run the game, the EEPROM 28B shows as BAD in the RAM/ROM Check. Hold down the Test switch [ F2 ] and then also hit [ F3 ] to reset the machine, creating the EEPROM for you.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
 $info=dai
@@ -2410,9 +2468,10 @@ Paste this: 11^22^33^44^55^66^77^88^99^00-
 Now press up-arrow to review the data that was entered.
 
 $end
-$info=daytonagtx
+$info=daytona
 $mame
 INITIALIZATION:
+
 This game defaults to a MASTER game in a TWIN cabinet setup. This needs to be changed to SINGLE game, UPLIGHT cabinet. When you get the flashing "Network Checking" message, use [ F2 ] to enter Service Mode, use the Left Shift to move to different options and Player 1 Start [ 1 ] to select that option. Highlight LINK ID and change this to SINGLE. Highlight CABINET and change this to UPLIGHT. Move to EXIT then select. Repeat at the main menu. The game will now be configured to start.
 
 SOURCE:
@@ -2462,123 +2521,7 @@ $end
 $info=ddsom
 $mame
 TIPS:
-With this and some other multiplayer games, the default number of players for a cabinet is two — even if the program supports more. You can usually set these settings with a dip switch assignment or adjusting an option in the Service Mode (Using [ F2 ] to enter and exit).
 
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=ddsoma
-$mame
-TIPS:
-With this and some other multiplayer games, the default number of players for a cabinet is two — even if the program supports more. You can usually set these settings with a dip switch assignment or adjusting an option in the Service Mode (Using [ F2 ] to enter and exit).
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=ddsomar1
-$mame
-TIPS:
-With this and some other multiplayer games, the default number of players for a cabinet is two — even if the program supports more. You can usually set these settings with a dip switch assignment or adjusting an option in the Service Mode (Using [ F2 ] to enter and exit).
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=ddsomb
-$mame
-TIPS:
-With this and some other multiplayer games, the default number of players for a cabinet is two — even if the program supports more. You can usually set these settings with a dip switch assignment or adjusting an option in the Service Mode (Using [ F2 ] to enter and exit).
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=ddsomh
-$mame
-TIPS:
-With this and some other multiplayer games, the default number of players for a cabinet is two — even if the program supports more. You can usually set these settings with a dip switch assignment or adjusting an option in the Service Mode (Using [ F2 ] to enter and exit).
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=ddsomj
-$mame
-TIPS:
-With this and some other multiplayer games, the default number of players for a cabinet is two — even if the program supports more. You can usually set these settings with a dip switch assignment or adjusting an option in the Service Mode (Using [ F2 ] to enter and exit).
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=ddsomjr1
-$mame
-TIPS:
-With this and some other multiplayer games, the default number of players for a cabinet is two — even if the program supports more. You can usually set these settings with a dip switch assignment or adjusting an option in the Service Mode (Using [ F2 ] to enter and exit).
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=ddsomjr2
-$mame
-TIPS:
-With this and some other multiplayer games, the default number of players for a cabinet is two — even if the program supports more. You can usually set these settings with a dip switch assignment or adjusting an option in the Service Mode (Using [ F2 ] to enter and exit).
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=ddsomr1
-$mame
-TIPS:
-With this and some other multiplayer games, the default number of players for a cabinet is two — even if the program supports more. You can usually set these settings with a dip switch assignment or adjusting an option in the Service Mode (Using [ F2 ] to enter and exit).
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=ddsomr2
-$mame
-TIPS:
-With this and some other multiplayer games, the default number of players for a cabinet is two — even if the program supports more. You can usually set these settings with a dip switch assignment or adjusting an option in the Service Mode (Using [ F2 ] to enter and exit).
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=ddsomr3
-$mame
-TIPS:
-With this and some other multiplayer games, the default number of players for a cabinet is two — even if the program supports more. You can usually set these settings with a dip switch assignment or adjusting an option in the Service Mode (Using [ F2 ] to enter and exit).
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=ddsomu
-$mame
-TIPS:
-With this and some other multiplayer games, the default number of players for a cabinet is two — even if the program supports more. You can usually set these settings with a dip switch assignment or adjusting an option in the Service Mode (Using [ F2 ] to enter and exit).
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=ddsomud
-$mame
-TIPS:
-With this and some other multiplayer games, the default number of players for a cabinet is two — even if the program supports more. You can usually set these settings with a dip switch assignment or adjusting an option in the Service Mode (Using [ F2 ] to enter and exit).
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=ddsomur1
-$mame
-TIPS:
 With this and some other multiplayer games, the default number of players for a cabinet is two — even if the program supports more. You can usually set these settings with a dip switch assignment or adjusting an option in the Service Mode (Using [ F2 ] to enter and exit).
 
 SOURCE:
@@ -2594,88 +2537,17 @@ SOURCE:
 https://www.progettosnaps.net/gameinit.dat
 
 $end
-$info=defence
-$mame
-INITIALIZATION:
-The first time they are launched, these games stop to the "Factory settings restored". To continue simply press [ F2 ]. If that fails, try [ F3 ], or [ F1 ]+[ F2 ].
-
-SOURCE:
-https://www.progettosnaps.net/gameinit.dat
-
-$end
 $info=defender
 $mame
 INITIALIZATION:
+
 The first time they are launched, these games stop to the "Factory settings restored". To continue simply press [ F2 ]. If that fails, try [ F3 ], or [ F1 ]+[ F2 ].
 
 SOURCE:
 https://www.progettosnaps.net/gameinit.dat
 
 $end
-$info=defenderb
-$mame
-INITIALIZATION:
-The first time they are launched, these games stop to the "Factory settings restored". To continue simply press [ F2 ]. If that fails, try [ F3 ], or [ F1 ]+[ F2 ].
-
-SOURCE:
-https://www.progettosnaps.net/gameinit.dat
-
-$end
-$info=defenderg
-$mame
-INITIALIZATION:
-The first time they are launched, these games stop to the "Factory settings restored". To continue simply press [ F2 ]. If that fails, try [ F3 ], or [ F1 ]+[ F2 ].
-
-SOURCE:
-https://www.progettosnaps.net/gameinit.dat
-
-$end
-$info=defenderj
-$mame
-INITIALIZATION:
-When you first start will be the message: "INITIAL TEST INDICATE - ROM FAILURE". Press [ F3 ] and you can start playing.
-
-SOURCE:
-https://www.progettosnaps.net/gameinit.dat
-
-$end
-$info=defenderom
-$mame
-INITIALIZATION:
-The first time you run the game, it will say '01  0000 COINS LEFT'. To proceed, just hit [ F3 ].
-
-SOURCE:
-mameinfo.dat
-
-$end
-$info=defenderw
-$mame
-INITIALIZATION:
-The first time they are launched, these games stop to the "Factory settings restored". To continue simply press [ F2 ]. If that fails, try [ F3 ], or [ F1 ]+[ F2 ].
-
-SOURCE:
-https://www.progettosnaps.net/gameinit.dat
-
-$end
-$info=defenseb
-$mame
-INITIALIZATION:
-The first time they are launched, these games stop to the "Factory settings restored". To continue simply press [ F2 ]. If that fails, try [ F3 ], or [ F1 ]+[ F2 ].
-
-SOURCE:
-https://www.progettosnaps.net/gameinit.dat
-
-$end
-$info=defndjeu
-$mame
-INITIALIZATION:
-The first time they are launched, these games stop to the "Factory settings restored". To continue simply press [ F2 ]. If that fails, try [ F3 ], or [ F1 ]+[ F2 ].
-
-SOURCE:
-https://www.progettosnaps.net/gameinit.dat
-
-$end
-$info=demonwld1
+$info=demonwld
 $mame
 TIPS:
 Hidden Functions: If the 'Invulnerability dip switch' is enabled, you are invulnerable but you may also 'Pause' the game with P2 Start and restart with P1 Start.
@@ -2687,6 +2559,7 @@ $end
 $info=detatwin
 $mame
 INITIALIZATION:
+
 The first time you run the game, the EEPROM 17A shows as BAD in the RAM/ROM Check. Hold down the Test switch [ F2 ] and then also hit [ F3 ] to reset the machine, creating the EEPROM for you.
 
 SOURCE:
@@ -2869,15 +2742,6 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
-$info=dragoonj
-$mame
-INITIALIZATION:
-The first time you run the game, the EEPROM 22D shows as BAD in the RAM/ROM Check. Hold down the Test switch [ F2 ] and then also hit [ F3 ] to reset the machine, creating the EEPROM for you.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
 $info=dsb46
 $mame
 INITIALIZATION:
@@ -2904,27 +2768,10 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
-$info=dsoccr94j
-$mame
-TIPS:
-With this and some other multiplayer games, the default number of players for a cabinet is two — even if the program supports more. You can usually set these settings with a dip switch assignment or adjusting an option in the Service Mode (Using [ F2 ] to enter and exit).
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=dsoccr94k
-$mame
-TIPS:
-With this and some other multiplayer games, the default number of players for a cabinet is two — even if the program supports more. You can usually set these settings with a dip switch assignment or adjusting an option in the Service Mode (Using [ F2 ] to enter and exit).
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=dtrvwz5v
+$info=dtrvwz5
 $mame
 INITIALIZATION:
+
 When you see "PUSH ANY SWITCH", press [ C ] key to proceed.
 
 SOURCE:
@@ -2997,7 +2844,7 @@ Stats you can see while travelling:
 49 - fuel average consumption
 
 $end
-$info=eballchp,beatclk,ladyluck,motrdome,strngsci,specforc,blackblt,cityslck,hardbody,prtyanim,hvymetap,esclwrld,dungdrag,black100,trucksp3,atlantip
+$info=eballchp,beatclck,ladyluck,motrdome,strngsci,specforc,blackblt,cityslck,hardbody,prtyanim,hvymetap,esclwrld,dungdrag,black100,trucksp3,atlantip
 $mame
 INITIALIZATION:
 Setting Up:
@@ -3048,24 +2895,6 @@ SOURCE:
 https://www.progettosnaps.net/gameinit.dat
 
 $end
-$info=eforestnz
-$mame
-INITIALIZATION:
-At the first start, "CALL ATTENDANT" will flash at the top, to start press in sequence: [ F1 ] and [ F2 ] to do this. Now press [ Z ] + [ X ] + [ C ] simultaneously; you'll see a number show up for the value "RF/AMT" if done correctly. After this value is set, return to the game by taking off the [ F2 ].
-
-SOURCE:
-https://www.progettosnaps.net/gameinit.dat
-
-$end
-$info=eforestu
-$mame
-INITIALIZATION:
-At the first start, "CALL ATTENDANT" will flash at the top, Key in with the Jackpot Key followed by the Audit Key [ F1 ] [ F2 ]. Press PB4, PB5 and PB6 keys simultaneously ([ Z ] + [ X ] + [ C ] keys by default). Press Service (default [ A ]) 4 times until you are in the Setup Screen, showing Printer Pay Limit etc. Press Bet 2 (default [ D ]) to change the Jackpot Win Limit. A higher value is better (3000 max). Key out both the Jackpot and Audit Keys [ F2 ].
-
-SOURCE:
-aristmk4.cpp mame driver
-
-$end
 $info=eg3003
 $mame
 INITIALIZATION:
@@ -3099,16 +2928,6 @@ $end
 $info=elecyoyo
 $mame
 INITIALIZATION:
-You can use [ F1 ] to proceed through all the configuration screens, stopping when you see the title screen. Setup is complete.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=elecyoyoa
-$mame
-INITIALIZATION:
-
 You can use [ F1 ] to proceed through all the configuration screens, stopping when you see the title screen. Setup is complete.
 
 SOURCE:
@@ -3202,15 +3021,6 @@ Q-0900^76203F0161063005080E492DCD4890597877103F020E75105A0A0C1E89F4101879
 
 $end
 $info=elephfam
-$mame
-INITIALIZATION:
-Press and hold Service 1 + 2 (Keys [ 0 ]+[ 9 ]), then press Reset [ F3 ]. When you see "RAM-INIZIALIZZATA!", release.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=elephfmb
 $mame
 INITIALIZATION:
 Press and hold Service 1 + 2 (Keys [ 0 ]+[ 9 ]), then press Reset [ F3 ]. When you see "RAM-INIZIALIZZATA!", release.
@@ -3315,15 +3125,7 @@ $end
 $info=esckids
 $mame
 INITIALIZATION:
-The first time you run the game, the EEPROM 13B shows as BAD in the RAM/ROM Check. Hold down the Test switch [ F2 ] and then also hit [ F3 ] to reset the machine, creating the EEPROM for you.
 
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=esckidsj
-$mame
-INITIALIZATION:
 The first time you run the game, the EEPROM 13B shows as BAD in the RAM/ROM Check. Hold down the Test switch [ F2 ] and then also hit [ F3 ] to reset the machine, creating the EEPROM for you.
 
 SOURCE:
@@ -3332,7 +3134,8 @@ http://wiki.mamedev.org/index.php/FAQ:Games
 $end
 $info=et3400
 $mame
-INITIALIZATION:
+TIPS:
+
 - Navigating:
 LED to Monitor: D1400
 Monitor to Basic: G 1C00
@@ -7736,6 +7539,13 @@ Can boot some disks, but there's lots of retries.
 The disk is CP/M-80, but after it starts, a disk error occurs.
 
 $end
+$info=kovqhsgs
+$mame
+TIPS:
+
+This game will freeze while in attract mode. All you can do is exit.
+
+$end
 $info=kov2104
 $mame
 TIPS:
@@ -8062,6 +7872,7 @@ $end
 $info=lethalenead
 $mame
 INITIALIZATION:
+
 The first time you run the game, the game might complain with the message: 'Version Error' or similar. You must hold down the Test switch [ F2 ] and then also hit [ F3 ] to reset the machine. After a short wait, continuing to hold [ F2 ], the game should say "EEPROM INITIALIZE COMPLETE".
 
 SOURCE:
@@ -8071,6 +7882,7 @@ $end
 $info=lethaleneae
 $mame
 INITIALIZATION:
+
 The first time you run the game, the game might complain with the message: 'Version Error' or similar. You must hold down the Test switch [ F2 ] and then also hit [ F3 ] to reset the machine. After a short wait, continuing to hold [ F2 ], the game should say "EEPROM INITIALIZE COMPLETE".
 
 SOURCE:
@@ -8080,6 +7892,7 @@ $end
 $info=lethalenj
 $mame
 INITIALIZATION:
+
 The first time you run the game, the game might complain with the message: 'Version Error' or similar. You must hold down the Test switch [ F2 ] and then also hit [ F3 ] to reset the machine. After a short wait, continuing to hold [ F2 ], the game should say "EEPROM INITIALIZE COMPLETE".
 
 SOURCE:
@@ -8089,6 +7902,7 @@ $end
 $info=lethalenua
 $mame
 INITIALIZATION:
+
 The first time you run the game, the game might complain with the message: 'Version Error' or similar. You must hold down the Test switch [ F2 ] and then also hit [ F3 ] to reset the machine. After a short wait, continuing to hold [ F2 ], the game should say "EEPROM INITIALIZE COMPLETE".
 
 SOURCE:
@@ -9658,6 +9472,7 @@ $end
 $info=mmaulers
 $mame
 INITIALIZATION:
+
 The first time you run the game, the EEPROM 28B shows as BAD in the RAM/ROM Check. Hold down the Test switch [ F2 ] and then also hit [ F3 ] to reset the machine, creating the EEPROM for you.
 
 SOURCE:
@@ -9817,9 +9632,10 @@ SOURCE:
 mameinfo.dat
 
 $end
-$info=mo5,m05nr,m06,t07,t0770,t08,t09,t09p
+$info=mo5,mo5nr,mo6,to7,to770,to8,to9,to9p
 $mame
 INITIALIZATION:
+
 To save a tape: SAVE"x"
 
 To load a tape: Play then LOAD.
@@ -10170,41 +9986,6 @@ Hit [ F2 ], use the player 1 controls to navigate to "Setting up the soft dip", 
 
 SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=msx
-$mame
-INITIALIZATION:
-MSX usage
-
-
-Need to use the LEFT shift key
-
-
-
-Cartridge
----------
-Runs by itself
-
-
-Floppy Disk (use hbf1xdj)
------------
-Runs by itself
-
-
-
-
-Cassette (use vg8010)
---------
-RUN "CAS:
-
-or
-
-CLOAD
-
-or
-
-BLOAD "CAS:" ,R
 
 $end
 $info=mt65
@@ -11503,19 +11284,6 @@ Inufuto
 -------
 Load tape xx01, CLOAD
 Load tape xx02, RUN
-
-$end
-$info=pb100
-$mame
-INITIALIZATION:
-CASIO PB-100 PROGRAMMABLE CALCULATOR
-====================================
-
-
-Similar looking to the Sharp handheld calculators.
-
-
-Not emulated in MAME.
 
 $end
 $info=pbchmp95
@@ -14995,9 +14763,10 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
-$info=rab_320,aar_101,btmn_106,ckpt_a17,gnr_300,hook_408,jupk_513,lah_112,lw3_208,mj_130,trek_201,stwr_106,tftc_303,tmnt_104,tomy_400,wwfr_106,batmanf,baywatch,frankst,mav_402,ctcheese
+$info=aar_101,batmanf,baywatch,btmn_106,ckpt_a17,ctcheese,frankst,gnr_300,hook_408,jupk_513,lah_112,lw3_208,mav_402,mj_130,rab_320,stwr_106,tftc_303,tmnt_104,tomy_400,trek_201,wwfr_106
 $mame
 INITIALIZATION:
+
 Here are the key codes to enable play:
 - Some games need you to hit H after the ball enters the shooter lane.
 - If the game wants you to choose something at start of ball 1, hit a Shift key.
@@ -17957,6 +17726,7 @@ $end
 $info=slrassltj
 $mame
 INITIALIZATION:
+
 Error will show for 24G. Hold [ F2 ] then hit Reset [ F3 ]. Continue holding [ F2 ] until the game creates the EEPROM and tells you to release it.
 
 SOURCE:
@@ -17966,13 +17736,14 @@ $end
 $info=slrassltj1
 $mame
 INITIALIZATION:
+
 The first time you run the game, the EEPROM 24G shows as BAD in the RAM/ROM Check. Hold [ F2 ] then hit Reset [ F3 ]. Continue holding [ F2 ] until the game creates the EEPROM and tells you to release it.
 
 SOURCE:
 mameinfo.dat
 
 $end
-$info=andretti,barbwire,bighurt,brooks,cueball,freddy,gladiatp,rescu911,sfightii,shaqattq,smbmush,smbp,snspares,stargatp,teedoffp,waterwld,wipeout,wsoccer,
+$info=andretti,barbwire,bighurt,brooks,cueball,freddy,gladiatp,rescu911,sfightii,shaqattq,smbmush,smbp,snspares,stargatp,teedoffp,waterwld,wcsoccer,wipeout
 $mame
 INITIALIZATION:
 
@@ -18303,7 +18074,7 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
-$info=flashman,fldragon,ironball,kz26,megaaton,msdisco,nautilus,phntnshp,ridersrf,rock2500,sklflite,spain82,starfirp,terrlake,theraid,trailer,ufo_x
+$info=flashman,fldragon,ironball,kz26,megaaton,msdisco,nautilus,phntmshp,ridersrf,rock2500,sklflite,spain82,starfirp,terrlake,theraid,trailer,ufo_x
 $mame
 INITIALIZATION:
 
@@ -19589,13 +19360,13 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
-$info=tmc600
+$info=tmc600s2
 $mame
-INITIALIZATION:
+TIPS:
+
 To save a tape: PSAVE
 
 To load a tape: PLOAD
-
 $end
 $info=tmht22pe
 $mame
@@ -19921,6 +19692,17 @@ $mame
 INITIALIZATION:
 System is marked as working, but the keyboard is completely crazy and unusable.
 
+$end
+$info=ultim809
+$mame
+TIPS:
+
+Was developed during 2009-2011, but unknown if it was ever finished. Most of the claimed features don't seem to be there or are inaccessible.
+
+- When it says to press INTERRUPT, press F1. May need multiple presses to get over random errors.
+- Various commands starting with k are supposed to be valid, but nothing is acceptable.
+- If an error occurs it locks up and you have to press F1 again.
+- Even though it is suggested to use a dumb terminal, nothing ever shows on it.
 $end
 $info=umk3
 $mame
