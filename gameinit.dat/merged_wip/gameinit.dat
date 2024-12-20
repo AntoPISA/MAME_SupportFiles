@@ -1919,7 +1919,9 @@ $end
 $info=clcd
 $mame
 INITIALIZATION:
-Although marked as working, this system has multiple issues. For example, Basic is unusable.
+Although marked as working, this system has multiple issues. For example, Basic is unusable with bios 1 (the default).
+
+To get Basic to work, you need to use bios 0.
 
 $end
 $info=cmpacman
@@ -19254,6 +19256,10 @@ The device name is case-sensitive, and must be in UPPERcase. Probably a good ide
 
 If a valid cartridge is selected, it should appear in the opening menu as a choice.
 
+$end
+$info=ti99_4p
+$mame
+Although listed as working, all you'll get is a black screen. The things listed in the driver don't work.
 $end
 $info=tictac
 $mame
