@@ -9656,6 +9656,10 @@ To save a tape: S a-b   (where a = start address, b = end address)
 To load a tape: L
 
 $end
+$info=mononcol,svision
+$mame
+MAMEUI: Make sure you select a cartridge before starting this system. If you don't, it will crash at start.
+$end
 $info=moomesa
 $mame
 INITIALIZATION:
@@ -19234,6 +19238,10 @@ To save a tape: SAVE"1:x"
 
 To load a tape: LOAD"1:x"
 
+$end
+$info=ti99_224
+$mame
+This system is incomplete. The SAVE and OPEN commands are not implemented, and will cause a reboot.
 $end
 $info=ti99_4,ti99_4a,ti99_232,ti99_8
 $mame
