@@ -11,7 +11,7 @@
 # REMOVAL "CLONEs" OK: # - I
 #
 #
-$info=3bagflvt
+$info=3bagfull
 $mame
 INITIALIZATION:
 
@@ -6150,9 +6150,9 @@ INITIALIZATION:
 Press Enter to get the * prompt.
 
 Commands (must be in UPPERcase):
-$Pxxxx - Jump to address xxxx
-?Mxxxx yyyy - Dump memory starting at xxxx for yyyy bytes
-!Mxxxx yyzz... - Write data (yy etc) to memory xxxx onwards.
+- $Pxxxx - Jump to address xxxx
+- ?Mxxxx yyyy - Dump memory starting at xxxx for yyyy bytes
+- !Mxxxx yyzz... - Write data (yy etc) to memory xxxx onwards.
 
 There's no sound or storage facilities, therefore no software.
 
@@ -8159,7 +8159,7 @@ Hard Drives
 Unknown how to access.
 
 $end
-$info=pc9821,pc9821as,pc9821ce2,pc9821ne,pc9821nr15,pc9821ra20,pc9821v13,pc9821xs,pc98ha,pc98lt,pc_98hs
+$info=pc9821,pc9821as,pc9821ce2,pc9821ne,pc9821nr15,pc9821ra20,pc9821v13,pc9821xs,pc98ha,pc98lt,pc_h98s
 $mame
 NEC PC-9821 series
 ------------------
@@ -10686,14 +10686,14 @@ Commands:
 A xxxx xxxx   - Assemble (from editor file): origin destination
 D xxxx,xxxx   - Dump memory to host port
 E             - Enter editor
-A            - Append at end of file
-C            - Clear memory file (reqires ESCAPE to confirm)
-D xx         - Delete line number xx
-I xx         - Insert at line xx
-L xx xx      - List range of lines
-Q            - Query: Display highest used address
-X            - eXit editor (requires ESCAPE to confirm)
-$ xxxx xxxx  - exit directly to assembler
+- A           - Append at end of file
+- C           - Clear memory file (reqires ESCAPE to confirm)
+- D xx        - Delete line number xx
+- I xx        - Insert at line xx
+- L xx xx     - List range of lines
+- Q           - Query: Display highest used address
+- X           - eXit editor (requires ESCAPE to confirm)
+- $ xxxx xxxx - exit directly to assembler
 F             - set for Full-duplex host operation
 G xxxx        - Go (execute) at address
 H             - set for Half-duplex host operation
