@@ -12,7 +12,7 @@
 #
 #
 #
-$info=3bagflvt
+$info=3bagfull
 $mame
 INITIALIZATION:
 
@@ -6150,9 +6150,9 @@ INITIALIZATION:
 Press Enter to get the * prompt.
 
 Commands (must be in UPPERcase):
-$Pxxxx - Jump to address xxxx
-?Mxxxx yyyy - Dump memory starting at xxxx for yyyy bytes
-!Mxxxx yyzz... - Write data (yy etc) to memory xxxx onwards.
+- $Pxxxx - Jump to address xxxx
+- ?Mxxxx yyyy - Dump memory starting at xxxx for yyyy bytes
+- !Mxxxx yyzz... - Write data (yy etc) to memory xxxx onwards.
 
 There's no sound or storage facilities, therefore no software.
 
@@ -7901,7 +7901,13 @@ Looks like they should auto-run.
 $end
 $info=pc9801,pc9801bx2,pc9801dx,pc9801fs,pc9801rs,pc9801us,pc9801ux,pc9801vm,pc9801vx
 $mame
+<<<<<<< HEAD
 TIPS:
+=======
+NEC PC-9801 series
+------------------
+
+>>>>>>> bbabff34f55a674ab1d048864f3b063143baa18f
 
 NEC PC-9801 series
 ------------------
@@ -7910,6 +7916,7 @@ Floppies
 --------
 The only machines that can run floppies are pc9801dx, pc9801rs, pc9801ux, pc9801vm, pc9801vx.
 
+<<<<<<< HEAD
 Hard Drives
 -----------
 Unknown how to access.
@@ -7924,6 +7931,27 @@ NEC PC-9821 series
 
 Floppies
 --------
+=======
+The only machines that can run floppies are pc9801dx, pc9801rs, pc9801ux, pc9801vm, pc9801vx.
+
+
+Hard Drives
+-----------
+
+Unknown how to access.
+
+$end
+$info=pc9821,pc9821as,pc9821ce2,pc9821ne,pc9821nr15,pc9821ra20,pc9821v13,pc9821xs,pc98ha,pc98lt,pc_h98s
+$mame
+NEC PC-9821 series
+------------------
+
+
+
+Floppies
+--------
+
+>>>>>>> bbabff34f55a674ab1d048864f3b063143baa18f
 The only machines that can run floppies are pc9821, pc9821ap2, pc9821ce2.
 
 
@@ -8591,14 +8619,14 @@ Commands:
 A xxxx xxxx   - Assemble (from editor file): origin destination
 D xxxx,xxxx   - Dump memory to host port
 E             - Enter editor
-A            - Append at end of file
-C            - Clear memory file (reqires ESCAPE to confirm)
-D xx         - Delete line number xx
-I xx         - Insert at line xx
-L xx xx      - List range of lines
-Q            - Query: Display highest used address
-X            - eXit editor (requires ESCAPE to confirm)
-$ xxxx xxxx  - exit directly to assembler
+- A           - Append at end of file
+- C           - Clear memory file (reqires ESCAPE to confirm)
+- D xx        - Delete line number xx
+- I xx        - Insert at line xx
+- L xx xx     - List range of lines
+- Q           - Query: Display highest used address
+- X           - eXit editor (requires ESCAPE to confirm)
+- $ xxxx xxxx - exit directly to assembler
 F             - set for Full-duplex host operation
 G xxxx        - Go (execute) at address
 H             - set for Half-duplex host operation
