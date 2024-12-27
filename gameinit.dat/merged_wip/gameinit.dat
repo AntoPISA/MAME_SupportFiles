@@ -6499,13 +6499,6 @@ To save a tape: S a-b   (where a = start address, b = end address)
 To load a tape: L
 
 $end
-$info=mononcol,svision
-$mame
-INITIALIZATION:
-
-MAMEUI: Make sure you select a cartridge before starting this system. If you don't, it will crash at start.
-
-$end
 $info=moomesa
 $mame
 INITIALIZATION:
@@ -13034,6 +13027,13 @@ INITIALIZATION:
 To save a tape: CSAVE"x"
 
 To load a tape: CLOAD or RUN"CAS:"
+
+$end
+$info=svision
+$mame
+INITIALIZATION:
+
+MAMEUI: Make sure you select a cartridge before starting this system. If you don't, it will crash at start.
 
 $end
 $info=sweetl
