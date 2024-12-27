@@ -1,4 +1,4 @@
-﻿MAME SERIES.ini 0.272 (Dec 12, 2024)
+﻿MAME SERIES.ini 0.272 (Dec 27, 2024)
 © AntoPISA     www.progettoSNAPS.net
 ==================================== 
 
@@ -12,6 +12,15 @@ In the file are both "Series" recognized as such (thus games and their official 
 guages or with minor variations (official and unofficial).
 
 
+WhatsNew 0.27x (27.12.2024) (718 supported Series):
+===================================================
+Items REMOVED (2): (flamolce), (flamoljc),
+Series ADDED (5): Adonis * Slot, Geisha * Slot, Golden Pyramids * Slot, Queen of the Nile * Slot, Torch of the Gods, ...
+Series RENAMED (0): 
+Series REMOVED (6): Chuugokuryuu, Dancing Stage (merged with "Dance Dance Revolution"), Dynablaster (merged with "Bomber Man"), Guitar Freaks (merged with "DrumMania"), Percussion Freaks (merged with "DrumMania"), Vampire (merged with "Darkstalkers"), ...
+Series UPDATED (14): Dance Dance Revolution, Darius, Darkstalkers, Deal Or No Deal * Slot, Defender, Del's Millions * Slot, Dinosaur King, Donkey Kong * Slot, Donkey Kong, DonPachi, Double Dragon, Dragon Spirit, Dragon World, Dynasty Wars, ...
+
+
 WhatsNew 0.272 (12.12.2024) (723 supported Series):
 ===================================================
 Items REMOVED (6): (m4nnww2__hx3), (m4nnww2__hx4), (m4nnww2__hx5), (naltair), (nd8lines) and (pomp_l1).
@@ -19,7 +28,6 @@ Series ADDED (5): Royal Mahjong, Makaimura, Major Poker, Pump It Up and Ron Jan.
 Series RENAMED (3): "Enchanted Forest" to "Enchanted Forest * Slot", "Golden Canaries" to "Golden Canaries * Slot" and "Sweet Hearts" to "Sweet Hearts * Slot".
 Series REMOVED (1): Black Rhino.
 Series UPDATED (14): Adders & Ladders * Slot, Air Duel, Aladdin's Cave * Slot, All Japan Pro Wrestling, Altair, Aristocrat MK Hardware, Cabal, Carnival, Double Dragon, Dragon Ball Z, Lode Runner, Reelin-n-Rockin * Slot, Wonder Boy and World Rally.
-
 
 WhatsNew 0.271 (13.11.2024) (718 supported Series):
 ===================================================
