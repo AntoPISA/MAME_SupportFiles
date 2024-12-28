@@ -2,8 +2,24 @@
 ---------------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
+New Games Added or Promoted from NOT_WORKING Status
+---------------------------------------------------
+Player's Edge Plus (X002069P) Double Double Bonus Poker [Hammer300]
+Shinobi III (Mega Play) [Tomasz Slanina, Kowal]
+
+New Clones Added
+----------------
+Demon's World / Horror Story (set 5) [Corrado Tomaselli]
+Major Title (World) [Tirino73 / MAME Italia]
+Winding Heat (EAA, Euro v1.11) [Highwayman]
+
+New Game Marked as GAME_NOT_WORKING
+-----------------------------------
+Rail Chase 2 [AndyGeezer]
+
+
+MAMETesters Bugs Fixed (13):
+----------------------------
 - 00479: [DIP/Input] livegal: P1 Start start a P2 game (and some inputs are misread in Test Mode) (Fabio Priuli).
 - 00595: [DIP/Input] playch10.c games: Button 1 and 2 are reversed with respect to all other standard mapping (Fabio Priuli).
 - 01113: [Speed] btlkroad: [possible] This game runs like slow-motion during gameplay, with 60/60 on fps (Nicola Salmoria).
@@ -19,22 +35,6 @@ MAMETesters Bugs Fixed
 - 02029: [DIP/Input] aurail and clones: Coinage Dip Switches ignored (Fabio Priuli).
 
 
-New games added or promoted from NOT_WORKING status
----------------------------------------------------
-Player's Edge Plus (X002069P) Double Double Bonus Poker [Hammer300]
-Shinobi III (Mega Play) [Tomasz Slanina, Kowal]
-
-New clones added
-----------------
-Demon's World / Horror Story (set 5) [Corrado Tomaselli]
-Major Title (World) [Tirino73 / MAME Italia]
-Winding Heat (EAA, Euro v1.11) [Highwayman]
-
-New games marked as GAME_NOT_WORKING
-------------------------------------
-Rail Chase 2 [AndyGeezer]
-
-
 Source changes:
 ---------------
 - Robustified key behavior when the debugger is visible. Should now properly ignore the "break into debugger" keypress and not allow related characters to filter through. Removed some hacks related to making that work in the past [Aaron Giles].
@@ -47,14 +47,14 @@ Source changes:
 - Added validity checks to ensure no duplicate sound or CPU tags. Fixed several duplicates [Aaron Giles].
 - Changed MDRV_CPU_ADD to require a tag. Removed MDRV_CPU_ADD_TAG.Tagged all CPUs [Aaron Giles].
 - TGP/Model 2 fixes [ElSemi]:
-  * TGP now correctly uses table roms (model1/2 updated accordingly)
-  * Removed FIFO hack on srallyc (game now runs).
-  * Added analog ports reading for model 2A/B/C.
-  * Fixed some loading instructions in the TGP. that fixes srallyc automatic transmission bug.
+  * TGP now correctly uses table roms (model1/2 updated accordingly);
+  * Removed FIFO hack on srallyc (game now runs);
+  * Added analog ports reading for model 2A/B/C;
+  * Fixed some loading instructions in the TGP. That fixes (srallyc) automatic transmission bug.
 - Merged CPU0 and 1 memory maps in flower, improved interrupt generation [David Haywood].
 - DSP56156 Disassembler rewrite [Andrew Gardner]:
-  * Rearranged decoding behavior.
-  * Updated code style to MAME standards.
+  * Rearranged decoding behavior;
+  * Updated code style to MAME standards;
   * Tested each single-word opcode with custom ROMs.
 - Laserdiscs are now devices. Updated all drivers accordingly [Aaron Giles].
 - Merged memory maps in battlnts, bbusters, bigevglf, bigstrkb, and bionicc [Aaron Giles].

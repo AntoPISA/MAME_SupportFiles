@@ -2,28 +2,28 @@
 ---------------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
+New Games Added or Promoted from NOT_WORKING Status
+---------------------------------------------------
+Galaxi [Luca Elia]
+
+New Clones Added
+----------------
+Killer Instinct 2 (v1.3k, upgrade kit) [Brian Troha] (NOT WORKING)
+Pool 10 (italian, set 3) [Roberto Fresca]
+
+New Game Marked as GAME_NOT_WORKING
+-----------------------------------
+Bust a Move 2 (JAPANESE ROM ver. 1999/07/17 10:00:00) [R. Belmont]
+
+
+MAMETesters Bugs Fixed (6):
+---------------------------
 - 00456: [Graphics] combascb: Missing Most Graphics (Fabio Priuli).
 - 02023: [Crash/Freeze] irobot: hang (Aaron Giles).
 - 02043: [Crash/Freeze] All games in cps2.c: All Parent Sets for CPS2 Games Abort (Firewave).
 - 02045: [DIP/Input] wofhfh: Player 3 inputs aren't working (stephh).
 - 02046: [DIP/Input] cachat, tubeit: screen upsidedown (Fabio Priuli).
 - 02050: [DIP/Input] skyfox, exerizrb: Issue with credits input (Fabio Priuli).
-
-
-New games added or promoted from NOT_WORKING status
----------------------------------------------------
-Galaxi [Luca Elia]
-
-New clones added
-----------------
-Killer Instinct 2 (v1.3k, upgrade kit) [Brian Troha] (NOT WORKING)
-Pool 10 (italian, set 3) [Roberto Fresca]
-
-New games marked as GAME_NOT_WORKING
-------------------------------------
-Bust a Move 2 (JAPANESE ROM ver. 1999/07/17 10:00:00) [R. Belmont]
 
 
 Source changes:
@@ -35,16 +35,16 @@ Source changes:
 - Updated to build with the latest DirectX SDK, which doesn't support Direct 3D 8 & Direct Input 7. By default, the makefile is set up to compile the old way, but you can set DIRECT3D=9 and DIRECTINPUT=8 in windows.mak or on the command-line to build with a more modern SDK [smf, RansAckeR, uRebelScum].
 - Irem m63 - adjusted AY frequencies to proper 1.5 MHz [Stefan Lindberg].
 - DSP56156 CPU Core updates [Andrew Gardner]:
-  * Rewrote core logic, communications, and interfaces.
-  * Added three parallel memory moves to the disassembler.
+  * Rewrote core logic, communications, and interfaces;
+  * Added three parallel memory moves to the disassembler;
   * Initial interrupt logic in place.
 - plygonet.c updates [Andrew Gardner]:
-  * All communication hacks have been removed.
+  * All communication hacks have been removed;
   * Memory maps have been temporarily reverted while new DSP56k CPU core catches up.
 - Merged memory maps for beezer.c, bishi.c, and bladestl.c [Andrew Gardner].
 - AICA updates [Deunan Knute, ajax16384, R. Belmont]:
-  * Fixed ADPCM decoder to remove bad optimization and match YMZ280B. DC offset is fixed and output quality is higher.
-  * Improved handling of slot monitor and timers B and C.
+  * Fixed ADPCM decoder to remove bad optimization and match YMZ280B. DC offset is fixed and output quality is higher;
+  * Improved handling of slot monitor and timers B and C;
   * Simplified interpolation code.
 - SH2DRC: Add PC-relative load optimization and ability to disable if necessary [R. Belmont, based on an idea by Mariusz Wojcieszek].
 - Changed the way memory regions are referenced. Instead of a single integer value, regions are now referred to by a region tag. The region tag must be unique among all regions defined for a given game. This change required updating all the ROM region definitions in the project to specify the tag instead of region number [Aaron Giles].
@@ -56,24 +56,24 @@ Source changes:
 - Updated debugger windows to display the CPU and region tags where appropriate [Aaron Giles].
 - Updated -listxml to output region class and tag for each ROM entry [Aaron Giles].
 - Changes to lucky74.c driver [Roberto Fresca]:
-  * Pre-defined CPU and SND clocks.
-  * Switched the color system to RESNET calculations.
-  * Completed the remaining DIP Switches.
-  * Added lamps support. Created a layout to show them.
-  * Changes on the interrupt system (need to be verified on the PCB).
-  * Renamed the graphics regions to more descriptive names.
-  * Corrected the manufacturer's name.
-  * Splitted the driver to driver + video.
+  * Pre-defined CPU and SND clocks;
+  * Switched the color system to RESNET calculations;
+  * Completed the remaining DIP switches;
+  * Added lamps support. Created a layout to show them;
+  * Changes on the interrupt system (need to be verified on the PCB);
+  * Renamed the graphics regions to more descriptive names;
+  * Corrected the manufacturer's name;
+  * Splitted the driver to driver + video;
   * Updated technical notes.
 - Changed unmapped read for mspacman to see if it changes tunnel behavior [David Haywood, as suggested by dwidel].
 - SH2DRC: add SUBV, replace ADDV with C version as a precaution. (Fixes most of Mantis #2026, except the part which is a separate bug). Added new implementation which uses flags directly, keeping the C versions in reserve in case they are needed [R. Belmont, Aaron Giles].
 - Added more validation to the address map detokenization, in order to catch cases where multiple read/write handlers are assigned to a range. Fixed cases in the code that failed these checks [Atari Ace].
 - i8051 cpu core timer updates [Wilbert Pol]:
-  * Added support for timer mode 0 (13 bit timer).
+  * Added support for timer mode 0 (13 bit timer);
   * Cleaned up timer code a bit, fixing some off-by-one errors when timers overflow.
 - Naomi updates [Samuele Zannoli]:
-  * Refactors many global and static variables in video\dc.c into a structure to hold the tile accelerator state
-  * Textures should be better decoded with more pixel formats.
+  * Refactors many global and static variables in video\dc.c into a structure to hold the tile accelerator state;
+  * Textures should be better decoded with more pixel formats;
   * Adds placeholders for some register probably used by the dimm board 4) corrects a little error in a ROM board register (very important, now at least the gdrom games try to start).
 - Added region and regionbytes fields to the deviceconfig, which are auto-filled by the device manager before starting the device. This simplifies the auto-binding process for devices. Added new selector for device-specific ROM regions. Not yet wired up in the ROM loader [Aaron Giles].
 - Simplified SH2 DRC shift/rotate instruction implementations [Aaron Giles].
@@ -84,10 +84,10 @@ Source changes:
 - Updated xmlfile.c to specify the line number for each node, for more accurate error reporting [Aaron Giles].
 - Removed old cheat.c/.h and replaced them with code that will read and write the new XML-based cheat format using the new cheatpath option (cheats still need to be enabled in order to load at all). Note that the cheats are not implemented yet, but they are fully parsed. To test saving, whenever a cheat file is successfully loaded, it is immediately written back out as 'output.xml' to the cheat directory for validation [Aaron Giles].
 - Minor cleanups [Oliver Stoenberg]:
-  * Removed of unprintable chars (newlines) in SH-2 disassembler.
+  * Removed of unprintable chars (newlines) in SH-2 disassembler;
   * Removed a few unnecessary checks after malloc_ort_die() calls.
   - Changed two romload.c warnings to use GAMENOUN instead.
-  * Added "deprecat.h" in a  few src/mame/drivers files.
-  * Cleaned up the mame.mak by adding all missing defines and grouping them based on cpu.mak.
+  * Added "deprecat.h" in a  few src/mame/drivers files;
+  * Cleaned up the mame.mak by adding all missing defines and grouping them based on cpu.mak;
   * Renamed video_exit() to winvideo_exit() for consistency in function names.
 - Changed commented-out functions to #ifdefs [Atari Ace].
