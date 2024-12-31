@@ -614,7 +614,7 @@ A tape can only be successfully loaded if the machine it was recorded on has the
 Even then, tape loading is unreliable and there's no error if things go wrong.
 
 $end
-$info=aplscar,atc1425a,cdibios,cjddzsp,dragntr,dragntr2,gj4000,gjmovie,gjrstar,gjrstar3,gln,gls,goldnjkr,hmxpro,imac,ktx20t02,lhfy,megapc,megapcpl,mghammer,mj1,nextc,ochipvlp,parcade,pcd4nl,pcompelr,pitagjr,scumimon,sm48650usc,tagalaga,taspinv,taturtf,tenkai2b,thinkpad850,vbaby,vp415,vs29815,vs29915,vs29915a,vs29915j,wccf1dup,wccf2chk,wto2840sp
+$info=aplscar,atc1425a,cjddzsp,dragntr,dragntr2,gj4000,gjmovie,gjrstar,gjrstar3,gln,gls,goldnjkr,hmxpro,imac,ktx20t02,lhfy,megapc,megapcpl,mghammer,mj1,nextc,ochipvlp,parcade,pcd4nl,pcompelr,pitagjr,scumimon,sm48650usc,tagalaga,taspinv,taturtf,tenkai2b,thinkpad850,vbaby,vs29815,vs29915,vs29915a,vs29915j,wccf1dup,wccf2chk,wto2840sp
 $mame
 TIPS:
 
@@ -1969,6 +1969,12 @@ D Aaaaa Lnn - save a tape starting at address aaaa for nn bytes (01 to FF). Leng
 (you type D aaaa nn, it fills in the rest for you).
 
 Cassette loading doesn't work. Saving is ok because the data can be loaded onto the Super-80, but this system has great difficulty loading its own programs.
+
+$end
+$info=cdibios,vp415
+$mame
+
+This system works in MAMEUI only. It will crash MAME at start.
 
 $end
 $info=cgenie
@@ -13029,13 +13035,6 @@ To save a tape: CSAVE"x"
 To load a tape: CLOAD or RUN"CAS:"
 
 $end
-$info=svision
-$mame
-INITIALIZATION:
-
-MAMEUI: Make sure you select a cartridge before starting this system. If you don't, it will crash at start.
-
-$end
 $info=sweetl
 $mame
 INITIALIZATION:
@@ -13766,6 +13765,7 @@ INITIALIZATION:
 
 This system is incomplete. The SAVE and OPEN commands are not implemented, and will cause a reboot.
 
+To load a tape: OLD CS1
 $end
 $info=ti99_4,ti99_4a,ti99_232,ti99_8
 $mame
@@ -13773,7 +13773,7 @@ INITIALIZATION:
 
 To save a tape: SAVE CS1
 
-To load a tape: LOAD CS1
+To load a tape: OLD CS1
 
 The device name is case-sensitive, and must be in UPPERcase. Probably a good idea to make sure capslock is selected.
 
@@ -13784,7 +13784,9 @@ $info=ti99_4p
 $mame
 INITIALIZATION:
 
-Although listed as working, all you'll get is a black screen. The things listed in the driver don't work.
+Although listed as working, all you'll get is a black screen. It is necessary to obtain the file "hsgpl80.zip", place it into the system's nvram folder, extract the contents, and rename each file by removing the "ioport_" prefix. Take note of the slot number in the filenames. This "peb" slot needs to be enabled with the "hsgpl" device. Reboot and it should work.
+
+You can instead flash the nvram manually. Read mametesters report 9019 for more information.
 
 $end
 $info=tictac
