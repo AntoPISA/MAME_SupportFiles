@@ -1,4 +1,4 @@
-﻿# MAME GAMEINIT.DAT v0.272   Latest Update: December 24, 2024
+﻿# MAME GAMEINIT.DAT v0.272   Latest Update: December 31, 2024
 #                         Project started: September 10, 2015
 #          Merged to the file startup.dat:  December 17, 2024
 #
@@ -9219,717 +9219,7 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
-$info=racedriv1
-$mame
-INITIALIZATION:
-
-If you are having trouble controlling vehicle or the brake is always on, calibration must be done!
-First off, Delete any .NV (NVRAM) file for this game contained in your NVRAM directory, called harddriv.nv or racedriv.nv or the same as the setname you intend to use. You need to understand how the controls are mapped in MAME. It's not very intuitive, so pay attention:
-
-Steering Wheel: Player 1 Paddle control, by default maps to the mouse and the [ Left/Right Arrow ] keys.
-Gas Pedal: Pedal 1 control, by default maps to the [ Left Control ] key. Pressing the key will quickly depress the analog control; releasing the key will release it.
-Brake Pedal: Pedal 2 control, by default maps to the [ Left Alt ] key. Operates the same way as the gas pedal.
-Clutch Pedal: Pedal 3 control, by default maps to the [ Space ] key. Operates the same way as the gas and brake pedals.
-Key: Maps to Player 1 start button (default: [ 1 ] key).
-Abort: Maps to Player 2 start button (default: [ 2 ] key).
-
-Finally, here is a step-by-step tour through the calibration process. Note that even if you have an analog control connected to any of the analog controls in the game, it is much easier to do calibration with the keyboard.
-* Take your hands and feet off all controls then turn key. Make absolutely sure you haven't touched any of the controls up to this point, then press the [ 1 ] key.
-* Turn wheel counterclockwise as far as it will go then turn key. At this point, press and hold the Left key for about 5 seconds. After 5 seconds, press the 1 key while still holding down the left arrow. It should say New min 256.
-* Turn wheel clockwise as far as it will go then turn key. At this point, press and hold the Right key for about 10 seconds. After 10 seconds, press the [ 1 ] key while still holding down the right arrow. It should say Max 3840.
-* Put transmission in first then turn key and release. Since first gear is in the upper-left corner, press and hold the [ D ] and [ R ] keys for 5 seconds. After 5 seconds, press the [ 1 ] key while still holding down the [ D ] and [ R ] keys.
-* Put transmission in fourth then turn key again. Since fourth gear is in the lower-right corner, press and hold the [ F ] and [ G ] keys for 10 seconds. After 10 seconds, press the [ 1 ] key while still holding down the [ F ] and [ G ] keys.
-* Move seat full forward then turn key and release. Since the seat feedback isn't implemented in the MAME driver, just go ahead and press the [ 1 ] key here.
-* Move fully back and to side then turn key again. Just press the 1 key here again to move on.
-* Take your foot off the brake turn key to abort. Now this is the tricky part. When you see this screen do nothing. Wait for a couple of seconds until it displays New max 4064. Do NOT press the 1 key prematurely here or you will screw up the calibration!
-
-Now step on brake firmly and release. Do this by pressing and holding the [ Left Alt ] key for 3 seconds, and then letting go. If all is well, it should display Range 4064 and move on to the game.
-
-TIPS:
-
-Gameplay is choppy at times, but I have enough CPU power?
-Although the FPS counter shows 100% speed for these games, they may appear choppy. This is true to the original — even the original hardware of these games struggled with them and therefore the choppiness is actually accurate emulation of these games. You may be able to get rid of it in some cases by using the -cheat parameter, hitting the tilde key and browsing the on screen menu until you find "CPU overclocking". This will run the emulated CPU faster which may or may not fix it. It may also cause the emulation to have errors, so don't bug people if overclocking screws up a game.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=racedriv2
-$mame
-INITIALIZATION:
-
-If you are having trouble controlling vehicle or the brake is always on, calibration must be done!
-First off, Delete any .NV (NVRAM) file for this game contained in your NVRAM directory, called harddriv.nv or racedriv.nv or the same as the setname you intend to use. You need to understand how the controls are mapped in MAME. It's not very intuitive, so pay attention:
-
-Steering Wheel: Player 1 Paddle control, by default maps to the mouse and the [ Left/Right Arrow ] keys.
-Gas Pedal: Pedal 1 control, by default maps to the [ Left Control ] key. Pressing the key will quickly depress the analog control; releasing the key will release it.
-Brake Pedal: Pedal 2 control, by default maps to the [ Left Alt ] key. Operates the same way as the gas pedal.
-Clutch Pedal: Pedal 3 control, by default maps to the [ Space ] key. Operates the same way as the gas and brake pedals.
-Key: Maps to Player 1 start button (default: [ 1 ] key).
-Abort: Maps to Player 2 start button (default: [ 2 ] key).
-
-Finally, here is a step-by-step tour through the calibration process. Note that even if you have an analog control connected to any of the analog controls in the game, it is much easier to do calibration with the keyboard.
-* Take your hands and feet off all controls then turn key. Make absolutely sure you haven't touched any of the controls up to this point, then press the [ 1 ] key.
-* Turn wheel counterclockwise as far as it will go then turn key. At this point, press and hold the Left key for about 5 seconds. After 5 seconds, press the 1 key while still holding down the left arrow. It should say New min 256.
-* Turn wheel clockwise as far as it will go then turn key. At this point, press and hold the Right key for about 10 seconds. After 10 seconds, press the [ 1 ] key while still holding down the right arrow. It should say Max 3840.
-* Put transmission in first then turn key and release. Since first gear is in the upper-left corner, press and hold the [ D ] and [ R ] keys for 5 seconds. After 5 seconds, press the [ 1 ] key while still holding down the [ D ] and [ R ] keys.
-* Put transmission in fourth then turn key again. Since fourth gear is in the lower-right corner, press and hold the [ F ] and [ G ] keys for 10 seconds. After 10 seconds, press the [ 1 ] key while still holding down the [ F ] and [ G ] keys.
-* Move seat full forward then turn key and release. Since the seat feedback isn't implemented in the MAME driver, just go ahead and press the [ 1 ] key here.
-* Move fully back and to side then turn key again. Just press the 1 key here again to move on.
-* Take your foot off the brake turn key to abort. Now this is the tricky part. When you see this screen do nothing. Wait for a couple of seconds until it displays New max 4064. Do NOT press the 1 key prematurely here or you will screw up the calibration!
-
-Now step on brake firmly and release. Do this by pressing and holding the [ Left Alt ] key for 3 seconds, and then letting go. If all is well, it should display Range 4064 and move on to the game.
-
-TIPS:
-
-Gameplay is choppy at times, but I have enough CPU power?
-Although the FPS counter shows 100% speed for these games, they may appear choppy. This is true to the original — even the original hardware of these games struggled with them and therefore the choppiness is actually accurate emulation of these games. You may be able to get rid of it in some cases by using the -cheat parameter, hitting the tilde key and browsing the on screen menu until you find "CPU overclocking". This will run the emulated CPU faster which may or may not fix it. It may also cause the emulation to have errors, so don't bug people if overclocking screws up a game.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=racedriv3
-$mame
-INITIALIZATION:
-
-If you are having trouble controlling vehicle or the brake is always on, calibration must be done!
-First off, Delete any .NV (NVRAM) file for this game contained in your NVRAM directory, called harddriv.nv or racedriv.nv or the same as the setname you intend to use. You need to understand how the controls are mapped in MAME. It's not very intuitive, so pay attention:
-
-Steering Wheel: Player 1 Paddle control, by default maps to the mouse and the [ Left/Right Arrow ] keys.
-Gas Pedal: Pedal 1 control, by default maps to the [ Left Control ] key. Pressing the key will quickly depress the analog control; releasing the key will release it.
-Brake Pedal: Pedal 2 control, by default maps to the [ Left Alt ] key. Operates the same way as the gas pedal.
-Clutch Pedal: Pedal 3 control, by default maps to the [ Space ] key. Operates the same way as the gas and brake pedals.
-Key: Maps to Player 1 start button (default: [ 1 ] key).
-Abort: Maps to Player 2 start button (default: [ 2 ] key).
-
-Finally, here is a step-by-step tour through the calibration process. Note that even if you have an analog control connected to any of the analog controls in the game, it is much easier to do calibration with the keyboard.
-* Take your hands and feet off all controls then turn key. Make absolutely sure you haven't touched any of the controls up to this point, then press the [ 1 ] key.
-* Turn wheel counterclockwise as far as it will go then turn key. At this point, press and hold the Left key for about 5 seconds. After 5 seconds, press the 1 key while still holding down the left arrow. It should say New min 256.
-* Turn wheel clockwise as far as it will go then turn key. At this point, press and hold the Right key for about 10 seconds. After 10 seconds, press the [ 1 ] key while still holding down the right arrow. It should say Max 3840.
-* Put transmission in first then turn key and release. Since first gear is in the upper-left corner, press and hold the [ D ] and [ R ] keys for 5 seconds. After 5 seconds, press the [ 1 ] key while still holding down the [ D ] and [ R ] keys.
-* Put transmission in fourth then turn key again. Since fourth gear is in the lower-right corner, press and hold the [ F ] and [ G ] keys for 10 seconds. After 10 seconds, press the [ 1 ] key while still holding down the [ F ] and [ G ] keys.
-* Move seat full forward then turn key and release. Since the seat feedback isn't implemented in the MAME driver, just go ahead and press the [ 1 ] key here.
-* Move fully back and to side then turn key again. Just press the 1 key here again to move on.
-* Take your foot off the brake turn key to abort. Now this is the tricky part. When you see this screen do nothing. Wait for a couple of seconds until it displays New max 4064. Do NOT press the 1 key prematurely here or you will screw up the calibration!
-
-Now step on brake firmly and release. Do this by pressing and holding the [ Left Alt ] key for 3 seconds, and then letting go. If all is well, it should display Range 4064 and move on to the game.
-
-TIPS:
-
-Gameplay is choppy at times, but I have enough CPU power?
-Although the FPS counter shows 100% speed for these games, they may appear choppy. This is true to the original — even the original hardware of these games struggled with them and therefore the choppiness is actually accurate emulation of these games. You may be able to get rid of it in some cases by using the -cheat parameter, hitting the tilde key and browsing the on screen menu until you find "CPU overclocking". This will run the emulated CPU faster which may or may not fix it. It may also cause the emulation to have errors, so don't bug people if overclocking screws up a game.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=racedriv4
-$mame
-INITIALIZATION:
-
-If you are having trouble controlling vehicle or the brake is always on, calibration must be done!
-First off, Delete any .NV (NVRAM) file for this game contained in your NVRAM directory, called harddriv.nv or racedriv.nv or the same as the setname you intend to use. You need to understand how the controls are mapped in MAME. It's not very intuitive, so pay attention:
-
-Steering Wheel: Player 1 Paddle control, by default maps to the mouse and the [ Left/Right Arrow ] keys.
-Gas Pedal: Pedal 1 control, by default maps to the [ Left Control ] key. Pressing the key will quickly depress the analog control; releasing the key will release it.
-Brake Pedal: Pedal 2 control, by default maps to the [ Left Alt ] key. Operates the same way as the gas pedal.
-Clutch Pedal: Pedal 3 control, by default maps to the [ Space ] key. Operates the same way as the gas and brake pedals.
-Key: Maps to Player 1 start button (default: [ 1 ] key).
-Abort: Maps to Player 2 start button (default: [ 2 ] key).
-
-Finally, here is a step-by-step tour through the calibration process. Note that even if you have an analog control connected to any of the analog controls in the game, it is much easier to do calibration with the keyboard.
-* Take your hands and feet off all controls then turn key. Make absolutely sure you haven't touched any of the controls up to this point, then press the [ 1 ] key.
-* Turn wheel counterclockwise as far as it will go then turn key. At this point, press and hold the Left key for about 5 seconds. After 5 seconds, press the 1 key while still holding down the left arrow. It should say New min 256.
-* Turn wheel clockwise as far as it will go then turn key. At this point, press and hold the Right key for about 10 seconds. After 10 seconds, press the [ 1 ] key while still holding down the right arrow. It should say Max 3840.
-* Put transmission in first then turn key and release. Since first gear is in the upper-left corner, press and hold the [ D ] and [ R ] keys for 5 seconds. After 5 seconds, press the [ 1 ] key while still holding down the [ D ] and [ R ] keys.
-* Put transmission in fourth then turn key again. Since fourth gear is in the lower-right corner, press and hold the [ F ] and [ G ] keys for 10 seconds. After 10 seconds, press the [ 1 ] key while still holding down the [ F ] and [ G ] keys.
-* Move seat full forward then turn key and release. Since the seat feedback isn't implemented in the MAME driver, just go ahead and press the [ 1 ] key here.
-* Move fully back and to side then turn key again. Just press the 1 key here again to move on.
-* Take your foot off the brake turn key to abort. Now this is the tricky part. When you see this screen do nothing. Wait for a couple of seconds until it displays New max 4064. Do NOT press the 1 key prematurely here or you will screw up the calibration!
-
-Now step on brake firmly and release. Do this by pressing and holding the [ Left Alt ] key for 3 seconds, and then letting go. If all is well, it should display Range 4064 and move on to the game.
-
-TIPS:
-
-Gameplay is choppy at times, but I have enough CPU power?
-Although the FPS counter shows 100% speed for these games, they may appear choppy. This is true to the original — even the original hardware of these games struggled with them and therefore the choppiness is actually accurate emulation of these games. You may be able to get rid of it in some cases by using the -cheat parameter, hitting the tilde key and browsing the on screen menu until you find "CPU overclocking". This will run the emulated CPU faster which may or may not fix it. It may also cause the emulation to have errors, so don't bug people if overclocking screws up a game.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=racedrivb
-$mame
-INITIALIZATION:
-
-If you are having trouble controlling vehicle or the brake is always on, calibration must be done!
-First off, Delete any .NV (NVRAM) file for this game contained in your NVRAM directory, called harddriv.nv or racedriv.nv or the same as the setname you intend to use. You need to understand how the controls are mapped in MAME. It's not very intuitive, so pay attention:
-
-Steering Wheel: Player 1 Paddle control, by default maps to the mouse and the [ Left/Right Arrow ] keys.
-Gas Pedal: Pedal 1 control, by default maps to the [ Left Control ] key. Pressing the key will quickly depress the analog control; releasing the key will release it.
-Brake Pedal: Pedal 2 control, by default maps to the [ Left Alt ] key. Operates the same way as the gas pedal.
-Clutch Pedal: Pedal 3 control, by default maps to the [ Space ] key. Operates the same way as the gas and brake pedals.
-Key: Maps to Player 1 start button (default: [ 1 ] key).
-Abort: Maps to Player 2 start button (default: [ 2 ] key).
-
-Finally, here is a step-by-step tour through the calibration process. Note that even if you have an analog control connected to any of the analog controls in the game, it is much easier to do calibration with the keyboard.
-* Take your hands and feet off all controls then turn key. Make absolutely sure you haven't touched any of the controls up to this point, then press the [ 1 ] key.
-* Turn wheel counterclockwise as far as it will go then turn key. At this point, press and hold the Left key for about 5 seconds. After 5 seconds, press the 1 key while still holding down the left arrow. It should say New min 256.
-* Turn wheel clockwise as far as it will go then turn key. At this point, press and hold the Right key for about 10 seconds. After 10 seconds, press the [ 1 ] key while still holding down the right arrow. It should say Max 3840.
-* Put transmission in first then turn key and release. Since first gear is in the upper-left corner, press and hold the [ D ] and [ R ] keys for 5 seconds. After 5 seconds, press the [ 1 ] key while still holding down the [ D ] and [ R ] keys.
-* Put transmission in fourth then turn key again. Since fourth gear is in the lower-right corner, press and hold the [ F ] and [ G ] keys for 10 seconds. After 10 seconds, press the [ 1 ] key while still holding down the [ F ] and [ G ] keys.
-* Move seat full forward then turn key and release. Since the seat feedback isn't implemented in the MAME driver, just go ahead and press the [ 1 ] key here.
-* Move fully back and to side then turn key again. Just press the 1 key here again to move on.
-* Take your foot off the brake turn key to abort. Now this is the tricky part. When you see this screen do nothing. Wait for a couple of seconds until it displays New max 4064. Do NOT press the 1 key prematurely here or you will screw up the calibration!
-
-Now step on brake firmly and release. Do this by pressing and holding the [ Left Alt ] key for 3 seconds, and then letting go. If all is well, it should display Range 4064 and move on to the game.
-
-TIPS:
-
-Gameplay is choppy at times, but I have enough CPU power?
-Although the FPS counter shows 100% speed for these games, they may appear choppy. This is true to the original — even the original hardware of these games struggled with them and therefore the choppiness is actually accurate emulation of these games. You may be able to get rid of it in some cases by using the -cheat parameter, hitting the tilde key and browsing the on screen menu until you find "CPU overclocking". This will run the emulated CPU faster which may or may not fix it. It may also cause the emulation to have errors, so don't bug people if overclocking screws up a game.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=racedrivb1
-$mame
-INITIALIZATION:
-
-If you are having trouble controlling vehicle or the brake is always on, calibration must be done!
-First off, Delete any .NV (NVRAM) file for this game contained in your NVRAM directory, called harddriv.nv or racedriv.nv or the same as the setname you intend to use. You need to understand how the controls are mapped in MAME. It's not very intuitive, so pay attention:
-
-Steering Wheel: Player 1 Paddle control, by default maps to the mouse and the [ Left/Right Arrow ] keys.
-Gas Pedal: Pedal 1 control, by default maps to the [ Left Control ] key. Pressing the key will quickly depress the analog control; releasing the key will release it.
-Brake Pedal: Pedal 2 control, by default maps to the [ Left Alt ] key. Operates the same way as the gas pedal.
-Clutch Pedal: Pedal 3 control, by default maps to the [ Space ] key. Operates the same way as the gas and brake pedals.
-Key: Maps to Player 1 start button (default: [ 1 ] key).
-Abort: Maps to Player 2 start button (default: [ 2 ] key).
-
-Finally, here is a step-by-step tour through the calibration process. Note that even if you have an analog control connected to any of the analog controls in the game, it is much easier to do calibration with the keyboard.
-* Take your hands and feet off all controls then turn key. Make absolutely sure you haven't touched any of the controls up to this point, then press the [ 1 ] key.
-* Turn wheel counterclockwise as far as it will go then turn key. At this point, press and hold the Left key for about 5 seconds. After 5 seconds, press the 1 key while still holding down the left arrow. It should say New min 256.
-* Turn wheel clockwise as far as it will go then turn key. At this point, press and hold the Right key for about 10 seconds. After 10 seconds, press the [ 1 ] key while still holding down the right arrow. It should say Max 3840.
-* Put transmission in first then turn key and release. Since first gear is in the upper-left corner, press and hold the [ D ] and [ R ] keys for 5 seconds. After 5 seconds, press the [ 1 ] key while still holding down the [ D ] and [ R ] keys.
-* Put transmission in fourth then turn key again. Since fourth gear is in the lower-right corner, press and hold the [ F ] and [ G ] keys for 10 seconds. After 10 seconds, press the [ 1 ] key while still holding down the [ F ] and [ G ] keys.
-* Move seat full forward then turn key and release. Since the seat feedback isn't implemented in the MAME driver, just go ahead and press the [ 1 ] key here.
-* Move fully back and to side then turn key again. Just press the 1 key here again to move on.
-* Take your foot off the brake turn key to abort. Now this is the tricky part. When you see this screen do nothing. Wait for a couple of seconds until it displays New max 4064. Do NOT press the 1 key prematurely here or you will screw up the calibration!
-
-Now step on brake firmly and release. Do this by pressing and holding the [ Left Alt ] key for 3 seconds, and then letting go. If all is well, it should display Range 4064 and move on to the game.
-
-TIPS:
-
-Gameplay is choppy at times, but I have enough CPU power?
-Although the FPS counter shows 100% speed for these games, they may appear choppy. This is true to the original — even the original hardware of these games struggled with them and therefore the choppiness is actually accurate emulation of these games. You may be able to get rid of it in some cases by using the -cheat parameter, hitting the tilde key and browsing the on screen menu until you find "CPU overclocking". This will run the emulated CPU faster which may or may not fix it. It may also cause the emulation to have errors, so don't bug people if overclocking screws up a game.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=racedrivb4
-$mame
-INITIALIZATION:
-
-If you are having trouble controlling vehicle or the brake is always on, calibration must be done!
-First off, Delete any .NV (NVRAM) file for this game contained in your NVRAM directory, called harddriv.nv or racedriv.nv or the same as the setname you intend to use. You need to understand how the controls are mapped in MAME. It's not very intuitive, so pay attention:
-
-Steering Wheel: Player 1 Paddle control, by default maps to the mouse and the [ Left/Right Arrow ] keys.
-Gas Pedal: Pedal 1 control, by default maps to the [ Left Control ] key. Pressing the key will quickly depress the analog control; releasing the key will release it.
-Brake Pedal: Pedal 2 control, by default maps to the [ Left Alt ] key. Operates the same way as the gas pedal.
-Clutch Pedal: Pedal 3 control, by default maps to the [ Space ] key. Operates the same way as the gas and brake pedals.
-Key: Maps to Player 1 start button (default: [ 1 ] key).
-Abort: Maps to Player 2 start button (default: [ 2 ] key).
-
-Finally, here is a step-by-step tour through the calibration process. Note that even if you have an analog control connected to any of the analog controls in the game, it is much easier to do calibration with the keyboard.
-* Take your hands and feet off all controls then turn key. Make absolutely sure you haven't touched any of the controls up to this point, then press the [ 1 ] key.
-* Turn wheel counterclockwise as far as it will go then turn key. At this point, press and hold the Left key for about 5 seconds. After 5 seconds, press the 1 key while still holding down the left arrow. It should say New min 256.
-* Turn wheel clockwise as far as it will go then turn key. At this point, press and hold the Right key for about 10 seconds. After 10 seconds, press the [ 1 ] key while still holding down the right arrow. It should say Max 3840.
-* Put transmission in first then turn key and release. Since first gear is in the upper-left corner, press and hold the [ D ] and [ R ] keys for 5 seconds. After 5 seconds, press the [ 1 ] key while still holding down the [ D ] and [ R ] keys.
-* Put transmission in fourth then turn key again. Since fourth gear is in the lower-right corner, press and hold the [ F ] and [ G ] keys for 10 seconds. After 10 seconds, press the [ 1 ] key while still holding down the [ F ] and [ G ] keys.
-* Move seat full forward then turn key and release. Since the seat feedback isn't implemented in the MAME driver, just go ahead and press the [ 1 ] key here.
-* Move fully back and to side then turn key again. Just press the 1 key here again to move on.
-* Take your foot off the brake turn key to abort. Now this is the tricky part. When you see this screen do nothing. Wait for a couple of seconds until it displays New max 4064. Do NOT press the 1 key prematurely here or you will screw up the calibration!
-
-Now step on brake firmly and release. Do this by pressing and holding the [ Left Alt ] key for 3 seconds, and then letting go. If all is well, it should display Range 4064 and move on to the game.
-
-TIPS:
-
-Gameplay is choppy at times, but I have enough CPU power?
-Although the FPS counter shows 100% speed for these games, they may appear choppy. This is true to the original — even the original hardware of these games struggled with them and therefore the choppiness is actually accurate emulation of these games. You may be able to get rid of it in some cases by using the -cheat parameter, hitting the tilde key and browsing the on screen menu until you find "CPU overclocking". This will run the emulated CPU faster which may or may not fix it. It may also cause the emulation to have errors, so don't bug people if overclocking screws up a game.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=racedrivc
-$mame
-INITIALIZATION:
-
-If you are having trouble controlling vehicle or the brake is always on, calibration must be done!
-First off, Delete any .NV (NVRAM) file for this game contained in your NVRAM directory, called harddriv.nv or racedriv.nv or the same as the setname you intend to use. You need to understand how the controls are mapped in MAME. It's not very intuitive, so pay attention:
-
-Steering Wheel: Player 1 Paddle control, by default maps to the mouse and the [ Left/Right Arrow ] keys.
-Gas Pedal: Pedal 1 control, by default maps to the [ Left Control ] key. Pressing the key will quickly depress the analog control; releasing the key will release it.
-Brake Pedal: Pedal 2 control, by default maps to the [ Left Alt ] key. Operates the same way as the gas pedal.
-Clutch Pedal: Pedal 3 control, by default maps to the [ Space ] key. Operates the same way as the gas and brake pedals.
-Key: Maps to Player 1 start button (default: [ 1 ] key).
-Abort: Maps to Player 2 start button (default: [ 2 ] key).
-
-Finally, here is a step-by-step tour through the calibration process. Note that even if you have an analog control connected to any of the analog controls in the game, it is much easier to do calibration with the keyboard.
-* Take your hands and feet off all controls then turn key. Make absolutely sure you haven't touched any of the controls up to this point, then press the [ 1 ] key.
-* Turn wheel counterclockwise as far as it will go then turn key. At this point, press and hold the Left key for about 5 seconds. After 5 seconds, press the 1 key while still holding down the left arrow. It should say New min 256.
-* Turn wheel clockwise as far as it will go then turn key. At this point, press and hold the Right key for about 10 seconds. After 10 seconds, press the [ 1 ] key while still holding down the right arrow. It should say Max 3840.
-* Put transmission in first then turn key and release. Since first gear is in the upper-left corner, press and hold the [ D ] and [ R ] keys for 5 seconds. After 5 seconds, press the [ 1 ] key while still holding down the [ D ] and [ R ] keys.
-* Put transmission in fourth then turn key again. Since fourth gear is in the lower-right corner, press and hold the [ F ] and [ G ] keys for 10 seconds. After 10 seconds, press the [ 1 ] key while still holding down the [ F ] and [ G ] keys.
-* Move seat full forward then turn key and release. Since the seat feedback isn't implemented in the MAME driver, just go ahead and press the [ 1 ] key here.
-* Move fully back and to side then turn key again. Just press the 1 key here again to move on.
-* Take your foot off the brake turn key to abort. Now this is the tricky part. When you see this screen do nothing. Wait for a couple of seconds until it displays New max 4064. Do NOT press the 1 key prematurely here or you will screw up the calibration!
-
-Now step on brake firmly and release. Do this by pressing and holding the [ Left Alt ] key for 3 seconds, and then letting go. If all is well, it should display Range 4064 and move on to the game.
-
-TIPS:
-
-Gameplay is choppy at times, but I have enough CPU power?
-Although the FPS counter shows 100% speed for these games, they may appear choppy. This is true to the original — even the original hardware of these games struggled with them and therefore the choppiness is actually accurate emulation of these games. You may be able to get rid of it in some cases by using the -cheat parameter, hitting the tilde key and browsing the on screen menu until you find "CPU overclocking". This will run the emulated CPU faster which may or may not fix it. It may also cause the emulation to have errors, so don't bug people if overclocking screws up a game.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=racedrivc1
-$mame
-INITIALIZATION:
-
-If you are having trouble controlling vehicle or the brake is always on, calibration must be done!
-First off, Delete any .NV (NVRAM) file for this game contained in your NVRAM directory, called harddriv.nv or racedriv.nv or the same as the setname you intend to use. You need to understand how the controls are mapped in MAME. It's not very intuitive, so pay attention:
-
-Steering Wheel: Player 1 Paddle control, by default maps to the mouse and the [ Left/Right Arrow ] keys.
-Gas Pedal: Pedal 1 control, by default maps to the [ Left Control ] key. Pressing the key will quickly depress the analog control; releasing the key will release it.
-Brake Pedal: Pedal 2 control, by default maps to the [ Left Alt ] key. Operates the same way as the gas pedal.
-Clutch Pedal: Pedal 3 control, by default maps to the [ Space ] key. Operates the same way as the gas and brake pedals.
-Key: Maps to Player 1 start button (default: [ 1 ] key).
-Abort: Maps to Player 2 start button (default: [ 2 ] key).
-
-Finally, here is a step-by-step tour through the calibration process. Note that even if you have an analog control connected to any of the analog controls in the game, it is much easier to do calibration with the keyboard.
-* Take your hands and feet off all controls then turn key. Make absolutely sure you haven't touched any of the controls up to this point, then press the [ 1 ] key.
-* Turn wheel counterclockwise as far as it will go then turn key. At this point, press and hold the Left key for about 5 seconds. After 5 seconds, press the 1 key while still holding down the left arrow. It should say New min 256.
-* Turn wheel clockwise as far as it will go then turn key. At this point, press and hold the Right key for about 10 seconds. After 10 seconds, press the [ 1 ] key while still holding down the right arrow. It should say Max 3840.
-* Put transmission in first then turn key and release. Since first gear is in the upper-left corner, press and hold the [ D ] and [ R ] keys for 5 seconds. After 5 seconds, press the [ 1 ] key while still holding down the [ D ] and [ R ] keys.
-* Put transmission in fourth then turn key again. Since fourth gear is in the lower-right corner, press and hold the [ F ] and [ G ] keys for 10 seconds. After 10 seconds, press the [ 1 ] key while still holding down the [ F ] and [ G ] keys.
-* Move seat full forward then turn key and release. Since the seat feedback isn't implemented in the MAME driver, just go ahead and press the [ 1 ] key here.
-* Move fully back and to side then turn key again. Just press the 1 key here again to move on.
-* Take your foot off the brake turn key to abort. Now this is the tricky part. When you see this screen do nothing. Wait for a couple of seconds until it displays New max 4064. Do NOT press the 1 key prematurely here or you will screw up the calibration!
-
-Now step on brake firmly and release. Do this by pressing and holding the [ Left Alt ] key for 3 seconds, and then letting go. If all is well, it should display Range 4064 and move on to the game.
-
-TIPS:
-
-Gameplay is choppy at times, but I have enough CPU power?
-Although the FPS counter shows 100% speed for these games, they may appear choppy. This is true to the original — even the original hardware of these games struggled with them and therefore the choppiness is actually accurate emulation of these games. You may be able to get rid of it in some cases by using the -cheat parameter, hitting the tilde key and browsing the on screen menu until you find "CPU overclocking". This will run the emulated CPU faster which may or may not fix it. It may also cause the emulation to have errors, so don't bug people if overclocking screws up a game.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=racedrivc2
-$mame
-INITIALIZATION:
-
-If you are having trouble controlling vehicle or the brake is always on, calibration must be done!
-First off, Delete any .NV (NVRAM) file for this game contained in your NVRAM directory, called harddriv.nv or racedriv.nv or the same as the setname you intend to use. You need to understand how the controls are mapped in MAME. It's not very intuitive, so pay attention:
-
-Steering Wheel: Player 1 Paddle control, by default maps to the mouse and the [ Left/Right Arrow ] keys.
-Gas Pedal: Pedal 1 control, by default maps to the [ Left Control ] key. Pressing the key will quickly depress the analog control; releasing the key will release it.
-Brake Pedal: Pedal 2 control, by default maps to the [ Left Alt ] key. Operates the same way as the gas pedal.
-Clutch Pedal: Pedal 3 control, by default maps to the [ Space ] key. Operates the same way as the gas and brake pedals.
-Key: Maps to Player 1 start button (default: [ 1 ] key).
-Abort: Maps to Player 2 start button (default: [ 2 ] key).
-
-Finally, here is a step-by-step tour through the calibration process. Note that even if you have an analog control connected to any of the analog controls in the game, it is much easier to do calibration with the keyboard.
-* Take your hands and feet off all controls then turn key. Make absolutely sure you haven't touched any of the controls up to this point, then press the [ 1 ] key.
-* Turn wheel counterclockwise as far as it will go then turn key. At this point, press and hold the Left key for about 5 seconds. After 5 seconds, press the 1 key while still holding down the left arrow. It should say New min 256.
-* Turn wheel clockwise as far as it will go then turn key. At this point, press and hold the Right key for about 10 seconds. After 10 seconds, press the [ 1 ] key while still holding down the right arrow. It should say Max 3840.
-* Put transmission in first then turn key and release. Since first gear is in the upper-left corner, press and hold the [ D ] and [ R ] keys for 5 seconds. After 5 seconds, press the [ 1 ] key while still holding down the [ D ] and [ R ] keys.
-* Put transmission in fourth then turn key again. Since fourth gear is in the lower-right corner, press and hold the [ F ] and [ G ] keys for 10 seconds. After 10 seconds, press the [ 1 ] key while still holding down the [ F ] and [ G ] keys.
-* Move seat full forward then turn key and release. Since the seat feedback isn't implemented in the MAME driver, just go ahead and press the [ 1 ] key here.
-* Move fully back and to side then turn key again. Just press the 1 key here again to move on.
-* Take your foot off the brake turn key to abort. Now this is the tricky part. When you see this screen do nothing. Wait for a couple of seconds until it displays New max 4064. Do NOT press the 1 key prematurely here or you will screw up the calibration!
-
-Now step on brake firmly and release. Do this by pressing and holding the [ Left Alt ] key for 3 seconds, and then letting go. If all is well, it should display Range 4064 and move on to the game.
-
-TIPS:
-
-Gameplay is choppy at times, but I have enough CPU power?
-Although the FPS counter shows 100% speed for these games, they may appear choppy. This is true to the original — even the original hardware of these games struggled with them and therefore the choppiness is actually accurate emulation of these games. You may be able to get rid of it in some cases by using the -cheat parameter, hitting the tilde key and browsing the on screen menu until you find "CPU overclocking". This will run the emulated CPU faster which may or may not fix it. It may also cause the emulation to have errors, so don't bug people if overclocking screws up a game.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=racedrivc4
-$mame
-INITIALIZATION:
-
-If you are having trouble controlling vehicle or the brake is always on, calibration must be done!
-First off, Delete any .NV (NVRAM) file for this game contained in your NVRAM directory, called harddriv.nv or racedriv.nv or the same as the setname you intend to use. You need to understand how the controls are mapped in MAME. It's not very intuitive, so pay attention:
-
-Steering Wheel: Player 1 Paddle control, by default maps to the mouse and the [ Left/Right Arrow ] keys.
-Gas Pedal: Pedal 1 control, by default maps to the [ Left Control ] key. Pressing the key will quickly depress the analog control; releasing the key will release it.
-Brake Pedal: Pedal 2 control, by default maps to the [ Left Alt ] key. Operates the same way as the gas pedal.
-Clutch Pedal: Pedal 3 control, by default maps to the [ Space ] key. Operates the same way as the gas and brake pedals.
-Key: Maps to Player 1 start button (default: [ 1 ] key).
-Abort: Maps to Player 2 start button (default: [ 2 ] key).
-
-Finally, here is a step-by-step tour through the calibration process. Note that even if you have an analog control connected to any of the analog controls in the game, it is much easier to do calibration with the keyboard.
-* Take your hands and feet off all controls then turn key. Make absolutely sure you haven't touched any of the controls up to this point, then press the [ 1 ] key.
-* Turn wheel counterclockwise as far as it will go then turn key. At this point, press and hold the Left key for about 5 seconds. After 5 seconds, press the 1 key while still holding down the left arrow. It should say New min 256.
-* Turn wheel clockwise as far as it will go then turn key. At this point, press and hold the Right key for about 10 seconds. After 10 seconds, press the [ 1 ] key while still holding down the right arrow. It should say Max 3840.
-* Put transmission in first then turn key and release. Since first gear is in the upper-left corner, press and hold the [ D ] and [ R ] keys for 5 seconds. After 5 seconds, press the [ 1 ] key while still holding down the [ D ] and [ R ] keys.
-* Put transmission in fourth then turn key again. Since fourth gear is in the lower-right corner, press and hold the [ F ] and [ G ] keys for 10 seconds. After 10 seconds, press the [ 1 ] key while still holding down the [ F ] and [ G ] keys.
-* Move seat full forward then turn key and release. Since the seat feedback isn't implemented in the MAME driver, just go ahead and press the [ 1 ] key here.
-* Move fully back and to side then turn key again. Just press the 1 key here again to move on.
-* Take your foot off the brake turn key to abort. Now this is the tricky part. When you see this screen do nothing. Wait for a couple of seconds until it displays New max 4064. Do NOT press the 1 key prematurely here or you will screw up the calibration!
-
-Now step on brake firmly and release. Do this by pressing and holding the [ Left Alt ] key for 3 seconds, and then letting go. If all is well, it should display Range 4064 and move on to the game.
-
-TIPS:
-
-Gameplay is choppy at times, but I have enough CPU power?
-Although the FPS counter shows 100% speed for these games, they may appear choppy. This is true to the original — even the original hardware of these games struggled with them and therefore the choppiness is actually accurate emulation of these games. You may be able to get rid of it in some cases by using the -cheat parameter, hitting the tilde key and browsing the on screen menu until you find "CPU overclocking". This will run the emulated CPU faster which may or may not fix it. It may also cause the emulation to have errors, so don't bug people if overclocking screws up a game.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=racedrivcb
-$mame
-INITIALIZATION:
-
-If you are having trouble controlling vehicle or the brake is always on, calibration must be done!
-First off, Delete any .NV (NVRAM) file for this game contained in your NVRAM directory, called harddriv.nv or racedriv.nv or the same as the setname you intend to use. You need to understand how the controls are mapped in MAME. It's not very intuitive, so pay attention:
-
-Steering Wheel: Player 1 Paddle control, by default maps to the mouse and the [ Left/Right Arrow ] keys.
-Gas Pedal: Pedal 1 control, by default maps to the [ Left Control ] key. Pressing the key will quickly depress the analog control; releasing the key will release it.
-Brake Pedal: Pedal 2 control, by default maps to the [ Left Alt ] key. Operates the same way as the gas pedal.
-Clutch Pedal: Pedal 3 control, by default maps to the [ Space ] key. Operates the same way as the gas and brake pedals.
-Key: Maps to Player 1 start button (default: [ 1 ] key).
-Abort: Maps to Player 2 start button (default: [ 2 ] key).
-
-Finally, here is a step-by-step tour through the calibration process. Note that even if you have an analog control connected to any of the analog controls in the game, it is much easier to do calibration with the keyboard.
-* Take your hands and feet off all controls then turn key. Make absolutely sure you haven't touched any of the controls up to this point, then press the [ 1 ] key.
-* Turn wheel counterclockwise as far as it will go then turn key. At this point, press and hold the Left key for about 5 seconds. After 5 seconds, press the 1 key while still holding down the left arrow. It should say New min 256.
-* Turn wheel clockwise as far as it will go then turn key. At this point, press and hold the Right key for about 10 seconds. After 10 seconds, press the [ 1 ] key while still holding down the right arrow. It should say Max 3840.
-* Put transmission in first then turn key and release. Since first gear is in the upper-left corner, press and hold the [ D ] and [ R ] keys for 5 seconds. After 5 seconds, press the [ 1 ] key while still holding down the [ D ] and [ R ] keys.
-* Put transmission in fourth then turn key again. Since fourth gear is in the lower-right corner, press and hold the [ F ] and [ G ] keys for 10 seconds. After 10 seconds, press the [ 1 ] key while still holding down the [ F ] and [ G ] keys.
-* Move seat full forward then turn key and release. Since the seat feedback isn't implemented in the MAME driver, just go ahead and press the [ 1 ] key here.
-* Move fully back and to side then turn key again. Just press the 1 key here again to move on.
-* Take your foot off the brake turn key to abort. Now this is the tricky part. When you see this screen do nothing. Wait for a couple of seconds until it displays New max 4064. Do NOT press the 1 key prematurely here or you will screw up the calibration!
-
-Now step on brake firmly and release. Do this by pressing and holding the [ Left Alt ] key for 3 seconds, and then letting go. If all is well, it should display Range 4064 and move on to the game.
-
-TIPS:
-
-Gameplay is choppy at times, but I have enough CPU power?
-Although the FPS counter shows 100% speed for these games, they may appear choppy. This is true to the original — even the original hardware of these games struggled with them and therefore the choppiness is actually accurate emulation of these games. You may be able to get rid of it in some cases by using the -cheat parameter, hitting the tilde key and browsing the on screen menu until you find "CPU overclocking". This will run the emulated CPU faster which may or may not fix it. It may also cause the emulation to have errors, so don't bug people if overclocking screws up a game.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=racedrivcb4
-$mame
-INITIALIZATION:
-
-If you are having trouble controlling vehicle or the brake is always on, calibration must be done!
-First off, Delete any .NV (NVRAM) file for this game contained in your NVRAM directory, called harddriv.nv or racedriv.nv or the same as the setname you intend to use. You need to understand how the controls are mapped in MAME. It's not very intuitive, so pay attention:
-
-Steering Wheel: Player 1 Paddle control, by default maps to the mouse and the [ Left/Right Arrow ] keys.
-Gas Pedal: Pedal 1 control, by default maps to the [ Left Control ] key. Pressing the key will quickly depress the analog control; releasing the key will release it.
-Brake Pedal: Pedal 2 control, by default maps to the [ Left Alt ] key. Operates the same way as the gas pedal.
-Clutch Pedal: Pedal 3 control, by default maps to the [ Space ] key. Operates the same way as the gas and brake pedals.
-Key: Maps to Player 1 start button (default: [ 1 ] key).
-Abort: Maps to Player 2 start button (default: [ 2 ] key).
-
-Finally, here is a step-by-step tour through the calibration process. Note that even if you have an analog control connected to any of the analog controls in the game, it is much easier to do calibration with the keyboard.
-* Take your hands and feet off all controls then turn key. Make absolutely sure you haven't touched any of the controls up to this point, then press the [ 1 ] key.
-* Turn wheel counterclockwise as far as it will go then turn key. At this point, press and hold the Left key for about 5 seconds. After 5 seconds, press the 1 key while still holding down the left arrow. It should say New min 256.
-* Turn wheel clockwise as far as it will go then turn key. At this point, press and hold the Right key for about 10 seconds. After 10 seconds, press the [ 1 ] key while still holding down the right arrow. It should say Max 3840.
-* Put transmission in first then turn key and release. Since first gear is in the upper-left corner, press and hold the [ D ] and [ R ] keys for 5 seconds. After 5 seconds, press the [ 1 ] key while still holding down the [ D ] and [ R ] keys.
-* Put transmission in fourth then turn key again. Since fourth gear is in the lower-right corner, press and hold the [ F ] and [ G ] keys for 10 seconds. After 10 seconds, press the [ 1 ] key while still holding down the [ F ] and [ G ] keys.
-* Move seat full forward then turn key and release. Since the seat feedback isn't implemented in the MAME driver, just go ahead and press the [ 1 ] key here.
-* Move fully back and to side then turn key again. Just press the 1 key here again to move on.
-* Take your foot off the brake turn key to abort. Now this is the tricky part. When you see this screen do nothing. Wait for a couple of seconds until it displays New max 4064. Do NOT press the 1 key prematurely here or you will screw up the calibration!
-
-Now step on brake firmly and release. Do this by pressing and holding the [ Left Alt ] key for 3 seconds, and then letting go. If all is well, it should display Range 4064 and move on to the game.
-
-TIPS:
-
-Gameplay is choppy at times, but I have enough CPU power?
-Although the FPS counter shows 100% speed for these games, they may appear choppy. This is true to the original — even the original hardware of these games struggled with them and therefore the choppiness is actually accurate emulation of these games. You may be able to get rid of it in some cases by using the -cheat parameter, hitting the tilde key and browsing the on screen menu until you find "CPU overclocking". This will run the emulated CPU faster which may or may not fix it. It may also cause the emulation to have errors, so don't bug people if overclocking screws up a game.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=racedrivcg
-$mame
-INITIALIZATION:
-
-If you are having trouble controlling vehicle or the brake is always on, calibration must be done!
-First off, Delete any .NV (NVRAM) file for this game contained in your NVRAM directory, called harddriv.nv or racedriv.nv or the same as the setname you intend to use. You need to understand how the controls are mapped in MAME. It's not very intuitive, so pay attention:
-
-Steering Wheel: Player 1 Paddle control, by default maps to the mouse and the [ Left/Right Arrow ] keys.
-Gas Pedal: Pedal 1 control, by default maps to the [ Left Control ] key. Pressing the key will quickly depress the analog control; releasing the key will release it.
-Brake Pedal: Pedal 2 control, by default maps to the [ Left Alt ] key. Operates the same way as the gas pedal.
-Clutch Pedal: Pedal 3 control, by default maps to the [ Space ] key. Operates the same way as the gas and brake pedals.
-Key: Maps to Player 1 start button (default: [ 1 ] key).
-Abort: Maps to Player 2 start button (default: [ 2 ] key).
-
-Finally, here is a step-by-step tour through the calibration process. Note that even if you have an analog control connected to any of the analog controls in the game, it is much easier to do calibration with the keyboard.
-* Take your hands and feet off all controls then turn key. Make absolutely sure you haven't touched any of the controls up to this point, then press the [ 1 ] key.
-* Turn wheel counterclockwise as far as it will go then turn key. At this point, press and hold the Left key for about 5 seconds. After 5 seconds, press the 1 key while still holding down the left arrow. It should say New min 256.
-* Turn wheel clockwise as far as it will go then turn key. At this point, press and hold the Right key for about 10 seconds. After 10 seconds, press the [ 1 ] key while still holding down the right arrow. It should say Max 3840.
-* Put transmission in first then turn key and release. Since first gear is in the upper-left corner, press and hold the [ D ] and [ R ] keys for 5 seconds. After 5 seconds, press the [ 1 ] key while still holding down the [ D ] and [ R ] keys.
-* Put transmission in fourth then turn key again. Since fourth gear is in the lower-right corner, press and hold the [ F ] and [ G ] keys for 10 seconds. After 10 seconds, press the [ 1 ] key while still holding down the [ F ] and [ G ] keys.
-* Move seat full forward then turn key and release. Since the seat feedback isn't implemented in the MAME driver, just go ahead and press the [ 1 ] key here.
-* Move fully back and to side then turn key again. Just press the 1 key here again to move on.
-* Take your foot off the brake turn key to abort. Now this is the tricky part. When you see this screen do nothing. Wait for a couple of seconds until it displays New max 4064. Do NOT press the 1 key prematurely here or you will screw up the calibration!
-
-Now step on brake firmly and release. Do this by pressing and holding the [ Left Alt ] key for 3 seconds, and then letting go. If all is well, it should display Range 4064 and move on to the game.
-
-TIPS:
-
-Gameplay is choppy at times, but I have enough CPU power?
-Although the FPS counter shows 100% speed for these games, they may appear choppy. This is true to the original — even the original hardware of these games struggled with them and therefore the choppiness is actually accurate emulation of these games. You may be able to get rid of it in some cases by using the -cheat parameter, hitting the tilde key and browsing the on screen menu until you find "CPU overclocking". This will run the emulated CPU faster which may or may not fix it. It may also cause the emulation to have errors, so don't bug people if overclocking screws up a game.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=racedrivcg4
-$mame
-INITIALIZATION:
-
-If you are having trouble controlling vehicle or the brake is always on, calibration must be done!
-First off, Delete any .NV (NVRAM) file for this game contained in your NVRAM directory, called harddriv.nv or racedriv.nv or the same as the setname you intend to use. You need to understand how the controls are mapped in MAME. It's not very intuitive, so pay attention:
-
-Steering Wheel: Player 1 Paddle control, by default maps to the mouse and the [ Left/Right Arrow ] keys.
-Gas Pedal: Pedal 1 control, by default maps to the [ Left Control ] key. Pressing the key will quickly depress the analog control; releasing the key will release it.
-Brake Pedal: Pedal 2 control, by default maps to the [ Left Alt ] key. Operates the same way as the gas pedal.
-Clutch Pedal: Pedal 3 control, by default maps to the [ Space ] key. Operates the same way as the gas and brake pedals.
-Key: Maps to Player 1 start button (default: [ 1 ] key).
-Abort: Maps to Player 2 start button (default: [ 2 ] key).
-
-Finally, here is a step-by-step tour through the calibration process. Note that even if you have an analog control connected to any of the analog controls in the game, it is much easier to do calibration with the keyboard.
-* Take your hands and feet off all controls then turn key. Make absolutely sure you haven't touched any of the controls up to this point, then press the [ 1 ] key.
-* Turn wheel counterclockwise as far as it will go then turn key. At this point, press and hold the Left key for about 5 seconds. After 5 seconds, press the 1 key while still holding down the left arrow. It should say New min 256.
-* Turn wheel clockwise as far as it will go then turn key. At this point, press and hold the Right key for about 10 seconds. After 10 seconds, press the [ 1 ] key while still holding down the right arrow. It should say Max 3840.
-* Put transmission in first then turn key and release. Since first gear is in the upper-left corner, press and hold the [ D ] and [ R ] keys for 5 seconds. After 5 seconds, press the [ 1 ] key while still holding down the [ D ] and [ R ] keys.
-* Put transmission in fourth then turn key again. Since fourth gear is in the lower-right corner, press and hold the [ F ] and [ G ] keys for 10 seconds. After 10 seconds, press the [ 1 ] key while still holding down the [ F ] and [ G ] keys.
-* Move seat full forward then turn key and release. Since the seat feedback isn't implemented in the MAME driver, just go ahead and press the [ 1 ] key here.
-* Move fully back and to side then turn key again. Just press the 1 key here again to move on.
-* Take your foot off the brake turn key to abort. Now this is the tricky part. When you see this screen do nothing. Wait for a couple of seconds until it displays New max 4064. Do NOT press the 1 key prematurely here or you will screw up the calibration!
-
-Now step on brake firmly and release. Do this by pressing and holding the [ Left Alt ] key for 3 seconds, and then letting go. If all is well, it should display Range 4064 and move on to the game.
-
-TIPS:
-
-Gameplay is choppy at times, but I have enough CPU power?
-Although the FPS counter shows 100% speed for these games, they may appear choppy. This is true to the original — even the original hardware of these games struggled with them and therefore the choppiness is actually accurate emulation of these games. You may be able to get rid of it in some cases by using the -cheat parameter, hitting the tilde key and browsing the on screen menu until you find "CPU overclocking". This will run the emulated CPU faster which may or may not fix it. It may also cause the emulation to have errors, so don't bug people if overclocking screws up a game.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=racedrivcp
-$mame
-INITIALIZATION:
-
-If you are having trouble controlling vehicle or the brake is always on, calibration must be done!
-First off, Delete any .NV (NVRAM) file for this game contained in your NVRAM directory, called harddriv.nv or racedriv.nv or the same as the setname you intend to use. You need to understand how the controls are mapped in MAME. It's not very intuitive, so pay attention:
-
-Steering Wheel: Player 1 Paddle control, by default maps to the mouse and the [ Left/Right Arrow ] keys.
-Gas Pedal: Pedal 1 control, by default maps to the [ Left Control ] key. Pressing the key will quickly depress the analog control; releasing the key will release it.
-Brake Pedal: Pedal 2 control, by default maps to the [ Left Alt ] key. Operates the same way as the gas pedal.
-Clutch Pedal: Pedal 3 control, by default maps to the [ Space ] key. Operates the same way as the gas and brake pedals.
-Key: Maps to Player 1 start button (default: [ 1 ] key).
-Abort: Maps to Player 2 start button (default: [ 2 ] key).
-
-Finally, here is a step-by-step tour through the calibration process. Note that even if you have an analog control connected to any of the analog controls in the game, it is much easier to do calibration with the keyboard.
-* Take your hands and feet off all controls then turn key. Make absolutely sure you haven't touched any of the controls up to this point, then press the [ 1 ] key.
-* Turn wheel counterclockwise as far as it will go then turn key. At this point, press and hold the Left key for about 5 seconds. After 5 seconds, press the 1 key while still holding down the left arrow. It should say New min 256.
-* Turn wheel clockwise as far as it will go then turn key. At this point, press and hold the Right key for about 10 seconds. After 10 seconds, press the [ 1 ] key while still holding down the right arrow. It should say Max 3840.
-* Put transmission in first then turn key and release. Since first gear is in the upper-left corner, press and hold the [ D ] and [ R ] keys for 5 seconds. After 5 seconds, press the [ 1 ] key while still holding down the [ D ] and [ R ] keys.
-* Put transmission in fourth then turn key again. Since fourth gear is in the lower-right corner, press and hold the [ F ] and [ G ] keys for 10 seconds. After 10 seconds, press the [ 1 ] key while still holding down the [ F ] and [ G ] keys.
-* Move seat full forward then turn key and release. Since the seat feedback isn't implemented in the MAME driver, just go ahead and press the [ 1 ] key here.
-* Move fully back and to side then turn key again. Just press the 1 key here again to move on.
-* Take your foot off the brake turn key to abort. Now this is the tricky part. When you see this screen do nothing. Wait for a couple of seconds until it displays New max 4064. Do NOT press the 1 key prematurely here or you will screw up the calibration!
-
-Now step on brake firmly and release. Do this by pressing and holding the [ Left Alt ] key for 3 seconds, and then letting go. If all is well, it should display Range 4064 and move on to the game.
-
-TIPS:
-
-Gameplay is choppy at times, but I have enough CPU power?
-Although the FPS counter shows 100% speed for these games, they may appear choppy. This is true to the original — even the original hardware of these games struggled with them and therefore the choppiness is actually accurate emulation of these games. You may be able to get rid of it in some cases by using the -cheat parameter, hitting the tilde key and browsing the on screen menu until you find "CPU overclocking". This will run the emulated CPU faster which may or may not fix it. It may also cause the emulation to have errors, so don't bug people if overclocking screws up a game.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=racedrivg
-$mame
-INITIALIZATION:
-
-If you are having trouble controlling vehicle or the brake is always on, calibration must be done!
-First off, Delete any .NV (NVRAM) file for this game contained in your NVRAM directory, called harddriv.nv or racedriv.nv or the same as the setname you intend to use. You need to understand how the controls are mapped in MAME. It's not very intuitive, so pay attention:
-
-Steering Wheel: Player 1 Paddle control, by default maps to the mouse and the [ Left/Right Arrow ] keys.
-Gas Pedal: Pedal 1 control, by default maps to the [ Left Control ] key. Pressing the key will quickly depress the analog control; releasing the key will release it.
-Brake Pedal: Pedal 2 control, by default maps to the [ Left Alt ] key. Operates the same way as the gas pedal.
-Clutch Pedal: Pedal 3 control, by default maps to the [ Space ] key. Operates the same way as the gas and brake pedals.
-Key: Maps to Player 1 start button (default: [ 1 ] key).
-Abort: Maps to Player 2 start button (default: [ 2 ] key).
-
-Finally, here is a step-by-step tour through the calibration process. Note that even if you have an analog control connected to any of the analog controls in the game, it is much easier to do calibration with the keyboard.
-* Take your hands and feet off all controls then turn key. Make absolutely sure you haven't touched any of the controls up to this point, then press the [ 1 ] key.
-* Turn wheel counterclockwise as far as it will go then turn key. At this point, press and hold the Left key for about 5 seconds. After 5 seconds, press the 1 key while still holding down the left arrow. It should say New min 256.
-* Turn wheel clockwise as far as it will go then turn key. At this point, press and hold the Right key for about 10 seconds. After 10 seconds, press the [ 1 ] key while still holding down the right arrow. It should say Max 3840.
-* Put transmission in first then turn key and release. Since first gear is in the upper-left corner, press and hold the [ D ] and [ R ] keys for 5 seconds. After 5 seconds, press the [ 1 ] key while still holding down the [ D ] and [ R ] keys.
-* Put transmission in fourth then turn key again. Since fourth gear is in the lower-right corner, press and hold the [ F ] and [ G ] keys for 10 seconds. After 10 seconds, press the [ 1 ] key while still holding down the [ F ] and [ G ] keys.
-* Move seat full forward then turn key and release. Since the seat feedback isn't implemented in the MAME driver, just go ahead and press the [ 1 ] key here.
-* Move fully back and to side then turn key again. Just press the 1 key here again to move on.
-* Take your foot off the brake turn key to abort. Now this is the tricky part. When you see this screen do nothing. Wait for a couple of seconds until it displays New max 4064. Do NOT press the 1 key prematurely here or you will screw up the calibration!
-
-Now step on brake firmly and release. Do this by pressing and holding the [ Left Alt ] key for 3 seconds, and then letting go. If all is well, it should display Range 4064 and move on to the game.
-
-TIPS:
-
-Gameplay is choppy at times, but I have enough CPU power?
-Although the FPS counter shows 100% speed for these games, they may appear choppy. This is true to the original — even the original hardware of these games struggled with them and therefore the choppiness is actually accurate emulation of these games. You may be able to get rid of it in some cases by using the -cheat parameter, hitting the tilde key and browsing the on screen menu until you find "CPU overclocking". This will run the emulated CPU faster which may or may not fix it. It may also cause the emulation to have errors, so don't bug people if overclocking screws up a game.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=racedrivg1
-$mame
-INITIALIZATION:
-
-If you are having trouble controlling vehicle or the brake is always on, calibration must be done!
-First off, Delete any .NV (NVRAM) file for this game contained in your NVRAM directory, called harddriv.nv or racedriv.nv or the same as the setname you intend to use. You need to understand how the controls are mapped in MAME. It's not very intuitive, so pay attention:
-
-Steering Wheel: Player 1 Paddle control, by default maps to the mouse and the [ Left/Right Arrow ] keys.
-Gas Pedal: Pedal 1 control, by default maps to the [ Left Control ] key. Pressing the key will quickly depress the analog control; releasing the key will release it.
-Brake Pedal: Pedal 2 control, by default maps to the [ Left Alt ] key. Operates the same way as the gas pedal.
-Clutch Pedal: Pedal 3 control, by default maps to the [ Space ] key. Operates the same way as the gas and brake pedals.
-Key: Maps to Player 1 start button (default: [ 1 ] key).
-Abort: Maps to Player 2 start button (default: [ 2 ] key).
-
-Finally, here is a step-by-step tour through the calibration process. Note that even if you have an analog control connected to any of the analog controls in the game, it is much easier to do calibration with the keyboard.
-* Take your hands and feet off all controls then turn key. Make absolutely sure you haven't touched any of the controls up to this point, then press the [ 1 ] key.
-* Turn wheel counterclockwise as far as it will go then turn key. At this point, press and hold the Left key for about 5 seconds. After 5 seconds, press the 1 key while still holding down the left arrow. It should say New min 256.
-* Turn wheel clockwise as far as it will go then turn key. At this point, press and hold the Right key for about 10 seconds. After 10 seconds, press the [ 1 ] key while still holding down the right arrow. It should say Max 3840.
-* Put transmission in first then turn key and release. Since first gear is in the upper-left corner, press and hold the [ D ] and [ R ] keys for 5 seconds. After 5 seconds, press the [ 1 ] key while still holding down the [ D ] and [ R ] keys.
-* Put transmission in fourth then turn key again. Since fourth gear is in the lower-right corner, press and hold the [ F ] and [ G ] keys for 10 seconds. After 10 seconds, press the [ 1 ] key while still holding down the [ F ] and [ G ] keys.
-* Move seat full forward then turn key and release. Since the seat feedback isn't implemented in the MAME driver, just go ahead and press the [ 1 ] key here.
-* Move fully back and to side then turn key again. Just press the 1 key here again to move on.
-* Take your foot off the brake turn key to abort. Now this is the tricky part. When you see this screen do nothing. Wait for a couple of seconds until it displays New max 4064. Do NOT press the 1 key prematurely here or you will screw up the calibration!
-
-Now step on brake firmly and release. Do this by pressing and holding the [ Left Alt ] key for 3 seconds, and then letting go. If all is well, it should display Range 4064 and move on to the game.
-
-TIPS:
-
-Gameplay is choppy at times, but I have enough CPU power?
-Although the FPS counter shows 100% speed for these games, they may appear choppy. This is true to the original — even the original hardware of these games struggled with them and therefore the choppiness is actually accurate emulation of these games. You may be able to get rid of it in some cases by using the -cheat parameter, hitting the tilde key and browsing the on screen menu until you find "CPU overclocking". This will run the emulated CPU faster which may or may not fix it. It may also cause the emulation to have errors, so don't bug people if overclocking screws up a game.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=racedrivg4
-$mame
-INITIALIZATION:
-
-If you are having trouble controlling vehicle or the brake is always on, calibration must be done!
-First off, Delete any .NV (NVRAM) file for this game contained in your NVRAM directory, called harddriv.nv or racedriv.nv or the same as the setname you intend to use. You need to understand how the controls are mapped in MAME. It's not very intuitive, so pay attention:
-
-Steering Wheel: Player 1 Paddle control, by default maps to the mouse and the [ Left/Right Arrow ] keys.
-Gas Pedal: Pedal 1 control, by default maps to the [ Left Control ] key. Pressing the key will quickly depress the analog control; releasing the key will release it.
-Brake Pedal: Pedal 2 control, by default maps to the [ Left Alt ] key. Operates the same way as the gas pedal.
-Clutch Pedal: Pedal 3 control, by default maps to the [ Space ] key. Operates the same way as the gas and brake pedals.
-Key: Maps to Player 1 start button (default: [ 1 ] key).
-Abort: Maps to Player 2 start button (default: [ 2 ] key).
-
-Finally, here is a step-by-step tour through the calibration process. Note that even if you have an analog control connected to any of the analog controls in the game, it is much easier to do calibration with the keyboard.
-* Take your hands and feet off all controls then turn key. Make absolutely sure you haven't touched any of the controls up to this point, then press the [ 1 ] key.
-* Turn wheel counterclockwise as far as it will go then turn key. At this point, press and hold the Left key for about 5 seconds. After 5 seconds, press the 1 key while still holding down the left arrow. It should say New min 256.
-* Turn wheel clockwise as far as it will go then turn key. At this point, press and hold the Right key for about 10 seconds. After 10 seconds, press the [ 1 ] key while still holding down the right arrow. It should say Max 3840.
-* Put transmission in first then turn key and release. Since first gear is in the upper-left corner, press and hold the [ D ] and [ R ] keys for 5 seconds. After 5 seconds, press the [ 1 ] key while still holding down the [ D ] and [ R ] keys.
-* Put transmission in fourth then turn key again. Since fourth gear is in the lower-right corner, press and hold the [ F ] and [ G ] keys for 10 seconds. After 10 seconds, press the [ 1 ] key while still holding down the [ F ] and [ G ] keys.
-* Move seat full forward then turn key and release. Since the seat feedback isn't implemented in the MAME driver, just go ahead and press the [ 1 ] key here.
-* Move fully back and to side then turn key again. Just press the 1 key here again to move on.
-* Take your foot off the brake turn key to abort. Now this is the tricky part. When you see this screen do nothing. Wait for a couple of seconds until it displays New max 4064. Do NOT press the 1 key prematurely here or you will screw up the calibration!
-
-Now step on brake firmly and release. Do this by pressing and holding the [ Left Alt ] key for 3 seconds, and then letting go. If all is well, it should display Range 4064 and move on to the game.
-
-TIPS:
-
-Gameplay is choppy at times, but I have enough CPU power?
-Although the FPS counter shows 100% speed for these games, they may appear choppy. This is true to the original — even the original hardware of these games struggled with them and therefore the choppiness is actually accurate emulation of these games. You may be able to get rid of it in some cases by using the -cheat parameter, hitting the tilde key and browsing the on screen menu until you find "CPU overclocking". This will run the emulated CPU faster which may or may not fix it. It may also cause the emulation to have errors, so don't bug people if overclocking screws up a game.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=racedrivpan
-$mame
-INITIALIZATION:
-
-If you are having trouble controlling vehicle or the brake is always on, calibration must be done!
-First off, Delete any .NV (NVRAM) file for this game contained in your NVRAM directory, called harddriv.nv or racedriv.nv or the same as the setname you intend to use. You need to understand how the controls are mapped in MAME. It's not very intuitive, so pay attention:
-
-Steering Wheel: Player 1 Paddle control, by default maps to the mouse and the [ Left/Right Arrow ] keys.
-Gas Pedal: Pedal 1 control, by default maps to the [ Left Control ] key. Pressing the key will quickly depress the analog control; releasing the key will release it.
-Brake Pedal: Pedal 2 control, by default maps to the [ Left Alt ] key. Operates the same way as the gas pedal.
-Clutch Pedal: Pedal 3 control, by default maps to the [ Space ] key. Operates the same way as the gas and brake pedals.
-Key: Maps to Player 1 start button (default: [ 1 ] key).
-Abort: Maps to Player 2 start button (default: [ 2 ] key).
-
-Finally, here is a step-by-step tour through the calibration process. Note that even if you have an analog control connected to any of the analog controls in the game, it is much easier to do calibration with the keyboard.
-* Take your hands and feet off all controls then turn key. Make absolutely sure you haven't touched any of the controls up to this point, then press the [ 1 ] key.
-* Turn wheel counterclockwise as far as it will go then turn key. At this point, press and hold the Left key for about 5 seconds. After 5 seconds, press the 1 key while still holding down the left arrow. It should say New min 256.
-* Turn wheel clockwise as far as it will go then turn key. At this point, press and hold the Right key for about 10 seconds. After 10 seconds, press the [ 1 ] key while still holding down the right arrow. It should say Max 3840.
-* Put transmission in first then turn key and release. Since first gear is in the upper-left corner, press and hold the [ D ] and [ R ] keys for 5 seconds. After 5 seconds, press the [ 1 ] key while still holding down the [ D ] and [ R ] keys.
-* Put transmission in fourth then turn key again. Since fourth gear is in the lower-right corner, press and hold the [ F ] and [ G ] keys for 10 seconds. After 10 seconds, press the [ 1 ] key while still holding down the [ F ] and [ G ] keys.
-* Move seat full forward then turn key and release. Since the seat feedback isn't implemented in the MAME driver, just go ahead and press the [ 1 ] key here.
-* Move fully back and to side then turn key again. Just press the 1 key here again to move on.
-* Take your foot off the brake turn key to abort. Now this is the tricky part. When you see this screen do nothing. Wait for a couple of seconds until it displays New max 4064. Do NOT press the 1 key prematurely here or you will screw up the calibration!
-
-Now step on brake firmly and release. Do this by pressing and holding the [ Left Alt ] key for 3 seconds, and then letting go. If all is well, it should display Range 4064 and move on to the game.
-
-TIPS:
-
-Gameplay is choppy at times, but I have enough CPU power?
-Although the FPS counter shows 100% speed for these games, they may appear choppy. This is true to the original — even the original hardware of these games struggled with them and therefore the choppiness is actually accurate emulation of these games. You may be able to get rid of it in some cases by using the -cheat parameter, hitting the tilde key and browsing the on screen menu until you find "CPU overclocking". This will run the emulated CPU faster which may or may not fix it. It may also cause the emulation to have errors, so don't bug people if overclocking screws up a game.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
 $info=racinfrc
-$mame
-INITIALIZATION:
-
-The first time you run the game, the EEPROM 22D shows as BAD in the RAM/ROM Check. Hold down the Test switch [ F2 ] and then also hit [ F3 ] to reset the machine, creating the EEPROM for you.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=racinfrcu
 $mame
 INITIALIZATION:
 
@@ -9941,7 +9231,7 @@ http://wiki.mamedev.org/index.php/FAQ:Games
 $end
 $info=radio86
 $mame
-INITIALIZATION:
+TIPS:
 
 RADIO-86
 ========
@@ -10069,127 +9359,7 @@ V    Verify
 Quickload: This is meant to be only for "ravens" system.
 
 $end
-$info=rclimb
-$mame
-INITIALIZATION:
-
-To initialize the game, press [ F2 ] and using [ C ] to go on the "INIT" and pressing [ 1 ]. Now hold down the [ Z ] button for about 5 seconds. Now the game is initialized; press [ F2 ] and [ C ] until you are on the "EXIT" and confirm with [ 1 ].
-
-SOURCE:
-https://www.progettosnaps.net/gameinit.dat
-
-$end
-$info=rclimb_10
-$mame
-INITIALIZATION:
-
-To initialize the game, turn Service Mode ON [ F2 ] and press reset [ F3 ]. Move pointer to INIT with [ C ], then press [ 1 ]. Hold Cancel [ Z ] for 5 seconds while counter counts down. When complete, turn Service Mode OFF with [ F2 ] and restart or reboot.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=rclimb_11
-$mame
-INITIALIZATION:
-
-To initialize the game, turn Service Mode ON [ F2 ] and press reset [ F3 ]. Move pointer to INIT with [ C ], then press [ 1 ]. Hold Cancel [ Z ] for 5 seconds while counter counts down. When complete, turn Service Mode OFF with [ F2 ] and restart or reboot.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=rclimb_12
-$mame
-INITIALIZATION:
-
-To initialize the game, turn Service Mode ON [ F2 ] and press reset [ F3 ]. Move pointer to INIT with [ C ], then press [ 1 ]. Hold Cancel [ Z ] for 5 seconds while counter counts down. When complete, turn Service Mode OFF with [ F2 ] and restart or reboot.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=rclimb_13
-$mame
-INITIALIZATION:
-
-To initialize the game, turn Service Mode ON [ F2 ] and press reset [ F3 ]. Move pointer to INIT with [ C ], then press [ 1 ]. Hold Cancel [ Z ] for 5 seconds while counter counts down. When complete, turn Service Mode OFF with [ F2 ] and restart or reboot.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=rclimb_14
-$mame
-INITIALIZATION:
-
-To initialize the game, turn Service Mode ON [ F2 ] and press reset [ F3 ]. Move pointer to INIT with [ C ], then press [ 1 ]. Hold Cancel [ Z ] for 5 seconds while counter counts down. When complete, turn Service Mode OFF with [ F2 ] and restart or reboot.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=rclimb_2
-$mame
-INITIALIZATION:
-
-To initialize the game, turn Service Mode ON [ F2 ] and press reset [ F3 ]. Move pointer to INIT with [ C ], then press [ 1 ]. Hold Cancel [ Z ] for 5 seconds while counter counts down. When complete, turn Service Mode OFF with [ F2 ] and restart or reboot.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
 $info=rclimb_3
-$mame
-INITIALIZATION:
-
-To initialize the game, press [ F2 ] and using [ C ] to go on the "INIT" and pressing [ 1 ]. Now hold down the [ Z ] button for about 5 seconds. Now the game is initialized; press [ F2 ] and [ C ] until you are on the "EXIT" and confirm with [ 1 ].
-
-SOURCE:
-https://www.progettosnaps.net/gameinit.dat
-
-$end
-$info=rclimb_3a
-$mame
-INITIALIZATION:
-
-To initialize the game, press [ F2 ] and using [ C ] to go on the "INIT" and pressing [ 1 ]. Now hold down the [ Z ] button for about 5 seconds. Now the game is initialized; press [ F2 ] and [ C ] until you are on the "EXIT" and confirm with [ 1 ].
-
-SOURCE:
-https://www.progettosnaps.net/gameinit.dat
-
-$end
-$info=rclimb_3b
-$mame
-INITIALIZATION:
-
-To initialize the game, press [ F2 ] and using [ C ] to go on the "INIT" and pressing [ 1 ]. Now hold down the [ Z ] button for about 5 seconds. Now the game is initialized; press [ F2 ] and [ C ] until you are on the "EXIT" and confirm with [ 1 ].
-
-SOURCE:
-https://www.progettosnaps.net/gameinit.dat
-
-$end
-$info=rclimb_3c
-$mame
-INITIALIZATION:
-
-To initialize the game, press [ F2 ] and using [ C ] to go on the "INIT" and pressing [ 1 ]. Now hold down the [ Z ] button for about 5 seconds. Now the game is initialized; press [ F2 ] and [ C ] until you are on the "EXIT" and confirm with [ 1 ].
-
-SOURCE:
-https://www.progettosnaps.net/gameinit.dat
-
-$end
-$info=rclimb_3d
-$mame
-INITIALIZATION:
-
-To initialize the game, press [ F2 ] and using [ C ] to go on the "INIT" and pressing [ 1 ]. Now hold down the [ Z ] button for about 5 seconds. Now the game is initialized; press [ F2 ] and [ C ] until you are on the "EXIT" and confirm with [ 1 ].
-
-SOURCE:
-https://www.progettosnaps.net/gameinit.dat
-
-$end
-$info=rclimb_3e
 $mame
 INITIALIZATION:
 
@@ -10259,47 +9429,7 @@ SOURCE:
 mameinfo.dat
 
 $end
-$info=realbroda
-$mame
-TIPS:
-
-Press fast forward key [ Ins ] to speed up testing
-
-SOURCE:
-mameinfo.dat
-
-$end
 $info=redearth
-$mame
-INITIALIZATION:
-
-There is no avoiding the NVRAM initialization process. In order to use any game that is not labeled (NO CD), the game must be allowed to create a complete and valid NVRAM file. This process takes nearly an hour and only needs to be done once. Once a proper NVRAM is created, the game will start quickly.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=redearthn
-$mame
-INITIALIZATION:
-
-There is no avoiding the NVRAM initialization process. In order to use any game that is not labeled (NO CD), the game must be allowed to create a complete and valid NVRAM file. This process takes nearly an hour and only needs to be done once. Once a proper NVRAM is created, the game will start quickly.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=redearthnr1
-$mame
-INITIALIZATION:
-
-There is no avoiding the NVRAM initialization process. In order to use any game that is not labeled (NO CD), the game must be allowed to create a complete and valid NVRAM file. This process takes nearly an hour and only needs to be done once. Once a proper NVRAM is created, the game will start quickly.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=redearthr1
 $mame
 INITIALIZATION:
 
@@ -10329,237 +9459,7 @@ SOURCE:
 mameinfo.dat
 
 $end
-$info=reelfun0
-$mame
-INITIALIZATION:
-
-The first time you run the game, an ERROR appears because the NVRAM needs initialising. Press fast forward [ Ins ] key to speed this up.
-
-SOURCE:
-mameinfo.dat
-
-$end
-$info=reelfun1
-$mame
-INITIALIZATION:
-
-The first time you run the game, an ERROR appears because the NVRAM needs initialising. Press fast forward ([ Ins ]) key to speed this up.
-
-SOURCE:
-mameinfo.dat
-
-$end
-$info=resdnt
-$mame
-INITIALIZATION:
-
-To initialize the game, turn Service Mode ON [ F2 ] and press reset [ F3 ]. Move pointer to INIT with [ C ], then press [ 1 ]. Hold Cancel [ Z ] for 5 seconds while counter counts down. When complete, turn Service Mode OFF with [ F2 ] and restart or reboot.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=resdnt_10
-$mame
-INITIALIZATION:
-
-To initialize the game, turn Service Mode ON [ F2 ] and press reset [ F3 ]. Move pointer to INIT with [ C ], then press [ 1 ]. Hold Cancel [ Z ] for 5 seconds while counter counts down. When complete, turn Service Mode OFF with [ F2 ] and restart or reboot.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=resdnt_11
-$mame
-INITIALIZATION:
-
-To initialize the game, turn Service Mode ON [ F2 ] and press reset [ F3 ]. Move pointer to INIT with [ C ], then press [ 1 ]. Hold Cancel [ Z ] for 5 seconds while counter counts down. When complete, turn Service Mode OFF with [ F2 ] and restart or reboot.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=resdnt_12
-$mame
-INITIALIZATION:
-
-To initialize the game, turn Service Mode ON [ F2 ] and press reset [ F3 ]. Move pointer to INIT with [ C ], then press [ 1 ]. Hold Cancel [ Z ] for 5 seconds while counter counts down. When complete, turn Service Mode OFF with [ F2 ] and restart or reboot.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=resdnt_13
-$mame
-INITIALIZATION:
-
-To initialize the game, turn Service Mode ON [ F2 ] and press reset [ F3 ]. Move pointer to INIT with [ C ], then press [ 1 ]. Hold Cancel [ Z ] for 5 seconds while counter counts down. When complete, turn Service Mode OFF with [ F2 ] and restart or reboot.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=resdnt_14
-$mame
-INITIALIZATION:
-
-To initialize the game, turn Service Mode ON [ F2 ] and press reset [ F3 ]. Move pointer to INIT with [ C ], then press [ 1 ]. Hold Cancel [ Z ] for 5 seconds while counter counts down. When complete, turn Service Mode OFF with [ F2 ] and restart or reboot.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=resdnt_15
-$mame
-INITIALIZATION:
-
-To initialize the game, turn Service Mode ON [ F2 ] and press reset [ F3 ]. Move pointer to INIT with [ C ], then press [ 1 ]. Hold Cancel [ Z ] for 5 seconds while counter counts down. When complete, turn Service Mode OFF with [ F2 ] and restart or reboot.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=resdnt_16
-$mame
-INITIALIZATION:
-
-To initialize the game, turn Service Mode ON [ F2 ] and press reset [ F3 ]. Move pointer to INIT with [ C ], then press [ 1 ]. Hold Cancel [ Z ] for 5 seconds while counter counts down. When complete, turn Service Mode OFF with [ F2 ] and restart or reboot.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=resdnt_17
-$mame
-INITIALIZATION:
-
-To initialize the game, turn Service Mode ON [ F2 ] and press reset [ F3 ]. Move pointer to INIT with [ C ], then press [ 1 ]. Hold Cancel [ Z ] for 5 seconds while counter counts down. When complete, turn Service Mode OFF with [ F2 ] and restart or reboot.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=resdnt_2
-$mame
-INITIALIZATION:
-
-To initialize the game, turn Service Mode ON [ F2 ] and press reset [ F3 ]. Move pointer to INIT with [ C ], then press [ 1 ]. Hold Cancel [ Z ] for 5 seconds while counter counts down. When complete, turn Service Mode OFF with [ F2 ] and restart or reboot.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=resdnt_2a
-$mame
-INITIALIZATION:
-
-To initialize the game, turn Service Mode ON [ F2 ] and press reset [ F3 ]. Move pointer to INIT with [ C ], then press [ 1 ]. Hold Cancel [ Z ] for 5 seconds while counter counts down. When complete, turn Service Mode OFF with [ F2 ] and restart or reboot.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=resdnt_2b
-$mame
-INITIALIZATION:
-
-To initialize the game, turn Service Mode ON [ F2 ] and press reset [ F3 ]. Move pointer to INIT with [ C ], then press [ 1 ]. Hold Cancel [ Z ] for 5 seconds while counter counts down. When complete, turn Service Mode OFF with [ F2 ] and restart or reboot.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=resdnt_2c
-$mame
-INITIALIZATION:
-
-To initialize the game, turn Service Mode ON [ F2 ] and press reset [ F3 ]. Move pointer to INIT with [ C ], then press [ 1 ]. Hold Cancel [ Z ] for 5 seconds while counter counts down. When complete, turn Service Mode OFF with [ F2 ] and restart or reboot.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=resdnt_2d
-$mame
-INITIALIZATION:
-
-To initialize the game, turn Service Mode ON [ F2 ] and press reset [ F3 ]. Move pointer to INIT with [ C ], then press [ 1 ]. Hold Cancel [ Z ] for 5 seconds while counter counts down. When complete, turn Service Mode OFF with [ F2 ] and restart or reboot.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=resdnt_2e
-$mame
-INITIALIZATION:
-
-To initialize the game, turn Service Mode ON [ F2 ] and press reset [ F3 ]. Move pointer to INIT with [ C ], then press [ 1 ]. Hold Cancel [ Z ] for 5 seconds while counter counts down. When complete, turn Service Mode OFF with [ F2 ] and restart or reboot.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=resdnt_2f
-$mame
-INITIALIZATION:
-
-To initialize the game, turn Service Mode ON [ F2 ] and press reset [ F3 ]. Move pointer to INIT with [ C ], then press [ 1 ]. Hold Cancel [ Z ] for 5 seconds while counter counts down. When complete, turn Service Mode OFF with [ F2 ] and restart or reboot.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=resdnt_2g
-$mame
-INITIALIZATION:
-
-To initialize the game, turn Service Mode ON [ F2 ] and press reset [ F3 ]. Move pointer to INIT with [ C ], then press [ 1 ]. Hold Cancel [ Z ] for 5 seconds while counter counts down. When complete, turn Service Mode OFF with [ F2 ] and restart or reboot.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=resdnt_3
-$mame
-INITIALIZATION:
-
-To initialize the game, turn Service Mode ON [ F2 ] and press reset [ F3 ]. Move pointer to INIT with [ C ], then press [ 1 ]. Hold Cancel [ Z ] for 5 seconds while counter counts down. When complete, turn Service Mode OFF with [ F2 ] and restart or reboot.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=resdnt_5
-$mame
-INITIALIZATION:
-
-To initialize the game, turn Service Mode ON [ F2 ] and press reset [ F3 ]. Move pointer to INIT with [ C ], then press [ 1 ]. Hold Cancel [ Z ] for 5 seconds while counter counts down. When complete, turn Service Mode OFF with [ F2 ] and restart or reboot.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
 $info=resdnt_6
-$mame
-INITIALIZATION:
-
-To initialize the game, turn Service Mode ON [ F2 ] and press reset [ F3 ]. Move pointer to INIT with [ C ], then press [ 1 ]. Hold Cancel [ Z ] for 5 seconds while counter counts down. When complete, turn Service Mode OFF with [ F2 ] and restart or reboot.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=resdnt_8
-$mame
-INITIALIZATION:
-
-To initialize the game, turn Service Mode ON [ F2 ] and press reset [ F3 ]. Move pointer to INIT with [ C ], then press [ 1 ]. Hold Cancel [ Z ] for 5 seconds while counter counts down. When complete, turn Service Mode OFF with [ F2 ] and restart or reboot.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=resdnt_9
 $mame
 INITIALIZATION:
 
@@ -10596,35 +9496,7 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
-$info=revxp5
-$mame
-TIPS:
-
-The volume for this game is TOO LOW!
-
-When the game is running, hit [ F2 ] to get to the internal service menu. Hit [ F2 ] again to "close" the service switch so that you won't get stuck in the menu. Now, navigate to the "Volume Adjust" option (following the directions provided) and adjust the volume. It's best to keep the volume no more than 80-90% filled as it might cause your sound to be overdriven and crackle. When adjusted, simply exit the menu.
-
----
-
-How do I calibrate the guns? Can I use a real light gun?
-
-The game will automatically ask you to calibrate the guns when you start the game for the first time. Simply put, use your mouse or keyboard to "target" the top left corner when the game asks so. There aren't any visual cues to help this, so you'll have to go by the numerical coordinates that are visible on the screen. The numbers you see are in a simple 8-bit scale going from 0 to 255. To "target" the top left corner, keep moving your mouse until you get P1 X and P1 Y as near to 0 as possible. The middle is located at about 127, 127, and the bottom right corner as close to 255 as possible. Repeat the process for the second player. As for the light gun, the short answer is no. A longer answer is that the game didn't actually have a light gun — it had analog joysticks mounted as guns, and emulating them with a proper light gun is not viable. Try to use mouse control with this game.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=rfjets
-$mame
-INITIALIZATION:
-
-Use [ F2 ] to enter testmode if no nvram exists. Upon entering service mode, you select: RESET SETTING with Button 1. This will create the valid NVRAM the game needs to boot. Select: EXIT (RESET BOARD) with Button 1 again and the game should start with no problems.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=rfjetsa
+$info=rfjet
 $mame
 INITIALIZATION:
 
@@ -10635,61 +9507,6 @@ http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
 $info=rimrockn
-$mame
-TIPS:
-
-I remember playing a cabinet with that allowed 4 players, but the game is only allowing 2. How do I set this game up for 4 players?
-With this and some other multiplayer games, the default number of players for a cabinet is two — even if the program supports more. You can usually set these settings with a dip switch assignment or adjusting an option in the Service Mode (Using [ F2 ] to enter and exit).
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=rimrockn12
-$mame
-TIPS:
-
-I remember playing a cabinet with that allowed 4 players, but the game is only allowing 2. How do I set this game up for 4 players?
-With this and some other multiplayer games, the default number of players for a cabinet is two — even if the program supports more. You can usually set these settings with a dip switch assignment or adjusting an option in the Service Mode (Using [ F2 ] to enter and exit).
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=rimrockn12b
-$mame
-TIPS:
-
-I remember playing a cabinet with that allowed 4 players, but the game is only allowing 2. How do I set this game up for 4 players?
-With this and some other multiplayer games, the default number of players for a cabinet is two — even if the program supports more. You can usually set these settings with a dip switch assignment or adjusting an option in the Service Mode (Using [ F2 ] to enter and exit).
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=rimrockn15
-$mame
-TIPS:
-
-I remember playing a cabinet with that allowed 4 players, but the game is only allowing 2. How do I set this game up for 4 players?
-With this and some other multiplayer games, the default number of players for a cabinet is two — even if the program supports more. You can usually set these settings with a dip switch assignment or adjusting an option in the Service Mode (Using [ F2 ] to enter and exit).
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=rimrockn16
-$mame
-TIPS:
-
-I remember playing a cabinet with that allowed 4 players, but the game is only allowing 2. How do I set this game up for 4 players?
-With this and some other multiplayer games, the default number of players for a cabinet is two — even if the program supports more. You can usually set these settings with a dip switch assignment or adjusting an option in the Service Mode (Using [ F2 ] to enter and exit).
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=rimrockn20
 $mame
 TIPS:
 
@@ -10716,7 +9533,7 @@ W - change to 40 CPL
 X - says Disc not ready
 
 $end
-$info=rmgoldyh
+$info=srmp3
 $mame
 INITIALIZATION:
 
@@ -10737,17 +9554,6 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
-$info=rmpgwt11
-$mame
-TIPS:
-
-The volume for this game is TOO LOW!
-When the game is running, hit [ F2 ] to get to the internal service menu. Hit [ F2 ] again to "close" the service switch so that you won't get stuck in the menu. Now, navigate to the "Volume Adjust" option (following the directions provided) and adjust the volume. It's best to keep the volume no more than 80-90% filled as it might cause your sound to be overdriven and crackle. When adjusted, simply exit the menu.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
 $info=robotron
 $mame
 INITIALIZATION:
@@ -10758,57 +9564,7 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
-$info=robotron12
-$mame
-INITIALIZATION:
-
-When you see "FACTORY SETTINGS RESTORED", hit [ F2 ] (Service Mode).
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=robotron87
-$mame
-INITIALIZATION:
-
-When you see "FACTORY SETTINGS RESTORED", hit [ F2 ] (Service Mode).
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=robotrontd
-$mame
-INITIALIZATION:
-
-When you see "FACTORY SETTINGS RESTORED", hit [ F2 ] (Service Mode).
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=robotronun
-$mame
-INITIALIZATION:
-
-When you see "FACTORY SETTINGS RESTORED", hit [ F2 ] (Service Mode).
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=robotronyo
-$mame
-INITIALIZATION:
-
-When you see "FACTORY SETTINGS RESTORED", hit [ F2 ] (Service Mode).
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=rodlanda
+$info=rodland
 $mame
 TIPS:
 
@@ -10816,36 +9572,6 @@ After inserting a coin [ 5 ], press the player 1 'down' [ Cursor DOWN ] button 3
 
 SOURCE:
 mameinfo.dat
-
-$end
-$info=rollfr
-$mame
-INITIALIZATION:
-
-Turn on "BK DOOR" and "SERVICE MODE" Dips to ON. Hold [ 9 ]+[ 0 ] then reset the machine [ F3 ] to enter Total Parameters screen. Use [ 0 ] to select "Initialization". Hold [ 9 ] until the game finishes the countdown from 5. When complete, turn Dips mentioned above to OFF and restart MAME if needed.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=rollfr_2
-$mame
-INITIALIZATION:
-
-Turn on "BK DOOR" and "SERVICE MODE" Dips to ON. Hold [ 9 ]+[ 0 ] then reset the machine [ F3 ] to enter Total Parameters screen. Use [ 0 ] to select "Initialization". Hold [ 9 ] until the game finishes the countdown from 5. When complete, turn Dips mentioned above to OFF and restart MAME if needed.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=rollfr_3
-$mame
-INITIALIZATION:
-
-Turn on "BK DOOR" and "SERVICE MODE" Dips to ON. Hold [ 9 ]+[ 0 ] then reset the machine [ F3 ] to enter Total Parameters screen. Use [ 0 ] to select "Initialization". Hold [ 9 ] until the game finishes the countdown from 5. When complete, turn Dips mentioned above to OFF and restart MAME if needed.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
 $info=rollfr_4
@@ -10877,27 +9603,7 @@ The manual explains the tests available, and also how to set number of balls,
 high score, etc., with the diagnostic keyboard.
 
 $end
-$info=royalcdfr
-$mame
-INITIALIZATION:
-
-Press and hold Service 1 + 2 Keys ([ 0 ]+[ 9 ]), press reset [ F3 ]. When you see "RAM-Initializiert!" or similar message, release all keys. Restart if needed.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
 $info=royalcrd
-$mame
-INITIALIZATION:
-
-Press and hold Service 1 + 2 Keys ([ 0 ]+[ 9 ]), press reset [ F3 ]. When you see "RAM-Initializiert!" or similar message, release all keys. Restart if needed.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=royaljp
 $mame
 INITIALIZATION:
 
@@ -10937,89 +9643,9 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
-$info=runguna
-$mame
-INITIALIZATION:
-
-EEPROM 35E shows up bad - hold down [ F2 ] and TAP Reset [ F3 ] to init the EEPROM properly. When the message appears, let go of [ F2 ].
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=rungunad
-$mame
-INITIALIZATION:
-
-EEPROM 35E shows up bad - hold down [ F2 ] and TAP Reset [ F3 ] to init the EEPROM properly. When the message appears, let go of [ F2 ].
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=rungunb
-$mame
-INITIALIZATION:
-
-EEPROM 35E shows up bad - hold down [ F2 ] and TAP Reset [ F3 ] to init the EEPROM properly. When the message appears, let go of [ F2 ].
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=rungunbd
-$mame
-INITIALIZATION:
-
-EEPROM 35E shows up bad - hold down [ F2 ] and TAP Reset [ F3 ] to init the EEPROM properly. When the message appears, let go of [ F2 ].
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=rungund
-$mame
-INITIALIZATION:
-
-EEPROM 35E shows up bad - hold down [ F2 ] and TAP Reset [ F3 ] to init the EEPROM properly. When the message appears, let go of [ F2 ].
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=rungunua
-$mame
-INITIALIZATION:
-
-EEPROM 35E shows up bad - hold down [ F2 ] and TAP Reset [ F3 ] to init the EEPROM properly. When the message appears, let go of [ F2 ].
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=rungunuad
-$mame
-INITIALIZATION:
-
-EEPROM 35E shows up bad - hold down [ F2 ] and TAP Reset [ F3 ] to init the EEPROM properly. When the message appears, let go of [ F2 ].
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=rungunud
-$mame
-INITIALIZATION:
-
-EEPROM 35E shows up bad - hold down [ F2 ] and TAP Reset [ F3 ] to init the EEPROM properly. When the message appears, let go of [ F2 ].
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
 $info=rx78
 $mame
-INITIALIZATION:
+TIPS:
 
 BANDAI RX-78
 ============
@@ -11058,17 +9684,13 @@ Carts
 Run by themselves.
 
 
-
-
 Cassettes
 ---------
-
 Firstly need to find out if the tape is for Basic, so load "basic" from swlist. Then use LOAD.
 
 If you get error 18 then it's a M/L program, so MON then L then the program name that Basic gave you.
 
 When it's finished you're back to Basic. RUN to start it.
-
 
 
 If you don't use the Basic cart, the system will start in Monitor and expect a tape, L is already printed for you to
@@ -11083,7 +9705,7 @@ Use the J command to run it, in this case (don't know)
 $end
 $info=sacstate
 $mame
-INITIALIZATION:
+TIPS:
 
 All input to be in lowercase.
 The weird characters that show on screen are various escape sequences. These are different depending on the terminal type chosen. The codes need to be understood and emulated before this system makes sense.
@@ -11106,16 +9728,6 @@ Other input will either result in '!' message, or halt.
 
 $end
 $info=salmndr2
-$mame
-INITIALIZATION:
-
-The first time you run the game, the EEPROM 22D shows as BAD in the RAM/ROM Check. Hold down the Test switch [ F2 ] and then also hit [ F3 ] to reset the machine, creating the EEPROM for you.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=salmndr2a
 $mame
 INITIALIZATION:
 
@@ -11258,7 +9870,7 @@ T : Trace
 $end
 $info=scrzy_l1
 $mame
-INITIALIZATION:
+TIPS:
 
 STILL CRAZY
 ===========
@@ -11287,49 +9899,9 @@ SOURCE:
 mameinfo.dat
 
 $end
-$info=scudau
-$mame
-INITIALIZATION:
-
-The game has an unemulated network board. When the game says "Network Board not present", go to the test menu [ F2 ], select GAME ASSIGNMENTS and set 'LINK ID' to SINGLE.
-
-SOURCE:
-mameinfo.dat
-
-$end
-$info=scuddx
-$mame
-INITIALIZATION:
-
-The game has an unemulated network board. When the game says "Network Board not present", go to the test menu [ F2 ], select GAME ASSIGNMENTS and set 'LINK ID' to SINGLE.
-
-SOURCE:
-mameinfo.dat
-
-$end
-$info=scudplus
-$mame
-INITIALIZATION:
-
-The game has an unemulated network board. When the game says "Network Board not present", go to the test menu [ F2 ], select GAME ASSIGNMENTS and set 'LINK ID' to SINGLE.
-
-SOURCE:
-mameinfo.dat
-
-$end
-$info=scudplusa
-$mame
-INITIALIZATION:
-
-The game has an unemulated network board. When the game says "Network Board not present", go to the test menu [ F2 ], select GAME ASSIGNMENTS and set 'LINK ID' to SINGLE.
-
-SOURCE:
-mameinfo.dat
-
-$end
 $info=scv
 $mame
-INITIALIZATION:
+TIPS:
 
 Inufuto homebrew games don't work.
 
@@ -11349,7 +9921,7 @@ X<register identifier>                       Examine and modify registers
 $end
 $info=sdk85
 $mame
-INITIALIZATION:
+TIPS:
 
 An example is Press SUBST key, enter an address, press NEXT key, enter data, then press NEXT to increment the address.
 
@@ -11365,7 +9937,7 @@ Press 0 to restart.
 $end
 $info=sdk86
 $mame
-INITIALIZATION:
+TIPS:
 
 Paste Test:
 N0100^11^22^33^44^55^66^77^88^99^X0100^
@@ -11375,16 +9947,6 @@ User manual: http://www.bitsavers.org/pdf/intel/8086/9800698A_SDK-86_Users_Man_A
 
 $end
 $info=sdungeon
-$mame
-INITIALIZATION:
-
-You can use [ F1 ] to proceed through all the configuration screens, stopping when you see the title screen. Setup is complete.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=sdungeona
 $mame
 INITIALIZATION:
 
@@ -14823,26 +13385,6 @@ If you enter text via parallel, it is echoed but otherwise ignored.
 - Some tests...
 - Say the time: EscT. (include the period)
 - Play some notes: !T08:1234:125:129:125:130. (then press enter)
-
-$end
-$info=warzard
-$mame
-INITIALIZATION:
-
-There is no avoiding the NVRAM initialization process. The game must be allowed to create a complete and valid NVRAM file. This process takes nearly an hour and only needs to be done once. Once a proper NVRAM is created, the game will start quickly.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=warzardr1
-$mame
-INITIALIZATION:
-
-There is no avoiding the NVRAM initialization process. The game must be allowed to create a complete and valid NVRAM file. This process takes nearly an hour and only needs to be done once. Once a proper NVRAM is created, the game will start quickly.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
 $info=wildone
