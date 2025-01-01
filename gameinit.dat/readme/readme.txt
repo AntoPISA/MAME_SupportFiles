@@ -1,5 +1,5 @@
-﻿MAME GAMEINIT.DAT 0.263    (March  6, 2024)
-© AntoPISA            www.progettoSNAPS.net
+﻿MAME GAMEINIT.DAT 0.272  (January  1, 2024)
+© AntoPISA & Robbbert www.progettoSNAPS.net
 ===========================================
 
 This file lists the initialization procedures of some games emulated by MAME;
@@ -9,6 +9,7 @@ is supported by MAME from 0.172 version.
 
 WhatsNew:
 ===================================
+1.00 0.272 2025/01/25: New version of the file, now updated with Robbbert's collaboration.
 0.47 0.263 2024/03/06: 107 new entries added.
 0.46 0.250 2024/02/27: From the next version the diff file will no longer be available; to check the evolution of the file use the Github link.
 0.45 0.250 2024/02/09: The files can also be found here https://github.com/AntoPISA/MAME_SupportFiles.
@@ -58,121 +59,6 @@ WhatsNew:
 0.01 0.166 2015/10/12: First version (pre-release).
 
 
-New Games Supported or changed in this version:
-===============================================
-blkrhinonz: Aristocrat - Black Rhino (3VXFC5344, New Zealand)
-cbrava: Interflip - Costa Brava (2 jackpot points, 81%)
-cbravaa: Interflip - Costa Brava (1 jackpot point, 77%)
-cbravab: Interflip - Costa Brava (2 jackpot points, 77%)
-cbravac: Interflip - Costa Brava (4 jackpot points, 77%)
-cbravad: Interflip - Costa Brava (8 jackpot points, 77%)
-defenderom: bootleg (Operamatic) - Operacion Defender (bootleg of Defender)
-dtrvwz5v: Merit - Deluxe Trivia ? Whiz (6221-75, U5-0 Edition 5 Vertical)
-eforestnz: Aristocrat - Enchanted Forest (3VXFC5343, New Zealand)
-eforestu: Aristocrat - Enchanted Forest (12XF528902, US)
-findout: Elettronolo - Find Out (Version 4.04, set 1)
-findouta: Elettronolo - Find Out (Version 4.04, set 2)
-gampo812: Fun World - Gamble Poker (v812, encrypted)
-gampo816: Fun World - Gamble Poker (v816, encrypted)
-gderby: hack (CODERE) - Gran Derby (Spanish hack of Jockey Club)
-gtsers11b: Greyhound Electronics - Trivia (Questions Series 11 Alt Question Rom, set 2)
-hipoly: bootleg - Hipoly (bootleg of Hyper Olympic)
-hyprolyma: Konami - Hyper Olympic (bugfixed)
-jojobajr2: Capcom - JoJo no Kimyou na Bouken: Mirai e no Isan (Japan 990913)
-jojobaner2: Capcom - JoJo's Bizarre Adventure (Euro 990913, NO CD)
-jojobanr2: Capcom - JoJo no Kimyou na Bouken: Mirai e no Isan (Japan 990913, NO CD)
-jojobar2: Capcom - JoJo's Bizarre Adventure (Euro 990913)
-jolygame: bootleg - Jolly Game (V1, Otti Karl logo)
-jolyjokrs: Impera - Jolly Joker (original program, interleaved GFX, Otti Karl logo, set 1)
-jolyjokrt: Impera - Jolly Joker (original program, interleaved GFX, Otti Karl logo, set 2)
-losttrea: <unknown> - Lost Treasure (V1.03)
-matchem: Merit - Match'em Up (6221-51, U5-1)
-newhunter: Karam - New HUNTer
-newhunterb: bootleg - New HUNTer (bootleg, set 1)
-newhunterc: bootleg - New HUNTer (bootleg, set 2)
-optigera: Taito - Operation Tiger (Ver 2.10 O)
-optigerj: Taito - Operation Tiger (Ver 2.09 J)
-pebe0013: IGT - International Game Technology - Player's Edge Plus (BE0013) Blackjack
-peke0026: IGT - International Game Technology - Player's Edge Plus (KE0026) Keno
-pepk0785: IGT - International Game Technology - Player's Edge (PK0785-PC041) Tens or Better
-pepk0788: IGT - International Game Technology - Player's Edge (PK0788-PC041) Tens or Better
-pepk1015: IGT - International Game Technology - Player's Edge (PK1015-PC088) 4 of a Kind Bonus Poker
-pepk1031: IGT - International Game Technology - Player's Edge (PK1031-PC088) 4 of a Kind Bonus Poker
-pepp0005: IGT - International Game Technology - Player's Edge Plus (PP0005) Standard Draw Poker
-pepp0042b: IGT - International Game Technology - Player's Edge Plus (PP0042) 10's or Better (set 3)
-pepp0052: IGT - International Game Technology - Player's Edge Plus (PP0052) Joker Poker (Aces or Better)
-pepp0079: IGT - International Game Technology - Player's Edge Plus (PP0079) Standard Draw Poker
-pepp0083a: IGT - International Game Technology - Player's Edge Plus (PP0083) 10's or Better (set 2)
-pepp0094a: IGT - International Game Technology - Player's Edge Plus (PP0094) Standard Draw Poker (set 2)
-pepp0117: IGT - International Game Technology - Player's Edge Plus (PP0117) Standard Draw Poker
-pepp0122: IGT - International Game Technology - Player's Edge Plus (PP0122) Deuces Wild Poker
-pepp0125a: IGT - International Game Technology - Player's Edge Plus (PP0125) Deuces Wild Poker (set 2)
-pepp0143: IGT - International Game Technology - Player's Edge Plus (PP0143) Deuces Joker Wild Poker
-pepp0418a: IGT - International Game Technology - Player's Edge Plus (PP0418) Deuces Wild Poker (set 2)
-pepp0420a: IGT - International Game Technology - Player's Edge Plus (PP0420) Standard Draw Poker (set 2)
-pepp0425: IGT - International Game Technology - Player's Edge Plus (PP0425) Joker Poker
-pepp0430: IGT - International Game Technology - Player's Edge Plus (PP0430) Deuces Joker Wild Poker (set 1)
-pepp0451: IGT - International Game Technology - Player's Edge Plus (PP0451) Bonus Poker Deluxe
-pepp0459: IGT - International Game Technology - Player's Edge Plus (PP0459) Joker Poker (set 1)
-pepp0469: IGT - International Game Technology - Player's Edge Plus (PP0469) Deuces Wild Poker
-pepp0508: IGT - International Game Technology - Player's Edge Plus (PP0508) Loose Deuce Deuces Wild! Poker (set 1)
-pepp0540: IGT - International Game Technology - Player's Edge Plus (PP0540) Double Bonus Poker (set 1)
-pepp0729: IGT - International Game Technology - Player's Edge Plus (PP0729) Double Bonus Poker
-pepp0750a: IGT - International Game Technology - Player's Edge Plus (PP0750) Standard Draw Poker (set 2)
-pepp0777: IGT - International Game Technology - Player's Edge Plus (PP0777) Royal Deuces Poker??
-pex0014p: IGT - International Game Technology - Player's Edge Plus (X000014P+XP000055) Standard Draw Poker
-pex0127p: IGT - International Game Technology - Player's Edge Plus (X000127P+XP000038) Deuces Wild Poker
-pex0444p: IGT - International Game Technology - Player's Edge Plus (X000444P+XP000038) Standard Draw Poker
-pex2004p: IGT - International Game Technology - Player's Edge Plus (X002004P+XP000038) Double Double Bonus Poker
-pex2046p: IGT - International Game Technology - Player's Edge Plus (X002046P+XP000038) Ace$ Bonus Poker
-redline: Fun World - Red Line (v808, encrypted)
-reelfun0: Grayhound Electronics - Reel Fun (Version 7.00)
-setaroula: hack (CODERE) - Super Ruleta 36 (Spanish hack of The Roulette)
-sevilla: Interflip - Sevilla (2 jackpot points, 81%)
-sevillaa: Interflip - Sevilla (1 jackpot point, 77%)
-sevillab: Interflip - Sevilla (2 jackpot points, 77%)
-sevillac: Interflip - Sevilla (4 jackpot points, 77%)
-sevillad: Interflip - Sevilla (8 jackpot points, 77%)
-sinistarc: Williams - Sinistar (revision 3, cockpit)
-sinistarc2: Williams - Sinistar (revision 2, cockpit)
-supst834: Fun World - Super Stars (v834, encrypted)
-supst839: Fun World - Super Stars (v839, encrypted)
-teddybb: Sega - TeddyBoy Blues (315-5115, New Ver.)
-teddybbo: Sega - TeddyBoy Blues (315-5115, Old Ver.)
-teddybboa: Sega - TeddyBoy Blues (315-5111, Old Ver.)
-teddybbobl: bootleg - TeddyBoy Blues (Old Ver. bootleg)
-teqsun: Aristocrat - Tequila Sunrise (1VXFC613, NSW)
-thrilld: Konami - Thrill Drive (UDE)
-thrillda: Konami - Thrill Drive (ACE)
-thrilldab: Konami - Thrill Drive (ABE)
-thrilldb: Konami - Thrill Drive (UDB)
-thrilldba: Konami - Thrill Drive (ACB)
-thrilldbab: Konami - Thrill Drive (ABB)
-thrilldbe: Konami - Thrill Drive (EDB)
-thrilldbj: Konami - Thrill Drive (JCB)
-thrilldbja: Konami - Thrill Drive (JAB)
-thrillde: Konami - Thrill Drive (EDE)
-thrilldgej: Konami - Thrill Drive (ver GE713JAB)
-thrilldgeu: Konami - Thrill Drive (ver GE713UFB)
-thrilldgke: Konami - Thrill Drive (ver GK713EAB)
-thrilldgkee: Konami - Thrill Drive (ver GK713EEB)
-thrilldgkk: Konami - Thrill Drive (ver GK713K*B)
-thrilldgmj: Konami - Thrill Drive (ver GM713JAB)
-thrilldgnj: Konami - Thrill Drive (ver GN713JAB)
-thrilldgpj: Konami - Thrill Drive (ver GP713JAB)
-thrilldj: Konami - Thrill Drive (JCE)
-thrilldja: Konami - Thrill Drive (JAE)
-tictac: Merit - Tic Tac Trivia (6221-23, U5-0C, 07/07/86)
-toledo: Interflip - Toledo (2 jackpot points, 87%)
-toledoa: Interflip - Toledo (2 jackpot points, 83%)
-toledob: Interflip - Toledo (1 jackpot point, 79%)
-turbosubb8: Entertainment Sciences - Turbo Sub (prototype rev. TSB8)
-turbosubc5: Entertainment Sciences - Turbo Sub (prototype rev. TSC5)
-turbosubc5s: Entertainment Sciences - Turbo Sub (prototype rev. TSC5*)
-turbosubc8: Entertainment Sciences - Turbo Sub (prototype rev. TSC8)
-viostormubbl: bootleg (Eye Pro) - Violent Storm (ver UAB, bootleg)
-
-
 Sources:
 ===================================
 * https://wiki.mamedev.org/
@@ -186,4 +72,4 @@ Copy the file in the "dats" folder of your MAME or MAMEUI and select the file in
 The "command.ini" file must be in "folders" folder.
 
 
-© 2015/2024 AntoPISA
+© 2015/2025 AntoPISA & Robbbert
