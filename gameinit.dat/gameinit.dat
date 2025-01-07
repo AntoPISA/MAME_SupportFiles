@@ -1,4 +1,4 @@
-﻿# MAME GAMEINIT.DAT v0.273   Latest Update: January   1, 2025
+﻿# MAME GAMEINIT.DAT v0.273   Latest Update: January   7, 2025
 #                         Project started: September 10, 2015
 #          Merged to the file startup.dat:  December 17, 2024
 #
@@ -7,6 +7,7 @@
 # Homepage         : https://www.progettosnaps.net/gameinit.dat
 # Github repository: https://github.com/AntoPISA/MAME_SupportFiles
 # Verified with motoschifo's MDE, downloadable here: http://adb.arcadeitalia.net/?page=download
+#
 #
 #
 $info=3bagfull
@@ -928,6 +929,7 @@ The inputs stop working at times, making it quite difficult to use. The crosshai
 $end
 $info=avmjts
 $mame
+INITIALIZATION:
 
 Screen is upside down. "Flip Screen" dipswitch doesn't work. Go into video settings and set rotate to 180.
 
@@ -10923,6 +10925,13 @@ To save a tape: CSAVE"x"
 To load a tape: CLOAD or RUN"CAS:"
 
 $end
+$info=svision
+$mame
+TIPS:
+
+MAMEUI: Make sure you select a cartridge before starting this system. If you don't, it will crash at start.
+
+$end
 $info=sweetl
 $mame
 INITIALIZATION:
@@ -11289,11 +11298,9 @@ To load a tape: LOAD"1:x"
 $end
 $info=ti99_224
 $mame
-INITIALIZATION:
+TIPS:
 
 This system is incomplete. The SAVE and OPEN commands are not implemented, and will cause a reboot.
-
-To load a tape: OLD CS1
 
 $end
 $info=ti99_4,ti99_4a,ti99_232,ti99_8
@@ -12530,4 +12537,3 @@ $end
 #
 #
 # © 2015/2024  AntoPISA and Robbbert
-#
