@@ -1,9 +1,9 @@
 ﻿MAME RENAMESET.DAT/INI 
-===================================
-© progetto-SNAPS 2009/2024 AntoPISA
+======================================
+© 2009/2025 progetto-SNAPS by AntoPISA
 
-renameSET.dat:    0.272
-Internal version:  5.40
+renameSET.dat:     0.273
+Internal version: 15.00
 
 The package contains:
 
@@ -103,7 +103,7 @@ total items removed "del" (machines/devices/bioses)
 
 
 Home-page: https://www.progettosnaps.net/renameset/
-Github   : https://github.com/AntoPISA/MAME_SupportFiles
+Github   : https://github.com/AntoPISA/MAME_SupportFiles/tree/main/renameSET.dat
 
 
-© 2009/2024 AntoPISA
+© 2009/2025 AntoPISA
