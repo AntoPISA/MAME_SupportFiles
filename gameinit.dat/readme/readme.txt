@@ -1,4 +1,4 @@
-﻿MAME GAMEINIT.DAT 0.272  (January  1, 2024)
+﻿MAME GAMEINIT.DAT 0.273  (January  7, 2025)
 © AntoPISA & Robbbert www.progettoSNAPS.net
 ===========================================
 
@@ -8,55 +8,56 @@ is supported by MAME from 0.172 version.
 
 
 WhatsNew:
-===================================
-1.00 0.272 2025/01/25: New version of the file, now updated with Robbbert's collaboration.
-0.47 0.263 2024/03/06: 107 new entries added.
-0.46 0.250 2024/02/27: From the next version the diff file will no longer be available; to check the evolution of the file use the Github link.
-0.45 0.250 2024/02/09: The files can also be found here https://github.com/AntoPISA/MAME_SupportFiles.
-0.44 0.250 2022/06/12: 173 new entries added.
-0.43 0.232 2021/06/02: 5 new entries added.
-0.42 0.231 2021/05/01: 58 new entries added and and some renames.
-0.41 0.229 2021/04/17: Fixed some files (eliminated the presence of BOMs that created problems). Thanks to Saknet and Robbbert.
-0.40 0.229 2021/02/27: 15 new entries added and various renames.
-0.39 0.215 2019/11/02: 19 new entries added.
-0.38 0.212 2019/05/08: 14 new entries added and 11 fixed.
-0.37 0.207 2019/02/03: 6 new entries added and 1 renamed.
-0.36 0.205 2018/12/27: 8 new entries added.
-0.35 0.204 2018/11/30: 269 new entries added and various minor fixes.
-0.34 0.203 2018/11/22: Fixed (lottofun) entry.
-0.33 0.193 2017/12/29: 11 new entries added and 1 renamed.
-0.32 0.190 2017/10/01: 8 new entries added.
-0.31 0.188 2017/09/25: Various fixes at the file format.
-0.30 0.188 2017/07/29: Only 1 new entry added.
-0.29 0.187 2017/07/01: 35 new entries added.
-0.28 0.186 2017/06/09: 51 new entries added.
-0.27 0.185 2017/05/01: 33 new entries added.
-0.26 0.184 2017/04/08: 92 new entries added.
-0.25 0.183 2017/02/27: 50 new entries added.
-0.24 0.182 2017/02/01: Various spelling corrections and replaced some items that were in Italian.
-0.23 0.182 2017/01/29: 40 new entries added.
-0.22 0.181 2017/01/01: 60 new entries added and various fix.
-0.21 0.180 2016/12/22: Thanks to the work of parsing of motoschifo, they have been corrected many syntax errors in the file.
-0.20 0.180 2016/12/07: 28 new entries added.
-0.19 0.179 2016/12/01: 8 entries removed (doubled).
-0.18 0.179 2016/10/29: 30 new entries added.
-0.17 0.178 2016/10/15: Removed 1 double entry (jojoba) from the English file.
-0.16 0.178 2016/10/01: 49 new entries added.
-0.15 0.177 2016/09/07: 30 new entries added.
-0.14 0.176 2016/08/04: 38 new entries added and released the new diff file) and various fix.
-0.13 0.175 2016/08/02: Added diff pack - only in english (suggested by Stiletto).
-0.12 0.175 2016/07/14: 10 new entries added.
-0.11 0.174 2016/07/01: Removed 14 doubles entries.
-0.10 0.174 2016/06/01: 15 new entries added and some minor type fix.
-0.09 0.173 2016/05/05: 24 new entries added.
-0.08 0.172 2016/04/04: 46 new entries added.
-0.07 0.171 2016/04/03: Fixed some typo errors.
-0.06 0.171 2016/04/01: Added 'gameinit.ini' file into pack, with all machines present in the principal file.
-0.05 0.171 2016/03/28: First version online!
-0.04 0.171 2016/03/27: New entries added. Splitted file in two: italian and english version.
-0.03 0.171 2016/03/26: Added support in official MAME (many thanks to Dankan1890).
-0.02 0.171 2016/03/23: Update and added clones to list.
-0.01 0.166 2015/10/12: First version (pre-release).
+=================
+2025/01/07 11.01: Aligned item names with MAME 0.273.
+2025/01/25 11.00: New version of the file, now updated with Robbbert's collaboration (aligned with MAME 0.272).
+2024/03/06 10.02: 107 new entries added (aligned with MAME 0.263).
+2024/02/27 10.01: From the next version the diff file will no longer be available; to check the evolution of the file use the Github link.
+2024/02/09 10.00: The files can also be found here https://github.com/AntoPISA/MAME_SupportFiles/blob/main/gameinit.dat/.
+2022/06/12  8.00: 173 new entries added (aligned with MAME 0.250).
+2021/06/02  7.03: 5 new entries added (aligned with MAME 0.232).
+2021/05/01  7.02: 58 new entries added and and some renames (aligned with MAME 0.231).
+2021/04/17  7.01: Fixed some files (eliminated the presence of BOMs that created problems). Thanks to Saknet and Robbbert.
+2021/02/27  7.00: 15 new entries added and various renames (aligned with MAME 0.229).
+2019/11/02  5.02: 19 new entries added (aligned with MAME 0.215).
+2019/05/08  5.01: 14 new entries added and 11 fixed (aligned with MAME 0.212).
+2019/02/03  5.00: 6 new entries added and 1 renamed (aligned with MAME 0.207).
+2018/12/27  4.02: 8 new entries added (aligned with MAME 0.205).
+2018/11/30  4.01: 269 new entries added and various minor fixes (aligned with MAME 0.204).
+2018/11/22  4.00: Fixed (lottofun) entry  (aligned with MAME 0.203).
+2017/12/29  3.11: 11 new entries added and 1 renamed (aligned with MAME 0.193).
+2017/10/01  3.10: 8 new entries added (aligned with MAME 0.190).
+2017/09/25  3.09: Various fixes at the file format.
+2017/07/29  3.08: Only 1 new entry added (aligned with MAME 0.188).
+2017/07/01  3.07: 35 new entries added (aligned with MAME 0.187).
+2017/06/09  3.06: 51 new entries added (aligned with MAME 0.186).
+2017/05/01  3.05: 33 new entries added (aligned with MAME 0.185).
+2017/04/08  3.04: 92 new entries added (aligned with MAME 0.184).
+2017/02/27  3.03: 50 new entries added (aligned with MAME 0.183).
+2017/02/01  3.02: Various spelling corrections and replaced some items that were in Italian  (aligned with MAME 0.182).
+2017/01/29  3.01: 40 new entries added.
+2017/01/01  3.00: 60 new entries added and various fix (aligned with MAME 0.181).
+2016/12/22  2.13: Thanks to the work of parsing of motoschifo, they have been corrected many syntax errors in the file.
+2016/12/07  2.12: 28 new entries added (aligned with MAME 0.180).
+2016/12/01  2.11: 8 entries removed (doubled).
+2016/10/29  2.10: 30 new entries added (aligned with MAME 0.179).
+2016/10/15  2.09: Removed 1 double entry (jojoba) from the English file.
+2016/10/01  2.08: 49 new entries added (aligned with MAME 0.178).
+2016/09/07  2.07: 30 new entries added (aligned with MAME 0.177).
+2016/08/04  2.06: 38 new entries added and released the new diff file and various fix (aligned with MAME 0.171).
+2016/08/02  2.05: Added diff pack - only in english (suggested by Stiletto).
+2016/07/14  2.04: 10 new entries added (aligned with MAME 0.175).
+2016/07/01  2.03: Removed 14 doubles entries (aligned with MAME 0.174).
+2016/06/01  2.02 15 new entries added and some minor type fix.
+2016/05/05  2.01: 24 new entries added (aligned with MAME 0.173).
+2016/04/04  2.00: 46 new entries added (aligned with MAME 0.172).
+2016/04/03  1.05: Fixed some typo errors.
+2016/04/01  1.04: Added 'gameinit.ini' file into pack, with all machines present in the principal file.
+2016/03/28  1.03: First version online!
+2016/03/27  1.02: New entries added. Splitted file in two: italian and english version.
+2016/03/26  1.01: Added support in official MAME (many thanks to Dankan1890).
+2016/03/23  1.00: Update and added clones to list (aligned with MAME 0.171).
+2015/10/12  0.00: First version (pre-release 0.166).
 
 
 Sources:
