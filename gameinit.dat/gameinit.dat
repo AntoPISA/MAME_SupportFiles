@@ -926,6 +926,12 @@ Follow the setup prompts until done.
 The inputs stop working at times, making it quite difficult to use. The crosshair still moves though, even when the machine appears to be frozen.
 
 $end
+$info=avmjts
+$mame
+
+Screen is upside down. "Flip Screen" dipswitch doesn't work. Go into video settings and set rotate to 180.
+
+$end
 $info=ax150,ax170,ax200,ax230,ax350ii,ax370,ax500,bruc100,canonv20,canonv8,cf1200,cf2000,cf2700,cf2700uk,cf3000,cf3300,cpc330k,cpc51,cpc88,cx5f,cx5miib,cx5mu,cx7m128,dgnmsx,dpc200,dpc200e,expert13,expert20,expertdp,expertpl,fdpc200,fmx,fpc500,fpc900,fs1300,fs4000,fs4500,fs4600f,fs4700f,fs5000f2,fs5500f2,fspc800,gfc1080,gfc1080a,gsfc200,gsfc80u,hb101p,hb10p,hb201p,hb20p,hb501p,hb55p,hb701fd,hb75p,hb8000,hc7,hx10,hx20,hx21,hx22,hx32,hx51i,jvchc7gb,mbh1,mbh2,mbh25,mbh50,ml8000,mlf110,mlf120,mlf48,mlf80,mlfx1,mpc10,mpc100,mpc200,mpc64,mx15,mx64,nms801,perfect1,phc2,phc28,phc28l,phc28s,piopx7,pv16,spc800,svi728,svi738,sx100,vg8010,vg802020,yc64,yis503
 $mame
 TIPS:
@@ -4996,11 +5002,35 @@ Some disks don't have boot tracks, so need to be mounted in B drive. These are m
 The older disks end with _b (bootable) or _nb (not bootable).
 
 $end
+$info=kbh
+$mame
+INITIALIZATION:
+
+* Wait for E761 PCM DATA ERROR.
+
+* Press F2 until the menu appears. In this menu, 1 and 2 are used to select an item, and you press 1 and 2 together to select/confirm. Pressing 1 and 2 together usually doesn't work, prepare to try numerous times.
+
+* Choose BACKUP CLEAR. Once there, press 1 to DEFAULT. When done, you're back at the menu.
+
+* Choose SOUND TEST. Choose SOUND INIT FLASH. Once there, press 1 to INIT.
+
+* When the menu reappears, press F3.
+
+SOURCE:
+https://www.progettosnaps.net/gameinit.dat
+
+$end
 $info=kbm
 $mame
 INITIALIZATION:
 
-On first launch, the game will stop displaying the "E761 PCM DATA ERROR" error; in order to play you will have to press [ F2 ], then [ 2 ] and again [ 2 ] to move to the "SOUND TEST" test menu item. To select it press [ 1 ]+[ 2 ] then [ 1 ] and [ 1 ] again. Now press [ 1 ]+[ 2 ] together then [ 1 ] and wait for the sound card to initialize. Exit by pressing [ 1 ], [ 1 ]+[ 2 ] and reset with [ Shift ]+[ F3 ]. Now the error to be solved will be "E150 BACKUP DATA ERROR", which can be solved with this sequence: [ F2 ], [ 1 ], [ 1 ], [ 1 ]+[ 2 ], [ 1 ], [ 1 ], [ 1 ]+[ 2 ], [ 1 ], reset now with [Shift]+[F3] and play.
+* Wait for E161 BACKUP BATTERY ERROR.
+
+* Press F2 until the menu appears. In this menu, 1 and 2 are used to select an item, and you press 1 and 2 together to select/confirm. Pressing 1 and 2 together usually doesn't work, prepare to try numerous times.
+
+* Choose BACKUP CLEAR. Once there, press 1 to DEFAULT.
+
+* When the menu reappears, press F3.
 
 SOURCE:
 https://www.progettosnaps.net/gameinit.dat
@@ -5010,7 +5040,15 @@ $info=kbm2nd
 $mame
 INITIALIZATION:
 
-At the first start, the game will stop displaying the error "E161 BACKUP BATTERY ERROR"; in order to play you will have to press [F2], then [ 1 ] and again [ 1 ] to move to the test menu item "ALL FACTORY SETTINGS". To select it press [ 1 ]+[ 2 ] then [ 1 ]. Now press [ 1 ] once and [ 1 ]+[ 2 ], again [ 1 ] and [ 1 ]+[ 2 ], then [ 1 ]+[ 2 ]; now press [ 2 ] to move to the "EXIT" item and select it with [ 1 ]+[ 2 ]. Now you will see the "E761 PCM DATA ERROR": press [F2], [ 2 ] four times, then [ 1 ]+[ 2 ] to select the "SOUND CHECK" item; now press four times [ 2 ] and select "INITIALIZE SOUND FLASH" by pressing together [ 1 ]+[ 2 ], then [ 1 ], then [ 1 ]+[ 2 ], [ 1 ] and again [ 1 ]+[ 2 ] and again [ 1 ]+[ 2 ] until you return to the "SOUND CHECK" menu. Now press [ 2 ], [ 1 ]+[ 2 ], [ 2 ], [ 2 ], [ 2 ] and [ 1 ]+[ 2 ]. The game will finally start!
+* Wait for E161 BACKUP BATTERY ERROR.
+
+* Press F2. In this menu, 1 and 2 are used to select an item, and you press 1 and 2 together to select/confirm. Select ALL FACTORY SETTINGS. Choose YES each time until you are returned to the menu.
+
+* Choose SOUND CHECK. Choose INITIALIZE SOUND FLASH. Choose YES each time until it stops responding.
+
+* Wait about a minute for it to complete, and there's a sound. Choose EXIT.
+
+* Choose EXIT again, and the game will start.
 
 SOURCE:
 https://www.progettosnaps.net/gameinit.dat
@@ -5020,7 +5058,17 @@ $info=kbm3rd
 $mame
 INITIALIZATION:
 
-At the first start, the game will stop displaying the error "E161 BACKUP BATTERY ERROR"; in order to play you will have to press [F2], then [ 1 ] and again [ 1 ] to move to the test menu item "ALL FACTORY SETTINGS". To select it press [ 1 ]+[ 2 ] then [ 1 ]. Now press [ 1 ] once and [ 1 ]+[ 2 ], again [ 1 ] and [ 1 ]+[ 2 ], then [ 1 ]+[ 2 ]; now press [ 2 ] to move to the "GAME MODE" item and select it with [ 1 ]+[ 2 ]. Now you will see the "E761 PCM DATA ERROR": press [F2], [ 2 ] four times, then [ 1 ]+[ 2 ] to select the "SOUND CHECK" item; now press four times [ 2 ] and select "INITIALIZE SOUND FLASH" by pressing together [ 1 ]+[ 2 ], then [ 1 ], then [ 1 ]+[ 2 ], [ 1 ] and again [ 1 ]+[ 2 ] and again [ 1 ]+[ 2 ] until you return to the "SOUND CHECK" menu. Now press [ 2 ], [ 1 ]+[ 2 ], [ 2 ], [ 2 ], [ 2 ] and [ 1 ]+[ 2 ]. The game will finally start!
+* Wait for E161 BACKUP BATTERY ERROR.
+
+* Press F2. In this menu, 1 and 2 are used to select an item, and you press 1 and 2 together to select/confirm.
+
+* Select ALL FACTORY SETTINGS. Choose YES each time until you are returned to the menu.
+
+* Choose SOUND OPTIONS. Choose INITIALIZE SOUND FLASH. Choose YES each time until it stops responding.
+
+* Wait about a minute for it to complete, and there's a sound. Choose EXIT.
+
+* Choose GAME MODE, and the game will start.
 
 SOURCE:
 https://www.progettosnaps.net/gameinit.dat
@@ -5130,6 +5178,17 @@ After the game starts to boot, re-enter the TEST MENU [ F2 ]. Use [ 9 ] to move 
 
 SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
+
+$end
+$info=kollonc
+$mame
+INITIALIZATION:
+
+* Wait until the blue and red bars say COMPLETE, and it halts.
+
+* Press Tab. In the Dipswitch menu, turn BIOS Flash to Off and choose Reset System.
+
+* Wait for the blue bar to say COMPLETE. It will restart itself and work.
 
 $end
 $info=konam80s
@@ -8707,7 +8766,17 @@ $info=playch10
 $mame
 INITIALIZATION:
 
-Starting the game, you are taken into a double screen: top the list of games, below the game screen. They fit using credits, as for the other games, the keys [ 5 ] or [ 6 ]. It must therefore SELECT the game, using the [ ' ] (apostrophe). Select the game options (1 player, 2 player, etc.) with the key [ 1 ], and start it by pressing [ 2 ].
+* Insert a coin (press 5).
+
+* If there's more than one game in the list, use 0 to choose it.
+
+* Press "-" key
+
+* If you want 2 players, press 2
+
+* Start game (press 1).
+
+NOTE: Whenever it says to press Enter, press "-" (minus).
 
 SOURCE:
 https://www.progettosnaps.net/gameinit.dat
@@ -8971,34 +9040,32 @@ To save a tape: KSAVE $1
 To load a tape: KLOAD $1
 
 $end
-$info=ppd
+$info=ppd,ppp,ppp11
 $mame
 INITIALIZATION:
 
-At the first start, the game will stop displaying some errors (E160, E166 and E124): with [ F2 ] you enter the "MAIN MENU". Press exactly this key sequence: [ Ctlr ], [ Ctlr ], [ 1 ], [ Alt ], [ 1 ], [ Alt ], [ 1 ], [ Alt ] and [ 1 ]. At this point there will be two errors (E166 and E124); this is the second sequence that initializes the sound card: [ F2 ], [ Alt ], [ Alt ], [ Alt ], [ Alt ], [ Alt ], [ Alt ] [ 1 ], [ Alt ], [1], [ Alt ], [ Alt ], [ Alt ], [ Alt ], [ Alt ], [ Alt ], [ Alt ] and [ 1 ]. Now there is only the "E166 RTC UNFORMAT" error, which can be solved with this sequence: [ F2 ], [ Alt ], [ Alt ], [ Alt ], [ Alt ], [ Alt ], [ Alt ], [ Alt ], [ Alt ], [1], [ Alt ], [1], [ Alt ], [ Alt ], [ Alt ], [ Alt ], [ Alt ], [ 1 ] and [ Shift ]+[ F3 ]. Finally we play!
+* Wait for TEST MODE to show.
 
-SOURCE:
-https://www.progettosnaps.net/gameinit.dat
+* Press F2 until the menu appears. Use Ctrl and Alt to navigate. Press 1 to select/confirm.
+
+* Choose ALL FACTORY SETTINGS. Confirm until it's done.
+
+* Choose SOUND FLASH INIT. Confirm until it's done.
+
+* Wait a while. When it says OK:EXEC, press 1. Select EXIT.
 
 $end
-$info=ppp
+$info=ppp2nd
 $mame
 INITIALIZATION:
 
-At the first start, the game will stop displaying some errors (E160, E166 and E124): with [ F2 ] you enter the "MAIN MENU". Press exactly this key sequence: [ Ctlr ], [ Ctlr ], [ 1 ], [ Alt ], [ 1 ], [ Alt ], [ 1 ], [ Alt ] and [ 1 ]. At this point there will be two errors (E166 and E124); this is the second sequence that initializes the sound card: [ F2 ], [ Alt ], [ Alt ], [ Alt ], [ Alt ], [ Alt ], [ Alt ] [ 1 ], [ Alt ], [1], [ Alt ], [ Alt ], [ Alt ], [ Alt ], [ Alt ], [ Alt ], [ Alt ] and [ 1 ]. Now there is only the "E166 RTC UNFORMAT" error, which can be solved with this sequence: [ F2 ], [ Alt ], [ Alt ], [ Alt ], [ Alt ], [ Alt ], [ Alt ], [ Alt ], [ Alt ], [1], [ Alt ], [1], [ Alt ], [ Alt ], [ Alt ], [ Alt ], [ Alt ], [ 1 ] and [ Shift ]+[ F3 ]. Finally we play!
+* Wait for PRESS TEST BUTTON to show.
 
-SOURCE:
-https://www.progettosnaps.net/gameinit.dat
+* Press F2. Use Ctrl and Alt to navigate. Press 1 to select/confirm.
 
-$end
-$info=ppp11
-$mame
-INITIALIZATION:
+* Choose ALL FACTORY SETTINGS. Confirm until it's done.
 
-At the first start, the game will stop displaying some errors (E160, E166 and E124): with [ F2 ] you enter the "MAIN MENU". Press exactly this key sequence: [ Ctlr ], [ Ctlr ], [ 1 ], [ Alt ], [ 1 ], [ Alt ], [ 1 ], [ Alt ] and [ 1 ]. At this point there will be two errors (E166 and E124); this is the second sequence that initializes the sound card: [ F2 ], [ Alt ], [ Alt ], [ Alt ], [ Alt ], [ Alt ], [ Alt ] [ 1 ], [ Alt ], [1], [ Alt ], [ Alt ], [ Alt ], [ Alt ], [ Alt ], [ Alt ], [ Alt ] and [ 1 ]. Now there is only the "E166 RTC UNFORMAT" error, which can be solved with this sequence: [ F2 ], [ Alt ], [ Alt ], [ Alt ], [ Alt ], [ Alt ], [ Alt ], [ Alt ], [ Alt ], [1], [ Alt ], [1], [ Alt ], [ Alt ], [ Alt ], [ Alt ], [ Alt ], [ 1 ] and [ Shift ]+[ F3 ]. Finally we play!
-
-SOURCE:
-https://www.progettosnaps.net/gameinit.dat
+* Press F3. Game will start.
 
 $end
 $info=primoa32
@@ -10220,7 +10287,13 @@ $info=simpbowl
 $mame
 INITIALIZATION:
 
-To initialize the EEPROM, hold down test switch [ F2 ] and press reset [ F3 ] once. Do not let go of [ F2 ] until you see a message that says "Initializing EEPROM".
+* Wait for the 4 BAD roms to show.
+
+* Hold F2 and hit F3.
+
+* Keep holding F2 until it says EEPROM INITIALIZED.
+
+* Let go, and wait a while. The game will start.
 
 SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
