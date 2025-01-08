@@ -8,7 +8,7 @@ The following files have been updated in this MAME cycle:
 
 - BestGames.ini
 - CatVer pack   WIP
-- Command.dat   WIP
+- Command.dat
 - gameinit.dat
 - Languages.ini WIP
 - MESSInfo.dat  WIP
