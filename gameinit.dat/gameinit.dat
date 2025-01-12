@@ -3235,7 +3235,47 @@ $info=elf2
 $mame
 INITIALIZATION:
 
-Although this machine is marked as working, it hasn't worked for many years.
+Cassettes don't work because the hardware is not hooked up.
+
+First-time run: the screen will be black because the wrong video default is used. Change the Video Options, Screen #0 -> Standard.
+
+This system only works in MAMEUI [from 0.274]
+
+Instructions for MAMEUI:
+
+There's 3 important switches:
+L - toggle LOAD on/off
+R - toggle RUN on/off
+M - toggle MEMORY PROTECT on/off
+
+The combined status is shown on the screen.
+
+* LOAD off, RUN off = RESET (set program counter to zero)
+
+* LOAD on, RUN off, MP off = WRITE (you can load bytes into memory)
+
+* LOAD on, RUN off, MP on = READ (you can look at data in memory)
+
+* LOAD off, RUN on, MP off = RUN R/W (program runs and it can modify memory)
+
+* LOAD off, RUN on, MP on = RUN R/O (programs runs but cannot write)
+
+* LOAD on, RUN on = PAUSE (the running program is paused)
+
+To input data, choose RESET (all 3 switches off), then WRITE (press L). Now input bytes, pressing IN (enter key) after each byte. To run it, press L (says RESET) then press R (says RUN R/W).
+
+Some test programs - make sure to set the switches to WRITE first.
+Copy the code below and Paste into the emulator. (Edit -> Paste)
+
+1. Program to slowly flash the round LED:
+
+7A^F8^10^B1^21^91^3A^04^31^00^7B^30^01^
+
+then press L then R. While running, you can press L to pause.
+
+2. Program to light the round LED when IN is pushed:
+
+7A^3F^00^7B^30^01^
 
 $end
 $info=elwro800
@@ -8629,6 +8669,13 @@ Rom banking (in U bank):
 3U: Label handler
 
 $end
+$info=pi4d50,pi4d70
+$mame
+INITIALIZATION:
+
+Type help to get a list of commands.
+
+$end
 $info=pilot1k
 $mame
 INITIALIZATION:
@@ -10925,13 +10972,6 @@ To save a tape: CSAVE"x"
 To load a tape: CLOAD or RUN"CAS:"
 
 $end
-$info=svision
-$mame
-TIPS:
-
-MAMEUI: Make sure you select a cartridge before starting this system. If you don't, it will crash at start.
-
-$end
 $info=sweetl
 $mame
 INITIALIZATION:
@@ -11301,6 +11341,8 @@ $mame
 TIPS:
 
 This system is incomplete. The SAVE and OPEN commands are not implemented, and will cause a reboot.
+
+To load a tape: OLD CS1
 
 $end
 $info=ti99_4,ti99_4a,ti99_232,ti99_8
@@ -12536,4 +12578,4 @@ Shift-0 = backspace
 $end
 #
 #
-# © 2015/2024  AntoPISA and Robbbert
+# © 2015/2025  AntoPISA and Robbbert
