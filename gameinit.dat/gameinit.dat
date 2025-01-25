@@ -1202,7 +1202,7 @@ $info=binbug
 $mame
 TIPS:
 
-All input must be in uppercase.
+All input must be in uppercase. Type slowly, or corruption will occur.
 
 Commands:
 A - See and alter memory
@@ -1212,6 +1212,12 @@ D - cassette save  (Da b saves memory range a to b)
 G - Go to address, run
 L - cassette load
 S - See and alter registers
+
+When loading a tape, don't press Insert or a bad load will immediately occur.
+
+A bad load is signified by rubbish printing on the console.
+
+To run a program loaded from tape, use the command G440.
 
 $end
 $info=bjtwin
@@ -9867,15 +9873,22 @@ $info=samcoupe
 $mame
 INITIALIZATION:
 
-At the rainbow screen, either load a tape with LOAD, or boot a disk with BOOT.
+To get double-quote, press the ] key.
 
-To save a tape: SAVE"x"  (Press ] to get ")
-
-Unmap joy 2 to fix the ADFGR keys, and reassign Fire to the Delete key to fix Ctrl.
+Joystick 2 is mapped over some of the alphabetic keys. You may need to unmap the joystick to fix the keyboard. Unmap joy 2 to fix the ADFGR keys, and reassign Fire to the Delete key to fix Ctrl.
 
 
 
-Screen Squash: starts loading as Basic: Scruncher, then says No Dos.
+Cassette
+--------
+At the rainbow screen, load a tape with LOAD"". If it doesn't run itself, type RUN.
+
+To save a tape: SAVE"x"
+
+
+Floppies
+--------
+At the rainbow screen, boot a disk with BOOT. If it says NO DOS then the disk is not usable. If it says NO AUTOBOOT, do DIR. If files show, do DEVICE D, followed by LOAD"(likely-looking-file)". If it doesn't start up, do RUN.
 
 $end
 $info=sapi1
@@ -9896,6 +9909,12 @@ You must select bios 2 to use cassette commands.
 To save a tape: SAVE
 
 To load a tape: LOAD
+
+$end
+$info=saturn
+$mame
+
+The use of a ROM CARTRIDGE (BIN without CUE) does not work.
 
 $end
 $info=savia84
@@ -10215,11 +10234,13 @@ $info=sg1000m2,sc3000
 $mame
 INITIALIZATION:
 
-If you use a Basic cart (for example "basic3e"), you can use cassettes.
+To use cassettes, you must load "basic3" or "basic3e" (don't use "basic2" as it gives only 2k of free memory).
 
 To save a tape: SAVE"x"
 
 To load a tape: LOAD
+
+If it doesn't run after loading, do RUN.
 
 $end
 $info=sgsafari
@@ -11836,6 +11857,12 @@ D boot from floppy (launch Flex OS)
 F relaunch Flex
 G go
 M modify memory (. to exit)
+
+$end
+$info=vc4000
+$mame
+
+In most games, press 5 to choose difficulty, or on multigame carts, which game. Press 1 to start.
 
 $end
 $info=vcs80
