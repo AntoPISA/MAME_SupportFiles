@@ -1213,6 +1213,10 @@ G - Go to address, run
 L - cassette load
 S - See and alter registers
 
+When loading a tape, don't press Insert or a bad load will immediately occur.
+
+A bad load is signified by rubbish printing on the console.
+
 $end
 $info=bjtwin
 $mame
@@ -11836,6 +11840,12 @@ D boot from floppy (launch Flex OS)
 F relaunch Flex
 G go
 M modify memory (. to exit)
+
+$end
+$info=vc4000
+$mame
+
+In most games, press 5 to choose difficulty, or on multigame carts, which game. Press 1 to start.
 
 $end
 $info=vcs80
