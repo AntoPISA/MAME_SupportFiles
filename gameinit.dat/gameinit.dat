@@ -9873,15 +9873,22 @@ $info=samcoupe
 $mame
 INITIALIZATION:
 
-At the rainbow screen, either load a tape with LOAD, or boot a disk with BOOT.
+To get double-quote, press the ] key.
 
-To save a tape: SAVE"x"  (Press ] to get ")
-
-Unmap joy 2 to fix the ADFGR keys, and reassign Fire to the Delete key to fix Ctrl.
+Joystick 2 is mapped over some of the alphabetic keys. You may need to unmap the joystick to fix the keyboard. Unmap joy 2 to fix the ADFGR keys, and reassign Fire to the Delete key to fix Ctrl.
 
 
 
-Screen Squash: starts loading as Basic: Scruncher, then says No Dos.
+Cassette
+--------
+At the rainbow screen, load a tape with LOAD"". If it doesn't run itself, type RUN.
+
+To save a tape: SAVE"x"
+
+
+Floppies
+--------
+At the rainbow screen, boot a disk with BOOT. If it says NO DOS then the disk is not usable. If it says NO AUTOBOOT, do DIR. If files show, do DEVICE D, followed by LOAD"(likely-looking-file)". If it doesn't start up, do RUN.
 
 $end
 $info=sapi1
