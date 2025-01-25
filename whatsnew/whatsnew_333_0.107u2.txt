@@ -2,7 +2,7 @@
 ---------------------------------------
 
 
-New clones added
+New Clones Added
 ----------------
 Gals Panic II (Asia) [Patrik Styrnell]
 Viper Phase 1 (World, New Version) [Corrado Tomaselli]
@@ -28,23 +28,23 @@ Source changes:
 - Implemented CNT pin and some serial features of the 6526 CIA chip [Nathan Woods].
 - Mapped service button in slammast [Canim].
 - Massive cleanup/fixing of 16-bit Sega drivers [AWJ]:
-  * Many corrections to descriptive set names, adding revision letters, cabinet types, etc.
-  * Fixed many DIP switches and added PORT_DIPLOCATION support.
-  * Adjusted min/max values for analog controls to improve response.
-  * Fixed button ordering between System 16A/B.
-  * Cleaned up a number of ROM names and fixed some incorrect guesses.
-  * Some cleanup of turbo.c as well.
-  * Fixed visible area in 'Hang-On' hardware.
-  * Actually disabling 8751 in games that have a fake replacement.
-  * Hooked up 8255 PPI correctly now that it has mode 2 support.
-  * Fixed behavior of NMI line in later sega sound boards.
-  * Fixed addressing in the SegaPCM sound system.
+  * Many corrections to descriptive set names, adding revision letters, cabinet types, etc.;
+  * Fixed many DIP switches and added PORT_DIPLOCATION support;
+  * Adjusted min/max values for analog controls to improve response;
+  * Fixed button ordering between System 16A/B;
+  * Cleaned up a number of ROM names and fixed some incorrect guesses;
+  * Some cleanup of turbo.c as well;
+  * Fixed visible area in 'Hang-On' hardware;
+  * Actually disabling 8751 in games that have a fake replacement;
+  * Hooked up 8255 PPI correctly now that it has mode 2 support;
+  * Fixed behavior of NMI line in later sega sound boards;
+  * Fixed addressing in the SegaPCM sound system;
   * Some hardware/documentation cleanup.
-- Rewrote 'Zaxxon' driver from the schematics. This is still a WIP (not finished yet) [Aaron Giles]:
-  * Correct clock speeds and video timing.
-  * Complete memory maps.
-  * Connected universal sound board to 'Ixion' and 'Razmataz'.
-  * Simplified video code and merged common cases together.
-  * Palette derived from resistor weights.
+- Rewrote "Zaxxon" driver from the schematics. This is still a WIP (not finished yet) [Aaron Giles]:
+  * Correct clock speeds and video timing;
+  * Complete memory maps;
+  * Connected universal sound board to "Ixion" and "Razmataz";
+  * Simplified video code and merged common cases together;
+  * Palette derived from resistor weights;
   * Background positioning still a little off.
 - Some cleanups in the new UI/video code to make MESS happy [Nathan Woods].

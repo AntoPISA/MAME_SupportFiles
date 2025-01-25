@@ -2,7 +2,7 @@
 ----------------------------------------
 
 
-New Games supported or promoted from GAME_NOT_WORKING status
+New Games Supported or Promoted from GAME_NOT_WORKING Status
 ------------------------------------------------------------
 Danchi de Hanafuoda [thanks to Runik/Saturnin]
 Ghostlop (prototype)
@@ -10,12 +10,12 @@ Groove On Fight [Mariusz Wojcieszek]
 Othello Shiyouyo [Mariusz Wojcieszek]
 Super Rider [Aaron Giles]
 
-New Clones supported or promoted from GAME_NOT_WORKING status
+New Clones Supported or Promoted from GAME_NOT_WORKING Status
 -------------------------------------------------------------
 Driving Force (Galaxian hardware, bootleg) [Pierpaolo Prazzoli]
 Snow Bros (set 4) [Fabrice Arzeno]
 
-New Non-Working games / clones supported
+New Non-Working Games / Clones Supported
 ----------------------------------------
 Densya De Go (1, 1ex, 2, 2ex) [Guru]
 Landing Gear [David Haywood]
@@ -26,56 +26,61 @@ Side by Side (1 & 2) [Guru]
 Source changes:
 ---------------
 - Hyperstone CPU core fixes [Pierpaolo Prazzoli]:
-  * Added addressing of next byte if in load / store instructions using.
-  * Displacement Address Mode PC is used as register destination.
-  * Added local registers wrap around modulo 64
-  * Added trap instructions to the dasm
-  * Added some debug info when high global registers are written.
-  * Fixed some wrong format in the dasm.
+  * Added addressing of next byte if in load / store instructions using;
+  * Displacement Address Mode PC is used as register destination;
+  * Added local registers wrap around modulo 64;
+  * Added trap instructions to the dasm;
+  * Added some debug info when high global registers are written;
+  * Fixed some wrong format in the dasm;
   * Changed reset to act as an exception, as the doc claims (before it crashed if reset was used as an exception).
-- Killer Instinct fixes [Aaron Giles]:
-  * Cleaned up memory maps.
-  * Found second bitmap page, fixing a bunch of video problems and romoving the egregious hack I had in there before.
-  * Fixed sound reset and initialization.
-  * All diagnostics pass.
-  * Fixed coinage dipswitches.
-  * Added 2 alternate ROM sets for each game; fixes: kinst067gre2, kinst072gre.
+- "Killer Instinct" fixes [Aaron Giles]:
+  * Cleaned up memory maps;
+  * Found second bitmap page, fixing a bunch of video problems and romoving the egregious hack I had in there before;
+  * Fixed sound reset and initialization;
+  * All diagnostics pass;
+  * Fixed coinage DIP switches;
+  * Added 2 alternate ROM sets for each game; fixes: (kinst067gre2) and (kinst072gre).
 - MIPS DRC fixes [Aaron Giles]: Fixes an edge case where a memory access like:
+
   lw  r3,$0(r0)
-  would leave the stack in a funny state and lead to a crash; fixes kinst067red.
-  Instructions of the form:
+  
+  would leave the stack in a funny state and lead to a crash; fixes (kinst067red). Instructions of the form:
+
   ld r10,0(r10)
-  Would load the low word into r10 first, and then use the modified r10 (plus). Fixes the sky graphics in several of the kinst2 levels. 
-- ZN Improvements [smf]: 24-bit rendering support for Judge Dredd.
-- Updates to the 'jalmah' driver [Angelo Salese]: kakumei and kakumei2 now boot but neither are playable due to protection.
+  
+  would load the low word into r10 first, and then use the modified r10 (plus). Fixes the sky graphics in several of the (kinst2) levels. 
+- ZN Improvements: 24-bit rendering support for "Judge Dredd" [smf].
+- Updates to the (jalmah) driver [Angelo Salese]: (kakumei) and (kakumei2) now boot but neither are playable due to protection.
 - Misc updates [Nathan Woods]:
-  * Fixes the afore mentioned problem with x86drc.c
-  * Adds in a new (windows only) mode for opening files whereby files can be opened for read/write, but changes are not actually not written to the original file but rather to a temporary file. This trick is used by the MESS testing facility so that tests do not mutate the images they operate on.
-  * Small cleanups.
+  * Fixes the afore mentioned problem with x86drc.c;
+  * Adds in a new (windows only) mode for opening files whereby files can be opened for read/write, but changes are not actually not written to the original file but rather to a temporary file. This trick is used by the MESS testing facility so that tests do not mutate the images they operate on;
+  * Small cleanups;
   * Replaces a #ifdef MESS/#else/#endif combo with a usage of the APPNAME macro.
 - SPI / 386 updates [Ville Linde]:
-  * raidnfgt now runs normally and correctly through attract mode and gameplay, modulo the encrypted graphics. Still kinda mesmerizing :-)
-  * viperp1 starts to boot now, but doesn't get very far.
-  * Hooked up the Z80 bankswitching, so sound started playing in some games (notably Raiden Fighters) (R.Belmont).
-- Various ST-V updates [Mariusz Wojcieszek]: Fixes sprites in groovef which is now playable, adds some RBG0 scrolling which greatly improves background graphics in cotton2, cottonbm, grdforce and othellos.
-- Debugger Fixes [Aaron Giles]: This is a quick attempt to make the debugger more useable with the new memory system. The masking of addresses and data should now be working properly again.
-- Also, you can go to any memory window and type 'P' to view program address space, or 'T' to view data address space.
+  * (raidnfgt) now runs normally and correctly through attract mode and gameplay, modulo the encrypted graphics. Still kinda mesmerizing;
+  * (viperp1) starts to boot now, but doesn't get very far;
+  * Hooked up the Z80 bankswitching, so sound started playing in some games (notably "Raiden Fighters") [R. Belmont].
+- Various ST-V updates: Fixes sprites in groovef which is now playable, adds some RBG0 scrolling which greatly improves background graphics in (cotton2), (cottonbm), (grdforce) and (othellos) [Mariusz Wojcieszek].
+- Debugger fixes: This is a quick attempt to make the debugger more useable with the new memory system. The masking of addresses and data should now be working properly again [Aaron Giles].
+- Also, you can go to any memory window and type 'P' to view program address space, or 'T' to view data address space [David Haywood.
 - OSD 'NO EXECUTE' Support [Aaron Giles]: This patch introduces two new OSD functions:
+
   osd_alloc_executable();
   osd_free_executable();
+
   * For most platforms, these can just map to malloc and free. However, starting with WinXP SP2, if you are running on a processor that supports the
   NO_EXECUTE bit (currently only 64-bit AMD chips), standard user-mode memory allocations won't allow you to put code in them and execute it.
   * Since this is exactly what x86drc.c does, I've added the two functions above. On Windows, these map to calling VirtualAlloc and VirtualFree, which allow you to specify the read/write/execute states of the pages thus allocated.
-- Lethal Justice / Egg Venture Cleanups [Aaron Giles]:
-  * Merged memory maps.
-  * Fixed video size in Egg Venture to correct flicker.
-  * Switched to VIDEO_RGB_DIRECT.
+- "Lethal Justice" and "Egg Venture" cleanups [Aaron Giles]:
+  * Merged memory maps;
+  * Fixed video size in "Egg Venture" to correct flicker;
+  * Switched to VIDEO_RGB_DIRECT;
   * Removed unnecessary ROM regions and memcpy'ing.
-- Rockola Cleanups / Fixes [Curt Coder]:
-  * Fantasy/Nibbler/Pioneer Balloon.
-  * Correct CPU frequency from schematics.
-  * Hooked up SN76477 sound for BOMB effect.
-  * Merged memory maps.
-  * Cleaned up driver a bit.
-  * Fixed dips.
+- Rockola cleanups/fixes [Curt Coder]:
+  * "Fantasy", "Nibbler" and "Pioneer Balloon";
+  * Correct CPU frequency from schematics;
+  * Hooked up SN76477 sound for BOMB effect;
+  * Merged memory maps;
+  * Cleaned up driver a bit;
+  * Fixed DIPs;
   * Enabled debug inputs.

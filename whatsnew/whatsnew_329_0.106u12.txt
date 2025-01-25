@@ -27,16 +27,16 @@ Source changes:
 - Removed the VIDEO_PIXEL_ASPECT_RATIO_* flags for drivers. These flags were used inconsistently, and can be effectively computed if necessary from the screen width/height and orientation [Aaron Giles].
 - Removed xml2info utility. The -listinfo format was retired over 2 years ago. It is time to move on [Aaron Giles].
 - Rewrote Crystal Castles driver from the schematics [Aaron Giles]:
-  * Corrected clock speeds and frame rates
-  * Reimplemented video system to use mixer PROM.
-  * Now using sync PROM to generate interrupts at correct times.
-  * Sync PROM is also used to determine proper. visible area and VBLANK timings.
-  * Implemented the VRAM write protection by using the WP PROM.
-  * Hooked up second player trackball properly.
-  * Fixed coin counters.
-  * Now computing palette based on resistor weights.
-  * Watchdog is now set for 8 VBLANKs to match the schematics.
+  * Corrected clock speeds and frame rates;
+  * Reimplemented video system to use mixer PROM;
+  * Now using sync PROM to generate interrupts at correct times;
+  * Sync PROM is also used to determine proper. visible area and VBLANK timings;
+  * Implemented the VRAM write protection by using the WP PROM;
+  * Hooked up second player trackball properly;
+  * Fixed coin counters;
+  * Now computing palette based on resistor weights;
+  * Watchdog is now set for 8 VBLANKs to match the schematics;
   * Added save state support.
   * Mapped complete memory space according to schematics.
 - Rewrote windows.txt to reflect all of the new options and to update the behavior of existing options to match the current implementation [Aaron Giles].
-- Some graphics improvements to the Magic Fly driver [Roberto Fresca].
+- Some graphics improvements to the "Magic Fly" driver [Roberto Fresca].

@@ -2,34 +2,34 @@
 ----------------------------------------
 
 
-New Games supported or promoted from GAME_NOT_WORKING status
+New Games Supported or Promoted from GAME_NOT_WORKING Status
 ------------------------------------------------------------
 Argus (Gottlieb, Prototype) [David Haywood]
 Video Vince and the Game Factory (Mylstar, Prototype) [B.S. Ruggeri]
 Wiz Warz (Mylstar, Prototype) [David Haywood]
 
-New Clones supported or promoted from GAME_NOT_WORKING status
+New Clones Supported or Promoted from GAME_NOT_WORKING Status
 -------------------------------------------------------------
 Street Fighter EX 2 Plus (ASIA 990611) [smf]
 
-New Non-Working games / clones supported
+New Non-Working Games / Clones Supported
 ----------------------------------------
 Pinball Champ '95 [David Haywood] (looks like its probably gambling based doesn't work yet so I don't know if any skill is involved)
 
 
 Source changes:
 ---------------
-- Fixed rendering issue with Magical Date [smf].
+- Fixed rendering issue with "Magical Date" [smf].
 - Fixed Sonic Wings Limited Lockup [smf].
 - Various changes [Nathan Woods]:
-  * Revamped interrupt handling; a bonafide line is now implemented and also implemented IRQ callback.
-  * Fixed CALL absolute instruction under 16 bit mode.
-  * Fixed i386 interrupt call to use PULSE_LINE instead of always ASSERT_LINE.
-  * Added more MESS specific stuff within #ifdef MESS.
-  * Added memory_install_*_handler_mirror() calls that I thought that I submitted earlier.
-  * Minor fix from the MESS side.
+  * Revamped interrupt handling; a bonafide line is now implemented and also implemented IRQ callback;
+  * Fixed CALL absolute instruction under 16 bit mode;
+  * Fixed i386 interrupt call to use PULSE_LINE instead of always ASSERT_LINE;
+  * Added more MESS specific stuff within #ifdef MESS;
+  * Added memory_install_*_handler_mirror() calls that I thought that I submitted earlier;
+  * Minor fix from the MESS side;
   * Changed use_mouse to win_use_mouse and made it non-static.
 - 7810 improvements and sound in games on Metro driver :-) [Eisuke Watanabe]:
-  * 7810: gta, gti, dgt fixed working reg opcodes fixed sio input fixed.
+  * 7810: gta, gti, dgt fixed working reg opcodes fixed sio input fixed;
   * Added sound support.
-- Fixed dariusg (broken by 68008 changes) [Curt Coder].
+- Fixed (dariusg); broken by 68008 changes [Curt Coder].

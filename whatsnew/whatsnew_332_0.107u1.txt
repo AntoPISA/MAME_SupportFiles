@@ -2,13 +2,13 @@
 ---------------------------------------
 
 
-New games added or promoted from NOT_WORKING status
+New Games Added or Promoted from NOT_WORKING Status
 ---------------------------------------------------
 Poke Champ [David Haywood]
 TomCat (Star Wars hardware, prototype) [Mathis Rosenhauer]
 
-New clones added
-----------------
+New Clone Added
+---------------
 Dungeons & Dragons: Shadow over Mystara (Brazil 960223) [Brian Troha]
 
 
@@ -45,11 +45,11 @@ Source changes:
 - Removed NEW_RENDER definition and all support for the old rendering system from the core. Cleaned up a bunch of useless and deprecated code as a result [Aaron Giles].
 - Renamed ui_popup to popmessage across the code, and implemented popmessage in mame.c. This breaks the dependency between the core driver code and the user interface in almost all cases [Aaron Giles].
 - Updates to the MagicFly driver [Robert Fresca]:
-  * Figured out the MC6845 (mapped at $0800-$0801).
-  * Fixed the screen size based on MC6845 registers.
-  * Fixed the visible area based on MC6845 registers.
-  * Corrected the gfx ROM region.
-  * Solved the NMI/vblank issue. Now attract works.
-  * Changed CPU clock to 625khz.
-  * Added new findings to the technical notes.
+  * Figured out the MC6845 (mapped at $0800-$0801);
+  * Fixed the screen size based on MC6845 registers;
+  * Fixed the visible area based on MC6845 registers;
+  * Corrected the gfx ROM region;
+  * Solved the NMI/vblank issue. Now attract works;
+  * Changed CPU clock to 625khz;
+  * Added new findings to the technical notes;
   * Marked magicfly PAL as NO_DUMP (read protected).
