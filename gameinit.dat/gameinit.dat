@@ -1,4 +1,4 @@
-﻿# MAME GAMEINIT.DAT v0.273   Latest Update: January  17, 2025
+﻿# MAME GAMEINIT.DAT v0.273   Latest Update: January  29, 2025
 #                         Project started: September 10, 2015
 #          Merged to the file startup.dat:  December 17, 2024
 #
@@ -631,7 +631,6 @@ Needs more RAM
 
 Cassettes
 ---------
-
 To save a tape: Oa,b  (where a = start address, b = end address)
 
 To load a tape: I then Play then G
@@ -1654,7 +1653,7 @@ Rush                                   Hold A hit 1                       Jiggle
 $end
 $info=break86,papillon
 $mame
-INITIALIZATION:
+TIPS:
 
 You need to hold X when starting a game.
 
@@ -1926,7 +1925,7 @@ The CC-40+ cassette device number is 1, eg. SAVE"1.FILENAME" to save, and OLD"1.
 $end
 $info=ccs2810
 $mame
-INITIALIZATION:
+TIPS:
 
 SYSTEM OPERATION:
 Press Enter up to three times to start the system.
@@ -1956,14 +1955,14 @@ Z    Zleep (lock terminal). Press control+G twice to unlock.
 $end
 $info=ccs300
 $mame
-INITIALIZATION:
+TIPS:
 
 The system needs to boot a floppy disk at start, but MAME rejects the only known disk image.
 
 $end
 $info=cd2650
 $mame
-INITIALIZATION:
+TIPS:
 
 Commands (must be in uppercase):
 A    Examine memory; press C to alter memory
@@ -1985,14 +1984,14 @@ Cassette loading doesn't work. Saving is ok because the data can be loaded onto 
 $end
 $info=cdibios,vp415
 $mame
-INITIALIZATION:
+TIPS:
 
 This system works in MAMEUI only. It will crash MAME at start.
 
 $end
 $info=cgenie
 $mame
-INITIALIZATION:
+TIPS:
 
 Colour Genie EG2000
 
@@ -2081,7 +2080,7 @@ http://wiki.mamedev.org/index.php/FAQ:Games
 $end
 $info=clcd
 $mame
-INITIALIZATION:
+TIPS:
 
 Although marked as working, this system has multiple issues. For example, Basic is unusable with bios 1 (the default).
 
@@ -2100,7 +2099,7 @@ https://www.progettosnaps.net/gameinit.dat
 $end
 $info=cms6502,gs6502,gs6809,eurocom2
 $mame
-INITIALIZATION:
+TIPS:
 
 Input must be in UPPERcase.
 
@@ -2148,10 +2147,8 @@ A wrong command may give a FM ERROR like above.
 If files not found you get a NE ERROR. You may need to specify the full name.
 
 
-
 HARD DRIVES
 -----------
-
 Unknown how to use these.
 
 $end
@@ -2212,7 +2209,7 @@ To load a game from a floppy disk:
 $end
 $info=concept
 $mame
-INITIALIZATION:
+TIPS:
 
 It's marked as working, but there's no boot disk available, so no way to run anything.
 
@@ -2229,7 +2226,7 @@ https://www.progettosnaps.net/gameinit.dat
 $end
 $info=cortex
 $mame
-INITIALIZATION:
+TIPS:
 
 All input to be in uppercase. Note that "lowercase" is just smaller uppercase, and is not acceptable as input.
 
@@ -2274,7 +2271,7 @@ Jack*Bot                       50051  Hold QWER hit 1         QWER
 $end
 $info=cosflnsm,firebird,gamesnsm
 $mame
-INITIALIZATION:
+TIPS:
 
 Setting up the machine (the simple way):
 - Turn Diag6 dip on, choose Reset
@@ -2292,7 +2289,7 @@ Status:
 $end
 $info=cosmicos
 $mame
-INITIALIZATION:
+TIPS:
 
 When run for the first time, you get a black screen and nothing seems to work. To fix this, go to the Video Options, Screen #0, and choose the Display Interface Card.
 
@@ -2312,7 +2309,7 @@ C - start user program from address 0000
 $end
 $info=cp1
 $mame
-INITIALIZATION:
+TIPS:
 
 To save a tape: K
 To load a tape: L
@@ -2381,7 +2378,7 @@ http://wiki.mamedev.org/index.php/FAQ:Games
 $end
 $info=cpu09
 $mame
-INITIALIZATION:
+TIPS:
 
 All input must be in UPPERcase.
 
@@ -2439,26 +2436,21 @@ mameinfo.dat
 $end
 $info=crvision,lasr2001,manager
 $mame
-INITIALIZATION:
+TIPS:
 
 CREATIVISION, DICK SMITH WIZZARD
 ================================
 
-
 Press FIRE -> hit Right-Shift.
-
 
 
 Cartridge
 ---------
-
 Run by themselves.
-
 
 
 Cassette
 --------
-
 Must load "basic" cart from swlist, then:
 
 CLOAD
@@ -2503,7 +2495,7 @@ http://wiki.mamedev.org/index.php/FAQ:Games
 $end
 $info=cvicny
 $mame
-INITIALIZATION:
+TIPS:
 
 Keys:
 0-9,A-F : hexadecimal numbers
@@ -2525,7 +2517,7 @@ Now press up-arrow to confirm the data has been entered.
 $end
 $info=cybikov1
 $mame
-INITIALIZATION:
+TIPS:
 
 These are marked as working, but the welcome screen doesn't show. Could be a regression.
 
@@ -2556,7 +2548,7 @@ https://www.progettosnaps.net/gameinit.dat
 $end
 $info=d6800
 $mame
-INITIALIZATION:
+TIPS:
 
 CHIP-8 computer.
 
@@ -2581,7 +2573,7 @@ All CHIP-8 programs load at 0200 (max size 4k), and exec address is C000.
 $end
 $info=dai
 $mame
-INITIALIZATION:
+TIPS:
 
 DAI COMPUTER
 ============
@@ -2600,7 +2592,7 @@ To enter the monitor: UT
 $end
 $info=dakar,motrshow,macattck,wcup90
 $mame
-INITIALIZATION:
+TIPS:
 
 How to set up the machine (motor show, dakar, wcup90):
 - These machines need to be loaded with default settings before they can accept coins
@@ -2636,7 +2628,7 @@ Fast Track:
 $end
 $info=datum
 $mame
-INITIALIZATION:
+TIPS:
 
 Sample program to paste in: Pick-up-sticks (Nim) All inputs are in HEX.
 1. Paste this in
@@ -2661,7 +2653,7 @@ Z1000G
 $end
 $info=dauphin
 $mame
-INITIALIZATION:
+TIPS:
 
 Keys:
 0-9,A-F hexadecimal numbers
@@ -2768,7 +2760,7 @@ http://wiki.mamedev.org/index.php/FAQ:Games
 $end
 $info=dg680
 $mame
-INITIALIZATION:
+TIPS:
 
 All input must be in uppercase.
 
@@ -2801,14 +2793,14 @@ Z - go to 0000.
 $end
 $info=dgnbeta
 $mame
-INITIALIZATION:
+TIPS:
 
 MAME rejects all of the floppy disks in the software list. Therefore the system is unusable.
 
 $end
 $info=dim68k
 $mame
-INITIALIZATION:
+TIPS:
 
 DIMENSION 68000
 ===============
@@ -2854,7 +2846,7 @@ Addams Family Values                  60022  5 then 1 then the destination key
 $end
 $info=dms86
 $mame
-INITIALIZATION:
+TIPS:
 
 Monitor commands:
 A Display incoming terminal data in hex
@@ -2876,7 +2868,7 @@ X display registers
 $end
 $info=dmv
 $mame
-INITIALIZATION:
+TIPS:
 
 NCR Decision-Mate V
 ===================
@@ -2891,7 +2883,7 @@ The Ladder.zip is already included on the 580test.mfi, which also has other text
 $end
 $info=dn3500
 $mame
-INITIALIZATION:
+TIPS:
 
 APOLLO DN series
 ================
@@ -2900,7 +2892,7 @@ When the prompt appears, hit enter to get a message, then you can issue commands
 $end
 $info=dps1
 $mame
-INITIALIZATION:
+TIPS:
 
 ITHICA DPS-1
 ============
@@ -2912,7 +2904,7 @@ Works ok. Take note that some disks use different baud rates for terminal commun
 $end
 $info=dragon32
 $mame
-INITIALIZATION:
+TIPS:
 
 CASSETTES
 ---------
@@ -2955,7 +2947,7 @@ http://wiki.mamedev.org/index.php/FAQ:Games
 $end
 $info=dsb46
 $mame
-INITIALIZATION:
+TIPS:
 
 Wait 10 seconds for the monitor program to begin.
 
@@ -2983,7 +2975,7 @@ http://wiki.mamedev.org/index.php/FAQ:Games
 $end
 $info=dtrvwz5
 $mame
-INITIALIZATION:
+TIPS:
 
 When you see "PUSH ANY SWITCH", press [ C ] key to proceed.
 
@@ -2993,7 +2985,7 @@ mameinfo.dat
 $end
 $info=dvlsdre,dvlsdre2,rocky,spirit,punk,striker,krullp,qbquest,sorbit,rflshdlx,goinnuts,amazonh,rackempp,raimfire,jack2opn,touchdn,alienstr,thegames,eldorado,icefever,caveman
 $mame
-INITIALIZATION:
+TIPS:
 
 Caveman is missing its joystick. Need the manual. The video-pinball interface has not been written.
 If you turn on DIPS6,7,8, you can enter test mode, insert coins and start a game.
@@ -3033,7 +3025,7 @@ Status:
 $end
 $info=e100
 $mame
-INITIALIZATION:
+TIPS:
 
 To save a tape: SAVE
 
@@ -3042,7 +3034,7 @@ To load a tape: LOAD
 $end
 $info=eacc
 $mame
-INITIALIZATION:
+TIPS:
 
 Setting up: You need to enter the number of expected pulses from the fuel and distance sensors. Paste this: 5 6M123N 7M400N  (start, set litres cal to 123 pulses. set km cal to 400 pulses). Then paste this: 1950M0N 1845M0N (set petrol tank capacity to 50 litres, set current amount of petrol to 45). Now enter: 28M100N (the journey is 100km). Press 5 to start the journey. All settings are saved in nvram.
 
@@ -3062,7 +3054,7 @@ Stats you can see while travelling:
 $end
 $info=eballchp,beatclck,ladyluck,motrdome,strngsci,specforc,blackblt,cityslck,hardbody,prtyanim,hvymetap,esclwrld,dungdrag,black100,trucksp3,atlantip
 $mame
-INITIALIZATION:
+TIPS:
 
 Setting Up:
 - The default settings don't work on most machines. Use the number pad for all inputs.
@@ -3099,7 +3091,7 @@ Atlantis                                  2006  Hold Left Down Right, hit 1   Do
 $end
 $info=ec65
 $mame
-INITIALIZATION:
+TIPS:
 
 If this system ever gets fully emulated, the command to boot a disk is: .b
 
@@ -3116,7 +3108,7 @@ https://www.progettosnaps.net/gameinit.dat
 $end
 $info=eg3003
 $mame
-INITIALIZATION:
+TIPS:
 
 Shift and Right-arrow might enable 32 cpl, or it will put a space between each character, depending on the computer hardware.
 
@@ -3127,7 +3119,7 @@ To load a tape: CLOAD
 $end
 $info=einstein
 $mame
-INITIALIZATION:
+TIPS:
 
 Cassette can be added by going into the Slots menu, pipe, speculator.
 
@@ -3136,7 +3128,7 @@ In MOS, the TAPE command is supposed to load a tape, but it gives what looks lik
 $end
 $info=electron
 $mame
-INITIALIZATION:
+TIPS:
 
 *TAPE to enable the cassette module
 
@@ -3159,7 +3151,7 @@ http://wiki.mamedev.org/index.php/FAQ:Games
 $end
 $info=elekscmp
 $mame
-INITIALIZATION:
+TIPS:
 
 To save a tape: RRaaaabbbb (press RECORD) press DOWN (where aaaa = start address, bbbb = end address)
 
@@ -3180,7 +3172,7 @@ It seems the only way to exit each mode is to press NRST.
 $end
 $info=elektor
 $mame
-INITIALIZATION:
+TIPS:
 
 When booted you get the familiar 00 00 pattern. Pressing Q gives a display of IIII. Now, you enter a command.
 
@@ -3304,7 +3296,7 @@ then press L then R. While running, you can press L to pause.
 $end
 $info=elwro800
 $mame
-INITIALIZATION:
+TIPS:
 
 Clone of Sinclair ZX Spectrum.
 
@@ -3315,7 +3307,7 @@ To load a tape: LOAD"" (this is done by pressing J right-shift-2 right-shift-2)
 $end
 $info=emma2
 $mame
-INITIALIZATION:
+TIPS:
 
 Keys:
 0-9,A-F: hex input
@@ -3339,7 +3331,7 @@ To load, press L, press play, while leader is playing press 0 or 1 as above. Whe
 $end
 $info=ep64
 $mame
-INITIALIZATION:
+TIPS:
 
 ENTERPRISE 64/128
 =================
@@ -3376,11 +3368,8 @@ Preferred names for starting:
 - has a program ending with _BG
 
 
-
-
 Tapes
 -----
-
 Make sure that the -exp slot is empty.
 
 Use the Basic cartridge from the software list.
@@ -3426,7 +3415,7 @@ There's 2 ways to use the cassette.
 $end
 $info=eti660
 $mame
-INITIALIZATION:
+TIPS:
 
 Commands:
 R - Reset (use this before any other instruction)
@@ -3455,7 +3444,7 @@ Press any key to get it started. All input to be in UPPERcase.
 $end
 $info=excali64
 $mame
-INITIALIZATION:
+TIPS:
 
 EXCALIBUR 64
 ============
@@ -3467,7 +3456,6 @@ EXCALIBUR 64
 
 Floppies
 --------
-
 All RAW floppies work and are bootable to CP/M or ZCPR3.
 
 If DIR doesn't work, try L
@@ -3479,11 +3467,8 @@ Most disks contain RUN.COM which is a Basic loader
 RUN (name-of-basic-program-without-ext). EG  RUN GAME runs GAME.BAS
 
 
-
-
 Cassettes
 ---------
-
 Must be in Basic.
 
 To load a tape: CLOAD
@@ -3491,17 +3476,14 @@ To load a tape: CLOAD
 To save a tape: CSAVE"x"
 
 
-
-
 BAS files
 ---------
-
 Paste them into Basic, then RUN.
 
 $end
 $info=exl100
 $mame
-INITIALIZATION:
+TIPS:
 
 You don't hold a modifier key; you hit and release, then hit the key being modified. Exel Basic will indicate if a modifier key is active.
 
@@ -3513,15 +3495,15 @@ STATUS OF SOFTWARE:
 
 SWList name      Status
 ---------------------------------------------------------------------------
+capmenkr         works, video corruptions
 exelbas          works
 exelbasp         Cyan screen, hangs at start
-exelmax          options 1-4 work, 5-7 do nothing
 exeldrum         can get to the menu, which seems useless
+exelmax          options 1-4 work, 5-7 do nothing
 exelogo          can type into it but the usual commands get error
 exeltext         works but weird
-exlpaint         works
 exlmodem         it might work, need instructions
-capmenkr         works, video corruptions
+exlpaint         works
 guppy            works
 imagix           video corruptions, can't proceed
 pindo            video corruptions, can select a game, how to play?
@@ -3546,7 +3528,7 @@ After it finishes loading, then RUN
 $end
 $info=exp85
 $mame
-INITIALIZATION:
+TIPS:
 
 Setting Up
 ==========
@@ -3575,7 +3557,7 @@ You can't quit from Basic back to the monitor.
 $end
 $info=f14_l1,fire_l3,milln_l3,pb_l5
 $mame
-INITIALIZATION:
+TIPS:
 
 If it says FACTORY SETTING, hit F3.
 
@@ -9871,7 +9853,7 @@ http://wiki.mamedev.org/index.php/FAQ:Games
 $end
 $info=samcoupe
 $mame
-INITIALIZATION:
+TIPS:
 
 To get double-quote, press the ] key.
 
@@ -9893,7 +9875,7 @@ At the rainbow screen, boot a disk with BOOT. If it says NO DOS then the disk is
 $end
 $info=sapi1
 $mame
-INITIALIZATION:
+TIPS:
 
 To save a tape: SAVE
 
@@ -9902,7 +9884,7 @@ To load a tape: LOAD
 $end
 $info=sapizps2
 $mame
-INITIALIZATION:
+TIPS:
 
 You must select bios 2 to use cassette commands.
 
@@ -12145,8 +12127,6 @@ INITIALIZATION:
 
 witch, witchb, witchs: If it says RAM ERROR, Press F1.
 
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
 $info=witchcrd
@@ -12168,7 +12148,8 @@ Setting it up:
 When you first start WMG, you need to initialise the NVRAM properly. Do this by starting wmg, pressing 1 to cycle through the games list, pressing 2 to run the game. When it says "FACTORY SETTINGS RESTORED", press F3 to return to the menu. Repeat this procedure for all 6 games. After that, quit wmg, then restart. On the Setup menu you can personalise the settings with the 1 and 2 keys. The inputs default to be the same as on the original hardware. You may change any input individually for each game. Note that the WMG hardware has the Flap and Inviso buttons wired together. JOUST can be played by 2 players at the same time, player 1 uses the left joystick and the Flap button, while player 2 uses the right joystick and the Fire button. SPLAT would normally require 4 joysticks, but since the WMG only has 2, it is limited to a one-player game. Cocktail mode is not supported, WMG must be played on an upright only. After playing a game, returning to the menu will return to the place you left from. You can force a return to the Setup by Auto Up and pressing F3. You can also clear out the menu's NVRAM (not the game's NVRAM), by holding down L and pressing F3.
 
 $end
-$info=wsports,hod,futurwld,strapids,hotwheel,firemntn,stargod,sshtlzac,ewf,locomotp
+$info=ewf,firemntn,futurwld,hod,hotwheel,locomotp,sshtlzac,stargod,strapids,wsports
+
 $mame
 INITIALIZATION:
 
@@ -12250,7 +12231,6 @@ To load a tape: CLOAD
 If you get a message at start about the nvram, let it init the system.
 
 
-
 BAS files
 ---------
 Normally these would simply be pasted in, but the shift key isn't working on the natural keyboard, so the programs end up as all rubbish.
@@ -12264,48 +12244,34 @@ SHARP X-1
 =========
 
 
-
 Carts
 -----
-
 None work
-
-
-
-
 
 
 Cassettes
 ---------
-
 Load and run themselves.
 
 If it says "File mode error", boot Basic from disk, type LOAD? to get filename, then LOAD"filename" then RUN.
 Filenames are case-sensitive.
 
 
-
-
-
 Floppies
 --------
-
 Load and run themselves
 
 $end
 $info=x68000
 $mame
-INITIALIZATION:
+TIPS:
 
 SHARP X68000
 ============
 
 
-
 Floppy disk
 -----------
-
-
 Run themselves.
 
 At this time non-booters are considered not working.
@@ -12313,12 +12279,8 @@ At this time non-booters are considered not working.
 If it says "Press button to start", press A.
 
 
-
-
-
 Hard Disk
 ---------
-
 Unknown how to access them.
 
 Looks very complicated and seems it doesn't work in mame.
@@ -12326,7 +12288,7 @@ Looks very complicated and seems it doesn't work in mame.
 $end
 $info=xegs
 $mame
-INITIALIZATION:
+TIPS:
 
 ATARI XE/XL
 ===========
@@ -12434,10 +12396,8 @@ W - window (example: W EF00 EFFF)
 Due to no input checking, misuse of commands can crash the system.
 
 
-
 Snapshot
 --------
-
 These should start themselves when loaded, however very few do.
 
 The ones that don't start are regarded as not working.
@@ -12445,7 +12405,7 @@ The ones that don't start are regarded as not working.
 $end
 $info=z80clock
 $mame
-INITIALIZATION:
+TIPS:
 
 This is... weird.
 
