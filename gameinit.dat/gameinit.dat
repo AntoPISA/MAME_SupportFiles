@@ -10830,7 +10830,7 @@ $info=spool99
 $mame
 INITIALIZATION:
 
-At start-up a Test Hardware with 'RAM NG' message pops up. Do a soft reset and keep pressed Start [ 1 ] and Service 1 [ 9 ] until the RAM init message appears.
+If at start it says RAM BAD, or RAM DATI BAD, hold down 1 and 9, hit F3. Wait for RAM INIT, then let go of 1 and 9. You need to do this every time you run this game.
 
 SOURCE:
 mameinfo.dat
@@ -11633,15 +11633,62 @@ INITIALIZATION:
 To get into the setup menu: press Ctrl+Shift+Enter.
 
 $end
-$info=trs80m3,trs80l2
+$info=trs80l2
 $mame
 INITIALIZATION:
 
 Shift and Right-arrow will enable 32 cpl.
 
-To save a tape: CSAVE"x"
+There's a config switch to tell the machine if the expansion interface is present or not. If ON, you need to boot from a floppy disk. If OFF, there's no floppy support and you're in ROM BASIC.
 
-To load a tape: CLOAD
+For ROM BASIC:
+
+* At MEMORY SIZE? (or READY?) press Enter
+
+* To save a tape: CSAVE"x"
+
+* To load a tape: CLOAD
+
+For Disks, there's a number of operating systems available with their own sets of commands. Generally filenames are of the format 8/3 (uses slash instead of period).
+
+There are 2 types of tape file: Basic, and Binary. Basic tapes are loaded with CLOAD, while Binary files are loaded with SYSTEM.
+
+System tapes have an internal filename, and you must enter it to get the tape to load. For example, the file [1]SYSTEM_INVADE.CAS will be loaded by:
+* SYSTEM
+* INVADE (tape loads)
+* / (slash makes it run)
+
+If you have a mystery SYSTEM tape in CAS format, you can use a hex editor to determine the name. Open the file, look for A5 55 near the start, and the next 6 characters are the filename. A space is a delimiter, no need to type it or anything after.
+
+$end
+$info=trs80m3
+$mame
+INITIALIZATION:
+
+Shift and Right-arrow will enable 32 cpl.
+
+There's a config switch to tell the machine if the expansion interface is present or not. If ON, you need to boot from a floppy disk. If OFF, there's no floppy support and you're in ROM BASIC.
+
+For ROM BASIC:
+
+* At Cass?  press enter to enable 1500 baud, or L then enter to use 500 baud (compatible with the older Model 1 Level 2 tapes)
+
+* At Memory Size?  press Enter
+
+* To save a tape: CSAVE"x"
+
+* To load a tape: CLOAD
+
+For Disks, there's a number of operating systems available with their own sets of commands. Generally filenames are of the format 8/3 (uses slash instead of period).
+
+There are 2 types of tape file: Basic, and Binary. Basic tapes are loaded with CLOAD, while Binary files are loaded with SYSTEM.
+
+System tapes have an internal filename, and you must enter it to get the tape to load. For example, the file [1]SYSTEM_INVADE.CAS will be loaded by:
+* SYSTEM
+* INVADE (tape loads)
+* / (slash makes it run)
+
+If you have a mystery SYSTEM tape in CAS format, you can use a hex editor to determine the name. Open the file, look for A5 55 near the start, and the next 6 characters are the filename. A space is a delimiter, no need to type it or anything after.
 
 $end
 $info=ts2068
@@ -12096,7 +12143,7 @@ $info=witch
 $mame
 INITIALIZATION:
 
-Press [ F1 ] to initialize NVRAM.
+witch, witchb, witchs: If it says RAM ERROR, Press F1.
 
 SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
