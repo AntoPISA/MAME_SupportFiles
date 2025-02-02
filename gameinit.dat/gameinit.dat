@@ -11643,7 +11643,19 @@ System tapes have an internal filename, and you must enter it to get the tape to
 If you have a mystery SYSTEM tape in CAS format, you can use a hex editor to determine the name. Open the file, look for A5 55 near the start, and the next 6 characters are the filename. A space is a delimiter, no need to type it or anything after.
 
 $end
-$info=trs80m3
+$info=trs80m2,trs80m16
+$mame
+
+Most disks won't boot. Commonly encountered errors are:
+
+BOOT ERROR TK: Record not found bootstrap track. Improperly formatted or defective diskette.
+
+BOOT ERROR RS: The diskette in Drive 0 is not Radio Shack operating system format.
+
+No XENIX disks work. If you use TRSDOS, commands must be in UPPERcase. DIR to get the directory.
+
+$end
+$info=trs80m3,trs80m4
 $mame
 INITIALIZATION:
 
@@ -11671,6 +11683,12 @@ System tapes have an internal filename, and you must enter it to get the tape to
 * / (slash makes it run)
 
 If you have a mystery SYSTEM tape in CAS format, you can use a hex editor to determine the name. Open the file, look for A5 55 near the start, and the next 6 characters are the filename. A space is a delimiter, no need to type it or anything after.
+
+$end
+$info=trs80m4p
+$mame
+
+This system isn't working - the disk is never ready.
 
 $end
 $info=ts2068
