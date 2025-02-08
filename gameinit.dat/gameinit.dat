@@ -3253,30 +3253,26 @@ TIPS:
 
 Cassettes don't work because the hardware is not hooked up.
 
-First-time run: the screen will be black because the wrong video default is used. Change the Video Options, Screen #0 -> Standard.
-
-This system only works in MAMEUI [from 0.274]
-
-Instructions for MAMEUI:
+Instructions for 0.275: The system works. MAMEUI additionally shows the address and the status.
 
 There's 3 important switches:
 L - toggle LOAD on/off
 R - toggle RUN on/off
 M - toggle MEMORY PROTECT on/off
 
-The combined status is shown on the screen.
+You can operate the switches by clicking on them. In MAMEUI, the combined status is also displayed.
 
-* LOAD off, RUN off = RESET (set program counter to zero)
+* LOAD down, RUN down = RESET (set program counter to zero)
 
-* LOAD on, RUN off, MP off = WRITE (you can load bytes into memory)
+* LOAD up, RUN down, MP down = WRITE (you can load bytes into memory)
 
-* LOAD on, RUN off, MP on = READ (you can look at data in memory)
+* LOAD up, RUN down, MP up = READ (you can look at data in memory)
 
-* LOAD off, RUN on, MP off = RUN R/W (program runs and it can modify memory)
+* LOAD down, RUN up, MP down = RUN R/W (program runs and it can modify memory)
 
-* LOAD off, RUN on, MP on = RUN R/O (programs runs but cannot write)
+* LOAD down, RUN up, MP up = RUN R/O (program runs but cannot write)
 
-* LOAD on, RUN on = PAUSE (the running program is paused)
+* LOAD up, RUN up = PAUSE (the running program is paused)
 
 To input data, choose RESET (all 3 switches off), then WRITE (press L). Now input bytes, pressing IN (enter key) after each byte. To run it, press L (says RESET) then press R (says RUN R/W).
 
@@ -5228,7 +5224,7 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
-$info=kollonc
+$info=kollon,kollonc
 $mame
 INITIALIZATION:
 
