@@ -8039,15 +8039,11 @@ INITIALIZATION:
 NEC PC-Engine CDs
 -----------------
 
-These CDs are all working with tg16,pce,sgx.
+To run a CD, firstly load the softlist item "scdsys".
 
-You must load the swlist item 'scdsys' first. Then you can load the cue file of any CD.
+Then load the cue file if it exists. Make sure that any files specified in the cue file are there, or it will crash. If there's no cue file, you can load the iso.
+
 Press 1 (the RUN button) to start the game.
-
-
-If it crashes, it's because the file specified in the CUE doesn't exist.
-
-(in swlist) means the bin/chd is already in a list so therefore it isn't here. Don't try to run the .cue because it will crash.
 
 $end
 $info=pcfx
@@ -8057,7 +8053,7 @@ INITIALIZATION:
 NEC PCFX
 --------
 
-None of these games work, and there's no swlist.
+Nothing works correctly, and there's no swlist.
 
 At the menu, press 5 to move to your option, then 1 to action it.
 
