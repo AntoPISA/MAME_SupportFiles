@@ -1,4 +1,4 @@
-﻿MAME GAMEINIT.DAT 0.273  (January  7, 2025)
+﻿MAME GAMEINIT.DAT 0.274      (Feb 11, 2025)
 © AntoPISA & Robbbert www.progettoSNAPS.net
 ===========================================
 
@@ -9,8 +9,10 @@ is supported by MAME from 0.172 version.
 
 WhatsNew:
 =================
-2025/01/07 11.01: Aligned item names with MAME 0.273.
-2025/01/25 11.00: New version of the file, now updated with Robbbert's collaboration (aligned with MAME 0.272).
+2025/02/11 11.03: Aligned item names with MAME 0.274.
+2025/01/07 11.02: Aligned item names with MAME 0.273.
+2015/01/05 11.01: Revised readme.txt file (date format and internal version numbering).
+2025/01/01 11.00: New version of the file, now updated with Robbbert's collaboration (aligned with MAME 0.272).
 2024/03/06 10.02: 107 new entries added (aligned with MAME 0.263).
 2024/02/27 10.01: From the next version the diff file will no longer be available; to check the evolution of the file use the Github link.
 2024/02/09 10.00: The files can also be found here https://github.com/AntoPISA/MAME_SupportFiles/blob/main/gameinit.dat/.
@@ -48,7 +50,7 @@ WhatsNew:
 2016/08/02  2.05: Added diff pack - only in english (suggested by Stiletto).
 2016/07/14  2.04: 10 new entries added (aligned with MAME 0.175).
 2016/07/01  2.03: Removed 14 doubles entries (aligned with MAME 0.174).
-2016/06/01  2.02 15 new entries added and some minor type fix.
+2016/06/01  2.02: 15 new entries added and some minor type fix.
 2016/05/05  2.01: 24 new entries added (aligned with MAME 0.173).
 2016/04/04  2.00: 46 new entries added (aligned with MAME 0.172).
 2016/04/03  1.05: Fixed some typo errors.
