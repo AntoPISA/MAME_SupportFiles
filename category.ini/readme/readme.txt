@@ -1,4 +1,4 @@
-MAME CATEGORY.ini 0.273 (Jan 16, 2025)
+MAME CATEGORY.ini 0.274 (Feb 11, 2025)
 © AntoPISA       www.progettoSNAPS.net
 ======================================
 
@@ -36,6 +36,8 @@ These files must be copied to the directory called "folders" of your MAME.
 
 WhatsNew:
 =========
+2025/02/11 10.03: Aligned files to MAME 0.274.
+2025/01/22 10.02: Changed the category of (cnchess) machine: "Chinese's Chess Machine".
 2025/01/16 10.01: Aligned files to MAME 0.273.
 2025/01/15 10.00: Revised readme.txt file (date format and internal version numbering).
 2024/12/12  9.20: Aligned files to MAME 0.272.
