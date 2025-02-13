@@ -7,7 +7,29 @@ The file, extracted from the zip file, should be placed in the folder named 'Fol
 
 items  - Language
 =========================
-
+    1  - Bulgarian
+  102  - Chinese
+    5  - Croatian
+    3  - Czech
+  107  - Dutch
+32403  - English
+  149  - French
+  304  - German
+    4  - Greek
+    5  - Hungarian
+  258  - Italian
+ 2204  - Japanese
+  100  - Korean
+   15  - Latvian
+    2  - Norwegian
+    1  - Polish
+   22  - Portuguese
+  146  - Russian
+    1  - Slovak
+  334  - Spanish
+    1  - Swedish
+    1  - Turkish
+  139  - Ukrainian
 
 WhatsNew:
 =========
