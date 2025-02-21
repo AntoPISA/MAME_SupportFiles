@@ -863,11 +863,52 @@ TIPS:
 
 ACORN ATOM
 ==========
-LOAD"X"   - to load. Must use eact name, or use *LOAD. Use *CAT to find out the name.
+
+
+
+Cartridges
+----------
+
+Some of them contain extra keywords which can be entered at the prompt.
+
+Others are unknown.
+
+
+
+Floppies
+--------
+
+Use *DOS to enable the disk system.
+Then *CAT to get a directory.
+Then *filename to run something. If it only gives the file stats then it isn't executable.
+
+
+
+
+Cassettes
+---------
+
+Only able to load wav tapes it made. Unable to load external tapes. UEF files are either ignored or cause MAME to crash. TAP files are really ATM files.
+
+*CAT to list files on usable tapes.
+
+LOAD"X"   - to load. Must use exact name, or use *LOAD.
 SAVE"X"   - to save.
 
-UEF is broken.
-TAP files are really ATM files.
+
+Inufuto
+-------
+
+These are external WAV and UEF files. None will load.
+
+
+
+Quickload
+---------
+
+If written in Basic there will be no indications, so try RUN.
+
+If M/L then it may run itself.
 
 $end
 $info=attache
@@ -1033,13 +1074,48 @@ $info=bbcb,bbcm
 $mame
 TIPS:
 
-*TAPE to enable the cassette module
+BBC MASTER
+==========
 
-LOAD"" - to load a tape
+
+This is the only one with floppy disk support.
+
+
+
+Carts
+-----
+
+.ROM and .BIN are used both for carts and for rom images.
+
+Neither of these slots are picked up automatically, don't know how to make them run.
+
+
+
+Floppies
+--------
+
+*DISC to enable the disk commands.
+
+*CAT to get the directory. If a file called !BOOT exists, press Shift+F12 to run the disk.
+
+*TYPE filename to display contents
+
+*RUN filename (no need for quotes in the disk subsystem) or just *filename.
+
+
+
+Cassette
+--------
+
+*TAPE to enable the tape commands.
+
+Load a basic program: LOAD""
+Load and run a basic program: CHAIN""
+Load and run a M/L program: *RUN
 SAVE"x" - to save a tape (not working - just get a blank file)
-
 *CAT to list files on a tape
-*RUN to load and run a M/L program
+
+* is shift-quote
 
 $end
 $info=bbnny_l2,diner_l4,dd_l2,pool_l7,radcl_l1,rvrbt_l3,rollr_l2,gs_lu4,strax_p7
@@ -3129,13 +3205,29 @@ $info=electron
 $mame
 TIPS:
 
-*TAPE to enable the cassette module
+ACORN ELECTRON
+==============
 
-CHAIN"" or LOAD"" - to load a tape
+Cassette
+--------
+
+Remove all slot items, or use *TAPE .
+
+Load a basic program: LOAD""
+Load and run a basic program: CHAIN""
+Load and run a M/L program: *RUN
 SAVE"x" - to save a tape (not working - just get a blank file)
-
 *CAT to list files on a tape
-*RUN to load and run a M/L program
+
+* is shift-quote
+
+
+Inufuto
+-------
+
+UEF files work, WAV files do not.
+
+Keys: Up = I, Left = J, Right = K, Down = M. Map these to the arrow keys. Space = shoot.
 
 $end
 $info=elecyoyo
