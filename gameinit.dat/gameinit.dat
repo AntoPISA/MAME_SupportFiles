@@ -2189,14 +2189,14 @@ SOURCE:
 https://www.progettosnaps.net/gameinit.dat
 
 $end
-$info=coco
+$info=coco,coco3
 $mame
 TIPS:
 
 CASSETTES
 ---------
 
-AUDIO ON to listen to tapes.
+AUDIO ON is supposed to let you hear the sound of the cassette playing, but all it does is kill the sound entirely.
 
 To save: CSAVE
 
@@ -2225,6 +2225,19 @@ If files not found you get a NE ERROR. You may need to specify the full name.
 HARD DRIVES
 -----------
 Unknown how to use these.
+
+
+HOMEBREW
+--------
+Airlock series: the ones marked for dragon64 won't work there, but will run on coco3. LOADM"GAME.BIN" then EXEC.
+
+Inufuto games: CLOADM then EXEC. The coco3 games work, but the ones for the coco mostly freeze just after start.
+
+
+DRAGON64
+--------
+
+Even though the Dragon64 is supposed to be a clone of the coco, the diskette format is different. Disks for Dragon64 will be suffixed by [D64].
 
 $end
 $info=comg5108
@@ -3207,6 +3220,15 @@ TIPS:
 
 ACORN ELECTRON
 ==============
+
+All input to be in UPPERcase.
+
+
+Floppies
+--------
+
+The most common format ".ssd" doesn't work. ".adf" seems ok.
+
 
 Cassette
 --------
@@ -12333,6 +12355,14 @@ BAS files
 ---------
 Normally these would simply be pasted in, but the shift key isn't working on the natural keyboard, so the programs end up as all rubbish.
 
+
+Inufuto
+-------
+
+CLOAD the loader, then RUN and mount the game.
+
+But, loader not detected, so nothing runs.
+
 $end
 $info=x1
 $mame
@@ -12374,7 +12404,7 @@ Run themselves.
 
 At this time non-booters are considered not working.
 
-If it says "Press button to start", press A.
+If it says "Press button to start", try A or Ctrl.
 
 
 Hard Disk
