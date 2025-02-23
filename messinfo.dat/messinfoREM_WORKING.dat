@@ -1,4 +1,4 @@
-﻿#    MESSINFO_REM.DAT v0.273 Latest update:  Jan 25, 2025
+﻿#    MESSINFO_REM.DAT v0.274 Latest update:  Feb 18, 2025
 #                             Project start: Nov  7, 2011
 #
 #    Author:  Antonio Paradossi (AntoPISA) from Pisa (Tuscany/Italy)
@@ -8,10 +8,87 @@
 #
 #    homepage: http://www.progettosnaps.net/messinfo
 #
-#    Internal version: 1.50
-#    Total items: 323
+#    Internal version: 14.02
+#    Total items: 326
 #
 #
+$info=ds1315
+$mame
+0.149u1
+
+Dallas DS1315 Phantom Time Chip, <unknown>, ????
+
+DRIVER:
+devices/machine/ds1315.cpp
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Unsupported
+
+WIP:
+- 0.274: Device removed.
+- 0.192: Added support for DS121x parts where the RTC sits in a ROM's address space [R. Belmont].
+- 0.186: Changed description to 'Dallas DS1315 Phantom Time Chip'.
+- 0.149u1: Added 'Dallas Semiconductor DS1315' device.
+
+$end
+$info=h89_sigmasoft
+$mame
+0.263 [Mark Garlanger]
+
+H-89 with SigmaSoft IGC, Heath Company, 1984
+
+In 1978 Heath introduced the Heathkit H88 which combined the H19 terminal and a new Zilog Z80-based single-board processor into the case of the H19. A version with a disk drive incorporated to the right of the terminal screen became the H89. The machines bore a strong resemblance to the TRS-80 Model III and similar all-in-one computers. The H89 was available both in kit form for $1595, and fully assembled form as the WH89 for $2295. Soon after the introduction of the H89, Heathkit was purchased by Zenith in order to enter the microcomputer market. They continued sales of the H89 with their own labeling on the front as the Zenith Z89. Eventually, Zenith Data Systems (Heathkit plus the computer division of Zenith) was purchased by Bull HN (CII Bull, Honeywell and Nippon Electric) because they needed a US maker of microcomputers in order to comply with government purchase requirements. Kit sales were ended soon after that purchase (source: http://en.wikipedia.org/wiki/Heathkit_H8).
+
+DRIVER:
+heathzenith/h89.cpp
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Supported
+
+SOFTWARE LIST:
+-
+
+RESOURCES:
+Snap and Title.
+
+WIP:
+- 0.274: Machine removed.
+- 0.266: Changed description to 'H-89 with SigmaSoft IGC'.
+- 0.263: Mark Garlanger added 'Heath Company Heathkit H89 with SigmaSoft IGC' system.
+
+ROMSET:
+30720 bytes in 9 files / 23.6Kb packed
+
+$end
+$info=scc8530l
+$mame
+0.167
+
+Zilog 8530 SCC (legacy), <unknown>, ????
+
+DRIVER:
+devices/machine/8530scc.cpp
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Unsupported
+
+WIP:
+- 0.274: Device removed.
+- 0.167: Added 'Zilog 8530 SCC (Legacy)' device.
+
+$end
 $info=24c16a
 $mame
 0.207 [smf]
