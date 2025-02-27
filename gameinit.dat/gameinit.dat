@@ -3205,13 +3205,35 @@ To save a tape: CSAVE"x"
 To load a tape: CLOAD
 
 $end
-$info=einstein
+$info=einstein,einst256
 $mame
 TIPS:
 
-Cassette can be added by going into the Slots menu, pipe, speculator.
+Cassette
+--------
+Can be added by going into the Slots menu, pipe, speculator.
 
 In MOS, the TAPE command is supposed to load a tape, but it gives what looks like an error.
+
+
+
+Floppies
+--------
+
+Boot with the "cpm" software item.
+
+Drives are 0: and 1: rather than A: and B:
+
+DIR to get the directory.
+
+Homebrew games should be mounted in drive 1, and run from there. They must use EINSTEIN TC01 - the 256 will reboot itself. The 80-column games require that slot "pipe" be used by "tk02".
+
+
+
+Quickload
+---------
+
+The normal procedure is to load the file after CPM has booted. But, they won't run.
 
 $end
 $info=electron
