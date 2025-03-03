@@ -1,5 +1,5 @@
 ﻿#     ==========================================================
-#     MAME RENAMESET_SL.DAT v0.274  Latest update:   Feb 4, 2025
+#     MAME RENAMESET_SL.DAT v0.275  Latest update:   Mar 3, 2025
 #     ==========================================================
 #
 #     Home-page: https://www.progettosnaps.net/renameset/
@@ -12,12 +12,194 @@
 #               Thanks to:
 #               motoschifo for "ADB Tool"
 #
-#               Internal Version 15.02
+#               Internal Version 15.04
 #
 #
+$0.275 [#714]
+2024/02/26
+719 software list, 139.138 software (-26/+139), 708 active SL (-2/+2), 11 orphan SL, 138.376 active software (-26/+139), 762 orphan software, 95.873 software parents (-72/+30), 43.265 software clones (+63)
+235.544 software roms (+224), 11.325 software CHD (+16), 98.377 supported software (+36), 1.863 partially supported software (-1), 38.898 unsupported software (+130)
+
+2 active software-lists added:
+amiga_amix (Commodore AMIX disks)
+photo_cd (Kodak Photo CD images (Beige Book))
+
+2 active software-lists removed:
+amiga_a1000 (Commodore Amiga 1000 System disks)
+amiga_a3000 (Commodore Amiga 3000 System disks)
+
+2 active software-lists with changed description:
+cdi "Philips CD-i CD-ROMs)" to "Philips CD-i images (Green Book)"
+pippin "Pippin CD-ROMs" to "Apple / Bandai Pippin CD-ROMs"
+
+software added/removed:
+amiga_a1000 (-6)
+amiga_a3000 (-3)
+amiga_amix (+4)
+amiga_cd (+1)
+amiga_demos (+2)
+amiga_flop (+1)
+amiga_hardware (+10)
+amiga_workbench (+18)
+apple2_flop_clcracked (-17/+72)
+apple2_flop_misc (+18)
+apple2_flop_orig (+70)
+apple2gs_flop_clcracked (+14)
+apple2gs_flop_misc (+9)
+apple2gs_flop_orig (+11)
+bbc_rom (+20)
+coleco_homebrew (+1)
+ekara_cart (+4)
+ibm5170_cdrom (+1)
+oric1_cass (+3)
+pc8801_cass (+1)
+pc8801_flop (+4)
+photo_cd (+2)
+psion2 (+50)
+psx (+12)
+x68k_flop (+2)
+zx81_cass (+19)
+
+105 software renamed:
+amiga_hardware          | a2091             > a2091_130
+amiga_hardware          | a590              > a590_epson
+amiga_hardware          | a590_wd           > a590_wd123
+amiga_workbench         | wb31_a4k          > wb31_a4000t
+apple2_flop_clcracked   | 1stdegle          > firdegle
+apple2_flop_clcracked   | agalxsc           > agalxiansc
+apple2_flop_clcracked   | baselectron       > beatomth
+apple2_flop_clcracked   | baselectronepsc   > beelecpsc
+apple2_flop_clcracked   | baselectronfun    > beelecfun
+apple2_flop_clcracked   | baselectronmath   > beelecmath
+apple2_flop_clcracked   | belctrndc         > befundccir
+apple2_flop_clcracked   | canbbltz          > canbalbz
+apple2_flop_clcracked   | chemach1          > caimathch
+apple2_flop_clcracked   | crnsmanr          > hra3cman
+apple2_flop_clcracked   | crrworks          > rrworkscbs
+apple2_flop_clcracked   | dragkeep          > drgkeep04071983
+apple2_flop_clcracked   | drgkeep84         > drgkeep06051984
+apple2_flop_clcracked   | estbe             > estbullse
+apple2_flop_clcracked   | felonyth          > mmfelony
+apple2_flop_clcracked   | frogger           > froggerso
+apple2_flop_clcracked   | frogrmsp          > frogger
+apple2_flop_clcracked   | galaxat           > galaxiana
+apple2_flop_clcracked   | gelflingadventur  > gelfadv
+apple2_flop_clcracked   | geomap            > gareaper
+apple2_flop_clcracked   | georectr          > grecreg
+apple2_flop_clcracked   | ijonesra          > ijrota
+apple2_flop_clcracked   | lcksmth50c        > locksmth50c
+apple2_flop_clcracked   | lcksmth50f        > locksmth50f
+apple2_flop_clcracked   | lcksmth50g        > locksmth5
+apple2_flop_clcracked   | masksn21          > masksun
+apple2_flop_clcracked   | mrdrbt12          > mmmurdoz
+apple2_flop_clcracked   | msnastrd          > hra0mast
+apple2_flop_clcracked   | mwbinmul          > binomultmw
+apple2_flop_clcracked   | mwcadfrc          > addfracdm
+apple2_flop_clcracked   | myshouse          > hra1mysh
+apple2_flop_clcracked   | nmbrbwlg          > nbdecfra
+apple2_flop_clcracked   | prnshc12          > prshcomp
+apple2_flop_clcracked   | quinktm           > quink
+apple2_flop_clcracked   | sbwinnie          > wpoohhaw
+apple2_flop_clcracked   | scrnwr20          > scrnwrit
+apple2_flop_clcracked   | spcqst2a          > squest2
+apple2_flop_clcracked   | spcquest          > squest
+apple2_flop_clcracked   | trlltlr2          > troltale
+apple2_flop_clcracked   | trolltle          > troltaler1
+apple2_flop_clcracked   | tzone11           > hra5timez
+apple2_flop_clcracked   | ulyss11           > hra4ulygf
+apple2_flop_clcracked   | vcrc0988          > vcrcomp09281988
+apple2_flop_clcracked   | winnie            > wpoohhaw
+apple2_flop_misc        | blkcldcr          > blkcauld
+apple2_flop_misc        | blkmgc            > blkmagic
+apple2_flop_misc        | blkmgca           > blkmagica
+apple2_flop_misc        | blkmgccr          > blkmagicmr
+apple2_flop_misc        | brclecr           > brucelee
+apple2_flop_misc        | brclecra          > bruceleea
+apple2_flop_misc        | canbbltz          > canbalbz
+apple2_flop_misc        | crnstmnr          > hra3cman
+apple2_flop_misc        | jawbrekr          > jawbrkr
+apple2_flop_misc        | leepers           > lunleep
+apple2_flop_misc        | mysthous          > hra1mysh
+apple2_flop_misc        | ultima1t          > ultima1cpc
+apple2_flop_misc        | ultima2t          > ultima1
+apple2_flop_misc        | ultima3t          > ultima2
+apple2_flop_orig        | 221bbv11          > 221baks
+apple2_flop_orig        | agalxsc           > agalxiansc
+apple2_flop_orig        | bsstoryb12        > bsstoryb
+apple2_flop_orig        | crnsmanr          > hra3cman
+apple2_flop_orig        | crswdm40          > cwmagic
+apple2_flop_orig        | drkcryst          > hra6darkc
+apple2_flop_orig        | jawbrekr          > jawbrkr
+apple2_flop_orig        | lcksmth31         > locksmth3
+apple2_flop_orig        | leepers           > lunleep
+apple2_flop_orig        | lsmith41          > locksmth4
+apple2_flop_orig        | lsmith50c         > locksmth50c
+apple2_flop_orig        | lsmith50f         > locksmth50f
+apple2_flop_orig        | lsmith50g         > locksmth5
+apple2_flop_orig        | lsmith60a         > locksmth60a
+apple2_flop_orig        | lsmith60b         > locksmth6
+apple2_flop_orig        | mhntrny           > manhuntr
+apple2_flop_orig        | misldef           > misldefn
+apple2_flop_orig        | msnastrd          > hra0mast
+apple2_flop_orig        | playroom35        > playroom
+apple2_flop_orig        | polquest          > pquest
+apple2_flop_orig        | prntshpc          > printshp
+apple2_flop_orig        | ridlmgic          > ridmagic
+apple2_flop_orig        | sbwinnie          > wpoohhaw
+apple2_flop_orig        | sherhlms          > sherabow
+apple2_flop_orig        | spcqst2a          > squest2
+apple2_flop_orig        | spcquest          > squest
+apple2_flop_orig        | srpntine          > serpntne
+apple2_flop_orig        | srpst10b          > serpstar
+apple2_flop_orig        | srpstr10          > serpstar10u
+apple2_flop_orig        | thexd15           > thexder
+apple2_flop_orig        | tzoner11          > hra5timez
+apple2_flop_orig        | ultima1t          > ultima1
+apple2_flop_orig        | ulysgflc          > hra4ulygf10
+apple2_flop_orig        | vcrc1135          > vcrcomp
+apple2gs_flop_clcracked | spquest           > squest
+apple2gs_flop_clcracked | thexdero          > topdraw
+apple2gs_flop_misc      | mmmgoose          > mixdupmg
+apple2gs_flop_misc      | spquest           > squest2
+apple2gs_flop_orig      | mixdupmg20a       > mixdupmg
+apple2gs_flop_orig      | spquest           > squest
+bbc_rom                 | eurobeeb          > eurobeeb4
+psion2                  | fpakdriv          > flashpak
+psion2                  | sonylisa          > sony030a
+
+26 software removed:
+amiga_a1000             | wbenc10
+amiga_a1000             | wbenc10n
+amiga_a1000             | wbenc11
+amiga_a1000             | wbenc11n
+amiga_a1000             | wbenc12
+amiga_a1000             | wbenc13
+amiga_a3000             | a3kin203
+amiga_a3000             | sk201
+amiga_a3000             | sk204
+apple2_flop_clcracked   | bsstoryb11b
+apple2_flop_clcracked   | certmoreb
+apple2_flop_clcracked   | cntralncb
+apple2_flop_clcracked   | engachv4b
+apple2_flop_clcracked   | felonythb
+apple2_flop_clcracked   | forbcstlb
+apple2_flop_clcracked   | goldfngrb
+apple2_flop_clcracked   | highstksb
+apple2_flop_clcracked   | ijonesrab
+apple2_flop_clcracked   | lcksmth50cb
+apple2_flop_clcracked   | lcksmth50fb
+apple2_flop_clcracked   | mastrsatb
+apple2_flop_clcracked   | multchoib
+apple2_flop_clcracked   | pxcartnkb
+apple2_flop_clcracked   | submissnb
+apple2_flop_clcracked   | voodooisb
+apple2_flop_clcracked   | winnieb
+
+=====================================================================================================================================================================================================
+
 $0.274 [#713]
 2024/01/31
-719 software list, 138.973 software (+137), 708 active SL (-2/+2), 11 orphan SL, 138.211 active software (+137), 762 orphan software, 95.771 software parents (-72), 43.202 software clones (+209)
+719 software list, 138.973 software (+137), 708 active SL, 11 orphan SL, 138.211 active software (+137), 762 orphan software, 95.771 software parents (-72), 43.202 software clones (+209)
 235.320 software roms (+136), 11.309 software CHD (+59), 98.341 supported software (+123), 1.864 partially supported software (+14), 38.768 unsupported software
 
 2 active software-list added:
@@ -31,8 +213,8 @@ megacdj                 |
 segacd                  |
 
 
-1 active software-lists with changed description:
-megacd (Sega Mega CD (Europe) CD-ROMs) to (Sega Mega-CD/Sega CD CD-ROMs)
+1 active software-list with changed description:
+megacd "Sega Mega CD (Europe) CD-ROMs" to "Sega Mega-CD/Sega CD CD-ROMs"
 
 software added/removed:
 amiga_cd (+12)
@@ -111,8 +293,8 @@ $0.273 [#712]
 cassvisn_cart (Epoch Cassette Vision cartridges)
 
 2 active software-lists with changed description:
-sc3000_cart (Sega Computer 3000 cartridges) to (Sega SC-3000 cartridges)
-sc3000_cass (Sega Computer 3000 cassettes) to (Sega SC-3000 cassettes)
+sc3000_cart "Sega Computer 3000 cartridges" to "Sega SC-3000 cartridges"
+sc3000_cass "Sega Computer 3000 cassettes" to "Sega SC-3000 cassettes"
 
 software added/removed:
 a2600 (+3)
@@ -216,7 +398,7 @@ ibm5170_cdrom           | winnt351w
 $0.272 [#711]
 2024/11/30
 718 software list (+1), 138.591 software (-1/+51), 707 active SL (+1), 11 orphan SL, 137.829 active software (-1/+51), 762 orphan software, 95.645 software parents (-1/+32), 42.946 software clones (+19)
-234.761 software roms (+59), 11.192 software CHD (+9), 98.002 supported software (+17), 1.845 partially supported software (-1/+18), 38.744 unsupported software (+26)
+234.761 software roms (+59), 11.192 software CHD (+9), 98.002 supported software (-1/+18), 1.845 partially supported software (+7), 38.744 unsupported software (+26)
 
 1 active software-list added:
 polysix (Korg Polysix tapes)
@@ -225,7 +407,7 @@ polysix (Korg Polysix tapes)
 vc4000 (Interton VC 4000 cartridges)
 
 1 active software-list with changed description:
-juku (Juku E5101 floppy disks) to (Juku E5104 floppy disks)
+juku "Juku E5101 floppy disks" to "Juku E5104 floppy disks"
 
 software added/removed:
 ekara_cart (+1)
@@ -432,8 +614,8 @@ zx81_cass               | flugsim
 
 $0.270 [#709]
 2024/09/26
-715 software list (+4), 138.385 software (-9/+119), 704 active SL (+4), 11 orphan SL, 137.624 active software (-9/+116), 761 orphan software, 95.478 software parents (+87), 42.907 software clones (+23)
-232.340 software roms (+), 11.148 software CHD (+4), 97.824 supported software (+92), 1.800 partially supported software (+9), 38.761 unsupported software (+9)
+715 software list (+4), 138.385 software (-9/+101), 704 active SL (+4), 11 orphan SL, 137.624 active software (-9/+101), 761 orphan software, 95.478 software parents (+87), 42.907 software clones (+23)
+234.487 software roms (+107), 11.174 software CHD (+30), 97.824 supported software (+92), 1.800 partially supported software (+9), 38.761 unsupported software (+9)
 
 4 active software-lists added:
 bmjr_cass (Hitachi Basic Master Jr. cassettes)
@@ -442,7 +624,7 @@ takara_daigunder_dx_cart (Takara Daigunder DX cartridges)
 thinkpad8xx (IBM ThinkPad Power Series software)
 
 1 active software-list with changed description:
-smc777 (Sony SMC777 Disks) to (Sony SMC-777 floppy disks)
+smc777 "Sony SMC777 Disks" to "Sony SMC-777 floppy disks"
 
 software added/removed:
 bmjr_cass (+1)
@@ -605,7 +787,7 @@ hp98x6_rom (HP 98x6 Option ROMs)
 microbox2_flop (Microbox II diskettes)
 
 1 active software-list with changed description:
-leapfrog_leappad_cart (LeapFrog LeapPad cartridges) to (LeapFrog LeapPad / CocoPad cartridges)
+leapfrog_leappad_cart "LeapFrog LeapPad cartridges" to "LeapFrog LeapPad / CocoPad cartridges"
 
 software added/removed:
 altos586 (+1)
@@ -971,8 +1153,8 @@ ramstar (Ram Star multi-game cartridges)
 tmc600_quik (Telmac TMC-600 quickload)
 
 2 active software-lists with changed description:
-intvecs (Intellivision ECS cartridges) to (Mattel Intellivision ECS cartridges)
-wicat (Millennium Systems Wicat) to (Millennium Systems Wicat disk images)
+intvecs "Intellivision ECS cartridges" to "Mattel Intellivision ECS cartridges"
+wicat "Millennium Systems Wicat" to "Millennium Systems Wicat disk images"
 
 software added/removed:
 a2600_cass (-13)
@@ -1398,8 +1580,8 @@ pixter_cart (Mattel Pixter cartridges)
 (ekara_japan_ac) to (ekara_japan_packin)
 
 2 active software-lists description renamed:
-intv (Intellivision cartridges) to (Mattel Intellivision cartridges)
-next_hdd (Hard disk images for NeXT) to (NeXT hard disk images)
+intv "Intellivision cartridges" to "Mattel Intellivision cartridges"
+next_hdd "Hard disk images for NeXT" to "NeXT hard disk images"
 
 software added/removed:
 apple2_flop_clcracked (-9/+236)
@@ -2000,12 +2182,12 @@ $0.259 [#698]
 230.825 software roms (+326), 11.006 software CHD (+6), supported software 95.950 (+228), partially supported software 1.662 (+11), unsupported software 38.284 (+4)
 
 6 active software-lists with changed description:
-mac_cdrom ("Mac CD-ROMs" to "Apple Macintosh CD-ROMs")
-mac_flop ("Macintosh 400K/800K Disk images" to "Apple Macintosh 400K/800K disk images")
-mac_flop_clcracked ("Macintosh 400K/800K cleanly cracked disks" to "Apple Macintosh 400K/800K cleanly cracked disks")
-mac_flop_orig ("Macintosh 400K/800K Original disk images" to "Apple Macintosh 400K/800K original disk images")
-mac_hdd ("Mac Harddisks" to "Apple Macintosh hard disk images")
-mac_hdflop ("Macintosh High Density Disk images" to "Apple Macintosh high density disk images")
+mac_cdrom "Mac CD-ROMs" to "Apple Macintosh CD-ROMs"
+mac_flop "Macintosh 400K/800K Disk images" to "Apple Macintosh 400K/800K disk images"
+mac_flop_clcracked "Macintosh 400K/800K cleanly cracked disks" to "Apple Macintosh 400K/800K cleanly cracked disks"
+mac_flop_orig "Macintosh 400K/800K Original disk images" to "Apple Macintosh 400K/800K original disk images"
+mac_hdd "Mac Harddisks" to "Apple Macintosh hard disk images"
+mac_hdflop "Macintosh High Density Disk images" to "Apple Macintosh high density disk images"
 
 software added/removed:
 bingobear (+1)
@@ -2048,7 +2230,7 @@ mac_flop_clcracked (Macintosh 400K/800K cleanly cracked disks)
 mac_cdrom (Mac CD-ROMs)
 
 1 active software-list with changed description:
-spectrum_mgt_flop ("ZX Spectrum MGT DISCiPLE/+D disks" to "Sinclair ZX Spectrum MGT DISCiPLE/+D disks")
+spectrum_mgt_flop "ZX Spectrum MGT DISCiPLE/+D disks" to "Sinclair ZX Spectrum MGT DISCiPLE/+D disks"
 
 software added/removed:
 a2600 (+5)
@@ -2304,8 +2486,8 @@ $0.255 [#694]
 n64_lodgenet (LodgeNet 64 software)
 
 2 active software-lists with changed description:
-oric1_cass ("Tangerine Oric 1 cassettes" to "Tangerine Oric-1 cassettes")
-vgmplay ("Video Game Music Files" to "VGM logs")
+oric1_cass "Tangerine Oric 1 cassettes" to "Tangerine Oric-1 cassettes"
+vgmplay "Video Game Music Files" to "VGM logs"
 
 software added/removed:
 gba (+23)
@@ -2363,9 +2545,9 @@ abc806              > abc806_flop
 abc800              > abc830_flop
 
 3 active software-lists with changed description:
-ibmpcjr_cart ("IBM PC Jr cartridges" to "IBM PCjr cartridges")
-k28m2 ("K28 model 7-232 modules" to "K-2-8 (model 7-232) modules")
-oric1_cass ("Oric 1 cassettes" to "Tangerine Oric 1 cassettes")
+ibmpcjr_cart "IBM PC Jr cartridges" to "IBM PCjr cartridges"
+k28m2 "K28 model 7-232 modules" to "K-2-8 (model 7-232) modules"
+oric1_cass "Oric 1 cassettes" to "Tangerine Oric 1 cassettes"
 
 software added/removed:
 abc80_rom (+6)
@@ -2484,9 +2666,9 @@ conchess_plymate        |
 conchess_standard       |
 
 3 active software-lists with changed description:
-pce ("NEC PC-Engine cartridges" to "NEC PC Engine HuCards")
-pcecd ("NEC PC-Engine / Turbografx 16 CD-ROMs" to "NEC PC Engine / Turbografx-16 CD-ROMs")
-tg16 ("NEC Turbografx 16 cartridges" to "NEC Turbografx-16 HuCards")
+pce "NEC PC-Engine cartridges" to "NEC PC Engine HuCards"
+pcecd "NEC PC-Engine / Turbografx 16 CD-ROMs" to "NEC PC Engine / Turbografx-16 CD-ROMs"
+tg16 "NEC Turbografx 16 cartridges" to "NEC Turbografx-16 HuCards"
 
 software added/removed:
 abc1600_flop (+1)
@@ -3966,8 +4148,8 @@ $0.250 [#689]
 msx1_flop_525 (MSX1 5.25" disk images)
 
 2 active software-lists with changed description:
-megacd ("Sega Mega CD (Euro) CD-ROMs" to "Sega Mega CD (Europe) CD-ROMs")
-megacdj ("Sega Mega CD (Jpn) CD-ROMs" to "Sega Mega CD (Japan) CD-ROMs")
+megacd "Sega Mega CD (Euro) CD-ROMs" to "Sega Mega CD (Europe) CD-ROMs"
+megacdj "Sega Mega CD (Jpn) CD-ROMs" to "Sega Mega CD (Japan) CD-ROMs"
 
 software added/removed:
 a2600 (+2)
@@ -4035,7 +4217,7 @@ mtu130_flop (MTU-130 floppies)
 rz1_cass (Casio RZ-1 cassettes)
 
 1 active software-list with changed description:
-advision ("Entex AdventureVision cartridges" to "Entex Adventure Vision cartridges")
+advision "Entex AdventureVision cartridges" to "Entex Adventure Vision cartridges"
 
 software added/removed:
 a5200 (+4)
@@ -4253,14 +4435,14 @@ $0.246 [#685]
 nes_vt_cart (Cartridges compatible with VRT VT0x based units)
 
 8 active software-list with changed description:
-ekara_japan_d ("Takara e-kara (Japan) D-xx / DCxxxx- series cartridges" to "Takara e-kara (Japan) Dream Cartridge series (D-xx / DCxxxx-)")
-ekara_japan_g ("Takara e-kara (Japan) G-xx / GCxxxx- series cartridges" to "Takara e-kara (Japan) Gold Cartridge series (G-xx / GCxxxx-)")
-ekara_japan_gk ("Takara e-kara (Japan) GK-xx series cartridges" to "Takara e-kara (Japan) Game and Karaoke Cartridge series (GK-xx)")
-ekara_japan_m ("Takara e-kara (Japan) M-xx / MCxxxx- series cartridges" to "Takara e-kara (Japan) Saiten Cartridge mini series (M-xx / MCxxxx-)")
-ekara_japan_p ("Takara e-kara (Japan) P-xx / PCxxxx- series cartridges" to "Takara e-kara (Japan) Platinum Cartridge series (P-xx / PCxxxx-)")
-ekara_japan_s ("Takara e-kara (Japan) S-xx / SCxxxx- series cartridges" to "Takara e-kara (Japan) Saiten Cartridge series (S-xx / SCxxxx-)")
-ekara_japan_sp ("Takara e-kara (Japan) SP-xx series cartridges" to "Takara e-kara (Japan) Super Cartridge series (SP-xx)")
-gcslottv ("Gachinko Contest! Slot machine TV cartridges" to "Gachinko Shōbu! PachisloTV cartridges")
+ekara_japan_d "Takara e-kara (Japan) D-xx / DCxxxx- series cartridges" to "Takara e-kara (Japan) Dream Cartridge series (D-xx / DCxxxx-)"
+ekara_japan_g "Takara e-kara (Japan) G-xx / GCxxxx- series cartridges" to "Takara e-kara (Japan) Gold Cartridge series (G-xx / GCxxxx-)"
+ekara_japan_gk "Takara e-kara (Japan) GK-xx series cartridges" to "Takara e-kara (Japan) Game and Karaoke Cartridge series (GK-xx)"
+ekara_japan_m "Takara e-kara (Japan) M-xx / MCxxxx- series cartridges" to "Takara e-kara (Japan) Saiten Cartridge mini series (M-xx / MCxxxx-)"
+ekara_japan_p "Takara e-kara (Japan) P-xx / PCxxxx- series cartridges" to "Takara e-kara (Japan) Platinum Cartridge series (P-xx / PCxxxx-)"
+ekara_japan_s "Takara e-kara (Japan) S-xx / SCxxxx- series cartridges" to "Takara e-kara (Japan) Saiten Cartridge series (S-xx / SCxxxx-)"
+ekara_japan_sp "Takara e-kara (Japan) SP-xx series cartridges" to "Takara e-kara (Japan) Super Cartridge series (SP-xx)"
+gcslottv "Gachinko Contest! Slot machine TV cartridges" to "Gachinko Shōbu! PachisloTV cartridges"
 
 software added/removed:
 a2600 (+2)
@@ -4526,10 +4708,10 @@ playmaker (Tiger Playmaker playcards)
 roland_tnsc1 (Roland TN-SC1 Music Style Cards)
 
 4 active software-list with changed description:
-ibm5150	("IBM PC disk images" to "IBM PC floppy disk images")
-ibm5170 ("IBM PC/AT disk images" to "IBM PC/AT floppy disk images")
-cd32 ("Commodore Amiga CD-32 CD-ROMs" to "Commodore Amiga CD32 CD-ROMs")
-megadriv ("Sega MegaDrive/Genesis cartridges" to "Sega Mega Drive/Genesis cartridges")
+ibm5150	"IBM PC disk images" to "IBM PC floppy disk images"
+ibm5170 "IBM PC/AT disk images" to "IBM PC/AT floppy disk images"
+cd32 "Commodore Amiga CD-32 CD-ROMs" to "Commodore Amiga CD32 CD-ROMs"
+megadriv "Sega MegaDrive/Genesis cartridges" to "Sega Mega Drive/Genesis cartridges"
 
 software added/removed:
 amiga_demos (+3)
@@ -7604,12 +7786,6 @@ x68k_flop               | tricornf          > tritornf
 pc98                    | bishod91a
 x68k_flop               | kensoson
 
-0 lists renamed:
--
-
-0 lists removed:
--
-
 =====================================================================================================================================================================================================
 
 $0.202 [#641]
@@ -7644,7 +7820,7 @@ acrnsys_rom (Acorn System ROM images)
 camplynx_cass (Camputers Lynx cassettes)
 
 1 active software-list with changed description:
-specpls3_flop ("ZX Spectrum disk images" to "ZX Spectrum +3 disk images")
+specpls3_flop "ZX Spectrum disk images" to "ZX Spectrum +3 disk images"
 
 2 software renamed:
 ibm5170                 | incrmach          > tima
@@ -7689,22 +7865,22 @@ $0.198 [#637]
 124.125 software roms (+264), 8.981 software CHD (+46), supported software 64.327 (+239), partially supported software 704 (+1), unsupported software 35.962 (-10)
 
 16 active software-lists with changed description:
-bbc_flop_32016 ("32016 Co-Processor Discs" to "Acorn 32016 Co-Processor discs")
-bbc_flop_6502 ("6502 2nd Processor Discs" to "Acorn 6502 2nd Processor discs")
-bbc_flop_65c102 ("65C102 Co-Processor Discs" to "Acorn 65C102 Co-Processor discs")
-bbc_flop_80186 ("80186 Co-Processor Discs" to "Acorn 80186 Co-Processor discs")
-bbc_flop_arm ("ARM Co-Processor Discs" to "Acorn ARM Co-Processor discs")
-bbc_flop_z80 ("Z80 2nd Processor Discs" to "Acorn Z80 2nd Processor discs")
-bbca_cass ("BBC Micro Model A cassettes" to "Acorn BBC Micro Model A cassettes")
-bbcb_cass ("BBC Micro Model B cassettes" to "Acorn BBC Micro Model B cassettes")
-bbcb_cass_de ("BBC Micro Model B (German) cassettes" to "Acorn BBC Micro Model B (German) cassettes")
-bbcb_flop ("BBC Micro Model B disks" to "Acorn BBC Micro Model B disks")
-bbcb_flop_orig ("BBC Micro Model B Original disks" to "Acorn BBC Micro Model B Original disks")
-bbcb_flop_us ("BBC Micro Model B (US) disks" to "Acorn BBC Micro Model B (US) disks")
-bbcm_cart ("BBC Master cartridges" to "Acorn BBC Master cartridges")
-bbcm_cass ("BBC Master cassettes" to "Acorn BBC Master cassettes")
-bbcm_flop ("BBC Master disks" to "Acorn BBC Master disks")
-bbcmc_flop ("BBC Master Compact disks" to "Acorn BBC Master Compact disks")
+bbc_flop_32016 "32016 Co-Processor Discs" to "Acorn 32016 Co-Processor discs"
+bbc_flop_6502 "6502 2nd Processor Discs" to "Acorn 6502 2nd Processor discs"
+bbc_flop_65c102 "65C102 Co-Processor Discs" to "Acorn 65C102 Co-Processor discs"
+bbc_flop_80186 "80186 Co-Processor Discs" to "Acorn 80186 Co-Processor discs"
+bbc_flop_arm "ARM Co-Processor Discs" to "Acorn ARM Co-Processor discs"
+bbc_flop_z80 "Z80 2nd Processor Discs" to "Acorn Z80 2nd Processor discs"
+bbca_cass "BBC Micro Model A cassettes" to "Acorn BBC Micro Model A cassettes"
+bbcb_cass "BBC Micro Model B cassettes" to "Acorn BBC Micro Model B cassettes"
+bbcb_cass_de "BBC Micro Model B (German) cassettes" to "Acorn BBC Micro Model B (German) cassettes"
+bbcb_flop "BBC Micro Model B disks" to "Acorn BBC Micro Model B disks"
+bbcb_flop_orig "BBC Micro Model B Original disks" to "Acorn BBC Micro Model B Original disks"
+bbcb_flop_us "BBC Micro Model B (US) disks" to "Acorn BBC Micro Model B (US) disks"
+bbcm_cart "BBC Master cartridges" to "Acorn BBC Master cartridges"
+bbcm_cass "BBC Master cassettes" to "Acorn BBC Master cassettes"
+bbcm_flop "BBC Master disks" to "Acorn BBC Master disks"
+bbcmc_flop "BBC Master Compact disks" to "Acorn BBC Master Compact disks"
 
 software added/removed:
 abc80_flop (+1)
@@ -8044,8 +8220,8 @@ bbc_flop_68000 (68000 Co-Processor Discs)
 bbc_flop_torch (Torch Z80 Co-Processor Discs)
 
 2 active software-lists with changed description:
-bbc_flop_6502 ("6502 Co-Processor Discs" to "Triumph-Adler Alphatronic PC cartridges")
-bbc_flop_torch ("Torch Z80 Co-Processor Discs" to "Z80 2nd Processor Discs")
+bbc_flop_6502 "6502 Co-Processor Discs" to "Triumph-Adler Alphatronic PC cartridges"
+bbc_flop_torch "Torch Z80 Co-Processor Discs" to "Z80 2nd Processor Discs"
 
 software added/removed:
 alphatro_cart (+2)
@@ -8652,8 +8828,8 @@ poisk1_flop (Poisk-1 disk images)
 gba_ereader (Nintendo Game Boy Advance (e-cards))
 
 2 active software-lists with changed description:
-atom_rom ("Acorn Atom expansion ROMs" to "Acorn Atom Utility ROMs")
-electron_cass ("Electron cassettes" to "Acorn Electron cassettes")
+atom_rom "Acorn Atom expansion ROMs" to "Acorn Atom Utility ROMs"
+electron_cass "Electron cassettes" to "Acorn Electron cassettes"
 
 software added/removed:
 apple1 (+1)
@@ -8698,7 +8874,7 @@ pofo (Atari Portfolio cartridges)
 vsmile_cd (VTech V.Flash/V.Smile Pro V.Disc images)
 
 1 active software-list with changed description:
-fmtowns_cd ("FM Towns CD-ROMs" to "Fujitsu FM Towns CD-ROMs")
+fmtowns_cd "FM Towns CD-ROMs" to "Fujitsu FM Towns CD-ROMs"
 
 software added/removed:
 bbca_cass (+6)
