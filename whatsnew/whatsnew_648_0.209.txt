@@ -2,25 +2,7 @@
 -----------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
-- 03122: [DIP/Input] (ltcasino.cpp) mv4in1, ltcasino, ltcasinn: Service Mode DIP switch does not work (Dirk Best)
-- 05291: [Sound] (coco3.cpp) All drivers in coco.c: ORC90 emulation has no sound output (Nigel Barnes)
-- 03130: [Graphics] (ccastles.cpp) ccastles: Reported screen resolution is incorrect (Dirk Best)
-- 07075: [Sound] (m72.cpp) hharry: Victory scream is too low compared to previous mame releases and arcade PCB (cam900)
-- 07242: [Crash/Freeze] (vegas.cpp) sf2049: Game freezes in attract mode (Ted Green)
-- 07255: [Crash/Freeze] (sms.cpp) gamegear [ecco]: Game Gear ROM Ecco freezes on a pink/purple screen (Enik Land)
-- 07265: [DIP/Input] (tsamurai.cpp) tsamuraih: Lives DIP switch settings are incorrect (chaneman)
-- 07266: [Sound] (snk6502.cpp) sasuke: Initial game music plays partially or not at all after hitting Start (Ivan Vangelista)
-- 07270: [Crash/Freeze] (cps1.cpp) sf2ceea: Debugger crashes when accessing memory under certain conditions (hap)
-- 07272: [Documentation] (spg110.cpp) jak_spdmo: In the description the letter "W" is missing in the word "hardware" (Tafoid)
-- 07275: [Core] Weird pacing issue on Windows (hap)
-- 07279: [Crash/Freeze] (amstrad.cpp) cpc6128: Loading disk images with exess tracks causes a fatal error (Edstrom)
-- 07281: [DIP/Input] (pocketc.cpp) pc1401, pc1402: Inputs are mapped incorrectly (Robbbert)
-- 07282: [Crash/Freeze] (alphatro.cpp) alphatro: After "width 80" entered, MAME freezes (AJR)
-
-
-New working machines
+New Working Machines
 --------------------
 Akka Arrh (prototype) [Aaron Giles, The Dumping Union]
 Applied Concepts Great Game Machine [hap, bataais]
@@ -36,7 +18,7 @@ Kuzmich-Egorych [shattered]
 Name That Tune (Castle Toy) [hap, Sean Riddle]
 Nevada (French, encrypted) [Roberto Fresca, Grull Osgo]
 
-New working clones
+New Working Clones
 ------------------
 Applied Concepts Boris (rev. 01) [Sean Riddle]
 ARB V2 Sargon 4.0 [anon]
@@ -52,7 +34,7 @@ Novag Super Forte (version A, set 3) [Berger]
 Street Heat (set 2, older?) [chaneman]
 Super Bobble Bobble (bootleg, set 5) [Lorenzo Mancini]
 
-Machines promoted to working
+Machines Promoted to Working
 ----------------------------
 Joker Card (Inter Games) [Roberto Fresca, Grull Osgo]
 Joker Card 300 (Ver.A267BC, encrypted) [Roberto Fresca, Grull Osgo, Andreas Naive, Gaby]
@@ -62,7 +44,7 @@ Power Card (Ver 0263, encrypted) [Roberto Fresca, Grull Osgo, Andreas Naive]
 Saloon (French, encrypted) [Roberto Fresca, Grull Osgo]
 Tripple Draw (V3.1 s) [Ivan Vangelista]
 
-Clones promoted to working
+Clones Promoted to Working
 --------------------------
 Dragon World (Korea, V040K) [Ivan Vangelista]
 Jolly Card (German, Fun World, bootleg) [Roberto Fresca, Grull Osgo]
@@ -70,7 +52,7 @@ Jolly Card (Italian, bootleg, set 2) [Roberto Fresca, Grull Osgo]
 Royal Card (Evona, Polish, encrypted) [Roberto Fresca, Grull Osgo]
 Wonder Boy (system 2, set 2, 315-5176) [Ivan Vangelista]
 
-New machines marked as NOT_WORKING
+New Machines Narked as NOT_WORKING
 ----------------------------------
 Bikkuri Pro Wrestling (Japan 881221, Ver 1.05) [ShouTime, Dane Biegert, Evan Korzon, Russell Howard, Jeroen Bijl, Jeffrey Gray, Smitdogg, The Dumping Union]
 Centipede / Millipede / Missile Command (rev 1.03) [chaneman, R. Belmont]
@@ -84,7 +66,7 @@ Toyquest TV Go Go [ClawGrip, TeamEurope]
 Trivial Pursuit (Volumen V, Spanish, Maibesa hardware) [Retro Sevilla, Diego Bartolome, Recreativas.org, ClawGrip]
 Yamaha MU50 [R. Belmont, O. Galibert]
 
-New clones marked as NOT_WORKING
+New Clones Marked as NOT_WORKING
 --------------------------------
 Amstrad plc PCW9512 [Edstrom]
 CompuAdd 810 [rfka01]
@@ -99,7 +81,7 @@ Kaypro Corporation PC [rfka01]
 Kyocera XT [rfka01]
 Last Action Hero (1.06 Canada) [Matt Morin]
 
-New working software list additions
+New Working Software List Additions
 -----------------------------------
 apple2_flop_clcracked:
   Adjectives (cleanly cracked), Adjectives (version 06.29.84) (cleanly cracked), Agenda Files (cleanly cracked),
@@ -222,13 +204,13 @@ icanpian:
 intellect02: Chess (4 levels) [hap, Berger]
 nes: SimCity (USA, Prototype) [archive.org, AJR]
 
-Software list items promoted to working
+Software List Items Promoted to Working
 ---------------------------------------
 pcw:
   LocoScript Installation Program v3.00a (English), LocoScript Installation Program v3.06b (English), LocoScript v3.06 (UK),
   LocoScript v4.06 (UK), LocoScript v4.10 (UK), Tomahawk [Edstrom]
 
-New NOT_WORKING software list additions
+New NOT_WORKING Software List Additions
 ---------------------------------------
 3do_m2: Oldsmobile (USA) [redump.org, FakeShemp]
 apple2_flop_misc: Anti-M (version 1.2) [4am, Firehawke]
@@ -236,6 +218,24 @@ ibm5170: Gilis presentask (Swe) [FakeShemp]
 pce_tourvision: F1 Triple Battle (TourVision PCE bootleg) [ClawGrip]
 tvgogo: 4-in-1 (Flashcard Fishing, Break a Brick, Balloon Juggling, Penguin Maze), Tennis, Whac-A-Mole [ClawGrip, TeamEurope]
 vsmile_cart: Disney/Pixar Up (Spa, Rev. 022), Gimnasio Interactivo V.Smile (Spa) [TeamEurope, Diego Bartolome, ClawGrip]
+
+
+MAMETesters Bugs Fixed (14):
+----------------------------
+- 03122: [DIP/Input] (ltcasino.cpp) mv4in1, ltcasino, ltcasinn: Service Mode DIP switch does not work (Dirk Best)
+- 05291: [Sound] (coco3.cpp) All drivers in coco.c: ORC90 emulation has no sound output (Nigel Barnes)
+- 03130: [Graphics] (ccastles.cpp) ccastles: Reported screen resolution is incorrect (Dirk Best)
+- 07075: [Sound] (m72.cpp) hharry: Victory scream is too low compared to previous mame releases and arcade PCB (cam900)
+- 07242: [Crash/Freeze] (vegas.cpp) sf2049: Game freezes in attract mode (Ted Green)
+- 07255: [Crash/Freeze] (sms.cpp) gamegear [ecco]: Game Gear ROM Ecco freezes on a pink/purple screen (Enik Land)
+- 07265: [DIP/Input] (tsamurai.cpp) tsamuraih: Lives DIP switch settings are incorrect (chaneman)
+- 07266: [Sound] (snk6502.cpp) sasuke: Initial game music plays partially or not at all after hitting Start (Ivan Vangelista)
+- 07270: [Crash/Freeze] (cps1.cpp) sf2ceea: Debugger crashes when accessing memory under certain conditions (hap)
+- 07272: [Documentation] (spg110.cpp) jak_spdmo: In the description the letter "W" is missing in the word "hardware" (Tafoid)
+- 07275: [Core] Weird pacing issue on Windows (hap)
+- 07279: [Crash/Freeze] (amstrad.cpp) cpc6128: Loading disk images with exess tracks causes a fatal error (Edstrom)
+- 07281: [DIP/Input] (pocketc.cpp) pc1401, pc1402: Inputs are mapped incorrectly (Robbbert)
+- 07282: [Crash/Freeze] (alphatro.cpp) alphatro: After "width 80" entered, MAME freezes (AJR)
 
 
 Translations added or modified
@@ -262,7 +262,7 @@ Source changes:
 - wy75: Added default EAROM content to avoid hanging at start [AJR].
 - er1400: Added ability to load default data from region, and changed erase value to all zeroes [AJR].
 - upd765: Improved drive selection logic [AJR]:
-  * Deselect drives upon reset, or select drive 0 for older controllers with multiplexed select lines.
+  * Deselect drives upon reset, or select drive 0 for older controllers with multiplexed select lines;
   * Deselect other floppies when using set_floppy.
 - specpls3: Mirror floppy drive select lines (fixes Batman: The Movie) [AJR].
 - rd100: Added LCD controller and working display [AJR].
@@ -273,15 +273,15 @@ Source changes:
 - Removed unnecessary read/write handler arguments, improved member names, and updated comments in many devices and drivers [cam900].
 - ymf278b.cpp: Added DO1 and DO2 outputs, and fixed timer/buffer when clock is changed [cam900].
 - cps3.cpp updates [cam900]:
-  * Reduced some gaps in zoomed sprites, and restricted drawing to clipping rectangle.
+  * Reduced some gaps in zoomed sprites, and restricted drawing to clipping rectangle;
   * Reduced duplication, improved member names, and cleaned up code.
 - tc0480scp.cpp: Cleaned up and simplified read/write handlers [cam900].
 - devices/sound/gaelco.cpp: Converted data access to device_rom_interface, and made pitch a function of clock frequency [cam900].
 - gaelco2.cpp: Corrected some crystal values, and added notes [cam900].
 - tecmo_spr.cpp: Replaced gfx_element with gfxdecode_device, and reduced unnecessary code. Also changed some variables to more appropriate types [cam900].
 - kaneko_tmap.cpp updates [cam900]:
-  * Added address map for video RAM handling.
-  * Moved expro02.cpp bank switching code into the driver.
+  * Added address map for video RAM handling;
+  * Moved expro02.cpp bank switching code into the driver;
   * Reduced code duplication.
 - expro02.cpp: Reduced runtime tag map lookups [cam900].
 - kaneko16.cpp: Converted berwall to mono sound, reduced runtime tag map lookups, and simplified and cleaned up code [cam900].
@@ -303,14 +303,14 @@ Source changes:
 - snk68.cpp: Moved pow and searchar to a derived state class, reduced runtime tag map lookups, and cleaned up code [cam900].
 - snk68_spr.cpp: Changed flip screen state member to bool [cam900].
 - psikyosh.cpp updates [cam900]:
-  * Restricted tilemap drawing to clipping rectangle, and fixed tilemap size when per-line effects are enabled.
-  * Added separate address map for games with mahjong controller input.
+  * Restricted tilemap drawing to clipping rectangle, and fixed tilemap size when per-line effects are enabled;
+  * Added separate address map for games with mahjong controller input;
   * Reduced runtime tag map lookups, and cleaned up code.
 - m72.cpp: Fixed audio sample rate for M72 PCBs, fixed DAC volume, and added notes [cam900].
 - decbac06.cpp: Removed hard-coded parameters that come from graphics elements, and restricted drawing to clipping rectangle [cam900].
 - raiden2.cpp updates [cam900]:
-  * Fixed xsedae configuration (runs on modified Zero Team hardware).
-  * Moved video functions to video/raiden2.cpp.
+  * Fixed xsedae configuration (runs on modified Zero Team hardware);
+  * Moved video functions to video/raiden2.cpp;
   * Reduced runtime tag map lookups, made state class members protected or private where appropriate, and cleaned up code.
 - r2dx_v33.cpp: Reduced runtime tag map lookups, and reduced redundancy with raiden2.cpp [cam900].
 - vgmplay.cpp: Added volume modifier support, and scaled volume according to the number of sound chips used by file [cam900].
@@ -319,10 +319,10 @@ Source changes:
 - psikyo4.cpp: Fixed FM output when used [cam900].
 - n2a03.cpp: Added device_mixer_interface rather than routing audio to hard-coded speakers [cam900].
 - tc0100scn.cpp updates [cam900]:
-  * Internalized text graphics.
-  * Restricted drawing to clipping rectangle.
-  * Moved taito_f2.cpp banking code into driver.
-  * Allowed masked priority behavior.
+  * Internalized text graphics;
+  * Restricted drawing to clipping rectangle;
+  * Moved taito_f2.cpp banking code into driver;
+  * Allowed masked priority behavior;
   * Reduced redundancy and cleaned up code.
 - tc0480scp.cpp: Internalized text graphics, reduced code duplication, and removed unnecessary pointers and functions [cam900].
 - emupal.cpp: Added xBGRBBBBGGGGRRRR format [cam900].
@@ -340,31 +340,31 @@ Source changes:
 - pgmprot_igs027a_type1.cpp: Added inputs for CAVE PCB [cam900].
 - qs1000.cpp: Moved imperfect sound flag from drivers to device [cam900].
 - Netlist library updates [Couriersud]:
-  * Added a MOSFET model, inclusion Meyer capacitance.
-  * Added a charge-conserving capacitor model, as an alternative to the constant-capacity model.
-  * Started putting constants in a central place.
-  * Fixed a rounding issue in the ptime code.
-  * Added a global parameter to disable semiconductor capacitance modelling.
-  * Added an operational amplifier model that ignores output voltage limits.
-  * Changed MB3614 operational amplifier parameters to match the data sheet.
-  * Added VARCLOCK, allowing step size to be calculated using a function.
-  * Added trunc to pfunction.
-  * Added opamp_amplification_curve example, which calculates op-amp gain as a function of frequency.
-  * Improved LM3900 voltage clamping model, and aligned pin names with other operational amplifiers.
-  * Added a high-precision LM3900 model, and an improved high-performance LM3900 model.
-  * Added more SPICE elements to the conversion code.
-  * Fixed current source handling when converting SPICE nets.
-  * Added validation for netlist devices.
+  * Added a MOSFET model, inclusion Meyer capacitance;
+  * Added a charge-conserving capacitor model, as an alternative to the constant-capacity model;
+  * Started putting constants in a central place;
+  * Fixed a rounding issue in the ptime code;
+  * Added a global parameter to disable semiconductor capacitance modelling;
+  * Added an operational amplifier model that ignores output voltage limits;
+  * Changed MB3614 operational amplifier parameters to match the data sheet;
+  * Added VARCLOCK, allowing step size to be calculated using a function;
+  * Added trunc to pfunction;
+  * Added opamp_amplification_curve example, which calculates op-amp gain as a function of frequency;
+  * Improved LM3900 voltage clamping model, and aligned pin names with other operational amplifiers;
+  * Added a high-precision LM3900 model, and an improved high-performance LM3900 model;
+  * Added more SPICE elements to the conversion code;
+  * Fixed current source handling when converting SPICE nets;
+  * Added validation for netlist devices;
   * Improved scalability of error messages.
 - m62.cpp: Fixed kidniki netlist, based on corrections in kungfum schematics and an apparent omission [Couriersud].
 - zaccaria.cpp sound improvements [Couriersud]:
-  * Routed speech and DAC through netlist filtering, and fixed AY8910 interfacing.
-  * Hooked up potentiometers so they can be adjusted.
+  * Routed speech and DAC through netlist filtering, and fixed AY8910 interfacing;
+  * Hooked up potentiometers so they can be adjusted;
   * Added frontiers to netlist to improve performance.
 - mario: Fixed an error in schematics that became obvious with the improved LM3900 model [Couriersud, Tafoid].
 - spg110 updates [David Haywood]:
-  * Split more functionality into separate devices.
-  * Improved rendering and sprites, and implemented manual video RAM uploads.
+  * Split more functionality into separate devices;
+  * Improved rendering and sprites, and implemented manual video RAM uploads;
   * Added basic audio.
 - wc90b.cpp: Tidied up a little [David Haywood].
 - pengo.cpp: Added preliminary partial decryption for schick [David Haywood].
@@ -372,17 +372,17 @@ Source changes:
 - 32x.xml: Fixed pinochio ROM loading [David Haywood].
 - mgames.cpp: Cleaned up palette and graphics decoding layout, and converted drawing to use tilemap system [Dirk Best].
 - ltcasino.cpp updates [Dirk Best]:
-  * Hooked up the two 6821 PIAs, hooked up CRT5037, corrected RAM size, and defined clocks in terms of 18 MHz crystal.
-  * Cleaned up inputs, added DIP switch descriptions and locations, and documented service mode.
-  * Added output ports, and hooked up coin counter and lamps.
-  * Added simple internal artwork with clickable buttons and color overlays based on a flyer.
+  * Hooked up the two 6821 PIAs, hooked up CRT5037, corrected RAM size, and defined clocks in terms of 18 MHz crystal;
+  * Cleaned up inputs, added DIP switch descriptions and locations, and documented service mode;
+  * Added output ports, and hooked up coin counter and lamps;
+  * Added simple internal artwork with clickable buttons and color overlays based on a flyer;
   * Added non-volatile RAM, and updated ROM labels and notes.
 - tms9927.cpp: Allow visible area to be hard-coded at configuration time [Dirk Best].
 - akkaarrh.cpp: Added coin counters, lamp outputs, and a test view showing the lamp [Dirk Best].
 - Amstrad PCW driver updates [Edstrom]:
-  * Corrected floppy drive types for each machine.
-  * Derived clock from crystal value, and slowed down the CPU to approximate the effect of video hardware accessing RAM.
-  * Improved logging and converted to use logmacro.h utilities.
+  * Corrected floppy drive types for each machine;
+  * Derived clock from crystal value, and slowed down the CPU to approximate the effect of video hardware accessing RAM;
+  * Improved logging and converted to use logmacro.h utilities;
   * Fixed printer and monitor palettes, and made a simpler layout the default.
 - dsk_dsk.cpp, hxchfe_dsk.cpp: Report a non-fatal warning for images with a small number of excess tracks [Edstrom].
 - pcw.xml: Corrected metadata and added notes on dumps with excess tracks [Edstrom].
@@ -395,11 +395,11 @@ Source changes:
 - Fixed YM2608/YM2610 ADPCM-A overflow behavior (should wrap rather than saturating) [Lord Nightmare, madbr].
 - ymz774: Replaced volume table with calculation loop [MetalliC].
 - tms99xx updates [Michael Zapf]:
-  * Fixed LDCR/STCR handling of register indirect auto-increment mode (*Rx+) and modernized logging.
-  * Fixed minimum/maximum clock cycles per instruction.
+  * Fixed LDCR/STCR handling of register indirect auto-increment mode (*Rx+) and modernized logging;
+  * Fixed minimum/maximum clock cycles per instruction;
   * Changed set address method signature to work better with memory maps.
 - ti99 updates [Michael Zapf]:
-  * Fixed TI FDC in Geneve losing SIDSEL signal when no drive is selected, and removed redundant variables.
+  * Fixed TI FDC in Geneve losing SIDSEL signal when no drive is selected, and removed redundant variables;
   * Fixed 99/4p regression where wrong CRU addresses are used when accessing peribox/evpc.
 - coco: Fixed loading Orchestra-90, RS-232 Program Pak, and Modem Pak from software list (fixes MT05291) [Nigel Barnes].
 - m68000: Made CPU space an address space and made vectored interrupts use it. Also made it possible to disable the interrupt priority encoder behaviour in the CPU core [O. Galibert].
@@ -419,20 +419,20 @@ Source changes:
 - k2000: Hooked up RAM/ROM switch; now starts to boot [R. Belmont].
 - aim65: Modernised code, fixed cassette, added TTY, and added printer display [Robbbert].
 - funworld.cpp updates [Roberto Fresca, Grull Osgo]:
-  * Improved game descriptions, and expanded notes.
-  * Improved memory maps, added default non-volatile RAM contents for some games, fixed ROM loading, and re-worked inputs.
-  * Improved tilemaps, fixed graphics planes, and improved palettes.
-  * Added I2C serial EEPROM and removed PIAs for Saloon/Nevada.
-  * Added PLD dumps for pool10e and marked jokercrd graphics ROM IC10 as a bad dump.
-  * Split and mirrored attribute/color RAM, fixed AY8910 hook-up, fixed video RAM offset, and fixed AY8910 hook-up for intrgmes.
-  * Changed CPU to 65SC02, added periodic interrupts, and patched out some hardware checks for intrgmes.
+  * Improved game descriptions, and expanded notes;
+  * Improved memory maps, added default non-volatile RAM contents for some games, fixed ROM loading, and re-worked inputs;
+  * Improved tilemaps, fixed graphics planes, and improved palettes;
+  * Added I2C serial EEPROM and removed PIAs for Saloon/Nevada;
+  * Added PLD dumps for pool10e and marked jokercrd graphics ROM IC10 as a bad dump;
+  * Split and mirrored attribute/color RAM, fixed AY8910 hook-up, fixed video RAM offset, and fixed AY8910 hook-up for intrgmes;
+  * Changed CPU to 65SC02, added periodic interrupts, and patched out some hardware checks for intrgmes;
   * Changed CPU to R65C02, added PIA mirroring, and added a ROM patch to force NOP after BRK for royalcrdf.
 - Further funworld.cpp updates [Roberto Fresca]:
-  * Fixed palette banking, graphics ROM loading, memory map and video RAM offsets for royalcrdf.
-  * Added default non-volatile RAM contents for rcdino4 and jolycdig.
-  * Marked royalcrdc graphics ROM IC26 as a bad dump.
-  * Added button lamps for jolycdig and jolycdab.
-  * Changed "Austrian" to "German" in all game descriptions, and expanded notes.
+  * Fixed palette banking, graphics ROM loading, memory map and video RAM offsets for royalcrdf;
+  * Added default non-volatile RAM contents for (rcdino4) and (jolycdig);
+  * Marked royalcrdc graphics ROM IC26 as a bad dump;
+  * Added button lamps for jolycdig and jolycdab;
+  * Changed "Austrian" to "German" in all game descriptions, and expanded notes;
   * Replaced royalcrdc bad graphics ROM dump with corresponding dump from parent set, and removed imperfect graphics flag.
 - funworld.cpp: Used a custom device to re-dump faulty graphics ROM for jokercrd, allowing game to be promoted to fully working [Roberto Fresca, Grull Osgo, Gaby].
 - unsp: Fixed signed multiplication in recompiler (fixes controls in jak_pooh) [Ryan Holtz].

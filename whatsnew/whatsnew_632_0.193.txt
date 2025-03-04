@@ -2,17 +2,7 @@
 -----------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
-- 05902: [Crash/Freeze] (gba.cpp) gba [bombtour]: Game hangs unable to start (R. Belmont)
-- 06683: [Graphics] (surpratk.cpp) suratk: Visible area is too small (Robbbert)
-- 06779: [Crash/Freeze] (coco3.cpp) Mounting Zenix Floppy Disk crashes MAME with floating point exception error (Dirk Best)
-- 06780: [Sound] (midtunit.cpp) Possible Volume balance Issue with Williams ADPCM Soundboard (hap)
-- 06784: [Sound] (bagman.cpp) bagman, sbagman: bagman dying sound plays repetitively when game starts (AJR)
-- 06785: [Interface] (coco3.cpp) Can't change into directories that have a "." prefix in their name (Vas Crabb)
-
-
-New working machines
+New Working Machines
 --------------------
 4-in-1 [Joe Magiera]
 Apollo 13 (Tiger handheld) [hap, Sean Riddle]
@@ -39,7 +29,7 @@ The King of Fighters '98: Ultimate Match HERO (China, V100, 09-08-23) [Peter Wil
 The Shadow (Tiger handheld) [hap, Sean Riddle]
 Vulcan XL 25 [hap, Sean Riddle]
 
-New working clones
+New Working Clones
 ------------------
 A-Blast (Japan) [system11, The Dumping Union]
 Amigo (bootleg of Amidar, set 2) [f205v, The Dumping Union]
@@ -63,7 +53,7 @@ Teki Paki (location test) [ShouTime, Mouloud Bessaad, Dulleron, Christian Ricoll
 Twin Brats (set 1) [caius, The Dumping Union]
 West Story (bootleg of Blood Bros., set 2) [Osso, caius, The Dumping Union]
 
-Machines promoted to working
+Machines Promoted to Working
 ----------------------------
 beatmania IIDX 4th style (GCA03 JAA) [smf, R. Belmont, Sarah Purohit]
 beatmania IIDX 6th style (GCB4U JAB) [smf, R. Belmont, Sarah Purohit]
@@ -75,7 +65,7 @@ Knights of Valour 2 New Legend (V302, China) [Peter Wilhelmsen, Morten Shearman 
 Oriental Legend 2 (V104, China) [Jeremy Romine, Peter Wilhelmsen, Morten Shearman Kirkegaard, David Haywood, MetalliC]
 San Francisco Rush: The Rock (boot ROM L 1.0, GUTS Oct 6 1997 / MAIN Oct 16 1997) [Ted Green]
 
-Clones promoted to working
+Clones Promoted to Working
 --------------------------
 Action Fighter (FD1089B 317-unknown) [David Haywood]
 Action Fighter (FD1089B 317-unknown, analog controls) [David Haywood]
@@ -90,7 +80,7 @@ Oriental Legend 2 (V101, China) [Jeremy Romine, Peter Wilhelmsen, Morten Shearma
 Oriental Legend 2 (V103, China) [Jeremy Romine, Peter Wilhelmsen, Morten Shearman Kirkegaard, David Haywood, MetalliC]
 Tazz-Mania (Arfyc / Rodmar bootleg) [Ivan Vangelista]
 
-New machines marked as NOT_WORKING
+New Machines Marked as NOT_WORKING
 ----------------------------------
 Chess Champion: Delta-1 [hap, Berger]
 Golden Hexa [Yohji, Smitdogg, The Dumping Union]
@@ -108,7 +98,7 @@ Shuriken Boy [rod_wod, The Dumping Union]
 Torarechattano - AV Kantoku Hen [system11, ShouTime, The Dumping Union]
 Wild Africa (AHG1535, US) [Roberto Fresca]
 
-New clones marked as NOT_WORKING
+New Clones Marked as NOT_WORKING
 --------------------------------
 Boot Scootin' (AHG1547, US) [Roberto Fresca]
 Bumble Bugs (CHG0479-99, US) [Roberto Fresca]
@@ -143,7 +133,7 @@ Wild Cougar (NHG0296-07, US) [Roberto Fresca]
 Wild Cougar (NHG0296-99, US) [Roberto Fresca]
 Winning Bid (English) [Roberto Fresca]
 
-New working software list additions
+New Working Software List Additions
 -----------------------------------
 cd32:
   Akira, Banshee, Chambers of Shaolin, Fire Ice - The Daring Adventures of Cool Coyote, Rise of The Robots, Seek And Destroy,
@@ -187,7 +177,7 @@ psx:
   Zanac X Zanac (Japan) [EoceneMiacid]
 ti95_cart: Mathematics Library, Statistics Library [unknown]
 
-New NOT_WORKING software list additions
+New NOT_WORKING Software List Additions
 ---------------------------------------
 cd32:
   Alien Breed - Special Edition + Qwak, Alien Breed 3D, Alien Breed - Tower Assault, Alfred Chicken, The Chaos Engine, The Classic Lotus Trilogy, Disposable Hero, Project-X + Ultimate Body Blows, Super Putty, Total Carnage [EoceneMiacid]
@@ -204,6 +194,16 @@ pcfx:
   Amateur Teikyou CD-ROM, Battle Heat, Can Can Bunny Extra DX, Der Langrisser FX, Doukyuusei 2, Dragon Knight IV, Farland Story FX, Fire Woman Matoigumi, Fushigi no Kuni no Angelique, Megami Paradise II, Pia Carrot e Youkuso!! - We've Been Waiting for You, Sotsugyou II FX - Neo Generation [EoceneMiacid]
 picno:
   Anime Enikki, Kanji Club, Montage, Picno Art Puzzle, Picno de 1 2 3, Picno de A B C, Picno de A I U E O, Real Montage, Shirayuki-hime Monogatari [Team Europe, SSJ]
+
+
+MAMETesters Bugs Fixed (6):
+---------------------------
+- 05902: [Crash/Freeze] (gba.cpp) gba [bombtour]: Game hangs unable to start (R. Belmont).
+- 06683: [Graphics] (surpratk.cpp) suratk: Visible area is too small (Robbbert).
+- 06779: [Crash/Freeze] (coco3.cpp) Mounting Zenix Floppy Disk crashes MAME with floating point exception error (Dirk Best).
+- 06780: [Sound] (midtunit.cpp) Possible Volume balance Issue with Williams ADPCM Soundboard (hap).
+- 06784: [Sound] (bagman.cpp) bagman, sbagman: bagman dying sound plays repetitively when game starts (AJR).
+- 06785: [Interface] (coco3.cpp) Can't change into directories that have a "." prefix in their name (Vas Crabb).
 
 
 Translations added or modified
@@ -235,10 +235,10 @@ Source changes:
 - micro3d: Added diagnostic terminals to the DrMath and VGB boards [Dirk Best].
 - prodigy: Added basic LAY to SVG XSLT filter [Edstrom].
 - myb3k updates [Edstrom]:
-  * Added ISA8 bus, moved FDC to ISA8 card, and added COM card and two new FDC cards.
-  * Added PIT, PIC, DMA and PPI devices.
-  * Corrected clocks, crystals and switches.
-  * Split ROM into BIOS and character generator, as physically present.
+  * Added ISA8 bus, moved FDC to ISA8 card, and added COM card and two new FDC cards;
+  * Added PIT, PIC, DMA and PPI devices;
+  * Corrected clocks, crystals and switches;
+  * Split ROM into BIOS and character generator, as physically present;
   * Added clones for Ericsson Step/One and Panasonic JB-3000 rebranded versions (ROMs undumped for latter).
 - myb3k.cpp: Fixed keyboard and audio - DOS 1.25 boots and runs BASIC demo [Edstrom, Fredik Ohrstrom, Mattis Lind].
 - trs80m2kb.cpp: Added missing keyboard controller ROM [Edstrom, Sean Riddle].
@@ -250,8 +250,8 @@ Source changes:
 - apollo_kbd: Handle virtual Num Lock toggle inside the devices [Hans Ostermeyer].
 - Atmel AIC: Implemented most features [MetalliC].
 - ymz774 improvements [MetalliC]:
-  * Implemented sequencer and SQC, and fixed SEQ/SQC save states.
-  * Added channel volume delayed transition.
+  * Implemented sequencer and SQC, and fixed SEQ/SQC save states;
+  * Added channel volume delayed transition;
   * Implemented channel/SEQ pause/resume.
 - ymz770: Implemented CHAN/SEQ "keep playing" command [MetalliC].
 - tms9995: Fixed READY check on RESET (auto-waitstate) [Michael Zapf].
@@ -261,23 +261,23 @@ Source changes:
 - ide: Disambiguated 16- and 32-bit CS access, and added non-space CS access methods [O. Galibert].
 - memory: Removed some space parameters from the apple2 domain [O. Galibert].
 - interpro: CPU and MMU improvements [Patrick Mackinlay]:
-  * Implemented most clipper CPU and MMU exceptions.
-  * Completed C300 instructions, adjusted for C400.
-  * Improved CAMMU dynamic translation and added faults.
-  * Refactored C300 CAMMU into separate instruction/data instances.
+  * Implemented most clipper CPU and MMU exceptions;
+  * Completed C300 instructions, adjusted for C400;
+  * Improved CAMMU dynamic translation and added faults;
+  * Refactored C300 CAMMU into separate instruction/data instances;
   * Configurable IOGA and SR bus memory access.
 - dp8510: Added new device emulating the National Semiconductor DP8510 BITBLT processing uni. Used in the InterPro GT family graphics boards [Patrick Mackinlay].
 - nscsi: Use CHD ident metadata for inquiry [Patrick Mackinlay].
 - Aristocrat MK5 updates [Roberto Fresca]:
-  * Redumped the following sets so they have correct checksums and boot: Inca Sun (DHG1577, US), Loco Loot (AHG1513, US), Unicorn Dreaming (BHG1584, US).
+  * Redumped the following sets so they have correct checksums and boot: "Inca Sun (DHG1577, US)", "Loco Loot (AHG1513, US)", "Unicorn Dreaming (BHG1584, US)";
   * Removed Margarita Magic set 2 found to be a corrupt dump.
 - riscpc: Fixed ROM load for rpc600 [R. Belmont].
 - twinkle: Made many fixes to waveram banking and DMA - most sets are semi-playable now [R. Belmont, Sarah Purohit].
 - gba: Added various mirrors and fixed byte-wide VRAM/PRAM/OAM access [R. Belmont].
 - fmtowns improvements [r09]:
-  * Improved horizontal scrolling/positioning.
-  * Fixed mouse cursor moving on its own in Data West games.
-  * Implemented half-size sprites and sprite rotation.
+  * Improved horizontal scrolling/positioning;
+  * Fixed mouse cursor moving on its own in Data West games;
+  * Implemented half-size sprites and sprite rotation;
   * Fixed kana input and identified missing keys.
 - tmS9995: Fixed debugger do command (thanks to Ryan Holtz) [Robbbert].
 - Cortex: Made system usable although not complete [Robbbert].
@@ -285,14 +285,14 @@ Source changes:
 - mc1502: Added BIOS 7.2 and TODO list [shattered]..
 - agat7: Added 840KB floppy HLE and made some minor fixes, can be considered working [shattered].
 - twinkle updates [smf]:
-  * Changed RF5C400 clock to match notes added 8MB of dummy RAM to the RF5C400, and adjusted the banking so sounds play correctly.
+  * Changed RF5C400 clock to match notes added 8MB of dummy RAM to the RF5C400, and adjusted the banking so sounds play correctly;
   * Improved LED font from available reference sources, mapped lamps and DIP switches, and added basic internal artwork [smf].
 - twinkle: Changed security card padding from 0x00 to 0xff, added dumps for 4th and 5th, and scrubbed serial numbers [smf, Guru].
 - RF5C400 updates [smf]:
-  * Converted to use device_rom_interface.
-  * Save/restore the external memory registers.
-  * Moved static variable into device state.
-  * Fix the commented out osd_printf_debug.
+  * Converted to use device_rom_interface;
+  * Save/restore the external memory registers;
+  * Moved static variable into device state;
+  * Fix the commented out osd_printf_debug;
   * Added skeleton for reading and writing channel register 0x0F (used by beatmania IIDX games).
 - Refactored 680x0 so that member variables aren't public [smf].
 - Stopped save and load logging timers unless VERBOSE is set [smf].
@@ -300,17 +300,17 @@ Source changes:
 - atlantis/vegas: Fixed banking for DENVER and DSIO DCS audio [Ted Green].
 - et3400: Added better layout views including display labels and clickable keypad (github issue #2862) [Vas Crabb].
 - arm7 changes:
-  * Fixed misaligned 16-bit loads (thanks to MoochMcGee for report) [Vas Crabb].
-  * Made IGS036 CPU derive from ARM946 (ARM9 implementation of ARMv5T with MPU) [David Haywood].
-  * Made LDMIA/STMIA align to 32-bit boundary [endrift, R. Belmont].
+  * Fixed misaligned 16-bit loads (thanks to MoochMcGee for report) [Vas Crabb];
+  * Made IGS036 CPU derive from ARM946 (ARM9 implementation of ARMv5T with MPU) [David Haywood];
+  * Made LDMIA/STMIA align to 32-bit boundary [endrift, R. Belmont];
   * Made misaligned memory accesses match ARM9 behaviour [MetalliC].
 - pgm2.cpp changes:
-  * Made RTC tick and removed now-unnecessary patch from orleg2 [MetalliC].
-  * Documented debug features [MetalliC].
-  * Made igs036 emulation use uploaded decryption tables for kov2nl and orleg2 [David Haywood].
-  * Use sprite decryption keys uploaded by games where we have internal ROM [MetalliC, David Haywood].
-  * ICRW sim improvements [MetalliC, Lord Nightmare].
-  * Converted memory card to an image device and added default card images to ROM sets [MetalliC, David Haywood].
+  * Made RTC tick and removed now-unnecessary patch from orleg2 [MetalliC];
+  * Documented debug features [MetalliC];
+  * Made igs036 emulation use uploaded decryption tables for kov2nl and orleg2 [David Haywood];
+  * Use sprite decryption keys uploaded by games where we have internal ROM [MetalliC, David Haywood];
+  * ICRW sim improvements [MetalliC, Lord Nightmare];
+  * Converted memory card to an image device and added default card images to ROM sets [MetalliC, David Haywood];
   * Allow ddpdojh to run code from RAM rather than treating RAM as ROM [David Haywood].
 - Fixed Batrider's audio CPU clock (should be 32MHz/6) [Alex Marshall].
 - mario.cpp: Verified marioo is revision G, and identified unknown PROM as main CPU memory map decoding PROM [Bryan McPhail].
@@ -329,8 +329,7 @@ Source changes:
 - compc.cpp, pc10iii: Added BIOS v4.35c and matching character generator ROM [rfka01].
 - tispeak: Added correct Speak & Spell 1978 MCU ROM [Sean Riddle].
 - segae.cpp: Corrected ROM labels for 'Hang On Jr.' [ShouTime].
-- Corrected years for a number of systems [sjy96525]:
-  * 'Galaxian 3 - Theater 6: Project Dragoon', 'Galaxian 3 - Theater 6 J2: Attack of The Zolgear', 'LD Mahjong #4 Shabon-Dama', 'Master's Golf', 'Correct Operation Thunder Hurricane', 'Paca Paca Passion', 'Panic Park', 'Soreike! Anpanman Popcorn Factory', 'Virtua Striker 2 '99'.
+- Corrected years for a number of systems: "Galaxian 3 - Theater 6: Project Dragoon", "Galaxian 3 - Theater 6 J2: Attack of The Zolgear", "LD Mahjong #4 Shabon-Dama", "Master's Golf", "Correct Operation Thunder Hurricane", "Paca Paca Passion", "Panic Park", "Soreike! Anpanman Popcorn Factory", "Virtua Striker 2 '99" [sjy96525].
 - Improved controls for 'Landing Gear', 'Hyper Bishi Bashi Champ', and 'Salary Man Champ' [sjy96525].
 - Raise a fatal error if lua console is requested but the console plugin is not found (rather than crashing) [Sylvain Glaize].
 - cdi.cpp: Decapped and dumped quizard3 MCU [Team Europe].

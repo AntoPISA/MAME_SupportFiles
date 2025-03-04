@@ -2,19 +2,7 @@
 -----------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
-- 00148: [Sound] (mappy.cpp) todruaga: The sound of the first credit is not played (Angelo Salese)
-- 07379: [Interface] artwork: Automatically computed group bounds behaviour is not intuitive (Vas Crabb)
-- 07382: [Debugger] Hang and memory leak when using save command (hap)
-- 07388: [Graphics] (sms.cpp) smsj: Default view does not display video in OpenGL mode (hap)
-- 07396: [DIP/Input] (tmnt.cpp) tmnt24pu: Start buttons do not work (Tafoid)
-- 07398: [Crash/Freeze] (goldstar.cpp) mbs2euro: Exception at emulation start (AJR)
-- 07400: [Interface] clickable artwork: Dummy input listener is ignored (hap)
-- 07401: [Graphics] (nemesis.cpp) salamand and clones: Sprite flickers randomly (hap)
-
-
-New working machines
+New Working Machines
 --------------------
 The Destroyer From Jail (Korea) [system11, Angelo Salese, The Dumping Union]
 DVW Microelectronics Husky [Nigel Barnes, Phill Harvey-Smith]
@@ -28,7 +16,7 @@ Hegener + Glaser Mephisto Mondial 68000XL [Sandro Ronco, Berger]
 Potten's Poker stealth with Breakout front game [Roberto Fresca, Grull Osgo, Pako Ortiz, Rockman, Recreativas.org]
 SciSys Superstar 28K [hap, Berger]
 
-New working clones
+New Working Clones
 ------------------
 Block Out (Europe and Oceania) [ClawGrip, Recreativas.org]
 Commando (bootleg set 3) [Guru]
@@ -51,7 +39,7 @@ Street Fighter II': Champion Edition (RE, bootleg) [ClawGrip, hammy]
 Super Shanghai Dragon's Eye (Korea) [TeamEurope, Brian Troha, The Dumping Union]
 Victor 5 [Roberto Fresca, TeamEurope]
 
-Machines promoted to working
+Machines Promoted to Working
 ----------------------------
 Birdie Try (Japan revision 2) [Dirk Best, TeamEurope, Ivan Vangelista]
 Casino Poker (Ver PM88-01-21, German) [Roberto Fresca, TeamEurope]
@@ -62,12 +50,12 @@ SciSys / Novag Chess Champion: Super System III [hap, Berger, MikeChess]
 SD Gundam Sangokushi Rainbow Tairiku Senki (Japan) [Angelo Salese]
 Tatung Einstein 256 [Nigel Barnes, jltursan]
 
-Clones promoted to working
+Clones Promoted to Working
 --------------------------
 SD Gundam Sangokushi Rainbow Tairiku Senki (Korea) [Angelo Salese]
 SWTPC swtpc S/09 Sbug + piaide [68bit]
 
-New machines marked as NOT_WORKING
+New Machines Marked as NOT_WORKING
 ----------------------------------
 Bonus Poker (Atronic) [Priit Laes]
 Bubble Torneo [TeamEurope]
@@ -83,7 +71,7 @@ SNES 4 Slot arcade switcher [ClawGrip, Roberto Fresca, Recreativas.org, The Dump
 Wanted (Sega) [Jamesv833, SeanC]
 Wild Thing (Atronic) [Priit Laes]
 
-New clones marked as NOT_WORKING
+New Clones Marked as NOT_WORKING
 --------------------------------
 Cyclopes (11/85) [IPDB, PinMame]
 Fish Tales (P-2) [IPDB, PinMame]
@@ -108,7 +96,7 @@ El Trebol de la Suerte (Bellfruit) (Adder 5) [TeamEurope, jordigahan, ClawGrip]
 WWF Royal Rumble (1.03 French) [IPDB, PinMAME]
 Yamaha MU100B [Alexander Troosh, R. Belmont]
 
-New working software list additions
+New Working Software List Additions
 -----------------------------------
 apple2_flop_clcracked:
   The Addition Facts (cleanly cracked), Algebra Volume 3 (Version 1.0, 10 June 1982) (cleanly cracked), BackAid (cleanly cracked),
@@ -275,7 +263,7 @@ vsmile_cart:
   Scooby-Doo! - Griezelen in het Pretpark (Netherlands), V.Smile Mein erster Mausklick (Germany),
   Walt Disney's Assepoester - De wonderwereld van Assepoester (Netherlands) [TeamEurope]
 
-New NOT_WORKING software list additions
+New NOT_WORKING Software List Additions
 ---------------------------------------
 ibm5150:
   Bobo, Captain Blood, Olivetti Prodest PC1 Games Collection 1, Olivetti Prodest PC1 Games Collection 6,
@@ -311,39 +299,51 @@ vsmilem_cart:
   Nickelodeon Wonder Pets! - Save the Animals! (UK), Sport Games (Netherlands) [TeamEurope]
 
 
+MAMETesters Bugs Fixed (8):
+---------------------------
+- 00148: [Sound] (mappy.cpp) todruaga: The sound of the first credit is not played (Angelo Salese)
+- 07379: [Interface] artwork: Automatically computed group bounds behaviour is not intuitive (Vas Crabb)
+- 07382: [Debugger] Hang and memory leak when using save command (hap)
+- 07388: [Graphics] (sms.cpp) smsj: Default view does not display video in OpenGL mode (hap)
+- 07396: [DIP/Input] (tmnt.cpp) tmnt24pu: Start buttons do not work (Tafoid)
+- 07398: [Crash/Freeze] (goldstar.cpp) mbs2euro: Exception at emulation start (AJR)
+- 07400: [Interface] clickable artwork: Dummy input listener is ignored (hap)
+- 07401: [Graphics] (nemesis.cpp) salamand and clones: Sprite flickers randomly (hap)
+
+
 Source changes:
 ---------------
 - wd_fdc.cpp: Allow SSO signal to be routed by driver for cases where it isn't used to select side [68bit].
 - bus/ss50: Added support for additional SS-30 cards. MP-T timer/counter, MP-S2 dual serial interface, SS-30 DC5 floppy disk interface, PIA IDE hard disk interface [68bit].
 - swtpc09.cpp updates [68bit]:
-  * Added support for UniFLEX floppy disk image files.
-  * Added SS-30 bus, and removed peripherals on SS-30 cards from driver.
-  * Fixed banked memory implementation.
-  * Added configuration options for CPU clock speed variations, and SWTBUG patches needed for floppy support.
+  * Added support for UniFLEX floppy disk image files;
+  * Added SS-30 bus, and removed peripherals on SS-30 cards from driver;
+  * Fixed banked memory implementation;
+  * Added configuration options for CPU clock speed variations, and SWTBUG patches needed for floppy support;
   * Added DC5 floppy controller as default slot option.
 - formats/flex_dsk.cpp: Re-wrote using wd177x_format as a base class. Now supports single- and double-density disks, dynamically identifies boot sector IDs, and writing image files [68bit].
 - Made debugger memory views show correct data when chunks are too small for the space's address shift [AJR].
 - unidasm updates [AJR]:
-  * Added r65c02, score7, unsp12 and unsp20 support.
+  * Added r65c02, score7, unsp12 and unsp20 support;
   * Fixed address shift for scudsp and hd61700.
 - upd7810: Fixed breakpoints, and added notes [AJR].
 - trocana: Added preliminary MSM6650 device and some test inputs [AJR].
 - Reverted change making SGI CD-ROM identify as a hard disk, as it causes indy_4610 to fail its SCSI test [AJR].
 - m65c02, r65c02: Corrected memory access patterns for read-modify-write instructions [AJR].
 - cosmac updates [AJR, hap]:
-  * Added preliminary CDP1804/CDP1805/CDP1806 emulation.
-  * Added disassembler support for CDP1805 with extended instruction set.
-  * Changed register names to use conventional decimal numbering.
+  * Added preliminary CDP1804/CDP1805/CDP1806 emulation;
+  * Added disassembler support for CDP1805 with extended instruction set;
+  * Changed register names to use conventional decimal numbering;
   * Attach following byte to disassembly of OUT instruction when P=X.
 - mc68hc11: Add internal latches and direction registers for ports [AJR]:
-  * Split up internal peripheral register handler functions and made separate I/O maps for each model.
+  * Split up internal peripheral register handler functions and made separate I/O maps for each model;
   * Removed now-unnecessary read-back handlers from skeetsht.cpp and taitojc.cpp.
 - Added device emulation for DS17x85 series of MC146818-compatible real-time clocks with additional features [AJR].
 - pasopia.cpp: Corrected clocks and metadata [AJR].
 - mbs2euro: Fixed graphics corruption and possible crashes when attempting to draw outside screen bounds [AJR].
 - legionna.cpp: Fixed sprite priorities for Seibu Cup Soccer and SD Gundam Sangokushi Rainbow [Angelo Salese].
 - seibucop.cpp fixes for SD Gundam Sangokushi Rainbow [Angelo Salese]:
-  * Identified sprite priority bit for command $c480 (fixes third level mid-boss being submerged while touching ground layers).
+  * Identified sprite priority bit for command $c480 (fixes third level mid-boss being submerged while touching ground layers);
   * Disable sprite DMA destination increment if X positions are outside expected ranges (fixes sprite clipping).
 - riscpc.cpp: Fixed a bug with force IRQ - rpc700 now reaches supervisor prompt [Angelo Salese].
 - galaxold.cpp: Fixed stage 3 invisible bullets in Strategy X [Angelo Salese].
@@ -351,11 +351,11 @@ Source changes:
 - pc9801.cpp: Added proper support for Memory Switch (MEMSW) device [Angelo Salese].
 - h6280.cpp: Don't overwrite current timer value when writing to timer preload register [Angelo Salese].
 - VRender0 device refactoring [Angelo Salese]:
-  * Improved encapsulation of video and other conceptually independent on-board peripherals.
-  * Moved drivers for different VRender0-based machines out of crystal.cpp to their own source files.
-  * Untangled reads/writes to draw/display memory bank switches from screen_update - can run un-throttled now.
-  * Added CRT controller raw screen parameters.
-  * Implemented DMA hold feature and IRQ on mask writes, used by P's Attack.
+  * Improved encapsulation of video and other conceptually independent on-board peripherals;
+  * Moved drivers for different VRender0-based machines out of crystal.cpp to their own source files;
+  * Untangled reads/writes to draw/display memory bank switches from screen_update - can run un-throttled now;
+  * Added CRT controller raw screen parameters;
+  * Implemented DMA hold feature and IRQ on mask writes, used by P's Attack;
   * Improved Cross Puzzle Flash loading (currently fails POST with a SPU error).
 - nexus3d.cpp: Added some preliminary work - will do some VRender3D pipeline fill with a debug trick [Angelo Salese].
 - axc51-core: Added disassembler support for AX208 internal ROM symbols [anonymous].
@@ -367,8 +367,8 @@ Source changes:
 - Worked around [[nodiscard]] warning for std::basic_string::c_str() [Billy Robert O'Neal III].
 - nmk16.cpp: Reduced redundant code and updated notes [cam900].
 - 315_5313.cpp updates [cam900]:
-  * Derive refresh rate and timer from input clock.
-  * Simplified DMA behaviour and updated megacd.cpp and mega32x.cpp as appropriate.
+  * Derive refresh rate and timer from input clock;
+  * Simplified DMA behaviour and updated megacd.cpp and mega32x.cpp as appropriate;
   * Suppressed read side effects for debugger, cleaned up code, and expanded notes.
 - megadriv.cpp, segac2.cpp, calcune.cpp: Corrected screen refresh rate and added notes [cam900].
 - megadriv.cpp: Added support for Z80 VDP access, and corrected VDP sound balance [cam900].
@@ -380,12 +380,12 @@ Source changes:
 - policetr.cpp: Let RAMDAC device handle palette writes - trampolines in driver are no longer needed [David Haywood].
 - spectrum_cass.xml: Corrected and cleaned up metadata [David Haywood].
 - bionicc: Cleaned up driver [Dirk Best]:
-  * Cleaned up notes and add to-do list.
-  * Changed non-maskable interrupts to use pulse_input_line.
-  * Documented coin lockout and attribute RAM layout.
+  * Cleaned up notes and add to-do list;
+  * Changed non-maskable interrupts to use pulse_input_line;
+  * Documented coin lockout and attribute RAM layout;
   * Corrected layer to use 3-bit color.
 - Added driver for Estron Juku E501 [Dirk Best]:
-  * Implemented timers, keyboard, and 5.25" floppy drives.
+  * Implemented timers, keyboard, and 5.25" floppy drives;
   * Added single- and double-sided CP/M floppy formats.
 - ml20: Add keypad input, placeholder speaker and DIP switches, and a simple internal layout. Also added additional logging and started documenting CPU ports [Dirk Best].
 - dec0.cpp Dumped birdtry microcontroller and replaced simulation [Dirk Best, TeamEurope, Ivan Vangelista].
@@ -393,7 +393,7 @@ Source changes:
 - limenko.cpp: Hooked up audio CPU for spotty [Dirk Best].
 - Added skeleton driver for SNES 4-Slot arcade switcher, and moved related mk3snes to new driver [Dirk Best].
 - dec8.cpp: Dumped and hooked up microcontroller for 'Last Mission' [Dirk Best, TeamEurope, Brian Troha, The Dumping Union]:
-  * Also fixed coinage settings.
+  * Also fixed coinage settings;
   * Japanese version is currently using US microcontroller program with ID byte patched.
 - luaengine.cpp: Exposed sound output buffer and sample rate to Lua scripts. Also corrected some documentation [feos].
 - imgtool: Added Thomson BASIC tokenizer, implemented Thomson BASIC, and fixed passing --filter= to get verb. Thanks to Adrien Destugues for information about the format in bastok.cpp [hadess].
@@ -403,17 +403,17 @@ Source changes:
 - ti99: Changed busmouse to push updates when inputs change, and routed extra mouse button to a separate input line [Michael Zapf].
 - Enabled default move constructor/assignment operator in core_options, and changed plugin_options code to use them [Nathan Woods].
 - Refactored info XML creation code to improve performance [Nathan Woods]:
-  * Allowed machine info fragments to be generated in parallel.
-  * Changed formatting code to use I/O streams, and reduced redundant code.
+  * Allowed machine info fragments to be generated in parallel;
+  * Changed formatting code to use I/O streams, and reduced redundant code;
   * Sort filtered devices lexically by short name.
 - Added -attach_window command-line option on Windows to use an existing window as the first emulation window [Nathan Woods].
 - LUA engine updates [Nathan Woods]:
-  * Added a function to instruct MAME to capture input when any input window sharing a thread with an emulation window has focus.
-  * Added a mechanism for Lua plugins to configure mandatory image devices.
-  * Exposed input device classes, devices and device items.
-  * Changed seq_poll_start to take the input item class as a string.
-  * Added a hook before settings are loaded, allowing default input port values to be changed.
-  * Exposed additional ioport_field properties, and exposed input sequence cleaning functionality.
+  * Added a function to instruct MAME to capture input when any input window sharing a thread with an emulation window has focus;
+  * Added a mechanism for Lua plugins to configure mandatory image devices;
+  * Exposed input device classes, devices and device items;
+  * Changed seq_poll_start to take the input item class as a string;
+  * Added a hook before settings are loaded, allowing default input port values to be changed;
+  * Exposed additional ioport_field properties, and exposed input sequence cleaning functionality;
   * Exposed ioport_manager::type_group() and ioport_field::keyboard_codes().
 - Properly named the CoCo joysticks "Right Joystick" and "Left Joystick" [Nathan Woods].
 - einstein.cpp: Replaced einst256 bad MOS ROM with a good dump, and implemented the rest of the machine [Nigel Barnes, jltursan].
@@ -423,8 +423,8 @@ Source changes:
 - hunter2.cpp: Added appropriate RAM size options, and minor keyboard corrections [Nigel Barnes].
 - hd61830: Make number-of-characters command to round up to an even number [Nigel Barnes].
 - mindset.cpp updates [O. Galibert]:
-  * Added 400-high modes, corrected LEDs, added blitter fast mode, and added sound.
-  * Fixed transparent blit.
+  * Added 400-high modes, corrected LEDs, added blitter fast mode, and added sound;
+  * Fixed transparent blit;
   * Added modules, and implemented stereo sound module.
 - mindset.cpp: Fixed the CPU speed, and implemented RS-232 module RS-232 module is missing interrupt support for now [O. Galibert, Al Kossow].
 - atronic.cpp: Identified CPU type and fixed ROM loading [Priit Laes].
@@ -437,16 +437,16 @@ Source changes:
 - Fixed build on Solaris 2.11 (non-Oracle) [Rick V].
 - midvunit.cpp: Added stubs for linking support [Risugami].
 - subsino.cpp updates [Roberto Fresca, TeamEurope]:
-  * Added Victor 5 and Victor 21 speech emulation.
-  * Added missing sample ROM dumps.
+  * Added Victor 5 and Victor 21 speech emulation;
+  * Added missing sample ROM dumps;
   * Confirmed the bipolar PROM dump for 'Victor 5'.
 - pokerout.cpp: Added ASCII PCB layout, and expanded notes [Roberto Fresca].
 - dpb_brushproc: Hooked up 20L10 PAL and the remainder of logic (not untested) [Ryan Holtz].
 - SGI Newport graphics updates [Ryan Holtz]:
-  * Re-implemented logging code for external viewer.
-  * Fixed 8-BPP overlay bit combination.
-  * Fixed broken blending.
-  * Added bit lane expansion, needed for proper double-buffered accesses.
+  * Re-implemented logging code for external viewer;
+  * Fixed 8-BPP overlay bit combination;
+  * Fixed broken blending;
+  * Added bit lane expansion, needed for proper double-buffered accesses;
   * Simplified default color accesses.
 - dsp56k: Renamed relevant classes, files and namespaces to indicate that it emulates the DSP56156 (not the DSP5600x) [Ryan Holtz].
 - sec: Converted Barcrest/Bell Fruit Serial Electronic Counter (SEC) to a proper MAME device [Ryan Holtz].

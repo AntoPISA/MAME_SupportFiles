@@ -2,24 +2,7 @@
 -----------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
-- 05177: [Crash/Freeze] (studio2.cpp) All studio2 variants: Memory map does not support cartridges larger than 1kB (Robbbert)
-- 05600: [Graphics] (popeye.cpp) popeye and clones: Games use interlaced video output (Couriersud)
-- 07386: [DIP/Input] (qix.cpp) zookeep, kram and clones: Unable to start game or use first coin slot (O. Galibert)
-- 07453: [DIP/Input] (spectrum.cpp) spectrum: Kempston Joystick doesn't work (TwistedTom)
-- 07472: [Crash/Freeze] (snes.cpp) snespal: When starting a game with SNES (PAL), MAME crashes (Ryan Holtz)
-- 07473: [Graphics] (snesb.cpp) All machines in snesb.cpp: Screen is black (Ivan Vangelista)
-- 07479: [Graphics] (cave.cpp) ddonpach, ddonpachj, donpacha: Graphical bug in attract mode (cam900)
-- 07480: [Sound] (apple2.cpp) mockingboard enabled software: No sound from second AY8913 Mockingboard (Ivan Vangelista)
-- 07487: [Core] (30test.cpp) 30test: Issues with inputs, sound and gameplay (AJR)
-- 07489: [Documentation] tekken4 and clones: Release year is incorrect (PepsiBoy428)
-- 07492: [DIP/Input] (ssrj.cpp) ssrj: Difficulty setting inputs are incorrect (sasuke)
-- 07495: [Crash/Freeze] (segas32.cpp) spidmanj: MAME crashes after few seconds of emulation (Ryan Holtz)
-- 07496: [Media Support] (apple2e.cpp) apple2e and clones: Error when trying to use .NIB disk images (R. Belmont)
-
-
-New working machines
+New Working Machines
 --------------------
 Bit Corporation Bit90 [Frank Palazzolo]
 Cane [Jean Paul Piccato, Adolfo Melilli, Alessandro Bolgia, Lorenzo Fongaro, Piero Andreini]
@@ -29,7 +12,7 @@ Orbite [Jean Paul Piccato, Adolfo Melilli, Alessandro Bolgia, Lorenzo Fongaro, P
 Pinball (P8002, ABL TV Game) [David Haywood, Morten Shearman Kirkegaard, Peter Wilhelmsen]
 RS-232 DCE-DCE Bridge [Vas Crabb]
 
-New working clones
+New Working Clones
 ------------------
 Berzerk (revision RC31A) [Kevin Eshbach, The Dumping Union]
 Cadillacs and Dinosaurs (bootleg with PIC16C57, set 3) [TwistedTom]
@@ -53,7 +36,7 @@ Verbena (bootleg of Carnival) [Recreativas.org]
 Zenith Data Systems Z-150 series [rfka01]
 Zenith Data Systems Z-160 series [rfka01]
 
-Machines promoted to working
+Machines Promoted to Working
 ----------------------------
 Ericsson Information System Ericsson PC [Edstrom]
 Intec InterAct 8-in-1 [David Haywood, BeckyRGB]
@@ -63,7 +46,7 @@ Super Triv (English questions) [Ivan Vangelista]
 Wanted (Sega) [Angelo Salese]
 Who Wants to Be a Millionaire? (Play Vision, Plug and Play, UK) [David Haywood, Morten Shearman Kirkegaard, Peter Wilhelmsen]
 
-New machines marked as NOT_WORKING
+New Machines Marked as NOT_WORKING
 ----------------------------------
 Air-Blaster Joystick (AB1500, PAL) [David Haywood, Morten Shearman Kirkegaard, Peter Wilhelmsen]
 Ampro Computers Little Board/PC [Don Maslin Archive]
@@ -88,7 +71,7 @@ VTech DynamiDesk (Germany) [TeamEurope]
 VTech Mis Primeras Lecciones (Spain) [ClawGrip]
 Yu-Gi-Oh Monster Capsule [SpinalFeyd, R. Belmont]
 
-New clones marked as NOT_WORKING
+New Clones Marked as NOT_WORKING
 --------------------------------
 286 motherboards with Suntac ST62C303-A chipset [rfka01]
 Abit AB-AH4 [rfka01]
@@ -117,7 +100,7 @@ Video Technology PreComputer 2000 (Spain) [ClawGrip]
 VTech Pitagorin [ClawGrip]
 Wang Laboratories, Inc. PC-250/16 [rfka01]
 
-New working software list additions
+New Working Software List Additions
 -----------------------------------
 apple2_flop_clcracked:
   Certificates and More! (cleanly cracked), The Cosmic Balance (cleanly cracked), Empire III: Armageddon (Version 1.1) (cleanly cracked), Fractions: Addition (cleanly cracked), Labyrinth of Crete (cleanly cracked), Labyrinth: The Computer Game (Lucasfilm Games) (cleanly cracked), MECC-A315 Freedom! (Version 1.0) (cleanly cracked), Questron (cleanly cracked), The Tournament Manager (cleanly cracked) [4am, Firehawke]
@@ -153,7 +136,7 @@ studio2: RCA demo [Robbbert]
 visicom: Gambler I, Gambler II, Sansuu Drill, Space Command [unknown]
 vsmile_cart: Spider-Man & Freunde - Geheime Missionen (Germany) [TeamEurope]
 
-Software list items promoted to working
+Software List Items Promoted to Working
 ---------------------------------------
 bbcm_cart: Master Smart Cartridge [Nigel Barnes, Center for Computing History]
 gameking:
@@ -165,109 +148,125 @@ gameking:
 gameking3: Adventure, Urgent Action [AJR]
 sms: Sonic the Hedgehog Chaos (Euro, "Ver 0.20", prototype 19930630) [Hidden Palace]
 
-New NOT_WORKING software list additions
+New NOT_WORKING Software List Additions
 ---------------------------------------
 bbc_rom:
   GoMMC Tools 0.72, GoMMC Tools 0.80, GoMMC Tools 1.03, Prestel Trial 4.71r, Super MMC, Turbo MMC 0.A1, UMI-2B 5.01 [Nigel Barnes]
 picno: Anime Box, Fushigi no Kuni no Alice, Son Goku no Boken [Vyse the determined @ Gaming Sanctuary, SSJ, TeamEurope]
 
 
+MAMETesters Bugs Fixed (13):
+----------------------------
+- 05177: [Crash/Freeze] (studio2.cpp) All studio2 variants: Memory map does not support cartridges larger than 1kB (Robbbert)
+- 05600: [Graphics] (popeye.cpp) popeye and clones: Games use interlaced video output (Couriersud)
+- 07386: [DIP/Input] (qix.cpp) zookeep, kram and clones: Unable to start game or use first coin slot (O. Galibert)
+- 07453: [DIP/Input] (spectrum.cpp) spectrum: Kempston Joystick doesn't work (TwistedTom)
+- 07472: [Crash/Freeze] (snes.cpp) snespal: When starting a game with SNES (PAL), MAME crashes (Ryan Holtz)
+- 07473: [Graphics] (snesb.cpp) All machines in snesb.cpp: Screen is black (Ivan Vangelista)
+- 07479: [Graphics] (cave.cpp) ddonpach, ddonpachj, donpacha: Graphical bug in attract mode (cam900)
+- 07480: [Sound] (apple2.cpp) mockingboard enabled software: No sound from second AY8913 Mockingboard (Ivan Vangelista)
+- 07487: [Core] (30test.cpp) 30test: Issues with inputs, sound and gameplay (AJR)
+- 07489: [Documentation] tekken4 and clones: Release year is incorrect (PepsiBoy428)
+- 07492: [DIP/Input] (ssrj.cpp) ssrj: Difficulty setting inputs are incorrect (sasuke)
+- 07495: [Crash/Freeze] (segas32.cpp) spidmanj: MAME crashes after few seconds of emulation (Ryan Holtz)
+- 07496: [Media Support] (apple2e.cpp) apple2e and clones: Error when trying to use .NIB disk images (R. Belmont)
+
+
 Source changes:
 ---------------
 - swtpc8212.cpp updates [68bit]:
-  * Added MCM66750 character generator ROM, implemented video row update function, and added I/O.
+  * Added MCM66750 character generator ROM, implemented video row update function, and added I/O;
   * Converted to device so the terminal can be used as an RS-232 slot device as well as a stand-alone machine.
 - swtpc8212.cpp, tv990.cpp: Cleaned up use of PORT_CHANGED_MEMBER macro [68bit].
 - mekd1.cpp, mekd3.cpp, mekd4.cpp and mekd5.cpp updates [68bit]:
-  * Added port changed handlers for RS-232 control signal routing options.
+  * Added port changed handlers for RS-232 control signal routing options;
   * Added save state support and cleaned up code.
 - wd1000.cpp: Added save state support [68bit].
 - swtpc.cpp: Added port changed handler for CPU clock speed option, and cleaned up code [68bit].
 - swtpc09.cpp updates [68bit]:
-  * Added port changed handlers for CPU clock speed, floppy drive controller clock speed, and Baud rate options.
+  * Added port changed handlers for CPU clock speed, floppy drive controller clock speed, and Baud rate options;
   * Added save state support and cleaned up code.
 - bus/ss50 updates [68bit]:
-  * dc5.cpp: Added port changed handlers for configuration options, added save state support, and cleaned up code.
-  * mps.cpp: Added port changed handlers for RS-232 control line routing options, added save state support, and cleaned up code.
-  * mps2.cpp: Organised Baud rate settings in ascending order.
+  * dc5.cpp: Added port changed handlers for configuration options, added save state support, and cleaned up code;
+  * mps.cpp: Added port changed handlers for RS-232 control line routing options, added save state support, and cleaned up code;
+  * mps2.cpp: Organised Baud rate settings in ascending order;
   * mpt.cpp, piaide.cpp: Added save state support and cleaned up code.
 - qvt102.cpp updates [68bit]:
-  * Replaced perfect quantum setting by boosting interleave on keyboard data transmission.
+  * Replaced perfect quantum setting by boosting interleave on keyboard data transmission;
   * Improved keyboard matrix emulation, cleaned up code and added notes.
 - cpu/rsp: Added 32-bit opcode alignment for disassembly [AJR].
 - cpu/m68000: Improved cycle counts for SCC68070, and further distinguished it from the MC68000 and MC68010 [AJR].
 - cpu/m6502: Added preliminary Sitronix ST2204/ST2205U system-on-a-chip emulation [AJR].
 - gameking.cpp updates [AJR]:
-  * Fixed directional controls.
+  * Fixed directional controls;
   * Added gamekin3 LCD color filter emulation, and corrected clock speed based on timer initialization.
 - cpu/i86: Fixed pathological case where jumping into pages of 0xFF-prefixed invalid opcodes could cause MAME to lock up [AJR].
 - cpu/f8: Moved internal scratchpad register memory to an address space [AJR].
 - cpu/nec updates [AJR]:
-  * Implemented v5x internal/external timer clock input selection.
+  * Implemented v5x internal/external timer clock input selection;
   * Internalized CPU clock divider for V40/V50.
 - mc68hc11 updates [AJR]:
-  * Added internal clock divider.
-  * Fixed size of fetched operand for ADDD indexed modes.
+  * Added internal clock divider;
+  * Fixed size of fetched operand for ADDD indexed modes;
   * Emulated FDIV instruction.
 - cpu/m6502: Corrected 65C02 opcode timing and bus usage [AJR]:
-   * BBR and BBS use one or two extra cycles when the branch is taken (like other conditional branches).
+  * BBR and BBS use one or two extra cycles when the branch is taken (like other conditional branches);
   * TRB and TSB perform an extra read of the operand instead of an extra write.
 - ms32.cpp: Fixed hayaosi3 final round and flame text priorities [Angelo Salese].
 - Added option to throttle after video update rather than before (-lowlatency or -lolat). Reduces input latency when enabled, but may cause input latency and frame interval jitter for some emulated systems [Antonio Giner].
 - Updated to latest upstream bgfx, bx and bimg, and updated shaders to use of helper function ensuring correct matrix orientation [Belegdol].
 - snes_ppu.cpp: Ported over more of the bsnes ppu-fast implementation - fixes many bugs, possibly causes more [byuu, Ryan Holtz].
-- 315_5124.cpp, 315_5313.cpp, megaplay.cpp: Added support for scaling layers to least common multiple horizontal resolution [cam900].
-  * Corrects size/position of MegaPlay overlay.
+- 315_5124.cpp, 315_5313.cpp, megaplay.cpp: Added support for scaling layers to least common multiple horizontal resolution. Corrects size/position of MegaPlay overlay [cam900].
 - 315_5124.cpp: Updated color palette based on hardware measurements, and added notes [cam900].
 - es5506.cpp: Implemented differences between ES5505 and ES5506 based on documentation, and cleaned up code [cam900].
 - cpu/nec/v5x.cpp: Moved re-mappable I/O handlers into a separate address space, and fixed re-mapping behavior [cam900].
 - mb8421.cpp: Added support for similar devices with different address and data widths [cam900]:
-  * Updated twinkle.cpp and firebeat.cpp to use new CY7C131 device.
+  * Updated twinkle.cpp and firebeat.cpp to use new CY7C131 device;
   * Added placeholder IDT7130 device to esqmr.cpp.
 - tmap038.cpp: Fixed tile size check and moved mirroring into driver-supplied address maps (fixes MT07479) [cam900].
 - bgfx renderer updates [Couriersud]:
-  * Added support for disabling waiting for vertical blanking interval to bgfx Vulkan back-end.
+  * Added support for disabling waiting for vertical blanking interval to bgfx Vulkan back-end;
   * Fixed issue that could prevent brightness, contrast and gamma adjustments from being applied.
 - OpenGL renderer updates [Couriersud]:
-  * Fixed issue that could prevent brightness, contrast and gamma adjustments from being applied.
+  * Fixed issue that could prevent brightness, contrast and gamma adjustments from being applied;
   * Fixed failure to apply line width.
 - Netlist library updates [Couriersud]:
-  * Added more C preprocessor features to netlist preprocessor, including macro parameters, stringification and token concatenation.
-  * Improved reporting of error location in netlist preprocessor.
-  * Added ability to supply the floating point type as a solver parameter.
-  * Added RELTOL and VNTOL solver parameters to control Newton convergence checks.
-  * Started adding support for parameter values containing expressions.
-  * Removed proxy and power terminal hacks and updated netlists as necessary.
-  * Removed DUMMY_INPUT (NC_PIN should be used in its place).
-  * Enabled extended validation to catch unconnected power terminals, and fixed errors this exposed.
-  * Added const and noexcept qualifiers as appropriate, and removed dead code.
+  * Added more C preprocessor features to netlist preprocessor, including macro parameters, stringification and token concatenation;
+  * Improved reporting of error location in netlist preprocessor;
+  * Added ability to supply the floating point type as a solver parameter;
+  * Added RELTOL and VNTOL solver parameters to control Newton convergence checks;
+  * Started adding support for parameter values containing expressions;
+  * Removed proxy and power terminal hacks and updated netlists as necessary;
+  * Removed DUMMY_INPUT (NC_PIN should be used in its place);
+  * Enabled extended validation to catch unconnected power terminals, and fixed errors this exposed;
+  * Added const and noexcept qualifiers as appropriate, and removed dead code;
   * Added vector output support to fixed frequency screen device.
 - nltool updates [Couriersud]:
-  * Added --fperr option to enable floating point exceptions (useful when debugging code in GDB).
+  * Added --fperr option to enable floating point exceptions (useful when debugging code in GDB);
   * Added preliminary documentation mode.
 - starfield_05xx.cpp: Added notes about Wolfgang and Jindrich's equivalent Galois LFSR implementation [Couriersud].
 - pong.cpp: Improved performance in pongf and rebound, and switched nl_pongf to dynamic time stepping [Couriersud].
 - sliders.cpp: Added support for PORT_CONDITION on PORT_ADJUSTER inputs, allowing inapplicable sliders to be hidden [Couriersud].
 - popeye.cpp: Added support for interlaced rendering (addresses MT05600) [Couriersud].
 - Elan EU3A05/EU3A14 updates [David Haywood]:
-  * Split up implementations and started identifying common features.
-  * Fixed non-split mode horizontal scrolling.
+  * Split up implementations and started identifying common features;
+  * Fixed non-split mode horizontal scrolling;
   * Disabled timer when running rad_bb3 (timer enable needs to be identified).
 - nes_vt.cpp: Split up state classes, moved VT1682-based games to a separate driver, and cleaned up code [David Haywood].
 - vii.cpp updates [David Haywood]:
-  * Added preliminary LCD controller, UART and player input emulation for sentx6p.
+  * Added preliminary LCD controller, UART and player input emulation for sentx6p;
   * Added a hack to allow tvgogo to proceed further.
 - vt1682.cpp updates [David Haywood]:
-  * Added preliminary video emulation, including sprites, X/Y scrolling and raster effects.
-  * Hooked up sound CPU and added preliminary sound support.
+  * Added preliminary video emulation, including sprites, X/Y scrolling and raster effects;
+  * Hooked up sound CPU and added preliminary sound support;
   * Added preliminary inputs (works for ii32in1).
 - cpu/i86/i86.cpp: Disabled warning message when executing instructions with lock (0xf0) prefix [Edstrom].
 - z80sio.cpp: Verified sync byte behavior in SDLC/HDLC mode, and improved logging [Edstrom].
 - i8251.cpp: Improved initialization, fixing spurious framing error on reset [Edstrom].
 - eispc.cpp updates [Edstrom]:
-  * Added preliminary 8-bit ISA card for IBM terminal emulation.
-  * Added keyboard LEDs and fixed keyboard communication, removing the need for workarounds.
-  * Improved Ericsson High-resolution Monochrome Graphics Board 1070 emulation.
+  * Added preliminary 8-bit ISA card for IBM terminal emulation;
+  * Added keyboard LEDs and fixed keyboard communication, removing the need for workarounds;
+  * Improved Ericsson High-resolution Monochrome Graphics Board 1070 emulation;
   * Fixed parallel printer port configuration.
 - alfaskop41xx.cpp: Added three skeleton drivers for various parts of the Ericsson Alfaskop 41 system. The Display Unit 4110 prints a boot prompt but that's it [Edstrom].
 - hp_ipc.cpp: Fixed 1LL3 GPU emulation bug that caused the cursor and sprites to disappear at the top and left-hand side of screen [F. Ulivi].
@@ -277,24 +276,24 @@ Source changes:
 - 315_5649.cpp: Filled out additional features for future use [MetalliC].
 - aviio.cpp: Fixed potential out-of-bounds access when the processed sound samples fill the sound sample buffer [Nathan Woods].
 - bbc.cpp updates [Nigel Barnes]:
-  * Replaced ROM/RAM banks with handlers to allow access from internal expansion boards.
-  * Added slot interface for internal expansion boards.
-  * Removed the Sideways RAM configuration option in favour of internal expansion board options.
-  * Made empty BBC Master cartridge sockets return video data on data bus.
-  * bbcb: Added many internal ROM/RAM expansion boards from Aries, ATPL, Computech, Peartree, Solidisk, and Watford Electronics.
-  * bbcbp: Added ATPL Sidewise+ internal expansion board.
-  * bbcm: Added Morley Master 'AA' and Vine Micros Overlay internal expansion boards.
-  * bbcm: Added Slogger Click, Solidisk Mega 256, Peartree MR8000, and Master Smart Cartridge devices.
-  * bbcb: Added the Robin Voice Box user port device.
-  * bbcb: Added Morley Electronics RAM Disc and PMS 64K Non-Volatile Ram Module 1MHz bus devices.
-  * autoc15: Replaced HD6845 CRT controller with HD6345 (required for smooth scrolling).
+  * Replaced ROM/RAM banks with handlers to allow access from internal expansion boards;
+  * Added slot interface for internal expansion boards;
+  * Removed the Sideways RAM configuration option in favour of internal expansion board options;
+  * Made empty BBC Master cartridge sockets return video data on data bus;
+  * bbcb: Added many internal ROM/RAM expansion boards from Aries, ATPL, Computech, Peartree, Solidisk, and Watford Electronics;
+  * bbcbp: Added ATPL Sidewise+ internal expansion board;
+  * bbcm: Added Morley Master 'AA' and Vine Micros Overlay internal expansion boards;
+  * bbcm: Added Slogger Click, Solidisk Mega 256, Peartree MR8000, and Master Smart Cartridge devices;
+  * bbcb: Added the Robin Voice Box user port device;
+  * bbcb: Added Morley Electronics RAM Disc and PMS 64K Non-Volatile Ram Module 1MHz bus devices;
+  * autoc15: Replaced HD6845 CRT controller with HD6345 (required for smooth scrolling);
   * autoc15: Added Autocue RAM disc device.
 - electron: Added Wizard Sidewinder Rom Expansion Board [Nigel Barnes, Binary Dinosaurs].
 - bbcm: Added Solidisk PC-Plus co-processor [Nigel Barnes, Centre for Computing History].
 - cpu/dsp56000: Added disassembler for Motorola DSP56000 [Patrick Mackinlay].
 - apple2gs.cpp: Emulated implementation detail of Language Card inhibit in bank 01 that Music Construction Set depends on [Peter Ferrie, R. Belmont].
 - macOS support updates [R. Belmont]:
-  * Added workaround for issues with Retina displays on macOS 10.15 Catalina.
+  * Added workaround for issues with Retina displays on macOS 10.15 Catalina;
   * Changed default render module from OpenGL to bgfx in macOS builds.
 - Report SDL-provided GUID as stable controller ID when using SDL joystick provider module [R. Belmont].
 - 8080bw.cpp: Fixed selection of game B in jspecter [Robbbert].
@@ -303,43 +302,43 @@ Source changes:
 - bus/bml3: Added Hitachi Real Time Clock card [Russell Bull].
 - snes_ppu.cpp: fixed rapid vertical scrolling in rexronan and other games [Ryan Holtz].
 - bgfx renderer fixes [Ryan Holtz]:
-  * Fixed crash on emulated screen resolution changes (GitHub #5857).
-  * Fixed assertion failure on starting LaserDisc games (GitHub #5830).
-  * Fixed screen color (tint) not being applied and issues with brightness/contrast/gamma sliders (GitHub #5956).
-  * Fixed incorrect display of YUV video in LaserDisc games when using the OpenGL back-end (GitHub #5961).
+  * Fixed crash on emulated screen resolution changes (GitHub #5857);
+  * Fixed assertion failure on starting LaserDisc games (GitHub #5830);
+  * Fixed screen color (tint) not being applied and issues with brightness/contrast/gamma sliders (GitHub #5956);
+  * Fixed incorrect display of YUV video in LaserDisc games when using the OpenGL back-end (GitHub #5961),
 - screen.cpp: Only clear or allocate scan bitmaps in excess of the previous height. Fixes blank portions of snes smw2u, and possibly others [Ryan Holtz].
 - rainbow.cpp: Separated Model A and Model B into separate machine definitions rather than compile-time options [Ryan Holtz].
 - sun4 updates [Ryan Holtz]:
-  * cgsix: Added support for hardware cursor, pattern register, plane mask register, and pixel mask register.
-  * sun4c_mmu.cpp: Made generic to support sun4 MMU mode, cleaned up save state registrations, and removed redundant MMU code.
-  * sun4.cpp: Split sun4 and sun4c machines into separate derived state classes.
-  * cgsix: Hooked up SBus vertical sync interrupts.
+  * cgsix: Added support for hardware cursor, pattern register, plane mask register, and pixel mask register;
+  * sun4c_mmu.cpp: Made generic to support sun4 MMU mode, cleaned up save state registrations, and removed redundant MMU code;
+  * sun4.cpp: Split sun4 and sun4c machines into separate derived state classes;
+  * cgsix: Hooked up SBus vertical sync interrupts;
   * cgsix: Added vertical sync interrupt, added THC MISC register, and cleaned up save state registrations.
 - sparc.cpp: Renamed MB86901 to SPARCV7, and added a separate class for SPARCV8 [Ryan Holtz].
 - bt45x.cpp: Made logmacro.h usage more consistent [Ryan Holtz].
 - k007232.cpp, multipcm.cpp: Added compile-time option to log samples in WAV format [Ryan Holtz].
 - netlist: Added 7492 divide-by-twelve counter and 7442 4-line BCD to 10-line decimal decoder [Ryan Holtz].
 - CPS-1 and bootleg updates [TwistedTom]:
-  * Added C-board PAL dumps for mercs, mercsu, mercsur1, mercsj, sf2ee and sf2ue.
-  * Fixed player 4 inputs and most graphical issues in slampic bootleg.
-  * Added more DIP switch settings for sf2amf2/sf2amf3.
-  * Separated some bootlegs into derived state classes and separate source files (cps1bl_pic.cpp, fcrash.cpp).
-  * Confirmed clocks for some games.
+  * Added C-board PAL dumps for mercs, mercsu, mercsur1, mercsj, sf2ee and sf2ue;
+  * Fixed player 4 inputs and most graphical issues in slampic bootleg;
+  * Added more DIP switch settings for sf2amf2/sf2amf3;
+  * Separated some bootlegs into derived state classes and separate source files (cps1bl_pic.cpp, fcrash.cpp);
+  * Confirmed clocks for some games;
   * Added placeholders for undumped PALs/GALs used in Street Fighter II': Champion Edition Mstreet-6 bootlegs.
 - wd_fdc.cpp: Made WD1772 spin up drives on force interrupt command (GitHub #5893) [TwistedTom].
 - ZX Spectrum updates [TwistedTom]:
-  * Fixed Kempston Joystick and Didaktik Melodik sound card.
-  * Fixed Multiface One NMI clearing, and added support for Kempston Joystick port, disable switch and joystick disable jumper.
-  * Implemented floating bus read behaviour, fixing a few games that rely on it.
+  * Fixed Kempston Joystick and Didaktik Melodik sound card;
+  * Fixed Multiface One NMI clearing, and added support for Kempston Joystick port, disable switch and joystick disable jumper;
+  * Implemented floating bus read behaviour, fixing a few games that rely on it;
   * Added support for Miles Gordon Technology DISCiPLE Multi-purpose Interface and +D Disk and Printer Interface.
 - General refactoring and modernisation [Vas Crabb]:
-  * Changed device delegates to behave more like device callbacks and other object finders during configuration.
-  * Eliminated a conditional branch from the hot path when invoking a delegate set to a member function pointer.
-  * Changed emu_fatalerror constructor and fatalerror helper to use string_format semantics.
-  * Improved semantics of scheduler quantum configuration.
-  * Micro-optimised scheduler code to improve performance of systems making heavy use of timers.
-  * Moved input sequence configuration helpers out of the core input manager to a front-end helper class.
-  * Got rid of device_slot_card_interface (it provided little value), and added a helper template providing validation for slots.
+  * Changed device delegates to behave more like device callbacks and other object finders during configuration;
+  * Eliminated a conditional branch from the hot path when invoking a delegate set to a member function pointer;
+  * Changed emu_fatalerror constructor and fatalerror helper to use string_format semantics;
+  * Improved semantics of scheduler quantum configuration;
+  * Micro-optimised scheduler code to improve performance of systems making heavy use of timers;
+  * Moved input sequence configuration helpers out of the core input manager to a front-end helper class;
+  * Got rid of device_slot_card_interface (it provided little value), and added a helper template providing validation for slots;
   * Cleaned up a lot of bus/slot/card code.
 - Fixed memory leaks in Xbox USB emulation [Vas Crabb].
 - Added a workaround for nanosvg making assumptions about the global locale [Vas Crabb].
@@ -347,19 +346,19 @@ Source changes:
 - c64.cpp, c128.cpp: Fixed CBM IEC slot address not being set when replacing devices in machine configuration [Vas Crabb].
 - bus/c64/rex_ep256.cpp: Fixed array of EPROM slot devices not being populated [Vas Crabb].
 - Internal user interface updates [Vas Crabb]:
-  * Added live display of emulated analog control positions to the analog controls menu.
-  * Added live feedback to the input configuration menus, and improved input sequence configuration behaviour.
-  * Fixed regression that caused default input mappings to be displayed incorrectly.
-  * Improved layout of DIP switch display and made it scale with UI font size.
-  * Improved crosshair image selection user interface.
-  * Separated "focus next" and "config menu" actions, and implemented "focus previous" action.
-  * Fixed bug that prevented joystick or mouse inputs from being used for "focus next" action.
-  * Fixed some cases where menu heading size was not re-calculated after UI font size changes.
-  * Fixed a bug that allowed keyboard focus to move to hidden panels on the system/software selection menus.
-  * Improved presentation and responsiveness of a number of menus.
-  * Fixed endian issues, improved data locality, and reduced redundant copying and hashing in the localisation loader.
-  * Added and diagnostic output messages and validation of input data to localisation loader.
-  * Improved performance of opening debugger windows, particularly memory windows with a large number of save state registrations.
+  * Added live display of emulated analog control positions to the analog controls menu;
+  * Added live feedback to the input configuration menus, and improved input sequence configuration behaviour;
+  * Fixed regression that caused default input mappings to be displayed incorrectly;
+  * Improved layout of DIP switch display and made it scale with UI font size;
+  * Improved crosshair image selection user interface;
+  * Separated "focus next" and "config menu" actions, and implemented "focus previous" action;
+  * Fixed bug that prevented joystick or mouse inputs from being used for "focus next" action;
+  * Fixed some cases where menu heading size was not re-calculated after UI font size changes;
+  * Fixed a bug that allowed keyboard focus to move to hidden panels on the system/software selection menus;
+  * Improved presentation and responsiveness of a number of menus;
+  * Fixed endian issues, improved data locality, and reduced redundant copying and hashing in the localisation loader;
+  * Added and diagnostic output messages and validation of input data to localisation loader;
+  * Improved performance of opening debugger windows, particularly memory windows with a large number of save state registrations;
   * Made new disassembly windows default to the current CPU in the Qt debugger.
 - Removed internal auto-fire functionality, as the plug-in is the preferred solution (GitHub #5802) [Vas Crabb].
 - wavwrite.cpp: Fixed buffer overrun when supplying 32-bit stereo samples [Vas Crabb].
@@ -374,16 +373,16 @@ Source changes:
 - votrpss.cpp: Improved ROM labels and expanded notes. [Lord Nightmare].
 - cps1bl_5205.cpp, cps1bl_pic.cpp: Added parent/clone relationships for newly added bootlegs [MASH].
 - at.cpp: Added additional BIOS options [rfka01]:
-  * a486sp3g: Added v306 BIOS option.
-  * a486sp3: Added v306 and v307 BIOS options.
-  * a486sv2g: Added v306 and v402b BIOS options.
-  * alim1419: Added 386acp102 BIOS option.
+  * a486sp3g: Added v306 BIOS option;
+  * a486sp3: Added v306 and v307 BIOS options;
+  * a486sv2g: Added v306 and v402b BIOS options;
+  * alim1419: Added 386acp102 BIOS option;
   * hot433: Added wie10 and 2a4x5h21 BIOS options.
 - genpc.cpp: Added 081682 BIOS option for pc [rfka01].
 - flstory.cpp: Dumped MC68705 microcontroller for victnine and replaced simulation [ShouTime, David Haywood, Lord Nightmare].
 - gameking.xml updates [TeamEurope, David Haywood]:
-  * Re-dumped 4 in 1 Vol. 8 - 2004 + Dragon + StreetHero + Penguin.
-  * Removed bad dump of Dino Adventure Legend, and marked half-size dumps of 4-in-1 cartridges as bad.
+  * Re-dumped 4 in 1 Vol. 8 - 2004 + Dragon + StreetHero + Penguin;
+  * Removed bad dump of Dino Adventure Legend, and marked half-size dumps of 4-in-1 cartridges as bad;
   * Added cartridge connector pinout.
 - gameking3.xml: Corrected title of 'Fly Car' [TeamEurope].
 - Added workaround to allow cross-compilation for an i386 target on an x86-64 host [Tiago Pierezan Camargo].

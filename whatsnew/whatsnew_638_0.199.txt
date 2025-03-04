@@ -2,22 +2,7 @@
 -----------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
-- 06980: [Save/Restore] (spec128.cpp) specpls3: Unable to save state (regression) (AJR)
-- 06983: [Sound] (mtouchxl.cpp) mtchxl6k (possibly others): All sounds play too fast (Carl)
-- 06984: [Graphics] (esd16.cpp) jumppop, jumppope: Missing graphics in first stage (AJR)
-- 06988: [Crash/Freeze] (kinst.cpp) kinst: Hangs during Attract Mode, noticeable when a fight loads (Ivan Vangelista)
-- 06989: [Sound] (champbas.cpp) champbb2j: AY-3-8910 sound is completely missing (Vas Crabb)
-- 06992: [DIP/Input] (hornet.cpp) sscope and clones: Analog inputs do not function (Ted Green)
-- 07006: [Media Support] (at.cpp) atvga, at386, at486: [possible] Unable load Floppy Diskettes (Carl)
-- 07007: [Sound] (renegade.cpp) renegade, kuniokun: BGM stops playing after a while (AJR)
-- 07010: [DIP/Input] (missile.cpp) missile and clones: DIP switch trackball size large/mini labels reversed (Tafoid)
-- 07017: [Sound] (galaxian.cpp) kingball, kingballj: King's voice is not played correctly (Ivan Vangelista)
-- 07020: [DIP/Input] (lwings.cpp) trojan and clones: DIP switches incorrectly numbered, and info on unused DIP switches (Tafoid)
-
-
-New working machines
+New Working Machines
 --------------------
 El Fin Del Tiempo [Esther Barranco, ARPA, Juegos 2.0, Recreativas.org, Roberto Fresca, The Dumping Union]
 Geneve 9640 Mod [Michael Zapf]
@@ -26,7 +11,7 @@ Player's Edge Plus (X000827S+XS000002) Red, White & Blue Slots [Brian Troha]
 Player's Edge Plus (X002149P+XP000038) Triple Bonus Poker [Brian Troha]
 R-Zone: Battle Arena Toshinden [hap, Sean Riddle]
 
-New working clones
+New Working Clones
 ------------------
 Apple //e (Spain) [AJR]
 Bubble Memories: The Story Of Bubble Bobble III (Ver 2.5A 1996/02/21) [Arnaldo Abrantes, Pascal Costa]
@@ -47,16 +32,16 @@ Strikers 1945 (World, unprotected) [Blackfish, brizzo, rtw]
 Titan (Pac-Man hack) [Craig Anstett, CraftyMech]
 Viper Phase 1 (New Version, Germany) [Arzeno Fabrice, The Dumping Union]
 
-Machines promoted to working
-----------------------------
+Machine Promoted to Working
+---------------------------
 War Mission (WM 4/6/87) [Jordi Beltran Casany, Recreativas.org, ArcadeHacker, David Haywood]
 
-Clones promoted to working
+Clones Promoted to Working
 --------------------------
 Head On (Sidam bootleg, set 2) [Angelo Salese]
 Head On 2 (Sidam bootleg) [Angelo Salese]
 
-New machines marked as NOT_WORKING
+New Machines Marked as NOT_WORKING
 ----------------------------------
 Hikaru Check ROM Board [coolmod]
 Mad Dog II: The Lost Gold (3DO hardware) [incog, The Dumping Union]
@@ -79,7 +64,7 @@ The Key Of Avalon - The Wizard Master (client) (Rev C) (GDT-0006C) [rtw, ShouTim
 The Key Of Avalon 2.5 - War of the Key (client) (Rev A) (GDT-0019A) [rtw, ShouTime]
 The Key Of Avalon 2.5 - War of the Key (server) (Rev A) (GDT-0018A) [rtw, ShouTime]
 
-New working software list additions
+New Working Software List Additions
 -----------------------------------
 hp9k3xx_flop:
   300 series Mainframe Tests, 300 series Terminal Emulator, AMS Utilities for 200/300 series, BASIC 4.0 Compiler,
@@ -99,14 +84,29 @@ pc98:
 sorcerer_cass: Checkers, Cross-Up, How The West Was Won, Lazer Fire, Mine Field, Nuclear Reaction, Pie Lob [Robbbert]
 squale_cart: The Squale Intro [Jean-Francois DEL NERO / HxC2001]
 
-Software list items promoted to working
----------------------------------------
+Software List Item Promoted to Working
+--------------------------------------
 pc98: 0x0F exp.3, 177, The 4th Unit 2 [Carl, r09]
 
-New NOT_WORKING software list additions
+New NOT_WORKING Software List Additions
 ---------------------------------------
 ibm5170_cdrom: Jaxis (Japan) [SpinalFeyd]
 neogeo: Stakes Winner / Stakes Winner - GI Kinzen  Seiha e no Michi (early development board) [ResO]
+
+
+MAMETesters Bugs Fixed (11):
+----------------------------
+- 06980: [Save/Restore] (spec128.cpp) specpls3: Unable to save state (regression) (AJR)
+- 06983: [Sound] (mtouchxl.cpp) mtchxl6k (possibly others): All sounds play too fast (Carl)
+- 06984: [Graphics] (esd16.cpp) jumppop, jumppope: Missing graphics in first stage (AJR)
+- 06988: [Crash/Freeze] (kinst.cpp) kinst: Hangs during Attract Mode, noticeable when a fight loads (Ivan Vangelista)
+- 06989: [Sound] (champbas.cpp) champbb2j: AY-3-8910 sound is completely missing (Vas Crabb)
+- 06992: [DIP/Input] (hornet.cpp) sscope and clones: Analog inputs do not function (Ted Green)
+- 07006: [Media Support] (at.cpp) atvga, at386, at486: [possible] Unable load Floppy Diskettes (Carl)
+- 07007: [Sound] (renegade.cpp) renegade, kuniokun: BGM stops playing after a while (AJR)
+- 07010: [DIP/Input] (missile.cpp) missile and clones: DIP switch trackball size large/mini labels reversed (Tafoid)
+- 07017: [Sound] (galaxian.cpp) kingball, kingballj: King's voice is not played correctly (Ivan Vangelista)
+- 07020: [DIP/Input] (lwings.cpp) trojan and clones: DIP switches incorrectly numbered, and info on unused DIP switches (Tafoid)
 
 
 Source changes:
@@ -117,14 +117,14 @@ Source changes:
 - exidy.cpp, victory.cpp: Fully encapsulated audio devices [AJR].
 - atetrisb3: Hooked up microcontroller to get working sound [AJR].
 - i8275 DMA refinements [AJR]:
-  * Exclude FIFO characters from counting towards filling character buffer.
+  * Exclude FIFO characters from counting towards filling character buffer;
   * Extend DMA up to one character past an "end of DMA" control code.
 - wicat: Reduced video glitches with more sensible interrupt handling [AJR].
 - balsente.cpp: Split NVRAM between two X2212 devices [AJR].
 - jedi: Moderate driver overhaul [AJR]:
-  * Split NVRAM between two 4-bit X2212 devices.
-  * Guarantee an invalid checksum when default NVRAM data is used (so that the manufacturer's high scores will be installed).
-  * Modernized sound latches.
+  * Split NVRAM between two 4-bit X2212 devices;
+  * Guarantee an invalid checksum when default NVRAM data is used (so that the manufacturer's high scores will be installed);
+  * Modernized sound latches;
   * Use WSQ handler to drive TMS5220.
 - vta2000: Added speaker sound [AJR].
 - balsente.cpp: Use ACIA devices for sound communication [AJR].
@@ -133,36 +133,36 @@ Source changes:
 - dynax.cpp: Encapsulated "Rev. 2" blitter as a device [AJR].
 - cidx628: Made this display something again [AJR].
 - tatsumi.cpp improvements [Angelo Salese]:
-  * Removed an ugly kludge in 'Round Up 5', fixing soft resets.
-  * Added vertical text scrolling to 'Round Up 5'.
-  * Fixed 'Apache 3' out-of-bounds colors for sprites (trees and buildings).
-  * Fixed 'Round Up 5' video priority on map screen after a play.
-  * Added background bitmap layers to 'Round Up 5'.
-  * Improved road clipping for 'Round Up 5'.
-  * Make "Cycle Warriors' sub CPU not stall on soft reset.
-  * Added row/column scroll register select for 'Cycle Warriors' and 'Big Fight'.
-  * Added shadow sprites to 'Cycle Warriors' and 'Big Fight'.
-  * Inverted Oki status for 'Cycle Warriors' and 'Big Fight' - fixes "we got 'em" sample playback in the former.
-  * Implemented per-tile high priority and opacity enable bits for 'Cycle Warriors' and 'Big Fight' - fixes several glitches.
-  * Fixed color banks for 'Cycle Warriors' and 'Big Fight' - fixes fade in/out effects and CRT test colors.
-  * Applied page wraparound for backgrounds - fixes various glitches in 'Big Fight' and 'Cycle Warriors'.
-  * Invert shadow product when a specific register is enabled (used by Big Fight to simulate disco strobe lights)..
+  * Removed an ugly kludge in "Round Up 5", fixing soft resets;
+  * Added vertical text scrolling to "Round Up 5";
+  * Fixed 'Apache 3' out-of-bounds colors for sprites (trees and buildings);
+  * Fixed 'Round Up 5' video priority on map screen after a play;
+  * Added background bitmap layers to "Round Up 5";
+  * Improved road clipping for "Round Up 5";
+  * Make "Cycle Warriors' sub CPU not stall on soft reset;
+  * Added row/column scroll register select for "Cycle Warriors" and "Big Fight";
+  * Added shadow sprites to "Cycle Warriors" and "Big Fight";
+  * Inverted Oki status for "Cycle Warriors" and "Big Fight" - fixes "we got 'em" sample playback in the former;
+  * Implemented per-tile high priority and opacity enable bits for 'Cycle Warriors' and 'Big Fight' - fixes several glitches;
+  * Fixed color banks for "Cycle Warriors" and "Big Fight" - fixes fade in/out effects and CRT test colors;
+  * Applied page wraparound for backgrounds - fixes various glitches in "Big Fight" and "Cycle Warriors";
+  * Invert shadow product when a specific register is enabled (used by Big Fight to simulate disco strobe lights).
 - ninjakd2.cpp: Attempted to fix bullets not shot by enemies in 'Omega Fighter' [Angelo Salese].
 - taitosj.cpp: Added input buttons mode to kikstart [Angelo Salese].
 - trucocl.cpp: Allowed multiple coin insertions [Angelo Salese].
 - cischeat.cpp improvements [Angelo Salese]:
-  * Fixed road/sprite priorities and long-standing road colors regression in 'Big Run'.
-  * Hand-tuned sound frequencies to match reference for 'Big Run'.
-  * Hooked up sprite DMA to Wild Pilot - fixes flickering.
-  * Added backup RAM to 'Captain Flag'.
+  * Fixed road/sprite priorities and long-standing road colors regression in "Big Run";
+  * Hand-tuned sound frequencies to match reference for "Big Run";
+  * Hooked up sprite DMA to "Wild Pilot" - fixes flickering;
+  * Added backup RAM to "Captain Flag".
 - ms1_tmap.cpp: Initialize VRAM to sane default - fixes ugly back pen showing up in 'Big Run' [Angelo Salese].
 - jalmah.cpp improvements [Angelo Salese]:
-  * Re-wrote video emulation using Mega System 1 tilemap devices.
-  * Fixed 'Urashima Mahjong' video priority during gameplay (score display and calls).
-  * Emulated video scrolling partial updates for 'Urashima Mahjong' - fixes winning animations.
-  * Fixed color protection in 'Urashima Mahjong' (girls and test mode).
-  * Wrote a preliminary snippet for sound banking in 'Urashima Mahjong', 'Mahjong Channel Zoom In' and 'Mahjong Daireikai'.
-- cyclemb.cpp: Bumped sprite size in 'Cycle Maabou', fixed some missing sprites (for example in how to play screen) [Angelo Salese].
+  * Re-wrote video emulation using Mega System 1 tilemap devices;
+  * Fixed 'Urashima Mahjong' video priority during gameplay (score display and calls);
+  * Emulated video scrolling partial updates for "Urashima Mahjong" - fixes winning animations;
+  * Fixed color protection in "Urashima Mahjong" (girls and test mode);
+  * Wrote a preliminary snippet for sound banking in "Urashima Mahjong", "Mahjong Channel Zoom In" and "Mahjong Daireikai".
+- cyclemb.cpp: Bumped sprite size in "Cycle Maabou", fixed some missing sprites (for example in how to play screen) [Angelo Salese].
 - Added AppVeyor build configuration [balrog].
 - Added support for building on riscv64, and made m68000 makefile respect the VERBOSE build option [Belegdol].
 - senjyo.cpp: Simplified starforc background color swap [cam900].
@@ -176,24 +176,24 @@ Source changes:
 - sf.cpp, ninjakd2.cpp: Reduced code duplication and runtime tagmap lookups [cam900].
 - dreamwld.cpp: Documented microcontroller and fixed microcontroller ROM region size [cam900].
 - williams.cpp cleaup [cam900]:
-  * Reduced runtime tagmap lookups, improved tags, and reduced code duplication.
-  * Added input_merger for interrupts and output_finder for outputs.
+  * Reduced runtime tagmap lookups, improved tags, and reduced code duplication;
+  * Added input_merger for interrupts and output_finder for outputs;
   * Converted palette to device.
 - m92.cpp updates/cleanup [cam900]:
-  * Reduced code duplication and runtime tagmap lookups, and split up machine configuration and address maps.
+  * Reduced code duplication and runtime tagmap lookups, and split up machine configuration and address maps;
   * Made EEPROM save/load using NVRAM device.
 - neogeo.cpp: Add notes and fixed metadata for kof2003 [cam900].
 - powerins.cpp cleanup [cam900]:
-  * Reduced code duplication and runtime tagmap lookups
-  * Cleaned up ROM loading.
+  * Reduced code duplication and runtime tagmap lookups;
+  * Cleaned up ROM loading;
   * Converted vertical blanking interrupt to screen vblank callback.
 - 20pacgal.cpp cleanup [cam900]:
-  * Converted palette to device.
-  * Reduced runtime tagmap lookups and deferred allocation to start time.
+  * Converted palette to device;
+  * Reduced runtime tagmap lookups and deferred allocation to start time;
   * Restricted drawing to clipping rectangle.
 - ddragon.cpp cleanup [cam900]:
-  * Replaced runtime tagmap lookups with object finders.
-  * Converted darktowr bank switching to address_map_bank_device.
+  * Replaced runtime tagmap lookups with object finders;
+  * Converted darktowr bank switching to address_map_bank_device;
   * Fixed ADPCM ROM mapping.
 - pgmprot_igs027a_type2.cpp: Fixed martmast metadata [cam900].
 - alpha68k.cpp: Reduce runtime tagmap lookups, made tags more meaningful, and improved banking [cam900].
@@ -203,15 +203,15 @@ Source changes:
 - witch.cpp: Attempted to fix garbage graphics after a bonus stage in 'Keirin Ou' [David Haywood].
 - Made floppy emulation more robust, and improved bitstream handling [John Keoni Morris, Peter Ferrie, O. Galibert].
 - markham.cpp updates [kazblox]:
-  * Improved banbam protection simulation - still imperfect, but all graphics are correct and game doesn't crash.
+  * Improved banbam protection simulation - still imperfect, but all graphics are correct and game doesn't crash.;
   * Marked microcontroller program as good dump based on observations and Phil Bennett's comments.
 - PlayStation GPU: Added missing primitives [krom].
 - buggychl.cpp: Changed microcontroller clock speed to 3 MHz as shown on schematics, and added notes. [Lord Nightmare].
 - tms5220 updates. [Lord Nightmare].:
-  * Removed unused time_to_ready and cycles_to_ready functions.
-  * Fixed race condition with m_buffer_low and m_buffer_empty flags not being updated before setting interrupt state.
-  * Fixed issue where Speak VSM command produces endless silence with no VSM connected.
-  * Suppressed side effects on debugger reads.
+  * Removed unused time_to_ready and cycles_to_ready functions;
+  * Fixed race condition with m_buffer_low and m_buffer_empty flags not being updated before setting interrupt state;
+  * Fixed issue where Speak VSM command produces endless silence with no VSM connected;
+  * Suppressed side effects on debugger reads;
   * Fixed conditions for asserting ready signal, and zero FIFO at appropriate times.
 - Apple II: Re-implemented Echo II read/write flags and write latch based on hardware tracing [Lord Nightmare, Tony Diaz].
 - alien.cpp: Added hand-made boot ROMs for 'Pingu's Ice Block', and documented known games [MetalliC].
@@ -231,9 +231,9 @@ Source changes:
 - Dreamcast: Made GD_LEND return bytes transferred by DMA rather than bytes remaining - allows Daytona USA 2001 to boot [snickerbockers].
 - Added HP98543 medium-resolution color graphics card emulation [Sven Schnelle].
 - hp9k_3xx improvements [Sven Schnelle]:
-  * Fixed keyboard microcontroller part number.
-  * Removed BASIC ROM cards from the default configuration as booting from floppy works now.
-  * Hooked up NMI line to keyboard controller.
+  * Fixed keyboard microcontroller part number;
+  * Removed BASIC ROM cards from the default configuration as booting from floppy works now;
+  * Hooked up NMI line to keyboard controller;
   * Split out common machine configuration.
 - Added HP9122 floppy drive emulation [Sven Schnelle].
 - m68000: Fixed carry flag in divs instruction, and fixed pack instructions [Sven Schnelle].
@@ -244,10 +244,10 @@ Source changes:
 - Updated DCS audio to get sf2049 closer to working [Ted Green].
 - Made ROM BIOS macros more intuitive to use, and added a validity check for unselectable BIOS ROMs [Vas Crabb].
 - Machine configuration improvements [Vas Crabb]:
-  * Reduced code duplication in addrmap.h and added support for object finders in more places in memory maps.
-  * Allowed implicit references to owner device in address maps.
-  * Improved syntax for specifying address maps and screen update functions in machine configuration without macros.
-  * Reduced overloading of member function names - it's less practical without macro helpers selecting desired overload.
+  * Reduced code duplication in addrmap.h and added support for object finders in more places in memory maps;
+  * Allowed implicit references to owner device in address maps;
+  * Improved syntax for specifying address maps and screen update functions in machine configuration without macros;
+  * Reduced overloading of member function names - it's less practical without macro helpers selecting desired overload;
   * Consider floating point epsilon when validating crystal values.
 - Cleaned up bulk refactoring of output code [Wilbert Pol].
 - asteroid.cpp: Documented 'Asteroid Deluxe Revision 3' changes, and corrected Difficulty DIP switch settings [Brian Troha].
@@ -255,11 +255,11 @@ Source changes:
 - polepos.cpp: Dumped the missing PROMs for grally and confirmed they match the ones from the other bootlegs [Jordi Beltran Casany, Recreativas.org, The Dumping Union]
 - bking.cpp: Updated ROM labels for bking2 [Kevin Eshbach, The Dumping Union].
 - pc98 software list updates [r09]:
-  * Re-tested software with current MAME.
-  * Corrected titles and re-labeled disks with their actual names.
-  * Added usage notes for software that needs DOS.
-  * Removed user disks from games where they aren't included in the original box, and the user is expected to create them.
-  * Removed floppies for CD games that already exist in the CD software list.
+  * Re-tested software with current MAME;
+  * Corrected titles and re-labeled disks with their actual names;
+  * Added usage notes for software that needs DOS;
+  * Removed user disks from games where they aren't included in the original box, and the user is expected to create them;
+  * Removed floppies for CD games that already exist in the CD software list;
   * Removed notes stating that the FDD format is not supported, as this is no longer true.
 - neogeo.cpp: Added Japan NEO-MVH MV1C BIOS [Razoola].
 - alien.cpp: Re-dumped Pingu's Ice Block CompactFlash card [ShouTime, Dane Biegert, The Dumping Union].

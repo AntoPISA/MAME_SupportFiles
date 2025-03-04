@@ -2,17 +2,11 @@
 -----------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
-- 04621: [Timing] (ironhors.cpp) ironhors: 30fps framerate seems abnormal (Angelo Salese)
-- 07027: [Sound] (vegas.cpp) warfa (and maybe clones): DCS2 OS Version Test Failed (Ted Green)
-
-
-New working machines
+New Working Machines
 --------------------
 Acorn System 5 [Nigel Barnes]
 
-New working clones
+New Working Clones
 ------------------
 Acorn System 2 [Nigel Barnes]
 Acorn System 3 (6502 CPU) [Nigel Barnes]
@@ -29,7 +23,7 @@ Street Fighter II': Champion Edition (Mstreet-6, bootleg, set 1) [TwistedTom]
 Street Fighter II': Champion Edition (Mstreet-6, bootleg, set 2) [TwistedTom]
 Street Fighter II': Champion Edition (Mstreet-6, bootleg, set 3) [TwistedTom]
 
-New machines marked as NOT_WORKING
+New Machines Marked as NOT_WORKING
 ----------------------------------
 Boris - Electronic Chess Computer [TrevEB, Sean Riddle, The Dumping Union]
 Captain Zodiac [Siftware]
@@ -41,12 +35,12 @@ iPhone (A1203) [MoochMcGee]
 Marbella Vice [Recreativas.org, The Dumping Union]
 Topaz (Inder) [PinMAME]
 
-New clones marked as NOT_WORKING
+New Clones Marked as NOT_WORKING
 --------------------------------
 Jokerz! (G-4) [PinMAME]
 Safe Cracker (1.0) [PinMAME]
 
-New working software list additions
+New Working Software List Additions
 -----------------------------------
 acrnsys_flop: Atom/System 3 File Server, System 3 Utilities, System 5 File Server, System BBC BASIC [Nigel Barnes]
 acrnsys_rom: Econet 2.40, Econet 3.40, Econet 3.50 [Nigel Barnes]
@@ -75,12 +69,18 @@ x68k_flop:
   My Today's Job (ldb_x68k conversion), Over Driver, Programan Ace -Source68, Sekai Seifuku Set (ldb_x68k conversion), Stein
   [Wayder]
 
-New NOT_WORKING software list additions
+New NOT_WORKING Software List Additions
 ---------------------------------------
 acrnsys_rom: System/3 Econet 1.48 [Nigel Barnes]
 ibm5150: PC Globe 4.0 [ArcadeShadow]
 ibm5170: POWER DoLLS [Justin Kerk]
 pc88va: Tetris (Bullet-Proof Software) [r09]
+
+
+MAMETesters Bugs Fixed (2):
+---------------------------
+- 04621: [Timing] (ironhors.cpp) ironhors: 30fps framerate seems abnormal (Angelo Salese)
+- 07027: [Sound] (vegas.cpp) warfa (and maybe clones): DCS2 OS Version Test Failed (Ted Green)
 
 
 Source changes:
@@ -91,34 +91,34 @@ Source changes:
 - z8: Added dump of pre-programmed Z8671 MCU with BASIC/DEBUG interpreter [AJR].
 - x68000: Separated VINAS/VICON CRTC device [AJR].
 - cischeat.cpp Improvements [Angelo Salese]:
-  * Reworked interrupt generation, and fixed attract mode de-synchronization in 'Big Run'.
+  * Reworked interrupt generation, and fixed attract mode de-synchronization in "Big Run";
   * Fixed 'Grand Prix Star' stuck tyre sprite in attract mode.
 - ironhors.cpp: Changed 'Iron Horse' frame rate to 61 Hz [Angelo Salese].
 - sigmab52.cpp: Changed frame rate to 60 Hz [Angelo Salese].
 - tetrisp2.cpp: Added support for YUV422 colors in 'Stepping Stage' [Angelo Salese].
 - amstrad: Added a device for PPI clone implemented by the Amstrad Plus ASIC, and used it for the Plus and GX4000. Fixes Plus detection in some games, and correctly breaks inputs in 'Barbarian' [Barry Rodewald].
 - taito_b.cpp and tc0180vcu.cpp cleanup [cam900]:
-  * Moved TC0180VCU functionality from driver state class to device class and internalized graphics decoding.
-  * Deferred allocation of buffers to start time.
+  * Moved TC0180VCU functionality from driver state class to device class and internalized graphics decoding;
+  * Deferred allocation of buffers to start time;
   * Removed unused/redundant code.
 - lastduel.cpp cleanup [cam900]:
-  * Improved tag and variable naming, reduced code duplication, and reduced runtime tag map lookups.
+  * Improved tag and variable naming, reduced code duplication, and reduced runtime tag map lookups;
   * Added a palette decoder function for palette.
 - seta001.cpp: Deferred allocation to start time and cleaned up code [cam900].
 - srmp2.cpp, thedealr.cpp, seta.cpp, champbwl.cpp: Reduced runtime tag lookups and cleaned up code [cam900].
 - taito_x.cpp cleanup [cam900]:
-  * Split out common parts of memory maps, and separated kyustrkr machine configuration.
+  * Split out common parts of memory maps, and separated kyustrkr machine configuration;
   * Reduced runtime tag map lookups.
 - atarigt.cpp, cage.cpp, metalmx.cpp: Minor cleanup and runtime tag map lookup reduction [cam900].
 - nmk16.cpp updates and cleanup [cam900]:
-  * Reduced code duplication, improved tags, modernized banking, and reduced runtime tag map lookups.
-  * Implemented sprite and palette size limits.
-  * Added bad dump flag to ROMs in tdragon3h set sourced from a different PCB.
+  * Reduced code duplication, improved tags, modernized banking, and reduced runtime tag map lookups;
+  * Implemented sprite and palette size limits;
+  * Added bad dump flag to ROMs in tdragon3h set sourced from a different PCB;
   * Improved save state support.
 - unico.cpp cleanup [cam900]:
-  * Improved member names and tags.
-  * Deferred video RAM allocation to start time.
-  * Reduced runtime tag map lookups and ACCESSING_BITS checks.
+  * Improved member names and TAGs;
+  * Deferred video RAM allocation to start time;
+  * Reduced runtime tag map lookups and ACCESSING_BITS checks;
   * Added palette decoder function.
 - silkroad.cpp: Reduced redundant/unused code, and reduced ACCESSING_BITS checks [cam900].
 - drgnmst.cpp: Reduced code duplication and added palette decoder function.l [cam900].
@@ -131,32 +131,32 @@ Source changes:
 - m107.cpp: Added buffered sprite RAM device, and split machine configuration according to ROM size/banking [cam900].
 - lynx.cpp: Modernized banking, reduced runtime tag map lookups, and cleaned up palette code [cam900].
 - argus.cpp cleanup [cam900]:
-  * Improved argus tilemap handling and added MACHINE_NO_COCKTAIL as scrolling is wrong when flipped.
-  * Moved butasan tilemap scanning into mapper function.
+  * Improved argus tilemap handling and added MACHINE_NO_COCKTAIL as scrolling is wrong when flipped;
+  * Moved butasan tilemap scanning into mapper function;
   * Reduced code duplication.
 - realbrk.cpp: Fixed sprite priority, reduced runtime tag map lookups, and added notes [cam900].
 - sknsspr.cpp: Implemented bitmap clearing disable bit (used by galpani3) [cam900].
 - suprnova.cpp: Restricted bitmap drawing to clipping rectangle [cam900].
--galpani3.cpp: Implemented/fixed some effects and added notes. Fixes background color fading in intro, and girl display in stage start [cam900].
+- galpani3.cpp: Implemented/fixed some effects and added notes. Fixes background color fading in intro, and girl display in stage start [cam900].
 - kaneko_grap2.cpp: Added device_palette_interface for palette [cam900].
 - Made many class members private and removed dead code exposed [David Haywood].
 - 315_5124.cpp updates and improvements [Enik Land]:
-  * Renamed Game Gear VDP to 315-5377 to match the maintenance manual.
-  * Added a device to support behaviour specific to the 315-5313 in mode 4.
-  * Made 315-5377 (Game Gear) and 315-5212 (Mega Drive) derive from 315-5256 (SMS2) rather than 314-5124 (SMS1).
-  * Improved timing behaviour (verified with Flubba's VDP Test for 315-5313 in mode 4).
-  * Emulated sprite status register bits indicating first sprite that overflows.
-  * Implemented sprite zoom limit  for 315-5124/315-5313.
-  * Fixed incorrect scrolling exhibited in Charles' scrolling test.
-  * Improved color of leftmost column in mode 4 when fine scroll is applied.
+  * Renamed Game Gear VDP to 315-5377 to match the maintenance manual;
+  * Added a device to support behaviour specific to the 315-5313 in mode 4;
+  * Made 315-5377 (Game Gear) and 315-5212 (Mega Drive) derive from 315-5256 (SMS2) rather than 314-5124 (SMS1);
+  * Improved timing behaviour (verified with Flubba's VDP Test for 315-5313 in mode 4);
+  * Emulated sprite status register bits indicating first sprite that overflows;
+  * Implemented sprite zoom limit  for 315-5124/315-5313;
+  * Fixed incorrect scrolling exhibited in Charles' scrolling test;
+  * Improved color of leftmost column in mode 4 when fine scroll is applied;
   * Implemented display mode 1 (text) and mode 3 (multicolor).
 - Fixed crash when running a DRC CPU core under Emscripten (github #2794) [Justin Kerk].
 - cassette.cpp: Fixed handling of multi-channel reads.l [Frank Palazzolo].
 - Added ARM1176JZF-S CPU device [MoochMcGee].
 - i386: Fixed two cppcheck warnings [MoochMcGee].
 - Added Acorn Bus slot devices [Nigel Barnes]:
-  * For Acorn Atom: AtomSID, Acorn Atom Disc Pack, Econet Board.
-  * For Acorn System: 32K Dynamic RAM Board, 8K Static RAM Board, Cassette Interface Board, Econet Board, Floppy Disc Controller Board, 40 Column VDU Board, 80x25 VDU Board, Versatile Interface Board.
+  * For Acorn Atom: AtomSID, Acorn Atom Disc Pack, Econet Board;
+  * For Acorn System: 32K Dynamic RAM Board, 8K Static RAM Board, Cassette Interface Board, Econet Board, Floppy Disc Controller Board, 40 Column VDU Board, 80x25 VDU Board, Versatile Interface Board;
   * For CMS: CMS 40/80 Video Terminal Card, CMS Floppy Disc Controller, CMS High Resolution Colour Graphics Card.
 - a6809: Renamed to acrnsys3_6809, and rewrote with card slot devices [Nigel Barnes].
 - ef9365: Clear frame buffer memory on reset [Nigel Barnes].
@@ -166,7 +166,7 @@ Source changes:
 - interpro.cpp: Improved to the point where CLIX boots on the ip2000. Includes re-written IOGA interrupt and DMA handling, and fixes for CPU and MMU issues [Patrick Mackinlay].
 - nscsi: Added support for CD-ROM drives with 512-byte blocks (required for many UNIX workstations). Also added stubs for "prevent/allow medium removal", and improved hard disk "inquiry" command behaviour [Patrick Mackinlay].
 - apple2e updates [R. Belmont]:
-  * Added debugger guards to avoid accidentally banking out ROM.
+  * Added debugger guards to avoid accidentally banking out ROM;
   * Fixed floating bus reads - synchronizes Talbot Fantasy Seven credits screen.
 - apple2gs: Re-wrote driver using address map bank device [R. Belmont].
 - apple2gs: Fixed issues with Jam Session and ACS Demo Disk #2 [R. Belmont].
@@ -174,18 +174,18 @@ Source changes:
 - z80scc: Fixed transmit interrupt behavior that was locking up the Apple IIgs [R. Belmont, Patrick Mackinlay].
 - mc146818: Added support for direct-access bus hook-up method used by MIPS DECstations [R. Belmont].
 - trs80 work in progress [Robbbert]:
-  * Split into separate sources.
-  * Fixed UI paste/natural keyboard.
-  * Added UART, RS-232, and Baud rate clock/BRG depending on hardware.
-  * Fixed UART status on sys80.
-  * Fixed cassette waveform.
-  * Tidied up and modernised code.
+  * Split into separate sources;
+  * Fixed UI paste/natural keyboard;
+  * Added UART, RS-232, and Baud rate clock/BRG depending on hardware;
+  * Fixed UART status on sys80;
+  * Fixed cassette waveform;
+  * Tidied up and modernised code;
   * Added monitor documentation.
 - ht1080z: Added ay8910 [Robbbert].
 - ps2sony: Fleshed out the skeleton driver [Ryan Holtz]:
-  * Added device to encapsulate PlayStation 2 timers.
-  * Temporarily hacked R5900 core to always have scratchpad RAM mapped at 0x70000000.
-  * Added reference counting to divtlb so it does not unmap pages that are still shared with other entries.
+  * Added device to encapsulate PlayStation 2 timers;
+  * Temporarily hacked R5900 core to always have scratchpad RAM mapped at 0x70000000;
+  * Added reference counting to divtlb so it does not unmap pages that are still shared with other entries;
   * Added skeleton GIF, VIF1 and GS devices.
 - mips3: Added basic Emotion Engine support [Ryan Holtz].
 - kr03: Defined native keyboard layout (partially addresses MT05818) [shattered].
@@ -193,15 +193,15 @@ Source changes:
 - Moved instantiation of device_finder for interface classes from implementation sources to interface sources.  Avoids multiple explicit instantiations with the same template arguments [Stefan Bruns].
 - devcb: Replaced with new, more flexible implementation. Converted a number of devices and drivers to use the newly supported less macro-dependent syntax [Vas Crabb].
 - Layout system improvements [Vas Crabb]:
-  * Allow screens to be referenced by tag in layouts.
-  * Allow an internal layout to be supplied per device rather than just per system, with relative screen and input tags.
-  * Improved view generation and selection for systems with two screens.
+  * Allow screens to be referenced by tag in layouts;
+  * Allow an internal layout to be supplied per device rather than just per system, with relative screen and input TAGs;
+  * Improved view generation and selection for systems with two screens;
   * Added support for user variables and repetition in layouts, and converted a number of layouts.
 - v550: Added keyboard program ROM dump [Al Kossow].
 - Added skeleton device for WD1007A ESDI hard disk controller [Al Kossow].
 - hiscore.dat: Updated for recent changes.l [Leezer].
 - x68k_flop updates [Wayder]:
-  * Organised and corrected entries, and replaced disk images with new dumps.
-  * Removed Ninin Battle (Alt) - it's a modified copy.
+  * Organised and corrected entries, and replaced disk images with new dumps;
+  * Removed "Ninin Battle (Alt)", it's a modified copy;
   * Updated/corrected missing dumps, release years, and Japanese titles.
 - ibm5170: Fixed typo in interface for Turbo Pascal 6.01 (German) [xinyingho].

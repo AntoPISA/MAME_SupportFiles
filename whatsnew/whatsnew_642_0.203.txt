@@ -2,24 +2,7 @@
 -----------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
-- 00430: [Graphics] (flkatck.cpp) mx5000: Game has priority problems (Angelo Salese)
-- 00777: [Gameplay] (namcos22.cpp) timecris, timecrisa: Incorrect hitbox for the helicopter in level 3 (hap)
-- 06157: [Graphics] (cps3.cpp) jojo, jojoba and clones: Combo meter graphics missing for second player (David Haywood)
-- 06164: [Graphics] (namcos22.cpp) ridgerac: Title screen graphics are missing from second attract loop onwards (hap)
-- 06171: [Core] System-specific INI file settings are retained when starting a new emulation session (Ryan Holtz)
-- 06616: [Crash/Freeze] (coco3.cpp) coco3: Cartridges using 32k external ROM mode don't work (Tim Lindner)
-- 07088: [Crash/Freeze] (interpro.cpp) ip6000, ip6700, ip6800: 1 Hz clock causes assertion failure in scheduler (Patrick Mackinlay)
-- 07110: [DIP/Input] (snk.cpp) tdfever: The "Allow Continue" DIP switch is reversed (Angelo Salese)
-- 07111: [Graphics] (namcos22.cpp) dirtdash: Speedometer displayed incorrectly (hap)
-- 07115: [Sound] (cps2.cpp) spf2t (qsound): Sound effects are distorted, mainly on left channel (superctr)
-- 07123: [Documentation] (megadriv.cpp) megadriv [dstrike]: Title is inaccurate (Tafoid)
-- 07124: [Documentation] (megadriv.cpp) megadriv [rrash3]: Title is inaccurate (Tafoid)
-- 07126: [Color/Palette] (8080bw.cpp) yosakdon: Yosaku to donbei used an overlay for colour (MASH)
-
-
-New working machines
+New Working Machines
 --------------------
 Game & Watch: Donkey Kong [algestam]
 Game & Watch: Green House [algestam]
@@ -27,7 +10,7 @@ HP 9825B [F. Ulivi]
 Nerae! Super Goal (J 981218 V1.000) [PascalP, Bill D., The Dumping Union]
 Sky Challenger (J 000406 V1.000) [ShouTime, Bill D., Charles MacDonald, Dane Biegert, Candy Wolff, Henrique Areias Pontes, Sean Sutton, Surgeville, Smitdogg, The Dumping Union]
 
-New working clones
+New Working Clones
 ------------------
 Ace Driver: Victory Lap (Rev. ADV1, Japan) [ShouTime, Henrique Areias Pontes, Evan Korzon, Dane Biegert, mrgoodwraith, Michael O'Malley, Alexander Monin, Sean Sutton, Sung Eugene, Russell Howard, Smitdogg, The Dumping Union]
 Arm Champs II (ver 2.7) [Siftware]
@@ -59,13 +42,13 @@ Twins (Mega Twins bootleg) [Barry Harris, ClawGrip, Roberto Fresca, Recreativas.
 World Cup '90 (european hack, different title) [Roberto Fresca, Martin Mejia Britez]
 Zero Time (Marti Colls) [A.R.P.A., Recreativas.org]
 
-Machines promoted to working
+Machines Promoted to Working
 ----------------------------
 Jungle Soft Vii [Ryan Holtz]
 Tokyo Wars (Rev. TW2 Ver.A, World) [hap]
 Video 21 [hap]
 
-New machines marked as NOT_WORKING
+New Machines Marked as NOT_WORKING
 ----------------------------------
 Bowling Road (Ver 1.5) [f205v]
 BwB Tetris v 1.0? (MPU4 Video) [James Wallace]
@@ -92,7 +75,7 @@ Super Derby (satellite board) [Chris Buehler]
 UFO Robot (Ver 1.0 Rev A) [f205v]
 World Cup (Ver 1.5) [f205v]
 
-New clones marked as NOT_WORKING
+New Clones Marked as NOT_WORKING
 --------------------------------
 Altered Beast (bootleg) [ClawGrip, Roberto Fresca, Recreativas.org, The Dumping Union]
 Break Thru (Tecfri license) [jordigahan, Recreativas.org]
@@ -111,7 +94,7 @@ Super Pang (World 900914, bootleg, set 2) [ClawGrip, Roberto Fresca, Recreativas
 World Cup (Ver 1.4) [f205v]
 Zorton Brothers v1.00 (Los Justicieros) [Arcade Vintage, Recreativas.org]
 
-New working software list additions
+New Working Software List Additions
 -----------------------------------
 bbc_rom:
   Accelerator 1.00, Accelerator 1.02, Accelerator 1.05 Accelerator 1.06, BeebCalc 1.2B, BeebCalc 1.2C, BeebCalc 1.2D, BeebCalc 1.2E,
@@ -159,7 +142,7 @@ vgmplay:
   Uncharted Waters (Sharp X68000), Vinyl Goddess from Mars (IBM PC AT), Wizard Fire (Arcade) [Tafoid]
 x68k_flop: Abunai Bunkasai Zenya [Wayder]
 
-Software list items promoted to working
+Software List Items Promoted to Working
 ---------------------------------------
 gamecom:
   Batman & Robin, Centipede, Duke Nukem 3D, Fighters Megamix, Frogger, Henry - Match the Sounds Memory Game, Indy 500, Jeopardy!,
@@ -170,7 +153,7 @@ pc98:
   Bishoujo Shashinkan Bangaihen - Outside Story, Bokosuka Wars, Brandish VT, The Bard's Tale - Tales of the Unknown,
   The Best Play Baseball (Demo) [Carl, r09]
 
-New NOT_WORKING software list additions
+New NOT_WORKING Software List Additions
 ---------------------------------------
 32x: Clay Fighter 2 (Jpn, USA, Euro Prototype) [VampierMSX, Porchy]
 bbc_rom:
@@ -181,28 +164,45 @@ pc98: Brandish Renewal [r09]
 princ: Bad Badtz-Maru, Hello Kitty, Kazoku de Nengajou, Pochacco [TeamEurope]
 
 
+MAMETesters Bugs Fixed (13):
+----------------------------
+- 00430: [Graphics] (flkatck.cpp) mx5000: Game has priority problems (Angelo Salese)
+- 00777: [Gameplay] (namcos22.cpp) timecris, timecrisa: Incorrect hitbox for the helicopter in level 3 (hap)
+- 06157: [Graphics] (cps3.cpp) jojo, jojoba and clones: Combo meter graphics missing for second player (David Haywood)
+- 06164: [Graphics] (namcos22.cpp) ridgerac: Title screen graphics are missing from second attract loop onwards (hap)
+- 06171: [Core] System-specific INI file settings are retained when starting a new emulation session (Ryan Holtz)
+- 06616: [Crash/Freeze] (coco3.cpp) coco3: Cartridges using 32k external ROM mode don't work (Tim Lindner)
+- 07088: [Crash/Freeze] (interpro.cpp) ip6000, ip6700, ip6800: 1 Hz clock causes assertion failure in scheduler (Patrick Mackinlay)
+- 07110: [DIP/Input] (snk.cpp) tdfever: The "Allow Continue" DIP switch is reversed (Angelo Salese)
+- 07111: [Graphics] (namcos22.cpp) dirtdash: Speedometer displayed incorrectly (hap)
+- 07115: [Sound] (cps2.cpp) spf2t (qsound): Sound effects are distorted, mainly on left channel (superctr)
+- 07123: [Documentation] (megadriv.cpp) megadriv [dstrike]: Title is inaccurate (Tafoid)
+- 07124: [Documentation] (megadriv.cpp) megadriv [rrash3]: Title is inaccurate (Tafoid)
+- 07126: [Color/Palette] (8080bw.cpp) yosakdon: Yosaku to donbei used an overlay for colour (MASH)
+
+
 Source changes:
 ---------------
 - Emulated National DP8350 CRT controller family [AJR].
 - mcs48: Set lower 4 bits of P2 to input during (and after) MOVD A,Pp [AJR].
 - i8243: Release P2 output after completion of read operation [AJR].
 - sbrain.cpp: Driver overhaul [AJR]:
-  * Added cursor and scrolling through CRT controller registers.
-  * Corrected number of interrupts per frame.
-  * Actually show the "insert diskette" message.
-  * Added options for RAM size and two or more floppy drives.
+  * Added cursor and scrolling through CRT controller registers;
+  * Corrected number of interrupts per frame;
+  * Actually show the "insert diskette" message;
+  * Added options for RAM size and two or more floppy drives;
   * Added RS232 ports and DIP switches for Baud clock selection.
 - tms9900: Internalized TMS9980A clock divider, and corrected endianness for TMS9980 and TMS9995 in unidasm [AJR].
 - xavix: Allow debugger to step over CALLF instruction [AJR].
 - crt9007: Added frame timer [AJR].
 - flipjack.cpp: Driver overhaul [AJR]:
-  * Reimplemented video using CRT controller row update method.
-  * Fixed cocktail mode and changed rotation from 90 degrees to 270 degrees.
+  * Reimplemented video using CRT controller row update method;
+  * Fixed cocktail mode and changed rotation from 90 degrees to 270 degrees;
   * Modernized interrupts and cleaned up code.
 - Invalidate memory access caches when removing watchpoints (prevents crashes on subsequent accesses to the same areas) [AJR].
 - mcs96 updates [AJR]:
-  * Replaced I/O space with callbacks, and added internal address space for non-executable register file and SFR area.
-  * Made SFRs more accessible to the debugger, and made disassembler show names for directly-addressed SFRs.
+  * Replaced I/O space with callbacks, and added internal address space for non-executable register file and SFR area;
+  * Made SFRs more accessible to the debugger, and made disassembler show names for directly-addressed SFRs;
   * Corrected disassembler output for some forms of ADDCB, SUBCB, MULB, ANDB, JBC and JBS.
 - unidasm: Added st62xx support [AJR].
 - flkatck.cpp: Fixed sprite-sprite priorities, and removed driver hack from k007121.cpp [Angelo Salese, dink].
@@ -211,21 +211,21 @@ Source changes:
 - Added shaders for performing color transforms and three-dimensional lookup tables. Allows arbitrary color space manipulation within the sRGB space [anikom15].
 - rainbow.cpp: Connected WD2010 write fault input, and changed default serial port device to Microsoft 2-button mouse [Bavarese].
 - r9751 updates - Disktool is now fully functional [Brandon Munger, Stephen Stair]:
-  * i86: Allow '188 to advance DMA immediately if DRQ is held high when source synchronous DMA is started.
-  * Connected SMIOC DMA to 68k CPU and fixed communication.
-  * Emulated SCC2698B octal UART and connected to SMIOC.
+  * i86: Allow '188 to advance DMA immediately if DRQ is held high when source synchronous DMA is started;
+  * Connected SMIOC DMA to 68k CPU and fixed communication;
+  * Emulated SCC2698B octal UART and connected to SMIOC;
   * Improved logging.
 - iremga20.cpp: Fixed playback rate algorithm [cam900].
 - itech8.cpp: Updates and cleanup [cam900]:
-  * Converted sound latch to generic_latch_8_device.
-  * Converted to use derived memory maps and unit masks.
+  * Converted sound latch to generic_latch_8_device;
+  * Converted to use derived memory maps and unit masks;
   * Reduced runtime tag map lookups, and cleaned up redundant and duplicated code.
 - glass.cpp: Simplified code, removed duplication, and improved region names [cam900].
 - segas24.cpp: Added save state support, split address maps by ROM board type, and cleaned up code [cam900].
 - crystal.cpp: Cleanup and updates [cam900]:
-  * Made class members private where appropriate, cleaned up code, reduced duplication, and added notes.
-  * Converted to use derived address maps and configured banking.
-  * Added CRT controller register details.
+  * Made class members private where appropriate, cleaned up code, reduced duplication, and added notes;
+  * Converted to use derived address maps and configured banking;
+  * Added CRT controller register details;
   * Improved device names and removed MCFG macros.
 - targeth.cpp: Reduced runtime tag map lookups, and reduced code duplication [cam900].
 - ramdac.cpp: Removed MCFG macros [cam900, AJR]
@@ -248,34 +248,34 @@ Source changes:
 - cps3.cpp: Implemented score layer row scroll effects, and cleaned up code. Fixes combo meters in jojoba (MT06157, GitHub #4033) [David Haywood].
 - wecleman.cpp: Marked weclemanb as a hack [David Haywood].
 - XaviX updates [David Haywood]:
-  * Renamed members based on strings in code, moved audio stubs to a separate file, and updated notes.
-  * Hooked up sprite addressing mode control register, improved sprite RAM hookup, and hooked up "text array" pattern generator.
-  * Fixed multiplier unit use in rad_madf.
-  * Added inputs for rad_bass, rad_crdn, taitons1 and taitons2.
-  * Improved palette mode used by taitons2, improved sprite positioning, implemented sprite flipping, and improved priorities.
-  * Added support for RAM-based tiles used in rad_bb2 test mode, and 24-bit tile addressing used by epo_efdx.
-  * Improved CALLF, RETF and BRK, allowing namcons2 to boot and rad_ping to get past the first screen.
-  * Mapped BIOS into second external bus space for e-kara sets, and implemented DMA register read-back.
-  * Improved transparency handling, and implemented "arena control" clipping effect.
-  * Re-implemented Super XaviX opcodes based on observed usage.
-  * Allow some opcodes to bypass zero page, as required by namcons1.
-  * Hooked up I2C memory.
+  * Renamed members based on strings in code, moved audio stubs to a separate file, and updated notes;
+  * Hooked up sprite addressing mode control register, improved sprite RAM hookup, and hooked up "text array" pattern generator;
+  * Fixed multiplier unit use in rad_madf;
+  * Added inputs for (rad_bass), (rad_crdn), (taitons1) and (taitons2);
+  * Improved palette mode used by taitons2, improved sprite positioning, implemented sprite flipping, and improved priorities;
+  * Added support for RAM-based tiles used in rad_bb2 test mode, and 24-bit tile addressing used by epo_efdx;
+  * Improved CALLF, RETF and BRK, allowing namcons2 to boot and rad_ping to get past the first screen;
+  * Mapped BIOS into second external bus space for e-kara sets, and implemented DMA register read-back;
+  * Improved transparency handling, and implemented "arena control" clipping effect;
+  * Re-implemented Super XaviX opcodes based on observed usage;
+  * Allow some opcodes to bypass zero page, as required by (namcons1);
+  * Hooked up I2C memory;
   * Implemented per-line rendering and raster interrupts (improves backgrounds in rad_snow and xavtenni).
 - Don't set the SDL_WINDOW_OPENGL extra flag if -video none is set. Allows a true headless run when the environment variable SDL_VIDEODRIVER=dummy is set [dslegend].
 - hphybrid: Added support for the 09825-67907 variant, and updated the hk64k and hp9845 drivers as necessary [F. Ulivi].
 - Emulated HP 9825B desktop computer, including DC100 tape drive, internal printer, and matrix display [F. Ulivi].
 - namcos22: Added view matrix reflection. Fixes alpinr2b character selection screen, raveracw/ridgera2 rear-view mirrors, and secret mirror track in raveracw [hap, Ryan Holtz].
 - namcos22 updates [hap]:
-  * Added save state support and improved performance.
-  * Corrected pixel clock and DSP clocks.
-  * Fixed coin 2 not working.
-  * Implemented rendering from point RAM (used on Alpine Racer 2 and Ridge Racer 2 title screens).
-  * Improved System 22 fader and background color (fixes Victory Lap attract mode).
-  * Improved Super System 22 fog and spot (improves graphics in Aqua Jet, Dirt Dash and Time Crisis).
-  * Fixed polygon layer sometimes rendering when it shouldn't
-  * Added preliminary POSIRQ implementation (partial updates are not enabled yet).
-  * Fixed window clipping on Ace Driver rear view mirrors and Alpine Racer 2 character selection screen.
-  * Fixed hitboxes for helicopter in Time Crisis and tanks in Tokyo Wars (error in 68020 CHK2).
+  * Added save state support and improved performance;
+  * Corrected pixel clock and DSP clocks;
+  * Fixed coin 2 not working;
+  * Implemented rendering from point RAM (used on Alpine Racer 2 and Ridge Racer 2 title screens);
+  * Improved System 22 fader and background color (fixes Victory Lap attract mode);
+  * Improved Super System 22 fog and spot (improves graphics in "Aqua Jet", "Dirt Dash" and "Time Crisis");
+  * Fixed polygon layer sometimes rendering when it shouldn't;
+  * Added preliminary POSIRQ implementation (partial updates are not enabled yet);
+  * Fixed window clipping on Ace Driver rear view mirrors and Alpine Racer 2 character selection screen;
+  * Fixed hitboxes for helicopter in "Time Crisis" and tanks in "Tokyo Wars" (error in 68020 CHK2);
   * Added Super System 22 lamp and motor outputs.
 - pokey: Return most recent m_ALLPOT value and freeze POT counters during SK_RESET [Juergen Buchmueller].
 - Allow undefined GL symbols for WebAssembly target (GitHub #4187) [Justin Kerk].
@@ -287,11 +287,11 @@ Source changes:
 - ti99: Added guards against selecting non-existent drives [Michael Zapf].
 - bbc_tube_6502/65c102: Added ReCo6502 Tube 1.21 ROM [Nigel Barnes].
 - bbc.cpp updates [Nigel Barnes]:
-  * Reimplemented the addressable latch using the 'LS259 device.
-  * Added 32K ROM slots in B+ and Master variants.
-  * Use bankdev to switch IO/ROM in Master.
-  * Use ram_device instead of ROM_REGION for RAM.
-  * Added I2CMEM device for PCD8572 in Master Compact.
+  * Reimplemented the addressable latch using the "LS259" device;
+  * Added 32K ROM slots in "B+" and "Master" variants;
+  * Use bankdev to switch IO/ROM in "Master";
+  * Use ram_device instead of ROM_REGION for RAM;
+  * Added I2CMEM device for PCD8572 in "Master Compact";
   * Corrected sound device from SN76489 to SN76489A.
 - bbcb: Added ReCo6502 co-processor [Nigel Barnes].
 - bbcmc: Added expansion port and Mertec Companion expansion device [Nigel Barnes].
@@ -304,24 +304,24 @@ Source changes:
 - sorcerer.cpp: Added DDMON 1.3 and ADSMON BIOS options. ADSMON requires an 80 column card that is not emulated [Robbbert].
 - sm8500: Improved logging of unknown opcodes [Robbbert].
 - sun4c updates [Ryan Holtz]:
-  * Changed FDC to and fixed mapping.
-  * Added save state support.
-  * Added machine configuration for SPARCstation SLC (4/20), IPX (4/50), 1+ (4/65) and 2 (4/75).
-  * Added RAM size options and fixed mirroring in 4 MB configurations.
-  * Improved MMU/cache behaviour, and added support for full-width memory mask on segment map writes.
+  * Changed FDC to and fixed mapping;
+  * Added save state support;
+  * Added machine configuration for SPARCstation SLC (4/20), IPX (4/50), 1+ (4/65) and 2 (4/75);
+  * Added RAM size options and fixed mirroring in 4 MB configurations;
+  * Improved MMU/cache behaviour, and added support for full-width memory mask on segment map writes;
   * Re-wrote timers to tick at 1 MHz (allows NetBSD to progress further).
 - sbus: Added font register and fixed drawing endianness for cgsix card [Ryan Holtz].
 - debugcpu: Fixed watchpoints for CPUs that use word addressing [Ryan Holtz].
 - generic_slot: Allow file name extensions to be omitted from constructor call [Ryan Holtz].
 - vii.cpp updates [Ryan Holtz]:
-  * Fixed titles and publishers.
-  * Ported current u'nSP 1.0 CPU core and serial EEPROM emulation from Unununium.
-  * Made u'nSP instructions that use post-increment/decrement addressing modes update segment register on rollover.
-  * Fixed road layer in several Zone 60 games.
-  * Added an optional visual debugger for audio (may be enabled with a preprocessor macro).
-  * Converted SPG24x and SPG28x SoCs to devices, added saturation and fade offset control, and implemented sound output.
-  * Added SPG24x/SPG28x chip select callbacks and rudimentary analog inputs.
-  * Hooked up walle NVRAM.
+  * Fixed titles and publishers;
+  * Ported current u'nSP 1.0 CPU core and serial EEPROM emulation from Unununium;
+  * Made u'nSP instructions that use post-increment/decrement addressing modes update segment register on rollover;
+  * Fixed road layer in several Zone 60 games;
+  * Added an optional visual debugger for audio (may be enabled with a preprocessor macro);
+  * Converted SPG24x and SPG28x SoCs to devices, added saturation and fade offset control, and implemented sound output;
+  * Added SPG24x/SPG28x chip select callbacks and rudimentary analog inputs;
+  * Hooked up walle NVRAM;
   * Added preliminary V.Smile support - runs BIOS and boots games.
 - osdwindows: Fixed BGFX not rendering in multiple windows (internal UI is still glitchy) [Ryan Holtz].
 - ibm5150.cpp: Hooked up cassette data output (GitHub #4076) [Ryan Holtz, BigAlUK].
@@ -332,29 +332,29 @@ Source changes:
 - vgmplay.cpp: Added support for multiple instances of the same chip with different clock frequencies [smf].
 - qsoundhle.cpp: Saturate voice and output accumulators (MT07115) [superctr].
 - hp_dio updates [Sven Schnelle]:
-  * Allow cards to share interrupt and DMA request lines.
-  * Removed MCFG macros and moved classes into a namespace.
-  * Configure all DIO slots as non-fixed, as none of the devices are on-board or physically captive.
-  * Removed unused map() functions.
-  * Added HP98620 DMA controller and HP98625A SCSI controller card devices.
+  * Allow cards to share interrupt and DMA request lines;
+  * Removed MCFG macros and moved classes into a namespace;
+  * Configure all DIO slots as non-fixed, as none of the devices are on-board or physically captive;
+  * Removed unused map() functions;
+  * Added HP98620 DMA controller and HP98625A SCSI controller card devices;
   * Fixed plane masks in HP98543 video card.
 - M68000 MMU updates [Sven Schnelle]:
-  * Add Special Status Word to exception frames.
-  * Raise MMU configuration exception if SRP/CRP is invalid.
-  * Factored out code to set bus error details, perform address translation cache lookup, match TT register, and walk tables.
-  * Added support for short indirect descriptors (used by HP-UX 9).
-  * Set MMU status flags when performing address translation cache lookup.
-  * Split PLOAD and PTEST code from m68881_ops into separate functions, and corrected the name to m68851_ops.
+  * Add Special Status Word to exception frames;
+  * Raise MMU configuration exception if SRP/CRP is invalid;
+  * Factored out code to set bus error details, perform address translation cache lookup, match TT register, and walk tables;
+  * Added support for short indirect descriptors (used by HP-UX 9);
+  * Set MMU status flags when performing address translation cache lookup;
+  * Split PLOAD and PTEST code from m68881_ops into separate functions, and corrected the name to m68851_ops;
   * Correctly disassemble more forms of PTEST and PFLUSH instructions.
 - hp9k_3xx.cpp, mb87030.cpp, hp9122c.cpp: Converted to use delegate timers [Sven Schnelle].
 - hp9k_3xx.cpp updates [Sven Schnelle]:
-  * Moved sound, GPIB, keyboad and RTC to human interface DIO module.
-  * Cleaned up DIO configuration.
+  * Moved sound, GPIB, keyboad and RTC to human interface DIO module;
+  * Cleaned up DIO configuration;
   * Use 98543 DIO card for video output on HP9000/320 and HP9000/332, replacing driver code for the latter.
 - tms9914: Latch EOI flag until next byte is sent [Sven Schnelle].
 - hp_hil updates [Sven Schnelle]:
-  * Added HP46060B mouse device.
-  * Converted logging to use logmacro.h and removed MCFG macros.
+  * Added HP46060B mouse device;
+  * Converted logging to use logmacro.h and removed MCFG macros;
   * Removed obsolete bus error handler and superfluous RAM regions.
 - nscsi_bus.cpp, nscsi_cd.cpp, nscsi_hd.cpp: Disable logging by default [Sven Schnelle].
 - Emulated Fujitsu MB87030 SCSI controller [Sven Schnelle].
@@ -383,13 +383,13 @@ Source changes:
 - Added smartmedia to arcade build (now used by hapyfish) [MASH].
 - Added color overlay to Yosaku to Donbei [MASH, hap].
 - pc98.xml updates [r09]:
-  * Marked Brandish Renewal entries as cracks.
-  * Re-labeled disks with their actual names, and changed order so they automatically mount in a logical way.
-  * Added usage notes for software that requires DOS.
+  * Marked Brandish Renewal entries as cracks;
+  * Re-labeled disks with their actual names, and changed order so they automatically mount in a logical way;
+  * Added usage notes for software that requires DOS;
   * Removed images where only save game data differs, and removed user-created disks.
 - tourvis.cpp: Dumped BIOS versions V4-42 and V4-51. [Ricky2001, Recreativas.org].
 - deco0.cpp: Dumped 68705 MCU for drgninjab2 [Sean Riddle, ClawGrip, The Dumping Union].
--taito_f3.cpp: Verified that ROMs from a Puchi Carat Asia cartridge ROMs match the overseas version [SEGV].
+- taito_f3.cpp: Verified that ROMs from a Puchi Carat Asia cartridge ROMs match the overseas version [SEGV].
 - system1.cpp: Document that the parent Gardia set is Sega factory conversion [ShouTime].
 - Removed documentation for command-line options that are no longer supported, and added preliminary documentation for new options [Tafoid].
 - x68k_flop.xml: Added and corrected many entries [Wayder].

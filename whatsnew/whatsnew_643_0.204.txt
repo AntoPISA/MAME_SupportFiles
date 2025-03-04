@@ -2,26 +2,14 @@
 -----------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
-- 05613: [Graphics] (prehisle.cpp) prehislek: Introductory Text (Korean?) not displayed properly (Guru)
-- 06474: [Graphics] (segas16b.cpp) goldnaxe: Sprites fall out of sync with scrolling (hap)
-- 06607: [Sound] (xmen.cpp) xmen and clones: Instruments in the music play at the wrong volume (regression) (hap)
-- 06718: [Crash/Freeze] (mbc55x.cpp) mbc55x: Basic freezes on syntax errors (AJR)
-- 07046: [Gameplay] (deco32.cpp) dragngun, dragngunj: Screen goes black on third stage and the game stops (hap)
-- 07149: [Graphics] (docastle.cpp) dowild: The top of the screen flickers on completing level 1 (hap)
-- 07151: [Gameplay] (asteroid.cpp) astdelux and clones: High score shows FFFFFF with initial EAROM contents (AJR)
-- 07154: [Documentation] (megadriv.cpp) megadriv [ppersia2]: Release year is 1995 (Tafoid)
-
-
-New working machines
+New Working Machines
 --------------------
 Bare Knuckle III (bootleg of Megadrive version) [ShouTime, MetalliC]
 Dance Dance Revolution Disney Mix [Peter Bortas, ClawGrip, The Dumping Union, Recreativas.org]
 Game & Watch: Climber (new wide screen) [algestam]
 Game & Watch: Tropical Fish [algestam]
 
-New working clones
+New Working Clones
 ------------------
 Centipede (bootleg, set 2) [Joe Magiera, The Dumping Union]
 Dragon Master (set 2) [coolmod, The Dumping Union]
@@ -37,13 +25,13 @@ U.N. Defense Force: Earth Joker (US / Japan, set 2) [Phil Bennet]
 X-Men: Children of the Atom (Asia 941219) [Brad Hicks]
 Xevious 3D/G (World, XV32/VER.A) [pacman70, Asayuki]
 
-Machines promoted to working
+Machines Promoted to Working
 ----------------------------
 Abnormal Check [Guru]
 Alpha One (Vision Electronics) [David Haywood]
 Qume QVT-102 [Al Kossow, Dirk Best, Robbbert]
 
-New machines marked as NOT_WORKING
+New Machines Marked as NOT_WORKING
 ----------------------------------
 Bingo Galaxy (main) [Darksoft]
 Bingo Galaxy (satellite) [Darksoft]
@@ -68,7 +56,7 @@ Sport 2000 [PinMAME]
 Top T. Cash [f205v]
 unknown Elsy game [f205v]
 
-New clones marked as NOT_WORKING
+New Clones Marked as NOT_WORKING
 --------------------------------
 Arizona 10 (v1.1) [f205v]
 Dirt Devils (Germany?) [Ordyne]
@@ -86,7 +74,7 @@ Star Wars Trilogy Arcade (location test, 16.09.98) [coolmod, The Dumping Union]
 The Lost World (older) [Ordyne]
 Virtual On 2: Oratorio Tangram [coolmod, The Dumping Union]
 
-New working software list additions
+New Working Software List Additions
 -----------------------------------
 bbc_rom:
   ADE 1.00, ADE 1.9Z, ADE 2.01, ADE 2.02, ADE+, ADFS Utilities, AID, AIDS II Utility ROM, AIDS Utility ROM, AMS Disc Utility, AMX MAX Desktop, AMX Mouse Support 2.10, AMX Mouse Support 2.11, AMX Pagemaker 1.0, AMX Pagemaker Plus 1.3, AMX Pagemaker Plus 1.7, AMX Stop Press 1.9, AMX Super Rom 3.31, AMX Super Rom 3.41, AMX Super Rom 3.61, AMX Super Rom M3.61, ARTS Communication ROM, ASM 1.1, ASM 2.2, ATS 2.58, ATS 2.59 (Morley), ATS 3.0, ATS 3.1, Acorn ADFS 1.30, Acorn ANFS 4.08, Acorn ANFS 4.18, Acorn ANFS 4.21, Acorn ANFS 4.24, Acorn ANFS 4.25, Acorn DFS 0.90, Acorn DFS 0.98, Acorn DFS 2.10,
@@ -127,11 +115,11 @@ megadriv:
 uzebox (uzebox.xml):
   Wuergertime (Demo), Wuergertime with Music (Demo) [ArcadeShadow]
 
-Software list items promoted to working
+Software List Items Promoted to Working
 ---------------------------------------
 gamecom: The Lost World - Jurassic Park [Robbbert]
 
-New NOT_WORKING software list additions
+New NOT_WORKING Software List Additions
 ---------------------------------------
 bbc_rom:
   ADDER, AMX Design, Advanced BASIC Editor, EPROM 1.04, EPROM 1.08, Epromer II, Inter-Word 1.O2, MASTERboard,
@@ -166,15 +154,27 @@ ekara:
 electron_flop: E2P Hi-Basic, E2P Operating System (Disk) [Nigel Barnes]
 
 
+MAMETesters Bugs Fixed (8):
+---------------------------
+- 05613: [Graphics] (prehisle.cpp) prehislek: Introductory Text (Korean?) not displayed properly (Guru)
+- 06474: [Graphics] (segas16b.cpp) goldnaxe: Sprites fall out of sync with scrolling (hap)
+- 06607: [Sound] (xmen.cpp) xmen and clones: Instruments in the music play at the wrong volume (regression) (hap)
+- 06718: [Crash/Freeze] (mbc55x.cpp) mbc55x: Basic freezes on syntax errors (AJR)
+- 07046: [Gameplay] (deco32.cpp) dragngun, dragngunj: Screen goes black on third stage and the game stops (hap)
+- 07149: [Graphics] (docastle.cpp) dowild: The top of the screen flickers on completing level 1 (hap)
+- 07151: [Gameplay] (asteroid.cpp) astdelux and clones: High score shows FFFFFF with initial EAROM contents (AJR)
+- 07154: [Documentation] (megadriv.cpp) megadriv [ppersia2]: Release year is 1995 (Tafoid)
+
+
 Source changes:
 ---------------
 - v25: Added address space for internal data area and SFRs [AJR].
 - i8088: Mask I/O addresses to five bits [AJR].
 - mbc55x additions and refinements [AJR]:
-  * Corrected all clocks, and derived them from the master crystal.
-  * Corrected I/O address decoding.
-  * Connected speaker output to 8251 USART.
-  * Add ISA expansion slot, Centronics printer port, and RS-232 "line" port.
+  * Corrected all clocks, and derived them from the master crystal;
+  * Corrected I/O address decoding;
+  * Connected speaker output to 8251 USART;
+  * Add ISA expansion slot, Centronics printer port, and RS-232 "line" port;
   * Added backspace key to HLE keyboard and noted undumped microcontroller.
 - i8251: Implemented send break command [AJR].
 - z80dart: Don't reset the receiver whenever WR5 changes [AJR].
@@ -187,8 +187,8 @@ Source changes:
 - gottlieb.cpp: Cleaned up code [cam900].
 - hotblock.cpp: Confirmed crystal values, cleaned up video code, and deferred video RAM allocation to start time [cam900].
 - fantland.cpp cleanup [cam900]:
-  * Moved machines with ADPCM sound to a derived state class.
-  * Reduced runtime tag map lookups, ACCESSING_BITS macros, and code duplication.
+  * Moved machines with ADPCM sound to a derived state class;
+  * Reduced runtime tag map lookups, ACCESSING_BITS macros, and code duplication;
   * Improved function names and cleaned up code.
 - namcos2.cpp: Fixed C123 video RAM mirroring (fixes metlhawk intermission) [cam900].
 - gp9001.cpp: Restricted tilemap drawing to clipping rectangle, improved member names, and reduced redundant code [cam900].
@@ -197,23 +197,23 @@ Source changes:
 - stadhero.cpp: Cleand up code, removed some MCFG macros, improved naming, and added a note [cam900].
 - namco_c123tmap.cpp: Added support for offsets, half-height tilemaps, and eight-bit I/O (for using in namcos1.cpp) [cam900].
 - namcos1.cpp updates [cam900]:
-  * Converted C123 tilemap emulation to use device.
-  * Corrected some device types, crystal values and YM2151 clock frequencies.
+  * Converted C123 tilemap emulation to use device;
+  * Corrected some device types, crystal values and YM2151 clock frequencies;
   * Improved region names, reduced MCFG macro use, redundant code, and code duplication.
 - deco16ic.cpp: Allow graphics decode device to be configured using tag-like objects [cam900].
 - wrally.cpp cleanup [cam900]:
-  * Reduced runtime tag map lookups and use of ACCESSING_BITS macros.
+  * Reduced runtime tag map lookups and use of ACCESSING_BITS macros;
   * Cleaned up graphics decode description and reduced code duplication.
 - deco32.cpp cleanup [cam900]:
-  * Eliminated VIDEO_START_MEMBER, and improved member names and formatting, and cleaned up code.
+  * Eliminated VIDEO_START_MEMBER, and improved member names and formatting, and cleaned up code;
   * Simplified and reduced duplication in graphics decode descriptions.
 - thoop2.cpp: Reduced runtime tag map lookups, simplified graphics decode description, and reduced code duplication [cam900].
 - gaelco.cpp cleanup [cam900]:
-  * Reduced runtime tag map lookups, and improved member names.
+  * Reduced runtime tag map lookups, and improved member names;
   * Cleaned up graphics decode descriptions and ROM loading.
 - backfire.cpp updates [cam900]:
-  * Simplified graphics decode, description, and reduced duplicated and unused code.
-  * Deferred scroll RAM allocation until start time.
+  * Simplified graphics decode, description, and reduced duplicated and unused code;
+  * Deferred scroll RAM allocation until start time;
   * Added release regions to descriptions, and added notes.
 - alpha68k.cpp: Added note about unemulated video effect [cam900].
 - imagetek_i4100: Implemented device_gfx_interface, eliminated MCFG macros, and cleaned up sprite drawing code [cam900].
@@ -315,19 +315,19 @@ Source changes:
 - dp8573.cpp: Added DP8573 real-time clock emulation [Ryan Holtz].
 - sgi.cpp: Made RPSS counter more accurate, and added semaphore registers. Also converted logging to use logmacro, made logging more verbose, and updated to meet coding standards [Ryan Holtz].
 - indy_indigo2.cpp updates [Ryan Holtz]:
-  * Moved Indigo2 to a derived state class, and moved a number of devices into HPC3.
-  * Eliminated use of MACHINE_CONFIG_START/MACHINE_CONFIG_END macros.
+  * Moved Indigo2 to a derived state class, and moved a number of devices into HPC3;
+  * Eliminated use of MACHINE_CONFIG_START/MACHINE_CONFIG_END macros;
   * Hooked up pull-ups on EISA I/O space.
 - indigo.cpp updates [Ryan Holtz]:
-  * Separated indigo3k and indigo4k state classes.
-  * Hooked up RS-232 ports.
-  * Switched to new Zilog SCC implementation, and added PIT8254 device (uses incorrect clock value to work around hang).
-  * Fleshed out SCSI and started fleshing out HPC1 implementation.
-  * Hooked up new DP8573 real-time clock implementation.
-  * Improved RAM layout.
-  * Added stubs for DSP RAM and Entry-Level Graphics (LG1/LG2).
-  * Implemented LG1 palette setup, block drawing, pattern drawing, frame buffer copy, and remaining commands used by PROM monitor.
-  * Removed unused screen device.
+  * Separated indigo3k and indigo4k state classes;
+  * Hooked up RS-232 ports;
+  * Switched to new Zilog SCC implementation, and added PIT8254 device (uses incorrect clock value to work around hang);
+  * Fleshed out SCSI and started fleshing out HPC1 implementation;
+  * Hooked up new DP8573 real-time clock implementation;
+  * Improved RAM layout;
+  * Added stubs for DSP RAM and Entry-Level Graphics (LG1/LG2);
+  * Implemented LG1 palette setup, block drawing, pattern drawing, frame buffer copy, and remaining commands used by PROM monitor;
+  * Removed unused screen device;
   * Expanded logging and converted to use logmacro, and renamed variables to meet MAME coding standards.
 - t10sbc.cpp: Added support for Format Parameters and Geometry Parameters pages [Ryan Holtz].
 - scsicd512.cpp: Added various legacy SCSI CD-ROM devices that use 512-byte blocks by default [Ryan Holtz].
@@ -336,33 +336,33 @@ Source changes:
 - rs232/hlemouse.cpp: Added support for SGI Indigo mouse [Ryan Holtz].
 - o2.cpp: Added CRIME and MACE skeleton devices [Ryan Holtz].
 - mips3.cpp updates [Ryan Holtz]:
-  * Corrected R4400BE, R4400LE, R4600BE and R5000BE bus width to 64 bits.
-  * Fixed a bug that caused a crash with 64-bit data bus and the DRC.
+  * Corrected R4400BE, R4400LE, R4600BE and R5000BE bus width to 64 bits;
+  * Fixed a bug that caused a crash with 64-bit data bus and the DRC;
   * Added ability to log SGI O2 boot PROM DPRINTF calls (enabled with a preprocessor macro).
 - clifront.cpp: Improved descriptions of -showusage and -showconfig options [Ryan Holtz].
 - screen.cpp: Added a device callback to make it easier to hook the scan line timer [Ryan Holtz].
 - zerozone.cpp, zexall.cpp, zr107.cpp, zrt80.cpp, zt8802.cpp, zwackery.cpp, zx.cpp: Eliminated MACHINE_CONFIG_START/_END macros [Ryan Holtz].
 - m68kmmu improvements [Sven Schnelle]:
   * Handle RW bit in address translation cache properly.
-  * Add page table walk resulting in BUSERROR to address translation cache.
-  * Fixed PTEST instruction, and PTEST level report in MMU status register.
-  * Trap if PLOAD is called with MMU disabled on MC68851.
-  * Don't skip descriptor status update for page descriptors.
-  * Set address in PTEST to last descriptor address.
-  * Added function code page table lookup.
-  * Fixed TT register matching.
-  * Decode FC field for PLOAD insturction.
-  * Added support for eight-byte indirect descriptors.
-  * Don't change page table/address translation cache state on translations triggered by the debugger.
-  * Store B bit in address translation cache on bus error and set last logical address for handler.
+  * Add page table walk resulting in BUSERROR to address translation cache;
+  * Fixed PTEST instruction, and PTEST level report in MMU status register;
+  * Trap if PLOAD is called with MMU disabled on MC68851;
+  * Don't skip descriptor status update for page descriptors;
+  * Set address in PTEST to last descriptor address;
+  * Added function code page table lookup;
+  * Fixed TT register matching;
+  * Decode FC field for PLOAD insturctio;
+  * Added support for eight-byte indirect descriptors;
+  * Don't change page table/address translation cache state on translations triggered by the debugger;
+  * Store B bit in address translation cache on bus error and set last logical address for handler;
   * Show 68020/030/040 PMMU registers in the debugger.
 - debugger: Added "gp" command to run until the next privilege level change, and added support for "%c" format conversion [Sven Schnelle].
 - hp9k_3xx updates [Sven Schnelle]:
-  * Use correct memory map for HP9000/360.
+  * Use correct memory map for HP9000/360;
   * Fixed RTC data corruption bug (initial state of latch clock was unsafe).
 - nereid: Added overlay support (used by HP98550A), and implemented device_palette_interface [Sven Schnelle].
 - hp_dio: Added support for HP98550A high-resolution color graphics card, and made default for HP9000/360 and /370 [Sven Schnelle]:
-  * Window mover, pixel/window replacement rules, VRAM bit access, solid line drawing, and pattern mask copy are implemented.
+  * Window mover, pixel/window replacement rules, VRAM bit access, solid line drawing, and pattern mask copy are implemented;
   * Shape drawing, area fill, and additional copy modes are not supported.
 - hp_dio: Added support for HP98643A LANIC Ethernet card [Sven Schnelle].
 - qvt102: Dumped an additional firmware version, and dumped keyboard microcontroller [Al Kossow].

@@ -2,14 +2,7 @@
 -----------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
-- 07225: [Sound] (snk6502.cpp) Most machines in snk6502.cpp: Music plays incorrectly (Ivan Vangelista)
-- 07230: [DIP/Input] (taito_l.cpp) horshoes: Controls are broken (Ivan Vangelista)
-- 07231: [Crash/Freeze] (megadriv.cpp) megadriv [jpond]: Game doesn't start (Tafoid)
-
-
-New working machines
+New Working Machines
 --------------------
 Auto Response Board [hap, Berger]
 Backgammon Challenger [hap, balrog, Lord Nightmare]
@@ -30,7 +23,7 @@ Play TV Snowboarder (White) (NTSC) [Sean Riddle, Peter Wilhelmsen, David Haywood
 Spider-Man (JAKKS Pacific TV Game, Game-Key Ready) [Sean Riddle, anonymous]
 Wheel of Fortune (JAKKS Pacific TV Game, Game-Key Ready) [Sean Riddle, anonymous]
 
-New working clones
+New Working Clones
 ------------------
 Double Axle (US) [Evan Korzon, Jordan Eldredge, Brian Troha, Smitdogg, The Dumping Union]
 Fidelity Elite Avant Garde (model 6081, English) [hap, Berger]
@@ -59,13 +52,13 @@ Sweet Life (090720 Entertainment) [MetalliC]
 System-80 (50 Hz) [AJR]
 X-Men (4 Players ver JEA) [Artemio Urbina, The Dumping Union]
 
-Machines promoted to working
+Machines Promoted to Working
 ----------------------------
 Mattel Classic Sports [Sean Riddle, David Haywood, Ryan Holtz]
 Play TV Snowboarder (Blue) (NTSC) [Sean Riddle, Peter Wilhelmsen, David Haywood]
 Tiger Game.com [Robbbert]
 
-Clones promoted to working
+Clones Promoted to Working
 --------------------------
 ConnecTV Snowboarder (Blue) (PAL) [Sean Riddle, Peter Wilhelmsen, David Haywood]
 ConnecTV SSX Snowboarder (PAL) [Sean Riddle, Peter Wilhelmsen, David Haywood]
@@ -73,7 +66,7 @@ Double Dragon II - The Revenge (Japan) [Layer]
 Knights of the Round (bootleg) [Robbbert]
 Play 2000 (Super Slot & Gran Tesoro) (v4.0i) (Italy) [Peter Wilhelmsen, Morten Shearman Kirkegaard, caius, David Haywood]
 
-New machines marked as NOT_WORKING
+New Machines Marked as NOT_WORKING
 ----------------------------------
 35 in 1 Super Twins [Sean Riddle]
 ADM-31 Data Display Terminal [Bitsavers]
@@ -109,7 +102,7 @@ Winnie the Pooh - Piglet's Special Day (JAKKS Pacific TV Game, Game-Key Ready) [
 XaviX Music & Circuit (XaviXPORT) [Sean Riddle, Peter Wilhelmsen]
 Zeus IG900 20-in-1 (US?) [Sean Riddle, Peter Wilhelmsen]
 
-New clones marked as NOT_WORKING
+New Clones Marked as NOT_WORKING
 --------------------------------
 Advanced Bridge Challenger [hap]
 Boggy '84 (bootleg, set 2) [f205v]
@@ -132,7 +125,7 @@ Virtua NBA (prototype, 15.11) [coolmod, The Dumping Union]
 World Class Bowling Tournament (v1.30) [Brian Troha, The Dumping Union]
 Wyse Technology WY-60 (set 2) [AJR]
 
-New working software list additions
+New Working Software List Additions
 -----------------------------------
 apple2_flop_clcracked:
   2400 A.D. (cleanly cracked), Ace Detective revision 2 (cleanly cracked), A Brand New View (cleanly cracked),
@@ -222,14 +215,12 @@ vsmile_cart:
   V.Smile PC Pal Island (USA, Rev. 3?), V.Smile Soccer Challenge (USA) [Sean Riddle, TeamEurope]
   Disney's The Lion King - Simba's Big Adventure (USA), Disneys Winnie the Pooh - The Honey Hunt (USA) [Sean Riddle]
 
-
-Software list items promoted to working
+Software List Items Promoted to Working
 ---------------------------------------
 jakks_gamekey_nk: Soccer Shootout & Juego De Futbol De Dora & Dora's Star Mountain Adventure [David Haywood]
 jakks_gamekey_sw: Turret Defense & Yoda's Escape [Sean Riddle, Peter Wilhelmsen, Ryan Holtz]
 
-
-New NOT_WORKING software list additions
+New NOT_WORKING Software List Additions
 ---------------------------------------
 apricot_flop:
   apricot Networks VB1.3 F-Series (Beta Release), apricot Networks VB1.3 PC/Xi (Beta Release), apricot Networks VR1.3 F-Series,
@@ -267,6 +258,13 @@ vsmilem_cart:
   [Sean Riddle, TeamEurope]
 
 
+MAMETesters Bugs Fixed 3):
+--------------------------
+- 07225: [Sound] (snk6502.cpp) Most machines in snk6502.cpp: Music plays incorrectly (Ivan Vangelista)
+- 07230: [DIP/Input] (taito_l.cpp) horshoes: Controls are broken (Ivan Vangelista)
+- 07231: [Crash/Freeze] (megadriv.cpp) megadriv [jpond]: Game doesn't start (Tafoid)
+
+
 Translations added or modified
 ------------------------------
 Portuguese (Brazil) [Wellington Uemura]
@@ -277,9 +275,9 @@ Source changes:
 - z8: Fixed disassembly of LD IR,R opcode, and changed INCW/DECW to show RRn instead of Rn [AJR].
 - tv955kb: Start with reset control input inactive [AJR].
 - scn2674: Improved row buffering and timing [AJR]:
-  * Added optional read callbacks for row buffering DMA.
-  * Added MBC output.
-  * Corrected timing of BREQ and VBLANK outputs.
+  * Added optional read callbacks for row buffering DMA;
+  * Added MBC output;
+  * Corrected timing of BREQ and VBLANK outputs;
   * Improved character blink and cursor blink timing.
 - ay31015: Removed internal Baud rate generator as the actual device lacks this functionality [AJR].
 - trs80.cpp: Changed HT-1080Z to use 50 Hz timings [AJR].
@@ -316,10 +314,10 @@ Source changes:
 - tandy2k: Added support for graphics adapter and mouse [Carl].
 - Changed "over-sleep" calculation to be independent of desired delay [Celelibi].
 - Netlist library updates [Couriersud]:
-  * Added clang-tidy support to makefile and made recommended changes.
-  * Refactored code, converted macros to C++ and cleaned up state saving.
-  * Made order of device creation independent of standard library.
-  * Made startup strategy configurable.
+  * Added clang-tidy support to makefile and made recommended changes;
+  * Refactored code, converted macros to C++ and cleaned up state saving;
+  * Made order of device creation independent of standard library;
+  * Made startup strategy configurable;
   * Made plib respect C++11 alignas specifier and added alignment hints to some container classes.
 - Fixed SDL keyboard map handling, cleaned up obsolete code, and updated German keyboard map [Couriersud].
 - vii.cpp: Corrected title for "Dora the Explorer - Nursery Rhyme Adventure (JAKKS Pacific TV Game, Game-Key Ready)". Previously misidentified as "Dora the Explorer - Race To Play Park (JAKKS Pacific TV Game, Game-Key Ready)" [David Haywood].
@@ -339,33 +337,33 @@ Source changes:
 - astrcorp.cpp: Figured out the first layers of the astoneag encryption [O. Galibert].
 - xc1700e.cpp: Emulated Xilinx XC1700 series serial PROMs [Patrick Mackinlay].
 - Improved usability of cheat finder plugin [Pugsy]:
-  * Improved visual indicators.
-  * Added automatic pause feature to cheat finder menus.
-  * Allowed test write value to be selected from a pre-defined list.
+  * Improved visual indicators;
+  * Added automatic pause feature to cheat finder menus;
+  * Allowed test write value to be selected from a pre-defined list;
   * Added an additional output format for cheats.
 - g65816: Corrected length of WDM opcode to two bytes and added a callback allowing systems to handle it [R. Belmont].
 - apple2: Added AppleWin-like initial memory fill (fixes hang in Joust) [R. Belmont].
 - sbrain: Added 50 Hz BIOS hack [Robbbert].
 - apple2: Enhanced disassembly for 8-bit Apple II systems [R. Belmont]:
-  * Shows symbolic names for Monitor ROM entry points, I/O locations and common zero-page locations.
+  * Shows symbolic names for Monitor ROM entry points, I/O locations and common zero-page locations;
   * Shows ProDOS calls with the call name and lets you step over them completely.
 - vii.cpp: Identified difficulty-select bit for mattelcs [Ryan Holtz].
 - vsmile_cart: Added support for later 8 Mword cartridges [Ryan Holtz].
 - sgi_mc_device: Added preliminary VDMA support [Ryan Holtz].
 - SGI Newport graphics updates [Ryan Holtz]:
-  * Added support for backward spans and more command configurations, and fixed window checking.
-  * Converted to use 64-bit read/write handlers, fixing graphics DMA.
-  * Added preliminary logical operation support and pop-up plane support.
-  * Fixed vertical blanking behaviour and cursor palette, and fixed Scr2Scr to account for XYWindow.
-  * Made ColorRed contents transfer to ColorI on write.
-  * Added preliminary color index MSB handling.
-  * Added logging support to allow viewing captures offline.
-  * Fixed write masking and xsave calculation.
-  * Fixed lines overshooting by one pixel, not updating X/Y start and writing invalid palette values.
-  * Added DID entry handling (fixes palette issues in buttonfly).
-  * Added basic support for shade DDAs and some other command configurations (fixes jot).
-  * Added direct RGB handling (used for IRIX login screen and icons).
-  * Fixed double-buffered source value shifts (fixes flickering in buttonfly).
+  * Added support for backward spans and more command configurations, and fixed window checking;
+  * Converted to use 64-bit read/write handlers, fixing graphics DMA;
+  * Added preliminary logical operation support and pop-up plane support;
+  * Fixed vertical blanking behaviour and cursor palette, and fixed Scr2Scr to account for XYWindow;
+  * Made ColorRed contents transfer to ColorI on write;
+  * Added preliminary color index MSB handling;
+  * Added logging support to allow viewing captures offline;
+  * Fixed write masking and xsave calculation;
+  * Fixed lines overshooting by one pixel, not updating X/Y start and writing invalid palette values;
+  * Added DID entry handling (fixes palette issues in buttonfly);
+  * Added basic support for shade DDAs and some other command configurations (fixes jot);
+  * Added direct RGB handling (used for IRIX login screen and icons);
+  * Fixed double-buffered source value shifts (fixes flickering in buttonfly);
   * Fixed swapped X/Y in Bresenham line drawing (fixes misplaced graphics in buttonfly).
 - 8042kbdc: Added timer to periodically check mouse (fixes mouse in IRIX) [Ryan Holtz].
 - r4000: Fixed ABS.S and ABS.D (fixes IRIX X11 server crashes) [Ryan Holtz].

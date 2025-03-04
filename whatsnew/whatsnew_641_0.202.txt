@@ -2,37 +2,12 @@
 -----------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
-- 05059: [Documentation] Some games have incorrect release year listed (sjy96525)
-- 05881: [Documentation] (whitestar.cpp) rctycn and all clones: Incorrect descriptions (sjy96525)
-- 05904: [Graphics] (sshangha.cpp) sshangha, sshanghaj: Sprite priority bug with the in-game message boxes (David Haywood)
-- 06020: [Color/Palette] (sshangha.cpp) sshangha, sshanghab, sshanghaj: Black sprites in some cutscenes (David Haywood)
-- 06258: [Graphics] (taitogn.cpp) usagi: Weird background color for score recap (smf)
-- 06874: [Gameplay] (seattle.cpp) blitz: Hangs on a black screen if the power-on self test is enabled (Ted Green)
-- 06967: [Crash/Freeze] (msx.cpp) canonv30f: [debug] Assertion Failed! m_entrymap.find(name) == m_entrymap.end() (Robbbert)
-- 06991: [Crash/Freeze] (model1.cpp) swa: Crash with access violation after a while (AJR)
-- 06998: [Interface] Software lists title screenshot directories not working (Robbbert)
-- 07021: [DIP/Input] (vtech2.cpp) laser500: Reset key is not mapped (hap)
-- 07074: [Graphics] (skykid.cpp) drgnbstr: The title logo is not displayed correctly (kunikuni)
-- 07076: [Graphics] (psikyo.cpp) tengaij, tengai and maybe more: [possible] Bad glitch graphic on some stages (cam900)
-- 07081: [Crash/Freeze] (amstrad.cpp) cpc6128: Certain disks that work in older releases won't run (AmatCoder)
-- 07085: [Crash/Freeze] (mcr.cpp) Most machines in mcr.cpp, mcr3.cpp: Calling member function with null this pointer (Vas Crabb)
-- 07086: [Crash/Freeze] (r9751.cpp) r9751: [debug] Assertion Failed! Expression: m_functions.empty() (Osso)
-- 07087: [Crash/Freeze] (atari400.cpp) a400, a400pal, a800, a800pal: Object finders are not for resources created on start (Vas Crabb)
-- 07089: [Crash/Freeze] Assorted machines: Attempting to bind callbacks to parent of root device (Vas Crabb)
-- 07090: [Crash/Freeze] (astrocde.cpp) tenpindx: Invalid format string in output finder tag (Vas Crabb)
-- 07091: [DIP/Input] (namcos2.cpp) sgunner2, sgunner2j: Coin inputs are not registered (AJR)
-- 07092: [DIP/Input] (targeth.cpp) targeth, targeth10, targetha: Player 2 Y axis is broken, and X axis is inverted (AJR)
-- 07096: [Crash/Freeze] (micro3d.cpp) All sets in micro3d.cpp: Hang during the boot process (AJR)
-
-
-New working machines
+New Working Machines
 --------------------
 Emma II trainer [Robbbert]
 Pitapat Puzzle [David Haywood, ClawGrip, Brian Troha, The Dumping Union]
 
-New working clones
+New Working Clones
 ------------------
 800 Fathoms (older) [ShouTime, The Dumping Union]
 Acorn Electron (Trial) [Centre for Computing History, ABUG]
@@ -60,13 +35,13 @@ TouchDown Fever 2 (bootleg) [ClawGrip, Roberto Fresca, Recreativas.org, The Dump
 Vendetta (World, 4 Players, ver. ?) [Jorge Silva]
 WEC Le Mans 24 (v2.01) [ClawGrip, Roberto Fresca, Recreativas.org, The Dumping Union]
 
-Machines promoted to working
+Machines Promoted to Working
 ----------------------------
 Air Combat 22 (Rev. ACS1 Ver.B, Japan) [hap]
 Cart Fury [Ted Green]
 Jugend+Technik CompJU+TEr [Robbbert]
 
-Clones promoted to working
+Clones Promoted to Working
 --------------------------
 Jugend+Technik CompJU+TEr (EMR-ES 1988) [Robbbert]
 Jugend+Technik CompJU+TEr (ES 2.3) [Robbbert]
@@ -77,7 +52,7 @@ Lucky Ball 96 (Ver 3.50 - 626) [Roberto Fresca, Grull Osgo]
 Lucky Ball 96 (Ver 3.50 - 627) [Roberto Fresca, Grull Osgo]
 Stop Thief (Electronic Crime Scanner) (patent) [Mike]
 
-New machines marked as NOT_WORKING
+New Machines Marked as NOT_WORKING
 ----------------------------------
 Hazeltine 1420 Video Display Terminal [AJR]
 Hazeltine 1552 [Al Kossow]
@@ -88,7 +63,7 @@ MIPS Magnum R4000 (little) [Patrick Mackinlay]
 Nvidia nForce PC (CRUSH11/12) [Samuele Zannoli]
 Video 21 [MikeMcBike, Robbbert, hap, David Haywood]
 
-New clones marked as NOT_WORKING
+New Clones Marked as NOT_WORKING
 --------------------------------
 Acorn Briefcase Communicator [Centre for Computing History, ABUG]
 Acorn Communicator (Italian) [Centre for Computing History, ABUG]
@@ -97,7 +72,7 @@ Diner (LF-2) French [PinMAME]
 The House of the Dead (prototype) [Andy Geezer]
 Wyse WY-75 [Robbbert]
 
-New working software list additions
+New Working Software List Additions
 -----------------------------------
 c64_flop: Bill Budge: Pinball Construction Set, JingleDisk - Holiday Musical Story with Computer Animation [FakeShemp]
 camplynx_cass: Super Air Raid [Nigel Barnes]
@@ -114,10 +89,35 @@ interpro: Intergraph Mechanical Software [Brian Ekins]
 uzebox: Babylon Tower, Bomber, Bugz, Fifteen Puzzle, Holey Moley, Joyrider [ArcadeShadow]
 
 
-New NOT_WORKING software list additions
+New NOT_WORKING Software List Additions
 ---------------------------------------
 bbc_flop_6502: P-System [Nigel Barnes]
 bbcm_cart: Smart Cartridge [Centre for Computing History, ABUG]
+
+
+MAMETesters Bugs Fixed (21):
+----------------------------
+- 05059: [Documentation] Some games have incorrect release year listed (sjy96525)
+- 05881: [Documentation] (whitestar.cpp) rctycn and all clones: Incorrect descriptions (sjy96525)
+- 05904: [Graphics] (sshangha.cpp) sshangha, sshanghaj: Sprite priority bug with the in-game message boxes (David Haywood)
+- 06020: [Color/Palette] (sshangha.cpp) sshangha, sshanghab, sshanghaj: Black sprites in some cutscenes (David Haywood)
+- 06258: [Graphics] (taitogn.cpp) usagi: Weird background color for score recap (smf)
+- 06874: [Gameplay] (seattle.cpp) blitz: Hangs on a black screen if the power-on self test is enabled (Ted Green)
+- 06967: [Crash/Freeze] (msx.cpp) canonv30f: [debug] Assertion Failed! m_entrymap.find(name) == m_entrymap.end() (Robbbert)
+- 06991: [Crash/Freeze] (model1.cpp) swa: Crash with access violation after a while (AJR)
+- 06998: [Interface] Software lists title screenshot directories not working (Robbbert)
+- 07021: [DIP/Input] (vtech2.cpp) laser500: Reset key is not mapped (hap)
+- 07074: [Graphics] (skykid.cpp) drgnbstr: The title logo is not displayed correctly (kunikuni)
+- 07076: [Graphics] (psikyo.cpp) tengaij, tengai and maybe more: [possible] Bad glitch graphic on some stages (cam900)
+- 07081: [Crash/Freeze] (amstrad.cpp) cpc6128: Certain disks that work in older releases won't run (AmatCoder)
+- 07085: [Crash/Freeze] (mcr.cpp) Most machines in mcr.cpp, mcr3.cpp: Calling member function with null this pointer (Vas Crabb)
+- 07086: [Crash/Freeze] (r9751.cpp) r9751: [debug] Assertion Failed! Expression: m_functions.empty() (Osso)
+- 07087: [Crash/Freeze] (atari400.cpp) a400, a400pal, a800, a800pal: Object finders are not for resources created on start (Vas Crabb)
+- 07089: [Crash/Freeze] Assorted machines: Attempting to bind callbacks to parent of root device (Vas Crabb)
+- 07090: [Crash/Freeze] (astrocde.cpp) tenpindx: Invalid format string in output finder tag (Vas Crabb)
+- 07091: [DIP/Input] (namcos2.cpp) sgunner2, sgunner2j: Coin inputs are not registered (AJR)
+- 07092: [DIP/Input] (targeth.cpp) targeth, targeth10, targetha: Player 2 Y axis is broken, and X axis is inverted (AJR)
+- 07096: [Crash/Freeze] (micro3d.cpp) All sets in micro3d.cpp: Hang during the boot process (AJR)
 
 
 Translations added or modified
@@ -125,8 +125,8 @@ Translations added or modified
 Korean [Neius]
 
 
-Source Changes
---------------
+Source changes:
+---------------
 - pipibibsbl: Fixed clocks - they're different to original [AJR].
 - Moved imperfect graphics flag from drivers to PSX GPU device [AJR].
 - m6502: Made SET instruction in Mitsubishi M740 subfamily actually affect execution (fixes MT07091) [AJR].
@@ -134,8 +134,8 @@ Source Changes
 - froggervd: Patched program ROMs, allowing game to work [AJR].
 - imds2: Split out emulation of I/O controller board as separate device. Also identified and added more IOC firmware revisions [AJR].
 - z80dart: Fixed miscellaneous bugs [AJR]:
-  * Default RxD to 1 to avoid spurious break condition.
-  * Corrected CTS level in RR0 after "Reset External/Status Interrupt" command.
+  * Default RxD to 1 to avoid spurious break condition;
+  * Corrected CTS level in RR0 after "Reset External/Status Interrupt" command;
   * Allow immediate de-assertion of RTS output when nothing is being transmitted.
 - pcd.cpp: Fixed pcx display [AJR].
 - tzx_cass.cpp: Finish a block with a 1 ms minimum pause when specified pause length is zero [AmatCoder].
@@ -149,13 +149,13 @@ Source Changes
 - legionna.cpp: Corrected metadata for denjinmk [cam900].
 - psikyo.cpp, dreamwld.cpp: Fixed tilemap rowscroll effects [cam900].
 - Improved PC-FX sound [cam900]:
-  * huc6230: Fixed PSG, converted ADPCM update to timer callback, and implemented CD-DA volume control.
+  * huc6230: Fixed PSG, converted ADPCM update to timer callback, and implemented CD-DA volume control;
   * huc6272: Fixed CD-DA output.
 - yunsun16.cpp: Reduced code duplication, run-time tag map lookups and unused members, and simplified tilemap scanning code [cam900].
 - funybubl.cpp cleanup [cam900]:
-  * Cleaned up member and region naming, and reduced run-time tag map lookups.
-  * Corrected Oki M6295 clock and converted sample space to memory bank.
-  * Corrected palette size and converted to use palette decoder member.
+  * Cleaned up member and region naming, and reduced run-time tag map lookups;
+  * Corrected Oki M6295 clock and converted sample space to memory bank;
+  * Corrected palette size and converted to use palette decoder member;
   * Converted VRAM to use address map bank device, and converted drawing to use tilemap system.
 - sshangha.cpp: Fixed Oki M6295 clock and pin 7 level [cam900].
 - nmg5.cpp: Converted bitmap layer to use a MAME bitmap, reduced need for ACCESSING_BITS, and reduced code duplication [cam900].
@@ -173,17 +173,17 @@ Source Changes
 - opwolf: Removed C-chip simulation and cleaned up code [Dirk Best].
 - opwolfb: Inputs are read by Z80 and written to shared RAM [Dirk Best].
 - galaxian.cpp updates [kazblox]:
-  * Improved machine configuration and video sync in Take Off, Explorer, and Amigo (set 2).
-  * Marked Explorer and Amigo (set 2) as having imperfect sound emulation.
-  * Marked Take Off as having incorrect colors.
-  * Fixed Jump Bug starfield limit.
-  * Fixed bullet size in 'Scramble'.
-  * Derived jungsub clocks from the L-1200-2 pixel clock, as the Subelectro 113 board has no crystals.
-  * Improved 'SF-X' and 'Monster Zero' background drawing.
-  * Converted to use MCFG_SCREEN_VBLANK_CALLBACK rather than MCFG_DEVICE_VBLANK_INT_DRIVER.
-  * Changed turpins to derive from Super Cobra rather than Scramble.
-  * Added sound program ROMs from 'Amidar' to 'Mandinga', marked as bad dump.
-  * Improved protection simulation for 'The End' and 'Scramble'.
+  * Improved machine configuration and video sync in "Take Off", "Explorer" and "Amigo (set 2)";
+  * Marked Explorer and Amigo (set 2) as having imperfect sound emulation;
+  * Marked Take Off as having incorrect colors;
+  * Fixed Jump Bug starfield limit;
+  * Fixed bullet size in "Scramble";
+  * Derived jungsub clocks from the L-1200-2 pixel clock, as the Subelectro 113 board has no crystals;
+  * Improved 'SF-X' and 'Monster Zero' background drawing;
+  * Converted to use MCFG_SCREEN_VBLANK_CALLBACK rather than MCFG_DEVICE_VBLANK_INT_DRIVER;
+  * Changed turpins to derive from "Super Cobra" rather than "Scramble";
+  * Added sound program ROMs from "Amidar" to "Mandinga", marked as bad dump;
+  * Improved protection simulation for "The End" and "Scramble";
 - mimonscr: Fixed video RAM mirror address - score is now displayed correctly [kazblox].
 - pacland.cpp: Improved sprite priority and drawing at screen edges [kunikuni].
 - sn76496.cpp: Made NCR8496 and PSSJ-3 noise generator behaviour match hardware tests [Lord Nightmare, Qbix, ValleyBell, NewRisingSun].

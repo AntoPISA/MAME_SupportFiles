@@ -2,16 +2,7 @@
 -----------------------------------
 
 
-MAME Testers Bugs Fixed
------------------------
-- 07560: [Crash/Freeze] (cave.cpp) hotdogst: Using debugger memdump command causes MAME to crash (O. Galibert).
-- 07603: [Documentation] (snes.cpp) snes [asterix]: Release year does not match title screen (ArcadeShadow).
-- 07615: [Documentation] (cninja.cpp) mutantf, mutantf2, mutantf3, mutantf4, deathbrd: Release years are incorrect (jkburks).
-- 07616: [Sound] (segas32.cpp) radr, radrj, radru: Sounds are incorrect (Arzeno Fabrice).
-- 07617: [Graphics] (rungun.cpp) rungun: Sprites are offset vertically (sjy96525).
-
-
-New working machines
+New Working Machines
 --------------------
 Anime Champ (GCA07 VER. JAA) [Windy Fairy, smf]
 Computer Chess (Conic, model 7012) [hap, bataais]
@@ -39,7 +30,7 @@ Super Space Invader 2 (Entex, black version) [hap]
 Tandy Corporation Sound Effects Chassis [hap, Kevin Horton]
 Tech2Go / WayForward Teenage Mutant Ninja Turtles: Battle for the City [Sean Riddle, Kamaal Brown]
 
-New working clones
+New Working Clones
 ------------------
 Big Run (11th Rallye version, US?) [system11, CoolFox]
 Cobra-Command (Japan, bootleg) [f205v]
@@ -76,7 +67,7 @@ Warriors of Fate (bootleg) [TwistedTom]
 Warriors of Fate (bootleg with PIC16C57) [hammy, ekorz, rtw]
 X-Men (4 Players ver UEB) [Joe Magiera, The Dumping Union]
 
-Machines promoted to working
+Machines Promoted to Working
 ----------------------------
 Crazy Kong (Gakken) [hap]
 Lady Gum [Dirk Best]
@@ -84,13 +75,13 @@ Luxor Datorer AB ABC 802 [Curt Coder]
 Milton Bradley Microvision [hap]
 Professor Trivia (set 1) [Dirk Best, Ivan Vangelista]
 
-Clones promoted to working
+Clones Promoted to Working
 --------------------------
 Atom (bootleg of Bombjack Twin) [Ivan Vangelista]
 Professor Trivia (set 2) [Dirk Best, Ivan Vangelista]
 Sangokushi II (bootleg) [TwistedTom]
 
-New machines marked as NOT_WORKING
+New Machines Marked as NOT_WORKING
 ----------------------------------
 Bandai Go! Go! Connie-chan! Asobou Mouse [Sean Riddle, David Haywood, Peter Wilhelmsen, gamehistory.org, anonymous]
 Carol Vorderman's Sudoku Plug & Play TV Game (All in 1 / Play Vision) [Sean Riddle, David Haywood]
@@ -124,7 +115,7 @@ TV Station (VTech, Spain) [Sean Riddle, ClawGrip]
 unknown Recreativos Franco slot machine [jordigahan]
 Yamaha TX81Z FM Tone Generator [DBWBP]
 
-New clones marked as NOT_WORKING
+New Clones Marked as NOT_WORKING
 --------------------------------
 Alligator Hunt (protected, prototype?) [jordigahan, Heckler]
 Crazy Bonus 2002 (Ver. 1, set 3) [Ioannis Bampoulas]
@@ -143,7 +134,7 @@ Siemens PG-750 486 EISA [rfka01]
 Striker Xtreme (1.00) [PinMAME]
 Zenith Data Systems Z-248 [rfka01]
 
-New working software list additions
+New Working Software List Additions
 -----------------------------------
 apple2_flop_clcracked:
   The Latin Hangman (Revision 1004) (cleanly cracked), The Sea Voyagers (cleanly cracked), The Wreck of the BSM Pandora (cleanly cracked) [4am, Firehawke]
@@ -194,14 +185,14 @@ vgmplay:
 vsmile_cart:
   Avventura nel Parco Alfabeto (Italy), Disney/Pixar Toy Story 2 - Operazione: Salvataggio di Woody! (Italy), Nickelodeon Spongebob - Un giorno da Spugna (Italy), Spider-Man & Friends - La Sfida del Dottor Ock (Italy), V.Smile Football Club (Italy) [tag2015]
 
-Software list items promoted to working
+Software List Items Promoted to Working
 ---------------------------------------
 fmtowns_cd:
   Angel [r09]
   Shamhat - The Holy Circlet, Suzaku [wiggy2k, r09]
 fmtowns_flop: Music Pro-Towns (1989-08-28) [r09]
 
-New NOT_WORKING software list additions
+New NOT_WORKING Software List Additions
 ---------------------------------------
 bbc_flop_torch: Graduate DFS, Graduate MS-DOS 2.11, Psion Xchange 1.24 [Nigel Barnes]
 cd32: Heimdall 2 - Into The Hall Of Worlds, Jetstrike, Microcosm, Project-X and F17 Challenge, Universe [Guru]
@@ -224,12 +215,21 @@ vsmilem_cart:
   Disney La Maison de Mickey (France, Rev. 005), Marvel Spider-Man & ses amis - Missions Secretes (France), Mon Youtou tout fou! (France) [DisizDream]
 
 
+MAME Testers Bugs Fixed (5):
+----------------------------
+- 07560: [Crash/Freeze] (cave.cpp) hotdogst: Using debugger memdump command causes MAME to crash (O. Galibert).
+- 07603: [Documentation] (snes.cpp) snes [asterix]: Release year does not match title screen (ArcadeShadow).
+- 07615: [Documentation] (cninja.cpp) mutantf, mutantf2, mutantf3, mutantf4, deathbrd: Release years are incorrect (jkburks).
+- 07616: [Sound] (segas32.cpp) radr, radrj, radru: Sounds are incorrect (Arzeno Fabrice).
+- 07617: [Graphics] (rungun.cpp) rungun: Sprites are offset vertically (sjy96525).
+
+
 Source changes:
 ---------------
 - cpu/z180: Moved some internal registers out of the base class, and implemented software-selectable clock divider [AJR].
 - cpu/mcs96: Added N8097BH and P8798 variants, and changed some variants to use 16-bit buses [AJR].
 - cpu/upd78k updates [AJR]:
-  * Fixed disassembly of DBNZ and MOV A,!addr16 instructions for uPD78K/III.
+  * Fixed disassembly of DBNZ and MOV A,!addr16 instructions for uPD78K/III;
   * Fixed disassembly of SFR-mode read/modify/write instructions for uPD78K/I and uPD78K/II.
 - atarist.cpp: Fixed the 68K side of ACIA serial communications (keyboard microcontroller is not fully cooperating yet) [AJR].
 - acia6850: Fixed transmission of a spurious character following master reset [AJR].
@@ -246,9 +246,9 @@ Source changes:
 - machine/am9517a.cpp: Assert EOP during final DMA transfer, rather than after [AJR].
 - c64_cart.xml: Worked around error messages for unsupported cartridge types [AJR].
 - cpu/z8000 updates [AJR]:
-  * Corrected width of Z8002 I/O space to 8 bits.
-  * Forced sequence points after functions with side effects when calculating operands for certain instruction modes.
-  * Implemented byte smearing for memory and I/O writes.
+  * Corrected width of Z8002 I/O space to 8 bits;
+  * Forced sequence points after functions with side effects when calculating operands for certain instruction modes;
+  * Implemented byte smearing for memory and I/O writes;
   * Improved misaligned word I/O implementation.
 - machine/6883sam.cpp: Replaced custom banking with conventional address spaces [AJR].
 - bus/isa: Corrected CRT controller type for Olivetti M24 CGA card [AJR].
@@ -256,44 +256,44 @@ Source changes:
 - debugger/osx: Avoid crash if a non-existent disassembly or memory view source is selected [AJR].
 - cyberbal.cpp: Encapsulated Atari SAC sound board emulation as a device derived from the Atari JSA sound board device [AJR].
 - atarisy1.cpp, atarisy2.cpp, gauntlet.cpp: Cleaned up and modernized code [AJR]:
-  * Replaced Atari sound communication device with generic latches, and improved handling of programmed sound resets.
-  * Added the other 74LS259 addressable latch to gauntlet.cpp.
+  * Replaced Atari sound communication device with generic latches, and improved handling of programmed sound resets;
+  * Added the other 74LS259 addressable latch to gauntlet.cpp;
   * Corrected watchdog timeouts for all three drivers.
 - cpu/m68000: Corrected 68010 DBcc timings [AJR].
 - atarisy1.cpp: Removed TMS5220C and VIA from machine configuration for marble and peterpak [AJR].
 - atarisy1.cpp: Marked indytemp as having imperfect sound and noted regression [AJR].
 - malzak.cpp updates [Angelo Salese]:
-  * Added default non-volatile RAM content to Malzak II so that it boots as intended.
-  * Converted playfield drawing to use a tilemap, improved playfield colors, and implemented playfield tile banking.
+  * Added default non-volatile RAM content to Malzak II so that it boots as intended;
+  * Converted playfield drawing to use a tilemap, improved playfield colors, and implemented playfield tile banking;
   * Added base mixing and priority.
 - segas32.cpp: Truncate background layer color base to nine bits - fixes Arabian Fight and Soreike Kokology erratic black pens [Angelo Salese].
 - tmnt.cpp: Fixed Golfing Greats (Japan) inputs [Angelo Salese].
 - konamigx.cpp updates [Angelo Salese]:
-  * Fixed 'Golfing Greats 2' inputs, re-worked DIP switches for all games, and added DIP switch locations.
-  * Fixed right monitor sprite DMA with type 3/4 protection, and fixed right screen protection in Rushing Heroes and Run & Gun 2.
+  * Fixed "Golfing Greats 2" inputs, re-worked DIP switches for all games, and added DIP switch locations;
+  * Fixed right monitor sprite DMA with type 3/4 protection, and fixed right screen protection in "Rushing Heroes" and "Run & Gun 2";
   * Dual-monitor 4-player mode now works, and is enabled by default.
 - pcktgal.cpp: Reset MSM5205 on changing sound bank (fixes annoying whistling sounds) [Angelo Salese].
 - renegade.cpp updates [Angelo Salese]:
-  * Fixed vertical sprite alignment.
-  * Hooked up interrupt acknowledgement and corrected interrupt routing.
+  * Fixed vertical sprite alignment;
+  * Hooked up interrupt acknowledgement and corrected interrupt routing;
   * Hooked up coin counters.
 - opwolf.cpp: Corrected Operation Wolf palette format according to schematics, and verified against PCB [Bryan McPhail].
 - cave.cpp updates [cam900]:
-  * Implemented sprite position scale register.
-  * Fixed ppsatan tilemap offsets.
-  * Implemented sprite limits.
+  * Implemented sprite position scale register;
+  * Fixed ppsatan tilemap offsets;
+  * Implemented sprite limits;
   * Added logging for unimplemented video register writes and expanded notes.
 - atarist.cpp: Corrected DMA sound frequency calculation [cam900].
 - decbac06.cpp updates [cam900]:
-  * Fixed flags map handling.
-  * Added callback for system-specific tile attribute formats.
+  * Fixed flags map handling;
+  * Added callback for system-specific tile attribute formats;
   * Refactored pen masking to use set_transmask.
 - dec0.cpp: Cleaned up code [cam900].
 - madmotor.cpp: Simplified graphics layouts [cam900].
 - psikyo.cpp: Simplified dynamic tilemap size handling, converted drawing to use 32-bit RGB bitmap, and cleaned up code [cam900].
 - deco16ic.cpp: Fixed transparency handling with custom drawing, and added a callback for tile info and 8-bit mixing [cam900].
 - cninja.cpp updates [cam900]:
-  * Fixed robocop2 8-bit tilemap drawing.
+  * Fixed robocop2 8-bit tilemap drawing;
   * Fixed sound routing for games with mono output, and removed unnecessary graphics layouts [cam900].
 - darkseal.cpp: Cleaned up graphics decoding layouts [cam900].
 - sshangha.cpp updates: Cleaned up graphics decoding layouts, corrected palette size, and changed to mono sound output [cam900].
@@ -313,16 +313,16 @@ Source changes:
 - mw8080bw.cpp: Added netlist-based audio for gunfight [Colin Howell].
 - video/apple2.cpp: Fixed DHGR shift - NTSC artifact colors now work with HLSL (GitHub #6308) [Colin Howell, R. Belmont].
 - netlist library updates [Couriersud]:
-  * Added pre-compiled static solvers (must be manually rebuilt when netlists are updated).
+  * Added pre-compiled static solvers (must be manually rebuilt when netlists are updated);
   * Improved performance of time step calculation.
 - bus/abcbus updates [Curt Coder]:
-  * Fixed default DIP switch settings for the Luxor 4105 SASI interface.
-  * Added a ROM to the Xebec S1410.
+  * Fixed default DIP switch settings for the Luxor 4105 SASI interface;
+  * Added a ROM to the Xebec S1410;
   * Fixed the Luxor 55 21056 SASI interface (for ABC 850/852/856 hard drives).
 - abc1600.cpp: Refactored to use modern Z8530 SCC device, and fixed floppy DMA [Curt Coder].
 - abc80x.cpp updates [Curt Coder]:
-  * Fixed abc802 M1 opcode fetch.
-  * Fixed memory banking for abc800c, abc800m and abc802.
+  * Fixed abc802 M1 opcode fetch;
+  * Fixed memory banking for abc800c, abc800m and abc802;
   * Fixed HR graphics for abc800c and abc800m.
 - nes_vt.cpp: Started moving SoC functionality out of the driver to devices [David Haywood].
 - triviaquiz.cpp: Hooked up question ROMs [Dirk Best].
@@ -362,47 +362,47 @@ Source changes:
 - ibmpcjr_cart.xml: Added disk images to lotus123 added usage instructions in a comment [Robbbert].
 - advision.cpp: Fixed some bugs exposed by the Code Red demo [Robbbert].
 - vgmplay.cpp updates [Ryan Holtz]:
-  * Added multiple spectrogram visualization modes.
-  * Fixed DC offsets occurring when chips are not used.
+  * Added multiple spectrogram visualization modes;
+  * Fixed DC offsets occurring when chips are not used;
   * Added rate controls and a hold button.
 - cps1.cpp: Added new PAL dumps [TwistedTom]:
-  * Dumped remaining B board PALs for kodja and knightsja. [Bonky0013]
-  * Dumped remaining D board PAL for wof and clones [hammy].
-  * Dumped remaining B board PAL for willowj. [Layer]
-  * Dumped remaining B board PAL for cworld2j. [neocps1]
-  * Dumped remaining B board PAL for kod and clones and dumped unprotected PALs for Street Fighter II Mstreet bootlegs. [Porchy]
+  * Dumped remaining B board PALs for kodja and knightsja [Bonky0013];
+  * Dumped remaining D board PAL for wof and clones [hammy];
+  * Dumped remaining B board PAL for willowj [Layer];
+  * Dumped remaining B board PAL for cworld2j [neocps1];
+  * Dumped remaining B board PAL for kod and clones and dumped unprotected PALs for Street Fighter II Mstreet bootlegs [Porchy];
   * Dumped remaining B board PAL for punisher and clones [Wulfman].
 - cps1.cpp updates [TwistedTom]:
-  * Implemented B board ID register 03.
-  * Added demo sounds DIP switch for ghouls.
-  * Added notes about how /INT2 is generated and connected.
+  * Implemented B board ID register 03;
+  * Added demo sounds DIP switch for ghouls;
+  * Added notes about how /INT2 is generated and connected;
   * Added notes on pang3 B board and security chip.
 - video/cps1.cpp: Added and updated mappers based on PAL equations [TwistedTom]:
-  * Added CD63B, PS63B, MB63B, CP1B1F, TK24B1, WL22B, S222B, YI22B, MS22B, CK22B, KD22B, KR22B, VA24B and GBPR2 mappers.
+  * Added CD63B, PS63B, MB63B, CP1B1F, TK24B1, WL22B, S222B, YI22B, MS22B, CK22B, KD22B, KR22B, VA24B and GBPR2 mappers;
   * Corrected KNM10B, Q522B and TN2292 mappers according to PAL equations.
 - cps1bl_pic.cpp updates [TwistedTom]:
-  * Improved dinopic sprite rendering (fixes missing tiles when character jumps and flips).
-  * Disabled brightness control for bootlegs that don't have the necessary components populated.
-  * Improved wofpic emulation, making the game playable with some graphical issues.
+  * Improved dinopic sprite rendering (fixes missing tiles when character jumps and flips);
+  * Disabled brightness control for bootlegs that don't have the necessary components populated;
+  * Improved wofpic emulation, making the game playable with some graphical issues;
   * Simplified wofpic graphics ROM loading.
 - fcrash.cpp updates [TwistedTom]:
-  * Simplified wofabl graphics ROM loading.
-  * Removed EEPROM device from sgyxz and wofabl (these games use DIP switches for configuration).
-  * Fixed sgyxz and wofabl player 3 inputs.
-  * Added some DIP switch settings for sgyxz and wofabl.
+  * Simplified wofabl graphics ROM loading;
+  * Removed EEPROM device from sgyxz and wofabl (these games use DIP switches for configuration);
+  * Fixed sgyxz and wofabl player 3 inputs;
+  * Added some DIP switch settings for sgyxz and wofabl;
   * Added hard-coded layer priority masks for sgyxz.
 - gstriker.cpp: Added PAL dumps for vgoalsoc/twcup94 and clones [TwistedTom].
 - pcktgal.cpp: Added PAL dumps for pcktgalb [TwistedTom].
 - wc90b.cpp: Added PAL dumps from twcup90b2 board to all similar bootlegs [TwistedTom].
 - Various core clean-ups [Vas Crabb]:
-  * util/strformat.h: Centralised instantiation of more of the formatting engine.
-  * emu/fileio.cpp: Added support for iterating arbitrary numbers of path components to path_iterator and emu_file.
-c * emu/romload.cpp: Made ROM loading code more straightforward.
-  * emu/romload.cpp: Made software loading search the software path before searching the device path.
-  * emu/romload.cpp: Made software loading correctly scan parent software for identical CHD files with different names.
-  * emu/diimage.cpp: Refactored to share code for building a software search path with ROM loading and auditing.
-  * emu/softlist_dev.cpp: Added validation for software parts and data areas.
-  * Fixed multiple hangs when software parent relationships form a loop.
+  * util/strformat.h: Centralised instantiation of more of the formatting engine;
+  * emu/fileio.cpp: Added support for iterating arbitrary numbers of path components to path_iterator and emu_file;
+c * emu/romload.cpp: Made ROM loading code more straightforward;
+  * emu/romload.cpp: Made software loading search the software path before searching the device path;
+  * emu/romload.cpp: Made software loading correctly scan parent software for identical CHD files with different names;
+  * emu/diimage.cpp: Refactored to share code for building a software search path with ROM loading and auditing;
+  * emu/softlist_dev.cpp: Added validation for software parts and data areas;
+  * Fixed multiple hangs when software parent relationships form a loop;
   * Re-implemented SHA-1, replacing multiple third-party implementations.
 - sstrangr.cpp: Measured CPU clock frequency [Andrew Welburn].
 - 8080bw.cpp: Updated notes on Space Invaders PCB arrangements [Andrew Welburn].
@@ -443,8 +443,8 @@ c * emu/romload.cpp: Made ROM loading code more straightforward.
 - fmtowns_flop.xml: Replaced msdos62 disk images with images from the master CD [r09].
 - fmtowns_cd.xml: Switched to dumps with proper track indexes and offset correction for 29 entries. adtennis, alice, asu120ex, awesome, classrod, fractal, fsc10, fsc11, fsc6, fsc7, fsc9, fsc9, fwc2, fwc3, hypraddro, infest, links386, loom, oshacoo2, psydet5, sangoku3, softcon2, sotsu93, sshangh, takamiza, tdf, townsmg2, tss1130, viewpoin [redump.org, r09].
 - at.cpp udpates [rfka01]::
-  * Added neat BIOS option to n286.
-  * Added quadtel BIOS option to ht12a.
+  * Added neat BIOS option to n286;
+  * Added quadtel BIOS option to ht12a;
   * Added d674v320r304 and d620 BIOS options to pcd4x.
 - europc.cpp: Added v1.04 BIOS option to euroxt [rfka01].
 - olivpc1.cpp: Added rev106 and rev107 BIOS options to olivpc1 and expanded notes [rfka01].
