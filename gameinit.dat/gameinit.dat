@@ -3224,16 +3224,18 @@ Boot with the "cpm" software item.
 
 Drives are 0: and 1: rather than A: and B:
 
-DIR to get the directory.
+DIR to get the directory (works in Basic too).
 
 Homebrew games should be mounted in drive 1, and run from there. They must use EINSTEIN TC01 - the 256 will reboot itself. The 80-column games require that slot "pipe" be used by "tk02".
+
+XBS files need to be run under EBAS or XBAS e.g. XBAS TREK
 
 
 
 Quickload
 ---------
 
-The normal procedure is to load the file after CPM has booted. But, they won't run.
+Quickloads are self-contained, not requiring CP/M (BIGGOIL for example). If they depend on CP/M then they most likely won't work.
 
 $end
 $info=electron
