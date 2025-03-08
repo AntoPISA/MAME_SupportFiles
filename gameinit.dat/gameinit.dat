@@ -3337,6 +3337,13 @@ This wouldn't fit too well on our keyboard with any chance of remembering it, so
 The Select key (Z) and the joystick don't actually exist, but they have been left in the keyboard matrix for now.
 
 
+Cassette
+--------
+To load a tape: Press Q L (it asks for a File Number) press 1 then UP key. It will show the file number on the tape, if it doesn't match abort and try again. At the end or in case of error it will show the loading address. If the whole program had loaded press UP to run the program. File Number 0 is a special case: when asked for File Number press UP.
+
+To save a tape: Press Q S and answer the questions: BEG (start address), END (end address), SAD (exec address), FIL (file number) (default is 0), press RECORD, press UP.
+
+
 Quickloads
 ----------
 You can load pgm and tvc files with the quickload facility. The quickloads are meant for the ElektorTVGC, however with a bit a trickery they can be made to work on the vc4000 as well. Procedure:
@@ -6151,11 +6158,18 @@ Some control keys: 0x14 = Home; 0x8 = Left/BS; 0xA = Down; 0xB = Up; 0xC = Right
 $end
 $info=mbee
 $mame
-INITIALIZATION:
+TIPS:
 
 To save a tape: SAVE
 
 To load a tape: LOAD
+
+After loading, if it doesn't autostart, look at the filetype:
+B (basic program), do RUN
+M (M/L program), do EXEC
+T (only for the Teleterm machine)
+W (Wordbee file - load it from within Wordbee)
+
 
 Commands to call up built-in roms (depends on the model):
 NET - Jump to E000, usually the Telcom communications program.
