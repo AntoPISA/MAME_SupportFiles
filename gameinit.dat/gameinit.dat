@@ -306,6 +306,8 @@ TIPS:
 
 ROCKWELL AIM-65
 ===============
+Fully working except that the RUN/STEP switch is missing.
+
 If you want to use the TTY, you must do these things:
 - Use the KB/TTY dipswitch to choose TTY
 - Use the TAB menu to choose "Keyboard Mode"
@@ -314,7 +316,38 @@ If you want to use the TTY, you must do these things:
 - Press DELETE to start using the terminal
 - For subsequent runs, just press DELETE to get started.
 
-L to load a tape, and D to save. Answer the questions: OUT=T, FNAME=1, T=1, MORE=N, IN=T
+To save a tape: D, (enter start address), (enter end address), OUT=T, FNAME=(enter filename of up to 5 characters), T=1, return, MORE=N
+
+To load a tape: L, OUT=T, FNAME=(enter filename), T=1, return, MORE=N, IN=T
+
+Commands
+--------
+D - save
+L - load
+E - start editor
+T - re-enter editor
+N - start assembler or whatever is in Z24 slot
+5 - start basic or whatever is in Z25/Z26 slot
+6 - re-enter basic
+R - display registers (*,P,A,X,Y,S,R to modify)
+M - display memory
+/ - change memory
+I - assemble
+K - disassemble
+G - go
+Z - instruction trace
+V - register trace
+H - pc history
+? - display breakpoint
+# - clear all breakpoints
+B - set/clear breakpoint
+ctrl-print - printer on/off
+print - screen print
+LF - line feed
+1 - tape 1
+2 - tape 2
+3 - verify
+F1,F2,F3 - user functions
 
 $end
 $info=al8800bt
@@ -6054,13 +6087,10 @@ Runs by itself
 
 
 
-
-
 Floppy Disk
 -----------
 
 Need BASIC-F
-
 
 
 
@@ -6079,41 +6109,34 @@ Try OLD  - should load a tape made with LIST"x"
 
 Try CHAIN - same as OLD but runs the program as well.
 
-Try TAPE - not documented, load and execute machine language file (see examples below)
+Try TAPE (undocumented command) - load and execute machine language file
 
 Try LOAD - should load a tape made with SAVE"x"
 
 But, many tapes either not detected, or detected then nothing loaded.
 
+$end
+$info=macbug
+$mame
 
+TIPS:
+Only exists in MAMEUI from 0.276
 
----------------------------------------------------------------------
+Commands
+--------
+D nnnn - hex dump (use space for next line, or other key to exit)
+F - fill memory
+L - Load tape
+M nnnn - modify memory
+Q - reboot
+R nnnn - Go to
+S - save tape
 
-
-Barricade  	BARRICADE  	A
-Barrier Attack 	B.ATTACK 	A
-Baseball 	BASEBALL 	B
-Biorhythm Diagnosis 	BIORHYTHM 	A
-Blackjack 	BLACKJACK 	A
-Cowboy 	COWBOY 	A
-Graphic Designer 	P-EDITOR 	B
-Jogging 	JOGGING 	A
-Last Day of the Earth 	NEUTRON 	A
-Mini Star Trek 	STARTREK 	A
-Music Tone 	M-TONE 	A
-Number Search 	N.SEARCH 	A
-Sidewinder 	S.WINDER 	A
-Slot Machine 	SLOT 	A
-Snaky 	SNAKY 	A
-Solitaire 	SOLITAIRE 	A
-Three Circles 	3-CIRCLES 	A
-Tower of Hanoi 	HANOI 	A
-TV Adjust 	TVADJUST 	B
-Zac Banic 	ZACBANIC 	B
-
-Depending on the type of tape, enter following commands to load/run the program on the tape:
-* Type A : "chain" + [enter]
-* Type B : "tape" + [enter]
+Tape notes
+----------
+- the dump omits the last byte when saving and loading, you need to specify one more byte
+- no checksum checking, a bad load will go undetected
+- filenames are 5 characters
 
 $end
 $info=macgalxy,macjungl,spctrain,spcpnthr,mac_1808,macjungn,nbamac,glxplay,kidnap,glxplay2
