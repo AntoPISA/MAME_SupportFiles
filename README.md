@@ -1,19 +1,17 @@
 # MAME_SupportFiles
 
 progetto-SNAPS © 2020/2025 AntoPISA
-MAME Support Files v0.273 WIP
+MAME Support Files v0.275
 -----------------------------------
 
 The following files have been updated in this MAME cycle:
 
-- BestGames.ini
-- CatVer pack   WIP
-- Command.dat
+- Category pack
+- CatVer pack
 - gameinit.dat
-- Languages.ini WIP
-- MESSInfo.dat  WIP
-- Series.ini    WIP
-- Version pack  WIP
+- Languages.ini
+- Series.ini 
+- Version pack
 
 Home-page: https://www.progettosnaps.net/support/
 Github   : https://github.com/AntoPISA/MAME_SupportFiles
