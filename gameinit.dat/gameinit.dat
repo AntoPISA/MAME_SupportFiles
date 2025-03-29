@@ -7556,10 +7556,10 @@ $info=neocd
 $mame
 INITIALIZATION:
 
-This doesn't work. Use "neocdz" or "neocdzj" instead.
+Not working. Use "neocdz" or "neocdzj" instead.
 
 $end
-$info=newbrain
+$info=newbrain,newbraina
 $mame
 INITIALIZATION:
 
@@ -7602,7 +7602,7 @@ How to set it up for the first time
 - Next time you start the console, the game will run by itself and you won't have to set up anything.
 
 $end
-$info=nshrz
+$info=nshrz,nshrz2mhz
 $mame
 INITIALIZATION:
 
@@ -7627,7 +7627,7 @@ INITIALIZATION:
 - Most games require a ball in the outhole before starting a game (hold down X and press 1).
 
 $end
-$info=okean240
+$info=okean240,okean240a,okena240t
 $mame
 INITIALIZATION:
 
@@ -7716,7 +7716,7 @@ SOURCE:
 mameinfo.dat
 
 $end
-$info=orao
+$info=orao,orao103
 $mame
 INITIALIZATION:
 
@@ -7738,7 +7738,7 @@ TAP files don't fully load.
 To quit Basic: EXIT (orao103 only)
 
 $end
-$info=oric1
+$info=oric1,atmos,telstrat
 $mame
 TIPS:
 
@@ -7748,13 +7748,9 @@ TANGERINE Oric1, Atmos, Telstrat
 
 Telestrat
 ---------
-Completely not working. It wants a boot disk at start,
-but it never reads it and just hangs there. There's an
-option to use the microdisc or jasmin controllers but
-they crash MAME.
+Completely not working. It wants a boot disk at start, but it never reads it and just hangs there. There's an option to use the microdisc or jasmin controllers but they crash MAME.
 
-If you use the inbuilt controller the maximum disk size
-is 526KB - any more will get rejected.
+If you use the inbuilt controller the maximum disk size is 526KB - any more will get rejected.
 
 
 Atmos
@@ -7764,22 +7760,17 @@ Only works with tapes.
 
 Oric-1
 ------
-* Need to use jasmin or microdisc before floppies can be used.
-Microdisc is preferred. Set up at least 2 drives so that the
-non-bootable games can be run.
+* Need to use jasmin or microdisc before floppies can be used. Microdisc is preferred. Set up at least 2 drives so that the non-bootable games can be run.
 
-* Most disks will self-start. If not, enter DIR then the name
-of a COM file. You can run a BAS file by including the extension.
+* Most disks will self-start. If not, enter DIR then the name of a COM file. You can run a BAS file by including the extension.
 
-* To change drives, enter B- (for example). Whenever referring to
-a drive, use - (instead of :).
+* To change drives, enter B- (for example). Whenever referring to a drive, use - (instead of :).
 
 * Disks that have 99 tracks (1238KB) are rejected.
 
 * Non-boot games will have the instructions in the filename.
 
-So, [B- INSECT] means to boot Sedoric in A and the game in B.
-Enter B- (to select B) then INSECT to start the game.
+So, [B- INSECT] means to boot Sedoric in A and the game in B. Enter B- (to select B) then INSECT to start the game.
 
 * OK disks can be selected from the "SW Files" and will auto-run.
 
@@ -7795,12 +7786,9 @@ Other emulators:
 
 Euphoric - dos based, full screen. Not usable. Might work under dosbox.
 
+Oricutron - win32, works with bugs. If it starts hanging on exit, reboot computer. Quits if unusual disk size presented.
 
-Oricutron - win32, works with bugs. If it starts hanging on exit, reboot computer.
-quits if unusual disk size presented.
-
-Sendoric - DIR to list files, type name of COM file to execute (same as MSDOS).
-All other DOS's - All disk commands must be prefixed by ! even if it doesn't say so.
+Sendoric - DIR to list files, type name of COM file to execute (same as MSDOS). All other DOS's - All disk commands must be prefixed by ! even if it doesn't say so.
 
 
 Cassettes
@@ -7812,7 +7800,7 @@ To load a tape: CLOAD""
 At end if it doesn't start running by itself, then use RUN.
 
 $end
-$info=orion128
+$info=orion128,orionms,orionz80,orionzms,orionide,orionidm,orionpro
 $mame
 TIPS:
 
@@ -8329,7 +8317,7 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
-$info=pecom32
+$info=pecom32,pecom64
 $mame
 TIPS:
 
@@ -8345,19 +8333,41 @@ At the end, type RUN
 This system only works in MAMEUI, not in MAME.
 
 $end
-$info=pegasus
+$info=pegasus,pegasusm
 $mame
 TIPS:
 
-The usual way of loading a new rom was to plug it into the board.
-We have replaced this with cartslots, to save having to recompile whenever a new rom is found. Single rom programs will usually work in any slot (if it is going to work at all). A working rom will appear in the menu. Press the first letter to run it.
+The usual way of loading a new rom was to plug it into the board. This has been replaced with cartslots, to save having to recompile whenever a new rom is found. Single rom programs will usually work in any slot (if it is going to work at all). A working rom will appear in the menu. Press the first letter to run it.
 
-If a machine language program is loaded via cassette, do it in the Monitor (L command), when loaded press Enter, and it will be in the menu.
+Although lowercase can be entered, it's preferable to use uppercase.
 
-To save a machine-language tape: S a b (where a = start address, b = end address, must be 4 digits each)
+Monitor Commands
+----------------
+G nnnn      - Go
+L [nnnn]    - Load from tape
+M nnnn      - Modify Memory
+S aaaa bbbb - Save aaaa-bbbb to tape
+T hh mm ss  - Set the time
+V           - Verify tape
 
-Basic cassettes are loaded in the usual way, that is, start Basic, type LOAD, press Enter. When done, RUN or LIST as needed.
+Any mistakes will throw you out of the monitor and back to the menu.
 
+Cassette
+--------
+[b] - Use BASIC to LOAD the tape, then RUN.
+[m] - Use the MONITOR L command - when finished, hit enter, and the new program shows in the menu.
+[x] - Use XBASIC to TLOAD the tape, then RUN.
+[f] - Use FORTH to LOAD the tape. Do VLIST to look for an appropriate command, such as GO.
+
+Forth
+-----
+Some commands:
+
+VLIST: list all commands
+CLS  : clear the screen
+LOAD : load a tape
+SAVE : save a tape
+MON  : quit
 $end
 $info=peke0004
 $mame
