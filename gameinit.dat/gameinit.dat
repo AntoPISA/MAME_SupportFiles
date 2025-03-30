@@ -405,8 +405,31 @@ TIPS:
 ALPHATRONIC PC
 ==============
 
-CLOAD    to load a tape
-CSAVE"x" to save
+
+Cartridges
+----------
+Run by themselves.
+
+
+Cassettes
+---------
+Make sure that "FDD Unit installed" is off.
+
+Cassette operation has regressed.
+
+CSAVE"x" - The recording is rubbish (wrong speed?)
+CLOAD    - Nothing gets loaded from an existing tape.
+
+
+Floppies
+--------
+For disks to work, in Configuration, enable "FDD Unit installed".
+
+$end
+$info=alphatp2
+$mame
+
+After it starts up in the monitor, use the B command to boot the disk.
 
 $end
 $info=alto2
