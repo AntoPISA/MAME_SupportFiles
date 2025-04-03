@@ -1,5 +1,5 @@
-﻿#    MESSINFO_REM.DAT v0.274 Latest update:  Feb 25, 2025
-#                             Project start: Nov  7, 2011
+﻿#    MESSINFO_REM.DAT v0.276git Latest update:  Apr  3, 2025
+#                                Project start: Nov  7, 2011
 #
 #    Author:  Antonio Paradossi (AntoPISA) from Pisa (Tuscany/Italy)
 #
@@ -8,8 +8,9 @@
 #
 #    homepage: http://www.progettosnaps.net/messinfo
 #
-#    Internal version: 14.02
-#    Total items: 326
+#    Internal version: 14.03
+#    Total items: 334
+#
 #
 #
 $info=24c16a
@@ -45,7 +46,7 @@ RESOURCES:
 Cabinet, control panel, marquee and PCB pictures, icon and pdf manual.
 
 WIP:
-- 0.205: Machine removed.
+- 0.205: System removed.
 - 0.167: Deorphaned the software lists for cd32, 3do_m2 and pippin so that they get parsed by the validity checker etc. [Shideravan].
 - 13/01/2012 r14008: Added disclaimer to the lists which are not yet hooked up to the drivers [Fabio Priuli].
 - 22/12/2011 r13668: Uniforming (or adding when missing) file properties in 3do_m2.xml [Fabio Priuli].
@@ -181,7 +182,7 @@ RESOURCES:
 -
 
 WIP:
-- 0.233: Machine removed.
+- 0.233: System removed.
 - 0.222: Tim Lindner added Matra & Hachette Alice with MCX-128 system.
 
 ROMSET:
@@ -335,7 +336,7 @@ RESOURCES:
 Cabinet picture.
 
 WIP:
-- 0.177: Machine removed.
+- 0.177: System removed.
 - 0.132: Nathan Woods and R. Belmont added Apple IIgs (ROM03 late prototype?) system.
 
 ROMSET:
@@ -426,7 +427,7 @@ SOFTWARE LIST:
 attache.xml.
 
 WIP:
-- 0.165: Machine removed.
+- 0.165: System removed.
 - 0.149: Al Kossow and Barry Rodewald added Otrona Attache (boot rev F) system.
 
 ROMSET:
@@ -455,7 +456,7 @@ RESOURCES:
 Cabinet picture.
 
 WIP:
-- 0.178: Machine removed.
+- 0.178: System removed.
 - 0.166: Nigel Barnes added Acorn BBC Micro Model B w/1770 FDC system.
 
 ROMSET:
@@ -487,11 +488,32 @@ RESOURCES:
 Snap and Title.
 
 WIP:
-- 0.250: Machine removed.
+- 0.250: System removed.
 - 0.155: Wilbert Pol added Canon V-30 system.
 
 ROMSET:
 65536 bytes in 3 files / 49.54Kb packed
+
+$end
+$info=cdrom_fixed
+$mame
+0.184
+
+ATAPI fixed CD-ROM, <unknown>, ????
+
+DRIVER:
+devices/bus/ata/atapicdr.cpp
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Unsupported
+
+WIP:
+- 0.275: Device removed.
+- 0.184: Added 'ATAPI fixed CDROM' device.
 
 $end
 $info=coco_fdc_v11
@@ -561,7 +583,7 @@ RESOURCES:
 Cabinet, control panel and flyer pictures.
 
 WIP:
-- 0.255: Machine removed.
+- 0.255: System removed.
 - 0.251: Bugfix#08416 [Misc.] (trs/coco12.cpp) coco2: Real-time clock should be a slot option for FDC cards [Tim Lindner].
 - 0.231: BugFIX#07701 [DIP/Input] (coco12.cpp) coco2 [tetris]: Keyboard navigation controls do not work correctly when playing Tandy Tetris (26-3163) (23f22dc) [tlindner].
 - 0.210: Converted all coco/dragon extension devices to use CTS handlers [Nigel Barnes].
@@ -622,7 +644,7 @@ RESOURCES:
 Snap and Title.
 
 WIP:
-- 0.255: Machine removed.
+- 0.255: System removed.
 - 0.198: David Ladd added 'Tandy Radio Shack Color Computer 2 (HD6309)' system.
 
 ROMSET:
@@ -675,7 +697,7 @@ RESOURCES:
 Snap and Title.
 
 WIP:
-- 0.254: Machine removed.
+- 0.254: System removed.
 - 0.198: BugFIX#06954 [Core] (coco3.cpp) coco3dw1: emulated system crashes when trying to access floppy disk image [drencorxeen].
 - 0.156: R. Belmont and Richard Goedeken added 'Tandy Radio Shack Color Computer 3 (NTSC; HDB-DOS)' system.
 
@@ -708,7 +730,7 @@ RESOURCES:
 Snap, Title and machine picture (in "Cabinet" collection).
 
 WIP:
-- 0.255: Machine removed.
+- 0.255: System removed.
 - 0.37b10: Nathan Woods added 'Tandy Color Computer (Extended BASIC 1.0)' system.
 
 ROMSET:
@@ -740,11 +762,32 @@ RESOURCES:
 Snap and Title.
 
 WIP:
-- 0.255: Machine removed.
+- 0.255: System removed.
 - 0.198: David Ladd added 'Tandy Radio Shack Color Computer (Extended BASIC 1.0; HD6309)' system.
 
 ROMSET:
 16384 bytes in 2 files / 14.28Kb packed
+
+$end
+$info=cojag_hdd
+$mame
+0.184
+
+HDD CoJag, <unknown>, ????
+
+DRIVER:
+atari/jaguar.cpp
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Unsupported
+
+WIP:
+- 0.275: Device removed.
+- 0.184: Added 'HDD CoJag' device.
 
 $end
 $info=colecoa
@@ -769,7 +812,7 @@ RESOURCES:
 Cabinet picture.
 
 WIP:
-- 0.153: Machine removed.
+- 0.153: System removed.
 - 0.37b9: Mike Balfour added ColecoVision (Thick Characters) system.
 
 ROMSET:
@@ -821,7 +864,7 @@ Graphics: Good
 Save State: Unsupported
 
 WIP:
-- 0.246: Machine removed.
+- 0.246: System removed.
 - 0.179: smf added 4-Bit Binary Weighted Sign Magnitude DAC device.
 
 $end
@@ -848,7 +891,7 @@ RESOURCES:
 -
 
 WIP:
-- 0.170: Machine removed.
+- 0.170: System removed.
 - 0.144u4: The Dumping Union added Sega Katana Set 5 Prototype system.
 
 ROMSET:
@@ -988,6 +1031,29 @@ WIP:
 - 0.184: Added Dummy Space device.
 
 $end
+$info=dvdrom_fixed
+$mame
+0.255 [987123879113]
+
+ATAPI fixed CD/DVD-ROM, <unknown>, ????
+
+ATA Packet Interface (ATAPI) is a protocol that has been added to Parallel ATA and Serial ATA[1] so that a greater variety of devices can be connected to a computer than with the ATA command set alone. It carries SCSI commands and responses through the ATA interface. ATAPI devices include CD-ROM and DVD-ROM drives, tape drives, magneto-optical drives, and large-capacity floppy drives such as the Zip drive and SuperDisk drive.
+
+DRIVER:
+devices/bus/ata/atapicdr.cpp
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Unsupported
+
+WIP:
+- 0.275: Device removed.
+- 0.255: 987123879113 added 'ATAPI fixed CD/DVD-ROM' device.
+
+$end
 $info=dvk_ksm01
 $mame
 0.165 [Scott Stone]
@@ -1010,7 +1076,7 @@ RESOURCES:
 -
 
 WIP:
-- 0.177: Machine removed.
+- 0.177: System removed.
 - 0.165: Scott Stone added USSR DVK KSM-01 system.
 
 ROMSET:
@@ -1039,7 +1105,7 @@ RESOURCES:
 Cabinet picture.
 
 WIP:
-- 0.192: Machine removed.
+- 0.192: System removed.
 - 0.128: Kevin Thacker, Dirk Best and Phill Harvey-Smith added Einstein TC-01 + 80 column device system.
 
 ROMSET:
@@ -1103,7 +1169,7 @@ RESOURCES:
 -
 
 WIP:
-- 0.204: Machine removed.
+- 0.204: System removed.
 - 0.195: Sean Riddle and Peter Wilhelmsen added Takara/SSD Company LTD e-kara Starter system.
 
 ROMSET:
@@ -1132,7 +1198,7 @@ RESOURCES:
 Cabinet (cart) and Flyer (box) pictures.
 
 WIP:
-- 0.204: Machine removed.
+- 0.204: System removed.
 - 0.196: Sean Riddle and Peter Wilhelmsen added Takara/Hasbro/SSD Company LTD e-kara Volume 1 (US?) system.
 
 ROMSET:
@@ -1161,7 +1227,7 @@ RESOURCES:
 -
 
 WIP:
-- 0.204: Machine removed.
+- 0.204: System removed.
 - 0.196: Sean Riddle and Peter Wilhelmsen added Takara/Hasbro/SSD Company LTD e-kara Volume 2 (US?) system.
 
 ROMSET:
@@ -1219,7 +1285,7 @@ RESOURCES:
 -
 
 WIP:
-- 0.219: Machine removed.
+- 0.219: System removed.
 - 0.218: TeamEurope added Excite Excite Sports Wireless Interactive TV Game - 48-in-1 (set 2, PAL) system.
 
 ROMSET:
@@ -1344,7 +1410,7 @@ RESOURCES:
 Snap and Title.
 
 WIP:
-- 0.259: Machine removed.
+- 0.259: System removed.
 - 0.183: Joakim Larsson Edstrom added 'Force Computers Gmbh SYS68K/CPU-21B' system.
 
 ROMSET:
@@ -1376,7 +1442,7 @@ RESOURCES:
 Snap and Title.
 
 WIP:
-- 0.259: Machine removed.
+- 0.259: System removed.
 - 0.183: Joakim Larsson Edstrom added 'Force Computers Gmbh SYS68K/CPU-21S' system.
 
 ROMSET:
@@ -1408,7 +1474,7 @@ RESOURCES:
 Snap and Title.
 
 WIP:
-- 0.259: Machine removed.
+- 0.259: System removed.
 - 0.183: Joakim Larsson Edstrom added 'Force Computers Gmbh SYS68K/CPU-21YA' system.
 
 ROMSET:
@@ -1461,7 +1527,7 @@ RESOURCES:
 Snap and Title.
 
 WIP:
-- 0.259: Machine removed.
+- 0.259: System removed.
 - 0.180: Joakim Larsson Edstrom added 'Force Computers Gmbh SYS68K/CPU-30BE/16' system.
 
 ROMSET:
@@ -1493,7 +1559,7 @@ RESOURCES:
 Snap and Title.
 
 WIP:
-- 0.259: Machine removed.
+- 0.259: System removed.
 - 0.180: Joakim Larsson Edstrom added 'Force Computers Gmbh SYS68K/CPU-30Lite/8' system.
 
 ROMSET:
@@ -1525,7 +1591,7 @@ RESOURCES:
 Snap and Title.
 
 WIP:
-- 0.259: Machine removed.
+- 0.259: System removed.
 - 0.180: Joakim Larsson Edstrom added 'Force Computers Gmbh SYS68K/CPU-30SEN-R' system.
 
 ROMSET:
@@ -1557,7 +1623,7 @@ RESOURCES:
 Snap and Title.
 
 WIP:
-- 0.259: Machine removed.
+- 0.259: System removed.
 - 0.180: Joakim Larsson Edstrom added 'Force Computers Gmbh SYS68K/CPU-30SEN-R-501' system.
 
 ROMSET:
@@ -1589,7 +1655,7 @@ RESOURCES:
 Snap and Title.
 
 WIP:
-- 0.259: Machine removed.
+- 0.259: System removed.
 - 0.180: Joakim Larsson Edstrom added 'Force Computers Gmbh SYS68K/CPU-30ZBE' system.
 
 ROMSET:
@@ -1621,7 +1687,7 @@ RESOURCES:
 Snap, Title and machine picture (in "Cabinet" collection).
 
 WIP:
-- 0.269: Machine removed.
+- 0.269: System removed.
 - 0.266: Changed manufacturer to 'Fidelity International'.
 - 0.179: yovan added 'Fidelity Electronics Designer 2000' system.
 
@@ -1654,7 +1720,7 @@ RESOURCES:
 Snap and Titles.
 
 WIP:
-- 0.269: Machine removed.
+- 0.269: System removed.
 - 0.266: Changed manufacturer to 'Fidelity International'.
 - 0.184: hap added 'Fidelity Electronics Designer 2100' system.
 
@@ -2061,7 +2127,7 @@ RESOURCES:
 Cabinet.
 
 WIP:
-- 0.221: Machine removed, move select a game to its own driver [hap].
+- 0.221: System removed, move select a game to its own driver [hap].
 - 0.208: Changed description to 'Elite Private Line (red version)' and manufacturer to 'Fidelity Deutschland'.
 - 0.207: hap and Berger added Fidelity Electronics Elite Private Line (red version, English) system.
 
@@ -2238,7 +2304,7 @@ RESOURCES:
 Cabinet and flyer pictures.
 
 WIP:
-- 0.215: Machine removed.
+- 0.215: System removed.
 - 0.132: Barry Rodewald added FM-Towns (alternate) system.
 
 ROMSET:
@@ -2601,7 +2667,7 @@ RESOURCES:
 Artwork and Cabinet picture.
 
 WIP:
-- 0.154: Machine removed.
+- 0.154: System removed.
 - 0.132: Fabio Priuli added Game Boy Light system.
 
 ROMSET:
@@ -2630,7 +2696,7 @@ RESOURCES:
 Artwork.
 
 WIP:
-- 0.171: Machine removed.
+- 0.171: System removed.
 - 0.143u9: Cowering added Mephisto Genius030 V4.01OC system.
 
 ROMSET:
@@ -2729,7 +2795,7 @@ RESOURCES:
 Snap and Title.
 
 WIP:
-- 0.274: Machine removed.
+- 0.274: System removed.
 - 0.266: Changed description to 'H-89 with SigmaSoft IGC'.
 - 0.263: Mark Garlanger added 'Heath Company Heathkit H89 with SigmaSoft IGC' system.
 
@@ -2762,7 +2828,7 @@ RESOURCES:
 Snap, Title and machine picture (in "Cabinet" collection).
 
 WIP:
-- 0.250: Machine removed.
+- 0.250: System removed.
 - 0.81: Jirou Kaneda added Sony HB-F1XDMK2 system.
 
 ROMSET:
@@ -2794,7 +2860,7 @@ RESOURCES:
 Snap and Title.
 
 WIP:
-- 0.250: Machine removed.
+- 0.250: System removed.
 - 0.143u3: Added Sony HB-F9S+ system.
 
 ROMSET:
@@ -2847,7 +2913,7 @@ RESOURCES:
 Snap, Title, machine picture (in "Cabinet" collection) and PCB pictures.
 
 WIP:
-- 0.250: Machine removed.
+- 0.250: System removed.
 - 0.37b11: Wilbert Pol added Sharp/Epcom HB-8000 Hotbit 1.2 system.
 
 ROMSET:
@@ -2912,7 +2978,7 @@ RESOURCES:
 Snap and Title.
 
 WIP:
-- 0.250: Machine removed.
+- 0.250: System removed.
 - 0.155: Wilbert Pol added Toshiba HX-21I system.
 
 ROMSET:
@@ -2944,7 +3010,7 @@ RESOURCES:
 Snap and Title.
 
 WIP:
-- 0.250: Machine removed.
+- 0.250: System removed.
 - 0.155: Wilbert Pol added Toshiba HX-23I system.
 
 ROMSET:
@@ -2976,7 +3042,7 @@ RESOURCES:
 Snap and Title.
 
 WIP:
-- 0.250: Machine removed.
+- 0.250: System removed.
 - 0.155: Wilbert Pol added Toshiba HX-34I system.
 
 ROMSET:
@@ -3041,7 +3107,7 @@ RESOURCES:
 -
 
 WIP:
-- 0.222: Machine removed.
+- 0.222: System removed.
 - 0.206: Changed description to 'PS/1 (Spanish)'.
 - 0.150: crazyc added IBM IBM PS/1 (Spanish) system.
 - 25/07/2013 r24518: Preliminary PS/1 support (Probably stalled until the kbc supports mice) [crazyc].
@@ -3075,7 +3141,7 @@ RESOURCES:
 Cabinet, Marquee and PCB pictures.
 
 WIP:
-- 0.258: Machine removed.
+- 0.258: System removed.
 - 0.169: Ryan Holtz added 'Silicon Graphics Inc IRIS Indigo (R3000, 33MHz)' system.
 
 ROMSET:
@@ -3134,6 +3200,28 @@ NEOGEO Kof2002-type Samsho5sp Cart, ???, ????
 WIP:
 - 0.174: Device removed.
 - 0.154: Added NEOGEO Kof2002-type Samsho5sp Cart device.
+
+$end
+$info=kb1013vk1_2
+$mame
+0.173
+
+KB1013VK1-2, <unknown>, ????
+
+DRIVER:
+devices/cpu/sm510/sm5a.cpp
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Unsupported
+
+WIP:
+- 0.275: Device removed.
+- 0.184: Renamed (kb1013vk1-2) to (kb1013vk1_2).
+- 0.173: Added 'KB1013VK1-2' device.
 
 $end
 $info=korgm1
@@ -3255,7 +3343,7 @@ RESOURCES:
 -
 
 WIP:
-- 0.154: Machine removed.
+- 0.154: System removed.
 - 0.83: Dirk Best added Sanyo Laser 110 (Germany) system.
 
 ROMSET:
@@ -3284,7 +3372,7 @@ RESOURCES:
 Cabinet picture.
 
 WIP:
-- 0.154: Machine removed.
+- 0.154: System removed.
 - 0.83: Dirk Best added Sanyo Laser 210 (Germany) system.
 
 ROMSET:
@@ -3313,7 +3401,7 @@ RESOURCES:
 -
 
 WIP:
-- 0.232: Machine removed.
+- 0.232: System removed.
 - 0.208: Sean Riddle and ClawGrip added LeapFrog LeapPad (Canada) system.
 
 ROMSET:
@@ -3345,7 +3433,7 @@ RESOURCES:
 Snap and Title.
 
 WIP:
-- 0.264: Machine removed.
+- 0.264: System removed.
 - 0.254: Renamed (lilprof78) to (lilprofa).
 - 0.160: hap and Sean Riddle added 'TI Little Professor (1978 version)' system.
 
@@ -3425,6 +3513,27 @@ WIP:
 - 0.216: Added VRT VT1682 device.
 
 $end
+$info=m6502_vtscr
+$mame
+0.195
+
+M6502 with VTxx scrambling, <unknown>, ????
+
+DRIVER:
+nintendo/m6502_vtscr.cpp
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Unsupported
+
+WIP:
+- 0.275: Device removed.
+- 0.195: Added 'M6502 with VTxx scrambling' device.
+
+$end
 $info=m740
 $mame
 0.184
@@ -3462,7 +3571,7 @@ RESOURCES:
 Snap, Title and machine picture (in "Cabinet" collection).
 
 WIP:
-- 0.248: Machine removed.
+- 0.248: System removed.
 - 0.184: kazblox added Nintendo M82 Display Unit (PAL) system.
 
 ROMSET:
@@ -3505,7 +3614,7 @@ RESOURCES:
 Snap, Title and machine picture (in "Cabinet" collection).
 
 WIP:
-- 0.238: Machine removed .
+- 0.238: System removed .
 - 0.195: David Shah added Pocket Games 150 in 1 system.
 
 ROMSET:
@@ -3590,7 +3699,7 @@ RESOURCES:
 Cabinet picture.
 
 WIP:
-- 0.233: Machine removed.
+- 0.233: System removed.
 - 0.222: Tim Lindner added Tandy Radio Shack MCX-128 system.
 
 ROMSET:
@@ -3643,7 +3752,7 @@ RESOURCES:
 Snap and Title.
 
 WIP:
-- 0.247: Machine removed.
+- 0.247: System removed.
 - 0.242: Kevin Horton added Parker Brothers Merlin - The Electronic Wizard (set 2) system.
 
 ROMSET:
@@ -3672,7 +3781,7 @@ RESOURCES:
 -
 
 WIP:
-- 0.232: Machine removed.
+- 0.232: System removed.
 - 0.208: Renamed (mfleappad) to (mfleappadus) and changed description to 'My First LeapPad (US)'.
 - 0.207: Sean Riddle added LeapFrog My First LeapPad (UK) system.
 
@@ -3702,7 +3811,7 @@ RESOURCES:
 Cabinet picture.
 
 WIP:
-- 0.212: Machine removed.
+- 0.212: System removed.
 - 0.209: Changed description to 'Mephisto MM V (V5.0)'.
 - 0.120: Dirk Verwiebe added Mephisto Rebel 5.0 system.
 
@@ -3729,7 +3838,7 @@ SOFTWARE LIST:
 -
 
 WIP:
-- 0.212: Machine removed.
+- 0.212: System removed.
 - 0.209: Changed description to 'Mephisto MM V (V5.1) (TurboKit + HG550)'.
 - 0.142: Dirk Verwiebe and Cowering added Hegener & Glaser Mephisto 5.1 Schachcomputer Turbo Kit + HG550 system.
 
@@ -4490,7 +4599,7 @@ RESOURCES:
 Cabinet picture.
 
 WIP:
-- 0.172: Machine removed.
+- 0.172: System removed.
 - 0.142: Renamed (newbraie) to (newbraineim).
 - 0.130: Curt Coder added NewBrain AD with Expansion Interface system.
 
@@ -4523,7 +4632,7 @@ RESOURCES:
 Snap, Title and machine picture (in "Cabinet" collection).
 
 WIP:
-- 0.250: Machine removed.
+- 0.250: System removed.
 - 0.81: Jirou Kaneda added Philips NMS-8220 (13-aug-1986) system.
 
 ROMSET:
@@ -4555,7 +4664,7 @@ RESOURCES:
 Snap and Title.
 
 WIP:
-- 0.250: Machine removed.
+- 0.250: System removed.
 - 0.155: Wilbert Pol added Philips NMS-8250F system.
 
 ROMSET:
@@ -4587,7 +4696,7 @@ RESOURCES:
 Snap and Title.
 
 WIP:
-- 0.250: Machine removed.
+- 0.250: System removed.
 - 0.143u3: Wilbert Pol added Philips NMS-8250J system.
 
 ROMSET:
@@ -4616,7 +4725,7 @@ RESOURCES:
 -
 
 WIP:
-- 0.156: Machine removed.
+- 0.156: System removed.
 - 0.155: Wilbert Pol added Philips NMS-8270 (Prototype) system.
 
 ROMSET:
@@ -4645,7 +4754,7 @@ RESOURCES:
 Cabinet picture.
 
 WIP:
-- 0.222: Machine removed.
+- 0.222: System removed.
 - 0.185: hap and Berger added Novag Presto system.
 
 ROMSET:
@@ -4734,7 +4843,7 @@ RESOURCES:
 Snap and Title.
 
 WIP:
-- 0.262: Machine removed.
+- 0.262: System removed.
 - 0.237: Remove wrong comment [hap].
 - 0.154: Curt Coder added 'NEC PC-8401A-LS' system.
 
@@ -4790,7 +4899,7 @@ RESOURCES:
 Snap and Title.
 
 WIP:
-- 0.262: Machine removed.
+- 0.262: System removed.
 - 0.259: Angelo Salese added 'Hack Inc. Sandbox PCI PC (430HX with Matrox Millennium)' system.
 
 ROMSET:
@@ -4822,7 +4931,7 @@ RESOURCES:
 Snap and Title.
 
 WIP:
-- 0.262: Machine removed.
+- 0.262: System removed.
 - 0.259: Changed description to 'Sandbox PCI PC (430HX with nVidia Riva 128)'.
 - 0.256: Angelo Salese added 'Hack Inc. Sandbox PCI PC (430HX with Riva 128)' system.
 
@@ -4849,6 +4958,38 @@ Save State: Unsupported
 WIP:
 - 0.255: Device removed.
 - 0.253: Nigel Barnes added 'Psion ASIC5 (Peripheral mode)' device.
+
+$end
+$info=psionlz64s
+$mame
+0.139 [Sandro Ronco]
+
+Organiser II LZ64S, Psion, 1989
+
+In 1986, the successful Organiser II introduced a number of hardware improvements, a better keyboard and display, a much larger ROM and either 8K or 16K of battery-backed RAM, and featured a capable newly-designed single-tasking operating' system. The first Organiser II models featured a two-line display. The new model supported a number of different types of improved DATAPAKs containing either EPROM or battery-backed RAM storage each storing between 8k and 128k of data. Later flashpaks (EEPROM) and RAMpaks were added 'to the range, capable of storing up to 256k on each extension slot (source: http://en.wikipedia.org/wiki/Psion_Organiser#Organiser_II).
+
+DRIVER:
+psion/psion.cpp
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Imperfect
+Save State: Supported
+
+SOFTWARE LIST:
+psion2.xml
+
+RESOURCES:
+Snap and Title.
+
+WIP:
+- 0.276: System removed.
+- 0.139: Sandro Ronco added skeleton driver of 'Psion Organiser II LZ64S' system.
+
+ROMSET:
+67680 bytes in 2 files / 54.46Kb packed
 
 $end
 $info=rrd45
@@ -4933,7 +5074,7 @@ RESOURCES:
 -
 
 WIP:
-- 0.221: Machine removed.
+- 0.221: System removed.
 - 0.177: hap and Kevin Horton added Entex Select-A-Game: Baseball 4 system.
 
 ROMSET:
@@ -4962,7 +5103,7 @@ RESOURCES:
 -
 
 WIP:
-- 0.221: Machine removed, move select a game to its own driver [hap].
+- 0.221: System removed, move select a game to its own driver [hap].
 - 0.177: hap and Kevin Horton added Entex Select-A-Game: Pinball system.
 
 ROMSET:
@@ -4991,7 +5132,7 @@ RESOURCES:
 -
 
 WIP:
-- 0.221: Machine removed, move select a game to its own driver [hap].
+- 0.221: System removed, move select a game to its own driver [hap].
 - 0.177: hap and Kevin Horton added Entex Select-A-Game: Space Invader 2 system.
 
 ROMSET:
@@ -5062,7 +5203,7 @@ RESOURCES:
 -
 
 WIP:
-- 0.232: Machine removed.
+- 0.232: System removed.
 - 0.208: kaiOr added Dieter Scheuschner Schach- und Lerncomputer SLC 1 (prototype?) system.
 
 ROMSET:
@@ -5099,6 +5240,28 @@ TI SN74S381 ALU / Function Generator, ???, ????
 WIP:
 - 0.222: Device removed.
 - 0.211: Added TI SN74S381 ALU / Function Generator device.
+
+$end
+$info=speechrom
+$mame
+0.149u1
+
+TI Speech ROM, <unknown>, ????
+
+DRIVER:
+devices/machine/spchrom.cpp
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Unsupported
+
+WIP:
+- 0.276: Device removed.
+- 0.186: Description changed to 'TI Speech ROM'.
+- 0.149u1: Added 'SPEECHROM' device.
 
 $end
 $info=spi_sdhccard
@@ -5185,7 +5348,7 @@ RESOURCES:
 Snap and Title.
 
 WIP:
-- 0.258: Machine removed.
+- 0.258: System removed.
 - 0.184: Clone promoted to working. Fixed keyboard, fixed handling of enable/disable of 25th line, use internal MM5740 ROM, fixed H-19 with Watzman ROM, fixed Super19 [Mark Garlanger].
 - 0.183: Mark Garlanger added 'Heath Inc Heathkit H-19 w/ Super-19 ROM' system.
 
@@ -5302,7 +5465,7 @@ RESOURCES:
 Cabinet picture.
 
 WIP:
-- 0.172: Machine removed.
+- 0.172: System removed.
 - 0.121: Tomas Karlsson added SVI-328 (NTSC) + SVI-806 80 column card system.
 
 ROMSET:
@@ -5331,7 +5494,7 @@ RESOURCES:
 Cabinet picture.
 
 WIP:
-- 0.172: Machine removed.
+- 0.172: System removed.
 - 0.121: Tomas Karlsson added SVI-328 (PAL) + SVI-806 80 column card system.
 
 ROMSET:
@@ -5360,7 +5523,7 @@ RESOURCES:
 Cabinet picture and pdf manual.
 
 WIP:
-- 0.172: Machine removed.
+- 0.172: System removed.
 - 0.153: Renamed (colecob) to (svi603).
 - 0.101: Tomas Karlsson added Spectravideo SVI-603 Coleco Game Adapter system.
 
@@ -5404,7 +5567,7 @@ RESOURCES:
 Cabinet picture.
 
 WIP:
-- 0.230: Machine removed.
+- 0.230: System removed.
 - 0.221: Changed manufacturer to 'Tandy Corporation'.
 - 0.183: hap and Sean Riddle added Tandy Radio Shack Electronic Basketball system.
 
@@ -5442,7 +5605,7 @@ SOFTWARE LIST:
 ti99_cart.xml.
 
 WIP:
-- 0.174: Machine removed.
+- 0.174: System removed.
 - 0.149u1: Michael Zapf added TI99/4QI Home Computer (Europe) system.
 
 ROMSET:
@@ -5571,7 +5734,7 @@ RESOURCES:
 -
 
 WIP:
-- 0.218: Machine removed.
+- 0.218: System removed.
 - 0.169: Nigel Barnes added Torch CH240/21 system.
 
 ROMSET:
@@ -5600,7 +5763,7 @@ RESOURCES:
 -
 
 WIP:
-- 0.222: Machine removed.
+- 0.222: System removed.
 - 0.192: Robbbert added Transitional Technology Inc unknown TTI SBC system.
 
 ROMSET:
@@ -5643,7 +5806,7 @@ RESOURCES:
 Snap, Title and machine picture (in "Cabinet" collection).
 
 WIP:
-- 0.258: Machine removed.
+- 0.258: System removed.
 - 0.186: Mark Garlanger added 'Heath Inc Heathkit H-19 w/ ULTRA ROM' system.
 
 ROMSET:
@@ -5672,7 +5835,7 @@ RESOURCES:
 -
 
 WIP:
-- 0.225: Machine removed.
+- 0.225: System removed.
 - 0.224: Renamed (unkmandd) to (unkunsp) and changed description to 'unknown unSP-based handheld'.
 - 0.217: zhongtiao1 added unknown M&D handheld system.
 
@@ -5836,11 +5999,34 @@ RESOURCES:
 Snap and Title.
 
 WIP:
-- 0.250: Machine removed.
+- 0.250: System removed.
 - 0.143u3: Wilbert Pol added Philips VG-8230J system.
 
 ROMSET:
 196608 bytes in 4 files / 117.16Kb packed
+
+$end
+$info=virgedx_vga_r1
+$mame
+0.163
+
+S3 86C375 (rev 1) VGA core, <unknown>, ????
+
+DRIVER:
+devices/video/s3virge.cpp
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Unsupported
+
+WIP:
+- 0.276: Device removed.
+- 0.263: Description changed to 'S3 86C375 (rev 1) VGA core'.
+- 0.186: Renamed (virgedx_r1) to (virgedx_vga_r1).
+- 0.163: Added 'S3 86C375 (rev 1)' device.
 
 $end
 $info=volt_reg
@@ -5963,7 +6149,7 @@ RESOURCES:
 -
 
 WIP:
-- 0.218: Machine removed.
+- 0.218: System removed.
 - 0.206: Machine promoted to working [Ryan Holtz].
 - 0.157: segher added V-Tech V-Smile (France) system.
 
@@ -5993,7 +6179,7 @@ RESOURCES:
 -
 
 WIP:
-- 0.218: Machine removed.
+- 0.218: System removed.
 - 0.206: Machine promoted to working [Ryan Holtz].
 - 0.187: Sean Riddle added V-Tech V-Smile (Germany) system.
 
@@ -6026,7 +6212,7 @@ RESOURCES:
 Snap and Title.
 
 WIP:
-- 0.258: Machine removed.
+- 0.258: System removed.
 - 0.184: Clone promoted to working [Mark Garlanger].
 - 0.183: Mark Garlanger added 'Heath Inc Heathkit H-19 w/ Watzman ROM' system.
 
@@ -6135,7 +6321,7 @@ RESOURCES:
 Snap and Title.
 
 WIP:
-- 0.250: Machine removed.
+- 0.250: System removed.
 - 0.128: Wilbert Pol and Miodrag Milanovic added Yamaha YIS503M system.
 
 ROMSET:
@@ -6167,7 +6353,7 @@ RESOURCES:
 Snap and Title.
 
 WIP:
-- 0.250: Machine removed.
+- 0.250: System removed.
 - 0.155: Wilbert Pol added Yamaha YIS604 (64KB) system.
 
 ROMSET:
@@ -6705,3 +6891,4 @@ $end
 #
 #
 #  © 2011/2025 AntoPISA
+#
