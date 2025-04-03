@@ -1900,6 +1900,41 @@ example: 12* 3 enter gives 36.   24/ 4 enter gives 6.
 Read the above manual for more information.
 
 $end
+$info=c128
+$mame
+
+Quickload does not work correctly - the file is loaded but corrupted. Cassettes work. Some D64 floppies work. D71 and D81 floppies do not work.
+
+The naming convention seems to be that D81 files be loaded with the C1581 disk drive, while D71 files be loaded with the C1571 drive. The D64 files appear to work with the C1571 as well.
+
+To save a tape: SAVE
+To load a tape: LOAD
+To switch from C128 mode to C64 mode: GO64 (answer Y).
+
+$end
+$info=c16,plus4,c264
+$mame
+
+Cassettes cannot be loaded. Floppy disks produce an error. The "*" key is missing. Quickload and Cartridges work.
+
+If cassettes worked, the commands would be the same as any Commodore: SAVE and LOAD.
+
+$end
+$info=c64
+$mame
+
+Seems to be largely working.
+
+To save a tape: SAVE
+To load a tape: LOAD
+
+To load the default file from floppy: LOAD"*",8,1  . After loading you may have to RUN. If you don't specify the "1", it's assumed to be a Basic program and will be loaded into Basic's workspace.
+
+To get the floppy directory: LOAD"$",8 and then LIST. This wipes out whatever program you had in memory.
+
+The default disk drive is on device 8 (slot iec8). If you want another drive, load it into iec9.
+
+$end
 $info=c80
 $mame
 TIPS:
