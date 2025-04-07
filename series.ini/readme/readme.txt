@@ -1,4 +1,4 @@
-﻿MAME SERIES.ini 0.275 (Mar 11, 2025)
+﻿MAME SERIES.ini 0.276 (Apr  7, 2025)
 © AntoPISA     www.progettoSNAPS.net
 ==================================== 
 
@@ -12,13 +12,18 @@ In the file are both "Series" recognized as such (thus games and their official 
 guages or with minor variations (official and unofficial).
 
 
-2025/03/00 11.02 MAME 0.275 (714 supported Series - 12,128 items):
+2025/04/07 11.03 MAME 0.276 (715 supported Series - 12,136 items):
+==================================================================
+Items RENAMED    (3) : (kovqhsgs302) to (kovgsyx), (mrwoo) to (mrwoou) and (multchmp) to (multchmp25).
+Series UPDATED   (8) : "Aristocrat MK Hardware", "Dark Seal", "Ghosts'n Goblins", "Knights of Valour", "Mahjong Reach", "Multi Champ", "Parodius" and "Toffy".
+
+
+2025/03/11 11.02 MAME 0.275 (714 supported Series - 12,128 items):
 ==================================================================
 Items REMOVED   (21) : (bbtime), (bcclimbr), (gckong), (gdigdug), (cfrogger), (cgalaxn), (egalaxn2), (gnw_dkong2), (gnw_dkjr), (tgaunt), (cmspacmn), (tmpacman), (epacman2), (epacman2r), (pbqbert), (tmscramb), (bzaxxon), (sfach), (sfzbch), (sfzch) and (trobhood). 
 Series ADDED     (2) : "Rayforce" and "Royal Casino * Slot".
 Series REMOVED   (2) : "Gunlock" and "Rad Action"  (merged with "Taito Football Champ").
 Series UPDATED  (56) : "Aero Fighters", "Bubble Bobble", "Cherry Bonus * Slot", "Cherry Master * Slot", "Darius", "Darwin", "Dolphin Treasure * Slot", "Enchanted Forest * Slot", "Fruit Bonus * Slot", "Gauntlet", "Knights of Valour", "Ninja-Kid", "Operation Wolf", "Pac-Man", "Pin*Bot * Pinball", "Police 911", "Raiden", "Samurai Aces", "Sprint", "Super Poker", "Taisen Mahjong Final Romance", "Targ", "Tecmo World Cup", "Teenage Mutant Ninja Turtles", "Terminator * Pinball",  "Tetris", "The Simpsons * Slot", "Thrill Drive", "Thunder & Lightning", "Thunder Dragon", "Thunder Dragon", "Time Bandit * Slot", "Time Crisis", "Time Killers", "Time Machine * Slot", "Time Pilot", "Toffy", "Torch of the Gods * Slot", "Torch of the Gods * Slot", "Track & Field", "Triple Punch", "Triv Quiz", "Trivia Master", "Trivia", "Tron", "Vanguard", "Vapor Trail", "Video Pinball", "Virtual On - Cyber Troopers", "Wangan Midnight", "World Class Bowling", "World Combat", "World Court", "Xevious", "X-Men" and "Zero Team".
-
 
 2025/02/15 11.01 MAME 0.274 (714 supported Series - 12,059 items):
 ==================================================================
