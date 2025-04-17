@@ -12386,12 +12386,32 @@ $info=vic10,vic1001,vic20
 $mame
 TIPS:
 
-Tape loading is problematic. You could get a bad load, you could get screen and memory corruptions, the tape might go to stop partway through the load, or the tape might not even be detected. Floppy disks are also troublesome, with corrupted memory or just keeps searching.
+Most games work with the default RAM, but a few will need the 16k expansion.
 
-Tapes from vic10 and vic20 can be read by both machines.
 
-To save a tape: SAVE
-To load a tape: LOAD
+Cassettes
+---------
+Mostly not working.
+
+To load: LOAD
+To save: SAVE
+
+If a SYS is specified, then load with: LOAD"",1,1 followed by the specified SYS command.
+
+
+Cartridges
+----------
+Some work. Some run by themselves, some need a SYS command.
+
+
+Quickloads
+----------
+Some work and will run by themselves.
+
+
+Floppies
+--------
+Not working.
 
 To load the default file from floppy: LOAD"*",8,1  . After loading you may have to RUN. If you don't specify the "1", it's assumed to be a Basic program and will be loaded into Basic's workspace.
 
