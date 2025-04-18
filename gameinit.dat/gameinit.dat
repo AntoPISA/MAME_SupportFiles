@@ -919,6 +919,7 @@ TIPS:
 ACORN ATOM
 ==========
 
+Make sure you have selected 32k of RAM.
 
 
 Cartridges
@@ -937,13 +938,13 @@ Use *DOS to enable the disk system.
 Then *CAT to get a directory.
 Then *filename to run something. If it only gives the file stats then it isn't executable.
 
-
+* is shift-equals
 
 
 Cassettes
 ---------
 
-Only able to load wav tapes it made. Unable to load external tapes. UEF files are either ignored or cause MAME to crash. TAP files are really ATM files.
+UEF files are either ignored or cause MAME to crash. This is caused by the files not setting the baud to 300.
 
 *CAT to list files on usable tapes.
 
@@ -954,7 +955,7 @@ SAVE"X"   - to save.
 Inufuto
 -------
 
-These are external WAV and UEF files. None will load.
+These are available as WAV and UEF files. WAV will load. *LOAD then LINK 10240.
 
 
 
