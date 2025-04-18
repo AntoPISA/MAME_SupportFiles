@@ -919,6 +919,7 @@ TIPS:
 ACORN ATOM
 ==========
 
+Make sure you have selected 32k of RAM.
 
 
 Cartridges
@@ -937,13 +938,13 @@ Use *DOS to enable the disk system.
 Then *CAT to get a directory.
 Then *filename to run something. If it only gives the file stats then it isn't executable.
 
-
+* is shift-equals
 
 
 Cassettes
 ---------
 
-Only able to load wav tapes it made. Unable to load external tapes. UEF files are either ignored or cause MAME to crash. TAP files are really ATM files.
+UEF files are either ignored or cause MAME to crash. This is caused by the files not setting the baud to 300.
 
 *CAT to list files on usable tapes.
 
@@ -954,7 +955,7 @@ SAVE"X"   - to save.
 Inufuto
 -------
 
-These are external WAV and UEF files. None will load.
+These are available as WAV and UEF files. WAV will load. *LOAD then LINK 10240.
 
 
 
@@ -5648,12 +5649,12 @@ To save a file: SAVE
 To load a file: LOAD
 
 $end
-$info=laser110,laser200,laser210,laser310
+$info=laser110,laser200,laser210,laser310,vz200,vz300
 $mame
 TIPS:
 
 VTECH LASER 200, 210, 300, 310. DICK SMITH VZ-200, VZ-300
-===================================================
+=========================================================
 
 Need at least 16k of RAM.
 
@@ -5678,7 +5679,7 @@ B - binary, will run itself
 T - Basic. Type RUN.
 
 $end
-$info=laser350
+$info=laser350,laser500,laser700
 $mame
 TIPS:
 
@@ -5688,7 +5689,7 @@ VTECH LASER 350, 500, 700
 
 Cartridge
 ---------
-Not working?
+System checks for the signature of AA,55,E7,18 and if found, will jump to the next byte (0004). There are no known carts in existence. The BIN files for the emu500 emulator are not compatible and can't be used.
 
 
 
@@ -12386,12 +12387,32 @@ $info=vic10,vic1001,vic20
 $mame
 TIPS:
 
-Tape loading is problematic. You could get a bad load, you could get screen and memory corruptions, the tape might go to stop partway through the load, or the tape might not even be detected. Floppy disks are also troublesome, with corrupted memory or just keeps searching.
+Most games work with the default RAM, but a few will need the 16k expansion.
 
-Tapes from vic10 and vic20 can be read by both machines.
 
-To save a tape: SAVE
-To load a tape: LOAD
+Cassettes
+---------
+Mostly not working.
+
+To load: LOAD
+To save: SAVE
+
+If a SYS is specified, then load with: LOAD"",1,1 followed by the specified SYS command.
+
+
+Cartridges
+----------
+Some work. Some run by themselves, some need a SYS command.
+
+
+Quickloads
+----------
+Some work and will run by themselves.
+
+
+Floppies
+--------
+Not working.
 
 To load the default file from floppy: LOAD"*",8,1  . After loading you may have to RUN. If you don't specify the "1", it's assumed to be a Basic program and will be loaded into Basic's workspace.
 
