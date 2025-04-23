@@ -6302,20 +6302,22 @@ PAK n - Do a rombank switch (write to port 0A) to bank "n" and jump to C000.
 $end
 $info=mbs1
 $mame
-INITIALIZATION:
+TIPS:
 
 HITACHI S1 (mbs1)
 =================
 
-Not working.
 
 Cassette
 --------
+Works in MAMEUI only.
+
 To save a tape: SAVE"x"
+To load a tape in Basic: LOAD then RUN
+To load a tape in M/L: LOADM then EXEC
 
-To load a tape: LOAD
+If you guess wrongly, you'll get "Bad File Mode".
 
-Cassette not detected in MAME, works in MAMEUI.
 Games still don't work because of missing graphics code.
 
 $end
