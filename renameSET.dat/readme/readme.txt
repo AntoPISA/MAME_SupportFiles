@@ -2,8 +2,8 @@
 ======================================
 © 2009/2025 progetto-SNAPS by AntoPISA
 
-renameSET.dat:    0.276
-Internal version: 15.05
+renameSET.dat:    0.277
+Internal version: 15.06
 
 The package contains:
 
@@ -46,13 +46,13 @@ Line 4:  The operating characteristics of machines supported (with any differenc
          save unsupported     - Count of machines that do not support the "SaveState";
 
 Line 5: Counting of graphic features of machines only: orientation and type of graphics; 
-        horizontal screen - Count of machines that have a horizontal screen;
-        vertical screen   - Count of machines that have a vertical screen;
-        raster graphics   - Machine counting with raster graphics;
-        vector graphics   - Machine counting with vector graphics;
-        lcd graphics      - Machine counting with LCD graphics;
-        svg graphics      - Machine counting with SVG graphics;
-        screenless        - Screenless machine counting.
+        horizontal screen     - Count of machines that have a horizontal screen;
+        vertical screen       - Count of machines that have a vertical screen;
+        raster graphics       - Machine counting with raster graphics;
+        vector graphics       - Machine counting with vector graphics;
+        lcd graphics          - Machine counting with LCD graphics;
+        svg graphics          - Machine counting with SVG graphics;
+        screenless            - Screenless machine counting.
         
 Line 6:  Counting of all types of ROMs supported (with any differences highlighted -/+):
          total roms           - Count of all roms (including BIOSes and devices); subdivided into:
