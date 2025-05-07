@@ -1,9 +1,9 @@
-﻿# MAME GAMEINIT.DAT v0.276   Latest Update:    April  5, 2025
+﻿# MAME GAMEINIT.DAT v0.277   Latest Update:      May  7, 2025
 #                         Project started: September 10, 2015
 #          Merged to the file startup.dat:  December 17, 2024
 #
 # File designed and maintained by AntoPISA and Robbbert
-# Internal versione 11.05
+# Internal versione 11.06
 #
 # Homepage         : https://www.progettosnaps.net/gameinit.dat
 # Github repository: https://github.com/AntoPISA/MAME_SupportFiles
@@ -4452,6 +4452,17 @@ $mame
 INITIALIZATION:
 
 The first time you run the game, an ERROR appears because the NVRAM needs initialising. Press fast forward [ Ins ] key to speed this up.
+
+SOURCE:
+mameinfo.dat
+
+$end
+$info=gunkids
+$mame
+INITIALIZATION:
+
+
+The first time you run the game, an ERROR appears. Hold down [ F2 ] for about 4 seconds to enter TEST MODE. Select 'SET MODE' with [ F2 ], enter with Key [ CTRL ], then use [ F2 ] to select 'RAM CLEAR'. Hold down Key [ CTRL ] until 'OK' and press [ F3 ] to proceed.
 
 SOURCE:
 mameinfo.dat
@@ -12502,6 +12513,17 @@ If you enter text via parallel, it is echoed but otherwise ignored.
 - Some tests...
 - Say the time: EscT. (include the period)
 - Play some notes: !T08:1234:125:129:125:130. (then press enter)
+
+$end
+$info=wantouch
+$mame
+INITIALIZATION:
+
+
+The first time you run the game, an ERROR appears. Hold down [ F2 ] for about 4 seconds to enter TEST MODE. Select 'SET MODE' with [ F2 ], enter with Key [ CTRL ], then use [ F2 ] to select 'RAM CLEAR'. Hold down Key [ CTRL ] until 'OK' and press [ F3 ] to proceed.
+
+SOURCE:
+mameinfo.dat
 
 $end
 $info=wildone
