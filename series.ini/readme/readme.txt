@@ -1,4 +1,4 @@
-﻿MAME SERIES.ini 0.276 (Apr  7, 2025)
+﻿MAME SERIES.ini 0.277 (May  8, 2025)
 © AntoPISA     www.progettoSNAPS.net
 ==================================== 
 
@@ -12,11 +12,16 @@ In the file are both "Series" recognized as such (thus games and their official 
 guages or with minor variations (official and unofficial).
 
 
+2025/05/08 11.04 MAME 0.277 (715 supported Series - 12,152 items):
+==================================================================
+Items RENAMED    (4) : (chleagul) to (chleaguel), (chleagxa) to (chleaguexa), (chleagxb) to (chleaguexb) and (megat) to (megata).
+Series UPDATED  (14) : "Amidar", "Champion Poker", "Crazy Bugs * Slot", "Cruis'n USA", "Gunlock", "Head On", "Joker Poker", "King of Fighters", "Long Hu Bang", "MegaTouch", "Phoenix", "Rail Chase", "Space Invaders" and "Street Fighter".
+
+
 2025/04/07 11.03 MAME 0.276 (715 supported Series - 12,136 items):
 ==================================================================
 Items RENAMED    (3) : (kovqhsgs302) to (kovgsyx), (mrwoo) to (mrwoou) and (multchmp) to (multchmp25).
 Series UPDATED   (8) : "Aristocrat MK Hardware", "Dark Seal", "Ghosts'n Goblins", "Knights of Valour", "Mahjong Reach", "Multi Champ", "Parodius" and "Toffy".
-
 
 2025/03/11 11.02 MAME 0.275 (714 supported Series - 12,128 items):
 ==================================================================
