@@ -5,7 +5,9 @@ xml2type.py - Estrae e salva 3 tipi diversi di machine da un file XML MAME:
 - bios
 - device
 - mechanical
-Con barra di avanzamento testuale.
+Supporta anche vecchi file con <game> al posto di <machine>
+
+(C) 2025 AntoPISA www.progettosnaps.net v.1.3
 """
 
 import os
@@ -26,19 +28,26 @@ def select_xml_file():
 
 
 def extract_machines_by_attribute(root, attribute, value):
-    """Estrae dal nodo radice solo i nodi <machine> con l'attributo specifico uguale al valore dato"""
+    """Estrae dal nodo radice solo i nodi <machine> o <game> con l'attributo specifico uguale al valore dato"""
     new_root = etree.Element("mame")
 
     # Copia gli attributi principali del nodo <mame>
     for attr in root.attrib:
         new_root.set(attr, root.get(attr))
 
-    # Filtra le machine
+    # Prova prima con <machine>
     machines = list(root.findall("machine"))
+    if not machines:
+        print("⚠️ Nessun nodo <machine> trovato, provo con <game>...")
+        machines = list(root.findall("game"))
+
     filtered = []
 
     for machine in tqdm(machines, desc=f"Estrazione {attribute}='{value}'", leave=False, ncols=70):
         if machine.get(attribute) == value:
+            # Cambia il tag da game a machine se necessario
+            if machine.tag != "machine":
+                machine.tag = "machine"
             filtered.append(machine)
 
     for m in filtered:
@@ -57,18 +66,18 @@ def write_output_file(tree, input_file, suffix):
     with open(output_file, "wb") as f:
         f.write(etree.tostring(tree, pretty_print=True, xml_declaration=True, encoding="utf-8"))
 
-    print(f" File salvato: {output_file}")
+    print(f"✅ File salvato: {output_file}")
     return output_file
 
 
 def main():
-    print("xml2type v1.2 - Estrattore multiplo di categorie da XML MAME")
+    print("xml2type v1.3 - Estrattore multiplo da XML MAME (supporto <machine> e <game>)")
     input_file = select_xml_file()
     if not input_file:
         print("Nessun file selezionato.")
         return
 
-    print(f" File selezionato: {input_file}")
+    print(f"📄 File selezionato: {input_file}")
 
     try:
         # Carica il file XML in modo sicuro
@@ -85,17 +94,17 @@ def main():
             {"attr": "ismechanical", "value": "yes", "suffix": "mechanical"}
         ]
 
-        print("\n Inizio estrazione dei dati...\n")
+        print("\n🔍 Inizio estrazione dei dati...\n")
 
         for cat in categories:
             tqdm.write(f"🔧 Elaborando categoria: {cat['suffix'].upper()}")
             filtered_tree = extract_machines_by_attribute(root, cat["attr"], cat["value"])
             output_file = write_output_file(filtered_tree, input_file, cat["suffix"])
 
-        print("\n Tutti i file sono stati generati correttamente.")
+        print("\n🎉 Tutti i file sono stati generati correttamente.")
 
     except Exception as e:
-        print(f"\n Si è verificato un errore durante l'elaborazione: {e}")
+        print(f"\n🚨 Si è verificato un errore durante l'elaborazione: {e}")
 
 
 if __name__ == "__main__":
