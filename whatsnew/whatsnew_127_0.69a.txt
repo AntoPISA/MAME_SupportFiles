@@ -41,17 +41,16 @@ Source changes:
 - TMS32010 BIO fix [Aaron Giles].
 - C 68k core is now default, this fixes collisions in Assault.
 - Fixed bug causing Timings to be broken when using D3D [Leon van Rooij].
-- Optional XML output and xml to info converter (see xmlinfo.txt) [Andrea Mazzoleni]:
-  * use -listxml, converter isn't fully set up yet.
+- Optional XML output and xml to info converter (see xmlinfo.txt). Use -listxml, converter isn't fully set up yet [Andrea Mazzoleni].
 - A number of Changes to the Timer System [Aaron Giles].
 - All the CPU scheduling has moved into cpuexec.c and been taken out of timer.c. A number of bugs relating to time tracking for suspended CPUs have been fixed.
 - A side effect of all this is a change in the behavior of the CPU scheduling [David Haywood].
 - For the most part, games are fine with this. - However, there were a few exceptions [David Haywood]:
-  * taitosj.c: timing of the MCU communication broke
-  * arkanoid.c: timing of the MCU communication broke
-  * harddriv.c: stunrun timing glitches, racedriv/steeltal/hdrivair broken (There may be more, but I haven't found them yet)
+  * taitosj.c: timing of the MCU communication broke;
+  * arkanoid.c: timing of the MCU communication broke;
+  * harddriv.c: stunrun timing glitches, racedriv/steeltal/hdrivair broken (There may be more, but I haven't found them yet).
 - The first two problems have been fixed, as has racedriv, but steeltal, hdrivair, and stunrun still have issues [David Haywood]:
-  * Oh, one other useful function I added is this: cpu_boost_interleave(double timeslice_duration, double boost_duration).
+  * Oh, one other useful function I added is this: cpu_boost_interleave(double timeslice_duration, double boost_duration);
   * You call this if you need to temporarily crank up the interleave for a short period of time in order to get CPU synchronization working. I used this in arkanoid and taitosj to get the MCU communications working. For example, you could say: cpu_boost_interleave(TIME_IN_USEC(1), TIME_IN_USEC(100));
   * Which would interleave the CPUs on 1 usec boundaries for the next 100 usecs. Even more useful is this: cpu_boost_interleave(0, TIME_IN_USEC(10)); a very small value (0) for the first parameter means "use perfect synchronization", which should guarantee cycle-accurate synchronization for the specified duration. Note that this is *really* slow, so you don't want to be doing it too much!
 - Let us know ASAP if anything else is broken as a result of this update [David Haywood].

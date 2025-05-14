@@ -2,7 +2,7 @@
 ---------------------------------------
 
 
-New games added or promoted from NOT_WORKING status
+New Games Added or Promoted from NOT_WORKING Status
 ---------------------------------------------------
 Backfire! [David Haywood]
 King of Dynast Gear [Pierpaolo Prazzoli, Guru]
@@ -11,13 +11,13 @@ Skull Fang [Bryan McPhail]
 Thunder Hoop [Pierpaolo Prazzoli, Mike Coates, Brian Troha]
 X-Files [Pierpaolo Prazzoli]
 
-New clones added
+New Clones Added
 ----------------
 Demon's World / Horror Story (first edition) [Corrado Tomaselli]
 Dragon World (World, V0300) [f205v]
 The Couples (Set 3) [f205v]
 
-New games marked as GAME_NOT_WORKING
+New Games Marked as GAME_NOT_WORKING
 ------------------------------------
 Poizone [Chris Hardy, David Haywood]
 
@@ -25,17 +25,17 @@ Poizone [Chris Hardy, David Haywood]
 Source changes:
 ---------------
 - H8/Last Fight update [R. Belmont]:
-  * (H8) Limited vector reads to 24 bits.
-  * (H8) Added SHLL.W, EXTU.L, SUBS.L #2, and SUBS.L #4 opcodes.
-  * Includes Guru's readme.
-  * Loads all ROMs.
+  * (H8) Limited vector reads to 24 bits;
+  * (H8) Added SHLL.W, EXTU.L, SUBS.L #2, and SUBS.L #4 opcodes;
+  * Includes Guru's readme;
+  * Loads all ROMs;
   * Maps RAM for the stack.
 - Converted wcvol95 and hvysmash to use the 16-bit deco tilemap functions [David Haywood].
 - Added BCD multiply to ARM coprocessor to fix wcvol95 [David Haywood].
 - Cleaned up the Neo Geo mess from 0.103u2 [David Haywood, Razoola].
 - Added support for >4GB CHD files to chdman for non-Windows systems [Lawrence Gold].
 - Fixed leapyear calculation [William Krick].
-- Converted 'Super Burger Time', 'Vapor Trail', and 'Crude Buster' to use the deco tilemap functions [David Haywood].
+- Converted Super Burger Time, Vapor Trail and Crude Buster to use the deco tilemap functions [David Haywood].
 - Rewrote Neo-Geo video system, removing distinction between raster and non-raster games and cleaning up the code significantly [David Haywood].
 - Improved DIP switches for clowns, clowns1 and bowler [Bob Seidel].
 - Added CPUINFO_PTR_DEBUG_SETUP_COMMANDS: a callback that is invoked to tell CPU cores to set up commands specific to a CPU core [Nathan Woods].
@@ -45,12 +45,12 @@ Source changes:
 - Fixed 'Hang On' stereo sound routine [Mamesick].
 - Cleaned up PC keyboard code [Nathan Woods].
 - Added memory_install_* calls that are not specific to specific bus widths (only for static handlers, not for function pointers) [Nathan Woods].
-- Added sound to 'Ping Pong Masters '93' [Tomasz Slanina].
+- Added sound to Ping Pong Masters '93 [Tomasz Slanina].
 - Converted 'Crazy Balloon' sound to use the discrete system [Derrick Renaud].
 - Major Namco System 22 update [Phil Stroffolino]:
-  * Hooked up the real master DSP BIOS.  Many games are now working or displaying graphics that were having problems before; removed many hacks as a result.
-  * Hooked up the runtime-configurable interrupt handlers, removing more game-specific hacks.
-  * Some improvements and additional documentation of video hardware.
+  * Hooked up the real master DSP BIOS.  Many games are now working or displaying graphics that were having problems before; removed many hacks as a result;
+  * Hooked up the runtime-configurable interrupt handlers, removing more game-specific hacks;
+  * Some improvements and additional documentation of video hardware;
   * Emulated Alpine Surfer protection and fixed bogus loading of Point ROMs, though the game still has problems.
 - Fixed the Wild Western bonus screen, where the horse would not scroll into view [Nicola Salmoria].
 - Cleaned up inputs in the bfm_sc2 driver [El Condor].

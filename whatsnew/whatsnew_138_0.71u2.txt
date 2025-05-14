@@ -4,21 +4,33 @@
 
 New Games Supported
 --------------------
-Actraiser (Nintendo Super System) [MESS, Pierpaolo Prazzoli, David Haywood] (just to show the current status, has no menu system emulated, still being worked on, no sound, everything else on the system has been left as testdrivers)
+Actraiser (Nintendo Super System) [MESS, Pierpaolo Prazzoli, David Haywood] (1)
 Big Event Golf [Tomasz Slanina, Jarek Burczynski]
-Genix [David Haywood] (missing gfx / sound roms, might work with them)
-Great Guns [Jarek Burczynski] (graphics leave trails)
-Strike Bowling [Tomasz Slanina, Jarek Burczynski] (lacks analog sounds, in progress)
-Super Speed Race Junior [Tomasz Slanina] (bad colours due to missing proms)
+Genix [David Haywood] (2)
+Great Guns [Jarek Burczynski] (3)
+Strike Bowling [Tomasz Slanina, Jarek Burczynski] (4)
+Super Speed Race Junior [Tomasz Slanina] (5)
 Taisen Hot Gimmick 3 Digital Surfing [David Haywood]
 Xor World (prototype) [Manuel Abadia]
 
 New Clones Supported
 --------------------
-Area 51 / Maximum Force Duo (R3000) [Brian A Troha] (speed hack needs doing)
-Cowbows of Moo Mesa (bootleg) [R. Belmont] (no sprites yet)
-Cue Brick (Japan Ver. D) [R. Belmont] (I suspect its not Japan)
-Pest Place (Mario Bros bootleg) [Pierpaolo Prazzoli] (bad colours, some bad gfx etc.)
+Area 51 / Maximum Force Duo (R3000) [Brian A Troha] (6)
+Cowbows of Moo Mesa (bootleg) [R. Belmont] (7)
+Cue Brick (Japan Ver. D) [R. Belmont] (8)
+Pest Place (Mario Bros bootleg) [Pierpaolo Prazzoli] (9)
+
+Notes:
+------
+(1): Just to show the current status, has no menu system emulated, still being worked on, no sound, everything else on the system has been left as testdrivers.
+(2): Missing GFX / sound roms, might work with them.
+(3): Graphics leave trails.
+(4): Lacks analog sounds, in progress.
+(5): Bad colours due to missing proms.
+(6): Speed hack needs doing.
+(7): No sprites yet.
+(8): I suspect its not Japan.
+(9): Bad colours, some bad GFX etc.
 
 
 Source changes:
@@ -32,13 +44,13 @@ Source changes:
 - Converted Some Drivers to Tilemaps [Curt Coder].
 - Cleaned Up some Konami GX ROM loading [R. Belmont].
 - Various Changes [Nathan Woods]
-  * Adds save state support to Cojag.
-  * Disables certain error logging and speedup hacks under MESS.
-  * Get_jaguar_memory() now based on memory_get_read_ptr().
-  * Jaguar blitter won't crash if it is instructed to blit to a weird address.
-  * Moved helpfile name into a constant.
-  * Minor tweaks in #ifdef MESS, and #ifndef MESS'ed a consistency check inapprpriate for MESS.
-  * Added very small hooks for MESS.
+  * Adds save state support to Cojag;
+  * Disables certain error logging and speedup hacks under MESS;
+  * Get_jaguar_memory() now based on memory_get_read_ptr();
+  * Jaguar blitter won't crash if it is instructed to blit to a weird address;
+  * Moved helpfile name into a constant;
+  * Minor tweaks in #ifdef MESS, and #ifndef MESS'ed a consistency check inapprpriate for MESS;
+  * Added very small hooks for MESS;
   * Changed seq_name() so that instead of saying "<KEY> or n/a", it will say "<KEY>".
 - CPU Interrupt Improvements fixing the Exidy 440 games (Chiller etc.), Ultimate Tennis, and the Seibu Sound System [Aaron Giles]
 - Fixed Reset in robokid when time runs out (robokid37b15red) [Tomasz Slanina].
@@ -47,20 +59,20 @@ Source changes:
 - Changed way Snapshot code works [Nathan Woods].
 - Huge Improvements in Prop Cycle (Namco System 22) [Phil Stroffolino]:
   Changes include:
-  * Pulled out matrix3d to its own module.
-  * Near plane clipping.
-  * Perspective correct textures.
-  * Preliminary lighting (all or nothing).
-  * Gamma correction.
-  * Preliminary fader support.
-  * Per polygon and per object depth bias.
-  * Sprite-polygon priority.
-  * Two-sided polygon flag.
-  * Tile flip attributes.
-  * Tilemap color bank.
-  * Improved steering responsiveness.
-  * Camera zoom and pan feature.
-  * Fixes to display list parsing.
+  * Pulled out matrix3d to its own module;
+  * Near plane clipping;
+  * Perspective correct textures;
+  * Preliminary lighting (all or nothing);
+  * Gamma correction;
+  * Preliminary fader support;
+  * Per polygon and per object depth bias;
+  * Sprite-polygon priority;
+  * Two-sided polygon flag;
+  * Tile flip attributes;
+  * Tilemap color bank;
+  * Improved steering responsiveness;
+  * Camera zoom and pan feature;
+  * Fixes to display list parsing;
   * Corrected rotation mappings for System22/21.
 - Stopped Sprites being hidden by track in fourtrax [Phil Stroffolino].
 - Fixed CPS2 raster effect (xmvsf069agre) [ShiRiRu].

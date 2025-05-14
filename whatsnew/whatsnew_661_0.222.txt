@@ -2,50 +2,7 @@
 -----------------------------------
 
 
-MAME Testers Bugs Fixed
------------------------
-- 00434: [Graphics] (gaplus.cpp) gaplus: Reverse scrolling background moves too slowly (sasuke).
-- 00480: [Graphics] (galaga.cpp) bosco and clones: Background is not erased correctly during title sequence (hap).
-- 00783: [Misc.] (nycaptor.cpp) nycaptor: High score initials entry times out too quickly. (GoldS_TCRF).
-- 01731: [Graphics] (atarifb.cpp) atarifb, atarifb1, atarifb4, abaseb, abaseb2: LEDs are connected incorrectly (hap).
-- 05148: [Misc.] (ht68k.cpp) ht68k: System hangs when attempting to boot from floppy (AJR).
-- 05766: [Documentation] (armedf.cpp) armedf, armedff: Correct title is Armed F, not Armed Formation (J.J.Boy).
-- 06456: [Graphics] (seta2.cpp) mj4simai: Missing pan/zoom effects on scene transitions (David Haywood).
-- 06559: [Gameplay] (apple2gs.cpp) All sets in apple2gs.cpp: System 6.0.x freezes on boot (Peter Ferrie).
-- 06833: [Misc.] (einstein.cpp) All einstein.cpp sets: Buffer overrun on DSK image file with more sides than drive heads (MetalliC).
-- 06898: [Documentation] (8080bw.cpp) spclaser and clones: Space Laser and Intruder appear to be hacks of Space War (GoldS_TCRF).
-- 07171: [Documentation] (megadriv.cpp) genesis [babyboom]: Release year is incorrect (ArcadeShadow).
-- 07198: [Documentation] (slapfght.cpp) tigerh and clones: Title should be hyphenated (AntoPISA).
-- 07269: [Graphics] (seta2.cpp) penbros and clones: Incorrect scene transition effects (David Haywood).
-- 07369: [Graphics] (namconb1.cpp) machbrkr: Character sprite animations display incorrectly (cam900).
-- 07536: [Graphics] Prescale option does not work properly with D3D renderer (Ryan Holtz).
-- 07551: [Crash/Freeze] (nes.cpp) nes [galivan]: Game freezes after selecting start or continue (girosintornillos).
-- 07591: [DIP/Input] (pacman.cpp) crush, maketrax: Coin counter increases continuously (Ivan Vangelista).
-- 07620: [Gameplay] (tubep.cpp) tubep, tubepb: "GAME OVER" and stage clear screens are skipped (hap).
-- 07629: [Documentation] (ladybug.cpp) snapjack: Release year is incorrect (jkburks).
-- 07634: [DIP/Input] (subsino2.cpp) mtrain: "Double Up" DIP switch settings are reversed (joepublic).
-- 07635: [DIP/Input] (subsino2.cpp) mtrain: Big/Small button functions are not labeled (joepublic).
-- 07640: [Graphics] (armedf.cpp) armedf and clones: Vertical blanking interval is incorrect, truncating screen vertically (sasuke).
-- 07648: [DIP/Input] (dkong.cpp) dkong3: DIP switch settings use different terminology to game manual (xelnia).
-- 07651: [Documentation] (warpwarp.cpp) sos: Title, manufacturer and release year do not match earliest advertisements (jkburks).
-- 07652: [Documentation] (m10.cpp) andromed: Title, manufacturer and release year are incorrect (jkburks).
-- 07653: [Documentation] (galaxian.cpp) galaxiani: Game appears to be officially licensed, not bootlegged (jkburks).
-- 07656: [Known Issues/To-Do's] (atarisy1.cpp) Two BIOS ROMs are bad dumps (hap).
-- 07657: [DIP/Input] (selz80.cpp) selz80, dagz80: Keyboard auto-repeats when it shouldn't (AJR).
-- 07663: [Graphics] (gaplus.cpp) gaplus and clones: Star field drawing area is incorrect (sasuke).
-- 07664: [Crash/Freeze] (skylncr.cpp) All machines in skylncr.cpp: [debug] Assertion failure in tilemap code (AJR).
-- 07667: [Crash/Freeze] (pengo.cpp) schick: [debug] Assertion failure on palette initialisation (David Haywood).
-- 07668: [Crash/Freeze] (seattle.cpp) sfrush, sfrushrk and clones: [debug] Assertion failure on start (AJR).
-- 07671: [DIP/Input] (atarisy1.cpp) roadblst and clones: Steering does not automatically return to center (Tafoid).
-- 07673: [Sound] All: Recorded MNG and WAV files are out of sync (hap).
-- 07674: [Media Support] (bbc.cpp) bbcb: Solidisk DFS (8271) *CAT command returns Diskfault error (Carl).
-- 07675: [DIP/Input] (gaelco2.cpp) wrally2, wrally2a: Analog steering control doesn't work (Ivan Vangelista).
-- 07676: [Sound] (gaelco2.cpp) wrally2, wrally2a: Audio channels do not match default screen positions (Ivan Vangelista).
-- 07678: [DIP/Input] (btime.cpp) btime3: Bonus Life DIP switch settings are labeled incorrectly (Tafoid).
-- 07686: [Documentation] (sms.cpp) gamegear [shinobi2]: Title is abbreviated (ArcadeShadow).
-
-
-New working machines
+New Working Machines
 --------------------
 Black Hole (EFG Sanremo) [f205v, Ivan Vangelista]
 Fidelity Electronics Mini Sensory Chess Challenger (1982 version) [hap, Berger, Achim]
@@ -72,7 +29,7 @@ TwinBee (Bubble System) [Raki, The Dumping Union, David Haywood]
 Vs Power Plus 30-in-1 [Sean Riddle, Kitsune Sniper]
 Zudu-go / 2udu-go [Sean Riddle, David Haywood, anonymous]
 
-New working clones
+New Working Clones
 ------------------
 Air Duel (US location test, M82 hardware) [halowarrior40]
 Circus (bootleg) [f205v, caius]
@@ -97,10 +54,8 @@ Prebillian (bootleg) [Kevin Eshbach]
 Raiden II (Spain) [Jorge Silva]
 Road Fighter (set 3, unencrypted) [Porchy]
 SciSys Superstar 36K [Berger, Achim]
-Shuffleshot (v1.35) [Phil Bennett, Aaron Giles, FactoryDavey, Bri Hefele, Joe Drilling, runwhiteboyrun, Christian "Ferris Bueller" Deitering,
-  Justin Khan, ColdPie, Joe Boyd, Vitorio Miliano, JFlow @scrapbrain, Darkstar, Tom Summersell, Ryan Holtz, Brian Troha]
-Shuffleshot (v1.38) [Phil Bennett, Aaron Giles, FactoryDavey, Bri Hefele, Joe Drilling, runwhiteboyrun, Christian "Ferris Bueller" Deitering,
-  Justin Khan, ColdPie, Joe Boyd, Vitorio Miliano, JFlow @scrapbrain, Darkstar, Tom Summersell, Ryan Holtz, Brian Troha]
+Shuffleshot (v1.35) [Phil Bennett, Aaron Giles, FactoryDavey, Bri Hefele, Joe Drilling, runwhiteboyrun, Christian "Ferris Bueller" Deitering, Justin Khan, ColdPie, Joe Boyd, Vitorio Miliano, JFlow @scrapbrain, Darkstar, Tom Summersell, Ryan Holtz, Brian Troha]
+Shuffleshot (v1.38) [Phil Bennett, Aaron Giles, FactoryDavey, Bri Hefele, Joe Drilling, runwhiteboyrun, Christian "Ferris Bueller" Deitering, Justin Khan, ColdPie, Joe Boyd, Vitorio Miliano, JFlow @scrapbrain, Darkstar, Tom Summersell, Ryan Holtz, Brian Troha]
 Street Fighter (Japan, bootleg) [f205v]
 Tandy Radio Shack MCX-128 [Tim Lindner]
 Trivia (Questions Series 12 Alt Question Rom) [Brian Troha]
@@ -110,7 +65,7 @@ Vampire Savior: The Lord of Vampire (Brazil 970519) [Renan Eler, Roberto Louzada
 Varth: Operation Thunderstorm (bootleg, set 2) [gmx, The Dumping Union]
 Video Pinball (4 ROMs version) [f205v]
 
-Machines promoted to working
+Machines Promoted to Working
 ----------------------------
 Bingo Time [TeamEurope, Ivan Vangelista]
 Excalibur Electronics Ford Racing [David Haywood]
@@ -120,12 +75,12 @@ Ritam Master Monty [hap]
 Ritam Monty Plays Scrabble [hap]
 Tetris + Cherry Master (Corsica, v8.01, set 2) [Ioannis Bampoulas]
 
-Clones promoted to working
+Clones Promoted to Working
 --------------------------
 Kick and Run (US) [dink, David Haywood]
 World Class Bowling Tournament (v1.30) [Phil Bennett, Aaron Giles, FactoryDavey, Bri Hefele, Joe Drilling, runwhiteboyrun, Christian "Ferris Bueller" Deitering, Justin Khan, ColdPie, Joe Boyd, Vitorio Miliano, JFlow @scrapbrain, Darkstar, Tom Summersell, Ryan Holtz, Brian Troha]
 
-New machines marked as NOT_WORKING
+New Machines Marked as NOT_WORKING
 ----------------------------------
 Crazy Balls [TTL] [f205v]
 Dardomania (v2.1) [Juan Romero, ClawGrip]
@@ -153,7 +108,7 @@ Yamaha DX11 Digital Programmable Algorithm Synthesizer [DBWBP]
 Zenith Data Systems Z-22 Terminal [Bitsavers]
 Zone 3D [Sean Riddle, David Haywood]
 
-New clones marked as NOT_WORKING
+New Clones Marked as NOT_WORKING
 --------------------------------
 Corona Data Systems, Inc. Corona PPC-21 [rfka01]
 FreeWay (V4.31) [Cristiano-MDQ]
@@ -190,7 +145,7 @@ Torch Computers Torch Model 301 [Nigel Barnes, Centre for Computing History]
 Torch Computers Torch Model 725 [Nigel Barnes, Jules Richardson]
 Twilight Zone (L-5) [PinMAME]
 
-New working software list additions
+New Working Software List Additions
 -----------------------------------
 apple2_flop_clcracked:
   Animal Watch: Tracks (cleanly cracked), Animal Watch: Whales (cleanly cracked), Animal Watch: Wolves (cleanly cracked),
@@ -367,8 +322,7 @@ vsmile_cart:
   Bob le Bricoleur - Les P'tits chantiers de Bob (France), Lil' Bratz Au Top de la Mode - Complices, Cools et Class' (France),
   Mission Pilote (France) [DisizDream]
 
-
-Software list items promoted to working
+Software List Items Promoted to Working
 ---------------------------------------
 amigaocs_flop:
   Budokan - The Martial Spirit (Euro), Dragon's Lair: Escape from Singe's Castle (Euro), Dungeon Master (Euro, v3.6),
@@ -391,7 +345,7 @@ pc98:
   Exceed Jack - Casinopolis [Barry Rodewald, Angelo Salese, r09]
 x68k_flop: Ajax, Dai Makaimura, Nemesis '90 Kai [Angelo Salese]
 
-New NOT_WORKING software list additions
+New NOT_WORKING Software List Additions
 ---------------------------------------
 apple2_flop_orig: Wortgefect [4am, Firehawke]
 bbc_rom:
@@ -492,6 +446,49 @@ vsmilem_cart:
   Disney La Princesse Et La Grenouille - Le grand reve de Tiana (France), Disney Manny et ses outils (France),
   Shrek 4 - Il etait une fin (France) [DisizDream]
   Disney Meister Manny's Werkzeugkiste (Germany) [TeamEurope]
+
+
+MAME Testers Bugs Fixed (39):
+-----------------------------
+- 00434: [Graphics] (gaplus.cpp) gaplus: Reverse scrolling background moves too slowly (sasuke).
+- 00480: [Graphics] (galaga.cpp) bosco and clones: Background is not erased correctly during title sequence (hap).
+- 00783: [Misc.] (nycaptor.cpp) nycaptor: High score initials entry times out too quickly. (GoldS_TCRF).
+- 01731: [Graphics] (atarifb.cpp) atarifb, atarifb1, atarifb4, abaseb, abaseb2: LEDs are connected incorrectly (hap).
+- 05148: [Misc.] (ht68k.cpp) ht68k: System hangs when attempting to boot from floppy (AJR).
+- 05766: [Documentation] (armedf.cpp) armedf, armedff: Correct title is Armed F, not Armed Formation (J.J.Boy).
+- 06456: [Graphics] (seta2.cpp) mj4simai: Missing pan/zoom effects on scene transitions (David Haywood).
+- 06559: [Gameplay] (apple2gs.cpp) All sets in apple2gs.cpp: System 6.0.x freezes on boot (Peter Ferrie).
+- 06833: [Misc.] (einstein.cpp) All einstein.cpp sets: Buffer overrun on DSK image file with more sides than drive heads (MetalliC).
+- 06898: [Documentation] (8080bw.cpp) spclaser and clones: Space Laser and Intruder appear to be hacks of Space War (GoldS_TCRF).
+- 07171: [Documentation] (megadriv.cpp) genesis [babyboom]: Release year is incorrect (ArcadeShadow).
+- 07198: [Documentation] (slapfght.cpp) tigerh and clones: Title should be hyphenated (AntoPISA).
+- 07269: [Graphics] (seta2.cpp) penbros and clones: Incorrect scene transition effects (David Haywood).
+- 07369: [Graphics] (namconb1.cpp) machbrkr: Character sprite animations display incorrectly (cam900).
+- 07536: [Graphics] Prescale option does not work properly with D3D renderer (Ryan Holtz).
+- 07551: [Crash/Freeze] (nes.cpp) nes [galivan]: Game freezes after selecting start or continue (girosintornillos).
+- 07591: [DIP/Input] (pacman.cpp) crush, maketrax: Coin counter increases continuously (Ivan Vangelista).
+- 07620: [Gameplay] (tubep.cpp) tubep, tubepb: "GAME OVER" and stage clear screens are skipped (hap).
+- 07629: [Documentation] (ladybug.cpp) snapjack: Release year is incorrect (jkburks).
+- 07634: [DIP/Input] (subsino2.cpp) mtrain: "Double Up" DIP switch settings are reversed (joepublic).
+- 07635: [DIP/Input] (subsino2.cpp) mtrain: Big/Small button functions are not labeled (joepublic).
+- 07640: [Graphics] (armedf.cpp) armedf and clones: Vertical blanking interval is incorrect, truncating screen vertically (sasuke).
+- 07648: [DIP/Input] (dkong.cpp) dkong3: DIP switch settings use different terminology to game manual (xelnia).
+- 07651: [Documentation] (warpwarp.cpp) sos: Title, manufacturer and release year do not match earliest advertisements (jkburks).
+- 07652: [Documentation] (m10.cpp) andromed: Title, manufacturer and release year are incorrect (jkburks).
+- 07653: [Documentation] (galaxian.cpp) galaxiani: Game appears to be officially licensed, not bootlegged (jkburks).
+- 07656: [Known Issues/To-Do's] (atarisy1.cpp) Two BIOS ROMs are bad dumps (hap).
+- 07657: [DIP/Input] (selz80.cpp) selz80, dagz80: Keyboard auto-repeats when it shouldn't (AJR).
+- 07663: [Graphics] (gaplus.cpp) gaplus and clones: Star field drawing area is incorrect (sasuke).
+- 07664: [Crash/Freeze] (skylncr.cpp) All machines in skylncr.cpp: [debug] Assertion failure in tilemap code (AJR).
+- 07667: [Crash/Freeze] (pengo.cpp) schick: [debug] Assertion failure on palette initialisation (David Haywood).
+- 07668: [Crash/Freeze] (seattle.cpp) sfrush, sfrushrk and clones: [debug] Assertion failure on start (AJR).
+- 07671: [DIP/Input] (atarisy1.cpp) roadblst and clones: Steering does not automatically return to center (Tafoid).
+- 07673: [Sound] All: Recorded MNG and WAV files are out of sync (hap).
+- 07674: [Media Support] (bbc.cpp) bbcb: Solidisk DFS (8271) *CAT command returns Diskfault error (Carl).
+- 07675: [DIP/Input] (gaelco2.cpp) wrally2, wrally2a: Analog steering control doesn't work (Ivan Vangelista).
+- 07676: [Sound] (gaelco2.cpp) wrally2, wrally2a: Audio channels do not match default screen positions (Ivan Vangelista).
+- 07678: [DIP/Input] (btime.cpp) btime3: Bonus Life DIP switch settings are labeled incorrectly (Tafoid).
+- 07686: [Documentation] (sms.cpp) gamegear [shinobi2]: Title is abbreviated (ArcadeShadow).
 
 
 Merged pull requests

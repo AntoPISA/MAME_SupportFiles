@@ -3,15 +3,15 @@
 OSD porters take note of the changes to the OSD core routines.
 
 
-New games supported or promoted from NOT_WORKING status
+New Games Supported or Promoted from NOT_WORKING Status
 -------------------------------------------------------
 Thunder Heroes [Guru]
 
-New clones supported or promoted from GAME_NOT_WORKING status
+New Clones Supported or Promoted from GAME_NOT_WORKING Status
 -------------------------------------------------------------
 Dharma Doujou (Korea) [Guru, David Haywood]
 
-New games marked as GAME_NOT_WORKING
+New Games Marked as GAME_NOT_WORKING
 ------------------------------------
 Cobra Command [Andrew Gardner]
 Gals Panic II - Quiz Version (Japan) [Guru, David Haywood]
@@ -32,8 +32,8 @@ Source changes:
 - Fixed several issues with the new Unicode support [Nathan Woods].
 - Changed uimenu.c to allow displaying DP switch banks which have gaps (unused switches) in them. These switches are now grayed out [Zsolt Vasvari].
 - Another Amiga update [Ernesto Corvi]:
-  * Fixed blitter in line mode.
-  * Modified Copper to run on odd memory bus cycles.
+  * Fixed blitter in line mode;
+  * Modified Copper to run on odd memory bus cycles;
   * Fixed screen delay offset when display data fetch is not word aligned.
 - Fixed cheat searching [stephh].
 - Replaced CPS2 CHDs with preliminary decryption function [Andreas Naive, Nicola Salmoria].
@@ -46,10 +46,10 @@ Source changes:
 - Created a new library called osdcore, which is now built and linked to each executable. Moved all definitions of expected components of osdcore into new header file osdcore.h, and added consistent documentation for them all. Removed osd_tool.c, and moved the necessary parts of its functionality into osdcore [Aaron Giles].
 - Defined a new set of interfaces for osdcore which creates an abstract interface for queueing work items to be potentially executed on a secondary thread. Implemented the Windows versions of these routines, but have not done any testing yet [Aaron Giles].
 - Separated Windows OSD core routines into individual files, as folows [Aaron Giles]:
-  * windir.c: Directory-related core OSD functions.
-  * winfile.c: File-related core OSD functions.
-  * winmisc.c: Miscellaneous core OSD functions winsync.c - synchronization-related core OSD functions.
-  * wintime.c - timing-related core OSD functions.
+  * windir.c: Directory-related core OSD functions;
+  * winfile.c: File-related core OSD functions;
+  * winmisc.c: Miscellaneous core OSD functions winsync.c - synchronization-related core OSD functions;
+  * wintime.c - timing-related core OSD functions;
   * winwork.c - threading-related core OSD functions.
 - Created new osdmini directory with minimal implementations of all the OSD core routines. These can be used to stub in functionality or as a starting point for new ports [Aaron Giles].
 - Cleaned up chdman, normalizing its behavior and improving error reporting [Aaron Giles].

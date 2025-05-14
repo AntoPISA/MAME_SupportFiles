@@ -4,22 +4,22 @@
 
 Source changes:
 ---------------
-- Fixed address error in 'Pairs Love' (simulated 'buffered ram' protection?) [David Haywood].
-- Fixed address error in 'Grand Cross Pinball' (it's caused by the sound IRQ..but the music player was ripped out by Aaron ages ago, related?) I've disabled the IRQ rather for now rather than making a new sound core [David Haywood].
+- Fixed address error in Pairs Love (simulated 'buffered ram' protection?) [David Haywood].
+- Fixed address error in Grand Cross Pinball (it's caused by the sound IRQ..but the music player was ripped out by Aaron ages ago, related?) I've disabled the IRQ rather for now rather than making a new sound core [David Haywood].
 - Fixed crash in debug builds running the Deco MLC games [David Haywood].
-- Updated the 'Tecmo Bowl', 'Gaelco 2', 'X-Men 6p', and 'Megatech' drivers to support dual screens [David Haywood].
+- Updated the Tecmo Bowl, Gaelco 2, X-Men 6p, and Megatech drivers to support dual screens [David Haywood].
 - Changed VIDEO_UPDATE to return a set of flags. Only one flag is currently defined, indicating that video has not changed at all since the previous update. Most drivers should just return 0 [Nathan Woods].
 - Changed the MSM5205 ADPCM decoder to no longer perform bounds checking to prevent the signal from overflowing. The MSM5205 data sheet clearly states that this isn't the case, and there is no overflow protection in the chip. Also, the chip's internal DA converter is just 10-bit, even if the processed signal is 12-bit [Nicola Salmoria].
 - Sega Model 2 driver update [Ville Linde]:
-  * i960 bugfixes.
-  * SHARC improvements and bugfixes.
-  * Added HLE of the geometry DSP for now
+  * i960 bugfixes;
+  * SHARC improvements and bugfixes;
+  * Added HLE of the geometry DSP for now;
   * Moved video hardware emulation to vidhrdw/model2.c and added preliminary 3D graphics emulation.
 - Taito JC driver update [Ville Linde]:
-  * Improved M68040 FPU emulation.
-  * Improved the TMS320C51 core.
-  * Added 2D graphics emulation.
-  * Added inputs to all games.
+  * Improved M68040 FPU emulation;
+  * Improved the TMS320C51 core;
+  * Added 2D graphics emulation;
+  * Added inputs to all games;
   * Properly hooked up sounds in all games.
 - Added "fast forward" function (defaults to the INSERT key). While holding this key down, the frameskip is temporarily maxed out and throttling is turned off. This is useful for skipping over parts of the emulation [Aaron Giles].
 - Fixed some glitchiness in font displaying where they would switch in and out of scaled modes due to rounding errors [Aaron Giles].

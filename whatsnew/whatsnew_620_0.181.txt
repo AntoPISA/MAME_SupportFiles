@@ -2,23 +2,7 @@
 -----------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
-- 00101: [Misc.] (kaneko16.cpp) berlwallt, berlwallk: an error message "Copy Board" pops up. (Angelo Salese)
-- 02855: [DIP/Input] (hanaawas.cpp) hanaawas: Credits dip switch does not work (Angelo Salese)
-- 04796: [Flip Screen/Cocktail] (m58.cpp) 10yard and clones: Flip Screen/Cocktail Mode offset (Robbbert)
-- 04921: [Flip Screen/Cocktail] (fcrash.cpp) fcrash: Game sprites not flipped when Flip Screen is ON (Robbbert)
-- 04922: [Flip Screen/Cocktail] (finalizr.cpp) All sets in finalizr.c: Ships and scores should both be on top when screen is Flipped (Robbbert)
-- 05006: [Graphics] (gb.cpp) gameboy [f1race]: Corrupted graphics (racetrack not lined up) (Wilbert Pol)
-- 06338: [DIP/Input] (mz2000.cpp) mz2000, mz2200: Mistakes in current keyboard matrix emulation and missing keys ! (AJR)
-- 06440: [Gameplay] (segag80r.cpp) Most/all sets in segag80r.cpp: game resets itself during play (smf)
-- 06449: [Color/Palette] (8080bw.cpp) sicv, sicv1, invadpt2, invadpt2br, moonbase, moonbasea: In a 2-player game, colors don't change at certain areas of the screen for each player's turn. (Robbbert)
-- 06450: [Color/Palette] (astinvad.cpp) spcking2: Incorrect colors at certain areas of the screen. (Robbbert)
-- 06451: [DIP/Input] (ccastles.cpp) All sets in ccastles.cpp: Map Button 2 to start a 2-player game in upright mode. (Tafoid)
-- 06452: [Flip Screen/Cocktail] (phoenix.cpp) phoenix: Cocktail Mode displays incorrectly (Robbbert)
-
-
-New working machines
+New Working Machines
 --------------------
 Eeekk! [Andrew Welburn, Craig Anstett, smf]
 Intel iSBC 286/10 [Al Kossow]
@@ -30,7 +14,7 @@ Quiz Kid Racer [hap, Sean Riddle]
 Steering Champ (GQ710 VER. UAA) [Bill D. / The Dumping Union, crzmx, smf]
 Tokio / Scramble Formation (newer) [ShouTime, brizzo, David Haywood]
 
-New working clones
+New Working Clones
 ------------------
 Fidelity Designer 2000 Display [yovan]
 Flicky (128k Version, 315-5051, larger roms) [system11]
@@ -52,7 +36,7 @@ Turbo Force (US) [dos_]
 VTech Laser Turbo XT [Miodrag Milanovic]
 VTech Laser XT/3 [Miodrag Milanovic]
 
-Machines promoted to working
+Machines Promoted to Working
 ----------------------------
 ACT Apricot PC [Dirk Best]
 ACT Apricot Xi [Dirk Best]
@@ -60,11 +44,11 @@ K28: Talking Learning Computer (model 7-230) [O. Galibert]
 Mattel Funtronics Jacks [hap, Sean Riddle]
 Mattel Funtronics Red Light Green Light [hap, Sean Riddle]
 
-Clones promoted to working
+Clones Promoted to Working
 --------------------------
 Space Invader (Entex, COP444L version)
 
-New machines marked as NOT_WORKING
+New Machines Marked as NOT_WORKING
 ----------------------------------
 Apple Laser Writer II NT [Lord Nightmare, Joakim Larsson Edstrom]
 Back To the Future (2.8) [PinMAME]
@@ -76,7 +60,7 @@ Monday Night Football (2.9, 50cts) [PinMAME]
 Multistar 3 [Heihachi_73]
 Royal Ascot II [Gerald COY, ShouTime, The Dumping Union]
 
-New clones marked as NOT_WORKING
+New Clones Marked as NOT_WORKING
 --------------------------------
 Knights of Valour 3 HD (V101) [XingXing]
 Knights of Valour 3 HD (V102) [XingXing]
@@ -90,9 +74,25 @@ Toshiba T1000 [shattered]
 Virtua Striker 2 '99 (Step 1.5) [Gerald COY]
 X-Files (3.03 France) [PinMAME]
 
-New WORKING software list additions
+New WORKING Software List Additions
 -----------------------------------
 apricot_flop.xml: Demonstration Pictures, MS-DOS 2.11 BIOS VR2.7, MS-DOS 2.11 BIOS VR3.1, QUEST - The Adventure [Dirk Best]
+
+
+MAME Testers Bugs Fixed (12):
+-----------------------------
+- 00101: [Misc.] (kaneko16.cpp) berlwallt, berlwallk: an error message "Copy Board" pops up. (Angelo Salese)
+- 02855: [DIP/Input] (hanaawas.cpp) hanaawas: Credits dip switch does not work (Angelo Salese)
+- 04796: [Flip Screen/Cocktail] (m58.cpp) 10yard and clones: Flip Screen/Cocktail Mode offset (Robbbert)
+- 04921: [Flip Screen/Cocktail] (fcrash.cpp) fcrash: Game sprites not flipped when Flip Screen is ON (Robbbert)
+- 04922: [Flip Screen/Cocktail] (finalizr.cpp) All sets in finalizr.c: Ships and scores should both be on top when screen is Flipped (Robbbert)
+- 05006: [Graphics] (gb.cpp) gameboy [f1race]: Corrupted graphics (racetrack not lined up) (Wilbert Pol)
+- 06338: [DIP/Input] (mz2000.cpp) mz2000, mz2200: Mistakes in current keyboard matrix emulation and missing keys ! (AJR)
+- 06440: [Gameplay] (segag80r.cpp) Most/all sets in segag80r.cpp: game resets itself during play (smf)
+- 06449: [Color/Palette] (8080bw.cpp) sicv, sicv1, invadpt2, invadpt2br, moonbase, moonbasea: In a 2-player game, colors don't change at certain areas of the screen for each player's turn. (Robbbert)
+- 06450: [Color/Palette] (astinvad.cpp) spcking2: Incorrect colors at certain areas of the screen. (Robbbert)
+- 06451: [DIP/Input] (ccastles.cpp) All sets in ccastles.cpp: Map Button 2 to start a 2-player game in upright mode. (Tafoid)
+- 06452: [Flip Screen/Cocktail] (phoenix.cpp) phoenix: Cocktail Mode displays incorrectly (Robbbert)
 
 
 Translations added or modified
@@ -119,89 +119,89 @@ Source changes:
 - tms32025: Use the standard memory interfaces [O. Galibert].
 - dimemory: Removed the magic bypass [O. Galibert].
 - votrax sc01: Simulate [O. Galibert]:
-  * Complete simulation of digital section based on die imaging.
-  * Removed now-obsolete samples.
+  * Complete simulation of digital section based on die imaging;
+  * Removed now-obsolete samples;
   * Plosives are still imperfect.
 - mc1000: Removed direct update handler [O. Galibert].
 - tnzs: Various refactoring [Ryan Holtz].
 - netlist: Added simple ROM hookup capability [Ryan Holtz].
 - netlist: Device additions [Ryan Holtz]:
-  * 74161 Synchronous 4-Bit Binary Counter with Clock
-  * 7473 Dual Master-Slave J-K Flip-Flops with Clear and Complementary Outputs
-  * Am2847 Quad 80-bit Static Shift Register
-c * DM9334 8-bit Addressable Latch
-  * 82S126 1K-bit bipolar PROM
-  * 74174 Hex D-Type Flip-Flop with Clear
-  * 2716 16 Kbit (2048x8) UV EPROM
-  * 74166 Parallel-Load 8-Bit Shift Register
-  * 74260 Dual 5-Input NOR Gate
-  * Intel 2102A 1Kbit (1024x1) Static RAM
-  * 74365 Hex Bus Driver with 3-State Outputs
-  * Generic 2- and 3-terminal Tristate device
-  * 74165, 74194, 7475, 7485, and DM9322
-  * 82S126 4kbit (512x8) TTL bipolar PROM
-  * 82S123 256-bit (32x8) TTL bipolar PROM
+  * 74161 Synchronous 4-Bit Binary Counter with Clock;
+  * 7473 Dual Master-Slave J-K Flip-Flops with Clear and Complementary Outputs;
+  * Am2847 Quad 80-bit Static Shift Register;
+  * DM9334 8-bit Addressable Latch;
+  * 82S126 1K-bit bipolar PROM;
+  * 74174 Hex D-Type Flip-Flop with Clear;
+  * 2716 16 Kbit (2048x8) UV EPROM;
+  * 74166 Parallel-Load 8-Bit Shift Register;
+  * 74260 Dual 5-Input NOR Gate;
+  * Intel 2102A 1Kbit (1024x1) Static RAM;
+  * 74365 Hex Bus Driver with 3-State Outputs;
+  * Generic 2- and 3-terminal Tristate device;
+  * 74165, 74194, 7475, 7485, and DM9322;
+  * 82S126 4kbit (512x8) TTL bipolar PROM;
+  * 82S123 256-bit (32x8) TTL bipolar PROM;
   * Note: Tristate device and 74365 do not actually tristate, they are simply a way of combining multiple outputs/chip enables.
 - netlist: Added shared RAM pointer, for use by netlist RAM devices which need updating by non-netlist driver code [Ryan Holtz].
 - netlist: Various fixes [Ryan Holtz]:
-  * 7473: Made device only transition on a falling clock.
-  * 74161: Inverted Clear and Clock inputs to match datasheet.
-  * 74260: Fixed number of inputs.
-  * Am2847: Fixed shift register size (was 160 bits, should have been 80 bits).
+  * 7473: Made device only transition on a falling clock;
+  * 74161: Inverted Clear and Clock inputs to match datasheet;
+  * 74260: Fixed number of inputs;
+  * Am2847: Fixed shift register size (was 160 bits, should have been 80 bits);
   * DM9334: Inverted C and E inputs to match datasheet.
 - hazeltin: Added netlist-based video board emulation [Ryan Holtz].
 - XML refactoring [Vas Crabb]:
-  * Moved stuff to namespace util::xml and scoped down some enums.
+  * Moved stuff to namespace util::xml and scoped down some enums;
   * Split config load/save delegate types, made config load take const node so it can't inadvertently mangle data.
 - coretmpl: Added an associative LRU cache with map-like behaviour [Vas Crabb].
 - selmenu: Use LRU cache so icons don't all need to be reloaded on scroll [Vas Crabb].
 - uismall.bdf: Set default character for absent glyphs [Vas Crabb].
 - rendfont.cpp: Fixes and Improvements [Vas Crabb]:
-  * Encapsulated many BDF and BDC file format handling details.
-  * Made file I/O 64-bit clean.
-  * Added some checks for allocation errors.
-  * Wrote more solid BDF parser with error messages and trace logging.
-  * Fixed heap smash when building bitmaps for BDF fonts.
-  * Extended BDC format to support high planes and default character.
+  * Encapsulated many BDF and BDC file format handling details;
+  * Made file I/O 64-bit clean;
+  * Added some checks for allocation errors;
+  * Wrote more solid BDF parser with error messages and trace logging;
+  * Fixed heap smash when building bitmaps for BDF fonts;
+  * Extended BDC format to support high planes and default character;
   * Render default character if glyph not found for BDF/BDC.
 - Made bitmaps movable, allowing them to be used in vectors and emplaced easily [Vas Crabb].
 - Fixed uninitialised memory read as debugger command history (github #1802) [Vas Crabb].
 - netlist: Added new devices [Vas Crabb]:
-  * uA741 in 8-, 10- and 14-pin DIP variants.
+  * uA741 in 8-, 10- and 14-pin DIP variants;
   * 4316 bilateral switch pack.
 - Amiga/Buddha: Cleanups and fixes, partially working now [Dirk Best].
 - Created an ef9369 device and used it for guab and mpu4vid [Dirk Best].
 - guab: Cleanup and improvements [Dirk Best]:
-  * Hooked up SN76489 ready signal, hooked up some debug LEDs.
-  * Hooked up PPIs and ACIA.
-  * Labelled some outputs.
+  * Hooked up SN76489 ready signal, hooked up some debug LEDs;
+  * Hooked up PPIs and ACIA;
+  * Labelled some outputs;
   * Fixed and improved output labels, added ten up labels.
 - 6840ptm: Use standard device clock for internal clock [Dirk Best].
 - beezer: Rewrote driver [Dirk Best]:
-  * Uses the standard 6840 PTM core for sound generation.
-  * New MM583 Noise Generator device.
-  * New DAC-76 DAC sound.
-  * Uses resistor network values for colors.
+  * Uses the standard 6840 PTM core for sound generation;
+  * New MM583 Noise Generator device;
+  * New DAC-76 DAC sound;
+  * Uses resistor network values for colors;
   * Uses bankdev device for banking.
 - mcr68: Use standard 6840 PTM core, replacing custom implementation with the standard one [Dirk Best].
 - zwackery: Removed Artificial Artist PAL, now included in the csd device [Dirk Best].
 - zwackery: Corrected ROM labels and locations [Dirk Best].
 - mcr68: Move zwackery to its own driver (doesn't have much in common with other games in driver). Also cleaned up implementation, made spriteram 8-bit, added some hardware info and added button descriptions [Dirk Best].
 - Midway Cheap Squeak Deluxe sound board improvements [Dirk Best]:
-  * Moved to its own file and corrected its name.
-  * Updated interface to better reflect real hardware.
+  * Moved to its own file and corrected its name;
+  * Updated interface to better reflect real hardware;
   * Added address deocoding PAL and verified memory map.
 - Identified DAC for Midway 'Cheap Squeak Deluxe' and 'Turbo Cheap Squeak' [Dirk Best].
 - apricot improvements [Dirk Best]:
-  * Fixed CTS polarity and marked as working - with the SIO fix the system is now very stable
-  * Fixed keyboard error 31, now displays 'System OK'
+  * Fixed CTS polarity and marked as working - with the SIO fix the system is now very stable;
+  * Fixed keyboard error 31, now displays 'System OK'.
 - z80dart: Only update serial line configuration if it actually changes. Allows the apricot serial port to work correctly [Dirk Best].
 - pit8253: Reading back the count while in the middle of a 16-bit write returns a XOR'ed version of the value written. Fixes apricot error 29 [Dirk Best].
 - fromance.cpp: Fixed OL gal display for nekkyoku [Angelo Salese].
 - fromance.cpp: Added visible horizontal parameter to CRTC [Angelo Salese].
 - tail2nos.cpp improvements [Angelo Salese]:
-  * Added sound semaphore hookup, fixes random BGM lockups.
-  * Added alternative input method, selectable through control panel DIP switch.
+  * Added sound semaphore hookup, fixes random BGM lockups;
+  * Added alternative input method, selectable through control panel DIP switch;
   * Added DIP switch locations.
 - srmp2.cpp: Fixed regression with ADPCM playback on m68k based games [Angelo Salese].
 - neogeo: Corrected burningfpa romlabels (thanks jackc) and added it to software list [hap].
@@ -209,9 +209,9 @@ c * DM9334 8-bit Addressable Latch
 - aristmk5: Added internal layout and connected microtouch to magimask and partygrs [Sandro Ronco].
 - Archimedes: Made floppies work [Sandro Ronco].
 - micro20: Added some features needed for the selftest, but couldn't hook up the missing parts so haven't verified that the self test actually can run through now [Joakim Larsson Edstrom]:
-  * H4 is now cleared in reset and asserted by software down the line.
-  * By calling the update_tin method the device now support external clock for the timer.
-  * Clock can also be polled at port C bit #2.
+  * H4 is now cleared in reset and asserted by software down the line;
+  * By calling the update_tin method the device now support external clock for the timer;
+  * Clock can also be polled at port C bit #2;
   * The test expects something to pulse at port B and then a clock at TIN (port C pin #2 alternate function).
 - WIP: Intergraph driver support: Enabled more Rx interrupts and fixed error FIFO [Joakim Larsson Edstrom].
 - WIP Apple Laser Writer II NT and some SCC improvements [Joakim Larsson Edstrom].
@@ -242,68 +242,65 @@ c * DM9334 8-bit Addressable Latch
 - d9final: Set initial banking so Z80 doesn't run off rails [AJR].
 - grainbow: Fixed palette dimming by respecting a fade-me-not bit [AJR].
 - mustache.cpp: Flip screen improvements [AJR]:
-  * Fixed Y positions of flipped sprites.
-  * Added and implemented flip screen "Hard SW" as in Irem games.
+  * Fixed Y positions of flipped sprites;
+  * Added and implemented flip screen "Hard SW" as in Irem games;
   * Corrected polarity of all DIP switches.
 - Attempt at fixing 8155 timer behavior so 8085 doesn't lose interrupts in equites [AJR].
 - automat: Sound improvements [AJR]:
-  * Reduced YM2203 speed to match music pitch on reference video.
-  * Added second MSM5205 plus two 74LS157 and fixed communications.
+  * Reduced YM2203 speed to match music pitch on reference video;
+  * Added second MSM5205 plus two 74LS157 and fixed communications;
   * Added sound banking (probably not entirely correct).
 - secretab: Incremental sound improvements [AJR]:
-  * Replaced one YM2203 with a YM3812.
-  * Added extra samples ROM to banked sound CPU region.
-  * Hooked up sound latch, enabling music and sound effects (still very imperfect).
-  * A little more PCB documentation.
+  * Replaced one YM2203 with a YM3812;
+  * Added extra samples ROM to banked sound CPU region;
+  * Hooked up sound latch, enabling music and sound effects (still very imperfect);
+  * A little more PCB documentation;
   * Added PCB locations to ROM names.
 - spangbl, pangba: 74LS157-ization and working sound [AJR].
 - system16.cpp: Sound improvements for some bootlegs [AJR]:
-  * Hooked up MSM5205/74LS157 on the 2xYM2203 bootlegs, all of which now have some imperfect samples playback.
+  * Hooked up MSM5205/74LS157 on the 2xYM2203 bootlegs, all of which now have some imperfect samples playback;
   * Corrected goldnaxeb2 configuration to use the aforementioned sound system.
 - Fixed -romident misattributing device ROMs to alphabetically first driver using them [AJR].
 - amusco.cpp: Added coin counter and dispenser device [AJR].
-- Dumped i8751 '317-0078' at location c2 for 'altbeast' set, added, works [CAPS0ff].
-- Dumped i8751 '317-0123a' at location c2 for 'goldnaxe' set, added, works [CAPS0ff].
-- Adaedd dump of i8751 '317-0112' at location c2 to 'goldnaxe2' set [CAPS0ff]:
-  * Chip was faulty, some bit errors, internal checksum fails - still using simulation for now.
+- Dumped i8751 '317-0078' at location c2 for altbeast set, added, works [CAPS0ff].
+- Dumped i8751 '317-0123a' at location c2 for goldnaxe set, added, works [CAPS0ff].
+- Adaedd dump of i8751 '317-0112' at location c2 to goldnaxe2 set. Chip was faulty, some bit errors, internal checksum fails - still using simulation for now [CAPS0ff].
 - Added id8751h dumps to 'csilver' and 'srdarwin', not hooked up yet [CAPS0ff].
 - tnzs: Added Taito M-Chip M-001 dump for extrmatn; also works for drtoppel and plumppop [CAPS0ff].
-- Added PIC16C57 dump to wbeachvl giving partial sound [CAPS0ff]:
-  * OKI banking setup for the game is incorrect so music doesn't currently play.
+- Added PIC16C57 dump to wbeachvl giving partial sound. OKI banking setup for the game is incorrect so music doesn't currently play [CAPS0ff].
 - Decapped, deprotected, dumped and hooked up the hd647180X MCUs for Vimana, Fire Shark and Teki Paki [CAPS0ff].
-- Decapped and read out security pics for umk3 and rmpgwt [CAPS0ff]:
-  * Added a new device type and bare bones loading, however communication with the main CPU is not hooked up yet.
+- Decapped and read out security pics for umk3 and rmpgwt. Added a new device type and bare bones loading, however communication with the main CPU is not hooked up yet [CAPS0ff].
 - Dumped PAL10H8 for Beastie Feastie (conversion kit) [Andrew Welburn, Craig Anstett].
 - Leave more comments on differences between 74107 and 74107A [Couriersud].
 - netlist: Aligned naming of 9334 and made nl_hazelvid.cpp parseable by nltool [Couriersud].
 - imgtool refactoring [Nathan Woods]:
-  * Changed a number of declarations to use std::string instead of 'const char *'.
-  * Removed dead strncatz() function.
-  * Fixed a recently introduced error in the 'dir' command line command.
+  * Changed a number of declarations to use std::string instead of 'const char *';
+  * Removed dead strncatz() function;
+  * Fixed a recently introduced error in the 'dir' command line command;
   * Cleaned up the output of the 'dir' command.
 - DEC Rainbow 100 fixes [Bavarese]:
-  * Changed 7220 divider from 4 to 32 (closer to 1 Mhz from VT240).
-  * Stop flicker when color video is off.
-  * Changed the effect of GDC_MODE_ENABLE_VIDEO (see page 21 of PDF AA-AE36A).
-  * Addressed reentrance problems (reset procedure).
-  * Made scroll fully functional (deeper SCRAM levels and GDC diag test #9).
-  * Corrected cursor position in REGIS TSR.
-  * Implemented NMI for parity test.
-  * Fix aspect ratio in graphics modes.
-  * Fixed serial port A (printer port B needs more work.
+  * Changed 7220 divider from 4 to 32 (closer to 1 Mhz from VT240);
+  * Stop flicker when color video is off;
+  * Changed the effect of GDC_MODE_ENABLE_VIDEO (see page 21 of PDF AA-AE36A);
+  * Addressed reentrance problems (reset procedure);
+  * Made scroll fully functional (deeper SCRAM levels and GDC diag test #9);
+  * Corrected cursor position in REGIS TSR;
+  * Implemented NMI for parity test;
+  * Fix aspect ratio in graphics modes;
+  * Fixed serial port A (printer port B needs more work;
   * Added support all four ClikClok versions.
 - konamigx: Fixed CPUs hanging on state load [moralrecordings].
 - Added floppy drives to the PG675 and PG685 variants, changed floppy controller to FD1797 (not hooked up yet).
 - COP400 MCU fixes [hap, Sean Riddle]:
-  * L pins are tri-stated when EN2=0.
+  * L pins are tri-stated when EN2=0;
   * Corrected internal RAM memorymap for COP410.
 - Dumped 68705 a71_24.bin from Tokio/Scramble Formation [ShouTime, brizzo].
 - Added fresh dump of exzisus (Magnet System) - one sector different, fixes graphical glitches in first level [David Haywood].
 - Started moving 68705 functionality to the CPU core rather than copy/pasted in all the drivers [David Haywood].
 - Hooked up new 68705 dump to Tokio/Scramble Formation [David Haywood].
 - Sega DIMM security PICs update [Jorge Valero, Android]:
-  * Redumped PICs and documented S/Ns for: Quest of D, Key of Avalon 2.x, Virtua Striker 4 Ver.2006 (Japan).
-  * Dumped 253-5508-0364 from unknown NAOMI satellite game.
+  * Redumped PICs and documented S/Ns for: Quest of D, Key of Avalon 2.x, Virtua Striker 4 Ver.2006 (Japan);
+  * Dumped 253-5508-0364 from unknown NAOMI satellite game;
   * Dumped 253-5508-0422J from Quest of D (some undumped newer version).
 - M1COMM/M2COMM cleanups and fixes [SailorSat].
 - model1: Made wingwar360 playable [SailorSat].
@@ -316,11 +313,10 @@ c * DM9334 8-bit Addressable Latch
 - ccastles.cpp: Clarified input situation by assigning port conditions/names to the button inputs so they have proper default mappings between Upright/Cocktail [Tafoid].
 - New softlist: HP Integral PC [shattered].
 - cps1.cpp: Added missing PAL dump to daimakai [caius, Silvio Grazini].
-- aerofgt.cpp: Added correct and verified mask ROMs [caius, The Dumping Union]:
-  * Fixed size for U134 and U135 and added the redumped sound samples at U180 at the correct size.
+- aerofgt.cpp: Added correct and verified mask ROMs. Fixed size for U134 and U135 and added the redumped sound samples at U180 at the correct size [caius, The Dumping Union].
 - debugimgui: Sort directory entries in mount dialog, as zippath_readdir() does not guarantee entries are in any particular order [Barry Rodewald].
 - STV redumps [cpsystem3]:
-  * Fixed bad dumps in Choro Q Hyper Racing 5.
+  * Fixed bad dumps in Choro Q Hyper Racing 5;
   * Redumped prc2ksu and prc28su using the heat-gun method to obtain valid dumps from fragile ROM chips.
 - Made phosphor persistence independent of frame rate [anikom15].
 - Added proper support for Rescue on Fractalus (proto) - No Bankswitch, 2K Mirror RAM [Mike Saarna].
@@ -329,10 +325,10 @@ c * DM9334 8-bit Addressable Latch
 - hiscore.dat: Updates [Leezer].
 - Corrected labels for Midway PICs [Guru].
 - de_2.cpp: Added missing sound ROM for uboat65 [PinMAME].
-- First stab at cleaning up the DOS boot and installation disk mess on the PC & AT softlists: [Justin Kerk]
-  * Removed 100% duplicate sets.
-  * Moved sets from ibm5170 to ibm5150 if they work on PC-class hardware (later DOS versions are needed for some games).
-  * Removed the ibm5160 softlist, it only contained one duplicate set.
-  * Added clone relationships.
+- First stab at cleaning up the DOS boot and installation disk mess on the PC & AT softlists [Justin Kerk]:
+  * Removed 100% duplicate sets;
+  * Moved sets from ibm5170 to ibm5150 if they work on PC-class hardware (later DOS versions are needed for some games);
+  * Removed the ibm5160 softlist, it only contained one duplicate set;
+  * Added clone relationships;
   * More consistency in set naming and metadata.
 - apple1.xml: Redumped dis-assembler [Dagarman].

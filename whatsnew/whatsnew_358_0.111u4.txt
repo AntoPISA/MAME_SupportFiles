@@ -2,17 +2,17 @@
 ---------------------------------------
 
 
-New games supported or promoted from NOT_WORKING status
+New Games Supported or Promoted from NOT_WORKING Status
 -------------------------------------------------------
 Date Quiz Go Go (Korea) [David Haywood]
 Disco Boy [David Haywood, Stefan Lindberg]
 
-New clones supported or promoted from GAME_NOT_WORKING status
+New Clones Supported or Promoted from GAME_NOT_WORKING Status
 -------------------------------------------------------------
 Dynamic Country Club (Japan) [Team Japump, Brian Troha]
 Gain Ground (Japan) [Team Japump, Brian Troha]
 
-New games marked as GAME_NOT_WORKING
+New Games Marked as GAME_NOT_WORKING
 ------------------------------------
 Cliffhanger [Ernesto Corvi]
 Ganbare Chinsan Ooshoubu (MC-8123A, 317-5012) [David Haywood]
@@ -24,12 +24,12 @@ Stelle e Cubi (Italy) [David Haywood]
 Strip Teaser [David Haywood]
 
 
-MAMETesters bugs fixed (there are probably more) (4):
------------------------------------------------------
-arcadiac0111u3yel (Ernesto Corvi)
-mcatadv0111u3gre (David Haywood)
-photoy2k0111u3yel (Aaron Giles)
-simpbowl0110u2yel (R. Belmont)
+MAMETesters Bugs Fixed (4):
+---------------------------
+- arcadiac0111u3yel [Ernesto Corvi].
+- mcatadv0111u3gre [David Haywood].
+- photoy2k0111u3yel [Aaron Giles].
+- simpbowl0110u2yel [R. Belmont].
 
 
 Source changes:
@@ -44,22 +44,22 @@ Source changes:
 - Modified the makefile to make it possible to independently specify symbols generation and optimization levels [Atari Ace].
 - Fixed system time counters in the Amiga code [Ernesto Corvi].
 - Major rewrite of the Midway 8080 black & white driver, separating it from the huge 8080bw driver and making the following changes [Zsolt Vasvari, Derrick Renaud]:
-  * True-to-hardware emulation of the shifting circuits.
-  * Identified and stubbed sound triggers.
-  * Fixed DIP switches, where necessary (most games).
-  * Added DIPLOCATION to all switches.
-  * Added watchdog.
-  * Added coin counter.
-  * Added lamp outputs to 'Sea Wolf', 'Guided Missile', 'Space Encounters', 'Phantom II' and 'Bowling Alley'.
-  * Added stereo sound to 'Gun Fight', 'Guided Missile' and 'M-4'.
-  * Partial sound emulation in 'Tornado Baseball', 'Boot Hill', 'Desert Gun', 'Double Play', 'Dog Patch' and 'Blue Shark'.
-  * Properly emulated shifter circuit in 'Boot Hill'.
-  * Added gun recoil output to 'Desert Gun'.
-  * Added second set of analog controls to 'Clowns'.
-  * Fixed analog controls in 'Dog Patch'.
-  * Added SN76477 sound effect to 'Space Encounters'.
-  * Added non-memory mapped coin counters to 'Space Invaders', 'Blue Shark' and 'Space Invaders II'.
-  * Added proper watchdog times to all the games.
+  * True-to-hardware emulation of the shifting circuits;
+  * Identified and stubbed sound triggers;
+  * Fixed DIP switches, where necessary (most games);
+  * Added DIPLOCATION to all switches;
+  * Added watchdog;
+  * Added coin counter;
+  * Added lamp outputs to Sea Wolf, Guided Missile, Space Encounters, Phantom II and Bowling Alley;
+  * Added stereo sound to Gun Fight, Guided Missile and M-4;
+  * Partial sound emulation in Tornado Baseball, Boot Hill, Desert Gun, Double Play, Dog Patch and Blue Shark;
+  * Properly emulated shifter circuit in Boot Hill;
+  * Added gun recoil output to Desert Gun;
+  * Added second set of analog controls to Clowns;
+  * Fixed analog controls in Dog Patch;
+  * Added SN76477 sound effect to Space Encounters;
+  * Added non-memory mapped coin counters to Space Invaders, Blue Shark and Space Invaders II;
+  * Added proper watchdog times to all the games;
   * Breadboarded the noise clocks and ensured their frequencies were correct.
 - Added support for the lamp matrix to the video callback in the Scorpion 2 driver, and updated lamps and inputs to better fit the new UI. VFD support has been moved to a configuration switch, as the output is actually always occurring - the switch mimics the effect of plugging in or removing the VFD from the control point [James Wallace].
 - Improved sound output in the MediaGX driver [Ville Linde].

@@ -22,10 +22,10 @@ New Games Marked as GAME_NOT_WORKING
 GameCristal [f205v, R. Belmont]
 
 
-MAMETesters Bugs Fixed (2):
----------------------------
-buckrog0118u2yel (Couriersud)
-ikki0120yel (robiza)
+MAME Testers Bugs Fixed (2):
+----------------------------
+- buckrog0118u2yel [Couriersud].
+- ikki0120yel [robiza].
 
 
 Source changes:
@@ -33,15 +33,15 @@ Source changes:
 - Documented information about the various Cannonball sets [stephh].
 - Hooked up the roz layer, fg layer and sprites to f1gpb. Still missing some video offsets, oki banking and sprites priority [Pierpaolo Prazzoli].
 - Updates for the dominob.c driver [stephh]:
-  * Fixed dip switches.
-  * Fixed inputs.
+  * Fixed DIP switches;
+  * Fixed inputs;
   * Added a couple of notes.
 - Updated peplus driver and related components [Jim Stolis]:
   * Added internal layouts for the games.
   - Fixed several i8051 issues:
-  * Fixed a bug with some opcodes having the wrong cycle counts.
-  * Fixed a bug where determining the proper timer mode.
-  * Fixed a bug where determining the proper serial transmit mode.
+  * Fixed a bug with some opcodes having the wrong cycle counts;
+  * Fixed a bug where determining the proper timer mode;
+  * Fixed a bug where determining the proper serial transmit mode;
   * Added support for split timer mode.
 - Improved multiprocessor Voodoo performance by reducing contention during rendering. Extended the system to allow for more overlap between rendering and emulation. [Couriersud, Aaron Giles].
 - Fixed a crash in the input system when you configure joypads and then unplug them and press Esc on the system info screen [R. Belmont].
@@ -52,13 +52,13 @@ Source changes:
 - Enabled common linker warnings in the makefile [Oliver Stoneberg].
 - Fixed a corner case in the SCSP involving timers which are polled with their IRQ enable shut off [R. Belmont].
 - Namco System 21 update [Phil Stroffolino]:
-  * namconb1 sprites no longer broken.
-  * Fixed missing 3d gfx in Cybersled.
-  * Gradient colors in starblade.
-  * More accurate depth cueing.
-  * Fixed crash in 2nd stage of Starblade.
-  * Fixed lockups in Air Combat and Solvalou.
-  * Fixes to sprite priority (see Solvalou mountain range).
+  * namconb1 sprites no longer broken;
+  * Fixed missing 3d gfx in Cybersled;
+  * Gradient colors in starblade;
+  * More accurate depth cueing;
+  * Fixed crash in 2nd stage of Starblade;
+  * Fixed lockups in Air Combat and Solvalou;
+  * Fixes to sprite priority (see Solvalou mountain range);
   * Hooked up translucency (palette shift) effect.
 - Changed Model 2 rendering to use pre-clipped Z values for sorting [Aaron Giles].
 - Properly identified bill inputs in Midway Y-unit driver games [Aaron Giles].

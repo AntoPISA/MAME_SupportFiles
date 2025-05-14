@@ -2,23 +2,23 @@
 -------------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
-fightfev37b2gre (johnboy)
-lcdlightgun0121u3gra (Aaron Giles)
-mk4_0121u4ora (Aaron Giles)
-shootgal0121u4red (Couriersud)
-tmnt2_0121u4ora (Aaron Giles)
-
-
-New games added or promoted from NOT_WORKING status
+New Games Added or Promoted from NOT_WORKING Status
 ---------------------------------------------------
 Orbs (10/7/94 prototype?) [Tomasz Slanina]
 
-New clones added
+New Clones Added
 ----------------
 Drakton (DKJr conversion) [Couriersud]
 Soccer Brawl (set 2) [johnboy]
+
+
+MAME Testers Bugs Fixed (5):
+----------------------------
+- fightfev37b2gre [johnboy].
+- lcdlightgun0121u3gra [Aaron Giles].
+- mk4_0121u4ora [Aaron Giles].
+- shootgal0121u4red [Couriersud].
+- tmnt2_0121u4ora [Aaron Giles].
 
 
 Source changes:
@@ -26,33 +26,33 @@ Source changes:
 - Continued to add const qualifiers on remaining items in the project [Atari Ace].
 - Added explicit clears on Neo Geo initialization [David Haywood].
 - Neo Geo updates [johnboy]:
-  * Added Neo-Geo game pcb info.
-  * Corrected a number of incorrect ROMs.
-  * Added MVS VERSION tag to fightfva, renamed 'P'-rom.
-  * Added MVS AND AES VERSION tag to joyjoy.
-  * Added AES VERSION tag to kof99.
+  * Added Neo-Geo game pcb info;
+  * Corrected a number of incorrect ROMs;
+  * Added MVS VERSION tag to fightfva, renamed 'P'-rom;
+  * Added MVS AND AES VERSION tag to joyjoy;
+  * Added AES VERSION tag to kof99;
   * Added MVS VERSION tag to kof99a.
 - Cleaned up input ports for cave.c and rpunch.c [Sonikos].
 - Another big dkong.c driver update [Couriersud]:
-  * Wrote M58817 sound driver and hooked it up. Uses tms5110 speech synthesis. LPC format is identical, however coefficients seem to be different. Until coefficients are known, samples are used.
-  * Changed dkong/radarscp based games to use hardware-conformant I8035 memory maps.
-  * Added drakton clone drktnjr on dkongjr hardware
-  * Noved address remapping proms to REGION_USER1 (hunchbkd & co).
-  * Service now adds credit 
-  * Hooked up coin_counters
-  * remove GAME_NOT_WORKING GAME_WRONG_COLORS from hunchbkd.
-  * dkongjr: mapped more interface lines between sound and cpu boards.
-  * Tagged all inputs, all reads use tag names.
+  * Wrote M58817 sound driver and hooked it up. Uses tms5110 speech synthesis. LPC format is identical, however coefficients seem to be different. Until coefficients are known, samples are used;
+  * Changed dkong/radarscp based games to use hardware-conformant I8035 memory maps;
+  * Added drakton clone drktnjr on dkongjr hardware;
+  * Noved address remapping proms to REGION_USER1 (hunchbkd & co);
+  * Service now adds credit;
+  * Hooked up coin_counters;
+  * remove GAME_NOT_WORKING GAME_WRONG_COLORS from hunchbkd;
+  * dkongjr: mapped more interface lines between sound and cpu boards;
+  * Tagged all inputs, all reads use tag names;
   * Moved more static vars into dkong_state.
 - More major SCSP fixes [kingshriek]:
-  * Rewrote much of the interpolation code.
-  * Improved key-rate scaling calculation.
-  * Fixed playback of non-looping samples with a zero loop-end address.
-  * Fixed backwards looping mode so that it initially reads forward until encountering the loop-start address.
-  * Preliminary but reasonable-sounding FM support.
-  * Fixed overflow in frequency calculation.
-  * Improved FM, but it's disabled for now because it doesn't sound right yet.
-  * Improved DSP wet/dry mix (should be correct now).
+  * Rewrote much of the interpolation code;
+  * Improved key-rate scaling calculation;
+  * Fixed playback of non-looping samples with a zero loop-end address;
+  * Fixed backwards looping mode so that it initially reads forward until encountering the loop-start address;
+  * Preliminary but reasonable-sounding FM support;
+  * Fixed overflow in frequency calculation;
+  * Improved FM, but it's disabled for now because it doesn't sound right yet;
+  * Improved DSP wet/dry mix (should be correct now);
   * Fixed a minor LPSLNK problem.
 - Fixed Hopper Empty and Coin-Out Timeout issues in the peplus.c driver [Jim Stolis].
 - Removed obsolete crosshair code [Oliver Stoneberg].

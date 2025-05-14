@@ -5,7 +5,7 @@
 Source changes:
 ---------------
 - Added new generic macros to state.h to make it simpler to do save states. Use state_save_register_global(var) to register a driver-related global variable. Use state_save_register_item(module, instance, var) to register other variables with specific module and instance names. Converted the MCR and Cinematronics vector saves over to this. As a result, save states for games will be incompatible with prior versions of MAME [Aaron Giles].
-- Added save state support to the 8255 PPI, 7474 TTL, and the TMS5110 sound chip. Added save state support to the galaxian.c driver and all the associated drivers. Marked all games in galaxian.c, scramble.c, scobra.c, frogger.c, and amidar.c as GAME_SUPPORTS_SAVE  [Aaron Giles].
+- Added save state support to the 8255 PPI, 7474 TTL, and the TMS5110 sound chip. Added save state support to the galaxian.c driver and all the associated drivers. Marked all games in galaxian.c, scramble.c, scobra.c, frogger.c, and amidar.c as GAME_SUPPORTS_SAVE [Aaron Giles].
 - Added validity check to ensure driver names are 8 characters or less [Aaron Giles]
 - Changed the timing of save state bank registration so that dynamically installed banks will work properly [Aaron Giles].
 - Wired up save state support for all the games in pacman.c, jrpacman.c, and pengo.c. Marked all games as GAME_SUPPORTS_SAVE [Aaron Giles].

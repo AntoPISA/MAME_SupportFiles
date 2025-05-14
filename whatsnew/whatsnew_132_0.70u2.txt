@@ -2,14 +2,18 @@
 ----------------------------------------
 
 
-New game supported
+New Game Supported
 ------------------
-Enigma 2 [Pierpaolo Prazzoli, Tomasz Slanina] (No Sound (bad rom?) could be merged with 8080bw?)
+Enigma 2 [Pierpaolo Prazzoli, Tomasz Slanina] (1)
+
+Note:
+-----
+(1): No Sound (bad rom?), could be merged with 8080bw?
 
 
 Source changes:
 ----------------------
-- Corrected Green Beret Rom Names [Gerald].
+- Corrected Green Beret ROM names [Gerald].
 - Fixed a few minor problems in the Wolf Pack Driver [Stefan Jokisch]
 - Fixed Audit with Optional Roms [Nathan Woods].
 - Fixed i86 DAA opcodes + more [Nathan Woods]
@@ -18,9 +22,9 @@ Source changes:
 - i86 DAA fixes [David Haywood].
 - In osd_fopen(), if a file is opened with mode "r", FILE_SHARE_READ will be passed to the dwShareMode parameter of CreateFile(). This allows other programs to read any files that MAME opens for read only [David Haywood].
 - Inspired by Frits Hilderink (NLMSX emulator author) I attempted to:
-  * Improve support of the ymdeltat module for the status registers (YM2610,YM2608,Y8950).
-  * Implement x1bit/x8bit DRAM usage for the ADPCM samples.
-  * Implement memory read/write via deltat (Y8950 and YM2608).
+  * Improve support of the ymdeltat module for the status registers (YM2610,YM2608,Y8950);
+  * Implement x1bit/x8bit DRAM usage for the ADPCM samples;
+  * Implement memory read/write via deltat (Y8950 and YM2608);
   * ADPCM synthesis in 'slave' mode (CPU l controlled, instead of memory based).
 - Preliminary MCU simulation for Paddle 2 [Angelo Salese].
 - Renames display_fps() to ui_display_fps() and makes it non-static [David Haywood].

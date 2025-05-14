@@ -2,13 +2,13 @@
 ---------------------------------------
 
 
-New games added or promoted from NOT_WORKING status
+New Games Added or Promoted from NOT_WORKING Status
 ---------------------------------------------------
 Dark Horse [Luca Elia]
 Honey Dolls [David Haywood]
 Virtua Bowling (Japan) [Luca Elia]
 
-New clones added
+New Clones Added
 ----------------
 Billiard Academy Real Break (Europe) [Corrado Tomaselli]
 Dragon World [Luca Elia]
@@ -17,7 +17,7 @@ Puzzle & Action: Ichidant-R (Korea) [David Haywood]
 Red Clash (set 2) [chaneman]
 Stack Columns (World) [Arzeno Fabrice]
 
-New games marked as GAME_NOT_WORKING
+New Games Marked as GAME_NOT_WORKING
 ------------------------------------
 Fred Flintstones' Memory Match [Brian Troha]
 
@@ -25,18 +25,18 @@ Fred Flintstones' Memory Match [Brian Troha]
 Source changes:
 ---------------
 - Added new inline math functions to mamecore.h, along with mechanisms for the OSD layer to override them with platform-specific variants: count_leading_zeros, count_leading_ones, and fixed_mul_shift. Updated the TMS32031 core to make use of the first two [Aaron Giles].
-- Added redump of bad ROMs for "Cruis'n World' (rev L1.3) [Guru].
+- Added redump of bad ROMs for Cruis'n World (rev L1.3) [Guru].
 - Added very, very preliminary emulation of the Ricoh RF5C400 [Ville Linde].
 - Changed some i386 disassembly parameters to be unsigned [Nathan Woods].
 - Changed the Windows blitters to use an array allocated by osd_alloc_executable() to prevent potential access violations on systems with no-execute support [Aaron Giles].
 - Fixed compilation issue for MSVC when using the winalloc code [Nathan Woods].
 - Fixed output of mame.ini options that have spaces in them [Nathan Woods].
 - Fixed some minor problems with the LOD calculations in the Voodoo driver [Aaron Giles].
-- Improvements to 'Wheels and Fire', partial understanding of the blitter [David Haywood, Tomasz Slanina].
+- Improvements to Wheels and Fire, partial understanding of the blitter [David Haywood, Tomasz Slanina].
 - Replaced the 68705 MCU from the bootleg Knight Boy with simulation. Added 'Knight Boy' to keep using the MCU code [Nicola Salmoria].
 - Several fixes for the kaneko16 drivers [Pierpaolo Prazzoli]:
-  * Fixed tilemap priorities.
-  * Fixed some sprites priorities.
-  * Added some missing coin counters.
-  * Added right palette filling for games using sprite type 1.
+  * Fixed tilemap priorities;
+  * Fixed some sprites priorities;
+  * Added some missing coin counters;
+  * Added right palette filling for games using sprite type 1;
   * Swapped berlwall and berlwalt sets as per SebV notes in the source code.

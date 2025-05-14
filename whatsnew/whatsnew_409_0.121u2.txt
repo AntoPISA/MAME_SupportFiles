@@ -33,13 +33,13 @@ Source changes:
 - Added save state support to a number of Konami custom chips [Lei Wu].
 - Add -pipe flag for GCC in makefile (GCC will pipe between cpp, cc and as rather than using temporary files, which speeds up compiling) [Vas Crabb].
 - Cleanups to the inline functions [Vas Crabb]:
-  * Add attributes to functions in eigccppc.h and eigccx86.h to cause GCC to always inline them, and to treat them as arithmetic operators when appropriate (so GCC can identify loop invariants or common subexpressions involving these functions).
-  * Mark locals in functions in eigccppc.h and eigccx86.h as register, so GCC won't always allocate stack space even at O0 optimisation level.
-  * Add dummy +m operands to atomic access functions in eigccppc.h so that GCC will not cache values across calls even if values are  not volatile - this will cause GCC to allocate an additional register at O0 optimisation, but not if optimisation is on.
+  * Add attributes to functions in eigccppc.h and eigccx86.h to cause GCC to always inline them, and to treat them as arithmetic operators when appropriate (so GCC can identify loop invariants or common subexpressions involving these functions);
+  * Mark locals in functions in eigccppc.h and eigccx86.h as register, so GCC won't always allocate stack space even at O0 optimisation level;
+  * Add dummy +m operands to atomic access functions in eigccppc.h so that GCC will not cache values across calls even if values are  not volatile - this will cause GCC to allocate an additional register at O0 optimisation, but not if optimisation is on;
   * Don't include <altivec.h> in rgbvmx.h if __APPLE_ALTIVEC__ is defined, as this will cause a compiler warning.
 - Cleaned up inputs in the System 24 driver [Sonikos]:
-  * Fixed dips in qrouka, sgmastc, sgmastcj, roughrac, qsww.
-  * Fixed input in dcclub, sgmastc, sgmastj, qrouka (the last is still missing input for the 3rd & 4th player).
+  * Fixed dips in qrouka, sgmastc, sgmastcj, roughrac, qsww;
+  * Fixed input in dcclub, sgmastc, sgmastj, qrouka (the last is still missing input for the 3rd & 4th player);
   * Added more description for each game: region, system (rom or floppy based), version.
 - Removed useless pen_array in the midtunit driver, saving some memory and getting a small speed boost [Christophe Jaillet].
 - Added 3D glasses support to the tceptor driver [BUT].

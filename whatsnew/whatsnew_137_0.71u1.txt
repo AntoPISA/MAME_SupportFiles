@@ -2,13 +2,17 @@
 ----------------------------------------
 
 
-New games supported
+New Games Supported
 -------------------
-Sonic (MegaTech, MegaPlay) [David Haywood] (just to show the current status, megatech has no menu system emulated, megaplay doesn't boot, everything else on the systems has been left as testdrivers)
+Sonic (MegaTech, MegaPlay) [David Haywood] (1)
 
-New clones supported
+New Clone Supported
 --------------------
 Landmaker (World prototype) [Bryan Mcphail]
+
+Note:
+-----
+(1): Just to show the current status, megatech has no menu system emulated, megaplay doesn't boot, everything else on the systems has been left as testdrivers.
 
 
 Source changes:
@@ -22,12 +26,12 @@ Source changes:
 - Fixed Mame not looking in Parent directory for Hard Drive Images [Stefan Jokisch].
 - Improved Genesis Emulation a bit in preparation for MegaTech / MegaPlay, sound code based on MESS [David Haywood].
 - Improvements to GI Joe. tilemap.h,tilemap.c (added tilemap_get_transparency_data() for transparency cache manipulation. vidhrdw\konamiic.c (added preliminary K056832 tilemap<->linemap switching and tileline code) drivers\gijoe.c (updated video settings, memory map and irq handler) [Acho A. Tang]:
-  * Added object blitter.
-  * Completed K054157 to K056832 migration.
-  * Added ground scroll emulation.
-  * Fixed sprite and BG priority.
+  * Added object blitter;
+  * Completed K054157 to K056832 migration;
+  * Added ground scroll emulation;
+  * Fixed sprite and BG priority;
   * Improved shadows and layer alignment.
 - Improvements to Run and Gun making it playable (single screen game only) [Acho A. Tang]:
-  * Mem maps, device settings, component communications, I/O's, sound, etc.
-  * General clean-up, clipping, alignment.
+  * Mem maps, device settings, component communications, I/O's, sound, etc.;
+  * General clean-up, clipping, alignment;
   * Missing sprites and priority.

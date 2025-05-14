@@ -2,15 +2,19 @@
 ----------------------------------------
 
 
-New games supported
+New Games Supported
 -------------------
-Asura Blade (missing sound, some priority errors) [Paul Priest]
+Asura Blade [Paul Priest] (1)
 Gaia Crusaders [Paul Priest]
 Street Heat [Dave Widel]
 
-New Clones supported
+New Clones Supported
 --------------------
 8 Ball Action (DkJr Kit) [Pierpaolo Prazzoli]
+
+Note:
+-----
+(1): Missing sound, some priority errors.
 
 
 Source changes:
@@ -19,25 +23,25 @@ Source changes:
 - Temporary fixes to a few of the System 16 driver problems (sound banking for example). Note, the driver is still being rewritten these are only minor 'fixes' to improve things a bit until the rewrite is complete [Acho A. Tang].
 - Change so DIP menu isn't displayed if no Dipswitches are defined in the driver instead of flashing a blank mneu when you try and enter it [Paul Priest].
 - Various changes [Nathan Woods]:
-  * Fixed a bug in the NORMI opcode.
-  * Removed use of the GCC specific varargs on macros feature.
-  * Changed around one of the #include paths (due to ProjectBuilder on Mac issues).
-  * Added support for the TMS0285 variant (an old variant of the TMS5220).
-  * Added support for the SRCSHADE and DSTA2 command bits to the Jaguar blitter.
-  * Added some miscellaneous logging code.
-  * Changed around one of the #include paths (due to ProjectBuilder on Mac issues).
-  * Added support for objects with pitch != 1 for objects with 1-2 bits per pixels.
-  * Added a function to retrieve the interface.
-  * Added a MESS specific UI string (within #ifdef MESS of course).
-  * Parameterized the setdipswitches() call; so that a menu that looks like the DIP switch menu can easily be made with different IPT_* values (MESS has a configuration menu that functions a lot like the DIP  *switch menu).
-  * Small fix to allow the UI to be drawn if the artwork system is active but no artwork is present (not an issue for MAME).
-  * Cleanup and fix of set_ea_info() so that negative offsets of 8 or 16 bits do not have extraneous FF's in front of them.
-  * More proper fix to the scanline display bug that prevented registers from being edited when the scanline display was on.
-  * Better message for when invalid opcodes are disassembled.
-  * Fixed crashing bug with clones.
-  * Adds some MESS specific IPT defaults (within #ifdef MESS).
-  * Modified input_port_allocate() so that PORT_BITX declarations that specify JOYCODE_a_BUTTONb for their default codes will also get JOYCODE_MOUSE_a_BUTTONb or'd in.
-  * Added seq_set_4() and seq_set_5().
+  * Fixed a bug in the NORMI opcode;
+  * Removed use of the GCC specific varargs on macros feature;
+  * Changed around one of the #include paths (due to ProjectBuilder on Mac issues);
+  * Added support for the TMS0285 variant (an old variant of the TMS5220);
+  * Added support for the SRCSHADE and DSTA2 command bits to the Jaguar blitter;
+  * Added some miscellaneous logging code;
+  * Changed around one of the #include paths (due to ProjectBuilder on Mac issues);
+  * Added support for objects with pitch != 1 for objects with 1-2 bits per pixels;
+  * Added a function to retrieve the interface;
+  * Added a MESS specific UI string (within #ifdef MESS of course);
+  * Parameterized the setdipswitches() call; so that a menu that looks like the DIP switch menu can easily be made with different IPT_* values (MESS has a configuration menu that functions a lot like the DIP *switch menu);
+  * Small fix to allow the UI to be drawn if the artwork system is active but no artwork is present (not an issue for MAME);
+  * Cleanup and fix of set_ea_info() so that negative offsets of 8 or 16 bits do not have extraneous FF's in front of them;
+  * More proper fix to the scanline display bug that prevented registers from being edited when the scanline display was on;
+  * Better message for when invalid opcodes are disassembled;
+  * Fixed crashing bug with clones;
+  * Adds some MESS specific IPT defaults (within #ifdef MESS);
+  * Modified input_port_allocate() so that PORT_BITX declarations that specify JOYCODE_a_BUTTONb for their default codes will also get JOYCODE_MOUSE_a_BUTTONb or'd in;
+  * Added seq_set_4() and seq_set_5();
   * Changed render_frame() so that throttle_speed() will also be called when game_is_paused is set. This prevents MAME from busy looping   *when paused.
 - Fixed Remaining Protection problems in TMNT2 and Sunset Riders, Fixed Combat School Trackball sets from Crashing, Fixed Escape Kids Spries, Fixed Sticky Sprites in Detana! Twinbee, Fixed Sprite Lag in some games [Acho A. Tang].
 - Misc Improvements / Cleanups / Fixes [Acho A. Tang].

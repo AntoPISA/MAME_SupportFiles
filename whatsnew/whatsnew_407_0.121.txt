@@ -2,28 +2,28 @@
 -------------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
-dunhuang0120u3gra (Vas Crabb)
-
-
-New games added or promoted from NOT_WORKING status
+New Games Added or Promoted from NOT_WORKING Status
 ---------------------------------------------------
 Best Of Best [Luca Elia]
 
-New clones added
+New Clones Added
 ----------------
 Cluedo (prod. 2) [James Wallace]
+
+
+MAME Testers Bug Fixed (1):
+---------------------------
+- dunhuang0120u3gra (Vas Crabb)
 
 
 Source changes:
 ---------------
 - Updated DIP locations in the following drivers [Vas Crabb]:
-  * bublbobl.c: bublbobl, tokio
-  * cps1.c: all games
-  * dunhuang.c: dunhuang
-  * mario.c: marked all as active high (confirmed from manuals).
-  * segag80r.c: astrob2, astrob1, spaceod and pignewt.
+  * bublbobl.c: bublbobl, tokio;
+  * cps1.c: all games;
+  * dunhuang.c: dunhuang;
+  * mario.c: marked all as active high (confirmed from manuals);
+  * segag80r.c: astrob2, astrob1, spaceod and pignewt;
   * segag80v.c: all games, fixed switch ordering.
 - Made more functions static to reduce namespace pollution [Atari Ace].
 - Improvements to the Touchmaster driver, still labelled not working. You can actually play tm and tm3k, but sometimes you have to reset because they stop registering the touchscreen input. tm4k is protected and hence totally unplayable [Luca Elia].
@@ -63,4 +63,4 @@ Source changes:
   SUBSECONDS_TO_HZ              -> ATTOSECONDS_TO_HZ
   USEC_TO_SUBSECONDS            -> ATTOSECONDS_IN_USEC
    
-In addition, all the mame_timer_* functions have been renamed back to their original names timer_*, so it is timer_set() instead of mame_timer_set() once again. The mame_timer object itself has been renamed to emu_timer.
+  In addition, all the mame_timer_* functions have been renamed back to their original names timer_*, so it is timer_set() instead of mame_timer_set() once again. The mame_timer object itself has been renamed to emu_timer.

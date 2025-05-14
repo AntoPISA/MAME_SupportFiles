@@ -2,32 +2,7 @@
 -------------------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
-- 00550: [Graphics] (atarisy2.c) apb: There is a graphics problem with your police car at the point you drive away from your starting square (crazyc)
-- 01455: [DIP/Input] (segas18.c) lghost: Problem with crosshair (Pitou)
-- 05584: [Gameplay] (konamigx.c) rungun2, slamdnk2: during run mame produces several messages about unknown protection command (Tafoid)
-- 05823: [Core] (coco12.c) -ramsize does nothing for emulation although it does change the .ini file (Nathan Woods)
-- 06185: [DIP/Input] LIGHTGUNS: Aimtrak Dual Lightguns no longer properly detect (Pitou)
-- 06269: [Debugger] DEBUGGER: Unable to use any valid cheats while using debug (Ryan Holtz)
-- 06292: [Crash/Freeze] (victor9k.c) victor9k [cpm86]: Freeze with 'cpm86' disk (Curt Coder)
-- 06314: [Crash/Freeze] Fatal error - All sets using '-centronics p72' slot/option (Ryan Holtz)
-- 06315: [Crash/Freeze] Fatal error - All sets using c4023, c1526, mps802 devices (Ryan Holtz)
-- 06316: [Crash/Freeze] (pc1512.c) pc1512, pc1512dd, pc1512hd10: Use of 'ibm_mfc' slot option causes Fatal error (Ryan Holtz)
-- 06317: [Crash/Freeze] (pc1512.c) pc1512, pc1512dd, pc1512hd10: Use of '3c503' slot option causes Fatal error (Ryan Holtz)
-- 06326: [Crash/Freeze] (megadriv.c) megadriv, 32x and clones, some segac2.c sets: Selecting machine and game via softlist though internal menu results exception/crash (Osso)
-- 06328: [Crash/Freeze] Various ISA using machines: Crash/Exception at Initialization (crazyc)
-- 06330: [Crash/Freeze] (altos5.c) altos5: Crash/.Exception on start (crazyc)
-- 06331: [Crash/Freeze] (apollo.c) dn3500_19i, dsp3000, dsp3500, dsp5500: Crash/Exception on start (Osso)
-- 06332: [Graphics] (galaga.c) digdug and clones: Graphics from Tilemap 0 are missing (Osso)
-- 06335: [Interface] UI:: Input (general) selection menus do not display correctly or at all (Vas Crabb)
-- 06342: [Crash/Freeze] pc (pccga): System crashing while loading (crazyc)
-- 06343: [DIP/Input] (taito_l.c) plottingu: Coinage dipswitches are labeled incorrectly (Tafoid)
-- 06349: [Gameplay] brapboys: MAME crashed when exiting game (O. Galibert)
-- 06352: [Crash/Freeze] (cps1.c) mbombrd, mbombrdj: Crash in demonstration mode (Osso)
-
-
-New machines added or promoted from NOT_WORKING status
+New Machines Added or Promoted from NOT_WORKING Status
 ------------------------------------------------------
 Alto-II [Juergen Buchmueller]
 Atari Portfolio [Curt Coder]
@@ -42,7 +17,7 @@ Vector 06c [MetalliC]
 Victor 9000 [Curt Coder]
 Wang Professional Computer [Curt Coder]
 
-New clones added or promoted from NOT_WORKING status
+New Clones Added or Promoted from NOT_WORKING Status
 ----------------------------------------------------
 Air Gallet (older) [Artemio Urbina]
 Casino Five (3315-02, U5-2B) [Brian Troha, The Dumping Union]
@@ -65,7 +40,7 @@ The NewZealand Story (US, old version) (older PCB) [CoolMod, The Dumping Union]
 Virtua Cop 3 (Rev B) [ShouTime, rtw]
 Wangan Midnight Maximum Tune 2 (Japan) (Rev A) [ShouTime, rtw]
 
-New machines marked as NOT_WORKING
+New Machines Marked as NOT_WORKING
 ----------------------------------
 CMI IIx [Ryan Holtz]
 Mobile Suit Gundam 0079 Card Builder [any, f205v, ShouTime, soyandroid, rtw]
@@ -84,26 +59,51 @@ Unknown Funworld A0-1 game [Roberto Fresca, Team Europe]
 Unknown Funworld A7-11 game 1 [Roberto Fresca, Team Europe]
 Unknown Inter Games poker [Roberto Fresca, Team Europe]
 
-New clones marked as NOT_WORKING
+New Clones Marked as NOT_WORKING
 --------------------------------
 Jolly Joker (Apple Time) [Roberto Fresca, Team Europe]
 Jungler (Subelectro, bootleg on Scramble hardware) [Andrew Welburn]
 Unknown Funworld A7-11 game 2 [Roberto Fresca, Team Europe]
 Wangan Midnight Maximum Tune (Japan) (Rev B) [ShouTime, rtw]
 
-New WORKING software list additions
+New WORKING Software List Additions
 -----------------------------------
 pc98_cd.xml: added more disks + FM Towns hybrids [rzero9]
 fmtowns_cd.xml: new dumps [rzero9]
 coco_cart.xml: Switched 'cclimbra' to 'cclimber' [Nathan Woods].
 pofo.xml: Dumped the File Manager/Tutorial card [Curt Coder].
 
-New NOT_WORKING software list additions
+New NOT_WORKING Software List Additions
 ---------------------------------------
 gba_ereader.xml: Animal Crossing Series 2 [Shideravan]
 
 
-Translations added or modified
+MAMETesters Bugs Fixed (21):
+----------------------------
+- 00550: [Graphics] (atarisy2.c) apb: There is a graphics problem with your police car at the point you drive away from your starting square [crazyc].
+- 01455: [DIP/Input] (segas18.c) lghost: Problem with crosshair [Pitou].
+- 05584: [Gameplay] (konamigx.c) rungun2, slamdnk2: during run mame produces several messages about unknown protection command [Tafoid].
+- 05823: [Core] (coco12.c) -ramsize does nothing for emulation although it does change the .ini file [Nathan Woods].
+- 06185: [DIP/Input] LIGHTGUNS: Aimtrak Dual Lightguns no longer properly detect [Pitou].
+- 06269: [Debugger] DEBUGGER: Unable to use any valid cheats while using debug [Ryan Holtz].
+- 06292: [Crash/Freeze] (victor9k.c) victor9k [cpm86]: Freeze with 'cpm86' disk [Curt Coder].
+- 06314: [Crash/Freeze] Fatal error - All sets using '-centronics p72' slot/option [Ryan Holtz].
+- 06315: [Crash/Freeze] Fatal error - All sets using c4023, c1526, mps802 devices [Ryan Holtz].
+- 06316: [Crash/Freeze] (pc1512.c) pc1512, pc1512dd, pc1512hd10: Use of 'ibm_mfc' slot option causes Fatal error [Ryan Holtz].
+- 06317: [Crash/Freeze] (pc1512.c) pc1512, pc1512dd, pc1512hd10: Use of '3c503' slot option causes Fatal error [Ryan Holtz].
+- 06326: [Crash/Freeze] (megadriv.c) megadriv, 32x and clones, some segac2.c sets: Selecting machine and game via softlist though internal menu results exception/crash [Osso].
+- 06328: [Crash/Freeze] Various ISA using machines: Crash/Exception at Initialization [crazyc].
+- 06330: [Crash/Freeze] (altos5.c) altos5: Crash/.Exception on start [crazyc].
+- 06331: [Crash/Freeze] (apollo.c) dn3500_19i, dsp3000, dsp3500, dsp5500: Crash/Exception on start [Osso].
+- 06332: [Graphics] (galaga.c) digdug and clones: Graphics from Tilemap 0 are missing [Osso].
+- 06335: [Interface] UI:: Input (general) selection menus do not display correctly or at all [Vas Crabb].
+- 06342: [Crash/Freeze] pc (pccga): System crashing while loading [crazyc].
+- 06343: [DIP/Input] (taito_l.c) plottingu: Coinage dipswitches are labeled incorrectly [Tafoid].
+- 06349: [Gameplay] brapboys: MAME crashed when exiting game [Olivier Galibert].
+- 06352: [Crash/Freeze] (cps1.c) mbombrd, mbombrdj: Crash in demonstration mode [Osso].
+
+
+Translations Added or Modified
 ------------------------------
 Catalan [Jordi Mallach]
 Spanish [A.Viloria]

@@ -2,22 +2,7 @@
 -----------------------------------
 
 
-MAME Testers Bugs Fixed
------------------------
-- 00954: [Graphics] (tecmo16.cpp) fstarfrc: Garbage scrolls past during into sequence (N. Gilbert).
-- 02343: [Crash/Freeze] (segac2.cpp) ribbit: Game freezes on later levels (MetalliC).
-- 03708: [Graphics] (deco32.cpp) nslasher, nslasherj, nslashers: Alpha blending for message windows is missing (cam900).
-- 05331: [DIP/Input] (nemesis.cpp) konamigt, rf2: Steering controls should use an incremental encoder (mmarino4).
-- 05554: [DIP/Input] (nbmj8991.cpp) hyouban: DIP switch descriptions are missing (kamilz).
-- 06913: [DIP/Input] (esripsys.cpp) turbosub: Analog inputs are inverted (MASH).
-- 07038: [Sound] (segahang.cpp) sharrier: High score entry music continues to play after completing input (cmonkey).
-- 07518: [Sound] (spiders.cpp) spiders: Web and spiders moving sounds don't match recording (Jim Hernandez).
-- 07581: [Gameplay] (segahang.cpp) sharrier, sharrier1: Difficulty increases constantly due to protection (Adrian Smethurst).
-- 07582: [Crash/Freeze] (megadriv.cpp) megadriv [sonic3p1]: Fatal error on starting game (Tafoid).
-- 07592: [Plugins] (neogeo.cpp) viewpoin: hiscore: Error parsing hiscore.dat entry (Carl).
-
-
-New working machines
+New Working Machines
 --------------------
 Advance Bright Ltd Double Players Mini Joystick 80-in-1 (MJ8500, ABL TV Game) [Sean Riddle, David Haywood]
 Game & Watch: Crab Grab [algestam, Ryan Holtz]
@@ -33,7 +18,7 @@ Super Game 36-in-1 (TimeTop SuperGame) (PAL) [JP_Ronny, TeamEurope]
 Technigame Super 4-in-1 Sports (PAL) [Sean Riddle, David Haywood]
 Who Wants to Be a Millionaire? (Character Options, Plug and Play, UK) [Sean Riddle, David Haywood]
 
-New working clones
+New Working Clones
 ------------------
 Advance Bright Ltd / V-Tac Technology Co Ltd. Decathlon (set 2, SM570, ABL TV Game) [Sean Riddle, David Haywood]
 Blue Shark (Model Racing bootleg, set 2) [Asayuki, pacman70]
@@ -64,19 +49,19 @@ Tetris (bootleg set 4) [jordigahan]
 Thunder Force AC (Japan, prototype, bootleg) [Marcio Miranda]
 Undercover Cops - Alpha Renewal Version (US) [Brian Troha, The Dumping Union]
 
-Machines promoted to working
+Machines Promoted to Working
 ----------------------------
 Cambridge Microprocessor Systems CMS 6502 Development System [Nigel Barnes]
 Green Beret (Irem) [Frank Palazzolo]
 Linus Akesson Craft [Ryan Holtz]
 Trivia Madness - Series A Question set [Dirk Best]
 
-Clones promoted to working
+Clones Promoted to Working
 --------------------------
 Silicon Graphics Inc Indy (R5000, 150MHz) [Ryan Holtz]
 Trivia Madness - Series B Question set [Dirk Best]
 
-New machines marked as NOT_WORKING
+New Machines Marked as NOT_WORKING
 ----------------------------------
 Advance Bright Ltd / Coleco / V-Tac Technology Co Ltd. Kick Boxing (BJ8888, ABL TV Game) [Sean Riddle, David Haywood]
 Air Walkers [Guru]
@@ -144,7 +129,7 @@ Triple Header Sports (JAKKS Pacific TV Motion Game) [Sean Riddle, David Haywood]
 TV Fitness Center (Lexibook) [TeamEurope]
 Win, Lose or Draw (Senario) [Sean Riddle, David Haywood]
 
-New clones marked as NOT_WORKING
+New Clones Marked as NOT_WORKING
 --------------------------------
 Choy Sun Doa - Jackpot Carnival (20156611, Queensland) [Dam0, Heihachi_73]
 Fisher-Price Fun 2 Learn Smart Fit Park (UK) [Sean Riddle, David Haywood]
@@ -168,7 +153,7 @@ Roland R-8M Total Percussion Sound Module (v1.04) [DBWBP]
 Spider-Man v1.02 (English,French) [PinMAME]
 VTech MobiGo (Spain) [Sean Riddle, ClawGrip]
 
-New working software list additions
+New Working Software List Additions
 -----------------------------------
 apple2_cass: Puck Man, Yonin Mahjong [Hubz, FakeShemp]
 apple2_flop_clcracked:
@@ -230,12 +215,12 @@ vsmile_cart:
   Disney/Pixar Toy Story 2 - Buzz a la Rescousse! (France), Spider-Man & ses amis - Le Defi Du Docteur Ock (France),
   V.Smile Football Challenge (France) [DisizDream]
 
-Software list items promoted to working
+Software List Items Promoted to Working
 ---------------------------------------
 apfimag_cass: Escape!!!, Head-Hunter, SY-50 IM-1 Diagnostics, Super Frog, Theft at the Art Museum, Treasure Hunt [Robbbert]
 fmtowns_cd: Jangou 4 [r09]
 
-New NOT_WORKING software list additions
+New NOT_WORKING Software List Additions
 ---------------------------------------
 altos8600: Xenix v2.2b [Robbbert]
 amigaocs_flop: 16 Bit Komix (Euro) [Mikerochip, FakeShemp]
@@ -286,6 +271,21 @@ vsmilem_cart:
   La fee Clochette (France), Le Monde de Nemo - Nemo a la decourverte de l'ocean (France),
   Nickelodeon Ni Hao Kai Lan - Joyeux Nouvel an chinois! (France), Oui-Oui - Detective d'un Jour (France),
   Scooby-Doo! - Panique a Funland (France), Walt Disney Cendrillon - Le reve enchante de Cendrillon (France) [DisizDream]
+
+
+MAME Testers Bugs Fixed (11):
+-----------------------------
+- 00954: [Graphics] (tecmo16.cpp) fstarfrc: Garbage scrolls past during into sequence (N. Gilbert).
+- 02343: [Crash/Freeze] (segac2.cpp) ribbit: Game freezes on later levels (MetalliC).
+- 03708: [Graphics] (deco32.cpp) nslasher, nslasherj, nslashers: Alpha blending for message windows is missing (cam900).
+- 05331: [DIP/Input] (nemesis.cpp) konamigt, rf2: Steering controls should use an incremental encoder (mmarino4).
+- 05554: [DIP/Input] (nbmj8991.cpp) hyouban: DIP switch descriptions are missing (kamilz).
+- 06913: [DIP/Input] (esripsys.cpp) turbosub: Analog inputs are inverted (MASH).
+- 07038: [Sound] (segahang.cpp) sharrier: High score entry music continues to play after completing input (cmonkey).
+- 07518: [Sound] (spiders.cpp) spiders: Web and spiders moving sounds don't match recording (Jim Hernandez).
+- 07581: [Gameplay] (segahang.cpp) sharrier, sharrier1: Difficulty increases constantly due to protection (Adrian Smethurst).
+- 07582: [Crash/Freeze] (megadriv.cpp) megadriv [sonic3p1]: Fatal error on starting game (Tafoid).
+- 07592: [Plugins] (neogeo.cpp) viewpoin: hiscore: Error parsing hiscore.dat entry (Carl).
 
 
 Source changes:

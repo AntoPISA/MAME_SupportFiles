@@ -2,17 +2,23 @@
 ----------------------------------------
 
 
-New games supported
+New Games Supported
 -------------------
-Mogura Desse (Cabinet Test Board) [David Haywood] (no sound (discrete))
-Speed Attack [Angelo Salese, Pierpaolo Prazzoli] (wrong colours)
-Some New MegaTech Sets (mostly not working yet)
+Mogura Desse (Cabinet Test Board) [David Haywood] (1)
+Speed Attack [Angelo Salese, Pierpaolo Prazzoli] (2)
+Some New MegaTech Sets (3)
 
-New Clones supported
+New Clones Supported
 --------------------
 Hard Dunk (World) [David Haywood]
 Super Bike (DK Conversion) [Pierpaolo Prazzoli]
 Some CPS clones [Razoola]
+
+Notes:
+------
+(1): No sound (discrete).
+(2): Wrong colours.
+(3): Mostly not working yet.
 
 
 Source changes:
@@ -24,19 +30,19 @@ Source changes:
 - Viofight expects determinant results of the two flags from SBCD	or it gets stuck in a math loop. The V flag now returns zero and the N flag mirrors carry exactly like what the ASM core does.
 - Fixed Mustache Boy Continue Screen and attempted to improve speed [Tomasz Slanina]
 - Misc Konami Fixes [Acho A. Tang]:
-  * qgakumon resetting and screen darkening.
-  * tmnt2 load-save states(not good enough yet).
-  * ssriders diagonal jittering(needs testing).
-  * boundary conditions and kludge removal in K007420.
-  * rogue sprites.
+  * qgakumon resetting and screen darkening;
+  * tmnt2 load-save states(not good enough yet);
+  * ssriders diagonal jittering(needs testing);
+  * Boundary conditions and kludge removal in K007420;
+  * Rogue sprites;
   * Bad scrolling, clipping, rogue sprites.
 - Couple of Improvements to the Fuuki games (Priority, BG Colours) [Paul Priest].
 - Guard against OP_ROM/OP_RAM overflows. This patch adds an optional facility to guard against OP_ROM/OP_RAM overflows. This is implemented by adding new variables OP_MEM_MIN and OP_MEM_MAX that track the minimum and maximum address ranges for which using OP_ROM/OP_RAM is valid [Nathan Woods].
 - Support for this feature is enabled via conditional compilation in memory.h. There are three possible modes: CPUREADOP_SAFETY_NONE - The status quo; no range checking at all CPUREADOP_SAFETY_PARTIAL  - Range checking only against the maximum address CPUREADOP_SAFETY_FULL - Range checking against both the minimum and the maximum. This patch has MAME using CPUREADOP_SAFETY_NONE, unless MAME_DEBUG is defined in which case CPUREADOP_SAFETY_FULL is set. Thus as is, this patch should have zero effect on release versions of MAME. Additionally, being able to safely disassemble code near bank boundaries when using the MAME debugger is extremely useful. There is a slight performance hit when this is enabled.
-- Dipswitch fixes:
+- DIP switch fixes:
   * 1st dipswitch of 3rd bank in 1941 [Fabrizio Pedrazzini].
   * Tetris Plus 2 (MS32 version) [Sonikos].
-  * Changed nkdodgeb to use proms from another Japan bootleg set, maybe this fixes some problems with the colours.
+  * Changed nkdodgeb to use proms from another Japan bootleg set, maybe this fixes some problems with the colours [David Haywood].
 - Included 8080 core updates from MESS.
 - Preliminary Hyperstone Core, not yet working well enough to run anything [Pierpaolo Prazzoli].
 - Now using correct Dragon Blaze sound ROM.
