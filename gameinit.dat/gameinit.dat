@@ -6018,6 +6018,23 @@ To save a tape: SAVE
 To load a tape: LOAD or TLOAD, just have to guess.
 
 $end
+$info=mc1502
+$mame
+INITIALIZATION:
+MC1502
+======
+
+Wait for the self-test to say "O3y 640K", then press Enter twice. This puts you into the Monitor. B to go into ROM Basic.
+
+Cassette
+--------
+Within Basic, you can use the cassette system. SAVE"x" to Save, and LOAD"x" to Load. If you take too long to play the tape, it will time out. Files are compatible with the IBM5150.
+
+Floppies
+--------
+Unknown how to boot a floppy disk.
+
+$end
 $info=mcb216
 $mame
 INITIALIZATION:
