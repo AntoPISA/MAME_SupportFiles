@@ -1,4 +1,4 @@
-﻿#    MESSINFO_REM.DAT v0.277    Latest update:  May 15, 2025
+﻿#    MESSINFO_REM.DAT v0.277    Latest update:  May 22, 2025
 #                                Project start: Nov  7, 2011
 #
 #    Author:  Antonio Paradossi (AntoPISA) from Pisa (Tuscany/Italy)
@@ -12,218 +12,6 @@
 #    Total items: 342
 #
 #
-#
-$info=sh4le
-$mame
-0.150
-
-Hitachi SH-4 (little), <unknown>, ????
-
-DRIVER:
-devices/cpu/sh/sh4.cpp
-
-DRIVER STATUS:
-Emulation: Good
-Color: Good
-Sound: Good
-Graphics: Good
-Save State: Unsupported
-
-WIP:
-- 0.277: Device removed.
-- 0.196: Description changed to 'Hitachi SH-4 (little)' [Angelo Salese].
-- 0.186: Renamed (sh4) to (sh4le).
-- 0.150: Added 'SH-4 (little)' device.
-
-$end
-$info=sh4be
-$mame
-0.184
-
-Hitachi SH-4 (big), <unknown>, ????
-
-DRIVER:
-devices/cpu/sh/sh4.cpp
-
-DRIVER STATUS:
-Emulation: Good
-Color: Good
-Sound: Good
-Graphics: Good
-Save State: Unsupported
-
-WIP:
-- 0.277: Device removed.
-- 0.196: Description changed to 'Hitachi SH-4 (big)' [Angelo Salese].
-- 0.184: Added 'SH-4 (big)' device.
-
-$end
-$info=sh3le
-$mame
-0.184
-
-Hitachi SH-3 (little), <unknown>, ????
-
-DRIVER:
-devices/cpu/sh/sh4.cpp
-
-DRIVER STATUS:
-Emulation: Good
-Color: Good
-Sound: Good
-Graphics: Good
-Save State: Unsupported
-
-WIP:
-- 0.277: Device removed.
-- 0.196: Description changed to 'Hitachi SH-3 (little)' [Angelo Salese].
-- 0.187: Renamed (sh3) to (sh3le).
-- 0.184: Added 'SH-3 (little)' device.
-
-$end
-$info=sh3be
-$mame
-0.184
-
-Hitachi SH-3 (big), <unknown>, ????
-
-DRIVER:
-devices/cpu/sh/sh4.cpp
-
-DRIVER STATUS:
-Emulation: Good
-Color: Good
-Sound: Good
-Graphics: Good
-Save State: Unsupported
-
-WIP:
-- 0.277: Device removed.
-- 0.196: Description changed to 'Hitachi SH-3 (big)' [Angelo Salese].
-- 0.184: Added 'SH-3 (big)' device.
-
-$end
-$info=pc9821v20
-$mame
-0.143u4 [Angelo Salese]
-
-PC-9821V20 (98MATE VALUESTAR), NEC, 1998
-
-The NEC PC-9801, or PC-98 series, is a Japanese 16-bit microcomputer manufactured by NEC from 1982 onwards. The platform established NEC's dominance in the Japanese personal computer market, and by 1999, more than 18 million PC-98 units had been sold. The PC-9821: CPU Intel 80386SX, RAM 4 MByte, CD-ROM, HD 40 MByte, video resolution 640x480 256 colors and SCSI interface (sources: http://it.wikipedia.org/wiki/NEC_PC-9801 and http://en.wikipedia.org/wiki/NEC_PC-9801).
-
-DRIVER:
-nec/pc9821.cpp
-
-DRIVER STATUS:
-Emulation: Preliminary
-Color: Good
-Sound: Imperfect
-Graphics: Good
-Save State: Unsupported
-
-SOFTWARE LIST:
-pc98.xml, pc98_cd.xml
-
-RESOURCES:
-Snap and Title.
-
-WIP:
-- 0.277: System removed.
-- 0.236: Description changed to 'PC-9821V20 (98MATE VALUESTAR)'.
-- 0.143u4: Angelo Salese added skeleton driver of 'NEC PC-9821 (98MATE VALUESTAR 20)' system.
-
-ROMSET:
-436224 bytes in 4 files / 224.21Kb packed
-
-$end
-$info=pc9821v13
-$mame
-0.140 [Angelo Salese, Carl]
-
-PC-9821V13 (98MATE VALUESTAR), NEC, 1998
-
-The NEC PC-9801, or PC-98 series, is a Japanese 16-bit microcomputer manufactured by NEC from 1982 onwards. The platform established NEC's dominance in the Japanese personal computer market, and by 1999, more than 18 million PC-98 units had been sold. The PC-9821: CPU Intel 80386SX, RAM 4 MByte, CD-ROM, HD 40 MByte, video resolution 640x480 256 colors and SCSI interface (sources: http://it.wikipedia.org/wiki/NEC_PC-9801 and http://en.wikipedia.org/wiki/NEC_PC-9801).
-
-DRIVER:
-nec/pc9821.cpp
-
-DRIVER STATUS:
-Emulation: Preliminary
-Color: Good
-Sound: Imperfect
-Graphics: Good
-Save State: Unsupported
-
-SOFTWARE LIST:
-pc98.xml, pc98_cd.xml
-
-RESOURCES:
-Snap, Title and machine picture (in "Cabinet" collection).
-
-WIP:
-- 0.277: System removed.
-- 0.236: Description changed to 'PC-9821V13 (98MATE VALUESTAR)'.
-- 0.143u4: Renamed (pc9821a) to (pc9821v13).
-- 0.140: Angelo Salese and Carl added 'PC-9821 (v13)' system.
-
-ROMSET:
-403456 bytes in 3 files / 203.5Kb packed
-
-$end
-$info=pc9821ne
-$mame
-0.140 [Angelo Salese, Carl]
-
-PC-9821Ne (98NOTE), NEC, 1994
-
-The NEC PC-9801, or PC-98 series, is a Japanese 16-bit microcomputer manufactured by NEC from 1982 onwards. The platform established NEC's dominance in the Japanese personal computer market, and by 1999, more than 18 million PC-98 units had been sold. The PC-9821: CPU Intel 80386SX, RAM 4 MByte, CD-ROM, HD 40 MByte, video resolution 640x480 256 colors and SCSI interface (sources: http://it.wikipedia.org/wiki/NEC_PC-9801 and http://en.wikipedia.org/wiki/NEC_PC-9801).
-
-DRIVER:
-nec/pc9821.cpp
-
-DRIVER STATUS:
-Emulation: Preliminary
-Color: Good
-Sound: Imperfect
-Graphics: Good
-Save State: Unsupported
-
-SOFTWARE LIST:
-pc98.xml, pc98_cd.xml
-
-RESOURCES:
-Snap, Title and machine picture (in "Cabinet" collection).
-
-WIP:
-- 0.277: System removed.
-- 0.236: Description changed to 'PC-9821Ne (98NOTE)'.
-- 0.140: Angelo Salesea and Carl added 'NEC PC-9821 (98NOTE)' system.
-
-ROMSET:
-403456 bytes in 3 files / 210.43Kb packed
-
-$end
-$info=linndrum_hat_vca
-$mame
-0.276 [m1macrophage]
-
-LinnDrum CEM3360 VCA and EG, <unknown>, ????
-
-DRIVER:
-linn/linndrum.cpp
-
-DRIVER STATUS:
-Emulation: Good
-Color: Good
-Sound: Good
-Graphics: Good
-Save State: Unsupported
-
-WIP:
-- 0.277: Device removed.
-- 0.276: m1macrophage added 'LinnDrum CEM3360 VCA and EG' device.
-
-$end
 $info=24c16a
 $mame
 0.207 [smf]
@@ -3652,6 +3440,27 @@ ROMSET:
 3175 bytes in 5 files / 1.62Kb packed
 
 $end
+$info=linndrum_hat_vca
+$mame
+0.276 [m1macrophage]
+
+LinnDrum CEM3360 VCA and EG, <unknown>, ????
+
+DRIVER:
+linn/linndrum.cpp
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Unsupported
+
+WIP:
+- 0.277: Device removed.
+- 0.276: m1macrophage added 'LinnDrum CEM3360 VCA and EG' device.
+
+$end
 $info=lw30_beep
 $mame
 0.253 [Bartman/Abyss]
@@ -5062,6 +4871,106 @@ ROMSET:
 None dumped.
 
 $end
+$info=pc9821ne
+$mame
+0.140 [Angelo Salese, Carl]
+
+PC-9821Ne (98NOTE), NEC, 1994
+
+The NEC PC-9801, or PC-98 series, is a Japanese 16-bit microcomputer manufactured by NEC from 1982 onwards. The platform established NEC's dominance in the Japanese personal computer market, and by 1999, more than 18 million PC-98 units had been sold. The PC-9821: CPU Intel 80386SX, RAM 4 MByte, CD-ROM, HD 40 MByte, video resolution 640x480 256 colors and SCSI interface (sources: http://it.wikipedia.org/wiki/NEC_PC-9801 and http://en.wikipedia.org/wiki/NEC_PC-9801).
+
+DRIVER:
+nec/pc9821.cpp
+
+DRIVER STATUS:
+Emulation: Preliminary
+Color: Good
+Sound: Imperfect
+Graphics: Good
+Save State: Unsupported
+
+SOFTWARE LIST:
+pc98.xml, pc98_cd.xml
+
+RESOURCES:
+Snap, Title and machine picture (in "Cabinet" collection).
+
+WIP:
+- 0.277: System removed.
+- 0.236: Description changed to 'PC-9821Ne (98NOTE)'.
+- 0.140: Angelo Salesea and Carl added 'NEC PC-9821 (98NOTE)' system.
+
+ROMSET:
+403456 bytes in 3 files / 210.43Kb packed
+
+$end
+$info=pc9821v13
+$mame
+0.140 [Angelo Salese, Carl]
+
+PC-9821V13 (98MATE VALUESTAR), NEC, 1998
+
+The NEC PC-9801, or PC-98 series, is a Japanese 16-bit microcomputer manufactured by NEC from 1982 onwards. The platform established NEC's dominance in the Japanese personal computer market, and by 1999, more than 18 million PC-98 units had been sold. The PC-9821: CPU Intel 80386SX, RAM 4 MByte, CD-ROM, HD 40 MByte, video resolution 640x480 256 colors and SCSI interface (sources: http://it.wikipedia.org/wiki/NEC_PC-9801 and http://en.wikipedia.org/wiki/NEC_PC-9801).
+
+DRIVER:
+nec/pc9821.cpp
+
+DRIVER STATUS:
+Emulation: Preliminary
+Color: Good
+Sound: Imperfect
+Graphics: Good
+Save State: Unsupported
+
+SOFTWARE LIST:
+pc98.xml, pc98_cd.xml
+
+RESOURCES:
+Snap, Title and machine picture (in "Cabinet" collection).
+
+WIP:
+- 0.277: System removed.
+- 0.236: Description changed to 'PC-9821V13 (98MATE VALUESTAR)'.
+- 0.143u4: Renamed (pc9821a) to (pc9821v13).
+- 0.140: Angelo Salese and Carl added 'PC-9821 (v13)' system.
+
+ROMSET:
+403456 bytes in 3 files / 203.5Kb packed
+
+$end
+$info=pc9821v20
+$mame
+0.143u4 [Angelo Salese]
+
+PC-9821V20 (98MATE VALUESTAR), NEC, 1998
+
+The NEC PC-9801, or PC-98 series, is a Japanese 16-bit microcomputer manufactured by NEC from 1982 onwards. The platform established NEC's dominance in the Japanese personal computer market, and by 1999, more than 18 million PC-98 units had been sold. The PC-9821: CPU Intel 80386SX, RAM 4 MByte, CD-ROM, HD 40 MByte, video resolution 640x480 256 colors and SCSI interface (sources: http://it.wikipedia.org/wiki/NEC_PC-9801 and http://en.wikipedia.org/wiki/NEC_PC-9801).
+
+DRIVER:
+nec/pc9821.cpp
+
+DRIVER STATUS:
+Emulation: Preliminary
+Color: Good
+Sound: Imperfect
+Graphics: Good
+Save State: Unsupported
+
+SOFTWARE LIST:
+pc98.xml, pc98_cd.xml
+
+RESOURCES:
+Snap and Title.
+
+WIP:
+- 0.277: System removed.
+- 0.236: Description changed to 'PC-9821V20 (98MATE VALUESTAR)'.
+- 0.143u4: Angelo Salese added skeleton driver of 'NEC PC-9821 (98MATE VALUESTAR 20)' system.
+
+ROMSET:
+436224 bytes in 4 files / 224.21Kb packed
+
+$end
 $info=pce_cdsys3
 $mame
 0.149
@@ -5390,6 +5299,96 @@ Save State: Unsupported
 WIP:
 - 0.266: Device removed.
 - 0.264: Olivier Galibert added 'SH2/704x ADC' device.
+
+$end
+$info=sh3be
+$mame
+0.184
+
+Hitachi SH-3 (big), <unknown>, ????
+
+DRIVER:
+devices/cpu/sh/sh4.cpp
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Unsupported
+
+WIP:
+- 0.277: Device removed.
+- 0.196: Description changed to 'Hitachi SH-3 (big)' [Angelo Salese].
+- 0.184: Added 'SH-3 (big)' device.
+
+$end
+$info=sh3le
+$mame
+0.184
+
+Hitachi SH-3 (little), <unknown>, ????
+
+DRIVER:
+devices/cpu/sh/sh4.cpp
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Unsupported
+
+WIP:
+- 0.277: Device removed.
+- 0.196: Description changed to 'Hitachi SH-3 (little)' [Angelo Salese].
+- 0.187: Renamed (sh3) to (sh3le).
+- 0.184: Added 'SH-3 (little)' device.
+
+$end
+$info=sh4be
+$mame
+0.184
+
+Hitachi SH-4 (big), <unknown>, ????
+
+DRIVER:
+devices/cpu/sh/sh4.cpp
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Unsupported
+
+WIP:
+- 0.277: Device removed.
+- 0.196: Description changed to 'Hitachi SH-4 (big)' [Angelo Salese].
+- 0.184: Added 'SH-4 (big)' device.
+
+$end
+$info=sh4le
+$mame
+0.150
+
+Hitachi SH-4 (little), <unknown>, ????
+
+DRIVER:
+devices/cpu/sh/sh4.cpp
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Unsupported
+
+WIP:
+- 0.277: Device removed.
+- 0.196: Description changed to 'Hitachi SH-4 (little)' [Angelo Salese].
+- 0.186: Renamed (sh4) to (sh4le).
+- 0.150: Added 'SH-4 (little)' device.
 
 $end
 $info=slc1a
