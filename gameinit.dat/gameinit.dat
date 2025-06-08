@@ -1,4 +1,4 @@
-﻿# MAME GAMEINIT.DAT v0.277   Latest Update:      May  7, 2025
+﻿# MAME GAMEINIT.DAT v0.277   Latest Update:     June  8, 2025
 #                         Project started: September 10, 2015
 #          Merged to the file startup.dat:  December 17, 2024
 #
@@ -15,9 +15,6 @@ $info=3bagfull
 $mame
 INITIALIZATION:
 At the first start, "CALL ATTENDANT" will flash at the top, to start press in sequence: [ F1 ] and [ F2 ] to do this. Now press [ Z ] + [ X ] + [ C ] simultaneously; you'll see a number show up for the value "RF/AMT" if done correctly. After this value is set, return to the game by taking off the [ F2 ].
-
-SOURCE:
-https://www.progettosnaps.net/gameinit.dat
 
 $end
 $info=4004clk
@@ -7261,6 +7258,12 @@ How to set it up for the first time
 - Quit MAME.
 
 - Next time you start the console, the game will run by itself and you won't have to set up anything.
+
+$end
+$info=nor6007a,nor6007b
+$mame
+INITIALIZATION:
+To pass the "LASER LOCK" message, press [ F ]+[ D ]+[ Z ]+[ X ] at the same time, release them, and press [ M ]+[ 2 ]+[ S ] together again followed by [ Z ].
 
 $end
 $info=nshrz,nshrz2mhz
