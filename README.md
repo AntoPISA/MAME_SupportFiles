@@ -1,13 +1,14 @@
 # MAME_SupportFiles
 
 progetto-SNAPS © 2020/2025 AntoPISA
-MAME Support Files v0.276
+MAME Support Files v0.277
 -----------------------------------
 
 The following files have been updated in this MAME cycle:
 
 - Category pack
 - CatVer pack
+- CHD-Info pack
 - gameinit.dat
 - Languages.ini
 - MESS-Info.dat
