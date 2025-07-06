@@ -1,5 +1,5 @@
 ﻿#     =============================================================
-#     MAME RENAMESET_SL.DAT v0.277git  Latest update:  Jun 27, 2025
+#     MAME RENAMESET_SL.DAT v0.278     Latest update:  Jul  6, 2025
 #     =============================================================
 #
 #     Home-page: https://www.progettosnaps.net/renameset/
@@ -17,7 +17,7 @@
 #               M.A.S.H. for "mameinfo.dat"
 #               motoschifo for "ADB Tool", "pS_Tool" and for the constant support!
 #
-#               Internal Version 15.05
+#               Internal Version 15.07
 #
 #       779 removed machines/devices overall in the history of MAME
 #     6.705 renamed machines/devices overall in the history of MAME
@@ -25,10 +25,71 @@
 #     AUDIO/GRAPHIC/ORIENTATION : Corrected from 0.1 to 0.33b2
 #     PLAYERS IN DATs           : Added from 0.1 to 0.20
 #     DATs MAME                 : Corrected and with new data implemented from 0.1 to 0.33b2
-#     ***                       : Rename/Delete to be reviewed (-2.868 items)
-#     mID: 00000                : mameID yet to be added (-2.868 items)
+#     ***                       : Rename/Delete to be reviewed (-2.683 items)
+#     mID: 00000                : mameID yet to be added (-2.683 items)
 #
 #
+$0.278 [#717]
+2025/06/30
+48.574 total items, 3.210 drivers (+22), 41.760 machines (-3/+344), 14.557 parents (-1/+149), 27.203 clones (-2/+195), 78 BIOSes (+1), 6.736 devices (-1/+67), 1.242 requires CHDs (+2), 1.892 use samples, 34.836 audio mono (+8409), 2.414 audio stereo (-6898), 1.173 audio multichannel (-1178), 3.337 no audio (+8)
+16.064 working (+174), 25.696 not working (+167), 15.675 mechanicals (+23), 26.085 not mechanicals (+318), 14.540 save supported (+119), 27.220 save unsupported (+222)
+19.069 horizontal screen (+296), 3.264 vertical screen (+15), 21.079 raster graphics (+287), 109 vector graphics, 807 lcd graphics (+17), 338 svg graphics (+7), 19.427 screenless (+30)
+362.783 total roms (+2773), 359.324 machines roms (+2758), 2.824 devices roms (+12), 635 BIOSes roms (+3), 1.374 CHDs (+2), 597 sample files (-2), 76 sample packs (-1), 352.959 good dumps (+2633), 6.274 no dumps (+47), 4.924 bad dumps (+95), 25 bugs fixed
+721 software list (+1), 139.730 software (-5/+178), 710 active SL (+1), 11 orphan SL, 138.968 active software (-5/+178), 762 orphan software, 96.234 software parents (+138), 43.496 software clones (+45)
+236.715 software roms (+326), 11.374 software CHD (+33), 98.886 supported software (+134), 1.902 partially supported software (+16), 38.942 unsupported software (+33)
+45 ren (36/9/0):
+animalw                 > animalwbl                   (mID: 45203) M
+bang                    > bangb                       (mID:  3620) M
+brkthru                 > brkthruu                    (mID:   272) M
+cb5                     > cb5_13                      (mID: 47752) M
+dpatrola                > dpatrol                     (mID: 35978) M
+flowerj                 > flowerjb                    (mID:  5318) M
+footbpow                > footbpow12                  (mID: 38182) M
+glass                   > glassa                      (mID:  5848) M
+goldartp                > goldartpt                   (mID: 40827) M
+hpierrot                > hpierrota                   (mID: 43509) M
+i960kb                  > i80960kb                    (mID: 29204) D
+klxyj                   > klxyj104cn                  (mID:  6558) M
+maniacsq                > maniacsqa                   (mID: 38636) M
+maniacsqa               > maniacsqb                   (mID: 35999) M
+maniacsqu               > maniacsq                    (mID:  3655) M
+mastboyiv2              > mastboyiv2a                 (mID: 45317) M
+nes_vt369_soc           > vt369_soc                   (mID: 42246) D
+nes_vt369_soc_swap      > vt369_soc_swap              (mID: 43411) D
+nes_vtunknown_soc_bt    > vt3xx_unknown_soc_bt        (mID: 42247) D
+nes_vtunknown_soc_cy    > vt3xx_unknown_soc_cy        (mID: 42248) D
+nes_vtunknown_soc_dg    > vt3xx_unknown_soc_dg        (mID: 42252) D
+nes_vtunknown_soc_fa    > vt3xx_unknown_soc_fa        (mID: 43267) D
+pdriftj                 > pdriftjb                    (mID:  5298) M
+rivierab                > rivierac                    (mID: 28674) M
+rtpc_kbd_con            > rtpc_kbdc                   (mID: 43546) D
+sdmg2                   > sdmg2754ca                  (mID:  6569) M
+sdmg2a                  > sdmg2754cb                  (mID: 47989) M
+sltpstep                > sltpstepa                   (mID: 40859) M
+specd9                  > specd9105g                  (mID: 48327) M
+ss2000                  > ssh2000a                    (mID: 48842) M
+ss2000a                 > ssh2000wf                   (mID: 48843) M
+ss2001                  > ssh2000                     (mID: 41961) M
+thoop2                  > thoop2b                     (mID:  3705) M
+thoop2a                 > thoop2                      (mID: 38739) M
+touchgo                 > touchgoa                    (mID:  5894) M
+touchgoe                > touchgo                     (mID:  4447) M
+touchgok                > touchgoun                   (mID: 36620) M
+touchgon                > touchgonnac                 (mID:  5869) M
+tvochken_card           > sega_tvochken_card_reader   (mID: 47094) D
+unkboram                > pkts                        (mID: 48170) M
+wrally                  > wrallyd                     (mID:  4473) M
+wrally2                 > wrally2a                    (mID: 39360) M
+wrally2a                > wrally2b                    (mID:  3709) M
+wrallya                 > wrallyc                     (mID:  4474) M
+wrallyc                 > wrallya                     (mID: 43882) M
+4 del (3/1/0):
+brkthrubl                                             (mID: 44729) M
+dpatrol                                               (mID: 30473) M
+pwrshovla                                             (mID: 36021) M
+wave                                                  (mID: 35057) D
+
+
 $0.277 [#716]
 2025/04/30
 48.166 total items, 3.188 drivers (+14), 41.419 machines (-3/+109), 14.409 parents (-2/+68), 27.010 clones (-1/+41), 77 BIOSes, 6.670 devices (-7/+26), 1.240 requires CHDs (+1), 1.892 use samples (+1), 26.427 audio mono (+72), 9.312 audio stereo (+33), 2.351 audio multichannel (-3/+1), 3.329 no audio (+3)
