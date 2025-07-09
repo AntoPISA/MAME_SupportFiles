@@ -4,7 +4,7 @@ IMPORTANT: CONFIGURATION AND HIGH SCORE SAVE FILES HAVE BEEN MOVED. MAKE SURE YO
 NOTE: 'Bubble Bobble' doesn't work in this release. We are aware of that. Use 'Bobble Bobble' or 'Super Bobble Bobble" instead, they work much better than "Bubble Bobble' ever did.
 
 
-New games supported
+New Games Supported
 -------------------
 (1943)     1943 [Mirko Buffoni, Paul Leaman, Nicola Salmoria]
 (berzerk)  Berzerk [Zsolt Vasvari, Christopher Kirmse]
@@ -31,7 +31,7 @@ New games supported
 (triplep)  Triple Punch [Nicola Salmoria]
 (zookeep)  Zookeeper [John Butler, Ed Mueller]
 
-New clones supported
+New Clones Spported
 --------------------
 (berzerk1) Berzerk (version 1) [Zsolt Vasvari, Christopher Kirmse]
 (bosconm)  Bosconian (Namco) [Toninho]
@@ -65,60 +65,60 @@ These drivers have improved GRAPHICS:
   * Gyruss
   * Crazy Kong
   * Zaxxon (is getting there; sprites are mostly correct, background isn't)
-- Accurate colors in 'Bagman' and 'Super Bagman' [Tim Lindquist, Jarek Burczynski].
-- Accurate colors in 'Naughty Boy' (probably) [Virtu-Al, Nicola Salmoria].
-- Minor fix to 'Donkey Kong' colors (black was dark blue) [Nicola Salmoria].
-- Clouds in 'Time Pilot' are correct [Edward Massey].
-- Lives left are correctly displayed in 'Burger Time', sprites are turned off appropriately, and the switch test in test mode works correctly. The hardware of this game is more similar to 'Eggs' than I thought [Nicola Salmoria].
-- Some fixes to '10 Yard Fight' [John Butler].
-- The background was clipped too low in 'Phoenix' [Nicola Salmoria].
-- Added the missing scrolling background to 'Exed Exes' [Nicola Salmoria].
-- Fixed sprite/character priority in 'Gyruss' [Nicola Salmoria].
-- Fixed blinking in the 'Galaga' starfield [Martin Scragg].
-- 'Galaga' supports rotation (-ror and -rol) [Nicola Salmoria].
+- Accurate colors in Bagman and Super Bagman [Tim Lindquist, Jarek Burczynski].
+- Accurate colors in Naughty Boy (probably) [Virtu-Al, Nicola Salmoria].
+- Minor fix to Donkey Kong colors (black was dark blue) [Nicola Salmoria].
+- Clouds in Time Pilot are correct [Edward Massey].
+- Lives left are correctly displayed in Burger Time, sprites are turned off appropriately, and the switch test in test mode works correctly. The hardware of this game is more similar to Eggs than I thought [Nicola Salmoria].
+- Some fixes to 10 Yard Fight [John Butler].
+- The background was clipped too low in Phoenix [Nicola Salmoria].
+- Added the missing scrolling background to Exed Exes [Nicola Salmoria].
+- Fixed sprite/character priority in Gyruss [Nicola Salmoria].
+- Fixed blinking in the Galaga starfield [Martin Scragg].
+- Galaga supports rotation (-ror and -rol) [Nicola Salmoria].
 
 
 These drivers have new or improved SOUND:
 -----------------------------------------
 - All the Williams games. Samples are no longer needed and may be deleted [Steven Hugg, Mirko Buffoni, Nicola Salmoria].
-- 'Q*Bert Qubes': You just have to use Q*Bert's sound ROMs, they are the same [Fabrice Frances].
-- 'Tac/Scan' (through samples) [Brad Oliver].
-- Fixed some sound problems in 'Asteroids' [Andrew Scott].
-- Added music to 'Kick' [Aaron Giles].
-- Improved the 'Galaxian' background hum, it also is no longer incorrectly played in 'Moon Cresta' and others [Andrew Scott].
-- Digital audio in the Taito games (used for some sound effects, most notably Tarzan's yell in 'Jungle King'). Also, music plays in 'Jungle King' [Nicola Salmoria].
-- 'Moon Patrol', '10 Yard Fight', 'Kung Fu Master' [Aaron Giles].
-- 'Mario Bros.' (partial, through samples) [Brad Oliver, Shane Monroe].
-- 'Eggs' [Nicola Salmoria].
-- Fixed the sound in 'Omega Race'. It was playing too slow. Thanks to Stacy Joe Dunkle, Mike Cuddy and Al Kossow [Bernd Wiebelt].
-- 'Congo Bongo' (samples are needed to get full sound) [Ville Laitinen, Tim Lindquist].
+- Q*Bert Qubes: You just have to use Q*Bert's sound ROMs, they are the same [Fabrice Frances].
+- Tac/Scan (through samples) [Brad Oliver].
+- Fixed some sound problems in Asteroids [Andrew Scott].
+- Added music to Kick [Aaron Giles].
+- Improved the Galaxian background hum, it also is no longer incorrectly played in Moon Cresta and others [Andrew Scott].
+- Digital audio in the Taito games (used for some sound effects, most notably Tarzan's yell in Jungle King). Also, music plays in Jungle King [Nicola Salmoria].
+- Moon Patrol, 10 Yard Fight, Kung Fu Master [Aaron Giles].
+- Mario Bros. (partial, through samples) [Brad Oliver, Shane Monroe].
+- Eggs [Nicola Salmoria].
+- Fixed the sound in Omega Race. It was playing too slow. Thanks to Stacy Joe Dunkle, Mike Cuddy and Al Kossow [Bernd Wiebelt].
+- Congo Bongo (samples are needed to get full sound) [Ville Laitinen, Tim Lindquist].
 
 
 These drivers have HIGH SCORE support:
 --------------------------------------
-- 'Moon Patrol', 'Rally X', 'Vanguard', 'Super Cobra', 'Turtles', 'Xevious', 'Galaxy Wars' [Valerio Verrando].
-- Fixed 'Krull' and 'Donkey Kong 3' [Nicola Salmoria].
-- Fixed 'Galaga' [Valerio Verrando].
-- 'Starforce', 'Jump Bug', 'Bagman', 'Super Bagman', 'Time Pilot 84', 'Warp Warp' [Juan Carlos Lorente].
+- Moon Patrol, Rally X, Vanguard, Super Cobra, Turtles, Xevious, Galaxy Wars [Valerio Verrando].
+- Fixed Krull and Donkey Kong 3 [Nicola Salmoria].
+- Fixed Galaga [Valerio Verrando].
+- Starforce, Jump Bug, Bagman, Super Bagman, Time Pilot 84, Warp Warp [Juan Carlos Lorente].
 
 
 Other drivers improvements:
 ---------------------------
-- The attract mode of 'Galaga' works correctly. 'Qix' runs correctly and without slowdowns. Test mode in 'Mr. Do's Castles' & family works correctly, (dip switches in Do's Castle still don't work). All these changes are due to the interleaved CPU execution described below [Nicola Salmoria].
-- New fix to avoid lockup in 'Tempest' after 150,000 points - this one should really work [Keith Gerdes].
+- The attract mode of Galaga works correctly. Qix runs correctly and without slowdowns. Test mode in Mr. Do's Castles & family works correctly, (DIP switches in Do's Castle still don't work). All these changes are due to the interleaved CPU execution described below [Nicola Salmoria].
+- New fix to avoid lockup in Tempest after 150,000 points - this one should really work [Keith Gerdes].
 - Fixed the Fantasy driver [Brian Levine].
 - Several fixes and enhancements to the Williams driver [Aaron Giles].
-- Several fixes to the Williams driver: 'Blaster' is finished, 'Sinistar' is playable but there are some blitter bugs, 'Bubbles' is better but still resets itself from time to time [Marc Lafontaine].
-- Fixed bug in 'Naughty Boy' coin insertion/start game handling [Nicola Salmoria].
-- Some fixes to the 'Star Wars' mathbox [Aaron Giles].
-- The hardware of the Taito games ('Elevator Action', 'Jungle King', 'Wild Western', 'Front Line') is emulated more faithfully. Playfield priority is accurate in 'Jungle King', however this broke 'Wild Western' - strange. Front Line works. Merged all the drivers into taito.c [Nicola Salmoria].
-- Tried to plug 'Triple Punch' into the Scramble driver, but it doesn't work [Nicola Salmoria].
-- Support for 'New Rally X'; colors are accurate in 'New Rally X' ONLY - still wrong in 'Rally X' until we find the color PROMs. Sound should finally be correct, both in 'Rally X' and 'New Rally X' [Nicola Salmoria].
-- Video drawing optimization to 'Mappy', plus test mode now works both in 'Mappy' and 'Dig Dug 2' [Aaron Giles].
-- In some games (e.g. "Pacman', 'Galaxian', 'Rally X') the NumLock and CapsLock leds emulate the 1 player/2 players start lamps [Sean Gugler].
-- Fixed dip switches in 'Missile Command' [Marco Cassili].
-- Early attempt at a 'Zookeeper' driver, based on the 'Qix' one, which unfortunately doesn't work yet [John Butler, Ed Mueller].
-- Moved the 'Hunchback' driver into dkong.c, since that's where it belongs (but it still doesn't work due to encryption) [Nicola Salmoria].
+- Several fixes to the Williams driver: Blaster is finished, Sinistar is playable but there are some blitter bugs, Bubbles is better but still resets itself from time to time [Marc Lafontaine].
+- Fixed bug in Naughty Boy coin insertion/start game handling [Nicola Salmoria].
+- Some fixes to the Star Wars mathbox [Aaron Giles].
+- The hardware of the Taito games (Elevator Action, Jungle King, Wild Western, Front Line) is emulated more faithfully. Playfield priority is accurate in Jungle King, however this broke Wild Western - strange. Front Line works. Merged all the drivers into taito.c [Nicola Salmoria].
+- Tried to plug Triple Punch into the Scramble driver, but it doesn't work [Nicola Salmoria].
+- Support for New Rally X; colors are accurate in New Rally X ONLY - still wrong in Rally X until we find the color PROMs. Sound should finally be correct, both in Rally X and New Rally X [Nicola Salmoria].
+- Video drawing optimization to Mappy, plus test mode now works both in Mappy and Dig Dug 2 [Aaron Giles].
+- In some games (e.g. Pacman, Galaxian, Rally X) the NumLock and CapsLock leds emulate the 1 player/2 players start lamps [Sean Gugler].
+- Fixed dip switches in Missile Command [Marco Cassili].
+- Early attempt at a Zookeeper driver, based on the Qix one, which unfortunately doesn't work yet [John Butler, Ed Mueller].
+- Moved the Hunchback driver into dkong.c, since that's where it belongs (but it still doesn't work due to encryption) [Nicola Salmoria].
 
 
 Changes to the main program:
@@ -126,7 +126,7 @@ Changes to the main program:
 - Added Gamma correction controls. Use Shift + Numeric pad +/- to change it. There are some games which are too dark on the default setting, instead of using the monitor settings use these controls to brighten the picture. Gamma correction also affects colors, like the girders in 'Donkey Kong' [Nicola Salmoria].
 - Added a "Pro Action Replay"-like cheat finder. It is only available when -cheat is specified on the command line [Marc Lafontaine].
 - Some optimizations to the 6809 emulator [Tatsuyuki Satoh].
-- Some optimizations to the 6809, and modified it to always fetch opcodes directly from RAM (much faster). The 'Ghosts 'n Goblins', 'Star Wars' and Williams drivers needed reworking to support that [Aaron Giles].
+- Some optimizations to the 6809, and modified it to always fetch opcodes directly from RAM (much faster). The Ghosts 'n Goblins, Star Wars and Williams drivers needed reworking to support that [Aaron Giles].
 - Moved configuration and high score files to the CFG and HI subdirectories. They are not stored in the games subdirectories. I have provided a batch file (MOV.BAT) to automatically move your old settings in the new directories. Just start it from inside the MAME directory. It will spit out some error messages for missing files, don't worry and let it finish its job. Having configuration files in a separate directory makes it easier to keep ROMs in .zip files. This is already done by some front-ends, but you can do it from the command line as well, just use this batch file. PKUNZIP must be in your path. The .zip files must be in the MAME directory and named after the game (i.e. pacman.zip):
 
   @echo off

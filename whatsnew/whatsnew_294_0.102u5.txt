@@ -2,7 +2,7 @@
 ---------------------------------------
 
 
-New games added or promoted from NOT_WORKING status
+New Games Added or Promoted from NOT_WORKING Status
 ---------------------------------------------------
 Mosaic (F2 System) [Pierpaolo Prazzoli]
 Noah's Ark [David Widel]
@@ -10,7 +10,7 @@ Squash (Ver. 1.0) [David Haywood, Mike Coates, Nicola Salmoria]
 Top Roller [Tomasz Slanina]
 Vs. Hot Smash [Nicola Salmoria]
 
-New clones added
+New Clones Added
 ----------------
 California Speed (Version 2.1a) [Reznor007]
 Crouching Tiger Hidden Dragon 2003 (The King of Fighters 2001 bootleg)
@@ -24,7 +24,7 @@ Tekken Tag Tournament (TEG3/VER.C1) [smf]
 Tenkomori Shooting (Japan) [Guru]
 The King of Fighters Special Edition 2004 (The King of Fighters 2002 bootleg)
 
-New games marked as GAME_NOT_WORKING
+New Games Marked as GAME_NOT_WORKING
 ------------------------------------
 Ghoul Panic (OB2/VER.A) [Guru]
 Knights of Valour 2
@@ -34,21 +34,21 @@ Real Battle Mahjong King [Tomasz Slanina, David Haywood]
 
 MAMETesters Bugs Fixed (15):
 ----------------------------
-ctribe088u4gra (Mamesick)
-dspirit099u2yel (BUT)
-gekirido096u3gre (Nicola Salmora)
-grchamp055yel (Hans Andersson)
-grchamp137b12gre (Hans Andersson)
-grchamp237b12gre (Hans Andersson)
-groundfx068gra (Mamesick)
-gunlock097u2yel (Nicola Salmoria)
-mjkjidai097u2gre (Mamesick)
-nbmj8991c095u2yel (Mamesick)
-ssi061gre (Nicola Salmoria)
-ssi137b2gre (Nicola Salmoria)
-suprnova0102u4red (Aaron Giles)
-tengai062gre (AWJ)
-vulcan137b1gre (part 2, and maybe parts 4 and 5) (Pierpaolo Prazzoli)
+- ctribe088u4gra (Mamesick)
+- dspirit099u2yel (BUT)
+- gekirido096u3gre (Nicola Salmora)
+- grchamp055yel (Hans Andersson)
+- grchamp137b12gre (Hans Andersson)
+- grchamp237b12gre (Hans Andersson)
+- groundfx068gra (Mamesick)
+- gunlock097u2yel (Nicola Salmoria)
+- mjkjidai097u2gre (Mamesick)
+- nbmj8991c095u2yel (Mamesick)
+- ssi061gre (Nicola Salmoria)
+- ssi137b2gre (Nicola Salmoria)
+- suprnova0102u4red (Aaron Giles)
+- tengai062gre (AWJ)
+- vulcan137b1gre (part 2, and maybe parts 4 and 5) (Pierpaolo Prazzoli)
 
 
 Source changes:
@@ -70,7 +70,7 @@ Source changes:
 - Implemented some more functionality of the ADSP-2181 needed for Road Burners [Aaron Giles].
 - Hooked up the same NES APU implementation in both MAME and MESS. Also correctd the memory mapping of the APU in the Playchoice 10 driver [R. Belmont].
 - Improvements to cuoreuno and elephfam [Roberto Fresca]:
-  * Corrected videoram and colorram (now can see the NVRAM initialization).
+  * Corrected videoram and colorram (now can see the NVRAM initialization);
   * Corrected the CPU frequency to 2 MHz.
   Still not working...
 - More Voodoo updates [Aaron Giles]:
@@ -78,18 +78,18 @@ Source changes:
   * Added missing color combine mode used by Gauntlet Dark Legacy.
 - Moved m6809, hd6309 and z80 disassemblers to the new interface, and did some cleanups [Nathan Woods].
 - Significant improvements to the Grand Champion driver [Hans Andersson]:
-  * Tunnel headlights.
-  * Corrected rain effect.
-  * Corrected colors.
-  * Added speech.
-  * Improved collision detection (removed false collision when lightning).
-  * Improved fog effect.
-  * Added skeleton code for motor noise.
-  * Fixed graphic glitch in bottom row.
-  * Corrected CPU speed for Cpu board / Game board.
+  * Tunnel headlights;
+  * Corrected rain effect;
+  * Corrected colors;
+  * Added speech;
+  * Improved collision detection (removed false collision when lightning);
+  * Improved fog effect;
+  * Added skeleton code for motor noise;
+  * Fixed graphic glitch in bottom row;
+  * Corrected CPU speed for CPU board / Game board.
 - SP0250 update [Nicola Salmoria]:
-  * Added SP0250 speech chip to 3 Stooges.
-  * Streamlined the SP0250 emulation to avoid timing issues which were preventing 3 stooges from working.
-  * Fixed glitches in the speech that were caused by not resetting the filter stages when a speech frame is loaded.
-  * Made the SP0250 support the external clock rate
+  * Added SP0250 speech chip to 3 Stooges;
+  * Streamlined the SP0250 emulation to avoid timing issues which were preventing 3 stooges from working;
+  * Fixed glitches in the speech that were caused by not resetting the filter stages when a speech frame is loaded;
+  * Made the SP0250 support the external clock rate;
   * Changed the playback rate to match the real board by making the clock divider a reasonable number.

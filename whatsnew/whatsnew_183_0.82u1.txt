@@ -2,22 +2,31 @@
 ----------------------------------------
 
 
-New Games supported or promoted from GAME_NOT_WORKING status
+New Games Supported or Promoted from GAME_NOT_WORKING Status
 ------------------------------------------------------------
-Bloody Roar 2 [smf] (one ROM is bad)
-FireHawk [Pierpaolo Prazzoli] (actually still marked as non-working due to standard 'afega' hardware protection issues in attract mode)
-Head On (Irem M15 Hardware) [David Haywood] (no sound)
-Shanghai - The Great Wall [Mariusz Wojcieszek] (some glitches on the title screen)
+Bloody Roar 2 [smf] (1)
+FireHawk [Pierpaolo Prazzoli] (2)
+Head On (Irem M15 Hardware) [David Haywood] (3)
+Shanghai - The Great Wall [Mariusz Wojcieszek] (4)
 	
-New Clones supported or promoted from GAME_NOT_WORKING status
+New Clones Supported or Promoted from GAME_NOT_WORKING Status
 -------------------------------------------------------------
 Target Ball (no nudity set) [David Haywood]
 
-New Non-Working games / clones supported
+New Non-Working Games / Clones Supported
 ----------------------------------------
-Open Golf Championship (ver EAE) [R. Belmont] (not working)
+Open Golf Championship (ver EAE) [R. Belmont] (5)
 Pachinko Gindama Shoubu DX [Brian Troha]
-Pachinko Gindama Shoubu [Brian Troha] (hardware is similar to realbreak but they don't work yet)
+Pachinko Gindama Shoubu [Brian Troha] (6)
+
+Notes:
+------
+(1): One ROM is bad.
+(2): Actually still marked as non-working due to standard 'afega' hardware protection issues in attract mode.
+(3): No sound.
+(4): Some glitches on the title screen.
+(5): Not working.
+(6): Hardware is similar to realbreak but they don't work yet.
 
 
 Source changes:
@@ -25,12 +34,12 @@ Source changes:
 - Made R3000 version of Area 51 parent set [smf].
 - memory.c patch. Introduces memory_install_[read|write][8|16|32|64]_handler_mirror() calls, which install memory handlers that can mirror similar to the AM_MIRROR macro [Nathan Woods].
 - STV VDP-1 update [Mariusz Wojcieszek]:
-  * Converted VDP1 drawing (sprites) to use framebuffer.
-  * Added sprite priorities (corrects shanhigw ingame and colmns97 title screen).
-  * Added color offset for sprites.
-  * Improved sprites alpha blending (improves ejihon and shienryu intro).
-  * Added framebuffer interlace (fixes elandore character selection screen).
-  * Added color offset for bitmaps.
+  * Converted VDP1 drawing (sprites) to use framebuffer;
+  * Added sprite priorities (corrects shanhigw ingame and colmns97 title screen);
+  * Added color offset for sprites;
+  * Improved sprites alpha blending (improves ejihon and shienryu intro);
+  * Added framebuffer interlace (fixes elandore character selection screen);
+  * Added color offset for bitmaps;
   * Added vertical scrolling for bitmaps (corrects shanhigw ingame).
 - The main result (visible to user) of these changes is that shanhigw is now playable without problems (apart from gfx glitches on title screen).
 - STV VDP-2 update: Fixed a window mode bug [Angelo Salese].

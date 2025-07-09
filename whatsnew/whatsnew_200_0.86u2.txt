@@ -3,16 +3,20 @@
 Quick update but since there have been some large submissions I feel it is worthwhile.
 
 
-New Clones Added or Promoted from GAME_NOT_WORKING status
+New Clones Added or Promoted from GAME_NOT_WORKING Status
 ---------------------------------------------------------
 Street Fighter EX 2 Plus (USA) [Brian Troha]
 D&D Tower of Doom (alt Japan set) [Razoola]
 
-New Non-Working games / clones supported
+New Non-Working Games / Clones Supported
 ----------------------------------------
-Roads Edge / Round Trip
-Samurai Shodown: Warrior's Rage
-Fatal Fury: Wild Ambition (Hyper Neogeo 64 based, these need more complete MMU emulation in the MIPS core amongst other things, driver is still only preliminary)
+Roads Edge / Round Trip [David Haywood]
+Samurai Shodown: Warrior's Rage [David Haywood]
+Fatal Fury: Wild Ambition (1) [David Haywood]
+
+Note:
+-----
+(1): Hyper Neogeo 64 based, these need more complete MMU emulation in the MIPS core amongst other things, driver is still only preliminary.
 
 
 Source changes:
@@ -20,7 +24,7 @@ Source changes:
 - Misc Updates [R. Belmont]:
   * m37710.diff: Added analog and digital I/O port support. (anyone know how to control PC case fans from software? Prop Cycle's "fan" output is bit 1 of 37710 port 5... ;-). Added LDB absolute and DIV direct opcodes. Rewrote the RLA instruction. Pretty much everything was wrong with it including the result, flags, and cycle count. Fixed disassembly for RLA.
   * flash.diff: Added word-wide flash ROM support (specifically IDs itself as the Sharp LH28F400 found on Konami "Beat the Champ" PCBs).
-- Boomer Rangr + Touchdown Fever Dipswitches [Brian Troha].
+- Boomer Rangr + Touchdown Fever DIP switches [Brian Troha].
 - Fixed Dragon Bowl sprite colours with new set [Pierpaolo Prazzoli].
 - Improved Field Goal colours [Stefan Jokisch].
 - Turned off auto-center in some games [Stefan Jokisch].
@@ -36,7 +40,7 @@ Source changes:
   * vidhrdw/nbmj8688.c: Fixes to add mmsikaku, livegal.
   * drivers/nbmj8891.c: Added lovehous, mmaiko, mgion, omotesnd and taiwanmb (testdriver).
   * vidhrdw/nbmj8891.c: Changed drawing routine, added font process routine for hanamomo.
-  * drivers/nbmj9195.c: Added sailorwa(sailorws clone), jituroku, wcatcher, yosimoto, janbari(mjanbari is now clone of janbari).
+  * drivers/nbmj9195.c: Added sailorwa (sailorws clone), jituroku, wcatcher, yosimoto, janbari (mjanbari is now clone of janbari).
   * vidhrdw/nbmj9195.c: Changed drawing routine (fixed screen misalign in attract mode of "Otachidai no Okite").
   * drivers/niyanpai.c: Added musobana, 4psimasy and mhhonban.
   * vidhrdw/niyanpai.c: Changed drawing routine, added highcolor process routine for musobana.

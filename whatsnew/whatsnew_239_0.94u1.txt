@@ -3,16 +3,22 @@
 Mostly bugfixes related to problems caused by the 0.93 sound update.
 
 
-New Games / Clones supported or promoted from GAME_NOT_WORKING status
+New Games/Clones Supported or Promoted from GAME_NOT_WORKING Status
 ---------------------------------------------------------------------
-Excelsior [Pierpaolo Prazzoli] (no sound (PIC not dumped))
+Excelsior [Pierpaolo Prazzoli] (1)
 Star Fire 2 [David Rolfe]
 Tecmo World Cup Millenium [smf]
 
-New games marked as GAME_NOT_WORKING
+New Games Marked as GAME_NOT_WORKING
 ------------------------------------
-Calorie Kun [David Haywood] (preliminary driver, basic tilemap + sprites hooked up)
-Pipeline [David Haywood] (rom loading, not much else)
+Calorie Kun [David Haywood] (2)
+Pipeline [David Haywood] (3)
+
+Notes:
+------
+(1): No sound (PIC not dumped).
+(2): Preliminary driver, basic tilemap + sprites hooked up.
+(3): ROM loading, not much else,
 
 
 Source changes:
@@ -22,12 +28,12 @@ Source changes:
 - Fixed 'deadang' crashing [Aaron Giles].
 - Fixed games using the 5110 which refused to start (bagman, cvs driver etc.) [Aaron Giles].
 - Other sound fixes [Aaron Giles]:
-  * Fixed initialization order problem in niyanpai.
-  * Removed unused filters in othunder.
-  * Fixed initialization order problem in rungun.
-  * Prevented setting negative timers to fix stkclmns crash.
-  * Fixed triplfun by making sure the X1-010 chip is present before trying to reset it.
-   * Sound in outrun.
+  * Fixed initialization order problem in niyanpai;
+  * Removed unused filters in othunder;
+  * Fixed initialization order problem in rungun;
+  * Prevented setting negative timers to fix stkclmns crash;
+  * Fixed triplfun by making sure the X1-010 chip is present before trying to reset it;
+  * Sound in outrun.
 - Fixed cheat.c typo + other [Atari Ace].
 - Attempted to fix batrider crash [Aaron Giles].
 - Intel Flash improvements [smf].

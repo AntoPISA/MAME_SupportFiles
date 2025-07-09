@@ -2,7 +2,7 @@
 --------------------------------------
 
 
-New games added or promoted from NOT_WORKING status
+New Games Added or Promoted from NOT_WORKING Status
 ---------------------------------------------------
 Cool Pool [Aaron Giles]
 9 Ball Shootout [Aaron Giles]
@@ -10,7 +10,7 @@ Hot Mind [Pierpaolo Prazzoli]
 Hyper Crash [Pierpaolo Prazzoli]
 Multi Champ Deluxe [David Haywood]
 
-New clones added
+New Clones Added
 ----------------
 Yellow Cab (bootleg) [Pierpaolo Prazzoli]
 Atomic Punk (US) [Pierpaolo Prazzoli]
@@ -19,7 +19,7 @@ Rock 'n Rage (Prototype?) [Brian Troha]
 Cosmic Monsters 2 [David Widel]
 Varia Metal (New Ways Trading Co.) [David Haywood]
 
-New games marked as GAME_NOT_WORKING
+New Games Marked as GAME_NOT_WORKING
 ------------------------------------
 Revenger [Pierpaolo Prazzoli]
 Mobile Suit Gundam Final Shooting [David Haywood]
@@ -27,16 +27,16 @@ Mobile Suit Gundam Final Shooting [David Haywood]
 
 MAMETesters Bugs Fixed (10):
 ----------------------------
-starforc095u5gre
-fghtbskt095u2red
-ncv1095gre
-paperboy095gre
-garyoret095u2yel
-alpine37b4gre
-bioatack080u1yel (this was already fixed)
-hwrace37b10gre
-piratpet060yel
-waterski37b5yel
+- starforc095u5gre
+- fghtbskt095u2red
+- ncv1095gre
+- paperboy095gre
+- garyoret095u2yel
+- alpine37b4gre
+- bioatack080u1yel (this was already fixed)
+- hwrace37b10gre (Nicola Salmoria)
+- piratpet060yel (Nicola Salmoria)
+- waterski37b5yel
 
 
 Source changes:
@@ -47,20 +47,20 @@ Source changes:
 - Fixed end-of-sprite list and flip screen in Hollywood Action [Pierpaolo Prazzoli].
 - Fixed colors in New Sinbad 7 [Pierpaolo Prazzoli].
 - Several Taito SJ sprite fixes [Nicola Salmoria]:
-  * Fixed sprite priorites. This fixes several priority issues in 'Tin Star', 'Elevator Action', "High Way Race', and the car wrapping around in 'Elevator Action' at the end of a level.
-  * Added sprite clipping at the sides of the screen. This was verified to happen on the real board, and it affects bullets wrapping around in 'Elevator Action'. I'm only 99% sure that the clipping is correct this way :)
-  * Fixed sprite hardware collision detection. This fixes the last round in 'Pirate Pete', bonuses in 'Alpine Ski', end of level 1 in 'Water Ski'.
+  * Fixed sprite priorites. This fixes several priority issues in Tin Star, Elevator Action, High Way Race, and the car wrapping around in Elevator Action at the end of a level;
+  * Added sprite clipping at the sides of the screen. This was verified to happen on the real board, and it affects bullets wrapping around in Elevator Action. I'm only 99% sure that the clipping is correct this way :)
+  * Fixed sprite hardware collision detection. This fixes the last round in Pirate Pete, bonuses in Alpine Ski, end of level 1 in Water Ski.
 - Fixed DIP switches in Rohga [Yasuhiro Ogawa].
-- Several 'Volfied' fixes [Bryan McPhail]:
-  * Fixed visible area.
-  * Fixed ROM names.
+- Several Volfied fixes [Bryan McPhail]:
+  * Fixed visible area;
+  * Fixed ROM names;
   * Improved c-chip simulation - accurate timing and correct colour data for all levels.
 - Added the ability to clear an input configure via the delete key [Curt Coder].
 - Added cocktail flip support to the Qix driver [Nicola Salmoria].
 - Fixed graphics in Hyper Crash [Pierpaolo Prazzoli, David Haywood].
 - Rewrote 8255 PPI mode 2 support, and hooked 8255 to buckrog properly [Nathan Woods].
 - Fixed a number of bugs and added support for more SCSI commands and modes [R. Belmont, Ville Linde].
-- Hooked up MSM5205 to 'Goal! '92' and to 'Euro League (bootleg)', but it doesn't sound too good yet [Pierpaolo Prazzoli].
+- Hooked up MSM5205 to Goal! '92 and to Euro League (bootleg), but it doesn't sound too good yet [Pierpaolo Prazzoli].
 - Cleaned up the decryption in the Epos games [Nicola Salmoria].
 - Changed xday2 to use default namcona1 joystick inputs. With those, if you wait the initial test to finish, you can play it [Sonikos].
 - Fixed L button in mj4simai which was missing [Pierpaolo Prazzoli].

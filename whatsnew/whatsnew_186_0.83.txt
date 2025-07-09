@@ -4,36 +4,42 @@
 
 New Games Supported or Promoted from GAME_NOT_WORKING Status
 ------------------------------------------------------------
-Cannonball (Atari, prototype) [Stefan Jokisch] (one ROM is missing from the only known PCB causing some GFX problems)
-Greyhound Trivia (various sets) [Pierpaolo Prazzoli, Chris Hardy]
-Miss Puzzle [David Haywood] (bad ROM causes some gfx glitches)
-VS. Gumshoe [Pierpaolo Prazzoli] (banking fixed, game now works properly)
+Cannonball (Atari, prototype) [Stefan Jokisch] (1)
+Miss Puzzle [David Haywood] (2)
+VS. Gumshoe [Pierpaolo Prazzoli] (3)
 
 New Non-Working Games/Clones Supported
 --------------------------------------
-GP500 [R. Belmont] (reliminary driver 'Hopeless Hardware' doesn't do anything yet)
+GP500 [R. Belmont] (4)
+
+Notes:
+------
+(1): One ROM is missing from the only known PCB causing some GFX problems.
+(2): Bad ROM causes some gfx glitches.
+(3): Banking fixed, game now works properly.
+(4): Preliminary driver 'Hopeless Hardware' doesn't do anything yet.
 
 
 Source changes:
 ---------------
 - Misc changes [Nathan Woods]:
-  * Switched input_port_allocate() to use auto_malloc(), removing the need for input_port_free().
+  * Switched input_port_allocate() to use auto_malloc(), removing the need for input_port_free();
   * Added an optional definition for the S_ISDIR macro for when it is not present.
 - STV Update [Mariusz Wojcieszek]:
-  * Added VDP2 layer disabling based on VRAM cycle pattern registers - fixes gfx glitches in shanhigw title screen.
-  * Added VDP1 half transparency - improves sprites alpha blending in shanhigw in-game.
+  * Added VDP2 layer disabling based on VRAM cycle pattern registers - fixes gfx glitches in shanhigw title screen;
+  * Added VDP1 half transparency - improves sprites alpha blending in shanhigw in-game;
   * Added VDP1 Gouraud shading (for normal sprites only) - adds highlighting	for selected tiles in shanhigw.
 - Changed some names + years in segac2.c and playch10.c [Curt Coder].
 - Spiders NVRam [Justin Szczap].
 - tecmosys.c update: Emulates some parts of vidhrdw but games still don't work due to protection? [Tomasz Slanina].
 - Fixed cheat engine bug preventing assignment of controller buttons as activation keys [Ian Patterson].
 - Sega System 16/18 update [Charles MacDonald]:
-  * Added MSM5205 sample playback to tturfbl.
+  * Added MSM5205 sample playback to tturfbl;
   * Added MSM5205 sample playback to shdancbl.
 - PSX updates [smf]:
-  * Heavens gate graphics issues & correct loading / banking.
-  * Correct loading for super football champ ( now it's stuck in test mode ) and added later world version.
-  * taito fx1 watchdog (address is unconfirmed, but hopefully soon).
-  * Pasted in taito fx1a readme.
-  * PAL support for MESS.
+  * Heavens gate graphics issues & correct loading/banking;
+  * Correct loading for super football champ ( now it's stuck in test mode ) and added later world version;
+  * Taito fx1 watchdog (address is unconfirmed, but hopefully soon);
+  * Pasted in Taito fx1a readme;
+  * PAL support for MESS;
   * Horizontal start/end.

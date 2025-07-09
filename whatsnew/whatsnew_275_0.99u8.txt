@@ -2,7 +2,7 @@
 --------------------------------------
 
 
-New games added or promoted from NOT_WORKING status
+New Games Added or Promoted from NOT_WORKING Status
 ---------------------------------------------------
 Air Rescue [anonymous]
 Cuore Uno (Italia) [Roberto Fresca]
@@ -12,12 +12,12 @@ Pebble Beach - The Great Shot [Mariusz Wojcieszek]
 Royal Card (Austria) [Roberto Fresca]
 World Trophy Soccer (Arcadia) [Mariusz Wojcieszek]
 
-New clones added
+New Clones Added
 ----------------
 1000 Miglia: Great 1000 Miles Rally (94/06/13) [Corrado Tomaselli]
 Frogger (Falcon bootleg) [Pierpaolo Prazzoli]
 
-New games marked as GAME_NOT_WORKING
+New Games Marked as GAME_NOT_WORKING
 ------------------------------------
 Cookie and Bibi 3 [David Haywood]
 Soccer Superstar ver EAA [Corrado Tomaselli]
@@ -25,8 +25,8 @@ Soccer Superstar ver EAA [Corrado Tomaselli]
 
 MAMETesters Bugs Fixed (2):
 ---------------------------
-demonwld37b5gre [Pierpaolo Prazzoli]
-batrider099u1gra [Mamesick]
+- demonwld37b5gre [Pierpaolo Prazzoli]
+- batrider099u1gra [Mamesick]
 
 
 Source changes:
@@ -44,8 +44,8 @@ Source changes:
   * vdp2: Added preliminary window effect for tilemaps and sprite layer (for batmanfr).
   * vdp2: Added scaling for 8bpp and 15bpp bitmaps (fixes vmahjong and myfairld backgrounds).
 - Fixed sprite-sprite priorities in toaplan1 games [Pierpaolo Prazzoli].
-- Fixed background color in 'Jolly Jogger' [Pierpaolo Prazzoli].
+- Fixed background color in Jolly Jogger [Pierpaolo Prazzoli].
 - Made input port conditionals work more generically. This necessitated a bit of a minor reorg in the input port code. Please verify that controls work as before. This change has also required a modification to how analog ports are recorded, so existing INPs may not work [Aaron Giles].
-- Minor tweak to fix 'Time Crisis' crash [Phil Stroffolino].
-- Fixed spurious vectors in 'Top Gunner' [Mathis Rosenhauer].
+- Minor tweak to fix Time Crisis crash [Phil Stroffolino].
+- Fixed spurious vectors in Top Gunner [Mathis Rosenhauer].
 - Added new functions memory_configure_bank() and memory_set_bank() which abstract bankswitching better. This allows current memory banking states to automatically be saved for drivers that use this feature. m62.c games have been updated to use this new feature as an example [Aaron Giles].

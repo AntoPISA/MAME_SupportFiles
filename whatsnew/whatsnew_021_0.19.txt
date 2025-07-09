@@ -15,17 +15,17 @@ New games supported
 
 Program changes:
 ----------------
-- Added partial sound support to 'Rally X' (no explosions yet) [Ron Fries, Mirko Buffoni].
-- Added preliminar unplayable 'Warp Warp'. Graphic is ok, but the game hangs during diagnostic [Mirko Buffoni].
-- Changed noise_lenght and noise_rate values in 'Moon Cresta' audio driver, so now noise is much more noisier! [Mirko Buffoni].
-- Fixed the 'Q*Bert' driver and added support for 'Reactor' [Fabrice Frences].
-- Provided a preliminar but playable driver for 'Arabian'. Colors are wrong, but it support sound already [Jarek Burczynski].
-- Fixed the 'Space Panic' background colors. Also added hiscore support [Mike Coates].
-- Found how 'Elevator Action' background works. Also updated all drivers that have a scrolling background. Support for the bootleg version of 'Elevator Action' (elevatob). The original version doesn't work because of copy protection. The graphics are almost OK now, albeit quite slow [Nicola Salmoria].
+- Added partial sound support to Rally X (no explosions yet) [Ron Fries, Mirko Buffoni].
+- Added preliminar unplayable Warp Warp. Graphic is ok, but the game hangs during diagnostic [Mirko Buffoni].
+- Changed noise_lenght and noise_rate values in Moon Cresta audio driver, so now noise is much more noisier! [Mirko Buffoni].
+- Fixed the Q*Bert driver and added support for Reactor [Fabrice Frences].
+- Provided a preliminar but playable driver for Arabian. Colors are wrong, but it support sound already [Jarek Burczynski].
+- Fixed the Space Panic background colors. Also added hiscore support [Mike Coates].
+- Found how Elevator Action background works. Also updated all drivers that have a scrolling background. Support for the bootleg version of Elevator Action (elevatob). The original version doesn't work because of copy protection. The graphics are almost OK now, albeit quite slow [Nicola Salmoria].
 - Author of the 1942 emulator provided exhaustive information on (guess what) 1942, which is now supported [Paul Leaman].
-- Provided me original 'Phoenix' sound samples, so I adjusted sound driver to achieve correct sound modulation and frequency, and substituted noise generator for shots and explosions with a couple of samples. Noise generator can be still used (just don't put the samples in the directory) with Phoenix and it's used in Pleiads. I changed white noise waveshape and adjusted frequency, so now it sounds better [Shaun Stephenson].
-- Some changes to music tempo of 'Frogger' [Mirko Buffoni].
-- Provided bootleg version we have now support for 'Popeye'. It's not yet playable (when the game starts the machine resets) but it has music already. It's also very slow, since it uses a 512x480 screen. I'm looking for decryption scheme for original Popeye board using Lionel's idea [pain!] [Marc LaFontaine].
+- Provided me original Phoenix sound samples, so I adjusted sound driver to achieve correct sound modulation and frequency, and substituted noise generator for shots and explosions with a couple of samples. Noise generator can be still used (just don't put the samples in the directory) with Phoenix and it's used in Pleiads. I changed white noise waveshape and adjusted frequency, so now it sounds better [Shaun Stephenson].
+- Some changes to music tempo of Frogger [Mirko Buffoni].
+- Provided bootleg version we have now support for Popeye. It's not yet playable (when the game starts the machine resets) but it has music already. It's also very slow, since it uses a 512x480 screen. I'm looking for decryption scheme for original Popeye board using Lionel's idea [pain!] [Marc LaFontaine].
 
 Source changes:
 ---------------

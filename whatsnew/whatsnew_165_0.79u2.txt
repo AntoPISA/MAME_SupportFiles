@@ -2,38 +2,44 @@
 ----------------------------------------
 
 
-New Games supported or promoted from GAME_NOT_WORKING status
+New Games Supported or Promoted from GAME_NOT_WORKING Status
 ------------------------------------------------------------
 Bongo [Pierpaolo Prazzoli]
 Botanic [David Haywood]
-Kusayakyuu [Tomasz Slanina] (incomplete driver, various sound / gfx issues)
+Kusayakyuu [Tomasz Slanina] (1)
 Mad Alien [Norbert Kehrer]
 Pro Yakyuu Nyuudan Test Tryout [Pierpaolo Prazzoli, Bryan McPhail]
 
-New Clones supported or promoted from GAME_NOT_WORKING status
+New Clones Supported or Promoted from GAME_NOT_WORKING Status
 -------------------------------------------------------------
 Area 51 (newer 68020 Version) [Brian Troha]
 Hunchback (galaxian hardware) [Pierpaolo Prazzoli]
 Strikers 1945 (alt) [Brian Troha]
 Zoom909 [Tomasz Slanina]
 
-New Non-Working games / clones supported
+New Non-Working Games / Clones Supported
 ----------------------------------------
-Gaelco 3D games (Radikal Bikers, Surf Planet) [Aaron Giles] (Incomplete emulation of 3D Hardware)
-Microprose 3D (botss, stankatk etc.) [David Haywood] (skeleton driver, just loads the roms)
+Gaelco 3D games (Radikal Bikers, Surf Planet) [Aaron Giles] (2)
+Microprose 3D (botss, stankatk etc.) [David Haywood] (3)
+
+Notes:
+------
+(1): Incomplete driver, various sound / GFX issues.
+(2): Incomplete emulation of 3D Hardware
+(3): Skeleton driver, just loads the ROMs.
 
 
 Source changes:
 ---------------
 - Timer System update [Aaron Giles]:
-  * The timer system is now integer-based instead of floating-point based. It requires 64-bit ints. I've defined a new type 'mame_time' which is a 96-bit time value. There are 32 bits for counting full seconds, and 64 bits for counting subseconds. This type is used extensively in the core timer system and the CPU scheduler. The accuracy of the new system is down to 1 attosecond (10^-18 seconds). This may seem excessive, but for a 100MHz CPU, each clock cycle is 10^10 attoseconds. That works nicely because 100MHz divides evenly. For a 96MHz CPU, each clock cycle is 1.041666667 * 10^10 attoseconds. Rounding, we lose 1/3 of an attosecond per cycle in error. Multiply that error by 96000000 and you end up with an error of 32000000 attoseconds. Fortunately, that's only 0.032ns, but if I had much less accuracy than this, the errors would start to add up in a more significant way.
+  * The timer system is now integer-based instead of floating-point based. It requires 64-bit ints. I've defined a new type 'mame_time' which is a 96-bit time value. There are 32 bits for counting full seconds, and 64 bits for counting subseconds. This type is used extensively in the core timer system and the CPU scheduler. The accuracy of the new system is down to 1 attosecond (10^-18 seconds). This may seem excessive, but for a 100MHz CPU, each clock cycle is 10^10 attoseconds. That works nicely because 100MHz divides evenly. For a 96MHz CPU, each clock cycle is 1.041666667 * 10^10 attoseconds. Rounding, we lose 1/3 of an attosecond per cycle in error. Multiply that error by 96000000 and you end up with an error of 32000000 attoseconds. Fortunately, that's only 0.032ns, but if I had much less accuracy than this, the errors would start to add up in a more significant way;
   * All the existing APIs are still around, and doubles can still be passed as arguments. But they are all immediately connverted to 'mame_time' values for processing. The old system had some drifting errors due to FP rounding which are gone now.
 - Fixed Unix compile (renamed rand_r in namconb1 driver) [R .Belmont].
 - Misc fixes [Nathan Woods]:
-  * src/cpuintrf.c: Fixups for the CP1610 core. Fixed the declaration of activecpu_set_irq_callback().
-  * src/mame.c: Added a new consistency check for drivers that use non-existent CPU cores.
-  * src/machine/snes.c: Refactored to remove MESS specific code.
-  * src/machine/idectrl.c: Added ide_bus_0_r() call to access the bus directly.
+  * src/cpuintrf.c: Fixups for the CP1610 core. Fixed the declaration of activecpu_set_irq_callback();
+  * src/mame.c: Added a new consistency check for drivers that use non-existent CPU cores;
+  * src/machine/snes.c: Refactored to remove MESS specific code;
+  * src/machine/idectrl.c: Added ide_bus_0_r() call to access the bus directly;
   * src/cpu/z80/z80.c: This patch changes the Z80 CPU core to set the Z80 cycle tables to their defaults on startup. This removes any need for drivers to reset 	      the Z80 cycle tables back to their defaults on exit.
 - Cleaned up some itech32 notes [Brian Troha].
 - Fixed some firebatl dips [B.S. Ruggeri].
@@ -44,17 +50,17 @@ Source changes:
 - Various Updates [Curt Coder].
 - Updated NeoGeo sets to use correct roms [HPMAN].
 - Psikyo.c video fixes [Leon van Rooij]:
-  * Glitch in gunbird attract mode (tilemaps can be opaque).
-  * Glitch in s1945, when the planes are shown (sprite-tilemap priorities).
+  * Glitch in gunbird attract mode (tilemaps can be opaque);
+  * Glitch in s1945, when the planes are shown (sprite-tilemap priorities);
   * Glitch in s1945, lvl 7 (there is an additional per-tile rowscroll mode). This solves mametesters s1945066gre.
 - Fixed m68kdasm bug [Leon van Rooij].
 - Decode information for custom cpu used by robowrest2001 [Dave Widel].
 - Fixed Irem GA-20 pitch [R. Belmont].
 - Added support for DMA based DAC 'sound chip' and updated DCS / CAGE to use it. [Aaron Giles].
 - Enigma 2 fixes [Tomasz Slanina]:
-  * Sound.
-  * bg starfield in enigma2.
-  * Cocktail mode.
-  * Fixed some bugs (protection?).
+  * Sound;
+  * bg starfield in enigma2;
+  * Cocktail mode;
+  * Fixed some bugs (protection?);
   * Colors.
 - Sample support in 'Tailgunner' [Erik Ruud].

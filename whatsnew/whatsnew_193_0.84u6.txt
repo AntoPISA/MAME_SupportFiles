@@ -2,7 +2,7 @@
 ----------------------------------------
 
 
-New Clones supported or promoted from GAME_NOT_WORKING status
+New Clones Supported or Promoted from GAME_NOT_WORKING Status
 -------------------------------------------------------------
 Capcom Bowling (set 4) [Aaron Giles]
 Columns II: The Voyage Through Time [Brian Troha]
@@ -16,21 +16,21 @@ PuckMan (Japan set 1 with speedup hack) [Aaron Giles]
 Source changes:
 ---------------
 - Added a command line parameter to control which joystick axes are considered digital. If you are using a digital gamepad with MAME,  you will want to use this option. There are a number of ways to  do this:
-  * -digital all means that all axes of all connected joysticks will be treated as digital.
-  * -digital none means that all axes of all connected joysticks will be treated as analog (this is the previous behavior).
-  * -digital j2 will treat all axes of joystick #2 as digital; axes on all other joysticks will be treated as analog.
-  * -digital j1a0a1 will treat axis 0 and 1 on joystick #1 as digital; all other axes will be treated as analog.
+  * -digital all means that all axes of all connected joysticks will be treated as digital;
+  * -digital none means that all axes of all connected joysticks will be treated as analog (this is the previous behavior);
+  * -digital j2 will treat all axes of joystick #2 as digital; axes on all other joysticks will be treated as analog;
+  * -digital j1a0a1 will treat axis 0 and 1 on joystick #1 as digital; all other axes will be treated as analog;
   * -digital j1a0a1,j2a5 will treat axis 0 and 1 on joystick #1 as digital, as well as axis 5 on joystick #2; all other axes will be treated as analog.
   Make use of the new -verbose information to determine which joysticks and axes you should be configuring this way.
 - Added core-level support for the previously only Windows-supported controller files. These files now have the extension .cfg instead of .ini and are in the same format as the new XML-based .cfg files. See the ctrlr directory for some examples [Aaron Giles].
 - Added groupings to the master controls list so that the list size is not so unwieldy [Aaron Giles].
 - Added several more default strings and some MESS-specific fixes [Nathan Woods].
 - Added several new command line options to assist in the automatic enabling of analog controls:
-  * -paddle (keyboard|mouse|joystick|lightgun).
-  * -adstick (keyboard|mouse|joystick|lightgun).
-  * -lightgun (keyboard|mouse|joystick|lightgun).
-  * -pedal (keyboard|mouse|joystick|lightgun).
-  * -dial (keyboard|mouse|joystick|lightgun).
+  * -paddle (keyboard|mouse|joystick|lightgun);
+  * -adstick (keyboard|mouse|joystick|lightgun);
+  * -lightgun (keyboard|mouse|joystick|lightgun);
+  * -pedal (keyboard|mouse|joystick|lightgun);
+  * -dial (keyboard|mouse|joystick|lightgun);
   * -trackball (keyboard|mouse|joystick|lightgun).
   For example -dial mouse will automatically enable mouse controls (just like -mouse) if a dial control is present for the selected game [Aaron Giles].
 - Added support for conditional dipswitch settings. This allows for multiple equivalent entries but with different text depending on the state of another dipswitch. See mappy.c for an example of how this works to handle the changing bonuses based on the number of lives [Aaron Giles].

@@ -2,7 +2,7 @@
 --------------------------------------
 
 
-New Games supported or promoted from GAME_NOT_WORKING status
+New Games Supported or Promoted from GAME_NOT_WORKING Status
 ------------------------------------------------------------
 Seattle Hardware [Aaron Giles]
 Mace - The Dark Age [Aaron Giles]
@@ -11,24 +11,30 @@ CarnEvil [Aaron Giles]
 Wayne Gretzky's 3D Hockey [Aaron Giles]
 Dangerous Dungeons [Bryan McPhail]
 Goal '92 (bootleg of Seibu Cup Soccer) [Pierpaolo Prazzoli]
-T-Mek (prototype) [Aaron Giles] (bad sound)
+T-Mek (prototype) [Aaron Giles] (1)
 Guardians of the Hood [Aaron Giles]
 
-New Clones supported or promoted from GAME_NOT_WORKING status
+New Clones Supported or Promoted from GAME_NOT_WORKING Status
 -------------------------------------------------------------
 Double Dragon (World) [Bryan McPhail]
 The Simpsons (2 player, alt) [R. Belmont]
 Martial Champion [EAA] [R. Belmont]
 
-New Non-Working games / clones supported
+New Non-Working Games / Clones Supported
 ----------------------------------------
-Namco System 12 [smf] (sets include tekken3, soulclbr, ehrgeiz, mdhorse, fgtlayer, pacapp, sws99, tekkentt, mrdrillr, aquarush, golgo13)
+xxx mancanti in elenco da aggiungere (tutti [smf])
 Godzilla [Pierpaolo Prazzoli]
 Bonk's Adventure [Pierpaolo Prazzoli]
-Seibu Cup Soccer [Pierpaolo Prazzoli] (protection issues)
+Seibu Cup Soccer [Pierpaolo Prazzoli] (2)
 SF Rush [Aaron Giles]
 California Speed [Aaron Giles]
-Sports Fishing 2 (stv) [ANY] (incomplete dump / no way to support CD and MPEG decoder)
+Sports Fishing 2 (stv) [ANY] (3)
+
+Notes:
+------
+(1): Bad sound.
+(2): Protection issues.
+(3): Incomplete dump/no way to support CD and MPEG decoder.
 
 
 Source changes:
@@ -38,18 +44,18 @@ Source changes:
 - Improved 'Bishi Bashi' colours [Angelo Salese].
 - Fixed 'Crazy Kong (Scramble hardware)' sprites [Pierpaolo Prazzoli].
 - Updated 'Double Dragon' driver [Bryan McPhail]:
-  * Correct video & interrupt timing derived from Xain schematics and confirmed on real DD board.
-  * Corrected interrupt handling, epecially to MCU (but one semi-hack remains).
-  * TStrike now boots but sprites don't appear (I had them working at one point, can't remember what broke them again).
-  * Dangerous Dungeons fixed.
-  * World version of Double Dragon added (actually same roms as the bootleg, but confirmed from real board).
+  * Correct video & interrupt timing derived from Xain schematics and confirmed on real DD board;
+  * Corrected interrupt handling, epecially to MCU (but one semi-hack remains);
+  * TStrike now boots but sprites don't appear (I had them working at one point, can't remember what broke them again);
+  * Dangerous Dungeons fixed;
+  * World version of Double Dragon added (actually same roms as the bootleg, but confirmed from real board);
   * Removed stereo audio flag (still on Toffy - does it have it?)
 - Various ST-V improvements [Angelo Salese]:
-  * Twin16/TMNT fixes [Curt Coder].
-  * Fixed cuebrick NVRAM handler.
-  * Added watchdog reset.
-  * Fixed mia/mia2 inputs/dips.
-  * Fixed visible area in cuebrckj/mia/mia2.
+  * Twin16/TMNT fixes [Curt Coder];
+  * Fixed cuebrick NVRAM handler;
+  * Added watchdog reset;
+  * Fixed mia/mia2 inputs/dips;
+  * Fixed visible area in cuebrckj/mia/mia2;
   * Changed cuebrckj to "Cue Brick (World version D)", since text is in English).
 - TMS32031 fixes [Aaron Giles]:
   * Many fixes to the TMS32031 core; 'Offroad Challenge' is almost playable as a result, minus the fact that the clipping plane seems to like clipping out the cars during the race. But the terrain problems are fixed at least.
@@ -59,19 +65,19 @@ Source changes:
 - OSD fix [Aaron Giles]:
   * This is a minor fix to enable the OSD for non-debug builds regardless of the -debug flag.
 - Misc fixes [Nathan Woods]:
-  * Adds a handful of comments to uifontdata[].
-  * Changes character 14 to a solid circle; previously this character was blank and unused.
+  * Adds a handful of comments to uifontdata[];
+  * Changes character 14 to a solid circle; previously this character was blank and unused;
   * Miscellaneous changes within #ifdef MESS.
 - Various Atari Improvements [David Haywood]:
-  - CAGE works.
-  * Motion object checksums work for growth games.
-  * Sprite/playfield priorities work for growth games.
-  * No more 6502 speedups.
-  * drivers/atarig1.c: Added support for the MO command register -- MO checksums now work. Added missing SHA1 values and marked some ROMs as NO_DUMP. Removed 6502 speedups.
-  * drivers/atarig42.c: Added support for the MO command register -- MO checksums now work. Added SLOOP emulation for 'Guardians of the Hood', which is fully playable. Added missing SHA1 values. Removed 6502 speedups. Documented color MUXing. Removed old orientation code. Added MO/playfield priorities.
-  * drivers/atarigx2.c: Added support for the MO command register -- MO checksums now work. Hooked up CAGE audio. Added missing SHA1 values. Documented the overly complicated color MUXing. Added MO/playfield priorities. Added support for the MO command register -- MO checksums now work. Added missing SHA1 values. Added another 'Road Riot's' Revenge variant. Some input port tweaks. Removed 6502 speedups.
-  * machine/asic65.c: Improved logic for 'Road Riot 4WD' -- almost playable. Added support for 'Guardians of the Hood'. 
-  * machine/atarigen.c: Fixed bad handling of EEPROM data in 32-bit mode.
-  * sndhrdw/cage.c: Fixed frequency computation -- it now works ok! Added speedup mechanism. Fixed positioning of the 4 voices.
+  - CAGE works:
+  * Motion object checksums work for growth games;
+  * Sprite/playfield priorities work for growth games;
+  * No more 6502 speedups;
+  * drivers/atarig1.c: Added support for the MO command register -- MO checksums now work. Added missing SHA1 values and marked some ROMs as NO_DUMP. Removed 6502 speedups;
+  * drivers/atarig42.c: Added support for the MO command register -- MO checksums now work. Added SLOOP emulation for 'Guardians of the Hood', which is fully playable. Added missing SHA1 values. Removed 6502 speedups. Documented color MUXing. Removed old orientation code. Added MO/playfield priorities;
+  * drivers/atarigx2.c: Added support for the MO command register -- MO checksums now work. Hooked up CAGE audio. Added missing SHA1 values. Documented the overly complicated color MUXing. Added MO/playfield priorities. Added support for the MO command register -- MO checksums now work. Added missing SHA1 values. Added another Road Riot's Revenge variant. Some input port tweaks. Removed 6502 speedups;
+  * machine/asic65.c: Improved logic for 'Road Riot 4WD' -- almost playable. Added support for Guardians of the Hood;
+  * machine/atarigen.c: Fixed bad handling of EEPROM data in 32-bit mode;
+  * sndhrdw/cage.c: Fixed frequency computation -- it now works ok! Added speedup mechanism. Fixed positioning of the 4 voices;
   * vidhrdw/atarirle.c: Implemented the MO command register and checksumming.
 - Improved Z80 DAA emulation allowing removal of look-up table [Sean Young / Stefano].

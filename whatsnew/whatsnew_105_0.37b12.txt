@@ -121,26 +121,26 @@ New Clones Added
 
 These drivers have improved GRAPHICS:
 -------------------------------------
-- Accurate emulation of sprite multiplexing in 'Gyruss' (also emulating the slave 6809) and 'Time Pilot' [Nicola Salmoria].
+- Accurate emulation of sprite multiplexing in Gyruss (also emulating the slave 6809) and Time Pilot [Nicola Salmoria].
 - Fixed auto animation speed in the NeoGeo games [Ralf Willenbacher].
 - Fixed colors and music tempo in 'Battle Lane' [Nicola Salmoria].
-- Fixed colors in 'Funny Mouse' [Nicola Salmoria].
-- Fixed colors in 'Wiz' [Nicola Salmoria].
+- Fixed colors in Funny Mouse [Nicola Salmoria].
+- Fixed colors in Wiz [Nicola Salmoria].
 - Fixed raster effects in mosyougi (title screen) and viewpoint (Sammy logo) [Nicola Salmoria].
 - Some fixes to the Cave games [Shiriru].
 
 
 These drivers have improved SOUND:
 ----------------------------------
-- Fixed engine sound in 'After Burner' [Shica].
+- Fixed engine sound in After Burner [Shica].
 
 
 Source changes:
 ---------------
 - [DOS] Now compiled with Allegro WIP 3.9.34, this fixes problems with the Sidewinder gamepad. GNU Binutils 2.9.5.1 might also be needed to compile.
 - [DOS] The "resamplefilter" option can be used to turn the filtering off [Andrea Mazzoleni].
-- 054539 sound emulation, used in 'X-Men', 'Xexex', 'GI Joe' [Olivier Galibert].
-- All new set of functions for alpha blending support, used in 'Xexex'. Porters: you have to support direct mapped 15 and 32 bits video modes. Remember to update osd_alloc_bitmap() too! See osdepend.h for the changes in osd_create_display() and osd_allocate_colors() [Olivier Galibert].
+- 054539 sound emulation, used in X-Men, Xexex, GI Joe [Olivier Galibert].
+- All new set of functions for alpha blending support, used in Xexex. Porters: you have to support direct mapped 15 and 32 bits video modes. Remember to update osd_alloc_bitmap() too! See osdepend.h for the changes in osd_create_display() and osd_allocate_colors() [Olivier Galibert].
 - draw_crosshair() [Nicola Salmoria].
 - GAME_IMPERFECT_GRAPHICS flag for game drivers [Nicola Salmoria].
 - New filtering code for the audio mixer. It is applied to audio streams generated at a sampling rate different from the sound card's one, improving quality. Some examples with a very audible difference are: fantasy, polyplay, galaxian (the background effect when playing), nibbler, vanguard and all the Seta games [Nicola Salmoria].

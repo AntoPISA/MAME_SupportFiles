@@ -2,43 +2,48 @@
 ----------------------------------------
 
 
-New Games / Clones supported or promoted from GAME_NOT_WORKING status
+New Games/Clones Supported or Promoted from GAME_NOT_WORKING Status
 ---------------------------------------------------------------------
-Erotictac [Tomasz Slanina (colour fix by Nicola Salmoria)] (runs at incorrect speed, some gfx issues)
+Erotictac [Tomasz Slanina] (1)
 SportTime Table Hockey (Arcadia) [Mariusz Wojcieszek]
 Sidewinder (Arcadia) [Mariusz Wojcieszek]
 Space Ranger (Arcadia) [Mariusz Wojcieszek]
 
-New clones added
+New Clones Added
 ----------------
 Top Racer (set 3) [Steve Ellenoff]
 Ant Eater (GB set) [Pierpaolo Prazzoli]
 Super Hang On (2 new sets) [Aaron Giles]
-Great 1000 Mile Rally 2 USA [David Haywood] (Neogeo Bios (Japan S1))
+Great 1000 Mile Rally 2 USA [David Haywood] (2)
+
+Notes:
+------
+(1): Runs at incorrect speed, some GFX issues. Colour fix by Nicola Salmoria.
+(2): Neogeo Bios (Japan S1).
 
 
 Source changes:
 ---------------
 - Sega update [Aaron Giles]:
-  * hangon, sharrier, and enduror now have accurate road and sprite scaling.
-  * Renamed shangonb to shangupb to indicate it is an upgrade bootleg.
-  * Added Gerald's latest 'Super Hang On' sets as shangonb, shangonc.
-  * Fixed graphics in 'Sukeban Jansi Ryuko' (both versions), but no controls yet.
+  * hangon, sharrier, and enduror now have accurate road and sprite scaling;
+  * Renamed (shangonb) to (shangupb) to indicate it is an upgrade bootleg;
+  * Added Gerald's latest Super Hang On sets as shangonb, shangonc;
+  * Fixed graphics in Sukeban Jansi Ryuko (both versions), but no controls yet.
 - Added support for a new command line  parameter, -screen, that specifies which screen to draw on (if the user has more than one) [Chris Kirmse].
 - Sound updates [Derrick Renaud]:
-  * Added filtering circuit to sound\namco52.c and	converted it to stream based.
-  * bosco, galaga, polepos, xevious: Added proper filters to Namco52 sample player. Adjusted relative	effect volumes per schematics.
+  * Added filtering circuit to sound\namco52.c and converted it to stream based;
+  * bosco, galaga, polepos, xevious: Added proper filters to Namco52 sample player. Adjusted relative effect volumes per schematics.
   * polepos: Added proper filters to engine sound.
   * Fixed gain in asteroids etc. broken in 0.90.
   * montecar: Added proper filter to crash sound.
   * bsktball: Converted to component value code.
   * abaseb: Corrected component values for crowd filter.
-- Removed Starfield in 'Tazzmania' bootleg (it doesn't have one) [Pierpaolo Prazzoli].
+- Removed Starfield in Tazzmania bootleg (it doesn't have one) [Pierpaolo Prazzoli].
 - Added conditional dips to 'Battle Garrega' [Barry Rodewald].
 - Arcadia update [Mariusz Wojcieszek]:
-  * Changed video update to be scanline based.
-  * Improved sprites rendering, fixed sprite clipping.
-  * Added hold-and-modify display mode.
+  * Changed video update to be scanline based;
+  * Improved sprites rendering, fixed sprite clipping;
+  * Added hold-and-modify display mode;
   * Changed ar_sdwr to use 1MB chip ram, this needs more investigation.
 - Fixed Vrender0 sound broken in u2 [Lawrence Gold].
 - Fixed some PPC core compiler warnings [Lawrence Gold].

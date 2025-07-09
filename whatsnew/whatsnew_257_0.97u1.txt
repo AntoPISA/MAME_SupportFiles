@@ -2,21 +2,21 @@
 --------------------------------------
 
 
-New games added or promoted from NOT_WORKING status
+New Games Added or Promoted from NOT_WORKING Status
 ---------------------------------------------------
 N-Sub (upright) [Pierpaolo Prazzoli]
 Hana Kanzashi (Japan) [Luca Elia]
 Hana Kagerou [BET] (Japan) [Luca Elia]
 Mahjong Reach Ippatsu (Japan) [Luca Elia, bnathan]
 
-New clones added
+New Clones Added
 ----------------
 Falcon (bootleg set 2) [Pierpaolo Prazzoli]
 Malzak II [Barry Rodewald]
 Battle Field (bootleg) [Pierpaolo Prazzoli]
 The Great Ragtime Show (Japan v1.5, 92.12.07) [David Haywood, NAmag]
 
-New games marked as GAME_NOT_WORKING
+New Games Marked as GAME_NOT_WORKING
 ------------------------------------
 Driver's Eyes [Phil Stroffolino]
 Winning Run [Phil Stroffolino]
@@ -24,13 +24,12 @@ Winning Run [Phil Stroffolino]
 
 MAMETesters Bugs Fixed (6):
 ---------------------------
-wwfwfsta37b16gre1 (Pierpaolo Prazzoli)
-ddragon336rc2gre (Pierpaolo Prazzoli)
-cookrace093u2red (ShimaPong)
-ddragn2u077gre (Pierpaolo Prazzoli)
-starforc097gre (Aaron Giles)
-wotw094u3gra (Aaron Giles)
-
+- wwfwfsta37b16gre1 (Pierpaolo Prazzoli)
+- ddragon336rc2gre (Pierpaolo Prazzoli)
+- cookrace093u2red (ShimaPong)
+- ddragn2u077gre (Pierpaolo Prazzoli)
+- starforc097gre (Aaron Giles)
+- wotw094u3gra (Aaron Giles)
 
 
 Source changes:
@@ -49,9 +48,9 @@ Source changes:
 - Improved SAA5050 emulation for 'Malzak' [Barry Rodewald].
 - Added proper C-chip emulation to 'Operation Wolf' [Bryan McPhail].
 - Major update to Namco System 21 driver [Phil Stroffolino]:
-  * Starblade is working with emulated master/slave DSPs. Graphic updates are a bit choppy; I believe there are 4 slaves and one master on the real PCB, with work distributed across the slaves. Some background objects are still missing in Starblade - the giant "starships" in the background of the first stage, for example (sprites are present showing burning fires which are supposed to be superimposed on them). The "direct drawing" feature is used during the high score presentation; colors are likely wrong, and there are missing graphics there as well (hexagons).
-  * Solvalou works, but occasionally 3d graphics stop updating; press "A" to unblock the pipeline and resume drawing them.
-  * The other System 21 titles are not working for various reasons. Solvalou needed cuskey support (used from the master DSP).  Cybersled appears to use a different mechanism for uploading DSP code.
+  * Starblade is working with emulated master/slave DSPs. Graphic updates are a bit choppy; I believe there are 4 slaves and one master on the real PCB, with work distributed across the slaves. Some background objects are still missing in Starblade - the giant "starships" in the background of the first stage, for example (sprites are present showing burning fires which are supposed to be superimposed on them). The "direct drawing" feature is used during the high score presentation; colors are likely wrong, and there are missing graphics there as well (hexagons);
+  * Solvalou works, but occasionally 3d graphics stop updating; press "A" to unblock the pipeline and resume drawing them;
+  * The other System 21 titles are not working for various reasons. Solvalou needed cuskey support (used from the master DSP). Cybersled appears to use a different mechanism for uploading DSP code.
 - Fixed road colors in the Suzuka games [Phil Stroffolino].
 - Added home/end key support in the history display [Samuele Zannoli].
 - Added debugger suppot for the decrementer register in the PowerPC core [Nathan Woods]
@@ -59,10 +58,10 @@ Source changes:
 - Added ADSP-21062 core and partially hooked it up for the Model 2B games [Ville Linde].
 - Additional progress on the PowerPC DRC (faster), support for more exceptions, better support for the PPC internal serial ports [Ville Linde].
 - Progress on the Konami PowerPC drivers [Ville Linde]:
-  * Cleaned up and consolidated common hardware
-  * Hooked up ADSP-21062 and 3dfx chips.
-  * Initial reverse-engineering work on the KS001005 custom 3D chipset in GTI Club.
-  * Initial NVRAM values plugged in for many games (They're used as a crude protection, similar to the EEPROM on GV System).
+  * Cleaned up and consolidated common hardware;
+  * Hooked up ADSP-21062 and 3dfx chips;
+  * Initial reverse-engineering work on the KS001005 custom 3D chipset in GTI Club;
+  * Initial NVRAM values plugged in for many games (they're used as a crude protection, similar to the EEPROM on GV System);
   * No games are playable or even show much yet, but nearly all of them do pass POST now.
 - Fixed a minor bug in the SCSP timer handling [Ville Linde].
 - Fixed memory leak in the cpu subsystem [Aaron Giles].

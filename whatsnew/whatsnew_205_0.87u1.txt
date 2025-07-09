@@ -2,11 +2,11 @@
 ----------------------------------------
 
 
-New Clones supported or promoted from GAME_NOT_WORKING status
+New Clones Supported or Promoted from GAME_NOT_WORKING Status
 -------------------------------------------------------------
 Painted Lady (Splash) (Ver 1.3 US) [Manuel Abadia]
 
-New Non-Working games / clones supported
+New Non-Working Games / Clones Supported
 ----------------------------------------
 Apache 3 [Bryan McPhail]
 Cycle Warriors [Bryan McPhail]
@@ -18,9 +18,9 @@ Source changes:
 - Minor Compiler fixes [Brad Oliver].
 - Removed options.color_depth (obsolete anyway) [Brad Oliver].
 - Compiler Fixes for VC [Bryan McPhail]:
-  * src\drivers\suprgolf.c: C99 fix.
-  * src\cpu\m37710\m37710op.h: Fixed warnings under VC.
-  * src\cpu\powerpc\ppc.c : Fixed warnings under VC.
+  * src\drivers\suprgolf.c: C99 fix;
+  * src\cpu\m37710\m37710op.h: Fixed warnings under VC;
+  * src\cpu\powerpc\ppc.c : Fixed warnings under VC;
   * src\cpu\powerpc\ppc403.c: Fixed warnings under VC.
 - Added default eeprom to Recalhorn to prevent crash [Bryan McPhail].
 - Fixed Mametesters bug sotsugyo069u3gre. sotsugyo: On the result screen (the one that appears when finishing a stage i.e after the first two trials), zeroes don't appear at all [Bryan McPhail].
@@ -29,19 +29,19 @@ Source changes:
 - Yumefuda update (EEPROM etc.) [Gondos, Pierpaolo Prazzoli].
 - Fixed some gfx in tmmjprd [Pierpaolo Prazzoli].
 - i960 updates [R. Belmont]:
-  * Added support for the following opcodes: nor, addc, subc, atanr, sinr, cosr, tanr, atanrl, logrl, sinrl, cosrl, and tanrl.
-  * Added those and some others to the disassembler.
-  * Added parens for the compiler warning.
-  * Fixed stt to only store 3 words instead of 4.
-  * Added logepr and cvtri.
-  * Fixed cmpr and cmprl - they were comparing garbage instead of the correct registers.
-  * Added disassembly for movrl.
-  * Added scanbit.
-  * Rewrote flushreg, it was *totally* wrong before. HOTD now runs, among others.
-  * Added hack to divo so divide by zero doesn't crash MAME (some games read back 0 from the not-yet-existing DSP and do this).
-  * More disassembler improvements.
-  * Added NAND, EDIV, SCALER, SCALERL, ROUNDR, ROUNDRL, EXPRL, MOVRE, and CPYSRE opcodes.
-  * Fixed some errors in interrupt handling. Solves corrupt graphics in fvipers and crashes in fvipers, schamp, and dynamcop.
+  * Added support for the following opcodes: nor, addc, subc, atanr, sinr, cosr, tanr, atanrl, logrl, sinrl, cosrl, and tanrl;
+  * Added those and some others to the disassembler;
+  * Added parens for the compiler warning;
+  * Fixed stt to only store 3 words instead of 4;
+  * Added logepr and cvtri;
+  * Fixed cmpr and cmprl - they were comparing garbage instead of the correct registers;
+  * Added disassembly for movrl;
+  * Added scanbit;
+  * Rewrote flushreg, it was *totally* wrong before. HOTD now runs, among others;
+  * Added hack to divo so divide by zero doesn't crash MAME (some games read back 0 from the not-yet-existing DSP and do this);
+  * More disassembler improvements;
+  * Added NAND, EDIV, SCALER, SCALERL, ROUNDR, ROUNDRL, EXPRL, MOVRE, and CPYSRE opcodes;
+  * Fixed some errors in interrupt handling. Solves corrupt graphics in fvipers and crashes in fvipers, schamp, and dynamcop;
   * Added REMR opcode.
 - SegaIC24 update. Add 32-bit access methods for char and tile RAM [R. Belmont].
 - Grand Champion sound fix [Justin Szczap].
@@ -50,13 +50,13 @@ Source changes:
 - ZN1/ZN2 big endian fix [smf].
 - SPI decryption improvements (for rf2_2k) [Ville Linde].
 - Tatsumi driver [Bryan McPhail] (playable to a degree, but not really working properly): Incredibly complex hardware! These are all different boards, but share a similar sprite chip (TZB215 on Apache 3, TZB315 on others). Other graphics (road, sky, bg/fg layers) all differ between games. Todo:
-  * Sprite rotation.
-  * Finish road layer (Round Up 5).
-  * Implement road layer (Apache 3, Cycle Warriors).
-  * BG layer(s) (Cycle Warriors).
-  * BG layer (Round Up 5) - May be driven by missing VRAM data.
-  * Round Up 5 always boots with a coin inserted.
-  * Round Up 5 doesn't survive a reset.
-  * DIP switches.
+  * Sprite rotation;
+  * Finish road layer (Round Up 5);
+  * Implement road layer (Apache 3, Cycle Warriors);
+  * BG layer(s) (Cycle Warriors);
+  * BG layer (Round Up 5) - May be driven by missing VRAM data;
+  * Round Up 5 always boots with a coin inserted;
+  * Round Up 5 doesn't survive a reset;
+  * DIP switches;
   * Various other things.
 - Sega Model 2 driver (see model2.c for list of games): Tilemaps, sound, and inputs working to varying degrees in various games.  Most of the games at least start up, although some don't and some crash [R. Belmont].

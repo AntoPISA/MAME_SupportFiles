@@ -2,7 +2,7 @@
 ----------------------------------------
 
 
-New games supported
+New Games Supported
 -------------------
 (bankp)    Bank Panic [Nicola Salmoria]
 (destderb) Demolition Derby [Christopher Kirmse, Aaron Giles, Brad Oliver]
@@ -27,7 +27,7 @@ New games supported
 (twotiger) Two Tigers [Christopher Kirmse, Aaron Giles, Brad Oliver]
 (wacko)    Wacko [Christopher Kirmse, Aaron Giles, Brad Oliver]
 
-New games supported
+New Games Supported
 -------------------
 (amigo)    Amigo (Amidar US bootleg) [David Winter]
 (commandj) Commando (Japanese version) [Nicola Salmoria]
@@ -36,10 +36,10 @@ New games supported
 
 Program changes:
 ----------------
-- Added *emulated* sound to 'Q*Bert', 'Reactor', 'Krull' and 'Mad Planets'. The samples are no longer needed and may be removed. 'Q*Bert' bes would work as well, if we had the sound ROM ;-( Speech is not emulated... yet! Please do not complain because there is no speech in 'Q*Bert'. We are aware of that [Fabrice Frances].
+- Added *emulated* sound to Q*Bert, Reactor, Krull and Mad Planets. The samples are no longer needed and may be removed. Q*Bert bes would work as well, if we had the sound ROM ;-( Speech is not emulated... yet! Please do not complain because there is no speech in Q*Bert. We are aware of that [Fabrice Frances].
 - Provided a new 6809 emulator. It is faster than the previous one, and fixes some bugs including the ship moving in the wrong direction on the tower level of 'Star Wars' and the bonus maze in 'Pac & Pal' and also added optimizations to some Williams games, GnG and Qix. He also fixed several problems in Qix.[John Butler].
-- Provided a driver for 'Omega Race' and added a "director's cut" mode to 'Battle Zone'. DELETE BZONE\BZONE.CFG OTHERWISE THE GAME WILL NOT WORK CORRECTLY [Bernd Wiebelt].
-- 'Nibbler' and 'Vanguard' are back to (hopefully) normal speed [Nicola Salmoria].
+- Provided a driver for Omega Race and added a "director's cut" mode to Battle Zone. DELETE BZONE\BZONE.CFG OTHERWISE THE GAME WILL NOT WORK CORRECTLY [Bernd Wiebelt].
+- Nibbler and Vanguard are back to (hopefully) normal speed [Nicola Salmoria].
 - Provided a MCR I/II/III driver, supporting [Christopher Kirmse, Aaron Giles, Brad Oliver]:
   * Demolition Derby
   * Discs of Tron
@@ -56,20 +56,20 @@ Program changes:
   * Tron
   * Two Tigers
   * Wacko
--  Perfected the CTC emulation, needed by the MCR driver [Aaron Giles].
+- Perfected the CTC emulation, needed by the MCR driver [Aaron Giles].
 - Found a workaround to make 'Tempest' not lock up at 150,000 points [Sean Trowbridge].
-- Some fixes to the Exidy games ('Venture', 'Mouse Trap', 'Pepper II'). Collision detection is now supported, 'Venture' is playable; also added high score support to 'Elevator Action', 'Pisces', 'War of the Bugs', 'Eggs', 'Exed Exes', 'Diamond Run', 'Jungle King', 'Wizard of Wor', 'Robby Roto', 'Gorf', 'Space Zap', 'Seawolf II', 'Loco-Motion', 'Mysterious Stones', 'Blue Print', 'Carnival', 'Snap Jack', 'Cosmic Avenger', 'Yie Ar Kung Fu', 'Scramble', 'Battle of Atlantis' and 'The End'; also pointed out that ROM 2H of 'Battle of Atlantis' seems to be bad; that's the cause of the strange coins per credit values. [Mike Balfour].
-- 'Exed Exes' background, which is now partially working [Luis Longeri].
-- Made several fixes to the 'Xevious' driver [Tatsuyuki Satoh].
+- Some fixes to the Exidy games (Venture, Mouse Trap, Pepper II). Collision detection is now supported, Venture is playable; also added high score support to Elevator Action, Pisces, War of the Bug, Eggs, Exed Exes, Diamond Run, Jungle King, Wizard of Wor, Robby Roto, Gorf, Space Zap, Seawolf II, Loco-Motion, Mysterious Stones, Blue Print, Carnival, Snap Jack, Cosmic Avenger, Yie Ar Kung Fu, Scramble, Battle of Atlantis and The End; also pointed out that ROM 2H of Battle of Atlantis seems to be bad; that's the cause of the strange coins per credit values [Mike Balfour].
+- Exed Exes background, which is now partially working [Luis Longeri].
+- Made several fixes to the Xevious driver [Tatsuyuki Satoh].
 - Provided a driver reference sheet (mamelist.txt) [Aaron Giles].
-- Fixed color intensities in 'Star Wars' - objects now fade out properly. You might find it a bit too dark now, but this is done to reproduce the differences in brightness that the original has [Steve Baines].
-- Fixed the "bad tranch vectors" and "fail to approach 'Death Star' bugs in 'Star Wars' [Frank Palazzolo].
-- Provided a driver for 'Amigo' (a bootleg version of 'Amidar') [David Winter].
-- Provided drivers for 'Pop Flamer' and 'Espial' [Brad Oliver].
-- Supplied a 'Super Basketball' driver [Zsolt Vasvari].
-- Provided a driver for 'Time Pilot 84'. John Butler optimized it [Marc Lafontaine].
-- Added explosions to 'Rally X', using a sample [Mirko Buffoni].
-- Adapted the M68000 emulator from the System 16 Arcade Emulator by Thierry Lescot. The only known problem of this emulator is that it doesn't count CPU cycles, only instructions. The first driver to use the 68000 is 'Rastan', also provided by Jarek [Jarek Burczynski].
+- Fixed color intensities in Star Wars: Objects now fade out properly. You might find it a bit too dark now, but this is done to reproduce the differences in brightness that the original has [Steve Baines].
+- Fixed the "bad tranch vectors" and "fail to approach Death Star bugs in Star Wars [Frank Palazzolo].
+- Provided a driver for Amigo (a bootleg version of Amidar) [David Winter].
+- Provided drivers for Pop Flamer and Espial [Brad Oliver].
+- Supplied a Super Basketball driver [Zsolt Vasvari].
+- Provided a driver for Time Pilot 84. John Butler optimized it [Marc Lafontaine].
+- Added explosions to Rally X, using a sample [Mirko Buffoni].
+- Adapted the M68000 emulator from the System 16 Arcade Emulator by Thierry Lescot. The only known problem of this emulator is that it doesn't count CPU cycles, only instructions. The first driver to use the 68000 is Rastan, also provided by Jarek [Jarek Burczynski].
 
 
 Source changes:
@@ -79,22 +79,22 @@ Source changes:
 
 Program (the following changes were done by Nicola Salmoria):
 -------------------------------------------------------------
-- 'Crystal Castles' now has accurate colors and load/save of high score and settings (I mean the settings done in the service menu).
-- 'Nibbler' and 'Fantasy' have sound, using the 'Vanguard' driver. I don't know how accurate it is.
-- Thanks to Gary Walton and Simon Walls, 'Son Son' now has accurate colors.
-- 'Son Son' also has sound.
-- Since there are now many games which don't run at 60fps (e.g. 'Popeye' and the vector games), F11 was confusing and lead people to think the emulation was slow, while it was running at the correct speed. F11 now  displayes the percentage of the speed of the real machine. 100% is the correct speed, 200% is twice as fast, 50% is half as fast.
-- 'Snap Jack' and 'Cosmic Avenger' are oriented correctly, and small sprites in 'Cosmic Avenger' (bullets, bombs etc.) and 'Snap Jack' (wheels) are properly supported.
+- Crystal Castles' now has accurate colors and load/save of high score and settings (I mean the settings done in the service menu).
+- Nibbler and Fantasy have sound, using the Vanguard driver. I don't know how accurate it is.
+- Thanks to Gary Walton and Simon Walls, Son Son now has accurate colors.
+- Son Son also has sound.
+- Since there are now many games which don't run at 60fps (e.g. Popeye and the vector games), F11 was confusing and lead people to think the emulation was slow, while it was running at the correct speed. F11 now  displayes the percentage of the speed of the real machine. 100% is the correct speed, 200% is twice as fast, 50% is half as fast.
+- Snap Jack and Cosmic Avenger are oriented correctly, and small sprites in Cosmic Avenger (bullets, bombs etc.) and Snap Jack (wheels) are properly supported.
 - Some of the games now support cocktail mode (only the graphics, not the controls yet).
-- New command line option: "-cheat". Cheats like the speedup in 'Pac Man' or the level skip in many other games are disabled by default. Use this switch to turn them on.
-- The speedup cheat in 'Pac Man' can now be permanently set to ON from the dip switch settings menu.
-- 'Zaxxon' and 'Congo Bongo' can go in service mode (F2).
-- 'Bank Panic' support. Thanks to Virtu-Al, colors are correct.
-- Colors in 'Donkey Kong' are now 100% accurate. Several people complained that girders should be pink instead of red, but to the best of my knowledge the current colors are an accurate conversion of the color PROMs, and this has been confirmed by some people. There might be two different versions of 'Donkey Kong', with slightly different colors. If someone has a "pink" board and wants to read the PROMs from there, I'll be happy to include them.
-- DIP switches now work in 'Xevious'. Also fixed a bug in the targeting cursor colors (black corners while firing). 'Super Xevious' works. Explosions are emulated with samples, thanks to Andrew Scott.
-- Support for another version of 'Mr Do's Castle' ("docastl2").
-- Support for the Japanese version of 'Commando' ("commandj").
-- Thanks to Gary Walton, fixed sprite placement in 'Turtles'.
+- New command line option: "-cheat". Cheats like the speedup in Pac Man or the level skip in many other games are disabled by default. Use this switch to turn them on.
+- The speedup cheat in Pac Man can now be permanently set to ON from the dip switch settings menu.
+- Zaxxon and Congo Bongo can go in service mode (F2).
+- Bank Panic support. Thanks to Virtu-Al, colors are correct.
+- Colors in Donkey Kong are now 100% accurate. Several people complained that girders should be pink instead of red, but to the best of my knowledge the current colors are an accurate conversion of the color PROMs, and this has been confirmed by some people. There might be two different versions of Donkey Kong, with slightly different colors. If someone has a "pink" board and wants to read the PROMs from there, I'll be happy to include them.
+- DIP switches now work in Xevious. Also fixed a bug in the targeting cursor colors (black corners while firing). Super Xevious works. Explosions are emulated with samples, thanks to Andrew Scott.
+- Support for another version of Mr Do's Castle (docastl2).
+- Support for the Japanese version of Commando (commandj).
+- Thanks to Gary Walton, fixed sprite placement in Turtles.
 
 
 Sources changes:

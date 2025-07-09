@@ -2,7 +2,7 @@
 ----------------------------------------
 
 
-New Clones supported or promoted from GAME_NOT_WORKING status
+New Clones Supported or Promoted from GAME_NOT_WORKING Status
 -------------------------------------------------------------
 Hyperdrive [Aaron Giles]
 Popper (Hard Head bootleg) [David Haywood]
@@ -19,15 +19,15 @@ Source changes:
 - Fixed bug that prevented changes to the default controls from sticking [Aaron Giles].
 - Fixed ROM naming for Crazy Climber bootleg [Brian Troha].
 - Improvements to the Namco System 12 driver [R. Belmont]:
-  * MCU is now emulated rather than HLE'd.
-  * MCU peripherals mostly figured out and hooked up.
-  * Preliminary sound and music are now present.
-  * Inputs and coinage are now handled by the MCU, so all bugs related to them are hopefully fixed.
-  * Fixed bug with save states.
-  * sws99 and pacapp both seem playable now (not sure if due to these changes or smf's core work) so took off GAME_NOT_WORKING for them.
+  * MCU is now emulated rather than HLE'd;
+  * MCU peripherals mostly figured out and hooked up;
+  * Preliminary sound and music are now present;
+  * Inputs and coinage are now handled by the MCU, so all bugs related to them are hopefully fixed;
+  * Fixed bug with save states;
+  * sws99 and pacapp both seem playable now (not sure if due to these changes or smf's core work) so took off GAME_NOT_WORKING for them;
   * Added support for alternate ROM banking protection used by golgo13, so it runs now (there's a very long black screen at the beginning, just wait it out). The gun inputs are partially supported but not working yet because I'm unable to figure out what format the game wants the data in.
 - More i960 bugfixes [R. Belmont]:
-  * Fixed a brown-paper-bag bug where the PC and AC registers were getting swapped on return from interrupts.
-  * Rewrote the frame cache mechanism using a simple FIFO concept. Final Lap R now runs further.
+  * Fixed a brown-paper-bag bug where the PC and AC registers were getting swapped on return from interrupts;
+  * Rewrote the frame cache mechanism using a simple FIFO concept. Final Lap R now runs further;
   * Aligned reads and writes now use the full-size paths through the core instead of always breaking everything down into bytes.
 - Refactored the Voodoo code, fixing several errors in the LOD calculations and the Voodoo 2 command FIFO [Aaron Giles].

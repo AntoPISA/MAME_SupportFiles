@@ -2,40 +2,46 @@
 --------------------------------------
 
 
-New Non-Working games / clones supported
+New Non-Working Games / Clones Supported
 ----------------------------------------
-Super Masters Golf [Phil Bennett, Chris Hardy, David Haywood] (Controls not hooked up yet)
-Hyper Crash (Preliminary, not investigated much yet)
-Super Monaco GP (2 new sets, Japan and US, without logos) [Charles MacDonald, David Haywood] (Same problems as the other sets (lack of controls)
+Super Masters Golf [Phil Bennett, Chris Hardy, David Haywood] (1)
+Hyper Crash (2)
+Super Monaco GP [Charles MacDonald, David Haywood] (3)
+
+Notes:
+------
+(1): Controls not hooked up yet.
+(2): Preliminary, not investigated much yet.
+(3): Same problems as the other sets (lack of controls).
 
 
 Source changes:
 ---------------
-- frogs - Removed discrete tongue sound for now.  Added sample support. The buzz sound of flys is constant because it can't be emulated properly until full discrete support is added. Samples are from the ones posted by Twisty [David Haywood].
+- frogs: Removed discrete tongue sound for now.  Added sample support. The buzz sound of flys is constant because it can't be emulated properly until full discrete support is added. Samples are from the ones posted by Twisty [David Haywood].
 - Misc. Sega Improvements:
-  * Improved inputs in DDCrew, all 4 players can now be used, although only the service coin works [David Haywood].
-  * Hooked up Nitro button in 'Turbo Outrun' [smf].
-  * Improved 'GP Rider' Sound [R. Belmont].
+  * Improved inputs in DDCrew, all 4 players can now be used, although only the service coin works [David Haywood];
+  * Hooked up Nitro button in Turbo Outrun [smf];
+  * Improved GP Rider sound [R. Belmont].
 - Fixed 'Cotton', 'Turbo Outrun' filenames [deadscreem].
 - Fixed 'Thunderblade' filenames [David Haywood].
 - Namco System 1 update [Nicola Salmoria]:
-  * Added a new function tilemap_draw_primask(). This takes an additional parameter, which is ANDed with the contents of priority_bitmap before ORing it with the specified priority. Essentially, the old tilemap_draw() is equivalent to tilemap_draw_pribuffer(..., 0xff). The two should probably be unified. This new handling of priority_bitmap allows a more intuitive handling of pdrawgfx(), and more layers to be used (up to 31, instead of just 5 - Namco S1 needed 8). NOTE: to implement this change, I had to disable the asm optimized routines PDT16 and PDO16 in windows/oslinline.h. If they are useful for performance, they should be updated and reenabled.
-  * Fixed sprite handling and removed all the nonsense hacks from the video update.
-  * Made sprite/tilemap priorities orthogonal (not sure if it was needed).
-  * Also updated System 86 (which uses the same sprite hardware) to the latest code. Curiously, this introduces sprite/sprite priority issues in Wonder Momo. I'm puzzled by this.
+  * Added a new function tilemap_draw_primask(). This takes an additional parameter, which is ANDed with the contents of priority_bitmap before ORing it with the specified priority. Essentially, the old tilemap_draw() is equivalent to tilemap_draw_pribuffer(..., 0xff). The two should probably be unified. This new handling of priority_bitmap allows a more intuitive handling of pdrawgfx(), and more layers to be used (up to 31, instead of just 5 - Namco S1 needed 8). NOTE: to implement this change, I had to disable the asm optimized routines PDT16 and PDO16 in windows/oslinline.h. If they are useful for performance, they should be updated and reenabled;
+  * Fixed sprite handling and removed all the nonsense hacks from the video update;
+  * Made sprite/tilemap priorities orthogonal (not sure if it was needed);
+  * Also updated System 86 (which uses the same sprite hardware) to the latest code. Curiously, this introduces sprite/sprite priority issues in Wonder Momo. I'm puzzled by this;
   * Vastly improved the key custom emulation, shrinking it down to three basic types. This also fixed issues with pistoldm (e.g. bomb explosions, and other random events).
   pistoldm061yel:
-  * Fixed DAC sounds in berabohm and faceoff, two sounds at the same time were causing severe slowdowns.
-  * Fixed Namco logo in 'Dangerous Seed'.
-  * Cleaned up input ports, using PORT_INCLUDE.
-  * Found some more debug dip switches
+  * Fixed DAC sounds in berabohm and faceoff, two sounds at the same time were causing severe slowdowns;
+  * Fixed Namco logo in Dangerous Seed;
+  * Cleaned up input ports, using PORT_INCLUDE;
+  * Found some more debug dip switches.
   dspirit061gre:
   * Added support for visibility window, this fixes countless issues with partial video updates and the intro of 'Rompers'.
   namcosx36rc2gre:
-  * Fixed berabohm inputs.
-  * Better ROM loading, closer to the hardware (though it uses more memory).
-  * Toggling the test mode dip switch is enough to enter test mode - no need to reset.
-  * Removed the galaga88 set: it was a hacked version removing the key custom checks and disabling ROM checksum tests.
+  * Fixed berabohm inputs;
+  * Better ROM loading, closer to the hardware (though it uses more memory);
+  * Toggling the test mode dip switch is enough to enter test mode - no need to reset;
+  * Removed the galaga88 set: it was a hacked version removing the key custom checks and disabling ROM checksum tests;
   * Cleaned up the CUS30 wavedata/sound command/RAM interface, put it all in a single function.
   splatter061gre: I don't think this is a bug.
   splatter061gre2: I don't think this is a bug, just dark brown would look black on an arcade monitor
@@ -46,11 +52,11 @@ Source changes:
 
 Discrete sound changes [Derrick Renaud]:
 ------------------
-  * Modified Discrete core node inputs to use pointers to the data, instead of moving the data into the inputs at each step. This speeds up discrete emulation.
-  * Modified all current modules and drivers to use new code.
+- Modified Discrete core node inputs to use pointers to the data, instead of moving the data into the inputs at each step. This speeds up discrete emulation.
+- Modified all current modules and drivers to use new code.
 
 
 New discrete modules added:
 ---------------------------
-  * DISCRETE_555_ASTABL has been modified to remove control voltage support [David Haywood].
-  * DISCRETE_555_ASTABL_CV has been added if control voltage is used [David Haywood].
+- DISCRETE_555_ASTABL has been modified to remove control voltage support [David Haywood].
+- DISCRETE_555_ASTABL_CV has been added if control voltage is used [David Haywood].

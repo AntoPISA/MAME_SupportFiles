@@ -3,11 +3,11 @@
 The main feature of this release is Aaron's huge update to the sound system. There is a high chance this has introduced new sound / crashing bugs in several drivers. A number of problems were already found and fixed prior to the 0.93 release thanks to Aaron, Derrick and R.Belmont. Updates will follow to correct any severe bugs found. Please test this release extensively.
 
 
-New Games / Clones supported or promoted from GAME_NOT_WORKING status
+New Games/Clones supported or promoted from GAME_NOT_WORKING status
 ---------------------------------------------------------------------
 Aliens (World set 3, Japan set 2) [MAN]
 Alpha Mission [Dave Widel]
-Defense [Torsten] (note the program roms are bad on the original board, a patch is needed)
+Defense [Torsten] (1)
 E-Jan High School [Nicola Salmoria, Ville Linde] (sound emulation on the SPI games is still incomplete various alpha blending effects missing)
 G-Darius (Ver 2.02A)
 High Impact Football Proto v8.6 [Brian Troha]
@@ -22,15 +22,20 @@ Viper Phase 1 [Nicola Salmoria, Ville Linde]
 
 New games marked as GAME_NOT_WORKING
 ------------------------------------
-Ghost Hunter (guns not hooked up)
+Ghost Hunter [David Haywood] (2)
 MoonQuake [Mariusz Wojcieszek]
-Tuts Tomb
+Tuts Tomb [David Haywood]
+
+Notes:
+------
+(1): Note the program roms are bad on the original board, a patch is needed.
+(2): Guns not hooked up.
 
 
 Core changes:
 -------------
 - common.c:
-  * Changed auto_malloc() behavior so that a failure is absolute (calls osd_die); you can now assume that auto_malloc will always succeed and will never return NULL.
+  * Changed auto_malloc() behavior so that a failure is absolute (calls osd_die); you can now assume that auto_malloc will always succeed and will never return NULL;
   * Removed all sample loading code; this is now in sound/samples.c.
 - config.c:
   * Tried to update this to the new mixer stuff in usrintrf.c, but it hasn't been tested and I bet it's busted somehow.
@@ -42,6 +47,27 @@ Core changes:
   * I created a new type of timer that has a pointer for a callback param instead of an int. These sit next to the existing timer code, so nothing else is affected. They made object orienting the sound cores much much cleaner.
 - usrintrf.c:
   * Mixing volumes are retrived from the sound core, not from the mixer (which is gone). Mixing volumes can now be overdriven to 2.0 (could be increased in the future).
+- Misc patch [Nathan Woods]:
+  * src/debug/debugcpu.c;
+  * Changed an instance of memory_get_read_ptr() to memory_get_op_ptr();
+  * src/cpu/g65816/g65816ds.h;
+  * src/cpu/g65816/g65816ds.c;
+  * src/cpu/g65816/g65816.c.
+  - G65816 disassembler changes; program_read_byte() is no longer used for disassembling and also the core now reports the PC as being the full PB or'd with PC.
+- Fixed controls in Hyper Crash (still needs freeplay to start) [Angelo Salese].
+- Changed Big Striker to use its PROM [Pierpaolo Prazzoli].
+- Changed way .map file is generated [smf].
+- SPI Big Endian fix [R. Belmont].
+- Swapped Namco 54xx filters on Port A & C (fixes xevious sound) [Derrick Renaud].
+- C89 fix [Lawrence Gold] 
+- Decrypted GFX in all SPI games [Nicola Salmoria].
+- Fixed crash in WCBowling 1.2 [Derrick Renaud].
+- FD1089 update (adding 317-0028) [Nicola Salmoria].
+- Added many opcodes to Shisensho II decryption table: game is *almost* working correctly, still some errors [Pierpaolo Prazzoli].
+- Updated MACs driver: yujan now boots but isn't playable [Tomasz Slanina].
+- Fixed ddcrew (2 player) sound loading [David Haywood].
+- Fixed Alien Syndrome ROM names [Shinobiz].
+- Removed ingame debug button in rachero which was causing you to be locked to the middle lane [David Haywood] 
 
 
 Machine driver changes:
@@ -64,16 +90,16 @@ Sound core interface changes:
 - sndintrf.h:
   * We now no longer #include every sound core's header. You have to include them yourself in your driver.
 - sndintrf.c:
-  * Sound cores are now hooked up very much like CPU cores. There is a single get_info function that is public for each core; all other functions and data are retrieved through it.
-  * Similar to CPU cores, you can call sndtype_xxx() to query/set values for a specific sound chip type; you can also call sndnum_xxx() to query/set values for an indexed sound chip in the Machine->drv->sound array; finally, you can call sndti_xxx() to query/set values for the nth instance of any give sound chip type (sndti = sound type+index).
-  * At startup, all sound cores/filters are created. Then all the speakers are created. Finally, everything is wired up together. There are new consistency checks to make sure you don't do anything wildly bad.
-  * sndintrf.c calls the OSD layer now, and always requests stereo output. It also does a final downmix from the various speaker streams into left/right streams based on the X coordinate of the speaker.
+  * Sound cores are now hooked up very much like CPU cores. There is a single get_info function that is public for each core; all other functions and data are retrieved through it;
+  * Similar to CPU cores, you can call sndtype_xxx() to query/set values for a specific sound chip type; you can also call sndnum_xxx() to query/set values for an indexed sound chip in the Machine->drv->sound array; finally, you can call sndti_xxx() to query/set values for the nth instance of any give sound chip type (sndti = sound type+index);
+  * At startup, all sound cores/filters are created. Then all the speakers are created. Finally, everything is wired up together. There are new consistency checks to make sure you don't do anything wildly bad;
+  * sndintrf.c calls the OSD layer now, and always requests stereo output. It also does a final downmix from the various speaker streams into left/right streams based on the X coordinate of the speaker;
 - sound/streams.c:
-  * I have added a new type defined in sound/streams.h: stream_sample_t, which is used to represent a sample as used by the stream system. It is typedef'd to an INT32.
-  * Regardless of the size of stream_sample_t, all streams should be generated as if 16 bits were the maximum. The extra bits give us headroom to overdrive things if we want.
-  * All streams have the same format callback, with support for multiple inputs and outputs.
-  * Each stream has a sample rate; inputs to that stream will be down/upsampled to that rate; outputs will be down/upsampled as necessary to connect to the input of the next stream/speaker in line.
-  * Each input to a stream has its own gain, and each output has a gain as well. These can be controlled while things are running to provide some extra volume knobs.
+  * I have added a new type defined in sound/streams.h: stream_sample_t, which is used to represent a sample as used by the stream system. It is typedef'd to an INT32;
+  * Regardless of the size of stream_sample_t, all streams should be generated as if 16 bits were the maximum. The extra bits give us headroom to overdrive things if we want;
+  * All streams have the same format callback, with support for multiple inputs and outputs;
+  * Each stream has a sample rate; inputs to that stream will be down/upsampled to that rate; outputs will be down/upsampled as necessary to connect to the input of the next stream/speaker in line;
+  * Each input to a stream has its own gain, and each output has a gain as well. These can be controlled while things are running to provide some extra volume knobs;
   * I haven't done much in the way of optimizations in order to keep things simple and working. Once things are back to normal, I may consider some additional optimizations.
 
 
@@ -111,28 +137,3 @@ Sound core-specific changes:
 - YM2151: Removed the alternate version and kept only Jarek's around. Having two cores was confusing and caused problems.
 - YM2203/2608/2610: These chips now pass a set of functions into the FM core with pointers to all the AY8910-compatibility routines, rather than relying on global pointers.
 - YMZ280B: This code is just terrible now compared to when I first wrote it! :(
-
-
-Other changes in 0.93:
-----------------------
-- Misc patch [Nathan Woods]:
-  * src/debug/debugcpu.c:
-  * Changed an instance of memory_get_read_ptr() to memory_get_op_ptr() 
-  * src/cpu/g65816/g65816ds.h:
-  * src/cpu/g65816/g65816ds.c:
-  * src/cpu/g65816/g65816.c:
-  - G65816 disassembler changes; program_read_byte() is no longer used for disassembling and also the core now reports the PC as being the full PB or'd with PC.
-- Fixed controls in Hyper Crash (still needs freeplay to start) [Angelo Salese].
-- Changed Big Striker to use its PROM [Pierpaolo Prazzoli].
-- Changed way .map file is generated [smf].
-- SPI Big Endian fix [R. Belmont].
-- Swapped Namco 54xx filters on Port A & C (fixes xevious sound) [Derrick Renaud].
-- C89 fix [Lawrence Gold] 
-- Decrypted GFX in all SPI games [Nicola Salmoria].
-- Fixed crash in WCBowling 1.2 [Derrick Renaud].
-- FD1089 update (adding 317-0028) [Nicola Salmoria].
-- Added many opcodes to Shisensho II decryption table: game is *almost* working correctly, still some errors [Pierpaolo Prazzoli].
-- Updated MACs driver: yujan now boots but isn't playable [Tomasz Slanina].
-- Fixed ddcrew (2 player) sound loading [David Haywood].
-- Fixed Alien Syndrome ROM names [Shinobiz].
-- Removed ingame debug button in rachero which was causing you to be locked to the middle lane [David Haywood] 

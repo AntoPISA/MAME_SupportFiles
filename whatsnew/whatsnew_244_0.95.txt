@@ -2,15 +2,15 @@
 ------------------------------------
 
 
-New Games / Clones supported or promoted from GAME_NOT_WORKING status
----------------------------------------------------------------------
+New Games/Clones Supported or Promoted from GAME_NOT_WORKING Status
+-------------------------------------------------------------------
 Big Kong [Tom Girardot, Joe Magiera]
-Demons & Dragons (prototype) [Frank Palazzolo] (no sound)
+Demons & Dragons (prototype) [Frank Palazzolo] (1)
 Ghost Hunter [Pierpaolo Prazzoli]
 Hex Pool [Brian Troha]
 Hook (Japan) [Corrado Tomaselli]
 MegaPlay: Biohazard Battle [Guru]
-MegaPlay: Streets of Rage 2 [Guru] (may crash due to poor genesis emulation)
+MegaPlay: Streets of Rage 2 [Guru] (2)
 Nagano Winter Olympics '98 (GX720 EAA) [R. Belmont]
 Puzzle Club (set 2) [Corrado Tommaselli]
 Sunset Riders (Ver ADD) [Razoola]
@@ -18,21 +18,32 @@ Tut's Tomb [Pierpaolo Prazzoli]
 
 New games marked as GAME_NOT_WORKING
 ------------------------------------
-Pinball Action (set 3, encrypted?) (seems to be encrypted, segacrpt?)
+Pinball Action (set 3, encrypted?) [Aaron Giles] (3)
+
+Notes:
+------
+(1): No sound.
+(2): May crash due to poor genesis emulation.
+(3): Seems to be encrypted, segacrpt?
+
+
+MAMETester Bugs Fixed (2):
+--------------------------
+- ufosensi093gre (Pierpaolo Prazzoli)
+- ufosensi093u3gra (Pierpaolo Prazzoli)
 
 
 Source changes:
 --------------
 - Sound rewrite crash fixes: Fixed crash in garyoret. Fixed crash in system18.c bootlegs. Fixed crash in konamigt. Fixed crash in scion. Fixed crash in double dribble. Fixed crash in iron horse [Aaron Giles].
 - CPUs tagged as audio CPUs are no longer disabled when sound is turned off [Aaron Giles].
-- Sega updates: Decrypted and added aurailj. the program roms are bad however so it doesn't work. The Altered Beast sets were a mess. Some of them were using the wrong  version of the gfx ROMs (that's why they had to be loaded in a strange way) Should be correct now. bayrout1 is the us version not world. wally1 is revision B. Added a few keys with NO_DUMP. More fixes to descriptions and ROM names [Nicola Salmoria].
-- Added sound to 'Excelsior' [Pierpaolo Prazzoli].
-- Fixed title screen glitch in 'Super Slam' [Pierpaolo Prazzoli].
-- Fixed sprite bug in 'Buccaneers' [Pierpaolo Prazzoli].
-- Fixed crash in new 'Bull Fighter' set [Pierpaolo Prazzoli].
-- Added proper PROM decoding for "Ring King' (Woodplace license) [Pierpaolo Prazzoli].
-- Fixed cocktail mode in 'Calorie Kun' [Pierpaolo Prazzoli].
-- Fixed ufosensi093u3gra and ufosensi093gre [Pierpaolo Prazzoli].
+- Sega updates: Decrypted and added aurailj. The program ROMs are bad however so it doesn't work. The Altered Beast sets were a mess. Some of them were using the wrong  version of the gfx ROMs (that's why they had to be loaded in a strange way) Should be correct now. bayrout1 is the us version not world. wally1 is revision B. Added a few keys with NO_DUMP. More fixes to descriptions and ROM names [Nicola Salmoria].
+- Added sound to Excelsior [Pierpaolo Prazzoli].
+- Fixed title screen glitch in Super Slam [Pierpaolo Prazzoli].
+- Fixed sprite bug in Buccaneers [Pierpaolo Prazzoli].
+- Fixed crash in new Bull Fighter set [Pierpaolo Prazzoli].
+- Added proper PROM decoding for Ring King (Woodplace license) [Pierpaolo Prazzoli].
+- Fixed cocktail mode in Calorie Kun [Pierpaolo Prazzoli].
 - Added -extractcd to convert CHD-CDs back into CDRDAO .bin/.toc images [R. Belmont].
 - AM53cf96.c is now fully configurable: you can have any combination of up to 7 CD-ROMs and/or harddisks attached to the emulated SCSI bus and specify what each one's SCSI ID is [R. Belmont].
 - CD-ROM emulation expanded to support more SCSI commands and bugfix some existing ones [R. Belmont].

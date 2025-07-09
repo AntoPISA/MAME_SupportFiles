@@ -2,7 +2,7 @@
 ----------------------------------------
 
 
-New Games supported or promoted from GAME_NOT_WORKING status
+New Games Supported or Promoted from GAME_NOT_WORKING Status
 ------------------------------------------------------------
 Digger (CVS) [Mike Coates]
 Gunbarich
@@ -10,12 +10,12 @@ Monster Farm Jump
 Trivia Genius [Pierpaolo Prazzoli]
 Vasara 2 (2 sets) [David Haywood]
 
-New Clones supported or promoted from GAME_NOT_WORKING status
+New Clones Supported or Promoted from GAME_NOT_WORKING Status
 -------------------------------------------------------------
 Portraits (set 2) [Pierpaolo Prazzoli]
 Twin Falcons [Brian Troha]
 
-New Non-Working games / clones supported
+New Non-Working Games / Clones Supported
 ----------------------------------------
 Cruisin' Exotica [Aaron Giles]
 Cyberbots: Fullmetal Madness (Euro 950424) [Razoola]
@@ -36,15 +36,15 @@ Source changes:
 - Fixed the generic_fopen() function to ensure that a ROM CRC is present before using it. Otherwise, for NO_DUMP roms an uninitialized string variable is used in the search [Andrea Mazzoleni].
 - Fixed the PSX SIO timer so that it only fires when there is data to send & processes one bit per tick [smf].
 - Major rewrite of the Portraits driver [Pierpaolo Prazzoli]:
-  * Fixed scrolling.
-  * Fixed screen resolution.
-  * Added NVRAM.
-  * Added fake photo when you get the best score.
-  * Fixed service switches and coins.
+  * Fixed scrolling;
+  * Fixed screen resolution;
+  * Added NVRAM;
+  * Added fake photo when you get the best score;
+  * Fixed service switches and coins;
   * Added missing roms and the 2nd set.
 - Several Seibu SPI fixes [Ville Linde]:
-  * Removed all remaining sound hacks.
-  * Added some missing i386 opcodes.
-  * Added support for external read/write handlers to the YMF271  (required for SPI flash ROM updating mode).
-  * Hooked up flash ROMs via the new YMF271 support. 
+  * Removed all remaining sound hacks;
+  * Added some missing i386 opcodes;
+  * Added support for external read/write handlers to the YMF271  (required for SPI flash ROM updating mode);
+  * Hooked up flash ROMs via the new YMF271 support;
   * Fixed various crash bugs in rf2_us, rf2_2k, and rf2_eur.

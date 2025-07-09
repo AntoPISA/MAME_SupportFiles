@@ -25,5 +25,5 @@ Source changes:
 - CHDMAN doesn't output anything useful when you extract a CHD-CD. It should write out a CDRDAO image [David Haywood].
 - Audio tracks on CDs are not compressed at present (or more accurately they're gzip compressed, which is useless). The plan is to use FLAC at some point [David Haywood].
 - Misc fixes [Nathan Woods]:
-  * Changed options.savegame to be a string.  If this is a one character string, then the save state is loaded as before.  If it is a	larger string, then cpu_loadsave_schedule_file() is used.
-  * Added a state_save_check_file(); a call that front ends can use to	validate a state save file.
+  * Changed options.savegame to be a string. If this is a one character string, then the save state is loaded as before. If it is a larger string, then cpu_loadsave_schedule_file() is used;
+  * Added a state_save_check_file(); a call that front ends can use to validate a state save file.

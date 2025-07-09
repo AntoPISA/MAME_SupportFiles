@@ -2,11 +2,11 @@
 --------------------------------------
 
 
-New BIOS added
+New BIOS Added
 --------------
 (atpsx)     Atari PSX [smf]
 
-New games/machines supported
+New Games/Machines Supported
 ----------------------------
 (cbaj)      Cool Boarder Arcade Jam [Guru]
 (lethalen)  Lethal Enforcers (US ver UAE) [R. Belmont]
@@ -15,11 +15,11 @@ New games/machines supported
 (wiggie)    Wiggie Waggie [David Haywood]
 (zintrckb)  Zintrick / Oshidashi Zentrix (hack / bootleg) [David Haywood] (1)
 
-New Non-Working game/clone supported
+New Non-Working Game/Clone Supported
 ------------------------------------
 (lethalej)  Lethal Enforcers (Japan ver JAD) [R. Belmont] (2)
 
-New Promoted Games from GAME_NOT_WORKING status
+New Promoted Games from GAME_NOT_WORKING Status
 -----------------------------------------------
 (radikalb ) Radikal Bikers [Aaron Giles]
 (surfplnt)  Surf Planet [Aaron Giles]
@@ -34,39 +34,39 @@ Notes:
 Source changes:
 ---------------
 - Large Namco update [Nicola Salmoria]:
-  * pacland: Fixed sprite RAM, it was too big and included normal program RAM, causing sprites to be drawn twice. Fixed IRQ enable. Fixed tilemap scroll offsets and sprite positions. Accurate emulation of tile/sprite priority (including fix of bugs introduced when the driver was converted to tilemaps) and sprite visibility area. pacland36b16 is not a bug - colors match the real game.
-  * Added SOUND_NAMCO_CUS30 for better documentation (alias for the standard SOUND_NAMCO).
-  * '>Sky Kid (60A1 Ver.)' works with a patch (a dump of the CUS60A internal ROM is needed to do without the patch).
-  * metrocross: Fixed IRQ enable, this fixes inputs in service mode.
-  * baraduke36rc2gre, it is improved, there are still gaps left but this is correct behaviour verified on the real board.
-  * baraduke, system86: understood how sprite RAM buffering works, this fixes sprite lag but causes a glitch in rthunder (which might be correct behaviour)
-  * system86: totally rewritten the 63701X emulation and moved it to a separate module. Fixed silence compression, this improves quality in some samples; supported volume control.
-  * rthundro37b14red I think is fixed; but the game still sometimes crashes when you die.
+  * pacland: Fixed sprite RAM, it was too big and included normal program RAM, causing sprites to be drawn twice. Fixed IRQ enable. Fixed tilemap scroll offsets and sprite positions. Accurate emulation of tile/sprite priority (including fix of bugs introduced when the driver was converted to tilemaps) and sprite visibility area. pacland36b16 is not a bug - colors match the real game;
+  * Added SOUND_NAMCO_CUS30 for better documentation (alias for the standard SOUND_NAMCO);
+  * '>Sky Kid (60A1 Ver.)' works with a patch (a dump of the CUS60A internal ROM is needed to do without the patch);
+  * metrocross: Fixed IRQ enable, this fixes inputs in service mode;
+  * baraduke36rc2gre, it is improved, there are still gaps left but this is correct behaviour verified on the real board;
+  * baraduke, system86: understood how sprite RAM buffering works, this fixes sprite lag but causes a glitch in rthunder (which might be correct behaviour);
+  * system86: totally rewritten the 63701X emulation and moved it to a separate module. Fixed silence compression, this improves quality in some samples; supported volume control;
+  * rthundro37b14red I think is fixed; but the game still sometimes crashes when you die;
   * rthunder, genpetid: fixed watchdog emulation, this allows entering service mode without resetting..
 - Various ST-V Improvements (brightness controls) [Angelo Salese].
 - Various Hyperstone core improvements [Pierpaolo Prazzoli]
 - Misc fixes [Nathan Woods]:
-  * src/cpu/hd6309/6309ops.c: Fixed the ABCD opcode.
-  * src/sndintrf.c: Fixed a small typo in the DMADAC interface line.
-  * src/sound/tms5220.c: Added a security margin in the estimate of the delay for speech synthesis ready line to come low (needed for a MESS side bug fix).
-  * src/chdman.c: Added some completion messages, and fixed the code that was falsely assuming that progress() was a function pointer.
-  * src/windows/window.c: Changed video_window_proc() to win_video_window_proc() and made non-static so that MESS's window proc can call it.
-  * Changed win_init_window() to use MESS's window proc (within #ifdef MESS of course).
-  * Added a win_suspend_directx global variable to temporarily turn off DirectX usage (used in MESS).
-  * Added a few minor MESS specific #ifdefs.
-  * src/cpuintrf.c: Added an entry for the TMS99100 processor.
+  * src/cpu/hd6309/6309ops.c: Fixed the ABCD opcode;
+  * src/sndintrf.c: Fixed a small typo in the DMADAC interface line;
+  * src/sound/tms5220.c: Added a security margin in the estimate of the delay for speech synthesis ready line to come low (needed for a MESS side bug fix);
+  * src/chdman.c: Added some completion messages, and fixed the code that was falsely assuming that progress() was a function pointer;
+  * src/windows/window.c: Changed video_window_proc() to win_video_window_proc() and made non-static so that MESS's window proc can call it;
+  * Changed win_init_window() to use MESS's window proc (within #ifdef MESS of course);
+  * Added a win_suspend_directx global variable to temporarily turn off DirectX usage (used in MESS);
+  * Added a few minor MESS specific #ifdefs;
+  * src/cpuintrf.c: Added an entry for the TMS99100 processor;
   * src/cpuexec.c: Introduces cpu_getscanlinetime_mt() and cpu_getscanlineperiod_mt(); variants on their namesake calls except they return mame_time instead of double.
 - Improved 053260 and NES APU emulation [Oliver Achten].
 - Various Gaelco3D Improvements [Aaron Giles].
 - ZN Cleanups [smf].
 - Misc 32010 related updates [Quench]:
   - TMS32010 CPU core:
-  * Added internal Data memory map
+  * Added internal Data memory map;
   * Fixed Overflow on the ADDH instruction.
   - Twin Cobra/Wardner:
-  * Converted to Tilemaps.
-  * Corrected Savestate setup.
-  * Little cleanups to the Machine code.
+  * Converted to Tilemaps;
+  * Corrected Savestate setup;
+  * Little cleanups to the Machine code;
   * Adjustments for TMS32010 internal data map.
   - Toaplan1:
   * Corrected Savestate setup.
@@ -75,33 +75,33 @@ Source changes:
   * Adjustments for TMS32010 internal data map.
 - Fixed Vector clipping bug in mhavoc [Alex Eddy].
 - Fixed some GCC warnings [Lawrence Gold]:
-  * src/vidhrdw/rallyx.c: In function `plot_star'.
-  * src/vidhrdw/rallyx.c:395: warning: ISO C89 forbids mixed declarations and code.
-  * src/vidhrdw/ksayakyu.c: In function `draw_sprites'.
-  * src/vidhrdw/ksayakyu.c:92: warning: ISO C89 forbids mixed declarations	and code.
-  * src/drivers/system32.c: In function `sonic_level_load_protection'.
-  * src/drivers/system32.c:539: warning: ISO C89 forbids mixed declarations and code.
-  * src/drivers/madalien.c: In function `video_start_madalien'.
-  * src/drivers/madalien.c:273: warning: ISO C89 forbids mixed declarations and code.
-  * src/machine/am53cf96.c:46: warning: comma at end of enumerator list.
-  * src/drivers/vmetal.c: In function `varia_drawsprites'.
+  * src/vidhrdw/rallyx.c: In function `plot_star';
+  * src/vidhrdw/rallyx.c:395: warning: ISO C89 forbids mixed declarations and code;
+  * src/vidhrdw/ksayakyu.c: In function `draw_sprites';
+  * src/vidhrdw/ksayakyu.c:92: warning: ISO C89 forbids mixed declarations and code;
+  * src/drivers/system32.c: In function `sonic_level_load_protection';
+  * src/drivers/system32.c:539: warning: ISO C89 forbids mixed declarations and code;
+  * src/drivers/madalien.c: In function `video_start_madalien';
+  * src/drivers/madalien.c:273: warning: ISO C89 forbids mixed declarations and code;
+  * src/machine/am53cf96.c:46: warning: comma at end of enumerator list;
+  * src/drivers/vmetal.c: In function `varia_drawsprites';
   * src/drivers/vmetal.c:124: warning: ISO C89 forbids mixed declarations	and code.
 - Discrete Sound updates [Derrick Renaud]:
   - Discrete Sound changes:
-  * Fixed/added more documentation of functions at top of discrete.h.
-  * DISCRETE_555_ASTABLE - changed to use common options with DISCRETE_555_CC.
-  * DISCRETE_TRANSFORMx - fixed bug that preformed math in the wrong order.
+  * Fixed/added more documentation of functions at top of discrete.h;
+  * DISCRETE_555_ASTABLE: Changed to use common options with DISCRETE_555_CC;
+  * DISCRETE_TRANSFORMx: Fixed bug that preformed math in the wrong order;
   * Also added more math functions.
-  -  New Discrete Modules added:
-  * DISCRETE_555_CC - Constant Current based 555 VCO with 8 main configurations, that automatically configure from components used.
-  * DISCRETE_566 - NE566 simulation.
-  * DISCRETE_COMP_ADDER - Multiple parallel capacitor/resistor circuit.
-  * DISCRETE_DAC_R1 - R1 Ladder DAC that automatically configures from components used.
-  * DISCRETE_MIXERx - Resistor/Op Amp mixer stage with filtering that calulates proper gains & filtering. It automatically configure from components used.
+  - New Discrete Modules added:
+  * DISCRETE_555_CC: Constant Current based 555 VCO with 8 main configurations, that automatically configure from components used;
+  * DISCRETE_566: NE566 simulation;
+  * DISCRETE_COMP_ADDER: Multiple parallel capacitor/resistor circuit;
+  * DISCRETE_DAC_R1: R1 Ladder DAC that automatically configures from components used;
+  * DISCRETE_MIXERx: Resistor/Op Amp mixer stage with filtering that calulates proper gains & filtering. It automatically configure from components used;
   * DISCRETE_SCHMITT_OSCILLATOR - VCO based on a Schmitt Inverter.
-  - Game driver changes
-  * poolshrk - Converted to new component value only code.
-  * firetrk, montecar, superbug - Converted to new component value only code. Pulled discrete code out and put in sndhrdw\ataridis.c. montecar still needs filtering on crash sound.
-  * atarifb, canyon & skydiver - minor changes to work with new code.
-  * triplhnt - added component value discrete sound, but have not figured out
+  - Game driver changes:
+  * poolshrk - Converted to new component value only code;
+  * firetrk, montecar, superbug - Converted to new component value only code. Pulled discrete code out and put in sndhrdw\ataridis.c. montecar still needs filtering on crash sound;
+  * atarifb, canyon & skydiver - minor changes to work with new code;
+  * triplhnt - added component value discrete sound, but have not figured out;
   * Shot and Bear Roar video memory locations. These are needed to make sound effects work.

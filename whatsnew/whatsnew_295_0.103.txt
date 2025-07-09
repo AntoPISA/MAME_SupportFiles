@@ -2,7 +2,7 @@
 -------------------------------------
 
 
-New games added or promoted from NOT_WORKING status
+New Games Added or Promoted from NOT_WORKING Status
 ---------------------------------------------------
 Games V18.2 [Pierpaolo Prazzoli, Guru]
 Garogun Seroyang (Korea) [David Haywood, Pierpaolo Prazzoli]
@@ -10,7 +10,7 @@ Mad Ball [David Haywood, Brian Troha]
 MuHanSeungBu (SemiCom Baseball) [David Haywood, Brian Troha]
 Super Model [David Haywood]
 
-New clones added
+New Clones Added
 ----------------
 Crazy Rally (set 2) [David Haywood, Guru]
 Dynamite Duke (Japan) [Pierpaolo Prazzoli, Guru]
@@ -22,7 +22,7 @@ Puzzle Bang Bang [Brian Troha, Pierpaolo Prazzoli]
 Super World Court (World) [Stefan Lindberg]
 The Double Dynamites (Japan) [Pierpaolo Prazzoli, Bryan McPhail, Guru]
 
-New games marked as GAME_NOT_WORKING
+New Games Marked as GAME_NOT_WORKING
 ------------------------------------
 Canvas Croquis [David Haywood]
 Card Line [Tomasz Slanina]
@@ -36,7 +36,7 @@ Shuttle Invader [Tomasz Slanina, Guru]
 
 MAMETesters Bugs Fixed (1):
 ---------------------------
-astrob0102u5gre (Nicola Salmoria)
+- astrob0102u5gre (Nicola Salmoria)
 
 
 Source changes:
@@ -57,21 +57,21 @@ Source changes:
 - Got the DCS-3 sound system working for 'Road Burners' [Aaron Giles].
 - Merged the 'Sprint 4'/'Ultra Tank' drivers and made the following fixes [Stefan Jokisch]:
   * Ultra Tank:
-  - Hardware collision detection (computer is now able to manoeuvre around barriers).
-  - Sprite fixes (invisble tank option works, tank explosion sequence).
-  - Playfield fixes (text colors are different).
-  - Watchdog and coin lockout added.
-  - Sync and color proms added.
-  - Motor sound fix (previously this was hooked up to the wrong address).
-  - Misc internal fixes like cpu speed, RAM size etc.
+  - Hardware collision detection (computer is now able to manoeuvre around barriers);
+  - Sprite fixes (invisble tank option works, tank explosion sequence);
+  - Playfield fixes (text colors are different);
+  - Watchdog and coin lockout added;
+  - Sync and color proms added;
+  - Motor sound fix (previously this was hooked up to the wrong address);
+  - Misc internal fixes like CPU speed, RAM size etc.
   * Sprint 4:
-  - Sound support (inherited from Ultra Tank).
+  - Sound support (inherited from Ultra Tank);
   - Watchdog added.
 - More ST-V updates [Mariusz Wojcieszek]:
-  * Added idle loop skipping for rsgun.
-  * Added RBG caching.
-  * Added RBG "two screens" mode.
-  * Added Critter Crusher (not working due to missing inputs).
+  * Added idle loop skipping for rsgun;
+  * Added RBG caching;
+  * Added RBG "two screens" mode;
+  * Added Critter Crusher (not working due to missing inputs);
   * Fixed several bugs introduced recently with all the other changes.
 - Replaced a few stray exit() calls with osd_die() [Oliver Stoneberg].
 - Some RF5C400 improvements [hoot development team].

@@ -60,8 +60,8 @@ World Cup Volley '95 [David Haywood]
 
 MAME Testers Bugs Fixed (2):
 ----------------------------
-mouja059yel [Hau]
-rimrockn057yel [Aaron Giles]
+- mouja059yel [Hau]
+- rimrockn057yel [Aaron Giles]
 
 
 Driver Improvements:
@@ -90,22 +90,22 @@ Driver Improvements:
 - Improved YMF271C sound quality [Toshiaki Nijiura].
 - Many improvements to Jackie Chan, but still not playable [Sebastien Volpe, David Haywood].
 - Several PSX SPU improvements [smf]:
-  * Added pio spu RAM writes.
-  * Fixed status register read/write.
-  * Internal mixer clamps output to 16 bits to fix distortion.
-  * State saves all registers.
-  * Removed the need for casts by making the decoded sample buffer signed.
+  * Added pio spu RAM writes;
+  * Fixed status register read/write;
+  * Internal mixer clamps output to 16 bits to fix distortion;
+  * State saves all registers;
+  * Removed the need for casts by making the decoded sample buffer signed;
   * DMA read/writes are limited to the spu ram.
 - Some cleanups/renaming in the PGM driver [David Haywood].
 - Some minor NeoGeo and Super Kaneko Nova rendering speedups [Carlos Santillan].
 - ZN updates [smf]:
-  * Added japanese translations of magical date title.
-  * Fixed sfchamp/sfchampj parent/clone relationship.
-  * Emulates taitofx1 watchdog properly.
-  * Fixed system 11 NVRAM hookup.
-  * Added a kludge to start sonic wings ltd in attract mode.
-  * Fixed some issues with vertical display start/end registers.
-  * Added horizontal start/send register emulation.
+  * Added japanese translations of magical date title;
+  * Fixed sfchamp/sfchampj parent/clone relationship;
+  * Emulates taitofx1 watchdog properly;
+  * Fixed system 11 NVRAM hookup;
+  * Added a kludge to start sonic wings ltd in attract mode;
+  * Fixed some issues with vertical display start/end registers;
+  * Added horizontal start/send register emulation;
   * Fixed sound in qsound games.
 
 

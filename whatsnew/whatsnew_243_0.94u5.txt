@@ -2,8 +2,8 @@
 --------------------------------------
 
 
-New Games / Clones supported or promoted from GAME_NOT_WORKING status
----------------------------------------------------------------------
+New Games/Clones Supported or Promoted from GAME_NOT_WORKING Status
+-------------------------------------------------------------------
 Cookie & Bibi [David Haywood]
 Search Eye [Pierpaolo Prazzoli]
 Pachinko Gindama Shoubu [Angelo Salese]
@@ -16,8 +16,12 @@ Best League (bootleg of Big Striker) [Angelo Salese, David Haywood]
 
 New games marked as GAME_NOT_WORKING
 ------------------------------------
-Mazin Wars (Mega Play)
-Grand Slam Tennis (Mega Play) (These have problems with the MegaPlay / Genesis emulation)
+Mazin Wars (Mega Play) [Aaron Giles]
+Grand Slam Tennis (Mega Play) [Aaron Giles] (1)
+
+Note:
+-----
+(1): These have problems with the MegaPlay/Genesis emulation.
 
 
 Source changes:
@@ -34,17 +38,17 @@ Source changes:
 - firetrk, montecar, superbug: Updated to use new 7492 counter. Changed adjusters so frequency goes higher when adjusted to the right [Derrick Renaud].
 - Changes from [Nathan Woods]:
   - 6502dasm.c:
-  * Implemented dasmflags.
+  * Implemented dasmflags;
   * Minor cleanups.
   - src/cpu/m6502/m6502.c:
   * Removed RUNTIME_LOADED cruft.
 - Updated FD1094 documentation [Nicola Salmoria].
-- Corrected 'Shisen 2' visible area (it was too small) [Nicola Salmoria].
-- Fixed dipswitches in 'Shisen 2' [Pierpaolo Prazzoli].
+- Corrected Shisen 2 visible area (it was too small) [Nicola Salmoria].
+- Fixed dipswitches in Shisen 2 [Pierpaolo Prazzoli].
 - Fixed transparency issue in 'Buccaneers' [Pierpaolo Prazzoli].
 - Minor update to SRMP6 driver, adding dips and updating the memory map [Sebastien Volpe].
 - The GFX format on this hardware is still not understood, however the chip used could be related to the ST0016 chip [Sebastien Volpe].
-- Update to the Kaneko drivers, loading correct roms for 'Blood Warrior' [Sebastien Volpe].
+- Update to the Kaneko drivers, loading correct roms for Blood Warrior [Sebastien Volpe].
 - Model 3 video emulation update [Ville Linde].
 - Improves rendering on all the games that currently run [Aaron Giles].
 - Risky Challenge, Pushman, Olibochu, Funny Strip DIP switches [Brian Troha].

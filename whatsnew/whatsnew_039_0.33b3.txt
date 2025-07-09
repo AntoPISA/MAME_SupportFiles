@@ -2,78 +2,91 @@
 ------------------------------------------
 
 
-New games supported:
+New Games Supported:
 --------------------
-Aeroboto (preliminary) [Carlos A. Lozano]
-Altered Beast [Mirko Buffoni]
-Blasto [Frank Palazzolo]
-Carrier Air Wing (preliminary) [Paul Leaman]
-Challenger [Al Kossow]
-Chicki Chicki Boys (Japanese Mega Twins) [Marco Cassili]
-Clowns [Al Kossow, Brad Oliver]
-Curve Ball (no sound because ROMs are missing) [Mike Balfour]
-Darwin 4078 [Ville Laitinen]
-Double Dragon / Double Dragon 2 [Carlos A. Lozano, Rob Rosenbrock, Phil Stroffolino, Ernesto Corvi]
-F1 Dream (preliminary) [Paul Leaman]
-Final Fight (Japanese) [Marco Cassili]
-Ghouls and Ghosts (missing ROMs, doesn't work) [Paul Leaman]
-Golden Axe [Mirko Buffoni]
-Guided Missile [Al Kossow, Brad Oliver]
-Gunfight [Al Kossow, Brad Oliver]
-Hexa [Howie Cohen]
-I, Robot (preliminary) [Dan Boris]
-Juno First [Chris Hardy]
-Kaos [Chris Moore]
-Klax [Aaron Giles]
-Knights of the Round (preliminary) [Paul Leaman]
-Lupin III [Al Kossow, Brad Oliver]
-Passing Shot (preliminary - the System 16 driver needs to support rotation) [Mirko Buffoni]
-Passing Shot [Mirko Buffoni]
-Pnickies [Paul Leaman]
-Red Alert [Mike Balfour]
-Safari [Zsolt Vasvari]
-Sea Wolf [Al Kossow, Brad Oliver]
-Shinobi [Mirko Buffoni]
-Shoot Out [Ernesto Corvi]
-Space Encounters [Al Kossow, Brad Oliver]
-Strider (Japanese) [Marco Cassili]
-Tetris (Sega, bootleg) [Mirko Buffoni]
-Willow (Japanese) [Marco Cassili]
-Zoar [Zsolt Vasvari]
+(aeroboto)    Aeroboto [Carlos A. Lozano]
+(aliensyn)    Alien Syndrome [Mirko Buffoni]
+(altbeast)    Altered Beast [Mirko Buffoni]
+(blasto)      Blasto [Frank Palazzolo]
+(cawingj)     Carrier Air Wing (Japanese) [Paul Leaman]
+(challeng)    Challenger [Al Kossow]
+(clowns)      Clowns [Al Kossow, Brad Oliver]
+(curvebal)    Curve Ball [Mike Balfour] (1)
+(darwin)      Darwin 4078 [Ville Laitinen]
+(ddragon)     Double Dragon [Carlos A. Lozano, Rob Rosenbrock, Phil Stroffolino, Ernesto Corvi]
+(ddragon2)    Double Dragon 2 [Carlos A. Lozano, Rob Rosenbrock, Phil Stroffolino, Ernesto Corvi]
+(f1dream)     F1 Dream [Paul Leaman]
+(ghouls)      Ghouls and Ghosts [Paul Leaman] (2)
+(gmissile)    Guided Missile [Al Kossow, Brad Oliver]
+(goldnaxe)    Golden Axe [Mirko Buffoni]
+(gunfight)    Gunfight [Al Kossow, Brad Oliver]
+(hexa)        Hexa [Howie Cohen]
+(irobot)      I, Robot [Dan Boris]
+(junofrst)    Juno First [Chris Hardy]
+(kaos)        Kaos [Chris Moore]
+(klax)        Klax [Aaron Giles]
+(knights)     Knights of the Round [Paul Leaman]
+(lupin3)      Lupin III [Al Kossow, Brad Oliver]
+(passshtb)    Passing Shot (bootleg) [Mirko Buffoni] (3)
+(pnickj)      Pnickies (Japanese) [Paul Leaman]
+(ponpoko)     Pon Poko [Zsolt Vasvari]
+(redalert)    Red Alert [Mike Balfour]
+(safari)      Safari [Zsolt Vasvari]
+(seawolf)     Sea Wolf [Al Kossow, Brad Oliver]
+(shinobi)     Shinobi [Mirko Buffoni]
+(shootout)    Shoot Out [Ernesto Corvi]
+(spcenctr)    Space Encounters [Al Kossow, Brad Oliver]
+(tetrisbl)    Tetris (Sega, bootleg) [Mirko Buffoni]
+(zoar)        Zoar [Zsolt Vasvari]
+
+New Clones Supported
+--------------------
+(chikij)      Chiki Chiki Boys [Marco Cassili]
+(ddragonb)    Double Dragon (bootleg) [Carlos A. Lozano, Rob Rosenbrock, Phil Stroffolino, Ernesto Corvi]
+(ffightj)     Final Fight (Japanese) [Marco Cassili]
+(klaxalt)     Klax (Alternate) [Aaron Giles]
+(striderj)    Strider (Japanese) [Marco Cassili]
+(willowj)     Willow (Japanese) [Marco Cassili]
+
+Notes:
+------
+(1): No sound because ROMs are missing.
+(2): Missing ROMs, doesn't work.
+(3): Preliminary: the System 16 driver needs to support rotation.
 
 
 These drivers have improved GRAPHICS:
 -------------------------------------
-- All drivers with a handcrafted palette got broken in beta 2. They are now fixed.
-- Better colors in 'Side Pocket' [Marc Vergoossen].
-- Accurate (?) colors in 'Fast Freddie'/'Fly-Boy' [Zsolt Vasvari].
-- Accurate colors in 'Jump Coaster' [Zsolt Vasvari].
-- Fixed colors in 'Road Runner' [Aaron Giles].
-- The 'Gauntlet' drivers are now color-reduced (faster & better) [Aaron Giles].
+- All drivers with a handcrafted palette got broken in beta 2. They are now fixed [Nicola Salmoria].
+- Better colors in Side Pocket [Marc Vergoossen].
+- Accurate (?) colors in Fast Freddie/Fly-Boy [Zsolt Vasvari].
+- Accurate colors in Jump Coaster [Zsolt Vasvari].
+- Fixed colors in Road Runner [Aaron Giles].
+- The Gauntlet drivers are now color-reduced (faster & better) [Aaron Giles].
 - Accurate colors in metack and possibly the other Gameplan games [Chris Moore].
-- Fixed a couple of palette problems with 'Snow Bros'. It also no longer uses a 16 bit video mode, so it's faster [nicola Salmoria].
+- Fixed a couple of palette problems with Snow Bros. It also no longer uses a 16 bit video mode, so it's faster [Nicola Salmoria].
 
 
 These drivers have improved SOUND:
 ----------------------------------
-- Put back sample support in 'Q*Bert Qubes' [Rodimus Prime].
-- Music in '3 Stooges' [Nicola Salmoria].
-- Emulated sound in 'Lunar Lander' [Keith Wilkins].
+- Put back sample support in Q*Bert Qubes [Rodimus Prime].
+- Music in 3 Stooges [Nicola Salmoria].
+- Emulated sound in Lunar Lander [Keith Wilkins].
 - Sound in the Gameplan games [Chris Moore].
-- Increased music tempo in 'Snow Bros' [Nicola Salmoria].
+- Increased music tempo in Snow Bros. [Nicola Salmoria].
 - Updated VLM5030 emulation (Punch Out etc.). Since quality is still bad, the emulator is only used when samples are not avaialble [Tatsuyuki Satoh].
 
 
 These drivers have HIGH SCORE support:
 --------------------------------------
-- 'Locomotion', 'Jungler', 'Commando' (Sega), 'Wonder Boy in Monster Land', 'Rygar', 'Gemini Wing', 'Silkworm', 'City Connection', 'Trojan', 'Up'n Down' [Dani Portillo].
-- Fixed 'Diamond Run' [Mike Balfour].
-- 'Front Line' [Steve Ellenoff].
+- Locomotion, Jungler, Commando (Sega), Wonder Boy in Monster Land, Rygar, Gemini Wing, Silkworm, City Connection, Trojan, Up'n Down [Dani Portillo].
+- Fixed Diamond Run [Mike Balfour].
+- Front Line [Steve Ellenoff].
 
 
 Other drivers changes:
 ----------------------
-- Another step forward in getting 'Super Punch Out' to work (still NOT playable) [Tatsuyuki Satoh].
+- Another step forward in getting Super Punch Out to work (still NOT playable) [Tatsuyuki Satoh].
 - Proper emulation of the ROM decryption in Burger Time [Zsolt Vasvari].
 - Improved Spy Hunter controls (you can play with the mouse or even a wheel now) [Alex Judd].
 - Changed the 6502 emulation to disable interrupts on a reset. Not sure if this is the correct behaviour, but Centipede needed it for the service mode to work. This was actually a change in BETA 1 which I forgot to mention [Nicola Salmoria].

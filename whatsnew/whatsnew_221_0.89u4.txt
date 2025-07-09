@@ -2,11 +2,11 @@
 ----------------------------------------
 
 
-New Games / Clones supported or promoted from GAME_NOT_WORKING status
+New Games / Clones Supported or Promoted from GAME_NOT_WORKING Status
 ---------------------------------------------------------------------
 Desert Breaker (FD1094 317-0196) [Gerald, David Haywood]
 
-New Clones added
+New Clones Added
 ----------------
 Alien Storm (US, 3 Players, FD1094 317-0147) [Gerald]
 Greyhound Trivia (alt questions) [Pierpaolo Prazzoli]
@@ -15,9 +15,17 @@ Shinobi (set 3, System 16A, unprotected) [Gerald, Thierry]
 Tetris (Japan, System 16A, FD1094 317-0093a) [Thierry]
 Wrestle War (FD1094, 317-0102) [Andy Conroy]
 
-New Non-working added
----------------------
-Jackie Chan in Fists of Fire (protection issues)
+New Non-Working Games Added
+---------------------------
+Jackie Chan in Fists of Fire (1) [David Haywood]
+
+Note:
+-----
+(1): Protection issues.
+
+MAMETester Bug Fixed (1):
+-------------------------
+- artwork070u4 fix (BUT)
 
 
 Source changes:
@@ -28,7 +36,6 @@ Source changes:
 - Added support for alt bios set and changed games to use generic unknown dips in decocass driver [David Haywood].
 - Added support for DASMFLAG_STEP_OVER and DASMFLAG_STEP_OUT flags in i386 core [Nathan Woods].
 - Additional 64-bit integer related cleanups in model3/ppc [Lawrence Gold].
-- artwork070u4 fix [BUT].
 - Cleaned up z80 core, removing the optional inexact emulation mode and the leading underscores from macro names to comply with C99 naming conventions [Juergen Buchmueller].
 - Cleanup of Jackal and Mikie driver [Curt Coder].
 - Fixed a history list overrun in New Debugger when the down arrow key is pressed when the history list is empty [Nathan Woods].

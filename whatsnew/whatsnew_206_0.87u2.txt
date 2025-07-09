@@ -2,72 +2,77 @@
 ----------------------------------------
 
 
-New Games supported or promoted from GAME_NOT_WORKING status
+New Games Supported or Promoted from GAME_NOT_WORKING Status
 ------------------------------------------------------------
-Fix Eight (bootleg) [Tomasz Slanina] (turn on invunerability dipswitch to see an intro!)
-Raiders [Mash]
+Fix Eight (bootleg) [Tomasz Slanina] (1)
+Raiders [MASH]
 Title Fight [David Haywood]
 
-New Clones supported or promoted from GAME_NOT_WORKING status
+New Clones Supported or Promoted from GAME_NOT_WORKING Status
 -------------------------------------------------------------
 Crazy climber 2 (Japan Harder) [chaneman]
 Eagle (set 3) [chaneman]
 Nibbler (Olympia) [Costa Sgantzos]
-Pengo (set 4) [Mash]
-Sega Space Attack (set 3) [Mash]
+Pengo (set 4) [MASH]
+Sega Space Attack (set 3) [MASH]
 
-New Non-Working games / clones supported
+New Non-Working Games / Clones Supported
 ----------------------------------------
-Dark Edge (World)
-Dynamite Deka 2 (clone of Dynamite cop) [Chris Hardy]
-Farmer Rebelion (clone of ikki) [Pierpaolo Prazzoli] (Maybe a ROM is bad?)
+Dark Edge (World) [David Haywood]
+Dynamite Deka 2 [Chris Hardy]
+Farmer Rebelion [Pierpaolo Prazzoli] (2)
 Mazer Blazer (set 2) [chaneman]
-Zero Team (set 2)
+Zero Team (set 2) [David Haywood]
+
+Notes:
+------
+(1): Turn on invunerability DIP switch to see an intro.
+(2): Maybe a ROM is bad?
 
 
 Source changes:
 ---------------
 - i960 updates [R. Belmont]:
-  * Added spanbit.
-  * Fixed error noted by ElSemi in spanbit and scanbit.
-  * Added non-queued interrupts to support games with the interrupt table in ROM (this fixes the colors andhanging in Sky Target, and Pilot Kids will need it too).
-  * Added the ability for read/write handlers to declare themselves "noburst", for memory regions which don'tauto-increment the address on i960 bulk transfers.
+  * Added spanbit;
+  * Fixed error noted by ElSemi in spanbit and scanbit;
+  * Added non-queued interrupts to support games with the interrupt table in ROM (this fixes the colors andhanging in Sky Target, and Pilot Kids will need it too);
+  * Added the ability for read/write handlers to declare themselves "noburst", for memory regions which don'tauto-increment the address on i960 bulk transfers;
   * General cleanup of the interrupt handling to remove duplicated code. There should be no functional difference.
 - model2 updates [R. Belmont]:
-  * Properly mapped 'unplaced' ROMs for Daytona and Desert Tank.
-  * Added calls to i960 noburst support for the timer and interrupt control registers.
-  * Updated game status with latest knowledge.
-  * Noted that Last Bronx boots now.
-  * VF2 reparent: 2.1 is parent, ver. B and original arechildren.
-  * SHA1s for lastbexp, doa, and pltkids.
-  * Removed unnecessary code patch from DOA.
-  * Added Martin Marietta co-credit for Desert Tank.
-  * Added EPL Productions co-credit for Behind Enemy Lines.
-  * "Sonic Championship" renamed to "Sonic The Fighters".
-  * Virtual On is "Cyber Troopers" (two words) on the title screen, not "Cybertroopers".
-  * Zero Gunner changed from (Jap) to (Japan).
-  * Mapped framebuffer RAM (used by Last Bronx).
-  * Fixed non-32 bit writes to the interrupt registers.
-  * Fixed serial hardware mapping.
-  * Temporary hack to keep HOTD from freezing until properly implement the timers.
-  * Split the 2O/2A/2B/2C drivers better.  von now prints "MODEL 2BCRX" correctly.
-  * Hack to make Last Bronx run while I track down ani960 core bug that's haunting it.
-  * Patch from ElSemi for Zero Gunner crashing.
-  * Patched Daytona busywait for the TGPs (not sure how it worked without this before).
-  * Fixed 68000 ROM load for skytargt.
-  * Fixed thinko in the interrupt register handling (still no help for Last Bronx, but the wrong way was definitely hurting it worse).
-  * Fixed issue on big-endian machines.
+  * Properly mapped 'unplaced' ROMs for Daytona and Desert Tank;
+  * Added calls to i960 noburst support for the timer and interrupt control registers;
+  * Updated game status with latest knowledge;
+  * Noted that Last Bronx boots now;
+  * VF2 reparent: 2.1 is parent, ver. B and original arechildren;
+  * SHA1s for lastbexp, doa, and pltkids;
+  * Removed unnecessary code patch from DOA;
+  * Added Martin Marietta co-credit for Desert Tank;
+  * Added EPL Productions co-credit for Behind Enemy Lines;
+  * "Sonic Championship" renamed to "Sonic The Fighters";
+  * Virtual On is "Cyber Troopers" (two words) on the title screen, not "Cybertroopers";
+  * Zero Gunner changed from (Jap) to (Japan);
+  * Mapped framebuffer RAM (used by Last Bronx);
+  * Fixed non-32 bit writes to the interrupt registers;
+  * Fixed serial hardware mapping;
+  * Temporary hack to keep HOTD from freezing until properly implement the timers;
+  * Split the 2O/2A/2B/2C drivers better.  von now prints "MODEL 2BCRX" correctly;
+  * Hack to make Last Bronx run while I track down ani960 core bug that's haunting it;
+  * Patch from ElSemi for Zero Gunner crashing;
+  * Patched Daytona busywait for the TGPs (not sure how it worked without this before);
+  * Fixed 68000 ROM load for skytargt;
+  * Fixed thinko in the interrupt register handling (still no help for Last Bronx, but the wrong way was definitely hurting it worse);
+  * Fixed issue on big-endian machines;
   * Added framework so the DSP program uploads are now handled correctly.
 - C352 pitch adjustment [R.Belmont, Cap].
 - Analog Port fixes [Derrick Renaud]:
-  * downtown: Both analog controls were set to player 1.
+  * downtown: Both analog controls were set to player 1;
   * eterm: Crashed, due to inc/dec buttons not being defined for the analog ports.
 - Now loading sync PROM in 'Atari Soccer' [Stefan Jokisch].
 - Added EEPROM and flipscreen to the games in vamphalf driver [Pierpaolo Prazzoli].
 - Improved sound in Hard Head/Popper [Pierpaolo Prazzoli, Corrado Tomaselli].
 - Misc updates [Nathan Woods]:
-  * Created a MAME_VALIDITYCHECKS macro that when defined, can specify whether validity checks should be run.  If undefined, it defaults torunning the validity checks. This will facilitate turning off validity checks in MAME derivative projects.
-  * Please DO NOT turn these off if you are making changes to the MAME source, any changes which fail the validity checks will be rejected.
+  * Created a MAME_VALIDITYCHECKS macro that when defined, can specify whether validity checks should be run.  If undefined, it defaults torunning the validity checks. This will facilitate turning off validity checks in MAME derivative projects;
+  * Please DO NOT turn these off if you are making changes to the MAME source, any changes which fail the validity checks will be rejected;
   * src/windows/fronthlp.c: Changed the stat() call to use Win32 equivalents.
 - Fixed some Compiler Warnings [Lawrence Gold].
 - Improvements to SPI sprite decryption in rf2_2k [Ville Linde].

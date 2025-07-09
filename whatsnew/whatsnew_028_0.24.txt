@@ -3,38 +3,38 @@
 *** TO ALL CONTRIBUTORS: Please do not make use of C++ // comments in your sources. I loose a lot of time every release to adjust them. Then use official source release as a base for your next updates. Use a comment style like in Williams.c sources (this is actually my comment style and almost clear to read). Thanks ***
 
 
-New games supported
+New Games Supported
 -------------------
-(blaster) Blaster [Marc Lafontaine]
-(bubbles) Bubbles [Marc Lafontaine]
+(blaster)  Blaster [Marc Lafontaine]
+(bubbles)  Bubbles [Marc Lafontaine]
 (defender) Defender [Marc Lafontaine]
 (jrpacman) Jr. Pac-Man [Nicola Salmoria]
-(kungfub) Kung Fu Master (O.K.) [Mirko Buffoni]
+(kungfub)  Kung Fu Master (O.K.) [Mirko Buffoni]
 (qbertqub) Q*bert's Qubes [Fabrice Frances]
 (sinistar) Sinistar [Mirko Buffoni]
 (spacezap) Space Zap [Mike Coates, Nicola Salmoria]
-(splat) Splat [Mirko Buffoni]
-(turpin) Turpin [Nicola Salmoria]
+(splat)    Splat [Mirko Buffoni]
+(turpin)   Turpin [Nicola Salmoria]
 
 
 Program changes:
 ----------------
 - Added support for Jr. Pacman. Decryption method provided by David. Colors should be 100% right too. Hiscore saving not supported yet [Nicola Salmoria, Lee Taylor, David Caldwell].
-- I'v found the decryption scheme for garbled chars of 'Lost Tomb' which is now playable. Colors are still wrong [Mirko Buffoni].
-- Also, I've finally fixed my problems with ADPCM decoding, so now 'Kung Fu Master' doesn't need separate samples anymore (I didn't distribuite them because of copyright on sounds). The samples are now calculated during bootstrap of the game [Mirko Buffoni].
-- Added 'Turpin' (another version of Turtles) support. Also colors are 100% correct the two games now [Nicola Salmoria].
-- Added support for 'Qbert Qubes'. Only hitch with the driver: you have to reset (F3) the game at first time when the empty supreme noser table appears, then the table will be correctly filled. Alternatively, you can insert a coin before this empty table appears... Hiscore save not supported yet [Fabrice Frences].
+- I'v found the decryption scheme for garbled chars of Lost Tomb which is now playable. Colors are still wrong [Mirko Buffoni].
+- Also, I've finally fixed my problems with ADPCM decoding, so now Kung Fu Master doesn't need separate samples anymore (I didn't distribuite them because of copyright on sounds). The samples are now calculated during bootstrap of the game [Mirko Buffoni].
+- Added Turpin (another version of Turtles) support. Also colors are 100% correct the two games now [Nicola Salmoria].
+- Added support for Qbert Qubes. Only hitch with the driver: you have to reset (F3) the game at first time when the empty supreme noser table appears, then the table will be correctly filled. Alternatively, you can insert a coin before this empty table appears... Hiscore save not supported yet [Fabrice Frences].
 - New option in the setup menu: "CREDITS". It displays a list of the people who contributed to the current driver. I have surely left out many people, and apologize in advance for that. If you contributed to a driver and your name doesn't appear in the list, please let me know [Mirko Buffoni].
 - Since many people asked for this and Bernd Wiebelt was so kind to do me this gift for my birthday, MAME has now -rotate option. You'll have to turn your monitor (or your head (!) ;) [Mirko Buffoni, Bernd Wiebelt].
-- Nicola fixed definetively 'Kung Fu Master' driver which has now 100% perfect colors and sprite positioning. Thanks to Paul Swan for color scheme. Original version (copyright Irem) is now supposed to be in 'kungfum' directory, while the bootleg (O.K.) is supposed to be in 'kungfub'. Test mode doesn't work for bootleg version (as is right to be). Hi Score Support in each version as well [Nicola Salmoria, Paul Swan].
-- In 'Seicross' now shots are enabled. REMEMBER TO DELETE PREVIOUS .DSW FILE, AND SET "DEMO & DEBUG MODE" TO OFF, AND "SW7B" to 1. Setting SW7B to 0 will cause to play the game without FIRE facility [Mirko Buffoni].
-- Provided drivers for 'Robotron', 'Splat', 'Defender', 'Joust', 'Stargate', 'Bubbles', 'Blaster' and 'Sinistar'. Bubbles doesn't start, and Sinistar do weird things at startup. The other games work very well, though. For this version I provide a set of fonts that can be used to avoid jerkiness in williams games. If you use zipped roms remember to include them in the ZIP files [Marc LaFontaine].
-- Added 'SpaceZap' support. It is based mainly on 'WOW' driver. Mike provided a more stable driver too [Mike Coates, Mirko Buffoni].
+- Nicola fixed definetively Kung Fu Master driver which has now 100% perfect colors and sprite positioning. Thanks to Paul Swan for color scheme. Original version (copyright Irem) is now supposed to be in 'kungfum' directory, while the bootleg (O.K.) is supposed to be in (kungfub). Test mode doesn't work for bootleg version (as is right to be). Hi Score Support in each version as well [Nicola Salmoria, Paul Swan].
+- In Seicross now shots are enabled. REMEMBER TO DELETE PREVIOUS .DSW FILE, AND SET "DEMO & DEBUG MODE" TO OFF, AND "SW7B" to 1. Setting SW7B to 0 will cause to play the game without FIRE facility [Mirko Buffoni].
+- Provided drivers for Robotron, Splat, Defender, Joust, Stargate, Bubbles, Blaster and Sinistar. Bubbles doesn't start, and Sinistar do weird things at startup. The other games work very well, though. For this version I provide a set of fonts that can be used to avoid jerkiness in williams games. If you use zipped roms remember to include them in the ZIP files [Marc LaFontaine].
+- Added SpaceZap support. It is based mainly on WOW driver. Mike provided a more stable driver too [Mike Coates, Mirko Buffoni].
 
 
 Sources changes:
 ----------------
-- Provided new Vesamodes:  320x240 and 512x384. You can select a mode either by -X (e.g. -640) or -XxY (e.g. -640x480). Also fixed a bug that caused -vesaskip 0 not to run properly. Also added -rotate option [Bernd Wiebelt].
+- Provided new Vesamodes: 320x240 and 512x384. You can select a mode either by -X (e.g. -640) or -XxY (e.g. -640x480). Also fixed a bug that caused -vesaskip 0 not to run properly. Also added -rotate option [Bernd Wiebelt].
 - Also, any vesa mode in combination with -noscanlines option can be used to achieve correct aspect ratio on most monitors. This method is of course slower, and can work flawlessy on P166+ class [Mirko Buffoni].
 - Modifications to support Driver Description and Credits [Mirko Buffoni].
 - Nicola added a new mode in drawgfx: TRANSPARENCY_THROUGH. When background has a higher priority of sprites, it's a lot faster using this option than draw sprites and then apply a bitmap with TRASPARENT_COLOR [Nicola Salmoria].

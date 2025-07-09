@@ -2,10 +2,10 @@
 ----------------------------------------
 
 
-New Games / Clones supported or promoted from GAME_NOT_WORKING status
+New Games/Clones Supported or Promoted from GAME_NOT_WORKING Status
 ---------------------------------------------------------------------
 Sukeban Jansi Ryuko [Aaron Giles]
-Shot Rider (new parent, without Sigma license) [Pierpaolo Prazzoli]
+Shot Rider [Pierpaolo Prazzoli] (1)
 Jump Shot Engineering Sample [PokeMAME]
 Van Van Car (bootleg) [Dave Widel]
 Super Glob (pacman HW) [Dave Widel]
@@ -13,84 +13,93 @@ Caterpillar Pacman [Dave Widel]
 DD Crew (Euro, 2 players) [Andreas Thorsen, Thierry]
 Operation Thunderbolt (Japan) [Nicola Salmoria]
 
+Note:
+-----
+(1): New parent, without Sigma license.
+
+
+MAMETester Bugs Fixed (2):
+- othunder074u1gre (Nicola Salmoria)
+- othunder074u1gre3 (Nicola Salmoria)
+
 
 Source changes:
 ---------------
 - Sega update [Aaron Giles]:
-  - Connected rowscroll/colscroll controls, though I don't think anyone uses them.
-  * Upped YM2151 mixing volume, as suggested by Arbee.
-  * Made all the 6844 dumps verified.
-  * Noted that the break LED no longer functions.
-  * Upped YM2151 mixing volume.
-  * Improved the way custom I/O controls work internally.
-  * Rewrote the N7751 path so that it is properly triggered and better described.
-  * Added support for mjleague controls.
-  * Added support for sjryukoa controls.
-  * Hooked up DIP switches for timescna.
-  * Connected up the watchdog (some games use it, some don't).
-  * Removed unused controls from all games' input lists.
-  * Upped YM2151 mixing volume.
-  * Improved the way custom I/O controls work internally.
-  * Added support for sjryuko controls.
-  * Hooked up DIP switches for timescn.
+  - Connected rowscroll/colscroll controls, though I don't think anyone uses them:
+  * Upped YM2151 mixing volume, as suggested by Arbee;
+  * Made all the 6844 dumps verified;
+  * Noted that the break LED no longer functions;
+  * Upped YM2151 mixing volume;
+  * Improved the way custom I/O controls work internally;
+  * Rewrote the N7751 path so that it is properly triggered and better described;
+  * Added support for mjleague controls;
+  * Added support for sjryukoa controls;
+  * Hooked up DIP switches for timescna;
+  * Connected up the watchdog (some games use it, some don't);
+  * Removed unused controls from all games' input lists;
+  * Upped YM2151 mixing volume;
+  * Improved the way custom I/O controls work internally;
+  * Added support for sjryuko controls;
+  * Hooked up DIP switches for timescn;
   * Upped YM2151 mixing volume.
   - drivers/segas18.c:
-  * Added P3 start button to desertbr.
-  * Included 317-0184 dump in ddcrewb.
-  * Upped YM2151 mixing volume.
-  * Cleaned up tilemap handling using the new user_data feature.
-  * Added pixel-accurate scaling to System 16B sprites.
-  * Based on this knowledge, tweaked Hang On, Space Harrier, and 16A sprite systems.
-  * Dixed documentation on 'Hang On/Space Harrier' road chip.
+  * Added P3 start button to desertbr;
+  * Included 317-0184 dump in ddcrewb;
+  * Upped YM2151 mixing volume;
+  * Cleaned up tilemap handling using the new user_data feature;
+  * Added pixel-accurate scaling to System 16B sprites;
+  * Based on this knowledge, tweaked Hang On, Space Harrier, and 16A sprite systems;
+  * Dixed documentation on Hang On/Space Harrier road chip;
   * Fixed memory leak.
 - FD1089 update [Nicola Salmoria, Charles MacDonald]: 
-  * Improved decryption logic.
-  * Added complete table for Enduro Racer.
+  * Improved decryption logic;
+  * Added complete table for Enduro Racer;
   * Added more data to Super Hang On Table.
 - Increased the amount of adjustable memory banks from 24 to 32 [Nathan Woods].
 - ST-V update [Angelo Salese]:
-  * Started to work with the A-Bus protection,it is a sort of data transfer with the cartridge area,more info in the stv.c file. Current implementation just fixes character selection screens in sss,I will work out about this one in the future,it has various "interesting" issues which was thought to be emulation probs(i.e booting in rsgun,textures in elandore etc.).
-  * Added a preliminary timer 1 irq handling,it fixes pblbeach booting but it doesn't work yet because of incomplete VDP-1 emulation.
+  * Started to work with the A-Bus protection,it is a sort of data transfer with the cartridge area,more info in the stv.c file. Current implementation just fixes character selection screens in sss,I will work out about this one in the future,it has various "interesting" issues which was thought to be emulation probs(i.e booting in rsgun,textures in elandore etc);
+  * Added a preliminary timer 1 irq handling,it fixes pblbeach booting but it doesn't work yet because of incomplete VDP-1 emulation;
   * Noticed that ignoring VDP-1 long word access read by SH-2 isn't correct and not needed (because sss is protected rather than using an illegal procedure), it was causing wrong graphics in fhboxers & boot errors in pblbeach,reversed it back to default.
 - Added missing Player 2 controls to Space War (Leijac) [Steve Ellenoff].
-- Pacman driver update [Dave Widel]
+- Pacman driver update [Dave Widel]:
   - Sets added:
-  * jumpshtp: prototype from PokeMAME
-  * vanvanb:  bootleg but it looks earlier.
-  * sprglobp: Not sure if this is the official set, or an accidental merged set with the glob.
+  * jumpshtp: prototype from PokeMAME;
+  * vanvanb: bootleg but it looks earlier;
+  * sprglobp: Not sure if this is the official set, or an accidental merged set with the glob;
   * ctrpllrp: I consider this sig. since it came in it's own cab, and they did change some of the music.
   - Other changes:
-  * Added full memory map, this should fix the ending of 'Ms Pac Man'.
+  * Added full memory map, this should fix the ending of Ms Pac Man;
   * Added a jumpshot dip. I didn't remove any sets, but I mentioned which of them are junk imo and why.
 - Pacman driver update [smf]:
-  * pacman/pengo/jrpacman use the same tile/sprite decode, palette decode & sprite rendering
-  * Renamed pengo sound & video hardware to pacman as it was used their first.
-  * Converted to use tilemaps.
-  * Merged memory maps.
-  * Added ROM mirroring to pacman & moved any game that needs another ROM into another map.
-  * Tidied up the mirroring in the S2650 games.
-  * Grouped the GAME() lines by hardware and then year.
+  * pacman/pengo/jrpacman use the same tile/sprite decode, palette decode & sprite rendering;
+  * Renamed pengo sound & video hardware to pacman as it was used their first;
+  * Converted to use tilemaps;
+  * Merged memory maps;
+  * Added ROM mirroring to pacman & moved any game that needs another ROM into another map;
+  * Tidied up the mirroring in the S2650 games;
+  * Grouped the GAME() lines by hardware and then year;
   * Moved jrpacmbl back into pengo.c.
 - Emulated protection in Golden Axe ROTD [Charles MacDonald, David Haywood].
 - Fixed 65816 dasm error [Nathan Woods].
 - Minor debugger fix. Removed the VK_HOME and VK_END cases for the WM_KEYDOWN event. As far as I can tell, the default action does the trick, and additionally, Shift+Home and Shift+End are also handled correctly [Nathan Woods].
 - Added standard set of Mahjong Inputs [Aaron Giles].
 - Arcadia Update [Mariusz Wojcieszek]:
-  * Changed driver to use multi bios setup.
-  * Added support for TenPlay bios (from 10 games board).
-  * Aadded proper Kickstart 1.3 image (256k instead of 512k).
+  * Changed driver to use multi bios setup;
+  * Added support for TenPlay bios (from 10 games board);
+  * Aadded proper Kickstart 1.3 image (256k instead of 512k);
   * Reverted ar_sdwr to 0.5MB chip ram, and made blitter to discard  writes above chip RAM.
 - Operation Thunderbolt update [Nicola Salmoria]:
-  * Verified and coumented from schematics.
-  * Emulated external volume and panning control.
-  * Added othundrj (region byte change).
-  * Fixed garbage graphics on startup with a kludge (othunder074u1gre).
-  * Also fixed wrong plane graphics at the end of the game (othunder074u1gre3)  but I have no idea how! I completed the game three times and it's not doing it anymore.
+  * Verified and coumented from schematics;
+  * Emulated external volume and panning control;
+  * Added othundrj (region byte change);
+  * Fixed garbage graphics on startup with a kludge;
+  * Also fixed wrong plane graphics at the end of the game  but I have no idea how! I completed the game three times and it's not doing it anymore.
 - Tilemap update: Added a user_data field for tilemaps. You can call tilemap_set_user_data() to set this field internally in the tilemaps. Before  rendering, this value will be copied into the (new) global  tile_info.user_data field, so that your tilemap callback can use it [Aaron Giles].
 - Kaneko update in preparation for data from Blood Warriors [Sebastien Volpe].
 - Preliminary decryption of Shisensho II [Pierpaolo Prazzoli]. Note: still being worked on.
 - Erotictac driver update [Tomasz Slanina]:
   - Few changes to video hw and interrupts.
-  * Added timer.
-  * Gameplay speed should be ok now, as well as title animation and attract mode speed.
+  * Added timer;
+  * Gameplay speed should be ok now, as well as title animation and attract mode speed;
   * Added few notes about sound.

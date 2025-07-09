@@ -2,16 +2,16 @@
 ----------------------------------------
 
 
-New Games Added or Promoted from GAME_NOT_WORKING status
+New Games Added or Promoted from GAME_NOT_WORKING Status
 --------------------------------------------------------
-QB-3 (prototype) [Aaron Giles] (some gfx problems)
-Space Raiders [Frank Palazzolo] (some gfx problems, things need verifying against board)
+QB-3 (prototype) [Aaron Giles] (1)
+Space Raiders [Frank Palazzolo] (2)
 
-New Clones Added or Promoted from GAME_NOT_WORKING status
+New Clones Added or Promoted from GAME_NOT_WORKING Status
 ---------------------------------------------------------
 '99: The Last War (Kyugo) [Mash]
-Atlant Olimpic (bootleg of trackfld) [Pierpaolo Prazzoli]
-Farmer Rebelion (clone of ikki) [Pierpaolo Prazzoli]
+Atlant Olimpic [Pierpaolo Prazzoli]
+Farmer Rebelion [Pierpaolo Prazzoli]
 Ginga NinkyouDen (set 2) [Mash]
 Killer Instinct (proto v4.7) [Aaron Giles]
 Killer Instinct 2 (v1.0) [Aaron Giles]
@@ -19,11 +19,17 @@ Operation Thunderbolt (US, older) [Fabrice Arzeno]
 Tron (set 3) and (set 4) [Mash]
 War of the Worlds (color) [Aaron Giles]
 
-New Non-Working games / clones supported
+New Non-Working Games / Clones Supported
 ----------------------------------------
-Beat the Champ [R. Belmont] (SCSI / CD-ROM emulation problems)
+Beat the Champ [R. Belmont] (3)
 Killer Instinct 2 (v1.4k, upgrade kit) [Aaron Giles]
-Oriental Legend Super (unemulated protection)
+Oriental Legend Super (4)
+
+Notes:
+(1): Some GFX problems.
+(2): Some GFX problems, things need verifying against board.
+(3): SCSI / CD-ROM emulation problems.
+(4): Unemulated protection.
 
 
 Source changes:
@@ -31,25 +37,25 @@ Source changes:
 - Exidy Games update [Aaron Giles]:
   * This update is mainly a bunch of cleanup on the classic Exidy drivers. The memory maps are merged now, and I've gone through and removed a bunch of RAM that wasn't actually present on the real boards. I also fixed up the input ports on several of the bootlegs.
 - Cinematronics Vector driver update [Aaron Giles]:
-  * Completely rewrote the CCPU core to be much simpler and follow MAME semantics.
-  * Rewrote the CCPU disassembler to use the "official" syntax.
-  * Added newly dug-up prototype game QB-3.
-  * Now require the CCPU PROMs for all the games.
-  * Added sound to Barrier, Star Hawk, War of the Worlds, and Boxing Bugs (note that samples don't exist yet, but I'm working with Zonn Moore to get them for everything except Barrier).
-  * Rewrote sound routines for all the games based on schematics and Zonn's documentation.
-  * Fixed sound in Demon (was seriously wrong).
-  * Changed sound handling in 'Solar Quest' to play the music by looping a square wave instead of using canned samples.
-  * Added 64-level support for 'Solar Quest'.
-  * Added proper color support for 'Boxing Bugs' and 'War of the Worlds'.
-  * Added star twinkle effects (not really visible without my future update to vector.c).
-  * Made wotw the black & white hardware which was commonly seen as a 'Star Castle' upgrade.
-  * Added wotwc as the color hardware version (same ROMs).
+  * Completely rewrote the CCPU core to be much simpler and follow MAME semantics;
+  * Rewrote the CCPU disassembler to use the "official" syntax;
+  * Added newly dug-up prototype game QB-3;
+  * Now require the CCPU PROMs for all the games;
+  * Added sound to Barrier, Star Hawk, War of the Worlds, and Boxing Bugs (note that samples don't exist yet, but I'm working with Zonn Moore to get them for everything except Barrier);
+  * Rewrote sound routines for all the games based on schematics and Zonn's documentation;
+  * Fixed sound in Demon (was seriously wrong);
+  * Changed sound handling in Solar Quest to play the music by looping a square wave instead of using canned samples;
+  * Added 64-level support for Solar Quest;
+  * Added proper color support for 'Boxing Bugs' and War of the Worlds;
+  * Added star twinkle effects (not really visible without my future update to vector.c);
+  * Made wotw the black & white hardware which was commonly seen as a 'Star Castle' upgrade;
+  * Added wotwc as the color hardware version (same ROMs);
   * Cleaned up and fixed input ports for all the games.
-- Namco IC update [Phil Stroffolino]
-  * Fixes to the advanced ROZ chip used by System FL, Namco NB2, and some Namco System 2 games. Huge improvements to Mach Breakers, and game specific ROZ hacks have been removed.
-  * Fixes for the ROZ system used in older System2 games; in particular Dragon Blade glitches are no more.
-  * Abstraction for the tilemap system used in many Namco titles.
-  * Merged memory maps.
+- Namco IC update [Phil Stroffolino]:
+  * Fixes to the advanced ROZ chip used by System FL, Namco NB2, and some Namco System 2 games. Huge improvements to Mach Breakers, and game specific ROZ hacks have been removed;
+  * Fixes for the ROZ system used in older System2 games; in particular Dragon Blade glitches are no more;
+  * Abstraction for the tilemap system used in many Namco titles;
+  * Merged memory maps;
   * The ROZ fixes unfortunately use a handful of custom code, to work around limitations oftilemap.c's roz support.  I'll improve tilemap.c when I get a chance.
 - Added some hooks to C 68k core in preparation for Sega decryption updates [Olivier Galibert].
 - Hooked up GNET bios roms so boot screen shows [smf].

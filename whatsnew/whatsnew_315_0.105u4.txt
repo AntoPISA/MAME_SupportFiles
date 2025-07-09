@@ -2,12 +2,12 @@
 ---------------------------------------
 
 
-New games added or promoted from NOT_WORKING status
+New Games Added or Promoted from NOT_WORKING Status
 ---------------------------------------------------
 Tetris (D.R. Korea) [David Haywood]
 Knuckle Bash 2 (bootleg) [Quench]
 
-New clones added
+New Clones Added
 ----------------
 Metal Slug 6 (Metal Slug 3 bootleg) [Mame32Plus]
 Metal Slug 5 (JAMMA PCB) [Mame32Plus]
@@ -16,29 +16,29 @@ Night Slashers (Over Sea Rev 1.2) [Stefan Lindberg]
 Double Dragon (World Set 2) [Stefan Lindberg]
 
 
-MAMETesters Bugs Fixed (3):
----------------------------
-invaders0105u2gre (Giuseppe Gorgoglione)
-taitosj0105u3yel (Aaron Giles)
-wardner0105u3red (Aaron Giles)
+MAME Testers Bugs Fixed (3):
+----------------------------
+- invaders0105u2gre (Giuseppe Gorgoglione)
+- taitosj0105u3yel (Aaron Giles)
+- wardner0105u3red (Aaron Giles)
 
 
 Source changes:
 ---------------
 - Nintendo 64 system improvements [Ville Linde, Ryan Holtz]:
-  * Fixed a major bug in the RSP core.
-  * Rewrote the PIF handling.
+  * Fixed a major bug in the RSP core;
+  * Rewrote the PIF handling;
   * Slightly improved triangle rendering.
 - Added a NULL check on memory_set_bankptr(), memory_configure_bank() and memory_configure_bank_decrypted() [Nathan Woods].
 - Added support in the debugger memory window to change the number of bytes displayed per row [Andrew Gardner].
 - Started simulation of orlegend super/special protection [XingXing, ElSemi].
-- Fixed colors and music tempo in 'Perfect Billiard' [Sonikos].
+- Fixed colors and music tempo in Perfect Billiard [Sonikos].
 - Cleaned up 6840 implementation and revised scorpion2 driver's handling of unmapped regions. Also updated the MPU4 memory map [El Condor].
 - Major Toaplan 2 driver cleanup [Quench]:
-  * Added Knuckle Bash 2 (kbash2).
-  * Consolidated the Read/Write memory maps.
-  * Fixed coin counters on a few games.
-  * Raised the volumes on a few games.
+  * Added Knuckle Bash 2 (kbash2);
+  * Consolidated the Read/Write memory maps;
+  * Fixed coin counters on a few games;
+  * Raised the volumes on a few games;
   * Cleaned the inputs by: Adding input inheritance and DIPSW locations; added conditional dependance to DIPSWs where required. Fixing a few incorrect inputs here and there.
 - Fixed/improved DIP switches in the m92, afega, tumbleb, and yunsun16 drivers [Twisty].
 - Cleaned up the liberate.c driver [Sonikos].

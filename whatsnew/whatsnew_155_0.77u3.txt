@@ -2,47 +2,55 @@
 ----------------------------------------
 
 
-New Games supported or promoted from GAME_NOT_WORKING status
+New Games Supported or Promoted from GAME_NOT_WORKING Status
 ------------------------------------------------------------
 Gals Hustler [Pierpaolo Prazzoli, David Haywood]
-Hot Rod [GreyRogue, Olivier Galibert] ** you must init the default settings or it won't work properly **
+Hot Rod [GreyRogue, Olivier Galibert] (1)
 Monkey Mole Panic [Luca Elia]
 
-New Clones supported or promoted from GAME_NOT_WORKING status
+New Clones Supported or Promoted from GAME_NOT_WORKING Status
 -------------------------------------------------------------
+Kingdom Grand Prix (hack?) [Brian Troha] (2)
+Power Instinct (USA alt bootleg) [Pierpaolo Prazzoli] (3)
+Roller Aces (set 2) [Pierpaolo Prazzoli]
 Street Fighter the Movie (1.11) [Brian Troha]
 Sorcer Striker (hack?) [Brian Troha]
-Kingdom Grand Prix (hack?) [Brian Troha] (difficult to verify if these are genuine)
-Power Instinct (USA alt bootleg) [Pierpaolo Prazzoli] (sound not yet working)
-Roller Aces (set 2) [Pierpaolo Prazzoli]
 
-New Non-Working games / clones supported
+New Non-Working Games / Clones Supported
 ----------------------------------------
-Malzak [Barry Rodewald] (collisions don't work)
-Ashita no Joe [David Haywood] (incomplete set)
+Ashita no Joe [David Haywood] (4)
+Malzak [Barry Rodewald] (5)
+
+Notes:
+------
+(1): You must init the default settings or it won't work properly.
+(2): Difficult to verify if these are genuine.
+(3): Sound not yet working.
+(4): Incomplete set.
+(5): Collisions don't work.
 
 
 Source changes:
 ---------------
 - Added SHA1 Information to remaining drivers.
 - Seattle (and related) Improvements [Aaron Giles]:
-  * Added ADSP2104 variant to the ADSP2100 core.
-  * Fixed ROM loading code in the ADSP2100 core.
-  * Fixed several minor bugs that affected Biofreaks and California Speed.
-  * Included several DIP switch fixes from Brian Troha.
-  * Fixed input ports for California Speed and SF Rush.
-  * Increased default visible area to handle Biofreaks
-  * Added speedups to Blitz and Blitz 2000
-  * Made sure the IDE controller waits a minimum amount of time before generating an interrupt
-  * The IDE controller features buffer is now filled in completely
-  * Fixed code that reads the bus master status register from a word offset
-  * Tweaked the Midway PIC handling so that Biofreaks can read its serial number
-  * Changed the mechanism for DCS to report buffer full/empty states
-  * Added IOASIC support for buffer full/buffer empty interrupts from DCS
-  * Added preliminary DCS support for ADSP-2104-based sound
-  * Added code to clip the Voodoo vertexes to 1/16th of a pixel increments
-  * Fixed writes to the palette RAM on the Voodoo.
-  * Fixed small errors in the Voodoo rendering when bilinear filtering.
+  * Added ADSP2104 variant to the ADSP2100 core;
+  * Fixed ROM loading code in the ADSP2100 core;
+  * Fixed several minor bugs that affected Biofreaks and California Speed;
+  * Included several DIP switch fixes from Brian Troha;
+  * Fixed input ports for California Speed and SF Rush;
+  * Increased default visible area to handle Biofreaks;
+  * Added speedups to Blitz and Blitz 2000;
+  * Made sure the IDE controller waits a minimum amount of time before generating an interrupt;
+  * The IDE controller features buffer is now filled in completely;
+  * Fixed code that reads the bus master status register from a word offset;
+  * Tweaked the Midway PIC handling so that Biofreaks can read its serial number;
+  * Changed the mechanism for DCS to report buffer full/empty states;
+  * Added IOASIC support for buffer full/buffer empty interrupts from DCS;
+  * Added preliminary DCS support for ADSP-2104-based sound;
+  * Added code to clip the Voodoo vertexes to 1/16th of a pixel increments;
+  * Fixed writes to the palette RAM on the Voodoo;
+  * Fixed small errors in the Voodoo rendering when bilinear filtering;
   * Fixed handling of local alpha blending on the Voodoo
 - STV Improvements [Angelo Salese. Mariusz Wojcieszek].
 - Attempted to improve quizpani sound banking [Pierpaolo Prazzoli].
@@ -52,15 +60,15 @@ Source changes:
 - Made sure each bitmap is aligned on a 16-bit boundary [Brad Oliver].
 - Updated Vball driver to use graphics extracted from origianl PCB [Jarek Burczynski].
 - Fixed viofight to only have one OKI [Jarek Burczynski]:
-  * Fixed adpcm sound in viofight: now there's is only one OKI M6295 chip.
-  * Corrected Z80 clock in viofight.
-  * Corrected viofight ROM names.
+  * Fixed adpcm sound in viofight: Now there's is only one OKI M6295 chip;
+  * Corrected Z80 clock in viofight;
+  * Corrected viofight ROM names;
   * Added some info about PALs: viofight, nastar.
 - Misc Fixes for MESS [Nathan Woods]:
-  * Added auto_strdup(), just an auto_malloc'd version of strdup().
-  * Cleanups in UI string support, primarily to more easily support MESS specific strings without modifying MAME files. Also removed uistring_shutdown(), which is made unnecessary by auto_strdup().
-  * Adds osd_die() function; a friendlier way to die in some	unexpected fatal way than exit(-1) or [shudder] raise(SIGABRT).
-  * Adds #ifndef <headername>_H protection.
+  * Added auto_strdup(), just an auto_malloc'd version of strdup();
+  * Cleanups in UI string support, primarily to more easily support MESS specific strings without modifying MAME files. Also removed uistring_shutdown(), which is made unnecessary by auto_strdup();
+  * Adds osd_die() function; a friendlier way to die in some unexpected fatal way than exit(-1) or [shudder] raise(SIGABRT);
+  * Adds #ifndef <headername>_H protection;
   * Adds minor code within #ifdef MESS.
 - TMS9900 inline asm update. The syntax for the inline ppc assembly in the tms9900 core has changed slightly [David Haywood].
 - Hooked up Backgrounds in Miss Bubble 2 [Angelo Salese].

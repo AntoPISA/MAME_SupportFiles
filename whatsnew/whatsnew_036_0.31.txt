@@ -165,80 +165,80 @@ These drivers have improved GRAPHICS:
   * Traverse USA [Gerald Vanderick]
   * Zaxxon [Gerald Vanderick]
 
-- Consolidated the Exidy drivers. Accurate colors in 'Venture', 'Mouse Trap' and 'Pepper 2' [Mike Balfour].
-- Fixed aspect ratio in 'Major Havoc' [Al Kossow].
-- Fixed pixel doubled sprites in 'Exerion' [John Butler].
-- Proper overlay emulation in 'Circus' [Zsolt Vasvari].
-- Fixed double size sprites in 'Galaga' when screen is flipped [ehrhard@csd.de].
-- Better colors in 'Blue Print' [Martin Searle].
-- Fixed disappearing background at the end of the tunnel in 'Super Zaxxon' [Nicola Salmoria].
+- Consolidated the Exidy drivers. Accurate colors in Venture, Mouse Trap and Pepper 2 [Mike Balfour].
+- Fixed aspect ratio in Major Havoc [Al Kossow].
+- Fixed pixel doubled sprites in Exerion [John Butler].
+- Proper overlay emulation in Circus [Zsolt Vasvari].
+- Fixed double size sprites in Galaga when screen is flipped [ehrhard@csd.de].
+- Better colors in Blue Print [Martin Searle].
+- Fixed disappearing background at the end of the tunnel in Super Zaxxon [Nicola Salmoria].
 - Support for the complete Swimmer set. No more bad graphics [Brad Oliver].
-- Gradient filled background in 'Rescue' and 'Minefield' [Mike Coates].
+- Gradient filled background in Rescue and Minefield [Mike Coates].
 - New antialiasing code for the vector games. A bit slower than before, but it looks terrific. You can turn it off with -noantialias. Also two new options:
 
   -beam #         # in the range of 1.00 through 16.00 (# is float)
   -flicker %      % is optional (% is float), no number sets default flicker valid range is 0.00 to 100.00 (0=none 100=maximum)
   -beam sets the width in pixels of the vectors, while -flicker makes them flicker to simulate the behaviour of a real monitor [Andrew Caldwell].
 
-- Improved handling of vector games. 'Battlezone' and 'Major Havoc' now do correct clipping [Aaron Giles, Bernd Wiebelt].
-- 16 bit color support for games which need it (e.g. 'Rastan', 'Gauntlet', 'Black Tiger', and many others). It is on by default, since it looks much better; of course it's also slower, so you can turn it off and revert to the previous 8 bit downgraded palette using (in the DOS version) the -depth 8 command line option [Aaron Giles].
-- I discovered that 'Locomotion' runs on (almost) the same graphics hardware as 'Rally X'. This fixed the smoke which was using wrong graphics (and had instead to be drawn like the dots in the 'Rally X' radar) [Nicola Salmoria].
+- Improved handling of vector games. Battlezone and Major Havoc now do correct clipping [Aaron Giles, Bernd Wiebelt].
+- 16 bit color support for games which need it (e.g. Rastan, Gauntlet, Black Tiger, and many others). It is on by default, since it looks much better; of course it's also slower, so you can turn it off and revert to the previous 8 bit downgraded palette using (in the DOS version) the -depth 8 command line option [Aaron Giles].
+- I discovered that 'Locomotion' runs on (almost) the same graphics hardware as Rally X. This fixed the smoke which was using wrong graphics (and had instead to be drawn like the dots in the Rally X radar) [Nicola Salmoria].
 - Improved the blitter for the Williams games. 'Sinistar' now works correctly [Aaron Giles, Brad Oliver].
-- Fixed sprites in 'Gauntlet' [Aaron Giles].
-- Merged the 'Qix' and 'Zookeeper' drivers, they now also support rotation [John Butler].
+- Fixed sprites in Gauntlet [Aaron Giles].
+- Merged the Qix and Zookeeper drivers, they now also support rotation [John Butler].
 
 
 These drivers have new or improved SOUND:
 -----------------------------------------
-- New YM2151 emulator, used by 'Rastan' and others [Jarek Burczynski].
+- New YM2151 emulator, used by Rastan and others [Jarek Burczynski].
 - Improved YM2203 and YM2151 emulator, and DAC interface, with 16 bit samples support (Use -sb 16 to turn on 16 bit samples) [Tatsuyuki Satoh].
 - AY8910 and SN76496 support 16 bit samples as well [Tatsuyuki Satoh].
 - Improved ADPCM support, plus support for the OKIM6295 ADPCM chip. Several drivers use these [Aaron Giles].
-- Fixed sound in 'Exed Exes'; it has one 8910 and two 76496, not two 8910 [Nicola Salmoria].
-- Added back speech sample support to 'Q*Bert' [John Butler, Howie Cohen].
-- Sound in 'Zaxxon' and 'Berzerk', through samples [Alex Judd].
-- Better speech in 'Gorf' [Alex Judd].
-- Better sound in 'Nibbler' [Brian Levine].
-- Fixed missing/bad sound effects in 'Jungle King' [Nicola Salmoria].
-- A first attempt at sound in 'Donkey Kong 3' / 'Punch Out'. These two Nintendo games use the same sound hardware as the NES console [Nicola Salmoria].
-- Music tempo and pitch in 'Locomotion', 'Time Pilot', 'Pooyan', 'Tutankham' and 'Roc'n Rope' should be accurate (I believe they all use the same sound board) [Jim Hernandez].
+- Fixed sound in Exed Exes; it has one 8910 and two 76496, not two 8910 [Nicola Salmoria].
+- Added back speech sample support to Q*Bert [John Butler, Howie Cohen].
+- Sound in Zaxxon and Berzerk, through samples [Alex Judd].
+- Better speech in Gorf [Alex Judd].
+- Better sound in Nibbler [Brian Levine].
+- Fixed missing/bad sound effects in Jungle King [Nicola Salmoria].
+- A first attempt at sound in Donkey Kong 3/Punch Out. These two Nintendo games use the same sound hardware as the NES console [Nicola Salmoria].
+- Music tempo and pitch in Locomotion, Time Pilot, Pooyan, Tutankham and Roc'n Rope should be accurate (I believe they all use the same sound board) [Jim Hernandez].
 - Improved pitch in many games.
-- Sound in 'Targ' and 'Spectar' (need samples) [Dan Boris].
-- Fixed ADPCM sample support in 'Rastan' [Jarek Burczynski].
-- Fixed sound pitch and Mario jump in 'Donkey Kong' [Howie Cohen, Brad Oliver].
-- Speech in 'Mat Mania' [Nicola Salmoria].
-- Speech in 'Sinistar', through samples [Howie Cohen].
-- Sound in 'Fire Trap' and 'Silkworm' (Sound Blaster needed) [Nicola Salmoria].
-- Music in 'Bubble Bobble' (Sound Blaster needed) [Nicola Salmoria].
-- Sound in 'Break Thru' (Sound Blaster needed) [Bryan McPhail].
-- Added support for missing samples to 'Donkey Kong Jr.' [Howie Cohen].
+- Sound in Targ and Spectar (need samples) [Dan Boris].
+- Fixed ADPCM sample support in Rastan [Jarek Burczynski].
+- Fixed sound pitch and Mario jump in Donkey Kong [Howie Cohen, Brad Oliver].
+- Speech in Mat Mania [Nicola Salmoria].
+- Speech in Sinistar, through samples [Howie Cohen].
+- Sound in Fire Trap and Silkworm (Sound Blaster needed) [Nicola Salmoria].
+- Music in Bubble Bobble (Sound Blaster needed) [Nicola Salmoria].
+- Sound in Break Thru (Sound Blaster needed) [Bryan McPhail].
+- Added support for missing samples to Donkey Kong Jr. [Howie Cohen].
 
 
 These drivers have HIGH SCORE support:
 --------------------------------------
-- 'Sidearms', 'Breakthru', 'Mikie', '1943 Kai', 'Shaolin's Road', pengoa [Gerrit Van Goethem].
-- The first time you play 'Q*Bert', 'Q*Bert Qubes', 'Krull', 'Mad PLanets', 'Three Stooges', the high scores are automatically initialized to the default. Note: your old high scores will be lost, sorry [Nicola Salmoria].
-- The first time you play 'Track'n Field' and 'Hyper Sports' the high scores are automatically initialized to the default. Your old high scores will NOT be be lost here ;-) [Nicola Salmoria].
-- 'Astro Fighter' [Santeri Saarimaa].
-- 'Tazz-Mania', 'Space Firebird' [Chris Moore].
-- 'Targ', 'Spectar' [Mike Balfour].
-- 'Fire Trap', 'Fantasy' [Dani Portillo].
-- Fixed 'Espial' [Dani Portillo].
-- Fixed scores over 100,000 in 'Donkey Kong'/'Donkey Kong Jr.' [Wiebo de Wit].
+- Sidearms, Breakthru, Mikie, 1943 Kai, Shaolin's Road, pengoa [Gerrit Van Goethem].
+- The first time you play Q*Bert, Q*Bert Qubes, Krull, Mad PLanets, Three Stooges, the high scores are automatically initialized to the default. Note: your old high scores will be lost, sorry [Nicola Salmoria].
+- The first time you play Track'n Field and Hyper Sports the high scores are automatically initialized to the default. Your old high scores will NOT be be lost here ;-) [Nicola Salmoria].
+- Astro Fighter [Santeri Saarimaa].
+- Tazz-Mania, Space Firebird [Chris Moore].
+- Targ, Spectar [Mike Balfour].
+- Fire Trap, Fantasy [Dani Portillo].
+- Fixed Espial [Dani Portillo].
+- Fixed scores over 100,000 in Donkey Kong/Donkey Kong Jr. [Wiebo de Wit].
 
 
 Other drivers changes:
 ----------------------
-- Added the missing third button to 'Iron Horse' [Stuart Campbell].
+- Added the missing third button to Iron Horse [Stuart Campbell].
 - Fixes to dip switches and input ports in several games [Marco Cassili].
 - Better collision detection in the Exidy games (most noticeable in Venture upper left room) [Mike Balfour].
-- Added missing action button to 'Diamond Run' [Yves Colombani].
-- Added Invulnerability dip switch to Japanese 'Ghosts'n Goblins' [mbeighau@iies.es].
-- Fixed 'Bubbles' [Marc Lafontaine].
+- Added missing action button to Diamond Run [Yves Colombani].
+- Added Invulnerability DIP switch to Japanese Ghosts'n Goblins [mbeighau@iies.es].
+- Fixed Bubbles [Marc Lafontaine].
 - Major cleanup of the Williams drivers [Aaron Giles].
-- Fixed disappearing guards and other wrong behaviours in 'Bagman' which were caused by copy protection [Jarek Burczynsk].
-- Fixed crashes in 'Rastan' [Barry Rodewald].
-- Fixed service mode in 'Food Fight' [Aaron Giles].
+- Fixed disappearing guards and other wrong behaviours in Bagman which were caused by copy protection [Jarek Burczynsk].
+- Fixed crashes in Rastan [Barry Rodewald].
+- Fixed service mode in Food Fight [Aaron Giles].
 
 
 Changes to the main program:
@@ -279,7 +279,7 @@ Changes to the main program:
 
 
 Source changes:
-----------------
+---------------
 - VERY IMPORTANT NOTE FOR PORTERS: now the function osd_new_bitmap() must allocate also a "safety area" 8 pixels wide all around the bitmap. This is required because, for performance reasons, some graphic routines don't clip at boundaries of the bitmap [Nicola Salmoria].
 - The DOS version is now compiled with GCC 2.8.0, optimized for Pentium [Nicola Salmoria].
 - New timer-based event scheduler. This is a major change which is used throughout the code. See timer.c and cpuintrf.c to get an idea of the many things it does. One of the many benefits this has is that dip switches in Do's Castle now work, but there's an endless list of things affected [Aaron Giles].

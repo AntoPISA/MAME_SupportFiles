@@ -2,17 +2,17 @@
 ------------------------------------------
 
 
-New games supported:
+New Games Supported:
 --------------------
 1943 (Japanese) [Nicola Salmoria]
 720 Degrees [Aaron Giles]
-APB (preliminary, and bad ROMs) [Aaron Giles]
+APB [Aaron Giles] (1)
 Blasteroids [Aaron Giles]
 Championship Sprint [Aaron Giles]
-Crazy Balloon (preliminary) [Nicola Salmoria]
+Crazy Balloon [Nicola Salmoria] (2)
 Escape from the Planet of Robot Monsters [Aaron Giles]
 Eyes [Zsolt Vasvari]
-Ghouls 'n Ghosts (new, complete set) (preliminary) [Paul Leaman]
+Ghouls 'n Ghosts [Paul Leaman] (3)
 Head On [Al Kossow]
 Invinco / Deep Scan [Al Kossow]
 Jack Rabbit [Nicola Salmoria]
@@ -22,48 +22,56 @@ Paperboy [Aaron Giles]
 Ponpoko [Zsolt Vasvari]
 Space Seeker [Nicola Salmoria]
 Space Trek [Al Kossow]
-Super Space Invaders '91 (preliminary) [Howie Cohen]
+Super Space Invaders '91 [Howie Cohen] (4)
 Super Sprint [Aaron Giles]
 Tranquilizer Gun [Al Kossow]
-Xenophobe (preliminary) [Bryan McPhail]
+Xenophobe [Bryan McPhail] (5)
 Xybots [Aaron Giles]
 Zyyzzyxx [Brad Oliver]
+
+Notes:
+-----
+(1): Preliminary.
+(2): Preliminary and bad ROMs.
+(3): New, complete set; preliminary.
+(4): Preliminary.
+(5): Preliminary.
 
 
 These drivers have improved GRAPHICS:
 -------------------------------------
-- Accurate colors in 'Eggs' [Gerald Vanderick].
-- Accurate colors in 'Warp Warp' [Nicola Salmoria].
-- Accurate colors in 'Wonder Boy Deluxe', 'Up'n Down' and 'Pitfall II' [Nicola Salmoria].
-- Accurate colors in 'Zoar' [Zsolt Vasvari].
+- Accurate colors in Eggs [Gerald Vanderick].
+- Accurate colors in Warp Warp [Nicola Salmoria].
+- Accurate colors in Wonder Boy Deluxe, Up'n Down and Pitfall II [Nicola Salmoria].
+- Accurate colors in Zoar [Zsolt Vasvari].
 - Some fixes to the System 16 games [Phil Stroffolino].
-- Fixed colors in 'Paperboy' [Aaron Giles].
+- Fixed colors in Paper Boy [Aaron Giles].
 - Some fiddling with the Atari vector games frame rates [Nicola Salmoria].
 - Slightly reduced the visible area of the Williams games, I'm not sure which would be the correct setting though [Nicola Salmoria].
-- Better colors in 'Red Alert' [Mike Balfour].
+- Better colors in Red Alert [Mike Balfour].
 
 
 These drivers have improved SOUND:
 ----------------------------------
-- Sped up music tempo in 'Gun Dealer' [Nicola Salmoria].
-- 'Wizard of Wor' supports word samples. Only 30% of the needed samples are available, however [Alex Judd].
-- Fixed 'D-Day' [Zsolt Vasvari].
+- Sped up music tempo in Gun Dealer [Nicola Salmoria].
+- Wizard of Wor supports word samples. Only 30% of the needed samples are available, however [Alex Judd].
+- Fixed D-Day [Zsolt Vasvari].
 
 
 These drivers have HIGH SCORE support:
 --------------------------------------
-- Fixed 'Black Tiger', 'Bank Panic' and 'The End' [Nicola Salmoria].
-- 'World Cup '90' [Juan Carlos Lorente].
+- Fixed Black Tiger, Bank Panic and The End [Nicola Salmoria].
+- World Cup '90 [Juan Carlos Lorente].
 
 
 Other drivers changes:
 ----------------------
-- Support for the complete 'Curveball' set. This also fixes the crash [Nicola Salmoria].
+- Support for the complete Curveball set. This also fixes the crash [Nicola Salmoria].
 - Many improvements to the DECO games, especially Heavy Barrel [Bryan McPhail].
-- Sped up 'Route 16' [Zsolt Vasvari].
-- Lots of clean up, consolidation, dip switches additions, color fixes to the 'Carnival' driver (which is now called vicdual.c, since Carnival is just one of the many games which run on that hardware) [Marco Cassili].
+- Sped up Route 16 [Zsolt Vasvari].
+- Lots of clean up, consolidation, dip switches additions, color fixes to the Carnival driver (which is now called vicdual.c, since Carnival is just one of the many games which run on that hardware) [Marco Cassili].
 - Slowed down a little the Sega raster games.
-- You can assign a joystick button to the gear shift in 'Spy Hunter'.
+- You can assign a joystick button to the gear shift in Spy Hunter.
 - Red Alert accepts coins [Mike Balfour].
 
 
@@ -72,7 +80,7 @@ Changes to the main program:
 - Increased the default gamma correction for the DOS version to 1.2. This will not have effect unless you change it in MAME.CFG (or just delete the file) [Nicola Salmoria].
 - Set back the default vgafreq to -1 (=auto). This is necessary for -vsync to pick the correct freq (most of the time) when used with tweaked VGA modes. This will not have effect unless you change it in MAME.CFG (or just delete the file) [Nicola Salmoria].
 - Fixed crash in -verifyroms which occurred in beta 3 [Nicola Salmoria].
-- Fixed -ror and -rol with ORIENTATION_SWAP_XY games (e.g. 'Kick') and ORIENTATION_FLIP_X games (e.g. 'Discs of Tron') [Nicola Salmoria].
+- Fixed -ror and -rol with ORIENTATION_SWAP_XY games (e.g. 'Kick') and ORIENTATION_FLIP_X games (e.g. Discs of Tron) [Nicola Salmoria].
 - In the DOS version, -vsync is supported for games running at 57fps (e.g. 'Moon Patrol'). However, due to the sync rate being different, the game runs 6% faster than it should [Nicola Salmoria].
 
 

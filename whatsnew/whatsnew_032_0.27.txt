@@ -3,44 +3,44 @@
 REMEMBER: IF A GAME DOESN'T WORK, TRY DELETING THE .CFG FILE IN ITS DIRECTORY. There has been much talk about the License under which MAME is released. We had to drop the GPL because it was not applicable. See readme.txt for the new rules.
 
 
-New games supported
+New Games Supported
 -------------------
-(blueprnt) Blue Print [Nicola Salmoria]
-(bosco)    Bosconian [Martin Scragg]
-(bublbobl) Bubble Bobble [Chris Moore]
-(cavenger) Cosmic Avenger [F. Kurokawa]
-(ckongpt2a)Crazy Kong Part II (set 2) [Mirko Buffoni]
-(digdug2)  Dig Dug 2 [Aaron Giles]
-(eggs)     Eggs [Mirko Buffoni]
-(elim2)    Eliminator (2 Player) [Al Kossow, Brad Oliver]
-(exedexes) Exed Exes [Richard Davies]
-(galaganm) Galaga (Namco) [Mirko Buffoni]
-(locomotn) Loco-Motion [[Nicola Salmoria]
-(pacnpal)  Pac & Pal [Aaron Giles]
-(sbagman)  Super Bagman [Jarek Burczynsky]
-(snapjack) Snap Jack [F. Kurokawa]
-(sonson)   Son Son [Mirko Buffoni]
-(spacfury) Space Fury [Al Kossow, Brad Oliver]
-(startrek) Star Trek [Brad Oliver]
-(starwars) Star Wars [Al Kossow, Brad Oliver]
-(sxevious) Super Xevious [Mirko Buffoni, Tatsuyuki]
-(tacscan)  Tac-Scan [Al Kossow, Brad Oliver]
-(warlord)  Warlords [Lee Taylor, John Clegg]
-(xevious)  Xevious (Atari/Namco copyright) [Mirko Buffoni, Tatsuyuki Satoh]
-(yard) 10  Yard Fight [Lee Taylor, John Clegg]
-(zektor)   Zektor (revision B) [Al Kossow, Brad Oliver]
+(blueprnt)  Blue Print [Nicola Salmoria]
+(bosco)     Bosconian [Martin Scragg]
+(bublbobl)  Bubble Bobble [Chris Moore]
+(cavenger)  Cosmic Avenger [F. Kurokawa]
+(ckongpt2a) Crazy Kong Part II (set 2) [Mirko Buffoni]
+(digdug2)   Dig Dug 2 [Aaron Giles]
+(eggs)      Eggs [Mirko Buffoni]
+(elim2)     Eliminator (2 Player) [Al Kossow, Brad Oliver]
+(exedexes)  Exed Exes [Richard Davies]
+(galaganm)  Galaga (Namco) [Mirko Buffoni]
+(locomotn)  Loco-Motion [[Nicola Salmoria]
+(pacnpal)   Pac & Pal [Aaron Giles]
+(sbagman)   Super Bagman [Jarek Burczynsky]
+(snapjack)  Snap Jack [F. Kurokawa]
+(sonson)    Son Son [Mirko Buffoni]
+(spacfury)  Space Fury [Al Kossow, Brad Oliver]
+(startrek)  Star Trek [Brad Oliver]
+(starwars)  Star Wars [Al Kossow, Brad Oliver]
+(sxevious)  Super Xevious [Mirko Buffoni, Tatsuyuki]
+(tacscan)   Tac-Scan [Al Kossow, Brad Oliver]
+(warlord)   Warlords [Lee Taylor, John Clegg]
+(xevious)   Xevious (Atari/Namco copyright) [Mirko Buffoni, Tatsuyuki Satoh]
+(yard) 10   Yard Fight [Lee Taylor, John Clegg]
+(zektor)    Zektor (revision B) [Al Kossow, Brad Oliver]
 
-New clones supported
+New Clones Supported
 --------------------
-(asteroi2) Asteroids (alternate version) [Mirko Buffoni]
-(boblbobl) Bobble Bobble [Chris Moore]
-(bzone2)   Battle Zone (alternate version) [Mirko Buffoni]
-(douni)    Mr. Do vs. Unicorns [Mirko Buffoni]
-(gallag)   Gallag [Mirko Buffoni]
-(gngcross) Ghosts'n Goblins (Cross) [Mirko Buffoni]
-(pacmanjp) Pac Man (Namco, alternate) [Aaron Giles]
-(panica)   Space Panic (Alternate Version) [Mirko Buffoni]
-(xeviousn) Xevious (Namco copyright) [Mirko Buffoni, Tatsuyuki Satoh]
+(asteroi2)  Asteroids (alternate version) [Mirko Buffoni]
+(boblbobl)  Bobble Bobble [Chris Moore]
+(bzone2)    Battle Zone (alternate version) [Mirko Buffoni]
+(douni)     Mr. Do vs. Unicorns [Mirko Buffoni]
+(gallag)    Gallag [Mirko Buffoni]
+(gngcross)  Ghosts'n Goblins (Cross) [Mirko Buffoni]
+(pacmanjp)  Pac Man (Namco, alternate) [Aaron Giles]
+(panica)    Space Panic (Alternate Version) [Mirko Buffoni]
+(xeviousn)  Xevious (Namco copyright) [Mirko Buffoni, Tatsuyuki Satoh]
 
 
 Program changes:
@@ -62,24 +62,24 @@ Program changes:
 - Provided preliminary '10 Yard Fight' support [Lee Taylor, John Clegg].
 - Added Bosconian support [Martin Scragg].
 - Did a major rewrite of his Super Pac man and Mappy drivers [Aaron Giles]:
-  * Support for Dig Dug 2 and Pac & Pal.
-  * High score save in all games.
-  * 100% colors and sound samples (in 'Super Pac man' the siren clicks a bit, but neither I nor jrok can figure it out; the sample data *is* correct).
-  * Better sound playback frequency (was missing some high bits!).
-  * Arcade accurate frequency calculation (thanks to jrok!).
-  * Removed all palette hacks; everything is clean.
-  * Added loop optimizations for speed.
+  * Support for Dig Dug 2 and Pac & Pal;
+  * High score save in all games;
+  * 100% colors and sound samples (in Super Pac Man the siren clicks a bit, but neither I nor jrok can figure it out; the sample data *is* correct);
+  * Better sound playback frequency (was missing some high bits!);
+  * Arcade accurate frequency calculation (thanks to jrok!);
+  * Removed all palette hacks; everything is clean;
+  * Added loop optimizations for speed;
   * Video now properly displayed, including high priority characters.
 - Fixed sound and trackball support in Millipede [John ButlBr, Aaron Giles].
 - lmplemented Star Wars. It's playable, but far from perfect. There's even some preliminary sound support (slows the game down a lot) [Steve Baines, Frank Palazzolo, Brad Oliver].
 - Implemented a new option for vector games: "-vg". This adapts the Vector games to a given screen resolution (default 800x600) [Bernd Wiebelt].
 - Lot of work on the Atari vector games [Brad Oliver & Bernd Wiebelt]:
-  * Quite a few bugs hunted down.
-  * Thanks to Aaron Giles, the Atari vector games do correct scaling now and we can do cycle counting on the vector CPU. Aaron also fixed the scaling in the Sega vektor games.
-  * Tempest does no longer  crash after level 13, has better colors. (colorram emulation) and is overall a bit faster.
-  * Highscore saving for all games except Black Widow and Starwars
-  * Trackball support for Tempest and Red Baron. Red Baron tries to calibrate its analog joystick at the start, so you'll have to move the "joystick" a bit before you can fly in all four directions. Thanks to baloo@kaiwan.com for his suggestions.
-  * Mauro Minenna made Battlezone playable with one joystick.
+  * Quite a few bugs hunted down;
+  * Thanks to Aaron Giles, the Atari vector games do correct scaling now and we can do cycle counting on the vector CPU. Aaron also fixed the scaling in the Sega vektor games;
+  * Tempest does no longer  crash after level 13, has better colors. (colorram emulation) and is overall a bit faster;
+  * Highscore saving for all games except Black Widow and Starwar;
+  * Trackball support for Tempest and Red Baron. Red Baron tries to calibrate its analog joystick at the start, so you'll have to move the "joystick" a bit before you can fly in all four directions. Thanks to baloo@kaiwan.com for his suggestions;
+  * Mauro Minenna made Battlezone playable with one joystick;
   * Changes to game resolutions. On MSDOS, they now use tweaked VGA modes.
 
   *** REMEMBER TO DELETE EVERY *.CFG AND .HI FILE FOR VECTOR GAMES, OTHERWISETHE GAMES MIGHT NOT WORK CORRECTLY ***

@@ -28,23 +28,34 @@ World Class Bowling Deluxe [Brian Troha, Aaron Giles]
 
 New Games Marked as GAME_NOT_WORKING
 ------------------------------------
-Championship Bowling [Pierpaolo Prazzoli] (sprite glitches, no controls)
-Dambusters [Tomasz Slanina] (skeleton driver, does nothing useful yet)
-Gunpey [Tomasz Slanina] (skeleton driver, does nothing useful yet)
-Kyuukyoku no Othello [Tomasz Slanina] (incomplete video emulation)
-Laser Base / Future Flash [Tomasz Slanina] (unemulated protection)
-Ping Pong King [Tomasz Slanina] (missing MCU simulation etc.)
-Space Guerilla [Jarek Burczynski, Tomasz Slanina] (graphical problems, no sound)
-Trivia Challenge [Pierpaolo Prazzoli] (missing question roms)
-Wild Arrow [Tomasz Slanina] (seems to be some kind of gambling machine anyway)
+Championship Bowling [Pierpaolo Prazzoli] (1)
+Dambusters [Tomasz Slanina] (2)
+Gunpey [Tomasz Slanina] (2)
+Kyuukyoku no Othello [Tomasz Slanina] (3)
+Laser Base / Future Flash [Tomasz Slanina] (4)
+Ping Pong King [Tomasz Slanina] (5)
+Space Guerilla [Jarek Burczynski, Tomasz Slanina] (6)
+Trivia Challenge [Pierpaolo Prazzoli] (7)
+Wild Arrow [Tomasz Slanina] (8)
+
+Notes:
+------
+(1): Sprite glitches, no controls.
+(2): Skeleton driver, does nothing useful yet.
+(3): Incomplete video emulation.
+(4): Unemulated protection.
+(5): Missing MCU simulation etc.
+(6): Graphical problems, no sound.
+(7): Missing question ROMs.
+(8): Seems to be some kind of gambling machine anyway.
 
 
 Source changes:
 ---------------
 - Fixed most of the remaining issues with Taito F3 sound [Nicola Salmoria]:
-  * Sound in Ring Rage and Riding Fight still doesn't work.
-  * Quiz Theater has a bad sound rom.
-  * Bust-A-Move Again (US) sound roms need checking again real (non-conversion) cart.
+  * Sound in Ring Rage and Riding Fight still doesn't work;
+  * Quiz Theater has a bad sound ROM;
+  * Bust-A-Move Again (US) sound ROMs need checking again real (non-conversion) cart.
 - Improvements in the Microprose 3D driver [Philip J Bennett]:
   * Games not playable, but still a big improvement over the skeleton driver.
 - Improvements to MACs driver [Tomasz Slanina]:
@@ -54,24 +65,24 @@ Source changes:
 - Fixed Vs. Goonies Dips [chaneman].
 - Lethal Enforcers Improvements [R. Belmont]:
   Fixes:
-  * Tilemap colors.
-  * Guns hooked up and aligned properly.
-  * Tilemap and sprite layers aligned with the guns.
+  * Tilemap colors;
+  * Guns hooked up and aligned properly;
+  * Tilemap and sprite layers aligned with the guns;
   * Various other cleanups - added a sprite ROM that was missing previously.
   To do:
-  * Figure out the correct sprite decode.
-  * Sprite/tilemap priorities.
-  * "Reload" indicator is funky, probably needs tilemap flip bits.
+  * Figure out the correct sprite decode;
+  * Sprite/tilemap priorities;
+  * "Reload" indicator is funky, probably needs tilemap flip bits;
   * Fix K056832 external linescroll RAM support (used for high scores, parallax in scrolling stages).
 - Misc changes [Nathan Woods]:
-  * Added a hook that allows a driver to install a custom read handler for reading interrupt vectors (the 65816 has a signal that is asserted  when reading a vector and certain hardware needs to reroute the read).
-  * Created a memory_get_op_ptr() call.  This call is equivalent to memory_get_read_ptr() in ADDRESS_SPACE_PROGRAM with the exception that it is aware of the opbase handler. 
+  * Added a hook that allows a driver to install a custom read handler for reading interrupt vectors (the 65816 has a signal that is asserted  when reading a vector and certain hardware needs to reroute the read);
+  * Created a memory_get_op_ptr() call. This call is equivalent to memory_get_read_ptr() in ADDRESS_SPACE_PROGRAM with the exception that it is aware of the opbase handler;
   * Modified debugger to use memory_get_op_ptr() to determine if opcode memory is unmapped. 
 - Misc compiler fixes [Lawrence Gold]:
-  * Taito SJ update [Nicola Salmoria].
-  * Added sound CPU -> main CPU communication (fixes Tin Star hangs without need for a kludge, and makes tunes between levels correctly play until the end).
-  * Added memory map derived from schematics
-  * Added DAC volume control (I hear little difference, even if it's used).
+  * Taito SJ update [Nicola Salmoria];
+  * Added sound CPU -> main CPU communication (fixes Tin Star hangs without need for a kludge, and makes tunes between levels correctly play until the end);
+  * Added memory map derived from schematics;
+  * Added DAC volume control (I hear little difference, even if it's used);
   * Coin lockout (important otherwise games could accept more than 9 coins).
 - Correct Hyperstone Iram mirroring [Pierpaolo Prazzoli].
 - Added real noise generator to TMS5110 [Jarek Burczynski].
@@ -80,10 +91,10 @@ Source changes:
 - More Sega improvements, including lots of set renaming and cleaning up of drivers by removing unused code [Aaron Giles].
 - Updated some mahjong drivers to use the new standard inputs. Note, there was a further submission, this will need resyncing and resubmitting [James Wallace].
 - PSX based driver improvments [smf]:
-  * New board notes from Guru.
-  * Removed 8.3 restrictions on namco system 11 ROM names.
-  * Improved root counter emulation.
-  * Improved dma acknowledge emulation.
+  * New board notes from Guru;
+  * Removed 8.3 restrictions on namco system 11 ROM names;
+  * Improved root counter emulation;
+  * Improved dma acknowledge emulation;
   * Changes visible area immediately instead of during video update.
 - Hooked up sound cpu in fitfight.c [Tomasz Slanina].
 - Misc compiler fixes for VC [Bryan McPhail].

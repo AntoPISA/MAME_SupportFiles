@@ -2,14 +2,14 @@
 --------------------------------------
 
 
-New games added or promoted from NOT_WORKING status
+New Games Added or Promoted from NOT_WORKING Status
 ---------------------------------------------------
 Flying Tiger [David Haywood]
 Thunder Dragon [Angelo Salese, Nicola Salmoria]
 Hacha Mecha Fighter [Angelo Salese]
 World Beach Ball Championship 1997 [Pierpaolo Prazzoli]
 
-New clones added
+New Clones Added
 ----------------
 Operation Wolf (World) [Bryan McPhail]
 Great Swordsman (World?) [Nicola Salmoria, Corrado Tomaselli]
@@ -17,7 +17,7 @@ Sharpshooter (Rev 1.2) [Brian Troha]
 Cascade (Avalanche bootleg) [David Haywood]
 Catt (Japan) [Pierpaolo Prazzoli]
 
-New games marked as GAME_NOT_WORKING
+New Games Marked as GAME_NOT_WORKING
 ------------------------------------
 Hollywood Action [David Haywood]
 Power Spikes (bootleg) [Pierpaolo Prazzoli]
@@ -30,13 +30,13 @@ Source changes:
 - Added dx/dy settings to K052109, similar to those known to exist in the '156 and later chips [R. Belmont].
 - Fixed layer 2's X offset in gradius3 [R. Belmont].
 - Williams driver rewrite [Aaron Giles]:
-  * Rederived all addressing from schematics.
-  * Cleaned up banking mechanisms.
-  * Fixed sound CPU clock in later games.
-  * Simplified blitter code significantly.
-  * Added timing to the blitter (just a guess right now).
-  * Implemented clipping circuits correctly.
-  * Simplified palette handling significantly.
+  * Rederived all addressing from schematics;
+  * Cleaned up banking mechanisms;
+  * Fixed sound CPU clock in later games;
+  * Simplified blitter code significantly;
+  * Added timing to the blitter (just a guess right now);
+  * Implemented clipping circuits correctly;
+  * Simplified palette handling significantly;
   * Rewrote video system to use tilemaps for later games.
 - Increased MAX_INSTANCES in state.c [smf].
 - Increased FLASH_CHIPS_MAX in intelfsh.h [smf].
@@ -52,7 +52,7 @@ Source changes:
 - Fixed ROM names in Rastan [Bryan McPhail].
 - Sped up reading of input ports [wpcmame].
 - Fixed cycle counts for several 68000 instructions [Andrew Seed] 
-- Updated tone sounds in 'Phoenix' to use discrete system [Derrick Renaud].
+- Updated tone sounds in Phoenix to use discrete system [Derrick Renaud].
 - Removed fake hack ports from Battlezone and Vindicators Part II [Aaron Giles].
 - Cleaned up DIP switches in the M90 games [Brian Troha].
 - Added graphics decryption to panicr [Nicola Salmoria].

@@ -2,7 +2,7 @@
 ----------------------------------------
 
 
-New Games supported or promoted from GAME_NOT_WORKING status
+New Games Supported or Promoted from GAME_NOT_WORKING Status
 ------------------------------------------------------------
 beatmania 6th MIX (ver JA-A)
 Mayjinsen 2 [Tomasz Slanina]
@@ -10,7 +10,7 @@ Rabbit [David Haywood]
 Sengoku 3
 Zupapa!
 
-New Clones supported or promoted from GAME_NOT_WORKING status
+New Clones Supported or Promoted from GAME_NOT_WORKING Status
 -------------------------------------------------------------
 Bloxeed (US, C System) [Arzeno Fabrice]
 Dunk Mania (DM2/VER.C) [R. Belmont]
@@ -21,7 +21,7 @@ Last Fortress - Toride (German) [David Haywood]
 Mille Miglia 2: Great 1000 Miles Rally (95/05/24) [David Haywood]
 Rad Rally (US) [Arzeno Fabrice]
 
-New Non-Working games / clones supported
+New Non-Working Games / Clones Supported
 ----------------------------------------
 Altered Beast (8571 protected) [Arzeno Fabrice]
 Champion List II [David Haywood]
@@ -56,20 +56,20 @@ Source changes:
 - Improved i386 disassembly format [Ville Linde].
 - Improved QSound in ZN games by fixing ROM loading [Barry Rodewald].
 - Included all the worthwhile sound changes from MAME32FX (most of these in turn are from MAME32Plus). List and (credits) follows:
-  * airbustr.c: FM/PCM balance (RND)
-  * crimfght.c: adjusted YM and Z80 clock to 4 MHz, matches real PCB better (???)
-  * darkseal.c: FM/PCM balance (UNZU)
-  * ddragon.c: FM/PCM balance (???)
-  * mitchell.c: adjusted pitches (AKIN)
-  * namcos1.c: FM/PCM balance (UNZU)
-  * namcos2.c: FM/PCM balance (RND)
-  * nemesis.c: PSG/WSG balance (UNZU)
-  * rohga.c: FM/PCM balance (RND)
-  * shadfrce.c: FM/PCM balance (RND)
-  * simpsons.c: Z80+YM2151 clocks, FM/PCM balance (???)
-  * toki.c: FM/PCM balance (???)
-  * vaportra.c: FM/PCM balance (UNZU)
-  * xmen.c: FM/PCM balance, Z80 clock is 8 MHz (???)
+  * airbustr.c: FM/PCM balance (RND);
+  * crimfght.c: adjusted YM and Z80 clock to 4 MHz, matches real PCB better (???);
+  * darkseal.c: FM/PCM balance (UNZU);
+  * ddragon.c: FM/PCM balance (???);
+  * mitchell.c: adjusted pitches (AKIN);
+  * namcos1.c: FM/PCM balance (UNZU);
+  * namcos2.c: FM/PCM balance (RND);
+  * nemesis.c: PSG/WSG balance (UNZU);
+  * rohga.c: FM/PCM balance (RND);
+  * shadfrce.c: FM/PCM balance (RND);
+  * simpsons.c: Z80+YM2151 clocks, FM/PCM balance (???);
+  * toki.c: FM/PCM balance (???);
+  * vaportra.c: FM/PCM balance (UNZU);
+  * xmen.c: FM/PCM balance, Z80 clock is 8 MHz (???).
 - Preliminary NEC V810 core (needed for mayjinsen, mayjinsen2 and jsk) [Thomasz Slanina].
 - Removed PORT_CENTER from drivers that were using it for autocentering and added a user-configurable autocentering property that applies to all absolute analog controls. Also made this autocentering intelligent so that it shouldn't need to be manually set to 0 if using a real analog device [Aaron Giles].
 - Significant improvements to the Rabbit driver [David Haywood].

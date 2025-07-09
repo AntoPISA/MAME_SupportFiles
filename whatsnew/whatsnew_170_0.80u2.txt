@@ -78,69 +78,68 @@ Source changes:
 - Palette now generated using routines in res_net.h to properly make normal, shadow, and highlight colors.
 - Discrete Sound System updates [Aaron Giles, Derrick Renaud].
 - Aaron Giles update:
-  * Major internal cleanup and reworking of how nodes are created.
-  * Fixed bug in 555 timer that led to whiny noise in Hit Me.
-  * Added new input port type for analog adjuster.
-  * Changed osd interface for discrete sound adjusters to use the new input port type.
-  * Changed NODE_ADJUSTMENT to get its value from an input port.
-  * Adjuster values are now saved in the config file.
+  * Major internal cleanup and reworking of how nodes are created;
+  * Fixed bug in 555 timer that led to whiny noise in Hit Me;
+  * Added new input port type for analog adjuster;
+  * Changed osd interface for discrete sound adjusters to use the new input port type;
+  * Changed NODE_ADJUSTMENT to get its value from an input port;
+  * Adjuster values are now saved in the config file;
   * Changed all games using adjusters to use the new system.
 - Updates of Derrick Renaud:
-  * Discrete Sound changes: Continued cleanup of code to make it more readable.
-  * New discrete modules added: DISCRETE_OP_AMP_OSCILLATOR - various op amp oscillator circuits that are entered using component values.
-  * DISCRETE_OP_AMP_VCO - various op amp voltage controlled oscillator circuits that are entered using component values.
+  * Discrete Sound changes: Continued cleanup of code to make it more readable;
+  * New discrete modules added: DISCRETE_OP_AMP_OSCILLATOR - various op amp oscillator circuits that are entered using component values;
+  * DISCRETE_OP_AMP_VCO: Various op amp voltage controlled oscillator circuits that are entered using component values;
   * Game driver changes: Finished updating games to use Aaron's DISCRETE_ADJUSTMENT changes.
 - Misc fixes [Nathan Woods]:
-  * src/fileio.c: Changed MESS specific file type from FILETYPE_CRC to FILETYPE_HASH.
+  * src/fileio.c: Changed MESS specific file type from FILETYPE_CRC to FILETYPE_HASH;
   * src/hash.c: Added hash_data_insert_printable_checksum() call. Made things more const correct.
 - Nintendo 8080 based games update [Stefan Jokisch]:
-  * Fixed CPU speed.
-  * Unified memory maps.
+  * Fixed CPU speed;
+  * Unified memory maps;
   * Changed ROM labels.
   - Space Fever / High Splitter / Space Launcher:
   * Relabelled ROM sets:
-    Space Fever color => Space Fever
-    Space Fever b & w => Space Fever High Splitter
-  * Uncloned High Splitter from 'Space Fever'.
-  * Fixed High Splitter ROM loading (wrong sound ROM in one set).
-  * Color support ('Space Launcher' needs its color PROM dumped).
-  * Implemented red screen flash (when the player dies).
-  * Implemented red laser cannon flash (when the player shoots).
-  * Implemented UFO color cycling.
-  * Properly hooked up SN76477 (needs to be verified).
-  * Properly hooked up I8035 sound CPU.
-  * Added bonus life DIPs to 'High Splitter' and 'Space Launcher'.
-  * Added cocktail mode.
+    Space Fever color => Space Fever;
+    Space Fever b & w => Space Fever High Splitter.
+  * Uncloned High Splitter from Space Fever;
+  * Fixed High Splitter ROM loading (wrong sound ROM in one set);
+  * Color support ('Space Launcher' needs its color PROM dumped);
+  * Implemented red screen flash (when the player dies);
+  * Implemented red laser cannon flash (when the player shoots);
+  * Implemented UFO color cycling;
+  * Properly hooked up SN76477 (needs to be verified);
+  * Properly hooked up I8035 sound CPU;
+  * Added bonus life DIPs to High Splitter and Space Launcher;
+  * Added cocktail mode;
   * Documented diagnostic ROM location.
   - Sheriff / Bandido:
-  * Fixed scheduling of SN76477 sound effects (shots + hits).
-  * Added second coin input in Bandido
-  * Removed unused cocktail mode controls from 'Bandido'.
-  * Properly hooked up I8035 sound CPU.
-  * Removed fake color overlay from 'Bandido'.
-  * Added colours based on screenshots - PROM still needs dumping.
-  * Implemented color effects (e.g. red heart after round 3).
-  * Implemented screen flashing (when the players dies).
+  * Fixed scheduling of SN76477 sound effects (shots + hits);
+  * Added second coin input in Bandido;
+  * Removed unused cocktail mode controls from Bandido;
+  * Properly hooked up I8035 sound CPU;
+  * Removed fake color overlay from Bandido;
+  * Added colours based on screenshots - PROM still needs dumping;
+  * Implemented color effects (e.g. red heart after round 3);
+  * Implemented screen flashing (when the players dies);
   * Documented diagnostic ROM location.
   - Helifire:
-  * Corrected bonus life DIP.
-  * Fixed starfield pattern, confirmed by shots on the flyer.
-  * Fixed starfield priority (no more stars in the water).
-  * Fixed video bugs related to pausing and frame skipping.
-  * Properly hooked up sound CPU (different from the other games).
-  * Added partial support for cocktail mode.
-  * Added IMPERFECT_GRAPHICS and NO_COCKTAIL flags.
+  * Corrected bonus life DIP;
+  * Fixed starfield pattern, confirmed by shots on the flyer;
+  * Fixed starfield priority (no more stars in the water);
+  * Fixed video bugs related to pausing and frame skipping;
+  * Properly hooked up sound CPU (different from the other games);
+  * Added partial support for cocktail mode;
+  * Added IMPERFECT_GRAPHICS and NO_COCKTAIL flags;
   * Various audio and video effects are still missing, including a few which were previously implemented and which I hope to re-add soon.
 - Various 'Timer Fixes', correcting some problems with SlySpy etc [Aaron Giles].
 - Fixed some problems with the 32010 update [Quench].
 - Misc bug fixes (HuC6280 problems) [Bryan McPhail].
-- Some 'Task Force Harrier' improvements [Tomasz Slanina]:
-  * Fixed sprite rendering.
-  * Hacks for bg scrolling.
+- Some Task Force Harrier improvements [Tomasz Slanina]:
+  * Fixed sprite rendering;
+  * Hacks for bg scrolling;
   * Patched some protection issues (sprites are rendered, no more strange resets) Game is NOT playable (controls doesn't work). Maybe something is not mapped correctly or it's problem with protection (for example, player2 buttons works durning boot - it's possible to enter service mode).
-- ST-V update [Angelo Salese]:
-  * Fixes bitmap transparencies,adds the RBG0 layer(no scroll/roz effects yet) adds a really preliminary window effect(just for get tile-based sprites in shanhigw) and readded the VDP1 PTM register support which has been lost in the past.
+- ST-V update: Fixes bitmap transparencies,adds the RBG0 layer(no scroll/roz effects yet) adds a really preliminary window effect(just for get tile-based sprites in shanhigw) and readded the VDP1 PTM register support which has been lost in the past [Angelo Salese].
 - Cleaned up Capcom Bowling driver and fixed crash on reset [Aaron Giles].
 - IREM GA20 Update [R. Belmont]:
-  * Adds the channel status readback for the GA-20, which fixes some occasional odd voice-stealing behavior I've heard playing 'R-Type Leo'.
+  * Adds the channel status readback for the GA-20, which fixes some occasional odd voice-stealing behavior I've heard playing R-Type Leo;
   * Reverted some 'Star Wars' code back to older working version.

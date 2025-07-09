@@ -3,40 +3,43 @@
 Note: Non volatile RAM is now saved to a new directory, NVRAM (instead of the old HI). You must create that directory manually, otherwise the files will not be saved.
 
 
-New games supported
+New Games Supported
 -------------------
 Baluba-louk no Densetsu [Zsolt Vasvari]
 Black Hole [Zsolt Vasvari]
 Hopping Mappy [Nicola Salmoria]
 Plump Pop [Nicola Salmoria]
-S.P.Y. (not playable due to protection) [Nicola Salmoria]
+S.P.Y. [Nicola Salmoria]
 Sky Kid Deluxe [Nicola Salmoria]
 Soldam [Luca Elia]
 Streaking [Zsolt Vasvari]
 Super World Stadium '93 Gekitouban [Keith Wilkins]
 Tank Force [Vernon C. Brooks]
 
-
-New clones supported
+New Clones Supported
 --------------------
 Cosmo Gang (US) [Nicola Salmoria]
 Galaga 88 (set 2) [Nicola Salmoria]
 Jungle King (newer) [Nicola Salmoria]
-Knockout (= Triple Punch) [Nicola Salmoria]
+Knockout [Nicola Salmoria]
 Marvel Land (US) [Nicola Salmoria]
 Pinbo (Jaleco) [Nicola Salmoria]
 Pole Position (Namco) [Nicola Salmoria]
 
+Note:
+-----
+(1): Not playable due to protection.
+
 
 These drivers have improved GRAPHICS:
 -------------------------------------
-- Fixed the internal orientation of the Cinematronics games, if you use artwork files for those games you'll have tomanually flip them (or redownload).
+- Fixed the internal orientation of the Cinematronics games, if you use artwork files for those games you'll have tomanually flip them (or redownload) [Nicola Salmoria].
 - Sprite multiplexing support in the Exidy440 games, this fixes Chiller's start screen [Aaron Giles].
 
 
 Source changes:
 ---------------
-- Improved 'Capcom Avengers', the wrong colors are caused by the protection [Phil Stroffolino].
+- Improved Capcom Avengers, the wrong colors are caused by the protection [Phil Stroffolino].
 - Added noise generator to the Namco sound emulation [Takahiro Nogi].
 - Added OSD_FILETYPE_NVRAM [Nicola Salmoria].
 - MachineDriver->frames_per_second is now a float [Nicola Salmoria].

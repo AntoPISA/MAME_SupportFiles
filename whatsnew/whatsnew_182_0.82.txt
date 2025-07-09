@@ -2,28 +2,41 @@
 --------------------------------------
 
 
-New Games supported or promoted from GAME_NOT_WORKING status
+New Games Supported Promoted from GAME_NOT_WORKING Status
 ------------------------------------------------------------
-1945k III (sample banking needs adding)
-Agress [David Haywood] (some video issues)
-Dynagears [David Haywood, Tomasz Slanina] (todo: clean up video emulation a bit (uses SSV vidhrdw in a strange way))
-One + Two [Pierpaolo Prazzoli] (palette problems?)
+1945k III [David Haywood] (1)
+Agress [David Haywood] (2)
+Dynagears [David Haywood, Tomasz Slanina] (3)
+One + Two [Pierpaolo Prazzoli] (4)
 Star Gladiator [smf]
 Street Fighter EX [smf]
-Street Fighter EX 2 [smf] (may have the occasional lockup still)
+Street Fighter EX 2 [smf] (5)
 Super World Stadium [David Haywood]
-Time Crisis (Version A) [Phil Stroffolino] (some gun aiming problems? (or is it just a calibration issue?))
-Tylz (prototype) [ENGCameraman] (some sound issues)
-Various Megatech sets [David Haywood] (note megatech is still marked as NON-WORKING anyway due to bios issues)
+Time Crisis (Version A) [Phil Stroffolino] (6)
+Tylz (prototype) [ENGCameraman] (7)
+Various Megatech sets [David Haywood] (8)
 
-New Clones supported or promoted from GAME_NOT_WORKING status
+New Clones Supported or Promoted from GAME_NOT_WORKING Status
 -------------------------------------------------------------
 Continental Circus (US set 2)
 
-New Non-Working games / clones supported
+New Non-Working Games / Clones Supported
 ----------------------------------------
-Mission Craft (needs more work on Hyperstone core)
-Racing Beat [David Graves] (serious video emulation issues (raster irq?))
+Mission Craft (9)
+Racing Beat [David Graves] (10)
+
+Notes:
+------
+( 1): Sample banking needs adding.
+( 2): Some video issues.
+( 3): ToDo: Clean up video emulation a bit (uses SSV vidhrdw in a strange way).
+( 4): Palette problems?
+( 5): May have the occasional lockup still.
+( 6): Some gun aiming problems? (or is it just a calibration issue?).
+( 7): Some sound issues.
+( 8): Note megatech is still marked as NON-WORKING anyway due to BIOS issues.
+( 9): Needs more work on Hyperstone core.
+(10): Serious video emulation issues (raster IRQ?).
 
 
 Source changes:
@@ -35,10 +48,10 @@ Source changes:
 - Small VC compile fixes [Bryan McPhail].
 - Fixed S22 crash [R. Belmont].
 - i386 improvements [Nathan Woods]:
-  * Implemented zeroing out A20 lines.
-  * Implemented state save support.
-  * Unknown instructions now disassemble as '???'.
-  * Implemented XLAT opcode.
+  * Implemented zeroing out A20 lines;
+  * Implemented state save support;
+  * Unknown instructions now disassemble as '???';
+  * Implemented XLAT opcode;
   * DAA fixes.
 - Fixed the MEM_DUMP debug code [Nathan Woods].
 - Added MC68008 support to the MC68000 core [Curt Coder].

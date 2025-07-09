@@ -3,7 +3,7 @@
 [NOTE: only important changes are listed]
 
 
-New games supported
+New Games Supported
 -------------------
 (atlantis) Battle of Atlantis (set 1) [Nicola Salmoria]
 (carnival) Carnival (upright) [Nicola Salmoria, Mike Coates]
@@ -21,15 +21,15 @@ New games supported
 Program changes:
 ----------------
 - Added some support for Carnival - it boots and runs the demo, but the graphics are messed up [Nicola Salmoria].
-- Fixed graphics in 'Moon Quasar' (yes it does run, but you need the correct ROMs) [Nicola Salmoria].
+- Fixed graphics in Moon Quasar (yes it does run, but you need the correct ROMs) [Nicola Salmoria].
 - Better error checking in the sound initialization routines. It still sucks, but at least will notify of problems instead of locking up the emulation. The "0. Silence" driver also works [Nicola Salmoria].
 - Removed the "-nosound" command line switch, replaced it with "-soundcard n" which allows to bypass the audio driver selection menu. Use "-soundcard 0" to turn off sound [Nicola Salmoria].
-- Some support for 'Space Invaders' (+ some clones) but it doesn't work well [Nicola Salmoria].
-- Support for 'Battle of Atlantis' (a Scramble hack) [Nicola Salmoria].
+- Some support for Space Invaders (+ some clones) but it doesn't work well [Nicola Salmoria].
+- Support for Battle of Atlantis (a Scramble hack) [Nicola Salmoria].
 - The ROM copyright notice is displayed in the main emulation screen [Nicola Salmoria].
 - Maybe I understood how the character colors are selected in Donkey Kong, at least in part, but I'm not sure. Anyway, I started fixing them. I based on the Kong emulator by Gary Shepherdson [Nicola Salmoria].
 - You can view the game graphics pressing F4. Use cursor keys to change graphics set/color, F4 to return to the game. Support for Mario Bros. (wrong colors, no sound) and Zaxxon (doesn't work yet) [Mirko Buffoni].
-- Better colors in 'Amidar' and 'Frogger' [Nicola Salmoria].
+- Better colors in Amidar and Frogger [Nicola Salmoria].
 
 
 Source changes:

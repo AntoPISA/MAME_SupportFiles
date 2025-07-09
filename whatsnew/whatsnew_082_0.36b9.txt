@@ -3,7 +3,7 @@
 IMPORTANT: due to changes in the palette system, there might be games that had correct colors before, and wrong now. Please let us know if you find any.
 
 
-New games supported
+New Games Supported
 -------------------
 Big Striker [Luca Elia]
 Dream Soccer '94 [Bryan McPhail]
@@ -14,31 +14,31 @@ KiKi KaiKai [Nicola Salmoria, Ernesto Corvi]
 Perfect Soldiers [Bryan McPhail]
 
 
-New clones supported
+New Clones Supported
 --------------------
 Ajax (Japan) [Nicola Salmoria]
 Blue Print (Jaleco) [Nicola Salmoria]
 Checkman (Galaxian hardware) [Zsolt Vasvari]
 Contra (Japan) [Nicola Salmoria]
 Donkey Kong 3 (Japan) [Nicola Salmoria]
-Dump Matsumoto (= Body Slam) [Nicola Salmoria]
+Dump Matsumoto [Nicola Salmoria]
 Fantasy (SNK) [Nicola Salmoria]
-Karate Dou (= Karate Champ) [Nicola Salmoria]
+Karate Dou [Nicola Salmoria]
 Mega Zone (Konami) [Nicola Salmoria]
-Ring no Ohja (= The Main Event) [Nicola Salmoria]
-Thunder Blaster (= Lethal Thunder) [Nicola Salmoria]
+Ring no Ohja [Nicola Salmoria]
+Thunder Blaster [Nicola Salmoria]
 Undercover Cops (Japan) [Nicola Salmoria]
 X-Men (2 Players Japan) [Nicola Salmoria]
 
 
 These drivers have improved GRAPHICS:
 -------------------------------------
-- Fixed raster effects in 'Turf Masters' (Japan course) and 'Zed Blade'. Improved 'Super Sidekicks 2' [Massimo Morra].
+- Fixed raster effects in Turf Masters (Japan course) and Zed Blade. Improved Super Sidekicks 2 [Massimo Morra].
 
 
 Source changes:
 ---------------
-- Fixes to 'Lazer Command' and 'Meadows Lanes' [Malcolm Lear].
+- Fixes to Lazer Command and Meadows Lanes [Malcolm Lear].
 - [DOS] Changed the -depth option behaviour, now it can be either 8, 16, or auto. The default is auto, which uses the color depth appropriate for the game. 8 forces use of a 256 colors display (faster but less accurate), 16 forces use of a 16-bit display (not suggested, doesn't work with all games). MAKE SURE TO SET depth = auto IN MAME.CFG, OR YOU'LL USE 16-BIT IN ALL GAMES [Nicola Salmoria].
 - 16 bit support in the tilemap manager, so the Namco System 2 games no longer require -depth 8 [Phil Stroffolino].
 - Fixed a few bugs in the NEC CPU core that caused problems in Hook, Gunforce, Lethal Thunder and maybe others [Bryan McPhail, Nao].

@@ -8,7 +8,7 @@ New BIOS Added
 
 New Games Added
 ---------------
-(arescue)  Air Rescue [David Haywood] (1])
+(arescue)  Air Rescue [David Haywood] (1)
 (buriki)   Buriki One [Guru] (2)
 (searthia) Super Earth Invasion (set 2) [David Haywood]
 
@@ -20,28 +20,28 @@ New Clones Added
 
 Notes:
 ------
-[1]: Uses an unemulated math DSP and may also require emulation of two system32 boards	at once, not an easy task.
-[2]: Very preliminary driver, loads and decodes the gfx, attempts to run some of the code. No Video or Sound emulation is done.  For now the GFX can be viewed with F4).
+(1): Uses an unemulated math DSP and may also require emulation of two system32 boards at once, not an easy task.
+(2): Very preliminary driver, loads and decodes the gfx, attempts to run some of the code. No Video or Sound emulation is done. For now the GFX can be viewed with F4).
 
 
 Source changes:
 ---------------
-- Improved Discrete Sound System / Sound in 'Hit Me' [Aaron Giles]:
-  * New node type DISCRETE_LOGIC_DFLIPFLOP.
-  * Changed the way multichannel output is done; affects some existing drivers.
-  * Support for up to 16 channels of sound. Also included is a new 'Hit Me' driver.
-  * Discrete sound support for 'Hit Me' 
-  * Fixed incorrect video (missing scanlines and inverting logic).
-  * Added controls to handle card width and game/sound speed.
+- Improved Discrete Sound System / Sound in Hit Me [Aaron Giles]:
+  * New node type DISCRETE_LOGIC_DFLIPFLOP;
+  * Changed the way multichannel output is done; affects some existing drivers;
+  * Support for up to 16 channels of sound. Also included is a new Hit Me driver;
+  * Discrete sound support for Hit Me;
+  * Fixed incorrect video (missing scanlines and inverting logic);
+  * Added controls to handle card width and game/sound speed;
   * Cleaned up memory maps.
 - C89 compiler fixes [Lawrence Gold].
 - Hyperstone cleanups [Pierpaolo Prazzoli].
 - Change for MESS [Nathan Woods]:
   * src/inptport.c: Minor changes related to MESS's mouse device (within #ifdef MESS).
-- Sound supoprt in 'Varia Metal' [Quench].
-- Dipswitch fixes in 'Varia Metal' [David Haywood].
-- Improvements to 'Fit of Fighting' driver [Luis Faria].
+- Sound supoprt in Varia Metal [Quench].
+- DIP switch fixes in Varia Metal [David Haywood].
+- Improvements to Fit of Fighting driver [Luis Faria].
 - Fixed the opcode view which in some cases displayed too many bytes on 32 bit CPUs such as 68020 and Hyperstone [Bryan McPhail].
 - ST-V fixes [Mariusz Wojcieszek]:
-  * Improved scaling tilemap backgrounds. Vfkids, colmns97 and vfremix backgrounds are better now.
+  * Improved scaling tilemap backgrounds. vfkids, colmns97 and vfremix backgrounds are better now;
   * Fixed a problem where entering and existing service mode during game causes master/slave communication to fail. It turned out that slave cpu should be reset when it is turned off and on. This helps all games in driver.

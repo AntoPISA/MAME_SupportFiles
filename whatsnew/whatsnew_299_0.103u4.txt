@@ -2,7 +2,7 @@
 ---------------------------------------
 
 
-New games added or promoted from NOT_WORKING status
+New Games Added or Promoted from NOT_WORKING Status
 ---------------------------------------------------
 Laser Battle/Lazarian [Pierpaolo Prazzoli]
 Cat and Mouse [Pierpaolo Prazzoli]
@@ -10,40 +10,40 @@ KlonDike+ [Pierpaolo Prazzoli]
 Alien Arena
 Crowns Golf in Hawaii [Aaron Giles]
 
-New clones added
+New Clones Added
 ----------------
 Joust (Solid Green Label) [Reznor007]
 Space Intruder (Japan) [Tomasz Slanina, Guru]
 
-New games marked as GAME_NOT_WORKING
+New Game Marked as GAME_NOT_WORKING
 ------------------------------------
 Galaxia [David Haywood]
 
 
 MAMETesters Bug Fixed (1):
 --------------------------
-xevious083gre (MASH)
+- xevious083gre (MASH)
 
 
 Source Changes
 --------------
 - Intel i386/i486/Pentium update [Nathan Woods]:
-  * Fixed A20 mask implementation.
-  * Added A20 mask to debugger translate callback.
-  * Implemented Pentium opcode CMPXCHG8B.
+  * Fixed A20 mask implementation;
+  * Added A20 mask to debugger translate callback;
+  * Implemented Pentium opcode CMPXCHG8B;
   * Fixed XADD, and added support for the 8 and 16 bit variants.
-- Fixed 'Top Shooter' sprites. Game still not playable [Tomasz Slanina].
+- Fixed Top Shooter sprites. Game still not playable [Tomasz Slanina].
 - Changed debug view property code to pass property values as unions rather than void pointers, in order to appease compilers that whine about strict aliasing [Nathan Woods].
 - Fixed resource allocation issue with bitmaps in the Windows code and MESS [Nathan Woods].
 - Removed a number of unnecessary video_stop and machine_stop routines [Atari Ace].
 - Converted a few more exit() calls to osd_die() [Oliver Stoneberg].
-- Fixed inputs on 'Ninja Spirit' and the Sega System 16b driver to match the JAMMA button ordering [Corrado Tomaselli].
+- Fixed inputs on Ninja Spirit and the Sega System 16b driver to match the JAMMA button ordering [Corrado Tomaselli].
 - Fixes to the Hyperstone core [Pierpaolo Prazzoli]:
-  * Removed nested delays.
+  * Removed nested delays;
   * Don't allow software opcodes to be executed in a delay slot.
 - Added/changed the following discrete modules [Derrick Renaud]:
-  * DISCRETE_WAVELOG - easy way to log discrete nodes as a .wav file to compare against scope waveforms.
-  * DISCRETE_OUTPUT - added a final gain parameter to get it to 16 bit wav level.  (The old VOL setting was disabled after the last sound re-write).
+  * DISCRETE_WAVELOG - easy way to log discrete nodes as a .wav file to compare against scope waveforms;
+  * DISCRETE_OUTPUT - added a final gain parameter to get it to 16 bit wav level (the old VOL setting was disabled after the last sound re-write).
 - Fixed graphics banking in 8751-based 'Altered Beast' sets [David Haywood].
 - Fixed some bad gfx in kdynastg when levels start [Pierpaolo Prazzoli].
 - Decrypted graphics in 'Darkmist' and 'Panic Road' [Nicola Salmoria].

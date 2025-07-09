@@ -3,25 +3,25 @@
 Please continue testing, it is rather important during periods like this.
 
 
-MAME testers Bugs Fixed (4):
+MAME Testers Bugs Fixed (4):
 ----------------------------
-mappy37b4gre
-mappy37b8gre
-phozon37b8gre
-motos054gre
+- mappy37b4gre
+- mappy37b8gre
+- phozon37b8gre
+- motos054gre
 
 
 Phase 2 of Aaron's Updates [Aaron Giles]
 ----------------------------------------
 - Changes:
-  * CPUs with an implicit address shift (e.g., the TMS34010 shifts addresses right 3 bits; the TMS32031 shifts addresses left 2 bits) now automatically get that shift applied to addresses in their memory maps and in calls to install_memory_read/write_handler(). This eliminates many ugly macros in the memory maps. Affected CPU cores are the ADSP210x, CCPU, PIC16C5x, TMS3201x, TMS3202x, TMS32031, and TMS340x0. Note that the CPU cores themselves still need to pass shifted values to the core read/write routines. All drivers using these cores have had their icky macros and bitshifts removed.
-  * Harvard architecture CPUs now have data memory fully implemented now. Affected CPUs are the ADSP210x, TMS3201x, TMS3202x, PIC16C5x, and CCPU. All cores have been modified to fully split program and data memory. All drivers using these cores now specify explicit program and data memory maps. This also gets rid of a ton of ugly macros used in memory maps.
-  * The memory_set_bankhandler calls are now officially history. There were fewer than a dozen drivers using them, and they all have been converted over to using install_mem_read_handler instead where appropriate. This eliminates the last 8-bit-specific hack in the memory system. As a result, RAM reads and writes out of banked memory should be slightly faster on 8-bit CPUs because they are handled inline.
-  * New dynamic memory allocation scheme. The previous method relied on parsing the read/write handlers. The new method simply looks at the top-level memory map after it has been populated, and allocates memory for any mapped 16k chunk. This will likely cause more memory to be allocated than before, but the process is less error prone. Also, checks are now in to make sure that the memory_region for the program address space is the minimum necessary to support non-sparse address spaces.
-  * Fully integrated save/restore memory blocks. Before, the save/restore system had its own memory map walking routines. That's gone now. Instead, memory blocks are registered as they are allocated by the dynamic memory allocator. Note that this will likely cause save states to be bigger than they were before (and certainly, they will not be compatible), but disk space is cheap, live with it.
-  * Address spaces are now determined dynamically based on whether a given CPU returns a non-zero value for the address bus width for a given space.
-  * Fixed incorrect address bus widths on the I8039 CPU core.
-  * Added a TMS32026 entry and reworked the handling of internal RAM to work in the new system. This means the Taito Air system is now back to its former state.
+  * CPUs with an implicit address shift (e.g., the TMS34010 shifts addresses right 3 bits; the TMS32031 shifts addresses left 2 bits) now automatically get that shift applied to addresses in their memory maps and in calls to install_memory_read/write_handler(). This eliminates many ugly macros in the memory maps. Affected CPU cores are the ADSP210x, CCPU, PIC16C5x, TMS3201x, TMS3202x, TMS32031, and TMS340x0. Note that the CPU cores themselves still need to pass shifted values to the core read/write routines. All drivers using these cores have had their icky macros and bitshifts removed;
+  * Harvard architecture CPUs now have data memory fully implemented now. Affected CPUs are the ADSP210x, TMS3201x, TMS3202x, PIC16C5x, and CCPU. All cores have been modified to fully split program and data memory. All drivers using these cores now specify explicit program and data memory maps. This also gets rid of a ton of ugly macros used in memory maps;
+  * The memory_set_bankhandler calls are now officially history. There were fewer than a dozen drivers using them, and they all have been converted over to using install_mem_read_handler instead where appropriate. This eliminates the last 8-bit-specific hack in the memory system. As a result, RAM reads and writes out of banked memory should be slightly faster on 8-bit CPUs because they are handled inline;
+  * New dynamic memory allocation scheme. The previous method relied on parsing the read/write handlers. The new method simply looks at the top-level memory map after it has been populated, and allocates memory for any mapped 16k chunk. This will likely cause more memory to be allocated than before, but the process is less error prone. Also, checks are now in to make sure that the memory_region for the program address space is the minimum necessary to support non-sparse address spaces;
+  * Fully integrated save/restore memory blocks. Before, the save/restore system had its own memory map walking routines. That's gone now. Instead, memory blocks are registered as they are allocated by the dynamic memory allocator. Note that this will likely cause save states to be bigger than they were before (and certainly, they will not be compatible), but disk space is cheap, live with it;
+  * Address spaces are now determined dynamically based on whether a given CPU returns a non-zero value for the address bus width for a given space;
+  * Fixed incorrect address bus widths on the I8039 CPU core;
+  * Added a TMS32026 entry and reworked the handling of internal RAM to work in the new system. This means the Taito Air system is now back to its former state;
   * Fixed the memory handlers in gottlieb.c to use address space masking instead of mapping extra mirrored areas.
 
 

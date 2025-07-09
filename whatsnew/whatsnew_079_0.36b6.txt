@@ -2,20 +2,20 @@
 ------------------------------------------
 
 
-New games supported
+New Games Supported
 -------------------
 Arch Rivals [Aaron Giles]
 Blade Master [Bryan McPhail]
-Blades of Steel (not working due to protection) [Manuel Abadia]
+Blades of Steel [Manuel Abadia] (1)
 Blasted [Aaron Giles]
 Gallop [Nicola Salmoria]
-Gunforce (preliminary) [Bryan McPhail]
+Gunforce [Bryan McPhail] (2)
 Hammerin' Harry [Nicola Salmoria]
-Hook (preliminary) [Bryan McPhail]
-In The Hunt (preliminary) [Bryan McPhail]
+Hook [Bryan McPhail] (2)
+In The Hunt [Bryan McPhail] (2)
 Lethal Thunder [Bryan McPhail]
-Major Title (preliminary) [Nicola Salmoria]
-Major Title 2 (preliminary) [Bryan McPhail]
+Major Title [Nicola Salmoria] (2)
+Major Title 2 [Bryan McPhail] (2)
 Meikyu Jima (Kickle Cubicle) [Nicola Salmoria]
 Name that Tune [Aaron Giles]
 Pandora's Palace [Manuel Abadia]
@@ -34,30 +34,35 @@ Turbo Tag [Aaron Giles]
 Undercover Cops [Bryan McPhail]
 Zwackery [Aaron Giles]
 
-New clones supported
+New Clones Supported
 --------------------
 Demolition Derby (2 players) [Aaron Giles]
 Tapper (set 2) [Aaron Giles]
 
+Notes:
+------
+(1): Not working due to protection.
+(2): Preliminary.
+
 
 These drivers have improved GRAPHICS:
 -------------------------------------
-- Improved screen priority in 'Lifeforce', 'Salamander', 'Gradius', etc [E. Watanabe].
+- Improved screen priority in Lifeforce, Salamander, Gradius, etc [E. Watanabe].
 - Fixed priorities and scroll offset in the Toaplan games [suz].
 
 
 These drivers have new or improved SOUND:
 -----------------------------------------
-- Fixed 'Genpei Toumaden' [Takahiro Nogi].
-- Fixed 'Ginga Ninkyouden' [Takahiro Nogi].
-- Fixed 'Xenophobe' [Aaron Giles].
-- Samples and DAC support in 'Space Panic' [Mike Coates].
+- Fixed Genpei Toumaden [Takahiro Nogi].
+- Fixed Ginga Ninkyouden [Takahiro Nogi].
+- Fixed Xenophobe [Aaron Giles].
+- Samples and DAC support in Space Panic [Mike Coates].
 
 
 Source changes:
 ---------------
-- Gun support in 'Terminator 2'. You must use the calibration screen to calibrate the gun. When it asks the shoot the upper left corner, move the mouse towards (0,0), the middle is (128, 128) and the lower right corneris obviously (255, 255). If you have problems, delete hi/term2.hi [Zsolt Vasvari].
-- Simulated the protection in 'Renegade' [Phil Stroffolino].
+- Gun support in Terminator 2. You must use the calibration screen to calibrate the gun. When it asks the shoot the upper left corner, move the mouse towards (0,0), the middle is (128, 128) and the lower right corneris obviously (255, 255). If you have problems, delete hi/term2.hi [Zsolt Vasvari].
+- Simulated the protection in Renegade [Phil Stroffolino].
 - Changed the 6821 PIA interface [Aaron Giles].
 - Fixed bug in the 6800 CMPX instructions [Jess Askey].
 - New NEC CPU cores [Oliver Bergmann].

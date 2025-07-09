@@ -3,35 +3,40 @@
 Thanks to Pierpaolo Prazzoli (Reip) for putting together the 0.90 release while I was away.
 
 
-New Games / Clones supported or promoted from GAME_NOT_WORKING status
+New Games / Clones Supported or Promoted from GAME_NOT_WORKING Status
 ---------------------------------------------------------------------
-Merlins Money Maze [Pierpaolo Prazzoli] (maybe impossible to win?)
+Merlins Money Maze [Pierpaolo Prazzoli] (1)
 Spot (Arcadia) [Mariusz Wojcieszek]
 Magic Johnson's Fast Break (Arcadia) [Mariusz Wojcieszek]
 World Darts (Arcadia) [Mariusz Wojcieszek]
 Xenon (Arcadia) [Mariusz Wojcieszek]
-Sea Bass Fishing [Angelo Salese] (set to 1 player in system assignments menu)
+Sea Bass Fishing [Angelo Salese] (2)
 Dunk Shot [Nicola Salmoria, Charles MacDonald, Aaron Giles]
 Action Fighter [Nicola Salmoria, Charles MacDonald, Aaron Giles]
 Various Sega Sets: sdioj, shangona, shangnle, alexkidd [Nicola Salmoria, Charles MacDonald, Aaron Giles]
 Tazzmania (bootleg on Galaxian Hardware) [Pierpaolo Prazzoli]
 
+Notes:
+------
+(1): Maybe impossible to win?
+(2): Set to "1 player" in system assignments menu.
+
 
 Source changes:
 ---------------
 - FD1089 decryption [Nicola Salmoria, Charles MacDonald]:
-  * 100% accurate emulation of FD1089A, FD1089B should be considered 99%  because it will have to be verified with other CPUs (it is 100% for all currently supported games).
-  * Complete tables provided by Charles MacDonald for 317-0018 (Action Fighter), 317-0022 (Dunk Shot), 317-0168 (Aurail).
+  * 100% accurate emulation of FD1089A, FD1089B should be considered 99%  because it will have to be verified with other CPUs (it is 100% for all currently supported games);
+  * Complete tables provided by Charles MacDonald for 317-0018 (Action Fighter), 317-0022 (Dunk Shot), 317-0168 (Aurail);
   * Partial tables derived by comparison with the unencrypted versions for 'Enduro Racer', 'Alex Kidd', 317-0024 (Time Scanner), 317-0033 (Alien Syndrome, 3 versions), 317-0027 (SDI). (actual working cpus are needed to obtain full	tables).
 - Big Sega Update [Aaron Giles]:
-  * dunkshot graphics correct, controls hooked up.
-  * sdioj controls hooked up.
-  * timescna sprites fixed.
-  * shangona, shangnle now playable.
-  * toutrun road fixed.
-  * All memory mapping code unified and moved into machine/segaic16.c.
-  * All tilemap, sprite, and road code unified and moved into vidhrdw/segaic16.c.
-  * Improved documentation on the various register layouts on the video side.
+  * dunkshot graphics correct, controls hooked up;
+  * sdioj controls hooked up;
+  * timescna sprites fixed;
+  * shangona, shangnle now playable;
+  * toutrun road fixed;
+  * All memory mapping code unified and moved into machine/segaic16.c;
+  * All tilemap, sprite, and road code unified and moved into vidhrdw/segaic16.c;
+  * Improved documentation on the various register layouts on the video side;
   * Note that in the process, I broke the title screen animation for Laser Ghost, and there is now a 1-pixel column error on ddcrew's attract mode. These are known issues that I will try to address soon.
 - Some ST-V fixes which allow seabass to run [Angelo Salese].
 - Taken out the resource file from the windows objs when UI=1 (for MAME32) [Chris Kirmse].
@@ -40,12 +45,12 @@ Source changes:
 - Fixed enigma2 colours [Pierpaolo Prazzoli].
 - Fixed the m6509 core to appease the new compiler [Nathan Woods].
 - Arcadia update [Mariusz Wojcieszek]:
-  * Fixed DMACON register writing.
-  * Added horizontal scrolling for playfield.
-  * Improved coin handling.
-  * Fixed area filling mode in blitter.
-  * kludged ar_dart to work (addind sound emulation shoud make kludge obsolete).
-  * Fixed attached sprites rendering.
-  * Fixed CIA registers reading.
+  * Fixed DMACON register writing;
+  * Added horizontal scrolling for playfield;
+  * Improved coin handling;
+  * Fixed area filling mode in blitter;
+  * kludged ar_dart to work (addind sound emulation shoud make kludge obsolete);
+  * Fixed attached sprites rendering;
+  * Fixed CIA registers reading;
   * Improved vblank/video update timing.
 - Changed ROM loading for mt_gng [David Haywood].

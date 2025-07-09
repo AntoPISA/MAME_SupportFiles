@@ -2,7 +2,7 @@
 ----------------------------------------
 
 
-New Games / Clones supported or promoted from GAME_NOT_WORKING status
+New Games / Clones Supported or Promoted from GAME_NOT_WORKING Status
 ---------------------------------------------------------------------
 Flying Ball (Deco Cassette) [Juergen Buchmueller]
 Leader Board Golf (Arcadia) [Mariusz Wojcieszek, Ernesto Corvi]
@@ -12,8 +12,8 @@ Shinobi (set 4, System 16B, unprotected) [Aaron Giles]
 SportTime Bowling (Arcadia) [Mariusz Wojcieszek, Ernesto Corvi]
 Wrestle War (Japan) [Gerald]
 
-New Non-working
----------------
+New Non-Working Games
+---------------------
 7-up Spot (Arcadia) [Mariusz Wojcieszek, Ernesto Corvi]
 Astro Battle (Sidam) [Highwayman, Pierpaolo Prazzoli]
 Magic Johnson's Fast Break (Arcadia) [Mariusz Wojcieszek, Ernesto Corvi]
@@ -31,24 +31,24 @@ Source changes:
 - Solar Warrior driver update: fixed NMI & FIRQ handling according to schematics. Fixed clock speeds. Implemented GFX priority register/priority PROM [Bryan McPhail].
 - IremGA20 64-bit crash fix [Stephen Behling].
 - Misc updates [Nathan Woods]:
-  * Fixed disassembler calls, so that instructions are not falsely disassembled as 32-bit.
-  * Implemented SMSW instruction.
-  * Marked retf instruction as DASMFLAG_STEP_OUT.
+  * Fixed disassembler calls, so that instructions are not falsely disassembled as 32-bit;
+  * Implemented SMSW instruction;
+  * Marked retf instruction as DASMFLAG_STEP_OUT;
   * Added macros for pushfd() and popfd().
 - Added 'TRACEOVER' support to debugger (see help) [Nathan Woods].
 - New Debugger Commands [Aaron Giles]:
-  * snap [<filename>]: takes a snapshot and saves it to the given <filename>; if <filename> is omitted, this is equivalent to hitting F12.
-  * gi[int] [<irqline>]: executes until the current CPU takes the interrupt line specified by <irqline>; if <irqline> is omitted, executes until any IRQ is taken on the current CPU. This has been mapped to F7 as well.
-  * gv[blank]: executes until the next VBLANK; this is useful for stepping frame-by-frame from within the debugger. This has been mapped to F8.
+  * snap [<filename>]: Takes a snapshot and saves it to the given <filename>; if <filename> is omitted, this is equivalent to hitting F12;
+  * gi[int] [<irqline>]: Executes until the current CPU takes the interrupt line specified by <irqline>; if <irqline> is omitted, executes until any IRQ is taken on the current CPU. This has been mapped to F7 as well;
+  * gv[blank]: Executes until the next VBLANK; this is useful for stepping frame-by-frame from within the debugger. This has been mapped to F8.
 - Various Improvements [Sebastien Volpe]:
   - galpani3:
   * Palette, inputs, sound hooked up, backgounds 'decoded' (RLE).
   - jchan:
-  * Slight cleanup, sound hooked up, tile area identified.
+  * Slight cleanup, sound hooked up, tile area identified;
   * jchan2 now passes initial checks.
   - kaneko16 (bonkadv):
-  * Priorities corrected according Luca's scheme & sound 'improvements' (both banking and ROM loading).
-  * Game name updated.
+  * Priorities corrected according Luca's scheme & sound 'improvements' (both banking and ROM loading);
+  * Game name updated;
   * Interrupts scheduling change (not correct, but somewhat improved, see comment) and as a consequence, fake region dsw is removed.
   - srmp6:
   * New driver, Seta System 12?
@@ -59,7 +59,7 @@ Source changes:
 - hypereac2 sound fix, sh2 bounds overflow fix, atarijsa memcpy fix [Mame32Plus].
 - Improvements to Namco 54xx Noise Generator. Type A, and B emulated, type C algo still unknown [Jarek Burczynski].
 - Minor Sega Update [Aaron Giles]:
-  * Renamed dbrkr to desertbr.
-  * Cleaned up the math chip emulation, should be much closer now.
-  * Fixed off-by-1 column scroll in wrestwra.
+  * Renamed (dbrkr) to (desertbr);
+  * Cleaned up the math chip emulation, should be much closer now;
+  * Fixed off-by-1 column scroll in wrestwra;
   * Fixed shadows in S18 so they don't affect any VDP-drawn pixels.

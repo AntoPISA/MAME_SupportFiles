@@ -7,11 +7,11 @@ IMPORTANT CHANGE FOR OSD DEVELOPERS: osd_exit is no longer called directly. Rath
   record     -> Machine->record_file
 
 
-New games added or promoted from NOT_WORKING status
----------------------------------------------------
+New Game added or Promoted from NOT_WORKING Status
+--------------------------------------------------
 Choko [Guru, Charles MacDonald]
 
-New clones added
+New Clones Added
 ----------------
 Agress (English bootleg) [Pierpaolo Prazzoli]
 Bomb Kick [Pierpaolo Prazzoli]
@@ -20,21 +20,21 @@ Tokio / Scramble Formation [Nicola Salmoria, Arzeno Fabrice]
 
 MAMETesters Bugs Fixed (6):
 ---------------------------
-twinhawk0104u1gra (Alex Jackson)
-twinhawk0104u1gre (Alex Jackson)
-gtmr0100u1gre (Luigi30)
-armchmp20104u2gra (Luigi30)
-boothill0104gra (Luigi30)
-yiear0103u1gra (Luigi30)
+- twinhawk0104u1gra (Alex Jackson)
+- twinhawk0104u1gre (Alex Jackson)
+- gtmr0100u1gre (Luigi30)
+- armchmp20104u2gra (Luigi30)
+- boothill0104gra (Luigi30)
+- yiear0103u1gra (Luigi30)
 
 
 Source changes:
 ---------------
 - Cleanups to the taito_x driver [Alex Jackson]:
-  * Converted input ports to an INCLUDE/MODIFY tree.
-  * Fixed Lives DSW in twinhawk and twinhwku.
-  * Removed Cabinet DSW from twinhawk and twinhwku; they are 2psim and do not support cocktail cabinets (the DSW does nothing).
-  * Fixed Coinage DSW in suprmanj.
+  * Converted input ports to an INCLUDE/MODIFY tree;
+  * Fixed Lives DSW in twinhawk and twinhwku;
+  * Removed Cabinet DSW from twinhawk and twinhwku; they are 2psim and do not support cocktail cabinets (the DSW does nothing);
+  * Fixed Coinage DSW in suprmanj;
   * Removed MDRV_MACHINE_INIT(cchip1) from games that don't have a c-chip (all of them except superman).
 - Fixed chdman to write the correct number of logical bytes when extracting something that is not an even number of hunks large [Chris Hardy].
 - Some Raiden 2 documentation and input port updates (still not playable) [Olivier Galibert].
@@ -47,9 +47,9 @@ Source changes:
 - Improved graphics ROM loading order in fredmem [Luigi30].
 - New option -mngwrite, which records an MNG movie of the game from the get-go and allows you to specify a target filename [Buddabing].
 - Refactored/renamed/removed/added several core files [Aaron Giles]:
-  * Renamed driver.c to mamedriv.c.
-  * Reated a new driver.c containing functions defined in driver.h.
-  * Split common.c into video.c and machine/generic.c.
+  * Renamed driver.c to mamedriv.c;
+  * Reated a new driver.c containing functions defined in driver.h;
+  * Split common.c into video.c and machine/generic.c;
   * Moved a number of mame.c functions to video.c.
 - New file debugger.h contains abstracted debugging interfaces for both debuggers. Added new call mame_debug_break() and a new macro DEBUGGER_BREAK to make it easier to hard-code breakpoints into code. Removed all old code that directly whacked debug_key_pressed or called debug_halt_on_next_instruction and replaced them with calls to DEBUGGER_BREAK [Aaron Giles].
 - Added #include "state.h" to driver.h. This means most driver files no longer need to explicitly include it. Went through and removed it from most drivers [Aaron Giles].
@@ -65,8 +65,8 @@ Source changes:
 - Removed VIDEO_DUAL_MONITOR flag [Aaron Giles].
 - Added a number of new properties to the debug views to allow for more flexibility in the way the views are displayed. Also added an option to the disassembly window to display encrypted opcode data on the right [Aaron Giles].
 - Save state changes: [Aaron Giles]:
-  * Audited the use of save state registrations throughout the code, switching most cases over to using the state_save_register_global or state_save_register_item macros to simplify the code.
-  * Deprecated the save_state_register_<type> calls since nearly all cases can be automatically handled by the macros. For odd cases, there is now a save_state_register_memory call which is generic.
+  * Audited the use of save state registrations throughout the code, switching most cases over to using the state_save_register_global or state_save_register_item macros to simplify the code;
+  * Deprecated the save_state_register_<type> calls since nearly all cases can be automatically handled by the macros. For odd cases, there is now a save_state_register_memory call which is generic;
   * Simplified the save state logic, allowing for unlimited instances and reducing the complexity of the code. This breaks existing save states. Sorry, I'll try not to do it again.
 - Fixed save state support in 'Missile Command' [Aaron Giles].
 - Added oversampling support to the CEM3394 emulator [Aaron Giles].

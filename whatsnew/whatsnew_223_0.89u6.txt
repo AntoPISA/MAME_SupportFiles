@@ -2,37 +2,40 @@
 ----------------------------------------
 
 
-New Games / Clones supported or promoted from GAME_NOT_WORKING status
+New Games / Clones Supported or Promoted from GAME_NOT_WORKING Status
 ---------------------------------------------------------------------
 Thunder Blade [Aaron Giles]
 
-New Non-working
----------------
-Megatech: Alien Storm [DangSpot] (genesis i/o problems)
+New Non-Working Games
+---------------------
+Megatech: Alien Storm [DangSpot] (1)
+
+Note:
+(1): genesis I/O problems.
 
 
 Source changes:
 ---------------
 - MC8193 update [Nicola Salmoria]:
-  * Expanded the decryption tables, they change when bit 15 of the address is set.
-  * Table for 317-0066 (Altered Beast) almost complete, but there are still some uncertain values for opcodes above 8000 (not actually needed).
-  * Uncomplete table for 317-0054 (Shinobi). Still not enough to decrypt the program.
+  * Expanded the decryption tables, they change when bit 15 of the address is set;
+  * Table for 317-0066 (Altered Beast) almost complete, but there are still some uncertain values for opcodes above 8000 (not actually needed);
+  * Uncomplete table for 317-0054 (Shinobi). Still not enough to decrypt the program;
   * Tables for 317-0043 (wbml) and ninjakd2 derived by comparison of the original with the decrypted bootleg. They are incomplete but enough to fully decrypt the program. Unfortunately Block Gal and Perfect Billiards cannot be done in the same way because encrypted and decrypted programs are different versions.
 - i386 fixes [Nathan Woods]:
-  * Disassembler will now list segment prefixes when appropriate.
+  * Disassembler will now list segment prefixes when appropriate;
   * Fixed LMSW opcode.
 - New Sega X-Board driver. Many improvements over the old driver [Aaron Giles]:
-  * Improved sprites (see thunderblade).
-  * Improved road layer (see abcop, thunderblade).
-  * Guns in line of fire (but it hangs at the end of the level).
-  * Better tilemap support (from 16b).
+  * Improved sprites (see thunderblade);
+  * Improved road layer (see abcop, thunderblade);
+  * Guns in line of fire (but it hangs at the end of the level);
+  * Better tilemap support (from 16b);
   * gprider no longer boots (nested interrupts).
 - Removed a ROM patch in Exzisus [Nicola Salmoria].
 - Rearranged TNZS sets based on new information [Nicola Salmoria].
 - Cleaned up Return of Invaders driver [Nicola Salmoria].
 - nmk16 video update [Pierpaolo Prazzoli]:
-  * Added sprites priorities (still few problems with priority = 0).
-  * Fixed raphero and mmacros2 background.
-  * Fixed manybloc (added scrolls, fixed background GFX).
+  * Added sprites priorities (still few problems with priority = 0);
+  * Fixed raphero and mmacros2 background;
+  * Fixed manybloc (added scrolls, fixed background GFX);
   * Added background banking in acrobatm.
 - Updated S2650 CPU core to count more accurate clock cycle counts [Juergen Buchmueller].

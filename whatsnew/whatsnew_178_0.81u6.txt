@@ -2,17 +2,22 @@
 ----------------------------------------
 
 
-New Games Added or Promoted from GAME_NOT_WORKING status
+New Games Added or Promoted from GAME_NOT_WORKING Status
 --------------------------------------------------------
 Renju Kizoku [Tomasz Slanina]
 Neratte Chu [Tomasz Slanina]
 
-New Non-Working games / clones supported
+New Non-Working Games / Clones Supported
 ----------------------------------------
 Mayjinsen [Tomasz Slanina]
-Mayjinsen 2 [Tomasz Slanina]	(unemulated v810 cpu, being worked on)
+Mayjinsen 2 [Tomasz Slanina] (1)
 Super Eagle Shot [Tomasz Slanina]
-Super Real Mahjong P5 [Tomasz Slanina] (r3000 side not finished)
+Super Real Mahjong P5 [Tomasz Slanina] (2)
+
+Notes:
+------
+(1): Unemulated v810 CPU, being worked on
+(2): r3000 side not finished.
 
 
 Source changes:
@@ -20,28 +25,28 @@ Source changes:
 - Fixed missing enemies in noboranb [Stefan Jokisch].
 - Fixed leprechn service switch broken in the last update [Stefan Jokisch].
 - Misc fixes [Nathan Woods]:
-  * Partially implemented INT, INT3, ES segment override, an IMUL variant, LMSW, a minor 16 bit bug fix, and coprocessor escape instructions.
+  * Partially implemented INT, INT3, ES segment override, an IMUL variant, LMSW, a minor 16 bit bug fix, and coprocessor escape instructions;
   * Added the MESS specific TMS7000 core to the list of CPU cores.
 - SPI updates [Ville Linde]:
-  * Added sprite flipping and other improved sprite processing.
+  * Added sprite flipping and other improved sprite processing;
   * Corrected palette banking on tilemaps.
 - Fixed Kaitei Daisensou speedup. Note: speedups may soon be removed from the m92 driver as they aren't	really that significant on modern hardware [BouKiCHi].
 - Model 1 Sound [R. Belmont].
 - Fixed some ST-V sprite bugs: hanagumi intro, othellos title, cottonbm intro, diehard intro, sleague [Mariusz Wojcieszek].
 - Fixed the GPL12 opcode (fixes cbaj graphics) [smf].
 - i386 updates [Ville Linde]:
-  * Regression tested the i386 core.  Found and fixed bugs in several shift/rotate instructions. This corrects the bosses in Raiden Fighters.
-  * Completely rewrote REP/REPNE prefix handling - Fixes: The following: Battle Balls attract mode runs	correctly now, balls no longer all the same color in-game in Battle Balls, E-Jan now coins up, and Viper Phase 1 is now playable (with encrypted gfx).	
+  * Regression tested the i386 core. Found and fixed bugs in several shift/rotate instructions. This corrects the bosses in Raiden Fighters;
+  * Completely rewrote REP/REPNE prefix handling - Fixes: The following: Battle Balls attract mode runs correctly now, balls no longer all the same color in-game in Battle Balls, E-Jan now coins up, and Viper Phase 1 is now playable (with encrypted gfx).	
 - MIPS software interrupt fix [Aaron Giles].
 - Seattle Update [Aaron Giles]:
-  * Added a diagram of interrupt sourcing.
-  * Fixed incorrect checksums on SF Rush: The Rock audio ROMs.
-  * Added support for DCS HLE downloading via FIFO (used by Vegas games).
+  * Added a diagram of interrupt sourcing;
+  * Fixed incorrect checksums on SF Rush: The Rock audio ROMs;
+  * Added support for DCS HLE downloading via FIFO (used by Vegas games);
   * Fixed incorrect sound pitch in Blitz 99/2k.
 - Hyperstone Fixes [Pierpaolo Prazzoli]:
-  * Added h flag handling in the dasm
-  * Fixed wrong interpretation of some opcode bits in the dasm.
-  * Fixed Frame instruction when d-code was 0.
+  * Added h flag handling in the dasm;
+  * Fixed wrong interpretation of some opcode bits in the dasm;
+  * Fixed Frame instruction when d-code was 0;
   * Always set the new entry table.
 - Minor improvement to Lord of Gun driver (still doesn't work) [Pierpaolo Prazzoli].
 - YMZ280B update: Fixes suprnova073gre [R. Belmont].

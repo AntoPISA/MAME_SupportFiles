@@ -2,77 +2,82 @@
 ----------------------------------------
 
 
-New Games supported or promoted from GAME_NOT_WORKING status:
+New Games Supported or Promoted from GAME_NOT_WORKING Status:
 -------------------------------------------------------------
-International Cup '94 / Hat Trick Hero '94 [David Haywood] (also changed the parent / clone relationships a bit on the football games)
+International Cup '94 / Hat Trick Hero '94 [David Haywood] (1)
 Princess Clara Daisakusen [Mariusz Wojcieszek]
 Target Balls [Luca Elia]
-Wild Pilot [Pierpaolo Prazzoli] (various graphical problems, service buttons = start buttons)
+Wild Pilot [Pierpaolo Prazzoli] (2)
 
-New Clones supported or promoted from GAME_NOT_WORKING status:
+New Clones Supported or Promoted from GAME_NOT_WORKING Status:
 --------------------------------------------------------------
-A Few PGM Clones
+xxx
 Additional Run & Gun sets [Brian Troha]
 Q*Bert (Us Set 2) [Smitdogg]
 
-Games / Sets Removed
---------------------
-New Rally-X (vertical hack) [removed by Stefan Jokisch] (graphic hack (rotated tiles + display) not worth supporting)
+Games Removed
+-------------
+New Rally-X (vertical hack) [Stefan Jokisch] (3)
 
-New Non-Working games / clones supported
+New Non-Working Games / Clones Supported
 ----------------------------------------
 Skull Fang [Bryan McPhail] (Encrypted (Deco 156))
 Stadium Hero 96 [Bryan McPhail]
+
+Notes:
+------
+(1): Also changed the parent/clone relationships a bit on the football games.
+(2): Various graphical problems, service buttons = start buttons.
+(3): Graphic hack (rotated tiles + display) not worth supporting.
 
 
 Source changes:
 ---------------
 - Fixed OKI sound (and a few other things) in the following [Quench]:
-  * Aquarium (aquarium.c)
-  * Bakuretsu Breaker (kaneko16.c)
-  * Diverboy (diverboy.c)
-  * Funny Bubble (funybubl.c)
+  * Aquarium (aquarium.c);
+  * Bakuretsu Breaker (kaneko16.c);
+  * Diverboy (diverboy.c);
+  * Funny Bubble (funybubl.c).
 - Full sound and Music in Asura Blade [R. Belmont].
 - Discrete Sound in Video Pinball [Derrick Renaud].
 - DAC Sound in TrucoTron [Tomasz Slanina].
 - Fixed graphics and added sound to Cross Pang [Pierpaolo Prazzoli].
 - Added additional unused PROMs to the following [Stefan Jokisch]:
-  * acedrvrw (namcos22.c)
-  * millpac (centiped.c)
-  * rallyx (rallyx.c)
-  * sci (tailto_z.c)
-- Various updates to the 'Moon Patrol' driver [Stefan Jokisch]:
-  * Added the new PROM dump for the Williams set.
-  * Changed the size of the PROM dump for the IREM set.
-  * Converted the driver to the tilemap system.
-  * Minor fixes to the video section based on schems.
-  * Renamed ROMs.
+  * acedrvrw (namcos22.c);
+  * millpac (centiped.c);
+  * rallyx (rallyx.c);
+  * sci (tailto_z.c).
+- Various updates to the Moon Patrol driver [Stefan Jokisch]:
+  * Added the new PROM dump for the Williams set;
+  * Changed the size of the PROM dump for the IREM set;
+  * Converted the driver to the tilemap system;
+  * Minor fixes to the video section based on schems;
+  * Renamed ROMs;
   * Simplified background drawing by creating a 256x64 gfx layout.
 - Mobile Suit Gundam EX Revue Fixes [Tomasz Slanina]:
-  * Hooked up EEPROM (68301 parallel port) and added EEPROM initialisation.
+  * Hooked up EEPROM (68301 parallel port) and added EEPROM initialisation;
   * Added missing language selection dipswitch.
 - Improvements to ST-V Emulation [Mariusz Wojcieszek]:
-  * Bad sprite colors were fixed in point 1.
-  * Changes for Princess Clara Daisakusen (prikura) so that game is playable now (as far I tested it).
-  * Changes to sprites color calculation. I fixed it using in color bank modes by using color offset register from VDP2. Now shienryu kludge is no longer needed and also sprite colors in Winter Heat and Virtua Fighter Kids are correct.
-  * I found that missing MINIT for slave to run the sprites is done by using address 0x01406f40 instead of 0x01000000. I'm not sure if my change is a hack or real hardware behaves in that way, but in my opinion it is possible that whole range of addresses (0x01000000 - 0x017fffff) is used for MINIT. I added MINIT only for one address used by prikura.
-  * Prikura tried to render distorted sprites with xsize = 0 or ysize = 0 and this caused crash. As these values are prohibited according to manual, I ignore distorted sprites with xsize = 0 or ysize = 0.
+  * Bad sprite colors were fixed in point 1;
+  * Changes for Princess Clara Daisakusen (prikura) so that game is playable now (as far I tested it);
+  * Changes to sprites color calculation. I fixed it using in color bank modes by using color offset register from VDP2. Now shienryu kludge is no longer needed and also sprite colors in Winter Heat and Virtua Fighter Kids are correct;
+  * I found that missing MINIT for slave to run the sprites is done by using address 0x01406f40 instead of 0x01000000. I'm not sure if my change is a hack or real hardware behaves in that way, but in my opinion it is possible that whole range of addresses (0x01000000 - 0x017fffff) is used for MINIT. I added MINIT only for one address used by prikura;
+  * Prikura tried to render distorted sprites with xsize = 0 or ysize = 0 and this caused crash. As these values are prohibited according to manual, I ignore distorted sprites with xsize = 0 or ysize = 0;
   * Small change for vdp2: commented out a call to usrintf_showmessage().
-- Data East MLC Improvements [Bryan McPhail]:
-  * Many aspects of the Video Rendering have been improved, Avengers in Galactic storm is playable with some characters now, however there seems to be a CPU core bug affecting various aspects of the game, most notably the flipping of Captain America.  Help tracking down and fixing this wwould be welcome. Several Non-Working sets were also added
+- Data East MLC Improvements: Many aspects of the Video Rendering have been improved, Avengers in Galactic storm is playable with some characters now, however there seems to be a CPU core bug affecting various aspects of the game, most notably the flipping of Captain America.  Help tracking down and fixing this wwould be welcome. Several Non-Working sets were also added [Bryan McPhail].
 - Update to allow drivers to dynamically change the refresh rate during execution [Aaron Giles].
 - Namco 8080 Cleanup [Nicola Salmoria]:
-  * Merged geebee.c and warpwarp.c since they are variations of the same hardware design.
-  * drivers/geebee.c, machine/geebee.c and vidhrdw/geebee.c are no longer needed.
-  * Renamed Navalone -> Navarone. I guess that's the correct name, as in "the guns of Navarone".
-  * Renamed kaitein -> kaitei and kaitei -> kaiteik; made the Namco set the main one. I don't recall if this was already discussed, but I believe kaiteik is a prototype developed by a third party and sold to Namco, where it was completely rewritten.
-  * Fixed inputs and dip switches in all games.
-  * Fixed "ball" size in sos and kaitein - the harpoon in kaitein no longer looks like a rock.
+  * Merged geebee.c and warpwarp.c since they are variations of the same hardware design;
+  * drivers/geebee.c, machine/geebee.c and vidhrdw/geebee.c are no longer needed;
+  * Renamed Navalone -> Navarone. I guess that's the correct name, as in "the guns of Navarone";
+  * Renamed kaitein -> kaitei and kaitei -> kaiteik; made the Namco set the main one. I don't recall if this was already discussed, but I believe kaiteik is a prototype developed by a third party and sold to Namco, where it was completely rewritten;
+  * Fixed inputs and dip switches in all games;
+  * Fixed "ball" size in sos and kaitein - the harpoon in kaitein no longer looks like a rock;
   * Removed a hack in Warp Warp that didn't draw the ball in the bottom left corner. The flyer confirms that the ball is supposed to be there.
 - Misc fixes [Nathan Woods]:
-  * Adds workaround for deficiency in Metrowerks compiler.
-  * Adds a few more instruction declarations.
-  * Adds a call to retrieve CPU feature flags from CPUID.
+  * Adds workaround for deficiency in Metrowerks compiler;
+  * Adds a few more instruction declarations;
+  * Adds a call to retrieve CPU feature flags from CPUID;
   * Compiler specific assembler code for feature reading replaced by call added above.
 - Removed final traces of TESTDRIVER code [Paul Priest].
 - BIOS Roms no longer need to be added to info.c [Paul Priest].

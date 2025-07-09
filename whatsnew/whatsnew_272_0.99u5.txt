@@ -2,12 +2,12 @@
 --------------------------------------
 
 
-New games added or promoted from NOT_WORKING status
+New Games Added or Promoted from NOT_WORKING Status
 ---------------------------------------------------
 Muroge Monaco [David Haywood]
 The First Funky Fighter [Luca Elia]
 
-New clones added
+New Clones Added
 ----------------
 SAR - Search And Rescue (Japan) [Pierpaolo Prazzoli]
 American Poker II (set 4) [Roberto Fresca]
@@ -15,37 +15,37 @@ American Poker II (set 4) [Roberto Fresca]
 
 MAMETesters Bugs Fixed (4):
 ---------------------------
-docastle093u2ora [Corrado Tomaselli]
-mgakuen094u1gra [Roberto Fresca]
-sindbadm37b2gre [Pierpaolo Prazzoli]
-tdfeverj087u4gra [Roberto Fresca]
+- docastle093u2ora (Corrado Tomaselli)
+- mgakuen094u1gra (Roberto Fresca)
+- sindbadm37b2gre (Pierpaolo Prazzoli)
+- tdfeverj087u4gra (Roberto Fresca)
 
 
 Source changes:
 ---------------
 - Completed renaming of core structures. Most pervasive change was "struct tilemap" is now just "tilemap" [Aaron Giles].
 - Added save state support to the Cinematronics vector games [Buddabing].
-- Added blending to the alt tilemap code in psikyosh.c, fixing the final boss in 'Sol Divide' [David Haywood].
+- Added blending to the alt tilemap code in psikyosh.c, fixing the final boss in Sol Divide [David Haywood].
 - Improvements to the 'Witch/Pinball Champ '95' driver [Sebasten Hegon]:
-  * The games now show some graphics (the palette seems OK) and play some music and sounds.
-  * Since the controls are not yet figured out completely, they are still mapped as dipswitches.
-  * An NVRAM reset is required the first time you launch Witch (via the associated dipswitch). 'Pinball Champ' seems to automatically do this.
-  * The sound part required some patching in sound/es8712.c. I disabled the hardcoded inconditional looping, and made the sound start when writing at offset 0x06 (cf patch). vmetal does not seem to be affected.
-  * As far as gameplay is concerned, the ball will freeze (in game and demo mode), and I don't know why. The video hardware is not completely figured out and may be the culprit.
+  * The games now show some graphics (the palette seems OK) and play some music and sounds;
+  * Since the controls are not yet figured out completely, they are still mapped as dipswitches;
+  * An NVRAM reset is required the first time you launch Witch (via the associated dipswitch). 'Pinball Champ' seems to automatically do this;
+  * The sound part required some patching in sound/es8712.c. I disabled the hardcoded inconditional looping, and made the sound start when writing at offset 0x06 (cf patch). vmetal does not seem to be affected;
+  * As far as gameplay is concerned, the ball will freeze (in game and demo mode), and I don't know why. The video hardware is not completely figured out and may be the culprit;
   * The coin in/out mecanism needs some work too.
 - Some improvements to 'Jolly Card' [Roberto Fresca]:
-  * Added extra hardware info (pinouts and dips).
-  * Added the correct dipswitch to Jolly Card. Hopper and Points/pulse not tested due to preliminary driver state. The rest are working properly. Remember to delete the NVRAM and reinitialize to see some changes.
-  * Added almost the same dipswitch to 'Magic Card II (Bulgaria)'.
+  * Added extra hardware info (pinouts and dips);
+  * Added the correct dipswitch to Jolly Card. Hopper and Points/pulse not tested due to preliminary driver state. The rest are working properly. Remember to delete the NVRAM and reinitialize to see some changes;
+  * Added almost the same dipswitch to Magic Card II (Bulgaria).
 - Significant changes to the save state system [Aaron Giles]:
-  * Added alternate save state pre-/post-load function types that take integer or pointer parameters. Updated several sound cores and other files to take advantage of this.
-  * Made state handler registrations track like other scoped resources (timers, memory) so that registrations can occur as late as MACHINE_INIT time.
-  * Added logic to detect registrations after MACHINE_INIT time and prevent saves in that case.
-  * Added logic to detect when CPUs or sound chips haven't registered anything to save/load. When this happens, info is logged to error.log and saves/loads are disallowed.
-  * Allocated timers are now automatically saved and restored as part of the save state. The global time is now restored as well as a bunch of CPU execution state. This should produce more reliable restores.
-  * Added logic to defer saves until all anonymous timers have cleared. If a driver uses many anonymous timers it may not be possible to ever  successfully save, so the operation will time out after one second.
-  * Before restoring, the machine is now reset. This gives a more consistent environment for the load to occur.
-  * Re-enabled save state support for YM2151.
-  * Added save state support to the classic Namco sound system.
-  * Added save state support to the samples sound system.
+  * Added alternate save state pre-/post-load function types that take integer or pointer parameters. Updated several sound cores and other files to take advantage of this;
+  * Made state handler registrations track like other scoped resources (timers, memory) so that registrations can occur as late as MACHINE_INIT time;
+  * Added logic to detect registrations after MACHINE_INIT time and prevent saves in that case;
+  * Added logic to detect when CPUs or sound chips haven't registered anything to save/load. When this happens, info is logged to error.log and saves/loads are disallowed;
+  * Allocated timers are now automatically saved and restored as part of the save state. The global time is now restored as well as a bunch of CPU execution state. This should produce more reliable restores;
+  * Added logic to defer saves until all anonymous timers have cleared. If a driver uses many anonymous timers it may not be possible to ever successfully save, so the operation will time out after one second;
+  * Before restoring, the machine is now reset. This gives a more consistent environment for the load to occur;
+  * Re-enabled save state support for YM2151;
+  * Added save state support to the classic Namco sound system;
+  * Added save state support to the samples sound system;
   * Removed anonymous timer usage in machine/scramble.c.

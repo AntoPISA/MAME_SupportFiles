@@ -2,54 +2,60 @@
 ----------------------------------------
 
 
-New Games supported or promoted from GAME_NOT_WORKING status
+New Games Supported or Promoted from GAME_NOT_WORKING Status
 ------------------------------------------------------------
-Megaplay : Golden Axe 2 [Barry Rodewald, GreyRogue] (Megaplay still has a few issues (continue without extra coins etc.))
-Megaplay : Sonic the Hedgehog [Barry Rodewald, GreyRogue]
-Megaplay : Tecmo World Cup [Barry Rodewald, GreyRogue]
+Megaplay: Golden Axe 2 [Barry Rodewald, GreyRogue] (1)
+Megaplay: Sonic the Hedgehog [Barry Rodewald, GreyRogue] (1)
+Megaplay: Tecmo World Cup [Barry Rodewald, GreyRogue] (1)
 Twin Eagle 2 [Olivier Galibert]
 
-New Clones supported or promoted from GAME_NOT_WORKING status
+New Clones Supported or Promoted from GAME_NOT_WORKING Status
 -------------------------------------------------------------
-Area 51 (R3000 Version) [Brian Troha] (still needs speedup finding)
+Area 51 (R3000 Version) [Brian Troha] (2)
 Ninja (clone of Sega Ninja) [Pierpaolo Prazzoli]
 
-New Non-Working games / clones supported
+New Non-Working Games / Clones Supported
 ----------------------------------------
 Battle Balls (Asia)
-Super Pang (Japan) (needs new decryption key)
+Super Pang (Japan) (3)
+
+Notes:
+------
+(1): Megaplay still has a few issues (continue without extra coins etc.).
+(2): Still needs speedup finding.
+(3): Needs new decryption key.
 
 
 Source changes:
-----------------------
+---------------
 - Sound in the ST0016 driver [R.Belmont, Tomasz Slanina]: Neratte Chu & Renju Kizoku now have sound.
 - Misc Cleanups [Lawrence Gold].
 - Fixed a couple of issues with hard disks without checksums [smf].
 - Dipswitch corrections for Karate Blazers, Turbo Force, Raiden 2 [Brian Troha].
 - Megaplay Improvements [Barry Rodewald, GreyRogue].
 - SPI / 386 updates [Ville Linde]:
-  * Added the missing keys to E-Jan.
-  * Added layer enable register.
-  * Wrote a new i386 disassembler. Dasm386 wasn't always showing stuff correctly, and now the i386 core can be compiled without i86.
-  * Preliminary Dallas DS2404 (RTC/CMOS) emulation.
-  * Added 93C46 eeprom to RF2 single and RF2 2K. It's not hooked up though.
-  * Improved i386/z80 interleaving. This should help with the small pauses.
+  * Added the missing keys to E-Jan;
+  * Added layer enable register;
+  * Wrote a new i386 disassembler. Dasm386 wasn't always showing stuff correctly, and now the i386 core can be compiled without i86;
+  * Preliminary Dallas DS2404 (RTC/CMOS) emulation;
+  * Added 93C46 eeprom to RF2 single and RF2 2K. It's not hooked up though;
+  * Improved i386/z80 interleaving. This should help with the small pauses;
   * Fixed some stuff in the i386 core. These don't seem to affect the SPI games, but should help with MESS.
 - 386 Improvements [Nathan Woods]:
-  * Adds a check enabled when MAME_DEBUG is defined that raises an error if the CPU core executed a negative cycle count.
-  * Fixed a bug in i386_set_info() when changing the EIP register.
-  * Fixed some compilation errors under non-GCC compilers
+  * Adds a check enabled when MAME_DEBUG is defined that raises an error if the CPU core executed a negative cycle count;
+  * Fixed a bug in i386_set_info() when changing the EIP register;
+  * Fixed some compilation errors under non-GCC compilers;
   * Implemented ES, BOUND, DAA, DAS, AAS, INSB, INSW, OUTSB, OUTSW, LES, LDS, HLT, LSS, LFS, LGS, IMUL with a 32 bit adjustment.
 - 386 Improvements [Ville Linde]:
-	* Added DS and SS segment prefixes. renamed fs,gs -> segment_FS, segment_GS.
-	* Added INTO opcode.
-	* Regression tested and fixed AAS opcode (incorrect behavior in Intel docs).
-	* Added AAA opcode (with correct behavior).
-	* Added AAD and AAM opcodes.
-	* Added CMC opcode
-	* Added SETALC opcode which is undocumented	
-	* removed a non-existing PUSH8 opcode from groupFE_8. Doh ;-)
-	* Regression tested and fixed SHLD and SHRD opcodes.
-	* Fixed AF flag calculation.
+	* Added DS and SS segment prefixes. Renamed fs,gs -> segment_FS, segment_GS;
+	* Added INTO opcode;
+	* Regression tested and fixed AAS opcode (incorrect behavior in Intel docs);
+	* Added AAA opcode (with correct behavior);
+	* Added AAD and AAM opcodes;
+	* Added CMC opcode;
+	* Added SETALC opcode which is undocumented;
+	* removed a non-existing PUSH8 opcode from groupFE_8;
+	* Regression tested and fixed SHLD and SHRD opcodes;
+	* Fixed AF flag calculation;
 	* Fixed AF flag in SUB and DEC opcodes.
 - Beatorizer (bootleg) improvements [smf].

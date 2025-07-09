@@ -2,38 +2,38 @@
 ---------------------------------------
 
 
-New games added or promoted from NOT_WORKING status
+New Games Added or Promoted from NOT_WORKING Status
 ---------------------------------------------------
 Canvas Croquis [David Haywood]
 Parallel Turn [Tomasz Slanina]
 
-New clones added
+New Clones Added
 ----------------
 SDI - Strategic Defense Initiative (System 16B) [Arzeno Fabrice]
 Trivial Pursuit (Spanish Edition) [Manuel Abadia]
 Multi Champ (World) [Brian Troha]
 
-New games marked as GAME_NOT_WORKING
-------------------------------------
+New Game marked as GAME_NOT_WORKING
+-----------------------------------
 Solar Assault [Ville Linde]
 
 
 MAMETesters Bugs Fixed (5):
 ---------------------------
-thunderx0104u1yel (Pierpaolo Prazzoli)
-baraduke.c_0104u5red (Aaron Giles)
-m62.c_0104u5yel (Aaron Giles)
-model1.c_0104u5yel (Aaron Giles)
-rthunder0104u5red (Aaron Giles)
+- thunderx0104u1yel (Pierpaolo Prazzoli)
+- baraduke.c_0104u5red (Aaron Giles)
+- m62.c_0104u5yel (Aaron Giles)
+- model1.c_0104u5yel (Aaron Giles)
+- rthunder0104u5red (Aaron Giles)
 
 
 Source changes:
 ---------------
 - Fixed various problems introduced in the last set of changes [Aaron Giles, Nathan Woods, Ville Linde].
-- Fixed dip-switches in 'Action Fighter' [Chaneman].
-- Improved samples support for 'Congo Bongo' [Chris Law].
+- Fixed dip-switches in Action Fighter [Chaneman].
+- Improved samples support for Congo Bongo [Chris Law].
 - Some improvements imported from MAME Plus!:
-  * Added save state support to pd4990a device for neogeo.
+  * Added save state support to pd4990a device for neogeo;
   * Fixed crash in nitrobal/gunball (stage 4, right route) [xvi].
 - Got 'Polygonet Warriors' back to the POST screen [Andrew Gardner].
 - Reduced global namespace pollution by marking many global functions explicitly static, especially in the CPU cores [Atari Ace, Aaron Giles].
@@ -49,8 +49,8 @@ Source changes:
 - Added oversampling support to the Exidy custom sound and to the DAC sound system [Aaron Giles].
 - Sega vector game updates [Aaron Giles]:
   * Rewrote vector generator from schematics. Yes, it is supposed to be that jumpy on zooms!
-  * Corrected CPU speeds and cleaned up memory maps.
-  * Connected AY-8912 to 'Zektor' for missing sound effects.
-  * Added emulation of the Universal Sound Board - not yet perfected, but gets rid of the need for samples in 'Star Trek' and 'Tac/Scan'. 'Tac/Scan' sounds pretty wretched now, but 'Star Trek' is close.
-  * Fixed CPU clock speed on the speech board, but it appears to be a bit too slow now.
+  * Corrected CPU speeds and cleaned up memory maps;
+  * Connected AY-8912 to 'Zektor' for missing sound effects;
+  * Added emulation of the Universal Sound Board - not yet perfected, but gets rid of the need for samples in Star Trek and Tac/Scan. Tac/Scan sounds pretty wretched now, but Star Trek is close;
+  * Fixed CPU clock speed on the speech board, but it appears to be a bit too slow now;
   * This is still work-in-progress. Don't report bugs yet.

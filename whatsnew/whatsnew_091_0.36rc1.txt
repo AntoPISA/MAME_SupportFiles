@@ -4,7 +4,7 @@ A few drivers which didn't strictly fit MAME's purpose have been removed. First 
 The last driver removed is Pong, which at this point was too much of a simulation and too little of an emulation. It didn't really fit into MAME's architecture which is CPU-based and targeted at accurately reproducing the gameplay of the original. That was a difficult decision to make, but thankfully I won't have to bother about these things anymore in the future. Gotta go now! *waves*.
 
 
-New games supported
+New Games Supported
 -------------------
 Dream Shopper [Zsolt Vasvari]
 Face Off [Vernon C. Brooks]
@@ -19,40 +19,39 @@ Takeda Shingen [Luca Elia]
 Teki Paki [Quench]
 Ultraman [Manuel Abadia]
 
-
-New clones supported
+New Clones Supported
 --------------------
-Berlin Wall (set 2)
-Bubble Bobble (US set 2)
-Champion Wrestler (US)
-Defender (White label)
-Ghouls 'n Ghosts (US)
-Pole Position 2 (two original sets)
-Rampart (Japan)
-Super Punch Out!! (Japan)
-Tumble Pop (Japan)
-Van Van Car (Sanritsu)
-Varth (US)
-Yokai Douchuuki (Japan old version)
+Berlin Wall (set 2) [Nicola Salmoria]
+Bubble Bobble (US set 2) [Nicola Salmoria]
+Champion Wrestler (US) [Nicola Salmoria]
+Defender (White label) [Nicola Salmoria]
+Ghouls 'n Ghosts (US) [Nicola Salmoria]
+Pole Position 2 [Nicola Salmoria]
+Rampart (Japan) [Nicola Salmoria]
+Super Punch Out!! (Japan) [Nicola Salmoria]
+Tumble Pop (Japan) [Nicola Salmoria]
+Van Van Car (Sanritsu) [Nicola Salmoria]
+Varth (US) [Nicola Salmoria]
+Yokai Douchuuki (Japan old version) [Nicola Salmoria]
 
 
 These drivers have improved GRAPHICS:
 -------------------------------------
-- Fixed shadows in 'Gauntlet' and other Atari games [Aaron Giles].
-- Fixed sprites colors in 'Contra" (I hope) and other improvements to Konami 007121-based games [Nicola Salmoria].
+- Fixed shadows in Gauntlet and other Atari games [Aaron Giles].
+- Fixed sprites colors in Contra (I hope) and other improvements to Konami 007121-based games [Nicola Salmoria].
 
 
 These drivers have new or improved SOUND:
 -----------------------------------------
-- New samples in 'Asteroids'/'Asteroids Deluxe' [Jarek Parchanski].
-- Preliminary sound in 'Bandido' [Zsolt Vasvari, Juergen Buchmueller].
-- Samples are no longer needed in 'Stratovox', 'Battle Zone', 'Red Baron', 'Asteroids' [Juergen Buchmueller].
+- New samples in Asteroids/Asteroids Deluxe [Jarek Parchanski].
+- Preliminary sound in Bandido [Zsolt Vasvari, Juergen Buchmueller].
+- Samples are no longer needed in Stratovox, Battle Zone, Red Baron, Asteroids [Juergen Buchmueller].
 
 
 Source changes:
 ----------------
-- Fixed controls in atarifb4 and atari soccer [Nicola Salmoria].
-- Fixed protection in 'Super World Stadium '92' [Vernon C. Brooks].
+- Fixed controls in atarifb4 and Atari Soccer [Nicola Salmoria].
+- Fixed protection in Super World Stadium '92 [Vernon C. Brooks].
 - [DOS] -hotrod selects a more appropriate button configuration when NeoGeo games are played [Paolo Fiorani].
 - The coin/start buttons are slightly changed. NOw they are layed out this way:
   1,2,3,4 -> start 1,2,3,4

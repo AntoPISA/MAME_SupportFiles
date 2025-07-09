@@ -2,16 +2,16 @@
 ----------------------------------------
 
 
-New Games Added or Promoted from GAME_NOT_WORKING status
+New Games Added or Promoted from GAME_NOT_WORKING Status
 --------------------------------------------------------
-Bulls Eye Darts [Pierpaolo Prazzoli] - colour problems
+Bulls Eye Darts [Pierpaolo Prazzoli] (1)
 Drivers Edge [Aaron Giles]
 Mahjong Electron Base [Luca Elia, yong]
 Mahjong Neruton Haikujirada [Luca Elia]
 Space Launcher [Pierpaolo Prazzoli]
-Varia Metal [David Haywood] - no sound, some gfx issues
+Varia Metal [David Haywood] (2)
 
-New Clones Added or Promoted from GAME_NOT_WORKING status
+New Clones Added or Promoted from GAME_NOT_WORKING Status
 ---------------------------------------------------------
 Atari Tetris (bootleg set 2) [Kevin Eshbach]
 Battle Garegga (older Hong Kong version) [Brian Troha]
@@ -20,74 +20,93 @@ Kung Fu Taikun (alt) [Taucher]
 Liberation (bootleg) [Pierpaolo Prazzoli]
 Martial Champion (US UAD version) [R. Belmont]
 Quiz 365 (Japan) [Luca Elia]
-Sorcer Striker (alt dump) [Brian Troha] (one dump migh be bad)
+Sorcer Striker (alt dump) [Brian Troha] (3)
 Space Fever (color set 2, b&w set 2) [Pierpaolo Prazzoli]
 Time Pilot (Atari license) [Chris Hardy]
 
-New Non-Working games / clones supported
+New Non-Working Games / Clones Supported
 ----------------------------------------
 Double Cheese [Pierpaolo Prazzoli]
 Talbot [Pierpaolo Prazzoli]
+
+Game Removed
+------------
+poleps2c
+
+
+Notes:
+------
+(1): Colour problems.
+(2): No sound, some GFX issues.
+(3): One dump migh be bad.
+
+
+MAME Testers Bug Fixed (9):
+- machbrkr068gre
+- nebulray066gre
+- ptblank056gre
+- sws9637b16yel
+- jungler37b3gre
+- digdug063gre
+- galaga057gre
+- bosco071u2gre
+- poleposc059gra
 
 
 Source changes:
 ---------------
 - Big 80s Namco update (this affects the first Namco games that used custom I/O chips) [Nicola Salmoria]:
-  * These files are no longer needed and should be removed: drivers/bosco.c, drivers/xevious.c, drivers/digdug.c, machine/digdug.c, machine/galaga.c, machine/bosco.c, machine/polepos.c, sndhrdw/bosco.c.
-  * Added three new sound chips: NAMCO_15XX, NAMCO_52XX, NAMCO_54XX, and changed drivers to use them (NAMCO_54XX is just a placeholder playing samples, until the chip is reverse engineered).
-  * MAME testers bugs fixed: digdug063gre, galaga057gre, bosco071u2gre, poleposc059gra.
-  * Added EAROM support to digdug.
-  * Fixed the polepos2 title screen which had been broken since day 1, strange that nobody noticed.
-  * Fixed various mistakes in the polepos ROM loading (one missing speech ROM in polepos,  polepos2 was using the wrong engine sound ROMs (it's turbo!), added missing vertical scaling PROMs).
-  * Extensive documentation of ROM names and placement, and differences between Namco and licensed versions.
-  * Converted all drivers to tilemaps, and made gfx emulation more accurate according to schematics.
-  * polepos sprite zooming should now be closer to the hardware.
-  * IP_KEY_PREVIOUS and IP_JOY_PREVIOUS are no longer used by any driver: they may be removed from the core.
-  * Support for start lamps, coin counters and coin lockout (all internallyhandled by the custom I/O chip).
-  * Toggling the test switch while the game is running enters test mode without need to manually reset.
-  * Found and documented test mode Easter eggs in all games except 'Xevious'.
-  * Bosconian now uses a different sound PROM, which seems more correct.
-  * Galaga uses better dumps of the PROMs, with the unused top 4 bits set to 0.
-  * Correct handling of 52XX sample start/end pointers in ROM.
-  * Better emulation of 50XX custom, no more need for hacks in 'Bosconian'.
-  * Swapped digdug and digdugb, the main set should be the newer one.
-  * Removed these galaga clones: nebulbee (copyright/name change), galagab2 (mix 'n match of ROMs from other sets), galaga84 (copyright/gfx change),   galagads (1-byte hack to get fast shoot, reproducible with this line in cheat.dat: galaga:1:070D:0D:100:Fast Shoot).
-  * Added 'Galaga rev. B', which is now the main set, renamed the other galagao.
-  * Added galagamk, a different Midway version.
-  * Removed various bad dumps from polepos2b and poleps2c, they turned out to be the same version so poleps2c is removed.
-  * drivers/locomotn.c is no longer needed and should be removed.
-  * Converted to tilemaps, consolidated as much as I could.
-  * Fixed: jungler37b3gre error.
-  * Correct tile/sprite priority handling (also in 'Bosconian').
-  * Documented the easter egg in 'Rally X'.
-  * Added starfield in 'Tactician'.
+  * These files are no longer needed and should be removed: drivers/bosco.c, drivers/xevious.c, drivers/digdug.c, machine/digdug.c, machine/galaga.c, machine/bosco.c, machine/polepos.c, sndhrdw/bosco.c;
+  * Added three new sound chips: NAMCO_15XX, NAMCO_52XX, NAMCO_54XX, and changed drivers to use them (NAMCO_54XX is just a placeholder playing samples, until the chip is reverse engineered);
+  * Added EAROM support to digdug;
+  * Fixed the polepos2 title screen which had been broken since day 1, strange that nobody noticed;
+  * Fixed various mistakes in the polepos ROM loading (one missing speech ROM in polepos,  polepos2 was using the wrong engine sound ROMs (it's turbo!), added missing vertical scaling PROMs);
+  * Extensive documentation of ROM names and placement, and differences between Namco and licensed versions;
+  * Converted all drivers to tilemaps, and made gfx emulation more accurate according to schematics;
+  * polepos sprite zooming should now be closer to the hardware;
+  * IP_KEY_PREVIOUS and IP_JOY_PREVIOUS are no longer used by any driver: they may be removed from the core;
+  * Support for start lamps, coin counters and coin lockout (all internallyhandled by the custom I/O chip);
+  * Toggling the test switch while the game is running enters test mode without need to manually reset;
+  * Found and documented test mode Easter eggs in all games except Xevious;
+  * Bosconian now uses a different sound PROM, which seems more correct;
+  * Galaga uses better dumps of the PROMs, with the unused top 4 bits set to 0;
+  * Correct handling of 52XX sample start/end pointers in ROM;
+  * Better emulation of 50XX custom, no more need for hacks in Bosconian;
+  * Swapped digdug and digdugb, the main set should be the newer one;
+  * Removed these galaga clones: nebulbee (copyright/name change), galagab2 (mix 'n match of ROMs from other sets), galaga84 (copyright/gfx change), galagads (1-byte hack to get fast shoot, reproducible with this line in cheat.dat: galaga:1:070D:0D:100:Fast Shoot);
+  * Added Galaga rev. B, which is now the main set, renamed the other galagao;
+  * Added galagamk, a different Midway version;
+  * Removed various bad dumps from polepos2b and poleps2c, they turned out to be the same version so poleps2c is removed;
+  * drivers/locomotn.c is no longer needed and should be removed;
+  * Converted to tilemaps, consolidated as much as I could;
+  * Correct tile/sprite priority handling (also in Bosconian);
+  * Documented the easter egg in Rally X;
+  * Added starfield in Tactician;
   * Fixed the RC filter control in the games with Konami sound.
-- Big Namco NB1 update [Phil Stroffolino]:
-  * Various improvements for System NB emulation, including: new driver: Greatest Slugger '93 (Japan), hardware shadow support (used heavily in Greatest Slugger), dedicated random number generator chip, sprite stretch glitch (affects Outfoxies intro), tilemap tile banking feature (used by Mach Breakers), removed several game-specific hacks; now uses dedicated CPU registers for interrupts. Preliminary support for screen blanking (hides garbage in Outfoxies). Proper POSIRQ handling, for scanline effects. Fixes the watereffects in Outfoxies.  This same feature needs to be folded into System 2 emulation, but I haven't gotten around to it yet. Various Mach Breaker-specific hacks for interpretting the ROZ layer registers; these aren't yet fully understood.  In particular, the "Monster Pull" stage is missing a "3d floor."
-- Changes should fix mametesters bugs: machbrkr068gre, nebulray066gre, ptblank056gre, sws9637b16yel
+- Big Namco NB1 update: Various improvements for System NB emulation, including: new driver: Greatest Slugger '93 (Japan), hardware shadow support (used heavily in Greatest Slugger), dedicated random number generator chip, sprite stretch glitch (affects Outfoxies intro), tilemap tile banking feature (used by Mach Breakers), removed several game-specific hacks; now uses dedicated CPU registers for interrupts. Preliminary support for screen blanking (hides garbage in Outfoxies). Proper POSIRQ handling, for scanline effects. Fixes the watereffects in Outfoxies. This same feature needs to be folded into System 2 emulation, but I haven't gotten around to it yet. Various Mach Breaker-specific hacks for interpretting the ROZ layer registers; these aren't yet fully understood. In particular, the "Monster Pull" stage is missing a "3d floor" [Phil Stroffolino].
 - Fixed a bug with AM_SHARE [Aaron Giles].
 - Various PSX file updates / cleanups [smf].
-- VSNes Filename Fixes [chaneman].
+- VSNes filename fixes [chaneman].
 - Updated Hard Drivin' driver and fixed Steel Talons / HD Airborne again [Aaron Giles].
 - Various fixes [Curt Coder]:
-  * Problems created when pacland was converted to tilemaps.
-  * Converted Jackal to tilemaps.
-  * Fixed guardians of the hood p3 controls.
-  * Fixed heat barrel dips.
-  * Fixed shot rider dips.
-  * Fixed firebattle dips.
-  * Updated docastle.c memory maps.
+  * Problems created when pacland was converted to tilemaps;
+  * Converted Jackal to tilemaps;
+  * Fixed guardians of the hood p3 controls;
+  * Fixed heat barrel dips;
+  * Fixed shot rider dips;
+  * Fixed firebattle dips;
+  * Updated docastle.c memory maps;
   * Added MSM5205 to idsoccer.
 - Cleaned up/Merged various Atari drivers: clayshoo.c, cloak.c, cloud9.c, copsnrob.c, cyberbal.c, destroyr.c, eprom.c, fastfred.c, firetrk.c, flyball.c, foodf.c [Aaron Giles].
 - Protection fix for Sonic Arcade; still crashes due to video emulation bug [Roger Sanders].
 - Misc fixes [Nathan Woods]:
-  * src/cpu/hd6309/6309tbl.c, src/cpu/hd6309/hd6309.c: Minor timing enhancements, and changed a few indexing modes to be illegal.
-  * src/cpuintrf.c: Renamed CPU_CP1600 to CPU_CP1610.
+  * src/cpu/hd6309/6309tbl.c, src/cpu/hd6309/hd6309.c: Minor timing enhancements, and changed a few indexing modes to be illegal;
+  * src/cpuintrf.c: Renamed CPU_CP1600 to CPU_CP1610;
   * src/sound/k051649.c: Enhancements to the K051649 sound system.
 - Fixed sspirits dips [B.S. Ruggeri].
-- Fixed 'Mortal Kombat' damage that was broken in 0.79 [Aaron Giles].
-- Simulated sound in 'Super Slam' [Quench].
-- Fixed 'bad colour RAM' error in hyrda / pitfight [Aaron Giles].
+- Fixed Mortal Kombat damage that was broken in 0.79 [Aaron Giles].
+- Simulated sound in Super Slam [Quench].
+- Fixed 'bad colour RAM' error in hyrda/pitfight [Aaron Giles].
 - Fixed escape kids so it boots again [Aaron Giles].
 - Support for CPU-specific internal memory maps [Aaron Giles].
 - Reverted RF5c68 to old version [R. Belmont].

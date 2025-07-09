@@ -3,28 +3,35 @@
 NOTE: Credit for the Z80 DAA emulation improvement in the previous release should have been given to 'Ramsoft' ( http://www.ramsoft.bbk.org/ ).
 
 
-New Games supported or promoted from GAME_NOT_WORKING status
+New Games Supported or Promoted from GAME_NOT_WORKING Status
 ------------------------------------------------------------
-Angel Kiss [David Haywood] (no sound)
+Angel Kiss [David Haywood] (1)
 Cookie & Bibi 2 [David Haywood]
-Grand Striker 2 [David Haywood] (priority glitch inbetween round)
+Grand Striker 2 [David Haywood] (2)
 Hatch Catch [David Haywood]
-Quiz Panicuru Fantasy [Pierpaolo Prazzoli] (incorrect sample banking)
-Video Pinball [Stefan Jokisch] (driver was rewritten, it works now)
+Quiz Panicuru Fantasy [Pierpaolo Prazzoli] (3)
+Video Pinball [Stefan Jokisch] (4)
 
-New Non-Working games / clones supported
-----------------------------------------
-BC Story (SemiCom) (protection (missing 0x200 bytes of program code))
+New Non-Working Game / Clones Supported
+---------------------------------------
+BC Story (SemiCom) (5)
+
+Notes:
+(1): No sound.
+(2): Priority glitch inbetween round.
+(3): Incorrect sample banking.
+(4): Driver was rewritten, it works now.
+(5): Protection (missing 0x200 bytes of program code).
 
 
 Source changes:
 ---------------
 - New CHD format and management tools [Aaron Giles]:
-  * hdcomp is now chdman, old chd files are _not_ compatible, they will need to be updated using chdman -update oldchd.chd newchd.chd.
-  * CHD now stands for 'Compressed Hunks of Data' not 'Compressed.
+  * hdcomp is now chdman, old chd files are _not_ compatible, they will need to be updated using chdman -update oldchd.chd newchd.chd;
+  * CHD now stands for 'Compressed Hunks of Data' not 'Compressed;
   * Hard Drive' as the format is more flexible.
 - Misc Changes [Nathan Woods]:
-  * Minor cleanups (specifically changed some variables to static).
+  * Minor cleanups (specifically changed some variables to static);
   * Fixes and updates from MESS
 - Updated a couple of drivers with new Hard Drive SHA1s [Roman Scherzer].
 - Fixed sound in tpgolf [Leon van Rooij].

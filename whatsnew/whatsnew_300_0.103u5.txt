@@ -2,12 +2,12 @@
 ---------------------------------------
 
 
-New games added or promoted from NOT_WORKING status
+New Games Added or Promoted from NOT_WORKING Status
 ---------------------------------------------------
 Hidden Catch (World) [Pierpaolo Prazzoli]
 Fortress 2 Blue Arcade [Pierpaolo Prazzoli]
 
-New clones added
+New Clones Added
 ----------------
 Several more NeoGeo bootlegs [Razoola, David Haywood]
 Jumbo Ozaki Super Masters Golf (Japan) [Team Japump]
@@ -16,16 +16,16 @@ Miss Puzzle (Nudes) [Brian Troha]
 
 MAMETesters Bug Fixed (1):
 --------------------------
-esb065gre (Mathis Rosenhauer)
+- esb065gre (Mathis Rosenhauer)
 
 
 Source changes:
 ---------------
 - Undid fix for turbofrc37b1gre since it broke more things that it fixed [Pierpaolo Prazzoli].
-- Fixed minor color issue in 'Cookie & Bibi' [David Haywood].
+- Fixed minor color issue in Cookie & Bibi [David Haywood].
 - Updates to the Hyperstone core [Pierpaolo Prazzoli]:
-  * Removed nested delays.
-  * Added better delay branch support.
+  * Removed nested delays;
+  * Added better delay branch support;
   * Fixed PC seen by a delay instruction, because a delay instruction should use the delayed PC (thus allowing the execution of software opcodes too).
 - Hooked up watchdog for NeoGeo games and removed a number of hacks [David Haywood].
 - Fixed hanging at the end of level 3 in klondkp [Pierpaolo Prazzoli].
@@ -34,9 +34,9 @@ Source changes:
 - Fixed osd_fopen error reporting to return the correct value if you hit MAX_OPEN_FILES [Nathan Woods].
 - Changed several byte operands in the i386 disassembler to be diassembled as unsigned rather than signed [Nathan Woods].
 - Discrete sound updates [Derrick Renaud]:
-  * Added new DISCRETE_CSVLOG module that lets you log discrete nodes as CSV (comma separated values) data.
-  * Modified discrete core to use the clock specified in the MDRV_SOUND_ADD line. If the clock is specified as 0, then the discrete emulation will default to the audio sample rate clock.
-  * Tweaked 'Phoenix' Effect 2 sound to be more accurate matching oscilliscope data. Changed the 'Phoenix' discrete clock rate to a fixed rate of 120000 allowing the simulation to be more accurate with less alaising noise at the cost of speed. 
+  * Added new DISCRETE_CSVLOG module that lets you log discrete nodes as CSV (comma separated values) data;
+  * Modified discrete core to use the clock specified in the MDRV_SOUND_ADD line. If the clock is specified as 0, then the discrete emulation will default to the audio sample rate clock;
+  * Tweaked Phoenix Effect 2 sound to be more accurate matching oscilliscope data. Changed the 'Phoenix' discrete clock rate to a fixed rate of 120000 allowing the simulation to be more accurate with less alaising noise at the cost of speed;
   * Fixed the bug in the DISCRETE_NOTE module that produced notes 1 count off.
 - Added support for registers that are not to be displayed in the register list. This is useful for registers like AX on i386, so that AX can be used in expressions but not represented on the register list. Simply precede the register name with '~' to prevent display [Nathan Woods, Aaron Giles].
 - Added support for the various x86 8-bit and 16-bit derived registers, as hidden registers in the i386 core [Nathan Woods].

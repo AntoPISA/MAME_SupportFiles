@@ -3,7 +3,7 @@
 IMPORTANT CHANGE FOR OSD DEVELOPERS: a new function osd_create_directory is now required in order to create memcard subdirectories. This function was previously defined only for the MESS core, so if there is a MESS port already available, you can just import that function.
 
 
-New clones added
+New Clones Added
 ----------------
 Fighters Swords (Korean rel. of Samurai Showdown III) [Haze, Razoola]
 Art of Fighting 3 (Korean release) [Haze, Razoola]
@@ -18,7 +18,7 @@ Golgo 13 Kiseki no Dandou (GLS1/VER.A) [R. Belmont]
 Pollux (set 3) [ClawGrip]
 Out Zone (set 4) [Tormod Tjaberg]
 
-New games marked as GAME_NOT_WORKING
+New Games Marked as GAME_NOT_WORKING
 ------------------------------------
 Gamshara [smf]
 Taisen Hot Gimmick 4 Ever (Japan) [Guru, David Haywood]
@@ -28,18 +28,18 @@ Mahjong G-Taste [Guru, David Haywood]
 
 MAMETesters Bugs Fixed (12):
 ----------------------------
-exprraid0103u1red (Pierpaolo Prazzoli)
-asterix053gre (Pierpaolo Prazzoli)
-asterix_2055gre (Pierpaolo Prazzoli)
-asterix_3055gre (Pierpaolo Prazzoli)
-namcos10104u4red (Aaron Giles)
-rthunder0104u3ora (Aaron Giles)
-memorycard0104u2ora (Aaron Giles)
-pause0104u2ora (Aaron Giles)
-undrfire0104u4yel (Aaron Giles)
-wwallyj0104u4red (Aaron Giles)
-scorpion0104u4red (Aaron Giles)
-itech8c0104u4red (Aaron Giles)
+- exprraid0103u1red (Pierpaolo Prazzoli)
+- asterix053gre (Pierpaolo Prazzoli)
+- asterix_2055gre (Pierpaolo Prazzoli)
+- asterix_3055gre (Pierpaolo Prazzoli)
+- namcos10104u4red (Aaron Giles)
+- rthunder0104u3ora (Aaron Giles)
+- memorycard0104u2ora (Aaron Giles)
+- pause0104u2ora (Aaron Giles)
+- undrfire0104u4yel (Aaron Giles)
+- wwallyj0104u4red (Aaron Giles)
+- scorpion0104u4red (Aaron Giles)
+-"itech8c0104u4red (Aaron Giles)
 
 
 Source changes:
@@ -50,8 +50,8 @@ Source changes:
 - Fixed compile errors under GCC 4.1 [Lawrence Gold].
 - Changed the NES PPU interfaces to follow new struct conventions [Nathan Woods].
 - Updated disassembly comments support [Andrew Gardner]:
-  * Fixed a 0-length comment bug (no more "// 0, " allowed).
-  * Added comment output to the new debugger's dasm command.
+  * Fixed a 0-length comment bug (no more "// 0, " allowed);
+  * Added comment output to the new debugger's dasm command;
   * Changed the comment save path from /mame/comment to /mame/comments.
 - Added new debugger properties: logunmap, logunmapd, logunmapi which enable/disable logging of unmapped memory accesses [Nathan Woods].
 - Added save state support to the Astrocade driver [Adam Bousley].
@@ -61,9 +61,9 @@ Source changes:
 - Fixed incorrect flags emulation in the 8080 CMA instruction [Kopromaster].
 - Added support for zero-length palettes (requires RGB direct mode) and several validity checks related to display variables [Nathan Woods].
 - Updated windows input code [Derrick Renaud]:
-  * Now using RAWMOUSE mode if available. This means you can now use multiple mice in Windows XP. Lightgun support has not been changed yet.
-  * Added back DX7 support for the windows input system to support multiple mice. It was set to DX5 in 104u2.
-  * Removed the system mouse from the list of available mice on non-XP systems. This allows you to now properly select the individual mouse.
+  * Now using RAWMOUSE mode if available. This means you can now use multiple mice in Windows XP. Lightgun support has not been changed yet;
+  * Added back DX7 support for the windows input system to support multiple mice. It was set to DX5 in 104u2;
+  * Removed the system mouse from the list of available mice on non-XP systems. This allows you to now properly select the individual mouse;
   * Modified the Analog Axes selection of the player controls to be more responsive.
 - Cleaned up video system in Scorpion 2 driver [El Condor].
 - Converted asterix to use K056832 emulation [Pierpaolo Prazzoli].
@@ -71,10 +71,10 @@ Source changes:
 - Cleaned up include files in CPU/sound cores. CPU cores should generally only need to include cpuintrf.h. Sound cores should generally only need to include sndintrf.h [Atari Ace, Aaron Giles].
 - Fixed bug that caused a full set of validity checks even on release builds [Aaron Giles].
 - New debugger features [Aaron Giles]:
-  * New command "print" is a simple way to display the result of one or more expressions.
-  * New command "symlist" displays all the symbols registered.
-  * All save state registered scalar globals are now available as symbols (prefixed by a '.').
-  * All save state registered global arrays are now available for viewing/editing in the memory window.
+  * New command "print" is a simple way to display the result of one or more expressions;
+  * New command "symlist" displays all the symbols registered;
+  * All save state registered scalar globals are now available as symbols (prefixed by a '.');
+  * All save state registered global arrays are now available for viewing/editing in the memory window;
   * All registered memory regions are also available for viewing/editing in the memory window.
 - Made it a fatal error to request operations on invalid sound/CPU indexes. These have been logged to the error.log in the past, but really need to be cleaned up. Added a new function safe_activecpu_get_pc() that can be used when logging PCs to smartly detect whether or not it is safe to call activecpu_get_pc() [Aaron Giles].
 - Changed CPU init/reset callbacks. The init callback now accepts a number of parameters, including the CPU index, the clock, a generic configuration parameter, and a pointer to the IRQ callback. The reset callback no longer takes any parameters (the configuration parameter has been moved to the init callback). And the IRQ_CALLBACK getter/setter has been removed since this is now set up once at initialization time [Aaron Giles].

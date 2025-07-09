@@ -101,20 +101,20 @@ New Clones Added
 
 These drivers have improved GRAPHICS:
 -------------------------------------
-- Accurate colors in 'Gunsmoke' [Paul Swan, Nicola Salmoria].
-- Colors in 'Super Basketball' should now be correct for real (the opponent's shirts weren't changing color in each level) [Marco Cassili, Nicola Salmoria].
-- Accurate colors in 'Vulgus' [Pete Ground, Mirko Buffoni].
-- Background in 'Millipede' [Brad Oliver].
-- Fixed sprites in 'Gunsmoke' [Nicola Salmoria].
-- Emulation of AVG sparkling bit ('Tempest' stars/fireworks) [Brad Oliver].
-- Fixed sprites and background in 'Sidearms'. Colors should be correct as well. There probably is another scrolling background missing [Nicola Salmoria].
-- A note about 'Zaxxon' colors: we are aware that they are wrong. The reason is that we are using the 'Super Zaxxon' color PROM. As soon as we'll have the correct 'Zaxxon' color PROM, they will be fixed.
-- Better colors in 'Eggs' [Petter Sjölund].
-- Appropriate blue background in 'Scramble', 'Super Cobra' and other games running on the same hardware [Mike Coates].
-- Fixes to 'Star Wars' brightness [Bernd Wiebelt].
-- Added the background starfield to 'Bosconian' [Martin Scragg].
-- Slightly better colors in 'Locomotion' [Gonzalo Casas].
-- Fixed character colors in 'Black Tiger' [Michael Appolo].
+- Accurate colors in Gunsmoke [Paul Swan, Nicola Salmoria].
+- Colors in Super Basketball should now be correct for real (the opponent's shirts weren't changing color in each level) [Marco Cassili, Nicola Salmoria].
+- Accurate colors in Vulgus [Pete Ground, Mirko Buffoni].
+- Background in Millipede [Brad Oliver].
+- Fixed sprites in Gunsmoke [Nicola Salmoria].
+- Emulation of AVG sparkling bit (Tempest stars/fireworks) [Brad Oliver].
+- Fixed sprites and background in Sidearms. Colors should be correct as well. There probably is another scrolling background missing [Nicola Salmoria].
+- A note about Zaxxon colors: we are aware that they are wrong. The reason is that we are using the Super Zaxxon color PROM. As soon as we'll have the correct Zaxxon color PROM, they will be fixed.
+- Better colors in Eggs [Petter Sjölund].
+- Appropriate blue background in Scramble, Super Cobra and other games running on the same hardware [Mike Coates].
+- Fixes to Star Wars brightness [Bernd Wiebelt].
+- Added the background starfield to Bosconian [Martin Scragg].
+- Slightly better colors in Locomotion [Gonzalo Casas].
+- Fixed character colors in Black Tiger [Michael Appolo].
 
 
 These drivers have new or improved SOUND:
@@ -130,47 +130,47 @@ These drivers have new or improved SOUND:
 - Sound (through samples) in 'Yie Ar Kung Fu' [Phil Stroffolino, Kevin Estep].
 - Completely rewritten the Namco waveform audio subsystem. This gets rid of some artefacts in 'Pac Man' (eating a ghost) and 'Ms Pac Man' (eating dots while a fruit is bouncing) [Nicola Salmoria, Aaron Giles].
 - TI TMS5220 emulator. This handles speech in 'Star Wars' and other games [Frank Palazzolo].
-- Speech in 'Discs of Tron' [Aaron Giles].
-- Sound in 'Three Stooges'. Actually the code had always been there, it just had to be activated [Fabrice Frances].
-- Music tempo in 'Scramble', 'Frogger', 'Amidar' and derivatives should now be correct [Frank Palazzolo].
-- Music in 'Spy Hunter', sound in 'Rampage' [Aaron Giles].
-- Sound in 'Qix' [Aaron Giles].
-- Sound in 'Super Basketball' [Nicola Salmoria].
-- Sound in 'Rastan' [Tatsuyuki Satoh].
-- Sound in 'Naughty Boy' and 'Pop Flamer', using the 'Pleiads' driver. Not very good, but it's a start [Brad Oliver].
-- Sound in 'Espial' [Brad Oliver].
-- Fixes to 'Missile Command' [Eric Anschuetz].
-- Music in 'Phoenix', via samples [Brad Oliver].
-- Partial emulated sound in 'Bubble Bobble' (only the YM2203 chip, therefore only some sound effects - no music) [Nicola Salmoria].
-- Sound in 'Coors Light Bowling' [Nicola Salmoria].
-- Better tempo and pitch in 'Blue Print' [Alan J McCormick].
+- Speech in Discs of Tron [Aaron Giles].
+- Sound in Three Stooges. Actually the code had always been there, it just had to be activated [Fabrice Frances].
+- Music tempo in Scramble, 'Frogger', 'Amidar' and derivatives should now be correct [Frank Palazzolo].
+- Music in Spy Hunter, sound in 'Rampage' [Aaron Giles].
+- Sound in Qix [Aaron Giles].
+- Sound in Super Basketball [Nicola Salmoria].
+- Sound in Rastan [Tatsuyuki Satoh].
+- Sound in Naughty Boy and 'Pop Flamer', using the 'Pleiads' driver. Not very good, but it's a start [Brad Oliver].
+- Sound in Espial [Brad Oliver].
+- Fixes to Missile Command [Eric Anschuetz].
+- Music in Phoenix, via samples [Brad Oliver].
+- Partial emulated sound in Bubble Bobble (only the YM2203 chip, therefore only some sound effects - no music) [Nicola Salmoria].
+- Sound in Coors Light Bowling [Nicola Salmoria].
+- Better tempo and pitch in Blue Print [Alan J McCormick].
 
 
 These drivers have HIGH SCORE support:
 --------------------------------------
-- Fixed 'Asteroids' [Brad Oliver].
-- 'Legendary Wings', 'Section Z', 'Espial', 'Black Tiger', 'Gunsmkoke' [Juan Carlos Lorente].
-- Fixed 'Popeye' [Juan Carlos Lorente].
-- '1943' [Jeff Johnson].
-- 'Tac/Scan', 'Star Trek', pacmanbl, 'Red Ufo' [Valerio Verrando].
+- Fixed Asteroids [Brad Oliver].
+- Legendary Wings, Section Z, Espial, Black Tiger, Gunsmkoke [Juan Carlos Lorente].
+- Fixed Popeye [Juan Carlos Lorente].
+- 1943 [Jeff Johnson].
+- Tac/Scan, Star Trek, pacmanbl, Red Ufo [Valerio Verrando].
 
 
 Other drivers changes:
 ----------------------
-- A note about 'Tempest': Several people complained that mouse control is reversed. This is not the case. The more obvious place where this can be seen is the level selection screen at the beginning: move the mouse right, the block goes right. Anyway, you can now reverse the controls (see below).
+- A note about Tempest: Several people complained that mouse control is reversed. This is not the case. The more obvious place where this can be seen is the level selection screen at the beginning: move the mouse right, the block goes right. Anyway, you can now reverse the controls (see below).
 - Radarscope works [Andy White].
 - Dirty rectangles support in 'Qix', all Williams games, 'Cloak & Dagger', 'Berzerk', 'Arabian', 'Space Invaders' and clones, 'Kangaroo', 'Space Panic', 'Warp Warp' [Aaron Giles].
-- Some tweaks to dip switches in the 'Super Cobra', 'Lost Tomb' and 'Rescue' driver [James R. Twine].
-- Fixes to dip switches and input ports in several games [Marco Cassili].
-- 'Space Panic' supports rotation [Mike Coates].
-- Fixed 'Invinco' (it was missing a ROM) [Mike Coates].
+- Some tweaks to DIP switches in the 'Super Cobra', 'Lost Tomb' and 'Rescue' driver [James R. Twine].
+- Fixes to DIP switches and input ports in several games [Marco Cassili].
+- Space Panic supports rotation [Mike Coates].
+- Fixed Invinco (it was missing a ROM) [Mike Coates].
 - Framerates in the Atari vector games should now be correct [Neil Bradley].
-- In 'Cloak & Dagger', the background bitmap is now aligned properly with the playfield graphics, and boxes no longer get stuck at the corners of the conveyors [Dan Boris].
+- In Cloak & Dagger, the background bitmap is now aligned properly with the playfield graphics, and boxes no longer get stuck at the corners of the conveyors [Dan Boris].
 - Added the missing third button to 'Sidearms' [Nicola Salmoria].
-- 'Spy Hunter' displayes an extra line of text at the bottom indicating the status of the lamps that were on the arcade machine [Aaron Giles].
-- Fixed 'Bosconian' crashing: This was the speech processor being used for a protection check [Martin Scragg].
-- Alternate controls in 'Defender' and 'Stargate', to control the ship using the standard 8-way directional controls instead of up/down/reverse/thrust. Available only when the -cheat option is specified [Maurizio Zanello].
-- Alternate controls in 'Battle Zone', 'Sarge', 'Defender' and 'Stargate' are available only when the -cheat option is specified [Nicola Salmoria].
+- Spy Hunter displayes an extra line of text at the bottom indicating the status of the lamps that were on the arcade machine [Aaron Giles].
+- Fixed Bosconian crashing: This was the speech processor being used for a protection check [Martin Scragg].
+- Alternate controls in Defender and Stargate, to control the ship using the standard 8-way directional controls instead of up/down/reverse/thrust. Available only when the -cheat option is specified [Maurizio Zanello].
+- Alternate controls in Battle Zone, Sarge, Defender and Stargate are available only when the -cheat option is specified [Nicola Salmoria].
 
 
 Changes to the main program:

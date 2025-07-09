@@ -2,10 +2,10 @@
 --------------------------------------
 
 
-New Games / Clones supported or promoted from GAME_NOT_WORKING status
----------------------------------------------------------------------
-Crackdown [Charles MacDonald, David Haywood] (some graphical problems)
-Sonic the Hedgehog 2 (Megaplay) [David Haywood] (some problems due to bad genesis emulation)
+New Games Clones Supported or Promoted from GAME_NOT_WORKING Status
+-------------------------------------------------------------------
+Crackdown [Charles MacDonald, David Haywood] (1)
+Sonic the Hedgehog 2 (Megaplay) [David Haywood] (2)
 Photo Y2k [Olivier Galibert, ElSemi]
 Mahjong Channel Zoom In [Angelo Salese]
 Mahjong Kakumei [Angelo Salese]
@@ -15,7 +15,13 @@ Pinball Action (set 3, encrypted) [Nicola Salmoria]
 Tekken 3 (TET2/VER.A) [smf]
 Ehrgeiz (EG2/VER.A) [smf]
 Soul Edge Ver. II (SO3/VER.C) [smf]
-Red Hawk (bootleg) [tirino73, David Haywood] (this suffers from the same problems as the original, I'm not convinced that it really is protection as the boards are very simple, needs investigation)
+Red Hawk (bootleg) [tirino73, David Haywood] (3)
+
+Notes:
+------
+(1): Some graphical problems.
+(2): Some problems due to bad genesis emulation.
+(3): This suffers from the same problems as the original, I'm not convinced that it really is protection as the boards are very simple, needs investigation.
 
 
 Source changes:
@@ -29,19 +35,19 @@ Source changes:
   src/fileio.c:
   * Adding a MESS specific option to FILETYPE_SCREENSHOT
 - Best League update [Pierpaolo Prazzoli]:
-  * Fixed tilemaps and sprites offsets.
-  * Fixed visible area.
-  * Fixed dip-switches.
-  * Added oki banking.
-  * Added sprites wraparound.
+  * Fixed tilemaps and sprites offsets;
+  * Fixed visible area;
+  * Fixed dip-switches;
+  * Added oki banking;
+  * Added sprites wraparound;
   * Added sprites color masking.
 - SemiCom dipswitch fixes [Sonikos].
 - Excelsior updates [Pierpaolo Prazzoli]:
-  * Fixed sprites priorities.
+  * Fixed sprites priorities;
   * Added bitmap size switch (100% or 50%).
 - Megaplay dip fixes [Barry Rodewald].
 - Fixed v60 DIVFS opcodes [Sebastien Chevalier].
 - Flash updates [smf]:
-  * Implemented state saving for flash chips.
-  * Fixed block erase on 16bit flash chips.
+  * Implemented state saving for flash chips;
+  * Fixed block erase on 16bit flash chips;
   * Increased maximum number of flash chips.

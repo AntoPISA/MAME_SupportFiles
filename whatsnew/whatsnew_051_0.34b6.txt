@@ -3,42 +3,46 @@
 Note about the x86 asm 68000 core: several bugs have been fixed (most notably, it now runs under pure DOS) but it is still not complete. For example, the two Metal Slugs hang shortly after game start. They will work if you recompile using the C core.
 
 
-New games supported
+New Games Supported
 -------------------
-Armored Car (set 2) (merged) [Nicola Salmoria]
-Bagman (Stern set 1) (merged) [Nicola Salmoria]
+Armored Car (set 2) [Nicola Salmoria]
+Bagman (Stern set 1) [Nicola Salmoria]
 Checkmate [Al Kossow]
 Defense Command [David Winter]
 Get Star [Luca Elia]
-Jack Rabbit (set 2) (merged) [Nicola Salmoria]
-Jack Rabbit (special) (merged) [Nicola Salmoria]
-Jungler (Stern) (merged) [Nicola Salmoria]
-Mega Man (merged with Rockman) [Santeri Saarimaa]
-Midnight Resistance (Japan) (merged) [Bryan McPhail]
-Moon War II (set 2) (merged) [Nicola Salmoria]
-Mr. Do! (Yukidaruma) (merged) [Nicola Salmoria]
+Jack Rabbit (set 2) [Nicola Salmoria]
+Jack Rabbit (special) [Nicola Salmoria]
+Jungler (Stern) [Nicola Salmoria]
+Mega Man [Santeri Saarimaa] (1)
+Midnight Resistance (Japan) [Bryan McPhail]
+Moon War II (set 2) [Nicola Salmoria]
+Mr. Do! (Yukidaruma) [Nicola Salmoria]
 Ozma Wars [Al Kossow]
 Qwak (prototye) [Mike Balfour]
-Rygar (US set 1) (merged) [Nicola Salmoria]
+Rygar (US set 1) [Nicola Salmoria]
 Scion [Nicola Salmoria]
 Space Fever (B&W) [Al Kossow]
-Street Fighter 2 (2 sets merged) [Paul Leaman]
-Super Bagman (Valadon) (merged) [Nicola Salmoria]
+Street Fighter 2 [Paul Leaman]
+Super Bagman (Valadon) [Nicola Salmoria]
 Superman [Howie Cohen, Brad Oliver]
-The King od Dragons (2 sets) [Paul Leaman]
+The King od Dragons [Paul Leaman]
 Zero Zone [Brad Oliver]
+
+Notes:
+------
+(1): Merged with Rockman.
 
 
 These drivers have improved GRAPHICS:
 -------------------------------------
-- Accurate colors in 'Jungler'. Also fixed char flipping and sprite alignment [Nicola Salmoria].
-- Improved 'Vastar' [Roberto Ventura].
+- Accurate colors in Jungler. Also fixed char flipping and sprite alignment [Nicola Salmoria].
+- Improved Vastar [Roberto Ventura].
 
 
 These drivers have new or improved SOUND:
 -----------------------------------------
-- Added decay to 'Donkey Kong' [Andrew Scott].
-- Sound in 'Super Space Invaders' [Ernesto Corvi].
+- Added decay to Donkey Kong [Andrew Scott].
+- Sound in Super Space Invaders [Ernesto Corvi].
 
 
 Source changes:
@@ -98,7 +102,7 @@ Known Problems/To Do:
 Some games will give a piracy warning. You can still play the games if you set them to run in Console (Home) mode. For some games you can set the game back to arcade mode after the protection check is done and leave it that way (because some games leave a flag in SRAM as to whether the game has passed it's security check).
 Line (row) scrolling is not implemented. This is used for the floor in Karnov's Revenge, special effects in Spinmasters, etc, and many others. The calendar chip is not yet implemented. This release should give a substantial speed boost over previous betas, and there are some more optimisation ideas to be tried.
 
-Bad Roms:
+Bad ROMs:
 ---------
 Several bad ROM dumps have been found, this is where a ROM has corrupt data and may also be the wrong size. 'Fixed' ROM dumps will become available from the usual places in time. The most common error is that a ROM is twice the size it should be, and that the second half is either the same as the first or just has junk in it. To be fix these roms you simply split them in half, and throw away the second half. You should do a binary split, meaning your split program should not save any formatting information to the file. As mentioned above bad ROM dumps will continue to work but will give checkums and length errors. The Neorage team will support all fixes to the bad roms and make sure their emulator is compatible. Most fixed romsets will work on Neorage already.
 If you wish to fix your romsets here is the last of bad roms:

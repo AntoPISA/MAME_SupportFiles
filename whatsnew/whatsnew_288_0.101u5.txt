@@ -2,16 +2,16 @@
 ---------------------------------------
 
 
-New game added
+New Game Added
 --------------
 Wonder Stick [Pierpaolo Prazzoli]
 
-New clones added
+New Clones Added
 ----------------
 Atomic Robo-kid (Japan, Set 2) [Brian Troha]
 Raimais (Japan) [Brian Troha]
 
-New games marked as GAME_NOT_WORKING
+New Games Marked as GAME_NOT_WORKING
 ------------------------------------
 Daytona USA 2 Power Edition [Ville Linde]
 Ping Pong Car [David Haywood, Guru]
@@ -19,9 +19,9 @@ Ping Pong Car [David Haywood, Guru]
 
 MAMETesters Bugs Fixed (3):
 ---------------------------
-daytona099u4gre (R. Belmont)
-memoryupdate0101u1red (Aaron Giles)
-vf097u2gre (R. Belmont)
+- daytona099u4gre (R. Belmont)
+- memoryupdate0101u1red (Aaron Giles)
+- vf097u2gre (R. Belmont)
 
 
 Source changes:
@@ -37,11 +37,11 @@ Source changes:
 - Made some of the hack optimizations runtime enableable in the Voodoo emulator, and added a frameskipper. Use Ctrl+1-6 to control frameskipping, Ctrl+F/H/Q to run at full/half/quarter resolution [Aaron Giles].
 - Marked several large arrays properly as const [Atari Ace].
 - Model 3 update [Ville Linde]:
-  * Added Daytona USA 2 Power Edition
+  * Added Daytona USA 2 Power Edition;
   * Huge update to the video hardware, including:
-  - Transparency support (polygons and textures)
+  - Transparency support (polygons and textures);
   - Nearly perfect rendering order (something never got right in: Supermodel :-)
-  - Parallel lighting.
+  - Parallel lighting;
   - Texture coordinate mirroring.
 - Rewrote most of the validity checks so the full set now completes in well under 1 second, minus I/O time from paging in data. Also added region size checking versus memory maps to the validity checks. Moved all validity checks to a new file validity.c [Aaron Giles].
 - Several fixes and improvements to the C352 sound emulator [hoot development team].

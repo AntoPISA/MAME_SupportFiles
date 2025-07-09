@@ -2,7 +2,7 @@
 --------------------------------------
 
 
-New Games / Clones supported or promoted from GAME_NOT_WORKING status
+New Games/Clones Supported or Promoted from GAME_NOT_WORKING Status
 ---------------------------------------------------------------------
 Pit n Run (set 2) [MAN]
 Sky Lancer (Orca) [Manuel Assoni]
@@ -10,59 +10,64 @@ Star Trek (defender bootleg) [Pierpaolo Prazzoli]
 Poker Ladies (Leprechaun ver. 401) [Manuel Assoni]
 Pinbo (set 2) [Pierpaolo Prazzoli]
 
-New games marked as GAME_NOT_WORKING
+New Games Marked as GAME_NOT_WORKING
 ------------------------------------
 TX-1 [Phil Bennett]
 Buggy Boy [Phil Bennett]
 
 
+MAMETester Bug Fixed (1):
+-------------------------
+- wbeachvl37b7gre (Nicola Salmoria)
+
+
 Changes from Aaron Giles:
 ------------------------
-- mame.c: updated documentation.
-- cps1.c: fixed QSound routing.
-- cps2.c: fixed QSound routing.
+- mame.c: Updated documentation.
+- cps1.c: Fixed QSound routing.
+- cps2.c: Fixed QSound routing.
 - itech32.c: Fixed Driver's Edge colors (red/blue were swapped).
-- segaorun.c: many tweaks based on schematics:
-  * Connected some outputs via 8255 PPI.
-  * Fixed IRQ handling to match schematics.
-  * Hooked up watchdog, global mute.
+- segaorun.c: Many tweaks based on schematics:
+  * Connected some outputs via 8255 PPI;
+  * Fixed IRQ handling to match schematics;
+  * Hooked up watchdog, global mute;
   * Fixed IRQ2 timing
 - segaxbd, tweaks:
-  * Added hack to make GP Rider boot; input bug prevents full playability.
-  * Fixed IRQ handling to match schematics.
-  * Hooked up watchdog, sound reset, and global mute.
-  * Hooked up dummy CPU for running SMGP communications.
+  * Added hack to make GP Rider boot; input bug prevents full playability;
+  * Fixed IRQ handling to match schematics;
+  * Hooked up watchdog, sound reset, and global mute;
+  * Hooked up dummy CPU for running SMGP communications;
   * Reduced interleave on all games except LOF
 - segaybd, tweaks:
-  * Fixed CPU speeds according to schematics.
-  * Hooked up global mute.
+  * Fixed CPU speeds according to schematics;
+  * Hooked up global mute;
   * Reduced interleave on all games.
 - machine/segaic16.c: changed divide-by-zero case to return a value.
 - vidhrdw/segaic16.c, several updates:
-  * Implemented Y-board sprite priorities (not fully understood, but seems to work).
-  * Found missing 8th bit in Outrun/X-board sprite pitch.
-  * Implemented Outrun/X-board road priorities according to logic dump from Leopardcats.
-  * Hooked up road RAM double buffering that was missing for 'Outrun'/'X-board'.
+  * Implemented Y-board sprite priorities (not fully understood, but seems to work);
+  * Found missing 8th bit in Outrun/X-board sprite pitch;
+  * Implemented Outrun/X-board road priorities according to logic dump from Leopardcats;
+  * Hooked up road RAM double buffering that was missing for Outrun/X-board;
   * Disabled direct scanline mode for Outrun road, which doesn't support it.
 - Fixed sample playback glitch.
 - Fixed othunder sound clipping.
-- Fixed 'Batrider' sound.
-- Fixed 'Dream Shopper' crash.
+- Fixed Batrider sound.
+- Fixed Dream Shopper crash.
 - Added sound balancing assistance display to debug builds.
 - cpuintrf.c cleanup.
 - Removed some unwanted clamping code from sound core.
-- Adjusted 'Frogger' volume.
+- Adjusted Frogger volume.
 
 
 Changes from Derrick Renaud:
 ---------------------------
-- Added proper watchdogs to 'Bosconian', 'Galaga', 'Pole Position', 'Xevious'.
-- Fixed "Wiggie Waggle' crash.
+- Added proper watchdogs to Bosconian, Galaga, Pole Position, Xevious.
+- Fixed Wiggie Waggle crash.
 - Fixed some speaker settings.
 - schaser: updated sounds to include missle effect and fix dot sounds per schematics.
-- SN76477 emulation - fixed bug where gain was 3x more then it should be, causing effects to clip for 2/3rds of the time.
+- SN76477 emulation: fixed bug where gain was 3x more then it should be, causing effects to clip for 2/3rds of the time.
 - SN76477 emulation: fixes the attack time for one-shot envelope mode.
-- Fixed crash in crash, ripcord and robotbwl and added sample support to them.  Samples not currently recorded.
+- Fixed crash in crash, ripcord and robotbwl and added sample support to them. Samples not currently recorded.
 - robotbwl: added discrete simulation for footsteps.
 - crash: added discrete simulation for beeper.
 
@@ -76,14 +81,14 @@ Changes from Nathan Woods:
 
 Changes from Nicola Salmoria:
 ----------------------------
-- Documented debug mode in 'TNZS'.
-- Fixed some bad gfx in 'Sky Lancer'.
-- Rebalanced 'Gyruss' volume.
+- Documented debug mode in TNZS.
+- Fixed some bad GFX in Sky Lancer.
+- Rebalanced Gyruss volume.
 - NMK004 sound simulation.
 - playmark.c updates.
-- Fixed sprite/tile priorities in 'World Beach Volley', and fixed SOME priorities in "Excelsior' - but not all of them, the high score screen is still wrong.
-- Found bitmap enable bit, fixes girl pictures sticking in 'Big Twin' and 'Excelsior', and garbage graphics in 'Excelsior'.
-- Added rowscroll support, fixes wbeachvl37b7gre.
+- Fixed sprite/tile priorities in World Beach Volley, and fixed SOME priorities in Excelsior - but not all of them, the high score screen is still wrong.
+- Found bitmap enable bit, fixes girl pictures sticking in Big Twin and Excelsior, and garbage graphics in Excelsior.
+- Added rowscroll support, fixes .
 - As previously noted, wbeachvl37b16gre could be a genuine bug of the original - I don't see how it could work otherwise.
 
 
@@ -94,29 +99,29 @@ Changes from Pierpaolo Prazzoli:
 - Fixed text tilemap colors.
 - Fixed text tilemap scrolls.
 - Fixed VSync.
-- Fixed dips in 'Sky Lancer'.
+- Fixed dips in Sky Lancer.
 - playmark.c update.
-- Fixed dipswitches in 'Excelsior'.
-- Tweaked bitmap scroll in 'Excelsior'.
-- Changed bitmap to be drawn after the fg_tilemap (this is correct in 'Excelsior' and looks better in 'Big Twin', but looking at the service mode in 'Excelsior' some "good" bits are trasparent).
-- Added "Continue" dipswtich in 'Big Twin'.
+- Fixed DIP switches in Excelsior.
+- Tweaked bitmap scroll in Excelsior.
+- Changed bitmap to be drawn after the fg_tilemap (this is correct in Excelsior and looks better in Big Twin, but looking at the service mode in Excelsior some "good" bits are trasparent).
+- Added "Continue" DIP swtich in Big Twin.
 
 
 Source changes:
 ----------------
 - NMK16 dipswitch fixes [Brian Troha].
-- Progress on TX1 / Speed Buggy driver [Phil Bennett]:
+- Progress on TX1/Speed Buggy driver [Phil Bennett]:
   Still to do:
   - Buggy Boy/Speed Buggy
-    * Arithmetic chip support.
-    * Correct object drawing and attributes (e.g. zoom factors).
-    * Road drawing.
-    * Fix inter-CPU communications.
-    * Layer mixing.
-    * Fix controls.
+    * Arithmetic chip support;
+    * Correct object drawing and attributes (e.g. zoom factors);
+    * Road drawing;
+    * Fix inter-CPU communications;
+    * Layer mixing;
+    * Fix controls;
     * Discrete sound hardware.
   - TX-1:
-    * All of above.
+    * All of above;
     * Missing PROMs.
 - Allow for more than 40 entries in the Analog menu [Christopher Stone].
 - Fixed dips in Dunk Shot [Sonikos].

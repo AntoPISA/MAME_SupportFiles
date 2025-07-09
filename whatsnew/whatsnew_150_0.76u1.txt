@@ -4,43 +4,27 @@
 
 New Games Supported or Promoted from GAME_NOT_WORKING Status
 ------------------------------------------------------------
-Baku Baku Animal [David Haywood] (still a few gfx glitches and no sound)
-Cosmo [Jarek Burczynski] (no sound)
-Prime Goal EX (PG1/VER.A) [smf] (none of the above 5 have sound)
-Soul Edge [smf] (Soul Edge Ver II. doesn't work)
-Super Speed Race [Stefan Jokisch] (no sound)
+Baku Baku Animal [David Haywood] (1)
+Cosmo [Jarek Burczynski] (2)
+Prime Goal EX (PG1/VER.A) [smf] (3)
+Soul Edge [smf]
+Super Speed Race [Stefan Jokisch] (4)
 Tekken [smf]
 Tekken 2 [smf]
-Thunder Ceptor II [BUT] (missing backgrounds)
+Thunder Ceptor II [BUT] (5)
 Xevious 3D/G (XV31/VER.A) [smf]
 
 New Clones Supported or Promoted from GAME_NOT_WORKING Status
 -------------------------------------------------------------
-100 Atari clones [Aaron Giles]
-	* 2 new Road Runner variants
-	* 8 new Road Blasters variants
-	* 2 new Paperboy variants
-	* 5 new 720' variants
-	* 6 new Super Sprint variants
-	* 7 new Championship Sprint variants
-	* 7 new APB variants
-	* 2 new Blasteroids sets
-	* 1 new Cyberball set
-	* 3 new 2-player Cyberball 2072 sets
-	* 1 new Tournament Cyberball 2072 set
-	* 3 new Skull & Crossbones sets
-	* 3 new Toobin' sets
-	* 6 new Vindicators sets
-	* 4 new Xybots sets
-	* 10 new Hard Drivin' versions
-	* 3 new Hard Drivin' Compact versions
-	* 9 new STUN Runner versions
-	* 9 new Race Drivin' versions
-	* 7 new Race Drivin' Compact versions
-	* 2 new Steel Talons versions
-Asterock (Sidam bootleg of asteroid) [Pierpaolo Prazzoli]
-Sky Raiders (bootleg of uniwars) [Pierpaolo Prazzoli]
-Superior Soliders (US) (parent of psoldier) [Chris Hardy]
+xxx
+
+Notes:
+------
+(1): Still a few GFX glitches and no sound.
+(2): No sound.
+(3): None of the above 5 have sound.
+(4): No sound.
+(5): Missing backgrounds.
 
 
 Source changes:
@@ -49,18 +33,18 @@ Source changes:
 - More ST-V Improvements, fixing various graphical issues (Shienryu Sprite Colours) and general other bits and pieces. More games are 'watchable' now, for example Cotton 2, Cotton Boomerang, Puyo Puyo Sun, Columns 97 however they lack controls [David Haywood].
 - Some Atari improvements with the new sets (old speed hacks removed that aren't really needed anymore, both screens being displayed in Cyberball) [Aaron Giles].
 - Misc Changes [Nathan Woods]:
-  * Removed wave_sh_stop() call from the MESS specific WAVE sound interface (it is extraneous now).
-  * Added a few macros for other miscellaneous X86 opcodes.
-  * Added a drc_dasm() call, a debug call that uses MAME's I386 disassembler to disassemble DRC'd code (didn't compile, commented out until fixed).
+  * Removed wave_sh_stop() call from the MESS specific WAVE sound interface (it is extraneous now);
+  * Added a few macros for other miscellaneous X86 opcodes;
+  * Added a drc_dasm() call, a debug call that uses MAME's I386 disassembler to disassemble DRC'd code (didn't compile, commented out until fixed);
   * Added 'GAMENOUN' and 'GAMESNOUN' macros; defined to be the human readable text for the words 'game' and 'games' respectively (this is so MESS can use the nouns 'system' and 'systems').
 - v60 Improvements (LDTASK, STTASK, ABSF and some missing \n.) [Olivier Galibert].
 - Added Sound and Improved Background emulation in HeliFire [Jarek Burczynski].
 - Misc Windows OSD updates and D3D fixes [Leon van Rooij]:
-  * Added CFLAGSOSDEPEND variable. It is used when compiling osd code only (e.g. DirectX needs -Wno-strict-aliasing).
-  * COMPILESYSTEM_CYGWIN determines if nasm or nasmw is used (the cygwin version of nasm is called nasm).
-  * Quick fix for some #defines in that don't work with win32api 2.4.
-  * Changed a variable name that conflicts with a gcc built-in.
-  * Fixed a bug that affected stv games when flipping/rotating the image.
+  * Added CFLAGSOSDEPEND variable. It is used when compiling osd code only (e.g. DirectX needs -Wno-strict-aliasing);
+  * COMPILESYSTEM_CYGWIN determines if nasm or nasmw is used (the cygwin version of nasm is called nasm);
+  * Quick fix for some #defines in that don't work with win32api 2.4;
+  * Changed a variable name that conflicts with a gcc built-in;
+  * Fixed a bug that affected stv games when flipping/rotating the image;
   * Window size/prescale/rgb-auto effect can now change when the image size is changed by the game driver.
 - SegaPCM fixes: Fixes the pitch (the 15800Hz value was wrong, it should have been the main 4Mhz clock divived by 256) and also makes the code ultra-paranoid when it comes to out-of-range accesses in the sample roms. Power Drift's sound code sometimes puts semirandom values for the first handful of keyons on song transitions [Olivier Galibert].
 - Added Proper Inits to term2la1 [Brian Troha].

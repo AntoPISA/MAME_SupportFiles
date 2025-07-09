@@ -2,9 +2,13 @@
 ----------------------------------------
 
 
-New Games / Clones supported or promoted from GAME_NOT_WORKING status:
-----------------------------------------------------------------------
-Winning Spike (EAA version)  [Fabrice Arzeno] (maybe others as some of the Model 3 games such as vs215 work quite well)
+New Game/Clone Supported or Promoted from GAME_NOT_WORKING Status
+-----------------------------------------------------------------
+Winning Spike (EAA version) [Fabrice Arzeno] (1)
+
+Note:
+-----
+(1): Maybe others as some of the Model 3 games such as vs215 work quite well.
 
 
 Source changes:
@@ -12,36 +16,36 @@ Source changes:
 - Fixed colours in Battle City [Roberto Gandola].
 - Slight change to the Arcadia driver: Refactors code specific to the Arcadia arcade system and the Amiga computer out of src/machine/amiga.c into callbacks. This allowed me to get rid of all #ifdef MESS code out of src/machine/amiga.c [Nathan Woods].
 - ST-V updates [Angelo Salese]:
-  * Fixed a bug with the VDP-1 RAM reading, SH-2 can do byte or word access, it's implicit that can't do long word access. This fixes the Steep Slope Sliders booting so the game now works.
-  * VDP-1 PTM's "draw by request" was actually causing sprites to flicker in kiwames, reversed back to old implementation until I or somebody else understand what the current issue is (clear_framebuffer?).
-  * Finished the game header update,let me know if you like/don't like the system used for the description of the games.
-  * Fixed a ST-V visible area incorrectness which was causing Virtual Mahjong 2 to crash after the sound RAM check.
-  * Fixed a window effect bug in Double-density interlace mode,this fixes some graphics in vmahjong & myfairld.
-  * Guessed a bitmap positioning issue in double-density interlace mode,this fixes the NBG1 positioning in myfairld.
+  * Fixed a bug with the VDP-1 RAM reading, SH-2 can do byte or word access, it's implicit that can't do long word access. This fixes the Steep Slope Sliders booting so the game now works;
+  * VDP-1 PTM's "draw by request" was actually causing sprites to flicker in kiwames, reversed back to old implementation until I or somebody else understand what the current issue is (clear_framebuffer?);
+  * Finished the game header update,let me know if you like/don't like the system used for the description of the games;
+  * Fixed a ST-V visible area incorrectness which was causing Virtual Mahjong 2 to crash after the sound RAM check;
+  * Fixed a window effect bug in Double-density interlace mode,this fixes some graphics in (vmahjong) and (myfairld);
+  * Guessed a bitmap positioning issue in double-density interlace mode,this fixes the NBG1 positioning in myfairld;
   * My Fair Lady now works but only with sound disabled.I have not removed the NOT_WORKING status due to that.
 - New sound functionality [Derrick Renaud]:
-  * Took Frank Palazzolo's DISCRETE_FILTER2 code and made it work outside of the discrete system. See sound\filter.h for new functions. Added op-amp bandpass filtering circuit to sound\namco54.c.
+  * Took Frank Palazzolo's DISCRETE_FILTER2 code and made it work outside of the discrete system. See sound\filter.h for new functions. Added op-amp bandpass filtering circuit to sound\namco54.c;
   * Game sriver changes: bosco, galaga, polepos, xevious - added proper filters to new Namco54 noise source.
-- Fixed Priority bug in 'Kid Niki' and fixed crash on last level [Nicola Salmoria].
-- Fixed priority in 'Lot Lot' [Pierpaolo Prazzoli].
+- Fixed Priority bug in Kid Niki and fixed crash on last level [Nicola Salmoria].
+- Fixed priority in Lot Lot [Pierpaolo Prazzoli].
 - Decrypted 'Sukeban Jansi Ryuko' [Nicola Salmoria].
 - ARM7 CPU core [Steve Ellenoff].
 - G65816 CPU core patch: Cleaned up the code a bit; make some functions static and added step over/out support to the disassembler [Nathan Woods].
 - Fixed 6809dasm.c compile warning [Hans de Goede].
-- Model 3 Updates [Ville Linde].
+- Model 3 Updates [Ville Linde]:
   - PowerPC core: 
-  * Better interrupt handling. Nested interrupts work properly.
-  * Some support for PPC602.
-  * Major bugfixes.
+  * Better interrupt handling. Nested interrupts work properly;
+  * Some support for PPC602;
+  * Major bugfixes;
   * Added some unimplemented opcodes.
   - 53c810 SCSI:
-  * Fixed single-stepping mode DMA.
+  * Fixed single-stepping mode DMA;
   * Added memory moves and DMA callback.
   - Model 3:
-  * Added Epson RTC-72421 emulation.
-  * Preliminary polygon emulation.
-  * Preliminary (not working yet) sound emulation.
-  * Too much to list :)  Most Step 1.x games show something now, up to and including full 3D.
+  * Added Epson RTC-72421 emulation;
+  * Preliminary polygon emulation;
+  * Preliminary (not working yet) sound emulation;
+  * Too much to list :) Most Step 1.x games show something now, up to and including full 3D.
 - Fixed multiple port recording [Chad Hurwitz].
 - Fixed several compile warnings [Lawrence Gold].
 - Upgraded to zlib 1.2.2 [Santeri Saarimaa].

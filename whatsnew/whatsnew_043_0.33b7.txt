@@ -2,11 +2,11 @@
 ------------------------------------------
 
 
-New games supported
+New Games Supported
 -------------------
 A lot of ROM renaming and moving around has been done.
 
-Bagman (original Valadon Automation version; the Stern version has been renamed "bagmans") [Nicola Salmoria]
+Bagman [Nicola Salmoria] (1)
 Contra/Gryzor [Carlos A. Lozano, Jose Tejada Gomez, Phil Stroffolino, Eric Hustvedt]
 Dark Seal / Gate of Doom [Bryan McPhail]
 Devastators (not working) [Bryan McPhail]
@@ -16,7 +16,7 @@ Jackal/Top Gunner [Kenneth Lin]
 Kicker [Nicola Salmoria]
 Moon Cresta (bootleg on Galaxian hardware) [Nicola Salmoria]
 Ninja Kid 2 [Jarek Parchanski]
-Pengo (encrypted version of set 2. The unencrypted version has been renamed "pengo2u") [Tim Lindquist]
+Pengo [Tim Lindquist] (2)
 Pioner Balloon [Juergen Buchmueller]
 Polaris [Victor Trucco]
 Round-Up [Zsolt Vasvari]
@@ -24,51 +24,57 @@ Solomon's Key [Mirko Buffoni]
 Space Tactics [Frank Palazzolo]
 Tee'd Off (preliminary) [Ernesto Corvi, Roberto Fresca]
 Tehkan World Cup [Ernesto Corvi, Roberto Fresca]
-Tempest version 2 and 3 ("tempest" has been renamed "tempest1"; "tempest" is now version 3) [Darrin Redick]
+Tempest version 2 and 3 [Darrin Redick] (3)
 The Glob [Mike Balfour]
 The Main Event [Bryan McPhail]
-Two new Mikie sets (US/Japan). The old one was bad and has been removed [Nicola Salmoria]
+Two new Mikie sets (US/Japan) [Nicola Salmoria] (4)
 Vindicators [Aaron Giles]
 Zoo Keeper (alternate) [Nicola Salmoria]
+
+Notes:
+(1): Original Valadon Automation version; the Stern version has been renamed (bagmans).
+(2): Encrypted version of set 2. The unencrypted version has been renamed (pengo2u).
+(3): (tempest) has been renamed (tempest1); (tempest) is now version 3.
+(4): The old one was bad and has been removed.
 
 
 These drivers have improved GRAPHICS:
 -------------------------------------
-- The CPS1 games, the System 16 games, 'Toki', 'World Cup '90', 'Super Space Invaders', 'TMNT' and 'Punk Shot' use the dynamic palette system [Aaron Giles].
-- 'Rastan' and 'Rainbow Islands' use the dynamic palette [Nicola Salmoria].
-- Fixed colors in 'Crater Raider' [Aaron Giles].
+- The CPS1 games, the System 16 games, Toki, World Cup '90, Super Space Invaders, TMNT and Punk Shot use the dynamic palette system [Aaron Giles].
+- Rastan and Rainbow Islands use the dynamic palette [Nicola Salmoria].
+- Fixed colors in Crater Raider [Aaron Giles].
 - Cocktail mode support in some games (invaders, btime, etc.) [Martin Sandiford].
-- Inspired by 'Retrocade' and 'Vector Dream', changed the vector games to use translucent vectors. Color intensities had to be lowered, if it feels to dark for you now, increase the gamma correction value [Bernd Wiebelt].
-- Fixed sprite priorities and tile flip in 'Pinball Action' [Nicola Salmoria].
-- Accurate colors in 'Road Fighter' [Paul Swan].
-- Accurate colors in 'Slap Fight' [Keith Wilkins].
-- Fixed 'Motos' High Score display [Zsolt Vasvari].
-- 'Moon Cresta' uses the original gfx ROMs, fixing graphics glitches on the title screen.
+- Inspired by Retrocade and Vector Dream, changed the vector games to use translucent vectors. Color intensities had to be lowered, if it feels to dark for you now, increase the gamma correction value [Bernd Wiebelt].
+- Fixed sprite priorities and tile flip in Pinball Action [Nicola Salmoria].
+- Accurate colors in Road Fighter [Paul Swan].
+- Accurate colors in Slap Fight [Keith Wilkins].
+- Fixed Motos High Score display [Zsolt Vasvari].
+- Moon Cresta uses the original GFX ROMs, fixing graphics glitches on the title screen [Nicola Salmoria].
 
 
 These drivers have improved SOUND:
 ----------------------------------
-- Sound in 'Toki' [Nicola Salmoria].
+- Sound in Toki [Nicola Salmoria].
 - The YM3812 emulator still passes commands to the Sound Blaster OPL chip, but it handles timers in software. osd_ym3812_status and osd_ym3812_read removed [Aaron Giles].
-- Emulated sound in 'Yie Ar Kung Fu' (but you still need samples for speech) [Nicola Salmoria].
-- Sound in 'Pinball Action' [Mirko Buffoni].
-- Partial sound in 'Midnight Resistance' and 'Sly Spy' [Bryan McPhail].
-- Emulated music in 'Carnival', and support for a new set of samples [Peter Clare].
+- Emulated sound in Yie Ar Kung Fu (but you still need samples for speech) [Nicola Salmoria].
+- Sound in Pinball Action [Mirko Buffoni].
+- Partial sound in Midnight Resistance and Sly Spy [Bryan McPhail].
+- Emulated music in Carnival, and support for a new set of samples [Peter Clare].
 - TMNT title music [dayvee@rocketmail.com].
 
 
 These drivers have HIGH SCORE support:
 --------------------------------------
-- 'Vastar' [Dani Portillo].
+- Vastar [Dani Portillo].
 - Fixed 'Rygar' (you'll have to delete your old .hi file) [Dani Portillo].
 
 
 Other drivers changes:
 ----------------------
-- Fixed hangs in 'Tapper', and hopefully other MCR games as well [Aaron Giles].
-- Some fixes to 'Quantum' [Paul Forgey].
-- The default scores in 'Paperboy' and 'Super Sprint' are correct (though of course you must delete the .HI files) [Aaron Giles].
-- 'Super Qix' might be running at the proper speed now [Nicola Salmoria].
+- Fixed hangs in Tapper, and hopefully other MCR games as well [Aaron Giles].
+- Some fixes to Quantum [Paul Forgey].
+- The default scores in Paperboy and Super Sprint are correct (though of course you must delete the .HI files) [Aaron Giles].
+- Super Qix might be running at the proper speed now [Nicola Salmoria].
 
 
 Changes to the main program:
@@ -80,7 +86,7 @@ Changes to the main program:
 - [DOS] Modified the code so that to start a game you can use:
   a) the full game name as listed in "mame -listfull".
   b) any ordered subset of the characters used in the full game name.
-So you can start Asteroids Deluxe like:
+  So you can start Asteroids Deluxe like:
 
   mame "Asteroids Deluxe" !note the quotes!
   mame astdelx

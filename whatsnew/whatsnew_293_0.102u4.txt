@@ -17,8 +17,8 @@ Multi Champ Deluxe (ver. 0106) [David Haywood]
 Time Pilot '84 (set 3) [chaneman]
 WWF Superstars (US, Newer) [Philip Bennett]
 
-New Games Marked as GAME_NOT_WORKING
-------------------------------------
+New Game Marked as GAME_NOT_WORKING
+-----------------------------------
 Emergency Call Ambulance [Ville Linde]
 
 
@@ -27,9 +27,9 @@ Source changes:
 - Added external RAM read and write handlers and data read port to YMZ280B [Ville Linde].
 - Cleaned up and standardized usage of M_PI constants in the code [William Krick].
 - Corrected some YM2151 frequencies in the dooyong.c driver [Mamesick].
-- Fixed bug in 'Chack'n Pop' that was introduced in the recent memory system changes [Nicola Salmoria].
+- Fixed bug in Chack'n Pop that was introduced in the recent memory system changes [Nicola Salmoria].
 - Fixed some logical errors in sprite handling and palette reads, DMA timing, and one invalid opcode in the NES drivers [Rob Bohms].
-- Fixed sprite priorities in 'Tang Tang' [Pierpaolo Prazzoli].
+- Fixed sprite priorities in Tang Tang [Pierpaolo Prazzoli].
 - Fixed sprite-tilemap collision detection in Taito SJ driver when the screen is flipped [Nicola Salmoria].
 - Fixes branch target address disassembly in the PSX disassembler [smf].
 - Major update to the STV driver [Mariusz Wojcieszek]:
@@ -38,11 +38,11 @@ Source changes:
   * stv: Optimized master/slave sh2 syncing;
   * vdp1: Fixed sprite transparency for RGB sprites;
   * vdp2: Added linescroll;
-  * vdp2: Added 16x16 15bit tiles (fixes missing gfx in znpwfv);
+  * vdp2: Added 16x16 15bit tiles (fixes missing GFX in znpwfv);
   * vdp2: Optimized tilemap scrolling, bitmaps and framebuffer drawing;
   * vdp2: Fixed page and map calculation;
   * dsp: Fixed some bugs making vfremix run up to the end of second match.
 - More Voodoo updates [Aaron Giles]:
   * Fixed bug that trashed fbzMode when the fogMode was changed;
-  * Added preliminary Voodoo 2 support; 'Gauntlet Legends' works again;
+  * Added preliminary Voodoo 2 support; Gauntlet Legends works again;
   * Changed float-to-int conversion to be done manually.

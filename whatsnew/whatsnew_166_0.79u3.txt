@@ -2,28 +2,32 @@
 ----------------------------------------
 
 
-New Games supported or promoted from GAME_NOT_WORKING status
+New Games Supported or Promoted from GAME_NOT_WORKING Status
 ------------------------------------------------------------
-Quasar [Mike Coates, Pierpaolo Prazzoli] (other Zaccaria games are still being worked on)
+Quasar [Mike Coates, Pierpaolo Prazzoli] (1)
 
-New Clones supported or promoted from GAME_NOT_WORKING status
+New Clones Supported or Promoted from GAME_NOT_WORKING Status
 -------------------------------------------------------------
 FX (bootleg of SRD mission) [Pierpaolo Prazzoli]
 
+Note:
+-----
+(1): Other Zaccaria games are still being worked on.
+
 
 Source changes:
-----------------------
+---------------
 Misc changes [Nathan Woods]:
-  * src/cpu/i86/i286.c: Updated I286 CPU core to MAME 0.79.
-  * src/cpu/jaguar/jaguar.c: Adding a missing case to jaguargpu_get_info() 
-  * src/cpu/m6502/m4510.c, src/cpu/m6502/m6509.c: Updated m4510 and m6509 CPU cores to MAME 0.79.
-  * src/sndhrdw/snes.c: Removed a duplicate global variable definition.
-  * src/cheat.c, src/info.c, src/usrintrf.c: Removed NEOMAME and CPSMAME declarations.
-  * src/mame.c: Added a new consistency check on CPUs to check for the existence of certain get_info cases needed for debugging. This consistency check is currently only enabled for MESS.
-  * src/windows/input.c: Changed key_trans_table to be non static and renamed to win_key_trans_table (this table is now used in MAME32).
-  * src/memory.c: Changed all fatalerror() calls to osd_die().
-  * src/chdman.c: Added -createblankhd and -copydata commands. Added new arguments to -createhd. Ported to Macintosh.
-  * src/artwork.c: Changed artwork_override_screenshot_params() so that its 	functionality will kick in whenever the artwork system is active, even 	without artwork pieces. Introduced a static artwork_system_active(); a call to check to see if the artwork system is active.
+  * src/cpu/i86/i286.c: Updated I286 CPU core to MAME 0.79;
+  * src/cpu/jaguar/jaguar.c: Adding a missing case to jaguargpu_get_info();
+  * src/cpu/m6502/m4510.c, src/cpu/m6502/m6509.c: Updated m4510 and m6509 CPU cores to MAME 0.79;
+  * src/sndhrdw/snes.c: Removed a duplicate global variable definition;
+  * src/cheat.c, src/info.c, src/usrintrf.c: Removed NEOMAME and CPSMAME declarations;
+  * src/mame.c: Added a new consistency check on CPUs to check for the existence of certain get_info cases needed for debugging. This consistency check is currently only enabled for MESS;
+  * src/windows/input.c: Changed key_trans_table to be non static and renamed to win_key_trans_table (this table is now used in MAME32);
+  * src/memory.c: Changed all fatalerror() calls to osd_die();
+  * src/chdman.c: Added -createblankhd and -copydata commands. Added new arguments to -createhd. Ported to Macintosh;
+  * src/artwork.c: Changed artwork_override_screenshot_params() so that its functionality will kick in whenever the artwork system is active, even 	without artwork pieces. Introduced a static artwork_system_active(); a call to check to see if the artwork system is active.
 - Misc PSX cleanups [smf].
 - Removed some memory system test code [Aaron Giles].
-- Fixed a TMS32031 bug that was causing some problems in 'Radikal Bikers' [Aaron Giles].
+- Fixed a TMS32031 bug that was causing some problems in Radikal Bikers [Aaron Giles].

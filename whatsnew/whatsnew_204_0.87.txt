@@ -2,59 +2,69 @@
 --------------------------------------
 
 
-New Clones supported or promoted from GAME_NOT_WORKING status
--------------------------------------------------------------
-Super Pang (Japan) [Nicola Salmoria] (set was decrypted, game now working)
-
-New Games supported or promoted from GAME_NOT_WORKING status
-------------------------------------------------------------
-Command War [Brian McPhail] (still some clipping/layer problems)
+New Games Supported from GAME_NOT_WORKING Status
+------------------------------------------------
+Command War [Brian McPhail] (1)
 Miss Bingo [Brian Troha]
-Recalhorn [Brian McPhail] (may crash on hi-score screen)
-Truco Clemente [Ernesto Corvi] (Some graphical problems (see notes above)
-Vamp 1/2 [Angelo Salese, Pierpaolo Prazzoli] (first working hyperstone based game)
+Recalhorn [Brian McPhail] (2)
+Truco Clemente [Ernesto Corvi] (3)
+Vamp 1/2 [Angelo Salese, Pierpaolo Prazzoli] (4)
 Wizz Quiz [Pierpaolo Prazzoli]
 
-New Non-Working games / clones supported
-----------------------------------------
-Alien Command [Angelo Salese] (Parts of the hardware still unemulated)
-Schmeiser Robo [Bryan McPhail] (Protection issues)
+New Non-Working Clones Supported
+--------------------------------
+Alien Command [Angelo Salese] (6)
+Schmeiser Robo [Bryan McPhail] (7)
+
+New Clones Promoted from GAME_NOT_WORKING Status
+------------------------------------------------
+Super Pang (Japan) [Nicola Salmoria] (7)
+
+Notes:
+------
+(1): Still some clipping/layer problems.
+(2): May crash on hi-score screen.
+(3): Some graphical problems (see notes above).
+(4): First working hyperstone based game.
+(5): Parts of the hardware still unemulated.
+(6): Protection issues.
+(7): Set was decrypted, game now working.
 
 
 Source changes:
 ---------------
 - Small update to the Kaneko drivers [Sebastien Volpe]:
-  * Correct dipswitches for bonkadv.
-  * galpanib protection moved to machine\kaneko16.c, and sandscrp uses it.
+  * Correct dipswitches for bonkadv;
+  * galpanib protection moved to machine\kaneko16.c, and sandscrp uses it;
   * Merged read/write memory maps for the 3 galpanic sets.
 - Support 16 Joystick buttons [Norix].
 - 8-way input fix for some mappy.c games (grobda, motos, phozon). These games were set to 4-way input in the previous update [anonymous].
 - Various improvements [Angelo Salese]:
-  * vamphalf.c: Improvements to vamphalf making it almost playable. It actually is now playable thanks to further improvements from others (see below).
-  * yumefuda.c: Temporarly patched eeprom check, fixed the graphics bankswitching & added sound in Yumefuda.I don't have added controls yet so it isn't playable.
-  * acommand.c: Preliminary driver for 'Alien Command'. Doesn't work yet...
+  * vamphalf.c: Improvements to vamphalf making it almost playable. It actually is now playable thanks to further improvements from others (see below);
+  * yumefuda.c: Temporarly patched eeprom check, fixed the graphics bankswitching & added sound in Yumefuda.I don't have added controls yet so it isn't playable;
+  * acommand.c: Preliminary driver for Alien Command. Doesn't work yet;
   * gstriker.c: Very preliminary MCU emulation for World Cup '94.Hangs in various places since I don't have worked on them yet...
 - Implements the LEDs in "copsnrob" [Stefan Jokisch].
 - Fixed res_net.h related crash in Strike Bowling [Jarek Burczynski].
 - Improvements to 'Paint and Puzzle', game is almost playable [Nicola Salmoria].
 - Taito F3 Improvements [Bryan McPhail]:
-  * Recalhorn now up to a playable standard.  This game exposed some bugs in the way the sprite renderer handled the special command bits (ie, the sprite list jump command occurs _after_ the current sprite has been processed, not before, plus bankswitch & global positioning flags can be set on the same sprite - they aren't exclusive, all makes perfect sense from a hardware point of view).  These fixes really should be put into taito_f2 and hybrid f3 games as well, though I doubt it will make any visual difference.
+  * Recalhorn now up to a playable standard. This game exposed some bugs in the way the sprite renderer handled the special command bits (ie, the sprite list jump command occurs _after_ the current sprite has been processed, not before, plus bankswitch & global positioning flags can be set on the same sprite - they aren't exclusive, all makes perfect sense from a hardware point of view). These fixes really should be put into taito_f2 and hybrid f3 games as well, though I doubt it will make any visual difference;
   * Command War is playable too, except for the fact a layer doesn't seem to disappear when in the fighting sequence, and it's offset by 8 pixels in the movement sequence.
 - Rohga driver improvements [Bryan McPhail]:
-  * Rohga: Despite massive amounts of time spent on writing trojan's to probe the protection this still isn't complete. The game hangs at the end of level 5. A quick look at decoprot.c should reveal just how nasty this game is... Graphics emulation is complete but the priority register never seems to be written properly (protection?) so some things look wrong.
-  * Schmeiser Robo - Not working 100%.  The game puts graphics info through the protection chip so in this case the game looks wrong even though the gameplay is actually running correctly. Uses a strange double buffer feature of the protection chip that the Deco games don't (seem to) use.
+  * Rohga: Despite massive amounts of time spent on writing trojan's to probe the protection this still isn't complete. The game hangs at the end of level 5. A quick look at decoprot.c should reveal just how nasty this game is... Graphics emulation is complete but the priority register never seems to be written properly (protection?) so some things look wrong;
+  * Schmeiser Robo - Not working 100%. The game puts graphics info through the protection chip so in this case the game looks wrong even though the gameplay is actually running correctly. Uses a strange double buffer feature of the protection chip that the Deco games don't (seem to) use.
 - Truco Clemente driver [Ernesto Corvi]:
   * This is as good I could get it working... Problems:
-  * Wrong colors;
-  * Audio is not 100% yet, I think.
-  * The board is definitely a conversion of some other board. My guess is a Pacman-style board, since some of the addresses match (watchdog, etc). Maybe somebody more familiar with those type of boards can figure out if they used the same color proms (I tried the MsPacman ones, and didn't match).
+  - Wrong colors;
+  - Audio is not 100% yet, I think;
+  - The board is definitely a conversion of some other board. My guess is a Pacman-style board, since some of the addresses match (watchdog, etc). Maybe somebody more familiar with those type of boards can figure out if they used the same color proms (I tried the MsPacman ones, and didn't match).
 - SPI background Decryption improvements [Ville Linde] .
 - Fixed mrtnt colours (verified to use pacman proms) [vernimark].
 - Hyperstone core fixes [Tomasz Slanina, Pierpaolo Prazzoli]:
-  * Tomasz Slanina:
+  - Tomasz Slanina:
   * Added "undefined" C flag to shift left instructions.
-  * Pierpaolo Prazzoli:
-  * Added interrupts-block for delay instructions.
-  * Fixed get_emu_code_addr.
-  * Added LDW.S and STW.S instructions.
+  - Pierpaolo Prazzoli:
+  * Added interrupts-block for delay instructions;
+  * Fixed get_emu_code_addr;
+  * Added LDW.S and STW.S instructions;
   * Fixed floating point opcodes.
