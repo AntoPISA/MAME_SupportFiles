@@ -1,5 +1,5 @@
 ﻿#     =============================================================
-#     MAME RENAMESET_SL.DAT v0.277git  Latest update:  May  4, 2025
+#     MAME RENAMESET_SL.DAT v0.278     Latest update:  Jul 20, 2025
 #     =============================================================
 #
 #     Home-page: https://www.progettosnaps.net/renameset/
@@ -7,7 +7,7 @@
 #     Follow the progress (and send suggestions or corrections) of the file here: https://github.com/AntoPISA/MAME_SupportFiles/tree/main/renameSET.dat
 #
 #     Statistic information of MAME (tm) updating sets by AntoPISA
-#     THE INFOS IN THIS FILE IS NOT OFFICIAL, IT IS FOR DEMONSTRATIVE PURPOSE ONLY
+#     THE INFORMATION IN THIS FILE IS NOT OFFICIALLY RECOGNIZED BY THE MAME TEAM
 #
 #     "mID" is the unique progressive number that I have assigned to each machine/BIOS/device added to MAME.
 #     You can see this updated list here: https:\\www.progettosnaps.net\mameID_latest.txt
@@ -17,26 +17,88 @@
 #               M.A.S.H. for "mameinfo.dat"
 #               motoschifo for "ADB Tool", "pS_Tool" and for the constant support!
 #
-#               Internal Version 15.05
+#               Internal Version 15.07
 #
-#       768 removed machines/devices overall in the history of MAME
-#     6.685 renamed machines/devices overall in the history of MAME
+#       779 removed machines/devices overall in the history of MAME
+#     6.705 renamed machines/devices overall in the history of MAME
 #
 #     AUDIO/GRAPHIC/ORIENTATION : Corrected from 0.1 to 0.33b2
 #     PLAYERS IN DATs           : Added from 0.1 to 0.20
 #     DATs MAME                 : Corrected and with new data implemented from 0.1 to 0.33b2
-#     ***                       : Rename/Delete to be reviewed (-2.868 items)
-#     mID: 00000                : mameID yet to be added (-2.868 items)
+#     ***                       : Rename/Delete to be reviewed (-2.683 items)
+#     mID: 00000                : mameID yet to be added (-2.683 items)
 #
 #
+$0.278 [#717]
+2025/06/30
+48.574 total items, 3.210 drivers (+22), 41.760 machines (-3/+344), 14.557 parents (-1/+149), 27.203 clones (-2/+195), 78 BIOSes (+1), 6.736 devices (-1/+67), 1.242 requires CHDs (-1/+3), 1.892 use samples, 34.836 audio mono (-1/+8410), 2.414 audio stereo (-6898), 1.173 audio multichannel (-1178), 3.337 no audio (-2/+10)
+16.064 working (-1/+175), 25.696 not working (-2/+169), 15.675 mechanicals (+23), 26.085 not mechanicals (-3/+321), 14.540 save supported (-1/+120), 27.220 save unsupported (-2/+224)
+19.069 horizontal screen (-3/+299), 3.264 vertical screen (+15), 21.079 raster graphics (-3/+290), 109 vector graphics, 807 lcd graphics (+17), 338 svg graphics (+7), 19.427 screenless (+30)
+362.783 total roms (+2773), 359.324 machines roms (+2758), 2.824 devices roms (+12), 635 BIOSes roms (+3), 1.374 CHDs (+2), 597 sample files (-2), 76 sample packs (-1), 352.959 good dumps (+2633), 6.274 no dumps (+47), 4.924 bad dumps (+95), 25 bugs fixed
+721 software list (+1), 138.880 software (-9/+181), 710 active SL (+1), 11 orphan SL, 138.968 active software (-9/+181), 762 orphan software, 95.590 software parents (-2/+140), 43.290 software clones (-7/+52)
+236.715 software roms (+326), 11.374 software CHD (+33), 98.189 supported software (+134), 1.855 partially supported software (+16), 38.836 unsupported software (+33)
+46 ren (37/9/0):
+animalw                 > animalwbl                   (mID: 45203) M
+bang                    > bangb                       (mID:  3620) M
+brkthru                 > brkthruu                    (mID:   272) M
+cb5                     > cb5_13                      (mID: 47752) M
+dpatrola                > dpatrol                     (mID: 35978) M
+flowerj                 > flowerjb                    (mID:  5318) M
+footbpow                > footbpow12                  (mID: 38182) M
+glass                   > glassa                      (mID:  5848) M
+goldartp                > goldartpt                   (mID: 40827) M
+hpierrot                > hpierrota                   (mID: 43509) M
+i960kb                  > i80960kb                    (mID: 29204) D
+klxyj                   > klxyj104cn                  (mID:  6558) M
+lyon16                  > lyon16a                     (mID: 32712) M
+maniacsq                > maniacsqa                   (mID: 38636) M
+maniacsqa               > maniacsqb                   (mID: 35999) M
+maniacsqu               > maniacsq                    (mID:  3655) M
+mastboyiv2              > mastboyiv2a                 (mID: 45317) M
+nes_vt369_soc           > vt369_soc                   (mID: 42246) D
+nes_vt369_soc_swap      > vt369_soc_swap              (mID: 43411) D
+nes_vtunknown_soc_bt    > vt3xx_unknown_soc_bt        (mID: 42247) D
+nes_vtunknown_soc_cy    > vt3xx_unknown_soc_cy        (mID: 42248) D
+nes_vtunknown_soc_dg    > vt3xx_unknown_soc_dg        (mID: 42252) D
+nes_vtunknown_soc_fa    > vt3xx_unknown_soc_fa        (mID: 43267) D
+pdriftj                 > pdriftjb                    (mID:  5298) M
+rivierab                > rivierac                    (mID: 28674) M
+rtpc_kbd_con            > rtpc_kbdc                   (mID: 43546) D
+sdmg2                   > sdmg2754ca                  (mID:  6569) M
+sdmg2a                  > sdmg2754cb                  (mID: 47989) M
+sltpstep                > sltpstepa                   (mID: 40859) M
+specd9                  > specd9105g                  (mID: 48327) M
+ss2000                  > ssh2000a                    (mID: 48842) M
+ss2000a                 > ssh2000wf                   (mID: 48843) M
+ss2001                  > ssh2000                     (mID: 41961) M
+thoop2                  > thoop2b                     (mID:  3705) M
+thoop2a                 > thoop2                      (mID: 38739) M
+touchgo                 > touchgoa                    (mID:  5894) M
+touchgoe                > touchgo                     (mID:  4447) M
+touchgok                > touchgoun                   (mID: 36620) M
+touchgon                > touchgonnac                 (mID:  5869) M
+tvochken_card           > sega_tvochken_card_reader   (mID: 47094) D
+unkboram                > pkts                        (mID: 48170) M
+wrally                  > wrallyd                     (mID:  4473) M
+wrally2                 > wrally2a                    (mID: 39360) M
+wrally2a                > wrally2b                    (mID:  3709) M
+wrallya                 > wrallyc                     (mID:  4474) M
+wrallyc                 > wrallya                     (mID: 43882) M
+4 del (3/1/0):
+brkthrubl                                             (mID: 44729) M
+dpatrol                                               (mID: 30473) M
+pwrshovla                                             (mID: 36021) M
+wave                                                  (mID: 35057) D
+
+
 $0.277 [#716]
 2025/04/30
 48.166 total items, 3.188 drivers (+14), 41.419 machines (-3/+109), 14.409 parents (-2/+68), 27.010 clones (-1/+41), 77 BIOSes, 6.670 devices (-7/+26), 1.240 requires CHDs (+1), 1.892 use samples (+1), 26.427 audio mono (+72), 9.312 audio stereo (+33), 2.351 audio multichannel (-3/+1), 3.329 no audio (+3)
 15.890 working (+48), 25.529 not working (-3/+61), 15.652 mechanicals (+3), 25.767 not mechanicals (-3/+106), 14.421 save supported (+17), 26.998 save unsupported (-3/+92)
 18.773 horizontal screen (-3/+97), 3.249 vertical screen (+4), 20.792 raster graphics (-3/+98), 109 vector graphics, 790 lcd graphics (+3), 331 svg graphics, 19.397 screenless (+8)
 360.010 total roms (+603), 356.566 machines roms (+596), 2.812 devices roms (+6), 632 BIOSes roms (+1), 1.372 CHDs (+1), 599 sample files, 77 sample packs, 350.326 good dumps (+619), 6.227 no dumps (+3), 4.829 bad dumps (-18), 6 bugs fixed
-720 software list (+1), 139.547 software (-24/+404), 709 active SL (+1), 11 orphan SL, 138.785 active software (-24/+404), 762 orphan software, 96.096 software parents (-11/+209), 43.451 software clones (-13/+195)
-236.389 software roms (+802), 11.341 software CHD (+14), 98.752 supported software (-24/+387), 1.886 partially supported software (+8), 38.909 unsupported software (+9)
+720 software list (+1), 138.697 software (-24/+355), 709 active SL (+1), 11 orphan SL, 138.785 active software (-24/+404), 762 orphan software, 95.452 software parents (-11/+188), 43.245 software clones (-13/+167)
+236.389 software roms (+802), 11.341 software CHD (+14), 98.055 supported software (+361), 1.839 partially supported software (+8), 38.803 unsupported software (+10)
 21 ren (12/9/0):
 chleagul                > chleaguel         (mID:  7605) M
 chleagxa                > chleaguexa        (mID: 36660) M
@@ -60,7 +122,7 @@ tpoker2                 > tpoker2a          (mID:  8386) M
 tripfev                 > tripfev108us      (mID: 47822) M
 unkljfpk                > pokplus           (mID: 46673) M
 10 del (3/7/0):
-e132n                                       (mID: 28890) D
+e132n                                       (mID: 48667) D
 e132xn                                      (mID: 28892) D
 linndrum_hat_vca                            (mID: 48667) D
 pc9821ne                                    (mID: 33810) M
@@ -78,8 +140,8 @@ $0.276 [#715]
 15.842 working (-1/+33), 25.471 not working (+41), 15.649 mechanicals (+3), 25.664 not mechanicals (-1/+71), 14.404 save supported (-1/+31), 26.909 save unsupported (+43)
 18.679 horizontal screen (-1/+62), 3.245 vertical screen, 20.697 raster graphics (+59), 109 vector graphics, 787 lcd graphics (-1/+3), 331 svg graphics, 19.389 screenless (+12)
 359.407 total roms (+751), 355.970 machines roms (+738), 2.806 devices roms (+13), 631 BIOSes roms, 1.371 CHDs, 599 sample files, 77 sample packs, 349.707 good dumps (+659), 6.224 no dumps (+74), 4.847 bad dumps (+18), 9 bugs fixed
-719 software list, 139.167 software (+29), 708 active SL, 11 orphan SL, 138.405 active software (+29), 762 orphan software, 95.898 software parents (+25), 43.269 software clones (+6)
-235.587 software roms (+43), 11.327 software CHD (+2), 98.389 supported software (+12), 1.878 partially supported software (+15), 38.900 unsupported software (+2)
+719 software list, 138.318 software (+28), 708 active SL, 11 orphan SL, 138.405 active software (+29), 762 orphan software, 95.253 software parents (+24), 43.065 software clones (+4)
+235.587 software roms (+43), 11.327 software CHD (+2), 97.694 supported software (+11), 1.831 partially supported software (+15), 38.793 unsupported software (+2)
 6 ren (6/0/0):
 dphlunka           > sureshoto         (mID:  8505) M
 drw80pk2           > drw80pkr          (mID:  6916) M
@@ -99,8 +161,8 @@ $0.275 [#714]
 15.810 working (+48), 25.430 not working (+27), 15.646 mechanicals, 25.594 not mechanicals (+75), 14.374 save supported (+181), 26.866 save unsupported (-106)
 18.618 horizontal screen (+60), 3.245 vertical screen (+6), 20.638 raster graphics (+62), 109 vector graphics, 785 lcd graphics, 331 svg graphics (+4), 19.377 screenless (+9)
 358.656 total roms (+577), 355.232 machines roms (+534), 2.793 devices roms (+36), 631 BIOSes roms (+7), 1.371 CHDs (+11), 599 sample files, 77 sample packs, 349.048 good dumps (+519), 6.150 no dumps (+40), 4.829 bad dumps (+29), 00 bugs fixed
-719 software list, 139.138 software (-26/+139), 708 active SL (-2/+2), 11 orphan SL, 138.376 active software (-26/+139), 762 orphan software, 95.873 software parents (-72/+30), 43.265 software clones (+63)
-235.544 software roms (+224), 11.325 software CHD (+16), 98.377 supported software (+36), 1.863 partially supported software (-1), 38.898 unsupported software (+130)
+719 software list, 138.290 software (-26/+137), 708 active SL, 11 orphan SL, 138.376 active software (-26/+139), 762 orphan software, 95.229 software parents (-72/+28), 43.061 software clones (+63)
+235.544 software roms (+224), 11.325 software CHD (+16), 97.683 supported software (+34), 1.816 partially supported software (-1), 38.791 unsupported software (+130)
 23 ren (4/19/0):
 amiga_dmac         > amiga_dmac_rev1   (mID: 31050) D
 cameltry           > cameltryu         (mID:  2178) M
@@ -139,8 +201,8 @@ $0.274 [#713]
 15.762 working (-2/+57), 25.403 not working (+95), 15.646 mechanicals (+3), 25.519 not mechanicals (-2/+149), 14.193 save supported (-1/+43), 26.972 save unsupported (-1/+109)
 18.558 horizontal screen (-2/+137), 3.239 vertical screen (+2), 20.576 raster graphics (-2/+124), 109 vector graphics, 785 lcd graphics (+3), 327 svg graphics (+12), 19.368 screenless (+13)
 358.079 total roms (+868), 354.698 machines roms (+850), 2.757 devices roms (+17), 624 BIOSes roms (+1), 1.360 CHDs (+2), 599 sample files, 77 sample packs, 348.529 good dumps (+733), 6.110 no dumps (+76), 4.800 bad dumps (+61), 31 bugs fixed
-719 software list, 138.973 software (+137), 708 active SL, 11 orphan SL, 138.211 active software (+137), 762 orphan software, 95.771 software parents (-72), 43.202 software clones (+209)
-235.320 software roms (+136), 11.309 software CHD (+59), 98.341 supported software (+123), 1.864 partially supported software (+14), 38.768 unsupported software
+719 software list, 138.127 software (+137), 708 active SL, 11 orphan SL, 138.211 active software (+137), 762 orphan software, 95.129 software parents (-72), 42.998 software clones (+209)
+235.320 software roms (+136), 11.309 software CHD (+59), 97.649 supported software (+123), 1.817 partially supported software (+14), 38.661 unsupported software
 17 ren (15/2/0):
 amiga_fdc          > paula_fdc         (mID: 31051) D
 amiga_copper       > agnus_copper      (mID: 44822) D
@@ -172,8 +234,8 @@ $0.273 [#712]
 15.707 working (-1/+94), 25.308 not working (+56), 15.643 mechanicals, 25.372 not mechanicals (-1/+150), 14.151 save supported (-1/+72), 26.864 save unsupported (+78)
 18.423 horizontal screen (+141), 3.237 vertical screen (-1/+4), 20.454 raster graphics (-1/+131), 109 vector graphics, 782 lcd graphics (+13), 315 svg graphics (+1), 19.355 screenless (+5)
 357.211 total roms (+2058), 353.848 machines roms (+2054), 2.740 devices roms (+2), 623 BIOSes roms (+2), 1.358 CHDs (+1), 599 sample files, 77 sample packs, 347.796 good dumps (+1989), 6.034 no dumps (+22), 4.739 bad dumps (+48), 35 bugs fixed
-719 software list (+1), 138.836 software (-5/+240), 708 active SL (+1), 11 orphan SL, 138.074 active software (-5/+240), 762 orphan software, 95.843 software parents (-5/+193), 42.993 software clones (+47)
-235.184 software roms (+423), 11.250 software CHD (+58), 98.218 supported software (+216), 1.850 partially supported software (+5), 38.768 unsupported software (+24)
+719 software list (+1), 137.990 software (-5/+239), 708 active SL (+1), 11 orphan SL, 138.074 active software (-5/+240), 762 orphan software, 95.201 software parents (-5/+192), 42.789 software clones (+47)
+235.184 software roms (+423), 11.250 software CHD (+58), 97.526 supported software (+215), 1.803 partially supported software (+5), 38.661 unsupported software (+24)
 51 ren (48/3/0):
 3bagflnz           > 3bagfullnz        (mID:  8208) M
 3bagflvt           > 3bagfull          (mID:  8879) M
@@ -236,8 +298,8 @@ $0.272 [#711]
 15.614 working (+47), 25.252 not working (+77), 15.643 mechanicals (+3), 25.223 not mechanicals (+121), 14.080 save supported (+34), 26.786 save unsupported (+90)
 18.282 horizontal screen (+111), 3.234 vertical screen (+8), 20.324 raster graphics (+114), 109 vector graphics, 769 lcd graphics (+4), 314 svg graphics (+1), 19.350 screenless (+5)
 355.153 total roms (+839), 351.794 machines roms (+833), 2.738 devices roms (+6), 621 BIOSes roms, 1.357 CHDs (+21), 599 sample files, 77 sample packs, 345.807 good dumps (+780), 6.012 no dumps (+80), 4.691 bad dumps, 0 bugs fixed
-718 software list (+1), 138.591 software (-1/+49), 707 active SL (+1), 11 orphan SL, 137.829 active software (-1/+49), 762 orphan software, 95.645 software parents (-1/+30), 42.946 software clones (+19)
-234.761 software roms (+59), 11.192 software CHD (+9), 98.002 supported software (+17), 1.845 partially supported software (+7), 38.744 unsupported software (+26)
+718 software list (+1), 137.746 software (-1/+49), 707 active SL (+1), 11 orphan SL, 137.829 active software (-1/+49), 762 orphan software, 95.004 software parents (-1/+30), 42.742 software clones (+19)
+234.761 software roms (+59), 11.192 software CHD (+9), 97.311 supported software (+17), 1.798 partially supported software (+7), 38.637 unsupported software (+26)
 8 ren (6/2/0):
 heath_h_88_cass_device > h89h_88_5     (mID: 46978) D
 heath_z37_fdc          > h89_z37       (mID: 46384) D
@@ -257,8 +319,8 @@ $0.271 [#710]
 15.567 working (+59), 25.175 not working (+75), 15.640 mechanicals (+2), 25.102 not mechanicals (+132), 14.046 save supported (+55), 26.696 save unsupported (+79)
 18.171 horizontal screen (+95), 3.226 vertical screen (+6), 109 vector graphics, 20.210 raster graphics (+92), 765 lcd graphics (+4), 313 svg graphics (+5), 19.345 screenless (+33)
 354.314 total roms (+739), 350.961 machines roms (+709), 2.732 devices roms (+30), 621 BIOSes roms, 1.336 CHDs (+2), 599 sample files, 77 sample packs, 345.027 good dumps (+662), 5.932 no dumps (+69), 4.691 bad dumps (+10), 7 bugs fixed
-717 software list (+2), 138.541 software (-25/+131), 706 active SL (+2), 11 orphan SL, 137.779 active software (-25/+130), 762 orphan software (+1), 95.614 software parents (+136), 42.927 software clones (+20)
-234.702 software roms (+215), 11.183 software CHD (+9), 97.985 supported software (+161), 1.838 partially supported software (+38), 38.718 unsupported software (-43)
+717 software list (+2), 137.696 software (-25/+132), 706 active SL (+2), 11 orphan SL, 137.779 active software (-25/+130), 762 orphan software (+1), 94.973 software parents (+136), 42.723 software clones (+21)
+234.702 software roms (+215), 11.183 software CHD (+9), 97.294 supported software (+162), 1.791 partially supported software (+38), 38.611 unsupported software (-43)
 26 ren (25/1/0):
 cjddz              > cjddz215cn        (mID:  6567) M
 ckmaster           > master            (mID: 38922) M
@@ -297,8 +359,8 @@ $0.270 [#709]
 15.508 working (+42), 25.100 not working (+8), 15.638 mechanicals, 24.970 not mechanicals (+50), 13.991 save supported (+17), 26.617 save unsupported (+33)
 18.076 horizontal screen (+41), 3.220 vertical screen (+1), 20.118 raster graphics (+40), 109 vector graphics, 761 lcd graphics (+2), 308 svg graphics, 19.312 screenless (+8)
 353.575 total roms (+296), 350.252 machines roms (+289), 2.702 devices roms (+7), 621 BIOSes roms, 1.334 CHDs, 599 sample files, 77 sample packs, 344.365 good dumps (+257), 5.863 no dumps (+17), 4.681 bad dumps (+22), 7 bugs fixed
-715 software list (+4), 138.385 software (-9/+101), 704 active SL (+4), 11 orphan SL, 137.624 active software (-9/+101), 761 orphan software, 95.478 software parents (+87), 42.907 software clones (+23)
-234.487 software roms (+107), 11.174 software CHD (+30), 97.824 supported software (+92), 1.800 partially supported software (+9), 38.761 unsupported software (+9)
+715 software list (+4), 137.539 software (-9/+100), 704 active SL (+4), 11 orphan SL, 137.624 active software (-9/+101), 761 orphan software, 94.837 software parents (+86), 42.702 software clones (+23)
+234.487 software roms (+107), 11.174 software CHD (+30), 97.132 supported software (+91), 1.753 partially supported software (+9), 38.761 unsupported software (+9)
 10 ren (9/1/0):
 acansound          > umc6619_sound     (mID: 43884) D
 dietgo             > dietgoe           (mID: 44567) M
@@ -617,7 +679,7 @@ trvwzhb          > trvwzb              (mID:  7492) M
 
 $0.259 [#698]
 2023/09/29
-46.136 total items, 2.922 drivers (+1), 39.907 machines (-8/+40), 13.575 parents (-2/+26), 26.332 clones (-6/+14), 75 BIOSes, 6.154 devices (-4/+43), 1.179 requires CHDs (+4), 1.827 use samples (+2), 25.653 audio mono (-3/+28), 8.918 audio stereo (-5/+9), 2.074 audio multichannel (+2), 3.262 no audio (+1)
+46.136 total items, 2.922 drivers (+1), 39.907 machines (-8/+40), 13.575 parents (-2/+26), 26.332 clones (-6/+14), 75 BIOSes, 6.154 devices (-5/+44), 1.179 requires CHDs (+4), 1.827 use samples (+2), 25.653 audio mono (-3/+28), 8.918 audio stereo (-5/+9), 2.074 audio multichannel (+2), 3.262 no audio (+1)
 15.049 working (-3/+32), 24.858 not working (-5/+8), 15.583 mechanicals (+5), 24.324 not mechanicals (-8/+35), 13.633 save supported (+39), 26.274 save unsupported (-8/+1)
 17.518 horizontal screen (-8/+24), 3.173 vertical screen (+7), 19.593 raster graphics (-8/+28), 108 vector graphics, 728 lcd graphics, 262 svg graphics (+3), 19.216 screenless (+9)
 348.231 total roms (+558), 345.064 machines roms (+504), 2.552 devices roms (+54), 615 BIOSes roms, 1.308 CHDs (+4), 594 sample files (+23), 76 sample packs (+2), 339.412 good dumps (+550), 5.651 no dumps (+20), 4.476 bad dumps (-8), 7 bugs fixed
@@ -717,16 +779,6 @@ invspace           > einspace          (mID: 32488) M
 light_video        > sgi_lg1           (mID: 40374) D
 meikyuha           > meikyuhbl         (mID:  6506) M
 nzeroteama         > nzeroteamb        (mID:  4886) M
-psion_asic3        > psion_psu_asic3   (mID: 46297) D
-seabattla          > armada            (mID: 28753) M
-unkeinv            > minspace          (mID: 39110) M
-dp8573             > dp8573a           (mID: 39963) D
-feagv2             > feagv4a           (mID: 36114) M
-feagv3             > feagv4            (mID: 40474) M
-feagv7a            > feagv7b           (mID: 38706) M
-invspace           > einspace          (mID: 32488) M
-light_video        > sgi_lg1           (mID: 40374) D
-meikyuha           > meikyuhbl         (mID:  6506) M
 psion_asic3        > psion_psu_asic3   (mID: 46297) D
 seabattla          > armada            (mID: 28753) M
 unkeinv            > minspace          (mID: 39110) M
@@ -1582,7 +1634,7 @@ $0.236 [#675]
 43.848 total items, 2.723 drivers (+6), 38.403 machines (-1/+62), 13.003 parents (+40), 25.400 clones (-1/+22), 74 BIOSes (+1), 5.371 devices (-8/+36), 1.074 requires CHDs (+1), 1.273 use samples (+20), 19.102 audio mono (+27), 14.569 audio stereo (-1/+17), 1.398 audio multichannel (+13), 3.334 no audio (+5)
 14.090 working (+17), 24.313 not working (-1/+45), 15.431 mechanicals (-1/+24), 22.972 not mechanicals (+38), 10.965 save supported (+15), 27.438 save unsupported (-1/+47)
 16.310 horizontal screen (-1/+36), 3.049 vertical screen (+4), 18.390 raster graphics (-1/+37), 104 vector graphics, 648 lcd graphics (+3), 217 svg graphics, 19.044 screenless (+22)
-328.305 total roms (+491), 325.649 machines roms (+472), 2.069 devices roms (+17), 587 BIOSes roms (+2), 1.180 CHDs (+1), 529 sample files (-4), 69 sample packs, 321.020 good dumps (+401), 5.186 no dumps (+30), 3.279 bad dumps (+61), 12 bugs fixed
+328.305 total roms (+491), 325.649 machines roms (+472), 2.069 devices roms (+17), 587 BIOSes roms (+2), 1.180 CHDs (+1), 529 sample files, 69 sample packs, 321.020 good dumps (+401), 5.186 no dumps (+30), 3.279 bad dumps (+61), 12 bugs fixed
 652 software list (+5), 130.522 software (-68/+304), 641 active SL (+5), 11 orphan SL, 129.755 active software (-68/+304), 767 orphan software, 89.668 software parents (+267), 40.854 software clones (+105)
 216.799 software roms (+1060), 10.383 software CHD (+29), 92.934 supported software (-50), 1.299 partially supported software (+112), 36.289 unsupported software (+310)
 10 ren (8/2/0):
@@ -1765,8 +1817,8 @@ $0.229 [#668]
 43.215 total items, 2.658 drivers (+6), 37.976 machines (-1/+55), 12.835 parents (+28), 25.141 clones (-1/+27), 73 BIOSes, 5.166 devices (+9), 1.033 requires CHDs (-1/+15), 1.242 use samples (+1), 18.936 audio mono (+28), 14.472 audio stereo (-1/+12), 1.269 audio multichannel (+3), 3.299 no audio (+12)
 13.714 working (-1/+55), 24.262 not working, 15.379 mechanicals (+2), 22.597 not mechanicals (-1/+53), 10.766 save supported (-1/+33), 27.210 save unsupported (+22)
 15.989 horizontal screen (-1/+29), 3.018 vertical screen (+12), 18.064 raster graphics (-1/+37), 104 vector graphics (+1), 628 lcd graphics (+1), 211 svg graphics (+2), 18.969 screenless (+14)
-324.459 total roms (+1586), 321.937 machines roms (+1574), 1.942 devices roms (+12), 580 BIOSes roms, 1.132 CHDs (+18), 773 sample files, 69 sample packs, 317.452 good dumps (+1556), 5.036 no dumps (+26), 3.103 bad dumps (+22), 9 bugs fixed
-626 software list (+1), 127.321 software (-2/+108), 613 active SL (+1), 13 orphan SL, 126.548 active software (-2/+108), 86.904 software parents (+82), 40.417 software clones (+28)
+324.459 total roms (+1586), 321.937 machines roms (+1574), 1.942 devices roms (+12), 580 BIOSes roms, 1.132 CHDs (+18), 529 sample files, 69 sample packs, 317.452 good dumps (+1556), 5.036 no dumps (+26), 3.103 bad dumps (+22), 9 bugs fixed
+626 software list (+1), 127.321 software (-2/+108), 613 active SL (+1), 13 orphan SL, 126.548 active software (-2/+108), 773 orphan software, 86.904 software parents (+82), 40.417 software clones (+28)
 210.707 software roms (+621), 10.044 software CHD (+11), 90.329 supported software (+108), 1.146 partially supported software (+1), 35.846 unsupported software (+1)
 5 ren (5/0/0):
 asteroidb          > asteroidb1        (mID:  2034) M
@@ -2868,9 +2920,9 @@ m6809e                                 (mID: 28984) D
 
 $0.193 [#632]
 2017/12/27
-38.692 total items, 2.147 drivers (+10), 34.774 machines (+91),  11.443 parents (+39), 23.331 clones (+52), 71 BIOSes, 3.847 devices (+17), 907 requires CHDs (+2), 1.185 use samples (+1), 17.949 audio mono (+67), 12.999 audio stereo (+13), 920 audio multichannel (+6), 2.906 no audio (+5)
-12.158 working (+65), 22.616 not working (+26), 15.210 mechanicals (+7), 19.564 not mechanicals (+84), 8.376 save supported (+38), 26.398 save unsupported (+53)
-13.563 horizontal screen (+74), 2.788 vertical screen (+5), 15.670 raster graphics (+65), 100 vector graphics, 482 lcd graphics, 99 svg graphics (+14), 18.423 screenless (+12)
+38.692 total items, 2.147 drivers (+10), 34.774 machines (-1/+92),  11.443 parents (+39), 23.331 clones (-1/+53), 71 BIOSes, 3.847 devices (-2/+19), 907 requires CHDs (+2), 1.185 use samples (+1), 17.949 audio mono (-1/+68), 12.999 audio stereo (+13), 920 audio multichannel (+6), 2.906 no audio (+5)
+12.158 working (+65), 22.616 not working (-1/+27), 15.210 mechanicals (+7), 19.564 not mechanicals (-1/+85), 8.376 save supported (+38), 26.398 save unsupported (-1/+54)
+13.563 horizontal screen (-1/+75), 2.788 vertical screen (+5), 15.670 raster graphics (-1/+66), 100 vector graphics, 482 lcd graphics, 99 svg graphics (+14), 18.423 screenless (+12)
 287.101 total roms (+895), 285.248 machines roms (+893), 1.326 devices roms (+2), 527 BIOSes roms, 997 CHDs (+2), 708 sample files, 92 sample packs, 281.714 good dumps (+902), 4.024 no dumps (+4), 2.360 bad dumps (-9), 6 bugs fixed
 480 software list (+3), 99.643 software (+134), 463 active SL (+3), 18 orphan SL, 98.870 active software (+134), 901 orphan software, 65.966 software parents (+122), 33.677 software clones (+12)
 123.295 software roms (+100), 8.068 software CHD (+95), 63.327 supported software (+69), 598 partially supported software (+21), 35.718 unsupported software (+44)
@@ -2939,7 +2991,7 @@ $0.191 [#630]
 2017/10/25
 38.435 total items, 2.107 drivers (+5), 34.582 machines (+64), 11.344 parents (+29), 23.238 clones (+35), 71 BIOSes, 3.782 devices (-1/+14), 904 requires CHDs (+20), 1.180 use samples (+5), 17.819 audio mono (+46), 13.001 audio stereo (+13), 904 audio multichannel (+4), 2.858 no audio (+1)
 12.063 working (+24), 22.519 not working (+40), 15.203 mechanicals (+7), 19.379 not mechanicals (+57), 8.266 save supported (+31), 26.316 save unsupported (+33)
-13.444 horizontal screen (+54), 2.768 vertical screen (+47), 15.545 raster graphics (+50), 100 vector graphics, 482 lcd graphics (+1), 85 svg graphics (+85), 18.370 screenless (+10)
+13.444 horizontal screen (+54), 2.768 vertical screen, 15.545 raster graphics (+50), 100 vector graphics, 482 lcd graphics (+1), 85 svg graphics (+85), 18.370 screenless (+10)
 284.871 total roms (+662), 283.040 machines roms (+655), 1.306 devices roms (+6), 525 BIOSes roms (+1), 994 CHDs (+20), 687 sample files, 89 sample packs, 279.429 good dumps (+592), 4.032 no dumps (+92), 2.404 bad dumps (-2), 26 bugs fixed
 474 software list (+2), 99.366 software (-10/+165), 457 active SL (+3), 18 orphan SL (-1), 98.593 active software (-10/+176), 901 orphan software (-11), 65.744 software parents (+108), 33.622 software clones (+67)
 122.909 software roms (+257), 7.965 software CHD (+77), 63.164 supported software (+237), 575 partially supported software (+4), 35.627 unsupported software (-66)
@@ -4227,7 +4279,7 @@ v9938_video                            (mID: 34877) D
 
 $0.172 [#611] [MAME is now Free and Open Source software based on GPL-2.0+ license]
 2016/03/30
-36.083 total items, 1.994 drivers (-1/+7), 33.023 machines (-5/+63), 10.639 parents (+19), 22.384 clones (-4/+43), 69 BIOSes, 2.991 devices (+14), 795 requires CHDs (+3), 1.037 use samples, 16.771 audio mono (-1/+58), 12.835 audio stereo (-1/+8), 780 audio multichannel (-4), 2.637 no audio (-2)
+36.083 total items, 1.994 drivers (-1/+7), 33.023 machines (-4/+62), 10.639 parents (+19), 22.384 clones (-4/+43), 69 BIOSes, 2.991 devices (+14), 795 requires CHDs (+3), 1.037 use samples, 16.771 audio mono (-1/+58), 12.835 audio stereo (-1/+8), 780 audio multichannel (-4), 2.637 no audio (-2)
 11.481 working (-3/+20), 21.542 not working (-1/+42), 14.489 mechanicals, 18.534 not mechanicals (-4/+62), 7.541 save supported (-2/+11), 25.482 save unsupported (-2/+51)
 12.133 horizontal screen (-4/+43), 2.640 vertical screen (+11), 14.216 raster graphics (-4/+53), 100 vector graphics, 457 lcd graphics (+1), 0 svg graphics, 18.250 screenless (+8)
 249.168 total roms (+954), 247.749 machines roms (+945), 1.023 devices roms (+8), 396 BIOSes roms (+1), 881 CHDs (+3), 945 sample files, 88 sample packs, 244.486 good dumps (+948), 3.499 no dumps (+2), 2.064 bad dumps (+7), 9 bugs fixed
@@ -4928,7 +4980,7 @@ tia_video                              (mID: 29098) D
 
 $0.149u1 [#588] [Last 'u' release. Major work on the definition of devices]
 2013/07/23
-29.225 total items, 1.262 drivers, 28.602 machines (-1/+43), 8.763 parents (+21), 19.839 clones (-1/+22), 67 BIOSes, 556 devices (+522), 608 requires CHDs (+18), 523 use samples (+51), 15.019 audio mono, 10.844 audio stereo, 184 audio multichannel, 2.555 no audio
+29.225 total items, 1.262 drivers (+1), 28.602 machines (-1/+43), 8.763 parents (+21), 19.839 clones (-1/+22), 67 BIOSes, 556 devices (+522), 608 requires CHDs (+18), 523 use samples (+51), 15.019 audio mono (-1/+17), 10.844 audio stereo (-32), 184 audio multichannel (+45), 2.555 no audio (+13)
 8.595 working (+24), 20.007 not working (-1/+19), 9.080 mechanicals, 19.522 not mechanicals (-1/+43), 5.262 save supported (-1/+50), 23.340 save unsupported (-7)
 8.300 horizontal screen (-1/+83), 2.389 vertical screen (+5), 10.580 raster graphics (-1/+236), 91 vector graphics, 18 lcd graphics (-148), 0 svg graphics, 17.913 screenless (-45)
 214.802 total roms (+499), 214.439 machines roms (+496), 23 devices roms, 340 BIOSes roms (+3), 663 CHDs (+18), 802 sample files, 79 sample packs, 211.253 good dumps (+499), 2.786 no dumps (+21), 1.426 bad dumps (-3), 8 bugs fixed
@@ -4957,7 +5009,7 @@ $0.149 [#587]
 2013/06/11
 28.661 total items, 1.261 drivers, 28.560 machines (+38), 8.742 parents (+7), 19.818 clones (+31), 67 BIOSes, 34 devices (+10), 590 requires CHDs, 472 use samples (+1), 15.003 audio mono (+27), 10.876 audio stereo (+6), 139 audio multichannel, 2.542 no audio (+5)
 8.571 working (+27), 19.989 not working (+11), 9.080 mechanicals (+5), 19.480 not mechanicals (+33), 5.213 save supported (+22), 23.347 save unsupported (+16)
-8.218 horizontal screen (+13), 2.384 vertical screen (+20), 10.345 raster graphics (+32), 91 vector graphics (+1), 0 lcd graphics, 0 svg graphics, 17.958 screenless (+5)
+8.218 horizontal screen (+13), 2.384 vertical screen (+20), 10.345 raster graphics (+32), 91 vector graphics (+1), 166 lcd graphics, 0 svg graphics, 17.958 screenless (+5)
 214.303 total roms (+587), 213.943 machines roms (+587), 23 devices roms (+1), 337 BIOSes roms (-1), 645 CHDs, 802 sample files, 79 sample packs, 210.754 good dumps (+577), 2.765 no dumps, 1.429 bad dumps (+10), 9 bugs fixed
 4 software list, 390 software, 4 active SL, 0 orphan SL, 390 active software, 0 orphan software, 288 software parents, 102 software clones
 3.535 software roms, 0 software CHD, 348 supported software, 0 partially supported software, 42 unsupported software
@@ -5140,7 +5192,7 @@ $0.147u4 [#580]
 2012/12/17
 28.397 total items, 1.247 drivers (+6), 28.310 machines (-29/+1973), 8.686 parents (-3/+1), 19.624 clones (-26/+1972), 66 BIOSes, 21 devices (+2), 582 requires CHDs (+7), 382 use samples (+5), 13.200 audio mono (-22/+1561), 12.421 audio stereo (-7/+416), 91 audio multichannel, 2.598 no audio (-4)
 8.365 working (+37), 19.945 not working (-29/+1936), 9.060 mechanicals (-1478), 19.250 not mechanicals (-7/+3429), 5.114 save supported (-21/+57), 23.196 save unsupported (-8/+1916)
-8.059 horizontal screen (+44), 2.311 vertical screen (+17), 10.114 raster graphics (+61), 90 vector graphics, 0 lcd graphics, 0 svg graphics, 17.940 screenless (-29/+1912)
+8.059 horizontal screen (+44), 2.311 vertical screen (+17), 10.114 raster graphics (+61), 90 vector graphics, 166 lcd graphics, 0 svg graphics, 17.940 screenless (-29/+1912)
 211.142 total roms (+4740), 210.798 machines roms (+4737), 21 devices roms (+2), 323 BIOSes roms (+1), 637 CHDs (+14), 802 sample files (+8), 79 sample packs (+1), 207.603 good dumps (+4579), 2.750 no dumps (+85), 1.426 bad dumps (+90), 6 bugs fixed
 4 software list, 390 software, 4 active SL, 0 orphan SL, 390 active software, 0 orphan software, 288 software parents, 102 software clones
 3.535 software roms, 0 software CHD, 348 supported software, 0 partially supported software, 42 unsupported software
@@ -5260,7 +5312,7 @@ $0.147u3 [#579]
 2012/11/19
 26.451 total items, 1.241 drivers (+1), 26.366 machines (+30), 8.688 parents (+6), 17.678 clones (+24), 66 BIOSes, 19 devices, 575 requires CHDs (+2), 377 use samples (+40), 11.661 audio mono (+21), 12.012 audio stereo (-4), 91 audio multichannel (+53), 2.602 no audio (-40)
 8.328 working (+39), 18.038 not working (-9), 10.538 mechanicals, 15.828 not mechanicals (+30), 5.078 save supported (+12), 21.288 save unsupported (+18)
-8.015 horizontal screen (+25), 2.294 vertical screen (+5), 10.053 raster graphics (+30), 90 vector graphics, 0 lcd graphics, 0 svg graphics, 16.057 screenless
+8.015 horizontal screen (+25), 2.294 vertical screen (+5), 10.053 raster graphics (+30), 90 vector graphics, 166 lcd graphics, 0 svg graphics, 16.057 screenless
 206.402 total roms (+406), 206.061 machines roms (+406), 19 devices roms, 322 BIOSes roms, 623 CHDs (+3), 794 sample files (+7), 78 sample packs (+1), 203.024 good dumps (+396), 2.665 no dumps (+7), 1.336 bad dumps (+6), 4 bugs fixed
 4 software list, 390 software, 4 active SL, 0 orphan SL, 390 active software, 0 orphan software, 288 software parents, 102 software clones
 3.535 software roms, 0 software CHD, 348 supported software, 0 partially supported software, 42 unsupported software
@@ -5281,9 +5333,9 @@ wexpressb          > wexpressb1        (mID:   962) M
 
 $0.147u2 [#578]
 2012/10/30
-26.421 total items, 1.240 drivers (+4), 26.336 machines (-1/+53), 8.682 parents (+17), 17.654 clones (-1/+36), 66 BIOSes (+1), 19 devices, 573 requires CHDs, 337 use samples (+53), 8.682 audio mono (-1/+27), 12.016 audio stereo (+57), 38 audio multichannel (+10), 2.642 no audio (-41)
+26.421 total items, 1.240 drivers (+4), 26.336 machines (-1/+53), 8.682 parents (+17), 17.654 clones (-1/+36), 66 BIOSes (+1), 19 devices, 573 requires CHDs, 337 use samples (+53), 11.640 audio mono (-1/+27), 12.016 audio stereo (+57), 38 audio multichannel (+10), 2.642 no audio (-41)
 8.289 working (-1/+47), 18.047 not working (+6), 10.538 mechanicals (+14), 15.798 not mechanicals (-1/+39), 5.066 save supported (+14), 21.270 save unsupported (-1/+39)
-7.990 horizontal screen (-1/+27), 2.289 vertical screen (+12), 10.023 raster graphics (-1/+39), 90 vector graphics, 0 lcd graphics, 0 svg graphics, 16.057 screenless (+14)
+7.990 horizontal screen (-1/+27), 2.289 vertical screen (+12), 10.023 raster graphics (-1/+39), 90 vector graphics, 166 lcd graphics, 0 svg graphics, 16.057 screenless (+14)
 205.996 total roms (+547), 205.655 machines roms (+544), 19 devices roms (+1), 322 BIOSes roms (+2), 620 CHDs, 787 sample files, 77 sample packs, 202.628 good dumps (+536), 2.658 no dumps (-4), 1.330 bad dumps (+15), 6 bugs fixed
 4 software list, 390 software, 4 active SL, 0 orphan SL, 390 active software, 0 orphan software, 288 software parents, 102 software clones
 3.535 software roms, 0 software CHD, 348 supported software, 0 partially supported software, 42 unsupported software
@@ -5305,7 +5357,7 @@ $0.147u1 [#577]
 2012/10/08
 26.368 total items, 1.236 drivers (+1), 26.284 machines (+13), 8.665 parents (+4), 17.619 clones (+9), 65 BIOSes, 19 devices, 573 requires CHDs (+2), 284 use samples (+20), 11.614 audio mono (+24), 11.959 audio stereo (+5), 28 audio multichannel, 2.683 no audio (-16)
 8.243 working (+8), 18.041 not working (+5), 10.524 mechanicals (+3), 15.760 not mechanicals (+10), 5.052 save supported (+17), 21.232 save unsupported (-4)
-7.964 horizontal screen (+10), 2.278 vertical screen), 9.985 raster graphics (+9), 90 vector graphics (+1), 0 lcd graphics, 0 svg graphics, 16.043 screenless (+3)
+7.964 horizontal screen (+10), 2.277 vertical screen, 9.985 raster graphics (+9), 90 vector graphics (+1), 166 lcd graphics, 0 svg graphics, 16.043 screenless (+3)
 205.449 total roms (-468), 205.111 machines roms (-468), 18 devices roms, 320 BIOSes roms, 620 CHDs (+2), 787 sample files (+7), 77 sample packs (+1), 202.092 good dumps (-468), 2.662 no dumps (+1), 1.315 bad dumps (+1), 6 bugs fixed
 4 software list (+1), 390 software (+43), 4 active SL (+1), 0 orphan SL, 390 active software (+43), 0 orphan software, 288 software parents (+38), 102 software clones (+5)
 3.535 software roms (+43), 0 software CHD, 348 supported software (+43), 0 partially supported software, 42 unsupported software
@@ -5331,7 +5383,7 @@ $0.147 [#576]
 2012/09/17
 26.355 total items, 1.235 drivers, 26.271 machines (+15), 8.661 parents (+6), 17.610 clones (+9), 65 BIOSes, 19 devices (+3), 571 requires CHDs, 264 use samples (+1), 11.590 audio mono (+10), 11.954 audio stereo (+6), 28 audio multichannel, 2.699 no audio (-1)
 8.235 working (+37), 18.036 not working (-22), 10.521 mechanicals (+1), 15.750 not mechanicals (+14), 5.035 save supported (+8), 21.236 save unsupported (+7)
-7.954 horizontal screen (+11), 2.277 vertical screen (+3), 9.976 raster graphics (+14), 89 vector graphics, 0 lcd graphics, 0 svg graphics, 16.040 screenless (+1)
+7.954 horizontal screen (+11), 2.277 vertical screen (+3), 9.976 raster graphics (+14), 89 vector graphics, 166 lcd graphics, 0 svg graphics, 16.040 screenless (+1)
 205.917 total roms (+213), 205.579 machines roms (+211), 18 devices roms (+3), 320 BIOSes roms (-1), 618 CHDs, 780 sample files (+16), 76 sample packs (+1), 202.560 good dumps (+217), 2.661 no dumps (+16), 1.314 bad dumps (-20), 11 bugs fixed
 3 software list, 347 software, 3 active SL, 0 orphan SL, 347 active software, 0 orphan software, 250 software parents, 97 software clones
 3.492 software roms, 0 software CHD, 305 supported software, 0 partially supported software, 42 unsupported software
@@ -5364,10 +5416,10 @@ raidndxg           > raidendxg         (mID: 00000) M ***
 
 $0.146u5 [#575]
 2012/08/20
-26.337 total items, 1.235 drivers (+14), 26.256 machines (-28/+6224), 8.655 parents (-19/+2), 17.601 clones (-8/+6221), 65 BIOSes (-1), 16 devices, 571 requires CHDs (+4), 263 use samples, 11.580 audio mono (-7/+664), 11.948 audio stereo (-19/+5143), 28 audio multichannel, 2.700 no audio (-1/+416)
-8.198 working (+38), 18.058 not working (-27/+6185), 10.520 mechanicals (-16/+1255), 15.736 not mechanicals (-11/+4968), 5.027 save supported (-10), 21.229 save unsupported (-19/+6225)
-7.943 horizontal screen (-641), 2.274 vertical screen (+2), 9.962 raster graphics (-639), 89 vector graphics, 0 lcd graphics, 0 svg graphics, 16.039 screenless (-9/+6844)
-205.704 total roms (+13273), 205.368 machines roms (+13282), 15 devices roms, 321 BIOSes 89 (-9), 618 CHDs (+4), 764 sample files, 75 sample packs, 202.343 good dumps (+12887), 2.645 no dumps (+394), 1.334 bad dumps (-4), 5 bugs fixed
+26.337 total items, 1.235 drivers (+14), 26.256 machines (-28/+6224), 8.655 parents (-19/+2), 17.601 clones (-9/+6222), 65 BIOSes (-1), 16 devices, 571 requires CHDs (+4), 263 use samples, 11.580 audio mono (-8/+665), 11.948 audio stereo (-19/+5143), 28 audio multichannel, 2.700 no audio (-1/+416)
+8.198 working (+38), 18.058 not working (-28/+6186), 10.520 mechanicals (-17/+1256), 15.736 not mechanicals (-11/+4968), 5.027 save supported (-10), 21.229 save unsupported (-19/+6225)
+7.943 horizontal screen (-641), 2.274 vertical screen (+2), 9.962 raster graphics (-639), 89 vector graphics, 166 lcd graphics, 0 svg graphics, 16.039 screenless (-10/+6845)
+205.704 total roms (+13273), 205.368 machines roms (+13282), 15 devices roms, 321 BIOSes (-9), 618 CHDs (+4), 764 sample files, 75 sample packs, 202.343 good dumps (+12887), 2.645 no dumps (+394), 1.334 bad dumps (-4), 5 bugs fixed
 3 software list, 347 software, 3 active SL, 0 orphan SL, 347 active software, 0 orphan software, 250 software parents, 97 software clones
 3.492 software roms, 0 software CHD, 305 supported software, 0 partially supported software, 42 unsupported software
 20 ren (20/0/0):
@@ -5426,7 +5478,7 @@ $0.146u4 [#574]
 2012/07/30
 20.142 total items, 1.221 drivers, 20.060 machines (-1/+568), 8.672 parents (+16), 11.388 clones (-1/+552), 66 BIOSes, 16 devices, 567 requires CHDs, 263 use samples, 10.923 audio mono (+71), 6.824 audio stereo (-1/+82), 28 audio multichannel (+8), 2.285 no audio (+407)
 8.160 working (+20), 11.900 not working (-1/+548), 9.281 mechanicals (-1/+555), 10.779 not mechanicals (+13), 5.037 save supported (+8), 15.023 save unsupported (-1/+560)
-8.584 horizontal screen (+11), 2.272 vertical screen (+2), 10.601 raster graphics (+13), 89 vector graphics, 166 lcd graphics (+166), 0 svg graphics, 9.204 screenless (-1/+555)
+8.584 horizontal screen (+11), 2.272 vertical screen (+2), 10.601 raster graphics (+13), 89 vector graphics, 166 lcd graphics, 0 svg graphics, 9.204 screenless (-1/+555)
 192.431 total roms (+782), 192.086 machines roms (+782), 15 devices roms, 330 BIOSes roms, 614 CHDs, 764 sample files, 75 sample packs, 189.456 good dumps (+759), 2.251 no dumps (-2), 1.338 bad dumps (+25), 6 bugs fixed
 3 software list, 347 software, 3 active SL, 0 orphan SL, 347 active software, 0 orphan software, 250 software parents, 97 software clones
 3.492 software roms, 0 software CHD, 305 supported software, 0 partially supported software, 42 unsupported software
@@ -5460,12 +5512,11 @@ $0.146u3 [#573]
 2012/07/15
 19.575 total items, 1.221 drivers (+1), 19.493 machines (+41), 8.656 parents (+17), 10.837 clones (+24), 66 BIOSes, 16 devices, 567 requires CHDs (+19), 263 use samples (+1), 10.852 audio mono (+11), 6.743 audio stereo (+8), 20 audio multichannel (+4), 1.878 no audio (+18)
 8.140 working (+17), 11.353 not working (+24), 8.727 mechanicals, 10.766 not mechanicals (+41), 5.029 save supported (+4), 14.464 save unsupported (+37)
-8.573 horizontal screen (+29), 2.270 vertical screen (+3), 10.588 raster graphics (+32), 89 vector graphics, 0 lcd graphics, 0 svg graphics, 8.650 screenless (+9)
+8.573 horizontal screen (+29), 2.270 vertical screen (+3), 10.588 raster graphics (+32), 89 vector graphics, 166 lcd graphics, 0 svg graphics, 8.650 screenless (+9)
 191.649 total roms (+545), 191.304 machines roms (+543), 15 devices roms, 330 BIOSes roms (+2), 614 CHDs (+20), 764 sample files, 75 sample packs, 188.697 good dumps (+531), 2.253 no dumps (+17), 1.313 bad dumps (+17), 4 bugs fixed
 3 software list, 347 software, 3 active SL, 0 orphan SL, 347 active software, 0 orphan software, 250 software parents, 97 software clones
 3.492 software roms, 0 software CHD, 305 supported software, 0 partially supported software, 42 unsupported software
 8 ren (8/0/0):
-crusnwld           > crusnwld24        (mID: 00000) M ***
 crusnwld           > crusnwld24        (mID: 00000) M ***
 daioh              > daioha            (mID:  3513) M
 dbz                > dbza              (mID:  3992) M
@@ -5483,7 +5534,7 @@ $0.146u2 [#572]
 2012/07/02
 19.534 total items, 1.220 drivers (+2), 19.452 machines (+33), 8.639 parents (+11), 10.813 clones (+22), 66 BIOSes, 16 devices, 548 requires CHDs (+5), 262 use samples, 10.841 audio mono (+25), 6.735 audio stereo (+32), 16 audio multichannel, 1.860 no audio (-24)
 8.123 working (+36), 11.329 not working (-3), 8.727 mechanicals, 10.725 not mechanicals (+33), 5.025 save supported (+21), 14.427 save unsupported (+12)
-8.544 horizontal screen (+16), 2.267 vertical screen (+17), 10.556 raster graphics (+33), 89 vector graphics, 0 lcd graphics, 0 svg graphics, 8.641 screenless
+8.544 horizontal screen (+16), 2.267 vertical screen (+17), 10.556 raster graphics (+33), 89 vector graphics, 166 lcd graphics, 0 svg graphics, 8.641 screenless
 191.104 total roms (+218), 190.761 machines roms (+218), 15 devices roms, 328 BIOSes roms, 594 CHDs (+23), 764 sample files, 75 sample packs, 188.166 good dumps (+216), 2.236 no dumps (+22), 1.296 bad dumps (+3), 4 bugs fixed
 3 software list, 347 software, 3 active SL, 0 orphan SL, 347 active software, 0 orphan software, 250 software parents, 97 software clones
 3.492 software roms, 0 software CHD, 305 supported software, 0 partially supported software, 42 unsupported software
@@ -5503,7 +5554,7 @@ $0.146u1 [#571]
 2012/06/11
 19.501 total items, 1.218 drivers (+3), 19.419 machines (+18), 8.628 parents (+7), 10.791 clones (+11), 66 BIOSes, 16 devices, 543 requires CHDs (+1), 262 use samples (+5), 10.816 audio mono (+6), 6.703 audio stereo (+11), 16 audio multichannel, 1.884 no audio (+1)
 8.087 working (+14), 11.332 not working (+4), 8.727 mechanicals, 10.692 not mechanicals (+18), 5.004 save supported (+9), 14.415 save unsupported (+9)
-8.528 horizontal screen (+14), 2.250 vertical screen (+4), 10.523 raster graphics (+17), 89 vector graphics (+1), 0 lcd graphics, 0 svg graphics, 8.641 screenless
+8.528 horizontal screen (+14), 2.250 vertical screen (+4), 10.523 raster graphics (+17), 89 vector graphics (+1), 166 lcd graphics, 0 svg graphics, 8.641 screenless
 190.886 total roms (+275), 190.543 machines roms (+274), 15 devices roms, 328 BIOSes roms (+1), 571 CHDs (+1), 764 sample files (-8), 75 sample packs (-1), 187.950 good dumps (+252), 2.214 no dumps (-4), 1.293 bad dumps (+28), 23 bugs fixed
 3 software list, 347 software, 3 active SL, 0 orphan SL, 347 active software, 0 orphan software, 250 software parents, 97 software clones
 3.492 software roms, 0 software CHD, 305 supported software, 0 partially supported software, 42 unsupported software
@@ -5549,11 +5600,11 @@ $0.146 [#570]
 2012/05/21
 19.483 total items, 1.215 drivers, 19.401 machines (+16), 8.621 parents (+2), 10.780 clones (+14), 66 BIOSes, 16 devices, 542 requires CHDs, 257 use samples, 10.810 audio mono (+11), 6.692 audio stereo (+4), 16 audio multichannel, 1.883 no audio (+1)
 8.073 working (+17), 11.328 not working (-1), 8.727 mechanicals, 10.674 not mechanicals (+16), 4.995 save supported (+2), 14.406 save unsupported (+14)
-8.514 horizontal screen (+11), 2.246 vertical screen (+5), 10.506 raster graphics (+16), 88 vector graphics, 0 lcd graphics, 0 svg graphics, 8.641 screenless
+8.514 horizontal screen (+11), 2.246 vertical screen (+5), 10.506 raster graphics (+16), 88 vector graphics, 166 lcd graphics, 0 svg graphics, 8.641 screenless
 190.611 total roms (+423), 190.269 machines roms (+420), 15 devices roms, 327 BIOSes roms (+3), 570 CHDs, 772 sample files, 76 sample packs, 187.698 good dumps (+311), 2.218 no dumps (+112), 1.265 bad dumps, 32 bugs fixed
 3 software list, 347 software, 3 active SL, 0 orphan SL, 347 active software, 0 orphan software, 250 software parents, 97 software clones
 3.492 software roms, 0 software CHD, 305 supported software, 0 partially supported software, 42 unsupported software
-7 ren (7/0/0):
+8 ren (8/0/0):
 gt5                > gtsers15          (mID: 00000) M ***
 gt5                > gtsers15          (mID:  5015) M
 hyperbbc           > hypbbc2p          (mID: 00000) M ***
@@ -5571,7 +5622,7 @@ $0.145u8 [#569]
 2012/05/07
 19.467 total items, 1.215 drivers (+1), 19.385 machines (+95), 8.619 parents (+11), 10.766 clones (+84), 66 BIOSes, 16 devices, 542 requires CHDs (+1), 257 use samples (+2), 10.799 audio mono (+93), 6.688 audio stereo (+6), 16 audio multichannel, 1.882 no audio (-4)
 8.056 working (+14), 11.329 not working (+81), 8.727 mechanicals (+77), 10.658 not mechanicals (+18), 4.993 save supported (+5), 14.392 save unsupported (+90)
-8.503 horizontal screen (+10), 2.241 vertical screen (+9), 10.490 raster graphics (+19), 88 vector graphics, 0 lcd graphics, 0 svg graphics, 8.641 screenless (+76)
+8.503 horizontal screen (+10), 2.241 vertical screen (+9), 10.490 raster graphics (+19), 88 vector graphics, 166 lcd graphics, 0 svg graphics, 8.641 screenless (+76)
 190.188 total roms (+485), 189.849 machines roms (+483), 15 devices roms, 324 BIOSes roms (+2), 570 CHDs (+1), 772 sample files, 76 sample packs, 187.387 good dumps (+316), 2.106 no dumps (+19), 1.265 bad dumps (+151), 22 bugs fixed
 3 software list, 347 software, 3 active SL, 0 orphan SL, 347 active software, 0 orphan software, 250 software parents, 97 software clones
 3.492 software roms, 0 software CHD, 305 supported software, 0 partially supported software, 42 unsupported software
@@ -5592,7 +5643,7 @@ $0.145u7 [#568]
 2012/04/22
 19.372 total items, 1.214 drivers (+2), 19.290 machines (-1/+18), 8.608 parents (-1/+9), 10.682 clones (+9), 66 BIOSes, 16 devices (+1), 541 requires CHDs (+1), 255 use samples, 10.706 audio mono (-3), 6.682 audio stereo (-1/+77), 16 audio multichannel (-1), 1.886 no audio (-55)
 8.042 working (+3), 11.248 not working (-1/+15), 8.650 mechanicals (-1/+12), 10.640 not mechanicals (+6), 4.988 save supported (+1), 14.302 save unsupported (-1/+17)
-8.493 horizontal screen (+5), 2.232 vertical screen (+1), 10.471 raster graphics (+6), 88 vector graphics, 0 lcd graphics, 0 svg graphics, 8.565 screenless (-1/+12)
+8.493 horizontal screen (+5), 2.232 vertical screen (+1), 10.471 raster graphics (+6), 88 vector graphics, 166 lcd graphics, 0 svg graphics, 8.565 screenless (-1/+12)
 189.703 total roms (-595), 189.366 machines roms (-596), 15 devices roms (+1), 322 BIOSes roms, 569 CHDs (+1), 772 sample files, 76 sample packs, 187.071 good dumps (-608), 2.087 no dumps (+11), 1.114 bad dumps (+3), 15 bugs fixed
 3 software list, 347 software, 3 active SL, 0 orphan SL, 347 active software, 0 orphan software, 250 software parents, 97 software clones
 3.492 software roms, 0 software CHD, 305 supported software, 0 partially supported software, 42 unsupported software
@@ -5623,7 +5674,7 @@ $0.145u6 [#567]
 2012/04/08
 19.354 total items, 1.212 drivers (+2), 19.273 machines (+72), 8.600 parents (+2), 10.673 clones (+70), 66 BIOSes, 15 devices (-1), 540 requires CHDs, 255 use samples (+1), 10.709 audio mono (+3006), 6.606 audio stereo (-2931), 17 audio multichannel, 1.941 no audio (-3)
 8.039 working (+7), 11.234 (+65), 11.234 not working (+65), 8.639 mechanicals (+66), 10.634 not mechanicals (+6), 4.987 save supported (+2), 14.286 save unsupported (+70)
-8.488 horizontal screen (+5), 2.231 vertical screen (+3), 10.465 raster graphics (+8), 88 vector graphics, 0 lcd graphics, 0 svg graphics, 8.554 screenless (+64)
+8.488 horizontal screen (+5), 2.231 vertical screen (+3), 10.465 raster graphics (+8), 88 vector graphics, 166 lcd graphics, 0 svg graphics, 8.554 screenless (+64)
 190.298 total roms (+147), 189.962 machines roms (+148), 14 devices roms (-1), 322 BIOSes roms, 568 CHDs, 772 sample files, 76 sample packs, 187.679 good dumps (+80), 2.076 no dumps (+53), 1.111 bad dumps (+14), 6 bugs fixed
 3 software list, 347 software, 3 active SL, 0 orphan SL, 347 active software, 0 orphan software, 250 software parents, 97 software clones
 3.492 software roms, 0 software CHD, 305 supported software, 0 partially supported software, 42 unsupported software
@@ -5644,7 +5695,7 @@ $0.145u5 [#566]
 2012/03/25
 19.283 total items, 1.210 drivers (+1), 19.201 machines (+407), 8.598 parents (+14), 10.603 clones (+393), 66 BIOSes, 16 devices, 540 requires CHDs, 254 use samples, 7.703 audio mono (+402), 9.537 audio stereo (+2), 17 audio multichannel, 1.944 no audio (+3)
 8.032 working (+62), 11.169 not working (+345), 8.573 mechanicals (+342), 10.628 not mechanicals (+65), 4.985 save supported (+340), 14.216 save unsupported (+67)
-8.483 horizontal screen (+58), 2.228 vertical screen (+6), 10.457 raster graphics (+64), 88 vector graphics, 0 lcd graphics, 0 svg graphics, 8.490 screenless (+343)
+8.483 horizontal screen (+58), 2.228 vertical screen (+6), 10.457 raster graphics (+64), 88 vector graphics, 166 lcd graphics, 0 svg graphics, 8.490 screenless (+343)
 190.151 total roms (+860), 189.814 machines roms (+860), 15 devices roms, 322 BIOSes roms, 568 CHDs, 772 sample files, 76 sample packs, 187.599 good dumps (+691), 2.023 no dumps (+5), 1.097 bad dumps (+164), 3 bugs fixed
 3 software list, 347 software, 3 active SL, 0 orphan SL, 347 active software, 0 orphan software, 250 software parents, 97 software clones
 3.492 software roms, 0 software CHD, 305 supported software, 0 partially supported software, 42 unsupported software
@@ -5664,7 +5715,7 @@ $0.145u4 [#565]
 2012/03/11
 18.876 total items, 1.209 drivers (+1), 18.794 machines (+108), 8.584 parents (+8), 10.210 clones (+100), 66 BIOSes (+1), 16 devices (+1), 540 requires CHDs (+8), 254 use samples (-1), 7.301 audio mono (+93), 9.535 audio stereo (+9), 17 audio multichannel, 1.941 no audio (+6)
 7.970 working (+20), 10.824 not working (+88), 8.231 mechanicals (+74), 10.563 not mechanicals (+34), 4.645 save supported (+83), 14.149 save unsupported (+25)
-8.425 horizontal screen (+23), 2.222 vertical screen (+5), 10.393 raster graphics (+28), 88 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
+8.425 horizontal screen (+23), 2.222 vertical screen (+5), 10.393 raster graphics (+28), 88 vector graphics, 166 lcd graphics, 0 svg graphics, 8.147 screenless (+80)
 189.291 total roms (+538), 188.954 machines roms (+536), 15 devices roms (+1), 322 BIOSes roms (+1), 568 CHDs (+8), 772 sample files, 76 sample packs, 186.908 good dumps (+546), 2.018 no dumps (-1), 933 bad dumps (+1), 8 bugs fixed
 3 software list, 347 software, 3 active SL, 0 orphan SL, 347 active software, 0 orphan software, 250 software parents, 97 software clones
 3.492 software roms, 0 software CHD, 305 supported software, 0 partially supported software, 42 unsupported software
@@ -5699,7 +5750,7 @@ $0.145u3 [#564]
 2012/02/26
 18.766 total items, 1.208 drivers, 18.686 machines, 8.576 parents, 10.110 clones, 65 BIOSes, 15 devices, 532 requires CHDs, 255 use samples, 7.208 audio mono, 9.526 audio stereo, 17 audio multichannel, 1.935 no audio
 7.950 working, 10.736 not working, 8.157 mechanicals, 10.529 not mechanicals, 4.562 save supported, 14.124 save unsupported
-8.402 horizontal screen, 2.218 vertical screen), 10.365 raster graphics, 88 vector graphics, 0 lcd graphics, 0 svg graphics, 8.067 screenless
+8.402 horizontal screen, 2.217 vertical screen, 10.365 raster graphics, 88 vector graphics, 166 lcd graphics, 0 svg graphics, 8.067 screenless
 188.753 total roms, 188.418 machines roms, 14 devices roms, 321 BIOSes roms, 560 CHDs, 772 sample files, 76 sample packs, 186.362 good dumps, 2.019 no dumps, 932 bad dumps, 4 bugs fixed
 3 software list, 347 software, 3 active SL, 0 orphan SL, 347 active software, 0 orphan software, 250 software parents, 97 software clones
 3.492 software roms, 0 software CHD, 305 supported software, 0 partially supported software, 42 unsupported software
@@ -5713,7 +5764,7 @@ $0.145u2 [#563]
 2012/02/26
 18.766 total items, 1.208 drivers (+2), 18.686 machines (+88), 8.576 parents (+2), 10.110 clones (+86), 65 BIOSes, 15 devices (+2), 532 requires CHDs (+1), 255 use samples, 7.208 audio mono (+84), 9.526 audio stereo (+3), 17 audio multichannel, 1.935 no audio (+1)
 7.950 working (+5), 10.736 not working (+83), 8.157 mechanicals (+80), 10.529 not mechanicals (+8), 4.562 save supported (+3), 14.124 save unsupported (+85)
-8.402 horizontal screen (+7), 2.218 vertical screen), 10.365 raster graphics (+7), 88 vector graphics, 0 lcd graphics, 0 svg graphics, 8.067 screenless (+81)
+8.402 horizontal screen (+7), 2.217 vertical screen, 10.365 raster graphics (+7), 88 vector graphics, 166 lcd graphics, 0 svg graphics, 8.067 screenless (+81)
 188.753 total roms (+279), 188.418 machines roms (+279), 14 devices roms, 321 BIOSes roms, 560 CHDs (+1), 772 sample files, 76 sample packs, 186.362 good dumps (+263), 2.019 no dumps, 932 bad dumps (+17), 8 bugs fixed
 3 software list, 347 software, 3 active SL, 0 orphan SL, 347 active software, 0 orphan software, 250 software parents, 97 software clones
 3.492 software roms, 0 software CHD, 305 supported software, 0 partially supported software, 42 unsupported software
@@ -5729,7 +5780,7 @@ $0.145u1 [#562]
 2012/02/19
 18.676 total items, 1.206 drivers, 18.598 machines (+14), 8.574 parents (+8), 10.024 clones (+6), 65 BIOSes, 13 devices, 531 requires CHDs (+2), 255 use samples (+74), 7.124 audio mono (+2), 9.523 audio stereo (+10), 17 audio multichannel, 1.934 no audio (+2)
 7.945 working (+12), 10.653 not working (+2), 8.077 mechanicals, 10.521 not mechanicals (+14), 4.559 save supported (+3), 14.039 save unsupported (+11)
-8.395 horizontal screen (+7), 2.217 vertical screen (+4), 10.358 raster graphics (+11), 88 vector graphics, 0 lcd graphics, 0 svg graphics, 7.986 screenless (+3)
+8.395 horizontal screen (+7), 2.217 vertical screen (+4), 10.358 raster graphics (+11), 88 vector graphics, 166 lcd graphics, 0 svg graphics, 7.986 screenless (+3)
 188.474 total roms (+279), 188.139 machines roms (+279), 14 devices roms, 321 BIOSes roms, 559 CHDs (+2), 772 sample files (+227), 76 sample packs (+36), 186.099 good dumps (+279), 2.019 no dumps (+1), 915 bad dumps (+1), 15 bugs fixed
 3 software list, 347 software, 3 active SL, 0 orphan SL, 347 active software, 0 orphan software, 250 software parents, 97 software clones
 3.492 software roms, 0 software CHD, 305 supported software, 0 partially supported software, 42 unsupported software
@@ -5745,9 +5796,9 @@ winrun             > winrungp          (mID: 00000) M ***
 
 $0.145 [#561]
 2012/02/05
-18.662 total items, 1.206 drivers (+2), 18.584 machines (+18), 8.566 parents (+10), 10.018 clones (+8), 65 BIOSes (+1), 13 devices, 529 requires CHDs (+3), 181 use samples, 7.122 audio mono (+1), 9.513 audio stereo (+11), 17 audio multichannel, 1.932 no audio
+18.662 total items, 1.206 drivers (+2), 18.584 machines (+18), 8.566 parents (+10), 10.018 clones (+8), 65 BIOSes (+1), 13 devices, 529 requires CHDs (+3), 181 use samples, 7.122 audio mono (+1), 9.513 audio stereo (+11), 17 audio multichannel, 1.932 no audio (+6)
 7.933 working (+6), 10.651 not working (+12), 8.077 mechanicals, 10.507 not mechanicals (+18), 4.556 save supported (+2), 14.028 save unsupported (+16)
-8.388 horizontal screen (+16), 2.213 vertical screen (+1), 10.347 raster graphics (+16), 88 vector graphics (+1), 0 lcd graphics, 0 svg graphics, 7.983 screenless (+1)
+8.388 horizontal screen (+16), 2.213 vertical screen (+1), 10.347 raster graphics (+16), 88 vector graphics (+1), 166 lcd graphics, 0 svg graphics, 7.983 screenless (+1)
 188.195 total roms (+198), 187.860 machines roms (+197), 14 devices roms, 321 BIOSes roms (+1), 557 CHDs (+3), 545 sample files, 40 sample packs, 185.820 good dumps (+199), 2.018 no dumps (+2), 914 bad dumps, 14 bugs fixed
 3 software list, 347 software, 3 active SL, 0 orphan SL, 347 active software, 0 orphan software, 250 software parents, 97 software clones
 3.492 software roms, 0 software CHD, 305 supported software, 0 partially supported software, 42 unsupported software
@@ -5761,8 +5812,8 @@ $0.144u7 [#560]
 2012/01/29
 18.643 total items, 1.204 drivers (+2), 18.566 machines (+44), 8.556 parents (+6), 10.010 clones (+38), 64 BIOSes, 13 devices, 526 requires CHDs, 181 use samples, 7.121 audio mono (+37), 9.502 audio stereo (+5), 17 audio multichannel, 1.926 no audio (+2)
 7.927 working (+5), 10.639 not working (+39), 8.077 mechanicals (+26), 10.489 not mechanicals (+18), 4.554 save supported (+7), 14.012 save unsupported (+37)
-8.372 horizontal screen (+43), 2.212 vertical screen (+1), 10.331 raster graphics (+18), 87 vector graphics, 0 lcd graphics, 0 svg graphics, 7.982 screenless (+26)
-187.997 total roms (+17), 187.663 machines roms (+333), 14 devices roms, 320 BIOSes roms, 554 CHDs, 545 sample files, 40 sample packs, 185.621 good dumps (+334), 2.016 no dumps (-2), 914 bad dumps (+1), 24 bugs fixed
+8.372 horizontal screen (+17), 2.212 vertical screen (+1), 10.331 raster graphics (+18), 87 vector graphics, 166 lcd graphics, 0 svg graphics, 7.982 screenless (+26)
+187.997 total roms (+333), 187.663 machines roms (+333), 14 devices roms, 320 BIOSes roms, 554 CHDs, 545 sample files, 40 sample packs, 185.621 good dumps (+334), 2.016 no dumps (-2), 914 bad dumps (+1), 24 bugs fixed
 3 software list, 347 software, 3 active SL, 0 orphan SL, 347 active software, 0 orphan software, 250 software parents, 97 software clones
 3.492 software roms, 0 software CHD, 305 supported software, 0 partially supported software, 42 unsupported software
 1 ren (1/0/0):
@@ -5876,7 +5927,7 @@ $0.144 [#553]
 7.879 working (+3), 10.593 not working (-12/+4), 8.051 mechanicals (-14), 10.421 not mechanicals (+9), 4.531 save supported (-1/+1), 13.941 save unsupported (-11/+6)
 8.315 horizontal screen (+8), 2.201 vertical screen (+1), 10.266 raster graphics (+9), 87 vector graphics, 163 lcd graphics, 0 svg graphics, 7.956 screenless (-14)
 186.993 total roms (+176), 186.715 machines roms (+174), 14 devices roms, 264 BIOSes roms (+2), 549 CHDs, 545 sample files, 40 sample packs, 184.613 good dumps (+148), 2.042 no dumps (+28), 887 bad dumps, 15 bugs fixed
-3 software list, 347 software, 3 active SL (+1), 0 orphan SL, 347 active software (+240), 0 orphan software, 250 software parents (+151), 97 software clones (+89)
+3 software list (+1), 347 software (+240), 3 active SL (+1), 0 orphan SL, 347 active software (+240), 0 orphan software, 250 software parents (+151), 97 software clones (+89)
 3.492 software roms (+2951), 0 software CHD, 305 supported software (+240), 0 partially supported software, 42 unsupported software
 13 ren (13/0/0):
 alienfnt           > alienfnta         (mID: 00000) M ***
@@ -5910,7 +5961,7 @@ sc5dndbep                              (mID: 15365) M
 $0.143u9 [#552]
 2011/10/27
 18.552 total items, 1.198 drivers, 18.477 machines (+2), 8.532 parents, 9.945 clones (+2), 62 BIOSes, 13 devices, 521 requires CHDs, 181 use samples, 7.064 audio mono, 9.471 audio stereo (+2), 17 audio multichannel, 1.925 no audio
-7.876 working (+2), 10.601 not working, 8.065 mechanicals, 10.412 not mechanicals (+2), 4.531 save supported (+2), 14.006 save unsupported
+7.876 working (+2), 10.601 not working, 8.065 mechanicals, 10.412 not mechanicals (+2), 4.531 save supported (+2), 13.946 save unsupported
 8.307 horizontal screen (+2), 2.200 vertical screen, 10.257 raster graphics (+2), 87 vector graphics, 163 lcd graphics, 0 svg graphics, 7.970 screenless
 186.817 total roms (+44), 186.541 machines roms (+44), 14 devices roms, 262 BIOSes roms, 549 CHDs, 545 sample files, 40 sample packs, 184.465 good dumps (+44), 2.014 no dumps, 887 bad dumps, 2 bugs fixed
 2 software list, 107 software, 2 active SL, 0 orphan SL, 107 active software, 0 orphan software, 99 software parents, 8 software clones
@@ -5977,8 +6028,8 @@ $0.143u6 [#549]
 2011/09/20
 15.868 total items, 1.186 drivers (+5), 15.793 machines (+1780), 8.393 parents (+225), 7.400 clones (+1555), 62 BIOSes, 13 devices (+1), 508 requires CHDs, 181 use samples, 6.915 audio mono (+41), 7.009 audio stereo (+1790), 17 audio multichannel, 1.852 no audio (-51)
 7.850 working (+15), 7.943 not working (+1765), 5.690 mechanicals (+1754), 10.103 not mechanicals (+26), 4.518 save supported (+17), 11.275 save unsupported (+1763)
-8.111 horizontal screen (+1779), 2.188 vertical screen (+1), 10.049 raster graphics (+43), 87 vector graphics, 163 lcd graphics, 0 svg graphics, 5.494 screenless (+1574)
-181.055 total roms (+205), 180.779 machines roms (+5980), 14 devices roms (+1), 262 BIOSes roms, 536 CHDs, 545 sample files, 40 sample packs, 178.741 good dumps (+5961), 1.971 no dumps (+11), 879 bad dumps (+9), 8 bugs fixed
+8.111 horizontal screen (+205), 2.188 vertical screen (+1), 10.049 raster graphics (+43), 87 vector graphics, 163 lcd graphics, 0 svg graphics, 5.494 screenless (+1574)
+181.055 total roms (+5981), 180.779 machines roms (+5980), 14 devices roms (+1), 262 BIOSes roms, 536 CHDs, 545 sample files, 40 sample packs, 178.741 good dumps (+5961), 1.971 no dumps (+11), 879 bad dumps (+9), 8 bugs fixed
 2 software list, 107 software, 2 active SL, 0 orphan SL, 107 active software, 0 orphan software, 99 software parents, 8 software clones
 541 software roms, 0 software CHD, 65 supported software, 0 partially supported software, 42 unsupported software
 614 ren (614/0/0):
@@ -6878,7 +6929,7 @@ usagui             > usagiym           (mID:  8004) M
 $0.142u2 [#538]
 2011/04/25
 10.565 total items, 1.143 drivers (-2), 10.506 machines (-1/+19), 5.290 parents (+3), 5.216 clones (-1/+16), 59 BIOSes, 0 devices, 494 requires CHDs, 181 use samples (+1), 5.661 audio mono (+11), 3.320 audio stereo (-1/+8), 17 audio multichannel, 1.508 no audio
-7.752 working (-1/+8), 2.754 not working (+11), 1.293 mechanicals, 9.213 not mechanicals (-1/+19), 4.164 save supported (+14), 9.213 save unsupported (-1/+5)
+7.752 working (-1/+8), 2.754 not working (+11), 1.293 mechanicals, 9.213 not mechanicals (-1/+19), 4.164 save supported (+14), 6.342 save unsupported (-1/+5)
 7.048 horizontal screen (-1/+19), 2.167 vertical screen, 9.130 raster graphics (-1/+19), 85 vector graphics, 0 lcd graphics, 0 svg graphics, 1.291 screenless
 142.063 total roms (+176), 141.821 machines roms (+176), 0 devices roms, 242 BIOSes roms, 522 CHDs, 545 sample files, 40 sample packs, 140.005 good dumps (+123), 1.717 no dumps (+52), 863 bad dumps (+1), 6 bugs fixed
 1 software list, 48 software, 1 active SL, 0 orphan SL, 48 active software, 0 orphan software, 47 software parents, 1 software clones
@@ -6984,7 +7035,7 @@ $0.141u3 [#534]
 2011/02/28
 10.438 total items, 1.140 drivers, 10.379 machines (-1/+137), 5.246 parents (-1/+45), 5.133 clones (+92), 59 BIOSes (+1), 0 devices, 489 requires CHDs (-1/+26), 169 use samples, 5.610 audio mono (+11), 3.306 audio stereo (-1/+41), 17 audio multichannel, 1.446 no audio (+85)
 7.711 working (+19), 2.668 not working (-1/+118), 1.238 mechanicals (+90), 9.141 not mechanicals (-1/+47), 4.138 save supported (+5), 6.241 save unsupported (-1/+132)
-6.994 horizontal screen (-1/+145), 2.152 vertical screen (+2), 9.061 raster graphics (-1/+45), 85 vector graphics, 0 lcd graphics, 0 svg graphics, 1.233 screenless (+90)
+6.994 horizontal screen (-1/+45), 2.152 vertical screen (+2), 9.061 raster graphics (-1/+47), 85 vector graphics, 0 lcd graphics, 0 svg graphics, 1.233 screenless (+90)
 140.943 total roms (+1142), 140.701 machines roms (+1134), 0 devices roms, 242 BIOSes roms (+8), 517 CHDs (+35), 545 sample files, 40 sample packs, 138.987 good dumps (+1126), 1.673 no dumps (+8), 800 bad dumps (+43), 28 bugs fixed
 1 software list, 48 software, 1 active SL, 0 orphan SL, 48 active software, 0 orphan software, 47 software parents, 1 software clones
 100 software roms, 0 software CHD, 48 supported software, 0 partially supported software, 0 unsupported software
@@ -7035,7 +7086,7 @@ $0.141u1 [#532] [Added mechanicals machines]
 7.672 working (+33), 2.535 not working (+1105), 1.148 mechanicals (+1148), 9.059 not mechanicals (-10), 4.079 save supported (+19), 6.128 save unsupported (+1119)
 6.919 horizontal screen (+22), 2.148 vertical screen (+17), 8.982 raster graphics (+39), 85 vector graphics, 0 lcd graphics, 0 svg graphics, 1.140 screenless (+1099)
 139.102 total roms (+6257), 138.869 machines roms (+6240), 0 devices roms, 233 BIOSes roms (+17), 478 CHDs, 545 sample files, 40 sample packs, 137.156 good dumps (+6220), 1.670 no dumps (+39), 754 bad dumps (-2), 19 bugs fixed
-15 ren (14/0/1):
+16 ren (15/0/1):
 arcadia            > warcadia          (mID: 00000) M ***
 batsugun           > batsuguna         (mID: 00000) M ***
 cd32               > cd32bios          (mID: 31494) M
@@ -7061,7 +7112,7 @@ $0.141 [#531]
 9.122 total items, 1.062 drivers (-1), 9.069 machines (+25), 4.558 parents (+10), 4.511 clones (+15), 53 BIOSes, 0 devices, 461 requires CHDs (+1), 169 use samples (+2), 5.549 audio mono (+22), 3.175 audio stereo (+4), 46 audio multichannel, 299 no audio (-1)
 7.639 working (+16), 1.430 not working (+9), 0 mechanicals, 9.069 not mechanicals (+25), 4.060 save supported (+3), 5.009 save unsupported (+22)
 6.897 horizontal screen (+22), 2.131 vertical screen (+3), 8.943 raster graphics (+25), 85 vector graphics, 0 lcd graphics, 0 svg graphics, 41 screenless
-132.845 total roms (+291), 132.629 machines roms (+290), 0 devices roms, 216 BIOSes roms, 478 CHDs (+1), 545 sample files, 40 sample packs, 130.936 good dumps (+196), 1.631 no dumps (+87), 756 bad dumps (+8), 7 bugs fixed
+132.845 total roms (+290), 132.629 machines roms (+290), 0 devices roms, 216 BIOSes roms, 478 CHDs (+1), 545 sample files, 40 sample packs, 130.936 good dumps (+196), 1.631 no dumps (+87), 756 bad dumps (+8), 7 bugs fixed
 2 ren (2/0/0):
 gtgt               > gtgt1             (mID:  4756) M
 relief2            > relief3           (mID:  1575) M
@@ -7086,7 +7137,7 @@ $0.140u2 [#529]
 9.071 total items, 1.060 drivers (+3), 9.018 machines (+49), 4.541 parents (+24), 4.477 clones (+25), 53 BIOSes, 0 devices, 458 requires CHDs (+7), 167 use samples (+1), 5.510 audio mono (+27), 3.164 audio stereo (+17), 46 audio multichannel, 298 no audio (+5)
 7.595 working (+22), 1.423 not working (+27), 0 mechanicals, 9.018 not mechanicals (+49), 3.904 save supported (+19), 5.114 save unsupported (+30)
 6.858 horizontal screen (+39), 2.119 vertical screen (+10), 8.892 raster graphics (+49), 85 vector graphics, 0 lcd graphics, 0 svg graphics, 41 screenless
-132.202 total roms (+687), 131.987 machines roms (+680), 0 devices roms, 215 BIOSes roms, 475 CHDs (+7), 545 sample files, 40 sample packs, 130.404 good dumps (+654), 1.540 no dumps (+29), 733 bad dumps (+4), 3 bugs fixed
+132.202 total roms (+680), 131.987 machines roms (+680), 0 devices roms, 215 BIOSes roms, 475 CHDs (+7), 545 sample files, 40 sample packs, 130.404 good dumps (+654), 1.540 no dumps (+29), 733 bad dumps (+4), 3 bugs fixed
 7 ren (7/0/0):
 ddp2               > ddp2100           (mID: 00000) M ***
 ddp2a              > ddp2              (mID: 00000) M ***
@@ -7140,7 +7191,7 @@ xmcotaa            > xmcotaar1         (mID: 00000) M ***
 $0.139u3 [#525]
 2010/09/18
 8.973 total items, 1.052 drivers (+1), 8.920 machines (+97), 4.494 parents (+8), 4.426 clones (+89), 53 BIOSes (+1), 0 devices, 449 requires CHDs (+1), 164 use samples, 5.452 audio mono (+91), 3.134 audio stereo (+4), 46 audio multichannel, 288 no audio (+2)
-7.542 working (+85), 1.395 not working (+12), 0 mechanicals, 8.920 not mechanicals (+97), 3.870 save supported, 5.050 save unsupported (+97)
+7.542 working (+85), 1.378 not working (+12), 0 mechanicals, 8.920 not mechanicals (+97), 3.870 save supported, 5.050 save unsupported (+97)
 6.772 horizontal screen (+95), 2.107 vertical screen, 8.795 raster graphics (+95), 84 vector graphics, 0 lcd graphics, 0 svg graphics, 41 screenless (+2)
 130.954 total roms (+1196), 130.741 machines roms (+1195), 0 devices roms, 213 BIOSes roms (+1), 466 CHDs (+1), 541 sample files, 39 sample packs, 129.212 good dumps (+1195), 1.519 no dumps, 689 bad dumps (+2), 10 bugs fixed
 7 ren (7/0/0):
@@ -7181,9 +7232,9 @@ wh2j                                   (mID: 00000) M ***
 
 $0.139u1 [#523]
 2010/08/11
-8.845 total items, 1.050 drivers (+1), 8.794 machines (-1/+15), 4.480 parents (-1/+7), 4.314 clones (+6), 51 BIOSes, 0 devices, 446 requires CHDs (+4), 163 use samples, 5.340 audio mono (-1/+10), 3.117 audio stereo (+2), 46 audio multichannel, 291 no audio (+3)
+8.845 total items, 1.050 drivers (+1), 8.794 machines (-1/+15), 4.480 parents (+8), 4.314 clones (-1/+7), 51 BIOSes, 0 devices, 446 requires CHDs (+4), 163 use samples, 5.340 audio mono (-1/+10), 3.117 audio stereo (+2), 46 audio multichannel, 291 no audio (+3)
 7.425 working (+9), 1.369 not working (-1/+6), 0 mechanicals, 8.794 not mechanicals (-1/+15), 3.851 save supported (+4), 4.943 save unsupported (-1/+11)
-6.652 horizontal screen (-1/+3), 2.104 vertical screen (+2), 8.671 raster graphics (-1/+15), 84 vector graphics, 0 lcd graphics, 0 svg graphics, 39 screenless
+6.652 horizontal screen (+12), 2.103 vertical screen (-1/+3), 8.671 raster graphics (-1/+15), 84 vector graphics, 0 lcd graphics, 0 svg graphics, 39 screenless
 129.276 total roms (+103), 129.068 machines roms (+103), 0 devices roms, 208 BIOSes roms, 463 CHDs (+4), 541 sample files, 39 sample packs, 127.548 good dumps (+94), 1.514 no dumps (+21), 677 bad dumps (-8), 4 bugs fixed
 10 ren (10/0/0):
 dynwaru            > dynwara           (mID: 00000) M ***
@@ -7268,7 +7319,7 @@ slapfgtr           > slapfighb3        (mID: 00000) M ***
 $0.138u2 [#519]
 2010/06/17
 8.782 total items, 1.048 drivers (-2), 8.732 machines (+15), 4.456 parents (+8), 4.276 clones (+7), 50 BIOSes (+1), 0 devices, 433 requires CHDs (+2), 147 use samples, 5.300 audio mono (+13), 3.102 audio stereo (+2), 46 audio multichannel, 284 no audio
-7.372 working (+16), 1.360 not working -(-1), 0 mechanicals, 8.732 not mechanicals (+15), 3.821 save supported (+3), 4.911 save unsupported (+12)
+7.372 working (+16), 1.360 not working (-1), 0 mechanicals, 8.732 not mechanicals (+15), 3.821 save supported (+3), 4.911 save unsupported (+12)
 6.601 horizontal screen (+10), 2.092 vertical screen (+5), 8.610 raster graphics (+15), 83 vector graphics, 0 lcd graphics, 0 svg graphics, 39 screenless
 127.943 total roms (+153), 127.739 machines roms (+151), 0 devices roms, 204 BIOSes roms (+2), 450 CHDs (+3), 532 sample files, 37 sample packs, 126.298 good dumps (+145), 1.439 no dumps (+12), 656 bad dumps (-1), 6 bugs fixed
 2 ren (2/0/0):
@@ -7551,10 +7602,10 @@ norautv3           > noraut3a          (mID:  8299) M
 $0.135u1 [#503]
 2009/11/20
 8.420 total items, 1.035 drivers (-1), 8.374 machines (-1/+41), 4.316 parents (+14), 4.058 clones (-1/+27), 46 BIOSes, 0 devices, 401 requires CHDs (+3), 139 use samples (+1), 5.090 audio mono (+32), 3.005 audio stereo (-1/+10), 25 audio multichannel, 254 no audio (-1)
-6.309 working (-1/+28), 1.222 not working (+5), 0 mechanicals, 8.374 not mechanicals (-1/+41), 1.815 save supported (+121), 6.559 save unsupported (-81)
-6.393 horizontal screen (-1/+33), 2.026 vertical screen (+8), 8.252 raster graphics (-1/+36), 83 vector graphics, 0 lcd graphics, 0 svg graphics, 39 screenless (+5)
+7.152 working (-1/+36), 1.222 not working (+5), 0 mechanicals, 8.374 not mechanicals (-1/+41), 1.815 save supported (+121), 6.559 save unsupported (-81)
+6.309 horizontal screen (-1/+28), 2.026 vertical screen (+8), 8.252 raster graphics (-1/+36), 83 vector graphics, 0 lcd graphics, 0 svg graphics, 39 screenless (+5)
 122.837 total roms (+384), 122.658 machines roms (+382), 0 devices roms, 179 BIOSes roms (+2), 417 CHDs (+3), 407 sample files, 35 sample packs, 121.224 good dumps (+363), 1.374 no dumps (+18), 656 bad dumps (+6), 7 bugs fixed
-10 ren (11/0/0):
+11 ren (11/0/0):
 drw80pkr           > drw80pk2          (mID: 00000) M ***
 chmplst2           > lhb2              (mID: 00000) M ***
 grtwall            > wlcc              (mID: 00000) M ***
@@ -7573,8 +7624,8 @@ topracra                               (mID: 00000) M ***
 $0.135 [#502]
 2009/11/01
 8.380 total items, 1.036 drivers (+1), 8.334 machines (+11), 4.302 parents (+5), 4.032 clones (+6), 46 BIOSes (+1), 0 devices, 398 requires CHDs, 138 use samples, 5.058 audio mono (+7), 2.996 audio stereo (+3), 25 audio multichannel, 255 no audio (+1)
-7.150 working (+9), 1.230 not working (+3), 0 mechanicals, 8.380 not mechanicals (+12), 1.694 save supported (+2), 6.686 save unsupported (+10)
-6.361 horizontal screen (+9), 2.019 vertical screen (+3), 0 raster graphics, 83 vector graphics, 0 lcd graphics, 0 svg graphics, 34 screenless
+7.117 working (+9), 1.217 not working (+2), 0 mechanicals, 8.334 not mechanicals (+11), 1.694 save supported (+2), 6.640 save unsupported (+9)
+6.282 horizontal screen (+8), 2.018 vertical screen (+3), 8.217 raster graphics (+11), 83 vector graphics, 0 lcd graphics, 0 svg graphics, 34 screenless
 122.453 total roms (+187), 122.276 machines roms (+186), 0 devices roms, 177 BIOSes roms (+1), 414 CHDs, 407 sample files, 35 sample packs, 120.861 good dumps (+183), 1.356 no dumps, 650 bad dumps (+4), 8 bugs fixed
 3 ren (3/0/0):
 sdgndmrb           > grainbow          (mID:  4657) M
@@ -7628,8 +7679,8 @@ vulcana            > vulcanb           (mID: 00000) M ***
 $0.134u1 [#498]
 2009/09/24
 8.303 total items, 1.032 drivers (+2), 8.258 machines (+17), 4.272 parents (+6), 3.986 clones (+11), 45 BIOSes, 0 devices, 397 requires CHDs, 133 use samples, 5.007 audio mono (+8), 2.971 audio stereo (+6), 23 audio multichannel, 257 no audio (+3)
-7.100 working (+14), 1.203 not working (+3), 0 mechanicals, 8.303 not mechanicals (+17), 1.682 save supported (+3), 6.621 save unsupported (+14)
-6.300 horizontal screen (+15), 2.003 vertical screen (+2), 0 raster graphics, 83 vector graphics, 0 lcd graphics, 0 svg graphics, 34 screenless
+7.067 working (+14), 1.191 not working (+3), 0 mechanicals, 8.258 not mechanicals (+17), 1.682 save supported (+3), 6.576 save unsupported (+14)
+6.222 horizontal screen (+15), 2.002 vertical screen (+2), 8.141 raster graphics (+17), 83 vector graphics, 0 lcd graphics, 0 svg graphics, 34 screenless
 121.236 total roms (+258), 121.066 machines roms (+258), 0 devices roms, 170 BIOSes roms, 413 CHDs, 407 sample files, 35 sample packs, 119.631 good dumps (+277), 1.363 no dumps (-13), 655 bad dumps (-6), 4 bugs fixed
 6 ren (6/0/0):
 bstars             > bstarsh           (mID: 00000) M ***
@@ -8918,7 +8969,7 @@ stridrja           > striderj          (mID: 00000) M ***
 $0.132u2 [#487]
 2009/06/25
 8.118 total items, 1.015 drivers (+1), 8.073 machines (-1/+4), 4.197 parents (+1), 3.876 clones (-1/+3), 45 BIOSes, 0 devices, 380 requires CHDs, 132 use samples (+1), 4.896 audio mono (-1/+4), 2.913 audio stereo (+1), 23 audio multichannel, 241 no audio (-1)
-6.935 working (+7), 1.138 not working (-4), 0 mechanicals, 8.073 not mechanicals (-1/+4), 6.441 save supported (-1/+3), 6.486 save unsupported (+1)
+6.935 working (+7), 1.138 not working (-4), 0 mechanicals, 8.073 not mechanicals (-1/+4), 1.632 save supported (-1/+3), 6.441 save unsupported (+1)
 6.058 horizontal screen (-1/+3), 1.982 vertical screen (+1), 7.957 raster graphics (-1/+3), 83 vector graphics (+1), 0 lcd graphics, 0 svg graphics, 33 screenless
 118.889 total roms (+43), 118.724 machines roms (+43), 0 devices roms, 165 BIOSes roms, 396 CHDs, 407 sample files, 35 sample packs, 117.218 good dumps (+43), 1.427 no dumps (+2), 640 bad dumps (-2), 4 bugs fixed
 2 ren (2/0/0):
@@ -9012,7 +9063,7 @@ shtngmsta          > shtngmste         (mID: 00000) M ***
 $0.131u1 [#481]
 2009/05/07
 8.052 total items, 1.013 drivers (+2), 8.008 machines (-7/+29), 4.171 parents (-6/+15), 3.837 clones (-1/+14), 44 BIOSes, 0 devices, 368 requires CHDs (-7/+1), 129 use samples, 4.861 audio mono (+17), 2.886 audio stereo (-6/+9), 23 audio multichannel, 238 no audio (-1/+3)
-6.884 working  (+14), 1.124 not working (-7/+15), 0 mechanicals, 8.008 not mechanicals (-7/+29), 1.616 save supported (+15), 6.392 save unsupported (-7/+14)
+6.884 working (+14), 1.124 not working (-7/+15), 0 mechanicals, 8.008 not mechanicals (-7/+29), 1.616 save supported (+15), 6.392 save unsupported (-7/+14)
 5.999 horizontal screen (-5/+24), 1.976 vertical screen (-2/+5), 7.893 raster graphics (-7/+29), 82 vector graphics, 0 lcd graphics, 0 svg graphics, 33 screenless
 118.162 total roms (+401), 117.999 machines roms (+401), 0 devices roms, 163 BIOSes roms, 382 CHDs (-6), 407 sample files, 35 sample packs, 116.557 good dumps (+377), 1.380 no dumps (+6), 607 bad dumps (+12), 6 bugs fixed
 4 ren (4/0/0):
@@ -9332,9 +9383,9 @@ shimpacp           > shimpap5          (mID:  3688) M
 
 $0.128u5 [#465]
 2008/12/06
-7.396 total items, 964 drivers (+4), 7.356 machines (+41), 3.893 parents (+11), 3.463 clones (+30), 40 BIOSes, 0 devices, 284 requires CHDs (+1), 129 use samples, 4.356 audio mono (+34), 2.763 audio stereo (+1), 22 audio multichannel, 215 no audio (+6)
-6.408 working (+34), 948 not working (+7), 0 mechanicals, 7.356 not mechanicals (+41), 1.274 save supported (+2), 6.082 save unsupported (+39)
-5.427 horizontal screen (+38), 1.925 vertical screen (+3), 7.271 raster graphics (+41), 81 vector graphics, 0 lcd graphics, 0 svg graphics, 4 screenless
+7.396 total items, 964 drivers (+4), 7.356 machines (-1/+42), 3.893 parents (+11), 3.463 clones (-1/+31), 40 BIOSes, 0 devices, 284 requires CHDs (+1), 129 use samples, 4.356 audio mono (-1/+35), 2.763 audio stereo (+1), 22 audio multichannel, 215 no audio (+6)
+6.408 working (-1/+35), 948 not working (+7), 0 mechanicals, 7.356 not mechanicals (-1/+42), 1.274 save supported (+2), 6.082 save unsupported (-1/+40)
+5.427 horizontal screen (-1/+39), 1.925 vertical screen (+3), 7.271 raster graphics (-1/+42), 81 vector graphics, 0 lcd graphics, 0 svg graphics, 4 screenless
 111.273 total roms (+2451), 111.126 machines roms (+2442), 0 devices roms, 147 BIOSes roms (+9), 298 CHDs (+2), 407 sample files, 35 sample packs, 109.775 good dumps (+2411), 1.236 no dumps (+8), 560 bad dumps (+34), 22 bugs fixed
 8 ren (8/0/0):
 bktigerb           > bktigrb1          (mID:   855) M
@@ -9345,8 +9396,8 @@ magiccdb           > magicd2b          (mID:  6976) M
 magiccrd           > magicrd2          (mID:  5754) M
 wc90b              > wc90b1            (mID:   468) M
 witchcrd           > witchcdc          (mID: 00000) M ***
-0 del (0/0/0):
--
+1 del (1/0/0):
+jolycdae                               (mID: 00000) M ***
 
 
 $0.128u4 [#464]
@@ -10270,7 +10321,7 @@ dimahoo            > dimahoou          (mID: 00000) M ***
 sfa3               > sfa3u             (mID: 00000) M ***
 sfa3r1             > sfa3ur1           (mID: 00000) M ***
 1 del (1/0/0):
-speglsha                               (mID: 00000) M ***
+speglsha                               (mID: 47742) M
 
 
 $0.118u5 [#395]
@@ -10366,7 +10417,7 @@ $0.117u3 [#389]
 0 ren (0/0/0):
 -
 1 del (1/0/0):
-powernjb                               (mID: 00000) M ***
+powernjb                               (mID:  5963) M
 
 
 $0.117u2 [#388]
@@ -10376,7 +10427,7 @@ $0.117u2 [#388]
 4.836 horizontal screen (+2), 1.846 vertical screen, 6.602 raster graphics (+2), 80 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
 99.514 total roms (+30), 99.411 machines roms (+30), 0 devices roms, 103 BIOSes roms, 228 CHDs, 398 sample files, 34 sample packs, 98.272 good dumps (+36), 1.033 no dumps (-6), 437 bad dumps, 10 bugs fixed
 1 ren (1/0/0):
-monzagp            > imolagp           (mID: 00000) M ***
+monzagp            > imolagp           (mID:  8558) M
 0 del (0/0/0):
 -
 
@@ -10388,11 +10439,11 @@ $0.117u1 [#387]
 4.834 horizontal screen, 1.846 vertical screen (+6), 6.600 raster graphics (+6), 80 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
 99.484 total roms (+78), 99.381 machines roms (+76), 0 devices roms, 103 BIOSes roms (+2), 228 CHDs, 398 sample files, 34 sample packs, 98.236 good dumps (+75), 1.039 no dumps (+2), 437 bad dumps (+1), 7 bugs fixed
 5 ren (5/0/0):
-battleg            > bgaregcn          (mID: 00000) M ***
-battlega           > bgaregga          (mID: 00000) M ***
-battlegb           > bgaregnv          (mID: 00000) M ***
-battlegc           > bgareghk          (mID: 00000) M ***
-goindolj           > goindolk          (mID: 00000) M ***
+battleg            > bgaregcn          (mID:  3401) M
+battlega           > bgaregga          (mID:  2433) M
+battlegb           > bgaregnv          (mID:  3856) M
+battlegc           > bgareghk          (mID:  4789) M
+goindolj           > goindolk          (mID:  3535) M
 0 del (0/0/0):
 -
 
@@ -10415,14 +10466,13 @@ $0.116u4 [#385]
 5.846 working (-1/+12), 822 not working (+1), 0 mechanicals, 6.668 not mechanicals (-1/+13), 945 save supported (+1), 5.723 save unsupported (-1/+12)
 4.828 horizontal screen (+13), 1.840 vertical screen (-1), 6.588 raster graphics (-1/+13), 80 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
 99.373 total roms (+17), 99.272 machines roms (+17), 0 devices roms, 101 BIOSes roms, 226 CHDs (+2), 398 sample files, 34 sample packs, 98.112 good dumps (+19), 1.056 no dumps (+3), 431 bad dumps (-3), 1 bug fixed
-5 ren (5/0/0):
-brapboys           > brapboyj          (mID: 00000) M ***
-galpanib           > galpania          (mID: 00000) M ***
-jojoba             > jojoban           (mID: 00000) M ***
-jojobaa            > jojoba            (mID: 00000) M ***
-faxa               > fax2              (mID: 00000) M ***
+4 ren (4/0/0):
+brapboys           > brapboyj          (mID:  4199) M
+galpanib           > galpania          (mID:  1059) M
+jojoba             > jojoban           (mID:  4899) M
+jojobaa            > jojoba            (mID:  4975) M
 1 del (1/0/0):
-galpania                               (mID: 00000) M ***
+galpania                               (mID:  6222) M
 
 
 $0.116u3 [#384]
@@ -10444,7 +10494,7 @@ $0.116u2 [#383]
 4.808 horizontal screen (+4), 1.839 vertical screen, 6.567 raster graphics (+4), 80 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
 99.244 total roms (+63), 99.143 machines roms (+63), 0 devices roms, 101 BIOSes roms, 224 CHDs (+2), 398 sample files, 34 sample packs, 97.982 good dumps (+61), 1.053 no dumps (+1), 433 bad dumps (+3), 4 bugs fixed
 1 ren (1/0/0):
-faxa               > fax2              (mID: 00000) M ***
+faxa               > fax2              (mID:  5091) M
 0 del (0/0/0):
 -
 
@@ -10480,8 +10530,8 @@ $0.115u4 [#380]
 4.804 horizontal screen, 1.838 vertical screen (+1), 6.562 raster graphics (+1), 80 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
 99.172 total roms (+2), 99.072 machines roms (+3), 0 devices roms, 100 BIOSes roms (-1), 222 CHDs, 403 sample files, 35 sample packs, 97.889 good dumps (+2), 1.073 no dumps, 432 bad dumps, 0 bugs fixed
 2 ren (2/0/0):
-tomahaw5           > tomahawk          (mID: 00000) M ***
-tomahawk           > tomahaw1          (mID: 00000) M ***
+tomahaw5           > tomahawk          (mID:   751) M
+tomahawk           > tomahaw1          (mID:   752) M
 0 del (0/0/0):
 -
 
@@ -10493,8 +10543,8 @@ $0.115u3 [#379]
 4.804 horizontal screen (+1), 1.837 vertical screen (+5), 6.561 raster graphics (+6), 80 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
 99.170 total roms (+82), 99.069 machines roms (+82), 0 devices roms, 101 BIOSes roms, 222 CHDs, 403 sample files, 35 sample packs, 97.887 good dumps (+82), 1.073 no dumps, 432 bad dumps, 1 bug fixed
 2 ren (2/0/0):
-tdragon2           > tdragn2a          (mID: 00000) M ***
-unkmeyco           > mdrawpkr          (mID: 00000) M ***
+tdragon2           > tdragn2a          (mID:  2889) M
+unkmeyco           > mdrawpkr          (mID:  5709) M
 0 del (0/0/0):
 -
 
@@ -10518,7 +10568,7 @@ $0.115u1 [#377]
 4.801 horizontal screen (+7), 1.832 vertical screen, 6.553 raster graphics (+7), 80 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
 99.075 total roms (+218), 98.974 machines roms (+217), 0 devices roms, 101 BIOSes roms (+1), 222 CHDs, 403 sample files, 35 sample packs, 97.792 good dumps (+185), 1.073 no dumps (+20), 432 bad dumps (+13), 11 bugs fixed
 1 ren (1/0/0):
-csilver            > csilverj          (mID: 00000) M ***
+csilver            > csilverj          (mID:  1106) M
 0 del (0/0/0):
 -
 
@@ -10542,8 +10592,8 @@ $0.114u4 [#375]
 4.794 horizontal screen (+6), 1.831 vertical screen, 6.545 raster graphics (+6), 80 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
 98.843 total roms (+141), 98.743 machines roms (+141), 0 devices roms, 100 BIOSes roms, 222 CHDs, 403 sample files, 35 sample packs, 97.596 good dumps (+124), 1.054 no dumps (+18), 415 bad dumps (-1), 8 bugs fixed
 2 ren (2/0/0):
-racinfrc           > racinfru          (mID: 00000) M ***
-vp906iii           > gdrawpkr          (mID: 00000) M ***
+racinfrc           > racinfru          (mID:  4361) M
+vp906iii           > gdrawpkr          (mID:  5747) M
 0 del (0/0/0):
 -
 
@@ -10555,7 +10605,7 @@ $0.114u3 [#374]
 4.788 horizontal screen (+3), 1.831 vertical screen, 6.539 raster graphics (+3), 80 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
 98.702 total roms (+53), 98.602 machines roms (+53), 0 devices roms, 100 BIOSes roms, 222 CHDs, 403 sample files, 35 sample packs, 97.472 good dumps (+57), 1.036 no dumps, 416 bad dumps (-4), 5 bugs fixed
 1 ren (1/0/0):
-nwarr              > nwarru            (mID: 00000) M ***
+nwarr              > nwarru            (mID:  3357) M
 0 del (0/0/0):
 -
 
@@ -10567,10 +10617,10 @@ $0.114u2 [#373]
 4.785 horizontal screen (+6), 1.831 vertical screen (+1), 6.536 raster graphics (+7), 80 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
 98.649 total roms (+70), 98.549 machines roms (+70), 0 devices roms, 100 BIOSes roms, 222 CHDs, 403 sample files, 35 sample packs, 97.415 good dumps (+120), 1.036 no dumps, 420 bad dumps (-50), 15 bugs fixed
 4 ren (4/0/0):
-sfex               > sfexu             (mID: 00000) M ***
-soulclbb           > soulclbc          (mID: 00000) M ***
-soulclbc           > soulclbd          (mID: 00000) M ***
-tekken3b           > tekken3c          (mID: 00000) M ***
+sfex               > sfexu             (mID:  4883) M
+soulclbb           > soulclbc          (mID:  5937) M
+soulclbc           > soulclbd          (mID:  4669) M
+tekken3b           > tekken3c          (mID:  5613) M
 0 del (0/0/0):
 -
 
@@ -10594,13 +10644,13 @@ $0.114 [#371]
 4.721 horizontal screen (-5), 1.829 vertical screen (+1), 6.470 raster graphics (-5/+1), 80 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
 97.919 total roms (-33), 97.830 machines roms (-33), 0 devices roms, 89 BIOSes roms, 195 CHDs (-6), 403 sample files, 35 sample packs, 96.937 good dumps (-42), 709 no dumps (+1), 468 bad dumps (+2), 4 bugs fixed
 1 ren (1/0/0):
-bm3rdmxa           > bm3rdmix          (mID: 00000) M ***
+bm3rdmxa           > bm3rdmix          (mID:  6511) M
 5 del (5/0/0):
-bmfinal                                (mID: 00000) M ***
-popn1                                  (mID: 00000) M ***
-popn2                                  (mID: 00000) M ***
-popn3                                  (mID: 00000) M ***
-popnstex                               (mID: 00000) M ***
+bmfinal                                (mID:  6535) M
+popn1                                  (mID: 41761) M
+popn2                                  (mID:  6541) M
+popn3                                  (mID:  6542) M
+popnstex                               (mID:  6543) M
 
 
 $0.113u4 [#370]
@@ -10610,7 +10660,7 @@ $0.113u4 [#370]
 4.726 horizontal screen (+2), 1.828 vertical screen (+1), 6.474 raster graphics (+3), 80 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
 97.952 total roms (+141), 97.863 machines roms (+141), 0 devices roms, 89 BIOSes roms, 201 CHDs, 403 sample files, 35 sample packs, 96.979 good dumps (+140), 708 no dumps (-1), 466 bad dumps (+2), 2 bugs fixed
 1 ren (1/0/0):
-heuksua            > heuksun           (mID: 00000) M ***
+heuksua            > heuksun           (mID:  6556) M
 0 del (0/0/0):
 -
 
@@ -10622,7 +10672,7 @@ $0.113u3 [#369]
 4.724 horizontal screen (+30), 1.827 vertical screen (+1), 6.471 raster graphics (+31), 80 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
 97.811 total roms (+251), 97.722 machines roms (+251), 0 devices roms, 89 BIOSes roms, 201 CHDs (+3), 403 sample files (-1), 35 sample packs, 96.839 good dumps (+238), 709 no dumps (+6), 464 bad dumps (+10), 1 bug
 1 ren (1/0/0):
-pcnfrk3m           > drmn3m            (mID: 00000) M ***
+pcnfrk3m           > drmn3m            (mID:  6525) M
 0 del (0/0/0):
 -
 
@@ -10646,7 +10696,7 @@ $0.113u1 [#367]
 4.682 horizontal screen (+2), 1.825 vertical screen, 6.427 raster graphics (+2), 80 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
 97.369 total roms (+18), 97.280 machines roms (+18), 0 devices roms, 89 BIOSes roms, 189 CHDs, 404 sample files, 35 sample packs, 96.406 good dumps (+15), 700 no dumps, 452 bad dumps (+3), 2 bugs fixed
 1 ren (1/0/0):
-kbm2nd             > kbm               (mID: 00000) M ***
+kbm2nd             > kbm               (mID:  6524) M
 0 del (0/0/0):
 -
 
@@ -10658,8 +10708,8 @@ $0.113 [#366]
 4.680 horizontal screen (+19), 1.825 vertical screen (+2), 6.425 raster graphics (+21), 80 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
 97.351 total roms (+153), 97.262 machines roms (+153), 0 devices roms, 89 BIOSes roms, 189 CHDs (+24), 404 sample files, 35 sample packs, 96.391 good dumps (+107), 700 no dumps (+44), 449 bad dumps (+26), 7 bugs fixed
 2 ren (2/0/0):
-plottina           > plotting          (mID: 00000) M ***
-plotting           > plottina          (mID: 00000) M ***
+plottina           > plotting          (mID:  5322) M
+plotting           > plottina          (mID:  1670) M
 0 ren (0/0/0):
 -
 0 del (0/0/0):
@@ -10685,12 +10735,12 @@ $0.112u3 [#364]
 4.659 horizontal screen (+25), 1.823 vertical screen (+3), 6.402 raster graphics (+28), 80 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
 97.185 total roms (+181), 97.096 machines roms (+181), 0 devices roms, 89 BIOSes roms, 163 CHDs (+23), 404 sample files, 35 sample packs, 96.275 good dumps (+132), 650 no dumps (-1), 423 bad dumps (+73), 3 bugs fixed
 6 ren (6/0/0):
-ddr2nd             > ddr2m             (mID: 00000) M ***
-ddr2ndl            > ddr2ml            (mID: 00000) M ***
-lastblad           > lastbldh          (mID: 00000) M ***
-lastblda           > lastblad          (mID: 00000) M ***
-rbff2              > rbff2h            (mID: 00000) M ***
-rbff2a             > rbff2             (mID: 00000) M ***
+ddr2nd             > ddr2m             (mID:  6314) M
+ddr2ndl            > ddr2ml            (mID:  6315) M
+lastblad           > lastbldh          (mID:  1013) M
+lastblda           > lastblad          (mID: 44986) M
+rbff2              > rbff2h            (mID:  1128) M
+rbff2a             > rbff2             (mID:  3923) M
 0 del (0/0/0):
 -
 
@@ -10738,9 +10788,9 @@ $0.111u6 [#360]
 4.608 horizontal screen (+4), 1.817 vertical screen, 6.345 raster graphics (+4), 80 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
 96.637 total roms (+5), 96.550 machines roms (+5), 0 devices roms, 87 BIOSes roms, 134 CHDs, 406 sample files, 37 sample packs, 95.745 good dumps (+7), 675 no dumps (-1), 351 bad dumps (-1), 0 bugs fixed
 3 ren (3/0/0):
-batwings           > bwings            (mID: 00000) M ***
-bwing              > bwingso           (mID: 00000) M ***
-bwings             > bwingsa           (mID: 00000) M ***
+batwings           > bwings            (mID:  3861) M
+bwing              > bwingso           (mID:  3862) M
+bwings             > bwingsa           (mID:  3860) M
 0 del (0/0/0):
 -
 
@@ -10764,8 +10814,8 @@ $0.111u4 [#358]
 4.597 horizontal screen (+12), 1.817 vertical screen (+5), 6.334 raster graphics (+17), 80 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
 97.011 total roms (+115), 96.924 machines roms (+115), 0 devices roms, 87 BIOSes roms, 129 CHDs (+16), 435 sample files (-11), 38 sample packs, 95.968 good dumps (+106), 819 no dumps (+21), 353 bad dumps (+4), 4 bugs fixed
 2 ren (2/0/0):
-einnings           > einning           (mID: 00000) M ***
-semiquiz           > dquizgo           (mID: 00000) M ***
+einnings           > einning           (mID:   652) M
+semiquiz           > dquizgo           (mID:  6430) M
 0 del (0/0/0):
 -
 
@@ -10777,7 +10827,7 @@ $0.111u3 [#357]
 4.585 horizontal screen (+6), 1.812 vertical screen (+2), 6.317 raster graphics (+8), 80 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
 96.896 total roms (+127), 96.809 machines roms (+127), 0 devices roms, 87 BIOSes roms, 113 CHDs (-9), 446 sample files, 38 sample packs, 95.862 good dumps (+116), 798 no dumps (+2), 349 bad dumps, 0 bugs fixed
 1 ren (1/0/0):
-gpan2qiz           > galpan2j          (mID: 00000) M ***
+gpan2qiz           > galpan2j          (mID:  4973) M
 0 del (0/0/0):
 -
 
@@ -10789,7 +10839,7 @@ $0.111u2 [#356]
 4.579 horizontal screen (+16), 1.810 vertical screen, 6.309 raster graphics (+16), 80 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
 96.769 total roms (+149), 96.682 machines roms (+149), 0 devices roms, 87 BIOSes roms, 122 CHDs, 446 sample files, 38 sample packs, 95.746 good dumps (+147), 796 no dumps (+2), 349 bad dumps, 1 bug fixed
 1 ren (1/0/0):
-tokij              > juju              (mID: 00000) M ***
+tokij              > juju              (mID:  1286) M
 0 del (0/0/0):
 -
 
@@ -10801,9 +10851,9 @@ $0.111u1 [#355]
 4.563 horizontal screen (+24), 1.810 vertical screen (+5), 6.293 raster graphics (+29), 80 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
 96.620 total roms (+273), 96.533 machines roms (+273), 0 devices roms, 87 BIOSes roms, 122 CHDs (+1), 446 sample files (+4), 38 sample packs (+1), 95.599 good dumps (+261), 794 no dumps (+12), 349 bad dumps (+1), 12 bugs fixed
 3 ren (3/0/0):
-rckmanj            > rmancp2j          (mID: 00000) M ***
-rtype              > rtypej            (mID: 00000) M ***
-rtypepj            > rtypejp           (mID: 00000) M ***
+rckmanj            > rmancp2j          (mID:  4778) M
+rtype              > rtypej            (mID:  2077) M
+rtypepj            > rtypejp           (mID:  1750) M
 0 del (0/0/0):
 -
 
@@ -10815,9 +10865,9 @@ $0.111 [#354]
 4.539 horizontal screen, 1.805 vertical screen, 6.264 raster graphics, 80 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
 96.347 total roms, 96.260 machines roms, 0 devices roms, 87 BIOSes roms, 121 CHDs, 442 sample files, 37 sample packs, 95.338 good dumps, 782 no dumps, 348 bad dumps, 1 bug fixed
 3 ren (3/0/0):
-maddog             > maddog2           (mID: 00000) M ***
-maddog2            > maddog22          (mID: 00000) M ***
-maddog23           > maddog            (mID: 00000) M ***
+maddog             > maddog2           (mID:  6357) M
+maddog2            > maddog22          (mID:  6358) M
+maddog23           > maddog            (mID:  6360) M
 0 del (0/0/0):
 -
 
@@ -10829,7 +10879,7 @@ $0.110u5 [#353]
 4.539 horizontal screen (+22), 1.805 vertical screen (+3), 6.264 raster graphics (+25), 80 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
 96.347 total roms (+117), 96.260 machines roms (+116), 0 devices roms, 87 BIOSes roms (+1), 121 CHDs (+3), 442 sample files, 37 sample packs, 95.338 good dumps (+105), 782 no dumps (+13), 348 bad dumps (+2), 5 bugs fixed
 1 ren (1/0/0):
-phoenixa           > phoenixb          (mID: 00000) M ***
+phoenixa           > phoenixb          (mID:  1889) M
 0 del (0/0/0):
 -
 
@@ -10853,7 +10903,7 @@ $0.110u3 [#351] [Added support for split CHD]
 4.511 horizontal screen (+3), 1.802 vertical screen, 6.233 raster graphics (+3), 80 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
 96.209 total roms (+68), 96.123 machines roms (+68), 0 devices roms, 86 BIOSes roms, 117 CHDs (+7), 442 sample files, 37 sample packs, 95.219 good dumps (+61), 761 no dumps (+14), 346 bad dumps, 1 bug fixed
 1 ren (1/0/0):
-bionicc            > bionicc1          (mID: 00000) M ***
+bionicc            > bionicc1          (mID:   641) M
 0 del (0/0/0):
 -
 
@@ -10901,7 +10951,7 @@ $0.109u5 [#347]
 4.482 horizontal screen (+5), 1.797 vertical screen (+1), 6.199 raster graphics (+6), 80 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
 95.969 total roms (+39), 95.883 machines roms (+39), 0 devices roms, 86 BIOSes roms, 90 CHDs, 442 sample files, 37 sample packs, 95.000 good dumps (+39), 745 no dumps, 314 bad dumps, 1 bug fixed
 1 ren (1/0/0):
-spacbatt           > spacbat2          (mID: 00000) M ***
+spacbatt           > spacbat2          (mID:  1135) M
 0 del (0/0/0):
 -
 
@@ -10937,8 +10987,8 @@ $0.109u2 [#344]
 4.474 horizontal screen (+4), 1.792 vertical screen (+2), 6.186 raster graphics (+6), 80 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
 95.882 total roms (+42), 95.797 machines roms (+42), 0 devices roms, 85 BIOSes roms, 86 CHDs, 442 sample files, 37 sample packs, 94.919 good dumps (+44), 745 no dumps (+1), 304 bad dumps (-3), 1 bug fixed
 2 ren (2/0/0):
-donpachj           > donpacjp          (mID: 00000) M ***
-donpachk           > donpackr          (mID: 00000) M ***
+donpachj           > donpacjp          (mID:  2368) M
+donpachk           > donpackr          (mID:  3195) M
 0 del (0/0/0):
 -
 
@@ -10950,7 +11000,7 @@ $0.109u1 [#343]
 4.470 horizontal screen (+6), 1.790 vertical screen (+1), 6.180 raster graphics (+7), 80 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
 95.840 total roms (+88), 95.755 machines roms (+88), 0 devices roms, 85 BIOSes roms, 86 CHDs, 442 sample files (+9), 37 sample packs (+1), 94.875 good dumps (+88), 744 no dumps (+1), 307 bad dumps (-1), 11 bugs fixed
 1 ren (1/0/0):
-twinbrat           > twinbrta          (mID: 00000) M ***
+twinbrat           > twinbrta          (mID:  5258) M
 0 del (0/0/0):
 -
 
@@ -10974,13 +11024,13 @@ $0.108u5 [#341]
 4.464 horizontal screen (+9), 1.787 vertical screen (+2), 6.171 raster graphics (+11), 80 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
 95.732 total roms (+201), 95.647 machines roms (+201), 0 devices roms, 85 BIOSes roms, 86 CHDs, 433 sample files, 36 sample packs, 94.767 good dumps (+202), 743 no dumps (-2), 308 bad dumps (+1), 1 bug fixed
 7 ren (7/0/0):
-bigboy             > goldnpkr          (mID: 00000) M ***
-finalapr           > finalapb          (mID: 00000) M ***
-pdrifta            > pdrifte           (mID: 00000) M ***
-sassisu            > sasissu           (mID: 00000) M ***
-vsyard             > vs10yard          (mID: 00000) M ***
-vsyard2            > vs10yarj          (mID: 00000) M ***
-yard               > 10yardj           (mID: 00000) M ***
+bigboy             > goldnpkr          (mID:  6255) M
+finalapr           > finalapb          (mID:  4939) M
+pdrifta            > pdrifte           (mID:  6116) M
+sassisu            > sasissu           (mID:  4381) M
+vsyard             > vs10yard          (mID:   346) M
+vsyard2            > vs10yarj          (mID:  1140) M
+yard               > 10yardj           (mID:   167) M
 0 del (0/0/0):
 -
 
@@ -10992,8 +11042,8 @@ $0.108u4 [#340]
 4.455 horizontal screen (+4), 1.785 vertical screen (+4), 6.160 raster graphics (+8), 80 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
 95.531 total roms (+113), 95.446 machines roms (+113), 0 devices roms, 85 BIOSes roms, 86 CHDs, 433 sample files, 36 sample packs, 94.565 good dumps (+111), 745 no dumps, 307 bad dumps (+2), 4 bugs fixed
 2 ren (2/0/0):
-arkatayt           > arktayt2          (mID: 00000) M ***
-lockload           > locklodu          (mID: 00000) M ***
+arkatayt           > arktayt2          (mID:   350) M
+lockload           > locklodu          (mID:  3833) M
 0 del (0/0/0):
 -
 
@@ -11005,11 +11055,11 @@ $0.108u3 [#339]
 4.451 horizontal screen (+5), 1.781 vertical screen (+1), 6.152 raster graphics (+6), 80 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
 95.418 total roms (+54), 95.333 machines roms (+54), 0 devices roms, 85 BIOSes roms, 86 CHDs, 433 sample files, 36 sample packs, 94.454 good dumps (+53), 745 no dumps (+4), 305 bad dumps (-3), 0 bugs fixed
 5 ren (5/0/0):
-arkbl2             > arkmcubl          (mID: 00000) M ***
-arkbl3             > arkgcbl           (mID: 00000) M ***
-arkbloc2           > arkblock          (mID: 00000) M ***
-arkblock           > arkbloc2          (mID: 00000) M ***
-solomon            > solomonj          (mID: 00000) M ***
+arkbl2             > arkmcubl          (mID:   349) M
+arkbl3             > arkgcbl           (mID:  3317) M
+arkbloc2           > arkblock          (mID:  1644) M
+arkblock           > arkbloc2          (mID:  3316) M
+solomon            > solomonj          (mID:   623) M
 0 del (0/0/0):
 -
 
@@ -11045,7 +11095,7 @@ $0.108 [#336]
 4.438 horizontal screen (+4), 1.778 vertical screen (+1), 6.136 raster graphics (+5), 80 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
 95.261 total roms (+65), 95.176 machines roms (+65), 0 devices roms, 85 BIOSes roms, 86 CHDs, 433 sample files (+11), 36 sample packs (+1), 94.296 good dumps (+64), 747 no dumps, 304 bad dumps (+1), 1 bug fixed
 1 ren (1/0/0):
-tmnt22p            > tmnt22pu          (mID: 00000) M ***
+tmnt22p            > tmnt22pu          (mID:  1595) M
 0 del (0/0/0):
 -
 
@@ -11057,8 +11107,8 @@ $0.107u4 [#335]
 4.434 horizontal screen (+4), 1.777 vertical screen, 6.131 raster graphics (+3), 80 vector graphics (+1), 0 lcd graphics, 0 svg graphics, 0 screenless
 95.196 total roms (+53), 95.111 machines roms (+53), 0 devices roms, 85 BIOSes roms, 86 CHDs, 422 sample files, 35 sample packs, 94.232 good dumps (+56), 747 no dumps (-2), 303 bad dumps (-1), 4 bugs fixed
 2 ren (2/0/0):
-astdelu1           > astdelu2          (mID: 00000) M ***
-f15se              > f15se21           (mID: 00000) M ***
+astdelu1           > astdelu2          (mID:  1102) M
+f15se              > f15se21           (mID:  4812) M
 0 del (0/0/0):
 -
 
@@ -11070,10 +11120,10 @@ $0.107u3 [#334]
 4.430 horizontal screen (+5), 1.777 vertical screen (+5), 6.128 raster graphics (+10), 79 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
 95.143 total roms (+173), 95.058 machines roms (+173), 0 devices roms, 85 BIOSes roms, 86 CHDs, 422 sample files, 35 sample packs, 94.176 good dumps (+171), 749 no dumps, 304 bad dumps (+2), 3 bugs fixed
 4 ren (4/0/0):
-armchmp2           > armchm2o          (mID: 00000) M ***
-sb2003             > sb2003a           (mID: 00000) M ***
-spaceod            > spaceod2          (mID: 00000) M ***
-vsnetscr           > vsnetscu          (mID: 00000) M ***
+armchmp2           > armchm2o          (mID:  5981) M
+sb2003             > sb2003a           (mID:  6212) M
+spaceod            > spaceod2          (mID:   331) M
+vsnetscr           > vsnetscu          (mID:  4466) M
 0 del (0/0/0):
 -
 
@@ -11085,15 +11135,15 @@ $0.107u2 [#333]
 4.425 horizontal screen (+1), 1.772 vertical screen (+2), 6.118 raster graphics (+3), 79 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
 94.970 total roms (+56), 94.885 machines roms (+56), 0 devices roms, 85 BIOSes roms, 86 CHDs, 422 sample files, 35 sample packs, 94.005 good dumps (+56), 749 no dumps (-1), 302 bad dumps (+1), 3 bugs fixed
 9 ren (9/0/0):
-galpani2           > galpan2t          (mID: 00000) M ***
-quartet2           > quart21           (mID: 00000) M ***
-quartetj           > quartet1          (mID: 00000) M ***
-quartt2j           > quart2            (mID: 00000) M ***
-sharrirb           > sharrir1          (mID: 00000) M ***
-thndrbdj           > thndrbd1          (mID: 00000) M ***
-viprp1             > viprp1j           (mID: 00000) M ***
-vstriker           > vstrikro          (mID: 00000) M ***
-vstrikra           > vstriker          (mID: 00000) M ***
+galpani2           > galpan2t          (mID:  4275) M
+quartet2           > quart21           (mID:   829) M
+quartetj           > quartet1          (mID:  1963) M
+quartt2j           > quart2            (mID:  3982) M
+sharrirb           > sharrir1          (mID:  1579) M
+thndrbdj           > thndrbd1          (mID:  4438) M
+viprp1             > viprp1j           (mID:  4884) M
+vstriker           > vstrikro          (mID:  5214) M
+vstrikra           > vstriker          (mID:  5214) M
 0 del (0/0/0):
 -
 
@@ -11153,8 +11203,8 @@ $0.106u11 [#328]
 4.402 horizontal screen (+4), 1.765 vertical screen, 6.089 raster graphics (+4), 78 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
 93.938 total roms (+51), 93.853 machines roms (+51), 0 devices roms, 85 BIOSes roms, 86 CHDs, 422 sample files, 35 sample packs, 93.179 good dumps (+50), 548 no dumps (+1), 297 bad dumps, 1 bug fixed
 2 ren (2/0/0):
-emeralda           > emeraldj          (mID: 00000) M ***
-emerldaa           > emerldja          (mID: 00000) M ***
+emeralda           > emeraldj          (mID:  2695) M
+emerldaa           > emerldja          (mID:  3330) M
 0 del (0/0/0):
 -
 
@@ -11166,7 +11216,7 @@ $0.106u10 [#327]
 4.398 horizontal screen (+2), 1.765 vertical screen, 6.085 raster graphics (+2), 78 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
 93.887 total roms (+46), 93.802 machines roms (+46), 0 devices roms, 85 BIOSes roms, 86 CHDs, 422 sample files, 35 sample packs, 93.129 good dumps (+44), 547 no dumps (+2), 297 bad dumps, 2 bugs fixed
 1 ren (1/0/0):
-crusnwld           > crusnw23          (mID: 00000) M ***
+crusnwld           > crusnw23          (mID:  3510) M
 0 del (0/0/0):
 -
 
@@ -11214,7 +11264,7 @@ $0.106u6 [#323]
 4.396 horizontal screen (+6), 1.765 vertical screen (+6), 6.083 raster graphics (+11), 78 vector graphics (+1), 0 lcd graphics, 0 svg graphics, 0 screenless
 93.832 total roms (+136), 93.747 machines roms (+136), 0 devices roms, 85 BIOSes roms, 86 CHDs, 422 sample files, 35 sample packs, 93.085 good dumps (+109), 536 no dumps (+23), 297 bad dumps (+4), 1 bug fixed
 1 ren (1/0/0):
-dblpoint           > dblpoind          (mID: 00000) M ***
+dblpoint           > dblpoind          (mID:  5000) M
 0 del (0/0/0):
 -
 
@@ -11250,7 +11300,7 @@ $0.106u3 [#320]
 4.389 horizontal screen (+2), 1.759 vertical screen (+1), 6.071 raster graphics (+3), 77 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
 93.676 total roms (+43), 93.591 machines roms (+43), 0 devices roms, 85 BIOSes roms, 86 CHDs, 422 sample files, 35 sample packs, 92.958 good dumps (+33), 509 no dumps (+5), 295 bad dumps (+5), 1 bug fixed
 1 ren (1/0/0):
-turtship           > turtshij          (mID: 00000) M ***
+turtship           > turtshij          (mID:  6175) M
 0 del (0/0/0):
 -
 
@@ -11300,7 +11350,7 @@ $0.105u5 [#316]
 0 ren (0/0/0):
 -
 1 del (1/0/0):
-ddp3                                   (mID: 00000) M ***
+ddp3                                   (mID:  9064) M
 
 
 $0.105u4 [#315]
@@ -11310,8 +11360,8 @@ $0.105u4 [#315]
 4.375 horizontal screen (+8), 1.757 vertical screen, 6.055 raster graphics (+8), 77 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
 93.496 total roms (+299), 93.411 machines roms (+299), 0 devices roms, 85 BIOSes roms, 86 CHDs, 422 sample files, 35 sample packs, 92.798 good dumps (+291), 494 no dumps (+8), 290 bad dumps, 3 bugs fixed
 2 ren (2/0/0):
-espial             > espialu           (mID: 00000) M ***
-espiale            > espial            (mID: 00000) M ***
+espial             > espialu           (mID:   208) M
+espiale            > espial            (mID:   382) M
 0 del (0/0/0):
 -
 
@@ -11334,8 +11384,8 @@ $0.105u2 [#313]
 5.429 working (+7), 687 not working (+6), 0 mechanicals, 6.116 not mechanicals (+13), 624 save supported (+2), 5.492 save unsupported (+11)
 4.362 horizontal screen (+11), 1.754 vertical screen (+2), 6.039 raster graphics (+13), 77 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
 92.915 total roms (+156), 92.830 machines roms (+156), 0 devices roms, 85 BIOSes roms, 86 CHDs, 422 sample files, 35 sample packs, 92.410 good dumps (+166), 295 no dumps (-12), 296 bad dumps (+2), 2 bugs fixed
-1 ren (1/0/0):
-evilngt            > btltryst          (mID: 00000) M ***
+0 ren (0/0/0):
+-
 0 del (0/0/0):
 -
 
@@ -11347,8 +11397,8 @@ $0.105u1 [#312]
 4.351 horizontal screen (+7), 1.752 vertical screen, 6.026 raster graphics (+7), 77 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
 92.759 total roms (+96), 92.674 machines roms (+96), 0 devices roms, 85 BIOSes roms, 86 CHDs, 422 sample files, 35 sample packs, 92.244 good dumps (+83), 307 no dumps (+10), 294 bad dumps (+3), 1 bug fixed
 2 ren (2/0/0):
-fghthist           > fghthstu          (mID: 00000) M ***
-fghthstw           > fghthist          (mID: 00000) M ***
+fghthist           > fghthstu          (mID:  4265) M
+fghthstw           > fghthist          (mID:  4263) M
 0 del (0/0/0):
 -
 
@@ -11372,8 +11422,8 @@ $0.104u9 [#310]
 4.344 horizontal screen (+13), 1.752 vertical screen (+2), 6.019 raster graphics (+15), 77 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
 92.567 total roms (+222), 92.484 machines roms (+222), 0 devices roms, 83 BIOSes roms, 86 CHDs (+3), 422 sample files, 35 sample packs, 92.067 good dumps (+224), 297 no dumps (+1), 289 bad dumps, 4 bugs fixed
 2 ren (2/0/0):
-tappyrap           > toppyrap          (mID: 00000) M ***
-uopoko             > uopokoj           (mID: 00000) M ***
+tappyrap           > toppyrap          (mID:  6107) M
+uopoko             > uopokoj           (mID:  2117) M
 0 del (0/0/0):
 -
 
@@ -11385,8 +11435,8 @@ $0.104u8 [#309]
 4.331 horizontal screen (+11), 1.750 vertical screen (+3), 6.004 raster graphics (+14), 77 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
 92.345 total roms (+174), 92.262 machines roms (+174), 0 devices roms, 83 BIOSes roms, 83 CHDs, 422 sample files, 35 sample packs, 91.843 good dumps (+174), 296 no dumps (+3), 289 bad dumps (-3), 8 bugs fixed
 2 ren (2/0/0):
-orunners           > orunneru          (mID: 00000) M ***
-raveracj           > raveraja          (mID: 00000) M ***
+orunners           > orunneru          (mID:  3840) M
+raveracj           > raveraja          (mID:  5652) M
 0 del (0/0/0):
 -
 
@@ -11398,8 +11448,8 @@ $0.104u7 [#308]
 4.320 horizontal screen (+2), 1.747 vertical screen (+1), 5.990 raster graphics (+3), 77 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
 92.171 total roms (+86), 92.088 machines roms (+86), 0 devices roms, 83 BIOSes roms, 83 CHDs, 422 sample files, 35 sample packs, 91.669 good dumps (+84), 293 no dumps (+2), 292 bad dumps, 10 bugs fixed
 2 ren (2/0/0):
-circusc2           > circusc3          (mID: 00000) M ***
-tx1                > tx1a              (mID: 00000) M ***
+circusc2           > circusc3          (mID:   277) M
+tx1                > tx1a              (mID:  5579) M
 0 del (0/0/0):
 -
 
@@ -11411,8 +11461,8 @@ $0.104u6 [#307]
 4.318 horizontal screen (+4), 1.746 vertical screen, 5.987 raster graphics (+4), 77 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
 92.085 total roms (+78), 92.002 machines roms (+78), 0 devices roms, 83 BIOSes roms, 83 CHDs, 422 sample files, 35 sample packs, 91.585 good dumps (+78), 291 no dumps, 292 bad dumps, 5 bugs fixed
 2 ren (2/0/0):
-multchmp           > multchmk          (mID: 00000) M ***
-sdib               > sdibl             (mID: 00000) M ***
+multchmp           > multchmk          (mID:  2982) M
+sdib               > sdibl             (mID:   831) M
 0 del (0/0/0):
 -
 
@@ -11424,14 +11474,14 @@ $0.104u5 [#306]
 4.314 horizontal screen (+15), 1.746 vertical screen (+2), 5.983 raster graphics (+17), 77 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
 92.007 total roms (+237), 91.924 machines roms (+237), 0 devices roms, 83 BIOSes roms, 83 CHDs, 422 sample files, 35 sample packs, 91.507 good dumps (+218), 291 no dumps (+21), 292 bad dumps (-2), 12 bugs fixed
 8 ren (8/0/0):
-alienar            > alienaru          (mID: 00000) M ***
-outzone            > outzonea          (mID: 00000) M ***
-outzonea           > outzoneb          (mID: 00000) M ***
-outzoneb           > outzonec          (mID: 00000) M ***
-ptblank2           > ptblnk2a          (mID: 00000) M ***
-soulclba           > soulclbb          (mID: 00000) M ***
-soulclbb           > soulclbc          (mID: 00000) M ***
-tekken3a           > tekken3b          (mID: 00000) M ***
+alienar            > alienaru          (mID:  6028) M
+outzone            > outzonea          (mID:  1822) M
+outzonea           > outzoneb          (mID:  1371) M
+outzoneb           > outzonec          (mID:  5960) M
+ptblank2           > ptblnk2a          (mID:  5521) M
+soulclba           > soulclbb          (mID:  5937) M
+soulclbb           > soulclbc          (mID:  4669) M
+tekken3a           > tekken3b          (mID:  5613) M
 0 del (0/0/0):
 -
 
@@ -11443,7 +11493,7 @@ $0.104u4 [#305]
 4.299 horizontal screen (+9), 1.744 vertical screen, 5.966 raster graphics (+9), 77 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
 91.770 total roms (+88), 91.687 machines roms (+88), 0 devices roms, 83 BIOSes roms, 83 CHDs, 422 sample files, 35 sample packs, 91.289 good dumps (+88), 270 no dumps, 294 bad dumps, 7 bugs fixed
 1 ren (1/0/0):
-dbreed             > dbreed72          (mID: 00000) M ***
+dbreed             > dbreed72          (mID:  1769) M
 0 del (0/0/0):
 -
 
@@ -11455,7 +11505,7 @@ $0.104u3 [#304]
 4.290 horizontal screen (+2), 1.744 vertical screen (+1), 5.957 raster graphics (+3), 77 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
 91.682 total roms (+40), 91.599 machines roms (+40), 0 devices roms, 83 BIOSes roms, 83 CHDs, 422 sample files, 35 sample packs, 91.201 good dumps (+39), 270 no dumps (+1), 294 bad dumps, 6 bugs fixed
 1 ren (1/0/0):
-tokio              > tokiou            (mID: 00000) M ***
+tokio              > tokiou            (mID:   839) M
 0 del (0/0/0):
 -
 
@@ -11467,11 +11517,11 @@ $0.104u2 [#303]
 4.288 horizontal screen (+1), 1.743 vertical screen (+1), 5.954 raster graphics (+2), 77 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
 91.642 total roms (+37), 91.559 machines roms (+37), 0 devices roms, 83 BIOSes roms, 83 CHDs, 422 sample files, 35 sample packs, 91.162 good dumps (+68), 269 no dumps (-22), 294 bad dumps (-9), 3 bugs fixed
 5 ren (5/0/0):
-dbldyn             > dbldynf           (mID: 00000) M ***
-dbldynj            > dbldyn            (mID: 00000) M ***
-dynduke            > dyndukf           (mID: 00000) M ***
-dyndukj            > dynduke           (mID: 00000) M ***
-sharrier           > sharrirb          (mID: 00000) M ***
+dbldyn             > dbldynf           (mID:  1864) M
+dbldynj            > dbldyn            (mID:  5946) M
+dynduke            > dyndukf           (mID:  1869) M
+dyndukj            > dynduke           (mID:  5948) M
+sharrier           > sharrirb          (mID:  1579) M
 0 del (0/0/0):
 -
 
@@ -11495,30 +11545,30 @@ $0.104 [#301]
 4.282 horizontal screen (+3), 1.742 vertical screen (+5), 5.947 raster graphics (+8), 77 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
 91.466 total roms (+102), 91.383 machines roms (+102), 0 devices roms, 83 BIOSes roms, 83 CHDs, 422 sample files, 35 sample packs, 90.979 good dumps (+98), 267 no dumps, 303 bad dumps (+4), 1 bug fixed
 5 ren (5/0/0):
-block              > blockjoy          (mID: 00000) M ***
-blocka             > block             (mID: 00000) M ***
-thepit             > thepitc           (mID: 00000) M ***
-trvwhiz            > trvwhzho          (mID: 00000) M ***
-trvwhza	           > trvwhzha          (mID: 00000) M ***
+block              > blockjoy          (mID:  2859) M
+blocka             > block             (mID:  1146) M
+thepit             > thepitc           (mID:   458) M
+trvwhiz            > trvwhzho          (mID:  5100) M
+trvwhza            > trvwhzha          (mID:  5736) M
 0 del (0/0/0):
 -
 
 
 $0.103u5 [#300]
 2006/02/02
-6.042 total items, 856 drivers, 6.016 machines (-1/+11), 3.265 parents, 2.751 clones (-1/+11), 26 BIOSes, 0 devices, 83 requires CHDs, 164 use samples, 3.523 audio mono (-1), 2.243 audio stereo (-1/+12), 8 audio multichannel, 242 no audio
-5.337 working (-1/+7), 679 not working (+4), 0 mechanicals, 6.016 not mechanicals (-1/+11), 355 save supported (-1), 5.661 save unsupported (-1/+12)
-4.279 horizontal screen (-1/+10), 1.737 vertical screen (+1), 5.939 raster graphics (-1/+11), 77 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
+6.042 total items, 856 drivers, 6.016 machines (-2/+12), 3.265 parents, 2.751 clones (-2/+12), 26 BIOSes, 0 devices, 83 requires CHDs, 164 use samples, 3.523 audio mono (-2), 2.243 audio stereo (-1/+12), 8 audio multichannel, 242 no audio
+5.337 working (-2/+8), 679 not working (+4), 0 mechanicals, 6.016 not mechanicals (-2/+12), 355 save supported (-1), 5.661 save unsupported (-2/+12)
+4.279 horizontal screen (-2/+11), 1.737 vertical screen (+1), 5.939 raster graphics (-2/+12), 77 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
 91.364 total roms (+256), 91.281 machines roms (+256), 0 devices roms, 83 BIOSes roms, 83 CHDs, 422 sample files, 35 sample packs, 90.881 good dumps (+256), 267 no dumps, 299 bad dumps, 1 bug fixed
-6 ren (6/0/0):
-joustg             > joust             (mID: 00000) M ***
-rockn2b            > rockn2            (mID: 00000) M ***
-rockn3b            > rockn3            (mID: 00000) M ***
-rockn4b            > rockn4            (mID: 00000) M ***
-rocknb             > rockna            (mID: 00000) M ***
-rocknmsb           > rocknms           (mID: 00000) M ***
-1 del (1/0/0):
-svcpcbj                                (mID: 00000) M ***
+5 ren (5/0/0):
+rockn2b            > rockn2            (mID:  5998) M
+rockn3b            > rockn3            (mID:  5999) M
+rockn4b            > rockn4            (mID:  6000) M
+rocknb             > rockna            (mID:  6001) M
+rocknmsb           > rocknms           (mID:  6002) M
+2 del (2/0/0):
+joustg                                 (mID: 48860) M
+svcpcbj                                (mID:  6027) M
 
 
 $0.103u4 [#299]
@@ -11528,7 +11578,7 @@ $0.103u4 [#299]
 4.270 horizontal screen (+4), 1.736 vertical screen (+2), 5.929 raster graphics (+6), 77 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
 91.108 total roms (+73), 91.025 machines roms (+73), 0 devices roms, 83 BIOSes roms, 83 CHDs, 422 sample files, 35 sample packs, 90.625 good dumps (+72), 267 no dumps (-2), 299 bad dumps (+3), 1 bug fixed
 1 ren (1/0/0):
-catnmous           > catmousa          (mID: 00000) M ***
+catnmous           > catmousa          (mID:  5812) M
 0 del (0/0/0):
 -
 
@@ -11540,7 +11590,7 @@ $0.103u3 [#298]
 4.266 horizontal screen (+7), 1.734 vertical screen, 5.923 raster graphics (+7), 77 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
 91.035 total roms (+147), 90.952 machines roms (+147), 0 devices roms, 83 BIOSes roms, 83 CHDs, 422 sample files, 35 sample packs, 90.553 good dumps (+149), 269 no dumps (-6), 296 bad dumps (+4), 0 bugs fixed
 1 ren (1/0/0):
-sf2049te           > sf2049            (mID: 00000) M ***
+sf2049te           > sf2049            (mID:  5465) M
 0 del (0/0/0):
 -
 
@@ -11552,8 +11602,8 @@ $0.103u2 [#297]
 4.259 horizontal screen (+35), 1.734 vertical screen (+6), 5.916 raster graphics (+41), 77 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
 90.888 total roms (+626), 90.805 machines roms (+625), 0 devices roms, 83 BIOSes roms (+1), 83 CHDs, 422 sample files, 35 sample packs, 90.404 good dumps (+623), 275 no dumps (+3), 292 bad dumps, 5 bugs fixed
 2 ren (2/0/0):
-kf2k2pa            > kf2k2pla          (mID: 00000) M ***
-mgcrystl           > mgcrysto          (mID: 00000) M ***
+kf2k2pa            > kf2k2pla          (mID:  5954) M
+mgcrystl           > mgcrysto          (mID:  3298) M
 0 del (0/0/0):
 -
 
@@ -11565,7 +11615,7 @@ $0.103u1 [#296]
 4.224 horizontal screen (+7), 1.728 vertical screen (+2), 5.875 raster graphics (+9), 77 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
 90.262 total roms (+122), 90.180 machines roms (+122), 0 devices roms, 82 BIOSes roms, 83 CHDs, 422 sample files, 35 sample packs, 89.781 good dumps (+126), 272 no dumps (+1), 292 bad dumps (-5), 1 bug fixed
 1 ren (1/0/0):
-tstrike	           > tstrikea          (mID: 00000) M ***
+tstrike            > tstrikea          (mID:  4453) M
 0 del (0/0/0):
 -
 
@@ -11577,10 +11627,10 @@ $0.103 [#295]
 4.217 horizontal screen (+22), 1.726 vertical screen (+6), 5.866 raster graphics (+28), 77 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
 90.140 total roms (+473), 90.058 machines roms (+473), 0 devices roms, 82 BIOSes roms, 83 CHDs, 422 sample files, 35 sample packs, 89.655 good dumps (+462), 271 no dumps (+8), 297 bad dumps (+3), 1 bug fixed
 4 ren (4/0/0):
-powerina           > powerinb          (mID: 00000) M ***
-powerinj           > powernjb          (mID: 00000) M ***
-powerins           > powerina          (mID: 00000) M ***
-swcourt            > swcourtj          (mID: 00000) M ***
+powerina           > powerinb          (mID:  4698) M
+powerinj           > powernjb          (mID:  5963) M
+powerins           > powerina          (mID:  2146) M
+swcourt            > swcourtj          (mID:  2886) M
 0 del (0/0/0):
 -
 
@@ -11592,9 +11642,9 @@ $0.102u5 [#294]
 4.195 horizontal screen (+19), 1.720 vertical screen (+3), 5.838 raster graphics (+22), 77 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
 89.667 total roms (+303), 89.585 machines roms (+303), 0 devices roms, 82 BIOSes roms, 83 CHDs (+4), 422 sample files, 35 sample packs, 89.193 good dumps (+301), 263 no dumps (+4), 294 bad dumps (+2), 15 bugs fixed
 3 ren (3/0/0):
-sfru2049           > sf2049te          (mID: 00000) M ***
-soulclba           > soulclbb          (mID: 00000) M ***
-tekkentt           > tektagt           (mID: 00000) M ***
+sfru2049           > sf2049            (mID:  5936) M
+soulclba           > soulclbb          (mID:  4669) M
+tekkentt           > tektagt           (mID:  4672) M
 0 del (0/0/0):
 -
 
@@ -11606,13 +11656,13 @@ $0.102u4 [#293]
 4.176 horizontal screen (+10), 1.717 vertical screen (+1), 5.816 raster graphics (+11), 77 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
 89.364 total roms (+140), 89.282 machines roms (+140), 0 devices roms, 82 BIOSes roms, 79 CHDs (+1), 422 sample files, 35 sample packs, 88.892 good dumps (+143), 259 no dumps (-2), 292 bad dumps, 0 bugs fixed
 7 ren (7/0/0):
-arabfgt	           > arabfgtu          (mID: 00000) M ***
-jollycdb           > jolycdcr          (mID: 00000) M ***
-jollycdc           > jolycdit          (mID: 00000) M ***
-jollycdd           > jolycdat          (mID: 00000) M ***
-jollycde           > jolycdab          (mID: 00000) M ***
-mace               > macea             (mID: 00000) M ***
-mchampdx           > mchampda          (mID: 00000) M ***
+arabfgt            > arabfgtu          (mID:  3619) M
+jollycdb           > jolycdcr          (mID:  5806) M
+jollycdc           > jolycdit          (mID:  5807) M
+jollycdd           > jolycdat          (mID: 48858) M
+jollycde           > jolycdab          (mID:  5830) M
+mace               > macea             (mID:  4658) M
+mchampdx           > mchampda          (mID:  5671) M
 0 del (0/0/0):
 -
 
@@ -11624,10 +11674,10 @@ $0.102u3 [#292]
 4.166 horizontal screen (+10), 1.716 vertical screen (+1), 5.805 raster graphics (+11), 77 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
 89.224 total roms (+243), 89.142 machines roms (+242), 0 devices roms, 82 BIOSes roms (+1), 78 CHDs, 422 sample files, 35 sample packs, 88.749 good dumps (+246), 261 no dumps, 292 bad dumps (-3), 2 bugs fixed
 4 ren (4/0/0):
-kidniki	           > kidnikiu          (mID: 00000) M ***
-mvsc               > mvscu             (mID: 00000) M ***
-powerbal           > powerbls          (mID: 00000) M ***
-xmvsf              > xmvsfr1           (mID: 00000) M ***
+kidniki            > kidnikiu          (mID:   977) M
+mvsc               > mvscu             (mID:  3277) M
+powerbal           > powerbls          (mID:  5822) M
+xmvsf              > xmvsfr1           (mID:  3180) M
 0 del (0/0/0):
 -
 
@@ -11639,11 +11689,11 @@ $0.102u2 [#291]
 4.156 horizontal screen (+11), 1.715 vertical screen (+2), 77 vector graphics, 5.794 raster graphics (+13), 0 lcd graphics, 0 svg graphics, 0 screenless
 88.981 total roms (+261), 88.900 machines roms (+261), 0 devices roms, 81 BIOSes roms, 78 CHDs, 422 sample files, 35 sample packs, 88.503 good dumps (+234), 261 no dumps (+4), 295 bad dumps (+23), 2 bugs fixed
 5 ren (5/0/0):
-splatter           > splattej          (mID: 00000) M ***
-strider2           > stridr2a          (mID: 00000) M ***
-techromn           > techromu          (mID: 00000) M ***
-touchgo	           > touchgon          (mID: 00000) M ***
-touchgo2           > touchgoe          (mID: 00000) M ***
+splatter           > splattej          (mID:  1678) M
+strider2           > stridr2a          (mID:  4733) M
+techromn           > techromu          (mID:  4428) M
+touchgo            > touchgon          (mID:  5869) M
+touchgo2           > touchgoe          (mID:  4447) M
 0 del (0/0/0):
 -
 
@@ -11655,14 +11705,14 @@ $0.102u1 [#290]
 4.145 horizontal screen (+8), 1.713 vertical screen (+2), 77 vector graphics, 5.781 raster graphics (+10), 0 lcd graphics, 0 svg graphics, 0 screenless
 88.720 total roms (+86), 88.639 machines roms (+86), 0 devices roms, 81 BIOSes roms, 78 CHDs, 422 sample files, 35 sample packs, 88.269 good dumps (+87), 257 no dumps (+1), 272 bad dumps (-2), 0 bugs fixed
 8 ren (8/0/0):
-berlwall           > berlwalt          (mID: 00000) M ***
-berlwalt           > berlwall          (mID: 00000) M ***
-ichidant           > ichirj            (mID: 00000) M ***
-ichidntb           > ichirjbl          (mID: 00000) M ***
-ichidnte           > ichir             (mID: 00000) M ***
-realbrk	           > realbrkj          (mID: 00000) M ***
-redclash           > redclsha          (mID: 00000) M ***
-stkclmns           > stkclmnj          (mID: 00000) M ***
+berlwall           > berlwalt          (mID:  1974) M
+berlwalt           > berlwall          (mID:  2003) M
+ichidant           > ichirj            (mID:  2458) M
+ichidntb           > ichirjbl          (mID:  3971) M
+ichidnte           > ichir             (mID:  2457) M
+realbrk            > realbrkj          (mID:  3924) M
+redclash           > redclsha          (mID:  2993) M
+stkclmns           > stkclmnj          (mID:  2481) M
 0 del (0/0/0):
 -
 
@@ -11674,14 +11724,14 @@ $0.102 [#289]
 4.137 horizontal screen (+10), 1.711 vertical screen (+5), 77 vector graphics, 5.771 raster graphics (+15), 0 lcd graphics, 0 svg graphics, 0 screenless
 88.634 total roms (+212), 88.553 machines roms (+212), 0 devices roms, 81 BIOSes roms, 78 CHDs (+1), 422 sample files, 35 sample packs, 88.182 good dumps (+205), 256 no dumps (+8), 274 bad dumps, 4 bugs fixed
 8 ren (8/0/0):
-avengrgs           > avengrgj          (mID: 00000) M ***
-downtown           > downtow2          (mID: 00000) M ***
-metamrph           > metamrpu          (mID: 00000) M ***
-mtlchamp           > mtlchmp1          (mID: 00000) M ***
-penocup	           > ttchamp           (mID: 00000) M ***
-rohga              > rohga1            (mID: 00000) M ***
-touchgo            > touchgo2          (mID: 00000) M ***
-varth              > varthr1           (mID: 00000) M ***
+avengrgs           > avengrgj          (mID:  4191) M
+downtown           > downtow2          (mID:  2066) M
+metamrph           > metamrpu          (mID:  3836) M
+mtlchamp           > mtlchmp1          (mID:  4661) M
+penocup            > ttchamp           (mID:  5621) M
+rohga              > rohga1            (mID:  4369) M
+touchgo            > touchgo2          (mID:  4447) M
+varth              > varthr1           (mID:   704) M
 0 del (0/0/0):
 -
 
@@ -11693,7 +11743,7 @@ $0.101u5 [#288]
 4.127 horizontal screen (+5), 1.706 vertical screen, 77 vector graphics, 5.756 raster graphics (+5), 0 lcd graphics, 0 svg graphics, 0 screenless
 88.422 total roms (+108), 88.341 machines roms (+108), 0 devices roms, 81 BIOSes roms, 77 CHDs, 422 sample files, 35 sample packs, 87.977 good dumps (+108), 248 no dumps, 274 bad dumps, 3 bugs fixed
 1 ren (1/0/0):
-raimais	           > raimaisj          (mID: 00000) M ***
+raimais            > raimaisj          (mID:  1672) M
 0 del (0/0/0):
 -
 
@@ -11705,8 +11755,8 @@ $0.101u4 [#287]
 4.122 horizontal screen (+5), 1.706 vertical screen (+2), 77 vector graphics, 5.751 raster graphics (+7), 0 lcd graphics, 0 svg graphics, 0 screenless
 88.314 total roms (+72), 88.233 machines roms (+72), 0 devices roms, 81 BIOSes roms, 77 CHDs, 422 sample files, 35 sample packs, 87.869 good dumps (+72), 248 no dumps, 274 bad dumps, 9 bugs fixed
 2 ren (2/0/0):
-glass              > glass10           (mID: 00000) M ***
-glassa             > glass10a          (mID: 00000) M ***
+glass              > glass10           (mID:  4000) M
+glassa             > glass10a          (mID:  5844) M
 0 del (0/0/0):
 -
 
@@ -11754,7 +11804,7 @@ $0.101 [#283]
 4.107 horizontal screen, 1.703 vertical screen, 5.733 raster graphics, 77 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
 88.026 total roms, 87.946 machines roms, 0 devices roms, 80 BIOSes roms, 76 CHDs, 422 sample files, 35 sample packs, 87.580 good dumps, 248 no dumps, 274 bad dumps, 0 bugs fixed
 1 ren (1/0/0):
-magic10_2          > magic102          (mID: 00000) M ***
+magic10_2          > magic102          (mID:  5832) M
 0 del (0/0/0):
 -
 
@@ -11766,10 +11816,10 @@ $0.100u4 [#282]
 4.107 horizontal screen (+6), 1.703 vertical screen (+1), 5.733 raster graphics (+7), 77 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
 88.026 total roms (+71), 87.946 machines roms (+71), 0 devices roms, 80 BIOSes roms, 76 CHDs, 422 sample files, 35 sample packs, 87.580 good dumps (+74), 248 no dumps, 274 bad dumps (-3), 1 bug fixed
 4 ren (4/0/0):
-bonuscrd           > jollycdd          (mID: 00000) M ***
-igpoker            > jollycde          (mID: 00000) M ***
-poker4             > bigdeal           (mID: 00000) M ***
-poker8 	        > bigdealb          (mID: 00000) M ***
+bonuscrd           > jollycdd          (mID: 48858) M
+igpoker            > jollycde          (mID:  5830) M
+poker4             > bigdeal           (mID:  5826) M
+poker8             > bigdealb          (mID:  5827) M
 0 del (0/0/0):
 -
 
@@ -11781,9 +11831,9 @@ $0.100u3 [#281]
 4.101 horizontal screen (-1/+10), 1.702 vertical screen (+3), 5.726 raster graphics (-1/+13), 77 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
 87.955 total roms (+152), 87.875 machines roms (+152), 0 devices roms, 80 BIOSes roms, 76 CHDs, 422 sample files, 35 sample packs, 87.506 good dumps (+142), 248 no dumps (+10), 277 bad dumps, 1 bugs fixed
 1 ren (1/0/0):
-esckids	           > esckidsj          (mID: 00000) M ***
+esckids            > esckidsj          (mID:  3520) M
 1 del (1/0/0):
-eaglshta                                  (mID: 00000) M ***
+eaglshta                               (mID:  4253) M
 
 
 $0.100u2 [#280]
@@ -11793,8 +11843,8 @@ $0.100u2 [#280]
 4.092 horizontal screen (+8), 1.699 vertical screen, 5.714 raster graphics (+8), 77 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
 87.803 total roms (+70), 87.723 machines roms (+70), 0 devices roms, 80 BIOSes roms, 76 CHDs, 422 sample files, 35 sample packs, 87.364 good dumps (+82), 238 no dumps (-12), 277 bad dumps, 5 bugs fixed
 2 ren (2/0/0):
-jollypkr           > jollycdb          (mID: 00000) M ***
-royalcrd           > royalcdb          (mID: 00000) M ***
+jollypkr           > jollycdb          (mID:  5806) M
+royalcrd           > royalcdb          (mID:  8709) M
 0 del (0/0/0):
 -
 
@@ -11806,7 +11856,7 @@ $0.100u1 [#279]
 4.084 horizontal screen (+5), 1.699 vertical screen, 5.706 raster graphics (+5), 77 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
 87.733 total roms (+70), 87.653 machines roms (+70), 0 devices roms, 80 BIOSes roms, 76 CHDs, 422 sample files, 35 sample packs, 87.282 good dumps (+69), 250 no dumps (-1), 277 bad dumps (+2), 0 bugs fixed
 1 ren (1/0/0):
-r360               > glocr360          (mID: 00000) M ***
+r360               > glocr360          (mID:  5797) M
 0 del (0/0/0):
 -
 
@@ -11889,8 +11939,8 @@ shufshot           > sshot139          (mID:  2934) M
 
 $0.99u5 [#272]
 2005/08/29
-5.779 total items, 830 drivers (+1), 5.754 machines (-2/+7), 3.159 parents (-1/+3), 2.595 clones (-1/+4), 25 BIOSes, 0 devices, 76 requires CHDs, 158 use samples, 3.359 audio mono (+4), 2.115 audio stereo, 2 audio multichannel, 278 no audio (+1)
-5.107 working (+4), 647 not working (+1), 0 mechanicals, 5.754 not mechanicals (+5), 0 save supported, 5.754 save unsupported (+5)
+5.779 total items, 830 drivers (+1), 5.754 machines (-2/+7), 3.159 parents (+2), 2.595 clones (+3), 25 BIOSes, 0 devices, 76 requires CHDs, 158 use samples, 3.359 audio mono (+4), 2.115 audio stereo, 2 audio multichannel, 278 no audio (+1)
+5.107 working (+4), 647 not working (+1), 0 mechanicals, 5.754 not mechanicals (-2/+7), 0 save supported, 5.754 save unsupported (-2/+7)
 4.058 horizontal screen (+4), 1.696 vertical screen (+1), 5.679 raster graphics (+5), 75 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
 87.288 total roms (+32), 87.208 machines roms (+32), 0 devices roms, 80 BIOSes roms, 76 CHDs, 422 sample files, 35 sample packs, 86.878 good dumps (+30), 252 no dumps, 234 bad dumps (+2), 0 bugs fixed
 0 ren (0/0/0):
@@ -12030,10 +12080,10 @@ $0.97u5 [#261]
 4.007 horizontal screen (+3), 1.680 vertical screen, 5.613 raster graphics (+3), 74 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
 86.548 total roms (+25), 86.468 machines roms (+25), 0 devices roms, 80 BIOSes roms, 76 CHDs, 422 sample files, 35 sample packs, 86.159 good dumps (+25), 243 no dumps, 222 bad dumps, 0 bugs fixed
 4 ren (4/0/0):
-outzone            > outzonea          (mID: 00000) M ***
-outzonea           > outzone           (mID: 00000) M ***
+outzone            > outzonea          (mID:  1371) M
+outzonea           > outzone           (mID:  1822) M
 pbchmp95           > pchmp95           (mID:  5773) M
-xmen6p             > xmen6pu           (mID: 00000) M ***
+xmen6p             > xmen6pu           (mID:  4478) M
 0 del (0/0/0):
 -
 
@@ -13066,8 +13116,8 @@ superqix           > sqix              (mID:  444) M
 
 $0.84 [#187] [The output is now completely under xml, with the '-listxml' command]
 2004/07/02
-5.036 total items, 746 drivers (+6), 5.014 machines (-1/+60), 2.831 parents (-1/+27), 2.183 clones (+33), 22 BIOSes, 0 devices, 49 requires CHDs (+1), 155 use samples, 3.021 audio mono (-1/+27), 1.756 audio stereo (+14), 0 audio multichannel, 237 no audio (+19)
-4.379 working (-1/+25), 635 not working (+35), 0 mechanicals, 5.014 not mechanicals (-1/+60), 0 save supported, 5.014 save unsupported (+59)
+5.036 total items, 746 drivers (+6), 5.014 machines (-1/+61), 2.831 parents (-1/+28), 2.183 clones (+33), 22 BIOSes, 0 devices, 49 requires CHDs (+1), 155 use samples, 3.021 audio mono (-1/+27), 1.756 audio stereo (+14), 0 audio multichannel, 237 no audio (+20)
+4.379 working (-1/+26), 635 not working (+35), 0 mechanicals, 5.014 not mechanicals (-1/+61), 0 save supported, 5.014 save unsupported (-1/+61)
 3.468 horizontal screen (-1/+55), 1.546 vertical screen (+6), 4.944 raster graphics (-1/+61), 70 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
 74.972 total roms (+717), 74.911 machines roms (+717), 0 devices roms, 61 BIOSes roms, 49 CHDs (+1), 395 sample files, 35 sample packs, 74.689 good dumps (+710), 185 no dumps (+6), 147 bad dumps (+2), 0 bugs fixed
 11 ren (11/0/0):
@@ -13088,10 +13138,10 @@ getrv3                                 (mID:  5030) M
 
 $0.83 [#186]
 2004/06/05
-4.975 total items, 745 drivers (+3), 4.953 machines (+11), 2.806 parents (+11), 2.147 clones, 22 BIOSes, 0 devices, 48 requires CHDs (+2), 154 use samples, 2.995 audio mono (+5), 1.741 audio stereo (+4), 0 audio multichannel, 217 no audio (+2)
-4.353 working (+10), 600 not working (+1), 0 mechanicals, 4.953 not mechanicals (+11), 0 save supported, 4.953 save unsupported (+11)
-3.413 horizontal screen (+10), 1.540 vertical screen (+1), 4.891 raster graphics (+11), 62 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
-74.233 total roms (+97), 74.172 machines roms (+97), 0 devices roms, 61 BIOSes roms, 48 CHDs (+1), 395 sample files, 35 sample packs, 73.957 good dumps (+96), 179 no dumps (+1), 145 bad dumps (+1), 0 bugs fixed
+4.976 total items, 740 drivers (+2), 4.954 machines (+12), 2.804 parents (+10), 2.150 clones (+2), 22 BIOSes, 0 devices, 48 requires CHDs (+2), 155 use samples, 2.995 audio mono (+5), 1.742 audio stereo (+5), 0 audio multichannel, 217 no audio (+2)
+4.354 working (+11), 600 not working (+1), 0 mechanicals, 4.954 not mechanicals (+12), 0 save supported, 4.954 save unsupported (+12)
+3.414 horizontal screen (+11), 1.540 vertical screen (+1), 4.884 raster graphics (+12), 70 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
+74.255 total roms (+119), 74.194 machines roms (+119), 0 devices roms, 61 BIOSes roms, 48 CHDs (+1), 395 sample files, 35 sample packs, 73.979 good dumps (+118), 179 no dumps (+1), 145 bad dumps (+1), 0 bugs fixed
 1 ren (1/0/0):
 sfchamp            > sfchampj          (mID:  4385) M
 0 del (0/0/0):
@@ -13100,9 +13150,9 @@ sfchamp            > sfchampj          (mID:  4385) M
 
 $0.82u3 [#185]
 2004/05/27
-4.964 total items, 742 drivers (+1), 4.942 machines (+7), 2.795 parents (+6), 2.147 clones (+1), 22 BIOSes (+1), 0 devices, 46 requires CHDs, 154 use samples (+1), 2.990 audio mono (+5), 1.737 audio stereo (+17), 0 audio multichannel, 215 no audio (-15)
+4.964 total items, 738 drivers (+1), 4.942 machines (+7), 2.794 parents (+7), 2.148 clones, 22 BIOSes (+1), 0 devices, 46 requires CHDs, 155 use samples (+1), 2.990 audio mono (+5), 1.737 audio stereo (+17), 0 audio multichannel, 215 no audio (-15)
 4.343 working (+3), 599 not working (+4), 0 mechanicals, 4.942 not mechanicals (+7), 0 save supported, 4.942 save unsupported (+7)
-3.403 horizontal screen (+6), 1.539 vertical screen (+1), 4.880 raster graphics (+7), 62 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
+3.403 horizontal screen (+6), 1.539 vertical screen (+1), 4.872 raster graphics (+7), 70 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
 74.136 total roms (+76), 74.075 machines roms (+75), 0 devices roms, 61 BIOSes roms (+1), 47 CHDs, 395 sample files, 35 sample packs, 73.861 good dumps (+74), 178 no dumps (+4), 144 bad dumps (-2), 0 bugs fixed
 2 ren (2/0/0):
 mgcldate           > mgcldtex          (mID:  4325) M
@@ -13113,15 +13163,15 @@ mgcldtea           > mgcldate          (mID:  4326) M
 
 $0.82u2 [#184]
 2004/05/23
-4.956 total items, 741 drivers (+1), 4.935 machines (-1/+8), 2.789 parents (-1/+6), 2.146 clones (+2), 21 BIOSes, 0 devices, 46 requires CHDs (+2), 153 use samples, 2.985 audio mono (+3), 1.720 audio stereo (-1/+4), 0 audio multichannel, 230 no audio (+1)
+4.956 total items, 737 drivers (+1), 4.935 machines (-1/+8), 2.787 parents (-1/+5), 2.148 clones (+3), 21 BIOSes, 0 devices, 46 requires CHDs (+2), 154 use samples, 2.985 audio mono (+3), 1.720 audio stereo (-1/+4), 0 audio multichannel, 230 no audio (+1)
 4.340 working (+27), 595 not working (-20), 0 mechanicals, 4.935 not mechanicals (-1/+8), 0 save supported, 4.935 save unsupported (-1/+8)
-3.397 horizontal screen (-1/+5), 1.538 vertical screen (+3), 4.873 raster graphics (-1/+8), 62 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
+3.397 horizontal screen (-1/+5), 1.538 vertical screen (+3), 4.865 raster graphics (-1/+8), 70 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
 74.060 total roms (+90), 74.000 machines roms (+90), 0 devices roms, 60 BIOSes roms, 47 CHDs (+2), 395 sample files, 35 sample packs, 73.787 good dumps (+88), 174 no dumps, 146 bad dumps (+4), 0 bugs fixed
 2 ren (2/0/0):
 psyfrcex           > psyforce          (mID:  4977) M
 psyforce           > psyforcj          (mID:  4356) M
 1 del (1/0/0):
-tgmj                                   (mID: 00000) M ***
+tgmj                                   (mID:  4435) M
 
 
 $0.82u1 [#183]
@@ -13140,10 +13190,10 @@ opengolf           > opengol2          (mID:  4339) M
 
 $0.82 [#182]
 2004/05/06
-4.942 total items, 741 drivers (+2), 4.921 machines (+15), 2.780 parents (+12), 2.141 clones (+3), 21 BIOSes, 0 devices, 44 requires CHDs (-1), 153 use samples (-6), 2.980 audio mono (+27), 1.713 audio stereo (+7), 0 audio multichannel, 228 no audio (-19)
-4.310 working (+26), 611 not working (-11), 0 mechanicals, 4.921 not mechanicals (+15), 0 save supported, 4.921 save unsupported (+15)
-3.387 horizontal screen (+12), 1.534 vertical screen (+3), 4.859 raster graphics (+15), 62 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
-73.876 total roms (+142), 73.816 machines roms (+142), 0 devices roms, 60 BIOSes roms, 45 CHDs, 395 sample files, 35 sample packs, 73.611 good dumps (+140), 174 no dumps (+2), 136 bad dumps, 0 bugs fixed
+4.942 total items, 736 drivers (+1), 4.921 machines (+14), 2.779 parents (+12), 2.142 clones (+2), 21 BIOSes, 0 devices, 44 requires CHDs (-2), 154 use samples (-6), 2.980 audio mono (+27), 1.713 audio stereo (+6), 0 audio multichannel, 228 no audio (-19)
+4.310 working (+25), 611 not working (-11), 0 mechanicals, 4.921 not mechanicals (+14), 0 save supported, 4.921 save unsupported (+14)
+3.387 horizontal screen (+11), 1.534 vertical screen (+3), 4.851 raster graphics (+14), 70 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
+73.876 total roms (+138), 73.816 machines roms (+138), 0 devices roms, 60 BIOSes roms, 45 CHDs (-1), 395 sample files, 35 sample packs, 73.611 good dumps (+135), 174 no dumps (+2), 136 bad dumps, 0 bugs fixed
 0 ren (0/0/0):
 -
 0 del (0/0/0):
@@ -13152,10 +13202,10 @@ $0.82 [#182]
 
 $0.81u9 [#181]
 2004/04/28
-4.927 total items, 739 drivers (+1), 4.906 machines (+2), 2.768 parents (+1), 2.138 clones (+1), 21 BIOSes, 0 devices, 45 requires CHDs, 159 use samples (+1), 2.953 audio mono (+2), 1.706 audio stereo, 0 audio multichannel, 247 no audio
-4.284 working (+2), 622 not working, 0 mechanicals, 4.906 not mechanicals (+2), 0 save supported, 4.906 save unsupported (+2)
-3.375 horizontal screen (+1), 1.531 vertical screen (+1), 4.844 raster graphics (+2), 62 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
-73.734 total roms (+27), 73.674 machines roms (+27), 0 devices roms, 60 BIOSes roms, 45 CHDs, 395 sample files (+2), 35 sample packs (+1), 73.471 good dumps (+27), 172 no dumps, 136 bad dumps, 0 bugs fixed
+4.928 total items, 735 drivers (+1), 4.907 machines (+3), 2.767 parents, 2.140 clones (+3), 21 BIOSes, 0 devices, 46 requires CHDs (+1), 160 use samples (+1), 2.953 audio mono (+2), 1.707 audio stereo (+1), 0 audio multichannel, 247 no audio
+4.285 working (+3), 622 not working, 0 mechanicals, 4.907 not mechanicals (+3), 0 save supported, 4.907 save unsupported (+3)
+3.376 horizontal screen (+2), 1.531 vertical screen (+1), 4.837 raster graphics (+3), 70 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
+73.738 total roms (+31), 73.678 machines roms (+31), 0 devices roms, 60 BIOSes roms, 46 CHDs (+1), 395 sample files (+2), 35 sample packs (+1), 73.476 good dumps (+32), 172 no dumps, 136 bad dumps, 0 bugs fixed
 0 ren (0/0/0):
 -
 0 del (0/0/0):
@@ -13284,9 +13334,9 @@ $0.80u3 [#171]
 
 $0.80u2 [#170]
 2004/03/27
-4.844 total items, 726 drivers (+9), 4.825 machines (+24), 2.717 parents (+13), 2.108 clones (+11), 19 BIOSes, 0 devices, 31 requires CHDs, 158 use samples, 2.969 audio mono (+16), 1.683 audio stereo (+6), 0 audio multichannel, 173 no audio (+2)
+4.844 total items, 722 drivers (+8), 4.825 machines (+24), 2.717 parents (+13), 2.108 clones (+11), 19 BIOSes, 0 devices, 31 requires CHDs, 159 use samples, 2.935 audio mono (+14), 1.669 audio stereo (+6), 0 audio multichannel, 221 no audio (+4)
 4.258 working (+14), 567 not working (+10), 0 mechanicals, 4.825 not mechanicals (+24), 0 save supported, 4.825 save unsupported (+24)
-3.314 horizontal screen (+14), 1.511 vertical screen (+10), 4.763 raster graphics (+24), 62 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
+3.314 horizontal screen (+14), 1.511 vertical screen (+10), 4.755 raster graphics (+24), 70 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
 72.745 total roms (+360), 72.688 machines roms (+360), 0 devices roms, 57 BIOSes roms, 32 CHDs, 393 sample files, 34 sample packs, 72.460 good dumps (+356), 182 no dumps (+2), 135 bad dumps (+2), 0 bugs fixed
 4 ren (4/0/0):
 mshj               > mshjr1            (mID:  2724) M
@@ -13299,10 +13349,10 @@ vhuntjr1           > vhuntjr2          (mID:  3386) M
 
 $0.80u1 [#169]
 2004/03/11
-4.820 total items, 717 drivers (+1), 4.801 machines (+5), 2.706 parents (+2), 2.095 clones (+3), 19 BIOSes (+1), 0 devices, 32 requires CHDs, 158 use samples (+2), 2.953 audio mono (+2), 1.677 audio stereo (+3), 0 audio multichannel, 171 no audio (+1)
-4.299 working (+2), 502 not working (+3), 0 mechanicals, 4.801 not mechanicals (+5), 0 save supported, 4.801 save unsupported (+5)
-3.298 horizontal screen (+4), 1.503 vertical screen (+4), 4.739 raster graphics (+5), 62 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
-72.318 total roms (+77), 72.261 machines roms (+106), 0 devices roms, 57 BIOSes roms (+3), 32 CHDs, 575 sample files, 34 sample packs, 72.037 good dumps (+109), 180 no dumps, 133 bad dumps, 0 bugs fixed
+4.820 total items, 714 drivers, 4.801 machines (+5), 2.704 parents (+2), 2.097 clones (+3), 19 BIOSes (+1), 0 devices, 31 requires CHDs, 159 use samples (+2), 2.921 audio mono (+6), 1.663 audio stereo (+2), 0 audio multichannel, 217 no audio (-3)
+4.244 working (+3), 557 not working (+2), 0 mechanicals, 4.801 not mechanicals (+5), 0 save supported, 4.801 save unsupported (+5)
+3.300 horizontal screen (+3), 1.501 vertical screen (+2), 4.731 raster graphics (+5), 70 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
+72.385 total roms (+109), 72.328 machines roms (+106), 0 devices roms, 57 BIOSes roms (+3), 32 CHDs, 393 sample files, 34 sample packs, 72.104 good dumps (+109), 180 no dumps, 133 bad dumps, 0 bugs fixed
 1 ren (1/0/0):
 earthinv           > searthin          (mID:    56) M
 0 del (0/0/0):
@@ -13311,10 +13361,10 @@ earthinv           > searthin          (mID:    56) M
 
 $0.80 [#168]
 2004/03/06
-4.814 total items, 716 drivers (+1), 4.796 machines (-1/+7), 2.704 parents (-1/+4), 2.092 clones (+3), 18 BIOSes (+1), 0 devices, 32 requires CHDs, 156 use samples, 2.951 audio mono (-1/+1), 1.675 audio stereo (+7), 0 audio multichannel, 170 no audio
-4.297 working (-1/+5), 499 not working (+2), 0 mechanicals, 4.796 not mechanicals (-1/+7), 0 save supported, 4.796 save unsupported (-1/+7)
-3.297 horizontal screen (+4), 1.499 vertical screen (+3), 4.734 raster graphics (-1/+7), 62 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
-72.241 total roms (+149), 72.155 machines roms (+115), 0 devices roms, 54 BIOSes roms (+2), 32 CHDs, 575 sample files (+1), 34 sample packs, 71.928 good dumps (+110), 180 no dumps (+4), 133 bad dumps (+3), 0 bugs fixed
+4.814 total items, 714 drivers (+1), 4.796 machines (-1/+6), 2.702 parents (-1/+4), 2.094 clones (+2), 18 BIOSes (+1), 0 devices, 31 requires CHDs (-1), 157 use samples, 2.915 audio mono (-1/+5), 1.661 audio stereo (+24), 0 audio multichannel, 220 no audio (-23)
+4.241 working (-53), 555 not working (-1/+59), 0 mechanicals, 4.796 not mechanicals (-1/+6), 0 save supported, 4.796 save unsupported (-1/+6)
+3.297 horizontal screen (-1/+5), 1.499 vertical screen (+1), 4.726 raster graphics (-1/+6), 70 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
+72.276 total roms (+112), 72.222 machines roms (+110), 0 devices roms, 54 BIOSes roms (+2), 32 CHDs, 393 sample files (+1), 34 sample packs, 71.995 good dumps (+106), 180 no dumps (+3), 133 bad dumps (+3), 0 bugs fixed
 0 ren (0/0/0):
 -
 1 del (1/0/0):
@@ -13323,10 +13373,10 @@ $0.80 [#168]
 
 $0.79u4 [#167]
 2004/02/28
-4.807 total items, 715 drivers, 4.790 machines (+1), 2.701 parents, 2.089 clones (+1), 17 BIOSes, 0 devices, 32 requires CHDs, 156 use samples, 2.951 audio mono (+1), 1.669 audio stereo, 0 audio multichannel, 170 no audio
-4.293 working (+1), 497 not working, 0 mechanicals, 4.790 not mechanicals (+1), 0 save supported, 4.790 save unsupported (+1)
-3.293 horizontal screen (+1), 1.502 vertical screen, 4.728 raster graphics (+1), 62 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
-72.092 total roms (+79), 72.040 machines roms (+10), 0 devices roms, 52 BIOSes roms, 32 CHDs, 574 sample files, 34 sample packs, 71.818 good dumps (+10), 176 no dumps, 130 bad dumps, 0 bugs fixed
+4.808 total items, 713 drivers, 4.791 machines (+1), 2.699 parents, 2.092 clones (+1), 17 BIOSes, 0 devices, 32 requires CHDs, 157 use samples, 2.911 audio mono (+1), 1.637 audio stereo, 0 audio multichannel, 243 no audio
+4.294 working (+1), 497 not working, 0 mechanicals, 4.791 not mechanicals (+1), 0 save supported, 4.791 save unsupported (+1)
+3.293 horizontal screen (+1), 1.498 vertical screen, 4.721 raster graphics (+1), 70 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
+72.164 total roms (+10), 72.112 machines roms (+10), 0 devices roms, 52 BIOSes roms, 32 CHDs, 392 sample files, 34 sample packs, 71.889 good dumps (+10), 177 no dumps, 130 bad dumps, 0 bugs fixed
 0 ren (0/0/0):
 -
 0 del (0/0/0):
@@ -13335,10 +13385,10 @@ $0.79u4 [#167]
 
 $0.79u3 [#166] [Internal Release]
 2004/02/25
-4.806 total items, 715 drivers (+1), 4.789 machines (+4), 2.701 parents (+2), 2.088 clones (+2), 17 BIOSes, 0 devices, 32 requires CHDs, 156 use samples, 2.950 audio mono (+4), 1.669 audio stereo, 0 audio multichannel, 170 no audio
-4.292 working (+4), 497 not working, 0 mechanicals, 4.789 not mechanicals (+4), 0 save supported, 4.789 save unsupported (+4)
-3.292 horizontal screen (+1), 1.502 vertical screen (+3), 4.727 raster graphics (+4), 62 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
-72.082 total roms (+69), 72.030 machines roms (+69), 0 devices roms, 52 BIOSes roms, 32 CHDs, 574 sample files, 34 sample packs, 71.808 good dumps (+70), 176 no dumps (-1), 130 bad dumps, 0 bugs fixed
+4.807 total items, 713 drivers (+1), 4.790 machines (+4), 2.699 parents (+1), 2.091 clones (+3), 17 BIOSes, 0 devices, 32 requires CHDs, 157 use samples (+1), 2.910 audio mono (+4), 1.637 audio stereo, 0 audio multichannel, 243 no audio
+4.293 working (+4), 497 not working, 0 mechanicals, 4.790 not mechanicals (+4), 0 save supported, 4.790 save unsupported (+4)
+3.292 horizontal screen (+1), 1.498 vertical screen (+3), 4.720 raster graphics (+4), 70 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
+72.154 total roms (+65), 72.102 machines roms (+65), 0 devices roms, 52 BIOSes roms, 32 CHDs, 392 sample files, 34 sample packs, 71.879 good dumps (+65), 177 no dumps, 130 bad dumps, 0 bugs fixed
 0 ren (0/0/0):
 -
 0 del (0/0/0):
@@ -13347,10 +13397,10 @@ $0.79u3 [#166] [Internal Release]
 
 $0.79u2 [#165] [Internal Release]
 2004/02/21
-4.802 total items, 714 drivers (+4), 4.785 machines (+17), 2.699 parents (+11), 2.086 clones (+6), 17 BIOSes, 0 devices, 32 requires CHDs (+1), 156 use samples (+1), 2.946 audio mono (+10), 1.669 audio stereo (+4), 0 audio multichannel, 170 no audio (+3)
-4.288 working (+15), 497 not working (+2), 0 mechanicals, 4.785 not mechanicals (+17), 0 save supported, 4.785 save unsupported (+17)
-3.291 horizontal screen (+12), 1.499 vertical screen (+5), 4.723 raster graphics (+17), 62 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
-72.013 total roms (+293), 71.961 machines roms (+293), 0 devices roms, 52 BIOSes roms, 32 CHDs (+1), 574 sample files, 34 sample packs, 71.738 good dumps (+287), 177 no dumps, 130 bad dumps (+7), 0 bugs fixed
+4.803 total items, 712 drivers (+4), 4.786 machines (+18), 2.698 parents (+12), 2.088 clones (+6), 17 BIOSes, 0 devices, 32 requires CHDs (+2), 156 use samples, 2.906 audio mono (+10), 1.637 audio stereo (+3), 0 audio multichannel, 243 no audio (+5)
+4.289 working (+11), 497 not working (+7), 0 mechanicals, 4.786 not mechanicals (+18), 0 save supported, 4.786 save unsupported (+18)
+3.291 horizontal screen (+13), 1.495 vertical screen (+5), 4.716 raster graphics (+18), 70 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
+72.089 total roms (+302), 72.037 machines roms (+302), 0 devices roms, 52 BIOSes roms, 32 CHDs (+1), 392 sample files, 34 sample packs, 71.814 good dumps (+296), 177 no dumps, 130 bad dumps (+7), 0 bugs fixed
 2 ren (2/0/0):
 area51             > area51a           (mID:  3496) M
 soulclbr           > soulclba          (mID:  4669) M
@@ -13360,10 +13410,10 @@ soulclbr           > soulclba          (mID:  4669) M
 
 $0.79u1 [#164]
 2004/02/08
-4.785 total items, 710 drivers (-2), 4.768 machines (-5/+21), 2.688 parents (+9), 2.080 clones (-5/+12), 17 BIOSes, 0 devices, 31 requires CHDs, 155 use samples (-2), 2.936 audio mono (-4/+16), 1.665 audio stereo (-1/+4), 0 audio multichannel, 167 no audio (+1)
-4.273 working (-5/+19), 495 not working (+2), 0 mechanicals, 4.768 not mechanicals (-5/+21), 0 save supported, 4.768 save unsupported (-5/+21)
-3.279 horizontal screen (+10), 1.494 vertical screen (+11), 4.706 raster graphics (-5/+21), 62 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
-71.720 total roms (+117), 71.668 machines roms (+117), 0 devices roms, 52 BIOSes roms, 31 CHDs, 574 sample files (-1), 34 sample packs (+2), 71.451 good dumps (+116), 177 no dumps (+1), 123 bad dumps, 0 bugs fixed
+4.785 total items, 708 drivers (+2), 4.768 machines (-5/+21), 2.686 parents (+7), 2.082 clones (-5/+14), 17 BIOSes, 0 devices, 30 requires CHDs, 156 use samples (-5/+2), 2.896 audio mono (-4/+17), 1.634 audio stereo (-1/+4), 0 audio multichannel, 238 no audio
+4.278 working (-5/+24), 490 not working (-3), 0 mechanicals, 4.768 not mechanicals (-5/+21), 0 save supported, 4.768 save unsupported (-5/+21)
+3.278 horizontal screen (-1/+10), 1.490 vertical screen (-4/+11), 4.698 raster graphics (-5/+21), 70 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
+71.787 total roms (+117), 71.735 machines roms (+117), 0 devices roms, 52 BIOSes roms, 31 CHDs, 392 sample files (-1), 34 sample packs, 71.518 good dumps (+116), 177 no dumps (+1), 123 bad dumps, 0 bugs fixed
 4 ren (4/0/0):
 digdug             > digdugb           (mID:   152) M
 digdugb            > digdug            (mID:  1404) M
@@ -13379,10 +13429,10 @@ poleps2c                               (mID:  2019) M
 
 $0.79 [#163]
 2004/01/28
-4.769 total items, 712 drivers (+1), 4.752 machines (-1/+22), 2.679 parents (-1/+8), 2.073 clones (+14), 17 BIOSes, 0 devices, 31 requires CHDs, 157 use samples (+1), 2.924 audio mono (+9), 1.662 audio stereo (-1/+13), 0 audio multichannel, 166 no audio
-4.259 working (-1/+18), 493 not working (+4), 4.752 mechanicals (-1/+22), 0 not mechanicals, 4.752 save supported (-1/+22), 4.769 save unsupported (-1/+39)
-3.269 horizontal screen (+35), 1.483 vertical screen (-30), 4.690 raster graphics (-1/+22), 62 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
-71.603 total roms (+321), 71.551 machines roms (+321), 0 devices roms, 52 BIOSes roms, 31 CHDs, 575 sample files, 32 sample packs, 71.335 good dumps (+324), 176 no dumps (+3), 123 bad dumps (-5), 0 bugs fixed
+4.769 total items, 706 drivers (+1), 4.752 machines (-1/+22), 2.679 parents (-1/+6), 2.073 clones (+16), 17 BIOSes, 0 devices, 30 requires CHDs (+1), 159 use samples (+3), 2.883 audio mono (+9), 1.631 audio stereo (-1/+13), 0 audio multichannel, 238 no audio
+4.259 working (+16), 493 not working (-1/+6), 0 mechanicals, 4.752 not mechanicals (-1/+22), 0 save supported, 4.752 save unsupported (-1/+22)
+3.269 horizontal screen (-1/+14), 1.483 vertical screen (+8), 4.682 raster graphics (-1/+22), 70 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
+71.670 total roms (+321), 71.618 machines roms (+321), 0 devices roms, 52 BIOSes roms, 31 CHDs (+1), 393 sample files, 34 sample packs, 71.402 good dumps (+325), 176 no dumps (+3), 123 bad dumps (-6), 0 bugs fixed
 7 ren (7/0/0):
 fantasy            > fantasyu          (mID:    80) M
 outrunp            > outrundx          (mID:  4764) M
@@ -13397,10 +13447,10 @@ strider2                               (mID: 46916) M
 
 $0.78u6 [#162]
 2004/01/20
-4.748 total items, 711 drivers, 4.731 machines, 2.672 parents, 2.059 clones, 17 BIOSes, 0 devices, 30 requires CHDs, 156 use samples, 2.915 audio mono, 1.650 audio stereo, 0 audio multichannel, 166 no audio
-4.242 working, 489 not working, 0 mechanicals, 4.731 not mechanicals, 0 save supported, 4.731 save unsupported
-3234 horizontal screen, 1.513 vertical screen, 4.669 raster graphics, 62 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
-71.282 total roms, 71.230 machines roms, 0 devices roms, 52 BIOSes roms, 30 CHDs, 575 sample files, 32 sample packs, 71.011 good dumps, 173 no dumps, 128 bad dumps, 0 bugs fixed
+4.748 total items, 705 drivers, 4.731 machines, 2.674 parents, 2.057 clones, 17 BIOSes, 0 devices, 29 requires CHDs, 156 use samples, 2.874 audio mono, 1.619 audio stereo, 0 audio multichannel, 238 no audio
+4.243 working, 488 not working, 0 mechanicals, 4.731 not mechanicals, 0 save supported, 4.731 save unsupported
+3.256 horizontal screen, 1.475 vertical screen, 4.661 raster graphics, 70 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
+71.349 total roms, 71.297 machines roms, 0 devices roms, 52 BIOSes roms, 30 CHDs, 393 sample files, 34 sample packs, 71.077 good dumps (-1), 173 no dumps, 129 bad dumps (+1), 0 bugs fixed
 0 ren (0/0/0):
 -
 0 del (0/0/0):
@@ -13409,10 +13459,10 @@ $0.78u6 [#162]
 
 $0.78u5 [#161]
 2004/01/18
-4.748 total items, 711 drivers, 4.731 machines (+4), 2.672 parents, 2.059 clones (+4), 17 BIOSes, 0 devices, 30 requires CHDs, 156 use samples (+1), 2.915 audio mono (+3), 1.650 audio stereo (+1), 0 audio multichannel, 166 no audio
-4.242 working (+4), 489 not working, 0 mechanicals, 4.731 not mechanicals (+4), 0 save supported, 4.731 save unsupported (+4)
-3.234 horizontal screen (+1), 1.513 vertical screen (+3), 4.669 raster graphics (+4), 62 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
-71.282 total roms (+125), 71.230 machines roms (+125), 0 devices roms, 52 BIOSes roms, 30 CHDs, 575 sample files, 32 sample packs, 71.011 good dumps (+127), 173 no dumps (-2), 128 bad dumps, 0 bugs fixed
+4.748 total items, 705 drivers, 4.731 machines (+4), 2.674 parents (+2), 2.057 clones (+2), 17 BIOSes, 0 devices, 29 requires CHDs, 156 use samples (+1), 2.874 audio mono (+4), 1.619 audio stereo (+1), 0 audio multichannel, 238 no audio (-1)
+4.243 working (+5), 488 not working (-1), 0 mechanicals, 4.731 not mechanicals (+4), 0 save supported, 4.731 save unsupported (+4)
+3.256 horizontal screen (+1), 1.475 vertical screen (+3), 4.661 raster graphics (+4), 70 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
+71.349 total roms (+125), 71.297 machines roms (+125), 0 devices roms, 52 BIOSes roms, 30 CHDs, 393 sample files, 34 sample packs, 71.078 good dumps (+127), 173 no dumps (-2), 128 bad dumps, 0 bugs fixed
 0 ren (0/0/0):
 -
 0 del (0/0/0):
@@ -13421,10 +13471,10 @@ $0.78u5 [#161]
 
 $0.78u4 [#160]
 2004/01/13
-4.744 total items, 711 drivers (-3), 4.727 machines (+2), 2.672 parents, 2.055 clones (+2), 17 BIOSes, 0 devices, 30 requires CHDs, 155 use samples, 2.912 audio mono, 1.649 audio stereo (+2), 0 audio multichannel, 166 no audio
+4.744 total items, 705 drivers, 4.727 machines (+2), 2.672 parents, 2.055 clones (+2), 17 BIOSes, 0 devices, 29 requires CHDs, 155 use samples, 2.870 audio mono (+2), 1.618 audio stereo (+2), 0 audio multichannel, 239 no audio (-2)
 4.238 working (+2), 489 not working, 0 mechanicals, 4.727 not mechanicals (+2), 0 save supported, 4.727 save unsupported (+2)
-3.233 horizontal screen (+2), 1.510 vertical screen, 4.665 raster graphics (+2), 62 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
-71.157 total roms (+51), 71.105 machines roms (+51), 0 devices roms, 52 BIOSes roms, 30 CHDs, 575 sample files, 32 sample packs, 70.884 good dumps (+50), 175 no dumps, 128 bad dumps (+1), 0 bugs fixed
+3.255 horizontal screen (+2), 1.472 vertical screen, 4.657 raster graphics (+2), 70 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
+71.224 total roms (+51), 71.172 machines roms (+51), 0 devices roms, 52 BIOSes roms, 30 CHDs, 393 sample files (+5), 34 sample packs, 70.951 good dumps (+50), 175 no dumps, 128 bad dumps (+1), 0 bugs fixed
 0 ren (0/0/0):
 -
 0 del (0/0/0):
@@ -13433,10 +13483,10 @@ $0.78u4 [#160]
 
 $0.78u3 [#159]
 2004/01/11
-4.742 total items, 714 drivers, 4.725 machines (+7), 2.672 parents (+1), 2.053 clones (+6), 17 BIOSes, 0 devices, 30 requires CHDs, 154 use samples, 2.912 audio mono (+5), 1.647 audio stereo (+1), 0 audio multichannel, 166 no audio (+1)
-4.236 working (+7), 489 not working, 0 mechanicals, 4.725 not mechanicals (+7), 0 save supported, 4.725 save unsupported (+7)
-3.231 horizontal screen (+3), 1.510 vertical screen (+4), 4.663 raster graphics (+7), 62 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
-71.106 total roms (+93), 71.054 machines roms (+93), 0 devices roms, 52 BIOSes roms, 30 CHDs, 575 sample files, 32 sample packs, 70.834 good dumps (+93), 175 no dumps, 127 bad dumps, 0 bugs fixed
+4.742 total items, 705 drivers, 4.725 machines (+7), 2.672 parents (+1), 2.053 clones (+6), 17 BIOSes, 0 devices, 29 requires CHDs, 155 use samples (+1), 2.868 audio mono (+5), 1.616 audio stereo (+1), 0 audio multichannel, 241 no audio (+1)
+4.236 working (+8), 489 not working (-1), 0 mechanicals, 4.725 not mechanicals (+7), 0 save supported, 4.725 save unsupported (+7)
+3.253 horizontal screen (+5), 1.472 vertical screen (+2), 4.655 raster graphics (+7), 70 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
+71.173 total roms (+93), 71.121 machines roms (+93), 0 devices roms, 52 BIOSes roms, 30 CHDs, 388 sample files, 34 sample packs (+1), 70.901 good dumps (+93), 175 no dumps, 127 bad dumps, 0 bugs fixed
 2 ren (2/0/0):
 armwar             > armwarr1          (mID:  3150) M
 compgolf           > compglfo          (mID:  4209) M
@@ -13446,10 +13496,10 @@ compgolf           > compglfo          (mID:  4209) M
 
 $0.78u2 [#158]
 2004/01/09
-4.735 total items, 714 drivers, 4.718 machines, 2.671 parents, 2.047 clones, 17 BIOSes, 0 devices, 30 requires CHDs, 154 use samples, 2.907 audio mono, 1.646 audio stereo, 0 audio multichannel, 165 no audio
-4.229 working, 489 not working, 0 mechanicals, 4.718 not mechanicals, 0 save supported, 4.718 save unsupported
-3.228 horizontal screen, 1.506 vertical screen, 4.656 raster graphics, 62 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
-71.013 total roms, 70.961 machines roms, 0 devices roms, 52 BIOSes roms, 30 CHDs, 575 sample files, 32 sample packs, 70.741 good dumps, 175 no dumps, 0 bad dumps, 127 bugs fixed
+4.735 total items, 705 drivers, 4.718 machines, 2.671 parents, 2.047 clones, 17 BIOSes, 0 devices, 29 requires CHDs, 154 use samples, 2.863 audio mono, 1.615 audio stereo, 0 audio multichannel, 240 no audio
+4.228 working (-1), 490 not working (+1), 0 mechanicals, 4.718 not mechanicals, 0 save supported, 4.718 save unsupported
+3.248 horizontal screen, 1.470 vertical screen, 4.648 raster graphics, 70 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
+71.080 total roms, 71.028 machines roms, 0 devices roms, 52 BIOSes roms, 30 CHDs, 388 sample files, 33 sample packs, 70.808 good dumps, 175 no dumps, 127 bad dumps, 0 bugs fixed
 0 ren (0/0/0):
 -
 0 del (0/0/0):
@@ -13458,10 +13508,10 @@ $0.78u2 [#158]
 
 $0.78u1 [#157]
 2004/01/04
-4.735 total items, 714 drivers (-1), 4.718 machines (-1/+14), 2.671 parents (+5), 2.047 clones (-1/+9), 17 BIOSes (+2), 0 devices, 30 requires CHDs, 154 use samples, 2.907 audio mono (+6), 1.646 audio stereo (+7), 0 audio multichannel, 165 no audio (+1)
-4.229 working (-1/+12), 489 not working (+2), 0 mechanicals, 4.718 not mechanicals (-1/+16), 0 save supported, 4.718 save unsupported (-1/+14)
-3.228 horizontal screen (+2), 1.506 vertical screen (+12), 4.656 raster graphics (-1/+14), 62 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
-71.013 total roms (+250), 70.961 machines roms (+248), 0 devices roms, 52 BIOSes roms (+2), 30 CHDs, 575 sample files, 32 sample packs, 70.741 good dumps (+273), 175 no dumps (-2), 127 bad dumps (-21), 0 bugs fixed
+4.735 total items, 705 drivers, 4.718 machines (-1/+13), 2.671 parents (+4), 2.047 clones (-1/+9), 17 BIOSes (+2), 0 devices, 29 requires CHDs, 154 use samples (-1/+5), 2.863 audio mono (-1/+3), 1.615 audio stereo (+7), 0 audio multichannel, 240 no audio (+3)
+4.229 working (-1/+11), 489 not working (+2), 0 mechanicals, 4.718 not mechanicals (-1/+13), 0 save supported, 4.718 save unsupported (-1/+13)
+3.248 horizontal screen (+11), 1.470 vertical screen (-1/+2), 4.648 raster graphics (-1/+13), 70 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
+71.080 total roms (+240), 71.028 machines roms (+238), 0 devices roms, 52 BIOSes roms (+2), 30 CHDs (-1), 388 sample files (+4), 33 sample packs (+1), 70.808 good dumps (+262), 175 no dumps (-2), 127 bad dumps (-21), 0 bugs fixed
 4 ren (4/0/0):
 kaitei             > kaiteik           (mID:  1988) M
 kaitein            > kaitei            (mID:  1989) M
@@ -13473,10 +13523,10 @@ nrallyv                                (mID: 44277) M
 
 $0.78 [#156]
 2003/12/25
-4.720 total items, 715 drivers (+5), 4.705 machines (+37), 2.666 parents (+24), 2.039 clones (+13), 15 BIOSes, 0 devices, 30 requires CHDs (+4), 150 use samples, 2.901 audio mono (+17), 1.639 audio stereo (+18), 0 audio multichannel, 165 no audio (+2)
-4.218 working (+87), 487 not working (-50), 0 mechanicals, 4.705 not mechanicals (+37), 0 save supported, 4.705 save unsupported (+37)
-3.226 horizontal screen (+23), 1.494 vertical screen (+29), 4.643 raster graphics (+36), 62 vector graphics (+1), 0 lcd graphics, 0 svg graphics, 0 screenless
-70.763 total roms (+374), 70.713 machines roms (+374), 0 devices roms, 50 BIOSes roms, 30 CHDs (+4), 575 sample files, 32 sample packs, 70.468 good dumps (+376), 177 no dumps (+2), 148 bad dumps, 0 bugs fixed
+4.721 total items, 705 drivers (+5), 4.706 machines (+37), 2.667 parents (+24), 2.039 clones (+13), 15 BIOSes, 0 devices, 29 requires CHDs (+3), 150 use samples, 2.861 audio mono (+17), 1.608 audio stereo (+12), 0 audio multichannel, 237 no audio (+8)
+4.219 working (+28), 487 not working (+9), 0 mechanicals, 4.706 not mechanicals (+37), 0 save supported, 4.706 save unsupported (+37)
+3.237 horizontal screen (+33), 1.469 vertical screen (+4), 4.636 raster graphics (+36), 70 vector graphics (+1), 0 lcd graphics, 0 svg graphics, 0 screenless
+70.840 total roms (+373), 70.790 machines roms (+373), 0 devices roms, 50 BIOSes roms, 31 CHDs (+3), 384 sample files, 32 sample packs, 70.546 good dumps (+374), 177 no dumps (+2), 148 bad dumps, 0 bugs fixed
 8 ren (8/0/0):
 bbkraidu           > bbakradu          (mID:  3398) M
 fhawk              > fhawkj            (mID:  1656) M
@@ -13492,10 +13542,10 @@ prmrsocr           > prmrsocj          (mID:  2990) M
 
 $0.77u3 [#155]
 2003/12/13
-4.683 total items, 710 drivers (+2), 4.668 machines (+8), 2.642 parents (+3), 2.026 clones (+5), 15 BIOSes, 0 devices, 26 requires CHDs, 150 use samples, 2.884 audio mono (+6), 1.621 audio stereo (+2), 0 audio multichannel, 163 no audio
-4.131 working (+6), 537 not working (+2), 0 mechanicals, 4.668 not mechanicals (+8), 0 save supported, 4.668 save unsupported (+8)
-3.203 horizontal screen (+5), 1.465 vertical screen (+3), 4.607 raster graphics (+8), 61 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
-70.389 total roms (+115), 70.339 machines roms (+115), 0 devices roms, 50 BIOSes roms, 26 CHDs, 575 sample files, 32 sample packs, 70.092 good dumps (+111), 175 no dumps (+1), 148 bad dumps (+3), 0 bugs fixed
+4.684 total items, 700 drivers (+2), 4.669 machines (+8), 2.643 parents (+3), 2.026 clones (+5), 15 BIOSes, 0 devices, 26 requires CHDs, 150 use samples, 2.844 audio mono (-7), 1.596 audio stereo (+28), 0 audio multichannel, 229 no audio (-13)
+4.191 working (+8), 478 not working, 0 mechanicals, 4.669 not mechanicals (+8), 0 save supported, 4.669 save unsupported (+8)
+3.204 horizontal screen (+5), 1.465 vertical screen (+3), 4.600 raster graphics (+8), 69 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
+70.467 total roms (+115), 70.417 machines roms (+115), 0 devices roms, 50 BIOSes roms, 28 CHDs, 384 sample files, 32 sample packs, 70.172 good dumps (+111), 175 no dumps (+1), 148 bad dumps (+3), 0 bugs fixed
 3 ren (3/0/0):
 bbakraid           > bbkraidu          (mID:  3398) M
 bbakrada           > bbakraid          (mID:  3399) M
@@ -13506,10 +13556,10 @@ rollrace           > rollace           (mID:  2746) M
 
 $0.77u2 [#154]
 2003/12/01
-4.675 total items, 708 drivers (+3), 4.660 machines (+14), 2.639 parents (+12), 2.021 clones (+2), 15 BIOSes, 0 devices, 26 requires CHDs (+2), 150 use samples, 2.878 audio mono (+4), 1.619 audio stereo (+7), 0 audio multichannel, 163 no audio (+3)
-4.125 working (+10), 535 not working (+4), 0 mechanicals, 4.660 not mechanicals (+14), 0 save supported, 4.660 save unsupported (+14)
-3.198 horizontal screen (+12), 1.462 vertical screen (+2), 4.599 raster graphics (+14), 61 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
-70.274 total roms (+157), 70.224 machines roms (+157), 0 devices roms, 50 BIOSes roms, 26 CHDs (+2), 575 sample files, 32 sample packs, 69.981 good dumps (+158), 174 no dumps (+1), 145 bad dumps, 0 bugs fixed
+4.676 total items, 698 drivers (+2), 4.661 machines (+14), 2.640 parents (+12), 2.021 clones (+2), 15 BIOSes, 0 devices, 26 requires CHDs (+3), 150 use samples, 2.851 audio mono (+3), 1.568 audio stereo (+8), 0 audio multichannel, 242 no audio (+3)
+4.183 working (+9), 478 not working (+5), 0 mechanicals, 4.661 not mechanicals (+14), 0 save supported, 4.661 save unsupported (+14)
+3.199 horizontal screen (+12), 1.462 vertical screen (+2), 4.592 raster graphics (+14), 69 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
+70.352 total roms (+157), 70.302 machines roms (+157), 0 devices roms, 50 BIOSes roms, 28 CHDs (+3), 384 sample files, 32 sample packs, 70.061 good dumps (+159), 174 no dumps (+1), 145 bad dumps, 0 bugs fixed
 1 ren (1/0/0):
 qwakprot           > qwak              (mID:   909) M
 0 del (0/0/0):
@@ -13518,10 +13568,10 @@ qwakprot           > qwak              (mID:   909) M
 
 $0.77u1 [#153] [Internal Release]
 2003/11/21
-4.661 total items, 705 drivers, 4.646 machines (+6), 2.627 parents (+5), 2.019 clones (+1), 15 BIOSes, 0 devices, 24 requires CHDs (+3), 150 use samples, 2.874 audio mono, 1.612 audio stereo (+6), 0 audio multichannel, 160 no audio
-4.115 working (+5), 531 not working (+1), 0 mechanicals, 4.646 not mechanicals (+6), 0 save supported, 4.646 save unsupported (+6)
-3.186 horizontal screen (+6), 1.460 vertical screen, 4.585 raster graphics (+6), 61 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
-70.117 total roms (+85), 70.067 machines roms (+85), 0 devices roms, 50 BIOSes roms, 24 CHDs (+3), 575 sample files, 32 sample packs, 69.823 good dumps (+85), 173 no dumps (+2), 145 bad dumps (+1), 0 bugs fixed
+4.662 total items, 696 drivers, 4.647 machines (+7), 2.628 parents (+6), 2.019 clones (+1), 15 BIOSes, 0 devices, 23 requires CHDs (+2), 150 use samples, 2.848 audio mono, 1.560 audio stereo (+6), 0 audio multichannel, 239 no audio (+1)
+4.174 working (+11), 473 not working (-4), 0 mechanicals, 4.647 not mechanicals (+7), 0 save supported, 4.647 save unsupported (+7)
+3.187 horizontal screen (+7), 1.460 vertical screen, 4.578 raster graphics (+7), 69 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
+70.195 total roms (+95), 70.145 machines roms (+95), 0 devices roms, 50 BIOSes roms, 25 CHDs (+4), 384 sample files, 32 sample packs, 69.902 good dumps (+96), 173 no dumps (+2), 145 bad dumps (+1), 0 bugs fixed
 0 ren (0/0/0):
 -
 0 del (0/0/0):
@@ -13542,10 +13592,10 @@ $0.77 [#152]
 
 $0.76u2 [#151]
 2003/11/01
-4.623 total items, 693 drivers (+2), 4.608 machines (+2), 2.600 parents (+2), 2.008 clones, 15 BIOSes, 0 devices, 15 requires CHDs, 150 use samples, 2.830 audio mono (+1), 1.548 audio stereo, 0 audio multichannel, 230 no audio (+1)
-4.147 working (+1), 461 not working (+1), 0 mechanicals, 4.608 not mechanicals (+2), 0 save supported, 4.608 save unsupported (+2)
+4.623 total items, 693 drivers (+1), 4.608 machines (+2), 2.600 parents (+2), 2.008 clones, 15 BIOSes, 0 devices, 15 requires CHDs, 150 use samples, 2.830 audio mono (+3), 1.548 audio stereo (+3), 0 audio multichannel, 230 no audio (-4)
+4.147 working (+9), 461 not working (-7), 0 mechanicals, 4.608 not mechanicals (+2), 0 save supported, 4.608 save unsupported (+2)
 3.148 horizontal screen (+1), 1.460 vertical screen (+1), 4.539 raster graphics (+2), 69 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
-69.719 total roms (+24), 69.669 machines roms (+24), 0 devices roms, 50 BIOSes roms, 15 CHDs, 384 sample files (+11), 32 sample packs (+1), 69.451 good dumps (+24), 136 no dumps, 147 bad dumps, 0 bugs fixed
+69.719 total roms (+24), 69.669 machines roms (+24), 0 devices roms, 50 BIOSes roms, 15 CHDs, 384 sample files (+6), 32 sample packs, 69.451 good dumps (+24), 136 no dumps, 147 bad dumps, 0 bugs fixed
 0 ren (0/0/0):
 -
 0 del (0/0/0):
@@ -13554,10 +13604,10 @@ $0.76u2 [#151]
 
 $0.76u1 [#150]
 2003/10/25
-4.621 total items, 700 drivers (+1), 4.606 machines (-1/+108), 2.598 parents (+4), 2.008 clones (-1/+104), 15 BIOSes, 0 devices, 15 requires CHDs (+1), 148 use samples (+1), 2.864 audio mono (-1/+51), 1.584 audio stereo (+56), 0 audio multichannel, 158 no audio (+1)
-4.082 working (+107), 524 not working, 0 mechanicals, 4.606 not mechanicals (+107), 0 save supported, 4.606 save unsupported (+107)
-3.156 horizontal screen (+103), 1.450 vertical screen (+4), 4.545 raster graphics (-1/+107), 61 vector graphics (+1), 0 lcd graphics, 0 svg graphics, 0 screenless
-69.627 total roms (+2857), 69.577 machines roms (+2857), 0 devices roms, 50 BIOSes roms, 15 CHDs (+1), 564 sample files, 30 sample packs, 69.359 good dumps (+2849), 136 no dumps (+5), 147 bad dumps (+4), 0 bugs fixed
+4.621 total items, 692 drivers (+2), 4.606 machines (-1/+108), 2.598 parents (+4), 2.008 clones (-1/+104), 15 BIOSes, 0 devices, 15 requires CHDs (+1), 150 use samples (+3), 2.827 audio mono (-1/+52), 1.545 audio stereo (+100), 0 audio multichannel, 234 no audio (-44)
+4.138 working (-1/+110), 468 not working (-2), 0 mechanicals, 4.606 not mechanicals (-1/+108), 0 save supported, 4.606 save unsupported (-1/+108)
+3.147 horizontal screen (-1/+95), 1.459 vertical screen (+13), 4.537 raster graphics (-1/+107), 69 vector graphics (+1), 0 lcd graphics, 0 svg graphics, 0 screenless
+69.695 total roms (+2857), 69.645 machines roms (+2857), 0 devices roms, 50 BIOSes roms, 15 CHDs (+1), 378 sample files, 32 sample packs (+1), 69.427 good dumps (+2849), 136 no dumps (+5), 147 bad dumps (+4), 0 bugs fixed
 11 ren (11/0/0):
 720b               > 720r3             (mID:   766) M
 apb                > apb5              (mID:   539) M
@@ -13576,10 +13626,10 @@ racedrvc                               (mID:  3575) M
 
 $0.76 [#149]
 2003/10/19
-4.514 total items, 699 drivers (+1), 4.499 machines (+25), 2.594 parents (+1), 1.905 clones (+24), 15 BIOSes, 0 devices, 14 requires CHDs, 147 use samples (+1), 2.814 audio mono (+2), 1.528 audio stereo (+23), 0 audio multichannel, 157 no audio
-3.975 working (+33), 524 not working (-8), 0 mechanicals, 4.499 not mechanicals (+25), 0 save supported, 4.499 save unsupported (+25)
-3.053 horizontal screen (+22), 1.446 vertical screen (+3), 4.439 raster graphics (+25), 60 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
-66.770 total roms (+477), 66.720 machines roms (+477), 0 devices roms, 50 BIOSes roms, 14 CHDs, 564 sample files, 30 sample packs, 66.510 good dumps (+476), 131 no dumps, 143 bad dumps (+1), 0 bugs fixed
+4.514 total items, 690 drivers (+1), 4.499 machines (+25), 2.594 parents (+1), 1.905 clones (+24), 15 BIOSes, 0 devices, 14 requires CHDs, 147 use samples (+1), 2.776 audio mono (+2), 1.445 audio stereo (+23), 0 audio multichannel, 278 no audio
+4.029 working (+33), 470 not working (-8), 0 mechanicals, 4.499 not mechanicals (+25), 0 save supported, 4.499 save unsupported (+25)
+3.053 horizontal screen (+22), 1.446 vertical screen (+3), 4.431 raster graphics (+25), 68 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
+66.838 total roms (+477), 66.788 machines roms (+477), 0 devices roms, 50 BIOSes roms, 14 CHDs, 378 sample files, 31 sample packs, 66.578 good dumps (+476), 131 no dumps, 143 bad dumps (+1), 0 bugs fixed
 2 ren (2/0/0):
 gauntir1           > gauntr5           (mID:   391) M
 gauntir2           > gauntr7           (mID:   392) M
@@ -13589,10 +13639,10 @@ gauntir2           > gauntr7           (mID:   392) M
 
 $0.75u1 [#148]
 2003/10/14
-4.489 total items, 698 drivers (+1), 4.474 machines (+1), 2.593 parents (+1), 1.881 clones, 15 BIOSes, 0 devices, 14 requires CHDs, 146 use samples, 2.812 audio mono (+1), 1.505 audio stereo, 0 audio multichannel, 157 no audio
-3.942 working (+1), 532 not working, 0 mechanicals, 4.474 not mechanicals (+1), 0 save supported, 4.474 save unsupported (+1)
-3.031 horizontal screen, 1.443 vertical screen (+1), 4.414 raster graphics (+1), 60 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
-66.293 total roms (+17), 66.243 machines roms (+17), 0 devices roms, 50 BIOSes roms, 14 CHDs, 564 sample files, 30 sample packs, 66.034 good dumps (+20), 131 no dumps (-3), 142 bad dumps, 0 bugs fixed
+4.489 total items, 689 drivers (+1), 4.474 machines (+1), 2.593 parents (+1), 1.881 clones, 15 BIOSes, 0 devices, 14 requires CHDs, 146 use samples, 2.774 audio mono (+1), 1.422 audio stereo (+1), 0 audio multichannel, 278 no audio (-1)
+3.996 working, 478 not working (+1), 0 mechanicals, 4.474 not mechanicals (+1), 0 save supported, 4.474 save unsupported (+1)
+3.031 horizontal screen, 1.443 vertical screen (+1), 4.406 raster graphics (+1), 68 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
+66.361 total roms (+17), 66.311 machines roms (+17), 0 devices roms, 50 BIOSes roms, 14 CHDs, 378 sample files, 31 sample packs, 66.102 good dumps (+20), 131 no dumps (-3), 142 bad dumps, 0 bugs fixed
 0 ren (0/0/0):
 -
 0 del (0/0/0):
@@ -13601,10 +13651,10 @@ $0.75u1 [#148]
 
 $0.75 [#147]
 2003/10/13
-4.488 total items, 697 drivers (+2), 4.473 machines (+26), 2.592 parents (+1), 1.881 clones (+25), 15 BIOSes, 0 devices, 14 requires CHDs, 146 use samples (+1), 2.811 audio mono (+21), 1.505 audio stereo (+3), 0 audio multichannel, 157 no audio (+2)
-3.941 working (-238), 532 not working (+264), 0 mechanicals, 4.473 not mechanicals (+26), 0 save supported, 4.473 save unsupported (+26)
-3.031 horizontal screen (+33), 1.442 vertical screen (-7), 4.413 raster graphics (+24), 60 vector graphics (+2), 0 lcd graphics, 0 svg graphics, 0 screenless
-66.276 total roms (+476), 66.226 machines roms (+475), 0 devices roms, 50 BIOSes roms (+1), 14 CHDs, 564 sample files, 30 sample packs, 66.014 good dumps (+472), 134 no dumps (+3), 142 bad dumps (+1), 0 bugs fixed
+4.488 total items, 688 drivers (+1), 4.473 machines (+26), 2.592 parents (+1), 1.881 clones (+25), 15 BIOSes, 0 devices, 14 requires CHDs, 146 use samples (+1), 2.773 audio mono (+22), 1.421 audio stereo (+3), 0 audio multichannel, 279 no audio (+1)
+3.996 working (-57), 477 not working (+83), 0 mechanicals, 4.473 not mechanicals (+26), 0 save supported, 4.473 save unsupported (+26)
+3.031 horizontal screen (+18), 1.442 vertical screen (+8), 4.405 raster graphics (+24), 68 vector graphics (+2), 0 lcd graphics, 0 svg graphics, 0 screenless
+66.344 total roms (+476), 66.294 machines roms (+475), 0 devices roms, 50 BIOSes roms (+1), 14 CHDs, 378 sample files, 31 sample packs, 66.082 good dumps (+472), 134 no dumps (+3), 142 bad dumps (+1), 0 bugs fixed
 6 ren (6/0/0):
 canbprot           > canyonp           (mID: 1105) M
 digdugat           > digduga1          (mID:  153) M
@@ -13619,9 +13669,9 @@ msh                > mshu              (mID: 2725) M
 $0.74u2 [#146]
 2003/10/06
 4.462 total items, 687 drivers (+34), 4.447 machines (-1/+314), 2.591 parents (-1/+241), 1.856 clones (+73), 15 BIOSes, 0 devices, 14 requires CHDs (-1/+1), 145 use samples (+5), 2.751 audio mono (+108), 1.418 audio stereo (-1/+97), 0 audio multichannel, 278 no audio (+109)
-4.053 working (-1/+95), 394 not working (+219), 0 mechanicals, 4.447 not mechanicals (-1/+314), 0 save supported, 4.447 save unsupported (+313)
+4.053 working (-1/+95), 394 not working (+219), 0 mechanicals, 4.447 not mechanicals (-1/+314), 0 save supported, 4.447 save unsupported (-1/+314)
 3.013 horizontal screen (-1/+270), 1.434 vertical screen (+44), 4.381 raster graphics (-1/+314), 66 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
-65.868 total roms (+4283), 65.819 machines roms (+4283), 0 devices roms, 49 BIOSes roms, 14 CHDs, 378 sample files (+5), 31 sample packs (+1), 65.610 good dumps (+4352), 131 no dumps (+14), 141 bad dumps (+19), 0 bugs fixed
+65.868 total roms (+4283), 65.819 machines roms (+4283), 0 devices roms, 49 BIOSes roms, 14 CHDs, 378 sample files (+5), 31 sample packs (+1), 65.610 good dumps (+4250), 131 no dumps (+14), 141 bad dumps (+19), 0 bugs fixed
 3 ren (3/0/0):
 mimonkey           > mimonscr          (mID:  3657) M
 mimonksc           > mimonsco          (mID:  3658) M
@@ -13714,7 +13764,7 @@ $0.71u3p [#139] [Internal Release]
 2003/08/07
 4.084 total items, 644 drivers (+3), 4.069 machines (+16), 2.308 parents (+8), 1.761 clones (+8), 15 BIOSes, 0 devices, 9 requires CHDs, 139 use samples, 2.589 audio mono (+10), 1.318 audio stereo (+4), 0 audio multichannel, 162 no audio (+2)
 3.920 working (+14), 149 not working (+2), 0 mechanicals, 4.069 not mechanicals (+16), 0 save supported, 4.069 save unsupported (+16)
-2.694 horizontal screen (+11), 1.375 vertical screen (+5), 4.003 raster graphics (+16), 58 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
+2.694 horizontal screen (+11), 1.375 vertical screen (+5), 4.003 raster graphics (+16), 66 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
 61.078 total roms (+252), 61.032 machines roms (+252), 0 devices roms, 46 BIOSes roms, 9 CHDs, 428 sample files, 30 sample packs, 60.841 good dumps (+243), 130 no dumps (+9), 116 bad dumps, 0 bugs fixed
 1 ren (1/0/0):
 dogfgt             > dogfgtj           (mID:  3415) M
@@ -13725,7 +13775,7 @@ dogfgt             > dogfgtj           (mID:  3415) M
 $0.71u2 [#138]
 2003/07/12
 4.068 total items, 641 drivers (+6), 4.053 machines (-1/+27), 2.300 parents (+19), 1.753 clones (-1/+8), 15 BIOSes (+7), 0 devices, 9 requires CHDs (+1), 139 use samples, 2.579 audio mono (+18), 1.314 audio stereo (-1/+9), 0 audio multichannel, 160 no audio
-3.906 working (-1/+12), 147 not working (+15), 0 mechanicals, 4.053 not mechanicals (-1/+27), 0 save supported, 4.053 save unsupported (+26)
+3.906 working (-1/+12), 147 not working (+15), 0 mechanicals, 4.053 not mechanicals (-1/+27), 0 save supported, 4.053 save unsupported (-1/+27)
 2.683 horizontal screen (-1/+25), 1.370 vertical screen (+2), 3.987 raster graphics (-1/+27), 66 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
 60.826 total roms (+272), 60.780 machines roms (+263), 0 devices roms, 46 BIOSes roms (+9), 9 CHDs (+1), 428 sample files, 30 sample packs, 60.598 good dumps (+259), 121 no dumps (+12), 116 bad dumps (+2), 0 bugs fixed
 4 ren (4/0/0):
@@ -13754,7 +13804,7 @@ $0.71 [#136]
 4.032 total items, 635 drivers (+2), 4.024 machines (+10), 2.279 parents (+2), 1.745 clones (+8), 8 BIOSes, 0 devices, 8 requires CHDs (+1), 139 use samples, 2.559 audio mono (+2), 1.305 audio stereo (+6), 0 audio multichannel, 160 no audio (+2)
 3.891 working (+9), 133 not working (+1), 0 mechanicals, 4.024 not mechanicals (+10), 0 save supported, 4.024 save unsupported (+10)
 2.656 horizontal screen (+7), 1.368 vertical screen (+3), 3.958 raster graphics (+10), 66 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
-60.506 total roms (+147), 60.469 machines roms (+144), 0 devices roms, 37 BIOSes roms, 8 CHDs (+1), 428 sample files, 30 sample packs, 60.293 good dumps (+146), 109 no dumps, 112 bad dumps (+2), 0 bugs fixed
+60.506 total roms (+147), 60.469 machines roms (+147), 0 devices roms, 37 BIOSes roms, 8 CHDs (+1), 428 sample files, 30 sample packs, 60.293 good dumps (+146), 109 no dumps, 112 bad dumps (+2), 0 bugs fixed
 3 ren (3/0/0):
 maxforce           > maxf_102          (mID:  3559) M
 sengekis           > sengekij          (mID:  3584) M
@@ -15323,7 +15373,7 @@ $0.33b1 [#037] [Public betas started; the series of betas were sometimes followe
 1998/05/03
 493 total items, 182 drivers (+4), 493 machines (+15), 318 parents (+8), 175 clones (+7), 0 BIOSes, 0 devices, 0 requires CHDs, 59 use samples (-1), 362 audio mono (+13), 34 audio stereo, 0 audio multichannel, 97 no audio (+2)
 430 working (+14), 63 not working (+1), 0 mechanicals, 493 not mechanicals (+15), 0 save supported, 493 save unsupported (+15)
-204 horizontal screen (+9), 280 vertical screen (+6), 475 raster graphics (+15), 18 vector graphics, 0 lcd graphics, 0 svg graphics, 5 screenless
+204 horizontal screen (+9), 280 vertical screen (+6), 442 raster graphics (+11), 46 vector graphics (+4), 0 lcd graphics, 0 svg graphics, 5 screenless
 6.059 total roms (+203), 6.059 machines roms (+203), 0 devices roms, 0 BIOSes roms, 0 CHDs, 225 sample files, 19 sample packs, 6.052 good dumps (+203), 7 no dumps, 0 bad dumps, 0 bugs fixed
 1 ren (1/0/0):
 tutankhm           > tutankst          (mID:   144) M
@@ -15411,7 +15461,7 @@ $0.26 [#030] [First vector graphics added to MAME]
 167 total items, 82 drivers (+13), 167 machines (+21), 112 parents (+17), 55 clones (+4), 0 BIOSes, 0 devices, 0 requires CHDs, 27 use samples (-1), 99 audio mono (+17), 1 audio stereo, 0 audio multichannel, 67 no audio (+4)
 144 working (+20), 23 not working (+1), 0 mechanicals, 167 not mechanicals (+21), 0 save supported, 167 save unsupported (+21)
 40 horizontal screen (+13), 126 vertical screen (+8), 158 raster graphics (+13), 8 vector graphics (+8), 0 lcd graphics, 0 svg graphics, 1 screenless
-1.742 total roms (+181), 1.742 machines roms (+181), 0 devices roms, 0 BIOSes roms, 0 CHDs, 144 sample files, 7 sample packs, 1.742 good dumps (+181), 0 no dumps, 0 bad dumps, 0 bugs fixed
+1.742 total roms (+181), 1.742 machines roms (+181), 0 devices roms, 0 BIOSes roms, 0 CHDs, 144 sample files, 7 sample packs (-1), 1.742 good dumps (+181), 0 no dumps, 0 bad dumps, 0 bugs fixed
 0 ren (0/0/0):
 -
 0 del (0/0/0):
@@ -15422,7 +15472,7 @@ $0.25 [#029]
 1997/06/28
 146 total items, 69 drivers (+7), 146 machines (+12), 95 parents (+10), 51 clones (+2), 0 BIOSes, 0 devices, 0 requires CHDs, 28 use samples (+4), 82 audio mono (+6), 1 audio stereo, 0 audio multichannel, 63 no audio (+6)
 124 working (+9), 22 not working (+3), 0 mechanicals, 146 not mechanicals (+12), 0 save supported, 146 save unsupported (+12)
-27 horizontal screen, 118 vertical screen (+12), 145 raster graphics (+12), 0 vector graphics, 0 lcd graphics, 0 svg graphics, 1 screenless (+1)
+27 horizontal screen, 118 vertical screen (+12), 145 raster graphics (+12), 0 vector graphics, 0 lcd graphics, 0 svg graphics, 1 screenless
 1.561 total roms (+145), 1.561 machines roms (+145), 0 devices roms, 0 BIOSes roms, 0 CHDs, 144 sample files (+1), 8 sample packs (+2), 1.561 good dumps (+145), 0 no dumps, 0 bad dumps, 0 bugs fixed
 0 ren (0/0/0):
 -
@@ -15432,9 +15482,9 @@ $0.25 [#029]
 
 $0.24 [#028]
 1997/06/13
-134 total items, 62 drivers (+2), 134 machines (+10), 85 parents (+8), 49 clones (+2), 0 BIOSes, 0 devices, 0 requires CHDs, 24 use samples (+5), 76 audio mono (+11), 1 audio stereo, 0 audio multichannel, 57 no audio
+134 total items, 62 drivers (+2), 134 machines (+10), 85 parents (+8), 49 clones (+2), 0 BIOSes, 0 devices, 0 requires CHDs, 24 use samples (+5), 76 audio mono (+11), 1 audio stereo, 0 audio multichannel, 57 no audio (-1)
 115 working (+11), 19 not working (-1), 0 mechanicals, 134 not mechanicals (+10), 0 save supported, 134 save unsupported (+10)
-27 horizontal screen (+5), 106 vertical screen (+4), 134 raster graphics (+10), 0 vector graphics, 0 lcd graphics, 0 svg graphics, 1 screenless (+1)
+27 horizontal screen (+5), 106 vertical screen (+4), 133 raster graphics (+9), 0 vector graphics, 0 lcd graphics, 0 svg graphics, 1 screenless (+1)
 1.416 total roms (+141), 1.416 machines roms (+141), 0 devices roms, 0 BIOSes roms, 0 CHDs, 143 sample files (+1), 6 sample packs, 1.416 good dumps (+141), 0 no dumps, 0 bad dumps, 0 bugs fixed
 1 ren (1/0/0):
 kungfum            > kungfub           (mID:   119) M
@@ -15471,7 +15521,7 @@ $0.22 [#025]
 118 total items, 57 drivers (+3), 118 machines (+6), 72 parents (+4), 46 clones (+2), 0 BIOSes, 0 devices, 0 requires CHDs, 16 use samples (+2), 62 audio mono (+7), 1 audio stereo, 0 audio multichannel, 55 no audio (-1)
 96 working (+6), 22 not working, 0 mechanicals, 118 not mechanicals (+6), 0 save supported, 118 save unsupported (+6)
 18 horizontal screen (+2), 100 vertical screen (+4), 118 raster graphics (+6), 0 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless
-1.195 total roms (+82), 1.195 machines roms (+82), 0 devices roms, 0 BIOSes roms, 0 CHDs, 79 sample files (+3), 5 sample packs, 1.195 good dumps (+82), 0 no dumps, 0 bad dumps, 0 bugs fixed
+1.195 total roms (+82), 1.195 machines roms (+82), 0 devices roms, 0 BIOSes roms, 0 CHDs, 79 sample files (+3), 5 sample packs (+2), 1.195 good dumps (+82), 0 no dumps, 0 bad dumps, 0 bugs fixed
 0 ren (0/0/0):
 -
 0 del (0/0/0):
