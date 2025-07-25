@@ -7,12 +7,12 @@ MAME Support Files v0.278
 The following files have been updated in this MAME cycle:
 
 - Category pack
+- CatVer pack
 - CHD-Info pack
 - Version pack
 
 Still in process:
 
-- CatVer pack
 - gameinit.dat
 - Languages.ini
 - MESS-Info.dat
