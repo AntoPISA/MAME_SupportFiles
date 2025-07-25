@@ -1,4 +1,4 @@
-﻿MAME CHD-Info v0.277
+﻿MAME CHD-Info v0.278
 progetto-SNAPS © 2016/2025 AntoPISA
 =====================================
 
