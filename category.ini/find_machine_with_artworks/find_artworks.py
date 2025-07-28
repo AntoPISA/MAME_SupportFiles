@@ -4,6 +4,7 @@ from tkinter import filedialog
 import os
 import sys
 from datetime import datetime
+import re
 
 def main():
     # Crea una finestra Tkinter nascosta per la dialog di selezione file
@@ -41,6 +42,24 @@ def main():
         # Conta le macchine trovate
         count = len(machines_with_artwork)
         
+        # Estrai il numero di versione dal nome del file
+        # Cerca un pattern come "mame_717_0.278.xml" o "mame0.278.xml" o "mame_278.xml"
+        filename = os.path.basename(file_path)
+        version = "xxx"  # valore di default
+        
+        # Pattern per cercare numeri dopo il punto o underscore
+        patterns = [
+            r'[_\.]0\.(\d{3})',  # cerca _0.278 o .0.278
+            r'[_\.](\d{3})[^\.]*$',  # cerca _278 alla fine
+            r'(\d{3})'  # cerca qualsiasi sequenza di 3 cifre
+        ]
+        
+        for pattern in patterns:
+            match = re.search(pattern, filename)
+            if match:
+                version = match.group(1)
+                break
+        
         # Prepara il contenuto del file ini con l'intestazione richiesta
         # Ottieni la data corrente per l'intestazione
         current_date = datetime.now().strftime("%d-%b-%y")
@@ -49,11 +68,11 @@ def main():
 RootFolderIcon mame
 SubFolderIcon folder
 
-;; ARTWORKNECESSARY.ini 0.xxx / {} / MAME 0.xxx ;;
+;; ARTWORKNECESSARY.ini 0.{} / {} / MAME 0.{} ;;
 ;; List of MAME machines that need Artwork ;;
 
 [ROOT_FOLDER]
-""".format(current_date)
+""".format(version, current_date, version)
         
         # Aggiungi i nomi delle macchine, uno per riga
         output_content += '\n'.join(machines_with_artwork)
@@ -70,6 +89,7 @@ SubFolderIcon folder
         # Mostra i risultati
         print(f"\nAnalisi completata!")
         print(f"Numero di macchine trovate: {count}")
+        print(f"Versione MAME rilevata: {version}")
         print(f"File ini creato: {output_path}")
         print("(File formattato come ini con intestazione)")
         
