@@ -11,12 +11,12 @@ The following files have been updated in this MAME cycle:
 - CHD-Info pack
 - Languages.ini
 - Version pack
+- Series.ini 
 
 Still in process:
 
 - gameinit.dat
 - MESS-Info.dat
-- Series.ini 
 
 Home-page: https://www.progettosnaps.net/support/
 Github   : https://github.com/AntoPISA/MAME_SupportFiles

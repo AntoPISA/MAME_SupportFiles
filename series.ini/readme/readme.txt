@@ -1,4 +1,4 @@
-﻿MAME SERIES.ini 0.277 (May  8, 2025)
+﻿MAME SERIES.ini 0.278 (Jul 29, 2025)
 © AntoPISA     www.progettoSNAPS.net
 ==================================== 
 
@@ -12,11 +12,16 @@ In the file are both "Series" recognized as such (thus games and their official 
 guages or with minor variations (official and unofficial).
 
 
+2025/07/29 11.05 MAME 0.278 (716 supported Series - 12,209 items):
+==================================================================
+Series UPDATED  (18) : After Burner, Cal Omega, Cherry Bonus * Slot, Defender, Galaxian, Knights of Valour, Long Hu Bang, Lucky 8 Lines, Moon Cresta, Power Drift, Puzz Loop, Rock'n Tread, Space Invaders, Splash!, Super Mario Bros., Tekken, Thunder Hoop and World Rally.
+Serie NEW        (1) : Bang.
+
+
 2025/05/08 11.04 MAME 0.277 (715 supported Series - 12,152 items):
 ==================================================================
 Items RENAMED    (4) : (chleagul) to (chleaguel), (chleagxa) to (chleaguexa), (chleagxb) to (chleaguexb) and (megat) to (megata).
 Series UPDATED  (14) : "Amidar", "Champion Poker", "Crazy Bugs * Slot", "Cruis'n USA", "Gunlock", "Head On", "Joker Poker", "King of Fighters", "Long Hu Bang", "MegaTouch", "Phoenix", "Rail Chase", "Space Invaders" and "Street Fighter".
-
 
 2025/04/07 11.03 MAME 0.276 (715 supported Series - 12,136 items):
 ==================================================================
