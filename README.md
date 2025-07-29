@@ -9,12 +9,12 @@ The following files have been updated in this MAME cycle:
 - Category pack
 - CatVer pack
 - CHD-Info pack
+- Languages.ini
 - Version pack
 
 Still in process:
 
 - gameinit.dat
-- Languages.ini
 - MESS-Info.dat
 - Series.ini 
 
