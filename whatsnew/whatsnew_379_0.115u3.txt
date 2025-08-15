@@ -2,12 +2,12 @@
 ---------------------------------------
 
 
-New games added or promoted from NOT_WORKING status
+New Games Added or Promoted from NOT_WORKING Status
 ---------------------------------------------------
 Wild Arrow [Zsolt Vasvari]
 G-Stream G2020 [David Haywood]
 
-New clones added
+New Clones Added
 ----------------
 Multi Game (set 2) [Roberto Fresca]
 19XX: The War Against Destiny (Brazil 951218) [Nicola Salmoria]
@@ -16,9 +16,9 @@ Flicky (128k Version, System 2, not encrypted) [Corrado Tomaselli]
 Flicky (64k Version, System 1, 315-5051, set 2) [Corrado Tomaselli]
 
 
-MAMETesters Bug Fixed (1):
---------------------------
-connect4_0115u1ora [Luigi30]
+MAME Testers Bug Fixed (1):
+---------------------------
+- connect4_0115u1ora [Luigi30]
 
 
 Source changes:
@@ -29,18 +29,18 @@ Source changes:
 - Fixed subtle behavior in handling of PIA port A. This allows for the removal of hacks in the Qix driver and the Williams driver [Zsolt Vasvari].
 - Cleaned up the tilemap get_info callbacks [Atari Ace]:
   * Regularized and clean up the existing callbacks.
-  * Changed some callbacks to use int tile_index as the parameter so that all callbacks use consistent naming.
-  * Folded some direct uses of tile_info.flags into calls to SET_TILE_INFO().
-  * Changed the Konami drivers to manipulate the tile_info global only within the tile_get_info callbacks.
-  * Replaced all the callback declarations with TILE_GET_INFO() wrappers.
+  * Changed some callbacks to use int tile_index as the parameter so that all callbacks use consistent naming;
+  * Folded some direct uses of tile_info.flags into calls to SET_TILE_INFO();
+  * Changed the Konami drivers to manipulate the tile_info global only within the tile_get_info callbacks;
+  * Replaced all the callback declarations with TILE_GET_INFO() wrappers;
   * Changed the interface to pass tile_info as a parameter and made tile_info a static variable only accessible inside tilemap.c.
 - Significant changes to the berzerk driver [Zsolt Vasvari]:
-  * Video timings, memory map and interrupt system implemented from schematics.
+  * Video timings, memory map and interrupt system implemented from schematics;
   * Hooked up colors according to the schematics as well. The colors changed significantly. For example the yellow robots are now more like a mustard color.
 - More ARM wrestling [R. Belmont]:
-  * Fixed error in carry propagation on ALU opcodes of the form ALU r1, r2, r3 SHIFTEROP #imm.
-  * Fixed Thumb ADD instructions where the PC is involved.
-  * Fixed LDMIA to mask off bits 0 and 1 of the destination address.
+  * Fixed error in carry propagation on ALU opcodes of the form ALU r1, r2, r3 SHIFTEROP #imm;
+  * Fixed Thumb ADD instructions where the PC is involved;
+  * Fixed LDMIA to mask off bits 0 and 1 of the destination address;
   * MSR instruction now properly respects processor mode and field code flags.
 - Modernized the Beam Invaders, Clay Shoot, and Embargo drivers [Zsolt Vasvari].
 - Changed the sound balance in Thunder Dragon 2 to match the original PCB. Also verified the 68000 clock [Corrado Tomaselli].
@@ -52,11 +52,11 @@ Source changes:
 - Fixed bug that failed to initialize all IRQ states in the 6809 core on a reset. Also fixed cycle timing and removed obsolete code from the core [Ernesto Corvi, Zsolt Vasvari].
 - Cleaned up vec_mult implementation [Nathan Woods].
 - Improved toratora driver [Zsolt Vasvari]:
-  * Added SN76477 from the schematics, but it sounds terrible; no doubt the schematics are incorrect in many places.
+  * Added SN76477 from the schematics, but it sounds terrible; no doubt the schematics are incorrect in many places;
   * Updated to the recent PIA changes.
 - Fixed input.c to use osd_ticks() instead of clock() [Nathan Woods].
 - Fixed bit calculation in 6526cia.c which broke joysticks in the C64 driver in MESS [Pete Rittwage].
 - Improvements to the rd2tank driver [Zsolt Vasvari]:
-  * Fixed colors, based on the Red Tank flyer.
-  * Added AY8910's, sounds fine, but how exactly they are hooked up to the PIA is not fully understood.
+  * Fixed colors, based on the Red Tank flyer;
+  * Added AY8910's, sounds fine, but how exactly they are hooked up to the PIA is not fully understood;
   * Hooked up CRTC properly.

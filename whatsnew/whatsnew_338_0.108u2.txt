@@ -2,24 +2,24 @@
 ---------------------------------------
 
 
-New games added or promoted from NOT_WORKING status
+New Games Added or Promoted from NOT_WORKING Status
 ---------------------------------------------------
 Carrera (Version 6.7) [David Haywood]
 Swinging Singles [Pierpaolo Prazzoli]
 
-New clones added
+New Clones Added
 ----------------
 Lethal Enforcers (4 sets) [Patrik Styrnell, David Haywood]
 Muroge Monaco (set 2) [Roberto Fresca]
 
 
-MAMETesters Bugs Fixed (5):
----------------------------
-botanic080u1gra (robiza)
-deadang0108u1red (Aaron Giles)
-dooyong0108u1red (Aaron Giles)
-loadstate0108u1red([Aaron Giles)
-pang337b15gre (robiza)
+MAME Testers Bugs Fixed (5):
+----------------------------
+- botanic080u1gra (robiza)
+- deadang0108u1red (Aaron Giles)
+- dooyong0108u1red (Aaron Giles)
+- loadstate0108u1red([Aaron Giles)
+- pang337b15gre (robiza)
 
 
 Source changes:
@@ -34,8 +34,8 @@ Source changes:
 - Added new option -multithreading (-mt) which enables the previous multithreaded rendering code. This code has had problems on some systems, especially pre-XP systems, so consider it experimental. If you want to help debug issues, enable LOG_THREADS in windows/window.c and post them to MAMETesters.org with a description of your problem and your system. If you don't have hyperthreading, dual core, or a multi-CPU system, don't bother turning this flag on [Aaron Giles]
 - Changed the behavior of the led7seg primitive. It now no longer takes a state value but accepts states from 0-255, allowing independent control over all 7 segments and the decimal. Ordered the segments according to standard order. Updated the Turbo driver to do its own BCD decoding via an LS48 decoder to control the segments directly. This will break existing layouts using the led7seg primitive [Aaron Giles].
 - Further turbo driver cleanup. Still in WIP [Aaron Giles]:
-  * Derived sprite scaling from PROMs and R/C values (still not 100%).
-  * Rewrote most of the video/sprite handling.
-  * Identified all PROMs and used them where appropriate.
-  * Added a more complete 8279 implementation.
+  * Derived sprite scaling from PROMs and R/C values (still not 100%);
+  * Rewrote most of the video/sprite handling;
+  * Identified all PROMs and used them where appropriate;
+  * Added a more complete 8279 implementation;
   * Converted 7-segment LEDs to the new behavior described above.

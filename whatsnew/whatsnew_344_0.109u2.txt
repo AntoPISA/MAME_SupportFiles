@@ -3,25 +3,25 @@
 IMPORTANT NOTE TO OSD DEVELOPERS: As of this release, you are now required to make use of options.c to set core options. At a minimum, this requires calling options_init(NULL) before calling run_game().
 
 
-New games added or promoted from NOT_WORKING status
----------------------------------------------------
+New Game Added or Promoted from NOT_WORKING Status
+--------------------------------------------------
 Rock Duck [Roberto Fresca, Tomasz Slanina, David Haywood]
 
-New clones added
+New Clones Added
 ----------------
 DonPachi (Hong Kong) [Arenzo Fabrice]
 Las Vegas, Nevada [Roberto Fresca]
 
-New games marked as GAME_NOT_WORKING
+New Games Marked as GAME_NOT_WORKING
 ------------------------------------
 Altair [Curt Coder]
 Destroyer (Cidelsa) [Curt Coder]
 Draco [Curt Coder]
 
 
-MAMETesters Bugs Fixed (1):
----------------------------
-capbowl0109u1yel (Aaron Giles)
+MAME Testers Bugs Fixed (1):
+----------------------------
+- capbowl0109u1yel (Aaron Giles)
 
 
 Source changes:
@@ -35,17 +35,17 @@ Source changes:
 - Fixed crash in the Win32 debugger code with small window sizes [Samuele Zannoli].
 - Fixed assertion when auditing systems with no samples or ROMs [Nathan Woods].
 - Some pmpoker driver improvements [Roberto Fresca]:
-  * Added service/settings mode to pmpoker.
+  * Added service/settings mode to pmpoker;
   * Added PORT_IMPULSE to manage correct timings for most inputs in all games.
 - Fixed "run to cursor" functionality for CPUs that had an address bus shift [Andrew Gardner].
 - Fixed bug that caused false positive ZIP filename matches [Aaron Giles].
 - Added PATH_SEPARATOR define so that platforms with non forward-slash path separators can get preassembled paths in their native format [Aaron Giles].
 - Some enhancements to the options manager [Aaron Giles]:
-  * Added a simpler options_init for startup.
-  * Added support for internal options.
-  * Added support for multiple unadorned options.
-  * Moved core options definitions into the core options.c (note that the default INI path no longer includes $HOME/.mame since that is not cross-platform; *nix platforms will need to explicitly override that default in their OSD code)
-  * Added accessor to set the default value of a given option.
+  * Added a simpler options_init for startup;
+  * Added support for internal options;
+  * Added support for multiple unadorned options;
+  * Moved core options definitions into the core options.c (note that the default INI path no longer includes $HOME/.mame since that is not cross-platform; *nix platforms will need to explicitly override that default in their OSD code);
+  * Added accessor to set the default value of a given option;
   * Changed error reporting so that errors are tracked internally  and reported only once.
 - Improved documentation in osdepend.h to better describe some of the functions and provide a general overview of how things work. Removed unused osd_readkey_unicode function [Aaron Giles].
 - Fixed bug in the bilinear software scaler that would read out of bounds on a bitmap [Aaron Giles].

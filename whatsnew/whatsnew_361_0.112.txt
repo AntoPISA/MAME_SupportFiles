@@ -104,7 +104,7 @@ Leon van Rooij          Li Jih Hwa              Lodewijk
 Logiqx                  Lord Nightmare          Luca Elia
 Luigi30                 Luis Faria
 
-MASH                M.C. Silvius            Machone
+MASH                    M.C. Silvius            Machone
 MadSkunk                Malcolm Lear            Malice
 MAME Italia Forum       MAME32Plus              MamePlus!
 Mamesick                MAN                     Manbow-J
@@ -207,14 +207,14 @@ Yves Colombani
 Zerza                   Zonn Moore              Zsolt Vasvari
 
 
-New games added or promoted from NOT_WORKING status
+New Games Added or Promoted from NOT_WORKING Status
 ---------------------------------------------------
 (hsf2)     Hyper Street Fighter 2: The Anniversary Edition (Asia 040202) [Nicola Salmoria]
 (ladymstr) Lady Master of Kungfu [Juddy]
 (mpang)    Mighty! Pang (USA 001010) [Charles MacDonald, David Haywood]
 (teetert)  Teeter Torture (prototype) [Aaron Giles]
 
-New clones added
+New Clones Added
 ----------------
 (ddragoua) Double Dragon (US Set 2) [Corrado Tomaselli]
 (destryea) Destroyer (Cidelsa) (set 2) [Curt Coder]
@@ -222,26 +222,26 @@ New clones added
 (hsf2j)    Hyper Street Fighter 2: The Anniversary Edition (Japan 031222) [Nicola Salmoria]
 (pool10b)  Pool 10 (Italia, set 2) [Roberto Fresca]
 
-New games marked as GAME_NOT_WORKING
+New Games Marked as GAME_NOT_WORKING
 ------------------------------------
 (alpha1v)  Alpha One (Vision Electronics / Kyle Hodgetts) [Gareth Hall]
 (cashquiz) Cash Quiz (Type B, Version 5) [Chris Hardy]
 (wyvernwg) Wyvern Wings [Pierpaolo Prazzoli]
 
-Games promoted from NOT_WORKING status
---------------------------------------
+Game Promoted from NOT_WORKING Status
+-------------------------------------
 (witch)    Witch [Tomasz Slanina]
 
 
 MAMETesters Bugs Fixed (7):
 ---------------------------
-crosshair0111u5gra (Canim, Aaron Giles)
-ddraweffect0111yel (Aaron Giles)
-debug_assertions0111u6ora (Aaron Giles)
-memory_leak0111u6ora (partial) (Oliver Stoneberg)
-renegade0111u4red (Aaron Giles)
-subs0111u6yel (Aaron Giles)
-z80update0111u6red (David Haywood)
+- crosshair0111u5gra (Canim, Aaron Giles)
+- ddraweffect0111yel (Aaron Giles)
+- debug_assertions0111u6ora (Aaron Giles)
+- memory_leak0111u6ora (partial) (Oliver Stoneberg)
+- renegade0111u4red (Aaron Giles)
+- subs0111u6yel (Aaron Giles)
+- z80update0111u6red (David Haywood)
 
 
 Source changes:
@@ -266,20 +266,20 @@ Source changes:
 - Removed linear interpolation from the BSMT2000 by default since the original chip did not do interpolation [Aaron Giles].
 - Rewrote faux x86 assembly in the Irem GA20 sound core [R. Belmont].
 - Some improvements to funworld.c [Roberto Fresca]:
-  * All crystals documented via #defines.
-  * All CPU and sound clocks derived from #defined crystal values.
-  * Added DIPLOCATIONS to all games.
-  * Added proper tsc87c52 MCU dumps to monglfir and soccernew.
+  * All crystals documented via #defines;
+  * All CPU and sound clocks derived from #defined crystal values;
+  * Added DIPLOCATIONS to all games;
+  * Added proper tsc87c52 MCU dumps to monglfir and soccernew;
   * Modified the refresh rate to 60 fps.
 - Some improvements to pmpoker.c [Roberto Fresca]:
-  * Crystal documented via #define.
-  * CPU clock derived from #defined crystal value.
-  * Replaced simulated colors with proper color prom decode.
-  * Cleaned up the driver a bit.
+  * Crystal documented via #define;
+  * CPU clock derived from #defined crystal value;
+  * Replaced simulated colors with proper color prom decode;
+  * Cleaned up the driver a bit;
   * Updated color PROMs.
 - Improvements to the sslam driver [Quench]:
-  * Corrected the music sequencing simulation of the sound controller in SSLAM based on poking a real board Guru kindly provided.
-  * Added save state support.
+  * Corrected the music sequencing simulation of the sound controller in SSLAM based on poking a real board Guru kindly provided;
+  * Added save state support;
   * Added DIP locations.
 - Updated Tempest to support second player controls [stephh].
 - Updated the dooyong driver to use the new-style banking system. Also added some preliminary save state support [Vas Crabb].

@@ -2,7 +2,7 @@
 ---------------------------------------
 
 
-New games added or promoted from NOT_WORKING status
+New Games Added or Promoted from NOT_WORKING Status
 ---------------------------------------------------
 Last Fighting [Luca Elia]
 Bishou Jan [Luca Elia]
@@ -13,34 +13,34 @@ Super Eagle Shot [Tomasz Slanina, pSXAuthor]
 Date Quiz Go Go Episode 2 [Pierpaolo Prazzoli]
 Dancing Stage featuring Dreams Come True [smf]
 
-New clones added
+New Clones Added
 ----------------
 X-Men: Children of the Atom (Japan 941222) [Nicola Salmoria]
 Quintoon (UK, Game Card 95-750-206) [James Wallace]
 
-New games marked as GAME_NOT_WORKING
+New Games Marked as GAME_NOT_WORKING
 ------------------------------------
 Super Real Mahjong Part 1 [Luca Elia]
 Dance Dance Revolution Extreme [smf]
 
 
-MAMETesters Bugs Fixed (4):
----------------------------
-mappyc0118u1red [Aaron Giles]
-mappy0116u2gre [Aaron Giles]
-namcona1c057red [Atari Ace]
-9ballsh3097red [Atari Ace]
+MAME Testers Bugs Fixed (4):
+----------------------------
+- mappyc0118u1red (Aaron Giles)
+- mappy0116u2gre (Aaron Giles)
+- namcona1c057red (Atari Ace)
+-"9ballsh3097red (Atari Ace)
 
 
 Source changes:
 ---------------
 - Updated memconv.h to convert from basically any to any widths (8/16/32/64), on both little and big endian. Also added macros to create the stubs for the most commonly used mappings, both in the 1:1 fashion, or the LSB/MSB/LSW/MSW style [Ernesto Corvi].
 - CuboCD32/Amiga updates [Ernesto Corvi]:
-  * Finished implementing the CDROM controller, so now the games boot.
-  * Moved the entire Akiko code to machine/cubocd32.c to make things a little more easier to work with.
-  * Added CDDA audio support to the CDROM controller and driver.
-  * Systems with the AGA chipset no longer connect bit 0 of the CIA that was previously connected to the Overlay pin not connected.
-  * Made BLTDDAT return it's value. This is a readable register which we were not handling.
+  * Finished implementing the CDROM controller, so now the games boot;
+  * Moved the entire Akiko code to machine/cubocd32.c to make things a little more easier to work with;
+  * Added CDDA audio support to the CDROM controller and driver;
+  * Systems with the AGA chipset no longer connect bit 0 of the CIA that was previously connected to the Overlay pin not connected;
+  * Made BLTDDAT return it's value. This is a readable register which we were not handling;
   * Initialized the SERDATR register upon reset to reflect that the transfer buffer/shift reg is empty.
 - Added support for the PowerPC 601 [Ville Linde].
 - Fixed missing PLD region in -listxml [MASH].

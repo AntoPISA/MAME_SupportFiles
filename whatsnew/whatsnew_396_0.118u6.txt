@@ -25,16 +25,16 @@ Astropal [David Haywood]
 Come On Baby [MooglyGuy]
 
 
-MAMETesters Bugs Fixed (8):
----------------------------
-cave0118u5red (Aaron Giles)
-radikalb0118u5red (Aaron Giles)
-chdrewrite0118u5red (smf)
-pacland0118u5yel (Aaron Giles)
-sspaceat0118u1red (Aaron Giles)
-yamato0118u5red (Aaron Giles)
-ym2203_0118u1yel (Aaron Giles)
-profiler0116u2yel (maybe) (Aaron Giles)
+MAME Testers Bugs Fixed (8):
+----------------------------
+- cave0118u5red (Aaron Giles)
+- radikalb0118u5red (Aaron Giles)
+- chdrewrite0118u5red (smf)
+- pacland0118u5yel (Aaron Giles)
+- sspaceat0118u1red (Aaron Giles)
+- yamato0118u5red (Aaron Giles)
+- ym2203_0118u1yel (Aaron Giles)
+-"profiler0116u2yel (maybe) (Aaron Giles)
 
 
 Source changes:
@@ -47,15 +47,15 @@ Source changes:
 - Some improvements to the Wheels + Fire driver. Still not right [David Haywood].
 - Added SCSIOP_GET_INQUIRY_BUFFER to scsicd & scsihd [smf].
 - MB86233 core changes [ElSemi]:
- * Fixed a double move opcode;
- * Added a previously unknown double move opcode.
+  * Fixed a double move opcode;
+  * Added a previously unknown double move opcode.
 - Changed the way MAME handles options internally. Changed mame_options_init() to return a core_options object, which is now passed into mame_execute(). Moved mame_options() to mame.c, which is now only valid while the emulation is running. Audit functions now take a core_options parameter [Nathan Woods].
 - More HD6309 fixes [Tim Lindner]:
- * the SEXW instruction not longer clears the overflow flag;
- * now generating an illegal instruction trap if invalid registers specified for TFM.
+  * the SEXW instruction not longer clears the overflow flag;
+  * now generating an illegal instruction trap if invalid registers specified for TFM.
 - Changed Windows message filtering to only apply to MAME game windows [Nathan Woods].
 - Made a cleanup pass through the new x86emit.h code emitters, changing the way memory is referenced and replacing macros with inline functions [Aaron Giles].
 - Updated MIPS and PowerPC drc cores to use the new emitters. Removed the old macro-based ones in x86drc.h [Aaron Giles].
--Added save state support to pacland [Aaron Giles].
--Made -autoframeskip aware of the -speed setting [Aaron Giles].
+- Added save state support to pacland [Aaron Giles].
+- Made -autoframeskip aware of the -speed setting [Aaron Giles].
 - Fixed stack buffer overrun in install_mem_handler() that broke the Hyperstone-based games under gcc 4.2.1 [Aaron Giles] 

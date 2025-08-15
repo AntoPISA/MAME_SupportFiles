@@ -2,56 +2,56 @@
 ---------------------------------------
 
 
-New games marked as GAME_NOT_WORKING
+New Games Marked as GAME_NOT_WORKING
 ------------------------------------
 Tokimeki Memorial Oshiete Your Heart [R. Belmont]
 Tokimeki Memorial Oshiete Your Heart Seal version PLUS [R. Belmont]
 
 
-MAMETesters Bugs Fixed (4):
----------------------------
-empcity36finalyel (Aaron Giles)
-minigolf0112u2gra (Derrick Renaud)
-rdtsc0101u5yel (Aaron Giles)
-speakres0112yel (Zsolt Vasvari)
+MAME Testers Bugs Fixed (4):
+----------------------------
+- empcity36finalyel (Aaron Giles)
+- minigolf0112u2gra (Derrick Renaud)
+- rdtsc0101u5yel (Aaron Giles)
+- speakres0112yel (Zsolt Vasvari)
 
 
 Source changes:
 ---------------
 - Discrete sound for Checkmate [Derrick Renaud]:
-  * New DISCRETE_ADJUSTMENT_TAG module that uses tags instead of port numbers. Updated all games to use it, because it is now the preferred method.
+  * New DISCRETE_ADJUSTMENT_TAG module that uses tags instead of port numbers. Updated all games to use it, because it is now the preferred method;
   * Added PORT_CROSSHAIRs to triplhnt.
 - Minor Konami 573 system update [smf]:
-  * Marks two games as working which were incorrectly tagged.
-  * Adds the correct hashes for 845jab02.
+  * Marks two games as working which were incorrectly tagged;
+  * Adds the correct hashes for 845jab02;
   * Added NO_DUMP's for all the flash roms.
 - Fixed a number of issues related to the new streaming engine and sound code [Aaron Giles]:
-  * Fixed crash when restoring from a save state.
-  * Fixed crash when running with -nosound.
-  * Fixed loud looping when halted in the debugger.
-  * Fixed crash when changing sample rates (YM2203 mainly).
+  * Fixed crash when restoring from a savestate;
+  * Fixed crash when running with -nosound;
+  * Fixed loud looping when halted in the debugger;
+  * Fixed crash when changing sample rates (YM2203 mainly);
   * Fixed crash in k054539 sound core.
 - Added SN76477 noise RNG polynomial [Zsolt Vasvari, Derrick Renaud, Jarek Burczynski].
 - Midway 8080 driver updates [Zsolt Vasvari]:
-  * Fixed bug where mw8080bw games would freeze after state load.
-  * Corrected DIP SW order in M-4.
+  * Fixed bug where mw8080bw games would freeze after state load;
+  * Corrected DIP SW order in M-4;
   * Converted Dog Patch to PORT_POSITIONAL.
 - RF5C400 sound core improvements [hoot development team]:
-  * Implemented volume envelopes.
-  * Corrected the channel volume calculation.
+  * Implemented volume envelopes;
+  * Corrected the channel volume calculation;
   * Documented registers for reverb, chorus, and per-channel digital filter (actual effects are not implemented yet).
 - Fixeed most Dip Switches and Inputs in the galspnbl driver [stephh, Justin Szczap].
 - Updated a number of drivers to use the new PORT_DIPUNUSED macros [stephh].
 - Improvements to the memory pool routines [Nathan Woods]:
-  * Added a pool_clear() call, to clear out a memory pool without freeing the pool itself.
-  * Added support for pool_realloc() with a size of zero, which effectively frees a pointer within a pool.
+  * Added a pool_clear() call, to clear out a memory pool without freeing the pool itself;
+  * Added support for pool_realloc() with a size of zero, which effectively frees a pointer within a pool;
   * Added testing code to validate pool behavior.
 - Added support for more flexible word wrapping with CJK characters. Also added wrapping on hyphens [MAME Plus! team, Aaron Giles].
 - Added T5182 support, which gives sound to darkmist, mustache and panicr. Also changed the YM2151 to prevent timer problems, and added the missing flip X in 'Mustache Boy' [Nicola Salmora, Lord Nightmare, Ernesto Corvi].
 - More input fixes and improvements [Derrick Renaud]:
-  * Fixed some obscure masking, shifting, overflow, and signed problems in the input system. Most noticeably this fixes the analog controls in sfootbal and stops the pedal in redlin2p from rotating through gas/no gas as the pedal is pressed.
-  * Analog ports no longer save and load their default value from the config file. It should only ever use the value specified in the driver, and storing it can cause problems the more the game is restarted and the value starts to change.
-  * Added a bunch of validity tests to the analog ports. Some are commented out until the problems they uncovered are fixed.
+  * Fixed some obscure masking, shifting, overflow, and signed problems in the input system. Most noticeably this fixes the analog controls in sfootbal and stops the pedal in redlin2p from rotating through gas/no gas as the pedal is pressed;
+  * Analog ports no longer save and load their default value from the config file. It should only ever use the value specified in the driver, and storing it can cause problems the more the game is restarted and the value starts to change;
+  * Added a bunch of validity tests to the analog ports. Some are commented out until the problems they uncovered are fixed;
   * Analog ports now defalt to a PORT_MINMAX of (0,mask). This means you no longer have to specify PORT_MINMAX if you are not using any limits. Removed a bunch of no longer needed PORT_MINMAX entries.
 - Bitmaps are now cleared to 0 by default. This fixes a number of random crashes in games [Aaron Giles].
 - Modified the raster position calculations to round to the nearest pixel which produces more consistent results [Aaron Giles].

@@ -2,19 +2,19 @@
 -------------------------------------
 
 
-New games added or promoted from NOT_WORKING status
+New Games Added or Promoted from NOT_WORKING Status
 ---------------------------------------------------
 A Question of Sport [Philip Bennett]
 beatmania 3rd MIX [Yasuhiro Ogawa]
 
-New clones added
+New Clones Added
 ----------------
 Flipull (Japan) [Stefan Lindberg]
 Jail Break (Bootleg) [Kevin Eshbach]
 Plotting (World set 3, Earliest) [Stefan Lindberg]
 The Combatribes (US) - Set 1? [Kevin Eshbach]
 
-New games marked as GAME_NOT_WORKING
+New Games Marked as GAME_NOT_WORKING
 ------------------------------------
 DrumMania [smf]
 Guitar Freaks 4th Mix [smf]
@@ -27,15 +27,15 @@ Pop n' Music 7 [Ian Patterson]
 Snooker 10 [Roberto Fresca]
 
 
-MAMETesters Bugs Fixed (7):
----------------------------
-asserts0112u4ora (Aaron Giles, Derrick Renaud)
-calorie0112u4gra (Canim)
-diamond0112u4gra (Canim)
-fastlane0112u4gra (Canim)
-leftover0112u4ora (Aaron Giles)
-nes0112u4red (Aaron Giles)
-qcrayon237b9gra (stephh)
+MAME Testers Bugs Fixed (7):
+----------------------------
+- asserts0112u4ora (Aaron Giles, Derrick Renaud)
+- calorie0112u4gra (Canim)
+- diamond0112u4gra (Canim)
+- fastlane0112u4gra (Canim)
+- leftover0112u4ora (Aaron Giles)
+- nes0112u4red (Aaron Giles)
+- qcrayon237b9gra (stephh)
 
 
 Source changes:
@@ -46,11 +46,11 @@ Source changes:
 - Added save state support to Combatribes and Jail Break [Kevin Eshbach].
 - Added tools to generate regression tests and mamedev.org-compatible reports. The report generator is cross-platform, but the test running code is Windows-only at the moment [Aaron Giles].
 - Changed file2str to be built into the obj directory [Aaron Giles].
-- Changed the 'Tournament' Street Fighter games to not have a network adapter present by default [David Haywood].
+- Changed the Tournament Street Fighter games to not have a network adapter present by default [David Haywood].
 - Defined several new exit codes for "unknown game" and "invalid config" and changed the Windows OSD layer to output them [Aaron Giles].
 - Fixed a number of BIOS-only drivers to not crash when run [R. Belmont, Aaron Giles].
 - Fixed all analog controls for the newly enabled validity checks including the following [Derrick Renaud]:
-  * demndrgn - changed to proper IPT_AD_STICK controls.
+  * demndrgn: Changed to proper IPT_AD_STICK controls.
   * konamigt, hcrash, rf2: Set to proper PADDLE control and fixed mask.
   * midvunit.c: Changed games so the brake pedal shows on player1.
   * overdriv: Changed to proper PADDLE control.
@@ -63,7 +63,7 @@ Source changes:
 - Fixed regression in Nintendo games that did not specify a clock for the NES APU [Aaron Giles].
 - Fixed regressions in 3 of the discrete games from 0.112u4 [Derrick Renaud].
 - Fixed the model2.c ROM definitions for some games that weren't even loading and made the infamous unknown z-sort mode not a fatal error [R. Belmont].
-- Minor cleanup of 'Berzerk' driver [Lord Nightmare].
+- Minor cleanup of Berzerk driver [Lord Nightmare].
 - Removed cpu_gethorzbeampos() and replaced it with calls to video_screen_get_hpos(). Also changed TMS34010 configuration to take a screen number, and changed atarigen_get_hblank() to take a screen number as well [Zsolt Vasvari].
 - Removed obsolete joystick calibration junk from the osdepend layer. If anyone needs this functionality, I will look into providing a way for the OSD code to add menus in the UI [Aaron Giles].
 - Removed unnecessary idle skipping code from the m92 and deco32 drivers. This allows removal of a couple of now-unused functions from cpuexec [Zsolt Vasvari].

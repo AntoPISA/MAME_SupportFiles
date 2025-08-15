@@ -2,7 +2,7 @@
 ---------------------------------------
 
 
-New games added or promoted from NOT_WORKING status
+New Games Added or Promoted from NOT_WORKING Status
 ---------------------------------------------------
 Deer Hunting USA [Luca Elia]
 Turkey Hunting USA [Luca Elia]
@@ -17,7 +17,7 @@ Joryuu Syougi Kyoushitsu (Japan) [Luca Elia]
 Mazin Wars / Mazin Saga (Mega Play) [David Haywood]
 Grand Slam (Mega Play) [David Haywood]
 
-New clones added
+New Clones Added
 ----------------
 Scramble (bootleg) [David Haywood]
 Alien Storm (bootleg, set 2) [David Haywood]
@@ -37,17 +37,17 @@ Boomer Rang'r / Genesis (set 2) [Team Japump]
 Narazumono Sentai Bloody Wolf (Japan) [Team Japump]
 Open Mahjong [BET] (Japan) [Team Japump]
 
-New games marked as GAME_NOT_WORKING
+New Games Marked as GAME_NOT_WORKING
 ------------------------------------
 Laser Grand Prix [Andrew Gardner]
 Saloon (France, encrypted) [Roberto Fresca]
 Mahjong Cafe Doll (Japan) [Team Japump]
 
 
-MAMETesters Bugs Fixed (2):
----------------------------
-createconfig+debug0119yel [Nathan Woods]
-jrpacman0119gre [Aaron Giles]
+MAME Testers Bugs Fixed (2):
+----------------------------
+- createconfig+debug0119yel (Nathan Woods)
+- jrpacman0119gre (Aaron Giles)
 
 
 Source changes:
@@ -57,61 +57,61 @@ Source changes:
 - Fixed synchronization code in the Model 2 driver [Ernesto Corvi].
 - Fixed SCALER, SCALERL, and ATANRL opcodes in the i960 core [Ernesto Corvi].
 - Updates to the gdrawpkr driver [Roberto Fresca]:
-  * Added sound support to "El Grande - 5 Card Draw".
-  * All CPU and sound clocks derived from #defined crystal values.
+  * Added sound support to El Grande - 5 Card Draw;
+  * All CPU and sound clocks derived from #defined crystal values;
   * Some minor input cleanups.
 - ARM7 core fixes [R. Belmont]:
-  * Fixed unaligned reads/writes (again).
-  * Fixed minimum instruction bytes to account for Thumb mode.
-  * Fixed missing dependency in ARM7 build rule.
+  * Fixed unaligned reads/writes (again);
+  * Fixed minimum instruction bytes to account for Thumb mode;
+  * Fixed missing dependency in ARM7 build rule;
   * Fixed Thumb mode ASR instruction.
 - Added newly-dumped BIOS ROMs and preliminary emulation of the SPU board in Pop'n Music 7 to the Firebeat driver [Ville Linde].
 - Cleaned up input ports in the taito_z.c driver [Brian Troha].
 - Updated the sources to support removing -wno-unused-function. Dead code has been identified with #ifdef UNUSED_FUNCTION to allow for further analysis and potential future removal [Atari Ace].
 - Fixed a number of issues in the h6280 CPU core [Wilbert Pol]:
-  * Taking of interrupts is delayed to respect a pending instruction already in the instruction pipeline.
-  * Added 1 cycle for decimal mode ADC and SBC instructions.
-  * Changed cycle counts for CSH and CSL instructions to 3.
-  * Added T flag support to the SBC instruction.
-  * Fixed ADC T flag to set the Z flag based on the value read.
-  * Added 3 cycle penalty to ADC, AND, EOR, ORA, and SBC instructions when the T flag is set.
-  * Fixed cycle count and support for 65536 byte blocks for the TAI, TDD, TIA, TII, and TIN instructions.
-  * Fixed RDWORD macro in the disassembler.
-  * Fixed setting of N and V flags in the TST instructions.
-  * Removed unneeded debug_mmr code.
-  * Fixed TSB and TRB instructions.
-  * Added 1 delay when accessing the VDC or VCE areas.
+  * Taking of interrupts is delayed to respect a pending instruction already in the instruction pipeline;
+  * Added 1 cycle for decimal mode ADC and SBC instructions;
+  * Changed cycle counts for CSH and CSL instructions to 3;
+  * Added T flag support to the SBC instruction;
+  * Fixed ADC T flag to set the Z flag based on the value read;
+  * Added 3 cycle penalty to ADC, AND, EOR, ORA, and SBC instructions when the T flag is set;
+  * Fixed cycle count and support for 65536 byte blocks for the TAI, TDD, TIA, TII, and TIN instructions;
+  * Fixed RDWORD macro in the disassembler;
+  * Fixed setting of N and V flags in the TST instructions;
+  * Removed unneeded debug_mmr code;
+  * Fixed TSB and TRB instructions;
+  * Added 1 delay when accessing the VDC or VCE areas;
   * Implemented low and high speed CPU modes.
 - Moved srmp5 (Super Real Mahjong P5) to separate driver (from st0016.c). Preliminary video hw emulation. Not playable, no sound [Tomasz Slanina].
 - Fixed DIP switches in the mario driver [stephh].
 - Major Namco System 21 update. Changes include [Phil Stroffolino]:
-  * Corrections to eprom handling (affects Namco System2 as well).
-  * Scroll fix for sprite emulation in namcoic.c.
-  * Working Starblade, Cybersled, Solvalou with full 3D.
-  * Graphics should be 100% except for the depth cueing tables, which are internal and need to be reconstructed.
-  * Air Combat is improved, but is locking up in 118s because of incomplete watchdog emulation.
+  * Corrections to eprom handling (affects Namco System2 as well);
+  * Scroll fix for sprite emulation in namcoic.c;
+  * Working Starblade, Cybersled, Solvalou with full 3D;
+  * Graphics should be 100% except for the depth cueing tables, which are internal and need to be reconstructed;
+  * Air Combat is improved, but is locking up in 118s because of incomplete watchdog emulation;
   * Winning Run hardware is not yet working in this update.
 - Fixed regression in undoukai caused by the REGION_CPU1 decoupling from RAM [Pierpaolo Prazzoli].
 - SCSP fixes [R. Belmont]:
-  * Fix writes to the hole in the SCSP address space (0x430 to 0x5ff) to not trash global registers.
+  * Fix writes to the hole in the SCSP address space (0x430 to 0x5ff) to not trash global registers;
   * Fixed SCSP DMA to not read random memory for its' registers.
 - Added minimal built-in layout for showing the lamps in Video Pinball [Mr. Do!].
 - Big Model 2 update. There's so much stuff improved, I'm just going to list what's not working [Ernesto Corvi, El Semi]:
-  * There's still a glitch on the triangle parser somewhere. Noticeable on the Sega logo in motoraid, the selection arrow in dynamcop's player select screen and many other games. It might be the culprit of the road in daytona looking wacky.
-  * There's a problem with the z clipping. Some tri's close to the camera are clipped before they should. Some others should be clipped but are not, and are blocking the viewport for a frame or two.
-  * Sub-windows are not implemented yet. Visible on dynacop's mission select, Sega Rally car select, and others.
+  * There's still a glitch on the triangle parser somewhere. Noticeable on the Sega logo in motoraid, the selection arrow in dynamcop's player select screen and many other games. It might be the culprit of the road in daytona looking wacky;
+  * There's a problem with the z clipping. Some tri's close to the camera are clipped before they should. Some others should be clipped but are not, and are blocking the viewport for a frame or two;
+  * Sub-windows are not implemented yet. Visible on dynacop's mission select, Sega Rally car select, and others;
   * Most decal textures flicker on and off between frames. Maybe a z coordinate float resolution issue after projection?
   * Textures wrap by default. They should only wrap when the appropriate flag is set only. Not sure what to do when we're not wrapping.
 - Improvements to the Z180 core [Pierpaolo Prazzoli]:
-  * Added the 2 Programmable Reload Timers.
-  * Fixed the Internal I/O Registers remapping.
-  * Added logical -> physical memory translation.
-  * Disabled loops hack.
-  * Removed "extra icount".
-  * Changed interrupts handling. Now they're checked as in Z80 core.
-  * Simplified RETN and EI opcodes.
-  * Fixed PRT interrupts.
-  * Cleared both interrupts flip flops when taking any IRQ.
+  * Added the 2 Programmable Reload Timers;
+  * Fixed the Internal I/O Registers remapping;
+  * Added logical -> physical memory translation;
+  * Disabled loops hack;
+  * Removed "extra icount";
+  * Changed interrupts handling. Now they're checked as in Z80 core;
+  * Simplified RETN and EI opcodes;
+  * Fixed PRT interrupts;
+  * Cleared both interrupts flip flops when taking any IRQ;
   * Added _IFF2 = _IFF1; just before _IFF1 = 0; when taking an NMI.
 - Removed kludge in 20pacgal which is no longer necessary with proper Z180 emulation. Sound now works as well [Pierpaolo Prazzoli].
 - Fixed some Dip Switches and added some extra notes to othunder.c driver. Also added some notes to opwolf.c driver [stephh].

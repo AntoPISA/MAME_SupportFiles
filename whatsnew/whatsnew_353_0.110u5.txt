@@ -2,12 +2,12 @@
 ---------------------------------------
 
 
-New games added or promoted from NOT_WORKING status
+New Games Added or Promoted from NOT_WORKING Status
 ---------------------------------------------------
 Royal Card [Roberto Fresca]
 Twin Adventure [David Haywood]
 
-New clones added
+New Clones Added
 ----------------
 Elephant Family (Italia, old) [Roberto Fresca]
 Jolly Card (Austria, encrypted) [Roberto Fresca]
@@ -15,7 +15,7 @@ Phoenix (Centuri), Set 2 [Brian Troha]
 Royal Card (Slovakia, encrypted) [Roberto Fresca]
 Twins (set 2) [David Haywood]
 
-New games marked as GAME_NOT_WORKING
+New Games Marked as GAME_NOT_WORKING
 ------------------------------------
 Crime Patrol [Andrea Turci, Aaron Giles]
 Crime Patrol 2: Drug Wars [Andrea Turci, Aaron Giles]
@@ -33,18 +33,18 @@ Who Shot Johnny Rock? [Andrea Turci, Aaron Giles]
 Zorton Brothers (Los Justicieros) [Andrea Turci, Aaron Giles]
 
 
-MAMETesters Bugs Fixed (5):
----------------------------
-64street057gre (Mamesick)
-cannonb0104u8Yel (Mamesick)
-circusc0110u2gre (Derrick Renaud)
-circusc37b16ora (Derrick Renaud)
-gratia099u4red (Atari Ace)
+MAME Testers Bugs Fixed (5):
+----------------------------
+- 64street057gre (Mamesick)
+- cannonb0104u8Yel (Mamesick)
+- circusc0110u2gre (Derrick Renaud)
+- circusc37b16ora (Derrick Renaud)
+- gratia099u4red (Atari Ace)
 
 
 Source changes:
 ---------------
-- Added a "Digital Speed" of 0 in the "Analog Controls" menu. This will cause the control to only inc/decrement once per button press no matter how long the button is pressed. Remember this is still scaled by the "Sensitivity" setting. [Derrick Renaud].
+- Added a "Digital Speed" of 0 in the "Analog Controls" menu. This will cause the control to only inc/decrement once per button press no matter how long the button is pressed. Remember this is still scaled by the "Sensitivity" setting [Derrick Renaud].
 - Added mosaic effect to valtric. Yes, it looks as bad on real hardwareas in MAME :) [Tomasz Slanina].
 - Added new render texture format TEXFORMAT_YUY16, which is used to hold 4:2:2 Y/Cb/Cr format pixels. Updated the Windows Direct3D code and the software renderers to use this format directly [Aaron Giles].
 - Added new render texture fromat TEXFORMAT_PALETTEA16, which is the same as TEXFORMAT_PALETTE16 but respects the alpha component of the palette entry. Updated the Windows Direct3D code and the software renderers to use this format [Aaron Giles].
@@ -52,39 +52,39 @@ Source changes:
 - Added Sony LDP-1450 support [Aaron Giles].
 - Added the final filtering stages to the sound, proper watchdog and memory mirroring to the circusc driver. Also added PORT_DIPLOCATION info and save state support [Derrick Renaud].
 - Changed the render system to respect blendmodes for screen elements rather than hard-coding them. This allows individual VIDEO_UPDATE routines to do their own compositing [Aaron Giles].
-- Cleaned up the cclimber driver, replacing hacks for cannonb with a separate video update callback. [Mamesick].
-- Fixed colors in 'Honey Dolls' [David Haywood].
+- Cleaned up the cclimber driver, replacing hacks for cannonb with a separate video update callback [Mamesick].
+- Fixed colors in Honey Dolls [David Haywood].
 - Fixed the background color in perfrman [Pierpaolo Prazzoli].
 - Improved DIP switches for Honey Dolls and Twin Adventure [Brian Troha].
 - Improvements to the Polygonet Commanders driver [Andrew Gardner]:
-  * Implemented various dsp56k opcodes.
+  * Implemented various dsp56k opcodes;
   * Polygonet Commanders now gets past the memory tests.
 - Major funworld driver rewrite [Roberto Fresca]:
   * Merged/splitted some machine drivers, memory maps and inputs.
-  * Unified get_bg_tile_info for all games.
-  * Mapped the input buttons in a better format (all games).
-  * Added proper color PROM decode routines.
-  * Splitted the driver to driver/vidhrdw.
-  * Corrected the screen size and visible area to magiccrd.
-  * Added the remaining 2 GFX planes to magiccrd; GFX are imperfect.
-  * Royalcrd: Added all inputs and DIP switches.
-  * Fixed jolycdcr gfx to 4bpp.
-  * Other fixes to get jolycdcr running.
-  * Managed royalcdb to work, using the 2nd half of program ROM.
-  * Managed jolycdit to work, but with imperfect graphics.
-  * Fixed CPU clock to 2MHz. in all remaining games.
-  * Fixed ay8910 frequency based on elephfam audio.
-  * Fixed ay8910 volume in all games to avoid clipping.
-  * Reworked jolycdcr, jolycdit inputs.
-  * Set jolycdat as bigdeal clone.
-  * Added the bipolar PROM and GAL to jolycdit. 
-  * Added color PROMs to cuoreuno and elephfam sets. 
-  * Corrected jollycrd screen size and visible area.
-  * Hooked, wired and decoded the color prom in jollycrd sets.
-  * Wired and decoded the color prom in cuoreuno and elephfam sets.
-  * Wired and decoded the color prom in royalcrd.
-  * Hooked, wired and decoded the color prom in bigdeal sets.
-  * Decrypted jolycdit gfx roms.
+  * Unified get_bg_tile_info for all games;
+  * Mapped the input buttons in a better format (all games);
+  * Added proper color PROM decode routines;
+  * Splitted the driver to driver/vidhrdw;
+  * Corrected the screen size and visible area to magiccrd;
+  * Added the remaining 2 GFX planes to magiccrd; GFX are imperfect;
+  * Royalcrd: Added all inputs and DIP switches;
+  * Fixed jolycdcr gfx to 4bpp;
+  * Other fixes to get jolycdcr running;
+  * Managed royalcdb to work, using the 2nd half of program ROM;
+  * Managed jolycdit to work, but with imperfect graphics;
+  * Fixed CPU clock to 2MHz. in all remaining games;
+  * Fixed ay8910 frequency based on elephfam audio;
+  * Fixed ay8910 volume in all games to avoid clipping;
+  * Reworked jolycdcr, jolycdit inputs;
+  * Set jolycdat as bigdeal clone;
+  * Added the bipolar PROM and GAL to jolycdit;
+  * Added color PROMs to cuoreuno and elephfam sets;
+  * Corrected jollycrd screen size and visible area;
+  * Hooked, wired and decoded the color prom in jollycrd sets;
+  * Wired and decoded the color prom in cuoreuno and elephfam sets;
+  * Wired and decoded the color prom in royalcrd;
+  * Hooked, wired and decoded the color prom in bigdeal sets;
+  * Decrypted jolycdit GFX ROMs;
   * Decrypted jolycdae and managed the planes to show correct colors.
 - Merged in some MESS-specific PC support code [Nathan Woods].
 - Minor Unicode changes for the Windows code [Nathan Woods].

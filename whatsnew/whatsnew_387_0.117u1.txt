@@ -2,8 +2,8 @@
 ---------------------------------------
 
 
-New Games added or Promoted from NOT_WORKING Status
----------------------------------------------------
+New Game added or Promoted from NOT_WORKING Status
+--------------------------------------------------
 Sliver [Tomasz Slanina]
 
 New Clones Added
@@ -17,15 +17,15 @@ Gals Panic (US, EXPRO-02 PCB) [David Haywood]
 Balloon & Balloon [Pierpaolo Prazzoli]
 
 
-MAMETesters Bugs Fixed (7):
----------------------------
-brkthru091u1gra (Luigi30)
-debbuger+psx_0117ora (Aaron Giles)
-cbtime0117red (Zsolt Vasvari)
-hotpinbl0117gra (Roberto Fresca)
-batrider0114red (Alex Jackson)
-battleg0113u4red (Alex Jackson)
-battleg0116u1ora (Alex Jackson)
+MAME Testers Bugs Fixed (7):
+----------------------------
+- brkthru091u1gra (Luigi30)
+- debbuger+psx_0117ora (Aaron Giles)
+- cbtime0117red (Zsolt Vasvari)
+- hotpinbl0117gra (Roberto Fresca)
+- batrider0114red (Alex Jackson)
+- battleg0113u4red (Alex Jackson)
+- battleg0116u1ora (Alex Jackson)
 
 
 Source changes:
@@ -41,23 +41,23 @@ Source changes:
 - Fixed a few bugs in the change lanes video emulation [Adam Bousley].
 - Updated the monzagp driver into a somewhat playable state. There are still some graphics problems. LEDs still need to be hooked up for score/time-remaining display [Phil Stroffolino].
 - Neo-Geo update [Zsolt Vasvari]:
-  * BIOS only driver 'neogeo' no longer crashes.
-  * Cleaned up memory banking code to use memory_set_bank() instead of memory_set_bank_ptr().
+  * BIOS only driver 'neogeo' no longer crashes;
+  * Cleaned up memory banking code to use memory_set_bank() instead of memory_set_bank_ptr();
   * Fixed LEDs.
 - Improvements to the toaplan2 driver [Alex Jackson]:
-  * Replaced byteswapped truxton2 M68K program ROM with correct one.
-  * Fixed sound CPU communications in the Raizing games. This is educated guesswork, but it's more complete and probably more correct than what was there before, and doesn't rely on excessive use of cpu_yield().
-  * Added more information about the Raizing sets to the comments in the driver, and corrected some errors.
+  * Replaced byteswapped truxton2 M68K program ROM with correct one;
+  * Fixed sound CPU communications in the Raizing games. This is educated guesswork, but it's more complete and probably more correct than what was there before, and doesn't rely on excessive use of cpu_yield();
+  * Added more information about the Raizing sets to the comments in the driver, and corrected some errors;
   * Reorganized the Battle Garegga sets in a more sensible fashion.
 - Reworked input system to push more features into the core. Cleaned up architecture to properly separate dependencies. Please note that this change only addresses the lower layer of input handling. The upper layer (i.e., input port handling at the driver layer) remains the same [Aaron Giles].
 - Major changes include:
-  * Removed the concept of os_code from the system. Now all codes are defined via a set of macros in input.h. Each code is a 32-bit value that encodes a device class, device index, item class, item modifier, and item ID.
-  * Removed OSD functions osd_get_code_list() and osd_get_code_value(). Instead, the OSD layer during osd_init() must register one or more devices and the input items attached to each device via two new functions input_device_add() and input_device_item_add().
-  * Separated input sequence code into new module inputseq.c.
-  * Moved support for the following options into the core: -mouse, -joystick, -lightgun, -steadykey, -offscreen_reload, -joy_deadzone, -joy_saturation, -paddle_device, -adstick_device, -pedal_device, -dial_device, -trackball_device, -lightgun_device, -positional_device, -mouse_device. The OSD layer should simply register all devices at osd_init() time and allow the core to enable/disable them according to the options.
-  * Added two new options: -multikeyboard and -multimouse. By default, both options are OFF. When OFF, the core will combine all keyboard or mouse input into a single keyboard or mouse device. When ON, these options instruct the core to keep inputs for each keyboard and/or mouse independent.
-  * Added new option: -joystick_map. This option allows for a 9x9 grid to be specified which controls analog-to-digital mapping of joystick inputs.
-  * Changed the Windows implementation of input handling to fully support the raw input interfaces for keyboard and mouse. DirectInput is still used for all joystick inputs, as well as for keyboard and mouse inputs on pre-Windows XP systems. This allows for multiple keyboards and mice to be supported. Also changed keyboard and mouse behavior to use non-exclusive mode in DirectInput, and to keep the devices alive during pause for more consistent input handling.
+  * Removed the concept of os_code from the system. Now all codes are defined via a set of macros in input.h. Each code is a 32-bit value that encodes a device class, device index, item class, item modifier, and item ID;
+  * Removed OSD functions osd_get_code_list() and osd_get_code_value(). Instead, the OSD layer during osd_init() must register one or more devices and the input items attached to each device via two new functions input_device_add() and input_device_item_add();
+  * Separated input sequence code into new module inputseq.c;
+  * Moved support for the following options into the core: -mouse, -joystick, -lightgun, -steadykey, -offscreen_reload, -joy_deadzone, -joy_saturation, -paddle_device, -adstick_device, -pedal_device, -dial_device, -trackball_device, -lightgun_device, -positional_device, -mouse_device. The OSD layer should simply register all devices at osd_init() time and allow the core to enable/disable them according to the options;
+  * Added two new options: -multikeyboard and -multimouse. By default, both options are OFF. When OFF, the core will combine all keyboard or mouse input into a single keyboard or mouse device. When ON, these options instruct the core to keep inputs for each keyboard and/or mouse independent;
+  * Added new option: -joystick_map. This option allows for a 9x9 grid to be specified which controls analog-to-digital mapping of joystick inputs;
+  * Changed the Windows implementation of input handling to fully support the raw input interfaces for keyboard and mouse. DirectInput is still used for all joystick inputs, as well as for keyboard and mouse inputs on pre-Windows XP systems. This allows for multiple keyboards and mice to be supported. Also changed keyboard and mouse behavior to use non-exclusive mode in DirectInput, and to keep the devices alive during pause for more consistent input handling;
   * Broke windows.txt into config.txt, which contains all common core-supported options and commmands, and windows.txt, which now only lists Windows-specific additions.
 - Added support for frame update callbacks, similar to pause and exit callbacks but called at the same time as osd_update() [Aaron Giles].
 - Changed osd_init() to no longer return a value. OSD initialization should now rely on fatalerror() to report fatal initialization problems [Aaron Giles].

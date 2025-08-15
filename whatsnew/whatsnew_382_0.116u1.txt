@@ -2,18 +2,18 @@
 ---------------------------------------
 
 
-New games added or promoted from NOT_WORKING status
----------------------------------------------------
+New Game Added or Promoted from NOT_WORKING Status
+--------------------------------------------------
 Match It II [Robiza]
 
 
-MAMETesters Bugs Fixed (5):
+MAME Testers Bugs Fixed (5):
 ---------------------------
-shanghai0116red [Aaron Giles]
-bldwolf061gre [Robiza]
-superx0116gre [Robiza]
-matchit2_0116ora [Robiza]
-qix0116yel [Aaron Giles]
+- shanghai0116red (Aaron Giles)
+- bldwolf061gre (Robiza)
+- superx0116gre (Robiza)
+- matchit2_0116ora (Robiza)
+- qix0116yel (Aaron Giles)
 
 
 Source changes:
@@ -21,24 +21,24 @@ Source changes:
 - Fixed scanline address reporting in the qix driver [Zsolt Vasvari].
 - Rewrote Neo-Geo driver again based on information from Charles MacDonald. This update fixes a number of issues with the previous attempt [Zsolt Vasvari].
 - Added support for multiple keyboards [Andrew Kurushin]:
-  * Added multikeyboard input support through RAWINPUT mechanism (up to 8 simultaneous keyboard inputs.
+  * Added multikeyboard input support through RAWINPUT mechanism (up to 8 simultaneous keyboard inputs;
   * Fixed RAWINPUT device registry enumeration bugs.
 - Fixed the reset mode in CDP1802 [Curt Coder].
 - Fixed a number of errors and simplified the code significantly in the ptm6840 code [Atari Ace].
 - Fixed offset for sprite and layers in fcrash driver [Robiza].
 - SH4 CPU core improvements [Samuele Zannoli]:
-  * Corrected opcode decoding and decodes all opcodes of sh4.
-  * Corrected disassembly and added support for all instruction of sh4 not in sh2.
-  * Now disassembles all fpu instructions.
-  * Changed cpu to little-endian (sh4 can be either big or little).
-  * Corrected which data is read and written from memory.
-  * Added registers fpul and dbr.
-  * Added (non-fpu) instructions of sh4 non present in sh2.
-  * Added four fpu instructions.
-  * Modified memory-mapped internal register management so that all internal registers can be actually used.
-  * Added file sh4regs.h with defines for all sh7750 internal registers.
-  * Implemented internal registers for memory refresh.
-  * Removed some internal registers of sh2 not present in sh4.
+  * Corrected opcode decoding and decodes all opcodes of sh4;
+  * Corrected disassembly and added support for all instruction of sh4 not in sh2;
+  * Now disassembles all fpu instructions;
+  * Changed cpu to little-endian (sh4 can be either big or little);
+  * Corrected which data is read and written from memory;
+  * Added registers fpul and dbr;
+  * Added (non-fpu) instructions of sh4 non present in sh2;
+  * Added four fpu instructions;
+  * Modified memory-mapped internal register management so that all internal registers can be actually used;
+  * Added file sh4regs.h with defines for all sh7750 internal registers;
+  * Implemented internal registers for memory refresh;
+  * Removed some internal registers of sh2 not present in sh4;
   * Added preliminary support for internal cache used as RAM.
 - Updated CPS2 decryption bit order to match what is likely the original order [Nicola Salmoria].
 - Fixed a few warnings that show up with -Wextra [Atari Ace, Zsolt Vasvari].

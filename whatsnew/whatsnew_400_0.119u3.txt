@@ -1,14 +1,15 @@
 0.119u3 2007/10/05 [#400 - Aaron Giles]
 ---------------------------------------
+NOTE: FOUR HUNDREDTH MAME VERSION RELEASED!
 
 
-New games added or promoted from NOT_WORKING status
+New Games Added or Promoted from NOT_WORKING status
 ---------------------------------------------------
 Super Hana Paradise [Luca Elia]
 Hanafuda Hana Gokou [Luca Elia]
 Mahjong Tian Jiang Shen Bing [Pierpaolo Prazzoli]
 
-New clones added
+New Clones Added
 ----------------
 Nekketsu Koukou Dodgeball Bu (Japan) [David Haywood, Team Japump!]
 Puzzle Game Rong Rong (Japan) [Luca Elia]
@@ -28,15 +29,15 @@ Hunchback (set 2) [David Haywood]
 Double Dragon (bootleg with M6803) [David Haywood]
 Cannon Ball (Pacman Hardware) [David Haywood]
 
-New games marked as GAME_NOT_WORKING
+New Games Marked as GAME_NOT_WORKING
 ------------------------------------
 Jongkyo [David Haywood, Nicola Salmoria]
 Vs. Janshi Brandnew Stars [David Haywood]
 
 
-MAMETesters Bug Fixed (1):
---------------------------
-cabal0119u2ora [David Haywood]
+MAME Testers Bug Fixed (1):
+---------------------------
+- cabal0119u2ora (David Haywood)
 
 
 Source changes:
@@ -47,36 +48,36 @@ Source changes:
 - Changed parameters to read/write handlers from "address" to an unmodified "original_address" parameter (having the passed parameter being unmodified makes it easier to determine the original value while debugging) [Nathan Woods].
 - Fixed colors in dynduke [David Haywood].
 - Changed the following x86 instructions to read/write an entire word rather than two separate bytes [Philip Bennett]:
-  * mov_axdisp
-  * mov_dispax
-  * stosw (8086 only)
-  * rep stosw (8086 only)
+  * mov_axdisp;
+  * mov_dispax;
+  * stosw (8086 only);
+  * rep stosw (8086 only);
   * Also tweaked handling of x86 WAIT instruction.
 - Several more opcode fixes for Risky Challenge [robiza].
 - Cleaned up the include file usage in the code [Atari Ace]:
-  * Removed dead prototypes.
-  * Added missing self-#includes.
-  * Added missing source comments in mame/includes.
-  * Migrated the few #include "driver.h" lines from driver header files to source files (which is the common idiom).
-  * Eliminated #include "mame.h", "osdcore.h" et cetera from driver files where #include "driver.h" would suffice.
+  * Removed dead prototypes;
+  * Added missing self-#includes;
+  * Added missing source comments in mame/includes;
+  * Migrated the few #include "driver.h" lines from driver header files to source files (which is the common idiom);
+  * Eliminated #include "mame.h", "osdcore.h" et cetera from driver files where #include "driver.h" would suffice;
   * Removed unused srmp6.h and 9900stat.h.
 - Added the ROM loading for the various 5*XX roms, which are dumped but not yet hooked up [David Haywood].
 - Fixed error messages output from option.c [Christophe Jaillet].
 - gstream driver update: [Pierpaolo Prazzoli]:
-  * Changed to use a default NVRAM handler.
-  * Checked the inputs.
-  * Aligned the sprites.
+  * Changed to use a default NVRAM handler;
+  * Checked the inputs;
+  * Aligned the sprites;
   * Added some comments about oki banking.
 - Major Sega Model 2 rewrite [Ernesto Corvi]:
-  * Decoupled the geometry engine code from the hardware rasterizer. At this point, we could add emulation of the geometry DSPs for the 2B and 2C models, and hook them directly to the rasterizer. For the original and 2A models, an HLE geometry engine is provided (currently in use for all models).
-  * Full Geometry Engine simulation, including support for specular, multiple centers and dual polygon RAM.
-  * Support for all textured/transparent/checkered rendering modes.
-  * Improved texel/luma modulation.
-  * Improved viewport clipping.
-  * Improved z clipping.
-  * Extensive notes and documentation.
-  * Greatly improved near Z-Clipping, still not perfect though.
-  * Improved perspective-correct texturing for large textures.
+  * Decoupled the geometry engine code from the hardware rasterizer. At this point, we could add emulation of the geometry DSPs for the 2B and 2C models, and hook them directly to the rasterizer. For the original and 2A models, an HLE geometry engine is provided (currently in use for all models);
+  * Full Geometry Engine simulation, including support for specular, multiple centers and dual polygon RAM;
+  * Support for all textured/transparent/checkered rendering modes;
+  * Improved texel/luma modulation;
+  * Improved viewport clipping;
+  * Improved z clipping;
+  * Extensive notes and documentation;
+  * Greatly improved near Z-Clipping, still not perfect though;
+  * Improved perspective-correct texturing for large textures;
   * Improved Z-Sorting.
 - Changed Machine to machine in several places where feasible [Atari Ace].
 - Added decryption of Jongkyo [Nicola Salmoria].

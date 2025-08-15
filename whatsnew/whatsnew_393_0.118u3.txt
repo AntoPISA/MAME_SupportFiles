@@ -2,19 +2,19 @@
 ---------------------------------------
 
 
-New Games Added or Promoted from NOT_WORKING Status
----------------------------------------------------
+New Game Added or Promoted from NOT_WORKING Status
+--------------------------------------------------
 Aladdin (bootleg of Japanese Megadrive version) [stephh]
 
-New Clones Added
-----------------
+New Clone Added
+---------------
 Raiden Fighters (Italy) [Corrado Tomaselli]
 
 
-MAMETesters Bugs Fixed (2):
----------------------------
-qbert0118u2gra [Aaron Giles]
-zoom909_0118u2ora [Aaron Giles]
+MAME Testers Bugs Fixed (2):
+----------------------------
+- qbert0118u2gra [Aaron Giles]
+- zoom909_0118u2ora [Aaron Giles]
 
 
 Source changes:
@@ -26,8 +26,8 @@ Source changes:
 - Fixed subtle monymony regression from 0.36b10(!) [Atari Ace].
 - Fixed F8 CPU core to not clobbert the irq_callback on a reset [Wilbert Pol].
 - Amiga system updates [Ernesto Corvi]:
-  * Implemented the ECS-only BLTSIZV and BLTSIZH custom registers, and modified BLTSIZE and the blitter to use them.
-  * Properly implemented the bit in VPOSR that indicates if we're running on a PAL or NTSC Amiga.
+  * Implemented the ECS-only BLTSIZV and BLTSIZH custom registers, and modified BLTSIZE and the blitter to use them;
+  * Properly implemented the bit in VPOSR that indicates if we're running on a PAL or NTSC Amiga;
   * Fixed the PAL clock on the Pictomatic driver in alg.c.
 - Added counter emulation to the COP420 CPU core. Hooked it up to Thayer's Quest and added an alternate set [Andrew Gardner].
 - Added missing PROMs to the Status Trivia driver [Brian Troha].

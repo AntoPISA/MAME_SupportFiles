@@ -2,33 +2,33 @@
 ---------------------------------------
 
 
-New games added or promoted from NOT_WORKING status
+New Games Added or Promoted from NOT_WORKING Status
 ---------------------------------------------------
 Magic Fly [Roberto Fresca]
 7 e Mezzo [Roberto Fresca]
 
-New clones added
-----------------
+New Clone Added
+---------------
 Captain Silver (World) [David Haywood]
 
-New games marked as GAME_NOT_WORKING
-------------------------------------
+New Game Marked as GAME_NOT_WORKING
+-----------------------------------
 Ten Pin Deluxe [Aaron Giles]
 
 
-MAMETesters Bugs Fixed (11):
+MAME Testers Bugs Fixed (11):
 ----------------------------
-asserts0115ora (Aaron Giles)
-scregg0115red (Zsolt Vasvari)
-mysticri36rc2gre (Pierpaolo Prazzoli)
-m92c053gre2 (Pierpaolo Prazzoli)
-aerofgt.c0115ora (Roberto Fresca)
-midyunit0115red (Couriersud)
-nekkyoku0115red (Couriersud)
-exerion0112u4yel (Pierpaolo Prazzoli)
-dragngun067yel (R. Belmont, Ryan Holtz) ...please verify
-cidelsa0114u4gre (Aaron Giles)
-missile0115yel (Aaron Giles)
+- asserts0115ora (Aaron Giles)
+- scregg0115red (Zsolt Vasvari)
+- mysticri36rc2gre (Pierpaolo Prazzoli)
+- m92c053gre2 (Pierpaolo Prazzoli)
+- aerofgt.c0115ora (Roberto Fresca)
+- midyunit0115red (Couriersud)
+- nekkyoku0115red (Couriersud)
+- exerion0112u4yel (Pierpaolo Prazzoli)
+- dragngun067yel (R. Belmont, Ryan Holtz) ...please verify
+- cidelsa0114u4gre (Aaron Giles)
+- missile0115yel (Aaron Giles)
 
 
 Source changes:
@@ -36,58 +36,58 @@ Source changes:
 - Added support for playback of "extended" INP files that are commonly found on compete sites [David Haywood].
 - Added lswx and stswx opcodes to the PowerPC core [Ville Linde].
 - Changed DRIVER_INIT macro to prepend driver_init_* instead of simply init_* to be consistent with the other initialization functions [Atari Ace].
-- Corrected the pulse shape of the timer output in the MPU4 driver, and also correctly identified the AY sound chip as an AY8913. [James Wallace].
+- Corrected the pulse shape of the timer output in the MPU4 driver, and also correctly identified the AY sound chip as an AY8913 [James Wallace].
 - Merged leprechn driver into the gameplan driver and added correct video timings [Zsolt Vasvari].
 - Cleaned up the dorachan driver. Replaced fake color map with actual color PROM decoding [Zsolt Vasvari].
 - Cleaned up the supertnk driver [Zsolt Vasvari].
 - Move Atari vector PROMs into separate regions [Mathis Rosenhauer].
-- Added DIP switches for 'Excite League' [Barry Harris, Yasuhiro Ogawa].
+- Added DIP switches for Excite League [Barry Harris, Yasuhiro Ogawa].
 - Improved m92 sprite drawing [Pierpaolo Prazzoli].
 - Rewrote the magicfly driver [Roberto Fresca]:
-  * Figured out how the protection works.
-  * Removed the hacks/patchs that formerly allow boot the games.
-  * Figured out how the buffered inputs works.
-  * Demuxed all inputs for both games.
-  * Unified the memory maps from both games.
-  * Added NVRAM support to both games.
-  * Mapped DIP switches.
-  * Managed the planes to get the 3bpp GFX colors accurate.
-  * Renamed the ROMs acording to pcb pictures and ROM contents.
+  * Figured out how the protection works;
+  * Removed the hacks/patchs that formerly allow boot the games;
+  * Figured out how the buffered inputs works;
+  * Demuxed all inputs for both games;
+  * Unified the memory maps from both games;
+  * Added NVRAM support to both games;
+  * Mapped DIP switches;
+  * Managed the planes to get the 3bpp GFX colors accurate;
+  * Renamed the ROMs acording to pcb pictures and ROM contents;
   * Cleaned up and optimized the driver.
 - Fixed throttle range in gforce2 [David Haywood].
-- Moved Win32 UTF-8 wrappers into a new module (winutf8.c), and added some new wrappers that Oliver Stoeneberg created for MAME32 [Nathan Woods].
+- Moved Win32 UTF-8 wrappers into a new module (winutf8.c) and added some new wrappers that Oliver Stoeneberg created for MAME32 [Nathan Woods].
 - Aleck64/N64 update [Ryan Holtz]:
-  * RSP: some opcodes bugfixed plus should work on big-endian targets.
-  * Real PIF ROM dump now used and required.
+  * RSP: some opcodes bugfixed plus should work on big-endian targets;
+  * Real PIF ROM dump now used and required;
   * Various other fixes.
 - Fixed EEPROM handling in surfplnt [Couriersud].
 - Fixed carry flag calculation for SUB/SBC/CMP family instructions in the ARM core [R. Belmont, Ryan Holtz].
 - Improvements to the ARM7 core [R. Belmont, Ryan Holtz]:
-  * Fixed 32-bit unaligned reads to "scramble" properly.
-  * Fixed carry flag calc for SUB/SBC/CMP family instructions.
-  * Fixed multiply-and-accumulate instructions.
-  * Added more instructions to the disassembler.
-  * Fixed logical and arithmetic shifts.
-  * Added more Thumb instructions.
-  * Fixed relative loads and stores.
-  * Fixed LSL/LSR with zero shift values.
+  * Fixed 32-bit unaligned reads to "scramble" properly;
+  * Fixed carry flag calc for SUB/SBC/CMP family instructions;
+  * Fixed multiply-and-accumulate instructions;
+  * Added more instructions to the disassembler;
+  * Fixed logical and arithmetic shifts;
+  * Added more Thumb instructions;
+  * Fixed relative loads and stores;
+  * Fixed LSL/LSR with zero shift values;
   * Fixed the disassembly of CMN.
 - Verified behavior when ADD destination is the PC on real H/W.
 - Rewrote the Space Firebird driver [Zsolt Vasvari]:
-  * Added star field, matches with the screen shot perfectly.
-  * Video timings/memory map/interrupts from schematics.
+  * Added star field, matches with the screen shot perfectly;
+  * Video timings/memory map/interrupts from schematics;
   * Added support for the color fade effect.
 - Identified a couple of new opcodes in the Irem V30 CPU which improves matchit2 [Pierpaolo Prazzoli].
 - Significantly cleaned up the Spiders driver [Zsolt Vasvari].
 - Changed memory system behavior so that masks can be specified independently of mirrors. By default if the mask is 0 and a mirror is present, the mask is implicitly ~mirror, just as before. But if a mask is specified, it is not limited to the non-mirrored bits. This allows you to independently control the mapping versus what is returned to the read/write handler [Aaron Giles].
 - Rewrote Astrocade driver [Aaron Giles]:
-  * Fully implemented all function generator modes.
-  * Implemented pattern board according to schematics, including timing.
-  * Fixed interrupt handling.
-  * Added crosshairs to 'SeaWolf II'.
-  * Added stereo sound and panning to 'SeaWolf II' samples.
-  * Rewrote Astrocade sound emulation according to patent.
-  * Sound generation now uses proper LFSR for noise effects.
+  * Fully implemented all function generator modes;
+  * Implemented pattern board according to schematics, including timing;
+  * Fixed interrupt handling;
+  * Added crosshairs to SeaWolf II;
+  * Added stereo sound and panning to SeaWolf II samples;
+  * Rewrote Astrocade sound emulation according to patent;
+  * Sound generation now uses proper LFSR for noise effects;
   * Added partial support for Ten Pin Deluxe, including sound board emulation and internal layout.
 - Fixed sound in Inferno after all these years. Sadly, it required a hack [Aaron Giles].
 - Added correct video timings for the Williams games [Aaron Giles].

@@ -1,5 +1,6 @@
 0.134u3 2009/10/12 [#500 - Aaron Giles]
 ---------------------------------------
+NOTE: FIFTEENTH HUNDREDTH MAME VERSION RELEASED!
 
 
 New Games Added or Promoted from NOT_WORKING Status
@@ -25,8 +26,8 @@ PMA Poker [Roberto Fresca, Siftware]
 Turbo Poker 2 [Roberto Fresca, Siftware]
 
 
-MAMETesters Bugs Fixed (3):
----------------------------
+MAME Testers Bugs Fixed (3):
+----------------------------
 - 03470: [Crash/Freeze] backfirea: Game mode setting error on startup (Fabio Priuli)
 - 03465: [Crash/Freeze] batrid, bgaregga, bkraidu and clones: Reset after ROM check (R. Belmont)
 - 03463: [DIP/Input] kingball, kingballj: Wrong coinage DIP options (Tafoid)
@@ -35,26 +36,26 @@ MAMETesters Bugs Fixed (3):
 Source changes:
 ---------------
 - Multifish driver update [MetalliC]:
-  * Hooked up RTC (real time clock).
+  * Hooked up RTC (real time clock);
   * Added documentation about backdoor / bootleg / hacks.
 - Space Encounter: Fixed enemy shot sound [Derrick Renaud].
 - Space Walk: Started Springboard Miss sound [Derrick Renaud].
 - Added color PROM to Omega [Andy Welburn].
 - m68k updates [R. Belmont]:
-  * Throw F-line trap correctly when PMMU instructions are hit on non-equipped CPUs.
-  * Added working PMMU address translation (not feature complete, but sufficient to boot several 68030 Macs in MESS).
-  * Fixed up disassembly of some PMMU instructions.
+  * Throw F-line trap correctly when PMMU instructions are hit on non-equipped CPUs;
+  * Added working PMMU address translation (not feature complete, but sufficient to boot several 68030 Macs in MESS);
+  * Fixed up disassembly of some PMMU instructions;
   * Added "68020 with 68851" CPU type.
 - Added correct 64Mb CROM dumps to spikeout [Phil Bennett].
 - Added EXPECTED macro to complement the already existing UNEXPECTED macro [Couriersud].
 - Discrete update [Couriersud]:
-  * Fix some "const" weirdness I introduced.
-  * Fix VREF in CRFILTER_VREF and RCFILTER_VREF. VREF never got used since it was only a static parameter.
-  * Removed enable from CR_FILTER* and RC_FILTER*.
-  * Updated drivers accordingly.
+  * Fix some "const" weirdness I introduced;
+  * Fix VREF in CRFILTER_VREF and RCFILTER_VREF. VREF never got used since it was only a static parameter;
+  * Removed enable from CR_FILTER* and RC_FILTER*;
+  * Updated drivers accordingly;
   * Use EXPECTED/UNEXPECTED to help the compiler
 - DISCRETE_CRFILTER, DISCRETE_RCFILTER updates [Derrick Renaud]:
-  * Revert vref change from rev 6979.
+  * Revert vref change from rev 6979;
   * Added capability for all values to be nodes.
 - Starship 1: Fixed motor sound. [Derrick Renaud].
 - Shuffleboard: Started discrete sounds [Derrick Renaud].
@@ -66,21 +67,21 @@ Source changes:
 - Asserted copyright ownership of core library and OSD files, and relicensed them under the standard BSD license, with permission of the original authors. The files in question all live under src/lib/util and src/osd [Aaron Giles].
 - Device memory spaces are now visible in the debugger [Aaron Giles].
 - Better task processing for discrete sounds [Couriersud]:
-  * Tasks are now processed according to their dependency lists. Tasks can now start early and will only process samples which are already available. This has most impact on drivers which have significant variance in the run-time of individual tasks.
-  * Tasks now process samples in slices, currently max 240 samples/slice. 
-  * TASK_GROUP is now obsolete - Will update drivers at a later stage.
-  * Step function pointer now back in node, modules may register optimized step functions.
-  * Profiling code now always compiled, introduced static int profiling = ... 
+  * Tasks are now processed according to their dependency lists. Tasks can now start early and will only process samples which are already available. This has most impact on drivers which have significant variance in the run-time of individual tasks;
+  * Tasks now process samples in slices, currently max 240 samples/slice;
+  * TASK_GROUP is now obsolete - Will update drivers at a later stage;
+  * Step function pointer now back in node, modules may register optimized step functions;
+  * Profiling code now always compiled, introduced static int profiling = ... ;
   * Some more EXPECTED/UNEXPECTED usage.
 - Fixed DIP switches for attckufo [stephh].
 - Improvements to Noraut poker driver [Roberto Fresca]:
-  * Added Draw Poker Hi-Lo hardware support, based on 8080A CPU.
-  * Mirrored the PPI's offsets to simplify/merge the hardware emulation.
-  * Added hardware documentation and PCB layouts from both DPHL sets.
-  * Added DPHL discrete sound circuitry scheme/documentation.
-  * Added Turbo Poker 2 from Micro Manufacturing.
-  * Added PMA poker.
-  * Documented the Turbo Poker 2 hardware.
-  * Added Turbo Poker 2 PCB layout from hi-res picture.
-  * Switched to the new PPI core.
+  * Added Draw Poker Hi-Lo hardware support, based on 8080A CPU;
+  * Mirrored the PPI's offsets to simplify/merge the hardware emulation;
+  * Added hardware documentation and PCB layouts from both DPHL sets;
+  * Added DPHL discrete sound circuitry scheme/documentation;
+  * Added Turbo Poker 2 from Micro Manufacturing;
+  * Added PMA poker;
+  * Documented the Turbo Poker 2 hardware;
+  * Added Turbo Poker 2 PCB layout from hi-res picture;
+  * Switched to the new PPI core;
   * Commented out the 3rd PPI device till handshaked strobe lines can be properly emulated. For now, all VRAM access is through direct handlers. This allow to remove the hacks per set needed to boot the games.

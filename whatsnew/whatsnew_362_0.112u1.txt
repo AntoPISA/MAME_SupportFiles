@@ -38,12 +38,12 @@ src/
 Along with these changes come a number of makefile alterations to better distribute the build knowledge within each major subdirectory. There may be some build issues or other interesting side effects to this change. Report them on MAMETesters and future updates will include fixes.
 
 
-New games added or promoted from NOT_WORKING status
+New Games Added or Promoted from NOT_WORKING Status
 ---------------------------------------------------
 Cash Quiz [Pierpaolo Prazzoli]
 Sidewinder [smf]
 
-New clones added
+New Clones Added
 ----------------
 Eco Fighters (Asia 931203) [Nicola Salmoria]
 Eco Fighters (USA 931203) [Nicola Salmoria]
@@ -54,26 +54,26 @@ Rastan Saga (Japan Rev 1) [Gerald Coy]
 Ultimate Ecology (Japan 931203) [Nicola Salmoria]
 
 
-MAMETesters Bugs Fixed (3):
----------------------------
-bnj0111u5ora (Canim)
-m4_0111u4gra (Mike Ellery)
-mouser0112yel (Mamesick)
+MAME Testers Bugs Fixed (3):
+----------------------------
+- bnj0111u5ora (Canim)
+- m4_0111u4gra (Mike Ellery)
+- mouser0112yel (Mamesick)
 
 
 Source changes:
 ---------------
 - Improvements to the Cidelsa driver [Curt Coder]:
-  * Fixed the disassembly of cdp1802 opcode LSKP.
-  * Changed the cdp1802 opcode OUT to increment R(X) after calling the  write handler.
-  * Set cdp1869 display size and visible area according to data sheet.
-  * Added cdp1869 CFC emulation (probably never used by anything but just for completeness' sake).
+  * Fixed the disassembly of cdp1802 opcode LSKP;
+  * Changed the cdp1802 opcode OUT to increment R(X) after calling the  write handler;
+  * Set cdp1869 display size and visible area according to data sheet;
+  * Added cdp1869 CFC emulation (probably never used by anything but just for completeness' sake);
   * Cleaned up driver.
 - Improvements to the M2 driver [Ville Linde]:
-  * Added preliminary CD controller emulation.
+  * Added preliminary CD controller emulation;
   * Hooked up some more multi-processor functionality and interrupts.
 - Improvements to C352 sound emulator [cync, hoot development team]:
-  * Rewrote loop and flag handling, added support for global key-on register.
+  * Rewrote loop and flag handling, added support for global key-on register;
   * Fixed state saving.
 - Worked around compilation error on MSVC that caused "Calendar error" in the Neo Geo games [Atari Ace].
 - Rewrote much of the RF5C400 sound emulator to support looping, stereo panning, and 8-bit sample support [hoot development team, Ville Linde].
@@ -83,13 +83,13 @@ Source changes:
 - Added save state support for all games in gng.c, gunsmoke.c, lasso.c, solomon.c and terracre.c [Vas Crabb].
 - Replaced implementation of Namco 54xx sound chip with new MB8844 CPU core running the original embedded ROM code. Removed old sound core. 'Pole Position' and 'Bosconian' no longer require samples as a result [Nicola Salmora, Ernesto Corvi, Guru].
 - Added new function driver_get_count() to return the number of drivers [Nathan Woods]
-- Added a bunch of new protection routines for 'SD Gundam' and 'Heated Barrel' [Angelo Salese].
+- Added a bunch of new protection routines for 'SD Gundam' and Heated Barrel [Angelo Salese].
 - Input system changes [Derrick Renaud]:
-  * Added new IPT_POSITIONAL control type. This is for Ikari type rotary controls and gray-code devices like Seawolf. This makes rotary and gray-code controls easy to enter without custom handlers.
-  * Fixed some rounding and min/max errors in the core input code.
-  * Modified crosshair code to be based on real scaling, see Seawolf for an example. It can now also have multiple crosshairs on one input port if needed.
-  * Added back in the namcos2 crosshairs. Turns out they are needed for calibration.
-  * Removed the gwar control hack from the Ikari games that did not need it. Modified the gwar control hack so it is only used for 1 frame, making it unnoticeable.
+  * Added new IPT_POSITIONAL control type. This is for Ikari type rotary controls and gray-code devices like Seawolf. This makes rotary and gray-code controls easy to enter without custom handlers;
+  * Fixed some rounding and min/max errors in the core input code;
+  * Modified crosshair code to be based on real scaling, see Seawolf for an example. It can now also have multiple crosshairs on one input port if needed;
+  * Added back in the namcos2 crosshairs. Turns out they are needed for calibration;
+  * Removed the gwar control hack from the Ikari games that did not need it. Modified the gwar control hack so it is only used for 1 frame, making it unnoticeable;
   * Updated boothill, gunfight, seawolf, spcenctr to use the new PORT_REMAP_TABLE.
 - Fixed the exidy/stern-sb1000 6840-based sound hardware to use what is believed (based on the schematic) to be the proper LFSR/PRNG waveform for its secondary clock source [Lord Nightmare].
 - Updated Dragon Bowl to use HOLD_LINE for sound IRQs. Also did the same for the following drivers: afega, ettrivia, funybubl, jack, mustache, seta, trvmadns, wink [Pierpaolo Prazzoli].

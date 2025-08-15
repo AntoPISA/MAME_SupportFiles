@@ -2,7 +2,7 @@
 ---------------------------------------
 
 
-New games added or promoted from NOT_WORKING status
+New Games Added or Promoted from NOT_WORKING Status
 ---------------------------------------------------
 Altair [Curt Coder]
 Asura Buster - Eternal Warriors (Japan) [David Haywood, Guru]
@@ -15,7 +15,7 @@ Jyangokushi: Haoh no Saihai (Japan) [Guru]
 Search Eye 2 Plus V2.0 [Guru, David Haywood]
 Wyvern Wings [Pierpaolo Prazzoli]
 
-New clones added
+New Clones Added
 ----------------
 1944: The Loop Master (Japan 000620) [Nicola Salmoria]
 Armored Warriors (Asia 940920) [Nicola Salmoria]
@@ -37,7 +37,7 @@ X-Men (4 Players ver JBA) [Brian Troha]
 X-Men Vs. Street Fighter (7 sets) [Nicola Salmoria]
 X-Men: Children of the Atom (Hispanic 950331) [Nicola Salmoria]
 
-New games marked as GAME_NOT_WORKING
+New Games Marked as GAME_NOT_WORKING
 ------------------------------------
 Candy Puzzle [David Haywood]
 Harem Challenge [David Haywood]
@@ -49,27 +49,27 @@ Magic Premium [David Haywood]
 Ski Champ [R. Belmont]
 
 
-MAMETesters Bugs Fixed (4):
----------------------------
-analog0112u1gra (Derrick Renaud)
-layout0112u1gre (Aaron Giles)
-pinbo0112u1gre (Aaron Giles)
-UItext0112u1yel (Aaron Giles)
+MAME Testers Bugs Fixed (4):
+----------------------------
+- analog0112u1gra (Derrick Renaud)
+- layout0112u1gre (Aaron Giles)
+- pinbo0112u1gre (Aaron Giles)
+- UItext0112u1yel (Aaron Giles)
 
 
 Source changes:
 ---------------
 - Improved the cidelsa driver [Curt Coder]:
-  * Rewrote the cdp1802 CPU emulation as a state machine.
-  * Fixed Draco dips and inputs (what a strange game!).
-  * Added NVRAM to Destroyer/Draco (Altair has no battery on the PCB).
+  * Rewrote the cdp1802 CPU emulation as a state machine;
+  * Fixed Draco dips and inputs (what a strange game!);
+  * Added NVRAM to Destroyer/Draco (Altair has no battery on the PCB);
   * Fixed some clocks.
 - Fixed mapping of spaceship controls in spcenctr [Canim].
 - Removed the inclusion of unnecessary header files across the project [Atari Ace].
 - Added discrete filters to the new Namco 54xx sound effects. Also implemented filters for the 52xx sound effects in preparation for future changes [Derrick Renaud].
 - Added pause support to the output system [Bob Seidel]:
-  * Added "pause" message through the Output system to let clients know when MAME is paused.
-  * The state of an item is now sent when the item is first created.
+  * Added "pause" message through the Output system to let clients know when MAME is paused;
+  * The state of an item is now sent when the item is first created;
   * Updated ledutil to use the pause state.
 - Added cocktail mode and DIP locations to the Millipede driver [Mike Haaland].
 - Many more CPS2 keys added. Removed all XORs and support for them from MAME [Nicola Salmoria, Andreas Naive].

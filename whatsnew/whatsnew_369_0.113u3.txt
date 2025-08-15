@@ -2,7 +2,7 @@
 ---------------------------------------
 
 
-New games added or promoted from NOT_WORKING status
+New Games Added or Promoted from NOT_WORKING Status
 ---------------------------------------------------
 7 Ordi [Brian Troha, stephh]
 Bestri [David Haywood, Brian Troha]
@@ -16,13 +16,13 @@ Master Boy [David Haywood, Charles MacDonald, Clawgrip]
 Opa Opa [Nicola Salmoria, David Haywood]
 SD Fighter (Korea) [David Haywood, Brian Troha]
 
-New clones added
+New Clones Added
 ----------------
 Funny Bubble (In Chang Electronic Co) [Brian Troha]
 One + Two (earlier) [Brian Troha]
 Twin Adventure (Korea) [Brian Troha]
 
-New games marked as GAME_NOT_WORKING
+New Games Marked as GAME_NOT_WORKING
 ------------------------------------
 Big D2 [David Haywood]
 Da Ban Cheng [Xing Xing]
@@ -44,9 +44,9 @@ Super Dou Di Zhu [Xing Xing]
 WonderLeague Star [David Haywood, Brian Troha]
 
 
-MAMETesters Bug Fixed (1):
---------------------------
-eprom0113u2gre (Zsolt Vasvari)
+MAME Testers Bug Fixed (1):
+---------------------------
+- eprom0113u2gre (Zsolt Vasvari)
 
 
 Source changes:
@@ -58,7 +58,7 @@ Source changes:
 - Fixed a large pile of DIP switches in the Sega System E games [Brian Troha].
 - Fixed crashing bugs in SCSP emulation [David Haywood].
 - ES5503 improvements [R. Belmont]:
-  * Fixed extraneous click at end of samples.
+  * Fixed extraneous click at end of samples;
   * Improved timing behavior. Fixes music tempo in many Apple IIgs apps and games in MESS.
 - Fixed display of immediate word and long operands in the TMS340x0 disassembler [Philip Bennett].
 - Updated Ultra Tank to component value code instead of a generic emulation and added 'Sprint 4' audio [Derrick Renaud].
@@ -69,10 +69,10 @@ Source changes:
 - Refactored the options code into a new generic utility module options.c. Moved the MAME core options into a new module emuopts.c [Nathan Woods].
 - Some minor NeoGeo set updates [Johnboy].
 - Updates to the cybertnk driver [PS]:
-  * Inter CPU communications.
-  * Inputs (almost complete).
-  * Sound.
-  * Program ROMs marked as bad dumps.
+  * Inter CPU communications;
+  * Inputs (almost complete);
+  * Sound;
+  * Program ROMs marked as bad dumps;
   * Unmapped reads.
 - Updated some more drivers updated to the new video timing [Zsolt Vasvari].
 - Did a ground-up rewrite of the VIC Dual driver [Zsolt Vasvari].

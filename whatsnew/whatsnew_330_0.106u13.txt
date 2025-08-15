@@ -8,9 +8,9 @@ Digger Man (prototype) [MAME32Plus]
 Firebeast (prototype) [F.J. McCloud]
 
 
-MAMETesters Bug Fixed (1):
---------------------------
-resolutionrating0106u12yel (Aaron Giles)
+MAME Testers Bug Fixed (1):
+---------------------------
+- resolutionrating0106u12yel (Aaron Giles)
 
 
 Source changes:
@@ -21,12 +21,12 @@ Source changes:
 - Fixed uninitialized variable in the debugger commenting code. Cleaned up allocations [Nathan Woods].
 - Hooked up color PROM for schaser and fixed DIP switches [Robbbert].
 - Improved multisession support with the new renderer [Nathan Woods].
-- More "Crystal Castles" tweaks [Aaron Giles]:
+- More Crystal Castles tweaks [Aaron Giles]:
   * Connected EAROM correctly (passes POST now);
-  * Added a guess for what the "POTATO" chip does. If you're a CC fan report to MAMETesters how MAME looks compared to the arcade when the screen scrolls up inbetween level 4 and 5.
+  * Added a guess for what the "POTATO" chip does. If you're a CC fan report to MAME Testers how MAME looks compared to the arcade when the screen scrolls up inbetween level 4 and 5.
 - Reimplemented the sparkle circuit to bring back stars in Tempest [Aaron Giles].
 - Removed the background brightness in vector games by default. If you want to see the overlays faintly on vector games, increase the brightness a bit [Aaron Giles].
-- Rewrote 'Cloud 9' driver to mimic the 'Crystal Castles' driver since it is obviously an early version of the same hardware [Aaron Giles]:
+- Rewrote Cloud 9 driver to mimic the 'Crystal Castles' driver since it is obviously an early version of the same hardware [Aaron Giles]:
   * Implemented video RAM banking correctly based on tracing out a Firebeast PCB, which appears to be identical;
   * Traced out color mapping and implemented correctly;
   * Reduced EAROM down to 4 bits;

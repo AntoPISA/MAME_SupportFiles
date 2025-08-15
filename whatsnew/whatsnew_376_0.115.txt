@@ -2,40 +2,40 @@
 -------------------------------------
 
 
-New clones added
+New Clone Added
 ----------------
 Viper Phase 1 (Hong Kong, Metrotainment license) [Corrado Tomaselli]
 
 
-MAMETesters Bugs Fixed (6):
----------------------------
-ym2203slowdown0114u2gre (Aaron Giles)
-powerins0104yel (Aaron Giles)
-k007232_0114u1gre (Aaron Giles)
-rfjetus0114u2red (Aaron Giles)
-namcos2_0114yel (Zsolt Vasvari)
-term2_0114u4yel (Aaron Giles)
+MAME Testers Bugs Fixed (6):
+----------------------------
+- ym2203slowdown0114u2gre (Aaron Giles)
+- powerins0104yel (Aaron Giles)
+- k007232_0114u1gre (Aaron Giles)
+- rfjetus0114u2red (Aaron Giles)
+- namcos2_0114yel (Zsolt Vasvari)
+- term2_0114u4yel (Aaron Giles)
 
 
 Source changes:
 ---------------
 - Additional ARM7 core fixes [R. Belmont]:
-  * Fixed SWI instruction in Thumb mode.
-  * Rewrote SWP instruction to work properly.
+  * Fixed SWI instruction in Thumb mode;
+  * Rewrote SWP instruction to work properly;
   * Added some missing change_pc()s.
-- Fixed Mustache Boy interrupt behavior and visible area. [Lord Nightmare].
+- Fixed Mustache Boy interrupt behavior and visible area [Lord Nightmare].
 - Updated Windows exit code to ensure cursor is shown again [Nathan Woods].
 - Moved Space Stranger/Space Stranger 2 into its own driver and fixed cocktail mode [Zsolt Vasvari].
 - Major rewrite of pmpoker driver [Roberto Fresca]:
-  * Removed all inputs hacks.
-  * Connected both PIAs properly.
-  * Demuxed all inputs for each game.
-  * Documented all outputs.
-  * Added lamps support.
-  * Created different layout files to cover each game.
-  * Add NVRAM support to all games.
-  * Corrected the color PROM status for each set.
-  * Figured out most of the DIP switches.
+  * Removed all inputs hacks;
+  * Connected both PIAs properly;
+  * Demuxed all inputs for each game;
+  * Documented all outputs;
+  * Added lamps support;
+  * Created different layout files to cover each game;
+  * Add NVRAM support to all games;
+  * Corrected the color PROM status for each set;
+  * Figured out most of the DIP switches;
   * Added diplocations to goldnpkb.
 - Updates Enigma 2 video and interrupt systems from the schematics. Changed the color gun layout to match the flyers as much as possible [Zsolt Vasvari].
 - Converted Raiders 5 driver to tilemaps [Zsolt Vasvari].

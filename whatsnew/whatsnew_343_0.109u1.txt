@@ -3,7 +3,7 @@
 IMPORTANT NOTE TO OSD DEVELOPERS: The file I/O interface has changed significantly. It is now much simpler. Please read osdepend.h for full details on how the new OSD-defined functions work. In addition, you must now use the options.c to specify your search paths. If you are parsing standard command line options and INI files, this work is relatively straightforward. Otherwise, you can manually call options_set_string() for each of the search paths to configure them from whatever options store you are using.
 
 
-New games added or promoted from NOT_WORKING status
+New Games Added or Promoted from NOT_WORKING Status
 ---------------------------------------------------
 Doki Doki Penguin Land [Tomasz Slanina, Guru]
 Dynamic Shooting [Tomasz Slanina, Guru]
@@ -11,44 +11,44 @@ Five a Side Soccer [Ville Linde]
 Shooting Gallery [Pierpaolo Prazzoli]
 Super Street Fighter II - The New Challengers [David Haywood, stephh]
 
-New clones added
+New Clones Added
 ----------------
 Double Dragon 3 (Japan) [Corrado Tomaselli]
 The Cliffhanger - Edward Randy (World) [Patrik Styrnell]
 Twin Brats (set 2) [Patrik Styrnell]
 
 
-MAMETesters Bugs Fixed (11):
-----------------------------
-chdbaddump0109ora (Aaron Giles)
-czeroize0108u2yel (David Haywood)
-ddrawcoloroverlay0109yel (Aaron Giles)
-gradius30104u3gre (Mamesick)
-listrom0109red (Aaron Giles)
-new_debugger0109ora (Aaron Giles)
-ronnamelength0109ora (krick)
-shtngmst0108u4ora (Pierpaolo Prazzoli)
-silentd0108u5yel (Mamesick)
-spelunk2099u6gre (robiza)
-twinactn0105u2gre (robiza)
+MAME Testers Bugs Fixed (11):
+-----------------------------
+- chdbaddump0109ora (Aaron Giles)
+- czeroize0108u2yel (David Haywood)
+- ddrawcoloroverlay0109yel (Aaron Giles)
+- gradius30104u3gre (Mamesick)
+- listrom0109red (Aaron Giles)
+- new_debugger0109ora (Aaron Giles)
+- ronnamelength0109ora (krick)
+- shtngmst0108u4ora (Pierpaolo Prazzoli)
+- silentd0108u5yel (Mamesick)
+- spelunk2099u6gre (robiza)
+- twinactn0105u2gre (robiza)
 
 
 Source changes:
 ---------------
 - More findout.c/getrivia.c improvements [wolf676]:
-  * Added ticket dispenser to Trivia/Sexual Trivia.
-  * Found last unknown dipswitch in Selection/Poker.
-  * Added missing "Payout" button; payout hardware unknown. 
-  * Added missing "Play / Raise" button and its lamp 9.
-  * Added "Button 12 ?" to selection, function unknown.
-  * Re-added PORT_IMPULSE(2) to poker games buttons because they do not like it if two or more buttons are held; trivia games still respond better without this.
-  * Changed coin_lockout_global to coin_lockout_w(0) and coin_lockout_w(1) for 2 coin slots in selection. 
+  * Added ticket dispenser to Trivia/Sexual Trivia;
+  * Found last unknown dipswitch in Selection/Poker;
+  * Added missing "Payout" button; payout hardware unknown;
+  * Added missing "Play / Raise" button and its lamp 9;
+  * Added "Button 12 ?" to selection, function unknown;
+  * Re-added PORT_IMPULSE(2) to poker games buttons because they do not like it if two or more buttons are held; trivia games still respond better without this;
+  * Changed coin_lockout_global to coin_lockout_w(0) and coin_lockout_w(1) for 2 coin slots in selection;
   * Added missing lamps 11 (coin slot 2), 12 and 13 (unknown) to selection.
 - Fixed crash in the MPU4 driver [El Condor].
 - Hooked up ARM ROM for kovsh, though it doesn't work yet [ElSemi].
 - Some fixes for the 8080bw driver [Robbbert]:
-  * The correct samples are being used for lrescue, lrescuem, grescue, desterth.
-  * Dipswitch corrections for superinv, invadrmr, sinvemag, spceking, spacewr3.
+  * The correct samples are being used for lrescue, lrescuem, grescue, desterth;
+  * DIP switch corrections for superinv, invadrmr, sinvemag, spceking, spacewr3;
   * Remove extraneous beeping noise from indianbt.
 - Converted all the toaplan2.c games to mono since the PCBs are JAMMA without external stereo connectors [Corrado Tomaselli].
 - Added bounds checking to the qsound driver [David Haywood].

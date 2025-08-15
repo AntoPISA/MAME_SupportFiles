@@ -2,51 +2,51 @@
 ---------------------------------------
 
 
-New games added or promoted from NOT_WORKING status
+New Games Added or Promoted from NOT_WORKING Status
 ---------------------------------------------------
 Excite League [Guru, Aaron Giles]
 Super League [Guru, Aaron Giles]
 Road Riot 4WD [Aaron Giles]
 Gaming Draw Poker [Roberto Fresca]
 
-New clones added
+New Clones Added
 ----------------
 Freeze (several clones) [Aaron Giles]
 Racin' Force (ver EAC) [David Haywood]
 
 
-MAMETesters Bugs Fixed (8):
----------------------------
-gauntlet0114u2gre (Aaron Giles)
-psxbasedgames0114u3red (Couriersud)
-successstv0114u2red (R. Belmont)
-asserts0113ora (Aaron Giles)
-hginga0114u2gra (Aaron Giles)
-ckongg0114u2gra (Aaron Giles)
-sample0114u3 (Aaron Giles)
-rampage0114u2gra (Aaron Giles)
+MAME Testers Bugs Fixed (8):
+----------------------------
+- gauntlet0114u2gre (Aaron Giles)
+- psxbasedgames0114u3red (Couriersud)
+- successstv0114u2red (R. Belmont)
+- asserts0113ora (Aaron Giles)
+- hginga0114u2gra (Aaron Giles)
+- ckongg0114u2gra (Aaron Giles)
+- sample0114u3 (Aaron Giles)
+- rampage0114u2gra (Aaron Giles)
 
 
 Source changes:
 ---------------
-- Updated clocks in 'Arkanoid' based on measurements from a real PCB [Tormod Tjaberg].
+- Updated clocks in Arkanoid based on measurements from a real PCB [Tormod Tjaberg].
 - Rewrote the vp906iii driver [Roberto Fresca]:
-  * Decoded GFX properly.
-  * Rewrote the memory map based on program ROMs analysis.
-  * Hooked two SY6520/6280 (M6821) PIAs for I/O.
-  * Hooked the SY6545 (6845) CRT controller.
-  * Fixed size for screen total and visible area based on SY6545 CRTC registers.
-  * Added partial inputs through PIAs.
-  * Added proper sound through AY8910 (mapped at $0840-$0841).
-  * Proper colors through color PROM decode.
-  * Added some game-protection workaround.
+  * Decoded GFX properly;
+  * Rewrote the memory map based on program ROMs analysis;
+  * Hooked two SY6520/6280 (M6821) PIAs for I/O;
+  * Hooked the SY6545 (6845) CRT controller;
+  * Fixed size for screen total and visible area based on SY6545 CRTC registers;
+  * Added partial inputs through PIAs;
+  * Added proper sound through AY8910 (mapped at $0840-$0841);
+  * Proper colors through color PROM decode;
+  * Added some game-protection workaround;
   * Added NVRAM support.
 - Removed some unnecessary NULL checks and fixed some incorrect usage of auto_malloc [Atari Ace].
 - Fixed layer drawing and polygon sorting order in Model 1 games. Improves wingwar significantly [Yochizo].
 - Significant ARM7 update [R. Belmont]:
-  * Cleaned up disassembly.
-  * Added support for many more Thumb instructions.
-  * Removed unnecessary logging.
+  * Cleaned up disassembly;
+  * Added support for many more Thumb instructions;
+  * Removed unnecessary logging;
   * Unaligned reads/writes are supported.
 - Fixed crash due to lack of CD in the Success ST-V games [R. Belmont].
 - Added calls to support enumerating through options [Nathan Woods].
@@ -60,6 +60,6 @@ Source changes:
 - Changed MDRV_CPU_PERIODIC_INT() to take a frequency parameter instead of a time. This is converted internally to a subseconds value [Aaron Giles].
 - Fixed asteroid and llander controls to be buttons not joysticks [Aaron Giles].
 - Simplified register and flags management in the TMS34010 core. Reviewed all flag handling and fixed a couple of minor discrepancies [Aaron Giles].
-- Hooked up actual TMS32015 on Road Riot 4WD and 'Steel Talons' [Aaron Giles].
+- Hooked up actual TMS32015 on Road Riot 4WD and Steel Talons [Aaron Giles].
 - Improved access to system registers in i386 core. Added explicit caching of segment data and flags. Fixed several minor issues [Aaron Giles].
 - Added several AY8910 variants so we can better specify the use of compatible but slightly different chips [Aaron Giles].

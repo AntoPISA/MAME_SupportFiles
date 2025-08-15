@@ -2,12 +2,12 @@
 ---------------------------------------
 
 
-New games added or promoted from NOT_WORKING status
----------------------------------------------------
+New Game Added or Promoted from NOT_WORKING Status
+--------------------------------------------------
 Quiz Olympic [Tomasz Slanina]
 
 
-New clones added
+New Clones Qdded
 ----------------
 Cameltry (World, YM2203 + M6295) [David Haywood]
 Lightning Fighters (Asia) [David Haywood]
@@ -16,40 +16,40 @@ Tekken 3 (TET3/VER.A) [Guru]
 Soul Calibur (SOC13/VER.B) [Guru]
 
 
-New games marked as GAME_NOT_WORKING
-------------------------------------
+New Game Marked as GAME_NOT_WORKING
+-----------------------------------
 Filetto (v1.05 901009) [Angelo Salese, Chris Hardy]
 
 
-MAMETesters Bugs Fixed (15):
-----------------------------
-revx060gre (Aaron Giles)
-totcarn063gre1 (Aaron Giles)
-term20104u2gre (Aaron Giles)
-term20103u4gre (Aaron Giles)
-openice093u2gre (Aaron Giles)
-mk095gre (Aaron Giles)
-rmpgwt060gre (Aaron Giles)
-psyforce0105u5red (Couriersud)
-raystorm0111u1red (Couriersud)
-sfex20103red (Couriersud)
-pkscram0111u4red (Couriersud)
-looping0111u3yel (Couriersud)
-cpsgfxpage4_0111red (Couriersud)
-rfjetus0101u5red (Couriersud)
-policetr059yel (Couriersud)
+MAME Testers Bugs Fixed (15):
+-----------------------------
+- revx060gre (Aaron Giles)
+- totcarn063gre1 (Aaron Giles)
+- term20104u2gre (Aaron Giles)
+- term20103u4gre (Aaron Giles)
+- openice093u2gre (Aaron Giles)
+- mk095gre (Aaron Giles)
+- rmpgwt060gre (Aaron Giles)
+- psyforce0105u5red (Couriersud)
+- raystorm0111u1red (Couriersud)
+- sfex20103red (Couriersud)
+- pkscram0111u4red (Couriersud)
+- looping0111u3yel (Couriersud)
+- cpsgfxpage4_0111red (Couriersud)
+- rfjetus0101u5red (Couriersud)
+- policetr059yel (Couriersud)
 
 
 Source changes:
 ---------------
 - Fixed cdp1802 DMA emulation [Curt Coder].
 - More Konami updates [Ville Linde]:
-  * Hooked up vblank interrupt to Voodoo in all Voodoo-based games
-  * Fixed a ROM loading issue in 'Silent Scope'.
-  * Added ADC1213x A/D converter emulation (machine/adc1213x)
+  * Hooked up vblank interrupt to Voodoo in all Voodoo-based games;
+  * Fixed a ROM loading issue in Silent Scope;
+  * Added ADC1213x A/D converter emulation (machine/adc1213x);
   * Hooked up analog controls in NWK-TR games.
 - MPU4 improvements [James Wallace]:
-  * Added NMI pulsing so Deal 'Em at least starts to boot.
+  * Added NMI pulsing so Deal 'Em at least starts to boot;
   * Decommissioned machine/mpu4.c, as the 6850acia code from Phil does the same job, making one less thing to maintain.
 - Moved frontend commands and command-line handling into a central, core-managed location clifront.c. This eliminates the need for windows/fronthlp.c and windows/config.c and should make creating command-line based ports much easier in the future [Aaron Giles].
 - Fixed many of the remaining polygon glitches in 'GTI Club', 'Solar Assault' and 'Operation Thunder Hurricane' [Ville Linde].

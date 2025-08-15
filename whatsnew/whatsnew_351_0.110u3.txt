@@ -2,15 +2,15 @@
 ---------------------------------------
 
 
-New clones added
+New Clones Added
 ----------------
 Bionic Commando (Euro) [Stefan Lindberg]
 World Rally (set 3 - 930217) [Kevin Eshbach]
 
 
-MAMETesters Bug Fixed (1):
---------------------------
-sandscrp0110u1yel (Mamesick)
+MAME Testers Bug Fixed (1):
+---------------------------
+- sandscrp0110u1yel (Mamesick)
 
 
 Source changes:
@@ -19,22 +19,22 @@ Source changes:
 - Changed kram3 decryption to use external tables instead of hard-coded ones in the source [Atari Ace].
 - Konami driver updates [Ville Linde]:
   - drivers/gticlub.c:
-    * Moved video hardware to vidhrdw/gticlub.c.
-    * Hooked up sound emulation.
-    * Added dual-screen support for 'Hang Pilot'.
+    * Moved video hardware to vidhrdw/gticlub.c;
+    * Hooked up sound emulation;
+    * Added dual-screen support for Hang Pilot.
   - drivers/hornet.c:
-    * Added support for multiple K037122 chips.
-    * Added dual-screen support for 'Silent Scope' & 'Silent Scope 2'.
+    * Added support for multiple K037122 chips;
+    * Added dual-screen support for Silent Scope and Silent Scope 2.
   - drivers/nwk-tr.c:
-    * Added support for multiple K001604 chips.
+    * Added support for multiple K001604 chips;
     * Hooked up sound emulation.
   - vidhrdw/gticlub.c:
     * Added texture-mapping and z-buffer to K001005 emulation.
   - general:
-    * Consolidated K056800 emulation (machine/konamiic.c)
+    * Consolidated K056800 emulation (machine/konamiic.c);
     * Improved Hang Pilot/NWK-TR gfx board emulation.
 - STV fixes [Mariusz Wojcieszek]:
-  * vdp2: Fixed vertical scrolling for RGB bitmaps (fixes corrupted gfx in batmanfr). Fixed vertical line scrolling for zoomed layers (fixes corrupted backgrounds in astrass).
+  * vdp2: Fixed vertical scrolling for RGB bitmaps (fixes corrupted gfx in batmanfr). Fixed vertical line scrolling for zoomed layers (fixes corrupted backgrounds in astrass);
   * stv: Added speedup for master sh2 in batmanfr.
 - Added ability for options_add_entries() to override defaults specified in the core. To do this, simply include an option in the list with the same name as the core option and provide a new default. This default will override the one specified in the core [Aaron Giles].
 - Added hooks to chd.c to specify codec-specific configuration info [Aaron Giles].
