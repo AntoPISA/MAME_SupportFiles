@@ -1,4 +1,4 @@
-MAME CATEGORY.ini 0.278 (Jul 25, 2025)
+MAME CATEGORY.ini 0.279 (Aug 24, 2025)
 © AntoPISA       www.progettoSNAPS.net
 ======================================
 
@@ -7,6 +7,7 @@ ReadMe:
 In this package you can find these ini files:
 
 - ArcadeWorkingParents.ini: List with parent working arcade machines in MAME.
+- artwork_necessary.ini: List of MAME machines that need Artwork.
 - Bootlegs.ini: List of 'Bootleg' machines.
 - category.ini: MAME machines divided by category.
 - CHD (no BIOS).ini: List all the machines that need a CHD to run (BIOS excluded).
@@ -36,6 +37,7 @@ These files must be copied to the directory called "folders" of your MAME.
 
 WhatsNew:
 =========
+2025/08/24 10.08: Aligned files to MAME 0.279.
 2025/07/25 10.07: Aligned files to MAME 0.278.
 2025/05/08 10.06: Aligned files to MAME 0.277.
 2025/04/07 10.05: Aligned files to MAME 0.276.
