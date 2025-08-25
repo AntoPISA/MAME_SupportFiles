@@ -1,4 +1,4 @@
-﻿MAME SERIES.ini 0.278 (Jul 29, 2025)
+﻿MAME SERIES.ini 0.279 (Aug 25, 2025)
 © AntoPISA     www.progettoSNAPS.net
 ==================================== 
 
@@ -12,11 +12,16 @@ In the file are both "Series" recognized as such (thus games and their official 
 guages or with minor variations (official and unofficial).
 
 
+2025/08/25 11.06 MAME 0.279 (718 supported Series - 12,254 items):
+==================================================================
+Series UPDATED   (3) : "Arkanoid", "Neo Print" and "Virtual On - Cyber Troopers".
+Series NEW       (2) : "Magic Bomb" and "Mahjong Electromagnetic Base".
+
+
 2025/07/29 11.05 MAME 0.278 (716 supported Series - 12,209 items):
 ==================================================================
-Series UPDATED  (18) : After Burner, Cal Omega, Cherry Bonus * Slot, Defender, Galaxian, Knights of Valour, Long Hu Bang, Lucky 8 Lines, Moon Cresta, Power Drift, Puzz Loop, Rock'n Tread, Space Invaders, Splash!, Super Mario Bros., Tekken, Thunder Hoop and World Rally.
+Series UPDATED  (18) : "After Burner", "Cal Omega", "Cherry Bonus * Slot", "Defender", "Galaxian", "Knights of Valour", "Long Hu Bang", "Lucky 8 Lines", "Moon Cresta", "Power Drift", "Puzz Loop", "Rock'n Tread", "Space Invaders", "Splash!", "Super Mario Bros.", "Tekken", "Thunder Hoop" and "World Rally".
 Serie NEW        (1) : Bang.
-
 
 2025/05/08 11.04 MAME 0.277 (715 supported Series - 12,152 items):
 ==================================================================
