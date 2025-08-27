@@ -71,7 +71,7 @@ University BASIC fully supports the tms9918 videocard option. For example, enter
 Bug - The input buffer of character segments isn't fully cleared. If you press Shift, then Z enough times, garbage appears. This is because the boot process should have set 18C-1CB to FF, but only sets up to 1B3.
 
 $end
-$info=a2600
+$info=a2600,a2600p
 $mame
 TIPS:
 ATARI 2600 (VCS)
@@ -167,7 +167,7 @@ The manual states you can SAVE name, but this doesn't work.
 Cassette works in ABC80 only
 
 $end
-$info=ac1
+$info=ac1,ac1_32
 $mame
 TIPS:
 The Z command will get you into BASIC, and BYE command takes you back to the Monitor.
@@ -177,6 +177,7 @@ L  = to load it back in.
 
 Since there is no motor control, type in L then mount the tape.
 
+Note: ac1scch not working.
 $end
 $info=acrnsys1
 $mame
@@ -373,13 +374,14 @@ TIPS:
 Hold down X while inserting a coin. At the start of each ball, the display will be flashing. You need to hit Z, and then you can get a score. When the ball indicator goes out, your game is over. Game doesn't have a backup battery, so all info is lost at poweroff.
 
 $end
-$info=alphatp2
+$info=alphatp2,alphatp2u
 $mame
 INITIALIZATION:
 After it starts up in the monitor, use the B command to boot the disk.
 
+NOTE: alphatp1 has keyboard problems and is unusable.
 $end
-$info=alphatro
+$info=alphatro,alphatron,alphatrob
 $mame
 TIPS:
 ALPHATRONIC PC
@@ -410,12 +412,13 @@ $info=alto2
 $mame
 INITIALIZATION:
 Shows a completely white screen, unless you are able to boot a custom hard drive image. Unknown if the system actually works, due to unavailability of the image.
+There are lots of floppies available, but MAME doesn't support them.
 
 $end
 $info=altos5
 $mame
 TIPS:
-At one time, all disks worked, but now the only disk that boots is the diagnostic disk, and it isn't possible to run any of the tests.
+At one time, all disks worked, but it has regressed and now the only disk that boots is the diagnostic disk, and it isn't possible to run any of the tests.
 
 $end
 $info=altos8600
@@ -743,22 +746,31 @@ $end
 $info=apple2
 $mame
 TIPS:
-APPLE 2
-=======
 Press Ctrl B then hit Enter to get into Basic.
 
 Then you can LOAD or SAVE.
 
+NOTE: basis108 and space84 don't seem to have a way to enter Basic.
+
 $end
-$info=apple2e
+$info=apple2c,apple2cfr,apple2cde,apple2cse,apple2cuk,apple2cp,ace500,laser128,laser128o,las128ex,las128ex2,tk3000
 $mame
 TIPS:
-APPLE 2E
-========
+You can press Ctrl F12 to get into Basic. This doesn't work for those with Memory Expansion, Rev 4, or Unidisk.
+$end
+$info=apple2e,albert,am64,am100,apple2p,apple2jp,craft2p,dodo,elppa,ace100,ace1000,hkc8800a,ivelultr,laser2c,maxxi,microeng,prav82,prav8m,uniap2pt,uniap2en,uniap2ti,apple2ee,apple2eefr,apple2eede,apple2eeuk,apple2efr,apple2ede,apple2ep,apple2epfr,apple2epde,apple2epse,apple2epuk,ace2200,prav8c,spectred,cec2000,cece,cecg,ceci,cecm,zijini
+$mame
+TIPS:
 Press Ctrl F12 to get into Basic.
 
 Then you can LOAD or SAVE.
+$end
+$info=apple2gs,apple2gsr0p2,apple2gsr0p,apple2gsr0,apple2gsr1
+$mame
+TIPS:
+You can press Ctrl F12 to get into Basic. Cassette commands are ignored.
 
+NOTE: apple2gsmt and apple2gsr3p do not work.
 $end
 $info=applix
 $mame
@@ -769,7 +781,7 @@ TLOAD   to load a tape (it goes onto the disk rather than memory)
 TSAVE fname    to save back to tape.
 
 $end
-$info=aquarius
+$info=aquarius,aquarius_ar,aquariusp,aquarius2
 $mame
 TIPS:
 MATTEL AQUARIUS
@@ -779,12 +791,9 @@ Make sure to have 32k of RAM installed.
 
 Cartridges
 ----------
-Run by themselves. Note that adding or removing a cart does
-strange things to the cart numbering, so confusion and bugs
-can result.
+Run by themselves. Note that adding or removing a cart does strange things to the cart numbering, so confusion and bugs can result.
 
-Sometimes a cart won't show in media view, so start the system
-and remove it via newui.
+Sometimes a cart won't show in media view, so start the system and remove it via newui.
 
 Cassettes
 ---------
@@ -911,7 +920,7 @@ If written in Basic there will be no indications, so try RUN.
 If M/L then it may run itself.
 
 $end
-$info=attache
+$info=attache,attache816
 $mame
 TIPS:
 OTRONA ATTACHE
@@ -951,7 +960,7 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
-$info=avigo
+$info=avigo,avigo_fr,avigo_de,avigo_it,avigo_es
 $mame
 INITIALIZATION:
 For first-time usage, it's advisable to enable the mouse so that it can control the crosshair.
@@ -960,6 +969,11 @@ Follow the setup prompts until done.
 
 The inputs stop working at times, making it quite difficult to use. The crosshair still moves though, even when the machine appears to be frozen.
 
+$end
+$info=aviion_4600
+$mame
+TIPS:
+Enter "h" (without quotes) to get a list of commands.
 $end
 $info=avmjts
 $mame
@@ -998,8 +1012,7 @@ $end
 $info=b128hp,b500,p500
 $mame
 TIPS:
-Doesn't seem to be able run any software.
-If you want to try a tape, you have to enable the cassette player in the slots.
+Doesn't seem to be able run any software. If you want to try a tape, you have to enable the cassette player in the slots.
 
 load - to load
 save - to save
@@ -1011,8 +1024,7 @@ TIPS:
 B2M
 ===
 
-Load up a boot floppy, such as CP/M and then press any key.
-The cursor will change from flashing to steady while it boots.
+Load up a boot floppy, such as CP/M and then press any key. The cursor will change from flashing to steady while it boots.
 
 It has regressed and will just freeze up instead.
 
@@ -1043,8 +1055,7 @@ $end
 $info=basf7120
 $mame
 TIPS:
-The driver notes say: Runs the BOS operating system
-However it can't boot any disk, so it has probably regressed.
+The driver notes say: Runs the BOS operating system. However, it can't boot any disk, so it has regressed.
 
 $end
 $info=basic31,basic52
@@ -1103,6 +1114,11 @@ SAVE"x" - to save a tape (not working - just get a blank file)
 
 * is shift-quote
 
+$end
+$info=bbear,monkmonk
+$mame
+TIPS:
+This seems to run, but without external artwork there's nothing to see.
 $end
 $info=bbnny_l2,diner_l4,dd_l2,pool_l7,radcl_l1,rvrbt_l3,rollr_l2,gs_lu4,strax_p7
 $mame
@@ -1172,7 +1188,7 @@ $end
 $info=bcs3a,bcs3b,bcs3c,bcs3d
 $mame
 TIPS:
-At start, hit enter to allow Basic to start correctly.
+At start, either enter the number of screen lines to use, or just hit enter to use all of the screen.
 
 LOAD - load a Basic program from tape
 SAVE - save a Basic program to tape
@@ -1192,6 +1208,11 @@ Bugs:
 - Tell it to PRINT ! (or any character it doesn't understand) and the screen fills up with zeroes. String are enclosed in single quotes. Double quotes will cause this bug.
 - Undefined strings print as 0 instead of nothing.
 
+$end
+$info=bert
+$mame
+TIPS:
+Runs a simplified integer BASIC. You can create a program with line numbers. Numeric variables must be one letter. Although it can print literals, it doesn't seem to support string variables. Doesn't seem to support loading or saving of programs.
 $end
 $info=beta
 $mame
@@ -1213,8 +1234,7 @@ $end
 $info=bigbord2
 $mame
 TIPS:
-Turn it on, wait for cursor to appear in the top corner. Press Enter.
-Now you can enter commands.
+Turn it on, wait for the beep, press Enter. Now you can enter commands.
 
 Monitor commands:
 B - boot from disk
@@ -1338,7 +1358,7 @@ Starlight                         530  AS hit 1                  AS
 - Thunderball: turn Speech DIP off, or you get corrupt sound.
 
 $end
-$info=bk0010
+$info=bk0010,bk0010fd,bk001001,bk0011m
 $mame
 TIPS:
 Clone of the Terak 8510/a.
@@ -1582,7 +1602,7 @@ The Basic has a CALL instruction, but no USR.
 The monitor E command goes back to Basic.
 
 $end
-$info=bml3
+$info=bml3,bml3mk2,bml3mk5
 $mame
 TIPS:
 HITACHI BML3
@@ -1761,13 +1781,6 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
-$info=bullet
-$mame
-TIPS:
-A boot disk must be present or you get a black unresponsive screen.
-Software-list items cpm30,wmate3,wmate4 will work. When asked to enter date and time, hit enter.
-
-$end
 $info=busicom
 $mame
 TIPS:
@@ -1874,6 +1887,11 @@ $info=calchase
 $mame
 TIPS:
 When it has booted to the DOS screen, type BOOT and press enter. The game will run, very slowly.
+$end
+$info=camirf1
+$mame
+TIPS:
+Attempting to run this system will cause MAME to freeze, requiring Task Manager to kill it off.
 $end
 $info=can09t
 $mame
@@ -2363,7 +2381,7 @@ To load a tape: L
 Emulation is incomplete and the tapes are not compatible with real ones.
 
 $end
-$info=cpc464,cpc464p,cpc6128p,gx4000
+$info=cpc464,cpc464p,cpc6128p,gx4000,al520ex,cpc6128,cpc6128f,cpc6128s,cpc6128sp,cpc664,kccomp
 $mame
 TIPS:
 Amstrad
@@ -2894,12 +2912,10 @@ All the floppies work.
 The Ladder.zip is already included on the 580test.mfi, which also has other text games.
 
 $end
-$info=dn3500
+$info=dn3500,dn3000,dn3000_19i,dn3500_19i,dn5500,dn5500_19i
 $mame
 TIPS:
-APOLLO DN series
-================
-When the prompt appears, hit enter to get a message, then you can issue commands.
+When the prompt appears, hit enter to get a message, then you can issue commands. Use H to get a list of commands.
 
 $end
 $info=dps1
@@ -2978,6 +2994,12 @@ With this and some other multiplayer games, the default number of players for a 
 
 SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
+
+$end
+$info=dsp3000,dsp3500,dsp5500
+$mame
+TIPS:
+Hit enter twice to get a message, then you can issue commands. Use H to get a list of commands.
 
 $end
 $info=dtrvwz5
@@ -3115,6 +3137,11 @@ To save a tape: CSAVE"x"
 
 To load a tape: CLOAD
 
+$end
+$info=eggsplc
+$mame
+TIPS:
+If it complains of CMOS settings or battery, press F1. When you get the EMM386 error, press a key, or wait several minutes.
 $end
 $info=einstein,einst256
 $mame
@@ -10586,13 +10613,13 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
-$info=st
+$info=st,st_fr,st_de,de_nl,st_es,st_se,st_sg,st_uk,megast,megast_fr,megast_de,megast_se,megast_uk
 $mame
 TIPS:
 ATARI ST
 ========
 
-The only floppies supported are st/stx.
+Need a boot floppy or it is stuck on a white screen. The only floppies supported are st/stx.
 
 Some games start themselves, but others may just show the desktop.
 
@@ -10606,6 +10633,7 @@ Some games want [medium] screen, so click on Options,Set Preferences and select 
 
 The user interface is horrible, mouse is required, keys don't do anything.
 
+NOTE: megast_sg does not work.
 $end
 $info=stargate
 $mame
@@ -11370,20 +11398,6 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
-$info=tt030
-$mame
-TIPS:
-ATARI FALCON TT030
-==================
-
-
-This system is completely non working.
-
-Don't bother trying to unzip or tidy the files.
-
-Most extensions are unsupported.
-
-$end
 $info=turbosub
 $mame
 TIPS:
@@ -11804,6 +11818,13 @@ There are 12 parameters to program. All of them are unknown. To program them, us
 SOURCE:
 mameinfo.dat
 
+$end
+$info=wmbullet,wmbulletf
+$mame
+TIPS:
+A boot disk must be present or you get a black unresponsive screen. Software-list items cpm30,wmate3,wmate4 will work. When asked to enter date and time, hit enter.
+
+Note: wmbulletf does not work at all.
 $end
 $info=wmg
 $mame
