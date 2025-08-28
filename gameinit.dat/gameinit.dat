@@ -1009,7 +1009,7 @@ or
 BLOAD "CAS:" ,R
 
 $end
-$info=b128hp,b500,p500
+$info=b128hp,b500,p500,b256hp,bx256hp,cbm710,cbm720,cbm720_de,cbm720_se,cbm730,b128,b256,cbm610,cbm620,cbm620_hu,p500p
 $mame
 TIPS:
 Doesn't seem to be able run any software. If you want to try a tape, you have to enable the cassette player in the slots.
@@ -1796,7 +1796,7 @@ example: 12* 3 enter gives 36.   24/ 4 enter gives 6.
 Read the above manual for more information.
 
 $end
-$info=c128
+$info=c128,c128_de,c128_se,c128cr,c128d,c128dp,c128d81,c128dcr_de,c128dcr,c128dcrp,c128dcr_se,c128p
 $mame
 INITIALIZATION:
 Quickload does not work correctly - the file is loaded but corrupted. Cassettes work. Some D64 floppies work. D71 and D81 floppies do not work.
@@ -1807,6 +1807,7 @@ To save a tape: SAVE
 To load a tape: LOAD
 To switch from C128 mode to C64 mode: GO64 (answer Y).
 
+NOTE: c128d81 needs a disk in the drive before it will boot.
 $end
 $info=c16,plus4,c264
 $mame
@@ -1816,7 +1817,7 @@ Cassettes cannot be loaded. Floppy disks produce an error. The "*" key is missin
 If cassettes worked, the commands would be the same as any Commodore: SAVE and LOAD.
 
 $end
-$info=c64
+$info=c64,c64_jp,c64p,c64_se,c64c,c64cp,c64c_es,c64c_se,c64g,dx64,edu64,pet64,sx64,sx64p,vip64
 $mame
 INITIALIZATION:
 Seems to be largely working.
@@ -1830,6 +1831,7 @@ To get the floppy directory: LOAD"$",8 and then LIST. This wipes out whatever pr
 
 The default disk drive is on device 8 (slot iec8). If you want another drive, load it into iec9.
 
+NOTE: clipper not working. c64gs is cartridge only. tesa6240 is a business machine.
 $end
 $info=c80
 $mame
@@ -1988,7 +1990,7 @@ SOURCE:
 mameinfo.dat
 
 $end
-$info=cc40
+$info=cc40,cc40p
 $mame
 TIPS:
 CC-40 is powered by 4 AA batteries. These will also save internal RAM, provided that the machine is turned off properly by pressing [OFF]. If a program is running, you may have to press [BREAK] before turning the CC-40 off. If RAM contents ends up dodgy somehow, just delete the nvram files.
@@ -2062,7 +2064,7 @@ TIPS:
 This system works in MAMEUI only. It will crash MAME at start.
 
 $end
-$info=cgenie
+$info=cgenie,cgenienz
 $mame
 TIPS:
 Colour Genie EG2000
@@ -2153,6 +2155,21 @@ Although marked as working, this system has multiple issues. For example, Basic 
 To get Basic to work, you need to use bios 0.
 
 $end
+$info=cm1800
+$mame
+TIPS:
+All input must be in UPPER case. Known commands:
+Caaaa/bbbb>nn : ?
+Daaaa/bbbb : dump memory
+Faaaa/bbbb cc : fill memory
+Gaaaa : go
+ID (or IE) : ?
+L a/bbbbbbbb/ : ?
+Maaaa/bbbb>cccc : Move (copy) memory
+Saaaa : Substitute memory (write bytes into memory)
+T : ?
+Xr : set register to this value
+$end
 $info=cmpacman
 $mame
 TIPS:
@@ -2177,7 +2194,7 @@ SOURCE:
 https://www.progettosnaps.net/gameinit.dat
 
 $end
-$info=coco,coco3
+$info=coco,coco3,cd6809,cocoh,coco2b,coco2bh,lzcolor64,cp400,cp400c2,deluxecoco,ms1600,mx1600,t4426,coco3h,msm3
 $mame
 TIPS:
 CASSETTES
@@ -2226,6 +2243,7 @@ DRAGON64
 
 Even though the Dragon64 is supposed to be a clone of the coco, the diskette format is different. Disks for Dragon64 will be suffixed by [D64].
 
+NOTE: coco3p crashes MAME at start.
 $end
 $info=comg5108
 $mame
@@ -2269,7 +2287,7 @@ To load a quickload "comx" file:
 
 To load a game from a floppy disk:
 
-* Choose a floppy from the menu or from "SW Files" (MAMEUI)
+* Choose a floppy from the menu or from "Loose SW" (MAMEUI)
 
 * Press enter to start Basic.
 
@@ -2493,7 +2511,7 @@ SOURCE:
 mameinfo.dat
 
 $end
-$info=crvision,lasr2001,manager
+$info=crvision,lasr2001,manager,crvisioj,crvisio2,fnvision,rameses,vz2000,wizzard
 $mame
 TIPS:
 CREATIVISION, DICK SMITH WIZZARD
@@ -2513,8 +2531,7 @@ Must load "basic" cart from swlist, then:
 
 CLOAD
 
-It loads one line at a time. If it says ERROR, then something went wrong.
-Otherwise, do RUN.
+It loads one line at a time. If it says ERROR, then something went wrong. Otherwise, do RUN.
 
 To save a tape: CSAVE
 
@@ -5763,7 +5780,7 @@ Snapshot
 SAV files are just static screenshots, and are thus useless.
 
 $end
-$info=lynx48k
+$info=lynx48k,lynx96k,lynx128k
 $mame
 TIPS:
 To save a tape: SAVE"name"
