@@ -1,4 +1,4 @@
-﻿#    MESSINFO_REM.DAT v0.278    Latest update:  Aug  1, 2025
+﻿#    MESSINFO_REM.DAT v0.279    Latest update:  Aug 29, 2025
 #                                Project start: Nov  7, 2011
 #
 #    Author:  Antonio Paradossi (AntoPISA) from Pisa (Tuscany/Italy)
@@ -8,8 +8,8 @@
 #
 #    homepage: http://www.progettosnaps.net/messinfo
 #
-#    Internal version: 14.05
-#    Total items: 343
+#    Internal version: 14.06
+#    Total items: 349
 #
 #
 $info=24c16a
@@ -3697,6 +3697,74 @@ WIP:
 - 0.149u1: Added MC2661 device.
 
 $end
+$info=mc6847_pal
+$mame
+0.149u1
+
+Motorola MC6847 VDG (PAL), <unknown>, ????
+
+DRIVER:
+devices/video/mc6847.cpp
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Unsupported
+
+WIP:
+- 0.279: Device removed.
+- 0.246: Revised font data based on die images and observations [Tim Lindner].
+- 0.188: Fixed "Semigraphics 6" mode on CoCo/MC-10 (issue reported by Jim Gerrie). Displays "stripes" for video bytes $00-$7F because INT/EXT is asserted but A/S is not, and there is no external ROM [Nathan Woods].
+- 0.186: Description changed to 'Motorola MC6847 VDG (PAL)'.
+- 0.149u1: Added 'MC6847_PAL' device.
+
+$end
+$info=mc6847t1_pal
+$mame
+0.184
+
+Motorola MC6847T1 VDG (PAL), <unknown>, ????
+
+DRIVER:
+devices/video/mc6847.cpp
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Unsupported
+
+WIP:
+- 0.279: Device removed.
+- 0.186: Description changed to 'Motorola MC6847T1 VDG (PAL)'.
+- 0.184: Added 'MC6847T1_PAL' device.
+
+$end
+$info=mc6847y_pal
+$mame
+0.184
+
+Motorola MC6847Y VDG (PAL), <unknown>, ????
+
+DRIVER:
+devices/video/mc6847.cpp
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Unsupported
+
+WIP:
+- 0.279: Device removed.
+- 0.186: Description changed to 'Motorola MC6847Y VDG (PAL)'.
+- 0.184: Added 'MC6847Y_PAL' device.
+
+$end
 $info=mcx128
 $mame
 0.222 [Tim Lindner]
@@ -6397,6 +6465,51 @@ ROMSET:
 2097152 bytes in 1 file / 999Kb packed
 
 $end
+$info=vt3xx_unknown_soc_bt
+$mame
+0.221 [David Haywood]
+
+VT3xx series System on a Chip (BT), <unknown>, ????
+
+DRIVER:
+nintendo/nes_vt369_vtunknown_soc.cpp
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Unsupported
+
+WIP:
+- 0.279: Device removed.
+- 0.278: Rename (nes_vtunknown_soc_bt) to (vt3xx_unknown_soc_bt).
+- 0.226: Renamed (nes_vt_soc_4k_bt) to (nes_vtunknown_soc_bt) and description changed to 'VTxx series System on a Chip (BT)'.
+- 0.221: David Haywood added 'VTxx series System on a Chip (with 4KByte RAM) (BT)' device.
+
+$end
+$info=vt3xx_unknown_soc_fa
+$mame
+0.226 [kmg]
+
+VT3xx series System on a Chip (Family Pocket), <unknown>, ????
+
+DRIVER:
+nintendo/nes_vt369_vtunknown_soc.cpp
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Unsupported
+
+WIP:
+- 0.279: Device removed.
+- 0.278: Rename (nes_vtunknown_soc_fa) to (vt3xx_unknown_soc_fa).
+- 0.226: kmg added 'VTxx series System on a Chip (Family Pocket)' device.
+
+$end
 $info=watz19
 $mame
 0.183 [Mark Garlanger]
@@ -6428,6 +6541,29 @@ WIP:
 
 ROMSET:
 8192 bytes in 3 files / 3.49Kb packed
+
+$end
+$info=wave
+$mame
+0.149u1
+
+Cassette Sound, <unknown>, ????
+
+DRIVER:
+devices/sound/wave.cpp
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Unsupported
+
+WIP:
+- 0.278: Device removed.
+- 0.198: Description changed to 'Cassette Sound'.
+- 0.153: Renamed (wawe) to (wave).
+- 0.149u1: Added 'Wave' device.
 
 $end
 $info=xegs_cart_slot
@@ -7098,27 +7234,14 @@ WIP:
 - 0.114: Curt Coder added vip.cpp driver.
 
 $end
-$info=wave
-$mame
-0.149u1
-
-Cassette Sound, <unknown>, ????
-
-DRIVER:
-devices/sound/wave.cpp
-
-DRIVER STATUS:
-Emulation: Good
-Color: Good
-Sound: Good
-Graphics: Good
-Save State: Unsupported
+$info=vt_unknown.cpp
+$drv
+0.225 [David Haywood]
 
 WIP:
-- 0.278: Device removed.
-- 0.198: Description changed to 'Cassette Sound'.
-- 0.153: Renamed (wawe) to (wave).
-- 0.149u1: Added 'Wave' device.
+- 0.279: Driver removed.
+- 0.246: Driver placed in the sub-folder "nintendo/".
+- 0.225: David Haywood added vt_unknown.cpp driver.
 
 $end
 #

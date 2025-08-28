@@ -10,12 +10,9 @@ The following files have been updated in this MAME cycle:
 - CatVer pack
 - CHD-Info pack
 - Languages.ini
+- MESS-Info.dat
 - Series.ini 
 - Version pack
-
-File still in process:
-
-- MESS-Info.dat
 
 
 Home-page: https://www.progettosnaps.net/support/
