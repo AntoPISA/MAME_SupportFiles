@@ -3128,7 +3128,7 @@ Diesel Demon / Ramp Warrior / Truck Stop  2001  Hold Right Down, hit 1        Ho
 Atlantis                                  2006  Hold Left Down Right, hit 1   Down Left Right
 
 $end
-$info=ec65
+$info=ec65,ec65k
 $mame
 TIPS:
 If this system ever gets fully emulated, the command to boot a disk is: .b
@@ -3190,7 +3190,7 @@ Quickload
 Quickloads are self-contained, not requiring CP/M (BIGGOIL for example). If they depend on CP/M then they most likely won't work.
 
 $end
-$info=electron
+$info=electron,electron64,electronsp,electront
 $mame
 TIPS:
 ACORN ELECTRON
@@ -3226,6 +3226,7 @@ UEF files work, WAV files do not.
 
 Keys: Up = I, Left = J, Right = K, Down = M. Map these to the arrow keys. Space = shoot.
 
+NOTE: btm2105 is a terminal that uses electron hardware.
 $end
 $info=elecyoyo
 $mame
@@ -3343,7 +3344,7 @@ $mame
 TIPS:
 Cassettes don't work because the hardware is not hooked up.
 
-Instructions for 0.275: The system works. MAMEUI additionally shows the address and the status.
+Instructions for 0.275 and later: The system works. MAMEUI additionally shows the address and the status.
 
 There's 3 important switches:
 L - toggle LOAD on/off
@@ -3413,7 +3414,7 @@ To save, press S, enter beginning address, press S, enter end address+1, press S
 To load, press L, press play, while leader is playing press 0 or 1 as above. When a row of dots appears, the data has been loaded.
 
 $end
-$info=ep64
+$info=ep64,ep128,phc64
 $mame
 TIPS:
 ENTERPRISE 64/128
@@ -3515,7 +3516,7 @@ To load a tape, enter the start and end addresses as above. Press R, 4. Screen g
 All chip-8 programs start at 0600. The manual says the max end address is 7FF (gives 512 bytes), but you can fill up all of memory (gives 2560 bytes).
 
 $end
-$info=evmbug
+$info=evmbug,tms9995bb
 $mame
 INITIALIZATION:
 Press any key to get it started. All input to be in UPPERcase.
@@ -3804,8 +3805,7 @@ $end
 $info=flamegung
 $mame
 INITIALIZATION:
-Wait patiently for the two progress bars to end, press [ TAB ], choose "DIP Switches" and set "BIOS Flash" to "OFF".
-Now choose "Reset System," and on reboot the game will start correctly.
+Wait patiently for the two progress bars to end, press [ TAB ], choose "DIP Switches" and set "BIOS Flash" to "OFF". Now choose "Reset System," and on reboot the game will start correctly.
 
 $end
 $info=flash_l2,trizn_l1,tmwrp_l3,stlwr_l2
@@ -3823,8 +3823,7 @@ First time:
 - The default settings are fine, so start with a clean slate
 - Wait for it to say No Ball, then hold down X.
 - Keep holding X, insert credits, and press start. When it says ball 1, let go immediately.
-- If you hold down X longer than you should, it says Coil Error, and the game is ended. You
-should let go the instant the ball number increments.
+- If you hold down X longer than you should, it says Coil Error, and the game is ended. You should let go the instant the ball number increments.
 
 Setting up:
 The manual is not that clear, there's a lot we don't know, this *seems* to work...
@@ -3837,14 +3836,12 @@ The manual is not that clear, there's a lot we don't know, this *seems* to work.
 - The settings in the manual do not fully line up with what we see in the display.
 
 Small FAQ:
-- If game shows "Test" just after start, try cleaning the nvram etc. If it still does it, when
-the red screen shows, hold down num-1 until "No Ball" starts flashing, then release the key.
+- If game shows "Test" just after start, try cleaning the nvram etc. If it still does it, when the red screen shows, hold down num-1 until "No Ball" starts flashing, then release the key.
 - Game says "No Ball". Press and hold X.
 - Game says "Coil Error". You held down X too long.
 
 Status:
-- flashman, fldragon, ironball, kz26, nautilus, phntmshp, ridersrf, rock2500, starfirp, theraid,
-trailer, terrlake: playable
+- flashman, fldragon, ironball, kz26, nautilus, phntmshp, ridersrf, rock2500, starfirp, theraid, trailer, terrlake: playable
 - sklflite: can insert coin, cannot start game
 - spain82: see notes below
 - megaaton: playable, ball number doesn't show. If it says Test, see FAQ above.
@@ -3856,13 +3853,7 @@ ToDo:
 - Skill Flight: not working
 - Miss Disco: not working (no manual available). Uses different hardware. No sound rom.
 - Spain82: can start a game but it's not really playable (no manual available).
-The test buttons are unknown. The ball number doesn't show.
-So, after starting the machine, make sure the displays cycle between blank and 700000. If it
-just sits there it has hung up, exit and restart. Insert a coin, hold X and press 1. Now,
-you need to jiggle F and G and perhaps other nearby keys until the 0 starts flashing. You
-can then score. At outhole time, need to press F,G,X to register the fact. If you hit X too
-many times the machine reboots itself. The machine has 2 capture holes and therefore multiball.
-At ball 2, the playfield becomes unresponsive.
+The test buttons are unknown. The ball number doesn't show. So, after starting the machine, make sure the displays cycle between blank and 700000. If it just sits there it has hung up, exit and restart. Insert a coin, hold X and press 1. Now, you need to jiggle F and G and perhaps other nearby keys until the 0 starts flashing. You can then score. At outhole time, need to press F,G,X to register the fact. If you hit X too many times the machine reboots itself. The machine has 2 capture holes and therefore multiball. At ball 2, the playfield becomes unresponsive.
 - Meg Aaton: Ball number doesn't show. Can suddenly reboot in the middle of a game. Match digits are reversed.
 
 $end
@@ -3887,7 +3878,7 @@ Gamatron          ---  X./ hit 1                 X./
 Others            ---  1                         X
 
 $end
-$info=fm7
+$info=fm7,fm77av,fm7740sx,fmnew7
 $mame
 TIPS:
 FUJITSU FM-7
@@ -3949,9 +3940,23 @@ FUJITSU FM-8
 
 Cassette
 --------
-See FM7's usage.txt
+To save a tape: SAVE"x"
+
+If Basic, LOAD then RUN
+
+If M/L, LOADM"",,R  (LOADM followed by EXEC may work)
+
+You have to guess which one; Bad File Mode indicates it's wrong.
+
+The system is intolerant of imperfections, the load will be terminated by I/O Error.
+
+Not many tapes are accepted, and then only a few of those work.
+
+May need to use LOADM"CAS0:(file)", LOAD"CAS0:(file)" .
+If no disks, can RUN"(CAS0:)" .
 
 FM7 tapes will load but not run.
+
 
 Floppies
 --------
@@ -3972,7 +3977,7 @@ $mame
 TIPS:
 CASIO FP-1100
 =========================
-To fix the display, go to the DIP switches and change the Video Mode to 0, then restart.
+To fix the display, go to the DIP switches and change the Screen Mode to 0, then restart.
 
 The keyboard doesn't work, so unable to do anything.
 
@@ -4042,7 +4047,7 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
-$info=galaxy
+$info=galaxy,galaxyp
 $mame
 TIPS:
 Galaksija
