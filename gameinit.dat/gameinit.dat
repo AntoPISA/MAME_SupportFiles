@@ -505,12 +505,14 @@ $end
 $info=amu880
 $mame
 TIPS:
+H gives a list of commands. You only need to type enough letters to make each command unique.
+
 Cassette considerations:
 
 - It operates at 4883 baud but may not be fully compatible with real hardware. A partial translation of the available text seems to indicate an overcomplicated and unreliable interface. The one implemented is 100% reliable at the same speed. Unable to locate any real recordings to compare against.
-- To save a range of memory: S name start end
+- To save a range of memory: SA name start end
 - To load it back: L name
-- To save an unnamed file: S "" start end
+- To save an unnamed file: SA "" start end
 - To load an unnamed file: L
 - When loading, if the name doesn't match, there's no message, and no way to determine the name.
 - For some reason, the system saves the file 3 times. Maybe it was an attempt to guard against the inherent unreliable design.
@@ -4095,14 +4097,6 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
-$info=gcjp
-$mame
-TIPS:
-NINTENDO GAME CUBE
-==================
-Although it looks like it might work, sadly it doesn't.
-
-$end
 $info=gdariusg
 $mame
 INITIALIZATION:
@@ -4192,12 +4186,7 @@ $end
 $info=gp_110,famlyfun,startrip,vegasgp
 $mame
 INITIALIZATION:
-When first turned on, you need to press num-0 to enter the setup program, then keep
-pressing num-0 until 05 shows in the balls display. Press the credit button to set
-the first high score at which a free credit is awarded. Then press num-0 to set the
-2nd high score, then num-0 to set the 3rd high score. Keep pressing num-0 until you exit
-back to normal operation. If this setup is not done, each player will get 3 free
-games at the start of ball 1.
+When first turned on, you need to press num-0 to enter the setup program, then keep pressing num-0 until 05 shows in the balls display. Press the credit button to set the first high score at which a free credit is awarded. Then press num-0 to set the 2nd high score, then num-0 to set the 3rd high score. Keep pressing num-0 until you exit back to normal operation. If this setup is not done, each player will get 3 free games at the start of ball 1.
 
 $end
 $info=gp32
@@ -4306,8 +4295,6 @@ $mame
 INITIALIZATION:
 This system uses Octal rather than the usual hexadecimal.
 
-Serial console works. You can make it visible by setting Video Options in settings.
-
 For saving, enter the start address into 2000/2001 (040'000/040'001), the end address into 2002/2003 (040'002/040'003) little endian, set the PC-reg to the exec-address. Then set up the recorder and press 9.
 
 To load a tape: press 8 and press PLAY. When finished, press 4 to Run.
@@ -4399,28 +4386,26 @@ INITIALIZATION:
 When starting a game, hold down X and press 1.
 
 $end
-$info=hec2hrp
+$info=hec2hrp,hec2hr,hec2hrx,hec2mdhrx,hec2mx40,hec2mx80,victor
 $mame
-INITIALIZATION:
-These machines can load and run cassettes for the interact / hector1.
+TIPS:
+These machines can load and run cassettes for the interact/hector1: 
 hec2hr - press 2 then 1
 hec2hrp - press 2 then 1
 victor - press R then L
 
-These machines will load the cassette but the keys don't work
-hec2hrx, hec2mx40, hec2mdhrx - press 5 then 1
+These machines will load the cassette but the keys don't work: hec2hrx, hec2mx40, hec2mdhrx - press 5 then 1
 
-This machine not compatible
-hec2mx80
+This machine not compatible: hec2mx80
 
 To save a tape: SAVE
 
 To load a tape: LOAD
 
 $end
-$info=hektor2
+$info=hektor2,hektor
 $mame
-INITIALIZATION:
+TIPS:
 Hektor/Hektor 2 monitor commands:
 - E - execute editor
 - G - (go to) execute from addr
@@ -4431,7 +4416,7 @@ Hektor/Hektor 2 monitor commands:
 $end
 $info=hektor3
 $mame
-INITIALIZATION:
+TIPS:
 Hektor III usage notes:
 - t  - system test
 - a1 - audio test (plays The Entertainer)
@@ -4444,7 +4429,7 @@ To save a tape: Sa,b (where a = start address, b = end address). It says SET REC
 To load a tape: L - it says SET PLAY - hit enter then press PLAY.
 
 $end
-$info=homelab2
+$info=homelab2,homelab3,homelab4,brailab4
 $mame
 TIPS:
 HOMELAB
@@ -4487,7 +4472,7 @@ All commands must be entered in uppercase, and since the capslock doesn't work, 
 There is next to no error checking, for example the T command is to set the time. Entering T by itself will set the time to 99:99:99, while G will cause a jump to 9999 and so forth. Also the parameter must be right next to the command, spaces will cause invalid input. Example M1234 will display a byte of memory at 1234, while M 1234 will display memory at 9123.
 
 $end
-$info=hp48gx,hp48sx
+$info=hp48gx,hp48sx,hp48g,hp48gp,hp48s
 $mame
 INITIALIZATION:
 If asked "Try to recover memory?", press A for YES, or F for NO (recommended).
@@ -4498,7 +4483,7 @@ $end
 $info=hp49g
 $mame
 INITIALIZATION:
-This used to work, but now it requires the NVRAM to be flashed via a terminal, which isn't implemented.
+This used to work, but now it has regressed and requires the NVRAM to be flashed via a terminal, which isn't implemented.
 
 MAME doesn't support any of the usual software formats.
 
@@ -4550,7 +4535,7 @@ INITIALIZATION:
 When first used, it appears frozen (the score should alternate). Press F3 to fix.
 
 $end
-$info=hunter2
+$info=hunter2,hunter
 $mame
 INITIALIZATION:
 HUSKY HUNTER 2
@@ -4676,7 +4661,7 @@ To save a tape: Click the orange RECORD button.
 To load a tape: Mount the tape, press F2 (it loads by itself)
 
 $end
-$info=interact
+$info=interact,hector1
 $mame
 INITIALIZATION:
 At the console, press L to load a tape. A good tape will firstly fill the screen with a picture, and then the memory. At the end the program will start.
