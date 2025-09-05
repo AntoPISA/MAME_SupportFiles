@@ -4682,7 +4682,7 @@ SOURCE:
 mameinfo.dat
 
 $end
-$info=ipb
+$info=ipb,ipc
 $mame
 INITIALIZATION:
 Press SPACE to start the system.
@@ -4716,6 +4716,19 @@ In Basic-G:
 
 When you want to load a cartridge, you need to also load the matching slot item.
 
+$end
+$info=iris3130
+$mame
+TIPS:
+Enter ? or h to get help
+$end
+$info=irisha
+$mame
+First few menu items say: START? MONITOR CASSETTE DISK
+$end
+$info=isbc2861,isbc28612
+$mame
+Don't press any keys and wait a while for it to start up.
 $end
 $info=isbc8010
 $mame
@@ -4805,9 +4818,7 @@ ITT 3030
 
 Press B to initiate the boot process.
 
-The message: "Na - du olle 0 auf A:"
-simply means Drive is A: with User 0.
-It's not an error.
+The message: "Na - du olle 0 auf A:" simply means Drive is A: with User 0. It's not an error.
 
 
 All (nw) disks need to check if they are usable in Drive B: .
@@ -4824,17 +4835,15 @@ $end
 $info=jade
 $mame
 INITIALIZATION:
-When the red screen appears, hit Enter twice. Type HE to get a list of commands.
+When the red screen appears, hit Enter twice quickly. Type HE to get a list of commands.
 
 If you don't do anything immediately, the system will lock up.
 
 $end
-$info=jaguar
+$info=jaguarcd
 $mame
-INITIALIZATION:
-Although it can run some commercial software, all of the homebrew support is broken. Loading any quickload will crash MAME. Loading any ".rom" file will produce a red screen. Only ".j64" files have a chance.
 
-jaguarcd used to be able to run cartridges, but that no longer works and the system can't do anything now.
+This used to be able to run cartridges, but it has regressed and the system can't do anything now.
 
 $end
 $info=jdredd
@@ -4882,22 +4891,19 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
-$info=joust
+$info=jorn720
+$mame
+INITIALIZATION:
+This system will crash the emulator. Don't run it.
+
+$end
+$info=joust,joust2
 $mame
 INITIALIZATION:
 The first time they are launched, these games stop to the 'Factory settings restored'. To continue simply press [ F2 ]. If that fails, try [ F3 ], or [ F1 ]+[ F2 ].
 
 SOURCE:
 https://www.progettosnaps.net/gameinit.dat
-
-$end
-$info=joust2
-$mame
-INITIALIZATION:
-The first time they are launched, these games stop to the 'Factory settings restored'. To continue simply press [ F2 ]. If that fails, try [ F3 ], or [ F1 ]+[ F2 ].
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
 $info=jr100
@@ -5036,7 +5042,7 @@ INITIALIZATION:
 When it says DIAGNOSTIC RAZ P, press enter.
 
 $end
-$info=kaypro10,kaypro484,kayproii,kaypronew2,robie
+$info=kaypro10,kaypro484,kayproii,kaypronew2,robie,kaypro1084,kaypro1,kaypro284,kaypro2x,kaypro484p,omni4,kayproiip88,kayproiv,omni2,kaypro4x
 $mame
 INITIALIZATION:
 KAYPRO (various CP/M models)
@@ -5139,7 +5145,7 @@ To use cassettes, start up Basic.
 - To load a tape: CLOAD
 
 $end
-$info=kc85_2
+$info=kc85_2,kc85_3,kc85_4,kc85_5
 $mame
 TIPS:
 ROBOTRON HC900, KC85-2
