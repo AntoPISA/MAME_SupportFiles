@@ -1,11 +1,13 @@
 # MAME_SupportFiles
 
 progetto-SNAPS © 2020/2025 AntoPISA
-MAME Support Files v0.279
+MAME Support Files v0.280
 -------------------------
 
 The following files have been updated in this MAME cycle:
+- renameSET.dat (WIP)
 
+Still being updated:
 - Category pack
 - CatVer pack
 - CHD-Info pack
