@@ -4717,7 +4717,7 @@ In Basic-G:
 When you want to load a cartridge, you need to also load the matching slot item.
 
 $end
-$info=iris3130
+$info=iris3130,ms68k
 $mame
 TIPS:
 Enter ? or h to get help
@@ -5824,7 +5824,7 @@ INITIALIZATION:
 Y to boot from floppy, ESC to enter monitor, any other key to boot from IDE.
 
 $end
-$info=m5
+$info=m5,m5p,m5p_brno
 $mame
 INITIALIZATION:
 SORD M5
@@ -5874,7 +5874,7 @@ $end
 $info=macbug
 $mame
 TIPS:
-Only exists in MAMEUI from 0.276
+This system only exists in MAMEUI.
 
 Commands
 --------
@@ -5963,7 +5963,7 @@ To Break, press either ^N or ^O (display freezes), then ^C .
 Some control keys: 0x14 = Home; 0x8 = Left/BS; 0xA = Down; 0xB = Up; 0xC = Right.
 
 $end
-$info=mbee
+$info=mbee,mbee128p,mbee128,mbee256,mbeepc,mbeeic,mbee56,mbeepc85,mbeepc85b,mbeepc85s,mbeeppc,mbeepp
 $mame
 TIPS:
 To save a tape: SAVE
@@ -5997,6 +5997,8 @@ TIPS:
 HITACHI S1 (mbs1)
 =================
 
+Takes a few seconds to start.
+
 
 Cassette
 --------
@@ -6011,7 +6013,7 @@ If you guess wrongly, you'll get "Bad File Mode".
 Games still don't work because of missing graphics code.
 
 $end
-$info=mc10,alice32
+$info=mc10,alice32,alice,alice90
 $mame
 INITIALIZATION:
 TANDY MC-10, ALICE32, ALICE90
@@ -6042,8 +6044,7 @@ MC1000
 ======
 
 
-Set RAM to 48K
-Turn joystick 1 to ON
+Set RAM to 48K. Turn joystick 1 to ON
 
 
 
@@ -6095,6 +6096,11 @@ SOURCE:
 mameinfo.dat
 
 $end
+$info=mekd1,mekd3,mekd4
+$mame
+INITIALISATION:
+Make sure in the Tab menu that all keyboards are enabled and that Caps Lock is toggled on. Pressing R should produce output.
+$end
 $info=mekd2
 $mame
 TIPS:
@@ -6136,7 +6142,49 @@ Save the above program to tape:
 HA002=00^20^00^32^HP (A002 has start address, A004 has end address, big endian)
 
 $end
-$info=meritum1
+$info=mekd5
+$mame
+INITIALISATION:
+Although this system is listed as working, it doesn't seem to accept any inputs.
+
+Driver notes:
+
+RS (Reset)  Reset, wired to the CPU reset line
+EX (Escape) Typically aborts user program.
+M (Memory display/change)
+. Digits 5 and 6 show the actual data at the address.
+. G  - increase the address.
+. M  - decreases the address.
+. FS - Offset calculation. Enter address, then press 'GO'.
+.. GO - stores the offset and returns to memory display and increased the address.
+.. FC - return to memory display, without storing the offset.
+.. M  - return to memory display, after a BAD offset.
+. EX - exits memory display.
+RD (Register display/alter)
+. G   - advance to next register.
+. M   - previous register.
+. T/B - trace a single instruction
+. EX  - exits register display.
+GO to user program.
+. If no address if entered then it uses the pseudo PC, it continues.
+. Enter the address and press 'Go' to use that entered address.
+. It firstly checks that there is RAM at the stack pointer.
+FS T/B - Breakpoint editor
+. GO - advance to next breakpoing, up to 8, then loops.
+. FS - insert a breakpoint
+. FC - deactivate breakpoint
+. EX - exits breakpoing editor.
+P/L (Punch tape)
+. At the 'bb' prompt enter the beginning address of the data, then 'GO'.
+. At the 'EE' prompt enter the last address of the data.
+. Start the tape and press GO. There is a 30 second leader of $ff.
+FS P/L (Load from tape)
+FS RD (Verify from tape)
+FS 0 to F
+. One of 16 user defined functions. Press FS then one number key 0 to F.
+. A pointer to a table of 16 function addresses should be set at 0xe43f.
+$end
+$info=meritum1,meritum2,meritum_net
 $mame
 INITIALIZATION:
 At the OBSZAR PAO? prompt, press Enter.
@@ -6181,7 +6229,11 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
-$info=mfabfz
+$info=mex68kecb,mice_6502,mice2_z80,mice2_6502,mice2_8085
+$mame
+All input to be in UPPERcase.
+$end
+$info=mfabfz,mfabfz85
 $mame
 TIPS:
 To save a tape: Press S then space, follow the prompts.
@@ -6198,10 +6250,10 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
-$info=micral
+$info=micral,questarm
 $mame
 INITIALIZATION:
-Commands must be in uppercase. Reboot to exit each command.
+Make sure in the Tab menu that all keyboards are enabled and that Caps Lock is on. Reboot to exit each command.
 Bx[,x]: ??
 Gxxxx : go (writes a jump @FFED then jumps to FFEB)
 T     : test
@@ -6239,7 +6291,7 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
-$info=mikro80
+$info=mikro80,radio99
 $mame
 INITIALIZATION:
 To save a tape: Oa,b  (where a = start address, b = end address)
@@ -6316,7 +6368,7 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
-$info=mk14
+$info=mk14,mk14vdu
 $mame
 TIPS:
 Keys:
@@ -6368,6 +6420,10 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
+$info=mk98
+$mame
+Hit Enter to make the drop-down menus appear.
+$end
 $info=mkit09
 $mame
 INITIALIZATION:
@@ -6386,6 +6442,10 @@ Test Paste:
 -0000 00^11^22^33^44^55^66^77^88^99^--0000
 Now press up-arrow to confirm the data has been entered.
 
+$end
+$info=mmahjong
+$mame
+Use Ctrl and Alt when asked for 1 or 2. First question: 1=3 minutes play time; 2=5 minutes. Second question: 1=advanced; 2=beginner.
 $end
 $info=mmaulers
 $mame
@@ -6573,7 +6633,7 @@ To save a tape (example): Set start to 700, set end to 750, press Record, click 
 To load a tape (example): Set start to 700, set end to 750? (not sure), press Play, wait for leader sound. Click * then F/PLA.
 
 $end
-$info=mpf1,cs113
+$info=mpf1,mpf1b,mt80z
 $mame
 INITIALIZATION:
 External artwork has the display digits in reverse order.
@@ -6724,7 +6784,7 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
-$info=mt65
+$info=mt65,micron
 $mame
 INITIALIZATION:
 Tangerine Microtan 65
@@ -6825,7 +6885,7 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
-$info=mtx500,mtx512
+$info=mtx500,mtx512,rs128
 $mame
 TIPS:
 Memotech MTX500/512
@@ -6893,8 +6953,7 @@ To load a tape: CLOAD"x"
 If you don't know the name, specify something random, and it will show the name as it skips it.
 
 
-The "Multi-8 Demo (1983)(Mitsubishi).wav" has 3 programs.
-Everything is in Japanese.
+The "Multi-8 Demo (1983)(Mitsubishi).wav" has 3 programs. Everything is in Japanese.
 
 AP-1: 2nd question wants 1 to 10
 SHUKEI: No idea what this is
@@ -7093,15 +7152,6 @@ B - turn key beep on/off
 F - boot from Floppy (press enter at the question)
 J - jump (goto)
 L - load a cassette
-
-$end
-$info=mz80b
-$mame
-INITIALIZATION:
-SHARP MZ-80B
-============
-
-Doesn't boot up
 
 $end
 $info=mz80k
