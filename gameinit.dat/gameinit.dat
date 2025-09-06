@@ -5137,7 +5137,7 @@ SOURCE:
 https://www.progettosnaps.net/gameinit.dat
 
 $end
-$info=kc85,pc8201,tandy200,trsm100
+$info=kc85,pc8201,tandy200,trsm100,m10,pc8201a,npc8300,tandy102
 $mame
 INITIALIZATION:
 To use cassettes, start up Basic.
@@ -5252,7 +5252,7 @@ INITIALIZATION:
 * Wait for the blue bar to say COMPLETE. It will restart itself and work.
 
 $end
-$info=konam80s
+$info=konam80s,konam80a,konam80k,konam80u,konam80j
 $mame
 INITIALIZATION:
 The first time you run the game, it will dump you on a clock setting screen. Keep pressing DOWN and select 'SAVE AND EXIT' then press P1 START [ 1 ] to continue.
@@ -5294,12 +5294,6 @@ Sonken : [ B ] (x3), [ C ], [ D ], [ C ], [ B ] (x2), [ DOWN ] (x2)
 
 SOURCE:
 mameinfo.dat
-
-$end
-$info=kovsh
-$mame
-TIPS:
-This game will freeze while in attract mode. All you can do is exit.
 
 $end
 $info=kram
@@ -5431,7 +5425,7 @@ To save a tape: CSAVE
 To load a tape: CLOAD , then RUN
 
 $end
-$info=lc80
+$info=lc80,lc80e,lc80a,lc80_2
 $mame
 TIPS:
 When first started, the screen is blank. Wait about 8 seconds for it to introduce itself, then you may use it or paste to it. The decimal points indicate which side of the display you will be updating.
@@ -5626,7 +5620,7 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
-$info=lola8
+$info=lola8,lola8a,lola8nk
 $mame
 TIPS:
 To save a tape: SAVE
@@ -5719,8 +5713,9 @@ $end
 $info=luna
 $mame
 INITIALIZATION:
-Machine will sit at "Diagnostic Start" for a while. If you're asked to set default parameter, press Y.
-Now you are at the monitor prompt. Use the H command for help.
+Machine will sit at "Diagnostic Start" for a while. If you're asked to set default parameter, press Y. Now you are at the monitor prompt. Use the H command for help.
+
+NOTE: It has recently regressed, never gets into the monitor.
 
 $end
 $info=luna88k,luna88k2
