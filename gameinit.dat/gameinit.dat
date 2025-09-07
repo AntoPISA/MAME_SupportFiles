@@ -1811,7 +1811,7 @@ To switch from C128 mode to C64 mode: GO64 (answer Y).
 
 NOTE: c128d81 needs a disk in the drive before it will boot.
 $end
-$info=c16,plus4,c264
+$info=c16,plus4,c264,c118,c16_hu,c16p,c232,v364,plus4p
 $mame
 INITIALIZATION:
 Cassettes cannot be loaded. Floppy disks produce an error. The "*" key is missing. Quickload and Cartridges work.
@@ -4717,7 +4717,7 @@ In Basic-G:
 When you want to load a cartridge, you need to also load the matching slot item.
 
 $end
-$info=iris3130,ms68k
+$info=iris3130,ms68k,ncd16,ncd19
 $mame
 TIPS:
 Enter ? or h to get help
@@ -5261,7 +5261,7 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
-$info=korvet
+$info=korvet,bk8t,kontur,neiva
 $mame
 TIPS:
 PK8020 KORVET
@@ -7188,6 +7188,8 @@ $mame
 INITIALIZATION:
 Marked as working, but not able to get it to do anything. Both floppy disks and hard disks are ignored, and it always complains about its "ADAPTOR FAILURE".
 
+Read the topics at https://forums.nabu.ca/viewforum.php?f=21 to get some ideas of how to configure it.
+
 $end
 $info=narc
 $mame
@@ -7286,12 +7288,6 @@ SOURCE:
 mameinfo.dat
 
 $end
-$info=ncd16,ncd19
-$mame
-INITIALIZATION:
-Use ? to get a list of commands.
-
-$end
 $info=nclubv3
 $mame
 INITIALIZATION:
@@ -7299,12 +7295,6 @@ The first time you run the game, it will say "ERROR ON CARTRIDGE". Press SERVICE
 
 SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=neocd
-$mame
-INITIALIZATION:
-Not working. Use "neocdz" or "neocdzj" instead.
 
 $end
 $info=newbrain,newbraina
@@ -7326,12 +7316,11 @@ To go back to 40 columns: OPEN #0,0
 
 To activate the LCD display: OPEN #0,4 - but the LCD doesn't work in MAME.
 
+NOTE: newbrainmd does not work.
 $end
 $info=ngp,ngpc
 $mame
-TIPS:
-NEO-GEO POCKET
-==============
+INITIALISATION:
 
 How to set it up for the first time
 
@@ -7360,13 +7349,28 @@ INITIALIZATION:
 Everything in the software list is rejected as unrecognised format.
 
 $end
-$info=nws3260
+$info=nws1580,nws3260,nws3410,nws3720,nws3860
 $mame
 INITIALIZATION:
-Type help to get a list of commands.
 
-The other NWS computers start up, but the keyboard doesn't work.
+Use the tab menu to enable all the keyboards. Type h or help to get a list of commands.
 
+$end
+$info=nws831,nws5000x
+$mame
+
+Use the tab menu to enable all the keyboards. Type he to get a list of commands.
+
+$end
+$info=ob68k1a
+$mame
+- All input must be in UPPERcase. Some commands:
+- A : display contents of Address registers
+- D : display contents of Data registers
+- G : go, using PC register as the start address
+- T : trace one step (do multiple steps with a number, eg T 5 for 5 steps)
+- display contents of register by typing its name (eg A0 or PC or D5)
+- load a register with a value (eg A0 9876)
 $end
 $info=odin,odin_dlx,solarwap,poleposn,wolfman,nemesisp,odisea,sonstwar,hangonp
 $mame
@@ -7427,9 +7431,7 @@ TIPS:
 Ondra Vili
 ==========
 
-When driver is started just press Enter key
-and play the tape
-Program will autostart
+When driver is started just press Enter key and play the tape. Program will autostart.
 
 $end
 $info=opengolf
@@ -7459,7 +7461,7 @@ SOURCE:
 mameinfo.dat
 
 $end
-$info=orao,orao103
+$info=orao103
 $mame
 INITIALIZATION:
 ORAO
@@ -7480,7 +7482,7 @@ TAP files don't fully load.
 To quit Basic: EXIT (orao103 only)
 
 $end
-$info=oric1,atmos,telstrat
+$info=oric1,atmos,telstrat,prav8d,prav8dd
 $mame
 TIPS:
 TANGERINE Oric1, Atmos, Telstrat
@@ -7556,7 +7558,7 @@ Here's an example:
 - Select the name from the B drive. Game will start.
 
 $end
-$info=osborne1
+$info=osborne1,osborne1nv,osborne1sp
 $mame
 TIPS:
 OSBORNE-1
@@ -7569,7 +7571,7 @@ NEUVO disks do not work, even in the neuvo variant.
 The (nw) disks cannot be read. Normally they would go into the B drive and run from there.
 
 $end
-$info=p2000t
+$info=p2000t,p2000m
 $mame
 TIPS:
 Philips P2000
@@ -7585,18 +7587,15 @@ CAS file will load and execute itself at switch-on.
 
 
 
-
 Floppy disk
 -----------
 Not supported.
 
 
 
-
 Cartridge
 ---------
 Not supported.
-
 $end
 $info=p8000
 $mame
@@ -7630,22 +7629,13 @@ T - performs a hardware test, which eventually hangs.
 There's a bunch of other commands visible in the bios, but none of them do anything.
 
 $end
-$info=paceight
+$info=paceight,pacslot,paccarn
 $mame
 INITIALIZATION:
-Press [ F3 ] and the press it once again: the game will be now playable.
+"DIP SW READ ERROR" press F3. "BACKUP MEMORY ERROR" press F3. After that, it will work.
 
 SOURCE:
 https://www.progettosnaps.net/gameinit.dat
-
-$end
-$info=pacslot
-$mame
-INITIALIZATION:
-You will need to restart MAME twice at the DIP SW READ ERROR and BACKUP MEMORY ERROR screen before you are allowed to play. Use the [ F3 ] key.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
 $info=panthera,spidermn,circusp,cntforce,starrace,jamesb,timeline,forceii,pnkpnthr,marsp,vlcno_ax,vlcno_1c,blckhole,blckhols,hh,eclipse
@@ -7891,8 +7881,7 @@ NEC PC-8801
 
 Cassettes
 ---------
-LOAD"*" - guess this might load the next file, but not documented.
-Appears the cassette system isn't working.
+LOAD"*" - guess this might load the next file, but not documented. Appears the cassette system isn't working.
 
 
 Floppies
@@ -7947,13 +7936,15 @@ Then load the cue file if it exists. Make sure that any files specified in the c
 Press 1 (the RUN button) to start the game.
 
 $end
-$info=pcfx
+$info=pcfx,pcfxga
 $mame
 TIPS:
 NEC PCFX
 ========
 
 Nothing works correctly, and there's no swlist.
+
+pcfxga: When RUN is flashing, press 1.
 
 At the menu, press 5 to move to your option, then 1 to action it.
 
@@ -8029,6 +8020,10 @@ At the end, type RUN
 
 This system only works in MAMEUI, not in MAME.
 
+$end
+$info=pegasos2
+$mame
+If you run this system, don't press G because the emulator will immediately freeze solid.
 $end
 $info=pegasus,pegasusm
 $mame
@@ -8351,7 +8346,7 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
-$info=pet2001,pet2001b,pet2001n,pet4016,pet4032,pet8032,cbm8296
+$info=pet2001,pet2001b,pet2001n,pet4016,pet4032,pet8032,cbm8296,cbm8296ed,cbm8296d,cbm8296d_de,cbm8296dgv_de,cbm8296gd,pet20018,cbm3032b,pet2001b16,pet2001b32,cbm3008,cbm3016,cbm3032,pet2001n16,pet2001n32,cbm4016,cbm4032,cbm4032f,pet4032f,pet4032b,cbm4032b,cbm8032,cbm8032_fr,cbm8032_de,cbm8032_se,cbm8096,mmf9000,mmf9000_se,superpet
 $mame
 TIPS:
 COMMODORE PET
@@ -8533,7 +8528,7 @@ To load a tape: CLOAD
 Not compatible with PHC25.
 
 $end
-$info=phc25,map1010
+$info=phc25,map1010,phc25j
 $mame
 TIPS:
 PHC25: When asked for Screen? press 1
@@ -8648,8 +8643,7 @@ L - Load memory from paper tape
 S - See and alter registers
 
 Cassette:
-This has been hooked up to the otherwise-useless L command. Baud rate = 110.
-After load completes, G440 to run.
+This has been hooked up to the otherwise-useless L command. Baud rate = 110. After load completes, G440 to run.
 
 $end
 $info=pirate_3
@@ -8721,7 +8715,17 @@ SOURCE:
 https://www.progettosnaps.net/gameinit.dat
 
 $end
-$info=pmd851
+$info=pm68k
+$mame
+Some commands:
+D : registers
+E : ?
+M : Seg Map
+O : Memory
+P : Page Map
+
+$end
+$info=pmd851,c2717,c2717pmd,alfa,mato,pmd852,pmd852a,pmd852b,pmd853
 $mame
 TIPS:
 PMD-85
@@ -8896,9 +8900,10 @@ GO : G
 Test Paste:
 M4000X11X22X33X44X55X66X77X88X99XM4000
 Now press X to confirm the data has been entered.
-
-
-The SC1 version is a modification that turns it into a chess computer.
+$end
+$info=poly880s
+$mame
+The SC1 version is a modification that turns the poly880 into a chess computer.
 
 SC1-SLC1 Keypad Reference:
 1-8 = A1-H8
@@ -8996,7 +9001,7 @@ INITIALIZATION:
 * Press F3. Game will start.
 
 $end
-$info=primoa32
+$info=primoa32,primoa48,primoa64,primob32,primob48,primob64,primoc64
 $mame
 TIPS:
 PRIMO
@@ -9113,7 +9118,7 @@ To save a tape: SAVE
 To load a tape: LOAD
 
 $end
-$info=px4
+$info=px4,px4p
 $mame
 TIPS:
 To save a tape: SAVE "CAS0:X.BAS"
@@ -9132,7 +9137,7 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
-$info=pyl601
+$info=pyl601,pyl601a
 $mame
 TIPS:
 - PYL601 - command 'MODE80' does nothing
@@ -9751,7 +9756,7 @@ Here is a test program. Copy the text and Paste into the emulator.
 -1800^3E^55^D3^F9^76^XX1800^
 
 $end
-$info=sb2m600b
+$info=sb2m600b,c1p,c1pmf,uk101
 $mame
 INITIALIZATION:
 Keyboard notes and BTANBs:
@@ -11703,7 +11708,7 @@ SOURCE:
 mameinfo.dat
 
 $end
-$info=vesta
+$info=vesta,hobby
 $mame
 TIPS:
 PK8000 VESTA
