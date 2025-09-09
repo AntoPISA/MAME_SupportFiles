@@ -5715,8 +5715,6 @@ $mame
 INITIALIZATION:
 Machine will sit at "Diagnostic Start" for a while. If you're asked to set default parameter, press Y. Now you are at the monitor prompt. Use the H command for help.
 
-NOTE: It has recently regressed, never gets into the monitor.
-
 $end
 $info=luna88k,luna88k2
 $mame
@@ -9274,8 +9272,7 @@ Monitor commands:
 - Gnnnn : Execute program at nnnn
 - Gnnnn,tttt : as above, breakpoint at tttt
 - R : modify registers
-The monitor appears to end at 33D3, however the rom contains more code through to 35EB.
-But, the 34xx area is overwitten by the optional RS-232 expansion box.
+The monitor appears to end at 33D3, however the rom contains more code through to 35EB. But, the 34xx area is overwitten by the optional RS-232 expansion box.
 
 $end
 $info=ratrc_l1
@@ -9285,19 +9282,9 @@ RAT RACE
 ========
 The first time run, the display will show the model number. Press F3 to clear this.
 
-Rat Race is played in a cocktail cabinet, the player uses a joystick to tilt the
-board, to coax the ball into following lit passages in a maze. After a successful
-navigation, the maze changes to something else faster and harder. It's almost an
-arcade game done mechanically. Obviously there is no way to emulate it in its intended
-form. Probably would have been a nice game, but it never passed the prototype stage.
+Rat Race is played in a cocktail cabinet, the player uses a joystick to tilt the board, to coax the ball into following lit passages in a maze. After a successful navigation, the maze changes to something else faster and harder. It's almost an arcade game done mechanically. Obviously there is no way to emulate it in its intended form. Probably would have been a nice game, but it never passed the prototype stage.
 
-How to play: Press 5, press 1. If you want 2 players, also press 2. The display flashes
-the ball number. Press Z to get the ball into play. The display alternates between the
-score and the seconds remaining to accomplish the task. After the series of passages
-has been followed, a bonus flashes for a few seconds, which you must also run over.
-While one player is playing, the other player's score shows what seem to be random
-numbers (but probably are not). The real machine does this too.
-If time runs out, the ball is over. After 3 balls, it's game over.
+How to play: Press 5, press 1. If you want 2 players, also press 2. The display flashes the ball number. Press Z to get the ball into play. The display alternates between the score and the seconds remaining to accomplish the task. After the series of passages has been followed, a bonus flashes for a few seconds, which you must also run over. While one player is playing, the other player's score shows what seem to be random numbers (but probably are not). The real machine does this too. If time runs out, the ball is over. After 3 balls, it's game over.
 
 $end
 $info=ravens
@@ -9328,8 +9315,7 @@ $mame
 TIPS:
 Version V2.0 (ravens2)
 ------------
-This used a terminal interface with a few non-standard control codes.
-The pushbuttons and LEDs appear to have been done away with.
+This used a terminal interface with a few non-standard control codes. The pushbuttons and LEDs appear to have been done away with.
 
 When run for the first time, some adjustments need to be made in MAME's tab menu.
 - Input Settings, Keyboard Selection, Generic Keyboard: Enable
@@ -9357,6 +9343,14 @@ INITIALIZATION:
 Wait patiently for the two progress bars to end, press [ TAB ], choose "DIP Switches" and set "BIOS Flash" to "OFF".
 Now choose "Reset System," and on reboot the game will start correctly.
 
+$end
+$info=rc2014,rc2014cl2,rc2014minicpm,rc2014pro
+$mame
+? or HELP to get a list of commands.
+$end
+$info=rc2014zed,rc2014zedp,sc203
+$mame
+To get into the monitor, press M. Then H for a list of commands.
 $end
 $info=rclimb_3
 $mame
@@ -9501,19 +9495,20 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
-$info=rm380z,rm380zf
+$info=rm380z,rm380zf,rm380zfhrg,rm380z34d,rm380z34e,rm380zhrg
 $mame
 TIPS:
 COS is a Cassette Operating System
 
 The only commands that respond are:
-B - says Disc not ready
+B - Boot Disk System
 J - Jump - asks for a go address. If you do something invalid (such as 7777) you get a debug exception screen.
-M - reboot, change to 80 CPL
+M - reboot
 O - select a printer (0-6)
-S - asks First,Last,To - then nothing?
-W - change to 40 CPL
+S - copy memory - enter the source range(First,Last), and then the destination(To).
+W - toggle between 40 and 80 CPL (doesn't always work)
 X - says Disc not ready
+Ctrl-F - enter "Front Panel"
 
 $end
 $info=rmpgwt
@@ -9840,17 +9835,9 @@ STILL CRAZY
 ===========
 The first time run, the display will show the model number. Press F3 to clear this.
 
-A novelty game where the playfield is completely vertical. It has 4 flippers and the
-idea is to get the ball up to the alcohol 'still' before the 'revenuers' do. The
-idea didn't catch on, and the game was not officially released. 1 player.
-The display shows Score and Batch. There is no credit display.
-If the number of batches exceeds 9, the 'hidden digit' will show the tens.
-You cannot get more than 99 batches.
-The score only has 5 digits, but the game stores the 100,000 digit internally.
+A novelty game where the playfield is completely vertical. It has 4 flippers and the idea is to get the ball up to the alcohol 'still' before the 'revenuers' do. The idea didn't catch on, and the game was not officially released. 1 player. The display shows Score and Batch. There is no credit display. If the number of batches exceeds 9, the 'hidden digit' will show the tens. You cannot get more than 99 batches. The score only has 5 digits, but the game stores the 100,000 digit internally.
 
-How to play: Press 5, press 1, press Z. Add points by pressing F,G,H,J. Press J
-a number of times to increment the batches. To end the game, hit X until the siren
-is heard. If you scored > 99999 points, the high score will show 99999.
+How to play: Press 5, press 1, press Z. Add points by pressing F,G,H,J. Press J a number of times to increment the batches. To end the game, hit X until the siren is heard. If you scored > 99999 points, the high score will show 99999.
 
 $end
 $info=scud
@@ -9870,7 +9857,9 @@ Inufuto homebrew games don't work.
 $end
 $info=sdk80
 $mame
-INITIALIZATION:
+TIPS:
+All input must be in UPPERcase.
+
 Monitor Commands:
 D<low address>,<high address>                Display memory contents
 G<entry point>                               Go to address (execute program at address)
@@ -9888,11 +9877,7 @@ An example is Press SUBST key, enter an address, press NEXT key, enter data, the
 Warning: the default cold start routine fails to initialize SP properly, which will cause the GO command to fail. SP can be set to point to the end of onboard RAM by the following sequence of button presses: EXAM REG, 4, 2, 0, EXEC, EXAM REG, 5, F, F, EXEC. In TTY mode, use the "XS" command to change SP. Another option is to push the RESET button again, which will leave SP wherever it was in the monitor's scratchpad area.
 
 Using the Mastermind bios:
-Start up, press 0 to begin. Game shows ----. You need to guess a number between 0000 and 9999.
-Enter your guess, "computer" will answer showing on left with the number of found digits.
-On the right you'll get a "clue", slightly different than on the standard game (making it a bit more tricky and more intriguing).
-Once you find the number, you'll see it flashing.   Press the 2 key and you'll get your score (number of attempts before guessing).
-Press 0 to restart.
+Start up, press 0 to begin. Game shows ----. You need to guess a number between 0000 and 9999. Enter your guess, "computer" will answer showing on left with the number of found digits. On the right you'll get a "clue", slightly different than on the standard game (making it a bit more tricky and more intriguing). Once you find the number, you'll see it flashing.   Press the 2 key and you'll get your score (number of attempts before guessing). Press 0 to restart.
 
 $end
 $info=sdk86
@@ -10412,7 +10397,7 @@ Paste
 Most of the unsupported stuff is text and can be pasted in.
 
 $end
-$info=sorcerer
+$info=sorcerer,sorcerera,sorcererb,sorcererd,sorcerer2
 $mame
 INITIALIZATION:
 All input to be in UPPERcase.
@@ -10519,7 +10504,7 @@ TIPS:
 At start of each ball, press Z to enable the playfield.
 
 $end
-$info=spec128,specpl2a,specpl3e,spectrum,scorpio,atm
+$info=spec128,specpl2a,specpl3e,spectrum,scorpio,atm,atmtb2,atmtb2plus,chloe,pent1024,pentagon,pentevo,bestzx,kay1024,profi,quorum,scorpiongmx,scorpio,scorpiontb,hc128,specpls2,tbblue,sprinter,specpls3,sp3e8bit,sp3eata,sp3ezcf,byte,bk08,blitzs,cip01,cip03,cobrasp,cobra80,didakt90,dgama87,dgama88,dgama89,didaktk,didakm91,didakm92,didakm93,hc2000,hc85,hc88,hc90,hc91,inves,jet,compani1,quorum48,magic6,mistrum,orizon,santaka2,sintez2,spektrbk,tk90x,tk95,zvezda,spec80k,specide,tc2048,ts2068,uk2086
 $mame
 TIPS:
 Sinclair Spectrum, Scorpion, ATM
@@ -10548,7 +10533,7 @@ Spectrum 128
 Press enter on tape loader, Scroll-lock, F2
 
 $end
-$info=special
+$info=special,anakonda,erik,kharkovsky,lik,pioner,specialp,specialm,specimx,unga
 $mame
 INITIALIZATION:
 To save a tape: MSAVE
@@ -10713,7 +10698,7 @@ After starting a game, press X, wait for the sound of the ball being ejected, th
 The ball number is how many balls are left. 1 = last ball.
 
 $end
-$info=studio2
+$info=studio2,mtc9016,apollo80,cm1200,shmc1200,mpt02,mpt02h,visicom
 $mame
 INITIALIZATION:
 After loading a cart, press F3. It might then run, or you might have to hit other keys until it starts.
@@ -10725,7 +10710,7 @@ INITIALIZATION:
 H to get a list of commands.
 
 $end
-$info=super80
+$info=super80,super80d,super80e,super80m,super80r,super80v
 $mame
 TIPS:
 In the monitor:
@@ -10762,7 +10747,7 @@ SOURCE:
 mameinfo.dat
 
 $end
-$info=svi318,svi328
+$info=svi318,svi328,svi318n,svi328n
 $mame
 INITIALIZATION:
 To save a tape: CSAVE"x"
@@ -10797,7 +10782,7 @@ SOURCE:
 https://www.progettosnaps.net/gameinit.dat
 
 $end
-$info=swtpc
+$info=swtpc,swtpc
 $mame
 TIPS:
 All commands to be in UPPERcase.
@@ -10818,7 +10803,7 @@ R Register dump
 Z Goto Prom (0xC000)
 
 $end
-$info=swtpc09
+$info=swtpc09,swtpc09o,swtpc09u,swtpc09d3,swtpc09i
 $mame
 TIPS:
 Booting from floppy disk:
