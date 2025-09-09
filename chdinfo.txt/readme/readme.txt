@@ -1,6 +1,6 @@
-﻿MAME CHD-Info v0.278
+﻿MAME CHD-Info v0.280
 progetto-SNAPS © 2016/2025 AntoPISA
-=====================================
+===================================
 
 Home-page: https://www.progettosnaps.net/chdinfo/
 Github   : https://github.com/AntoPISA/MAME_SupportFiles
