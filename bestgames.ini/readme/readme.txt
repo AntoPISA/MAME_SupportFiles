@@ -1,4 +1,4 @@
-MAME BESTGAMES.ini 0.273 (Jan  8, 2025)
+﻿MAME BESTGAMES.ini 0.280 (Sep  9, 2025)
 © AntoPISA        www.progettoSNAPS.net
 =======================================
 
@@ -22,7 +22,9 @@ and the vote that you would like him to be assigned. I will consider all your e-
 
 WhatsNew:
 =========
-2025/01/08  9.00: Online the version 0.273; 1 game renamed and 13 added (3,510 evaluated).
+2025/09/09  9.02: Online the version 0.280; 21 game added (3,531 evaluated).
+2025/01/08  9.01: Online the version 0.273; 1 game renamed and 13 added (3,510 evaluated).
+2025/01/05. 9.00: Revised readme.txt file (date format and internal version numbering).
 2024/03/05  8.01: Online the version 0.263; 2 games renamed and 23 added (3,497 evaluated).
 2024/02/09  8.00: The files can also be found here https://github.com/AntoPISA/MAME_SupportFiles/blob/main/bestgames.ini/bestgames.ini.
 2022/12/07  6.02: Online the version 0.250; 1 clone game removed (victlapa) and 3 new games added (3,474 evaluated).
@@ -87,19 +89,19 @@ Description of Assigning Scores:
 
 
 Number of Assigning Scores:
----------------------------
-*   0 >  10 :   18
-*  10 >  20 :   89
-*  20 >  30 :   33
-*  30 >  40 :  329   (+  1)
-*  40 >  50 :  115   (+  3)
-*  50 >  60 : 1026   (+  5)
-*  60 >  70 :  284   (+ 11)
-*  70 >  80 : 1006   (+  9)
-*  80 >  90 :  224   (+  4)
-*  90 > 100 :  386   (+  3)
-===========================
-             3,510
+------------------------------------
+    18  - 0 to 10 (Worst)
+    89  - 10 to 20 (Horrible)
+    33  - 20 to 30 (Bad)
+   330  - 30 to 40 (Amendable)
+   116  - 40 to 50 (Decent)
+ 1,027  - 50 to 60 (Not Good Enough)
+   294  - 60 to 70 (Passable)
+ 1,012  - 70 to 80 (Good)
+   226  - 80 to 90 (Very Good)
+   386  - 90 to 100 (Best Games)
+====================================
+ 3,531
 
 
 © 2016/2025 AntoPISA
