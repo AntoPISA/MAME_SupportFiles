@@ -1,9 +1,9 @@
-﻿# MAME GAMEINIT.DAT v0.277   Latest Update:     June  8, 2025
-#                         Project started: September 10, 2015
-#          Merged to the file startup.dat:  December 17, 2024
+﻿# MAME GAMEINIT.DAT v0.280git Latest Update:      Sep 10, 2025
+#                          Project started: September 10, 2015
+#           Merged to the file startup.dat:  December 17, 2024
 #
 # File designed and maintained by AntoPISA and Robbbert
-# Internal versione 11.06
+# Internal versione 11.07
 #
 # Homepage         : https://www.progettosnaps.net/gameinit.dat
 # Github repository: https://github.com/AntoPISA/MAME_SupportFiles
@@ -2151,6 +2151,15 @@ Press and hold Service 1 + 2 Keys [ 0 ]+[ 9 ], then press reset [ F3 ]. Now the 
 
 SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
+
+$end
+$info=cjffruit
+$mame
+INITIALIZATION:
+At start-up a "NEED COIN ADJUSTMENT" pops up. Press Service Mode [ F2 ], go to 'MENU PAGE 1' with Deal [ 2 ], move to 'PRICE FOR COIN #1' with High [ A ], and set it with Low [ S ], then exit with [ F2 ].
+
+SOURCE:
+mameinfo.dat
 
 $end
 $info=clcd
