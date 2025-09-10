@@ -2458,7 +2458,7 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
-$info=cpu09
+$info=cpu09,ivg09
 $mame
 TIPS:
 All input must be in UPPERcase.
@@ -3145,7 +3145,7 @@ SOURCE:
 https://www.progettosnaps.net/gameinit.dat
 
 $end
-$info=eg3003
+$info=eg3003,ht1080z,ht1080z2,ht108064,sys80,sys80p
 $mame
 TIPS:
 Shift and Right-arrow might enable 32 cpl, or it will put a space between each character, depending on the computer hardware.
@@ -6589,7 +6589,7 @@ SOURCE:
 mameinfo.dat
 
 $end
-$info=mo5,mo5nr,mo6,to7,to770,to8,to9,to9p
+$info=mo5,mo5nr,mo6,to7,to770,to8,to9,to9p,mo5e,pro128,t9000,to770a,to8d,to9p
 $mame
 INITIALIZATION:
 To save a tape: SAVE"x"
@@ -8565,7 +8565,7 @@ $end
 $info=pi4d50,pi4d70
 $mame
 TIPS:
-Type help to get a list of commands.
+Type ? or help to get a list of commands.
 
 $end
 $info=pilot1k
@@ -10884,7 +10884,7 @@ SOURCE:
 mameinfo.dat
 
 $end
-$info=tec1
+$info=tec1,tecjmon
 $mame
 TIPS:
 Using cassette tapes: There's a separate cassette menu, enter it with Shift 0. Then..
@@ -11087,13 +11087,13 @@ SOURCE:
 mameinfo.dat
 
 $end
-$info=ti73,ti81,ti82,ti83,ti83p,ti83pse,ti84p,ti84pse,ti85,ti86
+$info=ti73,ti81,ti82,ti83p,ti83pse,ti84p,ti84pse,ti85,ti86,ti81v2,ti83pb,ti84pov2,ti84pov3,ti84pob,ti84pv2,ti84pv3,ti84pb
 $mame
 TIPS:
-Press Q to turn on the machine.
+Many of these will show the red "Not Working" screen, however some do actually work. You can try slowly pressing Q, then wait a few seconds. If you get text or a flashing cursor, then it is usable. Pressing Esc will display a menu.
 
 $end
-$info=ti74
+$info=ti74,ti74a
 $mame
 TIPS:
 To save a tape: SAVE"1:x"
@@ -11109,7 +11109,7 @@ This system is incomplete. The SAVE and OPEN commands are not implemented, and w
 To load a tape: OLD CS1
 
 $end
-$info=ti99_4,ti99_4a,ti99_232,ti99_8
+$info=ti99_4,ti99_4a,ti99_232,ti99_8,ti99_4e,ti99_4ae,ti99_4ev,ti99_4qi,ti99_8e
 $mame
 TIPS:
 To save a tape: SAVE CS1
@@ -11151,8 +11151,7 @@ Make sure drive B is enabled (slots, fdc:1, choose 35dd).
 Working floppies boot into cp/m.
 
 
-Non-working floppies need to be in B: after booting cp/m on A:
-BUT they seem to be broken/unusable.
+Non-working floppies need to be in B: after booting cp/m on A: - BUT they seem to be broken/unusable.
 
 $end
 $info=timecris
@@ -11192,7 +11191,7 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
-$info=tk2000
+$info=tk2000,mpf2
 $mame
 INITIALIZATION:
 Apple clone.
@@ -11204,7 +11203,7 @@ To load a tape: LOADT (or LOADA for Apple compatibility)
 Tape system is not working.
 
 $end
-$info=tk80
+$info=tk80,ics8080,mikrolab,nd80z,nectk85
 $mame
 INITIALIZATION:
 When booted, the system begins at 0000 which is ROM. You need to change the address to 8000 before entering a program. Here is a test to paste in:
@@ -11342,7 +11341,7 @@ $mame
 INITIALIZATION:
 Shift and Right-arrow will enable 32 cpl.
 
-There's a config switch to tell the machine if the expansion interface is present or not. If ON, you need to boot from a floppy disk. If OFF, there's no floppy support and you're in ROM BASIC.
+There's a config switch to tell the machine if the expansion interface is present or not. If ON, you need to boot from a floppy disk. If OFF, there's no floppy support and you're in ROM BASIC. If you have disk enabled, but want to get into ROM BASIC, hold down the End key and hit F3.
 
 For ROM BASIC:
 
@@ -11376,12 +11375,12 @@ BOOT ERROR RS: The diskette in Drive 0 is not Radio Shack operating system forma
 No XENIX disks work. If you use TRSDOS, commands must be in UPPERcase. DIR to get the directory.
 
 $end
-$info=trs80m3,trs80m4
+$info=trs80m3,trs80m4,cp500
 $mame
 INITIALIZATION:
 Shift and Right-arrow will enable 32 cpl.
 
-There's a config switch to tell the machine if the expansion interface is present or not. If ON, you need to boot from a floppy disk. If OFF, there's no floppy support and you're in ROM BASIC.
+There's a config switch to tell the machine if the expansion interface is present or not. If ON, you need to boot from a floppy disk. If OFF, there's no floppy support and you're in ROM BASIC. If you have disk enabled, but want to get into ROM BASIC, hold down the End key and hit F3.
 
 For ROM BASIC:
 
@@ -11435,6 +11434,11 @@ Shift-0 = backspace
 Many software-list items will complain of "RAMTOP no good" and won't work.
 
 $end
+$info=tsconf,tsconf2
+$mame
+INITIALIZATION:
+The first time this is run you get the "TS-BIOS Setup Utility". It says to press F12, but this key doesn't work. Instead, change whatever you want (if anything), then quit and restart. On the next run, the system starts, and it expects a disk to be present. You can use one from the software list.
+$end
 $info=tshoot
 $mame
 INITIALIZATION:
@@ -11461,7 +11465,7 @@ To save a tape: SAVE x
 To load a tape: LOAD
 
 $end
-$info=tvc64
+$info=tvc64,tvc64p,tvc64pru
 $mame
 TIPS:
 TVC64
@@ -11501,7 +11505,7 @@ SOURCE:
 mameinfo.dat
 
 $end
-$info=tx0_8kw
+$info=tx0_8kw,tx0_64kw,tx0_8kwo
 $mame
 INITIALIZATION:
 Enter to load the papertape file - but the system doesn't work.
@@ -11510,7 +11514,7 @@ $end
 $info=uchroma68
 $mame
 INITIALIZATION:
-System is marked as working, but the keyboard is completely crazy and unusable.
+Make sure that Toggle Inputs has Caps Lock "On" - otherwise the keyboard produces rubbish.
 
 $end
 $info=ultim809
