@@ -632,7 +632,7 @@ A tape can only be successfully loaded if the machine it was recorded on has the
 Even then, tape loading is unreliable and there's no error if things go wrong.
 
 $end
-$info=aplscar,atc1425a,cjddzsp,dragntr,dragntr2,gj4000,gjmovie,gjrstar,gjrstar3,gln,gls,goldnjkr,hmxpro,imac,ktx20t02,lhfy,megapc,megapcpl,mghammer,mj1,nextc,ochipvlp,parcade,pcd4nl,pcompelr,pitagjr,scumimon,sm48650usc,tagalaga,taspinv,taturtf,tenkai,thinkpad850,vbaby,vs298,wccf1dup,wccf2chk,wto2840sp,vs2v991
+$info=aplscar,cjddzsp,dragntr,dragntr2,gj4000,gjmovie,gjrstar,gjrstar3,gln,gls,goldnjkr,hmxpro,imac,ktx20t02,lhfy,megapc,megapcpl,mghammer,mj1,nextc,ochipvlp,parcade,pcd4nl,pcompelr,pitagjr,scumimon,sm48650usc,tagalaga,taspinv,taturtf,tenkai,thinkpad850,vbaby,vs298,wccf1dup,wccf2chk,wto2840sp,vs2v991,jorn720,pcipc,pcipcs7,pcipctx,pciagp,so30h,sis85c496,ft486f55,ch486spm,ch4spi,abpi4,abpm4,abpv4,aoap43,atc1425a,atc1425b,jwj446a,jakms41,ls486e,ms4144,aa486s,a486sp3,so4saw2,zito4dps
 $mame
 TIPS:
 This system doesn't work and may crash the emulator. Don't run it.
@@ -1232,6 +1232,10 @@ Test Paste:
 X-0011=11^22^33^44^55^66^77^88^99^-0011
 Now press M to confirm the data has been entered.
 
+$end
+$info=bigboard,mk82,mk83,mojmikro
+$mame
+After a few seconds, hit Enter, and the prompt will appear.
 $end
 $info=bigbord2
 $mame
@@ -5377,7 +5381,7 @@ To save a file: SAVE
 To load a file: LOAD
 
 $end
-$info=laser110,laser200,laser210,laser310,vz200,vz300
+$info=laser110,laser200,laser210,laser310,vz200,vz300,fellow,tx8000,laser310h
 $mame
 TIPS:
 VTECH LASER 200, 210, 300, 310. DICK SMITH VZ-200, VZ-300
@@ -10504,7 +10508,7 @@ TIPS:
 At start of each ball, press Z to enable the playfield.
 
 $end
-$info=spec128,specpl2a,specpl3e,spectrum,scorpio,atm,atmtb2,atmtb2plus,chloe,pent1024,pentagon,pentevo,bestzx,kay1024,profi,quorum,scorpiongmx,scorpio,scorpiontb,hc128,specpls2,tbblue,sprinter,specpls3,sp3e8bit,sp3eata,sp3ezcf,byte,bk08,blitzs,cip01,cip03,cobrasp,cobra80,didakt90,dgama87,dgama88,dgama89,didaktk,didakm91,didakm92,didakm93,hc2000,hc85,hc88,hc90,hc91,inves,jet,compani1,quorum48,magic6,mistrum,orizon,santaka2,sintez2,spektrbk,tk90x,tk95,zvezda,spec80k,specide,tc2048,ts2068,uk2086
+$info=spec128,specpl2a,specpl3e,spectrum,scorpio,atm,atmtb2,atmtb2plus,chloe,pent1024,pentagon,bestzx,kay1024,profi,quorum,scorpiongmx,scorpio,scorpiontb,hc128,specpls2,tbblue,specpls3,sp3e8bit,sp3eata,sp3ezcf,byte,bk08,blitzs,cip01,cip03,cobrasp,cobra80,didakt90,dgama87,dgama88,dgama89,didaktk,didakm91,didakm92,didakm93,hc2000,hc85,hc88,hc90,hc91,inves,jet,compani1,quorum48,magic6,mistrum,orizon,santaka2,sintez2,spektrbk,tk90x,tk95,zvezda,spec80k,specide,tc2048,ts2068,uk2086
 $mame
 TIPS:
 Sinclair Spectrum, Scorpion, ATM
@@ -10596,6 +10600,11 @@ If at start it says RAM BAD, or RAM DATI BAD, hold down 1 and 9, hit F3. Wait fo
 SOURCE:
 mameinfo.dat
 
+$end
+$info=sprinter,pentevo
+$mame
+INITIALISATION:
+Make sure to go into the Input Settings and enable all keyboards.
 $end
 $info=srmp3
 $mame
@@ -11437,7 +11446,7 @@ $end
 $info=tsconf,tsconf2
 $mame
 INITIALIZATION:
-The first time this is run you get the "TS-BIOS Setup Utility". It says to press F12, but this key doesn't work. Instead, change whatever you want (if anything), then quit and restart. On the next run, the system starts, and it expects a disk to be present. You can use one from the software list.
+Make sure to go into the Input Settings and enable all keyboards. The first time this is run you get the "TS-BIOS Setup Utility". It says to press F12, but this key doesn't work. Instead, change whatever you want (if anything), then quit and restart. On the next run, the system starts, and it expects a disk to be present. You can use one from the software list.
 $end
 $info=tshoot
 $mame
@@ -11649,9 +11658,7 @@ Once done, some blocks will fill in at the bottom of the screen. Let go all keys
 
 Then to run the choice, press F12.
 
-boot from FDD:
-press F12 after initial boot was load (indicated in screen lower part)
-hold Ctrl ("YC" key) during MicroDOS start to format RAM disk (required by some games)
+boot from FDD: Press F12 after initial boot was load (indicated in screen lower part). Hold Ctrl ("YC" key) during MicroDOS start to format RAM disk (required by some games).
 
 48k MicroDos one-letter commands:
 B   crash?
@@ -11742,7 +11749,7 @@ Cartridge
 Not supported.
 
 $end
-$info=vic10,vic1001,vic20
+$info=vic10,vic1001,vic20,vic20_se,vic20p
 $mame
 TIPS:
 Most games work with the default RAM, but a few will need the 16k expansion.
@@ -11779,7 +11786,7 @@ To get the floppy directory: LOAD"$",8 and then LIST. This wipes out whatever pr
 The default disk drive is on device 8 (slot iec8). If you want another drive, load it into iec9.
 
 $end
-$info=videopac,videopacp
+$info=videopac,videopacp,odyssey2,videopacf,jopac,odyssey3
 $mame
 TIPS:
 Philips Odyssey2, G7000, G7400, Videopac, Videopac+
@@ -11805,7 +11812,7 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
-$info=vip
+$info=vip,vip111,nsvip,nsvipa,nsvipb,nsvipc
 $mame
 TIPS:
 Select 4K ram.
@@ -11826,14 +11833,15 @@ $info=votrpss
 $mame
 INITIALIZATION:
 Notes:
-- When Serial dip is chosen, you type the commands in, but you cannot see anything.
-If you enter text via parallel, it is echoed but otherwise ignored.
+- When Serial dip is chosen, you type the commands in, but you cannot see anything. If you enter text via parallel, it is echoed but otherwise ignored.
 - When Parallel dip is chosen, you type the commands in, but again you cannot see anything.
 - These operations ARE BY DESIGN. Everything is working correctly.
 - Commands are case-sensitive.
 - Some tests...
 - Say the time: EscT. (include the period)
 - Play some notes: !T08:1234:125:129:125:130. (then press enter)
+
+Looks like it may have regressed, as it ignores all user input.
 
 $end
 $info=wantouch
@@ -11970,8 +11978,7 @@ Cassettes
 ---------
 Load and run themselves.
 
-If it says "File mode error", boot Basic from disk, type LOAD? to get filename, then LOAD"filename" then RUN.
-Filenames are case-sensitive.
+If it says "File mode error", boot Basic from disk, type LOAD? to get filename, then LOAD"filename" then RUN. Filenames are case-sensitive.
 
 
 Floppies
@@ -12061,7 +12068,7 @@ X - change memory bank (hangs machine)
 The delimiter of parameters is Enter. It will keep asking for more until it's satisfied.
 
 $end
-$info=z1013
+$info=z1013,z1013s60,z1013k76,z1013k69,z1013a2
 $mame
 TIPS:
 ROBOTRON Z-1013
@@ -12204,18 +12211,17 @@ Quick Instructions:
 - There is a choice of 5 bioses, via the Machine Configuration menu
 - EP382:  same as Z80NET.
 - EP548:  same as Z80NETB.
-- EP390:  for swlist-item "basic55k". Press B, from the menu select 2, runs. Type ENG for English.
-It can load and run tapes from the swlist, although it seems to often have load errors.
+- EP390:  for swlist-item "basic55k". Press B, from the menu select 2, runs. Type ENG for English. It can load and run tapes from the swlist, although it seems to often have load errors.
 - EP1390: requires a floppy to boot from. Disks marked as NE-DOS 1.5 should work.
 - EP2390: uses ports 8x, not emulated, not working. For NE-DOS G.1
 
 $end
-$info=z9001
+$info=z9001,kc85_111,kc87_10,kc87_11,kc87_20,kc87_21
 $mame
 INITIALIZATION:
 All input should be in UPPER case.
 
-You either type BASIC, or a filename in 8.3 format. The filename must begin with a letter. It will say 'start tape'. You can press ^C here to escape, or any key to continue.
+You type a filename in 8.3 format. The filename must begin with a letter. It will say 'start tape'. You can press ^C here to escape, or any key to continue.
 
 Some other control keys:
 ^B clear input line
@@ -12304,7 +12310,7 @@ R - run
 Shift-0 = backspace
 
 $end
-$info=zx81
+$info=zx81,lambda,pc8300,pow3000,ringo470,ts1000,ts1500,tk85
 $mame
 TIPS:
 Sinclair ZX-81
@@ -12324,6 +12330,8 @@ K - list
 Shift-0 = backspace
 
 If a game says to press any key, don't press Space.
+
+NOTE: lambda, pc8300 and pow3000 work in MAMEUI only.
 
 $end
 #
