@@ -1,4 +1,4 @@
-﻿MAME LANGUAGES.ini 0.279 (Aug 24, 2025)
+﻿MAME LANGUAGES.ini 0.280 (Sep 13, 2025)
 © AntoPISA        www.progettoSNAPS.net
 =======================================
 
@@ -6,19 +6,19 @@ This support file for MAME, attempts to catalog all of the MAME sets based on th
 The file, extracted from the zip file, should be placed in the folder named 'Folders' of your emulator.
 
 items  - Language
-=========================
+===================
     1  - Bulgarian
-  176  - Chinese
+  181  - Chinese
     5  - Croatian
     3  - Czech
   107  - Dutch
-32766  - English
+32859  - English
   152  - French
-  307  - German
+  308  - German
     4  - Greek
     5  - Hungarian
-  265  - Italian
- 2223  - Japanese
+  267  - Italian
+ 2226  - Japanese
   101  - Korean
    15  - Latvian
     2  - Norwegian
@@ -26,13 +26,14 @@ items  - Language
    23  - Portuguese
   146  - Russian
     1  - Slovak
-  362  - Spanish
+  363  - Spanish
     1  - Swedish
     1  - Turkish
   139  - Ukrainian
 
 WhatsNew:
 =========
+2025/09/13 13.07: Added 0.280 sets.
 2025/08/24 13.07: Added 0.279 sets.
 2025/07/29 13.06: Added 0.278 sets.
 2025/05/08 13.05: Added 0.277 sets.

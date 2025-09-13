@@ -6,18 +6,18 @@ MAME Support Files v0.280
 
 The following files have been updated in this MAME cycle:
 - bestgames.ini
-- CHD-Info pack
-- renameSET.dat (WIP)
-
-Still being updated:
 - Category pack
 - CatVer pack
-- command.dat
+- CHD-Info pack
 - gameinit.dat
 - Languages.ini
-- MESS-Info.dat
-- Series.ini 
+- renameSET.dat (WIP)
 - Version pack
+
+Still being updated:
+- command.dat
+- MESS-Info.dat
+- Series.ini
 
 
 Home-page: https://www.progettosnaps.net/support/
