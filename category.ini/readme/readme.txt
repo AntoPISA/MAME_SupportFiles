@@ -1,4 +1,4 @@
-MAME CATEGORY.ini 0.279 (Aug 24, 2025)
+MAME CATEGORY.ini 0.280 (Sep 13, 2025)
 © AntoPISA       www.progettoSNAPS.net
 ======================================
 
@@ -28,7 +28,7 @@ In this package you can find these ini files:
 - Players.ini: List of MAME arcade machines divided by number of players.
 - Prototype.ini: List of machines identified as "prototype".
 - resolution.ini: MAME machines divided by original resolution.
-- screenless.ini: Only MAME machines without screen.
+- screenless.ini: Only MAME machines without screen o con schermi secondari.
 - Working Arcade.ini: List of working arcade machines (to complete MAMEUI).
 - Working Arcade Clean.ini: List all the working machines excluding: Casino, Electromechanical, Medal Game, Quiz, Slot Machine, Whac-A-Mole, Tabletop (Mahjong, Othello, Pachino, etc.) and Utilities.
 
@@ -37,6 +37,7 @@ These files must be copied to the directory called "folders" of your MAME.
 
 WhatsNew:
 =========
+2025/09/13 10.09: Aligned files to MAME 0.280.
 2025/08/24 10.08: Aligned files to MAME 0.279.
 2025/07/25 10.07: Aligned files to MAME 0.278.
 2025/05/08 10.06: Aligned files to MAME 0.277.
