@@ -12,12 +12,12 @@ The following files have been updated in this MAME cycle:
 - gameinit.dat
 - Languages.ini
 - renameSET.dat (WIP)
+- Series.ini
 - Version pack
 
 Still being updated:
 - command.dat
 - MESS-Info.dat
-- Series.ini
 
 
 Home-page: https://www.progettosnaps.net/support/
