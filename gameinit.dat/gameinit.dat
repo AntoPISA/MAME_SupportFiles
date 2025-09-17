@@ -1023,13 +1023,7 @@ $end
 $info=b2m
 $mame
 TIPS:
-B2M
-===
-
 Load up a boot floppy, such as CP/M and then press any key. The cursor will change from flashing to steady while it boots.
-
-It has regressed and will just freeze up instead.
-
 $end
 $info=babbage
 $mame
@@ -1057,8 +1051,7 @@ $end
 $info=basf7120
 $mame
 TIPS:
-The driver notes say: Runs the BOS operating system. However, it can't boot any disk, so it has regressed.
-
+Can only boot the bos93 software-list item.
 $end
 $info=basic31,basic52
 $mame
@@ -8185,8 +8178,7 @@ $mame
 INITIALIZATION:
 Status:
 - Rev.1: Working. At start of ball, hold X and tap Z, so that the player light becomes steady, then release both keys. This enables sensors.
-- Rev.2: Starts up then does nothing
-
+- Clones: Not working.
 $end
 $info=pentagon
 $mame
@@ -9784,15 +9776,6 @@ R - (unknown)
 S - (unknown)
 
 Some commands expect a filename enclosed in double quotes. If the quotes are not there, it loops forever looking for them. Good example of bad programming. There is no help and no error messages.
-
-$end
-$info=sbrain
-$mame
-INITIALIZATION:
-SUPERBRAIN
-==========
-
-This used to work, but it has regressed and does nothing now.
 
 $end
 $info=sc2
