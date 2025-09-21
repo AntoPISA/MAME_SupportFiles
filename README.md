@@ -11,13 +11,13 @@ The following files have been updated in this MAME cycle:
 - CHD-Info pack
 - gameinit.dat
 - Languages.ini
+- MESS-Info.dat
 - renameSET.dat (WIP)
 - Series.ini
 - Version pack
 
-Still being updated:
+Not updated in this cycle:
 - command.dat
-- MESS-Info.dat
 
 
 Home-page: https://www.progettosnaps.net/support/

@@ -1,4 +1,4 @@
-﻿#    MESSINFO_REM.DAT v0.280    Latest update:  Sep 14, 2025
+﻿#    MESSINFO_REM.DAT v0.280    Latest update:  Sep 21, 2025
 #                                Project start: Nov  7, 2011
 #
 #    Author:  Antonio Paradossi (AntoPISA) from Pisa (Tuscany/Italy)
@@ -9,31 +9,9 @@
 #    homepage: http://www.progettosnaps.net/messinfo
 #
 #    Internal version: 14.07
-#    Total items: 350
+#    Total items: 351
 #
 #
-$info=lc89510
-$mame
-0.149u1
-
-LC89510 CD Controller, <unknown>, ????
-
-DRIVER:
-devices/machine/lc89510.cpp
-
-DRIVER STATUS:
-Emulation: Good
-Color: Good
-Sound: Good
-Graphics: Good
-Save State: Unsupported
-
-WIP:
-- 0.280: Device removed.
-- 0.186: Description changed to 'LC89510 CD Controller'.
-- 0.149u1: Added 'lc89510_device' device.
-
-$end
 $info=24c16a
 $mame
 0.207 [smf]
@@ -3398,6 +3376,28 @@ WIP:
 
 ROMSET:
 16384 / 2 files / 13.21Kb packed
+
+$end
+$info=lc89510
+$mame
+0.149u1
+
+LC89510 CD Controller, <unknown>, ????
+
+DRIVER:
+devices/machine/lc89510.cpp
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Unsupported
+
+WIP:
+- 0.280: Device removed.
+- 0.186: Description changed to 'LC89510 CD Controller'.
+- 0.149u1: Added 'lc89510_device' device.
 
 $end
 $info=leappadca
@@ -7030,6 +7030,16 @@ $drv
 
 WIP:
 - 0.160: hap and Sean Riddle added mbdtower.cpp driver.
+
+$end
+$info=megadriv_vt_hybrid.cpp
+$drv
+0.227 [David Haywood]
+
+WIP:
+- 0.280: Driver removed.
+- 0.246: Driver placed in the sub-folder "sega/".
+- 0.227: David Haywood added megadriv_vt_hybrid.cpp driver.
 
 $end
 $info=merlin.cpp
