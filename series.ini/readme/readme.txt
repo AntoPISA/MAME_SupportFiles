@@ -1,4 +1,4 @@
-﻿MAME SERIES.ini 0.280 (Sep 14, 2025)
+﻿MAME SERIES.ini 0.281 (Oct  3, 2025)
 © AntoPISA     www.progettoSNAPS.net
 ==================================== 
 
@@ -12,11 +12,16 @@ In the file are both "Series" recognized as such (thus games and their official 
 guages or with minor variations (official and unofficial).
 
 
+2025/10/03 11.08 MAME 0.281 (718 supported Series - 12,325 items):
+==================================================================
+Items RENAMED     (4) : (hdrivair) to (hdrivair0), (hdrivairp) to (hdrivair), (loopingv) to (loopingu) and (loopingva) to (loopingua).
+Series UPDATED   (11) : "Bare Knuckle", "Carnival", "Cherry Master * Slot", "Contra", "Hard Drivin'", "Joe & Mac", "Looping", "Lucky 8 Lines", "Space Invaders", "Super Spacefortress Macross" and "Tetris".
+
+
 2025/09/14 11.07 MAME 0.280 (718 supported Series - 12,277 items):
 ==================================================================
 Items RENAMED    (7) : (am_mg3) to (am_mg3g), (am_mg3a) to (am_mg3ga), (bm2ndmxa) to (bm2ndmixa), (bm3rdeaa) to (bm3rdmixe), (bm3rdmix) to (bm3rdmixa), (crszonev3b2) to (crszonev4a) and (crszonev4a) to (crszonev3b2).
 Series UPDATED  (12) : "beatmania", "Cherry Master * Slot", "Donkey Kong", "Fruit Bonus * Slot", "Lucky 8 Lines", "Mahjong Electromagnetic Base", "Multi Game", "Pac-Man", "Rally X", "Scramble", "Sorcer Striker" and "Time Crisis".
-
 
 2025/08/25 11.06 MAME 0.279 (718 supported Series - 12,254 items):
 ==================================================================
