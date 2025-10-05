@@ -2,25 +2,25 @@
 -------------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
-- 00268: [Graphics] captaven: In attract mode, the small pictures of the heroes appear before they should (Pierpaolo Prazzoli).
-- 00421: [Graphics] fghthist, fghthsta, fghthstj, fghthstu: Some priority problems in Ryoko's stage. Namely, the old man, the cat and the kid (Pierpaolo Prazzoli).
-- 00826: [Graphics] wc90b, wc90: Some players are cut at left and bottom of the screen (robiza).
-- 02057: [Graphics] buckrog, buckrogn, zoom909, subroc3d: Graphics Corruption on Title Screen + in game (using -AFS) (Aaron Giles).
-- 02854: [Graphics] hypreact: Buggy text in scoring screen (Pierpaolo Prazzoli).
-- 03001: [Interface] "Working clones" display problem (Aaron Giles).
-- 03006: [Graphics] blocken: Color / Missing gfx (Phil Bennett).
-
-
-New games added or promoted from NOT_WORKING status
+New Games Added or Promoted from NOT_WORKING Status
 ---------------------------------------------------
 Puzzle Time (Prototype) [Angelo Salese, Pierpaolo Prazzoli, Yoshi]
 
-New clones added
+New Clones Added
 ----------------
 Gals Panic S2 (Asia) [Andy Henderson]
 Jansou (alt) [Uki]
+
+
+MAMETesters Bugs Fixed (7):
+---------------------------
+- 00268: [Graphics] captaven: In attract mode, the small pictures of the heroes appear before they should (Pierpaolo Prazzoli)
+- 00421: [Graphics] fghthist, fghthsta, fghthstj, fghthstu: Some priority problems in Ryoko's stage. Namely, the old man, the cat and the kid (Pierpaolo Prazzoli)
+- 00826: [Graphics] wc90b, wc90: Some players are cut at left and bottom of the screen (robiza)
+- 02057: [Graphics] buckrog, buckrogn, zoom909, subroc3d: Graphics Corruption on Title Screen + in game (using -AFS) (Aaron Giles)
+- 02854: [Graphics] hypreact: Buggy text in scoring screen (Pierpaolo Prazzoli)
+- 03001: [Interface] "Working clones" display problem (Aaron Giles)
+- 03006: [Graphics] blocken: Color / Missing gfx (Phil Bennett)
 
 
 Source changes:
@@ -42,18 +42,18 @@ Source changes:
 - Fixed PSX CPU disassembly of -$8000, it was showing up as -$0 [smf].
 - Allow chds to be directly in the ROM directory without a subdirectory [Olivier Galibert].
 - wc90b1 and wc90b2 improvements [robiza]:
-  * Sprite priorities.
-  * Sprite x position.
-  * Fixed y sprite wrapping.
-  * Fixed bg and fg scroll.
+  * Sprite priorities;
+  * Sprite x position;
+  * Fixed y sprite wrapping;
+  * Fixed bg and fg scroll;
   * Fixed bg and fg offsets.
 - Fixed colors in Cultures (Jibun wo Migaku Culture School Mahjong Hen) [Tomasz Slanina].
 - Refactored sfbonus and improved the inputs [David Haywood].
 - Hooked up paletteram in Midnight Landing [Angelo Salese].
 - royalmah update [Uki]:
-  * Added some notes.
-  * Fixed DIPSW of makaijan.
-  * Fixed visible area.
+  * Added some notes;
+  * Fixed DIPSW of makaijan;
+  * Fixed visible area;
   * Fixed CPU clock.
 - Add muting just before saving the NVRAM, and de-mute just after loading the NVRAM. Should cure the stuck sound issue for games with large NVRAM [Aaron Giles].
 - Added placeholders for the two PAL's on Atari's version of Pole Position 1 and 2 (I could not read the last digit of the PAL at 5c.) [Kevin Eshbach].

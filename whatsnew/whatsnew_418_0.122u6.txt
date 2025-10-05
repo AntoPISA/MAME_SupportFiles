@@ -22,41 +22,41 @@ International Toote (Germany) [Luca Elia]
 
 MAMETesters Bugs Fixed (26):
 ----------------------------
-alleymas0119u3gre (RansAckeR)
-armwrest35b9yel (David Haywood)
-astinvad0106u11gre (Aaron Giles)
-bionicc0109ora (RansAckeR)
-cocktail0119yel (Robbbert)
-crbaloon36finalgre (Zsolt Vasvari)
-cuebrckj0102u5gre (Zsolt Vasvari)
-darkplnt0119u3yel (Atari Ace)
-dcs057ora (Aaron Giles)
-gstrik20105u4gra (Brian Troha)
-lcasino0111ora (RansAckeR)
-megaplay.c0122u4red (Atari Ace)
-mhhonban0120u3gra (RansAckeR)
-mia0106u5gra (RansAckeR)
-narc060gra (Aaron Giles)
-nmnlnd0122u3yel (Mamesick)
-nss_smw0115ora (Atari Ace)
-pangpoms098u3ora (Brian Troha)
-pleiads0111u4gre (Robbbert)
-quasar0122u5red (Zsolt Vasvari)
-rollerg0111u5gra (RansAckeR)
-stadhero0122u3gra (RansAckeR)
-tokisens0122u3gra (RansAckeR)
-topsecrt0109gre2 (Bryan McPhail)
-victory137b4gre (Zsolt Vasvari)
-victory37b16gre (Zsolt Vasvari)
+- alleymas0119u3gre (RansAckeR)
+- armwrest35b9yel (David Haywood)
+- astinvad0106u11gre (Aaron Giles)
+- bionicc0109ora (RansAckeR)
+- cocktail0119yel (Robbbert)
+- crbaloon36finalgre (Zsolt Vasvari)
+- cuebrckj0102u5gre (Zsolt Vasvari)
+- darkplnt0119u3yel (Atari Ace)
+- dcs057ora (Aaron Giles)
+- gstrik20105u4gra (Brian Troha)
+- lcasino0111ora (RansAckeR)
+- megaplay.c0122u4red (Atari Ace)
+- mhhonban0120u3gra (RansAckeR)
+- mia0106u5gra (RansAckeR)
+- narc060gra (Aaron Giles)
+- nmnlnd0122u3yel (Mamesick)
+- nss_smw0115ora (Atari Ace)
+- pangpoms098u3ora (Brian Troha)
+- pleiads0111u4gre (Robbbert)
+- quasar0122u5red (Zsolt Vasvari)
+- rollerg0111u5gra (RansAckeR)
+- stadhero0122u3gra (RansAckeR)
+- tokisens0122u3gra (RansAckeR)
+- topsecrt0109gre2 (Bryan McPhail)
+- victory137b4gre (Zsolt Vasvari)
+- victory37b16gre (Zsolt Vasvari)
 
 
 Source changes:
 ---------------
 - Swinging Singles cleanup [Tomasz Slanina]:
-  * Hooked up crt6845.
-  * Converted to tilemaps.
-  * Simplified protection(?) emulation.
-  * Removed tilemap, a bit more low level video hw emulation.
+  * Hooked up crt6845;
+  * Converted to tilemaps;
+  * Simplified protection(?) emulation;
+  * Removed tilemap, a bit more low level video hw emulation;
   * Fake colors.
 - Lowerd FPS in lasso.c to avoid corrupting Chameleon's high score table [Zsolt Vasvari].
 - Removed obsolete uitext.c and all references to it [Aaron Giles].
@@ -68,38 +68,38 @@ Source changes:
   * Correct interrupt timing.
   * Consolidated code into single file.
 - i8039.c/mario.c updates [Couriersud]:
-  * Fixed movd instructions.
-  * Add MB8884 and M58715 CPU types.
-  * Moved timer hack to M58715.
-  * Added ram_mask for internal RAM access.
-  * Added R.A11 as 'M' to dasm flags.
-  * Added EA "IO" port
-  * mario now uses M58715 as sound CPU.
-  * Hooked up EA line for M58715
-  * Fixed portA startup value
+  * Fixed movd instructions;
+  * Add MB8884 and M58715 CPU types;
+  * Moved timer hack to M58715;
+  * Added ram_mask for internal RAM access;
+  * Added R.A11 as 'M' to dasm flags;
+  * Added EA "IO" port;
+  * mario now uses M58715 as sound CPU;
+  * Hooked up EA line for M58715;
+  * Fixed portA startup value;
   * Documented hardware changes to use a I8039 on a mario board.
 - sauro.c: Revert promsize to 256 for trckydoc [Couriersud].
 - Added XTAL clocks to zaxxon [Aaron Giles].
 - Cleaned up cojag/jaguar driver [Aaron Giles]:
-  * Proper video timing, configured by the chipset.
-  * 32-bit rendering, removing 16bpp hacks.
-  * Support for borders.
-  * Proper object processor timing, including multiple passes per line.
-  * Added R3041 as a clone of the R3000.
+  * Proper video timing, configured by the chipset;
+  * 32-bit rendering, removing 16bpp hacks;
+  * Support for borders;
+  * Proper object processor timing, including multiple passes per line;
+  * Added R3041 as a clone of the R3000;
   * Fixed XTALs based on documentation.
 - Consolidated exidy and victory drivers. Removed complicated dirty tracking from victory.c. Reorganized the exidy audio hardware code. Changed Targ to use a loaded PROM instead of a hard-coded one. Renamed "Side Trak to Side Track' as per the title screen [Zsolt Vasvari].
 - 6821 PIA changes [Zsolt Vasvari]:
-  * Added orthogonal accessors.
-  * Removed hacky update_shared_irq_handler(), now the same IRQ callback maybe called multiple times, but this shouldn't be a problem.
+  * Added orthogonal accessors;
+  * Removed hacky update_shared_irq_handler(), now the same IRQ callback maybe called multiple times, but this shouldn't be a problem;
   * IRQ lines are cleared on a reset.
 - Disabled code in the TMS5220 that set the Buffer Empty flag after a stop frame. This fixes Victory. This might be the incorrect fix but the old code wasn't working either [Zsolt Vasvari].
 - Hooked up revx dcs reset line. Signaled IRQ on correct CPU when DCS sends data back (duh) [Aaron Giles].
 - Removed unnecessary check that could cause SCSP hangs in grdforce [kingshriek].
 - Tweaked deco156 clock speed to be 28 to prevent the games from running in slow motion. I suspect the 156 chip has an internal multiplier, the usual input pin is 7Mhz IIRC [David Haywood].
 - dkong.c changes [Couriersud]:
-  * Added equivalence circuit for Sanyo EZV audio amplifier.
-  * Set DK_C159 = 0 to avoid over-aggressive high-pass filter. Solely based on observations. 
-  * Added comment on above to source.
+  * Added equivalence circuit for Sanyo EZV audio amplifier;
+  * Set DK_C159 = 0 to avoid over-aggressive high-pass filter. Solely based on observations;
+  * Added comment on above to source;
   * Added define DK_NO_FILTERS to turn of DAC filters and post-mixer filters for debugging.
 - Adds dips for Water Balls. Adds dip port locations to all dips [Brian Troha].
 - Added CPUINFO_INT_CLOCK_MULTIPLIER to support CPU clock multipliers. Updated all CPU cores to return a CPUINFO_INT_CLOCK_MULTIPLIER of 1. Changed the core to actually respect both CPUINFO_INT_CLOCK_MULTIPLIER and CPUINFO_INT_CLOCK_DIVIDER. Updated a number of drivers to use cpunum_get_clock() instead of Machine->drv->cpu[x].clock. Raw input clock speeds should now be specified for all CPUs in the MACHINE_DRIVER [Aaron Giles].
@@ -120,12 +120,12 @@ Source changes:
 - Fixed regression on i8039 T1 counter mode [Couriersud].
 - Added CUSTOM_INPUT macro for defining input port callbacks. Pushed its usage throughout the code [Aaron Giles].
 - phoenix and clones [Couriersud]:
-  * Video timing from schematics.
-  * Palette from schematics (resnet.h).
-  * No more color-table.
+  * Video timing from schematics;
+  * Palette from schematics (resnet.h);
+  * No more color-table;
   * Added save state.
 - Minor RSP fixes [SGINut]:
-  * Fixed accumulator state on powerup by testing against real hardware.
+  * Fixed accumulator state on powerup by testing against real hardware;
   * Fixed single-step behavior by testing against real hardware.
 - Added save state support to atetris.c [Svante Gerhard].
 - Fixed up atetris memory maps and clocks according to schematics [Aaron Giles].

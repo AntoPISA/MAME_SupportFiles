@@ -2,36 +2,17 @@
 -------------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
-- 00388: [Graphics] gaia: sometimes fails to display shadows beneath enemies or the sprites of the old man that talks to you (David Haywood).
-- 01854: [Graphics] All sets in thepit.c: Player 2 in cocktail mode has screen reversed (Couriersud).
-- 01896: [Misc.] bigfight, cyclwarr: Access Violation crash (Aaron Giles).
-- 01951: [Misc.] cybrcycc: Crash during intro (Aaron Giles).
-- 01952: [Cheat System] sfex2p: Cheat crash (Shimapong).
-- 01963: [Misc.] screenless systems: memory leak with -mngwrite (Aaron Giles).
-- 01964: [Misc.] gtg2j: Access Violation (Aaron Giles).
-- 01965: [Misc.] driveyes: Access Violation (Aaron Giles).
-- 01967: [Misc.] output.c unregister_client crash (Jeff Shanholtz).
-- 01968: [Cheat System] -CHEAT trigger causes MAME crash when starting or exiting with some sets (Shimapong).
-- 01969: [Cheat System] some problem with cheat system (Shimapong).
-- 01971: [Cheat System] Cheat menu flickers (Aaron Giles).
-- 01980: [Cheat System] Enable Cheats menu only showing the first 24 cheats for ANY game (Aaron Giles).
-- 01983: [Cheat System] Force Range cheats not working (Couriersud).
-- 01984: [Cheat System] Incorrectly populating empty spacer comment cheats (Aaron Giles).
-
-
-New games added or promoted from NOT_WORKING status
----------------------------------------------------
+New Game Added or Promoted from NOT_WORKING Status
+--------------------------------------------------
 Lucky 74 (small) [Roberto Fresca]
 
-New clones added
+New Clones Added
 ----------------
 Emergency Call Ambulance (Export) [AndyGeezer]
 Lucky 74 (big) [Roberto Fresca]
 Virtua Fighter 3 (Revision A) [Chris Hardy]
 
-New games marked as GAME_NOT_WORKING
+New Games Marked as GAME_NOT_WORKING
 ------------------------------------
 Air Trix [Guru]
 Hikaru Bios [Guru]
@@ -40,44 +21,63 @@ Star Wars Pod Racer [Guru]
 Wave Runner [David Haywood]
 
 
+MAMETesters Bugs Fixed
+----------------------
+- 00388: [Graphics] gaia: sometimes fails to display shadows beneath enemies or the sprites of the old man that talks to you (David Haywood)
+- 01854: [Graphics] All sets in thepit.c: Player 2 in cocktail mode has screen reversed (Couriersud)
+- 01896: [Misc.] bigfight, cyclwarr: Access Violation crash (Aaron Giles)
+- 01951: [Misc.] cybrcycc: Crash during intro (Aaron Giles)
+- 01952: [Cheat System] sfex2p: Cheat crash (Shimapong)
+- 01963: [Misc.] screenless systems: memory leak with -mngwrite (Aaron Giles)
+- 01964: [Misc.] gtg2j: Access Violation (Aaron Giles)
+- 01965: [Misc.] driveyes: Access Violation (Aaron Giles)
+- 01967: [Misc.] output.c unregister_client crash (Jeff Shanholtz)
+- 01968: [Cheat System] -CHEAT trigger causes MAME crash when starting or exiting with some sets (Shimapong)
+- 01969: [Cheat System] some problem with cheat system (Shimapong)
+- 01971: [Cheat System] Cheat menu flickers (Aaron Giles)
+- 01980: [Cheat System] Enable Cheats menu only showing the first 24 cheats for ANY game (Aaron Giles)
+- 01983: [Cheat System] Force Range cheats not working (Couriersud)
+- 01984: [Cheat System] Incorrectly populating empty spacer comment cheats (Aaron Giles)
+
+
 Source changes:
 ---------------
 - Replaced kodb set with complete dump from known bootleg board (different gfx ROM layout). Added wofhfh bootleg from mame32plus. Added SF2 Magic Turbo Delta bootleg as non-working [David Haywood].
 - Added skeleton hikaru driver [David Haywood, Guru].
 - Fixed possible 64-bit crash/hang with survival [nuapete].
 - Driver's Eyes improvements [Naibo]:
-  * The communication work between CPU and 3D DSP should be limited to the master M68000, if the address mapping is done in the shared memory, master CPU would be disturbed by the slave one.
-  * DIP Switches DIP3 ON for Screen on the left DIP4 ON for Screen on the right should not toggle on both.
-  * The left, center and right screens have separate programs and boards, each would work independantly. About projection angles of left and right screen, the angle is correct on 'DRIVER'S EYES' title screen, however in the tracks of demo mode it doesn't seem correct.
+  * The communication work between CPU and 3D DSP should be limited to the master M68000, if the address mapping is done in the shared memory, master CPU would be disturbed by the slave one;
+  * DIP Switches DIP3 ON for Screen on the left DIP4 ON for Screen on the right should not toggle on both;
+  * The left, center and right screens have separate programs and boards, each would work independantly. About projection angles of left and right screen, the angle is correct on 'DRIVER'S EYES' title screen, however in the tracks of demo mode it doesn't seem correct;
   * The game also features a pretty nice 2D sprite layer, which still doesn't show up yet. It is known that the CPU does constantly feed the 2D video memory some meaningful and logical data.
 - New driver for 'Lucky 74' (Wing Co.Ltd, 1988) [Roberto Fresca, Tomasz Slanina]:
-  * Added a 2nd tilemap for background graphics.
-  * Added all coinage DIP Switches.
-  * Added an alternate set, but the program ROM looks like incomplete,protected or just a bad dump.
-  * Added DIP switches for 'Bet Max' and 'Limit'.
-  * Added DIP switches for 'Jackpot' and 'Pay Table'.
-  * Added PORT_DIPLOCATION to all DIP switches.
-  * Added pulse time limitation to coins A, B & C.
-  * Added technical notes.
-  * Added the 2nd video & color RAM.
-  * Added the Memory Reset Switch.
-  * Changed the input "Key In" to active high.
-  * Created a handler to feed the z80 port0 requests.
-  * Decoded graphics.
-  * Decoded the dual-state color circuitry.
-  * Emulated 2x PPI 8255 devices.
-  * Finally fixed colors for background graphics.
-  * Fixed colors for foreground graphics.
-  * Fixed visible area to show the top of background graphics.
-  * Hooked interrupts.
-  * Hooked the AY8910 and therefore the NMI trigger.
-  * Mapped all remaining inputs (service and player buttons).
-  * Mapped the 4x DIP Switches banks.
-  * Mapped the NVRAM, VRAM1-1, VRAM1-2, VRAM2-1 and VRAM2-2 properly.
-  * Parent/clone relationship.
-  * Promoted lucky74s to 'working' state.
-  * Set the proper screen size.
-  * Simplified the graphics banks.
+  * Added a 2nd tilemap for background graphics;
+  * Added all coinage DIP Switches;
+  * Added an alternate set, but the program ROM looks like incomplete,protected or just a bad dump;
+  * Added DIP switches for 'Bet Max' and 'Limit';
+  * Added DIP switches for 'Jackpot' and 'Pay Table';
+  * Added PORT_DIPLOCATION to all DIP switches;
+  * Added pulse time limitation to coins A, B & C;
+  * Added technical notes;
+  * Added the 2nd video & color RAM;
+  * Added the Memory Reset Switch;
+  * Changed the input "Key In" to active high;
+  * Created a handler to feed the z80 port0 requests;
+  * Decoded graphics;
+  * Decoded the dual-state color circuitry;
+  * Emulated 2x PPI 8255 devices;
+  * Finally fixed colors for background graphics;
+  * Fixed colors for foreground graphics;
+  * Fixed visible area to show the top of background graphics;
+  * Hooked interrupts;
+  * Hooked the AY8910 and therefore the NMI trigger;
+  * Mapped all remaining inputs (service and player buttons);
+  * Mapped the 4x DIP Switches banks;
+  * Mapped the NVRAM, VRAM1-1, VRAM1-2, VRAM2-1 and VRAM2-2 properly;
+  * Parent/clone relationship;
+  * Promoted lucky74s to 'working' state;
+  * Set the proper screen size;
+  * Simplified the graphics banks;
   * Switched to use 4x 8255 in replace of 2x 82c255 for I/O.
 - Fix scrolling speed in case a cheat dat has invalid (i.e. 0) settings [Couriersud].
 - Added per-device and per-CPU validity checks [Nathan Woods].

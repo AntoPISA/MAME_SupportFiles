@@ -51,8 +51,8 @@ MAMETesters Bugs Fixed (7):
 - 02875: [Sound] Any Game that uses AY-3-8910: Envelope Fix causes notes tones to be played back incorrectly (Couriersud)
 - 03026: [Graphics] retofinv, retofin1, retofin2: The remaining lives are not shown. (Pierpaolo Prazzoli)
 - 02981: [Cheat System] CHEAT.C: MAX_ARGUMENTS doesn't seem to work (Pugsy)
-- 00827: [Graphics] wc90b1, wc90b2: On the Credit display screen, the PCB shows the upper part of the stadium. (robiza)
-- 00230: [Graphics] troangel: I just checked mame emulation against my pcb. (robiza)
+- 00827: [Graphics] wc90b1, wc90b2: On the Credit display screen, the PCB shows the upper part of the stadium (robiza)
+- 00230: [Graphics] troangel: I just checked mame emulation against my PCB (robiza)
 - 03018: [Sound] f1gpstr2: Sounds not playing (Phil Bennett)
 
 
@@ -61,10 +61,10 @@ Source changes:
 - Fixed C140 ROM loading in winrun, winrun91 and driveyes [Phil Bennett].
 - Added Champion Italian PK blue board and promoted Champion Italian PK green board (previously citalian) and Champion Italian Cup (previously citaliana) to GAME_WORKING status [Mirko Buffoni, David Haywood].
  - Added cpokerpk (also known as CPK blue board for the color of the board):
-  * Renamed (citalian) to (cpokerpkg) (green board, can be seen in ROM too).
-  * Renamed (citaliana) to (citalcup).
-  * Added PAL decryption, making all games playable.
-  * Updated input ports and fixed gfx layout to use 6 bitplanes like all others.
+  * Renamed (citalian) to (cpokerpkg) (green board, can be seen in ROM too);
+  * Renamed (citaliana) to (citalcup);
+  * Added PAL decryption, making all games playable;
+  * Updated input ports and fixed GFX layout to use 6 bitplanes like all others;
   * Changed number10 and cpokerpk video udpate to not use transparency.
 - Updated CHD format to version 4. Checksums are now computed and stored separately for raw data and metadata, and metadata is now checksummed by default [Aaron Giles].
 - Updated chdman to support a generic metadata addition system:
@@ -72,23 +72,23 @@ Source changes:
   chdman -addmetabin <chdfile> <tag> [<index>] <sourcefile> [Aaron Giles].
 - Changed the CHD verify interfaces to pass back a structure containing all the necessary data for verification and fixing [Aaron Giles].
 - NeoGeo update [Johnboy]:
-  * maglordh: Renamed p1 to correct chip label (MichaelNet).
-  * Renamed (maglordh) to (maglord) (MVS) and (maglord) to (maglordh) (AES).
-  * whp: Renamed several ROMs to correct chip label (MichaelNet).
-  * kof2001: Renamed p's to correct chip label; added note (MichaelNet).
-  * Added mv1c BIOW, redump/reverification required.
-  * Updated documentation (see neogeo.c).
-  * cyberlip: Added correct m1 (Guru/Smitdogg).
+  * maglordh: Renamed p1 to correct chip label (MichaelNet);
+  * Renamed (maglordh) to (maglord) (MVS) and (maglord) to (maglordh) (AES);
+  * whp: Renamed several ROMs to correct chip label (MichaelNet);
+  * kof2001: Renamed p's to correct chip label; added note (MichaelNet);
+  * Added mv1c BIOW, redump/reverification required;
+  * Updated documentation (see neogeo.c);
+  * cyberlip: Added correct m1 (Guru/Smitdogg);
   * eightman: Removed BAD_DUMP from m1, is correct (Guru/Smitdogg).
 - Merged Casino Winner and Royal Casino drivers [Angelo Salese]:
-  * Fixes Royal Casino colors.
-  * Added flip screen support to the driver.
-  * Changed Casino Winner to be a clone of Royal Casino.
+  * Fixes Royal Casino colors;
+  * Added flip screen support to the driver;
+  * Changed Casino Winner to be a clone of Royal Casino;
   * Cleaned-up the driver.
 - Fixed Midnight Landing GFX bitplanes [Angelo Salese].
 - PGM updates [Xing Xing, David Haywood]:
-  * Added kov2p205, martmasc romset.
-  * Fixed some descriptions.
+  * Added kov2p205, martmasc romset;
+  * Fixed some descriptions;
   * Experimental video change with a view to fix priorities on kov2.
 - Modified cdrom.c to expose metadata read/write functions, and changed chdman to use them. Also changed chdman to parse old-style metadata and convert it to new-style metadata [Aaron Giles].
 - Fixed regressed sound in the deco MLC driver [Angelo Salese].
@@ -122,8 +122,8 @@ Source changes:
 - Adjusted volume in the galaxian driver [Couriersud].
 - Adjusted Volume and removed dc component from sound in the gyruss driver [Couriersud].
 - AY-3-8910 improvements [Couriersud]:
-  * Fixed Gyruss audio regression.
-  * Measured RU and RD on AY-3-8910.
+  * Fixed Gyruss audio regression;
+  * Measured RU and RD on AY-3-8910;
   * Modelled ZX Spectrum audio circuit in SwitcherCAD and derived resistor values for AY-3-891 MIPS III: Update RA before executing the delay slot [R. Belmont].
 - Added inputs for galaxia and astrowar. Galaxia is semi-playable. Note: After inserting a coin, it can take a few seconds to respond [Robbbert].
 - Fixed build of ldplayer on OS X. Since the CUSTOM sound module no longer exists, I arbitrarily changed it to WAVE, as ar gets upset if it has no input files. I also removed the -all_load flag for ldplayer from the main makefile as it upsets the linker on OS X [Vas Crabb].

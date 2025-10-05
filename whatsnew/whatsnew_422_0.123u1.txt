@@ -18,27 +18,27 @@ Lucky Lady (4x1 aces) [Roberto Fresca]
 Sand Scorpion (Revised Hardware) [Stefan Lindberg]
 Zero Wing (2 player simultaneous ver.) [Brian Troha]
 
-New Games Marked as GAME_NOT_WORKING
-------------------------------------
+New Game Marked as GAME_NOT_WORKING
+-----------------------------------
 World PK Soccer V2 (ver 1.1) [David Haywood]
 
 
 MAMETesters Bugs Fixed (7):
 ---------------------------
-goldbug0105u4gra (stephh)
-jantouki0121u3gra (RansAckeR)
-mcnpshnt0120u3gra (RansAckeR)
-mjdialq2_0120u3gra (RansAckeR)
-mjifb0111u2gra (RansAckeR)
-pwrinst2_0122u8gra (Sonikos)
-zn.c0122u8yel (smf)
+- goldbug0105u4gra (stephh)
+- jantouki0121u3gra (RansAckeR)
+- mcnpshnt0120u3gra (RansAckeR)
+- mjdialq2_0120u3gra (RansAckeR)
+- mjifb0111u2gra (RansAckeR)
+- pwrinst2_0122u8gra (Sonikos)
+- zn.c0122u8yel (smf)
 
 
 Source changes:
 ---------------
 - Removed 'type' parameter from tilemap_create [Zsolt Vasvari].
 - audio/dkong.c [Couriersud]:
-  * Fix dkong audio over-modulation issue with DAC sound
+  * Fix dkong audio over-modulation issue with DAC sound;
   * Surround the fix with a DK_REVIEW define for later review.
 - Changed the use of machine->remapped_colortable to machine->pens where the drivers weren't using color tables [Zsolt Vasvari].
 - Corrected the clocks on the following pcbs: Formation Z, MagMax, SlapFight and Tiger Heli. Changed Oki m6295 pin 7 to "high" on Toki and Blood Bros [Corrado Tomaselli].
@@ -46,8 +46,8 @@ Source changes:
 - Corrected the initial detection of extended INP files [Barry Rodewald].
 - Moved Galaxy Games emulation to tmaster.c [Luca Elia].
 - makefile/build updates [Couriersud, Aaron Giles]:
-  * Moved verinfo.c to src/build.
-  * Moved rules for verinfo to src/build/build.mak.
+  * Moved verinfo.c to src/build;
+  * Moved rules for verinfo to src/build/build.mak;
   * Removed osdcore.h from file2str.c, verinfo.c, png2bdc.c.
 - Removed color tables from gsword, hyperspt, jailbrek, magmax, konamigx, markham, megazone, pandoras, rocnrope, strnskil, trackfld, tp84, shaolins, scotrsht, pingpong, skykid, wiping, punchout, ikki, rallyx, fastfred, fcombat, finalizr, flower, funworld, galivan, gdrawpkr, goldstar, hanaawas, higemaru, ironhors, jackal, kchamp. Added resnet.c color computations where appropriate [Zsolt Vasvari].
 - Simplfied Mag Max background drawing code [Zsolt Vasvari].
@@ -65,42 +65,42 @@ Source changes:
 - Fixed kangaroo colors by assuming an inversion not present in the schematics [Nicola Salmoria].
 - Added the ability to pass absolute paths to mame_schedule_save() and mame_schedule_load() [Nathan Woods].
 - Naomi/DC updates [Samuele Zannoli]:
-  * Add SH4 I/O ports.
-  * Connected the 93C46 of the naomi and the x76f100 of the ROM board and filled them with dummy. data to satisfy the BIOS
-  * Implemented some of the JVS transfers that will be needed to use the controls.
-  * Implemented ROM board DMA.
-  * Set proper NAOMI RAM sizes (32 MB main, 8 MB for AICA).
+  * Add SH4 I/O ports;
+  * Connected the 93C46 of the naomi and the x76f100 of the ROM board and filled them with dummy. data to satisfy the BIOS;
+  * Implemented some of the JVS transfers that will be needed to use the controls;
+  * Implemented ROM board DMA;
+  * Set proper NAOMI RAM sizes (32 MB main, 8 MB for AICA);
   * Improved PVR-TA graphics emulation.
 - Set proper ARM7 clock for Naomi [Deunan Knute].
 - ARM7 updates [anonymous]:
-  * Correct mode at reset (it's always 0b1...).
-  * HandlePSRTransfer: remove wrong code, correct detection of privileged mode.
-  * Correct carry output for ROR.
-  * Thumb ASR Rd,Rs: correct carry computation.
-  * Thumb ldmia/stmia: correct value for writeback when the writeback reg is in the list.
-  * ARM ldm/stm ignore lower bits of the address.
-  * Most of the exceptions force the I bit.
+  * Correct mode at reset (it's always 0b1...);
+  * HandlePSRTransfer: remove wrong code, correct detection of privileged mode;
+  * Correct carry output for ROR;
+  * Thumb ASR Rd,Rs: correct carry computation;
+  * Thumb ldmia/stmia: correct value for writeback when the writeback reg is in the list;
+  * ARM ldm/stm ignore lower bits of the address;
+  * Most of the exceptions force the I bit;
   * Ignore some flag bits in the CPSR.
 - Some improvements to the Funworld driver and new games added [Roberto Fresca]:
-  * Switched to XTAL def.
-  * Fixed 'Magic Card II' graphics issues.
-  * Fixed 'Magic Card II' inputs.
-  * Fixed screen and visible area to snooker10.
-  * Renamed set monglfir to mongolnw.
-  * Renamed sets description based on languages instead of countries.
-  * Fixed some years and manufacturers.
-  * Updated technical notes.
+  * Switched to XTAL def;
+  * Fixed Magic Card II graphics issues;
+  * Fixed Magic Card II inputs;
+  * Fixed screen and visible area to snooker10;
+  * Renamed (monglfir) to (mongolnw);
+  * Renamed sets description based on languages instead of countries;
+  * Fixed some years and manufacturers;
+  * Updated technical notes;
   * Cleaned up the driver.
 - Did some cleanup of the 'special case' mess that the rallyx driver has become [Zsolt Vasvari].
 - Removed no longer used TRANSPARENCY_COLOR [Zsolt Vasvari].
 - MC6845 updates [Zsolt Vasvari]:
-  * Changed the 6845 to be handle based - adjusted all drivers.
-  * Renamed crtc6845 to mc6845
-  * Allow reading registers 12 and 13.
-  * Reading write-only registers return 0.
+  * Changed the 6845 to be handle based - adjusted all drivers;
+  * Renamed (crtc6845) to (mc6845);
+  * Allow reading registers 12 and 13;
+  * Reading write-only registers return 0;
   * Updated comments in header.
 - Changed qix.c to RGB32 mode and made its videoram_w do the partial updating instead of a per scanline timer [Zsolt Vasvari].
-- Fixed 'mario' and 'masao' memory maps to match the Dip Switches port name [stephh].
+- Fixed mario and masao memory maps to match the Dip Switches port name [stephh].
 - Fixed pooyan transparency. Updated to use resnet code [Zsolt Vasvari].
 - Changed ZN2 clock speed to 100MHz to match board notes [smf].
 - Added DIP locations for sitv, sicv, invadpt2, lrescue, invasion. Fixed coin2 for superinv & invasion [RansAckeR].

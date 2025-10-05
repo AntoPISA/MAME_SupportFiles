@@ -31,13 +31,13 @@ Poker? (IGS) [David Haywood]
 
 MAMETesters Bugs Fixed (7):
 ---------------------------
-finalizr0102u5gra (Mike Green)
-futspy0114gra (Mike Green)
-ghostb0105u4gra (Mike Green)
-gijoe0114gra (Mike Green)
-parodius0111u3gra (Mike Green)
-playch10_0109gre (Mike Green)
-seibuspisingle099u9yel (Couriersud)
+- finalizr0102u5gra (Mike Green)
+- futspy0114gra (Mike Green)
+- ghostb0105u4gra (Mike Green)
+- gijoe0114gra (Mike Green)
+- parodius0111u3gra (Mike Green)
+- playch10_0109gre (Mike Green)
+- seibuspisingle099u9yel (Couriersud)
 
 
 Source changes:
@@ -46,33 +46,33 @@ Source changes:
 - Added coin counters to cabal bootleg and hooked up the 2 sample player CPUs in cabal bootleg. It seems there still are some problems, because  the coin up music is played during the game [Pierpaolo Prazzoli].
 - More improvements to the Vs. Janshi Brandnew Stars driver [David Haywood].
 - More SCSP improvements [El Semi]:
-  * Fixed endianness issue on 8-bit samples and added interpolation.
-  * Disabled modulation attempt (should fix the crash problems).
+  * Fixed endianness issue on 8-bit samples and added interpolation;
+  * Disabled modulation attempt (should fix the crash problems);
   * Tweeked pitch calculation.
 - Added the repeat count register (reg 0x34) access and immediate value load to the MB86233 core (needed by Pilot kids) [El Semi].
 - Cleaned up the inputs, and fixed flipscreen in dynax.c [Luca Elia].
 - Fixed several issues in seibuspi.c [Couriersud]:
-  * Added sound to rdft2us.
-  * Added coin-handling to single board games.
-  * Fix interrupt handling.
+  * Added sound to (rdft2us);
+  * Added coin-handling to single board games;
+  * Fix interrupt handling;
   * For rfjetus, adds a hack to enable Test-Switch to enter testmode if no NVRAM exists.
 - Fixed several issues in the i386 core [Couriersud]:
-  * The INTR-line for i386 is a "level" line; changed interrupt handling to trigger on asserted line.
-  * In 32bit mode, determine trap/interrupt from gate-header.
+  * The INTR-line for i386 is a "level" line; changed interrupt handling to trigger on asserted line;
+  * In 32bit mode, determine trap/interrupt from gate-header;
   * Interrupt line is read during two bus cycles. Adjust CYCLES accordingly.
 - Added coin DIP switches and "teleport hole" DIP switch to crushs [sonikos].
 - Bug fixes for the z80gb cpu core [Wilbert Pol]:
-  * Fixed cycle count for taking an interrupt.
-  * Fixed cycle count for BIT X,(HL) instructions.
-  * Fixed flags in RRCA instruction.
-  * Fixed DAA instruction.
-  * Fixed flags in ADD SP,n8 instruction.
+  * Fixed cycle count for taking an interrupt;
+  * Fixed cycle count for BIT X,(HL) instructions;
+  * Fixed flags in RRCA instruction;
+  * Fixed DAA instruction;
+  * Fixed flags in ADD SP,n8 instruction;
   * Fixed flags in LD HL,SP+n8 instruction.
 - Fixed the linking issues when specifying MSVC_BUILD=1 and DEBUG=1 [Oliver Stoneberg].
 - Fixed a compile error on architectures where "char" is unsigned (notably some PowerPC configurations) [Bill Blake].
 - Added two more filters to the headon crash sound. Now, only the envelopes for the crash sound filters are missing [Couriersud].
 - Loverboy input fixes [wolf676]:
-  * Added and verified all DSW
+  * Added and verified all DSW;
   * Added and verified Button1 for both players.
 - Added color PROMs for 'Cannon Ball' [Rob Walmsley].
 - Fixed several out-of-bounds array accesses in the code [Andi].

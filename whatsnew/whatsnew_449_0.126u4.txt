@@ -22,19 +22,19 @@ Quiz Punch 2 [Luca Elia]
 
 MAMETesters Bugs Fixed (13):
 ----------------------------
-01817: [Crash/Freeze] intrepi2: Game stops at PCB test (Pierpaolo Prazzoli).
-01958: [Crash/Freeze] skns: Segfaults on load (Pierpaolo Prazzoli).
-02033: [Crash/Freeze] soccerss and clones: the romtest report  two bad roms (robiza).
-02049: [Graphics] invaders: Built in red color overlay goes too low and shows on top line of invaders heads in Vista only (robiza).
-02056: [DIP/Input] pbobble, qzshowby, spacedx, spacedxj: Unable to enter coins (Fabio Priuli).
-02060: [Graphics] spinlbrk, spinlbru, spinlbrj: Priorities wrong in second level (robiza).
-02066: [Graphics] All sets in mhavoc.c: all graphics is missing (Aaron Giles).
-02067: [Crash/Freeze] mustangb, tdragonb: Access Violation (Aaron Giles).
-02068: [Crash/Freeze] All sets in mhavoc.c: Access Violation (Aaron Giles).
-02069: [Crash/Freeze] astrofl: Access Violation (Aaron Giles).
-02070: [Crash/Freeze] atlantol: Access Violation (Aaron Giles).
+01817: [Crash/Freeze] intrepi2: Game stops at PCB test (Pierpaolo Prazzoli)
+01958: [Crash/Freeze] skns: Segfaults on load (Pierpaolo Prazzoli)
+02033: [Crash/Freeze] soccerss and clones: the romtest report  two bad roms (robiza)
+02049: [Graphics] invaders: Built in red color overlay goes too low and shows on top line of invaders heads in Vista only (robiza)
+02056: [DIP/Input] pbobble, qzshowby, spacedx, spacedxj: Unable to enter coins (Fabio Priuli)
+02060: [Graphics] spinlbrk, spinlbru, spinlbrj: Priorities wrong in second level (robiza)
+02066: [Graphics] All sets in mhavoc.c: all graphics is missing (Aaron Giles)
+02067: [Crash/Freeze] mustangb, tdragonb: Access Violation (Aaron Giles)
+02068: [Crash/Freeze] All sets in mhavoc.c: Access Violation (Aaron Giles)
+02069: [Crash/Freeze] astrofl: Access Violation (Aaron Giles)
+02070: [Crash/Freeze] atlantol: Access Violation (Aaron Giles)
 02079: [DIP/Input] radr, radru: Dipswitch info (robiza).
-02090: [Crash/Freeze] thedeep: Game didn't start (black screen) (Pierpaolo Prazzoli).
+02090: [Crash/Freeze] thedeep: Game didn't start (black screen) (Pierpaolo Prazzoli)
 
 
 Source changes:
@@ -52,14 +52,14 @@ Source changes:
 - Added readmes for Galaga, The Outfoxies, Splatter House, Top Racer, Kyros No Yakata, Bombs Away, Meikyuu Hunter G, Crazy Kong, Moero Pro Yakyuu Homerun Kyousou, Lucky & Wild, Match It, Country Club, Enforce, Elevator Action, Chuka Taisen, The New Zealand Story, Buck Rogers Zoom 909, Head On, Victorious Nine, Youma Ninpou Chou, Pairs, Woodpecker, Slap Fight, Alcon, Tiger Heli, Superman, WWF Superstars, Area 51, Animalandia Jr, Avengers In Galactic Storm, Alien 3: The Gun, Aquajack, and Missile Command [Guru].
 - Fix region jumper on psikyo4 (loderndf) [David Haywood].
 - Backported a bunch of FM OPN (YM2608/2612) fixes from Genesis Plus GX. All of this was verified on real hardware [Eke-Eke, Nemesis, Alone Coder, AamirM]:
-  * Implemented PG overflow, aka "detune bug" (Ariel, Comix Zone, Shaq Fu, Spiderman...).
-  * Fixed SSG-EG support.
-  * Modified EG rates and frequency.
-  * Fixed EG attenuation level on KEY ON (Ecco 2 splash sound).
+  * Implemented PG overflow, aka "detune bug" (Ariel, Comix Zone, Shaq Fu, Spiderman...);
+  * Fixed SSG-EG support;
+  * Modified EG rates and frequency;
+  * Fixed EG attenuation level on KEY ON (Ecco 2 splash sound);
   * Fixed LFO phase update for CH3 special mode (Warlock, Alladin).
 - Scanline exact rendering for dkong & clones [Couriersud]:
-  * Sprite limit of 16 sprites per scanline implemented from schematics.
-  * Proper wrap around from bottom to top.
+  * Sprite limit of 16 sprites per scanline implemented from schematics;
+  * Proper wrap around from bottom to top;
   * Added some notes about sprite limits and hardware to dkong driver (thanks to R. Belmont).
 - Added edge connector pinout info to flower.c [Brian Troha].
 - Some initial work on the adp driver [robiza].
@@ -68,13 +68,13 @@ Source changes:
 - Improved Dsp56k CPU interrupt handling. Polygonet Commanders now advances past its first dsp handshake [Andrew Gardner].
 - Added proper laserdisc support for MACH 3, Us vs. Them and Cobra Commander (MACH 3 hardware). Old laserdisc hacks are now removed. The code now talks to the standard Pioneer PR-8210 interface. Also removed hacky "target list" from the MACH 3 ROMs; this information is now decoded on the fly from the right channel laserdisc audio [Aaron Giles].
 - Other Gottlieb cleanups [Aaron Giles]:
-  * Fixed rev 2 sound again.
-  * Fleshed out memory maps and behaviors according to the schematics.
-  * Hooked up coin counters.
-  * Moved sound inputs to audio/gottlieb and included them in all relevant drivers.
+  * Fixed rev 2 sound again;
+  * Fleshed out memory maps and behaviors according to the schematics;
+  * Hooked up coin counters;
+  * Moved sound inputs to audio/gottlieb and included them in all relevant drivers;
   * Ordered input ports and ROM definitions consistently.
 - Other laserdisc changes [Aaron Giles]:
-  * Changed PR-8210 interface to work consistently for both Gottlieb and Stern games.
+  * Changed PR-8210 interface to work consistently for both Gottlieb and Stern games;
   * Added audio callback mechanism to allow drivers to peek at the raw audio streams.
 - Set the initial 8253 timer output to 2 to indicate that it is undetermined [Wilbert Pol].
 - Removed obsolete makemeta tool. Replaced it with new ldverify tool which walks through either an AVI or CHD capture from a laserdisc and ensures that there are no anomalies lurking in the VBI data [Aaron Giles].
@@ -83,14 +83,14 @@ Source changes:
 - Updated vbiparse to improve Manchester code decoding. It now assigns a confidence level per bit based on how solid the data is. Also added a new function vbi_parse_all which parses the white flag and all three lines of metadata from a laserdisc frame. It then compares line 17 and 18 against each other and selects the most likely candidate based on per-bit confidence and other factors [Aaron Giles].
 - Added frame number display to laserdsc.c. It is off by default, though most players can be configured to turn it on (not sure if any actually do). It can be manually toggled via the backslash key during playback [Aaron Giles].
 - Discrete Sound core optimizations [Couriersud]:
-  * Moved a couple of exp(x) from _step into _reset where appropriate.
+  * Moved a couple of exp(x) from _step into _reset where appropriate;
   * Use tabulated function values for the transfer function in DSS_INVERTER_OSC.
 - Forced synchronization (stream_update()) before the YM2151 status is actually read [Jarek Burczynski].
 - Added Discrete Sound to Fantasy, Nibbler and Pioneer Balloon [Derrick Renaud].
 - Fixed I/O watchpoints [Aaron Giles].
 - Changes to the cheat.xml format [Aaron Giles]:
-  * New tag <comment> (within <cheat>) is read and preserved when saved.
-  * Removed variable attribute from <parameter>; it is now assumed to be 'param'.
+  * New tag <comment> (within <cheat>) is read and preserved when saved;
+  * Removed variable attribute from <parameter>; it is now assumed to be 'param';
   * Added default attribute for <parameter>.
 - Added new variable 'frame' accessible from cheat scripts. This can be used in the conditional to prevent execution on every frame, or for other effects (like displaying temporary messages) [Aaron Giles].
 - Added new variable 'argindex' which is the index when processing an <argument> with a count attribute greater than 1 [Aaron Giles].
@@ -105,7 +105,7 @@ Source changes:
 - Added diplocations to the following drivers: combatsc.c, copsnrob.c, cosmic.c, crgolf.c, crimfght.c, crospang.c (here I also added service dips to heuksun and bestri, which allowed me to verify locations), crshrace.c, dambustr.c, darkseal.c, dassault.c, dblewing.c, ddrible.c, deadang.c. Also added locations to the following games: ddragon & ddragon2 on ddragon.c and docastle, dorunrun & dowild in docastle.c [Fabio Priuli].
 - Verified CPU clocks for athena [Corrado Tomaselli].
 - Added module profiling to discrete sound core [Couriersud]:
-  * Added DISCRETE_PROFILING macro to discrete.h.
+  * Added DISCRETE_PROFILING macro to discrete.h;
   * Upon discrete_stop, the worst performing modules will be listed.
 - Verified and corrected CPS1 refresh rate [Corrado Tomaselli].
 - Changed sound cpu clock of Spinal Breakers to 5Mhz as verified on the PCB [Corrado Tomaselli].
@@ -132,7 +132,7 @@ Source changes:
   ne  !=
   
 - Changed cheat escaping to automatically escape && & < and <= to and band lt and le [Aaron Giles] 
-- Decrypted 'Da Ban Cheng' (dbc set in igs_blit.c) [Pierpaolo Prazzoli].
+- Decrypted Da Ban Cheng (dbc set in igs_blit.c) [Pierpaolo Prazzoli].
 - Removed bad dumps from ad2083 [Pierpaolo Prazzoli].
 - Fixed bug in aviio.c which could cause an infinite loop if attempting to read sound beyond the end of the file [Aaron Giles].
 - Added expression validation callback to verify names for CPUs and memory regions. Extended error codes to report incorrect memory spaces, memory names, or memory sizes. Added verification callback to the debugger to validate CPU and memory region names, as well as verifying that a requested address space exists for a given CPU [Aaron Giles].

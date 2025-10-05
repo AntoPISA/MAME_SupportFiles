@@ -4,13 +4,13 @@
 
 MAMETesters Bug Fixed (1):
 --------------------------
-progear0123u1gra (stephh)
+- progear0123u1gra (stephh)
 
 
 Source changes:
 ---------------
 - csk.c driver improvements [Mirko Buffoni]:
-  * Added DIPLOCATION macros to all DIP Switches. All DSW are verified through test mode.
+  * Added DIPLOCATION macros to all DIP Switches. All DSW are verified through test mode;
   * Fixed custom_io_r which is used for protection but also for keyboard input.
 - Fixed build with external zlib [R. Belmont].
 - Completed old-style colortable removal. Removed MDRV_COLORTABLE_LENGTH macro. Updated uigfx to display new-style color tables if present [Zsolt Vasvari].
@@ -40,10 +40,10 @@ Source changes:
    - DEFAULT_REAL_30HZ_VBLANK_DURATION
    - DEFAULT_REAL_60HZ_VBLANK_DURATION
 
-Updated all drivers to explicitly specify the equivalent bogus times. Added comments for the "REAL" VBLANK durations to indicate that they are not accurate [Aaron Giles].
+- Updated all drivers to explicitly specify the equivalent bogus times. Added comments for the "REAL" VBLANK durations to indicate that they are not accurate [Aaron Giles].
 - Improved some DIP switches, added some DIP locations, replaced IPT_COINx with IPT_SERVICE1 where appropiate, and simplified some control definitions in the following drivers: alpha68k.c, actfancr.c,aeroboto.c, aerofgt.c, aliens.c, ambush.c, amidar.c, amspdwy.c, angelkds.c, appoooh.c, arabian.c, argus.c, arkanoid.c [RansAckeR].
 - Connected the Shadow Warriors buttons like they are wired on the original PCB (which is jamma) [Corrado Tomaselli].
-- Added DIP locations to: cclimbr2 , legion, terraf, ultennis, cheesech, stonebal, stoneba2,  scessjoe, ashnojoe, asteroid, llander, llander1, astdelux [RansAckeR].
+- Added DIP locations to: cclimbr2, legion, terraf, ultennis, cheesech, stonebal, stoneba2, scessjoe, ashnojoe, asteroid, llander, llander1 and astdelux [RansAckeR].
 - Fixed multi-session crash with Namco System 2 games [Atari Ace].
 - Improved Print Club DIP switches [Edward Swiftwood].
 - Fixed a few corner cases in the 6840 emulation based on running the MPU4 test ROMs, and added the ability to dynamically alter the external clock frequencies in game [James Wallace].
@@ -55,17 +55,17 @@ Updated all drivers to explicitly specify the equivalent bogus times. Added comm
 - Added DIP locations to Combatribes and Battletoads [Kevin Eshbach].
 - Added video_screen_update_now(int scrnum) to force a screen update up to the current beam position [Zsolt Vasvari].
 - Pulled remaining vestiges of old-style colortables [Aaron Giles]:
-  * PALETTE_INIT no longer has a colortable parameter.
-  * Removed game_colortable and remapped_colortable from machine_config.
-  * Updated a few stragglers that still referenced these fields.
+  * PALETTE_INIT no longer has a colortable parameter;
+  * Removed game_colortable and remapped_colortable from machine_config;
+  * Updated a few stragglers that still referenced these fields;
   * Removed tile_draw_colortable from tilemap.c.
 - Changed the input port tokens to use a union instead of casting everything to FPTR. In the future, C99-enabled compilers will be able to achieve type safety with designated initializers [Aaron Giles].
 - Added i8749 CPU variant for MESS [Curt Coder].
 - Added missing SH4 instructions and bugfixed the FPU. Improved Naomi I/O board emulation and added working controls [Samuele Zannoli].
 - jedi.c improvements [Zsolt Vasvari]:
-  * Complete memory map.
-  * Crystals.
-  * Driver state structure.
+  * Complete memory map;
+  * Crystals;
+  * Driver state structure;
   * Text layer is rendered at the same time as the background.
 - Reorganized Qix driver (driver state, decoupled audio section, etc) [Zsolt Vasvari].
 - Changed all drivers using the MC6845 chip to use the new device interface. Removed mc6845_config [Zsolt Vasvari].

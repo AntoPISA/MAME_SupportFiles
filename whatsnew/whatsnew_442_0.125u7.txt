@@ -16,31 +16,31 @@ Cal Omega - Game 8.0 (Arcade Black Jack) [Roberto Fresca]
 
 MAMETesters Bugs Fixed (25):
 ----------------------------
-- 01575: [DIP/Input] joust, joustr, joustwr: Player 1 and Player 2 Start buttons are mapped twice (Couriersud).
-- 01631: [Core] sqixbl, perestro, perestrf: game resets after starting game (Couriersud).
-- 01709: [DIP/Input] startrek, tacscan, zektor: Duplicate P1 + P2 Starts Mapped (Couriersud).
-- 01712: [DIP/Input] exerizrb, skyfox: Coin 1 mapped twice (Couriersud).
-- 01714: [DIP/Input] ssfindo: Player 2 Start mapped twice (Couriersud).
-- 01715: [DIP/Input] ballbomb: Player 1 Left+Right and Button 1 mapped twice (Couriersud).
-- 01818: [DIP/Input] All sets in rastan.c: 2nd (unused) Service Mode DIP assigned (stephh).
-- 01866: [DIP/Input] gstream: Duplicated Inputs (Couriersud).
-- 01869: [DIP/Input] alienar, alienaru, splat: Duplicated Inputs (Couriersud).
-- 01874: [Core] windheat: Game freeze (Aaron Giles).
-- 01886: [Graphics] gradius4: 3D gfx problem (Aaron Giles).
-- 01889: [DIP/Input] realbrk, realbrkk, realbrkj: Flip screen DIP switch doesn't work (Couriersud).
-- 01900: [DIP/Input] All sets in kinst.c: Mass coin input disables dipswitch access, and thus further coin input during a fight (Aaron Giles).
-- 01901: [Graphics] kinst13, kinst14, kinstp: Attract mode graphics regression (Aaron Giles).
-- 01903: [Graphics] mooncrst and most clones: 3rd+4th Wave have enemies that are corrupted (Couriersud).
-- 01904: [DIP/Input] teetert: Player movement has slowed from previous MAME (Aaron Giles).
-- 01905: [Misc.] Many Sets: Fatal Error crash - Fatal error: Input ports cannot be read at init time! (src/emu/inptport.c:1278) (Aaron Giles).
-- 01906: [Misc.] All sets in atartig1.c: Fatal Exception crash (Aaron Giles).
-- 01908: [Misc.] Various: Access Violation when saving a snapshot (Aaron Giles).
-- 01911: [DIP/Input] nomnlndg: Unable to locate input port 'DSW' (Fabio Priuli).
-- 01912: [DIP/Input] Various: Unable to construct input ports! (part 2) (Aaron Giles).
-- 01916: [Misc.] srmvs: Assertion (Aaron Giles).
-- 01927: [Misc.] Effects overlay showing in snapshots (Aaron Giles).
-- 01928: [DIP/Input] chplft, chplftb, chplftbl: Choplifter player 2 video is upside down (Couriersud).
-- 01931: [Gameplay] sqix: [possible] sprites slowdown (Couriersud).
+- 01575: [DIP/Input] joust, joustr, joustwr: Player 1 and Player 2 Start buttons are mapped twice (Couriersud)
+- 01631: [Core] sqixbl, perestro, perestrf: game resets after starting game (Couriersud)
+- 01709: [DIP/Input] startrek, tacscan, zektor: Duplicate P1 + P2 Starts Mapped (Couriersud)
+- 01712: [DIP/Input] exerizrb, skyfox: Coin 1 mapped twice (Couriersud)
+- 01714: [DIP/Input] ssfindo: Player 2 Start mapped twice (Couriersud)
+- 01715: [DIP/Input] ballbomb: Player 1 Left+Right and Button 1 mapped twice (Couriersud)
+- 01818: [DIP/Input] All sets in rastan.c: 2nd (unused) Service Mode DIP assigned (stephh)
+- 01866: [DIP/Input] gstream: Duplicated Inputs (Couriersud)
+- 01869: [DIP/Input] alienar, alienaru, splat: Duplicated Inputs (Couriersud)
+- 01874: [Core] windheat: Game freeze (Aaron Giles)
+- 01886: [Graphics] gradius4: 3D gfx problem (Aaron Giles)
+- 01889: [DIP/Input] realbrk, realbrkk, realbrkj: Flip screen DIP switch doesn't work (Couriersud)
+- 01900: [DIP/Input] All sets in kinst.c: Mass coin input disables dipswitch access, and thus further coin input during a fight (Aaron Giles)
+- 01901: [Graphics] kinst13, kinst14, kinstp: Attract mode graphics regression (Aaron Giles)
+- 01903: [Graphics] mooncrst and most clones: 3rd+4th Wave have enemies that are corrupted (Couriersud)
+- 01904: [DIP/Input] teetert: Player movement has slowed from previous MAME (Aaron Giles)
+- 01905: [Misc.] Many Sets: Fatal Error crash - Fatal error: Input ports cannot be read at init time! (src/emu/inptport.c:1278) (Aaron Giles)
+- 01906: [Misc.] All sets in atartig1.c: Fatal Exception crash (Aaron Giles)
+- 01908: [Misc.] Various: Access Violation when saving a snapshot (Aaron Giles)
+- 01911: [DIP/Input] nomnlndg: Unable to locate input port 'DSW' (Fabio Priuli)
+- 01912: [DIP/Input] Various: Unable to construct input ports! (part 2) (Aaron Giles)
+- 01916: [Misc.] srmvs: Assertion (Aaron Giles)
+- 01927: [Misc.] Effects overlay showing in snapshots (Aaron Giles)
+- 01928: [DIP/Input] chplft, chplftb, chplftbl: Choplifter player 2 video is upside down (Couriersud)
+- 01931: [Gameplay] sqix: [possible] sprites slowdown (Couriersud)
 
 
 Source changes:
@@ -143,7 +143,7 @@ Source changes:
 - Added 360degree wheel (dial) input to GTMR, which is available when the Controller dip is set to 'Wheel', and Controls dip is set to '1P Side'. Note when Controls dip is set to 'Both Sides', 270degree wheel (paddle) input is used [Minwah].
 - Verified clocks and adjusted sound volumes in 'Fairyland Story' [Corrado Tomaselli].
 - More conversion to input_port_read [Fabio Priuli]:
-  * aupdated the whole mid*unit family of drivers + seattle & zeus which shared some input code;
+  * Updated the whole mid*unit family of drivers + seattle & zeus which shared some input code;
   * Updated most namco systems + a couple of old drivers sharing the input handling, minus namcos22;
   * Updated most of the M->Q drivers + finally removed indexed reads from megadriv.c (without breaking ssf2ghw);
   * Removed indexed read from drivers starting with r (and slightly simplify inputs in royalmah.c);

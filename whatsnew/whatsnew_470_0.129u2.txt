@@ -32,8 +32,8 @@ Source changes:
 - Improved implementations for undocumented instructions 63, 67, 6f, 73, 77, 7b, 7f, 9c, 9e, ab, e3, e7, ef, f3, f7, fb, and ff in the n2a3 CPU core [Wilbert Pol].
 - Force recalculation of screen parameters when only the MC6845 input clock changes [Wilbert Pol].
 - Seibu CRTC part 1 [Angelo Salese]:
-  * Merged Sengoku Mahjong & Good e Jong video HWs.
-  * Added correct scrolling functions for 'Sengoku Mahjong'.
+  * Merged Sengoku Mahjong & Good e Jong video HWs;
+  * Added correct scrolling functions for Sengoku Mahjong;
   * Removed some positioning kludges in both drivers.
 - Fixed 'Sengoku Mahjong' hopper error after first winning match [Angelo Salese].
 - Removed deprecat dependancy from Good e Jong, one irq wasn't needed at all (points to a reti) [Angelo Salese].
@@ -45,8 +45,8 @@ Source changes:
 - DRC frontends must now do their own opcode fetching unfortunately [Aaron Giles].
 - Updated all DRC cores to do this. Also tweaked a few oddities in the SH2 DRC [Aaron Giles].
 - drw80pkr changes [Jim Stolis]:
-  * Added bankswitching to program memory.
-  * Partial graphics support.
+  * Added bankswitching to program memory;
+  * Partial graphics support;
   * Partial sound support.
 - Preliminary ADPCM hook-up to Jantotsu, it plays something but it's not yet right [Angelo Salese].
 - Removed redundant config parameter from SND_START [Aaron Giles].
@@ -58,20 +58,20 @@ Source changes:
 - Tidied up the micro3d driver and fixed sound [Phil Bennett].
 - Increased Cloak & Dagger interleave quantum to eliminate 'SLAVE COM BAD' startup message [Phil Bennett].
 - Major cleanup to IGS poker games [Mirko Buffoni]:
-  * Renamed csk driver to igspoker. This includes Champion Poker, Champion Skill and New Champion Skill.
-  * Converted drivers to tilemap system and unified video section
-  * Unified memory maps and checked all input ports.
-  * Removed obsolete palette handlers and made use of generic handlers.
-  * Added layout for lamps handling.
-  * Added hopper simulation.
-  * Added New Champion Skill (different set, maybe original international release) and renamed current igs_ncs to igs_ncs2 (2000 version for italian market).
-  * Promoted igs_ncs2 to working state, but set GAME_IMPERFECT_GRAPHICS (missing initial notice screen).
-  * Moved Jackie to a separate driver (it's a slot machine game)
+  * Renamed csk driver to igspoker. This includes Champion Poker, Champion Skill and New Champion Skill;
+  * Converted drivers to tilemap system and unified video section;
+  * Unified memory maps and checked all input ports;
+  * Removed obsolete palette handlers and made use of generic handlers;
+  * Added layout for lamps handling;
+  * Added hopper simulation;
+  * Added New Champion Skill (different set, maybe original international release) and renamed current igs_ncs to igs_ncs2 (2000 version for italian market);
+  * Promoted igs_ncs2 to working state, but set GAME_IMPERFECT_GRAPHICS (missing initial notice screen);
+  * Moved Jackie to a separate driver (it's a slot machine game);
   * Made some progress on Jackie which now boots (toggle mode to play, but work still needs to be done).
 - Virtual Combat and Shadow Fighters update [Phil Bennett]:
-  * Fixed framebuffer handling & screen parameters.
-  * Added sound.
-  * Corrected RAM sizes to match what is present on the PCBs.
+  * Fixed framebuffer handling & screen parameters;
+  * Added sound;
+  * Corrected RAM sizes to match what is present on the PCBs;
   * Hooked up NVRAM.
 - Fixed clamping to 12 bit range to Okim6376, and adjusted volume attenuation accordingly [Mirko Buffoni].
 - Fixed TMS5220 speech in Turbo Sub [Phil Bennett, Jay Gallagher].

@@ -14,8 +14,8 @@ Pit Boss Megastar [Mariusz Wojcieszek]
 Super Bowl (Version 16.03B) [Pierpaolo Prazzoli]
 Super Pit Boss [Mariusz Wojcieszek]
 
-New Clones Added
-----------------
+New Clone Added
+---------------
 Raiden Fighters (Austria) [Corrado Tomaselli]
 
 
@@ -37,31 +37,31 @@ Source changes:
 - Removed machine from the parameters of some of the device_get_info and device_set_info calls because that information is stored with the device now [Aaron Giles].
 - Changed device interfaces to pass the device_config * rather than tokens and individual bits to the device callbacks. Updated all existing devices accordingly [Aaron Giles].
 - A number of changes to remove references to screens by index and make the video system based strictly upon the screen devices [Zsolt Vasvari]:
-  * Changed vblank_state_changed_func to now have a device_config argument.
-  * Removed runnning_machine as the first parameter of a VBLANK callback.
-  * Removed video_data from running_machine.
-  * Private state screen information now hangs off the public one, instead of the other way around.
-  * Combined video_global and video_private into a single structure.
-  * Moved populating screen_state from mame.c to video.c.
-  * Removed defstate; the default screen parameters live in screen_config directly.
-  * Moved 'refresh' from public to internal video state and renamed it to 'frame_period'.
+  * Changed vblank_state_changed_func to now have a device_config argument;
+  * Removed runnning_machine as the first parameter of a VBLANK callback;
+  * Removed video_data from running_machine;
+  * Private state screen information now hangs off the public one, instead of the other way around;
+  * Combined video_global and video_private into a single structure;
+  * Moved populating screen_state from mame.c to video.c;
+  * Removed defstate; the default screen parameters live in screen_config directly;
+  * Moved 'refresh' from public to internal video state and renamed it to 'frame_period';
   * Changed all drivers that previously accessed 'refresh' to use video_screen_get_frame_period().
-  * Changed VIDEO_UPDATE signature to pass the screen device.
-  * Added const device_config *primary_screen to running_machine
-  * Changed first argument of video_screen_* functions to take a device_config; all callers that used 0 for the screen number now use machine->primary_screen.
-  * Changed game info screen and overlay UI to display the screen tag instead of screen number.
-  * Added video_screen_get_visible_area()
-  * Changed render.c to use screen devices.
-  * Removed direct driver access to machine->screen[] array.
-  * Added video_screen_auto_bitmap_alloc(screen).
-  * The Dynax/Don Den Lover games now do their updating in VIDEO_UPDATE instead of VIDEO_EOF. Seems to have fixed the palette problems
-  * Hooked up swapped videoram in Karnov properly - same idea as 'Burger Time'.
-  * Removed the public screen_state object -- all access is via functions.
-  * Removed screen[] object from running_machine.
+  * Changed VIDEO_UPDATE signature to pass the screen device;
+  * Added const device_config *primary_screen to running_machine;
+  * Changed first argument of video_screen_* functions to take a device_config; all callers that used 0 for the screen number now use machine->primary_screen;
+  * Changed game info screen and overlay UI to display the screen tag instead of screen number;
+  * Added video_screen_get_visible_area();
+  * Changed render.c to use screen devices;
+  * Removed direct driver access to machine->screen[] array;
+  * Added video_screen_auto_bitmap_alloc(screen);
+  * The Dynax/Don Den Lover games now do their updating in VIDEO_UPDATE instead of VIDEO_EOF. Seems to have fixed the palette problems;
+  * Hooked up swapped videoram in Karnov properly - same idea as Burger Time;
+  * Removed the public screen_state object -- all access is via functions;
+  * Removed screen[] object from running_machine;
   * Removed MAX_SCREENS constant - there is no longer a hardcoded upper bound.
 - Changed the MC6845 to take and pass device_config's only. The following shook out from this that are applicable to other devices as well [Zsolt Vasvari]:
-  * running_machine is no longer taken, passed or stored l.
-  * mc6845_t is now private.
+  * running_machine is no longer taken, passed or stored l;
+  * mc6845_t is now private;
   * Since passing device_config's is not device type safe, I added get_safe_token() to mc6845.c to check the device passed in for  the valid type.
 - Removed video_data from running_machine. Private state screen information now hangs off the public one, instead of the other way around. Combined video_global and video_private into a single structure [Zsolt Vasvari].
 - Fixed the crash in Galaga caused by the slightly altered video timing [Zsolt Vasvari].
@@ -86,12 +86,12 @@ Source changes:
 - Converted atarigen and tms34061 to be handle based [Zsolt Vasvari].
 - Changed how the PowerPC MMU is enabled at compile time, to cut down on the amount of unused functions in MAME [Nathan Woods].
 - Some additional memory system cleanups [Aaron Giles]:
-  * Made address versus byte offsets explicit throughout.
-  * Removed some unused parameters.
-  * Consolidated initialization process.
-  * Removed maximum memory block count.
-  * Centralized bank management.
-  * Added masked handlers and change_pc to the accessors.
+  * Made address versus byte offsets explicit throughout;
+  * Removed some unused parameters;
+  * Consolidated initialization process;
+  * Removed maximum memory block count;
+  * Centralized bank management;
+  * Added masked handlers and change_pc to the accessors;
   * Added memory_get_accessors() to return a pointer to the accessors for a given address space/databus width/endian configuration.
 - Adds some new 6845 varieties: MC6845-1, H46505, HD6845 and SY6545-1 [Zsolt Vasvari].
 - Moved crosshair code from video.c into its own module. Simplified crosshair logic and made it screen device based [Zsolt Vasvari].
@@ -102,13 +102,13 @@ Source changes:
 - Fixed 68000 prefetching operation. Previous behavior was incorrect [Aaron Giles].
 - Changed slapstic management to always install an opbase handler to more aggressively catch code executing in the slapstic region. Updated all drivers to separate the slapstic region of ROM into a different ROM section from the fixed ROM [Aaron Giles].
 - superqix.c changes [Mike Haaland]:
-  * Changed vblank interrupts to 3 to fix screen drawing issues.
-  * Used memory_configure_bank() to configure memory.
+  * Changed vblank interrupts to 3 to fix screen drawing issues;
+  * Used memory_configure_bank() to configure memory;
   * Added save states.
 - Added some clock frequency changes which were documented in u4 but which did not apply due to operator error [Corrado Tomaselli].
 - Added layout to crop corners in 'Electric Yo-Yo' [Mr. Do!].
 - Added support for Sega Virtua Processor, to run Genesis/MegaDrive version of Virtua Racing, intended to be used by MESS. It consists of a CPU core SSP1601, and updates in megadriv.c [notaz]:
-  * SSP1601 replaces SSP1610, as it has been confirmed that SVP actually contains SSP1601. The current SSP1610 is only a placeholder (nearly completely unimplemented) anyway.
+  * SSP1601 replaces SSP1610, as it has been confirmed that SVP actually contains SSP1601. The current SSP1610 is only a placeholder (nearly completely unimplemented) anyway;
   * Changed megadriv.c add a new driver for Genesis/MegaDrive+SVP combination, also add SVP memory controller logic and memory map.
 - Phase 2 of the Deal 'Em input changes (these work well with the default cabinet type, I need to do some conditional input work to fix them fully), and also a conversion to the resnet code. Unfortunately, this still doesn't fix the apparently needed transparency [James Wallace].
 - Simplified inputs, improved DIP switches, and added DIP locations to punchout.c, bankp.c, and baraduke.c [RansAckeR].

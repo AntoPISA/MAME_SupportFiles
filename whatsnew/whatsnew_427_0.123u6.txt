@@ -2,12 +2,12 @@
 ---------------------------------------
 
 
-New games added or promoted from NOT_WORKING status
+New Games Added or Promoted from NOT_WORKING Status
 ---------------------------------------------------
 Gekisou [Nicola Salmoria]
 Pot Game (italian) [Roberto Fresca]
 
-New clones added
+New Clones Added
 ----------------
 Pitfall II (315-5093, Flicky Conversion) [Corrado Tomaselli]
 Thunder Dragon (4th Jun. 1991) [Corrado Tomaselli]
@@ -74,12 +74,12 @@ Source changes:
 - Added a new device type for timers. Where applicable, added a parallel set of timer functions that take a device_config instead of an emu_timer. Added MDRV_TIMER_* macros to define the timers in the machine driver. Implemented both periodic and scanline-based timer variants. Modified Space Encounters and Centipede to make use of this feature. Going forward, this is the preferred way of creating periodic timers [Zsolt Vasvari].
 - Renamed *_vbl_cb to *_vblank_callback [Aaron Giles].
 - Magicfly updates [Roberto Fresca]:
-  * Completed the component list & PCB layout.
-  * Added technical references to register $63 (magicfly).
+  * Completed the component list & PCB layout;
+  * Added technical references to register $63 (magicfly);
   * Switched crystal to new predefined format.
 - Funworld updates [Roberto Fresca]:
-  * Added proper inputs to jolyc980.
-  * Added temporary patch to allow bypass the "code" screen in jolyc980.
+  * Added proper inputs to jolyc980;
+  * Added temporary patch to allow bypass the "code" screen in jolyc980;
   * Updated technical notes.
 - Changed exidy440_sound_command back to "UINT8." Since it's used by both 8-bit and 16-bit systems, the automatic allocation is not worth it if you need an ugly UINT16 ** cast. Removed deprecat.h from some of the exidy files [Zsolt Vasvari].
 - Fixed Air Buster bootleg from reseting because of the watchdog [Zsolt Vasvari].
@@ -90,39 +90,39 @@ Source changes:
 - Added a crosshair_set_screen() to allow drivers to control which screen(s) on which crosshairs are displayed [Nathan Woods].
 - Made it a fatalerror to registr save state callbacks at the wrong time if the current driver claims to support save states [Aaron Giles].
 - Fixed chicken and egg problem with device_start callbacks [Aaron Giles]:
-  * Added DEVINFO_INT_TOKEN_BYTES, which is queried before device startup. It should return the size of the structure that will be hung off of device->token. It must not return 0.
-  * Changed the core device interface to allocate and zero a block of memory the size of DEVINFO_INT_TOKEN_BYTES before calling device_start. The pointer to this memory is already attached to device->token at the time device_start is called.
+  * Added DEVINFO_INT_TOKEN_BYTES, which is queried before device startup. It should return the size of the structure that will be hung off of device->token. It must not return 0;
+  * Changed the core device interface to allocate and zero a block of memory the size of DEVINFO_INT_TOKEN_BYTES before calling device_start. The pointer to this memory is already attached to device->token at the time device_start is called;
   * The primary motivation for this is to allow the device_start function to make internal calls and pass the device_config* around as if the object were fully constructed. Since the token is used to indicate whether or not a device is live, this makes the device "live" at the time device_start is called rather than after it completes.
 - Moved per-screen initialization into DEVICE_START and per-screen cleanup into DEVICE_STOP in the core video implementation [Aaron Giles].
 - Fixed render_target_get_minimum_size() to return nominal values if no screens are found [Aaron Giles].
 - Alpha Denshi major update [Nicola Salmoria]:
-  * Fixed Alpha 8201/830x MCU simulation.
-  * All hacks from the equites driver removed.
-  * Fixed equites restart position after going underground.
-  * Fxed hvolume, splndrbt 2 players.
-  * Removed hacks from exctsccr2.
-  * Fixed CPU gameplay in shougi.
-  - Added dump of Alpha 8201 MCU to games that use it (the ROM isn't used yet, HMCS44 CPU core needs to be written first).
-  - Major cleanup of the mess in equites.c:
-  * Many thanks to Corrado Tomaselli for precious hardware info.
-  * Implemented bg perspective scrolling using PROMs.
-  * Fxed sprite flip & disable.
-  * Fixed bg color.
-  * Converted bg to tilemaps.
-  * Fixed fg banking.
-  * Fixed screen flip.
-  * Removed meaningless banking of player inputs.
-  * Added UI adjuster for MSM5232 frequency.
-  * MSM5232 volume control.
-  * Fixed MSM5232 noise LFSR formula (done by Jarek Burczynski; thanks to Corrado Tomaselli for samples).
-  * Changed MSM5232 emulator to output channels separately.
-  * Added output of SOLO channels to MSM5232 emulator.
-  * Fixed champbas inputs.
-  * Merged talbot with champbas, some driver clenaup.
-  * Fixed shougi inputs.
-  * Switched exctsccb to use the correct gfx ROMs (matches screenshot found in 01058 exctsccb: 'Exciting Soccer' bootleg should be placed in champbas.c).
-  * Fixed sprite bpp in exctscrr, removed the horrible hacks that were used to fix colors and transparency.
-  * Fixed sound clipping in exctsccr.
+  * Fixed Alpha 8201/830x MCU simulation;
+  * All hacks from the equites driver removed;
+  * Fixed equites restart position after going underground;
+  * Fxed hvolume, splndrbt 2 players;
+  * Removed hacks from exctsccr2;
+  * Fixed CPU gameplay in shougi:
+  - Added dump of Alpha 8201 MCU to games that use it (the ROM isn't used yet, HMCS44 CPU core needs to be written first);
+  - Major cleanup of the mess in equites.c.
+  * Many thanks to Corrado Tomaselli for precious hardware info;
+  * Implemented bg perspective scrolling using PROMs;
+  * Fxed sprite flip and disable;
+  * Fixed bg color;
+  * Converted bg to tilemaps;
+  * Fixed fg banking;
+  * Fixed screen flip;
+  * Removed meaningless banking of player inputs;
+  * Added UI adjuster for MSM5232 frequency;
+  * MSM5232 volume control;
+  * Fixed MSM5232 noise LFSR formula (done by Jarek Burczynski; thanks to Corrado Tomaselli for samples);
+  * Changed MSM5232 emulator to output channels separately;
+  * Added output of SOLO channels to MSM5232 emulator;
+  * Fixed champbas inputs;
+  * Merged talbot with champbas, some driver clenaup;
+  * Fixed shougi inputs;
+  * Switched exctsccb to use the correct gfx ROMs (matches screenshot found in 01058 exctsccb: Exciting Soccer bootleg should be placed in champbas.c);
+  * Fixed sprite bpp in exctscrr, removed the horrible hacks that were used to fix colors and transparency;
+  * Fixed sound clipping in exctsccr;
   * Added percussions to the equites.c games using samples; sound board emulation is still not complete. Cymbal hit and hi-hat are  missing; bassline is incorrect, and DAC output should be filtered.
 - Fixed crash in spbactn [Zsolt Vasvari].
 - In drawgfx, removed unneeded pen lookups. Did some code formatting clean-up [Zsolt Vasvari].

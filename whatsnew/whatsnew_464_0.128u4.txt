@@ -20,8 +20,8 @@ Soldam (World?) [Gerald]
 Street Fighter II' - Champion Edition (Rainbow set 3, bootleg) [Bill DeLeo]
 Violent Storm (ver UAC) [Bill DeLeo]
 
-New Games Marked as GAME_NOT_WORKING
-------------------------------------
+New Game Marked as GAME_NOT_WORKING
+-----------------------------------
 Motocross Go! (MG3 Ver. A) [Guru]
 
 
@@ -40,16 +40,16 @@ MAMETesters Bugs Fixed (9):
 
 Source changes:
 ---------------
-- UPI-41/42 (still I8x41.c) changes: [Couriersud]:
-  * cpu/i8x41 should be renamed to UPI-4x, since UPI-41/42 was an  Intel chip family postponed for now until core moved to pointers.
-  * Removed I8041 definition from mcs48.
-  * Removed I8x41 CPU definition and config struct.
-  * Added I8041, I8741, I8042, I8242 and I8742 cpus to i8x41.c.
-  * Added internal memory maps.
-  * Internal RAM now uses DATA memory space.
-  * Updated drivers.
-  * Increased interleave to 70 in decocass. This fixes decocass hanging in countdown around 13. No idea when this bug was introduced.
-  * Converted i8x41 to use pointers for state access.
+- UPI-41/42 (still I8x41.c) changes [Couriersud]:
+  * cpu/i8x41 should be renamed to UPI-4x, since UPI-41/42 was an  Intel chip family postponed for now until core moved to pointers;
+  * Removed I8041 definition from mcs48;
+  * Removed I8x41 CPU definition and config struct;
+  * Added I8041, I8741, I8042, I8242 and I8742 cpus to i8x41.c;
+  * Added internal memory maps;
+  * Internal RAM now uses DATA memory space;
+  * Updated drivers;
+  * Increased interleave to 70 in decocass. This fixes decocass hanging in countdown around 13. No idea when this bug was introduced;
+  * Converted i8x41 to use pointers for state access;
   * Separated opcodes into i8x41ops.c.
 - Populated tag and static_config parts of fake CPU device. Removed 'config' parameter from CPU_INIT. Modified CPU cores to pull config from the device static_config [Aaron Giles].
 - s14001a.c: Added chip pinout and operation notes [Lord Nightmare].
@@ -57,32 +57,32 @@ Source changes:
 - Video emulation fixes to the Ghost Eolith HW (not yet working) [Angelo Salese].
 - i960 core switched to pointer state access [Couriersud].
 - Major cpuintrf changes [Aaron Giles]:
-  * Added a set of cpu_* calls which accept a CPU device object; these are now the preferred means of manipulating a CPU
-  * Removed the cpunum_* calls; added an array of cpu[] to the running_machine object; converted all existing cpunum_* calls to cpu_* calls, pulling the CPU device object from the new array in the running_machine.
-  * Removed the activecpu_* calls; added an activecpu member to the running_machine object; converted all existing activecpu_* calls to cpu_* calls, pulling the active CPU device object from the running_machine.
-  * Changed cpuintrf_push_context() to cpu_push_context(), taking a CPU object pointer; changed cpuintrf_pop_context() to cpu_pop_context(); eventually these will go away.
-  * Many other similar changes moving toward a model where all CPU references are done by the CPU object and not by index.
+  * Added a set of cpu_* calls which accept a CPU device object; these are now the preferred means of manipulating a CPU;
+  * Removed the cpunum_* calls; added an array of cpu[] to the running_machine object; converted all existing cpunum_* calls to cpu_* calls, pulling the CPU device object from the new array in the running_machine;
+  * Removed the activecpu_* calls; added an activecpu member to the running_machine object; converted all existing activecpu_* calls to cpu_* calls, pulling the active CPU device object from the running_machine;
+  * Changed cpuintrf_push_context() to cpu_push_context(), taking a CPU object pointer; changed cpuintrf_pop_context() to cpu_pop_context(); eventually these will go away;
+  * Many other similar changes moving toward a model where all CPU references are done by the CPU object and not by index;
   * Added CPU device parameters to all CPU callbacks except for the context ones (which are going away), and the validity check.
 - Converted TMS340x0 cores to be pointer-based [Aaron Giles].
-- Fixed DIP Switches for lkage and clones. Fixed bootlegs visible area to match original sets [stephh].
-- Fixed DIP Switches for magmax [stephh].
-- Fixed Dip Switches for all games in mermaid.c driver [stephh].
+- Fixed DIP switches for lkage and clones. Fixed bootlegs visible area to match original sets [stephh].
+- Fixed DIP switches for magmax [stephh].
+- Fixed Dip switches for all games in mermaid.c driver [stephh].
 - peplus.c updates [Couriersud]:
-  * Changed the 6845 type to R6545_1 (Rockwell as mentioned in the driver).
-  * Use transparent addressing.
-  * lightpen code now generates a "lightpen_assert" at the right screen position. 
+  * Changed the 6845 type to R6545_1 (Rockwell as mentioned in the driver);
+  * Use transparent addressing;
+  * lightpen code now generates a "lightpen_assert" at the right screen position;
   * Completely hooked up 6545 without wrappers.
 - abc_step and abc_reset now declared as DISCRETE_STEP( abc ) and DISCRETE_RESET( abc ) [Couriersud].
-- Fixed Dip Switches for momoko [stephh].
-- Fixed DIP Switches for joyfulr and clone [stephh].
+- Fixed DIP switches for momoko [stephh].
+- Fixed DIP switches for joyfulr and clone [stephh].
 - Fix state save in discrete sound [Couriersud]:
-  * sndindex now considered as well in state save.
+  * sndindex now considered as well in state save;
   * Expose discrete_sound_n_r(void *chip, ...) to enable accessing multiple discrete sound cores.
 - Kaneko changes [David Haywood, Andreas Naive]:
-  * Added Simulation of Toybox external data ROM decryption
-  * Converted 'Blood Warrior', 'Bonk's Adventure', 'Great 1000 Miles Rally 1+2' to use the new code.
+  * Added Simulation of Toybox external data ROM decryption;
+  * Converted Blood Warrior, Bonk's Adventure, Great 1000 Miles Rally 1+2 to use the new code;
   * Updated suprnova rendering to allow 2 sprite chips.
-  * Started work on 'Jackie Chan' and 'Gals Panic 3' 
+  * Started work on Jackie Chan and Gals Panic 3.
 - Massive API cleanup/change [Aaron Giles]:
   * The primary goal is that all CPU-related APIs now take a device pointer instead of an index. All functions that take a CPU device are prefixed with cpu_*. All functions that are globally related to cpu execution are prefixed with cpuexec_*. Below is a list of some of the mappings:
 
@@ -112,11 +112,11 @@ Source changes:
   cpu_spinuntil_trigger
   cpu_triggerint
 
-  * Merged cpuint.c into cpuexec.c. One side-effect of this change is that driver reset callbacks are called AFTER the CPUs and devices are reset. This means that if you make changes to the CPU state and expect the reset vectors to recognize the changes in your reset routine, you will need to manually reset the CPU after making the change (since it has already been reset).
-  * Added a number of inline helper functions to cpuintrf.h for managing addresses.
-  * Removed cpu_gettotalcpu(). This information is rarely needed outside of the core and can be obtained by looking at the machine->cpu[] array.
-  * Changed CPU interrupt acknowledge callbacks to pass a CPU device instead of machine/cpunum pair.
-  * Changed VBLANK and periodic timer callbacks to pass a CPU device instead of machine/cpunum pair.
+  * Merged cpuint.c into cpuexec.c. One side-effect of this change is that driver reset callbacks are called AFTER the CPUs and devices are reset. This means that if you make changes to the CPU state and expect the reset vectors to recognize the changes in your reset routine, you will need to manually reset the CPU after making the change (since it has already been reset);
+  * Added a number of inline helper functions to cpuintrf.h for managing addresses;
+  * Removed cpu_gettotalcpu(). This information is rarely needed outside of the core and can be obtained by looking at the machine->cpu[] array;
+  * Changed CPU interrupt acknowledge callbacks to pass a CPU device instead of machine/cpunum pair;
+  * Changed VBLANK and periodic timer callbacks to pass a CPU device instead of machine/cpunum pair;
   * Renamed all information getters from cpu_* to cpu_get_* and from cputype_* to cputype_get_*.
 - Defined macros for standard sound core functions and updated all sound cores to use them [Atari Ace].
 - Replaced the Machine parameter where an running_machine * is available and removes the deprecat.h where unnecessary [Atari Ace, Oliver Stoeneberg].
@@ -124,18 +124,18 @@ Source changes:
 - Fixed DIP Switches and Inputs for 'jchan' and clone [stephh].
 - Documented the CPS2 Phoenix sets, and what happens to a dead CPS2 board [MAMEPlus].
 - Pointer-ified the 6800, 6809 and hd6309 cpu cores [Couriersud]:
-  * Temporarily named the state var m68_state in the 68xx cores
+  * Temporarily named the state var m68_state in the 68xx cores;
   * Reorganized some code for simpler comparison of 68xx cores.
 - Pre-irq rewrite submission in ST-V driver [Angelo Salese]:
-  * Better management of hblank/vblank bits.
-  * Makes dynamic resolutions to be called with a timer instead of run-time.
-  * Makes dynamic resolutions to not be changed at every frame but only when there's an actual change.
-  * Fixed Final Arch broken Test Mode.
-  * Demoted Super Major League / Final Arch as GAME_NOT_WORKING, they hangs randomly due of SH-2 master/slave communication RAM issues.
-  * Removed GAME_NOT_WORKING flag to Fighting Dragoon Legend Elan Doree, because protection affects only in-game graphics and not gameplay.
+  * Better management of hblank/vblank bits;
+  * Makes dynamic resolutions to be called with a timer instead of run-time;
+  * Makes dynamic resolutions to not be changed at every frame but only when there's an actual change;
+  * Fixed Final Arch broken Test Mode;
+  * Demoted Super Major League / Final Arch as GAME_NOT_WORKING, they hangs randomly due of SH-2 master/slave communication RAM issues;
+  * Removed GAME_NOT_WORKING flag to Fighting Dragoon Legend Elan Doree, because protection affects only in-game graphics and not gameplay;
   * Removed all the read/write handler speed-up hacks, they aren't needed anymore and they were doing more damage than being useful. This fixes Golden Axe: the Duel gameplay speed at the cost of breaking up Groove on Fight coin counter at start-up.
 - Major memory system change [Aaron Giles, Couriersud, smf, R. Belmont]:
-  * Changed READ/WRITE handlers to accept an address_space * instead of a machine *. The address_space object was enhanced to contain a   machine and a pointer to the relevant CPU object.
+  * Changed READ/WRITE handlers to accept an address_space * instead of a machine *. The address_space object was enhanced to contain a machine and a pointer to the relevant CPU object;
   * Added new function cpu_get_address_space() to fetch the address space for calling in manually to these functions. In some instances, code which should eventually be converted to a device is hard-coding fetching the program space of CPU #0 in order to have something valid to pass.
 - Converted cultures driver to have separated color tables for each plane [Angelo Salese].
 - Significantly pared down the 68k core. Merged outer MAME shell into the core proper and removed unused macros. Changed all external interfaces to pass the CPU device. Enabled 64-bit operations by default. Re-derived the interface functions to cascade and share code more aggressively. These changes also seem to have cured the taito_f3 issues as far as I can tell (at least pbobble3 seems right now) [Aaron Giles].
@@ -145,8 +145,8 @@ Source changes:
 - Changed kram3 to use a partially understood decryption algorithm and removed external tables [Nicola Salmoria].
 - Fixed Dip Switches for 'scotrsht' [stephh].
 - Naomi improvements [Samuele Zannoli]:
-  * This patch implements a "plug-in board" device for the Naomi. It represents the ROM boards for the various games and the dimm board for the GDROM.
-  * Now the dimm board part contains only a routine to load the "rom file" from the gdrom chd, but in the future it will be fully implemented with its own sh4 processor, security chip and so on.
+  * This patch implements a "plug-in board" device for the Naomi. It represents the ROM boards for the various games and the dimm board for the GDROM;
+  * Now the dimm board part contains only a routine to load the "rom file" from the gdrom chd, but in the future it will be fully implemented with its own sh4 processor, security chip and so on;
   * Extracted .rom files are no longer needed, ROM file is extracted in code from the CHD.
 - Added "tag" parameter to state_save_register_item_* calls. Removed state_save_combine_module_and_tag() function in favor of passing the tag when registering. Revisited all save state item registrations and changed them to use the tag where appropriate [Aaron Giles].
 - Changed 6809 disassembler to work with kram3 [Nicola Salmoria].
@@ -162,23 +162,23 @@ Source changes:
 - Documented alt Ajax ROM board [Phil Morris].
 - Fixed basic controls in 2 Minutes Drill & added preliminary shutter/defender sensors. Still need proper ball hit/run sensors to get this working however [Angelo Salese].
 - Big H8 update [R. Belmont]:
-  * Added support for 8-bit H8 family MCUs, starting with the H8/3344.
-  * Pointer-ified all H8 cores
+  * Added support for 8-bit H8 family MCUs, starting with the H8/3344;
+  * Pointer-ified all H8 cores;
   * Some cleanup and renames toward additional future work.
 - System 23: Added extremely preliminary support for I/O boards with the H8/3344 [R. Belmont].
 - Removed the change_pc() macro. Changed memory_set_direct_region() to return a boolean indicating whether the given address was successfully located in a bank. Change raw/decrypted access to look at this result, and if the given address is not in a bank, calls through to the standard read handlers. This should prevent most crashes when accessing opcodes [Aaron Giles].
 - Fixed address space mapping handlers to invalidate direct access regions if a change is made to the mapping. This is needed to prevent the Sega dynamic memory mapping chips from falling over [Aaron Giles].
 - Refactored the CDP1802 and COP400 CPU cores to use the new memory functions [Curt Coder].
 - Switched m6809 and hd6309 to new memory functions [Couriersud]:
-  * Cleaned up some macros.
-  * Aligned code a bit more.
+  * Cleaned up some macros;
+  * Aligned code a bit more;
   * Interrupts now checked in cpu_execute instead of set_context.
 - Pointerified the psx cpu core & switched it to the new memory functions. Changed some MIPS_* to PSXCPU_* [smf].
 - Fixed broken crazywar EEPROM [David Haywood].
 - Another significant memory system change [Aaron Giles]:
-  * Moved memory global state into a struct hanging off of the machine. Updated almost all memory APIs to take an address_space * where appropriate, and updated all callers. Changed memory internals to use address spaces where appropriate. Changed accessors to point to the memory_* functions instead of the address space-specific functions. Improved internal handling of watchpoints.
-  * Added cputag_* functions: cputag_reset(), cputag_get_index(), cputag_get_address_space(). These just expand via macros to an initial fetch of the CPU via cputag_get_cpu() followed by the standard CPU call.
-  * Added debugger_interrupt_hook() and debugger_exception_hook() calls which intelligently look at the debugger flags before calling.
+  * Moved memory global state into a struct hanging off of the machine. Updated almost all memory APIs to take an address_space * where appropriate, and updated all callers. Changed memory internals to use address spaces where appropriate. Changed accessors to point to the memory_* functions instead of the address space-specific functions. Improved internal handling of watchpoints;
+  * Added cputag_* functions: cputag_reset(), cputag_get_index(), cputag_get_address_space(). These just expand via macros to an initial fetch of the CPU via cputag_get_cpu() followed by the standard CPU call;
+  * Added debugger_interrupt_hook() and debugger_exception_hook() calls which intelligently look at the debugger flags before calling;
   * Memory banking now requires a machine object. This makes the memory system fully global-free.
 - Pointer-ified the jaguar CPU core [Aaron Giles].
 - Pointer-ified the TMS32031 core [Aaron Giles].

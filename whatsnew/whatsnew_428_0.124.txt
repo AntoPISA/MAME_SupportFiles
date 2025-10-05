@@ -2,28 +2,28 @@
 -------------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
-00059: [Graphics] commsega, locomotn, tactcian: They exhibit a problem with screen area (Nicola Salmoria)
-00406: [Graphics] qadj: When playing as the ninja, there is one broken frame in his animation loop when walking (Nicola Salmoria)
-01433: [Graphics] marvins: If you play player 2, the maze remains unchanged (Reip)
-01524: [Misc.] btoads: Assertion (Zsolt Vasvari)
-01525: [Misc.] wilytowr, atomboy: watchdog resets (RansAckeR)
-01557: [Misc.] dealem: Assertion (Zsolt Vasvari)
-01560: [DIP/Input] turpin: Cannot coin up in either slot (RansAckeR)
-01584: [Misc.] exerion, exerionb, exeriont: Assertion (Aaron Giles)
-01586: [Multisession] bluehawk: Graphics corruption (Reip)
-01601: [Misc.] orbit: Game doesn't start. Watchdog/reset problem? (Aaron Giles)
-
-
-New games added or promoted from NOT_WORKING status
+New Games Added or Promoted from NOT_WORKING Status
 ---------------------------------------------------
 Gekisou [Nicola Salmoria]
 Mermaid [robiza]
 
-New clones added
-----------------
+New Clone Added
+---------------
 Ridge Racer (Rev. RR3, World) [Andrea Turci]
+
+
+MAMETesters Bugs Fixed (10):
+----------------------------
+- 00059: [Graphics] commsega, locomotn, tactcian: They exhibit a problem with screen area (Nicola Salmoria)
+- 00406: [Graphics] qadj: When playing as the ninja, there is one broken frame in his animation loop when walking (Nicola Salmoria)
+- 01433: [Graphics] marvins: If you play player 2, the maze remains unchanged (Reip)
+- 01524: [Misc.] btoads: Assertion (Zsolt Vasvari)
+- 01525: [Misc.] wilytowr, atomboy: watchdog resets (RansAckeR)
+- 01557: [Misc.] dealem: Assertion (Zsolt Vasvari)
+- 01560: [DIP/Input] turpin: Cannot coin up in either slot (RansAckeR)
+- 01584: [Misc.] exerion, exerionb, exeriont: Assertion (Aaron Giles)
+- 01586: [Multisession] bluehawk: Graphics corruption (Reip)
+- 01601: [Misc.] orbit: Game doesn't start. Watchdog/reset problem? (Aaron Giles)
 
 
 Source changes:
@@ -44,7 +44,7 @@ Source changes:
 - Changed xmlfile.c to pass in memory handlers to expat so that our memory overrides are properly managed [Aaron Giles].
 - Cleaned cidelsa driver up to the latest spec [Curt Coder].
 - Converted f-32, kinst, lethalj, ultrsprt, gamecstl, taitowlf to use INDEXED16 [Zsolt Vasvari].
-- Corrected clocks on 'Cabal' bootleg [Corrado Tomaselli].
+- Corrected clocks on Cabal bootleg [Corrado Tomaselli].
 - ddz: Removed RGB15 - it's a "skeleton" driver, so why have it? [Zsolt Vasvari].
 - De-deprecat-ed ui.c [Aaron Giles].
 - dgpix and eolith: Converted to INDEXED16. Removed temp bitmaps. Changed ugly recursive video RAM code [Zsolt Vasvari].

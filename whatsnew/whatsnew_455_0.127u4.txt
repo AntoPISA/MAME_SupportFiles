@@ -2,9 +2,9 @@
 ---------------------------------------
 
 
-New Games Added or Promoted from NOT_WORKING Status
----------------------------------------------------
-Fire Fox (still needs proper laserdisc support) [smf]
+New Game Added or Promoted from NOT_WORKING Status
+--------------------------------------------------
+Fire Fox [smf]
 
 New Clones Added
 ----------------
@@ -14,9 +14,12 @@ Pool 10 (italian, set 4) [Roberto Fresca]
 Tengai (World) [Jet Black / Tormod]
 Three Wonders (hack?) [EMMA team]
 
-New Games Marked as GAME_NOT_WORKING
-------------------------------------
+New Game Marked as GAME_NOT_WORKING
+-----------------------------------
 Funny Land de Luxe [Tomasz Slanina]
+
+Note:
+(1): Still needs proper laserdisc support.
 
 
 MAMETesters Bugs Fixed (9):
@@ -55,9 +58,9 @@ Source changes:
 - Fixed refresh rate and interrupts in sg1000a driver, added 8255PPI and coin counter [Curt Coder].
 - Improved DIP switch handling and added DIP locations in epos.c [Tafoid].
 - Improvements to Funworld driver [Roberto Fresca]:
-  * Added new clone: Pool 10 (italian, set 4).
-  * Improved lamps layout for all games.
-  * Added Pool 10 pinout and DIP switches info.
+  * Added new clone: Pool 10 (italian, set 4);
+  * Improved lamps layout for all games;
+  * Added Pool 10 pinout and DIP switches info;
   * Updated technical notes.
 - Jaleco Bomb's Away Improvements [aDG4W+qp0].
 - Modified the laserdisc core to leverage the pre-decoded frame metadata, which is now required. This improves seek times when searching and allows the player-specific emulation access to the VBI data as soon as it would really be available. Changed update callback timing to fire just before the first line of VBI data would be read; at that point, the frame selection is assumed to be committed [Aaron Giles].

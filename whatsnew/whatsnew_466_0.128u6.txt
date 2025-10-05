@@ -108,13 +108,13 @@ Source changes:
 - Added MDRV_PIC8259_ADD, MDRV_PIT8353_ADD, MDRV_PIT8254_ADD, and MDRV_DMA8237_ADD macros [Wilbert Pol].
 - Added the sound device to the parameters passed to stream_create so that the global Machine can be removed from streams.c [Atari Ace].
 - Improvements to Millennium 4000 driver [Roberto Fresca]:
-  * Completed normal Inputs/Outputs.
-  * Added button-lamps calculation.
-  * Created button-lamps layout.
-  * Documented the PCB RAM.
-  * Fixed NVRAM size based on PCB picture (2x CY62256L-70PC near the battery).
-  * Added notes about the method to make appear the real poker cards.
-  * Fixed the OKI 6295 frequency (1000 kHz resonator near). Now the game has more decent sounds.
+  * Completed normal Inputs/Outputs;
+  * Added button-lamps calculation;
+  * Created button-lamps layout;
+  * Documented the PCB RAM;
+  * Fixed NVRAM size based on PCB picture (2x CY62256L-70PC near the battery);
+  * Added notes about the method to make appear the real poker cards;
+  * Fixed the OKI 6295 frequency (1000 kHz resonator near). Now the game has more decent sounds;
   * Corrected CPU clock to 12 MHz. (main Xtal).
 - Updated adp driver: now fashiong show something [robiza].
 - Widened some machine init interfaces to pass the machine parameter, allowing more Machine global references to be eliminated. Eventually most of these need to be converted to devices, but this change reduces the deprecation surface in the meantime [Atari Ace].
@@ -136,7 +136,7 @@ Source changes:
 - Removed remaining deprecat.h references from the CPU and sound cores [Atari Ace].
 - i8085: added INTE and state word callbacks [Curt Coder].
 - n8080.c changes [Curt Coder]:
-  * Rewrote interrupt handling according to schematics.
+  * Rewrote interrupt handling according to schematics;
   * Added interrupt acknowledge.
 - Re-ordered SCSP init to fix crash [R. Belmont].
 - Modified regrep to display the soruce file [Aaron Giles].

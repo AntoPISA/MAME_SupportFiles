@@ -2,8 +2,8 @@
 ---------------------------------------
 
 
-New Games Added or Promoted from NOT_WORKING Status
----------------------------------------------------
+New Game Added or Promoted from NOT_WORKING Status
+--------------------------------------------------
 Snezhnaja Koroleva [Antro]
 
 
@@ -20,11 +20,11 @@ MAMETesters Bugs Fixed (6):
 Source changes:
 ---------------
 - Changed 74123 into a device. Clarified behavior from datasheet. Added logic to avoid recursive calls [Couriersud]:
-  * Fixed Dip Switches for all games in halleys.c driver.
-  * Added Dip locations for 'halleys' and clones [stephh].
+  * Fixed DIP Switches for all games in halleys.c driver;
+  * Added DIP locations for 'halleys' and clones [stephh];
   * More improvements to the 32x code [David Haywood].
 - Irem M10: first results from schematics [Couriersud]:
-  * Updated video timing and CPU/pixel clocks.
+  * Updated video timing and CPU/pixel clocks;
   * Rewrote irq for m10/m11 to use two 74LS123.
 - AICA: fix missing instruments in DTPK driver games [R. Belmont, Deunan Knute, kingshriek].
 - Naomi: unmapped words in the AICA address range must read as zero [R. Belmont].
@@ -32,8 +32,8 @@ Source changes:
 - Converted toobin to RGB32 to allow for mid-screen palette updates. Also added correct video timing and full memory map, and connected watchdog [Aaron Giles].
 - Added Dip locations for 'exprraid' and clones, and for 'gyruss' and clones [stephh].
 - Hooked up 6845 to peplus driver [Couriersud]:
-  * Hooked up 6845 in a daisy chain way into existing "6845 emulation".
-  * Clocks from schematics.
+  * Hooked up 6845 in a daisy chain way into existing "6845 emulation";
+  * Clocks from schematics;
   * Video size issues - 6845 code related, discussion started on list.
 - Re-inlined core attotime functions. This makes a significant difference when running with high interleaves [Aaron Giles].
 - Added support for recently-discovered internal Z80 register to the Z80 core. Improves accuracy of undefined flags [Miodrag Milanovic].
@@ -53,23 +53,23 @@ Source changes:
 - Changed the CPU IRQ callbacks to a proper type, and added a device parameter to them [Aaron Giles].
 - Fixed background color of srmp1/srmp2 [EdxGROfS0].
 - Various improvements in the ST-V driver [Angelo Salese]:
-  * Fixed bitmap zooming in Virtual Mahjong 2 - My Fair Lady.
-  * Worked around a major graphic bug in ElanDoree.
-  * Added some missing alpha blending effects,Pro Mahjong Kiwame S title screen needs it but it doesn't work yet due to other problems (still investigating).
+  * Fixed bitmap zooming in Virtual Mahjong 2 - My Fair Lady;
+  * Worked around a major graphic bug in ElanDoree;
+  * Added some missing alpha blending effects, Pro Mahjong Kiwame S title screen needs it but it doesn't work yet due to other problems (still investigating);
   * Fixed a crash bug with Astra Super Stars when the debugger is active.
 - Merged DS5002FP into MCS51 [Couriersud]:
-  * Merged DS5002FP.
-  * Disassembler now uses type specific memory names.
-  * Merged DS5002FP disasm.
-  * added 83C751 memory names to disassembler.
-  * Delete DS5002FP specific files.
-  * Removed unnecessary CPU callback in wrally.
+  * Merged DS5002FP;
+  * Disassembler now uses type specific memory names;
+  * Merged DS5002FP disasm;
+  * added 83C751 memory names to disassembler;
+  * Delete DS5002FP specific files;
+  * Removed unnecessary CPU callback in wrally;
   * DATA_MAP ==> IO_MAP in wrally.
-- Continued rewrite of the Motorola DSP56k CPU core [Andrew Gardner, PhilB, RBelmont]:
-  * Added proper clock speed to plygonet.c and internal divider to dsp56k.c.
-  * Fixed up disassembler add/sub, 05xx, and bsr ops.
-  * Handle mysterious uuuuF instruction found in plygonet add op.
-  * Partially implemented add, sub, mac, mpy, inc, cmpm, macr, asr16, jscc, lea and movec ops.
+- Continued rewrite of the Motorola DSP56k CPU core [Andrew Gardner, PhilB, R. Belmont]:
+  * Added proper clock speed to plygonet.c and internal divider to dsp56k.c;
+  * Fixed up disassembler add/sub, 05xx, and bsr ops;
+  * Handle mysterious uuuuF instruction found in plygonet add op;
+  * Partially implemented add, sub, mac, mpy, inc, cmpm, macr, asr16, jscc, lea and movec ops;
   * Added dual X memory read and data move with short displacement parallel moves.
 - Some improvements to the Forte Card driver, not yet working [Angelo Salese].
 - Changed Psicho Nics Oscar (japan revision 0) to (world revision 0) since there is no japan disclaimer [Corrado Tomaselli].

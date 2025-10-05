@@ -21,22 +21,22 @@ Road Runner (Midway) [Zsolt Vasvari, Guru]
 
 MAMETesters Bugs Fixed (16):
 ----------------------------
-blktiger060gre (robiza)
-deadang0119u2red (David Haywood)
-junglek055gre (Zsolt Vasvari)
-kinst2083gre (Aaron Giles)
-kinstc081u7gre (Aaron Giles)
-lasso056gre_1 (Zsolt Vasvari)
-lasso056gre_2 (Zsolt Vasvari)
-m72_0115u3yel (Mamesick, Aaron Giles)
-memleak0122u2ora (Atari Ace)
-qbert37b14gre1 (Zsolt Vasvari)
-scorpion0111u5gra (Couriersud)
-term20103u4gre (Aaron Giles)
-term20104u2gre (Aaron Giles)
-tmnt095gre (Zsolt Vasvari)
-umk3059gre (Aaron Giles)
-umk3137b5gre (Aaron Giles)
+- blktiger060gre (robiza)
+- deadang0119u2red (David Haywood)
+- junglek055gre (Zsolt Vasvari)
+- kinst2083gre (Aaron Giles)
+- kinstc081u7gre (Aaron Giles)
+- lasso056gre_1 (Zsolt Vasvari)
+- lasso056gre_2 (Zsolt Vasvari)
+- m72_0115u3yel (Mamesick, Aaron Giles)
+- memleak0122u2ora (Atari Ace)
+- qbert37b14gre1 (Zsolt Vasvari)
+- scorpion0111u5gra (Couriersud)
+- term20103u4gre (Aaron Giles)
+- term20104u2gre (Aaron Giles)
+- tmnt095gre (Zsolt Vasvari)
+- umk3059gre (Aaron Giles)
+- umk3137b5gre (Aaron Giles)
 
 
 Source changes:
@@ -53,17 +53,17 @@ Source changes:
 - Removed a bunch of dead code from othunder.c [Zsolt Vasvari].
 - Implemented proper video timing and scanline interrupts in the m72 driver [Mamesick, Aaron Giles].
 - mario.c improvements [Couriersud]:
-  * Discrete sound.
-  * Hooked up z80dma.
-  * Combined memory maps.
-  * Statics in mario_state struct.
-  * Fixed save state issues.
+  * Discrete sound;
+  * Hooked up z80dma;
+  * Combined memory maps;
+  * Statics in mario_state struct;
+  * Fixed save state issues;
   * Combine sh_* writes into one routine.
 - audio/dkong.c: Fixed LS123 constant to match TI datasheet diode circuit constant [Couriersud].
 - TX-1 improvements [Philip Bennett, Guru]:
-  * Fixed remaining arithmetic unit issues.
-  * Added correct object colour pixel LUT PROM to tx1a.
-  * Fixed x-flipping.
+  * Fixed remaining arithmetic unit issues;
+  * Added correct object colour pixel LUT PROM to tx1a;
+  * Fixed x-flipping;
   * Added engine sounds.
 - Added correct DIP switch settings for Big Fight. Also corrected Cycle Warriors DIP switches [Philip Bennett].
 - Changed and verified frequencies on Ikari Warriors h/w, Tnk3, Hyper Sports, Jackal and S.A.R [Corrado Tomaselli].
@@ -72,8 +72,8 @@ Source changes:
 - Cleaned up brkthru/darwin memory maps. Changed both games to use identical video timing parameters based on measurements of darwin. Guessed based on available information at the master clock and derived all game clocks from it [Aaron Giles].
 - Reogranized and started to clean up the CVS driver. Added emulation of the speech CPU. Removed CVS BIOS entry. Removed unnecessary patching [Zsolt Vasvari].
 - sauro.c [Couriersud]:
-  * Hooked up sp0256 sound.
-  * Analyzed and commented some ports.
+  * Hooked up sp0256 sound;
+  * Analyzed and commented some ports;
   * Added palette_bank support without real success.
 - Reorganized the Raiden 2 driver. A bit of extra documentation of the 'V33' based set, which has been renamed. Nothing new working [David Haywood].
 - Fixed scan functions for kickgoal background, which were swapped [David Haywood].
@@ -81,9 +81,9 @@ Source changes:
 - Fixed hang/crash on empty config file [Wilbert Pol].
 - Cleaned up tceptor memory maps [Zsolt Vasvari].
 - Atari System 2 driver cleanup [Aaron Giles]:
-  * Proper video timing.
-  * Full memory maps.
-  * Save state support.
+  * Proper video timing;
+  * Full memory maps;
+  * Save state support;
   * Removed 720 sound CPU hack in favor of prepopulated EEPROM like the other games.
 - Added support for outputting 64-bit target addresses in the i386dasm [Aaron Giles].
 - Added MESS PC-Engine emulatation system. Fixed MAME debug build under VC2003 [Mariusz Wojcieszek].
@@ -93,6 +93,6 @@ Source changes:
 - Made INPs compatible between 64-bit MAME and 32-bit MAME [Chad].
 - Complete taitosj memory map from Nicola's ancient notes. General code clean-up [Zsolt Vasvari].
 - src2html improvments [Aaron Giles]:
-  * Added line numbers.
+  * Added line numbers;
   * Added link to the raw file if the src and dst dirs are the same.
 - "Fix" for full screen switch, which makes no sense, but is included based on empirical evidence that is somehow works [Emuman].

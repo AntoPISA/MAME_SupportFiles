@@ -2,8 +2,8 @@
 ---------------------------------------
 
 
-New Games Added or Promoted from NOT_WORKING Status
----------------------------------------------------
+New Game Added or Promoted from NOT_WORKING Status
+--------------------------------------------------
 Show Hand [Luca Elia]
 
 New Clones Added
@@ -12,34 +12,34 @@ Aero Fighters (bootleg set 2) [Robiza]
 Led Storm Rally 2011 (US) [Bryan McPhail]
 Shinobi (alternate set) [Brian Troha]
 
-New Games Marked as GAME_NOT_WORKING
-------------------------------------
+New Game Marked as GAME_NOT_WORKING
+-----------------------------------
 Nandemo Seal Iinkai [Luca Elia]
 
 
 MAMETesters Bugs Fixed (5):
 ---------------------------
-00206: [Graphics] ninjakd2: PCB info for Nicolas state (Nicola Salmoria)
-01691: [Misc.] Various Sets: when exiting a game, seems to be any game I get an eip error (Aaron Giles)
-01694: [Graphics] punisher, punishrj, punishru: missing graphic (Nicola Salmoria)
-01695: [DIP/Input] ptblank, gunbulet: Crosshair doesn't move (smf)
-01697: [Graphics] sfa3, sfa3b, sfa3u, sfa3ur1: About the blue background in startup screen. (Nicola Salmoria)
+- 00206: [Graphics] ninjakd2: PCB info for Nicolas state (Nicola Salmoria)
+- 01691: [Misc.] Various Sets: when exiting a game, seems to be any game I get an eip error (Aaron Giles)
+- 01694: [Graphics] punisher, punishrj, punishru: missing graphic (Nicola Salmoria)
+- 01695: [DIP/Input] ptblank, gunbulet: Crosshair doesn't move (smf)
+- 01697: [Graphics] sfa3, sfa3b, sfa3u, sfa3ur1: About the blue background in startup screen. (Nicola Salmoria)
 
 
 Source changes:
 ---------------
 - PSX core updates [smf]:
-  * Removed casts and removed unnecessary decoding from NCLIP.
-  * Added signed values to PAIR & PAIR64.
-  * Renamed PAIR64.lw to PAIR64.q
-  * Tidied up DPCS, improved flag calculation and added support for lm/sf fields.
+  * Removed casts and removed unnecessary decoding from NCLIP;
+  * Added signed values to PAIR & PAIR64;
+  * Renamed PAIR64.lw to PAIR64.q;
+  * Tidied up DPCS, improved flag calculation and added support for lm/sf fields:
   - Added sf/lm support to INTPL, improved flag calculation & calculates correct RGB.
-  * Fixed calculation of bit 31 of GTE FLAG register, when writing to it directly.
-  * Added lm mode to OP and fixed the calculation.
+  * Fixed calculation of bit 31 of GTE FLAG register, when writing to it directly;
+  * Added lm mode to OP and fixed the calculation;
   * Added lm mode to SQR.
 - Seibu implementation cleanups [David Haywood]:
-  * Added cop/heatbrl RAM clear stuff.
-  * Tried to make cop a bit more generic, breaks a few things for now, but better than duplicated code all over the place.
+  * Added cop/heatbrl RAM clear stuff;
+  * Tried to make cop a bit more generic, breaks a few things for now, but better than duplicated code all over the place;
   * Added the sound cpu to raiden2, although it doesn't make any sounds.
 - Fixed CPS1 palette control register to match tests on msword psb [Nicola Salmoria, Corrado Tomaselli].
 - Changed the pic8259 implementation into a device [Wilbert Pol].

@@ -82,33 +82,33 @@ Source Changes
 - Added ATTR_NONNULL to various declarations [Nathan Woods].
 - Pointer-ified the 65816 [R. Belmont].
 - Many improvements on the irq handling of the ST-V driver [Angelo Salese, Charles MacDonald]:
-  * Fixed a bug with irq timings.
-  * Added ODD bit emulation.
-  * Fixed vblank period timings.
-  * Optimized a bit the whole interrupt routines, getting a 4x speed gain.
-  * Fixed an IRQ mask handling bug; this fixes at least 'Astra SuperStars' and 'Pebble Beach' booting, but the latter still fails the timer 1 IRQ routines... I need to check why).
+  * Fixed a bug with IRQ timings;
+  * Added ODD bit emulation;
+  * Fixed vblank period timings;
+  * Optimized a bit the whole interrupt routines, getting a 4x speed gain;
+  * Fixed an IRQ mask handling bug; this fixes at least Astra SuperStars and Pebble Beach booting, but the latter still fails the timer 1 IRQ routines... I need to check why).
 - Pointer-ified the SPC700 [R. Belmont].
 - Fixed stepping in the debugger [R. Belmont].
 - ARM7 updates [R. Belmont]:
-  * Pointer-ified ARM7 core.
+  * Pointer-ified ARM7 core;
   * Added disassembler and execution support for ARMv5 LDRD/STRD instructions. 39in1 now makes it until it needs the MMU.
 - The jchan gamse aren't really clones even if they share most of the same roms. They're very different [David Haywood].
 - pmpoker.c major rewrite (part 2) [Roberto Fresca]:
-  * Changed the driver name to goldnpkr.c ('Golden Poker' is the most representative hardware).
-  * Splitted the PIA interfases to cover witchcrd/pottenpkr connections.
-  * Fixed the witchcrd/pottnpkr/sloco93 double up mode.
-  * Replaced the pottenpkr layout with goldnpkr one in all 'Jack Potten's Poker' sets.
-  * Updated game notes for 'Witch Card' and 'Super Loco 93' sets.
-  * Fixed al inputs & lamps to allow double up mode to the above games.
-  * Added 'Witch Card (Video Klein)' but still not working.
-  * Added several 'Buena Suerte!' sets.
-  * Added new games: 'Maverik', 'Brasil 89' & 'Poker'91'.
+  * Changed the driver name to goldnpkr.c ('Golden Poker' is the most representative hardware);
+  * Splitted the PIA interfases to cover witchcrd/pottenpkr connections;
+  * Fixed the witchcrd/pottnpkr/sloco93 double up mode;
+  * Replaced the pottenpkr layout with goldnpkr one in all Jack Potten's Poker sets;
+  * Updated game notes for Witch Card and Super Loco 93 sets;
+  * Fixed al inputs & lamps to allow double up mode to the above games;
+  * Added Witch Card (Video Klein) but still not working;
+  * Added several Buena Suerte! sets;
+  * Added new games: Maverik, Brasil 89 & Poker'91;
   * Reworked the sets parent-clone relationship (still in progress).
 - Cleaned up gfx decode on Sengoku Mahjong [Angelo Salese].
 - Improvements to funworld.c driver [Roberto Fresca, Andreas Naive]:
-  * Decripted saloon's program, graphics and color PROM.
-  * Created a new memory map and machine driver for saloon.
-  * Removed set jolycdae (it's not coming from a real board).
+  * Decripted saloon's program, graphics and color PROM;
+  * Created a new memory map and machine driver for saloon;
+  * Removed set jolycdae (it's not coming from a real board);
   * Renamed the sets magiccrd, magiccda and magiccdb, to magicrd2, magicd2a and magicd2b.
  - Updated technical notes.
 - Fixed RGB565 bugs in Ghost Eolith driver [Angelo Salese].
@@ -116,19 +116,21 @@ Source Changes
 - Cool Riders: added an hack for the SH-2, fixed some irqs and some memory maps/ram sharing. Got to the point that area 0x03e00000 on the SH-2 loads some DMA-style tables. (and this is going to be REALLY nasty to do without docs...) [Angelo Salese].
 - Added layer enable register, coin counter, coin lockout and cleaned-up the 'Sengoku Mahjong' driver [Angelo Salese].
 - Big debugger cleanup [Aaron Giles]:
-  * Important note for OSD ports: the get/set property functions have been retired for debug_views. Instead, there are specific functions to perform each get/set operation. In addition, the format of the update callback has changed to pass the osd private data in, and the update callback/osd private data must be passed in at view allocation time. And osd_wait_for_debugger() now gets a CPU object instead of the machine.
-  * Removed extra debugger tracking for address spaces and added some of the useful data to the address_space structure. Updated all debugger commands and views to use CPU and address space objects where appropriate.
-  * Added new memory functions for converting between bytes and addresses, and for performing translations for a given address space. Removed debugger macros that did similar things in favor of calling these functions.
-  * Rewrote most of the memory view handling. Disasm and register views still need some additional tweaking.
-  * Added the concept of 'subviews' to the debugger views. The core now creates a list of possible subviews, and the OSD can select between them. This removes code from the OSD that was previously required to find all possible memory and disassembly views.
-  * Added machine parameters to debugger console output functions.
-  * Moved globals to hang off of the machine structure.
+  * Important note for OSD ports: the get/set property functions have been retired for debug_views. Instead, there are specific functions to perform each get/set operation. In addition, the format of the update callback has changed to pass the osd private data in, and the update callback/osd private data must be passed in at view allocation time. And osd_wait_for_debugger() now gets a CPU object instead of the machine;
+  * Removed extra debugger tracking for address spaces and added some of the useful data to the address_space structure. Updated all debugger commands and views to use CPU and address space objects where appropriate;
+  * Added new memory functions for converting between bytes and addresses, and for performing translations for a given address space. Removed debugger macros that did similar things in favor of calling these functions;
+  * Rewrote most of the memory view handling. Disasm and register views still need some additional tweaking;
+  * Added the concept of 'subviews' to the debugger views. The core now creates a list of possible subviews, and the OSD can select between them. This removes code from the OSD that was previously required to find all possible memory and disassembly views;
+  * Added machine parameters to debugger console output functions;
+  * Moved globals to hang off of the machine structure;
   * Fixed bug where the visiblecpu was not updated immediately upon a break.
 - Made the 6850 ACIA a device [Nathan Woods].
 - Re-enabled the OSD key for master volume control. All other sliders are still only accessible via the menus [Aaron Giles].
 - Renamed constants [Aaron Giles]:
-  * CPU_IS_LE -> ENDIANNESS_LITTLE
-  * CPU_IS_BE -> ENDIANNESS_BIG
+
+  * CPU_IS_LE -> ENDIANNESS_LITTLE;
+  * CPU_IS_BE -> ENDIANNESS_BIG.
+  
 - To fix 02688 (DIP switch settings are not being stored in INP files), old INP files had to be broken. Since they were already broken, the corefile module was enhanced to support streaming compression, and the new INP files are output and processed compressed [Aaron Giles].
 - Added a number of new cputag_* macros to cpuexec.h [Aaron Giles].
 - Removed fillbitmap() macro in favor of direct calls to bitmap_fill(). Note that the parameters to the latter are in a different order (bitmap, clip, color) [Atari Ace].
@@ -138,10 +140,9 @@ Source Changes
   * Service interrupt number was not cleared after interrupt is executed, so if same one is triggered it will not be catched.
 - Made the 6526/8520 CIA implementations be devices. Added differentiation between the r1 and r2 versions of the 6526; not acting on it yet [Nathan Woods].
 - Save state system improvements [Aaron Giles]:
-  * Changed save state system to accept machine parameters where appropriate, and to keep all global variables hanging off the machine structure. Once again, this means all state registration
-  call sites have been touched:
-  * state_save_register_global* now takes a machine parameter
-  * state_save_register_item* now takes a machine parameter
+  * Changed save state system to accept machine parameters where appropriate, and to keep all global variables hanging off the machine structure. Once again, this means all state registration call sites have been touched:
+  * state_save_register_global* now takes a machine parameter;
+  * state_save_register_item* now takes a machine parameter;
   * Added new state_save_register_device_item* which now uses the device name and tag to generate the base name.
 - Extended the fake sound devices to have more populated fields. Modified sound cores to use tags from the devices and simplified the start function [Aaron Giles].
 - Renumbered CPU and sound get/set info constants to align with the device constants, and shared values where they were perfectly aligned [Aaron Giles].

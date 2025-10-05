@@ -19,71 +19,71 @@ Raimais (Japan / First Revision) [Corrado Tomaselli]
 Street Fighter Alpha 2 (Euro 960229) [Razoola]
 Touch Master 3000 V5.02 [Brian Troha]
 
-New Games Marked as GAME_NOT_WORKING
-------------------------------------
-Forgotten Worlds (World?) [The Guru]
+New Game Marked as GAME_NOT_WORKING
+-----------------------------------
+Forgotten Worlds (World?) [Guru]
 
 
 MAMETesters Bugs Fixed (10):
 ----------------------------
-00149: [Misc.] No error report for invalid BIOS setting. (Aaron Giles)
-00249: [Graphics] vangrd2: [possible] In cocktail mode, or when the flip screen dip is set, the score display is not flipped (robiza)
-00506: [Graphics] marvins: Screen flipping isn't correctly supported (robiza)
-01430: [Graphics] riskchal: Sprite-tile priority problem (robiza)
-01628: [Sound] bgaregga, bgareghk, bgaregnv, bgaregcn, bgaregt2: Sound broken (robiza)
-01744: [Graphics] gradius3, grdius3a, grdius3e: missing title text in intro (robiza)
-01747: [Graphics] dietgo, dietgoe, dietgou, dietgoj: A ToDo note no more needed into the driver. (robiza)
-01750: [Graphics] troangel, newtangl: Corrupt sprite graphics in game (robiza)
-01752: [Core] Warnings making standard .124u4 in GCC 4.3.0 (mingw) (Aaron Giles)
-01757: [Graphics] fieldday, undoukai: Graphics Corruption. (robiza)
+- 00149: [Misc.] No error report for invalid BIOS setting (Aaron Giles)
+- 00249: [Graphics] vangrd2: [possible] In cocktail mode, or when the flip screen dip is set, the score display is not flipped (robiza)
+- 00506: [Graphics] marvins: Screen flipping isn't correctly supported (robiza)
+- 01430: [Graphics] riskchal: Sprite-tile priority problem (robiza)
+- 01628: [Sound] bgaregga, bgareghk, bgaregnv, bgaregcn, bgaregt2: Sound broken (robiza)
+- 01744: [Graphics] gradius3, grdius3a, grdius3e: missing title text in intro (robiza)
+- 01747: [Graphics] dietgo, dietgoe, dietgou, dietgoj: A ToDo note no more needed into the driver (robiza)
+- 01750: [Graphics] troangel, newtangl: Corrupt sprite graphics in game (robiza)
+- 01752: [Core] Warnings making standard .124u4 in GCC 4.3.0 (mingw) (Aaron Giles)
+- 01757: [Graphics] fieldday, undoukai: Graphics Corruption (robiza)
 
 
 Source changes:
 ---------------
 - snookr10 updates [Roberto Fresca]:
-  * Decrypted the apple10 tile matrix.
-  * Partially decrypted the apple10 color codes.
-  * Added encryption notes.
+  * Decrypted the apple10 tile matrix;
+  * Partially decrypted the apple10 color codes;
+  * Added encryption notes;
   * Updated technical notes.
 - Added DISCRETE_KEY_SALLEN_FILTER to discrete sound system [Couriersud].
 - Added discrete mixing and filtering to irem games using m52-sound-c boards: mpatrol, travrusa. [Couriersud].
 - Proper implementation of the tile/sprite priorities in m90 driver.This fix priorities in quizf1, riskchal amd maybe more m90 games [robiza, Corrado Tomaselli].
 - Fix AY-3-8910/YM2149 and derivatives envelope handling [Couriersud].
 - Funworld games [Roberto Fresca]:
-  * Fixed AY8910 volume to all games to avoid clips.
-  * Merge bigdeal and funworld machine drivers thanks to the AY8910 rewrite.
+  * Fixed AY8910 volume to all games to avoid clips;
+  * Merge bigdeal and funworld machine drivers thanks to the AY8910 rewrite;
   * Removed old unaccurate commentary about magiccrd tiles.
 - De-hacked metro tilemaps [David Haywood].
 - Sandii' Games [Roberto Fresca]:
-  * Created a new machine driver for tenballs due to different memory map.
-  * Worked all the input ports from the scratch.
-  * Fixed the sound ROM_REGION.
-  * Added the oki6295 emulation to all games.
-  * Hooked output ports.
-  * Documented and calculated all bits related to lamps.
-  * Adjusted palette lenght to 256 colors.
-  * Totally decrypted the apple10 color matrix. Now colors are perfect.
-  * Created a new machine driver for apple10 due to encryption.
-  * Reverse engineering the code to complete the DIP Switches.
-  * Added diplocations to DIP switches.
-  * Promoted snookr10, apple10 and tenballs to 'WORKING' state.
-  * Added game instructions and notes.
+  * Created a new machine driver for tenballs due to different memory map;
+  * Worked all the input ports from the scratch;
+  * Fixed the sound ROM_REGION;
+  * Added the oki6295 emulation to all games;
+  * Hooked output ports;
+  * Documented and calculated all bits related to lamps;
+  * Adjusted palette lenght to 256 colors;
+  * Totally decrypted the apple10 color matrix. Now colors are perfect;
+  * Created a new machine driver for apple10 due to encryption;
+  * Reverse engineering the code to complete the DIP switches;
+  * Added diplocations to DIP switches;
+  * Promoted snookr10, apple10 and tenballs to 'WORKING' state;
+  * Added game instructions and notes;
   * Updated encryption & technical notes.
 - NES/PlayChoice 10 changes [Mariusz Wojcieszek]:
-  * Added support for mapping ROM and RAM in PPU video memory space
+  * Added support for mapping ROM and RAM in PPU video memory space;
   * Added PinBot mapper (H board).
 - All CMC italian games [Roberto Fresca]:
-  * Added TICKET and HOPPER buttons to allow payout through the SUPER GAME.
-  * Documented the featured SUPER GAME with complete instructions.
+  * Added TICKET and HOPPER buttons to allow payout through the SUPER GAME;
+  * Documented the featured SUPER GAME with complete instructions;
   * Improved DIP Switches to properly set the payout system..
 - Changed the implementation of the cocktail mode in marvins.c [robiza].
 - Merged memory maps for tunhunt, tumblep, tugboat, trucocl, and truco [Andrew Gardner].
 - meritm driver updates [Brian Troha, Tafoid]:
-  * Consolidated, corrected and updated info.
-  * Verified 'Megatouch IV' program ROM.
-  * Corrected many ROM names.
-  * Add game revision to game name (IE: 9255-40-01 ROE).
-  * Added pals from 'Megatouch 6' to other sets as they all run on the same PCB.
+  * Consolidated, corrected and updated info;
+  * Verified 'Megatouch IV' program ROM;
+  * Corrected many ROM names;
+  * Add game revision to game name (IE: 9255-40-01 ROE);
+  * Added pals from 'Megatouch 6' to other sets as they all run on the same PCB;
   * Add the sound clock update from Tafoid.
 - Massive update to ROM naming in the CPS1 driver, also loading smaller EPROMs for Japanese sets instead of the larger mask ROMs where possible. Added information about B-Board revisions where possible. There is still work to do on this regard but this is a first step in untangling the mess [Nicola Salmoria].
 - Verified more CPS1 gfx ROM mappings against PALs [Nicola Salmoria, Corrado Tomaselli].

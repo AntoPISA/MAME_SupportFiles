@@ -60,14 +60,14 @@ Source changes:
 - Fixed descriptions of the games running on NAOMI series hardware, and NAOMI game list [Yasuhiro Ogawa].
 - Input ports clean-up for the jangou driver [Angelo Salese].
 - Finally low pass filtering on channel 2A in btime driver [Couriersud]:
-  * Changed resistor to bill of material value.
+  * Changed resistor to bill of material value;
   * Adjusted volume level and added more documentation.
 - Fixed regression (missing graphics) in ipminvad (m10) [Couriersud].
 - Added support for System 24 tilemap linescroll modes [Olivier Galibert].
-- Various improvements to 'Heavy Unit' [Angelo Salese, Tomasz Slanina, David Haywood]:
-  * Added a VERY preliminary simulation of the protection, just enough to get the game to boot, not make it playable
-  * Corrected CPU communication, IRQ/NMI generation etc.
-  * Fixed some video emulation issues (added tilemap scroll etc.)
+- Various improvements to Heavy Unit [Angelo Salese, Tomasz Slanina, David Haywood]:
+  * Added a VERY preliminary simulation of the protection, just enough to get the game to boot, not make it playable;
+  * Corrected CPU communication, IRQ/NMI generation etc;
+  * Fixed some video emulation issues (added tilemap scroll etc);
   * Corrected GFX ROM loading (at least for the graphics used in attract mode).
 - Fixed King Derby sprite colors [Stefan Lindberg, Angelo Salese].
 - Merged tetrisp2 memory maps. Renamed (teplus2) to (tetrisp2j) [Aaron Giles].
@@ -94,14 +94,14 @@ Source changes:
 - Various improvements to the 'Zero Target' and 'Counter Steer' HW and cleaned-up the driver. Fixed foreground & background colors and hand-tuned sound in 'Zero Target' based on a side-by-side test. Fixed sprite colors [Angelo Salese].
 - Fixed pedals in 'Final Lap 3' [Phil Bennett].
 - Hooked up correct C75 MCU in namcofl.c (based on RB's namconb1.c implementation) [Phil Bennett].
-- Corrected Dip-Switch settings for 'Zero Target' [Yasuhiro Ogawa, Angelo Salese].
-- maketms: Free strings on exit. [Olivier Galibert]
+- Corrected Dip-Switch settings for Zero Target [Yasuhiro Ogawa, Angelo Salese].
+- maketms: Free strings on exit [Olivier Galibert].
 - tms57002: Don't abort on unimplemented instructions [Olivier Galibert].
 - Changed EEPROM erase command to write 0xff values [Pierpaolo Prazzoli].
 - Fixed handling of corrupt archives [Couriersud]:
-  * Corrupt files in archives now generate an error.
-  * Archive files ending in "/" will not be tested for crc - skip path entries.
-  * Add new flag FILE_OPEN_NO_PRELOAD to skip decompressing on open. This is used in audit.c, which only tests whether files exist
+  * Corrupt files in archives now generate an error;
+  * Archive files ending in "/" will not be tested for crc - skip path entries;
+  * Add new flag FILE_OPEN_NO_PRELOAD to skip decompressing on open. This is used in audit.c, which only tests whether files exist;
   * Added error checking to all calls to load_file_zipped.
 - Added flags to the CHD metadata entries, encoded in the top bit. Right now it is a no-op, but eventually will be used to indicate which bits of metadata are included in the overall checksum [Aaron Giles].
 - Fixed gcc 4.4 compilation error [Belegdol].

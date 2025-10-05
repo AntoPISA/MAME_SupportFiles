@@ -7,8 +7,8 @@ New Games Added or Promoted from NOT_WORKING Status
 Konami CD-ROM Drive Updater (700A04) [smf]
 Vs. Janshi Brandnew Stars [sonikos]
 
-New Clones Added
-----------------
+New Clone Added
+---------------
 Eco Fighters (USA 940215) [Nicola Salmoria, Razoola]
 
 New Games Marked as GAME_NOT_WORKING
@@ -19,23 +19,23 @@ Time Machine v2.0 [James Wallace]
 
 MAMETesters Bugs Fixed (2):
 ---------------------------
-hornet0120u1red (Ville Linde)
-srmp6_0120u1ora (Aaron Giles)
+- hornet0120u1red (Ville Linde)
+- srmp6_0120u1ora (Aaron Giles)
 
 
 Source changes:
 ---------------
 - Rewrote ACIA6850 implementation [Curt Coder].
 - Did a complete overhaul of the Mad Alien driver [Stefan Jokish]:
-  * Merged memory maps and added mirror addresses.
-  * Doubled sound chip frequency.
-  * Implemented IRQ acknowledge for the sound CPU.
-  * Added stub functions for missing discrete sounds.
-  * Re-implemented tilemaps (now the tunnel walls scroll into view)
-  * Hooked up 6845 CRT controller.
-  * Made several fixes related to color handling.
-  * Cleaned up inputs and added dip switch locations.
-  * Raised main CPU speed (guesswork).
+  * Merged memory maps and added mirror addresses;
+  * Doubled sound chip frequency;
+  * Implemented IRQ acknowledge for the sound CPU;
+  * Added stub functions for missing discrete sounds;
+  * Re-implemented tilemaps (now the tunnel walls scroll into view);
+  * Hooked up 6845 CRT controller;
+  * Made several fixes related to color handling;
+  * Cleaned up inputs and added dip switch locations;
+  * Raised main CPU speed (guesswork);
   * Added save state support.
 - Repaired the IC24 timer behaviour to fix some of Deal 'Em's bugs, and also added inputs [James Wallace].
 - Added save state support to skykid [Mike Haaland].
@@ -46,16 +46,16 @@ Source changes:
 - Switched model1 lookup functions to be index based rather than requiring a linear scan [Atari Ace].
 - Added generic I2C bus memory support. Hooked up to the cubocd32 driver [smf].
 - Cleaned up inline assembly support [Aaron Giles]:
-  * Moved all inlinable functions into new module eminline.h.
+  * Moved all inlinable functions into new module eminline.h;
   * Defined a number of new inline functions, including:
-  - 32x32 -> 64 bit multiply.
+  - 32x32 -> 64 bit multiply;
   - Fast approximate floating point reciprocal.
-  * Removed old inline definitions from osinline.h, osd_cpu.h, etc.
-  * eminline.h contains C implementations of everything.
-  * New module eigccx86.h contains GCC-compatible x86/64 versions.
-  * New module eigccppc.h contains GCC-compatible PowerPC versions
+  * Removed old inline definitions from osinline.h, osd_cpu.h, etc;
+  * eminline.h contains C implementations of everything;
+  * New module eigccx86.h contains GCC-compatible x86/64 versions;
+  * New module eigccppc.h contains GCC-compatible PowerPC versions;
   * eminline.h automatically detects GCC environments and includes appropriate file.
-  * osinline.h now only used in non-GCC environments.
+  * osinline.h now only used in non-GCC environments;
   * Updated osd/windows/osinline.h to contain MSVC-compatible versions.
 - Added NORM implementation to the TMS32031 core [Aaron Giles].
 - Created new rgbutil module which consists of inline functions for common RGB manipulation. This module can be accelerated with SSE2 or other SIMD operations. By default, only 64-bit Intel builds make use of SSE, since it can be assumed on those platforms. Reimplemented the namcos22 rasterizer in terms of these inline functions. Also updated the gaelco3d rasterizer to use this module for faster bilinear filtering [Aaron Giles].

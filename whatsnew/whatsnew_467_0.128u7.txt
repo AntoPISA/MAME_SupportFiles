@@ -42,8 +42,8 @@ Source changes:
 ---------------
 - Removed old cherrym driver (meant to be removed last time, oops) [Aaron Giles].
 - funworld.c improvements [Roberto Fresca]:
-  * Added new set: Jolly Card (italian, encrypted bootleg). No coins... Only remote credits. After NVRAM init, set the Payout DIP to 'manual' to allow the remote credits mode to work.
-  * Created inputs from the scratch for jolycdib.
+  * Added new set: Jolly Card (italian, encrypted bootleg). No coins... Only remote credits. After NVRAM init, set the Payout DIP to 'manual' to allow the remote credits mode to work;
+  * Created inputs from the scratch for jolycdib;
   * Updated technical notes.
 - Made CPUs into proper devices. CPUs are now added in the machine configuration just as any other device, and the standard CPU configuration is performed via the inline configuration macros [Aaron Giles].
 - Changed cpu_type from an enumeration into a pointer to the CPU's get_info function, very similar to device behavior. Updated all drivers to #include the necessary header files for the CPU's they reference [Aaron Giles, Atari Ace].
@@ -59,8 +59,8 @@ Source changes:
 - Added the concept of device "owner", for devices owned by other devices [Aaron Giles].
 - Modified laserdisc players to walk back to their global device state via the owner, rather than brute-force searching for the first instance and hoping that is the right one [Aaron Giles].
 - Finalizer update [poUzVdb90]:
-  * Converted to tilemap.
-  * Added flipscreen.
+  * Converted to tilemap;
+  * Added flipscreen 
   * Changed sound chip name from SN76496 to SN76489A.
 - Made the concept of a "clock" native to devices. The clock is now specified when the device is added, and the clock is available in the device_config directly via device->clock. Updated all devices that have a clock to specify it when adding the device, rather than as part of their configuration. As part of this work, also created device-specific _ADD and _REMOVE macros to simplify configuration [Aaron Giles].
 - Defined a generic device execute function callback, though it is not used yet. The long term plan is that any device with an execute callback will be scheduled along with the CPUs. Now that CPUs are devices, their scheduling will be moved over to this logic eventually [Aaron Giles].
@@ -69,14 +69,14 @@ Source changes:
 - Rewrote the device iteration logic to make use of the typenext field and the newly-introduced classnext field for iterating more efficiently through devices of a given type or class [Aaron Giles].
 - Modified the parameters of the stream_update_func callback. As part of this work, macro-ized all the callbacks to STREAM_UPDATE, and added the sound device as a parameter [Atari Ace].
 - Cleaned up i86/i286/i386/nec/v30mz headers [Aaron Giles]:
-  * Renamed i86.h -> i86priv.h
-  * Renamed i86intrf.h -> i86.h
+  * Renamed i86.h -> i86priv.h;
+  * Renamed i86intrf.h -> i86.h;
   * Consolidated i88intrf.h, i186intf.h, i188intf.h, etc into i86.h.
 - Cleaned up many other CPU headers to move memory read/write macros out of them, since they are inappropriate and should be prive to the CPU core [Aaron Giles].
 - Removed index and clock parameters from CPU_INIT function [Aaron Giles].
 - Some PIC8259 updates [Wilbert Pol]:
- - Fixed operation of edge-triggered interrupts.
-  * INT output line is now cleared when an IRQ is acknowledged.
+  * Fixed operation of edge-triggered interrupts;
+  * INT output line is now cleared when an IRQ is acknowledged;
   * Implemented basic OCW3 features.
 - Fixed proms in boobhack [robiza].
 - Decoded some graphics and setup some RAM in the Virtual Combat driver [Andrew Gardner].
@@ -87,12 +87,12 @@ Source changes:
 - More cleanup. Added address-space-specific constants for the various bus width and shift CPU interface constants. Changed all the cores to use them [Aaron Giles].
 - Changed ADSP21xx cores to accept a configuration struct instead of using set_info to specify serial port callbacks. Simplified the ADSP21xx get/set info significantly. Removed support for only including certain variants of the chips; they are now either all supported or all unsupported [Aaron Giles].
 - Memory view fixes [Aaron Giles]:
-  * Fixed bug that computed the wrong total size if the address space was a full 32 bits.
-  * Improved display to show unmapped memory with *s.
+  * Fixed bug that computed the wrong total size if the address space was a full 32 bits;
+  * Improved display to show unmapped memory with *s;
   * Disabled enumeration of disk and 0-length regions.
 - Added PAL to arkgcbl [robiza].
 - Added Country Girl to the Jangou driver,working with sound [David Haywood, Angelo Salese]:
-  * Fixed transparency pens in the Jangou driver (so removed the GAME_IMPERFECT_GRAPHICS flag); [Angelo Salese]
+  * Fixed transparency pens in the Jangou driver (so removed the GAME_IMPERFECT_GRAPHICS flag) [Angelo Salese].
   * Added a kludge for Jangou Lady RNG,will be worked on in the future [Angelo Salese].
 - Added running_machine callbacks for the Amiga code [Nathan Woods].
 - Updated sscope2 to use newly-dumped roms [robiza].
@@ -104,28 +104,28 @@ Source changes:
 - Fixed some color issues in the goldstar.c driver [David Haywood].
 - Merged goldstar and lucky8 drivers [David Haywood].
 - Improvements to ddragon3/shadfrce/wwfsstar/wwfwfest [Mamesick]:
-  * Converted driver to be fully scanlines based using timers.
-  * Updated driver to new video screen raw parameters.
+  * Converted driver to be fully scanlines based using timers;
+  * Updated driver to new video screen raw parameters;
   * Hooked up interrupts (ddragon3, wwfwfest).
-- Fixed Agress' title screen. [David VanVoorhis].
+- Fixed Agress title screen. [David VanVoorhis].
 - Fixed update_handler for the dsp56k and polygonet [Andrew Gardner].
 - Improvements to the dmndrby.c driver [Mike Green].
 - Continued rewrite of the Motorola DSP56k CPU core [Andrew Gardner]:
-  * Fixed flag calculation and sign extension for numerous ops.
-  * Added rnd, mpysuuu, and dmac ops.
-  * Fixed do loop behavior to skip empty loops.
+  * Fixed flag calculation and sign extension for numerous ops;
+  * Added rnd, mpysuuu, and dmac ops;
+  * Fixed do loop behavior to skip empty loops;
   * Added stack underflow exception handling.
 - Improvements to the skylncr.c driver [Roberto Fresca, David Haywood]:
-  * Complete reel support from the scratch.
-  * Full inputs, outputs & DIP switches from the scratch.
-  * Added new games.
+  * Complete reel support from the scratch;
+  * Full inputs, outputs & DIP switches from the scratch;
+  * Added new games;
   * Updated technical and game notes.
 - Rewrote 8080/8085 interrupt handling so that it makes sense. Changed callbacks to be specified in a config structure. Converted core to cpu_state_table. Changed to a single HAS_808X define for both cores. Fixed several drivers that used 8080/8085 interrupts in odd ways [Aaron Giles].
 - Converted warpwarp driver to raw video parameters [Aaron Giles].
 - Fixed 'run to cursor' and 'toggle breakpoint' operations in the debugger when dealing with CPUs that have shifted address spaces [Andrew Gardner].
 - Improvements to goldstar.c driver [Roberto Fresca]:
-  * Hooked the 3x PPI 8255 devices to chryigld and ncb3.
-  * Reworked the chryigld and ncb3 inputs based on PPI 8255 connections.
-  * Added the unmapped PSG sound to chryigld and ncb3.
-  * Some works on their machine driver.
+  * Hooked the 3x PPI 8255 devices to chryigld and ncb3;
+  * Reworked the chryigld and ncb3 inputs based on PPI 8255 connections;
+  * Added the unmapped PSG sound to chryigld and ncb3;
+  * Some works on their machine driver;
   * Some cleanups.

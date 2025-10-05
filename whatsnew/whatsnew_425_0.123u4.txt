@@ -4,20 +4,20 @@
 
 MAMETesters Bug Fixed (1):
 --------------------------
-00817 (RansAckeR)
+- 00817 (RansAckeR)
 
 
 Source changes:
 ---------------
 - MC6845 updates [Zsolt Vasvari]:
-  * Now signalling both 0->1 and 1->0 transitions of synching pins.
-  * Added mc6845_assert_light_pen_input; uses a timer for latching the light pen address.
-  * Added reset device function.
-  * Implemented VSYNC height computation difference between the Motorola and the Rockwell devices.
-  * Since the Commodore 40xx computers program an HSYNC width that extends past the end of the scanline, I am clamping it in lack of anything better to do.
-  * Added support for the Commodore 6545-1 device type.
-  * Added support for the status register.
-  * Better variable names.
+  * Now signalling both 0->1 and 1->0 transitions of synching pins;
+  * Added mc6845_assert_light_pen_input; uses a timer for latching the light pen address;
+  * Added reset device function;
+  * Implemented VSYNC height computation difference between the Motorola and the Rockwell devices;
+  * Since the Commodore 40xx computers program an HSYNC width that extends past the end of the scanline, I am clamping it in lack of anything better to do;
+  * Added support for the Commodore 6545-1 device type;
+  * Added support for the status register;
+  * Better variable names;
   * More asserts.
 - Updated the "Input (This Game)" menu to support conditional inputs [stephh].
 - Converted Amiga based games to partial updating and proper scanline based timers [Zsolt Vasvari].
@@ -26,17 +26,17 @@ Source changes:
 - Replaced mame_bitmap with direct use of bitmap_t. Removed mame_bitmap typedef [Zsolt Vasvari].
 - Fixed taitoic regression that caused crashes in several games [Zsolt Vasvari].
 - Changed the way VBLANK_INTs are handled:
-  * Defined a new MDRV_CPU_VBLANK_INT_HACK() (in deprecat.h) which is a copy of the current MDRV_CPU_VBLANK_INT().
-  * Found all the places where VBLANK_INT is used with something other than 1 interrupt per frame and changed it to the new macro.
-  * Removed the "# per frame" parameter from MDRV_SCREEN_VBLANK_INT() and added a screen tag in its place; updated all callers appropriately.
+  * Defined a new MDRV_CPU_VBLANK_INT_HACK() (in deprecat.h) which is a copy of the current MDRV_CPU_VBLANK_INT();
+  * Found all the places where VBLANK_INT is used with something other than 1 interrupt per frame and changed it to the new macro;
+  * Removed the "# per frame" parameter from MDRV_SCREEN_VBLANK_INT() and added a screen tag in its place; updated all callers appropriately;
   * Added some validation of the interrupt setup to validate.c.
 - Fixed SH4 refresh ticks value of 0, makes awbios not blow up the timer system [R. Belmont].
 - Updated dkong driver to use two discrete structs which were previously not being used [Couriersud]:
-  * dkong walk using a jump struct .
+  * dkong walk using a jump struct;
   * radarscp using a dkong 555 struct.
 - MACHINE_DRIVER_EXTERN now requires a semicolon. Removed a number of extra semicolons [Couriersud].
 - In memory.c: removed some code never to be executed [Couriersud]:
-  * Removed "return 0" from READ* macros since it is unreachable.
+  * Removed "return 0" from READ* macros since it is unreachable;
   * Removed comparisons of type FPTR < 0 and FPTR >= 0.
 - Identified code not used and marked with "#ifdef UNUSED_FUNCTION" [Couriersud].
 - Naomi: Use defines instead of magic numbers for IRQ sources, add VBL-out [R. Belmont].
@@ -50,9 +50,9 @@ Source changes:
 - Removed use of cpu_scalebyfcount() from CVS driver [Zsolt Vasvari].
 - Changed a number of global functions to being static [Couriersud].
 - Rewrote some potentially compiler specific code [Couriersud]:
-  * Added ATTR_FORCE_INLINE to osdcomm.h.
-  * Added ATTR_NONNULL.
-  * Moved U64 S64 fram mamecore.h to osdcomm.h.
+  * Added ATTR_FORCE_INLINE to osdcomm.h;
+  * Added ATTR_NONNULL;
+  * Moved U64 S64 fram mamecore.h to osdcomm.h;
   * Define SETJMP_GNUC_PROTECT() in osdcomm.h for use in ppc602, ppc603.
 - Removed cpu_getcurrentframe() and replaced it with video_screen_get_frame_number(int scrnum). Updated all callers [Zsolt Vasvari].
 - Moved watchdog processing logic into its own module [Zsolt Vasvari].
@@ -76,10 +76,10 @@ Source changes:
 - These are called read8_device_func, etc. Added macros READ8_DEVICE_HANDLER() for specifying functions of this type [Aaron Giles].
 - Added running_machine * to the device_config, live while the device is live, and NULL otherwise, just like the token [Aaron Giles].
 - Meadows driver updates [Zsolt Vasvari]:
-  * Merged memory maps.
-  * Uses PORT_CHANGED for coins
-  * Changed description from "Inferno (S2650)" to "Inferno (Meadows)".
-  * Changed description from "Bowling 3D" to "3-D Bowling".
+  * Merged memory maps;
+  * Uses PORT_CHANGED for coins;
+  * Changed description from "Inferno (S2650)" to "Inferno (Meadows)";
+  * Changed description from "Bowling 3D" to "3-D Bowling";
   * Added NO_DUMP entries for Gypsy Juggler's ball graphics and added GAME_IMPERFECT_GRAPHICS flag.
 - Fixed sprite colors in Exerion [Zsolt Vasvari].
 - Added new macros AM_DEVREAD, AM_DEVWRITE, and AM_DEVREADWRITE,which specify device read/write handlers in address maps, along with the type/tag of the device they reference [Aaron Giles].
@@ -93,8 +93,8 @@ Source changes:
 - Changed/verified Oki pin 7 on the following pcbs: 1000 miglia, Galspanic, Action Holliwood, Hotmind, HardTimes, World Rally, Stagger1 [Corrado Tomaselli].
 - Added the new display types to the listxml DTD [Oliver Stoneberg].
 - Internal address map constructor changes [Couriersud]:
-  * Pass running_machine parameter to construct_map_##_name.
-  * Change "Machine->" to "machine->" in AM_BASE_MEMBER, AM_SIZE_MEMBER.
+  * Pass running_machine parameter to construct_map_##_name;
+  * Change "Machine->" to "machine->" in AM_BASE_MEMBER, AM_SIZE_MEMBER;
   * Pass Machine in construct_address_map.
 - Mysterious Stones gets the "full treatment" [Zsolt Vasvari].
 - Fix 8085 RST75 not working with PULSE_LINE. According to datasheet, RST7.5 is latched on rising edge, while the other maskable interrupts are sampled [Nicola Salmoria].

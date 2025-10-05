@@ -13,19 +13,19 @@ Trivial Pursuit (Genus I) (set 2) [Andrew Gardner]
 
 MAMETesters Bugs Fixed (13):
 ----------------------------
-asterix_1055gre (Couriersud)
-blktiger37b15gre (Couriersud)
-mnight0102gre (Nicola Salmoria)
-mpatrol0117u2gre (Aaron Giles)
-newui0118u4ora (Atari Ace)
-ninjakd2_0111u3gra (Nicola Salmoria)
-penbros0111u5gra (Brian Troha)
-realbrk0111u4gra (Brian Troha)
-schmisr0111u5gra (Brian Troha, partial fix)
-stadhero0122u3gre (Zsolt Vasvari)
-stadhero0122u3ora (Zsolt Vasvari)
-toki060gre (robiza, Corrado Tomaselli)
-tylz0122u5red (Zsolt Vasvari)
+- asterix_1055gre (Couriersud)
+- blktiger37b15gre (Couriersud)
+- mnight0102gre (Nicola Salmoria)
+- mpatrol0117u2gre (Aaron Giles)
+- newui0118u4ora (Atari Ace)
+- ninjakd2_0111u3gra (Nicola Salmoria)
+- penbros0111u5gra (Brian Troha)
+- realbrk0111u4gra (Brian Troha)
+- schmisr0111u5gra (Brian Troha, partial fix)
+- stadhero0122u3gre (Zsolt Vasvari)
+- stadhero0122u3ora (Zsolt Vasvari)
+- toki060gre (robiza, Corrado Tomaselli)
+- tylz0122u5red (Zsolt Vasvari)
 
 
 Source changes:
@@ -33,37 +33,37 @@ Source changes:
 - Added internal divider on m680* series CPUs (except the original m6800). Updated clocks on all games using them to remove the explicit divider [Aaron Giles].
 - Reverted experimental D3D fix, since it breaks switchres [Aaron Giles].
 - dkong updates [Couriersud]:
-  * Fix dkong sound following Clock Divider update.
-  * Updated to use XTAL_*.
+  * Fix dkong sound following Clock Divider update;
+  * Updated to use XTAL_*;
   * Revert a change after sound regression in dkong.
 - i8085.c updates [Couriersud]:
-  * 8085 has an internal clock divider by 2. Changed i8085.c to reflect this for I8085. I8080 still at 1.
-  * Changed driver clocks to reflect internal clock divider.
+  * 8085 has an internal clock divider by 2. Changed i8085.c to reflect this for I8085. I8080 still at 1;
+  * Changed driver clocks to reflect internal clock divider;
   * Added some FIXME: comments where clocks for I8085 are outside specs.
 - Space Fighter Mark II [Zsolt Vasvari]:
-  * Changed year to 1979 as per Guru's contact.
-  * Renamed set 2 ROMs to allow merging.
+  * Changed year to 1979 as per Guru's contact;
+  * Renamed set 2 ROMs to allow merging;
   * Removed experimental code left in there.
 - phoenix.c updates [Couriersud]:
-  * Modified I8085 clock.
-  * Added dip locations.
-  * Consolidated inputs.
-  * Tagged inputs.
-  * Combined memory maps.
+  * Modified I8085 clock;
+  * Added DIP locations;
+  * Consolidated inputs;
+  * Tagged inputs;
+  * Combined memory maps;
   * Fixed sound issue related to (auto) save states.
 - pleiads updates [Couriersud]:
-  * Video timing from schematics
-  * palette from schematics (resnet.h).
+  * Video timing from schematics;
+  * palette from schematics (resnet.h);
   * No more colortable.
 - survival: Palette from schematics (resnet.h) [Couriersud].
 - Removed bogus (bad) dump of 'Heated Barrel US set 2' [Brian Troha].
 - RSP Changes [SGINut, Nicola Salmoria, Ville Linde]:
-  * Initialize RSP registers to 0 in lieu of mame_rand.
-  * Re-fix RSP single-stepping mode when set by another CPU.
-  * Reading the RSP PC returns only the least significant 12 bits.
-  * Fixed flag behavior when read out via CFC2.
-  * Fixed RSP VRCP instruction to match the real hardware results.
-  * Corrected VRCP element lookup.
+  * Initialize RSP registers to 0 in lieu of mame_rand;
+  * Re-fix RSP single-stepping mode when set by another CPU;
+  * Reading the RSP PC returns only the least significant 12 bits;
+  * Fixed flag behavior when read out via CFC2;
+  * Fixed RSP VRCP instruction to match the real hardware results;
+  * Corrected VRCP element lookup;
   * Corrected unaligned DMA behavior.
 - Removed all palette_X_r functions in favor of direct RAM reads [Zsolt Vasvari].
 - Removed no longer applicable assert from VIDEO_START(generic). Removed VIDEO_START(generic) from drivers that didn't need it. Removed MDRV_VIDEO_START(generic_bitmapped) from drivers that don't need it [Zsolt Vasvari].
@@ -72,48 +72,48 @@ Source changes:
 - Renamed sauro.c sp0256 internal ROM to "sp0256-al2.bin". Removed BAD_DUMP flag from it as well [Couriersud].
 - Marked HD6309 as divide-by-4 internally. Updated drivers accordingly [Aaron Giles].
 - Major cleanup to the ddragon driver [Aaron Giles]:
-  * Improved video and interrupt timing.
-  * Consolidated common memory maps and input ports.
-  * Added save state support.
+  * Improved video and interrupt timing;
+  * Consolidated common memory maps and input ports;
+  * Added save state support;
   * Correct clocks.
 - blktiger.c updates [Couriersud]:
-  * Combines memory maps.
-  * Input ports were tagged.
-  * All reads use input port tags.
+  * Combines memory maps;
+  * Input ports were tagged;
+  * All reads use input port tags;
   * Added dip switch locations from Romstar manual.
 - Added all known variants of the tms5110 as proper chips. Updated dkong, cvs and scramble to use new chips [Couriersud].
 - Converted atarifb.c to tilemaps [Zsolt Vasvari].
 - Switched namcos11/namcos12 over to memory_configure_bank / memory_set_bank. Simplified golgo 13 gun reading [smf].
 - mpatrol driver cleanup [Aaron Giles]:
-  * Merged memory maps.
-  * Complete memory map.
-  * Correct video timing.
-  * Correct CPU clocks.
-  * Replaced protection hack with actual implementation.
+  * Merged memory maps;
+  * Complete memory map;
+  * Correct video timing;
+  * Correct CPU clocks;
+  * Replaced protection hack with actual implementation;
   * Cleaned up inputs.
 - Added tilemap_get_scrollx / tilemap_get_scrolly [Nicola Salmoria].
 - Preserve fractional part of sample offset when looping in SCSP. Fixes remaining pitch stability problems. Fixed minor issue with timers B&C expiring [kingshriek, R. Belmont].
 - auto_malloc() once again actually fails when out of memory [Aaron Giles].
 - Switched zn.c to use MDRV_IMPORT_FROM [smf].
 - mario.c changes [Couriersud]:
-  * Removed all traces to video/generic.h.
-  * Fix flipscreen issue with autosave.
+  * Removed all traces to video/generic.h;
+  * Fix flipscreen issue with autosave;
   * On a hires PCB picture, verified resistor and capacitor values.
 - Added dip locations to 'Real Break'. Filled in a couple of dips for the 'Pachinko Gindama Shoubu' games [Brian Troha].
 - Fixed invalid memory_install_*_handler calls in drivers/williams.c. Emulated external OR circuit for all drivers using the PIA chip. This used to be internal to the PIA emulation, but, in fact, this is external logic. The PIA has two seperate INTA and INTB out lines. This fixes at least PlayBall [Zsolt Vasvari].
 - Added the ability to the HC55516 emulator to take an external osciallator. Updated Mouse Trap to use the new interface [Zsolt Vasvari].
 - Cleaned up and merged ninjakd2, mnight and omegaf drivers into a single driver. Additionally [Nicola Salmoria]:
-  * Added flip screen support to all games.
-  * Fixed sprite overdraw mode:
-  * injakd2 congratulations screen (e.g. stage 3) shows japanese characters which were previously missing.
-  * In ninjakd2, at the beginning of a level items are visible during the initial fade in. I'm not sure if this is correct  but the other effects wouldn't work otherwise.
-  * In mnight attract mode, when the big ship is firing the other sprites no longer leave trails.
-  * In mnight at the end of a level the screen is slowly filled  with balls and then slowly cleared to begin the following  level. Same effect in the death sequence during attract mode.
-  * Added proper computation of sprites to be drawn taking into account double size sprites. This fixes sticking shots in mnight without need for a hack.
-  * Lowered ninjakd2 PCM playback rate to 13020 (from 16000). This  seems to sound better and is a round division from one of the  master clocks.
-  * Removed ROM patch that was used to avoid the input protection in omegaf, added a rough but effective protection simulation.
-  * Corrected some dip switches
-  * Hooked up sound cpu reset line
+  * Added flip screen support to all games;
+  * Fixed sprite overdraw mode;
+  * injakd2 congratulations screen (e.g. stage 3) shows japanese characters which were previously missing;
+  * In ninjakd2, at the beginning of a level items are visible during the initial fade in. I'm not sure if this is correct  but the other effects wouldn't work otherwise;
+  * In mnight attract mode, when the big ship is firing the other sprites no longer leave trails;
+  * In mnight at the end of a level the screen is slowly filled  with balls and then slowly cleared to begin the following  level. Same effect in the death sequence during attract mode;
+  * Added proper computation of sprites to be drawn taking into account double size sprites. This fixes sticking shots in mnight without need for a hack;
+  * Lowered ninjakd2 PCM playback rate to 13020 (from 16000). This  seems to sound better and is a round division from one of the  master clocks;
+  * Removed ROM patch that was used to avoid the input protection in omegaf, added a rough but effective protection simulation;
+  * Corrected some DIP switches;
+  * Hooked up sound CPU reset line;
   * implified ROM loading for the older games swizzling address lines in driver init.
 - Added MDRV_SOUND_ROUTE_EX to specify target input channel. Added input id to route struct. Fixed DISCRETE_INPUT_STREAM and added input channel # to DISCRETE_INPUT_STREAM [Couriersud].
 - Fixed default debugger memory view width for CPUs with >byte-sized minimum. Made menu updating dynamic at click time, fixing issues with incorrect checkmarks [Aaron Giles].
@@ -128,12 +128,12 @@ Source changes:
 - Changed YM2203 clock in stfight to 3MHz (compared against OST) [Yasuhiro Ogawa].
 - Improved linear zoom effect resolution to address gaps in CPS3 rendering [OopsWare].
 - Rewrote and modernized the redalert driver [Zsolt Vasvari]:
-  * Correct colors - in places different from the manual's description, but matches the flyer perfectly.
-  * Added speech.
-  * Fixed AY-8910 sounds.
-  * Odds and ends.
-  * Corrected colors in 'Demoneye-X'.
-  * Added some sound to "Demoneye-X'.
+  * Correct colors - in places different from the manual's description, but matches the flyer perfectly;
+  * Added speech;
+  * Fixed AY-8910 sounds;
+  * Odds and ends;
+  * Corrected colors in 'Demoneye-X';
+  * Added some sound to "Demoneye-X';
   * Marked Demoneye-X it NOT_WORKING, due to the (still) missing 3rd GFX layer that makes it impossible to pass the 2nd level.
 - Added all the known Naomi BIOS dumps along with descriptions and information about region bytes & version numbers [Brian Troha].
 - Removed the freely distributable Exidy games' dependency on 'Berzerk' [Zsolt Vasvari].

@@ -40,16 +40,16 @@ Source changes:
 - Implemented m90 playfield 1 and playfield 2 y-offset table. This fixes, at least, the water effect in riskchal and the text fading effect in the matchit2 demo [Pierpaolo Prazzoli, Tomasz Slanina].
 - Started changing naomi GDROM sets to load the CHDs [David Haywood].
 - Additional documentation for 'Egg Venture' and 'Lethal Justice' [Brian Troha]:
-  * Added JAMMA pinout.
-  * Gun Connector pinout.
+  * Added JAMMA pinout;
+  * Gun Connector pinout;
   * Sound & Amp information.
 - snk.c coin inputs seem to be active high (except for jcross) [Nicola Salmoria].
 - Fixed bg tile banking in Canvas Croquis. Removed snkwave since it doesn't seem to be used and might not be present on the PCB at all.General driver cleanup, bringing it in line with snk.c but not merging it since somthing doesn't quite fit [Nicola Salmoria].
 - Merged memory maps in munchmo.c [Nicola Salmoria].
 - Changes to magic10 driver [Roberto Fresca]:
-  * Better structure and organization.
-  * Added 'Super Gran Safari'.
-  * Added improved lamps layout to 'Super Gran Safari' and 'Magic's 10'.
+  * Better structure and organization;
+  * Added Super Gran Safari;
+  * Added improved lamps layout to Super Gran Safari and Magic's 10.
 - Added new device interface selector: DEVINFO_PTR_ROM_REGION. This allows a device to provide a set of ROM regions to be loaded along with the game ROMs. It is expected that most regions defined for devices will use the ROMREGION_LOADBYNAME flag to enable the ROMs to live in a central location [Aaron Giles].
 - Added new device interface selector: DEVINFO_PTR_MACHINE_CONFIG. This allows a device to specify a partial machine driver which is appended to the end of the machine driver for any game using that device. The intention for this is to allow devices which have their own BIOS logic to specify CPUs and other characteristics common to all systems using the device [Aaron Giles].
 - Added new ROMREGION flag: ROMREGION_LOADBYNAME, which means that if the ROMs in that region are not found in the usual driver files, then the name of the region will be used as a driver filename for loading [Aaron Giles].
@@ -67,20 +67,20 @@ Source changes:
 - CPUs, sound chips, devices, and ROM-regions which are specified by devices now have their tags auto-prefixed with the device's tag. This allows for multiple instances to be present. For example, the PR-8210 laserdisc player has a CPU with a tag of "pr8210". When it is included as a device by a driver, the driver may tag the device "laserdisc". The resulting final CPU tag name will be "laserdisc:pr8210". Also updated the debugger expression engine to support names with embedded colons [Aaron Giles].
 - Added checks to ensure that tags used for CPUs, sound chips, regions, and devices follow some basic rules: they should be less than 15 characters long, be all lower-case, and only contain letters, numbers, underscores, or dots (no spaces). This is to ensure that they can be used properly in debugger expressions and don't get too long or unwieldy to type (even 15 chars is rather long). Fixed up all tags in the system that failed these checks [Aaron Giles].
 - Space Win changes [Roberto Fresca]:
-  * Some corrections to the memory map.
-  * Added proper working RAM.
-  * Added Dallas DS1220Y NVRAM.
-  * Added output port.
-  * Added lamps layout.
-  * Added complete inputs.
-  * Changed description to "Scacco Matto / Space Win" since the default game is Scacco Matto.
-  * Fixed memory maps.
-  * Documented Super Derby outputs.
-  * Added lamps support + layout to Super Derby.
-  * Fixed the phisical RAM size to all games.
-  * Fixed the wrong NVRAM size to spacewin (16Kb instead of 16KB).
-  * Added proper NVRAM to sderby and pmroulet.
-  * Added the missing 3rd input to pmroulet (needed for 3-button mode).
+  * Some corrections to the memory map;
+  * Added proper working RAM;
+  * Added Dallas DS1220Y NVRAM;
+  * Added output port;
+  * Added lamps layout;
+  * Added complete inputs;
+  * Changed description to "Scacco Matto / Space Win" since the default game is Scacco Matto;
+  * Fixed memory maps;
+  * Documented Super Derby outputs;
+  * Added lamps support + layout to Super Derby;
+  * Fixed the phisical RAM size to all games;
+  * Fixed the wrong NVRAM size to spacewin (16Kb instead of 16KB);
+  * Added proper NVRAM to sderby and pmroulet;
+  * Added the missing 3rd input to pmroulet (needed for 3-button mode);
   * Cleaned up the driver.
   You must enter the service mode and change graphics in order to switch the game.
 - Changed DEVICE_START functions to return an error code. Currently this is either DEVICE_START_OK or DEVICE_START_MISSING_DEPENDENCY. The latter should be returned by a device if there is another device it depends on which hasn't been started yet. Added new flag in the device interface to indicate whether a device has been started [Aaron Giles].
@@ -94,32 +94,32 @@ Source changes:
 - Started adding naomi2 sets [David Haywood].
 - Added sprites buffering to Limenko driver and removed imperfect video flag from spotty [Pierpaolo Prazzoli].
 - Improvements to Croupier (Playmark Roulette) [Roberto Fresca]:
-  * Simulated the MCU communication/protection. The game seems to work properly, but is hard to win I conserved the game flags till we have the MCU decapped, and emulated properly. 
-  * Added full sound support.
+  * Simulated the MCU communication/protection. The game seems to work properly, but is hard to win I conserved the game flags till we have the MCU decapped, and emulated properly;
+  * Added full sound support;
   * Added lamps support + layout.
 - Fixed memory handling of internal banks. They should be LOWER priority than the driver's memory maps. Reverted recent changes to MCS-48 core that were very hacky and which crashed many games. You can now properly override the internal memory map and do your own banking [Aaron Giles].
 - 8080/8085 CPU core updates [Miodrag Milanovic]:
-  * ANA/ANI instruction, HF flag was not set right because error in calculation of it (missing brackets).
-  * 8080 have NF flag always set (it is not used flag but bit is always set)
+  * ANA/ANI instruction, HF flag was not set right because error in calculation of it (missing brackets);
+  * 8080 have NF flag always set (it is not used flag but bit is always set);
   * Added support for status output lines.
 - Moved more static data into const and added some more explicit initialization [Atari Ace].
 - Added LSI BIOS to the Atari System 1 driver. Made the System 1 BIOS a proper BIOS. Removed restriction that BIOS-related ROMs must immediately follow the BIOS definition [Kevin Eshbach, Aaron Giles].
 - cave.c changes [Kevin Eshbach]:
-  * Changed the hardcoded MHz values in the Cave driver to the XTAL equivalents.
+  * Changed the hardcoded MHz values in the Cave driver to the XTAL equivalents;
   * Updated the Cave driver for the game Guwange with gals that need to be dumped.
 - Jail Break changes [Kevin Eshbach]:
-  * Updated the Jail Break driver with the dip locations.
-  * Corrected the Jail Break driver sound chip from a SN76496 to a SN76489.
-  * Corrected the Jail Break ROM names.
+  * Updated the Jail Break driver with the dip locations;
+  * Corrected the Jail Break driver sound chip from a SN76496 to a SN76489;
+  * Corrected the Jail Break ROM names;
   * Redumped the Jail Break VLM ROM dump.
 - Super Basketball changes [Kevin Eshbach]:
-  * Corrected the Super Basketball Revision H ROM dump.
+  * Corrected the Super Basketball Revision H ROM dump;
   * Updated the Super Basketball driver with the dip locations.
-  * Corrected the Super Basketball VLM XTAL.
-  * Corrected the Super Basketball parent/child relationships by making the Revision H the parent.
+  * Corrected the Super Basketball VLM XTAL;
+  * Corrected the Super Basketball parent/child relationships by making the Revision H the parent;
   * Turned on save state support for the Super Basketball driver.
 - Updated the Sega System 1 driver with more board information on the Choplifter bootleg and updated the placeholders for the pals that need to be dumped [Kevin Eshbach].
-- Updated the 'WWF Wrestlefest' driver ROM names. Added save state support to the WWF Wrestlefest driver [Kevin Eshbach].
-- C352 cleanup: Removed an unused volume table dating from before the volume was (correctly) implemented as linear. [Olivier Galibert].
+- Updated the WWF Wrestlefest driver ROM names. Added save state support to the WWF Wrestlefest driver [Kevin Eshbach].
+- C352 cleanup: Removed an unused volume table dating from before the volume was (correctly) implemented as linear [Olivier Galibert].
 - Added memory checking and error logic to ledutil.c [Christophe Jaillet].
 - Added running_machine * to some more locations in the system. Updated drivers accordingly [Oliver Stoeneberg].

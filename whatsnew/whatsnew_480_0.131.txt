@@ -2,16 +2,7 @@
 -------------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
-- 00767: [DIP/Input] bshark, bsharkj: Analog stick input is broken since 0.112u4 (Derrick Renaud).
-- 02399: [Known Issues/To-Do's] qmhayaku : Sound CPU is running at 4MHz in real machine (Luigi30).
-- 03070: [DIP/Input] harddriv, racedriv, steeltal and clones: Games map some P1 inputs to P2 controls (Fabio Priuli).
-- 03105: [Documentation] quizmeku: Year is listed as 1994, but title screen shows 1992 (Fabio Priuli).
-- 03115: [Graphics] nss_smw: Tilemap issue when displaying game map (Angelo Salese).
-
-
-New games added or promoted from NOT_WORKING status
+New Games Added or Promoted from NOT_WORKING Status
 ---------------------------------------------------
 Fantastic Journey [Olivier Galibert]
 Multi Game 2 [Mariusz Wojcieszek]
@@ -19,12 +10,12 @@ Status Blackjack [Aaron Giles]
 Status Fun Casino [Aaron Giles]
 Super Lucky Roulette [robiza]
 
-New clones added
+New Clones Added
 ----------------
 Ashura Blaster (World) [Tirino73]
 Asterix (Japan) [Chack'n]
 
-New games marked as GAME_NOT_WORKING
+New Games Marked as GAME_NOT_WORKING
 ------------------------------------
 Casino Strip [Aaron Giles]
 Death Crimson OX [Guru]
@@ -47,6 +38,15 @@ WWF Royal Rumble [Guru]
 Zombie Revenge [Guru]
 
 
+MAMETesters Bugs Fixed (5):
+---------------------------
+- 00767: [DIP/Input] bshark, bsharkj: Analog stick input is broken since 0.112u4 (Derrick Renaud)
+- 02399: [Known Issues/To-Do's] qmhayaku : Sound CPU is running at 4MHz in real machine (Luigi30)
+- 03070: [DIP/Input] harddriv, racedriv, steeltal and clones: Games map some P1 inputs to P2 controls (Fabio Priuli)
+- 03105: [Documentation] quizmeku: Year is listed as 1994, but title screen shows 1992 (Fabio Priuli)
+- 03115: [Graphics] nss_smw: Tilemap issue when displaying game map (Angelo Salese)
+
+
 Source changes:
 ---------------
 - Added basic implementation of the TMS9927 video controller [Aaron Giles].
@@ -62,16 +62,16 @@ Source changes:
 - Fixed verbose output of RAW device names for XP [Derrick Renaud].
 - Fixed XF flag in the 8085A core [Aaron Giles].
 - Merged findout.c memory map [Angelo Salese].
-- Merged memory map and attempted to add proper colors in 'Carrera' [Angelo Salese].
+- Merged memory map and attempted to add proper colors in Carrera [Angelo Salese].
 - Merged memory maps in the suna8, supbtime, superchs, suprnova, suprslam, subs, suna16, stepstag, stfight, strnskill drivers [Aaron Giles].
 - Miscellaneous Naomi work and improvements. Some refactoring done, new games hooked up. Moved NAOMI DRIVER_INITs to specific machine/naomi.c & includes/naomi.h files, in preparation to add per-game JVS settings [Angelo Salese, David Haywood].
 - Numerous improvements to the roul driver [robiza].
 - Removed the last use of PORT_PLAYER(2) for P1 inputs [Fabio Priuli].
 - Removed YM2151 from gijoe which is not present on real PCB [Yasuhiro Ogawa].
 - Status games driver rewrite [Aaron Giles]:
-  * Reduced multiple drivers down to a primary one with minor tweaks.
-  * Hooked up TMS9927 video generator.
-  * Fixed statriv2v character generator to be more. accurate.
-  * Fixed incorrect colors.
+  * Reduced multiple drivers down to a primary one with minor tweaks;
+  * Hooked up TMS9927 video generator;
+  * Fixed statriv2v character generator to be more. accurate;
+  * Fixed incorrect colors;
   * Correct video timing.
-- When using RawInput - Fixed UI selection of Gun axis so Gun 1 is not always selected with the desired gun [Derrick Renaud].
+- When using RawInput: Fixed UI selection of Gun axis so Gun 1 is not always selected with the desired gun [Derrick Renaud].

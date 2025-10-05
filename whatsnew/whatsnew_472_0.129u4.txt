@@ -87,22 +87,22 @@ Source changes:
 - Added PCB layout for Funcube and corrected ROM names based on a hi-res photo of the PCB [Brian Troha].
 - Improve disassembly of R3000 code that uses the TLB or FPU [R. Belmont].
 - Added new game Number Dieci [Mirko Buffoni]:
-  * Seems a IGS poker hack to comply with 2000's Italian law
-  * Sound synthesys have been replaced by OKIM ADPCM samples.
-  * Some patched out routines have been recovered to allow test mode dsw mapping.
+  * Seems a IGS poker hack to comply with 2000's Italian law;
+  * Sound synthesys have been replaced by OKIM ADPCM samples;
+  * Some patched out routines have been recovered to allow test mode dsw mapping;
   * Mapped Stelle e Cubi to this memory map, something shows but graphic is from a bad dump.
 - Added new game PK Tetris [Mirko Buffoni]:
-  * Strange game with an amusement part (sort of Tetris mixed with Poker).
+  * Strange game with an amusement part (sort of Tetris mixed with Poker);
   * Amuse input not mapped, may be necessary for the amusement part which can be disabled via DSW.
-- Fixed various issues with 'Il Pagliaccio' driver [Angelo Salese]:
-  * Fixed ROM source reading for the blitter.
-  * Properly use height/width params for the blitter.
-  * Hooked up the backup ram;
+- Fixed various issues with Il Pagliaccio driver [Angelo Salese]:
+  * Fixed ROM source reading for the blitter;
+  * Properly use height/width params for the blitter;
+  * Hooked up the backup RAM;
   * Added basic inputs.
   * Removed deprecat.h dependancy.
 - Moved over some of the AGEMAME drivers [David Haywood, thanks to James Wallace/ageMAME].
-- Further fixes with 'Il Pagliaccio' blitter [Angelo Salese]:
-  * Fixed Transparency pens.
+- Further fixes with Il Pagliaccio blitter [Angelo Salese]:
+  * Fixed Transparency pens;
   * Fixed color pens for the charset.
 - Merged 'Strip Teaser' and 'Il Pagliaccio' driver, fixed the layer clearance for both and added a preliminary MCU simulation for the former [Angelo Salese].
 - Relaxed 8 letter setname limitation for clone sets - this is designed to make it easier to add simple suffixes to clone names without truncating the original set name, it isn't designed to be abused and used as an alternate description [Olivier Galibert].
@@ -118,40 +118,40 @@ Source changes:
 - Added extensive readme doc to the Sega X Board driver [Guru].
 - Decrypted a large number of games in goldstar.c and sfbonus.c [Olivier Galibert].
 - WIP mario update with some FIXMEs [Couriersud, Smitdogg]:
-  * Created custom module for run sounds. Running the discrete sound system at 480KHz was not really optimal.
-  * Reviewed parts list, schematics and pcb pictures
-  * Brought mario run sound in line with recordings from Smitdogg.
-  * VCO voltage needs to be 0V for this to happen. Verification outstanding
+  * Created custom module for run sounds. Running the discrete sound system at 480KHz was not really optimal;
+  * Reviewed parts list, schematics and pcb pictures;
+  * Brought mario run sound in line with recordings from Smitdogg;
+  * VCO voltage needs to be 0V for this to happen. Verification outstanding;
   * Capacitors needed some ageing applied as well. To be removed once the VCO issue is clarified.
 - Refactored the ACIA6850 to use devcb [Curt Coder].
 - Added a patch to Jackie driver, game now works [Mirko Buffoni]:
-  * Added complete reel emulation (thanks to Luca, Angelo and David drivers studied to better understand hardware similarities).
+  * Added complete reel emulation (thanks to Luca, Angelo and David drivers studied to better understand hardware similarities);
   * Press T to toggle amuse game, used to mask gambling activities.
 - Added 'Champion League' [Mirko Buffoni]:
-  * Same encryption and patches used in Numero10, but on standard IGS Poker V220I board
+  * Same encryption and patches used in Numero10, but on standard IGS Poker V220I board;
   * Reworked expansion ROM memory map handler.
 - Added effect sound banking, coin counters and sprites - sprites priority to silkroad [Pierpaolo Prazzoli].
 - Made a bunch of improvements to the goldstar driver now that the sets are decrypted [David Haywood].
 - Revisited seibu decryption [Nicola Salmoria].
 - Converted all sound chips into proper devices. Merged the sound chip interface into the device interface, removing any differences (such as the whole ALIASing concept) [Aaron Giles].
 - Modified every sound chip in the following ways [Aaron Giles]:
-  * Updated to match the device interface.
-  * Reduced read/write handlers down to the minimal number.
-  * Added the use of get_safe_token() for ensuring correctness.
+  * Updated to match the device interface;
+  * Reduced read/write handlers down to the minimal number;
+  * Added the use of get_safe_token() for ensuring correctness;
   * Other minor cleanup.
 - Removed the custom sound device. The additional work to just make custom sound cases into full devices is minimal, so I just converted them all over to be actual devices [Aaron Giles].
 - Vastly simplified the sound interfaces, removing the ghastly sndti_* business and moving everyone over to using tags for sound identity. sndintrf, like cpuintrf, is now just a header file with no implementation [Aaron Giles].
 - Modified each and every driver that references a sound chip [Aaron Giles]:
-  * All memory maps explicitly reference the targeted device via AM_DEVREAD/AM_DEVWRITE/AM_DEVREADWRITE.
-  * 16-bit and 32-bit accesses to 8-bit chips no longer use trampoline functions but instead use the 8-bit AM_DEVREAD/WRITE macros.
-  * All references to sound chips are now done via TAGs.
+  * All memory maps explicitly reference the targeted device via AM_DEVREAD/AM_DEVWRITE/AM_DEVREADWRITE;
+  * 16-bit and 32-bit accesses to 8-bit chips no longer use trampoline functions but instead use the 8-bit AM_DEVREAD/WRITE macros;
+  * All references to sound chips are now done via TAGs;
   * Note that these changes are brute force, not optimal; in many cases drivers should grab pointers to devices in MACHINE_START and stash them away.
 - Fixed a couple of dipswitches for Progress [Brian Troha].
 - goldstar.c improvements [Roberto Fresca]:
-  * Full inputs and DIP switches from the scratch for schery97, schery97a and skill98.
-  * Changed the sets description to match the program version.
-  * Cleaned-up the game driver zone for better organization purposes.
-  * Added GAME_NO_SOUND flag to schery97, schery97a and skill98.
+  * Full inputs and DIP switches from the scratch for schery97, schery97a and skill98;
+  * Changed the sets description to match the program version;
+  * Cleaned-up the game driver zone for better organization purposes;
+  * Added GAME_NO_SOUND flag to schery97, schery97a and skill98;
   * Added some program version notes.
 - Fixed a contact MAMEDEV message in cps1.c [Nicola Salmoria].
 - Changed sfbonus to use tilemaps [David Haywood].
@@ -164,11 +164,11 @@ Source changes:
 - Added Read Parameter Register support to the hd63484. Moved logging behind a define [Phil Bennett].
 - Added PCB layout for Zoar. Corrected AY-3-8910 clocks and added missing PROM [Guru].
 - More improvements to goldstar.c [Roberto Fresca]:
-  * Added 3 new machine drivers for the different Amcoe games hardware.
-  * Added OKI M6295 support for speech/sounds to schery97, schery97a, skill98, pokonl97 and match98.
-  * Fixed sound support to nfb96, nfb96a, nfb96b, nfb96c, nfb96txt, roypok96, roypok96a, roypok96b, nc96, nc96a, nc96b, nc96c, nc96txt, nfb96se, nfb96sea, nfb96seb, carb2002 and carb2003.
-  * Full inputs & DIP switches from the scratch for pokonl97, match98, nfb96, nfb96a, nfb96b, nfb96c, nfb96txt, roypok96, roypok96a, roypok96b, nc96, nc96a, nc96b, nc96c, nc96txt, nfb96se, nfb96sea, nfb96seb, carb2002 and carb2003. All these were promoted to working state.
-  * Fixed size and position of tilemaps visible area to match98.
+  * Added 3 new machine drivers for the different Amcoe games hardware;
+  * Added OKI M6295 support for speech/sounds to schery97, schery97a, skill98, pokonl97 and match98;
+  * Fixed sound support to nfb96, nfb96a, nfb96b, nfb96c, nfb96txt, roypok96, roypok96a, roypok96b, nc96, nc96a, nc96b, nc96c, nc96txt, nfb96se, nfb96sea, nfb96seb, carb2002 and carb2003;
+  * Full inputs & DIP switches from the scratch for pokonl97, match98, nfb96, nfb96a, nfb96b, nfb96c, nfb96txt, roypok96, roypok96a, roypok96b, nc96, nc96a, nc96b, nc96c, nc96txt, nfb96se, nfb96sea, nfb96seb, carb2002 and carb2003. All these were promoted to working state;
+  * Fixed size and position of tilemaps visible area to match98;
   * More driver cleanups.
 - Cidelsa changes [Curt Coder]:
   * Combined CDP1869 video and sound parts to one device.

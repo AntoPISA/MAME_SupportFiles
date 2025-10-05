@@ -19,8 +19,8 @@ Witch Card (spanish)(2 sets) [Roberto Fresca]
 Buena Suerte (spanish, set 2) [Roberto Fresca]
 Super Loco 93 (spanish, set 2) [Roberto Fresca]
 
-New Games Marked as GAME_NOT_WORKING
-------------------------------------
+New Game Marked as GAME_NOT_WORKING
+-----------------------------------
 Royale [Roberto Fresca]
 
 
@@ -49,15 +49,15 @@ Source changes:
 ---------------
 - Updated DIP Switches and Inputs for 'yesnoj' (taito_f2.c driver) [stephh].
 - Fixed several things in the jalmah.c driver [Angelo Salese]:
-  * Fixed Mahjong Daireikai pseudo-random number generator.
-  * Fixed Otogizoushi Urashima Mahjong to make it playable.
+  * Fixed Mahjong Daireikai pseudo-random number generator;
+  * Fixed Otogizoushi Urashima Mahjong to make it playable;
   * Fixed a start-up crashing bug in mjzoomin/urashima/daireika.
 - Simplified expro02 decryption [Nicola Salmoria].
 - Completed general NeoGeo cleanup [JohnBoy]:
-  * Sorted OEM/bootleg sets.
-  * Renamed ROMs on non OEM/bootleg sets to ONE naming sheme.
-  * Renamed functions.
-  * Cleaned up bootleg sets.
+  * Sorted OEM/bootleg sets;
+  * Renamed ROMs on non OEM/bootleg sets to ONE naming scheme;
+  * Renamed functions;
+  * Cleaned up bootleg sets;
   * Added some comments.
   * Renamed sma in garou/garouo, added comment.
 - Changed Cube Quest laserdisc override logic. It's still a little hacky but this works better than the previous attempt [Aaron Giles].
@@ -66,42 +66,42 @@ Source changes:
 - PsikyoSH: hook up VBL IRQ ack [R. Belmont].
 - SH2: fix DRC's handling of internally generated IRQs, and fix compiling in interpreter mode [R. Belmont].
 - Rewrote pmpoker.c driver (first part) [Roberto Fresca, Grull Osgo]:
-  * Added discrete sound support to Golden Poker hardware games based on schematics.
-  * Added discrete sound support to Potten's Poker hardware games based on PCB analysis.
-  * Added discrete circuitry diagrams for both hardware types.
-  * Adjusted the CPU adressing to 15 bits for pmpoker/goldenpkr hardware.
-  * Adjusted the CPU adressing to 14 bits for pottnpkr hardware.
-  * Rewrote all the ROM loads based on these changes.
-  * Defined MASTER Xtal & CPU clock.
-  * Fixed the visible area based on M6845 registers.
-  * Improved the lamps layouts to be more realistic.
-  * Added Good Luck (potten's poker hybrid running in goldnpkr hardware).
-  * Added Buena Suerte (spanish) x 2 sets.
-  * Added set Royale.
-  * Added Witch Card and spanish variants.
-  * Added Super Loco 93 (spanish) x 2 sets.
-  * Renamed set goldnpkc to pottnpkr (parent Jack Potten's Poker set).
-  * Renamed set jokerpkr to potnpkra, since is another Jack Potten's Poker set.
-  * Added other 2 clones of Jack Potten's Poker.
-  * Renamed/cleaned all sets based on code/hardware analysis.
-  * Added intensity bit to the color system.
-  * Implemented the blue killer bit for Witch Card hardware.
-  * Implemented the extended graphics addressing bit for Witch Card hardware.
-  * Added proper visible area to sloco93.
-  * Rewrote the graphics & color decode system based on schematics. No more patched codes.
-  * Changed the char gfx bank structure and ROM load according to the new routines.
-  * Adjusted the amount of color codes and PROM region size accordingly.
+  * Added discrete sound support to Golden Poker hardware games based on schematics;
+  * Added discrete sound support to Potten's Poker hardware games based on PCB analysis;
+  * Added discrete circuitry diagrams for both hardware types;
+  * Adjusted the CPU adressing to 15 bits for pmpoker/goldenpkr hardware;
+  * Adjusted the CPU adressing to 14 bits for pottnpkr hardware;
+  * Rewrote all the ROM loads based on these changes;
+  * Defined MASTER Xtal & CPU clock;
+  * Fixed the visible area based on M6845 registers;
+  * Improved the lamps layouts to be more realistic;
+  * Added Good Luck (potten's poker hybrid running in goldnpkr hardware);
+  * Added Buena Suerte (spanish) x 2 sets;
+  * Added set Royale;
+  * Added Witch Card and spanish variants;
+  * Added Super Loco 93 (spanish) x 2 sets;
+  * Renamed set goldnpkc to pottnpkr (parent Jack Potten's Poker set);
+  * Renamed set jokerpkr to potnpkra, since is another Jack Potten's Poker set;
+  * Added other 2 clones of Jack Potten's Poker;
+  * Renamed/cleaned all sets based on code/hardware analysis;
+  * Added intensity bit to the color system;
+  * Implemented the blue killer bit for Witch Card hardware;
+  * Implemented the extended graphics addressing bit for Witch Card hardware;
+  * Added proper visible area to sloco93;
+  * Rewrote the graphics & color decode system based on schematics. No more patched codes;
+  * Changed the char gfx bank structure and ROM load according to the new routines;
+  * Adjusted the amount of color codes and PROM region size accordingly;
   * Updated all notes.
 - Large update to comments in smstrv.c for SMS Manufacturing boards. Documented how the input/output ports are hooked up, and what the PALS do, still need to document the video output port and add the smssshot roms, and actually hook stuff up (like the z80) based on the comments [Lord Nightmare].
 - Removed speedups from sokyugrt, they break the game (make it too slow) the SH2 DRC is sufficient [David Haywood].
 - Did most of the protection work for Double Dealer. It appears to use a funky video register setting involving locations $8c1e0-8c1ef range for cards movements so it isn't playable yet [Angelo Salese].
 - Added DIP LOCATIONS to items in the driver and cleaned up some of the comments mentioning duplicate dips configurations. Not fully understanding how the FREE PLAY was implemented, I left that not to show a location [Tafoid].
 - cubeqst changes [Aaron Giles]:
-  * Removed custom sound in favor of individual DACs.
-  * Simplified palette management logic.
+  * Removed custom sound in favor of individual DACs;
+  * Simplified palette management logic;
   * Hooked up the "disc on" signal.
 - Cleaned up Firefox video implementation [Aaron Giles]:
-  * Proper sprite/tile priorities
-  * Adjusted X offset to match screenshots.
+  * Proper sprite/tile priorities;
+  * Adjusted X offset to match screenshots;
   * Converted to tilemaps.
 - Added cawing B-Board PAL dumps [Corrado Tomaselli].

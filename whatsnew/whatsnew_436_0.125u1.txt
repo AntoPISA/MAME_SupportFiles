@@ -19,20 +19,20 @@ Legendary Wings (bootleg) [Sonikos]
 Megatouch III (9255-20-06 RON) [Brian Troha]
 The Legend of Kage [Stefan Lindberg]
 
-New Games Marked as GAME_NOT_WORKING
-------------------------------------
+New Game Marked as GAME_NOT_WORKING
+-----------------------------------
 beatmania THE FINAL (ver JA-A) [Chizzy]
 
 
 MAMETesters Bugs Fixed (7):
 ----------------------
-01713: [DIP/Input] spaceg: All joystick/buttons mapped twice. Button 1 is mapped 3 times! (stephh).
-01717: [DIP/Input] arcadecl, sparkz: Service Key mapped twice (stephh).
-01738: [Misc.] neruton: Typo in title (Roberto Fresca).
-01787: [DIP/Input] columnsu: 1st unknown dip switch indentified (Roberto Fresca).
-01790: [DIP/Input] zerowng2: Last "Unused" DIP switch is for territory (Roberto Fresca).
-01791: [DIP/Input] asterock: Unable to credit up or play the game. Also, there are discrete sound issues (Fabio Priuli).
-01795: [Misc.] tm, tm3k, tm4k, tm5k, tm7k: Day on clock doesn't work (Luigi30).
+- 01713: [DIP/Input] spaceg: All joystick/buttons mapped twice. Button 1 is mapped 3 times! (stephh)
+- 01717: [DIP/Input] arcadecl, sparkz: Service Key mapped twice (stephh)
+- 01738: [Misc.] neruton: Typo in title (Roberto Fresca)
+- 01787: [DIP/Input] columnsu: 1st unknown dip switch indentified (Roberto Fresca)
+- 01790: [DIP/Input] zerowng2: Last "Unused" DIP switch is for territory (Roberto Fresca)
+- 01791: [DIP/Input] asterock: Unable to credit up or play the game. Also, there are discrete sound issues (Fabio Priuli)
+- 01795: [Misc.] tm, tm3k, tm4k, tm5k, tm7k: Day on clock doesn't work (Luigi30)
 
 
 Source changes:
@@ -41,9 +41,9 @@ Source changes:
 - Renamed ports and used AM_READ_PORT macros in arcadecl [stephh].
 - Add feature to the cia6526: in READ operation the value can be forced by a external circuit; this feature is necessary for MESS [robiza].
 - undrfire.c improvements [Philip Bennett]:
-  * Hooked up cbombers steering wheel input.
-  * Changed ES5505 clock rate to 30476100/2.
-  * Unified cbombers memory maps and tidied up some code.
+  * Hooked up cbombers steering wheel input;
+  * Changed ES5505 clock rate to 30476100/2;
+  * Unified cbombers memory maps and tidied up some code;
   * Removed the undrfire speedup hack.
 - Marked the sound ROMs on "Q*Bert's Qubes" as bad and changed the flag to imperfect sound. The current sound cpu roms are the same as on a normal Q*Bert board, which is incorrect. At least three sound effects are present in the real qq-snd roms but not the 'Q*Bert' qb-snd ones [Lord Nightmare].
 - Fixed the ROZ effect in Namco NA1 driver. ROZ tilemap is actually an additional tilemap. Fixes a bug where a "roz enable" test was causing a normal layer to be rendered with ROZ effects in-game. There is no roz enable register - it's always available for mixing with other tilemaps and sprites. This also adds a missing NAMCO logo zoom/spin effect in Emeralda's attract mode [Phil Stroffolino].

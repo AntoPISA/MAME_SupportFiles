@@ -32,8 +32,8 @@ Vegas Poker (Prototype) [James Wallace]
 
 MAMETesters Bugs Fixed (2):
 ---------------------------
-gradius4_0120u3yel (Aaron Giles)
-vegas.c0120u3yel (Aaron Giles)
+- gradius4_0120u3yel (Aaron Giles)
+- vegas.c0120u3yel (Aaron Giles)
 
 
 Source changes:
@@ -47,42 +47,42 @@ Source changes:
 - Fixed bug that caused incorrect input to be read if multiple inputs were mapped to the same mouse input under Windows [Nathan Woods].
 - Fixed a bug in the i8051 core that improperly fired the Timer2 interrupt when it wasn't enabled [Jim Stolis].
 - Updates to the peplus driver [Jim Stolis]:
-  * Added lightpen support.
-  * Added PE+ Superboard support.
-  * Added ABC coin optics support.
-  * Added full I2C eeprom support.
-  * Added NVRAM support.
-  * Corrected door closure issues.
-  * Removed most memory hacks.
-  * Consolidated machines and inputs.
+  * Added lightpen support;
+  * Added PE+ Superboard support;
+  * Added ABC coin optics support;
+  * Added full I2C eeprom support;
+  * Added NVRAM support;
+  * Corrected door closure issues;
+  * Removed most memory hacks;
+  * Consolidated machines and inputs;
   * New layout for pepp0158.
 - Split up the MPU4 driver into a core and driver set up a la NeoGeo. Also made some timer fixes, and added some new ROMs added [James Wallace].
 - Fixed problems introduced when the junofrst blitter code was simplified [Chris Hardy].
 - American Poker II major rewrite [Roberto Fresca]:
-  * Properly dervied clocks from crystals.
-  * Reworked TILE_GET_INFO to handle the proper tiles/color codes.
-  * Fixed interrupts (NMI).
-  * Corrected AY8910 frequency to 1.5 MHz to match the real thing.
-  * Arranged the AY8910 volume in all games avoiding clips.
-  * Corrected the screen visible area.
-  * Added NVRAM support.
-  * Reworked the memory map, mapping all the hardware I/O ports.
-  * Reworked the Inputs for all sets.
-  * Added implementation of Operator and Supervisor Keys.
-  * Fixed some timing troubles.
-  * Added partial DIP switch support with diplocations to all sets.
-  * Removed the hack in DRIVER_INIT.
-  * Hooked write handlers for output ports.
-  * Added watchdog routines.
-  * Dumped, hooked, wired and decoded the color PROM in all sets.
-  * Modified the refresh rate according to hardware measurements.
-  * Wired the lamps for all sets. Created their respective layouts.
-  * Splitted the driver to driver/video.
+  * Properly dervied clocks from crystals;
+  * Reworked TILE_GET_INFO to handle the proper tiles/color codes;
+  * Fixed interrupts (NMI);
+  * Corrected AY8910 frequency to 1.5 MHz to match the real thing;
+  * Arranged the AY8910 volume in all games avoiding clips;
+  * Corrected the screen visible area;
+  * Added NVRAM support;
+  * Reworked the memory map, mapping all the hardware I/O ports;
+  * Reworked the Inputs for all sets;
+  * Added implementation of Operator and Supervisor Keys;
+  * Fixed some timing troubles;
+  * Added partial DIP switch support with diplocations to all sets;
+  * Removed the hack in DRIVER_INIT;
+  * Hooked write handlers for output ports;
+  * Added watchdog routines;
+  * Dumped, hooked, wired and decoded the color PROM in all sets;
+  * Modified the refresh rate according to hardware measurements;
+  * Wired the lamps for all sets. Created their respective layouts;
+  * Splitted the driver to driver/video;
   * Other minor fixes.
 - SCSP fixes [kingshriek]:
-  * Fixed DECAY1 envelope state to not exit immediately.
-  * Improved support for LPSLNK and SBCTL.
-  * Fixed panning calculation bug.
+  * Fixed DECAY1 envelope state to not exit immediately;
+  * Improved support for LPSLNK and SBCTL;
+  * Fixed panning calculation bug;
   * Fixed case where key-rate scaling is off.
 - Added support for indicating that DIP switches are reversed in the DIP locations view [Vas Crabb].
 - Added DIP locations for Midway Tron and the Nintendo Donkey Kong series (dkong.c) [Vas Crabb].

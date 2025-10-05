@@ -2,14 +2,14 @@
 ---------------------------------------
 
 
-New games added or promoted from NOT_WORKING status
+New Games Added or Promoted from NOT_WORKING Status
 ---------------------------------------------------
 Da Ban Cheng [Pierpaolo Prazzoli, Luca Elia]
 Final Fight 2 (SNES bootleg) [David Haywood, Tomasz Slanina, Kowal]
 Killer Instinct (SNES bootleg) [Tomasz Slanina]
 Xing Yen Man Guan [Luca Elia, Wei Mingzhi]
 
-New clones added
+New Clones Added
 ----------------
 Dai Makai-Mura (Japan new version) [Corrado Tomaselli]
 Defender (White label) [Andy Welburn]
@@ -42,23 +42,23 @@ Source changes:
 - Changed ad2083 to load PROM data instead of using hardcoded values [Couriersud].
 - Updated structure and naming conventions of sound and CPU cores to match core conventions [Derrick Renaud].
 - Added discrete sound for 'Mad Alien' [Derrick Renaud].
-- Hooked up discrete filtering to SN76477 in 'Space Chaser' [Derrick Renaud].
+- Hooked up discrete filtering to SN76477 in Space Chaser [Derrick Renaud].
 - Improvements to Lucky74.c driver [Roberto Fresca, Grull Osgo]:
-  * Reverse engineering of custom IC's 06B49P, 06B53P & 09R81P.
-  * Mapped the missing 3x SN76489.
-  * Measured and traced all clocks on the board.
-  * Measured and fixed the interrupt system.
-  * Implemented timings/clocks from custom 06B49P.
-  * Added sound support. All regular game sounds/musics are working.
-  * Implemented the ADPCM samples system through 09R81P + M5205 emulation.
-  * Added pinouts and technical notes about custom IC's 06B49P, 06B53P & 09R81P.
-  * Added flip screen mode.
-  * Inverted the order of double-up difficult DIP switches.
-  * Changed 'Key In' to be active LOW instead of HIGH
-  * Complete memory map and ports scheme.
-  * Created handlers for USART port and co-processor communication.
-  * Renamed the sets accordingly.
-  * Updated all notes.
+  * Reverse engineering of custom IC's 06B49P, 06B53P & 09R81P;
+  * Mapped the missing 3x SN76489;
+  * Measured and traced all clocks on the board;
+  * Measured and fixed the interrupt system;
+  * Implemented timings/clocks from custom 06B49P;
+  * Added sound support. All regular game sounds/musics are working;
+  * Implemented the ADPCM samples system through 09R81P + M5205 emulation;
+  * Added pinouts and technical notes about custom IC's 06B49P, 06B53P & 09R81P;
+  * Added flip screen mode;
+  * Inverted the order of double-up difficult DIP switches;
+  * Changed 'Key In' to be active LOW instead of HIGH;
+  * Complete memory map and ports scheme;
+  * Created handlers for USART port and co-processor communication;
+  * Renamed the sets accordingly;
+  * Updated all notes;
   * Cleaned-up the driver.
 - Merged memory maps for drivers tigeroad, timelimt, toobin, tumbleb.c, tbowl, thedeep, and thief. Also changed gfx memory region tags in obvious cases [Andrew Gardner].
 - Added sprite wrapping to Irem m63 driver [Tomasz Slanina, Stefan Lindberg].
@@ -74,9 +74,9 @@ Source changes:
 - Rejiggered huffman.c to support multiple interleaving streams and a delta-RLE pre-encoding. Added optimized case for the Y/Cb/Y/Cr video encoding case. Cleaned up the code [Aaron Giles].
 - Updated avcomp.c to use the new huffman.c functions. Reworked configuration options to allow for both input and output of naturally aligned data streams. Updated chdman and laserdsc to use the new interfaces. New compression gives an additional 3-7% over previous attempt and compresses the dummy CHDs down significantly [Aaron Giles].
 - Some improvements to shanghai video drivers [robiza]:
-  * Convert framebuffer's RAM from 8 bit to 16 bit.
-  * Convert dma command from 8 bit to 16 bit.
-  * Convert gfx command from 8 bit to 16 bit.
+  * Convert framebuffer's RAM from 8 bit to 16 bit;
+  * Convert dma command from 8 bit to 16 bit;
+  * Convert gfx command from 8 bit to 16 bit;
   * Implemented all gfx mode: 1,2,4,8,16 bpp. Now we can use this gfx chip for adp driver that use 4bpp.
 - Updated Alpha 8302 MCU simulation to match newly dumped internal ROM. Added the ROM to 'Champion Baseball 2' [Nicola Salmoria].
 - Added video level detection and reporting to ldverify [Aaron Giles].
@@ -107,9 +107,9 @@ ldplayer ldv1000 -rompath j:\mach3
 - Corrected ROM names with PCB locations for Lady Bug and verified the dump against an original Universal Lady Bug PCB. Added information about the Universal PCB number and prom type [Brian Troha].
 - Improved input ports for drivers starting with F->M. In particular: They add AM_READ_PORT whenever suitable, they make inputs fully 32bit where needed, they remove indexed input read handlers from INITs, they replace many read handlers with appropriate CUSTOM_INPUTs [Fabio Priuli].
 - Additional input port improvements [Fabio Priuli]:
-  * Added dip switches and locations to go2000 (even if they were partially documented in the source).
-  * Fixed artmagic protection (it used a wrong tag, which probably I added somewhere in 0.125uX).
-  * Changed a lot of input related things in irem m10->m107 irem boards. First of all, moved input definitions from drivers/m92.h to include/iremipt.h and removed completely drivers/m92.h (which only contained those definitions). Added more common inputs to iremipt.h and started to use that file in m62->m107 instead of local #defines. Finally, added diplocations to all the games in m62->m107 which were missing and it implemented coinage mode 2 through dipconditions in the drivers which didn't support it.
+  * Added dip switches and locations to go2000 (even if they were partially documented in the source);
+  * Fixed artmagic protection (it used a wrong tag, which probably I added somewhere in 0.125uX);
+  * Changed a lot of input related things in irem m10->m107 irem boards. First of all, moved input definitions from drivers/m92.h to include/iremipt.h and removed completely drivers/m92.h (which only contained those definitions). Added more common inputs to iremipt.h and started to use that file in m62->m107 instead of local #defines. Finally, added diplocations to all the games in m62->m107 which were missing and it implemented coinage mode 2 through dipconditions in the drivers which didn't support it;
   * Converted most of the games checking avgdvg_done() in inputs to use a CUSTOM_INPUT (defined in video/avgdvg.c).
 - Fixed the i386 CPU core's BSR implementation for the case where the high bit is set [Atari Ace].
 - Added DIP locations to clshroad.c [RansAckeR].

@@ -2,34 +2,34 @@
 -------------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
-- 01992: [Crash/Freeze] timecrsa, timecris: SubCPU start wait fails test (robiza).
-- 02105: [Graphics] qbert and clones: Misplaced graphics (Aaron Giles).
-- 02114: [Color/Palette] all sets in eolith.c: colors shifted to blue (Fabio Priuli).
-- 02115: [DIP/Input] berlwall, berlwalt: Player 1 inputs not working (Fabio Priuli).
-- 02116: [Graphics] all sets in cps2.c : corrupted graphics (robiza).
-- 02119: [Sound] cischeat, bigrun: no sound (Aaron Giles).
-- 02121: [DIP/Input] reactor: input controls and startup tone (Aaron Giles).
-
-
-New games added or promoted from NOT_WORKING status
+New Games Added or Promoted from NOT_WORKING Status
 ---------------------------------------------------
 Cube Quest [Philip Bennett, Joe Magiera, Warren Ondras]
 WW III [Stefan Lindberg, Couriersud]
 
-New clones added
+New Clones Added
 ----------------
 Red Hawk (Haedong Corp.) [David Haywood, Tirino73 / Mame Italia]
 Snow Bros. - Nick & Tom (Dooyong license) [Tirino73 / Mame Italia]
 Shogun Warriors (Europe Rev.xx)(Kaneko 1992) [Pythagoras573]
 
-New games marked as GAME_NOT_WORKING
+New Games Marked as GAME_NOT_WORKING
 ------------------------------------
 Astro Wars [MASH]
 Hot Slot (ver 05.01) [Roberto Fresca]
 I P M Invader (Incomplete Dump) [unknown dumper, Couriersud]
 Magic Colors (ver 1.7a) [Roberto Fresca]
+
+
+MAMETesters Bugs Fixed
+----------------------
+- 01992: [Crash/Freeze] timecrsa, timecris: SubCPU start wait fails test (robiza)
+- 02105: [Graphics] qbert and clones: Misplaced graphics (Aaron Giles)
+- 02114: [Color/Palette] all sets in eolith.c: colors shifted to blue (Fabio Priuli)
+- 02115: [DIP/Input] berlwall, berlwalt: Player 1 inputs not working (Fabio Priuli)
+- 02116: [Graphics] all sets in cps2.c : corrupted graphics (robiza)
+- 02119: [Sound] cischeat, bigrun: no sound (Aaron Giles)
+- 02121: [DIP/Input] reactor: input controls and startup tone (Aaron Giles)
 
 
 Source changes:
@@ -39,20 +39,20 @@ Source changes:
 - Added correct CRCs for DOA2 [Guru].
 - Fixed graphics in cps2 games [robiza].
 - Updated documentation in paradise.c [Brian Troha]:
-  * Added PCB layout for 'Torus' and 'Mad Ball'.
+  * Added PCB layout for Torus and Mad Ball;
   * Corrected ROM names and/or added U locations.
 - Changed at28c16 memory handlers to 8 bits and perform the conversion in the memory mapping [smf].
 - Update the t5182.c documentation/pinout [Lord Nightmare].
 - Magic10 updates [Roberto Fresca]:
-  * Simulated the co-processor to pass the initial test.
-  * All Inputs worked from the scratch.
-  * Fixed position of tilemap layers.
-  * Added scroll register preliminary support.
+  * Simulated the co-processor to pass the initial test;
+  * All Inputs worked from the scratch;
+  * Fixed position of tilemap layers;
+  * Added scroll register preliminary support;
   * Fixed Super Pool graphics.
 - Added save states to 65816 CPU [R. Belmont].
 - SH-2 DRC updates [R. Belmont]:
-  * Moved IRQ handling front-end into recompiled code.
-  * Added TSTM/ANDM/XORM instructions.
+  * Moved IRQ handling front-end into recompiled code;
+  * Added TSTM/ANDM/XORM instructions;
   * Added SH-1 CPU support, including lower precision on MAC.W and locking out SH-2 only instructions.
 - Split out SH-4 non-interpreter-specific stuff to sh4comn.c [R. Belmont].
 - Identified compatible timekeeper used by Midway Zeus II. Removed all the timekeeper memory handlers, except for 8 bit & changed the drivers to use the conversion built into the memory system [smf].
@@ -80,9 +80,9 @@ Source changes:
 - Added DIP locations to dooyong.c [Guy Hufkens].
 - Added cheat functions frombcd() and tobcd() to convert numbers to/from BCD format. Changed "Activate" to "Set" in the menus [Aaron Giles].
 - A couple of minor cleanups [Oliver Stoenberg]:
-  * Removed obsolete ENABLE_DEBUGGER occurance.
-  * Removed more unprintable characters in SH-2 disassembler.
-  * memset() usage cleanups.
-  * Removed duplicated TMS5110 entry in sound.mak.
+  * Removed obsolete ENABLE_DEBUGGER occurance;
+  * Removed more unprintable characters in SH-2 disassembler;
+  * memset() usage cleanups;
+  * Removed duplicated TMS5110 entry in sound.mak;
   * Use machine in uigfx.c where it's already available.
 - Removed included "profiler.h" from files that do not use profiling functions [Christophe Jaillet].
