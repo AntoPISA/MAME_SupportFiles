@@ -214,7 +214,7 @@ psion_ssd:
   EROS Ver.4.0 (Licensed to The Yorkshire Post), Spreadsheet, System Disk (MC Word) V2.50 [zedstarr]
 
 
-MAME Testers bugs fixed (2):
+MAME Testers Bugs Fixed (2):
 ----------------------------
 - 08878: [DIP/Input] DIP switches and machine configuration menus do not refresh conditional setting correctly (Vas Crabb)
 - 08886: [Sound] (nichibutsu/terracre.cpp) terracren: Bass channel in background music is inaudible (Lord Nightmare)
@@ -598,7 +598,7 @@ Source changes:
 - beep, dac: Add note about buffer size [hap].
 - z80: Reset m_ref when PC is changed through state_import [hap].
 - Fix a copy-paste error with the last fix for terracren, and updated the notes and filters to now correctly describe the two amplifier circuits. Added a note that this circuit needs to be converted to a netlist to be accurate due to the unusual hookup, and added a boost factor to the SSG channels to temporarily work around that fact [Lord Nightmare].
-- machine/at28c64b: read overflow initializing NVRAM (MAMETesters 08524) (#12594) [ksherlock]. Actual rom size may be less than AT28C64B_DATA_BYTES.  a2bus/booti, as a motivating example, has a ROM size of 0x2000. konami/viper.cpp: Hookup wcombat inputs, update QA (#12591) [Hydreigon].
+- machine/at28c64b: read overflow initializing NVRAM (MAME Testers 08524) (#12594) [ksherlock]. Actual rom size may be less than AT28C64B_DATA_BYTES.  a2bus/booti, as a motivating example, has a ROM size of 0x2000. konami/viper.cpp: Hookup wcombat inputs, update QA (#12591) [Hydreigon].
 - i386: correct various mmx and sse opcodes in pentops.hxx Expecially for the case when the source and destination registers are the same Moved a couple cyrix routines together with the other ones [yz70s].
 - i386: Fix cycles when leaving rep when out of cycles and count == 0 fmtowns_cd: add note about microcosm [cracyc].
 - bus/fp1000: Preliminary fd1020fd device [Angelo Salese].

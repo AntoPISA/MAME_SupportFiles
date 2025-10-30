@@ -1,4 +1,4 @@
-﻿0.146u2 2012/07/02 [#572 - Miodrag Milanovic]
+﻿0.146u2 2012/07/02 [#572 - Miodrag Milanović]
 ---------------------------------------------
 
 
@@ -38,7 +38,7 @@ Triple Play (Ver. 1.10) [Kevin Eshbach, Smitdogg, Luca Elia, The Dumping Union]
 Wild Poker (ver. D 1.01) [Roberto Fresca, Team Europe]
 
 
-MAMETesters Bugs Fixed (4):
+MAME Testers Bugs Fixed (4):
 ---------------------------
 - 04759: [Crash/Freeze] (pinkiri8.c) All sets in pinkiri8.c: Crash after OK (David Haywood)
 - 04821: [Gameplay] (cd32.c) All sets in cd32.c:: All games fail to boot properly (R. Belmont)
@@ -54,23 +54,23 @@ Source changes:
 - Allow for 2 seconds of emulation to boot up before applying quickload for Jaguar [Robbbert].
 - cd32: Fix so it can find the CD-ROM [R. Belmont].
 - CHD fixes [jmak]:
-  * Fixed uninitialized variables that were creeping into output
+  * Fixed uninitialized variables that were creeping into output;
   * Changed qsort() callback to never return "equal", working around unstable system libc implementations.
 - eolith.c: Boost interleave for sound to correct syncing issues [David Haywood].
-- limenko.c - Hooked up QS1000 [Phil Bennett].
+- limenko.c: Hooked up QS1000 [Phil Bennett].
 - Made the vdp map actually belong to the vdp, handling the palette manually for pikiri8.c - fixes MT#04759  [David Haywood].
-- midvunit.c: Added dipswitch locations to Cruis'n USA, Cruis'n World, Off Road Challenge and War Gods sets [Brian Troha].
+- midvunit.c: Added DIP switch locations to Cruis'n USA, Cruis'n World, Off Road Challenge and War Gods sets [Brian Troha].
 - qix.c: Identified Set 1 as Rev 2 and corrected the ROM names [Smitdogg, The Dumping Union].
 - Readjusted visible area in the vamphalf.c driver based on tests comparing emulation and original PCB observations [David Haywood, Smitdogg].
 - Replaced bitrotted ROM for Mortal Kombat Turbo 3.0 (mkyturboe) which caused hanging during demonstration [bulldawg].
 - SDL: Support newer Linux distros using GCC 4.7 [R. Belmont].
-- seta.c: Added dipswitch locations to Ultraman Club [Brian Troha].
+- seta.c: Added DIP switch locations to Ultraman Club [Brian Troha].
 - seta.c: Fill in some missing PCB board numbers. Correct the board numbers as they are silkscreened on the PCB. Corrected the ROM names for JJ Swuawkers [Brian Troha].
 - taito_en.c: Corrected 68000 clock [Stefan Lindberg].
 - Two TMS32031 fixes [Daniel Filner]:
-  * Don't set underflow when doing a floating point subtract that results in 0.
+  * Don't set underflow when doing a floating point subtract that results in 0;
   * Don't overwrite the exponent during a FIX operation.
-- tx1.c: Add documentation about the TX-1 (Japan) PCBs. Added dipswitch locations to TX-1 and Buggy Boy sets [Brian Troha].
+- tx1.c: Add documentation about the TX-1 (Japan) PCBs. Added DIP switch locations to TX-1 and Buggy Boy sets [Brian Troha].
 - upd7810.c: Fixed setting of flags in the ACI_[VABCDEHL]_xx functions. Fixed handling of Carry flag in the DAA instruction [Wilbert Pol].
 - Updated labels.locations for all Crazy Kong PT 2 sets based on a recently dumped board [Smitdogg, Tafoid].
 - vegaeo.c: Hooked up sound in Crazy War [Phil Bennett].

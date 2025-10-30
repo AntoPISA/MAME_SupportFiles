@@ -229,7 +229,7 @@ leapster:
 mac_flop: RadiusWare [darkstar]
 
 
-MAMETesters Bugs Fixed (12):
+MAME Testers Bugs Fixed (12):
 ----------------------------
 - 03563: [Graphics] (namcos11.cpp) souledge: Li Long stage background problem (smf)
 - 05764: [Graphics] (radio86.cpp) radio4k: Display is not stable and flickers (shattered)
@@ -361,10 +361,10 @@ Source changes:
   * Adjusted default input mapping to avoid key conflicts;
   * Identified graphics ROMs for vjdash foreground/background/ROZ layers.
 - electron: Added a number of cartridge devices. P.R.E.S. Advanced Plus 3/4, Advanced Quarter Meg Ram, Cumana Floppy Disk System, Sound Expansion, Sound Expansion v3, Stop Press 64, Solidisk EFS [Nigel Barnes].
-- Changed memory map behaviour to "last entry wins". Allows more natural "import and patch" and "cover a region then punch holes" structures [O. Galibert].
-- m6502: Fixed tracing and breakpoints for paged variants [O. Galibert].
-- Made memory maps member functions of owner class [O. Galibert].
-- Added disassembler for VM Labs Aries VLIW processor (used in NUON DVD players) [O. Galibert].
+- Changed memory map behaviour to "last entry wins". Allows more natural "import and patch" and "cover a region then punch holes" structures [Olivier Galibert].
+- m6502: Fixed tracing and breakpoints for paged variants [Olivier Galibert].
+- Made memory maps member functions of owner class [Olivier Galibert].
+- Added disassembler for VM Labs Aries VLIW processor (used in NUON DVD players) [Olivier Galibert].
 - interpro: Improved graphics emulation - basic bit blit and line drawing work well enough for now [Patrick Mackinlay].
 - Added preliminary ABC CAD pointing device/high-resolution graphics add-on device for Luxor ABC 80 [Peter Bortas, Edstrom].
 - Added kzaurus driver [R. Belmont]:

@@ -32,7 +32,7 @@ Model Racing Shooting Game (unknown title) [Luigi, Volker Hann, Team Europe]
 Out Run 2 (Rev. A) [GDX-0004A]  [Team Europe, The Dumping Union, Alex]
 
 
-MAMETesters Bugs Fixed (7):
+MAME Testers Bugs Fixed (7):
 ---------------------------
 - 03910: [Sound] All sets using stereo sound: Right speaker is louder than left speaker (hap)
 - 03913: [Graphics] arcadecl: Playfield is offset to characters in both games (hap)
@@ -54,7 +54,7 @@ Source changes:
 - Simplified vram access in Pinkiri 8 HW [David Haywood].
 - Added a skeleton driver for Philips CD-i-based arcade series, Quizard [Harmony].
 - Moved softlist implementation from MESS [Miodrag Milanovic]:
-  * Moved image related UI from MESS to emu core.
+  * Moved image related UI from MESS to emu core;
   * Reimplemented filename related image device calls.
 - Moved listsofware command line option from MESS, and added softlist in XML output [Miodrag Milanovic].
 - TMS52xx now uses proper IP/PC/Subcycle counting for audio generation [Lord Nightmare].
@@ -77,28 +77,28 @@ Source changes:
 - Hooked up Daikaiju no Gyakushu 68705 MCU and removed MCU simulation code [Phil Bennett, Dr. Decapitator].
 - Added DIP LOCATIONS for xain.c [Tafoid].
 - aristmk4: various improvements [FrasheR, Palindrome]:
-  * Fixed VIA for good. 5010 - 501F.
-  * Hooked up push button inputs.
-  * Hooked up ports for the PML 2852 U3.
-  * Implemented coin input.
-  * Lamp output and button layout.
-  * NVRAM backup.
-  * Connected SW7 for BG colour map select.
-  * Added LK13. 3MHz or 1.5 MHz CPU speed select.
-  * Added sound sample for mechanical meter pulse.
+  * Fixed VIA for good. 5010 - 501F;
+  * Hooked up push button inputs;
+  * Hooked up ports for the PML 2852 U3;
+  * Implemented coin input;
+  * Lamp output and button layout;
+  * NVRAM backup;
+  * Connected SW7 for BG colour map select;
+  * Added LK13. 3MHz or 1.5 MHz CPU speed select;
+  * Added sound sample for mechanical meter pulse;
   * Replaced custom RTC code with MC146818.
 - naomi.c: Corrected and updated some game names and cartridge descriptions [f205v].
 - neodrvr.c updates [Johnboy]:
  * Tagged kof2003h AES VERSION.
- * Tagged the following sets as MVS AND AES VERSION: aodk, lbowling.
- * Renamed P1 in sengoku3 to correct chip label.
- * Marked v2 in strhoop BAD_DUMP.
- * Marked P1 in flipshot BAD_DUMP.
+ * Tagged the following sets as MVS AND AES VERSION: aodk, lbowling;
+ * Renamed P1 in sengoku3 to correct chip label;
+ * Marked v2 in strhoop BAD_DUMP;
+ * Marked P1 in flipshot BAD_DUMP;
  * Identified kof98n as AES version; renamed (kof98n) to (kof98h).
 - Improved v25 logging for Batsugun [David Haywood].
 - igs011.c update [Luca Elia]:
-  * Emulated IGS011 protection.
-  * Emulated IGS012 protection.
+  * Emulated IGS011 protection;
+  * Emulated IGS012 protection;
   * Removed 149 ROM patches.
 - Hooked up Slap Fight/Alcon 68705 MCU [Phil Bennett, Dr. Decapitator].
 - Hooked up MCUs for Tough Turf (US) and Wrestle War; removed Wrestle War MCU simulation [Aaron Giles, Dr. Decapitator].
@@ -121,10 +121,10 @@ Source changes:
   mame_get_current_datetime() == machine->current_datetime()
 - Cleaned up the region_info class, removing most global region accessors except for memory_region() and memory_region_length(). Again, this doesn't generally affect drivers [Aaron Giles].
 - Resurrect the old sampling profiler, and improve it to be useful [Aaron Giles]:
-  * Always available now, just specify -profile <n> to enable it.
-  * Supports stack walking to uniquely identify call chains; the <n> parameter to the -profile option specifies how deep to go.
-  * Automatically turns off throttling and multithreading, and sets the number of processors available to 1 (since we only sample the main thread).
-  * Output now uses the common symbol lookup, which actually uses the PDB for MSVC builds and sym files for gcc builds.
+  * Always available now, just specify -profile <n> to enable it;
+  * Supports stack walking to uniquely identify call chains; the <n> parameter to the -profile option specifies how deep to go;
+  * Automatically turns off throttling and multithreading, and sets the number of processors available to 1 (since we only sample the main thread);
+  * Output now uses the common symbol lookup, which actually uses the PDB for MSVC builds and sym files for gcc builds;
   * The top 30 unique call chains are output.
 - Fix performance regression for PowerPC games. The timing made heavy use of cpu_get_total_cycles() which is now slow. Better to use the legacy_cpu_device directly and call device->total_cycles() which avoids the dynamic_cast to find the execute interface from a generic device [Aaron Giles].
 - Added cycles_to_attotime() and attotime_to_cycles() which is more often what is requested (clocks are the raw input clock, while cycles are internal clock after dividers/multipliers) [Aaron Giles].
@@ -136,12 +136,12 @@ Source changes:
   cpu_attotime_to_clocks() == cpudevice->attotime_to_cycles()
 
 - Correct DIP switch location order in World Rally to match actual DIPs as seen by the game / service menu [Brian Troha].
-- namcos22.c: Updated ridgerac, raveracw and acedrvrw to use keys instead of dipswitches for shifters [Fabio Priuli].
+- namcos22.c: Updated ridgerac, raveracw and acedrvrw to use keys instead of DIP switches for shifters [Fabio Priuli].
 - Added COPX romloading for sets that didn't have it, marked as BAD_DUMP until the assumption that they're the same is (un)confirmed [hap].
 - Winmain cleanup [Aaron Giles]:
-  * Created dynamic_bind<> template class to handle dynamically binding to optionally-supported functions.
-  * Wrapped stack walking code in a class.
-  * Wrapped symbol lookup code in a class.
+  * Created dynamic_bind<> template class to handle dynamically binding to optionally-supported functions;
+  * Wrapped stack walking code in a class;
+  * Wrapped symbol lookup code in a class;
   * Added support for parsing objdump-produced symbol dumps which include non-global functions for much better stack dumps and profiling in gcc builds.
 - Modified makefile for win32 targets to automatically run objdump and produce a .sym file if SYMBOLS is enabled [Aaron Giles].
 - Update cheat loading to support image devices (moved implementation from MESS), use only CRC of first found image [Miodrag Milanovic].
@@ -153,7 +153,7 @@ Source changes:
 - Hooked up Gondomania I8751 MCU [Bryan McPhail, Dr. Decapitator].
 - Reimplemented Meikyuu Hunter G I8751 MCU according to schematics [Bryan McPhail].
 - Software list update [Wilbert Pol]:
-  * Software list xml files are now read in full such that information for clone and parent sets is available.
+  * Software list xml files are now read in full such that information for clone and parent sets is available;
   * Added validity check to check for existence of parent sets.
 - Imported image related utils from MESS into /lib/util [Miodrag Milanovic].
 - Improved video emulation in cb2001 [David Haywood].
@@ -161,8 +161,8 @@ Source changes:
 - Moved debugging structure away from CPUs only and attached to all devices. Debugger now creates one for each device. C++-ified most debugger operations to hang off the debugging class, and updated most callers [Aaron Giles].
 - Got rid of cpu_count, cpu_first, cpu_next, etc. as they were badly broken. Also removed cpu_is_executing, cpu_is_suspended, cpu_get_local_time, and cpu_abort_timeslice [Aaron Giles].
 - Software list improvements [Miodrag Milanovic]:
-  * Support for multiple software list per driver.
-  * Added MDRV_SOFTWARE_LIST_COMPATIBLE_ADD for adding compatible software lists (for documentation purposes).
-  * listsoftware option now return only original software lists
-  * UI is updated to enable mounting software items per device, it will display only items from list that are for specific device.
+  * Support for multiple software list per driver;
+  * Added MDRV_SOFTWARE_LIST_COMPATIBLE_ADD for adding compatible software lists (for documentation purposes);
+  * listsoftware option now return only original software lists;
+  * UI is updated to enable mounting software items per device, it will display only items from list that are for specific device;
   * Separate compatible software lists in UI.

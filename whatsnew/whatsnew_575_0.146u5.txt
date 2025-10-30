@@ -38,8 +38,8 @@ Thunder Zone (Rev 1, World) [Stefan Lindberg]
 Trojan (US set 2) [Corrado Tomaselli, The Dumping Union]
 
 
-MAMETesters Bugs Fixed (5):
-----------------------
+MAME Testers Bugs Fixed (5):
+----------------------------
 - 03696: [Crash/Freeze] (tetrisp2.c) nndmseal: [debug] Assertion (after ok) in Debug build (Luca Elia)
 - 04960: [Crash/Freeze] (cdi.c) All sets in cdi.c: Quizard games do not boot after initial startup screen (David Haywood)
 - 04961: [Gameplay] (darkhors.c) darkhors: Game no longer allows for boot up (David Haywood)
@@ -57,14 +57,14 @@ Source changes:
 - Added internal mouse cursor visible in menus and when clickable artwork is used [Miodrag Milanovic].
 - Added PLD from Xenophobe Sounds Good board [Kevin Eshbach].
 - Added preliminary colour cycling effect to Sky Destroyer [David Haywood].
-- addrmap: Fix device mapping on big-endian systems [O. Galibert].
+- addrmap: Fix device mapping on big-endian systems [Olivier Galibert].
 - bzone: Corrected bonus tanks typos [Don Hodges].
 - crgolf.c: Adjusted ROM names to better represent actual ROM labels improved documentation for other dumped sets. Added protected PAL dump [Kevin Eshbach, Tafoid].
 - dassault.c: Added PCB locations to all the 'Thunder Zone' and 'Desert Assault' sets [Brian Troha, ShouTime].
 - dassault.c: Better documented the PCB stack and changed clocks to be derived by on board OSC [Brian Troha, Stefan Lindberg].
 - drcbec: Calculate NZ flags properly for 32x32=32 form of MULS [R. Belmont].
 - drcbec: Compute flags correctly for ADDC/SUBB [R. Belmont].
-- emucore: Make downcast errors more useful [O. Galibert].
+- emucore: Make downcast errors more useful [Olivier Galibert].
 - First round of GD-ROM redumps.  Many more to come [The Dumping Union, R. Belmont].
 - Fixed remaining input issues in Sky Destroyer [Angelo Salese].
 - Fixed sprite GFX order in Cycle Maabou [Angelo Salese].
@@ -83,7 +83,7 @@ Source changes:
 - Kaneko sprites are now a device.  This should facilitate cleaning up video related files as well (sprites and tilemaps) [David Haywood].
 - lwings.c: Added PCB locations to the Trojan sets [Brian Troha].
 - Made 24/12h bit register to be correctly activated in Epson 62423 RTC device [Angelo Salese].
-- memory: Add support for dynamically mapping devices [O. Galibert].
+- memory: Add support for dynamically mapping devices [Olivier Galibert].
 - model2.c: Fixed the loading of the sound samples for the 'Sega Rally Championship' sets and added correct IC locations to the roms. Labeled the current sets "Twin" and added a "DX" set. Documented the missing (undumped) roms for the DX set [Brian Troha].
 - parodius.c: Corrected ROM PCB locations for all the Parodius DA! sets [Brian Troha].
 - peplus.c: Added dollar bill validator (DBV) to emulate IGT's IDO22 pulse protocol. All non-superboard games (and a few superboards) now accept bills via IPT_COIN2. Denomination is determined via driver configuration settings. The Set Chip steps are still required to enable the DBV before use [Jim Stolis].
@@ -91,12 +91,12 @@ Source changes:
 - ppc: Added callbacks for buffered external DMAs [Ville Linde].
 - PPC: Fix SRAW behavior with C backend. x86/x64 BEs need work to pass [R. Belmont].
 - Preliminary implementation of the MOVBSU opcode in V810 CPU core [Angelo Salese].
-- rp5c15: Initialize at power-on (makes the x68k boot reliable) [O. Galibert].
+- rp5c15: Initialize at power-on (makes the x68k boot reliable) [Olivier Galibert].
 - SDL: Fix -prescale option for SDL builds [Matthias Reichl].
 - st0020 (seta blitter + zooming sprites) is now a device [David Haywood].
 - Started the process of converting some Kaneko games to use devices [David Haywood].
-- Tank Force - 4 Player (tankfrce4): Inputs were switched so that Player 2 was no longer assigned to Player 3 and vise versa [Tafoid].
-- tickee.c: Correct the dipswitches for Mouse Attack and add dipswitch locations [Brian Troha].
+- tankfrce4: Inputs were switched so that Player 2 was no longer assigned to Player 3 and vise versa [Tafoid].
+- tickee.c: Correct the DIP switches for Mouse Attack and add DIP switch locations [Brian Troha].
 - Updated some drivers to use the new SN76496 device implementation [Osso].
 - v30mz.c: Converted to C++ [Wilbert Pol].
 - Vulgus information confirmated from PCB for clock speed and vsync [Corrado Tomaselli].

@@ -2,8 +2,8 @@
 ---------------------------------------
 
 
-New Games Added or Promoted from NOT_WORKING Status
----------------------------------------------------
+New Game Added or Promoted from NOT_WORKING Status
+--------------------------------------------------
 Aqua Jet (Rev. AJ2 Ver.B) [Guru, R. Belmont, Phil Bennett]
 
 New Clones Added
@@ -35,17 +35,17 @@ Technical Bowling [Guru]
 Tokyo Wars (Rev. TW2 Ver.A) [Guru, R. Belmont, Phil Bennett]
 
 
-MAMETesters Bugs Fixed (9):
+MAME Testers Bugs Fixed (9):
 ---------------------------
-- 02329: [Graphics] iganinju, plusalph and others: Very bad sprite lag (Angelo Salese).
-- 03101: [Sound] jantotsu: Game gives incorrect calls (Angelo Salese).
-- 03149: [Crash/Freeze] All sets in cps3.c: Access Violation (Aaron Giles).
-- 03176: [Graphics] cheekyms: Graphic Regression (Pierpaolo Prazzoli).
-- 03178: [DIP/Input] dragngun: Unable to move Crosshair (Fabio Priuli).
-- 03182: [Sound] Many sets in system1.c: Missing Sound (Aaron Giles).
-- 03187: [Documentation] scin: Game title is different as shown in picture (Fabio Priuli).
-- 03190: [Documentation] 86lions: 'Wrong' colours seem fixed when you swap R/B values (Angelo Salese).
-- 03196: [DIP/Input] daisyari: Game resets itself after full strip of girl (Tafoid).
+- 02329: [Graphics] iganinju, plusalph and others: Very bad sprite lag (Angelo Salese)
+- 03101: [Sound] jantotsu: Game gives incorrect calls (Angelo Salese)
+- 03149: [Crash/Freeze] All sets in cps3.c: Access Violation (Aaron Giles)
+- 03176: [Graphics] cheekyms: Graphic Regression (Pierpaolo Prazzoli)
+- 03178: [DIP/Input] dragngun: Unable to move Crosshair (Fabio Priuli)
+- 03182: [Sound] Many sets in system1.c: Missing Sound (Aaron Giles)
+- 03187: [Documentation] scin: Game title is different as shown in picture (Fabio Priuli)
+- 03190: [Documentation] 86lions: 'Wrong' colours seem fixed when you swap R/B values (Angelo Salese)
+- 03196: [DIP/Input] daisyari: Game resets itself after full strip of girl (Tafoid)
 
 
 Source changes:
@@ -68,48 +68,48 @@ Source changes:
 - Split Naomi video RAM access into 32-bit / 64-bit areas pending more information on how they actually mirror (it's not a straight mirror) [David Haywood].
 - psattack CF card redump and ID metadata added to create a CHD [Guru].
 - H8 series MCU updates [R. Belmont]:
-  * Implemented 8-bit timers and free-running counter for H8/3334.
-  * Added bld #imm, @Rd instruction.
+  * Implemented 8-bit timers and free-running counter for H8/3334;
+  * Added bld #imm, @Rd instruction;
   * Improvements to interrupts and the serial ports.
 - Namco System 23 update [R. Belmont]:
   * Changes and documentation added on how the I/O board is hooked up.
-- The H8/3334 based TSS-I/O board sometimes handshakes successfully in 'Time Crisis 2' now but timing-related problems remain.
+- The H8/3334 based TSS-I/O board sometimes handshakes successfully in Time Crisis 2 now but timing-related problems remain.
 - Namco System Super 22 update [R. Belmont]:
-  * Reimplemented SPOT RAM - Tokyo Wars relied on some details not previously seen.
-  * Fixed uninitialized RAM area that caused random sprite colors since 0.120 (thanks to Phil Bennett for debugging the problem).
+  * Reimplemented SPOT RAM - Tokyo Wars relied on some details not previously seen;
+  * Fixed uninitialized RAM area that caused random sprite colors since 0.120 (thanks to Phil Bennett for debugging the problem);
   * Updated Guru Readme(tm).
 - Fixed Aliens P2 inputs [stephh].
 - 'Gladiator' coinage fix [Tafoid].
 - Fixed regressed sound in wc90b.c. Also fixed nested NMIs, improving msm sound, and converted memory maps to current standards [Angelo Salese].
 - Corrected the 202 entry in the LFO Frequency Table (and comments for it) for the YMF271 based on a formula by Olivier Galibert [Brian Troha, Roman Scherzer].
 - Added PCB ROM locations to Dog Fight (Thunderbolt) romdef as well as the bprom type [Brian Troha].
-- Fixed ROM filename for 'Battle Zone' [Andrew Welburn].
+- Fixed ROM filename for Battle Zone [Andrew Welburn].
 - Added basic MSM support for Super Crowns Golf, and fixed NMI generation. Also found & hooked up the flip screen bit, and cleaned up the memory maps [Angelo Salese].
 - Hooked up sprite buffering in the Jaleco Mega System 1 driver [Angelo Salese].
 - Corrected Euro League clock speeds [Mike Coates].
 - Fixed ADPCM stop flag in Jantotsu, and cleaned up some routines in the driver. Added an heuristic table for the msm samples. Fixed MSM frequency [Angelo Salese].
-- Hooked up sound in 'Super Shanghai Dragon's Eye' [Angelo Salese].
+- Hooked up sound in Super Shanghai Dragon's Eye [Angelo Salese].
 - Fixed some dip-switches quirks in the Mexico 86 driver and enabled the single board 4 players mode [Angelo Salese].
 - Improved timing of communication between the main and sound cpus in the megadriv driver [Wilbert Pol].
-- Fixed flickering in Super 'Shanghai Dragon's Eye' on girl presentation screens. Split memory maps for the different sshangha version, and fixed sound in the parent set [Angelo Salese].
+- Fixed flickering in Super Shanghai Dragon's Eye on girl presentation screens. Split memory maps for the different sshangha version, and fixed sound in the parent set [Angelo Salese].
 - Added I8751 ROM to sqixu [Dr. Decapitator, Nicola Salmoria].
 - Fixed sqix/sqixa bootleg MCU bad dump by comparison with the original [Nicola Salmoria].
 - Fixed coin lockout in Tetris (Arkanoid HW) and removed the GAME_WRONG_COLORS flag since the colors are correct [Angelo Salese].
-- Added MSM hook-up for 'Ganbare Chinsan Ooshoubu' [Angelo Salese].
-- Fixed background colors in 'Tryout' and cleaned-up the NMI firings on coin insertion [Angelo Salese].
+- Added MSM hook-up for Ganbare Chinsan Ooshoubu [Angelo Salese].
+- Fixed background colors in Tryout and cleaned-up the NMI firings on coin insertion [Angelo Salese].
 - Cleaned-up the Mazer Blazer driver [Angelo Salese].
 - Fixed foreground color offsets in Tryout, game colors should now be 100% accurate. Also fixed flip X on the sprites, fixed scrolling issues, and added screen disable flag [Angelo Salese].
 - Disabled unused variables in the project that were only assigned to but never used [Oliver Stoeneberg].
 - Removed the pulse input on the touchscreen for the touchmaster drivers, making centipede returns (tm4k), breakout3k (tm3k), wordsearch (tm8k) and possibly other games playable do to the need for "dragging" the screen. An example of this is the word search game where it is necessary to drag from the start letter to the end to highlight the selection, which is not possible with a pulse input [Mike Green].
 - Corrected the clock speed for 'Pirate Ship Higemaru' [Stefan Lindberg].
 - Hand-tuned bgm OKI sound chip frequency in mirage.c [Angelo Salese].
-- Added readmes to 'Jail Break', 'Ninja Warriors', 'Operation Wolf' and 'Rainbow Islands' [Guru].
-- Fixed sound banking and priorities in 'Mirage Youjuu Mahjongden' [Angelo Salese].
-- Decoded color proms and fixed bitplanes in 'Mirax' [Angelo Salese].
+- Added readmes to Jail Break, Ninja Warriors, Operation Wolf and Rainbow Islands [Guru].
+- Fixed sound banking and priorities in Mirage Youjuu Mahjongden [Angelo Salese].
+- Decoded color proms and fixed bitplanes in Mirax [Angelo Salese].
 - CPUs actually take some time to reset. Changed the 68000/68010 to eat an appropriate number of cycles after a reset [Aaron Giles].
 - Sega System 16A changes [Aaron Giles, Dr. Decapitator]:
-  * Added MCU dumps to quart21 and bodyslam.
-  * Hooked up MCU in these games.
+  * Added MCU dumps to quart21 and bodyslam;
+  * Hooked up MCU in these games;
   * Marked games using simulated MCU as "unemulated protection" as the MCUs clearly do more than what we are simulating.
 - Eliminated SMH_* usage in all memory maps in drivers beginning with A and B [MooglyGuy].
 - Added some security custom info to the Sega drivers (from http://www.higenekodo.jp/sega_n.htm) [Yasuhiro Ogawa].
@@ -121,17 +121,17 @@ Source changes:
 - Guessed ADPCM PAL shuffling in Idol Janshi Suchie-Pai Special, it sounds better but I'm not sure if it's 100% accurate (I need a side-by-side test) [Angelo Salese].
 - Added mirrors to Pole Position memory maps [Aaron Giles].
 - DIP switch changes [kanikani]:
-  * Added DIPLOCATION to scontra and thunderx.
+  * Added DIPLOCATION to scontra and thunderx;
   * Added some DEF_STRs (Difficult, Very Difficult, etc.) and modified drivers using them.
 - Added internal memory maps and internal clock divider to the MB88xx CPUs. Removed now-redundant memory maps from drivers and removed explicitly-specified clock dividers [Aaron Giles].
 - Continued changing CPU references from numbers to tags in drivers [Fabio Priuli].
 - Preliminary work on beatmania iidx, still lots to do [smf].
 - Several MB88xx changes/fixes [Aaron Giles]:
-  * A internal timer support now works; prescaler is guessed based on Pole Position sample playback frequency.
-  * External counter support works.
-  * A basic mechanism for reading serial input has been added; it is not sufficient for a full implementation, but good enough to sample the SI pin at startup.
-  * Fixed TSTS/TSTV to clear their respective flags.
-  * Fixed CI and CYI to compute imm-reg instead of reg-imm.
+  * A internal timer support now works; prescaler is guessed based on Pole Position sample playback frequency;
+  * External counter support works;
+  * A basic mechanism for reading serial input has been added; it is not sufficient for a full implementation, but good enough to sample the SI pin at startup;
+  * Fixed TSTS/TSTV to clear their respective flags;
+  * Fixed CI and CYI to compute imm-reg instead of reg-imm;
   * Added masking of the PA register upon RTI/RTS to prevent bogus PC values.
 - Fixes compilation with ARM7_DEBUG_CORE enabled [Reijo Tomperi, Oliver Stoeneberg].
 - Added support for parsing horizont.ini or vertical.ini based on the game's orientation [Krick].

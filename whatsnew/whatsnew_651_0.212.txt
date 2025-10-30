@@ -3018,7 +3018,7 @@ spectrum_cass:
 vsmilem_cart: Disney Micky Maus Wunderhaus (Germany), Fussball Meisterschaft (Germany), Sportskanone (Germany) [TeamEurope]
 
 
-MAMETesters Bugs Fixed (20):
+MAME Testers Bugs Fixed (20):
 ----------------------------
 - 00349: [Graphics] (shaolins.cpp) kicker: Graphical artefacts after going through service mode tests. (Angelo Salese)
 - 02060: [Graphics] (aerofgt.cpp) spinlbrk, spinlbrku, spinlbrkj: Incorrect graphics priorities. (Mamesick)
@@ -3130,15 +3130,15 @@ Source changes:
   * Added ability to disable UI input from Lua.
 - Moved the clipboard paste function from the MAME UI manager to the natural keyboard class [Nathan Woods].
 - Added an option to skip showing the file manager for mandatory slots on start [Nathan Woods].
-- mindset updates [O. Galibert]:
+- mindset updates [Olivier Galibert]:
   * Added floppy drives and LEDs;
   * Implemented more video features, including 80-column mode, and improved blitter;
   * Implemented I/O traps and display VRAM lookup.
 - mindset: Added mouse and joystick inputs, improved palette, and added more register details [O. Galibert, Al Kossow].
-- ncd16: Fixed BERT QLC mode work, allowing terminal to boot [O. Galibert].
-- floppy: Added initial implementation of weak zone emulation [O. Galibert].
-- via6522: Changed most users to install handlers using map delegate [O. Galibert].
-- i186: Fixed bug in end-of-interrupt write handling [O. Galibert].
+- ncd16: Fixed BERT QLC mode work, allowing terminal to boot [Olivier Galibert].
+- floppy: Added initial implementation of weak zone emulation [Olivier Galibert].
+- via6522: Changed most users to install handlers using map delegate [Olivier Galibert].
+- i186: Fixed bug in end-of-interrupt write handling [Olivier Galibert].
 - mk14: Added original SCIOS V1 monitor as a BIOS option [Nigel Barnes].
 - Overhauled microtan.cpp driver [Nigel Barnes]:
   * Added TANBUG V3.1, TANBUG V.3B, TUGBUG V1.1 and TANBUG V1 monitor ROMs as BIOS options;

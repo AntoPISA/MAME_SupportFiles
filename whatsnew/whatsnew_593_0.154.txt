@@ -1,58 +1,8 @@
-﻿0.154 2014/07/23 [#593 - Miodrag Milanovic]
+﻿0.154 2014/07/23 [#593 - Miodrag Milanović]
 -------------------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
-- 00371: [Graphics] (alpha68k.c) gangwarsu: There's a problem in the 3rd stage, just before the boss. (David Haywood)
-- 00493: [Graphics] (kaneko16.c) berlwall: When finishing a level, the timer bonus doesn't show correctly. It says "Timer x 10 = ". (Luca Elia)
-- 01109: [Graphics] (rpunch.c) svolleyk: [possible] Red arrow indicator doesn't appear. (David Haywood)
-- 01546: [Gameplay] (taito_l.c) champwr: The gameplay is too fast. (Mamesick)
-- 01630: [Color/Palette] (tecmo16.c) fstarfrc, ginkun, riot: broken colors on sprites (David Haywood)
-- 03164: [Graphics] (taito_l.c) fhawk, fhawkj: Rare sprites'bug (David Haywood)
-- 03447: [Graphics] (vegas.c) gauntdl, gauntdl24, gauntleg, gauntleg12: Texture with alpha channel is not drawn properly. (Phil Bennett)
-- 03599: [Graphics] (taito_f3.c) gseeker and clones: missing background graphics on the right side (Alex Jackson)
-- 04097: [Speed] (namcos1.c) All sets in namcos1.c: Performance regression (Alex Jackson)
-- 04348: [Graphics] (rpunch.c) svolley, svolleyk, svolleyu: Arrow and confettis missing / Probable missing layer (David Haywood)
-- 04571: [Graphics] (dwarfd.c) All sets in dwarfd.c: Graphics regression/corruption (crazyc)
-- 05239: [Misc.] (system16.c) dduxbl: AddressSanitizer: heap-buffer-overflow (Alex Jackson)
-- 05242: [Misc.] (mystwarr.c) mystwarr, mtlchamp and clones: AddressSanitizer: heap-buffer-overflow (Alex Jackson)
-- 05244: [Misc.] (nsmpoker.c) nsmpoker: AddressSanitizer: heap-buffer-overflow (Alex Jackson)
-- 05246: [Misc.] (parodius.c) all parodius.c sets: AddressSanitizer: heap-use-after-free (Alex Jackson)
-- 05264: [Sound] (taito_l.c) champwr: Music cues missing (do not play) (Mamesick)
-- 05442: [Graphics] (astinvad.c) kamikaze, astinvad: Incorrect flashing on screen (hap)
-- 05487: [DIP/Input] (fromanc2.c) fromancr: Can't save any Service menu (F2) settings. (hap)
-- 05491: [Gameplay] (bfm_sc4.c) All sets in bfm_sc4.c: Failure to pass INITIALIZING in-game. (R. Belmont)
-- 05499: [Crash/Freeze] (namcona1.c) All sets in namcona1.c: Assert after OK (Alex Jackson)
-- 05500: [Crash/Freeze] (galaga.c) galaga, digdug, polepos: Game freezes just before finishing POST (hap)
-- 05501: [Crash/Freeze] (namcos12.c) golgo13, g13knd: After initial screen on boot, nothing but black screen (hap)
-- 05503: [Crash/Freeze] (system16.c) dduxbl: [debug] Screen corrupt and/or crashes (Alex Jackson)
-- 05504: [Crash/Freeze] (nsmpoker.c) nsmpoker: [debug] Hangs after OK (Alex Jackson)
-- 05506: [Crash/Freeze] (shanghai.c) All shanghai.c sets: [debug] Assertion (Firewave)
-- 05515: [Crash/Freeze] All PCE-based sets: Crash with -aviwrite or -mngwrite (Firewave)
-- 05521: [Crash/Freeze] Attemping to load 0-sized roms or samples causes crash (Olivier Galibert)
-- 05522: [Misc.] chdman: *CD* FLAC compresion doesn't work for GDI images (R. Belmont)
-- 05523: [Crash/Freeze] (coinmstr.c) supnudg2: Crash at Initialization (Tafoid)
-- 05524: [Color/Palette] Assorted sets - adjusting brightness or other levels in sliders causes color changes (Alex Jackson)
-- 05537: [Multisession] (namcos1.c) All namcos1.c sets: switching games from namcos1 driver in mame internal menu cause program to crash (Alex Jackson)
-- 05542: [DIP/Input] (surpratk.c) suratk, suratka: Last dip switch currently called 'Unused' (after 'Service Mode' ON/OFF) should be renamed to 'Bonus Quiz' (Tafoid)
-- 05543: [DIP/Input] (goodejan.c) goodejan, totmejan: I found out most of DIP-SW settings. On mame most of settings are unknown. (Tafoid)
-- 05548: [DIP/Input] (system1.c) wbml, wbmlb, wbmlbg, wbmlbge, wbmljb, wbmljo, wbmlvc: DIP Setting FREE PLAY option is missing. Unknown DIP is should be Unused.
-- 05555: [Crash/Freeze] (upscope.c) upscope: Game jumps into Service Mode (Duke)
-- 05562: [Sound] (lwings.c) lwings, trojan, sectionz, avengers and clones: The music tempo is fast. (hap)
-- 05569: [Compiling] Makefile misinterprets host name in BIGENDIAN autodetection (R. Belmont)
-- 05581: [Sound] (cps3.c) sfiii, sfiii2 and clones: Ken's short grunt voice plays twice (hap)
-- 05585: [Sound] (lwings.c) avengers, avengers2, buraiken: Sometimes the sound repeat in every stage start (hap)
-- 05589: [Graphics] (vulgus.c) vulgus vulgusj vulgusa: big enemies diseppear on right and partially appear on left side of screen (hap)
-- 05598: [Gameplay] (mole.c) mole: At the beginning of second round, game becomes unplayable (hap)
-- 05602: [Save/Restore] (nitedrvr.c) nitedrvr: Random characters appear in the middle of the screen using -autosave (hap)
-- 05609: [DIP/Input] (dec0.c) baddudes and drgninja: Continue Dip Switch is incorrect (Tafoid)
-- 05616: [Save/Restore] All sets using 6809/6309 cpu: Unreliable (failing) save states (Alex Jackson)
-- 05620: [Graphics] Crosshair: Selected graphic does not display properly
-- 05627: [Speed] (dec0.c) slyspy and clones: comparing to other games in this driver performance is low (Alex Jackson)
-
-
-New games added or promoted from NOT_WORKING status
+New Games Added or Promoted from NOT_WORKING Status
 ---------------------------------------------------
 Ace Attacker (FD1094 317-0059) [Chris Hardy, hap, Andreas Naive]
 Coco Loco [Roberto Fresca, Angelo Salese, Punkyas (from AUMAP), Ricky2001 (from AUMAP)]
@@ -87,7 +37,7 @@ Super Pacman (v1.2) + Cherry Master (Corsica, v8.31) [Roberto Fresca]
 Tetris + Cherry Master (Corsica, v8.01, set 1) [Roberto Fresca]
 Wyvern F-0 [Guru, ????]
 
-New clones added
+New Clones Added
 ----------------
 42 (hack of 1942) [ivanva]
 Apollo 13 (1.00) [PinMAME]
@@ -227,7 +177,7 @@ World Cup Soccer (La-2) [PinMAME]
 Zero Time (Datamat) [AUMAP]
 Zira [PinMAME]
 
-New games marked as GAME_NOT_WORKING
+New Games Marked as GAME_NOT_WORKING
 ------------------------------------
 Bonus Chance (W-8) [Roberto Fresca]
 Crazy Bonus 2000 [Roberto Fresca]
@@ -242,6 +192,56 @@ Tetris + Cherry Master (+K, Canada Version, encrypted) [Roberto Fresca, John Mpa
 Tetris + Cherry Master (Corsica, v8.01, set 2) [Roberto Fresca, John Mpampoylas ]
 
 
+MAME Testers Bugs Fixed (46):
+-----------------------------
+- 00371: [Graphics] (alpha68k.c) gangwarsu: There's a problem in the 3rd stage, just before the boss. (David Haywood)
+- 00493: [Graphics] (kaneko16.c) berlwall: When finishing a level, the timer bonus doesn't show correctly. It says "Timer x 10 = " (Luca Elia)
+- 01109: [Graphics] (rpunch.c) svolleyk: [possible] Red arrow indicator doesn't appear. (David Haywood)
+- 01546: [Gameplay] (taito_l.c) champwr: The gameplay is too fast (Mamesick)
+- 01630: [Color/Palette] (tecmo16.c) fstarfrc, ginkun, riot: broken colors on sprites (David Haywood)
+- 03164: [Graphics] (taito_l.c) fhawk, fhawkj: Rare sprites'bug (David Haywood)
+- 03447: [Graphics] (vegas.c) gauntdl, gauntdl24, gauntleg, gauntleg12: Texture with alpha channel is not drawn properly (Phil Bennett)
+- 03599: [Graphics] (taito_f3.c) gseeker and clones: missing background graphics on the right side (Alex Jackson)
+- 04097: [Speed] (namcos1.c) All sets in namcos1.c: Performance regression (Alex Jackson)
+- 04348: [Graphics] (rpunch.c) svolley, svolleyk, svolleyu: Arrow and confettis missing / Probable missing layer (David Haywood)
+- 04571: [Graphics] (dwarfd.c) All sets in dwarfd.c: Graphics regression/corruption (crazyc)
+- 05239: [Misc.] (system16.c) dduxbl: AddressSanitizer: heap-buffer-overflow (Alex Jackson)
+- 05242: [Misc.] (mystwarr.c) mystwarr, mtlchamp and clones: AddressSanitizer: heap-buffer-overflow (Alex Jackson)
+- 05244: [Misc.] (nsmpoker.c) nsmpoker: AddressSanitizer: heap-buffer-overflow (Alex Jackson)
+- 05246: [Misc.] (parodius.c) all parodius.c sets: AddressSanitizer: heap-use-after-free (Alex Jackson)
+- 05264: [Sound] (taito_l.c) champwr: Music cues missing (do not play) (Mamesick)
+- 05442: [Graphics] (astinvad.c) kamikaze, astinvad: Incorrect flashing on screen (hap)
+- 05487: [DIP/Input] (fromanc2.c) fromancr: Can't save any Service menu (F2) settings. (hap)
+- 05491: [Gameplay] (bfm_sc4.c) All sets in bfm_sc4.c: Failure to pass INITIALIZING in-game (R. Belmont)
+- 05499: [Crash/Freeze] (namcona1.c) All sets in namcona1.c: Assert after OK (Alex Jackson)
+- 05500: [Crash/Freeze] (galaga.c) galaga, digdug, polepos: Game freezes just before finishing POST (hap)
+- 05501: [Crash/Freeze] (namcos12.c) golgo13, g13knd: After initial screen on boot, nothing but black screen (hap)
+- 05503: [Crash/Freeze] (system16.c) dduxbl: [debug] Screen corrupt and/or crashes (Alex Jackson)
+- 05504: [Crash/Freeze] (nsmpoker.c) nsmpoker: [debug] Hangs after OK (Alex Jackson)
+- 05506: [Crash/Freeze] (shanghai.c) All shanghai.c sets: [debug] Assertion (Firewave)
+- 05515: [Crash/Freeze] All PCE-based sets: Crash with -aviwrite or -mngwrite (Firewave)
+- 05521: [Crash/Freeze] Attemping to load 0-sized roms or samples causes crash (Olivier Galibert)
+- 05522: [Misc.] chdman: *CD* FLAC compresion doesn't work for GDI images (R. Belmont)
+- 05523: [Crash/Freeze] (coinmstr.c) supnudg2: Crash at Initialization (Tafoid)
+- 05524: [Color/Palette] Assorted sets - adjusting brightness or other levels in sliders causes color changes (Alex Jackson)
+- 05537: [Multisession] (namcos1.c) All namcos1.c sets: switching games from namcos1 driver in mame internal menu cause program to crash (Alex Jackson)
+- 05542: [DIP/Input] (surpratk.c) suratk, suratka: Last dip switch currently called 'Unused' (after 'Service Mode' ON/OFF) should be renamed to "Bonus Quiz" (Tafoid)
+- 05543: [DIP/Input] (goodejan.c) goodejan, totmejan: I found out most of DIP-SW settings. On mame most of settings are unknown (Tafoid)
+- 05548: [DIP/Input] (system1.c) wbml, wbmlb, wbmlbg, wbmlbge, wbmljb, wbmljo, wbmlvc: DIP Setting FREE PLAY option is missing. Unknown DIP is should be Unused.
+- 05555: [Crash/Freeze] (upscope.c) upscope: Game jumps into Service Mode (Duke)
+- 05562: [Sound] (lwings.c) lwings, trojan, sectionz, avengers and clones: The music tempo is fast (hap)
+- 05569: [Compiling] Makefile misinterprets host name in BIGENDIAN autodetection (R. Belmont)
+- 05581: [Sound] (cps3.c) sfiii, sfiii2 and clones: Ken's short grunt voice plays twice (hap)
+- 05585: [Sound] (lwings.c) avengers, avengers2, buraiken: Sometimes the sound repeat in every stage start (hap)
+- 05589: [Graphics] (vulgus.c) vulgus vulgusj vulgusa: big enemies diseppear on right and partially appear on left side of screen (hap)
+- 05598: [Gameplay] (mole.c) mole: At the beginning of second round, game becomes unplayable (hap)
+- 05602: [Save/Restore] (nitedrvr.c) nitedrvr: Random characters appear in the middle of the screen using -autosave (hap)
+- 05609: [DIP/Input] (dec0.c) baddudes and drgninja: Continue Dip Switch is incorrect (Tafoid)
+- 05616: [Save/Restore] All sets using 6809/6309 cpu: Unreliable (failing) save states (Alex Jackson)
+- 05620: [Graphics] Crosshair: Selected graphic does not display properly
+- 05627: [Speed] (dec0.c) slyspy and clones: comparing to other games in this driver performance is low (Alex Jackson)
+
+
 Source changes:
 ---------------
 - Fixed startup order issue introduced in r28777 [smf].
@@ -249,28 +249,28 @@ Source changes:
 - Added makefile define SSE2 to enable specially optimized code [Oliver Stöneberg].
 - Redumped all the Super Star '97 graphics ROMs as TC531000 mask ROMs [Siftware, Quench, Guru].
 - device_gfx_interface and memory system improvements [Alex Jackson]:
-  * Added macros to facilitate declaring gfxdecode info arrays as members of a device class.
+  * Added macros to facilitate declaring gfxdecode info arrays as members of a device class;
   * AM_SHAREs in a device's internal address map or its default address map are now tagmapped as children of that device rather than siblings (analogous to how handlers in internal/default address maps are scoped).
 - Fixed bloom misalignment with HLSL [MooglyGuy].
 - Maygay M1 and MV1 converted to standard i8279 drivers [J. Wallace].
-- konamigx: Reverb me harder baby! [O. Galibert].
+- konamigx: Reverb me harder baby! [Olivier Galibert].
 - namcona1.c improvements [Alex Jackson]:
-  * Rewrite tilemap drawing code.
-  * Use set_palette_offset.
-  * Use GFXDECODE_RAM.
+  * Rewrite tilemap drawing code;
+  * Use set_palette_offset;
+  * Use GFXDECODE_RAM;
   * ROM loading and miscellaneous cleanups.
 - Chihiro improvements [Samuele Zannoli]:
-  * i386 cpu x87 opcodes FPREM and FPREM1 must clear status bit C2 not C0.
-  * Add basic management of some Nvidia APU sound registers.
-  * Store modelview/projection matrices and translate/scale vectors sent to NV2A.
-  * Store vertex program (vertex shader) sent to NV2A 3d accelerator.
-  * Added debug command "chihiro grab_texture,<type>,<filename>", it saves to <filename> the next used texture of type <type>.
+  * i386 cpu x87 opcodes FPREM and FPREM1 must clear status bit C2 not C0;
+  * Add basic management of some Nvidia APU sound registers;
+  * Store modelview/projection matrices and translate/scale vectors sent to NV2A;
+  * Store vertex program (vertex shader) sent to NV2A 3d accelerator;
+  * Added debug command "chihiro grab_texture,<type>,<filename>", it saves to <filename> the next used texture of type <type>;
   * Fixed DXT3 and adds DXt5 texture decompression.
   * Add 3d accelerator method 0x1800 for indexed mode vertex sending.
 - Added PIC dump to Mega Phoenix [Enricnes (from AUMAP)].
 - bladestl.c: Simplify ROM loading, reduce tagmap lookups [Alex Jackson].
 - BFM BD1 and ROC10937 now have proper device line accessors for the clock (sclk), reset (por) and data (data). All affected drivers have been updated to use these [J. Wallace].
-- corefile: Don't crash on 0-length files [O. Galibert].
+- corefile: Don't crash on 0-length files [Olivier Galibert].
 - Added vblank bit in Model 2 Old Revision, fixes Virtua Cop booting [Angelo Salese].
 - Hooked up lightgun inputs in Virtua Cop [Angelo Salese].
 - Fixes for PowerPC AltiVec compile [Vas Crabb].
@@ -278,16 +278,16 @@ Source changes:
 - sh2.c: Modernised CPU core [Wilbert Pol].
 - cvs.c: Updated the driver to use modern speech ROM reading [Fabio Priuli] .
 - tms5110.c: Removed legacy handlers, now that no drivers use them anymore [Fabio Priuli].
-- network: Please don't kill save states [O. Galibert].
-- nscsi: Save some state [O. Galibert].
+- network: Please don't kill save states [Olivier Galibert].
+- nscsi: Save some state [Olivier Galibert].
 - m68k: Update used and modified bits in the page tables and greatly improved PTEST results on 68040 [R. Belmont].
-- tatsumi.c: Filled in missing dipswitches and added dipswitch locations to Round Up 5 - Super Delta Force [Brian Troha].
+- tatsumi.c: Filled in missing DIP switches and added DIP switch locations to Round Up 5 - Super Delta Force [Brian Troha].
 - SDL: Fix OS X compile with non-official SDL [R. Belmont, based on a patch by Fernando Lemos].
 - Netlist: All analysis is now based on an immutable list of terminals. The dynamic list now is only used in the "hot" core. This is the base for possible further optimizations using multiple lists; e.g. a high-low transition list and a low-high transition list [Couriersud].
 - Fix transparency in SDL2.0 code [Couriersud].
 - CPS-1 update [Team CPS-1]:
-  * Added full documentation to (nemoa).
-  * Rename (nemoa) to (nemor1) to follow the new cps1 standard.
+  * Added full documentation to (nemoa);
+  * Rename (nemoa) to (nemor1) to follow the new cps1 standard;
   * Minor reorder and cleanup.
 - MC68681: support timer-driven serial channels. Fixes SC4 fruit machine games [R. Belmont].
 - SCSI Port using WRITELINE and DEVCB2. The slot number and SCSI ID are separate so you can for example have -harddisk1 as ID 6 and -harddisk 2 as ID 5. The HLE'd CD & HD have configuration switches to set the ID, real emulated hardware will specify the ID using it's own method [smf].
@@ -298,50 +298,49 @@ Source changes:
 - Use the correct call to free memory in windows osd_close [smf].
 - Simplified netlist code. It now always provides a stable solution instead of rescheduling the solver [Couriersud].
 - Naomi: Documentation update [f205v].
-- memory: Stop the watchpoints from messing with the opcode decryption [O. Galibert].
+- memory: Stop the watchpoints from messing with the opcode decryption [Olivier Galibert].
 - emupal.c: Add support for RAM-based palettes with indirect lookups. Update various drivers to use it [Alex Jackson].
 - CHD updates [MetalliC]:
-  * Bugfixed byte order for GD-ROM audio tracks so FLAC compression is effective.
+  * Bugfixed byte order for GD-ROM audio tracks so FLAC compression is effective;
   * Fixed uninitialized struct on MSVC (and possibly other) builds.
 - Naomi: Small correction to World Kicks game code [f205v].
 - cdrom: Fix uninitialized flags [MetalliC].
 - ym2612: Sync timer fixes from GenPlus-GX, fixes MT #5049 [Enik Land].
 - namcoic.c: Remove legacy read/write handlers [Alex Jackson].
-- mccs1850: Fix multi-write [O. Galibert].
+- mccs1850: Fix multi-write [Olivier Galibert].
 - Naomi updates [MetalliC]:
-  * 5 more BAD_DUMP GD-ROMs redumped from source.
-  * All SHA1s updated to latest.  'chdman copy' on existing valid CHDs will update your files to the new SHA1s.
+  * 5 more BAD_DUMP GD-ROMs redumped from source;
+  * All SHA1s updated to latest. 'chdman copy' on existing valid CHDs will update your files to the new SHA1s.
 - ioport_array_finder: ioport_array_finder is a new device finder template for finding, unsurprisingly, an array of ioports. It is mainly intended to help handle multiplexed ioports without runtime tagmap lookups in a more elegant way than was previously possible [Alex Jackson].
 - TMS34010: Use the CONVSP/CONVDP registers to adjust source and destination addresses when window clipping or y-reverse is applied [Phil Bennett].
 - inder_vid.c: Mirrored TMS34010 RAM at 0x7fc00000 and 0xffc00000. With the previous TMS34010 change, this fixes the window clipping issues at y=0 [Phil Bennett].
-- mb8795: Fix packet sizes [O. Galibert].
+- mb8795: Fix packet sizes [Olivier Galibert].
 - cyberbal.c: Use separate palette for each screen [Alex Jackson].
 - mc6847: Added internal character generator ROM and M5C6847P-1 variant [Curt Coder, Anna Wu].
 - mc6847: Added character generator ROM for S68047 [Curt Coder].
-- h8: Fix missing debugger hook calls [O. Galibert].
-- Made osd_interface base class for OSD and moved initialization for each subsystem in it as virtual calls [Miodrag Milanovic]:
-  * Moved midi handling in base class.
-  * Cleaned running_machine of information of next machine.
-  * All is cleaned after exiting of running_machine so debugger window is removed as well till next machine is started.
+- h8: Fix missing debugger hook calls [Olivier Galibert].
+- Made osd_interface base class for OSD and moved initialization for each subsystem in it as virtual calls [Miodrag Milanović]:
+  * Moved midi handling in base class;
+  * Cleaned running_machine of information of next machine;
+  * All is cleaned after exiting of running_machine so debugger window is removed as well till next machine is started;
   * Made osdmini to compile.
-- h8_sci: Implement sync-start [O. Galibert] .
-- h8: Fix problem in the sleep instruction [O. Galibert].
-- at45dbxx: Fix communications [O. Galibert].
+- h8_sci: Implement sync-start [Olivier Galibert].
+- h8: Fix problem in the sleep instruction [Olivier Galibert].
+- at45dbxx: Fix communications [Olivier Galibert].
 - s3: Added Diamond Stealth 3D 2000 Pro card [Malice, Barry Rodewald].
 - voodoo: Fixed alpha test to run on the alpha combiner output and not on a_other. Do the test before the color combiner steps to potentially save some effort [Phil Bennett].
 - Improvements to "The Berlin Wall" [Luca Elia]:
-  * Scrambling of sprite offset registers (fixes MT bug 493)
-  * background: Added scroll register (screen shaking effect), fixed flipping.
+  * Scrambling of sprite offset registers (fixes MT bug 493);
+  * background: Added scroll register (screen shaking effect), fixed flipping;
   * Fixed flipped tilemap offset.
 - funworld.c: Proper decryption of rcdino4 code pages [Peter Ferrie].
 - Merged video/gticlub functionality to K001005/1006 devices. Converted K001005 to use the new poly manager [Ville Linde].
 - CHD cleanups [MetalliC]:
-  * Double quote filenames with spaces when writing .gdi files
-  * Give audio files .raw. extension when writing .gdi files.
+  * Double quote filenames with spaces when writing .gdi files;
+  * Give audio files .raw. extension when writing .gdi files;
   * cdrom_read_subcode() now returns false if the image doesn't contain subcodes.
 - i8257: New 8257 based on am9517a [Carl].
-- i8244.c: Prevent out of bound accesses of local collision_map
-variable. Fixed MT#005551. [Wilbert Pol].
+- i8244.c: Prevent out of bound accesses of local collision_map variable. Fixed MT#005551 [Wilbert Pol].
 - 315_5124.c: Improved CRAM writes. Fixes wrong colors on sega logo for robocop3 on gamegear [Enik Land].
 - i8275x: Fixed DMA burst length. It is specified in received characters, not character clocks [Curt Coder].
 - i8275: Added character attributes and special character codes [Curt Coder].
@@ -353,31 +352,30 @@ variable. Fixed MT#005551. [Wilbert Pol].
 - emupal.c: Support palette RAM less than the full width of the data bus it's on, without the need for per-driver trampolines. Started removing said trampolines [Alex Jackson].
 - enabled rgbsse.h for Visual Studio 64-bit builds as well and use rgbgen.h for all DEBUG builds since this is the fastest combination [Oliver Stöneberg].
 - 88games.c: Modernized banking [Alex Jackson].
-- rcdino4 improvements:
+- rcdino4 improvements [Roberto Fresca]:
   * Improved decryption, game boots now [Peter Ferrie].
-  * Created a dedicated machine driver [Roberto Fresca].
-  * Adjusted the tilemap size accordingly [Roberto Fresca].
-  * Added the proper color banking [Roberto Fresca].
-  * Hooked DIP switches and proper inputs [Roberto Fresca].
+  * Created a dedicated machine driver;
+  * Adjusted the tilemap size accordingly;
+  * Added the proper color banking;
+  * Hooked DIP switches and proper inputs.
 - Refactored fd1094's decryption code in order to make the function more amenable to inversion [Andreas Naive].
-- Reorganized OSD, handling more sound output systems and debuggers, defaults left same as before. Created osd_options as base option class for non-system specific options [Miodrag Milanovic].
+- Reorganized OSD, handling more sound output systems and debuggers, defaults left same as before. Created osd_options as base option class for non-system specific options [Miodrag Milanović].
 - Created WD7600 chipset device. megapc: Made into a separate driver class, hooked up WD7600 [Barry Rodewald].
 - eepromser: Added support for X24C44 [ANY].
 - i86: Add 0x6x instruction shadows, used by DEC Rainbow MS-DOS 2.01 [R. Belmont, based on a patch by Bavarese].
 - digfx.c, drawgfx.c: Don't do unneeded processing or allocate unneeded memory for RAW gfx layouts; add -valid check that extxoffs/extyoffs info are present when the layout size demands them [Alex Jackson].
 - arm7: Added Thumb version of BLX [R. Belmont].
 - Coco Loco: Added ASCII PCB layout [Roberto Fresca].
-- drawgfx.c: Make it possible to reset the total elements of a
- gfx_element [Alex Jackson].
+- drawgfx.c: Make it possible to reset the total elements of a gfx_element [Alex Jackson].
 - nemesis.c: Use resnet for palette [Alex Jackson, Couriersud].
 - HotMind: Restored missing text layer, added Ticket/Token dispensers and replaced the sound PIC with a hand modified version for correct background music playback.   [Quench].
 - LuckBoomH: Corrected the text layer and inputs, added Ticket/Token dispensers and replaced the sound PIC with a hand modified version for correct sample and music playback [Quench].
-- wpc_95: Make it testable [O. Galibert].
+- wpc_95: Make it testable [Olivier Galibert].
 - fmtowns: Added clone FM Towns II FreshTV [caius, Barry Rodewald].
 - sigmab52 updates [Sandro Ronco]:
-  * Improved inputs.
-  * Added preliminary sound.
-  * Fixed DIPLOCATION.
+  * Improved inputs;
+  * Added preliminary sound;
+  * Fixed DIPLOCATION;
   * Added NVRAM.
   * Various cleanups.
 - m37710: Support direct read [Alex Jackson].
@@ -387,28 +385,27 @@ variable. Fixed MT#005551. [Wilbert Pol].
 - debugqt: Un-revert and add fix for focus seizure [Carl].
 - screen.c: Ensure the vblank timer and the partial-update-reset timer always fire in the correct order when vblank starts on scanline 0 [Alex Jackson].
 - Work on the Sega System16b version of Ace Attacker [Chris Hardy, Andreas Naive]:
-  * Reconstructed SEGA FD1094 key (317-0059). Some errors could remain.
+  * Reconstructed SEGA FD1094 key (317-0059). Some errors could remain;
   * Found the differences, in some sprite ROMs, with the System16a version to be due to a BAD_DUMP with stuck bits. Both sets use the same sprite ROMs now.
 - naomi/chihiro/triforce: Updated set documentation [f205v].
 - m68000: Smear byte writes the same as a real 68000. Fix the debugger so watchpoints continue to work as expected [Alex Jackson].
 - bladestl.c: Add RC filters to YM2203 SSG channels (based on schematic, identical to ddribble) [Alex Jackson].
 - williams.c: Added two video board PROMs to joust2 and made ROM names more descriptive [Joe Magiera].
-- cbuster.c: Add PCB locations to the Crude Buster/Two Crude sets. Correct to use actual measured
-clock speed [Artemio Urbina].
+- cbuster.c: Add PCB locations to the Crude Buster/Two Crude sets. Correct to use actual measured clock speed [Artemio Urbina].
 - adp.c updates [Sandro Ronco]:
-  * Added NVRAM support.
-  * Hooked up RTC.
-  * Added inputs to fstation.
+  * Added NVRAM support;
+  * Hooked up RTC;
+  * Added inputs to fstation;
   * Removed unused code.
-- Created machine_manager as singleton class that contains (for now) one running machine [Miodrag Milanovic]:
-  * Updated LUA engine to run in machine_manager instead of being initialized per machine
-  * Added "-console" option so emulator can be started with LUA enabled console.
-  * Update LUA to version 5.2.3.
+- Created machine_manager as singleton class that contains (for now) one running machine [Miodrag Milanović]:
+  * Updated LUA engine to run in machine_manager instead of being initialized per machine;
+  * Added "-console" option so emulator can be started with LUA enabled console;
+  * Update LUA to version 5.2.3;
   * Enabled SQLite3 to be compiled and added LUA module for it.
-- motoxgo: Fix point ROM loading [O. Galibert].
+- motoxgo: Fix point ROM loading [Olivier Galibert].
 - segajw.c updates [Sandro Ronco]:
-  * Hooked up ACRTC.
-  * Added inputs.
+  * Hooked up ACRTC;
+  * Added inputs;
   * Added NVRAM support.
 - Hooked up RAMDAC device to following drivers [Angelo Salese]:
   * adp.c
@@ -420,36 +417,36 @@ clock speed [Artemio Urbina].
 - i86.c: Four new 8086 opcode aliases: 0xc0 is 0xc2; 0xc1 = 0xc3; 0xc8 = 0xca; 0xc9 = 0xcb as documented at OS 2 Museum [Bavarese].
 - rx50_dsk.h/c: Rainbow specific; The RX50 _disk drive_ was used in different architectures.  Floppy format used by Rainbow-100 and -190. Track layout (post-amble, some positions) yet unverified. Currently only raw 400 K disk dumps are supported (*.img) [Bavarese].
 - Work on System24's remaining sgmast set [Chris Hardy, Andreas Naive].
-  * Reconstructed SEGA FD1094 key (317-0058-05d).
+  * Reconstructed SEGA FD1094 key (317-0058-05d);
   * Tossed the previous alternate reads away as confirmed duplicate disks of sgmastj & sgmast (with differences in the highscores' track).
 - naomi.c: Redumped tetkiwam and ngdup23c to current standards [MetalliC].
-- LUA overhaul [Olivier Galibert, Miodrag Milanovic].
+- LUA overhaul [Olivier Galibert, Miodrag Milanović].
 - upd765: Implement scan data and read track. Fail command when drive not ready and check ready before command (verified on real hardware) stop polling when first byte of command sent (verified) [Carl].
 - SDL: Fix 0.153 regression where user GLSL shaders didn't work [R. Belmont].
 - SDL: Fix shaders for games that output indexed16 (e.g. pacman) [R. Belmont].
 - namcos1.c: Completely rewrote the emulation of the CUS117 MMU. The MMU is no longer emulated by modifying address maps at runtime, an operation which has become excessively slow as the core memory system has accumulated features and complexity over the years. Instead, the MMU is now a device which works on similar principles to the address_map_bank_device. The recent multisession regression is fixed, all games in the driver should now run substantially faster, and most importantly the driver code is now much cleaner and easier to understand [Alex Jackson].
 - chihiro.c: Update [f205v]:
-  * Added exact release dates, GDX info and descriptions for all known existing games/releases not yet secured or dumped.
+  * Added exact release dates, GDX info and descriptions for all known existing games/releases not yet secured or dumped;
   * Added v5 CHDs redumps for: GDX-0002B, GDX-0003A, GDX-0006G, GDX-0024A.
 - triforce.c: Update [f205v]:
-  * Added exact release dates, GDT info and descriptions for all known existing games/releases not yet secured or dumped.
+  * Added exact release dates, GDT info and descriptions for all known existing games/releases not yet secured or dumped;
   * Added v5 CHDs redumps for: GDT-0002, GDT-0013E, GDT-0015.
 - SDL: Fix -prescale 0.153 regression [R. Belmont].
 - Fixed -j compilation with VS2013 [Oliver Stöneberg].
 - atahle: Added CS1 active status register [Curt Coder].
 - SDL: Always supply screen size uniforms to GLSL shaders, and fix bug with X multihead [R. Belmont].
 - seta.c: Verify clocks and fix refresh rate for daioh [trap15].
-- m68040: fbcc dasm fixes [O. Galibert].
+- m68040: fbcc dasm fixes [Olivier Galibert].
 - Recreated yet again the CHDs from r30949 (no new sets) which all had different SHA1 hashes due to bugfixes with CHDMAN since 0.153 release [f205v].
-- nscsi_cd: I told'ya, there's no disk in the drive [O. Galibert].
+- nscsi_cd: I told'ya, there's no disk in the drive [Olivier Galibert].
 - Updated m72.c with a Guru-readme for Ninja Spirit. Changed labels where appropriate to match information and added PALs/PROMs [Guru].
 - NeoGeo (multi)slot work [S. Smith, David Haywood]:
-  * Converted all protection types to be MAME devices.
-  * Created cartridge (slot) device types for each type of cartridge containing the above protection devices.
-  * Made the 'neogeo' set emulate a 6-slot MVS system allowing for multiple cartridges to be mounted, for example "mame64 neogeo -cart1 mslug -cart2 mslugx -cart3 mslug3" is the command-line syntax to launch an MVS unit with 3 Metal Slug games installed.
-  - Many of the hacks / bootlegs won't work in multi-slot setups, this is true to hardware.
-  - Some carts (kof95, kof2002 for example) can block recognition of carts in higher slots if the NVRAM isn't already initialized. This appears to be true to original hardware because the kof95h set fixes this issue, powering off/on the system fixes it.
-  - Sound banking isn't 100% correctly handled so the odd game may fail with the slot system (trally) but regular loading still works.
+  * Converted all protection types to be MAME devices;
+  * Created cartridge (slot) device types for each type of cartridge containing the above protection devices:
+  * Made the 'neogeo' set emulate a 6-slot MVS system allowing for multiple cartridges to be mounted, for example "mame64 neogeo -cart1 mslug -cart2 mslugx -cart3 mslug3" is the command-line syntax to launch an MVS unit with 3 Metal Slug games installed;
+  - Many of the hacks / bootlegs won't work in multi-slot setups, this is true to hardware;
+  - Some carts (kof95, kof2002 for example) can block recognition of carts in higher slots if the NVRAM isn't already initialized. This appears to be true to original hardware because the kof95h set fixes this issue, powering off/on the system fixes it;
+  - Sound banking isn't 100% correctly handled so the odd game may fail with the slot system (trally) but regular loading still works;
   - The slot / multislot support makes use of the Software Lists rather than the internal sets, please ensure the correct softlist XML file is present in your hash folder.
 - i86.c: 0x60 shadow omitted in previous patch. Needed for DOS 2 [Bavarese].
 - Add width and endianness attributes to data areas in software lists. Update neogeo.xml and megadriv.xml to take advantage of them [Alex Jackson].
@@ -465,12 +462,12 @@ clock speed [Artemio Urbina].
 - Also adds a complete dump of the FD1089B 317-0027 key! [Brian Troha].
 - fd1089.c: Document the newly redumped FD1089A 317-0027 along with it's unencrypted data range [Charles MacDonald].
 - CPS-1 update [Team CPS-1]:
-  * Added missing documentation to kenseim.
+  * Added missing documentation to kenseim;
   * Minor cleanups and fixes.
 - Updated information about measurements and model derived from those [Couriersud].
 - Chihiro WIP [Samuele Zannoli]:
-  * Add NV2A vertex program disassembler.
-  * Added two new debugger commands, grab_vprog <filename> to save the currently uploaded vertex program, and vprogdis <address, length>[<,type>] to disassemble a vertex program.
+  * Add NV2A vertex program disassembler;
+  * Added two new debugger commands, grab_vprog <filename> to save the currently uploaded vertex program, and vprogdis <address, length>[<,type>] to disassemble a vertex program;
   * Implemented alpha-test, blending, and logical per-fragment operations. Improves many 2D displays in outr2.
 - NES CPU: Add missing items to save state [Alex Jackson].
 - USE 64bit intermediary results in sound_stream::generate_resampled_data. This will allow sound drivers to make use of the full width of stream_sample_t [Couriersud].

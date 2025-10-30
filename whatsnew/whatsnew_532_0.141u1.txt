@@ -1,4 +1,4 @@
-0.141u1 2011/01/24 [#532 - Aaron Giles]
+﻿0.141u1 2011/01/24 [#532 - Aaron Giles]
 ---------------------------------------
 
 
@@ -37,33 +37,33 @@ Lucky Lady (Wing, encrypted) [Roberto Fresca, Team Europe & Willi.O]
 ATV Track [hap, ANY, ranger_lennier, dopefishjustin, gamerfan, gatt9, N. Francfort, Smitdogg, The Dumping Union, David Haywood]
 
 
-MAMETesters Bugs Fixed (19):
-----------------------------
+MAME Testers Bugs Fixed (19):
+-----------------------------
 - 04199: [Documentation] barbball: Typo in title.
-- 01879: [Graphics] All sets in toaplan2.c: Cocktail mode (Player 2) has no background images (David Haywood).
-- 01004: [Graphics] chinhero, chinhero2, chinherot: There is a bad sprite on level 7 of the game (Pierpaolo Prazzoli).
+- 01879: [Graphics] All sets in toaplan2.c: Cocktail mode (Player 2) has no background images (David Haywood)
+- 01004: [Graphics] chinhero, chinhero2, chinherot: There is a bad sprite on level 7 of the game (Pierpaolo Prazzoli)
 - 02111: [Graphics] madalien, madaliena: Missing lightup when enemies explode in dark.
-- 02041: [Sound] smgp and clones: Voice samples incorrectly played (hap).
-- 00992: [Sound] hangon: The pitch of the engine sound is wrong (hap).
+- 02041: [Sound] smgp and clones: Voice samples incorrectly played (hap)
+- 00992: [Sound] hangon: The pitch of the engine sound is wrong (hap)
 - 03460: [Color/Palette] starfire, starfirea: Incorrect color at bottom of screen.
-- 04190: [Color/Palette] heiankyo: wrong colors (hap).
-- 02080: [Sound] armedf: DAC Chip playing Orchestra Hit Sample too low (hap).
-- 03501: [Sound] batsugun, batsuguna, batsugunsp: Missing music and some sound effects (Alex Jackson).
-- 04147: [Crash/Freeze] raiden: crashes if you use -debug switch (Alex Jackson).
-- 03808: [Graphics] starsldr, vivdolls: Garbled screen (MooglyGuy).
-- 04079: [Crash/Freeze] mtrain: Access Violation before OK (Luca Elia).
+- 04190: [Color/Palette] heiankyo: wrong colors (hap)
+- 02080: [Sound] armedf: DAC Chip playing Orchestra Hit Sample too low (hap)
+- 03501: [Sound] batsugun, batsuguna, batsugunsp: Missing music and some sound effects (Alex Jackson)
+- 04147: [Crash/Freeze] raiden: crashes if you use -debug switch (Alex Jackson)
+- 03808: [Graphics] starsldr, vivdolls: Garbled screen (MooglyGuy)
+- 04079: [Crash/Freeze] mtrain: Access Violation before OK (Luca Elia)
 - 04178: [Documentation] cmmb162: Year should be 2002.
-- 00865: [Graphics] blandia: In Jurane stage, the whole bottom of the screen is filled with solid gray (Pierpaolo Prazzoli).
-- 04180: [Crash/Freeze] dunkmniaj: To key press "OK" the game has only a blue screen (Tafoid).
-- 02883: [Debugger] debugger: Pressing F10 (Step Over) occasionally causes Debug menu to light up (hap).
+- 00865: [Graphics] blandia: In Jurane stage, the whole bottom of the screen is filled with solid gray (Pierpaolo Prazzoli)
+- 04180: [Crash/Freeze] dunkmniaj: To key press "OK" the game has only a blue screen (Tafoid)
+- 02883: [Debugger] debugger: Pressing F10 (Step Over) occasionally causes Debug menu to light up (hap)
 - 04165: [Crash/Freeze] vbowl, vbowlj: Crash after OK.
-- 04166: [Crash/Freeze] arabian, arabiana: After several cycles of the attact mode, the game halts (Phil Bennett).
+- 04166: [Crash/Freeze] arabian, arabiana: After several cycles of the attact mode, the game halts (Phil Bennett)
 
 
 Source changes:
 ---------------
-- Added Rockwell PPS4 CPU core (not finished) [Miodrag Milanovic].
-- Added GAME_MECHANICAL flag to mark games having mechanical interface (such as pinball, redemption, bowling games...). Imported games from PinMAME as skeletons [Miodrag Milanovic].
+- Added Rockwell PPS4 CPU core (not finished) [Miodrag Milanović].
+- Added GAME_MECHANICAL flag to mark games having mechanical interface (such as pinball, redemption, bowling games...). Imported games from PinMAME as skeletons [Miodrag Milanović].
 - Removed fast IMEM and DMEM handlers from the RSP DRC in favor of the core memory system; fixes RSP DRC on 32-bit targets [Harmony].
 - Changed DMADAC interleave in the Aleck 64 driver from 2 to 1; fixes monaural and poppy audio [Harmony].
 - arm7: Fix for (39in1) MAME and removed a duplicate line [Tim Schuerewegen].
@@ -109,9 +109,9 @@ Source changes:
 - Improved sprite-tile priorities in SD Gundam Sangokushi Rainbow Tairiku Senki [David Haywood].
 - v25: Fix false warnings from some GCC versions [R. Belmont].
 - Improve TLB mismatch handling in PPC DRC, so that if we fill from an empty entry, we re-dispatch to previously compiled code instead of always recompiling the target. This greatly reduces the DRC overhead on 603-based games [Aaron Giles].
-- Moved MESS RAM device into emu core. Added COMP and CONS macros in driver.h [Miodrag Milanovic].
-- Marking mechanical games as such in XML [Miodrag Milanovic].
-- Moved image devices implementation and related UI functions to emu section from MESS [Miodrag Milanovic].
+- Moved MESS RAM device into emu core. Added COMP and CONS macros in driver.h [Miodrag Milanović].
+- Marking mechanical games as such in XML [Miodrag Milanović].
+- Moved image devices implementation and related UI functions to emu section from MESS [Miodrag Milanović].
 - Converted drccache to C++ [Aaron Giles].
 - Flagged a number of existing games in MAME with GAME_MECHANICAL to indicate the presence of un-emulatable mechanical parts [Tafoid].
 - Preliminary implementation of the Seibu COP palette brightness mode 4, used by Denjin Makai fade in/out effects [Angelo Salese].
@@ -133,7 +133,7 @@ Source changes:
 - naomi.c: Documentation additions [f205v].
 - Added DIP switch locations for "Zodiack" [Brian Troha].
 - Corrected play speed on "Mr. Kicker" [David Haywood].
-- Added CHD support in softlists [Miodrag Milanovic].
+- Added CHD support in softlists [Miodrag Milanović].
 - Fixed handling 80186 instructions [Phill Harvey-Smith].
 - SDL OS/2 fixes [K.O. Myung-Hun].
 - naomi: Support texture stride selection [Olivier Galibert].
@@ -153,7 +153,7 @@ Source changes:
 - clifront.c: Added remaining loadflags to -listsoftware output [Fabio Priuli].
 - Fixed an ARM7 R15 bit ignoring behaviour while in ARM state, fixes "Lupin the Third": the Typing ARM crashing when you coin it up [Tim Schuerewegen].
 - softlist.c: Added best match suggestions to software lists [Fabio Priuli].
-- softlist.c: Only output best match if a list is present, limit the scan for best match to the devices with the same interface and fixed a corner case with shortname=listname [Miodrag Milanovic].
+- softlist.c: Only output best match if a list is present, limit the scan for best match to the devices with the same interface and fixed a corner case with shortname=listname [Miodrag Milanović].
 - romload.c: Added support for split set to softlist (for cart, cd and hd) [Fabio Priuli].
 - devimage.c: Added support for split set to softlist for cass and flop too [Fabio Priuli].
 - Allow software lists to look for files in the rompath too [Fabio Priuli].
@@ -192,7 +192,7 @@ Source changes:
 - romload.c: Made -bios option case insensitive [Fabio Priuli].
 - starfire.c: Improved color emulation and added driver data [Qwi Jibo].
 - toaplan2 [Alex Jackson]:
-  * Found a lot more kbash opcodes by matching code with batsugun';
+  * Found a lot more kbash opcodes by matching code with batsugun;
   * Correct m68k and v25 address maps for (kbash);
   * Corrected truxton2 program ROM.
 - fixeight: Added several opcodes [Roberto Zandonà].
@@ -274,5 +274,5 @@ Source changes:
   * Now supports uPD7725 and uPD96050;
   * Hooked up SNES common code to use uPD96050 for ST-010/011;
   * Removed ST-010 HLE simulation.
-- Display suggestions in case commands that require game name are called and there were no matching games [Miodrag Milanovic].
+- Display suggestions in case commands that require game name are called and there were no matching games [Miodrag Milanović].
 - Carved out a discrete_sound_device from discrete_device. This now has all the stream related code. discrete_device thus now contains all the generic code and may be used going forward to implement not sound related use cases [Couriersud].

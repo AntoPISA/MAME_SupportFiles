@@ -2,7 +2,7 @@
 -----------------------------------
 
 
-New working machines
+New Working Machines
 --------------------
 Alphie - The Electronic Robot (patent) [hap]
 Cyberstorm (prototype) [ShouTime, The Dumping Union, Christophe Marignol, Sean Sutton, gamerfan, Brandon Munger, Renato Mucciarelli, Jan Stuhler, Jeffrey Gray, Aaron Giles, Phil Bennett]
@@ -25,7 +25,7 @@ TV Boy II (PAL) [David Shah]
 unknown electronic Space Invaders game (patent) [hap]
 Vindicators (Tiger handheld) [hap, Sean Riddle]
 
-New working clones
+New Working Clones
 ------------------
 Amstrad CPC6128 (Spain) [Enrique Ausina, Guru]
 Area 51 / Maximum Force Duo (R3000, 2/02/98) [Brian Troha, The Dumping Union]
@@ -61,7 +61,7 @@ Turbo Force (World, set 2) [Corrado Tomaselli, The Dumping Union]
 World Class Bowling (v1.0) [Brian Troha, The Dumping Union]
 X-Men: Children of the Atom (Brazil 950331) [SHVB, David Haywood, smf]
 
-Machines promoted to working
+Machines Promoted to Working
 ----------------------------
 100 in 1 (D-CAT8 8bit Console, set 1) (v5.01.11-frd, BL 20041217) [David Shah]
 110 in 1 CoolBaby (CoolBoy RS-1S) [David Shah]
@@ -81,7 +81,7 @@ TeleVideo Model 910 [R. Belmont, AJR]
 VG Pocket (VG-2000) [David Shah]
 VG Pocket Mini (VG-1500) [David Shah]
 
-Clones promoted to working
+Clones Promoted to Working
 --------------------------
 100 in 1 (D-CAT8 8bit Console, set 2) [David Shah]
 Ericsson Step/One [Edstrom, Fredrik Ohrstrom]
@@ -89,7 +89,7 @@ Knights of Valour 3 (V102, China, Hong Kong, Taiwan) [Peter Wilhelmsen, Morten S
 Knights of Valour 3 (V100, China, Hong Kong, Taiwan) [Peter Wilhelmsen, Morten Shearman Kirkegaard, David Haywood, MetalliC]
 Road Burners (ver 1.0) [Ted Green]
 
-New machines marked as NOT_WORKING
+New Machines Marked as NOT_WORKING
 ----------------------------------
 BittBoy Mini FC 300 in 1 [David Shah]
 dreamGEAR My Arcade Gamer V Portable Gaming System (DGUN-2573) [David Shah]
@@ -109,7 +109,7 @@ Trocana [trap15, The Dumping Union]
 Video Challenger [hap, Sean Riddle, incog]
 VTech Reader Laptop E (Germany) [David Haywood]
 
-New clones marked as NOT_WORKING
+New Clones Marked as NOT_WORKING
 --------------------------------
 DEC VT220 (Version 2.1) [AJR]
 Jolly Card (Italian, bootleg, set 2) [Roberto Fresca, Ioannis Bampoulas]
@@ -119,7 +119,7 @@ Lucky Ball 96 (Ver 3.50 - 626) [Roberto Fresca]
 Super 97-2 (Witch Bonus) [Roberto Fresca, Ioannis Bampoulas]
 TVI-912B [modem7]
 
-New working software list additions
+New Working Software List Additions
 -----------------------------------
 bbc_flop_6502: Advanced BASIC [Nigel Barnes]
 bbc_flop_80186: Problem Solver 2.0, Rat Driver 1.0 [Nigel Barnes]
@@ -194,12 +194,12 @@ stepone_flop:
   Collections of small games, Microsoft Multiplan v1.04, MS-DOS v1.25, RJE - IBM 3780 Remote Batch Terminal Emulator v1.0M,
   Wordstar v3.24 [Mattis Lind, Edstrom]
 
-Software list items promoted to working
+Software List Items Promoted to Working
 ---------------------------------------
 dragon_cart: Delta DOS [Nigel Barnes]
 electron_cart: Click v1.03, Pegasus 400 v1.02 [Nigel Barnes]
 
-New NOT_WORKING software list additions
+New NOT_WORKING Software List Additions
 ---------------------------------------
 cd32:
   Arabian Nights, Battletoads, Benefactor, Black Viper Bubba 'N' Stix, Bubble 'N Squeak, Chuck Rock, Chuck Rock II - Son of Chuck,
@@ -236,7 +236,7 @@ German [RafTacker]
 Greek [BraiNKilleRGR]
 
 
-MAMETesters Bugs Fixed (21):
+MAME Testers Bugs Fixed (21):
 ----------------------------
 - 02076: [Graphics] (playch10.cpp) playch10 ALL: Playchoice-10 driver needs LEDs added for single-screen BIOS (Vas Crabb)
 - 03790: [Crash/Freeze] (ms32.cpp) gratia, gratiaa: Unhandled priority type f8 (Angelo Salese)
@@ -248,7 +248,7 @@ MAMETesters Bugs Fixed (21):
 - 06791: [Graphics] (splash.cpp) splash and clones: Wrong sprite priority on bonus items (AJR)
 - 06799: [Crash/Freeze] (dynax.cpp) hjingi: Emulation hang (AJR)
 - 06804: [Crash/Freeze] (midyunit.cpp) strkforc: Black screen after ROM check (sjy96525)
-- 06806: [Graphics] Bitmap overlays don't display with bgfx video output [Ryan Holtz]
+- 06806: [Graphics] Bitmap overlays don't display with bgfx video output (Ryan Holtz)
 - 06810: [Misc.] Memory leak in m6502 CPU cores (AJR)
 - 06811: [Misc.] Memory leak in m6809 CPU core (AJR)
 - 06813: [Misc.] Memory leak in options (AJR)
@@ -383,10 +383,10 @@ Source changes:
 - dragon_fdc.cpp updates [Nigel Barnes]:
   * Added Premier FDC, for DeltaDOS.
   * Dragon FDC has READY line tied, fixes loading issues with Flex and OS9.
-- Converted machine configuration builders to member functions of the state classes and simplified prototype [O. Galibert].
-- swtpc09, isbc8010b, jtc_es40: Fixed typos [O. Galibert].
-- attache: Fixed SIO mapping [O. Galibert].
-- Replaced list of crystal/resonator/oscillator frequencies with a solution that doesn't require recompiling everything on changes [O. Galibert].
+- Converted machine configuration builders to member functions of the state classes and simplified prototype [Olivier Galibert].
+- swtpc09, isbc8010b, jtc_es40: Fixed typos [Olivier Galibert].
+- attache: Fixed SIO mapping [Olivier Galibert].
+- Replaced list of crystal/resonator/oscillator frequencies with a solution that doesn't require recompiling everything on changes [Olivier Galibert].
 - Fixed/worked around many errors reported by Coverity [Oliver Stoeneberg].
 - Restored SANITIZE make option [Oliver Stoeneberg].
 - Added artwork override and fallback options [phulshof].

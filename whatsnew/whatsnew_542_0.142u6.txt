@@ -2,8 +2,8 @@
 ---------------------------------------
 
 
-New Games Added or Promoted from NOT_WORKING Status
----------------------------------------------------
+New Game Added or Promoted from NOT_WORKING Status
+--------------------------------------------------
 Mortal Kombat 4 (version 1.0) [Phil Bennett]
 
 New Clones Added
@@ -21,7 +21,7 @@ Donggul Donggul Haerong [Guru]
 Warp Speed (prototype) [TrevEB, Siftware, Mariusz Wojcieszek]
 
 
-MAMETesters Bugs Fixed (7):
+MAME Testers Bugs Fixed (7):
 ---------------------------
 - 04377: [Graphics] All sets in fuukifg2.c: Missing graphics layer (Tafoid)
 - 04376: [Misc.] Typo in lib/util/opresolv.c
@@ -36,7 +36,7 @@ Source changes:
 ---------------
 - chdman: Fix GCC 4.6 build [R. Belmont].
 - HLSL Updates [Ryan Holtz, Bat Country Entertainment, austere]:
-  * Reworked default shadow mask settings, eliminating rainbow banding and matching reference shots more closely.
+  * Reworked default shadow mask settings, eliminating rainbow banding and matching reference shots more closely;
   * Moved color power to occur after shadow mask, as it is intended to simulate nonlinear phosphor response.
 - Added a variable-width notch filter to the Y channel in NTSC post-processing, eliminating luma banding on e.g. CoCo 2 and Apple II [Aaron Giles].
 - i286: Fix for Phar Lap and Borland 16-bit DPMI servers [Carl].
@@ -54,14 +54,14 @@ Source changes:
 - i286: Limit check of SS in push and pop instructions [Carl].
 - tms5220: Force OLDP and OLDE to be updated only on the A subcycle of IP=0 PC=0; this has no effect whatsoever on the output, it is merely to better document how the chip works [Lord Nightmare].
 - tms5220: Emulate circuit 412 from the patent, which should prevent spurious clicks on interpolation-inhibited frame transitions; this may improve the tie fighter sounds in starwars, and some clicking in EPROM/EPROMA [Lord Nightmare].
-- naomi/jvs: Add coin add/sub commands (sub is used by Crazy Taxi) [O. Galibert].
+- naomi/jvs: Add coin add/sub commands (sub is used by Crazy Taxi) [Olivier Galibert].
 - Warp Speed update [Mariusz Wojcieszek]:
-  * Fixed vblank interrupt and removed ROM patches.
-  * Added coin input.
+  * Fixed vblank interrupt and removed ROM patches;
+  * Added coin input;
   * Added preliminary starfield emulation.
 - HLSL Updates [Ryan Holtz, Bat Country Entertainment]:
-  * MAME will now save an HLSL INI file on the first run of a game that doesn't already have an INI file.
-  * HLSL INI files must have their parameters left in the order in which they are saved out.
+  * MAME will now save an HLSL INI file on the first run of a game that doesn't already have an INI file;
+  * HLSL INI files must have their parameters left in the order in which they are saved out;
   * Fixed a diagonal 'crease' visible on the screen in HLSL mode.
 - Some improvements to the compressed texture protection for Decathlete [David Haywood].
 - Refactored the INS8250 interrupt line to use devcb [Curt Coder].
@@ -70,12 +70,12 @@ Source changes:
 - Fixed Aristocrat MK5 screen offset [Palindrome].
 - Added SRAM support for dmdtouch and geishanz [Palindrome].
 - Various aristmk4.c changes [Heihachi_73]:
-  * Added button panel artwork and renamed/remapped inputs for all games.
+  * Added button panel artwork and renamed/remapped inputs for all games;
   * Changed cgold2's PROM to a more compatible version.
 - Various aristmk5.c changes [Heihachi_73]:
-  * Changed parent/clone relationship for Dolphin Treasure (later version is now parent).
-  * Added a US clear chip to the set chip ROMs.
-  * Removed the set chip loading from all games which don't use them.
+  * Changed parent/clone relationship for Dolphin Treasure (later version is now parent);
+  * Added a US clear chip to the set chip ROMs;
+  * Removed the set chip loading from all games which don't use them;
   * Cleaned up ROM name descriptions to match the aristmk4.c format.
 - Added proper channel 2 support, and logging capabilities to OKIM6376 [J. Wallace].
 - Corrected divider behaviour of OKIM6376 - needs ROM analysis to be complete, but all supported programs only use the default mode [J. Wallace].
@@ -88,8 +88,8 @@ Source changes:
 - i386: Implemented task gates, call gates, and task state segments (both 286 and 386). Also inplmented triple fault CPU resets (used by OS/2). x87: Basic implementation of FSTENV (used by OS/2) [Barry Rodewald].
 - Added code to manage NAOMI's M4 decryption [Andreas Naive].
 - Midway Zeus improvements [Phil Bennett]:
-  * Added some alternate FIFO commands used by mk4b.
-  * Hooked up the short-format draw command (used to draw life bars and shadows in mk4).
+  * Added some alternate FIFO commands used by mk4b;
+  * Hooked up the short-format draw command (used to draw life bars and shadows in mk4);
   * Added support for alternate 4/8 bit texture formats (used by mk4).
 - dec8.c: Corrected the ROM names for the Ghost Busters sets and added PCB locations [The Dumping Union].
 - Fixed NAR timing in OKIM6376 to match datasheet figures [J. Wallace].

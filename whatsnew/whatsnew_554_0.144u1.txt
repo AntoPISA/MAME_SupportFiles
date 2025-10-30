@@ -23,35 +23,35 @@ Spiker (2 sets) [Kevin Eshbach]
 The Ninja Warriors (US) [Stefan Lindberg, The Dumping Union]
 World Beach Volleyball (set 3) [Corrado Tomaselli]
 
-New Games Marked as GAME_NOT_WORKING
-------------------------------------
+New Game Marked as GAME_NOT_WORKING
+-----------------------------------
 Pucky [Foul, Smitdogg, The Dumping Union]
 
 
-MAMETesters Bugs Fixed (8):
----------------------------
-- 02887: [Graphics] digdug and clones: Sprites disappear off right  screen- cocktail mode player 2 (hap).
-- 03266: [Graphics] bosco, galaga, xevious, digdug and clones: Screen flipping isn't handled correctly (hap).
-- 03271: [Graphics] galaga and clones: Graphic artifact when booting (hap).
-- 04382: [Graphics] All sets in mappy.c: Cocktail screen offset for 2nd player (hap).
-- 04391: [Crash/Freeze] boscomd, bosco: Bosconian - Game resets at various times (hap).
-- 04456: [Graphics] bs94, re900: graphics corrupted/black screen (hap).
-- 04531: [Sound] f1en: Engine noise loops/resets (Tafoid).
-- 04535: [Sound] 6532 RIOT device changes causing missing sound in games (hap).
+MAME Testers Bugs Fixed (8):
+----------------------------
+- 02887: [Graphics] digdug and clones: Sprites disappear off right  screen- cocktail mode player 2 (hap)
+- 03266: [Graphics] bosco, galaga, xevious, digdug and clones: Screen flipping isn't handled correctly (hap)
+- 03271: [Graphics] galaga and clones: Graphic artifact when booting (hap)
+- 04382: [Graphics] All sets in mappy.c: Cocktail screen offset for 2nd player (hap)
+- 04391: [Crash/Freeze] boscomd, bosco: Bosconian - Game resets at various times (hap)
+- 04456: [Graphics] bs94, re900: graphics corrupted/black screen (hap)
+- 04531: [Sound] f1en: Engine noise loops/resets (Tafoid)
+- 04535: [Sound] 6532 RIOT device changes causing missing sound in games (hap)
 
 
 Source changes:
 ---------------
 - Forte Card improvements [Roberto Fresca, Rob Ragon]:
-  * Added a ton of technical notes.
-  * Added correct bipolar dump.
-  * Added crystal through #define
-  * Added new spanish set.
-  * Added preliminary support for 93SC56 serial EEPROM.
-  * Added proper serial EEPROM dump.
-  * Correct clocks for CPU, CRTC and AY8910.
-  * Correct palette routines, plus video resnet.
-  * Improved the 93SC56 serial EEPROM interface. Added more findings and technical notes.
+  * Added a ton of technical notes;
+  * Added correct bipolar dump;
+  * Added crystal through #define;
+  * Added new spanish set;
+  * Added preliminary support for 93SC56 serial EEPROM;
+  * Added proper serial EEPROM dump;
+  * Correct clocks for CPU, CRTC and AY8910;
+  * Correct palette routines, plus video resnet;
+  * Improved the 93SC56 serial EEPROM interface. Added more findings and technical notes;
   * Watchdog.
 - Move per emulator constants info into separate class [Miodrag Milanovic].
 - Fixed HLSL memory leak and crash on exit on 32-bit targets [Ryan Holtz, Bat Country Entertainment].
@@ -59,29 +59,29 @@ Source changes:
 - Modernized address maps for most skeleton drivers [Fabio Priuli].
 - Fixed ROM mapping and added NVRAM in pcat_nit.c. Some mini-games in streetg2 are playable now [Mariusz Wojcieszek].
 - SDL updates [R. Belmont, Carl, cgwg]:
-  * pcap network support for OS X and Windows SDL targets.
+  * pcap network support for OS X and Windows SDL targets;
   * GLSL tweaks to better support the "CRT" shader.
 - Made default paletteram to be white on Hot Chase start-up, fixes ugly MAME default palette to be shown at POST [Angelo Salese].
-- Fixed colors in 'Forte Card' [Angelo Salese].
-- Implemented RTC in 'Forte Card' [Angelo Salese].
+- Fixed colors in Forte Card [Angelo Salese].
+- Implemented RTC in Forte Card [Angelo Salese].
 - Added support for hard disk softlists [Miodrag Milanovic].
 - Changed makefile in order to make sequential compilation of MAME and MESS and their sub targets less resource demanding [Miodrag Milanovic].
 - Moved V3021 RTC emulation into a proper device, and made it to increment the time. Hooked this up into pgm.c and fortecar.c drivers [Angelo Salese].
-- Hooked up MSM5205 sound to 'Disco Boy' [Angelo Salese].
+- Hooked up MSM5205 sound to Disco Boy [Angelo Salese].
 - cps3.c: Documented all sfiii, sfiii2 and sfiii3 existing revisions [Team CPS-1].
 - CPS-1 update [Team CPS-1]:
-  * Fixed 3wondersu, ffightu1, ffightj1, sf2uc, sf2ud, sf2uf ROMs labels and positions, added pcb infos to video\cps1.c
+  * Fixed 3wondersu, ffightu1, ffightj1, sf2uc, sf2ud, sf2uf ROMs labels and positions, added pcb infos to video\cps1.c;
   * Redumped and fixed sf2ceuc to match real pcb [Dumping Union].
-  * Restored 4 EPROMs properly dumped in forgottn and marked LW-13.10D as possible bad dump in forgottnu, see the note.
+  * Restored 4 EPROMs properly dumped in forgottn and marked LW-13.10D as possible bad dump in forgottnu, see the note;
   * Fixed inverted EPROMs positions in megaman according to a new USA 91635B-2 B-Board [Dumping Union].
   * Added a note about RT_23.13B ROM in wonder3 [Kold666].
-  * Added some documentation notes to various sets.
+  * Added some documentation notes to various sets;
   * Minor cleanups and fixes.
 - Confirmed and adjusted clock speeds for Bomb Jack from PCB [Corrado Tomaselli].
 - Fix obvious use-after-free error in device_delete() [Aaron Giles].
 - Remove explicit freeing of HLSL shadow_texture, since it is allocated by texture_create() which does its own tracking and freeing [Aaron Giles].
 - Various changes to the Bally Sente driver [Kevin Eshbach]:
-  * Corrects the ROM locations for 'Trivia Pursuit Baby Boomer edition'.
-  * Corrects the ROM locations for 'Street Football'.
-  * Added date code to 'Mini Golf (Set 2)', 'Trivia Pursuit (Baby Boomer Edition)', 'Night Stocker (set 1)', 'Night Stocker (set 2)' and 'Street Football'.
+  * Corrects the ROM locations for Trivia Pursuit Baby Boomer edition;
+  * Corrects the ROM locations for Street Football;
+  * Added date code to Mini Golf (Set 2), Trivia Pursuit (Baby Boomer Edition), Night Stocker (set 1), Night Stocker (set 2) and Street Football.
 - Added PLS100 (82S100) PLA emulation which utilizes a binary JED fusemap [Curt Coder].

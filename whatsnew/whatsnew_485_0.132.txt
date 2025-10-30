@@ -2,28 +2,28 @@
 -------------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
-- 03013: [Misc.] [debug] "Error: free a non-existant block" on TMS57002 source generation (Atari Ace).
-- 03238: [Crash/Freeze] gtmr and clones: Access Violation (Tafoid).
-- 03241: [DIP/Input] aladbl: Unable to "Press Start" (Fabio Priuli).
-
-
 New games added or promoted from NOT_WORKING status
 ---------------------------------------------------
 Jockey Club [Andrew Welburn, Dumping Union]
 Mirax [Olivier Galibert, Angelo Salese, Tomasz Slanina]
 Super Crowns Golf [Angelo Salese, Tomasz Slanina]
 
-New clones added
-----------------
+New Clone Added
+---------------
 Shadow Force (Japan Version 3) [Guru]
 
-New games marked as GAME_NOT_WORKING
+New Games Marked as GAME_NOT_WORKING
 ------------------------------------
 Dolphin Treasure [AGEMAME]
 Enchanted Forest [Palindrome]
 Janputer [alien_mame, Dumping Union]
+
+
+MAME Testers Bugs Fixed (3):
+---------------------------
+- 03013: [Misc.] [debug] "Error: free a non-existant block" on TMS57002 source generation (Atari Ace)
+- 03238: [Crash/Freeze] gtmr and clones: Access Violation (Tafoid)
+- 03241: [DIP/Input] aladbl: Unable to "Press Start" (Fabio Priuli)
 
 
 Source changes:
@@ -31,10 +31,10 @@ Source changes:
 - Added missing static and const qualifiers throughout the source [Atari Ace].
 - Added the concept of device contracts. A contract is a well-defined set of interfaces supported by a device, and identified by a unique string identifier. A device may support any number of contracts described in a list via the DEVICE_CONTRACT_LIST* macros. The purpose of contracts is to provide a means for devices to expose a standard set of interfaces to other parts of the system. For example, the PCI device should expose a contract that includes functions for configuration register access, and 32-bit I/O. Then any device with a PCI interface should implement the PCI contract, so that the PCI bus device can route things appropriately [Aaron Giles].
 - Changed several internal interfaces to be more consistent, namely.
-  * Passing device_config as a const always.
-  * Passing running_machine as a non-const always.
-  * Eliminating running_machine where possible.
-  * Passing machine/device first.
+  * Passing device_config as a const always;
+  * Passing running_machine as a non-const always;
+  * Eliminating running_machine where possible;
+  * Passing machine/device first;
   * Preferring (screen, bitmap, cliprect) over (machine, bitmap, cliprect) when all are needed for rendering [Atari Ace].
 - Fixed a minor typo in the SSEM debugging features [MooglyGuy].
 - Fixed a number of year listings known to be unknown or incorrect the current MAME source. The source for these changes come from the book: Arcade TV Game List (Edition: Domestic and Overseas, 1971 - 2005) [Tafoid, Fujix].
@@ -47,5 +47,5 @@ Source changes:
 - Improved the video emulation in Mirax [Angelo Salese].
 - Removed the MDRV_<devtype>_REMOVE macros. A simple DEVICE_REMOVE works now that device types are not needed [Aaron Giles].
 - Update ghosteo driver with information out of eolith.c about QS1000 and added the sample rom, with a note about it NOT being dumped from this PCB but is a common sample ROM used by Eolith [Brian Troha].
-- Verified clocks on 'Samurai Aces' PCB [Corrado Tomaselli].
+- Verified clocks on Samurai Aces PCB [Corrado Tomaselli].
 - Watchdog hooked up in twinkle.c so test mode exits [smf].

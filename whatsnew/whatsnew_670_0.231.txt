@@ -1004,7 +1004,7 @@ Beatmania III Append 6th Mix [Eric Holniker]
 -basf7100: More floppy work, system loads data from disk now [Dirk Best]
  * Also hook up main CPU ROM and PPIs.
 
--views: Invalidate the caches on bank selection change [O. Galibert]
+-views: Invalidate the caches on bank selection change [Olivier Galibert]
 
 -basf7100.cpp: Fix clang error: reference to non-static member function must be called [AJR]
 
@@ -1387,8 +1387,8 @@ ibm5170: SmartBoard Driver (DOS), SmartBoard Driver SDK (Win32) [hap]
 
 -upd7220: Support DMAW and DMAR commands [Brian Johnson]
 
--rfslots8085.cpp: The PCB only has 6 dipswitches (#7983) [ClawGrip]
- * rfslots8085.cpp: The PCB only has 6 dipswitches
+-rfslots8085.cpp: The PCB only has 6 DIP switches (#7983) [ClawGrip]
+ * rfslots8085.cpp: The PCB only has 6 DIP switches
  * Add anonymous namespace
 
 -ibm5170: fix validity error [hap]
@@ -1437,7 +1437,7 @@ Compact Computer 40 Plus (prototype) [hap, Jon Guidry]
    - Support I/O input for hiding screen. Screen switching at start of a stage is now correct.
    - Fixed position of tilemap in flip screen of Cycle Maaboh.
    - Added support for Sky Destroyer flipscreen.
-   - Fixed dipswitches. Removed definition of unused bits for non-dipswitch inputs. Added some dipswitch definitions.
+   - Fixed DIP switches. Removed definition of unused bits for non-DIP switch inputs. Added some DIP switch definitions.
    - Implemented work RAM switching for sprites. Games on this board used to switch two sprites work RAM every frame. This
       implementation improved the frame rate of the sprites.
 

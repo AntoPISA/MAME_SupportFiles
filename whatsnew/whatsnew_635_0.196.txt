@@ -260,7 +260,7 @@ Portuguese (Brazil) [Wellington Uemura]
 Spanish [A. Viloria]
 
 
-MAMETesters Bugs Fixed (11):
+MAME Testers Bugs Fixed (11):
 ----------------------------
 - 00205: [Crash/Freeze] (asuka.cpp) bonzeadv: After dying in cave accessed via the secret hole, you restart trapped in darkness (Caps0ff)
 - 00377: [Crash/Freeze] (asuka.cpp) bonzeadv: From third level, game hangs on dying because restart level is wrong (Caps0ff)
@@ -376,9 +376,9 @@ Source changes:
 - bbc: Added cassette relay samples [Nigel Barnes].
 - bbc: Fixed shadow RAM corruption in Master/B+, and sideways RAM access in Model B [Nigel Barnes].
 - electron: Set CPU clock 2MHz/1MHz according to ROM/RAM access [Nigel Barnes].
-- model2.cpp: Fixed Zero Gunner background priorities [O. Galibert].
-- nes_apu: Derive frame counter from clock input [O. Galibert].
-- Removed macros from address maps [O. Galibert].
+- model2.cpp: Fixed Zero Gunner background priorities [Olivier Galibert].
+- nes_apu: Derive frame counter from clock input [Olivier Galibert].
+- Removed macros from address maps [Olivier Galibert].
 - interpro: Various improvements, culminating in the ability to boot the "blue screen" rebuild floppy [Patrick Mackinlay]:
   * Nearly boots CLIX - hangs trying to mount the filesystems;
   * Refactored CPU/MMU memory access, added alignment faults, and added support for DMA virtual addressing;

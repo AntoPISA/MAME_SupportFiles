@@ -45,8 +45,8 @@ NeopriSP Retro Collection [Yohji, Smitdogg, The Dumping Union]
 Last Bank [Yohji, Smitdogg, The Dumping Union]
 
 
-MAMETesters Bugs Fixed (6):
----------------------------
+MAME Testers Bugs Fixed (6):
+----------------------------
 - 04225: [Sound] gangwars: Samples incorrectly played (Tafoid)
 - 04221: [Misc.] chryangl: Incorrect sizes listed in source.
 - 04215: [Graphics] quizf1: missing graphics in a startup screen (robiza)
@@ -78,13 +78,13 @@ Source changes:
 - Rewrote video routines and fixed partial updates in the Dottori Kun driver [Angelo Salese].
 - Added all CPU and sound devices in emu folder to the MAME build [Curt Coder].
 - arm7: [Tim Schuerewegen]
-  * Proved LDM/STM unaligned word access in THUMB mode.
+  * Proved LDM/STM unaligned word access in THUMB mode;
   * Fixed LDM unaligned read in THUMB mode.
 - Imported the MC68901 device from MESS so it can be shared with micro3d.c [Curt Coder].
-- ksys573: Hook up part of the i2c communication with the mas3507d [O. Galibert].
+- ksys573: Hook up part of the i2c communication with the mas3507d [Olivier Galibert].
 - Renamed bishjan.c to subsino2.c [Luca Elia]:
-  * Implemented reel layer.
-  * Fixed rogue tiles in xplan.
+  * Implemented reel layer;
+  * Fixed rogue tiles in xplan;
   * Hopper emulation in bishjan.
 - m90: Fixed line scroll [Roberto Zandonà].
 - ARM7: Fix an LDM base register write-back bug [Tim Schuerewegen].
@@ -95,25 +95,25 @@ Source changes:
 - Removed redundant m_machine from the state and execute interfaces to fix ambiguity when using m_machine from within a device that inherits from these [Aaron Giles].
 - beezer now uses correct mm5837 noise source (clock may be a bit off though), and now has mm5837 properly hooked to audio via. May still be some issues with intermittent noise updating which need fixing [Lord Nightmare].
 - Improvements to Magic's 10 driver [Roberto Fresca]:
-  * New inputs from the scratch for Music Sort.
-  * Complete DIP Switches and DIP locations for Music Sort.
-  * Added a new button-lamps layout for Music Sort.
+  * New inputs from the scratch for Music Sort;
+  * Complete DIP Switches and DIP locations for Music Sort;
+  * Added a new button-lamps layout for Music Sort;
   * Created a default NVRAM that allow Music Sort work properly.
 - NetBSD support [Thomas Klausner].
 - pollux: Fixed sprite flip x and y and removed old comments [Roberto Zandonà].
 - Converted attotime to a class, with proper operators. Removed old global functions which are now superceded by the operators and methods on the class [Aaron Giles].
 - Eliminated global/static variables in a number of Taito/Irem drivers by introducing/using driver_device classes [Atari Ace].
 - Cleaned up shared implementation of CDi [David Haywood]:
-  * Merged MESS CDi driver file with the MAME CDi driver file (used for Quizard).
+  * Merged MESS CDi driver file with the MAME CDi driver file (used for Quizard);
   * The cdimono1 system is now the parent/BIOS of Quizard, the Quizard games run on a retail CDi unit with Jamma adapter/dongle for protection so this is a logical step.
 - Replaced anonymous timers used in video/segaic16.c, drivers/segaorun.c and drivers/segaxbd.c with allocated timers, making it possible to add save state support to these drivers [Alex Jackson].
 - Updates to cave.c and toaplan2.c [Alex Jackson]:
-  * Added savestate support to all games in cave.c. Most of the work was already done by someone else; the blocker was a perpetually-running anonymous timer, which I converted to an allocated timer.
-  * Changed OKI sample banking to use device address maps instead of memcpy() in all cave.c games except the nmk112-based games. If someone wants to try to convert nmk112.c to use device address maps and bank pointers, be my guest--you'll need 8 banks of varying sizes per OKI chip.
-  * Fixed description of the Japanese Air Gallet set--the game's Japanese title is "Akuu Gallet".
-  * Made machine/nmk112.c actually restore its state properly. Also refactored it a little (if you can talk about refactoring a source file that almost fits on one screen).
-  * Fixed bgaregga's nmk112 interface to work with the refactored nmk112.c.
-  * Removed excessive CPU interleaving from batsugun, left over from when I was initially hooking up the V25.
+  * Added savestate support to all games in cave.c. Most of the work was already done by someone else; the blocker was a perpetually-running anonymous timer, which I converted to an allocated timer;
+  * Changed OKI sample banking to use device address maps instead of memcpy() in all cave.c games except the nmk112-based games. If someone wants to try to convert nmk112.c to use device address maps and bank pointers, be my guest--you'll need 8 banks of varying sizes per OKI chip;
+  * Fixed description of the Japanese Air Gallet set--the game's Japanese title is "Akuu Gallet";
+  * Made machine/nmk112.c actually restore its state properly. Also refactored it a little (if you can talk about refactoring a source file that almost fits on one screen);
+  * Fixed bgaregga's nmk112 interface to work with the refactored nmk112.c;
+  * Removed excessive CPU interleaving from batsugun, left over from when I was initially hooking up the V25;
   * Removed a useless printf and some obsolete comments, more leftovers from the process of hooking up the V25.
 - Added MCFG_SCREEN_RAW_PARAMS to twincobr.c and wardner.c, correcting their refresh rates [Alex Jackson].
 - Add basic LOAD function to the debugger to complement the existing SAVE function. It allows you to load a binary file straight into writeable memory. The format is the same as the SAVE function with the exception that the <length> can be handled differently [Pugsy].
@@ -121,11 +121,11 @@ Source changes:
 - drcuml: Fix compile on systems that use the C backend [R. Belmont].
 - Reimplemented fruit-machine mechanical meters to use timers [AGEMAME].
 - Various MPU4 changes [AGEMAME]:
-  * Revised timing/input system to stop flickering.
-  * Tidied up the LED drawing code to remove flicker.
-  * Support for all known extenders and reel multiplex boards used in MPU4 H/W.
-  * Partial support for OKI sampled sound card, need for some titles.
-  * Fixed Old Timer characteriser.
+  * Revised timing/input system to stop flickering;
+  * Tidied up the LED drawing code to remove flicker;
+  * Support for all known extenders and reel multiplex boards used in MPU4 H/W;
+  * Partial support for OKI sampled sound card, need for some titles;
+  * Fixed Old Timer characteriser;
   * Some general tidying up to allow better study of the BwB titles.
 - Implemented proper mouse wheel event handling in the Windows debugger [Curt Coder].
 - Convert emu_timers to objects. Moved implementation and management of timers into the scheduler. Retain TIMER devices as a separate wrapper in timer.c/.h. Rather than using macros which hide generation of a string-ified name for callback functions, the new methods require passing both a function pointer plus a name string. A new macro FUNC() can be used to output both, and another macro MSTUB() can be used to output a stub-wrapped class member as a callback [Aaron Giles].
@@ -142,11 +142,11 @@ Source changes:
 - Added new mechanism to detect proper state save types. This is much more strict and there will likely be some games/devices that fatalerror at startup until they are remedied. Spot checking has caught the more common situations [Aaron Giles].
 - Added methods in the device_t class that implicitly register state against the current device, making for a cleaner interface. Bulk updated existing devices and drivers with driver_device classes to use these methods [Aaron Giles].
 - cps1.c: CPS-1 update [Team CPS-1]:
-  * Added Tenchi wo Kurau (Japan Resale Ver.).
-  * Confirmed B-Board # for chikij, added ROMs positions, PALs and some PCB infos to video\cps1.c.
-  * Fixed sf2uk labels and added PCB infos.
-  * Identified and documented willowje as an early and genuine USA release, added a note and renamed (willowje) to (willowo).
-  * Verified and fixed XTALs of Japan Resale Versions to work at 12MHz, they all use DASH A-Boards.
+  * Added Tenchi wo Kurau (Japan Resale Ver.);
+  * Confirmed B-Board # for chikij, added ROMs positions, PALs and some PCB infos to video\cps1.c;
+  * Fixed sf2uk labels and added PCB infos;
+  * Identified and documented willowje as an early and genuine USA release, added a note and renamed (willowje) to (willowo);
+  * Verified and fixed XTALs of Japan Resale Versions to work at 12MHz, they all use DASH A-Boards;
   * Minor cleanups and fixes.
 - Migrated allocated buffers to arrays in the driver_data classes of several drivers [Aaron Giles].
 - Made "run to next CPU" more reliable [Aaron Giles].

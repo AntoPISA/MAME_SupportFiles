@@ -63,13 +63,13 @@ Time Fighter (Time Pilot conversion on Galaxian hardware)  [Marcello Mancini, th
 Unknown H8 Italian Gambling game [Any]
 
 
-MAMETesters Bugs Fixed (12):
-----------------------------
+MAME Testers Bugs Fixed (12):
+-----------------------------
 - 00012: [DIP/Input] (dooyong.c) lastday: [possible] Coin input in the test mode (Sonikos)
 - 01797: [DIP/Input] (tank8.c) tank8: Game time DIP settings incorrect (Sonikos)
 - 02117: [DIP/Input] (dooyong.c) superx: [possible] Service mode DIP switch has no effect (Sonikos)
 - 03388: [DIP/Input] (atarisy1.c) roadrunn and clones: Input (Button) labels not logical (Sonikos)
-- 03642: [DIP/Input] (cps1.c) 1941: Difficulty dipswitch has wrong values in tab menu (Sonikos)
+- 03642: [DIP/Input] (cps1.c) 1941: Difficulty DIP switch has wrong values in tab menu (Sonikos)
 - 04196: [DIP/Input] (leland.c) offroadt2p: [possible] Inputs for 3 players when it's a 2-player only game (Sonikos)
 - 04851: [Crash/Freeze] (pcxt.c) filetto: Can't boot (crazyc)
 - 05119: [DIP/Input] (kaneko16.c) bloodwar oedfight: DIP switch for attract sound is inverted (Sonikos)
@@ -102,27 +102,27 @@ Source changes:
 - Finished modernizing at28c16 [smf].
 - Added and verified DIP locations for all sets in rallyx.c [Tafoid].
 - Modernised YMZ280B,YMF271,YM2610,YM2608,YM2203,AY8910,YM2612/YM3438 [smf].
-- flstory.c: Corrected a couple of dipswitch names for Rumba Lumber and change clocks to be XTAL based [Brian Troha].
+- flstory.c: Corrected a couple of DIP switch names for Rumba Lumber and change clocks to be XTAL based [Brian Troha].
 - Modernised the YM3526, which also required adding write lines to the 6502, 6809 and z80 [smf].
 - Modernised Y8950,YMF262,YM3812,YM2413,YMF278 [smf].
 - Re-dumped Sport Fishing 2 (JPN) and Sport Fishing 2 (EXP) [f205v].
 - Crystals Colours improvements [Roberto Fresca]:
-  * Decrypted the tile matrix / video RAM.
-  * Wrote proper memory map and inputs from the scratch.
-  * Bypassed the program data channels protection.
-  * Decrypted the colors/color RAM.
-  * Added button-lamps support.
-  * Created a default NVRAM.
-  * Promoted to working state.
+  * Decrypted the tile matrix / video RAM;
+  * Wrote proper memory map and inputs from the scratch;
+  * Bypassed the program data channels protection;
+  * Decrypted the colors/color RAM;
+  * Added button-lamps support;
+  * Created a default NVRAM;
+  * Promoted to working state;
   * Added technical and encryption notes.
 - Snooker 10 improvements [Roberto Fresca]:
-  * Fixed NVRAM size.
+  * Fixed NVRAM size;
   * Added default NVRAM.
 - Apple 10 improvements [Roberto Fresca]:
- * Fixed NVRAM size.
+ * Fixed NVRAM size;
  * Added default NVRAM.
 - Ten Balls improvements [Roberto Fresca]:
-  * Fixed NVRAM size.
+  * Fixed NVRAM size;
   * Added default NVRAM.
 - Modernised CDDA & discard buffered samples when starting to play to avoid audio glitches and timing issues [smf].
 - Adds statesave (ss) & stateload (sl) commands to the debugger [Andrew Gardner].
@@ -131,33 +131,33 @@ Source changes:
 - Eliminate some of MAME's anonymous timers [Andrew Gardner].
 - itisa: The game was made by Itisa, there is an undumped Spanish original [AUMAP].
 - Started to modernise TMS5110 [smf].
-- pcxt.c: Fix 'Filetto' [Carl].
+- pcxt.c: Fix Filetto [Carl].
 - fuukifg2: Increased Z80 clock to 6MHz. Fixes gogomile intro music and speech [Phil Bennett].
 - fruitpc: Add inputs [Carl, R.Belmont].
 - Various CD-ROM/CHDMAN improvements [R. Belmont]:
-  * Correct import/export of bin/cue images in which the pregap sectors are present.
-  * Normalized TOC handling; the start of a track is always the first pregap sector.
+  * Correct import/export of bin/cue images in which the pregap sectors are present;
+  * Normalized TOC handling; the start of a track is always the first pregap sector;
   * Finally allows reading and CDDA playing pregap sectors.  Works even if the pregap sectors are not present in the file.
 - Changed "Gear Shift" to LOW by default for contcirc, chasehq, sci and topspeed [MASH].
 - sspeedr.c: Added generic Gear Shift artwork [MASH].
 - Improvements to Golden Poker driver [Roberto Fresca]:
-  * Proper inputs for Videotron Poker selector.
-  * Figured out the Royale multiplexer system.
-  * Removed the unused Royale driver init.
-  * Both Royale sets promoted to working.
+  * Proper inputs for Videotron Poker selector;
+  * Figured out the Royale multiplexer system;
+  * Removed the unused Royale driver init;
+  * Both Royale sets promoted to working;
   * Added technical notes.
 - "And he did give them CRT bloom, and it scorched their eyes so; and they wept openly, for there was nothing left to see with" [MooglyGuy]:
-  * Enabled vector bloom and associated .ini controls.
-  * Added raster bloom and associated .ini controls, each bloom "level" is the linear weight of successively half-sized render targets
-  * Removed D3D8 mode.
-  * Mass renaming in D3D renderer to use namespaces, initial planning step to  HAL-based renderer implementation on Windows (i.e., GL on Windows).
-  * Converted d3d_info, d3d_poly_info, and d3d_texture_info into classes.
-  * Added batching of vectors for possible speed increase.
+  * Enabled vector bloom and associated .ini controls;
+  * Added raster bloom and associated .ini controls, each bloom "level" is the linear weight of successively half-sized render targets;
+  * Removed D3D8 mode;
+  * Mass renaming in D3D renderer to use namespaces, initial planning step to  HAL-based renderer implementation on Windows (i.e., GL on Windows);
+  * Converted d3d_info, d3d_poly_info, and d3d_texture_info into classes;
+  * Added batching of vectors for possible speed increase;
   * Minor cleanup of shader state setting.
 - capcom.c: Added missing SHA1s to some pinball sets [John Gilbert].
 - libflac: Improve portability for older versions of Xcode [John Gilbert].
 - input/DIP bugs fixed in several drivers [Sonikos].
 - PGM improvements [iq132]:
-  * Implemented the bitswap  protection for Killing Blade allowing all regions to work.
-  * Implemented additional protection required by Dragon World 3, the game is not any further along, but it is much cleaner code.
+  * Implemented the bitswap  protection for Killing Blade allowing all regions to work;
+  * Implemented additional protection required by Dragon World 3, the game is not any further along, but it is much cleaner code;
   * Implemented bitswap protection and several DMA modes for olds. The ram_dump hack is no longer required. The protection simulation is still somewhat incomplete.

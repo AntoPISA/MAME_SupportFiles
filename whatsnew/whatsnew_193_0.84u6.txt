@@ -33,7 +33,7 @@ Source changes:
   * -dial (keyboard|mouse|joystick|lightgun);
   * -trackball (keyboard|mouse|joystick|lightgun).
   For example -dial mouse will automatically enable mouse controls (just like -mouse) if a dial control is present for the selected game [Aaron Giles].
-- Added support for conditional dipswitch settings. This allows for multiple equivalent entries but with different text depending on the state of another dipswitch. See mappy.c for an example of how this works to handle the changing bonuses based on the number of lives [Aaron Giles].
+- Added support for conditional DIP switch settings. This allows for multiple equivalent entries but with different text depending on the state of another DIP switch. See mappy.c for an example of how this works to handle the changing bonuses based on the number of lives [Aaron Giles].
 - Disabled input to the game while the user interface is in active use (prevents keypresses from affecting the underlying game) [Aaron Giles].
 - Fixed Colony 7 DIP switches [Aaron Giles].
 - Fixed enumeration of lightgun and joysticks in the Windows build. Joysticks now no longer show up unless you specify -joystick. And lightguns should work properly as absolute devices [Aaron Giles].

@@ -2,34 +2,33 @@
 -------------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
-- 04285: [Misc.] tenkaid: Missing NO_DUMP label for ROM tydg002.u8 (hap).
-- 04286: [Sound] deadang and clones: Missing ADPCM Audio (Aaron Giles).
-- 04287: [Graphics] wintbob: Video missing (Aaron Giles).
-- 04288: [Crash/Freeze] goodejan, goodejana, totmejan, sengokmi: Crash after OK (Aaron Giles).
-- 04289: [Crash/Freeze] twinadv, twinadvk: Crash after OK (Aaron Giles).
-- 04290: [Crash/Freeze] honeydol: Crash after OK (Aaron Giles).
-- 04291: [Crash/Freeze] Many sets in 8080bw.c: [debug] Assert before OK (Aaron Giles).
-- 04294: [Graphics] jrpacman, jrpacmbl: pac-man and the ghosts are not visable (hap).
-- 04295: [Documentation] stdragon: The game description is "Saint Dragon" (Fujix).
-
-
-
-New clones added
+New Clones Added
 ----------------
 Acrobatic Dog-Fight (USA) [Tirino73]
 Fashion Gambler (Set 2)  [Team Europe]
 
-New games marked as GAME_NOT_WORKING
+New Games Marked as GAME_NOT_WORKING
 ------------------------------------
 BiKiNikko - Okinawa de Ippai Shityaimashita [The Dumping Union, alien_mame]
 Jyunai - Manatsu no First Kiss [The Dumping Union, alien_mame]
 
 
+MAME Testers Bugs Fixed (9):
+----------------------------
+- 04285: [Misc.] tenkaid: Missing NO_DUMP label for ROM tydg002.u8 (hap)
+- 04286: [Sound] deadang and clones: Missing ADPCM Audio (Aaron Giles)
+- 04287: [Graphics] wintbob: Video missing (Aaron Giles)
+- 04288: [Crash/Freeze] goodejan, goodejana, totmejan, sengokmi: Crash after OK (Aaron Giles)
+- 04289: [Crash/Freeze] twinadv, twinadvk: Crash after OK (Aaron Giles)
+- 04290: [Crash/Freeze] honeydol: Crash after OK (Aaron Giles)
+- 04291: [Crash/Freeze] Many sets in 8080bw.c: [debug] Assert before OK (Aaron Giles)
+- 04294: [Graphics] jrpacman, jrpacmbl: pac-man and the ghosts are not visable (hap)
+- 04295: [Documentation] stdragon: The game description is "Saint Dragon" (Fujix)
+
+
 Source changes:
 ---------------
-- Converted 'Super Shanghai Dragon's Eye' to use the common deco video files functions, fixing a rowscroll bug in it [David Haywood].
+- Converted Super Shanghai Dragon's Eye to use the common deco video files functions, fixing a rowscroll bug in it [David Haywood].
 - Fix font loading in sdlmame. BDF files are just loaded as TTF by TTF_OpenFont. Load is now protected by a magic check. Also fixed a bug in SDL1.3 keyboard mapping and changed SDL1.3 code to be compatible with recent 1.3 API changes [Couriersud].
 - sdl-config flags are now separated into INCFLAGS and COMFLAGS in sdl.mak. This fixes "make depend" [Couriersud].
 - softlist.c: Split the <info> field (added some time ago to handle compatibility requirements) into  <info> and <sharedfeat>. The former stays tied to the whole software entry, the latter gets inherited by each part [Fabio Priuli].
@@ -53,11 +52,11 @@ Source changes:
   cpu_set_input_line_and_vector ==> device_set_input_line_and_vector 
   cpu_set_irq_callback ==> device_set_irq_callback
   device_memory(device) ==> device->memory() 
-  device_get_space(device, spacenum)   ==> device->memory().space(spacenum) 
+  device_get_space(device, spacenum) ==> device->memory().space(spacenum) 
   cpu_get_address_space(cpu, spacenum) ==> cpu->memory().space(spacenum) 
   cputag_get_address_space(mach, tag, spacenum) ==> mach->device("tag")->memory().space(spacenum)
-  cputag_get_clock(mach, tag)          ==> mach->device("tag")->unscaled_clock() 
-  cputag_set_clock(mach, tag, hz)      ==> mach->device("tag")->set_unscaled_clock(hz)
+  cputag_get_clock(mach, tag) ==> mach->device("tag")->unscaled_clock() 
+  cputag_set_clock(mach, tag, hz) ==> mach->device("tag")->set_unscaled_clock(hz)
 
 - Created new enum type address_spacenum for specifying an address space by index. Update functions and methods that accepted an address space index to take an address_spacenum instead. Note that this means you can't use a raw integer in ADDRESS_SPACE macros, so instead of 0 use the enumerated AS_0 [Aaron Giles].
 - Standardized the project on the shortened constants AS_* over the older ADDRESS_SPACE_*. Removed the latter to prevent confusion. Also centralized the location of these definitions to memory.h [Aaron Giles].
@@ -65,27 +64,16 @@ Source changes:
 - Deprecate the old memory_install_* macros. Dynamic installation is now handled directly by calling methods on the address_space, which have been expanded with aliases to cover all previous situations. In addition, variants with no mirror or mask value are provided to cover the common cases [Aaron Giles]
 
   memory_install_read*_handler(space, begin, end, mirror, mask, handler) ==> space->install_legacy_read_handler(begin, end [, mirror, mask], FUNC(handler))
-
   memory_install_write*_handler(space, begin, end, mirror, mask, handler) ==> space->install_legacy_write_handler(begin, end [, mirror, mask], FUNC(handler))
-
   memory_install_readwrite*_handler(space, begin, end, mirror, mask, rhandler, whandler) ==> space->install_legacy_readwrite_handler(begin, end [, mirror, mask], FUNC(rhandler), FUNC(whandler))
-
   memory_install_read*_device_handler(space, device, begin, end, mirror, mask, handler) ==> space->install_legacy_read_handler(*device, begin, end [, mirror, mask], FUNC(handler))
-
   memory_install_write*_device_handler(space, device, begin, end, mirror, mask, handler) ==> space->install_legacy_write_handler(*device, begin, end [, mirror, mask], FUNC(handler))
-
   memory_install_readwrite*_device_handler(space, device, begin, end, mirror, mask, rhandler, whandler) ==> space->install_legacy_readwrite_handler(*device, begin, end [, mirror, mask], FUNC(rhandler), FUNC(whandler))
-
   memory_install_read_port(space, begin, end, mirror, mask, port) ==> space->install_read_port(begin, end [, mirror, mask], port)
-
   memory_install_read_bank(space, begin, end, mirror, mask, bank) ==> space->install_read_bank(begin, end [, mirror, mask], bank)
-
   memory_install_rom(space, begin, end, mirror, mask, ptr) ==> space->install_rom(begin, end [, mirror, mask], ptr)
-
   memory_install_ram(space, begin, end, mirror, mask, ptr) ==> space->install_ram(begin, end [, mirror, mask], ptr)
-
   memory_unmap_read(space, begin, end, mirror, mask) ==> space->unmap_read(begin, end [, mirror, mask])
-
   memory_nop_read(space, begin, end, mirror, mask) ==> space->nop_read(begin, end [, mirror, mask])
 
 - uiimage.c: Improved File Manager usage (in the internal UI) by catching char inputs and searching for matching names among files and directories [Fabio Priuli].
@@ -118,5 +106,5 @@ Source changes:
 - Implemented karnov style sprites in its own file, shared with karnov and dec8 drivers [David Haywood].
 - Fixed multiwidth sprites in decmxc06.c, removed code which appeared to serve no purpose other than to break the birdtry gfxdecode in machine/dec0.c [David Haywood].
 - Added new macro MACHINE_CONFIG_DERIVED_CLASS() which works just like MACHINE_CONFIG_DERIVED() except you can specify an alternate driver_device class. Used this in the 8080bw.c games which require an _8080bw_state, but derive from mw8080bw_root which has the base class mw8080bw_state [Aaron Giles].
-- lordgun.c: Corrected Dipswitch names and added dipswitch locations to Lord of Gun & Alien Challenge [Brian Troha].
+- lordgun.c: Corrected Dipswitch names and added DIP switch locations to Lord of Gun & Alien Challenge [Brian Troha].
 - tumbleb.c: Corrected Dipswitch names and locations for Choky! Choky! [Brian Troha].

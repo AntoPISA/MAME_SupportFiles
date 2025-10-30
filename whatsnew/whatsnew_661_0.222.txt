@@ -1186,9 +1186,9 @@ Source changes:
 
 -delta1: add note (nw) [hap]
 
--attotime: Add to_string() to get a human-readable version of the time [O. Galibert] 6522via: Correct vocabulary, raise cb2 on shift
- in to make open-collector work correctly [O. Galibert] mackbd: Fix/partially rewrite [O. Galibert] mac128: Make emulated keyboard
- work [O. Galibert]
+-attotime: Add to_string() to get a human-readable version of the time [Olivier Galibert] 6522via: Correct vocabulary, raise cb2 on shift
+ in to make open-collector work correctly [Olivier Galibert] mackbd: Fix/partially rewrite [Olivier Galibert] mac128: Make emulated keyboard
+ work [Olivier Galibert]
 
 -delta1: 1 variable was missing for savestate (nw) [hap]
 
@@ -1314,10 +1314,10 @@ Source changes:
 
 -z80scc: clear IUS not IP (nw) [Patrick Mackinlay]
 
--6522via: Don't lose sync on edge count when the serial clock is external [O. Galibert] mac: Don't go out-of-bounds on palette
- writes [O. Galibert]
+-6522via: Don't lose sync on edge count when the serial clock is external [Olivier Galibert] mac: Don't go out-of-bounds on palette
+ writes [Olivier Galibert]
 
--adb: Fix return when no data [O. Galibert]
+-adb: Fix return when no data [Olivier Galibert]
 
 -news_68k: wip (nw) [Patrick Mackinlay]
  * SCSI irq is probably routed through dmac, which has no eop.
@@ -1339,7 +1339,7 @@ Source changes:
 
 -i8085: Stop in debugger after an interrupt is taken, not immediately before [AJR]
 
--nscsi hle: Reset on reset [O. Galibert]
+-nscsi hle: Reset on reset [Olivier Galibert]
 
 -fp6000: Rewrite driver [Dirk Best]
  * Add and hook up interrupt controller and timer
@@ -1436,9 +1436,9 @@ Source changes:
 
 -Add thunderh's I/O M68k stub [Hydreigon223]
 
--timers: Periodic timers are not adjustable, be a little more affirmative about it [O. Galibert]
+-timers: Periodic timers are not adjustable, be a little more affirmative about it [Olivier Galibert]
 
--ddenlovr.cpp: rongrong dipswitches/diplocations, default palette to all_black (nw) [Angelo Salese]
+-ddenlovr.cpp: rongrong DIP switches/diplocations, default palette to all_black (nw) [Angelo Salese]
 
 -Various XML format fixes including some comment placement fixes (nw) [Scott Stone]
 
@@ -1902,9 +1902,9 @@ Source changes:
 
 -more macro removal (nw) [Ivan Vangelista]
 
--emumem: Slight speedup [O. Galibert]
+-emumem: Slight speedup [Olivier Galibert]
 
--emumem: Another slight speedup, implemented on the 680x0 for now [O. Galibert]
+-emumem: Another slight speedup, implemented on the 680x0 for now [Olivier Galibert]
  * memory_access_specific is declared and used exactly like memory_access_cache, but does not cache.  It does, however, shortcut the
     virtual call into address_space, so that's one layer of call less. Gives another nice speedup for accesses with bad locality
     (e.g. anything that's not opcodes), at the expense of having a specifically typed object in the class.  Should do well for cpus
@@ -2013,7 +2013,7 @@ Source changes:
 -(nw) trs80dt1: fixed year [Robbbert].
 
 -emumem: Another slight speedup.  masking before dispatch at top level is not needed because it's already done at the global mask
- level [O. Galibert].
+ level [Olivier Galibert].
 
 -cpu/tms32031/*: Add/Correct notes for Internal peripherals and Chip family differences Fix chip name (no NMOS variant exists) and
  some descriptions Fix Microcomputer mode when 320C30 internal ROM is empty reference: TMS320C3x User's Manual [cam900]
@@ -2085,7 +2085,7 @@ Source changes:
 
 -unsp: Removed outdated commnet related to Ext Push/Pop ops. The register decoding is correct. (nw) [Ryan Holtz]
 
--unsp: UINT_MAS needs climits [O. Galibert]
+-unsp: UINT_MAS needs climits [Olivier Galibert]
 
 -(nw) reverted earlier commit - not wanted [Robbbert].
 
@@ -2205,7 +2205,7 @@ Source changes:
 
 -s220, s550: Add BU3905 skeleton (nw) [AJR]
 
--emumem: A little more speedup.  cache and specific change syntax, and are not pointers anymore [O. Galibert]
+-emumem: A little more speedup.  cache and specific change syntax, and are not pointers anymore [Olivier Galibert]
  * The last(?) two changes are:
    - Add a template parameter to everything (theoretically the address space width, in practice a level derived from it to keep as
       much compatibility between widths as possible) so that the shift size becomes a constant.
@@ -2314,7 +2314,7 @@ Source changes:
 
 -Add 'theraida' (nw) [ClawGrip]
 
--cache: protect against savage memsets [O. Galibert]
+-cache: protect against savage memsets [Olivier Galibert]
 
 -Enable option to generate symbols in Release as well as Debug under Visual Studio.  (This is important because debugging Debug
  builds is too slow) [Frank Palazzolo]
@@ -2436,9 +2436,9 @@ Source changes:
 
 -(nw) jtc, mcb216: small cleanup [Robbbert]
 
--Gaplus : modify source code comments and change dipswitch defaults (#6752) [sasuke-arcade]
+-Gaplus : modify source code comments and change DIP switch defaults (#6752) [sasuke-arcade]
  * gaplus.cpp updates: [sasuke-arcade]
-   - Modify source code comments and change dipswitch defaults
+   - Modify source code comments and change DIP switch defaults
    - Changed Extend's default settings to Namco's factory settings (5k/15k/15k every)
 
 -Have the -romident command skip the matching process and issue an error message when no files are found [AJR]
@@ -2981,7 +2981,7 @@ Source changes:
 
 -spg2xx_io: Better ADC behavior when reading converted data [Ryan Holtz].
 
--arachnid.cpp: Add notes about dipswitches (nw) [ClawGrip]
+-arachnid.cpp: Add notes about DIP switches (nw) [ClawGrip]
 
 -Software list updates [ICEknigh7]
  * specpls3_flop.xml: Added more disk images, some of which were previously missing from the internet due to them being considered
@@ -2994,7 +2994,7 @@ Source changes:
 
 -adb logging [Olivier Galibert]
 
--pic1670: Add a disassembler [O. Galibert]
+-pic1670: Add a disassembler [Olivier Galibert]
 
 -Revert "adb logging" [hap]
  * This reverts commit 757c179183c6b4f80375c58900716a1df2b5ac34.
@@ -3285,7 +3285,7 @@ Source changes:
 -Fix OS X build on older Xcode versions (nw) [AJR]
 
 -emumem: Fix bad destruction order by not removing the notifier on cache destruction, they're supposed to be long-lived anyway
- [O. Galibert]
+ [Olivier Galibert]
 
 -finally retired the READ8/16/32/64 and WRITE8/16/32/64 macros (nw) [Ivan Vangelista]
 

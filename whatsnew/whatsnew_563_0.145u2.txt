@@ -1,9 +1,9 @@
-﻿0.145u2 2012/02/26 [#563 - Miodrag Milanovic]
+﻿0.145u2 2012/02/26 [#563 - Miodrag Milanović]
 ---------------------------------------------
 
 
-New Games Added or Promoted from NOT_WORKING Status
----------------------------------------------------
+New Game Added or Promoted from NOT_WORKING Status
+--------------------------------------------------
 Casino Poker (Ver PM86LO-35-5, German) [Roberto Fresca, Team Europe]
 
 New Clones Added
@@ -21,16 +21,16 @@ NFL Classic Football (NCF3 Ver.A.)  [Smitdogg, The Dumping Union]
 Pot O' Gold  [Bicyclerepairman]
 
 
-MAMETesters Bugs Fixed (8):
----------------------------
-- 04691: [Documentation] j6cpal and clone: The correct description is "Caesars Palace (Whitbread / Crystal) (IMPACT, set 1)". The set 'j6cpala' is his clone.
-- 04692: [Documentation] j6kapang: The correct description is "Kapang! (Crystal) (IMPACT)".
-- 04693: [Documentation] m5cockdd: The correct description is "Cock A Doodle Dough! (Empire) (MPU5)".
-- 04694: [Documentation] m5fmonty: The correct description is "Full Monty (The) (Empire) (MPU5)".
-- 04696: [Crash/Freeze] Crash when loading samples in certain games (Aaron Giles).
-- 04697: [Compiling] Unable to compile LDRESAMPLE.exe tool (Aaron Giles).
-- 04698: [Compiling] Unable to compile LDVERIFY.exe tool (Aaron Giles).
-- 04704: [Gameplay] 25pacman: Unable to continue while playing Galaga (Tafoid).
+MAME Testers Bugs Fixed (8):
+----------------------------
+- 04691: [Documentation] j6cpal and clone: The correct description is "Caesars Palace (Whitbread / Crystal) (IMPACT, set 1)". The set 'j6cpala' is his clone (AntoPISA)
+- 04692: [Documentation] j6kapang: The correct description is "Kapang! (Crystal) (IMPACT)" (AntoPISA)
+- 04693: [Documentation] m5cockdd: The correct description is "Cock A Doodle Dough! (Empire) (MPU5)" (AntoPISA)
+- 04694: [Documentation] m5fmonty: The correct description is "Full Monty (The) (Empire) (MPU5)" (AntoPISA)
+- 04696: [Crash/Freeze] Crash when loading samples in certain games (Aaron Giles)
+- 04697: [Compiling] Unable to compile LDRESAMPLE.exe tool (Aaron Giles)
+- 04698: [Compiling] Unable to compile LDVERIFY.exe tool (Aaron Giles)
+- 04704: [Gameplay] 25pacman: Unable to continue while playing Galaga (Tafoid)
 
 
 Source changes:
@@ -38,37 +38,37 @@ Source changes:
 - chdcd: Fix crash when parsing bin/cue [R. Belmont].
 - Rewrite INS8250 to use diserial, updated Microtouch to modern and made it serial device, updated connected drivers [Carl].
 - Checksum the delay slot in single-instruction blocks in the MIPS3 and RSP DRCs [Ryan Holtz].
-- mc146818 - Set period even if timer is disabled, required for Windows NT [Carl].
-- diserial - added optinal rx and tx timers and callbacks [Carl].
-- ins8250 - serial rx line high on start and fix for msr register [Carl].
+- mc146818: Set period even if timer is disabled, required for Windows NT [Carl].
+- diserial: Added optinal rx and tx timers and callbacks [Carl].
+- ins8250: Serial rx line high on start and fix for msr register [Carl].
 - m68k: Add API to install a non-debugger instruction hook. Usage is strongly NOT recommended except for dire cases [R. Belmont].
 - Williams blits with bit 2 set take approximately 2x as long because they are bus-shared with RAM. Should impact some timing behaviors such as later levels in Robotron, where approximately 10% of the blits are done with bit 2 set. Further refinements may be necessary but this addresses the most significant issue [Sean Riddle, Aaron Giles].
 - i386: One more to fix cmpsb (dir /s in MS-DOS works now) and remove unused variables [Carl].
 - Improvements to Golden Poker driver [Roberto Fresca]:
-  * Inputs from the scratch.
-  * Switched manufacturer 'Playman' to PM / Beck Elektronik, since it's PM and Beck Elektronik/Computer/etc.
+  * Inputs from the scratch;
+  * Switched manufacturer 'Playman' to PM / Beck Elektronik, since it's PM and Beck Elektronik/Computer/etc;
   * Added technical and game notes.
-- Added a trivial Y reject to triangle draw commands in the N64 RDP [Ryan Holtz] l.
+- Added a trivial Y reject to triangle draw commands in the N64 RDP [Ryan Holtz].
 - N64: Various PIF fixes [Ryan Holtz].
 - Several fixes and additions to listxml output (info.c) [Fabio Priuli]:
-  * Appended to xml info about devices which can be optionally mounted to slots.
-  * Added a description attribute to slotoption to show which devices can be mounted in each slot.
-  * Added to xml info of cpus/inputs/image/slots which are relative to devices (e.g. CPUs or Dipswitches in the device itself).
-  * Tags of elements directly attached to the root_device do not display anymore the root colon (slot tags were already behaving in this way); elements attached to optional devices use tags starting with colon (to be interpreted as a relative tags which gets appended to the device tag, when such a device is selected in a slot).
-  * Modified when necessary output routines to pass a root_device and a root_tag as parameters, in order to simplify output of relative devices and avoid duplicated code.
-  * Updated DTD according to the new elements and attributes. These changes allow frontends to know in advance how drivers can be configured through the various slot options (by matching option descriptions with device descriptions), without the need to run -lx with the various slot combinations. This is especially of use if a device adds e.g. dipswitches or image devices (like additional floppy drives or additional slot expansions), but also if one wants to know e.g. how many sound channels a soundcard would add to a pc driver, or which kind of screen parameters would be added by a specific choice of video card.
+  * Appended to xml info about devices which can be optionally mounted to slots;
+  * Added a description attribute to slotoption to show which devices can be mounted in each slot;
+  * Added to xml info of cpus/inputs/image/slots which are relative to devices (e.g. CPUs or Dipswitches in the device itself);
+  * Tags of elements directly attached to the root_device do not display anymore the root colon (slot tags were already behaving in this way); elements attached to optional devices use tags starting with colon (to be interpreted as a relative tags which gets appended to the device tag, when such a device is selected in a slot);
+  * Modified when necessary output routines to pass a root_device and a root_tag as parameters, in order to simplify output of relative devices and avoid duplicated code;
+  * Updated DTD according to the new elements and attributes. These changes allow frontends to know in advance how drivers can be configured through the various slot options (by matching option descriptions with device descriptions), without the need to run -lx with the various slot combinations. This is especially of use if a device adds e.g. DIP switches or image devices (like additional floppy drives or additional slot expansions), but also if one wants to know e.g. how many sound channels a soundcard would add to a pc driver, or which kind of screen parameters would be added by a specific choice of video card.
 - i386: Added 32-bit versions of LMSW, and made LMSW only change the lower 4 bits of CR0 [Barry Rodewald].
 - Fixed Windows 95 blue screen [Carl].
-- Preliminary driver for Merkur's 'Mahn Oh-Mann'. German board game similar to Ludo, derivated from the indian game Parchisi. Coin-op machine for 1-4 players. No screen, just artwork and lamps [Roberto Fresca].
-- Removed need for *_dev.lst files  [Miodrag Milanovic]:
-  * Enforced short names for slot card devices.
+- Preliminary driver for Merkur's Mahn Oh-Mann. German board game similar to Ludo, derivated from the indian game Parchisi. Coin-op machine for 1-4 players. No screen, just artwork and lamps [Roberto Fresca].
+- Removed need for *_dev.lst files [Miodrag Milanović]:
+  * Enforced short names for slot card devices;
   * Updated validation, romverify and listxml output accordingly.
 - N64: Force mtc0 opcodes that initiate to-RSP DMAs to end recompile sequences to force a code check. Fixes certain microcodes from executing garbage code after DMA [Ryan Holtz].
 - N64: Don't flush the RSP DRC cache on DMA. Fixes Mario 64 and others [Ryan Holtz].
 - N64: Miscellaneous machine fixes [Ryan Holtz]:
-  * Increase the amount of time consumed by PI DMA, makes certain RSP microcodes that test DMA speed land in the correct window.
-  * Force the main CPU to yield when the RSP reads its atomic semaphore.
-  * Force the RSP to yield when PI DMA completes.
+  * Increase the amount of time consumed by PI DMA, makes certain RSP microcodes that test DMA speed land in the correct window;
+  * Force the main CPU to yield when the RSP reads its atomic semaphore;
+  * Force the RSP to yield when PI DMA completes;
   * Flush the RSP DRC cache when touching IMEM with SP DMA.
 - i386: Prevent page faults when returning to same privilege and unmapped pages are above the stack.  Windows 95 boots now [Carl].
 - Documentation of the video data on 'Dragon Gun' [David Haywood].

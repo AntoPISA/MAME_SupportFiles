@@ -32,10 +32,10 @@ Mahjong Hanafuda Cosplay Tengoku 8 [Yohji, Mr. CAST, Smitdogg, The Dumping Union
 Multi Game III (V.Ger 3.64) [Roberto Fresca, Andreas Naive, Team Europe]
 
 
-MAMETesters Bugs Fixed (22):
-----------------------------
-- 00413: [Sound] (crimfght.c) crimfght: The speed of the music is playing ever so slightly too slowly. (Mamesick)
-- 01232: [Sound] (aliens.c) aliens: Comparing to the pcb, the music in MAME is slower. (Mamesick)
+MAME Testers Bugs Fixed (22):
+-----------------------------
+- 00413: [Sound] (crimfght.c) crimfght: The speed of the music is playing ever so slightly too slowly (Mamesick)
+- 01232: [Sound] (aliens.c) aliens: Comparing to the pcb, the music in MAME is slower (Mamesick)
 - 04745: [Interface] Game select UI hangs when using cursor keys (Couriersud)
 - 04766: [Graphics] (mario.c) mario and clones: Missing Title/Game Graphics (Phil Bennett)
 - 04768: [Graphics] (nova2001.c) ninjakun: Missing game Graphics and Tilemap Scroll (Phil Bennett)
@@ -43,18 +43,18 @@ MAMETesters Bugs Fixed (22):
 - 04771: [Speed] (hyprduel.c) magerror: Massive drop in performance at Warning Screen and onwards (Phil Bennett)
 - 04772: [Crash/Freeze] (midtunit.c) jdreddp: Crash before OK (Phil Bennett)
 - 04774: [Crash/Freeze] (naomi.c) Most sets in naomi.c: Crash before OK (R. Belmont)
-- 04775: [Crash/Freeze] (pgm.c) ddpdoj, ddpdoja, ddpdojb, espgal,  ket, keta, ketb: Crash before OK (mahlemiut)
+- 04775: [Crash/Freeze] (pgm.c) ddpdoj, ddpdoja, ddpdojb, espgal, ket, keta, ketb: Crash before OK (mahlemiut)
 - 04777: [Crash/Freeze] (scramble.c) 800fath, ad2083, knockout, mariner, triplep: Crash before OK (Tafoid)
 - 04778: [Crash/Freeze] (subsino2.c) bishjan, mtrain, wtrnymph: Crash before OK (Tafoid)
 - 04779: [Crash/Freeze] (scobra.c) billiard, hustler, hustlerb2, hustlerd: Crash before OK (Tafoid)
-- 04781: [Documentation] (bfm_sc5.c) sc5potp and clone: The correct year of production is '2005'.
-- 04782: [Documentation] (bfm_sc4.c) sc4slc and clones: The correct year of production is '2003'.
-- 04783: [Documentation] (bfm_sc4.c) sc4jjunc and clones: The correct year of production is '2002'.
-- 04784: [Documentation] (mpu5.c) m5doshpk: The correct description is 'Do$h 'n' Pecks (Barcrest) (MPU5).
-- 04785: [Compiling] Default 'tiny' does not build. (micko)
-- 04786: [Original Reference] (cps2.c) vhunt2d: In-Game selftest fails on Program Rom 04
-- 04787: [Sound] (epos.c) dealer: Missing sounds
-- 04788: [Original Reference] (cps2.c) vsav2d: Several roms do not pass selftest.
+- 04781: [Documentation] (bfm_sc5.c) sc5potp and clone: The correct year of production is '2005' (AntoPISA)
+- 04782: [Documentation] (bfm_sc4.c) sc4slc and clones: The correct year of production is '2003' (AntoPISA)
+- 04783: [Documentation] (bfm_sc4.c) sc4jjunc and clones: The correct year of production is '2002' (AntoPISA)
+- 04784: [Documentation] (mpu5.c) m5doshpk: The correct description is 'Do$h 'n' Pecks (Barcrest) (MPU5) (AntoPISA)
+- 04785: [Compiling] Default 'tiny' does not build (micko)
+- 04786: [Original Reference] (cps2.c) vhunt2d: In-Game selftest fails on Program Rom 04 (r16090)
+- 04787: [Sound] (epos.c) dealer: Missing sounds (darq)
+- 04788: [Original Reference] (cps2.c) vsav2d: Several roms do not pass selftest (Pythagoras)
 - 04794: [Graphics] (bombjack.c) bombjack & clone: Missing  sprites (Phil Bennett)
 
 
@@ -67,15 +67,15 @@ Source changes:
 - Added the clock counter chain and other common functions into device_rtc_interface, removing duplicated code in RTC implementations. Rewrote the Dallas DS1302 to support additional features needed by IDE64 in MESS [Curt Coder].
 - Added/filled in about 110 missing Scorpion 4/5 romsets [Brian Griffin].
 - Amatic AMA-8000 improvements [Roberto Fresca]:
-  * Found the hopper motor signal. Mapped the hopper pay pulse to key 'Q'. Now is possible to payout manually, avoiding the hang for hopper empty or timeout.
+  * Found the hopper motor signal. Mapped the hopper pay pulse to key 'Q'. Now is possible to payout manually, avoiding the hang for hopper empty or timeout;
   * Renamed amaticmg3 to amaticmg2 since is the AMA-8000-2 system.
 - Amatic Multi Game System driver improvements [Roberto Fresca]:
-  * Added a button-lamps layout.
-  * Added support for outputs: lamps and counters.
-  * Added technical notes.
-  * Changed am_uslot to suprstar.
-  * Identified the slots game as Super Stars.
-  * Promoted the game to working state.
+  * Added a button-lamps layout;
+  * Added support for outputs: lamps and counters;
+  * Added technical notes;
+  * Changed am_uslot to suprstar;
+  * Identified the slots game as Super Stars;
+  * Promoted the game to working state;
   * Reworked inputs from the scratch.
 - Clean-ups to sound and fixed volume balance in Nichibutsu Mahjong drivers [Takahiro Nogi].
 - cps2.c: fixed vhunt2d and vsav2d ROM loading [Pythagoras].

@@ -345,10 +345,10 @@ Source changes:
 - bus/ti99/peb: Added PGRAM battery-backed RAM card, fixed IDE adapter card, and made IDE card's real-time clock type configurable [Michael Zapf].
 - Refactored AVI/MNG recording code to move it out of emu/video.cpp and reduce duplication [Nathan Woods].
 - luaengine.cpp: Added optional parameter to video::begin_recording() function for specifying video format [Nathan Woods].
-- unidasm: Added generic disassembler for Microchip PIC16 microcontroller family with extended instructions [O. Galibert].
-- cpu/s2650: Made interrupt acknowledge handler supply vector, and eliminated set_input_line_and_vector and HOLD_LINE [O. Galibert].
-- cpu/upd177x: Added disassembler for NEC uPD1771C and related processors [O. Galibert].
-- sound/ks0164.cpp: Added preliminary sample playback [O. Galibert].
+- unidasm: Added generic disassembler for Microchip PIC16 microcontroller family with extended instructions [Olivier Galibert].
+- cpu/s2650: Made interrupt acknowledge handler supply vector, and eliminated set_input_line_and_vector and HOLD_LINE [Olivier Galibert].
+- cpu/upd177x: Added disassembler for NEC uPD1771C and related processors [Olivier Galibert].
+- sound/ks0164.cpp: Added preliminary sample playback [Olivier Galibert].
 - machine/cxd1185.cpp: Added Sony CXD1185 SCSI 1 Protocol Controller device [Patrick Mackinlay].
 - machine/dmac_0266.cpp: Added Sony 0266 DMA Controller gate array device [Patrick Mackinlay].
 - news_r3k.cpp: Implemented graphics [Patrick Mackinlay].

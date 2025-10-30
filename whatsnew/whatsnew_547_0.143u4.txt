@@ -27,7 +27,7 @@ Alien Front [Mark F., The Dumping Union, R. Belmont]
 S-Plus (SS4240) Coral Reef [agemame]
 
 
-MAMETesters Bugs Fixed (5):
+MAME Testers Bugs Fixed (5):
 ---------------------------
 - 02084: [DIP/Input] sokyugrt: Emulation starts with 1 or more credit inserted (Angelo Salese)
 - 04366: [DIP/Input] shanhigw: The game starts with 2 credits inserted (Angelo Salese)
@@ -39,7 +39,7 @@ MAMETesters Bugs Fixed (5):
 Source changes:
 ---------------
 - driver.h: Fixed handling of compatible systems for MESS [Fabio Priuli].
-- tbowl.c: Corrected some dipswitches and settings. Added DIP switch locations to the Tecmo Bowl sets [Brian Troha].
+- tbowl.c: Corrected some DIP switches and settings. Added DIP switch locations to the Tecmo Bowl sets [Brian Troha].
 - Added correct sprite ROM for "Mahjong Tian Jiang Shen Bing" [Guru].
 - Decrypted sprites and palette in "Mahjong Tian Jiang Shen Bing", added inputs, sidestepped protection [Luca Elia].
 - z80dma: Added an alternative way of register read-back that directly change the read mask without passing from the init read sequence command, also moved around DMA counters incrementing [Angelo Salese].
@@ -47,9 +47,9 @@ Source changes:
 - Removed support for PORT_CATEGORY from the core, since PORT_CONDITION is enough to deal with removable controllers in MESS [Fabio Priuli].
 - ioport.c: during emulation, detect keyboard only when enabled [Fabio Priuli].
 - Various Neo-Geo changes [Jackc, Johnboy]:
-  * Continued to document used pcb's for cartridges.
-  * More removal of .bin extension in favour of chiplabel.socketlabel naming convention.
-  * Cleaned up fightfev: Removed duplicate p2, marked p1 bad dump.
+  * Continued to document used pcb's for cartridges;
+  * More removal of .bin extension in favour of chiplabel.socketlabel naming convention;
+  * Cleaned up fightfev: Removed duplicate p2, marked p1 bad dump;
   * Cleaned up fatfury2.
 - Fixed independent channel volumes in Okim6376 sound chip, used by the games from the Road Hog era of MPU4 [J. Wallace].
 - Moved ST-V game-specific overrides from saturn.c/stvinit.c to stv.c, makes games to correctly return stv.c instead of saturn.c if you use -listsource [Angelo Salese].
@@ -62,28 +62,28 @@ Source changes:
 - Converted VDP2 registers into proper 16-bits parallelism [Angelo Salese].
 - chdman: Supported full/relative paths when creating cd ROM image, also added support for GDI with files containing space char [Miodrag Milanovic].
 - Added support for loading other image types to CDROM device, with use of chdman part of code [Miodrag Milanovic].
-- floppy: Add generic track data descriptors [O. Galibert].
+- floppy: Add generic track data descriptors [Olivier Galibert].
 - Added MVOL to the SCSP core, used for sound fade in/out effects [Angelo Salese].
 - Various fixes to the Taito JC system [Angelo Salese]:
-  * Implemented preliminary object RAM bankswitch, fixes Densha de Go garbage video objects if you coin up during attract mode.
-  * Improved inputs in Densha de Go, promoted game to working state.
-  * Fixes analog inputs in Landing Gear.
-  * Work around for DSP reset line in Dangerous Curves, allows it to reach title screen (no 3d yet due of other problems).
-  * Implemented 4bpp mode for object RAM, used by Densha de Go 2 credit display.
-  * Fixed IRQ6 triggering in  (it's a signal that's sent from DSP to Main to communicate that job is done).
-  * Faked the Mascon via an analog port, that fixes a bunch of issues with undefined input state for Densha de Go 1 and 2.
-  * Fixed ROM loading in Densya de Go 2 Kousoku-hen, fixes booting in it.
-  * Fixed Densha de Go 2 crash when entering into gameplay, game is now playable.
-  * Implemented gouraud shaded triangles, fixes Landing Gear messed up 3D.
-  * Fixed credit display in Densha de Go.
-  * Preliminary implementation of object RAM screen masking, used to cover left-right sides of the screen.
+  * Implemented preliminary object RAM bankswitch, fixes Densha de Go garbage video objects if you coin up during attract mode;
+  * Improved inputs in Densha de Go, promoted game to working state;
+  * Fixes analog inputs in Landing Gear;
+  * Work around for DSP reset line in Dangerous Curves, allows it to reach title screen (no 3d yet due of other problems);
+  * Implemented 4bpp mode for object RAM, used by Densha de Go 2 credit display;
+  * Fixed IRQ6 triggering in  (it's a signal that's sent from DSP to Main to communicate that job is done);
+  * Faked the Mascon via an analog port, that fixes a bunch of issues with undefined input state for Densha de Go 1 and 2;
+  * Fixed ROM loading in Densya de Go 2 Kousoku-hen, fixes booting in it;
+  * Fixed Densha de Go 2 crash when entering into gameplay, game is now playable;
+  * Implemented gouraud shaded triangles, fixes Landing Gear messed up 3D;
+  * Fixed credit display in Densha de Go;
+  * Preliminary implementation of object RAM screen masking, used to cover left-right sides of the screen;
   * Added DSP idle skips, mostly noticeable during POST screens.
-- Provided odometer and break table conversion for Densha de Go [O. Galibert].
-- naomi: Split the ROM boards into a collection of devices [O. Galibert].
+- Provided odometer and break table conversion for Densha de Go [Olivier Galibert].
+- naomi: Split the ROM boards into a collection of devices [Olivier Galibert].
 - williams.c: Added second sound board to blaster/blaster30 [hap].
 - Fixed TMS32051 debug memory viewer [Angelo Salese].
 - williams.c update 2 [hap]:
-  * Fixed screen garbage when frameskipping.
+  * Fixed screen garbage when frameskipping;
   * Fixed blaster background color (eg. screen flashes when hit).
 - Work-around for TMS32051 crash on Taito JC system soft reset [Angelo Salese].
 - Fixed a debugger crash if you try to view data memory in TMS32051 [Angelo Salese].

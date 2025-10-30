@@ -78,7 +78,7 @@ New NOT_WORKING Software List Additions
 gba_ereader.xml: Animal Crossing Series 2 [Shideravan]
 
 
-MAMETesters Bugs Fixed (21):
+MAME Testers Bugs Fixed (21):
 ----------------------------
 - 00550: [Graphics] (atarisy2.c) apb: There is a graphics problem with your police car at the point you drive away from your starting square [crazyc].
 - 01455: [DIP/Input] (segas18.c) lghost: Problem with crosshair [Pitou].
@@ -98,7 +98,7 @@ MAMETesters Bugs Fixed (21):
 - 06332: [Graphics] (galaga.c) digdug and clones: Graphics from Tilemap 0 are missing [Osso].
 - 06335: [Interface] UI:: Input (general) selection menus do not display correctly or at all [Vas Crabb].
 - 06342: [Crash/Freeze] pc (pccga): System crashing while loading [crazyc].
-- 06343: [DIP/Input] (taito_l.c) plottingu: Coinage dipswitches are labeled incorrectly [Tafoid].
+- 06343: [DIP/Input] (taito_l.c) plottingu: Coinage DIP switches are labeled incorrectly [Tafoid].
 - 06349: [Gameplay] brapboys: MAME crashed when exiting game [Olivier Galibert].
 - 06352: [Crash/Freeze] (cps1.c) mbombrd, mbombrdj: Crash in demonstration mode [Osso].
 
@@ -194,17 +194,17 @@ Source changes:
  * Fixed interrupt handling - boots to DOS now
  * Fixed keyboard error on POST
 
--Fixed missing region report when DEVICE_SELF is used [O. Galibert].
+-Fixed missing region report when DEVICE_SELF is used [Olivier Galibert].
 
 -dirom: device_rom_interface for sound chips with rom/memory map
- alternative [O. Galibert]
+ alternative [Olivier Galibert]
  * Make robust for oversize ROMs
 
--dirom,okim6295: Added/fixed banking support [O. Galibert].
+-dirom,okim6295: Added/fixed banking support [Olivier Galibert].
 
--Preliminary VGM player (vgmplay) [O. Galibert]
+-Preliminary VGM player (vgmplay) [Olivier Galibert]
 
--kaneko_calc3: Stop trashing memory [O. Galibert].
+-kaneko_calc3: Stop trashing memory [Olivier Galibert].
 
 -Fairlight CMI IIx driver [Ryan Holtz]:
  * Modernization of Phil's CMI IIx driver

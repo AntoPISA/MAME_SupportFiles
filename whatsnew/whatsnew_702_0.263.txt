@@ -2,7 +2,7 @@
 -----------------------------------
 
 
-MAME Testers bugs fixed
+MAME Testers Bugs Fixed
 -----------------------
 - 08814: [Sound] (namco/namcos2.cpp) dsaber: Dragon Saber music plays at inconsistent speed. (hap)
 - 08818: [Crash/Freeze] (misc/magicard.cpp) magicrde: Watchpoints on PIC16F54 special function registers can cause crashes. (AJR)
@@ -337,7 +337,7 @@ Merged pull requests
 
 Source changes
 --------------
-- lola8a: Fixed video output, added inverted video mode [Miodrag Milanovic].
+- lola8a: Fixed video output, added inverted video mode [Miodrag Milanović].
 - homelab/homelab.cpp: Update Homelab2/Aircomp 16 to working [linuxforum5, R. Belmont]:
   * Implemented text and graphics modes.
   * Fixed memory shadowing and I/O.
@@ -353,7 +353,7 @@ Source changes
 - rm/rmnimbus.cpp: Change default mouse emulation mode to HLE (#11975) [Robin Sergeant].
 - hash/apple2_*: Added 245 (238 working 2 not working), removed 10 (#11971). Metadata cleanups and parent/clone relationships. Renamed sets for consistency between software lists and other dumps [A-Noid33].
 - hh_sm150: Move nupogodi&co to their own class [hap].
-- lola8: Add missing GFX decode [Miodrag Milanovic].
+- lola8: Add missing GFX decode [Miodrag Milanović].
 - upd7810: Set MM RAE to 1 at power on (datasheet says it's undefined at reset) [hap].
 - upd7810: Move near empty upd7811 file to upd7810 [hap].
 - vta2000: Convert video rendering to use 8275 CRTCs fed by 8257 DMAC; add various other peripherals and interrupts. (Display has become slightly glitchy, but there is a cursor now) [AJR].
@@ -376,8 +376,8 @@ Source changes
 - apple/apple2e.cpp: Remove duplicate line (#11990) [xotmatrix].
 - sega/segaai.cpp: Improve upd7759 banking (#11991) [Wilbert Pol].
 - rm/rm380z.cpp: Fix vram access to allow reading of character data from screen (#11988) [Robin Sergeant].
-- tim011: Add expansion bus support and AY card [Marko Solajic, Miodrag Milanovic].
-- tim011: Expansion should be empty by deafault [Miodrag Milanovic].
+- tim011: Add expansion bus support and AY card [Marko Solajic, Miodrag Milanović].
+- tim011: Expansion should be empty by deafault [Miodrag Milanović].
 - phoenix/phoenix.cpp: Added a bootleg of Phoenix (#11984) [ClawGrip].
 - c140: Timer reload value = written reg data + 1 [hap].
 - c140: Fix copy paste mistake during cleanups [hap].
@@ -416,7 +416,7 @@ Source changes
 - Updated Russian UI translation. This is taken from pull request #11983 [Arbars].
 - thayers: Update PORT_NAMEs, remove PORT_SERVICE because it takes the F2 key by default, swap F1-F4 and 1-0 with 1-4 and F1-F10 because of default IPT_COIN mapping [hap].
 - Corrected some Russian translations [holub].
-- bus/tim011/aycard: Change class name to singular [Miodrag Milanovic].
+- bus/tim011/aycard: Change class name to singular [Miodrag Milanović].
 - Corrected a Russian typo and pulled across two more message translations [Vas Crabb].
 - cop400: Zerofill more class variables, thayers: add todo note about key conflict, y301xl: update company string [hap].
 - acorn/aristmk5.cpp: Added set chip v4.04.01. One ROM doesn't match the checksum in the sticker and gives CRC error [Roberto Fresca].
@@ -424,14 +424,14 @@ Source changes
 - lynx.xml: Marked raiden as possible bootleg of CES version (#12009). Game behaves differently to official Telegames cartridge release [David 'Foxhack' Silva].
 - sega/sega_beena_cart.xml: Added two working items (#12006) [QUFB].
 - heath/h89.cpp: Added Ultimeth 2k ROM as a BIOS option (#12002) [Mark Garlanger].
-- hr84: Removed testing leftovers [Miodrag Milanovic].
+- hr84: Removed testing leftovers [Miodrag Milanović].
 - chdman: Fixed a couple of issues and added preliminary web docs [Vas Crabb]:
   * tools/chdman.cpp: Added --hunksize/-hs option for createdvd command and default to 4K hunks (2 sectors, same size as hard disk hunks). Also removed --outputbin/-ob option from extractdvd command - it did nothing as it's CD-specific.
   * docs: Added preliminary chdman documentation.  Most common options have at least basic descriptions, supported options are listed for all commands, and supported compression algorithms are described.
   * docs: Cleaned up heading levels in tools section.
 - hh_sm510: Correct some release years after looking at copyright year on packaging, misc: small cleanup [hap].
 - cit220_kbd: Identify all remaining keys; add LED outputs [AJR].
-- hr84: Working cassette and beeper [Miodrag Milanovic].
+- hr84: Working cassette and beeper [Miodrag Milanović].
 - thunderx: Fix pointer comparison [hap].
 - thunderx: Realign PMC program comments [hap].
 - ptraina: Modify fake DS2430A dump to pass protection check [AJR].
@@ -482,7 +482,7 @@ Source changes
   * Get the volume label from the root directory, rather than from the extended BPB (which is less reliable).
   * Ignore long file name entries for now.
   * floptool: Add new line to error message report.
-- galaxy: Fix cassete writing and more reliable reading. Writing is now done as on real hardware, so output audio now matches. reading is more reliable from real cassette [Miodrag Milanovic].
+- galaxy: Fix cassete writing and more reliable reading. Writing is now done as on real hardware, so output audio now matches. reading is more reliable from real cassette [Miodrag Milanović].
 - NVRAM: Delete file on save if there's a write error or result file is 0 bytes [hap].
 - mu5/15: Split the LCD sh7042: Start fleshing it up swx00: Same mu15: Added swp30: readd the scount increment [Olivier Galibert].
 - video/mc6845.h: Mark set_show_border_area and set_visarea_adjust as hack setters [Angelo Salese].
@@ -505,17 +505,17 @@ Source changes
 - ns32k: Fix typo [Patrick Mackinlay].
 - Revert "ui: Move decrease frameskip key from F8 to Shift F9". This reverts commit d88e12714307ff5a9dc02d0e849ed84d3c4b4f93 [hap].
 - h8: Return 0xff for unconnected digital input ports, prisma: fill in the inputs [hap].
-- sfrj/idpartner.cpp: Added bus connector and split GDP into separate card [Miodrag Milanovic].
+- sfrj/idpartner.cpp: Added bus connector and split GDP into separate card [Miodrag Milanović].
 - prisma: Add direct leds [hap].
-- sfrj/idpartner.cpp: More fitting shortname [Miodrag Milanovic].
-- sfrj/galaxy.cpp: Added official ROM images and char roms used for kit and commercial version [Miodrag Milanovic].
+- sfrj/idpartner.cpp: More fitting shortname [Miodrag Milanović].
+- sfrj/galaxy.cpp: Added official ROM images and char roms used for kit and commercial version [Miodrag Milanović].
 - cheatopt: Add the global cheat enable toggle to the menu [hap].
 - cheatopt: Indicate if no cheats were found [hap].
 - ui: Add quick save/load state shortcut, default key undecided [hap].
 - imagedev/floppy.cpp: Delete unused getter that leaked details [AJR].
 - util/options.h: Use forwarding header [AJR].
 - shared/pcshare: Deprecate [Angelo Salese].
-- sfrj/idpartner.cpp: Add custom floppy drive z80 daisy chain device, fdc ready is tied low [Miodrag Milanovic].
+- sfrj/idpartner.cpp: Add custom floppy drive z80 daisy chain device, fdc ready is tied low [Miodrag Milanović].
 - bus/pci: Add stub for OAK OTI Spitfire line [Angelo Salese].
 - companion2: Update notes about concord, microvsn: get rid of timer device [hap].
 - video/pc_xga: Move OAK VGA core to standalone pc_vga_oak file [Angelo Salese].
@@ -535,10 +535,10 @@ Source changes
   * nec/pce_cd.cpp: Use device_mixer_interface rather than using hard-coded speaker tags.
   * Merged nec/pce_m.cpp into nec/pce.cpp.
   * Reduced preprocessor macros, removed outdated comments, changed heaxadecimal digits to lowercase.
-- sfrj/galaxy.cpp: Removed ROM hack for Galaksija plus [Miodrag Milanovic].
+- sfrj/galaxy.cpp: Removed ROM hack for Galaksija plus [Miodrag Milanović].
 - patinho_feio: Clean up some indentation [hap].
 - cxg: Tenamed some source files [hap].
-- sfrj/idpartner.cpp: Fixed floppy daisy chain lib/formats/idpart_dsk.cpp - added Iskra Delta Partner floppy image format [Miodrag Milanovic].
+- sfrj/idpartner.cpp: Fixed floppy daisy chain lib/formats/idpart_dsk.cpp - added Iskra Delta Partner floppy image format [Miodrag Milanović].
 - h8_timer8: Fix divide by 0 crash, scprof: add buttons [hap].
 - mcs51: Add placeholder device types for P87C552 and P80C562, with custom SFR definitions for their disassemblers [AJR].
 - unidasm: Add p8xc552 and p8xc562 types [AJR].
@@ -568,9 +568,9 @@ Source changes
 - ns32000: Add support for ns32532 [Patrick Mackinlay]
   * Refactor slave interfaces.
   * Add crude /rdy emulation.
-- sfrj/idpartner.cpp: Hookup dma, pio and rtc [Miodrag Milanovic].
-- z80dma: Add PULSE mode handling [Miodrag Milanovic].
-- bud/idpartner/gdp.cpp: Hook AVDC and added char rom [Miodrag Milanovic].
+- sfrj/idpartner.cpp: Hookup dma, pio and rtc [Miodrag Milanović].
+- z80dma: Add PULSE mode handling [Miodrag Milanović].
+- bud/idpartner/gdp.cpp: Hook AVDC and added char rom [Miodrag Milanović].
 - universal/cheekyms.cpp: Consolidated driver in single file [Ivan Vangelista].
 - bus/bbc/userport/m4000.cpp: Added key mappings for 3 octaves [Nigel Barnes].
 - bus/pci: Add WD9710 Paradise Pipeline card [Angelo Salese].
@@ -624,13 +624,13 @@ Source changes
 - montreux.lay: Embedded svg to make the sprite pattern anti aliased [hap].
 - hash/ekara_japan_*.xml: New sets (#11989) [David Haywood].
 - heathkit/h89.cpp: Add a software list for H88 cassettes (#12019) [Mark Garlanger].
-- bus/idpartner: Added SASI adapter [Miodrag Milanovic].
+- bus/idpartner: Added SASI adapter [Miodrag Milanović].
 - osd/mac, osd/sdl: Show prescale popup when it hasn't changed due to hitting the limit. This makes it easier to see that you’ve hit the limit and MAME isn't just ignoring your keystrokes [Vas Crabb].
 - emu/inpttype.ipp: Restored tabulation [Vas Crabb].
 - konami/ksys573.cpp: Added Maral Beat JAB version (not working) (#12041) [987123879113].
-- Fix compile [Miodrag Milanovic].
+- Fix compile [Miodrag Milanović].
 - cosmac: Fix disassembly of LBNQ, LBNZ and LBNF [AJR].
-- sfrj/idpartner.cpp: Proper baudrates [Miodrag Milanovic].
+- sfrj/idpartner.cpp: Proper baudrates [Miodrag Milanović].
 - bus/spectrum: Added Prism VTX 5000 Modem device [Nigel Barnes].
 - bus/coco/dragon_serial: Fixed Rx/Tx clocks and removed cartridge autoboot [Nigel Barnes].
 - bus/tanbus/keyboard/mt009: Removed unneeded PORT_NAMEs [Nigel Barnes].
@@ -707,7 +707,7 @@ Source changes
   * Added Game Duty (Weak/Strong) DIP Switch.
   * Added Pay Rate (60%/70%/80%/90%) DIP Switches.
   * Changed some defaults.
-- bus/idpartner/sasi.cpp: Managed to load data from disk [Miodrag Milanovic].
+- bus/idpartner/sasi.cpp: Managed to load data from disk [Miodrag Milanović].
 - h8_sci: Set logerror verbosity to 0 (performance issue in gk2000), mhavoc, remove timer_set [hap].
 - video/voodoo_pci: Fix Voodoo 1 PCI default values, allows sis85c496 to detect card [Angelo Salese].
 - h8_sci: Suppress SCK transition at end of transmit sequence (fixes regression in puzzlet) [AJR].
@@ -729,13 +729,13 @@ Source changes
 - trs/coco*.cpp: Cleaned up some rot. In particular, use object finders in machine configuration rather than defining tag macros, and avoid unnecessary device_replace to just slightly alter device configuration [Vas Crabb].
 - ussr/1801vp014.cpp: Added simulated MS7008 keyboard using K1801VP1-014 controller (#12027) [shattered].
 - bus/pci/promotion.cpp: Notes [Angelo Salese].
-- sfrj/idpartner.cpp: Fixed and cleaned rom banking [Miodrag Milanovic].
-- bus/idpartner/sasi.cpp: Handle edge cases and save state [Miodrag Milanovic].
+- sfrj/idpartner.cpp: Fixed and cleaned rom banking [Miodrag Milanović].
+- bus/idpartner/sasi.cpp: Handle edge cases and save state [Miodrag Milanović].
 - sigma/sigmab52.cpp improvements [Roberto Fresca]:
   * Created a default NVRAM for Joker's Wild (B52 system, BP55114-V1104, Ver.054NMV)
   * Improved the documentation.
   * Cleaned up the driver.
-- sfrj/idpartner.cpp: Sortout SIO clocks [Miodrag Milanovic].
+- sfrj/idpartner.cpp: Sortout SIO clocks [Miodrag Milanović].
 - sigma/sigmab52.cpp improvements: [Roberto Fresca]:
   * Created default NVRAM for Joker's Wild (B52 system, BP55114-V1104, Ver.054NMV, Harrah's GFX).
   * Created default NVRAM for Joker's Wild (B52 system, WP02001-054, Ver.031WM).
@@ -750,7 +750,7 @@ Source changes
 - bus/pci/promotion: Add Alliance VGA core stub [Angelo Salese].
 - video.lua: Fix a couple shortsights [Angelo Salese].
 - mentor16: Better piezo emulation, put lcds at different place in internal artwork [hap].
-- sfrj/idpartner.cpp: Temporary hack, so work on video out can be done [Miodrag Milanovic].
+- sfrj/idpartner.cpp: Temporary hack, so work on video out can be done [Miodrag Milanović].
 - video/gf7600gs: Add basic legacy VGA control [Angelo Salese].
 - snova/svip: Rename driver to primo/vip [hap].
 - pic16c5x: Store FSR and show in debugger without extra high bits; eliminate now-unnecessary reset kludge [AJR].

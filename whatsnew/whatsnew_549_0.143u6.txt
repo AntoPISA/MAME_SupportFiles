@@ -27,8 +27,8 @@ Funcube 3 [Luca Elia]
 Mahjong Momotarou [Angelo Salese]
 
 
-MAMETesters Bugs Fixed (8):
----------------------------
+MAME Testers Bugs Fixed (8):
+----------------------------
 - 04483: [Compiling] sdlmame does not build in OpenBSD (R. Belmont)
 - 04488: [Sound] All games in ms32.c: Jaleco Mega System 32 is mono only (Angelo Salese)
 - 03541: [DIP/Input] victlapw: Cannot insert coins (hap)
@@ -54,9 +54,9 @@ Source changes:
 - Added ROL EXT, ROL INDX, ROL INDY, STS DIR opcodes to the HC11 CPU core [Angelo Salese].
 - Implemented save support to HC11 core [Angelo Salese].
 - Added preliminary 7-seg artwork for King Derby [Angelo Salese].
-- dogpatch - added shot sounds [Derrick Renaud, iritis].
-- Yet more Neo-Geo work on game ROMs structures [Johnboy]
-  * Finished to document used PCB's for cartridges.
+- dogpatch: Added shot sounds [Derrick Renaud, iritis].
+- Yet more Neo-Geo work on game ROMs structures [Johnboy]:
+  * Finished to document used PCB's for cartridges;
   * Finished removal of .bin extension in favour of chiplabel.socketlabel naming convention.
 - Whitestar: added main CPU FIRQ, fixed main/DMD CPU comms, DMD VRAM is now populated [R. Belmont].
 - Update raiden 2 driver with guru-style readme for Raiden 2 PCB itself, based on the raiden dx guru-readme [Lord Nightmare].
@@ -64,12 +64,12 @@ Source changes:
 - model3: Added drive board ROMs for Scud Race, Scud Race Plus, Sega Rally 2, and Daytona USA 2 [Andy Geezer].
 - naomi: Added drive board ROM for f355 [Andy Geezer].
 - Whitestar: correct sample loading for games with 4Mbit ROMs [R. Belmont].
-- Various Nibbler clean-ups:  [Tafoid]
-  * Set up Nibbler and clones to allow the Pioneer Balloon sound ROM as OPTIONAL as some board configurations has this ROM on board. If it is missing from your romset, the game will be allowed to play without the music is desired.
-  * Nibbler and clones have been reordered and renamed based on version information.
+- Various Nibbler clean-ups [Tafoid]:
+  * Set up Nibbler and clones to allow the Pioneer Balloon sound ROM as OPTIONAL as some board configurations has this ROM on board. If it is missing from your romset, the game will be allowed to play without the music is desired;
+  * Nibbler and clones have been reordered and renamed based on version information;
   * Added notes to the driver.
 - Various wiz.c fixes [Tafoid]:
-  * Fixed cocktail controls for scion and clone.
+  * Fixed cocktail controls for scion and clone;
   * Took ROM_LOAD_OPTIONAL out of ROM_START that uses the audiocpu ROM from scionc for scion. The original scion audiocpu is not emulated correctly, is a known issue, and was only covered up by the use of this other dump from scionc.
 - Whitestar: correct sample ROM loading for games with 8Mbit sample ROMs [R. Belmont, Tafoid].
 - Allow region tags starting with a : to mean "absolute" so devices can access the parent base driver's ROM regions [R. Belmont].
@@ -78,10 +78,10 @@ Source changes:
 - More minor notes about different raiden 2 set sound roms and suspected (but as of yet unproven) version order [Lord Nightmare, trap15].
 - Update sp0256 core to use correctly ordered resroms; update sauro driver to use correctly ordered sp0256-al2 resroms [Huygens, Lord Nightmare].
 - namcos22.c updates [hap]:
-  * Fixed acedrvrw and victlapw crash from buffer overflow.
-  * Fixed dirtdash crash due to pointrom size, the game still doesn't work though.
-  * Improved display fader (used in raveracw).
-  * Cleaned up inputs and added default NVRAM where useful.
+  * Fixed acedrvrw and victlapw crash from buffer overflow;
+  * Fixed dirtdash crash due to pointrom size, the game still doesn't work though;
+  * Improved display fader (used in raveracw);
+  * Cleaned up inputs and added default NVRAM where useful;
   * Properly emulated step lock motor status for the skiing games.
 - Added basic PCB layout for Reel'N Quake! [Brian Troha].
 - Further major organization, documentation and reordering of numerous (over 1700) gambling / Fruit machine titles covering multiple systems [David Haywood / James Wallace].

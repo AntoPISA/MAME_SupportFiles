@@ -1,49 +1,8 @@
-0.151 2013/11/05 [#590 - Miodrag Milanovic]
+﻿0.151 2013/11/05 [#590 - Miodrag Milanović]
 -------------------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
-- 00423: [Core] (deco_mlc.c) hoops96: If you press the F2 key, the game crashes. (It resets as of 0.123u3) (Angelo Salese)
-- 00489: [Graphics] (holeland.c) holeland: a problem with monsters in the intro. (Angelo Salese)
-- 03450: [Core] Confusing warning with NO_DUMP disks (Firewave)
-- 04484: [Misc.] (konamigx.c) rushhero: tms57002: sfmr - Contact Mamedev (Phil Bennett)
-- 04731: [Core] (mystwarr.c) viostorm and clones: Warning: k053252 read 0e, contact MAMEdev (Angelo Salese)
-- 05142: [Crash/Freeze] (subsino.c) mtrainnv: Exception shortly after start (Angelo Salese)
-- 05216: [Crash/Freeze] (taitogn.c) zooo: Complete a line of animals and the game will reset (smf)
-- 05240: [Crash/Freeze] (deco_mlc.c) ddream95, hoops95, hoops96, stadhr96, stadhr96j: [debug] Assertion failed: vpos >= 0, file src\emu\screen.c, line 711 (Angelo Salese)
-- 05257: [Crash/Freeze] (namcos12.c) tenkomor, tenkomorja: Crashes on "collect X medals" minigame (smf)
-- 05293: [Crash/Freeze] (megadrvb.c) srmdb: [debug] Assert after OK (Firewave)
-- 05294: [Crash/Freeze] (sidepckt.c) sidepckt, sidepcktj: [debug] Assert after OK (hap)
-- 05300: [Core] HLSL w/Vector Games: Black screen with -HLSL (hap)
-- 05301: [Graphics] (xmen.c) xmen6p, xmen6pu: All sprites are severely corrupted or invisible. (hap)
-- 05302: [Misc.] (ddragon3.c) ddragon3 and clones: Incorrect vertical refresh rate (hap)
-- 05303: [Gameplay] (harddriv.c) All sets in harddriv.c: Major corruption with all games (Phil Bennett)
-- 05305: [Crash/Freeze] (rastersp.c) rotr: Crashes on initial blue boot screen (hap)
-- 05309: [Graphics] Many systems that use multiple screens: Only one screen shown when using multi-screen games with an overlay effect enabled in Game Properties. (hap)
-- 05311: [Graphics] (unico.c) zeropnt2: Background layer lacks on Zero Point 2. (David Haywood)
-- 05316: [Sound] (dec8.c) meikyuh, meikyuha: no sound in demo and in gameplay (Phil Bennett)
-- 05317: [Crash/Freeze] (taitogn.c) spuzbobl, spuzboblj, usagi: boot up to a system error message (smf)
-- 05318: [Crash/Freeze] (djmain.c) bm1stmix and other: Error on loading CHD / disk error (smf)
-- 05320: [DIP/Input] (deco_mlc.c) ddream95, hoops95, hoops96: Missing inputs for Player 3 and Player 4 (Osso)
-- 05321: [Graphics] (darius.c) darius.c,ninjaw.c,tx1.c: triple screen always gapped only in fullscreen (hap)
-- 05322: [Graphics] (m92.c) majtitl2, majtitl2j, skingame, skingame2: Screen offsets when entering player 3 and player 4 (Angelo Salese)
-- 05323: [DIP/Input] (rallyx.c) rallyx, rallyxa, rallyxm, rallyxmr: "INVALID" text in dip switch (Robbbert)
-- 05324: [Graphics] (cubeqst.c) cubeqst, mach3, usvsthem and clones: There's a blank screen in certain places in the video (hap)
-- 05326: [Crash/Freeze] (subsino2.c) xplan: Game hangs up on boot (crazyc)
-- 05327: [DIP/Input] (scramble.c) mars: Player 2's fire button doesn't stop firing (Osso)
-- 05328: [Gameplay] (ksys573.c) gtrfrk2m: flash ROM device error (smf)
-- 05332: [Graphics] Multiple Systems: Backdrop displayed in front of screen in multiple drivers (hap)
-- 05335: [Core] (dbz.c) All sets in dbz.c: Warning: k053252 read 0e, contact MAMEdev pops up on screen (Angelo Salese)
-- 05340: [Crash/Freeze] (konamigq.c) cryptklr: can't get past the RAM/ROM Check. (smf)
-- 05341: [Sound] (taito_f3.c) qtheater: No sound and very slow (Angelo Salese)
-- 05343: [DIP/Input] (hornet.c) gradius4: Game always starts with 1 Credit inserted (hap)
-- 05346: [Core] (ksys573.c) darkhleg, powyakex, konam80s and clones: Games say "Now Loading" and hardware fails (smf)
-- 05351: [Crash/Freeze] (berzerk.c) frenzy: Your guy and other sprites freeze random during game play. (hap)
-- 05353: [Misc.] (at.c) at586 is able to boot from CDROM/ISO but not Hard Drive/CHD. (smf)
-
-
-New games added or promoted from NOT_WORKING status
+New Games Added or Promoted from NOT_WORKING Status
 ---------------------------------------------------
 Burger Time (set 3) [Artemio]
 Dolmen [Renato Mucciarelli, Brian Troha, The Dumping Union]
@@ -67,7 +26,7 @@ Player's Edge Plus (XMP00004+XM00005P) Multi-Poker [BrianT, Kevin, Jim]
 Space Invaders (SV version rev 1) [jgevarya]
 Turret Tower [Philip Bennett, smf]
 
-New clones added
+New Clones Added
 ----------------
 After Burner II (German) [Andrew Welburn, The Dumping Union]
 Bomber Man World (Japan) [Artemio Urbina, The Dumping Union]
@@ -88,7 +47,7 @@ Super Derby (v.10.04) [ANY]
 Various Player's Edge Plus Poker sets (100+) [BrianT, Kevin, Jim]
 X-Men Vs. Street Fighter (Asia 961004) [Smitdogg, The Dumping Union]
 
-New games marked as GAME_NOT_WORKING
+New Games Marked as GAME_NOT_WORKING
 ------------------------------------
 Carket Ball [ANY]
 Fate: Unlimited Codes (FUD1 Ver. A) [Guru, R. Belmont]
@@ -96,9 +55,50 @@ Hide & Seek [Guru]
 Unknown Sidam Poker [ANY]
 
 
+MAME Testers Bugs Fixed (37):
+-----------------------------
+- 00423: [Core] (deco_mlc.c) hoops96: If you press the F2 key, the game crashes. It resets as of 0.123u3 (Angelo Salese)
+- 00489: [Graphics] (holeland.c) holeland: a problem with monsters in the intro (Angelo Salese)
+- 03450: [Core] Confusing warning with NO_DUMP disks (Firewave)
+- 04484: [Misc.] (konamigx.c) rushhero: tms57002: sfmr - Contact Mamedev (Phil Bennett)
+- 04731: [Core] (mystwarr.c) viostorm and clones: Warning: k053252 read 0e, contact MAMEdev (Angelo Salese)
+- 05142: [Crash/Freeze] (subsino.c) mtrainnv: Exception shortly after start (Angelo Salese)
+- 05216: [Crash/Freeze] (taitogn.c) zooo: Complete a line of animals and the game will reset (smf)
+- 05240: [Crash/Freeze] (deco_mlc.c) ddream95, hoops95, hoops96, stadhr96, stadhr96j: [debug] Assertion failed: vpos >= 0, file src\emu\screen.c, line 711 (Angelo Salese)
+- 05257: [Crash/Freeze] (namcos12.c) tenkomor, tenkomorja: Crashes on "collect X medals" minigame (smf)
+- 05293: [Crash/Freeze] (megadrvb.c) srmdb: [debug] Assert after OK (Firewave)
+- 05294: [Crash/Freeze] (sidepckt.c) sidepckt, sidepcktj: [debug] Assert after OK (hap)
+- 05300: [Core] HLSL w/Vector Games: Black screen with -HLSL (hap)
+- 05301: [Graphics] (xmen.c) xmen6p, xmen6pu: All sprites are severely corrupted or invisible (hap)
+- 05302: [Misc.] (ddragon3.c) ddragon3 and clones: Incorrect vertical refresh rate (hap)
+- 05303: [Gameplay] (harddriv.c) All sets in harddriv.c: Major corruption with all games (Phil Bennett)
+- 05305: [Crash/Freeze] (rastersp.c) rotr: Crashes on initial blue boot screen (hap)
+- 05309: [Graphics] Many systems that use multiple screens: Only one screen shown when using multi-screen games with an overlay effect enabled in Game Properties (hap)
+- 05311: [Graphics] (unico.c) zeropnt2: Background layer lacks on Zero Point 2. (David Haywood)
+- 05316: [Sound] (dec8.c) meikyuh, meikyuha: no sound in demo and in gameplay (Phil Bennett)
+- 05317: [Crash/Freeze] (taitogn.c) spuzbobl, spuzboblj, usagi: boot up to a system error message (smf)
+- 05318: [Crash/Freeze] (djmain.c) bm1stmix and other: Error on loading CHD / disk error (smf)
+- 05320: [DIP/Input] (deco_mlc.c) ddream95, hoops95, hoops96: Missing inputs for Player 3 and Player 4 (Osso)
+- 05321: [Graphics] (darius.c) darius.c,ninjaw.c,tx1.c: triple screen always gapped only in fullscreen (hap)
+- 05322: [Graphics] (m92.c) majtitl2, majtitl2j, skingame, skingame2: Screen offsets when entering player 3 and player 4 (Angelo Salese)
+- 05323: [DIP/Input] (rallyx.c) rallyx, rallyxa, rallyxm, rallyxmr: "INVALID" text in dip switch (Robbbert)
+- 05324: [Graphics] (cubeqst.c) cubeqst, mach3, usvsthem and clones: There's a blank screen in certain places in the video (hap)
+- 05326: [Crash/Freeze] (subsino2.c) xplan: Game hangs up on boot (crazyc)
+- 05327: [DIP/Input] (scramble.c) mars: Player 2's fire button doesn't stop firing (Osso)
+- 05328: [Gameplay] (ksys573.c) gtrfrk2m: flash ROM device error (smf)
+- 05332: [Graphics] Multiple Systems: Backdrop displayed in front of screen in multiple drivers (hap)
+- 05335: [Core] (dbz.c) All sets in dbz.c: Warning: k053252 read 0e, contact MAMEdev pops up on screen (Angelo Salese)
+- 05340: [Crash/Freeze] (konamigq.c) cryptklr: can't get past the RAM/ROM Check (smf)
+- 05341: [Sound] (taito_f3.c) qtheater: No sound and very slow (Angelo Salese)
+- 05343: [DIP/Input] (hornet.c) gradius4: Game always starts with 1 Credit inserted (hap)
+- 05346: [Core] (ksys573.c) darkhleg, powyakex, konam80s and clones: Games say "Now Loading" and hardware fails (smf)
+- 05351: [Crash/Freeze] (berzerk.c) frenzy: Your guy and other sprites freeze random during game play (hap)
+- 05353: [Misc.] (at.c) at586 is able to boot from CDROM/ISO but not Hard Drive/CHD (smf)
+
+
 Source changes:
 ---------------
-- Fixed regression in 'Crypt Killer' [smf].
+- Fixed regression in Crypt Killer [smf].
 - Use virtual multiple inheritance to share command processing between SCSI & ATAPI instead of having a SCSI subdevice. This allows matsushita_cr589_device & gdrom_device to derive from atapi_cdrom_device [smf].
 - kungfum: Use 8-way joysticks [Phil Bennett].
 - web: Fixed hardcoded hostname and port in index.html [Firehawke].
@@ -112,29 +112,29 @@ Source changes:
 - SDL: work around incorrect warning generated by Clang [R. Belmont].
 - Better Clang support, necessary for Xcode 5.0 on OS X [R. Belmont].
 - m68000: The 68010 does not perform a read before write during a CLR instruction [Phil Bennett].
-- web: load and save states [Firehawke].
-- cps3: improved readme with more hardware detail [Guru].
+- web: Load and save states [Firehawke].
+- cps3: Improved readme with more hardware detail [Guru].
 - web: Fix web options reading from ini, improved load/save state UI [Firehawke].
 - 1943.c: Improved protection emulation [Dave].
-- web: more UI improvements [Firehawke].
+- web: More UI improvements [Firehawke].
 - web: Additional refactoring [Firehawke].
-- m68k: add FSCALE instruction used by e.g. SimCity 2000 [R. Belmont].
-- web: modernized JS usage, fixed several bugs [Firehawke].
+- m68k: Add FSCALE instruction used by e.g. SimCity 2000 [R. Belmont].
+- web: Modernized JS usage, fixed several bugs [Firehawke].
 - Added some more meter communication to System 5 and MPS, games should complain about less now [J. Wallace].
 - Deprecated MCFG_SCREEN_VBLANK_TIME() / MCFG_SCREEN_REFRESH_RATE() in [Angelo Salese] favor of MCFG_SCREEN_RAW_PARAMS() function for the following drivers: 
-  * twin16.c (except fround)
-  * yunsun16.c
-  * yunsung8.c
+  * twin16.c (except fround);
+  * yunsun16.c;
+  * yunsung8.c.
 - web: JS cleanup and fixed a few minor bugs [Firehawke].
 - thepit.c: Dumped the color BPROM for, and corrected colors in, Desert Dan [Zab].
 - SCSP: improved DMA and fixed triggering from SH-2 side [Angelo Salese].
 - ncr5380n: Better DRQ support, fixed arbitration-in-progress bit [R. Belmont].
 - SDL: Updated man pages [Cesare Falco].
-- Improvements to 'Dragon World 3' protection simulation, game seems mostly playable now although a DMA mode copying 68k code to RAM is still missing [iq_132].
+- Improvements to Dragon World 3 protection simulation, game seems mostly playable now although a DMA mode copying 68k code to RAM is still missing [iq_132].
 - Added a hack to get konami 80's loading games again. It misses out triggering dma for three sectors, the old code didn't care as it didn't check for how much had been requested. Why it does this and what should actually happen is currently unknown [smf].
 - wpc_an: Various additions, games now have full sound [Barry Rodewald]:
-  * Added WPC sound board and hooked up to WPC boards.
-  * Added shifter functions to WPC chip (fixes inputs).
+  * Added WPC sound board and hooked up to WPC boards;
+  * Added shifter functions to WPC chip (fixes inputs);
   * Added preliminary memory protection.
 - ptblank: Documented how the protection works [Guru, R. Belmont].
 - peplus.c: Huge update of information, clones and new games [BrianT].
@@ -144,11 +144,11 @@ Source changes:
 - Uses the sff8020 read toc legacy format field if the mmc format field is zero (MSCDEX uses the sff8020 format field instead of the mmc format field). Added support for session format for read toc, we only support 1 session so the data is mostly hard coded. Fixed read sub command when subq bit was not set [smf].
 - Fix for mametester 5328, switched guitar freaks 2 to a 32mb card. It only flashes 16mb to the flash card but it checks and erases 32mb. Consistent code formatting [smf].
 - pacland.c: Added Easter egg notes [cmonkey].
-- model3.c: Correct ROM names and revision levels for 'The Lost World' and 'Le Mans 24' [ShouTime].
+- model3.c: Correct ROM names and revision levels for The Lost World and Le Mans 24 [ShouTime].
 - lastduel.c: Various fixes [Phil Bennett]:
-  * Fixed madgear and clones background tilemap bitplane order.
-  * Fixed madgear and clones vertical refresh rate.
-  * Added buttons 2 and 3 to madgear and clones.
+  * Fixed madgear and clones background tilemap bitplane order;
+  * Fixed madgear and clones vertical refresh rate;
+  * Added buttons 2 and 3 to madgear and clones;
   * Fixed ledstorm2 sprite ROM order (though bad sprites remain due to incorrect ROMs).
 - Changed atapicdr packet identify to Virtual CDROM because not all images are compressed & the text no longer starts in the middle of the vendor name (software displaying the vendor name used to display "MAME Com"). Added a cdu76s device so that the inquiry for the generic ATAPI and SCSI cdrom drives can also be set to "Virtual CDROM". However none of the Konami GV games care, so I'm not sure which game required that response & that is the only Konami SCSI CD based system. The response is invalid according to the SCSI spec as the strings should be space filled and not null terminated & there are fields not filled in. So it's currently compiled in but not used [smf].
 - Added the ability to view PALCE16V8 jed files along with some regression test data for the PALCE16V8. The pal dumps for 'Twin Cobra 2' in the Taito F3 driver are now labeled as bad dumps because when viewed with jedutil the data is bad [Kevin Eshbach].
@@ -166,11 +166,9 @@ Source changes:
 - spc700ds.c: Fix disassembly of BRK opcode [Lord Nightmare, jwdonal].
 - Updated comments/rom names for Cosmic Monsters (version II)  [Andrew Welburn].
 - SDL: OS/2 build fixes [KO Myung-Hun].
-- 8080bw.c: Fix Space Invaders ROM names again, add more comment
- information [Andy Welburn, Lord Nightmare].
+- 8080bw.c: Fix Space Invaders ROM names again, add more comment information [Andy Welburn, Lord Nightmare].
 - Added i80130 OSP emulation [Curt Coder].
-- SDL: Add SDL_FRAMEWORK_PATH option to control where SDL is installed on OS X plus OS X 10.9 support. Started removing deprecated GTK+
- debugger [R. Belmont, Balrog].
+- SDL: Add SDL_FRAMEWORK_PATH option to control where SDL is installed on OS X plus OS X 10.9 support. Started removing deprecated GTK+ debugger [R. Belmont, Balrog].
 - SDL: Remove deprecated GTK+ debugger [R. Belmont].
 - Changed IDE read sector timing to be the same as read multiple instead of write sector [smf].
 - spc700ds.c: Fix disassembly of memory-to-memory and immediate-to-memory instructions [Alex Jackson].
@@ -193,13 +191,13 @@ Source changes:
  buttons exist [MASH].
 - tia.c: Per official documents and hardware results, the NTSC palette was updated to better simulate CRT display [Robert Tuccitto].
 - NeoGeo improvements [Alex Jackson]:
-  * Cleaned up large amounts of duplicated code between the MAME and MESS (AES/NeoCD) drivers
-  * Removed MVS-only ROMs and devices (SM1 ROM, SFIX ROM, upd4990a RTC, etc.) from AES/NeoCD
-  * Replaced legacy NVRAM in MVS and NeoCD with NVRAM devices.
-  * Correctly hooked up SM1 ROM bankswitching; the BIOS sound test works now.
-  * Corrected VRAM size.
-  * Sorted the Universe BIOS versions and unified them between MAME and MESS.
-  * Fixed kf10thep ROM loading and decryption which was a horrible hack (and not endian safe).
-  * Replaced svcplus protection hack ROM patch with a less invasive one, based on FBA.
-  * Started marking code and data that should be moved out into devices.
+  * Cleaned up large amounts of duplicated code between the MAME and MESS (AES/NeoCD) drivers;
+  * Removed MVS-only ROMs and devices (SM1 ROM, SFIX ROM, upd4990a RTC, etc.) from AES/NeoCD;
+  * Replaced legacy NVRAM in MVS and NeoCD with NVRAM devices;
+  * Correctly hooked up SM1 ROM bankswitching; the BIOS sound test works now;
+  * Corrected VRAM size;
+  * Sorted the Universe BIOS versions and unified them between MAME and MESS;
+  * Fixed kf10thep ROM loading and decryption which was a horrible hack (and not endian safe);
+  * Replaced svcplus protection hack ROM patch with a less invasive one, based on FBA;
+  * Started marking code and data that should be moved out into devices;
   * Various other code and comment cleanups.

@@ -18,12 +18,12 @@ Caveman Ninja (bootleg) [Dlfrsilver] (NOT WORKING)
 Pipi & Bibis / Whoopee!! (Z80 sound cpu, set 2) [Dlfrsilver]
 Mortal Kombat 4 v1.0 (not working) [xrodney, HobbyRoms, Patrick McCarron]
 
-New Games Marked as GAME_NOT_WORKING
-------------------------------------
+New Game Marked as GAME_NOT_WORKING
+-----------------------------------
 Happy 6-in-1 [XX]
 
 
-MAMETesters Bugs Fixed (11):
+MAME Testers Bugs Fixed (11):
 ----------------------------
 - 03583: [Core] Windows Debug: Stack crawl is not generated anymore (Firewave)
 - 03588: [Sound] mystston, myststono: Music is faster than original PCB (Kold666)
@@ -41,21 +41,9 @@ MAMETesters Bugs Fixed (11):
 Source changes:
 ---------------
 - Added driver data struct to [Fabio Priuli]:
-  * airbustr.c.
-  * cvs.c.
-  * 8080bw.c and mw8080bw.c.
-  * 88games.c, combatsc.c and rockrage.c.
-  * psikyo4.c and psikyosh.c.
+  * airbustr.c, cvs.c, 8080bw.c, mw8080bw.c, 88games.c, combatsc.c, rockrage.c, psikyo4.c and psikyosh.c.
 - Added driver data struct and save states to [Fabio Priuli]:
-  * djboy.c.
-  * toratora.c and sf.c.
-  * neogeo.c.
-  * cps1.c, cps2.c and fcrash.c.
-  * cbasebal.c, chinsan.c, mitchell.c and quasar.c.
-  * malzak.c.
-  * battlnts.c, bladestl.c, crshrace.c and contra.c.
-  * f1gp.c, fastlane.c, flkatck.c, hcastle.c, labyrunr.c and suprslam.c.
-  * psikyo.c and pgm.c.
+  * djboy.c, toratora.c, sf.c, neogeo.c, cps1.c, cps2.c, fcrash.c, cbasebal.c, chinsan.c, mitchell.c, quasar.c, malzak.c, battlnts.c, bladestl.c, crshrace.c, contra.c, f1gp.c, fastlane.c, flkatck.c, hcastle.c, labyrunr.c, suprslam.c, psikyo.c and pgm.c.
 - Removed old index-based DISCRETE_ADJUSTMENT and then renamed the newer DISCRETE_ADJUSTMENT_TAG to replace it. Updated all callers [Aaron Giles].
 - Removed all uses of input_port_by_index(), and removed the function [Fabio Priuli, Aaron Giles].
 - Added saves to 6522via.c. This fixes problems of gameplan.c and trvquest.c games with -autosave [Fabio Priuli].
@@ -65,20 +53,20 @@ Source changes:
 - Made MB14241 Shifter IC a device and moved its source to emu/machine. Updated mw8080bw.c and 8080bw.c accordingly. Also converted fgoal.c to use this implementation in place of its own version [Fabio Priuli].
 - Enhanced the UML opcodes for LOAD, LOADS, and STORE to support arbitrary scaling factors. Previously, specifying a size implied a scaling factor equal to the size (i.e., specifying DWORD meant the index was scaled by 4). This is still the default. However, now you can specify the scale explicitly for other cases. For example, you can specify DWORD_x1 to fetch a DWORD but don't scale the index at all, or BYTE_x8 to fetch a BYTE while scaling the index by 8. Updated all backends to make this work [Aaron Giles].
 - Konami devic-fication and improvements [Fabio Priuli]:
-  * Added device versions of all the Konami custom ICs currently emulated in machine/konamiic.c and video/konamiic.c.
-  * Updated combatsc.c, contra.c, crshrace.c, f1gp.c, fastlane.c, flkatck.c, hcastle.c, labyrunr.c and suprslam.c to use the new code.
-  * Moved k056800 sound device to emu/sound and removed the old code; updated gticlub.c, hornet.c, nwk-tr.c, ultrsprt.c and zr107.c to use this implementation.
-  * Updated 88games.c, battlnts.c, bladestl.c and rockrage.c to use new devices.
-  * Updated asterix.c and moo.c to use the new devices.
-  * Converted aliens.c, blockhl.c, crimfght.c and gbusters.c to use Konami video devices.
-  * Updated parodius.c, simpsons.c, thunderx.c, vendetta.c and xexex.c to use the new video devices.
-  * Updated overdriv.c to use the Konami video devices.
-  * Updated gradius3.c, mainevt.c & gijoe.c to use Konami video devices.
-  * Updated ajax.c, bottom9.c, chqflag.c, rollerg.c, spy.c, surpratk.c to use Konami video devices.
-  * Updated dbz.c, lethal.c, metro.c, rungun.c, tail2nos.c, tmnt.c, ultraman.c, wecleman.c, xmen.c & zr107.c to use Konami video devices instead of konamiic.h code.
-  * Updated bishi.c and djmain.c to use Konami video devices.
-  * Updated plygonet.c to use Konami video devices and input_port_write for eepromdev_read_bit.
-  * Updated asterix.c, gijoe.c, hornet.c, lethal.c, moo.c, overdriv.c, rungun.c, vendetta.c, xexex.c & xmen.c to use EEPROM device.
+  * Added device versions of all the Konami custom ICs currently emulated in machine/konamiic.c and video/konamiic.c;
+  * Updated combatsc.c, contra.c, crshrace.c, f1gp.c, fastlane.c, flkatck.c, hcastle.c, labyrunr.c and suprslam.c to use the new code;
+  * Moved k056800 sound device to emu/sound and removed the old code; updated gticlub.c, hornet.c, nwk-tr.c, ultrsprt.c and zr107.c to use this implementation;
+  * Updated 88games.c, battlnts.c, bladestl.c and rockrage.c to use new devices;
+  * Updated asterix.c and moo.c to use the new devices;
+  * Converted aliens.c, blockhl.c, crimfght.c and gbusters.c to use Konami video devices;
+  * Updated parodius.c, simpsons.c, thunderx.c, vendetta.c and xexex.c to use the new video devices;
+  * Updated overdriv.c to use the Konami video devices;
+  * Updated gradius3.c, mainevt.c & gijoe.c to use Konami video devices;
+  * Updated ajax.c, bottom9.c, chqflag.c, rollerg.c, spy.c, surpratk.c to use Konami video devices;
+  * Updated dbz.c, lethal.c, metro.c, rungun.c, tail2nos.c, tmnt.c, ultraman.c, wecleman.c, xmen.c & zr107.c to use Konami video devices instead of konamiic.h code;
+  * Updated bishi.c and djmain.c to use Konami video devices;
+  * Updated plygonet.c to use Konami video devices and input_port_write for eepromdev_read_bit;
+  * Updated asterix.c, gijoe.c, hornet.c, lethal.c, moo.c, overdriv.c, rungun.c, vendetta.c, xexex.c & xmen.c to use EEPROM device;
   * Updated konamigx.c, tmnt.c and mystwarr.c to use EEPROM device.
 - Fixed tilemaps so they can be initialized at device start time [Aaron Giles].
 - Added redumped roms to coolridr [David Haywood].
@@ -103,10 +91,10 @@ Source changes:
 - Decoded Cross Bingo proms [Angelo Salese].
 - hexa.c: Added DIP LOCATIONS as well as assigned XTAL for the clock speeds, using those from Arkanoid, since the boards are nearly identical in many aspects [Tafoid].
 - RSP recompiler improvements/optimizations [Harmony]:
-  * Split SATURATE_ACCUM into a signed and unsigned version to reduce tack usage.
-  * Corrected an issue with the 0h variants of VMRG, VAND, VNAND, VOR, VNOR, VXOR and VNXOR.
-  * Slightly optimized unaligned reads and writes.
-  * Optimized unaligned dword reads.
+  * Split SATURATE_ACCUM into a signed and unsigned version to reduce tack usage;
+  * Corrected an issue with the 0h variants of VMRG, VAND, VNAND, VOR, VNOR, VXOR and VNXOR;
+  * Slightly optimized unaligned reads and writes;
+  * Optimized unaligned dword reads;
   * Corrected an issue where badly-written RSP programs could jump to invalid addresses.
 - Added new profiler bucket for DRC recompilation [Aaron Giles].
 - luckgrln: Implemented CRT Controller hook-up [Angelo Salese].
@@ -115,14 +103,14 @@ Source changes:
 - Added new option "numprocessors" (see windows.txt for an explanation) [Couriersud].
 - Optimized N64 RDP renderer by using function pointers to function variants that eliminate costly branches [Harmony].
 - Minor drc improvments [Aaron Giles]:
-  * Simplified RSP's misaligned memory accesses.
-  * Removed now-unnecessary shifts from direct memory accesses in mips3/powerpc drcs.
-  * Optimized AND with 0xff/0xffff/0xffffffff cases for x86/x64.
+  * Simplified RSP's misaligned memory accesses;
+  * Removed now-unnecessary shifts from direct memory accesses in mips3/powerpc drcs;
+  * Optimized AND with 0xff/0xffff/0xffffffff cases for x86/x64;
   * Added rudimentary memory/register tracking in x86 backend to remove redundant loads.
 - cb2001 improvements [robiza]:
- - Added ay8910 and 8255ppi devices.
- - Added some info about relation between cmast91 and cb2001.
- - Added many opcodes.
+  * Added ay8910 and 8255ppi devices;
+  * Added some info about relation between cmast91 and cb2001;
+  * Added many opcodes.
 - Fixed sprite-tilemap priorities in Super Slams [Angelo Salese].
 - Worked around protection in sranger, srangerw and srangerb [Angelo Salese].
 - Converted 7474, 74148, and 74153 TTL implementations to devices [Aaron Giles].
@@ -149,7 +137,7 @@ Source changes:
 - Got rid of explicit resource tracking for state saving. Now we just use the auto_ allocators, since registration is restricted to initialization [Aaron Giles].
 - Moved machine->gfx initialization out of the video module and into drawgfx. We now call this before devices are initialized, so that devices can dynamically append to the machine->gfx as needed [Aaron Giles].
 - i386 improvements [Barry Rodewald]:
-  * Minimal implementation of the LSL protected mode instruction.
+  * Minimal implementation of the LSL protected mode instruction;
   * Fixed the REP instruction when used with a segment prefix.
 - Updated readme for Race Drivin' Compact [Guru].
 - Fixed a couple of edge case parsing bugs in srcclean.c [Atari Ace].

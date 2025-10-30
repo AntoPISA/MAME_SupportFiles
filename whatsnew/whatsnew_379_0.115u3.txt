@@ -18,7 +18,7 @@ Flicky (64k Version, System 1, 315-5051, set 2) [Corrado Tomaselli]
 
 MAME Testers Bug Fixed (1):
 ---------------------------
-- connect4_0115u1ora [Luigi30]
+- connect4_0115u1ora (Luigi30)
 
 
 Source changes:
@@ -28,7 +28,7 @@ Source changes:
 - Fixed Space Firebird so that the sprites are opaque with respect to each other and bullets, but transparent with respect to the star field [Zsolt Vasvari].
 - Fixed subtle behavior in handling of PIA port A. This allows for the removal of hacks in the Qix driver and the Williams driver [Zsolt Vasvari].
 - Cleaned up the tilemap get_info callbacks [Atari Ace]:
-  * Regularized and clean up the existing callbacks.
+  * Regularized and clean up the existing callbacks;
   * Changed some callbacks to use int tile_index as the parameter so that all callbacks use consistent naming;
   * Folded some direct uses of tile_info.flags into calls to SET_TILE_INFO();
   * Changed the Konami drivers to manipulate the tile_info global only within the tile_get_info callbacks;

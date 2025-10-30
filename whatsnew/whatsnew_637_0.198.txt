@@ -196,7 +196,7 @@ Portuguese (Brazil) [Wellington Uemura]
 Spanish [A. Viloria]
 
 
-MAMETesters Bugs Fixed (14):
+MAME Testers Bugs Fixed (14):
 ----------------------------
 - 04539: [Misc.] (stv.cpp) dnmtdeka, diehard: Illegal Sprite Mode - Contact MAMEDEV (Angelo Salese)
 - 05484: [Crash/Freeze] (jpmsys5sw.cpp) Various jpmsys5sw.c sets: [debug] Assert in Debug (Vas Crabb)
@@ -345,11 +345,11 @@ Source changes:
 - poly.cpp: Use original encrypted ROMs, and decrypt [Nigel Barnes]:
   * Implemented banking and system/user mode switching.
   * Added PolyBASIC 3.0, 3.1, and 3.4.
-- apple2: Added support for WOZ image format [O. Galibert].
-- emumem: Renamed direct_read_handler to memory_access_cache. Now templated on more information (data width, endianness) and capable of oversize/unaligned accesses [O. Galibert].
-- debugger: Simplified now-obsolete and buggy memory access code [O. Galibert].
-- cubeqst: Fixed cache endianness [O. Galibert].
-- sound: Don’t try to generate a negative number of samples if stream->update() goes back in time [O. Galibert].
+- apple2: Added support for WOZ image format [Olivier Galibert].
+- emumem: Renamed direct_read_handler to memory_access_cache. Now templated on more information (data width, endianness) and capable of oversize/unaligned accesses [Olivier Galibert].
+- debugger: Simplified now-obsolete and buggy memory access code [Olivier Galibert].
+- cubeqst: Fixed cache endianness [Olivier Galibert].
+- sound: Don’t try to generate a negative number of samples if stream->update() goes back in time [Olivier Galibert].
 - floppy: Increased robustness and improved bitstream handling [John Keoni Morris, Peter Ferrie, O. Galibert].
 - Added Brooktree Bt45x RAMDAC devices – Bt457 and Bt458 are used by InterPro graphics boards [Patrick Mackinlay].
 - tms32031: Added tms320c30 variant and basic hold/holda support [Patrick Mackinlay].

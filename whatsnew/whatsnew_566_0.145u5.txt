@@ -1,4 +1,4 @@
-﻿0.145u5 2012/03/25 [#566 - Miodrag Milanovic]
+﻿0.145u5 2012/03/25 [#566 - Miodrag Milanović]
 ---------------------------------------------
 
 
@@ -85,27 +85,27 @@ Witch Strike (Export, 6T/12T ver 1.01B) [Roberto Fresca, Team Europe, Marcus Jen
 Wonder Boy (US bootleg) [ANY, The Dumping Union]
 
 
-MAMETesters Bugs Fixed (3):
----------------------------
-- 04303: [Crash/Freeze] nost, nostk: Intermittent crash when the sun starts rising during demonstration (David Haywood).
-- 04712: [Graphics] fncywld, pangpang: characters offset is wrong (David Haywood).
-- 04725: [Compiling] unidasm does not link in 0.145u4 (mingw64-w64 or w32, Intel, Windows 7 x64) (Olivier Galibert).
+MAME Testers Bugs Fixed (3):
+----------------------------
+- 04303: [Crash/Freeze] nost, nostk: Intermittent crash when the sun starts rising during demonstration (David Haywood)
+- 04712: [Graphics] fncywld, pangpang: characters offset is wrong (David Haywood)
+- 04725: [Compiling] unidasm does not link in 0.145u4 (mingw64-w64 or w32, Intel, Windows 7 x64) (Olivier Galibert)
 
 
 Source changes:
 ---------------
 - 6526cia.c: The PC output will now go low for 1 cycle following a read/write of port B. (instead of being toggled immediately) [Curt Coder].
 - Added some decryption to the titles in igs_m027.c [iq132].
-- Added Vblank bit and scanline register to 'Othello Derby' [Angelo Salese].
+- Added Vblank bit and scanline register to Othello Derby [Angelo Salese].
 - ARM7: for v5 and later, Thumb POP can return to ARM mode [R. Belmont].
 - CPS-1 update [Team CPS-1]:
-  * Added '1941: Counter Attack (World 900227)', now new parent
-  * Fixed some labels in various sets to match real pcbs, added some documentation notes and confirmed pcb infos.
+  * Added 1941: Counter Attack (World 900227), now new parent;
+  * Fixed some labels in various sets to match real PCBs, added some documentation notes and confirmed PCB infos;
   * Reordered sf2cejx sets.
 - Extensive documentation improvements and clarification of the Super Famicom Box hardware [Y~K].
-- Fixed DIP Switches and Inputs (after verification of the M6502 code) to progolf.c driver [stephh].
-- Fixed DIP Switches and Inputs (after verification of the M6809 code) to chanbara [stephh].
-- Fixed DIP Switches and Inputs (after verification of the M6809 code) to sidepckt.c driver [stephh].
+- Fixed DIP switches and Inputs (after verification of the M6502 code) to progolf.c driver [stephh].
+- Fixed DIP switches and Inputs (after verification of the M6809 code) to chanbara [stephh].
+- Fixed DIP switches and Inputs (after verification of the M6809 code) to sidepckt.c driver [stephh].
 - Further separation, sorting, and addition of alternate revisions as clones (over 300) for the bfm_sc2.c driver  [James Wallace].
 - galdrvr.c: Fixed missing sprites and bullets in fantastc [David Haywood, hap].
 - m68k: allow FPU instructions on '020 (it's possible to have an external 68881/882) and fix missing break; in the FPU [Hans Ostermeyer].
@@ -120,5 +120,5 @@ Source changes:
 - Refactoring and clean-ups of the PGM protection and splitted it across separate files [David Haywood].
 - Resolved and cleaned-up Seibu COP palette brightness table [Andreas Naive].
 - SoftFloat: Fixed sin/cos/tan to return correct results [Hans Ostermeyer].
-- unidasm: Remove the tms57002 until modern cores are handled sanely [O. Galibert].
+- unidasm: Remove the tms57002 until modern cores are handled sanely [Olivier Galibert].
 - Update SDL man pages. chdman has formatting glitches but at least matches the binary we ship [wallyweek, R. Belmont].

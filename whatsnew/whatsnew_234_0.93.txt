@@ -32,8 +32,8 @@ Notes:
 (2): Guns not hooked up.
 
 
-Core changes:
--------------
+Source changes:
+---------------
 - common.c:
   * Changed auto_malloc() behavior so that a failure is absolute (calls osd_die); you can now assume that auto_malloc will always succeed and will never return NULL;
   * Removed all sample loading code; this is now in sound/samples.c.

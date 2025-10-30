@@ -220,7 +220,7 @@ tvgogo: 4-in-1 (Flashcard Fishing, Break a Brick, Balloon Juggling, Penguin Maze
 vsmile_cart: Disney/Pixar Up (Spa, Rev. 022), Gimnasio Interactivo V.Smile (Spa) [TeamEurope, Diego Bartolome, ClawGrip]
 
 
-MAMETesters Bugs Fixed (14):
+MAME Testers Bugs Fixed (14):
 ----------------------------
 - 03122: [DIP/Input] (ltcasino.cpp) mv4in1, ltcasino, ltcasinn: Service Mode DIP switch does not work (Dirk Best)
 - 05291: [Sound] (coco3.cpp) All drivers in coco.c: ORC90 emulation has no sound output (Nigel Barnes)
@@ -402,13 +402,13 @@ Source changes:
   * Fixed TI FDC in Geneve losing SIDSEL signal when no drive is selected, and removed redundant variables;
   * Fixed 99/4p regression where wrong CRU addresses are used when accessing peribox/evpc.
 - coco: Fixed loading Orchestra-90, RS-232 Program Pak, and Modem Pak from software list (fixes MT05291) [Nigel Barnes].
-- m68000: Made CPU space an address space and made vectored interrupts use it. Also made it possible to disable the interrupt priority encoder behaviour in the CPU core [O. Galibert].
-- emumem: Removed obsolete alignement limit [O. Galibert].
-- emumem_mud: Corrected start/end for big endian spaces [O. Galibert].
-- pic8259.cpp: Suppress side effects of debugger reads [O. Galibert].
-- Added skeleton Yamaha DSPV and SWP20 devices [O. Galibert].
-- ymmu100.cpp: Extracted LCD as a separate device [O. Galibert].
-- Annotated all uses of set_input_line_vector with CPU type [O. Galibert].
+- m68000: Made CPU space an address space and made vectored interrupts use it. Also made it possible to disable the interrupt priority encoder behaviour in the CPU core [Olivier Galibert].
+- emumem: Removed obsolete alignement limit [Olivier Galibert].
+- emumem_mud: Corrected start/end for big endian spaces [Olivier Galibert].
+- pic8259.cpp: Suppress side effects of debugger reads [Olivier Galibert].
+- Added skeleton Yamaha DSPV and SWP20 devices [Olivier Galibert].
+- ymmu100.cpp: Extracted LCD as a separate device [Olivier Galibert].
+- Annotated all uses of set_input_line_vector with CPU type [Olivier Galibert].
 - pcat101: Connected key matrix and ports [Patrick Mackinlay].
 - 3c505: Added low-level emulation [Patrick Mackinlay, Neko May]
 - m68705: Added more HMOS variants [Patrick Mackinlay].

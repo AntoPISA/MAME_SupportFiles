@@ -380,7 +380,7 @@ vtech_storio_cart:
   Scooby-Doo!-Scooby-Doo y la momia (Spain), Spongebob Schwammkopf - Ein Schwamm will nach oben (Germany) [TeamEurope]
 
 
-MAMETesters Bugs Fixed (9):
+MAME Testers Bugs Fixed (9):
 ---------------------------
 - 06300: [Color/Palette] (galaxian.cpp) eagle, eagle2: Games need wiring harness that swaps channels (Vas Crabb)
 - 07015: [Gameplay] (model1.cpp) vr, vformula: Undetected communication board error (Hydreigon)
@@ -511,10 +511,10 @@ Source changes:
   * Added Slogger Plus 2 Expansion, Acorn Tube Interface, and P.R.E.S. Advanced Plus 5 cartridge devices;
   * Used derived 16MHz clock on expansion bus and cartridge slots;
   * Removed MCFG macros and added devcb3 in expansion and cartridge devices.
-- specpdq: Fixed blitting operations and improved boundaries (still some pattern offset issues) [O. Galibert].
-- nscsi_cd.cpp: Implemented the read TOC command and fixed inquiry [O. Galibert].
-- sh2: Fixed interpreter for cps3 [O. Galibert].
-- nscsi_cd.cpp, nscsi_hd.cpp: Implemented the receive diagnostics results and send diagnostics commands [O. Galibert].
+- specpdq: Fixed blitting operations and improved boundaries (still some pattern offset issues) [Olivier Galibert].
+- nscsi_cd.cpp: Implemented the read TOC command and fixed inquiry [Olivier Galibert].
+- sh2: Fixed interpreter for cps3 [Olivier Galibert].
+- nscsi_cd.cpp, nscsi_hd.cpp: Implemented the receive diagnostics results and send diagnostics commands [Olivier Galibert].
 - mips.cpp: Allowed rx2030 to boot RISC/os from a pre-installed hard disk image (with FPU disabled) [Patrick Mackinlay].
 - ims_cvc: Implemented basic graphics output [Patrick Mackinlay].
 - am9517a: Added EISA variant [Patrick Mackinlay].

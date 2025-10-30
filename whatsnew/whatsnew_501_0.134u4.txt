@@ -35,7 +35,7 @@ F355 Challenge 2 (Twin) [ANY, The Dumping Union]
 Go! Go! Connie chan Jaka Jaka Janken [Mariusz Wojcieszek, Dumping Union]
 
 
-MAMETesters Bug Fixed (1):
+MAME Testers Bug Fixed (1):
 ----------------------
 - 03475: [Crash/Freeze] exprraid: Game freezes after insert coins while playing (Angelo Salese)
 
@@ -43,8 +43,8 @@ MAMETesters Bug Fixed (1):
 Source changes:
 ---------------
 - Discrete sound improvements [Couriersud]:
-  * DSS_INVERTER_OSC optimizations.
-  * OSD_PROFILING is now an environment variable. No more recompiling to turn profiling on.
+  * DSS_INVERTER_OSC optimizations;
+  * OSD_PROFILING is now an environment variable. No more recompiling to turn profiling on;
   * Added two asserts to task processing.
 - Updated beaminv.c driver, in attempt to fix MT bug 03473 [stephh].
 - Draw Poker Hi-Lo: Added discrete sound [Derrick Renaud].
@@ -53,20 +53,20 @@ Source changes:
 - Fixed Sega System 16 ROM names according to real machine, and corrected game version description for Alien Syndrome and SDI [Team Japump!!!].
 - Fixed TRIG3 register handling in GTIA for Atari XL/XE [Mariusz Wojcieszek].
 - Noraut/DPHL driver improvements [Roberto Fresca]:
-  * Added Draw Poker Hi-Lo (japanese), based on 8080A CPU.
-  * Merged the gtipoker memory map and machine driver with dphl.
-  * Created a base machine driver and then derivatives by hardware.
-  * Splitted the regular RAM and NVRAM systems.
-  * Added 'Hi-Lo Double Up Joker Poker' from SMS Manufacturing.
-  * Added smshilo hardware details and PCB layout.
+  * Added Draw Poker Hi-Lo (japanese), based on 8080A CPU;
+  * Merged the gtipoker memory map and machine driver with dphl;
+  * Created a base machine driver and then derivatives by hardware;
+  * Splitted the regular RAM and NVRAM systems;
+  * Added Hi-Lo Double Up Joker Poker from SMS Manufacturing;
+  * Added smshilo hardware details and PCB layout;
   * Added smshilo discrete sound circuitry scheme/documentation.
 - i386: Implemented SLDT & STR opcodes [Angelo Salese].
 - scsihd updates [R. Belmont]:
-  * Fixed parameter interpretation for READ(10) and READ(12).
+  * Fixed parameter interpretation for READ(10) and READ(12);
   * Added WRITE(10).
 - Naomi updates [R. Belmont]:
-  * Hackish support for 8888 tiles (Shootout Pool displays something).
-  * Increased number of JVS analog channels for driving games.
+  * Hackish support for 8888 tiles (Shootout Pool displays something);
+  * Increased number of JVS analog channels for driving games;
   * Protection data added for Crazy Taxi, Jambo! Safari, and Virtua Tennis 2 [Deunan Knute, ANY].
 - Added PCB layouts of Bingo Roll / Bell Star (4 sets) [Team Europe].
 - Added Xtal location and values to Bingo Roll / Bell Star hardware/PCB layouts [Roberto Fresca].
@@ -99,13 +99,13 @@ Source changes:
 - Added helper macro for CDP1869 [Curt Coder].
 - Naomi: Add revision G export BIOS [R. Belmont].
 - Goldstar driver improvements [Roberto Fresca]:
-  * Added new game: New Lucky 8 Lines / New Super 8 Lines.
-  * Inputs and DIP switches from the scratch.
-  * Added Hopper service button to all New Lucky 8 Lines sets. 
-  * Added Paytable settings DIP switch to all New Lucky 8 Lines sets. 
-  * Minor clean-ups.
-  * Created a new machine driver for wcat3.
-  * Mapped the missing d000-efff ROM space range.
+  * Added new game: New Lucky 8 Lines / New Super 8 Lines;
+  * Inputs and DIP switches from the scratch;
+  * Added Hopper service button to all New Lucky 8 Lines sets;
+  * Added Paytable settings DIP switch to all New Lucky 8 Lines sets; 
+  * Minor clean-ups;
+  * Created a new machine driver for wcat3;
+  * Mapped the missing d000-efff ROM space range;
   * Added PCB & DIP switches banks layouts for ns8lines.
 - Changed CPU clock display in the UI to display multiplied/divided clocks instead of raw clocks [Dirk Best].
 - Changed device callback system to look up devices owned by the same parent if a child device references another device [Dirk Best].

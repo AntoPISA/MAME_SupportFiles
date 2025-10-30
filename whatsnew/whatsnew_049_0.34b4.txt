@@ -115,14 +115,14 @@ This beta contains a major update to the NeoGeo driver. It is still far fromerfe
 - Many graphics improvements:
   * 'Missing tiles' in games such as Puzzle Bobble are fixed.
   * Scaling is improved, but still not perfect. Full screen zooms tend to break (eg, Thrash Rally, Art of Fighting).
-  * 'Japan/Europe/USA' territory selection in dipswitch menu.
+  * 'Japan/Europe/USA' territory selection in DIP switch menu.
   * Start & coin key positions are moved to their 'standard' MAME positions
   * Coin inputs work, freeplay is no longer the default.
-  * Soft dipswitches are fully emulated and saved per game, the files are saved to the hiscore directory for now.
+  * Soft DIP switches are fully emulated and saved per game, the files are saved to the hiscore directory for now.
   * Custom drawgfx routine in place. This is slower than the previous MAME release but allows the graphics to be drawn from their native data. This allows:
   * MEMORY REQUIREMENTS APPROXIMATELY HALVED! And also quicker loading time.
   * If you experience a 'black screen' for a few seconds after loading it is because the 'pen usage' arrays are being calculated. MAME NeoGeo uses a compressed palette system to give the full NeoGeo 12 bit colour on an 8 bit display. (This is nothing new, almost every other MAME driver for high colour games works in the same way, by choosing only the colours that are actually displayed at any one time). Although this gives better quality it actually takes around 10-15% of the processor time each frame.
-  * There is no 'black screen' at the end of each games demo. All games now behave as per the arcade version and cycle to the 'NeoGeo logo' screen. Notes on soft dipswitches: You can access these from pressing F2 (self test) or setting the test mode dipswitch and resetting the virtual machine. Both soft dips and cabinet settings are saved for each game. If, for some reason, you experience strange gameplay (NOT graphics glitches), the soft dips may have become corrupt (this _is_ still a beta release!), to clear them you can wipe the file in the hiscore directory for the game OR go into the hardware test and select the 'clear backup ram' option (recommended).
+  * There is no 'black screen' at the end of each games demo. All games now behave as per the arcade version and cycle to the 'NeoGeo logo' screen. Notes on soft DIP switches: You can access these from pressing F2 (self test) or setting the test mode DIP switch and resetting the virtual machine. Both soft dips and cabinet settings are saved for each game. If, for some reason, you experience strange gameplay (NOT graphics glitches), the soft dips may have become corrupt (this _is_ still a beta release!), to clear them you can wipe the file in the hiscore directory for the game OR go into the hardware test and select the 'clear backup ram' option (recommended).
   * Emulation of soft dips fixed many problems games had in previous versions, for example, the game timers being set low in games such as KOTM and Art of Fighting are fixed. Almost all 'gameplay' issues are fixed by this.
   * Sidenote: The 'blood bios' is not needed, nor supported. All games affected by the blood bios actually have the 'blood' option in their soft dip options. It can be turned on & off there without having to use a special bios. In fact any non-standard bios may not work at this point.
   * Due to the much decreased memory requirements large games such as Karnov's Revenge now work.

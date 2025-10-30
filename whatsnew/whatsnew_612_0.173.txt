@@ -2,7 +2,7 @@
 -------------------------------------------
 
 
-MAMETesters Bugs Fixed
+MAME Testers Bugs Fixed
 ----------------------
 - 01792: [DIP/Input] (subsino2.c) bishjan: Keyboard mode does not work (Luca Elia).
 - 04919: [Flip Screen/Cocktail] (dynduke.c) All sets in dynduke.c: Most of background missing on Flip Screen (Osso).
@@ -117,7 +117,7 @@ Source changes:
 - UML: Added FCOPYI and ICOPYF instructions to pass raw data between integer and floating-point registers [Ville Linde].
 - mips3: Fix behavior for 32/64 bit mode floating point register aliasing [Happy].
 - Magic10 driver: Added technical notes, game status, defined clocks, fixed inaccurate notes, and some driver cleanups [Roberto Fresca].
-- screen: SVG rendering from inside the ROM [O. Galibert].
+- screen: SVG rendering from inside the ROM [Olivier Galibert].
 - Updated Portuguese language (Brazil) [Ashura-X].
 - luaengine: add plugin options menu [Carl].
 - Major Havoc: Updated Gamma CPU address decoding/mirroring from the schematic [Lord Nightmare].
@@ -159,7 +159,7 @@ Source changes:
 - am9517: Add clone with the non-standard mask behavior of the PC Transporter ASIC [Carl, R. Belmont].
 - apple2: Updated PC Transporter to use alternate DMAC emulation & fixed V30 clock [Peter Ferrie, R. Belmont].
 - apple2: PC Transporter: halt V30 properly on startup, XT has 8-bit ISA, improved 6502 CGA framebuffer writes [R. Belmont].
-- screen: Fix alpha handling, cdkong looks good now [O. Galibert].
+- screen: Fix alpha handling, cdkong looks good now [Olivier Galibert].
 - bgfx: Add data-driven render target clearing [Ryan Holtz].
 - Significant speed improvement [Couriersud]:
   * Added a new solver using compressed row format.
@@ -185,7 +185,7 @@ Source changes:
   * Separated curvature parameter into distortion, cubic_distortion and distort_corner.
  * distortion and cubic_distortion can be negative, to compensate each other.
   * distort_corner is intependent from the image distortion.
-- neogeo: Reworked inputs to work through the slot device interface. you can now configure the 15-pin ports available in the multicart driver (neogeo) with the -crtl1 and -ctrl2 options. Thus, if you want to launch janshin in neogeo with the mahjong control panel you shall now prescribe -edge "" -ctrl1 mahjong and set accordingly the dipswitch (the first option disables inputs from the edge connector). When you run single game drivers (e.g. mslug or kof94, etc.), instead, a unique controller is available and cannot be modified. In particular, the janshin driver already comes pre-configured in the proper way [Fabio Priuli].
+- neogeo: Reworked inputs to work through the slot device interface. you can now configure the 15-pin ports available in the multicart driver (neogeo) with the -crtl1 and -ctrl2 options. Thus, if you want to launch janshin in neogeo with the mahjong control panel you shall now prescribe -edge "" -ctrl1 mahjong and set accordingly the DIP switch (the first option disables inputs from the edge connector). When you run single game drivers (e.g. mslug or kof94, etc.), instead, a unique controller is available and cannot be modified. In particular, the janshin driver already comes pre-configured in the proper way [Fabio Priuli].
 - Refactor OSD window. Unified renderer in osd_window as std::unique_ptr Made windows all std::shared_ptr<window_type> Made window lists std::list<std::shared_ptr<window_type>> Updated OSD SDL worker_param to not use malloc (not compatible with smart pointers) Made renderer pointer to window a weak reference. May not be available during destruction of the window [Brad Hughes].
 - Alta Tensione: Added technical notes, game status, and patched the boot protection [Roberto Fresca].
 - Split UI and frontend part from core [Miodrag Milanovic].

@@ -2,19 +2,19 @@
 ---------------------------------------
 
 
-New games added or promoted from NOT_WORKING status
+New Games Added or Promoted from NOT_WORKING Status
 ---------------------------------------------------
 Pit Boss Megatouch II [Mariusz Wojcieszek, f205v, Smitdogg, The Dumping Union]
 Royal Card (TAB original) [Roberto Fresca]
 Janputer Special [gamerfan, ranger_lennier, Smitdogg, The Dumping Union]
 Bygone [Cananas, Mr. Do, S. Brown, J. Bijl,ranger_lennier, F. Xerri, Gor, Kevin Eshbach, Smitdogg, Tormod, Guru, Tomasz Slanina, The Dumping Union]
 
-New clones added
+New Clones Added
 ----------------
 Mega Double Poker (conversion kit, set 2) [Roberto Fresca]
 Mahjong Neruton Haikujiradan (Japan, Rev. A?) [Smitdogg, The Dumping Union]
 
-New games marked as GAME_NOT_WORKING
+New Games Marked as GAME_NOT_WORKING
 ------------------------------------
 Odeon Twister 2 [XoreX, Mariusz Wojcieszek]
 The King of Fighters XI (Cah4e3) [rbelmont]
@@ -22,8 +22,8 @@ Shooting Star [Tomasz Slanina]
 Zero Gunner 2 [The Dumping Union]
 
 
-MAMETesters Bugs Fixed (2):
----------------------------
+MAME Testers Bugs Fixed (2):
+----------------------------
 - 04096: [DIP/Input] sjryuko: Most inputs do not work (Angelo Salese)
 - 02561: [Interface] Ability to choose a different name for the UI font (Aaron Giles)
 
@@ -48,28 +48,28 @@ Source changes:
 - Discrete Updates: Removed old DISCRETE_74LS624 code and replaced it with new 74LS629 based code. Updated Mario to use new DISCRETE_74LS624 and DISCRETE_XTIME_logic modules [Derrick Renaud].
 - C++-ified the cheat engine [Aaron Giles].
 - Naomi updates:
-  * Redumped Kick 4 Cash to fix bad dumps [f205v] 
-  * Completed dump of Neo Geo Battle Coliseum [Guru]
+  * Redumped Kick 4 Cash to fix bad dumps [f205v] .
+  * Completed dump of Neo Geo Battle Coliseum [Guru].
 - i286.c: Moved call of i80286_urinit to CPU_INIT. Fixed display of PC in the debugger [Wilbert Pol].
 - M6805: Add extremely preliminary 68HC05EG support [R. Belmont].
 - i80186/i80286: Fixed bound instruction restart when prefixed with a segment [Wilbert Pol].
 - i286.c: Partially implemented protected mode. Fixed verw, verr, lar, lsl, and arpl instructions [Wilbert Pol].
 - Atari Cops'n Robbers updates [Derrick Renaud]:
-  * Converted controls to Positional type. 
-  * Started Discrete sounds. (Motor 2 & 3, Crash sounds implemented).
-  * Added Motor 0 & 1, and Zings sounds. Zings sound not hooked up until address for Fires & Zings is found.
+  * Converted controls to Positional type;
+  * Started Discrete sounds (Motor 2 & 3, Crash sounds implemented);
+  * Added Motor 0 & 1, and Zings sounds. Zings sound not hooked up until address for Fires & Zings is found;
 - Optimized speed of DISCRETE_DAC_R1 [Derrick Renaud]
 - Converted the expression engine to C++, did the usual cleanup [Aaron Giles].
-- Neo Geo changes: [Johnboy] 
-  * maglord/maglordh - Mixed up crc's, fixed.
-  * flipshot - Added correct p1.
-  * kotm2 - Tagged MVS AND AES VERSION.
-  * miexchng - Added correct c3/c4.
-  * Updated game PCB info.
+- Neo Geo changes [Johnboy]:
+  * maglord/maglordh: Mixed up crc's, fixed;
+  * flipshot: Added correct p1;
+  * kotm2: Tagged MVS AND AES VERSION;
+  * miexchng: Added correct c3/c4;
+  * Updated game PCB info;
   * Continued to document mask ROM types.
 - Fixed crash in cubocd32/akiko [Mariusz Wojcieszek].
 - Atari Cops'n Robbers Updates [Derrick Renaud].
 - Fixed operation of DISCRETE_COUNTER_7492 [Derrick Renaud].
 - kofxi: Redumped mask ROMs due to error in TSOP70 adaptor [Cah4e3].
 - Added UTF-8 constants for cursor key arrows, and accented characters on the Swedish/Finnish keyboard layout [Curt Coder].
-- Removed deprecat.h usage and rewritten irq routines in DJ Boy [Angelo Salese].
+- Removed deprecat.h usage and rewritten IRQ routines in DJ Boy [Angelo Salese].

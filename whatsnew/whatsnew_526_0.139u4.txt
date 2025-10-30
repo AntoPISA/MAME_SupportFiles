@@ -46,8 +46,8 @@ Virtua Striker 3 (rev. B) [ANY]
 Wave Runner GP [Cah4e3, R. Belmont]
 
 
-MAMETesters Bugs Fixed (3):
----------------------------
+MAME Testers Bugs Fixed (3):
+----------------------------
 - 04060: [Crash/Freeze] All sets in taitogn.c: NVRAM written incorrectly - games never start (Aaron Giles)
 - 04063: [Gameplay] All sets in solomon.c: All characters in the game are missing (player and enemies) (hap)
 - 04068: [DIP/Input] viofight: Missing Player 2 button 3 (Tafoid)
@@ -57,7 +57,7 @@ Source changes:
 ---------------
 - Converted amiga drivers to use driver_devices. Merged common code between legacy Amiga and AGA video systems [Atari Ace].
 - Death to more NVRAM_HANDLERS [Aaron Giles].
-- cdda - Added a per-channel volume setting function [Barry Rodewald].
+- cdda: Added a per-channel volume setting function [Barry Rodewald].
 - m68k: Add more conditionals and FGETEXP instruction [R. Belmont].
 - Converted x2212 to a modern device. Changed x2212 device to return unmapped bits for the upper 4 bits. Added e2prom address space to x2212 so that the latched contents can be viewed. Updated starwars and firefox. Hooked up x2212 in foodf [Aaron Giles].
 - Changed ccastles and cloud9 to use the x2212 instead of the hacked-up fake version they had [Aaron Giles].
@@ -77,32 +77,32 @@ Source changes:
 - 680x0: '030 MMU now emulates translation cache; fixed misinterpreted MMU opcodes [R. Belmont].
 - Megadrive: changed way the z80 window into 68k space works so that it automatically can handle things like the 32x [David Haywood].
 - Improvements to Piccolo Poker 100 [Roberto Fresca]:
-  * Added a workaround to get the game booting.
-  * Created inputs from the scratch.
-  * Promoted to "working".
+  * Added a workaround to get the game booting;
+  * Created inputs from the scratch;
+  * Promoted to "working";
   * Added technical and game notes.
 - Fixed Fairchild F8 CPU interrupt handling [Curt Coder].
 - Implemented support for SH-2 cycle steal mode, used by 'Fever Soccer' [David Haywood].
 - Fixed a SH-2 with TSTM opcode [R. Belmont].
 - Neo-Geo updates [Johnboy]:
-  * savagere, kizuna - Reverted C1 change from u2 (chip was bad, C1 was correct).
-  * gururin - Added correct M1 ROM.
-  * quizdai2 - Tagged as MVS and AES version.
+  * savagere, kizuna: Reverted C1 change from u2 (chip was bad, C1 was correct);
+  * gururin: Added correct M1 ROM;
+  * quizdai2: Tagged as MVS and AES version;
   * Started to document mask ROM types.
 - naomi.c: Added Mamonoro cartridge description [f205v].
 - viper.c: Added the 941a01 BIOS and p911e missing NVRAM dump [John Bud @ Jamma+].
 - Golden Poker driver updates [Roberto Fresca]:
-  * Added 3 new 'Witch Card' sets.
-  * Added 3 new 'Falcons Wild' sets (from 3 different hardwares).
-  * Hooked the second CPU (still encrypted) to the Falcon hardware.
-  * Partially decrypted the second CPU program from Falcon hardware.
-  * Figured out the Falcons Wild (Video Klein) memory map and machine.
-  * Defeated the evil Video Klein's Witch Card hardware.
-  * Reworked inputs for some sets.
-  * Added lamps layouts/connections to the new sets.
-  * Figured out the multiplexed data/address from Falcon's boards sound.
-  * Added full sound support to Falcon hardware.
-  * Reorganized and partially cleaned-up the driver.
+  * Added 3 new Witch Card sets;
+  * Added 3 new Falcons Wild sets (from 3 different hardwares);
+  * Hooked the second CPU (still encrypted) to the Falcon hardware;
+  * Partially decrypted the second CPU program from Falcon hardware;
+  * Figured out the Falcons Wild (Video Klein) memory map and machine;
+  * Defeated the evil Video Klein's Witch Card hardware;
+  * Reworked inputs for some sets;
+  * Added lamps layouts/connections to the new sets;
+  * Figured out the multiplexed data/address from Falcon's boards sound;
+  * Added full sound support to Falcon hardware;
+  * Reorganized and partially cleaned-up the driver;
   * Added more technical notes.
 - Fixed unaligned 16 and 32-bit i/o accesses in i386 CPU core [Barry Rodewald].
 - Fix bug where multiple sampleof attributes could be output, resulting in invalid XML [Aaron Giles].
@@ -114,11 +114,11 @@ Source changes:
 - Added INT1, INT2, INT3, DRQ0, DRQ1, TMRIN0, TMRIN1 input and TMROUT0, TMROUT1 output lines to the Intel 80186 CPU interface [Curt Coder].
 - sh2: fix PC relative MOV in delay slot. Further improvements to PC_relative loads in the delay slot [R. Belmont].
 - Improvements to vpoker.c driver [Roberto Fresca]:
-  * Added '5-Aces Poker'.
-  * Fixed, improved and merged memory map.
-  * Fixed the ROM loading.
-  * Removed the mame rnd hack from the blitter read handler.
-  * Preliminary inputs.
+  * Added 5-Aces Poker;
+  * Fixed, improved and merged memory map;
+  * Fixed the ROM loading;
+  * Removed the mame rnd hack from the blitter read handler;
+  * Preliminary inputs;
   * Fixed visible screen.
 - Added new driver for NSM TMS9995 based hardware [Roberto Fresca].
 - Added UART Tx/Rx framework to the CD-i 68070 implementation, necessary for Quizard protection [Harmony].
@@ -126,13 +126,13 @@ Source changes:
 - Naomi: added protection key for gundmct, it boots now [Cah4e3].
 - Changed visible area and resolution of CD-i based arcade games [Harmony] .
 - New driver for Advanced Video Technology (AVT) platform [Roberto Fresca]:
-  * Almost accurate memory map.
-  * Decoded graphics.
-  * Decoded the bipolar PROM.
-  * Detected a CRTC (MC6845 type) reversing the code.
-  * Guessed the CRTC clock to get proper values.
-  * Hooked the AY-3-8910.
-  * Added games notes.
+  * Almost accurate memory map;
+  * Decoded graphics;
+  * Decoded the bipolar PROM;
+  * Detected a CRTC (MC6845 type) reversing the code;
+  * Guessed the CRTC clock to get proper values;
+  * Hooked the AY-3-8910;
+  * Added games notes;
   * Added technical notes.
 - Patched out the majority of the Quizard 1.7 protection check and emulated the game's inputs [Harmony].
 - Patched out the majority of the Quizard 1.2'protection check and made the patch more generic [Harmony].
@@ -142,8 +142,8 @@ Source changes:
 - Fixed vspinbalj (vsnes.c) flipper control and eliminated duplicated inputs [Tafoid].
 - Converted render.c objects into C++ objects. Updated all callers [Aaron Giles].
 - Improvements to Subsino driver [Roberto Fresca]:
-  * Created proper inputs for all Victor 6 sets.
-  * Fixed/extended Magic Train technical notes.
+  * Created proper inputs for all Victor 6 sets;
+  * Fixed/extended Magic Train technical notes;
   * Eliminated the 3 undumped bipolar PROMs from Magic Train since these are in fact Darlington Arrays instead of bipolar PROMs.
 - Replaced the excessively large Quizard patch scheme with a much smaller 4-byte patch plus basic protection obfuscation simulation [Harmony].
 - Found the appropriate patch values for Quizard 2.2 and promoted it to working [Harmony].

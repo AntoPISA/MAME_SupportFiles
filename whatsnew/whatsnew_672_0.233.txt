@@ -2,37 +2,6 @@
 -----------------------------------
 
 
-MAME Testers Bugs Fixed
------------------------
-- 00125: [Graphics] (hornet.cpp) gradius4: Screen visible area is incorrect in 15 kHz mode (Ville Linde).
-- 03067: [Graphics] (gameplan.cpp) leprechn, leprechp, potogold: Cutscene animation causes graphics corruption (O. Galibert).
-- 05385: [Gameplay] (seta.cpp) downtown: After entering a high score, the high scores are reset to zero (Angelo Salese).
-- 06604: [Graphics] (hornet.cpp) gradius4: Flip Screen (V) DIP switch doesn’t completely flip the text layer (Ville Linde).
-- 06605: [Gameplay] (hornet.cpp) gradius4: Test mode ROM check causes emulator to crash when using Direct3D video (Ville Linde).
-- 07000: [Gameplay] (taitosj.cpp) tinstar: Collision detection is broken (O. Galibert).
-- 07256: [Graphics] (hornet.cpp) nbapbp: 2D graphics are positioned/sized incorrectly (Ville Linde).
-- 07305: [Sound] (dragon.cpp) dragon32, dragon64, dragon64h, dragon200, dragon200e: DAC sound is not working (AJR).
-- 07475: [DIP/Input] (coco3.cpp) coco3: Joystick buttons are not working correctly for some ML games (Tim Lindner).
-- 07893: [Crash/Freeze] (atetris.cpp) atetrisb2, atetrisb3: Game does not progress past black screen (AJR).
-- 07912: [Graphics] (vis.cpp) vis: Screen image is cropped, and animation glitches occur (Carl).
-- 07914: [Sound] (vis.cpp) vis: Some sound effects play as noise (Carl).
-- 07968: [Core] (hornet.cpp) All machines in hornet.cpp: Sound test fails if POST is enabled (Ville Linde).
-- 07986: [Media Support] (pce.cpp) dragnegg: [pce] dragnegg: Dragon Egg! is marked as not supported, but works (thankyoumame).
-- 07989: [Interface] (ksys573.cpp) pcnfrku: Description for US version does not match title screen (AriaOTP).
-- 07992: [Graphics] (junofrst.cpp) junofrst: Screen colour does not change on key game events (O. Galibert).
-- 07993: [Documentation] (seta.cpp) drgnunit: Manufacturer should show developer Athena (Angelo Salese).
-- 07996: [Sound] (neogeo.cpp) nitd and bootleg, arcade and AES modes: ADPCM-A samples do not play to end (Aaron Giles).
-- 07997: [Sound] (namcos2.cpp) assault, assaultj: Tank engine sound stops almost immediately after game starts (hap).
-- 07998: [DIP/Input] (vegas.cpp) sf2049se: Non-existent button is mapped in IN1 port (hap).
-- 08003: [DIP/Input] (segas16a.cpp) quartet and clones: Fire and jump button order doesn’t match control panel (Steven Coomber).
-- 08006: [Sound] (neogeo.cpp) mslug: Background music has parts missing (Aaron Giles).
-- 08007: [DIP/Input] (mitchell.cpp) spangbl: Bootleg uses DIP switch settings rather than a service menu (Ivan Vangelista).
-- 08008: [Gameplay] (starwars.cpp) esb: SLAPSTIC causes emulated machine to reset (O. Galibert).
-- 08012: [Graphics] (channelf.cpp) channelf (and clones?): Fairchild Channel F runs at incorrect vertical resolution (Nigel Barnes).
-- 08015: [DIP/Input] (chanbara.cpp) chanbara: The left and right joystick inputs are reversed (Steven Coomber).
-- 08016: [DIP/Input] (playmark.cpp) bigtwinb: Joystick X and Y axes are swapped (Tafoid).
-
-
 New working machines
 --------------------
 Invinco / Car Hunt (Germany) [MikeMcBike, Brian Troha]
@@ -229,6 +198,37 @@ vsmile_cart: Teclado Interactivo V.Smile (Spain) [TeamEurope, ClawGrip]
 vtech_innotab_cart: The Penguins of Madagascar (USA), Teenage Mutant Ninja Turtles - Turtle Power! (USA) [David Silva]
 vtech_storio_cart:
   Cars 2 (USA), Disney Princess - A Gift From The Heart & Belle's Special Treat (USA), Dora and the 3 Little Pigs (USA), Hello Kitty's Surprise (USA), Mickey Mouse Clubhouse (USA), Mickey Mouse Clubhouse (USA, flash chip), TinkerBell and the Great Fairy Rescue (USA) [Sean Riddle, David Silva]
+
+
+MAME Testers Bugs Fixed (27):
+-----------------------------
+- 00125: [Graphics] (hornet.cpp) gradius4: Screen visible area is incorrect in 15 kHz mode (Ville Linde)
+- 03067: [Graphics] (gameplan.cpp) leprechn, leprechp, potogold: Cutscene animation causes graphics corruption (O. Galibert)
+- 05385: [Gameplay] (seta.cpp) downtown: After entering a high score, the high scores are reset to zero (Angelo Salese)
+- 06604: [Graphics] (hornet.cpp) gradius4: Flip Screen (V) DIP switch doesn’t completely flip the text layer (Ville Linde)
+- 06605: [Gameplay] (hornet.cpp) gradius4: Test mode ROM check causes emulator to crash when using Direct3D video (Ville Linde)
+- 07000: [Gameplay] (taitosj.cpp) tinstar: Collision detection is broken (O. Galibert)
+- 07256: [Graphics] (hornet.cpp) nbapbp: 2D graphics are positioned/sized incorrectly (Ville Linde)
+- 07305: [Sound] (dragon.cpp) dragon32, dragon64, dragon64h, dragon200, dragon200e: DAC sound is not working (AJR)
+- 07475: [DIP/Input] (coco3.cpp) coco3: Joystick buttons are not working correctly for some ML games (Tim Lindner)
+- 07893: [Crash/Freeze] (atetris.cpp) atetrisb2, atetrisb3: Game does not progress past black screen (AJR)
+- 07912: [Graphics] (vis.cpp) vis: Screen image is cropped, and animation glitches occur (Carl)
+- 07914: [Sound] (vis.cpp) vis: Some sound effects play as noise (Carl)
+- 07968: [Core] (hornet.cpp) All machines in hornet.cpp: Sound test fails if POST is enabled (Ville Linde)
+- 07986: [Media Support] (pce.cpp) dragnegg: [pce] dragnegg: Dragon Egg! is marked as not supported, but works (thankyoumame)
+- 07989: [Interface] (ksys573.cpp) pcnfrku: Description for US version does not match title screen (AriaOTP)
+- 07992: [Graphics] (junofrst.cpp) junofrst: Screen colour does not change on key game events (O. Galibert)
+- 07993: [Documentation] (seta.cpp) drgnunit: Manufacturer should show developer Athena (Angelo Salese)
+- 07996: [Sound] (neogeo.cpp) nitd and bootleg, arcade and AES modes: ADPCM-A samples do not play to end (Aaron Giles)
+- 07997: [Sound] (namcos2.cpp) assault, assaultj: Tank engine sound stops almost immediately after game starts (hap)
+- 07998: [DIP/Input] (vegas.cpp) sf2049se: Non-existent button is mapped in IN1 port (hap)
+- 08003: [DIP/Input] (segas16a.cpp) quartet and clones: Fire and jump button order doesn’t match control panel (Steven Coomber)
+- 08006: [Sound] (neogeo.cpp) mslug: Background music has parts missing (Aaron Giles)
+- 08007: [DIP/Input] (mitchell.cpp) spangbl: Bootleg uses DIP switch settings rather than a service menu (Ivan Vangelista)
+- 08008: [Gameplay] (starwars.cpp) esb: SLAPSTIC causes emulated machine to reset (O. Galibert)
+- 08012: [Graphics] (channelf.cpp) channelf (and clones?): Fairchild Channel F runs at incorrect vertical resolution (Nigel Barnes)
+- 08015: [DIP/Input] (chanbara.cpp) chanbara: The left and right joystick inputs are reversed (Steven Coomber)
+- 08016: [DIP/Input] (playmark.cpp) bigtwinb: Joystick X and Y axes are swapped (Tafoid)
 
 
 Translations added or modified
@@ -1066,7 +1066,7 @@ Alphatronic PC w/BiCom Graphics [rfka01]
 
 -alphatro: Implemented the BiCom graphics card [Nigel Barnes].
  * Added parallel and serial printer ports.
- * Added dipswitches for character set and printer interface.
+ * Added DIP switches for character set and printer interface.
  * Switched foreground/background colours.
  * Added romset from an Alphatronic used as a terminal [Binary Dinosaurs]
 

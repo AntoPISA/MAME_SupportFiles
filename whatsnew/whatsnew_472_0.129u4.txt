@@ -57,7 +57,7 @@ Pachi Fever [Angelo Salese]
 Sweet Hearts II (C - 07/09/95, Venezuela version) [Heihachi_73]
 
 
-MAMETesters Bugs Fixed (13):
+MAME Testers Bugs Fixed (13):
 ----------------------------
 - 00754: [Sound] mikie: Background music problem in the locker room level (Nicola Salmoria)
 - 00808: [Graphics] xsleena: There appears to be a small line of graphics missing on a couple of characters.
@@ -146,7 +146,7 @@ Source changes:
   * 16-bit and 32-bit accesses to 8-bit chips no longer use trampoline functions but instead use the 8-bit AM_DEVREAD/WRITE macros;
   * All references to sound chips are now done via TAGs;
   * Note that these changes are brute force, not optimal; in many cases drivers should grab pointers to devices in MACHINE_START and stash them away.
-- Fixed a couple of dipswitches for Progress [Brian Troha].
+- Fixed a couple of DIP switches for Progress [Brian Troha].
 - goldstar.c improvements [Roberto Fresca]:
   * Full inputs and DIP switches from the scratch for schery97, schery97a and skill98;
   * Changed the sets description to match the program version;

@@ -2,34 +2,12 @@
 -----------------------------------
 
 
-MAME Testers bugs fixed
------------------------
-- 02005: [Misc.] (taito/changela.cpp) changela: Service mode I/O tests do not work (hap)
-- 08685: [Sound] (midway/astrocde.cpp) wow: Astrocade sound only plays through left speaker (hap)
-- 08687: [Crash/Freeze] (sony/taitogn.cpp) zooo: Emulator crashes during game boot process (Vas Crabb)
-- 08689: [Sound] (exidy/exidy.cpp) hardhat, pepper2, venture: Background music stops unexpectedly during gameplay (hap)
-- 08691: [Graphics] (seta/downtown.cpp) metafox: Graphics are offset horizontally (AJR)
-- 08694: [Crash/Freeze] (midway/vegas.cpp) warfa and clones, sf2049 and clones: Games fail to boot (Patrick Mackinlay)
-- 08698: [Sound] (konami/nemesis.cpp) nemesis: Instrument samples are out of tune (hap)
-- 08699: [Sound] (konami/nemesis.cpp) twinbee: Voice samples are incorrectly truncated (hap)
-- 08702: [Misc.] (taito/qix.cpp) Many sets in qix.cpp: Coin counters are incremented on boot (AJR)
-- 08705: [Misc.] (sega/system1.cpp) Many sets on system1.cpp: Coin counters are incremented on boot (hap)
-- 08707: [Sound] (msx/msx1.cpp) msx systems: Konami SCC sample address does not reset when it should (hap)
-- 08709: [Misc.] (sega/segag80r.cpp) sindbadm: Coin counters are incremented on boot (hap)
-- 08714: [Gameplay] (taito/changela.cpp) changela: Accelerator pedal is not not read correctly (hap)
-- 08715: [Speed] (handheld/hh_tms1k.cpp) vclock3: [possible] Emulated clock runs slower than expected (hap)
-- 08722: [Sound] (vidbrain/vidbrain.cpp) vidbrain: Music does not play (hap)
-- 08729: [DIP/Input] (taito/asuka.cpp) bonzeadv and clones: Joystick left switch for second player doesn’t work (Balthier)
-- 08730: [Graphics] (taito/invqix.cpp) invqix: Visible area is one pixel too large horizontally and vertically (Balthier)
-- 08734: [Sound] (misc/beezer.cpp) beezer: Game sometimes runs with no sound output (hap)
-
-
-New working systems
+New Working Systems
 -------------------
 Apple Computer Macintosh LC 550 [R. Belmont]
 Apple Computer Macintosh Quadra 800 [R. Belmont]
 
-New working clones
+New Working Clones
 ------------------
 Apple Computer Macintosh Centris 610 [R. Belmont]
 Apple Computer Macintosh Centris 650 [R. Belmont]
@@ -50,7 +28,7 @@ New Zero Team (V33 SYSTEM TYPE_B hardware, Zhongguo Shantou Yihuang license) [t
 Scorpion, Ltd. Scorpion ZS-256 TURBO+ [holub]
 Terra Force (US, alternate sound) [caius]
 
-Systems promoted to working
+Systems Promoted to Working
 ---------------------------
 Apple Computer Macintosh Quadra 700 [R. Belmont]
 Psion Series 3 [Nigel Barnes]
@@ -61,7 +39,7 @@ Psion Siena [Nigel Barnes]
 Psion Workabout [Nigel Barnes]
 Psion Workabout mx [Nigel Barnes]
 
-Clones promoted to working
+Clones Promoted to Working
 --------------------------
 Acorn Computers Pocket Book [Nigel Barnes]
 Acorn Computers Pocket Book II [Nigel Barnes]
@@ -71,7 +49,7 @@ Psion Series 3a (2M) (German) [Nigel Barnes]
 Psion Series 3a (2M) (Russian) [Nigel Barnes]
 Psion Series 3s [Nigel Barnes]
 
-New systems marked not working
+New Systems Marked not Working
 ------------------------------
 21 Up (Bellfruit) (Black Box) (5p Stake, £1 Jackpot) [SomeRandomGuyIdk]
 ASUS CUBX [The Retro Web]
@@ -105,7 +83,7 @@ unknown 'VIP 2000' game (set 3) [TeamEurope, f205v, Roberto Fresca]
 unknown golf game [hammy]
 Upstairs 'N' Downstairs (Bellfruit) (Black Box) (5p Stake, £1 Jackpot) [SomeRandomGuyIdk]
 
-New clones marked not working
+New Clones Marked not Working
 -----------------------------
 21 Up (Bellfruit) (Black Box) (10p Stake, £2 Jackpot) [SomeRandomGuyIdk]
 AUVA VIP 800 [fdiskitup]
@@ -361,6 +339,28 @@ msx1_cart:
   Dream Puzzle, Duck Hunt [MSXDev]
 oric1_cass: Arsène Lapin, Composer, Detective Story [The Oric Site]
 specpls3_flop: La Espada Sagrada [El Trastero del Spectrum]
+
+
+MAME Testers Bugs Fixed (18):
+----------------------------
+- 02005: [Misc.] (taito/changela.cpp) changela: Service mode I/O tests do not work (hap)
+- 08685: [Sound] (midway/astrocde.cpp) wow: Astrocade sound only plays through left speaker (hap)
+- 08687: [Crash/Freeze] (sony/taitogn.cpp) zooo: Emulator crashes during game boot process (Vas Crabb)
+- 08689: [Sound] (exidy/exidy.cpp) hardhat, pepper2, venture: Background music stops unexpectedly during gameplay (hap)
+- 08691: [Graphics] (seta/downtown.cpp) metafox: Graphics are offset horizontally (AJR)
+- 08694: [Crash/Freeze] (midway/vegas.cpp) warfa and clones, sf2049 and clones: Games fail to boot (Patrick Mackinlay)
+- 08698: [Sound] (konami/nemesis.cpp) nemesis: Instrument samples are out of tune (hap)
+- 08699: [Sound] (konami/nemesis.cpp) twinbee: Voice samples are incorrectly truncated (hap)
+- 08702: [Misc.] (taito/qix.cpp) Many sets in qix.cpp: Coin counters are incremented on boot (AJR)
+- 08705: [Misc.] (sega/system1.cpp) Many sets on system1.cpp: Coin counters are incremented on boot (hap)
+- 08707: [Sound] (msx/msx1.cpp) msx systems: Konami SCC sample address does not reset when it should (hap)
+- 08709: [Misc.] (sega/segag80r.cpp) sindbadm: Coin counters are incremented on boot (hap)
+- 08714: [Gameplay] (taito/changela.cpp) changela: Accelerator pedal is not not read correctly (hap)
+- 08715: [Speed] (handheld/hh_tms1k.cpp) vclock3: [possible] Emulated clock runs slower than expected (hap)
+- 08722: [Sound] (vidbrain/vidbrain.cpp) vidbrain: Music does not play (hap)
+- 08729: [DIP/Input] (taito/asuka.cpp) bonzeadv and clones: Joystick left switch for second player doesn’t work (Balthier)
+- 08730: [Graphics] (taito/invqix.cpp) invqix: Visible area is one pixel too large horizontally and vertically (Balthier)
+- 08734: [Sound] (misc/beezer.cpp) beezer: Game sometimes runs with no sound output (hap)
 
 
 Merged pull requests

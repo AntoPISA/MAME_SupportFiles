@@ -3,7 +3,7 @@
 IMPORTANT NOTE: The way devices are handled internally in MAME has changed significantly. There are likely to be short-term compatibility and performance effects. Please report any errors or *significant* performance decreases (>20%) to mametesters.org. Full documentation on the new device handling is in progress at http://mamedev.org/devwiki/index.php/MAME_Device_Basics.
 
 
-New games added or promoted from NOT_WORKING status
+New Games Added or Promoted from NOT_WORKING Status
 ---------------------------------------------------
 Alien Challenge (2 sets) [Luca Elia, XingXing]
 Lucky Girl (Z180-based HW) [David Haywood, Angelo Salese, Charles MacDonald]
@@ -13,14 +13,14 @@ Royal Queen [Charles MacDonald, Angelo Salese]
 The Berenstain Bears in Big Paw's Cave [B Zeidler]
 Vortex [Lord Nightmare, David Haywood, Smitdogg, The Dumping Union]
 
-New clones added
+New Clones Added
 ----------------
 Ooedo Fight (Japan) [Team Japump, The Dumping Union]
 Phantoms II (Space Invaders hardware) [Andrew Welburn]  (enigma2b)
 Toki (US, set 2) [Corrado Tomaselli] (tokiua)
 Wai Wai Animal Land Jr.(Japan)[Team Japump, The Dumping Union]
 
-New games marked as GAME_NOT_WORKING
+New Games Marked as GAME_NOT_WORKING
 ------------------------------------
 Battle Gear [R. Belmont]
 Battle Gear 2 [R. Belmont]
@@ -30,10 +30,10 @@ Ron Jan [Charles MacDonald, Brian A. Troha]
 Unknown Meyco Game [Trevor Brown, Antwon Barajas] (unkmeyco)
 
 
-MAMETesters Bugs Fixed (6):
+MAME Testers Bugs Fixed (6):
 ---------------------------
 - 01839: [Color/Palette] battlex: Incorrect colors and/or palette (Tafoid)
-- 02362: [Speed] block: Ball speed is erratic. (hap)
+- 02362: [Speed] block: Ball speed is erratic (hap)
 - 03579: [Crash/Freeze] rbibb, rbibba, vsskykid: Severe graphic corruption/Access Voilation (Fabio Priuli)
 - 03747: [Graphics] ckong: One pixel gap is missing between Kong and level (hap)
 - 03866: [Graphics] prehisle, prehisleu, gensitou: Lack of graphics (David Haywood)
@@ -50,20 +50,20 @@ Source changes:
 - Added some missing static qualifiers to MAME. Also, renamed some generically named exports from segaic16.c  [Atari Ace].
 - batsugun: fixed layer-layer priorities; sprite-sprite priorities are wrong [robiza].
 - dogyuun: fixed layer-layer priorities; sprite priorities are wrong [robiza].
-- hal21: cabinet DIPSW was reversed btlfield: DIAL was used instead of rotary joystick [/SftiKDL0].MAMETesters Bugs Fixed (6):
+- hal21: cabinet DIPSW was reversed btlfield: DIAL was used instead of rotary joystick [/SftiKDL0].MAME Testers Bugs Fixed (6):
 - namconb1.c: Replaced sound data ROM for the Point Blank sets that was incorrectly dumped. The new dump has been verified on 3 different PCBs [Guru, Smitdogg, The Dumping Union].
 - kongambl.c updates [R. Belmont]:
-  * Mapped ROMs correctly to processors.
-  * Started mapping out Konami customs.
+  * Mapped ROMs correctly to processors;
+  * Started mapping out Konami customs;
   * EEPROM hooked up.
 - lordgun.c update [Luca Elia]:
-  * Implemented RAM based priorities.
-  * Added multi-sprite, fixed sprite list end.
-  * Corrected tilemap 2 size (wrong backgrounds in the final stage).
+  * Implemented RAM based priorities;
+  * Added multi-sprite, fixed sprite list end;
+  * Corrected tilemap 2 size (wrong backgrounds in the final stage);
   * Fixed crosshair position.
 - chdman/cdrom updates [R. Belmont]:
-  * CDRWIN .bin/.cue images now supported for both input and output.
-  * Pregap and postgap information is now preserved in the format.
+  * CDRWIN .bin/.cue images now supported for both input and output;
+  * Pregap and postgap information is now preserved in the format;
   * Output of CDRDAO images is significantly improved.
 - Existing CHD-CDs will continue to work fine and for data-only discs no action needs to be taken. For mixed data/audio discs (e.g. analog 573/Bemani games) they should be re-converted for better preservation [Aaron Giles].
 - kongambl: Support unpaged 056832 VRAM access [R. Belmont].
@@ -91,33 +91,33 @@ Source changes:
 - Splitted the ST-V protection handlings by per-game [Angelo Salese].
 - Added proper RTC support to the ST-V driver [Angelo Salese].
 - pcat_nit.c update [Mariusz Wojcieszek]:
-  * Added VGA emulation from MESS.
-  * Added INS8250 emulation from MESS.
-  * Added format decimal support to Microtouch.
-  * Added ROM banking and inputs to pcat_nit games.
+  * Added VGA emulation from MESS;
+  * Added INS8250 emulation from MESS;
+  * Added format decimal support to Microtouch;
+  * Added ROM banking and inputs to pcat_nit games;
   * streetg(2) now boot properly.
 - Moved some common PC code to machine/pcshare.c [Mariusz Wojcieszek].
 - vsnes.c: Reworked VROM banking  to avoid pointing beyond the last bank. Also, changed the use of memory_set_bankptr into memory_set_bank [Fabio Priuli].
-- Add Bonus Life dipswitches to Moon War (prototype on frenzy hardware) [Lord Nightmare, stephh].
+- Add Bonus Life DIP switches to Moon War (prototype on frenzy hardware) [Lord Nightmare, stephh].
 - Improvements to Lucky Girl (newer Z80 based hardware) [Roberto Fresca]:
-  * Improved the input system, added missing buttons.
-  * Figured out the full coinage DIP switches. (Coins A, B, C, Key In)
-  * Found and documented the output ports.
-  * Added full lamps support.
-  * Created a new button-lamps layout.
-  * Hooked the coin and key in counters.
+  * Improved the input system, added missing buttons;
+  * Figured out the full coinage DIP switches. (Coins A, B, C, Key In);
+  * Found and documented the output ports;
+  * Added full lamps support;
+  * Created a new button-lamps layout;
+  * Hooked the coin and key in counters;
   * Added technical notes.
   * Figured out the following DIP switches:
-  - Auto Hold (No / Yes).
-  - Game Type (Hold Game / Discard Game).
-  - Adult Content (No / Yes).
+  - Auto Hold (No / Yes);
+  - Game Type (Hold Game / Discard Game);
+  - Adult Content (No / Yes);
   - Minimal Winning Hand (Jacks or Better / 2 Pairs).
-  - Minimum Bet (1 / 5).
+  - Minimum Bet (1 / 5);
   - Double-Up (Normal / Poker / Bingo / No D-Up).
 - Massive Space Invaders related comment update, documenting various sets, and the various Taito PCBs used by Space Invaders/Tabletop SI/Tabletop SI Color/Tabletop SI II/etc [Andrew Welburn, Lord Nightmare].
 - Hooked up color prom in Kick Boy [Angelo Salese].
 - Defined two new casting helpers [Aaron Giles]:
-  * downcast<type>(value) should be used for safe and efficient downcasting from a base class to a derived class. It wraps static_cast<> by adding an assert that a matching dynamic_cast<> returns the same result in debug builds.
+  * downcast<type>(value) should be used for safe and efficient downcasting from a base class to a derived class. It wraps static_cast<> by adding an assert that a matching dynamic_cast<> returns the same result in debug builds;
   * crosscast<type>(value) should be used for safe casting from one type to another in multiple inheritance scenarios. It compiles to a dynamic_cast<> plus an assert on the result. Since it does not optimize down to static_cast<>, you should prefer downcast<> over crosscast<> when you can.
 - Redefined running_device to be a proper C++ class (now called device_t). Same for device_config (still called device_config). All devices and device_configs must now be derived from these base classes. This means each device type now has a pair of its own unique classes that describe the device. Drivers are encouraged to use the specific device types instead of the generic running_device or device_t classes. Drivers that have a state class defined in their header file are encouraged to use initializers off the constructor to locate devices [Aaron Giles].
 - Removed the following fields from the device and device configuration classes as they never were necessary or provided any use: device class, device family, source file, version, credits [Aaron Giles].
@@ -184,15 +184,15 @@ Source changes:
 - Dumped internal ROM for Pinkiri 8 [Charles MacDonald].
 - Dumped internal ROM for Janshi [Charles MacDonald].
 - Documentation update [Stefan Lindberg, Dumping Union]:
-  * segas16b.c, taito_f2.c, taito_f3.c & taito_x.c.
-  * Corrected ROM names and or added PCB locations to Ray Force.
+  * segas16b.c, taito_f2.c, taito_f3.c and taito_x.c;
+  * Corrected ROM names and or added PCB locations to Ray Force;
   * Arabian Magic, Liquid Kids, Twin Hawk. Added additional Sega game.
   * ID info for an Alien Syndrome set.
 - model3.c: Correct sound ROM loading for the Scud & Scud Plus sets [Alex's Blog].
 - devlegacy.c,clifront.c,info.c [Miodrag Milanovic]:
-  * Created legacy image device.
-  * Moved opresolv implementation from MESS.
-  * listmedia is option is available in MAME too.
+  * Created legacy image device;
+  * Moved opresolv implementation from MESS;
+  * listmedia is option is available in MAME too;
   * listxml output now contains image devices.
 - romident can now identify CHD's [smf].
 - Emulated protection check in Ron Jan [Angelo Salese].

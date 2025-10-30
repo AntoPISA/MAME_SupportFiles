@@ -2,16 +2,16 @@
 ---------------------------------------
 
 
-New games added or promoted from NOT_WORKING status
+New Games Added or Promoted from NOT_WORKING Status
 ---------------------------------------------------
 Chequered Flag [Angelo Salese]
 Super Wing [Tomasz Slanina, Wulfman]
 
-New clones added
-----------------
+New Clone Added
+---------------
 Witch Card (German, WC3050, 27-4-94) [Roberto Fresca, Team Europe]
 
-New games marked as GAME_NOT_WORKING
+New Games Marked as GAME_NOT_WORKING
 ------------------------------------
 Quizard Rainbow 4.0  [Team Europe]
 Frank 'n' Stein (unencrypted) [J Wallace]
@@ -21,7 +21,7 @@ Cospure Tengoku 7 - Super Co-gal Grandprix [alien_mame, The Dumping Union]
 Fudol [alien_mame, The Dumping Union]
 
 
-MAMETesters Bugs Fixed (7):
+MAME Testers Bugs Fixed (7):
 ---------------------------
 - 04320: [Crash/Freeze] Many sets in mpu4drvr.c: Crash: Integer Divide by Zero (J. Wallace)
 - 01893: [Crash/Freeze] mk4: MK4 hangs in demo mode after about 5 mins/matches (Phil Bennett)
@@ -61,17 +61,17 @@ Source changes:
 - Reimplemented devcb using delegates and classes. Unified the logic for identifying targets and simplified the code [Aaron Giles].
 - naomi: Abstract the maple and jvs interfaces into a set of devices [O. Galibert, MetalliC, Tormod, D. Knute].
 - Started unifying sprite implementations for setax001/x002 chips [David Haywood].
-- drcbex64: Fix op_debug implementation [O. Galibert].
+- drcbex64: Fix op_debug implementation [Olivier Galibert].
 - Add Puzznic MCU dump and added a PAL as NO_DUMP. The MCU still needs to be properly hooked up [Smitdogg, The Dumping Union, Lord Nightmare].
-- naomi: Add jvs command 0x32, fixes Crazy Taxi and Virtua Tennis 2 booting [O. Galibert].
+- naomi: Add jvs command 0x32, fixes Crazy Taxi and Virtua Tennis 2 booting [Olivier Galibert].
 - Added input button labels for Midway T-Unit driver [Joe Caporale].
 - De-stateized the NB1414M4 routines, and converted the correlated Armed F text tilemap to be 8-bits [Angelo Salese].
 - Hooked up NB1414M4 to Ninja Emaki, greatly improving gfxs in it [Angelo Salese].
 - Implemented serial type scrolling for Youma Ninpou Chou bootlegs [Angelo Salese].
 - Support for dynamic devices added to the core [Miodrag Milanovic]:
-  * Added slot and slot card interfaces.
-  * Added SLOT_INTERFACE macros in order to simplify device adding.
-  * Added new menu option "Slot Devices" and support to change device in runtime.
+  * Added slot and slot card interfaces;
+  * Added SLOT_INTERFACE macros in order to simplify device adding;
+  * Added new menu option "Slot Devices" and support to change device in runtime;
   * Updated emuopts to support command setting of slot cards.
 - Update clifront and added listslots option to display available slots and device options for each one [Miodrag Milanovic].
 - mpu4.c: Started adding support for the Crystal Gaming program card, and the link keys for setting parameters [J Wallace].
@@ -82,11 +82,11 @@ Source changes:
 - Converted PlayStation DMA to an internal device to the CPU core. DMA to external devices can be set in the machine config, the old calls are still there until the rest of the code is converted [smf].
 - Added support for default NVRAM in MCCS1850 [Curt Coder].
 - Various Irem M92/M107 fixes [Alex Jackson]:
-  * Hooked up sound CPU interrupts properly, using the V35 builtin interrupt controller, rather than generating the vectors in the driver.
-  * Cleaned up ROM mirroring, using AM_REGION macros in the address maps instead of memcpy()ing all over the place in the DRIVER_INITs.
-  * Converted bankswitching to use configured banks. Only configure the banks and install the bankswitch WRITE_HANDLER in the games that actually use it (i.e. those with a full megabyte of program ROM). This and the previous change make the drivers a lot less confusing to look at... I hope.
-  * Converted both drivers to use a scanline timer device instead of a hand-rolled one.
-  * Added save state support to m92.c. Everything necessary was already saved, I just had to add the tag. However, presumably due to the core emu_timer breakage (MT 4330, 4331) the save states don't actually work at the moment. I've already reported this as MT #4333.
+  * Hooked up sound CPU interrupts properly, using the V35 builtin interrupt controller, rather than generating the vectors in the driver;
+  * Cleaned up ROM mirroring, using AM_REGION macros in the address maps instead of memcpy()ing all over the place in the DRIVER_INITs;
+  * Converted bankswitching to use configured banks. Only configure the banks and install the bankswitch WRITE_HANDLER in the games that actually use it (i.e. those with a full megabyte of program ROM). This and the previous change make the drivers a lot less confusing to look at... I hope;
+  * Converted both drivers to use a scanline timer device instead of a hand-rolled one;
+  * Added save state support to m92.c. Everything necessary was already saved, I just had to add the tag. However, presumably due to the core emu_timer breakage (MT 4330, 4331) the save states don't actually work at the moment. I've already reported this as MT #4333;
   * Added GAME_MECHANICAL tag to wpksoc and clone.
 - Converted Ginga Ninkyouden to use proper 6840 PTM device [Angelo Salese].
 - Fixed missing sprite regression in the Wiz driver [Angelo Salese].

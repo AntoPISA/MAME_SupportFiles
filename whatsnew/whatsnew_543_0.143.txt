@@ -2,17 +2,17 @@
 ---------------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
-- 04340: [Crash/Freeze] firefox, firefoxa: Crash after OK (smf).
-- 04341: [Crash/Freeze] All playable sets in deco_ld.c, dlair.c, esh.c, gpworld.c, istellar.c, lpg.c, segald.c, superdq.c: Crash after OK (smf).
-- 04342: [Crash/Freeze] cubeqst, cubeqsta: Crash/Assertion after OK (smf).
-- 04343: [Crash/Freeze] All sets in baraduke.c, namcos1.c, namcos86.c, skykid.c: Immediate crash while using -DEBUG (Wilbert Pol).
-- 04347: [Crash/Freeze] mach3, cobram3, usvsthem: Stalls on its opening diagnostic screen (smf).
-- 04349: [Crash/Freeze] All sets in cliffhgr.c: Halts at "** DISC NOT UP TO SPEED *** screen (smf).
-- 04380: [Crash/Freeze] sfish2, sfish2j: Crash after OK (R. Belmont).
-- 04384: [Crash/Freeze] cottonbm: Black screen instead of intro (Angelo Salese).
-- 04388: [Documentation] specfrce: Wrong SHA1 check sum in XML data for CHD (v3 vs. v4) (Tafoid).
+MAME Testers Bugs Fixed (9):
+----------------------------
+- 04340: [Crash/Freeze] firefox, firefoxa: Crash after OK (smf)
+- 04341: [Crash/Freeze] All playable sets in deco_ld.c, dlair.c, esh.c, gpworld.c, istellar.c, lpg.c, segald.c, superdq.c: Crash after OK (smf)
+- 04342: [Crash/Freeze] cubeqst, cubeqsta: Crash/Assertion after OK (smf)
+- 04343: [Crash/Freeze] All sets in baraduke.c, namcos1.c, namcos86.c, skykid.c: Immediate crash while using -DEBUG (Wilbert Pol)
+- 04347: [Crash/Freeze] mach3, cobram3, usvsthem: Stalls on its opening diagnostic screen (smf)
+- 04349: [Crash/Freeze] All sets in cliffhgr.c: Halts at "** DISC NOT UP TO SPEED *** screen (smf)
+- 04380: [Crash/Freeze] sfish2, sfish2j: Crash after OK (R. Belmont)
+- 04384: [Crash/Freeze] cottonbm: Black screen instead of intro (Angelo Salese)
+- 04388: [Documentation] specfrce: Wrong SHA1 check sum in XML data for CHD (v3 vs. v4) (Tafoid)
 
 
 Source changes:
@@ -27,7 +27,7 @@ Source changes:
 - Added support for multi level slot devices [Miodrag Milanovic].
 - cdrom: Convert Mode 1 Form 1 sectors to Mode 1 raw if requested [R. Belmont].
 - Convert Namco C352 to modern C++ device [R. Belmont].
-- eeprom: Add tag name in eeprom's verbosity [O. Galibert].
+- eeprom: Add tag name in eeprom's verbosity [Olivier Galibert].
 - Fixed a bad ROM dump in pss62 (Super Famicom Box) [Y~K, MESSfan].
 - Fixed line zero irq condition and provided a sync update for MPU4 HW games [J. Wallace].
 - Fixed state saving for OKIM6376 (hopefully) [J. Wallace].

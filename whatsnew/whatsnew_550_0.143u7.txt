@@ -2,14 +2,14 @@
 -----------------------------------------
 
 
-New games added or promoted from NOT_WORKING status
+New Games Added or Promoted from NOT_WORKING Status
 ---------------------------------------------------
 PEPSI Man [Luca Elia, Yasuhiro Ogawa]
 Uchuu Tokkyuu Medalian [Luca Elia, Yasuhiro Ogawa]
 Funcube 3 [Luca Elia, Yasuhiro Ogawa]
 FamicomBox [Mariusz Wojcieszek]
 
-New clones added
+New Clones Added
 ----------------
 Jungle King (alternate sound)  [Andrew Welburn]
 Zero Gunner (Japan, Model 2A) [Tormod, Brian Troha, The Dumping Union]
@@ -22,15 +22,15 @@ Muroge Monaco (set 3) [Roberto Fresca, EMMA Italian Dumping Team]
 Butasan - Pig's & Bomber's (Japan, English) [Bensonrad]
 Aqua Jack (US) [ShouTime]
 
-New games marked as GAME_NOT_WORKING
+New Games Marked as GAME_NOT_WORKING
 ------------------------------------
 Cherry Master '97 [Roberto Fresca, Team Europe, FatArnold]
 Metalman [PinMAME]
 Pimbal (Pinball 3000) [PinMAME]
 
 
-MAMETesters Bugs Fixed (8):
----------------------------
+MAME Testers Bugs Fixed (8):
+----------------------------
 - 02448: [Graphics] lethalen: External' rowscroll not hooked up  correctly (1st attract level, highscores) (Roberto Zandonà)
 - 04471: [Crash/Freeze] Many sets using m68000-family CPU: Access Violation (Sandro Ronco)
 - 04345: [Sound] nbbatman, ssoldier and clones: Sounds freezes or halts after a time (Mamesick)
@@ -48,20 +48,20 @@ Source changes:
 - Added Cherry Master '97 PCB layout [Roberto Fresca, Team Europe].
 - Fix for systems where getc() is a #define rather than a function [ElBarto].
 - neogeo: Fixed game saving [ElBarto].
-- butasan: fixed text RAM banking [Roberto Zandona'].
-- blswhstl: fixed screen size and zoom [Roberto Zandona'].
+- butasan: Fixed text RAM banking [Roberto Zandona'].
+- blswhstl: Fixed screen size and zoom [Roberto Zandona'].
 - Exposed the Z80 DART interrupt vector to non-Z80 users [Curt Coder].
 - Improved inputs and added some TLB notes in the Aleck64 driver [Peter Sealy].
-- m68000 - Fix for MINGW compiler optimization [Sandro Ronco].
+- m68000: Fix for MINGW compiler optimization [Sandro Ronco].
 - Big10: Fixed default DIP switches and DIP locations [Roberto Fresca]..
 - Fixed all HLSL stability issues except visible crease. [Ryan Holtz, Bat Country Entertainment].
 - Fixed Z80DART FIFO starting index [Curt Coder].
-- m68k: Activate trace emulation and fixed it [O. Galibert].
-- m68000: Avoid a case when dropping the irq mask just after taking a auto-acked interrupt would cause a spurious irq [O. Galibert].
-- m68000: Reset the double-bus/address-error flag where appropriate to avoid halting on consecutive but not linked exceptions [O. Galibert].
-- m68k: preliminary support for ColdFire family and MCF5206E [R. Belmont].
+- m68k: Activate trace emulation and fixed it [Olivier Galibert].
+- m68000: Avoid a case when dropping the irq mask just after taking a auto-acked interrupt would cause a spurious irq [Olivier Galibert].
+- m68000: Reset the double-bus/address-error flag where appropriate to avoid halting on consecutive but not linked exceptions [Olivier Galibert].
+- m68k: Preliminary support for ColdFire family and MCF5206E [R. Belmont].
 - namcos22.c: Fixed or improved polygon fade, high priority polygons, texture c-mode, sprite seaming, textlayer alpha/shadow, DSP external memory addressmask, and some other smaller issues [hap].
-- sh3/4: fixed big-endian mode [R. Belmont].
+- sh3/4: Fixed big-endian mode [R. Belmont].
 - Hooked up touch screen to Odeon Twister 2 [Mariusz Wojcieszek].
 - Fix incorrect masking of register writes on ay-3-8914, fixes wrong envelope amplitude on games which use hardware enveloping on Intellivision (Thunder Castle, etc) [Huygens].
 - Added complete dump for sfish2 [Guru].
@@ -72,5 +72,5 @@ Source changes:
 - Fixed the graphics decode of Las Vegas [Roberto Fresca]..
 - Added correct P1 and M1 for Neo Mr. Do and made some documentation updates in the Neo-Geo driver [Johnboy].
 - Updated intelfsh.c in order to support AMD 29F080 chip [Sandro Ronco].
-- namcos23.c: added gun input to Time Crisis 2 [hap].
+- namcos23.c: Added gun input to Time Crisis 2 [hap].
 - Further major organization, documentation and reordering of numerous (about 2500) gambling / Fruit machine titles covering multiple systems [David Haywood]

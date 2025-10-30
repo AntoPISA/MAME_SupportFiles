@@ -2,19 +2,14 @@
 -------------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
-- 03533: [Debugger] All 68020 cpu based drivers: 68020 disassembler bug: a 32-bit address displacement's upper 16-bit is desappear (R. Belmont)
-
-
-New games added or promoted from NOT_WORKING status
+New Games Added or Promoted from NOT_WORKING Status
 ---------------------------------------------------
 Five Clown (english, set 1) [Roberto Fresca, Grull Osgo]
 Five Clown (english, set 2) [Roberto Fresca, Grull Osgo]
 Five Clown (spanish hack) [Roberto Fresca, Grull Osgo]
 Magical Odds [David Haywood, Angelo Salese]
 
-New clones added
+New Clones Added
 ----------------
 Biaofeng Zhanjing (Chinese bootleg of The Punisher) [anonymous]
 Cherry Master I (E-Z Spin bootleg / hack) [William Ostronic]
@@ -23,10 +18,15 @@ Fantastic Journey (ver AAA) [David Haywood, Tirino73]
 Lethal Enforcers II: The Western (ver JAA) [David Haywood]
 Smash T.V. (rev 3.01) [Brian Troha, The Dumping Union]
 
-New games marked as GAME_NOT_WORKING
+New Games Marked as GAME_NOT_WORKING
 ------------------------------------
 Gunmen Wars [Guru]
 Joker Master / Poker Master [William Ostronic] (incomplete + encrypted)
+
+
+MAME Testers Bug Fixed (1):
+---------------------------
+- 03533: [Debugger] All 68020 cpu based drivers: 68020 disassembler bug: a 32-bit address displacement's upper 16-bit is desappear (R. Belmont)
 
 
 Source changes:
@@ -37,30 +37,20 @@ Source changes:
 - snes.c: fixed serial joystick reads [Fabio Priuli].
 - snes.c: slightly simplified palette handling [Fabio Priuli].
 - Re-dumped oceanhun CROMs 5-16 as 64Mb [ANY].
-- namcos23: Cleanups [O. Galibert].
-- namcos23: Add dips [O. Galibert].
+- namcos23: Cleanups [Olivier Galibert].
+- namcos23: Add dips [Olivier Galibert].
 - snes.c: Added very preliminary driver_data class for snes based drivers (it only contains input-related items for the moment, because these are needed to add support for additional controller types in MESS) [Fabio Priuli].
 - snes.c: Fixed Offset-per-tile graphics [jbo_85].
 - snes.c: Fixed scrolling problems [Fabio Priuli].
-- namcos23: More cleanups [O. Galibert].
+- namcos23: More cleanups [Olivier Galibert].
 - Implemented default EEPROMs to the following drivers [David Haywood]:
-  * deco_mlc.c
-  * esd16.c
-  * gijoe.c
-  * konamigx.c
-  * moo.c
-  * mystwarr.c
-  * rabbit.c
-  * rungun.c
-  * tmnt.c
-  * vendetta.c
-  * xexex.c
+  * deco_mlc.c, esd16.c, gijoe.c, konamigx.c,moo.c, mystwarr.c, rabbit.c, rungun.c, tmnt.c, vendetta.c and xexex.c.
 - Added support for the 'simple' rowscroll mode used by sams64_2 [David Haywood].
 - Fixed Z80 DMA ready signal handling [Curt Coder].
 - namcos23 update [R. Belmont, Guru]:
-  * Updated Guru Readme.
-  * More IRQ tests pass.
-  * Gunmen Wars I/O board runs and syncs.
+  * Updated Guru Readme;
+  * More IRQ tests pass;
+  * Gunmen Wars I/O board runs and syncs;
   * SH-2 shared RAM added for Gunmen Wars.
 - Implemented default EEPROMs to Bubble Memories, Lethal Enforcers and Puzzle Time [David Haywood].
 - Implemented default EEPROMs for GTIClub, Hang Pilot, Asterix, X-Men and Polygonet Commanders [David Haywood].
@@ -69,32 +59,32 @@ Source changes:
 - Added ARDY/BRDY signal read handlers to Z80 PIO [Curt Coder].
 - Implemented 'key matrix' inputs in King Derby (1986 version) [Angelo Salese].
 - namcos23 updates [R. Belmont]:
-  * Preliminary SH-2 hookup for GMEN games.  SH-2 boots and copies the loader to private RAM then jumps to it.  Transfer protocol for main program not yet understood.
+  * Preliminary SH-2 hookup for GMEN games. SH-2 boots and copies the loader to private RAM then jumps to it. Transfer protocol for main program not yet understood;
   * Final Furlong 2 has a GMEN board and camera; update it to use that subdriver.
 - Implemented sound to King Derby (1986 version) [Angelo Salese].
 - Implemented coins to King Derby (1986 version), game can be considered as working right now [Angelo Salese].
 - namcos23 updates [R. Belmont]:
-  * Hooked up start/coin/buttons for Gorgon.
-  * Fixed Panic Park crash.
-  * Enabled I/O board for timecrs2c so it can coin up.
+  * Hooked up start/coin/buttons for Gorgon;
+  * Fixed Panic Park crash;
+  * Enabled I/O board for timecrs2c so it can coin up;
   * Cleanup.
 - SDL: fix Fortify-reported stack smash [Belegdol].
 - New driver for Five Clown, from IGS. This is a dual 6502 system with CRT controller, AY8910 and OKI M6295. Main program, graphics and sound samples are encrypted [Roberto Fresca, Grull Osgo]:
-  * Hooked both 6502 CPU's.
-  * Hooked the M6845 CRT.
-  * Decrypted main program and bulk GFX.
-  * Decoded GFX and color PROM.
-  * Hooked both PIA's 6821.
-  * Worked inputs from the scratch.
-  * Hooked DIP Switches banks 2 & 4.
-  * Hooked proper interrupts for audio CPU.
-  * Hooked the AY8910 latches...
-  * Hooked the OKI6295.
-  * Hooked DIP switches ports $C400 & $CC00.
-  * Found the sound samples decryption algorithm.
-  * Added NVRAM support.
-  * Added a complete PCB layout.
-  * Added game notes.
+  * Hooked both 6502 CPU's;
+  * Hooked the M6845 CRT;
+  * Decrypted main program and bulk GFX;
+  * Decoded GFX and color PROM;
+  * Hooked both PIA's 6821;
+  * Worked inputs from the scratch;
+  * Hooked DIP Switches banks 2 & 4;
+  * Hooked proper interrupts for audio CPU;
+  * Hooked the AY8910 latches;
+  * Hooked the OKI6295;
+  * Hooked DIP switches ports $C400 & $CC00;
+  * Found the sound samples decryption algorithm;
+  * Added NVRAM support;
+  * Added a complete PCB layout;
+  * Added game notes;
   * Added technical notes.
 - z80sio: Added register access functions to prevent trampoline functions [Dirk Best].
 - Fixed debugger memdump command [Robbbert].
@@ -110,8 +100,8 @@ Source changes:
 - Implemented NMI enable flag in Lucky 8 Lines and Magical Odds, fixes logic quirks in the latter [Angelo Salese].
 - Improvements to Magical Odds graphics [David Haywood].
 - Written a per-pixel function for the irq system in the ST-V driver, disabled by default [Angelo Salese].
-- vimana, vimanan, vimana1 (toaplan1.c driver) [stephh] :
-  * Fixed Dip Switches and Inputs (after verification of the M68000 code).
+- vimana, vimanan, vimana1 (toaplan1.c driver) [stephh]:
+  * Fixed Dip Switches and Inputs (after verification of the M68000 code);
   * Improved MCU emulation to correctly handle coinage based on DIP Switches settings and Territory Jumper.
 - Implemented sound NMI enable flag to the Munch Mobile driver [Angelo Salese].
 - m680x0: show FPU registers in the debugger for 030+ [R. Belmont].

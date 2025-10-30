@@ -2,7 +2,7 @@
 -------------------------------------------
 
 
-MAMETesters Bugs Fixed
+MAME Testers Bugs Fixed
 ----------------------
 - 01617: [Graphics] (segag80v.c) elim2, zektor: Missing left graphics line from the boarder. (Olivier Galibert)
 - 03753: [Crash/Freeze] (psikyosh.c) daraku: [debug] Assert in debug build (Tourniquet)
@@ -72,11 +72,11 @@ Source changes:
 ---------------
 -chdman.cpp: fix for code that expects to be able to dereference a pointer that it knows may be null [Vas Crabb].
 -redumped Atomiswave BIOS, confirmed good, added information [Brizzo, MetalliC].
--screen: Add svg shapes pre-computation [O. Galibert].
+-screen: Add svg shapes pre-computation [Olivier Galibert].
 -plugins/layout: layout embedded script helper plugin [Carl].
--h8: Add dtc, dma, watchdog (WIP) [O. Galibert].
--h8: Fixes, lots of [O. Galibert] 
--cybiko: Make work a little emore, add v1 flash [O. Galibert].
+-h8: Add dtc, dma, watchdog (WIP) [Olivier Galibert].
+-h8: Fixes, lots of [Olivier Galibert] 
+-cybiko: Make work a little emore, add v1 flash [Olivier Galibert].
 -a5200: fixed regression when loading headerless carts from fullpath [Fabio Priuli].
 -neogeo.cpp: huge clean up of the cartslot code in order to better 
  exploit slot devices: [Fabio Priuli]
@@ -90,7 +90,7 @@ Source changes:
 
 -cybiko: Remove the RAM mirror, it hides when the code fails [O.Galibert]
 
--vector: Move clipping to avgdvg, the only user.  Simplify [O. Galibert]
+-vector: Move clipping to avgdvg, the only user.  Simplify [Olivier Galibert]
 
 -nes.cpp: removed configuration settings to enforce sprite limit and to
  turn off drawing of top/bottom 8 lines: the code to make these work
@@ -238,7 +238,7 @@ Source changes:
  dumps still fail (possibly due to reason unrelated to the mapper
  emulation...) [Fabio Priuli]
 
--emumem: Get rid of the install_* return value [O. Galibert]
+-emumem: Get rid of the install_* return value [Olivier Galibert]
 
 -UML: Added TZCNT instruction (Trailing Zero Count) [Ville Linde]
 

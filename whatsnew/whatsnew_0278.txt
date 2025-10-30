@@ -2,7 +2,7 @@
 ----------------
 
 
-MAME Testers bugs fixed
+MAME Testers Bugs Fixed
 -----------------------
 - 00185: [Graphics] (konami/combatsc.cpp) combatsc, combatscj, combatsct: Player names disappear during gameplay. (Jim Westfall)
 - 00401: [Graphics] (konami/contra.cpp) contra: Continue screen sprites appear after they should be cleared. (Jim Westfall)
@@ -801,7 +801,7 @@ Cal Omega - Game 7.9b (Arcade Poker, bootleg?) [Roberto Fresca, Grull Osgo, Ioan
  * Eliminate use of absolute tag by making device tag the same as that of the memory region
  * Use finder for memory region
 
--src/mame/tvgames/spg2xx.cpp: Added 2 plug and plays (#13628) [mamehaze]
+-src/mame/tvgames/spg2xx.cpp: Added 2 plug and plays (#13628) [David Haywood]
 
 New working clones
 ------------------
@@ -1389,7 +1389,7 @@ Lucky Star (newer Z180-based hardware, set 2) [Hammy]
    - wininfos that NEVER appear as panes in the main console window (e.g., logwin_info, pointswin_info, etc.) continue to use
       m_views[0]
 
--current Plug and Play PR (2 not working sets) (#13677) [mamehaze]
+-current Plug and Play PR (2 not working sets) (#13677) [David Haywood]
 
 New NOT WORKING machines
 ------------------------
@@ -1944,7 +1944,7 @@ Turbo Poker 2 (set 5) [Roberto Fresca, Grull Osgo, Ioannis Bampoulas]
 
 -remove obsolete wave (cassette sound) device [hap]
 
--Plug and Play additions (mostly JAKKS Pacific) (#13697) [mamehaze]
+-Plug and Play additions (mostly JAKKS Pacific) (#13697) [David Haywood]
 
 New working systems
 -------------------
@@ -2096,7 +2096,7 @@ Mahjong Reach Ippatsu (Japan, NM526-01) [buffi]
 
 -mm1kb: use beep_device for the beeper and remove power switch sample [hap]
 
--various VT3xx (mostly VT369) work + some other VT refactoring, many sets now boot + games selectable (#13727) [mamehaze]
+-various VT3xx (mostly VT369) work + some other VT refactoring, many sets now boot + games selectable (#13727) [David Haywood]
  * added a derived 6502 core for the VT3xx Sound CPU (built into the SoC), it has some customized opcodes
  * added enough emulation of the Sound CPU to get denv150 to pass initial checks
  * added internal SoC ROM to a number of sets that copy the sound program from it, allowing those to pass startup checks too
@@ -2238,7 +2238,7 @@ Systems promoted to working
 ---------------------------
 Super Mario Bros. 3 (Nelsonic) [Sean Riddle]
 
--Current JAKKS Pacific Plug+Play PR (5 working, 1 not working) (#13730) [mamehaze]
+-Current JAKKS Pacific Plug+Play PR (5 working, 1 not working) (#13730) [David Haywood]
 
 New working systems
 -------------------
@@ -2252,7 +2252,7 @@ New clones marked not working
 -----------------------------
 EA Sports Classics: NHL 95 & Madden 95 (JAKKS Pacific TV Game) [David Haywood, Sean Riddle, TeamEurope]
 
--move some salter sets around  (gaelco2.cpp -> gaelco.cpp) so that they boot (#13744) [mamehaze]
+-move some salter sets around  (gaelco2.cpp -> gaelco.cpp) so that they boot (#13744) [David Haywood]
 
 -uchitari: small correction to svg, megaturbo: correct company string typo [hap]
 
@@ -2359,7 +2359,7 @@ Vinni-Pukh (Elektronika) [Milan Galcik, Igor Nys]
 
 -update.sh: be silent when there's nothing to do [Olivier Galibert]
 
--JAKKS Pacific Plug and Play PR (4 WORKING machines, 2 NOT WORKING machines) (#13749) [mamehaze]
+-JAKKS Pacific Plug and Play PR (4 WORKING machines, 2 NOT WORKING machines) (#13749) [David Haywood]
 
 New working systems
 -------------------
@@ -2480,7 +2480,7 @@ ZX Football Manager 2005 (128K) [Spectrum Computing]
 -docs: fix spacing after prev commit [hap]
 
 -vt369 - allow rtvgc300/rtvgc300fz to display menus / select games, vt32 - preliminary support for new video mode used by lxpcsp
- (#13748) [mamehaze]
+ (#13748) [David Haywood]
  * added basic support for 'high resolution' mode on VT369 (currently renders at standard resolution, but the tiles used are now
     correct)
  * added another new sprite mode, used in high res mode
@@ -2654,7 +2654,7 @@ Surf Planet (version 1.0) [Josep Quingles, Recreativas.org]
 
 -z80: support accessing F register in debugger [hap]
 
--current JAKKS Pacific PR - 1 redump, 8 new sets (#13761) [mamehaze]
+-current JAKKS Pacific PR - 1 redump, 8 new sets (#13761) [David Haywood]
 
 New working systems
 -------------------
@@ -2675,7 +2675,7 @@ Thomas & Friends - Right on Time (JAKKS Pacific TV Game) (Jun 28 2006 18:01:22) 
 
 -redumped "Wall-E (JAKKS Pacific TV Game) (Dec 18 2007 11:34:25)" [TeamEurope]
 
--moved a handful of sets around, reordered a few things by manufacturer in driver [mamehaze]
+-moved a handful of sets around, reordered a few things by manufacturer in driver [David Haywood]
 
 -gaelco/gaelco3d.cpp: Add new Speed Up clones (#13772) [ClawGrip]
 
@@ -2782,7 +2782,7 @@ Little Witch (Ver. EN.01.A) [Ioannis Bampoulas]
 
 -sega/system16.cpp: added MCU dump for wb3bble [f205v]
 
--SunPlus based Plug & Play additions (2 working additions, 5 non-working) (#13778) [mamehaze]
+-SunPlus based Plug & Play additions (2 working additions, 5 non-working) (#13778) [David Haywood]
 
 New working systems
 -------------------
@@ -3084,7 +3084,7 @@ Xor World (ver 1.2, checksum DB5D10, prototype) [Josep Quingles, Recreativas.org
 
 -cardline: Fix dot clock in screen configuration [AJR]
 
--gaelco/wrally_ms.cpp: start fleshing out wrallymp a little, game now boots and shows plenty (#13805) [mamehaze]
+-gaelco/wrally_ms.cpp: start fleshing out wrallymp a little, game now boots and shows plenty (#13805) [David Haywood]
 
 -gaelco/wrally.cpp, gaelco/wrally_ms.cpp: add Championship suffix to all titles, wrallymp Rally -> Rallye [angelosa]
 
@@ -3120,7 +3120,7 @@ Majiang Zhi Zun (S100CN) [little0]
 Tian Sheng Hao Shou (V101CN) [little0, Mr. Kong]
 Xi You Dou Niu (S110CN) [little0]
 
--gaelco/wrally.cpp - improve set ordering based on research, fix a typo (#13806) [mamehaze]
+-gaelco/wrally.cpp - improve set ordering based on research, fix a typo (#13806) [David Haywood]
 
 -debugcmd: no need to try to convert string_view to const char*, fix possible nullptr access [hap]
 
@@ -3134,7 +3134,7 @@ New working clones
 ------------------
 Rock'n MegaSession (Japan, ver 1.0) [buffi]
 
--7 SunPlus plug and play dumps (#13801) [mamehaze]
+-7 SunPlus plug and play dumps (#13801) [David Haywood]
 
 New working systems
 -------------------
@@ -3215,9 +3215,9 @@ Tarzan (V106FA) [Ioannis Bampoulas]
 -machine/applepic.cpp: Don't let the 6502 program see masked IRQs as active.  Fixes System 7.5+ hanging on boot with IOP-accelerated
  LocalTalk. [R. Belmont]
 
--Current Plug & Play set additions - added 2 working games + 11 not working (#13813) [mamehaze]
+-Current Plug & Play set additions - added 2 working games + 11 not working (#13813) [David Haywood]
 
--Update xavix_2002.cpp - replace bad dump on xavpkjr (#13821) [mamehaze]
+-Update xavix_2002.cpp - replace bad dump on xavpkjr (#13821) [David Haywood]
 
 -sharp/mz2000.cpp: enable floppy sounds [angelosa]
 
@@ -3243,13 +3243,13 @@ Tarzan (V106FA) [Ioannis Bampoulas]
  * Add provisional A/D interface (not hooked up to anything yet)
  * Respect direction settings when reading from ports
 
--fixed wrallymp priorities, promoted to working (#13822) [mamehaze]
+-fixed wrallymp priorities, promoted to working (#13822) [David Haywood]
 
 New working clones
 ------------------
 World Rallye Championship (prototype on Modular System, 23 Nov 1992) [Javier Valero, Recreativas.org, David Haywood]
 
--improvements to the modular system version of XorWorld, promote to working (#13802) [mamehaze]
+-improvements to the modular system version of XorWorld, promote to working (#13802) [David Haywood]
 
 New working systems
 -------------------
@@ -3539,7 +3539,7 @@ Xin Jin Huang Guan (V400CN) [little0]
 
 -nichibutsu/cclimber.cpp: dumped PROM internal to the CPU module for cclimber [Domenico Cervini]
 
--ekara_cart.xml: Added the last known Kids' Song 20 cartridge and twelve used e-kara Web cartridges. (#13820) [mamehaze]
+-ekara_cart.xml: Added the last known Kids' Song 20 cartridge and twelve used e-kara Web cartridges. (#13820) [David Haywood]
 
 New working software list items (ekara_cart.xml)
 ------------------------------------------------
@@ -3661,7 +3661,7 @@ Tai Pan Money (Nova) [stonedDiscord]
 Asterix und Kleopatra (Stella) [stonedDiscord]
 Turbo Sunny (Mega) [stonedDiscord]
 
--7 new Plug & Play dumps (#13825) [mamehaze]
+-7 new Plug & Play dumps (#13825) [David Haywood]
 
 New systems marked not working
 ------------------------------
@@ -3831,7 +3831,7 @@ Triton Music Workstation/Sampler (v2.5.0) [hap]
 
 -a2bus/a2ieee488.cpp: Added support for the Apple IEEE-488 Card. [R. Belmont, Golden Child]
 
--current plug & play PR (4 non-working machines, 4 non-working software list entries) (#13848) [mamehaze]
+-current plug & play PR (4 non-working machines, 4 non-working software list entries) (#13848) [David Haywood]
 
 New software list items marked not working
 ------------------------------------------
@@ -3842,7 +3842,7 @@ XaviX Aero Check & Balance (XaviXPORT, Japan) [TeamEurope]
 
 New software list items marked not working
 ------------------------------------------
-smartcycle_cart.xml: [mamehaze]
+smartcycle_cart.xml: [David Haywood]
 Discover the Dinosaurs (0308) [TeamEurope]
 Learning Adventure (0608) [TeamEurope]
 The Penguins of Madagascar (1410) [TeamEurope]
@@ -3871,7 +3871,7 @@ New systems marked not working
 ------------------------------
 Mahjong Sweet Academy (Japan, TSM010-002) [buffi]
 
--xavix_2002.cpp - added Ultraman 2 (#13858) [mamehaze]
+-xavix_2002.cpp - added Ultraman 2 (#13858) [David Haywood]
 
 new NOT WORKING machines
 ------------------------
@@ -3957,7 +3957,7 @@ Animal Wonders (ver A900, Bicigo bootleg) [Ioannis Bampoulas]
 
 -tmnt: lower overall volume [hap]
 
--Current Plug and Play / Handhelds PR - added Lexibook Pocket Spiderman (#13872) [mamehaze]
+-Current Plug and Play / Handhelds PR - added Lexibook Pocket Spiderman (#13872) [David Haywood]
 
 new NOT WORKING machines
 ------------------------

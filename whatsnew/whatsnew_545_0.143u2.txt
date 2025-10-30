@@ -25,8 +25,8 @@ Quiz Punch [Guru]
 Castle Revolution [David Haywood]
 
 
-MAMETesters Bugs Fixed (7):
----------------------------
+MAME Testers Bugs Fixed (7):
+----------------------------
 - 04242: [Graphics] All sets in m62.c and phoenix.c: Colors appears "washed out" (hap)
 - 04432: [Crash/Freeze] destroyr, destroyr1: Irratic timing and crash (hap)
 - 02729: [Core] tms9928a.c: wrong address write, wrong sprite overflow (hap)
@@ -68,17 +68,17 @@ Source changes:
 - cave.c: Added a PCB layout for Hotdog Storm as well as some addition notes/information [Brian Troha].
 - chaknpop.c: Added a fully documented PCB layout for Chack'n Pop [Guru]. Added DIP switch locations to Chack'n Pop [Brian Troha].
 - If a ROM is bad for a clone but is good for the parent then it doesn't count towards the clone being found. optimized also_used_by_parent & uses the length as well as hashes [smf].
-- m68k: Generate a per-cpu-type jump table. Correct linef handling makes the atari st less cranky [O. Galibert].
+- m68k: Generate a per-cpu-type jump table. Correct linef handling makes the atari st less cranky [Olivier Galibert].
 - Added the AMS40041 variant (used in the Amstrad PC1512) to mc6845.c [Curt Coder].
 - Fixed double-free of d3d->hlsl [Oliver Stoneberg].
 - tagteam.c misc cleanups [hap]:
-  * Fixed maincpu IRQs.
-  * Added resnet for color PROM.
-  * Added coincounters.
+  * Fixed maincpu IRQs;
+  * Added resnet for color PROM;
+  * Added coincounters;
   * Added DIP locations.
 - m62.c: Amplified default contrast, this fixes washed out colors [hap].
 - Major organization, documentation and addition of numerous (over 1600) gambling game titles covering the following systems [David Haywood]:
-  * Aristocrat MK6.
-  * Barcrest MPU3, MPU4, MPU4 (Video), MPU5.
-  * JPM Impact, MPS1, MPS2, System 5, System 5 (Video), System 6, System 6 (Video), System 80.
+  * Aristocrat MK6;
+  * Barcrest MPU3, MPU4, MPU4 (Video), MPU5;
+  * JPM Impact, MPS1, MPS2, System 5, System 5 (Video), System 6, System 6 (Video), System 80;
   * Maygay EPOCH, MV1.

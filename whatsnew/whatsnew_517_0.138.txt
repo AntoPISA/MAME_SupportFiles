@@ -2,30 +2,12 @@
 -------------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
-- 03683: [Crash/Freeze] topgunnr: Crashes MAME after INSERT COIN/GAME START (hap).
-- 02878: [Speed] simpsons and clones: Vertical refresh rate (hap).
-- 03273: [Original Reference] brubber, bnj, caractn: Incorrect screen resolution for Burnin' Rubber and clones (hap).
-- 03492: [Crash/Freeze] hunchbkg: Does not boot (Couriersud).
-- 03657: [Crash/Freeze] All sets in maxaflex.c: Random crashes (Firewave).
-- 03765: [Crash/Freeze] qdrmfgp2: ASSERT after OK (hap).
-- 03823: [Color/Palette] pc_miket: Bad colours (Alex Jackson).
-- 03047: [Graphics] elevator, elevatorb: Some graphics on the escalators shift when you ride on them (hap).
-- 03628: [Graphics] alpine: Red point on the title screen (MASH).
-- 03033: [Graphics] vendetta: Sprite priority problem in the 3rd stage (hap).
-- 03647: [Graphics] All games in vendetta.c: Graphical error in the intro scene of the game (hap).
-- 03834: [Sound] qtheater: No sound (hap).
-- 03830: [Crash/Freeze] All sets in harddriv.c: Message: Duplicate save state registration entry (DSP32C/dsp32/0/cpustate->pin) (Tafoid).
-- 00390: [DIP/Input] spaceftr: does not allow you to turn to the right (hap).
-
-
-New games added or promoted from NOT_WORKING status
+New Games Added or Promoted from NOT_WORKING Status
 ---------------------------------------------------
 New Lucky 8 Lines / New Super 8 Lines (F-5, Witch Bonus) [Roberto Fresca, incog, Smitdogg, The Dumping Union]
 International Team Laser (prototype) [ranger_lennier, genieta1, J. Ferneborg, Smitdogg, italie, David Haywood, The Dumping Union]
 
-New clones added
+New Clones Added
 ----------------
 Desert Breaker (Japan) [Team Japump, Dumping Union]
 Youma Ninpouchou (Japan, alt) [Takahiro Nogi]
@@ -41,7 +23,7 @@ Dungeons & Dragons: Tower of Doom (Hispanic 940113) [Kevin Eshbach, Layne, Gor, 
 Pac-land (Japan, older) [Team Japump]
 Photo Y2K (ver. 105) [XingXing]
 
-New games marked as GAME_NOT_WORKING
+New Games Marked as GAME_NOT_WORKING
 ------------------------------------
 Taiko no Tatsujin 10 (T101001-NA-A) [Guru]
 Dragon World 3 EX (ver. 100) [Guru]
@@ -51,15 +33,33 @@ Chance Kun [ranger_lennier, incog, Smitdogg, The Dumping Union]
 Photo Y2K 2 [Guru]
 
 
+MAME Testers Bugs Fixed (14):
+----------------------------
+- 03683: [Crash/Freeze] topgunnr: Crashes MAME after INSERT COIN/GAME START (hap)
+- 02878: [Speed] simpsons and clones: Vertical refresh rate (hap)
+- 03273: [Original Reference] brubber, bnj, caractn: Incorrect screen resolution for Burnin' Rubber and clones (hap)
+- 03492: [Crash/Freeze] hunchbkg: Does not boot (Couriersud)
+- 03657: [Crash/Freeze] All sets in maxaflex.c: Random crashes (Firewave)
+- 03765: [Crash/Freeze] qdrmfgp2: ASSERT after OK (hap)
+- 03823: [Color/Palette] pc_miket: Bad colours (Alex Jackson)
+- 03047: [Graphics] elevator, elevatorb: Some graphics on the escalators shift when you ride on them (hap)
+- 03628: [Graphics] alpine: Red point on the title screen (MASH)
+- 03033: [Graphics] vendetta: Sprite priority problem in the 3rd stage (hap)
+- 03647: [Graphics] All games in vendetta.c: Graphical error in the intro scene of the game (hap)
+- 03834: [Sound] qtheater: No sound (hap)
+- 03830: [Crash/Freeze] All sets in harddriv.c: Message: Duplicate save state registration entry (DSP32C/dsp32/0/cpustate->pin) (Tafoid)
+- 00390: [DIP/Input] spaceftr: does not allow you to turn to the right (hap)
+
+
 Source changes:
 ---------------
 - New Lucky 8 Lines hardware [Roberto Fresca]:
-  * Added lamps support to lucky8, lucky8a, lucky8b, ns8liner, ns8linew and kkojnoli.
-  * Created lamps layout for the above sets.
-  * New inputs for ns8linew. This set has a second set of inputs, and can be switched between them. No lamps activity or Big/Small buttons are present while this alternative controls are used. Maybe is a leftover.
-  * Some DIP Switches were figured out. Coinage and limits are still a real mystery since all DIP switches are reflected in the test mode.
-  * Remapped inputs to be straightforward with the control panel.
-  * Added the type (W-4/F-5) to the sets description.
+  * Added lamps support to lucky8, lucky8a, lucky8b, ns8liner, ns8linew and kkojnoli;
+  * Created lamps layout for the above sets;
+  * New inputs for ns8linew. This set has a second set of inputs, and can be switched between them. No lamps activity or Big/Small buttons are present while this alternative controls are used. Maybe is a leftover;
+  * Some DIP Switches were figured out. Coinage and limits are still a real mystery since all DIP switches are reflected in the test mode;
+  * Remapped inputs to be straightforward with the control panel;
+  * Added the type (W-4/F-5) to the sets description;
   * General inputs clean-up.
 - suna8.c: Updated documentation for Strike Fighter to include the game number, PCB number and epoxy CPU [Fabrizio Vasile].
 - Jaguar: Fixed RGB VARMOD mode [Angelo Salese].

@@ -2,29 +2,7 @@
 -------------------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
-- 00032: [Graphics] (taito_f3.c) tcobra2: There are stray flashing pixels on the bottom left of the helicopter. (David Haywood)
-- 00416: [Crash/Freeze] (ddragon.c) ddragonw1: When finishing the game its reset and so go to check ROM screen again and freezes! (Phil Bennett)
-- 00942: [Sound] (topspeed.c) topspeed: Engine sounds only play when driving in tunnels or under bridges, and turbo sounds never play. (Phil Bennett)
-- 00980: [Sound] (taito_b.c) tetrist: The sound has strange intermittent noise in background. Also, the music tempo is wrong (Brian Troha)
-- 02106: [Speed] (ddragon.c) ddragon2, ddragon2u: [possible] The game slows down in the first level, after the helicopter appears (Phil Bennett)
-- 03908: [Graphics] (ddragon.c) ddragon2, ddragon2u: [possible] Missing graphics when starting 2-Player (Phil Bennett)
-- 05056: [Crash/Freeze] (badlands.c) badlandsb, badlandsb2: Access Violation after OK (Osso)
-- 05089: [Crash/Freeze] (aristmk5.c) goldprmd, magicmsk: Crash after OK (Firewave)
-- 05162: [Core] Toggling HLSL off then on with ctrl-alt-F5 will drop its use of aperture.png (MooglyGuy)
-- 05207: [Graphics] All vector games: In the vector games, graphics remains imprinted even when exit the game. (MooglyGuy)
-- 05214: [Color/Palette] (bzone.c) bzone: bzone displays black and white. (MooglyGuy)
-- 05218: [Graphics] crash when hlsl_read is set to 1 (MooglyGuy)
-- 05235: [Core] You can't alt-tab and back with HLSL enabled and in 148 you could (MooglyGuy)
-- 05241: [Misc.] (moo.c) All moo.c sets: AddressSanitizer: heap-use-after-free (Firewave)
-- 05268: [Color/Palette] (mappy.c) todruaga: Sprites use wrong colors (Osso)
-- 05281: [Color/Palette] (8080bw.c) rollingc: Wrong colors (hap)
-- 05284: [Sound] exprraid and clones: YM3526 has incorrect frequency (Phil Bennett)
-- 05287: [DIP/Input] (namcos2.c) sgunner2, sgunner2j: Player 2 Start missing (Tafoid)
-
-
-New games added or promoted from NOT_WORKING status
+New Games Added or Promoted from NOT_WORKING Status
 ---------------------------------------------------
 Casanova [Yohji, Smitdogg, The Dumping Union, David Haywood, Mariusz Wojcieszek]
 Double Wings [Charles MacDonald, David Haywood]
@@ -37,7 +15,7 @@ Super Game Mega Type 1 [Tirino73, Mariusz Wojcieszek]
 Tap a Tune [Phil Bennett, Mariusz Wojcieszek]
 Touchstar Bonanza [Mariusz Wojcieszek]
 
-New clones added
+New Clones Added
 ----------------
 Bubble Bobble II (Ver 0.0J 1993/12/13, prototype) [Dsyde, muddymusic]
 Chase Bombers (Japan) [ShouTime, The Dumping Union]
@@ -76,10 +54,32 @@ Trivia Madness - Series B Question set [mister_rf, Paul Vining, Brian Troha, The
 Turbo Out Run (Japan, Out Run upgrade, FD1094 317-0117) [Charles MacDonald, ShouTime, The Dumping Union]
 Violent Storm (ver EAC) [RanaElia]
 
-New games marked as GAME_NOT_WORKING
+New Games Marked as GAME_NOT_WORKING
 ------------------------------------
 Casanova [Yohji, Smitdogg, The Dumping Union]
 Usagi Online (v2.04J) [ShouTime, The Dumping Union, R. Belmont]
+
+
+MAME Testers Bugs Fixed (18):
+----------------------------
+- 00032: [Graphics] (taito_f3.c) tcobra2: There are stray flashing pixels on the bottom left of the helicopter (David Haywood)
+- 00416: [Crash/Freeze] (ddragon.c) ddragonw1: When finishing the game its reset and so go to check ROM screen again and freezes! (Phil Bennett)
+- 00942: [Sound] (topspeed.c) topspeed: Engine sounds only play when driving in tunnels or under bridges, and turbo sounds never play (Phil Bennett)
+- 00980: [Sound] (taito_b.c) tetrist: The sound has strange intermittent noise in background. Also, the music tempo is wrong (Brian Troha)
+- 02106: [Speed] (ddragon.c) ddragon2, ddragon2u: [possible] The game slows down in the first level, after the helicopter appears (Phil Bennett)
+- 03908: [Graphics] (ddragon.c) ddragon2, ddragon2u: [possible] Missing graphics when starting 2-Player (Phil Bennett)
+- 05056: [Crash/Freeze] (badlands.c) badlandsb, badlandsb2: Access Violation after OK (Osso)
+- 05089: [Crash/Freeze] (aristmk5.c) goldprmd, magicmsk: Crash after OK (Firewave)
+- 05162: [Core] Toggling HLSL off then on with ctrl-alt-F5 will drop its use of aperture.png (MooglyGuy)
+- 05207: [Graphics] All vector games: In the vector games, graphics remains imprinted even when exit the game (MooglyGuy)
+- 05214: [Color/Palette] (bzone.c) bzone: bzone displays black and white (MooglyGuy)
+- 05218: [Graphics] crash when hlsl_read is set to 1 (MooglyGuy)
+- 05235: [Core] You can't alt-tab and back with HLSL enabled and in 148 you could (MooglyGuy)
+- 05241: [Misc.] (moo.c) All moo.c sets: AddressSanitizer: heap-use-after-free (Firewave)
+- 05268: [Color/Palette] (mappy.c) todruaga: Sprites use wrong colors (Osso)
+- 05281: [Color/Palette] (8080bw.c) rollingc: Wrong colors (hap)
+- 05284: [Sound] exprraid and clones: YM3526 has incorrect frequency (Phil Bennett)
+- 05287: [DIP/Input] (namcos2.c) sgunner2, sgunner2j: Player 2 Start missing (Tafoid)
 
 
 Source changes:
@@ -89,8 +89,8 @@ Source changes:
 - Updated all devices that currently had an m_screen in them to use the device_video_interface instead. This also has the nice benefit of flagging video-related devices for categorization purposes. It also means all these devices inherit the same screen-finding behaviors. For devices that had interfaces that specified a screen tag, those have been removed and all existing structs updated [Aaron Giles].
 - Added an optional_device<screen_device> m_screen to the base driver_device. If you name your screen "screen" (as most drivers do), you will have free access to your screen this way [Aaron Giles].
 - Future updates include [Aaron Giles]:
-  * Updating all devices referencing machine.primary_screen to use the  device_video_interface instead.
-  * Updating all drivers referencing machine.primary_screen to use the m_screen instead.
+  * Updating all devices referencing machine.primary_screen to use the  device_video_interface instead;
+  * Updating all drivers referencing machine.primary_screen to use the m_screen instead;
   * Removing machine.primary_screen entirely.
 - i286: modernize [Carl].
 - Modernized galeco, okim6376, vr0video, mb87078, snk6502 devices [Osso].
@@ -103,14 +103,14 @@ Source changes:
 - ym2413.c: Reverted KSL value order to 0, 1.5, 3.0, 6.0dB/oct after testing with a real YM2413 [Wouter Vermaelen].
 - Modernized galaxian sound device [Osso].
 - Split eeprom.c into a base class base_eepr-om_device and a [Aaron Giles]:
-  * serial-specific subclass serial_eeprom_device.
+  * serial-specific subclass serial_eeprom_device;
   * Moved the latter into its own file eepromser.c and significantly cleaned up/simplified the code. The new code should be functionally the same as the previous code, but expect that to change soon. As a side-effect, the size and bus width of the EEPROM is now specified in the ADD macro rather than in the interface structure.
 - Rewrite serial EEPROM devices, breaking them out into separate chips. If the proper size and protocol. Update all drivers, removing custom implementations, and replacing them with standard ones. Moved core read, write, erase functionality into the EEPROM base class a simulated delays in write/erase cycles. Still some more testing/verification work left to do [Aaron Giles].
 - Add support for CD2501ECD variant of tms52xx, used in the TI 99/A prototype. Renamed TMC0285 to the more correct CD2501E in the TI 99/4a [mizapf, Lord Nightmare].
 - Started integrating DECO104 findings from Charles, done a preliminary hookup of Double Wings to it (input ports bit order not yet verified). Nuked old bad simulation code for DW [Charles MacDonald, David Haywood].
 - Modernized MultiPCM, mjkjidai, renegage, ninjaw_subwoofer devices [Osso].
-- 3x3puzzl.c: Correct dipswitches and add dipswitch locations for Casanova [Brian Troha].
-- opwolf.c: fix coinage dips in opwolfj [Alex Jackson].
+- 3x3puzzl.c: Correct DIP switches and add DIP switch locations for Casanova [Brian Troha].
+- opwolf.c: Fix coinage dips in opwolfj [Alex Jackson].
 - Fixed undefined order of evaluation in FETCH* and READ* functions in src/emu/cpu/i386/i386priv.h [Carl, Oliver Stoneberg].
 - Modernized the s14001a and exidy sound devices [Osso].
 - Modernized the Seibu ADPCM device and converted the Seibu sound system to be a device [Osso].
@@ -123,44 +123,44 @@ Source changes:
 - SDL: Revise the *IX man pages  [wallyweek].
 - Moved tilemap_memory into a generic memory_array class, since it is more generally useful than just in tilemaps. Code is now in memarray [Aaron Giles].
 - Converted the Atari RLE motion objects device from a half-assed device. Into a full-assed device, leveraging the memory_array class [Aaron Giles].
-- neogeo.c: fix memory leak, clean up inputs a bit [Alex Jackson].
+- neogeo.c: Fix memory leak, clean up inputs a bit [Alex Jackson].
 - Added eeprompar.*, implementing a simple interface for parallel [Aaron Giles].
 - Created atari_eeprom_device which wraps a 2804 or 2816 EEPROM with the standard Atari write-locking mechanism. Updated all drivers to use this, and removed all EEPROM stuff from atarigen [Aaron Giles].
 - wd_fdc: Don't switch off the motor when the fdc doesn't have a motor control pin [O. Galibert, Duke].
 - Assorted fixes based on PCB observations [system11]:
-  * galpanic.c - Fixed ROM names for newfant and added new set.
-  * splash.c - Adjusted msm5205 clocks to proper values.
-  * tumblep.c - Fixed sound hardware speeds to match PCB for chokchok, htchctch and cookbib.
+  * galpanic.c: Fixed ROM names for newfant and added new set.
+  * splash.c: Adjusted msm5205 clocks to proper values.
+  * tumblep.c: Fixed sound hardware speeds to match PCB for chokchok, htchctch and cookbib.
 - segas16b.c: Corrected ROM labels and added PCB locations to the MVP (set 2, US, FD1094 317-0143) set [Layne].
-- sandscrp.c: Added dipswitch locations and corrected default settings for the Sand Scorpion sets [Brian Troha].
+- sandscrp.c: Added DIP switch locations and corrected default settings for the Sand Scorpion sets [Brian Troha].
 - MC6801/6803 updates [R. Belmont]:
-  * Support for timer output capture to pin P21.
-  * Support for externally-clocked serial.
+  * Support for timer output capture to pin P21;
+  * Support for externally-clocked serial;
   * Added devcb2 hook for serial xmit to easily differentiate xmit from other Port 2 updates.  Bits are still also sent to Port 2 of course.
 - captcommb: Various graphical issues fixed, marked as working [Barry Harris].
 - taito_b.c: Correct the Tetris C12 set and fill in missing Nastar roms needed for the conversion, correcting missing sound samples. Added a note about the missing PALs for both Tetris B-System conversions [Brian Troha].
-- altbeastbl - hook up gfx writes properly [Barry Harris].
-- taitosnd.c - Improve TC0140SYT/PC060HA NMI handling, preventing lost interrupts [Phil Bennett].
+- altbeastbl: Hook up gfx writes properly [Barry Harris].
+- taitosnd.c: Improve TC0140SYT/PC060HA NMI handling, preventing lost interrupts [Phil Bennett].
 - topspeed.c: Various updates [Phil Bennett, Andy Welburn]:
-  * Fixed MSM5205 hookups and implemented engine sound.
-  * Added Z80 CTC.
-  * Added volume controls.
-  * Corrected 68000 clocks and VSYNC frequency.
-  * Changed interrupt handling to match hardware.
-  * Added motor control notes.
+  * Fixed MSM5205 hookups and implemented engine sound;
+  * Added Z80 CTC;
+  * Added volume controls;
+  * Corrected 68000 clocks and VSYNC frequency;
+  * Changed interrupt handling to match hardware;
+  * Added motor control notes;
   * Fixed sprite list parsing (no more mysterious red dot on the far left).
   * Corrected b14-67-1/b14-68-1 ROM locations.
 - PGM: Implement some missing asic25/asic28 registers. This fixes the high score screen for olds & clones [rockywall, Creamy Mami].
 - multipcm: Use address space instead of direct memory region [R. Belmont].
 - chihiro.c [Samuele Zannoli]:
-  * Add more patches needed until usb is implemented.
+  * Add more patches needed until usb is implemented;
   * Add support for more texture formats and drawing primitives to the 3D accelerator.
 - Separate Ensoniq "pump" device out from esq5505.c [R. Belmont].
 - Replace badly dumped sprite ROM in tcobra2 + clones [Kevin Eshbach].
 - cninja.c: Corrected redump of Caveman Ninja (World Rev 1) and added PCB locations to the original Caveman Ninja sets [Bonky0013, The Dumping Union].
 - Added Macronix 29LV160TMC sub-type to intelfsh.c, used by Sega Dreamcast [Angelo Salese].
-- i186: move 80186 peripherals into the cpu [Carl].
-- leland: finish modernizing the leland sound and use new 80186 [Carl].
+- i186: Move 80186 peripherals into the cpu [Carl].
+- leland: Finish modernizing the leland sound and use new 80186 [Carl].
 - cps1.c: Added correct MBJ 22B ROM to Muscle Bomber: The Body Explosion (Japan 930713) set [Layne, Smitdogg, The Dumping Union].
 - Fix sprite priority issues in nmk16.c (tested on tdragon2 PCB) [trap15].
 - Fixed dblewing Lives dip switch [lain].
@@ -168,15 +168,15 @@ Source changes:
 - segae.c: clean up, add savestate support [Alex Jackson].
 - terracre.c: Remove nonexistent second ym2203 from terracren. Remove silly input port hack from horekid [Alex Jackson].
 - ISA16_IDE_CD in southbridge_device with two BUS_MASTER_IDE_CONTROLLERs [smf].
-- snk68.c: Added dipswitch locations to all sets in the driver [Brian Troha].
+- snk68.c: Added DIP switch locations to all sets in the driver [Brian Troha].
 - cave.c: Correct name to Guwange (Japan, Special Ver. 00/07/07) as verified by hex editor [Brian Troha].
 - 8080bw.c: fix setnames for Space Invaders (TV/Cocktail version) sets based on recent dump: sitva->sitv (newer 'tv0h' version), sitv->sitvo (older 'tv01' version) [Lord Nightmare, Andrew Welburn]
 - Removed local ATAPI code in preparation to use the new code, but the CPU gets lost after executing the first instruction [smf].
 - Refactored to use ATA_INTERFACE [smf].
 - HLSL updates [MooglyGuy]:
-  * Removed hlsl_read and hlsl_write options now that all slider options are plumbed and have values matching the INI settings.
-  * Added more surface release calls in order to fix device resetting.
-  * Fixed draw order for quads, overlays now appear on top of vectors in non-HLSL mode.
+  * Removed hlsl_read and hlsl_write options now that all slider options are plumbed and have values matching the INI settings;
+  * Added more surface release calls in order to fix device resetting;
+  * Fixed draw order for quads, overlays now appear on top of vectors in non-HLSL mode;
   * Moved aperture.png loading into create_resources/delete_resources so that it is correctly reloaded when HLSL is toggled on and off.
 - galpani2.c: Added complete PCB layout [Guru].
 - galpani2.c: Added Dipswitch locations to all sets [Brian Troha].
@@ -185,11 +185,11 @@ Source changes:
 - updated zlib to 1.2.8 [Oliver Stoneberg].
 - Made both DRC and Non-DRC compile for MIPS, RSP and SH2 core and added option to enable/disable DRC from command line (-drc -nodrc  by default it's on) [Miodrag Milanovic].
 - Added command line option to force DRC C backend [Miodrag Milanovic].
-- SCSP: hooked up DGATE functionality for DMA [Angelo Salese].
+- SCSP: Hooked up DGATE functionality for DMA [Angelo Salese].
 - AICA: Implemented DMA [Angelo Salese].
 - SCSP: fixed DMA when SH-2 enables it [Angelo Salese].
 - PowerVR2: Added SPG control register, used to change pixel clock dynamically [Angelo Salese].
-- nemesis.c dipswitch fixes: Rename "Upright Controls" dipswitch to "Players" in gwarrior and twinbee, and make 2 players default (neither game supports cocktail cabinets). Make default difficulty normal in all games [Alex Jackson].
+- nemesis.c DIP switch fixes: Rename "Upright Controls" DIP switch to "Players" in gwarrior and twinbee, and make 2 players default (neither game supports cocktail cabinets). Make default difficulty normal in all games [Alex Jackson].
 - PowerVR2: Added preliminary YUV converter [Angelo Salese].
 - Refactored Konami System 573 to use ATA_INTERFACE [smf].
 - AICA: Hooked up AICA-to-SH-4 irqs [Angelo Salese].
@@ -198,18 +198,18 @@ Source changes:
 - PowerVR: Support for non-textured polygons with packed and floating colors [Angelo Salese].
 - namcos22: revised hardware info [Guru].
 - Updates to jedutils and other minor things [Kevin Eschbach]:
-  * Documentation on the earlier version of the Deco Cassette System
-  * Documented some pals on a bootleg Free Kick that need to be dumped
-  * Documented the location of the roms on Twin Cobra 2
-  * Added support to jedutil to view the PAL20X10, PAL20X8 and PAL20X4
-  * Added some preliminary work on figuring out what the undocumented fuses for the PALCE16V8 are.  (The data sheet does not document what all of the fuses are.)
+  * Documentation on the earlier version of the Deco Cassette System;
+  * Documented some pals on a bootleg Free Kick that need to be dumped;
+  * Documented the location of the roms on Twin Cobra 2;
+  * Added support to jedutil to view the PAL20X10, PAL20X8 and PAL20X4;
+  * Added some preliminary work on figuring out what the undocumented fuses for the PALCE16V8 are (The data sheet does not document what all of the fuses are).
 - Refactored dreamcast to use an ATA interface [smf].
 - 2 new BIOS versions, 1 new CHRROM, and existing CHRROM confirmed good [Cowering].
 - stfight.c - Hooked up ADPCM/coin control MCU. Changed YM2203 clocks to 1.5MHz for cshooter and 4.5MHz for empcity/stfight (see notes) [Phil Bennett].
 - Renamed TLCS900H to TMP95C061, moved the I/O handling into it's own class & hooked up TO1/TO3 to output on Port A. A hack is needed because ngpc doesn't set PACR/PAFC, which may be because it's a custom part. Changed Taito PJC to use TMP95C063. Separated I/O Ports on both CPU's so you can apply the devcb2 callbacks individually [smf].
 - Added 8/16 bit data bus configuration to TLCS900H. Default is 16bit, neogeo pocket is 8 bit [smf].
 - ddealer.c: Correct clock speeds for Double Dealer to match PCB [system11].
-- ddealer.c: Fill in several missing dipswitch settings and add dipswitch locations [Brian Troha].
+- ddealer.c: Fill in several missing DIP switch settings and add DIP switch locations [Brian Troha].
 - trvmadns.c: Added PCB layout for Trivia Madness [Brian Troha].
 - Use 2864 for ROM. This allows XTIDECFG to flash the rom. Tested with 2.0.0 beta 3. You must disable SDP because eeprompar doesn't emulate it & you must load from a file as if you load from eeprom then it only finds zeros [smf].
 - Renamed IDE8 to XTIDE [smf].
@@ -218,13 +218,13 @@ Source changes:
 - Preliminary SET FEATURES support. Only set transfer mode is currently supported, but this checks/sets flags in the identify device buffer. The buffer has been moved up into atahle and the idehd has been changed to work with words instead of bytes [smf].
 - yunsung8.c: Added PCB layout for Cannon Ball (Vertical) [Brian Troha].
 - ddragon.c: Cleanup based on Double Dragon schematics [Phil Bennett]:
-  * Fixed sub-CPU interrupt mechanism.
-  * Implemented common RAM bus lock.
+  * Fixed sub-CPU interrupt mechanism;
+  * Implemented common RAM bus lock;
   * Added interrupt hacks.
 - peplus.c: Minor corrections and documentation updates including known payout tables for some sets [Brian Troha].
 - cubeqcpu.c, f8.c, minx.c, i8085.c, i860.c, i960.c, jaguar.c, lh5801.c, m6800.c, m37710.c, mb86233.c, mb88xx.c, mcs48.c, mc68hc11.c, mcs51.c, mn10200.c, pic16c5x.c, pic16c62x.c, tlcs900.c, pps4.c, s2650.c: Modernized cpu cores [Wilbert Pol].
 - exprraid.c: Cleanups from schematics [Phil Bennett]:
-  * Corrected CPU and YM3526 clock frequencies.
-  * Improved protection simulation.
-  * Added interrupt acks.
+  * Corrected CPU and YM3526 clock frequencies;
+  * Improved protection simulation;
+  * Added interrupt acks;
   * Added service coin input.

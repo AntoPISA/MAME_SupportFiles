@@ -40,7 +40,7 @@ Source changes:
 - Guard against OP_ROM/OP_RAM overflows. This patch adds an optional facility to guard against OP_ROM/OP_RAM overflows. This is implemented by adding new variables OP_MEM_MIN and OP_MEM_MAX that track the minimum and maximum address ranges for which using OP_ROM/OP_RAM is valid [Nathan Woods].
 - Support for this feature is enabled via conditional compilation in memory.h. There are three possible modes: CPUREADOP_SAFETY_NONE - The status quo; no range checking at all CPUREADOP_SAFETY_PARTIAL  - Range checking only against the maximum address CPUREADOP_SAFETY_FULL - Range checking against both the minimum and the maximum. This patch has MAME using CPUREADOP_SAFETY_NONE, unless MAME_DEBUG is defined in which case CPUREADOP_SAFETY_FULL is set. Thus as is, this patch should have zero effect on release versions of MAME. Additionally, being able to safely disassemble code near bank boundaries when using the MAME debugger is extremely useful. There is a slight performance hit when this is enabled.
 - DIP switch fixes:
-  * 1st dipswitch of 3rd bank in 1941 [Fabrizio Pedrazzini].
+  * 1st DIP switch of 3rd bank in 1941 [Fabrizio Pedrazzini].
   * Tetris Plus 2 (MS32 version) [Sonikos].
   * Changed nkdodgeb to use proms from another Japan bootleg set, maybe this fixes some problems with the colours [David Haywood].
 - Included 8080 core updates from MESS.

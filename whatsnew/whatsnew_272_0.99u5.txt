@@ -13,7 +13,7 @@ SAR - Search And Rescue (Japan) [Pierpaolo Prazzoli]
 American Poker II (set 4) [Roberto Fresca]
 
 
-MAMETesters Bugs Fixed (4):
+MAME Testers Bugs Fixed (4):
 ---------------------------
 - docastle093u2ora (Corrado Tomaselli)
 - mgakuen094u1gra (Roberto Fresca)
@@ -28,15 +28,15 @@ Source changes:
 - Added blending to the alt tilemap code in psikyosh.c, fixing the final boss in Sol Divide [David Haywood].
 - Improvements to the 'Witch/Pinball Champ '95' driver [Sebasten Hegon]:
   * The games now show some graphics (the palette seems OK) and play some music and sounds;
-  * Since the controls are not yet figured out completely, they are still mapped as dipswitches;
-  * An NVRAM reset is required the first time you launch Witch (via the associated dipswitch). 'Pinball Champ' seems to automatically do this;
+  * Since the controls are not yet figured out completely, they are still mapped as DIP switches;
+  * An NVRAM reset is required the first time you launch Witch (via the associated DIP switch). 'Pinball Champ' seems to automatically do this;
   * The sound part required some patching in sound/es8712.c. I disabled the hardcoded inconditional looping, and made the sound start when writing at offset 0x06 (cf patch). vmetal does not seem to be affected;
   * As far as gameplay is concerned, the ball will freeze (in game and demo mode), and I don't know why. The video hardware is not completely figured out and may be the culprit;
   * The coin in/out mecanism needs some work too.
 - Some improvements to 'Jolly Card' [Roberto Fresca]:
   * Added extra hardware info (pinouts and dips);
-  * Added the correct dipswitch to Jolly Card. Hopper and Points/pulse not tested due to preliminary driver state. The rest are working properly. Remember to delete the NVRAM and reinitialize to see some changes;
-  * Added almost the same dipswitch to Magic Card II (Bulgaria).
+  * Added the correct DIP switch to Jolly Card. Hopper and Points/pulse not tested due to preliminary driver state. The rest are working properly. Remember to delete the NVRAM and reinitialize to see some changes;
+  * Added almost the same DIP switch to Magic Card II (Bulgaria).
 - Significant changes to the save state system [Aaron Giles]:
   * Added alternate save state pre-/post-load function types that take integer or pointer parameters. Updated several sound cores and other files to take advantage of this;
   * Made state handler registrations track like other scoped resources (timers, memory) so that registrations can occur as late as MACHINE_INIT time;

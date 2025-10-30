@@ -2,7 +2,7 @@
 ---------------------------------------
 
 
-New games added or promoted from NOT_WORKING status
+New Games Added or Promoted from NOT_WORKING Status
 ---------------------------------------------------
 Ruleta RE-800 (earlier) [Roberto Fresca]
 Ruleta RE-800 (v1.0) [Roberto Fresca]
@@ -15,7 +15,7 @@ Winners Circle 82 [Roberto Fresca, Angelo Salese, Rob Ragon]
 Winners Circle (81, 28*28 PCB) [Roberto Fresca, Rob Ragon]
 Winners Circle (81, 18*22 PCB) [Roberto Fresca, Rob Ragon]
 
-New clones added
+New Clones Added
 ----------------
 Big Twin (No Girls Conversion) [Andrew Welburn, Pierpaolo Prazzoli]
 Super Star Crest [Marcello Mancini, Silvio Finotti, Augusto Garcia, hap]
@@ -38,22 +38,22 @@ Heavy Unit (U.S.A. Version) [Hurray Banana, Tormod, hotaru, Dna Disturber, F. Ma
 ATV Track (Set 2) [Guru] (not working)
 Ropeman (bootleg of Roc'n Rope) [Tafoid]
 
-New games marked as GAME_NOT_WORKING
+New Games Marked as GAME_NOT_WORKING
 ------------------------------------
 Catch (prototype) [Siftware, hap]
 Wangan Midnight Maximum Tune 2 Ver. B (Japan) (GDX-0016A) [Guru, R. Belmont]
 
 
-MAMETesters Bugs Fixed (24):
-----------------------------
+MAME Testers Bugs Fixed (24):
+-----------------------------
 - 01555: [Graphics] vanvan, vanvanb, vanvank: Graphics are corrupted (hap)
-- 02841: [Graphics] pacnpal, pacnpal2, pacnchmp: Monster's eyes are not displayed. (hap)
+- 02841: [Graphics] pacnpal, pacnpal2, pacnchmp: Monster's eyes are not displayed (hap)
 - 02175: [Graphics] drgnbstr: Priority problems (hap)
 - 03870: [Graphics] battlex: Wrong title highlighting (hap)
 - 03206: [Color/Palette] sshangha: Tile colors are wrong when you select them (David Haywood)
-- 01665: [Graphics] zigzag, zigzag2: Animation of hose does not show properly when attempting to pump enemies. (hap)
+- 01665: [Graphics] zigzag, zigzag2: Animation of hose does not show properly when attempting to pump enemies (hap)
 - 03821: [Crash/Freeze] contra, contraj, gryzor: Game freeze after the 2nd 3d stage's boss, before the level with horizontal scroll (hap)
-- 02509: [Graphics] bagmans: Glitches missing during scene change. (hap)
+- 02509: [Graphics] bagmans: Glitches missing during scene change (hap)
 - 03454: [Documentation] xeviousa, xeviousb, xeviousc: Xevious set information
 - 03225: [Misc.] razmataz: Unable to enter Service Mode (hap)
 - 03745: [Color/Palette] anteaterg, anteateruk: Underground background color is incorrect (hap)
@@ -93,67 +93,67 @@ Source changes:
 - Updated nmk/olympia/pacific/pce/phoenix/rare/seibu/seta to driver_devices [Atari Ace].
 - Updated sigma/stern/subsino/tatsumi/tch/tecfri/technos/tehkan to driver_devices [Atari Ace].
 - roul.c: Fixed Dip Switches and Inputs (after verification of the Z80 code) [stephh].
-- ksys573: Fix some wrong machine driver selections [O. Galibert].
+- ksys573: Fix some wrong machine driver selections [Olivier Galibert].
 - Allow serial receive without ES enabled [Couriersud].
 - sgnascar: Added dump of mask ROMs [Guru, R. Belmont].
 - Added correct bitswap for point blank 3 [smf].
-- inptport: Add existence and used bits interface for automatic controller adaptation [O. Galibert].
+- inptport: Add existence and used bits interface for automatic controller adaptation [Olivier Galibert].
 - Converted PSX CPU core to C++ [smf].
 - corona.c driver improvements. A lot of input/output work, accurate periodic interrupt timing for sound CPU, meters, DIP switches, and other minor things. We got Winners Circle 82 playable [Roberto Fresca].
 - More improvements to corona.c driver. Splitted new machine, memory map, and complete multiplexed inputs/outputs for Lucky Roulette type games. Also added NVRAM and inverted blitter [Roberto Fresca].
 - Implemented MC6845 row/column addressing mode [Curt Coder].
 - Make shift/alt+right work on channel volume sliders (fractions between 0 and 1 were always rounded down) [hap].
 - splash.c driver improvements [Tomasz Slanina]:
-  * The Return of Lady Frog: added sound.
+  * The Return of Lady Frog: added sound;
   * Funny Strip: added sound, patched few more protection checks, fixed sprite RAM access.
 - Added inputs to Tetris Fighters, game now boots [Tomasz Slanina].
 - Lot of improvements/changes to corona.c driver. Input/output work and new set supported. Redumped the winner82 sound program [Roberto Fresca].
 - SDL: Fix uimodekey for MESS [Barry Rodewald, R. Belmont].
 - More work on corona.c driver [Roberto Fresca]:
-  * Cleaned up and improved memory maps.
-  * Added NVRAM to all winners circle sets.
-  * Fixed the ay8910 clock for winners circle 82 type to match the other hardware. 
-  * Fixed a blitter buffer to bitmap problem. 
-  * Reparented the sets. 
+  * Cleaned up and improved memory maps;
+  * Added NVRAM to all winners circle sets;
+  * Fixed the ay8910 clock for winners circle 82 type to match the other hardware;
+  * Fixed a blitter buffer to bitmap problem;
+  * Reparented the sets;
   * Added new technical notes.
 - carjmbre [hap]:
-  * Use 4 bit clut instead of 3 bit.
-  * Calculate palette with resnet info from Popper (same year, same company, very similar hardware).
-  * Make bgcolor emulation more logical.
+  * Use 4 bit clut instead of 3 bit;
+  * Calculate palette with resnet info from Popper (same year, same company, very similar hardware);
+  * Make bgcolor emulation more logical;
   * Small cleanups.
 - Use correct roms for the Japanese 1941 set [Brian Troha].
 - Fixed sound regression with Mission 660 [Angelo Salese].
 - Major toaplan2.c updates [Alex Jackson]:
-  * Some sets reparented and renamed as well as a cleanup of source comments: grindstm (parent), vfive (clone) kingdmgp (parent), shippumd (clone) The set formerly known as "sstrikera" is now "sstriker" and is now the parent of mahoudai (clone). Reverted batrid to batrider and bkraid to bbakraid.
-  * Put common init code into MACHINE_START, leaving DRIVER_INITs only for games that actually need unique initialization.
-  * Dead code cleanup: Removed old hacks and some no-longer-used used member variables from the driver class.
-  * ROM banking cleanup: Added a device address map for the OKI in fixeightbl. Stopped misusing the bank system for memory that isn't actually bankswitched (fixeightbl again) Simplified the Z80 ROM banking (and loading) in the Raizing games.
-  * Address map cleanup: Unified 8-bit shared RAM handling between the Z80-based and the V25-based games. Replaced lots of pointless READ_HANDLERs with AM_RAM_WRITE. Moved fixeight EEPROM handling into the input ports instead of using READ/WRITE_HANDLERs. Incidentally, this makes toaplan2.c the very first MAME driver to use the AM_READWRITE_PORT macro.
-  * Removed IPT_VBLANK input ports (no longer used since the video rewrite).
-  * Removed Truxton 2 player 2 "button 4" (after confirming that the game never reads it) and changed player 1 "button 4" to an IPT_OTHER not bound to any key by default, since it's clearly some kind of test/debug input not meant to be hooked up in a regular cabinet (for one thing, it works whether you're actually playing or in attract mode).
-  * Added button 3 to Batsugun Special Version. It's a full auto fire button like Cave games have. The service mode input test doesn't show it, presumably because Toaplan didn't bother to update the service mode code from the original version of the game.
-  * Fixed region jumpers and dipswitches in many sets, based on analysis of the program code and strings in the ROMs.
-  * Added a #define to optionally make Truxton 2 stereo (commented out by default). See the comments at the top of the driver and in the MACHINE_CONFIG.
-  * Corrected kbash ROM names, thanks to information from Charles MacDonald. Also fixed inconsistent ROM naming between some of the batrider clones.
-  * Loaded bbakraid default EEPROM as a ROM rather than hardcoding the contents into the driver.
+  * Some sets reparented and renamed as well as a cleanup of source comments: grindstm (parent), vfive (clone) kingdmgp (parent), shippumd (clone) The set formerly known as "sstrikera" is now "sstriker" and is now the parent of mahoudai (clone). Reverted batrid to batrider and bkraid to bbakraid;
+  * Put common init code into MACHINE_START, leaving DRIVER_INITs only for games that actually need unique initialization;
+  * Dead code cleanup: Removed old hacks and some no-longer-used used member variables from the driver class;
+  * ROM banking cleanup: Added a device address map for the OKI in fixeightbl. Stopped misusing the bank system for memory that isn't actually bankswitched (fixeightbl again) Simplified the Z80 ROM banking (and loading) in the Raizing games;
+  * Address map cleanup: Unified 8-bit shared RAM handling between the Z80-based and the V25-based games. Replaced lots of pointless READ_HANDLERs with AM_RAM_WRITE. Moved fixeight EEPROM handling into the input ports instead of using READ/WRITE_HANDLERs. Incidentally, this makes toaplan2.c the very first MAME driver to use the AM_READWRITE_PORT macro;
+  * Removed IPT_VBLANK input ports (no longer used since the video rewrite);
+  * Removed Truxton 2 player 2 "button 4" (after confirming that the game never reads it) and changed player 1 "button 4" to an IPT_OTHER not bound to any key by default, since it's clearly some kind of test/debug input not meant to be hooked up in a regular cabinet (for one thing, it works whether you're actually playing or in attract mode);
+  * Added button 3 to Batsugun Special Version. It's a full auto fire button like Cave games have. The service mode input test doesn't show it, presumably because Toaplan didn't bother to update the service mode code from the original version of the game;
+  * Fixed region jumpers and DIP switches in many sets, based on analysis of the program code and strings in the ROMs;
+  * Added a #define to optionally make Truxton 2 stereo (commented out by default). See the comments at the top of the driver and in the MACHINE_CONFIG;
+  * Corrected kbash ROM names, thanks to information from Charles MacDonald. Also fixed inconsistent ROM naming between some of the batrider clones;
+  * Loaded bbakraid default EEPROM as a ROM rather than hardcoding the contents into the driver;
   * Completely removed audio/toaplan2.c, which isn't needed any more now that all the V25s are decrypted and hooked up.
 - Technical changes to reel games [James Wallace]:
-  * Fixed lamp timing in MPU4 and laid groundwork for MPU3 support in the steppers (I've also cleared up the reel code in drivers).
-  * Removed some unneeded timing code.
+  * Fixed lamp timing in MPU4 and laid groundwork for MPU3 support in the steppers (I've also cleared up the reel code in drivers);
+  * Removed some unneeded timing code;
   * BwB support is here, but preliminary, it's mainly to show people how the CHR chip might work in those games.
 - Fixed enormous memory consumption when iterating through all drivers like -romident does [Aaron Giles].
 - Converted namco/thepit/toaplan/unico/upl/valadon/veltmjr/venture/vsystem/zaccaria to driver_device. Also simplified unico and disentangled gridlee from balsente [Atari Ace].
 - Breaks some driver entanglements to simplify future driver_device conversion efforts [Atari Ace]:
-  * taito_f3 is disentangled from a number of other drivers by using an AM_SHARE tag instead of a common variable.
-  * Several drivers are made into explicit subclasses of other drivers: 8080bw from mw8080bw, missb2 from bublbobl, quasar from cvs, taito_x from seta.
-  * arcadecl is separated from rampart by duplicating the bitmap rendering code.
-  * jaleco decryption code is moved to jalcrpt.c.
-  * cischeat is separated from megasys1 by duplicating some video code.
-  * mcr3 is partly separated from mcr.
-  * machine/midwunit.c is split into wunit and xunit files with some code duplication.
-  * midtunit gfx_rom variables are made distinct from midyunit variables, making midyunit independent of midtunit.
-  * contants in namconb1 are duplicated/renamed in namcofl.
-  * namcos2 uses of namcos21 are eliminated by introducing namcos2_kickstart.
+  * taito_f3 is disentangled from a number of other drivers by using an AM_SHARE tag instead of a common variable;
+  * Several drivers are made into explicit subclasses of other drivers: 8080bw from mw8080bw, missb2 from bublbobl, quasar from cvs, taito_x from seta;
+  * arcadecl is separated from rampart by duplicating the bitmap rendering code;
+  * jaleco decryption code is moved to jalcrpt.c;
+  * cischeat is separated from megasys1 by duplicating some video code;
+  * mcr3 is partly separated from mcr;
+  * machine/midwunit.c is split into wunit and xunit files with some code duplication;
+  * midtunit gfx_rom variables are made distinct from midyunit variables, making midyunit independent of midtunit;
+  * contants in namconb1 are duplicated/renamed in namcofl;
+  * namcos2 uses of namcos21 are eliminated by introducing namcos2_kickstart;
   * toypop is separated from mappy by duplicating some video code.
 - Move non-buffered spriteram drivers away from using the generic spriteram in favor of using spriteram in their own driver_device classes [Atari Ace].
 - Fix long-standing bug in ABS flags in ADSP21xx core [Christophe Jaillet].
@@ -184,19 +184,19 @@ Source changes:
 - contra.c: Changed main CPU to HD6309 as seen on PCB, and set interrupt source to k007121 [hap].
 - Add driver_device classes for drivers that don't have any variables, for consistency (and future development) [Atari Ace].
 - Further decoupled some driver files to help driver_device conversions [Atari Ace]:
-  * cclimber and galaxian audio code and seibuspi decryption code get their own includes. 
-  * galpani2 video declarations are moved from kaneko16.h to their own file. 
-  * cchance and champbwl subclass from tnzs, xevious/bosco/digdug subclass from galaga and vmetal subclasses from metro. 
-  * yvg608 is made independent of namcond1.
-  * ettrivia duplicates the palette code from naughtyb.
-  * mshuttle decryption code is moved into galaxian. 
+  * cclimber and galaxian audio code and seibuspi decryption code get their own includes;
+  * galpani2 video declarations are moved from kaneko16.h to their own file;
+  * cchance and champbwl subclass from tnzs, xevious/bosco/digdug subclass from galaga and vmetal subclasses from metro;
+  * yvg608 is made independent of namcond1;
+  * ettrivia duplicates the palette code from naughtyb;
+  * mshuttle decryption code is moved into galaxian;
   * tetrisp2_draw_sprites is split into two versions, one for ms32.c, one for tetrisp2.c.
 - Converted asteroid/bzone/funworld/itech8/kongambl/legionna/leland/quakeat/quizpun2/segas24/twincobr/warpwarp to driver_device [Atari Ace].
 - Moved Kaneko Super Nova sprite chip emulation inside its own file [David Haywood].
 - Put Deco 56 video sprite chip inside its own file [David Haywood].
 - Deco 56: Allow rendering to a bitmap, with priority data intact, for manual mixing [David Haywood].
 - battlex.c: Some driver cleanups, most importantly [hap]:
-  * Made interrupt generation more logical (assert/clear instead of hold).
+  * Made interrupt generation more logical (assert/clear instead of hold);
   * Removed hacky hardcoded palette for background tiles, let it use palette RAM.
 - Changed clocks based on confirmed XTAL and dumper's notes for Ambush and clones. Audio changed to AY8912 as well [Tafoid, Tomasz Slanina].
 - Fixed decrementing transfers in z80dma core [Angelo Salese].

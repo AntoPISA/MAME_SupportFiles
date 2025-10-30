@@ -9,7 +9,6 @@ Reality Tennis [Tomasz Slanina, Antonio 'Peluko' Carrillo, Smitdogg, The Dumping
 Fruit Bonus '06 - 10th anniversary [Brian Troha, Smitdogg, The Dumping Union]
 Super Ball (Version 1.3) [David Haywood, Brian Troha, The Dumping Union]
 
-
 New Clones Added
 ----------------
 Dream Crown (Set 2) [Yohji, Smitdogg, The Dumping Union]
@@ -28,15 +27,15 @@ New Clone Marked as GAME_NOT_WORKING
 Arctic Thunder v1.002 [J. Wilke, ranger_lennier, gamerfan, Smitdogg, The Dumping Union]
 
 
-MAMETesters Bugs Fixed (18):
-----------------------------
-- 04363: [Crash/Freeze] rsgun: MAME crashes when using "-bios jp"
+MAME Testers Bugs Fixed (18):
+-----------------------------
+- 04363: [Crash/Freeze] rsgun: MAME crashes when using "-bios jp".
 - 04311: [Save/Restore] kov2, martmast: The game freezed after load save state twice times (Aaron Giles)
 - 04360: [DIP/Input] upscope + others: PORT_CENTERDELTA in input ports overwrites PORT_KEYDELTA settings (Olivier Galibert)
-- 04330: [Save/Restore] btime and clones: Save state does not work correctly. (Aaron Giles)
+- 04330: [Save/Restore] btime and clones: Save state does not work correctly (Aaron Giles)
 - 04359: [Interface] All sets with PORT_DIPLOCATIONs: Dip locations are displayed incorrectly (Olivier Galibert)
 - 04331: [Save/Restore] digdug and clones: Save support produces some interesting effects (Aaron Giles)
-- 04327: [Save/Restore] galaxian, frogger, many others: Game resets right after loading auto saved state. (Aaron Giles)
+- 04327: [Save/Restore] galaxian, frogger, many others: Game resets right after loading auto saved state (Aaron Giles)
 - 04333: [Save/Restore] Many games in m92.c: Save states made while raster interrupts are active do not work (Aaron Giles)
 - 04305: [Crash/Freeze] vmetal, vmetaln: Crash directly after OK (Angelo Salese)
 - 03948: [Crash/Freeze] mvsc: Reset at staff roll only in the mvsc set (Alex Jackson)
@@ -71,7 +70,7 @@ Source changes:
 - Fixed MC6845 related crash on 4roses and 4rosesa [Roberto Fresca].
 - tms52xx: Minor updates to the comments and the disabled-by-default pulse excitation code to better match how hardware would probably work [Lord Nightmare, Neill Corlett].
 - HLSL Updates [Ryan Holtz, Bat Country Entertainment]:
-  * Switched to point-sampling through most of the shader chain to avoid non-intentional pixel smearing.
+  * Switched to point-sampling through most of the shader chain to avoid non-intentional pixel smearing;
   * Corrected alignment and scaling on the shadow mask and scanlines; dramatically reduces rainbow banding at non-oversampled resolutions .
 - Fixed a rather silly bug with SCU DSP execute flag [Angelo Salese].
 - Moved SMPC intback command inside a timer, removes a kludge for SMPC mask IRQ [Angelo Salese].
@@ -87,31 +86,31 @@ Source changes:
 - i86: Fixed imul instruction [Carl].
 - Low-level input upgrade. Classes now exist for input_codes, input_items, input_devices, and input_seqs. Also created an input_manager class to hold machine-global state and made it accessible via machine.input(). Expanded the device index range (0-255, up from 0-16), and the OSD can now specify the device index explicitly if they can better keep the indexes from varying run-to-run [Aaron Giles].
 - HLSL Updates [Ryan Holtz, Bat Country Entertainment, austere, SoltanGris42]:
-  * Added the ability to render screenshots at arbitrary resolutions.
-  * Added the ability to record AVI videos (albeit with no audio) at arbitrary resolutions.
-  * Added a 43-tap-wide FIR-based NTSC filter with tunable Y, I and Q frequency response.
+  * Added the ability to render screenshots at arbitrary resolutions;
+  * Added the ability to record AVI videos (albeit with no audio) at arbitrary resolutions;
+  * Added a 43-tap-wide FIR-based NTSC filter with tunable Y, I and Q frequency response;
   * Updated scanlines to have a user-tunable pixel-height ratio in addition to the current screen-height ratio.
 - Fixed a VRAM leak that was causing many dynamic-resolution drivers to run out of memory mid-run [Aaron Giles].
 - Implemented IRQ callbacks for the mc146818 RTC [Carl].
 - Fixed UNSP CPU core reset [Robbbert].
 - Fixed POP, POPF, PUSHF, and flags for V20 core [Carl, Alex Jackson].
 - memory [Oliver Galibert]:
-  * Store legacy object and handler together in the same structure.
-  * Pass the legacy object/handler as a set_delegate parameter.
-  * Merge width-conversion functions together from the same source width.
-  * Build a structure with all possible delegate sizes.
-  * Separate delegates for the main access and the subaccesses.
-  * Split the subaccesses delegation information per-slot.
-  * Make the memdump file include a description of every subunit
-  * Add utility methods to clean up colliding subunit masks and testing if any are remaining.
-  * Combine the map_range and handler_read/write() operations into one.
-  * Proxy the handler entry access when adding handlers.
-  * Tuck the unitmask into the proxy.
-  * Split the map_range function into a fixed entry mapping one and a dynamically allocating entry one.
-  * Make the proxy manage a list of handlers instead of a unique one.
-  * Add a handler copy function which works on subunits-only handlers.
-  * Finally allow different handlers on different subunits of the same address.
-  * Implement depopulate_unused().
+  * Store legacy object and handler together in the same structure;
+  * Pass the legacy object/handler as a set_delegate parameter;
+  * Merge width-conversion functions together from the same source width;
+  * Build a structure with all possible delegate sizes;
+  * Separate delegates for the main access and the subaccesses;
+  * Split the subaccesses delegation information per-slot;
+  * Make the memdump file include a description of every subunit;
+  * Add utility methods to clean up colliding subunit masks and testing if any are remaining;
+  * Combine the map_range and handler_read/write() operations into one;
+  * Proxy the handler entry access when adding handlers;
+  * Tuck the unitmask into the proxy;
+  * Split the map_range function into a fixed entry mapping one and a dynamically allocating entry one;
+  * Make the proxy manage a list of handlers instead of a unique one;
+  * Add a handler copy function which works on subunits-only handlers;
+  * Finally allow different handlers on different subunits of the same address;
+  * Implement depopulate_unused();
   * Change the gc into a refcounter, for speed reasons.
 - pic8259: Fixed edge triggering and non-specific EOI [Carl, Miodrag Milanovic].
 - Added SKIT_F0 opcode to the uPD7801/uPD7810 CPU core [Angelo Salese].

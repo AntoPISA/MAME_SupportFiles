@@ -105,7 +105,7 @@ gameboy: Song of the Pipa / Magic Ball [James, TeamEurope, Tauwasser]
 pce_tourvision: Dragon Egg! [system11]
 
 
-MAMETesters Bugs Fixed (6):
+MAME Testers Bugs Fixed (6):
 ---------------------------
 - 06402: [Interface] UI:: Switch Item Ordering corrupts software list (Nathan Woods)
 - 06481: [DIP/Input] (mac128.cpp) All classic Macs: Keyboard input is not working anymore in the emulated macs since version 0.181 (R. Belmont)
@@ -197,13 +197,13 @@ Source changes:
 - phc25: Added character generator ROM, not yet used [Nigel Barnes].
 - electron: Added Power Software joystick interface [Nigel Barnes].
 - bbc: Removed the direct update handler (not supposed not to be useful any more) [Nigel Barnes, O. Galibert].
-- ti8*: Removed the gross boot hack - breaks the Flash-based models [O. Galibert].
-- abc80x: Removed the direct update handler [O. Galibert].
-- multiface 2: Disabled the direct update handler. Device should be overhauled using the by now-reversed PAL information [O. Galibert].
-- i86: Added decrypted opcodes space support [O. Galibert].
-- Removed support for direct updated handlers [O. Galibert].
-- mlanding: Fixed tms32025 memory map [O. Galibert].
-- tms32026: Fixed status register and banking [O. Galibert].
+- ti8*: Removed the gross boot hack - breaks the Flash-based models [Olivier Galibert].
+- abc80x: Removed the direct update handler [Olivier Galibert].
+- multiface 2: Disabled the direct update handler. Device should be overhauled using the by now-reversed PAL information [Olivier Galibert].
+- i86: Added decrypted opcodes space support [Olivier Galibert].
+- Removed support for direct updated handlers [Olivier Galibert].
+- mlanding: Fixed tms32025 memory map [Olivier Galibert].
+- tms32026: Fixed status register and banking [Olivier Galibert].
 - voodoo: Changed multi base address selection to fix funkball textures [Ted Green].
 - vp101: Improved support for reduced-cost VP050 version [R. Belmont].
 - piratesh: Fixed to pass POST, which earns it working with imperfect graphics [R. Belmont].

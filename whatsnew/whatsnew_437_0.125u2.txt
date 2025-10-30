@@ -17,10 +17,10 @@ New Game Marked as GAME_NOT_WORKING
 Beauty Block [David Haywood]
 
 
-MAMETesters Bugs Fixed (5):
+MAME Testers Bugs Fixed (5):
 ---------------------------
 - 01497: [Graphics] numanath, numanatj: Graphics corruption on title screen (Phil Stroffolino)
-- 01671: [Interface] every set with PORT_MODIFY used for DIPs (e.g. arknoidj): the modified dipswitches are always listed at the bottom of the list (Aaron Giles)
+- 01671: [Interface] every set with PORT_MODIFY used for DIPs (e.g. arknoidj): the modified DIP switches are always listed at the bottom of the list (Aaron Giles)
 - 01804: [Core] carnevil, sfrush: Seattle games crash on startup (Aaron Giles)
 - 01814: [Sound] YM2608 games (tail2nos, sformula, wc90, mechatt): Only basic music, no more samples (Couriersud)
 - 01815: [Save/Restore] All Sets: Saved machine states do not properly adjust to changes in -samplerate (Aaron Giles)
@@ -31,7 +31,7 @@ Source changes:
 - Fixed long-standing bug with Emeralda text colors. A sprite attribute exists which signals an alternate interpretation of palette ram. Fixed priority for the bitmap layer used in 'Numan Athletics' [Phil Stroffolino].
 - Restructured input port internals and cleaned up inptport.c [Aaron Giles]:
   * Input ports are now maintained hierarchically. At the top level are input ports, which contain a list of fields. Each field represents one or more bits of the port. Certain fields such as DIP switches and configuration switches contain a list of settings, which can be selected. DIP switch fields can also contain a list of DIP switch locations;
-  * Normalized behavior of port overrides (via PORT_INCLUDE or by defining multiple overlapping bits). All fields within a port are kept in strict increasing bit order, so altered DIP switches are now kept in the appropriate order. This addresses MAMETesters bug 01671;
+  * Normalized behavior of port overrides (via PORT_INCLUDE or by defining multiple overlapping bits). All fields within a port are kept in strict increasing bit order, so altered DIP switches are now kept in the appropriate order. This addresses MAME Testers bug 01671;
   * Live port state is now fully separate from configured state. This is manifested in a similar way to devices, where a const list of ports can be managed either offline or live. Each port has a pointer to an opaque set of live state which is NULL when offline or valid when live. Each port also has a running_machine * which is also NULL when offline;
   * Because of this new arrangement, the conversion from tokens to a list of ports now requires reasonably complex memory allocation, so these port lists must be explicitly allocated and freed (they are not mantained by automatic resource allocation);
   * Custom and changed callbacks now take a pointer to a field config instead of a running machine. This provides more information about what field triggered the change notification. The machine can be found by referenced field->port->machine;

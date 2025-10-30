@@ -36,12 +36,12 @@ Joker's Wild (B52 system, set 2) [Roberto Fresca, Tomasz Slanina]
 Joker's Wild (B52 system, Harrah's GFX) [Roberto Fresca, Tomasz Slanina, Gerald Vanderick]
 
 
-MAMETesters Bugs Fixed (5):
+MAME Testers Bugs Fixed (5):
 ---------------------------
 - 03724: [Speed] mrdo: Incorrect XTALs cause for problems with refresh rate and game speed (Tafoid)
 - 03706: [Sound] lastday, gulfstrm: Audio Regression (MASH)
 - 03704: [Sound] evilston: Missing sound (MASH)
-- 00993: [Crash/Freeze] sharrier: [debug] Crashes when a specific sample is being played during gameplay. (Phil Bennett)
+- 00993: [Crash/Freeze] sharrier: [debug] Crashes when a specific sample is being played during gameplay (Phil Bennett)
 - 03692: [Crash/Freeze] kurikint: Service Switch error (MASH)
 
 
@@ -57,11 +57,11 @@ Source changes:
 - Cleaned up comments refering to old driver names, and updated clone names in drivers from 0-K [Tafoid].
 - apexc: 1. Added pseudo PC register for the debugger, it will now highlight the next instruction to be executed. 2. Added "normal" addresses to disassembler output, so anyone can see the program flow [Robbbert].
 - Sega misc WIP [Fabio Priuli]:
-  * Split dependences of system16 games from bootleg ones.
-  * Moved some .h files to includes/.
-  * Removed some unneeded include.
-  * Removed some dead code.
-  * Added driver data struct to segahang.c, segaorun.c, segas16a.c, sega16b.c, segas18.c, segaxbd.c and segaybd.c.
+  * Split dependences of system16 games from bootleg ones;
+  * Moved some .h files to includes/;
+  * Removed some unneeded include;
+  * Removed some dead code;
+  * Added driver data struct to segahang.c, segaorun.c, segas16a.c, sega16b.c, segas18.c, segaxbd.c and segaybd.c;
   * Added save states to segas16a.c.
 - Fixed DIP switches and Inputs (after verification of the Z80 code) for (ozon1), (ladybugg), (vpool) [stephh].
 - Added driver data struct to system 16/18 bootlegs and removed most unused code [Fabio Priuli].
@@ -72,19 +72,19 @@ Source changes:
 - Converted gticlub.c, nwk-tr.c and zr107.c to use the Konami 001604 device and removed the old code [Fabio Priuli].
 - carjmbre.c: Added XTAL, corrected second z80 speed and added DIP LOCATIONS for driver [Tafoid].
 - Improvements to Treasure Island [Roberto Fresca]:
-  * Added proper inputs.
-  * Added coin/keyin/keyout/payout counters.
-  * Limited the bet and coin pulses to avoid repeats and coin jams.
-  * Added complete coinage and keyin DIP switches.
-  * Added main game and double-up rates DIP switches.
-  * Added minimum bet DIP switches.
-  * Added maximum bet DIP switches.
-  * Added main game and double-up limit DIP switches.
-  * Added payout mode and auto take DIP switches.
-  * Added DIP locations as seen in the settings mode.
-  * Added demo sounds DIP switch.
-  * Created proper button-lamps layout.
-  * Added technical notes.
+  * Added proper inputs;
+  * Added coin/keyin/keyout/payout counters;
+  * Limited the bet and coin pulses to avoid repeats and coin jams;
+  * Added complete coinage and keyin DIP switches;
+  * Added main game and double-up rates DIP switches;
+  * Added minimum bet DIP switches;
+  * Added maximum bet DIP switches;
+  * Added main game and double-up limit DIP switches;
+  * Added payout mode and auto take DIP switches;
+  * Added DIP locations as seen in the settings mode;
+  * Added demo sounds DIP switch;
+  * Created proper button-lamps layout;
+  * Added technical notes;
   * Some clean-ups.
 - Dumped IC1 from Giant Gram 2000 [Joerg Hartenberger].
 - Fixed bonus game gfxs in Treasure Island (Subsino) [Angelo Salese].
@@ -95,8 +95,8 @@ Source changes:
 - Fixed video emulation in Best League (World Cup version) [Angelo Salese].
 - Fix DISTRO=gcc44-generic make shortcut to use gcc-4.4 properly (-V 4.4 does not work for linking) [Couriersud].
 - Minor changes for internal render debugger [Couriersud]:
-  * ui_input_frame_update is now global .
-  * Moved element_component from rendlay.c to rendlay.h.
+  * ui_input_frame_update is now global;
+  * Moved element_component from rendlay.c to rendlay.h;
   * Added ability to rendlay.c to define "container" components. These simply provide a render_container. 
 - Added DEBUG_FLAG_OSD_ENABLED to allow coexistence of debuggers going forward. Replaced all occurrences of OPTION_DEBUG in src/osd/* by checking machine->debug_flags. Replaced all occurrences of DEBUG_FLAG_ENABLED in src/osd/* by DEBUG_FLAG_OSD_ENABLED For the time being, DEBUG_FLAG_OSD_ENABLED is default (set in mame.c) [Couriersud].
 - Fixed DIP switches and Inputs (after verification of the Z80 code) for (bongo) and (porter) [stephh].
@@ -107,48 +107,48 @@ Source changes:
 - New driver for Sigma B52 system. ACRTC implementation is a bit hacky due to its preliminary emulation status [Roberto Fresca].
 - lethal.c: Verified clocks and vsync from orginal PCB [Corrado Tomaselli].
 - astrocorp.c update [Luca Elia]:
-  * Added frame buffer.
-  * Fixed sprite list end, negative coordinates, wrap around.
+  * Added frame buffer;
+  * Fixed sprite list end, negative coordinates, wrap around;
   * Added battery backed RAM.
 - adp.c: Hooked up (with a hack) gfx ROM in hd63484 memory map [robiza].
 - Hooked up coin input and start input in (skattv) [robiza].
 - astrocde.c: Fixed the Bonus Life DP switch for gorf and clones. It's state was inverted [Tafoid].
 - i8255: Clear output lines to 0 on write to mode register, and float input lines to 1 [Curt Coder].
 - Simplified/combined MAME and MESS code: [Miodrag Milanovic]:
-  * Moved compatibility validation into MAME core from MESS.
-  * Made GAME_NO_SOUND check done on MESS too.
-  * Removed MESS dependent checks.
-  * Renamed GAME_COMPUTER_MODIFIED to GAME_UNOFFICIAL to mark unofficial hardware modifications.
-  * Removed GAME_COMPUTER it is distinct by IPT_KEYBOARD.
-  * Added GAME_NO_SOUND_HW (to mark that there is no sound hardware) and marked drivers in dotrikun.c, minivadr.c and tgtpanic.c as such.
-  * Removed GAME_SHARE_ROMS flag and commented old check for duplicate ROM entries.
-  * Moved natural keyboard support from MESS to MAME.
-  * Moved OSD file functions and clipboard access functions into OSD core
+  * Moved compatibility validation into MAME core from MESS;
+  * Made GAME_NO_SOUND check done on MESS too;
+  * Removed MESS dependent checks;
+  * Renamed GAME_COMPUTER_MODIFIED to GAME_UNOFFICIAL to mark unofficial hardware modifications;
+  * Removed GAME_COMPUTER it is distinct by IPT_KEYBOARD;
+  * Added GAME_NO_SOUND_HW (to mark that there is no sound hardware) and marked drivers in dotrikun.c, minivadr.c and tgtpanic.c as such;
+  * Removed GAME_SHARE_ROMS flag and commented old check for duplicate ROM entries;
+  * Moved natural keyboard support from MESS to MAME;
+  * Moved OSD file functions and clipboard access functions into OSD core;
   * Significantly reduced the number of new OSD functions needed by MESS [with Couriersud].
 - Fixed DIP switches and Inputs (after verification of the Z80 code) for (tazzmang) [stephh].
 - snes WIP [Fabio Priuli]:
-  * Added a couple of registers to snes_ppu struct 
-  * Moved color blending (background and subscreen color addition/subtraction) at the end of the drawing process. 
-  * Removed some unused (and not working anymore) debug code.
-  * Fixed the remaining debug functionalities.
-  * Moved colour struct to be another layer (simplifying some code).
-  * Updated hires blending to work with two pixel at time. 
+  * Added a couple of registers to snes_ppu struct;
+  * Moved color blending (background and subscreen color addition/subtraction) at the end of the drawing process;
+  * Removed some unused (and not working anymore) debug code;
+  * Fixed the remaining debug functionalities;
+  * Moved colour struct to be another layer (simplifying some code);
+  * Updated hires blending to work with two pixel at time;
   * Fixed clipmasks with hires modes.
 - hng64: Initial implementation of 0x10-sized palette pages for 3D objects. This makes most environment colors correct in (sams64) [Andrew Gardner].
 - via6522: Read port A/B only if some pins are inputs [Curt Coder].
 - Fixed DIP switches and Inputs (after verification of the Z80 code) for (dambustr) and clones [stephh].
 - Internal debugger using the mame rendering infrastructure [Couriersud]:
-  * Added support for arbitrary number of containers for render_target.
-  * Added command-line parameter -debug_internal (-di) to use the internal debugger when in debug mode.
-  * Internal debugger supports all views except memory view.
+  * Added support for arbitrary number of containers for render_target;
+  * Added command-line parameter -debug_internal (-di) to use the internal debugger when in debug mode;
+  * Internal debugger supports all views except memory view;
   * Added "Debug" view to layout/vertical.lay to create more place for debug views in vertical games.
 - NOTE: The colors are ugly. Font rendering needs improvement. There are no shortcut keys right now. There is still a lot of room for more improvements. However, it works and does not depend on any UI toolkit. The interface has been designed to support displaying views programmatically e.g. from the UI [Aaron Giles].
 - Short HowTo [Aaron Giles]:
-  * Start MAME with "-debug -di".
-  * Console, register and disasm views will be shown. Place them by dragging the view on the title bar.
-  * Views can be resized by dragging the bottom-right yellow square.
-  * The view having the focus has a green background title bar.
-  * Hit "Tab" (IPT_UI_CONFIGURE) to show the menu.
+  * Start MAME with "-debug -di";
+  * Console, register and disasm views will be shown. Place them by dragging the view on the title bar;
+  * Views can be resized by dragging the bottom-right yellow square;
+  * The view having the focus has a green background title bar;
+  * Hit "Tab" (IPT_UI_CONFIGURE) to show the menu;
   * Console and disasm views support a very simple facility to support entering commands and addresses. Just start typing. Hit "enter" when finished.
 - irobot.c: Added XTAL values from manual and hooked up to driver for main/sound CPU  [Phil Bennett, Tafoid].
 - rungun: Fix text tilemap lookup for big-endian targets [R. Belmont].

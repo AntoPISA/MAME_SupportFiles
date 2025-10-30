@@ -48,7 +48,7 @@ The Open University Hektor II [Nigel Barnes, Binary Dinosaurs, Centre for Comput
 Senario / JungleTac Vs Maxx 25-in-1 (VT03 hardware) [David Haywood, Sean Riddle, Kamaal Brown]
 Tsurikko Penta [Phil Bennett, MetalliC, R. Belmont]
 Ultimate Products / TaiKee Plug 'N' Play Rockstar Guitar / Guitar Rock (PAL) [Peter Wilhelmsen, David Haywood, TeamEurope]
-Waveblaster-based expander [O. Galibert]
+Waveblaster-based expander [Olivier Galibert]
 WinFun / JungleTac Joypad 65 [David Haywood, Sean Riddle, Kamaal Brown]
 WinFun / JungleTac Joystick 30 [David Haywood, Sean Riddle, Kamaal Brown]
 
@@ -558,7 +558,7 @@ Extra K (Version 1985-08-30) [4am, Firehawke]
 
 -bus/coco: Added Speech Systems Stereo Composer cartridge (#7379) [tim lindner]
 
--lc57, msm65x2: Add disassemblers [O. Galibert]
+-lc57, msm65x2: Add disassemblers [Olivier Galibert]
 
 -pacman.cpp: Remove 'mspacmanbg3', it was a bad dump of 'pacmansp' (#7400) [ClawGrip]
 
@@ -721,7 +721,7 @@ Might and Magic - World of Xeen [Neo Kobe Collection]
 
 -avr8: Converted from using an IO address space to devcb for GPIO I/O [Ryan Holtz].
 
--wavesynth: waveblaster-based virtual expander, ks1064 for now [O. Galibert]
+-wavesynth: waveblaster-based virtual expander, ks1064 for now [Olivier Galibert]
 
 -aquarius: Peripherals implemeted as slot devices: 4K/16K/32K/16K+ Memory Cartridges, Mini Expander (now with controllers), Quick
  Disk (not working), C1541 DOS Interface (not working) [Nigel Barnes]
@@ -736,7 +736,7 @@ New working clones
 Aquarius (PAL) [Nigel Barnes]
 Aquarius II [Martin v.d. Steenoven]
 
--ks0164: Pitch is floating point [O. Galibert]
+-ks0164: Pitch is floating point [Olivier Galibert]
 
 -pce220.cpp: split HD61202 and SED1560 into separate devices. [Sandro Ronco]
 
@@ -812,7 +812,7 @@ Yamaha MU-5 [Edward d-tech, DBWBP.com, R. Belmont]
  * add debugger rom
  * boots oberon from hard disk image
 
--emumem: Simplify memory management [O. Galibert].
+-emumem: Simplify memory management [Olivier Galibert].
  * API impact:
    - install_ram/rom/writeonly now requires a non-null pointer.  If you want automatically managed ram, add it to a memory map, not
       in machine_start
@@ -927,7 +927,7 @@ Zippity (UK) [David Haywood, Team Europe]
 
 -Fixed another batch of MSVC errors resolving overloaded operators [Vas Crabb].
 
--mulcd: Switch to a svg [O. Galibert]
+-mulcd: Switch to a svg [Olivier Galibert]
 
 -Brain not found, Abort, Retry, Fail? [Olivier Galibert]
 
@@ -976,7 +976,7 @@ New working clones
 ------------------
 Cuore 1 (Italian, set 3) [f205v]
 
--mu5: Add the lc7985nd and the lcd [O. Galibert]
+-mu5: Add the lc7985nd and the lcd [Olivier Galibert]
 
 -mu5: Hook up battery level [R. Belmont]
 
@@ -1191,7 +1191,7 @@ Olympic Darts K7 (v3.00) [jordigahan, ClawGrip]
 -mface.cpp: Multiface 3 clone ROM is bigger than the others.  (#7452) [rfka01]
  * Clone uses a 16K ROM with identical halves � just ignoring the second half.
 
--multipcm: fix the 12bits mode decoding, the trigger bit is incorrect though [O. Galibert]
+-multipcm: fix the 12bits mode decoding, the trigger bit is incorrect though [Olivier Galibert]
 
 -multipcm: Found the real 12-bit format flag [R. Belmont].
  * mu5: Adjusted PCM clock closer to correct [R. Belmont].
@@ -1205,7 +1205,7 @@ Borrowed Time [4am, Firehawke]
 Cave Girl Clair [4am, Firehawke]
 The Adventures of Kristen and Her Family [4am, Firehawke]
 
--mu5: Some lcd fixes [O. Galibert]
+-mu5: Some lcd fixes [Olivier Galibert]
 
 -slapshot.cpp: Updated comment - MC68000P12F is rated for 16 MHz (#7457) [cam900]
 
@@ -1215,7 +1215,7 @@ The Adventures of Kristen and Her Family [4am, Firehawke]
 
 -stv.cpp, stv.xml: fixed MT07782. Also added missing set to stv.xml [Ivan Vangelista]
 
--Fix the opl4 low byte order in 12bits so that it matches the datasheet and the multipcm (GEW8) [O. Galibert]
+-Fix the opl4 low byte order in 12bits so that it matches the datasheet and the multipcm (GEW8) [Olivier Galibert]
 
 -meadows.cpp: fixed MT07783 [Ivan Vangelista]
 
@@ -1425,7 +1425,7 @@ New machines marked as NOT_WORKING
 ----------------------------------
 Sea Hunter [Jorge Silva, Fernando Oliveira]
 
--Fix memory leak on address_space_specific destruction and add a missing init [O. Galibert]
+-Fix memory leak on address_space_specific destruction and add a missing init [Olivier Galibert]
 
 -identify 'seahuntr' as Black Touch II, move to correct driver (#7477) [David Haywood]
 
@@ -1465,10 +1465,10 @@ Pool 10 (Italian, set 10) [f205v]
 
 -frontend: split lua_engine user type registrations across a few files to make it a bit more manageable [Vas Crabb]
 
--Fix atarisy2 way too magic use of shares [O. Galibert]
+-Fix atarisy2 way too magic use of shares [Olivier Galibert]
 
 -Fix aristmk4.  May be slightly incorrect, but was is sure is that the current video update routine needs 0x804 bytes, not 0x800
- [O. Galibert]
+ [Olivier Galibert]
 
 -luaengine.cpp: Moved clang warning suppression to the right file, disabled MSVC C4503 suppression for now, will see which files
  need it for sol3 [Vas Crabb]
@@ -1510,7 +1510,7 @@ Pool 10 (Italian, set 10) [f205v]
 
 -picno.xml: Fixed some metadata on existing entries and sorted the list by serial number [ClawGrip]
 
--Don't reject re-loading an unused bank [O. Galibert]
+-Don't reject re-loading an unused bank [Olivier Galibert]
 
 -coco_ssc.cpp: adjust rounding to fix music regression in pitfall2 for coco3 [Ivan Vangelista]
 
@@ -1646,7 +1646,7 @@ Pool 10 (Italian, set 10) [f205v]
 -atm.cpp, pasopia7.cpp, spc1500.cpp, spyhuntertec.cpp, tasman.cpp: removed a tiny bunch of MACHINE_*_MEMBER and VIDEO_*_MEMBER
  [Ivan Vangelista]
 
--Implement views, which are essentially bankdevs integrated into the memory map system [O. Galibert].
+-Implement views, which are essentially bankdevs integrated into the memory map system [Olivier Galibert].
 
 -cpu/vt61: Fix scratchpad addressing mistake [AJR]
 

@@ -1,4 +1,4 @@
-﻿0.144u4 2011/12/24 [#557 - Miodrag Milanovic]
+﻿0.144u4 2011/12/24 [#557 - Miodrag Milanović]
 ---------------------------------------------
 
 
@@ -7,12 +7,12 @@ New Games Added or Promoted from NOT_WORKING Status
 Forte Card (Spanish) [Angelo Salese, Roberto Fresca, Rob Ragon]
 Itazura Tenshi [Team Japump!!!, Hau, Yohji]
 
-New Games Marked as GAME_NOT_WORKING
-------------------------------------
+New Game Marked as GAME_NOT_WORKING
+-----------------------------------
 Special Criminal Investigation (Tourvision PCE bootleg) [Mariusz Wojcieszek, Clawgrip, Charles MacDonald, AUMAP]
 
 
-MAMETesters Bugs Fixed (19):
+MAME Testers Bugs Fixed (19):
 ----------------------------
 - 03457: [Graphics] choplift: Choplifter (8751 315-5151) scrolling problems (hap)
 - 03538: [Sound] salamand, lifefrce, lifefrcej, salamandj: Music is too quiet in Salamander and Lifeforce (Fujix)
@@ -37,38 +37,38 @@ MAMETesters Bugs Fixed (19):
 
 Source changes:
 ---------------
-- Added a note about pins held high on the 'Raiden 2' sound Z80. [Lord Nightmare, balrog].
+- Added a note about pins held high on the Raiden 2 sound Z80. [Lord Nightmare, balrog].
 - Added incrementing time to MSM6242 device [Angelo Salese].
 - Added preliminary IRQ generation to the MSM6242, updated drivers that uses it accordingly and removed various related kludges [Angelo Salese].
-- Added proper ROM labels for 'Taxi Driver' [f205v].
+- Added proper ROM labels for Taxi Driver [f205v].
 - Added, and made Mr. Do! use the U8106 soundchip, which as far as I can tell is 100% identical to the sn76489 non-a, pending further testing [Lord Nightmare, plgDavid].
 - Adjusted volume levels in nemesis.c to mirror observed levels from PCB recordings for Salamander/Lifeforce. Partially addresses MT Bug #3538 [Fujix].
 - Capcom ZN-1, ZN-2 updates [Team CPS-1]:
-  * Added a more accurate title description to some games.
-  * Added some documentation notes to various sets.
-  * Confirmed and documented game board # for every set.
-  * Marked MASK ROMs in ts2, ts2j as BAD_DUMP, current dumps don't match real pcbs, added a note.
-  * Minor cleanups and fixes.
-  * Properly fixed ROMs labels and locations to match real pcbs.
-  * Reordered all sets per release date.
+  * Added a more accurate title description to some games;
+  * Added some documentation notes to various sets;
+  * Confirmed and documented game board # for every set;
+  * Marked MASK ROMs in ts2, ts2j as BAD_DUMP, current dumps don't match real pcbs, added a note;
+  * Minor cleanups and fixes;
+  * Properly fixed ROMs labels and locations to match real PCBs;
+  * Reordered all sets per release date;
   * Replaced HR2-01M.3A in strider2 and clones with proper 32MBit dump to match real pcb, 2nd half was cutted out.
 - Converted gamtor.c to use the RAMDAC device [Angelo Salese].
-- Documented MCU ports in 'The Deep', doesn't work yet due of a MCS51 core bug [Angelo Salese].
+- Documented MCU ports in The Deep, doesn't work yet due of a MCS51 core bug [Angelo Salese].
 - eeprom.c: Changed the 'erase' function to force all data bits of the specified address to 1s [Wilbert Pol].
 - Fix for 8042kbc.c irq generation, now 'California Chase' correctly accept keyboard inputs [Grull Osgo].
 - Fix to CD-i video code [fgs].
 - Fixed IRQ hack in Itazura Tenshi [Angelo Salese].
 - Fixed VGA line compare register masking, makes Windows 98 logo to display correctly [Angelo Salese].
 - Forte Card improvements [Roberto Fresca]:
-  * A lot of work on inputs.
-  * Added a clean default NVRAM and serial EEPROM.
-  * Added company and year notes.
-  * Added DIP locations.
-  * Added Lamps layout.
-  * Added technical notes.
-  * Fixed and simplified inputs. Now Owner, Rental and Credits are proper toggled service keys.
-  * Improved the button-lamps layout with the half and double addition for betting in the gamble stage.
-  * Lamps documentation and support.
+  * A lot of work on inputs;
+  * Added a clean default NVRAM and serial EEPROM;
+  * Added company and year notes;
+  * Added DIP locations;
+  * Added Lamps layout;
+  * Added technical notes;
+  * Fixed and simplified inputs. Now Owner, Rental and Credits are proper toggled service keys;
+  * Improved the button-lamps layout with the half and double addition for betting in the gamble stage;
+  * Lamps documentation and support;
   * Reverse engineering and partially documented the serial EEPROM data.
 - Hooked up VGA device to Photo Play [Angelo Salese].
 - Improved SN76477 interface [Curt Coder].
@@ -78,15 +78,15 @@ Source changes:
 - Preliminary save state support to Naomi / AW / DC driver [Angelo Salese].
 - Properly hooked up MSM6242 device to Super Kaneko Nova System [Angelo Salese].
 - Removed PC-based sound hack from Mirax [Angelo Salese].
-- Softlist support cleanup and addition of compatibility filtering [Miodrag Milanovic].
+- Softlist support cleanup and addition of compatibility filtering [Miodrag Milanović].
 - Some progresses with atamanot, got a garbled title screen and realized that the game is heavily protected [Angelo Salese].
 - Various avt.c progresses, it now properly shows some gfxs [Angelo Salese].
 - Various changes for Neo-Geo driver [Johnboy]:
-  * Cleaned up all labels (consistent for all protos now) for prototype sets (in 99.9% of the cases the correct labels are not known) to: proto_ID-XX.XX.
-  * Documentation update.
-  * Identified product codes for viewpoint, savager and blazstar.
-  * kotm2p m1/s1 parent/clone fix.
-  * Marked quizkof MVS AND AES VERSION.
+  * Cleaned up all labels (consistent for all protos now) for prototype sets (in 99.9% of the cases the correct labels are not known) to: proto_ID-XX.XX;
+  * Documentation update;
+  * Identified product codes for viewpoint, savager and blazstar;
+  * kotm2p m1/s1 parent/clone fix;
+  * Marked quizkof MVS AND AES VERSION;
   * Reflected changes in internal db to xml (except /* Plane x */ ).
 - Various fixes to California Chase, it currently completes the POST [Grull Osgo].
-- vigilant.c: Fix reversed Demo Sounds dipswitch in kikcubic [Alex Jackson].
+- vigilant.c: Fix reversed Demo Sounds DIP switch in kikcubic [Alex Jackson].

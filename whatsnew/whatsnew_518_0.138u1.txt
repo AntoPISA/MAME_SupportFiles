@@ -39,7 +39,7 @@ Book Theatre [f205v]
 Super Famicom Box BIOS [Angelo Salese]
 
 
-MAMETesters Bugs Fixed (15):
+MAME Testers Bugs Fixed (15):
 ----------------------------
 - 00948: [Graphics] batsugun: The ending and credits text is in gibberish language (David Haywood)
 - 03832: [Sound] monymony, jackrabt: Missing speech (Couriersud)
@@ -61,7 +61,7 @@ MAMETesters Bugs Fixed (15):
 Source changes:
 ---------------
 - Remove all references to the nonexistent "premov" instruction from the NEC-V core  [Alex Jackson].
-- Corrected stack walk by using UNICODE_POSTFIX.  Fixed some incorrect function declarations in winmain.c [Oliver Stoneberg].
+- Corrected stack walk by using UNICODE_POSTFIX. Fixed some incorrect function declarations in winmain.c [Oliver Stoneberg].
 - cps2: Made ssf2t a parent set [Alex Jackson].
 - New driver: sigmab98.c [Luca Elia].
 - astrocorp.c: Added PCB layout for Astro M1.1 & M1.2 PCBs [Brian Troha].
@@ -76,8 +76,8 @@ Source changes:
 - Rewritten palette initialization in Naughty Boy HW by using the RESNET [Angelo Salese].
 - Rewrote Z180 cycle accounting to create a basis for more exact internal I/O and timer operations as well as implementing interrupt priorities. Removed unused BIG_SWITCH code as well [Couriersud].
 - MPU4 Updates [James Wallace]:
-  * Added trackball support.
-  * Fixed quiz game controls.
+  * Added trackball support;
+  * Fixed quiz game controls;
   * Restructured AWP games' characteriser handling.
 - Added photo y2k2 decryption table [iq132].
 - Improved Z180 interrupt and timer handling. Added some missing save state entries and fixed HALT [Couriersud].

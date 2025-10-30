@@ -194,7 +194,7 @@ Translations added or modified
 Hungarian [Lothar Serra Mari]
 
 
-MAMETesters Bugs Fixed (14):
+MAME Testers Bugs Fixed (14):
 ----------------------------
 - 00599: [DIP/Input] (m72.cpp) poundfor: You can't move the arrows on the menu screens to choose the other boxer or game (AJR).
 - 06103: [Documentation] (taitopjc.cpp) optiger: The correct description is "Operation Tiger (Ver 2.14 O)" (sjy96525).
@@ -223,7 +223,7 @@ Source changes:
   * Added ball and paddle screen drawing, green background as per flyer pictures, and flip screen support;
   * Added reach button and updated input labels.
 - k054321: Implemented as a device [O. Galibert, Phil Bennett].
-- z180: Fixed obvious typo detected by Coverity, thanks Coverity [O. Galibert].
+- z180: Fixed obvious typo detected by Coverity, thanks Coverity [Olivier Galibert].
 - Added a mechanism for devices to generate clocks for other devices [AJR]:
   * Made set_unscaled_clock and set_clock_scale not call notify_clock_changed unless the device has been started;
   * Made owner-derived clocks update whenever the owner's clock changes, including at configuration time;

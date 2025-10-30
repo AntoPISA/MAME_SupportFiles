@@ -13,13 +13,13 @@ New Clones Added
 Rad Rally (Japan) [Arcadecomponents.com]
 The King of Fighters '97 (Korean release) [DsNo]
 
-New Games Marked as GAME_NOT_WORKING
-------------------------------------
+New Game Marked as GAME_NOT_WORKING
+-----------------------------------
 Fighting Bujutsu [Ville Linde, R. Belmont]
 
 
-MAMETesters Bugs Fixed (7):
----------------------------
+MAME Testers Bugs Fixed (7):
+----------------------------
 - 02700: [Speed] pocketrc: game runs too fast (hap)
 - 04477: [Documentation] naomi: Duplicate File entries in each set in driver (Tafoid)
 - 04475: [Graphics] quizmeku: Missing gfx (MASH)
@@ -34,19 +34,19 @@ Source changes:
 - Implemented double buffering and improved colors for 3d in Top Landing [Angelo Salese].
 - naomi.c: Added rev "A" Japan BIOS, original Korean BIOS as well as rev "D" Korea [gamerfan, Smitdogg, BrianT, The Dumping Union].
 - armedf.c: Verified correct sprite roms for Terra Force (Japan) [ShouTime].
-- dday.c: Added dipswitch locations to the D-Day sets [Corrado Tomaselli, Brian Troha].
+- dday.c: Added DIP switch locations to the D-Day sets [Corrado Tomaselli, Brian Troha].
 - m68k: Preliminary support for MC68340 (CPU32).  Reorganized to facilitate C++ conversion [David Haywood].
 - m68k: use 68340 instruction table for 68340, cpXXX instructions are 020/030 only, add CINV, CPUSH stubs for 040 [R. Belmont].
 - Add comment about new raiden2 ROM combination, add missing pals as undumped, fix IC locations on several sets [Lord Nightmare, Hammad, EdCosta].
-- Various HLSL fixes: [Ryan Holtz, Bat Country Entertainment]
-  * Created two flags, -hlsl_ini_write and -hlsl_ini_read. The former enables custom HLSL INI writing explicitly, the other enables loading of the same.
-  * Fixed disappearing aperture effect when using custom INI files.
-  * Fixed diagonal seam on some games, for serious real this time.
+- Various HLSL fixes: [Ryan Holtz, Bat Country Entertainment]:
+  * Created two flags, -hlsl_ini_write and -hlsl_ini_read. The former enables custom HLSL INI writing explicitly, the other enables loading of the same;
+  * Fixed disappearing aperture effect when using custom INI files;
+  * Fixed diagonal seam on some games, for serious real this time;
   * Fixed phosphor simulation, now works as expected.
 - model3.c: Redumped Spikeout FE. Special thanks to Phil Bennett & Bart. Trzynadlowski for verifying and testing the redumped ROMd [Dr.Spankenstein, wild eyed, Paratech, Layne, Lord Flux, atchoo, cbt, gatt9, tormod, BrianT, The Dumping Union].
 - Only report samples audit result for sets with required samples [Fabio Priuli].
 - Fixed segfault when using -verifysamples [Fabio Priuli].
-- floppy: Refactor slightly.  Name, descrition, etc are now an intrinsic property of converters [O. Galibert].
+- floppy: Refactor slightly.  Name, descrition, etc are now an intrinsic property of converters [Olivier Galibert].
 - Added some Stern Whitestar older revisions [Miodrag Milanovic].
 - Preliminary work at the projection calculation for 3d eye-space points in Air Inferno [Angelo Salese, Andrew Gardner].
 - es5503: Converted to modern device, improved IRQ timing [R. Belmont].
@@ -59,26 +59,26 @@ Source changes:
   * Fixed interrupt flags for internal peripherals, corrected BBC/BBS when running outside of bank 0 [R. Belmont].
   * Several other interrupt timing and priority fixes [hap].
 - whitestar: Make modern, add sound system. No work on main CPU part yet [R. Belmont].
-- floppy: Add brand-new MFI (MESS floppy image) support [O. Galibert].
-- mfi: Fix the format thanks to smf's help [O. Galibert].
-- amigafdc: Modernize, but don't change a thing (yet) [O. Galibert].
-- floppy: Change the internal format to use magnetic cells. Temporarily move the full-track pll bit extraction in the amiga fdc [O. Galibert].
-- st_dsk: Add the easy ST formats [O. Galibert].
-- tempest.c: Corrected the ROM labels, description and documentation for the revised hardware rev 3 of Tempest. Added dipswitch locations for the Tempest sets [Brian Troha].
+- floppy: Add brand-new MFI (MESS floppy image) support [Olivier Galibert].
+- mfi: Fix the format thanks to smf's help [Olivier Galibert].
+- amigafdc: Modernize, but don't change a thing (yet) [Olivier Galibert].
+- floppy: Change the internal format to use magnetic cells. Temporarily move the full-track pll bit extraction in the amiga fdc [Olivier Galibert].
+- st_dsk: Add the easy ST formats [Olivier Galibert].
+- tempest.c: Corrected the ROM labels, description and documentation for the revised hardware rev 3 of Tempest. Added DIP switch locations for the Tempest sets [Brian Troha].
 - globalfr: Filled in a little more of the memory map [R. Belmont].
 - Yet more Neo-Geo work on game ROMs structures [Johnboy]:
-  * Continued to document used pcb's for cartridges.
-  * More removal of .bin extension in favour of chiplabel.socketlabel naming convention.
-  * Added correct v1 to pulstar.
+  * Continued to document used pcb's for cartridges;
+  * More removal of .bin extension in favour of chiplabel.socketlabel naming convention;
+  * Added correct v1 to pulstar;
   * Corrected layout of pgoal according to original cart.
 - Added redumped c1/c2 and v1 to quizdaisk [DsNo].
 - Various changes and improvements to the Chihiro emulation [Samuele Zannoli]:
-  * Modifies the ide device (idectrl.c) so it supports cases where it is not connected to an hard disk, but to some different hardware.
-  * Adds PC devices 8259 pic, 8253 pit, ide controller.
-  * Adds "chihiro" command with subcommands "jamdis", "dump_string", "dump_process", "dump_list", "help".
-  * Updates the smbus controller and adds stubs for the pic16lc, cx25871, eeprom smbus devices.
-  * Updates the memory map for the newly added devices.
-  * Fixes the size of the "others" region.
+  * Modifies the ide device (idectrl.c) so it supports cases where it is not connected to an hard disk, but to some different hardware;
+  * Adds PC devices 8259 pic, 8253 pit, ide controller;
+  * Adds "chihiro" command with subcommands "jamdis", "dump_string", "dump_process", "dump_list", "help";
+  * Updates the smbus controller and adds stubs for the pic16lc, cx25871, eeprom smbus devices;
+  * Updates the memory map for the newly added devices;
+  * Fixes the size of the "others" region;
   * Adds hack for the missing dump of the smbus eeprom.
 - Decoded graphics in gigaman2 [iq_132].
 - Hooked up sound, fixed layer offsets in ppan [iq_132].

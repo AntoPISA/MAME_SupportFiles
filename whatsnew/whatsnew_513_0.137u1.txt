@@ -35,22 +35,22 @@ Rapid River (RD2 Ver. C) [Guru]
 Crisis Zone (CSZO3 Ver. B) [Guru]
 
 
-MAMETesters Bugs Fixed (7):
+MAME Testers Bugs Fixed (7):
 ---------------------------
-- 03793: [Compiling] Build for G4 (altivec) is broken (Aaron Giles).
-- 03792: [Compiling] Support for kFreeBSD (Aaron Giles).
-- 03371: [Sound] yiear, yiear2: Music pitch is lower than PCB (Tafoid).
-- 03550: [DIP/Input] moonwar: Missing "Hyper Flip" Button (Lord Nightmare).
-- 00304: [Graphics] All sets in toaplan1.c: In cocktail mode player 2 screen is not correct or flip screen on the players screen is not correct (Quench).
-- 03775: [Interface] primglex: Missing buttons (R. Belmont).
-- 03762: [DIP/Input] tekken and clones: Kick button does not work (R. Belmont).
+- 03793: [Compiling] Build for G4 (altivec) is broken (Aaron Giles)
+- 03792: [Compiling] Support for kFreeBSD (Aaron Giles)
+- 03371: [Sound] yiear, yiear2: Music pitch is lower than PCB (Tafoid)
+- 03550: [DIP/Input] moonwar: Missing "Hyper Flip" Button (Lord Nightmare)
+- 00304: [Graphics] All sets in toaplan1.c: In cocktail mode player 2 screen is not correct or flip screen on the players screen is not correct (Quench)
+- 03775: [Interface] primglex: Missing buttons (R. Belmont)
+- 03762: [DIP/Input] tekken and clones: Kick button does not work (R. Belmont)
 
 
 Source changes:
 ---------------
-- Added default nvrams to the ST-V driver [David Haywood].
+- Added default NVRAMs to the ST-V driver [David Haywood].
 - Improve text layer in LE2 [David Haywood]:
-  * Set display enable to be ON by default.  LE2 doesn't turn it on until after the test screens, which would seem to indicate that the register should default to on, otherwise they're always invisible;
+  * Set display enable to be ON by default. LE2 doesn't turn it on until after the test screens, which would seem to indicate that the register should default to on, otherwise they're always invisible;
   * Added a kludge to use the right palette for the text layer in LE2, I haven't checked, but I wonder if this could also be related to internal defaults for the mixer chip which the game doesn't change;
   * This allows you to see the ram/rom tests anyway, which is better than an invisible startup.
 - 680x0 FPU updates [R. Belmont]:
@@ -84,17 +84,17 @@ Source changes:
   * Implemented FMOVECR;
   * Added load extended PC relative indexed support;
   * Cleanup some duplicated code.
-- Added "Fun World Quiz" description, and hardware notes [Roberto Fresca].
+- Added Fun World Quiz description, and hardware notes [Roberto Fresca].
 - More improvements to Funworld driver [Roberto Fresca, David Haywood]:
-  * Improved inputs for "Fun World Quiz";
-  * Proper handlers and banking for "Fun World Quiz" questions;
+  * Improved inputs for Fun World Quiz;
+  * Proper handlers and banking for Fun World Quiz questions;
   * Partial decryption for (royalcdc) and (multiwin);
-  * Complete "Fun World Quiz" DIP switches with DIP locations;
-  * Promoted "Fun World Quiz" to working state;
+  * Complete Fun World Quiz DIP switches with DIP locations;
+  * Promoted Fun World Quiz to working state;
   * Added "Fun World Quiz" bookkeeping instructions notes.
 - Added default NVRAM for Namco FL games and some Namco System 2 games [David Haywood].
-- Implemented player 2 input buffer protection in "Winning Spike" [Angelo Salese].
-- Implemented IRQ hack in the "Pastel Gal" driver and implemented GFX ROM readback in "Three Dealers Casino House" [Angelo Salese].
+- Implemented player 2 input buffer protection in Winning Spike [Angelo Salese].
+- Implemented IRQ hack in the Pastel Gal driver and implemented GFX ROM readback in "Three Dealers Casino House" [Angelo Salese].
 - More improvements to Funworld driver [Roberto Fresca]:
   * Reworked button-lamps layouts per game. Cleaned-up the code;
   * Added specific button-lamps layout for bigdeal games;
@@ -112,7 +112,7 @@ Source changes:
   * Reworked the input ports a bit so that they include a common base rather than duplicating common inupts;
   * Renamed (aircombu) to (aircomb), and made it the parent instead of the Japanese set.
 - Cave cleanups [David Haywood]:
-  * Removed fake Region dipswitch that modified the region byte in the EEPROM each reset for "Sailor Moon", "Air Gallet" and "Mazinger Z";
+  * Removed fake Region DIP switch that modified the region byte in the EEPROM each reset for Sailor Moon, Air Gallet and Mazinger Z;
   * Split out different regions into clones with different default EEPROMs instead, and ensured all EEPROMs are factory default for that region (this is a cleaner solution and more accurately represents the PCBs).
 - dynax.c, ddenlovr.c: Added driver data class [Fabio Priuli].
 - tlcs90.c: Added save states [Fabio Priuli].
@@ -137,7 +137,7 @@ Source changes:
 - Fixed spinner input in moonwarp, added notes about spinner board, marked game as working [Lord Nightmare].
 - Imported the same implementation of moon war proto's spinner to moon war 2; works much more smoothly now [Lord Nightmare].
 - Fix very minor occasional glitches in moonwar/moonwara/moonwarp spinners caused by IPT_DIAL crossing the 0x00<->0xFF border. Added conditional Hyperflip button to moonwar, only seems present in upright mode? (in cocktail mode the same input is used by player 2 for a different button) [Lord Nightmare].
-- Implement many of the dipswitches for moonwarp, and re-add the color test mode to frenzy; Cocktail/upright select is still missing from moonwarp, though I managed to trigger cocktail mode a few times by accident. Needs code study to see what it actually depends on. The p2 controls are separate in cocktail mode [Lord Nightmare].
+- Implement many of the DIP switches for moonwarp, and re-add the color test mode to frenzy; Cocktail/upright select is still missing from moonwarp, though I managed to trigger cocktail mode a few times by accident. Needs code study to see what it actually depends on. The p2 controls are separate in cocktail mode [Lord Nightmare].
 - Fixed for good trasparency issues in "Three Dealers Casino House" [Angelo Salese].
 - snes.c: Some internal refactoring, some new debug functions and a small mode7 fix [Fabio Priuli].
 - Changed default initial state of PIC8259 to STATE_READY [Miodrag Milanovic].

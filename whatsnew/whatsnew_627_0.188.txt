@@ -134,7 +134,7 @@ ibm5150: Boulder Dash Construction Kit [Justin Kerk]
 ibm5170: IBM Personal Computer DOS (Version J5.00/V) (Japanese), PC-DOS (multiple sets using XDF disk format) [Justin Kerk]
 
 
-MAMETesters Bugs Fixed (13):
+MAME Testers Bugs Fixed (13):
 ----------------------------
 - 05900: [Sound] (ddenlovr.cpp) funkyfig, funkyfiga: Missing music and partial sound FX (Ivan Vangelista)
 - 06261: [Sound] (polepos.cpp) polepos2: Crowd Cheering sounds are messed up at the chequered flag (goal) (Robbbert)
@@ -225,13 +225,13 @@ Source changes:
 - MC6847: Fixed "Semigraphics 6" mode on CoCo/MC-10 (issue reported by Jim Gerrie). Displays "stripes" for video bytes $00-$7F because INT/EXT is asserted but A/S is not, and there is no external ROM [Nathan Woods].
 - Cleaned up the MC-10 driver [Nathan Woods].
 - Fixed regression in ROM loading that resulted in not all actual hashes being printed on mismatch [Nathan Woods].
-- sdl: Added SDL_WINDOW_BORDERLESS for fullscreen, required by some Linux window managers [O. Galibert].
-- dvdisasm: Simplified by decoupling information creation and display rendering [O. Galibert].
-- debugcpu: Eliminated direct() from read_opcode [O. Galibert].
-- options: Set the value when setting the default as before [O. Galibert].
-- mameopts: Don't lose the system inipath when looking for hashpath [O. Galibert].
-- dimemory: Lifted cap on number of address spaces per device, renamed AS_DECRYPTED_OPCODES to AS_OPCODES [O. Galibert].
-- Fixed media option numbering with custom instance names (github issue 2468) [O. Galibert].
+- sdl: Added SDL_WINDOW_BORDERLESS for fullscreen, required by some Linux window managers [Olivier Galibert].
+- dvdisasm: Simplified by decoupling information creation and display rendering [Olivier Galibert].
+- debugcpu: Eliminated direct() from read_opcode [Olivier Galibert].
+- options: Set the value when setting the default as before [Olivier Galibert].
+- mameopts: Don't lose the system inipath when looking for hashpath [Olivier Galibert].
+- dimemory: Lifted cap on number of address spaces per device, renamed AS_DECRYPTED_OPCODES to AS_OPCODES [Olivier Galibert].
+- Fixed media option numbering with custom instance names (github issue 2468) [Olivier Galibert].
 - cbuster.cpp: Added a x3 hack to the YM2203 clock frequency to fix incorrect pitch [Phil Bennett].
 - Improved -romident performance by dynamically allocating large arrays at device_start time [Phil Bennett].
 - m377xx: Added preliminary M37720 support [R. Belmont].

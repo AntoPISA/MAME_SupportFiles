@@ -1,4 +1,4 @@
-﻿0.145u6 2012/04/08 [#567 - Miodrag Milanovic]
+﻿0.145u6 2012/04/08 [#567 - Miodrag Milanović]
 ---------------------------------------------
 
 
@@ -7,8 +7,8 @@ New Games Added or Promoted from NOT_WORKING Status
 Fun River [Sara S.]
 unknown Japanese horse gambling game (preliminary) [hap, Paul Swan]
 
-New Clones Added
-----------------
+New Clone Added
+---------------
 Rastan (US) [Stefan Lindberg]
 
 New Games Marked as GAME_NOT_WORKING
@@ -17,14 +17,14 @@ Dragon World Pretty Chance [Smitdogg, Tjeerd Carter]
 Quiz Show [hap, Siftware]
 
 
-MAMETesters Bugs Fixed (6):
+MAME Testers Bugs Fixed (6):
 ---------------------------
-- 02675: [Sound] rdft, rdft2: Music used in the boss levels of Raiden Fighters and Raiden Fighters 2 play (Mssion 1-3, 2-3) slower than the original (Sonikos).
-- 04734: [Crash/Freeze] tylz: Crash after OK (Pugsy).
-- 04735: [Crash/Freeze] breywood, shackled: Black screen (stephh).
-- 04737: [Original Reference] ckong: correct manufacturer found for Crazy Kong (Falcon?).
-- 04741: [Sound] xmen: Instruments in the music are playing back at the wrong volume (hap).
-- 04743: [Crash/Freeze] pzloop2jr1: Black Screen (Tafoid).
+- 02675: [Sound] rdft, rdft2: Music used in the boss levels of Raiden Fighters and Raiden Fighters 2 play (Mssion 1-3, 2-3) slower than the original (Sonikos)
+- 04734: [Crash/Freeze] tylz: Crash after OK (Pugsy)
+- 04735: [Crash/Freeze] breywood, shackled: Black screen (stephh)
+- 04737: [Original Reference] ckong: correct manufacturer found for "Crazy Kong (Falcon?)" (Fortuna)
+- 04741: [Sound] xmen: Instruments in the music are playing back at the wrong volume (hap)
+- 04743: [Crash/Freeze] pzloop2jr1: Black Screen (Tafoid)
 
 
 Source changes:
@@ -41,7 +41,7 @@ Source changes:
 - Changed required_/optional_shared_ptr to support set_target with base and size for manually configuring a shared pointer, and a new allocate method for dynamically allocating (and registering the memory for save states) [Aaron Giles].
 - Converted gamtor.c to use VGA device (doesn't work though due of a weird banking problem) [Angelo Salese].
 - Converted memory_private to memory_manager and moved global memory operations into methods on it. Converted the less-popular cases over in drivers that used them, leaving the bank management APIs global for now [Aaron Giles].
-- dc: Fix the maple hookup and controllers and add the missing maple irq [O. Galibert].
+- dc: Fix the maple hookup and controllers and add the missing maple irq [Olivier Galibert].
 - Decrypted sprites in lhzb. Decrypted tiles and palette in lhzb2 and slqz2. Added inputs and memory maps in these games, pending protection simulation [Luca Elia].
 - Decrypted the rest of the gambling sets in igs_m027.c. No further advancements in visible emulation to report, though [iq132].
 - Fixed ymf271.c core timer allowing for greater accuracy [Sonikos]
@@ -51,20 +51,20 @@ Source changes:
 - Implemented flip screen support to Mirax [Angelo Salese].
 - Improved irqs in Little Robin, and added preliminary sound to it [Angelo Salese].
 - m68k: add preliminary on-board peripherals to 68307 and 68340 [David Haywood].
-- Major driver modernization changes [Miodrag Milanovic]:
-  * Added 4th parameter to all address maps.
-  * Added missing state classes.
+- Major driver modernization changes [Miodrag Milanović]:
+  * Added 4th parameter to all address maps;
+  * Added missing state classes;
   * Removed ADDRESS_MAP_MODERN define.
 - mirax, miraxa (mirax.c) Fixed Dip Switches and Inputs (after verification of the Z80 code) [stephh].
 - Misc sc4/68307 updates + prelim peripheral hookups, allows most sc4 sets to run their sound ROM checks [David Haywood].
 - model2.c: Added the I/O Controller ROM (Z80 based) for 'Rail Chase 2' [Brian Troha, The Dumping Union].
 - Move driver list/enumerator to new file drivenum.c/.h. Move game_driver definition and constants to new header gamedrv.h. [Aaron Giles].
 - Moved all drivers to using the paletteram helpers defined in the driver_device base class. The palette base is now specified via an AM_SHARE of "paletteram" or "paletteram2". The driver_device base class now finds these pointers and places them in m_generic_paletteram_8/_16/_32 and m_generic_paletteram2_8/_16/_32 [Aaron Giles].
-- namcos10: Fix banking for Mr. Driller 2, first stab at the encryption [O. Galibert].
+- namcos10: Fix banking for Mr. Driller 2, first stab at the encryption [Olivier Galibert].
 - namcos21.c: Added Namco game prefix to the Winning Run 91 set. Added minor documentation about the System21B two board stack [Brian Troha].
 - nmk16.c: Fixes some issues and cleaned up the video sources a bit [trap15].
 - pgm.c: Continued refactoring of the protections, including improved notes. Moved some code into the states and split states by protection type [David Haywood]
-- rastan.c: Add dipswitch locations to the Rastan sets [Brian Troha].
+- rastan.c: Add DIP switch locations to the Rastan sets [Brian Troha].
 - rastan.c: Cleaned up Parent/Child order. Corrected ROM names and added additional information / notes [Brian Troha].
 - Redumped sound roms in funcube2 and funcube3 [Guru, Yasuhiro Ogawa].
 - Redumped sprites ROM of lhzb2 [Guru].

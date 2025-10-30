@@ -196,7 +196,7 @@ picno:
   Anime Enikki, Kanji Club, Montage, Picno Art Puzzle, Picno de 1 2 3, Picno de A B C, Picno de A I U E O, Real Montage, Shirayuki-hime Monogatari [Team Europe, SSJ]
 
 
-MAMETesters Bugs Fixed (6):
+MAME Testers Bugs Fixed (6):
 ---------------------------
 - 05902: [Crash/Freeze] (gba.cpp) gba [bombtour]: Game hangs unable to start (R. Belmont).
 - 06683: [Graphics] (surpratk.cpp) suratk: Visible area is too small (Robbbert).
@@ -256,10 +256,10 @@ Source changes:
 - ymz770: Implemented CHAN/SEQ "keep playing" command [MetalliC].
 - tms9995: Fixed READY check on RESET (auto-waitstate) [Michael Zapf].
 - Updated GENie, BGFX, and BX, and added BIMG since it is separated now [Miodrag Milanovic].
-- Converted disassemblers to independent classes. All architectures are available in unidasm, and paged/non-linear program counters are supported better [O. Galibert].
-- emumem: Templated address_space::direct on address shift. Address passed to {read|write}_* on address_space or direct_read_data is now the logical address (not byte offset) [O. Galibert].
-- ide: Disambiguated 16- and 32-bit CS access, and added non-space CS access methods [O. Galibert].
-- memory: Removed some space parameters from the apple2 domain [O. Galibert].
+- Converted disassemblers to independent classes. All architectures are available in unidasm, and paged/non-linear program counters are supported better [Olivier Galibert].
+- emumem: Templated address_space::direct on address shift. Address passed to {read|write}_* on address_space or direct_read_data is now the logical address (not byte offset) [Olivier Galibert].
+- ide: Disambiguated 16- and 32-bit CS access, and added non-space CS access methods [Olivier Galibert].
+- memory: Removed some space parameters from the apple2 domain [Olivier Galibert].
 - interpro: CPU and MMU improvements [Patrick Mackinlay]:
   * Implemented most clipper CPU and MMU exceptions;
   * Completed C300 instructions, adjusted for C400;

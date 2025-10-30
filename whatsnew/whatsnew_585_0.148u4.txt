@@ -46,7 +46,7 @@ Source changes:
 - hikaru: Redumped bad ROMs in braveff and sgnascar as per the test mode checksum tables [Guru].
 - iteagle: add 1.02 bootrom, FPGA config ROMs, and PALs [Brian Troha].
 - iteagle: Updated documentation [Guru, Brian Troha].
-- m6502: Undocumented instruction 0x80 is a 2-byte nop, not a 1-byte one [O. Galibert].
+- m6502: Undocumented instruction 0x80 is a 2-byte nop, not a 1-byte one [Olivier Galibert].
 - naomi: Redumped mok, shaktamb, vtennis2, ngdup23a, vf4evo, initdexp, initdv3j, senkosp and initdv3e. Redumped GD-ROMs for cvs2gd, senkoo, and ss2005. GD-ROM redumps for confmiss, sprtjam, vstrik3, dygolf [f205v].
 - netlist.h: Fix for GCC prior to 4.3 [Federico Schwindt].
 - OS X: Support for both OS X native and Unix-style multiuser installs [R. Belmont, Nick Boos].
@@ -59,7 +59,7 @@ Source changes:
 - SDL: Don't double-shutdown the font cache on *IX when exiting with the debugger enabled [R. Belmont]
 - SDL: Fix symlink handling by internal file manager [qmc2].
 - segas18.c: Added ddcrewj 317-0185 decryption key [Porchy, Charles MacDonald].
-- suna16.c: Added board documentation, added PCB layouts for both styles of Back Street Soccer and Ultra Balloon. Added dipswitch locations to 'Back Street Soccer', 'Ultra Balloon' and 'Best of Best'. Changed CPU clocks to actual OSC based timing [Brian Troha].
+- suna16.c: Added board documentation, added PCB layouts for both styles of Back Street Soccer and Ultra Balloon. Added DIP switch locations to 'Back Street Soccer', 'Ultra Balloon' and 'Best of Best'. Changed CPU clocks to actual OSC based timing [Brian Troha].
 - superchs.c: Corrected main CPU clock, corrected some ROM labels. Added plds to the 'Super Chase - Criminal Termination' sets [Porchy, Brian Troha, The Dumping Union].
 - taitotz.c: Added romdumps from pwrshovl additional I/O PCB [Tormod].
 - tms5110r.c: Verified TMS5200 LPC ROM as correct from decap. Corrected and verified TMS5100 LPC table against the decap [digshadow, Lord Nightmare].

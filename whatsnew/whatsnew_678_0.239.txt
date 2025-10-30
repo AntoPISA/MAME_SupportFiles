@@ -2,36 +2,6 @@
 -----------------------------------
 
 
-MAME Testers Bugs Fixed
------------------------
-- 00413: [Sound] (crimfght.cpp) crimfght: Music plays slightly too slowly (Aaron Giles).
-- 01080: [Interface] (asteroid.cpp) Controller configuration files can’t override driver-supplied input mappings (Vas Crabb).
-- 01232: [Sound] (aliens.cpp) aliens: Music plays slower in MAME compared to PCB recording (Aaron Giles).
-- 03232: [Crash/Freeze] (gaelco.cpp) thoop: Continuing after losing all lives on stage 4 results in a black screen (David Haywood).
-- 03737: [Speed] (nemesis.cpp) salamand, lifefrce: Music is too slow (Aaron Giles).
-- 03754: [Sound] (thunderx.cpp) scontra, scontraj: Sound plays too slowly and channel volume balance is incorrect (Aaron Giles).
-- 04825: [Sound] (vendetta.cpp) vendetta: Music tempo is slower in MAME than on a real PCB (Aaron Giles).
-- 05919: [Graphics] (gaelco.cpp) thoop: Sprites are incorrectly drawn over foreground objects (David Haywood).
-- 06393: [Gameplay] (vendetta.cpp) vendetta (all versions): Hit boxes for some grounded enemies are incorrect (Angelo Salese).
-- 06764: [Misc.] (deco32.cpp) captaven and clones: Sound is out of sync with video for end credits sequence (Aaron Giles).
-- 07078: [Sound] (tmnt.cpp) tmnt, tmntua, tmntj: Music plays slower than it should (Aaron Giles).
-- 07153: [DIP/Input] (asteroid.cpp) Apparently all systems: SlikStick configuration for asteroid isn’t applied (Vas Crabb).
-- 07191: [Documentation] (maygayep.cpp) ep_ijob: A number of descriptions are missing the initial “The” (AntoPISA).
-- 07716: [Crash/Freeze] (cdi.cpp) cdimono1 [linkfoe, zeldgamu, zeldgam]: Game crashes when selecting a level (Ryan Holtz).
-- 07839: [Gameplay] (vendetta.cpp) vendetta and all clones: Attract mode demonstration plays incorrectly (Angelo Salese).
-- 07878: [Crash/Freeze] (mini2440.cpp) mini2440: System hangs during boot process (Ryan Holtz).
-- 08041: [Crash/Freeze] (nes.cpp) fds [smb2]: Game freezes at title screen (it should be animated) (kmg).
-- 08135: [DIP/Input] (taito_f2.cpp) qzquest: DIP switches 2-3 and 2-4 control the countdown timer speed (Steven Coomber).
-- 08138: [Media Support] (c64.cpp) gberet: Some tape software only works with no disk drives connected (Steven Coomber).
-- 08139: [Core] emumem: Memory access handlers are not being released properly, causing memory leaks (O. Galibert).
-- 08140: [Known Issues/To-Do's] (psion5.cpp) psion5mx: System fails to boot, only showing a blank screen (Ryan Holtz).
-- 08145: [Crash/Freeze] (segas32.cpp) f1lap: Game won’t boot if settings are changed, and may not reset correctly (Ivan Vangelista).
-- 08147: [Documentation] (vsnes.cpp) balonfgt: DIP switch settings for extra lives are labeled incorrectly (kmg).
-- 08148: [DIP/Input] (cinemat.cpp) spacewar, spaceshp: Playfield reset button is missing (kmg).
-- 08159: [Interface] (vegas.cpp) sf2049, sf2049se: Selected view is not saved correctly (Vas Crabb).
-- 08162: [DIP/Input] (cyclemb.cpp) skydest: Up and down joystick inputs are reversed (Steven Coomber).
-
-
 New working machines
 --------------------
 Amstar Draw Poker [darkdawgarcade, Brian Troha, f205v, simzy, Roberto Fresca]
@@ -182,6 +152,36 @@ n64:
 nes:
   8-bit Xmas 2016 [kmg]
   400 in 1 Real Game, X?ti?n Q?j?ng - Journey To The West (Asia, alt) [taizou]
+
+
+MAME Testers Bugs Fixed (26):
+-----------------------------
+- 00413: [Sound] (crimfght.cpp) crimfght: Music plays slightly too slowly (Aaron Giles)
+- 01080: [Interface] (asteroid.cpp) Controller configuration files can’t override driver-supplied input mappings (Vas Crabb)
+- 01232: [Sound] (aliens.cpp) aliens: Music plays slower in MAME compared to PCB recording (Aaron Giles)
+- 03232: [Crash/Freeze] (gaelco.cpp) thoop: Continuing after losing all lives on stage 4 results in a black screen (David Haywood)
+- 03737: [Speed] (nemesis.cpp) salamand, lifefrce: Music is too slow (Aaron Giles)
+- 03754: [Sound] (thunderx.cpp) scontra, scontraj: Sound plays too slowly and channel volume balance is incorrect (Aaron Giles)
+- 04825: [Sound] (vendetta.cpp) vendetta: Music tempo is slower in MAME than on a real PCB (Aaron Giles)
+- 05919: [Graphics] (gaelco.cpp) thoop: Sprites are incorrectly drawn over foreground objects (David Haywood)
+- 06393: [Gameplay] (vendetta.cpp) vendetta (all versions): Hit boxes for some grounded enemies are incorrect (Angelo Salese)
+- 06764: [Misc.] (deco32.cpp) captaven and clones: Sound is out of sync with video for end credits sequence (Aaron Giles)
+- 07078: [Sound] (tmnt.cpp) tmnt, tmntua, tmntj: Music plays slower than it should (Aaron Giles)
+- 07153: [DIP/Input] (asteroid.cpp) Apparently all systems: SlikStick configuration for asteroid isn’t applied (Vas Crabb)
+- 07191: [Documentation] (maygayep.cpp) ep_ijob: A number of descriptions are missing the initial “The” (AntoPISA)
+- 07716: [Crash/Freeze] (cdi.cpp) cdimono1 [linkfoe, zeldgamu, zeldgam]: Game crashes when selecting a level (Ryan Holtz)
+- 07839: [Gameplay] (vendetta.cpp) vendetta and all clones: Attract mode demonstration plays incorrectly (Angelo Salese)
+- 07878: [Crash/Freeze] (mini2440.cpp) mini2440: System hangs during boot process (Ryan Holtz)
+- 08041: [Crash/Freeze] (nes.cpp) fds [smb2]: Game freezes at title screen (it should be animated) (kmg)
+- 08135: [DIP/Input] (taito_f2.cpp) qzquest: DIP switches 2-3 and 2-4 control the countdown timer speed (Steven Coomber)
+- 08138: [Media Support] (c64.cpp) gberet: Some tape software only works with no disk drives connected (Steven Coomber)
+- 08139: [Core] emumem: Memory access handlers are not being released properly, causing memory leaks (O. Galibert)
+- 08140: [Known Issues/To-Do's] (psion5.cpp) psion5mx: System fails to boot, only showing a blank screen (Ryan Holtz)
+- 08145: [Crash/Freeze] (segas32.cpp) f1lap: Game won’t boot if settings are changed, and may not reset correctly (Ivan Vangelista)
+- 08147: [Documentation] (vsnes.cpp) balonfgt: DIP switch settings for extra lives are labeled incorrectly (kmg)
+- 08148: [DIP/Input] (cinemat.cpp) spacewar, spaceshp: Playfield reset button is missing (kmg)
+- 08159: [Interface] (vegas.cpp) sf2049, sf2049se: Selected view is not saved correctly (Vas Crabb)
+- 08162: [DIP/Input] (cyclemb.cpp) skydest: Up and down joystick inputs are reversed (Steven Coomber)
 
 
 Translations added or modified
@@ -886,7 +886,7 @@ Sonic The Hedgehog 3 (bootleg of Megadrive version) [Victor Fernandez (City Game
 
 -zr107.cpp: Corrected Transmission Type DIP switch label and inputs (#8801) [Steven Coomber]
 
--inder.cpp: WIP. Fixed dipswitches. Machines are all playable [Robbbert].
+-inder.cpp: WIP. Fixed DIP switches. Machines are all playable [Robbbert].
 
 -arc_scan256: Corrected size of ROM region [Nigel Barnes].
 

@@ -25,12 +25,12 @@ Game Magic [Grull Osgo]
 VLC Nevada [Yves]
 
 
-MAMETesters Bugs Fixed (13):
+MAME Testers Bugs Fixed (13):
 ----------------------------
 - 03464: [Debugger] (seattle.c) All sets in seattle.c: MAME crash when try to read the voodoo region (Firewave)
 - 03751: [Crash/Freeze] (gunpey.c) gunpey: [debug] Assert in debug build (Phil Bennett)
 - 03831: [Gameplay] (vicdual.c) carnivalh, carnivalha: Gameplay is unusually fast (hap)
-- 04717: [Documentation] (vicdual.c) nsub: Coinage dipswitch settings (hap)
+- 04717: [Documentation] (vicdual.c) nsub: Coinage DIP switch settings (hap)
 - 04718: [Documentation] (vicdual.c) invds: Dipswitch settings from manual.
 - 04719: [Documentation] (vicdual.c) invho2: Dipswitch settings from manual.
 - 05007: [Crash/Freeze] All sets in midtunit.c, midwunit.c, midxunit.c: Corrupted graphics, quickly crashes when starting (Firewave)
@@ -46,38 +46,38 @@ Source changes:
 ---------------
 - 6532riot.c: Internal timer is always running. Fixes several a2600 regressions [Wilbert Pol].
 - Added generic set of pinball mechanical sounds [Robbbert].
-- Added irq ack to Shanghai 3 HW [Angelo Salese].
+- Added IRQ hack to Shanghai 3 HW [Angelo Salese].
 - Added -verifysoftware command [Wilbert Pol].
 - aftor: Fixed display, marked as WORKING [Robbbert].
-- Better simulation of 'Metal Slug X's' protection device [IQ_132].
+- Better simulation of Metal Slug X's protection device [IQ_132].
 - Changed CPS-1 video timings to SCREEN_RAW_PARAMS [Angelo Salese].
 - Emulated Lord of Gun's protection rather than patching it out [iq_132].
 - Fix for "file note writeable" when creating, plus consolidated some duplicate/redundant code [smf].
 - Fixed M68K and hooked up SCREEN_RAW_PARAMS for Blocken. Game was definitely running at erratic speeds before [Angelo Salese, Tafoid].
-- gunpey.c - Corrected OKI M6925 frequency [Phil Bennett].
+- gunpey.c: Corrected OKI M6925 frequency [Phil Bennett].
 - Implemented DS75160A/DS75161A IEEE-488 GPIB Transceivers [Curt Coder].
 - In e.g. rranger [Luca Elia].
 - lib7z: Fix portability problems that resulted in memory trashing in some configurations [R. Belmont].
 - m6509: Fixed EA zero page indirect + Y (post indexed) [Curt Coder].
 - Made Epson R4543 RTC a proper RTC device, eliminates duplicated code in Namco Systems 12 and 23 [R. Belmont].
-- mcr68.c: Add dipswitch locations to all sets in the driver [Brian Troha].
+- mcr68.c: Add DIP switch locations to all sets in the driver [Brian Troha].
 - Memory handler cleanup 3. Add mem_mask parameter to 8-bit handlers to match the others. To ease pain, added DECLARE_READ/WRITE_HANDLER macros that set up a default parameter. Also updated devcb so that the handlers can be called with or without the mem_mask [Aaron Giles].
 - Memory handler normalization, part 1. READ/WRITE_DEVICE*_HANDLERs are now passed an address_space & and the 8-bit variants get a mem_mask as well. This means they are now directly compatible with the member function delegates. Added a generic address space to the driver_device that can be used when no specific address space is available. Also added DECLARE_READ/WRITE_DEVICE*_HANDLER macros to declare device callbacks with default mem_mask parameters [Aaron Giles].
 - Memory handler normalization, part 2. Change legacy read/write handlers to take an address_space & instead of an address_space *. Also update pretty much all other functions to take a reference where appropriate [Aaron Giles].
 - mos6526: Implemented a nearly cycle-exact "old" CIA, which passes most of the Lorenz/VICE CIA tests. Refactored the c64/c128/vic10/cbm2 drivers and the 1571/1581 floppy drives to use the new implementation [Curt Coder].
-- Moved scsi protocol code from scsibus_device to scsihle_device, leaving scsibus_device to calculate the current bus contents and distribute it to each of the scsidev_device [smf].
+- Moved SCSI protocol code from scsibus_device to scsihle_device, leaving scsibus_device to calculate the current bus contents and distribute it to each of the scsidev_device [smf].
 - mt03464: Fixed potential out of array access in src/emu/video/voodoo.c logerror() [Oliver Stöneberg].
-- Ported Palette brightness effects to 'Raiden 2' HW, used by 'Zero Team' and 'X Se Dae' [Angelo Salese].
+- Ported Palette brightness effects to Raiden 2 HW, used by 'Zero Team' and 'X Se Dae' [Angelo Salese].
 - Promoted starfigh to playable state [Luca Elia]:
-  * Address line scrambling of data ROMs.
-  * ROM bank latching and mirroring.
-  * Sound latch and NMI disable.
-  * Patched some further protection.
+  * Address line scrambling of data ROMs;
+  * ROM bank latching and mirroring;
+  * Sound latch and NMI disable;
+  * Patched some further protection;
   * Added graphics banking.
 - Rotation: Added motor simulation; added nvram; added mechanical sounds; added notes [Robbbert].
-- Seibu COP: Added 0x1c param to 0x0205 command, fixes at least sprite positioning during intros of 'Raiden 2' and 'Zero Team' (but breaks gameplay in 'Zero Team', needs investigation) [Angelo Salese, Smitdogg].
+- Seibu COP: Added 0x1c param to 0x0205 command, fixes at least sprite positioning during intros of Raiden 2 and Zero Team (but breaks gameplay in Zero Team, needs investigation) [Angelo Salese, Smitdogg].
 - Seibu COP: Added 0xe38e command, used by Seibu Cup Soccer to follow the ball [Angelo Salese].
-- Seibu COP: Made 0x42c2 command more accurate, makes 'Legionnaire' enemies to behave properly and match finally starts in 'Seibu Cup Soccer' [Angelo Salese, Smitdogg].
+- Seibu COP: Made 0x42c2 command more accurate, makes Legionnaire enemies to behave properly and match finally starts in 'Seibu Cup Soccer' [Angelo Salese, Smitdogg].
 - Since nobody checks for NULLs anyway, make device_memory_interface::space() assert against NULL and return a reference, and pushed references throughout all address space usage in the system. Added a has_space() method to check for those rare case when it is ambiguous [Aaron Giles].
 - spectra: Added remaining sounds, game marked as WORKING [Robbbert].
 - suna8.c: Fixed sound samples width, improves speech

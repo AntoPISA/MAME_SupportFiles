@@ -2,7 +2,7 @@
 ---------------------------------------------
 
 
-New Ggames Added or Promoted from NOT_WORKING Status
+New Games Added or Promoted from NOT_WORKING Status
 ---------------------------------------------------
 Bases Loaded (Prototype, PlayChoice-10) [Lost Levels]
 Caribbean Gold (3VXEC449, USA) [Heihachi73]
@@ -45,29 +45,29 @@ Saturday Night Slam Masters (bootleg with PIC16C57) [ANY, The Dumping Union, Rob
 Winning Streak (Version 1.1) (Coinworld) [albaki77]
 
 
-MAMETesters Bugs Fixed (3):
----------------------------
-- 03873: [Misc.] (megaplay.c and megatech.c): Individual games incorrectly writing an NVRAM file.  (Fabio Priuli)
+MAME Testers Bugs Fixed (3):
+----------------------------
+- 03873: [Misc.] (megaplay.c and megatech.c): Individual games incorrectly writing an NVRAM file (Fabio Priuli)
 - 05139: [Color Palette): ryorioh: Wrong Colors (Angelo Salese)
-- 05179: [Interface] -burnin option not functioning  (Fabio Priuli)
+- 05179: [Interface] -burnin option not functioning (Fabio Priuli)
 
 
 Source changes:
 ---------------
 - QT Debugger fixes [Andrew Gardner]:
-  * New memory windows start focused on the active CPU.
+  * New memory windows start focused on the active CPU;
   * Opening a utility window, closing it, and stepping no longer re-opens the window.
-- shangha3.c: Added dipswitch locations to Shanghai III, Hebereke no Ponpoon and Blocken [Brian Troha].
-- m6502: Seriously untested multi-dispatch-table support [O. Galibert].
+- shangha3.c: Added DIP switch locations to Shanghai III, Hebereke no Ponpoon and Blocken [Brian Troha].
+- m6502: Seriously untested multi-dispatch-table support [Olivier Galibert].
 - coolridr: Work around miscompile on newer versions of Clang [Phil Bennett].
 - Modernized k053260 device [Andrew Gardner].
-- M740 CPU family updates [R. Belmont, O. Galibert]:
-  * Support for all T=1 instructions.
+- M740 CPU family updates [R. Belmont, Olivier Galibert]:
+  * Support for all T=1 instructions;
   * Added COM and the accumulator-only versions of INC and DEC.
 - namcos2: Use the correct C68 (M37450) I/O MCU for Steel Gunner 2 [R. Belmont, Guru, Charles MacDonald].
 - aristmk4.c [Heihachi73]:
-  * Added Caribbean Gold (working), cleaned up comments and EPROM part numbers for a handful of games. Caribbean Gold needs some trivial input changes, as currently it has a logic door error on boot, however if you hit the coin input the error goes away and allows you to key in to perform a memory reset and finally coin up.
-  * Also, 'Caribbean Gold 2' [cgold2] now has passable graphics, by using two of cgold's graphics ROMs (cgold u8 and u9 -> cgold2 u20 and u45) the game is now playable instead of a garbled mess (there are only a few tiles which differ between both games).
+  * Added Caribbean Gold (working), cleaned up comments and EPROM part numbers for a handful of games. Caribbean Gold needs some trivial input changes, as currently it has a logic door error on boot, however if you hit the coin input the error goes away and allows you to key in to perform a memory reset and finally coin up;
+  * Also, Caribbean Gold 2 [cgold2] now has passable graphics, by using two of cgold's graphics ROMs (cgold u8 and u9 -> cgold2 u20 and u45) the game is now playable instead of a garbled mess (there are only a few tiles which differ between both games);
   * Promoted Caribbean Gold II and Fortune Hunter (and clone) to working - these had been working ever since eforest and arcwins were promoted but the flags were never removed.
 - Add support for Mitsubishi M50740/50741 MCUs [R. Belmont].
 - exidy.c: Fixed an out-of-range access spot by gcc-4.9 [Juergen Buchmueller].
@@ -81,10 +81,10 @@ Source changes:
 - m740: correct disassembly of bbs/bbc on A register [R. Belmont].
 - tms5220.c: Added correct tms5200 chirp ROM derived from decap; This is now correctly used for 5200, 5220 and 5220c, improving the voice quality significantly [digshadow, Sarayan, Lord Nightmare].
 - m740: Correct disassembly for seb x,A/clb x,A [R. Belmont].
-- Treat x & y coordinates as 11 bit signed on dots, lines & rectangles. This fixes sprites in Zaynac X Zaynac (fc version) in MESS [smf].
+- Treat x and y coordinates as 11 bit signed on dots, lines & rectangles. This fixes sprites in Zaynac X Zaynac (fc version) in MESS [smf].
 - QT Debugger: The memory view chunk size radio now reports proper sizes. Fixed "ignore" command reporting incorrect invalid CPUs. Fixed crazy code responsible for opcodes' crc32s in the comments system (what was I thinking back then?) [Andrew Gardner].
 - 315_5124.c: Small improvements to the palettes [Enik Land].
-- i960: Add cvtilr needed by 'Zero Gunner' [R. Belmont].
+- i960: Add cvtilr needed by Zero Gunner [R. Belmont].
 - tms5220.c: Extremely minor fix for Speak External based on the 5220c and 5200 decaps, and some small documentation updates [Lord Nightmare, digshadow].
 - gaplus.c: Corrected some issues between Galaga 3 & Gaplus sets [Brian Troha].
 - Reduced time before dma interrupt is fired, as it stops incorrect textures being displayed in a few games and the pse bios v2.2 [smf]..

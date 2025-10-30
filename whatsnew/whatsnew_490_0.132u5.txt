@@ -23,7 +23,7 @@ Time Traveller [Angelo Salese]
 Super Cherry Master [Team Europe / Dumping Union] (incomplete set)
 
 
-MAMETesters Bugs Fixed (9):
+MAME Testers Bugs Fixed (9):
 ---------------------------
 - 03250: [DIP/Input] empcity and clones: Credits are registering twice (Luigi30)
 - 03309: [Crash/Freeze] All Sets in ojankohs.c: When game issues a sound/voice, the game crashes (Tafoid)
@@ -39,10 +39,10 @@ MAMETesters Bugs Fixed (9):
 Source changes:
 ---------------
 - DIP switch update [kanikani]:
-  * Fixed default setting of jjsquawk, marked the game as IMPERFECT_SOUND, and added some notes.
+  * Fixed default setting of jjsquawk, marked the game as IMPERFECT_SOUND, and added some notes;
   * Added DIPLOCATION for toypop and liblrabl.
 - Intel 8255A PPI [Aaron Giles]:
-  * Added a new implementation of the I8255A device. Rewritten from scratch to properly support handshaking in modes 1 and 2.
+  * Added a new implementation of the I8255A device. Rewritten from scratch to properly support handshaking in modes 1 and 2;
   * Refactored sg1000a.c to use the new implementation.
 - Redumped Konami Viper CF and NVRAM for all games and updated drivers [Guru, Angelo Salese].
 - Fixed Aqua Jet sample ROM loading offset again [Phil Bennett].
@@ -57,15 +57,15 @@ Source changes:
 - Made pr8210 serial processing a little more robust [Aaron Giles].
 - Fixed year for Mighty Monkey (and clones) based on US Copyright Searches [Braille].
 - ARM7 updates [R. Belmont, Ryan Holtz]:
-  * Prepped to support multiple architecture versions.
-  * Added ARM9 CPU type (ARMv5TE).
+  * Prepped to support multiple architecture versions;
+  * Added ARM9 CPU type (ARMv5TE);
   * Added mostly-stubbed system coprocessor/MMU support.
 - Fixed resource leak in core_fload() [Aaron Giles].
 - Added flashv2.u30 (v2 bios) to the taitogn driver [Joerg Hartenberger].
 - Added IDE Lock mechanism to the IDE Driver in MAME, so games on gnet v2 bios are working correct now (idectrl.c / idectrl.h) & taitogn.c [Joerg Hartenberger].
 - Further improvements for Shogun Warriors [David Haywood, Tomasz Slanina]:
-  * Decoded tables for several of the startup commands, made some observations, was unable to properly decode table 0x80, second byte scrambling is .. odd, so just using extract data right now.
-  * Properly mapped inputs in Shogun Warriors.
+  * Decoded tables for several of the startup commands, made some observations, was unable to properly decode table 0x80, second byte scrambling is odd, so just using extract data right now;
+  * Properly mapped inputs in Shogun Warriors;
   * Decodes a block of data used by the Japanese version (fjbuster) for the character select screen. Basically block 0x40 is the same as MCU block/table 0x41, but using different encryption (inline encryption table + additional overlay table instead of each byte being bit shifted).
 - Updated Jockey Club II notes [David Haywood, Gerald].
 - Verified Fruits & Bunny PROM [f205v].

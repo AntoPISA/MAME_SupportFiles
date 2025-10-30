@@ -1,9 +1,9 @@
-﻿0.144u7 2012/01/29 [#560 - Miodrag Milanovic]
+﻿0.144u7 2012/01/29 [#560 - Miodrag Milanović]
 ---------------------------------------------
 
 
-New Games Added or Promoted from NOT_WORKING Status
----------------------------------------------------
+New Game Added or Promoted from NOT_WORKING Status
+--------------------------------------------------
 Steal See (& Get Land) [N. A. Jimenez, M. Krug, ShiggsUnderground, C. Stefano, Ted Bailey, R. Mucciarelli, Smitdogg, The Dumping Union]
 
 New Clones Added
@@ -21,10 +21,10 @@ Popo Bear [R. Mucciarelli, N. Francfort, Smitdogg, The Dumping Union]
 Virtua NBA (prototype) [Arzeno Fabrice]
 
 
-MAMETesters Bugs Fixed (24):
+MAME Testers Bugs Fixed (24):
 ----------------------------
 - 03600: [Gameplay] gberet: 30fps framerate seems abnormal (hap)
-- 03761: [Graphics] edrandy and clones: Do not see the clouds in the background (hap).
+- 03761: [Graphics] edrandy and clones: Do not see the clouds in the background (hap)
 - 04268: [Crash/Freeze] All sets using OKI6295 audio: Use of save states eventually crashes MAME upon loading (R. Belmont)
 - 04508: [Graphics] charlien: Little graphic garbage (David Haywood)
 - 04595: [Crash/Freeze] cryptklr: Crashes MAME before it can display the disclaimer (Curt Coder)
@@ -33,20 +33,20 @@ MAMETesters Bugs Fixed (24):
 - 04611: [Crash/Freeze] galpanis galpanisj: both sets freeze on region information (hap)
 - 04612: [Crash/Freeze] All sets in aleck64.c: Crash before OK (MooglyGuy)
 - 04613: [Graphics] pballoon: Scrolling problem (hap)
-- 04615: [Documentation] rackempp: The correct description is "Rack 'em Up! (Pinball)"
-- 04616: [Documentation] radcl_l1 and clones: The correct description is "Radical!..." with the exclamation point
-- 04617: [Documentation] rally: According to ipdb.org reports, the exact release year is 1980
-- 04618: [Documentation] All sets in taito.c: All sets in this driver are made by "Taito do Brasil"
-- 04620: [Documentation] j6cpalb: In according with ACE flyer, the exact release year is 1998
-- 04623: [Timing] drivers that use SCREEN_VBLANK: change from SCREEN_EOF to SCREEN_VBLANK regressed timing (hap)
-- 04624: [Graphics] blswhstl, detawin: Missing graphics (hap)
-- 04629: [Crash/Freeze] topgunnr: [debug] Assert after OK (Aaron Giles)
-- 04630: [Crash/Freeze] skyraid: [debug] Assert after OK (Aaron Giles)
-- 04633: [Graphics] rollerg and clones: Graphics corruption on right side of screen (Aaron Giles)
-- 04637: [Graphics] chukatai: Garbage sprites on the left side of the screen (David Haywood)
-- 04638: [Graphics] All sets in hng64.c: Missing 3D graphics (Aaron Giles)
-- 04639: [Graphics] wheelfir: Missing foreground layer (Aaron Giles)
-- 04643: [Crash/Freeze] All sets in chsuper.c: [debug] Exception after OK with debug build (Aaron Giles)
+- 04615: [Documentation] rackempp: The correct description is "Rack 'em Up! (Pinball)".
+- 04616: [Documentation] radcl_l1 and clones: The correct description is "Radical!..." with the exclamation point.
+- 04617: [Documentation] rally: According to ipdb.org reports, the exact release year is 1980.
+- 04618: [Documentation] All sets in taito.c: All sets in this driver are made by "Taito do Brasil".
+- 04620: [Documentation] j6cpalb: In according with ACE flyer, the exact release year is 1998.
+- 04623: [Timing] drivers that use SCREEN_VBLANK: change from SCREEN_EOF to SCREEN_VBLANK regressed timing (hap).
+- 04624: [Graphics] blswhstl, detawin: Missing graphics (hap).
+- 04629: [Crash/Freeze] topgunnr: [debug] Assert after OK (Aaron Giles).
+- 04630: [Crash/Freeze] skyraid: [debug] Assert after OK (Aaron Giles).
+- 04633: [Graphics] rollerg and clones: Graphics corruption on right side of screen (Aaron Giles).
+- 04637: [Graphics] chukatai: Garbage sprites on the left side of the screen (David Haywood).
+- 04638: [Graphics] All sets in hng64.c: Missing 3D graphics (Aaron Giles).
+- 04639: [Graphics] wheelfir: Missing foreground layer (Aaron Giles).
+- 04643: [Crash/Freeze] All sets in chsuper.c: [debug] Exception after OK with debug build (Aaron Giles).
 
 
 Source changes:
@@ -61,9 +61,9 @@ Source changes:
 - Converted Lemmings, Wizard Fire, Desert Assault, Rohga and Schmeiser Robo to use DECO generic sprite device [David Haywood].
 - Fixed bad assumption by the (pre)GX video mixer [R. Belmont].
 - Fixed pcap network device search [Carl].
-- Fixed some dipswitch defaults and added diplocations to many Konami and Namco games [kanikani].
+- Fixed some DIP switch defaults and added diplocations to many Konami and Namco games [kanikani].
 - Fixed VGA memory map writes [Grull Osgo].
-- floppy: Do specific UI handling [O. Galibert].
+- floppy: Do specific UI handling [Olivier Galibert].
 - Further Stepper clean-ups [J. Wallace].
 - i386: Stopped IOPL from being changed by IRET when CPL is zero. Made stack limit checks better handle the difference between 16 and 32-bit stacks in IRET and RETF. Fixed STR and SLDT instructions. Fixed BSR/BSF and CMPS based on test-i386 output. Basic implementation of FIST and FBLD FPU instructions. Added 32-bit operand size version of SMSW [Barry Rodewald].
 - i386: Various protection mode fixes. Major update to segment limit and protection checking. Fixed a bug with JCXZ opcode. BTR and page fault fixes [Carl].
@@ -74,9 +74,9 @@ Source changes:
 - ppu2c0x: Converted NES PPU to be a modern device [Fabio Priuli].
 - Remove support for 4bpp packed graphics. These only manifested for drivers that used GFX_RAW support for 4bpp systems, and yet we had a bunch of extra code to support it. Updated these drivers to do without it and removed all the extra code for supporting it. [Aaron Giles].
 - Rewrote i386 x87 emulation [Phil Bennett]:
-  * Implemented stack underflow/overflow behaviour.
-  * Implemented status word/exception flag updates.
-  * Implemented tag word updates.
+  * Implemented stack underflow/overflow behaviour;
+  * Implemented status word/exception flag updates;
+  * Implemented tag word updates;
   * Use SoftFloat arithmetic functions.
 - Rewrote tilemap.c as a C++ class. For now kept the global functions and just inline mapped them to the class. Will do a pass soon to actually update drivers to use the C++ methods directly. Also, the tilemap callbacks are now delegates which should make for cleaner integrating into modern devices and drivers going forward [Aaron Giles].
 - SDL: Don't show misleading message for .BDF UI fonts [R. Belmont, The Flying Ape].

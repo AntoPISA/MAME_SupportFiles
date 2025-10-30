@@ -29,7 +29,7 @@ Gundam Wing: Endless Duel (SNES bootleg) [N. Francfort, manliodp, Smitdogg, The 
 Mortal Kombat 3 (bootleg of Megadrive version) [Patrick McCarron, Smitdogg, The Dumping Union]
 
 
-MAMETesters Bugs Fixed (3):
+MAME Testers Bugs Fixed (3):
 ---------------------------
 - 03667: [Interface] All default/per-game .cfg files are not saved correctly (Aaron Giles)
 - 03671: [Sound] fcrash: Bad sound ingame (Mamesick)
@@ -138,7 +138,7 @@ Source changes:
   device->static_config -> device->baseconfig().static_config
   device->inline_config -> device->baseconfig().inline_config
 
-     and then fixed up the compiler errors that fell out;
+  and then fixed up the compiler errors that fell out;
   * Removed device_get_info_* functions and replaced them with methods called get_config_*;
   * Added methods for get_runtime_* to access runtime state from the running_device;
   * DEVICE_GET_INFO callbacks are only passed a device_config *. This means they have no access to the token or runtime state at all. For most cases this is fine;

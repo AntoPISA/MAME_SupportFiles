@@ -32,7 +32,7 @@ Skeet Shot [Phil Bennett, Andy Welburn, Angelo Salese]
 Magical Truck Adventure [R. Belmont]
 
 
-MAMETesters Bugs Fixed (3):
+MAME Testers Bugs Fixed (3):
 ---------------------------
 - 03288: [Sound] raiga, stratof: Sound is messed up (Mamesick)
 - 03185: [Interface] All games using Lightguns: [debug] Bitmap memory Leak (Firewave)
@@ -50,10 +50,10 @@ Source changes:
 - Added PCB location to several ROM sets in the asteroid.c driver [Brian Troha].
 - Added TMS0980 cpu core [Wilbert Pol].
 - mc68hc11 improvements [Angelo Salese]:
-  * Added STX DIR, STY DIR opcodes. 
-  * Fixed a bug with TAP opcode.
-  * Fixed internal RAM/internal I/O start-up state. 
-  * Fixed the I/O system by changing the has_io flag with a has_extended_io flag (switch between 0x40 and 0x100 I/O registers) the latter is used by the Taito JC HC11 CPU only at the current time. 
+  * Added STX DIR, STY DIR opcodes;
+  * Fixed a bug with TAP opcode;
+  * Fixed internal RAM/internal I/O start-up state;
+  * Fixed the I/O system by changing the has_io flag with a has_extended_io flag (switch between 0x40 and 0x100 I/O registers) the latter is used by the Taito JC HC11 CPU only at the current time;
   * Fixed a register r/w to allow Skeet Shooter to put some GFXs.
 - Added default monochrome amber and green palettes [Curt Coder].
 - Redumped m1 ROM of minasan [Team Japump].
@@ -68,8 +68,8 @@ Source changes:
 - Fixed an assert when using the 80188 CPU [Dirk Best].
 - Verified/changed clocks on Black Heart [Corrado Tomaselli].
 - Model 3 driver updates [R. Belmont]:
-  * Interrupt controller improved.
-  * Fixed chip IDs for magtruck and von254g.
+  * Interrupt controller improved;
+  * Fixed chip IDs for magtruck and von254g;
   * Various notes for working out additional issues.
 - Removed old drawgfx APIs after converting the remaining drivers to the new ones [Atari Ace, Aaron Giles].
 - PPCDRC: Generate some FPSCR flags [Phil Bennett].

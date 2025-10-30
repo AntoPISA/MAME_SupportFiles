@@ -33,7 +33,7 @@ Source changes:
   * Added support for objects with pitch != 1 for objects with 1-2 bits per pixels;
   * Added a function to retrieve the interface;
   * Added a MESS specific UI string (within #ifdef MESS of course);
-  * Parameterized the setdipswitches() call; so that a menu that looks like the DIP switch menu can easily be made with different IPT_* values (MESS has a configuration menu that functions a lot like the DIP *switch menu);
+  * Parameterized the setDIP switches() call; so that a menu that looks like the DIP switch menu can easily be made with different IPT_* values (MESS has a configuration menu that functions a lot like the DIP *switch menu);
   * Small fix to allow the UI to be drawn if the artwork system is active but no artwork is present (not an issue for MAME);
   * Cleanup and fix of set_ea_info() so that negative offsets of 8 or 16 bits do not have extraneous FF's in front of them;
   * More proper fix to the scanline display bug that prevented registers from being edited when the scanline display was on;

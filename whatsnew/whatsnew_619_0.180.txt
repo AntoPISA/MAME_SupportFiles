@@ -160,7 +160,7 @@ pico.xml:
 sawatte.xml: Doraemon Nobita no Dou Butsu Land, Soreike! Anpanman Onamae Na~ni, Ultra Hero Touch [Team Europe]
 
 
-MAMETesters Bugs Fixed (11):
+MAME Testers Bugs Fixed (11):
 ----------------------------
 - 03646: [Graphics] (segas16b.cpp) altbeastj, altbeast6 : Missing graphics in the crystal ball. (David Haywood)
 - 04933: [Flip Screen/Cocktail] (gaiden.cpp) gaiden and clones: Very slight offset down on flip screen (Osso)
@@ -267,9 +267,9 @@ Source changes:
   * Changed setters into passthroughs;
   * Stream it;
   * Changed to use dot syntax rather than -> syntax for chaining.
-- addrmem: Made obvious renames and added helpers [O. Galibert].
-- general: Eliminated attaching memory maps to driver_device [O. Galibert].
-- emucore: Removed generic_ptr [O. Galibert].
+- addrmem: Made obvious renames and added helpers [Olivier Galibert].
+- general: Eliminated attaching memory maps to driver_device [Olivier Galibert].
+- emucore: Removed generic_ptr [Olivier Galibert].
 - scn2674: Various changes [Barry Rodewald]:
   * Corrected the row on which a split occurs, fixes Octopus display of the last row before the status line split;
   * Added command 0xA6, fixes Octopus status line in Concurrent DOS, and BIOS character block write function.

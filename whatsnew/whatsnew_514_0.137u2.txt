@@ -23,7 +23,7 @@ Lucky Boy / Poker 72 [David Haywood]
 Print Club Pokemon B [Guru]
 
 
-MAMETesters Bugs Fixed (5):
+MAME Testers Bugs Fixed (5):
 ---------------------------
 - 02134: [Graphics] ffight2b: Graphics glitch (Angelo Salese)
 - 03396: [Crash/Freeze] nss_aten: Game does not progress past initial text screen (Angelo Salese)
@@ -35,30 +35,27 @@ MAMETesters Bugs Fixed (5):
 Source changes:
 ---------------
 - Hooked up default NVRAM and fixed sample ROM loading order in Championship Bowling [David Haywood].
-- snes.c: greatly simplified tile drawing routines, fixed a couple of small bugs in mosaic support, reworked debug functions to be detected properly in all games [Fabio Priuli].
-- snes.c: improved VRAM accesses (they're invalid during active display) and DMA transfers (not all addresses can be accessed) [Fabio Priuli].
-- snes.c: enabled PPU->CPU hdma transfer and moved hdma variables to snes_state [Fabio Priuli].
-- snes.c: updated HDMA to init/update according to Anomie's docs [Fabio Priuli].
-- namcos23: First extremely rough 3D hookup [O. Galibert].
+- snes.c: Greatly simplified tile drawing routines, fixed a couple of small bugs in mosaic support, reworked debug functions to be detected properly in all games. Improved VRAM accesses (they're invalid during active display) and DMA transfers (not all addresses can be accessed). Enabled PPU->CPU hdma transfer and moved hdma variables to snes_state. Updated HDMA to init/update according to Anomie's docs [Fabio Priuli].
+- namcos23: First extremely rough 3D hookup [Olivier Galibert].
 - Changed the killing blade parent to the PGM BIOS [smf] .
 - namcos23: Add some lighting [O. Galibert, Naibo].
 - namcos23: hooked up tilemap scroll, improved raster IRQ [R. Belmont].
 - snes.c: enforced abus validity check on dma reads, fixed possible tile and vram out of bounds bugs [Fabio Priuli].
 - Replaced Stocker dump with a good set [Kevin Eshbach].
 - Hooked up default NVRAM for Golly Ghost / Bubble Trouble [David Haywood].
-- namcos23: Add 3D model scaling [O. Galibert].
+- namcos23: Add 3D model scaling [Olivier Galibert].
 - Heavily improved the slot 72 - poker game, it's now known to be actually Poker Monarch [Angelo Salese].
 - m680x0 FPU updates [R. Belmont]:
-  * BCD packed decimal now supported, including k-factor.
-  * Improved FSAVE/FRESTORE including FPU reset when restoring a NULL frame.
-  * FREM instruction supported.
+  * BCD packed decimal now supported, including k-factor;
+  * Improved FSAVE/FRESTORE including FPU reset when restoring a NULL frame;
+  * FREM instruction supported;
   * Better disassembly of FPU instructions.
 - superfx.c: Added save states to the CPU [Fabio Priuli].
 - snes.c: Moved some more variables to driver state, set a few addresses as open bus and slightly changed SuperFX handlers not to access SNES WRAM [Fabio Priuli].
-- namcos23: c361 fixes and address auto-increment [O. Galibert].
+- namcos23: c361 fixes and address auto-increment [Olivier Galibert].
 - Further snes.c wip [Fabio Priuli]:
-  * Fixed a bug in SPC7110 handlers (now Tengai Makyou Zero test reaches RTC tests and fails them, instead of getting stuck at MUL/DIV tests).
-  * Implemented very preliminary (and currently broken) SPC7110 RTC emulation.
+  * Fixed a bug in SPC7110 handlers (now Tengai Makyou Zero test reaches RTC tests and fails them, instead of getting stuck at MUL/DIV tests);
+  * Implemented very preliminary (and currently broken) SPC7110 RTC emulation;
   * Updated DSP2 handlers to better reflect Overload's docs (problem and fix actually found by byuu).
 - Updated add-on chips handlers to reflect byuu's findings.
 - snes.c wip: Fixed reserved memory address read not returning open_bus; fixed a few add-on chip reads not returning open_bus [Fabio Priuli].
@@ -66,8 +63,8 @@ Source changes:
 - snes.c: Fixed a SRAM size problem and moved PPU registers handling to video/snes.c [Fabio Priuli].
 - ppu2c0x.c: Added save states to NES PPU and performed some minor cleanups [Fabio Priuli].
 - i386+ core updates [Samuele Zannoli]:
-  * Added CR4 register.
-  * Added bswap instruction.
+  * Added CR4 register;
+  * Added bswap instruction;
   * Added support for 4MB pages.
 - chihiro.c: Minor memory map update for running the BIOS [Samuele Zannoli].
 - Gun output cleanups/hookups [Howard Casto]:
@@ -77,19 +74,19 @@ Source changes:
   * machine\midyunit.c: Hooked up outputs for Terminator 2.
   * drivers\seta.c: Hooked up outputs for Zombie Raid.
 - i386/NEC disassembler updates [Alex Jackson]:
-  * Made "MOV AL, offset" etc (opcodes A0-A3) properly indicate a segment override prefix.
-  * Corrected the disassembly of various NEC-only instructions (mainly V25/V35-only instructions).
+  * Made "MOV AL, offset" etc (opcodes A0-A3) properly indicate a segment override prefix;
+  * Corrected the disassembly of various NEC-only instructions (mainly V25/V35-only instructions);
   * Changed CPUINFO_INT_MAX_INSTRUCTION_BYTES on i86 and NEC from 15 to 8.
 - Added correct ROMs to 'Dragon's Lair (Italian)' (dlital) [f205v].
 - Improvements to supdrapo.c driver [Roberto Fresca]:
-  * Reworked inputs to match the standard poker inputs names/layout.
-  * Hooked the payout switch.
-  * Hooked a watchdog circuitery, that seems intended to reset the game and/or an external device.
-  * Added machine start & reset.
-  * All clocks pre defined.
-  * Added ay8910 interfase as a preliminary attempt to analyze the unknown port writes when these ports are set as input.
-  * Figured out the following DIP switches: Auto Bet (No, Yes). Allow Raise (No, Yes). Double-Up (No, Yes). Minimal Winner Hand (Jacks or Better, Two Pair). Deal Speed (Slow, Fast). Aces Type (Normal Aces, Number 1). Cards Deck Type (english cards, french cards). Max Bet (5, 10, 15, 20).
-  * Added NVRAM support.
+  * Reworked inputs to match the standard poker inputs names/layout;
+  * Hooked the payout switch;
+  * Hooked a watchdog circuitery, that seems intended to reset the game and/or an external device;
+  * Added machine start and reset;
+  * All clocks pre defined;
+  * Added ay8910 interfase as a preliminary attempt to analyze the unknown port writes when these ports are set as input;
+  * Figured out the following DIP switches: Auto Bet (No, Yes). Allow Raise (No, Yes). Double-Up (No, Yes). Minimal Winner Hand (Jacks or Better, Two Pair). Deal Speed (Slow, Fast). Aces Type (Normal Aces, Number 1). Cards Deck Type (english cards, french cards). Max Bet (5, 10, 15, 20);
+  * Added NVRAM support;
   * Reorganized and cleaned-up the driver.
 - hng64: Fix sound ROM loading [Andrew Gardner].
 - Reworked the entire Nintendo 64 renderer to be class-based. More cleanup to follow [Harmony].
@@ -97,23 +94,23 @@ Source changes:
 - Applied some cppcheck fixes [Oliver Stoneberg].
 - Clear pending IRQ if the IRQ enable flag is disabled in the SNES driver [Angelo Salese].
 - midtunit.c: Fixed TMS340 parameter [Alex Jackson].
-- namcos23: Fix the zoom value [O. Galibert].
-- namcos23: First stab at z-sorting [O. Galibert].
+- namcos23: Fix the zoom value [Olivier Galibert].
+- namcos23: First stab at z-sorting [Olivier Galibert].
 - [8080/8085 CPU] Fix of mametester bug 3227 [Robbbert].
 - Moved the i/o update status inside a timer in the SNES driver [Angelo Salese].
 - Disabled unused variables and code based on cppcheck and VS2008 Code Analysis [Oliver Stoneberg].
 - Fixed some massive texturing issues in the new Nintendo 64 / RDP renderer [Harmony].
 - Disabled DRC versions of certain vector load/store operations in the RSP core in order to avoid geometry issues [Harmony].
 - Improved Rectangle drawing in the RDP core [Harmony].
-- poly.c: Make the parameter interpolation more robust [O. Galibert].
-- namcos23: Push the zclip a little to avoid poly.c issues for now [O. Galibert].
+- poly.c: Make the parameter interpolation more robust [Olivier Galibert].
+- namcos23: Push the zclip a little to avoid poly.c issues for now [Olivier Galibert].
 - Added boundary checks for MVN and MVP opcodes when in M mode in the G65816 CPU core [Angelo Salese].
 - Added a new input type IPT_KEYPAD for MESS, to distinguish between fully featured keyboards and keypad controllers [Fabio Priuli].
 - skyarmy (skyarmy.c) [stephh]:
-  * Fixed DIP switches and Inputs (after verification of the Z80 code).
+  * Fixed DIP switches and Inputs (after verification of the Z80 code);
   * Updated memory map to partially handle screen flipping.
 - scobra, scobrase, scobras, scobrab, suprheli, moonwar, moonwara, armorcar, armorcar2, tazmania, anteater, calipso, losttomb, losttombh, spdcoin, superbon (galaxian.c driver + galdrvr.c): Fixed DIP switches and Inputs (after verification of the Z80 code) [stephh].
-- namcos23: Found "force poly to front" bit [O. Galibert].
+- namcos23: Found "force poly to front" bit [Olivier Galibert].
 - info.c: Added keyboard and keypad controls to XML output [Fabio Priuli].
 - First step in supporting master cycle delays in the SNES driver [Angelo Salese].
 - Basic implementation of the DMA master cycles steals in the SNES driver [Angelo Salese].

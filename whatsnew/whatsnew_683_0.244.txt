@@ -2,7 +2,7 @@
 -----------------------------------
 
 
-MAME Testers bugs fixed
+MAME Testers Bugs Fixed
 -----------------------
 - 01288: [DIP/Input] (exidy.cpp) venture, mtrap: Coin inputs are duplicated (Vas Crabb).
 - 03729: [Color/Palette] (galaxian.cpp) gmgalax: Colors are incorrect (Robbbert).
@@ -387,7 +387,7 @@ Magic Card Export (v4.01) [Ioannis Bampoulas, Roberto Fresca]
 
 -Fixed Channel Three colors/bitplanes [Roberto Fresca].
 
--swtpc8212: fixed crash on exit if you adjust a dipswitch. Validation should mark switch 0 as invalid but doesn't [Robbbert].
+-swtpc8212: fixed crash on exit if you adjust a DIP switch. Validation should mark switch 0 as invalid but doesn't [Robbbert].
 
 -iwm: Do a complete clock change on sync write for better flux change time precision iwm: Increate the flux write buffer size for
  better performance (complete sector write in a single call) 2gs: Correct the q3 clock value, making (sync) writes reliable
@@ -395,7 +395,7 @@ Magic Card Export (v4.01) [Ioannis Bampoulas, Roberto Fresca]
 
 -swtpc09: marked all variants as MNW, regressed in 2015 [Robbbert].
 
--pcmx2: fixed crash while in dipswitch menu [Robbbert]
+-pcmx2: fixed crash while in DIP switch menu [Robbbert]
 
 -i2cmem.cpp and derived devices: Only acknowledge correct I2C device-id (#9630) [Paul-Arnold]
  * Updated machine/acorn_bmu.cpp, machine/i2cmem.cpp, machine/pcf8573.cpp and machine/machine/pcf8583.cpp.
@@ -773,14 +773,14 @@ Mahjong The Mysterious Orient Returns [BET] (Japan, v1.00) [buffi]
  * apply ctidy recommendations
  * Python None in create_device.py
 
--seattle.cpp: Update carnevil dipswitch settings [Ted Green]
+-seattle.cpp: Update carnevil DIP switch settings [Ted Green]
 
 -iteagle.cpp: Adjust processor clock.  Gives proper 1ms ostick now. iteagle_fpga.cpp: Add default console terminal serial port
  settings. vegas.cpp: Mask logging of sio_r. [Ted Green]
 
 -machine/netlist.cpp: Use templates to compile with NETLIST_CREATE_CSV=1 (#9707) [Couriersud]
 
--Revert "seattle.cpp: Update carnevil dipswitch settings" [Ted Green]
+-Revert "seattle.cpp: Update carnevil DIP switch settings" [Ted Green]
  * This reverts commit ac0d4591934d66916cdc8bcd0d5473eefd7c936d.
 
 -seattle.cpp: Update carnevil unused dip switches based on the operator manual and verified via the service menu. [Ted Green]

@@ -2,23 +2,7 @@
 -----------------------------------
 
 
-MAME Testers Bugs Fixed
------------------------
-- 04022: [Sound] (segas16b.cpp) altbeastj: Music does not stop when the transformation sequence begins (TeamEurope).
-- 07883: [Color/Palette] BGFX: Direct3D 9 back-end does not work (Ryan Holtz).
-- 08059: [DIP/Input] (taito_f2.cpp) deadconx, deadconxj: DIP switches are labeled incorrectly (GoldS_TCRF).
-- 08065: [Graphics] (segas16b.cpp) altbeast, altbeast6: Sprites flicker, most visibly in the third stage (hap).
-- 08074: [Media Support] FILE MANAGER: Drive root directories cannot be selected on Windows (Vas Crabb).
-- 08075: [Gameplay] (changela.cpp) changela: Car incorrectly steers to the right without player input (hap).
-- 08076: [Sound] (tubep.cpp) rjammer: Sound test does not work, and causes loss of game sounds (AJR).
-- 08077: [DIP/Input] (darius.cpp) dariusu: Discounted continue DIP switch is labeled “unknown” (GoldS_TCRF).
-- 08078: [DIP/Input] (vigilant.cpp) vigilant and clones: Kick and punch buttons are reversed (abelardator2).
-- 08081: [Sound] (srmp2.cpp) srmp2, srmp3: Character voice samples do not play (kmg).
-- 08085: [Documentation] (msx.cpp) hbf9pr: The description says “Russion” instead of “Russian” (AntoPISA).
-- 08090: [Documentation] (polepos.cpp) polepos2: Documented “Freeze” DIP switch is labeled “Unknown” (Cow).
-
-
-New working machines
+New Working Machines
 --------------------
 Danger Express (prototype) [hap]
 Fidelity Electronics Checker Challenger (model CR, 2 levels) [hap, Sean Riddle]
@@ -184,6 +168,22 @@ easy_karaoke_cart: Mega Hits Vol.2 [David Haywood, TeamEurope]
 fmtowns_cd: Dynamic English 2 - Basic [redump.org]
 pc8001_flop: 300m (alt), Dig Dug (PCG), The Dusty World (PCG), Planet Taizer (alt), Seiken Densetsu, Snake [Neo Kobe Collection]
 wicat: WICAT Unix (Ver. 2.0), WICAT Unix (Ver. 2.2.0) [Josh Dersch]
+
+
+MAME Testers Bugs Fixed (12):
+-----------------------------
+- 04022: [Sound] (segas16b.cpp) altbeastj: Music does not stop when the transformation sequence begins (TeamEurope).
+- 07883: [Color/Palette] BGFX: Direct3D 9 back-end does not work (Ryan Holtz).
+- 08059: [DIP/Input] (taito_f2.cpp) deadconx, deadconxj: DIP switches are labeled incorrectly (GoldS_TCRF).
+- 08065: [Graphics] (segas16b.cpp) altbeast, altbeast6: Sprites flicker, most visibly in the third stage (hap).
+- 08074: [Media Support] FILE MANAGER: Drive root directories cannot be selected on Windows (Vas Crabb).
+- 08075: [Gameplay] (changela.cpp) changela: Car incorrectly steers to the right without player input (hap).
+- 08076: [Sound] (tubep.cpp) rjammer: Sound test does not work, and causes loss of game sounds (AJR).
+- 08077: [DIP/Input] (darius.cpp) dariusu: Discounted continue DIP switch is labeled “unknown” (GoldS_TCRF).
+- 08078: [DIP/Input] (vigilant.cpp) vigilant and clones: Kick and punch buttons are reversed (abelardator2).
+- 08081: [Sound] (srmp2.cpp) srmp2, srmp3: Character voice samples do not play (kmg).
+- 08085: [Documentation] (msx.cpp) hbf9pr: The description says “Russion” instead of “Russian” (AntoPISA).
+- 08090: [Documentation] (polepos.cpp) polepos2: Documented “Freeze” DIP switch is labeled “Unknown” (Cow).
 
 
 Merged pull requests
@@ -725,7 +725,7 @@ Wicat Unix (ver 2.0 and 2.2.0) [Josh Dersch]
 
 -machine/fdc37c665gt.cpp: Fixed address usage for serial port registers (#8536) [987123879113]
 
--dariusu: add continue price dipswitch vigilant: swap punch/kick buttons to match with arcade cabinet [hap]
+-dariusu: add continue price DIP switch vigilant: swap punch/kick buttons to match with arcade cabinet [hap]
 
 -Decoupled RPK logic from TI-99 cartridge code (#7880) [npwoods]
  * Decoupled support for RPK (RomPacK cartridge images) from TI-99 code, enabling the logic to be leveraged by other drivers.
@@ -1541,7 +1541,7 @@ Conchess Plymate 5.5MHz [hap, Berger]
 -a800: fixes writing antic DLISTL and DLISTH to only affect the high and low byte component that is spread between m_dpage and
  m_doffs (#8616) [goldnchild]
 
--polepos2: freeze dipswitch works fine [hap]
+-polepos2: freeze DIP switch works fine [hap]
 
 -apple2gs: enable SHR linearization bit in NEWVIDEO by default, fixes Nucleus P8 1.0.1 [R. Belmont]
 

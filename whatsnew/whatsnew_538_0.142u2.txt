@@ -2,8 +2,8 @@
 ---------------------------------------
 
 
-New Games Added or Promoted from NOT_WORKING Status
----------------------------------------------------
+New Game Added or Promoted from NOT_WORKING Status
+--------------------------------------------------
 Mighty Guy [Angelo Salese]
 
 New Clones Added
@@ -16,8 +16,8 @@ Libero Grande (LG1 VER.A) [B. Munger, S. Ruiz, Smitdogg, The Dumping Union] (not
 Saint Dragon (set 2) [Tirino73] (not working)
 
 
-MAMETesters Bugs Fixed (6):
-----------------------
+MAME Testers Bugs Fixed (6):
+----------------------------
 - 03552: [Documentation] kodure: Kodure Ookami vs. Kozure Ookami naming conventions (Angelo Salese)
 - 04314: [Documentation] lca, lca2: Wrong description.
 - 04191: [Sound] dynablstb: No audio (Alex Jackson)
@@ -43,13 +43,13 @@ Source changes:
 - Hooked up NB1414M4 priority bit, fixing video text priority in all the games in the Armed F driver [Angelo Salese].
 - Merged 86 Lions inside Aristocrat Mk-4 driver [Angelo Salese].
 - Various improvements to m90 driver [AWJ]: 
-  * Fixed MT bug 4191 (dynablstb: No audio).
-  * Hooked up sample playback in bbmanw and clones and removed GAME_IMPERFECT_SOUND flag (actually, bbmanwj had working samples already and never should have been flagged in the first place).
-  * Use generic_pulse_irq_line() to generate interrupts on the V35, instead of the completely silly and deprecat.h thing I was doing before. 
-  * Made the same fix to cb2001.c while I was at it.
-  * Fixed some spelling mistakes in the inputs. 
-  * Converted quizf1 to modern bankswitching with configured banks. 
-  * Made quizf1 and bomblord endian-safe, with assistance from R. Belmont.
+  * Fixed MT bug 4191 (dynablstb: No audio);
+  * Hooked up sample playback in bbmanw and clones and removed GAME_IMPERFECT_SOUND flag (actually, bbmanwj had working samples already and never should have been flagged in the first place);
+  * Use generic_pulse_irq_line() to generate interrupts on the V35, instead of the completely silly and deprecat.h thing I was doing before;
+  * Made the same fix to cb2001.c while I was at it;
+  * Fixed some spelling mistakes in the inputs;
+  * Converted quizf1 to modern bankswitching with configured banks;
+  * Made quizf1 and bomblord endian-safe, with assistance from R. Belmont;
   * Added save state support.
 - Removed deprecat.h usage in m90 driver [Angelo Salese].
 - Implemented RAM-based sprite clut in Armed F driver, used for color cycling effects in all games of this HW [Angelo Salese].

@@ -181,7 +181,7 @@ fmtowns_cd:
 leapfrog_ltleappad_cart: Baby's First Words (USA), Disney Pooh Loves You! (USA), If I were... (USA) [ClawGrip, TeamEurope]
 
 
-MAMETesters Bugs Fixed (18):
+MAME Testers Bugs Fixed (18):
 ----------------------------
 - 04531: [Sound] (segas32.cpp) f1en: Engine noise loops/resets (Tafoid)
 - 07025: [Graphics] (model1.cpp) vr: Graphical glitches (O. Galibert)
@@ -303,7 +303,7 @@ Source changes:
 - squale.cpp: Connected the EF9365 video controller IRQ output to the 6809 IRQ input for Apollo 7 Squale [Jean-Francois DEL NERO].
 - wd_fdc.cpp: Improved interrupt request reset logic based on WD1772 and VG93 (1793 clone) decaps [MetalliC].
 - Fixed clang compilation error on targets where stream size is larger than long int [Nathan Woods].
-- model1.cpp: Fixed issues with TGP interface emulation [O. Galibert] 
+- model1.cpp: Fixed issues with TGP interface emulation [Olivier Galibert] 
 - emumem_het.cpp, emumem_heu.cpp: Hold additional reference for in-flight handlers (fixes MT07456) [O. Galibert, smf].
 - apple3.cpp: Corrected number row key layout (fixes pasting and natural keyboard mode) [pahandav].
 - ppcdrc.cpp, sh2.cpp, sh4.cpp: Fixed issues causing fast RAM accesses to bypass the debugger [Phil Bennett].

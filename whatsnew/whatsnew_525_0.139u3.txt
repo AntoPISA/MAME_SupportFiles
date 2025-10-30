@@ -26,8 +26,8 @@ Swiss Poker ('50 SG-.10', V2.5 [Roberto Fresca, Tomasz Slanina, Team Europe & Ho
 White Tiger [Palindrome]
 
 
-MAMETesters Bugs Fixed (10):
-----------------------------
+MAME Testers Bugs Fixed (10):
+-----------------------------
 - 00944: [Graphics] ghox: There are gfx glitches on the background in the ending scene (robiza)
 - 00945: [Graphics] bkraidu: Text glitch in the flip screen mode (robiza)
 - 01993: [Graphics] stmblade: Graphical corruption on left side of screen beginining stage 3 (robiza)
@@ -44,11 +44,11 @@ Source changes:
 ---------------
 - mc6845.c: Rewritten to allow mid frame changes to the counter registers. This enables drivers to use advanced split screen and scrolling effects using a regular mc6845 [Wilbert Pol].
 - Changed the MACHINE_DRIVER_* macros, as follows [Aaron Giles]:
-  * Renamed MACHINE_DRIVER_* to MACHINE_CONFIG_* to match the name of the object it actually describes. The MDRV_* prefix may eventually be bulk updated at some point, but not now.
-  * MACHINE_CONFIG_START() now takes a driver_data_t-derived class as a required second parameter. This means that MDRV_DRIVER_DATA() is no longer required, and every "root" machine config *must* specify a driver data class (or driver_data_t itself if the driver has not yet been updated to use driver data).
-  * New MACHINE_CONFIG_DERIVED() macro defines a machine_config that is derived from another machine_config. This takes the place of the very typical MACHINE_DRIVER_START()/MDRV_IMPORT_FROM() combination.
-  * New MACHINE_CONFIG_FRAGMENT() macro defines a partial machine_config that can only be included in another "root" machine_config. This is also used for machine_configs that are specified as part of a device.
-  * Changed MDRV_IMPORT_FROM() to MDRV_FRAGMENT_ADD() to more accurately describe what is happening.
+  * Renamed MACHINE_DRIVER_* to MACHINE_CONFIG_* to match the name of the object it actually describes. The MDRV_* prefix may eventually be bulk updated at some point, but not now;
+  * MACHINE_CONFIG_START() now takes a driver_data_t-derived class as a required second parameter. This means that MDRV_DRIVER_DATA() is no longer required, and every "root" machine config *must* specify a driver data class (or driver_data_t itself if the driver has not yet been updated to use driver data);
+  * New MACHINE_CONFIG_DERIVED() macro defines a machine_config that is derived from another machine_config. This takes the place of the very typical MACHINE_DRIVER_START()/MDRV_IMPORT_FROM() combination;
+  * New MACHINE_CONFIG_FRAGMENT() macro defines a partial machine_config that can only be included in another "root" machine_config. This is also used for machine_configs that are specified as part of a device;
+  * Changed MDRV_IMPORT_FROM() to MDRV_FRAGMENT_ADD() to more accurately describe what is happening;
   * Added asserts to the above three macros to ensure they are properly used.
 - Updated all machine drivers to use the new macros. Search & replace lists below cover 99% of the changes, with just a few manual fixups [Aaron Giles].
 - timer.c: timers get rescheduled only if enable state has changed [Christophe Jaillet].
@@ -58,14 +58,14 @@ Source changes:
   * Improved a few memory handlers [Palindrome].
 - Changed driver_data objects to be devices. Replaced the driver_data_t class with a new driver_device class, which is the base class for all driver_data objects now. The new driver devices are added as the first device in the device list, with a tag of "root"; all other devices are now owned by the driver device [Aaron Giles].
 - Moved core callbacks (machine_start/_reset, sound_start/_reset, video_start/_reset/_eof/_update, and palette_init) into device configuration parameters on these new devices. The driver_device base class overrides device_start(), ensures all other devices have been started, and then calls, in order, the following overridable methods:
-  * DRIVER_INIT function from the game driver .
-  * palette_init() - by default calls the MDRV_PALETTE_INIT function.
-  * driver_start() - new.
-  * machine_start() - by default calls the MDRV_MACHINE_START function.
-  * sound_start() - by default calls the MDRV_SOUND_START function.
+  * DRIVER_INIT function from the game driver;
+  * palette_init() - by default calls the MDRV_PALETTE_INIT function;
+  * driver_start() - new;
+  * machine_start() - by default calls the MDRV_MACHINE_START function;
+  * sound_start() - by default calls the MDRV_SOUND_START function;
   * video_start() - by default calls the MDRV_VIDEO_START function.
 - Similarly, the driver_device class overrides device_reset() and then calls these methods in order:
-  * driver_reset() - new 
+  * driver_reset() - new;
   * machine_reset() - by default calls the MDRV_MACHINE_RESET function sound_reset() - by default calls the MDRV_SOUND_RESET function video_reset() - by default calls the MDRV_VIDEO_RESET function.
 - To accommodate these changes, initialization order is slightly altered from before. The tilemap, video, sound, and debug systems are now initialized prior to the devices' start. And the user callbacks for DRIVER_INIT, PALETTE_INIT, MACHINE_START, SOUND_START, and VIDEO_START are all called back-to-back. The net effect should be similar, however [Aaron Giles].
 - Changed device_t::subtag to only prepend a prefix if the device is not the 'root' device, in order to keep compatibility with existing tag searching [Aaron Giles].
@@ -101,7 +101,7 @@ Source changes:
 - Converted ASAP CPU core from a legacy CPU core to a modern device [Aaron Giles].
 - Renamed device_execute_interface::m_icount to m_icountptr to avoid commonly-named device values of m_icount [Aaron Giles].
 - Fixed a bogus Hu6280 CPU core bug with timer latch division values readings [Angelo Salese].
-- ssv: Implemented visible area registers; now the resolution for all the games is the max visible area (the values of the registers after the boot process) [Robert Zandona'].
+- ssv: Implemented visible area registers; now the resolution for all the games is the max visible area (the values of the registers after the boot process) [Robert Zandonà].
 - Fixed missing VRAM > VRAM DMA flag clearance in PC Engine emulation [Angelo Salese].
 - strnskil.c: Added MCU dump for banbam [Pete Ogoun, Andrew Gardner].
 - Moved sound routing for non-speaker devices over to the sound interface's post-start method. Routing from one sound device to another was broken when sound_init() was moved ahead of device startup [Aaron Giles].
@@ -116,9 +116,9 @@ Source changes:
 - On Windows, osd_break_into_debugger() will now dump a stack crawl if there's no debugger attached. This means that asserts should have a full crawl now, for easier debugging [Aaron Giles].
 - Replaced NVRAM_HANDLER in leland with an NVRAM device [Aaron Giles].
 - ssv [Corrado Tomaselli]:
-  * Implemented y tilemap offset register.
-  * Implemented x and y visible area register.
-  * Disabled tilemap draw when mode=0.
+  * Implemented y tilemap offset register;
+  * Implemented x and y visible area register;
+  * Disabled tilemap draw when mode=0;
   * Confirmed visible area register with a twin eagle II PCB.
 - Replaced largely redundant NVRAM handlers with NVRAM devices for namcos2 and a bunch of the Nichibutsu mahjong games. Also did it for the Atari games, moving the old hard-coded EEPROM data out into files finally [Aaron Giles].
 - Merged ssgbl.c into megadrvb.c and moved bootleg input definitions out of megadriv.c [Sonikos].
@@ -126,14 +126,14 @@ Source changes:
 - Added definitions for [DECLARE_]READ_LINE_MEMBER and [DECLARE_]WRITE_LINE_MEMBER so that read/write line callbacks can be defined as member functions [Aaron Giles].
 - Added stubs and new macro DEVCB_DEVICE_LINE_MEMBER to allow these to be referenced from device callbacks [Aaron Giles].
 - Modernized the 6522 VIA device [Aaron Giles]:
-  * Changed to use the new device timer mechanism.
+  * Changed to use the new device timer mechanism;
   * Removed all trampolines in favor of modern methods.
-- ssv: removed kludge for sprite x offset and implemented 1 bit of 7a-7b register [Roberto Zandona'].
+- ssv: Removed kludge for sprite x offset and implemented 1 bit of 7a-7b register [Roberto Zandonà].
 - ssv [Roberto Zandonà]:
-  * Implemented y sprite inversion CRT register.
-  * Added a kludge for dynagear.
+  * Implemented y sprite inversion CRT register;
+  * Added a kludge for dynagear;
   * Used CRT registers to get the sprite x offset.
-- ssv: Removed offset values from the init; the offset now are handled by the CRT registers. Fixed bit #a of 7a-7b CRT register [Roberto Zandona'].
+- ssv: Removed offset values from the init; the offset now are handled by the CRT registers. Fixed bit #a of 7a-7b CRT register [Roberto Zandonà].
 - Converted intelfsh to a device, updated all users [Aaron Giles].
 - ssv: Fixed background disable condition [Roberto Zandonà].
 - New build tool makedep.c, derived from src2html.c (really!). Does basic dependency analysis and supports excluding paths [Aaron Giles].
@@ -143,10 +143,10 @@ Source changes:
 - Cleaned up CPS3 No-CD sets to break up the "ROMs" into individual flash pieces which are automatically loaded by the intelfsh device on initialization. Also split the MACHINE_CONFIG to only populate the number of SIMMs actually present for each game, as documented in the top of the file. And replaced the NVRAM_HANDLER with an NVRAM device [Aaron Giles].
 - CHDMAN: Support for .WAV tracks in bin/cue images [R. Belmont].
 - neogeo.c misc updates [Johnboy]:
-  * viewpoint: Renamed v's to correct chip label.
-  * ghostlop: Renamed roms to match proto naming scheme.
-  * savagere, kizuna - Added correct c1.
-  * crsword: Tagged MVS AND AES VERSION, added correct m1.
+  * viewpoint: Renamed v's to correct chip label;
+  * ghostlop: Renamed roms to match proto naming scheme;
+  * savagere, kizuna - Added correct c1;
+  * crsword: Tagged MVS AND AES VERSION, added correct m1;
   * legendos: Added correct m1.
 - Triple Punch/Knock Out.
 - AY-3-8910 clock speed was incorrect, fixed and verified from real hardware [plgDavid].

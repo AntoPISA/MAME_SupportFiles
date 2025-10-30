@@ -2,19 +2,11 @@
 -------------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
-- 03318: [Crash/Freeze] -burnin causes crash in vector games (Atari Ace).
-- 03777: [Multisession] a51site4: Hang after loading via internal UI (multisession) (Atari Ace).
-- 03898: [Crash/Freeze] Atomiswave-based games in naomi.c: Game gets stuck in boot process (Aaron Giles).
-- 03957: [Documentation] samsh5sp & clones: according to title, year is 2004 not 2003 (moa).
-
-
-New games added or promoted from NOT_WORKING status
----------------------------------------------------
+New Game Added or Promoted from NOT_WORKING Status
+--------------------------------------------------
 Speed Drop [Brian Troha, Luca Elia, The Dumping Union]
 
-New clones added
+New Clones Added
 ----------------
 AmeriDarts (set 3) [Brian Troha, The Dumping Union]
 Captain Commando (Japan 910928) [john666, Dr. Spankenstein, Smitdogg, The Dumping Union]
@@ -25,21 +17,29 @@ Quiz Daisousa Sen - The Last Count Down (Korean release)
 Quiz King of Fighters (Korean release)
 Real Bout Fatal Fury Special / Real Bout Garou Densetsu Special (Korean release)
 
-New games marked as GAME_NOT_WORKING
-------------------------------------
+New Game Marked as GAME_NOT_WORKING
+-----------------------------------
 Southern Systems Joker Poker [Roberto Fresca, Siftware]
+
+
+MAME Testers Bugs Fixed (4):
+---------------------------
+- 03318: [Crash/Freeze] -burnin causes crash in vector games (Atari Ace)
+- 03777: [Multisession] a51site4: Hang after loading via internal UI (multisession) (Atari Ace)
+- 03898: [Crash/Freeze] Atomiswave-based games in naomi.c: Game gets stuck in boot process (Aaron Giles)
+- 03957: [Documentation] samsh5sp & clones: according to title, year is 2004 not 2003 (moa)
 
 
 Source changes:
 ---------------
 - arm.c: Added big endian mode support to the LDRB and STRB instructions [Wilbert Pol].
 - CPS-1 update [Team CPS-1]:
-  * Added missing PALs as reference to most of remaining sets.
+  * Added missing PALs as reference to most of remaining sets;
   * Dumped and added TK24B1.1A to dynwar [Corrado Tomaselli].
-  * Fixed LW-13.10D ROM loading in forgottn to match real PCB.
-  * Identified, verified and documented a ton of pcbs, adding/fixing missing/wrong infos as ROMs labels and positions, B-Board, C-Board and CPSB IDs, PALs [Stefan Lindberg, Dlfrsilver, MKL].
-  * Reordered all sets per release date in cps1.c and video\cps1.c.
-  * Updated games table in video\cps1.c and added some notes on PALs table.
+  * Fixed LW-13.10D ROM loading in forgottn to match real PCB;
+  * Identified, verified and documented a ton of pcbs, adding/fixing missing/wrong infos as ROMs labels and positions, B-Board, C-Board and CPSB IDs, PALs [Stefan Lindberg, Dlfrsilver, MKL];
+  * Reordered all sets per release date in cps1.c and video\cps1.c;
+  * Updated games table in video\cps1.c and added some notes on PALs table;
   * Minor cleanups.
 - djboy.c: Hooked up Beast MCU and removed simulation code [Phil Bennett].
 - arm.c: Fixed word reading from non-aligned address in big endian mode [Wilbert Pol].

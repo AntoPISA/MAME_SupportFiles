@@ -1,70 +1,8 @@
-﻿0.153 2014/04/07 [#592 - Miodrag Milanovic]
+﻿0.153 2014/04/07 [#592 - Miodrag Milanović]
 -------------------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
-- 00809: [Sound] (wiz.c) wiz: Sound is dreadful after a death and stage restart (hap).
-- 00810: [Graphics] (wiz.c) wiz: Mid Boss (blue dragon) has missalligned sprites tiles (hap).
-- 00811: [Graphics] (wiz.c) stinger: Graphic problem in cocktail mode, the big satellite sprite has a small line glitch (hap).
-- 02879: [Sound] (hyperspt.c) roadf, roadf2: Road Fighter has no VLM5030 speech (MASH).
-- 03329: [Misc.] (phoenix.c) falcon, fenix: initialisation "garbage" differs between 32bit and 64bit (Osso).
-- 03344: [Color/Palette] (twins.c) twins: The color of the initialization screen differs between 32bit and 64bit builds (Osso).
-- 03346: [Color/Palette] (lucky74.c) lucky74, lucky74a: The colors in the initialization screen are stronger in the 32bit build (Osso).
-- 03438: [Crash/Freeze] (maygayv1.c) screenpl + clones: Unable to start game (Osso)
-- 03726: [Sound] (popeye.c) popeye: Discrete sound filter for AY-3-8910 voice A not emulated (Alex Jackson).
-- 03975: [Sound] (nycaptor.c) cyclshtg, bronx: Some sounds are not emulated (Osso).
-- 03976: [Save/Restore] (ms32.c) gametngk: Unplayable game after loading savestate (or -autosave) (Osso).
-- 04005: [Save/Restore] (ms32.c) All sets in ms32.c: Black screen after loading savestate (or -autosave) (Osso).
-- 04102: [Save/Restore] (f1gp.c) f1gp, f1gpb: Background graphics corruption on state (Osso).
-- 04157: [Graphics] (seattle.c) calspeed: Incorrect alpha in Mt. Shasta stage on 64-bit build (Alex Jackson).
-- 04174: [Gameplay] (asteroid.c) asteroidb: Game is not booting correctly.
-- 04308: [Interface] .INP playback fails (Out of Sync) when paused during recording (Alex Jackson).
-- 04645: [Gameplay] (firetrk.c) montecar: Incorrect gameplay elements (hap).
-- 04679: [Gameplay] (gei.c) jokpokera, jokpokerb, jokpokerc: Coin In Does Not Work (Osso).
-- 04722: [Crash/Freeze] cliffhgr, cobram3, cubeqst, firefox, mach3, usvsthem: All Laserdisc games show error when exiting game (Aaron Giles).
-- 04724: [Flip Screen/Cocktail] (dec8.c) oscar, oscaru, oscarj1, oscarj2, cobracom, cobracomj: Screen flipping is no more working (Osso).
-- 04797: [Flip Screen/Cocktail] (dec0.c) All sets in dec0.c: Flip Screen/Cocktail Mode offset (Osso)
-- 04898: [Flip Screen/Cocktail] (argus.c) butasan and clone: Flip Screen shows "split" sprites (Osso).
-- 04906: [Flip Screen/Cocktail] (chinagat.c) All sets in chinagat.c: Sprite offset right while screen is flipped (Osso).
-- 04914: [Flip Screen/Cocktail] (ddragon.c) ddragon, ddragon2 and clones: Offset right graphics with flip screen ON (Osso).
-- 04916: [Flip Screen/Cocktail] (ddragon3.c) All sets in ddragon3.c: Down/right offset on Flip Screen (Osso).
-- 04934: [Flip Screen/Cocktail] (hexion.c) hexion: Severe right and up screen offset with overscroll on Flip Screen (Alex Jackson).
-- 04982: [Flip Screen/Cocktail] (xain.c) All sets in xain.c: Sprites right offset with Flip Screen ON (Osso).
-- 04983: [Flip Screen/Cocktail] (wwfsstar.c) All sets in wwfsstar.c: Sprites right offset with Flip Screen ON (Osso).
-- 04984: [Flip Screen/Cocktail] (wwfwfest.c) All sets in wwfwfest.c: Sprites right offset with Flip Screen ON (Osso).
-- 04986: [Flip Screen/Cocktail] (vball.c) All sets in vball.c: Sprites right offset with Flip Screen ON (Osso) 
-- 04992: [Flip Screen/Cocktail] (toaplan1.c) All sets in toaplan1.c: Most/all background and text not visible during Flip Screen (hap).
-- 04993: [Flip Screen/Cocktail] (toaplan2.c) Many sets in toaplan2.c: Sprites and text offset UP offscreen while Flip Screen ON (Alex Jackson).
-- 05025: [Misc.] (neodrvr.c) neogeo.c: Neo Diagnostics show Z80 issue (hap).
-- 05065: [Misc.] (dblcrown.c) dblcrown: Wrong loaded PLD (Roberto Fresca).
-- 05245: [Crash/Freeze] (opwolf.c) all opwolf.c sets: Hang on exit with -autosave (Alex Jackson).
-- 05256: [Speed] (jaguar.c) area51mx, a51mxr3k, maxforce, maxf_102, maxf_ng, vcircle: Very slow gameplay/missing Video (smf).
-- 05266: [Crash/Freeze] (tempest.c) tempest: Game resets at odd times during red levels (Couriersud).
-- 05276: [Graphics] (witch.c) witch, pbchmp95: Graphics corruption (Osso).
-- 05312: [Crash/Freeze] (namcona1.c) All games in namcona1.c: Emulator crashes when hard resetting or switching games (Osso).
-- 05401: [Graphics] (firetrk.c) montecar: colors invert when you crash (hap).
-- 05403: [Documentation] (centiped.c) caterplr, magworm: Manufacturers not listed.
-- 05404: [Core] all: Screenshots from 64-bit builds have off-by-1 color errors (Alex Jackson).
-- 05405: [Known Issues/To-Do's] (8080bw.c) attackfc: Missing overlay? (hap).
-- 05406: [Documentation] (cd32.c) CD Express list in comments in source missing game (Stiletto).
-- 05407: [Documentation] (gei.c) quiz, quizvid: might be Elettronolo original & "Video Quiz" bootleg note (Stiletto).
-- 05420: [Compiling] (pong.c) pong, pongf: Impossible to compile with an old GCC version (Couriersud).
-- 05427: [Documentation] MAME.lst issues.
-- 05429: [Save/Restore] (neogeo.inc) all sets in neogeo.inc: Loading a savestate crashes MAME (Alex Jackson).
-- 05430: [Crash/Freeze] (tugboat.c) noahsark: The game demo mode freezes after the monkey got onto the ship. No freezes on the game play though (Osso).
-- 05440: [Interface] all games with tilemaps and a colortable: F4 graphics viewer fails to show tilemaps in games that use a colortable (Alex Jackson).
-- 05459: [Documentation] (model3.c) lemans24: Error in the title. Missing space between "Le" and "Mans".
-- 05465: [Graphics] (galivan.c) all games in galivan.c: sprite lag, background and sprites unaligned (Alex Jackson).
-- 05466: [Crash/Freeze] (cdi.c) All sets in cdi.c: All sets in cdi.c: Quizard games do not boot after initial startup screen (Osso).
-- 05467: [Graphics] (cave.c) agallet: Graphic glitch in attract mode (Alex Jackson).
-- 05468: [DIP/Input] (segahang.c) sharrier: Min/Max settings for analog input are incorrect.
-- 05470: [DIP/Input] (cps1.c) strider: Default dip switches values are wrong in Strider USA ver (Tafoid).
-- 05471: [DIP/Input] (cps1.c) ghoulsu: Default dip switches values are wrong in Ghouls'n Ghosts USA ver (Tafoid).
-- 05472: [DIP/Input] (cps1.c) willow , willowo: Incorrect default dip swiches settings in Willow USA ver (Tafoid).
-
-
-New games added or promoted from NOT_WORKING status
+New Games Added or Promoted from NOT_WORKING Status
 ---------------------------------------------------
 Aaargh (Arcadia) [Unigame, David Haywood]
 Bingo [Roberto Fresca, Siftware]
@@ -103,7 +41,7 @@ The Real Broadway [Brian Troha, Mariusz Wojcieszek, The Dumping Union]
 Top Blade V [ElSemi]
 x2222 (prototype) [David Haywood, se yong Jang]
 
-New clones added
+New Clones Added
 ----------------
 19XX: The War Against Destiny (Japan 960104, yellow case) [Tormod, ?other credits?]
 Air Assault (World) [system11]
@@ -226,7 +164,7 @@ Witch (With ranking) [Roberto Fresca, ANY]
 Yukiwo (World, prototype) [Unigame]
 Zero Wing (2P set) [System11, The Dumping Union]
 
-New games marked as GAME_NOT_WORKING
+New Games Marked as GAME_NOT_WORKING
 ------------------------------------
 Aero Blasters (Tourvision PCE bootleg) [clawgrip, Mooglyguy, Charles MacDonald, The Dumping Union]
 American Music Poker (V1.4) [Roberto Fresca, Siftware]
@@ -280,12 +218,73 @@ Win Cherry (ver 0.16 - 19990219) [Roberto Fresca, f205v]
 World Kicks (WK1 Ver. A) [anonymous]
 
 
+MAME Testers Bugs Fixed (58):
+-----------------------------
+- 00809: [Sound] (wiz.c) wiz: Sound is dreadful after a death and stage restart (hap)
+- 00810: [Graphics] (wiz.c) wiz: Mid Boss (blue dragon) has missalligned sprites tiles (hap)
+- 00811: [Graphics] (wiz.c) stinger: Graphic problem in cocktail mode, the big satellite sprite has a small line glitch (hap)
+- 02879: [Sound] (hyperspt.c) roadf, roadf2: Road Fighter has no VLM5030 speech (MASH)
+- 03329: [Misc.] (phoenix.c) falcon, fenix: initialisation "garbage" differs between 32bit and 64bit (Osso)
+- 03344: [Color/Palette] (twins.c) twins: The color of the initialization screen differs between 32bit and 64bit builds (Osso)
+- 03346: [Color/Palette] (lucky74.c) lucky74, lucky74a: The colors in the initialization screen are stronger in the 32bit build (Osso)
+- 03438: [Crash/Freeze] (maygayv1.c) screenpl + clones: Unable to start game (Osso)
+- 03726: [Sound] (popeye.c) popeye: Discrete sound filter for AY-3-8910 voice A not emulated (Alex Jackson)
+- 03975: [Sound] (nycaptor.c) cyclshtg, bronx: Some sounds are not emulated (Osso)
+- 03976: [Save/Restore] (ms32.c) gametngk: Unplayable game after loading savestate (or -autosave) (Osso)
+- 04005: [Save/Restore] (ms32.c) All sets in ms32.c: Black screen after loading savestate (or -autosave) (Osso)
+- 04102: [Save/Restore] (f1gp.c) f1gp, f1gpb: Background graphics corruption on state (Osso)
+- 04157: [Graphics] (seattle.c) calspeed: Incorrect alpha in Mt. Shasta stage on 64-bit build (Alex Jackson)
+- 04174: [Gameplay] (asteroid.c) asteroidb: Game is not booting correctly.
+- 04308: [Interface] .INP playback fails (Out of Sync) when paused during recording (Alex Jackson)
+- 04645: [Gameplay] (firetrk.c) montecar: Incorrect gameplay elements (hap)
+- 04679: [Gameplay] (gei.c) jokpokera, jokpokerb, jokpokerc: Coin In Does Not Work (Osso)
+- 04722: [Crash/Freeze] cliffhgr, cobram3, cubeqst, firefox, mach3, usvsthem: All Laserdisc games show error when exiting game (Aaron Giles)
+- 04724: [Flip Screen/Cocktail] (dec8.c) oscar, oscaru, oscarj1, oscarj2, cobracom, cobracomj: Screen flipping is no more working (Osso)
+- 04797: [Flip Screen/Cocktail] (dec0.c) All sets in dec0.c: Flip Screen/Cocktail Mode offset (Osso)
+- 04898: [Flip Screen/Cocktail] (argus.c) butasan and clone: Flip Screen shows "split" sprites (Osso).
+- 04906: [Flip Screen/Cocktail] (chinagat.c) All sets in chinagat.c: Sprite offset right while screen is flipped (Osso)
+- 04914: [Flip Screen/Cocktail] (ddragon.c) ddragon, ddragon2 and clones: Offset right graphics with flip screen ON (Osso)
+- 04916: [Flip Screen/Cocktail] (ddragon3.c) All sets in ddragon3.c: Down/right offset on Flip Screen (Osso)
+- 04934: [Flip Screen/Cocktail] (hexion.c) hexion: Severe right and up screen offset with overscroll on Flip Screen (Alex Jackson)
+- 04982: [Flip Screen/Cocktail] (xain.c) All sets in xain.c: Sprites right offset with Flip Screen ON (Osso)
+- 04983: [Flip Screen/Cocktail] (wwfsstar.c) All sets in wwfsstar.c: Sprites right offset with Flip Screen ON (Osso)
+- 04984: [Flip Screen/Cocktail] (wwfwfest.c) All sets in wwfwfest.c: Sprites right offset with Flip Screen ON (Osso)
+- 04986: [Flip Screen/Cocktail] (vball.c) All sets in vball.c: Sprites right offset with Flip Screen ON (Osso) 
+- 04992: [Flip Screen/Cocktail] (toaplan1.c) All sets in toaplan1.c: Most/all background and text not visible during Flip Screen (hap)
+- 04993: [Flip Screen/Cocktail] (toaplan2.c) Many sets in toaplan2.c: Sprites and text offset UP offscreen while Flip Screen ON (Alex Jackson)
+- 05025: [Misc.] (neodrvr.c) neogeo.c: Neo Diagnostics show Z80 issue (hap)
+- 05065: [Misc.] (dblcrown.c) dblcrown: Wrong loaded PLD (Roberto Fresca)
+- 05245: [Crash/Freeze] (opwolf.c) all opwolf.c sets: Hang on exit with -autosave (Alex Jackson)
+- 05256: [Speed] (jaguar.c) area51mx, a51mxr3k, maxforce, maxf_102, maxf_ng, vcircle: Very slow gameplay/missing Video (smf)
+- 05266: [Crash/Freeze] (tempest.c) tempest: Game resets at odd times during red levels (Couriersud)
+- 05276: [Graphics] (witch.c) witch, pbchmp95: Graphics corruption (Osso)
+- 05312: [Crash/Freeze] (namcona1.c) All games in namcona1.c: Emulator crashes when hard resetting or switching games (Osso)
+- 05401: [Graphics] (firetrk.c) montecar: colors invert when you crash (hap)
+- 05403: [Documentation] (centiped.c) caterplr, magworm: Manufacturers not listed.
+- 05404: [Core] all: Screenshots from 64-bit builds have off-by-1 color errors (Alex Jackson)
+- 05405: [Known Issues/To-Do's] (8080bw.c) attackfc: Missing overlay? (hap)
+- 05406: [Documentation] (cd32.c) CD Express list in comments in source missing game (Stiletto)
+- 05407: [Documentation] (gei.c) quiz, quizvid: might be Elettronolo original & "Video Quiz" bootleg note (Stiletto)
+- 05420: [Compiling] (pong.c) pong, pongf: Impossible to compile with an old GCC version (Couriersud)
+- 05427: [Documentation] MAME.lst issues.
+- 05429: [Save/Restore] (neogeo.inc) all sets in neogeo.inc: Loading a savestate crashes MAME (Alex Jackson)
+- 05430: [Crash/Freeze] (tugboat.c) noahsark: The game demo mode freezes after the monkey got onto the ship. No freezes on the game play though (Osso)
+- 05440: [Interface] all games with tilemaps and a colortable: F4 graphics viewer fails to show tilemaps in games that use a colortable (Alex Jackson)
+- 05459: [Documentation] (model3.c) lemans24: Error in the title. Missing space between "Le" and "Mans".
+- 05465: [Graphics] (galivan.c) all games in galivan.c: sprite lag, background and sprites unaligned (Alex Jackson)
+- 05466: [Crash/Freeze] (cdi.c) All sets in cdi.c: All sets in cdi.c: Quizard games do not boot after initial startup screen (Osso)
+- 05467: [Graphics] (cave.c) agallet: Graphic glitch in attract mode (Alex Jackson)
+- 05468: [DIP/Input] (segahang.c) sharrier: Min/Max settings for analog input are incorrect.
+- 05470: [DIP/Input] (cps1.c) strider: Default dip switches values are wrong in Strider USA ver (Tafoid)
+- 05471: [DIP/Input] (cps1.c) ghoulsu: Default dip switches values are wrong in Ghouls'n Ghosts USA ver (Tafoid)
+- 05472: [DIP/Input] (cps1.c) willow , willowo: Incorrect default dip swiches settings in Willow USA ver (Tafoid)
+
+
 Source changes:
 ---------------
-- Massive architectural change: There is no longer a single, global palette. Instead, palettes are now devices, and drivers and devices can have as many independent palettes as needed. This update required extensive changes to many parts of the core, UI, OSD layers, drivers and devices [Aaron Giles, Miodrag Milanovic, Alex Jackson].
-- Likewise, there is no longer a single, global array of decoded graphics. Decoded graphics are now owned by devices using a new device interface, called, unsurprisingly, device_gfx_interface. A "gfxdecode" device (which does nothing but inherit this interface) provides the old, driver-level decoding functionality for drivers with video emulation not based on devices and for devices that haven't been updated to the new interface (which is currently most of them). Also, graphics layouts can now reference shared RAM regions by tag the same way as ROM regions, eliminating the need to set up RAM-based graphics manually (note that drivers/devices are still responsible for marking gfx elements dirty when the RAM they are decoded from is written to) [Miodrag Milanovic, Alex Jackson].
-- Huge effort has been done in order to modernize core and drivers, almost
- every file has been touched [Curt Coder, Osso, Alex Jackson, smf, Miodrag Milanovic].
+- Massive architectural change: There is no longer a single, global palette. Instead, palettes are now devices, and drivers and devices can have as many independent palettes as needed. This update required extensive changes to many parts of the core, UI, OSD layers, drivers and devices [Aaron Giles, Miodrag Milanović, Alex Jackson].
+- Likewise, there is no longer a single, global array of decoded graphics. Decoded graphics are now owned by devices using a new device interface, called, unsurprisingly, device_gfx_interface. A "gfxdecode" device (which does nothing but inherit this interface) provides the old, driver-level decoding functionality for drivers with video emulation not based on devices and for devices that haven't been updated to the new interface (which is currently most of them). Also, graphics layouts can now reference shared RAM regions by tag the same way as ROM regions, eliminating the need to set up RAM-based graphics manually (note that drivers/devices are still responsible for marking gfx elements dirty when the RAM they are decoded from is written to) [Miodrag Milanović, Alex Jackson].
+- Huge effort has been done in order to modernize core and drivers, almost every file has been touched [Curt Coder, Osso, Alex Jackson, smf, Miodrag Milanović].
 - Fixed a bug preventing memory display of INT8/UINT8 in debugger [Couriersud].
 - Added missing interfaces to netlist. mame -debug pongf now does not crash any longer and displays some state. Still more work needed. Further improved the netlist state saving [Couriersud].
 - tx0.c: Modernized CPU core [Wilbert Pol].
@@ -305,10 +304,10 @@ Source changes:
 - atarist.c: Push all gpio values to allow interrupts to work [smf].
 - unsp.c: Modernized CPU core [Wilbert Pol].
 - AVR8 improvements [Felipe Sanches]:
-  * Added ELPM instructions.
-  * Added fuse bits macros.
-  * Added reset logic to decide initial program counter based on fuse bits configuration.
-  * Added initial support for ATMEGA1280 and ATMEGA2560.
+  * Added ELPM instructions;
+  * Added fuse bits macros;
+  * Added reset logic to decide initial program counter based on fuse bits configuration;
+  * Added initial support for ATMEGA1280 and ATMEGA2560;
   * Use register names in the disassembly of IN and OUT instructions.
 - tms32010.c: Modernized CPU core [Wilbert Pol].
 - segaorun.c: Added motor and lamp outputs [Howard Casto, hap].
@@ -322,21 +321,21 @@ Source changes:
 - tms7000.c: Modernized CPU core.  [Wilbert Pol]
 - Pong now has complete emulation of discrete logic for runQ and SRST signals. Rewrote switch2 device to be based on resistances as well [Couriersud].
 - AVR8 CPU changes [Felipe Sanches]:
-  * Timers WIP.
-  * Add TIMSK* reads - Refactor timer_tick calls.
-  * Remove all redundant register init statements. We simply set all 0x200 registers to zero.
-  * Debugging timers.
-  * Better syntax for disassembly of RJMP destination address.
-  * Use register names in disasm of CBI, SBI, SBIC, SBIS instructions.
-  * Use register bit names in disasm of instructions SBI, SBIS, SBIC, CBI.
+  * Timers WIP;
+  * Add TIMSK* reads - Refactor timer_tick calls;
+  * Remove all redundant register init statements. We simply set all 0x200 registers to zero;
+  * Debugging timers;
+  * Better syntax for disassembly of RJMP destination address;
+  * Use register names in disasm of CBI, SBI, SBIC, SBIS instructions;
+  * Use register bit names in disasm of instructions SBI, SBIS, SBIC, CBI;
   * WIP on avr8 EEPROM read/write support.
 - Netlist [Couriersud]:
-  * Fixed 7474 save state.
-  * Remove a printf.
-  * Simplified netlist_list_t.
-  * Increased reschedule count to 15 - diodes are dog-slow.
-  * Made reschedule count a solver parameter.
-  * Simplified solver code.
+  * Fixed 7474 save state;
+  * Remove a printf;
+  * Simplified netlist_list_t;
+  * Increased reschedule count to 15 - diodes are dog-slow;
+  * Made reschedule count a solver parameter;
+  * Simplified solver code;
   * Solver time now also resets.
 - fd_fdc: Fix the FM sync detection [Michael Zapf].
 - n68681: Modernized and killed config struct in favor of devcb2 [R. Belmont].
@@ -348,23 +347,23 @@ Source changes:
 - Added PET user port joystick adapter [smf].
 - segas32.c: Added alien3 and darkedge readmes [Guru].
 - Netlist [Couriersud]:
-  * Added missing parameter to analog input device.
-  * Parser now parses NET_MODEL.
+  * Added missing parameter to analog input device;
+  * Parser now parses NET_MODEL;
   * Fixed a bug in switching bjt implementation.
 - Fixed noise period on AY8910 [Dr. Venom, Couriersud].
 - Prevent clock bit to be deleted after CRC in FM [Michael Zapf].
 - Use proper AY8910 mixing model for MSX. Volumes set to match MSX
  hardware [Dr. Venom, Couriersud].
 - BBC Micro keyboard updates/fixes [Nigel Barnes]:
-  * Added numeric keypad on Master series.
-  * Fixed CAPS LOCK and SHIFT LOCK.
-  * Removed dipswitches from Master series.
-  * Improved dipswitch descriptions.
+  * Added numeric keypad on Master series;
+  * Fixed CAPS LOCK and SHIFT LOCK;
+  * Removed DIP switches from Master series;
+  * Improved DIP switch descriptions.
 - Naomi/Triforce documentation update [f205v].
 - Converted PIA6821 to DEVCB2, Removed porta_r/portb_r/ca1_r/ca2_r/cb1_r/cb2_r functions as they only returned what you'd written to the chip, only a couple of those were ever used (by audio/exidy.c). Removed some ca*/cb* read callbacks that just returned what had already been pushed or always returned 0. As there are no longer any cb2 read callbacks that functionality has been removed. reduced the number of callers to set_a_input by calling porta_w & made the WRITE8_HANDLER call that as well, instead of the other way round and having to lookup an address space that is never used [smf].
 - Netlist [Couriersud]:
-  * Added Ebers-Moll BJT model. Currently only for NPN.
-  * Fixed convergence issue in the solver.
+  * Added Ebers-Moll BJT model. Currently only for NPN;
+  * Fixed convergence issue in the solver;
   * Accuracy for Ebers-Moll must be better than 1e-5 to not generate nano-second spikes. Typical sound applications should be able to run with less since the spikes are not audible.
 - tlcs90.c: Modernized CPU core [Wilbert Pol].
 - Removed calls to mpu4_state *state = machine.driver_data<mpu4_state>(); by moving code into mpu4_state. Removed runtime lookup of devices that were already looked up in mpu4_state [smf].
@@ -396,10 +395,10 @@ Source changes:
 - flopimg: Added preliminary support for the 8-N-1 serial encoding scheme used on Compucolor II floppies [Curt Coder].
 - diserial: Added framing error detection [Curt Coder].
 - Netlist [Couriersud]:
-  * Working Ebers Moll model. That's a significant step ahead.
-  * Simple 2x2|RHS SPICE stamps now supported by two terminal devices. This was implicitly contained in the design, but set_mat now shows how a two-terminal device fits into a SPICE approach.
-  * Introduced direct solvers for net groups with 1 or 2 nets.
-  * Introduced specialized solvers for N=1,2,3,4,5 by using templates.
+  * Working Ebers Moll model. That's a significant step ahead;
+  * Simple 2x2|RHS SPICE stamps now supported by two terminal devices. This was implicitly contained in the design, but set_mat now shows how a two-terminal device fits into a SPICE approach;
+  * Introduced direct solvers for net groups with 1 or 2 nets;
+  * Introduced specialized solvers for N=1,2,3,4,5 by using templates;
   * Nice performance increase for BJTs.
 - Fixed bad graphics in donghaer [ElSemi].
 - n68681: Implement OP3 toggle on timer expire and input delta interrupts [R. Belmont].
@@ -420,21 +419,19 @@ Source changes:
 - z8000.c: Modernized cpu core.  [Wilbert Pol].
 - m6502: Expose SYNC pin through devcb2 for more flexibility [R. Belmont].
 - tugboat.c: Correct AY chip type and clock, some cleanups [Alex Jackson].
-- AICA: EFREG is mapped every other word, not every word.  Fixes memory trashing in all Naomi/DC/AW games [O. Galibert, R. Belmont].
+- AICA: EFREG is mapped every other word, not every word.  Fixes memory trashing in all Naomi/DC/AW games [Olivier Galibert, R. Belmont].
 - Changed name to "PET user port" as that is where it originated and reformatted the source file [smf].
-- qix.c: Let's not regenerate the entire palette every time we do a
- partial update [Alex Jackson].
-- mos6551: Support Rockwell 6551s, which show different register
- contents from MOS/CSG parts on reset [R. Belmont].
+- qix.c: Let's not regenerate the entire palette every time we do a partial update [Alex Jackson].
+- mos6551: Support Rockwell 6551s, which show different register contents from MOS/CSG parts on reset [R. Belmont].
 - nemesis.c [Alex Jackson]:
-  * Hooked up RC filters to AY8910s.
-  * Fixed konamigt layout aspect ratio.
+  * Hooked up RC filters to AY8910s;
+  * Fixed konamigt layout aspect ratio;
   * Some corrections to address maps and inputs.
 - popeye.c: Added RC filter (MT 3726), cleanups [Alex Jackson].
--Stop the flipping insanity: Tilemap flipping is now calculated relative to the center of the visible area rather than to the total screen size, and the generic flip screen functions no longer modify the visible area. These changes ensure that in most cases flipping should Just Work for drivers that use MCFG_RAW_PARAMs, games that have a programmable CRTC, and games that have raster effects, and should fix many longstanding flip/cocktail-related regressions [Alex Jackson].
+- Stop the flipping insanity: Tilemap flipping is now calculated relative to the center of the visible area rather than to the total screen size, and the generic flip screen functions no longer modify the visible area. These changes ensure that in most cases flipping should Just Work for drivers that use MCFG_RAW_PARAMs, games that have a programmable CRTC, and games that have raster effects, and should fix many longstanding flip/cocktail-related regressions [Alex Jackson].
 - Added Bingo (1983). PCB seems bootleg, but the game looks legit. Worked from the scratch a whole set of inputs and button-lamps support for this game. Changed the poker41 description to Four in One Poker (as seen in the official brochure). Added game and technical notes [Roberto Fresca].
 - Improvements to Unknown Royal Card on Dino4 hardware [Roberto Fresca]:
-  * Fully decrypted the graphics set.
+  * Fully decrypted the graphics set;
   * Added technical notes.
 - Added Bingo PCB layout and technical notes [Roberto Fresca].
 - Fix rallybik title screen color [Alex Jackson].
@@ -450,32 +447,30 @@ Source changes:
 - bagman.c, bublbobl.c, chance32.c, galaga.c, mappy.c, pacman.c: Fix flipscreen after core changes. Also, try (again) to improve sprite-bullet alignment in bosco [Alex Jackson].
 - Added generic barcode reader emulation: The code accepts sequences of digits in UPC-A, EAN-13 and EAN-8 format, stores them in both byte format and in pixel format; it is up to the driver to implement the correct transfer protocol [Fabio Priuli].
 - Added UI menu to enter barcodes via keyboard. It only gets activated if the running machine has a barcode device [Fabio Priuli].
-- Truco-Tron: Identified the last unknown IC (U15). Added Technical
- notes [Cristian Arias, Roberto Fresca].
+- Truco-Tron: Identified the last unknown IC (U15). Added Technical notes [Cristian Arias, Roberto Fresca].
 - diimage: Added "read_only" feature to the software list to denote write protected images [Curt Coder].
 - Created src\emu\bus\rs232 & src\emu\bus\midi directories and separated rs232 and midi devices, changed h89 to use an rs232 port to communicate with the serial terminal to instead of connecting it directly [smf].
-- Added ability to add optional or required device/ioport/memory_region/... and similar device finders to any device, and also created ability to set tag inside static configuration of device so you can reference it in driver machine configuration [Miodrag Milanovic].
+- Added ability to add optional or required device/ioport/memory_region/... and similar device finders to any device, and also created ability to set tag inside static configuration of device so you can reference it in driver machine configuration [Miodrag Milanović].
 - Converted i8251 to DEVCB2 [smf].
 - Funworld driver updates [Roberto Fresca]:
-  * Added Luna Park (set 1, dual program). Running in modified CMC hardware, with video RAM 4000-4FFF mirrored in 6000-6FFF and color RAM 5000-5FFF mirrored in 7000-7FFF. This game has the highest address line of the program tied to DIP switch #1, so you can select between 2 different programs. Both programs write to videoram either to each video RAM ranges.
-  * Added proper program ROM banking and connected to DIP switch #1.
-  * Added Luna Park (set 2). This one writes to normal CMC video RAM.
-  * Cleaned-up the machine drivers.
-  * Derived clocks via #define.
+  * Added Luna Park (set 1, dual program). Running in modified CMC hardware, with video RAM 4000-4FFF mirrored in 6000-6FFF and color RAM 5000-5FFF mirrored in 7000-7FFF. This game has the highest address line of the program tied to DIP switch #1, so you can select between 2 different programs. Both programs write to videoram either to each video RAM ranges;
+  * Added proper program ROM banking and connected to DIP switch #1;
+  * Added Luna Park (set 2). This one writes to normal CMC video RAM;
+  * Cleaned-up the machine drivers;
+  * Derived clocks via #define;
   * Added technical notes.
 - Added default NVRAM to Crystal Colours (CMC hardware), allowing to boot with clean meters/settings [Roberto Fresca].
-- Preliminary support for National Semiconductor MM58167 real-time
- clock/calendar [R. Belmont].
+- Preliminary support for National Semiconductor MM58167 real-time clock/calendar [R. Belmont].
 - Jubilee Double-Up Poker (TMS9980) updates [Roberto Fresca]:
-  * Corrected the crystal value and derivate clocks via #DEFINE.
-  * Improved memory map.
-  * Hooked the CRT controller, but the init sequence seems incomplete.
-  * Created the accurate graphics banks.
-  * Found and mapped the video RAM.
-  * Hooked the ATTR RAM.
-  * Assigned the correct graphics banks to the proper drawn tiles.
-  * Find and mapped an input port.
-  * Started a preliminary workaround to demux the input port.
+  * Corrected the crystal value and derivate clocks via #DEFINE;
+  * Improved memory map;
+  * Hooked the CRT controller, but the init sequence seems incomplete;
+  * Created the accurate graphics banks;
+  * Found and mapped the video RAM;
+  * Hooked the ATTR RAM;
+  * Assigned the correct graphics banks to the proper drawn tiles;
+  * Find and mapped an input port;
+  * Started a preliminary workaround to demux the input port;
   * Added technical notes.
 - Naomi updates:
   * Added all known IC locations from sets missing them [MetalliC].
@@ -484,20 +479,20 @@ Source changes:
   * Fixed ROM loading for Animal Basket [MetalliC].
 - gottlieb.c, kyugo.c, madalien.c, rallyx.c, taito_b.c, zodiack.c: Fix flipscreen after core changes [Alex Jackson].
 - Jubilee Double-Up Poker (TMS9980) updates [Roberto Fresca]:
-  * Demuxed the input system.
-  * Hooked an cleaned all inputs, except the coin in (missing).
-  * Added NVRAM support.
+  * Demuxed the input system;
+  * Hooked an cleaned all inputs, except the coin in (missing);
+  * Added NVRAM support;
   * Added technical notes.
 - Jubilee Double-Up Poker: Fixed the NVRAM size. Video and working RAM are both halves of the same device (TC5517AP-2, tied to a battery). Also added technical notes [Roberto Fresca].
 - Converted palette_t and palette_client to classes. General palette.c cleanup [Aaron Giles].
 - More Jubilee Poker updates [Roberto Fresca]:
-  * Hooked CRTC properly.
-  * Adjusted the screen size and visible area according to CRTC values.
-  * Adjusted the screen pos 8 pixels, to get a bit centered.
+  * Hooked CRTC properly;
+  * Adjusted the screen size and visible area according to CRTC values;
+  * Adjusted the screen pos 8 pixels, to get a bit centered;
   * Added technical notes.
 - galivan.c: Add buffered spriteram to fix MT 05465; cleanups [Alex Jackson].
 - Jubilee Double-Up Poker updates [Roberto Fresca]:
-  * Added a default clean NVRAM.
+  * Added a default clean NVRAM;
   * Found and implemented the credits input. The game is now working!. Still no sound.
 - Fix display of device tags in internal profiler [Alex Jackson].
 - Abstracted netlist sources. This is a first step to support libraries (e.g. for opamps) [Couriersud].
@@ -528,10 +523,10 @@ Source changes:
 - Implemented CD4066 device - Quad Bilateral Switch [Couriersud].
 - Fix compiling on unusual OS X configurations [Robert Walsh].
 - Cherry Wheel improvements [Roberto Fresca]:
-  * Created new memory map due to hardware differences.
-  * Added default NVRAM.
-  * Partial MCU simulation. Without it, only cherries appear and the player always wins.
-  * Added proper button-lamps support.
+  * Created new memory map due to hardware differences;
+  * Added default NVRAM;
+  * Partial MCU simulation. Without it, only cherries appear and the player always wins;
+  * Added proper button-lamps support;
   * Added technical notes.
 - Super Nove (Playmark): Created proper machine driver and improve the second graphics bank decryption/decode [Roberto Fresca].
 - i386.c: Modernised cpu core.  [Wilbert Pol].
@@ -559,7 +554,7 @@ Source changes:
 - Correct spyhunt labels/positions [Porchy].
 - drawgfx.c: Eliminate the need for a dummy 1:1 lookup table when drawing to ind16 bitmaps [Alex Jackson].
 - Win Cherry improvements [Roberto Fresca]:
-  * Decrypted/decoded all graphics banks.
+  * Decrypted/decoded all graphics banks;
   * Preliminary memory map.
 - The UI graphics viewer can now display multiple palettes and multiple GFX decoders in games that have them [Alex Jackson].
 - cinemat.c: Redumped spaceftr [f205v, Piero Andreini].
@@ -567,23 +562,23 @@ Source changes:
 - Fixed the duart ip pins so they don't accidentally clear each other's state on device_write_line; this fixes the Canon Cat printing in MESS [Lord Nightmare].
 - Added basic implementation of the NSC810 RAM-I/O-Timer device, and plugged it into the Husky Hunter 2 driver [Barry Rodewald].
 - Removed unselectable slot options (SLOT_INTERFACE_INTERNAL) from the listxml output [Curt Coder].
-- Add an osd_truncate call to truncate files [O. Galibert].
+- Add an osd_truncate call to truncate files [Olivier Galibert].
 - Moved core template container classes up from emutempl.h to coretmpl.h [Aaron Giles]:
-  * These classes now no longer take a resource_pool; everything is managed globally -- this means that objects added to lists must be allocated with global_alloc.
-  * Added new auto_pointer<> template which wraps a pointer and auto-frees it upon destruction; it also defaults to NULL so it doesn't need to be explicitly initialized.
+  * These classes now no longer take a resource_pool; everything is managed globally -- this means that objects added to lists must be allocated with global_alloc;
+  * Added new auto_pointer<> template which wraps a pointer and auto-frees it upon destruction; it also defaults to NULL so it doesn't need to be explicitly initialized;
   * Moved tagged_list template to tagmap.h.
 - Redo of the low-level memory tracking system [Aaron Giles]:
-  * Moved low-level tracking out of emu\emualloc into lib\util\corealloc so it can be shared among all components and used by core libraries.
-  * Global_alloc and friends no longer use a resource pool to track allocations; turns out this was a wholly redundant system that wasted a lot of memory.
-  * Removed global_resource_pool entirely.
-  * Added global_free_array to delete arrays allocated with global_alloc_array.
+  * Moved low-level tracking out of emu\emualloc into lib\util\corealloc so it can be shared among all components and used by core libraries;
+  * Global_alloc and friends no longer use a resource pool to track allocations; turns out this was a wholly redundant system that wasted a lot of memory;
+  * Removed global_resource_pool entirely;
+  * Added global_free_array to delete arrays allocated with global_alloc_array;
   * Added tracking of object versus array allocation; we will now error if you use global_free on an array, or global_free_array on an object.
 - Added new utility helper const_string_pool which can be used to efficiently accumulate strings that are not intended to be modified. Used by updated makelist and software list code [Aaron Giles].
 - Updated png2bdc and makelist tools to not leak memory and use more modern techniques (no more MAX_DRIVERS in makelist, for example) [Aaron Giles].
 - Deprecated auto_strdup and removed all uses by way of caller-managed astrings and the software list rewrite [Aaron Giles].
 - Rewrote software list management [Aaron Giles]:
-  * Removed the notion of a software_list that is separate from a software_list_device; they are one and the same now.
-  * Moved several functions into device_image_interface since they really didn't belong in the core software list class.
+  * Removed the notion of a software_list that is separate from a software_list_device; they are one and the same now;
+  * Moved several functions into device_image_interface since they really didn't belong in the core software list class;
   * Lots of simplification as a result of the above changes.
 - Added button-lamps support to all Cherry Bonus III sets. Also created almost realistic control panel internal layout. Added technical notes about Cherry Bonus III memory map [Roberto Fresca].
 - Double-Up Poker (Jubilee) improvements. Added partial lamps support (some are missing), and a workaround for discrete sounds trigger offsets. Also a zillion of technical notes about findings [Roberto Fresca].
@@ -597,8 +592,8 @@ Source changes:
 - New driver for American Music Poker (Amusco) based on a 8086 CPU + CRTC 6845 + PSG SN76489 [Roberto Fresca].
 - Added palette to k053250 device, fixing xexex crash. Also modernized its coding conventions (dynamic_arrays, device_video_interface to attach screen, etc.) [Alex Jackson].
 - HD63484 updates [Sandro Ronco]:
-  * Converted to use a 16-bits address map.
-  * Implemented RPR, MOD, SCLR, SCPY, LINE, PLG, PLL, CRCL, ARC, FRCT, PAINT, DOT, PTN, GCPY commands.
+  * Converted to use a 16-bits address map;
+  * Implemented RPR, MOD, SCLR, SCPY, LINE, PLG, PLL, CRCL, ARC, FRCT, PAINT, DOT, PTN, GCPY commands;
   * Added pattern RAM emulation.
 - wd_fdc: Refactored to use devcb2 callbacks [Curt Coder].
 - Rewritten 6551 emulation. Changed clock to be the o2 clock instead of the baud rate xtal, supports external clocking, generates transmit interrupts when idle, added echo mode, dcd/dsr/cts input handling, parity & stop bit checking. Tested and fixed hookup to commodore lcd & plus 4 [smf].
@@ -611,61 +606,61 @@ Source changes:
 - Added compile time check for 64-bit intel compiler to delegate.h (to prevent assert(sizeof(mfp) <= sizeof(m_rawdata)); ) [external].
 - Made an attempt to fix the banking of MPU4 games, this isn't perfect, but most non banked games will now run [J. Wallace].
 - SDL: Removed "totalColors" hack, now only RGB32 is sent to the GPU [R. Belmont].
-- littlerb.c: Fill in missing dipswitch settings and add dipswitch locations to Little Robin [Brian Troha].
+- littlerb.c: Fill in missing DIP switch settings and add DIP switch locations to Little Robin [Brian Troha].
 - SDL: Next stage cleanup, aligned texture conversion with current Windows/D3D code, and fixed overzealous GL texture caching [R. Belmont].
 - tms5110r.inc: Updated tms5110 to use newer chirp table, based on decap [Lord_Nightmare, digshadow].
 - 315_5124.c: Improved X-Scroll register timing [Enik Land].
 - netlist: Nice performance increase by removing logic terminals from net if they are inactive. Introduced a linked-list class to abstract linked-lists. Fixed deactivating devices. You have to enable this because it is not guaranteed to be timing-exact [Couriersud].
 - N64 RSP changes [MooglyGuy]:
-  * Added SIMUL_SIMD flag for easy finding of bugs in SIMD opcodes.
-  * Fixed SIMD versions of SSV, SLV, SDV, STV, VSUB, VADDC, VSUBC, and VGE.
+  * Added SIMUL_SIMD flag for easy finding of bugs in SIMD opcodes;
+  * Fixed SIMD versions of SSV, SLV, SDV, STV, VSUB, VADDC, VSUBC, and VGE;
   * Removed SIMD optimizations from VMACF, VMADL, VMADN, as they were provided by the CEN64 author but do not appear to have the same results as MESS's scalar implementations, and so are not trustworthy.
-- h8: Rewrite [O. Galibert].
+- h8: Rewrite [Olivier Galibert].
 - Updated MegaPlay and MegaTech to use modern SMS VDP [Fabio Priuli].
 - Fixes to correct some of the regression test data used by the jedutil test [Kevin Eshbach].
 - h8: dec16/inc16 fix [Fabio Priuli].
-- h8: Sort out UE polarity. Fix enable handling in timers. Prettify registers/flags in debugger [O. Galibert]
-- floppy: Splice-related fixes [O. Galibert].
+- h8: Sort out UE polarity. Fix enable handling in timers. Prettify registers/flags in debugger [Olivier Galibert]
+- floppy: Splice-related fixes [Olivier Galibert].
 - Improvements to 4enlinea driver. Hooked preliminary HCGA controller in CGA mode (we need proper UM487F device emulation). Added documentation and findings after some analysis [Roberto Fresca].
 - gfx_elements now have a xor mask that is applied to each source bit offset when decoding. This can be used to deal with endianness when decoding gfx from RAM or from program ROMs, or to reverse the bit order sense when this is useful (e.g. pgm.c) [Alex Jackson].
 - mc6845: Added display enable and horizontal/vertical back porch widths to the update function. Updated some MESS drivers to make use of this [Curt Coder].
 - 4enlinea: Adjusted the initial screen parameters according to the HCGA controller programmed registers and improved the way the graphics are drawn. Now the text is readable [Roberto Fresca].
 - 4enlinea: Hooked a status handler for the HCGA controller (for now, simulating the state). Improved the memory map fixing the RAM amount and offset, and added the correct offset for the HCGA status. Also hooked 2 debug handlers on ports e000-e001 that spit some random graphics after 30 seconds of the game execution (clue to figure out) [Roberto Fresca].
 - Naomi updates [MetalliC]:
-  * Redumped 17 GD-ROMs from .gdi source to CHD v5.
-  * Added several missing protection keys.
-  * Added clone "18 Wheeler (Upright)".
-  * Added set "Club Kart: European Session (2003)" and unprotected clone.
+  * Redumped 17 GD-ROMs from .gdi source to CHD v5;
+  * Added several missing protection keys;
+  * Added clone "18 Wheeler (Upright)";
+  * Added set "Club Kart: European Session (2003)" and unprotected clone;
   * Added clone "Club Kart: European Session [Rev. D]".
 - cps1.c: Dumped and added MS22B.1A to mswordj [Bonky0013, neocps1].
 - Moved MPU4 Test Program 4 to the MOD4 driver, still needs some work on the timing though. Fixed Gamball reel positioning, this will need more work to standardise [J. Wallace].
 - quickjac: added inputs [Sandro Ronco].
-- namco23: Spring cleaning, including [O. Galibert]:
-  * Remove a bunch of s23 prefixes/suffixes useless since the OOification.
-  * Rename p3d to c435.
-  * Unify c435 dma and pio.
-  * Identify the generic set state command.
-  * Implement the interrupt set state subcommand.
-  * Fix the endianness of the controls port (controls still don't work though).
+- namco23: Spring cleaning, including [Olivier Galibert]:
+  * Remove a bunch of s23 prefixes/suffixes useless since the OOification;
+  * Rename p3d to c435;
+  * Unify c435 dma and pio;
+  * Identify the generic set state command;
+  * Implement the interrupt set state subcommand;
+  * Fix the endianness of the controls port (controls still don't work though);
   * Various whatevers.
 - tiamc1:
   * Background scroll corrected and enabled [MetalliC].
   * Fixed bad graphics ROM in "Snezhnaja Koroleva" [Titus].
 - cosmac: Added write line members for the input lines [Curt Coder].
-- namcos23: Fix the irq storm that killed Downhill Bikers [O. Galibert].
+- namcos23: Fix the irq storm that killed Downhill Bikers [Olivier Galibert].
 - Untangled Little Robin sound HW from video timings [Angelo Salese].
 - Fixed a long standing bug in tempest by specifying quantum perfect emulation. All save states should be removed since they may contain a corrupted game state [Couriersud].
-- namcos23: Fix 3D computations in timecrs2. Better understanding of the command format, downhill and 500gp now show something (completely wrong) [O. Galibert].
-- namcos23: Enhance matrix-vector mul [O. Galibert].
+- namcos23: Fix 3D computations in timecrs2. Better understanding of the command format, downhill and 500gp now show something (completely wrong) [Olivier Galibert].
+- namcos23: Enhance matrix-vector mul [Olivier Galibert].
 - Added support for horizontal 'belt' reels which may be needed for future AWP titles. To invoke, add an attribute "beltreel" to the reel element in the layout, and set it to 1 [J. Wallace].
-- h8: Add the h8/3008 [O. Galibert].
+- h8: Add the h8/3008 [Olivier Galibert].
 - Double Crown: Added button-lamps support, coin in and coin out counters, MAX693 watchdog reset, minor input fixes, and added technical notes [Roberto Fresca].
 - Double Crown: Redesigned the button-lamps layout and added support for CANCEL button [Roberto Fresca].
 - New Z80 CPU derivate Toshiba TLCS-Z80 [Felipe Sanches].
 - Added brightness control to berlwall RGB backgrounds [David Haywood].
 - Convert Little Robin to use TMS34010 instead of custom blitter code and share some parts of the implementation with Mega Phoenix [David Haywood].
 - TMS34010 core improvements [David Haywood]:
-  * Improved 8-bit write handling needed by Mega Phoenix and Little Robin to display all their graphics.
+  * Improved 8-bit write handling needed by Mega Phoenix and Little Robin to display all their graphics;
   * Fixed top of screen clipping issue that was causing visible glitches with objects dropping in from the top in the same games.
 - Update a number of drivers to use multiple palettes [David Haywood].
 - Add deluxe cabinet motor roms to various Sega sets [ANY].
@@ -674,5 +669,5 @@ Source changes:
 - Add Zoom ZSG2 sound, used in taitogn and fx1b. DSP isn't hooked up yet, so it will sound a bit tinny [hap].
 - goldnpkr.c driver: Inverted and normalize the button-lamps states for all games [Roberto Fresca]..
 - Various Atari vector drivers: derive (fake) refresh rate from CPU IRQ frequency to reduce judder [Alex Jackson].
-- toaplan1.c: correct SCREEN_RAW_PARAMS for all games based on CRTC registers [Alex Jackson].
-- naomi.c: redumped cfield CHD from GDI source, documented PIC used by ngdup23e set [MetalliC].
+- toaplan1.c: Correct SCREEN_RAW_PARAMS for all games based on CRTC registers [Alex Jackson].
+- naomi.c: Redumped cfield CHD from GDI source, documented PIC used by ngdup23e set [MetalliC].

@@ -2,8 +2,21 @@
 -------------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
+New Game Added or Promoted from NOT_WORKING Status
+--------------------------------------------------
+Devil Island (2 sets) [Brian Troha, The Dumping Union]
+
+New Clone Added
+---------------
+Streaking (set 2) [Roberto Fresca]
+
+New Game Marked as GAME_NOT_WORKING
+-----------------------------------
+Magical Touch [Siftware, Mariusz Wojcieszek]
+
+
+MAME Testers Bugs Fixed (18):
+----------------------------
 - 03074: [Sound] dkongjr and clones: Discrete audio output is lower pitched than normal (Derrick Renaud)
 - 03770: [Interface] Setting 'snapname %g' does not allow snap to be saved with F12 (Aaron Giles)
 - 03800: [Debugger] Many sets in snk.c: Viewing c000-c700 in debugger for "SUB" Z-80 causes memory corruption (MooglyGuy)
@@ -24,19 +37,6 @@ MAMETesters Bugs Fixed
 - 04091: [Misc.] simpbowl: NVRAM is not created correctly (Aaron Giles)
 
 
-New games added or promoted from NOT_WORKING status
----------------------------------------------------
-Devil Island (2 sets) [Brian Troha, The Dumping Union]
-
-New clones added
-----------------
-Streaking (set 2) [Roberto Fresca]
-
-New games marked as GAME_NOT_WORKING
-------------------------------------
-Magical Touch [Siftware, Mariusz Wojcieszek]
-
-
 Source changes:
 ---------------
 - Added explicit control handler for the console. Ctrl+C/Ctrl+Break now explicitly terminate the process forcefully, rather than unwinding through the system in an unexpected state. Other console events (exit, shutdown, logoff) request a graceful exit [Aaron Giles].
@@ -55,9 +55,9 @@ Source changes:
 - Moved -effect implementation out of OSD code and into core since the implementations were identical across Windows/SDL and implemented in the core itself [Aaron Giles].
 - Refactored the CDP1869 chip into a C++ device [Curt Coder].
 - Removed deprecat.h usage and did some minor clean-ups to the 4enraya driver [Angelo Salese].
-- Removed deprecat.h usage from '1943' driver [Angelo Salese].
+- Removed deprecat.h usage from 1943 driver [Angelo Salese].
 - Removed deprecat.h usage from 40love driver [Angelo Salese].
-- Reworked '1942' interrupts by not using cpu_getiloops() function [Angelo Salese].
+- Reworked 1942 interrupts by not using cpu_getiloops() function [Angelo Salese].
 - Reworked NMK16 irqs by not using cpu_getiloops() function [Angelo Salese].
 - Re-worked Quizard MCU communications handling to be more easily expanded [Harmony].
 - Rewrote Alien Command irqs by not using cpu_getiloops() function [Angelo Salese].

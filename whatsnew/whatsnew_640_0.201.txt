@@ -179,7 +179,7 @@ pc98:
   A Ressha de Ikou 4 ~ Take the A-Train IV - Map Construction + Power Up Kit, Ami - Kaze Tachinu [Neo Kobe Collection]
 
 
-MAMETesters Bugs Fixed (11):
+MAME Testers Bugs Fixed (11):
 ----------------------------
 - 00867: [Sound] (seta.cpp) twineagl: Music samples do not play to completion (cam900)
 - 06001: [Crash/Freeze] (nes.cpp) nes: iNES Mapper 31 crashes with ROM sizes other than 1MB (rainwarrior)
@@ -271,10 +271,10 @@ Source changes:
 - tms99xx: devcb3 changes, removing MCFG macros for 9900, 9901, 9980A, 9995 [Michael Zapf].
 - cassette: Added audio output streams, removing need for "wave" device [Michael Zapf].
 - i386: Fixed a bug that could cause a common CPU detection check to misidentify a 386 as a 486 [MoochMcGee].
-- indigo: Fixed ROM loading [O. Galibert].
-- Added support for abbreviated read/write handler signatures, and binding an object finder to an instance by reference [O. Galibert].
-- wd_fdc: Simplified API [O. Galibert].
-- tms57002: Suppressed aggressive inlining to reduce compiler memory usage [O. Galibert].
+- indigo: Fixed ROM loading [Olivier Galibert].
+- Added support for abbreviated read/write handler signatures, and binding an object finder to an instance by reference [Olivier Galibert].
+- wd_fdc: Simplified API [Olivier Galibert].
+- tms57002: Suppressed aggressive inlining to reduce compiler memory usage [Olivier Galibert].
 - Added support for TAP/TUN network provider on Windows [Patrick Mackinlay].
 - z80scc: Fixed serial control signal behaviour. Corrected polarity, removed ring indicator input, fixed "all sent" handling, and implemented sync interrupts [Patrick Mackinlay].
 - interpro: Improved emulation, allowing headless configurations to be used [Patrick Mackinlay].

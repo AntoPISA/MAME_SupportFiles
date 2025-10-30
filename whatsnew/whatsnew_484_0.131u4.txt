@@ -11,14 +11,14 @@ Touchmaster 5000 (v7.10 California) [Tormod, Smitdogg, Dumping Union]
 Touchmaster 7000 (v8.1X Evaluation) [Incog, Smitdogg, Dumping Untion]
 
 
-MAMETesters Bugs Fixed (6):
+MAME Testers Bugs Fixed (6):
 ---------------------------
-- 02730: [Crash/Freeze] fiveside: Doesn't past ROM check (Angelo Salese).
-- 03217: [Misc.] All sets in twinkle.c: Beatmania IIDX chds were added in chdformat < 4 (smf).
-- 03218: [Crash/Freeze] anteatgb: Game sits at POST screen (Tafoid).
-- 03221: [Crash/Freeze] demonwld + clones: Game fails to start (Tafoid).
-- 03222: [Sound] ctribe + clones: Music is missing (ShimaPong).
-- 03226: [Crash/Freeze] dadandrn, mmaulers: Game sits at black screen (Tafoid).
+- 02730: [Crash/Freeze] fiveside: Doesn't past ROM check (Angelo Salese)
+- 03217: [Misc.] All sets in twinkle.c: Beatmania IIDX chds were added in chdformat < 4 (smf)
+- 03218: [Crash/Freeze] anteatgb: Game sits at POST screen (Tafoid)
+- 03221: [Crash/Freeze] demonwld + clones: Game fails to start (Tafoid)
+- 03222: [Sound] ctribe + clones: Music is missing (ShimaPong)
+- 03226: [Crash/Freeze] dadandrn, mmaulers: Game sits at black screen (Tafoid)
 
 
 Source changes:
@@ -40,9 +40,9 @@ Source changes:
 - Converted NEC uPD4701 to be a MAME device [Fabio Priuli].
 - Converted RP5H01 to be a MAME device [Fabio Priuli].
 - Correct BPROM names, added PCB location and documented the BPROM type for Moon Base [Smitdogg, Dumping Union].
-- Corrected dipswitches in Konami's Wizz Quiz and added dipswitch locations [Brian Troha].
+- Corrected DIP switches in Konami's Wizz Quiz and added DIP switch locations [Brian Troha].
 - Corrected ROM names for Wing Shooting Championship and added documentation of the new game features of v2.00 [Brian Troha, Dumping Union].
-- Corrected some ROM names & added some PCB locations to pipedrm. Added dipswitch locations [Brian Troha].
+- Corrected some ROM names & added some PCB locations to pipedrm. Added DIP switch locations [Brian Troha].
 - Decrypted Mirax main program roms [Olivier Galibert].
 - Fix coin issue sqixr1 [ShimaPong].
 - Fixed digitalker mode 2 [Olivier Galibert].
@@ -57,5 +57,5 @@ Source changes:
 - Tekken Tag Tournament Japanese versions: Mark the in-practice undumped roms as NO_DUMP. The versions used in the source were from where from the export version and they're incompatible with the japanese program roms [Olivier Galibert].
 - Updated galaga driver to use computed video timing [Aaron Giles].
 - Updated Intruder & Moon Base roms with PCB locations [Brian Troha].
-- Updated the dipswitches and listed the dipswitches in the hvyunit driver [Brian Troha].
+- Updated the DIP switches and listed the DIP switches in the hvyunit driver [Brian Troha].
 - Verified clocks and corrected 6502 cpu speed on "the deep" [Corrado Tomaselli].

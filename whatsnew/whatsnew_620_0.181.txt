@@ -40,7 +40,7 @@ Machines Promoted to Working
 ----------------------------
 ACT Apricot PC [Dirk Best]
 ACT Apricot Xi [Dirk Best]
-K28: Talking Learning Computer (model 7-230) [O. Galibert]
+K28: Talking Learning Computer (model 7-230) [Olivier Galibert]
 Mattel Funtronics Jacks [hap, Sean Riddle]
 Mattel Funtronics Red Light Green Light [hap, Sean Riddle]
 
@@ -113,16 +113,16 @@ Source changes:
 - ppc: Set DSISR to the exception flags rather than the address on data access faults and correct flag values [R. Belmont, Vas Crabb, maximumspatium].
 - DRC: Fixed XMM usage on SysV x64 ABI, restoring debugger functionality on Mac/Linux for DRC drivers [maximumspatium, R. Belmont, Ville Linde].
 - Added preliminary MB86235 recompiler [Ville Linde].
-- delegates: Don't crash on late binding if no object is actually needed [O. Galibert].
-- pci9050: Fixed the mappings [O. Galibert].
-- sharc: Use standard memory maps [O. Galibert].
-- tms32025: Use the standard memory interfaces [O. Galibert].
-- dimemory: Removed the magic bypass [O. Galibert].
-- votrax sc01: Simulate [O. Galibert]:
+- delegates: Don't crash on late binding if no object is actually needed [Olivier Galibert].
+- pci9050: Fixed the mappings [Olivier Galibert].
+- sharc: Use standard memory maps [Olivier Galibert].
+- tms32025: Use the standard memory interfaces [Olivier Galibert].
+- dimemory: Removed the magic bypass [Olivier Galibert].
+- votrax sc01: Simulate [Olivier Galibert]:
   * Complete simulation of digital section based on die imaging;
   * Removed now-obsolete samples;
   * Plosives are still imperfect.
-- mc1000: Removed direct update handler [O. Galibert].
+- mc1000: Removed direct update handler [Olivier Galibert].
 - tnzs: Various refactoring [Ryan Holtz].
 - netlist: Added simple ROM hookup capability [Ryan Holtz].
 - netlist: Device additions [Ryan Holtz]:

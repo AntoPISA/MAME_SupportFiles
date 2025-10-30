@@ -2,7 +2,7 @@
 -------------------------------------------
 
 
-MAMETesters Bugs Fixed
+MAME Testers Bugs Fixed
 ----------------------
 - 00317: [Graphics] (seta.c) daioh: On the attract mode screen with the earth down, there is a glitchy line at the bottom and the explosion is glitched. (Mamesick)
 - 01444: [Sound] (seta2.c) gundamex: The music is only emitted from the right channel. (system11)
@@ -83,14 +83,14 @@ Sega Network Taisen Mahjong MJ 3 Evolution (Rev B) (GDX-0021B) [Andy Geezer]
 
 Source changes:
 ---------------
-- memory: Remove support for decrypted bases, use an address space instead [O. Galibert]
-- atarisy2: Slapstic doesn't need a direct update handler anymore [O. Galibert]
-- dsp56k: Remove the not required direct update handler [O. Galibert]
-- namcos1: Remove direct-update-handler-using optimization, will be done differently later [O. Galibert]
-- psx: Remove quickload, may be handled differently later [O. Galibert]
-- apple2gs: Remove the not required direct update handler [O. Galibert]
+- memory: Remove support for decrypted bases, use an address space instead [Olivier Galibert]
+- atarisy2: Slapstic doesn't need a direct update handler anymore [Olivier Galibert]
+- dsp56k: Remove the not required direct update handler [Olivier Galibert]
+- namcos1: Remove direct-update-handler-using optimization, will be done differently later [Olivier Galibert]
+- psx: Remove quickload, may be handled differently later [Olivier Galibert]
+- apple2gs: Remove the not required direct update handler [Olivier Galibert]
 - spc1000 added the centronics printer port [Miso Kim]
-- topland: Fix the background gradient [O. Galibert]
+- topland: Fix the background gradient [Olivier Galibert]
 - Unitron AP II: New Brazilian Apple 2 clone [Felipe Sanches]
 - M1COMM update, S32COMM initial commit [SailorSat]
 - Polymax Maxxi: New brazilian Apple2 clone. [Felipe Sanches]
@@ -121,8 +121,8 @@ Source changes:
 - g64_dsk: Respect the number of tracks specified in the image header [Curt Coder]
 - c128_flop.xml: Added Paperback Writer 128, Term Paper Writer, The Great War, and Your Personal Financial Planner 128 disk images [Curt Coder]
 - Document progress on congo bongo. Gorilla sound now works. Performance up from 30% to 170%. Use ./nltool -c run -f nl_examples/congoBongo.c -t 2 to test. Minor enhancements and bugfixes [Couriersud]
-- m68k: fix unaligned pc-relative accesses [O. Galibert].
-- scfinals: Add correct default eeproms [O. Galibert].
+- m68k: fix unaligned pc-relative accesses [Olivier Galibert].
+- scfinals: Add correct default eeproms [Olivier Galibert].
 
 -Add a second ROM label variant to NSS Super Mario World IC1 [byuu]
 
@@ -141,7 +141,7 @@ Source changes:
 -correct PROMs for 'mayac' set, fixes colours [system11]
 
 -thedealr.c: Figured out Coinage, Max Bet, Payout, Double up, Jacks or
- Better and Fever Mode dipswitches [Brian Troha].
+ Better and Fever Mode DIP switches [Brian Troha].
 
 -sdk80.c: Begun hooking up devices [MooglyGuy]
  * Hooked up i8251 USART and RS232 device. Can use standard RS232 slot
@@ -188,7 +188,7 @@ Source changes:
 
 -firebeat: Added basic SPU board emulation [Ville Linde]
 
--rspcp2: Make the align declarations gcc-compatible [O. Galibert]
+-rspcp2: Make the align declarations gcc-compatible [Olivier Galibert]
 
 -Decrypted external ARM code in slqz3 [iq_132]
 

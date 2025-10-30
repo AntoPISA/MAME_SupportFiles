@@ -2,25 +2,12 @@
 -------------------------------------------
 
 
-MAMETesters Bugs Fixed
-----------------------
-- 04420: [Crash/Freeze] (crystal.c) crysbios, donghaer, officeye, topbladv: [debug] Crash after OK (Robbbert)
-- 04836: [Crash/Freeze] (mpu5.c) Many sets in mpu5.c: Crash after OK (Robbbert)
-- 04839: [Crash/Freeze] (pluto5.c) hb_dacz: Crash after OK (Robbbert)
-- 05013: [Crash/Freeze] (vegas.c) sf2049: Integer Divide By Zero (Firewave)
-- 05197: [Graphics] (armedf.c) cclimbr2: Missing blinking white dot (hap)
-- 05198: [Sound] (galdrvr.c) explorer: No sound and effect (hap)
-- 05199: [Documentation] (ddenlovr.c) ultrchmph: The correct description is "Cheng Ba Shi Jie - Chao Shi Kong Guan Jun" and the region is Taiwan instead Hong Kong (Fujix)
-- 05201: [Crash/Freeze] mhavoc, starwars and clones: Various vector games will crash/freeze in MAME (MooglyGuy)
-- 05205: [Crash/Freeze] (bwidow.c) bwidow: After last life the game crashes (MooglyGuy)
-
-
-New games added or promoted from NOT_WORKING status
+New Games Added or Promoted from NOT_WORKING Status
 ---------------------------------------------------
 Attack Force [Piero Andreini]
 Top XXI (Version 1.2) [Roberto Fresca, ANY]
 
-New clones added
+New Clones Added
 ----------------
 18 Challenge Pro Golf [Tormod, The Dumping Union]
 Aerolitos (Spanish bootleg of Asteroids) [Basilio Garcia]
@@ -52,12 +39,25 @@ ThunderJaws (rev 3) [Artemio Urbina, The Dumping Union]
 Unknown SRU Game [jameswal]
 WWF: Wrestlemania (rev 1.1 07/11/95) [Brian Troha, The Dumping Union]
 
-New games marked as GAME_NOT_WORKING
+New Games Marked as GAME_NOT_WORKING
 ------------------------------------
 Guttang Gottong (bootleg on Galaxian type hardware) [Basilio Garcia]
 Music Ball [AUMAP]
 Reel Good Time (Rebuild) (EPOCH) (Version 1.0) [Dr Slots/MPU Mecca]
 Treasure Hunt (Global) (EPOCH) (Version 1.6) [Dr Slots/MPU Mecca]
+
+
+MAME Testers Bugs Fixed (9):
+----------------------------
+- 04420: [Crash/Freeze] (crystal.c) crysbios, donghaer, officeye, topbladv: [debug] Crash after OK (Robbbert)
+- 04836: [Crash/Freeze] (mpu5.c) Many sets in mpu5.c: Crash after OK (Robbbert)
+- 04839: [Crash/Freeze] (pluto5.c) hb_dacz: Crash after OK (Robbbert)
+- 05013: [Crash/Freeze] (vegas.c) sf2049: Integer Divide By Zero (Firewave)
+- 05197: [Graphics] (armedf.c) cclimbr2: Missing blinking white dot (hap)
+- 05198: [Sound] (galdrvr.c) explorer: No sound and effect (hap)
+- 05199: [Documentation] (ddenlovr.c) ultrchmph: The correct description is "Cheng Ba Shi Jie - Chao Shi Kong Guan Jun" and the region is Taiwan instead Hong Kong (Fujix)
+- 05201: [Crash/Freeze] mhavoc, starwars and clones: Various vector games will crash/freeze in MAME (MooglyGuy)
+- 05205: [Crash/Freeze] (bwidow.c) bwidow: After last life the game crashes (MooglyGuy)
 
 
 Source changes:
@@ -68,20 +68,20 @@ Source changes:
 - Removes more MAME anonymous timers [Andrew Gardner].
 - Added DIP switch location to Namco System 11 & 12, also removed unused test dip switches [smf].
 - HLSL changes [MooglyGuy]:
-  * Upped vertex buffer size to 64k verts, fixes assert in starwars and alphaone, please include the printed error message in any subsequent encounterings of the assert.
-  * Improved vector rendering (beam width 1.5 suggested).
+  * Upped vertex buffer size to 64k verts, fixes assert in starwars and alphaone, please include the printed error message in any subsequent encounterings of the assert;
+  * Improved vector rendering (beam width 1.5 suggested);
   * Ducked raster bloom default to 0.225 to reduce washout.
--i386dasm.c: Fix improper signed display in some opcode parameters [Peter Ferrie].
+- i386dasm.c: Fix improper signed display in some opcode parameters [Peter Ferrie].
 - Register the device post load after the devices are started, in case starting the device causes something (like sound_stream) to register it's own post load [smf].
 - audit.c: Fixed software list CHD verification  [qmc2].
 - mazerbla.c: Add notes about the game pcbs [Lord Nightmare, Quarterarcade].
 - Replace first ROM of Ambush with a fresh dump, marked the old set as likely hacked [Ricky2001 (from AUMAP).
 - zn.c: Added YMZ280 sound emulation to hvnsgate [smf, hap].
 - m6800: Resolved out_sc2_func for M6808/HD6301/HD63701 variants [Curt Coder].
-- ksys573: Externalize the digital board [O. Galibert].
+- ksys573: Externalize the digital board [Olivier Galibert].
 - Added a check for a bus error when fetching an instruction, the bus error condition is cleared before the fetch so bus errors in the debugger don't cause an exception to be triggered [smf].
-- m6502: Redo the prefetch and reset the state on debugger PC change [O. Galibert].
-- savquest.c: added HASP emulator; marked BIOS as bad dump because it's incomplete [Peter Ferrie].
+- m6502: Redo the prefetch and reset the state on debugger PC change [Olivier Galibert].
+- savquest.c: Added HASP emulator; marked BIOS as bad dump because it's incomplete [Peter Ferrie].
 - z80dart: Merged in uPD7201 and modernized the interface [Curt Coder].
 - emuopts.c: Added a new option -statename which allows to specify the location of state saving, relative to -state_directory (whose usage remains unchanged). Syntax is basically the same as snapname, allowing for the  / character as path separator, %g as the driver name, and %d_[media] as the image name mounted in the "media" device. For example, using -statename foo/%g when running "mame wrally" will store save states into the folder sta/foo/wrally/ ; using -statename %g/%d_cart when running "mess nes -cart smb" will store save states into the folder sta/nes/smb/ ; using -statename %g/%d_cdrm when running "mess pce -cart cdsys -cdrm draculax" will store save states into sta/pce/draculax/ Specifying a media switch which is not available (e.g. %d_cdrm in a c64) or a media switch where no image is mounted (e.g. %d_cdrm in pce while playing a hucard game) will revert the option to its default value %g and save states will be stored in sta/*gamename*/ as in previous versions [Fabio Priuli].
 - msm5205.c: Modernized the device [Fabio Priuli].
@@ -100,15 +100,14 @@ Source changes:
 - Modernized the MB14241 and MathBox devices [Osso].
 - inpttype.h: Use O1 instead of O0 on the critical function [Hans Ostermeyer].
 - Fixed clipping of device address maps if the size of the map caused the end address to wrap. Added a proof of concept implementation of a address map bank device, which allows you to bank memory maps. Hooked it up to Taito GNET as an example [smf].
-- Finished converting Taito GNET to use address maps instead of
- installing at run time [smf].
+- Finished converting Taito GNET to use address maps instead of installing at run time [smf].
 - Modernized the geebee and warpwarp sound devices [Osso].
 - Finished modernizing gp9001 [smf].
 - Modernized the MM58274C RTC device [Fabio Priuli].
 - Allow AM_NOP in device address maps, there may be others that should be allowed [smf].
 - Created a PCCARD slot and Linear Flash Card for System 573. Uses bankdev.c for banking the onboard flash chips and the pccard slots. This adds an extra two calls to the memory system & intelfsh.c already called the memory system for accessing the data [smf].
 - Split rf5c296 and ata flash functionality from taitogn.c into their own devices. The pccard slot has had to revert to use memory handlers instead of device maps for the moment [smf].
--Modernized Kaneko Pandora device [Osso].
+- Modernized Kaneko Pandora device [Osso].
 - Modernized the TMS9927 device [Fabio Priuli].
 - Modernized the PIT8253 device [Fabio Priuli].
 - Modernized speaker device [Fabio Priuli].
@@ -122,10 +121,10 @@ Source changes:
 - QT Debugger: WIP for a new breakpoints window [Andrew Gardner].
 - Modernized nmk112 device [Osso].
 - Modernized Namco I/O devices (56xx, 58xx, 59xx) [Osso, Fabio Priuli].
-- naomi video: Pretend-modernize the powervr2 [O. Galibert]
-- powervr2: Some register groups are obviously 32 bits, so make them so [O. Galibert].
-- naomi: Better IRQ isolation [O. Galibert].
-- naomig1: Make the dma cpu-independant [O. Galibert].
+- naomi video: Pretend-modernize the powervr2 [Olivier Galibert]
+- powervr2: Some register groups are obviously 32 bits, so make them so [Olivier Galibert].
+- naomi: Better IRQ isolation [Olivier Galibert].
+- naomig1: Make the dma cpu-independant [Olivier Galibert].
 - First pass at tidying up ide interface. It no longer tries to force everything to act as a PC. A copy of the VIA VT83C461 datasheet would be useful to remove some of the hacks added to make the games using it work again [smf].
 - Modernize adc1038 and adc12138 devices [Osso].
 - Added USE_SIMD flag to RSP headers and began converting some opcodes to use SSE* intrinsics. Current plan is to target SSSE3-capable hardware (Core2 and up), with the resulting speedup theorized to be on the order of 5-10x when conversion is complete, though this applies only to situations where the emulation is heavily bottlenecked by the RSP [MooglyGuy].

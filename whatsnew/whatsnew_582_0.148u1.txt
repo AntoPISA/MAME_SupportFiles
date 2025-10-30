@@ -38,8 +38,8 @@ Super Pinball Action (prototype) [TrevEB, f205v, Tormod, Smitdogg, The Dumping U
 Tumble Pop (Playmark bootleg) [ANY] (not working)
 
 
-MAMETesters Bugs Fixed (6):
----------------------------
+MAME Testers Bugs Fixed (6):
+----------------------------
 - 04028: [Crash/Freeze] (pinkiri8.c) ronjan: Crash after OK (Firewave)
 - 04487: [Graphics] all games with PlayStation GPU: shifted lines in textured quads (smf)
 - 04844: [Crash/Freeze] (jaguar.c) fishfren: black screen after EEPROM initialize (Peter Ferrie)
@@ -50,7 +50,7 @@ MAMETesters Bugs Fixed (6):
 
 Source changes:
 ---------------
-- srcclean now processes XML & C comments the same, so they can be indented but within the comment itself spaces are used [smf].
+- srcclean now processes XML and C comments the same, so they can be indented but within the comment itself spaces are used [smf].
 - Remove extraneous line continuation characters followed by a blank line and blank lines that follow an opening brace in c files [smf].
 - i8244.c: Added a device implementation for the i8244/i8245 [Wilbert Pol].
 - diimage: Allow image devices to skip core fopen() of the image's filename and handle themselves in call_load() [R. Belmont].
@@ -59,8 +59,8 @@ Source changes:
 - DSP16: Additional opcodes & disassembly fixes [Andrew Gardner].
 - n68681: Fixed trashing of the serial parameters when ACR is updated [R. Belmont].
 - MIDI core updates [R. Belmont]:
-  * Add MIDI in and out ports as image device types.
-  * Add OSD calls to check for and read MIDI input.
+  * Add MIDI in and out ports as image device types;
+  * Add OSD calls to check for and read MIDI input;
   * Add MIDI in image device which reads input and converts it to a serial bitstream.
 - d3dhlsl.c: Made HLSL switchable at runtime, Ctrl+Alt+F5 [MooglyGuy].
 - MIDI: Allow input port to work without a connected real device [R. Belmont].
@@ -70,30 +70,30 @@ Source changes:
 - Added a preliminary boolean flag to MC6845 interface structure: "show border area". If true, it will show the whole video area including border + blanking areas [Angelo Salese].
 - DSP16: The PC moves on from potentially all used opcodes now [Andrew Gardner].
 - MIDI: Fixed several bugs and bumped the input buffer sizes [R. Belmont].
-- Lucky'74 (set 2): Proper inputs to reflect the real payrate table [Roberto Fresca]..
+- Lucky'74 (set 2): Proper inputs to reflect the real payrate table [Roberto Fresca].
 - QT Debugger improvements [Andrew Gardner]:
-  * Fixed disassembly window not following PC correctly.
-  * Switched font to Courier New since it seems more universal.
-  * Fixed gaps between rendered text characters.
-  * Plumbed mouse handling through the debugger core (clicking selects).
+  * Fixed disassembly window not following PC correctly;
+  * Switched font to Courier New since it seems more universal;
+  * Fixed gaps between rendered text characters;
+  * Plumbed mouse handling through the debugger core (clicking selects);
   * Made the Enter key behave like old SDL debugger; silently steps.
 - wwfsstar.c: Correct ROM loads for genuine PCBs sets and correct a few ROM labels. Added the bootleg set and documentation about it [Brian Troha] 
 - wwfsstarj: Correct program / tx tile roms [Stevebm1, Porchy].
 - qix.c: Resolve device references at initialisation where possible [Phil Bennett].
 - sharcdsm.c [Pavel Semerad]:
-  * Added omitted direction flags in instruction using both PM() and DM().
+  * Added omitted direction flags in instruction using both PM() and DM();
   * In instruction with 6bit immediate data, this data is signed value. It would be better to show this sign because it is confusing to see for example 0x3F which actually means -1 (32bit immed data are not confusing as that big values are easy to recognize).
 - Bonne Chance!: Worked complete inputs from the scratch. Promoted to working. Added some notes [Roberto Fresca]..
 - Bonne Chance!: Added proper palette. Now the game seems to get accurate colors. Also added some descriptive notes and instructions for the service mode [Roberto Fresca].
 - Added many PAL10L8's for balsente.c games [Kevin Eshbach].
 - Modernised the R3000 core [Phil Bennett]:
-  * The following variants are supported: R3041, R3051, R3052, R3071 and R3081.
-  * Endianness is now specified by MCFG_R3000_ENDIANNESS() (default is big-endian).
-  * Removed configuration struct. Cache sizes and FPU availability are now determined from the CPU type.
+  * The following variants are supported: R3041, R3051, R3052, R3071 and R3081;
+  * Endianness is now specified by MCFG_R3000_ENDIANNESS() (default is big-endian);
+  * Removed configuration struct. Cache sizes and FPU availability are now determined from the CPU type;
   * Added state saving.
   * Added BrCond input callbacks.
 - CPS-2 update [Team CPS-1]:
-  * Fixed 3 labels in sfa2u.
+  * Fixed 3 labels in sfa2u;
   * Reordered sfz2alj set.
 - PSX: Change the rendering back to quads as less people complained about the old graphical issues compares to the new ones [smf].
 - segas16a.c: Correctly redumped the 317-5021 FD1089B for 'Sukeban Jansi Ryuko' [hotgraphics, Song Gao, Bad A Billy, ranger_lennier, Yohji, Smitdogg, Charles MacDonald, The Dumping Union].
@@ -102,26 +102,26 @@ Source changes:
 - PSX: Use devcb2 for cpu to spu hookup as it's on it's own 16 bit bus. Removed the spu hookup in taitogn at 0x1fa51c00 as it doesn't make sense, will wait for bug reports before investigating further [smf].
 - d3dhlsl.c: Add preliminary vector post-processing [MooglyGuy].
 - Improvements to sanremo.c driver [Roberto Fresca]:
-  * Graphics decode.
-  * Proper ROM load.
-  * Accurate memory map.
-  * Hooked CPU & interrupts.
-  * Added CRTC support.
-  * Added AY-3-8910 sound and ports support.
-  * Added input ports.
-  * Added output-lamps port.
-  * Added button-lamps layout.
+  * Graphics decode;
+  * Proper ROM load;
+  * Accurate memory map;
+  * Hooked CPU & interrupts;
+  * Added CRTC support;
+  * Added AY-3-8910 sound and ports support;
+  * Added input ports;
+  * Added output-lamps port;
+  * Added button-lamps layout;
   * NVRAM support.
 - New York Joker: Added inputs, outputs, button-lamps, sound, coin and note counters, default NVRAM, and promoted to working. Note: To switch between pins/cards, after insert some credits (before bet on the game), press HOLD3 to get the graphics option, and use HOLD2 and HOLD4 to choose the wished set [Roberto Fresca].
 - PSX: Clamp framebuffer reading to frame buffer coordinates. not sure this is accurate, but it stops it crashing when negative coordinates arE used [smf].
 - ZN update [Team CPS-1]:
-  * Confirmed 1 label in sfexu.
+  * Confirmed 1 label in sfexu;
   * Added a note in sfexa set.
 - QT Debugger improvements [Andrew Gardner]:
-  * Save and load window locations.
-  * Preliminary work on "run and hide" and "hard reset" (don't crash on one of my copmilers but do on another - more work to do!).
-  * Fixed color when cursor is the same as PC in debug view.
-  * Closing the main window now shuts down the machine (same as quit).
+  * Save and load window locations;
+  * Preliminary work on "run and hide" and "hard reset" (don't crash on one of my copmilers but do on another - more work to do!);
+  * Fixed color when cursor is the same as PC in debug view;
+  * Closing the main window now shuts down the machine (same as quit);
   * Help now wraps to the log window size.
 - SDL: Fix srcclean damage in sdl.mak [Wallyweek].
 - SDL: Update MAME and MESS manpages [Wallyweek].
@@ -131,7 +131,7 @@ Source changes:
 - Fully modernised the TLC34076 device [Phil Bennett].
 - xtheball.c: Reduce tag lookups [Phil Bennett].
 - CPS-1 update [Team CPS-1]:
-  * Replaced NM_23.13B in nemoj with proper dump.
+  * Replaced NM_23.13B in nemoj with proper dump;
   * Confirmed 1 label in sf2ue according to the real board.
 - MIDI: handle MIDI Out with running status properly [R. Belmont].
 - Added illegal opcode handling for SH-2 CPU [Angelo Salese].
@@ -141,7 +141,7 @@ Source changes:
 - Modernized digitalker, tiaintf, and n63701x sound devices [Andrew Gardner].
 - Konami PPC updates:
   * Fixed sound clocking to match PCB readmes [RetroRepair].
-  * Labeled inputs in 'GTI Club' [RetroRepair].
+  * Labeled inputs in GTI Club [RetroRepair].
   * RF5c400 envelope timing based on chip output rate instead of MAME output rate [R. Belmont].
 - SDL: Update manpages to reflect the -lr alias for -listroms [Wallyweek].
 - aviio.c: Fix bad frames occurring on 2GB RIFF splits [Phil Bennett].
@@ -160,6 +160,6 @@ Source changes:
 - arm7ops.c: Fixed behavior of SMLAxy opcode [MooglyGuy].
 - arm7ops.c: Fix SMLAL, SMULW, SMLAW opcodes [MooglyGuy].
 - Add server socket support instead of just client [SailorSat, R. Belmont].
-- State-ized Sega Saturn VDP1 & 2 [Angelo Salese].
+- State-ized Sega Saturn VDP1 and 2 [Angelo Salese].
 - Fixed linescroll for VDP2 bitmap layers [Angelo Salese].
 - Various work on the newly added non-working sets including 'Super Pinball Action' prototype and 'Fruit Fresh' [David Haywood].
