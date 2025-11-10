@@ -10,6 +10,7 @@ The following files have been updated in this MAME cycle:
 - gameinit.dat
 - languages.ini
 - renameSET.dat
+- version pack
 
 Not updated in this cycle:
 - bestgames.ini
@@ -17,7 +18,6 @@ Not updated in this cycle:
 - CHD-Info pack
 - MESS-Info.dat
 - series.ini
-- version pack
 
 Home-page: https://www.progettosnaps.net/support/
 Github   : https://github.com/AntoPISA/MAME_SupportFiles

@@ -1,4 +1,4 @@
-﻿MAME VERSION.ini 0.281 (Oct  3, 2025)
+﻿MAME VERSION.ini 0.282 (Nov 10, 2025)
 © AntoPISA      www.progettoSNAPS.net
 =====================================
 
@@ -15,6 +15,7 @@ In this package you can find these ini files:
 
 WhatsNew:
 =========
+2025/11/10  9.10: Aligned to MAME 0.282.
 2025/10/03  9.09: Aligned to MAME 0.281.
 2025/09/13  9.08: Aligned to MAME 0.280.
 2025/08/24  9.07: Aligned to MAME 0.279.
