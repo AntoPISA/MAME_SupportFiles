@@ -1,4 +1,4 @@
-﻿#    MESSINFO_REM.DAT v0.281    Latest update:  Oct 11, 2025
+﻿#    MESSINFO_REM.DAT v0.282    Latest update:  Nov 15, 2025
 #                                Project start: Nov  7, 2011
 #
 #    Author:  Antonio Paradossi (AntoPISA) from Pisa (Tuscany/Italy)
@@ -8,8 +8,8 @@
 #
 #    homepage: http://www.progettosnaps.net/messinfo
 #
-#    Internal version: 14.08
-#    Total items: 351
+#    Internal version: 14.09
+#    Total items: 355
 #
 #
 $info=24c16a
@@ -1231,6 +1231,27 @@ WIP:
 
 ROMSET:
 1048576 bytes in 1 file / 522Kb packed
+
+$end
+$info=evo_cpu
+$mame
+0.261 [AJR]
+
+Evolution CPU, <unknown>, ????
+
+DRIVER:
+devices/cpu/evolution/evo.cpp
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Unsupported
+
+WIP:
+- 0.282: Device removed.
+- 0.261: AJR added 'Evolution CPU' device.
 
 $end
 $info=ex800
@@ -2747,6 +2768,27 @@ WIP:
 - 0.158: Added EXT Port device.
 
 $end
+$info=gpac800spi_direct
+$mame
+0.227 [David Haywood]
+
+GeneralPlus GPL16250 (with direct SPI handling), <unknown>, ????
+
+DRIVER:
+devices/machine/generalplus_gpl16250soc.cpp
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Unsupported
+
+WIP:
+- 0.282: Device removed.
+- 0.227: David Haywood added 'GeneralPlus GPL16250 (with direct SPI handling)' device.
+
+$end
 $info=h8_adc_2320
 $mame
 0.153
@@ -3814,6 +3856,48 @@ WIP:
 
 ROMSET:
 24576 bytes in 2 files / 13.8Kb packed
+
+$end
+$info=md_rom_radica
+$mame
+0.148u1
+
+MD Radica TV games, <unknown>, ????
+
+DRIVER:
+devices/bus/megadrive/rom.cpp
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Unsupported
+
+WIP:
+- 0.282: Device removed.
+- 0.148u1: Added 'MD Radica TV games' device.
+
+$end
+$info=md_rom_topf
+$mame
+0.148u1
+
+MD Top Fighter, <unknown>, ????
+
+DRIVER:
+devices/bus/megadrive/rom.cpp
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Unsupported
+
+WIP:
+- 0.282: Device removed.
+- 0.148u1: Added 'MD Top Fighter' device.
 
 $end
 $info=megemb
