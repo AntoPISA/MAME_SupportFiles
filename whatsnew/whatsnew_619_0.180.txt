@@ -1,4 +1,4 @@
-0.180 2016/11/30 [#619 - Vas Crabb]
+﻿0.180 2016/11/30 [#619 - Vas Crabb]
 -----------------------------------
 
 
@@ -139,38 +139,50 @@ Wild Amazon (01J01996, Venezuela) [Heihachi_73]
 
 New WORKING Software List Additions
 -----------------------------------
-atom_flop.xml: Egghead in Space, F14 Tomcat [Nigel Barnes]
-bbcb_cass.xml: The Music System [Nigel Barnes]
-bbcb_flop.xml: various games, applications, utilities [Nigel Barnes]
-bbcb_flop_orig.xml: redumped Farm Management Suite double sided [Nigel Barnes]
-bbcmc_flop.xml: ALPS, Astro Blaster, Carnival [Nigel Barnes]
-megadriv.xml: Cool Spot (Euro, Prototype) [FakeShemp, Team Europe]
-pet_rom.xml: SUPER*TOOL [Francesco Messineo]
-pro128s_flop.xml: Disco Welcome [Nigel Barnes]
-snes.xml: Syvalion (Euro, Prototype) [FakeShemp, Team Europe]
+atom_flop.xml:
+   Egghead in Space, F14 Tomcat [Nigel Barnes]
+bbcb_cass.xml:
+   The Music System [Nigel Barnes]
+bbcb_flop.xml:
+   Various games, applications, utilities [Nigel Barnes]
+bbcb_flop_orig.xml:
+   Redumped Farm Management Suite double sided [Nigel Barnes]
+bbcmc_flop.xml:
+   ALPS, Astro Blaster, Carnival [Nigel Barnes]
+megadriv.xml:
+   Cool Spot (Euro, Prototype) [FakeShemp, Team Europe]
+pet_rom.xml:
+   SUPER*TOOL [Francesco Messineo]
+pro128s_flop.xml:
+   Disco Welcome [Nigel Barnes]
+snes.xml:
+   Syvalion (Euro, Prototype) [FakeShemp, Team Europe]
 
 New NOT_WORKING Software List Additions
 ---------------------------------------
-archimedes.xml: RISC OS 3 Applications, many coverdisks and commercial applications [Nigel Barnes]
-bbc_flop_6502.xml: Hi-InterSheet, Hi-View, Hi-Wordwise+ [Nigel Barnes]
-electron_flop.xml: all known 5.25" DFS releases [Nigel Barnes]
+archimedes.xml:
+   RISC OS 3 Applications, many coverdisks and commercial applications [Nigel Barnes]
+bbc_flop_6502.xml:
+   Hi-InterSheet, Hi-View, Hi-Wordwise+ [Nigel Barnes]
+electron_flop.xml:
+   All known 5.25" DFS releases [Nigel Barnes]
 pico.xml:
- Cooking Pico (Jpn), Cooking Pico (Kor), Toy Story 2 (Kor), The Cloud is Wizard (Kor), Tago Galka (Kor), Dreamland Tour (Kor)
- [Team Europe]
-sawatte.xml: Doraemon Nobita no Dou Butsu Land, Soreike! Anpanman Onamae Na~ni, Ultra Hero Touch [Team Europe]
+  Cooking Pico (Jpn), Cooking Pico (Kor), Toy Story 2 (Kor), The Cloud is Wizard (Kor), Tago Galka (Kor), Dreamland Tour (Kor) [Team Europe]
+sawatte.xml:
+   Doraemon Nobita no Dou Butsu Land, Soreike! Anpanman Onamae Na~ni, Ultra Hero Touch [Team Europe]
 
 
 MAME Testers Bugs Fixed (11):
 ----------------------------
-- 03646: [Graphics] (segas16b.cpp) altbeastj, altbeast6 : Missing graphics in the crystal ball. (David Haywood)
+- 03646: [Graphics] (segas16b.cpp) altbeastj, altbeast6 : Missing graphics in the crystal ball (David Haywood)
 - 04933: [Flip Screen/Cocktail] (gaiden.cpp) gaiden and clones: Very slight offset down on flip screen (Osso)
 - 05928: [Crash/Freeze] (zn.cpp) nbajamex: game crashes / NVRAM gets corrupted (Phil Bennett)
 - 06407: [Compiling] (cps2.cpp) BUILD: Compiling a tinybuild with cps2 driver included crashes (smf)
 - 06411: [Flip Screen/Cocktail] (equites.cpp) splndrbt and clones, hvoltage: Cocktail mode video isn't working correctly (Osso)
 - 06413: [Interface] CONSOLE: Does nothing but allow "EXIT" (crazyc)
 - 06417: [Crash/Freeze] MAME crashed with UI and HLSL (Jezze)
-- 06418: [Flip Screen/Cocktail] (8080bw.cpp) Color sets in 8080bw: No picture for second player in cocktail mode. (Robbbert)
-- 06427: [Documentation] (atarisy1.cpp) peterpak: A dash too much in the game description. (AntoPISA)
+- 06418: [Flip Screen/Cocktail] (8080bw.cpp) Color sets in 8080bw: No picture for second player in cocktail mode (Robbbert)
+- 06427: [Documentation] (atarisy1.cpp) peterpak: A dash too much in the game description (AntoPISA)
 - 06432: [Graphics] Creating a game specific INI disables HLSL filters (Jezze)
 - 06436: [DIP/Input] (tecmo.cpp) gemini, geminib: Input issues (Tafoid)
 
@@ -352,10 +364,10 @@ Source changes:
   * Corrected flamolce ROM loading;
   * Corrected rumbreel ROM loading and switch 1x and 2x IC positions, it passes test and is consistent with others now.
 - sh4: Began SH4 MMU improvements with a view to seeing what aristmk6 needs, allowed table upload by LDTLB opcode, allowed experimental MMU test code to be enabled/disabled on a per-driver basis [David Haywood].
-- core: Added delegate support for lambdas and std::functions in general, also supporting const members now [Miodrag Milanovic].
+- core: Added delegate support for lambdas and std::functions in general, also supporting const members now [Miodrag Milanović].
 - aristmk5: Increased ROM window size for incasunu and geisha, fixing graphic CRC check and allowing incasunu to boot [David Haywood].
-- core: Added more applicable Catch testing framework and converted all tests to be done properly by guidelines. Still needs TESTS=1 to enable build of tests [Miodrag Milanovic].
-- osd: Moved UWP asset files to proper place [Miodrag Milanovic].
+- core: Added more applicable Catch testing framework and converted all tests to be done properly by guidelines. Still needs TESTS=1 to enable build of tests [Miodrag Milanović].
+- osd: Moved UWP asset files to proper place [Miodrag Milanović].
 - util: Added a simple FIFO template [Vas Crabb].
 - xmlfile: Turned API into something that looks like C++ and allowed use of const data node objects [Vas Crabb].
 - 3rdparty: Updated LZMA to 16.04 (security and portability fixes) [Vas Crabb].

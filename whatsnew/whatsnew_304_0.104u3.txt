@@ -1,4 +1,4 @@
-0.104u3 2006/02/22 [#304 - Aaron Giles]
+﻿0.104u3 2006/02/22 [#304 - Aaron Giles]
 ---------------------------------------
 IMPORTANT CHANGE FOR OSD DEVELOPERS: osd_exit is no longer called directly. Rather, your osd_init function should register the osd_exit  callback (if necessary) using add_exit_callback. Also, several global variables have been moved into the Machine structure:
 

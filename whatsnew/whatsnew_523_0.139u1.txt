@@ -1,4 +1,4 @@
-0.139u1 2010/08/11 [#523 - Aaron Giles]
+﻿0.139u1 2010/08/11 [#523 - Aaron Giles]
 ---------------------------------------
 
 
@@ -64,7 +64,7 @@ Source changes:
   * Same for cputag_suspend() and cputag_resume().
 - Fix crash when exiting the debugger if breakpoints are set [Aaron Giles].
 - The dsp561xx CPU core now generates accurate disassembly for Konami Polygonet hardware (verified against Motorola's reference disassembler) [Andrew Gardner, Stiletto].
-- Fixed image device error handling [ShimaPong, Miodrag Milanovic].
+- Fixed image device error handling [ShimaPong, Miodrag Milanović].
 - Defined new class driver_data_t, which all driver_data classes must derive from. Updated all class definitions to inherit from the new class, and to call it in the constructor. Also changed the alloc() signature to return a driver_data_t pointer instead of a void * [Aaron Giles].
 - Renamed and hid machine->driver_data as machine->m_driver_data. Added a new templatized method machine->driver_data<class> which returns a properly downcast'ed version of the driver data. Updated all code which looked like this [Aaron Giles]:
 
@@ -78,7 +78,7 @@ Source changes:
 - Changed atarigen_state to be a base class from which all the related Atari drivers derive their state from [Aaron Giles].
 - Removed global variables from gaelco, namco, and nile sound cores [Atari Ace].
 - Converted seta.c, seta2.c, and ssv.c to driver_data [Atari Ace].
-- Updated SAA5050 to form 12x20 chars as noted in documentation. Updated malzak driver to support SAA5050 changes [Miodrag Milanovic].
+- Updated SAA5050 to form 12x20 chars as noted in documentation. Updated malzak driver to support SAA5050 changes [Miodrag Milanović].
 - taitotz: add HDD image for Battle Gear 2 (2.04J) [gtbb08, R. Belmont].
 - namcoic.c: Fixed incorrect road colours in tceptor2, finallap and others [Phil Bennett].
 - Fixed road transparency in 'Thunder Ceptor' [Phil Bennett].

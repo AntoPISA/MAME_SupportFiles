@@ -1,4 +1,4 @@
-0.128u5 2008/12/06 [#465 - Aaron Giles]
+﻿0.128u5 2008/12/06 [#465 - Aaron Giles]
 ---------------------------------------
 
 
@@ -135,7 +135,7 @@ Source Changes
 - Added a number of new cputag_* macros to cpuexec.h [Aaron Giles].
 - Removed fillbitmap() macro in favor of direct calls to bitmap_fill(). Note that the parameters to the latter are in a different order (bitmap, clip, color) [Atari Ace].
 - Furthered the process of aligning the sound cores with the recent CPU core changes. Added a fake device implementation similar to the one the CPU cores are using. Made some interface adjustments aligned to 128u4 (i.e. adding snd_class_header, adding get_ to various getter functions). The primary benefit of this change is the removal of "deprecat.h" from 23 sound cores. Also adjusted ui.c to stop calling  sndnum_clock and access the clock data similarly to how it does the CPU clock data. (Note from Aaron: further changes to the sound interfaces will be kept to a minimum until the CPUs are sorted out) [Atari Ace].
-- Fixed 8080 interrupt handling [Miodrag Milanovic]:
+- Fixed 8080 interrupt handling [Miodrag Milanović]:
   * Previous implementation cleared interrupt enable bit on interrupt trigger which is wrong since interrupts should stay enabled.
   * Service interrupt number was not cleared after interrupt is executed, so if same one is triggered it will not be catched.
 - Made the 6526/8520 CIA implementations be devices. Added differentiation between the r1 and r2 versions of the 6526; not acting on it yet [Nathan Woods].

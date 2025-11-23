@@ -1,4 +1,4 @@
-0.142u4 2011/05/24 [#540 - Aaron Giles]
+﻿0.142u4 2011/05/24 [#540 - Aaron Giles]
 ---------------------------------------
 
 
@@ -58,8 +58,8 @@ Source changes:
 - Flush stderr, so the data is actually written when output is being redirected [Oliver Stoneberg].
 - i286: Added 286 LOADALL and triple fault resets [Carl].
 - i286: Added support for 16-bit protected mode far calls and segmentprivilege checks [Carl]. 
-- i86: Fixed shift instructions, helps detecting proper CPU [Miodrag Milanovic].
-- i86: Fixed handling of invalid instructions in 0x60-0x6f section [Miodrag Milanovic].
+- i86: Fixed shift instructions, helps detecting proper CPU [Miodrag Milanović].
+- i86: Fixed handling of invalid instructions in 0x60-0x6f section [Miodrag Milanović].
 - Major clean-up and state machine conversion for the Sega ST-V/Saturn driver [Angelo Salese].
 - HLSL updates [Ryan Holtz, Bat Country Entertainment]:
   * Split color convolution and deconvergence into separate shaders for potential GPU savings down the line;
@@ -77,7 +77,7 @@ Source changes:
   * The defocus pass is now switched off when defocus_x and defocus_y are zero, allowing finer-grained performance tuning;
   * Removed YIQ convolution from the main color-convolution shader and replaced it with a full composite encode/decode pass. This is slower, but looks amazing(ly like a terrible TV) and can be turned off;
   * More authentic NTSC dot crawl and bandwidth limiting.
-- i86: Implemented POP CS and MOV CS,reg instructions that are 8086 specific [Miodrag Milanovic].
+- i86: Implemented POP CS and MOV CS,reg instructions that are 8086 specific [Miodrag Milanović].
 - Implemented multi-cart support to ST-V driver [Angelo Salese, Tafoid].
 - Managed to get the multiplexer/state machine emulated, amongst some watchdog fixes for BFM games [J. Wallace].
 - Added missing bipolar PROM dumps to Lucky Lady (Wing) [Team Europe].

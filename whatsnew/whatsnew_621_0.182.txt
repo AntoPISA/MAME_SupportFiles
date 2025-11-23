@@ -1,4 +1,4 @@
-0.182 2017/01/25 [#621 - Vas Crabb]
+﻿0.182 2017/01/25 [#621 - Vas Crabb]
 -----------------------------------
 
 
@@ -75,17 +75,20 @@ World Kicks (Japan, WK1 Ver.A) [rtw]
 
 New Working Software List Additions
 -----------------------------------
--archimedes.xml: over 30 games (some protected), and many apps [Nigel Barnes]
--atom_cass.xml: Backgammon, Cylon Attack, Early Warning, Minefield, Tangled [Nigel Barnes]
--atom_flop.xml: Galaxians (Aardvark) [Nigel Barnes]
--ibmpcjr_cart.xml: Fraction Fever [Anna Wu, Justin Kerk]
--t1000.xml:
- MS-DOS (Verson 3.20, Tandy version 03.20.21) (Tandy 1000 TX), DeskMate (Tandy 1000), DeskMate II (Tandy 3000), Personal DeskMate,
- Personal DeskMate 2 (Tandy 1000 HX), Personal DeskMate 2 (Tandy 1000 HX, Alt), Personal DeskMate 2 (Tandy 1000 TX),
- King's Quest (Tandy), Transylvania (Tandy) [Justin Kerk]
--x1_cass.xml:
- 198X-nen, 3D Golf Simulation, Fushigi no Kuni no Alice, Ankokujou, Danchizuma no Yuuwaku, Intelli Janshi - Yonin Mahjong,
- Ultra Story, Xanadu [r09]
+archimedes.xml:
+   Over 30 games (some protected), and many apps [Nigel Barnes]
+atom_cass.xml:
+   Backgammon, Cylon Attack, Early Warning, Minefield, Tangled [Nigel Barnes]
+atom_flop.xml:
+   Galaxians (Aardvark) [Nigel Barnes]
+ibmpcjr_cart.xml:
+   Fraction Fever [Anna Wu, Justin Kerk]
+t1000.xml:
+   MS-DOS (Verson 3.20, Tandy version 03.20.21) (Tandy 1000 TX), DeskMate (Tandy 1000), DeskMate II (Tandy 3000), Personal DeskMate,
+   Personal DeskMate 2 (Tandy 1000 HX), Personal DeskMate 2 (Tandy 1000 HX, Alt), Personal DeskMate 2 (Tandy 1000 TX),
+   King's Quest (Tandy), Transylvania (Tandy) [Justin Kerk]
+x1_cass.xml:
+   198X-nen, 3D Golf Simulation, Fushigi no Kuni no Alice, Ankokujou, Danchizuma no Yuuwaku, Intelli Janshi - Yonin Mahjong, Ultra Story, Xanadu [r09]
 
 
 MAME Testers Bugs Fixed (10):
@@ -98,7 +101,7 @@ MAME Testers Bugs Fixed (10):
 - 06460: [Sound] (stlforce.cpp) stlforce: OKI6295 speed is too slow (system11)
 - 06461: [DIP/Input] (pacman.cpp) eeekk: 2P Start Button map is missing (Tafoid)
 - 06464: [Interface] Every system with softlists using the "requirement" sharedfeat: Software list items with the "requirement" sharedfeat don't work (AJR)
-- 06467: [Gameplay] (hh_tms1k.cpp) elecdet: Every suspect gives the same alibi. (hap)
+- 06467: [Gameplay] (hh_tms1k.cpp) elecdet: Every suspect gives the same alibi (hap)
 - 06468: [DIP/Input] (gladiatr.cpp) gladiatr ogonsiro gcastle: Coinage DIP switches have no effect in sets using MCU simulation (Vas Crabb)
 
 
@@ -408,8 +411,8 @@ Source changes:
 - Corrected tilemap colors in 'Stadium Hero' [Bryan McPhail, Guru].
 - armedf.cpp: Verified and corrected clocks for 'Sky Robo' and 'Tatakae! Big Fighter' [Guru].
 - hng64: Documented I/O CPU clock [Guru].
-- pacman.cpp: Added readme for 'Number Crash' [Guru].
-- jollyjgr.cpp: Updated readme and corrected clocks for 'Jolly Jogger' [Guru].
+- pacman.cpp: Added readme for Number Crash [Guru].
+- jollyjgr.cpp: Updated readme and corrected clocks for Jolly Jogger [Guru].
 - hiscore.dat: Updates [Leezer].
 - Added handy ROM filename discrepancy spotter scripts. Identifies identical ROMs that have different names in parent and clone sets [Zoe Blade].
 - Updated V.Smile software list [Fake Shemp]:

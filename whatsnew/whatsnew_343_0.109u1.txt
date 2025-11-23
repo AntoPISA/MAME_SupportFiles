@@ -1,4 +1,4 @@
-0.109u1 2006/10/6 [#343 - Aaron Giles]
+﻿0.109u1 2006/10/6 [#343 - Aaron Giles]
 --------------------------------------
 IMPORTANT NOTE TO OSD DEVELOPERS: The file I/O interface has changed significantly. It is now much simpler. Please read osdepend.h for full details on how the new OSD-defined functions work. In addition, you must now use the options.c to specify your search paths. If you are parsing standard command line options and INI files, this work is relatively straightforward. Otherwise, you can manually call options_set_string() for each of the search paths to configure them from whatever options store you are using.
 

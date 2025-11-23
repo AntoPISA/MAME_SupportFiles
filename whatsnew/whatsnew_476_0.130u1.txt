@@ -1,4 +1,4 @@
-0.130u1 2009/3/19 [#476 - Aaron Giles]
+﻿0.130u1 2009/3/19 [#476 - Aaron Giles]
 --------------------------------------
 IMPORTANT NOTE: The CHD format has undergone a change with this release.The main reason for this change is to include some of the key metadata into the hashes for the CHDs. This ensures that the metadata is valid and prevents abuse. The first impact you will find is that all of your CHD differencing files are invalid. Just delete your "diff" directory contents entirely. The second impact is that all your existing CHDs will warn you that they have incorrect hashes. This is expected. Your old CHDs should still work fine, so if you can live with the "bad ROM" warnings, you don't really need to do anything. However, if this bugs you or you want to be "clean", you can update your CHDs, using this command line:
 

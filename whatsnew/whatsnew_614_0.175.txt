@@ -62,31 +62,43 @@ World Club Champion Football Serie A 2001-2002 DIMM FIRM Ver.3.03 (CDP-10003) [a
 World Club Champion Football Serie A 2001-2002 Ver. 2 (CDP-10001C) [any, f205v, ShouTime, rtw]
 World Club Champion Football Serie A 2002-2003 Drive Checker (CDV-10007) [any, f205v, ShouTime, rtw]
 
-New Clones Marked as NOT_WORKING
---------------------------------
+New Clone Marked as NOT_WORKING
+-------------------------------
 Magic Card (H8, English) [Yrouel]
 
 New WORKING Software List Additions
 -----------------------------------
--bbcb_cass.xml: Added various recently dumped games [Nigel Barnes]
--bbcmc_flop.xml: Added various educational titles [Nigel Barnes]
--megadriv.xml: Chaoji Majiang Club / Super Mahjong Club (Tw) [system11, Fabio Priuli]
--pce_tourvision.xml: Out Run [system11, kebrank]
--pet_cass.xml: 
-  * Added Supermon (Toronto PET User Group) [Ken White]
-  * Replaced bad dump of Side B of Squiggle, Big Time / Monitor (the m command in the monitor now works correctly) [Ken White]
--psx.xml: Added CHD images of redump.org USA disc set. [Aeternal]
--psx.xml: Added some more prototypes and misc disks. [Fabio Priuli]
--sorcerer_cass.xml: Added many games [Robbbert].
+bbcb_cass.xml:
+   Added various recently dumped games [Nigel Barnes]
+bbcmc_flop.xml:
+   Added various educational titles [Nigel Barnes]
+megadriv.xml:
+   Chaoji Majiang Club / Super Mahjong Club (Tw) [system11, Fabio Priuli]
+pce_tourvision.xml:
+   Out Run [system11, kebrank]
+pet_cass.xml: 
+   Added Supermon (Toronto PET User Group) [Ken White]
+   Replaced bad dump of Side B of Squiggle, Big Time / Monitor (the m command in the monitor now works correctly) [Ken White]
+psx.xml:
+   Added CHD images of redump.org USA disc set. [Aeternal]
+   Added some more prototypes and misc disks. [Fabio Priuli]
+sorcerer_cass.xml:
+   Added many games [Robbbert]
 
 New NOT_WORKING Software List Additions
 ---------------------------------------
--cdi.xml: added a few recently dumped prototypes [Fabio Priuli]
--fmtowns_cd.xml: completed addition of known dumps [r09, Breiztiger]
--leapster.xml: 8 new dumps added [Team Europe]
--pc98_cd.xml: added software list with misc CHDs from several sources [r09]
--vsmile.xml: 6 new dumps added [Team Europe]
--vsmile_cart.xml: added a few new US dumps [Rimsky82]
+cdi.xml:
+   Added a few recently dumped prototypes [Fabio Priuli]
+fmtowns_cd.xml:
+   Completed addition of known dumps [r09, Breiztiger]
+leapster.xml:
+   8 new dumps added [Team Europe]
+pc98_cd.xml:
+   Added software list with misc CHDs from several sources [r09]
+vsmile.xml:
+   6 new dumps added [Team Europe]
+vsmile_cart.xml:
+   Added a few new US dumps [Rimsky82]
 
 
 MAME Testers Bugs Fixed (14):
@@ -291,7 +303,7 @@ Source changes:
 - mac: Fix interactions between mirror and range [Olivier Galibert].
 - Rewrite SPARC emulation based on detailed descriptions from SPARC manual [Ryan Holtz].
 - galpani3.cpp: Added correct supplemental graphics roms to the "Gals Panic 3 (Hong Kong)" set [Brian Troha, The Dumping Union].
-- dec_lk201: keyclick [Bavarese] .
+- dec_lk201: keyclick [Bavarese].
 - Added "return to origin point (0,0)" feature to Tilemap Viewer (tied with HOME key) [Angelo Salese].
 - Improved workaround for missing cbegin/cend in glibstdc++ [Alex Miller].
 - sg1000.cpp: Many improvements [Enik Land]:
@@ -302,15 +314,15 @@ Source changes:
   * For the sc3000 driver, re-add sk1100 as a fixed SG-1000 expansion device;
   * Add sg1000 software list to sg1000m3 and Japanese/Korean SMS drivers.
 - sms.cpp: Implemented some new findings [Enik Land]:
- * Remove some mirrors for ports $DC/$DD on SMSJ based on Charles' hw tests;
- * Add basic C-Sync callback to 315_5124.cpp, based on Charles' hw tests;
- * Add built-in Rapid Fire (uses C-Sync) for SMSJ and Korean SMS1 drivers;
- * Add new SMS drivers due to XTAL differences: sms1br - Tec Toy Master System I (Brazil) sms2br - Tec Toy Master System II (Brazil) smsbr - Tec Toy Master System III Compact (Brazil) sms1paln - Tec Toy Master System I (PAL-N) sms2paln - Tec Toy Master System II (PAL-N) smspaln - Tec Toy Master System III Compact (PAL-N) Brazil is PAL-M TV system, but I decided to call it by the country name, seems to be better recognizable and for emulation looks more like a NTSC system. PAL-N is used in Argentina, Paraguay and Uruguay and looks closer to the European PAL system when compared to PAL-M.
+  * Remove some mirrors for ports $DC/$DD on SMSJ based on Charles' hw tests;
+  * Add basic C-Sync callback to 315_5124.cpp, based on Charles' hw tests;
+  * Add built-in Rapid Fire (uses C-Sync) for SMSJ and Korean SMS1 drivers;
+  * Add new SMS drivers due to XTAL differences: sms1br - Tec Toy Master System I (Brazil) sms2br - Tec Toy Master System II (Brazil) smsbr - Tec Toy Master System III Compact (Brazil) sms1paln - Tec Toy Master System I (PAL-N) sms2paln - Tec Toy Master System II (PAL-N) smspaln - Tec Toy Master System III Compact (PAL-N) Brazil is PAL-M TV system, but I decided to call it by the country name, seems to be better recognizable and for emulation looks more like a NTSC system. PAL-N is used in Argentina, Paraguay and Uruguay and looks closer to the European PAL system when compared to PAL-M.
 - Load save state preparations [Nathan Woods]:
   * A number of changes and refactorings in preparation for a new load/save state menu. Most notably, I am C++-ifying osd_directory (now osd::directory) and changing osd_stat() to return std::unique_ptrosd::directory::entry;
   * Take note that this change completely omits POSIX support, simply because I lack a development environment to support it. This will have to be done by someone else.
 - POSIX implementation for new directory read features, cleanup of Windows implementation, return directory handle as smart pointer, fix full build [Vas Crabb].
-- cop: nicer sorting routine [Olivier Galibert].
+- cop: Nicer sorting routine [Olivier Galibert].
 - Supply modified time for files in archives [Vas Crabb].
 - Fix LDUH, LDSH, LDUHA, and LDSHA opcodes in the SPARC core [Ryan Holtz].
 - ImGui debugger improvements [Barry Rodewald]:
@@ -321,8 +333,7 @@ Source changes:
   * Send character inputs to views, allowing memory editing to be possible in a memory window;
   * Show a rectangle around the view with focus;
   * Add history functionality (press up/down in the debugger console input widget);
-  * Allow log windows and debugger console scrollbars to stay at their
-   maximum value, if moved there.
+  * Allow log windows and debugger console scrollbars to stay at their maximum value, if moved there.
 - Flaming 7 (original): Fixed the Paytable DIP switches [Roberto Fresca].
 - Add older version SPARCstation IPX (Sun 4/50) ROM as an alt bios, and add ROM locations [Lord Nightmare].
 - trs80: Fixed loss of keyboard control on some games [Robbbert].

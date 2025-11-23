@@ -1,4 +1,4 @@
-0.138u3 2010/07/07 [#520 - Aaron Giles]
+﻿0.138u3 2010/07/07 [#520 - Aaron Giles]
 ---------------------------------------
 
 
@@ -53,16 +53,16 @@ Source changes:
 - Hooked up inputs and Dip-SW for Ron Jan and Pinkiri 8 [Angelo Salese].
 - Simplified vram access in Pinkiri 8 HW [David Haywood].
 - Added a skeleton driver for Philips CD-i-based arcade series, Quizard [Harmony].
-- Moved softlist implementation from MESS [Miodrag Milanovic]:
+- Moved softlist implementation from MESS [Miodrag Milanović]:
   * Moved image related UI from MESS to emu core;
   * Reimplemented filename related image device calls.
-- Moved listsofware command line option from MESS, and added softlist in XML output [Miodrag Milanovic].
+- Moved listsofware command line option from MESS, and added softlist in XML output [Miodrag Milanović].
 - TMS52xx now uses proper IP/PC/Subcycle counting for audio generation [Lord Nightmare].
 - video/cclimber.c: cclimber/ckong sprite X was off by 1 [hap].
 - Rewrote video emulation to use the device system in Little Robin [David Haywood].
 - Decrypted Double Dragon Italian bootleg char roms [Angelo Salese].
 - Super Game III: added handling for two consecutive writes for MMC1 making Snow Bros playable [Mariusz Wojcieszek, Fabio Pruli].
-- Moved ioproc implementation from MESS [Miodrag Milanovic].
+- Moved ioproc implementation from MESS [Miodrag Milanović].
 - Fixed bad cassette wave sound [Robbbert].
 - Super Game III: fixed Tom & Jerry [Mariusz Wojcieszek].
 - Added proper i8751H MCU dump to Legend of Hero Tonma (Japan) [Dr. Decapitator].
@@ -108,7 +108,7 @@ Source changes:
 - firetrap.c: Added PCB documentation, corrected ROM names, corrected clocks [Guru].
 - idsoccer: Improved DIP locations, confirmed MSM5205 clock [Kevin Eshbach].
 - Fixed title screen colors in Bogey Manor [Angelo Salese, Stefan Lindberg].
-- Modified way device_type constants are defined in order to get unidasm compile [Miodrag Milanovic].
+- Modified way device_type constants are defined in order to get unidasm compile [Miodrag Milanović].
 - Changed autmoon (aristmk4) romload to proper crc/sha hashes. The submitted romset contained a 32kb (u87.bin) which actually appeared to be an 8k overdumped [Tafoid].
 - slapfght.c: Corrected ROM names for the Slap Fight sets and added PCB locations to any set where possible. Added Dipswitch locations to Slap Fight.  Moved PCB information down to matching ROM sets [Brian Troha, Guru].
 - Split mame.c into mame.c and machine.c, the latter containing the running_machine definition and implementation [Aaron Giles].
@@ -144,7 +144,7 @@ Source changes:
   * Wrapped symbol lookup code in a class;
   * Added support for parsing objdump-produced symbol dumps which include non-global functions for much better stack dumps and profiling in gcc builds.
 - Modified makefile for win32 targets to automatically run objdump and produce a .sym file if SYMBOLS is enabled [Aaron Giles].
-- Update cheat loading to support image devices (moved implementation from MESS), use only CRC of first found image [Miodrag Milanovic].
+- Update cheat loading to support image devices (moved implementation from MESS), use only CRC of first found image [Miodrag Milanović].
 - Removed cpu_get_sp() [Aaron Giles].
 - Added overrides to fetch the execute, memory and state interfaces without doing a dynamic_cast<> to speed up common legacy operations [Aaron Giles].
 - Created CPU-specific device types for all CPUs, using new macros DECLARE_LEGACY_CPU_DEVICE and DEFINE_LEGACY_CPU_DEVICE. Changed CPUs to be their own device types, rather than all of type CPU with a special internal subtype. Note that as part of this process I removed the CPU_ prefix from the ALL-CAPS device name, so CPU_Z80 is just plain old Z80 now. This required changing a couple of names like 8080 to I8080 so that there was an alphabetic first character [Aaron Giles].
@@ -155,12 +155,12 @@ Source changes:
 - Software list update [Wilbert Pol]:
   * Software list xml files are now read in full such that information for clone and parent sets is available;
   * Added validity check to check for existence of parent sets.
-- Imported image related utils from MESS into /lib/util [Miodrag Milanovic].
+- Imported image related utils from MESS into /lib/util [Miodrag Milanović].
 - Improved video emulation in cb2001 [David Haywood].
 - Added support for Sega 317-5000 decryption (same as 315-5177). Reorganised decryption code [Nicola Salmoria].
 - Moved debugging structure away from CPUs only and attached to all devices. Debugger now creates one for each device. C++-ified most debugger operations to hang off the debugging class, and updated most callers [Aaron Giles].
 - Got rid of cpu_count, cpu_first, cpu_next, etc. as they were badly broken. Also removed cpu_is_executing, cpu_is_suspended, cpu_get_local_time, and cpu_abort_timeslice [Aaron Giles].
-- Software list improvements [Miodrag Milanovic]:
+- Software list improvements [Miodrag Milanović]:
   * Support for multiple software list per driver;
   * Added MDRV_SOFTWARE_LIST_COMPATIBLE_ADD for adding compatible software lists (for documentation purposes);
   * listsoftware option now return only original software lists;

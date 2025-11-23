@@ -1,4 +1,4 @@
-0.124u4 2008/04/24 [#433 - Aaron Giles]
+﻿0.124u4 2008/04/24 [#433 - Aaron Giles]
 ---------------------------------------
 
 
@@ -85,7 +85,7 @@ Source changes:
 - Added preliminary 68681 DUART (machine\68681.c) [Mariusz Wojcieszek].
 - Moved Microtouch touch screen controller emulation to separate module (machine\microtch.c) [Mariusz Wojcieszek].
 - Specifying an invalid bios is now a fatalerror. Also, "default" is no longer a special BIOS type; if you want the default BIOS, leave the BIOS option blank [Atari Ace].
-- DEC T-11 CPU improvements [Miodrag Milanovic]:
+- DEC T-11 CPU improvements [Miodrag Milanović]:
   * HALT - now calls interrupt vector;
   * ILLEGAL - had PC=0 at the end which makes code not run fine;
   * MARK - now it is implemented.

@@ -1,4 +1,4 @@
-0.126u2 2008/07/24 [#447 - Aaron Giles]
+﻿0.126u2 2008/07/24 [#447 - Aaron Giles]
 ---------------------------------------
 
 
@@ -62,7 +62,7 @@ Source changes:
 - Changed the 6532 RIOT device into a proper device. Rewrote the logic to be simpler and leverage the new attotime functions. Changed the I/O port setters to specify a mask, and changed the I/O port callbacks to pass in the previous value. Updated tourtabl and gameplan drivers to use the new device interface [Aaron Giles].
 - Converted audio/starwars.c, audio/exidy.c, and audio/gottlieb.c to use the new RIOT implementation instead of rolling their own [Aaron Giles].
 - Began gottlieb.c cleanup. Converted palette calculations to resistor weights. Corrected video timing. Reduced the number of separate machine drivers. Fixed incorrect spriteram sizes. Populated full memory maps for the main CPU and the rev 1 sound board. More to come [Aaron Giles].
-- Fixed 8257 DMA terminal count stop for autoload mode and added callback function existance check [Miodrag Milanovic].
+- Fixed 8257 DMA terminal count stop for autoload mode and added callback function existance check [Miodrag Milanović].
 - Completed removal of all explicit calls to input_port_read_indexed() [Fabio Priuli].
 - Converted tinklpit keycus implementation from a table to a LFS [Olivier Galibert].
 - Removed unnecessary ROM shuffling code in namconb2 [Olivier Galibert].

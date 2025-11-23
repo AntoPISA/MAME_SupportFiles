@@ -1,4 +1,4 @@
-0.136u1 2010/01/16 [#508 - Aaron Giles]
+﻿0.136u1 2010/01/16 [#508 - Aaron Giles]
 ---------------------------------------
 IMPORTANT NOTEs: As of this release of MAME, several important things about the system have changed. Please read the following items before attempting to compile this new version.
 1. A new tool chain for Windows, based off of gcc 4.4.3 prerelease, is now REQUIRED. Go to http://mamedev.org/tools to get the new tools. The updated included with 0.136u1 WILL NOT BUILD with the old tools. The new tool chain has support for building 64-bit MAME builds with gcc, as well as built-in DirectX headers, and C++ support, which was missing from the old tools.
@@ -97,7 +97,7 @@ Source changes:
 - Fixed typo in 8-bit eeprom case that broke operation in some games [Aaron Giles].
 - Fixed x86 DRC backend codegen bug that broke kinst [Aaron Giles].
 - Got rid of setjmp/longjmp for error handling in favor of exceptions. Fatalerror now maps to throwing an exception [Aaron Giles].
-- pit8253: Update PIT counter even if there was no elapsed cycles (this only affects fast drivers like at586 in MESS) [Miodrag Milanovic].
+- pit8253: Update PIT counter even if there was no elapsed cycles (this only affects fast drivers like at586 in MESS) [Miodrag Milanović].
 - Fixed a bunch of minor quirks, and fixed gfxs in the dwarfd driver [Angelo Salese].
 - Changed (berlwall), (arkanoid), (bakubrkr), (mgcrystl) to use YM2149 [Corrado Tomaselli].
 - Verified and corrected clocks in (halleys) and (exctsccr) [Corrado Tomaselli].

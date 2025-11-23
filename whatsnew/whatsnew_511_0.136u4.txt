@@ -1,4 +1,4 @@
-0.136u4 2010/03/04 [#511 - Aaron Giles]
+﻿0.136u4 2010/03/04 [#511 - Aaron Giles]
 ---------------------------------------
 
 
@@ -62,7 +62,7 @@ Source changes:
 ---------------
 - Removed window config from video_config [Couriersud].
 - Mapped player 2 inputs and buttons 4-6 in Mortal Kombat 3 (bootleg of Megadrive version) [Mariusz Wojcieszek].
-- megadriv: Fixed compile by removing "static" [Miodrag Milanovic].
+- megadriv: Fixed compile by removing "static" [Miodrag Milanović].
 - Moved global new/delete operators into inlines in emualloc.h to avoid link errors with certain architectures [Couriersud].
 - Some minor cleanup/normalizing of emualloc in general [Aaron Giles].
 - namcops2 updates [Guru]:
@@ -73,11 +73,11 @@ Source changes:
 - Implemented Z80-DMA interrupts [Curt Coder].
 - Fixed a bug in emu/sound/disc_mth.c. This affected spiders.c fire sound [MASH].
 - Minor fix to sn76489: sn76489 wasn't using the correct noise taps (now matches sn94624, still need to test a real chip) Removed a piece of useless code, and fixed a comment [Lord Nightmare].
-- ui.c,ui.h,windows/input.c: [Miodrag Milanovic]
+- ui.c,ui.h,windows/input.c: [Miodrag Milanović]
   * Removed ui_use_new_ui check used by MESS code;
   * Moved ui_mess_handler_ingame call in proper place, so device UI callbacks works again;
   * Removed toggle of menu bar (MESS related).
-- info.c: Moved print_game_categories into info.c, since it can be used by any driver anyway [Miodrag Milanovic].
+- info.c: Moved print_game_categories into info.c, since it can be used by any driver anyway [Miodrag Milanović].
 - Fresh driver notes added for unclepoo based analysis of the Z80 code [Stephh].
 - k051649.c: Fixed bogus for loop in device reset [Fabio Priuli].
 - z80ctc: Fixed Z80CTC read handler [Tim Schuerewegen].
@@ -151,7 +151,7 @@ Source changes:
 - Added driver_data class and save states to the following drivers: backfire.c, boogwing.c, cbuster.c, cninja.c, dassault.c, dblewing.c, deco156.c, rohga.c, simpl156.c [Fabio Priuli].
 - twincobr, twincobru, ktiger, gulfwar2 (twincobr.c driver): Fixed Dip Switches and Inputs (after verification of the M68000 and Z80 code) [stephh].
 - fshark, skyshark, hishouza, fsharkbt (twincobr.c driver): Fixed DIP switches and Inputs (after verification of the M68000 code) [stephh].
-- Corrected default assignment of F10 as the default throttle on/off key for MAME. The #ifdef MESS is needed here due to it's unique old/new UI setup [Miodrag Milanovic].
+- Corrected default assignment of F10 as the default throttle on/off key for MAME. The #ifdef MESS is needed here due to it's unique old/new UI setup [Miodrag Milanović].
 - Naomi updates [R. Belmont, David Haywood, Andreas Naive, Deunan Knute, Guru, ANY]:
   * Fix ROM mirroring in gram2000 and friends;
   * Preliminary hookup of live decryption. Decryption + decompression is not yet supported so some games still load trojaned data instead.

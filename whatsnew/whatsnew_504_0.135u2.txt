@@ -1,4 +1,4 @@
-0.135u2 2009/11/30 [#504 - Aaron Giles]
+﻿0.135u2 2009/11/30 [#504 - Aaron Giles]
 ---------------------------------------
 
 
@@ -132,8 +132,8 @@ Source changes:
   * Master and slave CPU comms hooked up.
 - Designated Puzzle Bang Bang (vamphalf.c) as Korean version. For this set the title and language cannot be change [Brian Troha].
 - Added new module tagmap which is a simple hashed string map. Updated device and input port lists to use the tagmap for tag searches. Also removed the whole "quark" thing from the validity checker in favor of using the tagmaps [Aaron Giles].
-- Added Intel 8008 and National Semiconductor SC/MP CPU cores [Miodrag Milanovic].
-- INS 8060 SC/MP II support (using clock divider 2), main model renamed to INS 8050 SC/MP [Miodrag Milanovic].
+- Added Intel 8008 and National Semiconductor SC/MP CPU cores [Miodrag Milanović].
+- INS 8060 SC/MP II support (using clock divider 2), main model renamed to INS 8050 SC/MP [Miodrag Milanović].
 - Updated the astrocorp.c and groundfx.c drivers to use EEPROM device [Fabio Priuli].
 - Added support for SCSI command 0x2a (Write w/ 32-bit LBA), upped input buffer size in WD33C93 controller [Harmony].
 - Hooked up eepromdev.c using PORT_READ_LINE_DEVICE/PORT_WRITE_LINE_DEVICE in groundfx.c. Output ports are now affected by IP_ACTIVE_HIGH/IP_ACTIVE_LOW (eepromdev.c has active low cs). The previous value for callbacks in inptport.c is now tracked per field. This saves recalculating it for PORT_CHANGED & conditional fields wouldn't always get updated correctly. Tidied up eepromdev.c interface [smf].
@@ -146,7 +146,7 @@ Source changes:
 - Switched from linear interpolation to antialiased point sampling when upconverting low-frequency sound streams. This should de-muffle low-frequency streams, treating them has having hard edges at sample boundaries [Aaron Giles].
 - Converted the following drivers to use EEPROM device: deco156.c, eolith.c, eolith16.c, limenko.c, taito_f3.c, taito_z.c, taito_b.c, taitojc.c, toaplan2.c and kaneko16.c [Fabio Priuli].
 - Implemented use of per tile colour lookup ROM in Portraits, colour decode is still wrong [David Haywood].
-- CF clear after binary operations on Intel 8008 CPU core [Miodrag Milanovic].
+- CF clear after binary operations on Intel 8008 CPU core [Miodrag Milanović].
 - Improvements to Noraut Poker driver [Roberto Fresca]:
   * A lot of work in memory maps and machine driver stuff;
   * Improved Inputs/DIP switches for some games;

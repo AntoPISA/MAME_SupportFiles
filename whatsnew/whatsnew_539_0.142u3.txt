@@ -1,4 +1,4 @@
-0.142u3 2011/05/08 [#539 - Aaron Giles]
+﻿0.142u3 2011/05/08 [#539 - Aaron Giles]
 ---------------------------------------
 
 
@@ -39,7 +39,7 @@ Source changes:
 - Converted Taito_L driver to use AM_SHARE macro [Angelo Salese].
 - Removed sound hacks in Evil Stone, fixing sound drop if you die at level 1 boss [Angelo Salese].
 - intelfsh.c: Added support for Fujitsu 29DL16X [Sandro Ronco].
-- Fixed i86/i386 POP SP and POP ESP thanks to bug report for Xenix boot by bs666 [Miodrag Milanovic].
+- Fixed i86/i386 POP SP and POP ESP thanks to bug report for Xenix boot by bs666 [Miodrag Milanović].
 - Collapsed device_config and device_t into one class. Updated all existing modern devices and the legacy wrappers to work in this environment. This in general greatly simplifies writing a modern device [Aaron Giles].
 - psx.c: adjusted MDEC timing to avoid lockups. Most FMVs now have fluent video [R. Belmont].
 - Fixed Z80STI interrupts [Curt Coder].
@@ -68,17 +68,17 @@ Source changes:
 - De-stateized the NB1414M4 routines, and converted the correlated Armed F text tilemap to be 8-bits [Angelo Salese].
 - Hooked up NB1414M4 to Ninja Emaki, greatly improving gfxs in it [Angelo Salese].
 - Implemented serial type scrolling for Youma Ninpou Chou bootlegs [Angelo Salese].
-- Support for dynamic devices added to the core [Miodrag Milanovic]:
+- Support for dynamic devices added to the core [Miodrag Milanović]:
   * Added slot and slot card interfaces;
   * Added SLOT_INTERFACE macros in order to simplify device adding;
   * Added new menu option "Slot Devices" and support to change device in runtime;
   * Updated emuopts to support command setting of slot cards.
-- Update clifront and added listslots option to display available slots and device options for each one [Miodrag Milanovic].
+- Update clifront and added listslots option to display available slots and device options for each one [Miodrag Milanović].
 - mpu4.c: Started adding support for the Crystal Gaming program card, and the link keys for setting parameters [J Wallace].
 - 6840ptm.c: Fixed mode check in set_gate() [J Wallace].
 - srcclean.c: srcclean should remove invalid chars only for source files which are not xml (softlists have UTF-8 characters) [Fabio Priuli].
 - Hooked up proper sound program in Combat School bootleg [Angelo Salese].
-- Moved format handling and all formats to separate library [Miodrag Milanovic].
+- Moved format handling and all formats to separate library [Miodrag Milanović].
 - Converted PlayStation DMA to an internal device to the CPU core. DMA to external devices can be set in the machine config, the old calls are still there until the rest of the code is converted [smf].
 - Added support for default NVRAM in MCCS1850 [Curt Coder].
 - Various Irem M92/M107 fixes [Alex Jackson]:

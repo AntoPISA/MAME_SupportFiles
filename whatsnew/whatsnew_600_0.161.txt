@@ -76,142 +76,66 @@ MAME Testers Bugs Fixed (8):
 - 05680: [Graphics] (sigmab98.c) itazuram: During Test mode, graphics corruptions (Luca Elia)
 - 05895: [Documentation] hlsl_write is incorrectly documented as a boolean (Tafoid)
 - 05903: [DIP/Input] (sf.c) sf sfj sfua: Street Fighter DIP Switch wrong value (Osso)
-- 05909: [Core] empty input tag on validity test error
+- 05909: [Core] Empty input tag on validity test error (hap)
 - 05916: [DIP/Input] (dkong.c) dkongjr: Incorrect DIP labels (Tafoid)
 - 05922: [DIP/Input] (exidy.c) pepper2, pepper27: Incorrect DIP labels (Tafoid)
 
 
 Source changes:
 ---------------
--mips3: Add integer divide-by-zero handling to MIPS III cores [MooglyGuy].
--segas32: Redumped oversized Stadium Cross ROMs at the correct sizes [Guru].
--aica.c: ADPCM looping (DC swirl sound) and address masking (Red Dog) fixes [MetalliC, Wind].
--segasp.c: basic system and IO hookup - BIOS is working, Tetris Giant boots to title, other ROM based games start loading but hang due missing RFID reader [MetalliC].
--atomiswave: more correct ROM board PIO access (fixes ggisuka, rumblef2 crash) [MetalliC, CaH4e3].
-
--arm7: STM decrementing mode actually writes in incrementing mode on
- real h/w. Used heavily by GBA "Classic NES" carts.
- [R. Belmont, endrift]
-
--Some work towards "Unknown 186 Gambling Game". Shows some menus, but
- it's nowhere near playable [Angelo Salese]
-
--Moved build system to GENie [Miodrag Milanović, Vas Crabb, Couriersud]
-
--Added support for per-OSD mak files [qmc2]
-
--mips3: Made fast RAM option common to both interpreter and DRC. [MooglyGuy]
-
--Added proper sound comms for hng64 [Angelo Salese]
-
--Fix SegaPCM volume register overflow [superctr]
-
--netdev: fix race condition/crash when using the OSD to choose pcap
- devices. [Rob Braun]
-
--mtwins pal [Corrado Tomaselli]
-
--goldstar.c DIP/input updates [Bad A. Billy]
-
--More iteagle improvements: [Ted Green]
- * PCI: allow BAR of 0; change "invalid" from 0 to -1
- * vrc4373: implement bus-master DMA
- * es1373: Do some processing and DMA, and issue IRQs
-
--z80pio: Added individual write line handlers for port bits.
- [Curt Coder]
-
--Fix yuv texture conversion for opengl [Olivier Galibert]
-
--Native CoreAudio sound output for OSX [Vas Crabb]
- * Audibly lower latency than SDL sound output
- * Allows selection of output device (-audio_output)
- * Allows up to ten AudioUnit effects (-audio_effect0..9)
- * New aueffectuitl tool to create/edit effects
- * Also supports standard .aupreset effect files
-
--6522via: Added device address map [Curt Coder].
-
--mos6530: Rewritten to support time travel [Curt Coder].
-
--Allow font face/size selection for Qt and Cocoa debuggers [Vas Crabb]
-
--hexion.c: Document chip locations and xtal based on PCB pictures of
- Konami PCB and bootleg PCB. [Lord Nightmare].
-
--Tidy MAME source files [Zoe Blade]
-
--Replace simple_set with std::set [Vas Crabb]
-
--Add the ability to mcs51 family processors to use port bits as inputs
- which actually are used as outputs because a "0" has been written to
- them. The CMOS chips in the family may be misused in this way when a
- low impedance source is connected to them [Couriersud].
-
--Fixed cardline driver [Couriersud].
-
--Hooked up 6845 to cardline [Couriersud].
-
--sigmab98.c: fixed position of zoomed sprites and added sprite RAM
- buffer. Emulated background color register. Removed some ROM patches
- [Luca Elia]
-
--exidy.c: brute force fix for m6502-related regressions [Alex Jackson]
-
--extracted protection data for Ma Cheon Ru [system11]
-
--Replace dynamic_array with std::vector [Olivier Galibert]
-
--Completely hooked up 6845 in cardline driver. Documented asic
- addresses [Couriersud].
-
--astring to std::string conversion [Miodrag Milanović]
-
--jwildb52a: dumped GFX roms [anonyMous]
-
--Improve truthtable handling in netlist. Prepare per-game setting of
- USE_DEACTIVE_DEVICE [Couriersud].
-
--Add 9312/DM9312 to netlist [Couriersud].
-
--Fix repetitive monitor updates. By design, MAME has an issue setting
- aspect correctly on monitor resolution changes. This needs to be
- addressed separately [Couriersud].
-
--Added 74192, 9316, 9310 and 74193 devices to netlist. Added breakout
- (wip) netlist as well, but still have to implement three more devices
- until work can really start [Couriersud].
-
--luaengine improvements [Luca Bruno]
-
--Jump Bug (galaxian.c): Adjusted clock speed to have working audio
- match that of video from PCB.  Added notes regarding missing audio and
- flagged game  [Tafoid]
-
--Properly document address deconding for GFX roms in cardline.
- [Couriersud]
-
--berzerk.c: Verified and corrected the ROM labels for Berzerk (set 1)
- [Brian Troha]
-
--Some WIP for Cirrus Logic GD542x/3x video chipsets, and split from 
- pc_vga.c into it's own file.  Hardware cursor is working, but other 
- acceleration features still need a lot of work [Barry Rodewald].
-
--*nix man pages: Added new options to select debugger font face and
- size [Cesare Falco]
-
--SDLMAME v0.160 selects the first mode unconditionally as a best mode
- when -switchres is used on SDL12 [KO Myung-Hun]
-
--Fix build on OpenBSD [ibara]
- 
--Added / enabled save state support for the following drivers: aztarac.c,
- bagman.c, bigstrkb.c, cheekyms.c, clshroad.c, headonb.c, invqix.c,
- jackie.c, lwings.c, m107.c, m72.c, mainsnk.c, mirax.c, murogem.c,
- murogmbl.c, niyanpai.c, pitnrun.c, portrait.c, powerins.c, ppmast93.c,
- quizdna.c, rmhaihai.c, rotaryf.c, roul.c, route16.c, sauro.c, sbugger.c,
- shangha3.c, shanghai.c, shangkid.c, shaolins.c, spcforce.c, splash.c,
- spoker.c, spool99.c, ssfindo.c, stactics.c, thepit.c, toobin.c, truco.c,
- tunhunt.c, unkhorse.c, vamphalf.c, victory.c, vigilant.c, vroulet.c,
- warpsped.c, wiz.c [Osso]
+- mips3: Add integer divide-by-zero handling to MIPS III cores [MooglyGuy].
+- segas32: Redumped oversized Stadium Cross ROMs at the correct sizes [Guru].
+- aica.c: ADPCM looping (DC swirl sound) and address masking (Red Dog) fixes [MetalliC, Wind].
+- segasp.c: Basic system and IO hookup - BIOS is working, Tetris Giant boots to title, other ROM based games start loading but hang due missing RFID reader [MetalliC].
+- atomiswave: more correct ROM board PIO access (fixes ggisuka, rumblef2 crash) [MetalliC, CaH4e3].
+- arm7: STM decrementing mode actually writes in incrementing mode on real h/w. Used heavily by GBA "Classic NES" carts [R. Belmont, endrift].
+- Some work towards "Unknown 186 Gambling Game". Shows some menus, but it's nowhere near playable [Angelo Salese].
+- Moved build system to GENie [Miodrag Milanović, Vas Crabb, Couriersud].
+- Added support for per-OSD mak files [qmc2].
+- mips3: Made fast RAM option common to both interpreter and DRC [MooglyGuy].
+- Added proper sound comms for hng64 [Angelo Salese].
+- Fix SegaPCM volume register overflow [superctr].
+- netdev: Fix race condition/crash when using the OSD to choose pcap devices [Rob Braun].
+- mtwins pal [Corrado Tomaselli].
+- goldstar.c DIP/input updates [Bad A. Billy].
+- More iteagle improvements [Ted Green]:
+  * PCI: allow BAR of 0; change "invalid" from 0 to -1;
+  * vrc4373: implement bus-master DMA;
+  * es1373: Do some processing and DMA, and issue IRQs.
+- z80pio: Added individual write line handlers for port bits [Curt Coder].
+- Fix yuv texture conversion for opengl [Olivier Galibert].
+- Native CoreAudio sound output for OSX [Vas Crabb]:
+  * Audibly lower latency than SDL sound output;
+  * Allows selection of output device (-audio_output);
+  * Allows up to ten AudioUnit effects (-audio_effect0..9);
+  * New aueffectuitl tool to create/edit effects;
+  * Also supports standard .aupreset effect files.
+- 6522via: Added device address map [Curt Coder].
+- mos6530: Rewritten to support time travel [Curt Coder].
+- Allow font face/size selection for Qt and Cocoa debuggers [Vas Crabb].
+- hexion.c: Document chip locations and xtal based on PCB pictures of Konami PCB and bootleg PCB [Lord Nightmare].
+- Tidy MAME source files [Zoe Blade].
+- Replace simple_set with std::set [Vas Crabb].
+- Add the ability to mcs51 family processors to use port bits as inputs which actually are used as outputs because a "0" has been written to them. The CMOS chips in the family may be misused in this way when a low impedance source is connected to them [Couriersud].
+- Fixed cardline driver [Couriersud].
+- Hooked up 6845 to cardline [Couriersud].
+- sigmab98.c: Fixed position of zoomed sprites and added sprite RAM buffer. Emulated background color register. Removed some ROM patches [Luca Elia].
+- exidy.c: Brute force fix for m6502-related regressions [Alex Jackson].
+- Extracted protection data for Ma Cheon Ru [system11].
+- Replace dynamic_array with std::vector [Olivier Galibert].
+- Completely hooked up 6845 in cardline driver. Documented asic addresses [Couriersud].
+- astring to std::string conversion [Miodrag Milanović].
+- jwildb52a: Dumped GFX roms [anonyMous].
+- Improve truthtable handling in netlist. Prepare per-game setting of USE_DEACTIVE_DEVICE [Couriersud].
+- Add 9312/DM9312 to netlist [Couriersud].
+- Fix repetitive monitor updates. By design, MAME has an issue setting aspect correctly on monitor resolution changes. This needs to be addressed separately [Couriersud].
+- Added 74192, 9316, 9310 and 74193 devices to netlist. Added breakout (wip) netlist as well, but still have to implement three more devices until work can really start [Couriersud].
+- luaengine improvements [Luca Bruno].
+- Jump Bug (galaxian.c): Adjusted clock speed to have working audio match that of video from PCB. Added notes regarding missing audio and flagged game [Tafoid].
+- Properly document address deconding for GFX roms in cardline [Couriersud].
+- berzerk.c: Verified and corrected the ROM labels for Berzerk (set 1) [Brian Troha],
+- Some WIP for Cirrus Logic GD542x/3x video chipsets, and split from pc_vga.c into it's own file. Hardware cursor is working, but other acceleration features still need a lot of work [Barry Rodewald].
+- *nix man pages: Added new options to select debugger font face and size [Cesare Falco].
+- SDLMAME v0.160 selects the first mode unconditionally as a best mode when -switchres is used on SDL12 [KO Myung-Hun].
+- Fix build on OpenBSD [ibara].
+- Added/enabled save state support for the following drivers: aztarac.c, bagman.c, bigstrkb.c, cheekyms.c, clshroad.c, headonb.c, invqix.c, jackie.c, lwings.c, m107.c, m72.c, mainsnk.c, mirax.c, murogem.c, murogmbl.c, niyanpai.c, pitnrun.c, portrait.c, powerins.c, ppmast93.c, quizdna.c, rmhaihai.c, rotaryf.c, roul.c, route16.c, sauro.c, sbugger.c, shangha3.c, shanghai.c, shangkid.c, shaolins.c, spcforce.c, splash.c, spoker.c, spool99.c, ssfindo.c, stactics.c, thepit.c, toobin.c, truco.c, tunhunt.c, unkhorse.c, vamphalf.c, victory.c, vigilant.c, vroulet.c, warpsped.c and wiz.c [Osso].

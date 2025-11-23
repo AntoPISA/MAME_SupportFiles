@@ -1,4 +1,4 @@
-0.127u3 2008/09/11 [#454 - Aaron Giles]
+﻿0.127u3 2008/09/11 [#454 - Aaron Giles]
 ---------------------------------------
 
 
@@ -98,7 +98,7 @@ Source changes:
   * Added full sound support;
   * Added lamps support + layout.
 - Fixed memory handling of internal banks. They should be LOWER priority than the driver's memory maps. Reverted recent changes to MCS-48 core that were very hacky and which crashed many games. You can now properly override the internal memory map and do your own banking [Aaron Giles].
-- 8080/8085 CPU core updates [Miodrag Milanovic]:
+- 8080/8085 CPU core updates [Miodrag Milanović]:
   * ANA/ANI instruction, HF flag was not set right because error in calculation of it (missing brackets);
   * 8080 have NF flag always set (it is not used flag but bit is always set);
   * Added support for status output lines.

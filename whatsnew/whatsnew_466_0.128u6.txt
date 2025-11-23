@@ -1,4 +1,4 @@
-0.128u6 2008/12/14 [#466 - Aaron Giles]
+﻿0.128u6 2008/12/14 [#466 - Aaron Giles]
 ---------------------------------------
 
 
@@ -145,7 +145,7 @@ Source changes:
 - Changed attotime_to_ticks/ticks_to_attotime to use UINTs and the eminline functions where possible. [Aaron Giles].
 - Changed the 6522 VIA implementation to be a device [Nathan Woods].
 - Removed the ACIA6850 device from 'Cal Omega' System 905 machine driver. It fixes the wrong lack of SW2 [Roberto Fresca].
-- Fixed EI handling in the 8080/85 core to have a shadow like the Z80 [Miodrag Milanovic].
+- Fixed EI handling in the 8080/85 core to have a shadow like the Z80 [Miodrag Milanović].
 - Modified the tms34010.h, pc16552.h, and tms34061.h interfaces to eliminate some more global Machine variables. Six more deprecat.h includes eliminated [Atari Ace].
 - Eliminated the #include "deprecat.h" from tilemap.c. The main change is to require callers of tilemap_create to provide a machine pointer. This pointer is then attached to the tilemap and used when needed inside tilemap.c [Atari Ace].
 - Eliminated the #include "deprecat.h" from drawgfx.h.  It does so in a fashion similar to my recent tilemap patch, adding the machine pointer to gfx_element, changing allocgfx to take a machine, and then adjusting the internals to use the machine field as needed [Atari Ace].

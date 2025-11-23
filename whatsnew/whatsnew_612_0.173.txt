@@ -1,28 +1,8 @@
-0.173 2016/04/27 [#612 - Miodrag Milanovic]
+﻿0.173 2016/04/27 [#612 - Miodrag Milanović]
 -------------------------------------------
 
 
-MAME Testers Bugs Fixed
-----------------------
-- 01792: [DIP/Input] (subsino2.c) bishjan: Keyboard mode does not work (Luca Elia).
-- 04919: [Flip Screen/Cocktail] (dynduke.c) All sets in dynduke.c: Most of background missing on Flip Screen (Osso).
-- 04965: [Interface] Games with no screen produce no "final.png" with -STR (Osso).
-- 05897: [Misc.] (hornet.c) gradius4: "MASK ROM CHECK" in service mode fails (Ville Linde).
-- 06019: [Interface] Wrong default bios outputted with -listxml command (dankan1890).
-- 06074: [DIP/Input] (glasgow.c) glasgow: Mouse no longer able to move chess pieces (Robbbert).
-- 06163: [Misc.] (apple2e.c) apple2e: XPS Diagnostic IIe test failed! (R. Belmont).
-- 06170: [Compiling] OpenMP: OpenMP-enabled builds of MAME 0.172 fail to compile (Jind?ich Makovi?ka).
-- 06172: [DIP/Input] (sms.c) Default input mapping for two paddle devices causes a conflict (AJR).
-- 06173: [Core] All software saving SRAM: Software loaded outside of software list (e.g. -cart PATH_TO_ROM) fails to save SRAM (dankan1890).
-- 06174: [DIP/Input] (twincobr.c) fshark, skyshark, hishouza, tp84, tp84a, tp84b: Dipswitch info.
-- 06175: [Misc.] (apple2.c) apple2jp: Ctrl-T = Inverse kana ? (R. Belmont).
-- 06176: [Crash/Freeze] (ksys573.c) All sets in ksys573.c using CD: Unable to boot (crazyc).
-- 06178: [Crash/Freeze] liblrabl: Reset during second loop of attract mode (Angelo Salese).
-- 06181: [Documentation] (vicdual.c) tranqgun: The correct description is "Tranquillizer Gun" (MASH).
-- 06182: [Core] (cgenie.c) All sets in cgenie.cpp: Crashing upon starting! (Fabio Priuli).
-
-
-New machines added or promoted from NOT_WORKING status
+New Machines Added or Promoted from NOT_WORKING Status
 ------------------------------------------------------
 New 2001 (Italy, Ver. 2.00N) [f205v]
 Ultraman Monster Battle [hap, Kevin Horton, Rik]
@@ -32,14 +12,12 @@ Fidelity Sensory Chess Challenger 9 [hap, Berger]
 Dragon's Heaven (development board) [Brian Hargrove]
 Tiny Toon Adventures (prototype) (PlayChoice-10) [Tony Swann]
 Tiger Copy Cat (2 versions) [hap, Sean Riddle]
-Sushi Bar [colour thief, Ryan Holtz, Smitdogg, JordanRom, Mucci, F. Marsaud,
-  King Hanco, Sonic, B. Munger, R. Gatto, Bigster, Dullaron, Brizzo, Shoutime,
-  MetalliC, The Dumping Union]
+Sushi Bar [colour thief, Ryan Holtz, Smitdogg, JordanRom, Mucci, F. Marsaud, King Hanco, Sonic, B. Munger, R. Gatto, Bigster, Dullaron, Brizzo, Shoutime, MetalliC, The Dumping Union]
 Touch & Go (Korea, unprotected) [system11]
 Pokonyan (Japan 940322) [sylphia]
 Last Hope (bootleg AES to MVS conversion, no coin support)
 
-New clones added or promoted from NOT_WORKING status
+New Clones Added or Promoted from NOT_WORKING Status
 ----------------------------------------------------
 Operation Wolf (Japan, prototype) [caius]
 Majestic Twelve - The Space Invaders Part IV (US) [Artemio Urbina, The Dumping Union]
@@ -60,7 +38,7 @@ Espgaluda (2003/10/15 Master Ver, bootleg cartridge conversion)
 Champion Number (V0.67) [Roberto Fresca, f205v]
 Unitron 1024 [Felipe Sanches]
 
-New machines marked as NOT_WORKING
+New Machines Marked as NOT_WORKING
 ----------------------------------
 Konami Gradius (handheld) [hap, Sean Riddle]
 Luna Park (ver. 1.2) [Roberto Fresca, f205v]
@@ -81,22 +59,47 @@ Print Club Winnie-the-Pooh Vol. 3 (J 980406 V1.000) [Ryan Holtz, Bill D, The Dum
 Various Aristocrat MK5 and MK6 sets
 Polaroid Instant Memories [Alex Cmaylo]
 
-New clones marked as NOT_WORKING
+New Clones Marked as NOT_WORKING
 --------------------------------
 Wonder Boy (system 2, set 2, 315-5176) [Silvio Grazini]
 
-New WORKING software list additions
+New WORKING Software List Additions
 -----------------------------------
-coco_flop: Donkey Kong Remix [Sock Master]
-megadriv.xml: F1 - World Championship Edition (US, Prototype) [oliverthepig]
-neogeo.xml: Last Hope
-lynx.xml: Zaku
+coco_flop:
+   Donkey Kong Remix [Sock Master]
+megadriv.xml:
+   F1 - World Championship Edition (US, Prototype) [oliverthepig]
+neogeo.xml:
+   Last Hope
+lynx.xml:
+   Zaku
 
-New NOT_WORKING software list additions
+New NOT_WORKING Software List Additions
 ---------------------------------------
-pce_tourvision.xml: Dragon Saber - After Story of Dragon Spirit [system11]
-pce_tourvision.xml: Bull Fight - Ring no Haja [system11]
-pce_tourvision.xml: Parasol Stars
+pce_tourvision.xml:
+   Dragon Saber - After Story of Dragon Spirit [system11]
+   Bull Fight - Ring no Haja [system11]
+   Parasol Stars
+
+
+MAME Testers Bugs Fixed (16):
+-----------------------------
+- 01792: [DIP/Input] (subsino2.c) bishjan: Keyboard mode does not work (Luca Elia)
+- 04919: [Flip Screen/Cocktail] (dynduke.c) All sets in dynduke.c: Most of background missing on Flip Screen (Osso)
+- 04965: [Interface] Games with no screen produce no "final.png" with -STR (Osso)
+- 05897: [Misc.] (hornet.c) gradius4: "MASK ROM CHECK" in service mode fails (Ville Linde)
+- 06019: [Interface] Wrong default bios outputted with -listxml command (dankan1890)
+- 06074: [DIP/Input] (glasgow.c) glasgow: Mouse no longer able to move chess pieces (Robbbert)
+- 06163: [Misc.] (apple2e.c) apple2e: XPS Diagnostic IIe test failed! (R. Belmont)
+- 06170: [Compiling] OpenMP: OpenMP-enabled builds of MAME 0.172 fail to compile (Jindřich Makovička)
+- 06172: [DIP/Input] (sms.c) Default input mapping for two paddle devices causes a conflict (AJR)
+- 06173: [Core] All software saving SRAM: Software loaded outside of software list (e.g. -cart PATH_TO_ROM) fails to save SRAM (dankan1890)
+- 06174: [DIP/Input] (twincobr.c) fshark, skyshark, hishouza, tp84, tp84a, tp84b: Dipswitch info
+- 06175: [Misc.] (apple2.c) apple2jp: Ctrl-T = Inverse kana ? (R. Belmont)
+- 06176: [Crash/Freeze] (ksys573.c) All sets in ksys573.c using CD: Unable to boot (crazyc)
+- 06178: [Crash/Freeze] liblrabl: Reset during second loop of attract mode (Angelo Salese)
+- 06181: [Documentation] (vicdual.c) tranqgun: The correct description is "Tranquillizer Gun" (MASH)
+- 06182: [Core] (cgenie.c) All sets in cgenie.cpp: Crashing upon starting! (Fabio Priuli)
 
 
 Source changes:
@@ -107,8 +110,8 @@ Source changes:
 - Crystal Colours (Ver 1.02): Added default NVRAM. Also added more technical notes [Roberto Fresca].
 - Added dedicated inputs for both Crystals Colours sets. Also added more technical notes [Roberto Fresca].
 - Iterate over core classes C++11 style [AJR].
-- Borrow string processing code from ui.cpp so that � works in layouts (using UTF-8 encoding at least) [David Haywood].
-- Updated sc4fd7tha.lay with UTF8 encoding of � sign [Krick].
+- Borrow string processing code from ui.cpp so that £ works in layouts (using UTF-8 encoding at least) [David Haywood].
+- Updated sc4fd7tha.lay with UTF8 encoding of £ sign [Krick].
 - Recognize the full range of controller inputs [AJR].
 - Redump leapstertv [Team Europe].
 - Initial Catalan translation [jmallach].
@@ -134,10 +137,10 @@ Source changes:
 - info.cpp: Improved documentation of input devices in the -listxml output, since having just a generic 'number of buttons' is rather pointless in the context of home systems with configurable controllers (being them keyboards, keypads or joypads). Now the various controllers are listed separately with the number of buttons they have. Frontend authors who relied on the "buttons" attribute of the input node for any kind of filter shall now scan all available controllers and take the maximum among their "buttons" attribute (possibly discarding keyboards and keypads if they want) to recover the old value [Fabio Priuli].
 - info.cpp: Started to acknowledge PORT_16WAY inputs in -lx, since they were reported as 8-ways so far [Fabio Priuli].
 - devfind revision phase 1, cleaning out some legacy stuff [AJR]:
-  * Eliminate the cached device_t::m_region pointer and its region() getter method. Devices that need to bind to a region with the same tag should use optional/required_memory_region or optional/required_region_ptr with DEVICE_SELF as the subtag; this improves error checking. (DEVICE_SELF has been moved to device.h for greater visibility in the source.)
-  * Allow required/optional_region_ptr to specify a specific length which must match that of the region found.
-  * Implement finder_base::finder_tag() getter for diagnostic purposes.
-  * Perform some (not very efficient) validity checks on memory region finders instead of allowing them to automatically pass.
+  * Eliminate the cached device_t::m_region pointer and its region() getter method. Devices that need to bind to a region with the same tag should use optional/required_memory_region or optional/required_region_ptr with DEVICE_SELF as the subtag; this improves error checking. (DEVICE_SELF has been moved to device.h for greater visibility in the source);
+  * Allow required/optional_region_ptr to specify a specific length which must match that of the region found;
+  * Implement finder_base::finder_tag() getter for diagnostic purposes;
+  * Perform some (not very efficient) validity checks on memory region finders instead of allowing them to automatically pass;
   * Privatize device_memory_interface::m_addrspace.
 - Magic 10 driver: Added technical notes and a missing PLD dump [f205v].
 - Added m62(kidniki) to nl.lua. Started some experiments around parallel solving of linear equations. This code is not active. Fix kidniki audio performance [Couriersud].
@@ -145,7 +148,7 @@ Source changes:
 - info.cpp: First attempt to fix the longstanding issue about inputs owned by devices being always tagged as P1 inputs in -lx [Fabio Priuli].
 - plugins/cheatfind: Start LUA cheat finder library [Carl].
 - apple2: Additional work on the PC Transporter [Peter Ferrie, R. Belmont].
-- Basic TCP server based on libuv [Inaki Baz Castillo, Miodrag Milanovic].
+- Basic TCP server based on libuv [Inaki Baz Castillo, Miodrag Milanović].
 - intv: Converted controller inputs to be slot devices [Fabio Priuli].
 - intvecs: Converted hand controllers, keyboard and synth to be slot devices, by using a temporary hack to workaround the impossibility to plug the same device into 2 different slots as these keyboard require [Fabio Priuli].
 - Skeleton implementation for Universal windows main app classes [Brad Hughes].
@@ -162,11 +165,11 @@ Source changes:
 - screen: Fix alpha handling, cdkong looks good now [Olivier Galibert].
 - bgfx: Add data-driven render target clearing [Ryan Holtz].
 - Significant speed improvement [Couriersud]:
-  * Added a new solver using compressed row format.
-  * Fixed sorting.
+  * Added a new solver using compressed row format;
+  * Fixed sorting;
   * As a result, netlist performance on kidniki nearly doubled. The performance increase is mainly due to the fact that sorting decreases the number of operations for gaussian elimination of the kidniki matrix from ~7800 to 707. In addition, compressed row format improves L1 usage.
 - Eliminate device_t::static_config, a type-unsafe legacy feature [AJR]:
-  * Rewrite or remove every last instance of MCFG_DEVICE_CONFIG and its two aliases, including within comments and dead code.
+  * Rewrite or remove every last instance of MCFG_DEVICE_CONFIG and its two aliases, including within comments and dead code;
   * Make the Z80/Z180 daisy chain an interface that interfaces with the existing interface. Z8000 has been hooked up to this as well (p8000_16 already configures it), but currently does nothing with it.
 - mips3: Fixed interpreter bug where BADCOP exceptions would execute the faulting opcode twice [Ryan Holtz].
 - Update strings.po [aviloria].
@@ -182,13 +185,13 @@ Source changes:
 - Replace the old device_iterator and its specialized versions with functionally equivalent classes that use standard operators to yield references to devices/interfaces rather than pointers. With range-based for loops, they no longer have to be stored in named variables, though they can also be reused concurrently since the iteration state is now maintained by a subclass. Add a few more typical getters to device_t::subdevice_list.
 - bgfx: Added SuperEagle shader [Ryan Holtz].
 - Refactored distortion pass [ImJezze]:
-  * Separated curvature parameter into distortion, cubic_distortion and distort_corner.
- * distortion and cubic_distortion can be negative, to compensate each other.
+  * Separated curvature parameter into distortion, cubic_distortion and distort_corner;
+  * distortion and cubic_distortion can be negative, to compensate each other;
   * distort_corner is intependent from the image distortion.
 - neogeo: Reworked inputs to work through the slot device interface. you can now configure the 15-pin ports available in the multicart driver (neogeo) with the -crtl1 and -ctrl2 options. Thus, if you want to launch janshin in neogeo with the mahjong control panel you shall now prescribe -edge "" -ctrl1 mahjong and set accordingly the DIP switch (the first option disables inputs from the edge connector). When you run single game drivers (e.g. mslug or kof94, etc.), instead, a unique controller is available and cannot be modified. In particular, the janshin driver already comes pre-configured in the proper way [Fabio Priuli].
 - Refactor OSD window. Unified renderer in osd_window as std::unique_ptr Made windows all std::shared_ptr<window_type> Made window lists std::list<std::shared_ptr<window_type>> Updated OSD SDL worker_param to not use malloc (not compatible with smart pointers) Made renderer pointer to window a weak reference. May not be available during destruction of the window [Brad Hughes].
 - Alta Tensione: Added technical notes, game status, and patched the boot protection [Roberto Fresca].
-- Split UI and frontend part from core [Miodrag Milanovic].
+- Split UI and frontend part from core [Miodrag Milanović].
 - Implemented dynamic loading of precompiled solver code [Couriersud].
 - saturn.cpp: Converted controllers to work through slot devices, cleaning up the related code. [Fabio Priuli].
 - saturn.cpp: Added support for SegaTap adapter (4 controllers) and  Sega Multitap adapter (6 controllers). Saturn Bomberman can now be played as intended [Fabio Priuli].
@@ -201,33 +204,33 @@ Source changes:
 - sf.c: Does not have COIN3, and protection MCU on sfj is an i8751 [Yu].
 - cgenie.cpp: Expanded .cas support so that also files created by Genieous emulator can be loaded [Fabio Priuli].
 - Added "selection" parameter to chain input sampler [ImJezze]:
- * If specified all textures (.png) within the same directoy of the given texture will be selectable via slider in the UI.
+  * If specified all textures (.png) within the same directoy of the given texture will be selectable via slider in the UI;
   * Also added slider for "shadow mask tile mode" to HLSL chain.
 - bgfx: Ported xBR shaders from libretro [Ryan Holtz, Hyllian].
 - Archive handling improvements [Vas Crabb]:
-  * Improve error handling in 7zip file I/O code
-  * Fix reading 7zip files >=4GB on LP32/LLP64 targets
-  * Update to LZMA SDK to 15.14, supports new 7zip features
-  * Stop relying on local hacks to LZMA SDK.
-  * Support most ZIP64 features excluding directory compression
-  * Support LZMA-compressed files in ZIP archives.
-  * Support Info-ZIP UTF-8 file name fields.
-  * Fix phantom files/directories when browsing archives.
+  * Improve error handling in 7zip file I/O code;
+  * Fix reading 7zip files >=4GB on LP32/LLP64 targets;
+  * Update to LZMA SDK to 15.14, supports new 7zip features;
+  * Stop relying on local hacks to LZMA SDK;
+  * Support most ZIP64 features excluding directory compression;
+  * Support LZMA-compressed files in ZIP archives;
+  * Support Info-ZIP UTF-8 file name fields;
+  * Fix phantom files/directories when browsing archives;
   * Report archive handling errors.
 - Update to expat 2.1.1 for security and bug fixes [Vas Crabb].
-- xbox\chihiro: USB is now partially usable [Samuele Zannoli]
-  * Control, bulk, interrupt transfers work.
-  * Started hle simulation of usb devices on chihiro baseboard.
-  * There is a first implementation of XBOX game controller.
+- xbox\chihiro: USB is now partially usable [Samuele Zannoli]:
+  * Control, bulk, interrupt transfers work;
+  * Started hle simulation of usb devices on chihiro baseboard;
+  * There is a first implementation of XBOX game controller;
   * The chihiro BIOS can now enter system configuration menu.
 - hp9845: Added capabilty to load option ROMs [F. Ulivi].
 - ti99: Several code changes [Michael Zapf]:
-  * GROMs with clock input line and improved timing behavior.
-  * TMS9928A delivers GROMCLK if configured.
-  * TI-99/8 mainboard: Implemented custom chips (vaquerro, mofetta, amigo) for low-level emulation.
-  * Fixed HOLD feature of TMS9995.
-  * Moved v9938 from console to EVPC where it belongs, dropped videowrp,
-  * Fixed issues with paged37x cartridges.
+  * GROMs with clock input line and improved timing behavior;
+  * TMS9928A delivers GROMCLK if configured;
+  * TI-99/8 mainboard: Implemented custom chips (vaquerro, mofetta, amigo) for low-level emulation;
+  * Fixed HOLD feature of TMS9995;
+  * Moved v9938 from console to EVPC where it belongs, dropped videowrp;
+  * Fixed issues with paged37x cartridges;
   * Fixed issues with Horizon Ramdisk.
 - n64: Do SI dma transfer after delay, not before [Happy].
 - tourvis.cpp: Changed to use Software Lists, trimmed all ROMs to correct sizes, confirming that the majority match exactly the PCE roms (only 3 differ, Gomola Speed which could be an alt revision, R-Type II which has been hacked, and Be Ball where there is an unknown single byte change [David Haywood].

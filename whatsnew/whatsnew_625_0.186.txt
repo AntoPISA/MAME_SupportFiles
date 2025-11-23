@@ -1,4 +1,4 @@
-0.186 2017/05/31 [#625 - Vas Crabb]
+﻿0.186 2017/05/31 [#625 - Vas Crabb]
 -----------------------------------
 
 
@@ -167,26 +167,26 @@ Wild Thing (0201176V, NSW/ACT) [Heihachi_73]
 
 New Working Software List Additions
 -----------------------------------
-cgenie_cass:
-  Colour Frog, Synthesizer (TCS), Colour-Zap Ver 1.0 (TCS), DIG-BOY (TCS) [Juergen Buchmueller]
-ibm5150:
-  Arkanoid 2: Revenge of Doh, Crime Wave, Prince of Persia (5.25", v1.1), Operation Wolf, Terminator 2: Judgment Day [ArcadeShadow]
-  Ferrari Formula One, Savage [breiztiger]
-ibm5170:
-  Dark Seed, The Secret of Monkey Island [ArcadeShadow]
-ibm5150, ibm5170:
-  Many IBM PC-DOS sets [Justin Kerk]
-t1000:
-  MS-DOS (Version 2.11, Tandy version 02.11.24), MS-DOS (Verson 3.30, Tandy Version 03.30.20) [Justin Kerk]
-z80ne_cass:
-  27 known titles in 1200, 600 and 300 Baud variants [Reagan Roush]
-z80ne_flop:
-  39 known titles [Reagan Roush]
+cgenie_cass.xml:
+   Colour Frog, Synthesizer (TCS), Colour-Zap Ver 1.0 (TCS), DIG-BOY (TCS) [Juergen Buchmueller]
+ibm5150.xml:
+   Arkanoid 2: Revenge of Doh, Crime Wave, Prince of Persia (5.25", v1.1), Operation Wolf, Terminator 2: Judgment Day [ArcadeShadow]
+   Ferrari Formula One, Savage [breiztiger]
+ibm5170.xml:
+   Dark Seed, The Secret of Monkey Island [ArcadeShadow]
+ibm5150.xml, ibm5170.xml:
+   Many IBM PC-DOS sets [Justin Kerk]
+t1000.xml:
+   MS-DOS (Version 2.11, Tandy version 02.11.24), MS-DOS (Verson 3.30, Tandy Version 03.30.20) [Justin Kerk]
+z80ne_cass.xml:
+   27 known titles in 1200, 600 and 300 Baud variants [Reagan Roush]
+z80ne_flop.xml:
+   39 known titles [Reagan Roush]
 
 New NOT_WORKING Software List Additions
 ---------------------------------------
-gba_ereader:
-  Doubutsu no Mori Card-e (Series 1 and Series 2 cards) [Shideravan]
+gba_ereader.xml:
+   Doubutsu no Mori Card-e (Series 1 and Series 2 cards) [Shideravan]
 
 
 Translations added or modified
@@ -196,33 +196,33 @@ Hungarian [Lothar Serra Mari]
 
 MAME Testers Bugs Fixed (14):
 ----------------------------
-- 00599: [DIP/Input] (m72.cpp) poundfor: You can't move the arrows on the menu screens to choose the other boxer or game (AJR).
-- 06103: [Documentation] (taitopjc.cpp) optiger: The correct description is "Operation Tiger (Ver 2.14 O)" (sjy96525).
-- 06540: [Crash/Freeze] (hh_tms1k.cpp) bshipb: [debug] Assert when starting emulation (Robbbert).
+- 00599: [DIP/Input] (m72.cpp) poundfor: You can't move the arrows on the menu screens to choose the other boxer or game (AJR)
+- 06103: [Documentation] (taitopjc.cpp) optiger: The correct description is "Operation Tiger (Ver 2.14 O)" (sjy96525)
+- 06540: [Crash/Freeze] (hh_tms1k.cpp) bshipb: [debug] Assert when starting emulation (Robbbert)
 - 06541: [Crash/Freeze] (laserbat.cpp) laserbat, lazarian: [debug] Assert when starting emulation (Robbbert).
-- 06542: [Crash/Freeze] (toratora.cpp) All set in toratora.cpp: [debug] Assert when starting emulation (Robbbert).
-- 06544: [Crash/Freeze] (didact.cpp) can09: [debug] Assert when starting emulation (Robbbert).
-- 06547: [Crash/Freeze] (tv990.cpp) All sets in tv990.cpp: [debug] Assert when starting emulation (Robbbert).
-- 06555: [Crash/Freeze] (apple2.cpp) All sets in apple2.cpp, apple2e.cpp: Mounting ezcgi9938 or ezgui9958 into any slot causes Fatal Error (AJR).
-- 06558: [Interface] agat7 and others: mame -verifyroms not working for agat7 and 129 other sets (Nathan Woods).
-- 06560: [Crash/Freeze] (coco3.cpp) All sets in coco12.cpp, coco3.cpp: Loading cartridges from softlists locks up emulator (Nathan Woods).
-- 06575: [Debugger] DEBUGGER: MAME crashes when given the 'symlist' command in the debugger (Nathan Woods).
-- 06587: [Sound] (model1.cpp) vf: Loss of Sound (AJR).
-- 06589: [Graphics] (namcos1.cpp) puzlclub: Title Screen corruption (Ivan Vangelista).
-- 06591: [Interface] (ksys573.cpp) All sets in ksys573.cpp: Exception when attempting -listxml (Nathan Woods).
+- 06542: [Crash/Freeze] (toratora.cpp) All set in toratora.cpp: [debug] Assert when starting emulation (Robbbert)
+- 06544: [Crash/Freeze] (didact.cpp) can09: [debug] Assert when starting emulation (Robbbert)
+- 06547: [Crash/Freeze] (tv990.cpp) All sets in tv990.cpp: [debug] Assert when starting emulation (Robbbert)
+- 06555: [Crash/Freeze] (apple2.cpp) All sets in apple2.cpp, apple2e.cpp: Mounting ezcgi9938 or ezgui9958 into any slot causes Fatal Error (AJR)
+- 06558: [Interface] agat7 and others: mame -verifyroms not working for agat7 and 129 other sets (Nathan Woods)
+- 06560: [Crash/Freeze] (coco3.cpp) All sets in coco12.cpp, coco3.cpp: Loading cartridges from softlists locks up emulator (Nathan Woods)
+- 06575: [Debugger] DEBUGGER: MAME crashes when given the 'symlist' command in the debugger (Nathan Woods)
+- 06587: [Sound] (model1.cpp) vf: Loss of Sound (AJR)
+- 06589: [Graphics] (namcos1.cpp) puzlclub: Title Screen corruption (Ivan Vangelista)
+- 06591: [Interface] (ksys573.cpp) All sets in ksys573.cpp: Exception when attempting -listxml (Nathan Woods)
 
 
 Source changes:
 ---------------
-- seibucop.cpp: Fixed 'Legionnaire' and 'Heated Barrel' scenery walking bug (a different 138e is used) [Angelo Salese].
-- epos.cpp: Several changes to 'The Dealer', 'Revenger '84' and 'Beastie Feastie' hardware [Angelo Salese]
+- seibucop.cpp: Fixed Legionnaire and Heated Barrel scenery walking bug (a different 138e is used) [Angelo Salese].
+- epos.cpp: Several changes to The Dealer, Revenger '84 and Beastie Feastie hardware [Angelo Salese].
   * Fixed RAM based colors;
   * Added backup RAM support;
   * Added flip screen support.
 - m14.cpp: Revised PT Reach Mahjong, making it actually work [Angelo Salese]:
   * Added ball and paddle screen drawing, green background as per flyer pictures, and flip screen support;
   * Added reach button and updated input labels.
-- k054321: Implemented as a device [O. Galibert, Phil Bennett].
+- k054321: Implemented as a device [Olivier Galibert, Phil Bennett].
 - z180: Fixed obvious typo detected by Coverity, thanks Coverity [Olivier Galibert].
 - Added a mechanism for devices to generate clocks for other devices [AJR]:
   * Made set_unscaled_clock and set_clock_scale not call notify_clock_changed unless the device has been started;
@@ -374,7 +374,7 @@ Source changes:
 - CoCo: Added support for Games Master Cartridge developed by John Linville as slot device [Tim Lindner].
 - Netlist library updates [Couriersud]:
   * Changed Solver.PARALLEL parameter definition - 0: no parallelism; 1: one processor parallel; >1: solve n subnets in parallel;
-  * Refactored OPENMP - all OPENMP operations are now templatized in pomp.h;
+  * Refactored OPENMP: all OPENMP operations are now templatized in pomp.h;
   * Added 16-bit Galois LFSR generator (used to simulate thermal junction noise in "Cheeky Mouse").
 - cheekyms: Added netlist-based discrete audio emulation, replacing the placeholder DACs. Thanks to Sam Grech for supplying high-quality scans of the schematics [Vas Crabb, Couriersud].
 - monymony, jackrabt: Added netlist for analog processing in melody section of 1B11132 sound board [Vas Crabb]:
@@ -426,7 +426,7 @@ Source changes:
   * Switched Tristar 8000 hardware to use AY-3-8912 as shown on schematics.
 - Added a note and flag indicating that Williams' Mayday has unemulated protection that is currently hacked around. [Lord Nightmare].
 - Added Japan Dreamcast flash dump [rtw].
-- Added working controls for 'War: Final Assault' and 'Road Burners' [sjy96525].
+- Added working controls for War: Final Assault and Road Burners [sjy96525].
 - Amiga: Use correctly sized boot ROMs for the A1000 (mask ROMs are much larger than the content) [Guru].
 - aristmk4, aristmk5, aristmk5: Added more sets and improved documentation. Many dumps were corrupted by being transfered to a UNIX system using FTP mode A [Heihachi_73].
 - BP1200: Mostly traced out the SM48D socket module. [Lord Nightmare].
@@ -434,7 +434,7 @@ Source changes:
 - Cleaned up GENie Lua scripts and corrected some header file names [dankan1890]
 - dsoccr94: removed redundant DIP switches [Bad A. Billy].
 - hh_tms1k.cpp: Fix spelling error in cnbaskb description [Dagarman].
-- Improved 'Critter Crusher' and 'Tatacot Gun Control' [sjy96525].
+- Improved Critter Crusher and Tatacot Gun Control [sjy96525].
 - Made software list menu appear if appropriate when starting a machine from the "Favorites" menu [dankan1890].
 - r9751: Added terminal keyboard callback [Brandon Munger].
 - Removed the minimum sleep time constraint in video_manager::throttle_until_ticks [057a3dd61f99517a3afea0051a49cb27994f94d].
@@ -446,4 +446,4 @@ Source changes:
 - Updated lua engine documentation [Dan Amador].
 - Updated Taito Power JC and Taito Type Zero descriptions [sjy96525].
 - williams.cpp: Redumped defenderj bad ROM, game now works [ShouTime].
-- xbox: Replaced bad dump of MCPX 1.0 ROM with checksums with correct checksums.l [Mark Riley].
+- xbox: Replaced bad dump of MCPX 1.0 ROM with checksums with correct checksums [Mark Riley].

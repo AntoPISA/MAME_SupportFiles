@@ -1,4 +1,4 @@
-0.168 2015/11/25 [#607 - Miodrag Milanovic]
+﻿0.168 2015/11/25 [#607 - Miodrag Milanović]
 -------------------------------------------
 
 
@@ -7,8 +7,8 @@ Special Thanks
 Huge thanks to PVS-Studio's owners for giving us a temporary license in order to troubleshoot issues in our code. Also big thanks goes to JetBrains for giving us licenses for their ReSharper and CLion projects that are helping us to improve MAME.
 
 
-New Machines Added or Promoted from NOT_WORKING Status
-------------------------------------------------------
+New Systems Added or Promoted from NOT_WORKING Status
+-----------------------------------------------------
 Fever Pitch? (2VXEC534, NSW, 90.36%) [Roberto Fresca, Matt B]
 Micro Engenho (Brazilian Apple 2 clone) [Felipe Sanches]
 Trivia R Us (v1.07) [J. Mathevet, Smitdogg, The Dumping Union, Luca Elia]
@@ -40,8 +40,8 @@ Rolling Thunder (rev 3, hack) [caius]
 Sengoku Ace (Japan, set 2) [Alex Cmaylo]
 Super Galaxians (Silver Systems) [Robbbert]
 
-New Machines Marked as NOT_WORKING
-----------------------------------
+New Systems Marked as NOT_WORKING
+---------------------------------
 Cherry Master '99 [hsialin,Vas Crabb]
 Chicken (RHG0730, Export, 92.588%) [Roberto Fresca]
 Club Kart for Cycraft (GDS-0029A) [Guru, R. Belmont]
@@ -68,9 +68,9 @@ MAME Testers Bugs Fixed (8):
 - 05817: [Misc.] (mz700.c) mz700, mz700j: Emulation drastically slowing down after loading the basic! (Robbbert)
 - 05958: [Graphics] (cclimber.c) toprollr: Some sprites are invisible (Osso)
 - 06056: [Gameplay] (osborne1.c) osborne1: osborne1 banking doesn't work properly (Vas Crabb)
-- 06060: [DIP/Input] (a7800.c) a7800 [1on1u]: Cannot start a game in One-On-One Basketball. (David Haywood)
+- 06060: [DIP/Input] (a7800.c) a7800 [1on1u]: Cannot start a game in One-On-One Basketball (David Haywood)
 - 06070: [DIP/Input] (psikyosh.c) mjgtaste: Joystick mode does not fully work (David Haywood)
-- 06071: [Documentation] (shadfrce.c) shadfrcej: Shadow Force (Japan Version 3) might be misnamed. Version is actually in English, not Japanese. (David Haywood)
+- 06071: [Documentation] (shadfrce.c) shadfrcej: Shadow Force (Japan Version 3) might be misnamed. Version is actually in English, not Japanese (David Haywood)
 - 06075: [Graphics] (malzak.c) malzak, malzak2: Graphic issue (blank line) in title (Pernod)
 - 06083: [Core] cpu/z8000/z8000tbl.inc - wrong asmflags (Olivier Galibert)
 
@@ -89,9 +89,9 @@ Source changes:
   * Implement RESET key (generates NMI, F12 by default);
   * Show contents of video memory in F4 tilemap viewer;
   * Add configured banking and save state support.
-- Osborne Vixen: fixed screen (thanks to OG who added M1 support to the Z80). Various other fixes. Marked as Working [Robbbert].
+- Osborne Vixen: Fixed screen (thanks to OG who added M1 support to the Z80). Various other fixes. Marked as Working [Robbbert].
 - n64: Simulation of cpu cycles from the skipped RDRAM initialization. This allows later SI initialization to see something closer to an expected value for the system uptime [Happy].
-- Making logerror part of machine and device classes; display tag of device that logged message [Miodrag Milanovic].
+- Making logerror part of machine and device classes; display tag of device that logged message [Miodrag Milanović].
 - naomi/triforce docs update [f205v].
 - peplus.c: Documentation update based on newly found PSR (Program Summary Report) [Kevin N, BrianT].
 - TMS5xxx: Fix for occasional audio 'spike' instability/wraparound glitches caused by improper truncation in the lattice filter multiplier. This is not an optimal fix as it isn't correct to hardware, but it works better than the previous approximation [Lord Nightmare].
@@ -121,11 +121,11 @@ Source changes:
 - OSD/SDL: Add missing header to fix build on NetBSD. The file was removed from the other gmake.*/genie.make files. The build/gmake.* files do not exist upstream, so this is a purely local problem [Thomas Klausner].
 - namcos23: Port b bit 6 is also an input, handle accordingly. Probably JVS [Olivier Galibert].
 - mc6845: Fixed hd6845 rasters in interlace mode [Nigel Barnes]:
-  * bbc now uses correct hd6845
+  * bbc now uses correct hd6845;
   * saa5050 outputs all 20 scanlines.
 - a6809: Removed hack and fixed display for above saa5050 changes [Robbbert].
 - bbc: softlist additions/changes [Nigel Barnes]:
-  * Added part_id to many items
+  * Added part_id to many items;
   * Added original protected floppies (FSD).
 - bbc: Preliminary support for FSD format [Nigel Barnes].
 - naomi.c: Added "NAOMI Development BIOS v1.10" [Andy Geezer, MetalliC].

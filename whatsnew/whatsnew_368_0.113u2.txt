@@ -1,4 +1,4 @@
-0.113u2 2007/03/15 [#368 - Aaron Giles]
+ï»¿0.113u2 2007/03/15 [#368 - Aaron Giles]
 ---------------------------------------
 Note to OSD porters: several OSD-related changes are in this build. Many options in the system are now defined by the core and looked up using the options_* functions. This should allow a bunch of code to be removed from most OSD ports. In addition the mame_file_error type has been renamed to file_error, so a little search & replace action is necessary.
 
@@ -44,7 +44,7 @@ Source changes:
 - Some more 8080bw fixes [Zsolt Vasvari]:
   * Fixed Lupin III crash due to invalid sample.
   * Added video timing from mw8080bw. This caused the visible areas of most games to change, so they will fail regression.
-  * Shuttle Invaders display is shifted off screen now – but the PCB notes confirm that it’s a different hardware, so it will need its own driver anyhow.
+  * Shuttle Invaders display is shifted off screen now â€“ but the PCB notes confirm that itâ€™s a different hardware, so it will need its own driver anyhow.
   * Created a new file for MB14241, which is the shifter IC used by Invaders hardware games.
 - Renamed mame_file_error to file_error, since it is used throughout the code including the utilities [Aaron Giles].
 - Added stronger priority boosting when sleeping on Windows in the hopes of getting more consistent frame rates [Aaron Giles].
