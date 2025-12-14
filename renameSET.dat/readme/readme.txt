@@ -1,15 +1,16 @@
-﻿MAME RENAMESET.DAT/INI 
+﻿MAME RENAMESET.DAT/INI/XML
 ======================================
 © 2009/2025 progetto-SNAPS by AntoPISA
 
-renameSET.dat:    0.281
-Internal version: 15.10
+renameSET.dat:    0.283
+Internal version: 15.12
 
 The package contains:
 
 - renameSET.dat           : All data and counts relating to each published MAME, including renamed and deleted machines.
 - renameSET.ini           : Like the previous file but in another format, which can be used with the "MAMErenSET" tool to automate updating operations of resources.
 - renameSET_SL.dat        : Like "renameSET.dat" but related to software lists.
+- renameSET.xml.          : All data and counts relating to each published MAME, including renamed and deleted machines in xml format.
 
 ====================================================================================================================================================================
 
