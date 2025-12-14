@@ -408,6 +408,11 @@ Floppies
 For disks to work, in Configuration, enable "FDD Unit installed".
 
 $end
+$info=altaten,lunaprk,mcolors,mcolorsa,suprpool
+$mame
+INITIALISATION:
+If you get a message about invalid NVRAM, press one at a time F2 b z v m m.
+$end
 $info=alto2
 $mame
 INITIALIZATION:
@@ -1993,6 +1998,11 @@ All commands to be in uppercase.
 
 Press Enter twice. You will see the Monitor logo. To get into the BASIC, enter GE400. To return to the monitor, use the QUIT command followed by pressing Enter twice. All monitor commands must be in uppercase. The only storage is paper-tape.
 
+$end
+$info=cb3c
+$mame
+INITIALISATION:
+If it appears stuck at INIT MACHINE, press 9 and 0 together. Now press W.
 $end
 $info=cbrava
 $mame
@@ -4616,7 +4626,19 @@ To save a tape: SAVE"x"
 To load a tape: LOAD"x"
 
 Tapes are compatible with other early IBM PCs, such as IBM5150.
+$end
+$info=ibmpcjx
+$mame
+TIPS:
+Incredibly unreliable, very likely to crash at start or on exit. It's random, so just try again. If the screen stays black for longer than 10 seconds, quit and try again.
 
+To save a tape: SAVE"CAS1:x"
+
+To load a tape: LOAD"CAS1:x"
+
+Tapes are compatible with other early IBM PCs, such as IBM5150 and PCJR.
+
+Filenames are case sensitive. Don't press INS while loading because it instantly goes to a black screen.
 $end
 $info=icebox
 $mame
@@ -5951,6 +5973,11 @@ For the 1st boot, switch "Disable Free Play" to ON in the dip switches, enter a 
 SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
+$end
+$info=magic102,magic102a
+$mame
+INITIALISATION:
+If you get a message about invalid NVRAM, press one at a time F2 b z 1 m m.
 $end
 $info=magicrd2
 $mame
@@ -10603,6 +10630,11 @@ Make sure you have no .NV file for this game. When you boot, the game will guide
 SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
+$end
+$info=spetrix
+$mame
+INITIALISATION:
+On first run it may get stuck at HARDWARE TEST. Press one at a time Z Z C X.
 $end
 $info=spinveti
 $mame
