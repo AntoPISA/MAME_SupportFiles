@@ -1065,7 +1065,6 @@ TIPS:
 - To exit the pinball back to the video:
 Babypac: press O or P;
 Granny: press X.
-
 $end
 $info=basf7120
 $mame
@@ -1080,7 +1079,10 @@ Press Space to make the machine start up.
 All input must be in uppercase. Read the manual to discover the special features of this Basic.
 
 Sound: BASIC-31 has sound, and BASIC-52 doesn't. The sound command is PWM. Example: PWM 800,200,900
-
+$end
+$info=basschal,basschalo,xtrmhunt
+$mame
+Due to a regression, need to wait up to 5 minutes at a black screen before it suddenly springs to life.
 $end
 $info=bbcb,bbcm
 $mame
@@ -6830,6 +6832,8 @@ $end
 $info=mslug6
 $mame
 TIPS:
+Due to a regression, need to wait up to 5 minutes at a black screen before it suddenly springs to life.
+
 Gameplay is choppy at times, but I have enough CPU power?
 Although the FPS counter shows 100% speed for these games, they may appear choppy. This is true to the original — even the original hardware of these games struggled with them and therefore the choppiness is actually accurate emulation of these games. You may be able to get rid of it in some cases by using the -cheat parameter, hitting the tilde key and browsing the on screen menu until you find "CPU overclocking". This will run the emulated CPU faster which may or may not fix it. It may also cause the emulation to have errors, so don't bug people if overclocking screws up a game.
 
@@ -11781,6 +11785,11 @@ Can only load tapes that it made.
 
 CAS files won't load.
 
+$end
+$info=vfurlong
+$mame
+TIPS:
+Wait up to 5 minutes at the NOW LOADING screen. Then it runs, but the start button doesn't work.
 $end
 $info=vg5k
 $mame
