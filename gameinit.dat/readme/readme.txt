@@ -1,4 +1,4 @@
-﻿MAME GAMEINIT.DAT 0.282      (Nov 10, 2025)
+﻿MAME GAMEINIT.DAT 0.283      (Dec 19, 2025)
 © AntoPISA & Robbbert www.progettoSNAPS.net
 ===========================================
 
@@ -9,6 +9,7 @@ is supported by MAME from 0.172 version.
 
 WhatsNew:
 =========
+2025/12/19 11.09: Aligned item names with MAME 0.283. 2,302 machines currently supported.
 2025/11/10 11.08: Aligned item names with MAME 0.282. 2,139 machines currently supported.
 2025/09/11 11.07: Aligned item names with MAME 0.280. 2,152 machines currently supported.
 2025/05/07 11.06: Aligned item names with MAME 0.277.

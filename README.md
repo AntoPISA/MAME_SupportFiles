@@ -7,6 +7,7 @@ MAME Support Files v0.283
 The following files have been updated in this MAME cycle:
 - Category pack
 - CatVer pack
+- gameinit.dat
 - languages.ini
 - renameSET.dat
 - series.ini
@@ -16,7 +17,6 @@ Not updated in this cycle:
 - bestgames.ini
 - CHD-Info pack
 - command.dat
-- gameinit.dat
 - MESS-Info.dat
 
 Home-page: https://www.progettosnaps.net/support/
