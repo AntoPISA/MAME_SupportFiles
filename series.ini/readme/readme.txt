@@ -1,4 +1,4 @@
-﻿MAME SERIES.ini 0.282 (Nov 11, 2025)
+﻿MAME SERIES.ini 0.283 (Dec 19, 2025)
 © AntoPISA     www.progettoSNAPS.net
 ==================================== 
 
@@ -12,12 +12,16 @@ In the file are both "Series" recognized as such (thus games and their official 
 guages or with minor variations (official and unofficial).
 
 
+2025/12/19 11.10 MAME 0.283 (719 supported Series - 12,350 items):
+==================================================================
+Series UPDATED    (5) : "Cherry Bonus * Slot", "Cherry Master * Slot", "Crazy Bugs * Slot", "Queen Bee * Slot" and "U.N. Squadron".
+
+
 2025/11/11 11.09 MAME 0.282 (719 supported Series - 12,336 items):
 ==================================================================
 Items RENAMED     (2) : (cm2005a) to (cm2005_102u) and (cm2005b) to (cm2005_014h).
 Serie ADDED       (1) : "100&Medal Kazaaan!!".
 Series UPDATED    (5) : "Cherry Master * Slot", "Crazy Bugs * Slot", "Cuty Line", "Galaxian" and "Samurai Aces".
-
 
 2025/10/03 11.08 MAME 0.281 (718 supported Series - 12,325 items):
 ==================================================================
