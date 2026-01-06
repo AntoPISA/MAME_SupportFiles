@@ -1,5 +1,5 @@
-﻿MAME CHD-Info v0.282
-progetto-SNAPS © 2016/2025 AntoPISA
+﻿MAME CHD-Info v0.284
+progetto-SNAPS © 2016/2026 AntoPISA
 ===================================
 
 Home-page: https://www.progettosnaps.net/chdinfo/
@@ -20,4 +20,4 @@ Credits:
 - Thanks to MASH for periodic checks.
 
 
-© 2016/2025 AntoPISA
+© 2016/2026 AntoPISA
