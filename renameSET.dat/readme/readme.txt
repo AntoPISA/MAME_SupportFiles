@@ -1,16 +1,16 @@
 ﻿MAME RENAMESET.DAT/INI/XML
 ======================================
-© 2009/2025 progetto-SNAPS by AntoPISA
+© 2009/2026 progetto-SNAPS by AntoPISA
 
-renameSET.dat:    0.283
-Internal version: 15.12
+renameSET.dat:    0.284
+Internal version: 16.01
 
 The package contains:
 
 - renameSET.dat           : All data and counts relating to each published MAME, including renamed and deleted machines.
 - renameSET.ini           : Like the previous file but in another format, which can be used with the "MAMErenSET" tool to automate updating operations of resources.
 - renameSET_SL.dat        : Like "renameSET.dat" but related to software lists.
-- renameSET.xml.          : All data and counts relating to each published MAME, including renamed and deleted machines in xml format.
+- renameSET.xml           : All data and counts relating to each published MAME, including renamed and deleted machines in xml format.
 
 ====================================================================================================================================================================
 
@@ -91,7 +91,7 @@ Line  7:  Counting of all types of ROMs supported (with any differences highligh
           bad dumps            - Badly dumped roms count;
           bugs fixed           - Count of certified bugs fixed in a single release (all bugs can be found here: https://mametesters.org/).
 
-Line  8:  Summary of the software lists and related software included:
+Line  8:  Summary of the software lists and related software included (from version 0.141u2):
           software list        - Count of all lists present;
           software             - Count of all registered software;
           active SL            - Count of active lists only;
@@ -101,7 +101,8 @@ Line  8:  Summary of the software lists and related software included:
           software parents     - Count of parents of lists;
           software clones      - Count of clones of the lists.
 
-Line  9:  software roms        - Count of all roms in the lists;
+Line  9:  Summary of the software roms (from version 0.141u2):
+          software roms        - Count of all roms in the lists;
           software CHD         - Count of all CHDs in the lists;
           supported software   - Count bootable software;
           partially supported software - Count of partially functioning software;
@@ -128,4 +129,4 @@ Home-page: https://www.progettosnaps.net/renameset/
 Github   : https://github.com/AntoPISA/MAME_SupportFiles/tree/main/renameSET.dat
 
 
-© 2009/2025 AntoPISA
+© 2009/2026 AntoPISA
