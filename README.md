@@ -9,12 +9,12 @@ The following files have been updated in this MAME cycle:
 - CatVer pack
 - CHD-Info pack
 - gameinit.dat
+- languages.ini
 - renameSET.dat
 
 Not updated in this cycle:
 - bestgames.ini
 - command.dat
-- languages.ini
 - MESS-Info.dat
 - series.ini
 - version pack
