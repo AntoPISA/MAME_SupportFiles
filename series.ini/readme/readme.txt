@@ -1,4 +1,4 @@
-﻿MAME SERIES.ini 0.283 (Dec 19, 2025)
+﻿MAME SERIES.ini 0.284 (Jan 12, 2026)
 © AntoPISA     www.progettoSNAPS.net
 ==================================== 
 
@@ -12,10 +12,14 @@ In the file are both "Series" recognized as such (thus games and their official 
 guages or with minor variations (official and unofficial).
 
 
+2026/01/12 12.00 MAME 0.284 (719 supported Series - 12,375 items):
+==================================================================
+Series UPDATED   (13) : "Cherry Master * Slot", "Defender", "Double Dragon", "E-Swat Cyber Police", "Fruit Bonus * Slot", "Gauntlet", "Head On", "Pac-Man", "Pit Boss", "Royal Mahjong", "Space Invaders", "Trivia ? Whiz" and "Xevious".
+
+
 2025/12/19 11.10 MAME 0.283 (719 supported Series - 12,350 items):
 ==================================================================
 Series UPDATED    (5) : "Cherry Bonus * Slot", "Cherry Master * Slot", "Crazy Bugs * Slot", "Queen Bee * Slot" and "U.N. Squadron".
-
 
 2025/11/11 11.09 MAME 0.282 (719 supported Series - 12,336 items):
 ==================================================================
@@ -775,4 +779,4 @@ Series ADDED    (97) : "10 x 10 Slot", "777 Heaven Slot", "A Nightmare On Elm St
 Series UPDATED (242) : "194X", "All Japan Pro Wrestling", "Alpha Mission", "Area 51", "Arkanoid", "Asteroids", "Bagman", "Battle Garegga", "Battle Gear", "beatmania", "Bishi Bashi", "Bloody Roar", "Bomb Jack", "Bubble Bobble", "Boulder Dash", "Centipede", "Champion Poker", "Chase H.Q.", "Cherry Master", "Columns", "Commando", "Contra", "Crackin' DJ", "Crazy Climber", "Crime Fighters", "Crown Golf", "Cruis'n USA", "Crystal Maze", "Dancing Stage", "Darkstalkers", "Daytona USA", "DJ Boy", "Donkey Kong", "DonPachi", "Double Dragon", "Dragon Ball ", "Dragon's Lair", "Drift Out", "Dynamite Baseball", "Dynasty Wars", "Elvira Pinball", "Empire City", "ESP Ra.De.", "Exciting Soccer", "Fantasia", "Fantasy Zone", "Fatal Fury", "Fighter's History", "Final Fight", "Final Furlong", "Flying Shark", "Fruit Bonus", "Fun Cube", "Galaxian", "Gals Panic", "Gauntlet", "Get Bass", "Ghosts'n Goblins", "Giga Wing", "Golden Axe", "Golden Tee", "Gradius", "Green Beret", "GTI Club", "Gunforce", "Gunlock", "Hang-On", "Hat Trick Hero", "Head On", "Hidden Catch", "House of the Dead", "Hunting", "Ikari", "Initial D", "Intrepid", "Island", "Janputer", "Joe & Mac", "JoJo's Bizarre Adventure", "Jurassic Park", "Jurassic Park Pinball", "Killer Instinct", "Killing Blade", "King of Fighters", "King of the Monsters", "Knights of Valour", "Kung-Fu Master", "Last Blade", "Lethal Enforcers", "Lode Runner", "Long Hu Bang", "Lucky 8 Lines", "Magic Card", "Magic's 10", "Major League", "Major Title", "Match It", "Mario Bros.", "Marvel Vs. Capcom", "Medal Mahjong", "Mega Man", "Megatouch", "Melty Blood", "Mobile Suit Gundam", "Monaco GP", "Monopoly", "Moon Cresta", "Mortal Kombat", "Mr. Driller", "Mr. Do!", "Multi Champ",  "Multi Game", "NBA Jam", "NFL Blitz", "Ninja-Kid", "Nova 2001", "Numan Athletics", "Operation Wolf", "Oriental Legend", "Othello", "Out Run", "Out Zone", "P-47", "Pac-Man", "Pac-Man Pinball", "Paitoride", "Pang", "ParaParaParadise", "Parodius", "Phoenix", "Photo Y2K", "Pinball Action", "Pirate Igrosoft", "Pit Boss", "Pocket Gal", "Point Blank", "Pole Position", "Police Trainer", "Pop'n Music", "Power Instinct", "Power Spikes", "Primal Rage", "Print Club", "Psychic Force", "Punch-Out!!", "Puzz Loop", "Puzzle Bobble", "Puzzle-Dama", "Q*Bert", "Qix", "Quarterback", "Quiz Tonosama no Yabou", "Racin' Force", "Rad Mobile", "Raiden", "Rally X", "Rastan", "Ridge Racer", "Rival Schools", "Robin's Adventure", "Robocop", "Robotron", "Rolling Thunder", "Samba de Amigo", "Samurai Aces", "Samurai Shodown", "Scramble", "SD Gundam", "Sega Rally", "Sengoku", "Shanghai", "Sharpshooter Pinball", "Shikigami no Shiro", "Shinobi", "Shock Troopers", "Shogun Warriors", "Side By Side", "Silkroad", "Sky Adventure", "Sky Kid", "Slam Masters", "SNK Vs. Capcom", "Snow Bros.", "Sorcer Striker", "Soul Edge", "Space Harrier", "Space Invaders", "Special Forces", "Spelunker", "Sprint", "Spy Hunter", "Stadium Hero", "Star Force", "Star Gladiator", "Star Wars", "Star Wars Arcade", "Star Wars Pinball", "Steel Gunner", "Street Fighter", "Street Fighter EX", "Strider", "Super Real Mahjong", "Super Volleyball", "Suzuka 8 Hours", "Sweet Life", "Taisen Hot Gimmick", "Tank Battalion", "Targ", "Tecmo World Cup", "Teenage Mutant Ninja Turtles", "Tekken", "Tetris", "Thunder & Lightning", "Thunder Cross", "Time Crisis", "Time Killers", "Time Pilot", "Touchmaster", "Track & Field", "Triv", "Trivia", "Trivia Master", "Trivia ? Whiz", "Trivial Pursuit", "Twin Cobra", "TX-1", "U.N. Squadron", "Vanguard", "Vapor Trail", "Victor", "Violence Fight", "Virtua Cop", "Virtua Striker", "Wangan Midnight", "Wonder Boy", "World Class Bowling", "World Combat", "World Stadium", "WWF Superstars", "Xevious", "Zero Gunner" and "Zero Point".
 
 
-© 2013/2025 AntoPISA progetto-SNAPS
+© 2013/2026 AntoPISA progetto-SNAPS

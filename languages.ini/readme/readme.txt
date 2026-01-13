@@ -1,4 +1,4 @@
-﻿MAME LANGUAGES.ini 0.283 (Dec 19, 2025)
+﻿MAME LANGUAGES.ini 0.284 (Jan 12, 2026)
 © AntoPISA        www.progettoSNAPS.net
 =======================================
 
@@ -8,17 +8,17 @@ The file, extracted from the zip file, should be placed in the folder named 'Fol
 items  - Language
 ===================
     1  - Bulgarian
-  185  - Chinese
+  187  - Chinese
     5  - Croatian
     3  - Czech
   107  - Dutch
-32981  - English
+33079  - English
   152  - French
   316  - German
     4  - Greek
     5  - Hungarian
   271  - Italian
- 2249  - Japanese
+ 2253  - Japanese
   101  - Korean
    15  - Latvian
     2  - Norwegian
@@ -34,6 +34,7 @@ items  - Language
 
 WhatsNew:
 =========
+2026/01/12 14.00: Added 0.284 sets.
 2025/12/19 13.10: Added 0.283 sets.
 2025/11/10 13.09: Added 0.282 sets.
 2025/10/03 13.08: Added 0.281 sets.
@@ -214,12 +215,4 @@ WhatsNew:
 2012/05/05  0.00: First version (pre-release 0.145u7).
 
 
-Addictional sources:
---------------------
-* adb.arcadeitalia.net/
-* gamefaqs.com
-* redump.org
-* sega-naomi.com
-
-
-© 2012/2025 AntoPISA
+© 2012/2026 AntoPISA
