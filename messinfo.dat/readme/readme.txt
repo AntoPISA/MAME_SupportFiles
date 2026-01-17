@@ -1,9 +1,10 @@
-﻿MESSINFO.DAT 0.283  (Dec 24, 2025)
+﻿MESSINFO.DAT 0.284  (Jan 16, 2026)
 © AntoPISA   www.progettoSNAPS.net
 ==================================
 
 WhatsNew:
 =========
+2026/01/16 15.00: Aligned files to 0.284 version.
 2025/12/24 14.10: Aligned files to 0.283 version.
 2025/11/15 14.09: Aligned files to 0.282 version.
 2025/10/11 14.08: Aligned files to 0.281 version. From this release the files "messinfo.dat" and "docs\drivers\MESS_Drivers_0.???_????????.txt" are compressed with 7zip to reduce the "weight" of the package.
@@ -419,4 +420,4 @@ WhatsNew:
 2011/05/08  0.00: He was born the idea for this new MESS project, drawing inspiration from mameinfo.dat of MASH.
 
 
-© 2011/2025 AntoPISA
+© 2011/2026 AntoPISA

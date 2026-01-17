@@ -1,4 +1,4 @@
-﻿#    MESSINFO_REM.DAT v0.282    Latest update:  Nov 15, 2025
+﻿#    MESSINFO_REM.DAT v0.284    Latest update:  Jan 16, 2026
 #                                Project start: Nov  7, 2011
 #
 #    Author:  Antonio Paradossi (AntoPISA) from Pisa (Tuscany/Italy)
@@ -8,8 +8,8 @@
 #
 #    homepage: http://www.progettosnaps.net/messinfo
 #
-#    Internal version: 14.09
-#    Total items: 355
+#    Internal version: 15.00
+#    Total items: 357
 #
 #
 $info=24c16a
@@ -1017,6 +1017,28 @@ WIP:
 - 0.192: Added support for DS121x parts where the RTC sits in a ROM's address space [R. Belmont].
 - 0.186: Changed description to 'Dallas DS1315 Phantom Time Chip'.
 - 0.149u1: Added 'Dallas Semiconductor DS1315' device.
+
+$end
+$info=ds5002fp
+$mame
+0.184 [Steve Ellenoff, Manuel Abadia, Couriersud]
+
+Dallas DS5002FP, <unknown>, ????
+
+DRIVER:
+devices/cpu/mcs51/ds5002fp.cpp
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Unsupported
+
+WIP:
+- 0.284: Device removed.
+- 0.196: Description changed to 'Dallas DS5002FP' [Angelo Salese].
+- 0.184: Steve Ellenoff, Manuel Abadia and Couriersud added 'DS5002FP' device.
 
 $end
 $info=dummy_space
@@ -2547,6 +2569,27 @@ WIP:
 - 0.222: Device removed.
 - 0.186: Changed description to 'Fujitsu 29F160T Flash'.
 - 0.156: Added Fujitsu 29F160 Flash device.
+
+$end
+$info=full_memory
+$mame
+0.218
+
+SunPlus Full CS Memory Map, <unknown>, ????
+
+DRIVER:
+tvgames/generalplus_gpl16250_m.cpp
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Unsupported
+
+WIP:
+- 0.284: Device removed.
+- 0.218: Added 'SunPlus Full CS Memory Map' device.
 
 $end
 $info=gb_rom_188in1
@@ -7362,4 +7405,4 @@ WIP:
 $end
 #
 #
-#  © 2011/2025 AntoPISA
+#  © 2011/2026 AntoPISA
