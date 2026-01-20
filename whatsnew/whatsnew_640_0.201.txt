@@ -94,41 +94,41 @@ Zombie Revenge (Export) [Ordyne, MetalliC]
 
 New Working Software List Additions
 -----------------------------------
-ibm5150:
+ibm5150.xml:
   Murders in Space (CGA), Murders in Space (EGA), Murders in Space (VGA), Netherworld [ArcadeShadow]
   Math Blaster, Writer Rabbit [darksabre76]
   VTERM II (V2.00, newer), VTERM II (V2.00, older) [SomeGuy]
-ibm5170:
+ibm5170.xml:
   Compaq Portable Diagnostic Disk (SP0308), Intel 486 SX Microprocessor Demo [Foone Turing]
   ABS Self Running Demo, The All In One Boot Floppy 0.9, The All In One Boot Floppy 0.9 (FreeDOS only),
   The All In One Boot Floppy 0.9 (Lite Version), The All In One Boot Floppy 1.0, Disney's The Lion King,
   Disney's The Lion King (Playable Demo), Microsoft Productivity Pack for Windows, Microsoft Works 3.0b, NETCOM NetCruiser
   [Justin Kerk]
-pc98:
+pc98.xml:
   A Ressha de Ikou 4 ~ Take the A-Train IV - Map Construction + Power Up Kit (Cracked), A Ressha de Ikou III HD - Hard Disk Only,
   Akiko - Premium Version, Albatross, Albatross - Expert Course, Albatross - Meimon Course I - Oak Hills, Albatross - Visual Course,
   Albatross - World Course, Alone in the Dark 2, Alvaleak Boukenki, Amaranth II, Amaranth II (Alt System Disk), Ambition,
   Ancient Dragon, Angel Army, Animahjong X Perfect File, Animahjong X Perfect File (Alt), Animation Editor 'da Vinci-98',
   Art of War, Art of War - Kaisenban, Art of War Scenario Shuu, Assist Art - Paint Master, Dragons of Flame [Neo Kobe Collection]
-sorcerer_cass: The Count, Debug, Flight Simulator, Grotnik Wars, Nike II [Robbbert]
-uzebox:
+sorcerer_cass.xml:
+  The Count, Debug, Flight Simulator, Grotnik Wars, Nike II [Robbbert]
+uzebox.xml:
   Air Hockey, Columns, Fireman Rescue, Flight of a Dragon, Flight of a Dragon (demo), Ghosty Ghost, Pipes, Stormforce [ArcadeShadow]
 
 Software List Items Promoted to Working
 ---------------------------------------
-pc98:
+pc98.xml:
   3x3 Eyes - Sanjiyan Henjou, 3x3 Eyes - Sanjiyan Henjou (Alt Disk 1), 5 Jikanme no Venus, ASCII Otanoshimi Disk Vol. 13,
   ASCII Otanoshimi Disk Vol. 18, ASCII Otanoshimi Disk Vol. 6, ASCII Otanoshimi Disk Vol. 7, ASCII Otanoshimi Disk Vol. 8,
   ASCII Otanoshimi Disk Vol. 9, Ace of Spades, Advanced Power Dolls 2, Ai Shimai - Futari no Kajitsu,
   Akazukin Cha Cha - CG Works ver 1.00, Akumu - Aoi Kajitsu no Sanka, Alaskan Malamute G.C., Alice no Yakata II,
   Alice no Yakata III, Alien Zukan, Alone in the Dark, Amaranth III - Phantasie RPG, Amaranth IV - Abenteuerroman in Langsam,
   AmbivalenZ - Niritsu Haihan, Angel Halo, Angel Night - Yamiyo o Kakeru Tenshi-tachi no Monogatari, Animahjong X, Arcus,
-  Art Action, Ash., Assist Calc, Assist Card (Demo), Astroguide 1994, Fifth Element - Tamashii no Genso, U-Jin Presents - Angel
-  [Carl, r09]
+  Art Action, Ash., Assist Calc, Assist Card (Demo), Astroguide 1994, Fifth Element - Tamashii no Genso, U-Jin Presents - Angel [Carl, r09]
 
 New NOT_WORKING Software List Additions
 ---------------------------------------
-dc:
+dc.xml:
   Idol Janshi o Tsukucchaou (Jpn), Illbleed (Jpn), Incoming: Jinrui Saishuu Kessen (Jpn, Rev. 1), Inoue Ryouko: Last Scene (Jpn),
   Interlude (Jpn), Iris (Jpn), J.League Pro Soccer Club o Tsukurou! (Jpn), JRA PAT for Dreamcast (Jpn, V40L11),
   JRA PAT for Dreamcast (Jpn, V50L10), Jahmong (Jpn), Jet Coaster Dream 2 (Jpn), Jet Set Radio (Jpn),
@@ -173,14 +173,14 @@ dc:
   Net de Para: Nekosogi Paradise (Jpn), Nettou Golf (Jpn), Never 7: The End of Infinity (Jpn), Nightmare Creatures II (Euro),
   Nightmare Creatures II (Euro, Prototype 20000721), Nightmare Creatures II (USA), Nightmare Creatures II (USA, Prototype 20000509),
   Nobunaga no Yabou: Shouseiroku with Power-Up Kit (Jpn), Sega Mega Drive (World, Prototype 20010115), Test Drive Le Mans (USA) [FakeShemp]
-ibm5170:
+ibm5170.xml:
   Mitsumi IDE CD-ROM Driver [Justin Kerk]
-pc98:
+pc98.xml:
   A Ressha de Ikou 4 ~ Take the A-Train IV - Map Construction + Power Up Kit, Ami - Kaze Tachinu [Neo Kobe Collection]
 
 
 MAME Testers Bugs Fixed (11):
-----------------------------
+-----------------------------
 - 00867: [Sound] (seta.cpp) twineagl: Music samples do not play to completion (cam900)
 - 06001: [Crash/Freeze] (nes.cpp) nes: iNES Mapper 31 crashes with ROM sizes other than 1MB (rainwarrior)
 - 06192: [Documentation] (playch10.cpp) pc_rrngr: Incorrect year or manufacturer (sjy96525)
@@ -372,3 +372,4 @@ Source changes:
 - info.cpp: Adjusted indentation of DTD to better reflect structure [pxdnbluesoul].
 - segas32.cpp: Mapped second start button for F1 Exhaust Note [sjy96525].
 - vgmplay: Added software list to including titles from all major packagers (VGMRips, SMSPower, and Project2612) [Tafoid].
+- Bump MAME 0.201 [Vas Crabb].

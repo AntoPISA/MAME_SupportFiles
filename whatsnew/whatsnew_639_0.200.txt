@@ -42,9 +42,11 @@ Safe Cracker (1.0) [PinMAME]
 
 New Working Software List Additions
 -----------------------------------
-acrnsys_flop: Atom/System 3 File Server, System 3 Utilities, System 5 File Server, System BBC BASIC [Nigel Barnes]
-acrnsys_rom: Econet 2.40, Econet 3.40, Econet 3.50 [Nigel Barnes]
-camplynx_cass:
+acrnsys_flop.xml:
+  Atom/System 3 File Server, System 3 Utilities, System 5 File Server, System BBC BASIC [Nigel Barnes]
+acrnsys_rom.xml:
+  Econet 2.40, Econet 3.40, Econet 3.50 [Nigel Barnes]
+camplynx_cass.xml:
   3D Monster Craze, 6845p, Aide (Label-Procedures) (Fra), Backgammon, Battle Brick, Card Index (96K), Centipede, Chopin (Fra),
   Cinema (96K), Colossal Adventure, Compass, Dam Buster, Deathball, Digger Man, Disassembler (Fra), Dungeon Adventure, Floyds Bank,
   Games Pack III, Games Pack IV, Gobble de Spook, Grid Trap (Fra), Generateur Basic (Fra), Generateur de Caracteres (96K)(Fra),
@@ -54,31 +56,35 @@ camplynx_cass:
   Oh Mummy, Panik, Pengo, Planets, Power Blaster, Racer, Rising Moon, Rocketman, ScrabLynx (96K)(Fra), Screen Dump, Siege Attack,
   Space Trek, Spellbound, Star Rover, The Forest (96K), The Worm, The Worm (96K)(Fra), Treasure Island, Triangles (96K),
   Tron Blocker (96K)(Fra), Twinkle, Word Processor, Ynxvaders, Zombie Panic (Fra) [Nigel Barnes]
-ibm5150:
+ibm5150.xml:
   PC Globe 3.0, PC Globe 5.0 (Spanish), PC Globe 5.04, Starflight 2: Trade Routes of the Cloud Nebula (3.5") [ArcadeShadow]
   Cadaver (5.25"), Cadaver (3.5") [Chism]
   Cadaver (3.5", Quest and Glory Compilation) [Justin Kerk]
-ibm5170:
+ibm5170.xml:
   LucasArts Air Combat Classics, The Incredible Machine (alt), The Incredible Machine 2 [ArcadeShadow]
   Excel (Version 3.0a) [darksabre76]
   MS-DOS (Version 6.22, Thai) [Justin Kerk]
-st_flop: STE Language Disk (Swe, Rev. B) [FakeShemp]
-x68k_flop:
+st_flop.xml:
+  STE Language Disk (Swe, Rev. B) [FakeShemp]
+x68k_flop.xml:
   Ajisai (ldb_x68k conversion), Camerot (ldb_x68k conversion), Choro Choro, Choro Choro (ldb_x68k conversion),
   Cuarto (ldb_x68k conversion), Dungeon Management (ldb_x68k conversion), Galseed II (ldb_x68k conversion), Kurupon, Leshies,
-  My Today's Job (ldb_x68k conversion), Over Driver, Programan Ace -Source68, Sekai Seifuku Set (ldb_x68k conversion), Stein
-  [Wayder]
+  My Today's Job (ldb_x68k conversion), Over Driver, Programan Ace -Source68, Sekai Seifuku Set (ldb_x68k conversion), Stein [Wayder]
 
 New NOT_WORKING Software List Additions
 ---------------------------------------
-acrnsys_rom: System/3 Econet 1.48 [Nigel Barnes]
-ibm5150: PC Globe 4.0 [ArcadeShadow]
-ibm5170: POWER DoLLS [Justin Kerk]
-pc88va: Tetris (Bullet-Proof Software) [r09]
+acrnsys_rom.xml:
+  System/3 Econet 1.48 [Nigel Barnes]
+ibm5150.xml:
+  PC Globe 4.0 [ArcadeShadow]
+ibm5170.xml:
+  POWER DoLLS [Justin Kerk]
+pc88va.xml:
+  Tetris (Bullet-Proof Software) [r09]
 
 
 MAME Testers Bugs Fixed (2):
----------------------------
+----------------------------
 - 04621: [Timing] (ironhors.cpp) ironhors: 30fps framerate seems abnormal (Angelo Salese)
 - 07027: [Sound] (vegas.cpp) warfa (and maybe clones): DCS2 OS Version Test Failed (Ted Green)
 
@@ -205,3 +211,4 @@ Source changes:
   * Removed "Ninin Battle (Alt)", it's a modified copy;
   * Updated/corrected missing dumps, release years, and Japanese titles.
 - ibm5170: Fixed typo in interface for Turbo Pascal 6.01 (German) [xinyingho].
+- Bump MAME 0.200 [Vas Crabb].

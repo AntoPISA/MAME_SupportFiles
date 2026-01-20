@@ -112,40 +112,50 @@ VTech Storio (ES, Spanish, 2011-06-17?) [Sean Riddle, ClawGrip]
 
 New Working Software List Additions
 -----------------------------------
-electron_flop:
+electron_flop.xml:
   Stop Press 64 [Derek Walker]
   HeadFirst PD Disk E000/M000/B000, HeadFirst PD Disk E001/M005/B001, HeadFirst PD Disk E002/M006/B002, HeadFirst PD Disk E003, HeadFirst PD Disk E004, HeadFirst PD Disk E005, HeadFirst PD Disk E006, HeadFirst PD Disk E007, HeadFirst PD Disk E008, HeadFirst PD Disk E009, HeadFirst PD Disk E010/M009/B005, HeadFirst PD Disk E011, HeadFirst PD Disk E013, HeadFirst PD Disk E015/M015/B014, HeadFirst PD Disk E016/M016/B015, HeadFirst PD Disk E017, HeadFirst PD Disk M013/B012 [everygamegoing.com]
-fmtowns_flop: DOR, DOR Part 3, Elle [r09]
-gameking: 4 in 1 - Chaser + Blaster + StarWars + Nagual (set 2) [sCZther, TeamEurope]
-gameking3: Falcon Corps, Search Action, Vagrant [sCZther, TeamEurope]
-ibm5170: Sleepwalker, UFO - Enemy Unknown (Italy) [ArcadeShadow]
-pce: R-Type Part-2 (alt) [Maddog]
-samcoupe_cass: F-16 Combat Pilot (demo) [TwistedTom]
-samcoupe_flop:
+fmtowns_flop.xml:
+  DOR, DOR Part 3, Elle [r09]
+gameking.xml:
+  4 in 1 - Chaser + Blaster + StarWars + Nagual (set 2) [sCZther, TeamEurope]
+gameking3.xml:
+  Falcon Corps, Search Action, Vagrant [sCZther, TeamEurope]
+ibm5170.xml:
+  Sleepwalker, UFO - Enemy Unknown (Italy) [ArcadeShadow]
+pce.xml:
+  R-Type Part-2 (alt) [Maddog]
+samcoupe_cass.xml:
+  F-16 Combat Pilot (demo) [TwistedTom]
+samcoupe_flop.xml:
   Boing!, Defenders Of The Earth, Sam Coupe System Disk (SAMDOS v1.1), Sam Coupe System Disk (SAMDOS v2.0), Sam Strikes Out!, Sphera [TwistedTom]
-spectrum_cass: Los Gnomos - David el Gnomo [RetroLEL]
-spectrum_mgt_flop: Plus D System Disk v1 [TwistedTom]
-vectrex:
+spectrum_cass.xml:
+  Los Gnomos - David el Gnomo [RetroLEL]
+spectrum_mgt_flop.xml:
+  Plus D System Disk v1 [TwistedTom]
+vectrex.xml:
   3D Scape Demo Collection, All Good Things, City Bomber, Continuum, Hexed!, Lord of the Robots, Moon Lander, Nebula Commander, Patriots, Performance VX, Protector and Y*A*S*I, Revector, Rockaroids Remix, Ronen's Games Cart, Royal 21, Sectis, Spike Hoppin', Spike's Water Balloons - Analog Version, Thrust (1.2), Thrust (Final 1.01), Vector 21, Vector Vaders, Vectrex Frogger, Verzerk (Berzerk hack), War of the Robots, War of the Robots - Bow to the Queen, Zantis [Justin Kerk]
 
 Software List Items Promoted to Working
 ---------------------------------------
-jaguar:
+jaguar.xml:
   Bubsy in Fractured Furry Tales, Cannon Fodder, Double Dragon V - The Shadow Falls, Dragon - The Bruce Lee Story, Hyper Force, Pinball Fantasies, Raiden, Raiden (Rev. A), Rayman, Sensible Soccer - International Edition, Soccer Kid, Soccer Kid (Re-release, Hacked), Towers II - Plight of the Stargazer, Worms, Zero 5, Zool 2 [Angelo Salese]
 
 
 New NOT_WORKING Software List Additions
 ---------------------------------------
-gcslottv: Aladdin TV, Ginginmaru TV, Moju-o TV, Salaryman Kintaro [Sean Riddle, Peter Wilhelmsen, ShouTime, David Haywood]
-leapfrog_leappad_cart: Was ist das? von Richard Scarry (Germany) [TeamEurope, FakeShemp]
-pico:
+gcslottv.xml:
+  Aladdin TV, Ginginmaru TV, Moju-o TV, Salaryman Kintaro [Sean Riddle, Peter Wilhelmsen, ShouTime, David Haywood]
+leapfrog_leappad_cart.xml:
+  Was ist das? von Richard Scarry (Germany) [TeamEurope, FakeShemp]
+pico.xml:
   The Muppets on the Go! (prototype 19950721), The Muppets on the Go! (prototype 19960301), The Muppets on the Go! (prototype 19960313), The Muppets on the Go! (prototype 19960322, set 1), The Muppets on the Go! (prototype 19960322, set 2), The Muppets on the Go! (prototype 19960324), The Muppets on the Go! (prototype 19960329), The Muppets on the Go! (prototype 19960330, set 1), The Muppets on the Go! (prototype 19960330, set 2) [Demon, FakeShemp]
-sega_beena_cart:
+sega_beena_cart.xml:
   Pocket Monsters Diamond & Pearl Pokemon o Sagase! Meiro de Daibouken!, Samurai Sentai Shinkenger Battle ga Ippai! Iza Mairu!, Shoku Iku Series 1 Soreike! Anpanman-Sukikirai Nai Ko Genki na Ko!, Soreike! Anpanman Hajimete Kaketa yo! Oboeta yo! Hiragana Katakana - Gojuuon Board Kinou-tsuki, Yes! PreCure 5 Asonde Oboeyou Hiragana! [TeamEurope, FakeShemp]
 
 
 MAME Testers Bugs Fixed (15):
-----------------------------
+-----------------------------
 - 00232: [Graphics] (skyfox.cpp) exerizerb, skyfox: Missing parallax effect (sasuke)
 - 04344: [Graphics] (galivan.cpp) ninjemak and clones: Continue countdown on game over displays incorrectly (sasuke)
 - 05380: [Interface] (apple2gs.cpp) apple2gs: Command-line media options not recognised for cards set in INI file (R. Belmont)
@@ -176,9 +186,9 @@ Source changes:
 - armedf.cpp, galivan.cpp: Cleaned up video configuration, and converted to raw screen parameters [Angelo Salese].
 - galivan.cpp: Added interrupt acknowledge signal [Angelo Salese].
 - nb1414m4.cpp: Improved notes and added a frame synchronization stub [Angelo Salese].
-- Re-implemented ARM IOMD and VIDC20 emulation as devices [Angelo Salese].
-  * Both ssfindo.cpp and riscpc.cpp now share the same implementation.
-  * Allows riscpc to reach desktop mode with valid non-volatile RAM contents.
+- Re-implemented ARM IOMD and VIDC20 emulation as devices [Angelo Salese]:
+  * Both ssfindo.cpp and riscpc.cpp now share the same implementation;
+  * Allows riscpc to reach desktop mode with valid non-volatile RAM contents;
   * Adds preliminary soudn for ppcar.
 - Add low latency option to internal user interface [Antonio Giner].
 - namcos2.cpp: Reduced duplication in machine configurations and memory maps, and updated notes [cam900].
@@ -188,18 +198,18 @@ Source changes:
 - namco_c355spr.cpp: Fixed priorities when priority 0 sprites aren't the first layer drawn [cam900].
 - sknsspr.cpp: Corrected high-precision sprite shrinking algorithm and changed position values to 10.6 fixed point format [cam900].
 - tecmosys.cpp updates [cam900]:
-  * Added sprite graphics decoding description, cleaned up sprite drawing code and restricted drawing to clipping rectangle.
+  * Added sprite graphics decoding description, cleaned up sprite drawing code and restricted drawing to clipping rectangle;
   * Cleaned up code and added notes.
 - bnstars.cpp, ms32.cpp, tetrisp2.cpp: Moved sprite drawing to a common device, improved sprite zoom, and cleaned up code [cam900].
 - ms32.cpp: Fixed sprite delay [cam900].
 - plugins/cheatfind: Added support for entering cheat names [Carl].
 - netlist: Reduced visibility of some matrix solver members [Couriersud].
 - vt1682 updates [David Haywood]:
-  * Swapped background pen fall-through for boxing game.
+  * Swapped background pen fall-through for boxing game;
   * Adjusted timing of line rendering to improve racing games.
 - sunplus_gcm394.cpp: Improved DMA, banking and video addressing [David Haywood].
 - cpu/unsp updates [David Haywood]:
-  * Implemented goto mr, mul su, lslor, exp, jvc and jvs instructions.
+  * Implemented goto mr, mul su, lslor, exp, jvc and jvs instructions;
   * Added stubs for u'nSP 2.0 unimplemented extended instructions and registers.
 - dreamwld.cpp: Hooked up microcontroller. Also replaced simulation of undumped microcontrollers with hacked versions of the dreamwld program replacing the payload [David Haywood].
 - lua: Exposed address space address mask, data width and endianness [feos].
@@ -216,18 +226,18 @@ Source changes:
 - model1.cpp: Changed hard-coded background pen, giving better results [Olivier Galibert].
 - apple2.cpp: Perform single-pixel shift for monochrome high-resolution graphics with bit 7 set [R. Belmont, SoltanGris42].
 - apple2.cpp updates [R. Belmont]:
-  * Added Autostart Monitor BIOS option to apple2.
-  * Fixed crash when running apple2 or apple2p without a card in slot 0.
+  * Added Autostart Monitor BIOS option to apple2;
+  * Fixed crash when running apple2 or apple2p without a card in slot 0;
   * Updated palette to use latest calculated values from Apple II Video Display Theory (MT07482).
 - apple2gs updates [R. Belmont]:
-  * Clear vertical blanking and quarter-second interrupts on reading (as well as writing) $C047 [R. Belmont].
+  * Clear vertical blanking and quarter-second interrupts on reading (as well as writing) $C047;
   * Raise ADB interrupt on mouse axis movement (MT06782).
 - bus/a2gameio: Added support for paddles [R. Belmont].
 - bus/a2bus: Added support for to $C074 control register to TransWarp accelerator card emulation. Also added TransWarp card as an option for apple2 and apple2p (in addition to the apple2e family) [R. Belmont].
 - z80ne.cpp, zn.cpp: Split up large state classes by machine type and reduced reliance on deprecated machine configuration features [Ryan Holtz].
 - terracre.cpp: Added support for disabling the foreground text layer (MT07494) [sasuke].
 - galivan.cpp updates [sasuke]:
-  * Added support for disabling the text layer, and fixed text colors for galivan, dangar, and clones (MT06946, MT07493).
+  * Added support for disabling the text layer, and fixed text colors for galivan, dangar, and clones (MT06946, MT07493);
   * Suppressed drawing tiles from memory locations used for NB1414M4 parameters.
 - ssrj.cpp: Always show difficulty DIP switches [sasuke].
 - skyfox.cpp: Reimplemented background star drawing [sasuke].
@@ -236,28 +246,28 @@ Source changes:
 - crgolf:cpp: Fixed coinage DIP switches [sasuke].
 - armedf.cpp, galivan.cpp: Adjusted sound balance to match PCB recordings [sasuke].
 - nb1414m4.cpp updates [sasuke]:
-  * Fixed attribute fill when erasing blinking objects.
-  * Suppress insert coin prompt when in game (flag supplied by game program).
-  * Improved game over display.
-  * Improved kozure score display.
-  * Ignore repeated fill/DMA commands (fixes MT04344).
- * Cleaned up code a little.
+  * Fixed attribute fill when erasing blinking objects;
+  * Suppress insert coin prompt when in game (flag supplied by game program);
+  * Improved game over display;
+  * Improved kozure score display;
+  * Ignore repeated fill/DMA commands (fixes MT04344);
+  * Cleaned up code a little.
 - bus/spectrum: Added MGT +D G+DOS v1 BIOS option [TwistedTom].
 - samcoupe.cpp: Fixed colours in graphics modes 1 and 2, and added joysticks [TwistedTom].
 - bus/spectrum: Added ROM from a Brazilian Multiface One clone as a BIOS option [TwistedTom].
 - Added overridden new/delete operators to pre-fill memory in debug builds (can help identify uninitialised members) [Vas Crabb].
 - osborne1.cpp updates [Vas Crabb]:
-  * Made SCREEN-PAC video a clone machine rather than a configuration setting as it's a hardware modification.
-  * Added additional default input mappings for the keys wired in parallel, and added backspace as an alias for cursor left.
-  * Put the screen parameters used by the Nuevo Video BIOS in its machine configuration (improves automatic resolution selection).
+  * Made SCREEN-PAC video a clone machine rather than a configuration setting as it's a hardware modification;
+  * Added additional default input mappings for the keys wired in parallel, and added backspace as an alias for cursor left;
+  * Put the screen parameters used by the Nuevo Video BIOS in its machine configuration (improves automatic resolution selection);
   * Improved performance a little, cleaned up code, and updated notes.
 - input_sdl.cpp: Added checks to ignore joystick buttons beyond maximum supported by structures [Vas Crabb].
 - Added support for saving members of structures in arrays, and added support for automatically saving output values [Vas Crabb].
 - Enhanced -listxml, -listsoftware, -getsoflist and -romident to support software lists enabled by slot card devices [Vas Crabb].
 - minimaws updates [Vas Crabb]:
-  * Added support for software lists in web pages and romident verb.
-  * Added clone listing to machine pages as well as software pages.
-  * Added identification of fixed bit patterns up to 128 bits long to web-based ROM identification code.
+  * Added support for software lists in web pages and romident verb;
+  * Added clone listing to machine pages as well as software pages;
+  * Added identification of fixed bit patterns up to 128 bits long to web-based ROM identification code;
   * Reduced network requests required to initial load a machine page.
 - hh_sm510.cpp: Set 16-way flag for Game & Watch games that don't physically prevent contradictory directions being pressed [algestam].
 - mephisto_mm2.cpp: Added two more Mephisto MM IV revisions [Berger].
@@ -277,23 +287,24 @@ Source changes:
 - taitopjc.cpp: Dumped PALs for optiger [jordigahan, ClawGrip].
 - missbamby.cpp: Dumped PROM for msbamby [jordigahan, ClawGrip].
 - rcm32p.cpp: Improved ROM labels based on PCB pictures [Lord Nightmare, ValleyBell].
-- triforce.cpp updates. [Lord Nightmare].:
-  * Marked mkartagp, mkartag2 and mkartag2a Flash ROM dumps chips as bad as data is missing.
-  * Fixed mkartagp ROM mapping/interleaving.
+- triforce.cpp updates. [Lord Nightmare]:
+  * Marked mkartagp, mkartag2 and mkartag2a Flash ROM dumps chips as bad as data is missing;
+  * Fixed mkartagp ROM mapping/interleaving;
   * Documented Flash block remapping lookup ROM and Flash metadata.
 - chihiro.cpp: Replaced Ghost Squad security data with real PIC16 key firmware (dumped from an original but unprotected device) [MajorPBX].
 - dccons.cpp: Added Katana BIOS v0.976 [MajorPBX, MetalliC].
 - fmtowns_flop.xml: Added Japanese titles for most entries [r09]:
 - at.cpp updates [rfka01]:
-  * Added tg286m BIOS option to atturbo.
-  * Added mrv135 BIOS option to at386.
-  * Added mrv130 BIOS option to op82c391.
-  * Added op495slc04 BIOS option to opti495slc.
-  * Added ali148902 BIOS option to alim1489.
-  * Added lh5 BIOS option to ls486e.
-  * Added 2014 BIOS option to mb8433uud.
+  * Added tg286m BIOS option to atturbo;
+  * Added mrv135 BIOS option to at386;
+  * Added mrv130 BIOS option to op82c391;
+  * Added op495slc04 BIOS option to opti495slc;
+  * Added ali148902 BIOS option to alim1489;
+  * Added lh5 BIOS option to ls486e;
+  * Added 2014 BIOS option to mb8433uud;
   * Added shuttle BIOS option to hot433.
 - model2.cpp Added DIP switches to all Model 2 boards (used for debug features in some games) [RyogaMasaki].
 - gameking.xml, gameking3.xml: Added some metadata about cartridge types [TeamEurope].
 - rainbow.cpp: Added Rainbow model A ROMs [tradde, Bitsavers, rfka01].
 - Added company names to a number of software list descriptions [Wintermute 0110].
+- Bump MAME 0.217 [Vas Crabb].

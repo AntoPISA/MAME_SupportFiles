@@ -2,39 +2,7 @@
 -----------------------------------
 
 
-MAME Testers Bugs Fixed
------------------------
-- 00505: [Graphics] (konami/mainevt.cpp) devstors: Sprites are distorted at some sizes (hap)
-- 00816: [Graphics] (irem/m72.cpp) bchopper, mrheli: The status bar is shown twice in the second stage (hap)
-- 02014: [Graphics] (konami/aliens.cpp) All games in aliens.cpp: Some sprites are not displayed correctly (hap)
-- 03644: [Graphics] (konami/tmnt2.cpp) tmnt2, ssriders, suratk: Highlight and shadow effects are incorrect (hap)
-- 05342: [Crash/Freeze] (irem/m92.cpp) majtitl2, skingame, majtitl2j, skingame2: The game hangs if the screen is flipped (hap)
-- 06021: [Graphics] (irem/m92.cpp) nbbatman, nbbatmanu: The game map and shadow effects are drawn incorrectly (hap)
-- 06651: [Graphics] (konami/tmnt2.cpp) qgakumon: The bonus screen background is drawn incorrectly (hap)
-- 06652: [Speed] (konami/tmnt2.cpp) qgakumon: Transitions between screens are very slow (hap)
-- 06873: [Graphics] (konami/aliens.cpp) aliens and clones: The second player is sometimes displayed with incorrect graphics (hap)
-- 07445: [DIP/Input] (sega/model2.cpp) sgt24h, overrev: Pedal controls are reversed (Angelo Salese)
-- 07595: [Graphics] (technos/ddragon3.cpp) ctribe: The player sprite is displayed incorrectly in some situations (hap)
-- 07725: [DIP/Input] (irem/m92.cpp) gunforc2, geostorm: The difficulty DIP switch setting labels are incorrect (Leeloo)
-- 08275: [Graphics] (konami/tmnt2.cpp) thndrx2, thndrx2a, thndrx2j: Background graphics are incorrect on the second stage (hap)
-- 08785: [Sound] (tecmo/tecmo.cpp) gemini and silkworm: The balance between the sound chips is incorrect (hap)
-- 09191: [Graphics] (konami/bottom9.cpp) bottom9: Close-up action graphics are displayed incorrectly (hap)
-- 09192: [Sound] PortAudio: The emulator exits if WASAPI is selected and no audio inputs are connected (Olivier Galibert)
-- 09193: [Graphics] (igs/igs017.cpp) jking200pr and all starzan dependents: Pink whale symbols are displayed (Ivan Vangelista)
-- 09195: [Misc.] PortAudio: Available audio outputs and inputs are not logged (hap)
-- 09200: [Sound] (tecmo/senjyo.cpp) starforc: Some sounds intermittently fail to play (hap)
-- 09201: [Sound] (yachiyo/ssingles.cpp) ssingles: The music pitch is incorrect (hap)
-- 09204: [Interface] UI: The Audio Mixer menu highlight is not updated when changing settings that recreate routes (hap)
-- 09205: [Graphics] (irem/m72.cpp) mrheli, bchopper: Some objects are incorrectly displayed above backgrounds (hap)
-- 09212: [Misc.] (konami/twinkle.cpp) bmiidx2, bmiidx3, bmiidx4, bmiidx5, bmiidx6, bmiidx7, bmiidx8: Games fail to boot (AJR)
-- 09220: [Speed] (eolith/ghosteo.cpp) bballoon: Attract mode does not run correctly and it is not possible to start a game (AJR)
-- 09221: [Graphics] (capcom/cps2.cpp) msh: The Chaos Dimension super attack for Shuma Gorath is not displayed correctly (hap)
-- 09223: [Crash/Freeze] (atlus/cave.cpp) crusherm, korokoro: The game stops with an error after completing a stage (hap)
-- 09225: [Crash/Freeze] (exidy/circus.cpp) robotbwl: The emulated game fails to start properly (hap)
-- 09226: [Crash/Freeze] (meadows/meadows.cpp) minferno: The emulator crashes on starting the system (hap)
-
-
-New working systems
+New Working Systems
 -------------------
 Bandai Hyakujuu Sentai Gaoranger Soul Bird: Animal Kyuushutsu Daisakusen (Japan) [David Haywood, TeamEurope]
 Conny / VideoJet Plug Play TV Games 1 (4-in-1) (VideoJet, France) [TeamEurope]
@@ -45,7 +13,7 @@ Hasbro / Tiger Electronics Mission: Paintball Trainer [David Haywood, TeamEuro
 To Heart House [hammy]
 Typo Vintage Gamer 240-in-1 [AJR, David Haywood, TeamEurope]
 
-New working clones
+New Working Clones
 ------------------
 7 Smash (set 2) [hammy]
 280-ZZZAP (set 2) [Sillicon]
@@ -62,13 +30,13 @@ Psion Series 3mx (Dutch) [Tsu]
 Saitek / Heuristic Software Kasparov Renaissance (set 2) [Berger]
 Zuanshi II (version V153A) [Mr.Fu]
 
-Systems promoted to working
+Systems Promoted to Working
 ---------------------------
 JAKKS Pacific Inc / Jolliford Management Scooby-Doo! and the Mystery of the Castle (JAKKS Pacific TV Game, Game-Key Ready) [AJR, Sean Riddle, David Haywood]
 Slime Kun [hap]
 Tsururin Kun [hap]
 
-New systems marked not working
+New Systems Marked not Working
 ------------------------------
 ADP Merkur Service Testgerät [edal12, stonedDiscord]
 Bandai / SSD Company LTD Let's! TV Play Dragon Ball Z Battle Experience Kamehameha (Japan) [David Haywood, TeamEurope]
@@ -122,7 +90,7 @@ unknown YungYu game [Roberto Fresca, little0]
 VideoJet / Conny PDC M2 [TeamEurope]
 Zhongji Dou Dizhu (V204CN) [little0, Mr. Kong]
 
-New clones marked not working
+New Clones Marked not Working
 -----------------------------
 Acorn Computers Atom with RAMROM [Nigel Barnes]
 Arthur's Knights (v1.00) [Ioannis Bampoulas]
@@ -159,33 +127,37 @@ Sharp MZ-6550 [sharpmz.org, Anna Wu]
 Western Venture (Ver. AA.01.B) [Ioannis Bampoulas]
 Western Venture (Ver. AA.02.E) [Ioannis Bampoulas]
 
-New working software list items
+New Working Software List Items
 -------------------------------
-ibmpcjx: Eiyuu Densetsu Saga, Polar Star III [Cyb2600]
-juicebox:
+ibmpcjx.xml:
+  Eiyuu Densetsu Saga, Polar Star III [Cyb2600]
+juicebox.xml:
   Dexter's Laboratory - Episode 51 (H6247), Ed, Edd n Eddy - Episode 39 (H2679),
   Juicebox Music Video - Avril Lavigne, The Calling, Clay Aiken (H2681),
   Juicebox Music Video - Liz Phair, Stacie Orrico, Skye Sweetnam, Zoegirl (H6254), Vans Triple Crown Volume 1 (BMX) (H2688),
   Vans Triple Crown Volume 2 (Skateboarding) (H2689) [Sean Riddle]
-kim1_cass: Baseball, FOCAL-65 (V3D), Hexpawn, MOS TECH 6502 BASIC 6-digit, MOS TECH 6502 BASIC 9-digit v1.1, Micro-ADE [Hans Otten]
-mz80b_flop: Disk BASIC/A SB-6510 Technik Diskette, MZ-80B Games [archive.org]
-mz2000_cass: Amateur Tennis, Door Door, Kyofu no Alien, Space Bee, Spy Daisakusen, Walk Wan [archive.org]
-mz2500_flop:
+kim1_cass.xml:
+  Baseball, FOCAL-65 (V3D), Hexpawn, MOS TECH 6502 BASIC 6-digit, MOS TECH 6502 BASIC 9-digit v1.1, Micro-ADE [Hans Otten]
+mz80b_flop.xml:
+  Disk BASIC/A SB-6510 Technik Diskette, MZ-80B Games [archive.org]
+mz2000_cass.xml:
+  Amateur Tennis, Door Door, Kyofu no Alien, Space Bee, Spy Daisakusen, Walk Wan [archive.org]
+mz2500_flop.xml:
   Balloon Fight, F2 Grand Prix, Galaga, King Flappy, Lizard, Meurtre d'un Clown - Dokeshi Satsujin Jiken, Re-Birth,
   Sangokushi (Ver 3.2 05-Mar-1987) [archive.org]
-psx:
+psx.xml:
   A2 Racer: Europa Tour (Netherlands), Ace Combat 2 (Europe), Ace Combat 2 (France), Ace Combat 2 (Germany), Ace Combat 2 (Japan),
   Ace Combat 2 (Japan, rev. 1) (PlayStation the Best), Ace Combat 3: Electrosphere (Direct Audio with AppenDisc) (Japan),
   Ace Combat 3: Electrosphere (Japan), Ace Combat 3: Electrosphere (Japan, rev. 1), Ace Combat 3: Electrosphere (Europe),
   Action Bass (Europe), Action Bass (Japan), Action Man - Destruction X (Europe), Action Man - Mission Xtreme (Europe) (with EDC),
   Action Man - Operation eXtreme (USA), Adidas Power Soccer 2 (Europe), AFL '99 (Australia), AirRace Championship (Japan),
   Anastasia (Europe) [redump.org]
-pv1000: Mazy2, Mieyen [Inufuto]
-zx81_cass:
+pv1000.xml:
+ MMazy2, Mieyen [Inufuto]
+zx81_cass.xml:
   Cosmic Payback (v1.0) [John Connolly]
   Sconnex [orac81]
-  Cassette 1 (Astro), Minefield, Space Shuttle, Spelling Tutor, Treasure Island, ZX81 Program Pack 4 (alt)
-  [Planeta Sinclair, Mark Westmoreland, Steven Brown]
+  Cassette 1 (Astro), Minefield, Space Shuttle, Spelling Tutor, Treasure Island, ZX81 Program Pack 4 (alt) [Planeta Sinclair, Mark Westmoreland, Steven Brown]
   ZX81 Program Pack 5 (alt) [Planeta Sinclair, Paul Farrow, Steven Brown]
   Battle Ships (type-in?), Chomp (type-in, ZX Computing № 2 - August 1982), Higher-Lower (type-in, Sinclair Programs),
   Personal Financial Planning (type-in, Sinclair Projects № 11 - August/September 1984), Sandown (type-in?),
@@ -193,12 +165,12 @@ zx81_cass:
   Juego de las Parejas (type-in, Revista Española de Electrónica - Agosto-Septiembre 1982), Mini Comecocos (type-in),
   Short Circuit (type-in, Your Computer Vol. 5 № 11 - November 1985) [Planeta Sinclair, Toniu Puig]
 
-Software list items promoted to working
+Software List Items Promoted to Working
 ---------------------------------------
-32x:
+32x.xml:
   SoulStar X (USA, prototype), Star Wars Arcade (Europe), Star Wars Arcade (Japan), Star Wars Arcade (USA),
   WWF WrestleMania - The Arcade Game (USA) [Angelo Salese]
-cdtv:
+cdtv.xml:
   American Heritage Illustrated Encyclopedic Dictionary (USA, 1991a Edition), Apprenez l'Anglais Avec Astérix - Asterix and Son,
   The Assassins CD 3, The Assassins Ultimate CD Games Collection, The Assassins Ultimate Games Volume 2, Barney Bear Goes Camping,
   Battlestorm, The Case of the Cautious Condor, Casino Games, CDTV Demo Disc (Europe), Cinderella - The Original Fairy Tale (USA),
@@ -217,28 +189,67 @@ cdtv:
   Time Table of History - Science and Innovation (USA, 1991a Edition), Trivial Pursuit - The CDTV Edition (Europe, v1.0a),
   Turrican (Germany, alt), Turrican II: The Final Fight (Germany, alt), Welcome to CDTV Multimedia (367808-01 33),
   Welcome to CDTV Multimedia (USA, CDRM-499000), World Vista [Dirk Best, Angelo Salese]
-mz2500_flop: Dust Box '91 Special - August '91, Dust Box Vol. 2 [Angelo Salese]
+mz2500_flop.xml:
+  Dust Box '91 Special - August '91, Dust Box Vol. 2 [Angelo Salese]
 
-New software list items marked not working
+New Software List Items Marked not Working
 ------------------------------------------
-duelmast_cart: Duel Masters: Duel Station Ver.1 [David Haywood, TeamEurope]
-ibmpcjx:
+duelmast_cart.xml:
+  Duel Masters: Duel Station Ver.1 [David Haywood, TeamEurope]
+ibmpcjx.xml:
   Shiro Densetsu [Cyb2600]
   Jelda II [Justin Kerk]
-mz80b_cass: BASIC SB-5510, BASIC SP-5025, Disk BASIC SB-6510, Disk BASIC SB-6511, Disk BASIC SB-6610, Vosque [archive.org]
-mz2000_cass: Flight Simulator & Bacteria, Puck Man [archive.org]
-mz2500_flop:
+mz80b_cass.xml:
+  BASIC SB-5510, BASIC SP-5025, Disk BASIC SB-6510, Disk BASIC SB-6511, Disk BASIC SB-6610, Vosque [archive.org]
+mz2000_cass.xml:
+  Flight Simulator & Bacteria, Puck Man [archive.org]
+mz2500_flop.xml:
   Marvelous [archive.org]
   Hashire! Skyline (V1.2A) [unknown]
-mz5500_flop:
+mz5500_flop.xml:
   Extended CP/M-86 (V1.1A) MS-DOS v2.11 (MZ-5500 V1.1A) [sharpmz.org, Anna Wu]
   MS-DOS v2.11 (MZ-5500 V1.0A), MS-DOS v2.11 (MZ-6500 V2.0A), MS-DOS v2.11 (MZ-6550 V1.1A) [Anna Wu]
-pasopia7_cass: 3D Golf Simulation, Space Battle Ship, Space Shooter [archive.org]
-pc100_flop: Dynapix, MS-DOS v2.01, N-100 Basic (Ver 1.0), N-100 Basic (Ver 1.0, alt) [Anna Wu]
-psx: Adidas Power Soccer (Europe) [redump.org]
-smartcycle_cart:
+pasopia7_cass.xml:
+  3D Golf Simulation, Space Battle Ship, Space Shooter [archive.org]
+pc100_flop.xml:
+  Dynapix, MS-DOS v2.01, N-100 Basic (Ver 1.0), N-100 Basic (Ver 1.0, alt) [Anna Wu]
+psx.xml:
+  Adidas Power Soccer (Europe) [redump.org]
+smartcycle_cart.xml:
   Dora l'Exploratrice - Dora L'Aventure de l'Amitié (France), Hot Wheels - Pédale à Toute Vitesse (France),
   À la Découverte des Dinosaures (France) [TeamEurope]
+
+
+MAME Testers Bugs Fixed (28):
+-----------------------------
+- 00505: [Graphics] (konami/mainevt.cpp) devstors: Sprites are distorted at some sizes (hap)
+- 00816: [Graphics] (irem/m72.cpp) bchopper, mrheli: The status bar is shown twice in the second stage (hap)
+- 02014: [Graphics] (konami/aliens.cpp) All games in aliens.cpp: Some sprites are not displayed correctly (hap)
+- 03644: [Graphics] (konami/tmnt2.cpp) tmnt2, ssriders, suratk: Highlight and shadow effects are incorrect (hap)
+- 05342: [Crash/Freeze] (irem/m92.cpp) majtitl2, skingame, majtitl2j, skingame2: The game hangs if the screen is flipped (hap)
+- 06021: [Graphics] (irem/m92.cpp) nbbatman, nbbatmanu: The game map and shadow effects are drawn incorrectly (hap)
+- 06651: [Graphics] (konami/tmnt2.cpp) qgakumon: The bonus screen background is drawn incorrectly (hap)
+- 06652: [Speed] (konami/tmnt2.cpp) qgakumon: Transitions between screens are very slow (hap)
+- 06873: [Graphics] (konami/aliens.cpp) aliens and clones: The second player is sometimes displayed with incorrect graphics (hap)
+- 07445: [DIP/Input] (sega/model2.cpp) sgt24h, overrev: Pedal controls are reversed (Angelo Salese)
+- 07595: [Graphics] (technos/ddragon3.cpp) ctribe: The player sprite is displayed incorrectly in some situations (hap)
+- 07725: [DIP/Input] (irem/m92.cpp) gunforc2, geostorm: The difficulty DIP switch setting labels are incorrect (Leeloo)
+- 08275: [Graphics] (konami/tmnt2.cpp) thndrx2, thndrx2a, thndrx2j: Background graphics are incorrect on the second stage (hap)
+- 08785: [Sound] (tecmo/tecmo.cpp) gemini and silkworm: The balance between the sound chips is incorrect (hap)
+- 09191: [Graphics] (konami/bottom9.cpp) bottom9: Close-up action graphics are displayed incorrectly (hap)
+- 09192: [Sound] PortAudio: The emulator exits if WASAPI is selected and no audio inputs are connected (Olivier Galibert)
+- 09193: [Graphics] (igs/igs017.cpp) jking200pr and all starzan dependents: Pink whale symbols are displayed (Ivan Vangelista)
+- 09195: [Misc.] PortAudio: Available audio outputs and inputs are not logged (hap)
+- 09200: [Sound] (tecmo/senjyo.cpp) starforc: Some sounds intermittently fail to play (hap)
+- 09201: [Sound] (yachiyo/ssingles.cpp) ssingles: The music pitch is incorrect (hap)
+- 09204: [Interface] UI: The Audio Mixer menu highlight is not updated when changing settings that recreate routes (hap)
+- 09205: [Graphics] (irem/m72.cpp) mrheli, bchopper: Some objects are incorrectly displayed above backgrounds (hap)
+- 09212: [Misc.] (konami/twinkle.cpp) bmiidx2, bmiidx3, bmiidx4, bmiidx5, bmiidx6, bmiidx7, bmiidx8: Games fail to boot (AJR)
+- 09220: [Speed] (eolith/ghosteo.cpp) bballoon: Attract mode does not run correctly and it is not possible to start a game (AJR)
+- 09221: [Graphics] (capcom/cps2.cpp) msh: The Chaos Dimension super attack for Shuma Gorath is not displayed correctly (hap)
+- 09223: [Crash/Freeze] (atlus/cave.cpp) crusherm, korokoro: The game stops with an error after completing a stage (hap)
+- 09225: [Crash/Freeze] (exidy/circus.cpp) robotbwl: The emulated game fails to start properly (hap)
+- 09226: [Crash/Freeze] (meadows/meadows.cpp) minferno: The emulator crashes on starting the system (hap)
 
 
 Merged pull requests
@@ -355,7 +366,7 @@ Source changes
 - nes_vt32_soc: Fallthrough typo [hap].
 - Fix parent relationships (#13881) [stonedDiscord].
 - Add Mieyen and Mazy2 homebrew games to PV-1000 software list (#13717) [David Vicens].
--sega/model2: implement proper lighting; improve "gamma" table (#13880). Stadium ads in Virtua Striker have the correct colors now [Matthew Daniels].
+- sega/model2: implement proper lighting; improve "gamma" table (#13880). Stadium ads in Virtua Striker have the correct colors now [Matthew Daniels].
 - hhgc319: Descramble address and data lines; transfer to nes_vt32.cpp driver [AJR].
 - hhgc319: Even more descrambling [AJR].
 - bittboy, fapocket, mc_hh210, q5_500in1, retro400, unk2019hh, unk2020hh: Transplant to nes_vt32.cpp driver [AJR].
@@ -363,7 +374,7 @@ Source changes
 - nes_vt369_vtunknown.cpp: Further cleanup [AJR].
 - apple2gs: Writes to INTEN clear corresponding int flags [Peter Ferrie].
 - fapocket: Fix cartridge select [AJR].
-- crimfght, vendetta: set VIDEO_UPDATE_AFTER_VBLANK flag [hap].
+- crimfght, vendetta: Set VIDEO_UPDATE_AFTER_VBLANK flag [hap].
 - crimfght: writes tilemap registers during active display area, which won't have effect until the next frame vendetta: probably just sprite DMA [hap].
 - resampler: Clamp final output to -32768, 32767 [hap].
 - vibes240: Support dynamically disabling opcode encryption through control writes [AJR].

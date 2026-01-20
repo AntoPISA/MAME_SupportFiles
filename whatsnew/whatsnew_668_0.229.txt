@@ -173,18 +173,18 @@ vsmileb_cart: Dierenhuis (Netherlands) [Ramco Sahara]
 
 MAME Testers Bugs Fixed (9):
 ----------------------------
-- 06650: [Graphics] (m58.cpp) 10yard: Graphics are misaligned (Ivan Vangelista).
-- 06668: [Graphics] (mhavoc.cpp) mhavoc, mhavoc2, mhavocp, mhavocrv: Not all graphics are displayed (Robbbert).
-- 06935: [Misc.] BGFX render module doesn’t find images when multiple artwork paths are configured (AJR).
-- 07795: [Debugger] Qt debugger: Debugger views display incorrectly when scrolled to the bottom (Vas Crabb).
-- 07860: [Compiling] N/A: Incorrect flags are passed to the compiler on ARM/AArch64 targets (Belegdol).
-- 07863: [Interface] (ksys573.cpp) pcnfrk4mk: Description does not match displayed title (AriaOTP).
-- 07866: [Crash/Freeze] (atarig1.cpp) pitfight3: Game crashes randomly in later matches (O. Galibert).
-- 07867: [Crash/Freeze] (c64.cpp) Most carts in c64_cart.xml: Cartridges no longer load correctly (Ivan Vangelista).
-- 07874: [Save/Restore] (gottlieb.cpp) cobram3, cobram3a: Games stop at a black screen with populated NVRAM files (Ivan Vangelista).
+- 06650: [Graphics] (m58.cpp) 10yard: Graphics are misaligned (Ivan Vangelista)
+- 06668: [Graphics] (mhavoc.cpp) mhavoc, mhavoc2, mhavocp, mhavocrv: Not all graphics are displayed (Robbbert)
+- 06935: [Misc.] BGFX render module doesn’t find images when multiple artwork paths are configured (AJR)
+- 07795: [Debugger] Qt debugger: Debugger views display incorrectly when scrolled to the bottom (Vas Crabb)
+- 07860: [Compiling] N/A: Incorrect flags are passed to the compiler on ARM/AArch64 targets (Belegdol)
+- 07863: [Interface] (ksys573.cpp) pcnfrk4mk: Description does not match displayed title (AriaOTP)
+- 07866: [Crash/Freeze] (atarig1.cpp) pitfight3: Game crashes randomly in later matches (O. Galibert)
+- 07867: [Crash/Freeze] (c64.cpp) Most carts in c64_cart.xml: Cartridges no longer load correctly (Ivan Vangelista)
+- 07874: [Save/Restore] (gottlieb.cpp) cobram3, cobram3a: Games stop at a black screen with populated NVRAM files (Ivan Vangelista)
 
 
-Merged pull requests
+Merged Pull Requests
 --------------------
 - 7369: neogeo.cpp, neogeocd.cpp: Added notes on regional differences in AES consoles [cam900].
 - 7392: actions_atj2279b.cpp: Add notes about CPU and video resolution [Onmp314].
@@ -202,7 +202,7 @@ Merged pull requests
 - 7703: gokidetor.cpp: Converted JEDEC files to MAME binary format and added anonymous namespace [ClawGrip].
 - 7705: bogeyman.cpp, shootout.cpp: Corrected monitor orientation to 180  rotation [Corrado Tomaselli, Angelo Salese].
 - 7706: missbamby.cpp: Added "Golden Fruits" [jordigahan, ClawGrip].
-- 7708: Fixed compiler flags for ARM/AArch64 targets.[Belegdol].
+- 7708: Fixed compiler flags for ARM/AArch64 targets[Belegdol]..
 - 7709: docs: Changed  mame64  to  mame  in documentation [Firehawke].
 - 7710: jungleyo.cpp: Fixed video emulation [Angelo Salese].
 - 7713: Updated  2020  to  2021  in various places [Stiletto].
@@ -332,8 +332,8 @@ Source changes:
   * Add screen raw parameters;
   * Add anonymous namespace.
 - firebeat: Implement SPU DMAs and fix SPU device configurations (#7693) [987123879113]:
-  * firebeat.cpp: Implement SPU DMAs and fix SPU device configurations;
-  * cdrom: Add way to specify Ultra DMA as a machine configuration.
+  * Firebeat.cpp: Implement SPU DMAs and fix SPU device configurations;
+  * Cdrom: Add way to specify Ultra DMA as a machine configuration.
 - kpontoon: Hooked up sound CPU and comms, POST now fully passes [R. Belmont].
 - alpha68k_i.cpp: Removed NO_DUMP entry for the Alpha 8511 MCU, since actual PCBs don't have it [Ivan Vangelista].
 - New working machines [Travis Brown]:
@@ -434,8 +434,8 @@ Source changes:
 - cop400: Small notes cleanup [hap].
 - hp_ipc.cpp: Added support for expansion ROMs (#7726) [F. Ulivi].
 - Fix build [Vas Crabb]:
-  * spg2xx_jakks_sharp.cpp: Add missing comma between macro arguments;
-  * hp_ipc_rom.xml: Use one tab indent per nested element level.
+  * Spg2xx_jakks_sharp.cpp: Add missing comma between macro arguments;
+  * Hp_ipc_rom.xml: Use one tab indent per nested element level.
 - m6809: Partially qualify the dummy cycles [Olivier Galibert].
 - slapstic: Full rewrite, using infrastructure we did not have previously [Olivier Galibert].
 - slapstic: Add forgotten part of save state management [Olivier Galibert].
@@ -507,8 +507,8 @@ Source changes:
 - halleys.cpp: Eliminate deprecated auto_alloc [AJR].
 - bus/c64: Fixed MT07867 [Ivan Vangelista].
 - Stop converting debugger console commands to all lowercase before parsing them. Case insensitivity has been preserved for command names, CPU and region tags and certain symbolic parameters (as well as expressions, which were treated as case-insensitive in other contexts), but filenames and character constants are no longer automatically lowercased [AJR]:
-  * debugcmd.cpp, debugcon.cpp: Remove some superfluous c_str() calls;
-  * debugcmd.cpp: Remove local member referencing debugger_cpu, which is accessed only rarely since the console now tracks the visible CPU.
+  * Debugcmd.cpp, debugcon.cpp: Remove some superfluous c_str() calls;
+  * Debugcmd.cpp: Remove local member referencing debugger_cpu, which is accessed only rarely since the console now tracks the visible CPU.
 - apple2cp: Initial new IWM / Sony hookup for IIc Plus [R. Belmont].
 - MT 06668 mhavoc: Graphics missing in maze stages [Robbbert].
 - devices/bus/c64/exp.cpp: Fixed copy paste error introduced in 7e5a013c092e7adb621b6580fa0a4bc3e6ec3520 [Ivan Vangelista].
@@ -517,10 +517,10 @@ Source changes:
 - scripts: Remove references to non-existent headers and duplicate source file references (#7770) [Roberto Benfatto].
 - floppy: Ignore set_write_splice when the motor is not running [Olivier Galibert].
 - Eliminate ARRAY_LENGTH template in favor of C++17's std::size [AJR]:
-  * osdcomm.h: Move definition of EQUIVALENT_ARRAY to coretmpl.h;
-  * sharc.cpp, gt64xxx.cpp, ym2413.cpp, gb_lcd.cpp, snes_ppu.cpp: Use STRUCT_MEMBER for save state registration;
-  * gio/newport.cpp, megadrive/svp.cpp, nes_ctrl/bcbattle.cpp, arm7.cpp, tms9995.cpp, pckeybrd.cpp, sa1110.cpp, sa1111.cpp, jangou_blitter.cpp, vic4567.cpp: Use std::fill(_n) instead of memset;
-  * emucore.h: Remove obsolete typedef.
+  * Osdcomm.h: Move definition of EQUIVALENT_ARRAY to coretmpl.h;
+  * Sharc.cpp, gt64xxx.cpp, ym2413.cpp, gb_lcd.cpp, snes_ppu.cpp: Use STRUCT_MEMBER for save state registration;
+  * Gio/newport.cpp, megadrive/svp.cpp, nes_ctrl/bcbattle.cpp, arm7.cpp, tms9995.cpp, pckeybrd.cpp, sa1110.cpp, sa1111.cpp, jangou_blitter.cpp, vic4567.cpp: Use std::fill(_n) instead of memset;
+  * Emucore.h: Remove obsolete typedef.
 - jongkyo.cpp: Removed tagmap lookups and auto_alloc_array [Ivan Vangelista].
 - Added MM5799 MCU emulation [hap].
 - hiscore.dat: Rename changed sets [cracyc].
@@ -563,10 +563,10 @@ Source changes:
 - snowbros.cpp: Dumped MCU for (cookbib2) and (cookbib2a) [Caps0ff].
 - kl5c80a12, kl5c80a16: Emulate on-chip parallel ports. getbass: Add EEPROM for I/O CPU [AJR].
 - fmtowns_cd.xml: 11 new dumps, 19 replacements, 3 missing floppies added (#7764) [r09]:
-  * fmtowns_cd.xml: Removed the floppy disks for 38-man Kilo no Kokuu and Powermonger, since they are user-created disks and the games only need blank disks to save fmtowns_cd.xml - Replaced Lunatic Dawn II floppy with a cleaner unmodified copy [akira_2020];
-  * fmtowns_cd.xml: Replaced Nobunaga no Yabou - Bushou Fuuunroku floppy with a cleaner unmodified copy [wiggy2k];
-  * fmtowns_cd.xml: Replaced the "fake" Lipstick Adventure 3 floppy with an image dumped from the original disk [r09];
-  * fmtowns_cd.xml: Added a missing floppy image to Nobunaga no Yabou - Tenshouki (it wasn't marked as unsupported but it didn't actually work correctly before) [wiggy2k].
+  * Fmtowns_cd.xml: Removed the floppy disks for 38-man Kilo no Kokuu and Powermonger, since they are user-created disks and the games only need blank disks to save fmtowns_cd.xml - Replaced Lunatic Dawn II floppy with a cleaner unmodified copy [akira_2020];
+  * Fmtowns_cd.xml: Replaced Nobunaga no Yabou - Bushou Fuuunroku floppy with a cleaner unmodified copy [wiggy2k];
+  * Fmtowns_cd.xml: Replaced the "fake" Lipstick Adventure 3 floppy with an image dumped from the original disk [r09];
+  * Fmtowns_cd.xml: Added a missing floppy image to Nobunaga no Yabou - Tenshouki (it wasn't marked as unsupported but it didn't actually work correctly before) [wiggy2k].
 - firebeat.cpp: Large refactor and initial beatmania III support (#7721) [987123879113]:
   * Changed DMA to deliver one byte at a time;
   * Converted to use I/O port and output finders, corrected handler widths. and cleaned up code;
@@ -597,8 +597,8 @@ Source changes:
 - sk.cpp: Add notes for Sonic 3 & Knuckles save... (#7805) [cam900].
 - actions_atj2279b.cpp: Add notes (#7392) [Onmp314].
 - neogeo.cpp: Add notes for AES clock, regional difference (#7369) [cam900]:
-  * neogeo.cpp: Add notes for AES clock, regional difference neogeocd.cpp: Move value into driver class, Add notes for hardware region;
-  * neogeo.cpp: Fix spacing.
+  * Neogeo.cpp: Add notes for AES clock, regional difference neogeocd.cpp: Move value into driver class, Add notes for hardware region;
+  * Neogeo.cpp: Fix spacing.
 - sk.cpp and 315_5313 devices, actions_atj2279b, rainbow and silverball drivers: ran srcclean and some grammar corrections for recenty merged PRs [Ivan Vangelista].
 - Make -listmedia compatible with grep/find. Examples [Robbbert]:
   * List all systems with .tap support: mame -listmedia | find ".tap";
@@ -626,3 +626,4 @@ Source changes:
 - srcclean in preparation for branching release [Vas Crabb].
 - iez80.cpp: Don't capitalise things that aren't part of the title and aren't proper nouns, initialisms, etc [Vas Crabb].
 - jpmimpctsw.cpp: Mark j6untch and j6untcha as not working again, promotion may have been premature [Vas Crabb].
+- Bump MAME 0.229 [Vas Crabb].
