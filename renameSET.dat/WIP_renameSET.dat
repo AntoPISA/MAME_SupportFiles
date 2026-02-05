@@ -1,5 +1,5 @@
 ﻿#     ==========================================================
-#     MAME RENAMESET.DAT v0.285git  Latest update:  Jan 31, 2026
+#     MAME RENAMESET.DAT v0.285     Latest update:  Feb  5, 2026
 #     ==========================================================
 #
 #     Home-page: https://www.progettosnaps.net/renameset/
@@ -19,30 +19,48 @@
 #
 #               Internal Version 16.02
 #
-#       805 removed machines/devices overall in the history of MAME
-#     6.897 renamed machines/devices overall in the history of MAME
+#       809 removed machines/devices overall in the history of MAME
+#     6.913 renamed machines/devices overall in the history of MAME
 #
-#     *** / mID: 00000                  (in dat): Rename/Delete to be reviewed (to do 1.331 items)
+#     *** / mID: 00000                  (in dat): Rename/Delete to be reviewed (to do 1.330 items)
 #          Rename/Delete Software Lists (in dat): From version 0.190 to 0.200 already rechecked.
 #
 #
 $0.285 [#724]
 2026/01/30
-49.616 total items, 3.279 drivers (+6), 42.491 machines (+44), 14.932 parents (+15), 27.559 clones (+29), 79 BIOSes, 7.046 devices (+34), 1.260 requires CHDs, 1.898 use samples (+1), 35.475 audio mono (+44), 2.423 audio stereo (+13), 1.204 audio multichannel (-8), 3.389 no audio (-5)
-16.413 working (+21), 26.078 not working (+23), 15.714 mechanicals (+6), 26.777 not mechanicals (+38), 14.764 save supported (+31), 27.727 save unsupported (+13)
-19.691 horizontal screen (+30), 3.303 vertical screen (+5), 21.695 raster graphics (+34), 109 vector graphics, 848 lcd graphics, 342 svg graphics (+1), 19.497 screenless (+9), 25.386 one player (+33), 10.093 two players (+12), 343 three players (+1), 1.101 more than three players
-703 use stick (+1), 3.586 use gambling (+8), 11.633 use joystick (+20), 3.272 use keyboard (+6), 2.686 use keypad (+6), 625 use lightgun, 3.709 use mahjong, 1.038 use mouse (+7), 9.775 use buttons only (+6), 677 use paddle (+2), 638 use pedal (+1), 100 use positional, 583 use dial (+13), 374 use trackball (-4), 3.165 use hanafuda
+49.616 total items, 3.279 drivers (+6), 42.491 machines (-1/+45), 14.932 parents (+15), 27.559 clones (-1/+30), 79 BIOSes, 7.046 devices (-3/+37), 1.260 requires CHDs, 1.898 use samples (+1), 35.475 audio mono (+44), 2.423 audio stereo (+13), 1.204 audio multichannel (-8), 3.389 no audio (-5)
+16.413 working (-1/+22), 26.078 not working (+23), 15.714 mechanicals (+6), 26.777 not mechanicals (-1/+39), 14.764 save supported (+31), 27.727 save unsupported (-1/+14)
+19.691 horizontal screen (-1/+31), 3.303 vertical screen (+5), 21.695 raster graphics (-1/+35), 109 vector graphics, 848 lcd graphics, 342 svg graphics (+1), 19.497 screenless (+9), 25.386 one player (-1/+34), 10.093 two players (+12), 343 three players (+1), 1.101 more than three players
+703 use stick (+1), 3.586 use gambling (+8), 11.633 use joystick (+20), 3.272 use keyboard (-1/+7), 2.686 use keypad (+6), 625 use lightgun, 3.709 use mahjong, 1.038 use mouse (-1/+8), 9.775 use buttons only (+6), 677 use paddle (+2), 638 use pedal (+1), 100 use positional, 583 use dial (+13), 374 use trackball (-4), 3.165 use hanafuda
 367.884 total roms (+397), 364.271 machines roms (+352), 2.973 devices roms (+45), 640 BIOSes roms, 1.392 CHDs, 597 sample files, 76 sample packs, 357.968 good dumps (+388), 6.384 no dumps (+5), 4.924 bad dumps (+4), 7 bugs fixed
-755 software list (+3), 140.886 software (+166), 744 active SL (+3), 11 orphan SL, 140.124 active software (+166), 762 orphan software, 97.029 software parents (+92), 43.857 software clones (+74)
+755 software list (+3), 140.886 software (-47/+119), 744 active SL (+3), 11 orphan SL, 140.124 active software (-47/+119), 762 orphan software, 97.029 software parents (+92), 43.857 software clones (+74)
 238.070 software roms (+182), 11.539 software CHD (+32), 99.602 supported software (+63), 2.114 partially supported software (+42), 39.170 unsupported software (+61)
-4 ren (4/0/0):
-dirtdash           > dirtdashb              (mID: 00000) M
-dkongjrv           > dkingjrv               (mID: 00000) M
-packysts           > packyts                (mID: 00000) M
-revx               > revx1                  (mID: 00000) M
-0 del (0/0/0):
-xxxxxxxxxxx                                 (mID: 00000) X
-
+20 ren (6/14/0):
+3do                > 3do_fz10               (mID: 30790) M
+3do_pal            > 3do_fz10e              (mID: 30792) M
+dirtdash           > dirtdashb              (mID: 44460) M
+dkongjrv           > dkingjrv               (mID: 49442) M
+packysts           > packyts                (mID: 47164) M
+revx               > revx1                  (mID:  3232) M
+tms32010           > tms320c10              (mID: 34732) D
+tms32015           > tms320c15              (mID: 34733) D
+tms32016           > tms320c16              (mID: 38020) D
+tms32025           > tms320c25              (mID: 29259) D
+tms32026           > tms320c26              (mID: 29260) D
+tms32030           > tms320c30              (mID: 39463) D
+tms32031           > tms320c31              (mID: 10329) D
+tms32032           > tms320c32              (mID: 28540) D
+tms32033           > tms320vc33             (mID: 44428) D
+tms32051           > tms320c51              (mID: 29261) D
+tms32053           > tms320c53              (mID: 35960) D
+tms32082_mp        > tms320c82_mp           (mID: 35474) D
+tms32082_pp        > tms320c82_pp           (mID: 35475) D
+trident_vga        > tgui9680_vga           (mID: 34781) D
+4 del (1/3/0):
+apricotxi                                   (mID: 31108) M
+elan_eu3a05commonsys                        (mID: 41440) D
+elan_eu3a05commonvid                        (mID: 41441) D
+ep1c12                                      (mID: 29605) D
 
 $0.284 [#723]
 2025/12/31
