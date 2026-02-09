@@ -1,5 +1,5 @@
 ﻿#     ==========================================================
-#     MAME RENAMESET.DAT v0.285     Latest update:  Feb  5, 2026
+#     MAME RENAMESET.DAT v0.285     Latest update:  Feb  9, 2026
 #     ==========================================================
 #
 #     Home-page: https://www.progettosnaps.net/renameset/
@@ -23,7 +23,7 @@
 #     6.913 renamed machines/devices overall in the history of MAME
 #
 #     *** / mID: 00000                  (in dat): Rename/Delete to be reviewed (to do 1.330 items)
-#          Rename/Delete Software Lists (in dat): From version 0.190 to 0.200 already rechecked.
+#          Rename/Delete Software Lists (in dat): From version 0.180 to 0.210 already rechecked.
 #
 #
 $0.285 [#724]
@@ -71,7 +71,7 @@ $0.284 [#723]
 367.487 total roms (+974), 363.919 machines roms (+955), 2.928 devices roms (+19), 640 BIOSes roms, 1.392 CHDs (+1), 597 sample files, 76 sample packs, 357.580 good dumps (+967), 6.379 no dumps (+7), 4.920 bad dumps (+1), 18 bugs fixed
 752 software list (+11), 140.720 software (-23/+375), 741 active SL (+11), 11 orphan SL, 139.958 active software (-23/+375), 762 orphan software, 96.937 software parents (+323), 43.783 software clones (+75)
 237.888 software roms (+523), 11.507 software CHD (+38), 99.539 supported software (+338), 2.072 partially supported software (+50), 39.109 unsupported software (+10)
-37 ren (34/3/0):
+38 ren (35/3/0):
 big_jackpot        > bigjkpot               (mID: 49608) M
 cubieboard4        > cubibrd4               (mID: 47402) M
 cuttherope         > cutrope                (mID: 47494) M
@@ -99,6 +99,7 @@ mightyframe        > mightfrm               (mID: 38851) M
 monkeyjmp          > monkyjmp               (mID: 47436) M
 multimulti         > multmult               (mID: 49103) M
 polarstar2         > polstar2               (mID: 50051) M
+progear            > progearu               (mID:  5419) M
 sun1cpu            > sun1_cpu               (mID: 48612) D
 sun1mmu            > sun1_mmu               (mID: 48613) D
 supermultib        > sprmltib               (mID: 49198) M
@@ -2739,24 +2740,24 @@ $0.211 [#650]
 540 software list (+3), 109.596 software (-6/+1037), 523 active SL (+3), 17 orphan SL, 108.758 active software (-6/+1037), 838 orphan software, 74.460 software parents (+890), 35.136 software clones (+153)
 183.067 software roms (+1858), 9.207 software CHD (+5), 72.717 supported software (+1015), 791 partially supported software (+29), 36.088 unsupported software (-1)
 18 ren (11/7/0):
-cpzodiac         > cpzodiacj           (mID: 39583) M
-ecm6000          > ecm6032             (mID: 38701) M
-gio              > gio64               (mID: 40683) D
-gio_slot         > gio64_slot          (mID: 40684) D
-gio_xl24         > gio64_xl24          (mID: 40685) D
-gio_xl8          > gio64_xl8           (mID: 40686) D
-hpc3f            > hpc3                (mID: 39413) D
-i8741            > i8741a              (mID: 32422) D
-ip224613         > indy_4613           (mID: 32489) M
-ip225015         > indy_5015           (mID: 32490) M
-ip244415         > indigo2_4415        (mID: 32491) M
-midsnt           > squawk_n_talk       (mID: 29002) D
-redclash         > redclasht           (mID:  5881) M
-redclasha        > redclashta          (mID:  2993) M
-redclashk        > redclash            (mID:  2994) M
-ryukyu           > ryukyua             (mID:  4379) M
-ryukyua          > ryukyu              (mID: 40409) M
-saltcrdi         > sltpcycl            (mID: 40103) M
+cpzodiac           > cpzodiacj         (mID: 39583) M
+ecm6000            > ecm6032           (mID: 38701) M
+gio                > gio64             (mID: 40683) D
+gio_slot           > gio64_slot        (mID: 40684) D
+gio_xl24           > gio64_xl24        (mID: 40685) D
+gio_xl8            > gio64_xl8         (mID: 40686) D
+hpc3f              > hpc3              (mID: 39413) D
+i8741              > i8741a            (mID: 32422) D
+ip224613           > indy_4613         (mID: 32489) M
+ip225015           > indy_5015         (mID: 32490) M
+ip244415           > indigo2_4415      (mID: 32491) M
+midsnt             > squawk_n_talk     (mID: 29002) D
+redclash           > redclasht         (mID:  5881) M
+redclasha          > redclashta        (mID:  2993) M
+redclashk          > redclash          (mID:  2994) M
+ryukyu             > ryukyua           (mID:  4379) M
+ryukyua            > ryukyu            (mID: 40409) M
+saltcrdi           > sltpcycl          (mID: 40103) M
 4 del (0/4/0):
 a2vtc2                                 (mID: 30872) D
 hpc3g                                  (mID: 40694) D
@@ -2771,16 +2772,16 @@ $0.210 [#649]
 14.462 horizontal screen (+91), 2.893 vertical screen (+6), 16.548 raster graphics (+91), 102 vector graphics, 548 lcd graphics, 157 svg graphics (+6), 18.507 screenless (+10), 20.236 one player (+80), 8.526 two players (+32), 269 three players, 1.095 more than three players (+2)
 591 use stick, 2.108 use gambling (+8), 9.520 use joystick (+27), 2.245 use keyboard (+54), 549 use keypad (+10), 503 use lightgun (+5), 3.558 use mahjong, 581 use mouse (+56), 9.278 use buttons only (+4), 531 use paddle, 515 use pedal (+3), 69 use positional, 468 use dial (+1), 584 use trackball, 3.151 use hanafuda
 302.406 total roms (+773), 300.220 machines roms (+738), 1.629 devices roms (+36), 557 BIOSes roms (-1), 1.046 CHDs (+4), 710 sample files, 93 sample packs, 296.518 good dumps (+734), 4.352 no dumps (+12), 2.582 bad dumps (+31), 23 bugs fixed
-537 software list (+1), 108.553 software (-11/+308), 520 active SL (+1), 17 orphan SL, 107.715 active software (-11/+308), 838 orphan software, 73.570 software parents (+291), 34.983 software clones (+28)
+537 software list (+1), 108.553 software (-1/+318), 519 active SL (+1), 18 orphan SL, 107.715 active software (-1/+318), 838 orphan software, 73.570 software parents (+291), 34.983 software clones (+28)
 181.209 software roms (+396), 9.202 software CHD (+27), 71.702 supported software (+262), 762 partially supported software (+6), 36.089 unsupported software (+51)
 7 ren (3/4/0):
-boxyboy          > boxyboya            (mID:  2860) M
-fifo7200         > idt7200             (mID: 28899) D
-hd6845           > hd6845s             (mID: 32276) D
-hpc3             > hpc3f               (mID: 39413) D
-pepp0550a        > pepp0550b           (mID: 35773) M
-sfex2            > sfex2u              (mID:  5256) M
-unsp_newer       > unsp_11             (mID: 40627) D
+boxyboy            > boxyboya          (mID:  2860) M
+fifo7200           > idt7200           (mID: 28899) D
+hd6845             > hd6845s           (mID: 32276) D
+hpc3               > hpc3f             (mID: 39413) D
+pepp0550a          > pepp0550b         (mID: 35773) M
+sfex2              > sfex2u            (mID:  5256) M
+unsp_newer         > unsp_11           (mID: 40627) D
 4 del (0/4/0):
 a8sio_slot                             (mID: 30949) D
 h46505                                 (mID: 32189) D
@@ -2795,13 +2796,13 @@ $0.209 [#648]
 14.371 horizontal screen (+31), 2.887 vertical screen (+5), 16.457 raster graphics (+28), 102 vector graphics, 548 lcd graphics (+5), 151 svg graphics (+3), 18.497 screenless (+13), 20.156 one player (+36), 8.494 two players (+28), 269 three players, 1.093 more than three players (-18)
 591 use stick, 2.100 use gambling (+6), 9.493 use joystick (+13), 2.191 use keyboard (+8), 539 use keypad (+8), 498 use lightgun, 3.558 use mahjong (+1), 525 use mouse (+5), 9.274 use buttons only (+4), 531 use paddle, 512 use pedal (+1), 69 use positional, 467 use dial (+1), 584 use trackball (+1), 3.151 use hanafuda
 301.633 total roms (+509), 299.482 machines roms (+476), 1.593 devices roms (+32), 558 BIOSes roms (+1), 1.042 CHDs, 710 sample files, 93 sample packs, 295.784 good dumps (+468), 4.340 no dumps (+23), 2.551 bad dumps (+18), 14 bugs fixed
-536 software list (+2), 108.234 software (+277), 519 active SL (+2), 17 orphan SL, 107.396 active software (+276), 838 orphan software (+1), 73.279 software parents (+276), 34.955 software clones (+1)
+536 software list (+2), 108.234 software (+277), 518 active SL (+2), 18 orphan SL, 107.396 active software (+276), 838 orphan software (+1), 73.279 software parents (+276), 34.955 software clones (+1)
 180.813 software roms (+428), 9.175 software CHD (+7), 71.440 supported software (+275), 756 partially supported software, 36.038 unsupported software (+2)
 4 ren (2/2/0):
-dd_l2      > dd_lu1                    (mID:  9371) M
-ltcasinn   > ltcasin2a                 (mID:  4318) M
-m68008plcc > m68008fn                  (mID: 37802) D
-spg2xx     > spg2xx_audio              (mID: 40541) D
+dd_l2              > dd_lu1            (mID:  9371) M
+ltcasinn           > ltcasin2a         (mID:  4318) M
+m68008plcc         > m68008fn          (mID: 37802) D
+spg2xx             > spg2xx_audio      (mID: 40541) D
 1 del (0/1/0):
 cdi68070                               (mID: 31498) D
 
@@ -2813,57 +2814,57 @@ $0.208 [#647]
 14.340 horizontal screen (+36), 2.882 vertical screen (+7), 16.429 raster graphics (+35), 102 vector graphics, 543 lcd graphics (+3), 148 svg graphics (+5), 18.484 screenless (-38/+14), 20.120 one player (-38/+44), 8.466 two players (+17), 269 three players, 1.111 more than three players (-3)
 591 use stick (+1), 2.094 use gambling, 9.480 use joystick (+29), 2.183 use keyboard (+1), 531 use keypad (-38/+11), 498 use lightgun (+1), 3.557 use mahjong, 520 use mouse, 9.270 use buttons only (+10), 531 use paddle (+4), 511 use pedal (+2), 69 use positional (-1), 466 use dial (+1), 583 use trackball, 3.151 use hanafuda
 301.124 total roms (-1/+288), 299.006 machines roms (-1/+217), 1.561 devices roms (+71), 557 BIOSes roms, 1.042 CHDs, 710 sample files, 93 sample packs, 295.316 good dumps (+323), 4.317 no dumps, 2533 bad dumps (-36), 15 bugs fixed
-534 software list (+3), 107.957 software (-4/+1471), 517 active SL (+4), 17 orphan SL (-3), 107.120 active software (-4/+1431), 837 orphan software (-383), 73.003 software parents (+1053), 34.954 software clones (+422)
+534 software list (+6), 107.957 software (-8/+1467), 516 active SL (+4), 18 orphan SL (-1), 107.120 active software (-8/+1427), 837 orphan software (-383), 73.003 software parents (+1053), 34.954 software clones (+422)
 180.385 software roms (+2042), 9.168 software CHD (+20), 71.165 supported software (+1448), 756 partially supported software (+15), 36.036 unsupported software (+12)
 8 ren (4/4/0):
-aha1542            > aha1542cf          (mID: 31014) D
-astrocade_256k     > astrocade_rom_256k (mID: 31138) D
-astrocade_512k     > astrocade_rom_512k (mID: 31139) D
-djboy              > djboyu             (mID:  4238) M
-djboya             > djboyua            (mID:  6829) M
-f3853_device       > f3853_smi          (mID: 31952) D
-gemini             > geminij            (mID:   393) M
-maddonnb           > maddonnab          (mID:  3795) M
+aha1542            > aha1542cf              (mID: 31014) D
+astrocade_256k     > astrocade_rom_256k     (mID: 31138) D
+astrocade_512k     > astrocade_rom_512k     (mID: 31139) D
+djboy              > djboyu                 (mID:  4238) M
+djboya             > djboyua                (mID:  6829) M
+f3853_device       > f3853_smi              (mID: 31952) D
+gemini             > geminij                (mID:   393) M
+maddonnb           > maddonnab              (mID:  3795) M
 39 del (38/1/0):
-cscfr                                   (mID: 36104) M
-cscg                                    (mID: 36105) M
-cscsp                                   (mID: 36106) M
-feag2100fr                              (mID: 37139) M
-feag2100g                               (mID: 37140) M
-feag2100sp                              (mID: 37141) M
-feagfr                                  (mID: 40337) M
-feagg                                   (mID: 40338) M
-feagsp                                  (mID: 40339) M
-feagv2a                                 (mID: 37417) M
-feasbufr                                (mID: 37142) M
-feasbug                                 (mID: 37143) M
-feasbusp                                (mID: 37144) M
-feasglafr                               (mID: 37145) M
-feasglag                                (mID: 37146) M
-feasglasp                               (mID: 37147) M
-feprivfr                                (mID: 40342) M
-feprivg                                 (mID: 40343) M
-feprivsp                                (mID: 40344) M
-fpresbufr                               (mID: 39401) M
-fpresbug                                (mID: 39402) M
-fpresbusp                               (mID: 39403) M
-fpresfr                                 (mID: 39404) M
-fpresg                                  (mID: 39405) M
-fpressp                                 (mID: 39406) M
-m68301                                  (mID: 37540) D
-sc1                                     (mID: 34213) M
-super9ccfr                              (mID: 36793) M
-super9ccg                               (mID: 36794) M
-super9ccsp                              (mID: 36795) M
-uvcfr                                   (mID: 36173) M
-uvcg                                    (mID: 36174) M
-uvcsp                                   (mID: 36175) M
-vccfr                                   (mID: 36087) M
-vccg                                    (mID: 36088) M
-vccsp                                   (mID: 36089) M
-vscfr                                   (mID: 36176) M
-vscg                                    (mID: 36177) M
-vscsp                                   (mID: 36178) M
+cscfr                                       (mID: 36104) M
+cscg                                        (mID: 36105) M
+cscsp                                       (mID: 36106) M
+feag2100fr                                  (mID: 37139) M
+feag2100g                                   (mID: 37140) M
+feag2100sp                                  (mID: 37141) M
+feagfr                                      (mID: 40337) M
+feagg                                       (mID: 40338) M
+feagsp                                      (mID: 40339) M
+feagv2a                                     (mID: 37417) M
+feasbufr                                    (mID: 37142) M
+feasbug                                     (mID: 37143) M
+feasbusp                                    (mID: 37144) M
+feasglafr                                   (mID: 37145) M
+feasglag                                    (mID: 37146) M
+feasglasp                                   (mID: 37147) M
+feprivfr                                    (mID: 40342) M
+feprivg                                     (mID: 40343) M
+feprivsp                                    (mID: 40344) M
+fpresbufr                                   (mID: 39401) M
+fpresbug                                    (mID: 39402) M
+fpresbusp                                   (mID: 39403) M
+fpresfr                                     (mID: 39404) M
+fpresg                                      (mID: 39405) M
+fpressp                                     (mID: 39406) M
+m68301                                      (mID: 37540) D
+sc1                                         (mID: 34213) M
+super9ccfr                                  (mID: 36793) M
+super9ccg                                   (mID: 36794) M
+super9ccsp                                  (mID: 36795) M
+uvcfr                                       (mID: 36173) M
+uvcg                                        (mID: 36174) M
+uvcsp                                       (mID: 36175) M
+vccfr                                       (mID: 36087) M
+vccg                                        (mID: 36088) M
+vccsp                                       (mID: 36089) M
+vscfr                                       (mID: 36176) M
+vscg                                        (mID: 36177) M
+vscsp                                       (mID: 36178) M
 
 
 $0.207 [#646]
@@ -2873,7 +2874,7 @@ $0.207 [#646]
 14.304 horizontal screen (+78), 2.875 vertical screen (+5), 16.394 raster graphics (+78), 102 vector graphics, 540 lcd graphics (+3), 143 svg graphics (+2), 18.508 screenless (+15), 20.114 one player (+77), 8.449 two players (+16), 269 three players (+1), 1.114 more than three players (+1)
 590 use stick (+3), 2.094 use gambling (+13), 9.451 use joystick (+36), 2.182 use keyboard (+15), 558 use keypad (+13), 497 use lightgun (+1), 3.557 use mahjong (+1), 520 use mouse (+5), 9.260 use buttons only (+8), 527 use paddle (+1), 509 use pedal, 70 use positional, 465 use dial, 583 use trackball (+3), 3.151 use hanafuda
 300.837 total roms (+663), 298.790 machines roms (+662), 1.490 devices roms (+1), 557 BIOSes roms, 1.042 CHDs (+2), 710 sample files, 93 sample packs, 294.993 good dumps (+637), 4.317 no dumps (+15), 2.569 bad dumps (+13), 3 bugs fixed
-531 software list (+17), 106.482 software (+226), 513 active SL (+17), 20 orphan SL (+2), 105.685 active software (+226), 1.220 orphan software (+423), 71.950 software parents (+189), 34.532 software clones (+37)
+531 software list (-1/+18), 106.482 software (+226), 512 active SL (-1/+18), 19 orphan SL (+1), 105.685 active software (+226), 1.220 orphan software (+423), 71.950 software parents (+189), 34.532 software clones (+37)
 178.343 software roms (+803), 9.148 software CHD, 69.717 supported software (+143), 741 partially supported software (+2), 36.024 unsupported software (+81)
 6 ren (6/0/0):
 dblaxleu           > dblaxleul         (mID:  3051) M
@@ -2893,7 +2894,7 @@ $0.206 [#645]
 14.226 horizontal screen (+116), 2.870 vertical screen (+4), 16.316 raster graphics (+115), 102 vector graphics, 537 lcd graphics (+1), 141 svg graphics (+4), 18.493 screenless (-1), 20.037 one player (+68), 8.433 two players (+25), 268 three players, 1.113 more than three players (+1)
 587 use stick (+2), 2.081 use gambling (+7), 9.415 use joystick (+48), 2.167 use keyboard (+15), 545 use keypad (+4), 496 use lightgun (+1), 3.556 use mahjong, 515 use mouse (+5), 9.252 use buttons only (+6), 526 use paddle, 509 use pedal (+1), 70 use positional, 465 use dial, 580 use trackball, 3.151 use hanafuda
 300.174 total roms (+2876), 298.128 machines roms (+2856), 1.489 devices roms (+10), 557 BIOSes roms (+10), 1.040 CHDs (+14), 710 sample files, 93 sample packs, 294.356 good dumps (+2867), 4.302 no dumps (+65), 2.556 bad dumps (-42), 9 bugs fixed
-514 software list (-1/+14), 106.256 software (-5/+353), 496 active SL (-1/+17), 18 orphan SL (-3), 105.459 active software (-5/+365), 797 orphan software (-12), 71.761 software parents (+338), 34.495 software clones (+20)
+514 software list (-2/+17), 106.256 software (-5/+353), 496 active SL (+17), 18 orphan SL (-2), 105.459 active software (-5/+365), 797 orphan software (-12), 71.761 software parents (+338), 34.495 software clones (+20)
 177.540 software roms (+440), 9.148 software CHD (+2), 69.574 supported software (+406), 739 partially supported software, 35.943 unsupported software (-48)
 12 ren (11/1/0):
 batmantv           > jak_batm          (mID: 31212) M
@@ -2926,7 +2927,7 @@ $0.205 [#644]
 14.110 horizontal screen (-1/+44), 2.866 vertical screen (+3), 16.201 raster graphics (-1/+44), 102 vector graphics, 536 lcd graphics (+1), 137 svg graphics (+2), 18.494 screenless (-1/+12), 19.969 one player (-2/+22), 8.408 two players (+16), 268 three players (+7), 1.112 more than three players
 585 use stick, 2.074 use gambling (+225), 9.367 use joystick (+19), 2.152 use keyboard (-6), 541 use keypad (-67), 495 use lightgun (+7), 3.556 use mahjong (+1), 510 use mouse (+1), 9.246 use buttons only (+14), 526 use paddle (+1), 508 use pedal (+1), 70 use positional, 465 use dial, 580 use trackball (+1), 3.151 use hanafuda
 297.298 total roms (+1910), 295.272 machines roms (+1903), 1.479 devices roms (+3), 547 BIOSes roms (+4), 1.026 CHDs (+2), 710 sample files, 93 sample packs, 291.489 good dumps (+1916), 4.237 no dumps (-14), 2.598 bad dumps (+10), 16 bugs fixed
-499 software list (+2), 105.898 software (+615), 478 active SL (+1), 21 orphan SL (+1), 105.089 active software (+613), 809 orphan software (+2), 71.423 software parents (+576), 34.475 software clones (+39)
+499 software list (+2), 105.898 software (+615), 479 active SL (+2), 20 orphan SL, 105.089 active software (+613), 809 orphan software (+2), 71.423 software parents (+576), 34.475 software clones (+39)
 177.100 software roms (+804), 9.146 software CHD, 69.168 supported software (+607), 739 partially supported software, 35.991 unsupported software (+8)
 6 ren (5/1/0):
 f1gpstar           > f1gpstar3         (mID: 37226) M
@@ -3005,7 +3006,7 @@ $0.202 [#641]
 13.967 horizontal screen (-2/+18), 2.846 vertical screen (+10), 16.048 raster graphics (-2/+26), 102 vector graphics (+2), 532 lcd graphics, 131 svg graphics, 18.476 screenless (+13), 19.896 one player (-1/+24), 8.339 two players (-1/+15), 258 three players, 1.106 more than three players (+9)
 584 use stick (+3), 1.846 use gambling (+1), 9.275 use joystick (-1/+22), 2.142 use keyboard (-1/+10), 606 use keypad, 484 use lightgun (+1), 3.555 use mahjong (+1), 493 use mouse (+23), 9.230 use buttons only (+1), 516 use paddle (+3), 500 use pedal (+3), 70 use positional, 463 use dial (+3), 576 use trackball (+1), 3.151 use hanafuda
 293.959 total roms (+698), 291.954 machines roms (+665), 1.467 devices roms (+32), 538 BIOSes roms (+1), 1.022 CHDs, 710 sample files, 93 sample packs, 288.225 good dumps (+710), 4.194 no dumps (+18), 2.562 bad dumps (-30), 21 bugs fixed
-494 software list, 104.491 software (+25), 475 active SL (-1), 19 orphan SL (+1), 103.685 active software (+24), 806 orphan software (+1), 70.349 software parents (+25), 34.142 software clones
+494 software list, 104.491 software (+25), 475 active SL, 19 orphan SL, 103.685 active software (+24), 806 orphan software (+1), 70.349 software parents (+25), 34.142 software clones
 175.049 software roms (+27), 9.146 software CHD (+8), 67.815 supported software (+24), 730 partially supported software, 35.946 unsupported software (+1)
 15 ren (11/4/0):
 cybsledj            > cybsleda                   (mID:  6785) M
@@ -3035,7 +3036,7 @@ $0.201 [#640]
 13.951 horizontal screen (-1/+41), 2.836 vertical screen (+11), 16.024 raster graphics (-1/+22), 100 vector graphics, 532 lcd graphics (+30), 131 svg graphics, 18.463 screenless (+18), 19.873 one player (-1/+46), 8.325 two players (+26), 258 three players, 1.097 more than three players (+2)
 581 use stick (+3), 1.845 use gambling (+1), 9.254 use joystick (+28), 2.133 use keyboard (-1/+40), 606 use keypad, 483 use lightgun (+1), 3.554 use mahjong, 470 use mouse (-3), 9.229 use buttons only (+1), 513 use paddle (+2), 497 use pedal (+2), 70 use positional (+2), 460 use dial, 575 use trackball, 3.151 use hanafuda
 293.261 total roms (+1076), 291.289 machines roms (+1030), 1.435 devices roms (+41), 537 BIOSes roms (+5), 1.022 CHDs (+3), 710 sample files, 93 sample packs, 287.515 good dumps (+1056), 4.176 no dumps (+12), 2.592 bad dumps (+11), 11 bugs fixed
-494 software list (+1), 104.466 software (-2/+3326), 476 active SL, 18 orphan SL (+1), 103.661 active software (+3296), 805 orphan software (+32), 70.324 software parents (+3255), 34.142 software clones (+73)
+494 software list (-1/+1), 104.466 software (-2/+3326), 475 active SL (-2/+1), 19 orphan SL (+2), 103.661 active software (+3296), 805 orphan software (+32), 70.324 software parents (+3255), 34.142 software clones (+73)
 175.022 software roms (+50538), 9.138 software CHD (+156), 67.791 supported software (+3329), 730 partially supported software (+19), 35.945 unsupported software (-20)
 25 ren (13/12/0):
 a500_kbd_ch        > a500kbd_ch        (mID: 37467) D
@@ -3074,7 +3075,7 @@ $0.200 [#639]
 13.911 horizontal screen (+17), 2.825 vertical screen (+5), 16.003 raster graphics (+21), 100 vector graphics, 502 lcd graphics (+1), 131 svg graphics, 18.445 screenless (+4), 19.828 one player (+9), 8.299 two players (+14), 258 three players (+1), 1.095 more than three players
 578 use stick (+3), 1.844 use gambling, 9.226 use joystick (+7), 2.094 use keyboard (+7), 606 use keypad (+1), 482 use lightgun (+1), 3.554 use mahjong, 473 use mouse, 9.228 use buttons only (+1), 511 use paddle, 495 use pedal, 68 use positional, 460 use dial, 575 use trackball, 3.151 use hanafuda
 292.185 total roms (+235), 290.259 machines roms (+233), 1.394 devices roms (+2), 532 BIOSes roms, 1.019 CHDs (+1), 710 sample files, 93 sample packs, 286.459 good dumps (+225), 4.164 no dumps (+2), 2.581 bad dumps (+9), 2 bugs fixed
-493 software list (+3), 101.138 software (-3/+103), 476 active SL (+3), 17 orphan SL (-1), 100.365 active software (-3/+103), 773 orphan software (-128), 67.069 software parents (+94), 34.069 software clones (+12)
+493 software list (+3), 101.138 software (-3/+103), 476 active SL (+3), 17 orphan SL, 100.365 active software (-3/+103), 773 orphan software (-128), 67.069 software parents (+94), 34.069 software clones (+12)
 124.484 software roms (+158), 8.982 software CHD, 64.462 supported software (+96), 711 partially supported software (+6), 35.965 unsupported software (+4)
 4 ren (3/1/0):
 a6809              > acrnsys3_6809     (mID: 30992) M
@@ -3437,7 +3438,7 @@ $0.188 [#627]
 13.311 horizontal screen (-7/+58), 2.760 vertical screen (+10), 15.421 raster graphics (-7/+57), 100 vector graphics, , 475 lcd graphics (+1), 0 svg graphics, 18.331 screenless (+8), 19.417 one player (+36), 8.015 two players (-7/+31), 245 three players (+1), 1.049 more than three players (+2)
 561 use stick (+7), 1.783 use gambling (+17), 8.868 use joystick (-7/+35), 1.967 use keyboard (+4), 521 use keypad (+7), 469 use lightgun (+1), 3.546 use mahjong (+10), 376 use mouse (+1), 9.179 use buttons only (+12), 491 use paddle, 469 use pedal, 67 use positional, 447 use dial, 564 use trackball, 3.151 use hanafuda
 283.053 total roms (+884), 281.297 machines roms (+875), 1.233 devices roms (+2), 523 BIOSes roms (+7), 967 CHDs (+16), 680 sample files (+5), 88 sample packs (+1), 277.712 good dumps (+874), 3.904 no dumps (+5), 2.404 bad dumps (+21), 13 bugs fixed
-466 software list, 98.989 software (+63), 451 active SL, 16 orphan SL, 98.238 active software (+63), 879 orphan software, 65.514 software parents (+52), 33.475 software clones (+11)
+466 software list, 98.989 software (-1/+62), 451 active SL, 16 orphan SL, 98.238 active software (-1/+62), 879 orphan software, 65.514 software parents (+52), 33.475 software clones (+11)
 122.361 software roms (+170), 7.881 software CHD, 62.715 supported software (+50), 571 partially supported software (+1), 35.703 unsupported software (+12)
 11 ren (11/0/0):
 actfancr           > actfancr2         (mID:  2033) M
@@ -3471,7 +3472,7 @@ $0.187 [#626]
 13.260 horizontal screen (+65), 2.750 vertical screen (+16), 15.371 raster graphics (+78), 100 vector graphics, 474 lcd graphics, 0 svg graphics, 18.323 screenless (+5), 19.381 one player (+25), 7.991 two players (+51), 244 three players, 1.047 more than three players (+3)
 554 use stick (+6), 1.766 use gambling (+11), 8.840 use joystick (+59), 1.963 use keyboard (+11), 514 use keypad (+3), 468 use lightgun (+2), 3.536 use mahjong (+2), 375 use mouse, 9.167 use buttons only, 491 use paddle (+1), 469 use pedal (+1), 67 use positional (+1), 447 use dial, 564 use trackball (+1), 3.151 use hanafuda
 282.169 total roms (+984), 280.422 machines roms (+973), 1.231 devices roms (+6), 516 BIOSes roms (+5), 951 CHDs (+4), 675 sample files, 87 sample packs, 276.838 good dumps (+977), 3.899 no dumps (+3), 2.383 bad dumps (+8), 9 bugs fixed
-466 software list (+1), 98.926 software (-20/+114), 451 active SL (+1), 16 orphan SL, 98.175 active software (-20/+114), 879 orphan software, 65.462 software parents (+113), 33.464 software clones (+21)
+466 software list (+1), 98.926 software (-19/+115), 451 active SL (+1), 16 orphan SL, 98.175 active software (-19/+115), 879 orphan software, 65.462 software parents (+113), 33.464 software clones (+21)
 122.191 software roms (+233), 7.881 software CHD, 62.665 supported software (+146), 570 partially supported software, 35.691 unsupported software (-12)
 7 ren (6/1/0):
 alpilota           > alpilotj          (mID:  8459) M
@@ -3492,7 +3493,7 @@ $0.186 [#625]
 13.195 horizontal screen (+101), 2.734 vertical screen (+13), 15.293 raster graphics (+110), 100 vector graphics, 474 lcd graphics (+1), 0 svg graphics, 18.318 screenless (+3), 19.356 one player (+48), 7.940 two players (+47), 244 three players (+1), 1.044 more than three players (+8)
 548 use stick (+4), 1.755 use gambling, 8.781 use joystick (+47), 1.952 use keyboard (-3), 511 use keypad (+27), 466 use lightgun (+7), 3.534 use mahjong (+4), 375 use mouse, 9.167 use buttons only (+14), 490 use paddle (+1), 468 use pedal, 66 use positional (+1), 447 use dial (-2), 563 use trackball (+3), 3.151 use hanafuda
 281.185 total roms (+6925), 279.449 machines roms (+6907), 1.225 devices roms (-2), 511 BIOSes roms (+20), 947 CHDs (+15), 675 sample files, 87 sample packs, 275.861 good dumps (+6800), 3.896 no dumps (+12), 2.375 bad dumps (+128), 14 bugs fixed
-465 software list (+2), 98.792 software (-1/+296), 450 active SL (+7), 16 orphan SL (-5), 98.041 active software (-1/+3546), 879 orphan software (-3.250), 65.349 software parents (+208), 33.443 software clones (+89)
+465 software list (+2), 98.792 software (-3/+294), 450 active SL (+7), 16 orphan SL (-5), 98.041 active software (-3/+3544), 879 orphan software (-3.250), 65.349 software parents (+208), 33.443 software clones (+89)
 121.958 software roms (+381), 7.881 software CHD, 62.519 supported software (+298), 570 partially supported software, 35.703 unsupported software (-1)
 315 ren (39/276/0):
 56xx                                   > namco56                     (mID: 29012) D
@@ -3820,7 +3821,7 @@ $0.185 [#624]
 11.798 working (+22), 22.332 not working (+27), 15.186 mechanicals (+5), 18.944 not mechanicals (+44), 8.050 save supported (+33), 26.080 save unsupported (+16), 13.094 horizontal screen (+42), 2.721 vertical screen (+3), 15.183 raster graphics (+39), 100 vector graphics, 473 lcd graphics, 0 svg graphics, 18.315 screenless (+4), 19.308 one player (+15), 7.893 two players (+19), 243 three players (+1), 1.036 more than three players (+4)
 544 use stick (+7), 1.755 use gambling (+1), 8.734 use joystick (+19), 1.955 use keyboard (+8), 484 use keypad (+6), 459 use lightgun (+9), 3.530 use mahjong (+1), 375 use mouse, 9.153 use buttons only (-27), 489 use paddle (-1), 468 use pedal (-1), 65 use positional, 449 use dial (+1), 560 use trackball (+3), 3.151 use hanafuda
 274.260 total roms (+433), 272.542 machines roms (+428), 1.227 devices roms (+5), 491 BIOSes roms, 932 CHDs (+14), 675 sample files (+13), 87 sample packs (+1), 269.061 good dumps (+333), 3.884 no dumps (+61), 2.247 bad dumps (+53), 6 bugs fixed
-463 software list (+8), 98.495 software (-1/+1213), 443 active SL (+9), 21 orphan SL (-1), 94.494 active software (-1/+1348), 4.129 orphan software (-135), 65.141 software parents (+1109), 33.354 software clones (+105)
+463 software list (+8), 98.495 software (-27/+1187), 443 active SL (+9), 21 orphan SL (-1), 94.494 active software (-27/+1322), 4.129 orphan software (-135), 65.141 software parents (+1109), 33.354 software clones (+105)
 121.577 software roms (+1573), 7.881 software CHD (+8), 62.221 supported software (+1213), 570 partially supported software, 35.704 unsupported software (+1)
 5 ren (5/0/0):
 gnwmndon           > gnw_dm53               (mID: 35362) M
@@ -3897,7 +3898,7 @@ $0.183 [#622]
 272.757 total roms (+827), 271.081 machines roms (+789), 1.188 devices roms (+36), 488 BIOSes roms (+2), 910 CHDs (+2), 662 sample files, 86 sample packs, 267.655 good dumps (+806), 3.819 no dumps (+19), 2.193 bad dumps (+4), 9 bugs fixed
 452 software list (+4), 97.161 software (+667), 430 active SL (+4), 23 orphan SL (-1), 92.987 active software (+667), 4.302 orphan software (-39), 63.935 software parents (+565), 33.226 software clones (+102)
 119.813 software roms (+1197), 7.873 software CHD, 60.891 supported software (+662), 571 partially supported software, 35.699 unsupported software (+5)
-16 ren (6/0/0):
+16 ren (14/2/0):
 amiga_paula        > paula_8364        (mID: 29023) D
 excalibr           > excalibrf         (mID: 00000) M ***
 galpans2           > galpans2j         (mID:  3529) M
@@ -3926,7 +3927,7 @@ $0.182 [#621]
 12.919 horizontal screen (+24), 2.707 vertical screen (+2), 15.000 raster graphics (+20), 100 vector graphics, 473 lcd graphics (+3), 0 svg graphics, 18.247 screenless (+16), 19.125 one player (+19), 7.821 two players (+23), 240 three players, 1.025 more than three players (+1)
 537 use stick, 1.749 use gambling, 8.674 use joystick (+19), 1.901 use keyboard (+2), 406 use keypad (+13), 445 use lightgun (+5), 3.528 use mahjong, 375 use mouse (+1), 9.170 use buttons only (+8), 487 use paddle, 466 use pedal, 62 use positional, 445 use dial (+1), 557 use trackball, 3.151 use hanafuda
 271.930 total roms (+552), 270.292 machines roms (+526), 1.152 devices roms (+25), 486 BIOSes roms (+1), 908 CHDs, 662 sample files, 86 sample packs, 266.849 good dumps (+557), 3.800 no dumps (-3), 2.189 bad dumps (-2), 10 bugs fixed
-448 software list (+4), 96.494 software (-19/+166), 426 active SL (+2), 24 orphan SL (+2), 92.320 active software (-19/+154), 4.341 orphan software (+12), 63.370 software parents (+161), 33.124 software clones (+24)
+448 software list (+4), 96.494 software (-24/+161), 426 active SL (+2), 24 orphan SL (+2), 92.320 active software (-24/+149), 4.341 orphan software (+12), 63.370 software parents (+161), 33.124 software clones (+24)
 118.616 software roms (+450), 7.873 software CHD, 60.229 supported software (+411), 571 partially supported software (+1), 35.694 unsupported software (-227)
 13 ren (8/5/0):
 74153              > ttl153            (mID: 29114) D
@@ -3956,7 +3957,7 @@ $0.181 [#620]
 12.895 horizontal screen (+32), 2.705 vertical screen (+7), 14.980 raster graphics (+38), 100 vector graphics, 470 lcd graphics (+1), 0 svg graphics, 18.231 screenless (+5), 19.106 one player (+15), 7.798 two players (+21), 240 three players (+1), 1.024 more than three players
 537 use stick (+4), 1.749 use gambling (+3), 8.655 use joystick (+18), 1.899 use keyboard (+8), 393 use keypad (+2), 440 use lightgun (+3), 3.528 use mahjong (+1), 374 use mouse (+3), 9.162 use buttons only, 487 use paddle (+3), 466 use pedal (+3), 62 use positional, 444 use dial, 557 use trackball, 3.151 use hanafuda
 271.378 total roms (+630), 269.766 machines roms (+625), 1.127 devices roms (+5), 485 BIOSes roms, 908 CHDs (+5), 662 sample files (-285), 86 sample packs (-3), 266.292 good dumps (+590), 3.803 no dumps (+54), 2.191 bad dumps (-9), 12 bugs fixed
-444 software list (-1), 96.309 software (-1/+63), 424 active SL, 22 orphan SL (+1), 92.147 active software (+26), 4.329 orphan software (+38), 63.209 software parents (+41), 33.100 software clones (+23)
+444 software list (-1/+2), 96.309 software (-23/+41), 424 active SL (-1/+1), 22 orphan SL (+1), 92.147 active software (-23/+3), 4.329 orphan software (+38), 63.209 software parents (+41), 33.100 software clones (+23)
 118.166 software roms (+179), 7.873 software CHD, 59.818 supported software (+56), 570 partially supported software (+2), 35.921 unsupported software (+6)
 8 ren (7/1/0):
 dynduke            > dyndukea               (mID: 00000) M ***
@@ -7604,8 +7605,8 @@ $0.140u1 [#528]
 331 use stick, 0 use gambling, 0 use joystick, 12 use keyboard, 0 use keypad, 226 use lightgun (+1), 0 use mahjong, 0 use mouse, 0 use buttons only, 291 use paddle, 316 use pedal, 0 use positional, 364 use dial, 226 use trackball, 0 use hanafuda
 131.522 total roms (+114), 131.307 machines roms (+114), 0 devices roms, 215 BIOSes roms, 468 CHDs (+1), 545 sample files, 40 sample packs, 129.750 good dumps (+103), 1.511 no dumps (+14), 729 bad dumps (-2), 2 bugs fixed
 2 ren (2/0/0):
-maglord            > maglordh          (mID: 00000) M ***
-maglordh           > maglord           (mID: 00000) M ***
+maglord            > maglordh          (mID:  1073) M
+maglordh           > maglord           (mID:   674) M
 0 del (0/0/0):
 -
 
@@ -7664,19 +7665,21 @@ $0.139u2 [#524]
 331 use stick, 0 use gambling, 0 use joystick, 12 use keyboard, 0 use keypad, 221 use lightgun, 0 use mahjong, 0 use mouse, 0 use buttons only, 286 use paddle, 314 use pedal, 0 use positional, 363 use dial, 226 use trackball, 0 use hanafuda
 129.758 total roms (+482), 129.546 machines roms (+478), 0 devices roms, 212 BIOSes roms (+4), 465 CHDs (+2), 541 sample files, 39 sample packs, 128.017 good dumps (+469), 1.519 no dumps (+5), 687 bad dumps (+10), 27 bugs fixed
 13 ren (13/0/0):
-fatfursa   > fatfurspa                 (mID:  4486) M
-gangwars   > gangwarsu                 (mID:  1490) M
-gangwarsb  > gangwars                  (mID: 00000) M ***
-gwingjd    > gigawingjd                (mID:  7346) M
-kof99      > kof99h                    (mID: 46811) M
-kof99a     > kof99                     (mID:  2610) M
-progerjd   > progearjbl                (mID: 00000) M ***
-rdftdi     > rdftadi                   (mID: 00000) M ***
-rfjetus    > rfjets                    (mID: 00000) M ***
-sengokh    > sengokuh                  (mID:  1857) M
-sf2ce      > sf2ceea                   (mID:  1081) M
-shocktra   > shocktroa                 (mID:  2343) M
-wh2jh      > wh2j                      (mID:  3894) M
+fatfursa           > fatfurspa         (mID:  4486) M
+gangwars           > gangwarsu         (mID:  1490) M
+gangwarsb          > gangwars          (mID:  1489) M
+gwingjd            > gigawingjd        (mID:  7346) M
+kof99              > kof99h            (mID: 46811) M
+kof99a             > kof99             (mID:  2610) M
+progerjd           > progearjbl        (mID:  7354) M
+rdftdi             > rdftadi           (mID:  5705) M
+rfjetus            > rfjets            (mID:  5300) M
+sengokh            > sengokuh          (mID:  1857) M
+sf2ce              > sf2ceea           (mID:  1081) M
+shocktra           > shocktroa         (mID:  2343) M
+wh2jh              > wh2j              (mID:  3894) M
+
+
 1 del (1/0/0):
 wh2j                                   (mID:  6864) M
 
@@ -7693,11 +7696,11 @@ dynwaru            > dynwara           (mID:  7080) M
 forgottnu          > forgottnua        (mID:  1324) M
 forgottnua         > forgottnu         (mID:  8856) M
 miniboy7           > miniboy7a         (mID:  8875) M
-quizard            > quizrd17          (mID: 00000) M ***
-quizrd32           > quizard           (mID: 00000) M ***
-raiden2d           > raiden2c          (mID: 00000) M ***
-raiden2e           > raiden2d          (mID: 00000) M ***
-raiden2f           > raiden2e          (mID: 30677) M
+quizard            > quizrd17          (mID:  8878) M
+quizrd32           > quizard           (mID:  8831) M
+raiden2d           > raiden2c          (mID:  6932) M
+raiden2e           > raiden2d          (mID:  4888) M
+raiden2f           > raiden2e          (mID:  7086) M
 wofhfb             > wofhfh            (mID:  7197) M
 1 del (1/0/0):
 raiden2c                               (mID: 47835) M
@@ -7734,7 +7737,7 @@ sfzh               > sfzhr1            (mID:  2842) M
 socbrawl           > socbrawlh         (mID:  1017) M
 socbrawla          > socbrawl          (mID: 45992) M
 term2              > term2la3          (mID:   953) M
-tokio              > tokioo            (mID: 00000) M ***
+tokio              > tokioo            (mID:  6061) M
 trogp              > trogpa4           (mID:   960) M
 0 del (0/0/0):
 -
@@ -7748,7 +7751,7 @@ $0.138u3 [#520]
 327 use stick, 0 use gambling, 0 use joystick, 12 use keyboard, 0 use keypad, 219 use lightgun, 0 use mahjong, 0 use mouse, 0 use buttons only, 286 use paddle, 314 use pedal, 0 use positional, 362 use dial, 225 use trackball, 0 use hanafuda
 128.226 total roms (+283), 128.019 machines roms (+280), 0 devices roms, 207 BIOSes roms (+3), 455 CHDs (+5), 533 sample files (+1), 38 sample packs (+1), 126.573 good dumps (+275), 1.436 no dumps (-3), 672 bad dumps (+16), 7 bugs fixed
 19 ren (19/0/0):
-animaljr           > animaljrs         (mID: 00000) M ***
+animaljr           > animaljrs         (mID:  5703) M
 boggy84            > boggy84b          (mID:  3816) M
 ckong              > ckongpt2          (mID:     8) M
 ckong2j            > ckongpt2j         (mID:  8057) M
@@ -7761,7 +7764,7 @@ lhba               > lhbv33c           (mID:  6559) M
 looping            > loopingv          (mID:  2710) M
 loopinga           > loopingva         (mID:  2711) M
 raidndx            > raidndxa1         (mID:  4891) M
-raidndxm           > raidndxa2         (mID: 00000) M ***
+raidndxm           > raidndxa2         (mID:  5711) M
 raidndxt           > raidndxg          (mID:  4892) M
 redufo             > redufob           (mID:   249) M
 slapbtjp           > slapfighb1        (mID:   494) M
