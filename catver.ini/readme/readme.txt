@@ -1,4 +1,4 @@
-﻿MAME CATVER.ini 0.284 (Jan 12, 2026)
+﻿MAME CATVER.ini 0.285 (Feb 10, 2026)
 © AntoPISA     www.progettoSNAPS.net
 ====================================
 
@@ -16,6 +16,7 @@ In this package you can find these ini files:
 
 WhatsNew:
 =========
+2026/02/10 11.01: Aligned files to MAME 0.285.
 2026/01/12 11.00: Aligned files to MAME 0.284.
 2025/12/19 10.11: Aligned files to MAME 0.283.
 2025/11/10 10.10: Aligned files to MAME 0.282. Divide the "Music" category into games and musical instruments (or similar).
