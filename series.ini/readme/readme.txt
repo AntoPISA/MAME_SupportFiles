@@ -1,4 +1,4 @@
-﻿MAME SERIES.ini 0.284 (Jan 12, 2026)
+﻿MAME SERIES.ini 0.285 (Feb 13, 2026)
 © AntoPISA     www.progettoSNAPS.net
 ==================================== 
 
@@ -12,10 +12,15 @@ In the file are both "Series" recognized as such (thus games and their official 
 guages or with minor variations (official and unofficial).
 
 
+2026/02/13 12.01 MAME 0.285 (719 supported Series - 12,380 items):
+==================================================================
+Items RENAMED     (1) : (dkongjrv) to (dkingjrv).
+Series UPDATED    (5) : "Cherry Bonus * Slot", "Donkey Kong", "Empire City", "Puzz Loop" and "Vanguard".
+
+
 2026/01/12 12.00 MAME 0.284 (719 supported Series - 12,375 items):
 ==================================================================
 Series UPDATED   (13) : "Cherry Master * Slot", "Defender", "Double Dragon", "E-Swat Cyber Police", "Fruit Bonus * Slot", "Gauntlet", "Head On", "Pac-Man", "Pit Boss", "Royal Mahjong", "Space Invaders", "Trivia ? Whiz" and "Xevious".
-
 
 2025/12/19 11.10 MAME 0.283 (719 supported Series - 12,350 items):
 ==================================================================
