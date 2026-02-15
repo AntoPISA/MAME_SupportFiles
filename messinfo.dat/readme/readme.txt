@@ -1,9 +1,10 @@
-﻿MESSINFO.DAT 0.284  (Jan 16, 2026)
+﻿MESSINFO.DAT 0.285  (Feb 15, 2026)
 © AntoPISA   www.progettoSNAPS.net
 ==================================
 
 WhatsNew:
 =========
+2026/02/15 15.01: Aligned files to 0.285 version.
 2026/01/16 15.00: Aligned files to 0.284 version.
 2025/12/24 14.10: Aligned files to 0.283 version.
 2025/11/15 14.09: Aligned files to 0.282 version.

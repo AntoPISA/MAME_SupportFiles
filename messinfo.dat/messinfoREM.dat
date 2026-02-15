@@ -1,4 +1,4 @@
-﻿#    MESSINFO_REM.DAT v0.284    Latest update:  Jan 16, 2026
+﻿#    MESSINFO_REM.DAT v0.285    Latest update:  Feb 15, 2026
 #                                Project start: Nov  7, 2011
 #
 #    Author:  Antonio Paradossi (AntoPISA) from Pisa (Tuscany/Italy)
@@ -8,8 +8,8 @@
 #
 #    homepage: http://www.progettosnaps.net/messinfo
 #
-#    Internal version: 15.00
-#    Total items: 357
+#    Internal version: 15.01
+#    Total items: 363
 #
 #
 $info=24c16a
@@ -340,6 +340,40 @@ WIP:
 
 ROMSET:
 270336 / 4 files / 170.05Kb packed
+
+$end
+$info=apricotxi
+$mame
+0.133 [Dirk Best]
+
+Apricot Xi, ACT, 1984
+
+The Apricot PC was Apricot Computers' first personal computer made for business use. The press received it well, especially for the high resolution 800 x 400 of its time and its trackball cable (future models will be IR). It is the first non-Japanese computer using 3?" Sony floppy disc units. It uses a Intel 8086 processor running at 4,77 MHz. Optional 8087 math co-processor were possible. Memory is 256 kB expandable to 768 kB. CRT green-screen 9" with text mode 80 x 25 or graphics 800 x 400 pixels. Equipped with two floppy discs and a keyboard with an integrated LCD display. Released in 1983, it achieved success in the UK. The manufacturer failed completely to clone the IBM BIOS, so although it ran MS-DOS and CP/M-86, it was not IBM PC compatible as the underlying system BIOS and hardware is very different. An Intel 8089 I/O controller was used, instead of the Intel 8237 DMA chip used in IBM computers; the ROM was only a simple boot loader rather than a full BIOS; and there was no 640k barrier. The floppy disk format was "not quite compatible"; attempting to read an ordinary PC floppy in an Apricot, or vice versa, would result in a scrambled directory listing with some files missing. Apricot later offered the possibility of converting the computer into an IBM compatible PC by replacing the motherboard with one equipped with an Intel 80286 processor. The Apricot Xi is a similar computer released in 1984, but with a hard drive instead of a second floppy. (source: http://en.wikipedia.org/wiki/Apricot_PC).
+
+DRIVER:
+act/apricot.cpp
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Unsupported
+
+SOFTWARE LIST:
+apricot_flop.xml
+
+RESOURCES:
+Snap, Title, Icon and machine picture (in "Cabinet" collection).
+
+WIP:
+- 0.285: Machine removed.
+- 0.181: Machine promoted to working [Dirk Best].
+- 0.137: Renamed (aprixi) to (apricotxi).
+- 0.133: Dirk Best added skeleton driver of 'ACT Apricot Xi' system.
+
+ROMSET:
+16384 bytes in 2 files / 7.59Kb packed
 
 $end
 $info=arm_be
@@ -1021,6 +1055,27 @@ WIP:
 $end
 $info=ds5002fp
 $mame
+0.150 [Steve Ellenoff, Manuel Abadia, Couriersud]
+
+Dallas DS5002FP, <unknown>, ????
+
+DRIVER:
+devices/cpu/mcs51/ds5002fp.cpp
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Unsupported
+
+WIP:
+- 0.285: Device removed.
+- 0.150: Steve Ellenoff, Manuel Abadia, Couriersud added 'Dallas DS5002FP' device.
+
+$end
+$info=ds5002fp
+$mame
 0.184 [Steve Ellenoff, Manuel Abadia, Couriersud]
 
 Dallas DS5002FP, <unknown>, ????
@@ -1253,6 +1308,48 @@ WIP:
 
 ROMSET:
 1048576 bytes in 1 file / 522Kb packed
+
+$end
+$info=elan_eu3a05commonsys
+$mame
+0.216 [David Haywood]
+
+Elan EU3A05/EU3A14 Common System, <unknown>, ????
+
+DRIVER:
+tvgames/elan_eu3a05commonsys.cpp
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Unsupported
+
+WIP:
+- 0.285: Device removed.
+- 0.216: David Haywood added 'Elan EU3A05/EU3A14 Common System' device. Split up implementations and started identifying common features. Fixed non-split mode horizontal scrolling. Disabled timer when running rad_bb3 (timer enable needs to be identified) [David Haywood].
+
+$end
+$info=elan_eu3a05commonvid
+$mame
+0.216 [David Haywood]
+
+Elan EU3A05/EU3A14 Common Video, <unknown>, ????
+
+DRIVER:
+tvgames/elan_eu3a05commonvid.cpp
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Unsupported
+
+WIP:
+- 0.285: Device removed.
+- 0.216: David Haywood added 'Elan EU3A05/EU3A14 Common Video' device.
 
 $end
 $info=evo_cpu
@@ -7111,6 +7208,15 @@ WIP:
 - 0.166: Joakim Larsson Edstrom added hk68v10.cpp driver.
 
 $end
+$info=iris1400.cpp
+$drv
+0.284 [Patrick Mackinlay]
+
+WIP:
+- 0.285: Driver merged into sgi/iris.cpp.
+- 0.284: Patrick Mackinlay added iris1400.cpp driver.
+
+$end
 $info=konamim2.cpp
 $drv
 0.144u1 [Ville Linde]
@@ -7125,6 +7231,16 @@ $drv
 
 WIP:
 - 0.148: Added korgm1.c skelton driver. The driver isn't add to mess.lst.
+
+$end
+$info=krypton_challenge.cpp
+$drv
+0.267 [hap]
+
+WIP:
+- 0.285: Move chess/krypton_challenge.cpp to newcrest/legend.cpp
+- 0.283: Renamed (krypton_regency.cpp) to (krypton_challenge.cpp).
+- 0.267: hap added chess/krypton_regency.cpp‎ driver.
 
 $end
 $info=lx800.cpp
