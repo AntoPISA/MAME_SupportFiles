@@ -589,7 +589,7 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
-$info=animechmp,bassang2,bassangl,cr589fw,cr589fwa,darkhleg,ddr2m,ddr2mc,ddr2mc2,ddr2ml,ddr2mla,ddr2mlb,ddr3ma,ddr3mj,ddr3mk,ddr3mka,ddr3mp,ddr4m,ddr4mj,ddr4mp,ddr4mps,ddr4ms,ddr4msj,ddr5m,ddra,ddrbocd,ddrextrm,ddrj,ddrja,ddrjb,ddrkara2,ddrmax,ddrmax2,ddrs2k,ddrs2kj,ddrsbm,ddru,dmx,dmx2m,dmx2majp,dmxa,dncfrks,drmn,drmn10m,drmn2m,drmn2mpu,drmn3m,drmn4m,drmn5m,drmn6m,drmn7m,drmn7ma,drmn8m,drmn9m,drmn9ma,drmna,drmnu,dsem,dsem2,dsfdct,dsfdcta,dsfdr,dsftkd,dstage,fbaitbc,fbaitmc,fbaitmca,fbaitmcj,fbaitmcu,fghtmn,fghtmna,fghtmnk,fghtmnu,gbbchmp,gchgchmp,gtfrk10m,gtfrk10ma,gtfrk11m,gtfrk3ma,gtfrk3mb,gtrfrk2m,gtrfrk2ma,gtrfrk2maa,gtrfrk2mja,gtrfrk2mka,gtrfrk2ml1,gtrfrk2ml2,gtrfrk2mua,gtrfrk3m,gtrfrk4m,gtrfrk5m,gtrfrk5ma,gtrfrk6m,gtrfrk7m
+$info=animechmp,bassang2,bassangl,cr589fw,cr589fwa,darkhleg,ddr2m,ddr2mc2,ddr2ml,ddr2mla,ddr2mlb,ddr3ma,ddr3mj,ddr3mk,ddr3mka,ddr3mp,ddr4m,ddr4mj,ddr4mp,ddr4mps,ddr4ms,ddr4msj,ddr5m,ddra,ddrbocd,ddrextrm,ddrj,ddrja,ddrjb,ddrkara2,ddrmax,ddrmax2,ddrs2k,ddrs2kj,ddrsbm,ddru,dmx,dmx2m,dmx2majp,dmxa,dncfrks,drmn,drmn10m,drmn2m,drmn2mpu,drmn3m,drmn4m,drmn5m,drmn6m,drmn7m,drmn7ma,drmn8m,drmn9m,drmn9ma,drmna,drmnu,dsem,dsem2,dsfdct,dsfdcta,dsfdr,dsftkd,dstage,fbaitbc,fbaitmc,fbaitmca,fbaitmcj,fbaitmcu,fghtmn,fghtmna,fghtmnk,fghtmnu,gbbchmp,gchgchmp,gtfrk10m,gtfrk10ma,gtfrk11m,gtfrk3ma,gtfrk3mb,gtrfrk2m,gtrfrk2ma,gtrfrk2maa,gtrfrk2mja,gtrfrk2mka,gtrfrk2ml1,gtrfrk2ml2,gtrfrk2mua,gtrfrk3m,gtrfrk4m,gtrfrk5m,gtrfrk5ma,gtrfrk6m,gtrfrk7m
 $mame
 Messages that start with 6: press F2
 Messages that start with 5: press F3
@@ -2802,6 +2802,11 @@ At start, issue the IT command to initialise the system correctly.
 To save a tape: TW
 To load a tape: TR
 
+$end
+$info=ddr2mc
+$mame
+INITIALISATION:
+When first run, it will say INCORRECT SECURITY CASSETTE. In the DIP switches, change the "Start Up Device" to "CD-ROM Drive". Do not Reset, Esc instead. Go to File Manager, where it says "cdrom" change to "install". Do not Reset, Esc instead until the menu is gone. Now hit F3. It says to push Test Button, so press F2. When it completes, in the DIP Switches, change "Start Up Device" to "Flash ROM", and choose Reset System. After wasting more time, it will eventually start.
 $end
 $info=ddragon
 $mame
