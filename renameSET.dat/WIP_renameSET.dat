@@ -1,5 +1,5 @@
 ﻿#     ==========================================================
-#     MAME RENAMESET.DAT v0.285     Latest update:  Feb  9, 2026
+#     MAME RENAMESET.DAT v0.286     Latest update:  Mar  2, 2026
 #     ==========================================================
 #
 #     Home-page: https://www.progettosnaps.net/renameset/
@@ -12,12 +12,11 @@
 #     "mID" is the unique progressive number that I have assigned to each machine/BIOS/device added to MAME.
 #     You can see this updated list here: https:\\www.progettosnaps.net\mameID_latest.txt
 #
-#     Thanks to MAMEDevs for whatsnew.txt
-#               Guy Peters for the "ini_generator"
+#     Thanks to MAMEDevs for whatsnew.txt (...and of course for MAME!)
 #               M.A.S.H. for "mameinfo.dat"
 #               motoschifo for "ADB Tool", "pS_Tool" and for the constant support!
 #
-#               Internal Version 16.02
+#               Internal Version 16.03
 #
 #       809 removed machines/devices overall in the history of MAME
 #     6.913 renamed machines/devices overall in the history of MAME
@@ -26,6 +25,37 @@
 #          Rename/Delete Software Lists (in dat): From version 0.180 to 0.210 already rechecked.
 #
 #
+$0.286 [#725]
+2026/02/26
+49.738 total items, 3.294 drivers (+15), 42.562 machines (-1/+72), 14.987 parents (-1/+56), 27.575 clones (+16), 80 BIOSes (+1), 7.096 devices (+50), 1.264 requires CHDs (-1/+5), 1.898 use samples, 35.557 audio mono (+82), 2.403 audio stereo (-20), 1.211 audio multichannel (-1/+8), 3.391 no audio (+2)
+16.461 working (+48), 26.101 not working (-1/+24), 15.721 mechanicals (+7), 26.841 not mechanicals (-1/+65), 14.797 save supported (+33), 27.765 save unsupported (-1/+39)
+19.755 horizontal screen (-1/+65), 3.305 vertical screen (+2), 21.759 raster graphics (-1/+65), 109 vector graphics, 850 lcd graphics (+2), 342 svg graphics, 19.502 screenless (+5), 25.424 one player (-1/+39), 10.108 two players (+15), 344 three players (+1), 1.103 more than three players (+2)
+706 use stick (+3), 3.579 use gambling (-7), 11.657 use joystick (+24), 3.281 use keyboard (-1/+10), 2.687 use keypad (+1), 627 use lightgun (+2), 3.713 use mahjong (+4), 1.040 use mouse (-1/+3), 9.781 use buttons only (+6), 677 use paddle, 639 use pedal (+1), 100 use positional, 583 use dial, 374 use trackball, 3.165 use hanafuda
+368.235 total roms (+351), 364.585 machines roms (+314), 2.991 devices roms (+18), 659 BIOSes roms (+19), 1.396 CHDs (+4), 597 sample files, 76 sample packs, 358.288 good dumps (+320), 6.412 no dumps (+28), 4.931 bad dumps (+7), 12 bugs fixed
+757 software list (+2), 141.057 software (+171), 746 active SL (+2), 11 orphan SL, 140.295 active software (+171), 762 orphan software, 97.173 software parents (+144), 43.884 software clones (+27)
+238.253 software roms (+183), 11.549 software CHD (+10), 99.732 supported software (+130), 2.131 partially supported software (+17), 39.194 unsupported software (+24)
+17 ren (10/7/0):
+backfirt           > backfirtb              (mID:  8206) M
+clgd5428           > gd5428                 (mID: 31557) D
+clgd5430           > gd5430                 (mID: 31559) D
+clgd5446           > gd5446                 (mID: 39126) D
+gijoea             > gijoeaa                (mID: 38934) M
+majorpkr           > majorpkr20             (mID: 10576) M
+mario              > mariog                 (mID:    54) M
+marioe             > mario                  (mID:  6794) M
+md8412b            > md8412b_s23            (mID: 47913) D
+mx5000             > mx5000r                (mID:  1887) M
+niyanpai           > nyanpai                (mID:  2728) M
+pullttrig          > pulltrig               (mID: 47292) M
+sis6236_vga        > sis6326_vga            (mID: 45173) D
+snk68_spr          > alpha68k_spr           (mID: 36243) D
+stvcd              > saturn_cd_hle          (mID: 39204) D
+touryuu            > touryuua               (mID: 19583) M
+wgp2               > wgp2j                  (mID:  3112) M
+1 del (1/0/0):
+slvrball806                                 (mID: 43627) M
+
+
 $0.285 [#724]
 2026/01/30
 49.616 total items, 3.279 drivers (+6), 42.491 machines (-1/+45), 14.932 parents (+15), 27.559 clones (-1/+30), 79 BIOSes, 7.046 devices (-3/+37), 1.260 requires CHDs, 1.898 use samples (+1), 35.475 audio mono (+44), 2.423 audio stereo (+13), 1.204 audio multichannel (-8), 3.389 no audio (-5)
@@ -61,6 +91,7 @@ apricotxi                                   (mID: 31108) M
 elan_eu3a05commonsys                        (mID: 41440) D
 elan_eu3a05commonvid                        (mID: 41441) D
 ep1c12                                      (mID: 29605) D
+
 
 $0.284 [#723]
 2025/12/31
@@ -7292,9 +7323,9 @@ $0.143 [#543]
 2 software list, 107 software, 2 active SL, 0 orphan SL, 107 active software, 0 orphan software, 99 software parents, 8 software clones
 541 software roms, 0 software CHD, 65 supported software, 0 partially supported software, 42 unsupported software
 3 ren (3/0/0):
-terrafb            > terrafjb          (mID: 00000) M ***
 terraf             > terrafb           (mID: 00000) M ***
 terrafa            > terraf            (mID: 00000) M ***
+terrafb            > terrafjb          (mID: 00000) M ***
 0 del (0/0/0):
 -
 
@@ -7481,23 +7512,23 @@ $0.141u3 [#534]
 1 software list, 48 software, 1 active SL, 0 orphan SL, 48 active software, 0 orphan software, 47 software parents, 1 software clones
 100 software roms, 0 software CHD, 48 supported software, 0 partially supported software, 0 unsupported software
 18 ren (17/0/1):
-cd32bios           > cd32              (mID: 00000) M ***
+cd32bios           > cd32              (mID:  6468) B
 cyvern             > cyvernj           (mID:  3512) M
 ddr2ml             > ddr2mla           (mID:  6315) M
 fmania             > fghtmn            (mID:  8738) M
-initdv2j           > initdv2jo         (mID: 00000) M ***
-initdv3j           > initdv3jb         (mID: 00000) M ***
+initdv2j           > initdv2jo         (mID:  7927) M
+initdv3j           > initdv3jb         (mID:  8014) M
 monopole           > monop303          (mID:  9748) M
 moo                > moomesa           (mID:  3350) M
 mooaa              > moomesaa          (mID:  6098) M
 moobl              > moomesabl         (mID:  4066) M
 mooua              > moomesaua         (mID:  3300) M
-nightrdr           > nightr20          (mID: 00000) M ***
-shrky_fr           > shrkyfr           (mID: 00000) M ***
-shrky_gr           > shrkygr           (mID: 00000) M ***
-shrky_it           > shrkyit           (mID: 00000) M ***
-thepit             > thepitj           (mID:  6148) M
-thepitb            > thepit            (mID: 00000) M ***
+nightrdr           > nightr20          (mID:  9793) M
+shrky_fr           > shrkyfr           (mID:  9963) M
+shrky_gr           > shrkygr           (mID:  9964) M
+shrky_it           > shrkyit           (mID:  9965) M
+thepit             > thepitj           (mID:  6049) M
+thepitb            > thepit            (mID:  6148) M
 thepitc            > thepitu           (mID:   458) M
 1 del (1/0/0):
 fmania                                 (mID:  8738) M
@@ -7514,7 +7545,7 @@ $0.141u2 [#533] [Introduced the first software list]
 100 software roms (+100), 0 software CHD, 48 supported software (+48), 0 partially supported software, 0 unsupported software
 5 ren (4/0/1):
 cdi                > cdimono1          (mID: 10304) B
-evilngt            > evilngte          (mID: 00000) M ***
+evilngt            > evilngte          (mID:  6110) M
 ptblnk2a           > ptblank2a         (mID:  5521) M
 sbomberb           > sbomber           (mID:  3308) M
 willowje           > willowo           (mID:   473) M
@@ -7529,22 +7560,23 @@ $0.141u1 [#532] [Added mechanicals machines]
 6.919 horizontal screen (+22), 2.148 vertical screen (+17), 8.982 raster graphics (+39), 85 vector graphics, 0 lcd graphics, 0 svg graphics, 1.140 screenless (+1099), 2.374 one player (+10), 5.757 two players (+6), 158 three players (+13), 731 more than three players (+8)
 333 use stick (+1), 0 use gambling, 0 use joystick, 0 use keyboard, 13 use keypad, 230 use lightgun, 0 use mahjong, 0 use mouse, 0 use buttons only, 291 use paddle, 317 use pedal (+1), 0 use positional, 372 use dial (+7), 230 use trackball, 0 use hanafuda
 139.102 total roms (+6257), 138.869 machines roms (+6240), 0 devices roms, 233 BIOSes roms (+17), 478 CHDs, 545 sample files, 40 sample packs, 137.156 good dumps (+6220), 1.670 no dumps (+39), 754 bad dumps (-2), 19 bugs fixed
-16 ren (15/0/1):
-arcadia            > warcadia          (mID: 00000) M ***
-batsugun           > batsuguna         (mID: 00000) M ***
-cd32               > cd32bios          (mID: 31494) M
+17 ren (16/0/1):
+arcadia            > warcadia          (mID:  3148) M
+batsugun           > batsuguna         (mID:  2035) M
+batsuguna          > batsugun          (mID:  5843) M
+cd32               > cd32bios          (mID: 31494) B
 fixeightb          > fixeightbl        (mID:  5224) M
 gekirido           > gekiridnj         (mID:  2912) M
 magical            > magodds           (mID:  8592) M
 magicala           > magoddsa          (mID:  8843) M
-mgdh               > mgdha             (mID: 00000) M ***
+mgdh               > mgdha             (mID:  8435) M
 mtonic             > magoddsc          (mID:  7512) M
 pipibibi           > pipibibsbl        (mID:  9833) M
-roadriot           > roadrioto         (mID: 00000) M ***
-saturn             > saturnzi          (mID: 00000) M ***
+roadriot           > roadrioto         (mID:  4368) M
+saturn             > saturnzi          (mID:  1430) M
 sfa2u              > sfa2ur1           (mID:  2750) M
-stcc               > stcca             (mID: 00000) M ***
-witchcde           > witchjol          (mID: 00000) M ***
+stcc               > stcca             (mID:  5206) M
+witchcde           > witchjol          (mID:  8323) M
 zerotrgt           > zerotrgta         (mID:  4868) M
 0 del (0/0/0):
 -
@@ -7572,7 +7604,7 @@ $0.140u3 [#530]
 332 use stick, 0 use gambling, 0 use joystick, 13 use keyboard, 0 use keypad, 230 use lightgun, 0 use mahjong, 0 use mouse, 0 use buttons only, 291 use paddle, 316 use pedal, 0 use positional, 365 use dial (+1), 228 use trackball (+2), 0 use hanafuda
 132.555 total roms (+353), 132.339 machines roms (+352), 0 devices roms, 216 BIOSes roms (+1), 477 CHDs (+2), 545 sample files, 40 sample packs, 130.740 good dumps (+336), 1.544 no dumps (+4), 748 bad dumps (+15), 17 bugs fixed
 1 ren (1/0/0):
-derbyocw           > drbyocwc          (mID: 00000) M ***
+derbyocw           > drbyocwc          (mID:  8700) M
 0 del (0/0/0):
 -
 
@@ -7585,14 +7617,14 @@ $0.140u2 [#529]
 332 use stick (+1), 0 use gambling, 0 use joystick, 13 use keyboard (+1), 0 use keypad, 230 use lightgun (+4), 0 use mahjong, 0 use mouse, 0 use buttons only, 291 use paddle, 316 use pedal, 0 use positional, 364 use dial, 226 use trackball, 0 use hanafuda
 132.202 total roms (+680), 131.987 machines roms (+680), 0 devices roms, 215 BIOSes roms, 475 CHDs (+7), 545 sample files, 40 sample packs, 130.404 good dumps (+654), 1.540 no dumps (+29), 733 bad dumps (+4), 3 bugs fixed
 8 ren (8/0/0):
-ddp2               > ddp2100           (mID: 00000) M ***
-ddp2a              > ddp2              (mID: 00000) M ***
-jojo               > jojoj             (mID: 00000) M ***
-kod                > kodr1             (mID: 00000) M ***
-megaman            > megamana          (mID: 00000) M ***
-megat2             > megat2ca          (mID: 00000) M ***
-mercsu             > mercsur1          (mID: 00000) M ***
-mercsua            > mercsu            (mID: 00000) M ***
+ddp2               > ddp2100           (mID:  5427) M
+ddp2a              > ddp2              (mID:  7979) M
+jojo               > jojoj             (mID:  6695) M
+kod                > kodr1             (mID:   903) M
+megaman            > megamana          (mID:   904) M
+megat2             > megat2ca          (mID:  9051) M
+mercsu             > mercsur1          (mID:   939) M
+mercsua            > mercsu            (mID:  3900) M
 0 del (0/0/0):
 -
 
@@ -7648,11 +7680,11 @@ $0.139u3 [#525]
 7 ren (7/0/0):
 aladbl             > aladmdb           (mID:  6682) M
 mk3ghw             > mk3mdb            (mID:  8573) M
-soulcl2a           > soulcl2b          (mID: 00000) M ***
+soulcl2a           > soulcl2b          (mID:  8485) M
 ssf2ghw            > ssf2mdb           (mID:  6286) M
-ssgbl              > srmdb             (mID: 00000) M ***
-tm2ka              > tm2kb             (mID:  8237) M
-tm2k               > tm2ka             (mID: 00000) M ***
+ssgbl              > srmdb             (mID:  8190) M
+tm2k               > tm2ka             (mID:  8237) M
+tm2ka              > tm2kb             (mID:  8718) M
 0 del (0/0/0):
 -
 
