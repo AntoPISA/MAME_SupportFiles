@@ -1,18 +1,9 @@
 ﻿0.247 2022/08/31 [#686 - Vas Crabb]
-- ----------------------------------
-
-
-MAME Testers Bugs Fixed :
------------------------
-- 08342: [Sound] (sinclair/spectrum.cpp) spec128 [cobrasar and clones]: Voice-over is missing in Cobra’s Arc (holub).
-- 08377: [Graphics] (sharp/x68k.cpp) keeper: Tree on title screen appears in front of Success logo (Carl).
-- 08390: [Crash/Freeze] (sinclair/pentagon.cpp) pentagon: Main menu freezes after boot (holub).
-- 08401: [Crash/Freeze] (kaneko/suprnova.cpp) galpans3: Memory corruption causes emulator to crash (hap).
-- 08404: [DIP/Input] (namco/namcos86.cpp) wndrmomo: Game should use eight-way joysticks (Steven Coomber).
+------------------------------------
 
 
 New Working Machines
-- -------------------
+---------------------
 BMX Stunts [Ivan Vangelista, hap, chaneman, Andrew Welburn]
 Casio Celviano AP-10 [Devin Acker]
 Casio CTK-601 [Devin Acker, Gabriel Miceli]
@@ -283,6 +274,15 @@ snes:
   The King of Fighters '98 (pirate), Marvel Super Heroes Vs. Street Fighter (pirate) [ALMCLE]
   WeaponLord (USA, prototype) [DrBizz]
 vboy: Hyper Fighting (pirate) [Planet Virtual Boy]
+
+
+MAME Testers Bugs Fixed (5):
+----------------------------
+- 08342: [Sound] (sinclair/spectrum.cpp) spec128 [cobrasar and clones]: Voice-over is missing in Cobra’s Arc (holub)
+- 08377: [Graphics] (sharp/x68k.cpp) keeper: Tree on title screen appears in front of Success logo (Carl)
+- 08390: [Crash/Freeze] (sinclair/pentagon.cpp) pentagon: Main menu freezes after boot (holub)
+- 08401: [Crash/Freeze] (kaneko/suprnova.cpp) galpans3: Memory corruption causes emulator to crash (hap)
+- 08404: [DIP/Input] (namco/namcos86.cpp) wndrmomo: Game should use eight-way joysticks (Steven Coomber)
 
 
 Merged Pull Requests
@@ -765,7 +765,7 @@ The Dracula (Tsukuda) [hap, Sean Riddle, Parotaku]
 - rescue, minefld: make bullets 2x2 pixels instead of a single pixel (#10172) [goldnchild]
 
 new NOT_WORKING clones
-- ---------------------
+-----------------------
 Red Earth (Asia 961121, NO CD) [Darksoft, MetalliC]
 Red Earth (Asia 961023, NO CD) [Darksoft, MetalliC]
 
@@ -862,7 +862,7 @@ Game Pachinko [hap, Sean Riddle, Rik]
  program ROMs, but bmxstuntsa sorta works [Ivan Vangelista]
 
 New Working Machines
-- -------------------
+---------------------
 Language Teacher [hap, Sean Riddle]
 
 New Working Software List Additions
@@ -874,7 +874,7 @@ lanteach: German For Travel [hap, Sean Riddle]
 - barcrest/mpu1.cpp: Added Barcrest MPU1 fruit machine driver (#10083) [SomeRandomGuyIdk]
 
 New machines marked not working
-- ------------------------------
+--------------------------------
 Golden Nudge It (Barcrest) (MPU1) (5p Stake, £1 Jackpot) [SomeRandomGuyIdk]
 Match It (Barcrest) (MPU1) (5p Stake, £1 Jackpot) [SomeRandomGuyIdk]
 Match Up (Barcrest) (MPU1) (10p Stake, £2 Jackpot) [SomeRandomGuyIdk]
@@ -967,12 +967,12 @@ Towns Magazine for School Vol. 3 [redump.org]
 Towns Magazine for School Vol. 5 [redump.org]
 
 New not working software list additions
-- --------------------------------------
+----------------------------------------
 Nihongo Microsoft Windows V3.0 with Multimedia Extensions V1.0 L10 [redump.org, tenyuhuang]
 Tenshi-tachi no Gogo - Tenkousei [redump.org]
 
 Replaced software list items
-- ---------------------------
+-----------------------------
 Chuumon no Ooi Ryouriten [redump.org]
 Scavenger 4 (demo) [redump.org]
 Scholar Movie Magazine Soukan-gou [redump.org]
@@ -1013,7 +1013,7 @@ Scholar Movie Magazine Soukan-gou [redump.org]
   * Cleaned up layouts.
 
 New machines marked not working
-- ------------------------------
+--------------------------------
 Lite a Line (Dutch) (JPM) (SRU) (revision 52) [SomeRandomGuyIdk]
 
 - jaleco/bigstrkb.cpp, misc/pass.cpp: consolidated drivers in one file, very minor cleanups [Ivan Vangelista]
@@ -1126,7 +1126,7 @@ Sharp My Computer Terebi C1 [kmg]
 - ctk551.cpp: New working machines (#9929) [Devin Acker]
 
 New working machines:
-- --------------------
+----------------------
 Casio Celviano AP-10 [Devin Acker]
 Casio CTK-601 [Devin Acker, Gabriel Miceli]
 Casio GZ-70SP [Devin Acker]
@@ -1171,7 +1171,7 @@ New Working Clones
 Trivia Master (set 5) [chaneman]
 
 New machine marked as NOT_WORKING (#10224)
-- -----------------------------------------
+-------------------------------------------
 Dance Dance Revolution Karaoke Mix 2 (GQ947 VER. JAA) [Taro]
 
 Machines Promoted to Working
@@ -1217,7 +1217,7 @@ PC Review (Issue 07 - May 1992) [archive.org]
 PC Review (Issue 25 - November 1993) [MarkHnsn, archive.org]
 
 New NOT working software list additions
-- --------------------------------------
+----------------------------------------
 PC Gamer (UK) (Vol. 01 Nº 02 - January 1994) [MarkHnsn, archive.org]
 
 - update ibm5170.xml [ArcadeShadow]
@@ -1370,7 +1370,7 @@ unknown Poker 'TE06' [Paul-Arnold]
 - cr16b: Fix sign extension of branch displacements in disassembly [AJR]
 
 New NOT_WORKING machine (#10241)
-- -------------------------------
+---------------------------------
 VTech Phusion [Devin Acker]
 
 - intv.xml: Metadata cleaning (#10240) [ArcadeShadow]
@@ -1391,7 +1391,7 @@ VTech Phusion [Devin Acker]
   * Machine/upd765.cpp: Added National Semiconductor PC8477B clone.
 
 New machines marked not working
-- ------------------------------
+--------------------------------
 Sony NET WORK STATION NWS-5000X [Brice Onken]
 
 - Merged some single-platform projects into company projects [Vas Crabb].
@@ -1517,7 +1517,7 @@ pc98: Mind Buster!! [Justin Kerk]
 - konami/kpython2.cpp: Added new skeleton driver (#10252) [987123879113]
 
 New machines marked NOT_WORKING
-- ------------------------------
+--------------------------------
 Dance Dance Revolution SuperNOVA (FDH:A:A:A:2006071300) [Taro, windyfairy, Shiz]
 Dance Dance Revolution SuperNOVA (FDH:J:A:A:2006090600) [Taro, windyfairy, Shiz]
 Dance Dance Revolution SuperNOVA (FDH:U:A:A:2006072400) [Taro, windyfairy, Shiz]
@@ -1557,7 +1557,7 @@ Toy's March (E00:J:A:A:2005011602) [Taro, windyfairy, Shiz]
 Toy's March 2 (F00:J:A:A:2005110400) [Taro, windyfairy, Shiz]
 
 New software list additions (kpython2.xml)
-- -----------------------------------------
+-------------------------------------------
 Dance Dance Revolution SuperNOVA 2 Install Disk (JAA/AAA) [Taro]
 Dance Dance Revolution SuperNOVA 2 Install Disk (UAA) [Ninevolt]
 Dance Dance Revolution SuperNOVA Install Disk (UAA) [HybridStorm]
@@ -1590,7 +1590,7 @@ GuitarFreaks V3 (JAA/AAA) [SakamotoNeko]
 - New working machines - Micom Mahjong [hap, David Haywood, Sly DC] (#10264) [David Haywood]
 
 New Working Machines
-- -------------------
+---------------------
 Micom Mahjong [hap, David Haywood, Sly DC]
 
 - mess.flt: add micom_mahjong [hap]
@@ -1618,11 +1618,11 @@ Super Pinball Action (US, prototype, dual screen) [David Haywood]
 - snes.xml: Added two recent prototype dumps (#10256) [kmg]
 
 New working software list additions (snes.xml)
-- ---------------------------------------------
+-----------------------------------------------
 Kid Klown in Crazy Chase (Euro, prototype)</description> [Zoda-Y13, Forest of Illusion]
 
 New NOT_WORKING software list additions (snes,xml)
-- -------------------------------------------------
+---------------------------------------------------
 WeaponLord (USA, prototype) [DrBizz]
 
 - formats: Fixed some unused local variable compiler errors (#10251) [napobear]
@@ -1634,7 +1634,7 @@ WeaponLord (USA, prototype) [DrBizz]
 - ibm5170.xml: 7 new software additions + 1 Redump (#10247) [ArcadeShadow]
 
 New working software list additions (ibm5170.xml)
-- ------------------------------------------------
+--------------------------------------------------
 PC Magazine (All Star - December 1992) [arranarchipelago, archive.org]
 PC Plus (Issue 69 - June 1992) [arranarchipelago, archive.org]
 PC Today (Vol. 06 ? 08 - December 1992) [arranarchipelago, archive.org]
@@ -1644,7 +1644,7 @@ Tetris Trio [The Good Old Days]
 The Lost Files of Sherlock Holmes [The Good Old Days]
 
 Redump (ibm5170.xml)
-- -------------------
+---------------------
 Disney's Aladdin [Abandon Socios]
 
 - seibu/raiden.cpp: Documented more of the configuration bytes, converted comments to C++-style (#10266) [eientei95]
@@ -1669,7 +1669,7 @@ Disney's Aladdin [Abandon Socios]
 - c64_cass.xml: Added 16 items (15 working, 1 not working) (#10250) [Steven Coomber]
 
 New working software list additions (c64_cass.xml)
-- -------------------------------------------------
+---------------------------------------------------
 Willow Pattern (Firebird) [The Ultimate Tape Archive Team]
 Winter Camp (Thalamus) [The Ultimate Tape Archive Team]
 Winter Games (U.S. Gold) [The Ultimate Tape Archive Team]
@@ -1687,7 +1687,7 @@ The Worm in Paradise (Level 9 Computing) [The Ultimate Tape Archive Team]
 X-15 Alpha Mission (Activision) [The Ultimate Tape Archive Team]
 
 New NOT_WORKING software list additions (c64_cass.xml)
-- -----------------------------------------------------
+-------------------------------------------------------
 Wimbledon '64 (Merlin Software) [The Ultimate Tape Archive Team]
 
 - Initial FAT file system support for Floptool (#9119) [npwoods]
@@ -1718,7 +1718,7 @@ Wimbledon '64 (Merlin Software) [The Ultimate Tape Archive Team]
   * Redumped disk A of Youjuu Club Custom from an unmodified disk with no saves [cyo.the.vile]
 
 New working software list additions (fmtowns_flop_orig.xml)
-- ----------------------------------------------------------
+------------------------------------------------------------
 :LOOP - Izanai no Kaikiten [cyo.the.vile]
 Disk Megastore Volume 1 [cyo.the.vile]
 Power DoLLS S-Premium Disk [cyo.the.vile]
@@ -1737,7 +1737,7 @@ You-Jong Part I [cyo.the.vile]
 - konami/ksys573.cpp: Dumped and added audio CD for drmna (#10275) [Taro]
 
 New machine marked NOT_WORKING (#10276)
-- --------------------------------------
+----------------------------------------
 DANCE 86.4 FUNKY RADIO STATION (E01:J:A:A:2005040400) [Taro]
 
 - konami/kpython2.cpp: Fixed dongle data format for dance864 (#10277) [987123879113]
@@ -1755,7 +1755,7 @@ DANCE 86.4 FUNKY RADIO STATION (E01:J:A:A:2005040400) [Taro]
 - zerohour: added sound via samples [Robbbert]
 
 new NOT_WORKING machines
-- -----------------------
+-------------------------
 Magical Poppins [anonymous, MetalliC]
 Western Dream Gold [anonymous, MetalliC]
 
@@ -1764,7 +1764,7 @@ Western Dream Gold [anonymous, MetalliC]
 - New Apple II disks for August 2022 (#10280) [Firehawke]
 
 New working software list additions (apple2_flop_orig.xml)
-- ---------------------------------------------------------
+-----------------------------------------------------------
 Microzine 1 [4am, Firehawke]
 Microzine 2 [4am, Firehawke]
 Microzine 3 [4am, Firehawke]
@@ -1797,7 +1797,7 @@ Microzine 29 [4am, Firehawke]
 Microzine 30 [4am, Firehawke]
 
 New working software list additions (apple2_flop_clcracked.xml)
-- --------------------------------------------------------------
+----------------------------------------------------------------
 Fraction-oids (1988 Version) (cleanly cracked) [4am, Firehawke]
 Stickybear Numbers (Revision 3) (cleanly cracked) [4am, san inc, Firehawke]
 
@@ -1835,7 +1835,7 @@ Stickybear Numbers (Revision 3) (cleanly cracked) [4am, san inc, Firehawke]
     the CPU)
 
 new WORKING software list entries
-- --------------------------------
+----------------------------------
 monon_color.xml [David Haywood]:
 ielts: Y?s? t? dà màoxi?n / ?????? / IELTS Adventure [Peter Wilhelmsen]
 ultbrain: N?olì liánlián kàn / ????? / Ultimate Brain Power [Peter Wilhelmsen]
@@ -1845,7 +1845,7 @@ labmath: Àoshù shíyàn shì / ????? / Laboratory Mathematica Olympiad [Peter 
   * Added dumps of both internal SPI ROMs to the driver [Peter Wilhelmsen]
 
 new NOT WORKING software list additions
-- --------------------------------------
+----------------------------------------
 c2color_cart.xml [David Haywood]:
 agree: Dì 1 dàn: Dài Lóngwáng F?ngyìn [Peter Wilhelmsen]
 kingwing: Dì 2 dàn: Zh? Yìwáng De Shì Liàn [Peter Wilhelmsen]
@@ -1864,7 +1864,7 @@ kingwing: Dì 2 dàn: Zh? Yìwáng De Shì Liàn [Peter Wilhelmsen]
 - gbcolor.xml: Added 18 prototypes (15 working, 3 not working) (#10279) [kmg]
 
 New working software list additions (gbcolor.xml)
-- ------------------------------------------------
+--------------------------------------------------
 Antz (Europe, prototype) [VGHF, Hidden Palace]
 Beach'n Ball (Europe, prototype, 20001121) [VGHF, Hidden Palace]
 Bob et Bobette - Les Dompteurs du Temps ~ Suske en Wiske - De Tijdtemmers (Europe, late prototype) [VGHF, Hidden Palace]
@@ -1882,7 +1882,7 @@ UEFA 2000 (prototype) [VGHF, Hidden Palace]
 WDL - Thundertanx (prototype) [VGHF, Hidden Palace]
 
 New NOT_WORKING software list additions (gbcolor.xml)
-- ----------------------------------------------------
+------------------------------------------------------
 The Adventures of Tintin - Prisoners of the Sun (Europe, prototype) [VGHF, Hidden Palace]
 Bob et Bobette - Les Dompteurs du Temps ~ Suske en Wiske - De Tijdtemmers (Europe, early prototype) [VGHF, Hidden Palace]
 Worms Armageddon (prototype) [VGHF, Hidden Palace]

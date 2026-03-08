@@ -3,7 +3,7 @@
 
 
 New Working Machines
-- -------------------
+---------------------
 Amstar Draw Poker [darkdawgarcade, Brian Troha, f205v, simzy, Roberto Fresca]
 Player's Edge Plus (PS0040) Jackpot Jungle Slots [Brian Troha, Kevin Nagle]
 Player's Edge Plus (PS0048) Double Jackpot Slots [Brian Troha, Kevin Nagle]
@@ -330,22 +330,6 @@ Source changes:
    - change 'flop525' to 'flop_a2' where 3.5s also in same lists
    - Add apple2gs_flop_clcracked and make it default for IIgs.
 
-New working software list additions (apple2_flop_orig.xml)
-- ---------------------------------------------------------
-Wargle! [4am, Firehawke]
-A Question of Scruples [4am, Firehawke]
-J-Bird [4am, Firehawke]
-Star Dance [4am, Firehawke]
-Disk Organizer (Version 2.6) [4am, Firehawke]
-Super Disk Copy (Version 3.8) [4am, Firehawke]
-Nibbles Away ][ (Version C3) [4am, Firehawke]
-Essential Data Duplicator (Version 4.4) [4am, Firehawke]
-
-New working software list additions (apple2_flop_clcracked.xml)
-- --------------------------------------------------------------
-Numberball (cleanly cracked) [4am, Firehawke]
-PFS:File (Version A.00) (cleanly cracked) [4am, Firehawke]
-
 - ti99/geneve: Added WHTech SCSI adapter card [Michael Zapf]
 
 - stupid git [AJR]
@@ -380,19 +364,7 @@ PFS:File (Version A.00) (cleanly cracked) [4am, Firehawke]
       the released game
    - demoted Thunder Hoop to NOT WORKING due to the stage 4 crash
 
-New Working Clones
-------------------
-The Lord of King (bootleg, protected) [Siftware]
-
 - New working clone (#8867) [algestam]
-
-New working clone
-- ----------------
-Kot-rybolov [algestam, Milan Galcik]
-
-New Working Clones
-------------------
-Majestic Twelve - The Space Invaders Part IV (US) [Arcadecomponents.com]
 
 - balsente.cpp: correct cd12.18a.romcd12 ROM name and reference for Grudge Match 00.91 proto [Brian Troha]
 
@@ -404,17 +376,9 @@ Majestic Twelve - The Space Invaders Part IV (US) [Arcadecomponents.com]
 
 - namcos22: add some system22 game versions to title [sjy96525] (#8869) [sjy525]
 
-New working clone (#8871)
-- ------------------------
-Frogling [algestam, Milan Galcik]
-
 - sparc: added initial support for SPARClite [Ryan Holtz]
 
 - saitek_osa: added sparc module emulation [Ryan Holtz, hap]
-
-New Working Clones
-------------------
-Fighting Layer (US, FTL3/VER.A) [CoolMod]
 
 - taito_f2.cpp: swapped the US Majestic 12 set, so that they are in more logical order [Ivan Vangelista].
 
@@ -423,10 +387,6 @@ Fighting Layer (US, FTL3/VER.A) [CoolMod]
 - sparc: assume that sparclite waitstate page check is per cs [hap]
 
 - sparc: revert prev commit, manual clearly says nope [hap]
-
-New working clone (#8872)
-- ------------------------
-Night Burglars [algestam, Milan Galcik]
 
 - Correct Ridge Racer V Arcade Battle year [sjy96525] (#8858) [sjy525]
   * Ridge Racer V Arcade Battle titlescreen says 2000 and released in November 2000.
@@ -443,54 +403,12 @@ Night Burglars [algestam, Milan Galcik]
     layouts.
   * Emu, frontend: Fixed various errors reported by Coverity, one of which actaully breaks stuff.
 
-New working clone (#8875)
-- ------------------------
-Space Flight [algestam, Milan Galcik]
-
-New Working Clones
-------------------
-Designer Mach III Master 2265 (set 1) [Berger]
-
 - Softlist cleanups (mostly Spectrum) (#8683) [David Haywood]
 
 - c64_cass.xml: Added 27 entries (#8852) [Steven Coomber]
   * C64_cass.xml: Added 27 entries. Promoted H.E.R.O. to working status (refer to MT #08138).  The c1541 slot device needs to be
     removed prior to loading.  Added 'usage' field to clarify this requirement.  Applied the same 'usage' field to game Hacker
     although game advises the user if you attempt to load the game with the c1541 still connected.
-
-New Working Software List Additions
------------------------------------
-Hacker (Proein Soft Line) [C64 Ultimate Tape Archive V2.0]
-HardBall! (U.S. Gold) [C64 Ultimate Tape Archive V2.0]
-HardBall (Compulogical S.A.) [C64 Ultimate Tape Archive V2.0]
-Harvey Smith Showjumper (Software Projects) [C64 Ultimate Tape Archive V2.0]
-Head Over Heels (Ocean) [C64 Ultimate Tape Archive V2.0]
-Heartland (Odin Computer Graphics) [C64 Ultimate Tape Archive V2.0]
-Hero Quest (Gremlin Graphics) [C64 Ultimate Tape Archive V2.0]
-Herobotix (Prism Leisure) [C64 Ultimate Tape Archive V2.0]
-High Frontier (Activision) [C64 Ultimate Tape Archive V2.0]
-Hits! Vol 1 (Micropool) [C64 Ultimate Tape Archive V2.0]
-The Hobbit (Melbourne House) [C64 Ultimate Tape Archive V2.0]
-Hopping Mad (Elite Systems) [C64 Ultimate Tape Archive V2.0]
-Hostages (Infogrames) [C64 Ultimate Tape Archive V2.0]
-Hot Wheels (U.S. Gold) [C64 Ultimate Tape Archive V2.0]
-Hot Shot (Prism Leisure) [C64 Ultimate Tape Archive V2.0]
-The House Mix (Gremlin Graphics) [C64 Ultimate Tape Archive V2.0]
-Howard the Duck (Activision) [C64 Ultimate Tape Archive V2.0]
-Human Killing Machine (U.S. Gold) [C64 Ultimate Tape Archive V2.0]
-The Hunt for Red October (Grandslam) [C64 Ultimate Tape Archive V2.0]
-Hunter's Moon (Thalamus) [C64 Ultimate Tape Archive V2.0]
-Hyper Sports (Imagine) [C64 Ultimate Tape Archive V2.0]
-
-New NOT_WORKING Software List Additions
----------------------------------------
-H.E.R.O. (Activision) [C64 Ultimate Tape Archive V2.0]
-Hawkeye (Thalamus) [C64 Ultimate Tape Archive V2.0]
-Highlander (Ocean) [C64 Ultimate Tape Archive V2.0]
-Highway Ecounter (Gremlin Graphics) [C64 Ultimate Tape Archive V2.0]
-The Hobbit (Melbourne House, alt) [C64 Ultimate Tape Archive V2.0]
-Hunchback: The Adventure (Ocean) [C64 Ultimate Tape Archive V2.0]
-
 
 - arm7: Fixed TLB Flush behavior. Fixes Github issue #8856 [Ryan Holtz] (#8876) [MooglyGuy]
   * Co-authored-by: MooglyGuy <mog@home>
@@ -505,16 +423,6 @@ Hunchback: The Adventure (Ocean) [C64 Ultimate Tape Archive V2.0]
 
 - nes.xml: Added 4 ROMs Of Unusual Size (#8874) [kmg]
 
-New Working Software List Additions
------------------------------------
-A Winner is You [anonymous]
-Bully Boy 500 in 1 [anonymous]
-Pocket Games 150 in 1 (Mario boot screen) [anonymous]
-
-New NOT_WORKING Software List Additions
----------------------------------------
-400 in 1 Real Game [taizou]
-
 - Minor changes to various drivers (#8880) [shattered]
   * Minor changes to various drivers (todo, comments, text strings).
   * Ec1847: Moved to pc.cpp, it's a generic OEM clone.
@@ -527,21 +435,9 @@ New NOT_WORKING Software List Additions
 
 - Fix clang error: private field 'm_out_offs' is not used [-Werror,-Wunused-private-field]
 
-New Clones Marked as NOT_WORKING
---------------------------------
-Downhill Bikers (World, DH2 Ver. A) [Guru]
-Dirt Dash (Rev. DT2 Ver.B, World) [Guru]
-
 - taito_x.cpp: updated documentation for superman [Guru]
 
 - c64_cass.xml: Promote gberet and other entries to working status (MT#08138) (#8881) [Steven Coomber]
-
-Software List Items Promoted to Working
----------------------------------------
-APB (Domark, alt) [C64 Ultimate Tape Archive V2.0]
-The Flintstones (Grandslam) [C64 Ultimate Tape Archive V2.0]
-Ghostbusters (Activision) [C64 Ultimate Tape Archive V2.0]
-Green Beret (Imagine) [C64 Ultimate Tape Archive V2.0]
 
 - In response to MT#08138, I have tested and promoted gberet to working status and added a usage field that explains that the c1541
  slot device needs to removed prior to loading [Steven Coomber].
@@ -562,45 +458,19 @@ Green Beret (Imagine) [C64 Ultimate Tape Archive V2.0]
 
 - Revert previous commit; kuzmich is now arcade [Robbbert]
 
-New NOT_WORKING Software List Additions
----------------------------------------
-ibm5170_cdrom.xml [Curt Coder]:
-Alien Odyssey (US) [Curt Coder]
-Ignition (US) [Curt Coder]
-
 - hankin.cpp: WIP [Robbbert].
 
 - emumem_aspace: Unref the root dispatch when destroying the address space [Olivier Galibert]
-
-New Working Clones
-------------------
-Kasparov Leonardo (v1.0) [Berger]
 
 - actfancr.cpp, battlera.cpp: use finders, minor cleanups [Ivan Vangelista]
 
 - namcos12.cpp: updated fgtlayer title as per GitHub comments [Ivan Vangelista]
 
-New working clone (#8886)
-- ------------------------
-Morskaja ataka [algestam, Milan Galcik]
-
 - apple2e.cpp updates: [R. Belmont]
   * All Laser 128 models now use the correct character set
   * Laser 128 now supports the serial/parallel printer switch and the parallel port
 
-Machines added as MACHINE NOT WORKING
-- ------------------------------------
-Franklin Ace 500 [R. Belmont]
-
 - apple2e: fix text on Laser 128 EX and EX/2 also [R. Belmont].
-
-New Machines Marked as NOT_WORKING
-----------------------------------
-Final Fight 3 (SNES bootleg) [Hammy, IQ_132]
-
-New Working Clones
-------------------
-Off Road Challenge (v1.00) [anonymous]
 
 - powervr2.cpp: add support for render mode 5 (#8855) [Jennifer Taylor]
 
@@ -631,10 +501,6 @@ Off Road Challenge (v1.00) [anonymous]
 
 - fourx4: split off to a separate driver [Robbbert].
 
-New working clone (#8891)
-- ------------------------
-Ataka asteroidov [algestam, Milan Galcik]
-
 - sparc: STD/STDA/LDD/LDDA when RD is odd is an illegal instruction [hap]
 
 - Improved handcrafted inyourfa priority PROM, fixing missing graphics in cutscenes [dink] (#8898) [David Haywood]
@@ -650,10 +516,6 @@ Ataka asteroidov [algestam, Milan Galcik]
 
 - various devices and drivers: seperate -> separate [Ivan Vangelista]
 
-New Machines Marked as NOT_WORKING
-----------------------------------
-Elektronika IM-01 [hap, Radon17]
-
 - im01: turns out it is the newer im01t program [hap]
 
 - im01: add 7segs, sound, preliminary inputs [hap]
@@ -664,29 +526,9 @@ Elektronika IM-01 [hap, Radon17]
     performance.
   * Ace 500 now uses a Franklin character set ROM so the "F" shows in MouseText.
 
-Machines promoted to WORKING
-- ---------------------------
-Franklin Ace 500 [R. Belmont]
-
 - apple2: properly instantiate the template methods [R. Belmont]
 
 - dynax.cpp: Added TMP91P640N dump for Mahjong Ougon no Hai [XingXing].
-
-Machines Promoted to Working
-----------------------------
-Mahjong Ougon no Hai (bootleg) [XingXing]
-
-New Working Clones
-------------------
-Mahjong Ougon no Hai (bootleg 1) [XingXing, little0]
-
-New Clones Marked as NOT_WORKING
---------------------------------
-Mahjong Ougon no Hai (bootleg 2) [XingXing, little0]
-
-New machines marked as NOT_WORKING (#8897)
-- -----------------------------------------
-Long Hu Zhengba San He Yi (V100CN) [XingXing, little0]
 
 - igs017.cpp, igs_m027.cpp: Improved lhzb* Descriptions [Vas Crabb].
 
@@ -697,10 +539,6 @@ Long Hu Zhengba San He Yi (V100CN) [XingXing, little0]
 - Fixed three fruit machine layouts that weren't cleaned up properly, and cleaned up a few more layouts a little [Vas Crabb].
 
 - Remove template code generators [Angelo Salese]
-
-Machines Promoted to Working
-----------------------------
-Elektronika IM-01T [hap, Radon17, Berger]
 
 - im01: im01t is from 1991 [hap]
 
@@ -756,10 +594,6 @@ Elektronika IM-01T [hap, Radon17, Berger]
 
 - spi_sdcard: fix CMD8 response for SDV2/SDHC [R. Belmont].
 
-New machines added as WORKING
-- ----------------------------
-Franklin Ace 2200 [R. Belmont]
-
 - apple2e: fix GCC compile [R. Belmont].
 
 - imagedev/midiin.cpp: Made channel remapping configurable (#8907) [Devin Acker]
@@ -778,47 +612,14 @@ Franklin Ace 2200 [R. Belmont]
 
 - New NOT_WORKING machine (#8927) [ClawGrip]
 
-New NOT_WORKING machine
-- ----------------------
-Coche Bully [ClawGrip]
-
 - dl11: DEC DL11-type serial line unit (#8894) [shattered]
 
 - nes.xml: Added 4 multicart dumps (#8914) [kmg]
   * Also corrected VRAM amount for mc_101, fixing graphics issues.
 
-New Working Software List Additions
------------------------------------
-125 in 1 (JY-125) [MLX]
-130 in 1 (JY-130) [MLX]
-Mario Family 7 in 1 [MLX]
-Super 13 in 1 [famiac, NewRisingSun]
-
 - nes.xml: Added 12 bootleg and unlicensed cartridge dumps (#8901) [kmg]
 
-New Working Software List Additions
------------------------------------
-Booky Man (Brazil) [fcgamer]
-Captain Planet and the Planeteers (pirate) [Consolethinks, Nikolka]
-Destroyer (Asia) [MLX]
-FIFA International Soccer '96 (J.League Winning Goal pirate) [NewRisingSun]
-Go! Benny! (Asia) [joanna88, krzysiobal]
-Over Horizon (pirate) [Consolethinks]
-Pokemon 2000 (Felix the Cat pirate) [SupahRetroooo]
-Super Contra DS (Super Contra pirate) [famiac, NewRisingSun]
-Super Mario 15 (Kaiketsu Yanchamaru 3 - Taiketsu! Zouringen pirate) [mt777]
-Xi?o B?ik? 2 in 1 - D?d? W?w? Dà Màoxi?n & Zhìlì P?ntú (China) [tenyuhuang]
-Xi?o Zhuàngyuán Shùxué (China) [MLX]
-
-New NOT_WORKING Software List Additions
----------------------------------------
-X?ti?n Q?j?ng - Journey To The West (Asia) [taizou]
-
 - gba.xml: Added an unreleased game (#8888) [kmg]
-
-New Working Software List Additions
------------------------------------
-Mechanic Mechanica (Japan, prototype) [forestillusion]
 
 - nes.xml: Typo in romanization (#8883) [kmg]
 
@@ -828,17 +629,9 @@ Mechanic Mechanica (Japan, prototype) [forestillusion]
 
 - bus/nes: Added support for a 5/20 in 1 cartridge (#8879) [kmg]
 
-New working software list additions (nes.xml)
-- --------------------------------------------
-5 in 1 1993 Copyright [NewRisingSun]
-
 - Hopefully fix arcade build [Robbbert].
 
 - snk68.cpp: corrected ROM labels for pow sprite ROMs [Guru]
-
-New Working Clones
-------------------
-The Outfoxies (Japan, OU1, alternate GFX ROMs) [Silvio Grazini]
 
 - Moved common apple2 files to the conditional "mameshared" library, to avoid duplicate symbols on a full MAME build [Robbbert].
 
@@ -868,10 +661,6 @@ The Outfoxies (Japan, OU1, alternate GFX ROMs) [Silvio Grazini]
 
 - falgas_m89.cpp: Flesh out the skeleton a little [AJR]
 
-New Machines Marked as NOT_WORKING
-----------------------------------
-Sonic The Hedgehog 3 (bootleg of Megadrive version) [Victor Fernandez (City Game)]
-
 - frontend: Give heading items in menus a bit of horizontal space [Vas Crabb].
 
 - emu/machine.cpp: Got rid of an outdated and hence misleading comment [Vas Crabb].
@@ -894,21 +683,6 @@ Sonic The Hedgehog 3 (bootleg of Megadrive version) [Victor Fernandez (City Game
 
 - sparc: SWAP/SWAPA on unaligned address causes a trap [hap]
 
-New working software list additions (apple2_flop_clcracked.xml) (#8934)
-- ----------------------------------------------------------------------
-Chariots, Cougars, and Kings (Version 03.12.86) (cleanly cracked) [4am, Firehawke]
-Punctuation Skills: Commas (cleanly cracked) [4am, Firehawke]
-Logic Workout (cleanly cracked) [4am, Firehawke]
-Apple Project Manager (cleanly cracked) [4am, san, Firehawke]
-A-mazing Words (cleanly cracked) [4am, Firehawke]
-Mighty Math (cleanly cracked) [4am, Firehawke]
-Take Me North (cleanly cracked) [4am, Firehawke]
-Space Port (cleanly cracked) [4am, Firehawke]
-Word-Player (cleanly cracked) [4am, Firehawke]
-Dividing Decimals (Version 1.1) (cleanly cracked) [4am, Firehawke]
-Percentage Panic (cleanly cracked) [4am, Firehawke]
-Moonlight and Madness Level II (Version 04.19.88) (cleanly cracked) [4am, Firehawke]
-
 - apple2e.cpp: gave the Franklin Ace machines their max RamWorks-compatible RAM [R. Belmont].
 
 - a2eramworks3.cpp: fix Franklin 500 384K expansion to correctly limit memory to 384K [R. Belmont].
@@ -918,10 +692,6 @@ Moonlight and Madness Level II (Version 04.19.88) (cleanly cracked) [4am, Fireha
 - chdman.cpp: correct copy-paste comment (nw) (#8936) [Logan B]
 
 - inder: added some overrun protections [Robbbert]
-
-New Working Machines
-- -------------------
-Super Model II [Brian Troha, Darksoft, simzy, system11]
 
 - Logging format cleanups and minor no-op code changes (#8932) [shattered]
 
@@ -938,10 +708,6 @@ Super Model II [Brian Troha, Darksoft, simzy, system11]
 - vegas.cpp: dumped security PICs for sf2049 and sf2049se [Caps0ff, neSneSgB]
 
 - seattle.cpp: dumped security PICs for sfrush and sfrushrk [Caps0ff, neSneSgB]
-
-New working clone (#8937)
-- ------------------------
-Khokkey [algestam, Milan Galcik]
 
 - sparc: fix LDSTUBA not working [hap]
 
@@ -973,10 +739,6 @@ Khokkey [algestam, Milan Galcik]
 
 - Added a new working game to the "poorly coded driver" [Roberto Fresca].
 
-New Working Clones
-------------------
-Amstar Draw Poker [darkdawgarcade, btroha, f205v, simzy, Roberto Fresca]
-
 - sparclite: correct wssr[0] reset state [hap]
 
 - Completed Slovak translation [Milan Galcik].
@@ -996,25 +758,6 @@ Amstar Draw Poker [darkdawgarcade, btroha, f205v, simzy, Roberto Fresca]
 - bus/nes: Added partial support for 8-bit Xmas cartridges (#8930) [kmg]
   * Bus/nes: Added partial support for 8-bit Xmas cartridges.
 
-New working software list additions (nes.xml)
-- --------------------------------------------
-8-bit Xmas 2008 [kmg]
-8-bit Xmas 2009 [kmg]
-8-bit Xmas 2010 [kmg]
-8-bit Xmas 2011 [kmg]
-8-bit Xmas 2012 [kmg]
-8-bit Xmas 2013 [kmg]
-8-bit Xmas 2014 [kmg]
-8-bit Xmas 2015 [kmg]
-8-bit Xmas 2018 [kmg]
-8-bit Xmas 2019 [kmg]
-8-bit Xmas 2020 [kmg]
-8-bit Xmas 2021 [kmg]
-
-New NOT_WORKING software list additions (nes.xml)
-- ------------------------------------------------
-8-bit Xmas 2016 [kmg]
-
 - Mark a few titles I missed as partially supported [kmg].
 
 - playch10.cpp: dumped an alternate BIOS [Phill @NES4Life]
@@ -1022,10 +765,6 @@ New NOT_WORKING software list additions (nes.xml)
 - hash/c64_cart.xml: corrected dragnden description tag to match actual title shown on screen and on cartridge cover [Guru]
 
 - hash/vic10.xml: corrected ROM label for seawolf [Guru]
-
-New Machines Marked as NOT_WORKING
-----------------------------------
-Human Designed Systems HDS200 [Bitsavers]
 
 - Fix typo [Dirk Best]
 
@@ -1061,10 +800,6 @@ Human Designed Systems HDS200 [Bitsavers]
   * For translators, the new messages are mostly previously existing messages with wording adjusted for clarity (e.g. referring to
     "media" rather than "ROMs" in several places, as things like disk and tape images are included).  It's also possible to localise
     the "???" dipslayed for an input without a valid name, but that should never actually appear in practice.
-
-New Working Clones
-------------------
-Elektronika IM-01 [Radon17]
 
 - bus/nes_ctrl: Disentangled Famicom joypad 2 from expansion port code (#8949) [kmg]
   * Removed read_exp call from fcpad2. The FC expansion port is not tied to the relevant line at all.
@@ -1113,15 +848,7 @@ Elektronika IM-01 [Radon17]
 
 - sdtor: fix small contrast problem in internal artwork [hap]
 
-new WORKING clone
-- ----------------
-DoDonPachi Dai-Ou-Jou Black Label (Japan, 2002.10.07.Black Ver, newer) [Blomman, MetalliC, rtw]
-
 - spirit76: WIP [Robbbert]
-
-new NOT_WORKING machine
-- ----------------------
-Chibi Maruko-chan ~Minna de Sugoroku Asobi~ no Maki [Darksoft, MetalliC, rtw]
 
 - Use correct sprite RAM for Shaolin's Road & Kicker [smf, jotego]
 
@@ -1149,10 +876,6 @@ Chibi Maruko-chan ~Minna de Sugoroku Asobi~ no Maki [Darksoft, MetalliC, rtw]
 
 - align appearing sprites to doors when flipped (this might be a game bug, needs verifying) [smf-]
 
-New Working Clones
-------------------
-Golden Tee '98 (v1.00C) [Brian Troha, The Dumping Union]
-
 - im01: xtal label was confirmed [hap]
 
 - hds200: Hook up Z80DMA, initial video work [Dirk Best]
@@ -1176,32 +899,14 @@ Golden Tee '98 (v1.00C) [Brian Troha, The Dumping Union]
 
 - vsnes.cpp: Fixed Balloon Fight bonus life DIP settings (MT8147) (#8962) [kmg]
 
-New Clones Marked as NOT_WORKING
---------------------------------
-Gals Panic II (Korea, single PCB) [Brian Troha, simzy, darkdawgarcade, The Dumping Union]
-
 - mrgame.cpp: WIP. Most game are playable [Robbbert].
 
-New Machines Marked as NOT_WORKING
-----------------------------------
-Motor Show (set 2) [Robbbert]
-Motor Show (set 3) [Robbbert]
-[Robbbert] [Robbbert]
-
 - mrgame: minor corrections [Robbbert]
-
-New Working Software List Additions
------------------------------------
-rx78_cart: Creative Graphics [Gaming Alexandria, Alan Steremberg, SSJ, Robbbert]
 
 - leonardo: update notes [hap]
 
 - ichiban.cpp, royalmah.cpp: merged the former into the latter. Also some tagmap cleanup and configured banking in royalmah.cpp
  [Ivan Vangelista]
-
-new NOT_WORKING machine
-- ----------------------
-Super Mario Fushigi No JanJanLand [Darksoft, MetalliC, rtw]
 
 - alien.cpp: populate memory map enough for Medalusion 1 games starts booting, remove unneeded NVRAM dumps vegas.cpp: sf2049te uses
  same PIC as sf2049se [MetalliC]
@@ -1209,22 +914,6 @@ Super Mario Fushigi No JanJanLand [Darksoft, MetalliC, rtw]
 - artwork: small adjustment to chesspiece svgs [hap]
 
 - c64_cass.xml: Added 10 entries (#8977) [Steven Coomber]
-
-New Working Software List Additions
------------------------------------
-Jack the Nipper (Gremlin Graphics) [C64 Ultimate Tape Archive V2.0]
-Jack the Nipper II: In Coconut Capers (Gremlin Graphics) [C64 Ultimate Tape Archive V2.0]
-James Bond 007 in The Living Daylights - The Computer Game (Domark) [C64 Ultimate Tape Archive V2.0]
-Jinks (Go!) [C64 Ultimate Tape Archive V2.0]
-Jon Ritman's Match Day II (Ocean) [C64 Ultimate Tape Archive V2.0]
-Juice! (System 3) [C64 Ultimate Tape Archive V2.0]
-Jump Jet (Anirog) [C64 Ultimate Tape Archive V2.0]
-Jungle Quest (Solar Software) [C64 Ultimate Tape Archive V2.0]
-Jungle Quest (Solar Software, alt) [C64 Ultimate Tape Archive V2.0]
-
-New NOT_WORKING Software List Additions
----------------------------------------
-Judge Dredd (Melbourne House) [C64 Ultimate Tape Archive V2.0]
 
 - galpani2.cpp: corrected SHA1 for one ROM of the recently added galpani2k set [Ivan Vangelista]
 
@@ -1239,10 +928,6 @@ Judge Dredd (Melbourne House) [C64 Ultimate Tape Archive V2.0]
   * Research into thoop and squash 'refrsh rate' protection [Victor Fernandez (City Game), Peter Ferrie, David Haywood]
    - prevents freeze when dying in stage 4 of Thunder Hoop, and bad text on continue in Squash
 
-New Working Clones
-------------------
-Judge Dredd (L-1D) [José Renato Castro Milanez]
-
 - gberet.cpp updates [Ivan Vangelista]:
   * Dumped PROMs for the bootleg [Michel Blanco]
   * Removed tagmap lookups and split the main class in subclasses
@@ -1256,30 +941,10 @@ Judge Dredd (L-1D) [José Renato Castro Milanez]
 
 - New NOT_WORKING machines (#8955) [ClawGrip]
 
-New NOT_WORKING machines
-- -----------------------
-Master Crane (set 1) [Israel León (Retrolover), ClawGrip]
-
-New NOT_WORKING clones
-- ---------------------
-Master Crane (set 2) [Israel León (Retrolover), ClawGrip]
-
 - gba.xml: Added another unreleased game (#8978) [kmg]
-
-New Working Software List Additions
------------------------------------
-Perplexus Diodomin (prototype) [James Boulton, GTW]
-
-New working clones (#8975)
-- -------------------------
-Super Real Mahjong VS (Rev A) [Forest of Illusion]
 
 - gamegear.xml: Added a non-working prototype (#8965) [kmg]
   * Gamegear.xml: Added a non-working prototype.
-
-New NOT_WORKING Software List Additions
----------------------------------------
-BreakThru! (prototype) [smspower, VGHF]
 
 - ms32.cpp: documenting Shutokou Red Zone as undumped (#8953) [FMecha]
 
@@ -1331,19 +996,7 @@ BreakThru! (prototype) [smspower, VGHF]
 
 - bus/nes: Added support for TF2740 related multicart boards (#8925) [kmg]
 
-New working software list additions (nes.xml)
-- --------------------------------------------
-10000000 in 1 (KB46) [Consolethinks, Nikolka]
-14 in 1 (FL-14A) [Consolethinks, Nikolka]
-158 in 1 (AB-5027) [Consolethinks, Nikolka]
-40 in 1 (110-05) [Consolethinks, Nikolka]
-9999 in 1 (108-03) [Consolethinks, Nikolka]
-
 - New machines marked as NOT_WORKING (#8889) [wilbertpol]
-
-New Machines Marked as NOT_WORKING
-----------------------------------
-Atari 2600 Point of Purchase Display Unit [Wilbert Pol]
 
 - uknc: de-skeletonize (#8866) [shattered]
   * Uknc: de-skeletonize
@@ -1364,50 +1017,7 @@ Atari 2600 Point of Purchase Display Unit [Wilbert Pol]
 - c64_cass.xml: Added 16 entries (#8940) [Steven Coomber]
   * C64_cass.xml: Added 16 entries
 
-New Working Software List Additions
------------------------------------
-Ice Hunter (Anirog) [C64 Ultimate Tape Archive V2.0]
-IK+ (Activision) [C64 Ultimate Tape Archive V2.0]
-Imagine's Arcade Giants (Ariolasoft) [C64 Ultimate Tape Archive V2.0]
-Impact (Audiogenic) [C64 Ultimate Tape Archive V2.0]
-Impossible Mission (U.S. Gold) [C64 Ultimate Tape Archive V2.0]
-Impossible Mission (CBS Software) [C64 Ultimate Tape Archive V2.0]
-Impossible Mission II (U.S. Gold) [C64 Ultimate Tape Archive V2.0]
-Indiana Jones and the Temple of Doom (U.S. Gold) [C64 Ultimate Tape Archive V2.0]
-Infiltrator (U.S. Gold) [C64 Ultimate Tape Archive V2.0]
-Inspector Gadget and the Circus of !!Fear!! (Melbourne House) [C64 Ultimate Tape Archive V2.0]
-International Karate (System 3) [C64 Ultimate Tape Archive V2.0]
-International Karate (Prism Leisure) [C64 Ultimate Tape Archive V2.0]
-International Tennis (Commodore) [C64 Ultimate Tape Archive V2.0]
-It's a Knockout (Ocean) [C64 Ultimate Tape Archive V2.0]
-
-New NOT_WORKING Software List Additions
----------------------------------------
-International Soccer (CRL) [C64 Ultimate Tape Archive V2.0]
-Into the Eagles Nest (Pandora) [C64 Ultimate Tape Archive V2.0]
-
 - c64_cass.xml: Added 15 entries (#8981) [Steven Coomber]
-
-New Working Software List Additions
------------------------------------
-Kayleth (U.S. Gold) [C64 Ultimate Tape Archive V2.0]
-Kennedy Approach (Transatlantic Simulations) [C64 Ultimate Tape Archive V2.0]
-Kettle (Alligata, alt) [C64 Ultimate Tape Archive V2.0]
-Killed Until Dead (U.S. Gold) [C64 Ultimate Tape Archive V2.0]
-Kinetik (Firebird) [C64 Ultimate Tape Archive V2.0]
-Klax (Domark) [C64 Ultimate Tape Archive V2.0]
-Knight Rider (Ocean) [C64 Ultimate Tape Archive V2.0]
-Konami's Coin-Op Hits (Imagine) [C64 Ultimate Tape Archive V2.0]
-Kong (Anirog) [C64 Ultimate Tape Archive V2.0]
-Kong (Anirog, alt) [C64 Ultimate Tape Archive V2.0]
-Kong Strikes Back! (Ocean) [C64 Ultimate Tape Archive V2.0]
-Krakout (Gremlin Graphics) [C64 Ultimate Tape Archive V2.0]
-Kwik Snax (Codemasters) [C64 Ultimate Tape Archive V2.0]
-
-New NOT_WORKING Software List Additions
----------------------------------------
-Knuckle Busters (Melbourne House) [C64 Ultimate Tape Archive V2.0]
-Kwah! (Melbourne House) [C64 Ultimate Tape Archive V2.0]
 
 - namcofl: use memory view instead of bankdev [hap]
 
@@ -1435,10 +1045,6 @@ Kwah! (Melbourne House) [C64 Ultimate Tape Archive V2.0]
 - wpc_dcs.cpp: removed the jd_l1d set as it's actually a homebrew mod [Ivan Vangelista]
 
 - machine/nes.cpp: Accomodate games that don't initialize RAM (#8986) [kmg]
-
-Software list items promoted to working (nes.xml)
-- ------------------------------------------------
-Minna no Taabou no Nakayoshi Daisakusen (Japan) [kmg]
 
 - s4.cpp: WIP. Added outputs, fixed match digit [Robbbert].
 
@@ -1495,97 +1101,23 @@ Minna no Taabou no Nakayoshi Daisakusen (Japan) [kmg]
 
 - ibm5170_cdrom.xml (#9007) [David 'Foxhack' Silva]
 
-New software list additions
-- --------------------------
-SkyNET [Dave 'Foxhack' Silva]
-Terminator 2: Judgment Day - Chess Wars / Grandmaster Chess [Dave 'Foxhack' Silva]
-The Terminator: 2029 - Deluxe CD Edition [Dave 'Foxhack' Silva]
-The Terminator: Future Shock [Dave 'Foxhack' Silva]
-The Terminator: Rampage [Dave 'Foxhack' Silva]
-
 - n64.xml: Added a couple test/demo cartridges (#9003) [kmg]
-
-New NOT_WORKING Software List Additions
----------------------------------------
-Controller Checker Ver.1.01 [BehindTheCode, Forest of Illusion]
-Unknown RGB Test Cartridge [BehindTheCode, Forest of Illusion]
 
 - ngpc.xml: Added 2 dumps (#9001) [kmg]
 
-New Working Software List Additions
------------------------------------
-Pachinko Hisshou Guide - Pocket Parlor (Jpn, prototype) [Forest of Illusion]
-Choujou Kessen Saikyou Fighters - SNK vs Capcom - Taikenban (Jpn) [Forest of Illusion]
-
 - nes.xml: Added an unreleased prototype (#8995) [kmg]
   * Nes.xml: Added an unreleased prototype.
-
-New Working Software List Additions
------------------------------------
-Hero Quest (Germany, prototype) [anonymous]
 
 - poisk1: add vsync and hsync (#8992) [shattered]
 
 - c64_cass.xml: Added 14 entries (#8987) [Steven Coomber]
   * C64_cass.xml: Added 14 entries
 
-New Working Software List Additions
------------------------------------
-Labyrinth (Activision) [C64 Ultimate Tape Archive V2.0]
-Last Mission (U.S. Gold) [C64 Ultimate Tape Archive V2.0]
-The Last Ninja (Activision) [C64 Ultimate Tape Archive V2.0]
-Last Ninja 2: Back with a Vengeance (System 3) [C64 Ultimate Tape Archive V2.0]
-Last Ninja 3 (System 3) [C64 Ultimate Tape Archive V2.0]
-Law of the West (U.S. Gold) [C64 Ultimate Tape Archive V2.0]
-Leader Board (Erbe) [C64 Ultimate Tape Archive V2.0]
-Leader Board: Executive Edition (U.S. Gold) [C64 Ultimate Tape Archive V2.0]
-Legend of Kage (Imagine) [C64 Ultimate Tape Archive V2.0]
-Licence To Kill (Domark) [C64 Ultimate Tape Archive V2.0]
-Little Computer People (Activision) [C64 Ultimate Tape Archive V2.0]
-Live Ammo (Ocean) [C64 Ultimate Tape Archive V2.0]
-Mag Max (Imagine) [C64 Ultimate Tape Archive V2.0]
-
-New NOT_WORKING Software List Additions
----------------------------------------
-Lotus Esprit Turbo Challenge (Gremlin Graphics) [C64 Ultimate Tape Archive V2.0]
-
-New Working Machines
-- -------------------
-Player's Edge Plus (PS0040) Jackpot Jungle Slots [Brian Troha, Kevin Nagle]
-
-- Player's Edge Plus (PS0048) Double Jackpot Slots [Brian Troha, Kevin Nagle]
-  * Player's Edge Plus (PS0070) Hurricane Slots [Brian Troha, Kevin Nagle]
-  * Player's Edge Plus (PS0086) Earth Quake Slots [Brian Troha, Kevin Nagle]
-  * Player's Edge Plus (PS0267) Spin Til You Win Slots [Brian Troha, Kevin Nagle]
-  * Player's Edge Plus (PS0623) Black Cherry Slots [Brian Troha, Kevin Nagle]
-
-New Working Clones
-------------------
-Player's Edge Plus (PS0015) Super Joker Slots [Brian Troha, Kevin Nagle]
-
-- Player's Edge Plus (PS0041) Jackpot Jungle Slots [Brian Troha, Kevin Nagle]
-  * Player's Edge Plus (PS0271) Spin Til You Win Slots [Brian Troha, Kevin Nagle]
-  * Player's Edge Plus (PS0275) 4th of July Slots (set 1) [Brian Troha, Kevin Nagle]
-  * Player's Edge Plus (PS0275) 4th of July Slots (set 2) [Brian Troha, Kevin Nagle]
-  * Player's Edge Plus (PS0280) 4th of July Slots (set 2) [Brian Troha, Kevin Nagle]
-  * Player's Edge Plus (PS0291) Haywire Slots [Brian Troha, Kevin Nagle]
-
-New Clones Marked as NOT_WORKING
---------------------------------
-Player's Edge Plus (PS0205) Red White & Blue Slots [Brian Troha, Kevin Nagle]
-
 - ctk551: minor lcd fix [Olivier Galibert]
 
 - vsnes.cpp: Fixed swapped DIP switches for vsbball (#9014) [kmg]
 
 - nes.xml: Added some more recent chiptune related fare (#9013) [kmg]
-
-New working software list additions (nes.xml)
-- --------------------------------------------
-8Bit Music Power [anonymous]
-8Bit Music Power Final [anonymous]
-Kira Kira Star Night DX [anonymous]
-Neo Heiankyo Alien [anonymous]
 
 - bus/nes: Removed duplicate board and mapper assignment (#9012) [kmg]
   * BMC-810544-C-A1 and NTDEC 2746 are the same thing.
@@ -1628,42 +1160,7 @@ Neo Heiankyo Alien [anonymous]
 
 - bus/nes: Added support for multicart board JY012005 (#9022) [kmg]
 
-New working software list additions (nes.xml)
-- --------------------------------------------
-1998 Super HiK 8 in 1 (JY-021B) [MLX]
-
 - Apple softlist update for December 2021 (#9021) [Firehawke]
-
-New working software list additions (apple2_flop_clcracked.xml)
-- --------------------------------------------------------------
-Galactic Wars (cleanly cracked) [4am, san inc, Firehawke]
-Circuit Analysis (cleanly cracked) [4am, san inc, Firehawke]
-
-New working software list additions (apple2_flop_orig.xml)
-- ---------------------------------------------------------
-Beauty and the Beast and The Little Mermaid (800K 3.5") [4am, Firehawke]
-Robin Hood and Peter Pan (800K 3.5") [4am, Firehawke]
-Big Book Maker: Cute and Cuddly (800K 3.5") [4am, Firehawke]
-Big Book Maker: Feeling Good About Yourself (800K 3.5") [4am, Firehawke]
-Big Book Maker: Let's Pretend (800K 3.5") [4am, Firehawke]
-Big Book Maker: Letters, Numbers, Shapes (800K 3.5") [4am, Firehawke]
-Big Book Maker: Myths and Legends (800K 3.5") [4am, Firehawke]
-Big Book Maker: Quentin (800K 3.5") [4am, Firehawke]
-Once Upon A Time... Puppet Playhouse (800K 3.5") [4am, Firehawke]
-Spell It! (Version 06.01.87) (800K 3.5") [4am, Firehawke]
-Math Blaster! (Version 06.01.87) (800K 3.5") [4am, Firehawke]
-Read 'N Roll (Version 1.1) (800K 3.5") [4am, Firehawke]
-Big Book Maker: Tall Tales and American Folk Heroes (800K 3.5") [4am, Firehawke]
-Math and Me (Version 1.6) (800K 3.5") [4am, Firehawke]
-Math Blaster Mystery (Version 1.3) (800K 3.5") [4am, Firehawke]
-Math Blaster Plus! (Version 3.7) (800K 3.5") [4am, Firehawke]
-Spell It Plus! (800K 3.5") [4am, Firehawke]
-Dinosaur Days Plus! (800K 3.5") [4am, Firehawke]
-Robot Writer Plus! (800K 3.5") [4am, Firehawke]
-Transportation Transformation (800K 3.5") [4am, Firehawke]
-Animals with an Attitude (800K 3.5") [4am, Firehawke]
-The Whole Neighborhood (800K 3.5") [4am, Firehawke]
-Alice in Wonderland and The Wizard of Oz (800K 3.5") [4am, Firehawke]
 
 - hp9825: added support for SHIFT LOCK & RESET, other minor fixes (#9017) [F. Ulivi]
 
@@ -1672,15 +1169,7 @@ Alice in Wonderland and The Wizard of Oz (800K 3.5") [4am, Firehawke]
 
 - n64.xml: Added a prototype of an unreleased game (#9020) [kmg]
 
-New Working Software List Additions
------------------------------------
-X'treme Roller (prototype) [Baker64]
-
 - audio/flower.cpp: Fix Volume LUT ROM accessing, Add notes (#9011) [cam900]
-
-new NOT_WORKING machine
-- ----------------------
-Puyo Puyo! The Medal Edition [Darksoft, MetalliC, rtw]
 
 - sm511: assume that divider reset is same as sm510 [hap]
 
@@ -1692,51 +1181,11 @@ Puyo Puyo! The Medal Edition [Darksoft, MetalliC, rtw]
 
 - by6803.cpp: added a layout for Gen 2 machines [Robbbert].
 
-New Working Clones
-------------------
-Chouji Meikyuu Legion (Japan ver 1.05, set 2) [system11]
-
 - taito_o.cpp: merged everything in the driver file [Ivan Vangelista]
 
 - cyclemb.cpp: Reversed joystick up and down inputs for skydest (MT08162) (#9028) [Steven Coomber]
 
 - ibm5150/5170.xml: add some copy-protected images (#9018) [r09]
-
-New working software list additions (ibm5150.xml)
-- ------------------------------------------------
-Boulder Dash (3.5") [flyers80]
-Buffalo Bill's Rodeo Games [flyers80]
-F-19 Stealth Fighter (Version 435.04, disk + manual protection) [r09]
-[flyers80] [r09]
-Grand Prix Circuit [DFXThomas]
-King's Quest II: Romancing the Throne (v2.2, 3.5") [Gypsy Dave]
-King's Quest III: To Heir Is Human (v2.00, 5.25") [Gypsy Dave]
-Might and Magic: Book One: Secret of the Inner Sanctum [Gypsy Dave]
-Pro Tennis Tour [flyers80]
-Rampage [flyers80]
-Tennis Cup II [flyers80]
-The Black Cauldron (v1.1m) [Gypsy Dave]
-The Last Ninja [flyers80]
-Toi Acid Game [flyers80]
-
-New working software list additions (ibm5170.xml)
-- ------------------------------------------------
-Archer Maclean's Pool [flyers80]
-Striker [flyers80]
-Wizkid: The Story of Wizball II [flyers80]
-WWF European Rampage Tour [flyers80]
-
-New not working software list additions (ibm5150.xml)
-- ----------------------------------------------------
-Back to the Future Part III [flyers80]
-Lemmings [flyers80]
-Midwinter [flyers80]
-Paperboy [flyers80]
-Pit-Fighter [flyers80]
-
-Replaced software list items (ibm5150.xml)
-- -----------------------------------------
-Italy '90 Soccer [flyers80]
 
 - Fix build with newer versions of Emscripten; minimum supported version is now 2.0.25 [Justin Kerk].
 
@@ -1749,10 +1198,6 @@ Italy '90 Soccer [flyers80]
  user readable registers at startup, set hour correctly at startup if in 12 hour mode, remove unused bcd validation code, fix leap
  year detection, fix alarm, mask all registers on read, changed wdi to a write line, derive timing from device clock, added missing
  state save, implement default region [smf]
-
-New Working Machine
-- ------------------
-Z80 based, triple time zone clock [smf]
 
 - seta.cpp: add pld info for madshark (#9032) [Sergio G]
   * Seta.cpp: add pld info for madshark
@@ -1774,10 +1219,6 @@ Z80 based, triple time zone clock [smf]
 
 - Tidied up a few things, reduced bloat in a few more slots layouts [Vas Crabb].
 
-New Machines Marked as NOT_WORKING
-----------------------------------
-JoMoX AiRBase 99 [DBWBP]
-
 - c64_cart.xml: redumped and verified blueprnt, gridrunr, hesmon, minfats, omegrace, paintbrs, storymac [Guru]
 
 - vic10.xml: redumped and verified lemans [Guru]
@@ -1793,23 +1234,11 @@ JoMoX AiRBase 99 [DBWBP]
 
 - viper.cpp: dumped ds2430 for sscopex [Guru]
 
-New Machines Marked as NOT_WORKING
-----------------------------------
-Kawai ACR-20 Digital Accompaniment Center [DBWBP]
-
-New Machines Marked as NOT_WORKING
-----------------------------------
-Yamaha RX15 Digital Rhythm Programmer [DBWBP]
-
 - Updated the Czech and Slovak translations for the rest of the UI changes this month [Milan Galcik].
 
 - Reduced redundancy in a few more slot machine layouts [Vas Crabb].
 
 - Added preliminary TS-Configuration for ZX Evolution driver (#8989) [holub]
-
-New machines marked as not working
-- ---------------------------------
-NedoPC, TS-Labs ZX Evolution TS-Configuration [holub]
 
 - gb.cpp: Improved MBC3 RTC handling (#9035) [wilbertpol]
 
@@ -1819,26 +1248,7 @@ NedoPC, TS-Labs ZX Evolution TS-Configuration [holub]
   * Changed the romanization of ?????? to "Nichikonren Kikaku" as seen in the official website (http://www.nichikon.co.jp/)
   * Replaced the Futoppara FD Heisei disks 7 and 10 with unmodified images
 
-New working software list additions (fmtowns_flop_orig.xml)
-- ----------------------------------------------------------
-FMR/Towns Kihon DOS Tools [cyo.the.vile]
-Hometown, U.S.A [cyo.the.vile].
-Hon'yaku Helper Zurukamashi [cyo.the.vile]
-Hon'yaku Helper Zurukamashi - Jisho Disk Junior [cyo.the.vile]
-Sadistic Gamers Syndrome - Episode I [cyo.the.vile]
-Towns Drill - Shougaku Sansuu Series - Sansuu 1-nen (TownsGEAR V2.1 version) [cyo.the.vile]
-Yoku Wakaru Sansuu - Shougaku 2-nen [cyo.the.vile]
-
-Replaced software list items
-- ---------------------------
-Futoppara FD Heisei 7-gou [fuzzball]
-Futoppara FD Heisei 10-gou [fuzzball]
-
 - nes.xml: Added Holy Diver rerelease (#9029) [kmg]
-
-New Working Software List Additions
------------------------------------
-Holy Diver Collector's Edition [anonymous]
 
 - Added tsconf.cpp to mess.flt [Robbbert]
 
@@ -1871,3 +1281,4 @@ Holy Diver Collector's Edition [anonymous]
 - Initialise a few variables in h files [Robbbert].
 - srcclean, remove a vestigial thing, and a little cleanup [Vas Crabb].
 - Mega Drive is written with a space [Vas Crabb].
+- Bump MAME 0.239 [Vas Crabb].

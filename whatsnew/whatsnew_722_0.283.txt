@@ -1,4 +1,4 @@
-﻿0.283 2025-11-29 [#722 - Vas Crabb]
+0.283 2025-11-29 [#722 - Vas Crabb]
 -----------------------------------
 
 
@@ -634,7 +634,7 @@ Source changes
   - Centered audio around 0.
   * sound/cem3394 changes:
   - Made VCO output range [-1, 1], instead of [0, 1];
-  - added pulse-width dependent DC level of pulse waveform, as described in the datasheet;
+  - Added pulse-width dependent DC level of pulse waveform, as described in the datasheet;
   - Waveform selection logic now works for voltages outside the bounds provided in the datasheet;
   - Both the sixtrak and sente6vb will some times use voltages outside those ranges;
   - Added AC coupling between VCF output and VCA input;
@@ -930,3 +930,4 @@ Source changes
   * Things that are not DIP switches should not be DIP switches and should not have DIP switch locations.
 - cpu/dsp563xx: This missed srcclean, do it now [Vas Crabb].
 - Fixed indentation for Ensoniq software lists [Vas Crabb].
+- Bump MAME 0.283 [Vas Crabb].

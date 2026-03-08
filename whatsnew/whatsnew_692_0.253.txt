@@ -1,9 +1,9 @@
 ﻿0.253 2023/03/30 [#692 - Vas Crabb]
-- ----------------------------------
+------------------------------------
 
 
 MAME Testers Bugs Fixed
-- ----------------------
+------------------------
 - 05777: [Misc.] (commodore/c64.cpp) c64 all systems: C64 [systemm1]: Software disconnect is not implemented (Curt Coder)
 - 05995: [Gameplay] (nec/pce.cpp) pce [macr2036]: Attempting to start a game returns to the title screen (Angelo Salese)
 - 06643: [Sound] (rare/kinst.cpp) kinst, kinst2: DCS audio fade-in effects are not emulated correctly (mjrgh)
@@ -21,7 +21,7 @@ MAME Testers Bugs Fixed
 
 
 New working systems
-- ------------------
+--------------------
 Akazukin (Japan) [Alberto Salso, Ignacio Seki, Angelo Salese]
 Bandai Race Time [hap, Sean Riddle, eggs]
 Brother LW-30 [Bartman/Abyss]
@@ -38,7 +38,7 @@ Tryom Omar [hap, Sean Riddle]
 Vector Graphic Vector 4 [Eric Anderson]
 
 New working clones
-- -----------------
+-------------------
 Amstrad plc NC100 (Denmark) [Dirk Best]
 Amstrad plc NC100 (Germany) [Dirk Best]
 Amstrad plc NC100 (Sweden) [CPCWiki]
@@ -57,11 +57,11 @@ WWF Superstars (Canada) [anonymous]
 Yakyuu Kakutou League-Man (Japan, set 2) [Corrado Tomaselli, The Dumping Union]
 
 Systems promoted to working
-- --------------------------
+----------------------------
 Baby Suprem [Paul-Arnold]
 
 New systems marked not working
-- -----------------------------
+-------------------------------
 Ballroom Glitz [jordigahan, ClawGrip]
 Brother AX-145 [Bartman/Abyss]
 Burroughs TD 831 [Wouter's Blog]
@@ -79,7 +79,7 @@ Sweetheart [Recreativos Piscis]
 VJ: Visual & Music Slap [Shiz]
 
 New clones marked not working
-- ----------------------------
+------------------------------
 Acorn Computers Pocket Book II [Nigel Barnes, The Last Psion]
 Bloxeed (bootleg) [Porchy]
 Desert Wars (bootleg of Battle Zone) [Javier Blanco Ojeda, ClawGrip]
@@ -91,7 +91,7 @@ Victor HC-90A (MSX2, Japan) [Daniel Padilla, openMSX]
 VJ Dash (Ver 1.0) [Shiz]
 
 New working software list items
-- ------------------------------
+--------------------------------
 abc1600_flop: ABC1600 Test Program v5.0 [Dataindustrier AB Intressegrupp]
 c64_cart: Expert C420 (Czech), Expert C800 (Czech) [LordKopromaster]
 c64_cass: Micro Rhythm + [The Ultimate Tape Archive Team]
@@ -141,14 +141,14 @@ vsmile_cart: Disney's Winnie the Pooh - The Honey Hunt (UK) [apex2504]
 x68k_flop: The Last Tempest (older) [Justin Kerk]
 
 Software list items promoted to working
-- --------------------------------------
+----------------------------------------
 ibm5150: Bad Dudes (5.25") [Total DOS Collection]
 m20:
   ADM5 Terminal Emulator for MS-DOS, Demo Disk - Giochi, Demo Disk - Spiele + Uhr, Multiplan (Germany), Multiplan (UK),
   OliDraw (Italian), OliTutor 2.0 (Italian), Olivetti MS-DOS 2.0, Olivetti PCOS 1.3d, Olivetti Z8000 Assembler 2.1 [Carl, eberhab]
 
 New software list items marked not working
-- -----------------------------------------
+-------------------------------------------
 c128_flop: C128 Developer's Package, CPMFAST [Curt Coder]
 ibm5150: Arkanoid, Dick Tracy, F-15 Strike Eagle II, Gauntlet, Out Run (5.25", Kixx release), RoboCop [Total DOS Collection]
 m20: M20 Graph, OliWord 1.0 (German), OliWord 1.2 (Italian) (alt) [eberhab]
@@ -160,13 +160,13 @@ spectrum_cass: Spec Man (Impact Software) [Luís Rato, Planeta Sinclair]
 
 
 Translations added or modified
-- -----------------------------
+-------------------------------
 Czech [Milan Galcik]
 Slovak [Milan Galcik]
 
 
 Merged pull requests
-- -------------------
+---------------------
 - 09307: c64_cass.xml: Added one working item, and removed redundant items. [Zoë Blade, The Ultimate Tape Archive Team]
 - 10476: sony/news_r3k.cpp: Added support for the NWS-3410. [Brice Onken, Stefano Sanna]
 - 10710: vectorgraphic/vector4.cpp: Added initial emulation of the Vector Graphic Vector 4 S100 system. [Eric Anderson]
@@ -266,7 +266,7 @@ Merged pull requests
 
 
 Source changes:
-- --------------
+----------------
 - macpci.cpp: Reworked to modern Mac PCI standards [R. Belmont].
   * Bandit.cpp: First attempt at the "Bandit" 60x/PCI host bridge [R. Belmont].
   * Heathrow.cpp: Added extremely preliminary support for the predecessor "Grand Central" and "O'Hare" devices [R. Belmont].
@@ -278,13 +278,13 @@ Source changes:
 - pinball/ltd.cpp: redumped spcpoker [João Pedras, João Carneiro, PinMAME]
 
 New working clones
-- -----------------
+-------------------
 Jockey Club II (USA v4.00, bootleg) [hammy]
 
 - nes.xml: New software list items marked not working (#10778) [David 'Foxhack' Silva]
 
 New software list items marked not working (nes.xml)
-- ---------------------------------------------------
+-----------------------------------------------------
 Battletoads (Brazil, Conector pirate) [chirinea]
 
 - Update nes.xml [David 'Foxhack' Silva]
@@ -302,7 +302,7 @@ Battletoads (Brazil, Conector pirate) [chirinea]
 - seta/jclub2.cpp: added some notes and updated release year for jclub2bl [Ivan Vangelista]
 
 New working clones
-- -----------------
+-------------------
 Kasparov Turbostar 432 (set 2) [Mr. Lars]
 
 - osd: Removed support for SDL < 2.0.6; apple/apple2video.cpp: Code style cleanups [Vas Crabb].
@@ -317,7 +317,7 @@ Kasparov Turbostar 432 (set 2) [Mr. Lars]
 - Fix building with gcc-13 (#10917) [Julian Sikorski]
 
 New systems marked not working
-- -----------------------------
+-------------------------------
 Shimura Ken no Bakatono-sama Ooedomatsuri [hammy]
 Sweetheart [Recreativos Piscis]
 
@@ -384,7 +384,7 @@ Sweetheart [Recreativos Piscis]
     gets up-to-date state.
 
 New working systems
-- ------------------
+--------------------
 Conchess Princhess Glasgow [Mr. Lars]
 
 - m68000: Fix the vpa wait state, make using irq 7/NMI a little more transparent [Olivier Galibert]
@@ -450,12 +450,12 @@ Conchess Princhess Glasgow [Mr. Lars]
 - osd: Fixed a corner case in XInput DJ Hero turntable handling [Vas Crabb].
 
 New systems marked not working
-- -----------------------------
+-------------------------------
 Honoo no Invader [hammy]
 Hot Body (set 1) [f205v, Brian Troha, Sean Sutton, Smitdogg, The Dumping Union]
 
 New clones marked not working
-- ----------------------------
+------------------------------
 Hot Body (set 2) [Guru]
 
 - osd: Fixed various OpenGL issues - fixes -nowaitvsync not working on Windows with -video opengl [Vas Crabb].
@@ -478,7 +478,7 @@ Hot Body (set 2) [Guru]
 - tecfri/sauro.cpp: Added an "easy" version and tabulated ROM definitions (#10931) [ClawGrip]
 
 New WORKING clone
-- ----------------
+------------------
 Sauro (set 4, easier) [Jordi Beltrán, Victor Fernandez (City Game)]
 
 - msx.cpp: Added layouts for displaying internal drive activity (#10932) [wilbertpol]
@@ -507,7 +507,7 @@ Sauro (set 4, easier) [Jordi Beltrán, Victor Fernandez (City Game)]
 - vsmile_cart.xml: Added a new UK game cartridge dump and changed ROM sizes to hexadecimal (#10929) [ClawGrip]
 
 New working software list additions
-- ----------------------------------
+------------------------------------
 Disney's Winnie the Pooh - The Honey Hunt (UK) [apex2504]
 
 - Updated Czech and Slovak UI translations. [Milan Galcik]
@@ -515,7 +515,7 @@ Disney's Winnie the Pooh - The Honey Hunt (UK) [apex2504]
 - Retire legacy NCR 539X emulation [AJR]
 
 New working software list additions
-- ----------------------------------
+------------------------------------
 x68k_flop: Last Tempest (older) [Justin Kerk]
 
 - ibm5150.xml: Replaced disk 1 of sq2 with a fresh mfm conversion, the previous one was twice as large as necessary (40 track disk
@@ -526,7 +526,7 @@ x68k_flop: Last Tempest (older) [Justin Kerk]
 - misc/babysuprem.cpp: Now working machine (#10901) [Paul-Arnold]
 
 Systems promoted to working
-- --------------------------
+----------------------------
 Baby Suprem [Paul Arnold]
 
 - pccard_sram: Fix write protect switch, remove unneeded function [Dirk Best]
@@ -540,7 +540,7 @@ Baby Suprem [Paul Arnold]
 - sony/news_r3k.cpp: Added support for the NWS-3410/ (#10476) [Brice Onken]
 
 New working systems
-- ------------------
+--------------------
 Sony NWS-3410 [Brice Onken, Stefano Sanna]
 
 - sound/l7a1045_l6028_dsp_a.cpp: use 44'100 Hz for sound stream, disable all sounds on device_reset, QA notes [Angelo Salese]
@@ -607,16 +607,16 @@ Sony NWS-3410 [Brice Onken, Stefano Sanna]
 - roma16: correct ROM dump [Mr. Lars]
 
 New working systems
-- ------------------
+--------------------
 Sphinx Galaxy (v2.03) [hap, Mr. Lars]
 
 New working clones
-- -----------------
+-------------------
 Sphinx Galaxy (v2.00) [hap, Mr. Lars]
 Sphinx Galaxy (v1.03) [hap, Mr. Lars]
 
 New working software list items
-- ------------------------------
+--------------------------------
 saitek_egr: Endgame ROM (ver. 1, set 2) [Mr. Lars]
 saitek_kso: Kasparov Selected Openings (set 2) [Mr. Lars]
 
@@ -654,7 +654,7 @@ saitek_kso: Kasparov Selected Openings (set 2) [Mr. Lars]
   * Apply loaded configuration to all matching fields.
 
 New working software list items
-- ------------------------------
+--------------------------------
 svision.xml: Crystball (Euro, USA, earlier) [anonymous]
 svision.xml: Treasure Hunter (Euro, USA, 1993) [anonymous]
 
@@ -665,7 +665,7 @@ svision.xml: Treasure Hunter (Euro, USA, 1993) [anonymous]
 - svision/svis_snd.cpp, svision/svision.cpp: added save state support and other small cleanups [Ivan Vangelista]
 
 New clones marked not working
-- ----------------------------
+------------------------------
 Flipper Football (v1.03) [Matt’s Basement Arcade, PinMAME]
 
 - taito/sbmjb.cpp: preliminary input work for honooinv [Ivan Vangelista]
@@ -683,7 +683,7 @@ Flipper Football (v1.03) [Matt’s Basement Arcade, PinMAME]
   * Util/jedparse.cpp: Fixed a bug when logging parsed fuse values, and added more useful error log messages.
 
 New working clones
-- -----------------
+-------------------
 Heroes (World ver EM-1) [Domenico Cervini]
 The Pit (Centuri Inc) [Domenico Cervini]
 
@@ -733,7 +733,7 @@ The Pit (Centuri Inc) [Domenico Cervini]
   * Bus/msx/slot/disk.cpp: Tidied up code.
 
 New working systems
-- ------------------
+--------------------
 My Little Computer [hap, Sean Riddle]
 
 - m20.xml: correct string format [hap]

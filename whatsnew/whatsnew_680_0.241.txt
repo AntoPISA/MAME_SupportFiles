@@ -1,21 +1,9 @@
-﻿0.241 2022/02/23 [#680 - Vas Crabb]
-- ----------------------------------
-
-
-MAME Testers Bugs Fixed :
------------------------
-- 02646: [Graphics] (playch10.cpp) pc_tenis: When starting a game, the screen momentarily shows garbage (kmg).
-- 06721: [Sound] (playch10.cpp) pc_drmro, pc_mtoid, pc_ttoon: Spurious looping sound effects play (kmg).
-- 06842: [DIP/Input] (nes.cpp) nes_zapper: Misleading input mapping are displayed when -multimouse is not enabled (Vas Crabb).
-- 08190: [Graphics] (snes.cpp) snes [wildguns and clones]: In-game graphics flicker heavily (cam900).
-- 08195: [Documentation] (namcos2.cpp) bubbletr: Punctuation in title is incorrect (MASH).
-- 08197: [Crash/Freeze] (wardner.cpp) wardner, wardnerj, pyros: Emulated system crashes after soft reset (AJR).
-- 08198: [Flip Screen/Cocktail] (gei.cpp) gtsers12a, gtsers14a: DIP switch settings are labelled incorrectly (Steven Coomber).
-- 08201: [Gameplay] (mrdo.cpp) mrdo, mrdoy, mrdobl, yankeedo: Game behaves incorrectly after collecting all EXTRA letters (hap).
+0.241 2022/02/23 [#680 - Vas Crabb]
+-----------------------------------
 
 
 New Working Machines
-- -------------------
+---------------------
 Basketball 2 (Mattel) [hap, Sean Riddle]
 Chic Gum Video [Arzeno Fabrice]
 Dice - The Dice Game! [Jonas Jago]
@@ -113,31 +101,41 @@ unknown game on FR004 hardware (set 4) [Jorge Silva]
 
 New Working Software List Additions
 -----------------------------------
-adam_cart: Coleco Graphics Processor [Guru]
-bbc_rom:
-  Acorn ADFS 1.50, AMX Super Rom M3.51, DFS-AID, Edit 1.00, Inter-Word 1.02 [hack], Mighty Oak DMFS 1.04 - KSSL, PCB Designer 1.00, Pig ROM 1.00, Pig ROM 1.10, Plotmate A3 1.80, Printer Controller 1.0, Probe 6.01, Scorpion Terminal Emulator 1.2, Squeak MDPT 1.20, Trace Disassembler 1.00, UCL Terminal Emulator 3.54, ZNOS 1.01 [Nigel Barnes]
-c64_cass:
-  Pac-Land, Pack of Aces, Pandora, Panic, Paperboy (Elite Systems), Pastfinder, Peter Beardsley's International Football, Ping Pong (Imagine), Pitfall II: Lost Caverns, Pitstop II, Pitstop II (Rushware), Plumb Crazy!, Pole Position, Poltergeist, Popeye, Power Drift, The President is Missing, Prince Clumsy, Prohibition, Psycho Soldier, Pub Games, Quartet, QUATTRO Coin-Ops, Quedex [The Ultimate Tape Archive Team]
-cgenie_cass:
+adam_cart.xml:
+  Coleco Graphics Processor [Guru]
+bbc_rom.xml:
+  Acorn ADFS 1.50, AMX Super Rom M3.51, DFS-AID, Edit 1.00, Inter-Word 1.02 [hack], Mighty Oak DMFS 1.04 - KSSL, PCB Designer 1.00
+  Pig ROM 1.00, Pig ROM 1.10, Plotmate A3 1.80, Printer Controller 1.0, Probe 6.01, Scorpion Terminal Emulator 1.2, Squeak MDPT 1.20
+  Trace Disassembler 1.00, UCL Terminal Emulator 3.54, ZNOS 1.01 [Nigel Barnes]
+c64_cass.xml:
+  Pac-Land, Pack of Aces, Pandora, Panic, Paperboy (Elite Systems), Pastfinder, Peter Beardsley's International Football, Ping Pong (Imagine)
+  Pitfall II: Lost Caverns, Pitstop II, Pitstop II (Rushware), Plumb Crazy!, Pole Position, Poltergeist, Popeye, Power Drift, The President is Missing
+  Prince Clumsy, Prohibition, Psycho Soldier, Pub Games, Quartet, QUATTRO Coin-Ops, Quedex [The Ultimate Tape Archive Team]
+cgenie_cass.xml:
   Break-Out, Pacman, Space-Fight, Synthy [Reinhard Gansweith]
   Lineare Gleichungssysteme, Listing-Formatierer, Programm-Modifizierer, Sound Editor, Uhrzeit [TOSEC]
   Bluesmaker, Editor fuer definierbare Zeichen [TOSEC, Dirk Best]
-digilog320:
+digilog320.xml:
   320 E-Z Menu [Bitsavers]
   320 E-Z Menu (restored) [Bitsavers, Dirk Best]
-electron_rom: AMPLE Nucleus ID 60205, AMX Stop Press, T2CU v2.00 [Nigel Barnes]
-famicom_cass:
+electron_rom.xml:
+  AMPLE Nucleus ID 60205, AMX Stop Press, T2CU v2.00 [Nigel Barnes]
+famicom_cass.xml:
   Dark, Fisraduth - Castle of Tyramis, Flies, Metal Arms, Pen Pen, Ryuuhyoukan no Sangeki, The Spirit of Satan [ozidual, Gaming Alexandria]
-fm7_disk:
+fm7_disk.xml:
   FM Logo 2.0 [r09]
   The Earth Fighter Rayieza [sampson]
-fm77av: The 4th Unit 2 [r09]
-ibm5170:
+fm77av.xml:
+  The 4th Unit 2 [r09]
+ibm5170.xml:
   Star Wars: TIE Fighter (Spain) [Alvaro Polo, archive.org]
-  Armour-Geddon, Eye of the Beholder 3: A l'assaut de Myth Drannor (France), Eye of the Beholder 3: Assault on Myth Drannor, Eye of the Beholder 3: Assault on Myth Drannor (Eye of Beholder Trilogy release), Eye of the Beholder 3: Assault on Myth Drannor (Kixx release), Eye of the Beholder 3: Sturm auf Myth Drannor (Germany), Might and Magic III: Isles of Terra (3.5"DD), Might and Magic III: Isles of Terra (5.25"HD), Sid Meier's Railroad Tycoon Deluxe, Wing Commander II - Vengeance of the Kilrathi - Speech Accessory Pack (5.25") [The Good Old Days]
+  Armour-Geddon, Eye of the Beholder 3: A l'assaut de Myth Drannor (France), Eye of the Beholder 3: Assault on Myth Drannor
+  Eye of the Beholder 3: Assault on Myth Drannor (Eye of Beholder Trilogy release), Eye of the Beholder 3: Assault on  Myth Drannor (Kixx release)
+  Eye of the Beholder 3: Sturm auf Myth Drannor (Germany), Might and Magic III: Isles of Terra (3.5"DD), Might and Magic III: Isles of Terra (5.25"HD), Sid Meier's Railroad Tycoon Deluxe
+  Wing Commander II - Vengeance of the Kilrathi - Speech Accessory Pack (5.25") [The Good Old Days]
   Formula One Grand Prix (Euro, v1.05, alt), Operation Body Count, World Circuit - The Grand Prix Race Simulation (USA, v1.03) [ibmpc5150, archive.org]
   Light Quest (prototype) [Justin Kerk]
-nes:
+nes.xml:
   12 in 1 Game Card, Nintendo Campus Challenge 1991 (bootleg), Super 15 in 1 Game Card [anonymous]
   82 in 1 [flaviocaste]
   1995 Super HiK 4 in 1 (JY-016), 1995 Super HiK 4 in 1 (JY-017) [krzysiobal, NewRisingSun]
@@ -145,38 +143,78 @@ nes:
   Playbox BASIC (Japan, V1.0) [PALCOLOR]
   Famicompo Pico [rainwarrior]
   Candelabra - Estoscerro [SlyDogStudios]
-snes:
-  Asterix (prototype 19930311), The Ignition Factor (prototype), NBA All-Star Challenge (prototype), NBA Live 97 (prototype 19960920), The Peace Keepers (prototype), Prehistorik Man (prototype), Prince of Persia (prototype), Putty Squad (prototype), Super Ghouls'n Ghosts (prototype), Troddlers (prototype 19921023),
-  Utopia - The Creation of a Nation (prototype) [Hidden Palace]
+snes.xml:
+  Asterix (prototype 19930311), The Ignition Factor (prototype), NBA All-Star Challenge (prototype), NBA Live 97 (prototype 19960920)
+  The Peace Keepers (prototype), Prehistorik Man (prototype), Prince of Persia (prototype), Putty Squad (prototype), Super Ghouls'n Ghosts (prototype)
+  Troddlers (prototype 19921023), Utopia - The Creation of a Nation (prototype) [Hidden Palace]
   Marvel Super Heroes - War of the Gems (Japan, prototype), Race Drivin' (prototype), Troddlers (Euro, prototype 19930203) [Hidden Palace, Steve Lin]
   MechWarrior (prototype), Shadowrun (prototype) [Hidden Palace, Stephan Reese]
   Magic Boy (prototype) [snescentral]
-spectrum_cass:
+spectrum_cass.xml:
   G.I. Hero (MCM), Gremlins - The Adventure (Erbe) [spectrumcomputing.co.uk]
   Cosmic Invaders, Dollars in the Dust (PD Adventures) [Steven Brown, Planeta Sinclair]
   Noah (PD Adventures), The Plagues of Egypt (PD Adventures) [Steven Brown, spectrumcomputing.co.uk]
   Gremlins 2: La Nueva Generacion [worldofspectrum.org]
-vectrex: Laser Ball (prototype) [Justin Kerk]
-vgmplay:
-  720 Degrees (Atari System 2), Blaster Burn - Budruga Episode III (MSX2, FM-PAC), Blaster Burn - Budruga Episode III (MSX2, MSX-AUDIO), Blaster Burn - Budruga Episode III (MSX2, PSG), A Boy and His Blob - Trouble on Blobolonia (NES), Bucky O'Hare (NES), Burai (MSX2, OPLL), Burai (MSX2, PSG), Chicken Run (Nintendo Game Boy Color), Cool Ball (Nintendo Game Boy), Fire Prowrestling - Combination Tag (PC Engine), Fire Prowrestling 3 - Legend Bout (PC Engine), Galactic Pinball (Nintendo Virtual Boy), Golfing Greats 2 (Konami GX), Gulkave (MSX), Heavy Shreddin' - The Snowboarding Video Game (NES), Impossamole (TG-16), J.League Soccer Prime Goal EX (Namco System 11), Krusty's Fun House (NES), Krusty's Fun House (Nintendo Game Boy), Only You -Seikimatsu no Juliette-tachi- (NEC PC-9801, OPNA), Otto's Ottifanten - Baby Bruno's Nightmare (Nintendo Game Boy), Paperboy (Atari System 2), Peter Pack Rat (Atari System 1), Puyo Puyo (MSX2, OPLL), Puyo Puyo (MSX2, PSG), RoadBlasters (Atari System 1), SegaSonic Bros. (Sega System C-2), Star Cruiser (Sharp X68000), Teenage Mutant Ninja Turtles (NES), Teenage Mutant Ninja Turtles II - The Arcade Game (NES), Terminator 2 - Judgment Day (NES), Tiny Toon Adventures 2 - Trouble in Wackyland (NES), Youjuu Kikouhei WerDragon (NEC PC-8801, OPN), Youjuu Kikouhei WerDragon (NEC PC-8801, OPNA) [vgmrips.net, Tafoid]
-vis:
-  America's National Parks, American Heritage - Illustrated Encyclopedic Dictionary, Americans in Space, Learn to Play Guitar Volume 1, The Manhole - New and Enhanced!, Mercer Mayer's Just Grandma and Me, Mutanoid Word Challenge, Peter and the Wolf - A Multimedia Storybook, Rick Ribbit - Adventures in Early Learning, Sail with Columbus, A Survey of Western Art - The Electronic Library of Art, Talking Stepping Stones - Bonus Pack, Time Magazine Compact Almanac 1992 [Carl, redump.org]
-  The Adventures of Victor Vector & Yondo - Adventure No. 1 - The Vampire's Coffin, American Vista, Astrology Source, Atlas of U.S. Presidents, Better Homes and Gardens - Healthy Cooking, Better Not Get Wet, Jesse Bear, Bible Lands, Bible Stories, Compton's MultiMedia Encyclopedia VIS Edition, December 24th, Discis Books Multimedia - The Cask of Amontillado, Discis Books Multimedia - The Necklace, Discis Books Multimedia - The Tell-Tale Heart, Fitness Partner, Great Lives Series - Interactive Biographies of American Heroes Vol. 1, Henry and Mudge - The First Book, Henry and Mudge in the Sparkle Days, Jesse Bear, What Will You Wear, Kid-Fun, Kids Can Read! A Long Hard Day at the Ranch, Kids Can Read! Aesop's Fables, Kids Can Read! Cinderella - The Original Fairy Tale, Kids Can Read! Heather Hits Her First Home Run, Kids Can Read! Moving Gives Me a Stomach Ache, Kids Can Read! Mud Puddle, Kids Can Read! Scary Poems for Rotten Kids, Kids Can Read! The Night Before Christmas, Kids Can Read! The Paper Bag Princess, Kids Can Read! The Tale of Benjamin Bunny, Kids Can Read! The Tale of Peter Rabbit, Kids Can Read! Thomas' Snowsuit, Links - The Challenge of Golf, The Meeting of Minds Series - Interactive Games of History, Art, Music, and Ideas, Mosaic Magic, Multimedia Animals Encyclopedia, Mutanoid Math Challenge, My Paint, The New Basics Electronic Cookbook, Our House featuring The Family Circus, Playing with Language - Games in English, Playing with Language - Games in French, Playing with Language - Games in German, Playing with Language - Games in Japanese, Playing with Language - Games in Spanish, Race the Clock, Rodney's Funscreen, Search for the Sea, The Secrets of Hosea Freeman, Sherlock Holmes - Consulting Detective Volume I, Sherlock Holmes - Consulting Detective Volume II, SmartKids Challenge One, Time Table of History - Arts and Entertainment - 1993 Edition, Time Table of History - Business, Politics & Media - 1993 Edition, Time Table of History - Science and Innovation - 1993 Edition, Title Sampler, Vision - Multimedia Bible for the Entire Family, Wild Animals!, World Vista [redump.org]
+vectrex.xml:
+  Laser Ball (prototype) [Justin Kerk]
+vgmplay.xml:
+  720 Degrees (Atari System 2), Blaster Burn - Budruga Episode III (MSX2, FM-PAC), Blaster Burn - Budruga Episode III (MSX2, MSX-AUDIO), Blaster Burn - Budruga Episode III (MSX2, PSG)
+  A Boy and His Blob - Trouble on Blobolonia (NES), Bucky O'Hare (NES), Burai (MSX2, OPLL), Burai (MSX2, PSG), Chicken Run (Nintendo Game Boy Color), Cool Ball (Nintendo Game Boy)
+  Fire Prowrestling - Combination Tag (PC Engine), Fire Prowrestling 3 - Legend Bout (PC Engine), Galactic Pinball (Nintendo Virtual Boy), Golfing Greats 2 (Konami GX), Gulkave (MSX)
+  Heavy Shreddin' - The Snowboarding Video Game (NES), Impossamole (TG-16), J.League Soccer Prime Goal EX (Namco System 11), Krusty's Fun House (NES), Krusty's Fun House (Nintendo Game Boy)
+  Only You -Seikimatsu no Juliette-tachi- (NEC PC-9801, OPNA), Otto's Ottifanten - Baby Bruno's Nightmare (Nintendo Game Boy), Paperboy (Atari System 2), Peter Pack Rat (Atari System 1)
+  Puyo Puyo (MSX2, OPLL), Puyo Puyo (MSX2, PSG), RoadBlasters (Atari System 1), SegaSonic Bros. (Sega System C-2), Star Cruiser (Sharp X68000), Teenage Mutant Ninja Turtles (NES)
+  Teenage Mutant Ninja Turtles II - The Arcade Game (NES), Terminator 2 - Judgment Day (NES), Tiny Toon Adventures 2 - Trouble in Wackyland (NES), Youjuu Kikouhei WerDragon (NEC PC-8801, OPN)
+  Youjuu Kikouhei WerDragon (NEC PC-8801, OPNA) [vgmrips.net, Tafoid]
+vis.xml:
+  America's National Parks, American Heritage - Illustrated Encyclopedic Dictionary, Americans in Space, Learn to Play Guitar Volume 1, The Manhole - New and Enhanced!
+  Mercer Mayer's Just Grandma and Me, Mutanoid Word Challenge, Peter and the Wolf - A Multimedia Storybook, Rick Ribbit - Adventures in Early Learning, Sail with Columbus
+  A Survey of Western Art - The Electronic Library of Art, Talking Stepping Stones - Bonus Pack, Time Magazine Compact Almanac 1992 [Carl, redump.org]
+  The Adventures of Victor Vector & Yondo - Adventure No. 1 - The Vampire's Coffin, American Vista, Astrology Source, Atlas of U.S. Presidents, Better Homes and Gardens - Healthy Cooking
+  Better Not Get Wet, Jesse Bear, Bible Lands, Bible Stories, Compton's MultiMedia Encyclopedia VIS Edition, December 24th, Discis Books Multimedia - The Cask of Amontillado
+  Discis Books Multimedia - The Necklace, Discis Books Multimedia - The Tell-Tale Heart, Fitness Partner, Great Lives Series - Interactive Biographies of American Heroes Vol. 1
+  Henry and Mudge - The First Book, Henry and Mudge in the Sparkle Days, Jesse Bear, What Will You Wear, Kid-Fun, Kids Can Read! A Long Hard Day at the Ranch, Kids Can Read! Aesop's Fables
+  Kids Can Read! Cinderella - The Original Fairy Tale, Kids Can Read! Heather Hits Her First Home Run, Kids Can Read! Moving Gives Me a Stomach Ache, Kids Can Read! Mud Puddle
+  Kids Can Read! Scary Poems for Rotten Kids, Kids Can Read! The Night Before Christmas, Kids Can Read! The Paper Bag Princess, Kids Can Read! The Tale of Benjamin Bunny
+  Kids Can Read! The Tale of Peter Rabbit, Kids Can Read! Thomas' Snowsuit, Links - The Challenge of Golf, The Meeting of Minds Series - Interactive Games of History, Art, Music
+  and Ideas, Mosaic Magic, Multimedia Animals Encyclopedia, Mutanoid Math Challenge, My Paint, The New Basics Electronic Cookbook, Our House featuring The Family Circus
+  Playing with Language - Games in English, Playing with Language - Games in French, Playing with Language - Games in German, Playing with Language - Games in Japanese
+  Playing with Language - Games in Spanish, Race the Clock, Rodney's Funscreen, Search for the Sea, The Secrets of Hosea Freeman, Sherlock Holmes - Consulting Detective Volume I
+  Sherlock Holmes - Consulting Detective Volume II, SmartKids Challenge One, Time Table of History - Arts and Entertainment - 1993 Edition, Time Table of History - Business
+  Politics & Media - 1993 Edition, Time Table of History - Science and Innovation - 1993 Edition, Title Sampler, Vision - Multimedia Bible for the Entire Family, Wild Animals!, World Vista [redump.org]
 
 Software List Items Promoted to Working
 ---------------------------------------
-cgenie_cass: Super Star Treck [Dirk Best]
+cgenie_cass.xml:
+  Super Star Treck [Dirk Best]
 
 New NOT_WORKING Software List Additions
 ---------------------------------------
-bbc_rom: Micro Loop, Replay System WD1770W 1.28, RX-8 2.2 [Nigel Barnes]
-c64_cass: PHM Pegasus [The Ultimate Tape Archive Team]
-electron_rom: I2C (4 U) 3.1E [Nigel Barnes]
-ibm5170:
+bbc_rom.xml:
+  Micro Loop, Replay System WD1770W 1.28, RX-8 2.2 [Nigel Barnes]
+c64_cass.xml:
+  PHM Pegasus [The Ultimate Tape Archive Team]
+electron_rom.xml:
+  I2C (4 U) 3.1E [Nigel Barnes]
+ibm5170.xml:
   Starlord [darkstar, archive.org]
   System Shock [The Good Old Days]
-jaguar: Speedster II [Gaming Alexandria]
-snes: Illusion of Gaia (prototype B) [Hidden Palace, Stephan Reese]
+jaguar.xml:
+  Speedster II [Gaming Alexandria]
+snes.xml:
+  Illusion of Gaia (prototype B) [Hidden Palace, Stephan Reese]
+
+
+MAME Testers Bugs Fixed (8):
+----------------------------
+- 02646: [Graphics] (playch10.cpp) pc_tenis: When starting a game, the screen momentarily shows garbage (kmg)
+- 06721: [Sound] (playch10.cpp) pc_drmro, pc_mtoid, pc_ttoon: Spurious looping sound effects play (kmg)
+- 06842: [DIP/Input] (nes.cpp) nes_zapper: Misleading input mapping are displayed when -multimouse is not enabled (Vas Crabb)
+- 08190: [Graphics] (snes.cpp) snes [wildguns and clones]: In-game graphics flicker heavily (cam900)
+- 08195: [Documentation] (namcos2.cpp) bubbletr: Punctuation in title is incorrect (MASH)
+- 08197: [Crash/Freeze] (wardner.cpp) wardner, wardnerj, pyros: Emulated system crashes after soft reset (AJR)
+- 08198: [Flip Screen/Cocktail] (gei.cpp) gtsers12a, gtsers14a: DIP switch settings are labelled incorrectly (Steven Coomber)
+- 08201: [Gameplay] (mrdo.cpp) mrdo, mrdoy, mrdobl, yankeedo: Game behaves incorrectly after collecting all EXTRA letters (hap)
 
 
 Merged Pull Requests
@@ -274,24 +312,12 @@ Source changes:
 ---------------
 - suprnova.cpp: dumped the missing sound ROM for galpani4 [Brian Troha, f205v, The Dumping Union]
 
-New Machines Marked as NOT_WORKING
-----------------------------------
-unknown SMK game [Jorge Silva]
-
 - Added Williams DAC sound card device. Added this to s3,s4,wms_shuffle. Fixed wms_shuffle inputs [Robbbert].
 
 - digilog320: Various improvements, boots to setup screen now [Dirk Best]
   * Implement I186/Z80 communication
   * Hook up most devices
   * Render cursor and reverse
-
-New Machines Marked as NOT_WORKING
-----------------------------------
-Striker [Jorge Silva]
-
-New Clones Marked as NOT_WORKING
---------------------------------
-Machina Zois [Robbbert]
 
 - abc80, abc80x, c64: Enable floppy sounds [Curt Coder].
 
@@ -313,27 +339,11 @@ Machina Zois [Robbbert]
 
 - huc6272.cpp: fix SCSI identifier, add extensive QA [Angelo Salese]
 
-New Working Machines
-- -------------------
-Fail Gate [Jonas Jago]
-
 - airraid: remove leftover from testing [hap]
 
 - new NOT_WORKING machine: Casio LD-50 (#9203) [Devin Acker]
 
-New Machines Marked as NOT_WORKING
-----------------------------------
-Casio LD-50 [Devin Acker]
-
 - ymf271.cpp: Fix timer A period, Add notes for timer (#9098) [cam900]
-
-New Working Clones
-------------------
-Credit Poker (ver.23b, 7 & 9 bonus) [Jorge Silva]
-
-New Clones Marked as NOT_WORKING
---------------------------------
-Super Poker (v102U) [Jorge Silva]
 
 - airraid: more time between irqs [hap]
 
@@ -345,82 +355,6 @@ Super Poker (v102U) [Jorge Silva]
 
 - New software list for the Tandy/Memorex VIS (#9202) [r09]
   * Vis: add software list
-
-New Working Software List Additions
------------------------------------
-American Vista [redump.org]
-Astrology Source [redump.org]
-Atlas of U.S. Presidents [redump.org]
-Better Homes and Gardens - Healthy Cooking [redump.org]
-Better Not Get Wet, Jesse Bear [redump.org]
-Bible Lands, Bible Stories [redump.org]
-Compton's MultiMedia Encyclopedia VIS Edition [redump.org]
-December 24th [redump.org]
-Discis Books Multimedia - The Cask of Amontillado - Edgar Allan Poe [redump.org]
-Discis Books Multimedia - The Necklace - Guy de Maupassant [redump.org]
-Discis Books Multimedia - The Tell-Tale Heart - Edgar Allan Poe [redump.org]
-Fitness Partner [redump.org]
-Great Lives Series - Interactive Biographies of American Heroes Vol. 1 [redump.org]
-Henry and Mudge - The First Book [redump.org]
-Henry and Mudge in the Sparkle Days [redump.org]
-Jesse Bear, What Will You Wear [redump.org]
-Kid-Fun [redump.org]
-Kids Can Read! A Long Hard Day at the Ranch - Audrey Nelson [redump.org]
-Kids Can Read! Aesop's Fables [redump.org]
-Kids Can Read! Cinderella - The Original Fairy Tale [redump.org]
-Kids Can Read! Heather Hits Her First Home Run by Ted Planos [redump.org]
-Kids Can Read! Moving Gives Me a Stomach Ache - Story by Heather McKend [redump.org]
-Kids Can Read! Mud Puddle - Robert N. Munsch [redump.org]
-Kids Can Read! Scary Poems for Rotten Kids written by Sean O Huigin [redump.org]
-Kids Can Read! The Night Before Christmas - Clement C. Moore LLD [redump.org]
-Kids Can Read! The Paper Bag Princess - Robert N. Munsch [redump.org]
-Kids Can Read! The Tale of Benjamin Bunny - Beatrix Potter [redump.org]
-Kids Can Read! The Tale of Peter Rabbit - Beatrix Potter [redump.org]
-Kids Can Read! Thomas' Snowsuit - R. Munsch [redump.org]
-Links - The Challenge of Golf [redump.org]
-Mosaic Magic [redump.org]
-Multimedia Animals Encyclopedia [redump.org]
-Mutanoid Math Challenge [redump.org]
-My Paint [redump.org]
-Our House featuring The Family Circus [redump.org]
-Playing with Language - Games in English [redump.org]
-Playing with Language - Games in French [redump.org]
-Playing with Language - Games in German [redump.org]
-Playing with Language - Games in Japanese [redump.org]
-Playing with Language - Games in Spanish [redump.org]
-Race the Clock [redump.org]
-Rodney's Funscreen [redump.org]
-Search for the Sea [redump.org]
-Sherlock Holmes - Consulting Detective Volume I [redump.org]
-Sherlock Holmes - Consulting Detective Volume II [redump.org]
-SmartKids Challenge One [redump.org]
-The Adventures of Victor Vector & Yondo - Adventure No. 1 - The Vampire's Coffin [redump.org]
-The Meeting of Minds Series - Interactive Games of History, Art, Music, and Ideas [redump.org]
-The New Basics Electronic Cookbook [redump.org]
-The Secrets of Hosea Freeman [redump.org]
-Time Table of History - Arts and Entertainment - 1993 Edition [redump.org]
-Time Table of History - Business, Politics & Media - 1993 Edition [redump.org]
-Time Table of History - Science and Innovation - 1993 Edition [redump.org]
-Title Sampler [redump.org]
-Vision - Multimedia Bible for the Entire Family [redump.org]
-Wild Animals! [redump.org]
-World Vista [redump.org]
-
-New not working software list additions
-- --------------------------------------
-A Survey of Western Art - The Electronic Library of Art [redump.org]
-American Heritage - Illustrated Encyclopedic Dictionary [redump.org]
-America's National Parks [redump.org]
-Americans in Space [redump.org]
-Learn to Play Guitar Volume 1 [redump.org]
-Mercer Mayer's Just Grandma and Me [redump.org]
-Mutanoid Word Challenge [redump.org]
-Peter and the Wolf - A Multimedia Storybook [redump.org]
-Rick Ribbit - Adventures in Early Learning [redump.org]
-Sail with Columbus [redump.org]
-Talking Stepping Stones - Bonus Pack [redump.org]
-The Manhole - New and Enhanced! [redump.org]
-Time Magazine Compact Almanac 1992 [redump.org]
 
 - vis.xml: add serials [r09]
 
@@ -447,26 +381,10 @@ Time Magazine Compact Almanac 1992 [redump.org]
 
 - zx spectrum: new slot devices, floating bus restore, big mface tidy-up (#7913) [Tom]
 
-New Working Clones
-------------------
-Coco Louco [Jorge Silva]
-Dongfang Zhi Zhu (Hong Kong, V011H, set 2) [Jorge Silva]
-Puzzle & Action: Ichidant-R (World) (bootleg) [Jorge Silva]
-
-Clones Promoted to Working
---------------------------
-Super Poker (v114IT) [Ivan Vangelista]
-Super Poker (v116IT-MX) [Ivan Vangelista]
-
 - mcd: change toc data [cracyc]
 
 - bus/nes: Added support for BMC-CTC-12IN1 and BMC-891227 boards (#9207) [kmg]
   * Bus/nes: Added support for BMC-CTC-12IN1 and BMC-891227 boards.
-
-New working software list additions (nes.xml)
-- --------------------------------------------
-12 in 1 Game Card [anonymous]
-Super 15 in 1 Game Card [anonymous]
 
 - Fixed most of the mirroring glitches for 12 in 1 Hwang Shinwei [kmg].
 
@@ -480,24 +398,7 @@ Super 15 in 1 Game Card [anonymous]
 
 - bus/nes: Fixed 2A03PURITANS board not booting when <1024k (#9210) [kmg]
 
-New working software list additions (nes.xml)
-- --------------------------------------------
-Famicompo Pico [rainwarrior]
-
 - snes.xml: Added 10 prototypes (#9206) [kmg]
-
-New Working Software List Additions
------------------------------------
-Prince of Persia (prototype) [Hidden Palace]
-Putty Squad (prototype) [Hidden Palace]
-Race Drivin' (prototype) [Hidden Palace, Steve Lin]
-Shadowrun (prototype) [Hidden Palace, Stephan Reese]
-Super Ghouls'n Ghosts (prototype) [Hidden Palace]
-The Ignition Factor (prototype) [Hidden Palace]
-The Peace Keepers (prototype) [Hidden Palace]
-Troddlers (prototype 19921023) [Hidden Palace, Steve Lin]
-Troddlers (prototype 19930203) [Hidden Palace]
-Utopia - The Creation of a Nation (prototype) [Hidden Palace]
 
 - Force recomputation of clock-related parameters whenever a device clock or scale changes by way of loading a save state [AJR]
 
@@ -521,27 +422,9 @@ Utopia - The Creation of a Nation (prototype) [Hidden Palace]
 
 - vis.xml: re-test software and promote to working (#9212) [r09]
 
-Software List Items Promoted to Working
----------------------------------------
-A Survey of Western Art - The Electronic Library of Art [crazyc]
-America's National Parks [crazyc]
-Americans in Space [crazyc]
-Learn to Play Guitar Volume 1 [crazyc]
-Mercer Mayer's Just Grandma and Me [crazyc]
-Mutanoid Word Challenge [crazyc]
-Peter and the Wolf - A Multimedia Storybook [crazyc]
-Rick Ribbit - Adventures in Early Learning [crazyc]
-Sail with Columbus [crazyc]
-Time Magazine Compact Almanac 1992 [crazyc]
-Talking Stepping Stones - Bonus Pack [crazyc]
-
 - hdc92x4: Minor header cleanup [AJR]
 
 - ti99: Fixed forgotten DSK4 motor control in DDCC1 controller [Michael Zapf].
-
-New Clones Marked as NOT_WORKING
---------------------------------
-Kung Fu (IGS, v202N) [Jorge Silva]
 
 - s11: concatenated the 4 include files into 1 [Robbbert].
 
@@ -550,14 +433,6 @@ Kung Fu (IGS, v202N) [Jorge Silva]
 - alcat_l7: added sound [Robbbert]
 
 - s11: removed wasted space in audiocpu region [Robbbert]
-
-New Working Machines
-- -------------------
-Space Battle (Hoei, set 1) [Paul Arnold]
-
-New Working Clones
-------------------
-Space Battle (Hoei, set 2) [Paul Arnold]
 
 - sbhoei: improved colors [hap]
 
@@ -568,19 +443,7 @@ Space Battle (Hoei, set 2) [Paul Arnold]
 
 - wms_shuffle: fixed the remaining games; removed unneeded red leds [Robbbert].
 
-New Machines Marked as NOT_WORKING
-----------------------------------
-Blackjack (Ver. 1.31) [Ioannis Bampoulas]
-
-New Clones Marked as NOT_WORKING
---------------------------------
-Code One Dispatch (ver UAA) [Naoki Saito]
-
 - tigeroad.cpp: documented tigeroadb PCB [Guru]
-
-New Working Machines
-- -------------------
-The Dice Game! [Jonas Jago]
 
 - playch10.cpp: Correct NT mirroring for various games (MT 02646) (#9220) [kmg]
   * Playch10.cpp: Correct NT mirroring for various games (MT 02646).
@@ -619,21 +482,8 @@ The Dice Game! [Jonas Jago]
 
 - vectrex.cpp: Fix regression [AJR]
 
-New Working Clones
-------------------
-Devil Fish (Galaxian hardware) [chaneman]
-
 - Minitel 2 driver : Fix O and Q keys (#9231) [Jean-Fran ois DEL NERO]
   * Minitel 2 driver : Fix O and Q keys.
-
-New Working Clones
-------------------
-Cyber Cycles (Rev. CB1 Ver.C, Japan) [Brian Troha, Bill D., The Dumping Union]
-Tokyo Wars (Rev. TW1 Ver.A, Japan) [Brian Troha, Bill D., The Dumping Union]
-
-New Working Software List Additions
------------------------------------
-adam.xml: Coleco Graphics Processor [Guru]
 
 - spoker.cpp: decrypted spk102u. It's actually v100 so renamed accordingly. Shows bad colors [Ivan Vangelista].
 
@@ -641,23 +491,9 @@ adam.xml: Coleco Graphics Processor [Guru]
 
 - spectrum_cass.xml: Metadata cleanup + 2 new additions + 1 redump (#9234) [ArcadeShadow]
 
-New Working Software List Additions
------------------------------------
-Noah (PD Adventures) [Steven Brown, spectrumcomputing.co.uk]
-The Plagues of Egypt (PD Adventures) [Steven Brown, spectrumcomputing.co.uk]
-
-Redump
-- -----
-Mag Max [spectrumcomputing.co.uk]
-
 - Metadata cleanup (year, publisher, parent/cloneof) [ArcadeShadow]
 
 - vsnes.cpp: Set raw screen parameters (#9233) [kmg]
-
-New Working Machines
-- -------------------
-Basketball 2 (Mattel) [hap, Sean Riddle]
-Soccer 2 (Mattel) [hap, Sean Riddle]
 
 - st2xxx: Fix regression by preventing IRQ level from changing between vector pulls [AJR]
 
@@ -699,17 +535,6 @@ Soccer 2 (Mattel) [hap, Sean Riddle]
 - cv1k.cpp: Fix hardware notes, Add pinkswtssc notes (#9242) [cam900]
   * Pinkswtssc has it's own homepage (http://suicideclub.gameordie.com/), it confirms hacker name.
 
-New Machines Marked as NOT_WORKING
-----------------------------------
-Fruit World (V111) [Jorge Silva]
-Jumanji (V502) [Jorge Silva]
-Plutus (V100) [Jorge Silva]
-Poker's Wild (V117) [Jorge Silva]
-
-New Clones Marked as NOT_WORKING
---------------------------------
-Fruit World (V110) [Jorge Silva]
-
 - bladestl.cpp: added a note about a buggy dip-switch in version E [chaneman]
 
 - s7,s9: added commas; s3-11: added special solenoids [Robbbert]
@@ -721,10 +546,6 @@ Fruit World (V110) [Jorge Silva]
 - vsnes.cpp: Fix rightward screen shift from previous commit (#9239) [kmg]
 
 - apxen: Fix endianness for bank devices [AJR]
-
-New Working Clones
-------------------
-Majestic Twelve - The Space Invaders Part IV (US, revised code, Rev 1) [Jon Exidy]
 
 - chip8: small metadata update [hap]
 
@@ -743,24 +564,6 @@ Majestic Twelve - The Space Invaders Part IV (US, revised code, Rev 1) [Jon Exid
   * Added the cloneof="aliengat" tag, to the [aliengatu] and [aliengatu1] sets
 
 - snes.xml: Added 8 prototypes (#9211) [kmg]
-
-New Working Software List Additions
------------------------------------
-Asterix (prototype 19930311) [Hidden Palace]
-Magic Boy (prototype) [snescentral]
-Marvel Super Heroes - War of the Gems (Japan, prototype) [Hidden Palace, Steve Lin]
-MechWarrior (prototype) [Hidden Palace, Stephan Reese]
-NBA All-Star Challenge (prototype) [Hidden Palace]
-NBA Live 97 (prototype 19960920) [Hidden Palace]
-Prehistorik Man (prototype) [Hidden Palace]
-
-New NOT_WORKING Software List Additions
----------------------------------------
-Illusion of Gaia (prototype B) [Hidden Palace, Stephan Reese]
-
-New Machines Marked as NOT_WORKING
-----------------------------------
-Digilog 400 [Bitsavers]
 
 - cv1k.cpp: add further notes for pinkswtssc (#9248) [cam900]
   * Cv1k.cpp: add further notes for pinkswtssc
@@ -799,41 +602,15 @@ Digilog 400 [Bitsavers]
 
 - msx2_flop.xml: fix marchen title descriptions [Angelo Salese]
 
-New Machines Marked as NOT_WORKING
-----------------------------------
-Color Match [Jorge Silva]
-Sport Memory [Jorge Silva]
-
 - 391in1.cpp: dumped flash ROM and EEPROM for pokrwild [Jorge Silva]
 
 - gei.cpp: correct DIP switches for gtsers12a and gtsers14a (MT08198) (#9259) [Steven Coomber]
 
-New Working Software List Additions
------------------------------------
-vectrex: Laser Ball (prototype) [Justin Kerk]
-
 - swp30: Add waverom reading [Olivier Galibert]
-
-New Machines Marked as NOT_WORKING
-----------------------------------
-BattleFront [Brian Troha, Bill D., The Dumping Union]
-Mysterian (prototype) [PinMAME]
-
-New Clones Marked as NOT_WORKING
---------------------------------
-Wally wo Sagase! (rev A, Japan, 3 players) (FD1094 317-0198A) [Phil Bennett]
 
 - 39in1.cpp: dumped flash ROM and EEPROM for fruitwld, fruitwlda and plutus [Jorge Silva]
 
-New Machines Marked as NOT_WORKING
-----------------------------------
-Rush [Robbbert]
-
 - mpc_s: added m_ prefix to variables, updated inputs, added keycodes. wpc_w95: added m_ prefix, WIP on inputs [Robbbert].
-
-New Machines Marked as NOT_WORKING
-----------------------------------
-Minna de Kitaeru Zenno Training.(Ver. 1.50) [Arcade-Projects]
 
 - twincobr.cpp, wardner.cpp: Properly acknowledge IRQs (fixes soft reset issue in Wardner) [AJR]
 
@@ -857,27 +634,9 @@ Minna de Kitaeru Zenno Training.(Ver. 1.50) [Arcade-Projects]
 
 - coco_cart.xml: fix hash of Canyon Climber (#9249) [tim lindner]
 
-New Working Software List Additions
------------------------------------
-ibm5170: Light Quest (prototype) [Justin Kerk]
-
 - Treat WinImage compressed disk images (*.imz) as ZIP archives [Justin Kerk].
 
 - 5 New Software Additions + 3 Redumps + clean metadata (#9266) [ArcadeShadow]
-
-New Working Software List Additions
------------------------------------
-Cosmic Invaders [Steven Brown, Planeta Sinclair]
-Dollars in the Dust (PD Adventures) [Steven Brown, Planeta Sinclair]
-G.I. Hero (MCM) [spectrumcomputing.co.uk]
-Gremlins - The Adventure (Erbe) [spectrumcomputing.co.uk]
-Gremlins 2: La Nueva Generacion [worldofspectrum.org]
-
-Redump
-- -----
-Giants (compilation) [spectrumcomputing.co.uk]
-Grand Prix Simulator 2 [spectrumcomputing.co.uk]
-Space Raiders - Invasores Gal cticos (Portuguese) [Planeta Sinclair]
 
 - rendfont.cpp: Modest refactoring [AJR]
   * Use ioprocs classes rather than emu_file in various helper functions
@@ -887,44 +646,12 @@ Space Raiders - Invasores Gal cticos (Portuguese) [Planeta Sinclair]
 
 - ibm5170.xml: 16 entries added + 1 redumped (#9197) [ArcadeShadow]
 
-New Working Software List Additions
------------------------------------
-ibm5170: [ArcadeShadow]
-Armour-Geddon [The Good Old Days]
-Eye of the Beholder 3: Assault on Myth Drannor [The Good Old Days]
-Eye of the Beholder 3: Assault on Myth Drannor (Eye of Beholder Trilogy release) [The Good Old Days]
-Eye of the Beholder 3: Assault on Myth Drannor (Kixx release) [The Good Old Days]
-Eye of the Beholder 3: A l'assaut de Myth Drannor (France) [The Good Old Days]
-Eye of the Beholder 3: Sturm auf Myth Drannor (Germany) [The Good Old Days]
-Formula One Grand Prix (Euro, v1.05, alt) [ibmpc5150, archive.org]
-Might and Magic III: Isles of Terra (3.5"DD) [The Good Old Days]
-Might and Magic III: Isles of Terra (5.25"HD) [The Good Old Days]
-Operation Body Count [ibmpc5150, archive.org]
-Railroad Tycoon Deluxe [The Good Old Days]
-Star Wars: TIE Fighter (Spain) [Alvaro Polo, archive.org]
-Wing Commander II - Vengeance of the Kilrathi - Speech Accessory Pack (5.25") [The Good Old Days]
-World Circuit - The Grand Prix Race Simulation (USA, v1.04) [ibmpc5150, archive.org]
-
-New NOT_WORKING Software List Additions
----------------------------------------
-ibm5170: [ArcadeShadow]
-Starlord [Dark-Star, archive.org]
-System Shock [The Good Old Days]
-
 - ibm5170.xml: Demoted Lemmings to NOT_WORKING [ArcadeShadow].
   * Ibm5170.xml: Redumped Formula One Grand Prix (Euro, v1.03) [ibmpc5150, archive.org]
-
-New Working Clones
-------------------
-Prestige Challenger (Glasgow program) [Sean Riddle]
 
 - wpc_95: Added inputs and keycodes. Games are playable [Robbbert].
 
 - Pinball2k: added notes. Initialised global variables to 0 [Robbbert].
-
-New Machines Marked as NOT_WORKING
-----------------------------------
-Magic Slot (normal 1.0C) [Jorge Silva]
 
 - rbmk.cpp: rudimentary inputs for magslot [Ivan Vangelista]
 
@@ -934,23 +661,11 @@ Magic Slot (normal 1.0C) [Jorge Silva]
 
 - rbmk.cpp: dumped EEPROM and provided additional hw info for magslot [Jorge Silva]
 
-New Machines Marked as NOT_WORKING
-----------------------------------
-Road Star [Jorge Silva]
-
 - by6803: added notes [Robbbert].
 
 - mach32.cpp: removed duplicate save state registration [Ivan Vangelista]
 
-New Machines Marked as NOT_WORKING
-----------------------------------
-unknown Videos A A game [Jorge Silva]
-
 - i86: wrap at end of segment not at 64k boundary [cracyc]
-
-New Working Clones
-------------------
-Violent Storm (ver AAB, bootleg) [Jorge Silva]
 
 - flac.cpp: Add some missing standard headers [AJR]
 
@@ -966,27 +681,13 @@ Violent Storm (ver AAB, bootleg) [Jorge Silva]
 
 - Removed extra semicolons after function bodies in remaining headers (#9277) [kmg]
 
-New Working Clones
-------------------
-Defend the Terra Attack on the Red UFO (bootleg, set 3) [Guru]
-Sauro (set 3) [Jorge Silva]
-
 - bus/nes: Added support for multicart variant of JY830623C board (#9120) [kmg]
   * Renamed MK2 board to JY830623C, the PCB label of at least one of the related bootlegs.
   * Removed deprecated hold_irq_line().
 
-New working software list additions (nes.xml)
-- --------------------------------------------
-1995 Super HiK 4 in 1 (JY-016) [krzysiobal, NewRisingSun]
-1995 Super HiK 4 in 1 (JY-017) [krzysiobal, NewRisingSun]
-
 - bus/nes_ctrl: Added NES support for Virtual Boy controllers (#9124) [kmg]
   * Generalized the read/write pattern for joypads a bit more and placed it in the base NES joypad class.
   * Using that, added Virtual Boy controller and simplified Pachinko controller some more.
-
-New working software list additions (nes.xml)
-- --------------------------------------------
-Candelabra - Estoscerro [SlyDogStudios]
 
 - x76f041/x76f100/zs01: Implement new operations and security features (#9137) [987123879113]
   * X76f100: Implement security features
@@ -998,14 +699,6 @@ Candelabra - Estoscerro [SlyDogStudios]
 
 - jaguar.xml: Added an unreleased prototype (#9198) [kmg]
   * Jaguar.xml: Added an unreleased prototype.
-
-New NOT_WORKING Software List Additions
----------------------------------------
-Speedster II [Gaming Alexandria]
-
-New Machines Marked as NOT_WORKING
-----------------------------------
-AT&T 615 MT [Bitsavers]
 
 - arm: Disassembly improvements [AJR]
   * Correct mnemonic suffixes for LDM and STM
@@ -1027,11 +720,6 @@ AT&T 615 MT [Bitsavers]
 
 - bus/epson_qx, qx10.cpp: Added Epson QX-10 expansion bus (#9241) [Brian Johnson]
 
-New Clones Marked as NOT_WORKING
---------------------------------
-Multi Game (French / English, Version Soft 4.4.8T - 4.0.5, 26-OCT-00) [Jorge Silva]
-Multi Game (English, Version Soft 4.1.2T - 1.5.7, 16-MAY-00(397)) [Jorge Silva]
-
 - bus/a2bus: Added Apple II 3.5" Disk Controller Card (#9215) [ksherlock]
   * Apple II 3.5" Disk Controller Card, Apple P/N A0076LL/A, Announced July 1991, Released March 1992. $149.95 MSRP
 
@@ -1041,15 +729,7 @@ Multi Game (English, Version Soft 4.1.2T - 1.5.7, 16-MAY-00(397)) [Jorge Silva]
 
 - frontend: Exposed memory pass-through handlers (address space taps) to Lua [Vas Crabb].
 
-New Working Clones
-------------------
-Teenage Mutant Ninja Turtles (bootleg, US 4 Players, version H) [Jorge Silva]
-
 - bus/nes: Added support for an 82 in 1 cartridge (#9288) [kmg]
-
-New working software list additions (nes.xml)
-- --------------------------------------------
-82 in 1 [flaviocaste]
 
 - nes.cpp, playch10.cpp, vsnes.cpp: Made zapper less bad (#9284) [kmg]
   * Limited light detection to scanlines recently drawn by CRT.
@@ -1060,11 +740,6 @@ New working software list additions (nes.xml)
    - not being able to track where zapper is pointed in demo/test software
 
 - bus/nes: Added support for NES-EVENT2 board (#9272) [kmg]
-  * Bus/nes: Added support for NES-EVENT2 board.
-
-New working software list additions (nes.xml)
-- --------------------------------------------
-Nintendo Campus Challenge 1991 (USA) [anonymous]
 
 - Mark this clearly as a bootleg [kmg].
 
@@ -1075,18 +750,6 @@ Nintendo Campus Challenge 1991 (USA) [anonymous]
 - vga: made video RAM size configurable at machine configuration (#9289) [Ivan Vangelista]
 
 - swim1/swim2 - initialize m_floppy and m_timer (#9291) [ksherlock]
-
-New Working Machines
-- -------------------
-Chic Gum Video [Fabrice Arzeno]
-
-New Working Clones
-------------------
-Midnight Resistance (World, set 2) [Jorge Silva]
-
-New Clones Marked as NOT_WORKING
---------------------------------
-Attack Force (unencrypted, bootleg ) [IZ8DWF]
 
 - pit8253: prevent elapsed_cycles from going negative [cracyc]
 
@@ -1116,10 +779,6 @@ Attack Force (unencrypted, bootleg ) [IZ8DWF]
 
 - machine.cpp: Attempt to appease gcc's stricter handling of incomplete types [AJR]
 
-Clones Promoted to Working
---------------------------
-Wally wo Sagase! (rev A, Japan, 3 players) (FD1094 317-0198A) [Phil Bennett, Charles McDonald, Brian Troha]
-
 - taito_z.cpp: based clocks on actual XTAL values [Brian Troha]
 
 - whitestar: fixed an input bug, retested all the games [Robbbert].
@@ -1129,22 +788,9 @@ Wally wo Sagase! (rev A, Japan, 3 players) (FD1094 317-0198A) [Phil Bennett, Cha
 - nes.xml: Added original Family BASIC cartridge (#9295) [kmg]
   * Nes.xml: Added original Family BASIC cartridge.
 
-New Working Software List Additions
------------------------------------
-Family BASIC (Japan, V1.0) [No-Intro]
-
 - Added Playbox BASIC V1.0 [kmg].
 
 - fm7_disk.xml/fm77av.xml: add 3 new dumps (#9173) [r09]
-
-New working software list additions (fm77av.xml)
-- -----------------------------------------------
-The 4th Unit 2 [r09]
-
-New working software list additions (fm7_disk.xml)
-- -------------------------------------------------
-FM Logo 2.0 [sampson]
-Chikyuu Senshi Rayieza [r09]
 
 - sam,spike: Added documentation [Robbbert]
 
@@ -1156,16 +802,6 @@ Chikyuu Senshi Rayieza [r09]
 - whitestar: fixed NVRAM issue [Robbbert].
 
 - famicom_cass.xml: Added 7 Micom BASIC Magazine games (#9298) [kmg]
-
-New Working Software List Additions
------------------------------------
-Flies [ozidual, Gaming Alexandria]
-Dark [ozidual, Gaming Alexandria]
-Pen Pen [ozidual, Gaming Alexandria]
-Fisraduth - Castle of Tyramis [ozidual, Gaming Alexandria]
-The Spirit of Satan [ozidual, Gaming Alexandria]
-Metal Arms [ozidual, Gaming Alexandria]
-Ryuuhyoukan no Sangeki [ozidual, Gaming Alexandria]
 
 - vegas.cpp: Cleanup [Vas Crabb]:
   * Combine DUART interrupts.
@@ -1205,40 +841,12 @@ Ryuuhyoukan no Sangeki [ozidual, Gaming Alexandria]
   * Use pre-configured memory banks
   * Various clean-ups and general improvements
 
-new WORKING machine (#9301)
-- --------------------------
-The Tower (DECO Cassette) (Europe ) [Darksoft, Senil Data Systems]
-
-New Working Clones
-------------------
-Break Thru (bootleg) [nnap]
-
-New Machines Marked as NOT_WORKING
-----------------------------------
-Extra Draw [Jorge Silva]
-New Tiger [Jorge Silva]
-Torre Eiffel [Jorge Silva]
-
 - videosaa.cpp: identified the unknown set as Scratch!! Scratch!! [Jorge Silva]
-
-New Machines Marked as NOT_WORKING
-----------------------------------
-WY-325 (v3.2) [Bitsavers]
 
 - cgenie_cass.xml: Various updates [Dirk Best]
   * List more missing software titles
   * Rename some entries: editdef to editdefa, machinem to basicm, zalaga to zalagaa, zalagaa to zalaga
   * Add metadata to some entries
-
-New Working Software List Additions
------------------------------------
-Editor fuer definierbare Zeichen [TOSEC, Dirk Best]
-Lineare Gleichungssysteme [TOSEC]
-Listing-Formatierer [TOSEC]
-Programm-Modifizierer [TOSEC]
-Sound Editor [TOSEC]
-Uhrzeit [TOSEC]
-Bluesmaker [TOSEC, Dirk Best]
 
 - mips3: fix some bugs [Patrick Mackinlay]
 
@@ -1252,17 +860,7 @@ Bluesmaker [TOSEC, Dirk Best]
    - Added r/w of zapper enable bit through appropriate ports. Controllers and zapper now pass the internal self-test.
    - Shrunk nametable RAM down to correct 2K (mirroring still not correctly implemented).
 
-New Working Clones
-------------------
-FamicomStation [Patnukem]
-
 - c64_cass.xml: Added three working items (#9296) [Steven Coomber]
-
-New Working Software List Additions
------------------------------------
-Quartet (Activision) [C64 Ultimate Tape Archive V2.0]
-QUATTRO Coin-Ops (Codemasters) [C64 Ultimate Tape Archive V2.0]
-Quedex (Thalamus) [C64 Ultimate Tape Archive V2.0]
 
 - nes, playch10.cpp, vsnes.cpp: Made zapper sensor fuzzier (#9292) [kmg]
   * Removes the pixel-perfect sensor by averaging pixel brightness over circular area around gun position.
@@ -1284,22 +882,7 @@ Quedex (Thalamus) [C64 Ultimate Tape Archive V2.0]
 
 - cgenie_cass.xml: Add 4 titles written by Gerd Meier [Dirk Best]
 
-New Working Software List Additions
------------------------------------
-Synthy [Reinhard Gansweith]
-Break-Out [Reinhard Gansweith]
-Pacman [Reinhard Gansweith]
-Space-Fight [Reinhard Gansweith]
-
 - decopincpu: added outputs, removed unused switch [Robbbert].
-
-New Machines Marked as NOT_WORKING
-----------------------------------
-unknown PMC game [Mike Coates]
-
-New Clones Marked as NOT_WORKING
---------------------------------
-Boa Sorte! (Golden Poker prequel HW) [Jorge Silva]
 
 - galaxian.cpp: added correct dip switches for redufob3 and dip locations for the redufo bootlegs [Guru]
 
@@ -1322,34 +905,6 @@ Boa Sorte! (Golden Poker prequel HW) [Jorge Silva]
 - nmk16.cpp: Add notes of Thunder Dragon 3 Bootleg hardware (#9214) [cam900]
 
 - c64_cass.xml: Added 22 items (21 working, one not working) (#9273) [Steven Coomber]
-
-New Working Software List Additions
------------------------------------
-Pack of Aces (Prism Leisure) [C64 Ultimate Tape Archive V2.0]
-Pac-Land (Quicksilva) [C64 Ultimate Tape Archive V2.0]
-Pandora (Firebird) [C64 Ultimate Tape Archive V2.0]
-Panic (Datamaxx) [C64 Ultimate Tape Archive V2.0]
-Paperboy (Elite Systems) [C64 Ultimate Tape Archive V2.0]
-Pastfinder (Activision) [C64 Ultimate Tape Archive V2.0]
-Peter Beardsley's International Football (Grandslam) [C64 Ultimate Tape Archive V2.0]
-Ping Pong (Imagine) [C64 Ultimate Tape Archive V2.0]
-Pitfall II: Lost Caverns (Activision) [C64 Ultimate Tape Archive V2.0]
-Pitstop II (U.S. Gold) [C64 Ultimate Tape Archive V2.0]
-Pitstop II (Rushware) [C64 Ultimate Tape Archive V2.0]
-Plumb Crazy! (Terminal Software) [C64 Ultimate Tape Archive V2.0]
-Pole Position (U.S. Gold) [C64 Ultimate Tape Archive V2.0]
-Poltergeist (Codemasters) [C64 Ultimate Tape Archive V2.0]
-Popeye (Macmillan Software) [C64 Ultimate Tape Archive V2.0]
-Power Drift (Activision) [C64 Ultimate Tape Archive V2.0]
-The President is Missing (Microprose Software) [C64 Ultimate Tape Archive V2.0]
-Prince Clumsy (Codemasters) [C64 Ultimate Tape Archive V2.0]
-Prohibition (Zafiro Software Division) [C64 Ultimate Tape Archive V2.0]
-Psycho Soldier (Imagine) [C64 Ultimate Tape Archive V2.0]
-Pub Games (Alligata) [C64 Ultimate Tape Archive V2.0]
-
-New NOT_WORKING Software List Additions
----------------------------------------
-PHM Pegasus (Electronic Arts) [C64 Ultimate Tape Archive V2.0]
 
 - ppu2c0x.cpp: A few background palette fixes (#9245) [kmg]
   * Added function to unify grayscale and palette emphasis flags application. Flags now applied to background pixels (including
@@ -1389,21 +944,6 @@ PHM Pegasus (Electronic Arts) [C64 Ultimate Tape Archive V2.0]
 
 - namcos11.cpp: redumped wave ROM for dunkmnia [Phil Bennett, Ian Karlsson, Brian Troha]
 
-New Machines Marked as NOT_WORKING
-----------------------------------
-unknown game on FR004 hardware (set 1) [Jorge Silva]
-unknown game on FR009 hardware [Jorge Silva]
-
-New Clones Marked as NOT_WORKING
---------------------------------
-unknown game on FR004 hardware (set 2) [Jorge Silva]
-unknown game on FR004 hardware (set 3) [Jorge Silva]
-unknown game on FR004 hardware (set 4) [Jorge Silva]
-
-New Machines Marked as NOT_WORKING
-----------------------------------
-Yatterman Plus (J 981006 V1.000) [nnap]
-
 - Fixed the build: novadesitec [Robbbert]
 
 - fileio.cpp: Remove optional second argument of path_iterator::next [AJR]
@@ -1414,21 +954,13 @@ Yatterman Plus (J 981006 V1.000) [nnap]
   * Raised artificial frequency cutoff to about 18KHz instead of 11KHz.
   * Added linear counter reload flag.
 
-New Machines Marked as NOT_WORKING
-----------------------------------
-Siemens PC-MX2 [Plamen Mihaylov]
-
-- mess.flt: added pcmx2 [Robbbert]
+- mess.flt: Added (pcmx2) [Robbbert].
 
 - Merged s6a.cpp into s6.cpp [Robbbert]
 
 - decopincpu: added missing solenoid outputs [Robbbert]
 
 - sdl: -video auto now means "bgfx" on all platforms [R. Belmont].
-
-New Working Machines
-- -------------------
-Blast It [hap, Sean Riddle]
 
 - alvg,capcom,spike: notes [Robbbert]
 
@@ -1444,27 +976,9 @@ Blast It [hap, Sean Riddle]
 - New machine driver for Golden Poker prequel HW. Fixed the Boa Sorte interrupts, GFX banks, and ordered the bitplanes. Promoted to
  working the prequel HW games and both of Mega Double Poker sets [Grull Osgo, Roberto Fresca]. [RobertoFresca].
 
-Machines Promoted to Working
-----------------------------
-Bonne Chance! (Golden Poker prequel HW, set 1) [Grull Osgo, Roberto Fresca] [RobertoFresca].
-Bonne Chance! (Golden Poker prequel HW, set 2) [Grull Osgo, Roberto Fresca] [RobertoFresca].
-Boa Sorte! (Golden Poker prequel HW) [Grull Osgo, Roberto Fresca] [RobertoFresca].
-
 - Golden Poker driver: Removed unused input set [RobertoFresca].
 
-New Working Clones
-------------------
-House of Cards (HSC1) [Brian Troha, The Dumping Union]
-
 - namcos2.cpp: verified ROM labels for ridgera2 [Brian Troha]
-
-New Clones Marked as NOT_WORKING
---------------------------------
-Magic Bomb (Ver. NB4.5 061402) [Jorge Silva]
-
-New Machines Marked as NOT_WORKING
-----------------------------------
-Super Card 2 in 1 (English version 03.23) [Jorge Silva]
 
 - alvg.cpp: started adding meat to the bones [Robbbert]
 
@@ -1472,37 +986,13 @@ Super Card 2 in 1 (English version 03.23) [Jorge Silva]
 
 - we32kram.cpp: Added version 1.06 of the RAM board ROM [Nigel Barnes].
 
-New Working Software List Additions
------------------------------------
-bbc_rom: Acorn ADFS 1.50, AMX Super Rom M3.51, DFS-AID, Edit 1.00, Inter-Word 1.02 [hack], Mighty Oak DMFS 1.04 - KSSL, PCB Designer
-  1.00, Pig ROM 1.00, Pig ROM 1.10, Plotmate A3 1.80, Printer Controller 2.0(e), Probe 6.01, Scorpion Terminal Emulator 1.2, Squeak
-  MDPT 1.20, Trace Disassembler 1.00, UCL Terminal Emulator 3.54, ZNOS 1.01 [Nigel Barnes]
-electron_rom: AMPLE Nucleus ID 60205, AMX Stop Press, T2CU v2.00 [Nigel Barnes]
-
-New NOT_WORKING Software List Additions
----------------------------------------
-bbc_rom: Micro Loop, Replay System WD1770W 1.28, RX-8 2.2 [Nigel Barnes]
-electron_rom: I2C (4 U) 3.1E [Nigel Barnes]
-
 - bbc_flop_6502.xml: Added missing 2nd floppy for p-System [Nigel Barnes].
 
 - bus/coco: Added Glenside IDE Adapter [Nigel Barnes].
 
 - cpu/i8008: IO instructions (INP/OUT) make register A available at state T1 [Nigel Barnes].
 
-New Working Clones
-------------------
-BBC Micro Model B (Norway) [Nigel Barnes]
-
-New Clones Marked as NOT_WORKING
---------------------------------
-Cisco SIST1 Terminal [Nigel Barnes]
-
 - hh*: add private: section to classes [hap]
-
-New Working Machines
-- -------------------
-Chesster Phantom [hap, Berger]
 
 - cphantom: update notes [hap]
 
@@ -1515,10 +1005,10 @@ Chesster Phantom [hap, Berger]
   * Preliminary character rendering
 
 - alvg: added inputs, NVRAM [Robbbert].
-
 - Miscellaneous cleanup [Vas Crabb]:
   * Emu/machine.cpp: Organised #included headers by module.
   * Formats/jvc_dsk.cpp: Don't hide diagnostics behind compile-time switch.
   * Util/ioprocsfilter.h: Added doxygen comments so one doesn't need to read the source to work semantics.
 - srcclean in preparation for 0.241 release [Vas Crabb].
 - igs011.cpp: Use Jyutping phonetic representation of Cantonese region titles [Vas Crabb].
+- Bump MAME 0.241 [Vas Crabb].

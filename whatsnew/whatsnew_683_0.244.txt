@@ -1,31 +1,9 @@
-﻿0.244 2022/05/25 [#683 - Vas Crabb]
-- ----------------------------------
-
-
-MAME Testers Bugs Fixed :
------------------------
-- 01288: [DIP/Input] (exidy.cpp) venture, mtrap: Coin inputs are duplicated (Vas Crabb).
-- 03729: [Color/Palette] (galaxian.cpp) gmgalax: Colors are incorrect (Robbbert).
-- 05753: [Misc.] (pentagon.cpp) pentagon: The demo “recycler by Thesuper” does not boot (holub).
-- 06529: [Crash/Freeze] (spec128.cpp) spec128 [strider]: Emulated system reboots after finishing stage 2 (holub).
-- 07564: [Crash/Freeze] (megadriv.cpp) genesis [nbaliv98]: Navigating menus triggers the game’s exception handler (kmg).
-- 07768: [Gameplay] (namcos2.cpp) bubbletr: Score displays and outputs are not exposed (hap).
-- 08185: [Graphics] (spectrum.cpp) spec128 and clones [chasehq]: Logo partly disappears during title screen animations (holub).
-- 08261: [Crash/Freeze] (spcforce.cpp) spcforce, spcforc2, meteor, meteors: Game freezes at title screen after soft reset (AJR).
-- 08303: [DIP/Input] (system1.cpp) ufosensi, ufosensib: DIP switch marked as unknown controls demo sounds (kmg).
-- 08304: [Crash/Freeze] (apxen.cpp) apxen: [debug] Slot tag shadows an option name, making it impossible to configure (Robbbert).
-- 08305: [Crash/Freeze] (x68k.cpp) All machines in x68k.cpp: [debug] System attempts to schedule timer on invalid video line (AJR).
-- 08306: [Crash/Freeze] (usgames.cpp) All machines in usgames.cpp: [debug] Attempting to decode non-existent ROM (Ivan Vangelista).
-- 08307: [Crash/Freeze] (konmedal68k.cpp) spcpokan: [debug] Attempting to read past end of video ROM (R. Belmont).
-- 08308: [Crash/Freeze] (mk98.cpp) mk98: [debug] Attempting to write past end of memory region (Robbbert).
-- 08311: [Crash/Freeze] (specpls3.cpp) specpls3 [rickdan2]: Game fails to load, displaying corrupt loading screen (smf).
-- 08315: [DIP/Input] (nemesis.cpp) salamand and clones: Inserting a coin may give two credits (kmg).
-- 08316: [Gameplay] (wmg.cpp) wmg: Selecting a game causes emulated system to crash (Robbbert).
-- 08321: [Documentation] (system1.cpp) wbml and clone: Descriptions do not match game titles (kmg).
+0.244 2022/05/25 [#683 - Vas Crabb]
+-----------------------------------
 
 
 New Working Machines
-- -------------------
+---------------------
 Hot Chilli (95103, v0104) [Roberto Fresca, Grull Osgo, Matt B]
 Selchow & Righter Scrabble Lexor - Computer Word Game [hap, Sean Riddle]
 Mahjong The Mysterious Orient Returns [BET] (Japan, v1.00) [buffi]
@@ -83,37 +61,43 @@ Zenith Data Systems Z-180 Series [Colin McDougall]
 
 New Working Software List Additions
 -----------------------------------
-apple2_flop_clcracked: Drugs: Their Effects on You (cleanly cracked) [4am, Matthew Eric D'Asaro, Firehawke]
-apple2_flop_orig: Drugs: Their Effects on You [Matthew Eric D'Asaro, Firehawke]
-bbc_rom:
+apple2_flop_clcracked.xml:
+  Drugs: Their Effects on You (cleanly cracked) [4am, Matthew Eric D'Asaro, Firehawke]
+apple2_flop_orig: Drugs.xml:
+  Their Effects on You [Matthew Eric D'Asaro, Firehawke]
+bbc_rom.xml:
   Chuckie Egg (unofficial ROM), Frak! (unofficial ROM), Integra-B OS 1.14, Integra-B OS 1.20, Integra-B OS 1.20 (Y2K patched),
   Killer Gorilla (unofficial ROM), Memex-B20 2.2, PipeDream 0.2, VidiEditor 1.2 [Nigel Barnes]
-c64_cart: Z80 Video Pak [smf]
-c64_cass:
+c64_cart.xml:
+  Z80 Video Pak [smf]
+c64_cass.xml:
   Salamander (Imagine), Sanxion, Savage, Scorpion (Prism Leisure), The Secret Diary of Adrian Mole, The Sentinel,
   Sentinel (U.S. Gold), Shadow Skimmer [The Ultimate Tape Archive Team]
-cdi: The Photo CD Book Companion CD-ROM [David Silva]
-fmtowns_cd:
+cdi.xml:
+  The Photo CD Book Companion CD-ROM [David Silva]
+fmtowns_cd.xml:
   '94-nen Nice Gal - Natsu no Soukessan, Ii Tabi Ii Aji Goannai - Furusato Kodzutsumi & Kanpo no Yado - Heisei Gannendo-ban,
   The Playroom, Pocky 1-2 + Ponyon, Psychic Detective Series Final - Solitude Gekan (Demo),
   Psychic Detective Series Vol. 4 - Orgel (Demo), Zak McKracken and The Alien Mindbenders (HMB-218) [redump.org]
-gameboy:
+gameboy:.xml
   Into the Blue, Retroid [Jonas Fischbach]
   Death Planet [Mackerel Interactive]
   Dangan GB [snorpung, nordloef]
-gba: World Reborn (USA) [No-Intro]
-gbcolor:
+gba.xml:
+  World Reborn (USA) [No-Intro]
+gbcolor.xml:
   Green Beret (prototype 1), Green Beret (prototype 2), Green Beret (prototype 3) [Kak, retroLEL]
   Tyrannosaurus Tex (USA) [No-Intro]
-megadriv:
+megadriv.xml:
   Awesome Possum Kicks Dr. Machino's Butt! (USA, prototype, 19930712) [DrBizz]
   Canon - The Legend of the New Gods, Clan of Heroes - Generals of the Yang Family, Custodian, Duke Nukem 3D (Piko reissue),
   Mega Noah's Ark 3D, Switchblade, Water Margin - A Tale of Clouds and Wind, Wisdom Tree Collection [No-Intro]
-mtx_cart: MAGROM v1.00, MAGROM v1.02, MAGROM v1.03(SP), MAGROM v1.04, MAGROM v1.05, MAGROM v1.05a, MAGROM v2.00 [Martin Allcorn]
-mtx_hdd:
+mtx_cart.xml:
+  MAGROM v1.00, MAGROM v1.02, MAGROM v1.03(SP), MAGROM v1.04, MAGROM v1.05, MAGROM v1.05a, MAGROM v2.00 [Martin Allcorn]
+mtx_hdd.xml:
   CP/M 54K, CP/M 59K, Hex-Train [Andy Key]
   Fuzix OS [Alan Cox]
-nes:
+nes.xml:
   Exploding Fist (USA), Get'em Gary, More Glider, Nomolos - Storming the Catsle (v1.00), Quest Forge - By Order of Kings,
   Wùk?ng Dòujù (China) [anonymous]
   Uninvited (USA, prototype) [Forest of Illusion, Clarkzer0]
@@ -131,25 +115,51 @@ spectrum_cass:
   Exolon (bug fix), Exolon (Erbe), Horacio Esquiador, Smash TV (Erbe) [spectrumcomputing.co.uk]
   Chess Nuts, Coin-It [Steven Brown, Planeta Sinclair]
   Bomb Jack (Z Cobra), Bomb Jack II (MCM), Bomb Jack II (Zafi Chip) [worldofspectrum.org]
-  Inspector Gadget and the Circus of Fear, LSD Megademo, The Lyra II Megademo, The Ren and Stimpy Slideshow, Shock Megademo
-  [ICEknight]
-timex_cass: Byte Power (February 1988) [aralbrec]
+  Inspector Gadget and the Circus of Fear, LSD Megademo, The Lyra II Megademo, The Ren and Stimpy Slideshow, Shock Megademo [ICEknight]
+timex_cass.xml:
+  Byte Power (February 1988) [aralbrec]
 
 Software List Items Promoted to Working
 ---------------------------------------
-bbc_rom: SideAid128 1.03 [Nigel Barnes]
-gamegear: BreakThru! (prototype) [kmg]
-pc98_cd: Manji PSYyuuki [redump.org, r09]
+bbc_rom.xml:
+  SideAid128 1.03 [Nigel Barnes]
+gamegear.xml:
+  BreakThru! (prototype) [kmg]
+pc98_cd.xml:
+  Manji PSYyuuki [redump.org, r09]
 
 New NOT_WORKING Software List Additions
 ---------------------------------------
-c64_cass: Scooby-Doo, Shadows of Mordor [The Ultimate Tape Archive Team]
-pc98_cd:
+c64_cass.xml:
+  Scooby-Doo, Shadows of Mordor [The Ultimate Tape Archive Team]
+pc98_cd.xml:
   Ayumi-chan Monogatari, Ginga Eiyuu Densetsu IV, Master of Magic, NEC Demonstration CD-ROM - Evolution and Dinosaurs,
   Prince of Persia 2 - The Shadow & The Flame, Sorcer Kingdom, Strike Commander, Teitoku no Ketsudan III, Ultima VIII - Pagan,
   Umanari 1 Furlong Theater 2, Yumemizaka [redump.org]
   Etemible - Tenjou Mukyuu [redump.org, coolmod]
   Collector D [redmp.org, cyo.the.vile]
+
+
+MAME Testers Bugs Fixed (18):
+-----------------------------
+- 01288: [DIP/Input] (exidy.cpp) venture, mtrap: Coin inputs are duplicated (Vas Crabb)
+- 03729: [Color/Palette] (galaxian.cpp) gmgalax: Colors are incorrect (Robbbert)
+- 05753: [Misc.] (pentagon.cpp) pentagon: The demo “recycler by Thesuper” does not boot (holub)
+- 06529: [Crash/Freeze] (spec128.cpp) spec128 [strider]: Emulated system reboots after finishing stage 2 (holub)
+- 07564: [Crash/Freeze] (megadriv.cpp) genesis [nbaliv98]: Navigating menus triggers the game’s exception handler (kmg)
+- 07768: [Gameplay] (namcos2.cpp) bubbletr: Score displays and outputs are not exposed (hap)
+- 08185: [Graphics] (spectrum.cpp) spec128 and clones [chasehq]: Logo partly disappears during title screen animations (holub)
+- 08261: [Crash/Freeze] (spcforce.cpp) spcforce, spcforc2, meteor, meteors: Game freezes at title screen after soft reset (AJR)
+- 08303: [DIP/Input] (system1.cpp) ufosensi, ufosensib: DIP switch marked as unknown controls demo sounds (kmg)
+- 08304: [Crash/Freeze] (apxen.cpp) apxen: [debug] Slot tag shadows an option name, making it impossible to configure (Robbbert)
+- 08305: [Crash/Freeze] (x68k.cpp) All machines in x68k.cpp: [debug] System attempts to schedule timer on invalid video line (AJR)
+- 08306: [Crash/Freeze] (usgames.cpp) All machines in usgames.cpp: [debug] Attempting to decode non-existent ROM (Ivan Vangelista)
+- 08307: [Crash/Freeze] (konmedal68k.cpp) spcpokan: [debug] Attempting to read past end of video ROM (R. Belmont)
+- 08308: [Crash/Freeze] (mk98.cpp) mk98: [debug] Attempting to write past end of memory region (Robbbert)
+- 08311: [Crash/Freeze] (specpls3.cpp) specpls3 [rickdan2]: Game fails to load, displaying corrupt loading screen (smf)
+- 08315: [DIP/Input] (nemesis.cpp) salamand and clones: Inserting a coin may give two credits (kmg)
+- 08316: [Gameplay] (wmg.cpp) wmg: Selecting a game causes emulated system to crash (Robbbert)
+- 08321: [Documentation] (system1.cpp) wbml and clone: Descriptions do not match game titles (kmg)
 
 
 Merged Pull Requests
@@ -276,11 +286,6 @@ Source changes:
 - osd/modules/input: Detect joystick reconnection with SDL (#9605) [Vas Crabb]
   * Also improved display name scheme for joystick axes and buttons.
 
-New Machines Marked as NOT_WORKING
-----------------------------------
-Unknown Poker W [TeamEurope, Roberto Fresca]
-Dallas Poker [TeamEurope, Roberto Fresca]
-
 - misc: consistency changes to some company/title strings [hap]
 
 - exl100: the amateur lawyers didn't like the license [Robbbert].
@@ -294,14 +299,6 @@ Dallas Poker [TeamEurope, Roberto Fresca]
 - Fixed (i think) hp2641, jaguarcd, psr60/70, racingj etc [Robbbert]
 
 - att630.cpp: Add more expansion RAM for att730x; slight code cleanup [AJR]
-
-New working software list additions (apple2_flop_orig.xml) (#9621)
-- -----------------------------------------------------------------
-Drugs: Their Effects on You [Matthew Eric D'Asaro, Firehawke]
-
-New working software list additions (apple2_flop_clcracked.xml)
-- --------------------------------------------------------------
-Drugs: Their Effects on You (cleanly cracked) [4am, Matthew Eric D'Asaro, Firehawke]
 
 - bus/nes: Minor fixes and simplifications for several bootlegs (#9618) [kmg]
 
@@ -334,10 +331,6 @@ Drugs: Their Effects on You (cleanly cracked) [4am, Matthew Eric D'Asaro, Fireha
 
 - mips3drc: Moved unchanging conditionals outside for loop in generate_checksum_block; 7% faster [Ryan Holtz] (#9626) [MooglyGuy]
 
-New Machines Marked as NOT_WORKING
-----------------------------------
-Kajot Card (Version 1.01, Wien Euro) [TeamEurope, Roberto Fresca]
-
 - Lucky 7 (Impera): Added ASCII PCB layout [TeamEurope]
 
 - unknown Poker 'TE06': Added ASCII PCB layout [TeamEurope]
@@ -345,18 +338,6 @@ Kajot Card (Version 1.01, Wien Euro) [TeamEurope, Roberto Fresca]
 - Puzzle Me!: Added ASCII PCB layout [TeamEurope]
 
 - Magic Card driver: Added technical notes and moved the PCB layouts to the ROM load zone for consistency [Roberto Fresca].
-
-New Clones Marked as NOT_WORKING
---------------------------------
-Magic Card Export 94 (set 2) [Ioannis Bampoulas, Roberto Fresca]
-
-New Clones Marked as NOT_WORKING
---------------------------------
-Magic Card Export 94 (v2.9a) [Ioannis Bampoulas, Roberto Fresca]
-
-New Clones Marked as NOT_WORKING
---------------------------------
-Magic Card Export (v4.01) [Ioannis Bampoulas, Roberto Fresca]
 
 - Removed unwelcome fixes [Robbbert].
 
@@ -433,14 +414,6 @@ Magic Card Export (v4.01) [Ioannis Bampoulas, Roberto Fresca]
   * SS88006 boards: Also streamlined everything into common base class. Parameterized common code patterns. Added WRAM enable bits.
   * Nes.xml: Corrected ROM sizes of undumped uPD775xC chips.
 
-New Machines Marked as NOT_WORKING
-----------------------------------
-Pong Boo! 2 [buffi]
-
-New Working Clones
-------------------
-Thunder Dragon (bootleg with Raiden sounds, unencrypted) [f205v]
-
 - vigilant.cpp: Fixed sound in bowmen by allowing it to see the area of ROM with music data (#9642) [David Haywood]
 
 - spcpokan: fix out-of-bounds access on POST VROM test. (MT #8307) [R. Belmont]
@@ -453,10 +426,6 @@ Thunder Dragon (bootleg with Raiden sounds, unencrypted) [f205v]
   * I2C slaves should only ACK their own device-id and NAK all others.
   * SDA output should only change state while clock is low.
   * Idle state of SDA must be high.
-
-New Working Clones
-------------------
-Knights of Valour 2 / Sanguo Zhan Ji 2 / Sangoku Senki 2 (ver. 102, 102, 100HK) [buffi]
 
 - Micscellaneous cleanup/fixes [Vas Crabb]:
   * Machine/z80scc.cpp: Fixed a cast-to-bool that broke detection of changes to one register bit.
@@ -498,19 +467,7 @@ Knights of Valour 2 / Sanguo Zhan Ji 2 / Sangoku Senki 2 (ver. 102, 102, 100HK) 
 
 - wildfire: remove unused base class since there's only 1 game [hap]
 
-- rename hh_amis2k driver to wildfire [hap]
-
-New Working Clones
-------------------
-Batsugun (bootleg) [buffi]
-
-New Clones Marked as NOT_WORKING
---------------------------------
-PR-100 Digital Sequencer (v2.01) [Foone Turing]
-
-New Working Clones
-------------------
-Moon Cresta (Electrogame S.A. Spanish bootleg, set 2) [Victor Fernandez (City Game), ClawGrip]
+- Rename (hh_amis2k.cpp) driver to (wildfire.cpp) [hap].
 
 - Fixed SUBTARGET=nl build (#9662) [Couriersud]
 
@@ -527,22 +484,12 @@ Moon Cresta (Electrogame S.A. Spanish bootleg, set 2) [Victor Fernandez (City Ga
 
 - megatech: fix crash in service mode [hap]
 
-New Working Machines
-- -------------------
-Scrabble Lexor - Computer Word Game [hap, Sean Riddle]
-
 - ksys573.cpp: Removed DDR Kids from file header comment (#9671) [simzy39]
   * This game dumped and runs on Konami GSAN1 hardware.
 
 - system1.cpp: Identified DIP swithces for shtngmst and ufosensi (#9668) [kmg]
   * Shtngmst: Labelled lives and demo sounds DIP switches.
   * Ufosensi: Labelled demo sounds DIP switch (MT08303).
-
-New Machines Marked as NOT_WORKING
-----------------------------------
-Neo Print - Popeye (Japan) (T4i 3.04) [buffi]
-Neo Print - European Version (World) (T4i 2.00) [buffi]
-Rally Point 2 [coolmod]
 
 - toaplan2.cpp: added a note about a different ROM configuration found for sstrikerk [buffi]
 
@@ -561,31 +508,9 @@ Rally Point 2 [coolmod]
 
 - gbcolor.xml: Added one dump (#9681) [kmg]
 
-New Working Software List Additions
------------------------------------
-Tyrannosaurus Tex (USA) [NoIntro]
-
 - gba.xml: Added one dump (#9680) [kmg]
 
-New Working Software List Additions
------------------------------------
-World Reborn (USA) [NoIntro]
-
 - nes.xml: Added eleven dumps. Removed some baddump flags (#9679) [kmg]
-
-New Working Software List Additions
------------------------------------
-Baby Boomer (Korea) [MLX]
-Exploding Fist (USA) [anonymous]
-Get'em Gary [anonymous]
-More Glider [anonymous]
-Multidude [RetroSouls]
-Nomolos - Storming the Catsle (v1.00) [anonymous]
-Quest Forge - By Order of Kings [anonymous]
-Super Painter [RetroSouls]
-Tújí (Taiwan) [kazblox]
-Uninvited (USA, prototype) [Forest of Illusion, Clarkzer0]
-Wùk?ng Dòujù (China) [anonymous]
 
 - Prefer the X11 SDL video driver on Linux (#9676) [Julian Sikorski]
 
@@ -610,18 +535,9 @@ Wùk?ng Dòujù (China) [anonymous]
 
 - mb88xx: mask RAM r/w and read_r to 4-bit [hap]
 
-New Working Machines
-- -------------------
-Hot Chilli (95103, v0104) [Roberto Fresca, Grull Osgo, Matt B]
-
-- i8214: Back out previous changes to device emulation in e38360692285e7fa0e0574b8b00585536b696949 except as a system-specific hack
- [AJR]
+- i8214: Back out previous changes to device emulation in e38360692285e7fa0e0574b8b00585536b696949 except as a system-specific hack [AJR]
 
 - megadriv.xml: Added an Awesome Possum prototype (#9677) [kmg]
-
-New working software list additions (megadriv.xml)
-- -------------------------------------------------
-Awesome Possum Kicks Dr. Machino's Butt! (USA, prototype, 19930712) [DrBizz]
 
 - neogeo.xml: Fixed wh2h serial (#9683) [Abadede]
 
@@ -652,16 +568,7 @@ Awesome Possum Kicks Dr. Machino's Butt! (USA, prototype, 19930712) [DrBizz]
   * Use better error messages in pfunction.
   * Made member functions static where appropriate in nld_solver.
 
-New Working Clones
-------------------
-Batsugun (older, set 2) [buffi]
-Dogyuun (oldest set) [buffi]
-
 - pacland.cpp: used finders and other small cleanups [Ivan Vangelista]
-
-New Working Clones
-------------------
-Kasparov Corona (ver. C, set 1) [anonymous]
 
 - megadriv.xml: Added missing SRAM to nbaliv98 (MT07564) (#9701) [kmg]
 
@@ -695,52 +602,6 @@ Kasparov Corona (ver. C, set 1) [anonymous]
 
 - pc98_cd.xml: 19 new dumps, 18 replacements (#9715) [r09]
 
-New Working Software List Additions
------------------------------------
-Brandish 2 Renewal [redump.org]
-Canaan - Yakusoku no Chi [redump.org]
-Doom II for Windows 95 [redump.org]
-Ningen Konchuu - Nozoki [redump.org]
-Shin'ou Densetsu Crystania DX [redump.org]
-Uki Uki Island [redump.org]
-X Girl [redump.org, cyo.the.vile]
-
-New not working software list additions
-- --------------------------------------
-Ayumi-chan Monogatari [redump.org]
-Collector D [redump.org, cyo.the.vile]
-Etemible - Tenjou Mukyuu [redump.org, Coolmod]
-Ginga Eiyuu Densetsu IV [redump.org]
-Master of Magic [redump.org]
-NEC Demonstration CD-ROM - Evolution and Dinosaurs [redump.org]
-Prince of Persia 2 - The Shadow & The Flame [redump.org]
-Sorcer Kingdom [redump.org]
-Strike Commander [redump.org]
-Teitoku no Ketsudan III [redump.org]
-Ultima VIII - Pagan [redump.org]
-Yumemizaka [redump.org]
-
-Replaced software list items
-- ---------------------------
-Akumu - Aoi Kajitsu no Sanka [redump.org]
-Appare-den - Fukuryuu no Shou [redump.org, Coolmod]
-Ayumi-chan Monogatari Jissha-ban [redump.org]
-Brandish Campaign-ban [redump.org]
-Brandish 2 - The Planet Buster - Campaign-ban [redump.org]
-Brandish 3 - Spirit of Balcan - Campaign-ban [redump.org]
-Buzz Aldrin's Race into Space - Uchuu e no Chousen [redump.org]
-CRW 2 [redump.org]
-Dawn Patrol - Yoake no Pilot [redump.org]
-Guardian Recall - Shugojuu Shoukan [redump.org, cyo.the.vile]
-Mahou Shoujo Pretty Samy - Kouhen [redump.org]
-Manji PSYyuuki [redump.org, r09]
-Magical Squadron [redump.org]
-RAM 1 - New Evolution Organize [redump.org]
-Ribbon [redump.org]
-Ryouki no Ori (1996-09-23) [redump.org]
-Sangokushi V [redump.org]
-Zai Metajo [redump.org]
-
 - ksys573.cpp: Notes/typos + note changes for DDR Karaoke (#9710) [simzy39]
   * The bottom of the driver says '"Dance Dance Revolution Karaoke Mix (GQ921 VER. JBB)"' which is hard to deduce as being 'DAM-DDR
     Dance Dance Revolution for DAM' at the top of the driver. As such, I've changed it to: "Dance Dance Revolution Karaoke MIX
@@ -752,10 +613,6 @@ Zai Metajo [redump.org]
     'K' and have changed Kick and Kick's letter, which was a K, to AA since it's a similar board to the A. A: uses ext. analog I/O
     board GX700-PWB(F) AA: uses alt. ext. analog I/O board GX700-PWB(K) K: uses karaoke I/O board GX921-PWB(B)
   * 'DDR max' and 'DDR max 2' to 'DDRMAX' and 'DDRMAX2'
-
-New Working Machines
-- -------------------
-Mahjong The Mysterious Orient Returns [BET] (Japan, v1.00) [buffi]
 
 - Fixed 2 compile errors [Robbbert].
 
@@ -808,38 +665,10 @@ Mahjong The Mysterious Orient Returns [BET] (Japan, v1.00) [buffi]
 
 - RC2014 (#9716) [Miodrag Milanovi?]
 
-New Working Machines
-- -------------------
-RC2014 Classic [Miodrag Milanović]
-RC2014 Pro [Miodrag Milanović]
-RC2014 Classic II [Miodrag Milanović]
-RC2014 Zed [Miodrag Milanović]
-RC2014 Zed Pro [Miodrag Milanović]
-
 - a2600.xml: Remove "Atari VCS Point-of-Purchase ROM" (nw) (#9734) [eientei95]
   * This has its own driver in a2600.cpp
 
-New Working Clones
-------------------
-Space Invaders' gambling game (unencrypted) [Jorge Silva]
-
 - c64_cass.xml: Added 10 items (8 working, 2 not working) (#9737) [Steven Coomber]
-
-New Working Software List Additions
------------------------------------
-Salamander (Imagine) [C64 Ultimate Tape Archive V2.0]
-Sanxion (Thalamus) [C64 Ultimate Tape Archive V2.0]
-Savage (Firebird) [C64 Ultimate Tape Archive V2.0]
-Scorpion (Prism Leisure) [C64 Ultimate Tape Archive V2.0]
-The Secret Diary of Adrian Mole (Mosaic Publishing) [C64 Ultimate Tape Archive V2.0]
-Sentinel (U.S. Gold) [C64 Ultimate Tape Archive V2.0]
-The Sentinel (Firebird) [C64 Ultimate Tape Archive V2.0]
-Shadow Skimmer (The Edge) [C64 Ultimate Tape Archive V2.0]
-
-New NOT_WORKING Software List Additions
----------------------------------------
-Scooby-Doo (Elite Systems) [C64 Ultimate Tape Archive V2.0]
-Shadows of Mordor (Melbourne House) [C64 Ultimate Tape Archive V2.0]
 
 - Add debugger time command to docs (#9735) [tedgreen99]
 
@@ -847,31 +676,12 @@ Shadows of Mordor (Melbourne House) [C64 Ultimate Tape Archive V2.0]
 
 - gameboy.xml: Added four homebrew entries (#9705) [kmg]
 
-New working software list additions (gameboy.xml)
-- ------------------------------------------------
-Dangan GB [snorpung, nordloef]
-Death Planet [Mackerel Interactive]
-Into the Blue [Jonas Fischbach]
-Retroid [Jonas Fischbach]
-
 - netlist: Fixed standalone nltool building with nvcc (#9731) [Couriersud]
   * Nvcc 11.3 (latest cuda tools) has an issue with some auto x(some variable) declarations.
 
 - Vigilante correct video timings (#9740) [Jose Tejada]
 
 - spectrum_cass.xml: 9 new entries + metadata cleaning (#9723) [ArcadeShadow]
-
-New working software list additions (spectrum_cass.xml)
-- ------------------------------------------------------
-Bomb Jack (Z Cobra) [worldofspectrum.org]
-Bomb Jack II (MCM) [worldofspectrum.org]
-Bomb Jack II (Zafi Chip) [worldofspectrum.org]
-Chess Nuts [Steven Brown, Planeta Sinclair]
-Coin-It [Steven Brown, Planeta Sinclair]
-Exolon (bug fix) [spectrumcomputing.co.uk]
-Exolon (Erbe) [spectrumcomputing.co.uk]
-Horacio Esquiador [spectrumcomputing.co.uk]
-Smash TV (Erbe) [spectrumcomputing.co.uk]
 
 - megadriv.xml: Trimmed pcottonp dump by half (#9719) [kmg]
 
@@ -937,10 +747,6 @@ Smash TV (Erbe) [spectrumcomputing.co.uk]
 
 - atari400.cpp: Added 2-port version of a5200, and fixed ANTIC memory size (#9730) [eientei95]
 
-New Working Clones
-------------------
-Atari 5200 (2-port) [eientei95]
-
 - zx spectrum drivers: Restore irq length == 32 / border timings (#9711) [holub]
 
 - Additions and changes to Spectrum-related softlists (#9728) [ICEknigh7]
@@ -951,10 +757,6 @@ Atari 5200 (2-port) [eientei95]
      * Specpls3.xml:
    - Verified that Spectrum disk version of Comando Tracer is the standalone release.
    - Updated notes.
-
-New working software list additions (timex_cass.xml)
-- ---------------------------------------------------
-Byte Power (February 1988) [ICEknigh7]
 
 - cpu/mips/r4000.cpp: Added TimerIntDis mux to IPEX5 (#9718) [Brice Onken]
 
@@ -975,10 +777,6 @@ Byte Power (February 1988) [ICEknigh7]
       original drivers left.
 
 - intelfsh.cpp:  Keep spacing consistent to all other devices [Scott Stone]
-
-New Working Machines
-- -------------------
-Cops Pocket Assistant [hap, Sean Riddle]
 
 - dpb_combiner.cpp:  Deleted left over file per Ryan Holtz [Scott Stone]
 
@@ -1005,20 +803,7 @@ Cops Pocket Assistant [hap, Sean Riddle]
 
 - acorn_dsk: Adjusted returned FFID's to indicate verified internal structure [Nigel Barnes].
 
-New Working Software List Additions
------------------------------------
-bbc_rom: Integra-B OS 1.14, Integra-B OS 1.20, Integra-B OS 1.20 (Y2K patched), Memex-B20 2.2, VidiEditor 1.2, PipeDream 0.2,
-  Chuckie Egg (unofficial ROM), Frak! (unofficial ROM), Killer Gorilla (unofficial ROM) [Nigel Barnes]
-
-Software List Items Promoted to Working
----------------------------------------
-bbc_rom: SideAid128 1.03 [Nigel Barnes]
-
 - RC2014 (#9759) [Miodrag Milanovi?]
-
-New Working Clones
-------------------
-RC2014 Mini with CP/M Upgrade [Miodrag Milanović]
 
 - rc2014: added RTC, IDE, FDC and Sound module, fix memory and i/o mapping, proper flash mapping [Miodrag Milanovi?]
 
@@ -1038,16 +823,6 @@ RC2014 Mini with CP/M Upgrade [Miodrag Milanović]
 - nemesis.cpp: Fixed coin inputs in salamand and clones (MT08315) (#9766) [kmg]
 
 - snes.xml: Added seven dumps (#9763) [kmg]
-
-New Working Software List Additions
------------------------------------
-Corn Buster [NoIntro]
-Dorke & Ymp [NoIntro]
-Iron Commando [NoIntro]
-Legend (Piko reissue) [NoIntro]
-Mr. Bloopy Saves the World [NoIntro]
-Super Noah's Ark 3D (Piko reissue) [NoIntro]
-Super Thor Quest [NoIntro]
 
 - goldstar.cpp: decrypted cb3c, needs correct address map [Ivan Vangelista]
 
@@ -1089,10 +864,6 @@ Super Thor Quest [NoIntro]
 
 - cdi.xml: Added one new entry (#9771) [David 'Foxhack' Silva]
 
-New Working Software List Additions
------------------------------------
-The Photo CD Book Companion CD-ROM [Dave 'Foxhack' Silva]
-
 - jpmsru.cpp: added missing newline, removed some surplus tabs [Robbbert]
 
 - slap fight: Correct placement [Olivier Galibert]
@@ -1132,24 +903,9 @@ The Photo CD Book Companion CD-ROM [Dave 'Foxhack' Silva]
 
 - fix for building with clang 14 as asmjit uses | & operators on bools [smf]
 
-Clones Promoted to Working
---------------------------
-Skelagon [smf]
-
 - mtx.cpp: New expansion devices CFX System and MAGROM [Nigel Barnes].
   * Added Reset keys and joystick ports.
   * Re-implemented cartridge slot as external ROMPAK device.
-
-New Working Software List Additions
------------------------------------
-mtx_cart: MAGROM v1.00, MAGROM v1.02, MAGROM v1.03(SP), MAGROM v1.04, MAGROM v1.05, MAGROM v1.05a, MAGROM v2.00 [Martin Allcorn]
-mtx_hdd [Nigel Barnes]:
-CP/M 54K, CP/M 59K, Hex-Train [Andy Key]
-Fuzix OS [Alan Cox]
-
-New Clones Marked as NOT_WORKING
---------------------------------
-Z-180 Series [Colin McDougall]
 
 - snowbros.cpp: corrected title for honeydol [Brian Troha]
 
@@ -1172,10 +928,6 @@ Z-180 Series [Colin McDougall]
   * Use array finders for HD6301 keyboard and joystick ports
   * Swap players for joystick and button inputs (needed for mouse to work)
   * Remove shifter mode 1 kludge that seems to hurt more than help
-
-New Clones Marked as NOT_WORKING
---------------------------------
-The House of the Dead (Revision A) [egregiousguy]
 
 - seta.cpp: added hardware info for Caliber 50 [Guru]
 
@@ -1221,17 +973,7 @@ The House of the Dead (Revision A) [egregiousguy]
 
 - gbcolor.xml: Added Green Beret prototypes developed by Kak (#9754) [ICEknigh7]
 
-New working software list additions (gbcolor)
-- --------------------------------------------
-Green Beret (prototype 1) [Kak, retroLEL]
-Green Beret (prototype 2) [Kak, retroLEL]
-Green Beret (prototype 3) [Kak, retroLEL]
-
 - atarist.cpp: fixed compile on GCC 11.3.0 [Ivan Vangelista]
-
-Clones Promoted to Working
---------------------------
-Multi Win (Ver.0091, encrypted) [Ivan Vangelista]
 
 - funworld.cpp: used the decryption PROM in other set where available, too (megacard, powercrd) [Ivan Vangelista]
 
@@ -1265,8 +1007,7 @@ Multi Win (Ver.0091, encrypted) [Ivan Vangelista]
 
 - bus/acorn/cms/4080term: Use raw screen params [Nigel Barnes].
 
-- netlist/plib: Fixed detection of clang versions with noexcept issue, added feature constants for C++ standard library version
- [Vas Crabb].
+- netlist/plib: Fixed detection of clang versions with noexcept issue, added feature constants for C++ standard library version [Vas Crabb].
 
 - machine/7474.cpp: Fixed use of uninitialised members [Vas Crabb].
 
@@ -1294,24 +1035,15 @@ Multi Win (Ver.0091, encrypted) [Ivan Vangelista]
   * Fixed more file permissions
   * Srcclean and add fix_permissions target to netlist makefile
 
-- gamegear.xml: Added ROM patch to brkthru playable (#9792) [kmg]
-
-- Corrected various Wonder Boy title descriptions (MT08321) (#9798) [kmg]
-
-- Removed superfluous semicolons from various source files (#9796) [kmg]
-
-- fmtowns_cd.xml: 7 new dumps (#9786) [r09]
-
-- megadriv.xml: Added eight dumps (#9785) [kmg]
-
-- srcclean in preparation for release [Vas Crabb]
-
-- change spectrum 128 code to match comment [smf]
-
-- Spectrum +2/+3 contended memory is different to Spectrum 128k [smf]
-
-- bus/iee488/hp9122c.cpp: Added default MFM floppy image formats, (#9811) [r09]:
-  * This allows HP 9000/3xx machines to actually use floppy images from the software list.
+- gamegear.xml: Added ROM patch to brkthru playable (#9792) [kmg].
+- Corrected various Wonder Boy title descriptions (MT08321) (#9798) [kmg].
+- Removed superfluous semicolons from various source files (#9796) [kmg].
+- fmtowns_cd.xml: 7 new dumps (#9786) [r09].
+- megadriv.xml: Added eight dumps (#9785) [kmg].
+- srcclean in preparation for release [Vas Crabb].
+- Change spectrum 128 code to match comment [smf].
+- Spectrum +2/+3 contended memory is different to Spectrum 128k [smf].
+- bus/iee488/hp9122c.cpp: Added default MFM floppy image formats, (#9811). This allows HP 9000/3xx machines to actually use floppy images from the software list [r09].
 - clcd.cpp: Use 1 MHz for system clock (#9797) [Mike Naberezny].
 - specpls3.cpp: Formatting consistency [Vas Crabb].
 - bgfx: Honour texture wrap flag (#9812) [Vas Crabb].
@@ -1319,3 +1051,4 @@ Multi Win (Ver.0091, encrypted) [Ivan Vangelista]
 - z80: bug fix for 16-bit operands [Patrick Mackinlay].
 - pc98_cd.xml: Marked Master of Magic as unsupported due to issues with 256 colour mode [Vas Crabb].
 - ui/ui.cpp: Use unordered map for session data, to tempt fate with toolchain bugs [Vas Crabb].
+- Bump MAME 0.244 [Vas Crabb].

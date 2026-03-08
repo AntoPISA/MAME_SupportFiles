@@ -1,9 +1,9 @@
 ﻿0.250 2022/11/29 [#689 - Vas Crabb]
-- ----------------------------------
+------------------------------------
 
 
 MAME Testers Bugs Fixed
-- ----------------------
+------------------------
 - 06793: [Graphics] (atari/jedi.cpp) jedi: Death Star graphics disappear and reappear a few times before it explodes (dink).
 - 06828: [Crash/Freeze] All sets in cv1k.cpp, coolridr: Emulator crashes if OSDPROCESSORS is set to 1 (CasualPokePlayer).
 - 06829: [Misc.] (atari/atarisy2.cpp) 720 and clones: Invalid accesses beyond the end of EEPROM data (hap).
@@ -46,7 +46,7 @@ MAME Testers Bugs Fixed
 
 
 New working machines
-- -------------------
+---------------------
 Castlevania II: Simon's Quest (Tiger) [algestam, Sean Riddle]
 Elanco AgVision [Tim Lindner]
 Gargoyles: Night Flight (Tiger) [hap, Sean Riddle]
@@ -73,7 +73,7 @@ Victor HC-80 (MSX2, Japan) [openMSX]
 Yamaha SX-100 (MSX1, Japan) [openMSX]
 
 New working clones
-- -----------------
+-------------------
 Alpine Surfer (World, AF2 Ver.A, set 2) [Guru]
 Bloxeed (Japan, earlier) (FD1094 317-0139) [Brian Troha, The Dumping Union]
 Championship Bowling (location test) [coolmod, The Dumping Union]
@@ -128,7 +128,7 @@ Yamaha CX5MIIB (MSX1, Italy) [openMSX]
 Yamaha CX7/128 (MSX2, Japan) [openMSX]
 
 Machines promoted to working
-- ---------------------------
+-----------------------------
 Alpine Surfer (World, AF2 Ver.A, set 1) [hap, Guru]
 Bawareth Perfect MSX1 (MSX1, Middle East) [Wilbert Pol]
 Daewoo Zemmix CPG-120 Normal (MSX2, Korea) [Wilbert Pol]
@@ -142,7 +142,7 @@ Toshiba HX-22 (MSX1, Japan) [Wilbert Pol]
 Tandy Radio Shack Videotex [Tim Lindner]
 
 Clones promoted to working
-- -------------------------
+---------------------------
 The Crystal Maze (v1.3, Datapak) (MPU4 Video) [James Wallace]
 The Crystal Maze Team Challenge (v0.9, Datapak) (MPU4 Video) [James Wallace]
 The New Crystal Maze Featuring Ocean Zone (v2.2, Datapak) (MPU4 Video) [James Wallace]
@@ -156,7 +156,7 @@ Sony HB-F1II (MSX2, Japan) [Wilbert Pol]
 Sony HB-F9P (MSX2, Russian, prototype) [Wilbert Pol]
 
 New machines marked as NOT_WORKING
-- ---------------------------------
+-----------------------------------
 Bin Bin Bingo (Japan, terminal) [hammy, Porchy, nnap]
 El Circulo [jordigahan, Pikolo, ArcadeHacker, ClawGrip]
 Fantastic Car (M89 hardware) [Eduardo Anay]
@@ -173,7 +173,7 @@ Yamaha DX9 Digital Programmable Algorithm Synthesizer [Anthony]
 Yamaha PSS-12 [Edward d-tech]
 
 New clones marked as NOT_WORKING
-- -------------------------------
+---------------------------------
 Cherry Master (bootleg, Game FB55 Ver.2) [Ioannis Bampoulas]
 Fantastic Car (Micro-87 hardware) [Eduardo Anay]
 Netchuu Pro Yakyuu 2002 (NPY1 Ver. C) [Mickysmoke, rtw]
@@ -222,7 +222,7 @@ Teraburst (1998/07/17 ver HEL) [Windy Fairy]
 Teraburst (1998/07/17 ver JEL) [Windy Fairy]
 
 New working software list additions
-- ----------------------------------
+------------------------------------
 a2600:
   Shootin' Gallery (PAL, prototype) [Buckaroo]
   Turbo (NTSC, prototype) [Rom Hunter]
@@ -265,20 +265,20 @@ spectrum_cass:
 videopac: Bastion (Europe, prototype), Himalaya (Europe, prototype), Terrahawks (Europe, prototype) [Janzl]
 
 Software list items promoted to working
-- --------------------------------------
+----------------------------------------
 a800:
   Satan's Hollow (Unreleased) [AJR]
   Alf in the Color Caves [Angelo Salese]
 gbcolor: Shùm? Bào Lóng 02 4 (China), Shùm? Bào Lóng 3 Shu?j?ng B?n (China) [Vas Crabb]
 
 New NOT_WORKING software list additions
-- --------------------------------------
+----------------------------------------
 msx1_cart: FD-03 Controller + 3.5" DSDD floppy drive v3.5, FD-03 Controller + 3.5" DSDD floppy drive v3.8 [openMSX]
 n64: SimCopter 64 (prototype 19970616) [VGHF]
 
 
 Translations added or modified
-- -----------------------------
+-------------------------------
 Czech [Milan Galcik]
 Greek [BraiNKilleRGR]
 Portuguese (Brazil) [Felipe]
@@ -286,7 +286,7 @@ Slovak [Milan Galcik]
 
 
 Merged pull requests
-- -------------------
+---------------------
 - 10423: sega/model2.cpp, hash/saturn.xml: Improved descriptions for Japanese Last Bronx games [Michael Sanborn].
 - 10426: barcrest/mpu4.cpp: Added IC4 port B shadowing of serial and 50Hz signals [James Wallace].
 - 10427: Dumped and added three more games on Unidesa/Cirsa “960606-5” boards [jordigahan, Recreativas.org, ClawGrip].
@@ -380,12 +380,12 @@ Merged pull requests
 
 
 Source changes:
-- --------------
+----------------
 - Terra Cresta and later Nichibutsu games: Emulate the analog filtering for the audio from the FM chip and the two R2R DAC channels,
  as well as emulating the additional analog filtering and mixing on the YM2203 version of Terra Cresta [Lord Nightmare].
 
 New working machines
-- -------------------
+---------------------
 Space Cruiser [hap, Sean Riddle]
 
 - cxhumax.cpp, psxcd.cpp: Modernize logging calls [AJR]
@@ -398,7 +398,7 @@ Space Cruiser [hap, Sean Riddle]
     Model I emulation.
 
 New machines marked as NOT_WORKING
-- ---------------------------------
+-----------------------------------
 Omron Luna 88K² [Plamen Mihaylov]
 
 - handheld/hh_tms1k.cpp: Fix validation error (#10470) [kmg]
@@ -414,7 +414,7 @@ Omron Luna 88K² [Plamen Mihaylov]
 - timer device: rename getter functions to match emu_timer [hap]
 
 New working clones
-- -----------------
+-------------------
 New Cross Pang (set 2) [Jorge Silva]
 
 - emu_timer adjust(): set enable flag to false if timer isn't running [hap]
@@ -454,7 +454,7 @@ New Cross Pang (set 2) [Jorge Silva]
 - balsente.cpp: fix grudgep input port import (#10475) [David Haywood]
 
 New working clones
-- -----------------
+-------------------
 Twins (older) [Jorge Silva]
 
 - machine/mos6530n.cpp: Removed old, unused io_r/io_w functions (#10477) [kmg]
@@ -474,7 +474,7 @@ Twins (older) [Jorge Silva]
   * This (mostly) reverts commit 2923923df706950ab0b04b3d00dfc66f2c6c2653.
 
 New machines marked as NOT_WORKING
-- ---------------------------------
+-----------------------------------
 unknown Sega air hockey game [Darksoft, Team Europe]
 
 - mtu130.cpp: enable additional reset vector, fixes protection failures [Peter Ferrie]
@@ -495,7 +495,7 @@ unknown Sega air hockey game [Darksoft, Team Europe]
  to be more based on component values [Lord Nightmare].
 
 New clones marked as NOT_WORKING
-- -------------------------------
+---------------------------------
 Cherry Master (bootleg, Game FB55 Ver.2) [Ioannis Bampoulas]
 
 - midway/balsente.cpp: fixed ROM names and documents label format for various sets [Brian Troha]
@@ -518,7 +518,7 @@ Cherry Master (bootleg, Game FB55 Ver.2) [Ioannis Bampoulas]
 - irem/m90.cpp: fixed MT08413 [Ivan Vangelista]
 
 New working clones
-- -----------------
+-------------------
 Trivia (Questions Series 18) [Brian Troha, The Dumping Union]
 
 - nintendo/snesb.cpp: combined bad dumps of one of the legendbs ROMs to have a working one, until another PCB can be found
@@ -571,7 +571,7 @@ Trivia (Questions Series 18) [Brian Troha, The Dumping Union]
   * Added known issues list to the driver's comment block.
 
 New working clones
-- -----------------
+-------------------
 Championship Bowling (location test) [CoolMod, The Dumping Union]
 
 - vcs_ctrl/joybooster.cpp: Correct device name; add notes [AJR]
@@ -606,23 +606,23 @@ Championship Bowling (location test) [CoolMod, The Dumping Union]
 - cpu/ks0164: Fix mistake in 678036dcd45187d6adde3087280fc2937e43c4ea [AJR]
 
 New working clones
-- -----------------
+-------------------
 The Simpsons (4 Players World, set 3) [Jorge Silva]
 
 - battlane: fix cocktail mode [dink]
 
 New working machines
-- -------------------
+---------------------
 Teammate Game Computer [hap, Michael Kamprath, Sean Riddle]
 
 New clones marked as NOT_WORKING
-- -------------------------------
+---------------------------------
 Super Real Magic (V6.3) [Ioannis Bampoulas]
 
 - gamecom.xml: Added a prototype (#10493) [kmg]
 
 New working software list additions (gamecom.xml)
-- ------------------------------------------------
+--------------------------------------------------
 Castlevania - Symphony of the Night (prototype) [anonymous, diskman.com, Hidden Palace]
 
 - osd/eigccx86.h: Added optimised rotate helpers [Vas Crabb].
@@ -638,11 +638,11 @@ Castlevania - Symphony of the Night (prototype) [anonymous, diskman.com, Hidden 
 - dataeast/stadhero.cpp, dataeast/tryout.cpp: consolidated drivers in a single file [Ivan Vangelista]
 
 New working machine added (#10503)
-- ---------------------------------
+-----------------------------------
 Mega Man 3 (Tiger handheld) [algestam, Sean Riddle]
 
 new NOT_WORKING clone
-- --------------------
+----------------------
 Ibara (2005/03/22 MASTER VER.., '06. 3. 7 ver.) [alamone]
 
 - naomi.cpp: added Dev BIOS v1.2 [MetalliC, rtw, zozo]
@@ -688,7 +688,7 @@ Ibara (2005/03/22 MASTER VER.., '06. 3. 7 ver.) [alamone]
 - taito/qix.h: zero-filled variables [Ivan Vangelista]
 
 New working clones
-- -----------------
+-------------------
 Mini Golf (11/25/85) [Kevin Eshbach, The Dumping Union]
 
 - Balsente.cpp updates: [Kevin Eshbach, Brian Troha, The Dumping Union]
@@ -720,7 +720,7 @@ Mini Golf (11/25/85) [Kevin Eshbach, The Dumping Union]
 - spectrum_cass.xml: New working software list additions (#10490) [ArcadeShadow]
 
 New working software list additions
-- ----------------------------------
+------------------------------------
 Action Pack - Lightgun Games (compilation) [spectrumcomputing.co.uk]
 Action Pack - Lightgun Games (compilation, alt) [spectrumcomputing.co.uk]
 Action Pack - Lightgun Games (compilation, Spanish) [spectrumcomputing.co.uk]
@@ -817,7 +817,7 @@ Agent X [spectrumcomputing.co.uk]
   * Moved floppy controller and drive configuration from main state to msx_slot disk devices.
 
 New working machines
-- -------------------
+---------------------
 Hitachi MB-H1 (MSX1, Japan) [wilbertpol]
 Mitsubishi ML-8000 (MSX1, Japan) [wilbertpol]
 Panasonic CF-2700 (MSX1, UK) [wilbertpol]
@@ -834,7 +834,7 @@ Yamaha SX-100 (MSX1, Japan) [wilbertpol]
 Victor HC-80 (MSX2, Japan) [wilbertpol]
 
 New working clones
-- -----------------
+-------------------
 Frael Bruc 100-2 (MSX1, Italy) [wilbertpol]
 Hitachi MB-H1E (MSX1, Japan) [wilbertpol]
 Philips NMS 8250/16 (MSX2, Spain) [wilbertpol]
@@ -852,7 +852,7 @@ Toshiba HX-20E (MSX1, Spain) [wilbertpol]
 - gbcolor.xml: Added five Sintax games [Vas Crabb]
 
 New working software list items (gbcolor.xml)
-- --------------------------------------------
+----------------------------------------------
 Ch?ojí Y?nsù Xi?ozi ? - Super Sonik (China) [max6464646464, taizou]
 Fantastic Simulated Battle (China) [BigFred, taizou]
 Matel Gear II (China) [NewRisingSun, taizou]
@@ -863,7 +863,7 @@ Shéngu? Dìguó zh? Èmó Chéng (China) [AprkMk10, taizou]
  files [Ivan Vangelista]
 
 New working clones
-- -----------------
+-------------------
 Deroon DeroDero (earlier, set 2) [Fabrice Arzeno]
 
 - 32x.xml: Metadata cleanings (#10526) [ArcadeShadow]
@@ -872,33 +872,33 @@ Deroon DeroDero (earlier, set 2) [Fabrice Arzeno]
 - machine/intelfsh.cpp: Retire variant enum; add TC58FVT800 type [AJR]
 
 New working clones
-- -----------------
+-------------------
 Domino Man (set 2) [ArcadeDoc524]
 
 New working clones
-- -----------------
+-------------------
 Punching Kid (Japan) [RepArcade]
 
 New working clones
-- -----------------
+-------------------
 Galactica-2 (Moon Alien Part 2 bootleg) [gryeti]
 
 New working clones
-- -----------------
+-------------------
 Bin Bin Bingo (Japan, terminal) [Hammy, Porchy, Nnap]
 
 - Dumped and added three more games on Unidesa/Cirsa "960606-5" hardware (#10427) [ClawGrip]
 
 New NOT_WORKING games
-- --------------------
+----------------------
 La Perla del Caribe (V1.0, Catalonia) [jordigahan, Recreativas.org]
 
 New NOT_WORKING clones
-- ---------------------
+-----------------------
 unknown 960606-5 based machine (set 2) [jordigahan, Recreativas.org]
 
 New NOT_WORKING machine
-- ----------------------
+------------------------
 Multi Points [jordigahan]
 
 - bus/gameboy: Added support for newer NT/Makon cartridges [Vas Crabb].
@@ -906,7 +906,7 @@ Multi Points [jordigahan]
   * Gbcolor.xml: Corrected titles for a few Chinese games.
 
 New working software items (gbcolor.xml)
-- ---------------------------------------
+-----------------------------------------
 Capcom Vs. SNK: Millennium Fight 2001 (China) [Pepper9801, taizou]
 Digimon 02 4 (China) [taizou]
 Digimon 2 (China) [Robyn A1200, taizou]
@@ -918,14 +918,14 @@ Pokémon: Mewtwo Strikes Back [taizou]
 Street Fighter Zero 4 (China) [taizou]
 
 Software items promoted to working (gbcolor.xml)
-- -----------------------------------------------
+-------------------------------------------------
 Shùm? Bào Lóng 02 4 (China) [Vas Crabb]
 Shùm? Bào Lóng 3 Shu?j?ng B?n (China) [Vas Crabb]
 
 - gbcolor.xml: Marked sfz4 as partially supported due to high-colour trick not displaying properly [Vas Crabb].
 
 New working clones
-- -----------------
+-------------------
 Gradius IV: Fukkatsu (ver JAC, 837a01) [alamone]
 
 - msx/msx2.cpp: Fixed ROM definitions for nms8245, y503iiir and y503iiire (#10531) [wilbertpol]
@@ -933,7 +933,7 @@ Gradius IV: Fukkatsu (ver JAC, 837a01) [alamone]
   * Removed duplicate ROM entries on y503iiir and y503iiire.
 
 New working software list additions
-- ----------------------------------
+------------------------------------
 videopac: Bastion (Europe, prototype), Himalaya (Europe, prototype), Terrahawks (Europe, prototype) [Janzl]
 
 - Remove reference to incorrect Yamaha TX81Z ROM image (#10530) [Anthony]
@@ -945,7 +945,7 @@ videopac: Bastion (Europe, prototype), Himalaya (Europe, prototype), Terrahawks 
 - bus/gameboy: Added comments about the "new" NT/Makon memory controller [Vas Crabb].
 
 New working software items (gbcolor)
-- -----------------------------------
+-------------------------------------
 Dragon Ball Z III 2002 Fighting [taizou]
 
 - namcos22: separate classes for some of the ss22 games [hap]
@@ -955,7 +955,7 @@ Dragon Ball Z III 2002 Fighting [taizou]
 - capcom/commando.cpp: consolidated driver in single file [Ivan Vangelista]
 
 New working clones
-- -----------------
+-------------------
 Super Invaders (Emag bootleg set 2) [Dillweed]
 
 - namcos22: add alpinesa prg ROM banking [hap]
@@ -979,7 +979,7 @@ Super Invaders (Emag bootleg set 2) [Dillweed]
 - tmegaman3: adjust svg border [hap]
 
 Machines promoted to working
-- ---------------------------
+-----------------------------
 Alpine Surfer (Rev. AF2 Ver.A, World) [hap]
 
 - tilemap.get_info_debug: don't access invalid gfxnum [hap]
@@ -989,7 +989,7 @@ Alpine Surfer (Rev. AF2 Ver.A, World) [hap]
     than starting in a glitchy state.
 
 New working software list items
-- ------------------------------
+--------------------------------
 Dragon Ball Z English [lana_chan_, taizou]
 
 - bus/gameboy: Added support for bootleg Telefang translations [Vas Crabb].
@@ -997,7 +997,7 @@ Dragon Ball Z English [lana_chan_, taizou]
     list.  Chinese and Spanish translations, and translations of Power Version (Pokémon Diamond) also exist.
 
 New working software list additions (gbcolor.xml)
-- ------------------------------------------------
+--------------------------------------------------
 Pokémon Jade Version [taizou]
 Pokémon Vision Jade [Sanqui, taizou]
 
@@ -1012,7 +1012,7 @@ Pokémon Vision Jade [Sanqui, taizou]
 - tilemap_t::draw_instance: remove problem with nullptr math [hap]
 
 New working clones
-- -----------------
+-------------------
 Gallop - Armed Police Unit (Japan, M84 hardware) [Corrado Tomaselli, The Dumping Union]
 
 - m72.cpp: Corrected ROM labels, added PCB locations to some sets & added PLDs to some sets
@@ -1029,7 +1029,7 @@ Gallop - Armed Police Unit (Japan, M84 hardware) [Corrado Tomaselli, The Dumping
 - bus/gameboy: Added support for Kong Feng and BBD cartridges [Vas Crabb].
 
 New working software list items (gbcolor.xml)
-- --------------------------------------------
+----------------------------------------------
 Digimon Adventure 2001 [lana_chan_, taizou]
 Digimon 6 Adventure 2002 [taizou]
 Garou: Mark of the Wolves 2001 [Vas Crabb]
@@ -1041,7 +1041,7 @@ Mùch?ng Wùy? 6 GB (China) [taizou]
 - gameboy.xml: Added a prototype (#10541) [kmg]
 
 New working software list additions
-- ----------------------------------
+------------------------------------
 gameboy.xml: Altered Space - A 3-D Alien Adventure (USA, prototype, 19910215) [SteelGeneral, Forest of Illusion]
 
 - msx easi_speech: remove workaround that's not needed anymore [hap]
@@ -1049,7 +1049,7 @@ gameboy.xml: Altered Space - A 3-D Alien Adventure (USA, prototype, 19910215) [S
 - teammate: grey backdrop in internal artwork [hap]
 
 New working clones
-- -----------------
+-------------------
 Alpine Surfer (World, AF2 Ver.A, set 2) [Guru]
 
 - ggm: more accurate addressmap [hap]
@@ -1082,7 +1082,7 @@ Alpine Surfer (World, AF2 Ver.A, set 2) [Guru]
   * Signed-off-by: Jiaxun Yang <jiaxun.yang@flygoat.com>
 
 New working clones
-- -----------------
+-------------------
 Pitapat Puzzle (set 2) [Jorge Silva]
 
 - irem/m72.cpp: Added more PLDs to various sets, added main board BPROMs to most sets
@@ -1102,14 +1102,14 @@ Pitapat Puzzle (set 2) [Jorge Silva]
 - n64.xml: Added an unreleased prototype (#10552) [kmg]
 
 New working software list additions
-- ----------------------------------
+------------------------------------
 SimCopter 64 (prototype 19970616) [VGHF]
 
 - e132xsfe.cpp: Fixed missing bit mask causing UBSAN warnings [Ryan Holtz] (#10550) [MooglyGuy]
   * Co-authored-by: Ryan Holtz <TheMogMiner>
 
 New working machine added (#10551)
-- ---------------------------------
+-----------------------------------
 Castlevania II: Simon's Quest (Tiger handheld) [algestam, Sean Riddle]
 
 - nes.xml: Added new working entry (#10545) [ICEknigh7]
@@ -1118,7 +1118,7 @@ Castlevania II: Simon's Quest (Tiger handheld) [algestam, Sean Riddle]
 - a7800.xml: Added 10 homebrew cartridges (#10518) [kmg]
 
 New working software list additions
-- ----------------------------------
+------------------------------------
 Armor Attack II [Robert Tuccitto]
 Bentley Bear's Crystal Quest (NTSC) [Robert Tuccitto]
 Crazy Otto (NTSC, Ms. Pac-Man hack) [Robert Tuccitto]
@@ -1170,7 +1170,7 @@ Worm! [GroovyBee]
 - galaxian/galaxian.cpp: fixed GFX ROM loading for galactica2 [Robbbert]
 
 New working clones
-- -----------------
+-------------------
 Soreike Kokology [SpinalFeyd]
 
 - unidasm: Add CDC 1700, Cyber 18, Sigma 2 and Xerox 530 disassemblers [AJR]
@@ -1178,7 +1178,7 @@ Soreike Kokology [SpinalFeyd]
 - a2600.xml: Added an unreleased prototype (#10558) [kmg]
 
 New working software list additions
-- ----------------------------------
+------------------------------------
 Turbo (NTSC, prototype) [Rom Hunter]
 
 - Update cpu.lua for 9bb87665baa2faf1edd6fd2ce67c5de28fa0459e [AJR]
@@ -1195,7 +1195,7 @@ Turbo (NTSC, prototype) [Rom Hunter]
   * Add two-argument sext function to debugger
 
 New working clones
-- -----------------
+-------------------
 Bloxeed (Japan, earlier) (FD1094 317-0139) [Brian Troha, The Dumping Union]
 
 - sigma2: Use util::sext in disassembler [AJR]
@@ -1204,7 +1204,7 @@ Bloxeed (Japan, earlier) (FD1094 317-0139) [Brian Troha, The Dumping Union]
   * Also Fixed AY8913 chip select routine that relied on the wrong PIA and improved save state support.
 
 Clones promoted to working
-- -------------------------
+---------------------------
 The Crystal Maze (v1.3, Datapak) (MPU4 Video) [James Wallace]
 The New Crystal Maze Featuring Ocean Zone (v2.2, Datapak) (MPU4 Video) [James Wallace]
 The Crystal Maze Team Challenge (v0.9, Datapak) (MPU4 Video) [James Wallace]
@@ -1235,17 +1235,17 @@ The Crystal Maze Team Challenge (v0.9, Datapak) (MPU4 Video) [James Wallace]
 - Added Elanco AgVision and fixed TRS VideoTex drivers (#10520) [tim lindner]
 
 New working machines
-- -------------------
+---------------------
 Elanco AgVision [tim lindner]
 
 Machines promoted to working
-- ---------------------------
+-----------------------------
 Tandy Radio Shack Videotex [tim lindner]
 
 - Another MESS build fix (#10565) [MASH]
 
 New working clones
-- -----------------
+-------------------
 Spelling ABC (Germany) [Sean Riddle]
 Letterlogic (France) [Sean Riddle]
 Letterlogic (Germany) [Sean Riddle]
@@ -1253,7 +1253,7 @@ Letterlogic (Germany) [Sean Riddle]
 - casio/ld50.cpp: identify unknown ICs & signals, add link to service manual (#10561) [Devin Acker]
 
 New working clones
-- -----------------
+-------------------
 Scud Hammer (ver 1.4) [SpinalFeyd]
 
 - namcos22: do cz_adjust/bri_adjust differently [hap]
@@ -1263,7 +1263,7 @@ Scud Hammer (ver 1.4) [SpinalFeyd]
 - new NOT_WORKING machine (#10568) [Devin Acker]
 
 new NOT_WORKING machine
-- ----------------------
+------------------------
 Yamaha PSS-12 [Edward d-tech]
 
 - yamaha/ympss12: srcclean [Devin Acker]
@@ -1277,7 +1277,7 @@ Yamaha PSS-12 [Edward d-tech]
 - ibm5170.xml: 9 new software additions (#10542) [ArcadeShadow]
 
 New working software list additions
-- ----------------------------------
+------------------------------------
 Best of the Best: Championship Karate (Spain, PC Games release) [AbandonSocios]
 Fleet Defender [The Good Old Days]
 RoboSport (3.5" DD) [The Good Old Days]
@@ -1286,7 +1286,7 @@ The Humans: Insult to Injury (France) [The Good Old Days]
 The Humans: Insult to Injury (Spain, PC Games release) [AbandonSocios]
 
 Moved from ibm5150 Software List
-- -------------------------------
+---------------------------------
 Both "Nova 9" games requires hard disk installation and EGA or VGA graphic card [ArcadeShadow]
 (https://www.mobygames.com/game/dos/nova-9-the-return-of-gir-draxon/cover-art/gameCoverId,223398/) [ArcadeShadow]
 Nova 9: The Return of Gir Draxon (v1.1, 3.5" DD) [ArcadeShadow]
@@ -1309,11 +1309,11 @@ Nova 9: The Return of Gir Draxon (v1.0, 3.5" DD) [ArcadeShadow]
 - Dumped and added two different versions of Falgas "Fantastic Car" kiddie ride (#10571) [ClawGrip]
 
 New NOT_WORKING machine
-- ----------------------
+------------------------
 Fantastic Car (M89 hardware) [Eduardo Anay]
 
 New NOT_WORKING  clone
-- ---------------------
+-----------------------
 Fantastic Car (Micro-87 hardware) [Eduardo Anay]
 
 - mame.lsr: Add 'fantcar' and 'fantcar87' [ClawGrip]
@@ -1321,7 +1321,7 @@ Fantastic Car (Micro-87 hardware) [Eduardo Anay]
 - Dumped and added "Golden Chip" slot machine from SegaSA / Sonic (#10570) [ClawGrip]
 
 New NOT_WORKING machine
-- ----------------------
+------------------------
 Golden Chip [jordigahan]
 
 - mame.lst: Add 'goldenchip' [ClawGrip]
@@ -1343,7 +1343,7 @@ Golden Chip [jordigahan]
 - eepromser: correct data out level [Patrick Mackinlay]
 
 New working clones
-- -----------------
+-------------------
 Trojan (location test) [coolmod, rtw, Brian Troha, Sean Sutton, Smitdogg, The Dumping Union]
 
 - sigma/sub.cpp, thepit/timelimt.cpp: consolidated drivers in single files [Ivan Vangelista]
@@ -1351,7 +1351,7 @@ Trojan (location test) [coolmod, rtw, Brian Troha, Sean Sutton, Smitdogg, The Du
 - New working machine added (#10573) [algestam]
 
 New working machine added
-- ------------------------
+--------------------------
 Ninja Gaiden III (Tiger handheld) [algestam, Sean Riddle]
 
 - cps3: Fix nscsi regression [Curt Coder].
@@ -1359,11 +1359,11 @@ Ninja Gaiden III (Tiger handheld) [algestam, Sean Riddle]
 - nichibutsu/cclimber.cpp: redump part of the GFX ROMs [porchy]
 
 New clones marked as NOT_WORKING
-- -------------------------------
+---------------------------------
 Netchuu Pro Yakyuu 2002 (NPY1 Ver. C) [Mickysmoke, rtw]
 
 New working machines
-- -------------------
+---------------------
 Bottom of the Ninth (handheld) [hap, Sean Riddle, Mr. Do]
 
 - ncd88k: work in progress [Patrick Mackinlay]
@@ -1376,7 +1376,7 @@ Bottom of the Ninth (handheld) [hap, Sean Riddle, Mr. Do]
 - hh_sm510: update notes [hap]
 
 New machines marked as NOT_WORKING
-- ---------------------------------
+-----------------------------------
 Hello Kitty Magical Pumpkin (Japan 960712) [Hammy, Porchy]
 
 - bus/msx_cart, msx1_cart.xml: Added external floppy and Kanji cartridges (#10549) [wilbertpol]
@@ -1389,7 +1389,7 @@ Hello Kitty Magical Pumpkin (Japan 960712) [Hammy, Porchy]
    - Added several external floppy controllers and drives.
 
 New working software list additions (msx1_cart.xml)
-- --------------------------------------------------
+----------------------------------------------------
 CDX-2 + 5.25" DSDD floppy drive (Brazil) [openMSX]
 DDX + 5.25" DSDD floppy drive (Brazil, v3.0d) [openMSX]
 DDX + 5.25" DSDD floppy drive (Brazil, v3.0) [openMSX]
@@ -1409,7 +1409,7 @@ NMS-1200 Floppy controller + 3.5" DSDD floppy drive (Europe, v1.04) [openMSX]
 Toshiba Kanji ROM Cartridge HX-M200 (Japan) [openMSX]
 
 New software marked as NOT_WORKING (msx1_cart.xml)
-- -------------------------------------------------
+---------------------------------------------------
 FD-03 Controller + 3.5" DSDD floppy drive v3.8 [openMSX]
 FD-03 Controller + 3.5" DSDD floppy drive v3.5 [openMSX]
 
@@ -1418,7 +1418,7 @@ FD-03 Controller + 3.5" DSDD floppy drive v3.5 [openMSX]
   * Msx1_cass.xml: Added 48 titles, 1 redump.
 
 New working software list additions (msx1_cass.xml)
-- --------------------------------------------------
+----------------------------------------------------
 Aprende astronomía con El Sol (Spain) [msxcassettes]
 Aprende astronomía con la Luna (Spain) [msxcassettes]
 Aprende astronomía con la Tierra en el espacio (Spain) [msxcassettes]
@@ -1467,11 +1467,11 @@ Viaje Espacial (Spain) [msxcassettes]
 Who Dares Wins 2 (UK, Italy) [msxcassettes]
 
 Redump (msx1_cass.xml)
-- ---------------------
+-----------------------
 Contabilidad 2 (Spain) [msxcassettes]
 
 New NOT_WORKING software list additions (msx1_cass.xml)
-- ------------------------------------------------------
+--------------------------------------------------------
 Aprendiendo Inglés 1 - en el campo y en el castillo (Spain) [msxcassettes]
 Juegos de Inteligencia (Spain) [msxcassettes]
 
@@ -1485,7 +1485,7 @@ Juegos de Inteligencia (Spain) [msxcassettes]
   * Machine/k033906.cpp: Fix usage for Voodoo 2.
 
 New clones marked as WORKING
-- ---------------------------
+-----------------------------
 Gradius IV: Fukkatsu (ver JAA) [windyfairy]
 Gradius IV (ver UAC) [windyfairy]
 Gradius IV (ver AAC) [windyfairy]
@@ -1498,7 +1498,7 @@ NBA All The Way (ver EAB) [windyfairy]
 NBA All The Way (ver EAA) [windyfairy]
 
 New clones marked as NOT_WORKING
-- -------------------------------
+---------------------------------
 Teraburst (1998/07/17 ver JEL) [windyfairy]
 Teraburst (1998/07/17 ver HEL) [windyfairy]
 Teraburst (1998/02/25 ver UAA) [windyfairy]
@@ -1549,14 +1549,14 @@ Silent Scope 2 : Innocent Sweeper (ver AAB, Ver 1.01, GN715 Voodoo 1 video board
 - mac: welcome back ADB full HLE for the Mac IIs so SCSI works again.  Sigh [R. Belmont].
 
 New machines marked as NOT_WORKING
-- ---------------------------------
+-----------------------------------
 UFO Catcher 7 (V20011112) [Darksoft, TeamEurope]
 
 - spectrum_cass.xml: Twelve new working software items and two redumps (#10555) [ArcadeShadow]
   * Also corrected parent/clone relationships, publishers, release years based on the info provided by spectrumcomputing.co.uk.
 
 New working software list additions (spectrum_cass.xml)
-- ------------------------------------------------------
+--------------------------------------------------------
 Fantasia Diamond (set 4, VTR) [Steven Brown, Planeta Sinclair]
 FORTH (Microbyte) [spectrumcomputing.co.uk]
 Hundra (Dinamic) [spectrumcomputing.co.uk]
@@ -1571,7 +1571,7 @@ Starstrike II [spectrumcomputing.co.uk]
 Tremor (pirate) [Planeta Sinclair]
 
 Redump (spectrum_cass.xml)
-- -------------------------
+---------------------------
 Nonamed (Spanish, small orange case) [spectrumcomputing.co.uk]
 Nosferatu el Vampiro (Zafiro) [spectrumcomputing.co.uk]
 
@@ -1579,13 +1579,13 @@ Nosferatu el Vampiro (Zafiro) [spectrumcomputing.co.uk]
   * This is a roulette machine using LEDs and lamps for display.
 
 New NOT_WORKING machine
-- ----------------------
+------------------------
 El Circulo [jordigahan, Pikolo, ArcadeHacker, ClawGrip]
 
 - a2600.xml: Marked light gun games unsupported, and added a prototype (#10536) [kmg]
 
 New working software list additions
-- ----------------------------------
+------------------------------------
 Shootin' Gallery (PAL, prototype) [Buckaroo]
 
 - neogeo.xml, ngp.xml and ngpc.xml: Cleaned up metadata (#10524) [ArcadeShadow]
@@ -1623,7 +1623,7 @@ Shootin' Gallery (PAL, prototype) [Buckaroo]
 - New working software list additions (apple2gs_flop_orig.xml) (#10456) [A-Noid33]
 
 * New working software list additions (apple2gs_flop_orig.xml)
-- -------------------------------------------------------------
+---------------------------------------------------------------
 Canal Meurtre (Brutal Deluxe) [Antoine Vignau, A-Noid]
 
 - msx.cpp: Made the general purpose ports (joystick/mouse) a slot device (#10579) [wilbertpol]
@@ -1634,7 +1634,7 @@ Canal Meurtre (Brutal Deluxe) [Antoine Vignau, A-Noid]
 - yamaha/ymdx9.cpp: Added skeleton driver for Yamaha DX9 (#10586) [Anthony]
 
 New machines marked as not working
-- ---------------------------------
+-----------------------------------
 Yamaha DX9 Digital Programmable Algorithm Synthesizer [Anthony]
 
 - Update 3rdparty/ymfm to latest (#10583) [Aaron Giles]
@@ -1652,7 +1652,7 @@ Yamaha DX9 Digital Programmable Algorithm Synthesizer [Anthony]
 - midway/williams.cpp: dumped PROMs for defenderj [Guru]
 
 New machines added as NOT_WORKING
-- --------------------------------
+----------------------------------
 Yamaha DX-7 Digital Programmable Algorithm Synthesizer [David Viens, R. Belmont]
 
 - ymdx7: fix BIOS selection [R. Belmont].
@@ -1677,11 +1677,11 @@ Yamaha DX-7 Digital Programmable Algorithm Synthesizer [David Viens, R. Belmont]
 - docs: Fixed a markup error [Vas Crabb].
 
 New working machines
-- -------------------
+---------------------
 Gargoyles: Night Flight (Tiger) [hap, Sean Riddle]
 
 New working clones
-- -----------------
+-------------------
 Superman (Tiger) [hap, Sean Riddle]
 
 - namcos22: improve s22 draw_direct_poly [hap]
@@ -1693,19 +1693,19 @@ Superman (Tiger) [hap, Sean Riddle]
 - philips/cdi.cpp: Added support for Italian version of Quizard 1 (#10598) [Ryan Holtz, f205v, TeamEurope]
 
 New working clones
-- -----------------
+-------------------
 Quizard (v1.8, Italian, i8751 IT 11 I2) [Ryan Holtz, f205v, TeamEurope]
 Quizard (v1.7, Italian, i8751 IT 11 I2) [Ryan Holtz, f205v, TeamEurope]
 Quizard (v1.2, Italian, i8751 IT 11 I2) [Ryan Holtz, f205v, TeamEurope]
 Quizard (v1.0, Italian, i8751 IT 11 I2) [Ryan Holtz, f205v, TeamEurope]
 
 Machines promoted to working
-- ---------------------------
+-----------------------------
 Quizard 3 (v3.4, German, i8751 DE 132 D3) [Ryan Holtz]
 Quizard 4 Rainbow (v4.2, German, i8751 DE 142 D3) [Ryan Holtz]
 
 Clones promoted to working
-- -------------------------
+---------------------------
 Quizard 3 (v3.4, German, i8751 DE 132 A1) [Ryan Holtz]
 Quizard 3 (v3.2, German, i8751 DE 132 D3) [Ryan Holtz]
 Quizard 4 Rainbow (v4.2, Czech, i8751 TS142 CZ1) [Ryan Holtz]
@@ -1715,13 +1715,13 @@ Quizard 4 Rainbow (v4.0, German, i8751 DE 142 D3) [Ryan Holtz]
 - nes.xml: Add the Yuletide homebrew in prep for MAMEmas! (#10602) [kmg]
 
 New working software list additions
-- ----------------------------------
+------------------------------------
 8-bit Xmas 2022 [retroUSB]
 
 - nes.xml: Add the Yuletide homebrew in prep for MAMEmas! (#10602) [kmg]
 
 New working software list additions (nes.xml)
-- --------------------------------------------
+----------------------------------------------
 8-bit Xmas 2022 [retroUSB]
 
 - bus/msx/ctrl: Added Micomsoft Libble Rabble Joypad [Vas Crabb].
@@ -1729,7 +1729,7 @@ New working software list additions (nes.xml)
 - megadriv.xml: Added an unreleased prototype (#10601) [kmg]
 
 New working software list additions (megadriv.xml)
-- -------------------------------------------------
+---------------------------------------------------
 Segapede (USA, prototype) [Craig Stitt, Hidden Palace]
 
 - namco/20pacgal.cpp: Better values for unknown SERVICE and EEPROMIN port bits (#10600) [pdaderko]

@@ -1,32 +1,9 @@
-﻿0.243 2022/04/29 [#682 - Vas Crabb]
-- ----------------------------------
-
-
-MAME Testers Bugs Fixed :
------------------------
-- 05533: [Crash/Freeze] (rastersp.cpp) fbcrazy: Fatal error about eight seconds after starting system (Paul-Arnold).
-- 07568: [Crash/Freeze] (seattle.cpp) hyprdriv: Emulated game freezes while music continues to play (Ted Green).
-- 07823: [DIP/Input] (vegas.cpp) nbanfl, nbagold: Watchdog reset when switching between test menus (Ted Green).
-- 08064: [Graphics] (vegas.cpp) gauntleg, gauntleg12, gauntdl, gauntdl24: Screen tearing and inconsistent frame rate (Ted Green).
-- 08203: [Graphics] (metro.cpp) karatour, karatourj, ladykill, 3kokushi: Graphics and speed issues (Angelo Salese).
-- 08240: [Interface] (apple2gs.cpp) apple2gs: Game I/O joystick input is glitchy (R. Belmont).
-- 08270: [Documentation] (generalplus_gpl16250_nand.cpp) jak_gtg: Release year can be confirmed (geforcefly).
-- 08274: [DIP/Input] (astrocde.cpp) spacezap: Identified DIP switch setting number of lives (Steven Coomber).
-- 08276: [DIP/Input] (ddragon.cpp) ddragon2, ddragon2j: Mission timer DIP switch settings are labelled incorrectly (Augusto).
-- 08280: [DIP/Input] (galaxian.cpp) thepitm: Identified coinage, game speed and game time DIP switch settings (Steven Coomber).
-- 08283: [DIP/Input] (galaxold.cpp) bullsdrtg: Identified coinage, award and cabinet type inputs (Steven Coomber).
-- 08284: [DIP/Input] (wink.cpp) wink, winka: Identified coinage, award and audit clear DIP switch settings (Steven Coomber).
-- 08285: [DIP/Input] (galaxold.cpp) trvchlng: Identified coinage, bonus and attract mode DIP switch settings (Steven Coomber).
-- 08286: [DIP/Input] (galaxian.cpp) takeoff: Lives, bonus life and service mode DIP switch settings are incorrect (Steve Coomber).
-- 08289: [Sound] (looping.cpp) looping: Most sounds do not play (AJR).
-- 08293: [Graphics] (apple2e.cpp) apple2ee: Bad colors after switching from double high resolution to high resolution (R. Belmont).
-- 08294: [Crash/Freeze] (nmk16.cpp) mustangb3: Emulator crashes about 25 seconds after starting system (Ivan Vangelista).
-- 08297: [Crash/Freeze] (suna16.cpp) sunaq: Emulator crashes after answering a question (Ivan Vangelista).
-- 08298: [Documentation] (vegas.cpp) warfa, warfaa, warfab, warfac: Game title is incorrect (mmarino4).
+0.243 2022/04/29 [#682 - Vas Crabb]
+-----------------------------------
 
 
 New Working Machines
-- -------------------
+---------------------
 Bowmen [Roberto Fresca, Mirko Buffoni, Daniel Carmona, Museoarcadevintage.com, Recreativas.org]
 Cal Omega - Game 17.0 (Amusement Poker) [Roberto Fresca, Justin DeLutis]
 Le Pendu (Bilingue, Version 04) [Roberto Fresca, Grull Osgo, Jeff Hamelin]
@@ -93,25 +70,37 @@ Indoor Soccer (Tecfri license PCB) [Eduardo Anay, ClawGrip]
 
 New Working Software List Additions
 -----------------------------------
-a800:
+a800.xml:
   Popeye (prototype, 19830829) [Dutchman2000]
   Popeye (prototype, WIP8) [Tempest]
-a800_flop: Pondering About Max's [A8SP]
-apple2_flop_clcracked:
+a800_flop.xml:
+  Pondering About Max's [A8SP]
+apple2_flop_clcracked.xml:
   Cubes, Prisms, and Cylinders (cleanly cracked), Descending/Ascending Intervals (cleanly cracked),
   Early Music Skills (cleanly cracked), Functional Harmony: Secondary Dominants (cleanly cracked),
-  Geography Search (cleanly cracked), Keyboard Arpeggios (cleanly cracked), Keyboard Blues (cleanly cracked), Keyboard Chords (cleanly cracked), Keyboard Extended Jazz Harmonies (cleanly cracked), Keyboard Fingerings (cleanly cracked),  Keyboard Intervals (cleanly cracked), Keyboard Jazz Harmonies (cleanly cracked), Keyboard Note Drill (cleanly cracked), Keyboard Speed Reading (cleanly cracked), Measuring Economic Activity (cleanly cracked), Media Magic: The Melody Studio (cleanly cracked), Melodic Dictation: Beginning Level (cleanly cracked), Melodic Dictation: Intermediate Level (cleanly cracked), Music Composer Quiz (cleanly cracked), Music Terminology (cleanly cracked), Musical Stairs (cleanly cracked), Note Detective II: Intermediate Level (cleanly cracked), On Target: 3000 Words of German (cleanly cracked), Tap-It (cleanly cracked), Time Explorers (cleanly cracked),
+  Geography Search (cleanly cracked), Keyboard Arpeggios (cleanly cracked), Keyboard Blues (cleanly cracked), Keyboard Chords (cleanly cracked)
+  Keyboard Extended Jazz Harmonies (cleanly cracked), Keyboard Fingerings (cleanly cracked),  Keyboard Intervals (cleanly cracked), Keyboard Jazz Harmonies (cleanly cracked)
+  Keyboard Note Drill (cleanly cracked), Keyboard Speed Reading (cleanly cracked), Measuring Economic Activity (cleanly cracked), Media Magic: The Melody Studio (cleanly cracked)
+  Melodic Dictation: Beginning Level (cleanly cracked), Melodic Dictation: Intermediate Level (cleanly cracked), Music Composer Quiz (cleanly cracked), Music Terminology (cleanly cracked)
+  Musical Stairs (cleanly cracked), Note Detective II: Intermediate Level (cleanly cracked), On Target: 3000 Words of German (cleanly cracked), Tap-It (cleanly cracked), Time Explorers (cleanly cracked),
   Volcanoes (cleanly cracked), Zoo Puppet Theater (cleanly cracked) [4am, Firehawke]
-apple2_flop_orig:
-  Back It Up (Version 3.6), Bouncing Kamungas!, Columns //e (Version 2.01), Copy II Plus (Version 3.1), Copy II Plus (Version 4.1), Copy II Plus (Version 4.3), Copy II Plus (Version 4.4B), Copy II Plus (Version 4.4C), Copy II Plus (Version 4.4D), Copy II Plus (Version 5.0), Copy II Plus (Version 5.1), Copy II Plus (Version 5.2), Copy II Plus (Version 5.4),
-  Copy II Plus (Version 5.5), Copy II Plus (Version 6.0), Copy II Plus (Version 6.1), Copy II Plus (Version 6.2), Copy II Plus (Version 6.3), Copy II Plus (Version 6.4), Copy II Plus (Version 6.5), Copy II Plus (Version 6.6), Copy II Plus (Version 7.1), Copy II Plus (Version 7.2), Copy II Plus (Version 7.3), Copy II Plus (Version 7.4), Copy II Plus (Version 8.1), Copy II Plus (Version 8.1) (800K 3.5"), Copy II Plus (Version 8.2),
-  Copy II Plus (Version 8.2) (800K 3.5"), Copy II Plus (Version 8.3), Copy II Plus (Version 8.3) (800K 3.5"),
-  Copy II Plus (Version 8.4), Copy II Plus (Version 8.4) (800K 3.5"), Copy II Plus (Version 9.0), Copy II Plus (Version 9.0) (800K 3.5"), Copy II Plus (Version 9.1), Copy II Plus (Version 9.1) (800K 3.5"), Essential Data Duplicator (Version 3.0-1984-02-06), Essential Data Duplicator (Version 3.0-1984-05-25), Grey Seas, Grey Skies, Hands-On Math! Volume I (800K 3.5"), Kraking by The Disk Jockey, Locksmith (Version 5.0 Revision C), Locksmith (Version 5.0 Revision F), Locksmith (Version 5.0 Revision G), Locksmith (Version 6.0 Revision A), Locksmith (Version 6.0 Revision B), Pig Pen, Ricochet, Science Corner: Planet Earth (800K 3.5"), Super Disk Copy (Version 3.6), Wizardry: Proving Grounds of the Mad Overload (Version 01-DEC-81), Wizardry: Proving Grounds of the Mad Overload (Version 05-SEP-81), World Class Leader Board [4am, Firehawke]
-gamegear: Poker Face Paul's Cribbage (prototype) [smspower]
-ibm5170:
+apple2_flop_orig.xml:
+  Back It Up (Version 3.6), Bouncing Kamungas!, Columns //e (Version 2.01), Copy II Plus (Version 3.1), Copy II Plus (Version 4.1), Copy II Plus (Version 4.3)
+  Copy II Plus (Version 4.4B), Copy II Plus (Version 4.4C), Copy II Plus (Version 4.4D), Copy II Plus (Version 5.0), Copy II Plus (Version 5.1), Copy II Plus (Version 5.2), Copy II Plus (Version 5.4),
+  Copy II Plus (Version 5.5), Copy II Plus (Version 6.0), Copy II Plus (Version 6.1), Copy II Plus (Version 6.2), Copy II Plus (Version 6.3), Copy II Plus (Version 6.4), Copy II Plus (Version 6.5)
+  Copy II Plus (Version 6.6), Copy II Plus (Version 7.1), Copy II Plus (Version 7.2), Copy II Plus (Version 7.3), Copy II Plus (Version 7.4), Copy II Plus (Version 8.1), Copy II Plus (Version 8.1) (800K 3.5")
+  Copy II Plus (Version 8.2), Copy II Plus (Version 8.2) (800K 3.5"), Copy II Plus (Version 8.3), Copy II Plus (Version 8.3) (800K 3.5"),
+  Copy II Plus (Version 8.4), Copy II Plus (Version 8.4) (800K 3.5"), Copy II Plus (Version 9.0), Copy II Plus (Version 9.0) (800K 3.5"), Copy II Plus (Version 9.1), Copy II Plus (Version 9.1) (800K 3.5")
+  Essential Data Duplicator (Version 3.0-1984-02-06), Essential Data Duplicator (Version 3.0-1984-05-25), Grey Seas, Grey Skies, Hands-On Math! Volume I (800K 3.5"), Kraking by The Disk Jockey
+  Locksmith (Version 5.0 Revision C), Locksmith (Version 5.0 Revision F), Locksmith (Version 5.0 Revision G), Locksmith (Version 6.0 Revision A), Locksmith (Version 6.0 Revision B), Pig Pen, Ricochet
+  Science Corner: Planet Earth (800K 3.5"), Super Disk Copy (Version 3.6), Wizardry: Proving Grounds of the Mad Overload (Version 01-DEC-81), Wizardry: Proving Grounds of the Mad Overload (Version 05-SEP-81)
+  World Class Leader Board [4am, Firehawke]
+gamegear.xml:
+  Poker Face Paul's Cribbage (prototype) [smspower]
+ibm5170.xml:
   Red Baron (EGA 16 colors version), Red Baron (VGA 256 colors version), Red Baron: Mission Builder, SimCity Classic (Windows 3.x release) (3.5"), SimCity Classic (Windows 3.x release) (5.25") [ibmpc5150, archive.org]
   Pyrotechnica, Return of the Phantom, SimLife (Windows 3.x release) [The Good Old Days]
-nes:
+nes.xml:
   1995 New Series Super 2 in 1 (Asia), AO, Beat'Em & Eat'Em, D  Sh ti n (China), D shl n,
   King Gizzard & the Lizard Wizard - Polygondwanaland - 2nd Edition, Little Lancelot (USA), NES Virus Cleaner, Pyramids of Ra (USA),
   Solaris, Tic-Tac XO [anonymous]
@@ -126,23 +115,24 @@ nes:
   76 in 1 Y2K [superretrogamer2741]
   Ti ji  T j  (China), X ngh  Zh ndu  (China) [ZDog]
   Metal Max (Japan, prototype) [Zoda-Y13, Forest of Illusion]
-sms:
+sms.xml:
   Basket Ball Nightmare (early prototype), Golden Axe CES Demo, Psycho Fox (prototype), Super Futebol II (Brazil),
   Wimbledon (Brazil) [smspower]
-spectrum_cass:
+spectrum_cass.xml:
   La Qu te du Chevalier [Miguel Sobreira, Planeta Sinclair]
   The 11th Hour (The Guild), Brave Knight, Cobra (Erbe, medium case), Cobra (Erbe, small case), Cobra (IBSA),
   Dragon's Lair II: Escape from Singe's Castle (Erbe), Popeye (Zafi Chip), Raid Over Moscow (set 6, Dro Soft),
   Rygar (Erbe, promotional), Super Cycle (Compulogical) [spectrumcomputing.co.uk]
-  3D Dracman, 4 Logiciels pour ZX Spectrum, Battle on Hoth (alt), Bell Ropes, A Harvesting Moon (two sides)
-  [Steven Brown, Planeta Sinclair]
+  3D Dracman, 4 Logiciels pour ZX Spectrum, Battle on Hoth (alt), Bell Ropes, A Harvesting Moon (two sides) [Steven Brown, Planeta Sinclair]
 
 
 Software List Items Promoted to Working
 ---------------------------------------
-fm7_cass: Portopia Renzoku Satsujin Jiken [r09]
-lk3000: English-German [hap]
-nes:
+fm7_cass.xml:
+  Portopia Renzoku Satsujin Jiken [r09]
+lk3000.xml:
+  English-German [hap]
+nes.xml:
   7 in 1, Ch ngj s h n (China), D t ng F ngy n VI D i (China), F ngs  Hu nxi ng (China), Golden Game: 150 in 1,
   Golden Game: 260 in 1, Ji nxi  Q ngyu n (China), K ud i Gu ish u - F icu  B n (China), Sh nghu  Hu zh ng - Su f iy  F s  (China),
   Sh nghu  Hu zh ng - Su f iy  F s  (China, alt), Sh nghu  Hu zh ng - Su f iy  F s  (China, fixed ),
@@ -150,26 +140,54 @@ nes:
   T ngm  L xi n J  (China), Tenchi wo Kurau II - Shokatsu Koumei Den (China), Tenchi wo Kurau II - Shokatsu Koumei Den (China, alt),
   T nsh  Ti nd II (China), T nsh  Ti nd II (China, alt), T nsh  Ti nd II (China, alt 2), T nsh  Ti nd III (China),
   Y ngzh  H i' n Sh ji - H nd n De Sh ji  (China), Zh nsh n Sh ji  (China), Zh nti n Sh  Y ngsh  (China) [kmg]
-pc8801_flop:
+pc8801_flop.xml:
   Angels - Celica Crisis, Blue Blood Music Disk Vol. 7 - Gradius Special, Cone Paper Vibration Data Shuu Dai-1-kan,
   Cone Paper Vibration Data Shuu Dai-2-kan, Cone Paper Vibration Data Shuu Dai-3-kan, Dragon, Jesus, Jesus (alt), Nazo Demo 3,
   Sorcerian Music Library, Sugoroku Yakyuu-dou [Angelo Salese]
-pc98: Brandish Renewal [r09]
-pc98_cd: Brandish Renewal [r09]
+pc98.xml:
+  Brandish Renewal [r09]
+pc98_cd.xml:
+  Brandish Renewal [r09]
 
 New NOT_WORKING Software List Additions
 ---------------------------------------
-nes: Skull & Crossbones (Korea) [MLX]
-pc8801_cdrom: CD Takarabako [r09]
-roland_tnsc1:
+nes.xml:
+  Skull & Crossbones (Korea) [MLX]
+pc8801_cdrom.xml:
+  CD Takarabako [r09]
+roland_tnsc1.xml:
   50's and 60's (TN-SC1-02), Around the World 2 (TN-SC1-05), Latin (TN-SC1-07), Piano Bar (TN-SC1-06) [Sean Riddle, ClawGrip]
-sms: Game Mo-eumjip 188 Hap (Korea) [smspower]
+sms.xml:
+  Game Mo-eumjip 188 Hap (Korea) [smspower]
 
 
 Translations Added or Modified
 ------------------------------
 Chinese (Simplified) [kongmao45678]
 Ukrainian [Stanley Kid]
+
+
+MAME Testers Bugs Fixed (19):
+-----------------------------
+- 05533: [Crash/Freeze] (rastersp.cpp) fbcrazy: Fatal error about eight seconds after starting system (Paul-Arnold)
+- 07568: [Crash/Freeze] (seattle.cpp) hyprdriv: Emulated game freezes while music continues to play (Ted Green
+- 07823: [DIP/Input] (vegas.cpp) nbanfl, nbagold: Watchdog reset when switching between test menus (Ted Green)
+- 08064: [Graphics] (vegas.cpp) gauntleg, gauntleg12, gauntdl, gauntdl24: Screen tearing and inconsistent frame rate (Ted Green)
+- 08203: [Graphics] (metro.cpp) karatour, karatourj, ladykill, 3kokushi: Graphics and speed issues (Angelo Salese)
+- 08240: [Interface] (apple2gs.cpp) apple2gs: Game I/O joystick input is glitchy (R. Belmont)
+- 08270: [Documentation] (generalplus_gpl16250_nand.cpp) jak_gtg: Release year can be confirmed (geforcefly)
+- 08274: [DIP/Input] (astrocde.cpp) spacezap: Identified DIP switch setting number of lives (Steven Coomber)
+- 08276: [DIP/Input] (ddragon.cpp) ddragon2, ddragon2j: Mission timer DIP switch settings are labelled incorrectly (Augusto)
+- 08280: [DIP/Input] (galaxian.cpp) thepitm: Identified coinage, game speed and game time DIP switch settings (Steven Coomber)
+- 08283: [DIP/Input] (galaxold.cpp) bullsdrtg: Identified coinage, award and cabinet type inputs (Steven Coomber)
+- 08284: [DIP/Input] (wink.cpp) wink, winka: Identified coinage, award and audit clear DIP switch settings (Steven Coomber)
+- 08285: [DIP/Input] (galaxold.cpp) trvchlng: Identified coinage, bonus and attract mode DIP switch settings (Steven Coomber)
+- 08286: [DIP/Input] (galaxian.cpp) takeoff: Lives, bonus life and service mode DIP switch settings are incorrect (Steve Coomber)
+- 08289: [Sound] (looping.cpp) looping: Most sounds do not play (AJR)
+- 08293: [Graphics] (apple2e.cpp) apple2ee: Bad colors after switching from double high resolution to high resolution (R. Belmont)
+- 08294: [Crash/Freeze] (nmk16.cpp) mustangb3: Emulator crashes about 25 seconds after starting system (Ivan Vangelista)
+- 08297: [Crash/Freeze] (suna16.cpp) sunaq: Emulator crashes after answering a question (Ivan Vangelista)
+- 08298: [Documentation] (vegas.cpp) warfa, warfaa, warfab, warfac: Game title is incorrect (mmarino4)
 
 
 Merged Pull Requests
@@ -339,17 +357,9 @@ Source changes:
 
 - clipper: clipper has two branch delay slots [Patrick Mackinlay]
 
-New Working Machines
-- -------------------
-24K (Rockwell) [hap, Sean Riddle]
-
 - rw5000: add a5500 [hap]
 
 - abc1600: Improve logging, use u8/u16 [Curt Coder].
-
-New Machines Marked as NOT_WORKING
-----------------------------------
-Maxi Double Poker (version 1.8) [Roberto Fresca, Jeff Hamelin]
 
 - rastersp.cpp: Added Football Crazy game (#9383) [Paul-Arnold]
   * Machine/53c7xx.cpp: DFE bit is not reset when status register is read.
@@ -357,21 +367,7 @@ Maxi Double Poker (version 1.8) [Roberto Fresca, Jeff Hamelin]
   * Machine/bacta_datalogger.cpp: Prevent continuous transmission of 0xff.
   * Machine/z80scc.cpp: Fixed incorrect setting of baud rate due to uninitialised variables.
 
-New Working Machines
-- -------------------
-Football Crazy (Video Quiz) [Paul-Arnold]
-
 - cbasebal.cpp, vendetta.cpp: finders and other small cleanups [Ivan Vangelista]
-
-New Working Machines
-- -------------------
-31R (Rockwell) [hap, Sean Riddle]
-
-New Working Clones
-------------------
-Golden Poker Double Up (bootleg, set 2) [Roberto Fresca, Jeff Hamelin]
-Golden Poker Double Up (bootleg, set 3) [Roberto Fresca, Jeff Hamelin]
-Golden Poker Double Up (bootleg, set 4) [Roberto Fresca, Jeff Hamelin]
 
 - hh_rw5000: remove sqr, pow2, arrows from strings [hap]
 
@@ -386,23 +382,7 @@ Golden Poker Double Up (bootleg, set 4) [Roberto Fresca, Jeff Hamelin]
 
 - sms.xml: Added six dumps (#9481) [kmg]
 
-New Working Software List Additions
------------------------------------
-Basket Ball Nightmare (early prototype) [smspower]
-Golden Axe CES Demo [smspower]
-Psycho Fox (prototype) [smspower]
-Super Futebol II (Brazil) [smspower]
-Wimbledon (Brazil) [smspower]
-
-New NOT_WORKING Software List Additions
----------------------------------------
-Game Mo-eumjip 188 Hap (Korea) [smspower]
-
 - gamegear.xml: Added an unreleased prototype (#9480) [kmg]
-
-New Working Software List Additions
------------------------------------
-Poker Face Paul's Cribbage (prototype) [smspower]
 
 - init vars for coverity (drivers) [Robbbert]
 
@@ -419,16 +399,11 @@ Poker Face Paul's Cribbage (prototype) [smspower]
 - Doc and notes about the new Golden Poker clones. Demoted goldnpkd to not working since always give a winning Flush hand
  [RobertoFresca].
 
-New Clones Marked as NOT_WORKING
---------------------------------
-Golden Poker Double Up (bootleg, set 2) [Roberto Fresca, Jeff Hamelin]
-
 - init vars for coverity (mame/video/m-z) [Robbbert]
 
 - imd_dsk: Remove the save support that is just too broken, remove member variables [Olivier Galibert]
 
-- hfe: Remove write support for now, it has issues (sharing data between read and write, copy/pasting the pll code, not supporting
- v3).  May be rewritten once the other changes are in [Olivier Galibert]
+- hfe: Remove write support for now, it has issues (sharing data between read and write, copy/pasting the pll code, not supporting v3). May be rewritten once the other changes are in [Olivier Galibert]
 
 - apple2: split the 16 sector format in dos/prodos types [Olivier Galibert]
 
@@ -436,8 +411,7 @@ Golden Poker Double Up (bootleg, set 2) [Roberto Fresca, Jeff Hamelin]
 
 - floppy: remove the intermediate allocator [Olivier Galibert]
 
-- floppy: Change the internal format to flux changes, update the mfi format accordingly (keep read compatibility with the old mfi)
- [Olivier Galibert]
+- floppy: Change the internal format to flux changes, update the mfi format accordingly (keep read compatibility with the old mfi) [Olivier Galibert]
 
 - sms.xml:  Corrected labels for recently added prototypes [Scott Stone]
 
@@ -453,22 +427,9 @@ Golden Poker Double Up (bootleg, set 2) [Roberto Fresca, Jeff Hamelin]
 
 - isbc8024: new multibus card with unknown firmware [Andy Welburn]
 
-New Machines Marked as NOT_WORKING
-----------------------------------
-Intel iSBC 660 System Chassis [Patrick Mackinlay]
-
 - goal92.cpp: finders and other small cleanups [Ivan Vangelista]
 
 - astrocde.cpp: add lives DIP switch to spacezap (MT08274) (#9486) [Steven Coomber]
-
-New Working Machines
-- -------------------
-10R (Rockwell) [hap, Sean Riddle]
-12R (Rockwell) [hap, Sean Riddle]
-
-New machines market as NOT_WORKING
-- ---------------------------------
-Waldorf Electronics MiniWorks 4-Pole [DBWBP]
 
 - homelab.cpp, ssem.cpp, machine/z80bin.cpp: Eliminate use of fgetc in quickload processing [AJR]
 
@@ -500,12 +461,6 @@ Waldorf Electronics MiniWorks 4-Pole [DBWBP]
 
 - bus/nes: Added support for K-3071, S-009, and TH2348 boards (#9498) [kmg]
 
-New working software list additions (nes.xml)
-- --------------------------------------------
-Ch ozh  G o K J nk  110 in 1 [Consolethinks]
-8 in 1 (0801) [Consolethinks]
-Golden 8 in 1 [Consolethinks]
-
 - ksys573.cpp: Workaround for segmentation fault when starting systems with fewer than two CD-ROMs [AJR]
 
 - init vars for coverity (devices/machine/5-i) [Robbbert]
@@ -516,10 +471,6 @@ Golden 8 in 1 [Consolethinks]
 
 - init vars for coverity (previously missed in mame/*) [Robbbert]
 
-New Working Clones
-------------------
-Finger (bootleg of Stinger) [Kalu666]
-
 - fixed a couple of reportedly uninitiated variables in the tools [Robbbert].
 
 - Fix clang compile [Olivier Galibert]
@@ -527,14 +478,6 @@ Finger (bootleg of Stinger) [Kalu666]
 - oric jasmin fs: Hide the implementation [Olivier Galibert]
 
 - prodos fs: Hide the implementation [Olivier Galibert]
-
-Software List Items Promoted to Working
----------------------------------------
-lk3000: English-German [hap]
-
-Machines Promoted to Working
-----------------------------
-LK-3000 [hap]
 
 - formats: fixed GCC compile [Ivan Vangelista]
 
@@ -618,11 +561,6 @@ LK-3000 [hap]
 
 - bottom9.cpp, dunhuang.cpp, skyfox.cpp, vendetta.cpp: disposed of some comments [Ivan Vangelista]
 
-New Working Machines
-- -------------------
-Le Super Pendu (V1, words set #1) [Roberto Fresca, Grull Osgo, Jeff Hamelin]
-Le Super Pendu (V1, words set #2) [Roberto Fresca, Grull Osgo, Jeff Hamelin]
-
 - Spacing, alignment and a new Le Super Pendu bug fixed [Roberto Fresca].
 
 - screen: draw until current hpos (not inclusive) when doing an update_now [hap]
@@ -636,8 +574,7 @@ Le Super Pendu (V1, words set #2) [Roberto Fresca, Grull Osgo, Jeff Hamelin]
 
 - chd: Optimize error return from read_metadata [Olivier Galibert]
 
-- x68k_flop.xml, fmtowns_cd.xml, pc98.xml, msx2_flop.xml, pc8801_flop.xml, pcecd.xml: Standardise title of De Ja (nw) (#9505)
- [eientei95]
+- x68k_flop.xml, fmtowns_cd.xml, pc98.xml, msx2_flop.xml, pc8801_flop.xml, pcecd.xml: Standardise title of De Ja (nw) (#9505) [eientei95]
 
 - hard_disk_file: Hide the chd [Olivier Galibert]
 
@@ -645,16 +582,6 @@ Le Super Pendu (V1, words set #2) [Roberto Fresca, Grull Osgo, Jeff Hamelin]
 
 - galaxold.cpp: Identified three inputs for bullsdrtg (MT08283) (#9512) [Steven Coomber]
   * Identified cabinet type sense line, and coinage and free game DIP switches.
-
-New Machines Marked as NOT_WORKING
-----------------------------------
-Horses 4 Courses (NSW, Australia) [Brock.M]
-Long Hu Tebie Ban (V101CN) [IGSPGM.COM]
-The Quest (NSW, Australia) [Brock.M]
-
-New Working Clones
-------------------
-Hard Drivin' (compact, rev 2 bootleg) [Andrew Welburn]
 
 - a1supply.cpp: dumped 2 more chips for tv21_3 [Siftware]
 
@@ -666,21 +593,7 @@ Hard Drivin' (compact, rev 2 bootleg) [Andrew Welburn]
 
 - bus/nes: Correct and consolidate Golden Game multicart emulation (#9511) [kmg]
 
-New working software list additions (nes.xml)
-- --------------------------------------------
-1500 in 1 [MLX]
-Golden Game: 210 in 1 [kmg]
-
-Software list items promoted to working (nes.xml)
-- ------------------------------------------------
-Golden Game: 150 in 1 [kmg]
-Golden Game: 260 in 1 [kmg]
-
 - bus/sega8: Added partial support for recent 188 in 1 cartridge (#9509) [kmg]
-
-New Working Machines
-- -------------------
-Le Pendu (Bilingue, Version 04) [Roberto Fresca, Grull Osgo, Jeff Hamelin]
 
 - Added proper graphics ROMs dumps for goldnpkd, goldnpke, and goldnpkf [Roberto Fresca, Jeff Hamelin]
 
@@ -691,14 +604,6 @@ Le Pendu (Bilingue, Version 04) [Roberto Fresca, Grull Osgo, Jeff Hamelin]
 - discrete.cpp, mac.cpp: initialized some variables which were causing problems [Ivan Vangelista]
 
 - centiped.cpp: added 82s153 dump for bullsdrt [chaneman]
-
-New Machines Marked as NOT_WORKING
-----------------------------------
-Flying Fortress [TTL] [Seth Soffer, Andrew Welburn]
-
-New Working Clones
-------------------
-Galaxian (Artic System bootleg) [chaneman]
 
 - bus/nes_ctrl: Updated Arkanoid paddle to return 9th bit (#9514) [kmg]
 
@@ -722,10 +627,6 @@ Galaxian (Artic System bootleg) [chaneman]
 
 - bus/nes: Minor cleanup of BMC_12IN1 board (#9520) [kmg]
 
-Software list items promoted to working (nes.xml)
-- ------------------------------------------------
-7 in 1 [kmg]
-
 - bus/nes_ctrl: Clean up access specifiers in all headers (#9515) [kmg]
 
 - apple2e: Fix Zip Chip emulation so it can't be reenabled while locked. (GitHub #9503) [R. Belmont]
@@ -734,39 +635,7 @@ Software list items promoted to working (nes.xml)
 
 - spectrum_cass.xml: 16 new entries + 6 redumps + metadata updates (#9508) [ArcadeShadow]
 
-New Working Software List Additions
------------------------------------
-3D Dracman [Steven Brown, Planeta Sinclair]
-4 Logiciels pour ZX Spectrum [Steven Brown, Planeta Sinclair]
-A Harvesting Moon (two sides) [Steven Brown, Planeta Sinclair]
-Battle on Hoth (alt) [Steven Brown, Planeta Sinclair]
-Bell Ropes [Steven Brown, Planeta Sinclair]
-Brave Knight [spectrumcomputing.co.uk]
-Cobra (Erbe, medium case) [spectrumcomputing.co.uk]
-Cobra (Erbe, small case) [spectrumcomputing.co.uk]
-Cobra (IBSA) [spectrumcomputing.co.uk]
-Dragon's Lair II: Escape from Singe's Castle (Erbe) [spectrumcomputing.co.uk]
-La Qu te du Chevalier [Miguel Sobreira, Planeta Sinclair]
-Popeye (Zafi Chip) [spectrumcomputing.co.uk]
-Raid Over Moscow (set 6, Dro Soft) [spectrumcomputing.co.uk]
-Rygar (Erbe, promotional) [spectrumcomputing.co.uk]
-Super Cycle (Compulogical) [spectrumcomputing.co.uk]
-The 11th Hour (The Guild) [spectrumcomputing.co.uk]
-
-Redumped
-- -------
-Cobra (bugfix) [spectrumcomputing.co.uk]
-Hammerfist [spectrumcomputing.co.uk]
-Popeye (Macmillan) [spectrumcomputing.co.uk]
-Red Heat (Erbe) [spectrumcomputing.co.uk]
-Robin of Sherlock (Zenobi) [spectrumcomputing.co.uk]
-Satan [spectrumcomputing.co.uk]
-
 - nes.xml: Added a recent chip tune dump (#9504) [kmg]
-
-New Working Software List Additions
------------------------------------
-King Gizzard & the Lizard Wizard - Polygondwanaland - 2nd Edition [anonymous]
 
 - slapfght.cpp: Fix MT08279 (#9499) [sjy525]
 
@@ -781,10 +650,6 @@ King Gizzard & the Lizard Wizard - Polygondwanaland - 2nd Edition [anonymous]
 - Added a note about Star Trax [Robbbert].
 
 - naomigd: Use swapendian_int64 instead of custom rev64 function [AJR]
-
-New Clones Marked as NOT_WORKING
---------------------------------
-Indoor Soccer (Tecfri license PCB) [Eduardo Anay, ClawGrip]
 
 - contra.cpp: added hardware infos [Guru]
 
@@ -802,20 +667,12 @@ Indoor Soccer (Tecfri license PCB) [Eduardo Anay, ClawGrip]
 
 - bus/nes: Added support for multicart board DS-9-27 (#9525) [kmg]
 
-New working software list additions (nes.xml)
-- --------------------------------------------
-G ish  190 in 1 [Consolethinks]
-
 - Revert "slapfght.cpp: Fix MT08279 (#9499)" (#9526) [R. Belmont]
   * This reverts commit 1828fe6a6dc9a9ce356dc789e2044b5364ce5321.
 
 - gottlieb.cpp: Added save-state support for the non-laserdisc games (can't test those) [Robbbert].
 
 - src/devices/cpu: Remove #include "debugger.h" where no longer necessary [AJR]
-
-New Machines Marked as NOT_WORKING
-----------------------------------
-Signetics SMVME2000 [Plamen Mihaylov]
 
 - Added an 'image_display_enabled' property to mame_ui_manager and exposed it to LUA.  This property allows one to disable
  image-specific UI displays (#9377) [npwoods]
@@ -831,10 +688,6 @@ Signetics SMVME2000 [Plamen Mihaylov]
 
 - ajax.cpp, parodius.cpp: finders and other minor cleanups [Ivan Vangelista]
 
-New Working Clones
-------------------
-Cal Omega v17.0 (Amusement Poker) [Roberto Fresca, Justin DeLutis]
-
 - Complete DIP switches and technical notes for Cal Omega v17.0 (Amusement Poker) [Roberto Fresca].
 
 - t10mmc.cpp: Return error response when no CD is available [AJR]
@@ -843,22 +696,7 @@ Cal Omega v17.0 (Amusement Poker) [Roberto Fresca, Justin DeLutis]
 
 - a800.xml: Added two Popeye prototypes (#9529) [kmg]
 
-New Working Software List Additions
------------------------------------
-Popeye (prototype, 19830829) [Dutchman2000]
-Popeye (prototype, WIP8) [Tempest]
-
 - nes.xml: Added seven miscellaneous dumps (#9528) [kmg]
-
-New Working Software List Additions
------------------------------------
-1993 Super HiK 4 in 1 (F-034) [Consolethinks]
-Assimilate [Nessylum]
-L'Abbaye des Morts [Parisoft]
-Little Lancelot (USA) [anonymous]
-Metal Max (Japan, prototype) [Zoda-Y13, Forest of Illusion]
-Pyramids of Ra (USA) [anonymous]
-Toobin' (Korea) [MLX]
 
 - drcbex64.cpp: Fix assert in debug build with some CPUs (PowerPC, SH) [AJR]
 
@@ -881,10 +719,6 @@ Toobin' (Korea) [MLX]
 - cps1: init vars; coverity 351281; use standard variable names [Robbbert].
 
 - New NOT_WORKING machines (#9531) [ClawGrip]
-
-New NOT_WORKING machines
-- -----------------------
-Sport Damjes 1 [Sergio de electronicaVyS, ClawGrip]
 
 - xvd701, twinkle: Implemented commands required for Twinkle DVD player (#9114) [987123879113]
 
@@ -909,19 +743,6 @@ Sport Damjes 1 [Sergio de electronicaVyS, ClawGrip]
   * Added command 6d opcode 0: Add Values
   * Extended logging
 
-Machines Promoted to Working
-----------------------------
-Tarzan Chuang Tian Guan (China, V109C, set 1) [Luca Elia, iq_132, Ivan Vangelista, Guru, Dyq, bnathan]
-Super Tarzan (Italy, V100I) [Luca Elia, iq_132, Ivan Vangelista, f205v, Mirko Buffoni]
-Happy Skill (Italy, V611IT) [Luca Elia, Ivan Vangelista, Caius, The Dumping Union]
-Champion Poker 2 (V100A) [Luca Elia, Ivan Vangelista, Jorge Silva, Fernando Oliveira]
-Long Hu Zhengba 2 (China, set 1) [Luca Elia, RockyWall, David Haywood, iq_132, Pierpaolo Prazzoli, XingXing]
-Shuang Long Qiang Zhu 2 VS (China, VS203J) [Luca Elia, RockyWall, David Haywood, iq_132, Pierpaolo Prazzoli, XingXing]
-
-Clones Promoted to Working
---------------------------
-Super Poker (V100xD03) / Formosa [Luca Elia, ANY]
-
 - osd: Added multibyte check to osd_uchar_from_osdchar to fix decoding ASCII text (#9536) [987123879113]
   * This allows ASCII INI files to be parsed on Windows systems set to use a double-byte code page.  It should also work with
     correctly-encoded Shift-JIS, GB2312, Big5 and EUC-KR.  It won t work for more complex variable-length encodings, or when the
@@ -938,10 +759,6 @@ Super Poker (V100xD03) / Formosa [Luca Elia, ANY]
 
 - ibm6580: coverity 349280 [Robbbert]
 
-nc.cpp: coverity 138975 Note says nc200 hang at start, but when tested it works, so... Machines Promoted to Working
--------------------------------------------------------------------------------------------------------------------
-NC200 [Robbbert]
-
 - queen: coverity 176488 [Robbbert]
 
 - bus/nes: Added support for Sachen's Zh nggu  D h ng cartridge (#9540) [kmg]
@@ -952,8 +769,7 @@ NC200 [Robbbert]
 
 - 315-5838_317-0229_comp: buffer overflow, coverity 183518 [Robbbert]
 
-- Funworld Quiz: Dumped and added the missing geo3 questions bank ROM. Rearranged the remaining banks accordingly
- [Team Europe, Roberto Fresca].
+- Funworld Quiz: Dumped and added the missing geo3 questions bank ROM. Rearranged the remaining banks accordingly [Team Europe, Roberto Fresca].
 
 - Le Pendu driver: Tag lookups, arrays, data, docs, blah blah [Roberto Fresca].
 
@@ -974,10 +790,6 @@ NC200 [Robbbert]
 - init vars (includes) [Robbbert]
 
 - rw5000: added b5500 [hap]
-
-New Working Clones
-------------------
-30R: Slide Rule Memory (B5500 version) [hap, Sean Riddle]
 
 - cpu.lua: fix typo from prev commit [hap]
 
@@ -1031,10 +843,6 @@ New Working Clones
 - huc6272.cpp: don't return -1 when running out of nybbles in adpcm_update fn, fixes extremely overdriven PC-FX aliasing huc6230.cpp:
  code review some dubious paths; [Angelo Salese]
 
-New Working Clones
-------------------
-Blood Storm (v2.21) [coolmod]
-
 - angelkds.cpp, crgolf.cpp: finders and other small cleanups [Ivan Vangelista]
 
 - Fixed some issues involving fs::meta_description construction (#9546) [npwoods]
@@ -1079,11 +887,6 @@ Blood Storm (v2.21) [coolmod]
 - bus/nes: Added support for KL-06 and 831128C boards (#9552) [kmg]
   * Made VRC4 base class extendable for CHR banking, as was done to PRG banking.
 
-New working software list additions (nes.xml)
-- --------------------------------------------
-1993 New 860 in 1 Over-Valued Golden Version Games [Consolethinks]
-1995 New Series Super 2 in 1 (Asia) [anonymous]
-
 - gammagic.cpp: remove unused legacy PCI hookup, demote gammagic/99bottles with BAD_DUMPs [Angelo Salese]
 
 - Minor comments etc in various drivers (mostly mine) [Robbbert]
@@ -1105,10 +908,6 @@ New working software list additions (nes.xml)
   * Added a 'type()' accessor to fs::meta_value
    - Let's try to hide the nastiness of std::visit() as much as humanly possible
   * Changing visitor approach for std::visit() call in fs::meta_value::type()
-
-New Machines Marked as NOT_WORKING
-----------------------------------
-Super 97 (Ver. 1.00) [Ioannis Bampoulas]
 
 - hexion.cpp: used finders and other small cleanups [Ivan Vangelista]
 
@@ -1134,19 +933,6 @@ Super 97 (Ver. 1.00) [Ioannis Bampoulas]
 - i82371ab.cpp: convert to logmacro, fix log writes [Angelo Salese]
 
 - bus/nes: Added support for Chinese translations of Genghis Khan, Square's Tom Sawyer, and Tenchi wo Kurau II (#9569) [kmg]
-
-Software list items promoted to working (nes.xml)
-- ------------------------------------------------
-D t ng F ngy n VI D i (China) [kmg]
-Ch ngj s h n (China) [kmg]
-F ngs  Hu nxi ng (China) [kmg]
-T ngm  L xi n J  (China) [kmg]
-Tenchi wo Kurau II - Shokatsu Koumei Den (China) [kmg]
-Tenchi wo Kurau II - Shokatsu Koumei Den (China, alt) [kmg]
-T nsh  Ti nd  II (China) [kmg]
-T nsh  Ti nd  II (China, alt) [kmg]
-T nsh  Ti nd  II (China, alt 2) [kmg]
-T nsh  Ti nd  III (China) [kmg]
 
 - fruitpc.cpp, gammagic.cpp, paokaipc.cpp: inherit proper PCI_ROOT bus [Angelo Salese]
 
@@ -1237,10 +1023,6 @@ T nsh  Ti nd  III (China) [kmg]
   * Pc8801_exp.h: fix CI clang build
   * Pc8801_31.cpp: SW list hookup
 
-New NOT_WORKING Software List Additions
----------------------------------------
-pc8801_cdrom.xml: CD Takarabako [r09]
-
 - pc8801.cpp: promote some romsets to parent [Angelo Salese]
 
 - pc8801.h: reinstate dummy initialization in state machines [Angelo Salese]
@@ -1254,10 +1036,6 @@ pc8801_cdrom.xml: CD Takarabako [r09]
   * Metro.cpp: add note about vmetal layer alignments, fix blzntrnd/gstrik2 regressions, address code review;
 
 - nmk16.cpp: fixed MT08294 [Ivan Vangelista]
-
-New Working Clones
-------------------
-Street Fighter III 2nd Impact: Giant Attack (Hispanic 970930) [Darksoft]
 
 - galaxold.cpp: DIP switches are not labelled for trvchlng (MT08285) (#9573) [Steven Coomber]
 
@@ -1296,46 +1074,11 @@ Street Fighter III 2nd Impact: Giant Attack (Hispanic 970930) [Darksoft]
 
 - bus/nes: Fixed emulation for Chinese Fire Emblem translations (#9575) [kmg]
 
-Software list items promoted to working (nes.xml)
-- ------------------------------------------------
-Sh nghu  Hu zh ng - Su f iy  F s  (China) [kmg]
-Sh nghu  Hu zh ng - Su f iy  F s  (China, alt) [kmg]
-Sh nghu  Hu zh ng - Su f iy  F s  (China, fixed ) [kmg]
-Sh nghu  Hu zh ng W izhu n (China) [kmg]
-Sh nghu  Hu zh ng II D i (China) [kmg]
-Sh nghu  Hu zh ng II D i (China, alt) [kmg]
-Zh nti n Sh  Y ngsh  (China) [kmg]
-
 - nes.xml: Added a new dump; fixed tysonpoh bad dump (#9587) [kmg]
-
-New Working Software List Additions
------------------------------------
-Mike Tyson's Intergalactic Power Punch (USA, prototype) [HiddenPalace]
 
 - bus/nes: Improved support for BMC-64IN1NR boards (#9586) [kmg]
 
-New working software list additions (nes.xml)
-- --------------------------------------------
-76 in 1 Y2K [superretrogamer2741]
-Super HiK 42 in 1 (K-42001) [Consolethinks]
-
 - ibm5170.xml: 8 added + 1 redumped (#9582) [ArcadeShadow]
-  * Ibm5170.xml: 8 added + 1 redumped
-
-New Working Software List Additions
------------------------------------
-Pyrotechnica [The Good Old Days]
-Red Baron (EGA version) [ibmpc5150, archive.org]
-Red Baron (VGA version) [ibmpc5150, archive.org]
-Red Baron - Mission Builder [ibmpc5150, archive.org]
-Return of the Phantom [The Good Old Days]
-SimCity Classic (Windows 3.x release) (3.5") [ibmpc5150, archive.org]
-SimCity Classic (Windows 3.x release) (5.25") [ibmpc5150, archive.org]
-SimLife (Windows 3.x release) [The Good Old Days]
-
-Redump
-- -----
-SimLife (set 2, older) [The Good Old Days] (disk 1 and 2 have a modified OEM ID) [ArcadeShadow]
 
 - ibm5170.xml: Dragon's Lair (moved from ibm5150.xml to ibm5170.xml) [ArcadeShadow]
   * Dragon's Lair was moved from the ibm5150 to the ibm5170 because of the minimal requirement: IBM AT (286 processor)
@@ -1351,24 +1094,9 @@ SimLife (set 2, older) [The Good Old Days] (disk 1 and 2 have a modified OEM ID)
 
 - generalplus_gpl16250_nand.cpp: fixed MT08270 [Ivan Vangelista]
 
-New Machines Marked as NOT_WORKING
-----------------------------------
-Kiteyo Parman [hap, Kevin Horton, Rik]
-Toukon Juohmaru [hap, Kevin Horton, Rik]
-Go Go Dynaman [hap, Kevin Horton, Rik]
-Defender (Gakken) [hap, Kevin Horton, Rik]
-Bombman [hap, Kevin Horton, Rik]
-Pucki & Monsters [hap, Kevin Horton, Rik]
-Wanted G-Man [hap, Kevin Horton, Rik]
-
 - srumbler: connect ym2203 irq to soundcpu [jotego]
 
-- flopimg: Fix issues when wrapping in generate_bitstream_from_track which were especially damaging for apple drivers
- [Olivier Galibert]
-
-New Clones Marked as NOT_WORKING
---------------------------------
-Dragon Ninja (Modular System) [Eduardo Anay, ClawGrip]
+- flopimg: Fix issues when wrapping in generate_bitstream_from_track which were especially damaging for apple drivers [Olivier Galibert]
 
 - File handling cleanup [AJR]
   * Remove fgetc, fgets and ptr methods from device_image_interface.
@@ -1391,44 +1119,15 @@ Dragon Ninja (Modular System) [Eduardo Anay, ClawGrip]
   * Fixed various minutiae with banking modes, bus conflicts, masks based on pin counts.
   * Made H3001 a subclass of G101. It's mostly functionally the same with an added IRQ.
 
-New Working Clones
-------------------
-Densha de GO! (Ver 2.3 J) [andynumbers]
-
 - 1942.cpp: added hardware info and corrected main CPU clock [Guru]
 
 - nes.xml: Removed duplicate dump misstank (#9598) [kmg]
 
 - New NOT_WORKING machines (#9487) [ClawGrip]
 
-New NOT_WORKING games
-- --------------------
-Photo Play 2002 (Belgium) [Asure]
-
-New NOT_WORKING clones
-- ---------------------
-Photo Play 1999 (Netherlands) [Asure]
-Photo Play 2000 (Netherlands) [Asure]
-Photo Play 2001 (Netherlands) [Asure]
-Photo Play Masters 2001 (Netherlands) [Asure]
-
-
 - nes.xml: Added six homebrew cartridges (#9538) [kmg]
 
-New Working Software List Additions
------------------------------------
-AO [anonymous]
-Beat'Em & Eat'Em [anonymous]
-D shl n [anonymous]
-NES Virus Cleaner [anonymous]
-Solaris [anonymous]
-Tic-Tac XO [anonymous]
-
 - fm7_cass.xml: split into FM-7 and FM-8 lists (#9541) [r09]
-
-Software List Items Promoted to Working
----------------------------------------
-Portopia Renzoku Satsujin Jiken [r09]
 
 - Get Kurzweil K2000 skeleton driver to boot (#9545) [Peter Sobot]
 
@@ -1446,35 +1145,15 @@ Portopia Renzoku Satsujin Jiken [r09]
 
 - nes.xml: Added some Chinese RPGs and a virtual pet game (#9591) [kmg]
 
-New Working Software List Additions
------------------------------------
-Ch ngw  B ob o (China) [famiac, NewRisingSun]
-D  Sh  Ti n (China) [Consolethinks]
-Ji nxi  Q ngyu n (China, Final Fantasy pirate) [famiac, NewRisingSun]
-Q ti n D sh ng (China) [famiac, NewRisingSun]
-W m ng Chu nshu  (China) [Consolethinks]
-
 - nes: Various minor cleanups (#9593) [kmg]
 
 - bus/nes: Work on Tengen boards (#9594) [kmg]
-
-New NOT_WORKING software list additions (nes.xml)
-- ------------------------------------------------
-Skull & Crossbones (Korea) [MLX]
 
 - model3.cpp & whitestar.cpp - Make Sega Lost World title strings consistent (#9601) [Michael Sanborn]
 
 - a800_flop.xml: Added one new entry (#9599) [kmg]
 
-New Working Software List Additions
------------------------------------
-Pondering About Max's [A8SP]
-
 - cexpert: add cpu freq config [hap]
-
-New Clones Marked as NOT_WORKING
---------------------------------
-Slap Fight (Modular System) [Eduardo Anay, ClawGrip]
 
 - tms5220.cpp: Add note [AJR]
 
@@ -1486,8 +1165,7 @@ Slap Fight (Modular System) [Eduardo Anay, ClawGrip]
 
 - g65816: fixed JSR being a cycle short [R. Belmont, O. Galibert]
 
-- ddenlovr.cpp: Updates for later games (daimyojn, hanakanz, hkagerou, jongtei, kotbinsp, kotbinyo, mjchuuka, mjdchuka, mjgnight,
- mjreach1, momotaro) [AJR]
+- ddenlovr.cpp: Updates for later games (daimyojn, hanakanz, hkagerou, jongtei, kotbinsp, kotbinyo, mjchuuka, mjdchuka, mjgnight, mjreach1, momotaro) [AJR]
   * Add banked NVRAM
   * Simplify ROM loading and stop using regions for RAM
 
@@ -1507,10 +1185,6 @@ Slap Fight (Modular System) [Eduardo Anay, ClawGrip]
 
 - gaelco.cpp: Verify clocks (#9610) [ClawGrip]
 
-New Working Clones
-------------------
-Super Expert (version C, v1.2) [anonymous]
-
 - fccpu20: fixed save-state registration warnings [Robbbert]
 
 - Update simplified Chinese translation for autofire button name format [kongmao45678]
@@ -1519,28 +1193,12 @@ Super Expert (version C, v1.2) [anonymous]
 
 - nes.xml: Sh ti n is a name, no space in the middle [Vas Crabb].
 
-New Working Machines
-- -------------------
-Bowmen [Roberto Fresca, Mirko Buffoni, Daniel Carmona, Museoarcadevintage.com, Recreativas.org]
-
 - model2.cpp: fixed crash in debug build [Robbbert]
 
 - 8080bw.cpp/mw8080bw.cpp: (#9149) [eientei95]
   * Add difficulty DIP switch to sinvzen and spaceat2 [eientei]
 
 - cage.cpp: Add partially support of variable sound output channels (#9105) [cam900]
-
-New Clones Marked as NOT_WORKING
---------------------------------
-Multi Win (Ver.0091, encrypted) [TeamEurope, Roberto Fresca]
-
-New Clones Marked as NOT_WORKING
---------------------------------
-Multi Win (EPM7032, encrypted) [Ioannis Bampoulas, Roberto Fresca]
-
-New Clones Marked as NOT_WORKING
---------------------------------
-Bad Lands (Modular System) [Eduardo Anay, ClawGrip]
 
 - Multi Win Flags [Roberto Fresca]
 
@@ -1561,19 +1219,6 @@ Bad Lands (Modular System) [Eduardo Anay, ClawGrip]
 
 - nes.xml: Set correct board type for several more Chinese RPGs (#9613) [kmg]
 
-New working software list additions (nes.xml)
-- --------------------------------------------
-Ti ji  T j  (China) [ZDog]
-X ngh  Zh ndu  (China) [ZDog]
-
-Software list items promoted to working (nes.xml)
-- ------------------------------------------------
-Zh nsh n Sh ji  (China) [kmg]
-Ji nxi  Q ngyu n (China) [kmg]
-Sh nm  D l  (China) [kmg]
-K ud i Gu ish u - F icu  B n (China) [kmg]
-Y ngzh  H i' n Sh ji  - H nd n De Sh ji  (China) [kmg]
-
 - exl100: fixed problem with some keys not autorepeating. Fixed mistake with save-state [Robbbert].
 
 - evilngte: Fix crash at start [AJR]
@@ -1582,115 +1227,11 @@ Y ngzh  H i' n Sh ji  - H nd n De Sh ji  (China) [kmg]
 
 - First part of April's Apple II software list updates (#9489) [Firehawke]
 
-Software list items promoted to working (apple2_flop_clcracked.xml)
-- ------------------------------------------------------------------
-Choplifter [4am, Firehawke]
-
-New working software list additions (apple2_flop_orig.xml)
-- ---------------------------------------------------------
-Copy II Plus (Version 9.0) [4am, Firehawke]
-Copy II Plus (Version 8.4) [4am, Firehawke]
-Copy II Plus (Version 9.1) [4am, Firehawke]
-Copy II Plus (Version 8.1) (800K 3.5") [4am, Firehawke]
-Copy II Plus (Version 8.2) (800K 3.5") [4am, Firehawke]
-Copy II Plus (Version 8.3) (800K 3.5") [4am, Firehawke]
-Locksmith (Version 5.0 Revision C) [4am, Firehawke]
-Locksmith (Version 5.0 Revision F) [4am, Firehawke]
-Locksmith (Version 5.0 Revision G) [4am, Firehawke]
-Locksmith (Version 6.0 Revision A) [4am, Firehawke]
-Copy II Plus (Version 8.4) (800K 3.5") [4am, Firehawke]
-Locksmith (Version 6.0 Revision B) [4am, Firehawke]
-Essential Data Duplicator (Version 3.0-1984-02-06) [4am, Firehawke]
-Essential Data Duplicator (Version 3.0-1984-05-25) [4am, Firehawke]
-Back It Up (Version 3.6) [4am, Firehawke]
-Super Disk Copy (Version 3.6) [4am, Firehawke]
-Copy II Plus (Version 3.1) [4am, Firehawke]
-Copy II Plus (Version 4.1) [4am, Firehawke]
-Copy II Plus (Version 4.3) [4am, Firehawke]
-Copy II Plus (Version 4.4B) [4am, Firehawke]
-Copy II Plus (Version 4.4C) [4am, Firehawke]
-Copy II Plus (Version 9.0) (800K 3.5") [4am, Firehawke]
-Copy II Plus (Version 4.4D) [4am, Firehawke]
-Copy II Plus (Version 5.0) [4am, Firehawke]
-Copy II Plus (Version 5.1) [4am, Firehawke]
-Copy II Plus (Version 5.2) [4am, Firehawke]
-Copy II Plus (Version 5.4) [4am, Firehawke]
-Copy II Plus (Version 6.0) [4am, Firehawke]
-Copy II Plus (Version 5.5) [4am, Firehawke]
-Copy II Plus (Version 6.1) [4am, Firehawke]
-Copy II Plus (Version 6.2) [4am, Firehawke]
-Copy II Plus (Version 6.3) [4am, Firehawke]
-Copy II Plus (Version 9.1) (800K 3.5") [4am, Firehawke]
-Copy II Plus (Version 6.4) [4am, Firehawke]
-Copy II Plus (Version 6.5) [4am, Firehawke]
-Copy II Plus (Version 6.6) [4am, Firehawke]
-Copy II Plus (Version 7.1) [4am, Firehawke]
-Copy II Plus (Version 7.2) [4am, Firehawke]
-Copy II Plus (Version 7.3) [4am, Firehawke]
-Copy II Plus (Version 7.4) [4am, Firehawke]
-Copy II Plus (Version 8.1) [4am, Firehawke]
-Copy II Plus (Version 8.2) [4am, Firehawke]
-Copy II Plus (Version 8.3) [4am, Firehawke]
-
-New working software list additions (apple2_flop_clcracked.xml)
-- --------------------------------------------------------------
-Descending/Ascending Intervals (cleanly cracked) [4am, Firehawke]
-Functional Harmony: Secondary Dominants (cleanly cracked) [4am, Firehawke]
-Keyboard Note Drill (cleanly cracked) [4am, Firehawke]
-Melodic Dictation: Beginning Level (cleanly cracked) [4am, Firehawke]
-Melodic Dictation: Intermediate Level (cleanly cracked) [4am, Firehawke]
-Music Composer Quiz (cleanly cracked) [4am, Firehawke]
-Music Terminology (cleanly cracked) [4am, Firehawke]
-Tap-It (cleanly cracked) [4am, Firehawke]
-Zoo Puppet Theater (cleanly cracked) [4am, Firehawke]
-
-New working software list additions (apple2_flop_clcracked.xml)
-- --------------------------------------------------------------
-Volcanoes (cleanly cracked) [4am, Firehawke]
-Measuring Economic Activity (cleanly cracked) [4am, Firehawke]
-Media Magic: The Melody Studio (cleanly cracked) [4am, Firehawke]
-Time Explorers (cleanly cracked) [4am, Firehawke]
-On Target: 3000 Words of German (cleanly cracked) [4am, Firehawke]
-
 - Small metadata correction (squash this message out during merge) [Firehawke]
-
-New working software list additions (apple2_flop_orig.xml)
-- ---------------------------------------------------------
-Bouncing Kamungas! [4am, Firehawke]
-Pig Pen [4am, Firehawke]
-Ricochet [4am, Firehawke]
-Grey Seas, Grey Skies [4am, Firehawke]
-World Class Leader Board [4am, Firehawke]
-
-New working software list additions (apple2_flop_orig.xml)
-- ---------------------------------------------------------
-Columns //e (Version 2.01) [4am, Firehawke]
-Wizardry: Proving Grounds of the Mad Overload (Version 05-SEP-81) [4am, Firehawke]
-Wizardry: Proving Grounds of the Mad Overload (Version 01-DEC-81) [4am, Firehawke]
-
-New working software list additions (apple2_flop_clcracked.xml)
-- --------------------------------------------------------------
-Keyboard Fingerings (cleanly cracked) [4am, Firehawke]
-Keyboard Intervals (cleanly cracked) [4am, Firehawke]
-Keyboard Jazz Harmonies (cleanly cracked) [4am, Firehawke]
-Keyboard Extended Jazz Harmonies (cleanly cracked) [4am, Firehawke]
-Keyboard Speed Reading (cleanly cracked) [4am, Firehawke]
-Musical Stairs (cleanly cracked) [4am, Firehawke]
-Note Detective II: Intermediate Level (cleanly cracked) [4am, Firehawke]
-Geography Search (cleanly cracked) [4am, Firehawke]
-Cubes, Prisms, and Cylinders (cleanly cracked) [4am, Firehawke]
-Early Music Skills (cleanly cracked) [4am, Firehawke]
-Keyboard Arpeggios (cleanly cracked) [4am, Firehawke]
-Keyboard Blues (cleanly cracked) [4am, Firehawke]
-Keyboard Chords (cleanly cracked) [4am, Firehawke]
 
 - krz2000.cpp, vigilant.cpp: Clean-up, no functional changes [Vas Crabb].
 
 - g65816: properly calculate page crossing penalty cycle for ,Y addressing modes [R. Belmont, O. Galibert].
-
-New Machines Marked as NOT_WORKING
-----------------------------------
-Unknown darts game (487 System I) [Victor Fernandez (City Game)]
 
 - exl100: improved keyboard layout [Robbbert]
 
@@ -1729,3 +1270,4 @@ Unknown darts game (487 System I) [Victor Fernandez (City Game)]
 - Fixed crashes on start in ZX Spectrum clones and NWK-TR games [Vas Crabb].
 - iwm: Do a complete clock change on sync write for better flux change time precision iwm: Increate the flux write buffer size for better performance (complete sector write in a single call) 2gs: Correct the q3 clock value, making (sync) writes reliable [Olivier Galibert].
 - Clean up some metadata [Vas Crabb].
+- Bump MAME 0.243 [Vas Crabb].
