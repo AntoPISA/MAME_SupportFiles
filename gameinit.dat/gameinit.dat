@@ -368,7 +368,7 @@ Gamatron          ---  X./ hit 1                 X./
 Others            ---  1                         X
 
 $end
-$info=aligatorp,rollext
+$info=aligatorp
 $mame
 At the error screen, press 1 to proceed.
 $end
@@ -9647,6 +9647,11 @@ After inserting a coin [ 5 ], press the player 1 'down' [ Cursor DOWN ] button 3
 SOURCE:
 mameinfo.dat
 
+$end
+$info=rollext
+$mame
+TIPS:
+This game will randomly either start up, or get stuck at a black screen. If it starts, you'll see a large green G after a few seconds, followed by an error screen. Press 1 here, or wait. The game will then run. The debugger doesn't work properly, making it very difficult to fault-find.
 $end
 $info=rollfr_4
 $mame
