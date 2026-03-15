@@ -1,4 +1,4 @@
-﻿MAME CATVER.ini 0.285 (Feb 10, 2026)
+﻿MAME CATVER.ini 0.286 (Mar 15, 2026)
 © AntoPISA     www.progettoSNAPS.net
 ====================================
 
@@ -16,6 +16,7 @@ In this package you can find these ini files:
 
 WhatsNew:
 =========
+2026/03/15 11.02: Aligned files to MAME 0.286.
 2026/02/10 11.01: Aligned files to MAME 0.285.
 2026/01/12 11.00: Aligned files to MAME 0.284.
 2025/12/19 10.11: Aligned files to MAME 0.283.
