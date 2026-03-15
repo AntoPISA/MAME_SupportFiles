@@ -1,4 +1,4 @@
-﻿MAME LANGUAGES.ini 0.285 (Feb 10, 2026)
+﻿MAME LANGUAGES.ini 0.286 (Mar 15, 2026)
 © AntoPISA        www.progettoSNAPS.net
 =======================================
 
@@ -8,17 +8,17 @@ The file, extracted from the zip file, should be placed in the folder named 'Fol
 items  - Language
 ===================
     1  - Bulgarian
-  187  - Chinese
+  189  - Chinese
     5  - Croatian
     3  - Czech
   107  - Dutch
-33103  - English
+33124  - English
   152  - French
   318  - German
     4  - Greek
     5  - Hungarian
-  271  - Italian
- 2254  - Japanese
+  273  - Italian
+ 2258  - Japanese
   101  - Korean
    15  - Latvian
     2  - Norwegian
@@ -26,7 +26,7 @@ items  - Language
    23  - Portuguese
   146  - Russian
     1  - Slovak
-  369  - Spanish
+  370  - Spanish
     1  - Swedish
     1  - Turkish
   139  - Ukrainian
@@ -34,6 +34,7 @@ items  - Language
 
 WhatsNew:
 =========
+2026/03/15 14.02: Added 0.286 sets.
 2026/02/10 14.01: Added 0.285 sets.
 2026/01/12 14.00: Added 0.284 sets.
 2025/12/19 13.10: Added 0.283 sets.
