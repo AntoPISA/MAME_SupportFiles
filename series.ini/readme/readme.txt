@@ -1,4 +1,4 @@
-﻿MAME SERIES.ini 0.285 (Feb 13, 2026)
+﻿MAME SERIES.ini 0.286 (Mar 15, 2026)
 © AntoPISA     www.progettoSNAPS.net
 ==================================== 
 
@@ -12,11 +12,17 @@ In the file are both "Series" recognized as such (thus games and their official 
 guages or with minor variations (official and unofficial).
 
 
+2026/03/15 12.02 MAME 0.286 (720 supported Series - 12,391 items):
+==================================================================
+Items RENAMED     (3) : (majorpkr) to (majorpkr20), (mario) to (mariog) and (marioe) to (mario).
+Series ADDED      (1) : "WGP".
+Series UPDATED    (5) : "Lucky 8 Lines", "Major Poker", "Mario Bros.", "Pit Boss" and "Sea Wolf".
+
+
 2026/02/13 12.01 MAME 0.285 (719 supported Series - 12,380 items):
 ==================================================================
 Items RENAMED     (1) : (dkongjrv) to (dkingjrv).
 Series UPDATED    (5) : "Cherry Bonus * Slot", "Donkey Kong", "Empire City", "Puzz Loop" and "Vanguard".
-
 
 2026/01/12 12.00 MAME 0.284 (719 supported Series - 12,375 items):
 ==================================================================
