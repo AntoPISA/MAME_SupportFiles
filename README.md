@@ -4,13 +4,13 @@ MAME Support Files v0.286
 
 The following files have been updated in this MAME cycle:
 
+- Category pack
 - renameSET.dat
 - CHD-Info pack
 - gameinit.dat
 
 Not updated in this cycle:
 - bestgames.ini
-- Category pack
 - CatVer pack
 - command.dat
 - languages.ini
