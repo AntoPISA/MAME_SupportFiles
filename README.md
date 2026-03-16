@@ -16,7 +16,7 @@ The following files have been updated in this MAME cycle:
 Not updated in this cycle:
 - bestgames.ini
 - command.dat
-- MESS-Info.dat
+- MESS-Info.dat (work in progress)
 
 Home-page: https://www.progettosnaps.net/support/
 Github   : https://github.com/AntoPISA/MAME_SupportFiles
