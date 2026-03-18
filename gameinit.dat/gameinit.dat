@@ -5134,7 +5134,6 @@ $info=k8915
 $mame
 INITIALIZATION:
 When it says DIAGNOSTIC RAZ P, press enter.
-
 $end
 $info=kaypro10,kaypro484,kayproii,kaypronew2,robie,kaypro1084,kaypro1,kaypro284,kaypro2x,kaypro484p88,omni4,kayproiip88,kayproiv,omni2,kaypro4x
 $mame
@@ -5161,7 +5160,6 @@ Note that some versions don't work partly or at all.
 Some disks don't have boot tracks, so need to be mounted in B drive. These are marked as [Bdrive].
 
 The older disks end with _b (bootable) or _nb (not bootable).
-
 $end
 $info=kbh
 $mame
@@ -5178,7 +5176,6 @@ INITIALIZATION:
 
 SOURCE:
 https://www.progettosnaps.net/gameinit.dat
-
 $end
 $info=kbm
 $mame
@@ -5193,7 +5190,6 @@ INITIALIZATION:
 
 SOURCE:
 https://www.progettosnaps.net/gameinit.dat
-
 $end
 $info=kbm2nd
 $mame
@@ -5210,7 +5206,6 @@ INITIALIZATION:
 
 SOURCE:
 https://www.progettosnaps.net/gameinit.dat
-
 $end
 $info=kbm3rd
 $mame
@@ -5229,15 +5224,13 @@ INITIALIZATION:
 
 SOURCE:
 https://www.progettosnaps.net/gameinit.dat
-
 $end
 $info=kc85,pc8201,tandy200,trsm100,m10,pc8201a,npc8300,tandy102
 $mame
-INITIALIZATION:
+TIPS:
 To use cassettes, start up Basic.
 - To save a tape: CSAVE"x"
 - To load a tape: CLOAD
-
 $end
 $info=kc85_2,kc85_3,kc85_4,kc85_5
 $mame
@@ -5281,7 +5274,6 @@ In Basic:
 - To load a tape: CLOAD "x"
 
 Image types tested to work are KCC and TAP.
-
 $end
 $info=keks_6
 $mame
@@ -5290,7 +5282,6 @@ To initialize the game, turn Service Mode ON [ F2 ] and press reset [ F3 ]. Move
 
 SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
-
 $end
 $info=kgbird
 $mame
@@ -5299,7 +5290,6 @@ At the first start, "CALL ATTENDANT" will flash at the top, to start press in se
 
 SOURCE:
 https://www.progettosnaps.net/gameinit.dat
-
 $end
 $info=kim1
 $mame
@@ -5309,7 +5299,11 @@ To save a tape: -17F5=startlow up starthigh up endlow up endhigh up 01 up -1800 
 To load a tape: -17F9=01 up -1873 enter.
 
 The '01' is a file number - you can choose something else.
-
+$end
+$info=kingdrbb
+$mame
+INITIALISATION:
+At first run the game locks up with COINS in the corner. Press F3 to fix this.
 $end
 $info=kiwame
 $mame
@@ -5318,7 +5312,6 @@ The first time you run the game, it will say 'BACKUP ERROR'. Press [ F3 ] to pro
 
 SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
-
 $end
 $info=kiwames
 $mame
@@ -5328,23 +5321,22 @@ After the game starts to boot, re-enter the TEST MENU [ F2 ]. Use [ 9 ] to move 
 
 SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
-
 $end
 $info=kollon
 $mame
 INITIALIZATION:
-* Wait for the blue bar to say COMPLETE. It will restart itself and work.
-
+Wait for the blue bar to say COMPLETE. It will restart itself and work.
 $end
 $info=kollonc
 $mame
 INITIALIZATION:
+* If it says SYSTEM ERROR, exit the game, delete the game's nvram and other settings files, start the game and then do the below.
+
 * Wait until the blue and red bars say COMPLETE, and it halts.
 
 * Press Tab. In the Dipswitch menu, turn BIOS Flash to Off and choose Reset System.
 
 * Wait for the blue bar to say COMPLETE. It will restart itself and work.
-
 $end
 $info=konam80s,konam80a,konam80k,konam80u,konam80j
 $mame
@@ -5353,7 +5345,6 @@ The first time you run the game, it will dump you on a clock setting screen. Kee
 
 SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
-
 $end
 $info=korvet,bk8t,kontur,neiva
 $mame
@@ -5388,7 +5379,6 @@ Sonken : [ B ] (x3), [ C ], [ D ], [ C ], [ B ] (x2), [ DOWN ] (x2)
 
 SOURCE:
 mameinfo.dat
-
 $end
 $info=kram
 $mame
@@ -5397,7 +5387,6 @@ You can use [ F1 ] to proceed through all the configuration screens, stopping wh
 
 SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
-
 $end
 $info=kramermc
 $mame
@@ -5440,7 +5429,6 @@ There's numerous bugs in the rom's keyboard routine. Shift has to be pressed and
 Even though cassette and terminal support are supposed to exist, the device redirection commands do nothing.
 
 The natural keyboard has been added, although shifted characters will not work, or for paste either, because of the shift-key bug. Further, paste drops every second character.
-
 $end
 $info=kristall2
 $mame
@@ -5450,7 +5438,6 @@ To save a tape: Oa,b  (where a = start address, b = end address)
 To load a tape: R
 
 This system cannot load Mikro-80 tapes, so therefore cannot use anything from the software list. Instead, it can load tapes meant for radio86.
-
 $end
 $info=kuzmich
 $mame
@@ -5464,7 +5451,6 @@ Alternative Gameplay : press Shoot, Left, Right, Shoot on the titlescreen before
 
 SOURCE:
 mameinfo.dat
-
 $end
 $info=laser3k
 $mame
@@ -5474,7 +5460,6 @@ An Apple II clone that boots into Basic.
 To save a file: SAVE
 
 To load a file: LOAD
-
 $end
 $info=laser110,laser200,laser210,laser310,vz200,vz300,fellow,tx8000,laser310h
 $mame
