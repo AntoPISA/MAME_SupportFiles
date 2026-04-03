@@ -4768,6 +4768,10 @@ To save a tape: Click the orange RECORD button.
 To load a tape: Mount the tape, press F2 (it loads by itself)
 
 $end
+$info=intel02
+$mame
+MAMEUI only: You must choose a cartridge, otherwise you'll be deafened by an ear-breaking screech.
+$end
 $info=interact,hector1
 $mame
 INITIALIZATION:
@@ -4788,6 +4792,10 @@ Press [ ALT ] to select "Invinco" or "Car Hunt".
 SOURCE:
 mameinfo.dat
 
+$end
+$info=intvecs
+$mame
+The cartridges that work are: wsmlbase, factory, scooby, mindstrk, jetsons.
 $end
 $info=ipb,ipc
 $mame
@@ -4837,23 +4845,27 @@ $info=isbc2861,isbc28612
 $mame
 Don't press any keys and wait a while for it to start up.
 $end
-$info=isbc8010
+$info=isbc8010,isbc8010a,isbc8010b
 $mame
-INITIALIZATION:
+TIPS:
+All input to be in UPPER case.
+
 Monitor Commands:
 D  Display memory command
 G  Program execute command
 I  Insert instructions into memory
 M  Move memory command
-R  Read hexadecimal file
+R  Read intel-format file
 S  Substitute memory command
-W  Write hexadecimal file
+W  Write intel-format file
 X  Examine and modify CPU registers command
 
 $end
 $info=isbc8030
 $mame
 INITIALIZATION:
+All input to be in UPPER case.
+
 Press U to try starting the system. If unsuccessful, press U again.
 
 Monitor Commands:
@@ -4862,9 +4874,9 @@ G  Program execute command
 N  Single step command
 I  Insert instruction into memory
 M  Move memory command
-R  Read hexadecimal file
+R  Read intel-format file
 S  Substitute memory command
-W  Write hexadecimal file
+W  Write intel-format file
 X  Examine and modify CPU registers
 
 $end
