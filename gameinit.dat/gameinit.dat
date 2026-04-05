@@ -2048,6 +2048,10 @@ To run a cartridge, usually the command RUN "DIR" shows which program(s) can be 
 The CC-40+ cassette device number is 1, eg. SAVE"1.FILENAME" to save, and OLD"1.FILENAME" to load.
 
 $end
+$info=cchime
+$mame
+No screen. It's a door chime. All you can do is press Ctrl or Alt for a tune.
+$end
 $info=ccs2810
 $mame
 TIPS:
@@ -3692,6 +3696,10 @@ Cassette
 After it finishes loading, then RUN
 
 $end
+$info=exorciser
+$mame
+TIPS: At start, press X until the EXBUG prompt shows. Now enter the name of the module you want (one of MAID LOAD VERF SRCH PNCH PRNT TERM S10. S30. S120 S240), don't hit enter. MAID is the debugger. More info in the driver notes or the manual.
+$end
 $info=exp85
 $mame
 TIPS:
@@ -5269,6 +5277,8 @@ $end
 $info=kc85,pc8201,tandy200,trsm100,m10,pc8201a,npc8300,tandy102
 $mame
 TIPS:
+If numbers produce weird characters, use Caps Lock.
+
 To use cassettes, start up Basic.
 - To save a tape: CSAVE"x"
 - To load a tape: CLOAD
@@ -6057,6 +6067,10 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
+$info=magnum
+$mame
+The system is marked as working, but there's no disk drives or software. The only menu options that work are F1, F2, F6, F10. Use F12 to exit them back to the menu.
+$end
 $info=magzun
 $mame
 INITIALIZATION:
@@ -6086,16 +6100,16 @@ INITIALIZATION:
 MATO
 ====
 
-Supposed to be the same as the PMD85, but it wouldn't load a tape.
+Supposed to be the same as the PMD85, but it won't load a tape.
 
 The only files have no extension and look like HEX files, which is not supported.
 
 $end
 $info=mbc200
 $mame
-INITIALIZATION:
-SBASIC:
-Running programs: the file names used within SBASIC must be in UPPER case. For example, run "DEMO" .
+TIPS: Needs a boot disk.
+
+SBASIC: Running programs: the file names used within SBASIC must be in UPPER case. For example, run "DEMO" .
 You can also run a basic program from CP/M: sbasic "GRAPHICS" .
 To Break, press either ^N or ^O (display freezes), then ^C .
 Some control keys: 0x14 = Home; 0x8 = Left/BS; 0xA = Down; 0xB = Up; 0xC = Right.
@@ -6209,6 +6223,14 @@ Floppies
 Unknown how to boot a floppy disk.
 
 $end
+$info=mc400
+$mame
+Choose bios "V1.26F 020290", and then the system will boot.
+$end
+$info=mc68000
+$mame
+Needs a boot disk. You must first add a floppy controller via the slots menu.
+$end
 $info=mcb216
 $mame
 INITIALIZATION:
@@ -6222,8 +6244,11 @@ $end
 $info=mcg85
 $mame
 INITIALIZATION:
+All commands to be in UPPER case.
+
 Press Space to make the machine start up.
 
+Some commands: C, D (dump bytes in memory), F, G, H, I, K, M, R, S (change byte in memory), T, W (write intel records) , X (show/change registers).
 $end
 $info=mcolors
 $mame
@@ -6232,6 +6257,10 @@ The first time you run the game, it will say 'DATI NVRAM-68K NON VALIDI!!!'. Pre
 
 SOURCE:
 mameinfo.dat
+$end
+$info=megadriv,megadrij,megaduck,megajet,megatech,microvsn,myvision
+$mame
+Needs a cartridge.
 $end
 $info=mekd1,mekd3,mekd4
 $mame
@@ -6536,20 +6565,13 @@ Example program: ("organ" from p82 of the manual)
 -F20=C4^0D^35^C4^00^31^C4^08^C8^F6^C5^01^E4^FF^98^08^8F^00^06^E4^07^07^90^EB^B8^E6^9C^EE^90^E5^-F20X
 Pressing keys will produce different tones.
 
-$end
-$info=mk2
-$mame
-TIPS:
-The volume for this game is TOO LOW!
-
-
-When the game is running, hit [ F2 ] to get to the internal service menu. Hit [ F2 ] again to "close" the service switch so that you won't get stuck in the menu. Now, navigate to the "Volume Adjust" option (following the directions provided) and adjust the volume. It's best to keep the volume no more than 80-90% filled as it might cause your sound to be overdriven and crackle. When adjusted, simply exit the menu.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
+MK14VDU only: There's some quickloads in the software list.
+- fallman : doesn't work
+- invaders: 1 = left; 2 = fire; 3 = right; X = Go
+- pong: 1 = left; 3 = right
 
 $end
-$info=mk3
+$info=mk2,mk3
 $mame
 TIPS:
 The volume for this game is TOO LOW!
@@ -6995,8 +7017,10 @@ LOAD - load a tape, hit enter on all questions, but if you want a slow tape ente
 $end
 $info=mt6809
 $mame
-INITIALIZATION:
-Ralbug commnds:
+TIPS:
+There's no cursor.
+Ralbug commands:
+HEL       Help
 COP       Copy
 MEM       Modify memory
 SYW       Warm start to DOS system
@@ -7010,19 +7034,19 @@ JSI       JSR indirect
 TES       Memory test
 CLR       Clear screen
 COL       Colour change
-HEL       Help display menu
 VEC       List vector jump table
 FIL       Fill Memory
 CUR       Cursor move
 ASC       ASCII table display
 SYN       Command syntax
-HOM       Home cursor
+HOM       Home cursor (does nothing)
 WAR       Warm start $0003
 STA       Start $0000
 EXP       Expand monitor
 BLE       Keyboard bleep
 KIL       Kill off the cache
 
+Some commands show a space between the command and the parameter. The system adds the space as you type, if you add one it will error.
 $end
 $info=mtlchamp
 $mame
@@ -7334,7 +7358,7 @@ $end
 $info=nabupc
 $mame
 INITIALIZATION:
-Marked as working, but not able to get it to do anything. Both floppy disks and hard disks are ignored, and it always complains about its "ADAPTOR FAILURE".
+Change the BIOS to "4k BIOS - Floppy support (Ver 14)". You'll be asked to choose to boot from floppy or hard drive.
 
 Read the topics at https://forums.nabu.ca/viewforum.php?f=21 to get some ideas of how to configure it.
 
