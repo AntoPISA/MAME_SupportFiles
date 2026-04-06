@@ -99,6 +99,7 @@ $info=aa3010,aa310,aa500,aa5000,aa680,am4
 $mame
 TIPS:
 * Notes:
+* - aa310: shows a bad mode at start. Use HELP to get help.
 * - Hold DEL down during boot reset the CMOS memory to the default values.
 * - default NVRAM is plainly wrong. Use the status/configure commands to set up properly
 *   (Scroll Lock is currently mapped with Right SHIFT, use this to move to next page of status).
@@ -211,12 +212,17 @@ Note that left-most digit is not wired up, and therefore will always be blank.
 $end
 $info=acrnsys2,acrnsys3_6809
 $mame
+Commands must be in UPPER case.
+
+To load a tape: LOAD"x"
+To save a tape: SAVE"x" a b [c], where a to b is region of memory to save, and optional c is the go address.
+$end
+$info=acrnsys3,acrnsys4,acrnsys5
+$mame
 TIPS:
-LOAD"x"                to load a tape
-SAVE"x" a b [c]        to save a region of memory (a to b) with optional go address c
+Commands must be in UPPER case.
 
-Doesn't work.
-
+Must load a floppy disk. Use CAT to get a directory.
 $end
 $info=adam
 $mame
@@ -230,29 +236,26 @@ $end
 $info=aerofgtsg
 $mame
 INITIALIZATION:
-Wait patiently for the two progress bars to end, press [ TAB ], choose "DIP Switches" and set "BIOS Flash" to "OFF".
-Now choose "Reset System," and on reboot the game will start correctly.
+Wait patiently for the two progress bars to end, press [ TAB ], choose "DIP Switches" and set "BIOS Flash" to "OFF". Now choose "Reset System," and on reboot the game will start correctly.
 
 $end
 $info=aftor
 $mame
 INITIALIZATION:
-Press num-0 to enter service/selftest. Press 1 to step through the tests.
-When you reach the audit stages, press 6 to advance and 5 to clear.
-In the switch test, it will report any closed dip as a failure. You can
-ignore these.
-The game has 2 balls, for multiball feature, so the outhole doesn't
-work because it thinks the 2nd ball is in play somewhere.
-
-To activate the end-of-ball, hold down X then tap END.
-
+Press num-0 to enter service/selftest. Press 1 to step through the tests. When you reach the audit stages, press 6 to advance and 5 to clear. In the switch test, it will report any closed dip as a failure. You can ignore these. The game has 2 balls, for multiball feature, so the outhole doesn't work because it thinks the 2nd ball is in play somewhere. To activate the end-of-ball, hold down X then tap END.
 $end
-$info=agat7
+$info=agat7,agat9
 $mame
 TIPS:
 Press Ctrl F10 to get a prompt.
-R  to load a tape
-W  to save.
+enter  = hex dump 8 bytes
+number = change address for next hex dump
+I  = black on white
+L  = disassemble
+N  = white on black
+P  = goes crazy
+R  = load a tape
+W  = save a tape
 
 $end
 $info=agat9
@@ -340,7 +343,7 @@ Oddly, BIN files are. What kind of files are they?
 
 Press space to input your command line (not return).
 
-Commands:
+Commands (must be UPPER case):
 D - Memory Dump
 J - Jump to address
 M - Modify memory
@@ -872,6 +875,13 @@ SOURCE:
 mameinfo.dat
 
 $end
+$info=assist05
+$mame
+All input to be in UPPER case.
+B = breakpoint
+T = trace
+Others (unknown meaning): A,C,G,L,M,P,R,W,X
+$end
 $info=asterix
 $mame
 INITIALIZATION:
@@ -1036,7 +1046,7 @@ $end
 $info=b128hp,b500,p500,b256hp,bx256hp,cbm710,cbm720,cbm720_de,cbm720_se,cbm730,b128,b256,cbm610,cbm620,cbm620_hu,p500p
 $mame
 TIPS:
-Doesn't seem to be able run any software. If you want to try a tape, you have to enable the cassette player in the slots.
+Doesn't seem to be able to run any software. If you want to try a tape, you have to enable the cassette player in the slots.
 
 load - to load
 save - to save
@@ -1068,6 +1078,10 @@ TIPS:
 - To exit the pinball back to the video:
 Babypac: press O or P;
 Granny: press X.
+$end
+$info=bankshot
+$mame
+Press shift 1 or more times to choose the difficulty level. Then press Space to start.
 $end
 $info=basf7120
 $mame
@@ -2034,6 +2048,10 @@ To run a cartridge, usually the command RUN "DIR" shows which program(s) can be 
 The CC-40+ cassette device number is 1, eg. SAVE"1.FILENAME" to save, and OLD"1.FILENAME" to load.
 
 $end
+$info=cchime
+$mame
+No screen. It's a door chime. All you can do is press Ctrl or Alt for a tune.
+$end
 $info=ccs2810
 $mame
 TIPS:
@@ -2225,10 +2243,10 @@ SOURCE:
 https://www.progettosnaps.net/gameinit.dat
 
 $end
-$info=cms6502,gs6502,gs6809,eurocom2
+$info=cms6502,gs6502,gs6809,eurocom2,eurobeeb1,eurobeeb2,eurobeeb3c,eurobeeb3m
 $mame
 TIPS:
-Input must be in UPPERcase.
+Input must be in UPPER case.
 
 $end
 $info=cmtetris
@@ -2360,7 +2378,7 @@ $end
 $info=cortex
 $mame
 TIPS:
-All input to be in uppercase. Note that "lowercase" is just smaller uppercase, and is not acceptable as input.
+All input to be in UPPER case. Note that "lowercase" is just smaller upper case, and is not acceptable as input.
 
 There's no option in BASIC to produce sound. It will beep if an invalid key (usually a control key) is pressed.
 
@@ -2505,7 +2523,7 @@ $end
 $info=cpu09,ivg09
 $mame
 TIPS:
-All input must be in UPPERcase.
+All input must be in UPPER case.
 
 To save a tape: P a b  (where a = start address, b = end address)
 
@@ -2871,7 +2889,7 @@ $end
 $info=dg680
 $mame
 TIPS:
-All input must be in uppercase.
+All input must be in UPPER case.
 
 To save a tape: W "name" c a b  (where c = filetype (any letter), a = start address, b = end address).
 To load a tape: R
@@ -3251,7 +3269,7 @@ TIPS:
 ACORN ELECTRON
 ==============
 
-All input to be in UPPERcase.
+All input to be in UPPER case.
 
 
 Floppies
@@ -3537,7 +3555,7 @@ LED to Monitor: D1400
 Monitor to Basic: G 1C00
 Monitor to LED: G FC00
 Basic to Monitor: BYE
-- All commands in Basic and Monitor are UPPERCASE only.
+- All commands in Basic and Monitor are UPPER case only.
 - Terminal is defaulted to 9600 baud, 7 bits, 2 stop bits.
 
 There's 2 ways to use the cassette.
@@ -3545,7 +3563,7 @@ There's 2 ways to use the cassette.
 -- To save a tape: Click D1A8F (it says Fr) Click the 4 digit start address (it says Ld) Press RECORD, then click the 4 digit end address. Recording starts as soon as you click the 4th digit. When it says CPU UP, it has finished.
 -- To load a tape: Click D1ABC (screen goes blank). Press PLAY and tape loads. The H LED flashes as data is processed. When it says CPU UP, it has finished.
 
-2. Use the TTY. Press 7 and it says MON>. All input must be in UPPERcase.
+2. Use the TTY. Press 7 and it says MON>. All input must be in UPPER case.
 -- To save a tape: T aaaa,bbbb (where aaaa = start address, and bbbb = end address. Press RECORD, then press Enter.
 -- To load a tape: L then press Enter then press PLAY. The H light will flash as above.
 
@@ -3574,7 +3592,7 @@ $end
 $info=evmbug,tms9995bb
 $mame
 INITIALIZATION:
-Press any key to get it started. All input to be in UPPERcase.
+Press any key to get it started. All input to be in UPPER case.
 
 $end
 $info=ewf,firemntn,futurwld,hod,hotwheel,locomotp,sshtlzac,stargod,strapids,wsports
@@ -3678,6 +3696,10 @@ Cassette
 After it finishes loading, then RUN
 
 $end
+$info=exorciser
+$mame
+TIPS: At start, press X until the EXBUG prompt shows. Now enter the name of the module you want (one of MAID LOAD VERF SRCH PNCH PRNT TERM S10. S30. S120 S240), don't hit enter. MAID is the debugger. More info in the driver notes or the manual.
+$end
 $info=exp85
 $mame
 TIPS:
@@ -3688,7 +3710,7 @@ The terminal must be set for
 - Format: 7E1
 If it isn't, adjust the settings, then restart the system.
 
-Once started, press Space. The system will start up. All input must be in UPPERcase.
+Once started, press Space. The system will start up. All input must be in UPPER case.
 
 To save a tape: Ra,b,c (where a = start address, b = end address, c = program number)
 
@@ -4092,9 +4114,9 @@ If you get a memory error (with a loud alarm), press 9.
 SOURCE:
 mameinfo.dat
 $end
-$info=fvipers,fvipersb,schamp,sfight
+$info=fvipers,fvipersa,fvipersb,schamp,sfight
 $mame
-This game only works with the DRC turned off.
+This game only works with the DRC turned off. If the sound buzzes loudly, choose portaudio.
 $end
 $info=fvrpitch
 $mame
@@ -4131,7 +4153,7 @@ $end
 $info=galeb
 $mame
 TIPS:
-First thing to do is Ctrl-A for capslock, since uppercase is required.
+First thing to do is Ctrl-A for capslock, since UPPER case is required.
 
 Ctrl-B takes you into Basic. Not known how to quit.
 
@@ -4355,6 +4377,10 @@ To save a tape: CSAVE"x"
 To load a tape: CLOAD
 
 $end
+$info=h2hbaskb,h2hhockey
+$mame
+Hold down Left and Right arrow keys, and press 1.
+$end
 $info=h8
 $mame
 INITIALIZATION:
@@ -4532,7 +4558,7 @@ $end
 $info=homez80
 $mame
 INITIALIZATION:
-All commands must be entered in uppercase, and since the capslock doesn't work, you need to hold the shift key down.
+All commands must be entered in UPPER case, and since the capslock doesn't work, you need to hold the shift key down.
 
 There is next to no error checking, for example the T command is to set the time. Entering T by itself will set the time to 99:99:99, while G will cause a jump to 9999 and so forth. Also the parameter must be right next to the command, spaces will cause invalid input. Example M1234 will display a byte of memory at 1234, while M 1234 will display memory at 9123.
 
@@ -4580,6 +4606,17 @@ X             choose Q,V,R,P (Q to quit; others ask for ram and prom ranges)
 Y nothing
 Z nothing
 
+$end
+$info=hr84
+$mame
+TIPS:
+It starts in the monitor. Enter BASIC to start Basic.
+
+To save: SAVE
+
+To load: LOAD
+
+To quit back to the monitor: EXIT
 $end
 $info=ht68k
 $mame
@@ -4747,6 +4784,10 @@ To save a tape: Click the orange RECORD button.
 To load a tape: Mount the tape, press F2 (it loads by itself)
 
 $end
+$info=intel02
+$mame
+MAMEUI only: You must choose a cartridge, otherwise you'll be deafened by an ear-breaking screech.
+$end
 $info=interact,hector1
 $mame
 INITIALIZATION:
@@ -4767,6 +4808,10 @@ Press [ ALT ] to select "Invinco" or "Car Hunt".
 SOURCE:
 mameinfo.dat
 
+$end
+$info=intvecs
+$mame
+The cartridges that work are: wsmlbase, factory, scooby, mindstrk, jetsons.
 $end
 $info=ipb,ipc
 $mame
@@ -4816,23 +4861,27 @@ $info=isbc2861,isbc28612
 $mame
 Don't press any keys and wait a while for it to start up.
 $end
-$info=isbc8010
+$info=isbc8010,isbc8010a,isbc8010b
 $mame
-INITIALIZATION:
+TIPS:
+All input to be in UPPER case.
+
 Monitor Commands:
 D  Display memory command
 G  Program execute command
 I  Insert instructions into memory
 M  Move memory command
-R  Read hexadecimal file
+R  Read intel-format file
 S  Substitute memory command
-W  Write hexadecimal file
+W  Write intel-format file
 X  Examine and modify CPU registers command
 
 $end
 $info=isbc8030
 $mame
 INITIALIZATION:
+All input to be in UPPER case.
+
 Press U to try starting the system. If unsuccessful, press U again.
 
 Monitor Commands:
@@ -4841,9 +4890,9 @@ G  Program execute command
 N  Single step command
 I  Insert instruction into memory
 M  Move memory command
-R  Read hexadecimal file
+R  Read intel-format file
 S  Substitute memory command
-W  Write hexadecimal file
+W  Write intel-format file
 X  Examine and modify CPU registers
 
 $end
@@ -5105,7 +5154,7 @@ Jupiter Ace
 Make sure 32k ram is enabled.
 Paste only works with lowercase
 VLIST is the command to find all existing verbs. The name from a tape is also a verb.
-Left-shift is to get uppercase.
+Left-shift is to get upper case.
 Right-shift is for symbols. Right-shift M -> period.
 
 
@@ -5228,6 +5277,8 @@ $end
 $info=kc85,pc8201,tandy200,trsm100,m10,pc8201a,npc8300,tandy102
 $mame
 TIPS:
+If numbers produce weird characters, use Caps Lock.
+
 To use cassettes, start up Basic.
 - To save a tape: CSAVE"x"
 - To load a tape: CLOAD
@@ -5647,7 +5698,7 @@ This machine has an 8-digit LED display with hex keyboard, and also a 64x16 mono
 The monitor uses the hex keyboard, while Basic uses the full keyboard.
 Monitor output is on the digits, but the single-step command displays a running register dump on the main screen.
 There are no storage facilities, and no sound.
-BASIC is integer only (-32768 to 32767), about 6k of space, and all input is to be in uppercase. It does have minimal string capability, but there is no $ sign, so how to create a string variable is unknown.
+BASIC is integer only (-32768 to 32767), about 6k of space, and all input is to be in UPPER case. It does have minimal string capability, but there is no $ sign, so how to create a string variable is unknown.
 To exit back to the monitor, type BYE.
 The user instructions of the monitor (in German) are here:
 http://www.jens-mueller.org/jkcemu/llc1.html
@@ -5657,7 +5708,7 @@ $info=llc2
 $mame
 TIPS:
 The BEL character plays a short tune.
-In the monitor, it is case sensitive, most commands are uppercase, but some are lowercase.
+In the monitor, it is case sensitive, most commands are UPPER case, but some are lower case.
 To start Basic, the command is b. To quit basic, use BYE.
 Inside Basic, it is not case-sensitive.
 
@@ -5711,7 +5762,7 @@ To save a tape: SAVE
 
 To load a tape: LOAD
 
-BASIC commands : (must be in UPPERcase)
+BASIC commands : (must be in UPPER case)
 
 LET NEXT IF GOTO GOSUB RETURN READ DATA FOR CLS INPUT DIM STOP END RESTORE
 REM CLEAR PUSH POKE PRINT OUT ERROR USR CURSOR NORMAL INVERSE PLOT UNPLOT
@@ -6016,6 +6067,10 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
+$info=magnum
+$mame
+The system is marked as working, but there's no disk drives or software. The only menu options that work are F1, F2, F6, F10. Use F12 to exit them back to the menu.
+$end
 $info=magzun
 $mame
 INITIALIZATION:
@@ -6045,16 +6100,16 @@ INITIALIZATION:
 MATO
 ====
 
-Supposed to be the same as the PMD85, but it wouldn't load a tape.
+Supposed to be the same as the PMD85, but it won't load a tape.
 
 The only files have no extension and look like HEX files, which is not supported.
 
 $end
 $info=mbc200
 $mame
-INITIALIZATION:
-SBASIC:
-Running programs: the file names used within SBASIC must be in uppercase. For example, run "DEMO" .
+TIPS: Needs a boot disk.
+
+SBASIC: Running programs: the file names used within SBASIC must be in UPPER case. For example, run "DEMO" .
 You can also run a basic program from CP/M: sbasic "GRAPHICS" .
 To Break, press either ^N or ^O (display freezes), then ^C .
 Some control keys: 0x14 = Home; 0x8 = Left/BS; 0xA = Down; 0xB = Up; 0xC = Right.
@@ -6168,10 +6223,18 @@ Floppies
 Unknown how to boot a floppy disk.
 
 $end
+$info=mc400
+$mame
+Choose bios "V1.26F 020290", and then the system will boot.
+$end
+$info=mc68000
+$mame
+Needs a boot disk. You must first add a floppy controller via the slots menu.
+$end
 $info=mcb216
 $mame
 INITIALIZATION:
-All commands to be in uppercase.
+All commands to be in UPPER case.
 
 Press Enter twice. You will see the Basic OK prompt. To get into the monitor, use the QUIT command, and to return use the B command.
 
@@ -6181,8 +6244,11 @@ $end
 $info=mcg85
 $mame
 INITIALIZATION:
+All commands to be in UPPER case.
+
 Press Space to make the machine start up.
 
+Some commands: C, D (dump bytes in memory), F, G, H, I, K, M, R, S (change byte in memory), T, W (write intel records) , X (show/change registers).
 $end
 $info=mcolors
 $mame
@@ -6191,6 +6257,10 @@ The first time you run the game, it will say 'DATI NVRAM-68K NON VALIDI!!!'. Pre
 
 SOURCE:
 mameinfo.dat
+$end
+$info=megadriv,megadrij,megaduck,megajet,megatech,microvsn,myvision
+$mame
+Needs a cartridge.
 $end
 $info=mekd1,mekd3,mekd4
 $mame
@@ -6325,9 +6395,9 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
-$info=mex68kecb,mice_6502,mice2_z80,mice2_6502,mice2_8085
+$info=mex68kecb
 $mame
-All input to be in UPPERcase.
+All input to be in UPPER case. Type HE for a list of commands.
 $end
 $info=mfabfz,mfabfz85
 $mame
@@ -6346,6 +6416,10 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
+$info=mice_6502,mice2_z80,mice2_6502,mice2_8085
+$mame
+All input to be in UPPER case.
+$end
 $info=micral,questarm
 $mame
 INITIALIZATION:
@@ -6360,7 +6434,7 @@ $end
 $info=microbx2
 $mame
 INITIALIZATION:
-Insert the FLEX disk in drive 0 and the Distribution disk in drive 1, then type BO (in UPPERcase) to boot FLEX.
+Insert the FLEX disk in drive 0 and the Distribution disk in drive 1, then type BO (in UPPER case) to boot FLEX.
 
 Type DEMO.1 to run the demo from drive 1.
 
@@ -6370,7 +6444,7 @@ $mame
 INITIALIZATION:
 Press Enter to get the * prompt.
 
-Commands (must be in UPPERcase):
+Commands (must be in UPPER case):
 - $Pxxxx - Jump to address xxxx
 - ?Mxxxx yyyy - Dump memory starting at xxxx for yyyy bytes
 - !Mxxxx yyzz... - Write data (yy etc) to memory xxxx onwards.
@@ -6491,20 +6565,13 @@ Example program: ("organ" from p82 of the manual)
 -F20=C4^0D^35^C4^00^31^C4^08^C8^F6^C5^01^E4^FF^98^08^8F^00^06^E4^07^07^90^EB^B8^E6^9C^EE^90^E5^-F20X
 Pressing keys will produce different tones.
 
-$end
-$info=mk2
-$mame
-TIPS:
-The volume for this game is TOO LOW!
-
-
-When the game is running, hit [ F2 ] to get to the internal service menu. Hit [ F2 ] again to "close" the service switch so that you won't get stuck in the menu. Now, navigate to the "Volume Adjust" option (following the directions provided) and adjust the volume. It's best to keep the volume no more than 80-90% filled as it might cause your sound to be overdriven and crackle. When adjusted, simply exit the menu.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
+MK14VDU only: There's some quickloads in the software list.
+- fallman : doesn't work
+- invaders: 1 = left; 2 = fire; 3 = right; X = Go
+- pong: 1 = left; 3 = right
 
 $end
-$info=mk3
+$info=mk2,mk3
 $mame
 TIPS:
 The volume for this game is TOO LOW!
@@ -6950,8 +7017,10 @@ LOAD - load a tape, hit enter on all questions, but if you want a slow tape ente
 $end
 $info=mt6809
 $mame
-INITIALIZATION:
-Ralbug commnds:
+TIPS:
+There's no cursor.
+Ralbug commands:
+HEL       Help
 COP       Copy
 MEM       Modify memory
 SYW       Warm start to DOS system
@@ -6965,19 +7034,19 @@ JSI       JSR indirect
 TES       Memory test
 CLR       Clear screen
 COL       Colour change
-HEL       Help display menu
 VEC       List vector jump table
 FIL       Fill Memory
 CUR       Cursor move
 ASC       ASCII table display
 SYN       Command syntax
-HOM       Home cursor
+HOM       Home cursor (does nothing)
 WAR       Warm start $0003
 STA       Start $0000
 EXP       Expand monitor
 BLE       Keyboard bleep
 KIL       Kill off the cache
 
+Some commands show a space between the command and the parameter. The system adds the space as you type, if you add one it will error.
 $end
 $info=mtlchamp
 $mame
@@ -7289,7 +7358,7 @@ $end
 $info=nabupc
 $mame
 INITIALIZATION:
-Marked as working, but not able to get it to do anything. Both floppy disks and hard disks are ignored, and it always complains about its "ADAPTOR FAILURE".
+Change the BIOS to "4k BIOS - Floppy support (Ver 14)". You'll be asked to choose to boot from floppy or hard drive.
 
 Read the topics at https://forums.nabu.ca/viewforum.php?f=21 to get some ideas of how to configure it.
 
@@ -7467,7 +7536,7 @@ Use the tab menu to enable all the keyboards. Type he to get a list of commands.
 $end
 $info=ob68k1a
 $mame
-- All input must be in UPPERcase. Some commands:
+- All input must be in UPPER case. Some commands:
 - A : display contents of Address registers
 - D : display contents of Data registers
 - G : go, using PC register as the start address
@@ -7718,7 +7787,7 @@ $end
 $info=p8000_16
 $mame
 INITIALIZATION:
-Press enter to get a prompt. All commands must be in UPPERcase.
+Press enter to get a prompt. All commands must be in UPPER case.
 
 Not known what the commands are, but these did something:
 LOAD - hangs the machine
@@ -8115,7 +8184,7 @@ TIPS:
 PECOM
 =====
 
-PLOAD (must be uppercase) then start the tape.
+PLOAD (must be UPPER case) then start the tape.
 
 Screen turns blue. When data is found, screen flashes in an epilepsy-inducing way.
 
@@ -8133,7 +8202,7 @@ $mame
 TIPS:
 The usual way of loading a new rom was to plug it into the board. This has been replaced with cartslots, to save having to recompile whenever a new rom is found. Single rom programs will usually work in any slot (if it is going to work at all). A working rom will appear in the menu. Press the first letter to run it.
 
-Although lowercase can be entered, it's preferable to use uppercase.
+Although lower case can be entered, it's preferable to use UPPER case.
 
 Monitor Commands
 ----------------
@@ -8276,7 +8345,7 @@ $info=pencil2
 $mame
 TIPS:
 SD-BASIC usage:
-All commands must be in uppercase, which is the default at boot.
+All commands must be in UPPER case, which is the default at boot.
 The 'capslock' is done by pressing Shift and Esc together, and the cursor will change to a checkerboard pattern.
 
 To save a tape: SAVE "X"
@@ -8642,7 +8711,7 @@ To load a tape: CLOAD
 Tapes from PHC25 and MAP1010 are compatible.
 
 $end
-$info=phrcraze
+$info=phrcraze,phrcrazea,phrcrazeb,phrcrazec,phrcrazev
 $mame
 INITIALIZATION:
 When you see 'PUSH ANY SWITCH', press [ C ] key to proceed.
@@ -9243,7 +9312,7 @@ $info=pyl601,pyl601a
 $mame
 TIPS:
 - PYL601 - command 'MODE80' does nothing
-- PYL601a - most software looks odd (unplayable) because of the different design of the screen.
+- PYL601A - most software looks odd (unplayable) because of the different design of the screen.
 - PYL601A - command 'MODE40' doesn't go to 40-columns, instead there is a space between each letter.
 
 The BASIC
@@ -9269,16 +9338,7 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
-$info=qsangoku
-$mame
-INITIALIZATION:
-After start the game, it will say 'M E N U...'. Press 'P2 Start' [ 2 ] to proceed.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=qtono1
+$info=qsangoku,qtono1
 $mame
 INITIALIZATION:
 After start the game, it will say 'M E N U...'. Press 'P2 Start' [ 2 ] to proceed.
@@ -9289,7 +9349,7 @@ http://wiki.mamedev.org/index.php/FAQ:Games
 $end
 $info=quickshts
 $mame
-When started, there's an error. Press 1 to get to the test menu. Then keep pressing 1 until option 8 is selected. Press 2.
+When started, there's a coprocessor error. Press 1 to continue.
 $end
 $info=racedriv
 $mame
@@ -9431,7 +9491,7 @@ When run for the first time, some adjustments need to be made in MAME's tab menu
 
 Now you can use the system.
 
-Commands (must be in uppercase):
+Commands (must be in UPPER case):
 A    Examine memory; press C to alter memory (Esc to quit)
 B    Set breakpoint?
 C    View breakpoint?
@@ -9873,9 +9933,9 @@ Keyboard notes and BTANBs:
 
 - Keyboards on all models are identical, except on UK101 where ^ replaces LINE FEED.
 
-- When run for the first time, the keyboard is in lowercase. Shift will correctly select uppercase. Special keys do weird things, but come good when Shift pressed. Since all input MUST be uppercase, the first thing to do is press Capslock (which is SHIFT LOCK on the real machine). This is saved in your cfg file on exit.
+- When run for the first time, the keyboard is in lowercase. Shift will correctly select UPPER case. Special keys do weird things, but come good when Shift pressed. Since all input MUST be UPPER case, the first thing to do is press Capslock (which is SHIFT LOCK on the real machine). This is saved in your cfg file on exit.
 
-- After that, uppercase works correctly, as do the other keys. Pressing Shift will now do odd things to the letters, and they become random symbols.
+- After that, UPPER case works correctly, as do the other keys. Pressing Shift will now do odd things to the letters, and they become random symbols.
 
 - Natural keyboard is set up to take advantage of these oddities and get the maximum symbols available, however lowercase is not available. Natural keyboard will only work correctly when the SHIFT LOCK is engaged.
 
@@ -9969,7 +10029,7 @@ $end
 $info=sdk80
 $mame
 TIPS:
-All input must be in UPPERcase.
+All input must be in UPPER case.
 
 Monitor Commands:
 D<low address>,<high address>                Display memory contents
@@ -10369,6 +10429,16 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
+$info=sltpcycl,sltpcycla,sltpcyclb
+$mame
+TIPS:
+This game is free. Press Alt, then space 3 times to get to the race screen, then space to get MARCHA 7. Press Ctrl to start the race, then keep tapping Ctrl to go faster.
+$end
+$info=sltpstep,sltpstepa
+$mame
+TIPS:
+This game is free. Press Alt, then space 5 times to get to the race screen, then space to get MARCHA 5. Press Ctrl to start the race, then keep tapping Ctrl to go faster.
+$end
 $info=smc777
 $mame
 TIPS:
@@ -10516,7 +10586,7 @@ $end
 $info=sorcerer,sorcerera,sorcererb,sorcererd,sorcerer2
 $mame
 INITIALIZATION:
-All input to be in UPPERcase.
+All input to be in UPPER case.
 
 To set the tape speed:
 -  SE T=0  (1200 baud - the default)
@@ -10916,7 +10986,7 @@ $end
 $info=swtpc,swtpcm
 $mame
 TIPS:
-All commands to be in UPPERcase.
+All commands to be in UPPER case.
 
 List of monitor commands:
 B Breakpoint
@@ -11247,7 +11317,7 @@ To save a tape: SAVE CS1
 
 To load a tape: OLD CS1
 
-The device name is case-sensitive, and must be in UPPERcase. Probably a good idea to make sure capslock is selected.
+The device name is case-sensitive, and must be in UPPER case. Probably a good idea to make sure capslock is selected.
 
 If a valid cartridge is selected, it should appear in the opening menu as a choice.
 
@@ -11514,7 +11584,7 @@ BOOT ERROR TK: Record not found bootstrap track. Improperly formatted or defecti
 
 BOOT ERROR RS: The diskette in Drive 0 is not Radio Shack operating system format.
 
-No XENIX disks work. If you use TRSDOS, commands must be in UPPERcase. DIR to get the directory.
+No XENIX disks work. If you use TRSDOS, commands must be in UPPER case. DIR to get the directory.
 
 $end
 $info=trs80m3,trs80m4,cp500
@@ -11576,9 +11646,9 @@ Shift-0 = backspace
 Many software-list items will complain of "RAMTOP no good" and won't work.
 
 $end
-$info=tsconf
+$info=tsconf,tsconf2
 $mame
-INITIALIZATION:
+INITIALISATION:
 Make sure to go into the Input Settings and enable all keyboards. The first time this is run you get the "TS-BIOS Setup Utility". It says to press F12, but this key doesn't work. Instead, change whatever you want (if anything), then quit and restart. On the next run, the system starts, and it expects a disk to be present. You can use one from the software list.
 $end
 $info=tshoot
@@ -12201,7 +12271,7 @@ XOR 100
 
 My disks either crash MAME or are rejected.
 
-All input is to be in UPPERcase.
+All input is to be in UPPER case.
 
 Monitor commands:
 D - display memory
