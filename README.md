@@ -3,12 +3,12 @@ MAME Support Files v0.287
 -------------------------
 
 The following files have been updated in this MAME cycle:
-
+- Category pack
 - renameSET.dat
 
 Not updated in this cycle:
 - bestgames.ini
-- Category pack
+
 - CatVer pack
 - CHD-Info pack
 - command.dat
