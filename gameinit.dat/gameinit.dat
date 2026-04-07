@@ -1,9 +1,9 @@
-﻿# MAME GAMEINIT.DAT v0.286    Latest Update:      Mar 12, 2026
+﻿# MAME GAMEINIT.DAT v0.287    Latest Update:      Apr  7, 2026
 #                          Project started: September 10, 2015
 #           Merged to the file startup.dat:  December 17, 2024
 #
 # File designed and maintained by AntoPISA and Robbbert
-# Internal versione 12.02
+# Internal versione 12.03
 #
 # Homepage         : https://www.progettosnaps.net/gameinit.dat
 # Github repository: https://github.com/AntoPISA/MAME_SupportFiles
@@ -178,6 +178,7 @@ L  = to load it back in.
 Since there is no motor control, type in L then mount the tape.
 
 Note: ac1scch not working.
+
 $end
 $info=acrnsys1
 $mame
@@ -212,10 +213,12 @@ Note that left-most digit is not wired up, and therefore will always be blank.
 $end
 $info=acrnsys2,acrnsys3_6809
 $mame
+INITIALIZATION:
 Commands must be in UPPER case.
 
 To load a tape: LOAD"x"
 To save a tape: SAVE"x" a b [c], where a to b is region of memory to save, and optional c is the go address.
+
 $end
 $info=acrnsys3,acrnsys4,acrnsys5
 $mame
@@ -223,6 +226,7 @@ TIPS:
 Commands must be in UPPER case.
 
 Must load a floppy disk. Use CAT to get a directory.
+
 $end
 $info=adam
 $mame
@@ -243,6 +247,7 @@ $info=aftor
 $mame
 INITIALIZATION:
 Press num-0 to enter service/selftest. Press 1 to step through the tests. When you reach the audit stages, press 6 to advance and 5 to clear. In the switch test, it will report any closed dip as a failure. You can ignore these. The game has 2 balls, for multiball feature, so the outhole doesn't work because it thinks the 2nd ball is in play somewhere. To activate the end-of-ball, hold down X then tap END.
+
 $end
 $info=agat7,agat9
 $mame
@@ -372,7 +377,9 @@ Others            ---  1                         X
 $end
 $info=aligatorp
 $mame
+INITIALIZATION:
 At the error screen, press 1 to proceed.
+
 $end
 $info=allied
 $mame
@@ -386,6 +393,7 @@ INITIALIZATION:
 After it starts up in the monitor, use the B command to boot the disk.
 
 NOTE: alphatp1 has keyboard problems and is unusable.
+
 $end
 $info=alphatro,alphatron,alphatrob
 $mame
@@ -416,8 +424,10 @@ For disks to work, in Configuration, enable "FDD Unit installed".
 $end
 $info=altaten,lunaprk,mcolors,mcolorsa,suprpool
 $mame
+INITIALIZATION:
 INITIALISATION:
 If you get a message about invalid NVRAM, press one at a time F2 b z v m m.
+
 $end
 $info=alto2
 $mame
@@ -597,15 +607,11 @@ http://wiki.mamedev.org/index.php/FAQ:Games
 $end
 $info=animechmp,bassang2,bassangl,cr589fw,cr589fwa,darkhleg,ddr2m,ddr2mc2,ddr2ml,ddr2mla,ddr2mlb,ddr3ma,ddr3mj,ddr3mk,ddr3mka,ddr3mp,ddr4m,ddr4mj,ddr4mp,ddr4mps,ddr4ms,ddr4msj,ddr5m,ddra,ddrbocd,ddrextrm,ddrj,ddrja,ddrjb,ddrkara2,ddrmax,ddrmax2,ddrs2k,ddrs2kj,ddrsbm,ddru,dmx,dmx2m,dmx2majp,dmxa,dncfrks,drmn,drmn10m,drmn2m,drmn2mpu,drmn3m,drmn4m,drmn5m,drmn6m,drmn7m,drmn7ma,drmn8m,drmn9m,drmn9ma,drmna,drmnu,dsem,dsem2,dsfdct,dsfdcta,dsfdr,dsftkd,dstage,fbaitbc,fbaitmc,fbaitmca,fbaitmcj,fbaitmcu,fghtmn,fghtmna,fghtmnk,fghtmnu,gbbchmp,gchgchmp,gtfrk10m,gtfrk10ma,gtfrk11m,gtfrk3ma,gtfrk3mb,gtrfrk2m,gtrfrk2ma,gtrfrk2maa,gtrfrk2mja,gtrfrk2mka,gtrfrk2ml1,gtrfrk2ml2,gtrfrk2mua,gtrfrk3m,gtrfrk4m,gtrfrk5m,gtrfrk5ma,gtrfrk6m,gtrfrk7m
 $mame
+INITIALIZATION:
 Messages that start with 6: press F2
 Messages that start with 5: press F3
 Any other messages: The game doesn't work, cannot proceed.
-$end
-$info=gtrfrk8m,gtrfrk8ma,gtrfrk9m,gtrfrks,gtrfrksa,gtrfrksaa,gtrfrksac,gtrfrksc,gtrfrksea,gtrfrksj,gtrfrksja,gtrfrksjc,gtrfrksu,gtrfrksua,gtrfrksuc,gunmania,hndlchmp,hndlchmpj,hypbbc2p,hypbbc2pk,hyperbbc,hyperbbca,hyperbbck,jppyex98,kicknkick,mamboagg,mamboagga,mrtlbeat,mrtlbeata,pcnfrk,pcnfrk10m,pcnfrk2m,pcnfrk2mk,pcnfrk3m,pcnfrk3mk,pcnfrk4m,pcnfrk4mk,pcnfrk5m,pcnfrk5mk,pcnfrk6m,pcnfrk7m,pcnfrk8m,pcnfrk9m,pcnfrka,pcnfrkk,pnchmn,pnchmn2,pnchmna,powyakex,salarymc,stepchmp,strgchmp
-$mame
-Messages that start with 6: press F2
-Messages that start with 5: press F3
-Any other messages: The game doesn't work, cannot proceed.
+
 $end
 $info=antar,attack,blkfever,cerberup,evlfight,madrace,storm,zira
 $mame
@@ -655,12 +661,6 @@ CSAVE     to save.
 A tape can only be successfully loaded if the machine it was recorded on has the same amount of RAM as the destination machine.
 
 Even then, tape loading is unreliable and there's no error if things go wrong.
-
-$end
-$info=hmxpro,imac,tpad850,wto2840sp,sun_s10,sun_s20
-$mame
-TIPS:
-This system doesn't work and may crash the emulator. Don't run it.
 
 $end
 $info=apogee
@@ -784,6 +784,7 @@ $info=apple2c,apple2cfr,apple2cde,apple2cse,apple2cuk,apple2cp,ace500,laser128,l
 $mame
 TIPS:
 You can press Ctrl F12 to get into Basic. This doesn't work for those with Memory Expansion, Rev 4, or Unidisk.
+
 $end
 $info=apple2e,albert,am64,am100,apple2p,apple2jp,craft2p,dodo,elppa,ace100,ace1000,hkc8800a,ivelultr,laser2c,maxxi,microeng,prav82,prav8m,uniap2pt,uniap2en,uniap2ti,apple2ee,apple2eefr,apple2eede,apple2eeuk,apple2efr,apple2ede,apple2ep,apple2epfr,apple2epde,apple2epse,apple2epuk,ace2200,prav8c,spectred,cec2000,cece,cecg,ceci,cecm,zijini
 $mame
@@ -791,6 +792,7 @@ TIPS:
 Press Ctrl F12 to get into Basic.
 
 Then you can LOAD or SAVE.
+
 $end
 $info=apple2gs,apple2gsr0p2,apple2gsr0p,apple2gsr0,apple2gsr1
 $mame
@@ -798,6 +800,7 @@ TIPS:
 You can press Ctrl F12 to get into Basic. Cassette commands are ignored.
 
 NOTE: apple2gsmt and apple2gsr3p do not work.
+
 $end
 $info=applix
 $mame
@@ -877,10 +880,12 @@ mameinfo.dat
 $end
 $info=assist05
 $mame
+INITIALIZATION:
 All input to be in UPPER case.
 B = breakpoint
 T = trace
 Others (unknown meaning): A,C,G,L,M,P,R,W,X
+
 $end
 $info=asterix
 $mame
@@ -1008,6 +1013,7 @@ $info=aviion_4600
 $mame
 TIPS:
 Enter "h" (without quotes) to get a list of commands.
+
 $end
 $info=avmjts
 $mame
@@ -1056,6 +1062,7 @@ $info=b2m
 $mame
 TIPS:
 Load up a boot floppy, such as CP/M and then press any key. The cursor will change from flashing to steady while it boots.
+
 $end
 $info=babbage
 $mame
@@ -1078,15 +1085,19 @@ TIPS:
 - To exit the pinball back to the video:
 Babypac: press O or P;
 Granny: press X.
+
 $end
 $info=bankshot
 $mame
+INITIALIZATION:
 Press shift 1 or more times to choose the difficulty level. Then press Space to start.
+
 $end
 $info=basf7120
 $mame
 TIPS:
 Can only boot the bos93 software-list item.
+
 $end
 $info=basic31,basic52
 $mame
@@ -1096,10 +1107,13 @@ Press Space to make the machine start up.
 All input must be in uppercase. Read the manual to discover the special features of this Basic.
 
 Sound: BASIC-31 has sound, and BASIC-52 doesn't. The sound command is PWM. Example: PWM 800,200,900
+
 $end
 $info=basschal,basschalo,xtrmhunt
 $mame
+INITIALIZATION:
 Due to a regression, need to wait up to 5 minutes at a black screen before it suddenly springs to life.
+
 $end
 $info=bbcb,bbcm
 $mame
@@ -1152,6 +1166,7 @@ $info=bbear,monkmonk
 $mame
 TIPS:
 This seems to run, but without external artwork there's nothing to see.
+
 $end
 $info=bbnny_l2,diner_l4,dd_l2,pool_l7,radcl_l1,rvrbt_l3,rollr_l2,gs_lu4,strax_p7
 $mame
@@ -1246,6 +1261,7 @@ $info=bert
 $mame
 TIPS:
 Runs a simplified integer BASIC. You can create a program with line numbers. Numeric variables must be one letter. Although it can print literals, it doesn't seem to support string variables. Doesn't seem to support loading or saving of programs.
+
 $end
 $info=beta
 $mame
@@ -1266,7 +1282,9 @@ Now press M to confirm the data has been entered.
 $end
 $info=bigboard,mk82,mk83,mojmikro
 $mame
+INITIALIZATION:
 After a few seconds, hit Enter, and the prompt will appear.
+
 $end
 $info=bigbord2
 $mame
@@ -1845,6 +1863,7 @@ To load a tape: LOAD
 To switch from C128 mode to C64 mode: GO64 (answer Y).
 
 NOTE: c128d81 needs a disk in the drive before it will boot.
+
 $end
 $info=c16,plus4,c264,c116,c16_hu,c16p,c232,v364,plus4p
 $mame
@@ -1869,6 +1888,7 @@ To get the floppy directory: LOAD"$",8 and then LIST. This wipes out whatever pr
 The default disk drive is on device 8 (slot iec8). If you want another drive, load it into iec9.
 
 NOTE: clipper not working. c64gs is cartridge only. tesa6240 is a business machine.
+
 $end
 $info=c80
 $mame
@@ -1926,11 +1946,13 @@ $info=calchase
 $mame
 TIPS:
 When it has booted to the DOS screen, type BOOT and press enter. The game will run, very slowly.
+
 $end
 $info=camirf1
 $mame
 TIPS:
 Attempting to run this system will cause MAME to freeze, requiring Task Manager to kill it off.
+
 $end
 $info=can09t
 $mame
@@ -1944,6 +1966,7 @@ $info=cane
 $mame
 TIPS:
 After inserting a coin, press Right Arrow to start the game. The 1 key does nothing.
+
 $end
 $info=canons80,canonts3
 $mame
@@ -2008,11 +2031,13 @@ https://www.progettosnaps.net/gameinit.dat
 $end
 $info=casbjack,mdrawpkr,mdrawpkra
 $mame
+INITIALIZATION:
 INITIALISATION:
 First time run it says BATTERY RAM FAILURE. Press F1 (get blank screen), hold 9 and 0 together until the errors go away. Press F1 to start the game.
 
 SOURCE:
 mameinfo.dat
+
 $end
 $info=cb308
 $mame
@@ -2024,8 +2049,10 @@ Press Enter twice. You will see the Monitor logo. To get into the BASIC, enter G
 $end
 $info=cb3c
 $mame
+INITIALIZATION:
 INITIALISATION:
 If it appears stuck at INIT MACHINE, press 9 and 0 together. Now press W.
+
 $end
 $info=cbrava
 $mame
@@ -2050,7 +2077,9 @@ The CC-40+ cassette device number is 1, eg. SAVE"1.FILENAME" to save, and OLD"1.
 $end
 $info=cchime
 $mame
+INITIALIZATION:
 No screen. It's a door chime. All you can do is press Ctrl or Alt for a tune.
+
 $end
 $info=ccs2810
 $mame
@@ -2208,8 +2237,10 @@ mameinfo.dat
 $end
 $info=classiceo
 $mame
+INITIALIZATION:
 INITIALISATION:
 If the game asks for a password, press C X C X C X C X C X C X I, then restart the game (F3 doesn't work). Ignore the counter, press 1 when asked.
+
 $end
 $info=clcd
 $mame
@@ -2233,6 +2264,7 @@ Maaaa/bbbb>cccc : Move (copy) memory
 Saaaa : Substitute memory (write bytes into memory)
 T : ?
 Xr : set register to this value
+
 $end
 $info=cmpacman
 $mame
@@ -2308,6 +2340,7 @@ DRAGON64
 Even though the Dragon64 is supposed to be a clone of the coco, the diskette format is different. Disks for Dragon64 will be suffixed by [D64].
 
 NOTE: coco3p crashes MAME at start.
+
 $end
 $info=comg5108
 $mame
@@ -2825,8 +2858,10 @@ To load a tape: TR
 $end
 $info=ddr2mc
 $mame
+INITIALIZATION:
 INITIALISATION:
 When first run, it will say INCORRECT SECURITY CASSETTE. In the DIP switches, change the "Start Up Device" to "CD-ROM Drive". Do not Reset, Esc instead. Go to File Manager, where it says "cdrom" change to "install". Do not Reset, Esc instead until the menu is gone. Now hit F3. It says to push Test Button, so press F2. When it completes, in the DIP Switches, change "Start Up Device" to "Flash ROM", and choose Reset System. After wasting more time, it will eventually start.
+
 $end
 $info=ddragon
 $mame
@@ -2848,6 +2883,7 @@ https://www.progettosnaps.net/gameinit.dat
 $end
 $info=ddrusa
 $mame
+INITIALIZATION:
 INITIALISATION:
 Messages that start with 6: press F2
 Messages that start with 5: press F3
@@ -3230,6 +3266,7 @@ $info=eggsplc
 $mame
 TIPS:
 If it complains of CMOS settings or battery, press F1. When you get the EMM386 error, press a key, or wait several minutes.
+
 $end
 $info=einstein,einst256
 $mame
@@ -3300,6 +3337,7 @@ UEF files work, WAV files do not.
 Keys: Up = I, Left = J, Right = K, Down = M. Map these to the arrow keys. Space = shoot.
 
 NOTE: btm2105 is a terminal that uses electron hardware.
+
 $end
 $info=elecyoyo
 $mame
@@ -3698,7 +3736,9 @@ After it finishes loading, then RUN
 $end
 $info=exorciser
 $mame
+INITIALIZATION:
 TIPS: At start, press X until the EXBUG prompt shows. Now enter the name of the module you want (one of MAID LOAD VERF SRCH PNCH PRNT TERM S10. S30. S120 S240), don't hit enter. MAID is the debugger. More info in the driver notes or the manual.
+
 $end
 $info=exp85
 $mame
@@ -3784,7 +3824,7 @@ http://wiki.mamedev.org/index.php/FAQ:Games
 $end
 $info=fds
 $mame
-
+INITIALIZATION:
 Pressing SPACE will select the next side of the disk.
 
 $end
@@ -4113,10 +4153,13 @@ If you get a memory error (with a loud alarm), press 9.
 
 SOURCE:
 mameinfo.dat
+
 $end
 $info=fvipers,fvipersa,fvipersb,schamp,sfight
 $mame
+INITIALIZATION:
 This game only works with the DRC turned off. If the sound buzzes loudly, choose portaudio.
+
 $end
 $info=fvrpitch
 $mame
@@ -4331,6 +4374,14 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
+$info=gtrfrk8m,gtrfrk8ma,gtrfrk9m,gtrfrks,gtrfrksa,gtrfrksaa,gtrfrksac,gtrfrksc,gtrfrksea,gtrfrksj,gtrfrksja,gtrfrksjc,gtrfrksu,gtrfrksua,gtrfrksuc,gunmania,hndlchmp,hndlchmpj,hypbbc2p,hypbbc2pk,hyperbbc,hyperbbca,hyperbbck,jppyex98,kicknkick,mamboagg,mamboagga,mrtlbeat,mrtlbeata,pcnfrk,pcnfrk10m,pcnfrk2m,pcnfrk2mk,pcnfrk3m,pcnfrk3mk,pcnfrk4m,pcnfrk4mk,pcnfrk5m,pcnfrk5mk,pcnfrk6m,pcnfrk7m,pcnfrk8m,pcnfrk9m,pcnfrka,pcnfrkk,pnchmn,pnchmn2,pnchmna,powyakex,salarymc,stepchmp,strgchmp
+$mame
+INITIALIZATION:
+Messages that start with 6: press F2
+Messages that start with 5: press F3
+Any other messages: The game doesn't work, cannot proceed.
+
+$end
 $info=gtroppo
 $mame
 INITIALIZATION:
@@ -4379,7 +4430,9 @@ To load a tape: CLOAD
 $end
 $info=h2hbaskb,h2hhockey
 $mame
+INITIALIZATION:
 Hold down Left and Right arrow keys, and press 1.
+
 $end
 $info=h8
 $mame
@@ -4480,7 +4533,7 @@ $end
 $info=hec2hrp,hec2hr,hec2hrx,hec2mdhrx,hec2mx40,hec2mx80,victor
 $mame
 TIPS:
-These machines can load and run cassettes for the interact/hector1: 
+These machines can load and run cassettes for the interact/hector1:
 hec2hr - press 2 then 1
 hec2hrp - press 2 then 1
 victor - press R then L
@@ -4518,6 +4571,12 @@ Hektor III usage notes:
 To save a tape: Sa,b (where a = start address, b = end address). It says SET RECORD. Do so, then hit Enter.
 
 To load a tape: L - it says SET PLAY - hit enter then press PLAY.
+
+$end
+$info=hmxpro,imac,tpad850,wto2840sp,sun_s10,sun_s20
+$mame
+TIPS:
+This system doesn't work and may crash the emulator. Don't run it.
 
 $end
 $info=homelab2,homelab3,homelab4,brailab4
@@ -4617,6 +4676,7 @@ To save: SAVE
 To load: LOAD
 
 To quit back to the monitor: EXIT
+
 $end
 $info=ht68k
 $mame
@@ -4686,6 +4746,7 @@ To save a tape: SAVE"x"
 To load a tape: LOAD"x"
 
 Tapes are compatible with other early IBM PCs, such as IBM5150.
+
 $end
 $info=ibmpcjx
 $mame
@@ -4699,6 +4760,7 @@ To load a tape: LOAD"CAS1:x"
 Tapes are compatible with other early IBM PCs, such as IBM5150 and PCJR.
 
 Filenames are case sensitive. Don't press INS while loading because it instantly goes to a black screen.
+
 $end
 $info=icebox
 $mame
@@ -4786,7 +4848,9 @@ To load a tape: Mount the tape, press F2 (it loads by itself)
 $end
 $info=intel02
 $mame
+INITIALIZATION:
 MAMEUI only: You must choose a cartridge, otherwise you'll be deafened by an ear-breaking screech.
+
 $end
 $info=interact,hector1
 $mame
@@ -4800,6 +4864,12 @@ If you use EduBasic:
 - SAVE to save, and LOAD to load. However, problems exist with the cassette. It's better to use Basic instead.
 
 $end
+$info=intvecs
+$mame
+INITIALIZATION:
+The cartridges that work are: wsmlbase, factory, scooby, mindstrk, jetsons.
+
+$end
 $info=invcarht
 $mame
 TIPS:
@@ -4808,10 +4878,6 @@ Press [ ALT ] to select "Invinco" or "Car Hunt".
 SOURCE:
 mameinfo.dat
 
-$end
-$info=intvecs
-$mame
-The cartridges that work are: wsmlbase, factory, scooby, mindstrk, jetsons.
 $end
 $info=ipb,ipc
 $mame
@@ -4852,14 +4918,19 @@ $info=iris3130,ms68k,ncd16,ncd19
 $mame
 TIPS:
 Enter ? or h to get help
+
 $end
 $info=irisha
 $mame
+INITIALIZATION:
 First few menu items say: START? MONITOR CASSETTE DISK
+
 $end
 $info=isbc2861,isbc28612
 $mame
+INITIALIZATION:
 Don't press any keys and wait a while for it to start up.
+
 $end
 $info=isbc8010,isbc8010a,isbc8010b
 $mame
@@ -5004,13 +5075,17 @@ http://wiki.mamedev.org/index.php/FAQ:Games
 $end
 $info=jokpokera
 $mame
+INITIALIZATION:
 INITIALISATION:
 If it says ERROR at start, hold F2, hit F3, release F2. Then at the test screen hit F2 and game will start.
+
 $end
 $info=jokpokerb,jokpokerc
 $mame
+INITIALIZATION:
 INITIALISATION:
 If it says ERROR at start, hit F3. Then at the test screen hit F2 and game will start.
+
 $end
 $info=jollycrd
 $mame
@@ -5098,6 +5173,7 @@ $info=jspecter
 $mame
 TIPS:
 At start it asks to choose game A or B. A is the default, to choose B hold joystick right and press 1, wait for B to flash before letting go.
+
 $end
 $info=jtces88
 $mame
@@ -5117,8 +5193,10 @@ To boot from a floppy disk, press T D D
 $end
 $info=jumbogod
 $mame
+INITIALIZATION:
 INITIALISATION:
 If it shows DIP SW READ ERROR, press F3, wait for error, press F3, then it will start.
+
 $end
 $info=junior
 $mame
@@ -5183,6 +5261,7 @@ $info=k8915
 $mame
 INITIALIZATION:
 When it says DIAGNOSTIC RAZ P, press enter.
+
 $end
 $info=kaypro10,kaypro484,kayproii,kaypronew2,robie,kaypro1084,kaypro1,kaypro284,kaypro2x,kaypro484p88,omni4,kayproiip88,kayproiv,omni2,kaypro4x
 $mame
@@ -5209,6 +5288,7 @@ Note that some versions don't work partly or at all.
 Some disks don't have boot tracks, so need to be mounted in B drive. These are marked as [Bdrive].
 
 The older disks end with _b (bootable) or _nb (not bootable).
+
 $end
 $info=kbh
 $mame
@@ -5225,6 +5305,7 @@ INITIALIZATION:
 
 SOURCE:
 https://www.progettosnaps.net/gameinit.dat
+
 $end
 $info=kbm
 $mame
@@ -5239,6 +5320,7 @@ INITIALIZATION:
 
 SOURCE:
 https://www.progettosnaps.net/gameinit.dat
+
 $end
 $info=kbm2nd
 $mame
@@ -5255,6 +5337,7 @@ INITIALIZATION:
 
 SOURCE:
 https://www.progettosnaps.net/gameinit.dat
+
 $end
 $info=kbm3rd
 $mame
@@ -5273,6 +5356,7 @@ INITIALIZATION:
 
 SOURCE:
 https://www.progettosnaps.net/gameinit.dat
+
 $end
 $info=kc85,pc8201,tandy200,trsm100,m10,pc8201a,npc8300,tandy102
 $mame
@@ -5282,6 +5366,7 @@ If numbers produce weird characters, use Caps Lock.
 To use cassettes, start up Basic.
 - To save a tape: CSAVE"x"
 - To load a tape: CLOAD
+
 $end
 $info=kc85_2,kc85_3,kc85_4,kc85_5
 $mame
@@ -5325,6 +5410,7 @@ In Basic:
 - To load a tape: CLOAD "x"
 
 Image types tested to work are KCC and TAP.
+
 $end
 $info=keks_6
 $mame
@@ -5333,6 +5419,7 @@ To initialize the game, turn Service Mode ON [ F2 ] and press reset [ F3 ]. Move
 
 SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
+
 $end
 $info=kgbird
 $mame
@@ -5341,6 +5428,7 @@ At the first start, "CALL ATTENDANT" will flash at the top, to start press in se
 
 SOURCE:
 https://www.progettosnaps.net/gameinit.dat
+
 $end
 $info=kim1
 $mame
@@ -5350,11 +5438,14 @@ To save a tape: -17F5=startlow up starthigh up endlow up endhigh up 01 up -1800 
 To load a tape: -17F9=01 up -1873 enter.
 
 The '01' is a file number - you can choose something else.
+
 $end
 $info=kingdrbb
 $mame
+INITIALIZATION:
 INITIALISATION:
 At first run the game locks up with COINS in the corner. Press F3 to fix this.
+
 $end
 $info=kiwame
 $mame
@@ -5363,6 +5454,7 @@ The first time you run the game, it will say 'BACKUP ERROR'. Press [ F3 ] to pro
 
 SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
+
 $end
 $info=kiwames
 $mame
@@ -5372,11 +5464,13 @@ After the game starts to boot, re-enter the TEST MENU [ F2 ]. Use [ 9 ] to move 
 
 SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
+
 $end
 $info=kollon
 $mame
 INITIALIZATION:
 Wait for the blue bar to say COMPLETE. It will restart itself and work.
+
 $end
 $info=kollonc
 $mame
@@ -5388,6 +5482,7 @@ INITIALIZATION:
 * Press Tab. In the Dipswitch menu, turn BIOS Flash to Off and choose Reset System.
 
 * Wait for the blue bar to say COMPLETE. It will restart itself and work.
+
 $end
 $info=konam80s,konam80a,konam80k,konam80u,konam80j
 $mame
@@ -5396,6 +5491,7 @@ The first time you run the game, it will dump you on a clock setting screen. Kee
 
 SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
+
 $end
 $info=korvet,bk8t,kontur,neiva
 $mame
@@ -5430,6 +5526,7 @@ Sonken : [ B ] (x3), [ C ], [ D ], [ C ], [ B ] (x2), [ DOWN ] (x2)
 
 SOURCE:
 mameinfo.dat
+
 $end
 $info=kram
 $mame
@@ -5438,6 +5535,7 @@ You can use [ F1 ] to proceed through all the configuration screens, stopping wh
 
 SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
+
 $end
 $info=kramermc
 $mame
@@ -5480,6 +5578,7 @@ There's numerous bugs in the rom's keyboard routine. Shift has to be pressed and
 Even though cassette and terminal support are supposed to exist, the device redirection commands do nothing.
 
 The natural keyboard has been added, although shifted characters will not work, or for paste either, because of the shift-key bug. Further, paste drops every second character.
+
 $end
 $info=kristall2
 $mame
@@ -5489,11 +5588,13 @@ To save a tape: Oa,b  (where a = start address, b = end address)
 To load a tape: R
 
 This system cannot load Mikro-80 tapes, so therefore cannot use anything from the software list. Instead, it can load tapes meant for radio86.
+
 $end
 $info=kuzmich
 $mame
 TIPS:
 Press R to start a game.
+
 $end
 $info=landmakr
 $mame
@@ -5502,15 +5603,7 @@ Alternative Gameplay : press Shoot, Left, Right, Shoot on the titlescreen before
 
 SOURCE:
 mameinfo.dat
-$end
-$info=laser3k
-$mame
-TIPS:
-An Apple II clone that boots into Basic.
 
-To save a file: SAVE
-
-To load a file: LOAD
 $end
 $info=laser110,laser200,laser210,laser310,vz200,vz300,fellow,tx8000,laser310h
 $mame
@@ -5558,6 +5651,16 @@ Cassette
 --------
 To save a tape: CSAVE
 To load a tape: CLOAD , then RUN
+
+$end
+$info=laser3k
+$mame
+TIPS:
+An Apple II clone that boots into Basic.
+
+To save a file: SAVE
+
+To load a file: LOAD
 
 $end
 $info=lc80,lc80e,lc80a,lc80_2
@@ -5904,8 +6007,10 @@ SAV files are just static screenshots, and are thus useless.
 $end
 $info=lvpoker
 $mame
+INITIALIZATION:
 INITIALISATION:
 On first run it will say ERROR FOUND, let it do that 3 times then it will stop. Press - (minus) key and it will fix itself.
+
 $end
 $info=lynx48k,lynx96k,lynx128k
 $mame
@@ -6055,8 +6160,10 @@ http://wiki.mamedev.org/index.php/FAQ:Games
 $end
 $info=magic102,magic102a
 $mame
+INITIALIZATION:
 INITIALISATION:
 If you get a message about invalid NVRAM, press one at a time F2 b z 1 m m.
+
 $end
 $info=magicrd2
 $mame
@@ -6069,7 +6176,9 @@ http://wiki.mamedev.org/index.php/FAQ:Games
 $end
 $info=magnum
 $mame
+INITIALIZATION:
 The system is marked as working, but there's no disk drives or software. The only menu options that work are F1, F2, F6, F10. Use F12 to exit them back to the menu.
+
 $end
 $info=magzun
 $mame
@@ -6082,8 +6191,10 @@ http://wiki.mamedev.org/index.php/FAQ:Games
 $end
 $info=manxtt,manxttdx
 $mame
+INITIALIZATION:
 INITIALISATION:
 To get past the DANGER screen, press F2 twice.
+
 $end
 $info=matchem
 $mame
@@ -6107,6 +6218,7 @@ The only files have no extension and look like HEX files, which is not supported
 $end
 $info=mbc200
 $mame
+INITIALIZATION:
 TIPS: Needs a boot disk.
 
 SBASIC: Running programs: the file names used within SBASIC must be in UPPER case. For example, run "DEMO" .
@@ -6225,11 +6337,15 @@ Unknown how to boot a floppy disk.
 $end
 $info=mc400
 $mame
+INITIALIZATION:
 Choose bios "V1.26F 020290", and then the system will boot.
+
 $end
 $info=mc68000
 $mame
+INITIALIZATION:
 Needs a boot disk. You must first add a floppy controller via the slots menu.
+
 $end
 $info=mcb216
 $mame
@@ -6249,6 +6365,7 @@ All commands to be in UPPER case.
 Press Space to make the machine start up.
 
 Some commands: C, D (dump bytes in memory), F, G, H, I, K, M, R, S (change byte in memory), T, W (write intel records) , X (show/change registers).
+
 $end
 $info=mcolors
 $mame
@@ -6257,15 +6374,20 @@ The first time you run the game, it will say 'DATI NVRAM-68K NON VALIDI!!!'. Pre
 
 SOURCE:
 mameinfo.dat
+
 $end
 $info=megadriv,megadrij,megaduck,megajet,megatech,microvsn,myvision
 $mame
+INITIALIZATION:
 Needs a cartridge.
+
 $end
 $info=mekd1,mekd3,mekd4
 $mame
+INITIALIZATION:
 INITIALISATION:
 Make sure in the Tab menu that all keyboards are enabled and that Caps Lock is toggled on. Pressing R should produce output.
+
 $end
 $info=mekd2
 $mame
@@ -6310,6 +6432,7 @@ HA002=00^20^00^32^HP (A002 has start address, A004 has end address, big endian)
 $end
 $info=mekd5
 $mame
+INITIALIZATION:
 INITIALISATION:
 Although this system is listed as working, it doesn't seem to accept any inputs.
 
@@ -6349,6 +6472,7 @@ FS RD (Verify from tape)
 FS 0 to F
 . One of 16 user defined functions. Press FS then one number key 0 to F.
 . A pointer to a table of 16 function addresses should be set at 0xe43f.
+
 $end
 $info=meritum1,meritum2,meritum_net
 $mame
@@ -6397,7 +6521,9 @@ http://wiki.mamedev.org/index.php/FAQ:Games
 $end
 $info=mex68kecb
 $mame
+INITIALIZATION:
 All input to be in UPPER case. Type HE for a list of commands.
+
 $end
 $info=mfabfz,mfabfz85
 $mame
@@ -6418,7 +6544,9 @@ http://wiki.mamedev.org/index.php/FAQ:Games
 $end
 $info=mice_6502,mice2_z80,mice2_6502,mice2_8085
 $mame
+INITIALIZATION:
 All input to be in UPPER case.
+
 $end
 $info=micral,questarm
 $mame
@@ -6585,7 +6713,9 @@ http://wiki.mamedev.org/index.php/FAQ:Games
 $end
 $info=mk98
 $mame
+INITIALIZATION:
 Hit Enter to make the drop-down menus appear.
+
 $end
 $info=mkit09
 $mame
@@ -6608,7 +6738,9 @@ Now press up-arrow to confirm the data has been entered.
 $end
 $info=mmahjong
 $mame
+INITIALIZATION:
 Use Ctrl and Alt when asked for 1 or 2. First question: 1=3 minutes play time; 2=5 minutes. Second question: 1=advanced; 2=beginner.
+
 $end
 $info=mmaulers
 $mame
@@ -6788,8 +6920,10 @@ http://wiki.mamedev.org/index.php/FAQ:Games
 $end
 $info=mosdraw
 $mame
+INITIALIZATION:
 INITIALISATION:
 If you get a message to call the attendant, press 0 then B (5 times) then 2.
+
 $end
 $info=mp68a,md6802,modulab
 $mame
@@ -7047,6 +7181,7 @@ BLE       Keyboard bleep
 KIL       Kill off the cache
 
 Some commands show a space between the command and the parameter. The system adds the space as you type, if you add one it will error.
+
 $end
 $info=mtlchamp
 $mame
@@ -7489,9 +7624,11 @@ To go back to 40 columns: OPEN #0,0
 To activate the LCD display: OPEN #0,4 - but the LCD doesn't work in MAME.
 
 NOTE: newbrainmd does not work.
+
 $end
 $info=ngp,ngpc
 $mame
+INITIALIZATION:
 INITIALISATION:
 
 How to set it up for the first time
@@ -7524,18 +7661,18 @@ $end
 $info=nws1580,nws3260,nws3410,nws3720,nws3860
 $mame
 INITIALIZATION:
-
 Use the tab menu to enable all the keyboards. Type h or help to get a list of commands.
 
 $end
 $info=nws831,nws5000x
 $mame
-
+INITIALIZATION:
 Use the tab menu to enable all the keyboards. Type he to get a list of commands.
 
 $end
 $info=ob68k1a
 $mame
+INITIALIZATION:
 - All input must be in UPPER case. Some commands:
 - A : display contents of Address registers
 - D : display contents of Data registers
@@ -7543,6 +7680,7 @@ $mame
 - T : trace one step (do multiple steps with a number, eg T 5 for 5 steps)
 - display contents of register by typing its name (eg A0 or PC or D5)
 - load a register with a value (eg A0 9876)
+
 $end
 $info=odin,odin_dlx,solarwap,poleposn,wolfman,nemesisp,odisea,sonstwar,hangonp
 $mame
@@ -7768,6 +7906,7 @@ Not supported.
 Cartridge
 ---------
 Not supported.
+
 $end
 $info=p8000
 $mame
@@ -8195,7 +8334,9 @@ This system only works in MAMEUI, not in MAME.
 $end
 $info=pegasos2
 $mame
+INITIALIZATION:
 If you run this system, don't press G because the emulator will immediately freeze solid.
+
 $end
 $info=pegasus,pegasusm
 $mame
@@ -8260,6 +8401,7 @@ INITIALIZATION:
 Status:
 - Rev.1: Working. At start of ball, hold X and tap Z, so that the player light becomes steady, then release both keys. This enables sensors.
 - Clones: Not working.
+
 $end
 $info=pentagon
 $mame
@@ -8579,6 +8721,7 @@ https://www.progettosnaps.net/gameinit.dat
 $end
 $info=pm68k
 $mame
+INITIALIZATION:
 Some commands:
 D : registers
 E : ?
@@ -8762,9 +8905,11 @@ GO : G
 Test Paste:
 M4000X11X22X33X44X55X66X77X88X99XM4000
 Now press X to confirm the data has been entered.
+
 $end
 $info=poly880s
 $mame
+INITIALIZATION:
 The SC1 version is a modification that turns the poly880 into a chess computer.
 
 SC1-SLC1 Keypad Reference:
@@ -9040,7 +9185,9 @@ http://wiki.mamedev.org/index.php/FAQ:Games
 $end
 $info=quickshts
 $mame
+INITIALIZATION:
 When started, there's a coprocessor error. Press 1 to continue.
+
 $end
 $info=racedriv
 $mame
@@ -9205,11 +9352,15 @@ Now choose "Reset System," and on reboot the game will start correctly.
 $end
 $info=rc2014,rc2014cl2,rc2014minicpm,rc2014pro
 $mame
+INITIALIZATION:
 ? or HELP to get a list of commands.
+
 $end
 $info=rc2014zed,rc2014zedp,sc203
 $mame
+INITIALIZATION:
 To get into the monitor, press M. Then H for a list of commands.
+
 $end
 $info=rclimb_3
 $mame
@@ -9354,6 +9505,13 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
+$info=rm_7bonus,rm_7bonusa
+$mame
+INITIALIZATION:
+INITIALISATION:
+If the settings suddenly appear and freeze the game, press 5 then N.
+
+$end
 $info=rm380z,rm380zf,rm380zfhrg,rm380z34d,rm380z34e,rm380zhrg
 $mame
 TIPS:
@@ -9369,11 +9527,6 @@ W - toggle between 40 and 80 CPL (doesn't always work)
 X - says Disc not ready
 Ctrl-F - enter "Front Panel"
 
-$end
-$info=rm_7bonus,rm_7bonusa
-$mame
-INITIALISATION:
-If the settings suddenly appear and freeze the game, press 5 then N.
 $end
 $info=rmpgwt
 $mame
@@ -9407,6 +9560,7 @@ $info=rollext
 $mame
 TIPS:
 This game will randomly either start up, or get stuck at a black screen. If it starts, you'll see a large green G after a few seconds, followed by an error screen. Press 1 here, or wait. The game will then run. The debugger doesn't work properly, making it very difficult to fault-find.
+
 $end
 $info=rollfr_4
 $mame
@@ -9653,8 +9807,10 @@ Some commands expect a filename enclosed in double quotes. If the quotes are not
 $end
 $info=sbsoli
 $mame
+INITIALIZATION:
 INITIALISATION:
 This game is listed as working, but it can be difficult to start. Keep hitting 5 until it gives a credit, and ignore the alarm. Press UP to begin.
+
 $end
 $info=sc2
 $mame
@@ -9862,6 +10018,7 @@ $info=sflush,beaminv,ctainv,pacominv,pacominva,worldinv
 $mame
 TIPS:
 Unplayable with the keyboard. Enable and use the mouse for controlling movement.
+
 $end
 $info=sfrush
 $mame
@@ -10124,11 +10281,13 @@ $info=sltpcycl,sltpcycla,sltpcyclb
 $mame
 TIPS:
 This game is free. Press Alt, then space 3 times to get to the race screen, then space to get MARCHA 7. Press Ctrl to start the race, then keep tapping Ctrl to go faster.
+
 $end
 $info=sltpstep,sltpstepa
 $mame
 TIPS:
 This game is free. Press Alt, then space 5 times to get to the race screen, then space to get MARCHA 5. Press Ctrl to start the race, then keep tapping Ctrl to go faster.
+
 $end
 $info=smc777
 $mame
@@ -10410,11 +10569,6 @@ Spectrum 128
 Press enter on tape loader, Scroll-lock, F2
 
 $end
-$info=special7,special7a,special7b
-$mame
-INITIALIZATION:
-If alarm sounds at start, press 0 twice.
-$end
 $info=special,anakonda,erik,kharkovsky,lik,pioner,specialp,specialm,specimx,unga
 $mame
 INITIALIZATION:
@@ -10425,6 +10579,12 @@ To load a tape: MLOAD
 Some of the specialist clones can load a file at the initial prompt if no keys are pressed.
 
 To enter Basic: B
+
+$end
+$info=special7,special7a,special7b
+$mame
+INITIALIZATION:
+If alarm sounds at start, press 0 twice.
 
 $end
 $info=spectra
@@ -10454,8 +10614,10 @@ http://wiki.mamedev.org/index.php/FAQ:Games
 $end
 $info=spetrix
 $mame
+INITIALIZATION:
 INITIALISATION:
 On first run it may get stuck at HARDWARE TEST. Press one at a time Z Z C X.
+
 $end
 $info=spinveti
 $mame
@@ -10486,8 +10648,10 @@ mameinfo.dat
 $end
 $info=sprinter,pentevo
 $mame
+INITIALIZATION:
 INITIALISATION:
 Make sure to go into the Input Settings and enable all keyboards.
+
 $end
 $info=srmp3
 $mame
@@ -10572,6 +10736,7 @@ Some games want [medium] screen, so click on Options,Set Preferences and select 
 The user interface is horrible, mouse is required, keys don't do anything.
 
 NOTE: megast_sg does not work.
+
 $end
 $info=stargate
 $mame
@@ -11196,14 +11361,19 @@ http://wiki.mamedev.org/index.php/FAQ:Games
 $end
 $info=tourtabl,tourtab2
 $mame
+INITIALIZATION:
 Press Alt to select a game, then insert coin and play. If you choose Breakout, use the Player 4 controls to move the paddle.
+
 $end
 $info=touryuu,touryuua
 $mame
+INITIALIZATION:
 INITIALISATION:
 On first run, you are in the test menu and the controls don't work. Press F3. Next time, you get a little wriggling dragon and you have to wait up to 90 seconds. Then you get a screen to set up the RTC. Press M then N, and the game starts. On subsequent runs you still have to wait and set up the RTC again.
+
 TIPS:
 The game runs rather slowly. To speed it up to normal, enable cheats, and then underclock the main CPU to 25%. This also fixes the sound.
+
 $end
 $info=trackfld
 $mame
@@ -11339,8 +11509,10 @@ Many software-list items will complain of "RAMTOP no good" and won't work.
 $end
 $info=tsconf,tsconf2
 $mame
+INITIALIZATION:
 INITIALISATION:
 Make sure to go into the Input Settings and enable all keyboards. The first time this is run you get the "TS-BIOS Setup Utility". It says to press F12, but this key doesn't work. Instead, change whatever you want (if anything), then quit and restart. On the next run, the system starts, and it expects a disk to be present. You can use one from the software list.
+
 $end
 $info=tshoot
 $mame
@@ -11364,6 +11536,7 @@ $info=turrett
 $mame
 TIPS:
 At start, when it says to press MENU button, hit F2.
+
 $end
 $info=tutor
 $mame
@@ -11623,6 +11796,7 @@ $info=vfurlong
 $mame
 TIPS:
 Wait up to 5 minutes at the NOW LOADING screen. Then it runs, but the start button doesn't work.
+
 $end
 $info=vg5k
 $mame
@@ -11785,6 +11959,7 @@ $info=wldwitch,wldwitcha,wldwitchb,wldwitchc,wldwitchd,wldwitche,wldwitchf,wldwi
 $mame
 TIPS:
 When you get the red screen starting with ACHTUNG FEHLER IM BLOCK, press Z.
+
 $end
 $info=wmbullet,wmbulletf
 $mame
@@ -11792,6 +11967,7 @@ TIPS:
 A boot disk must be present or you get a black unresponsive screen. Software-list items cpm30,wmate3,wmate4 will work. When asked to enter date and time, hit enter.
 
 Note: wmbulletf does not work at all.
+
 $end
 $info=wmg
 $mame
