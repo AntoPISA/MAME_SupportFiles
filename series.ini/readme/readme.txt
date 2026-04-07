@@ -1,4 +1,4 @@
-﻿MAME SERIES.ini 0.286 (Mar 15, 2026)
+﻿MAME SERIES.ini 0.287 (Apr  7, 2026)
 © AntoPISA     www.progettoSNAPS.net
 ==================================== 
 
@@ -12,12 +12,16 @@ In the file are both "Series" recognized as such (thus games and their official 
 guages or with minor variations (official and unofficial).
 
 
+2026/04/07 12.03 MAME 0.287 (720 supported Series - 12,401 items):
+==================================================================
+Series UPDATED   (10) : "Darkstalkers", "Gals Panic", "Pac-Man", "Pinball Action", "Power Drift", "Power Instinct", "Quarterback", "Splash!", "Time Crisis" and "Triv Quiz".
+
+
 2026/03/15 12.02 MAME 0.286 (720 supported Series - 12,391 items):
 ==================================================================
 Items RENAMED     (3) : (majorpkr) to (majorpkr20), (mario) to (mariog) and (marioe) to (mario).
 Series ADDED      (1) : "WGP".
 Series UPDATED    (5) : "Lucky 8 Lines", "Major Poker", "Mario Bros.", "Pit Boss" and "Sea Wolf".
-
 
 2026/02/13 12.01 MAME 0.285 (719 supported Series - 12,380 items):
 ==================================================================
