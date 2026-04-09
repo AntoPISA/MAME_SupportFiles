@@ -4637,6 +4637,12 @@ This requires the NVRAM to be flashed via a terminal, which isn't implemented.
 MAME doesn't support any of the usual software formats.
 
 $end
+$info=hp9825a,hp9825b,hp9825t
+$mame
+INITIALIZATION:
+The display defaults to a blank white screen, which does nothing. The proper display is red digits, so go into the Video Options and select "32-char display". After this, the tab menu is unusable, so quit and start over. Now you can use the calculator functions in the number pad.
+
+$end
 $info=hpz80unk
 $mame
 INITIALIZATION:
