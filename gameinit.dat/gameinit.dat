@@ -8433,6 +8433,12 @@ SOURCE:
 mameinfo.dat
 
 $end
+$info=pes
+$mame
+INITIALIZATION:
+Before it can be used, use the Machine Config to change the serial baud rates to 4800. After that, pressing a key seems to only send one bit at a time, so after 10 bits a fragment of sound is heard. Letter G causes a beep. Needs serious work to get it back into shape.
+
+$end
 $info=pet2001,pet2001b,pet2001n,pet4016,pet4032,pet8032,cbm8296,cbm8296ed,cbm8296d,cbm8296d_de,cbm8296dgv_de,cbm8296gd,pet20018,cbm3032b,pet2001b16,pet2001b32,cbm3008,cbm3016,cbm3032,pet2001n16,pet2001n32,cbm4016,cbm4032,cbm4032f,pet4032f,pet4032b,cbm4032b,cbm8032,cbm8032_fr,cbm8032_de,cbm8032_se,cbm8096,mmf9000,mmf9000_se,superpet
 $mame
 TIPS:
@@ -11323,6 +11329,12 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
+$info=touchme
+$mame
+INITIALIZATION:
+Use the internal layout, as the photo layout does not work. Like all "simon" games, use the mouse but do not use the "-mouse" parameter.
+
+$end
 $info=tourtabl,tourtab2
 $mame
 INITIALIZATION:
@@ -11649,6 +11661,20 @@ $mame
 INITIALIZATION:
 In most games, press 5 to choose difficulty, or on multigame carts, which game. Press 1 to start.
 
+$end
+$info=vclock3
+$mame
+INITIALIZATION:
+This is an ordinary domestic 12-hour bedside clock. To adjust it:
+* Set the time: Hold S and tap [ and ] to set the hour, and - and = to set the minute.
+* Set the date: Hold D and tap [ and ] to set the month, and - and = to set the day of the month.
+* Set the alarm: Hold F1 for AL1, or F2 for AL2, then use [ and ] for the hour, and - and = for the minute.
+* Alarm on/off: Hit F1 or F2 to turn the AL1 or AL2 LED on/off.
+* Speak the current time: Hit T
+* Speak the current date: Hit D
+* When the alarm sounds, it speaks the date and makes a sound. Press D to snooze 10 minutes and say the time.
+
+Snooze: Hit D
 $end
 $info=vcs80
 $mame
