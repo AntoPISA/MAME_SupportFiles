@@ -11368,9 +11368,26 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
+$info=triton41,triton51,triton52
+$mame
+TIPS:
+When asked for Prog Start or Prog End, enter 4 hex digits then press enter.
+Some commands are:
+D for ascii dump
+G for Go
+I to read a tape
+L for byte per line hex dump
+H for 16 bytes per line hex dump
+O to write a tape
+P to edit memory one byte at a time
+T for Tiny Basic
+
+Many commands seem to get hung up, so press F3 to regain control.
+
+$end
 $info=trs80
 $mame
-INITIALIZATION:
+TIPS:
 To save a tape: CSAVE (make sure you have a program to save otherwise it hangs)
 
 To load a tape: CLOAD
