@@ -11514,13 +11514,21 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
-$info=turbosub
+$info=turbosub,turbosubb8,turbosubc5,turbosubc5s
 $mame
+INITIALIZATION:
+At startup the screen is black. Hold down num-* and then hold down F3 until something happens.
 TIPS:
-At first startup the game performs hardware tests (with the screen completely black), to start gameplay hold down [ F3 ] and [ * ] (on the keypad) for a few seconds. During gameplay you can access the operator menu always by pressing [ * ]. To choose options press the numbers on the numeric keypad.
+During gameplay you can access the operator menu always by pressing [ * ]. To choose options press the numbers on the numeric keypad.
 
 SOURCE:
 https://www.progettosnaps.net/gameinit.dat
+
+$end
+$info=turbosubc6,turbosubc7,turbosubc8
+$mame
+INITIALIZATION:
+If it says to press 1, press 1 (in the number pad) three times.
 
 $end
 $info=turrett
