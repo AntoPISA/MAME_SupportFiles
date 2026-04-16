@@ -44,6 +44,15 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
+$info=5acespkr
+$mame
+INITIALIZATION:
+Press F2. Press N 5 times.
+
+SOURCE:
+Driver notes.
+
+$end
 $info=68ksbc
 $mame
 TIPS:
@@ -2225,7 +2234,13 @@ An example is: memdis 0 8 (memory dump starting at 0, show 8 lines)
 Don't try 'fill' - it fills all memory with zeroes, crashing the system.
 
 $end
-$info=chsuper3
+$info=chewheel
+$mame
+INITIALIZATION:
+Press C.
+
+$end
+$info=chmpnum,chmpnuma,chsuper3
 $mame
 INITIALIZATION:
 Press and hold Service 1 + 2 Keys [ 0 ]+[ 9 ], then press reset [ F3 ]. Now the NVRAM has been initialized.
@@ -4807,6 +4822,15 @@ For the last light, press num-0.
 7. After 3 misses, the game ends.
 
 $end
+$info=icproul
+$mame
+INITIALIZATION:
+If you get a plain blue screen, press these keys one at a time: 5 Ctrl Down Ctrl Down Ctrl Down Ctrl Down Ctrl Down
+
+SOURCE:
+Driver notes.
+
+$end
 $info=ikari,ikaria,ikaria2,ikarijp,ikarijpb,ikarinc,ikariram
 $mame
 TIPS:
@@ -5275,6 +5299,12 @@ Snaps
 -----
 
 These are .ace files. Just load it and in theory it should start.
+
+$end
+$info=jwildb52h
+$mame
+INITIALIZATION:
+If there's a message about jumper setting changed, enter the DIP Switches menu and turn DSW2-10 to Off, then choose Reset System.
 
 $end
 $info=k8915
@@ -5931,6 +5961,8 @@ $mame
 INITIALIZATION:
 The first time you run the game, it will say 'RAM ERROR'. To proceed, just keep pressed both service keys [ 9 ] & [ 0 ] and reset [ F3 ].
 
+To add credits, press 6.
+
 SOURCE:
 mameinfo.dat
 
@@ -5962,6 +5994,12 @@ New Lucky 8 Lines has two sets of controls than can be switched through each 'BI
 
 SOURCE:
 mameinfo.dat
+
+$end
+$info=luckybal,luckybala,luckybalb,luckybalc,luckybald,luckybale
+$mame
+INITIALIZATION:
+Hold down INS until the playfield appears. Press 0 so that "OPER KEY" is green.
 
 $end
 $info=luckywld
@@ -6404,6 +6442,12 @@ INITIALIZATION:
 Needs a cartridge.
 
 $end
+$info=megat5a
+$mame
+INITIALIZATION:
+Don't use -mouse, and ignore the useless crosshairs. Use the orange/system mouse cursor instead.
+
+$end
 $info=mekd1,mekd3,mekd4
 $mame
 INITIALIZATION:
@@ -6637,7 +6681,7 @@ To load a tape: I then Play then G
 The I command will time out in a few seconds if tape doesn't start.
 
 $end
-$info=mil4000
+$info=mil4000,mil4000a,mil4000b,mil4000c
 $mame
 INITIALIZATION:
 At first start-up, an Italian message pops up: "Scheda manomessa da un agente esterno - Si consiglia di aggiungere dipositivo antispark", translated: "PCB has been hacked from external agent, it's advised to add an anti-spark device". Press [ F2 ] to enter Service Mode, then press Key [ B ] (Hold 5) to exit Service Mode.
@@ -8002,6 +8046,12 @@ Status:
 - If 'tones' is selected, sound might not work.
 - Mars (all versions): no sound, audio cpu runs into the weeds
 - Volcano (all versions): Unstable, certain inputs will freeze the machine (E for example)
+
+$end
+$info=parentj
+$mame
+INITIALIZATION:
+If you get MESSAGE ERROR, press 7.
 
 $end
 $info=partner
@@ -11711,6 +11761,12 @@ G go
 M modify memory (. to exit)
 
 $end
+$info=vaportrxp
+$mame
+INITIALIZATION:
+This game works only sometimes. If white writing appears, and it's your lucky day, hit [ Alt ] a few times until the game starts.
+
+$end
 $info=vc4000
 $mame
 INITIALIZATION:
@@ -11924,6 +11980,12 @@ It should run ok after that, although you might need to get the instructions.
 If it freezes, goes black or grey, then it's no good. Or, if a car goes halfway across before returning to the SELECT GAME screen, it's no good too.
 
 $end
+$info=videopin,videopina
+$mame
+INITIALIZATION:
+External artwork is mandatory, as it will provide the gameplay area.
+
+$end
 $info=viostorm
 $mame
 INITIALIZATION:
@@ -11963,6 +12025,12 @@ Notes:
 - Play some notes: !T08:1234:125:129:125:130. (then press enter)
 
 Looks like it may have regressed, as it ignores all user input.
+
+$end
+$info=vpoker
+$mame
+TIPS:
+It gives 8 credits at start, so start betting. Insert more coins with 5, but note it is rather laggy.
 
 $end
 $info=wantouch
