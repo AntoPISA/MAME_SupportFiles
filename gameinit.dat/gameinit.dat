@@ -44,6 +44,15 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
+$info=5acespkr
+$mame
+INITIALIZATION:
+Press F2. Press N 5 times.
+
+SOURCE:
+Driver notes.
+
+$end
 $info=68ksbc
 $mame
 TIPS:
@@ -2225,7 +2234,13 @@ An example is: memdis 0 8 (memory dump starting at 0, show 8 lines)
 Don't try 'fill' - it fills all memory with zeroes, crashing the system.
 
 $end
-$info=chsuper3
+$info=chewheel
+$mame
+INITIALIZATION:
+Press C.
+
+$end
+$info=chmpnum,chmpnuma,chsuper3
 $mame
 INITIALIZATION:
 Press and hold Service 1 + 2 Keys [ 0 ]+[ 9 ], then press reset [ F3 ]. Now the NVRAM has been initialized.
@@ -2271,6 +2286,12 @@ Maaaa/bbbb>cccc : Move (copy) memory
 Saaaa : Substitute memory (write bytes into memory)
 T : ?
 Xr : set register to this value
+
+$end
+$info=cmfb55,3cdpokera
+$mame
+TIPS:
+5 to insert coin. Z to bet (must bet at least 8 coins). N to play. X to collect winnings.
 
 $end
 $info=cmpacman
@@ -4160,7 +4181,7 @@ SOURCE:
 mameinfo.dat
 
 $end
-$info=fvipers,fvipersa,fvipersb,schamp,sfight
+$info=fvipers,fvipersa,fvipersb,schamp,sfight,kofnw,kofnwj
 $mame
 INITIALIZATION:
 This game only works with the DRC turned off. If the sound buzzes loudly, choose portaudio.
@@ -4801,6 +4822,15 @@ For the last light, press num-0.
 7. After 3 misses, the game ends.
 
 $end
+$info=icproul
+$mame
+INITIALIZATION:
+If you get a plain blue screen, press these keys one at a time: 5 Ctrl Down Ctrl Down Ctrl Down Ctrl Down Ctrl Down
+
+SOURCE:
+Driver notes.
+
+$end
 $info=ikari,ikaria,ikaria2,ikarijp,ikarijpb,ikarinc,ikariram
 $mame
 TIPS:
@@ -5084,6 +5114,12 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
+$info=jokercrd
+$mame
+INITIALIZATION:
+Hold down INS until the alarm stops. Press 9 to get the machine started. The normal coin slots don't work, so press Q for 100 credits.
+
+$end
 $info=jokpokera
 $mame
 INITIALIZATION:
@@ -5265,6 +5301,12 @@ Snaps
 These are .ace files. Just load it and in theory it should start.
 
 $end
+$info=jwildb52h
+$mame
+INITIALIZATION:
+If there's a message about jumper setting changed, enter the DIP Switches menu and turn DSW2-10 to Off, then choose Reset System.
+
+$end
 $info=k8915
 $mame
 INITIALIZATION:
@@ -5296,6 +5338,12 @@ Note that some versions don't work partly or at all.
 Some disks don't have boot tracks, so need to be mounted in B drive. These are marked as [Bdrive].
 
 The older disks end with _b (bootable) or _nb (not bootable).
+
+$end
+$info=kas89
+$mame
+INITIALIZATION:
+If an alarm blares at start-up, press 9 twice then 8. Now the game works. It still has lots of alarms while in play.
 
 $end
 $info=kbh
@@ -5913,6 +5961,8 @@ $mame
 INITIALIZATION:
 The first time you run the game, it will say 'RAM ERROR'. To proceed, just keep pressed both service keys [ 9 ] & [ 0 ] and reset [ F3 ].
 
+To add credits, press 6.
+
 SOURCE:
 mameinfo.dat
 
@@ -5944,6 +5994,12 @@ New Lucky 8 Lines has two sets of controls than can be switched through each 'BI
 
 SOURCE:
 mameinfo.dat
+
+$end
+$info=luckybal,luckybala,luckybalb,luckybalc,luckybald,luckybale
+$mame
+INITIALIZATION:
+Hold down INS until the playfield appears. Press 0 so that "OPER KEY" is green.
 
 $end
 $info=luckywld
@@ -6386,6 +6442,12 @@ INITIALIZATION:
 Needs a cartridge.
 
 $end
+$info=megat5a
+$mame
+INITIALIZATION:
+Don't use -mouse, and ignore the useless crosshairs. Use the orange/system mouse cursor instead.
+
+$end
 $info=mekd1,mekd3,mekd4
 $mame
 INITIALIZATION:
@@ -6619,7 +6681,7 @@ To load a tape: I then Play then G
 The I command will time out in a few seconds if tape doesn't start.
 
 $end
-$info=mil4000
+$info=mil4000,mil4000a,mil4000b,mil4000c
 $mame
 INITIALIZATION:
 At first start-up, an Italian message pops up: "Scheda manomessa da un agente esterno - Si consiglia di aggiungere dipositivo antispark", translated: "PCB has been hacked from external agent, it's advised to add an anti-spark device". Press [ F2 ] to enter Service Mode, then press Key [ B ] (Hold 5) to exit Service Mode.
@@ -7284,6 +7346,12 @@ R
 G8000
 
 (but doesn't load)
+
+$end
+$info=multiwin,multiwina,powercrd
+$mame
+INITIALIZATION:
+Hold down INS until the alarm stops. The normal coin slots don't work, so press Q to get 100 credits, then press 1 to play a hand.
 
 $end
 $info=mycom
@@ -7980,6 +8048,12 @@ Status:
 - Volcano (all versions): Unstable, certain inputs will freeze the machine (E for example)
 
 $end
+$info=parentj
+$mame
+INITIALIZATION:
+If you get MESSAGE ERROR, press 7.
+
+$end
 $info=partner
 $mame
 TIPS:
@@ -8431,6 +8505,12 @@ The first time you run the game, it will say 'CALL ATTENDANT'. Press [ O ] for D
 
 SOURCE:
 mameinfo.dat
+
+$end
+$info=pes
+$mame
+INITIALIZATION:
+Before it can be used, use the Machine Config to change the serial baud rates to 4800. After that, pressing a key seems to only send one bit at a time, so after 10 bits a fragment of sound is heard. Letter G causes a beep. Needs serious work to get it back into shape.
 
 $end
 $info=pet2001,pet2001b,pet2001n,pet4016,pet4032,pet8032,cbm8296,cbm8296ed,cbm8296d,cbm8296d_de,cbm8296dgv_de,cbm8296gd,pet20018,cbm3032b,pet2001b16,pet2001b32,cbm3008,cbm3016,cbm3032,pet2001n16,pet2001n32,cbm4016,cbm4032,cbm4032f,pet4032f,pet4032b,cbm4032b,cbm8032,cbm8032_fr,cbm8032_de,cbm8032_se,cbm8096,mmf9000,mmf9000_se,superpet
@@ -10745,6 +10825,12 @@ The Basic lets you get back to the monitor with MON for one command, then you're
 In "super80" and "super80d", there's the D command which lets you load the first 512 bytes of any Kansas City tape no matter what computer it came from.
 
 $end
+$info=super972
+$mame
+TIPS:
+5 to insert coin. Z to bet (must bet at least 16 coins). X to play.
+
+$end
 $info=suprpokr
 $mame
 INITIALIZATION:
@@ -11323,6 +11409,12 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
+$info=touchme
+$mame
+INITIALIZATION:
+Use the internal layout, as the photo layout does not work. Like all "simon" games, use the mouse but do not use the "-mouse" parameter.
+
+$end
 $info=tourtabl,tourtab2
 $mame
 INITIALIZATION:
@@ -11356,9 +11448,26 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
+$info=triton41,triton51,triton52
+$mame
+TIPS:
+When asked for Prog Start or Prog End, enter 4 hex digits then press enter.
+Some commands are:
+D for ascii dump
+G for Go
+I to read a tape
+L for byte per line hex dump
+H for 16 bytes per line hex dump
+O to write a tape
+P to edit memory one byte at a time
+T for Tiny Basic
+
+Many commands seem to get hung up, so press F3 to regain control.
+
+$end
 $info=trs80
 $mame
-INITIALIZATION:
+TIPS:
 To save a tape: CSAVE (make sure you have a program to save otherwise it hangs)
 
 To load a tape: CLOAD
@@ -11485,13 +11594,21 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
-$info=turbosub
+$info=turbosub,turbosubb8,turbosubc5,turbosubc5s
 $mame
+INITIALIZATION:
+At startup the screen is black. Hold down num-* and then hold down F3 until something happens.
 TIPS:
-At first startup the game performs hardware tests (with the screen completely black), to start gameplay hold down [ F3 ] and [ * ] (on the keypad) for a few seconds. During gameplay you can access the operator menu always by pressing [ * ]. To choose options press the numbers on the numeric keypad.
+During gameplay you can access the operator menu always by pressing [ * ]. To choose options press the numbers on the numeric keypad.
 
 SOURCE:
 https://www.progettosnaps.net/gameinit.dat
+
+$end
+$info=turbosubc6,turbosubc7,turbosubc8
+$mame
+INITIALIZATION:
+If it says to press 1, press 1 (in the number pad) three times.
 
 $end
 $info=turrett
@@ -11644,11 +11761,31 @@ G go
 M modify memory (. to exit)
 
 $end
+$info=vaportrxp
+$mame
+INITIALIZATION:
+This game works only sometimes. If white writing appears, and it's your lucky day, hit [ Alt ] a few times until the game starts.
+
+$end
 $info=vc4000
 $mame
 INITIALIZATION:
 In most games, press 5 to choose difficulty, or on multigame carts, which game. Press 1 to start.
 
+$end
+$info=vclock3
+$mame
+INITIALIZATION:
+This is an ordinary domestic 12-hour bedside clock. To adjust it:
+* Set the time: Hold S and tap [ and ] to set the hour, and - and = to set the minute.
+* Set the date: Hold D and tap [ and ] to set the month, and - and = to set the day of the month.
+* Set the alarm: Hold F1 for AL1, or F2 for AL2, then use [ and ] for the hour, and - and = for the minute.
+* Alarm on/off: Hit F1 or F2 to turn the AL1 or AL2 LED on/off.
+* Speak the current time: Hit T
+* Speak the current date: Hit D
+* When the alarm sounds, it speaks the date and makes a sound. Press D to snooze 10 minutes and say the time.
+
+Snooze: Hit D
 $end
 $info=vcs80
 $mame
@@ -11843,6 +11980,12 @@ It should run ok after that, although you might need to get the instructions.
 If it freezes, goes black or grey, then it's no good. Or, if a car goes halfway across before returning to the SELECT GAME screen, it's no good too.
 
 $end
+$info=videopin,videopina
+$mame
+INITIALIZATION:
+External artwork is mandatory, as it will provide the gameplay area.
+
+$end
 $info=viostorm
 $mame
 INITIALIZATION:
@@ -11884,6 +12027,12 @@ Notes:
 Looks like it may have regressed, as it ignores all user input.
 
 $end
+$info=vpoker
+$mame
+TIPS:
+It gives 8 credits at start, so start betting. Insert more coins with 5, but note it is rather laggy.
+
+$end
 $info=wantouch
 $mame
 INITIALIZATION:
@@ -11908,13 +12057,16 @@ INITIALIZATION:
 witch, witchb, witchs: If it says RAM ERROR, Press F1.
 
 $end
-$info=witchcrd,witchcrda,witchcrdb,witchcrdc,witchcrdd,witchcrde,witchcrdf,witchcrdg,witchcrdh,witchcrdi,witchcrdj,witchgme,witchgmea
+$info=witchcrd,witchcrda,witchcrdb,witchcrdc,witchcrdd,witchcrde,witchcrdf,witchcrdg,witchcrdh,witchcrdi,witchcrdj,witchgmea
 $mame
 TIPS:
-There are 12 parameters to program. All of them are unknown. To program them, use the HOLD keys, CANCEL key, DEAL + HOLD keys and DEAL + CANCEL.
+6 to credit, M to bet, 2 to play.
 
-SOURCE:
-mameinfo.dat
+$end
+$info=witchgme
+$mame
+TIPS:
+Press 0 then Z then X. Now use 6 for credit, M to bet, and 2 to play.
 
 $end
 $info=wldwitch,wldwitcha,wldwitchb,wldwitchc,wldwitchd,wldwitche,wldwitchf,wldwitchg,wldwitchh,wldwitchi,wldwitchj,wldwitchk,wldwitchl,wldwitchm,wldwitchn,wldwitcho,wldwitchp,wldwitchq,wldwitchr,wldwitchs,wldwitcht,wldwitchu,wldwitchv,wtchjack,wtchjacka,wtchjackb,wtchjackc,wtchjackd,wtchjacke,wtchjackf,wtchjackg,wtchjackh,wtchjacki,wtchjackj,wupndown,wupndowna,wupndownb,wupndownc,wupndownd
