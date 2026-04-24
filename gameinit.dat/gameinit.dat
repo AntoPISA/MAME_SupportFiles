@@ -10,10 +10,25 @@
 # Verified with motoschifo's MDE, downloadable here: http://adb.arcadeitalia.net/?page=download
 #
 #
-$info=3bagfull
+$info=3bagfull,3bagfullnz,autmoon,blkrhino,blkrhinonz,cgold,coralr2,eforest,eforestnz,ffortune,fvrpitch,gldnpkr,goldenc,grnlizrd,gtroppo,kgbirdnz,kgbirdnza,phantomp,swtht2nz,teqsun,wildone,wtigernz
 $mame
 INITIALIZATION:
-At the first start, "CALL ATTENDANT" will flash at the top, to start press in sequence: [ F1 ] and [ F2 ] to do this. Now press [ Z ] + [ X ] + [ C ] simultaneously; you'll see a number show up for the value "RF/AMT" if done correctly. After this value is set, return to the game by taking off the [ F2 ].
+Press [ F1 ] then [ F2 ], then press [ Z ] + [ X ] + [ C ] together; you'll see a number show up for the value "RF/AMT" if done correctly. After this value is set, return to the game by pressing [ F2 ].
+
+SOURCE:
+Driver notes.
+
+$end
+$info=3bagfullu,arcwins,arcwinsa,cgold2,cgold2a,dblagent,eforestu,gambler,fhunter,fhuntera,kgbird,letsgof,thundhrt,trktreat,wtiger
+$mame
+INITIALIZATION:
+Press [ F1 ] then [ F2 ], then press [ Z ] + [ X ] + [ C ] together. Press [ A ] 4 times until you are in the setup screen with Printer Pay Limit. Press [ D ] to set to 3000. Press [ F1 ] then [ F2 ] then [ F3 ].
+
+TIPS:
+Press 6 to gets credits.
+
+SOURCE:
+Driver notes.
 
 $end
 $info=4004clk
@@ -529,7 +544,7 @@ Test Paste:
 Now press up-arrow to confirm the data has been entered.
 
 $end
-$info=ampoker2
+$info=ampkr228,ampkr228,ampkr2b1,ampkr2b2,ampkr2b4,ampkr2jspb,ampoker2,piccolop,pkrdewin,sigma2k,sigmapkr,videomat
 $mame
 INITIALIZATION:
 Turn ON Operator Key [ 9 ]. Hit the DOOR key [ O ]. After a moment, the Operator Mode will appear. Turn OFF the Operator Key [ 9 ] to allow play, resetting with [ F3 ] if needed.
@@ -850,15 +865,6 @@ These consist of a loader and a main program.
 Load and run the loader, then mount the main program tape.
 
 $end
-$info=arcwins
-$mame
-INITIALIZATION:
-At the first start, "CALL ATTENDANT" will flash at the top, Key in with the Jackpot Key followed by the Audit Key [ F1 ] [ F2 ]. Press PB4, PB5 and PB6 keys simultaneously ([ Z ] + [ X ] + [ C ] keys by default). Press Service (default [ A ]) 4 times until you are in the Setup Screen, showing Printer Pay Limit etc. Press Bet 2 (default [ D ]) to change the Jackpot Win Limit. A higher value is better (3000 max). Key out both the Jackpot and Audit Keys [ F2 ].
-
-SOURCE:
-aristmk4.cpp mame driver
-
-$end
 $info=arizona,atla_ltd,bhol_ltd,discodan,force,hhotel,hustlerp,kkongltd,marqueen,spcpoker,vikngkng
 $mame
 TIPS:
@@ -983,15 +989,6 @@ This doesn't boot due to a regression, but after it gets stuck, hit F3, then it 
 The homebrew disks must go into drive B as they have no system tracks.
 
 The cursor is missing and there's a scroll issue.
-
-$end
-$info=autmoon
-$mame
-INITIALIZATION:
-At the first start, "CALL ATTENDANT" will flash at the top, to start press in sequence: [ F1 ] and [ F2 ] to do this. Now press [ Z ] + [ X ] + [ C ] simultaneously; you'll see a number show up for the value "RF/AMT" if done correctly. After this value is set, return to the game by taking off the [ F2 ].
-
-SOURCE:
-https://www.progettosnaps.net/gameinit.dat
 
 $end
 $info=avengers
@@ -1468,15 +1465,6 @@ $info=blicks
 $mame
 INITIALIZATION:
 At the first start, the message "RAM DATA IS BAD. PUSH RESET BUTTON" will be displayed: press [ F1 ] to start playing.
-
-SOURCE:
-https://www.progettosnaps.net/gameinit.dat
-
-$end
-$info=blkrhino
-$mame
-INITIALIZATION:
-At the first start, "CALL ATTENDANT" will flash at the top, to start press in sequence: [ F1 ] and [ F2 ] to do this. Now press [ Z ] + [ X ] + [ C ] simultaneously; you'll see a number show up for the value "RF/AMT" if done correctly. After this value is set, return to the game by taking off the [ F2 ].
 
 SOURCE:
 https://www.progettosnaps.net/gameinit.dat
@@ -2195,24 +2183,6 @@ Errors are numbers and can't find a manual.
 34 error = unable to run this program
 
 $end
-$info=cgold
-$mame
-INITIALIZATION:
-At the first start, "CALL ATTENDANT" will flash at the top, to start press in sequence: [ F1 ] and [ F2 ] to do this. Now press [ Z ] + [ X ] + [ C ] simultaneously; you'll see a number show up for the value "RF/AMT" if done correctly. After this value is set, return to the game by taking off the [ F2 ].
-
-SOURCE:
-https://www.progettosnaps.net/gameinit.dat
-
-$end
-$info=cgold2
-$mame
-INITIALIZATION:
-At the first start, "CALL ATTENDANT" will flash at the top, Key in with the Jackpot Key followed by the Audit Key [ F1 ] [ F2 ]. Press PB4, PB5 and PB6 keys simultaneously ([ Z ] + [ X ] + [ C ] keys by default). Press Service (default [ A ]) 4 times until you are in the Setup Screen, showing Printer Pay Limit etc. Press Bet 2 (default [ D ]) to change the Jackpot Win Limit. A higher value is better (3000 max). Key out both the Jackpot and Audit Keys [ F2 ].
-
-SOURCE:
-aristmk4.cpp mame driver
-
-$end
 $info=champbwl
 $mame
 INITIALIZATION:
@@ -2367,10 +2337,8 @@ DRAGON64
 
 Even though the Dragon64 is supposed to be a clone of the coco, the diskette format is different. Disks for Dragon64 will be suffixed by [D64].
 
-NOTE: coco3p crashes MAME at start.
-
 $end
-$info=comg5108
+$info=comg5107,comg5108,comg5108a,comg5108b,comg6004,pokiwc162,pokeriwc
 $mame
 INITIALIZATION:
 After starting, when "GAME INITIALIZATION" is displayed press [ 9 ] and then [ 2 ] to initialize the game.
@@ -2425,15 +2393,6 @@ $info=concept
 $mame
 TIPS:
 It's marked as working, but there's no boot disk available, so no way to run anything.
-
-$end
-$info=coralr2
-$mame
-INITIALIZATION:
-At the first start, "CALL ATTENDANT" will flash at the top, to start press in sequence: [ F1 ] and [ F2 ] to do this. Now press [ Z ] + [ X ] + [ C ] simultaneously; you'll see a number show up for the value "RF/AMT" if done correctly. After this value is set, return to the game by taking off the [ F2 ].
-
-SOURCE:
-https://www.progettosnaps.net/gameinit.dat
 
 $end
 $info=cortex
@@ -2730,10 +2689,19 @@ SOURCE:
 mameinfo.dat
 
 $end
-$info=czmon,czmon_2,czmon_3,czmon_4,czmon_5,czmon_6,czmon_7,czmon_8,czmon_9,czmon_12,czmon_13,czmon_15,czmon_16,czmon_17,czmon_18,czmon_19,czmon_20,czmon_21,czmon_22,czmon_23,czmon_24,czmon_25
+$info=czmon,czmon_2,czmon_3,czmon_4,czmon_5,czmon_6,czmon_7,czmon_8,czmon_9,czmon_12,czmon_13,czmon_15,czmon_16,czmon_17,czmon_18,czmon_19
 $mame
 INITIALIZATION:
-Keep hitting F2 until the service screen appears. Press [ C ] twice to choose "INIT" and press [ 1 ]. Now hold down the [ Z ] button for about 5 seconds. Now press [ F3 ].
+Hold/tap [ F2 ] until the service screen appears. If "INIT" isn't selected, press [ C ] to choose it. Press [ 1 ], then hold down [ Z ] for about 5 seconds. Now press [ F2 ] then [ F3 ].
+
+SOURCE:
+https://www.progettosnaps.net/gameinit.dat
+
+$end
+$info=czmon_20,czmon_21,czmon_22,czmon_23,czmon_24,czmon_25
+$mame
+INITIALIZATION:
+Hold/tap [ F2 ] until the service screen appears. If "INIT" isn't selected, press [ C ] to choose it. Press [ 1 ], then hold down [ Z ] for about 5 seconds. Now press [ F2 ] then [ F3 ]. If still in service mode, press [ F2 ] then [ F3 ] again. There's a Russian message. Insert a coin to pass it.
 
 SOURCE:
 https://www.progettosnaps.net/gameinit.dat
@@ -3267,15 +3235,6 @@ $info=ec65,ec65k
 $mame
 TIPS:
 If this system ever gets fully emulated, the command to boot a disk is: .b
-
-$end
-$info=eforest
-$mame
-INITIALIZATION:
-At the first start, "CALL ATTENDANT" will flash at the top, to start press in sequence: [ F1 ] and [ F2 ] to do this. Now press [ Z ] + [ X ] + [ C ] simultaneously; you'll see a number show up for the value "RF/AMT" if done correctly. After this value is set, return to the game by taking off the [ F2 ].
-
-SOURCE:
-https://www.progettosnaps.net/gameinit.dat
 
 $end
 $info=eg3003,ht1080z,ht1080z2,ht108064,sys80,sys80p
@@ -3830,37 +3789,28 @@ Shift-Run to BREAK out of CLOAD.
 There is an inbuilt Monitor. MON to enter. Commands are D,G,M,R,S,X.
 
 $end
-$info=fcockt_8
+$info=fcockt,fcockt_2,fcockt_3,fcockt_4,fcockt_5,fcockt_6,fcockt_7,fcockt_8,fcockt_9,fcockt_10,fcockt_11,fcockt_12,fcockt_14,fcockt_15,fcockt_16,fcockt_17,fcockt_18,fcockt2_2,fcockt2_8,fcockt2_9,fcockt2_10
 $mame
 INITIALIZATION:
-To initialize the game, turn Service Mode ON [ F2 ] and press reset [ F3 ]. Move pointer to INIT with [ C ], then press [ 1 ]. Hold Cancel [ Z ] for 5 seconds while counter counts down. When complete, turn Service Mode OFF with [ F2 ] and restart or reboot.
+Hold/tap [ F2 ] until the service screen appears. If "INIT" isn't selected, press [ C ] to choose it. Press [ 1 ], then hold down [ Z ] for about 5 seconds. Now press [ F2 ] then [ F3 ].
 
 SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
+https://www.progettosnaps.net/gameinit.dat
 
 $end
-$info=fcockt2
+$info=fcockt_19,fcockt_20,fcockt_21,fcockt_22,fcockt2_11,fcockt2_12,fcockt2_13,fcockt2_14,fcockt2_15
 $mame
 INITIALIZATION:
-To initialize the game, turn Service Mode ON [ F2 ] and press reset [ F3 ]. Move pointer to INIT with [ C ], then press [ 1 ]. Hold Cancel [ Z ] for 5 seconds while counter counts down. When complete, turn Service Mode OFF with [ F2 ] and restart or reboot.
+Hold/tap [ F2 ] until the service screen appears. If "INIT" isn't selected, press [ C ] to choose it. Press [ 1 ], then hold down [ Z ] for about 5 seconds. Now press [ F2 ] then [ F3 ]. If still in service mode, press [ F2 ] then [ F3 ] again. There's a Russian message. Insert a coin to pass it.
 
 SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
+https://www.progettosnaps.net/gameinit.dat
 
 $end
 $info=fds
 $mame
 INITIALIZATION:
 Pressing SPACE will select the next side of the disk.
-
-$end
-$info=ffortune
-$mame
-INITIALIZATION:
-At the first start, "CALL ATTENDANT" will flash at the top, to start press in sequence: [ F1 ] and [ F2 ] to do this. Now press [ Z ] + [ X ] + [ C ] simultaneously; you'll see a number show up for the value "RF/AMT" if done correctly. After this value is set, return to the game by taking off the [ F2 ].
-
-SOURCE:
-https://www.progettosnaps.net/gameinit.dat
 
 $end
 $info=fhboxers
@@ -3870,15 +3820,6 @@ After 'ERROR ON CARTRIDGE' press [ 9 ] (SERVICE Key) and then [ F2 ] (TEST) to g
 
 SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=fhunter
-$mame
-INITIALIZATION:
-At the first start, "CALL ATTENDANT" will flash at the top, Key in with the Jackpot Key followed by the Audit Key [ F1 ] [ F2 ]. Press PB4, PB5 and PB6 keys simultaneously ([ Z ] + [ X ] + [ C ] keys by default). Press Service (default [ A ]) 4 times until you are in the Setup Screen, showing Printer Pay Limit etc. Press Bet 2 (default [ D ]) to change the Jackpot Win Limit. A higher value is better (3000 max). Key out both the Jackpot and Audit Keys [ F2 ].
-
-SOURCE:
-aristmk4.cpp mame driver
 
 $end
 $info=finalap2
@@ -4187,15 +4128,6 @@ INITIALIZATION:
 This game only works with the DRC turned off. If the sound buzzes loudly, choose portaudio.
 
 $end
-$info=fvrpitch
-$mame
-INITIALIZATION:
-At the first start, "CALL ATTENDANT" will flash at the top, to start press in sequence: [ F1 ] and [ F2 ] to do this. Now press [ Z ] + [ X ] + [ C ] simultaneously; you'll see a number show up for the value "RF/AMT" if done correctly. After this value is set, return to the game by taking off the [ F2 ].
-
-SOURCE:
-https://www.progettosnaps.net/gameinit.dat
-
-$end
 $info=gaiapols
 $mame
 INITIALIZATION:
@@ -4244,10 +4176,10 @@ SOURCE:
 mameinfo.dat
 
 $end
-$info=garage_5
+$info=garage,garage_2,garage_3,garage_10,garage_11,garage_12,garage_13,garage_14,garage_15,garage_16,garage_17,gnome_8,gnome_13,gnome_14,gnome_15,gnome_16,gnome_17,gnome_18,gnome_19
 $mame
 INITIALIZATION:
-To initialize the game, turn Service Mode ON [ F2 ] and press reset [ F3 ]. Move pointer to INIT with [ C ], then press [ 1 ]. Hold Cancel [ Z ] for 5 seconds while counter counts down. When complete, turn Service Mode OFF with [ F2 ] and restart or reboot.
+Hold/tap [ F2 ] until the service screen appears. If "INIT" isn't selected, press [ C ] to choose it. Press [ 1 ], then hold down [ Z ] for about 5 seconds. Now press [ F2 ] then [ F3 ].
 
 SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
@@ -4301,33 +4233,6 @@ The first time you run the game, the EEPROM 7D shows as BAD in the RAM/ROM Check
 
 SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=gldnpkr
-$mame
-INITIALIZATION:
-At the first start, "CALL ATTENDANT" will flash at the top, to start press in sequence: [ F1 ] and [ F2 ] to do this. Now press [ Z ] + [ X ] + [ C ] simultaneously; you'll see a number show up for the value "RF/AMT" if done correctly. After this value is set, return to the game by taking off the [ F2 ].
-
-SOURCE:
-https://www.progettosnaps.net/gameinit.dat
-
-$end
-$info=gnome_9
-$mame
-INITIALIZATION:
-Press [ F2 ] to enter in "FIRST MENU", press now [ C ] followed by [ 1 ] to turn on the "INIT" option. Hold [ Z ] for about 5 seconds and the game will be initialized. Now press [ F2 ], then 3 times [ C ] and [ 1 ] to get out there and start playing.
-
-SOURCE:
-https://www.progettosnaps.net/gameinit.dat
-
-$end
-$info=goldenc
-$mame
-INITIALIZATION:
-At the first start, "CALL ATTENDANT" will flash at the top, to start press in sequence: [ F1 ] and [ F2 ] to do this. Now press [ Z ] + [ X ] + [ C ] simultaneously; you'll see a number show up for the value "RF/AMT" if done correctly. After this value is set, return to the game by taking off the [ F2 ].
-
-SOURCE:
-https://www.progettosnaps.net/gameinit.dat
 
 $end
 $info=gollygho
@@ -4408,15 +4313,6 @@ Messages that start with 5: press F3
 Any other messages: The game doesn't work, cannot proceed.
 
 $end
-$info=gtroppo
-$mame
-INITIALIZATION:
-At the first start, "CALL ATTENDANT" will flash at the top, to start press in sequence: [ F1 ] and [ F2 ] to do this. Now press [ Z ] + [ X ] + [ C ] simultaneously; you'll see a number show up for the value "RF/AMT" if done correctly. After this value is set, return to the game by taking off the [ F2 ].
-
-SOURCE:
-https://www.progettosnaps.net/gameinit.dat
-
-$end
 $info=gtsers8
 $mame
 INITIALIZATION:
@@ -4438,7 +4334,7 @@ $end
 $info=gunnrose
 $mame
 INITIALIZATION:
-At the first start, "CALL ATTENDANT" will flash at the top, to start press in sequence: [ F1 ] and [ F2 ] to do this, followed by pressing the [ W ] key twice. Now press [ Z ] + [ X ] + [ C ] simultaneously; you'll see a number show up for the value "RF/AMT" if done correctly. After this value is set, return to the game by taking off the [ F2 ].
+Press one at a time [ F1 F2 W W ]. Now press [ Z ] + [ X ] + [ C ] together (nothing appears to change). Now press [ F1 ] then [ F2 ].
 
 SOURCE:
 https://www.progettosnaps.net/gameinit.dat
@@ -5021,19 +4917,10 @@ If you do nothing, the screen will slowly fill up with asterisks.
 Press capital-U to drop into the monitor on the isbc 86/05 and 86/30. The 86/05 can boot floppies with the b command but appears to mostly be able to deal with 256byte sectors so fails to load the irmx 512byte sector.
 
 $end
-$info=island
+$info=island2_2,island2_7,island2_8,island2_9,island2_10,island2_11,island2_12,island2_13,island2_14
 $mame
 INITIALIZATION:
-To initialize the game, turn Service Mode ON [ F2 ] and press reset [ F3 ]. Move pointer to INIT with [ C ], then press [ 1 ]. Hold Cancel [ Z ] for 5 seconds while counter counts down. When complete, turn Service Mode OFF with [ F2 ] and restart or reboot.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=island2
-$mame
-INITIALIZATION:
-To initialize the game, turn Service Mode ON [ F2 ] and press reset [ F3 ]. Move pointer to INIT with [ C ], then press [ 1 ]. Hold Cancel [ Z ] for 5 seconds while counter counts down. When complete, turn Service Mode OFF with [ F2 ] and restart or reboot.
+Hold/tap [ F2 ] until the service screen appears. If "INIT" isn't selected, press [ C ] to choose it. Press [ 1 ], then hold down [ Z ] for about 5 seconds. Now press [ F2 ] then [ F3 ].
 
 SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
@@ -5468,22 +5355,13 @@ In Basic:
 Image types tested to work are KCC and TAP.
 
 $end
-$info=keks_6
+$info=keks_8,keks_9,keks_10,keks_11,keks_12,keks_13,keks_14,keks_15,keks_16,keks_17,keks_18,keks_19
 $mame
 INITIALIZATION:
-To initialize the game, turn Service Mode ON [ F2 ] and press reset [ F3 ]. Move pointer to INIT with [ C ], then press [ 1 ]. Hold Cancel [ Z ] for 5 seconds while counter counts down. When complete, turn Service Mode OFF with [ F2 ] and restart or reboot.
+Hold/tap [ F2 ] until the service screen appears. If "INIT" isn't selected, press [ C ] to choose it. Press [ 1 ], then hold down [ Z ] for about 5 seconds. Now press [ F2 ] then [ F3 ].
 
 SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=kgbird
-$mame
-INITIALIZATION:
-At the first start, "CALL ATTENDANT" will flash at the top, to start press in sequence: [ F1 ] and [ F2 ] to do this. Now press [ Z ] + [ X ] + [ C ] simultaneously; you'll see a number show up for the value "RF/AMT" if done correctly. After this value is set, return to the game by taking off the [ F2 ].
-
-SOURCE:
-https://www.progettosnaps.net/gameinit.dat
 
 $end
 $info=kim1
@@ -5836,10 +5714,10 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
-$info=lhaunt_6
+$info=lhaunt,lhaunt_3,lhaunt_12,lhaunt_13,lhaunt_14,lhaunt_15,lhaunt_16
 $mame
 INITIALIZATION:
-To initialize the game, turn Service Mode ON [ F2 ] and press reset [ F3 ]. Move pointer to INIT with [ C ], then press [ 1 ]. Hold Cancel [ Z ] for 5 seconds while counter counts down. When complete, turn Service Mode OFF with [ F2 ] and restart or reboot.
+Hold/tap [ F2 ] until the service screen appears. If "INIT" isn't selected, press [ C ] to choose it. Press [ 1 ], then hold down [ Z ] for about 5 seconds. Now press [ F2 ] then [ F3 ].
 
 SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
@@ -6597,10 +6475,10 @@ To save a tape: Press S then space, follow the prompts.
 To load a tape: Press L then space, follow the prompts.
 
 $end
-$info=mfish_13
+$info=mfish,mfish_2,mfish_4,mfish_5,mfish_7,mfish_9,mfish_10
 $mame
 INITIALIZATION:
-To initialize the game, turn Service Mode ON [ F2 ] and press reset [ F3 ]. Move pointer to INIT with [ C ], then press [ 1 ]. Hold Cancel [ Z ] for 5 seconds while counter counts down. When complete, turn Service Mode OFF with [ F2 ] and restart or reboot.
+Hold/tap [ F2 ] until the service screen appears. If "INIT" isn't selected, press [ C ] to choose it. Press [ 1 ], then hold down [ Z ] for about 5 seconds. Now press [ F2 ] then [ F3 ].
 
 SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
@@ -8586,15 +8464,6 @@ How to play:
 - Match digit appears in Outs digit.
 
 $end
-$info=phantomp
-$mame
-INITIALIZATION:
-At the first start, "CALL ATTENDANT" will flash at the top, to start press in sequence: [ F1 ] and [ F2 ] to do this. Now press [ Z ] + [ X ] + [ C ] simultaneously; you'll see a number show up for the value "RF/AMT" if done correctly. After this value is set, return to the game by taking off the [ F2 ].
-
-SOURCE:
-https://www.progettosnaps.net/gameinit.dat
-
-$end
 $info=phc20
 $mame
 TIPS:
@@ -8723,19 +8592,10 @@ Cassette:
 This has been hooked up to the otherwise-useless L command. Baud rate = 110. After load completes, G440 to run.
 
 $end
-$info=pirate_3
+$info=pirate,pirate2_5,pirate2_6,pirate2_7,pirate2_8,pirate2_9,pirate2_10,pirate2_11,pirate2_12
 $mame
 INITIALIZATION:
-To initialize the game, turn 'Service Mode' ON [ F2 ]. Move pointer to 'INIT' with Key [ C ] and press [ 1 ] to enter. Hold [ Z ] for 5 seconds while counter counts down, then turn 'Service Mode' OFF with [ F2 ]+[ F3 ].
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=pirate2
-$mame
-INITIALIZATION:
-To initialize the game, turn 'Service Mode' ON [ F2 ]. Move pointer to 'INIT' with Key [ C ] and press [ 1 ] to enter. Hold [ Z ] for 5 seconds while counter counts down, then turn 'Service Mode' OFF with [ F2 ]+[ F3 ].
+Hold/tap [ F2 ] until the service screen appears. If "INIT" isn't selected, press [ C ] to choose it. Press [ 1 ], then hold down [ Z ] for about 5 seconds. Now press [ F2 ] then [ F3 ].
 
 SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
@@ -9441,22 +9301,13 @@ TIPS:
 All commands to be in lower case. ? or help to get a list of commands.
 
 $end
-$info=rclimb_3,rclimb_4,rclimb_5,rclimb_7
+$info=rclimb_2,rclimb_8,rclimb_9,rclimb_10,rclimb_11,rclimb_12,rclimb_13,rclimb_14,resdnt_5,resdnt_10,resdnt_11,resdnt_12,resdnt_13,resdnt_14,resdnt_15,resdnt_16,resdnt_17
 $mame
 INITIALIZATION:
-To initialize the game, press [ F2 ] and using [ C ] to go on the "INIT" and pressing [ 1 ]. Now hold down the [ Z ] button for about 5 seconds. Now the game is initialized; press [ F2 ] and [ C ] until you are on the "EXIT" and confirm with [ 1 ].
+Hold/tap [ F2 ] until the service screen appears. If "INIT" isn't selected, press [ C ] to choose it. Press [ 1 ], then hold down [ Z ] for about 5 seconds. Now press [ F2 ] then [ F3 ].
 
 SOURCE:
 https://www.progettosnaps.net/gameinit.dat
-
-$end
-$info=rclimb_8,rclimb_9
-$mame
-INITIALIZATION:
-To initialize the game, turn Service Mode ON [ F2 ] and press reset [ F3 ]. Move pointer to INIT with [ C ], then press [ 1 ]. Hold Cancel [ Z ] for 5 seconds while counter counts down. When complete, turn Service Mode OFF with [ F2 ] and restart or reboot.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
 $info=realbrod
@@ -9493,15 +9344,6 @@ The first time you run the game, an ERROR appears because the NVRAM needs initia
 
 SOURCE:
 mameinfo.dat
-
-$end
-$info=resdnt_6
-$mame
-INITIALIZATION:
-To initialize the game, turn Service Mode ON [ F2 ] and press reset [ F3 ]. Move pointer to INIT with [ C ], then press [ 1 ]. Hold Cancel [ Z ] for 5 seconds while counter counts down. When complete, turn Service Mode OFF with [ F2 ] and restart or reboot.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
 $info=revlatns
@@ -9604,7 +9446,7 @@ TIPS:
 This game will randomly either start up, or get stuck at a black screen. If it starts, you'll see a large green G after a few seconds, followed by an error screen. Press 1 here, or wait. The game will then run. The debugger doesn't work properly, making it very difficult to fault-find.
 
 $end
-$info=rollfr_4
+$info=rollfr
 $mame
 INITIALIZATION:
 Turn on "BK DOOR" and "SERVICE MODE" Dips to ON. Hold [ 9 ]+[ 0 ] then reset the machine [ F3 ] to enter Total Parameters screen. Use [ 0 ] to select "Initialization". Hold [ 9 ] until the game finishes the countdown from 5. When complete, turn Dips mentioned above to OFF and restart MAME if needed.
@@ -10860,31 +10702,13 @@ To save a tape: CSAVE"x"
 To load a tape: CLOAD or RUN"CAS:"
 
 $end
-$info=sweetl
+$info=sweetl2_5,sweetl2_6,sweetl2_7,sweetl2_8,sweetl2_9,sweetl2_10,sweetl2_11,sweetl2_12
 $mame
 INITIALIZATION:
-To initialize the game, turn Service Mode ON [ F2 ] and press reset [ F3 ]. Move pointer to INIT with [ C ], then press [ 1 ]. Hold Cancel [ Z ] for 5 seconds while counter counts down. When complete, turn Service Mode OFF with [ F2 ] and restart or reboot.
+Hold/tap [ F2 ] until the service screen appears. If "INIT" isn't selected, press [ C ] to choose it. Press [ 1 ], then hold down [ Z ] for about 5 seconds. Now press [ F2 ] then [ F3 ].
 
 SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=sweetl2
-$mame
-INITIALIZATION:
-To initialize the game, turn Service Mode ON [ F2 ] and press reset [ F3 ]. Move pointer to INIT with [ C ], then press [ 1 ]. Hold Cancel [ Z ] for 5 seconds while counter counts down. When complete, turn Service Mode OFF with [ F2 ] and restart or reboot.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=swtht2nz
-$mame
-INITIALIZATION:
-At the first start, "CALL ATTENDANT" will flash at the top, to start press in sequence: [ F1 ] and [ F2 ] to do this. Now press [ Z ] + [ X ] + [ C ] simultaneously; you'll see a number show up for the value "RF/AMT" if done correctly. After this value is set, return to the game by taking off the [ F2 ].
-
-SOURCE:
-https://www.progettosnaps.net/gameinit.dat
 
 $end
 $info=swtpc,swtpcm
@@ -11073,15 +10897,6 @@ $info=tekkenbs
 $mame
 TIPS:
 You will need to press RESET ([ F3 ]) twice at the 'DIP SW READ ERROR' and 'BACKUP MEMORY ERROR' screen before you are allowed to play.
-
-SOURCE:
-mameinfo.dat
-
-$end
-$info=teqsun
-$mame
-INITIALIZATION:
-Press [ F1 ] (Jackpot) and [ F2 ] (Audit), then press [ Z ]+[ X ]+[ C ] simultaneously (HOP RESET + AUX + MEMTEST) until you see a number show up after "RF/AMT" on the right side. To return to the game press keys [ F1 ] and [ F2 ] again.
 
 SOURCE:
 mameinfo.dat
@@ -11369,7 +11184,7 @@ $end
 $info=toledo
 $mame
 INITIALIZATION:
-Insert coin [ 5 ] and keep pressed Aux Lever [ 2 ] and Lever [ 1 ] until the reels will start to roll.
+Insert coin [ 5 ] and keep pressed Aux Lever [ 2 ] and Lever [ 1 ] until the reels start to roll.
 
 SOURCE:
 mameinfo.dat
@@ -11380,21 +11195,16 @@ $mame
 INITIALIZATION:
 The first time run, the machine will show some numbers. Press F3 to clear this.
 
-Each game consists of a flat board with an air-driven puck and 10 bowling pins.
-You must push the puck as if it was a bowling ball, and score strikes and spares.
-The displays have 4 digits and 6 can play. The board has contactors to detect
-the passage of the puck, and the machine will lift the bowling pins out of the
-way, so in fact the puck never touches the pins at all.
+Each game consists of a flat board with an air-driven puck and 10 bowling pins. You must push the puck as if it was a bowling ball, and score strikes and spares. The displays have 4 digits and 6 can play. The board has contactors to detect the passage of the puck, and the machine will lift the bowling pins out of the way, so in fact the puck never touches the pins at all.
 
-- To play: 5,1,(optional: 3 to select game type), any of keys A-W,Y,Z,comma,period
-to activate puck detectors, X to signal end. Press it twice to end a frame.
+- To play: 5,1,(optional: 3 to select game type), any of keys A-W,Y,Z,comma,period to activate puck detectors, X to signal end. Press it twice to end a frame.
 - To score a strike, press ABCDFGIX one at a time.
 
 $end
 $info=topgear
 $mame
 INITIALIZATION:
-Press [ K ] (Audit) and [ L ] (Jackpot), then press [ Z ]+[ X ]+[ C ] simultaneously (HOP RESET + AUX + MEMTEST) until you see the "METER SET 1" screen. Press [ D ] (Play 2 Lines) to increment the minimum cashcade to $5 or above. To return to the game press keys [ J ] and [ K ] again.
+Press [ F1 ] then [ F2 ], then press [ Z ]+[ X ]+[ C ] together; you will see the "METER SET 1" screen. Press [ D ] to increment the minimum cashcade to $5 or above. Press [ F1 ] then [ F2 ] to finish up.
 
 SOURCE:
 mameinfo.dat
@@ -12042,15 +11852,6 @@ SOURCE:
 mameinfo.dat
 
 $end
-$info=wildone
-$mame
-INITIALIZATION:
-At the first start, "CALL ATTENDANT" will flash at the top, to start press in sequence: [ F1 ] and [ F2 ] to do this. Now press [ Z ] + [ X ] + [ C ] simultaneously; you'll see a number show up for the value "RF/AMT" if done correctly. After this value is set, return to the game by taking off the [ F2 ].
-
-SOURCE:
-https://www.progettosnaps.net/gameinit.dat
-
-$end
 $info=witch,witchb,witchs
 $mame
 INITIALIZATION:
@@ -12098,24 +11899,6 @@ On startup, you have to reset the game [ F3 ] to make it exit service mode.
 
 SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=wtiger
-$mame
-INITIALIZATION:
-Make sure "Audit Key" and "Jackpot Key" are lit up. (Leftmost buttons in layout at bottom of screen). Use [ K ] (audit) and [ J ] (jackpot) to do this. If you are unable to light both of these up, restart MAME and try again. Press [ Z ]+[ X ]+[ C ] simultaneously ( Reset + Aux + Memtest ). You'll see a number show up for the value "RF/AMT" if done correctly. After this value is set, return to the game by taking off the [ K ] and [ J ] keys.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=wtigernz
-$mame
-INITIALIZATION:
-At the first start, "CALL ATTENDANT" will flash at the top, to start press in sequence: [ F1 ] and [ F2 ] to do this. Now press [ Z ] + [ X ] + [ C ] simultaneously; you'll see a number show up for the value "RF/AMT" if done correctly. After this value is set, return to the game by taking off the [ F2 ].
-
-SOURCE:
-https://www.progettosnaps.net/gameinit.dat
 
 $end
 $info=wwfmania
