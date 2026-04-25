@@ -3120,6 +3120,18 @@ S - Alter memory
 There's no disk drive interface emulated.
 
 $end
+$info=dsfdcta
+$mame
+INITIALIZATION:
+This is quite complex. You get a screen starting with GC910JA. Press [ F2 ]. Here you can choose Yes or No with the [ Alt ] and [ Space ] keys. Choose Yes (the left choice), hit [ 1 ].
+Next screen: You have 3 choices: GN884, GN895, or nothing. Use [ Alt ] to choose either GN884 or GN895. Press [ 1 ].
+Next screen: Choose Yes, press [ 1 ]. Wait while it writes data (twice).
+Next screen: Here we must choose the new security cassette. In the Tab menu, open the Slot Devices, and change cassette to install, and pccard2 to the other choice, then Reset System.
+Next screen: Wait while it validates the flash. Choose Yes and press [ 1 ].
+Next screen: Here it will give you a number to add to the cassette. Ignore all that, open the slots menu again, and switch the cassette and pccard2 back to the original settings, then Reset System.
+Next screen: Wait while it validates the flash, and then the game will start.
+
+$end
 $info=dsoccr94
 $mame
 TIPS:
@@ -4126,10 +4138,13 @@ Wait patiently for the two progress bars to end, press [ TAB ], choose "DIP Swit
 Now choose "Reset System," and on reboot the game will start correctly.
 
 $end
-$info=funcube,funcube3
+$info=funcube,funcube2,funcube3,funcube4,funcube5
 $mame
 INITIALIZATION:
-If you get a memory error (with a loud alarm), press 9.
+funcube/funcube3: If you get a memory error (with a loud alarm), press 9.
+
+TIPS:
+It's a good idea to remap the direction controls to the arrow keys, the default I/J/K/L are just too inconvenient. The touchscreen button (right-ctrl) only works properly on funcube, it's problematic on the other games.
 
 SOURCE:
 mameinfo.dat
