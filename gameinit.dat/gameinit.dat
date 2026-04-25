@@ -10,7 +10,7 @@
 # Verified with motoschifo's MDE, downloadable here: http://adb.arcadeitalia.net/?page=download
 #
 #
-$info=3bagfull,3bagfullnz,autmoon,blkrhino,blkrhinonz,cgold,coralr2,eforest,eforestnz,ffortune,fvrpitch,gldnpkr,goldenc,grnlizrd,gtroppo,kgbirdnz,kgbirdnza,phantomp,swtht2nz,teqsun,wildone,wtigernz
+$info=3bagfull,3bagfullnz,autmoon,blkrhino,blkrhinonz,coralr2,eforest,eforestnz,ffortune,fvrpitch,gldnpkr,goldenc,grnlizrd,gtroppo,kgbirdnz,kgbirdnza,phantomp,swtht2nz,teqsun,wildone,wtigernz
 $mame
 INITIALIZATION:
 Press [ F1 ] then [ F2 ], then press [ Z ] + [ X ] + [ C ] together; you'll see a number show up for the value "RF/AMT" if done correctly. After this value is set, return to the game by pressing [ F2 ].
@@ -553,6 +553,12 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
+$info=ampkr2b3
+$mame
+INITIALIZATION:
+Press [ 0 ], then [ Z B V C X C ]. Wait for Supervisor mode to appear. Press [ 0 ] then [ F3 ].
+
+$end
 $info=amu880
 $mame
 TIPS:
@@ -633,7 +639,7 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
-$info=animechmp,bassang2,bassangl,cr589fw,cr589fwa,darkhleg,ddr2m,ddr2mc2,ddr2ml,ddr2mla,ddr2mlb,ddr3ma,ddr3mj,ddr3mk,ddr3mka,ddr3mp,ddr4m,ddr4mj,ddr4mp,ddr4mps,ddr4ms,ddr4msj,ddr5m,ddra,ddrbocd,ddrextrm,ddrj,ddrja,ddrjb,ddrkara2,ddrmax,ddrmax2,ddrs2k,ddrs2kj,ddrsbm,ddru,dmx,dmx2m,dmx2majp,dmxa,dncfrks,drmn,drmn10m,drmn2m,drmn2mpu,drmn3m,drmn4m,drmn5m,drmn6m,drmn7m,drmn7ma,drmn8m,drmn9m,drmn9ma,drmna,drmnu,dsem,dsem2,dsfdct,dsfdcta,dsfdr,dsftkd,dstage,fbaitbc,fbaitmc,fbaitmca,fbaitmcj,fbaitmcu,fghtmn,fghtmna,fghtmnk,fghtmnu,gbbchmp,gchgchmp,gtfrk10m,gtfrk10ma,gtfrk11m,gtfrk3ma,gtfrk3mb,gtrfrk2m,gtrfrk2ma,gtrfrk2maa,gtrfrk2mja,gtrfrk2mka,gtrfrk2ml1,gtrfrk2ml2,gtrfrk2mua,gtrfrk3m,gtrfrk4m,gtrfrk5m,gtrfrk5ma,gtrfrk6m,gtrfrk7m
+$info=animechmp,bassang2,bassangl,cr589fw,cr589fwa,darkhleg,ddr2m,ddr2mc2,ddr2ml,ddr2mla,ddr2mlb,ddr3ma,ddr3mj,ddr3mk,ddr3mka,ddr3mp,ddr4m,ddr4mj,ddr4mp,ddr4mps,ddr4ms,ddr4msj,ddr5m,ddra,ddrbocd,ddrextrm,ddrj,ddrja,ddrjb,ddrkara2,ddrmax,ddrmax2,ddrs2k,ddrs2kj,ddrsbm,ddru,dmx,dmx2m,dmx2majp,dmxa,dncfrks,drmn,drmn10m,drmn2m,drmn2mpu,drmn3m,drmn4m,drmn5m,drmn6m,drmn7m,drmn7ma,drmn8m,drmn9m,drmn9ma,drmna,drmnu,dsem,dsem2,dsfdct,dsfdr,dsftkd,dstage,fbaitbc,fbaitmc,fbaitmca,fbaitmcj,fbaitmcu,fghtmn,fghtmna,fghtmnk,fghtmnu,gbbchmp,gchgchmp,gtfrk10m,gtfrk10ma,gtfrk11m,gtfrk3ma,gtfrk3mb,gtrfrk2m,gtrfrk2ma,gtrfrk2maa,gtrfrk2mja,gtrfrk2mka,gtrfrk2ml1,gtrfrk2ml2,gtrfrk2mua,gtrfrk3m,gtrfrk4m,gtrfrk5m,gtrfrk5ma,gtrfrk6m,gtrfrk7m
 $mame
 INITIALIZATION:
 Messages that start with 6: press F2
@@ -2082,7 +2088,7 @@ The CC-40+ cassette device number is 1, eg. SAVE"1.FILENAME" to save, and OLD"1.
 $end
 $info=cchime
 $mame
-INITIALIZATION:
+TIPS:
 No screen. It's a door chime. All you can do is press Ctrl or Alt for a tune.
 
 $end
@@ -2136,8 +2142,7 @@ R    Turn on cassette motor
 V    Verify cassette vs memory
 Press Esc to exit most commands.
 
-D Aaaaa Lnn - save a tape starting at address aaaa for nn bytes (01 to FF). Length of 00 indicates to write EOF.
-(you type D aaaa nn, it fills in the rest for you).
+D Aaaaa Lnn - save a tape starting at address aaaa for nn bytes (01 to FF). Length of 00 indicates to write EOF. (you type D aaaa nn, it fills in the rest for you).
 
 Cassette loading doesn't work. Saving is ok because the data can be loaded onto the Super-80, but this system has great difficulty loading its own programs.
 
@@ -2145,7 +2150,7 @@ $end
 $info=cdibios,vp415
 $mame
 TIPS:
-This system works in MAMEUI only. It will crash MAME at start.
+This system runs in MAMEUI only. It will crash MAME at start.
 
 $end
 $info=cgenie,cgenienz
@@ -2165,8 +2170,7 @@ To load a tape: CLOAD or SYSTEM
 (same idea as TRS-80 Level 2)
 
 
-With SYSTEM, enter tape name from header (max 6 chars, space terminates)
-then press Scroll Lock, F2, hold Insert until loaded, then /
+With SYSTEM, enter tape name from header (max 6 chars, space terminates) then press Scroll Lock, F2, hold Insert until loaded, then /
 
 Most games start by pressing S, even if they say nothing.
 
@@ -2183,6 +2187,15 @@ Errors are numbers and can't find a manual.
 34 error = unable to run this program
 
 $end
+$info=cgold
+$mame
+INITIALIZATION:
+Go into the DIP Switches and turn HOPCO2 to On, and CBOPT2 to Off. Press [ F1 ] then [ F2 ], then press [ Z ] + [ X ] + [ C ] together; you'll see a number show up for the value "RF/AMT" if done correctly. Now press [ F2 ].
+
+TIPS:
+You can't use your winnings to bet again, new coins are always required.
+
+$end
 $info=champbwl
 $mame
 INITIALIZATION:
@@ -2194,7 +2207,7 @@ http://wiki.mamedev.org/index.php/FAQ:Games
 $end
 $info=chaos
 $mame
-INITIALIZATION:
+TIPS:
 With the DOS config switch turned off, the only accepted input is a line starting with '&'. The actual commands are unknown.
 
 With DOS enabled, a large number of commands become available.
@@ -4623,6 +4636,12 @@ $info=httip_l1,lucky_l1,wldcp_l1,disco_l1,cntct_l1,phnix_l1,pkrno_l1
 $mame
 INITIALIZATION:
 When first used, it appears frozen (the score should alternate). Press F3 to fix.
+
+$end
+$info=huahuas5
+$mame
+TIPS:
+All credits must be bet before the game can be played. Pressing 5 for too long gives a COIN ERROR and the game locks up.
 
 $end
 $info=hunter2,hunter
