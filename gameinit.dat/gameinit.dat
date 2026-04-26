@@ -639,7 +639,7 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
-$info=animechmp,bassang2,bassangl,cr589fw,cr589fwa,darkhleg,ddr2m,ddr2mc2,ddr2ml,ddr2mla,ddr2mlb,ddr3ma,ddr3mj,ddr3mk,ddr3mka,ddr3mp,ddr4m,ddr4mj,ddr4mp,ddr4mps,ddr4ms,ddr4msj,ddr5m,ddra,ddrbocd,ddrextrm,ddrj,ddrja,ddrjb,ddrkara2,ddrmax,ddrmax2,ddrs2k,ddrs2kj,ddrsbm,ddru,dmx,dmx2m,dmx2majp,dmxa,dncfrks,drmn,drmn10m,drmn2m,drmn2mpu,drmn3m,drmn4m,drmn5m,drmn6m,drmn7m,drmn7ma,drmn8m,drmn9m,drmn9ma,drmna,drmnu,dsem,dsem2,dsfdct,dsfdr,dsftkd,dstage,fbaitbc,fbaitmc,fbaitmca,fbaitmcj,fbaitmcu,fghtmn,fghtmna,fghtmnk,fghtmnu,gbbchmp,gchgchmp,gtfrk10m,gtfrk10ma,gtfrk11m,gtfrk3ma,gtfrk3mb,gtrfrk2m,gtrfrk2ma,gtrfrk2maa,gtrfrk2mja,gtrfrk2mka,gtrfrk2ml1,gtrfrk2ml2,gtrfrk2mua,gtrfrk3m,gtrfrk4m,gtrfrk5m,gtrfrk5ma,gtrfrk6m,gtrfrk7m
+$info=animechmp,bassang2,bassangl,cr589fw,cr589fwa,darkhleg,ddr2m,ddr2mc2,ddr2ml,ddr2mla,ddr2mlb,ddr3ma,ddr3mj,ddr3mk,ddr3mka,ddr3mp,ddr4m,ddr4mj,ddr4mp,ddr4mps,ddr4ms,ddr4msj,ddr5m,ddra,ddrbocd,ddrextrm,ddrj,ddrja,ddrjb,ddrkara2,ddrmax,ddrmax2,ddrs2k,ddrs2kj,ddrsbm,ddru,dmx,dmx2m,dmx2majp,dmxa,dncfrks,drmn,drmn10m,drmn2m,drmn2mpu,drmn3m,drmn4m,drmn5m,drmn6m,drmn7m,drmn7ma,drmn8m,drmn9m,drmn9ma,drmna,drmnu,dsem,dsem2,dsfdr,dsftkd,dstage,fbaitbc,fbaitmc,fbaitmca,fbaitmcj,fbaitmcu,fghtmn,fghtmna,fghtmnk,fghtmnu,gbbchmp,gchgchmp,gtfrk10m,gtfrk10ma,gtfrk11m,gtfrk3ma,gtfrk3mb,gtrfrk2m,gtrfrk2ma,gtrfrk2maa,gtrfrk2mja,gtrfrk2mka,gtrfrk2ml1,gtrfrk2ml2,gtrfrk2mua,gtrfrk3m,gtrfrk4m,gtrfrk5m,gtrfrk5ma,gtrfrk6m,gtrfrk7m
 $mame
 INITIALIZATION:
 Messages that start with 6: press F2
@@ -3120,15 +3120,26 @@ S - Alter memory
 There's no disk drive interface emulated.
 
 $end
+$info=dsfdct
+$mame
+INITIALIZATION:
+This is quite complex. You get a screen starting with GC910JC. Press [ F2 ]. Here you can choose Yes or No with the [ Alt ] and [ Space ] keys. Choose Yes (the left choice), hit [ 1 ].
+Next screen: Choose Yes, press [ 1 ]. Wait while it writes data (twice).
+Next screen: Here we must choose the new security cassette. In the Tab menu, open the Slot Devices, and change cassette to "install", and pccard2 to "id245p01", then choose Reset System.
+Next screen: Wait while it validates the flash. Choose Yes and press [ 1 ].
+Next screen: Here it will give you a serial number to add to the cassette. Ignore all that, open the slots menu again, and switch the cassette and pccard2 back to the original settings, then Reset System.
+Next screen: Wait while it validates the flash, and then the game will start.
+
+$end
 $info=dsfdcta
 $mame
 INITIALIZATION:
 This is quite complex. You get a screen starting with GC910JA. Press [ F2 ]. Here you can choose Yes or No with the [ Alt ] and [ Space ] keys. Choose Yes (the left choice), hit [ 1 ].
 Next screen: You have 3 choices: GN884, GN895, or nothing. Use [ Alt ] to choose either GN884 or GN895. Press [ 1 ].
 Next screen: Choose Yes, press [ 1 ]. Wait while it writes data (twice).
-Next screen: Here we must choose the new security cassette. In the Tab menu, open the Slot Devices, and change cassette to install, and pccard2 to the other choice, then Reset System.
+Next screen: Here we must choose the new security cassette. In the Tab menu, open the Slot Devices, and change cassette to "install", and pccard2 to "id245p01", then choose Reset System.
 Next screen: Wait while it validates the flash. Choose Yes and press [ 1 ].
-Next screen: Here it will give you a number to add to the cassette. Ignore all that, open the slots menu again, and switch the cassette and pccard2 back to the original settings, then Reset System.
+Next screen: Here it will give you a serial number to add to the cassette. Ignore all that, open the slots menu again, and switch the cassette and pccard2 back to the original settings, then Reset System.
 Next screen: Wait while it validates the flash, and then the game will start.
 
 $end
