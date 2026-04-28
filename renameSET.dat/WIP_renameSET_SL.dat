@@ -1,5 +1,5 @@
 ﻿#     ==========================================================
-#     MAME RENAMESET_SL.DAT v0.287  Latest update:  Apr 18, 2026
+#     MAME RENAMESET_SL.DAT v0.287  Latest update:  Apr 27, 2026
 #     ==========================================================
 #
 #     Home-page: https://www.progettosnaps.net/renameset/
@@ -13,7 +13,7 @@
 #     motoschifo for "ADB Tool"
 #     Internal Version 16.04
 #
-#     Rename/Delete Software Lists (in dat): From version 0.180 to 0.220 already rechecked.
+#     Rename/Delete Software Lists (in dat): From version 0.180 to 0.225 already rechecked.
 #
 $0.287 [#726]
 2026/03/31
@@ -8210,15 +8210,42 @@ gameboy                 | xu
 
 $0.225 [#664]
 2020/09/30
-612 software list (-2/+1), 126.354 software (-175), 598 active SL (+3), 14 orphan SL, 125.581 active software (-174), 773 orphan software (+1), 86.214 software parents (+147), 40.140 software clones (+28)
+612 software list (-2/+5), 126.354 software (-17/+158), 598 active SL (-2/+5), 14 orphan SL, 125.581 active software (-17/+157), 773 orphan software (+1), 86.214 software parents (+147), 40.140 software clones (+28)
 207.489 software roms (+294), 9.835 software CHD (+41), 88.862 supported software (+208), 1.056 partially supported software, 36.436 unsupported software (-33)
 
-2 lists merged:
-g7400                   |
---------------------------> videopac
-odyssey2                |
+2 software-lists merged:
+g7400, odyssey2 to videopac (Philips Videopac / Odyssey 2 cartridges)
 
-45 software renamed:
+4 active software-lists added:
+bbc_flop_hybrid (Hybrid Music System discs)
+clipper_flop (PDC Clipper disks)
+ibm5150_hdd (IBM PC hard disk images)
+ibm5170_hdd (IBM PC/AT hard disk images)
+
+software removed/added/updated:
+apple2_flop_clcracked (0/+3/0)
+apple2_flop_orig (0/+31/0)
+bbc_flop_hybrid (0/+78/0)
+clipper_flop (0/+1/0)
+cpc_flop (-16/+5/5)
+electron_cart (0/+3/0)
+electron_rom (-1/0/0)
+fmtowns_cd (0/+20/38)
+fmtowns_flop (0/+2/0)
+g7400 (-32/0/0)
+hp9k3xx_cdrom (0/+7/0)
+ibm5150 (0/+6/3)
+ibm5150_hdd (0/+1/0)
+ibm5170 (0/+14/4)
+ibm5170_hdd (0/+10/0)
+mac_hdflop (0/+1/0)
+odyssey2 (-147/0/0)
+pc98 (0/0/1)
+videopac (0/+181/0)
+vsmile_cart (0/+1/0)
+vsmilem_cart (0/+1/0)
+
+48 software renamed:
 cpc_flop                | indianaj          > indyfate
 cpc_flop                | indianaj01        > indyfate01
 cpc_flop                | indianaj02        > indycrus
@@ -8226,14 +8253,12 @@ cpc_flop                | indianaj03        > indycrus01
 cpc_flop                | indianaj04        > indycrus02
 cpc_flop                | indianaj05        > indytemp
 cpc_flop                | indianaj06        > indytemp01
+cpc_flop                | indianaj07        > indytemp10
 cpc_flop                | indianaj08        > indytemp02
-cpc_flop                | indianaj09        > indyfate02
-cpc_flop                | indianaj0b        > indycrus03
 cpc_flop                | indianaj0d        > indycrus04
 cpc_flop                | indianaj0e        > indycrus05
 cpc_flop                | indianaj0f        > indytemp03
 cpc_flop                | indianaj10        > indytemp04
-cpc_flop                | indianaj11        > indyfate03
 cpc_flop                | indianaj11a       > indytemp06
 cpc_flop                | indianaj14        > indyfate05
 cpc_flop                | indianaj16        > indycrus06
@@ -8252,51 +8277,120 @@ cpc_flop                | indianaj22        > indycrus15
 cpc_flop                | indianaj23        > indycrus16
 cpc_flop                | indianaj24        > indytemp08
 cpc_flop                | indianaj25        > indytemp09
-cpc_flop                | thunderb05a       > thunderb03
+cpc_flop                | thunderb02        > thndrbld
+cpc_flop                | thunderb05        > thndrbld01
+cpc_flop                | thunderb06        > thndrbld02
 cpc_flop                | thunderb07        > thndrbld03
 cpc_flop                | thunderb08        > thndrbld04
 cpc_flop                | thunderb09        > thndrbrn
 cpc_flop                | thunderb0a        > thndrbrn01
-cpc_flop                | thunderb0b        > thunderb04
 cpc_flop                | thunderb0ba       > thndrbld05
-cpc_flop                | thunderb0c        > thunderb05
 cpc_flop                | thunderb0ca       > thndrbrn02
-cpc_flop                | thunderb0f        > thunderb
-hp9k3xx_cdrom           | hpux_9_0_laserom  > hpux9_lrm_apr_94
-hp9k3xx_cdrom           | hpux_9_10_apps    > hpux9_app_oct_92
+cpc_flop                | thunderb0f        > thunderb06
+fmtowns_cd              | dmaster           > dmastero
+fmtowns_cd              | hyplanet          > hyplaneto
+hp9k3xx_cdrom           | hpux_9_0_laserom  > hpux9_lrm_feb_95
+hp9k3xx_cdrom           | hpux_9_10_apps    > hpux9_app_apr_95
+hp9k3xx_cdrom           | hpux_9_10_prog    > hpux9_app_sep_98
+ibm5170                 | f1gp              > f1gpa
+ibm5170                 | indy3adv          > indy3adv525
 
-11 software removed:
-cpc_flop                | indianaj07
+17 software removed:
+cpc_flop                | indianaj09
 cpc_flop                | indianaj0a
+cpc_flop                | indianaj0b
 cpc_flop                | indianaj0c
+cpc_flop                | indianaj11
 cpc_flop                | indianaj12
 cpc_flop                | indianaj13
 cpc_flop                | indianaj15
+cpc_flop                | thunderb05a
 cpc_flop                | thunderb06a
+cpc_flop                | thunderb0b
+cpc_flop                | thunderb0c
 cpc_flop                | thunderb0d
 cpc_flop                | thunderb0e
 cpc_flop                | thunderb10
-hp9k3xx_cdrom           | hpux_9_10_prog
-
+cpc_flop                | thunderb11
+electron_rom            | commstar
 
 $0.224 [#663]
 2020/08/26
-609 software list (+3), 126.179 software (-5/+211), 595 active SL (+3), 14 orphan SL, 125.407 active software (-5/+211), 772 orphan software, 86.067 software parents (+187), 40.112 software clones (+29)
+609 software list (+3), 126.179 software (-4/+212), 595 active SL (+3), 14 orphan SL, 125.407 active software (-4/+212), 772 orphan software, 86.067 software parents (+187), 40.112 software clones (+29)
 207.195 software roms (+906), 9.794 software CHD (+25), 88.654 supported software (+201), 1.056 partially supported software (+12), 36.469 unsupported software (+3)
 
-36 software renamed:
+3 active software-lists added:
+hp9k3xx_cdrom (HP9000/300 CD-ROM images)
+hp9k3xx_hdd (HP9000/300 hard disk images)
+kaypro484 (Kaypro 4/84 disk images)
+
+software removed/added/updated:
+apple2_flop_clcracked (0/+72/0)
+apple2_flop_misc (0/+1/0)
+apple2_flop_orig (0/+4/0)
+bbc_rom (0/+9/2)
+bbcm_cart (0/+3/0)
+electron_cart (0/+2/0)
+electron_rom (0/+3/2)
+fm7_cass (0/+1/0)
+g7400 (-1/+2/0)
+gamate (0/+1/0)
+hp9k3xx_cdrom (0/+5/0)
+hp9k3xx_hdd (0/+1/0)
+ibm5150 (0/+2/0)
+ibm5170 (0/+13/2)
+kaypro484 (0/+2/0)
+odyssey2 (0/+6/1)
+pc98 (-3/+29/7)
+picno (0/+3/0)
+princ (0/+1/0)
+sgi_mips (0/+14/0)
+snotec (0/+2/0)
+t1000 (0/+2/0)
+vgmplay (0/+40/2)
+
+68 software renamed:
+electron_rom            | mode7sim          > mode7sim11
 g7400                   | 2bsktbwl          > 2bsktbwlpl
-pc98                    | fechi             > feti
+g7400                   | 2bwlbskt          > 2bwlbsktpl
+g7400                   | 3csaucpt          > 3csaucptpl
+g7400                   | 3rcsocpt          > 3rcsocptpl
+g7400                   | bees              > beespl
+g7400                   | billard           > billardpl
+g7400                   | billiard          > billiardpl
+g7400                   | claypig           > claypigpl
+g7400                   | cosmic            > cosmicpl
+g7400                   | demon             > demonpl
+g7400                   | flipper           > flipperpl
+g7400                   | flippera          > flipperpla
+g7400                   | freedom           > freedompl
+g7400                   | liberte           > cosmospl
+g7400                   | pickaxe           > pickaxepl
+g7400                   | satellit          > satellitpl
+g7400                   | stone             > stonepl
+ibm5170                 | ufoeu             > ufoeua
+odyssey2                | loony             > loonyp
+odyssey2                | neutron           > neutronp
+pc98                    | faara             > falla
+pc98                    | frontier          > frontunv
+pc98                    | funnybeeb         > funnybee
+vgmplay                 | atetris           > tetris_pc
+vgmplay                 | atetris_syse      > tetrisse
 vgmplay                 | batman_sms        > batmanrn_sms
 vgmplay                 | bltmania_md       > btlmania_md
+vgmplay                 | bomber            > bombcoll_gb
 vgmplay                 | choplft3_sms      > choplift_sms
 vgmplay                 | cltchitr_gg       > clutchit_gg
 vgmplay                 | csilver_sms       > captsilv_sms
 vgmplay                 | csilver_smsfm     > captsilv_smsfm
 vgmplay                 | ds00_fm           > compileds_msxfm
 vgmplay                 | ds00_psg          > conpileds_msx
+vgmplay                 | enduror_sms       > enduro_sms
 vgmplay                 | fatfury1_md       > fatfury_md
+vgmplay                 | ffant             > ffant_msxfm
+vgmplay                 | ffurries          > ffurries_pc
 vgmplay                 | goldaxe3_md       > goldnax3_md
+vgmplay                 | gransl_md         > grandsl_md
 vgmplay                 | greatbasc_sms     > greatbasj_sms
 vgmplay                 | junctionj_md      > junction_md
 vgmplay                 | kiss_md           > kissshot_md
@@ -8304,15 +8398,19 @@ vgmplay                 | madoum1_md        > madoumon_md
 vgmplay                 | micromc3_md       > micromc2_md
 vgmplay                 | namcocdm          > namcocdm_msxfm
 vgmplay                 | psychicwj_sms     > psychicw_sms
+vgmplay                 | puzzle            > puzzledp
 vgmplay                 | rambo_md          > rambo3_md
 vgmplay                 | rock_sms          > rocky_sms
 vgmplay                 | shootinf_sms      > shooting_sms
 vgmplay                 | sidepckt_md       > sidepock_md
-vgmplay                 | sonyc_fm          > sonyc_msx2
-vgmplay                 | sonyc_ms          > sonyc_msx2m
+vgmplay                 | smgp2j_md         > smgp2u_md
+vgmplay                 | sonyc_fm          > sonyc_msx2m
+vgmplay                 | sonyc_ms          > sonyc_msx2
+vgmplay                 | stetris           > stetris_gg
 vgmplay                 | streets_md        > ssmart_md
 vgmplay                 | teltel_md         > telmah_md
 vgmplay                 | testdri2_at       > td3_at
+vgmplay                 | tetrisse          > atetris
 vgmplay                 | thndrbld_sms      > tblade_sms
 vgmplay                 | thndrbld_smsfm    > tblade_smsfm
 vgmplay                 | vf_md             > vf2_md
@@ -8320,96 +8418,351 @@ vgmplay                 | wb3_md            > wboy3_md
 vgmplay                 | wbml_sms          > wboymlnd_sms
 vgmplay                 | wbml_smsfm        > wboymlnd_smsfm
 vgmplay                 | wgp_sms           > worldgp_sms
-vgmplay                 | smgp2j_md         > smgp2u_md
 
-5 software removed:
-g7400                   | liberte
+4 software removed:
+g7400                   | backgamm
 pc98                    | falcomcga
+pc98                    | fechi
 pc98                    | funnybeea
-pc98                    | funnybeeb
-vgmplay                 | atetris_syse
 
 
 $0.223 [#662]
 2020/08/06
-606 software list (+2), 125.963 software (-4/+134), 592 active SL (+2), 14 orphan SL, 125.191 active software (-4/+134), 772 orphan software, 85.880 software parents (+94), 40.083 software clones (+44)
+606 software list (+2), 125.963 software (-6/+132), 592 active SL (+2), 14 orphan SL, 125.191 active software (-6/+132), 772 orphan software, 85.880 software parents (+94), 40.083 software clones (+44)
 206.289 software roms (+159), 9.769 software CHD (+84), 88.453 supported software (+250), 1.044 partially supported software, 36.466 unsupported software (-112)
 
-14 software renamed:
+2 active software-lists added:
+novag_ssensor4 (Super Sensor IV expansion ROMs)
+sgi_mips_hdd (Hard disk images for SGI MIPS)
+
+software removed/added/updated:
+cpc_flop (-6/+3/0)
+fmtowns_cd (0/+28/23)
+gba (0/+13/0)
+ibm5150 (0/+15/6)
+ibm5170 (0/+6/0)
+leapfrog_mfleappad_cart (0/+1/0)
+megadriv (0/+1/0)
+mobigo_cart (0/+7/1)
+nascom_snap (0/+2/1)
+novag_ssensor4 (0/+1/0)
+pc98 (0/0/2)
+pc98_cd (0/+15/11)
+pi_storyreader_cart (0/+3/0)
+sgi_mips (0/+21/2)
+sgi_mips_hdd (0/+5/0)
+tvgogo (0/+2/0)
+vsmile_cart (0/+4/0)
+vsmileb_cart (0/+1/0)
+vsmilem_cart (0/+10/1)
+
+23 software renamed:
+cpc_flop                | secretag          > slyspy07
+cpc_flop                | secretag01        > slyspy
 cpc_flop                | secretag02        > slyspy01
 cpc_flop                | secretag03        > slyspy04
-cpc_flop                | slyspyse          > slyspy02
 cpc_flop                | slyspyse02        > slyspy03
-cpc_flop                | slyspyse03        > slyspy05
+ibm5150                 | budokan           > budokan35
+ibm5150                 | budokana          > budokan35a
+ibm5150                 | dlair             > dlair35
+ibm5150                 | lakecelt          > lakecelt35
+ibm5150                 | xenon2            > xenon2a
 mobigo_cart             | fishrekg          > shrekfag
-sgi_mips                | indizone          > indizone_1
+mobigo_cart             | tbell             > mickeys
+pc98                    | hldruna           > ldrun
+sgi_mips                | indizone          > indizone_1_1
+sgi_mips                | irix_5_2_a        > irix_5_2_b
+vsmile_cart             | ltleinstns        > ltleinstn
+vsmilem_cart            | actnmniam         > actnmniam4
 vsmilem_cart            | actnmniama        > actnmniam6
 vsmilem_cart            | cinderlam2g       > cinderlamg2
 vsmilem_cart            | ltleinstnm        > ltleinstnm2
 vsmilem_cart            | ltleinstnm2g      > ltleinstnmg2
 vsmilem_cart            | ltleinstnma       > ltleinstnm5
-vsmilem_cart            | ltleinstns        > ltleinstn
 vsmilem_cart            | mickeychmfr005    > mickeychmf005
 
-4 software removed:
-cpc_flop                | secretag01
+6 software removed:
+cpc_flop                | slyspyse
 cpc_flop                | slyspyse01
+cpc_flop                | slyspyse03
 cpc_flop                | slyspyse04
-pc98                    | hldruna
+cpc_flop                | slyspyse05
+cpc_flop                | slyspyse06
 
 
 $0.222 [#661]
 2020/06/26
-604 software list (-4/+1), 125.825 software (-27/+767), 590 active SL (-4), 14 orphan SL (+1), 125.053 active software (-27/+760), 772 orphan software (+7), 85.786 software parents (+720), 40.039 software clones (+74)
+604 software list (-4/+9), 125.825 software (-184/+610), 590 active SL (-4/+9), 14 orphan SL (+1), 125.053 active software (-184/+603), 772 orphan software (+7), 85.786 software parents (+720), 40.039 software clones (+74)
 206.130 software roms (+1005), 9.685 software CHD (+343), 88.203 supported software (+676), 1.044 partially supported software (+75), 36.578 unsupported software (+43)
 
 4 software-lists merged:
-bbca_cass               |
-bbcb_cass               |
---------------------------> bbc_cass
-bbcb_cass_de            |
-bbcm_cass               |
+bbca_cass, bbcb_cass, bbcb_cass_de, bbcm_cass to bbc_cass (Acorn BBC Micro cassettes)
 
-13 software renamed:
-bbc_cass                | candyflo          > candyfst
-bbc_cass                | diss              > dasmc
-pc98                    | eosys30a          > eosys30i10
-pc98                    | emsdos50a         > emsdos50r1
-pc98                    | epsonb2h          > epsonb5
-bbc_cass                | invaderp          > invadersp
-mobigo_cart             | jakenimg          > jakenevg
-fmtowns_cd              | grimm             > grimmaka
+8 active software-lists added:
+bbc_hdd (Acorn BBC Micro hard disks)
+eti660_quik (ETI-660 quickload)
+excalibur64 (Excalibur 64 floppies)
+fidel_msc (Fidelity MSC Modules)
+hyperscan_card (Mattel Hyperscan RFID cards)
+nuon (NUON DVD-ROMs)
+sgi_mips (Sgi MIPS/IRIX software)
+super80_flop (Dick Smith Super-80 floppies)
+
+software removed/added/updated:
+apple2_flop_clcracked (0/+22/0)
+apple2_flop_orig (0/+113/0)
+bbc_cass (0/+1578/0)
+bbc_flop_z80 (0/+1/0)
+bbc_hdd (0/+6/0)
+bbc_rom (0/+56/11)
+bbca_cass (-47/0/0)
+bbcb_cass (-1516/0/0)
+bbcb_cass_de (-18/0/0)
+cgenie_cass (0/+2/0)
+compis (0/+20/0)
+electron_cass (-179/0/0)
+eti660_quik (0/+5/0)
+excalibur64 (0/+1/0)
+fidel_msc (0/+2/0)
+fmtowns_cd (0/+8/7)
+ggm (0/+1/0)
+gmaster (0/+2/0)
+hyperscan_card (0/+445/0)
+ibm5150 (-1/+3/2)
+ibm5170 (0/+13/3)
+mobigo_cart (0/+7/0)
+msx1_cart (0/+1/0)
+nuon (0/+7/0)
+pc98 (-3/+20/1)
+psi98 (-1/0/1)
+qx10_flop (0/+1/0)
+saitek_schess (0/+1/0)
+sgi_mips (0/+189/0)
+st_flop (0/+1/0)
+super80_flop (0/+3/0)
+tvgogo (0/+2/0)
+vgmplay (0/+44/0)
+vsmile_cart (0/+4/0)
+vsmileb_cart (0/+2/0)
+vsmilem_cart (0/+4/0)
+
+33 software renamed:
+bbc_rom                 | adder             > adder101
+bbc_rom                 | master            > master103
+bbc_rom                 | quest             > quest21a
+bbc_rom                 | replay1770        > replay1770_101
 bbc_rom                 | replay8271a       > replay8271_100
-bbc_rom                 | viewa             > viewa21
-bbc_rom                 | view3a            > viewa3
+bbc_rom                 | sysdelta          > sysdelta213
+bbc_rom                 | tts               > tts101
+bbc_rom                 | view              > viewd21
 bbc_rom                 | view3             > viewb3
-bbc_cass                | numberbg          > numberbag
+bbc_rom                 | view3a            > viewa3p
+bbc_rom                 | viewa             > viewa21
+bbc_rom                 | vnula             > vnula102
+electron_cass           | bugeyesa          > bugeyes
+electron_cass           | cavemanca         > cavemanc
+electron_cass           | comblynxa         > comblynx
+electron_cass           | footbyeak         > footbyea
+electron_cass           | frnk2000          > frnk2000au
+electron_cass           | frnk2000atrr      > frnk2000
+electron_cass           | lastfreea         > lastfree
+electron_cass           | mineshafa         > mineshaf
+electron_cass           | moffices          > moffice
+electron_cass           | psycasta          > psycast
+electron_cass           | sharriera         > sharrier
+electron_cass           | spit40a           > spit40
+fmtowns_cd              | grimm             > grimmaka
+ibm5150                 | centiped          > centipedc
+ibm5150                 | mspacman          > mspacmanc
+ibm5170                 | dune              > dune525
+ibm5170                 | simlife           > simlifea
+mobigo_cart             | jakenimg          > jakenevg
+pc98                    | emsdos50          > emsdos50r1
+pc98                    | emsdos50a         > emsdos50
+pc98                    | epsonb2h          > epsonb5
 
-27 software removed:
-bbca_cass               | ainvader
-bbca_cass               | airlinea
-bbca_cass               | spacinva
-bbcb_cass               | airlineb
-bbcb_cass               | binvader
-bbcb_cass               | fruitmb
-bbcb_cass               | honestjo
-bbcb_cass               | spacinvb
-bbcb_cass_de            | dskdiarg
-bbcb_cass_de            | rocketrg
-bbcb_cass_de            | treeknog
-bbcm_cass               | crazyrid
+184 software removed:
+electron_cass           | 9cardbd1
+electron_cass           | 9cardbd2
+electron_cass           | abgenjnr
+electron_cass           | abgensnr
+electron_cass           | absports
+electron_cass           | abyss
 electron_cass           | adv4pack
-electron_cass           | bugeyesa
-electron_cass           | cavemanca
-electron_cass           | comblynxa
+electron_cass           | advcreat
+electron_cass           | amsuds
+electron_cass           | anarchyz
+electron_cass           | annabelg
+electron_cass           | arabiann
+electron_cass           | artstudi
+electron_cass           | atahaulp
+electron_cass           | aufwiede
+electron_cass           | avousfra
+electron_cass           | axeofkol
+electron_cass           | battlefi
+electron_cass           | beebtrek
+electron_cass           | bestlang
+electron_cass           | biology
+electron_cass           | bluedrag
+electron_cass           | bridgema
+electron_cass           | castlclo
+electron_cass           | chesss
+electron_cass           | chukee
+electron_cass           | classadv
+electron_cass           | confuzio
 electron_cass           | confuzioa
+electron_cass           | copsnrob
+electron_cass           | countoli
+electron_cass           | creepyca
+electron_cass           | cricket
+electron_cass           | crimedet
+electron_cass           | czerbert
+electron_cass           | datingga
+electron_cass           | deadaliv
+electron_cass           | dgeezers
+electron_cass           | dmfinsbu
+electron_cass           | dmoldoak
 electron_cass           | dmoldoakd
+electron_cass           | dominoeg
+electron_cass           | draughtc
+electron_cass           | druidsci
+electron_cass           | empire
+electron_cass           | ewgeebez
+electron_cass           | eyezolto
+electron_cass           | fantdiam
+electron_cass           | ffjungen
+electron_cass           | ffsengen
+electron_cass           | ffssport
+electron_cass           | fireisla
+electron_cass           | fivedoct
+electron_cass           | fiveston
 electron_cass           | fivetwin
-electron_cass           | footbyeak
-electron_cass           | lastfreea
-electron_cass           | moffices
-electron_cass           | psycasta
+electron_cass           | fmchess
+electron_cass           | fourwand
+electron_cass           | fruitcat
+electron_cass           | fs2_68
+electron_cass           | fs2_ov8
+electron_cass           | fs2_un6
+electron_cass           | fss1
+electron_cass           | fss2
+electron_cass           | fss3
+electron_cass           | funumber
+electron_cass           | galadrie
+electron_cass           | galilee
+electron_cass           | goldfigu
+electron_cass           | golfys
+electron_cass           | graphito
+electron_cass           | greatwal
+electron_cass           | gridirn2
+electron_cass           | gunfight
+electron_cass           | hampstea
+electron_cass           | harleq
+electron_cass           | hercules
+electron_cass           | hex
+electron_cass           | histquiz
+electron_cass           | honeylog
+electron_cass           | hunkdory
+electron_cass           | icehocky
+electron_cass           | identiki
+electron_cass           | ideurope
+electron_cass           | incatrea
+electron_cass           | indoorso
+electron_cass           | inu
+electron_cass           | johnyreb
+electron_cass           | jugglepu
+electron_cass           | kane
+electron_cass           | kettrilo
+electron_cass           | killaped
+electron_cass           | knowpsiq
+electron_cass           | leaguech
+electron_cass           | letscmp1
+electron_cass           | lookshrp
+electron_cass           | magnmoon
+electron_cass           | mathsinv
+electron_cass           | mathtuto
+electron_cass           | mendipst
+electron_cass           | microbal
+electron_cass           | missxp2
+electron_cass           | monkeynu
+electron_cass           | mrmenher
+electron_cass           | ninedanc
+electron_cass           | numbergu
+electron_cass           | panik
+electron_cass           | paras
+electron_cass           | planb
+electron_cass           | planb2
+electron_cass           | planecra
+electron_cass           | playcard
+electron_cass           | podd
+electron_cass           | poker
+electron_cass           | ponyexpr
+electron_cass           | progolf
+electron_cass           | puppetmn
+electron_cass           | relucthe
+electron_cass           | rikroadi
+electron_cass           | rohak
+electron_cass           | roundone
+electron_cass           | rowfour
+electron_cass           | rtcbirmi
+electron_cass           | rtccrewe
+electron_cass           | rtcdonca
+electron_cass           | sadimcas
+electron_cass           | salandra
+electron_cass           | scfiquiz
+electron_cass           | sdevonhy
+electron_cass           | seaqueen
+electron_cass           | shbounds
+electron_cass           | shfinpar
+electron_cass           | skyhawk
+electron_cass           | soccboss
+electron_cass           | specops
+electron_cass           | spoker2p
+electron_cass           | sporttri
+electron_cass           | stafflaw
+electron_cass           | starques
+electron_cass           | stolenla
+electron_cass           | strip2
+electron_cass           | suds
+electron_cass           | suprmang
+electron_cass           | survivrs
+electron_cass           | symmetry
+electron_cass           | tankattc
+electron_cass           | templetn
+electron_cass           | terrormo
+electron_cass           | tetris
+electron_cass           | thamesl
+electron_cass           | theboss
+electron_cass           | thequill
+electron_cass           | tombdeat
+electron_cass           | tomcat
+electron_cass           | topstail
+electron_cass           | traditio
+electron_cass           | triple1
+electron_cass           | triple10
+electron_cass           | triple2
+electron_cass           | triple3
+electron_cass           | triple4
+electron_cass           | triple5
+electron_cass           | triple6
+electron_cass           | triple7
+electron_cass           | triple9
+electron_cass           | turfform
+electron_cass           | twinorbs
+electron_cass           | valkings
+electron_cass           | vegasjac
 electron_cass           | videoreva
+electron_cass           | warehous
+electron_cass           | weetabix
+electron_cass           | whoopsy
+electron_cass           | woks
+electron_cass           | woodbury
+electron_cass           | woodland
+electron_cass           | woodlandearly
+electron_cass           | wychwood
+electron_cass           | xadomy
+electron_cass           | xanagram
+ibm5150                 | simlife
+pc98                    | eosys30a
 pc98                    | escapea
 pc98                    | wildflowa
 psi98                   | util605d
@@ -8417,24 +8770,97 @@ psi98                   | util605d
 
 $0.221 [#660]
 2020/05/19
-599 software list (-1/+5), 125.031 software (+305), 586 active SL (-1/+5), 13 orphan SL, 124.266 active software (+305), 765 orphan software, 85.066 software parents (+275), 39.965 software clones (+30)
+599 software list (-1/+7), 125.031 software (-14/+291), 586 active SL (-1/+7), 13 orphan SL, 124.266 active software (-14/+291), 765 orphan software, 85.066 software parents (+275), 39.965 software clones (+30)
 205.125 software roms (+579), 9.342 software CHD (+29), 87.527 supported software (+272), 969 partially supported software (+2), 36.535 unsupported software (+31)
 
-7 software renamed:
-c64_cass                | 10cohit2          > 10hits2
-c64_cass                | actionpk          > actionp
-ibm5150                 | simcity102_35     > simcitya35
-ibm5150                 | simcity107_35     > simcity35
-microvision             | connect4t         > connect4o
-vgmplay                 | goldaxe2_md       > goldnax2_md
-vgmplay                 | vr2_md            > vr_md
+7 active software-lists added:
+entex_sag (Select-A-Game cartridges)
+itt3030 (ITT 3030 disk images)
+leapfrog_didj_cart (LeapFrog Didj Cartridges)
+m24 (Olivetti M24 floppies)
+pcd_flop (Siemens PC-D disk images)
+saitek_schess (Sensor Chess Modules)
+timex_cass (Timex Sinclair 2068 cassettes)
 
-5 software removed:
+1 active software-list removed:
+bbc_flop_65c102
+
+software removed/added/updated:
+abc800 (0/0/1)
+apple2_flop_clcracked (0/+16/0)
+apple2_flop_orig (0/+22/0)
+bbc_flop_6502 (0/+1/0)
+bbc_flop_65c102 (-1/0/0)
+bbc_flop_torch (0/+3/0)
+bbcm_cart (0/0/1)
+c64_cass (-3/+20/3)
+cd32 (0/+5/1)
+cgenie_cass (0/+3/4)
+dai_cass (0/+1/0)
+entex_sag (0/+4/0)
+fmtowns_cd (0/+22/65)
+fmtowns_flop (-1/+5/2)
+hp86_rom (-1/+2/0)
+ibm5150 (0/+22/2)
+ibm5170 (-3/+4/1)
+ibmpcjr_cart (0/0/1)
+itt3030 (0/+2/0)
+leapfrog_didj_cart (0/+4/0)
+m20 (-1/0/0)
+m24 (0/+1/0)
+microvision (-1/+3/1)
+mm1_flop (0/+3/0)
+mobigo_cart (0/+3/0)
+n64 (0/+1/1)
+neogeo (0/+1/0)
+pasogo (0/0/3)
+pcd_flop (0/+4/0)
+pi_storyreader_cart (0/+8/0)
+picno (0/+1/0)
+saitek_schess (0/+1/0)
+snes (0/+5/0)
+sorcerer_cass (0/+2/0)
+sorcerer_flop (0/+1/0)
+timex_cass (0/+110/0)
+tvgogo (0/+2/0)
+vgmplay (-3/+21/14)
+vsmile_cart (0/+8/0)
+vsmilem_cart (0/+3/0)
+
+17 software renamed:
+bbcm_cart               | msc               > msc200
+c64_cass                | circus            > circusp
+c64_cass                | robocop           > robocoph
+fmtowns_cd              | musicmac          > musicmaclt
+fmtowns_cd              | tqod              > tqodo
+fmtowns_flop            | musicpro          > musicproo
+ibm5150                 | indycrus          > indycrus35
+ibm5150                 | simcity           > simcitycl
+ibm5150                 | simcity102        > simcitya
+ibm5150                 | simcity102_35     > simcitya35
+ibm5150                 | simcity107        > simcity
+ibm5150                 | simcity107_35     > simcity35
+ibm5170                 | doom2a            > doom2
+microvision             | connect4          > connect4o
+microvision             | connect4t         > connect4
+pasogo                  | taikyoku          > dgoban
+pasogo                  | tanostd1          > igmks1
+
+14 software removed:
+bbc_flop_65c102         | coprosup
+c64_cass                | 10cohit2
+c64_cass                | actionpk
+c64_cass                | mtntcmls
 fmtowns_flop            | msdos62a
-ibm5150                 | simcity102
-ibm5150                 | simcity107
-ibm5170                 | doom2a
+hp86_rom                | language
+ibm5170                 | amouse7
+ibm5170                 | mousetb
+ibm5170                 | sicmouse
+m20                     | pcosm24
+microvision             | demo
+vgmplay                 | goldaxe2_md
 vgmplay                 | timetrax_md
+vgmplay                 | vr2_md
 
 
 $0.220 [#659]
