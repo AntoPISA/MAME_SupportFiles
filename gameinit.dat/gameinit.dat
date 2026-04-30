@@ -194,14 +194,37 @@ $end
 $info=ac1,ac1_32
 $mame
 TIPS:
-The Z command will get you into BASIC, and BYE command takes you back to the Monitor.
+Known commands:
+A - hex arithmetic
+E - init SP?
+F - looks same as M but isn't
+I - CLR/RSA
+J - go
+M - edit memory (period to quit)
+P - crash the system
+Z - start BASIC (BYE to quit)
 
+Cassette:
 S xxxx yyyy = to save memory to tape.
 L  = to load it back in.
 
 Since there is no motor control, type in L then mount the tape.
 
-Note: ac1scch not working.
+$end
+$info=ac1scch
+$mame
+TIPS:
+Known commands:
+A - hex arithmetic
+I - Clear RSA,SP
+J - go
+M - edit memory (Q to quit)
+P - crash the system
+U - Clear EPR
+
+Cassette (not working):
+S xxxx yyyy = to save memory to tape.
+L  = to load it back in.
 
 $end
 $info=acrnsys1
@@ -314,6 +337,12 @@ Punchy the Clown                          06    Hold EF, hit 1                  
 Mystery Castle                            08    Hold CDE, hit 1                     (mnw)
 Pistol Poker                              10    Hold CDE, hit 1                     (mnw)
 USA Football (redemption)                 11    Hold A, hit 1                       (mnw)
+
+$end
+$info=ai1000,pb2000c
+$mame
+TIPS:
+By default, this handheld calculator runs LISP. You can choose BASIC or PROLOG by loading the software item. There's no memory available, so you can't do much.
 
 $end
 $info=aim65
@@ -1955,6 +1984,20 @@ Cassette LOAD: Press F1 2 aaaa DOWN bbbb UP
 (where aaaa = 4-digit beginning address, bbbb = 4-digit ending address)
 
 $end
+$info=c900
+$mame
+TIPS:
+Everything is case-sensitive. Some commands are lower case, some upper. List that is known:
+M - dumps some memory
+c - diagnostics
+h - hex arithmetic
+r - register dump?
+s - substitute (edit) memory. Period to quit.
+t - trace on/off?
+
+There's no error messages; unknown things just give a new line.
+
+$end
 $info=calchase
 $mame
 TIPS:
@@ -2092,6 +2135,12 @@ TIPS:
 No screen. It's a door chime. All you can do is press Ctrl or Alt for a tune.
 
 $end
+$info=ccs2422
+$mame
+TIPS:
+Input must be in UPPER case.
+
+$end
 $info=ccs2810
 $mame
 TIPS:
@@ -2151,6 +2200,14 @@ $info=cdibios,vp415
 $mame
 TIPS:
 This system runs in MAMEUI only. It will crash MAME at start.
+
+$end
+$info=cfx9850,cfx9850gb
+$mame
+TIPS:
+If it asks if you want to clear memory, press F1.
+
+To get the main menu, press the [ key. Use arrows to select item, press Enter. To use the calculator, choose the RUN item. The keys are all over the place, so get a picture of the unit. For example, the numbers are on keys ZUVWPQRMNO. Use the backslash key to clear an error.
 
 $end
 $info=cgenie,cgenienz
@@ -2405,7 +2462,11 @@ $end
 $info=concept
 $mame
 TIPS:
-It's marked as working, but there's no boot disk available, so no way to run anything.
+It's marked as working, but there's no boot disk available, so no way to run anything. Meaning of the choices at start:
+D - Macsbug I/O on Datacomm 0 (this hangs)
+F - Floppy Disk Boot
+L - Local DIsk Boot (hard disk?)
+O - Omninet Disk Boot (network)
 
 $end
 $info=cortex
@@ -2909,6 +2970,12 @@ With this and some other multiplayer games, the default number of players for a 
 
 SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
+
+$end
+$info=dectalk
+$mame
+TIPS:
+After sending text, send a blank line to make it speak.
 
 $end
 $info=defender
@@ -4136,7 +4203,7 @@ The system says there's no memory free, so unable to write a program.
 $end
 $info=fp6000
 $mame
-INITIALIZATION:
+TIPS:
 To save a tape: SAVE
 
 To load a tape: LOAD
@@ -4145,8 +4212,7 @@ $end
 $info=ftimpactg
 $mame
 INITIALIZATION:
-Wait patiently for the two progress bars to end, press [ TAB ], choose "DIP Switches" and set "BIOS Flash" to "OFF".
-Now choose "Reset System," and on reboot the game will start correctly.
+Wait patiently for the two progress bars to end, press [ TAB ], choose "DIP Switches" and set "BIOS Flash" to "OFF". Now choose "Reset System," and on reboot the game will start correctly.
 
 $end
 $info=funcube,funcube2,funcube3,funcube4,funcube5
