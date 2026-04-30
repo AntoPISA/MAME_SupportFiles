@@ -472,6 +472,14 @@ Will boot all disks, but you might need to hit enter a few times while performin
 For OASIS disks: If asked for a logon, use SYSTEM with a password of ALTOS515. Use HELP for a list of commands.
 
 $end
+$info=altos586
+$mame
+TIPS:
+Floppies don't seem to work.
+
+When in the monitor program, input must be in UPPER case.
+
+$end
 $info=altos8600
 $mame
 TIPS:
@@ -1878,15 +1886,7 @@ To switch from C128 mode to C64 mode: GO64 (answer Y).
 NOTE: c128d81 needs a disk in the drive before it will boot.
 
 $end
-$info=c16,plus4,c264,c116,c16_hu,c16p,c232,v364,plus4p
-$mame
-INITIALIZATION:
-Cassettes cannot be loaded. Floppy disks produce an error. The "*" key is missing. Quickload and Cartridges work.
-
-If cassettes worked, the commands would be the same as any Commodore: SAVE and LOAD.
-
-$end
-$info=c64,c64_jp,c64p,c64_se,c64c,c64cp,c64c_es,c64c_se,c64g,dx64,edu64,pet64,sx64,sx64p,vip64
+$info=c64,c64_jp,c64p,c64_se,c64c,c64cp,c64c_es,c64c_se,c64g,dx64,edu64,pet64,sx64,sx64p,vip64,c16,plus4,c264,c116,c16_hu,c16p,c232,v364,plus4p
 $mame
 INITIALIZATION:
 Seems to be largely working.
