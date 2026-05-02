@@ -397,19 +397,16 @@ $end
 $info=al8800bt
 $mame
 TIPS:
-ALTAIR
-======
-
 Floppies are not supported.
 
 Oddly, BIN files are. What kind of files are they?
 
-Press space to input your command line (not return).
+Press space to input your command line (not return). All numbers are in octal, and all input is to be UPPER case.
 
-Commands (must be UPPER case):
-D - Memory Dump
-J - Jump to address
-M - Modify memory
+List of commands:
+Daaaaaa bbbbbb - Ascii Memory Dump
+Jaaaaaa        - Jump to address
+Maaaaaa        - Modify memory
 
 $end
 $info=ali,biggame,catacomp,cheetah,cue,dragfist,freefall,galaxypi,ironmaid,lazrlord,lightnin,meteorp,nineball,orbitor1,quicksil,seawitch,spltsecp,stargzr,viperp
@@ -2419,7 +2416,7 @@ https://www.progettosnaps.net/gameinit.dat
 $end
 $info=compclr2
 $mame
-INITIALIZATION:
+TIPS:
 Hold down the SHIFT key to type letters.
 
 $end
@@ -6412,6 +6409,26 @@ Press Enter twice. You will see the Basic OK prompt. To get into the monitor, us
 The mcb216 can use an optional floppy-disk-drive unit. The only other storage is paper-tape, which is expected to be attached to the terminal.
 
 $end
+$info=mccpm
+TIPS:
+List of known commands:
+B - boot disk?
+D - dump memory
+E -
+F - fill memory
+G - go?
+I - set disk size and parameters
+K -
+L -
+M - move memory
+P -
+R -
+S - substitute (edit one byte)
+X - registers
+Z - display top of memory
+
+$mame
+$end
 $info=mcg85
 $mame
 INITIALIZATION:
@@ -6437,10 +6454,10 @@ INITIALIZATION:
 Needs a cartridge.
 
 $end
-$info=megat5a
+$info=megat5a,mtouchxl,mtchxl5k,mtchxl5ko,mtchxl5ko2,mtchxl6k,mtchxl6ko,mtchxl6ko4,mtchxl,mtchxlgld,mtchxlgldo,mtchxlti
 $mame
-INITIALIZATION:
-Don't use -mouse, and ignore the useless crosshairs. Use the orange/system mouse cursor instead.
+TIPS:
+Ignore the useless crosshairs, and don't use -mouse. Use the orange/system mouse cursor instead.
 
 $end
 $info=mekd1,mekd3,mekd4
@@ -6624,6 +6641,8 @@ INITIALIZATION:
 Insert the FLEX disk in drive 0 and the Distribution disk in drive 1, then type BO (in UPPER case) to boot FLEX.
 
 Type DEMO.1 to run the demo from drive 1.
+
+List of commands: AD HD DR SB SI US CD RP JU JF CP ME PM LK SM FM FI TM TS TD BO RS WS DF BF DC MC
 
 $end
 $info=microkit
@@ -7031,6 +7050,24 @@ To save a tape: W start-address end-address
 To load a tape: R
 
 $end
+$info=mpz80
+$mame
+TIPS:
+Known commands:
+B -
+D - hex memory dump
+F - fill memory
+G -
+H - hex arithmetic
+I - in?
+M - move memory
+O - out?
+S - substitute (edit) memory
+T -
+U -
+V -
+
+$end
 $info=ms5pcb
 $mame
 TIPS:
@@ -7349,9 +7386,15 @@ INITIALIZATION:
 Hold down INS until the alarm stops. The normal coin slots don't work, so press Q to get 100 credits, then press 1 to play a hand.
 
 $end
+$info=mvme162
+$mame
+TIPS:
+Type HE for Help.
+
+$end
 $info=mycom
 $mame
-INITIALIZATION:
+TIPS:
 - Editing characters (hold down shift to get them):
 a - shiftlock (toggle). You can then enter any lowercase character.
 c - clear screen and home cursor
@@ -10280,6 +10323,24 @@ TIPS:
 This game is free. Press Alt, then space 5 times to get to the race screen, then space to get MARCHA 5. Press Ctrl to start the race, then keep tapping Ctrl to go faster.
 
 $end
+$info=sm1810
+$mame
+TIPS:
+No software available. Wait for disk boot to time out, then you are in the monitor program. Known commands:
+B - boot disk
+D - display a byte of memory
+F - fill?
+G - go?
+I - in port
+M - move?
+N - disassemble a byte
+O - out port
+P -
+S - substitute (edit a byte)
+T -
+X - display or set registers
+
+$end
 $info=smc777
 $mame
 TIPS:
@@ -11595,7 +11656,7 @@ $end
 $info=tx0_8kw,tx0_64kw,tx0_8kwo
 $mame
 INITIALIZATION:
-Enter to load the papertape file - but the system doesn't work.
+Ctrl+Enter to load the papertape file - but unknown how to run the program, or if it works.
 
 $end
 $info=uchroma68
@@ -12083,6 +12144,12 @@ If it says "File mode error", boot Basic from disk, type LOAD? to get filename, 
 Floppies
 --------
 Load and run themselves
+
+$end
+$info=x37
+$mame
+TIPS:
+List of commands: fp hs mf sf si st
 
 $end
 $info=x68000
