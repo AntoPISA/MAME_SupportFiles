@@ -4211,6 +4211,21 @@ To save a tape: SAVE
 To load a tape: LOAD
 
 $end
+$info=ft68m
+$mame
+TIPS:
+Some commands:
+A - adjust registers
+B - Break
+D - adjust registers
+E - edit memory by words
+G - go
+M - Segmap
+O - edit memory by bytes
+P - Pagemap
+R - adjust registers
+
+$end
 $info=ftimpactg
 $mame
 INITIALIZATION:
@@ -4820,7 +4835,16 @@ Commands:
 -- ^C = boot CP/M
 -- ^T = load data from disk to 0000
 -- ^X = new line
-- At the debug prompt: (to be done)   Q to quit
+- At the debug prompt: (comma between parameters)   Q or S to quit
+-- B = Breakpoint
+-- D = Dump
+-- F = Fill Memory
+-- G = Go (G by itself exits debug)
+-- I = Interrupts
+-- M = Modify Memory
+-- P = Modify Port
+-- R = Modify Register
+-- X = Display Registers
 
 $end
 $info=icecold
@@ -4867,7 +4891,22 @@ $end
 $info=imsai
 $mame
 INITIALIZATION:
-Press SPACE to start the monitor program.
+Press SPACE to start the monitor program. Use space between each parameter.
+
+Some commands:
+D - hex dump of memory
+E - edit memory (space for the next byte, enter to finish)
+F - fill
+H - type freeform text? (ctrl C to exit)
+I - in
+M - move
+O - out
+
+$end
+$info=indiana
+$mame
+TIPS:
+All input to be in lower case. he for help.
 
 $end
 $info=inferno
@@ -6631,10 +6670,12 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
-$info=mice_6502,mice2_z80,mice2_6502,mice2_8085
+$info=mice_6502,mice2_z80,mice2_6502,mice2_8085,mice2_6809
 $mame
 TIPS:
 All input to be in UPPER case.
+
+? for help.
 
 $end
 $info=micral,questarm
@@ -7936,13 +7977,24 @@ $mame
 INITIALIZATION:
 Hit enter to boot a disk.
 
-Some commands:
-D - edit memory
-G - go
-N - show registers
-O - says DISK ERROR
-R - show registers
-T - says DISK ERROR
+P8000 monitor commands
+B : ?
+D : display and modify memory
+F : fill memory
+G : go to
+M : move (copy) memory
+N : dump registers
+O : boot from floppy
+P : ?
+Q : ?
+R : dump registers
+S : boot from floppy
+T : jump to ROM at CEF0
+X : jump to ROM at DB00
+return : boot from floppy disk
+
+SOURCE: Driver notes
+
 If you type something unknown, the prompt gets a ? prepended to it, but still works the same. Use X to go back to normal.
 
 $end
