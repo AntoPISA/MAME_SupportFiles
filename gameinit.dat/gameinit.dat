@@ -6264,18 +6264,34 @@ mameinfo.dat
 $end
 $info=mato
 $mame
-INITIALIZATION:
-MATO
-====
+TIPS:
 
-Supposed to be the same as the PMD85, but it won't load a tape.
+Supposed to be the same as the PMD85, but it won't load a tape. The only files have no extension and look like HEX files, which is not supported.
 
-The only files have no extension and look like HEX files, which is not supported.
+$end
+$info=mbc020
+$mame
+TIPS:
+SERVOMON COMMANDS: [] is optional parameter, $ is a hex digit (0-9,A-F)
+Command and Format	Description
+M [[$$,]$$$$[-$$$$]]	MEM: Memory examine, modify, [search,] hex data editor starting at address [-end]
+R 	REG: Examine and modify user registers PC,S,F,A,X,Y
+G [$$$$]	GO: Restore all user registers [except PC=address, S=FD] and resume execution.
+V [$$$$[-$$$$]]	VER: View/Verify display data and checkums [starting at address [-to end]]
+D [$$$$]	DEP: Deposit hex data to memory [starting address]
+C [$$,]$$$$[-$$$$]	CALC: Calculate two's complement [-displacement], with [,offset]
+B $$$$,$$$$-$$$$	BMOV: Move data to address, from start -to end
+J $	JUMP: Restore user registers, except PC=listed entry in jump table, S=FD, and jump to it
+J 1 	MPC DIGITAL DRIVE REV 4.0 JUL-1983. AXES FOUND ONLINE : 1 Ok
+SD $$$$-$$$$	SDBL: Store double byte from address -to address
+F $$,$$$$-$$$$	FILL: Fill data, from memory address -to address
+S1 [$$$$]	Save ASCII data to memory [starting address].
+
+SOURCE: http://apple-crapple.blogspot.com/2022/06/synertek-mbc020.html
 
 $end
 $info=mbc200
 $mame
-INITIALIZATION:
 TIPS: Needs a boot disk.
 
 SBASIC: Running programs: the file names used within SBASIC must be in UPPER case. For example, run "DEMO" .
@@ -6315,8 +6331,6 @@ $end
 $info=mbs1
 $mame
 TIPS:
-HITACHI S1 (mbs1)
-=================
 
 Takes a few seconds to start.
 
@@ -6336,10 +6350,7 @@ Games still don't work because of missing graphics code.
 $end
 $info=mc10,alice32,alice,alice90
 $mame
-INITIALIZATION:
-TANDY MC-10, ALICE32, ALICE90
-=============================
-
+TIPS:
 
 Set RAM to 32K.
 
@@ -6360,12 +6371,9 @@ Make sure that WAV files don't start playing before CLOAD begins, or IO Error wi
 $end
 $info=mc1000
 $mame
-INITIALIZATION:
-MC1000
-======
+TIPS:
 
-
-Set RAM to 48K. Turn joystick 1 to ON
+Set RAM to 48K. Turn joystick 1 to ON.
 
 
 
@@ -6378,8 +6386,6 @@ $end
 $info=mc1502
 $mame
 INITIALIZATION:
-MC1502
-======
 
 Wait for the self-test to say "O3y 640K", then press Enter twice. This puts you into the Monitor. B to go into ROM Basic.
 
@@ -6514,7 +6520,7 @@ HA002=00^20^00^32^HP (A002 has start address, A004 has end address, big endian)
 $end
 $info=mekd5
 $mame
-INITIALIZATION:
+TIPS:
 Although this system is listed as working, it doesn't seem to accept any inputs.
 
 Driver notes:
@@ -6553,6 +6559,8 @@ FS RD (Verify from tape)
 FS 0 to F
 . One of 16 user defined functions. Press FS then one number key 0 to F.
 . A pointer to a table of 16 function addresses should be set at 0xe43f.
+
+SOURCE: Driver notes.
 
 $end
 $info=meritum1,meritum2,meritum_net
@@ -6625,7 +6633,7 @@ http://wiki.mamedev.org/index.php/FAQ:Games
 $end
 $info=mice_6502,mice2_z80,mice2_6502,mice2_8085
 $mame
-INITIALIZATION:
+TIPS:
 All input to be in UPPER case.
 
 $end
@@ -6674,7 +6682,7 @@ http://wiki.mamedev.org/index.php/FAQ:Games
 $end
 $info=mikro80
 $mame
-INITIALIZATION:
+TIPS:
 To save a tape: Oa,b  (where a = start address, b = end address)
 
 To load a tape: I then Play then G
@@ -6689,13 +6697,10 @@ $end
 $info=mikrosha
 $mame
 TIPS:
-MIKROSHA
-========
 
 To save a tape: Oa,b  (where a = start address, b = end address)
 
 To load a tape: I then Play then G
-
 
 The I command will time out in a few seconds if tape doesn't start.
 
@@ -6712,8 +6717,6 @@ $end
 $info=mindset
 $mame
 TIPS:
-MINDSET
-=======
 
 Press Alt+F12 at the first screen.
 
@@ -6731,7 +6734,7 @@ INITIALIZATION:
 $end
 $info=mits680b
 $mame
-INITIALIZATION:
+TIPS:
 Monitor Commands:
 J
 L switch to terminal mode
@@ -6868,7 +6871,7 @@ http://wiki.mamedev.org/index.php/FAQ:Games
 $end
 $info=mmd1
 $mame
-INITIALIZATION:
+TIPS:
 It appears that you enter an 3 digit octal number and then hit a function key.
 H - puts the number in the H register
 L - puts the number in the L register
@@ -6994,7 +6997,7 @@ mameinfo.dat
 $end
 $info=mo5,mo5nr,mo6,to7,to770,to8,to9,to9p,mo5e,pro128,t9000,to770a,to8d
 $mame
-INITIALIZATION:
+TIPS:
 To save a tape: SAVE"x"
 
 To load a tape: Play then LOAD.
@@ -7005,7 +7008,7 @@ Load Basic cart, then RUN"" or LOADM"CASS:",,R
 $end
 $info=modellot
 $mame
-INITIALIZATION:
+TIPS:
 All input must in UPPER case.
 
 There's no cassette interface, because the cassette rom is missing. But if it existed, the commands are:
@@ -7032,7 +7035,7 @@ If you get a message to call the attendant, press 0 then B (5 times) then 2.
 $end
 $info=mp68a,md6802,modulab
 $mame
-INITIALIZATION:
+TIPS:
 Tested on mp68a, might work on md6802 and modulab.
 
 To save a tape (example): Set start to 700, set end to 750, press Record, click * then B/REC
@@ -7042,7 +7045,7 @@ To load a tape (example): Set start to 700, set end to 750? (not sure), press Pl
 $end
 $info=mpf1,mpf1b,mt80z
 $mame
-INITIALIZATION:
+TIPS:
 External artwork has the display digits in reverse order.
 
 To save a tape: F6 name up start-address up end-address X
@@ -7096,7 +7099,7 @@ U -
 V -
 
 $end
-$info=ms5pcb
+$info=ms5pcb,mslug,mslug2,mslug3,mslug3b6,mslug4,mslug5,mslugx
 $mame
 TIPS:
 Gameplay is choppy at times, but I have enough CPU power?
@@ -7106,77 +7109,6 @@ Although the FPS counter shows 100% speed for these games, they may appear chopp
 
 How to activate Blood?
 
-Hit [ F2 ], use the player 1 controls to navigate to "Setting up the soft dip", hit the primary button (Left Control), navigate to "Slot 1 (game name)", hit the primary button and finally navigate to the "Blood" selection and turn it on by hitting the primary button. To exit the menu, press the third button (Space) two times and select "Exit".
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=mslug
-$mame
-TIPS:
-Gameplay is choppy at times, but I have enough CPU power?
-
-Although the FPS counter shows 100% speed for these games, they may appear choppy. This is true to the original — even the original hardware of these games struggled with them and therefore the choppiness is actually accurate emulation of these games. You may be able to get rid of it in some cases by using the -cheat parameter, hitting the tilde key and browsing the on screen menu until you find "CPU overclocking". This will run the emulated CPU faster which may or may not fix it. It may also cause the emulation to have errors, so don't bug people if overclocking screws up a game.
-
-
-How to activate Blood?
-
-Hit [ F2 ], use the player 1 controls to navigate to "Setting up the soft dip", hit the primary button (Left Control), navigate to "Slot 1 (game name)", hit the primary button and finally navigate to the "Blood" selection and turn it on by hitting the primary button. To exit the menu, press the third button (Space) two times and select "Exit".
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=mslug2
-$mame
-TIPS:
-Gameplay is choppy at times, but I have enough CPU power?
-
-Although the FPS counter shows 100% speed for these games, they may appear choppy. This is true to the original — even the original hardware of these games struggled with them and therefore the choppiness is actually accurate emulation of these games. You may be able to get rid of it in some cases by using the -cheat parameter, hitting the tilde key and browsing the on screen menu until you find "CPU overclocking". This will run the emulated CPU faster which may or may not fix it. It may also cause the emulation to have errors, so don't bug people if overclocking screws up a game.
-
-
-How to activate Blood?
-
-Hit [ F2 ], use the player 1 controls to navigate to "Setting up the soft dip", hit the primary button (Left Control), navigate to "Slot 1 (game name)", hit the primary button and finally navigate to the "Blood" selection and turn it on by hitting the primary button. To exit the menu, press the third button (Space) two times and select "Exit".
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=mslug3
-$mame
-TIPS:
-Gameplay is choppy at times, but I have enough CPU power?
-Although the FPS counter shows 100% speed for these games, they may appear choppy. This is true to the original — even the original hardware of these games struggled with them and therefore the choppiness is actually accurate emulation of these games. You may be able to get rid of it in some cases by using the -cheat parameter, hitting the tilde key and browsing the on screen menu until you find "CPU overclocking". This will run the emulated CPU faster which may or may not fix it. It may also cause the emulation to have errors, so don't bug people if overclocking screws up a game.
-
-How to activate Blood?
-Hit [ F2 ], use the player 1 controls to navigate to "Setting up the soft dip", hit the primary button (Left Control), navigate to "Slot 1 (game name)", hit the primary button and finally navigate to the "Blood" selection and turn it on by hitting the primary button. To exit the menu, press the third button (Space) two times and select "Exit".
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=mslug4
-$mame
-TIPS:
-Gameplay is choppy at times, but I have enough CPU power?
-Although the FPS counter shows 100% speed for these games, they may appear choppy. This is true to the original — even the original hardware of these games struggled with them and therefore the choppiness is actually accurate emulation of these games. You may be able to get rid of it in some cases by using the -cheat parameter, hitting the tilde key and browsing the on screen menu until you find "CPU overclocking". This will run the emulated CPU faster which may or may not fix it. It may also cause the emulation to have errors, so don't bug people if overclocking screws up a game.
-
-How to activate Blood?
-Hit [ F2 ], use the player 1 controls to navigate to "Setting up the soft dip", hit the primary button (Left Control), navigate to "Slot 1 (game name)", hit the primary button and finally navigate to the "Blood" selection and turn it on by hitting the primary button. To exit the menu, press the third button (Space) two times and select "Exit".
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=mslug5
-$mame
-TIPS:
-Gameplay is choppy at times, but I have enough CPU power?
-Although the FPS counter shows 100% speed for these games, they may appear choppy. This is true to the original — even the original hardware of these games struggled with them and therefore the choppiness is actually accurate emulation of these games. You may be able to get rid of it in some cases by using the -cheat parameter, hitting the tilde key and browsing the on screen menu until you find "CPU overclocking". This will run the emulated CPU faster which may or may not fix it. It may also cause the emulation to have errors, so don't bug people if overclocking screws up a game.
-
-How to activate Blood?
 Hit [ F2 ], use the player 1 controls to navigate to "Setting up the soft dip", hit the primary button (Left Control), navigate to "Slot 1 (game name)", hit the primary button and finally navigate to the "Blood" selection and turn it on by hitting the primary button. To exit the menu, press the third button (Space) two times and select "Exit".
 
 SOURCE:
@@ -7188,34 +7120,9 @@ $mame
 TIPS:
 Due to a regression, need to wait up to 5 minutes at a black screen before it suddenly springs to life.
 
-Gameplay is choppy at times, but I have enough CPU power?
-Although the FPS counter shows 100% speed for these games, they may appear choppy. This is true to the original — even the original hardware of these games struggled with them and therefore the choppiness is actually accurate emulation of these games. You may be able to get rid of it in some cases by using the -cheat parameter, hitting the tilde key and browsing the on screen menu until you find "CPU overclocking". This will run the emulated CPU faster which may or may not fix it. It may also cause the emulation to have errors, so don't bug people if overclocking screws up a game.
-
-How to activate Blood?
-Hit [ F2 ], use the player 1 controls to navigate to "Setting up the soft dip", hit the primary button (Left Control), navigate to "Slot 1 (game name)", hit the primary button and finally navigate to the "Blood" selection and turn it on by hitting the primary button. To exit the menu, press the third button (Space) two times and select "Exit".
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=mslugx
-$mame
-TIPS:
-Gameplay is choppy at times, but I have enough CPU power?
-Although the FPS counter shows 100% speed for these games, they may appear choppy. This is true to the original — even the original hardware of these games struggled with them and therefore the choppiness is actually accurate emulation of these games. You may be able to get rid of it in some cases by using the -cheat parameter, hitting the tilde key and browsing the on screen menu until you find "CPU overclocking". This will run the emulated CPU faster which may or may not fix it. It may also cause the emulation to have errors, so don't bug people if overclocking screws up a game.
-
-How to activate Blood?
-Hit [ F2 ], use the player 1 controls to navigate to "Setting up the soft dip", hit the primary button (Left Control), navigate to "Slot 1 (game name)", hit the primary button and finally navigate to the "Blood" selection and turn it on by hitting the primary button. To exit the menu, press the third button (Space) two times and select "Exit".
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
 $info=mt65,micron
 $mame
-INITIALIZATION:
-Tangerine Microtan 65
-=====================
+TIPS:
 Tanbug commands (mt65,micron):
 B         Set breakpoints
 C         copy (move) memory block
@@ -7366,7 +7273,7 @@ Unsupported.
 $end
 $info=multi8
 $mame
-INITIALIZATION:
+TIPS:
 Mitsubishi Multi-8
 ==================
 
@@ -7526,7 +7433,7 @@ Many others give a Loading Error.
 $end
 $info=mz700
 $mame
-INITIALIZATION:
+TIPS:
 SHARP MZ-700
 ============
 
@@ -7540,9 +7447,7 @@ There's problems loading files that are longer than ~ 2 minutes.
 $end
 $info=mz800
 $mame
-INITIALIZATION:
-SHARP MZ-800
-=============
+TIPS:
 
 
 Cassettes
@@ -7557,7 +7462,7 @@ Nothing can be run.
 $end
 $info=mz80a
 $mame
-INITIALIZATION:
+TIPS:
 SHARP MZ-80A
 ============
 
@@ -7598,7 +7503,7 @@ L - load a cassette
 $end
 $info=mz80k
 $mame
-INITIALIZATION:
+TIPS:
 SHARP MZ-80K
 ============
 
@@ -8795,6 +8700,8 @@ $end
 $info=plan80
 $mame
 TIPS:
+To make the keyboard more normal, choose Keyboard Mode: Natural
+
 Summary of Monitor commands:
 
 D - dump memory
@@ -8827,7 +8734,7 @@ https://www.progettosnaps.net/gameinit.dat
 $end
 $info=pm68k
 $mame
-INITIALIZATION:
+TIPS:
 Some commands:
 D : registers
 E : ?
@@ -9082,7 +8989,7 @@ mameinfo.dat
 $end
 $info=pp01
 $mame
-INITIALIZATION:
+TIPS:
 To save a tape: KSAVE $1
 
 To load a tape: KLOAD $1
@@ -9761,6 +9668,12 @@ unknown commands: / & d e l r s t u z \ ^ | ~
 Other input will either result in '!' message, or halt.
 
 $end
+$info=sagafox,sagafoxf80
+$mame
+INITIALIZATION:
+At start press F to boot the floppy disk.
+
+$end
 $info=salmndr2
 $mame
 INITIALIZATION:
@@ -9811,13 +9724,13 @@ To load a tape: LOAD
 $end
 $info=saturn
 $mame
-INITIALIZATION:
+TIPS:
 The use of a ROM CARTRIDGE (BIN without CUE) does not work.
 
 $end
 $info=savia84
 $mame
-INITIALIZATION:
+TIPS:
 Pasting:
 0-F : as is
 DA : ^
@@ -9830,7 +9743,7 @@ Here is a test program. Copy the text and Paste into the emulator.
 $end
 $info=sb2m600b,c1p,c1pmf,uk101
 $mame
-INITIALIZATION:
+TIPS:
 Keyboard notes and BTANBs:
 
 - Keyboards on all models are identical, except on UK101 where ^ replaces LINE FEED.
@@ -9846,20 +9759,26 @@ To save a tape: SAVE
 To load a tape: LOAD or L
 
 $end
+$info=sb8085
+$mame
+TIPS:
+Getting it to work with the terminal:
+1. Slot CRT: choose Terminal. (The VTI should be removed from S100 slot 1 or else its keyboard must be disabled later.)
+2. Reboot
+3. Press A (certain other keys may work here). It will autodetect the baud rate and start up. (Only 110, 150, 300, 1200, 2400, 4800 and 9600 baud are detected properly.)
+4. Now you can enter commands (such as D000,FFF)
+5. If it says KEYBOARD ERROR it doesn't mean a problem with the keyboard, it means you made a mistake.
+
+To use the monitor with the VTI, start by typing A (in uppercase).
+
+SOURCE: Driver notes
+$end
 $info=sbc6510
 $mame
-INITIALIZATION:
-Commands:
-A - (unknown)
-C - (unknown)
-E - (unknown)
-F - (unknown)
-G - (unknown)
-L - (unknown)
-R - (unknown)
-S - (unknown)
+TIPS:
+Commands: A C D E F G L R S (usage unknown)
 
-Some commands expect a filename enclosed in double quotes. If the quotes are not there, it loops forever looking for them. Good example of bad programming. There is no help and no error messages.
+Some commands expect a filename enclosed in double quotes. If the quotes are not there, it loops forever looking for them. There is no help and no error messages.
 
 $end
 $info=sbsoli
@@ -9870,7 +9789,7 @@ This game is listed as working, but it can be difficult to start. Keep hitting 5
 $end
 $info=sc2
 $mame
-INITIALIZATION:
+TIPS:
 Keypad legend:
 R - Ruckstellen (reset)
 K - Programmstufen (level)
@@ -9883,7 +9802,7 @@ Q - Quittierung (enter)
 $end
 $info=scp300f
 $mame
-INITIALIZATION:
+TIPS:
 When started you must press Enter twice before anything happens.
 
 All commands must be in UPPER case.
