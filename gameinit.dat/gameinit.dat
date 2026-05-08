@@ -5597,7 +5597,7 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
-$info=korvet,bk8t,kontur,neiva
+$info=korvet,kontur,neiva
 $mame
 TIPS:
 PK8020 KORVET
@@ -8763,6 +8763,20 @@ SOURCE:
 mameinfo.dat
 
 $end
+$info=pk32
+$mame
+TIPS:
+Inputs must be in UPPER case. Commands:
+E <memoryType> <address>          (E)xamine <memoryType>: /G - General purpose reg, /S - System mem, /I - Internal reg, /P - Physical mem, /V - Virtual mem. Example: E /S 0
+D <memoryType> <address> <value>  (D)eposit <memoryType>: see E. Example: D /S 0 44332211
+C                                 (C)ontinue user programm
+B                                 (B)oot
+T [<num>]                         (T)est All or <num>=1-6
+I                                 (I)nit
+
+SOURCE: Driver notes
+
+$end
 $info=pktgaldx
 $mame
 INITIALIZATION:
@@ -10632,7 +10646,7 @@ Press enter on tape loader, Scroll-lock, F2
 $end
 $info=special,anakonda,erik,kharkovsky,lik,pioner,specialp,specialm,specimx,unga
 $mame
-INITIALIZATION:
+TIPS:
 To save a tape: MSAVE
 
 To load a tape: MLOAD
@@ -10640,6 +10654,36 @@ To load a tape: MLOAD
 Some of the specialist clones can load a file at the initial prompt if no keys are pressed.
 
 To enter Basic: B
+
+Extensive Driver Notes:
+
+- Scrolling is noticeably slow.
+- Hit Alt to switch between normal and Russian characters.
+- Special, specialp, lik, erik: At the first prompt, press Enter for the Monitor. All other keys just beep.
+- Specimx: Press Enter to go into a ramdisk File Manager. Press F3 to load a tape (which errors).  If you had loaded a disk, press F6 to boot it.
+- Specimx -bios 1 and 2 don't set a colour, so a default has been chosen instead of a black screen.
+- Specimx -bios 1 lists a number of programs on the ramdisk, but most of them don't work.
+- Lik: B to enter Basic. Haven't found an official way to exit, but you can type MLOAD and hit Enter twice.
+- Unga: It can load and run a tape, like Special. Or, press Y and you're taken to BASIC. You might find that the keyboard is stuck in lowercase, so hit Left-Alt to switch to upper. Now it will work. If you enter SYSTEM to exit, it corrupts itself and runs into the weeds. At the initial prompt, if you hit Enter it jumps to 0000 and thence into the weeds.
+- Anakonda: It complains of a disk problem (not emulated), before falling into a cassette loader. If you had loaded a tape from the command line, hit enter 3 times quickly before the tape starts to play. It will load and run.
+
+Important tape notes:
+- If you press any key (including F2 to start the tape), the tape either will not load, or the machine hangs. Same problem occurs if you use the Tab menu.
+- To load a tape from the swlist, you must include the software name on the command-line, or use a frontend. It will load and run by itself at start. DON'T touch anything until it's finished.
+- Tapes from the swlist only work with "special"; they may load on others but unlikely to run.
+
+ToDo:
+- Much mystery surrounds the usage of cassette.
+- Keyboard is a bit strange, especially with Enter key
+- What does or does not get changed by Shift key is all over the place
+- Lik: Space and < keys not working
+- Pioner: Not all keys have been found (Function keys, Left-arrow, more?)
+- Pioner: Monitor roms missing, used ones from "special".
+- Special -bios 2 contains Basic. How to access it?
+- Erik: should have colour and floppy disks, unknown how to access them. No disk software available.
+- Erik: erik_disk_reg_w function is commented out, is it needed? Appears necessary for floppy operation.
+- Specimx: how to access the disks from swlist?
+- Specimx: Machine tends to crash/freeze internally after a while.
 
 $end
 $info=special7,special7a,special7b
