@@ -2,20 +2,12 @@
 -----------------------------------
 
 
-MAME Testers Bugs Fixed
------------------------
-- 08597: [Gameplay] a5200: Not possible to start a game in Pitfall 2 (AJR).
-- 08771: [DIP/Input] (misc/dgpix.cpp) btplay2k: Player controls are incorrect and incomplete (Windy Fairy).
-- 08772: [Gameplay] (misc/gei.cpp) gtsers9: Category ROM in second position is not loaded correctly (Nightvoice).
-
-
-New working systems
+New Working Systems
 -------------------
 Jack Use (Jackpot settings for Interflip slots machines) [Roberto Fresca, Grull Osgo]
 Solitaire (version 2.5) [Recreativas.org, Brito_cat]
 
-
-New working clones
+New Working Clones
 ------------------
 Costa Brava (1 jackpot point, 77%) [Roberto Fresca, Grull Osgo]
 Costa Brava (2 jackpot points, 77%) [Roberto Fresca, Grull Osgo]
@@ -42,8 +34,7 @@ Toledo (2 jackpot points, 83%) [Roberto Fresca, Grull Osgo]
 Sum-eoitneun Deongdalireul Chat-ara! [Taksangs]
 Tandy Radio Shack Tandy 1000 TL [David Viens]
 
-
-Systems promoted to working
+Systems Promoted to Working
 ---------------------------
 Baby Fruits (100 pts version) [Roberto Fresca, Grull Osgo]
 Casio CZ-101 [Devin Acker]
@@ -52,13 +43,11 @@ Costa Brava (2 jackpot points, 81%) [Roberto Fresca, Grull Osgo]
 Sevilla (2 jackpot points, 81%) [Roberto Fresca, Grull Osgo]
 Toledo (2 jackpot points, 87%) [Roberto Fresca, Grull Osgo]
 
-
-Clones promoted to working
+Clones Promoted to Working
 --------------------------
 Mahjong Vegas (Japan) [Sergio Galiano, hammy]
 
-
-New systems marked not working
+New Systems Marked not Working
 ------------------------------
 Bingo Parade (main) (MDA-C0008E) [rtw, MetalliC]
 Gigabyte GA-6LA7 [The Retro Web]
@@ -67,8 +56,7 @@ Hanguk Pro Yagu 98 [WangDrum]
 Spin Fever [coolmod, The Dumping Union]
 unknown Yuvo Joy Stand game [hammy]
 
-
-New clones marked not working
+New Clones Marked not Working
 -----------------------------
 Bingo Galaxy (main) (MDA-C0039A) [rtw, MetalliC]
 Match'em Up (6221-51, U5-1) [Brian Troha, The Dumping Union]
@@ -77,17 +65,17 @@ New HUNTer (bootleg, set 2) [Taksangs]
 Super Magic Card [The Dumping Union]
 Super Nove (Playmark, Euro currency) [The Dumping Union]
 
-
-New working software list items
+New Working Software List Items
 -------------------------------
-casloopy: Chakra-kun no Omajinai Paradise [Rachel Simone Weil]
-fmtowns_cd:
+casloopy.xml:
+  Chakra-kun no Omajinai Paradise [Rachel Simone Weil]
+fmtowns_cd.xml:
   CONFIG-ROM [beanstalk]
   Auto Demo '93 Fuyu, Heike Monogatari (Gekan), Hyper Planet Shiki Vol. 3, Many Colors II,
   NHK Special - Ginga Uchuu Odyssey Vol. 2 - Choushinsei Bakuhatsu (FM Towns Marty version), Naomi Komaki for Janis,
   Wing Commander (alt), Woman's Memory, Z's Staff Pro Towns [redump.org]
   Drive Simulator - Home Navi V1.0 L01 [redump.org, cyo.the.vile]
-msx2_cart:
+msx2_cart.xml:
   Gogoboom [ESP Soft]
   Aleste (Woomb), Alien 8 Remake, Los Amores de Brunilda (v1.0), Los Amores de Brunilda (v1.01), Arkanoid 2 (Korea),
   AshGuine - Fukushuu no Honoo (Japan, alt 2), Bomb Jack, Bomb Jack (alt), DIM X (demo), Daisenryaku MSX2 (Japan, alt),
@@ -115,16 +103,24 @@ msx2_cart:
   Pengo (demo) [Paxanga Soft]
   Knight Lore Remake [Retroworks]
 
-
-New software list items marked not working
+New Software List Items Marked not Working
 ------------------------------------------
-fmtowns_cd: Fujitsu Habitat V2.1 L13A, Hyper Dream [redump.org]
-gamegear: Pro Action Replay (v1.01) [Apocalypse]
-msx2_cart:
+fmtowns_cd.xml:
+  Fujitsu Habitat V2.1 L13A, Hyper Dream [redump.org]
+gamegear.xml:
+  Pro Action Replay (v1.01) [Apocalypse]
+msx2_cart.xml:
   Ehagaki-yō Wāpuro (Japan), Life on Earth (demo), Super Mario World (advanced prototype), Super Mario World (demo 1),
   Super Mario World (demo 2), Super Mario World (early prototype), Super Mario World (v1.0), Super Mario World (v1.1),
   Super Rambo Special (Korea), The Goonies r Good Enough (Kralizec goodbye present) [file-hunter]
   Mr. Balloon [#msxdev Compo]
+
+
+MAME Testers Bugs Fixed (3):
+----------------------------
+- 08597: [Gameplay] a5200: Not possible to start a game in Pitfall 2 (AJR)
+- 08771: [DIP/Input] (misc/dgpix.cpp) btplay2k: Player controls are incorrect and incomplete (Windy Fairy)
+- 08772: [Gameplay] (misc/gei.cpp) gtsers9: Category ROM in second position is not loaded correctly (Nightvoice)
 
 
 Translations added or modified
@@ -256,7 +252,7 @@ Source changes
   * Dumped the KEY BPROM for Phraze Craze & Deluxe Trivia ? Whiz.
 - dgpix: Use intelfsh + improvements to sound emulation (#11582) [987123879113]:
   * sound/ks0164: Attempt to fix audio looping issues.
- * cpu/ks0164: Swap bges and bles (fixes sound effects), fix some disasm issues, document a new opcode.
+  * cpu/ks0164: Swap bges and bles (fixes sound effects), fix some disasm issues, document a new opcode.
   * misc/dgpix: Refactor to use intelfsh, add controls for btplay2k and letsdnce, add sound banking for BMkey PCB.
 - bcheetah: Update notes [hap].
 - swp00: Add the lpf [Olivier Galibert].
@@ -299,15 +295,14 @@ Source changes
 - Updated Turkish (Türkçe) UI translation (#11597) [Kadir Ekşi].
 - elwro800.cpp: Replace address map bank devices with memory views [AJR].
 - saturn.xml: Replaced abbreviations in descriptions (#11599) [ArcadeShadow].
--seta/seta.cpp: Added a Korean version of Triple Fun (#11600). Also reformatted single-line comments [ClawGrip].
+- seta/seta.cpp: Added a Korean version of Triple Fun (#11600). Also reformatted single-line comments [ClawGrip].
 - igs/igspoker.cpp: Moved the kungfu set to jackie.cpp, boots but has incorrect GFX and some missing controls [Ivan Vangelista].
 - igs/iqblock.cpp: Consolidated driver in single file [Ivan Vangelista].
 - Dumped and added a new Korean "Treasure Island" clone named "New HUNTer" (#11603) [ClawGrip].
 - Also reformatted single line comments [ClawGrip]:
   * mame.lst: Add 'newhunter'.
   * Uncommented the MCU ROM_LOAD (NO_DUMP).
-- mu50: correct default a/d level swp00: Add more bits to the sample values (24.8 instead of 16.0) swp00: Cleanups of the meg
- registers [Olivier Galibert].
+- mu50: correct default a/d level swp00: Add more bits to the sample values (24.8 instead of 16.0) swp00: Cleanups of the meg registers [Olivier Galibert].
 - mu80: Make the wave ROM test pass [Olivier Galibert].
 - Stupid git [AJR].
 - elwro800.cpp: Uglify code because old compilers are dumb [AJR].
@@ -432,7 +427,7 @@ Source changes
 - cpu/sh/sh.cpp: Fix MAC_W regression [Philip Bennett].
 - casio_ra3_device: Fill newly created image with zero instead of 0xff (#11626) [Devin Acker].
 - at_mb: Fix address map [AJR].
--subsino/subsino.cpp: Dumped and added another New HUNTer set (as MNW) (#11624). subsino/subsino.cpp: Dumped and added another New HUNTer set (as MNW) [ClawGrip].
+- subsino/subsino.cpp: Dumped and added another New HUNTer set (as MNW) (#11624). subsino/subsino.cpp: Dumped and added another New HUNTer set (as MNW) [ClawGrip].
 - mame.lst: Add 'newhunterc' [ClawGrip].
 - Fix notes [ClawGrip].
 - nakajima/nakajies.cpp: Added 2 BIOS dumps for the NTS DreamWriter 325 [Ivan Vangelista]:
@@ -473,3 +468,4 @@ Source changes
 - dataeast/dec0.cpp: Updated ROM labels and positions for midres and clones [Guru].
 - srcclean in preparation for MAME 0.260 release branch [Vas Crabb].
 - merit/merit.cpp, msx1_cart.xml: Patched up some metadata [Vas Crabb].
+- Bump MAME 0.260 [Vas Crabb].

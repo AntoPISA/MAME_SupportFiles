@@ -1,4 +1,4 @@
-0.238 2021/11/23 [#677 - Vas Crabb]
+﻿0.238 2021/11/23 [#677 - Vas Crabb]
 -----------------------------------
 
 
@@ -101,7 +101,7 @@ fmtowns_cd.xml:
   Nemurenu Yoru no Chiisana Ohanashi [Carl, r09]
   Hyper Address Ver. 2.0, Hyper Land - Doubutsu no Sekai [cyo.the.vile]
 nes.xml:
-  CoolBoy 198 in 1, CoolBoy 400 in 1, CoolBoy 400 in 1 (alt, 403 games), Exciting Boxing (Japan), Game 450 in 1, Game 500 in 1, Pocket Games 150 in 1, Space Shadow (Japan), Super Game 218 in 1 (JF2181), Super Game 360 in 1, Super Game 402 in 1, Super Mogura Tataki!! Pokkun Moguraa (Japan), Super Team Games (USA) [kmg]
+  CoolBoy 198 in 1, CoolBoy 400 in 1, CoolBoy 400 in 1 (alt, 403 games), Exciting Boxing (Japan), Game 450 in 1, Game 500 in 1, Pocket Games 150 in 1, Space Shadow (Japan), Super Game 218 in 1 (JF2181),  Super Game 360 in 1, Super Game 402 in 1, Super Mogura Tataki!! Pokkun Moguraa (Japan), Super Team Games (USA) [kmg]
 
 New NOT_WORKING Software List Additions
 ---------------------------------------
@@ -217,713 +217,407 @@ Merged Pull Requests
 
 Source changes:
 ---------------
-- rgum.cpp: Improve peripheral hookups; add uPD7759 controls [AJR]
-
-- rgum: Add preliminary inputs [AJR]
-
-- novag_diablo: fix lockup problem at fresh start [hap]
-
-- boosting the interleave during three way cpu communications speeds up Monster Zero protection check [smf-]
-
-- sfx/monsterz: improve bullets x offset [hap]
-
-- monsterz: only uses 1 button for shooting [hap]
-
-- galaxian: fix typo [hap]
-
-- monsterz: use galaxian stars instead of scramble [hap]
-
-- plugin/data: handle multiple blocks in dat [cracyc]
-
-- strconv: avoid msvc debug assertion [Patrick Mackinlay]
-
-- esripsys: fix debugger crash [Patrick Mackinlay]
-
-- plugins/data: srcclean [Vas Crabb]
-
-- sfx/monsterz: add kludge for sprite y offset issue [smf]
-
-- powerpc: add power family disassembly [Patrick Mackinlay]
-
-- facit4440: Updates based on schematics [AJR]
-
-- pce.cpp: Updated some comments (#8747) [kmg]
-
-- apple2{,gs}_flop_{clcracked,orig}.xml: Corrected metadata for Winter Games/The Games: Winter Edition (#8749) [Firehawke]
-  * Apple2gs_flop_clcracked.xml: Corrected disk size of SQ2.
-
-- macp.cpp: added some flesh to the skeleton. 2 games are playable [Robbbert].
-
-- macp.cpp: Fix clang error: operator '?:' has lower precedence than '|'; '|' will be evaluated first
- [-Werror,-Wbitwise-conditional-parentheses]
-
-- macp: wrong value was being used [Robbbert].
-
-- powerpc: reduce enum scope [Patrick Mackinlay]
-
-- nes.xml: Various WRAM fixes and more (#8752) [kmg]
-  * Black Bass games: Mirroring confirmed from solder pads. Marked as not supported since they aren't at all playable.
-  * Added battery-backed WRAM to various games. Save games should now work where relevant.
-  * Added regular WRAM to various games. These prototypes now work: Chip's Challenge, Mickey Mouse Dream Balloon, Scarabeus, SMB2
-    (US).
-
-- Remove pnacl remains [Miodrag Milanović]
-
-- Remove steamlink [Miodrag Milanović]
-
-- Remove CI20 [Miodrag Milanović]
-
-- cmake target was not very useful [Miodrag Milanović]
-
-- rpi target was not used, but regular linux one anyway [Miodrag Milanović]
-
-- mips platform is not supported for Android for some time [Miodrag Milanović]
-
-- xcode4 and ios removal [Miodrag Milanović]
-
-- Remove old VisualStudio [Miodrag Milanović]
-
-- fastbuild removal [Miodrag Milanović]
-
-- vs2019_clang target is now used instead of vsllvm [Miodrag Milanović]
-
-- Remove of winstore/winphone [Miodrag Milanović]
-
-- Remove uwp from build system [Miodrag Milanović]
-
-- Remove uwp specific sources [Miodrag Milanović]
-
-- Remove OSD_UWP from rest of code [Miodrag Milanović]
-
-- remove uwp column [Miodrag Milanović]
-
-- Few more leftovers removed [Miodrag Milanović]
-
+- rgum.cpp: Improve peripheral hookups; add uPD7759 controls [AJR].
+- rgum: Add preliminary inputs [AJR].
+- novag_diablo: Fix lockup problem at fresh start [hap].
+- Boosting the interleave during three way cpu communications speeds up Monster Zero protection check [smf].
+- sfx/monsterz: Improve bullets x offset [hap].
+- monsterz: only uses 1 button for shooting [hap].
+- galaxian: Fix typo [hap].
+- monsterz: Use galaxian stars instead of scramble [hap].
+- plugin/data: Handle multiple blocks in dat [cracyc].
+- strconv: Avoid msvc debug assertion [Patrick Mackinlay].
+- esripsys: Fix debugger crash [Patrick Mackinlay].
+- plugins/data: srcclean [Vas Crabb].
+- sfx/monsterz: Add kludge for sprite y offset issue [smf].
+- powerpc: Add power family disassembly [Patrick Mackinlay].
+- facit4440: Updates based on schematics [AJR].
+- pce.cpp: Updated some comments (#8747) [kmg].
+- apple2{,gs}_flop_{clcracked,orig}.xml: Corrected metadata for Winter Games/The Games: Winter Edition (#8749) [Firehawke].
+- apple2gs_flop_clcracked.xml: Corrected disk size of SQ2 [Firehawke].
+- macp.cpp: Added some flesh to the skeleton. 2 games are playable [Robbbert].
+- macp.cpp: Fix clang error: operator '?:' has lower precedence than '|'; '|' will be evaluated first [-Werror,-Wbitwise-conditional-parentheses].
+- macp: Wrong value was being used [Robbbert].
+- powerpc: Reduce enum scope [Patrick Mackinlay].
+- nes.xml: Various WRAM fixes and more (#8752) [kmg]:
+  * Black Bass games: Mirroring confirmed from solder pads. Marked as not supported since they aren't at all playable;
+  * Added battery-backed WRAM to various games. Save games should now work where relevant:
+  * Added regular WRAM to various games. These prototypes now work: Chip's Challenge, Mickey Mouse Dream Balloon, Scarabeus, SMB2 (US).
+- Remove pnacl remains [Miodrag Milanović].
+- Remove steamlink [Miodrag Milanović].
+- Remove CI20 [Miodrag Milanović].
+- cmake target was not very useful [Miodrag Milanović].
+- rpi target was not used, but regular linux one anyway [Miodrag Milanović].
+- mips platform is not supported for Android for some time [Miodrag Milanović].
+- xcode4 and ios removal [Miodrag Milanović].
+- Remove old VisualStudio [Miodrag Milanović].
+- fastbuild removal [Miodrag Milanović].
+- vs2019_clang target is now used instead of vsllvm [Miodrag Milanović].
+- Remove of winstore/winphone [Miodrag Milanović].
+- Remove uwp from build system [Miodrag Milanović].
+- Remove uwp specific sources [Miodrag Milanović].
+- Remove OSD_UWP from rest of code [Miodrag Milanović].
+- Remove uwp column [Miodrag Milanović].
+- Few more leftovers removed [Miodrag Milanović].
 - render/d3d: Replaced some locale-sensitive configuration parsing code [Vas Crabb].
-
-- allied, g627, spectra: added save-state and external outputs support [Robbbert].
-
-- cps2.cpp: corrected some overdumps for avsp [Guru]
-
-- rgum.cpp: identified some dips, minor comments update [Ivan Vangelista]
-
-- new NOT_WORKING machine (Casio CTK-2100) (#8757) [Devin Acker]
-  * Ctk2100: preliminary work
-  * Ctk2100: possible keyboard hookup
-  * Ctk2100: hook up rudimentary timers
-  * Ctk2100: add ports and hook up the LCD
-  * Ctk2100: timer tweaks, input tweaks
-  * Ctk2100: fix I/O port reads (stops constant LCD resets)
-  * Gt913: increase key polling rate (fixes ctk2100 test mode)
-  * Ctk2100: add ADCs, clean up and comment some other stuff
-  * Lpc210x: add the PL190 VIC here too while i'm at it
-  * Vic_pl192: fix clang build
-  * Unidasm: add gt913
-
-- mjkjidai.cpp: identified coinage dips, very minor cleanups [Ivan Vangelista]
-
-- apple2gs_flop_clcracked.xml: fixed sha1 for gpcirc [Ivan Vangelista]
-
-- gts80: fixed mistakes in comments [Robbbert]
-
-- Debug memory view improvements [AJR]
-  * Add options for 1-byte, 2-byte, 4-byte and 8-byte octal data display, which are selected automatically for memory spaces
-    configured as octal. Octal data has also been made editable.
-  * Add options for displaying addresses in decimal or octal as alternatives to the typical hexadecimal format. This also affects the
-    address expression box.
-  * Prevent the cursor from moving left from the first address or right from the maximum address.
-   - Note that the new options have only been hooked up for the Qt debugger. The Windows and OS X debuggers should also be updated
-      to include them.
-
-- debugger/qt/memorywindow.cpp: Remove leftover printf [AJR]
-
-- pc8801_flop.xml:  Fixed sha1 length issue with commented rom [Scott Stone].
-
-- cococart.cpp: Fix copy-and-paste mistake [AJR]
-
+- allied, g627, spectra: Added save-state and external outputs support [Robbbert].
+- cps2.cpp: Corrected some overdumps for avsp [Guru].
+- rgum.cpp: Identified some dips, minor comments update [Ivan Vangelista].
+- new NOT_WORKING machine (Casio CTK-2100) (#8757) [Devin Acker]:
+  * Ctk2100: preliminary work:
+  - Possible keyboard hookup;
+  - Hook up rudimentary timers;
+  - Add ports and hook up the LCD;
+  - Timer tweaks, input tweaks;
+  - Fix I/O port reads (stops constant LCD resets).
+  * gt913: Increase key polling rate (fixes ctk2100 test mode).
+  * ctk2100: Add ADCs, clean up and comment some other stuff.
+  * lpc210x: Add the PL190 VIC here too while i'm at it.
+  * vic_pl192: Fix clang build.
+  * unidasm: Add gt913.
+- mjkjidai.cpp: Identified coinage dips, very minor cleanups [Ivan Vangelista].
+- apple2gs_flop_clcracked.xml: Fixed sha1 for gpcirc [Ivan Vangelista].
+- gts80: Fixed mistakes in comments [Robbbert].
+- Debug memory view improvements [AJR]:
+  * Add options for 1-byte, 2-byte, 4-byte and 8-byte octal data display, which are selected automatically for memory spaces configured as octal. Octal data has also been made editable;
+  * Add options for displaying addresses in decimal or octal as alternatives to the typical hexadecimal format. This also affects the address expression box;
+  * Prevent the cursor from moving left from the first address or right from the maximum address:
+  - Note that the new options have only been hooked up for the Qt debugger. The Windows and OS X debuggers should also be updated to include them.
+- debugger/qt/memorywindow.cpp: Remove leftover printf [AJR].
+- pc8801_flop.xml: Fixed sha1 length issue with commented rom [Scott Stone].
+- cococart.cpp: Fix copy-and-paste mistake [AJR].
 - amstrad: Return 0xFF on PPI port A when the PSG is inactive.  Fixes Puzzle Bobble [Barry Rodewald].
-
-- bus/nes: Fixed 4-screen mirroring when loading loose .nes files (#8764) [kmg]
-  * Also, tweaked logging so newer .nes files show backwards compatible fields.
-
-- debugger: support octal on the Mac native debugger [R. Belmont]
-
-- bus/nes: Simplify 8K banking with existing parameterized function (#8765) [kmg]
-  * Bus/nes: Simplify 8K banking with existing parameterized function.
-  * Remove some useless semicolons
-
-- bus/nes: Removed bogus mirroring and banking bits from NAMCOT 3446 (#8768) [kmg]
-
-- selmenu: fix wrongly placed messagebox [hap]
-
-- fanucspmg: add correct contact url to comment [hap]
-
-- mc68328: Cleaned up register handlers and structure [Ryan Holtz] (#8771) [MooglyGuy]
-
-- saa1099.cpp: Fix output behavior when both noise and tone are enabled (#8767) [cam900]
-
-- bgfx: fix flurry of bogus warning messages [hap]
-
-- screen: fix buffer overflow crash with VIDEO_VARIABLE_WIDTH screens [AmatCoder]
-
-- removed leftover [Miodrag Milanović]
-
-- fmtowns_flop_*.xml: 4 new dumps, verified originals (#8770) [r09]
-  * Verified the Futoppara FD Heisei disks as dumped from original disks and moved them to fmtowns_flop_orig.xml [cyo.the.vile]
-  * Removed the old handcrafted Columns image
-
-- sgi_mips: new software list additions from jrra.zone (#8769) [Michael D]
-
-- plugins/console: fix crash [cracyc]
-
-- osdcore: fix buffer overflow with osd_output stack [hap]
-
-- f8: Add callback for overriding the normal reset address [AJR]
-
-- frontend: Refactored menu event handling and fixed a number of issues (#8777) [Vas Crabb]
-  * Moved common code for drawing about box, info viewer, and other text box menus to a base class; removed the last of the info
-    viewer logic and the multi-line item hack from the base menu class.
-  * Added previous/next group navigation for general inputs and plugin input selection menus.
-  * Moved message catalog logic to lib/util, allowing osd and emu to use localised messages.
-  * Made the base menu class use the UI manager’s feature for holding session state rather than a static map and mutex.
-  * Improved menu event handling model, and fixed many issues, particularly with menus behaving badly when hidden/shown.
-  * Added better support for menus that don’t participate in the usual menu stack, like the menuless sliders and the save/load state
-    menus.
-  * Made a number of menus refresh state when being shown after being hidden (fixes MT08121 among other issues).
-  * Fixed indication of mounted slot option in the slot option details menu.
-  * Improved appearance of background menus when emulation isn't running - draw all menus in the stack, and darken the background
-    menus to make the edges of the active menu clearer.
+- bus/nes: Fixed 4-screen mirroring when loading loose .nes files (#8764). Also, tweaked logging so newer .nes files show backwards compatible fields [kmg].
+- debugger: Support octal on the Mac native debugger [R. Belmont].
+- bus/nes: Simplify 8K banking with existing parameterized function (#8765) [kmg]:
+  * bus/nes: Simplify 8K banking with existing parameterized function;
+  * Remove some useless semicolons.
+- bus/nes: Removed bogus mirroring and banking bits from NAMCOT 3446 (#8768) [kmg].
+- selmenu: Fix wrongly placed messagebox [hap].
+- fanucspmg: Add correct contact url to comment [hap].
+- mc68328: Cleaned up register handlers and structure [Ryan Holtz] (#8771) [MooglyGuy].
+- saa1099.cpp: Fix output behavior when both noise and tone are enabled (#8767) [cam900].
+- bgfx: Fix flurry of bogus warning messages [hap].
+- screen: Fix buffer overflow crash with VIDEO_VARIABLE_WIDTH screens [AmatCoder].
+- Removed leftover [Miodrag Milanović].
+- fmtowns_flop_*.xml: 4 new dumps, verified originals (#8770) [r09]:
+  * Verified the Futoppara FD Heisei disks as dumped from original disks and moved them to fmtowns_flop_orig.xml [cyo.the.vile].
+  * Removed the old handcrafted Columns image.
+- sgi_mips: New software list additions from jrra.zone (#8769) [Michael D].
+- plugins/console: Fix crash [cracyc].
+- osdcore: Fix buffer overflow with osd_output stack [hap].
+- f8: Add callback for overriding the normal reset address [AJR].
+- frontend: Refactored menu event handling and fixed a number of issues (#8777) [Vas Crabb]:
+  * Moved common code for drawing about box, info viewer, and other text box menus to a base class; removed the last of the info viewer logic and the multi-line item hack from the base menu class;
+  * Added previous/next group navigation for general inputs and plugin input selection menus;
+  * Moved message catalog logic to lib/util, allowing osd and emu to use localised messages;
+  * Made the base menu class use the UI manager’s feature for holding session state rather than a static map and mutex;
+  * Improved menu event handling model, and fixed many issues, particularly with menus behaving badly when hidden/shown;
+  * Added better support for menus that don’t participate in the usual menu stack, like the menuless sliders and the save/load state menus;
+  * Made a number of menus refresh state when being shown after being hidden (fixes MT08121 among other issues);
+  * Fixed indication of mounted slot option in the slot option details menu;
+  * Improved appearance of background menus when emulation isn't running - draw all menus in the stack, and darken the background menus to make the edges of the active menu clearer;
   * Fixed locale issues in -listxml.
-
-- debugger: Made GUI debuggers more uniform [Vas Crabb].
-  * Added new memory view features to Win32 debugger.
-  * Fixed spelling of hexadecimal in Cocoa debugger and added decimal address option.
-  * Fixed duplicate keyboard shortcut in Cocoa debugger (Shift-Cmd-D was both new device window and 64-bit float format).
+- debugger: Made GUI debuggers more uniform [Vas Crabb]:
+  * Added new memory view features to Win32 debugger;
+  * Fixed spelling of hexadecimal in Cocoa debugger and added decimal address option;
+  * Fixed duplicate keyboard shortcut in Cocoa debugger (Shift-Cmd-D was both new device window and 64-bit float format);
   * Made keyboard shortcuts slightly more consistent across debuggers.
-
-- plugins: Moved input selection menu and sequence polling code to a common library.  Fixed the issue that prevented keyboard inputs
- being mapped with -steadykey on [Vas Crabb].
-
+- plugins: Moved input selection menu and sequence polling code to a common library. Fixed the issue that prevented keyboard inputs being mapped with -steadykey on [Vas Crabb].
 - docs: Started adding some documentation for MAME's internal UI, and updated the list of example front-ends [Vas Crabb].
-
 - Regenerated message catalog sources.  For translators, the new strings are mostly [Vas Crabb]:
-  * The names of the inputs provided by the OS-dependent layer for things like fullscreen and video features. These show up in the
-    user interface inputs menu.
-  * The names for automatically generated views. These show up in the video options menu - test with a system with a lot of screens
-    to see more variants.
-  * The input macro plugin UI.
-  * A few format strings for analog input assignments.
+  * The names of the inputs provided by the OS-dependent layer for things like fullscreen and video features. These show up in the user interface inputs menu;
+  * The names for automatically generated views. These show up in the video options menu - test with a system with a lot of screens to see more variants;
+  * The input macro plugin UI;
+  * A few format strings for analog input assignments;
   * A few strings for the about box header.
-
 - frontend: Make all the textbox menus use the custom navigation flag, on the off chance they become scrollable somehow [Vas Crabb].
-
-- ctk2100: added to mame.lst [Robbbert]
-
-- bus/nes_ctrl: Fixed Family Trainer button reads (#8773) [kmg]
-  * Column input reads now are now shifted to correct bit, fixing reads for top two rows.
-  * Button presses are correctly 0 bits.
-  * Multiple rows can be scanned per read.
+- Added (ctk2100) to mame.lst [Robbbert].
+- bus/nes_ctrl: Fixed Family Trainer button reads (#8773) [kmg]:
+  * Column input reads now are now shifted to correct bit, fixing reads for top two rows;
+  * Button presses are correctly 0 bits;
+  * Multiple rows can be scanned per read;
   * Flipped key bindings on mat side A - now left/right correspond to left/right on mat.
-
-- gt913: log two more unknown sound commands (#8779) [Devin Acker]
-
-- gts3, gts3a: WIP [Robbbert]
-
+- gt913: Log two more unknown sound commands (#8779) [Devin Acker].
+- gts3, gts3a: WIP [Robbbert].
 - Fix various usability issues [Vas Crabb]:
-  * Frontend: Made it so you can press UI On Screen Display to hide the Analog Controls menu and see the response to your inputs
-    without the risk of changing settings, and see more axes at once and scroll them for systems with very large number of axes.
-    Also ensure the axis being configured is visible when the menu is visible, and made the menu behave a bit more like the system
-    input assignments menu (including previous/next group navigation).
-  * Frontend: Allow Lua to draw to the UI container - this addresses the main complaint in #7475.  Note that drawing to the UI
-    container will draw over any UI elements, including menus.  Plugins can check menu_active to avoid drawing over menus.  Also
-    removed some unnecessary use of sol::overload.
-  * Frontend: Improved info/image box navigation on the system/softwre selection menus, and cleaned up some leftover code that came
-    from the copy/pasted event handling functions.
-  * Frontend: Fixed sliders menu not handling Alt+Shift as intended (thanks Coverity).  Fixed a couple of harmless Coverity errors,
-    too.
-  * Emu/inpttype.ipp: Made the default assignment for Save State recognise right shift.
-  * Plugins: Added next/previous group navigation to input macro edit menu.
-  * Docs: Added basic description of the system and software selection menus, and corrected a couple of errors in the Lua reference.
-
+  * frontend: Made it so you can press UI On Screen Display to hide the Analog Controls menu and see the response to your inputs without the risk of changing settings, and see more axes at once and scroll them for systems with very large number of axes; also ensure the axis being configured is visible when the menu is visible, and made the menu behave a bit more like the system input assignments menu (including previous/next group navigation);
+  * frontend: Allow Lua to draw to the UI container - this addresses the main complaint in #7475. Note that drawing to the UI container will draw over any UI elements, including menus. Plugins can check menu_active to avoid drawing over menus. Also removed some unnecessary use of sol::overload;
+  * frontend: Improved info/image box navigation on the system/softwre selection menus, and cleaned up some leftover code that came from the copy/pasted event handling functions;
+  * frontend: Fixed sliders menu not handling Alt+Shift as intended (thanks Coverity).  Fixed a couple of harmless Coverity errors, too;
+  * emu/inpttype.ipp: Made the default assignment for Save State recognise right shift;
+  * plugins: Added next/previous group navigation to input macro edit menu;
+  * docs: Added basic description of the system and software selection menus, and corrected a couple of errors in the Lua reference.
 - docs: Fix an error in the Lua reference that I copy/pasted without noticing [Vas Crabb].
-
 - plugins: Moved the timecode recording functionality to a plugin [Vas Crabb].
-
 - plugins: Fixed obligatory copy/paste error in new timecode plugin [Vas Crabb].
-
-- mc68328: Moved #define macros into enums within the class (#8781) [Ryan Holtz]
-
+- mc68328: Moved #define macros into enums within the class (#8781) [Ryan Holtz].
 - Fixed Windows build as well - default input overrides in OSD modules are annoying [Vas Crabb].
-
-- at: correct mba032q year typo [hap]
-
-- emu/ioport.cpp: Fixed "MAME lost my joystick settings!!!1!11! [Vas Crabb]
-
+- at: Correct mba032q year typo [hap].
+- emu/ioport.cpp: Fixed "MAME lost my joystick settings!!!1!11! [Vas Crabb].
 - plugins: Gave the timecode plugin an option to count emulated frames [Vas Crabb].
-
 - emu/ioport.h: Fixed stupid mismatched friend declaration that GCC blithely ignores [Vas Crabb].
-
-- bus/nes_ctrl: Added emulation for IGS Tap-tap Mat controller (#8772) [kmg]
-  * Refactored Family Trainer and Tap-tap Mat into common base class.
-
-- emu/ioport.cpp: Made default behaviour better [Vas Crabb].
-  * If an input is configured to some combination of controls that are not present at all, ignore the setting altogether for the
-    session.
-  * Fixed relative axes with PORT_RESET not responding to absolute controls (MT07685).
-  * Fixed relative axes not responding to an absolute control if the value doesn’t change every frame (eg. holding a stick against
-    the stop).
-  * Changed the scaling for absolute controls assigned to relative axes to make defaults more sane (e.g. arkanoid or spdheat with a
-    joystick).
-
+- bus/nes_ctrl: Added emulation for IGS Tap-tap Mat controller (#8772). Refactored Family Trainer and Tap-tap Mat into common base class [kmg].
+- emu/ioport.cpp: Made default behaviour better [Vas Crabb]:
+  * If an input is configured to some combination of controls that are not present at all, ignore the setting altogether for the session;
+  * Fixed relative axes with PORT_RESET not responding to absolute controls (MT07685);
+  * Fixed relative axes not responding to an absolute control if the value doesn’t change every frame (eg. holding a stick against the stop);
+  * Changed the scaling for absolute controls assigned to relative axes to make defaults more sane (e.g. arkanoid or spdheat with a joystick).
 - frontend: Fixed some localisation issues in Analog Controls menu [Vas Crabb].
-
 - docs: Added documentation on assigning inputs [Vas Crabb].
-
-- emu/ioport.cpp: Fixed some default setting handling issues [Vas Crabb].
-  * Issues were unlikely to actually manifest unless you use controller configuration files to change specific system input defaults.
-
-- src/emu/output.h: Added size accessor to multi-element output finder [Vas Crabb].
-  * Std::size will work on the top rank of an outut finder now.  Sorry for hitting emu.h again so soon.
-
-- lua: Exposed a couple more input related things [Vas Crabb].
-  * Exposed constructor and a few methods on input_seq required for scripts to properly clear assignments or restore default
-    settings.
-  * Exposed ioport_manager::set_type_seq which is required to configure general input assignments properly.
-  * Removed unnecessary use of sol::overload in favour of optional parameters.
+- emu/ioport.cpp: Fixed some default setting handling issues. Issues were unlikely to actually manifest unless you use controller configuration files to change specific system input defaults [Vas Crabb].
+- src/emu/output.h: Added size accessor to multi-element output finder. std::size will work on the top rank of an outut finder now. Sorry for hitting emu.h again so soon. [Vas Crabb].
+- lua: Exposed a couple more input related things [Vas Crabb]:
+  * Exposed constructor and a few methods on input_seq required for scripts to properly clear assignments or restore default settings;
+  * Exposed ioport_manager::set_type_seq which is required to configure general input assignments properly;
+  * Removed unnecessary use of sol::overload in favour of optional parameters;
   * Updated documentation and also fixed a few errors.
-
 - docs: Added description for axis setting assignments [Vas Crabb].
-
 - gp_1, gp_2 : WIP. Added some of the missing roms to mbossy [Robbbert].
-
-- luareference.rst: Clarify contract of as_hz, as_khz and as_mhz [AJR]
-
+- luareference.rst: Clarify contract of as_hz, as_khz and as_mhz [AJR].
 - plugins: Simplify logic in autofire and inputmacro plugins to try and avoid leaking state across sessions [Vas Crabb].
-
 - plugins: Ensure state is destroyed on stop [Vas Crabb].
-
 - frontend: Don't let the non-menus get as far as trying to draw [Vas Crabb].
-
 - Two small fixes (bad menu flags in cheat plugin, copy/paste in docs) [Vas Crabb].
-
-- plugins: fix cheatfind menu flags and write xml cheat text to ui container so it's not sideways on rotated screens [cracyc]
-
-- plugins/cheat: one more flag [cracyc]
-
-- m68kfpu: bug fix for fmovem with empty register list [Patrick Mackinlay]
-
-- hh_melps4: add gakken frogger note [hap]
-
-- plugins: Reduced amnesia for autofire and inputmacro plugins [Vas Crabb].
-  * Made autofire and inputmacro plugins capable of remembering settings if the host input device for the binding is missing or if an
-    input for a slot device that isn't present is referenced.
-
-- nes.xml: Added some homebrew games released on cartridge (#8783) [kmg]
-
-- m92.cpp: update B board references for all games (#8787) [Sergio G]
-
+- plugins: Fix cheatfind menu flags and write xml cheat text to ui container so it's not sideways on rotated screens [cracyc].
+- plugins/cheat: One more flag [cracyc].
+- m68kfpu: Bug fix for fmovem with empty register list [Patrick Mackinlay].
+- hh_melps4: Add gakken frogger note [hap].
+- plugins: Reduced amnesia for autofire and inputmacro plugins. Made autofire and inputmacro plugins capable of remembering settings if the host input device for the binding is missing or if an input for a slot device that isn't present is referenced [Vas Crabb].
+- nes.xml: Added some homebrew games released on cartridge (#8783) [kmg].
+- m92.cpp: Update B board references for all games (#8787) [Sergio G].
 - st_mp100,st_mp200: WIP. Fixed some long-standing mistakes. Moved blkshpsq to the correct driver [Robbbert].
-
-- st_mp100: Black Sheep cleanup [Robbbert]
-
-- plugins: Rewrote timer plugin fixing multiple issues [Vas Crabb].
-  * Added emulated time recording as well as wall clock time.
-  * Fixed recording time for multiple software items per system.  An incorrect constraint on the database table meant that time was
-    only being recorded for a single software item per system.
-  * Detect the "empty" driver so the time spent at the selection menu isn't recorded (you'd get multiple entries for this due to the
-    way options leak when returning to the system selection menu).
-  * Included schema migration code to update existing timer plugin databases.  Also replaced some unnecessary floating point code
-    with integer maths, added log messages, and made the plugin unload unload its database access code during emulation.
+- st_mp100: Black Sheep cleanup [Robbbert].
+- plugins: Rewrote timer plugin fixing multiple issues [Vas Crabb]:
+  * Added emulated time recording as well as wall clock time;
+  * Fixed recording time for multiple software items per system. An incorrect constraint on the database table meant that time was only being recorded for a single software item per system;
+  * Detect the "empty" driver so the time spent at the selection menu isn't recorded (you'd get multiple entries for this due to the way options leak when returning to the system selection menu);
+  * Included schema migration code to update existing timer plugin databases.  Also replaced some unnecessary floating point code with integer maths, added log messages, and made the plugin unload unload its database access code during emulation;
   * Changed other plugins' use of paths with trailing slashes as this causes stat to fail on Windows.
-
 - Enabled complex combinations for analog axes [Vas Crabb]:
-  * Made it possible to add digital controls to axis settings as enables.
-  * Mix multiple analog controls assigned to an axis setting.
-  * Added a "reverse" modifier for analog controls (useful with mixing).
+  * Made it possible to add digital controls to axis settings as enables;
+  * Mix multiple analog controls assigned to an axis setting;
+  * Added a "reverse" modifier for analog controls (useful with mixing);
   * Fixed an issue assigning mouse axes using multiple mouse-like devices with -nomultimouse.
-
 - frontend: More cleanup [Vas Crabb]:
-  * Got rid of some abuse of "special main menus".
-  * Added a helper class for auto-pause menus that don't spawn submenus.
-  * Got rid of the fake menu that schedules an exit on the first frame.
-  * Turned the confirm quit prompt into a menu, eliminated one more special-cased event loop.
+  * Got rid of some abuse of "special main menus";
+  * Added a helper class for auto-pause menus that don't spawn submenus;
+  * Got rid of the fake menu that schedules an exit on the first frame;
+  * Turned the confirm quit prompt into a menu, eliminated one more special-cased event loop;
   * Fixed the confirm quit prompt resuming if you return to emulation if you weren't paused to begin with.
-
-- bus/centronics: Fixed conflicting DIP locations, reversed order and inverted polarity for Epson printers [Vas Crabb].
-  * Also added the LX-810 (without L suffix) DIP switches for reference - we don't have a device for this printer yet.
-
+- bus/centronics: Fixed conflicting DIP locations, reversed order and inverted polarity for Epson printers. Also added the LX-810 (without L suffix) DIP switches for reference - we don't have a device for this printer yet [Vas Crabb].
 - input: Clarify docuemntation and a comment [Vas Crabb].
-
 - frontend: Remove no-longer-needed member of save/load state menu [Vas Crabb].
-
 - frontend: Allow cycling modifiers for an absolute axis by pressing repeatedly without going through an append step [Vas Crabb].
-
-- svg_renderer: Flag when output contents have not changed [Ryan Holtz] (#8791) [MooglyGuy]
-
-- cps1: fix small issue with stars palette cycling [Loïc Petit]
-
-- nes.xml: Added a Mega Man 2 re-release (#8785) [kmg]
-
-- cps1: remove unneeded ( ) [hap]
-
-- upd4701: Change input update method to not use PORT_RESET [AJR]
-
-- hh_sm510: typo in comment [hap]
-
-- tms34010: Clarify that not all illegal opcodes are actually trapped; separate TMS34020 emulation better [AJR]
-
-- fixes for variables set but not used [smf-]
-
-- coco: audit save state and enable it (#8750) [tim lindner]
-
+- svg_renderer: Flag when output contents have not changed [Ryan Holtz] (#8791) [MooglyGuy].
+- cps1: Fix small issue with stars palette cycling [Loïc Petit].
+- nes.xml: Added a Mega Man 2 re-release (#8785) [kmg].
+- cps1: Remove unneeded ( ) [hap].
+- upd4701: Change input update method to not use PORT_RESET [AJR].
+- hh_sm510: Typo in comment [hap].
+- tms34010: Clarify that not all illegal opcodes are actually trapped; separate TMS34020 emulation better [AJR].
+- Fixes for variables set but not used [smf].
+- coco: Audit save state and enable it (#8750) [Tim Lindner].
 - ltd.cpp: WIP. Added sound [Robbbert].
-
-- samcoupe_cass: Corrected software list description (#8796) [ArcadeShadow]
-  * Corrected software list description
-
-- New NOT_WORKING machine (#8778) [ClawGrip]
-  * Arcade.lua: Add stop.cpp
-
+- samcoupe_cass: Corrected software list description (#8796). Corrected software list description [ArcadeShadow].
+- New NOT_WORKING machine (#8778). arcade.lua: Add stop.cpp [ClawGrip].
 - laserbas.cpp: Fixed a bug in sound output, improved trackball handling [Vas Crabb].
-
 - taito_h.cpp: Moved Syvalion trackball handling to a derived class, reduced copy/paste in I/O handler function [Vas Crabb].
-
 - Various small cleanups to drivers [Vas Crabb].
-
 - plugins: Work around menu not remembering selection when ref is nullptr [Vas Crabb].
-
 - frontend: Don't inappropriately truncate text in menu text boxes [Vas Crabb].
-
 - osd/windows: Handle WM_UNICHAR [Vas Crabb].
-
 - taito_h.cpp: Fixed dleague vertical blanking interrupt [Vas Crabb].
-
 - frontend: Added input provider module options to menu, worked around machine options not showing modules [Vas Crabb].
-
-- wd_fdc: Wait for sector read/write to complete on interrupt d0-7, fixes rmnimbus floppy access errors [prime6809]
-
-- Revert "-svg_renderer: Flag when output contents have not changed [Ryan Holtz] (#8791)" [hap]
-  * This reverts commit b0ac175b4942e4b29098823773ff2d50b6ac35a9.
-
-- stv.cpp: Removed most run time I/O port lookups and removed PORT_RESET [Vas Crabb].
-  * IOGA port G counter reset is emulated correctly now.
+- wd_fdc: Wait for sector read/write to complete on interrupt d0-7, fixes rmnimbus floppy access errors [prime6809].
+- Revert "-svg_renderer: Flag when output contents have not changed [Ryan Holtz] (#8791)". This reverts commit b0ac175b4942e4b29098823773ff2d50b6ac35a9 [hap].
+- stv.cpp: Removed most run time I/O port lookups and removed PORT_RESET [Vas Crabb]:
+  * IOGA port G counter reset is emulated correctly now;
   * Increased sensitivity for patocar trackball – it seemed too slow with mouse or analog stick.
-
 - frontend: Handle analog controls with high sensitivity numbers better [Vas Crabb].
-
 - arcadia.cpp: Removed commented PORT_RESET - it makes no sense for joysticks anyway [Vas Crabb].
-
-- cps1.cpp: Fixed 2 players mode DIP switch for sf2cejx and sf2hfj.  (#8797) [Sergio G]
-  * Looks like Capcom inverted the default configuration (OFF) to set "2 Credits/Continue" option by default in "sf2cejx" and
-    "sf2hfj", instead "1 Credit/No Continue" present in "sf2jx".
-
-- a1supply.cpp: corrected clock [Ivan Vangelista]
-
-- amiga_hdd: Corrected description (#8806) [ArcadeShadow]
-  * Corrected the software list's description (added the manufacturer's name)
-
+- cps1.cpp: Fixed 2 players mode DIP switch for (sf2cejx) and (sf2hfj) (#8797). Looks like Capcom inverted the default configuration (OFF) to set "2 Credits/Continue" option by default in (sf2cejx) and (sf2hfj), instead "1 Credit/No Continue" present in (sf2jx) [Sergio G].
+- a1supply.cpp: Corrected clock [Ivan Vangelista].
+- amiga_hdd: Corrected description (#8806). Corrected the software list's description (added the manufacturer's name) [ArcadeShadow].
 - techno.cpp: WIP, added sound [Robbbert].
-
-- ltd.cpp: split into derived classes [Robbbert]
-
-- diablo68a: correct romlabels [hap]
-
-- bus/nes_ctrl: Added support for Doremikko piano keyboard (#8790) [kmg]
-
-- genie: Define _FILE_OFFSET_BITS=64 on Linux (#8808) [Matthew Barnes]
-
-- vd.cpp: Both games working [Robbbert]
-
-- rtpc: complete on-disk post routines [Patrick Mackinlay]
-
+- ltd.cpp: Split into derived classes [Robbbert].
+- diablo68a: correct romlabels [hap].
+- bus/nes_ctrl: Added support for Doremikko piano keyboard (#8790) [kmg].
+- genie: Define _FILE_OFFSET_BITS=64 on Linux (#8808) [Matthew Barnes].
+- vd.cpp: Both games working [Robbbert].
+- rtpc: complete on-disk post routines [Patrick Mackinlay].
 - wico.cpp: Added outputs & save-state support [Robbbert].
-
-- m740: STY ZP should store Y, not X (IIgs ADB MCU @ $FF15) [R. Belmont]
-
+- m740: STY ZP should store Y, not X (IIgs ADB MCU @ $FF15) [R. Belmont].
 - osd/windows: Show error message box on a separate thread (see MT08118) [Vas Crabb].
-
-- emu/emuopts.cpp: Default to built-in UI language rather than English [Vas Crabb].
-  * The external English message catalog is a placeholder anyway.
-
+- emu/emuopts.cpp: Default to built-in UI language rather than English. The external English message catalog is a placeholder anyway [Vas Crabb].
 - cpu/mcs48: Corrected comments - D87xxH have UVEPROM, not EEPROM [Vas Crabb].
-
-- taitotx.cpp: Fixed goketsuj title (MT 08127) (#8818) [kmg]
-
-- bus/nes_ctrl: Added support for Bandai Hyper Shot light gun (#8794) [kmg]
-
-- saitek_osa/sparc: added another version romset [Berger]
-
-- pockchalw.xml: redumped 4 carts which were previously underdumped [skaman]
-
+- taitotx.cpp: Fixed goketsuj title (MT 08127) (#8818) [kmg].
+- bus/nes_ctrl: Added support for Bandai Hyper Shot light gun (#8794) [kmg].
+- saitek_osa/sparc: Added another version romset [Berger].
+- pockchalw.xml: Redumped 4 carts which were previously underdumped [skaman].
 - osd/windows: Fixed stupid potential deadlock on exit [Vas Crabb].
-
 - frontend: Some changes to menu item class that will make it possbile to reduce the number of menu rebuilds [Vas Crabb].
-
-- osd/windows: Don't set parent window for error message box - it doesn't appreciate the parent being pulled out from under it
- [Vas Crabb].
-
-- lwriter.cpp: Add support for lwriter rev2 ROM (#8799) [Jeff Muizelaar]
-
-- bus/nes: Fixed samples not playing in Famicom Aerobics Studio (#8800) [kmg]
-
-- micropin.cpp: pentacup working, and WIP for pentacup2. Split into derived classes [Robbbert].
-
-- frontend: Various minor improvements [Vas Crabb].
-  * Made a few more menus reset values to the default in response to the UI clear input.
-  * Made the minimum info text size less unreasonable, and fixed a locale issue in the font/size selection menu when parsing option
-    strings.
-  * Made the keyboard mode menu toggle items on double click or UI select.
-  * Made the menuless sliders menu remember the last slider shown (this probably broke when sliders were moved out of the UI manager
-    itself).
-  * Made a few menus just update the highlighted options when it's adjusted rather than unnecessarily rebuilding the menu.
+- osd/windows: Don't set parent window for error message box - it doesn't appreciate the parent being pulled out from under it [Vas Crabb].
+- lwriter.cpp: Add support for lwriter rev2 ROM (#8799) [Jeff Muizelaar].
+- bus/nes: Fixed samples not playing in Famicom Aerobics Studio (#8800) [kmg].
+- micropin.cpp: (pentacup) working, and WIP for (pentacup2). Split into derived classes [Robbbert].
+- frontend: Various minor improvements [Vas Crabb]:
+  * Made a few more menus reset values to the default in response to the UI clear input;
+  * Made the minimum info text size less unreasonable, and fixed a locale issue in the font/size selection menu when parsing option strings;
+  * Made the keyboard mode menu toggle items on double click or UI select;
+  * Made the menuless sliders menu remember the last slider shown (this probably broke when sliders were moved out of the UI manager itself);
+  * Made a few menus just update the highlighted options when it's adjusted rather than unnecessarily rebuilding the menu;
   * Made a few more menus reset on being reactivated to cope with scripts or other things changing stuff out from under them.
-
-- nes.xml: Updated the rest of the Family Trainer games to fully working (#8826) [kmg]
-
-- 3rdparty: Updated ASIO to version 1.20.0 [Vas Crabb].
-  * The doc folder isn't included as it's pretty big.
-  * This required include/asio/detail/win_iocp_socket_accept_op.hpp due to mismatched order in the member declarations and
-    initialiser list for the win_iocp_socket_accept_op class.  I reversed the declaration order so it matches
-    win_iocp_socket_move_accept_op.
-
-- Actually commit the source changes for ASIO 1.20.0 update [Vas Crabb].
-  * Also changed the fix to ASIO itself to match the upstream change in commit cd68912b7eb07f24e501e8cbff832b61ec292eea.
-
+- nes.xml: Updated the rest of the Family Trainer games to fully working (#8826) [kmg].
+- 3rdparty: Updated ASIO to version 1.20.0 [Vas Crabb]:
+  * The doc folder isn't included as it's pretty big;
+  * This required include/asio/detail/win_iocp_socket_accept_op.hpp due to mismatched order in the member declarations and initialiser list for the win_iocp_socket_accept_op class. I reversed the declaration order so it matches win_iocp_socket_move_accept_op.
+- Actually commit the source changes for ASIO 1.20.0 update. Also changed the fix to ASIO itself to match the upstream change in commit cd68912b7eb07f24e501e8cbff832b61ec292eea [Vas Crabb].
 - 3rdparty/asio: Set x bit on scripts, since Windows git won't [Vas Crabb].
-
 - acorn_dsk.cpp: Fixed cell size for high density ADFS-F format [Nigel Barnes].
-
 - New devices for Archimedes machines [Nigel Barnes]:
-  * Acorn Battery Management Unit
-  * Acorn LC ASIC (preliminary)
-  * Universal Peripheral Controller 82C710/82C711
-
-- bus/centronics: Added Vertical Twist Joystick Interface (for Archimedes) [Nigel Barnes]
-
+  * Acorn Battery Management Unit;
+  * Acorn LC ASIC (preliminary);
+  * Universal Peripheral Controller 82C710/82C711.
+- bus/centronics: Added Vertical Twist Joystick Interface (for Archimedes) [Nigel Barnes].
 - archimedes_keyb.cpp: Swap Center and Right mouse buttons [Nigel Barnes].
-
 - machine/7200fifo.cpp: Fixed triggering of half-full flag [Nigel Barnes].
-
 - bus/archimedes/econet: Archimedes econet interface devices [Nigel Barnes]:
-  * Econet interface (not working)
-  * RTFM Joystick Interface
-
+  * Econet interface (not working);
+  * RTFM Joystick Interface,
 - bus/archimedes/podule: Various podules for Acorn Archimedes [Nigel Barnes]:
-  * Acorn AGA30 BBC I/O Podule
-  * Acorn AKA05 ROM Podule
-  * Acorn AKA10 BBC I/O Podule
-  * Acorn AKA12 User Port/MIDI Podule
-  * Acorn AKA15 MIDI and BBC I/O Podule
-  * Acorn AKA16 MIDI Podule
-  * Acorn AKA25 Ethernet
-  * Acorn Tube Podule
-  * Archimedes Dual RS423 Serial Interface (not working)
-  * Armadillo Systems A448 Sound Sampler (not working)
-  * Armadillo Systems A448b Stereo MIDI Sound Sampler (not working)
-  * Atomwide Serial Expansion Card
-  * Baildon Electronics IDE HD Interface
-  * Clares Armadeus Sampler Board
-  * Computer Concepts Fax-Pack (not working)
-  * Computer Concepts LaserDirect (Canon LBP-4) (not working)
-  * Computer Concepts ScanLight (not working)
-  * Computer Concepts ScanLight Junior (not working)
-  * Computer Concepts ScanLight Video 256 (not working)
-  * Digital Services Ethernet Podule (not working)
-  * HCCS User/Analogue Podule
-  * RISC Developments Ethernet Card (not working)
-  * RISC Developments IDE Hard Disc System
-  * VTI User Port and SCSI Podule
-  * Watford Electronics BBC User I/O Card
-  * Wild Vision MidiMax
-  * Wild Vision/Computer Concepts Lark A16
-
+  * Acorn AGA30 BBC I/O Podule;
+  * Acorn AKA05 ROM Podule;
+  * Acorn AKA10 BBC I/O Podule;
+  * Acorn AKA12 User Port/MIDI Podule;
+  * Acorn AKA15 MIDI and BBC I/O Podule;
+  * Acorn AKA16 MIDI Podule;
+  * Acorn AKA25 Ethernet;
+  * Acorn Tube Podule;
+  * Archimedes Dual RS423 Serial Interface (not working);
+  * Armadillo Systems A448 Sound Sampler (not working);
+  * Armadillo Systems A448b Stereo MIDI Sound Sampler (not working);
+  * Atomwide Serial Expansion Card;
+  * Baildon Electronics IDE HD Interface;
+  * Clares Armadeus Sampler Board;
+  * Computer Concepts Fax-Pack (not working);
+  * Computer Concepts LaserDirect (Canon LBP-4) (not working);
+  * Computer Concepts ScanLight (not working);
+  * Computer Concepts ScanLight Junior (not working);
+  * Computer Concepts ScanLight Video 256 (not working);
+  * Digital Services Ethernet Podule (not working);
+  * HCCS User/Analogue Podule;
+  * RISC Developments Ethernet Card (not working);
+  * RISC Developments IDE Hard Disc System;
+  * VTI User Port and SCSI Podule;
+  * Watford Electronics BBC User I/O Card;
+  * Wild Vision MidiMax;
+  * Wild Vision/Computer Concepts Lark A16.
 - acorn_vidc: Implement DAC differences between VIDC1 and VIDC1a [Nigel Barnes].
-
 - aa310.cpp [Nigel Barnes]:
-  * Added PC style IO devices (A5000/A4/A3010/A3020).
-  * Added IDE interface (A5000/A4/A3020).
-  * Added HD floppy drives (A5000/A4/A3010/A3020).
-  * RTFM and Vertical Twist joystick interfaces are slot devices.
-  * Acorn joystick interface (A3010).
-  * Added Battery Management Unit (A4).
-  * Partially implemented IOEB (A5000/A4/A3010/A3020).
-  * Replaced all 8 bit wide ROM images with actual dumps.
-  * Replaced all default CMOS with factory settings.
-  * Added printer port to all machines.
-  * Added serial port to all machines.
-  * Added podule slots to all machines.
-  * Added extension ROM socket (A5000/A4).
-  * Machines are individually configured for floppies and hard discs.
+  * Added PC style IO devices (A5000/A4/A3010/A3020);
+  * Added IDE interface (A5000/A4/A3020);
+  * Added HD floppy drives (A5000/A4/A3010/A3020);
+  * RTFM and Vertical Twist joystick interfaces are slot devices;
+  * Acorn joystick interface (A3010);
+  * Added Battery Management Unit (A4);
+  * Partially implemented IOEB (A5000/A4/A3010/A3020);
+  * Replaced all 8 bit wide ROM images with actual dumps;
+  * Replaced all default CMOS with factory settings;
+  * Added printer port to all machines;
+  * Added serial port to all machines;
+  * Added podule slots to all machines;
+  * Added extension ROM socket (A5000/A4);
+  * Machines are individually configured for floppies and hard discs;
   * Added support for Atari ST floppies.
-
-New Working Software List Additions
------------------------------------
-archimedes_hdd: RISC OS 3.11 Applications [Nigel Barnes]
-archimedes_rom: Wizzo4 3.12, Wizzo4 3.22, Wizzo5 3.12, Wizzo5 3.13, Wizzo5 3.15 [Nigel Barnes]
-
 - aa310.cpp: Fixed econet functions and unused variable [Nigel Barnes].
-
-- c64_cass.xml: Added twenty entries (#8774) [Steven Coomber]
-
+- c64_cass.xml: Added twenty entries (#8774) [Steven Coomber].
 - Note that I have demoted the existing Fist II (Erbe) entry as this also fails to load correctly [Steven Coomber].
-
-- fmtowns_cd.xml: 15 new dumps, 2 replacements, added floppies (#8780) [r09]
-  * Added missing floppy disks to hypraddr2, hypland and iris [cyo.the.vile]
-  * Replaced the pharmony floppy disk with a cleaner unmodified image [cyo.the.vile]
-  * Replaced the royalbld bad floppy dump with a better one [cyo.the.vile]
-
-- sgi_mips: Add new softlist entries from jrra.zone and archive.org (#8786) [Michael D]
-  * Sgi_mips: Add new softlist entries from jrra.zone
-  * More sgi_mips softlist entries from jrra.zone
-  * Even more sgi_mips softlist entries
-  * More SGI IRIX CDs from jrra.zone
-
-- Build fixes for clang [AJR]
-
-- tms9900: Fix PC display for watchpoint hits [AJR]
-
-- bus/nes_ctrl: Updated Power Pad code. Promoted all games to working (#8827) [kmg]
-  * Changed KEYPAD inputs to BUTTON with numbering following the pattern used in Family Trainer.
-  * Removed device_reset().
-  * Added proper strobe bit behavior and reading 1s on excess reads.
+- fmtowns_cd.xml: 15 new dumps, 2 replacements, added floppies (#8780) [r09, cyo.the.vile]:
+  * Added missing floppy disks to hypraddr2, hypland and iris;
+  * Replaced the pharmony floppy disk with a cleaner unmodified image;
+  * Replaced the royalbld bad floppy dump with a better one.
+- sgi_mips: Add new softlist entries from jrra.zone and archive.org (#8786) [Michael D]:
+  * More sgi_mips softlist entries from jrra.zone;
+  * Even more sgi_mips softlist entries;
+  * More SGI IRIX CDs from jrra.zone.
+- Build fixes for clang [AJR].
+- tms9900: Fix PC display for watchpoint hits [AJR].
+- bus/nes_ctrl: Updated Power Pad code. Promoted all games to working (#8827) [kmg]:
+  * Changed KEYPAD inputs to BUTTON with numbering following the pattern used in Family Trainer;
+  * Removed device_reset();
+  * Added proper strobe bit behavior and reading 1s on excess reads;
   * Made Running Stadium and Stadium Events games clones of World Class Track Meet, the last released variant of the same game.
-
-- Updated Greek Translation (#8829) [BraiNKilleRGR]
-
+- Updated Greek Translation (#8829) [BraiNKilleRGR].
 - upc82c710/upc82c711: Use unscoped enum for device id's [Nigel Barnes].
-
 - acrnsys.cpp: Set default configuration of RAM cards [Nigel Barnes].
-
 - bus/archimedes/podule: Podules for Acorn Archimedes [Nigel Barnes]:
-  * Baildon Electronics IDE HD Interface
-  * SJ Research Nexus Interface (A500) (not working)
-  * Wild Vision/Computer Concepts Eagle M2 (not working)
-
+  * Baildon Electronics IDE HD Interface;
+  * SJ Research Nexus Interface (A500) (not working);
+  * Wild Vision/Computer Concepts Eagle M2 (not working).
 - apple2gs.cpp: Checkpoint along the way to bit-serial ADB emulation [R. Belmont].
-  * Macadb.cpp: Small cleanups and improved logging capability [R. Belmont].
-
-- lwriter.cpp: Add support for lwriterplus rev42 ROM (#8830) [Jeff Muizelaar]
-
-- New WORKING clone (#8825) [ClawGrip]
-
-- sms.xml, gamegear.xml: Added 2 Master System, 1 Game Gear prototypes (#8819) [kmg]
-
-- c64_cass.xml: Added 34 entries (#8824) [Steven Coomber]
-
-- gbcolor.xml : Lowercase on some description's words (#8795) [ArcadeShadow]
-
-- apple2gs: fix GCC compile [R. Belmont].
-
+- macadb.cpp: Small cleanups and improved logging capability [R. Belmont].
+- lwriter.cpp: Add support for lwriterplus rev42 ROM (#8830) [Jeff Muizelaar].
+- New WORKING clone (#8825) [ClawGrip].
+- sms.xml, gamegear.xml: Added 2 Master System, 1 Game Gear prototypes (#8819) [kmg].
+- c64_cass.xml: Added 34 entries (#8824) [Steven Coomber].
+- gbcolor.xml : Lowercase on some description's words (#8795) [ArcadeShadow].
+- apple2gs: Fix GCC compile [R. Belmont].
 - language/Slovak: Corrected character encoding in header comment [Vas Crabb].
-
 - Updated Chinese translations [YuiFAN].
-
 - frontend: Show more unemulated/imperfect features per-device in warnings menu [Vas Crabb].
-
-- New working clone added (#8834) [algestam]
-
+- New working clone added (#8834) [algestam].
 - Confirmed Chinese translations for remaining message [YuiFAN].
-
-- tms9995: fixed pc not displaying when watchpoint hit [Robbbert].
-
-- cop01.cpp: unknown dip switches enable an undocumented invulnerability cheat (MT#8132) (#8832) [Steven Coomber]
-  * Cop01.cpp: unknown dip switches enable an undocumented invulnerability cheat (MT#8132)
-
-- Updated Brazilian Portuguese translation [Felipe] (#8836) [Vas Crabb]
-
+- tms9995: Fixed pc not displaying when watchpoint hit [Robbbert].
+- cop01.cpp: Unknown dip switches enable an undocumented invulnerability cheat (MT#8132) (#8832) [Steven Coomber]
+- Updated Brazilian Portuguese translation [Felipe] (#8836) [Vas Crabb].
 - Removed obsolete messages from Brazilian Portuguese translation [Vas Crabb].
-
 - nsm.cpp: WIP. Test menu works [Robbbert].
-
-- apple2gs: fix regression pointed out by Coverity [R. Belmont].
-
+- apple2gs: Fix regression pointed out by Coverity [R. Belmont].
 - arc_ide_be: Corrected ROM size [Nigel Barnes].
-
 - emu/render.cpp, emu/rendlay.cpp: Added scroll support for all elements [Vas Crabb].
-
-- seta: marked blockcar (Visco's Block Carnival / Thunder & Lightning 2 in seta.cpp) X1 sample ROM as BAD_DUMP as it appears to be
- half size [David Haywood]
-
-- cps1: marked forgottnj as a prototype, it's an unfinished version of the game [David Haywood]
-
-- houseball.cpp: Typo (#8842) [ClawGrip]
-
-- imolagp.cpp: Add a note about clone "Ferrari 1" from Falgas/Videotronic (#8841) [ClawGrip]
-
+- seta: Marked blockcar (Visco's Block Carnival / Thunder & Lightning 2 in seta.cpp) X1 sample ROM as BAD_DUMP as it appears to be half size [David Haywood].
+- cps1: Marked forgottnj as a prototype, it's an unfinished version of the game [David Haywood].
+- houseball.cpp: Typo (#8842) [ClawGrip].
+- imolagp.cpp: Add a note about clone "Ferrari 1" from Falgas/Videotronic (#8841) [ClawGrip].
 - emu/render.cpp: Fixed texture size calculation for oblong items [Vas Crabb].
-
 - bfm_sc2.cpp: Removed reel components from sc2prem2 layout [Vas Crabb].
-
 - Added partial Slovak translation [Milan Galcik].
-
-- Updated localisations for UI changes in 0.238 development cycle [Vas Crabb].
-  * For tranlators, the main changes are:
-   - The former "device mapping" menu is now "input device options" and includes the input provider module options.
-   - The analog controls menu (where sensitivity, auto-centre, etc. is configured) is now localisable.
-   - The timecode logging features (used when making gameplay videos) have been moved to a plugin, and display messages are
-      localisable.
-   - There are a few extra messages for the autofire and input macro plugins to handle cases where a configured input is not
-      present.
-   - The timer plugin has options to show wall clock time (real time elapsed according to host OS clock) or emulated time.
-
+- Updated localisations for UI changes in 0.238 development cycle. For tranlators, the main changes are [Vas Crabb]:
+  * The former "device mapping" menu is now "input device options" and includes the input provider module options;
+  * The analog controls menu (where sensitivity, auto-centre, etc. is configured) is now localisable;
+  * The timecode logging features (used when making gameplay videos) have been moved to a plugin, and display messages are localisable;
+  * There are a few extra messages for the autofire and input macro plugins to handle cases where a configured input is not present;
+  * The timer plugin has options to show wall clock time (real time elapsed according to host OS clock) or emulated time.
 - debugimgui: Fix menus losing focus, add octal display and octal/decimal address select [Barry Rodewald].
-
-- clang fixes [smf-]
-
-- bus/nes_ctrl: Removed device_reset() for recently updated input devices (#8846) [kmg]
-
-- bus/nes_ctrl: Added support for Exciting Boxing air bag controller (#8817) [kmg]
-
-- ibm5150.xml, ibmpcjr_flop.xml: Moved Touchdown Football to ibmpcjr_flop.xml (fixes #8838) (#8839) [Logan B]
-
+- Clang fixes [smf]
+- bus/nes_ctrl: Removed device_reset() for recently updated input devices (#8846) [kmg].
+- bus/nes_ctrl: Added support for Exciting Boxing air bag controller (#8817) [kmg].
+- ibm5150.xml, ibmpcjr_flop.xml: Moved Touchdown Football to ibmpcjr_flop.xml (fixes #8838) (#8839) [Logan B].
 - Updated Chinese translations [YuiFAN].
-
-- bus/vme: De-skeletonized vme_hcpu30.cpp (#7467) [shattered]
-
-- seta.cpp: removed some unneeded VIDEO_START macros [Ivan Vangelista]
-
-- taito_x.cpp: split in subclasses, minor cleanups [Ivan Vangelista]
-
-- New working clone (#8837) [algestam]
-
-- megadriv.cpp: note that NEC PAC can play CD games (#8847) [cam900]
-
-- new software list entries (#8845) [David Haywood]
-
-- naomi.cpp: fix the bg offset to be based on the param base so non-zero bases get backgrounds (#8844) [Jennifer Taylor]
-
-- gp9001.cpp: added initialization register (0x0E) values for remaining games (#8843) [Sergio G]
-
-- bus/nes: Added partial code for unlicensed game Dragon Fighter (#8833) [kmg]
-
-- tms32031.cpp: Add TMS320VC33 emulation support, Add notes (#8766) [cam900]
-
-- bus/snes/sa1.cpp: Flesh out some SA1 features, Fix SNES timing, interrupt (#8673) [cam900]
-
-- tr808: correct release year [hap]
-
-- hh_sm510: small correction to fowling svg [hap]
-
-- hh_sm510: Remove uncertain Fowling IDs (#8848) [algestam]
-
-- emu/rendersw.hxx: Support texture wrap/clamp properly for (A)RGB formats [Vas Crabb].
-  * Also got rid of names starting with an underscore followed by an uppercase letter, as they are reserved.
+- bus/vme: De-skeletonized vme_hcpu30.cpp (#7467) [shattered].
+- seta.cpp: Removed some unneeded VIDEO_START macros [Ivan Vangelista].
+- taito_x.cpp: Split in subclasses, minor cleanups [Ivan Vangelista].
+- New working clone (#8837) [algestam].
+- megadriv.cpp: Note that NEC PAC can play CD games (#8847) [cam900].
+- New software list entries (#8845) [David Haywood].
+- naomi.cpp: Fix the bg offset to be based on the param base so non-zero bases get backgrounds (#8844) [Jennifer Taylor].
+- gp9001.cpp: Added initialization register (0x0E) values for remaining games (#8843) [Sergio G].
+- bus/nes: Added partial code for unlicensed game Dragon Fighter (#8833) [kmg].
+- tms32031.cpp: Add TMS320VC33 emulation support, add notes (#8766) [cam900].
+- bus/snes/sa1.cpp: Flesh out some SA1 features, Fix SNES timing, interrupt (#8673) [cam900].
+- tr808: Correct release year [hap].
+- hh_sm510: Small correction to fowling svg [hap].
+- hh_sm510: Remove uncertain Fowling IDs (#8848) [algestam].
+- emu/rendersw.hxx: Support texture wrap/clamp properly for (A)RGB formats [Vas Crabb]:
+  * Also got rid of names starting with an underscore followed by an uppercase letter, as they are reserved;
   * Yes, get_texel_rgb32 and get_texel_argb32 are identical - thew were already identical before.
-
-- tiamc1: extend kot title, there's an elektronika handheld with the same title [hap]
-
-- stargame.cpp: WIP, spcship is working [Robbbert]
-
-- mame.lst: moved blkshpsq to the correct place [Robbbert].
-
-- rawthrillspc.cpp: Add HDD dump for "The Fast And The Furious" [Victor Fernandez (City Game)] (#8851) [ClawGrip]
-
-- fm77av.xml: add protected Deep Forest image (#8849) [r09]
-  * Also marked the existing one as cracked.
-
-- bus/nes: Added support for boards using the SMD133 ASIC (#8840) [kmg]
-  * Bus/nes: Added support for boards using the SMD133 ASIC.
-
+- tiamc1: Extend kot title, there's an elektronika handheld with the same title [hap].
+- stargame.cpp: WIP, spcship is working [Robbbert].
+- mame.lst: Moved blkshpsq to the correct place [Robbbert].
+- rawthrillspc.cpp: Add HDD dump for "The Fast And The Furious" [Victor Fernandez (City Game)] (#8851) [ClawGrip].
+- fm77av.xml: add protected Deep Forest image (#8849). Also marked the existing one as cracked [r09].
+- bus/nes: Added support for boards using the SMD133 ASIC (#8840) [kmg].
 - apple2gs: Add debugger annotations for the Animation Toolset [R. Belmont, Antoine Vignau].
 - Miscellaneous #include cleanup [AJR].
 - stargame.cpp: Removed unneeded things [Robbbert].

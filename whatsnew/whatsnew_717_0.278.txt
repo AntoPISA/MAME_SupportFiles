@@ -1,4 +1,4 @@
-0.278 2025-06-30 [#717 - Vas Crabb]
+﻿0.278 2025-06-30 [#717 - Vas Crabb]
 -----------------------------------
 
 
@@ -572,81 +572,80 @@ Merged pull requests
 - 13672: docs: Fixed a formatting error and some syntax warnings [Firehawke].
 - 13673: debugger/osx: Added a workaround for auto-scrolling views failing to scroll when they initially fill [Antonio Malara].
 - 13674: gaelco/mastboy.cpp: Added eleven versions of Master Boy and corrected/verified supported versions[Josep Quingles, Recreativas.org, ClawGrip].
-- 13675: taito/taitojc.cpp: Changed the comment for sidebs2j to match the test screen. [FMecha]
-- 13676: cpu/z80: Simplified 16-bit memory accesses (improves performance). [holub]
-- 13677: tvgames: Added two TV games (not working). [David Haywood, TeamEurope]
-- 13679: gaelco/mastboyo.cpp: Added a 1987 version of Master Boy using a Z80 CPU. [Josep Quingles, Recreativas.org, ClawGrip]
-- 13680: moog/nl_source.cpp: Moved the netlist declaration to its own header. [m1macrophage]
-- 13681: galaxian/galaxian.cpp: Added an encrypted Lady Bug bootleg. [Luis Arrufat, Francisco Javier Muñoz Calero, ClawGrip]
-- 13682: dataeast/brkthru.cpp: Added the World release of Break Thru. [Jordi Tuells, ClawGrip]
-- 13683: namco/namcos12.cpp: Changed the year for Tekken 3 from the copyright year to the release year. [AnthonyRyuki]
-- 13684: gaelco: Dumped the PLDs for several Gaelco games. [Josep Quingles, Recreativas.org, ClawGrip]
-- 13686: debug/debugvw.cpp: Fall back to zero when recomputing the expression if the previous expression can’t be parsed. [dave-br]
-- 13687: debugger/win: Added symbolic constants for console pane view indices. [dave-br]
-- 13688: gaelco/goldart.cpp: Dumped three additional versions of Goldart (not working). [Josep Quingles, Recreativas.org, ClawGrip]
-- 13690: Dumped the PROMs and PLDs for several Gaelco Modular System games and bootlegs. [Josep Quingles, Recreativas.org, ClawGrip]
-- 13691: taito/taitotz.cpp: Edited descriptions and release years. [FMecha]
-- 13692: dataeast/brkthru.cpp: Removed a bootleg with identical ROMs to the official World release. [ClawGrip]
-- 13693: pinball/gts3a.cpp: Dumped Cue Ball Wizard (Spanish) from Vifico. [Victor Fernandez (City Game), Jordi Beltrán, ClawGrip]
-- 13694: debug/debugcmd.cpp: Changed the behavior of the debugger symlist command. [dave-br]
-- 13695: gaelco/lotoplay.cpp: Dumped four versions of Loto-Play (not working). [Josep Quingles, Recreativas.org, ClawGrip]
-- 13696: namco/rallyx.cpp: Confirmed the PROM content for Danger Track. [Recreativas.org, ClawGrip]
-- 13697: tvgames: Added fifteen TV games based on SunPlus SoCs (twelve working). [David Haywood, Sean Riddle, TeamEurope]
-- 13698: pc/play4texash.cpp: Dumped Play 4 Texas Hold’em (casino poker machine). [anonymous, ClawGrip]
-- 13699: gaelco/gaelco2.cpp: Added an unprotected version of Lizard Hunt. [Josep Quingles, Recreativas.org, ClawGrip]
-- 13700: gaelco/gaelcof3.cpp: Dumped the Mueve and Ob-La-Di kiddie rides. [Josep Quingles, Recreativas.org, ClawGrip]
-- 13702: gaelco/gaelco2.cpp: Added four versions of Bang!/Gun Gabacho. [Josep Quingles, Recreativas.org, ClawGrip]
-- 13703: gaelco/gaelco3d.cpp: Added two versions of Football Power. [Josep Quingles, Recreativas.org, ClawGrip]
-- 13704: misc/flower.cpp: Dumped a Sega/Alpha Flower board (the program ROM matches the Komax version). [Team Japump, Wayder]
-- 13706: gaelco/gaelco.cpp: Added a prototype of Last KM. [Josep Quingles, Recreativas.org, ClawGrip]
-- 13707: tandberg/tdv2100_disp_logic.cpp: Fixed attribute handling and polarity for some jumper settings. [Frode van der Meeren]
-- 13708: namco/namcos21.cpp: Changed the background fill colour for the Winning Run games to palette index zero. [FlykeSpice]
-- 13710: roland/roland_tr707.cpp: Emulated most of the hardware besides the display and audio. [m1macrophage]
-- 13711: gaelco/gaelco2.cpp: Dumped nine Salter fitness machine versions (one working). [Josep Quingles, Recreativas.org, ClawGrip]
-- 13712: korg/korgtriton.cpp: Added a skeleton driver for the Korg TRITON sampling music workstation. [Antonio Malara]
-- 13713: gaelco/gaelco.cpp: Added an additional version of Big Karnak. [Josep Quingles, Recreativas.org, ClawGrip]
-- 13714: cirsa/missbamby.cpp: Dumped Arfyc 3 Mini. [Javier Blanco Ojeda, Recreativas.org, ClawGrip]
-- 13716: misc/miuchiz.cpp: Flagged systems as having unemulated sound (fixes validity errors). [Matthew Daniels]
-- 13718: cpu/mb86235: Improved TGPx4 disassembly and emulation, particularly for data transfers. [Matthew Daniels]
-- 13720: spectrum_cass.xml: Added 35 working items, and replaced one item with a better dump. [ArcadeShadow]
-- 13721: moog/memorymoog.cpp, oberheim/xpander.cpp: Simplified LED matrix output. [m1macrophage]
-- 13722: gelco/goldart.cpp: Dumped four versions of Goldart using PIC16C54 MCUs. [Josep Quingles, Recreativas.org, ClawGrip]
-- 13723: skeleton/whtm68k.cpp: Marked systems as having imperfect sound rather than completely unemulated sound. [flama12333]
-- 13724: gaelco/thoop2.cpp: Added four additional versions of TH Strikes Back. [Josep Quingles, Recreativas.org, ClawGrip]
-- 13725: gaelco/gaelco2.cpp: Added an additional Pro Cycle Tele Cardioline set. [Josep Quingles, Recreativas.org, ClawGrip]
-- 13726: gaelco/gaelco.cpp: Added two additional versions of Squash (one working). [Josep Quingles, Recreativas.org, ClawGrip]
-- 13727: Improved emulation of the VT369 SoC and added internal ROMs to a number of systems using it. [David Haywood]
-- 13729: cpu/z80: Store flag register bits separately (improves performance). [holub]
-- 13730: tvgames: Added six TV games based on SunPlus SoCs (five working). [David Haywood, Sean Riddle, TeamEurope]
-- 13731: misc/falgas_m89.cpp: Marked systems as having imperfect sound, rather than completely unemulated sound. [flama12333]
-- 13732: gaelco/gaelco.cpp: Added five additional versions of Thunder Hoop. [Josep Quingles, Recreativas.org, ClawGrip]
-- 13734: nichibutsu/nbmj8688.cpp: Improved DIP switch setting labels for Mahjong Crystal Gal and Mahjong Crystal Gal 2. [buffi]
-- 13735: galeco/wrally_ms.cpp: Dumped a World Rally Championship prototype running on the Modular System (not working).
-  [Josep Quingles, Recreativas.org, David Haywood, ClawGrip]
-- 13736: handheld/hh_sm510.cpp: Added Tronica Treasure Island. [Milan Galcik, algestam, hap]
-- 13737: pinball/gts3a.cpp: Dumped a Spanish version of the Super Mario Bros pinball. [Victor Fernandez (City Game), ClawGrip]
-- 13738: adp/adp.cpp, adp/stella8085.cpp, adp/stellafr.cpp: Dumped eleven games (not working). [m170.dev, stonedDiscord]
-- 13739: handheld/hh_sm510.cpp: Added Elektronika Vesolaya arifmetiki. [Milan Galcik, Igor Nys]
-- 13740: gaelco/xorworld_ms.cpp: Dumped a version of Xor World for the Modular System. [Javier Valero, Recreativas.org, ClawGrip]
-- 13742: handheld/hh_sm510.cpp: Added the Soviet prototype Uchitel' arifmetiki device. [Milak Galcik, Igor Nys]
-- 13743: gaelco: Dumped the PLDs and PROMs for three games on the Modular System. [Josep Quingles, Recreativas.org, ClawGrip]
-- 13744: gaelco/gaelco.cpp: Moved some Salter fitness machines to a more appropriate source file. [David Haywood]
-- 13746: gaelco/gaelco3d.cpp: Added a prototype of Radikal Bikers (not working). [Javier Valero, Recreativas.org, ClawGrip]
-- 13747: gaelco/glass.cpp: Added a prototype of Glass (not working). [Javier Valero, Recreativas.org, David Haywood, ClawGrip]
-- 13748: video/ppu2c0x_vt.cpp: Added support for high-resolution modes, and improved VT32 PPU emulation. [David Haywood]
-- 13949: tvgames: Added six JAKKS Pacific TV games (four working). [David Haywood, Sean Riddle, TeamEurope]
-- 13750: gaelco/wrally.cpp: Added three additional versions of World Rally Championship. [Josep Quingles, Recreativas.org, ClawGrip]
-- 13751: gaelco/gaelco.cpp: Identified the test switch for Salter exercise machines. [ClawGrip]
-- 13752: handheld/hh_sm510.cpp: Added Elektronika Vinni-Pukh (Winnie the Pooh). [Milan Glacik, Igor Nys]
-- 13753: gaelco/gaelco2.cpp: Added three additional versions of World Rally 2. [Josep Quingles, Recreativas.org, ClawGrip]
-- 13754: sanyo/phc25.cpp: Connected the CRT controller’s GM1 input to I/O port 0x40 bit 4. [Sylvain Glaize]
-- 13755: formats/phc25_cas.cpp, sanyo/phc25.cpp: Corrected the cassette signal polarity. [Olivier Valentin]
-- 13757: gaelco/targeth.cpp: Added two additional versions of Target Hits/Quick Shots Josep Quingles, Recreativas.org, David Haywood, ClawGrip]
-- 13758: emu/validity.cpp: Validate device input defaults and inputs for non-default slot options. [AJR]
-- 13759: cirsa/missbamby.cpp: Added a note about an alternate ROM arrangement for Deta Multy. [Javier Blanco Ojeda, ClawGrip]
-- 13760: sinclair/tsconf_rs232.cpp: Emulated the TS-Conf “ZiFi” UART. [holub]
-- 13761: tvgames: Added eight TV games (five working), and re-dumped the Wall-E TV game. [David Haywood, Sean Riddle, TeamEurope]
-- 13762: gaelco/wrally.cpp: Reordered the World Rally Championship sets by likely release order. [ClawGrip]
+- 13675: taito/taitojc.cpp: Changed the comment for sidebs2j to match the test screen [FMecha].
+- 13676: cpu/z80: Simplified 16-bit memory accesses (improves performance) [holub].
+- 13677: tvgames: Added two TV games (not working) [David Haywood, TeamEurope].
+- 13679: gaelco/mastboyo.cpp: Added a 1987 version of Master Boy using a Z80 CPU [Josep Quingles, Recreativas.org, ClawGrip].
+- 13680: moog/nl_source.cpp: Moved the netlist declaration to its own header [m1macrophage].
+- 13681: galaxian/galaxian.cpp: Added an encrypted Lady Bug bootleg [Luis Arrufat, Francisco Javier Muñoz Calero, ClawGrip].
+- 13682: dataeast/brkthru.cpp: Added the World release of Break Thru [Jordi Tuells, ClawGrip].
+- 13683: namco/namcos12.cpp: Changed the year for Tekken 3 from the copyright year to the release year [AnthonyRyuki].
+- 13684: gaelco: Dumped the PLDs for several Gaelco games [Josep Quingles, Recreativas.org, ClawGrip].
+- 13686: debug/debugvw.cpp: Fall back to zero when recomputing the expression if the previous expression can’t be parsed [dave-br].
+- 13687: debugger/win: Added symbolic constants for console pane view indices [dave-br].
+- 13688: gaelco/goldart.cpp: Dumped three additional versions of Goldart (not working) [Josep Quingles, Recreativas.org, ClawGrip].
+- 13690: Dumped the PROMs and PLDs for several Gaelco Modular System games and bootlegs [Josep Quingles, Recreativas.org, ClawGrip].
+- 13691: taito/taitotz.cpp: Edited descriptions and release years [FMecha].
+- 13692: dataeast/brkthru.cpp: Removed a bootleg with identical ROMs to the official World release [ClawGrip].
+- 13693: pinball/gts3a.cpp: Dumped Cue Ball Wizard (Spanish) from Vifico [Victor Fernandez (City Game), Jordi Beltrán, ClawGrip].
+- 13694: debug/debugcmd.cpp: Changed the behavior of the debugger symlist command [dave-br].
+- 13695: gaelco/lotoplay.cpp: Dumped four versions of Loto-Play (not working) [Josep Quingles, Recreativas.org, ClawGrip].
+- 13696: namco/rallyx.cpp: Confirmed the PROM content for Danger Track [Recreativas.org, ClawGrip].
+- 13697: tvgames: Added fifteen TV games based on SunPlus SoCs (twelve working) [David Haywood, Sean Riddle, TeamEurope].
+- 13698: pc/play4texash.cpp: Dumped Play 4 Texas Hold’em (casino poker machine) [anonymous, ClawGrip].
+- 13699: gaelco/gaelco2.cpp: Added an unprotected version of Lizard Hunt [Josep Quingles, Recreativas.org, ClawGrip].
+- 13700: gaelco/gaelcof3.cpp: Dumped the Mueve and Ob-La-Di kiddie rides [Josep Quingles, Recreativas.org, ClawGrip].
+- 13702: gaelco/gaelco2.cpp: Added four versions of Bang!/Gun Gabacho. [Josep Quingles, Recreativas.org, ClawGrip].
+- 13703: gaelco/gaelco3d.cpp: Added two versions of Football Power [Josep Quingles, Recreativas.org, ClawGrip].
+- 13704: misc/flower.cpp: Dumped a Sega/Alpha Flower board (the program ROM matches the Komax version) [Team Japump, Wayder].
+- 13706: gaelco/gaelco.cpp: Added a prototype of Last KM [Josep Quingles, Recreativas.org, ClawGrip].
+- 13707: tandberg/tdv2100_disp_logic.cpp: Fixed attribute handling and polarity for some jumper settings [Frode van der Meeren].
+- 13708: namco/namcos21.cpp: Changed the background fill colour for the Winning Run games to palette index zero [FlykeSpice].
+- 13710: roland/roland_tr707.cpp: Emulated most of the hardware besides the display and audio [m1macrophage].
+- 13711: gaelco/gaelco2.cpp: Dumped nine Salter fitness machine versions (one working) [Josep Quingles, Recreativas.org, ClawGrip].
+- 13712: korg/korgtriton.cpp: Added a skeleton driver for the Korg TRITON sampling music workstation [Antonio Malara].
+- 13713: gaelco/gaelco.cpp: Added an additional version of Big Karnak [Josep Quingles, Recreativas.org, ClawGrip].
+- 13714: cirsa/missbamby.cpp: Dumped Arfyc 3 Mini [Javier Blanco Ojeda, Recreativas.org, ClawGrip].
+- 13716: misc/miuchiz.cpp: Flagged systems as having unemulated sound (fixes validity errors) [Matthew Daniels].
+- 13718: cpu/mb86235: Improved TGPx4 disassembly and emulation, particularly for data transfers [Matthew Daniels].
+- 13720: spectrum_cass.xml: Added 35 working items, and replaced one item with a better dump [ArcadeShadow].
+- 13721: moog/memorymoog.cpp, oberheim/xpander.cpp: Simplified LED matrix output [m1macrophage].
+- 13722: gelco/goldart.cpp: Dumped four versions of Goldart using PIC16C54 MCUs [Josep Quingles, Recreativas.org, ClawGrip].
+- 13723: skeleton/whtm68k.cpp: Marked systems as having imperfect sound rather than completely unemulated sound [flama12333].
+- 13724: gaelco/thoop2.cpp: Added four additional versions of TH Strikes Back [Josep Quingles, Recreativas.org, ClawGrip].
+- 13725: gaelco/gaelco2.cpp: Added an additional Pro Cycle Tele Cardioline set [Josep Quingles, Recreativas.org, ClawGrip].
+- 13726: gaelco/gaelco.cpp: Added two additional versions of Squash (one working) [Josep Quingles, Recreativas.org, ClawGrip].
+- 13727: Improved emulation of the VT369 SoC and added internal ROMs to a number of systems using it [David Haywood].
+- 13729: cpu/z80: Store flag register bits separately (improves performance) [holub].
+- 13730: tvgames: Added six TV games based on SunPlus SoCs (five working) [David Haywood, Sean Riddle, TeamEurope].
+- 13731: misc/falgas_m89.cpp: Marked systems as having imperfect sound, rather than completely unemulated sound [flama12333].
+- 13732: gaelco/gaelco.cpp: Added five additional versions of Thunder Hoop [Josep Quingles, Recreativas.org, ClawGrip]
+- 13734: nichibutsu/nbmj8688.cpp: Improved DIP switch setting labels for Mahjong Crystal Gal and Mahjong Crystal Gal 2 [buffi].
+- 13735: galeco/wrally_ms.cpp: Dumped a World Rally Championship prototype running on the Modular System (not working) [Josep Quingles, Recreativas.org, David Haywood, ClawGrip].
+- 13736: handheld/hh_sm510.cpp: Added Tronica Treasure Island [Milan Galcik, algestam, hap].
+- 13737: pinball/gts3a.cpp: Dumped a Spanish version of the Super Mario Bros pinball [Victor Fernandez (City Game), ClawGrip].
+- 13738: adp/adp.cpp, adp/stella8085.cpp, adp/stellafr.cpp: Dumped eleven games (not working) [m170.dev, stonedDiscord].
+- 13739: handheld/hh_sm510.cpp: Added Elektronika Vesolaya arifmetiki [Milan Galcik, Igor Nys].
+- 13740: gaelco/xorworld_ms.cpp: Dumped a version of Xor World for the Modular System [Javier Valero, Recreativas.org, ClawGrip].
+- 13742: handheld/hh_sm510.cpp: Added the Soviet prototype Uchitel' arifmetiki device [Milak Galcik, Igor Nys].
+- 13743: gaelco: Dumped the PLDs and PROMs for three games on the Modular System [Josep Quingles, Recreativas.org, ClawGrip].
+- 13744: gaelco/gaelco.cpp: Moved some Salter fitness machines to a more appropriate source file [David Haywood].
+- 13746: gaelco/gaelco3d.cpp: Added a prototype of Radikal Bikers (not working) [Javier Valero, Recreativas.org, ClawGrip].
+- 13747: gaelco/glass.cpp: Added a prototype of Glass (not working) [Javier Valero, Recreativas.org, David Haywood, ClawGrip].
+- 13748: video/ppu2c0x_vt.cpp: Added support for high-resolution modes, and improved VT32 PPU emulation [David Haywood].
+- 13949: tvgames: Added six JAKKS Pacific TV games (four working) [David Haywood, Sean Riddle, TeamEurope].
+- 13750: gaelco/wrally.cpp: Added three additional versions of World Rally Championship [Josep Quingles, Recreativas.org, ClawGrip].
+- 13751: gaelco/gaelco.cpp: Identified the test switch for Salter exercise machines [ClawGrip].
+- 13752: handheld/hh_sm510.cpp: Added Elektronika Vinni-Pukh (Winnie the Pooh) [Milan Glacik, Igor Nys].
+- 13753: gaelco/gaelco2.cpp: Added three additional versions of World Rally 2 [Josep Quingles, Recreativas.org, ClawGrip].
+- 13754: sanyo/phc25.cpp: Connected the CRT controller’s GM1 input to I/O port 0x40 bit 4 [Sylvain Glaize].
+- 13755: formats/phc25_cas.cpp, sanyo/phc25.cpp: Corrected the cassette signal polarity [Olivier Valentin].
+- 13757: gaelco/targeth.cpp: Added two additional versions of Target Hits/Quick Shots [Josep Quingles, Recreativas.org, David Haywood, ClawGrip].
+- 13758: emu/validity.cpp: Validate device input defaults and inputs for non-default slot options [AJR].
+- 13759: cirsa/missbamby.cpp: Added a note about an alternate ROM arrangement for Deta Multy [Javier Blanco Ojeda, ClawGrip].
+- 13760: sinclair/tsconf_rs232.cpp: Emulated the TS-Conf “ZiFi” UART [holub].
+- 13761: tvgames: Added eight TV games (five working), and re-dumped the Wall-E TV game [David Haywood, Sean Riddle, TeamEurope].
+- 13762: gaelco/wrally.cpp: Reordered the World Rally Championship sets by likely release order [ClawGrip].
 - 13763: gaelco/glass.cpp: Added seven additional versions of Glass and Super Splash [Josep Quingles, Recreativas.org, David Haywood, ClawGrip].
 - 13764: trs/coco3.cpp: Reordered devices in machine configuration to work around non-deterministic behaviour [Tim Lindner].
 - 13765: megadriv.xml: Added 27 working items, and replaced one item with a better dump [ArcadeShadow].

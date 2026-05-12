@@ -975,10 +975,10 @@ Taiko no Tatsujin 11 (T111001-NA-A) [f205v]
 - misc/nabupc_kbd.cpp: Fully emulated NABU PC keyboard (#11220) [Brian Johnson].
 - hh_sm510: Correct release year for some konami handhelds [hap].
 - Cleanup [Vas Crabb]:
-  * Gba.xml: Cleaned up some comments.
-  * Bus/epson_qx/cqgmem.cpp: Actually set m_installed.
-  * Misc/nabupc_kbd.cpp: Don't override general input assignments.
-  * Bus/qbus: Got rid of an unnecessary simple_list.
+  * gba.xml: Cleaned up some comments.
+  * bus/epson_qx/cqgmem.cpp: Actually set m_installed.
+  * misc/nabupc_kbd.cpp: Don't override general input assignments.
+  * bus/qbus: Got rid of an unnecessary simple_list.
 - msx1_cart.xml: Added 76 working items (#11266). Also replaced Super Bros. World 1 (Korea) and renamed seahorse to seahorsea [Wilbert Pol].
 - msx1_cart.xml: Super Bioman titles are written with spaces in Korean [Vas Crabb].
 - hh_sm510: fix LCD segment for ktmntbb (#11270). An LCD segment for the ball-kick segment was grouped with the wrong part [algestam].
@@ -992,9 +992,9 @@ Taiko no Tatsujin 11 (T111001-NA-A) [f205v]
 - sega/powervr2.cpp: Disable a printf [Angelo Salese].
 - bt47x: Add bt479 device [Patrick Mackinlay].
 - hash/n64.xml: Perform a QA pass [Angelo Salese, Happy] (#11255) [Angelo Salese]:
-  * Hash/n64.xml: Initial QA pass.
-  * Hash/n64.xml: QA checkpoint.
-  * Hash/n64.xml: Finalize QA pass, add some promotions.
+  * Initial QA pass;
+  * QA checkpoint;
+  * Finalize QA pass, add some promotions.
 - sound/es5503.cpp: Support sync and AM modes and the last oscillator volume bug [R. Belmont].
 - hrdvd: Add placeholders for all the chips, thanks Guru for tracing the PCB [Olivier Galibert].
 - tc9223: Add forgotten override qualifier [Olivier Galibert].
@@ -1014,3 +1014,4 @@ Taiko no Tatsujin 11 (T111001-NA-A) [f205v]
 - cpu/lr35902: Skip byte following STOP (0) opcode (fixes MT08644) [Vas Crabb].
 - spectrum_cass.xml: Fixed some stray punctuation [Vas Crabb].
 - cpu/es5510: Avoid calling DESCRIBE_INSTR when not verbose-logging (#11285) [Ryan Holtz].
+- Bump MAME 0.255 [Vas Crabb].

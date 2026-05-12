@@ -2,50 +2,7 @@
 ------------------------------------
 
 
-MAME Testers Bugs Fixed
-------------------------
-- 06793: [Graphics] (atari/jedi.cpp) jedi: Death Star graphics disappear and reappear a few times before it explodes (dink).
-- 06828: [Crash/Freeze] All sets in cv1k.cpp, coolridr: Emulator crashes if OSDPROCESSORS is set to 1 (CasualPokePlayer).
-- 06829: [Misc.] (atari/atarisy2.cpp) 720 and clones: Invalid accesses beyond the end of EEPROM data (hap).
-- 06830: [Misc.] (atari/starshp1.cpp) starshp1, starshpp: Invalid accesses drawing outside bitmap (hap).
-- 07576: [Crash/Freeze] (thepit/thepit.cpp) desertdn, zaryavos, dockman, suprmous: Tilemap viewer crashes emulator (hap).
-- 08058: [DIP/Input] (konami/hornet.cpp) nbapbp, nbapbpa: Third and fourth player inputs are not present (Windy Fairy).
-- 08258: [Crash/Freeze] (trs/coco12.cpp) coco2b: OS-9 fails to boot from a write-protected disk image (Tim Lindner).
-- 08296: [Known Issues/To-Do's] (namco/namcos22.cpp) ridgerac: Sunset effect is clipped incorrectly (hap).
-- 08329: [Graphics] (namco/namcos22.cpp) cybrcycc: Speedometer needle is invisible (hap).
-- 08413: [DIP/Input] (irem/m90.cpp) dicegame: Lives and cabinet type DIP switches are not labelled (giro-X).
-- 08437: [Graphics] (taito/crbaloon.cpp) crbaloon: First player 1 balloon positioned incorrectly in cocktail mode (Ivan Vangelista).
-- 08440: [Graphics] (technos/battlane.cpp) battlane: Sprites drawn incorrectly when screen flip is enabled (dink).
-- 08445: [Misc.] (nintendo/nes.cpp) famicom: Games using Bandai LZ93D50 cartridges fail to start (Ivan Vangelista).
-- 08454: [Flip Screen/Cocktail] (seta/seta.cpp) krzybowl: Graphics misaligned when screen flip is enabled (Ivan Vangelista).
-- 08457: [Flip Screen/Cocktail] (orca/espial.cpp) netwars: Graphics missing when screen flip is enabled (Ivan Vangelista).
-- 08464: [Core] (trs/trs80.cpp) trs80l2: Loader used by Spook House and Sledge of Rahmul fails with error (pnp2084).
-- 08470: [Graphics] (konami/xmen.cpp) xmen6p, xmen6pu: Some sprites are not drawn correctly (Ivan Vangelista).
-- 08471: [Crash/Freeze] (cinematronics/leland.cpp) wseries: Invalid accesses when updating DMA audio (Ivan Vangelista).
-- 08475: [Misc.] igs/* Sets using ics2115_device: Invalid accesses when looking up pan levels (hap).
-- 08476: [Crash/Freeze] (taito/qix.cpp) most taito/qix.cpp sets: Invalid accesses when updating video (Ivan Vangelista).
-- 08477: [Misc.] (exidy/starfire.cpp) fireone: Invalid accesses when updating video (hap).
-- 08478: [Misc.] (atari/atarifb.cpp) all atari/atarifb.cpp sets: Invalid accesses beyond the end of tilemap memory (hap).
-- 08480: [Crash/Freeze] (namco/namcos22.cpp) cybrcycc, raverace, ridgera2: Invalid accesses beyond the end of video memory (hap).
-- 08482: [Misc.] (midw8080/8080bw.cpp) vortex: Invalid accesses beyond the end of system RAM when updating video (hap).
-- 08484: [Misc.] (irem/m90.cpp) bomblord, dynablstb, dynablstb2, dynablstb3, dynablstb4: Invalid sprite memory accesses (hap).
-- 08485: [Misc.] (jaleco/bestleag.cpp) bestleag, bestleaw: Invalid sprite memory accesses (hap).
-- 08486: [Misc.] (atari/blstroid.cpp) all atari/blstroid.cpp sets: Invalid accesses beyond the end of tilemap memory (hap).
-- 08487: [Misc.] (jaleco/blueprnt.cpp) all jaleco/blueprnt.cpp sets: Invalid scroll memory accesses (hap).
-- 08489: [Misc.] (sega/calorie.cpp) calorie, calorieb: Invalid sprite memory accesses (hap).
-- 08493: [Misc.] (atari/copsnrob.cpp) copsnrob: Invalid accesses beyond the end of video memory (hap).
-- 08494: [Misc.] (konami/ironhors.cpp) all konami/ironhors.cpp sets: Invalid accesses beyond the end of sprite memory (hap).
-- 08495: [Misc.] (playmark/drtomy.cpp) drtomy: Invalid accesses beyond the end of sprite memory (hap).
-- 08496: [Misc.] (nichibutsu/gomoku.cpp) gomoku: Audio mixing buffer is too small (hap).
-- 08497: [Misc.] (midway/midyunit.cpp) hiimpact and clones, shimpact and clones: Invalid protection memory accesses (hap).
-- 08498: [Misc.] (misc/krokha.cpp) krokha: Invalid accesses drawing outside bitmap (hap).
-- 08499: [Crash/Freeze] (sord/m5.cpp) m5p_brno: Reading from invalid cartridge offsets (hap).
-- 08501: [Misc.] (playmark/sslam.cpp) all playmark/sslam.cpp sets: Invalid sprite memory accesses (hap).
-- 08507: [Media Support] (trs/trs80.cpp) trs80l2, trs80m3: DMK disk images containing FM tracks are unsupported (pnp2084).
-- 08521: [Graphics] (chess/tasc.cpp) tascr30: Numeric parameter handling in layouts is locale-sensitive (Vas Crabb).
-
-
-New working machines
+New Working Machines
 ---------------------
 Castlevania II: Simon's Quest (Tiger) [algestam, Sean Riddle]
 Elanco AgVision [Tim Lindner]
@@ -72,7 +29,7 @@ Toshiba HX-51I (MSX1, Italy, Spain) [openMSX]
 Victor HC-80 (MSX2, Japan) [openMSX]
 Yamaha SX-100 (MSX1, Japan) [openMSX]
 
-New working clones
+New Working Clones
 -------------------
 Alpine Surfer (World, AF2 Ver.A, set 2) [Guru]
 Bloxeed (Japan, earlier) (FD1094 317-0139) [Brian Troha, The Dumping Union]
@@ -127,7 +84,7 @@ Twins (older) [Jorge Silva]
 Yamaha CX5MIIB (MSX1, Italy) [openMSX]
 Yamaha CX7/128 (MSX2, Japan) [openMSX]
 
-Machines promoted to working
+Machines Promoted to Working
 -----------------------------
 Alpine Surfer (World, AF2 Ver.A, set 1) [hap, Guru]
 Bawareth Perfect MSX1 (MSX1, Middle East) [Wilbert Pol]
@@ -141,7 +98,7 @@ Toshiba HX-21 (MSX1, Japan) [Wilbert Pol]
 Toshiba HX-22 (MSX1, Japan) [Wilbert Pol]
 Tandy Radio Shack Videotex [Tim Lindner]
 
-Clones promoted to working
+Clones Promoted to Working
 ---------------------------
 The Crystal Maze (v1.3, Datapak) (MPU4 Video) [James Wallace]
 The Crystal Maze Team Challenge (v0.9, Datapak) (MPU4 Video) [James Wallace]
@@ -155,7 +112,7 @@ Sony HB-F1 (MSX2, Japan) [Wilbert Pol]
 Sony HB-F1II (MSX2, Japan) [Wilbert Pol]
 Sony HB-F9P (MSX2, Russian, prototype) [Wilbert Pol]
 
-New machines marked as NOT_WORKING
+New Machines Marked as NOT_WORKING
 -----------------------------------
 Bin Bin Bingo (Japan, terminal) [hammy, Porchy, nnap]
 El Circulo [jordigahan, Pikolo, ArcadeHacker, ClawGrip]
@@ -172,7 +129,7 @@ Yamaha DX7 Digital Programmable Algorithm Synthesizer [David Viens, R. Belmont]
 Yamaha DX9 Digital Programmable Algorithm Synthesizer [Anthony]
 Yamaha PSS-12 [Edward d-tech]
 
-New clones marked as NOT_WORKING
+New Clones Marked as NOT_WORKING
 ---------------------------------
 Cherry Master (bootleg, Game FB55 Ver.2) [Ioannis Bampoulas]
 Fantastic Car (Micro-87 hardware) [Eduardo Anay]
@@ -192,28 +149,28 @@ Silent Scope (ver JAA, Ver 1.00) [Windy Fairy]
 Silent Scope (ver JAB, Ver 1.20) [Windy Fairy]
 Silent Scope (ver AAD, Ver 1.33) [Windy Fairy]
 Silent Scope (ver UAC, Ver 1.30, GQ871 Voodoo 2 video board) [Windy Fairy]
-Silent Scope 2 : Dark Silhouette (ver UAB, Ver 1.01) [Windy Fairy]
-Silent Scope 2 : Dark Silhouette (ver UAB, Ver 1.01, GN715 Voodoo 1 video board) [Windy Fairy]
-Silent Scope 2 : Dark Silhouette (ver UAC, Ver 1.02) [Windy Fairy]
-Silent Scope 2 : Dark Silhouette (ver UAC, Ver 1.02, GN715 Voodoo 1 video board) [Windy Fairy]
-Silent Scope 2 : Dark Silhouette (ver UAD, Ver 1.03, GN715 Voodoo 1 video board) [Windy Fairy]
-Silent Scope 2 : Fatal Judgement (ver EAB, Ver 1.01) [Windy Fairy]
-Silent Scope 2 : Fatal Judgement (ver EAB, Ver 1.01, GN715 Voodoo 1 video board) [Windy Fairy]
-Silent Scope 2 : Fatal Judgement (ver EAC, Ver 1.02) [Windy Fairy]
-Silent Scope 2 : Fatal Judgement (ver EAC, Ver 1.02, GN715 Voodoo 1 video board) [Windy Fairy]
-Silent Scope 2 : Fatal Judgement (ver EAD, Ver 1.03, GN715 Voodoo 1 video board) [Windy Fairy]
-Silent Scope 2 : Innocent Sweeper (ver AAB, Ver 1.01) [Windy Fairy]
-Silent Scope 2 : Innocent Sweeper (ver AAB, Ver 1.01, GN715 Voodoo 1 video board) [Windy Fairy]
-Silent Scope 2 : Innocent Sweeper (ver AAC, Ver 1.02) [Windy Fairy]
-Silent Scope 2 : Innocent Sweeper (ver AAC, Ver 1.02, GN715 Voodoo 1 video board) [Windy Fairy]
-Silent Scope 2 : Innocent Sweeper (ver AAD, Ver 1.03) [Windy Fairy]
-Silent Scope 2 : Innocent Sweeper (ver AAD, Ver 1.03, GN715 Voodoo 1 video board) [Windy Fairy]
-Silent Scope 2 : Innocent Sweeper (ver JAB, Ver 1.01) [Windy Fairy]
-Silent Scope 2 : Innocent Sweeper (ver JAB, Ver 1.01, GN715 Voodoo 1 video board) [Windy Fairy]
-Silent Scope 2 : Innocent Sweeper (ver JAC, Ver 1.02) [Windy Fairy]
-Silent Scope 2 : Innocent Sweeper (ver JAC, Ver 1.02, GN715 Voodoo 1 video board) [Windy Fairy]
-Silent Scope 2 : Innocent Sweeper (ver JAD, Ver 1.03) [Windy Fairy]
-Silent Scope 2 : Innocent Sweeper (ver JAD, Ver 1.03, GN715 Voodoo 1 video board) [Windy Fairy]
+Silent Scope 2: Dark Silhouette (ver UAB, Ver 1.01) [Windy Fairy]
+Silent Scope 2: Dark Silhouette (ver UAB, Ver 1.01, GN715 Voodoo 1 video board) [Windy Fairy]
+Silent Scope 2: Dark Silhouette (ver UAC, Ver 1.02) [Windy Fairy]
+Silent Scope 2: Dark Silhouette (ver UAC, Ver 1.02, GN715 Voodoo 1 video board) [Windy Fairy]
+Silent Scope 2: Dark Silhouette (ver UAD, Ver 1.03, GN715 Voodoo 1 video board) [Windy Fairy]
+Silent Scope 2: Fatal Judgement (ver EAB, Ver 1.01) [Windy Fairy]
+Silent Scope 2: Fatal Judgement (ver EAB, Ver 1.01, GN715 Voodoo 1 video board) [Windy Fairy]
+Silent Scope 2: Fatal Judgement (ver EAC, Ver 1.02) [Windy Fairy]
+Silent Scope 2: Fatal Judgement (ver EAC, Ver 1.02, GN715 Voodoo 1 video board) [Windy Fairy]
+Silent Scope 2: Fatal Judgement (ver EAD, Ver 1.03, GN715 Voodoo 1 video board) [Windy Fairy]
+Silent Scope 2: Innocent Sweeper (ver AAB, Ver 1.01) [Windy Fairy]
+Silent Scope 2: Innocent Sweeper (ver AAB, Ver 1.01, GN715 Voodoo 1 video board) [Windy Fairy]
+Silent Scope 2: Innocent Sweeper (ver AAC, Ver 1.02) [Windy Fairy]
+Silent Scope 2: Innocent Sweeper (ver AAC, Ver 1.02, GN715 Voodoo 1 video board) [Windy Fairy]
+Silent Scope 2: Innocent Sweeper (ver AAD, Ver 1.03) [Windy Fairy]
+Silent Scope 2: Innocent Sweeper (ver AAD, Ver 1.03, GN715 Voodoo 1 video board) [Windy Fairy]
+Silent Scope 2: Innocent Sweeper (ver JAB, Ver 1.01) [Windy Fairy]
+Silent Scope 2: Innocent Sweeper (ver JAB, Ver 1.01, GN715 Voodoo 1 video board) [Windy Fairy]
+Silent Scope 2: Innocent Sweeper (ver JAC, Ver 1.02) [Windy Fairy]
+Silent Scope 2: Innocent Sweeper (ver JAC, Ver 1.02, GN715 Voodoo 1 video board) [Windy Fairy]
+Silent Scope 2: Innocent Sweeper (ver JAD, Ver 1.03) [Windy Fairy]
+Silent Scope 2: Innocent Sweeper (ver JAD, Ver 1.03, GN715 Voodoo 1 video board) [Windy Fairy]
 Super Real Magic (V6.3) [Ioannis Bampoulas]
 Teraburst (1998/02/25 ver HAA) [Windy Fairy]
 Teraburst (1998/02/25 ver JAA) [Windy Fairy]
@@ -221,60 +178,110 @@ Teraburst (1998/02/25 ver UAA) [Windy Fairy]
 Teraburst (1998/07/17 ver HEL) [Windy Fairy]
 Teraburst (1998/07/17 ver JEL) [Windy Fairy]
 
-New working software list additions
+New Working Software List Additions
 ------------------------------------
-a2600:
+a2600.xml:
   Shootin' Gallery (PAL, prototype) [Buckaroo]
   Turbo (NTSC, prototype) [Rom Hunter]
-a7800:
+a7800.xml:
   Worm! [GroovyBee]
   Armor Attack II, Bentley Bear's Crystal Quest (NTSC), Crazy Otto (NTSC, Ms. Pac-Man hack), Crazy Otto (PAL, Ms. Pac-Man hack), Froggie, K.C. Munchkin!, Rip-Off (NTSC), Rip-Off (PAL), Scramble (NTSC) [Robert Tuccitto]
-apple2gs_flop_orig: Canal Meurtre [Antoine Vignau, A-Noid]
-gameboy:
+apple2gs_flop_orig.xml:
+  Canal Meurtre [Antoine Vignau, A-Noid]
+gameboy.xml:
   Dragon Ball Z English [lana_chan_, taizou]
   Altered Space - A 3-D Alien Adventure (USA, prototype, 19910215) [SteelGeneral, Forest of Illusion]
-gamecom: Castlevania - Symphony of the Night (prototype) [anonymous, diskman.com, Hidden Palace]
-gbcolor:
-  Shéngu? Dìguó zh? Èmó Chéng (China) [AprkMk10, taizou]
+gamecom.xml:
+  Castlevania - Symphony of the Night (prototype) [anonymous, diskman.com, Hidden Palace]
+gbcolor.xml:
+  Shénguǐ Dìguó zhī Èmó Chéng Chéng (China) [AprkMk10, taizou]
   Fantastic Simulated Battle (China) [BigFred, taizou]
   Digimon Adventure 2001 [lana_chan_, taizou]
-  Ch?ojí Y?nsù Xi?ozi ? - Super Sonik (China) [max6464646464, taizou]
+  Chāojí Yīnsù Xiǎozi - Super Sonik (China) [max6464646464, taizou]
   Matel Gear II (China) [NewRisingSun, taizou]
   Capcom Vs. SNK: Millennium Fight 2001 (China) [Pepper9801, taizou]
   Digimon 2 (China) [Robyn A1200, taizou]
-  Shùm? Bào Lóng: K?udài B?n (China) [RocknRami, taizou]
+  Shùmǎ Bào Lóng: Kǒudài Bǎn (China) [RocknRami, taizou]
   Pokémon Vision Jade [Sanqui, taizou]
   Digimon 02 4 (China), Digimon Adventure 6 2002, Digimon Pocket (China), Dragon Ball Z III 2002 Fighting, Garou: Mark of the Wolves 2001, Harry Potter (China, English), Harry Potter 3 (China), Mènghuàn Món? Zhàn ? (China), Mó Jiè Chuánshu? (China), Mùch?ng Wùy? 6 GB (China), Pokémon Diamond: Special Pikachu Edition (China), Pokémon Jade Version, Pokémon Jade: Special Pikachu Edition (China), Pokémon: Mewtwo Strikes Back (China), Street Fighter Zero 4 (China) [taizou]
-ibm5170:
+ibm5170.xml:
   Best of the Best: Championship Karate (Spain, PC Games release), The Humans: Insult to Injury (Spain, PC Games release) [AbandonSocios]
   Fleet Defender, RoboSport (3.5" DD), RoboSport (5.25" HD), The Humans: Insult to Injury (France) [The Good Old Days]
-megadriv: Segapede (USA, prototype) [Craig Stitt, Hidden Palace]
-msx1_cart:
+megadriv.xml:
+  Segapede (USA, prototype) [Craig Stitt, Hidden Palace]
+msx1_cart.xml:
   HOT-LOGO (Brazil, version 1.1), HOT-LOGO (Brazil, version 1.2), MSX-Logo (Argentina), MSX-Logo (Poland), MSX-Logo (Spain), MSX-Logo (UK) [Arnaud de Klerk]
   CDX-2 + 5.25" DSDD floppy drive (Brazil), DDX + 5.25" DSDD floppy drive (Brazil, v3.0), DDX + 5.25" DSDD floppy drive (Brazil, v3.0d), DPF-550 Controller + 5.25" SSDD floppy drive (Argentina), DPF-550 Controller + 5.25" SSDD floppy drive (Belgium/Netherlands), EC-700 Word Processor (EC-701 + EC-702) (Japan), FD-051 Controller + FD-05 3.5" DSDD floppy drive, HB-3600 Controller + HB-6000 5.25" DSDD floppy drive (Brazil), HBD-20W (Floppy controller + 3.5" DSDD floppy drive) (Japan), HBD-50 (Floppy controller + 3.5" SSDD floppy drive, SNYJX121), HBD-F1 (Floppy controller + 3.5" DSDD floppy drive) (Japan), HX-F101PE Controller + 3.5" SSDD floppy drive (Europe), MFD-001 (Controller + enclosure with 1 5.25" DSDD floppy drive) (Europe), ML-30DC Controller + ML-30FD enclosure with 1 3.5" DSDD floppy drive (Japan), NMS-1200 Floppy controller + 3.5" DSDD floppy drive (Europe, v1.04), NMS-1200 Floppy controller + 3.5" DSDD floppy drive (Europe, v1.06), Toshiba Kanji ROM Cartridge HX-M200 (Japan) [openMSX]
-msx1_cass:
+msx1_cass.xml:
   Aprende astronomía con El Sol (Spain), Aprende astronomía con la Luna (Spain), Aprende astronomía con la Tierra en el espacio (Spain), Aprende astronomía con los planetas (Spain), Aprendiendo Inglés 1 - en el campo y en el castillo (Spain), Cocos (Spain), Contabilidad 2 (Spain, alt 2), Contabilidad Personal (Spain), Data MSX - Issue 01 (Spain), Data MSX - Issue 04 (Spain), Data MSX - Issue 09 (Spain), Dog Fighter (Spain), Floppy el Pregunton (Spain), Frankie (Spain), Freddy Hardest (UK, Italy), Generador de Sprites (Spain), Golf (Spain), Juegos de Inteligencia (Spain), Juegue con su MSX - Issue 02 - Alpha Centauro (Spain), Juegue con su MSX - Issue 07 - Robber (Spain), Lenguaje 7º E.G.B. (Spain), Lenguaje 8º E.G.B. (Spain), Lenguaje Maquina - Issue unknown (Spain), La Liebre y la Tortuga (Spain), M-47 Combate de blindados (Spain), Mad-Fox (Spain), MSX Games Vol 05 - Patrullera XH-63 (Spain), MSX Games Vol 10 - Invasores (Spain), MSX Soft Magazine - Issue 08 - Rana Sideral (Spain, alt), MSX Soft Magazine - Issue 09 - Cazador de tiburones (Spain), MSX Software - Issue 04 (Spain), MSX Software - Issue 16 - Hungry Harry (Spain), Música en Juego I - Notas (Spain), Panic Kong (Spain), Perspective (Japan, v1.1), PHCalc (Spain), Quinielas y Reducciones (Spain), Sky Hawk (Spain), Snackbar + Mouse Jump (Spain), Soccer Boss (UK), Soft-MSX 1 (Spain), Soft-MSX 3 (Spain), Star Seeker - Solar System (Spain), Stars MSX 1 (Spain), Stars MSX 2 (Spain), Stars MSX 4 (Spain), Viaje Espacial (Spain), Who Dares Wins 2 (UK, Italy) [msxcassettes]
-nes:
+nes.xml:
   The Cheetahmen: The Creation (USA) [Magic Jewelry Nerd]
   8-bit Xmas 2022 [retroUSB]
-spectrum_cass:
+spectrum_cass.xml:
   King Arthur [Luís Rato, Planeta Sinclair]
   Tremor (pirate) [Planeta Sinclair]
   Action Pack - Lightgun Games, Action Pack - Lightgun Games (Spanish), Action Pack - Lightgun Games (alt), After The War (alt), After The War (small case), Agent X (Dro Soft), Agent X II (Dro Soft), FORTH (Microbyte), Freddy Hardest (Imagine), The Games - Summer Edition (Erbe), H.A.T.E. - Hostile All Terrain Encounter (Erbe), Hundra (Dinamic), Ice Breaker, Mr. Shaw's Double Whammy, Nonamed (Spanish, medium case, alt), Nonamed (Spanish, small case - black spine), Spirits, Starstrike II, X-Out (Erbe) [spectrumcomputing.co.uk]
   Fantasia Diamond (set 4, VTR, French), Nosferatu: Quest for the Vampire (alt), Nuclear Reactor, Starship Mulvaney [Steven Brown, Planeta Sinclair]
-videopac: Bastion (Europe, prototype), Himalaya (Europe, prototype), Terrahawks (Europe, prototype) [Janzl]
+videopac.xml:
+ Bastion (Europe, prototype), Himalaya (Europe, prototype), Terrahawks (Europe, prototype) [Janzl]
 
-Software list items promoted to working
+Software List Items Promoted to Working
 ----------------------------------------
-a800:
+a800.xml:
   Satan's Hollow (Unreleased) [AJR]
   Alf in the Color Caves [Angelo Salese]
-gbcolor: Shùm? Bào Lóng 02 4 (China), Shùm? Bào Lóng 3 Shu?j?ng B?n (China) [Vas Crabb]
+gbcolor.xml:
+  Shùm? Bào Lóng 02 4 (China), Shùm? Bào Lóng 3 Shu?j?ng B?n (China) [Vas Crabb]
 
-New NOT_WORKING software list additions
+New NOT_WORKING Software List Additions
 ----------------------------------------
-msx1_cart: FD-03 Controller + 3.5" DSDD floppy drive v3.5, FD-03 Controller + 3.5" DSDD floppy drive v3.8 [openMSX]
-n64: SimCopter 64 (prototype 19970616) [VGHF]
+msx1_cart.xml:
+  FD-03 Controller + 3.5" DSDD floppy drive v3.5, FD-03 Controller + 3.5" DSDD floppy drive v3.8 [openMSX]
+n64.xml:
+  SimCopter 64 (prototype 19970616) [VGHF]
+
+
+MAME Testers Bugs Fixed (39):
+-----------------------------
+- 06793: [Graphics] (atari/jedi.cpp) jedi: Death Star graphics disappear and reappear a few times before it explodes (dink)
+- 06828: [Crash/Freeze] All sets in cv1k.cpp, coolridr: Emulator crashes if OSDPROCESSORS is set to 1 (CasualPokePlayer)
+- 06829: [Misc.] (atari/atarisy2.cpp) 720 and clones: Invalid accesses beyond the end of EEPROM data (hap)
+- 06830: [Misc.] (atari/starshp1.cpp) starshp1, starshpp: Invalid accesses drawing outside bitmap (hap)
+- 07576: [Crash/Freeze] (thepit/thepit.cpp) desertdn, zaryavos, dockman, suprmous: Tilemap viewer crashes emulator (hap)
+- 08058: [DIP/Input] (konami/hornet.cpp) nbapbp, nbapbpa: Third and fourth player inputs are not present (Windy Fairy)
+- 08258: [Crash/Freeze] (trs/coco12.cpp) coco2b: OS-9 fails to boot from a write-protected disk image (Tim Lindner)
+- 08296: [Known Issues/To-Do's] (namco/namcos22.cpp) ridgerac: Sunset effect is clipped incorrectly (hap)
+- 08329: [Graphics] (namco/namcos22.cpp) cybrcycc: Speedometer needle is invisible (hap)
+- 08413: [DIP/Input] (irem/m90.cpp) dicegame: Lives and cabinet type DIP switches are not labelled (giro-X)
+- 08437: [Graphics] (taito/crbaloon.cpp) crbaloon: First player 1 balloon positioned incorrectly in cocktail mode (Ivan Vangelista)
+- 08440: [Graphics] (technos/battlane.cpp) battlane: Sprites drawn incorrectly when screen flip is enabled (dink)
+- 08445: [Misc.] (nintendo/nes.cpp) famicom: Games using Bandai LZ93D50 cartridges fail to start (Ivan Vangelista)
+- 08454: [Flip Screen/Cocktail] (seta/seta.cpp) krzybowl: Graphics misaligned when screen flip is enabled (Ivan Vangelista)
+- 08457: [Flip Screen/Cocktail] (orca/espial.cpp) netwars: Graphics missing when screen flip is enabled (Ivan Vangelista)
+- 08464: [Core] (trs/trs80.cpp) trs80l2: Loader used by Spook House and Sledge of Rahmul fails with error (pnp2084)
+- 08470: [Graphics] (konami/xmen.cpp) xmen6p, xmen6pu: Some sprites are not drawn correctly (Ivan Vangelista)
+- 08471: [Crash/Freeze] (cinematronics/leland.cpp) wseries: Invalid accesses when updating DMA audio (Ivan Vangelista)
+- 08475: [Misc.] igs/* Sets using ics2115_device: Invalid accesses when looking up pan levels (hap)
+- 08476: [Crash/Freeze] (taito/qix.cpp) most taito/qix.cpp sets: Invalid accesses when updating video (Ivan Vangelista)
+- 08477: [Misc.] (exidy/starfire.cpp) fireone: Invalid accesses when updating video (hap)
+- 08478: [Misc.] (atari/atarifb.cpp) all atari/atarifb.cpp sets: Invalid accesses beyond the end of tilemap memory (hap)
+- 08480: [Crash/Freeze] (namco/namcos22.cpp) cybrcycc, raverace, ridgera2: Invalid accesses beyond the end of video memory (hap)
+- 08482: [Misc.] (midw8080/8080bw.cpp) vortex: Invalid accesses beyond the end of system RAM when updating video (hap)
+- 08484: [Misc.] (irem/m90.cpp) bomblord, dynablstb, dynablstb2, dynablstb3, dynablstb4: Invalid sprite memory accesses (hap)
+- 08485: [Misc.] (jaleco/bestleag.cpp) bestleag, bestleaw: Invalid sprite memory accesses (hap)
+- 08486: [Misc.] (atari/blstroid.cpp) all atari/blstroid.cpp sets: Invalid accesses beyond the end of tilemap memory (hap)
+- 08487: [Misc.] (jaleco/blueprnt.cpp) all jaleco/blueprnt.cpp sets: Invalid scroll memory accesses (hap)
+- 08489: [Misc.] (sega/calorie.cpp) calorie, calorieb: Invalid sprite memory accesses (hap)
+- 08493: [Misc.] (atari/copsnrob.cpp) copsnrob: Invalid accesses beyond the end of video memory (hap)
+- 08494: [Misc.] (konami/ironhors.cpp) all konami/ironhors.cpp sets: Invalid accesses beyond the end of sprite memory (hap)
+- 08495: [Misc.] (playmark/drtomy.cpp) drtomy: Invalid accesses beyond the end of sprite memory (hap)
+- 08496: [Misc.] (nichibutsu/gomoku.cpp) gomoku: Audio mixing buffer is too small (hap)
+- 08497: [Misc.] (midway/midyunit.cpp) hiimpact and clones, shimpact and clones: Invalid protection memory accesses (hap)
+- 08498: [Misc.] (misc/krokha.cpp) krokha: Invalid accesses drawing outside bitmap (hap)
+- 08499: [Crash/Freeze] (sord/m5.cpp) m5p_brno: Reading from invalid cartridge offsets (hap)
+- 08501: [Misc.] (playmark/sslam.cpp) all playmark/sslam.cpp sets: Invalid sprite memory accesses (hap)
+- 08507: [Media Support] (trs/trs80.cpp) trs80l2, trs80m3: DMK disk images containing FM tracks are unsupported (pnp2084)
+- 08521: [Graphics] (chess/tasc.cpp) tascr30: Numeric parameter handling in layouts is locale-sensitive (Vas Crabb)
 
 
 Translations added or modified
@@ -1622,20 +1629,12 @@ Shootin' Gallery (PAL, prototype) [Buckaroo]
 
 - New working software list additions (apple2gs_flop_orig.xml) (#10456) [A-Noid33]
 
-* New working software list additions (apple2gs_flop_orig.xml)
----------------------------------------------------------------
-Canal Meurtre (Brutal Deluxe) [Antoine Vignau, A-Noid]
-
 - msx.cpp: Made the general purpose ports (joystick/mouse) a slot device (#10579) [wilbertpol]
   * Also moved msx slot devices to subfolders.
 
 - nintendo/vsnes.cpp: Added missing DIP switch settings for vsmahjng (#10587) [kmg]
 
 - yamaha/ymdx9.cpp: Added skeleton driver for Yamaha DX9 (#10586) [Anthony]
-
-New machines marked as not working
------------------------------------
-Yamaha DX9 Digital Programmable Algorithm Synthesizer [Anthony]
 
 - Update 3rdparty/ymfm to latest (#10583) [Aaron Giles]
   * Fixes uninitialized member causing slight jitter in timing (GitHub #10414).
@@ -1650,10 +1649,6 @@ Yamaha DX9 Digital Programmable Algorithm Synthesizer [Anthony]
   * Also use actual configured system clock for serial timer when selected rather than hard-coded number.
 
 - midway/williams.cpp: dumped PROMs for defenderj [Guru]
-
-New machines added as NOT_WORKING
-----------------------------------
-Yamaha DX-7 Digital Programmable Algorithm Synthesizer [David Viens, R. Belmont]
 
 - ymdx7: fix BIOS selection [R. Belmont].
 
@@ -1676,14 +1671,6 @@ Yamaha DX-7 Digital Programmable Algorithm Synthesizer [David Viens, R. Belmont]
 
 - docs: Fixed a markup error [Vas Crabb].
 
-New working machines
----------------------
-Gargoyles: Night Flight (Tiger) [hap, Sean Riddle]
-
-New working clones
--------------------
-Superman (Tiger) [hap, Sean Riddle]
-
 - namcos22: improve s22 draw_direct_poly [hap]
 
 - More ROM labels updates [Brian Troha]
@@ -1692,45 +1679,13 @@ Superman (Tiger) [hap, Sean Riddle]
 
 - philips/cdi.cpp: Added support for Italian version of Quizard 1 (#10598) [Ryan Holtz, f205v, TeamEurope]
 
-New working clones
--------------------
-Quizard (v1.8, Italian, i8751 IT 11 I2) [Ryan Holtz, f205v, TeamEurope]
-Quizard (v1.7, Italian, i8751 IT 11 I2) [Ryan Holtz, f205v, TeamEurope]
-Quizard (v1.2, Italian, i8751 IT 11 I2) [Ryan Holtz, f205v, TeamEurope]
-Quizard (v1.0, Italian, i8751 IT 11 I2) [Ryan Holtz, f205v, TeamEurope]
-
-Machines promoted to working
------------------------------
-Quizard 3 (v3.4, German, i8751 DE 132 D3) [Ryan Holtz]
-Quizard 4 Rainbow (v4.2, German, i8751 DE 142 D3) [Ryan Holtz]
-
-Clones promoted to working
----------------------------
-Quizard 3 (v3.4, German, i8751 DE 132 A1) [Ryan Holtz]
-Quizard 3 (v3.2, German, i8751 DE 132 D3) [Ryan Holtz]
-Quizard 4 Rainbow (v4.2, Czech, i8751 TS142 CZ1) [Ryan Holtz]
-Quizard 4 Rainbow (v4.1, German, i8751 DE 142 D3) [Ryan Holtz]
-Quizard 4 Rainbow (v4.0, German, i8751 DE 142 D3) [Ryan Holtz]
-
 - nes.xml: Add the Yuletide homebrew in prep for MAMEmas! (#10602) [kmg]
 
-New working software list additions
-------------------------------------
-8-bit Xmas 2022 [retroUSB]
-
 - nes.xml: Add the Yuletide homebrew in prep for MAMEmas! (#10602) [kmg]
-
-New working software list additions (nes.xml)
-----------------------------------------------
-8-bit Xmas 2022 [retroUSB]
 
 - bus/msx/ctrl: Added Micomsoft Libble Rabble Joypad [Vas Crabb].
 
 - megadriv.xml: Added an unreleased prototype (#10601) [kmg]
-
-New working software list additions (megadriv.xml)
----------------------------------------------------
-Segapede (USA, prototype) [Craig Stitt, Hidden Palace]
 
 - namco/20pacgal.cpp: Better values for unknown SERVICE and EEPROMIN port bits (#10600) [pdaderko]
   * Fixes bug in 25pacmano where after 64 plays, copy protection prevents game from starting (tracked at address 0x3E-0x3F in
@@ -1739,28 +1694,21 @@ Segapede (USA, prototype) [Craig Stitt, Hidden Palace]
   * Ports of 25pacman left as-is, no hardware to verify with.
 
 - bus/msx/ctrl: Use A/B button labels for FM Towns Pad [Vas Crabb].
-
 - bus/msx/ctrl: Added FM Towns Marty Pad [Vas Crabb].
-  * Fujistsu/fmtowns.cpp: Made FM Towns Marty have a single Marty Pad plugged in by default.
-
-- namcos22: possible overflow on texture bank (shouldnt happen) [hap]
-
-- konami/hornet.cpp: Fixed 4 player cabinet type in NBA Play By Play (#10591) [987123879113]
-
+- fujistsu/fmtowns.cpp: Made FM Towns Marty have a single Marty Pad plugged in by default [Vas Crabb].
+- namcos22: Possible overflow on texture bank (shouldnt happen) [hap].
+- konami/hornet.cpp: Fixed 4 player cabinet type in NBA Play By Play (#10591) [987123879113].
 - konami/windy2.cpp: Added Konami Windy 2 JVS I/O device [987123879113].
-
-- Revert "Make numbers signed in debugger where it matters" [Vas Crabb]
-  * This reverts commit 922d5b3c81459173ce99970dca0e44825f0a4494.
-  * This broke an important use case with MIPS3 address comparisons no longer behaving intutively.
-  * It's also another case of a debugger change that wasn't followed through properly, with absolutely no attempt to update the internal debugger help or the documentation for the web site.
+- Revert "Make numbers signed in debugger where it matters" [Vas Crabb]:
+  * This reverts commit 922d5b3c81459173ce99970dca0e44825f0a4494;
+  * This broke an important use case with MIPS3 address comparisons no longer behaving intutively;
+  * It's also another case of a debugger change that wasn't followed through properly, with absolutely no attempt to update the internal debugger help or the documentation for the web site;
   * I realise signed maths woud be a useful feature, for the debugger, but it needs to be done in a way that doesn't break important use cases.
-
-- srcclean in preparation for 0.250 branch [Vas Crabb]
-
+- srcclean in preparation for 0.250 branch [Vas Crabb].
 - util/path.h: Fixed narrowing warning from older versions of clang [Vas Crabb].
-
 - Metadata corrections [Vas Crabb].
 - scmp: Fix unreliable order of execution in JMP instruction [AJR].
 - emu/rendlay.cpp: Fixed locale-sensitive number handling (fixes MT08521) [Vas Crabb].
 - misc/cocoloco.cpp: Corrected DIP switch name Cocoloco typo (#10607) [kmg].
 - barcrest/mpu4.cpp: Fixed regression for games using sampled sound [James Wallace].
+- Bump MAME 0.250 [Vas Crabb].
