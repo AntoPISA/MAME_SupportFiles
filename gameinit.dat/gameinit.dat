@@ -5772,7 +5772,7 @@ $end
 $info=laser3k
 $mame
 TIPS:
-An Apple II clone that boots into Basic.
+An Apple II clone. Press [ Ctrl ][ F12 ] to get a prompt.
 
 To save a file: SAVE
 
@@ -8183,6 +8183,20 @@ SOURCE:
 mameinfo.dat
 
 $end
+$info=pc1000,ordisava,misterx
+$mame
+TIPS:
+At start, it says SELECT ACTIVITY, but there's nothing to see, because you need to press a button. Use the tab menu to look at the Keyboards Assignments to see the list of choices.
+
+The keys are set up wrongly: if Enter doesn't work use backslash to Enter.
+
+$end
+$info=pc2000,pc2000s,gl2000,gl2000p,gl3000s,gl4000,gl4004
+$mame
+TIPS:
+At start, it says SELECT ACTIVITY, but there's nothing to see, because you need to press a button. Use the tab menu to look at the Keyboards Assignments to see the extensive list of choices.
+
+$end
 $info=pc6001,pc6601
 $mame
 TIPS:
@@ -8402,6 +8416,12 @@ U
 Q
 
 In practice, the I and R commands produce an error, while all disk commands are directed to tape. The F command lists the files on a tape.
+
+$end
+$info=pcscolor,snotec,snotecex,snotecu,snotecug,snotecut
+$mame
+TIPS:
+The default keyboard assignments are incorrect. Use the ']' key for Enter.
 
 $end
 $info=pda600
