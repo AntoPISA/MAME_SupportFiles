@@ -2454,7 +2454,7 @@ To load a quickload "comx" file:
 
 * Start the emulation and press Enter to get the Basic prompt.
 
-* Use the File Manager, or Media menu (MAMEUI) to load a COMX file.
+* Use the Media Control, or Media menu (MAMEUI) to load a COMX file.
 
 * Back at the Basic prompt, type RUN.
 
@@ -2945,7 +2945,7 @@ $end
 $info=ddr2mc
 $mame
 INITIALIZATION:
-When first run, it will say INCORRECT SECURITY CASSETTE. In the DIP switches, change the "Start Up Device" to "CD-ROM Drive". Do not Reset, Esc instead. Go to File Manager, where it says "cdrom" change to "install". Do not Reset, Esc instead until the menu is gone. Now hit F3. It says to push Test Button, so press F2. When it completes, in the DIP Switches, change "Start Up Device" to "Flash ROM", and choose Reset System. After wasting more time, it will eventually start.
+When first run, it will say INCORRECT SECURITY CASSETTE. In the DIP switches, change the "Start Up Device" to "CD-ROM Drive". Do not Reset, Esc instead. Go to Media Control, where it says "cdrom" change to "install". Do not Reset, Esc instead until the menu is gone. Now hit F3. It says to push Test Button, so press F2. When it completes, in the DIP Switches, change "Start Up Device" to "Flash ROM", and choose Reset System. After wasting more time, it will eventually start.
 
 $end
 $info=ddragon
@@ -7497,6 +7497,12 @@ Basic programs give a File Mode error.
 Many others give a Loading Error.
 
 $end
+$info=mz5500
+$mame
+TIPS:
+It can boot floppy disks - but the keyboard is not emulated.
+
+$end
 $info=mz700
 $mame
 TIPS:
@@ -8189,6 +8195,12 @@ TIPS:
 At start, it says SELECT ACTIVITY, but there's nothing to see, because you need to press a button. Use the tab menu to look at the Keyboards Assignments to see the list of choices.
 
 The keys are set up wrongly: if Enter doesn't work use backslash to Enter.
+
+$end
+$info=pc1403,pc1403h
+$mame
+TIPS:
+If the BUSY light keeps flashing, do a soft rest (F3). It may still flash intermittently, but the system will work.
 
 $end
 $info=pc2000,pc2000s,gl2000,gl2000p,gl3000s,gl4000,gl4004
@@ -9192,6 +9204,16 @@ $mame
 INITIALIZATION:
 Cassette start address is always 1000. The end address must be entered into 13DC/DD (little-endian).
 Then press W to save. To load, press L. If it says r at the end, it indicates a bad checksum.
+
+$end
+$info=profi
+$mame
+TIPS:
+At the intro screen, press 8 and 9 to choose, 0 to activate.
+
+"RAM MODE" switches between 48k and 128k. "IN STS" seems to be the same as "IN BASIC".
+
+In Basic, SAVE "x" to save a cassette, LOAD "" to load.
 
 $end
 $info=propcycl
@@ -10205,8 +10227,10 @@ mameinfo.dat
 $end
 $info=shine
 $mame
-INITIALIZATION:
-The commands to save and load tapes are SAVE and LOAD, but they require arguments of unknown format.
+TIPS:
+There's next to nothing known about this unique machine. Errors are all numeric, therefore giving no clue as to what the issue is.
+
+First thing to do is to enter "CALL-20480" and it responds with "BASIC PLUS". Now you can save a tape with CSAVE"x", and load a tape with CLOAD. There's also a monitor program, accessible with MONITOR.
 
 $end
 $info=shngmtkbg
@@ -10483,7 +10507,7 @@ Make sure all keyboards are enabled.
 
 System Setup (to play games etc).
 - In the Dipswitches (not the Configuration), turn cursor flashing OFF.
-- Loading via wav files works, so load a tape image in the file manager
+- Loading via wav files works, so load a tape image in the Media Control
 - In UPPER CASE, enter XE press enter, cassette will load.
 - At the end, the program will start by itself.
 - When it says use 2,4,6,8 keys, you can use the keyboard arrow keys.
@@ -10658,7 +10682,7 @@ TIPS:
 At start of each ball, press Z to enable the playfield.
 
 $end
-$info=spec128,specpl2a,specpl3e,spectrum,atm,atmtb2,atmtb2plus,chloe,pent1024,bestzx,kay1024,profi,quorum,scorpiongmx,scorpio,scorpiontb,hc128,specpls2,tbblue,specpls3,sp3e8bit,sp3eata,sp3ezcf,byte,bk08,blitzs,cip01,cip03,cobrasp,cobra80,didakt90,dgama87,dgama88,dgama89,didaktk,didakm91,didakm92,didakm93,hc2000,hc85,hc88,hc90,hc91,inves,jet,compani1,quorum48,magic6,mistrum,orizon,santaka2,sintez2,spektrbk,tk90x,tk95,zvezda,spec80k,specide,tc2048,uk2086
+$info=spec128,specpl2a,specpl3e,spectrum,atm,atmtb2,atmtb2plus,chloe,pent1024,kay1024,scorpiongmx,scorpio,scorpiontb,hc128,specpls2,tbblue,specpls3,sp3e8bit,sp3eata,sp3ezcf,byte,bk08,blitzs,cip01,cip03,didakt90,dgama87,dgama88,dgama89,didaktk,didakm91,didakm92,didakm93,hc2000,hc85,hc90,hc91,inves,jet,compani1,mistrum,orizon,santaka2,sintez2,spektrbk,tk90x,tk95,zvezda,spec80k,specide,tc2048,uk2086
 $mame
 TIPS:
 Sinclair Spectrum, Scorpion, ATM
