@@ -4289,11 +4289,31 @@ $end
 $info=galeb
 $mame
 TIPS:
-First thing to do is Ctrl-A for capslock, since UPPER case is required.
+Instructions for using MONITOR
 
-Ctrl-B takes you into Basic. Not known how to quit.
+A NNNN - miniassembler
+C NNNNMMMM - gives the sum of bytes from memory from NNNN to MMMM
+E NNNNMMMM - display memory contents from NNNN to MMMM
+F NNNNMMMMVV - write byte VV to memory from NNNN to MMMM
+L x  - load file x from cassette. If x not specified, load first file found.
+M NNNN - change memory location NNNN
+P aaaabbbbcccc - unknown command - displays what appears to be S-records. Example: P C000D000D000
+Q DDDDNNNNMMMM - copy memory from NNNN to MMMM to DDDD
+S nnnn - unknown command
+T nnnn mmmm - unknown command
+U NNNN - call machine program from address NNNN
+X NNNN - disassembler
 
-Ctrl-G turns on keyclick.
+Control keys
+
+CTRL+B call BASIC (from MONITOR)
+CTRL+A switch to upper/lower case
+CTRL+L clear screen
+CTRL+G turn on/off keypress beep
+
+SOURCE: https://web.archive.org/web/20120126103818/http://retro.foing-nova.hr/galebemu.htm (translated, adjusted, extras appended)
+
+So, since UPPER case is required, do Ctrl-A for capslock.
 
 To save a tape: SAVE (while in Basic)
 
@@ -5032,6 +5052,12 @@ In Basic-G:
 - To save a tape: MSAVE
 
 When you want to load a cartridge, you need to also load the matching slot item.
+
+$end
+$info=iris1400
+$mame
+TIPS:
+Enter h to get help
 
 $end
 $info=iris3130,ms68k,ncd16,ncd19
@@ -7891,14 +7917,9 @@ SOURCE:
 mameinfo.dat
 
 $end
-$info=orao103
+$info=orao,orao103
 $mame
-INITIALIZATION:
-ORAO
-====
-
-Said to be compatible with GALEB tapes.
-
+TIPS:
 Use orao103 - it's the only one that works.
 
 To start Basic: BC
@@ -9876,10 +9897,12 @@ To save a tape: SAVE
 To load a tape: LOAD
 
 $end
-$info=saturn
+$info=saturn,saturneu,saturnkr,saturnjp,hisaturn,vsaturn
 $mame
 TIPS:
 The use of a ROM CARTRIDGE (BIN without CUE) does not work.
+
+On the setup screens, use the arrows to choose the bottom-right choice and press [ Ctrl ].
 
 $end
 $info=savia84
@@ -10055,19 +10078,6 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
-$info=segaai
-$mame
-INITIALIZATION:
-SEGA AI
-=======
-
-Not really sure what the point of this device is.
-
-The software consists of music flac files which the computer will play.
-
-BUT, the files can be played in any audio player such as WMP - no need for emulation.
-
-$end
 $info=segacd,segacd2
 $mame
 INITIALIZATION:
@@ -10084,7 +10094,7 @@ When the game starts up, when it says to press Start, press 1.
 $end
 $info=selz80
 $mame
-INITIALIZATION:
+TIPS:
 Test sequence: Press -, enter an address, press = to show contents, press
 up/down-arrow to cycle through addresses.
 
@@ -10160,7 +10170,7 @@ http://wiki.mamedev.org/index.php/FAQ:Games
 $end
 $info=sg1000
 $mame
-INITIALIZATION:
+TIPS:
 You can get sc3000 software and a cassette port by installing sk1100 into the sgexp slot.
 
 However, no sc3000 software (including Basic) will work, it just gives a black screen with beeping.
@@ -10170,7 +10180,7 @@ Therefore, there's no way to load any cassettes.
 $end
 $info=sg1000m2,sc3000
 $mame
-INITIALIZATION:
+TIPS:
 To use cassettes, you must load "basic3" or "basic3e" (don't use "basic2" as it gives only 2k of free memory).
 
 To save a tape: SAVE"x"
@@ -10298,7 +10308,6 @@ mameinfo.dat
 $end
 $info=silkworm
 $mame
-INITIALIZATION:
 TIPs:
 On startup, press the Player 2 start button [ 2 ] to enter test mode.
 
@@ -10992,10 +11001,16 @@ mameinfo.dat
 $end
 $info=svi318,svi328,svi318n,svi328n
 $mame
-INITIALIZATION:
+TIPS:
 To save a tape: CSAVE"x"
 
 To load a tape: CLOAD or RUN"CAS:"
+
+$end
+$info=svmu
+$mame
+INITIALIZATION:
+Press [ Ctrl ] 5 times. Press [ Left ] to highlight "Yes". Press [ Ctrl ]. The game you loaded is detected, but seems it cannot be started.
 
 $end
 $info=sweetl2_5,sweetl2_6,sweetl2_7,sweetl2_8,sweetl2_9,sweetl2_10,sweetl2_11,sweetl2_12
