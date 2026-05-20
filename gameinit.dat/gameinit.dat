@@ -10832,10 +10832,65 @@ INITIALIZATION:
 Make sure to go into the Input Settings and enable all keyboards.
 
 $end
+$info=sprachmg
+$mame
+TIPS:
+It requires a speech cartridge from the software list, otherwise you'll get ERROR15 at start. After fixing that, if it doesn't say CLEAR! at start, click these buttons one at a time: CLR EX MODE 1
+
+To compose a manual message, click these buttons one at a time, and wait for a response after each one: INP 0 1 0 0 0 then the numbers you want (it will speak each one), then terminate the message with the + button. The special buttons : and / will say Achtung and Trennung.
+
+To send your message, press STA to send morse code. The special words cause a long series of beeps so just wait patiently for it say END on the display.
+
+Meaning of the buttons (meanings change depending on operation in progress):
+0/NO	Zero, or NO
+1/YES	One, or YES
+2/·	Two, or Dot (morse)
+3/—	Three, or Dash (morse)
+4-9	Number
+:	Attention (German: Achtung)
+/	Separator (German: Trennung)
++	End of speech transmission
+=	Address separator in morse code telegram
+?	End of morse transmission, or 200 ms relay
+SPC	Space
+RES	Reset (puts device in startup situation)
+STA/STP	Start/stop playback of telegram
+→	Forward, or Skip setting
+←	Backward, or Skip setting
+MODE	Set mode of operation
+INP	Input of telegram
+OUT	Output from a given point
+CLR	Clear (message)
+EX	Execute (in combination with CLR, OUT or RES)
+
+Errors:
+01: This is not a function key
+02: Keyboard error, press key again
+03: Message buffer in use and not sent, cannot overwrite
+04: Function key not allowed, use (0-9), (:), (/), (+), (?) SPC or (=)
+05: Only YES or NO allowed (when setting MODE, also → and ← allowed)
+06: Morse telegram must start with (:), or invalid key for dot-dash input
+07: Deleting a used not-sent message
+08: Illegal address, use ← or → only
+09: Transmission speed can only be set with (0-9)
+10: Incorrectly formatted message (+ or ? missing), or empty buffer
+11: Error when reading tape (illegal character)
+12: No tape
+13: Clear buffer (CLR) must be confirmed with EX (or use ← to cancel)
+14: Memory full
+15: Speech module not present
+16: Manually entered messages cannot be started with OUT, only with STA/STP
+17: Can only repeat messages from the same originator 
+
+The real machine can use paper tape as input, but MAME doesn't support it.
+
+SOURCE: https://www.cryptomuseum.com/spy/owvl/32620/opr.htm
+
+$end
 $info=srmp3
 $mame
 INITIALIZATION:
-Running the first time, you need to init the EEPROM. You can do this by hitting [ F2 ], then F3. When the Test screen comes up, hit [ F2 ] then [ F3 ] again.
+Running the first time, you need to init the EEPROM. You can do this by hitting [ F2 ], then [ F3 ]. When the Test screen comes up, hit [ F2 ] then [ F3 ] again.
 
 SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
