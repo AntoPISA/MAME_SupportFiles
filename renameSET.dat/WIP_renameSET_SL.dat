@@ -1,5 +1,5 @@
 ﻿#     ==========================================================
-#     MAME RENAMESET_SL.DAT v0.287  Latest update:  Apr 27, 2026
+#     MAME RENAMESET_SL.DAT v0.287  Latest update:  May 21, 2026
 #     ==========================================================
 #
 #     Home-page: https://www.progettosnaps.net/renameset/
@@ -13,7 +13,7 @@
 #     motoschifo for "ADB Tool"
 #     Internal Version 16.04
 #
-#     Rename/Delete Software Lists (in dat): From version 0.180 to 0.225 already rechecked.
+#     Rename/Delete Software Lists (in dat): From version 0.180 to 0.230 already rechecked.
 #
 $0.287 [#726]
 2026/03/31
@@ -7853,65 +7853,73 @@ spectrum_cass           | renegad2hs
 
 $0.230 [#669]
 2021/03/31
-629 software list (-1/+2), 127.579 software (-4/+254), 617 active SL (-1/+3), 12 orphan SL (-1), 126.809 active software (-4/+257), 770 orphan software (-3), 87.138 software parents (+234), 40.441 software clones (+24)
+629 software list (+3), 127.579 software (+258), 616 active SL (+3), 13 orphan SL, 126.809 active software (+261), 770 orphan software (-3), 87.138 software parents (+234), 40.441 software clones (+24)
 211.086 software roms (+379), 10.108 software CHD (+64), 90.542 supported software (+213), 1.146 partially supported software, 35.891 unsupported software (+45)
 
-1 orphan software-list added:
+1 software-list splitted:
+fmtowns_flop to fmtowns_flop_cracked (Fujitsu FM Towns cracked floppy disk images), fmtowns_flop_misc (Fujitsu FM Towns miscellaneous floppy disk images) and fmtowns_flop_orig (Fujitsu FM Towns original floppy disk images)
+
+1 active software-lists added:
 leapfrog_zippity_cart (LeapFrog Zippity Cartridges)
 
-1 software-list splitted:
-fmtowns_flop      > fmtowns_flop_cracked, fmtowns_flop_misc, fmtowns_flop_orig
+software removed/added/updated:
+apple2_flop_clcracked (0/+185/5)
+ekara_japan_gk (0/+2/0)
+ekara_japan_s (0/+1/0)
+ekara_japan_sp (0/+1/0)
+fmtowns_cd (0/+13/18)
+ibm5170 (0/+2/0)
+leapfrog_didj_cart (0/+1/0)
+leapfrog_zippity_cart (0/+2/0)
+pockchalw (0/+30/0)
+sega_beena_cart (0/+10/1)
+sgi_mips (0/+4/15)
+sorcerer_cass (0/+1/0)
+spectrum_cass (0/0/2)
+vgmplay (0/0/0)
 
-software added:
-apple2_flop_clcracked (+184)
-ekara_japan_gk (+2)
-ekara_japan_s (+1)
-ekara_japan_sp (+1)
-fmtowns_cd (+11)
-fmtowns_flop_misc (+1)
-fmtowns_flop_orig (+3)
-ibm5170 (+2)
-leapfrog_didj_cart (+1)
-leapfrog_zippity_cart (+1)
-pockchalw (+30)
-sega_beena_cart (+10)
-sgi_mips (+4)
-sorcerer_cass (+1)
-vgmplay (+1)
-
-4 software removed:
-fmtowns_flop            | cameltryc
-fmtowns_flop            | dinosaurc
-fmtowns_flop            | tssl51
-fmtowns_flop            | tssl51a
+4 software renamed:
+apple2_flop_clcracked   | mcgrph11          > mcgrpp11
+vgmplay                 | galaga            > galaga88
+vgmplay                 | gaxeduel          > goldnaxe
+vgmplay                 | sagaia            > sagaia_gb
 
 
 $0.229 [#668]
 2021/02/24
-626 software list (+1), 127.321 software (-2/+108), 613 active SL (+1), 13 orphan SL, 126.548 active software (-2/+108), 773 orphan software, 86.904 software parents (+82), 40.417 software clones (+28)
+626 software list (+1), 127.321 software (-1/+109), 613 active SL (+1), 13 orphan SL, 126.548 active software (-1/+109), 773 orphan software, 86.904 software parents (+82), 40.417 software clones (+28)
 210.707 software roms (+621), 10.044 software CHD (+11), 90.329 supported software (+108), 1.146 partially supported software (+1), 35.846 unsupported software (+1)
 
-software-list added:
+1 active software-lists added:
 hp_ipc_rom (HP Integral PC optional ROMs)
 
-software added:
-apple1 (+2)
-apple2_flop_clcracked (+15)
-apple2_flop_orig (+10)
-ekara_japan_a (+2)
-fmtowns_cd (+7)
-fmtowns_flop (+1)
-hp_ipc_rom (+1)
-ibm5150 (+3)
-ibm5170 (+10)
-rx78_cart (+2)
-vgmplay (+32)
-vsmile_cart (+41)
-vsmileb_cart (+1)
+software removed/added/updated:
+apple1 (0/+2/0)
+apple2_flop_clcracked (0/+16/0)
+apple2_flop_orig (0/+12/0)
+ekara_japan_a (0/+2/0)
+fmtowns_cd (0/+9/30)
+fmtowns_flop (-1/+4/1)
+hp_ipc_rom (0/+1/0)
+ibm5150 (0/+6/0)
+ibm5170 (0/+10/0)
+lynx (0/+1/0)
+rx78_cart (0/+2/0)
+spectrum_cass (0/0/0)
+vgmplay (0/+32/0)
+vsmile_cart (0/+11/0)
+vsmileb_cart (0/+1/0)
+vsmilem_cart (0/0/0)
 
-221 software renamed:
+257 software renamed:
+fmtowns_cd              | ehonwrit          > ehonwrit1120
+fmtowns_cd              | raidy2            > raidy2o
 spectrum_cass           | kidspack_f        > kidspack2
+spectrum_cass           | nigelman_f        > mansell
+vsmile_cart             | aladdinf          > aladdinfr
+vsmile_cart             | aladding          > aladdinge
 vsmile_cart             | aladdini          > aladdinit
+vsmile_cart             | aladdins          > aladdinsp
 vsmile_cart             | alphaprkf         > alphaprkfr
 vsmile_cart             | alphaprkg         > alphaprkge
 vsmile_cart             | alphaprkgr3       > alphaprkger3
@@ -7925,6 +7933,9 @@ vsmile_cart             | ariels            > arielsp
 vsmile_cart             | arielsw           > arielse
 vsmile_cart             | backyardigf       > backyardigfr
 vsmile_cart             | barneyg           > barneyge
+vsmile_cart             | batmanf           > batmanfr
+vsmile_cart             | batmang           > batmange
+vsmile_cart             | batmans           > batmansp
 vsmile_cart             | bobbdayf          > bobbdayfr
 vsmile_cart             | bobbdayg          > bobbdayge
 vsmile_cart             | bobbdaygr104      > bobbdayger104
@@ -7932,7 +7943,10 @@ vsmile_cart             | bobbdays          > bobbdaysp
 vsmile_cart             | bobbdaysw         > bobbdayse
 vsmile_cart             | carebearf         > carebearfr
 vsmile_cart             | carebears         > carebearsp
+vsmile_cart             | carsf             > carsfr
 vsmile_cart             | carsfr105         > carsfrr105
+vsmile_cart             | carsg             > carsge
+vsmile_cart             | carss             > carssp
 vsmile_cart             | carssw            > carsse
 vsmile_cart             | cinderlaf         > cinderlafr
 vsmile_cart             | cinderlafr105     > cinderlafrr105
@@ -7942,20 +7956,26 @@ vsmile_cart             | cinderlagr104     > cinderlager104
 vsmile_cart             | cinderlagr204     > cinderlager204
 vsmile_cart             | cinderlai         > cinderlait
 vsmile_cart             | cinderlair1       > cinderlaitr1
-vsmile_cart             | cinderlas         > cinderlasp
+vsmile_cart             | cinderlanl        > cinderlasp
+vsmile_cart             | cinderlas         > cinderlanl
 vsmile_cart             | cinderlasr122     > cinderlaspr122
 vsmile_cart             | cinderlasr222     > cinderlaspr222
 vsmile_cart             | cinderlasw        > cinderlase
+vsmile_cart             | doraf             > dorafr
 vsmile_cart             | dorafr105         > dorafrr105
 vsmile_cart             | doragr104         > dorager104
 vsmile_cart             | dorasr222         > doraspr222
+vsmile_cart             | elmo              > elmoge
 vsmile_cart             | elmof             > elmofr
 vsmile_cart             | elmos             > elmosp
 vsmile_cart             | erniebrtf         > erniebrtfr
 vsmile_cart             | erniebrtg         > erniebrtge
 vsmile_cart             | erniebrts         > erniebrtsp
 vsmile_cart             | findnemof         > findnemofr
+vsmile_cart             | findnemog         > findnemoge
 vsmile_cart             | findnemop         > findnemopt
+vsmile_cart             | findnemos         > findnemosp
+vsmile_cart             | fred              > fredge
 vsmile_cart             | fredf             > fredfr
 vsmile_cart             | godiegof          > godiegofr
 vsmile_cart             | jamgymf           > jamgymfr
@@ -7966,8 +7986,11 @@ vsmile_cart             | kungfupg          > kungfupge
 vsmile_cart             | kungfups          > kungfupsp
 vsmile_cart             | lbratzf           > lbratzfr
 vsmile_cart             | lbratzs           > lbratzsp
+vsmile_cart             | lionkingf         > lionkingfr
 vsmile_cart             | lionkinggr2       > lionkingger2
 vsmile_cart             | lionkingi         > lionkingit
+vsmile_cart             | lionkings         > lionkingsp
+vsmile_cart             | lionkingsw        > lionkingse
 vsmile_cart             | ltleinstn         > ltleinstnsp
 vsmile_cart             | ltleinstnf        > ltleinstnfr
 vsmile_cart             | ltleinstngr3      > ltleinstnger3
@@ -7988,8 +8011,10 @@ vsmile_cart             | monstalns         > monstalnsp
 vsmile_cart             | mypuppyg          > mypuppyge
 vsmile_cart             | mypuppys          > mypuppysp
 vsmile_cart             | mypuppysw         > mypuppyse
+vsmile_cart             | noddyf            > noddyfr
 vsmile_cart             | noddyfr105        > noddyfrr105
 vsmile_cart             | noddygr104        > noddyger104
+vsmile_cart             | noddyp            > noddypt
 vsmile_cart             | partyprkf         > partyprkfr
 vsmile_cart             | partyprkg         > partyprkge
 vsmile_cart             | partyprks         > partyprksp
@@ -8001,8 +8026,11 @@ vsmile_cart             | poohfr2           > poohfrr2
 vsmile_cart             | poohg             > poohge
 vsmile_cart             | poohgr204         > poohger204
 vsmile_cart             | poohi             > poohit
+vsmile_cart             | poohs             > poohsp
 vsmile_cart             | poohsr122         > poohspr122
 vsmile_cart             | poohsw            > poohse
+vsmile_cart             | ratatf            > ratatfr
+vsmile_cart             | ratatg            > ratatge
 vsmile_cart             | ratati            > ratatit
 vsmile_cart             | ratats            > ratatsp
 vsmile_cart             | redhoodf          > redhoodfr
@@ -8016,7 +8044,9 @@ vsmile_cart             | scoobydostb       > scoobydosptb
 vsmile_cart             | scoobydosw        > scoobydose
 vsmile_cart             | shrek3f           > shrek3fr
 vsmile_cart             | shrek3fr105       > shrek3frr105
+vsmile_cart             | shrek3g           > shrek3ge
 vsmile_cart             | shrekf            > shrekfr
+vsmile_cart             | shrekg            > shrekge
 vsmile_cart             | shreks            > shreksp
 vsmile_cart             | smartkbf          > smartkbfr
 vsmile_cart             | smartkbg          > smartkbge
@@ -8035,9 +8065,12 @@ vsmile_cart             | spidermisg        > spidermisge
 vsmile_cart             | spidermisi        > spidermisit
 vsmile_cart             | spidermiss        > spidermissp
 vsmile_cart             | spidermissr222    > spidermisspr222
+vsmile_cart             | spongebf          > spongebfr
 vsmile_cart             | spongebg1         > spongebge
 vsmile_cart             | spongebgr1        > spongebger1
 vsmile_cart             | spongebi          > spongebit
+vsmile_cart             | spongebs          > spongebsp
+vsmile_cart             | supermanf         > supermanfr
 vsmile_cart             | supermang         > supermange
 vsmile_cart             | supermans         > supermansp
 vsmile_cart             | techartf          > techartfr
@@ -8045,9 +8078,12 @@ vsmile_cart             | techartg          > techartge
 vsmile_cart             | techarts          > techartsp
 vsmile_cart             | techartsw         > techartse
 vsmile_cart             | thomasf           > thomasfr
+vsmile_cart             | thomasg           > thomasge
 vsmile_cart             | thomasgr104       > thomasger104
 vsmile_cart             | thomassw          > thomasse
 vsmile_cart             | tingelng          > tingelngse
+vsmile_cart             | toystor2f         > toystor2fr
+vsmile_cart             | toystor2g         > toystor2ge
 vsmile_cart             | toystor2i         > toystor2it
 vsmile_cart             | toystor2s         > toystor2sp
 vsmile_cart             | toystor2sw        > toystor2se
@@ -8056,7 +8092,9 @@ vsmile_cart             | upfr005           > upfrr005
 vsmile_cart             | upgr004           > upger004
 vsmile_cart             | upsr022           > upspr022
 vsmile_cart             | wallef            > wallefr
+vsmile_cart             | walleg            > wallege
 vsmile_cart             | wallei            > walleit
+vsmile_cart             | walles            > wallesp
 vsmile_cart             | wallesw           > wallese
 vsmile_cart             | wkwheelf          > wkwheelfr
 vsmile_cart             | wkwheelg          > wkwheelge
@@ -8132,9 +8170,8 @@ vsmilem_cart            | wintrsptmg        > wintrsptmge
 vsmilem_cart            | wldwavesmf        > wldwavesmfr
 vsmilem_cart            | wonderpetm        > wonderpetmuk
 
-2 software removed:
-spectrum_cass           | nigelman_f
-vsmile_cart             | noddyp
+1 software removed:
+fmtowns_flop            | toshintoa
 
 
 $0.228 [#667]
@@ -8142,70 +8179,210 @@ $0.228 [#667]
 625 software list (+3), 127.211 software (+263), 612 active SL (+3), 13 orphan SL, 126.438 active software (+263), 773 orphan software, 86.822 software parents (+157), 40.389 software clones (+106)
 210.086 software roms (+206), 10.033 software CHD (+110), 90.221 supported software (+863), 1.145 partially supported software (+85), 35.845 unsupported software (-685)
 
-1 sofyware-list renamed:
-abc1600             > abc1600_flop
+1 software-lists splitted:
+rx78 to rx78_cart (Gundam RX-78 cartridges) and rx78_cass (Gundam RX-78 cassettes)
 
-1 list splitted:
-rx78      > rx78_cart, rx78_cass
+1 software-lists renamed:
+abc1600 to abc1600_flop
 
-3 software renamed:
+2 active software-lists added:
+alphasmart_kapps (AlphaSmart 3000 SmartApplets)
+chip8_quik (CHIP8 quickload)
+
+software removed/added/updated:
+alphasmart_kapps (0/+35/0)
+apple2_flop_misc (0/0/0)
+chip8_quik (0/+72/0)
+fmtowns_cd (0/+15/22)
+fmtowns_flop (0/+1/0)
+gamegear (0/+10/1)
+ibm5150 (0/+2/0)
+ibm5170 (0/+4/0)
+psx (0/+80/1)
+sg1000 (0/+1/0)
+sms (0/+11/0)
+videopac (0/+2/1)
+wscolor (0/+1/8)
+wswan (0/+10/18)
+
+16 software renamed:
 apple2_flop_misc        | antim18           > antim
+fmtowns_cd              | lastarmg          > lastarmgo
 psx                     | scs01afr          > scs02afr
 psx                     | scs02kmn          > scs03kmn
-
-1 software removed:
-videopac                | barona
+videopac                | baron             > airbattlp
+videopac                | barona            > airbattlpa
+videopac                | battle            > barao
+wscolor                 | digi2d1           > digi2d1a
+wscolor                 | digicard          > digicarda
+wscolor                 | digimdp           > digimdpa
+wscolor                 | digitmed          > digitmeda
+wscolor                 | hxhgrisl          > hxhgrisla
+wscolor                 | oneptwar          > oneptwara
+wswan                   | chocodng          > chocodnga
+wswan                   | handsonr          > handsonra
+wswan                   | harobots          > harobotsa
 
 
 $0.227 [#666]
 2020/12/31
-622 software list (+9), 126.948 software (-3/+278), 609 active SL (+9), 13 orphan SL, 126.175 active software (-3/+278), 773 orphan software, 86.665 software parents (+237), 40.283 software clones (+44)
+622 software list (+9), 126.948 software (-7/+274), 609 active SL (+9), 13 orphan SL, 126.175 active software (-7/+274), 773 orphan software, 86.665 software parents (+237), 40.283 software clones (+44)
 209.880 software roms (+1277), 9.923 software CHD (+56), 89.358 supported software (+191), 1.060 partially supported software (+2), 36.530 unsupported software (+88)
 
-13 software renamed:
-aquarius_cart           | quikdisk          > qdisk
+9 active software-lists added:
+easy_karaoke_cart (IVL Technologies Easy Karaoke cartridges)
+leapfrog_iquest_cart (LeapFrog IQuest cartridges)
+leapfrog_turboextreme_cart (LeapFrog Turbo Extreme cartridges)
+leapfrog_turbotwistbrainquest_cart (LeapFrog Turbo Twist Brain Quest cartridges)
+next_cdrom (NeXT CD-ROM software)
+next_hdd (Hard disk images for NeXT)
+vtech_innotab_cart (VTech InnoTAB 1/2/3 Cartridges)
+vtech_innotv_innotabmax_cart (VTech InnoTV / InnoTAB MAX cartridges)
+wizard_cart (Sharp Wizard series cartridges)
+
+software removed/added/updated:
+apple2_flop_clcracked (0/+21/0)
+apple2_flop_misc (0/+1/0)
+apple2_flop_orig (0/+41/0)
+aquarius_cart (-3/+4/0)
+bbc_rom (0/+12/3)
+easy_karaoke_cart (0/+2/0)
+ekara_pal (0/+2/0)
+fmtowns_cd (-2/+33/59)
+fmtowns_flop (0/+7/1)
+gameking (0/+2/0)
+ibm5150 (0/+15/2)
+ibm5170 (-2/+27/4)
+leapfrog_iquest_cart (0/+2/0)
+leapfrog_turboextreme_cart (0/+1/0)
+leapfrog_turbotwistbrainquest_cart (0/+1/0)
+megadriv (0/+1/0)
+next_cdrom (0/+6/0)
+next_hdd (0/+14/0)
+orao (0/+15/0)
+picno (0/+3/0)
+pockchalv2 (0/+10/0)
+sgi_mips (0/+4/0)
+sorcerer_cart (0/+1/0)
+sorcerer_cass (0/+2/0)
+stv (0/0/1)
+vgmplay (0/+47/0)
+vtech_innotab_cart (0/+1/0)
+vtech_innotv_innotabmax_cart (0/+4/0)
+wizard_cart (0/+3/0)
+
+21 software renamed:
 bbc_rom                 | amenet            > amenet518
 bbc_rom                 | amenetc           > amenetm
-fmtowns_cd              | joshikou          > jkhatsu
+bbc_rom                 | ddos315           > ddos315r10
+bbc_rom                 | ddos335           > ddos335r2
+bbc_rom                 | ddos345           > ddos345r12
+fmtowns_cd              | nhkeikai          > nhkeikaio
+fmtowns_flop            | dinosaur          > dinosaurc
+ibm5150                 | paprboy2          > paperbo2
+ibm5170                 | dune              > dunea
+ibm5170                 | goblins3g         > goblins3de
 ibm5170                 | megaloge          > megalode
-ibm5170                 | monkey2a          > monkey2de
+ibm5170                 | mkg               > mkde
+ibm5170                 | monkey2a          > monkey2
 ibm5170                 | samnmaxg          > samnmaxde
 ibm5170                 | wfw311g           > wfw311de
 ibm5170                 | win31g            > win31de
+stv                     | ffreveng          > ffrevng10
 vgmplay                 | bgorilla_pc98     > bgorilla_88
 vgmplay                 | miwakunc_pc98     > miwakunc_98
 vgmplay                 | tetris_pc98       > tetris_98
 vgmplay                 | vgm0002           > doordoor_fc
 
-3 software removed:
+7 software removed:
+aquarius_cart           | basic
 aquarius_cart           | dosbasic
-ibm5150                 | paprboy2
+aquarius_cart           | quikdisk
+fmtowns_cd              | dokanshu
+fmtowns_cd              | joshikou
+ibm5170                 | cruisecr
 ibm5170                 | sserv2
 
 
 $0.226 [#665]
 2020/10/28
-613 software list (+1), 126.667 software (-2/+311), 600 active SL (+2), 13 orphan SL (-1), 125.894 active software (-2/+311), 773 orphan software, 86.428 software parents (+214), 40.239 software clones (+99)
+613 software list (-2/+3), 126.667 software (-2/+311), 600 active SL (-1/+3), 13 orphan SL (-1), 125.894 active software (-2/+311), 773 orphan software, 86.428 software parents (+214), 40.239 software clones (+99)
 208.603 software roms (+1114), 9.867 software CHD (+32), 89.167 supported software (+305), 1.058 partially supported software (+2), 36.442 unsupported software (+6)
 
-2 software-lists merged:
-kaypro484               |
---------------------------> kaypro
-kayproii                |
+1 software-lists merged:
+kaypro484, kayproii to kaypro (Kaypro CP/M disk images)
 
-1 lists splitted:
-aquarius      > aquarius_cart, aquarius_cass
+1 software-lists splitted:
+aquarius to aquarius_cart (Mattel Aquarius cartridges) and aquarius_cass (Mattel Aquarius cassettes)
 
-5 software renamed:
+2 active software-lists added:
+laser2001_flop (V-Tech Laser 2001 / Salora Manager disks)
+ssem_quik (SSEM quickload)
+
+1 software-lists removed:
+c64_flop_clcracked
+
+software removed/added/updated:
+apple2_flop_clcracked (0/+2/0)
+apple2_flop_orig (0/+37/0)
+aquarius_cart (0/+24/0)
+aquarius_cass (0/+35/0)
+bbc_rom (0/+23/2)
+c64_flop_clcracked (0/0/0)
+fmtowns_cd (-1/+19/24)
+fmtowns_flop (0/+8/0)
+gameboy (-1/+21/5)
+gbcolor (0/+32/20)
+ibm5150 (0/+11/1)
+ibm5170 (0/+3/1)
+kaypro (0/+18/0)
+laser2001_flop (0/+1/0)
+megadriv (0/+1/0)
+sgi_mips (0/+9/0)
+sorcerer_cass (0/+19/0)
+ssem_quik (0/+12/0)
+vgmplay (0/+44/20)
+videopac (0/+10/0)
+vsmile_cart (0/+1/0)
+
+33 software renamed:
+bbc_rom                 | datagem           > datagem102f
+bbc_rom                 | epromer2          > epromer23
+fmtowns_cd              | fsc5              > fsc5o
+fmtowns_cd              | fsc6              > fsc6o
+fmtowns_cd              | fsc7              > fsc7o
+gameboy                 | boxxle            > boxxlea
+gameboy                 | hyperlod          > hyperloda
+gameboy                 | pang              > pangunk
+gameboy                 | rockybw           > rockybwunk
+gameboy                 | suzukif1          > suzukif1unk
+gameboy                 | xu                > lunchasep
+gbcolor                 | emperor           > emperorunk
+gbcolor                 | f1racing          > f1racingp
+gbcolor                 | f1racingp         > f1racingunk
+gbcolor                 | gakkyama          > gakkyamaa
+gbcolor                 | jissen            > jissena
+gbcolor                 | laura             > lauraunk
+gbcolor                 | monstrvl          > monstrvla
 gbcolor                 | mrdrillrj         > mrdrillrja
-gbcolor                 | pokecarda         > pokecardaa
+gbcolor                 | nbazone           > nbazonea
+gbcolor                 | pokecard          > pokecardx
+gbcolor                 | pokecarda         > pokecarde
+gbcolor                 | propoolu          > propooluunk
+gbcolor                 | seihai            > seihaiunk
+gbcolor                 | shanghaij         > shanghaiu
+gbcolor                 | shanghaiu         > shanghaie
+gbcolor                 | survkidsj         > survkidsjunk
+gbcolor                 | yakouchu          > yakouchuunk
+ibm5150                 | batlches          > btlchess35
+ibm5150                 | supertet          > stetris35
+vgmplay                 | konagc1_scc       > konagcbhtm_scc
 vgmplay                 | konagcbh_msx2     > konagcbhab_msx2
 vgmplay                 | konagcbh_scc      > konagcbhab_scc
-vgmplay                 | konagc1_scc       > konagcbhtm_scc
 
 2 software removed:
 fmtowns_cd              | tqodgal
-gameboy                 | xu
+gameboy                 | 188in1
 
 
 $0.225 [#664]
@@ -8313,6 +8490,7 @@ cpc_flop                | thunderb0e
 cpc_flop                | thunderb10
 cpc_flop                | thunderb11
 electron_rom            | commstar
+
 
 $0.224 [#663]
 2020/08/26
