@@ -2472,11 +2472,16 @@ $end
 $info=concept
 $mame
 TIPS:
-It's marked as working, but there's no boot disk available, so no way to run anything. Meaning of the choices at start:
+Meaning of the choices at start:
 D - Macsbug I/O on Datacomm 0 (this hangs)
 F - Floppy Disk Boot
 L - Local DIsk Boot (hard disk?)
 O - Omninet Disk Boot (network)
+
+If you use the one boot disk (FBOOT.IMD, 239KB) that's available, instead of the expected prompt you get a menu that can't be escaped from.
+Corvus refers to the drive names as 0 to 3, but you have to choose a disk by its volume label (the filename in our case).
+F4 - choose a disk by specifying its volume label (label.imd), F5 gives the directory, enter * as the filter.
+FBOOT is the boot disk and the only one that works. Maybe the other drives don't work in MAME.
 
 $end
 $info=cortex
@@ -4952,6 +4957,12 @@ $info=indiana
 $mame
 TIPS:
 All input to be in lower case. he for help.
+
+$end
+$info=indy_4610,indy_5015
+$mame
+INITIALIZATION:
+Use the irix_5_3_hdd sw item - it's the only one that doesn't crash. There's a fault with the video, so on the first screen type 'root' and press Enter. On the next screen you have to position the mouse in the top half of the screen to operate the menus (the red square should align with the console picture). After shutting down and start over, the system has a panic attack. You need to delete the rtc file from the nvram.
 
 $end
 $info=inferno
@@ -11274,6 +11285,17 @@ SOURCE:
 mameinfo.dat
 
 $end
+$info=teradrive,teradrive3
+$mame
+TIPS:
+First thing to do is to change the player 3 direction controls (i/J/K/L) to the arrow keys. They are used in the DOS menu.
+
+This is a merged megadrive console and IBM PC. To play a megadrive/genesis game, turn the Boot Mode DIP Switch to MD Boot, load your cart and play. Controls: arrows to move, 3 to start/pause, right shift/control for A/B ingame.
+To use it as a PC, turn the dipswitch to PC Boot, load the "dosv406n" software-list item, and boot. You get a blueish screen with 6 choices. Use the P3 controls to move around. The choices (left to right then down): File Manager, Disk Copy, Disk Format, DOS, Set Date and Time, Configure Keys.
+
+Note that going into DOS might produce a timer error which hangs the system.
+
+$end
 $info=tf95_12,afm_113,cc_13,cv_14,congo_21,jy_12,mm_10,mb_10,nbaf_31,ngg_13,ph_04,sc_18,ss_15,totan_14,cp_16,ttt_10
 $mame
 TIPS:
@@ -11580,6 +11602,12 @@ Press [ F1 ] then [ F2 ], then press [ Z ]+[ X ]+[ C ] together; you will see th
 
 SOURCE:
 mameinfo.dat
+
+$end
+$info=torchh
+$mame
+TIPS:
+to get a list of commands, type HELP
 
 $end
 $info=tortufam
