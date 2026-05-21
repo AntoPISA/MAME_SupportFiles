@@ -2454,7 +2454,7 @@ To load a quickload "comx" file:
 
 * Start the emulation and press Enter to get the Basic prompt.
 
-* Use the File Manager, or Media menu (MAMEUI) to load a COMX file.
+* Use the Media Control, or Media menu (MAMEUI) to load a COMX file.
 
 * Back at the Basic prompt, type RUN.
 
@@ -2472,11 +2472,16 @@ $end
 $info=concept
 $mame
 TIPS:
-It's marked as working, but there's no boot disk available, so no way to run anything. Meaning of the choices at start:
+Meaning of the choices at start:
 D - Macsbug I/O on Datacomm 0 (this hangs)
 F - Floppy Disk Boot
 L - Local DIsk Boot (hard disk?)
 O - Omninet Disk Boot (network)
+
+If you use the one boot disk (FBOOT.IMD, 239KB) that's available, instead of the expected prompt you get a menu that can't be escaped from.
+Corvus refers to the drive names as 0 to 3, but you have to choose a disk by its volume label (the filename in our case).
+F4 - choose a disk by specifying its volume label (label.imd), F5 gives the directory, enter * as the filter.
+FBOOT is the boot disk and the only one that works. Maybe the other drives don't work in MAME.
 
 $end
 $info=cortex
@@ -2945,7 +2950,7 @@ $end
 $info=ddr2mc
 $mame
 INITIALIZATION:
-When first run, it will say INCORRECT SECURITY CASSETTE. In the DIP switches, change the "Start Up Device" to "CD-ROM Drive". Do not Reset, Esc instead. Go to File Manager, where it says "cdrom" change to "install". Do not Reset, Esc instead until the menu is gone. Now hit F3. It says to push Test Button, so press F2. When it completes, in the DIP Switches, change "Start Up Device" to "Flash ROM", and choose Reset System. After wasting more time, it will eventually start.
+When first run, it will say INCORRECT SECURITY CASSETTE. In the DIP switches, change the "Start Up Device" to "CD-ROM Drive". Do not Reset, Esc instead. Go to Media Control, where it says "cdrom" change to "install". Do not Reset, Esc instead until the menu is gone. Now hit F3. It says to push Test Button, so press F2. When it completes, in the DIP Switches, change "Start Up Device" to "Flash ROM", and choose Reset System. After wasting more time, it will eventually start.
 
 $end
 $info=ddragon
@@ -4289,11 +4294,31 @@ $end
 $info=galeb
 $mame
 TIPS:
-First thing to do is Ctrl-A for capslock, since UPPER case is required.
+Instructions for using MONITOR
 
-Ctrl-B takes you into Basic. Not known how to quit.
+A NNNN - miniassembler
+C NNNNMMMM - gives the sum of bytes from memory from NNNN to MMMM
+E NNNNMMMM - display memory contents from NNNN to MMMM
+F NNNNMMMMVV - write byte VV to memory from NNNN to MMMM
+L x  - load file x from cassette. If x not specified, load first file found.
+M NNNN - change memory location NNNN
+P aaaabbbbcccc - unknown command - displays what appears to be S-records. Example: P C000D000D000
+Q DDDDNNNNMMMM - copy memory from NNNN to MMMM to DDDD
+S nnnn - unknown command
+T nnnn mmmm - unknown command
+U NNNN - call machine program from address NNNN
+X NNNN - disassembler
 
-Ctrl-G turns on keyclick.
+Control keys
+
+CTRL+B call BASIC (from MONITOR)
+CTRL+A switch to upper/lower case
+CTRL+L clear screen
+CTRL+G turn on/off keypress beep
+
+SOURCE: https://web.archive.org/web/20120126103818/http://retro.foing-nova.hr/galebemu.htm (translated, adjusted, extras appended)
+
+So, since UPPER case is required, do Ctrl-A for capslock.
 
 To save a tape: SAVE (while in Basic)
 
@@ -4368,6 +4393,18 @@ The first time you run the game, the EEPROM 7D shows as BAD in the RAM/ROM Check
 
 SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
+
+$end
+$info=gobyrc,rcdego
+$mame
+INITIALIZATION:
+- Wait for "Loading now" to finish
+- Next screen (1): Press [ 1 ]
+- Next screen (2): Fully press then let go each of these keys in order: [ Left ],[ Right ],[ Up ],[ Down ],[ 1 ].
+- Next screen (3): Press [ 1 ]
+- Next screen (Test Mode): Use [ Right ] to select the last choice "Exit(Reset)", then press [ 1 ]. After a short wait, the game will begin.
+
+SOURCE: Thanks to sjy96525
 
 $end
 $info=gollygho
@@ -4922,6 +4959,12 @@ TIPS:
 All input to be in lower case. he for help.
 
 $end
+$info=indy_4610,indy_5015
+$mame
+INITIALIZATION:
+Use the irix_5_3_hdd sw item - it's the only one that doesn't crash. There's a fault with the video, so on the first screen type 'root' and press Enter. On the next screen you have to position the mouse in the top half of the screen to operate the menus (the red square should align with the console picture). After shutting down and start over, the system has a panic attack. You need to delete the rtc file from the nvram.
+
+$end
 $info=inferno
 $mame
 INITIALIZATION:
@@ -5020,6 +5063,12 @@ In Basic-G:
 - To save a tape: MSAVE
 
 When you want to load a cartridge, you need to also load the matching slot item.
+
+$end
+$info=iris1400
+$mame
+TIPS:
+Enter h to get help
 
 $end
 $info=iris3130,ms68k,ncd16,ncd19
@@ -5760,7 +5809,7 @@ $end
 $info=laser3k
 $mame
 TIPS:
-An Apple II clone that boots into Basic.
+An Apple II clone. Press [ Ctrl ][ F12 ] to get a prompt.
 
 To save a file: SAVE
 
@@ -7485,6 +7534,12 @@ Basic programs give a File Mode error.
 Many others give a Loading Error.
 
 $end
+$info=mz5500
+$mame
+TIPS:
+It can boot floppy disks - but the keyboard is not emulated.
+
+$end
 $info=mz700
 $mame
 TIPS:
@@ -7873,14 +7928,9 @@ SOURCE:
 mameinfo.dat
 
 $end
-$info=orao103
+$info=orao,orao103
 $mame
-INITIALIZATION:
-ORAO
-====
-
-Said to be compatible with GALEB tapes.
-
+TIPS:
 Use orao103 - it's the only one that works.
 
 To start Basic: BC
@@ -8171,6 +8221,26 @@ SOURCE:
 mameinfo.dat
 
 $end
+$info=pc1000,ordisava,misterx
+$mame
+TIPS:
+At start, it says SELECT ACTIVITY, but there's nothing to see, because you need to press a button. Use the tab menu to look at the Keyboards Assignments to see the list of choices.
+
+The keys are set up wrongly: if Enter doesn't work use backslash to Enter.
+
+$end
+$info=pc1403,pc1403h
+$mame
+TIPS:
+If the BUSY light keeps flashing, do a soft rest (F3). It may still flash intermittently, but the system will work.
+
+$end
+$info=pc2000,pc2000s,gl2000,gl2000p,gl3000s,gl4000,gl4004
+$mame
+TIPS:
+At start, it says SELECT ACTIVITY, but there's nothing to see, because you need to press a button. Use the tab menu to look at the Keyboards Assignments to see the extensive list of choices.
+
+$end
 $info=pc6001,pc6601
 $mame
 TIPS:
@@ -8390,6 +8460,12 @@ U
 Q
 
 In practice, the I and R commands produce an error, while all disk commands are directed to tape. The F command lists the files on a tape.
+
+$end
+$info=pcscolor,snotec,snotecex,snotecu,snotecug,snotecut
+$mame
+TIPS:
+The default keyboard assignments are incorrect. Use the ']' key for Enter.
 
 $end
 $info=pda600
@@ -8661,6 +8737,12 @@ Rom banking (in U bank):
 1U: MDCR program
 2U: Disassembler
 3U: Label handler
+
+$end
+$info=pi4d20,pi4d25
+$mame
+TIPS:
+After entering the monitor, type ? or help to get a list of commands.
 
 $end
 $info=pi4d50,pi4d70
@@ -9135,6 +9217,17 @@ When finished: RUN
 GET [nnnn] - seems like a jump to M/L (maybe?)
 
 $end
+$info=primusex
+$mame
+INITIALIZATION:
+First thing to do is change the "Unknown 3" key from Ctrl to Enter. Now the system's operation makes sense.
+
+TIPS:
+After inputting your name, use arrows in numberpad to choose an app, hit enter. The icon at top right is Integer Basic.
+
+Keyboard issues: not all keys are correctly mapped. The Y and Z keys are swapped. The top row is shifted, so hold Shift to get numbers.
+
+$end
 $info=prmrsocr
 $mame
 INITIALIZATION:
@@ -9149,6 +9242,16 @@ $mame
 INITIALIZATION:
 Cassette start address is always 1000. The end address must be entered into 13DC/DD (little-endian).
 Then press W to save. To load, press L. If it says r at the end, it indicates a bad checksum.
+
+$end
+$info=profi
+$mame
+TIPS:
+At the intro screen, press 8 and 9 to choose, 0 to activate.
+
+"RAM MODE" switches between 48k and 128k. "IN STS" seems to be the same as "IN BASIC".
+
+In Basic, SAVE "x" to save a cassette, LOAD "" to load.
 
 $end
 $info=propcycl
@@ -9811,10 +9914,12 @@ To save a tape: SAVE
 To load a tape: LOAD
 
 $end
-$info=saturn
+$info=saturn,saturneu,saturnkr,saturnjp,hisaturn,vsaturn
 $mame
 TIPS:
 The use of a ROM CARTRIDGE (BIN without CUE) does not work.
+
+On the setup screens, use the arrows to choose the bottom-right choice and press [ Ctrl ].
 
 $end
 $info=savia84
@@ -9990,19 +10095,6 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
-$info=segaai
-$mame
-INITIALIZATION:
-SEGA AI
-=======
-
-Not really sure what the point of this device is.
-
-The software consists of music flac files which the computer will play.
-
-BUT, the files can be played in any audio player such as WMP - no need for emulation.
-
-$end
 $info=segacd,segacd2
 $mame
 INITIALIZATION:
@@ -10019,7 +10111,7 @@ When the game starts up, when it says to press Start, press 1.
 $end
 $info=selz80
 $mame
-INITIALIZATION:
+TIPS:
 Test sequence: Press -, enter an address, press = to show contents, press
 up/down-arrow to cycle through addresses.
 
@@ -10095,7 +10187,7 @@ http://wiki.mamedev.org/index.php/FAQ:Games
 $end
 $info=sg1000
 $mame
-INITIALIZATION:
+TIPS:
 You can get sc3000 software and a cassette port by installing sk1100 into the sgexp slot.
 
 However, no sc3000 software (including Basic) will work, it just gives a black screen with beeping.
@@ -10105,7 +10197,7 @@ Therefore, there's no way to load any cassettes.
 $end
 $info=sg1000m2,sc3000
 $mame
-INITIALIZATION:
+TIPS:
 To use cassettes, you must load "basic3" or "basic3e" (don't use "basic2" as it gives only 2k of free memory).
 
 To save a tape: SAVE"x"
@@ -10162,8 +10254,10 @@ mameinfo.dat
 $end
 $info=shine
 $mame
-INITIALIZATION:
-The commands to save and load tapes are SAVE and LOAD, but they require arguments of unknown format.
+TIPS:
+There's next to nothing known about this unique machine. Errors are all numeric, therefore giving no clue as to what the issue is.
+
+First thing to do is to enter "CALL-20480" and it responds with "BASIC PLUS". Now you can save a tape with CSAVE"x", and load a tape with CLOAD. There's also a monitor program, accessible with MONITOR.
 
 $end
 $info=shngmtkbg
@@ -10231,7 +10325,6 @@ mameinfo.dat
 $end
 $info=silkworm
 $mame
-INITIALIZATION:
 TIPs:
 On startup, press the Player 2 start button [ 2 ] to enter test mode.
 
@@ -10440,7 +10533,7 @@ Make sure all keyboards are enabled.
 
 System Setup (to play games etc).
 - In the Dipswitches (not the Configuration), turn cursor flashing OFF.
-- Loading via wav files works, so load a tape image in the file manager
+- Loading via wav files works, so load a tape image in the Media Control
 - In UPPER CASE, enter XE press enter, cassette will load.
 - At the end, the program will start by itself.
 - When it says use 2,4,6,8 keys, you can use the keyboard arrow keys.
@@ -10615,7 +10708,7 @@ TIPS:
 At start of each ball, press Z to enable the playfield.
 
 $end
-$info=spec128,specpl2a,specpl3e,spectrum,atm,atmtb2,atmtb2plus,chloe,pent1024,bestzx,kay1024,profi,quorum,scorpiongmx,scorpio,scorpiontb,hc128,specpls2,tbblue,specpls3,sp3e8bit,sp3eata,sp3ezcf,byte,bk08,blitzs,cip01,cip03,cobrasp,cobra80,didakt90,dgama87,dgama88,dgama89,didaktk,didakm91,didakm92,didakm93,hc2000,hc85,hc88,hc90,hc91,inves,jet,compani1,quorum48,magic6,mistrum,orizon,santaka2,sintez2,spektrbk,tk90x,tk95,zvezda,spec80k,specide,tc2048,uk2086
+$info=spec128,specpl2a,specpl3e,spectrum,atm,atmtb2,atmtb2plus,chloe,pent1024,kay1024,scorpiongmx,scorpio,scorpiontb,hc128,specpls2,tbblue,specpls3,sp3e8bit,sp3eata,sp3ezcf,byte,bk08,blitzs,cip01,cip03,didakt90,dgama87,dgama88,dgama89,didaktk,didakm91,didakm92,didakm93,hc2000,hc85,hc90,hc91,inves,jet,compani1,mistrum,orizon,santaka2,sintez2,spektrbk,tk90x,tk95,zvezda,spec80k,specide,tc2048,uk2086
 $mame
 TIPS:
 Sinclair Spectrum, Scorpion, ATM
@@ -10756,10 +10849,65 @@ INITIALIZATION:
 Make sure to go into the Input Settings and enable all keyboards.
 
 $end
+$info=sprachmg
+$mame
+TIPS:
+It requires a speech cartridge from the software list, otherwise you'll get ERROR15 at start. After fixing that, if it doesn't say CLEAR! at start, click these buttons one at a time: CLR EX MODE 1
+
+To compose a manual message, click these buttons one at a time, and wait for a response after each one: INP 0 1 0 0 0 then the numbers you want (it will speak each one), then terminate the message with the + button. The special buttons : and / will say Achtung and Trennung.
+
+To send your message, press STA to send morse code. The special words cause a long series of beeps so just wait patiently for it say END on the display.
+
+Meaning of the buttons (meanings change depending on operation in progress):
+0/NO	Zero, or NO
+1/YES	One, or YES
+2/·	Two, or Dot (morse)
+3/—	Three, or Dash (morse)
+4-9	Number
+:	Attention (German: Achtung)
+/	Separator (German: Trennung)
++	End of speech transmission
+=	Address separator in morse code telegram
+?	End of morse transmission, or 200 ms relay
+SPC	Space
+RES	Reset (puts device in startup situation)
+STA/STP	Start/stop playback of telegram
+→	Forward, or Skip setting
+←	Backward, or Skip setting
+MODE	Set mode of operation
+INP	Input of telegram
+OUT	Output from a given point
+CLR	Clear (message)
+EX	Execute (in combination with CLR, OUT or RES)
+
+Errors:
+01: This is not a function key
+02: Keyboard error, press key again
+03: Message buffer in use and not sent, cannot overwrite
+04: Function key not allowed, use (0-9), (:), (/), (+), (?) SPC or (=)
+05: Only YES or NO allowed (when setting MODE, also → and ← allowed)
+06: Morse telegram must start with (:), or invalid key for dot-dash input
+07: Deleting a used not-sent message
+08: Illegal address, use ← or → only
+09: Transmission speed can only be set with (0-9)
+10: Incorrectly formatted message (+ or ? missing), or empty buffer
+11: Error when reading tape (illegal character)
+12: No tape
+13: Clear buffer (CLR) must be confirmed with EX (or use ← to cancel)
+14: Memory full
+15: Speech module not present
+16: Manually entered messages cannot be started with OUT, only with STA/STP
+17: Can only repeat messages from the same originator 
+
+The real machine can use paper tape as input, but MAME doesn't support it.
+
+SOURCE: https://www.cryptomuseum.com/spy/owvl/32620/opr.htm
+
+$end
 $info=srmp3
 $mame
 INITIALIZATION:
-Running the first time, you need to init the EEPROM. You can do this by hitting [ F2 ], then F3. When the Test screen comes up, hit [ F2 ] then [ F3 ] again.
+Running the first time, you need to init the EEPROM. You can do this by hitting [ F2 ], then [ F3 ]. When the Test screen comes up, hit [ F2 ] then [ F3 ] again.
 
 SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
@@ -10925,10 +11073,16 @@ mameinfo.dat
 $end
 $info=svi318,svi328,svi318n,svi328n
 $mame
-INITIALIZATION:
+TIPS:
 To save a tape: CSAVE"x"
 
 To load a tape: CLOAD or RUN"CAS:"
+
+$end
+$info=svmu
+$mame
+INITIALIZATION:
+Press [ Ctrl ] 5 times. Press [ Left ] to highlight "Yes". Press [ Ctrl ]. The game you loaded is detected, but seems it cannot be started.
 
 $end
 $info=sweetl2_5,sweetl2_6,sweetl2_7,sweetl2_8,sweetl2_9,sweetl2_10,sweetl2_11,sweetl2_12
@@ -11129,6 +11283,17 @@ You will need to press RESET ([ F3 ]) twice at the 'DIP SW READ ERROR' and 'BACK
 
 SOURCE:
 mameinfo.dat
+
+$end
+$info=teradrive,teradrive3
+$mame
+TIPS:
+First thing to do is to change the player 3 direction controls (i/J/K/L) to the arrow keys. They are used in the DOS menu.
+
+This is a merged megadrive console and IBM PC. To play a megadrive/genesis game, turn the Boot Mode DIP Switch to MD Boot, load your cart and play. Controls: arrows to move, 3 to start/pause, right shift/control for A/B ingame.
+To use it as a PC, turn the dipswitch to PC Boot, load the "dosv406n" software-list item, and boot. You get a blueish screen with 6 choices. Use the P3 controls to move around. The choices (left to right then down): File Manager, Disk Copy, Disk Format, DOS, Set Date and Time, Configure Keys.
+
+Note that going into DOS might produce a timer error which hangs the system.
 
 $end
 $info=tf95_12,afm_113,cc_13,cv_14,congo_21,jy_12,mm_10,mb_10,nbaf_31,ngg_13,ph_04,sc_18,ss_15,totan_14,cp_16,ttt_10
@@ -11437,6 +11602,12 @@ Press [ F1 ] then [ F2 ], then press [ Z ]+[ X ]+[ C ] together; you will see th
 
 SOURCE:
 mameinfo.dat
+
+$end
+$info=torchh
+$mame
+TIPS:
+to get a list of commands, type HELP
 
 $end
 $info=tortufam
