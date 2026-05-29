@@ -1,9 +1,9 @@
-﻿# MAME GAMEINIT.DAT v0.287    Latest Update:      May  4, 2026
+﻿# MAME GAMEINIT.DAT v0.288    Latest Update:      May 29, 2026
 #                          Project started: September 10, 2015
 #           Merged to the file startup.dat:  December 17, 2024
 #
 # File designed and maintained by AntoPISA and Robbbert
-# Internal versione 12.03
+# Internal versione 12.04
 #
 # Homepage         : https://www.progettosnaps.net/gameinit.dat
 # Github repository: https://github.com/AntoPISA/MAME_SupportFiles
@@ -594,7 +594,7 @@ $end
 $info=ampkr228,ampkr228,ampkr2b1,ampkr2b2,ampkr2b4,ampkr2jspb,ampoker2,piccolop,pkrdewin,sigma2k,sigmapkr,videomat
 $mame
 INITIALIZATION:
-Turn ON Operator Key [ 9 ]. Hit the DOOR key [ O ]. After a moment, the Operator Mode will appear. Turn OFF the Operator Key [ 9 ] to allow play, resetting with [ F3 ] if needed.
+Turn ON with Operator Key [ 9 ], then Door Switch [ O ] to enter the Operator Mode. Wait a few seconds, then press Hold 1 [ Z ] to clear page. Turn OFF with Operator Key [ 9 ]. If necessary, press [F3] to reset.
 
 SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
@@ -2633,6 +2633,17 @@ There is no avoiding the NVRAM initialization process. In order to use any game 
 
 SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
+
+$info=cptshark
+$mame
+
+TIP:
+Press INSERT COIN [ 5 ], then Select [ V ] to switch between the games 'Captain Shark' and 'Cannon Bingo'.
+
+SOURCE:
+mamenfo.dat
+
+$end
 
 $end
 $info=cpu09,ivg09
