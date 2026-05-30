@@ -2644,8 +2644,6 @@ SOURCE:
 mamenfo.dat
 
 $end
-
-$end
 $info=cpu09,ivg09
 $mame
 TIPS:
@@ -4373,6 +4371,12 @@ Trivia games "No Coins" mode: if DSW "No Coins" is on, coin inputs are replaced 
 
 SOURCE:
 mameinfo.dat
+
+$end
+$info=geneve
+$mame
+INITIALIZATION:
+Start with -bios 1 (ROM V1.00). In Slot Devices, peb:slot8, choose "hfdc". In slot peb:slot8:hfdc:h1 choose "generic". In slot peb:slot8:hfdc:h2 choose "generic". In the same menu choose Reset System. There's no software lists, so you'' have to find floppy and hard drive images somewhere. The floppy disk "mdos650s.dsk" will boot. After mounting it, choose Reset System. The operating system has heaps of bugs and not much works.
 
 $end
 $info=gepoker
@@ -7836,7 +7840,7 @@ INITIALIZATION:
 Everything in the software list is rejected as unrecognised format.
 
 $end
-$info=nws1580,nws3260,nws3410,nws3720,nws3860
+$info=nws1250,nws1580,nws3260,nws3410,nws3720,nws3860
 $mame
 INITIALIZATION:
 Use the tab menu to enable all the keyboards. Type h or help to get a list of commands.
