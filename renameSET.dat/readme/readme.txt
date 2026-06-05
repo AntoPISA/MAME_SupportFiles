@@ -2,8 +2,8 @@
 ======================================
 © 2009/2026 progetto-SNAPS by AntoPISA
 
-renameSET.dat:    0.287
-Internal version: 16.04
+renameSET.dat:    0.288
+Internal version: 16.05
 
 The package contains:
 

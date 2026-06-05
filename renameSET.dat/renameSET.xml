@@ -2,15 +2,116 @@
 <renameSET>
 	<header>
 		<name>renameSET</name>
-		<description>renameSET (Apr 6 2025)</description>
-		<version>16.04</version>
-		<date>04/06/2025</date>
+		<description>renameSET (Jun 5 2026)</description>
+		<version>16.05</version>
+		<date>06/05/2026</date>
 		<author>AntoPISA</author>
 		<email>progettosnaps@gmail.com</email>
 		<homepage>http://www.progettosnaps.net/</homepage>
 		<url>http://www.progettosnaps.net/renameset</url>
-		<comment>Aligned with MAME 0.287</comment>
+		<comment>Aligned with MAME 0.288</comment>
 	</header>
+	<version version="0.288" id="727" date="2026-05-29">
+		<statistics>
+			<stat name="total_items">50097</stat>
+			<stat name="drivers">3318</stat>
+			<stat name="machines">42800</stat>
+			<stat name="parents">15125</stat>
+			<stat name="clones">27675</stat>
+			<stat name="BIOSes">80</stat>
+			<stat name="devices">7217</stat>
+			<stat name="requires_CHDs">1269</stat>
+			<stat name="use_samples">1899</stat>
+			<stat name="audio_mono">35743</stat>
+			<stat name="audio_stereo">2430</stat>
+			<stat name="audio_multichannel">1223</stat>
+			<stat name="no_audio">3404</stat>
+			<stat name="working">16528</stat>
+			<stat name="not_working">26272</stat>
+			<stat name="mechanicals">15801</stat>
+			<stat name="not_mechanicals">26999</stat>
+			<stat name="save_supported">14867</stat>
+			<stat name="save_unsupported">27933</stat>
+			<stat name="horizontal_screen">19895</stat>
+			<stat name="vertical_screen">3320</stat>
+			<stat name="raster_graphics">21888</stat>
+			<stat name="vector_graphics">109</stat>
+			<stat name="lcd_graphics">873</stat>
+			<stat name="svg_graphics">345</stat>
+			<stat name="screenless">19585</stat>
+			<stat name="one_player">25554</stat>
+			<stat name="two_players">10126</stat>
+			<stat name="three_players">395</stat>
+			<stat name="more_than_three_players">1118</stat>
+			<stat name="use_stick">711</stat>
+			<stat name="use_gambling">3648</stat>
+			<stat name="use_joystick">11714</stat>
+			<stat name="use_keyboard">3310</stat>
+			<stat name="use_keypad">2704</stat>
+			<stat name="use_lightgun">645</stat>
+			<stat name="use_mahjong">3729</stat>
+			<stat name="use_mouse">1053</stat>
+			<stat name="use_buttons_only">9809</stat>
+			<stat name="use_paddle">680</stat>
+			<stat name="use_pedal">642</stat>
+			<stat name="use_positional">100</stat>
+			<stat name="use_dial">590</stat>
+			<stat name="use_trackball">375</stat>
+			<stat name="use_hanafuda">3172</stat>
+			<stat name="total_roms">370796</stat>
+			<stat name="machines_roms">367124</stat>
+			<stat name="devices_roms">3012</stat>
+			<stat name="BIOSes_roms">660</stat>
+			<stat name="CHDs">1401</stat>
+			<stat name="sample_files">597</stat>
+			<stat name="sample_packs">76</stat>
+			<stat name="good_dumps">360174</stat>
+			<stat name="no_dumps">6773</stat>
+			<stat name="bad_dumps">5250</stat>
+			<stat name="bugs_fixed">25</stat>
+			<stat name="software_list">769</stat>
+			<stat name="software">141578</stat>
+			<stat name="active_SL">758</stat>
+			<stat name="orphan_SL">11</stat>
+			<stat name="active_software">140816</stat>
+			<stat name="orphan_software">762</stat>
+			<stat name="software_parents">97474</stat>
+			<stat name="software_clones">44104</stat>
+			<stat name="software_roms">238869</stat>
+			<stat name="software_CHD">11558</stat>
+			<stat name="supported_software">100106</stat>
+			<stat name="partially_supported_software">2173</stat>
+			<stat name="unsupported_software">39299</stat>
+		</statistics>
+		<rename_list>
+			<rename old="blhandheldlcdc" new="st7735" mID="43327" type="D"/>
+			<rename old="dreamcha" new="dreamhld" mID="49400" type="M"/>
+			<rename old="f1dream" new="f1dreama" mID="511" type="M"/>
+			<rename old="gtsers15" new="gtsers15a" mID="5015" type="M"/>
+			<rename old="hardbox" new="gpib_hardbox" mID="32211" type="D"/>
+			<rename old="mshark" new="gpib_mshark" mID="33067" type="D"/>
+			<rename old="namco" new="namco_wsg" mID="29008" type="D"/>
+			<rename old="pet_softbox" new="gpib_softbox" mID="33881" type="D"/>
+			<rename old="prophet5rev30" new="prophet5r30" mID="49677" type="D"/>
+			<rename old="psion3a_codec" new="psion_codec" mID="46541" type="D"/>
+			<rename old="remote488" new="gpib_remote488" mID="39270" type="D"/>
+			<rename old="shimpact" new="shimpactl1" mID="948" type="M"/>
+			<rename old="sknsspr" new="kaneko_rlespr" mID="29072" type="D"/>
+			<rename old="speedbala" new="speedbalb" mID="999" type="M"/>
+			<rename old="trvwza" new="trvwzs" mID="43271" type="M"/>
+			<rename old="trvwzb" new="trvwza" mID="7492" type="M"/>
+			<rename old="vt369_soc_gbox2020" new="vt4ffx_soc_gbox2020" mID="49407" type="D"/>
+			<rename old="vt369_soc_s10swap" new="vt4ffx_soc_s10swap" mID="49581" type="D"/>
+			<rename old="vt369_soc_vibesswap" new="vt4ffx_soc_vibesswap" mID="49246" type="D"/>
+		</rename_list>
+		<delete_list>
+			<delete name="decocomn" mID="28872" type="D"/>
+			<delete name="falconun" mID="48242" type="M"/>
+			<delete name="lux4105" mID="32700" type="D"/>
+			<delete name="md_rom_chinf3" mID="32877" type="D"/>
+			<delete name="vt3xx_unknown_soc_cy" mID="42248" type="D"/>
+		</delete_list>
+	</version>
 	<version version="0.287" id="726" date="2026-03-31">
 		<statistics>
 			<stat name="total_items">49860</stat>
@@ -5807,8 +5908,8 @@
 			<stat name="bugs_fixed">27</stat>
 			<stat name="software_list">629</stat>
 			<stat name="software">127579</stat>
-			<stat name="active_SL">617</stat>
-			<stat name="orphan_SL">12</stat>
+			<stat name="active_SL">616</stat>
+			<stat name="orphan_SL">13</stat>
 			<stat name="active_software">126809</stat>
 			<stat name="orphan_software">770</stat>
 			<stat name="software_parents">87138</stat>
@@ -8965,8 +9066,8 @@
 			<rename old="dio98603" new="dio98603b" mID="38616" type="D"/>
 			<rename old="hx5102" new="ti_hx5102" mID="38483" type="D"/>
 			<rename old="pnyaa" new="pnyaaa" mID="5992" type="M"/>
+			<rename old="popeyeb2" new="popeyebl" mID="39065" type="M"/>
 			<rename old="popeyebl" new="popeyeb2" mID="101" type="M"/>
-			<rename old="popeyebl" new="popeyeb2" mID="39066" type="M"/>
 			<rename old="wrally2" new="wrally2a" mID="3709" type="M"/>
 		</rename_list>
 	</version>
@@ -10391,9 +10492,9 @@
 		<rename_list>
 			<rename old="gnwmndon" new="gnw_dm53" mID="35362" type="M"/>
 			<rename old="machbrkr" new="machbrkrj" mID="3897" type="M"/>
-			<rename old="ohciusb" new="mcpx_ohci" mID="00000" type="M" note="review"/>
+			<rename old="ohciusb" new="mcpx_ohci" mID="38096" type="D"/>
 			<rename old="sbm" new="sbmj" mID="2841" type="M"/>
-			<rename old="tokyocop" new="tokyocopi" mID="00000" type="M" note="review"/>
+			<rename old="tokyocop" new="tokyocopi" mID="7963" type="M"/>
 		</rename_list>
 	</version>
 	<version version="0.184" id="623" date="2017-03-29">
@@ -14544,37 +14645,37 @@
 			<stat name="unsupported_software">42</stat>
 		</statistics>
 		<rename_list>
-			<rename old="crzmon_5" new="czmon_5" mID="00000" type="M" note="review"/>
-			<rename old="crzmon_7" new="czmon_7" mID="00000" type="M" note="review"/>
-			<rename old="crzmon_7a" new="czmon_7a" mID="00000" type="M" note="review"/>
-			<rename old="crzmon_7b" new="czmon_7b" mID="00000" type="M" note="review"/>
-			<rename old="crzmon_8" new="czmon_8" mID="00000" type="M" note="review"/>
-			<rename old="crzmon_8a" new="czmon_8a" mID="00000" type="M" note="review"/>
-			<rename old="crzmon_8b" new="czmon_8b" mID="00000" type="M" note="review"/>
-			<rename old="crzmon_8c" new="czmon_8cv" mID="00000" type="M" note="review"/>
-			<rename old="crzmon_8d" new="czmon_8d" mID="00000" type="M" note="review"/>
-			<rename old="crzmon_8e" new="czmon_8e" mID="00000" type="M" note="review"/>
-			<rename old="crzmon_8f" new="czmon_8f" mID="00000" type="M" note="review"/>
-			<rename old="crzmon_9" new="czmon_9" mID="00000" type="M" note="review"/>
-			<rename old="crzmon_9a" new="czmon_9a" mID="00000" type="M" note="review"/>
-			<rename old="crzmon_9b" new="czmon_9b" mID="00000" type="M" note="review"/>
-			<rename old="crzmon_9c" new="czmon_9c" mID="00000" type="M" note="review"/>
-			<rename old="crzmon_15" new="czmon_15" mID="00000" type="M" note="review"/>
-			<rename old="crzmon_16" new="czmon_16" mID="00000" type="M" note="review"/>
-			<rename old="crzmon13" new="czmon_13" mID="00000" type="M" note="review"/>
-			<rename old="cyclwarr" new="cyclwarra" mID="00000" type="M" note="review"/>
-			<rename old="galaga3a" new="galaga3c" mID="00000" type="M" note="review"/>
-			<rename old="galaga3" new="galaga3a" mID="00000" type="M" note="review"/>
-			<rename old="gaplus" new="galaga3" mID="00000" type="M" note="review"/>
-			<rename old="gaplusa" new="gaplusd" mID="00000" type="M" note="review"/>
-			<rename old="gapluso" new="gaplus" mID="00000" type="M" note="review"/>
-			<rename old="j80wsprt" new="j80wsprt2" mID="00000" type="M" note="review"/>
-			<rename old="karnov" new="karnova" mID="00000" type="M" note="review"/>
-			<rename old="rfjets" new="rfjetsa" mID="00000" type="M" note="review"/>
-			<rename old="sidebs" new="sidebsja" mID="00000" type="M" note="review"/>
-			<rename old="usg83" new="superten" mID="00000" type="M" note="review"/>
-			<rename old="usg252" new="usgames" mID="00000" type="M" note="review"/>
-			<rename old="usg185" new="usg187c" mID="00000" type="M" note="review"/>
+			<rename old="crzmon_15" new="czmon_15" mID="28621" type="M"/>
+			<rename old="crzmon_16" new="czmon_16" mID="28622" type="M"/>
+			<rename old="crzmon_5" new="czmon_5" mID="8911" type="M"/>
+			<rename old="crzmon_7" new="czmon_7" mID="7919" type="M"/>
+			<rename old="crzmon_7a" new="czmon_7a" mID="8258" type="M"/>
+			<rename old="crzmon_7b" new="czmon_7b" mID="8259" type="M"/>
+			<rename old="crzmon_8" new="czmon_8" mID="8260" type="M"/>
+			<rename old="crzmon_8a" new="czmon_8a" mID="8261" type="M"/>
+			<rename old="crzmon_8b" new="czmon_8b" mID="8912" type="M"/>
+			<rename old="crzmon_8c" new="czmon_8c" mID="8913" type="M"/>
+			<rename old="crzmon_8d" new="czmon_8d" mID="8914" type="M"/>
+			<rename old="crzmon_8e" new="czmon_8e" mID="8915" type="M"/>
+			<rename old="crzmon_8f" new="czmon_8f" mID="8916" type="M"/>
+			<rename old="crzmon_9" new="czmon_9" mID="8917" type="M"/>
+			<rename old="crzmon_9a" new="czmon_9a" mID="8918" type="M"/>
+			<rename old="crzmon_9b" new="czmon_9b" mID="8919" type="M"/>
+			<rename old="crzmon_9c" new="czmon_9c" mID="8920" type="M"/>
+			<rename old="crzmon13" new="czmon_13" mID="28620" type="M"/>
+			<rename old="cyclwarr" new="cyclwarra" mID="5181" type="M"/>
+			<rename old="galaga3" new="galaga3a" mID="2867" type="M"/>
+			<rename old="galaga3a" new="galaga3c" mID="1240" type="M"/>
+			<rename old="gaplus" new="galaga3" mID="3526" type="M"/>
+			<rename old="gaplusa" new="gaplusd" mID="1243" type="M"/>
+			<rename old="gapluso" new="gaplus" mID="1242" type="M"/>
+			<rename old="j80wsprt" new="j80wsprt2" mID="11324" type="M"/>
+			<rename old="karnov" new="karnova" mID="403" type="M"/>
+			<rename old="rfjets" new="rfjetsa" mID="5300" type="M"/>
+			<rename old="sidebs" new="sidebsja" mID="4918" type="M"/>
+			<rename old="usg185" new="usg187c" mID="3485" type="M"/>
+			<rename old="usg252" new="usgames" mID="3487" type="M"/>
+			<rename old="usg83" new="superten" mID="3610" type="M"/>
 		</rename_list>
 	</version>
 	<version version="0.148u2" id="583" date="2013-03-19">
@@ -14650,14 +14751,14 @@
 			<stat name="unsupported_software">42</stat>
 		</statistics>
 		<rename_list>
-			<rename old="ar_ldrb" new="ar_ldrba" mID="00000" type="M" note="review"/>
-			<rename old="ar_ldrba" new="ar_ldrb" mID="00000" type="M" note="review"/>
-			<rename old="demoderb" new="demoderbc" mID="00000" type="M" note="review"/>
-			<rename old="megat2a" new="megat2b" mID="00000" type="M" note="review"/>
-			<rename old="megat2" new="megat2a" mID="00000" type="M" note="review"/>
-			<rename old="megat3a" new="megat3b" mID="00000" type="M" note="review"/>
-			<rename old="mtlchampu" new="mtlchampu1" mID="00000" type="M" note="review"/>
-			<rename old="starblad" new="starbladj" mID="00000" type="M" note="review"/>
+			<rename old="ar_ldrb" new="ar_ldrba" mID="5400" type="M"/>
+			<rename old="ar_ldrba" new="ar_ldrb" mID="5401" type="M"/>
+			<rename old="demoderb" new="demoderbc" mID="204" type="M"/>
+			<rename old="megat2" new="megat2a" mID="9081" type="M"/>
+			<rename old="megat2a" new="megat2b" mID="10678" type="M"/>
+			<rename old="megat3a" new="megat3b" mID="7096" type="M"/>
+			<rename old="mtlchampu" new="mtlchampu1" mID="4799" type="M"/>
+			<rename old="starblad" new="starbladj" mID="3596" type="M"/>
 		</rename_list>
 	</version>
 	<version version="0.148u1" id="582" date="2013-02-11">
@@ -14733,11 +14834,11 @@
 			<stat name="unsupported_software">42</stat>
 		</statistics>
 		<rename_list>
-			<rename old="lucky74a" new="lucky74b" mID="00000" type="M" note="review"/>
-			<rename old="spool99a" new="spool99b" mID="00000" type="M" note="review"/>
-			<rename old="wwfsstaru" new="wwfsstarua" mID="00000" type="M" note="review"/>
-			<rename old="wwfsstara" new="wwfsstaru" mID="00000" type="M" note="review"/>
-			<rename old="xmena" new="xmenaa" mID="00000" type="M" note="review"/>
+			<rename old="lucky74a" new="lucky74b" mID="7189" type="M"/>
+			<rename old="spool99a" new="spool99b" mID="7430" type="M"/>
+			<rename old="wwfsstara" new="wwfsstaru" mID="5919" type="M"/>
+			<rename old="wwfsstaru" new="wwfsstarua" mID="3018" type="M"/>
+			<rename old="xmena" new="xmenaa" mID="18735" type="M"/>
 		</rename_list>
 	</version>
 	<version version="0.148" id="581" date="2013-01-11">
@@ -14813,25 +14914,25 @@
 			<stat name="unsupported_software">42</stat>
 		</statistics>
 		<rename_list>
-			<rename old="bnj" new="bnjm" mID="00000" type="M" note="review"/>
-			<rename old="imolagp" new="imolagpo" mID="00000" type="M" note="review"/>
-			<rename old="scfinals" new="scfinalso" mID="00000" type="M" note="review"/>
-			<rename old="sfz2j" new="sfz2jr1" mID="00000" type="M" note="review"/>
+			<rename old="bnj" new="bnjm" mID="271" type="M"/>
+			<rename old="imolagp" new="imolagpo" mID="5461" type="M"/>
+			<rename old="scfinals" new="scfinalso" mID="2651" type="M"/>
+			<rename old="sfz2j" new="sfz2jr1" mID="2754" type="M"/>
 		</rename_list>
 		<delete_list>
-			<delete name="ec_barx__bv" mID="00000" type="M" note="review"/>
-			<delete name="ec_casbx__c" mID="00000" type="M" note="review"/>
-			<delete name="ec_casbx__d" mID="00000" type="M" note="review"/>
-			<delete name="ec_sbarx__a5" mID="00000" type="M" note="review"/>
-			<delete name="ec_sbarx__a6" mID="00000" type="M" note="review"/>
-			<delete name="ec_sbarx__a7" mID="00000" type="M" note="review"/>
-			<delete name="ec_sbarx__a8" mID="00000" type="M" note="review"/>
-			<delete name="ec_sbarx__a9" mID="00000" type="M" note="review"/>
-			<delete name="ec_sbarx__ba" mID="00000" type="M" note="review"/>
-			<delete name="ec_sbarx__bb" mID="00000" type="M" note="review"/>
-			<delete name="ec_sbarx__bc" mID="00000" type="M" note="review"/>
-			<delete name="ec_sbarx__bd" mID="00000" type="M" note="review"/>
-			<delete name="ec_sbarx__be" mID="00000" type="M" note="review"/>
+			<delete name="ec_barx__bv" mID="20314" type="M"/>
+			<delete name="ec_casbx__c" mID="20414" type="M"/>
+			<delete name="ec_casbx__d" mID="20415" type="M"/>
+			<delete name="ec_sbarx__a5" mID="20594" type="M"/>
+			<delete name="ec_sbarx__a6" mID="20595" type="M"/>
+			<delete name="ec_sbarx__a7" mID="20596" type="M"/>
+			<delete name="ec_sbarx__a8" mID="20597" type="M"/>
+			<delete name="ec_sbarx__a9" mID="20598" type="M"/>
+			<delete name="ec_sbarx__ba" mID="20626" type="M"/>
+			<delete name="ec_sbarx__bb" mID="20627" type="M"/>
+			<delete name="ec_sbarx__bc" mID="20628" type="M"/>
+			<delete name="ec_sbarx__bd" mID="20629" type="M"/>
+			<delete name="ec_sbarx__be" mID="20630" type="M"/>
 			<delete name="trvwzha" mID="5736" type="M"/>
 			<delete name="trvwzva" mID="6738" type="M"/>
 		</delete_list>
@@ -15185,7 +15286,7 @@
 			<rename old="invrvngea" new="invrvngedu" mID="975" type="M"/>
 			<rename old="magicd2a" new="magicrd2b" mID="6975" type="M"/>
 			<rename old="magicd2b" new="magicrd2c" mID="6976" type="M"/>
-			<rename old="puzzli2" new="puzzli2s" mID="00000" type="M" note="review"/>
+			<rename old="puzzli2" new="puzzli2s" mID="5436" type="M"/>
 			<rename old="xsleena" new="xsleenaj" mID="1395" type="M"/>
 		</rename_list>
 		<delete_list>
@@ -15266,7 +15367,7 @@
 		</statistics>
 		<rename_list>
 			<rename old="beastrzb" new="beastrzrb" mID="4195" type="M"/>
-			<rename old="crusnexoc" new="crusnexod" mID="00000" type="M" note="review"/>
+			<rename old="crusnexoc" new="crusnexod" mID="15992" type="M"/>
 			<rename old="dodgectya" new="dodgectyb" mID="6951" type="M"/>
 			<rename old="dodgectyb" new="dodgectyc" mID="26476" type="M"/>
 			<rename old="enforce" new="enforcej" mID="3725" type="M"/>
@@ -15348,28 +15449,28 @@
 			<stat name="unsupported_software">42</stat>
 		</statistics>
 		<rename_list>
-			<rename old="brickzn3" new="brickznv4" mID="00000" type="M" note="review"/>
-			<rename old="dodge" new="dodgectya" mID="00000" type="M" note="review"/>
-			<rename old="exctsccrj" new="exctsccrjo" mID="00000" type="M" note="review"/>
-			<rename old="exctsccrj2" new="exctsccrj" mID="00000" type="M" note="review"/>
-			<rename old="f1lap" new="f1lapj" mID="00000" type="M" note="review"/>
-			<rename old="gigandes" new="gigandesa" mID="00000" type="M" note="review"/>
-			<rename old="gigandesj" new="gigandes" mID="00000" type="M" note="review"/>
-			<rename old="gradius3" new="gradius3j" mID="00000" type="M" note="review"/>
-			<rename old="gradius3e" new="gradius3" mID="00000" type="M" note="review"/>
-			<rename old="nbajamt1" new="nbajamte1" mID="00000" type="M" note="review"/>
-			<rename old="nbajamt2" new="nbajamte2" mID="00000" type="M" note="review"/>
-			<rename old="nbajamt3" new="nbajamte3" mID="00000" type="M" note="review"/>
-			<rename old="nbajamtn" new="nbajamten" mID="00000" type="M" note="review"/>
-			<rename old="pitboss" new="pitbossb" mID="00000" type="M" note="review"/>
-			<rename old="pitbossc" new="pitboss" mID="00000" type="M" note="review"/>
-			<rename old="pitbossb" new="pitbossc" mID="00000" type="M" note="review"/>
-			<rename old="raidndx" new="raidendx" mID="00000" type="M" note="review"/>
-			<rename old="raidndxj" new="raidendxj" mID="00000" type="M" note="review"/>
-			<rename old="raidndxu" new="raidendxu" mID="00000" type="M" note="review"/>
-			<rename old="raidndxa1" new="raidendxa1" mID="00000" type="M" note="review"/>
-			<rename old="raidndxa2" new="raidendxa2" mID="00000" type="M" note="review"/>
-			<rename old="raidndxg" new="raidendxg" mID="00000" type="M" note="review"/>
+			<rename old="brickzn3" new="brickznv4" mID="4200" type="M"/>
+			<rename old="dodge" new="dodgectya" mID="6951" type="M"/>
+			<rename old="exctsccrj" new="exctsccrjo" mID="8555" type="M"/>
+			<rename old="exctsccrj2" new="exctsccrj" mID="8555" type="M"/>
+			<rename old="f1lap" new="f1lapj" mID="4258" type="M"/>
+			<rename old="gigandes" new="gigandesa" mID="2455" type="M"/>
+			<rename old="gigandesj" new="gigandes" mID="5816" type="M"/>
+			<rename old="gradius3" new="gradius3j" mID="1924" type="M"/>
+			<rename old="gradius3e" new="gradius3" mID="3295" type="M"/>
+			<rename old="nbajamt1" new="nbajamte1" mID="2214" type="M"/>
+			<rename old="nbajamt2" new="nbajamte2" mID="2215" type="M"/>
+			<rename old="nbajamt3" new="nbajamte3" mID="2216" type="M"/>
+			<rename old="nbajamtn" new="nbajamten" mID="16257" type="M"/>
+			<rename old="pitboss" new="pitbossb" mID="5115" type="M"/>
+			<rename old="pitbossb" new="pitbossc" mID="7477" type="M"/>
+			<rename old="pitbossc" new="pitboss" mID="7738" type="M"/>
+			<rename old="raidndx" new="raidendx" mID="8834" type="M"/>
+			<rename old="raidndxa1" new="raidendxa1" mID="4891" type="M"/>
+			<rename old="raidndxa2" new="raidendxa2" mID="5711" type="M"/>
+			<rename old="raidndxg" new="raidendxg" mID="4892" type="M"/>
+			<rename old="raidndxj" new="raidendxj" mID="4893" type="M"/>
+			<rename old="raidndxu" new="raidendxu" mID="8662" type="M"/>
 		</rename_list>
 	</version>
 	<version version="0.146u5" id="575" date="2012-08-20">
@@ -15445,26 +15546,26 @@
 			<stat name="unsupported_software">42</stat>
 		</statistics>
 		<rename_list>
-			<rename old="ec_spbxd" new="ec_spbdx" mID="00000" type="M" note="review"/>
-			<rename old="ec_unk1" new="ec_spbdx__d" mID="00000" type="M" note="review"/>
-			<rename old="ep_hmmlt" new="ep_homer" mID="00000" type="M" note="review"/>
-			<rename old="ep_itj3a" new="ep_itjb3a" mID="00000" type="M" note="review"/>
-			<rename old="jujub" new="jujuba" mID="00000" type="M" note="review"/>
-			<rename old="kingpinm" new="maxideal" mID="00000" type="M" note="review"/>
-			<rename old="m4addrcb" new="m4addrcc" mID="00000" type="M" note="review"/>
-			<rename old="m4andycpd" new="m4andycpdut" mID="00000" type="M" note="review"/>
-			<rename old="m4bigchfd" new="m4bigchd" mID="00000" type="M" note="review"/>
-			<rename old="m4bja" new="m4bjacka" mID="00000" type="M" note="review"/>
-			<rename old="m4dbldmn" new="m4dbldm" mID="00000" type="M" note="review"/>
-			<rename old="m4rgsa" new="m4ready" mID="00000" type="M" note="review"/>
-			<rename old="m4tpcl" new="m4typcl" mID="00000" type="M" note="review"/>
-			<rename old="m5locka" new="m5lock13" mID="00000" type="M" note="review"/>
-			<rename old="m5lockcla" new="m5lockcl15" mID="00000" type="M" note="review"/>
-			<rename old="megat4c" new="megat4d" mID="00000" type="M" note="review"/>
-			<rename old="plus4" new="plus4n" mID="00000" type="M" note="review"/>
-			<rename old="sc1cshwzc" new="sc1cshwzb" mID="00000" type="M" note="review"/>
-			<rename old="sc2luvv3" new="sc2luvv4" mID="00000" type="M" note="review"/>
-			<rename old="thndzone" new="thndzonea" mID="00000" type="M" note="review"/>
+			<rename old="ec_spbxd" new="ec_spbdx" mID="12560" type="M"/>
+			<rename old="ec_unk1" new="ec_spbdx__d" mID="12561" type="M"/>
+			<rename old="ep_hmmlt" new="ep_homer" mID="20937" type="M"/>
+			<rename old="ep_itj3a" new="ep_itjb3a" mID="14030" type="M"/>
+			<rename old="jujub" new="jujuba" mID="6402" type="M"/>
+			<rename old="kingpinm" new="maxideal" mID="6718" type="M"/>
+			<rename old="m4addrcb" new="m4addrcc" mID="11412" type="M"/>
+			<rename old="m4andycpd" new="m4andycpdut" mID="11420" type="M"/>
+			<rename old="m4bigchfd" new="m4bigchd" mID="11462" type="M"/>
+			<rename old="m4bja" new="m4bjacka" mID="11473" type="M"/>
+			<rename old="m4dbldmn" new="m4dbldm" mID="11581" type="M"/>
+			<rename old="m4rgsa" new="m4ready" mID="24651" type="M"/>
+			<rename old="m4tpcl" new="m4typcl" mID="11948" type="M"/>
+			<rename old="m5locka" new="m5lock13" mID="12146" type="M"/>
+			<rename old="m5lockcla" new="m5lockcl15" mID="12148" type="M"/>
+			<rename old="megat4c" new="megat4d" mID="18857" type="M"/>
+			<rename old="parodiusa" new="parodiuse" mID="9123" type="M"/>
+			<rename old="plus4" new="plus4n" mID="33944" type="M"/>
+			<rename old="sc1cshwzc" new="sc1cshwzb" mID="28391" type="M"/>
+			<rename old="thndzone" new="thndzonea" mID="3480" type="M"/>
 		</rename_list>
 		<delete_list>
 			<delete name="ac1clbmna" mID="19681" type="M"/>
@@ -15473,8 +15574,9 @@
 			<delete name="ec_supbx" mID="12566" type="M"/>
 			<delete name="ep_simbg" mID="10828" type="M"/>
 			<delete name="j80r66" mID="11316" type="M"/>
+			<delete name="m4addrcc" mID="36741" type="M"/>
 			<delete name="m4bigbenc" mID="11458" type="M"/>
-			<delete name="m4blkwht" mID="11481" type="M"/>
+			<delete name="m4blkwht" mID="11518" type="M"/>
 			<delete name="m4calamab" mID="11506" type="M"/>
 			<delete name="m4dcrazy" mID="13335" type="M"/>
 			<delete name="m4frtlt" mID="11621" type="M"/>
@@ -15492,9 +15594,9 @@
 			<delete name="m4ticgld" mID="11916" type="M"/>
 			<delete name="m4whaton" mID="11969" type="M"/>
 			<delete name="m5fusira" mID="12090" type="M"/>
-			<delete name="sc_unsrt" mID="13410" type="M"/>
 			<delete name="sc2catms4" mID="19007" type="M"/>
 			<delete name="sc2cops1" mID="19050" type="M"/>
+			<delete name="sc2luvv3" mID="36945" type="M"/>
 		</delete_list>
 	</version>
 	<version version="0.146u4" id="574" date="2012-07-30">
@@ -15573,11 +15675,11 @@
 			<rename old="50lions" new="50lionsa" mID="10665" type="M"/>
 			<rename old="50lionsa" new="50lions" mID="10666" type="M"/>
 			<rename old="ac1sptb" new="pr_sptb" mID="14210" type="M"/>
-			<rename old="botss" new="botss11" mID="00000" type="M" note="review"/>
-			<rename old="botssa" new="botss11" mID="00000" type="M" note="review"/>
-			<rename old="cristals" new="crystals" mID="00000" type="M"/>
+			<rename old="botss" new="botss11" mID="4811" type="M"/>
+			<rename old="botssa" new="botss" mID="8735" type="M"/>
+			<rename old="cristals" new="crystals" mID="10672" type="M"/>
 			<rename old="driftout" new="driftoutj" mID="2190" type="M"/>
-			<rename old="dynduke" new="dyndukea" mID="00000" type="M" note="review"/>
+			<rename old="dynduke" new="dyndukea" mID="19588" type="M"/>
 			<rename old="m5blind" new="m5bling" mID="12003" type="M"/>
 			<rename old="m5clowna" new="m5clown13" mID="12031" type="M"/>
 			<rename old="mk2r32" new="mk2r32e" mID="1157" type="M"/>
@@ -15669,14 +15771,14 @@
 			<stat name="unsupported_software">42</stat>
 		</statistics>
 		<rename_list>
-			<rename old="crusnwld" new="crusnwld24" mID="00000" type="M" note="review"/>
+			<rename old="crusnwld" new="crusnwld24" mID="6189" type="M"/>
 			<rename old="daioh" new="daioha" mID="3513" type="M"/>
 			<rename old="dbz" new="dbza" mID="3992" type="M"/>
 			<rename old="freekickb" new="freekickb1" mID="3634" type="M"/>
 			<rename old="megat3cb" new="megat3caa" mID="9082" type="M"/>
 			<rename old="megat4sn" new="megat4snj" mID="7305" type="M"/>
 			<rename old="scudp" new="scudplus" mID="5839" type="M"/>
-			<rename old="sfchamp24o" new="sfchampo" mID="00000" type="M" note="review"/>
+			<rename old="sfchamp24o" new="sfchampo" mID="8688" type="M"/>
 		</rename_list>
 	</version>
 	<version version="0.146u2" id="572" date="2012-07-02">
@@ -15756,7 +15858,7 @@
 			<rename old="raiden" new="raidenb" mID="1512" type="M"/>
 			<rename old="raidenu" new="raidenua" mID="9152" type="M"/>
 			<rename old="raidenua" new="raidenu" mID="8598" type="M"/>
-			<rename old="tx1" new="tx1jc" mID="00000" type="M" note="review"/>
+			<rename old="tx1" new="tx1jc" mID="6094" type="M"/>
 			<rename old="tx1a" new="tx1" mID="5579" type="M"/>
 			<rename old="wargods" new="wargodsb" mID="3708" type="M"/>
 		</rename_list>
@@ -15834,39 +15936,39 @@
 			<stat name="unsupported_software">42</stat>
 		</statistics>
 		<rename_list>
-			<rename old="bzone" new="bzonea" mID="00000" type="M" note="review"/>
-			<rename old="bzone2" new="bzone" mID="00000" type="M" note="review"/>
-			<rename old="crszonea" new="crszonec" mID="00000" type="M" note="review"/>
-			<rename old="crszone" new="crszonea" mID="00000" type="M" note="review"/>
-			<rename old="crszoneb" new="crszone" mID="00000" type="M" note="review"/>
-			<rename old="deshoros" new="destiny" mID="00000" type="M" note="review"/>
-			<rename old="dynduke" new="dyndukej" mID="00000" type="M" note="review"/>
-			<rename old="dyndukef" new="dyndukeu" mID="00000" type="M" note="review"/>
-			<rename old="dbldyn" new="dbldynj" mID="00000" type="M" note="review"/>
-			<rename old="dbldynf" new="dbldynu" mID="00000" type="M" note="review"/>
-			<rename old="excitebk" new="excitebka" mID="00000" type="M" note="review"/>
-			<rename old="excitebkj" new="excitebk" mID="00000" type="M" note="review"/>
-			<rename old="gprider1" new="gprideru" mID="00000" type="M" note="review"/>
-			<rename old="harley" new="harleya" mID="00000" type="M" note="review"/>
-			<rename old="harleyb" new="harley" mID="00000" type="M" note="review"/>
-			<rename old="iceclimb" new="iceclimba" mID="00000" type="M" note="review"/>
-			<rename old="iceclimbj" new="iceclimb" mID="00000" type="M" note="review"/>
-			<rename old="iceclmrj" new="iceclmrd" mID="00000" type="M" note="review"/>
-			<rename old="imgfighto" new="imgfightj" mID="00000" type="M" note="review"/>
-			<rename old="machridrj" new="machridra" mID="00000" type="M" note="review"/>
-			<rename old="smgolf" new="smgolfb" mID="00000" type="M" note="review"/>
-			<rename old="smgolfb" new="smgolf" mID="00000" type="M" note="review"/>
-			<rename old="suprmrio" new="suprmrioa" mID="00000" type="M" note="review"/>
-			<rename old="suprmrioa" new="suprmrio" mID="00000" type="M" note="review"/>
-			<rename old="vsbballj" new="vsbballjb" mID="00000" type="M" note="review"/>
-			<rename old="vsbballjb" new="vsbballj" mID="00000" type="M" note="review"/>
-			<rename old="vssoccer" new="vssoccera" mID="00000" type="M" note="review"/>
-			<rename old="vssoccerj" new="vssoccer" mID="00000" type="M" note="review"/>
-			<rename old="vstennis" new="vstennisa" mID="00000" type="M" note="review"/>
-			<rename old="vstennisj" new="vstennis" mID="00000" type="M" note="review"/>
-			<rename old="wexpressb2" new="wexpressb3" mID="00000" type="M" note="review"/>
-			<rename old="wexpressb" new="wexpressb2" mID="00000" type="M" note="review"/>
-			<rename old="wexpress" new="wexpressb" mID="00000" type="M" note="review"/>
+			<rename old="bzone" new="bzonea" mID="150" type="M"/>
+			<rename old="bzone2" new="bzone" mID="202" type="M"/>
+			<rename old="crszone" new="crszonea" mID="8646" type="M"/>
+			<rename old="crszonea" new="crszonec" mID="8910" type="M"/>
+			<rename old="crszoneb" new="crszone" mID="9107" type="M"/>
+			<rename old="dbldyn" new="dbldynj" mID="5946" type="M"/>
+			<rename old="dbldynf" new="dbldynu" mID="1864" type="M"/>
+			<rename old="deshoros" new="destiny" mID="7397" type="M"/>
+			<rename old="dynduke" new="dyndukej" mID="5948" type="M"/>
+			<rename old="dyndukef" new="dyndukeu" mID="1869" type="M"/>
+			<rename old="excitebk" new="excitebka" mID="2589" type="M"/>
+			<rename old="excitebkj" new="excitebk" mID="2696" type="M"/>
+			<rename old="gprider1" new="gprideru" mID="5319" type="M"/>
+			<rename old="harley" new="harleya" mID="5346" type="M"/>
+			<rename old="harleyb" new="harley" mID="10639" type="M"/>
+			<rename old="iceclimb" new="iceclimba" mID="2606" type="M"/>
+			<rename old="iceclimbj" new="iceclimb" mID="3792" type="M"/>
+			<rename old="iceclmrj" new="iceclmrd" mID="2703" type="M"/>
+			<rename old="imgfighto" new="imgfightj" mID="1775" type="M"/>
+			<rename old="machridrj" new="machridra" mID="3802" type="M"/>
+			<rename old="smgolf" new="smgolfb" mID="2655" type="M"/>
+			<rename old="smgolfb" new="smgolf" mID="4402" type="M"/>
+			<rename old="suprmrio" new="suprmrioa" mID="2659" type="M"/>
+			<rename old="suprmrioa" new="suprmrio" mID="6447" type="M"/>
+			<rename old="vsbballj" new="vsbballjb" mID="2781" type="M"/>
+			<rename old="vsbballjb" new="vsbballj" mID="4464" type="M"/>
+			<rename old="vssoccer" new="vssoccera" mID="2673" type="M"/>
+			<rename old="vssoccerj" new="vssoccer" mID="8252" type="M"/>
+			<rename old="vstennis" new="vstennisa" mID="2674" type="M"/>
+			<rename old="vstennisj" new="vstennis" mID="4787" type="M"/>
+			<rename old="wexpress" new="wexpressb" mID="962" type="M"/>
+			<rename old="wexpressb" new="wexpressb2" mID="963" type="M"/>
+			<rename old="wexpressb2" new="wexpressb3" mID="2784" type="M"/>
 		</rename_list>
 	</version>
 	<version version="0.146" id="570" date="2012-05-21">
@@ -15942,13 +16044,13 @@
 			<stat name="unsupported_software">42</stat>
 		</statistics>
 		<rename_list>
-			<rename old="gt5" new="gtsers15" mID="00000" type="M" note="review"/>
-			<rename old="hyperbbc" new="hypbbc2p" mID="00000" type="M" note="review"/>
-			<rename old="hyperbbck" new="hypbbc2pk" mID="36741" type="M"/>
-			<rename old="nzerotea" new="nzeroteam" mID="36945" type="M"/>
-			<rename old="samsh5sph" new="samsh5spho" mID="6026" type="M"/>
-			<rename old="samsh5spn" new="samsh5sph" mID="00000" type="M" note="review"/>
-			<rename old="suprpkr1" new="suprpokra" mID="00000" type="M" note="review"/>
+			<rename old="gt5" new="gtsers15" mID="5015" type="M"/>
+			<rename old="hyperbbc" new="hypbbc2p" mID="8160" type="M"/>
+			<rename old="hyperbbck" new="hypbbc2pk" mID="8161" type="M"/>
+			<rename old="nzerotea" new="nzeroteam" mID="4886" type="M"/>
+			<rename old="samsh5sph" new="samsh5spho" mID="6003" type="M"/>
+			<rename old="samsh5spn" new="samsh5sph" mID="6026" type="M"/>
+			<rename old="suprpkr1" new="suprpokra" mID="8906" type="M"/>
 		</rename_list>
 	</version>
 	<version version="0.145u8" id="569" date="2012-05-07">
@@ -16025,12 +16127,12 @@
 		</statistics>
 		<rename_list>
 			<rename old="am_uslot" new="suprstar" mID="8338" type="M"/>
-			<rename old="babypac" new="babypac2" mID="00000" type="M" note="review"/>
+			<rename old="babypac" new="babypac2" mID="9205" type="M"/>
 			<rename old="circusse" new="springbd" mID="6412" type="M"/>
 			<rename old="gt103a2" new="gtsers12" mID="5014" type="M"/>
-			<rename old="gt103a3" new="gtsers14" mID="00000" type="M" note="review"/>
+			<rename old="gt103a3" new="gtsers14" mID="19481" type="M"/>
 			<rename old="spacefb" new="spacefbe2" mID="142" type="M"/>
-			<rename old="spacefbu" new="spacefb" mID="00000" type="M" note="review"/>
+			<rename old="spacefbu" new="spacefb" mID="9155" type="M"/>
 			<rename old="sshooter" new="sshooter17" mID="3697" type="M"/>
 		</rename_list>
 	</version>
@@ -16107,29 +16209,29 @@
 			<stat name="unsupported_software">42</stat>
 		</statistics>
 		<rename_list>
-			<rename old="sc4ggame" new="sc4ggtb" mID="14616" type="M"/>
-			<rename old="sc4ggamee" new="sc4ggtba" mID="00000" type="M"/>
-			<rename old="sc4ggameh" new="sc4ggame" mID="00000" type="M"/>
-			<rename old="sc4ggameo" new="sc4ggtbb" mID="00000" type="M" note="review"/>
-			<rename old="sc4ggg" new="sc4gggtb" mID="14666" type="M"/>
-			<rename old="sc4ggga" new="sc4ggg" mID="00000" type="M" note="review"/>
-			<rename old="sc4gggj" new="sc4gggtba" mID="00000" type="M" note="review"/>
-			<rename old="sc4mowowd" new="sc4bwow" mID="00000" type="M" note="review"/>
-			<rename old="sc4mowowe" new="sc4bwowa" mID="00000" type="M" note="review"/>
-			<rename old="sc4mowowf" new="sc4mwwtb" mID="00000" type="M" note="review"/>
-			<rename old="sc4mowowg" new="sc4mwwtba" mID="00000" type="M" note="review"/>
-			<rename old="sc4mowowh" new="sc4mwwtbb" mID="00000" type="M" note="review"/>
-			<rename old="sc4mowowi" new="sc4mwwtbc" mID="00000" type="M" note="review"/>
-			<rename old="sc4mowowj" new="sc4mwwtbd" mID="00000" type="M" note="review"/>
-			<rename old="sc4pacmnc" new="sc4pacqp" mID="00000" type="M" note="review"/>
-			<rename old="sc4pacmnd" new="sc4pacqpa" mID="00000" type="M" note="review"/>
-			<rename old="sc4pacmne" new="sc4pacqpb" mID="00000" type="M" note="review"/>
+			<rename old="sc_pacmn" new="sc4pacmn" mID="13669" type="M"/>
+			<rename old="sc4ggame" new="sc4ggtb" mID="13571" type="M"/>
+			<rename old="sc4ggamee" new="sc4ggtba" mID="14686" type="M"/>
+			<rename old="sc4ggameh" new="sc4ggame" mID="50461" type="M"/>
+			<rename old="sc4ggameo" new="sc4ggtbb" mID="14687" type="M"/>
+			<rename old="sc4ggg" new="sc4gggtb" mID="14684" type="M"/>
+			<rename old="sc4ggga" new="sc4ggg" mID="14666" type="M"/>
+			<rename old="sc4gggj" new="sc4gggtba" mID="14685" type="M"/>
+			<rename old="sc4mowowd" new="sc4bwow" mID="14264" type="M"/>
+			<rename old="sc4mowowe" new="sc4bwowa" mID="14265" type="M"/>
+			<rename old="sc4mowowf" new="sc4mwwtb" mID="14947" type="M"/>
+			<rename old="sc4mowowg" new="sc4mwwtba" mID="14948" type="M"/>
+			<rename old="sc4mowowh" new="sc4mwwtbb" mID="14949" type="M"/>
+			<rename old="sc4mowowi" new="sc4mwwtbc" mID="14950" type="M"/>
+			<rename old="sc4mowowj" new="sc4mwwtbd" mID="14951" type="M"/>
+			<rename old="sc4pacmnd" new="sc4pacqpa" mID="14983" type="M"/>
+			<rename old="sc4pacmne" new="sc4pacqpb" mID="14984" type="M"/>
 			<rename old="unkmeyco" new="casbjack" mID="8809" type="M"/>
 		</rename_list>
 		<delete_list>
 			<delete name="ad5u1337" mID="14143" type="M"/>
-			<delete name="sc4ggame" mID="00000" type="M" note="review"/>
-			<delete name="sc4ggamee" mID="00000" type="M" note="review"/>
+			<delete name="sc4ggame" mID="14616" type="M"/>
+			<delete name="sc4ggamee" mID="50460" type="M"/>
 		</delete_list>
 	</version>
 	<version version="0.145u6" id="567" date="2012-04-08">
@@ -17902,6 +18004,7 @@
 			<rename old="sc_dyna" new="sc4dyna" mID="13537" type="M"/>
 			<rename old="sc_easy" new="sc4easy" mID="13538" type="M"/>
 			<rename old="sc_emmer" new="sc4emmer" mID="13539" type="M"/>
+			<rename old="sc_evol" new="ad5evol" mID="13183" type="M"/>
 			<rename old="sc_evol" new="ad5evol" mID="13183" type="M"/>
 			<rename old="sc_eyes" new="ad5eyes" mID="13182" type="M"/>
 			<rename old="sc_fast" new="sc5fast" mID="13890" type="M"/>
@@ -23145,6 +23248,10 @@
 			<rename old="tighookv2" new="tighook" mID="7806" type="M"/>
 			<rename old="tighookv3" new="tighookv2" mID="7814" type="M"/>
 		</rename_list>
+		<delete_list>
+			<delete name="atworld" mID="7590" type="M"/>
+			<delete name="atworlda" mID="7591" type="M"/>
+		</delete_list>
 	</version>
 	<version version="0.133u1" id="492" date="2009-08-03">
 		<statistics>
@@ -41148,10 +41255,6 @@
 			<stat name="partially_supported_software">0</stat>
 			<stat name="unsupported_software">0</stat>
 		</statistics>
-		<delete_list>
-			<delete name="tgm2" mID="5768" type="M"/>
-			<delete name="tgm2p" mID="7487" type="M"/>
-		</delete_list>
 	</version>
 	<version version="0.99u4" id="271" date="2005-08-24">
 		<statistics>

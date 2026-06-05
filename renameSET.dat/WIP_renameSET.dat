@@ -1,5 +1,5 @@
 ﻿#     ==========================================================
-#     MAME RENAMESET.DAT v0.288     Latest update:  May 30, 2026
+#     MAME RENAMESET.DAT v0.288     Latest update:  Jun  5, 2026
 #     ==========================================================
 #
 #     Home-page: https://www.progettosnaps.net/renameset/
@@ -18,32 +18,48 @@
 #
 #               Internal Version 16.05
 #
-#       802 removed machines/devices/bios overall in the history of MAME
-#     6.933 renamed machines/devices/bios overall in the history of MAME
+#       810 removed machines/devices/bios overall in the history of MAME
+#     6.939 renamed machines/devices/bios overall in the history of MAME
 #
-#     *** / mID: 00000                  (in dat): Rename/Delete to be reviewed (to do 416 items)
+#     *** / mID: 00000                  (in dat): Rename/Delete to be reviewed (to do 409 items)
 #          Rename/Delete Software Lists (in dat): From version 0.180 to 0.230 already rechecked
 #
 #
 $0.288 [#727]
 2026/05/29
-50.097 total items, 3.318 drivers (+12), 42.800 machines (+150), 15.125 parents (+79), 27.675 clones (+71), 80 BIOSes, 7.217 devices (+87), 1.269 requires CHDs (+3), 1.899 use samples (+1), 35.743 audio mono (+114), 2.430 audio stereo (+19), 1.223 audio multichannel (+11), 3.404 no audio (+6)
+50.097 total items, 3.318 drivers (+12), 42.800 machines (-1/+151), 15.125 parents (+79), 27.675 clones (+71), 80 BIOSes, 7.217 devices (-4/+91), 1.269 requires CHDs (+3), 1.899 use samples (+1), 35.743 audio mono (+114), 2.430 audio stereo (+19), 1.223 audio multichannel (+11), 3.404 no audio (+6)
 16.528 working (+46), 26.272 not working (+104), 15.801 mechanicals (+32), 26.999 not mechanicals (+118), 14.867 save supported (+54), 27.933 save unsupported (+96)
 19.895 horizontal screen (+110), 3.320 vertical screen (+12), 21.888 raster graphics (+97), 109 vector graphics, 873 lcd graphics (+22), 345 svg graphics (+3), 19.585 screenless (+28), 25.554 one player (+56), 10.126 two players (+42), 395 three players (+9), 1.118 more than three players (+13)
 711 use stick (+3), 3.648 use gambling (+26), 11.714 use joystick (+41), 3.310 use keyboard (+21), 2.704 use keypad (+17), 645 use lightgun (+13), 3.729 use mahjong (+10), 1.053 use mouse (+5), 9.809 use buttons only (+19), 680 use paddle (+2), 642 use pedal (+2), 100 use positional, 590 use dial (+2), 375 use trackball (+1), 3.172 use hanafuda (+4)
 370.796 total roms (+906), 367.124 machines roms (+902), 3.012 devices roms (+5), 660 BIOSes roms (-1), 1.401 CHDs (+3), 597 sample files, 76 sample packs, 360.174 good dumps (+811), 6.773 no dumps (+68), 5.250 bad dumps (+30), 25 bugs fixed
-769 software list (+11), 141.578 software (+454), 758 active SL (+11), 11 orphan SL, 140.816 active software (+454), 762 orphan software, 97.474 software parents (+378), 44.104 software clones (+76)
+769 software list (+11), 141.578 software (-5/+459), 758 active SL (+11), 11 orphan SL, 140.816 active software (-5/+459), 762 orphan software, 97.474 software parents (+378), 44.104 software clones (+76)
 238.869 software roms (+523), 11.558 software CHD (+1), 100.106 supported software (+313), 2.173 partially supported software (+40), 39.299 unsupported software (+101)
-7 ren (7/0/0):
-dreamcha           > dreamhld          (mID: 00000) M
-f1dream            > f1dreama          (mID: 00000) M
-gtsers15           > gtsers15a         (mID: 00000) M
-shimpact           > shimpactl1        (mID: 00000) M
-speedbala          > speedbalb         (mID: 00000) M
-trvwza             > trvwzs            (mID: 00000) M
-trvwzb             > trvwza            (mID: 00000) M
-0 del (0/0/0):
--
+19 ren (7/12/0):
+blhandheldlcdc          > st7735                 (mID: 43327) D
+dreamcha                > dreamhld               (mID: 49400) M
+f1dream                 > f1dreama               (mID:   511) M
+gtsers15                > gtsers15a              (mID:  5015) M
+hardbox                 > gpib_hardbox           (mID: 32211) D
+mshark                  > gpib_mshark            (mID: 33067) D
+namco                   > namco_wsg              (mID: 29008) D
+pet_softbox             > gpib_softbox           (mID: 33881) D
+prophet5rev30           > prophet5r30            (mID: 49677) D
+psion3a_codec           > psion_codec            (mID: 46541) D
+remote488               > gpib_remote488         (mID: 39270) D
+shimpact                > shimpactl1             (mID:   948) M
+sknsspr                 > kaneko_rlespr          (mID: 29072) D
+speedbala               > speedbalb              (mID:   999) M
+trvwza                  > trvwzs                 (mID: 43271) M
+trvwzb                  > trvwza                 (mID:  7492) M
+vt369_soc_gbox2020      > vt4ffx_soc_gbox2020    (mID: 49407) D
+vt369_soc_s10swap       > vt4ffx_soc_s10swap     (mID: 49581) D
+vt369_soc_vibesswap     > vt4ffx_soc_vibesswap   (mID: 49246) D
+5 del (1/4/0):
+decocomn                                         (mID: 28872) D
+falconun                                         (mID: 48242) M
+lux4105                                          (mID: 32700) D
+md_rom_chinf3                                    (mID: 32877) D
+vt3xx_unknown_soc_cy                             (mID: 42248) D
 
 
 $0.287 [#726]
