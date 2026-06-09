@@ -4,6 +4,7 @@ MAME Support Files v0.288
 
 The following files have been updated in this MAME cycle:
 - Category pack
+- version pack
 
 
 They will not be updated in this cycle:
@@ -16,7 +17,6 @@ They will not be updated in this cycle:
 - MESS-Info.dat
 - renameSET.dat
 - series.ini
-- version pack
 
 
 Home-page: https://www.progettosnaps.net/support/
