@@ -1,4 +1,4 @@
-﻿MAME SERIES.ini 0.287 (Apr  7, 2026)
+﻿MAME SERIES.ini 0.288 (Jun 10, 2026)
 © AntoPISA     www.progettoSNAPS.net
 ==================================== 
 
@@ -12,10 +12,15 @@ In the file are both "Series" recognized as such (thus games and their official 
 guages or with minor variations (official and unofficial).
 
 
+2026/06/00 12.04 MAME 0.288 (720 supported Series - 12,417 items):
+==================================================================
+Items RENAMED     (4) : (gtsers15) to (gtsers15a), (shimpact) to (shimpactl1), (trvwza) to (trvwzs) and (trvwzb) to (trvwza).
+Series UPDATED   (14) : "Cosmic Monsters", "Cuty Line", "Fighting Vipers", "Golden Tee", "High Impact Football", "Ketsui: Kizuna Jigoku Tachi", "Looping", "Lucky 8 Lines", "Pac-Man", "Pole Position", "Ridge Racer", "Time Killers", "Trivia ? Whiz" and "Trivia".
+
+
 2026/04/07 12.03 MAME 0.287 (720 supported Series - 12,401 items):
 ==================================================================
 Series UPDATED   (10) : "Darkstalkers", "Gals Panic", "Pac-Man", "Pinball Action", "Power Drift", "Power Instinct", "Quarterback", "Splash!", "Time Crisis" and "Triv Quiz".
-
 
 2026/03/15 12.02 MAME 0.286 (720 supported Series - 12,391 items):
 ==================================================================
