@@ -126,7 +126,7 @@ Source changes:
 - neogeo.c: Fix memory leak, clean up inputs a bit [Alex Jackson].
 - Added eeprompar.*, implementing a simple interface for parallel [Aaron Giles].
 - Created atari_eeprom_device which wraps a 2804 or 2816 EEPROM with the standard Atari write-locking mechanism. Updated all drivers to use this, and removed all EEPROM stuff from atarigen [Aaron Giles].
-- wd_fdc: Don't switch off the motor when the fdc doesn't have a motor control pin [O. Galibert, Duke].
+- wd_fdc: Don't switch off the motor when the fdc doesn't have a motor control pin [Olivier Galibert, Duke].
 - Assorted fixes based on PCB observations [system11]:
   * galpanic.c: Fixed ROM names for newfant and added new set.
   * splash.c: Adjusted msm5205 clocks to proper values.

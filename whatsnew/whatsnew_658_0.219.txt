@@ -354,7 +354,7 @@ Source changes:
   * Added support for evaluating expressions in parameters when netlist is created;
   * Added support for potentiometers to SPICE format conversion.
 - sound/mm5837.cpp: Measured frequency versus supply voltage [Couriersud].
-- cpu/ks0164: Added preliminary Samsung KS0164 disassembler [David Carne, O. Galibert].
+- cpu/ks0164: Added preliminary Samsung KS0164 disassembler [David Carne, Olivier Galibert].
 - machine/spg2xx_video.cpp: Removed row scroll offset hack. Problematic cases where different games in multi-game systems required different values are fixed [David Haywood].
 - nes_vt.cpp: Untangled from NES state class and NES controller bus [David Haywood].
 - cpu/spc700: Fixed TCLR1 and TSET1 operations, and removed page-crossing penalty on Y-relative accesses [David Viens].
@@ -369,7 +369,7 @@ Source changes:
 - video/k052109.cpp Fixed and cleaned up tilemap scroll effects (fixes fuusenpn and MT6790) [MetalliC].
 - bus/ti99: Added VRAM size option to Enhanced Video Processor card [Michael Zapf].
 - machine/sunplus_gcm394.cpp: Re-worked some of the DMA and NAND Flash handling so that jak_tsm loads more code [N. Gilbert].
-- cpu/xavix2: Added preliminary Xavix 2 CPU emulation and disassembler [O. Galibert, N. Gilbert].
+- cpu/xavix2: Added preliminary Xavix 2 CPU emulation and disassembler [Olivier Galibert, N. Gilbert].
 - cpu/romp: Added preliminary IBM Research/Office Products Division Microprocessor (ROMP) device [Patrick Mackinlay].
 - konendev.cpp: Hooked up H8/3007 "IFU" CPU [R. Belmont].
 - Added a tip on how to enter the debugger to the online documentation [R. Belmont].
@@ -396,7 +396,7 @@ Source changes:
   * Hooked up software wave-in channel (used by jak_care for voices).
 - cpu/unsp: Implemented MULS and FIR_MOV operations [Ryan Holtz, N. Gilbert, smf].
 - audio/elan_eu3a05.cpp: Added OKI ADPCM decoding [Ryan Holtz].
-- 1942.cpp: Fixed sprite priorities, implemented sprite line buffering, fixed logo on title screen, and improved interrupt timing [Ryan Holtz, David Haywood, smf, O. Galibert].
+- 1942.cpp: Fixed sprite priorities, implemented sprite line buffering, fixed logo on title screen, and improved interrupt timing [Ryan Holtz, David Haywood, smf, Olivier Galibert].
 - machine/spg2xx_io.cpp: Added watchdog timer support and rudimentary SPI support [Ryan Holtz].
 - machine/i2cmem.cpp: Added 24C04 device [Ryan Holtz].
 - Split spg2xx_jakks.cpp into separate files for plain, game-key and touch variants [Ryan Holtz].

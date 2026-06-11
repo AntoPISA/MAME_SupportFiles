@@ -27,7 +27,7 @@ Strider (USA, B-Board 90629B-3, Street Fighter II conversion) [system11]
 
 New Machines Marked as NOT_WORKING
 ----------------------------------
-Labeled 'WU- MARY-1A [Felipe Sanches]
+Labeled 'WU- MARY-1A [Felipe Corrêa da Silva Sanches]
 Didact md6802 [Joakim Larsson]
 Didact mp68a [Joakim Larsson]
 Esselte 100 [Joakim Larsson]
@@ -197,7 +197,7 @@ Source changes:
 - m68k: Fix 020+ bfins instruction results and flags [Till Harbaum].
 - fidelz80: Redumped CC10B PRG ROM [Berger].
 - rf5c400: Added external memory r/w function [Ville Linde].
-- marywu: Most of the hardware has been mapped by analysing the PCB tracks. This set of commits include: a video layout with all 30 LEDs 13 double-digit 7seg modules an improved memory map hooking up the couple AY8910-3 chips, 2kb of Static RAM and the keyboard/display controller (an i8279 clone) multiplexing signals for the 7seg displays LEDs being controlled by the IO ports of the 2 AY8910-3 chips 8-bit set of DIP-Switches, a 2x16 keyboard and 4 push buttons mapped to the i8279 scanlines and return lines [Felipe Sanches].
+- marywu: Most of the hardware has been mapped by analysing the PCB tracks. This set of commits include: a video layout with all 30 LEDs 13 double-digit 7seg modules an improved memory map hooking up the couple AY8910-3 chips, 2kb of Static RAM and the keyboard/display controller (an i8279 clone) multiplexing signals for the 7seg displays LEDs being controlled by the IO ports of the 2 AY8910-3 chips 8-bit set of DIP-Switches, a 2x16 keyboard and 4 push buttons mapped to the i8279 scanlines and return lines [Felipe Corrêa da Silva Sanches].
 - Some more validity checking improvements [AJR]:
   * The -validate command now accepts an optional string, validating only matching drivers. This has proven useful for debugging. The default is to validate all drivers as usual;
   * Devices' names are tracked when validating their auto-finders.

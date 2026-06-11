@@ -231,7 +231,7 @@ Source changes:
   * Implemented screen reconfiguration for 80/132-column and 50/60 Hz modes.
 - ppu2c0x family: Made palette internal to device [AJR].
 - z80ctc: Disabling a channel interrupt also turns it off [AJR].
-- Made “Keypad ,” and “Keypad =” standard keys [AJR].
+- Made “Keypad ,” and “Keypad =” standard keys [AJR].
 - Made debugger dump command work with unaligned addresses [AJR].
 - vectrex: Fixed probable bug with lightpen-triggered interrupt [AJR].
 - sidampkr: Made the cards appear [AJR].
@@ -253,10 +253,10 @@ Source changes:
 - blmbycar.cpp: Added optical and potentiometer wheel inputs [Angelo Salese].
 - f1gp.cpp: Added some undocumented DIP switches, and 4-way joystick inputs [Angelo Salese].
 - dc-ctrl.cpp updates [Angelo Salese]:
-  * Added preliminary keyboard support, hooked up to The Typing of the Dead, La Keyboard, and Lupin 3: the Typing on Naomi;
+  * Added preliminary keyboard support, hooked up to The Typing of the Dead, La Keyboard, and Lupin 3: the Typing on Naomi;
   * Fixed Dreamcast controller ID values, making it possible to suppress VMU not found errors in Dreamcast games.
 - pc9801.cpp updates:
-  * Fix sound ROM mapping, and fixed sound board initialization for Eikan wa Kimi ni 2 [Angelo Salese].
+  * Fix sound ROM mapping, and fixed sound board initialization for Eikan wa Kimi ni 2 [Angelo Salese].
   * Improved and reorganized -26 and -86 sound card ROM read-backs [Angelo Salese, Takahiro Nogi].
   * Added SpeakBoard sound card emulation [Angelo Salese, Takahiro Nogi].
 - tatsumi.cpp improvements [Angelo Salese]:
@@ -329,7 +329,7 @@ Source changes:
   * Added pause and savestate commands to both network and win32 providers.
 - markham.cpp: Modernised and merged with strnskil.cpp [kazblox]:
   * Added coin counters and added coinage DIP switch settings for markham, strnskil, banbam and clones;
-  * Added raw screen parameters based of 20 MHz clock on strnskil PCB.
+  * Added raw screen parameters based of 20 MHz clock on strnskil PCB.
 - citycon.cpp, ikki.cpp: Added raw screen parameters [kazblox].
 - sega8_slot.cpp: Added check for Lode Runner SG-1000/SC-3000 ROM image [Kalevi Kolttonen].
 - igs017.cpp: Emulated the protection in iqblocka, iqblockf, and genius6 [Luca Elia].
@@ -346,13 +346,13 @@ Source changes:
 - bbc: Added 'Beeb Speech Synthesiser' device [Nigel Barnes].
 - poly.cpp: Use original encrypted ROMs, and decrypt [Nigel Barnes]:
   * Implemented banking and system/user mode switching;
-  * Added PolyBASIC 3.0, 3.1, and 3.4.
+  * Added PolyBASIC 3.0, 3.1, and 3.4.
 - apple2: Added support for WOZ image format [Olivier Galibert].
 - emumem: Renamed direct_read_handler to memory_access_cache. Now templated on more information (data width, endianness) and capable of oversize/unaligned accesses [Olivier Galibert].
 - debugger: Simplified now-obsolete and buggy memory access code [Olivier Galibert].
 - cubeqst: Fixed cache endianness [Olivier Galibert].
 - sound: Don’t try to generate a negative number of samples if stream->update() goes back in time [Olivier Galibert].
-- floppy: Increased robustness and improved bitstream handling [John Keoni Morris, Peter Ferrie, O. Galibert].
+- floppy: Increased robustness and improved bitstream handling [John Keoni Morris, Peter Ferrie, Olivier Galibert].
 - Added Brooktree Bt45x RAMDAC devices – Bt457 and Bt458 are used by InterPro graphics boards [Patrick Mackinlay].
 - tms32031: Added tms320c30 variant and basic hold/holda support [Patrick Mackinlay].
 - Moved Z80 daisy-chain mixin from src/devices/cpu/z80 to src/devices/machine [Patrick Mackinlay].
@@ -362,15 +362,15 @@ Source changes:
 - Apple II: Added 13-sector version of Disk II controller [R. Belmont].
 - Added SoftFloat release 3E to 3rdparty [R. Belmont].
 - sh4drc: Added UML implementations of FLDI0, FLDI1, FCMP_EQ, FCMP_GT, FSTS, FLOAT, FTRC, FNEG, FABS, FSCHG, and FRCHG [R. Belmont].
-- neogeo: Added UniBios 3.3 [Robbbert].
+- neogeo: Added UniBios 3.3 [Robbbert].
 - apexc: Fixed regression/crash introduced on 2018-02-12 [Robbbert].
 - indy_indigo2: Cleaned up code, converted HAL2 and HPC3 to devices, and moved HAL2, HPC3, and IOC2 devices to separate source files [Ryan Holtz].
-- vp415: Added proper dumps of Module S and Module W MCUs, which have identical programs [Ryan Holtz, Simon Inns].
+- vp415: Added proper dumps of Module S and Module W MCUs, which have identical programs [Ryan Holtz, Simon Inns].
 - adc0808: Reduced CPU overhead with smarter timer usage [Ryan Holtz].
 - Removed name mangling functions from driver initialisation methods, and renamed init_0 to empty_init [Ryan Holtz].
 - atpci.cpp: Move m55hi-plus motherboard stuff to a new machine called m55hipl [Samuele Zannoli].
 - hp_ipc: Added diagnostic ROMs and model 9808A (prototype of desktop version) [shattered].
-- i8255: Improved read-back of port C high output latches when port A is in mode 1 [hap, shattered].
+- i8255: Improved read-back of port C high output latches when port A is in mode 1 [hap, shattered].
 - pk8020: Hooked up interrupt sources [shattered].
 - popeye.cpp improvements [smf]:
   * Adjusted Popeye and Sky Skipper layer positions to match tests on real hardware;
@@ -381,7 +381,7 @@ Source changes:
   * Added “topcat” ASIC used on HP900/300 graphics cards, and hooked up to HP98544;
   * Fixed PTM6840 hookup – clock 2 is driven by output of timer 1.
 - HP IPC keyboard: Fixed ID byte returned for IDD command, and changed logging to use logmacro.h [Sven Schnelle].
-- gime.cpp: Fixed handling of number of scan lines for legacy VDG/SAM modes on CoCo 3 [David Ladd, Tim Lindner].
+- gime.cpp: Fixed handling of number of scan lines for legacy VDG/SAM modes on CoCo 3 [David Ladd, Tim Lindner].
 - Initial work on next-generation machine configuration syntax [Vas Crabb]:
   * Made concrete device types callable and added support for device class constructor overloads;
   * Made machine_config aware of current device being configured and made finder/callback target tags apply relative to it;
@@ -407,30 +407,30 @@ Source changes:
 - vamphalf.cpp: Redumped the graphics PORMs for 'Lup Lup Puzzle v1.05' from a second PCB [Brian Troha, caius, The Dumping Union].
 - vamphalf.cpp: Added PCB layout for 'Boong-Ga Boong-Ga (Spank'em!)' [Brian Troha].
 - hshavoc.cpp: Decapped and dumped PIC microcontroller [Caps0ff].
-- gaelco2.cpp: Verified Dallas clock for 'World Rally 2' [Corrado Tomaselli].
-- gaelco2.cpp: Verified MCU clock for 'Touch & Go' [f205v].
+- gaelco2.cpp: Verified Dallas clock for 'World Rally 2' [Corrado Tomaselli].
+- gaelco2.cpp: Verified MCU clock for 'Touch & Go' [f205v].
 - holeland.cpp: Documented PALs for crzrallyg [f205v].
 - splash.cpp: Documented some undumped PLDs [f205v].
 - funworld.cpp, kingdrby.cpp: Identified some protected PAL dumps and marked them as bad [f205v].
-- esd16.cpp: Verified different sound sample ROM for Multi Champ DX was bit-rot [f205v, The Dumping Union].
+- esd16.cpp: Verified different sound sample ROM for Multi Champ DX was bit-rot [f205v, The Dumping Union].
 - pc9801.cpp: Dumped kanji ROMs for PC9801VM [Fujix, hiromasha].
 - bionicc.cpp: Corrected MCU label for the original sets [Guru].
 - chasehq, topspeed: Dumped motor CPU ROM and added detailed hardware description for chasehq [Guru].
 - irrmaze: Improved internal artwork layout [Jos van Mourik].
 - exidy.cpp: Added PROMs for venture [Kevin Eshbach, The Dumping Union].
 - Updated hiscore.dat for recent changes [Leezer].
-- spacewars: Fixed error in ROM definition introduced in MAME 0.37b2 [MASH].
+- spacewars: Fixed error in ROM definition introduced in MAME 0.37b2 [MASH].
 - model1io: Re-dumped epr14869b.25 used by Virtua Fighter [Phil Bennett].
-- Amatic Multi Game 5: Added notes about the contents of Dallas DS1994 device [Pycur].
+- Amatic Multi Game 5: Added notes about the contents of Dallas DS1994 device [Pycur].
 - pc98_cd.xml updates [r09]:
   * Re-tested all software entries that previously had video/audio issues – around 70% now work;
   * Demoted Miamisoft’s games to non-working since they seem to hang randomly;
   * Tested some software entries on real hardware (PC-9821Nw150) to make sure the issues are emulation-related.
 - neogeo.cpp: Added two new MVS BIOS dumps [Razoola].
-- Coco Loco (set 3): Redumped the bit-rotted ROM [Roberto Cervera, Recreativas.org].
+- Coco Loco (set 3): Redumped the bit-rotted ROM [Roberto Cervera, Recreativas.org].
 - Coco Loco: Corrected metadata and updated notes [RobertoFresca].
 - phoenix.cpp: Documented the Next Fase sound device [Roberto Fresca].
-- Corrected years for 'Groove on Fight', 'Pop'n Music 2', and 'Pop'n Music 3' [sjy96525].
+- Corrected years for 'Groove on Fight', 'Pop'n Music 2', and 'Pop'n Music 3' [sjy96525].
 - starwars.cpp: Added locations to ROM labels for all machines [Tafoid].
 - sun2.cpp updates:
   * Add boot ROM revisions N and 1.0F [Ryan Eisworth].

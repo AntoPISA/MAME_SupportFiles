@@ -75,7 +75,7 @@ Source changes:
   * Added a little delay before settling LRQ when resetting the device. Fixes MT05103;
   * When reading the LRQ signal, force an update of the stream. This fixes support for The Voice in Turtles for the odyssey2.
 - arcadia.c: Verified and corrected ROM names for Arcadia Leader Board v2.4 [Kevin Eshbach].
-- h8: PC and CCR are packed into one longword. Fixes coinmvga games [O. Galibert, R. Belmont].
+- h8: PC and CCR are packed into one longword. Fixes coinmvga games [Olivier Galibert, R. Belmont].
 - Split saturn and stv up a bit more so that stvprot.c is not linked into MESS [smf].
 - Split mame/drivers/saturn.c into emu/machine/saturn.c and mess/drivers/saturn.c, so mame doesn't have to compile and link the unused code [smf].
 - emuopts.c: Re-evaluate slot options after loading .ini files [Wilbert Pol].

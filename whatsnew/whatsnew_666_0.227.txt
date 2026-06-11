@@ -9,7 +9,7 @@ dreamGEAR / JungleTac Plug 'N' Play 50-in-1 (DGUN-853) [David Haywood, Sean Ridd
 dreamGEAR My Arcade Pac-Man Pocket Player (DGUNL-3227) [Sean Riddle]
 dreamGEAR My Arcade Retro Micro Controller - 220 Built-In Video Games (DGUN-2869) [Zup, TeamEurope, Sean Riddle]
 Excalibur / Nice Code The New York Times Sudoku [David Haywood, Sean Riddle, Kamaal Brown]
-Hewlett-Packard HP 2641A [Gavin Scott, F.Ulivi]
+Hewlett-Packard HP 2641A [Gavin Scott, F. Ulivi]
 Ingo Devices SL / Senca Code Lyoko (25-in-1 handheld) [KaruzoHikari, TeamEurope, David Haywood]
 LexiBook / JungleTac / NiceCode Cyber Console Center 200-in-1 (JL2050) [TeamEurope, taizou]
 Lexibook / JungleTac Lexibook JG7410 100-in-1 [David Haywood, TeamEurope]
@@ -125,7 +125,7 @@ Tantel AlphaTantel [Binary Dinosaurs, Nigel Barnes]
 TimeTop Ultimate Pocket Console GM-235 [TeamEurope, taizou]
 Space Pokan [SpinalFeyd, R. Belmont]
 Sym Systems / Torque Systems MBC020-65 CPU/Video Board (Torque Systems OEM) [Bitsavers]
-TecToy Pense Bem (2017) [Felipe Sanches]
+TecToy Pense Bem (2017) [Felipe Corrêa da Silva Sanches]
 Thumbs Up Mini Arcade Machine (Thumbs Up, 240IN1ARC) [David Haywood, TeamEurope]
 Trio de Bingo [Yasuhiro Ogawa]
 Twin Basket [Museo Del Recreativo]
@@ -317,7 +317,7 @@ MAME Testers Bugs Fixed (24):
 - 01807: [Graphics] (undrfire.cpp) cbombers: Some graphics are missing in attract mode (cam900)
 - 04905: [Flip Screen/Cocktail] (champbwl.cpp) champbwl: Video offset to the left when flip screen is enabled (Ivan Vangelista)
 - 05701: [Documentation] (model2.cpp) daytona and clones: System descriptions are not entirely accurate (ArtLine)
-- 07119: [Gameplay] (rampart.cpp) rampart, maybe rampartj and rampart2p: Late-game protection issues (O. Galibert)
+- 07119: [Gameplay] (rampart.cpp) rampart, maybe rampartj and rampart2p: Late-game protection issues (Olivier Galibert)
 - 07435: [Save/Restore] Vector: Vector Many games do not return stably from save state (Vas Crabb)
 - 07746: [Compiling] macOS 11: Compiling on the Apple AArch64 DTK fails (Miodrag Milanović)
 - 07757: [Documentation] (vegas.cpp) nbashowt: Release year is incorrect (PepsiBoy428)
@@ -351,19 +351,19 @@ Merged Pull Requests
 - 7379: bus/coco: Added Speech Systems Stereo Composer cartridge [Tim Lindner].
 - 7391: vicdual.cpp: Added protection simulation to Tranquillizer Gun so that the game plays correctly [David Haywood].
 - 7393: coco12.cpp, coco3.cpp, dragon.cpp: Removed IRQ trampolines [Tim Lindner].
-- 7396: apple2_flop_clcracked.xml, apple2_flop_orig.xml: Updated Apple II software lists for October„1¤72020 [4am, Firehawke].
+- 7396: apple2_flop_clcracked.xml, apple2_flop_orig.xml: Updated Apple II software lists for October„1¤72020 [4am, Firehawke].
 - 7397: photoplysx.cpp: Added notes about the USB dongle and a partial dump of its non-volatile memory [ClawGrip].
 - 7398: sound/ymf262.cpp: Fixed off-by-one error in OPL3_SLOT_CONNECT [moralrecordings].
 - 7400: pacman.cpp: Removed “mspacmanbg3„1¤7, it was a bad dump of “pacmansp„1¤7 [ClawGrip].
-- 7401: Added six working TV games, and improved Mega Drive-derived TV game drivers [David Haywood].
+- 7401: Added six working TV games, and improved Mega Drive-derived TV game drivers [David Haywood].
 - 7405: microdar.cpp: Added Diana Olakoa (v8.38) [Victor Fernandez (City Game), ClawGrip].
 - 7406: Fixed uninitialized variables in a number of devices used by the HP9000/300 series systems [Sven Schnelle].
-- 7407: Added driver for the 2017 version of the TecToy Pense Bem [Felipe Sanches].
-- 7409: apple2_flop_orig.xml: Added latest Apple II original floppy dumps [4am, Firehawke].
+- 7407: Added driver for the 2017 version of the TecToy Pense Bem [Felipe Corrêa da Silva Sanches].
+- 7409: apple2_flop_orig.xml: Added latest Apple II original floppy dumps [4am, Firehawke].
 - 7412: fmtowns_flop.xml: Added Might and Magic: World of Xeen [Neo Kobe Collection, r09].
 - 7313: klax.cpp: Got the Klax bootlegs working, including sound [Devin Acker].
 - 7414: nes_vt369_vtunknown_soc.cpp: Improved VT1682 ALU behavior, and made some progress towards VT369 [David Haywood].
-- 7415: cpu/avr8: Fixed crash on using timer„1¤71 [Felipe Sanches].
+- 7415: cpu/avr8: Fixed crash on using timer„1¤71 [Felipe Corrêa da Silva Sanches].
 - 7416: imb5170.xml: Added six entries, and re-dumped one entry [ArcadeShadow].
 - 7421: cpu/tms7000: Fixed JPZ mnemonic and offsets for BTJO/BTJZ in disassembly [Tim Lindner].
 - 7422: chdman: Added support for importing redump.org GD-ROM extended bin/cue format (GitHub„1¤7#6466) [nhand42].
@@ -373,22 +373,22 @@ Merged Pull Requests
 - 7430: unk6502_st2xxx.cpp: Added two TV games [TeamEurope, David Haywood].
 - 7431: centiped.cpp: Added support for switching games in the Multipede kit sets [Devin Acker].
 - 7432: hp3478a.cpp: Added LCD annunciators and button labels to layout [fenugrec].
-- 7434: model2.cpp, model3.cpp: Improved descriptions of Daytona USA and Scud Race games (MT5701) [ArtLine].
+- 7434: model2.cpp, model3.cpp: Improved descriptions of Daytona USA and Scud Race games (MT5701) [ArtLine].
 - 7435: Added skeleton driver and software list for VTech InnoTV, and two Game King cartridge dumps [TeamEurope, David Haywood].
 - 7437: lindbergh.cpp: Added Psy-Phi to list of known games [HeroponRikiBestest].
 - 7439: sound/c140.cpp: Tidied up sample fetching code [cam900].
 - 7440: Added support for N2A03 CPU to GDB stub debugger, and swapped field order of 6502 PC/SP to SP/PC [LucienMP].
-- 7441: Added eleven TV games based on V.R. Technology VT chips [David Haywood].
-- 7443: Added Motorola 6809 CPU support to the GDB stub debugger [Gustavo del Dago].
+- 7441: Added eleven TV games based on V.R. Technology VT chips [David Haywood].
+- 7443: Added Motorola 6809 CPU support to the GDB stub debugger [Gustavo del Dago].
 - 7444: cpu/m6502: Added preliminary ST2205U DMA support [David Haywood].
 - 7445: ms32.cpp:, bnstars.cpp, tetrisp2.cpp: Made system control unit a device and fixed some bugs [Angelo Salese, Alex Marshall].
 - 7446: centiped.cpp: Added watchdog reset address to bootlegs [Devin Acker].
-- 7447: ibm5150.xml: Marked Blockout as a bad dump as it has modified OEM ID and root directory [ArcadeShadow].
+- 7447: ibm5150.xml: Marked Blockout as a bad dump as it has modified OEM ID and root directory [ArcadeShadow].
 - 7448: kpython.cpp: Added dump of dogstation Deluxe hard disk [HeroponRikiBestest].
 - 7449: agat.cpp: Added native keyboard emulation, and improved video and floppy emulation [shattered].
 - 7450: Added several TV games, and two LeapFrog IQuest cartridge dumps [David Haywood].
 - 7452: bus/spectrum: Fixed ROM loading for double-size Multiface„1¤73 clone ROM [rfka01].
-- 7453: 4enlinea.cpp: Added Olympic Darts K7 (v3.00) [jordigahan, ClawGrip].
+- 7453: 4enlinea.cpp: Added Olympic Darts K7 (v3.00) [jordigahan, ClawGrip].
 - 7454: nes_vt369_vtunknown.cpp, spg2xx_zone.cpp: Added two TV games [David Haywood, TeamEurope].
 - 7455: ibm5170.xml: Added five items, and re-dumped one item [ArcadeShadow].
 - 7456: galastrm.cpp: Added link to video showing correct rotation effects [cam900].
@@ -400,37 +400,37 @@ Merged Pull Requests
 - 7463: machine/ie15.cpp: Modernised logging, and converted keyboard to use device_matrix_keyboard_interface [shattered].
 - 7464: wizard_cart.xml, wizard.cpp: Added notes and fixed year for iq7000 [ClawGrip].
 - 7465: segac2.cpp: Clarified Bloxeed credit DIP switch settings [Devin Acker].
-- 7466: picno.xml: Added Picno de Kuku and Chibi Maruko-chan no Tashizan Hikizan [TeamEurope, ClawGrip].
+- 7466: picno.xml: Added Picno de Kuku and Chibi Maruko-chan no Tashizan Hikizan [TeamEurope, ClawGrip].
 - 7468: dragon.cpp: Fixed Dragon Alpha disk controller status read (fixes disk I/O) [Tim Lindner].
-- 7569: blit.cpp: Added skeleton driver for AT&T Blit terminal [shattered].
+- 7569: blit.cpp: Added skeleton driver for AT&T Blit terminal [shattered].
 - 7470: de_3.cpp: Added another version of Jurassic Park, and cleaned up metadata [MLM, Victor Fernandez (City Game), ClawGrip].
 - 7471: sauro.cpp: Added Sauro (set„1¤72) [Victor Fernandez (City Game), ClawGrip].
 - 7472: bus/coco: Added Speech Systems Symphony Twelve cartridge [Tim Lindner].
 - 7473: machine/coco.cpp: Improved behaviour of high-resolution joystick interface [Tim Lindner].
 - 7474: emu/drawgfxt.ipp: Moved drawscanline_core leftover pixel handling out of unrolled loop [Romain Tisserand].
-- 7477: Identified purported “Sea Hunter„1¤7 game as Black Touch II, and moved it to the correct source file [David Haywood].
+- 7477: Identified purported “Sea Hunter„1¤7 game as Black Touch II, and moved it to the correct source file [David Haywood].
 - 7478: starshp1.cpp: Fixed tilemap size [Frank Palazzolo].
 - 7480: ibm5170.xml: Added three items [ArcadeShadow].
 - 7481: ibm5150.xml: Added three items and re-dumped one item [ArcadeShadow].
 - 7482: cpu/m68000: Added support for addressing mode„1¤76 for FSAVE and FRESTORE instructions [shattered].
 - 7483: leapfrog_iquest.cpp: Added preliminary banking and screen buffer implementation [David Haywood].
 - 7484: naomi.cpp: Documented AICA clock source jumper JP1 [hachirokumiku].
-- 7486: nes_vt32.cpp: Added My Arcade Data East Classics Pixel Player (308-in-1) [Sean Riddle, Kamaal Brown, Ruairi, David Haywood].
+- 7486: nes_vt32.cpp: Added My Arcade Data East Classics Pixel Player (308-in-1) [Sean Riddle, Kamaal Brown, Ruairi, David Haywood].
 - 7488: segas32.cpp: Fixed YMW-258-F (MultiPCM) clock frequency [cam900].
 - 7489: vg5k.cpp: Improved printer communication [Sylvain Glaize].
 - 7490: sauro.cpp: Switched the order of Sauro sets, making the newly-dumped parent, as it has bug fixes [ClawGrip].
 - 7491: Made more use of constexpr qualifier in rendering code [Romain Tisserand].
-- 7492: picno.xml: Added Picno de Nihon Chizu, fixed some metadata, and sorted items by serial number [TeamEurope, ClawGrip].
+- 7492: picno.xml: Added Picno de Nihon Chizu, fixed some metadata, and sorted items by serial number [TeamEurope, ClawGrip].
 - 7493: vicdual.cpp: Added protection simulation for carnivalh and carnivalha [David Haywood].
-- 7495: n64.xml: Added notes about known Mario no Photopi SmartMedia cards [ClawGrip].
+- 7495: n64.xml: Added notes about known Mario no Photopi SmartMedia cards [ClawGrip].
 - 7496: bus/coco: Fixed SSC TMS7000 busy flag and reset handling (fixes speech in Pegsaus and the Phantom Riders) [Tim Lindner].
 - 7497: toaplan1.cpp: Converted drawing code to use standard priority handling for sprites [cam900].
-- 7498: peyper.cpp: Added Ator (set„1¤71, 2 bumpers) [Sergio y Vicente de www.electronicavys.es, ClawGrip].
+- 7498: peyper.cpp: Added Ator (set„1¤71, 2 bumpers) [Sergio y Vicente de www.electronicavys.es, ClawGrip].
 - 7499: segas16a.cpp: Allow 8751 to access tile RAM on pre-System„1¤716 boards (fixes Quartet stage„1¤715) [David Haywood].
 - 7501: fmtowns_cd.xml: Added 20 items, replaced 35 items, and added floppy disk image for msdet2 [redump.org, wiggy2k, r09].
 - 7502: coco12.cpp, bus/coco: Cleaned up CoCo cartridge slot configuration code [Nathan Woods].
 - 7503: sgi_mips.xml: Added four items [archive.org, darkstar].
-- 7506: ibm5150.xml: Added The Punisher [ArcadeShadow].
+- 7506: ibm5150.xml: Added The Punisher [ArcadeShadow].
 - 7507: ibm5170.xml: Added four items and identified some bad dumps [ArcadeShadow].
 - 7508: frontend: Exposed image format information to Lua scripts [Nathan Woods].
 - 7509: Promoted a TV game to working, added three TV games, and added a skeleton list for the VTech InnoTAB„1¤72 [David Haywood].
@@ -439,10 +439,10 @@ Merged Pull Requests
 - 7515: cosmic.cpp: Fixed bug in sound output handler and cleaned up sample playback code [Gerg Kennedy].
 - 7517: design.cpp: Add notes about coin selector [ClawGrip].
 - 7519: leapfrog_iquest.cpp: Added Turbo Extreme (US) [David Haywood, Sean Riddle].
-- 7520: hp2640.cpp: Added HP2641A APL terminal [Gavin Scott, F.Ulivi].
+- 7520: hp2640.cpp: Added HP2641A APL terminal [Gavin Scott, F. Ulivi].
 - 7521: frontend: Exposed cassette image devices to Lua scripts [Carl].
 - 7523: de_3.cpp: Added another Last Action Hero version, and improved metadata for all games [ClawGrip].
-- 7525: kpython.cpp: Added Pro Evolution Soccer The Arcade (ver EAA) [Victor Fernandez (City Game), ClawGrip].
+- 7525: kpython.cpp: Added Pro Evolution Soccer The Arcade (ver EAA) [Victor Fernandez (City Game), ClawGrip].
 - 7526: fmtowns_flop.xml: Added seven entries, and updated notes [r09, wiggy2k, anonymous].
 - 7527: audio/seibu.cpp, cabal.cpp, deadang.cpp, shanghai.cpp: Fixed clock frequencies, cleaned up code, and added notes [cam900].
 - 7530: leapfrog_turboextreme_cart.xml: Added Grade„1¤72 [Sean Riddle, David Haywood].
@@ -453,12 +453,12 @@ Merged Pull Requests
 - 7538: missbamby.cpp: Added notes about Cirsa PCB models [ClawGrip].
 - 7539: neptunp2.cpp: Re-dumped sound ROM for unk960606 (was previously dumped at half size) [ClawGrip].
 - 7540: fmtowns_cd.xml: Added 13 items, re-dumped 23 items and added two missing floppies [redump.org, wiggy2k, KailoKyra, r09].
-- 7541: Added seven TV games, and skeleton for IVL Technologies Easy Karaoke Groove Station [David Haywood].
+- 7541: Added seven TV games, and skeleton for IVL Technologies Easy Karaoke Groove Station [David Haywood].
 - 7542: machine/generalplus_gpl16250soc.cpp: Fixed device type validation [David Haywood].
 - 7543: easy_karaoke.cpp: Added system ROM dump [TeamEurope, David Haywood].
 - 7545: Added a TV game, and moved dancmix3 to nes_sh6578.cpp [David Haywood, TeamEurope].
 - 7546: machine/t10mmc.cpp: Fixed relative frame number calculation for read subchannel command [Windy Fairy].
-- 7549: firebeat.cpp: Corrected main CPU clock speed to 64 MHz [Windy Fairy].
+- 7549: firebeat.cpp: Corrected main CPU clock speed to 64 MHz [Windy Fairy].
 - 7551: coco3.cpp: Corrected PIA register mirroring [Tim Lindner].
 - 7552: dynax.cpp: Corrected descriptions for some tenkai DIP switches [CecilHarvey].
 - 7553: megadriv.cpp: Added notes about LaserActive Mega Drive Pack [cam900].
@@ -585,7 +585,7 @@ Source changes:
 - 20pacgal, advision, archimds, aristmk5, segajw: initialized some variables that were causing crashes in drvnoclear builds [Ivan Vangelista].
 - exerion, nbmj8688, nbmj8891: Initialized some variables [Ivan Vangelista].
 - saitek_risc2500.cpp: Use SED1520 device for the LCD screen [Sandro Ronco].
-- avr8: Fixed crash with pensebem/timer1 crash [Felipe Sanches].
+- avr8: Fixed crash with pensebem/timer1 crash [Felipe Corrêa da Silva Sanches].
 - Update ci-windows.yml: Remove update step to prevent errors about outdated mirrors [Dirk Best].
 - cinemat.cpp: Improved armora artwork. Better alignemnent and transmission colours in particular [Vas Crabb].
 - cinemat.cpp: Adjust alignment of armora overlay. I adjusted the alignment based on where the shots hit the buildings. It doesn't seem possible to not have the tanks partly overlap the buildings but still have the hitboxes inset into the buildings by the right amount on all sides [Vas Crabb].
@@ -1551,7 +1551,7 @@ Source changes:
 - i2cmem.cpp: Added PCF8582 device [Nigel Barnes].
 - accomm: Added SAA5240 teletext device, and SCN2641 for RS423 port [Nigel Barnes].
 - datacast: Fixed clang build [Nigel Barnes].
-- bus/coco: Added CoCo and Dragon MIDI cartridges (#7589) [Tim Lindner].
+- bus/coco: Added CoCo and Dragon MIDI cartridges (#7589) [Tim Lindner].
 - miuchiz.cpp: Added more notes, added CPU crystal, more emulation progress, OTPROM now runs, the flash ROM is now mapped (unclear if correctly), preparations for working on the display controller. Fix anonymous namespace scopes being wrong for logmacro.h [Lord Nightmare].
 - Updated RX-78 machine / software information [Dave 'Foxhack' Silva] (#7593) [David 'Foxhack' Silva].
 - next.cpp: Use logerror rather than printf for debugging output (#7592) [Davide Cavalca].

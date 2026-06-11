@@ -38,7 +38,7 @@ Source changes:
 - snes.c: Greatly simplified tile drawing routines, fixed a couple of small bugs in mosaic support, reworked debug functions to be detected properly in all games. Improved VRAM accesses (they're invalid during active display) and DMA transfers (not all addresses can be accessed). Enabled PPU->CPU hdma transfer and moved hdma variables to snes_state. Updated HDMA to init/update according to Anomie's docs [Fabio Priuli].
 - namcos23: First extremely rough 3D hookup [Olivier Galibert].
 - Changed the killing blade parent to the PGM BIOS [smf] .
-- namcos23: Add some lighting [O. Galibert, Naibo].
+- namcos23: Add some lighting [Olivier Galibert, Naibo].
 - namcos23: hooked up tilemap scroll, improved raster IRQ [R. Belmont].
 - snes.c: enforced abus validity check on dma reads, fixed possible tile and vram out of bounds bugs [Fabio Priuli].
 - Replaced Stocker dump with a good set [Kevin Eshbach].

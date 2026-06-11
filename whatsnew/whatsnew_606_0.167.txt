@@ -89,7 +89,7 @@ Source changes:
 - piggypas.c: Fixed CPU type, added layout and some inputs [Sandro Ronco].
 - firebeat: Add proper dongle dumps for kbm3rd, pop4 and popn5 [Guru, Ville Linde].
 - Fix reversion for PI. PI transfers round length up, not down. Add field for VI interlaced modes. Display of interlaced video still needs work [Happy].
-- Adding ROM dump of Commodore MPS-1000 dot matrix printer [Felipe Sanches].
+- Adding ROM dump of Commodore MPS-1000 dot matrix printer [Felipe Corrêa da Silva Sanches].
 - dvk_ksm: Update memory map, ROM checksums [shattered].
 - ec1840, ec1841: Clean up memory options [shattered].
 - Victor 9000 Keyboard: Added two key labels I realized I'd forgotten. Updated comments to be more clear about keys with multiple contacts underneath but only one metal contact on the key. Noted in comments that the symbolic and mode keys on the numeric keypad (except for decimal point) are beige, not white. [Lord Nightmare].
@@ -115,7 +115,7 @@ Source changes:
 - Fix to allow mips3 exceptions to detect branch delay slots for setting EPC. Minor cleanup/correction for n64.c [Happy].
 - Added Siemens Sicomp PC16-05 BIOS ROM (Multitech MPF-PC/700 mainboard) [rfka01].
 - Split cat.c into separate drivers for canon cat and iai swyft. [Lord Nightmare].
-- PSX GPU: Fix the 24bit rendering of video sequences on games such as 'GranTurismo' and 'Digimon World 3' [Felipe Sanches].
+- PSX GPU: Fix the 24bit rendering of video sequences on games such as 'GranTurismo' and 'Digimon World 3' [Felipe Corrêa da Silva Sanches].
 - ETI-660 fixed and working [Robbbert].
 - Camputers Lynx 48k, 96k, 128k fixed and working [Robbbert].
 - Game-A-Tron gambling hardware changes [Roberto Fresca]:
@@ -190,7 +190,7 @@ Source changes:
   * Replace beam width by beam width min. and beam width max. width, this makes it possible to create a linear dynamic beam width by the amount of intensity of the beam;
   * Added beam intensity weight, this adds an exponential factor to the dynamic beam width (values greater than 0 will push larger intensities more than smaller intensities);
   * Fixed ratio of "vector points" (zero-length lines).
-- psxcd: Declaring ROM images for the CDROM controller MCU [Felipe Sanches].
+- psxcd: Declaring ROM images for the CDROM controller MCU [Felipe Corrêa da Silva Sanches].
 - Apollo changes [Hans Ostermeyer]:
   * Fixed the Apollo floppy disk emulation;
   * Added the media option -node_id resp. -ni to set the node ID from a node ID ROM image file;

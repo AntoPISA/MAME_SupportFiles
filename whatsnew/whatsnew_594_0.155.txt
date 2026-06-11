@@ -168,7 +168,7 @@ Jumping (set 2) [Porchy]
 Mario Bros. (Japan, bootleg) (different music/sfx) [Tirino73, David Haywood]
 Mega Man: The Power Battle (CPS2, USA 950926, SAMPLE Version) [Asure]
 Oriental Legend / Xi You Shi E Zhuan (ver. 111, Taiwanese Board) [bytestorm, iq_132]
-Pac-Man (JPM bootleg) [Hammy]
+Pac-Man (JPM bootleg) [hammy]
 Pac-Mania (111187 sound program) [system11, The Dumping Union]
 Pengo (bootleg on JPM Pac-Man hardware) [Ace]
 Phoenix (D&L bootleg)  [PokeMAME, Lord Nightmare]
@@ -338,7 +338,7 @@ Source changes:
 - addrmap.c: Only install the default device address map if the owner didn't provide one [Alex Jackson].
 - 8250: Call interrupt callback after clearing internal interrupt state when resetting [smf].
 - Added workaround to build with XCode 6.0.1 out-of-the-box [Oliver Stöneberg].
-- wd_fdc: Hopefully fix reading sectors with DDAM [lowen, O. Galibert].
+- wd_fdc: Hopefully fix reading sectors with DDAM [lowen, Olivier Galibert].
 - Moved protection vectors from hachamfb to hachamf, making the latter to work properly too [Angelo Salese].
 - web: Allow pasting in text [Firehawke].
 - Gundam Wing: Endless Duel updates [Peter Ferrie]:
@@ -369,8 +369,8 @@ Source changes:
   * F355 protection key, small docs update/corrections [MetalliC].
   * Atomiswave controller type register [MetalliC].
   * Added InitialD Ver3 Cycraft PIC key [anonymous, MetalliC].
-- eepromuser.c: Added Support for MSM16911 Serial eeprom [Felipe Sanches].
-- mb88xx.c: Added support for Fujitsu M88201-202 MCU [Felipe Sanches].
+- eepromuser.c: Added Support for MSM16911 Serial eeprom [Felipe Corrêa da Silva Sanches].
+- mb88xx.c: Added support for Fujitsu M88201-202 MCU [Felipe Corrêa da Silva Sanches].
 - model3: New 3D renderer + various fixes (still heavily WIP) [Ville Linde].
 - Beatmania IIDX Twinkle hardware: The IDE DMA is now hooked up, but the sound board isn't running well enough yet for it to make a difference. Hooked up the FDC37665GT and HLE the XVD701 and the 68k sound board responses to get most of the games booting. There is no sound and the games all fail with a hdd error when you start a stage. Beatmania IIDX with DDR 2nd Club Version wants the GQ863 hard disk [smf].
 - Beatmania IIDX Twinkle hardware: beatmania IIDX Substream with DDR 2nd Club Version 2 wants the harddisk from beatmania IIDX Substream. Added missing 3rd & 6th style CD images & replaced 5th style images [smf].

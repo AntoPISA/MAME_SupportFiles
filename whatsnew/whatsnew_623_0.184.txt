@@ -18,12 +18,12 @@ New Working Clones
 2 On 2 Open Ice Challenge (rev 1.2A) [Brian Troha, Sean Sutton, Smitdogg, The Dumping Union]
 Chesster Challenger (V1.3) [yovan]
 Dendy Classic 2 [kazblox]
-Dynablaster / Bomber Man (bootleg, set 3) [Hammy, The Dumping Union]
+Dynablaster / Bomber Man (bootleg, set 3) [hammy, The Dumping Union]
 Fidelity Designer 2100 [hap]
 Fidelity The Excellence (model EP12, set 2) [yovan]
 Fidelity The Par Excellence (rev. B) [hap]
 Flashgal (set 1, Kyugo logo) [Corrado Tomaselli, The Dumping Union]
-Gals Panic (MCU Protected, set 2) [Hammy, The Dumping Union]
+Gals Panic (MCU Protected, set 2) [hammy, The Dumping Union]
 Granit 'S' [hap]
 Kishon Chesster [yovan]
 Milton Bradley Simon (Rev F) [Sean Riddle]
@@ -40,7 +40,7 @@ Machines Promoted to Working
 ----------------------------
 Novag Constellation Forte (version B) [hap]
 Heathkit H-19 [Mark Garlanger]
-HP-9845C [f.ulivi, Angus Kueckes]
+HP-9845C [F. Ulivi, Angus Kueckes]
 SM 7238 [shattered]
 
 Clones Promoted to Working
@@ -241,7 +241,7 @@ Source changes:
   * Added device_slot_interface::has_selectable_options() to determine whether a particular slot has selectable options.
 - Added a new addrmap.cpp validity check intended to catch AM_REGION declarations not tied to anything meaningful [Nathan Woods].
 - CoCo: Implemented support for enabling and disabling cartridge-specific sound, made third and fourth floppy drives present by default [Nathan Woods].
-- CoCo 3: Fixed an issue clearing GIME interrupts (disabling interrupts by writing to $FF92/3 also acknowledges interrupt) [Nathan Woods, tim lindner, Glen Hewlett].
+- CoCo 3: Fixed an issue clearing GIME interrupts (disabling interrupts by writing to $FF92/3 also acknowledges interrupt) [Nathan Woods, Tim Lindner, Glen Hewlett].
 - 6821pia.cpp: changed int to bool where appropriate, changed macros to static functions [Nathan Woods].
 - archimedes: Added JFD floppy format as used by JASPP (Archimedes Software Preservation Project) [Nigel Barnes].
 - electron: Added First Byte joystick interface [Nigel Barnes].
@@ -297,7 +297,7 @@ Source changes:
   * Substantially sped up -listxml (at least 30% improvement), -verifyroms, and -romident on multiple files.
 - Fixed crash on excessive command-line arguments, removed long-dead option [Vas Crabb].
 - ti85.cpp: Convert TI-8x link port to a bus with emulated peripherals, working for TI-82 and TI-85. Tee connector, HLE TI-Graph Link, stereo/mono speakers, and raw signal forwarding socket supported [Vas Crabb].
-- Fixed new device validation issues [Vas Crabb, O. Galibert, AJR].
+- Fixed new device validation issues [Vas Crabb, Olivier Galibert, AJR].
 - triforce.cpp: Fixed Mario Kart 2 ROM loading [MetalliC].
 - naomi.cpp: Dumped and documented 837-14438 hopper controller board (used by Kick'4'Cash and other SWP games) [big10p, Darksoft, MetalliC].
 - Measured Naomi's MIE MCU speed [rtw, MetalliC].

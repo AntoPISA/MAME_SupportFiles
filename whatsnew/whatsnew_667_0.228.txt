@@ -481,7 +481,7 @@ MAME Testers Bugs Fixed (12):
 - 07713: [Sound] (ksys573.cpp) ddrs2kj: Silence during Dancemania promo screens (Windy Fairy).
 - 07830: [Plugins] Lua Cheat Plugin: Cheats show errors attempting to activate (Vas Crabb).
 - 07833: [Color/Palette] (tickee.cpp) ghoshunt, mouseatk, tickee, tutstomb: Games may start with bad colors (AJR).
-- 07834: [Gameplay] (gauntlet.cpp) gauntlet, gaunt2 and clones: Protection check fails exiting stage 1 to stage 4 (O. Galibert).
+- 07834: [Gameplay] (gauntlet.cpp) gauntlet, gaunt2 and clones: Protection check fails exiting stage 1 to stage 4 (Olivier Galibert).
 - 07836: [DIP/Input] (wrally.cpp) wrally: Analog controls don’t work (Ivan Vangelista).
 - 07837: [Gameplay] (namcos21_c67.cpp) starblad, starbladj: Coin counter does not work (AJR).
 - 07838: [Graphics] (btoads.cpp) btoads: Sprite layer is scrambled (David Haywood).
@@ -506,7 +506,7 @@ Merged Pull Requests
 - 7608: Adjusted sound balance for systems using YMZ280B in conjunction with other sound chips [David Haywood].
 - 7610: video/ef9345.cpp: Fixed attribute latching when emitting a delimiter character [Sylvain Glaize].
 - 7625: Added HP2640 tape emulation, along with support for Manchester-encoded DC100 cassettes [F. Ulivi].
-- 7627: Made Acorn Archimedes IOC and MEMC into devices, emulated serial keyboard, and fixed issues with RISC OS [Sandro Ronco].
+- 7627: Made Acorn Archimedes IOC and MEMC into devices, emulated serial keyboard, and fixed issues with RISC OS [Sandro Ronco].
 - 7641: Fixed spelling errors in a few comments [David Haywood].
 - 7642: imgtool: Fixed Dragon DOS Disk BASIC token conversion [Tim Lindner].
 - 7645: jpmimpct.cpp: Hooked up DUART, RAMDAC and BACTA logger, improved inputs, and fixed many bugs [David Haywood].
@@ -711,7 +711,7 @@ Source changes:
 - Fixed some minor coverity warnings [Robbbert].
 - i82586: Fix address hash and multicast setup bugs [Patrick Mackinlay].
 - util/zippath.cpp: Fix suffix for zip archives [Vas Crabb].
-- dim68k: more fdc hookup, CP/M 68K now partially loads [R. Belmont, O. Galibert].
+- dim68k: more fdc hookup, CP/M 68K now partially loads [R. Belmont, Olivier Galibert].
 - miniguay.cpp: Hook up some devices [AJR].
 - dim68k: Add serial keyboard [R. Belmont].
 - coco_midi: Tidy namespace [Patrick Mackinlay].
@@ -852,7 +852,7 @@ Source changes:
   * Add meat to astoneag;
   * Confirm sprite drawing being same deal, no need for override;
   * Move astoneage decryption data and ramdac declaration in a subclass, make screen always enabled for convenience.
-- abc800: Added new revisions of ROMs, and skeletons for DataBoard 4106/4107 [Luxor ABC arkivet, Curt Coder].
+- abc800: Added new revisions of ROMs, and skeletons for DataBoard 4106/4107 [Luxor ABC arkivet, Curt Coder].
 - fmtowns_cd.xml: 16 new dumps, 13 replacements, 6 missing floppies added [r09].
 - dynax.cpp, hnayayoi.cpp: Added DIP switch locations as shown in service mode for some games, identified one more DIP switch for hnkochou [Vas Crabb].
 - metro.cpp: Fix tilemap offset regression imagetek_i4100.cpp: Add state of CRTC related value for debug also fixed MT #07845 [cam900].

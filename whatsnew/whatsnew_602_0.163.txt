@@ -62,7 +62,7 @@ New Systems Marked as GAME_NOT_WORKING
 --------------------------------------
 Bingo Party Multicart (Rev B) (M1 Satellite board) [Arzeno Fabrice, The Dumping Union]
 HP 64000 development system [F. Ulivi]
-Itautec I7000 [Felipe Sanches]
+Itautec I7000 [Felipe Corrêa da Silva Sanches]
 Regnecentralen RC759 [Dirk Best]
 
 
@@ -156,7 +156,7 @@ Source changes:
   * Changed all scanline renderers to use rgbutil.
 - naomi.c: Brute forced DES key for "Shakatto Tambourine (GDS-0002B)" [CaH4e3, MetalliC, emuDrache (trurip), rtw].
 - Missing gamecube edition ROMs added [Andrea Petrucci].
-- uzebox: Adding sound emulation [Felipe Sanches].
+- uzebox: Adding sound emulation [Felipe Corrêa da Silva Sanches].
 - chihiro.c: Brute missing keys for Sega Network Taisen Mahjong MJ 2 and MJ 3 [f205v, MetalliC].
 - Completely integrated the GMRES solver into netlist solver templates and recoded it from scratch. GMRES now runs at 122% (kidniki), that's a real improement from 60% before. AT the same time, the code should be easier to read and closer to the GMRES algorithm. Ultimately, kidniki will not use this solver but instead use some frontiers to keep it playable. But going forward, for larger matrices this solver is an opton [Couriersud].
 - Made possible creation of custom builds with given list of drivers included. Note that game list is parsed so if macros are used they will not be found. example: make SUBTARGET=cops -j9 DRIVERS=src/mame/drivers/cops.c [Miodrag Milanović].

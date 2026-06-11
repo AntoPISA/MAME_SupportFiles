@@ -310,7 +310,7 @@ Source changes:
 - wd_fdc.cpp: Improved interrupt request reset logic based on WD1772 and VG93 (1793 clone) decaps [MetalliC].
 - Fixed clang compilation error on targets where stream size is larger than long int [Nathan Woods].
 - model1.cpp: Fixed issues with TGP interface emulation [Olivier Galibert] 
-- emumem_het.cpp, emumem_heu.cpp: Hold additional reference for in-flight handlers (fixes MT07456) [O. Galibert, smf].
+- emumem_het.cpp, emumem_heu.cpp: Hold additional reference for in-flight handlers (fixes MT07456) [Olivier Galibert, smf].
 - apple3.cpp: Corrected number row key layout (fixes pasting and natural keyboard mode) [pahandav].
 - ppcdrc.cpp, sh2.cpp, sh4.cpp: Fixed issues causing fast RAM accesses to bypass the debugger [Phil Bennett].
 - tms34020: Implement SETCDP and CLIP opcodes [Priit Laes].

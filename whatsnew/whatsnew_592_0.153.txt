@@ -303,7 +303,7 @@ Source changes:
 - scmp.c: Modernized CPU core [Wilbert Pol].
 - atarist.c: Push all gpio values to allow interrupts to work [smf].
 - unsp.c: Modernized CPU core [Wilbert Pol].
-- AVR8 improvements [Felipe Sanches]:
+- AVR8 improvements [Felipe Corrêa da Silva Sanches]:
   * Added ELPM instructions;
   * Added fuse bits macros;
   * Added reset logic to decide initial program counter based on fuse bits configuration;
@@ -320,7 +320,7 @@ Source changes:
 - Fixed PNP model and added test netlist (bjt.c) [Couriersud].
 - tms7000.c: Modernized CPU core.  [Wilbert Pol]
 - Pong now has complete emulation of discrete logic for runQ and SRST signals. Rewrote switch2 device to be based on resistances as well [Couriersud].
-- AVR8 CPU changes [Felipe Sanches]:
+- AVR8 CPU changes [Felipe Corrêa da Silva Sanches]:
   * Timers WIP;
   * Add TIMSK* reads - Refactor timer_tick calls;
   * Remove all redundant register init statements. We simply set all 0x200 registers to zero;
@@ -656,7 +656,7 @@ Source changes:
 - h8: Add the h8/3008 [Olivier Galibert].
 - Double Crown: Added button-lamps support, coin in and coin out counters, MAX693 watchdog reset, minor input fixes, and added technical notes [Roberto Fresca].
 - Double Crown: Redesigned the button-lamps layout and added support for CANCEL button [Roberto Fresca].
-- New Z80 CPU derivate Toshiba TLCS-Z80 [Felipe Sanches].
+- New Z80 CPU derivate Toshiba TLCS-Z80 [Felipe Corrêa da Silva Sanches].
 - Added brightness control to berlwall RGB backgrounds [David Haywood].
 - Convert Little Robin to use TMS34010 instead of custom blitter code and share some parts of the implementation with Mega Phoenix [David Haywood].
 - TMS34010 core improvements [David Haywood]:
