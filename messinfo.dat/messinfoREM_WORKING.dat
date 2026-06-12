@@ -1,4 +1,4 @@
-﻿#    MESSINFO_REM.DAT v0.288    Latest update:  Jun 11, 2026
+﻿#    MESSINFO_REM.DAT v0.288    Latest update:  Jun 12, 2026
 #                                Project start: Nov  7, 2011
 #
 #    Author:  Antonio Paradossi (AntoPISA) from Pisa (Tuscany/Italy)
@@ -12,82 +12,6 @@
 #    Total items: 366
 #
 #
-$info=vt3xx_unknown_soc_cy
-$mame
-0.221 [David Haywood]
-
-VT3xx series System on a Chip (CY), <unknown>, ????
-
-DRIVER:
-nintendo/nes_vt369_vtunknown_soc.cpp
-
-DRIVER STATUS:
-Emulation: Good
-Color: Good
-Sound: Good
-Graphics: Good
-Save State: Unsupported
-
-WIP:
-- 0.288: Device removed.
-- 0.278: Renamed (nes_vtunknown_soc_cy) to (vt3xx_unknown_soc_cy).
-- 0.226: Renamed (nes_vt_soc_4k_cy) to (nes_vtunknown_soc_cy) and description changed to 'VTxx series System on a Chip (CY)'.
-- 0.221: David Haywood added 'VTxx series System on a Chip (with 4KByte RAM) (CY)' device.
-
-ROMSET:
-None required.
-
-$end
-$info=md_rom_chinf3
-$mame
-0.148u1
-
-MD Chinese Fighter 3, <unknown>, ????
-
-DRIVER:
-devices/bus/megadrive/rom.cpp
-
-DRIVER STATUS:
-Emulation: Good
-Color: Good
-Sound: Good
-Graphics: Good
-Save State: Unsupported
-
-WIP:
-- 0.288: Device removed.
-- 0.148u1: Added 'MD Chinese Fighter 3' device.
-
-ROMSET:
-None required.
-
-$end
-$info=lux4105
-$mame
-0.145u2 [Curt Coder]
-
-Luxor 4105, <unknown>, ????
-
-DRIVER:
-devices/bus/abcbus/lux4105.cpp
-
-DRIVER STATUS:
-Emulation: Good
-Color: Good
-Sound: Good
-Graphics: Good
-Save State: Unsupported
-
-WIP:
-- 0.288: Device removed.
-- 0.287: Remove the nscsi_cb, untested because no clue how to test it [Olivier Galibert].
-- 0.151: Renamed (luxor_4105) to (lux4105).
-- 0.145u2: Curt Coder added 'Luxor 4105' device.
-
-ROMSET:
-None required.
-
-$end
 $info=24c16a
 $mame
 0.207 [smf]
@@ -3741,6 +3665,32 @@ WIP:
 - 0.276: m1macrophage added 'LinnDrum CEM3360 VCA and EG' device.
 
 $end
+$info=lux4105
+$mame
+0.145u2 [Curt Coder]
+
+Luxor 4105, <unknown>, ????
+
+DRIVER:
+devices/bus/abcbus/lux4105.cpp
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Unsupported
+
+WIP:
+- 0.288: Device removed.
+- 0.287: Remove the nscsi_cb, untested because no clue how to test it [Olivier Galibert].
+- 0.151: Renamed (luxor_4105) to (lux4105).
+- 0.145u2: Curt Coder added 'Luxor 4105' device.
+
+ROMSET:
+None required.
+
+$end
 $info=lw30_beep
 $mame
 0.253 [Bartman/Abyss]
@@ -4072,6 +4022,30 @@ WIP:
 
 ROMSET:
 24576 bytes in 2 files / 13.8Kb packed
+
+$end
+$info=md_rom_chinf3
+$mame
+0.148u1
+
+MD Chinese Fighter 3, <unknown>, ????
+
+DRIVER:
+devices/bus/megadrive/rom.cpp
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Unsupported
+
+WIP:
+- 0.288: Device removed.
+- 0.148u1: Added 'MD Chinese Fighter 3' device.
+
+ROMSET:
+None required.
 
 $end
 $info=md_rom_radica
@@ -6808,6 +6782,32 @@ WIP:
 - 0.278: Rename (nes_vtunknown_soc_bt) to (vt3xx_unknown_soc_bt).
 - 0.226: Renamed (nes_vt_soc_4k_bt) to (nes_vtunknown_soc_bt) and description changed to 'VTxx series System on a Chip (BT)'.
 - 0.221: David Haywood added 'VTxx series System on a Chip (with 4KByte RAM) (BT)' device.
+
+$end
+$info=vt3xx_unknown_soc_cy
+$mame
+0.221 [David Haywood]
+
+VT3xx series System on a Chip (CY), <unknown>, ????
+
+DRIVER:
+nintendo/nes_vt369_vtunknown_soc.cpp
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Unsupported
+
+WIP:
+- 0.288: Device removed.
+- 0.278: Renamed (nes_vtunknown_soc_cy) to (vt3xx_unknown_soc_cy).
+- 0.226: Renamed (nes_vt_soc_4k_cy) to (nes_vtunknown_soc_cy) and description changed to 'VTxx series System on a Chip (CY)'.
+- 0.221: David Haywood added 'VTxx series System on a Chip (with 4KByte RAM) (CY)' device.
+
+ROMSET:
+None required.
 
 $end
 $info=vt3xx_unknown_soc_fa
