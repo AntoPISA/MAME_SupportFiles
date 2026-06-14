@@ -8,6 +8,7 @@ The following files have been updated in this MAME cycle:
 - CHD-Info pack
 - gameinit.dat
 - languages.ini
+- MESS-Info.dat
 - renameSET.dat
 - series.ini
 - version pack
@@ -16,7 +17,6 @@ The following files have been updated in this MAME cycle:
 They will not be updated in this cycle:
 - bestgames.ini
 - command.dat
-- MESS-Info.dat
 
 
 Home-page: https://www.progettosnaps.net/support/
