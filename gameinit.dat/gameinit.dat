@@ -1142,12 +1142,10 @@ Copy the text and Paste into the emulator.
 =3E^=0F^=D3^=13^=3E^=07^=D3^=13^=3E^=00^=D3^=12^=76^-1000X
 
 $end
-$info=babypac,granny
+$info=babypac,babypac2
 $mame
 TIPS:
-- To exit the pinball back to the video:
-Babypac: press O or P;
-Granny: press X.
+To exit the pinball back to the video: press O or P.
 
 $end
 $info=bankshot
@@ -1322,7 +1320,7 @@ Cassette
 - Recordings are not compatible between the versions of BASIC.
 
 Bugs:
-- Tell it to PRINT ! (or any character it doesn't understand) and the screen fills up with zeroes. String are enclosed in single quotes. Double quotes will cause this bug.
+- Tell it to PRINT ! (or any character it doesn't understand) and the screen fills up with zeroes. Strings are enclosed in single quotes. Double quotes will cause this bug.
 - Undefined strings print as 0 instead of nothing.
 
 $end
@@ -1354,12 +1352,6 @@ $mame
 INITIALIZATION:
 After a few seconds, hit Enter, and the prompt will appear.
 
-$end
-$info=bigbord2
-$mame
-TIPS:
-Turn it on, wait for the beep, press Enter. Now you can enter commands.
-
 Monitor commands:
 B - boot from disk
 C - copy memory
@@ -1373,8 +1365,6 @@ R - read a sector
 T - test memory
 V - compare blocks of memory
 X - change banks
-
-Note: floppy-disk code is not complete.
 
 $end
 $info=bigkarnk
@@ -1532,145 +1522,10 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
-$info=bm3
+$info=bmiidx2,bmiidx3,bmiidx3a,bmiidx3b,bmiidx4,bmiidx5,bmiidx6,bmiidx6a,bmiidx7,bmiidx7a,bmiidx8,bmiidxc2,bmiidxs,bmiidxsa
 $mame
 INITIALIZATION:
-In order to access the game, from version 0.230 of the MAME, we must enter a password. At startup, the "SYSTEM RECOVERY MODE" page will be displayed. To calculate this password you can use the online application "Firebeat RTC Recovery Password" available here: https://987123879113.github.io/firebeatrtc/. Enter the Serial Number and Key Code you see on the screen and then enter the password by moving with the [ 0 ] and [ ' ] keys, confirming with [ F2 ]. If everything has been done correctly on the screen you will read "PASSWORD OK!" and pressing [ F2 ] again the game will start.
-
-SOURCE:
-https://youtu.be/WkFOUoZBwOU and https://www.progettosnaps.net/gameinit.dat
-
-$end
-$info=bm36th
-$mame
-INITIALIZATION:
-In order to access the game, from version 0.230 of the MAME, we must enter a password. At startup, the "SYSTEM RECOVERY MODE" page will be displayed. To calculate this password you can use the online application "Firebeat RTC Recovery Password" available here: https://987123879113.github.io/firebeatrtc/. Enter the Serial Number and Key Code you see on the screen and then enter the password by moving with the [ 0 ] and [ ' ] keys, confirming with [ F2 ]. If everything has been done correctly on the screen you will read "PASSWORD OK!" and pressing [ F2 ] again the game will start.
-
-SOURCE:
-https://www.progettosnaps.net/gameinit.dat
-
-$end
-$info=bm37th
-$mame
-INITIALIZATION:
-In order to access the game, from version 0.230 of the MAME, we must enter a password. At startup, the "SYSTEM RECOVERY MODE" page will be displayed. To calculate this password you can use the online application "Firebeat RTC Recovery Password" available here: https://987123879113.github.io/firebeatrtc/. Enter the Serial Number and Key Code you see on the screen and then enter the password by moving with the [ 0 ] and [ ' ] keys, confirming with [ F2 ]. If everything has been done correctly on the screen you will read "PASSWORD OK!" and pressing [ F2 ] again the game will start.
-
-SOURCE:
-https://youtu.be/WkFOUoZBwOU and https://www.progettosnaps.net/gameinit.dat
-
-$end
-$info=bm3core
-$mame
-INITIALIZATION:
-In order to access the game, from version 0.230 of the MAME, we must enter a password. At startup, the "SYSTEM RECOVERY MODE" page will be displayed. To calculate this password you can use the online application "Firebeat RTC Recovery Password" available here: https://987123879113.github.io/firebeatrtc/. Enter the Serial Number and Key Code you see on the screen and then enter the password by moving with the [ 0 ] and [ ' ] keys, confirming with [ F2 ]. If everything has been done correctly on the screen you will read "PASSWORD OK!" and pressing [ F2 ] again the game will start.
-
-SOURCE:
-https://www.progettosnaps.net/gameinit.dat
-
-$end
-$info=bm3final
-$mame
-INITIALIZATION:
-In order to access the game, from version 0.230 of the MAME, we must enter a password. At startup, the "SYSTEM RECOVERY MODE" page will be displayed. To calculate this password you can use the online application "Firebeat RTC Recovery Password" available here: https://987123879113.github.io/firebeatrtc/. Enter the Serial Number and Key Code you see on the screen and then enter the password by moving with the [ 0 ] and [ ' ] keys, confirming with [ F2 ]. If everything has been done correctly on the screen you will read "PASSWORD OK!" and pressing [ F2 ] again the game will start.
-
-SOURCE:
-https://youtu.be/WkFOUoZBwOU and https://www.progettosnaps.net/gameinit.dat
-
-$end
-$info=bm3rdmix
-$mame
-TIPS:
-Press fast forward key [ Ins ] to speed up ROM/RAM test.
-
-SOURCE:
-mameinfo.dat
-
-$end
-$info=bmcompmx
-$mame
-TIPS:
-Press fast forward key [ Ins ] to speed up ROM/RAM test.
-
-SOURCE:
-mameinfo.dat
-
-$end
-$info=bmiidx2
-$mame
-INITIALIZATION:
-Wait a few seconds (if you want to speed up this wait, keep the usual [ INS ] key pressed) until the red writing "E150 BACKUP DATA ERROR" appears in the penultimate line displayed; press [ 1 ] clear the RAM and start playing.
-
-SOURCE:
-https://www.progettosnaps.net/gameinit.dat
-
-$end
-$info=bmiidx3
-$mame
-INITIALIZATION:
-Wait a few seconds (if you want to speed up this wait, keep the usual [ INS ] key pressed) until the red writing "E150 BACKUP DATA ERROR" appears in the penultimate line displayed; press [ 1 ] clear the RAM and start playing.
-
-SOURCE:
-https://www.progettosnaps.net/gameinit.dat
-
-$end
-$info=bmiidx4
-$mame
-INITIALIZATION:
-At the first start of the game, wait for the word "DEVICE CHECK". After a few seconds the message (in red) "1P START = BACKUP CLEAR" will appear. Now press 1P (the [ 1 ] key) and the BACKUP RAM will be initialized.
-
-SOURCE:
-https://www.progettosnaps.net/gameinit.dat
-
-$end
-$info=bmiidx5
-$mame
-INITIALIZATION:
-Wait a few seconds (if you want to speed up this wait, keep the usual [ INS ] key pressed) until the red writing "E150 BACKUP DATA ERROR" appears in the penultimate line displayed; press [ 1 ] clear the RAM and start playing.
-
-SOURCE:
-https://www.progettosnaps.net/gameinit.dat
-
-$end
-$info=bmiidx6
-$mame
-INITIALIZATION:
-At the first start of the game, wait for the word "DEVICE CHECK". After a few seconds the message (in red) "1P START = BACKUP CLEAR" will appear. Now press 1P (the [ 1 ] key) and the BACKUP RAM will be initialized.
-
-SOURCE:
-https://www.progettosnaps.net/gameinit.dat
-
-$end
-$info=bmiidx7
-$mame
-INITIALIZATION:
-At the first start of the game, wait for the word "DEVICE CHECK". After a few seconds the message (in red) "1P START = BACKUP CLEAR" will appear. Now press 1P (the [ 1 ] key) and the BACKUP RAM will be initialized.
-
-SOURCE:
-https://www.progettosnaps.net/gameinit.dat
-
-$end
-$info=bmiidx8
-$mame
-INITIALIZATION:
-At the first start of the game, wait for the word "DEVICE CHECK". After a few seconds the message (in red) "1P START = BACKUP CLEAR" will appear. Now press 1P (the [ 1 ] key) and the BACKUP RAM will be initialized.
-
-SOURCE:
-https://www.progettosnaps.net/gameinit.dat
-
-$end
-$info=bmiidxc2
-$mame
-INITIALIZATION:
-At the first start of the game, wait for the word "DEVICE CHECK". After a few seconds the message (in red) "1P START = BACKUP CLEAR" will appear. Now press 1P (the [ 1 ] key) and the BACKUP RAM will be initialized.
-
-SOURCE:
-https://www.progettosnaps.net/gameinit.dat
-
-$end
-$info=bmiidxs
-$mame
-TIPS:
-Wait a few seconds (if you want to speed up this wait, keep the usual [ INS ] key pressed) until the red writing "E150 BACKUP DATA ERROR" appears in the penultimate line displayed; press [ 1 ] clear the RAM and start playing.
+Hold [ INS ] until the red writing "1P START = BACKUP CLEAR" appears. Press [ 1 ] and start playing.
 
 SOURCE:
 https://www.progettosnaps.net/gameinit.dat
@@ -1840,6 +1695,12 @@ Setting up:
 
 La Rana is not a pinball machine - it looks like an upright arcade game with a frog's mouth and some holes on a lower panel, while some indicators are on the upper panel. The main scores are on the marquee. Each of 4 players has 3 digits. There's other buttons on the marquee too. The game has no screen.
 It can be played by pressing 5 (insert coin), press 1 (start) for each player, press A (start timer), press various keys to score. Don't press X or the game instantly ends. When the timer runs out it switches to the next player, or ends.
+
+$end
+$info=btchamp
+$mame
+INITIALIZATION:
+Hold [ F2 ] and hit [ F3 ]. Keep holding [ F2 ] until it says to Release Test Switch. The game will begin.
 
 $end
 $info=bttf_a28,kiko_a10,lwar_a83,mnfb_c29,poto_a32,play_a24,robo_a34,ssvc_a26,simp_a27,tmac_a24,torp_e21
@@ -4474,6 +4335,12 @@ chdman createhd -s 134217728 -o filename.chd
 Then, run MAME with -hard filename.chd, or mount it using the GUI and restart the driver
 
 $end
+$info=granny
+$mame
+TIPS:
+- To exit the pinball back to the video: press X.
+
+$end
 $info=gt3dt230
 $mame
 INITIALIZATION:
@@ -5594,6 +5461,12 @@ In Basic:
 - To load a tape: CLOAD "x"
 
 Image types tested to work are KCC and TAP.
+
+$end
+$info=kdeadeye
+$mame
+INITIALIZATION:
+If allowed to run on its own, it will eventually freeze on the high score screen. It needs to be initialised correctly. Hold [ F2 ] and hit [ F3 ]. Keep holding [ F2 ] for several minutes, until you get a black screen. Let go of [ F2 ] which gives the service menu. Hit [ F3 ] and the game will begin. Due to incomplete emulation, some text is corrupted.
 
 $end
 $info=keks_8,keks_9,keks_10,keks_11,keks_12,keks_13,keks_14,keks_15,keks_16,keks_17,keks_18,keks_19
@@ -9169,25 +9042,7 @@ SOURCE:
 mameinfo.dat
 
 $end
-$info=pool10
-$mame
-INITIALIZATION:
-Press and hold Service 1 + 2 (Keys [ 0 ]+[ 9 ]), then press reset [ F3 ]. When you see 'RAM-INIZIALIZZATA!', release.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
-
-$end
-$info=popn1
-$mame
-TIPS:
-Press fast forward key [ Ins ] to speed up ROM/RAM test.
-
-SOURCE:
-mameinfo.dat
-
-$end
-$info=potgame
+$info=pool10,potgame
 $mame
 INITIALIZATION:
 Press and hold Service 1 + 2 (Keys [ 0 ]+[ 9 ]), then press reset [ F3 ]. When you see 'RAM-INIZIALIZZATA!', release.
@@ -9213,7 +9068,7 @@ To save a tape: KSAVE $1
 To load a tape: KLOAD $1
 
 $end
-$info=ppd,ppp,ppp11
+$info=ppd,ppp,ppp11,ppp1mp
 $mame
 INITIALIZATION:
 * Wait for TEST MODE to show.
