@@ -9750,6 +9750,34 @@ LOADING GRM0044 3780 01D4 2005
 Use the J command to run it, in this case (don't know)
 
 $end
+$info=s8000,s8000s2,s8000v1
+$mame
+TIPS:
+All commands to be in UPPER case, so turn on capslock. At start it says to press START to load system, which can be done by pressing NUM+ key. This is optional though.
+
+Brief list of commands (read the manual for more info):
+
+B : set and clear breakpoints
+C : compare blocks of memory
+D : display and alter memory bytes/words/longwords
+F : fill memory
+G : jump to last PC
+I : read and write I/O addresses
+J : jump to specified address
+L : load program from remote host
+M : Move (copy) memory block
+N : step
+Q : enter transparent mode
+R : display and alter registers
+S : SIO read and write
+T : enter test mode
+Z : read loader from disk and execute
+
+While text is scrolling:
+Ctrl S - pause
+Ctrl Q - resume
+
+$end
 $info=sacstate
 $mame
 TIPS:
