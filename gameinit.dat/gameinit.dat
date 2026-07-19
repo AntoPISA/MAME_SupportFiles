@@ -4804,6 +4804,12 @@ For the last light, press num-0.
 7. After 3 misses, the game ends.
 
 $end
+$info=icm3216
+$mame
+TIPS:
+It takes a while to start up. If you have a hard disk attached, it's advisable to change the "Machine Configuration" settings to 7E1. Now use [ B ] to boot.
+
+$end
 $info=icproul
 $mame
 INITIALIZATION:
@@ -8308,17 +8314,13 @@ $end
 $info=pc9801,pc9801bx2,pc9801dx,pc9801fs,pc9801rs,pc9801us,pc9801ux,pc9801vm,pc9801vx
 $mame
 TIPS:
-NEC PC-9801 series
-==================
+Takes a long time to show anything, be patient.
 
+Floppies: The only machines that can run floppies are pc9801dx, pc9801rs, pc9801ux, pc9801vm, pc9801vx.
 
-Floppies
---------
-The only machines that can run floppies are pc9801dx, pc9801rs, pc9801ux, pc9801vm, pc9801vx.
+Hard Drives: Unknown how to access.
 
-Hard Drives
------------
-Unknown how to access.
+Cassettes: make sure you attach the 9801_03 board into slot 5, then you can use LOAD and SAVE.
 
 $end
 $info=pc9821,pc9821ap2
@@ -8813,6 +8815,8 @@ I - in from a port and display
 M - move?
 O - out to a port
 S - edit memory
+
+Each command is finished by pressing [ Space ] rather than enter.
 
 $end
 $info=playch10
@@ -12327,17 +12331,9 @@ Floppies
 Load and run themselves
 
 $end
-$info=x168,x1685,x168em
+$info=x168s,x820iis
 $mame
 TIPS:
-The normal keyboard doesn't work. You'll need to select the "Natural" keyboard.
-
-$end
-$info=x168s
-$mame
-TIPS:
-The normal keyboard doesn't work. You'll need to select the "Natural" keyboard.
-
 You need to mount a CHD hard drive, then use the L E command to boot from it.
 
 $end
@@ -12368,18 +12364,6 @@ Hard Disk
 Unknown how to access them.
 
 Looks very complicated and seems it doesn't work in mame.
-
-$end
-$info=x168iilp
-$mame
-INITIALIZATION:
-Although marked as working, the keyboard malfunctions and is unusable.
-
-$end
-$info=x820iis
-$mame
-TIPS:
-You need to mount a CHD hard drive, then use the L E command to boot from it.
 
 $end
 $info=xegs
