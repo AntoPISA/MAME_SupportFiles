@@ -2,7 +2,7 @@
 -----------------------------------
 
 
-New working systems
+New Working Systems
 -------------------
 Atlantis Computers MCG-85 [Nigel Barnes]
 Fidelity International Gambit Voice [hap, Sean Riddle]
@@ -12,7 +12,7 @@ Novag Industries Emerald Classic Plus [hap, Berger]
 Saitek / Heuristic Software Kasparov Blitz (set 1) [hap, Berger]
 Senario Drum Super Star [David Haywood, Sean Riddle, Peter Wilhelmsen]
 
-New working clones
+New Working Clones
 ------------------
 Heavy Barrel (US, revision 3) [Brian Troha, The Dumping Union]
 Hyper Street Fighter II: The Anniversary Edition (Japan 040123) [bugcutt]
@@ -24,7 +24,7 @@ Tarzan Chuang Tian Guan (China, V110) [hammy]
 Umi de Poker / Marine Paradise (Japan, newer) [Ioannis Bampoulas]
 X-Men Vs. Street Fighter (Japan 970113) [bugcutt]
 
-New systems marked not working
+New Systems Marked Not Working
 ------------------------------
 Altos Computer Systems ACS586 [Lubomir Rintel]
 Bandai / Koto Dragon Ball Z x One Piece: Battle Taikan Gum-Gum no Kamehameha: Omee no Koe de Ora o Yobu (Japan) [David Haywood, TeamEurope]
@@ -57,7 +57,7 @@ Zanussi / Necta Firenze (vending machine) [Joan RF, jordigahan]
 Zanussi / Necta unknown Zanussi / Necta vending machine [Joan RF, jordigahan]
 Zanussi / Necta Venezia (coffee vending machine) [Joan RF, jordigahan]
 
-New clones marked not working
+New Clones Marked Not Working
 -----------------------------
 Crazy Balls (Bontempi) [Domenico Cervini]
 Fruit Genie (Version 1-1-03, set 2) [Ioannis Bampoulas]
@@ -76,23 +76,29 @@ Shuang Long Qiang Zhu 2 VS (China, set 2) [dyq, little0, Guru]
 Te Yi Gong Neng (China, V632C) [dyq, little0, Guru]
 Tic Tac Trivia (6221-25, U5-0E, 05/08/86, UK) [hammy, Brian Troha, The Dumping Union]
 
-New working software list items
+New Working Software List Items
 -------------------------------
-altos586: Altos Diagnostic Executive [Lubomir Rintel]
-ekara_cart: Super Cartridge: Best Hit (Japan) (SP-07) [David Haywood, TeamEurope]
-hp98x6_rom: BASIC 4.0, BASIC 5.1, SSS HPL+II [F. Ulivi]
-microbox2_flop: Microbox II 6809 FLEX V3.01, Microbox II Distribution [David Rumball]
+altos586.xml:
+  Altos Diagnostic Executive [Lubomir Rintel]
+ekara_cart.xml:
+  Super Cartridge: Best Hit (Japan) (SP-07) [David Haywood, TeamEurope]
+hp98x6_rom.xml:
+  BASIC 4.0, BASIC 5.1, SSS HPL+II [F. Ulivi]
+microbox2_flop.xml:
+  Microbox II 6809 FLEX V3.01, Microbox II Distribution [David Rumball]
 
-Software list items promoted to working
+Software List Items Promoted to Working
 ---------------------------------------
-c64_cart: Pitfall II: The Lost Caverns [Angelo Salese]
-msx1_cart: X & Y (Arab) [Wilbert Pol]
+c64_cart.xml:
+  Pitfall II: The Lost Caverns [Angelo Salese]
+msx1_cart.xml:
+  X & Y (Arab) [Wilbert Pol]
 
-New software list items marked not working
+New Software List Items Marked Not Working
 ------------------------------------------
-easy_karaoke_cart:
+easy_karaoke_cart.xml:
   Disney Princess 10-Song Karaoke Cartridge I (DK-P1), Karaoke Microphone Pro Cartridge 1 (Greece) [David Haywood, TeamEurope]
-leapfrog_leappad_cart:
+leapfrog_leappad_cart.xml:
   Anpanman no CoCoPad de AIUEO kyoushitsu Pinocchio (Japan),
   Benny and Friends English Book Vol. 2 -Majo to taiketsu! Daibouken- (Japan),
   CoCoPad ROM Cassette Kono men o ue ni shiteirete ne! (11 November 2007, 1 January 2008) (Japan),
@@ -108,9 +114,9 @@ leapfrog_leappad_cart:
   Kuma no Pooh-san Hachimitsu no tsubo ga ippai Pooh-san to kazu·katachi (Japan), Kuma no Pooh-san: Pooh-san to Hachimitsu (Japan),
   Minna de tanoshiku! CoCoPad (Otameshi soft) (Japan),
   Okaasan to Issho: Goo Choco Lantan: Spoo no Fushigi na Oto no Daibouken! (Japan),
-  Shinkenzemi Challenge 2-nensei Korasho to issho ni kuku o oboeyou! (Japan), Yuuki Rinrin Anpunch! (Japan)
-  [David Haywood, TeamEurope]
-psion1: Science Pack (alt), Utility Pack (alt) [Nigel Barnes]
+  Shinkenzemi Challenge 2-nensei Korasho to issho ni kuku o oboeyou! (Japan), Yuuki Rinrin Anpunch! (Japan) [David Haywood, TeamEurope]
+psion1.xml:
+  Science Pack (alt), Utility Pack (alt) [Nigel Barnes]
 
 
 MAME Testers Bug Fixed (1):
@@ -181,8 +187,8 @@ Source changes:
 - heathzenith/mms77316_fdc.cpp: Suppress side effects of data reads for debugger accesses (#12627) [Mark Garlanger].
 - casio/pv1000.cpp: IRQs were broken in a08b1138: now commercial games work again (#12631) [lidnariq].
 - igs_fear.cpp: Pubilisher licenses and Chinese title addition for superkds (#12628) [Michael Sanborn]:
-  * Fearless Pinocchio was licensed by American Alpha.
-  * Super Kids was licensed by Golden Dragon Amusement.
+  * Fearless Pinocchio was licensed by American Alpha;
+  * Super Kids was licensed by Golden Dragon Amusement;
   * Added Chinese title to superkds.
 - nmk/nmk16.cpp: Improved controls and scrolling for tdragonb2. IRQs related problems remain [Ivan Vangelista].
 - sunelectronics/shangha3.cpp: Consolidated driver in single file [Ivan Vangelista].
@@ -215,9 +221,9 @@ Source changes:
   * pcw.xml, xegs.xml: Don't unnecessarily abbreviate country names.
   * pcw.xml, xegs.xml: Use lowercase for descriptive text.
 - metro/metro.cpp: Split driver state class for different hardware configurations (#12630) [cam900]:
-  * Suppress side effects for debugger reads.
-  * Move save state registration and other initialization to machine_start.
-  * Reduced literal tag usage and runtime tag lookups.
+  * Suppress side effects for debugger reads;
+  * Move save state registration and other initialization to machine_start;
+  * Reduced literal tag usage and runtime tag lookups;
   * Cleaned up switch matrix reading.
 - Dumpt three karaoke cartridges and two IVL Technologies karaoke systems (#12624) [David Haywood, TeamEurope].
 - debugger/debugqt.cpp: Don't sleep waiting for events on debugger update [Vas Crabb].
@@ -255,15 +261,15 @@ Source changes:
 - s14001a: Remove statistics, use logmacro for debug msgs [hap].
 - s14001a: Use device_rom_interface [hap].
 - konami/k052109.cpp: Remove the color kludge for xmen/gradius3 (#12651) [JOTEGO].
-  * removes the color kludge for xmen/gradius3
-  * proper handling (init/save) of new m_addrmap variable
+  * Removes the color kludge for xmen/gradius3;
+  * Proper handling (init/save) of new m_addrmap variable
 - misc/changyu.cpp: Add VBL NMI and hook up the OPLL for changyu2 (#12643) [flama12333].
 - sinclair/tsconf.cpp: Fix layers priority, screen updates (#12647) [holub].
 - hash/sgi_mips.xml: Rename netbsd 2 images to allow to merge into same directory (#12645) [jflatt].
 - spg2xx.cpp : drumsups is from 2007 (#12655) [David Haywood].
 - gaelco/gaelco3d.cpp: Add notes and ROM placeholder for Football Power I/O PCB [Recreativas.org] (#12654) [ClawGrip].
 - z80dma.cpp: Burst mode and refactoring (#12494) [holub]:
-  * zorba fix: restore deffered rdy write.
+  * zorba fix: Restore deffered rdy write.
   * Fix 'x1turbo40 suikoden'.
 - novag/diamond2.cpp: Rename (diamond2.cpp) to (diamond.cpp) [hap].
 - video/upd7220.cpp: Added uPD7220A variant with new RESET and BLANK commands [Nigel Barnes].
@@ -332,14 +338,14 @@ Source changes:
   * machine/pdp11.h: Made clear_virq/raise_virq safer.
   * ussr/bk_m.cpp: Suppress side effects for debugger reads.
 - casio/pv1000.cpp: Fixed I/O read issues [Vas Crabb]:
-  * Don't take a tript through the scheduler if matrix IRQ wasn't active.
+  * Don't take a tript through the scheduler if matrix IRQ wasn't active;
   * Suppress read side effects for debugger.
 - dataeast/deco_ld.cpp: A few less literal tags [Vas Crabb].
 - machine/intelfsh.cpp: Added ST M29W640GB 8K Flash device (#12675) [Wilbert Pol].
 - msx1_cart.xml: Corrected ROM loading for X & Y (#12681) [Wilbert Pol].
 - misc/marywu.cpp: Improved peripherals (#12564) [flama12333].
-  * Fixed PSG and 8279 clock frequencies.
-  * Save contents of battery-backed static RAM.
+  * Fixed PSG and 8279 clock frequencies;
+  * Save contents of battery-backed static RAM;
   * Cleaned up inputs.
 - misc/marywu.cpp: Use an I/O port finder array [Vas Crabb].
 - misc/marywu.cpp: Fixed I/O port selection [Vas Crabb].
@@ -352,9 +358,9 @@ Source changes:
   * move 'radikaldarts' to Gaelco Folder.
 - dataeast/mirage.cpp: Minor cleanup [Angelo Salese].
 - edevices/pzletime.cpp: Cleanups [Angelo Salese]:
-  * Make video blinking more sensical.
-  * Convert custom ticket handling to ticket_dispenser_device.
-  * Convert eeprom/ticket to portw.
+  * Make video blinking more sensical;
+  * Convert custom ticket handling to ticket_dispenser_device;
+  * Convert eeprom/ticket to portw;
   * Avoid potential out-of-cliprect bitmap layer drawing.
 - tgtpanic: Increase IRQ frequency, update notes [hap].
 - epson/qx10.cpp: Use copyrozbitmap for (external to 7220) zoom handling [Angelo Salese].
@@ -376,6 +382,7 @@ Source changes:
 - ui/menu.cpp: Avoid floating point equality comparison. Fixes pointer input not working on menus at some window sizes in 32-bit x86 builds [Vas Crabb].
 - leapfrog_leappad_cart.xml: Fixed a description [Vas Crabb].
 - Cleaned up the mess from #12610 [Vas Crabb]:
-  * Command line options need to be documented.
-  * Don't assume C strings returned as option values remain valid indefinitely.
+  * Command line options need to be documented;
+  * Don't assume C strings returned as option values remain valid indefinitely;
   * Fixed wording for option description.
+- Bump MAME 0.269 [Vas Crabb].

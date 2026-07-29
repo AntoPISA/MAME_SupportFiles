@@ -380,11 +380,11 @@ Source changes
 - sinclair/pentevo, scorpion, specnext, tsconf.cpp: Cleaned up inherited unused driver's Configuration (#14798) [holub].
 - Canon X07: Fix VRAM access functions in T6834 subsystem emulation (#14752) [Aurelien34].
 - testkeys: Add license header [hap].
--  bus/vme/sys68k_cpu1: Miniforce and CPU1 (#14873) [Joakim Larsson Edström]:
-   * Replace layout with tag-based screen references;
-   * Functional front panel matching real hardware;
-   * Add DB25 serial port connectors to front panel layout;
-   * Show connected device type on front panel connectors.
+- bus/vme/sys68k_cpu1: Miniforce and CPU1 (#14873) [Joakim Larsson Edström]:
+  * Replace layout with tag-based screen references;
+  * Functional front panel matching real hardware;
+  * Add DB25 serial port connectors to front panel layout;
+  * Show connected device type on front panel connectors.
 - bus/vme/sys68k_cpu1: Rename RS232 port tags to match front panel labels, wire up P5 [Joakim Larsson Edström].
 - Revert "sinclair/specnext*.cpp: Added missing save states (#14744)" [Vas Crabb]:
   * This reverts commit f350d5746c03033d062785155a5600398131b52e;
@@ -494,7 +494,7 @@ Source changes
 - lwings: Make spriteram size same for all games, add sprite dma delay, small cleanup [hap].
 - z80: Rename BUSRQ to BUSREQ [hap].
 - taitosj: Hook up z80 busreq/busack [hap].
-- z80: Rename memrq to mreq [hap].
+- z80: Rename (memrq) to (mreq) [hap].
 - exedexes, gng, gunsmoke: Add manual sprite dma trigger [hap].
 - pc/README.md: Add quick ref for POST codes [Angelo Salese].
 - sega/saturn_cd_hle.cpp: Command 0x51 is confirmed it doesn't generate a DRDY, pause drive when in (buffull) state [Angelo Salese].
@@ -681,12 +681,12 @@ Source changes
 - multibus/dsd5217.cpp: Add winchester interface [Patrick Mackinlay].
 - mario: Update notes [hap].
 - cpu/sharc/sharc: Improved memory access code [Vas Crabb]:
- * Exploit data memory layout to bypass the memory system for both 32-bit and 16-bit SRAM accesses.
- * Exploit the way the SHARC toolchain lays out executable code and data in SRAM to greatly reduce unnecessary cache flushes.
- * Implemented Rn = NOT Rx (used by Sega Model 2B games).
- * cpu/sharc/sharcdrc.cpp: Align 32-bit program memory accesses with the most significant bit of the bus (corresponds to interpreter change in 0f368c268c1eabc176af8e5cdf780b5d60e8d9a0 from GitHub #13770).
- * emu/debug/points.cpp: Fixed hang when a watchpoint is hit on a 64-bit wide address space with word addressing.
- * sega/model2.cpp: Enabled SHARC recompiler for Model 2B (can be disabled again before release if too many things are broken).
+  * Exploit data memory layout to bypass the memory system for both 32-bit and 16-bit SRAM accesses.
+  * Exploit the way the SHARC toolchain lays out executable code and data in SRAM to greatly reduce unnecessary cache flushes.
+  * Implemented Rn = NOT Rx (used by Sega Model 2B games).
+  * cpu/sharc/sharcdrc.cpp: Align 32-bit program memory accesses with the most significant bit of the bus (corresponds to interpreter change in 0f368c268c1eabc176af8e5cdf780b5d60e8d9a0 from GitHub #13770).
+  * emu/debug/points.cpp: Fixed hang when a watchpoint is hit on a 64-bit wide address space with word addressing.
+  * sega/model2.cpp: Enabled SHARC recompiler for Model 2B (can be disabled again before release if too many things are broken).
 - taito/wgp.cpp: Consolidated driver into single file [Ivan Vangelista].
 - taito/wgp.cpp: Fixed Clang compile [Ivan Vangelista].
 - vibm/ptpc110.cpp: Preliminary FDC37C665IR hookup [Angelo Salese].
@@ -779,7 +779,7 @@ Source changes
 - Revert "cpu/sharc: Overhauled stack handling (should improve stability):" [Vas Crabb]:
   * This reverts commit 874b81d69ff627964c765de543a7cbfdd2a63b0c;
   * This isn't ready.
--  pu/sharc: Improved reset conditions, prevent program from writing read-only STKY bits (should fix MT07295) [Vas Crabb].
+- cpu/sharc: Improved reset conditions, prevent program from writing read-only STKY bits (should fix MT07295) [Vas Crabb].
 - cpu/sharc: Improved status stack handling a little. Also actually implemented ASTAT/MODE1 save/restore for recompiler [Vas Crabb].
 - cpu/drcbearm64.cpp: Identify more valid bit mask immediates (saves an instruction and a temporary register, e.g. when clearing a small contiguous field in an integer) [Vas Crabb].
 - generic_cdrom.xml: Fix version number on winnt40srk (#14963) [Mike Swanson].
@@ -802,9 +802,9 @@ Source changes
   * Also improved logging and suppress side effects for debugger reads for Toaplan drivers using the device.
 - toaplan/kbash.cpp: Moved kbash2-specific MSM6295 bankswitching into kbash2_state, improved kbash2 system description [cam900].
 - apple2gs: Tidy up (#14968) [arekkusu42]:
-  * after 3292c78, uKeyboardC010 is bit7 only .: not needed in C011-1F;
-  * after 410a3db, final C00X handling is redundant;
-  * eliminate the screen_update trampoline;
+  * After 3292c78, uKeyboardC010 is bit7 only .: not needed in C011-1F;
+  * After 410a3db, final C00X handling is redundant;
+  * Eliminate the screen_update trampoline;
   * No functional change.
 - tk2000: Promote to WORKING (#14964). Implement the color/bw softswitch and add TODO notes [arekkusu42].
 - cpu/sharc/sharc.cpp: Implemented a bit more channel 6 DMA. Fixes changing settings in Pilot Kids service mode menus [Vas Crabb].

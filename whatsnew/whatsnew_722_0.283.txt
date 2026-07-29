@@ -68,7 +68,7 @@ El Dorado (V1.4D) [Roberto Fresca, Grull Osgo]
 Ensoniq SD-1 (21 voice) [Christian Brunschen]
 Fever Chance (W-6, cross-system for W-4) [Roberto Fresca, Grull Osgo, Ioannis Bampoulas]
 
-New Systems Narked not Working
+New Systems Narked Not Working
 ------------------------------
 500-in-1 Handheld Game [TeamEurope, David Haywood]
 Akai CD3000XL [R. Belmont]
@@ -131,7 +131,7 @@ Texas Holdem (V015US) [Ioannis Bampoulas]
 Treasure 2000 (Ver. 107) [Ioannis Bampoulas]
 Xiaochou Jianianhua (S100CN) [XingXing]
 
-New Clones Marked not Working
+New Clones Marked Not Working
 -----------------------------
 Blue Shark (Subsino, Ver. 1.0) [Ioannis Bampoulas]
 Chaoji Daheng 6th (set 2) [little0]
@@ -545,8 +545,8 @@ Source changes
   * nec/pc9821.cpp: implement PEGC VRAM view:
   - BREAKING CHANGE: RAM options are now using M notation in place of K on i386+ machines, like 4M in place of 3712K.
 - access/acvirus.cpp: Small but important fixes [AJR]:
- * virusa, virusc: Configure PWM_DISPLAY device just to stop emulation from crashing;
- * virusc: Add more program RAM to map.
+  * virusa, virusc: Configure PWM_DISPLAY device just to stop emulation from crashing;
+  * virusc: Add more program RAM to map.
 - ibm5170.xml: Add 1 new not working software (#14487) [Rebecca Wallander].
 - apple2e: fix -ramsize crash (#14486) [arekkusu42]:
   * Ensure IIc memory expansion variables are initialized, mimicking device_reset() from a2bus_memexp_device.  This fixes a crash booting ProDOS with -ramsize;

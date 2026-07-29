@@ -426,9 +426,9 @@ Source changes
 - adp/stella8085.cpp: New systems marked not working (#15047) [stonedDiscord].
 - lux4105: Remove the nscsi_cb, untested because no clue how to test it [Olivier Galibert].
 - aic6250,ncr5380,ncr53c90: Deslotify [Olivier Galibert].
-- pc/pcipc_via.cpp: fix PCI config space for slots [Angelo Salese].
-- bus/pci/sis6326.cpp: shuffle roms a bit [Angelo Salese].
-- machine/sis950_lpc.cpp: add pin mapper, add PCI slots to base sis630.cpp driver [Angelo Salese].
+- pc/pcipc_via.cpp: Fix PCI config space for slots [Angelo Salese].
+- bus/pci/sis6326.cpp: Shuffle roms a bit [Angelo Salese].
+- machine/sis950_lpc.cpp: Add pin mapper, add PCI slots to base sis630.cpp driver [Angelo Salese].
 - machine/sis630_gui.cpp: Fix subsystem write once in GUI, fix device ID for bridge [Angelo Salese].
 - machine/sis950_lpc.cpp: Hookup relocable IDE IIRQA/IIRQB pins [Angelo Salese].
 - bus/pci/trident_4dwavedx.cpp: hookup PC_JOY [Angelo Salese].
@@ -507,9 +507,9 @@ Source changes
   - Use BIT helper for single bit values;
   - Replace printf to logerror;
   - Use static function for DMA address increment calculation.
- * machine/vrender0.cpp: Add DMA register format notes
- * machine/vrender0.h: Moved note into machine/vrender0.cpp
- * machine/vrender0.cpp: Make DMA comment shorter.
+  * machine/vrender0.cpp: Add DMA register format notes
+  * machine/vrender0.h: Moved note into machine/vrender0.cpp
+  * machine/vrender0.cpp: Make DMA comment shorter.
 - machine/pit8253.cpp: Improved timing accuracy (#15064) [m1macrophage]:
   * machine/pit8253.cpp: Improved timing accuracy;
   * The counter is loaded and decremented on the falling edge of CLK;
@@ -614,17 +614,17 @@ Source changes
   * Attempting to fix macOS specific warning.
 - vlm5030: Fix pin rising edge detect if state high val is not 1, add _r/_w to handlers [hap].
 - apple2video: Improve video timing (#15073) [arekkusu42]:
- * apple2e, apple2gs: Fix HBL relative timing.
- * HBL is placed to the left of active video on apple2 hardware; Use set_raw() and manually schedule video callbacks to align timing. This fixes glitches visible in various demos using C019 VBL sync;
- * apple2gs: Also align VGC SCB IRQ timing to match hardware. Also fix CO2F HORIZCNT to match hardware. This fixes the FTA XMAS demo crash.
- * tk2000: Note XTAL TODO.
- * apple2video: Add 80STORE and NEWVIDEO beam-racing.
- * Several fixes to match hardware:
- - Add missing softswitch beam-racing support: C001 80STORE  (effectively toggling PAGE2) C029 NEWVIDEO (.: 32 colors per scanline is possible);
- - Also followup #14053: make C068 STATEREG participate in beam-racing;
- - Also fix C055 PAGE2 to work with 80VID;
- - Also encapsulate update_now() handling for C022 and C034 colors.
- * apple2gs: fix intra-scanline beam-racing:
+  * apple2e, apple2gs: Fix HBL relative timing.
+  * HBL is placed to the left of active video on apple2 hardware; Use set_raw() and manually schedule video callbacks to align timing. This fixes glitches visible in various demos using C019 VBL sync;
+  * apple2gs: Also align VGC SCB IRQ timing to match hardware. Also fix CO2F HORIZCNT to match hardware. This fixes the FTA XMAS demo crash.
+  * tk2000: Note XTAL TODO.
+  * apple2video: Add 80STORE and NEWVIDEO beam-racing.
+  * Several fixes to match hardware:
+  - Add missing softswitch beam-racing support: C001 80STORE  (effectively toggling PAGE2) C029 NEWVIDEO (.: 32 colors per scanline is possible);
+  - Also followup #14053: make C068 STATEREG participate in beam-racing;
+  - Also fix C055 PAGE2 to work with 80VID;
+  - Also encapsulate update_now() handling for C022 and C034 colors.
+  * apple2gs: Fix intra-scanline beam-racing:
  - Implement clipping in screen_update_GS(). This fixes various demo effects like text scrolling in the border.
 - sh/sh7709s.cpp: Fix bug in DRC memory accessor using clobbered IO reg (#15074). Fix a shift error in the wcr1 register values Add bcr2 plumbing for determining cache line fetch reads based off BCR2. Area 0 is set via external pins so hardcoding the cv1k value, this is typically code space though so it only affects timing during copy of code to main memory [Jesus Ramos].
 - luxor/abc1600: Fix SASI callback [Curt Coder].
@@ -751,7 +751,7 @@ Source changes
 - sound/va_eg.cpp: Added OTA-based envelope generator (#15112) [m1macrophage].
 - sequential/prophet5.cpp: Used it for the Glide circuit [m1macrophage].
 - Some prep work for extending offs_t to 64 bits. This covers some of stuff highlighted in #14689 where the approach to apply is reasonably obvious and the changes are harmless when offs_t doesn't change size. Most of this is being more strict with offs_t vs uint32_t and switching to type-safe formatting functions [Vas Crabb, Ryan Holtz].
- * Also renamed gaelco/gaelcof3.cpp to gaelco/futbol3.cpp since the company name is in the project name anyway.
+  * Also renamed gaelco/gaelcof3.cpp to gaelco/futbol3.cpp since the company name is in the project name anyway.
 - sound/va_eg.h: Corrected comment about equivalent resistance (#15115) [m1macrophage].
 - tmp94c241: Add serial port sub-device with I/O interface mode (#15015) [Felipe Corrêa da Silva Sanches]:
   * Add serial port sub-device with I/O interface mode;

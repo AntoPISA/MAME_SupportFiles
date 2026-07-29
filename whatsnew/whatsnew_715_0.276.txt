@@ -113,37 +113,44 @@ Xingyun Paomadi (unknown ver) [dyq, little0, Guru]
 
 New Working Software List Items
 -------------------------------
-fidel_scc: Chess Encyclopedia, Sicilian Variation [anonymous]
-ibm5170:
+fidel_scc.xml:
+  Chess Encyclopedia, Sicilian Variation [anonymous]
+ibm5170.xml:
   PartitionMagic 8.05 (English), PartitionMagic 8.05 (French), PartitionMagic 8.05 (German), PartitionMagic 8.05 (Italian),
   PartitionMagic 8.05 (Spanish) [Mike Swanson]
-ibm5170_cdrom: PartitionMagic 8.05 [Mike Swanson]
-pc88va: AntiAir, Ascend, Bootskell, Cacorm, Cavit, Cracky, Lift, Neuras, Osotos, Yewdow [Inufuto]
-spectrum_cass:
+ibm5170_cdrom.xml:
+  PartitionMagic 8.05 [Mike Swanson]
+pc88va.xml:
+  AntiAir, Ascend, Bootskell, Cacorm, Cavit, Cracky, Lift, Neuras, Osotos, Yewdow [Inufuto]
+spectrum_cass.xml:
   Mieyen [Inufuto]
   African Trail Simulator, Ajedrez, Run for Gold (System 4) [Spectrum Computing]
   Destronado [El Trastero del Spectrum]
 
 Software List Items Promoted to Working
 ---------------------------------------
-pc88va: Abunai Tengu Densetsu, Crescent Moon Girl, D.P.S - Dream Program System, Pac-Man, Pac-Man (auto-bootable) [Angelo Salese]
+pc88va.xml:
+  Abunai Tengu Densetsu, Crescent Moon Girl, D.P.S - Dream Program System, Pac-Man, Pac-Man (auto-bootable) [Angelo Salese]
 
 New Software List Items Marked Not Working
 ------------------------------------------
-pc88va: Aerial, Battlot, Guntus, Hopman, Impetus, Ruptus [Inufuto]
-pc98_cd: FreeBSD(98) Nyuumon Kit (2.1.0R) [sampson]
+pc88va.xml:
+  Aerial, Battlot, Guntus, Hopman, Impetus, Ruptus [Inufuto]
+pc98_cd.xml:
+  FreeBSD(98) Nyuumon Kit (2.1.0R) [sampson]
+
 
 MAME Testers Bugs Fixed (9):
 ----------------------------
-- 00835: [Sound] (rare/kinst.cpp) kinst, kinst2: Music doesn’t play during attract mode immediately after booting (hap).
-- 07947: [Sound] (technos/ddragon.cpp) ddragon and clones: Music and sound effect balance is incorrect (hap).
-- 08895: [Sound] (snk/bbusters.cpp) bbustersu, bbustersua: Some sound effects and music channels do not play (hap).
-- 09125: [Graphics] (cinematronics/leland.cpp) brutforc: The status bar at the bottom of the screen flickers (hap).
-- 09129: [Sound] (namco/namcos21_de.cpp) driveyes: The default PCM ROM settings are incorrect causing missing sounds (danylopez123).
-- 09136: [Sound] (sega/segas16b.cpp) bayroute1: Sound ROM dumps of questionable quality are available but not used (hap).
-- 09141: [DIP/Input] (sharp/x68k.cpp) x68000 [metlunit, metluni2]: Mouse input doesn’t work correctly (Patrick Mackinlay).
-- 09144: [Graphics] (taito/asuka.cpp) earthjkr: The text layer does not display correctly after loading a saved state (hap).
-- 09145: [Sound] (cinematronics/jack.cpp) jack and clones: [possible] Sounds play too fast (hap).
+- 00835: [Sound] (rare/kinst.cpp) kinst, kinst2: Music doesn’t play during attract mode immediately after booting (hap)
+- 07947: [Sound] (technos/ddragon.cpp) ddragon and clones: Music and sound effect balance is incorrect (hap)
+- 08895: [Sound] (snk/bbusters.cpp) bbustersu, bbustersua: Some sound effects and music channels do not play (hap)
+- 09125: [Graphics] (cinematronics/leland.cpp) brutforc: The status bar at the bottom of the screen flickers (hap)
+- 09129: [Sound] (namco/namcos21_de.cpp) driveyes: The default PCM ROM settings are incorrect causing missing sounds (danylopez123)
+- 09136: [Sound] (sega/segas16b.cpp) bayroute1: Sound ROM dumps of questionable quality are available but not used (hap)
+- 09141: [DIP/Input] (sharp/x68k.cpp) x68000 [metlunit, metluni2]: Mouse input doesn’t work correctly (Patrick Mackinlay)
+- 09144: [Graphics] (taito/asuka.cpp) earthjkr: The text layer does not display correctly after loading a saved state (hap)
+- 09145: [Sound] (cinematronics/jack.cpp) jack and clones: [possible] Sounds play too fast (hap)
 
 
 Merged pull requests
@@ -611,10 +618,10 @@ Source changes:
 - fidelity elite: Add more notes about encyclop module [hap].
 - m16c: Fix disassembly syntax for adjnz/sbjnz [AJR].
 - Some relatively simple recompiler optimisations [Vas Crabb]:
- * cpu/drcbex64.cpp: Avoid a lot of unnecessary flag manipulation on shift/rotate operations. Don't calculate flags when not requested. Don't preserve carry in for operations that don't use it as an input;
- * cpu/drcbex64.cpp: Avoid loading CL when ECX can be used.  Loading CL doesn't clear the upper bits, so it depends on the previous value of RCX, causing pipeline dependencies. Loading ECX can grab a fresh rename register;
- * cpu/drcbearm64.cpp: Attempt more optimisation on one more load immediate operation;
- * cpu/e132xs: Get rid of a redundant TEST - ROLAND can set the Z flag.
+  * cpu/drcbex64.cpp: Avoid a lot of unnecessary flag manipulation on shift/rotate operations. Don't calculate flags when not requested. Don't preserve carry in for operations that don't use it as an input;
+  * cpu/drcbex64.cpp: Avoid loading CL when ECX can be used.  Loading CL doesn't clear the upper bits, so it depends on the previous value of RCX, causing pipeline dependencies. Loading ECX can grab a fresh rename register;
+  * cpu/drcbearm64.cpp: Attempt more optimisation on one more load immediate operation;
+  * cpu/e132xs: Get rid of a redundant TEST - ROLAND can set the Z flag.
 - mips/mips1: Remove embedded syscall logging [Patrick Mackinlay].
 - tatsumi rotating sprite device refactor take 2 (#13470) [David Haywood].
 - tzbx15_sprites.cpp: Cursory cleanups [Angelo Salese].
@@ -723,3 +730,4 @@ Source changes:
   * skeleton/turnierdart.cpp: The srcclean on this file was missed.
 - misc/dgpix.cpp: Demote the correct game [Vas Crabb].
 - Miscellaneous Fixes for descriptions [Vas Crabb].
+- Bump MAME 0.276 [Vas Crabb].

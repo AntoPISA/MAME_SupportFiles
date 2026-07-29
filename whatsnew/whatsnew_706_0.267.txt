@@ -306,12 +306,12 @@ Source changes:
 - nec/pc8801.cpp: Enable partial updates after #12423 [Angelo Salese].
 - machine/watchdog.cpp: relax log message (#12421). Get rid of verbose call, reword comments [Angelo Salese].
 - imagedev/floppy: Fix a bug with reading the first 1-bit on a track (#12439) [Roman Donchenko]
-  * `floppy_image_device::find_index` uses binary search to find the index for which `buf[spos] <= position < buf[spos + 1]`. However, the algorithm behaves incorrectly when `position < buf[0]`. In this case, the algorithm returns 0, as if `position` was between `buf[0]` and `buf[1]`.
+  * floppy_image_device::find_index` uses binary search to find the index for which `buf[spos] <= position < buf[spos + 1]`. However, the algorithm behaves incorrectly when `position < buf[0]`. In this case, the algorithm returns 0, as if `position` was between `buf[0]` and `buf[1]`.
   * The effect of this is that if`get_next_transition` is called with a timestamp that is between the start of the revolution and the first transition, then instead of returning the timestamp of that transition, it returns the timestamp of the second transition instead. Essentially, the first 1-bit on the track gets flipped to a 0.
   * I have encountered this in Apple II emulation, where this bug manifests as sporadic I/O errors.
   * Fix it by doing two things:
-  1. Replace `find_index` with a call to `upper_bound` from the standard library, which behaves correctly in edge cases.
-  2. If `upper_bound` signals that `position < buf[0]`, then adjust `base` and `index` to point to the last transition of the previous revolution.
+  - Replace `find_index` with a call to `upper_bound` from the standard library, which behaves correctly in edge cases.
+  - If `upper_bound` signals that `position < buf[0]`, then adjust `base` and `index` to point to the last transition of the previous revolution.
 - konami/nemesis.cpp: Add a Tecfri licensed version of Salamander (#12437) [ClawGrip].
 - misc: Update some notes [hap].
 - saitek_osa/maestro: Dumped another Maestro B version [Berger].
@@ -388,7 +388,7 @@ Source changes:
 - pacman/pacman.cpp: Redumped PROMs for (mspacmane) and (pacmanmr) [IZ8DWF].
 - rare/btoads.cpp: Consolidated driver in single file [Ivan Vangelista].
 - cpu/z80/z80.cpp: Refactor redoable case (#12472) [holub].
-- New WORKING - sinclair/specnext.cpp: ZX Spectrum Next (known as tbblue) (#11918) [holub].
+- New WORKING: sinclair/specnext.cpp: ZX Spectrum Next (known as tbblue) (#11918) [holub].
 - cpu/z80/z80.cpp: Fix compile error (#12474) [holub].
 - cpu/z80/z80.cpp: Move busrq check to service step (#12475) [holub].
 - z80: Add busack output pin [hap].
@@ -398,17 +398,17 @@ Source changes:
 - subsino2: Update notes [hap].
 - tecmo/bombjack.cpp: Refactor, merge with sega/calorie.cpp (#12476) [2k2]:
   * tecmo/bombjack.cpp: Cleanups, fixes, merge with sega/calorie.cpp:
-  - Fix large sprites in Bomb Jack by implementing the sprite size latches.
-  - Simplify and fix gfxdecode macros for Bomb Jack.
-  - Fix background tilemap loading in Bomb Jack to properly use D0-D3.
-  - Fix memory maps to match the schematics.
-  - Add watchdog reset and enable (not used in Calorie Kun).
-  - Proper screen params for Bomb Jack and Calorie Kun.
-  - Proper audio timings for Calorie Kun.
-  - Add notes on audio filter and PCB references.
-  - Cleaned up other notes
-  - Fixed spacing.
-  - Renamed bombjack2 to "Bomb Jack (earlier)".
+  - Fix large sprites in Bomb Jack by implementing the sprite size latches;
+  - Simplify and fix gfxdecode macros for Bomb Jack;
+  - Fix background tilemap loading in Bomb Jack to properly use D0-D3;
+  - Fix memory maps to match the schematics;
+  - Add watchdog reset and enable (not used in Calorie Kun);
+  - Proper screen params for Bomb Jack and Calorie Kun;
+  - Proper audio timings for Calorie Kun;
+  - Add notes on audio filter and PCB references;
+  - Cleaned up other notes;
+  - Fixed spacing;
+  - Renamed bombjack2 to "Bomb Jack (earlier)";
   - Renamed "licence" to "license" in bombjackt.
 - nec/pc9801.cpp: Document possible target [Angelo Salese].
 - sunwise/anoworld.cpp: Enable audio CPU [Angelo Salese].

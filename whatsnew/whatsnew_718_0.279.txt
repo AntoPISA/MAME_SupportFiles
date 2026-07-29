@@ -90,7 +90,7 @@ unknown YungYu game [Roberto Fresca, little0]
 VideoJet / Conny PDC M2 [TeamEurope]
 Zhongji Dou Dizhu (V204CN) [little0, Mr. Kong]
 
-New Clones Marked not Working
+New Clones Marked Not Working
 -----------------------------
 Acorn Computers Atom with RAMROM [Nigel Barnes]
 Arthur's Knights (v1.00) [Ioannis Bampoulas]
@@ -153,7 +153,7 @@ psx.xml:
   Action Man - Operation eXtreme (USA), Adidas Power Soccer 2 (Europe), AFL '99 (Australia), AirRace Championship (Japan),
   Anastasia (Europe) [redump.org]
 pv1000.xml:
- MMazy2, Mieyen [Inufuto]
+  MMazy2, Mieyen [Inufuto]
 zx81_cass.xml:
   Cosmic Payback (v1.0) [John Connolly]
   Sconnex [orac81]
@@ -533,9 +533,9 @@ Source changes
   * Make better guesses at clocks, dividers and screen parameters [AJR].
 - mm1display: Use pwm_display_device [hap].
 - Windows: Do not drop into debugger when no MAME window has focus (#13902) [npwoods]:
- * On Windows, the debugger has a special Windows-specific feature that drops the user into the debugger if the key sequence is pressed. This seems to be present so that the key sequence triggers dropping into the debugger not just from the main window, but also from debugger windows;
- * This has also created an oddity where pressing the debugger key sequence from a MAME window will cause a "User-initiated break" but pressing it from a debugger window will cause "Internal breakpoint" to be displayed;
- * However, while this logic has a check to not apply when to a MAME window, it seems to also activate even if MAME itself is not in focus. This change ensures that a stray debugger sequence in a completely unrelated application won't cause the user to be dropped in the debugger.
+  * On Windows, the debugger has a special Windows-specific feature that drops the user into the debugger if the key sequence is pressed. This seems to be present so that the key sequence triggers dropping into the debugger not just from the main window, but also from debugger windows;
+  * This has also created an oddity where pressing the debugger key sequence from a MAME window will cause a "User-initiated break" but pressing it from a debugger window will cause "Internal breakpoint" to be displayed;
+  * However, while this logic has a check to not apply when to a MAME window, it seems to also activate even if MAME itself is not in focus. This change ensures that a stray debugger sequence in a completely unrelated application won't cause the user to be dropped in the debugger.
 - m72: Tweak bg layer 2 transmask workaround [hap].
 - gaelco/lotoplay.cpp: Remove 'lotoplayc', it was a bad dump (#13945). Add info and clock frequency for PIC-based Loto Play [ClawGrip].
 - hash/cdtv.xml: Perform QA pass over new CR-511-B core [Angelo Salese].
@@ -658,7 +658,7 @@ Source changes
 - sound/upd931.cpp: Emulated µPD931 synthesis chip [Naoki Saito].
 - galaxian/galaxian.cpp: Added Rocket Convoy (War of the Bugs clone from Radar Ltd.). (#13198) [Naoki Saito].
 - seta/downtown.cpp: Adjusted Meta Fox/Arbalester video refresh rate to improve Meta Fox music tempo (#13267). Also improved names of some member functions and updated comments [Naoki Saito].
--apple2gs_flop_orig.xml, apple2_flop_clcracked.xml: Added sixteen working items and replaced one crack (#13146) [Naoki Saito].
+- apple2gs_flop_orig.xml, apple2_flop_clcracked.xml: Added sixteen working items and replaced one crack (#13146) [Naoki Saito].
 - apple2gs_flop_misc.xml: Removed a duplicate dump [Naoki Saito].
 - Also cleaned up metadata and spacing around comment delimiters [Naoki Saito].
 - amiga/amigaaga.cpp: Increment fmode 3 offset hack [Naoki Saito].
@@ -877,11 +877,11 @@ Source changes
   * Added a delay after SPU DMA is triggered to prevent a lock up in Primal Rage 2 test mode & improved logging;
   * sony/zn.cpp: primrag2 title string numeral change (#13338).
 - namco/namcos12.cpp: verified that contents of the TKK1-A CD for truckk are the same of the TKK2-A CD [hammy]:
-  * punisherbz: set year according to title screen (#13335);
-  * jaleco/ms32.cpp: fix gratia roztiles file names to match PCB silkscreen (#13295);
-  * snk/snk6502.cpp: removed BAD_DUMP flag and fixed bits comment for ic10 in nibblera. ROM passes test and the fixed bits comment simply isn't true;
-  * tiny.lst: remove comments from file.
-- nwk-tr: revert broadcast CG select after Kale changed his mind of this implementation [Naoki Saito].
+  * punisherbz: Set year according to title screen (#13335);
+  * jaleco/ms32.cpp: Fix gratia roztiles file names to match PCB silkscreen (#13295);
+  * snk/snk6502.cpp: Removed BAD_DUMP flag and fixed bits comment for ic10 in nibblera. ROM passes test and the fixed bits comment simply isn't true;
+  * tiny.lst: Remove comments from file.
+- nwk-tr: Revert broadcast CG select after Kale changed his mind of this implementation [Naoki Saito].
 - cpu/drcbex64.cpp: Slightly optimised some degenerate cases for memory accesses. This gives a very small improvement for systems with 32 address lines and no global address mask (e.g. pmac6100, sf2049 or coolmini) [Naoki Saito].
 - mame.lst: Removed majority of comments [Naoki Saito]:
   * A lot of them were empty anyway, or years at risk of getting out of synch with the source files.  There's still a commented system entry for some Nokia PC, and the comment at the top of the file;
@@ -1088,9 +1088,7 @@ Source changes
 - cpu/z80n: Updated timings for z80n instructions (#13985) [holub].
 - ddragon3: Lower overall volume, add sprite size mask, add wwfwfest sprite buffer trigger [hap, Jim Westfall].
 - cave: Add hopper device [hap].
-- CD-i: Add Undefined Matte Behavior and fix RGB Transparency  (#13978) [Vincent-Halver]:
-  * CD-i: Add Undefined Matte Behavior Fixes #13976 Greenbook says not to change the MF flag within a line. However, if you do, the behavior is undefined. Console verification shows that the real console will use these values. The non-spec behavior is explained in a comment. Additionally, this tidies up the Matte function;
-  * CD-i: Fix RGB Transparency This fixes RGB transparency checks. Previously it was checking the high bit. This would pass when checking the false condition (mode 10) but not on the true condition (mode 2).
+- CD-i: Add Undefined Matte Behavior and fix RGB Transparency (#13978). Fix RGB Transparency This fixes RGB transparency checks. Previously it was checking the high bit. This would pass when checking the false condition (mode 10) but not on the true condition (mode 2) [Vincent-Halver].
 - sinclair/spectrum_v.cpp: Added ULA snow effect support [holub, spectramine] (#13963). Added preliminary ULA snow effect support This fixes +2 as well [holub].
 - apple/apple2gs.cpp: Fix memory behaviour beyond 8MB. Fixes Biff's Tale [Peter Ferrie].
 - video/mc6847.cpp: Removed fake PAL variants, and replaced with a configuration option [Nigel Barnes].
@@ -1099,9 +1097,7 @@ Source changes
 - igs/spoker.cpp: Filled in memory map for xjinhuang / jinhuang2 [Ivan Vangelista].
 - circus: Set maincpu ROM_LOAD to 0x0 [hap].
 - minferno: Fix crash at reset [hap].
-- CD-i: Fix Cursor Inversion Color and Add External Video Placeholder (#13989) [Vincent-Halver]:
-  * CD-i: Fix Cursor Inversion Color This corrects a slight error in the cursor inversion color. A full brightness color should keep the brightness value, and only invert the RGB. See MCD212 section 7.5;
-  * CD-i: Introduce External Video Input This replaces the static background color with a function that will switch behavior if the EV flag is set. Currently there is no DVC chip, so this will produce black output. This fixes #13980.
+- CD-i: Fix Cursor Inversion Color and Add External Video Placeholder (#13989). Introduce External Video Input This replaces the static background color with a function that will switch behavior if the EV flag is set. Currently there is no DVC chip, so this will produce black output. This fixes #13980 [Vincent-Halver].
 - fz1 and clones: Preliminary sound emulation, fz20m: fix SCSI hookup (#13967) [Devin Acker]:
   * fz1 and clones: Preliminary sound emulation;
   * fz20m: Fix SCSI hookup.

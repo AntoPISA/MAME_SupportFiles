@@ -411,7 +411,7 @@ Source changes:
 - hitachi/b16.cpp: Fix compile [Angelo Salese].
 - capcom/lwings.cpp: Hooked up sound CPU reset control for Trojan and Avengers (#12804). Original Trojan schematic shows that the main CPU controls the sound CPU reset line [JOTEGO].
 - emu/diserial.cpp: Improved stop bit handling (fixes #12762) (#12770) [Colin Leroy-Mira]:
-  * Never check more than one stop bit on reception.
+  * Never check more than one stop bit on reception;
   * Don't add an extra stop bit on transmission.
 - hitachi/b16.cpp: Stub a bunch of keys, make it disk error explicitly [Angelo Salese].
 - hitachi/b16.cpp: FDC wants ready line connected [Angelo Salese].
@@ -443,7 +443,7 @@ Source changes:
 - skeleton/bitgraph.cpp: Use memory share to access video RAM [AJR].
 - skeleton/bitgraph.cpp: Simplify screen update routine a little more [AJR].
 - misc/esd16.cpp: Cleaned up code (#12823) [cam900]:
-  * Use appropriately sized integers for tilemap color values.
+  * Use appropriately sized integers for tilemap color values;
   * Reduced literal tag usage, improved variable names, use C++ line comments.
 - neogeo.xml: Added a newer Gladmort demo (#12465) [ArcadeShadow].
 - New systems marked not working (#12816) [Angelo Salese]:
@@ -452,7 +452,7 @@ Source changes:
   * Missed a conflict marker.
   * hitachi/mbs1.cpp: QA stub.
   * hitachi/bml3.h: reinstate ATTR_COLD.
--vemu/render.cpp: Always translate coordinates if container is found (fixes GitHub #12817) [Vas Crabb].
+- vemu/render.cpp: Always translate coordinates if container is found (fixes GitHub #12817) [Vas Crabb].
 - ui/videoopt.cpp, ui/ui.cpp: Allow pressing UI Clear to restore default pointer timeout settings [Vas Crabb].
 - midway/starrider.cpp: Added PROTO 3 program ROMs [Vas Crabb].
 - Added ATTR_COLD to common lifecycle methods for many files in src/devices (#12822) [holub].
@@ -479,14 +479,14 @@ Source changes:
 - hash/ibm{5150,5170,5170_cdrom}.xml: Add FreeDOS version 1.3 [Mike Swanson].
 - hash/ibm5170{,_cdrom}.xml: Move all FreeDOS boot floppies to cdrom. These files are inseparatably attached to the CD-ROM releases, as their only purpose is to boot the installer on systems that do not support CD-ROM booting [Mike Swanson].
 - hash/ibm5150.xml: Add FreeDOS 1.3 8086 Minimized [Mike Swanson]:
-  * This is not an official FreeDOS distribution, but it is a useful one for the ibm5150 driver, stripping down the operating system into something reasonable to run on the original IBM PC architecture.
+  * This is not an official FreeDOS distribution, but it is a useful one for the ibm5150 driver, stripping down the operating system into something reasonable to run on the original IBM PC architecture;
   * Useful links about what it is: https://www.youtube.com/watch?v=EOVLlMQs9f8 https://archive.org/details/free-dos-1.3-8086-minimized.
 - hash/ibm{5150,5170}_hdd.xml: Add FreeDOS hard disk images. These are just basic installs of the operating system from the installation media [Mike Swanson].
 - igt/gkigt.cpp: Suppress SENET readback for now, fix base video ROM banks, document workaround for i960 init crash [Angelo Salese].
 - video/upd7220.cpp: Clear FIFO and DMA status on RESET command issued. Fix pc9801rs spindiz2 boot [Angelo Salese].
 - hash/pc98.xml: QA demotions [Angelo Salese].
 - misc/mcatadv.cpp: Clarified comment about Magical Cat Adventure sound chips (#12829) [PabloArcade]:
-  * Specified exact Z80 part used as sound CPU for sound CPU.
+  * Specified exact Z80 part used as sound CPU for sound CPU;
   * Noted that Y3106-F DAC is present.
 - ibm5170_cdrom.xml: Add EA Sports Cricket 96 (#12819) [Ectoplasm].
 - apple2_cass: Fix filenames for brkocol (#12830) [eientei95].
@@ -502,11 +502,11 @@ Source changes:
 - funtech/supracan.cpp: rectify sprite ysizes == 9, skip blank sprites for drawing [Angelo Salese].
 - imagedev/floppy.h: Remove #include "screen.h" [AJR].
 - machine/spi_sdcard.cpp: More fixes [Vas Crabb]:
-  * Send faux CRC status response immediately after receiving data.
-  * Allocate a large enough buffer for an SD Card with 2048-byte blocks.
-  * Don't indicate partial block read support for SDHC cards.
-  * Reject tranfers that cross block boundaries for SD Card (misaligned read support is not flagged as supported).
-  * Reject partial block writes and writes that cross block boundaries (also not flagged as supported).
+  * Send faux CRC status response immediately after receiving data;
+  * Allocate a large enough buffer for an SD Card with 2048-byte blocks;
+  * Don't indicate partial block read support for SDHC cards;
+  * Reject tranfers that cross block boundaries for SD Card (misaligned read support is not flagged as supported);
+  * Reject partial block writes and writes that cross block boundaries (also not flagged as supported);
   * Behave a bit better when no card is present.
 - emu/debug, osd/modules/debugger/qt: Clean up #includes a bit [AJR].
 - primusex: Move to separate driver; add preliminary key matrix, memory map and LCD video [AJR].
@@ -551,9 +551,9 @@ Source changes:
 - homebrew/linux4004.cpp: Emulated Linux/4004 board. VFD is not emulated, but all other features are present [Vas Crabb].
 - machine/sc16is741.cpp: Emulated basic SC16IS741A UART functionality in SPI interface mode [Vas Crabb].
 - machine/spi_sdcard.cpp: Improved interface logic [Vas Crabb]:
-  * Start in unprotected mode as specified by the standard.
-  * Ignore stop bits in unprotected mode - apparenty real cards do this.
-  * Set protected or unprotected mode in response to CMD59.
+  * Start in unprotected mode as specified by the standard;
+  * Ignore stop bits in unprotected mode - apparenty real cards do this;
+  * Set protected or unprotected mode in response to CMD59;
   * Reset SPI logic when initially selected.
 - machine/spi_psram.cpp: Started adding PSRAM QPI functionality [Vas Crabb].
 - emu/diserial.cpp: Got rid of the per-instance parity lookup table [Vas Crabb].
@@ -562,11 +562,11 @@ Source changes:
 - midway/cashline.cpp: Added a skeleton driver for the Bally/Sente Cashline slot machine (#12838) [ClawGrip].
 - skeleton/bullion2.cpp: Marked Inder Bullion 2 as mechanical [ClawGrip].
 - mc6843: Fixes and improvements [AJR]:
-  * Make Seek Track Zero issue step pulses when the track 0 sensor is off rather than on.
-  * Enable IRQ output from device (bml3 software needs this).
-  * Issue Status Sense Request in PC I/O mode, not DMA mode.
-  * Raise Seek Error if STZ command doesn't end at track 0.
-  * Add settle timeout for head unload after certain commands.
+  * Make Seek Track Zero issue step pulses when the track 0 sensor is off rather than on;
+  * Enable IRQ output from device (bml3 software needs this);
+  * Issue Status Sense Request in PC I/O mode, not DMA mode;
+  * Raise Seek Error if STZ command doesn't end at track 0;
+  * Add settle timeout for head unload after certain commands;
   * Enhance logging messages but hide them behind logmacro compilation switches.
 - to_flop.xml: Add notes [AJR].
 - igs/igs_m027xa.xpp: Fixed inputs for Crazy Bugs (V103JP). The hopper is hooked up because an input for it appears in the I/O test, however both the Payout and Ticket buttons seem to use the ticker dispenser to pay out credits [Vas Crabb].
@@ -586,8 +586,8 @@ Source changes:
 - ioport.h: Preemptive srcclean [AJR].
 - Mumble mumble spaces mumble [Olivier Galibert].
 - emu/ioport.cpp: Improved validation of DIP switch locations [Vas Crabb].
-  * Treat an empty switch name as an error.
-  * Treat a non-positive switch number as an error.
+  * Treat an empty switch name as an error;
+  * Treat a non-positive switch number as an error;
   * Also allocate fewer temporary strings.
 - verifone/tranz330.cpp: Update the one thing that doesn't use the standard macros [Vas Crabb].
 - tvdear: Add preliminary keyboard matrix [AJR].
@@ -598,8 +598,8 @@ Source changes:
 - hash/pc98.xml: Fix lammal boot order, misc QA [Angelo Salese].
 - upd765: indicate ready status in polling IRQ sense [cracyc].
 - misc/mirax.cpp: Minor cleanups (#12857) [cam900]:
-  * Use more appropriate types for some variables.
-  * Simplified graphics ROM decoding.
+  * Use more appropriate types for some variables;
+  * Simplified graphics ROM decoding;
   * Reduced literal tags, made some variables const, improved ROM region and variable names.
 - sound/k054539.cpp: Corrected reverb RAM size and addressing (#12856). Top address bit for the 32K RAM is bit 16, rather than the intuitive bit 14 [JOTEGO].
 - snk/ngp.cpp: Improved real-time clock behavior - fixes MT05279 (#12855) [Wilbert Pol].
@@ -616,11 +616,11 @@ Source changes:
 - sinclair/screen_ula.cpp: Fixed attributes decoding [holub].
 - sinclair/tsconf.cpp: Document DMA controller clock source [holub].
 - misc/mosaic.cpp: Minor cleanups (#12863) [cam900]:
-  * Suppress side effects for debugger reads.
-  * Use more appropriate types for some integer variables.
+  * Suppress side effects for debugger reads;
+  * Use more appropriate types for some integer variables;
   * Use generic graphics decoding layouts, made CPU ROM region size match size of ROM.
 - hash/nes.xml: Verified content for several NESert Golfing games (#12859) [Mike Swanson]:
-  * Versions 1.0-1.3 and 1.4 was located by the author.
+  * Versions 1.0-1.3 and 1.4 was located by the author;
   * Also marked early versions as beta releases as recommended by the author.
 - asteroid: Set the watchdog frequency (#12866) [Mike].
 - snk/k1ge.cpp: Implement device_palette_interface (#12864) [Wilbert Pol].
@@ -628,9 +628,9 @@ Source changes:
 - igs/igs_m027.cpp: Fixed I/O and DIP switches for cjddzp [Vas Crabb].
 - hash/thinkpad8xx.xml: Added AIX 4 (not working) (#12832). Also added some metadata to AIX 4.1.5 [ClawGrip].
 - misc/multfish.cpp: Minor cleanups (#12862) [cam900]:
-  * Use more appropriate types for integer variables, and made some variables constant.
-  * Allocate video RAM on start, and reduced run-time tag lookups.
-  * Improved some function and variable names, and reduced use of static functions and preprocessor macros.
+  * Use more appropriate types for integer variables, and made some variables constant;
+  * Allocate video RAM on start, and reduced run-time tag lookups;
+  * Improved some function and variable names, and reduced use of static functions and preprocessor macros;
   * Cleaned up spacing, and converted single-line comments to C++ line comments.
 - machine/timekeeper.cpp: Suppress side effects for debugger reads [cam900].
 - misc/multfish_boot.cpp: Converted single-line comments to C++ line comments [cam900].
@@ -648,9 +648,9 @@ Source changes:
 - Remove "Ltd." from system name [ClawGrip].
 - Add a note about HASP parallel port dongle [ClawGrip].
 - chd.cpp: More API changes [AJR]:
-  * Have metadata_find return std::error_condition instead of throwing an exception
-  * Replace the is_XXX predicates with check_is_XXX methods that return a std::error_condition, enabling improved error reporting for cdrom_image_device.
-  * Retain read error information in chd_file_compressor.
+  * Have metadata_find return std::error_condition instead of throwing an exception;
+  * Replace the is_XXX predicates with check_is_XXX methods that return a std::error_condition, enabling improved error reporting for cdrom_image_device;
+  * Retain read error information in chd_file_compressor;
   * Make a bunch of methods noexcept. This mostly restores the changes from cc772072fa635146b1df39a5694d2a8f8aa5a34f.
 - tools/chdman.cpp: Throw errors when examining metadata to determine compression defaults [AJR].
 - util/chd.cpp: Made a few more member functions return error conditions. Also mark error paths as unexpected to optimise against them [Vas Crabb].
@@ -664,7 +664,7 @@ Source changes:
 - util/chd.cpp, util/chdcodec.cpp: Added a safer way to let codecs do special stuff with hunks [Vas Crabb].
 - jarajal: Use romanization found on title screen and packaging [AJR].
 - addrmap: Allow ioport finders in portr/w/rw [Olivier Galibert]:
-  * Convert a number of drivers to use ioport finders in the memory map.
+  * Convert a number of drivers to use ioport finders in the memory map;
   * This is not entirely gratuitous.  The idea is to ensure all the ports are in the class, so that eventually ioport finders become ioport creators. The ultimate aim is to C++-ify port descriptions which would be made way nicer by getting rid of the need for PORT_START.
 - rm/rm380z.cpp: Split RM480Z out to its own driver with MQ2 floppy drive support (#12576) [Robin Sergeant].
 - cpu/m68000: Rename m_instruction_restart to m_can_instruction_restart to clearly distinguish from m_restart_instruction (#12869) [Adam Billyard].
@@ -686,8 +686,8 @@ Source changes:
 - tvgames/* Documentation and metadata updates (#12874) [David Haywood].
 - tomshoot: Use full Japanese title instead of rough translation [AJR].
 - igs/igs_m027.cpp: Cleaned up added Long Hu Zhengba 4 and Chaoji Dou Dizhu versions [Vas Crabb]:
-  * Confirmed I/O and DIP switches match other games.
-  * Corrected title for Long Hu Zhengba 4 Dui Hua Ban.
+  * Confirmed I/O and DIP switches match other games;
+  * Corrected title for Long Hu Zhengba 4 Dui Hua Ban;
   * Removed parent/clone relationship for Long Hu Zhengba 4 Dui Hua Ban.
 - igs/igs_m027.cpp: Changed lthyp description to use the reading used in the attract mode voice sample. Also added some notes about DIP switch settings [Vas Crabb].
 - igs/igs_m027.cpp: Trojaned internal ROMs for cjddzlf, lhzb3unk, lhzb3unk2 [Guru].
@@ -713,19 +713,19 @@ Source changes:
 - video/upd7220.cpp: Fix sync position. Fix pc98:daremo booting [Angelo Salese].
 - source org: Move dedicated dave soundchip to enterprise folder [hap].
 - st9: Fix disassembler mnemonics for CPJFI/CPJTI [AJR].
-- Fix error handling (nw) [smf].
+- Fix error handling [smf].
 - emu/ioport.h: Made syntax for configuring callbacks more consistent. You now use FUNC or NAME to configure port field callbacks, like you would when configuring other kinds of callbacks. This has a number of benefits [Vas Crabb]:
-  * No need to remember different syntax for port field callbacks, and more approachable for new contributors.
-  * May use function templates with multiple arugments using NAME((&...)) syntax without resorting to another layer of macros.
-  * May use non-member functions on the odd chance it's useful.
+  * No need to remember different syntax for port field callbacks, and more approachable for new contributors;
+  * May use function templates with multiple arugments using NAME((&...)) syntax without resorting to another layer of macros;
+  * May use non-member functions on the odd chance it's useful;
   * More natural syntax for referring to member functions.
 - nec/pc9801_v.cpp: Reverse attribute will draw opaque on Y char limit. Fix daremo intro [Angelo Salese].
 - nec/pc9801_v.cpp: kanji select takes over semigraphics. Fix beatvice bitmap layer masking on edges during gameplay [Angelo Salese].
 - igs/igs_m027_023vid.cpp: Fix external IRQ generation (#12887) [XingXing].
 - igs/igs_m027.cpp: Confirmed some more internal ROM dumps [Guru].
 - igs/igs017.cpp: More input improvements [Vas Crabb]:
-  * Fixed DIP switches for Long Hu Zhengba, Shuang Long Qiang Zhu 2, Tian Jiang Shen Bing and Tarzan Chuang Tian Guan.
-  * Cleaned up inputs for Shuang Long Qiang Zhu 2, Tian Jiang Shen Bing and Tarzan Chuang Tian Guan.
+  * Fixed DIP switches for Long Hu Zhengba, Shuang Long Qiang Zhu 2, Tian Jiang Shen Bing and Tarzan Chuang Tian Guan;
+  * Cleaned up inputs for Shuang Long Qiang Zhu 2, Tian Jiang Shen Bing and Tarzan Chuang Tian Guan;
   * Removed mahjong keyboard row that isn't read from Tarzan Chuang Tian Guan.
 - igs/igs_m027.cpp: Changed Chaoji Tuolaji MSM6295 clock to 2MHz with pin 7 low, and added a note about the game using inputs that aren't shown in test mode [Vas Crabb].
 - nfd_dsk: FM should be cell_count / 2 [cracyc].
@@ -747,19 +747,19 @@ Source changes:
 - Add a Skeleton driver for Cirsa "2080606" slot machines hardware (#12592) [ClawGrip].
 - Add Linksys PAP2 again (#12854) [Octocontrabass].
 - ibm5170_cdrom, mac_cdrom: Quake and id Anthology release (#12793) [Mike Swanson]:
-  * Replace existing Quake with a good dump.
-  * Add more Quake variants.
-  * Add missing id Anthology disc 4 (Mac).
+  * Replace existing Quake with a good dump;
+  * Add more Quake variants;
+  * Add missing id Anthology disc 4 (Mac);
   * Point id Anthology disc 3 to quake.
 - pc98.xml: Fix beastlr2 sha1 [cracyc].
 - gkigt.cpp driver improvements. Identificated the Triple Play set. Changed description to Triple Play (M0000230, Spanish) [Roberto Fresca].
 - upd765: Reset st0 when starting a seek and fail if drive isn't ready [cracyc].
 - hash/pc98.xml: QA [Angelo Salese]:
-  * Fix 98lespro, 98lespr2 publisher.
+  * Fix 98lespro, 98lespr2 publisher;
   * Fix solitaira SHA1.
 - taito/retofinv.cpp: Added a Return of the Invaders bootleg from Video Dens (#12884) [ClawGrip].
 - tecmo/tecmo.cpp: Reduced literal tags and cleaned up code (#12469) [cam900]:
-  * Use I/O port array finder for DIP switches, made some variables const.
+  * Use I/O port array finder for DIP switches, made some variables const;
   * Use C++ line comments for single-line comments, added notes.
 - igs/igs_m027.cpp, igs/igs_m027_023vid.cpp: Hide inactive inputs for more games [Vas Crabb].
 - Tidied up some recent changes [Vas Crabb].
@@ -767,13 +767,13 @@ Source changes:
 - hash/pc98.xml: Split PC Training Disk from n88bas61, misc shuffling and QA [Angelo Salese].
 - nec/pc9801.cpp: kanji PCG MMIO window actually wants the LR setting [Angelo Salese].
 - misc/mjsenpu.cpp: Cleaned up code (#12885) [cam900]:
-  * Use palette_device handlers for palette.
-  * Corrected video RAM width, and changed to allocate on start.
-  * Constrain screen update to clipping rectangle.
-  * Fixed input matrix reading.
-  * Reduce literal tags, changed logging to use logerror, made come variables const.
-  * Reduce duplication, and improved ROM region names.
-  * Added notes about languages for in-game text and voice samples.
+  * Use palette_device handlers for palette;
+  * Corrected video RAM width, and changed to allocate on start;
+  * Constrain screen update to clipping rectangle;
+  * Fixed input matrix reading;
+  * Reduce literal tags, changed logging to use logerror, made come variables const;
+  * Reduce duplication, and improved ROM region names;
+  * Added notes about languages for in-game text and voice samples;
   * Use C++ line comments for single-line comments.
 - upd7801: Reduce prescaling of timer value when loaded by STM. Fixes speed issues in various scv games [AJR].
 - misc/mjsenpu.cpp: Fixed I/O and DIP switch settings This makes it possible to complete a game with either mahjong keyboard or joystick controls [Vas Crabb].
@@ -788,14 +788,14 @@ Source changes:
 - nmk/nmk16: Hook up MCU for tharrierb. Test mode can now be accessed [Dirk Best, Porchy, hammy].
 - tim100: Invert parity of keyboard to make it usable [AJR].
 - tim011: Updates [AJR]:
-  * Replace generic keyboard emulation with CDP1802-based keyboard.
-  * Hook up RS-232 port to other Z180 ASCI channel.
-  * Enable floppy sounds.
+  * Replace generic keyboard emulation with CDP1802-based keyboard;
+  * Hook up RS-232 port to other Z180 ASCI channel;
+  * Enable floppy sounds;
   * Eliminate tag macro.
 - dataeast/supbtime.cpp, fuuki/fuukifg2.cpp, fuuki/fuukifg3.cpp: Consolidated drivers into single files [Ivan Vangelista].
-- bus/cbus: Drop PC9801 prefix for AMD-98 sound card [Angelo Salese].
-  * Make it output mono.
-  * Improve AY3 flip-flop mechanism.
+- bus/cbus: Drop PC9801 prefix for AMD-98 sound card [Angelo Salese]:
+  * Make it output mono;
+  * Improve AY3 flip-flop mechanism;
   * Add logmacro.
 - pc9801_v: Fix explicit tile lr upd7220: stop drawing if active lines is reached [cracyc].
 - nec/pc9801_v.cpp: More aggressive PCG LR checks, fix mightyhd and volley2a [Angelo Salese].
@@ -806,10 +806,10 @@ Source changes:
 - fuukifg2/3: Init palette ram to black (nomore white flash at boot) [hap].
 - toaplan2: Lower sound volume because of distortion [hap].
 - Added ten TV games (two working) (#12883). tvgames/st2302u_bbl_rom.cpp: Increased size of ROM area for BBL338 configuration, and changed class200 from DPHH8213 to BBL338 [David Haywood].
-- spectrum_cass.xml: Added fourteen items working items (thirteen working) (#12897) [ArcadeShadow].
-  * Combined Provincial League tape with Speedway - Team Championship - 1960.
-  * Combined Star Watcher Applications Program and Teaching Program.
-  * Combined Bridge Software Statistics Groups Comparison and Multiple Observation Designs.
+- spectrum_cass.xml: Added fourteen items working items (thirteen working) (#12897) [ArcadeShadow]:
+  * Combined Provincial League tape with Speedway - Team Championship - 1960;
+  * Combined Star Watcher Applications Program and Teaching Program;
+  * Combined Bridge Software Statistics Groups Comparison and Multiple Observation Designs;
   * Fixed some metadata and parent/clone relationships.
 - igs/igs_m027_023vid.cpp: Trigger FIQ at start of vertical blanking and IRQ at end of vertical blanking (#12895) [David Haywood].
 - nec/pc9801: Add 7220 monitor clock register, cleanups around display enable [Angelo Salese].
@@ -821,10 +821,10 @@ Source changes:
 - m68k: add FPU instructions `FETOX`, `FETOXM1`, `FTWOTOX`, `FTENTOX` (#12903) [kms1212].
 - h8_sci: Disable logging by default & don't log debugger reads. Only start sending data via DMA if transmitter is enabled. Clear TEND when sending data via DMA. TDRE, RDRF, ORER, PER and FER flags can be cleared to 0 only if they have first been read while set to 1. Only set TEND when there is no more data to send. Receiver is started only on high to low rxd in asynchronous mode, when receiving and sending in synchronous mode when data is sent, or continuously when receiving without sending in synchronous mode. Set rx status to idle when stopping clock in rx_async_step(). Remove double invert when calculating parity in rx_async_step(). Remove redundant check for synchronous mode in rx_async_step() [smf].
 - {mo5/mo6/to7/to8}_cass.xml, {mo5/to7}_cart.xml, {mo5/mo6/to}_flop.xml: Metadata corrections [AJR]:
-  * Change name of publisher Answare to Answare-Diffusion.
-  * Add missing diacritics to name of publisher Microïds and some titles.
-  * Correct title of to7_cart:chiflett.
-  * Add subtitle of to7_cass:epargne.
+  * Change name of publisher Answare to Answare-Diffusion;
+  * Add missing diacritics to name of publisher Microïds and some titles;
+  * Correct title of to7_cart:chiflett;
+  * Add subtitle of to7_cass:epargne;
   * Correct spelling of to7_cass & to8_cass list names.
 - to7_cass.xml: Spelling fix [AJR].
 - f2mc16: Created devices for the onboard analogue to digital converter, clock generator, interrupt controller/Extended intelligent I/O service, I/O port, Programmable Pulse Generator, reload timer and UART. CPU core exposes the RMW line for onboard devices. Log messages will contain the address of the start of the instruction, rather than the next byte the CPU is about to fetch. Added INT9/INT addr16 & INT addr24 software interrupt instructions. Fixed INCW @RWx & DECW @RWx instruction length Added missing fetch of immediate value in MOV @RWx + RW7, #imm8. Rewrote Tomy Prin-C keyboard handling and pen to use new onboard devices, substantially increasing the reload timer 0 frequency as it's now correctly waiting for 0x7530 underflows with reload = 0x37f at startup [smf].
@@ -869,3 +869,4 @@ Source changes:
 - nes.xml: Confirmed recompiled NESert Golfing Tournament Edition (v1.4) matches a downloaded copy [Lord Nightmare].
 - ui/selmenu.cpp: Don't ignore character input when no pointer is active [Vas Crabb].
 - ui/menu.cpp: Handle menus resetting items from custom pointer handlers better [Vas Crabb].
+- Bump MAME 0.271 [Vas Crabb].

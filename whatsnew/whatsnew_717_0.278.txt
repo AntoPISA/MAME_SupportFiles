@@ -926,9 +926,9 @@ Source changes
 - Verified old extracted MCU ROM for Spanish sets is 100% good [ClawGrip].
 - Add a new Lady Bug bootleg set on Galaxian hardware (#13681) [ClawGrip].
 -  misc/gms.cpp: Added double up game functions to input names [Vas Crabb].
-- [win] debugger crash: Add fallback to "0" if address evaluation fails (#13686) [dave-br]:
- * Memory window address field: If address string evaluation fails, we'd fall back to the last-known-working string. This works great if the failure is due to the user changing the string.  But if the user changes the source, that also can cause failures (different symbol table used for evaluation), and this fallback does not help;
- * The fix is to add a second fallback: Use "0" as the address string when all else fails.
+- win debugger crash: Add fallback to "0" if address evaluation fails (#13686) [dave-br]:
+  * Memory window address field: If address string evaluation fails, we'd fall back to the last-known-working string. This works great if the failure is due to the user changing the string.  But if the user changes the source, that also can cause failures (different symbol table used for evaluation), and this fallback does not help;
+  * The fix is to add a second fallback: Use "0" as the address string when all else fails.
 - emu/inpttype.ipp: Group default double-up game control assignments on home row [Vas Crabb]
   * Also moved Mahjong P to P and Payout to 4. This fixes the conflict between Mahjong I and Payout.
   * misc/gms.cpp: Added missing Key Out, Payout and hopper inputs for Super 555 and improved input names.

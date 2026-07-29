@@ -2,7 +2,7 @@
 ----------------------------
 
 
-New working systems
+New Working Systems
 -------------------
 Apple Computer Macintosh TV [R. Belmont]
 Epoch / SSD Company LTD Tokyo Friend Park 2 (Japan) [David Haywood, TeamEurope]
@@ -17,7 +17,7 @@ Visual Technology Visual 50 [Dirk Best, Bitsavers]
 Visual Technology XDS-19P [Dirk Best, Bitsavers, Mattis Lind]
 Yeno 416 XL (Yeno) [hap, Berger, Achim]
 
-New working clones
+New Working Clones
 ------------------
 1942 (Itisa bootleg) [Recreativas.org]
 Bagman (bootleg on Moon Cresta hardware, set 3) [David Bosque, Recreativas.org]
@@ -36,12 +36,12 @@ Texas Instruments Little Professor (1976 version, rev. A) [hap, Sean Riddle]
 Texas Instruments Little Professor (1976 version, rev. B) [hap, Sean Riddle]
 VTech Dora the Explorer - Dora TV Globe-Trotter (France) [David Haywood, TeamEurope]
 
-Systems promoted to working
+Systems Promoted to Working
 ---------------------------
 Tomy / SSD Company LTD Nihon Isshuu - Boku wa Plarail Untenshi (Japan) [David Haywood]
 Tomy / SSD Company LTD Tomica Carnavi Drive (Japan) [David Haywood]
 
-New systems marked not working
+New Systems Marked Not Working
 ------------------------------
 ADDS 4000/260 [Bitsavers]
 Alantin - Aladdin's Magic Lamp [Ioannis Bampoulas]
@@ -84,7 +84,7 @@ Tong Zi Maque [dyq, little0, Guru]
 Wicked Witch (Ver. AA.01.A) [Ioannis Bampoulas]
 Yamaha PSR-2000 [Matt, Olivier Galibert]
 
-New clones marked not working
+New Clones Marked Not Working
 -----------------------------
 Animal House (set 4) [Taksangs, charlie]
 Bomberman (Version 6.6, Avraam bootleg) [Ioannis Bampoulas]
@@ -100,7 +100,7 @@ Tandy Radio Shack Tandy 4000 [Adrian's Digital basement]
 Transporter the Rescue (LA-1) [Scott Charles, PinMAME]
 Two Minute Drill (Ver 2.2A 1993/10/18) [Sergio Galiano]
 
-New working software list items
+New Working Software List Items
 -------------------------------
 a2600.xml:
   R2D Tank (prototype), Spiders (prototype) [Atarimania]
@@ -144,7 +144,7 @@ spectrum_cass.xml:
   Italia 1944 (Spanish) [Zankle Soft]
   Super Bomberman 2 Remix (demo v0.1), Super Bomberman 2 Remix (demo v1.1) [ZX Evolution]
 
-New software list items marked not working
+New Software List Items Marked Not Working
 ------------------------------------------
 a2600.xml:
   Hobo (prototype) [Atarimania]
@@ -261,7 +261,7 @@ Source changes:
 ---------------
 - Revert "temp revert for for 0.263 of https://github.com/mamedev/mame/commit/e4e5f3d918388a0455899abec3c02828209144dd". This reverts commit 34cf9cbaeaa071cb5a8eb9e53ba4e180165577e3 [hap].
 - osd/osdnet.cpp: Removed dependency from OSD network device to libemu (#12058) [Vas Crabb]:
-  * This allows save states to be created and loaded when network interfaces are present.
+  * This allows save states to be created and loaded when network interfaces are present;
   * device_network_interface may need some more attention to get save states taken while receiving a packet to work properly.
 - emu/save.cpp: Made illegal save state registrations always fatal (#12054) [Vas Crabb].
 - util/ioprocs.cpp: Added wrappers for common patterns (#11608) [Vas Crabb]:
@@ -304,8 +304,8 @@ Source changes:
 - dataeast/bwing.cpp: Moved from bankdev to view, consolidated driver in single file [Ivan Vangelista].
 - pc/pcipc_sis: Replace svga_et4k default map with wd90c31_lr [Angelo Salese].
 - pc532: Add floating-point unit [Patrick Mackinlay]:
-  * ns32381: Add new device
-  * ns32k: Refactor slave interface
+  * ns32381: Add new device.
+  * ns32k: Refactor slave interface.
   * ns32k: Fix format 9 instruction decoding.
 - h8_intc: Don't detect an nmi at power-on when initial pin state is 'ASSERT_LINE', h8_timer: prevent multiple interrupts when timer wasn't clocked [hap]
 - h8_timer: Remove impossible check, h8_timer: overflow only happens when m_counter_cycle is the full range [hap].
@@ -314,11 +314,11 @@ Source changes:
 - Revert "pc532: add floating-point unit" [hap].
 - h8_timer: A way to fix (almost all?) missed events [hap].
 - g65816: Emulation accuracy fixes - (stack,S),Y and emulation mode quirks (#12079) [Adrian Siekierka]:
-  * Fix wraparound in (stack,S),Y addressing mode.
-  * Emulate (direct,X) emulation mode wraparound bug, fix handling of direct page accesses in emulation mode.
-  * Ignore emulation mode for 24-bit pointer reads/writes.
-  * Force usage of native 16-bit stack handling for 65816-exclusive stack instructions.
-  * PEI also forces native 16-bit direct page handling.
+  * Fix wraparound in (stack,S),Y addressing mode;
+  * Emulate (direct,X) emulation mode wraparound bug, fix handling of direct page accesses in emulation mode;
+  * Ignore emulation mode for 24-bit pointer reads/writes;
+  * Force usage of native 16-bit stack handling for 65816-exclusive stack instructions;
+  * PEI also forces native 16-bit direct page handling;
   * PLB reads from ($200) instead of ($100) when S=$1FF in emulation mode.
 - spi_sdcard.cpp: Implement SEND_CSD (SD_TYPE_V2) (#12078) [holub].
 - trs/mc10.cpp: Add "Multiport" cartridge and RAM expansion for the Matra & Hachette Alice (#12080) [Sylvain Glaize].
@@ -416,7 +416,7 @@ Source changes:
 - taito/2mindril.cpp: Added Two Minute Drill Ver 2.2A (#12110) [Sergio G].
 - a2600.xml: Added three prototypes of UA Limited games (two working) (#12096) [ArcadeShadow].
 - msx1_flop_525.xml: Added six Brazilian items (five working) (#12064) [Wilbert Pol]:
-  * Corrected Informatica to Informática in publisher names.
+  * Corrected Informatica to Informática in publisher names;
   * Updated some usage instructions.
 - input/input_rawinput.cpp: Properly align buffers for RAWINPUT header [Vas Crabb].
 - jaleco/megasys1.cpp: Clarified comment about MCU program used for chimerab [Vas Crabb].
@@ -425,7 +425,7 @@ Source changes:
   * gomoku: Fixed frequency of oneshot voices
   * kozure: kozure uses waveform select function of YM3812. Previously MAME used YM3526. This results incorrect tone.
 - rm/rm380z.cpp: Added support for high resolution graphics, colour and text character dimming (#12044) [Robin Sergeant]:
-  * Fixed MT06483 by making empty ROM areas read high (0xff).
+  * Fixed MT06483 by making empty ROM areas read high (0xff);
   * Also refactored the code to better align with current practices.
 - h8h: Fix N flag with exts opcode, h8h: fix regression with jsr abs8i, h8h: fix bst abs16 opcode [hap].
 - h8h: Fix RTE in normal mode [hap].
@@ -452,11 +452,11 @@ Source changes:
 - odyssey2: Correct 0xc00-0xfff ROM mirroring [hap].
 - various drivers: Removed unwanted comments/separators [Ivan Vangelista].
 - nmk/nmk214.cpp: Added NMK214 graphics unscrambling device (#12039) [Sergio G]:
-  * The current implementation is less than ideal due to inflexibility of device_gfx_interface.
+  * The current implementation is less than ideal due to inflexibility of device_gfx_interface;
   * nmk/nmk16.cpp: Hooked up NMK214 device for sabotenb.
 - bus/msx/slot/disk.cpp: Added banking support for MSX Turbo-R internal disk ROM (#12117) [Wilbert Pol].
 - msx1_cass.xml: Added four items (three working) (#12114) [Wilbert Pol]:
-  * Marked Aackobase II items as releases for Netherlands rather than Europe.
+  * Marked Aackobase II items as releases for Netherlands rather than Europe;
   * Added disk version to Aackobase II (Netherlands) and Aackobase II (Netherlands, alt) [file-hunter].
 - machine/t10mmc: Fix MSF to LBA conversion for T10MMC_CMD_PLAY_AUDIO_MSF (#12113) [987123879113]:
   * machine/t10mmc: Fix MSF to LBA conversion for T10MMC_CMD_PLAY_AUDIO_MSF.
@@ -503,8 +503,8 @@ Source changes:
 - bfm/bfm_bd1.h, bfm/bfm_bda.h: const -> constexpr, fixes undefined references when building with -O0 on macOS (#12129) [balr0g].
 - ncr5385: Single byte transfers [Patrick Mackinlay].
 - taito_h.cpp: Updated notes, DIP switch defaults and emulation flags (#12126) [Sergio G]:
-  * Marked Syvalion as not supporting cocktail mode and added notes about issues.
-  * Corrected default lives DIP switch settings for Syvalion to match manual.
+  * Marked Syvalion as not supporting cocktail mode and added notes about issues;
+  * Corrected default lives DIP switch settings for Syvalion to match manual;
   * Added notes about ROM type selection settings.
 - sp0256: Remove reset lrq timer workaround that was added there for odyssey2 killer bees. Bad luck: everything o2 works same as before except turtlesu, instead of failing to detect The Voice only sometimes, now it happens more commonly. Not due to the removed timer, but actually the stream updates before accessing I/O which should be more accurate. [hap].
 - bus/pci: Add SiS6326 AGP card [Angelo Salese].
@@ -518,7 +518,7 @@ Source changes:
 - video/pc_vga_sis: Add SiS6326 VGA core [Angelo Salese].
 - video/pc_vga_sis: Fix -validate [Angelo Salese].
 - Slightly different fix for asio compilation with newer Emscripten (#12098) [Justin Kerk]:
-  * This restores the previous status quo from Emscripten 3.1.28 where asio is always compiled with pthread support, however threading is still not actually functional in the Emscripten target.
+  * This restores the previous status quo from Emscripten 3.1.28 where asio is always compiled with pthread support, however threading is still not actually functional in the Emscripten target;
   * The change in behaviour appears to be due to emscripten-core/emscripten@690f1bdb9ecac731a071225d33cb5b4a192144e9.
 - alba/albazg.cpp: Added dip locations, verified dips for hana6pt2 [Ivan Vangelista].
 - acorn/atom.cpp, skeleton/qmsirius.cpp: Misc. small updates [AJR].
@@ -537,9 +537,9 @@ Source changes:
 - roland/roland_sc55mk2.cpp: Removed unnecessary header [Vas Crabb].
 - alba/albazg.cpp: Added Japanese title to comment for hana6pt2. [Vas Crabb].
 - rm/rm380z.cpp: Fixed disk drive handling so double sided disks work added 8" disk support (#12144) [Robin Sergeant]:
-  * Changed /M firmware variants to use double-sided 5.25" drives.
-  * Changed /F firmware variants to use double-sided 8" drives.
-  * Fixed side select signal connection.
+  * Changed /M firmware variants to use double-sided 5.25" drives;
+  * Changed /F firmware variants to use double-sided 8" drives;
+  * Fixed side select signal connection;
   * Fixed addressing for floppy control I/O functions.
 - rm/rm380z.cpp: Add sound for COS 4.0 (#12149) [Robin Sergeant].
 - rendlay: Fix off-by-1 error with alpha blended disk element [hap].
@@ -559,11 +559,11 @@ Source changes:
 - igs/goldstar.cpp: Added a fourth version of Animal House set, and PLDs dumps for 'animalhsb' (#12109) [ClawGrip]. Added PLDs dumps for 'animalhsb' [Taksangs, charlie].
 - sms.xml: Added 19 working items (#12121) [ArcadeShadow].
 - Use literal romaji for Jikkyou Powerful Pro Yakyuu game titles (#12074) [Vas Crabb]:
-  * Official media leans towards using literal romaji "JIKKYOU PAWAFURU PURO YAKŪ".
+  * Official media leans towards using literal romaji "JIKKYOU PAWAFURU PURO YAKŪ";
   * Software lists still have "Jikkyou Powerful Pro Yakyuu" to help people search.
 - sony/psx.cpp: Added compatibility filters for CD software list [Vas Crabb].
 - nmk/nmk16.cpp: Use emulated NMK214/NMK215 protection for more games (#12152) [Sergio G]:
-  * NMK214/NMK215 emulation is now used for Macross, GunNail, Bombjack Twin and Nouryoku Koujou Iinkai games.
+  * NMK214/NMK215 emulation is now used for Macross, GunNail, Bombjack Twin and Nouryoku Koujou Iinkai games;
   * Also corrected clock frequencies and added more notes about bootlegs [hammy].
 - h8: Don't save the mode settings, move mac_saturating var to h8s2600 and hook it up [hap].
 - cpu/hcd62121, casio/cfx9850.cpp: Various fixes (#12137) [QUFB]:
@@ -582,7 +582,7 @@ Source changes:
 - mks3: First hle [Olivier Galibert].
 - h8_timer: Compare match event was off by 1 [hap].
 - emu/debug/debugcmd.cpp: Added support for lowercase hex to printf/logerror [Patrick Mackinlay]:
-  * Also simplified implementation by better leveraging util/strformat.h.
+  * Also simplified implementation by better leveraging util/strformat.h;
   * This is from pull request #12124, to get some testing for the fundamental change before freeze.
 - Add a skeleton for a new PC-based game named 'Pull The Trigger' (#12153) [ClawGrip].
 - misc/astrcorp.cpp: Dumped EEPROM for speedmst [Siftware].
@@ -606,8 +606,8 @@ Source changes:
 - misc chess: Small tweak to leds [hap].
 - source org: Move yeno drivers to yeno folder [hap].
 - emu/debug/debugcmd.cpp: Add NUL-terminated string argument support to printf/logerror (#12124) [Patrick Mackinlay]:
-  * Use %s to read NUL-terminated strings from emulated memory.  Precision sets maximum length.
-  * Also added left-justification option for numeric and string formats.
+  * Use %s to read NUL-terminated strings from emulated memory.  Precision sets maximum length;
+  * Also added left-justification option for numeric and string formats;
   * Made documentation more consistent and removed duplication.
 - machine/mediagx_host: prepare for MediaGX virtual VGA hookup [Angelo Salese].
 - mr/dribling.cpp: Added netlist sound simulation for Model Racing Dribbling (#12147). Marked as imperfect sound for now due to lack of a suitable JFET model for the PARATA function generator [Paperinik].
@@ -624,24 +624,23 @@ Source changes:
 - Miscellaneous cleanup [Vas Crabb]:
   * cirsa/neptunp2.cpp: Add a sucffix to parent short name for clone short name.
   * liberty/freedom200.cpp: Use swapable idiom on the off chance someone implements swap for rgb_t.
- * misc/gms.cpp: Fixed another DIP Switch description.
+  * misc/gms.cpp: Fixed another DIP Switch description.
 - tvgames/xavix.cpp: Hooked up controls for tomplc and tcarnavi, and promoted them to working (#12163) [David Haywood]:
-  * Also increased tomplc CPU clock frequency to 43MHz (avoids crashes).
+  * Also increased tomplc CPU clock frequency to 43MHz (avoids crashes);
   * Corrected years for a couple of games.
 - mame.lst: Corrected error [Ivan Vangelista].
 - gp32.xml: Metadata cleanups (#12159) [ArcadeShadow]:
-  * Replaced countries' abbreviations by their full name
+  * Replaced countries' abbreviations by their full name;
   * Moved test comments to notes tag.
 - misc/diamondking.cpp: Added "Caribe" slot machine from Segasa Sonic (#12167) [ClawGrip].
 - mr/dribling.cpp: Add partial dump of Automave version of Dribbling from Spain (#12162). Four damaged ROMs replaced with content from parent [ClawGrip].
 - formats/dmk_dsk.cpp: Improve checks in identify (#12118) [Wilbert Pol]:
-  * Add structure checks in identify.
+  * Add structure checks in identify;
   * Use less strong FIFID flags.
-- megadriv.xml: Added HeartBeat PGA Tour Golf II [Vas Crabb]:
-  * Also changed "SegaNet" to "Sega Game Toshokan" and "16 Ton" to "16t" in descriptions. [ICEknight].
+- megadriv.xml: Added HeartBeat PGA Tour Golf II [Vas Crabb]. Also changed "SegaNet" to "Sega Game Toshokan" and "16 Ton" to "16t" in descriptions [ICEknight].
 - video/mc6845.cpp: Restore support for zero active width/height configuration (#12007). Avoid writing to bitmap when DE is disabled [Mark Garlanger].
 - Revert "video/mc6845.cpp: Restore support for zero active width/height config…" (#12169) [Vas Crabb]:
-  * This reverts commit cb5624978a31e135562d6b7f4b9ea4feaa1ad712.
+  * This reverts commit cb5624978a31e135562d6b7f4b9ea4feaa1ad712;
   * This is a case of attempting to fix the symptom rather than the issue, and it breaks all systems that use 6845-family CRTCs with "show borders" set.
 - hash/megadriv.xml: Sort wcup90 metadata [Angelo Salese].
 - machine/mediagx_host: Document GP / DC maps [Angelo Salese].

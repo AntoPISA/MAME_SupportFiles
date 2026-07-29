@@ -442,10 +442,10 @@ Source changes:
   * Ui/info.cpp: Use C++11-style iteration for render targets.
 - bus/nes: Added support for multicart board FAM250 (#9071) [kmg].
 - Include $ERRNO_CODES in Emscripten build to fix error loading software in Emularity loader - see issue emscripten-core/emscripten#10061 [Justin Kerk].
-- jeutel: Added mech sounds, nvram. Fixed outputs [Robbbert].
+- jeutel: Added mech sounds, NVRAM. Fixed outputs [Robbbert].
 - c64_cart.xml: Redumped and verified Magic Voice, Dragonsden, Frog Master, Gorf, International Soccer, Rootin' Tootin', Solar Fox, Super Smash, Viduzzles, Wizard of Wor, Financial Advisor, Simons' Basic [Guru].
 - cdicdic: Fixed audio crackling, and fixed various hangs [Ryan Holtz, CD-i Fan, MooglyGuy].
-- cv1k: Remove Akai Katana and Dodonpachi Saidaioujou following a request by exA-Arcadia, current rightholders [Olivier Galibert].
+- cv1k.cpp: Remove Akai Katana and Dodonpachi Saidaioujou following a request by exA-Arcadia, current rightholders [Olivier Galibert].
 - Move filesystem library into separate namespace and use shorter uX type names there [AJR].
 - new NOT WORKING machines [David Haywood] (#8976) [David Haywood].
 - ctk551: Minor I/O corrections (#9076) [Devin Acker].
@@ -509,7 +509,7 @@ Source changes:
 - byvid.cpp: Both games playable (no sound) [Robbbert].
 - Reduced redundancy in a couple more slot machine layouts [Vas Crabb].
 - frontend: Sort directory selection menu items (MT08167) [Vas Crabb]:
-  * Also fixed selecting .. not moving up more than one level;
+  * Also fixed selecting; not moving up more than one level;
   * Removed a vestigial member function from the file selection menu and reduced redundancy in a few more slot machine layouts while I was at it.
 - samurai: Fix palette banking (MT 08173) [AJR].
 - More #include future-proofing [AJR].

@@ -36,7 +36,7 @@ Apple Computer Lisa2/10 [Olivier Galibert]
 Commodore Business Machines CBM 8032 (France) [Curt Coder]
 Pravetz 8C [AJR]
 
-New Systems Marked not Working
+New Systems Marked Not Working
 ------------------------------
 Casio DG-20 Digital Guitar [BCM, Devin Acker]
 Diamond Heart Plus (v18.0) [Siftware]
@@ -51,7 +51,7 @@ Roadrunner [stonedDiscord]
 Panasonic 3DO FZ-1 R.E.A.L. Interactive Multiplayer (USA) [Angelo Salese]
 Sanyo 3DO IMP-21J TRY Interactive Multiplayer (Japan) [Angelo Salese]
 
-New Clones Marked not Working
+New Clones Marked Not Working
 -----------------------------
 21 Club (Barcrest) (German) (MPU4) (GTW 2.7) [stonedDiscord]
 Casio DG-10 Digital Guitar [BCM, Devin Acker]
@@ -138,7 +138,7 @@ pc6001_cart.xml:
 psx.xml:
   Agent Armstrong: Himitsu Shirei Daisakusen (Japan) [redump.org]
 
-New Software List Items Marked not Working
+New Software List Items Marked Not Working
 ------------------------------------------
 3do.xml:
   Captain Quazar (USA), Cowboy Casino (USA), ESPN Fitness Pros: Step Aerobics (USA), Virtual Puppet Reika (Japan), Virtuoso (USA) [redump.org]
@@ -711,11 +711,11 @@ Source changes
 - mcs51: Clean up some single line comments [hap].
 - cave/cv1k*.cpp: Fixed device naming and minor cleanups (#14838) [cam900].
 - cave/cv1k_v.cpp [cam900]:
- * Change ep1c* files filename to cv1k_v*, because This file is emulation core for cave CV1000 hardware specific and more closer to describe actual purpose, also ep1c is part family name of Altera Cyclone (1) FPGAs;
- * Suppress side effects for debugger reads, use logmacro.h for replace plain logerror function;
- * Reduce some duplicates, remove unnecessary device finder, make some variables constant;
- * Use reference to replace pointers, use util::sext for signed values;
- * Add notes.
+  * Change ep1c* files filename to cv1k_v*, because This file is emulation core for cave CV1000 hardware specific and more closer to describe actual purpose, also ep1c is part family name of Altera Cyclone (1) FPGAs;
+  * Suppress side effects for debugger reads, use logmacro.h for replace plain logerror function;
+  * Reduce some duplicates, remove unnecessary device finder, make some variables constant;
+  * Use reference to replace pointers, use util::sext for signed values;
+  * Add notes.
 - cave/cv1k.cpp [cam900]:
   * Fix metadata for describe region;
   * Use shorter typename value for consistency, reduce duplicates;

@@ -181,13 +181,13 @@ Source changes
 - Minor #include cleanup [AJR].
 - Remove flopimg.h and fsmgr.h from floppy device header [AJR].
 - nubus/nubus_asntmc3b.cpp: Updates [R. Belmont]:
-  * Updated and modernized, this was one of the first emulated NuBus cards and it showed.
-  * Fixed missing save state for the on-card RAM.
-  * Added Farallon EtherMac 30i-TH, an SE/30 PDS clone of these cards.
-  * Added notes about how these cards are a Mac-ified version of the NE2000.
-  * nubus/nubus.cpp: Allow PDS cards to choose their phantom NuBus slot. Cards have been observed impersonating slots 9, 0xC, and 0xE [R. Belmont].
-  * apple/maciici.cpp, apple/rbv.cpp: Updates [R. Belmont]
-  * Made maciisi expansion more correct: it has a single slot that can be adapted to take either a NuBus or an SE/30 compatible PDS card. The slot name is "siexp" and it now allows the use of any NuBus or SE/30 PDS card (tested with several video and Ethernet cards).
+  * Updated and modernized, this was one of the first emulated NuBus cards and it showed;
+  * Fixed missing save state for the on-card RAM;
+  * Added Farallon EtherMac 30i-TH, an SE/30 PDS clone of these cards;
+  * Added notes about how these cards are a Mac-ified version of the NE2000;
+  * nubus/nubus.cpp: Allow PDS cards to choose their phantom NuBus slot. Cards have been observed impersonating slots 9, 0xC, and 0xE;
+  * apple/maciici.cpp, apple/rbv.cpp: Updates;
+  * Made maciisi expansion more correct: it has a single slot that can be adapted to take either a NuBus or an SE/30 compatible PDS card. The slot name is "siexp" and it now allows the use of any NuBus or SE/30 PDS card (tested with several video and Ethernet cards);
   * Modernized slot interrupt routing.
 - solomon.cpp: VBLANK interrupt modernization; PSG type correction [AJR].
 - funkybee.cpp: Remove PCB diagram (which belongs to the other skylncr); add note [AJR].
@@ -206,8 +206,8 @@ Source changes
 - korg/korgm1.cpp: Add more notes [Angelo Salese].
 - korgm1.cpp: Fix build [AJR].
 - pc9801: Fix a20 [cracyc].
-- Filesystem code refactoring (#11570) [ajrhacker]:
-  * Separate fs::block_t and fs::filesystem_t to a new source file and header.
+- Filesystem code refactoring (#11570) [AJR]:
+  * Separate fs::block_t and fs::filesystem_t to a new source file and header;
   * Remove inclusion of flopimg.h from fsmgr.h.
 - Removed extra tick after gtime example in documentation (#11574) [Tom Cariello].
 - docs: Fixed many editing errors and spelling errors (#11575). Also fixed outdated link to contributing guidelines [Tom Cariello].
@@ -228,27 +228,27 @@ Source changes
 - bigtrak: Add note about soviet version [hap].
 - mu50: Add the db50xg roms.  They may even be the correct ones swp00: Add most of the AWM.  Missing the lpf and the meg [Olivier Galibert].
 - Interflip electromechanical slots driver improvements [Roberto Fresca, Grull Osgo]:
-  * Changed default Door Switch state.
-  * Added missing kbdc scan line mask to get the machine in working state.
-  * Added and hooked Hopper Device.
-  * Fixed reels symbol's positions in external artworks for all machines.
-  * Fixed reels symbol's positions for Toledo internal layout.
-  * Changed where possible logical operators with BIT function.
-  * Added coin-in sound sample.
-  * Added Lever mechanical rattle sound sample.
-  * Added and updated technical notes.
+  * Changed default Door Switch state;
+  * Added missing kbdc scan line mask to get the machine in working state;
+  * Added and hooked Hopper Device;
+  * Fixed reels symbol's positions in external artworks for all machines;
+  * Fixed reels symbol's positions for Toledo internal layout;
+  * Changed where possible logical operators with BIT function;
+  * Added coin-in sound sample;
+  * Added Lever mechanical rattle sound sample;
+  * Added and updated technical notes;
   * Promoted to working machine.
 - Interflip electromechanical slots driver improvements [Roberto Fresca, Grull Osgo]:
-  * Corrected the notes about Costa Brava payment.
+  * Corrected the notes about Costa Brava payment;
   * Switch the system to game mode by default.
 - merit/merit.cpp updated [Brian Troha]:
-  * Added additional notes to some sets.
-  * Added a few missing DIP switch settings.
-  * Removed "Horizontal" from parent game descriptions as it's the standard version, leaving Vertical as the a defining seperator.
-  * Removed the "h" from Trivia ? Whiz 3 set names, was the only set to add h to ROM names.
-  * Ordered Phraze Craze from newest to oldest making Phraze Craze (6221-40, U5-3A Expanded Questions) the parent.
-  * Arranged Phraze Craze questions ROMs as found on actual ROM board.
-  * Several ROM name corrections.
+  * Added additional notes to some sets;
+  * Added a few missing DIP switch settings;
+  * Removed "Horizontal" from parent game descriptions as it's the standard version, leaving Vertical as the a defining seperator;
+  * Removed the "h" from Trivia ? Whiz 3 set names, was the only set to add h to ROM names;
+  * Ordered Phraze Craze from newest to oldest making Phraze Craze (6221-40, U5-3A Expanded Questions) the parent;
+  * Arranged Phraze Craze questions ROMs as found on actual ROM board;
+  * Several ROM name corrections;
   * Dumped the KEY BPROM for Phraze Craze & Deluxe Trivia ? Whiz.
 - dgpix: Use intelfsh + improvements to sound emulation (#11582) [987123879113]:
   * sound/ks0164: Attempt to fix audio looping issues.
@@ -258,7 +258,7 @@ Source changes
 - swp00: Add the lpf [Olivier Galibert].
 - bcheetah: Correct K4 connection, increase mcu freq [hap].
 - amigaocs_flop.xml, megacdj.xml, megadriv.xml, vic10.xml: Various metadata cleanings (#11583) [ArcadeShadow]:
-  * Renamed countries' abbreviations.
+  * Renamed countries abbreviations;
   * Lowercase on descriptive words.
 - acorn_dsk.cpp: Added Cumana DFS disk image format [Nigel Barnes].
 - bus/electron/cumana: Added support for Cumana floppy format [Nigel Barnes].
@@ -283,12 +283,12 @@ Source changes
 - konami/cougar.cpp: Fix a couple notes [Angelo Salese].
 - dataeast/tumbleb.cpp: Assumed fix for MT#07148, needs testing to confirm [Angelo Salese].
 - Interflip electromechanical slots driver improvements [Roberto Fresca, Grull Osgo]:
-  * Improved the internal layouts, creating new ones for all the different games.
-  * Arranged the reels/symbols per machine.
-  * Improved the samples system.
+  * Improved the internal layouts, creating new ones for all the different games;
+  * Arranged the reels/symbols per machine;
+  * Improved the samples system;
   * All games are now playable.
 - 3rdparty/bgfx: Fixed duplicate import of GL functions on Linux when using GLES 2.0 (#11596) [Romain TISSERAND]:
-  * From bkaradzic/bgfx@66d50eb721334d6538a7eccdfdabb997667af1db
+  * From bkaradzic/bgfx@66d50eb721334d6538a7eccdfdabb997667af1db;
   * Fixes build when using GLES 2.0 and Wayland.
 - apple/apple2video.cpp: Fixed Apple II DHGR rendering in Color/Composite mode (#11595). Fixes regression causing Video-7 RGB rendering to be used when (rgbmode == -1) [uraniumgun].
 - gmaster: Update notes [hap].
@@ -309,14 +309,13 @@ Source changes
 - Revert fb32ae8e8f88669620ba973845ef192fdc5ea26e [AJR].
 - misc/gms.cpp: Added dip settings for the mahjong games [Dyq, Guru].
 - taito/undrfire.cpp: Fix assert failure in debug build [AJR].
-- Formats-related #include cleanup [AJR]:
-  * Note that IMD is one of the default MFM formats, so there is no need to add it explicitly.
+- Formats-related #include cleanup; note that IMD is one of the default MFM formats, so there is no need to add it explicitly [AJR].
 - Floppy format API refinements [AJR]:
-  * Add noexcept to format information overrides and several simple floppy_image accessors.
+  * Add noexcept to format information overrides and several simple floppy_image accessors;
   * Be more const-correct and use references instead of raw pointers wherever applicable. In particular, floppy_image_device::load and floppy_image_device::save now take a reference to floppy_image rather than a pointer, const-qualified in the latter case.
 - 3rdparty/portaudio: Updated to latest upstream version (#11604) [invertego]:
-  * Up-to-date with revision 24c8d575e588d557d28f4011becb753421346860.  Resolves issues building with Visual Studio.
-  * Enabled PortAudio when building with Visual Studio and clang-cl.
+  * Up-to-date with revision 24c8d575e588d557d28f4011becb753421346860. Resolves issues building with Visual Studio;
+  * Enabled PortAudio when building with Visual Studio and clang-cl;
   * docs: Removed note about duplicate GUID symbols in PortAudio when built with MSVC.
 - sbrain: Rebuild character generator from CRT8002 datasheet [AJR].
 - Updated Turkish UI translation (#11602) [Kadir Ekşi].
@@ -328,19 +327,17 @@ Source changes
 - Add a few drivers inadvertently omitted from a455d0031a2862b969d13767e1bfb81ef8f1d7b4 [AJR].
 - bebox.cpp: Fix lane masks for big-endian space [AJR].
 - Major rewrite of Recreativos Franco  MCS48-based slots driver [Roberto Fresca, Grull Osgo]:
-  * Hooked all the remaining devices and worked on them to get the system working.
-  * Added missing RESET line to the MCS48 CPUs, needed for this system.
-  * Inputs and outputs from the scratch.
-  * Motors, projectors, and lots of improvements.
-  * Redesigned ASCII PCBs layers to be more readable.
-  * Designed an internal artwork that allow Baby Fruits to be playable.
-  * Promoted Baby Fruits (100 Pts) to working.
+  * Hooked all the remaining devices and worked on them to get the system working;
+  * Added missing RESET line to the MCS48 CPUs, needed for this system;
+  * Inputs and outputs from the scratch;
+  * Motors, projectors, and lots of improvements;
+  * Redesigned ASCII PCBs layers to be more readable;
+  * Designed an internal artwork that allow Baby Fruits to be playable;
+  * Promoted Baby Fruits (100 Pts) to working;
   * Added technical notes.
 - Marked babyfrts25 as BAD_DUMP. Too many illegal opcodes and full of garbage [Roberto Fresca].
-- Marked ajofrin as BAD_DUMP. Main CPU ROM is underdumped and duped halves. Seems to be a bad/dirty higher address pin. Needs a redump. Added notes about these bad dumps in the driver [Roberto Fresca].
-  * 2 of 3 sets of the driver are bad dumps. This starts to be annoying.
-- Marked bformula2 as BAD_DUMP. Main and audio CPU ROMs bits 2 & 5 are stuck to 0. Seems to be a dirty programmer socket since both ROMS have the same failure. The device needs to be redumped. Added notes about these bad dumps in the driver [Roberto Fresca].
-  * 3 of 4 sets we checked to work on them are bad dumps. Time to check all the jordigahan dumps before add them.
+- Marked ajofrin as BAD_DUMP. Main CPU ROM is underdumped and duped halves. Seems to be a bad/dirty higher address pin. Needs a redump. Added notes about these bad dumps in the driver; 2 of 3 sets of the driver are bad dumps. This starts to be annoying [Roberto Fresca].
+- Marked bformula2 as BAD_DUMP. Main and audio CPU ROMs bits 2 & 5 are stuck to 0. Seems to be a dirty programmer socket since both ROMS have the same failure. The device needs to be redumped. Added notes about these bad dumps in the driver; 3 of 4 sets we checked to work on them are bad dumps. Time to check all the jordigahan dumps before add them [Roberto Fresca].
 - Reverting the mcs48 unneeded changes [Roberto Fresca].
 - rfslotsmcs48: Fix compile [hap].
 - fidelity eag: Add self test checksum info [hap].
@@ -353,31 +350,31 @@ Source changes
 - Interflip electromechanical slots: Fix cbravad & sevillad sets [Roberto Fresca].
 - funkball: Remove AT keyboard [AJR].
 - Interflip electromechanical slots improvements [Roberto Fresca]:
-  * New reels for Costa Brava sets with 77%.
-  * Created new layout for Costa Brava sets with 77%.
+  * New reels for Costa Brava sets with 77%;
+  * Created new layout for Costa Brava sets with 77%;
   * Derived new machine config to cover specific sets.
 - merit/mtouchxl.cpp: Keep keyboard because BIOS wants one [AJR].
 - Interflip electromechanical slots improvements [Roberto Fresca]:
-  * New reels for Sevilla sets with 77%.
-  * Created new layout for Sevilla sets with 77%.
+  * New reels for Sevilla sets with 77%;
+  * Created new layout for Sevilla sets with 77%;
   * Derived new machine config to cover specific sets.
 - subsino/subsino.cpp: Dumped and added a "New HUNTer" clone (#11605) [ClawGrip].
 - mame.lst: Add 'newhunterb'. Fix identation. Fix comments [ClawGrip].
 - Derived tisub and newhunterb maps from a common base map [Ivan Vangelista, ClawGrip].
 - Interflip electromechanical slots improvements [Roberto Fresca]:
-  * New reels for Toledo sets with 83 & 79%.
-  * Created new layout for Sevilla sets with with 83 & 79%.
+  * New reels for Toledo sets with 83 & 79%;
+  * Created new layout for Sevilla sets with with 83 & 79%;
   * Derived new machine config to cover specific sets.
 - merit/mtouchxl.cpp: Update CMOS definition so keyboard can be safely removed [AJR].
 - pc/pcat_dyn.cpp: Update CMOS so keyboard can be safely removed [AJR].
 - nubus/8lc.cpp: Add support for the RasterOps 8LC card for the original Macintosh LC [R. Belmont]:
-  * This card provides unaccelerated 1024x768 video, which isn't the greatest idea on a 68020.
+  * This card provides unaccelerated 1024x768 video, which isn't the greatest idea on a 68020;
   * video/tms34061.h: Added accessors to get the horizontal and vertical visible resolution and totals [R. Belmont].
   * nubus/cards.cpp, apple/maclc.cpp: Support a list of cards for only the original Macintosh LC [R. Belmont].
 - Add missing files from last commit [R. Belmont].
 - dynax/royalmah.cpp: Dumped internal ROMs for mjvegas and cafepara [Sergio Galiano, Recreativos Piscis, hammy].
 - fmtowns_cd.xml: Added 13 items (11 working), and replaced four items with better dumps (#11611) [r09]:
-  * Removed the floppy disk from the Deep set as it was a "fake" disk that didn't come with the game originally.
+  * Removed the floppy disk from the Deep set as it was a "fake" disk that didn't come with the game originally;
   * Fixed and cleaned up some dump source comments.
 - msx2_cart.xml: Added 53 items (42 working) (#11606) [Wilbert Pol].
 - skeleton/cosmicos.cpp, dm7000.cpp, micronic.cpp, softbox.cpp, vp415.cpp, xor100.cpp, zorba.cpp: Consolidate drivers in one source file each. skeleton/dm7000.cpp: Update optional logging calls to use logmacro [AJR].
@@ -395,10 +392,10 @@ Source changes
 - heathkit/tlb.cpp: Add back in gp19 fix TODOs (#11609) [Mark Garlanger].
 - nmk/ddealer.cpp: Replace MCU simulation in ddealer with emulated NMK-110 MCU (also tdragon1, hachamf, hachamfa in nmk16.cpp) [Sergio Galiano, Recreativos Piscis, David Haywood, hammy] (#11584):
   * Replace MCU simulation in ddealer with emulated NMK-110 MCU [Sergio Galiano, Recreativos Piscis, David Haywood, hammy].
-  * Hooked up MCU for tdragon1 too.
-  * Added the nmk-113 dump to hachamf and hachamfa, this appears to be a multipurpose MCU, as it has multiple program paths depending on a port.
-  * One of the config options in the 113 MCU is for Thunder Dragon, even if we use the 110.
-  * 113 can also be used with 'Double Dealer' in a specific config.
+  * Hooked up MCU for tdragon1 too;
+  * Added the nmk-113 dump to hachamf and hachamfa, this appears to be a multipurpose MCU, as it has multiple program paths depending on a port;
+  * One of the config options in the 113 MCU is for Thunder Dragon, even if we use the 110;
+  * 113 can also be used with 'Double Dealer' in a specific config;
   * Flip ddealer.cpp to more permissive license, with agreement from copyright holders.
 - Load the 215 binary too, even if for emulation purposes it seems unimportant [David Haywood].
 - dynax/royalmah.cpp: Preliminary address map for cafepara [Ivan Vangelista].
@@ -407,8 +404,8 @@ Source changes
 - subsino.cpp, subsino2.cpp: Remove extraneous RAM from HD647180X memory maps where the MCU has some internal RAM [AJR].
 - Support MSX Sunrise SCC Flash cart type used in Manbow 2 [AJR].
 - cpu/sh: Improved SH7021 SoC emulation (#11610) [Ryan Holtz, Phil Bennett]:
-  * Added (rudimentary) SH7021 DMA, timers and GPIO, and logging for the rest.
-  * Fixed SH2 NMIs occurring in a delay slot when using the interpreter.
+  * Added (rudimentary) SH7021 DMA, timers and GPIO, and logging for the rest;
+  * Fixed SH2 NMIs occurring in a delay slot when using the interpreter;
   * Generally cleaned up code and renamed functions/macros/variables more conventionally.
 - nubus/thunder4gx.cpp: Preliminary support for Radius Thunder IV GX video card [R. Belmont].
 - casio/cz101.cpp: Added sound output and RAM cartridge, and promoted system to working (#11613) [Devin Acker]:
@@ -420,7 +417,7 @@ Source changes
 - Proper memory map and inputs. May still do with intuitive input defaults and speedup funcs [ClawGrip].
 - mame.lst: Moved solitaire in alphabetical order [skip ci].
 - casio/casloopy.cpp: Promoted system to working (#11621) [Phil Bennett]:
-  * Emulated most features of the system, with the exception of sound output and the thermal printer.
+  * Emulated most features of the system, with the exception of sound output and the thermal printer;
   * bus/vboy/slot.cpp: Fixed loading loose software on big Endian hosts [Vas Crabb].
 - pc/pc.cpp: Move ibm5550 to own driver [Angelo Salese].
 - dynax/royalmah.cpp: Minor comments update [Ivan Vangelista].
@@ -452,7 +449,7 @@ Source changes
 - spacezap: Add note about older version, ddealer: correct typo in comment [hap].
 - advision,skywriter: Fix cliprect bounds check [hap].
 - toaplan/toaplan2.cpp: Corrected DIP switch and jumper settings for bgaregga bootlegs (#11553) [cam900]:
-  * Corrected settings for bootlegs with hard-coded region (affects bonus life settings).
+  * Corrected settings for bootlegs with hard-coded region (affects bonus life settings);
   * Added transliterated Chinese titles for two bootlegs and noted that Melody is possibly the bootlegger’s name.
 - seta/simple_st0016.cpp: Added subtitles to descriptions for Koi Koi Shimasho and Renju Kizoku (#11552). Also corrected transliterations of titles in comments [cam900].
 - seta/seta.cpp: Updated descriptions, machine configuration settings, input labels (#11551) [cam900]:
