@@ -301,12 +301,13 @@ INITIALIZATION:
 Press num-0 to enter service/selftest. Press 1 to step through the tests. When you reach the audit stages, press 6 to advance and 5 to clear. In the switch test, it will report any closed dip as a failure. You can ignore these. The game has 2 balls, for multiball feature, so the outhole doesn't work because it thinks the 2nd ball is in play somewhere. To activate the end-of-ball, hold down X then tap END.
 
 $end
-$info=agat7,agat9
+$info=agat7
 $mame
 TIPS:
 Press Ctrl F10 to get a prompt.
 enter  = hex dump 8 bytes
 number = change address for next hex dump
+G  = trace?
 I  = black on white
 L  = disassemble
 N  = white on black
@@ -319,6 +320,15 @@ $info=agat9
 $mame
 TIPS:
 Press Ctrl F10 to get a prompt.
+
+enter  = hex dump 8 bytes
+number = change address for next hex dump
+G  = trace?
+I  = black on white
+L  = disassemble
+N  = white on black
+P  = display registers
+T  = goes crazy
 
 Tape commands are unknown.
 
@@ -591,7 +601,7 @@ Test Paste:
 Now press up-arrow to confirm the data has been entered.
 
 $end
-$info=ampkr228,ampkr228,ampkr2b1,ampkr2b2,ampkr2b4,ampkr2b5,ampkr2jspb,ampoker2,piccolop,pkrdewin,sigma2k,sigmapkr,videomat
+$info=ampkr228,ampkr2b1,ampkr2b2,ampkr2b4,ampkr2b5,ampkr2jspb,ampoker2,piccolop,pkrdewin,videomat
 $mame
 INITIALIZATION:
 Turn ON with Operator Key [ 9 ], then Door Switch [ O ] to enter the Operator Mode. Wait a few seconds, then press Hold 1 [ Z ] to clear page. Turn OFF with Operator Key [ 9 ]. If necessary, press [F3] to reset.
@@ -1084,7 +1094,7 @@ INITIALIZATION:
 Screen is upside down. "Flip Screen" dipswitch doesn't work. Go into video settings and set rotate to 180.
 
 $end
-$info=ax150,ax170,ax200,ax230,ax350ii,ax370,ax500,bruc100,canonv20,canonv8,cf1200,cf2000,cf2700,cf2700uk,cf3000,cf3300,cpc330k,cpc51,cpc88,cx5f,cx5miib,cx5mu,cx7m128,dgnmsx,dpc200,dpc200e,expert13,expert20,expertdp,expertpl,fdpc200,fmx,fpc500,fpc900,fs1300,fs4000,fs4500,fs4600f,fs4700f,fs5000f2,fs5500f2,fspc800,gfc1080,gfc1080a,gsfc200,gsfc80u,hb101p,hb10p,hb201p,hb20p,hb501p,hb55p,hb701fd,hb75p,hb8000,hc7,hx10,hx20,hx21,hx22,hx32,hx51i,jvchc7gb,mbh1,mbh2,mbh25,mbh50,ml8000,mlf110,mlf120,mlf48,mlf80,mlfx1,mpc10,mpc100,mpc200,mpc64,mx15,mx64,nms801,perfect1,phc2,phc28,phc28l,phc28s,piopx7,pv16,spc800,svi728,svi738,sx100,vg8010,vg802020,yc64,yis503
+$info=ax150,ax170,ax200,ax230,ax350ii,ax370,ax500,bruc100,canonv20,canonv8,cf1200,cf2000,cf2700,cf2700uk,cf3000,cf3300,cpc330k,cpc88,cx5f,cx5miib,cx5mu,cx7m128,dgnmsx,dpc200,dpc200e,expert13,expert20,expertdp,expertpl,fdpc200,fmx,fpc500,fpc900,fs1300,fs4000,fs4500,fs4600f,fs4700f,fs5000f2,fs5500f2,fspc800,gfc1080,gfc1080a,gsfc200,gsfc80u,hb101p,hb10p,hb201p,hb20p,hb501p,hb55p,hb701fd,hb75p,hb8000,hc7,hx10,hx20,hx21,hx22,hx32,hx51i,jvchc7gb,mbh1,mbh2,mbh25,mbh50,ml8000,mlf110,mlf120,mlf48,mlf80,mlfx1,mpc10,mpc100,mpc200,mpc64,mx15,mx64,nms801,perfect1,phc2,phc28,phc28l,phc28s,piopx7,pv16,spc800,svi728,svi738,sx100,vg8010,vg802020,yc64,yis503
 $mame
 TIPS:
 MSX usage
@@ -2495,6 +2505,7 @@ There is no avoiding the NVRAM initialization process. In order to use any game 
 SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
+$end
 $info=cptshark
 $mame
 
@@ -6480,22 +6491,13 @@ Press Space to make the machine start up.
 Some commands: C, D (dump bytes in memory), F, G, H, I, K, M, R, S (change byte in memory), T, W (write intel records) , X (show/change registers).
 
 $end
-$info=mcolors
-$mame
-INITIALIZATION:
-The first time you run the game, it will say 'DATI NVRAM-68K NON VALIDI!!!'. Press [ F2 ] to enter the Test Mode. Enter the key sequence [ B ][ Y ][ V ][ M ][ M ] (HOLD 5, HOLD 1, HOLD 4, BET and BET) to initialize the game.
-
-SOURCE:
-mameinfo.dat
-
-$end
 $info=megadriv,megadrij,megaduck,megajet,megatech,microvsn,myvision
 $mame
 INITIALIZATION:
 Needs a cartridge.
 
 $end
-$info=megat5a,mtouchxl,mtchxl5k,mtchxl5ko,mtchxl5ko2,mtchxl6k,mtchxl6ko,mtchxl6ko4,mtchxl,mtchxlgld,mtchxlgldo,mtchxlti
+$info=megat5a,mtouchxl,mtchxl5k,mtchxl5ko,mtchxl5ko2,mtchxl6k,mtchxl6ko,mtchxl6ko4,mtchxlgld,mtchxlgldo,mtchxlti
 $mame
 TIPS:
 Ignore the useless crosshairs, and don't use -mouse. Use the orange/system mouse cursor instead.
@@ -7160,6 +7162,7 @@ $mame
 TIPS:
 Due to a regression, need to wait up to 5 minutes at a black screen before it suddenly springs to life.
 
+$end
 $info=mt65,micron
 $mame
 TIPS:
