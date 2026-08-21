@@ -6,6 +6,7 @@ The following files have been updated in this MAME cycle:
 - Category pack
 - CatVer pack
 - gameinit.dat
+- languages.ini
 - renameSET.dat
 - version pack
 
@@ -14,7 +15,6 @@ They will not be updated in this cycle:
 - bestgames.ini
 - CHD-Info pack
 - command.dat
-- languages.ini
 - MESS-Info.dat
 - series.ini
 
