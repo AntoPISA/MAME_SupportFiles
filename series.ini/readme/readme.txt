@@ -1,4 +1,4 @@
-﻿MAME SERIES.ini 0.288 (Jun 10, 2026)
+﻿MAME SERIES.ini 0.289 (Aug 24, 2026)
 © AntoPISA     www.progettoSNAPS.net
 ==================================== 
 
@@ -12,11 +12,17 @@ In the file are both "Series" recognized as such (thus games and their official 
 guages or with minor variations (official and unofficial).
 
 
-2026/06/00 12.04 MAME 0.288 (720 supported Series - 12,417 items):
+2026/08/24 12.05 MAME 0.289 (721 supported Series - 12,430 items):
+==================================================================
+Items RENAMED     (3) : (aburner) to (aburner131), (gradiusb) to (bs_gradius) and (plgirls2) to (plgirls2j).
+Series ADDED      (1) : "Capriccio Sesame".
+Series UPDATED   (12) : "After Burner", "Galaxian", "Gradius", "Great Sluggers", "High Speed * Pinball", "Jockey Club", "Pac-Man", "Phoenix", "Play Girls", "Punch-Out!!", "Robotron" and "Street Fighter".
+
+
+2026/06/10 12.04 MAME 0.288 (720 supported Series - 12,417 items):
 ==================================================================
 Items RENAMED     (4) : (gtsers15) to (gtsers15a), (shimpact) to (shimpactl1), (trvwza) to (trvwzs) and (trvwzb) to (trvwza).
 Series UPDATED   (14) : "Cosmic Monsters", "Cuty Line", "Fighting Vipers", "Golden Tee", "High Impact Football", "Ketsui: Kizuna Jigoku Tachi", "Looping", "Lucky 8 Lines", "Pac-Man", "Pole Position", "Ridge Racer", "Time Killers", "Trivia ? Whiz" and "Trivia".
-
 
 2026/04/07 12.03 MAME 0.287 (720 supported Series - 12,401 items):
 ==================================================================
