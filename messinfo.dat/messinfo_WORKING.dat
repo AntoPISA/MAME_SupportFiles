@@ -1,4 +1,4 @@
-﻿#    MESSINFO.DAT v0.288    Latest update:    Jun 14, 2026
+﻿#    MESSINFO.DAT v0.289    Latest update:    Aug 24, 2026
 #                            Project started: May  8, 2011
 #
 #    Author: Antonio Paradossi "AntoPISA" from Pisa (Tuscany > Italy > Europe > Earth > Solar System > Universe)
@@ -9,8 +9,8 @@
 #    homepage: https://www.progettosnaps.net/messinfo
 #
 #
-#    Internal version: 15.04
-#    Total items: 13,823
+#    Internal version: 15.05
+#    Total items: 13,822
 #
 #    1,938 MORE "device" AUTHORS TO SEARCH FOR ADD
 #      700 MORE "description" TO SEARCH FOR ADD
@@ -63,7 +63,7 @@
 #
 #    THE MESSINFO.DAT CONTAINS INFOS ABOUT:
 #
-#    Source/Whatsnew/Readme from MAME/MESS 0.1 to 0.288
+#    Source/Whatsnew/Readme from MAME/MESS 0.1 to 0.289
 #    Reported bugs from mametesters.org
 #    Romset and Harddisk/CD dimensions
 #    Notes, WIP, Resources and ToDo from sources.
@@ -104,7 +104,7 @@
 #    2023       10            209
 #    2024       12            387
 #    2025       11            518
-#    2026        4            216
+#    2026        5            293
 #
 #
 #     VERSION      SYSTEMS       DRIVERS     OUT                   NOTE
@@ -454,42 +454,12 @@
 #     0.286    5939   -1/+43    1581     +3    February  26th 2026 |  2/2026
 #     0.287    5947       +8    1584     +3    March     31th 2026 |  3/2026
 #     0.288    6018      +71    1591     +7    May       29th 2026 |  4/2026
+#     0.289    6094   -1/+77    1610    +19    July      31th 2026 |  5/2026
 #
 #
 #     SYSTEMs INFOs
 #
 #
-$info=vibes240a
-$mame
-0.288 [TeamEurope]
-
-Vibes Retro Pocket Gamer 240-in-1 (set 2), <unknown>, 202?
-
-The "Vibes Retro Pocket Gamer 240-in-1" is an affordable standalone handheld console, sold as a nostalgic gadget primarily in B&M Retail stores in the UK and marketed by various European brands (such as Silvergear or QSS) using the same basic hardware. The device is a typical pocket-sized clone (Famiclone) designed to replicate the classic visual and aesthetic style of 8-bit handheld systems from the 1990s.
-
-DRIVER:
-nintendo/nes_vt369_vtunknown.cpp
-
-DRIVER STATUS:
-Emulation: Preliminary
-Color: Good
-Sound: Good
-Graphics: Imperfect
-Save State: Unsupported
-
-SOFTWARE LIST:
--
-
-RESOURCES:
-No resources available.
-
-WIP:
-- 0.288: TeamEurope added 'Vibes Retro Pocket Gamer 240-in-1 (set 2)' system.
-
-ROMSET:
-16777216 bytes in 1 file / 6.08Mb packed
-
-$end
 $info=09825_67907
 $mame
 0.203 [F. Ulivi]
@@ -4560,7 +4530,7 @@ Save State: Unsupported
 
 WIP:
 - 0.186: Renamed (a2600_dcp) to (a2600_dpc).
-- 0.155: Fabio Priuli added 'Atari 2600 ROM Cart Pitfall II' device.
+- 0.155: Fabio Priuli added (a2600_dcp) 'Atari 2600 ROM Cart Pitfall II' device.
 
 ROMSET:
 None required.
@@ -5560,6 +5530,7 @@ Graphics: Good
 Save State: Unsupported
 
 WIP:
+- 0.289: Change SW0/SW1/SW2/SW3 inputs to normally read as 1 instead of 0 if unconnected. This agrees with observed behavior on actual Apple II family hardware [AJR].
 - 0.273: Updated Sirius JoyPort description to mention Atari joysticks being connected to it (#13032) [as-tb-dev].
 - 0.270: Add Softape Bright Pen support for the Apple ][/][+ (#12721) [as-tb-dev].
 - 0.237: Moved many class declarations out of headers. This reduces how frequently the Apple II drivers need to be recompiled when a random device changes. Also, this turned up three things that are apparently not hooked up in the PC Transported card [Vas Crabb].
@@ -7032,6 +7003,7 @@ Graphics: Good
 Save State: Unsupported
 
 WIP:
+- 0.289: Configuration doesn't belong in saved states [Vas Crabb].
 - 0.274: Don't try and do double-hires or lores on a 64K system (Github #13111) [R. Belmont, tomcw].
 - 0.260: Fixed 'Apple II' double high resolution graphics rendering in color/composite mode [uraniumgun].
 - 0.254: Fixed another regression where composite double-hi-res was usually monochrome [R. Belmont].
@@ -14397,7 +14369,7 @@ Snap, Title, Icon, machine picture (in "Cabinet" collection), Control Panel, Fly
 WIP:
 - 0.216: Changed manufacturer to 'Acorn Computers'.
 - 0.167: Renamed (abc210) to (acw443).
-- 0.166: Nigel Barnes added 'Acorn ABC 210/Cambridge Workstation' system.
+- 0.166: Nigel Barnes added (abc210) 'Acorn ABC 210/Cambridge Workstation' system.
 
 ROMSET:
 114688 bytes in 7 files / 83.69Kb packed
@@ -22147,6 +22119,7 @@ RESOURCES:
 Snap, Title, Icon, machine picture (in "Cabinet" collection), Control Panel, Flyer, pdf Manual, Marquee and PCB.
 
 WIP:
+- 0.289: Improve accelerator delay emulation (#15387): Implement the (sticky) Zip Chip delay cancel via C05E; fix default slot speeds to match Zip hardware and Laser documentation; fix DEVSEL writes to trigger delays; fix IOSEL and C800 access to only delay on Laser, per documentation; fix PTRIG to only delay on C070; wrap address map direct accessors in delay lambdas; implement the (one-shot) Zip GS delay cancel via any write; fix default slot speeds to match Zip hardware; fix DEVSEL writes to trigger delays; fix IOSEL and C800 access to not delay; fix PTRIG to delay on C020 and C070; implement IRQ and counter delays; implement C036 motor-on bits override of C05C slot speeds; also fix the 5x/Ax un/lock keys [arekkusu42].
 - 0.288: Remove Programmer's Aid #1 from system ROM definition and instead provide image devices for the D0/D8 sockets [AJR].
 - 0.284: Minor video fixes (#14590). Read floating bus before video side-effects: Followup #14307: Ensure that floating bus values are read before softswitch access changes the video mode [arekkusu42].
 - 0.283: BugFIX #08917 [DIP/Input] (apple/apple2.cpp) apple2: The shift key state is inverted with the shift key mod [arekkusu42]. Add booting instructions in comments [AJR].
@@ -27677,7 +27650,7 @@ Graphics: Good
 Save State: Unsupported
 
 WIP:
-- 0.288: Changed description to 'Apple Sound Chip'. Updates: Rewrite with per-variant subclasses and using the same code for the two FIFOs; many correctness improvements based on hardware testing with Doug Brown's ASCTester; real EASC feature support for the first time: 44.1 kHz output, variable sample rate conversion, and CD-XA ADPCM decode. Fix -validate failure [R. Belmont]. 
+- 0.288: Changed description to 'Apple Sound Chip'. Updates: Rewrite with per-variant subclasses and using the same code for the two FIFOs; many correctness improvements based on hardware testing with Doug Brown's ASCTester; real EASC feature support for the first time: 44.1 kHz output, variable sample rate conversion, and CD-XA ADPCM decode. Fix -validate failure [R. Belmont].
 - 0.258: Remove debug message [R. Belmont].
 - 0.149u1: Added 'ASC' device.
 
@@ -40796,6 +40769,7 @@ Graphics: Good
 Save State: Unsupported
 
 WIP:
+- 0.289: 256KiB is too heavy for a device class [Vas Crabb].
 - 0.288: David Haywood added 'Unknown STxxxx LCDC (bftetris)' device.
 
 $end
@@ -47541,7 +47515,7 @@ WIP:
 - 0.216: Renamed (c64_ieee488_device) to (c64_ieee488).
 - 0.196: Added 'slot device to tunnel IEEE-488 between processes over a socket connection [F. Ulivi].
 - 0.186: Renamed (c64_ieee488) to (c64_ieee488_device).
-- 0.145u2: Added 'C64 IEEE-488 cartridge' device.
+- 0.145u2: Added (c64_ieee488) 'C64 IEEE-488 cartridge' device.
 
 ROMSET:
 None required.
@@ -48085,7 +48059,7 @@ Save State: Unsupported
 WIP:
 - 0.216: Renamed (rexexp256) to (c64_rex_ep256).
 - 0.186: Renamed (rexep256) to (rexexp256).
-- 0.145u2: Added 'C64 Rex 256KB EPROM cartridge' device.
+- 0.145u2: Added (rexep256) 'C64 Rex 256KB EPROM cartridge' device.
 
 ROMSET:
 None required.
@@ -48235,7 +48209,7 @@ Save State: Unsupported
 
 WIP:
 - 0.186: Renamed (speakeasy64) to (c64_speakeasy) and description changed to 'PPP Speakeasy 64'.
-- 0.183: Added 'PPP Speakeasy 64' device.
+- 0.183: Added (speakeasy64) 'PPP Speakeasy 64' device.
 
 ROMSET:
 None required.
@@ -54835,7 +54809,7 @@ WIP:
 - 0.264: Changed manufacturer to 'Novag Industries'.
 - 0.184: Machine promoted to working [hap].
 - 0.182: Renamed (sforteba) to (cforteb) and Changed description in 'Constellation Forte (version B)'.
-- 0.143u8: Cowering added 'Novag Super Forte B Chess Computer (ALT)' system.
+- 0.143u8: Cowering added (sforteba) 'Novag Super Forte B Chess Computer (ALT)' system.
 
 ROMSET:
 65536 bytes in 2 files / 41.31Kb packed
@@ -63548,7 +63522,7 @@ Save State: Unsupported
 
 WIP:
 - 0.186: Renamed (rom_image) to (cpc_rom_image) and description changed to 'CPC ROM image'.
-- 0.163: Added 'ROM image' device.
+- 0.163: Added (rom_image) 'ROM image' device.
 
 ROMSET:
 None required.
@@ -65918,7 +65892,8 @@ RESOURCES:
 Snap, Title, Icon, machine picture (in "Cabinet" collection) and Marquee.
 
 WIP:
-- 0.284: BugFIX#09316: [Sound] (pc/ct486.cpp) ct486 with sb16_lle: Sound eventually stops working properly in Wolfenstein 3D [Angelo Salese].
+- 0.289: BugFIX#05547 [Crash/Freeze] (pc/ct486.cpp) ct486: The system may fail to boot from MS-DOS 6.22 installation media [Dirk Best].
+- 0.284: BugFIX#09316 [Sound] (pc/ct486.cpp) ct486 with sb16_lle: Sound eventually stops working properly in Wolfenstein 3D [Angelo Salese].
 - 0.275: Hookup photo_cd SW list on (ct486) and (pcipc) [Angelo Salese].
 - 0.272: Changed manufacturer to '<unknown Taiwanese vendor 8029>'.
 - 0.205: BugFIX #07049: [Media Support] (ct486.cpp) ct486: Floppy Disk - "Read Only" access mode [AJR].
@@ -71640,6 +71615,7 @@ RESOURCES:
 Snap, Title, Icon, machine picture (in "Cabinet" collection), Control Panel and PCB.
 
 WIP:
+- 0.289: BugFIX#09477 [Media Support] (trs/dgnalpha.cpp) dgnalpha: The system will not boot to BASIC or from a floppy disk [AJR].
 - 0.185: Added 'older Boot v0.4 ROM. Replaced 5.25" floppy drives with 3.5" and added 'sounds [Nigel Barnes].
 - 0.99: Fixed NMI interrupt, so that Dragon Data Alpha OS-9 can now boot [Phill Harvey-Smith].
 - 0.97: Removed optional DOS BIOS [Phill Harvey-Smith].
@@ -79394,7 +79370,7 @@ ROMSET:
 $end
 $info=duart_channel
 $mame
-0.150
+0.149u1
 
 DUART channel, <unknown>, ????
 
@@ -79412,7 +79388,7 @@ WIP:
 - 0.283: Add received data to FIFO in loopback mode [Nigel Barnes].
 - 0.192: Renamed (mc68681_channel) to (duart_channel) and description changed to 'DUART channel'.
 - 0.153: Renamed (duart68681_channel) to (mc68681_channel).
-- 0.150: Added 'MC68681 DUART CHANNEL' device.
+- 0.149u1: Added (duart68681_channel) 'MC68681 DUART CHANNEL' device.
 
 ROMSET:
 None required.
@@ -89077,7 +89053,7 @@ Save State: Unsupported
 WIP:
 - 0.284: Use IPT_KEYPAD for front-panel button i/o ports,instead of IPT_KEYBOARD. Change VFX-family buttons from IPT_KEYBOARD to IPT_KEYPAD (#14565). In VFX family keyboards, don't use the KEYBOARD_HACK keybooard input, because all front panel buttons are available on the default layout [Christian Brunschen].
 - 0.171: Renamed (esqpanel240_sq1) to (esqpanel216_sq1).
-- 0.149u1: Added 'Ensoniq front panel with 2x16 LCD' device.
+- 0.149u1: Added (esqpanel240_sq1) 'Ensoniq front panel with 2x16 LCD' device.
 
 ROMSET:
 None required.
@@ -109183,6 +109159,7 @@ Graphics: Good
 Save State: Unsupported
 
 WIP:
+- 0.289: More aggressive template use (#15352): Use templates for timebase and timers, add more timers. Basic 'manual' ADC mode support. Provide address when required in autocmd mode for spifc, to prevent wrong addresses being written. Add stub logging more registers. gpl_renderer: Port improved linemap code from spg_renderer so that other BPPs can be handled. generalplus_gpl951xx_rtc: Allow setting / reading of timer registers. generalplus_gpl951xx.cpp: Various cleanups driver-side, including template use [David Haywood].
 - 0.288: No need for m_portnames [hap].
 - 0.282: David Haywood added 'GeneralPlus GPL951xx' device.
 
@@ -111414,6 +111391,7 @@ RESOURCES:
 Snap, Title, Icon and machine picture (in "Cabinet" collection).
 
 WIP:
+- 0.289: Formalize the contracts between H8 family peripherals and the CPU and interrupt controller so H8/500 can share [R. Belmont].
 - 0.271: Increased timeout in namco_csz1 ROM to stop it timing out, the H8 is either running too fast or the SUB CPU is running too slow. Configured Crisis Zone gun to match game defaults & default to namco_csz1 JVS I/O board [smf].
 - 0.268: Add system clock getter (divided clock()) [hap].
 - 0.267: Return 0xff when reading from port DDR (eg. RMW opcodes on DDR) [hap].
@@ -146344,6 +146322,7 @@ Graphics: Good
 Save State: Unsupported
 
 WIP:
+- 0.289: Generally cleaned up code [Vas Crabb].
 - 0.288: Felipe Corrêa da Silva Sanches added 'KN5000 Control Panel HLE' device.
 
 $end
@@ -148664,6 +148643,7 @@ RESOURCES:
 Snap, Title, Icon, machine picture (in "Cabinet" collection) and pdf Manual.
 
 WIP:
+- 0.289: Improvements (#15384): Fix laserprn_busy_r() to handle Cnxx banking, fixes #15373; add EX 6.0 BIOS; fix machine date and name metadata; add notes on unemulated EX/2 features [arekkusu42].
 - 0.288: Fix floppy drive disabling Zip acceleration; fix advancing expansion RAM slinky address [arekkusu42].
 - 0.237: Changed description to 'Laser 128'.
 - 0.95: Cowering added 'Video Technology Laser 128 (rev 4)' system.
@@ -149155,6 +149135,7 @@ RESOURCES:
 Snap, Title, Icon, machine picture (in "Cabinet" collection) and pdf Manual.
 
 WIP:
+- 0.289: BugFIX#09479 [Media Support] (ampro/lb186.cpp) lb186: The system will not boot from floppy disks [AJR].
 - 0.184: Carl and Al Kossow added 'Ampro Computers Little Board/186' system.
 
 ROMSET:
@@ -153327,6 +153308,7 @@ RESOURCES:
 Snap, Title and pdf Manual.
 
 WIP:
+- 0.289: BugFIX#09456 [Graphics] (brother/lw840.cpp) lw840: The system does not appear to boot [Leopold].
 - 0.253: Bartman/Abyss added 'Brother LW-840ic' system.
 
 ROMSET:
@@ -157234,6 +157216,7 @@ Graphics: Good
 Save State: Unsupported
 
 WIP:
+- 0.289: Update bftst to reluctant reads when fetching data from memory (#15365) [Brice Onken].
 - 0.286: Fix the 68LC040 so it actually has 68040 opcodes [Doug Brown, R. Belmont].
 - 0.283: Add basic state viewer for Coldfire [Angelo Salese].
 - 0.279: Fix disassembly of CAS [Doug Brown, R. Belmont].
@@ -188502,7 +188485,7 @@ Save State: Unsupported
 
 WIP:
 - 0.165: Renamed (msx_cart_moonsound) to (msx_moonsound).
-- 0.164: Added 'MSX Cartridge - MoonSound' device.
+- 0.164: Added (msx_cart_moonsound) 'MSX Cartridge - MoonSound' device.
 
 ROMSET:
 2097152 bytes in 1 file / 1.83Mb packed
@@ -196611,7 +196594,7 @@ ROMSET:
 $end
 $info=neocart_bangbead
 $mame
-0.154
+0.154 [S. Smith]
 
 Neo Geo Bangbead CMC42 Cart, <unknown>, ????
 
@@ -196627,7 +196610,7 @@ Save State: Unsupported
 
 WIP:
 - 0.174: Renamed (cmc_bangbead_cart) to (neocart_bangbead).
-- 0.154: Added 'Neo Geo Bangbead CMC42 Cart' device.
+- 0.154: S. Smith added 'Neo Geo Bangbead CMC42 Cart' device.
 
 ROMSET:
 None required.
@@ -196681,7 +196664,7 @@ None required.
 $end
 $info=neocart_ct2k3
 $mame
-0.154
+0.154 [S. Smith]
 
 Neo Geo CTHD 2003 Cart, <unknown>, ????
 
@@ -196697,7 +196680,7 @@ Save State: Unsupported
 
 WIP:
 - 0.174: Renamed (boot_cthd2003_cart) to (neocart_ct2k3).
-- 0.154: Added 'Neo Geo CTHD 2003 Cart' device.
+- 0.154: S. Smith added 'Neo Geo CTHD 2003 Cart' device.
 
 ROMSET:
 None required.
@@ -196705,7 +196688,7 @@ None required.
 $end
 $info=neocart_ct2k3sa
 $mame
-0.154
+0.154 [S. Smith]
 
 Neo Geo CTHD 2003 Sp Alt Cart, <unknown>, ????
 
@@ -196721,7 +196704,7 @@ Save State: Unsupported
 
 WIP:
 - 0.174: Renamed (boot_ct2k3sa_cart) to (neocart_ct2k3sa).
-- 0.154: Added 'Neo Geo CTHD 2003 Sp Alt Cart' device.
+- 0.154: S. Smith added 'Neo Geo CTHD 2003 Sp Alt Cart' device.
 
 ROMSET:
 None required.
@@ -196729,7 +196712,7 @@ None required.
 $end
 $info=neocart_ct2k3sp
 $mame
-0.154
+0.154 [S. Smith]
 
 Neo Geo CTHD 2003 Sp Cart, <unknown>, ????
 
@@ -196745,7 +196728,7 @@ Save State: Unsupported
 
 WIP:
 - 0.174: Renamed (boot_ct2k3sp_cart) to (neocart_ct2k3sp).
-- 0.154: Added 'Neo Geo CTHD 2003 Sp Cart' device.
+- 0.154: S. Smith added 'Neo Geo CTHD 2003 Sp Cart' device.
 
 ROMSET:
 None required.
@@ -196777,7 +196760,7 @@ None required.
 $end
 $info=neocart_ganryu
 $mame
-0.154
+0.154 [S. Smith]
 
 Neo Geo Ganryu CMC42 Cart, <unknown>, ????
 
@@ -196793,7 +196776,7 @@ Save State: Unsupported
 
 WIP:
 - 0.174: Renamed (cmc_ganryu_cart) to (neocart_ganryu).
-- 0.154: Added 'Neo Geo Ganryu CMC42 Cart' device.
+- 0.154: S. Smith added 'Neo Geo Ganryu CMC42 Cart' device.
 
 ROMSET:
 None required.
@@ -196801,7 +196784,7 @@ None required.
 $end
 $info=neocart_garou
 $mame
-0.154
+0.154 [S. Smith]
 
 Neo Geo Garou SMA Cart, <unknown>, ????
 
@@ -196817,7 +196800,7 @@ Save State: Unsupported
 
 WIP:
 - 0.174: Renamed (sma_garou_cart) to (neocart_garou).
-- 0.154: Added 'Neo Geo Garou SMA Cart' device.
+- 0.154: S. Smith added 'Neo Geo Garou SMA Cart' device.
 
 ROMSET:
 None required.
@@ -196825,7 +196808,7 @@ None required.
 $end
 $info=neocart_garoubl
 $mame
-0.154
+0.154 [S. Smith]
 
 Neo Geo Garou Bootleg Cart, <unknown>, ????
 
@@ -196841,7 +196824,7 @@ Save State: Unsupported
 
 WIP:
 - 0.174: Renamed (boot_garoubl_cart) to (neocart_garoubl).
-- 0.154: Added 'Neo Geo Garou Bootleg Cart' device.
+- 0.154: S. Smith added 'Neo Geo Garou Bootleg Cart' device.
 
 ROMSET:
 None required.
@@ -196849,7 +196832,7 @@ None required.
 $end
 $info=neocart_garouh
 $mame
-0.154
+0.154 [S. Smith]
 
 Neo Geo Garou AES SMA Cart, <unknown>, ????
 
@@ -196865,7 +196848,7 @@ Save State: Unsupported
 
 WIP:
 - 0.174: Renamed (sma_garouh_cart) to (neocart_garouh).
-- 0.154: Added 'Neo Geo Garou AES SMA Cart' device.
+- 0.154: S. Smith added 'Neo Geo Garou AES SMA Cart' device.
 
 ROMSET:
 None required.
@@ -196896,7 +196879,7 @@ None required.
 $end
 $info=neocart_k2k2
 $mame
-0.154
+0.154 [S. Smith]
 
 Neo Geo KOF2002-Type Cart, <unknown>, ????
 
@@ -196912,7 +196895,7 @@ Save State: Unsupported
 
 WIP:
 - 0.184: Renamed (k2k_k2k_cart) to (neocart_k2k2).
-- 0.154: Added 'Neo Geo KOF2002-Type Cart' device.
+- 0.154: S. Smith added 'Neo Geo KOF2002-Type Cart' device.
 
 ROMSET:
 None required.
@@ -196920,7 +196903,7 @@ None required.
 $end
 $info=neocart_kf10thep
 $mame
-0.154
+0.154 [S. Smith]
 
 Neo Geo KoF 10th Ann. EP Bootleg Cart, <unknown>, ????
 
@@ -196936,7 +196919,7 @@ Save State: Unsupported
 
 WIP:
 - 0.174: Renamed (boot_kf10thep_cart) to (neocart_kf10thep).
-- 0.154: Added 'Neo Geo KOF 10th Ann. EP Bootleg Cart' device.
+- 0.154: S. Smith added 'Neo Geo KOF 10th Ann. EP Bootleg Cart' device.
 
 ROMSET:
 None required.
@@ -196944,7 +196927,7 @@ None required.
 $end
 $info=neocart_kf2k2mp
 $mame
-0.154
+0.154 [S. Smith]
 
 Neo Geo KoF 2002 MP Cart, <unknown>, ????
 
@@ -196960,7 +196943,7 @@ Save State: Unsupported
 
 WIP:
 - 0.174: Renamed (boot_kf2k2mp_cart) to (neocart_kf2k2mp).
-- 0.154: Added 'Neo Geo KOF 2002 MP Cart' device.
+- 0.154: S. Smith added 'Neo Geo KOF 2002 MP Cart' device.
 
 ROMSET:
 None required.
@@ -196968,7 +196951,7 @@ None required.
 $end
 $info=neocart_kf2k2mp2
 $mame
-0.154
+0.154 [S. Smith]
 
 Neo Geo KoF 2002 MP2 Cart, <unknown>, ????
 
@@ -196984,7 +196967,7 @@ Save State: Unsupported
 
 WIP:
 - 0.174: Renamed (boot_kf2k2mp2_cart) to (neocart_kf2k2mp2).
-- 0.154: Added 'Neo Geo KOF 2002 MP2 Cart' device.
+- 0.154: S. Smith added 'Neo Geo KOF 2002 MP2 Cart' device.
 
 ROMSET:
 None required.
@@ -196992,7 +196975,7 @@ None required.
 $end
 $info=neocart_kf2k2pls
 $mame
-0.154
+0.154 [S. Smith]
 
 Neo Geo KoF 2002 Plus Cart, <unknown>, ????
 
@@ -197009,7 +196992,7 @@ Save State: Unsupported
 WIP:
 - 0.186: Changed description to 'Neo Geo KoF 2002 Plus Cart'.
 - 0.174: Renamed (k2k_k2kpls_cart) to (neocart_kf2k2pls).
-- 0.154: Added 'Neo Geo KOF2002 Plus Cart' device.
+- 0.154: S. Smith added 'Neo Geo KOF2002 Plus Cart' device.
 
 ROMSET:
 None required.
@@ -197017,7 +197000,7 @@ None required.
 $end
 $info=neocart_kf2k3bl
 $mame
-0.154
+0.154 [S. Smith]
 
 Neo Geo KoF 2003 Bootleg Cart, <unknown>, ????
 
@@ -197033,7 +197016,7 @@ Save State: Unsupported
 
 WIP:
 - 0.174: Renamed (boot_kf2k3bl_cart) to (neocart_kf2k3bl).
-- 0.154: Added 'Neo Geo KOF 2003 Bootleg Cart' device.
+- 0.154: S. Smith added 'Neo Geo KOF 2003 Bootleg Cart' device.
 
 ROMSET:
 None required.
@@ -197041,7 +197024,7 @@ None required.
 $end
 $info=neocart_kf2k3pl
 $mame
-0.154
+0.154 [S. Smith]
 
 Neo Geo KoF 2003 PL Cart, <unknown>, ????
 
@@ -197057,7 +197040,7 @@ Save State: Unsupported
 
 WIP:
 - 0.174: Renamed (boot_kf2k3pl_cart) to (neocart_kf2k3pl).
-- 0.154: Added 'Neo Geo KOF 2003 PL Cart' device.
+- 0.154: S. Smith added 'Neo Geo KOF 2003 PL Cart' device.
 
 ROMSET:
 None required.
@@ -197065,7 +197048,7 @@ None required.
 $end
 $info=neocart_kf2k3upl
 $mame
-0.154
+0.154 [S. Smith]
 
 Neo Geo KoF 2003 UPL Cart, <unknown>, ????
 
@@ -197081,7 +197064,7 @@ Save State: Unsupported
 
 WIP:
 - 0.174: Renamed (boot_kf2k3upl_cart) to (neocart_kf2k3upl).
-- 0.154: Added 'Neo Geo KOF 2003 UPL Cart' device.
+- 0.154: S. Smith added 'Neo Geo KOF 2003 UPL Cart' device.
 
 ROMSET:
 None required.
@@ -197089,7 +197072,7 @@ None required.
 $end
 $info=neocart_kf2k4se
 $mame
-0.154
+0.154 [S. Smith]
 
 Neo Geo KoF 2004 SE Bootleg Cart, <unknown>, ????
 
@@ -197105,7 +197088,7 @@ Save State: Unsupported
 
 WIP:
 - 0.174: Renamed (boot_kf2k4se_cart) to (neocart_kf2k4se).
-- 0.154: Added 'Neo Geo KOF 2004 SE Bootleg Cart' device.
+- 0.154: S. Smith added 'Neo Geo KOF 2004 SE Bootleg Cart' device.
 
 ROMSET:
 None required.
@@ -197113,7 +197096,7 @@ None required.
 $end
 $info=neocart_kf2k5uni
 $mame
-0.154
+0.154 [S. Smith]
 
 Neo Geo KoF 2005 Unique Bootleg Cart, <unknown>, ????
 
@@ -197129,7 +197112,7 @@ Save State: Unsupported
 
 WIP:
 - 0.174: Renamed (boot_kf2k5uni_cart) to (neocart_kf2k5uni).
-- 0.154: Added 'Neo Geo KOF 2005 Unique Bootleg Cart' device.
+- 0.154: S. Smith added 'Neo Geo KOF 2005 Unique Bootleg Cart' device.
 
 ROMSET:
 None required.
@@ -197137,7 +197120,7 @@ None required.
 $end
 $info=neocart_kof10th
 $mame
-0.154
+0.154 [S. Smith]
 
 Neo Geo KoF 10th Ann. Bootleg Cart, <unknown>, ????
 
@@ -197154,7 +197137,7 @@ Save State: Unsupported
 WIP:
 - 0.186: Changed description to 'Neo Geo KoF 10th Ann. Bootleg Cart'.
 - 0.174: Renamed (boot_kof10th_cart) to (neocart_kof10th).
-- 0.154: Added 'Neo Geo KOF 10th Ann Bootleg Cart' device.
+- 0.154: S. Smith added 'Neo Geo KOF 10th Ann Bootleg Cart' device.
 
 ROMSET:
 None required.
@@ -197162,7 +197145,7 @@ None required.
 $end
 $info=neocart_kof2000
 $mame
-0.154
+0.154 [S. Smith]
 
 Neo Geo KoF 2000 SMA Cart, <unknown>, ????
 
@@ -197178,7 +197161,7 @@ Save State: Unsupported
 
 WIP:
 - 0.174: Renamed (sma_kof2000_cart) to (neocart_kof2000).
-- 0.154: Added 'Neo Geo KOF 2000 SMA Cart' device.
+- 0.154: S. Smith added 'Neo Geo KOF 2000 SMA Cart' device.
 
 ROMSET:
 None required.
@@ -197186,7 +197169,7 @@ None required.
 $end
 $info=neocart_kof2000n
 $mame
-0.154
+0.154 [S. Smith]
 
 Neo Geo KoF 2000 CMC50 Cart, <unknown>, ????
 
@@ -197202,7 +197185,7 @@ Save State: Unsupported
 
 WIP:
 - 0.174: Renamed (cmc_kof2000n_cart) to (neocart_kof2000n).
-- 0.154: Added 'Neo Geo KOF 2000 CMC50 Cart' device.
+- 0.154: S. Smith added 'Neo Geo KOF 2000 CMC50 Cart' device.
 
 ROMSET:
 None required.
@@ -197210,7 +197193,7 @@ None required.
 $end
 $info=neocart_kof2001
 $mame
-0.154
+0.154 [S. Smith]
 
 Neo Geo KoF 2001 CMC50 Cart, <unknown>, ????
 
@@ -197226,7 +197209,7 @@ Save State: Unsupported
 
 WIP:
 - 0.174: Renamed (cmc_kof2001_cart) to (neocart_kof2001).
-- 0.154: Added 'Neo Geo KOF 2001 CMC50 Cart' device.
+- 0.154: S. Smith added 'Neo Geo KOF 2001 CMC50 Cart' device.
 
 ROMSET:
 None required.
@@ -197234,7 +197217,7 @@ None required.
 $end
 $info=neocart_kof2002
 $mame
-0.154
+0.154 [S. Smith]
 
 Neo Geo KoF 2002 Cart, <unknown>, ????
 
@@ -197251,7 +197234,7 @@ Save State: Unsupported
 WIP:
 - 0.186: Changed description to 'Neo Geo KoF 2002 Cart'.
 - 0.174: Renamed (k2k_k2k_cart) to (neocart_kof2002).
-- 0.154: Added 'Neo Geo KOF2002 Cart' device.
+- 0.154: S. Smith added 'Neo Geo KOF2002 Cart' device.
 
 ROMSET:
 None required.
@@ -197259,7 +197242,7 @@ None required.
 $end
 $info=neocart_kof2002b
 $mame
-0.154
+0.154 [S. Smith]
 
 Neo Geo KoF 2002 Bootleg Cart, <unknown>, ????
 
@@ -197275,7 +197258,7 @@ Save State: Unsupported
 
 WIP:
 - 0.174: Renamed (boot_kof2002b_cart) to (neocart_kof2002b).
-- 0.154: Added 'Neo Geo KOF 2002 Bootleg Cart' device.
+- 0.154: S. Smith added 'Neo Geo KOF 2002 Bootleg Cart' device.
 
 ROMSET:
 None required.
@@ -197283,7 +197266,7 @@ None required.
 $end
 $info=neocart_kof2003
 $mame
-0.154
+0.154 [S. Smith]
 
 Neo Geo KoF 2003 PVC Cart, <unknown>, ????
 
@@ -197299,7 +197282,7 @@ Save State: Unsupported
 
 WIP:
 - 0.174: Renamed (p2_kof2003_cart) to (neocart_kof2003).
-- 0.154: Added 'Neo Geo KOF 2003 PVC Cart' device.
+- 0.154: S. Smith added 'Neo Geo KOF 2003 PVC Cart' device.
 
 ROMSET:
 None required.
@@ -197307,7 +197290,7 @@ None required.
 $end
 $info=neocart_kof2003h
 $mame
-0.154
+0.154 [S. Smith]
 
 Neo Geo KoF 2003 AES PVC Cart, <unknown>, ????
 
@@ -197323,7 +197306,7 @@ Save State: Unsupported
 
 WIP:
 - 0.174: Renamed (p2_kof2003h_cart) to (neocart_kof2003h).
-- 0.154: Added 'Neo Geo KOF 2003 AES PVC Cart' device.
+- 0.154: S. Smith added 'Neo Geo KOF 2003 AES PVC Cart' device.
 
 ROMSET:
 None required.
@@ -197331,7 +197314,7 @@ None required.
 $end
 $info=neocart_kof97oro
 $mame
-0.154
+0.154 [S. Smith]
 
 Neo Geo KoF 97 Orochi Bootleg Cart, <unknown>, ????
 
@@ -197347,7 +197330,7 @@ Save State: Unsupported
 
 WIP:
 - 0.174: Renamed (boot_kof97oro_cart) to (neocart_kof97oro).
-- 0.154: Added 'Neo Geo KOF 97 Orochi Bootleg Cart' device.
+- 0.154: S. Smith added 'Neo Geo KOF 97 Orochi Bootleg Cart' device.
 
 ROMSET:
 None required.
@@ -197378,7 +197361,7 @@ None required.
 $end
 $info=neocart_kof99
 $mame
-0.154
+0.154 [S. Smith]
 
 Neo Geo KoF 99 SMA Cart, <unknown>, ????
 
@@ -197394,7 +197377,7 @@ Save State: Unsupported
 
 WIP:
 - 0.174: Renamed (sma_kof99_cart) to (neocart_kof99).
-- 0.154: Added 'Neo Geo KOF 99 SMA Cart' device.
+- 0.154: S. Smith added 'Neo Geo KOF 99 SMA Cart' device.
 
 ROMSET:
 None required.
@@ -197402,7 +197385,7 @@ None required.
 $end
 $info=neocart_kof99k
 $mame
-0.154
+0.154 [S. Smith]
 
 Neo Geo KoF 99 Korea CMC42 Cart, <unknown>, ????
 
@@ -197418,7 +197401,7 @@ Save State: Unsupported
 
 WIP:
 - 0.174: Renamed (cmc_kof99k_cart) to (neocart_kof99k).
-- 0.154: Added 'Neo Geo KOF 99 Korea CMC42 Cart' device.
+- 0.154: S. Smith added 'Neo Geo KOF 99 Korea CMC42 Cart' device.
 
 ROMSET:
 None required.
@@ -197426,7 +197409,7 @@ None required.
 $end
 $info=neocart_kog
 $mame
-0.154
+0.154 [S. Smith]
 
 Neo Geo King of Gladiators Bootleg Cart, <unknown>, ????
 
@@ -197442,7 +197425,7 @@ Save State: Unsupported
 
 WIP:
 - 0.174: Renamed (boot_kog_cart) to (neocart_kog).
-- 0.154: Added 'Neo Geo King of Gladiators Bootleg Cart' device.
+- 0.154: S. Smith added 'Neo Geo King of Gladiators Bootleg Cart' device.
 
 ROMSET:
 None required.
@@ -197450,7 +197433,7 @@ None required.
 $end
 $info=neocart_lans2004
 $mame
-0.154
+0.154 [S. Smith]
 
 Neo Geo Lansquenet 2004 Bootleg Cart, <unknown>, ????
 
@@ -197466,7 +197449,7 @@ Save State: Unsupported
 
 WIP:
 - 0.174: Renamed (boot_lans2004_cart) to (neocart_lans2004).
-- 0.154: Added 'Neo Geo Lansquenet 2004 Bootleg Cart' device.
+- 0.154: S. Smith added 'Neo Geo Lansquenet 2004 Bootleg Cart' device.
 
 ROMSET:
 None required.
@@ -197474,7 +197457,7 @@ None required.
 $end
 $info=neocart_matrim
 $mame
-0.154
+0.154 [S. Smith]
 
 Neo Geo Matrimelee Cart, <unknown>, ????
 
@@ -197490,7 +197473,7 @@ Save State: Unsupported
 
 WIP:
 - 0.174: Renamed (k2k_matrim_cart) to (neocart_matrim).
-- 0.154: Added 'Neo Geo Matrimelee Cart' device.
+- 0.154: S. Smith added 'Neo Geo Matrimelee Cart' device.
 
 ROMSET:
 None required.
@@ -197498,7 +197481,7 @@ None required.
 $end
 $info=neocart_matrimbl
 $mame
-0.154
+0.154 [S. Smith]
 
 Neo Geo Matrimelee Bootleg Cart, <unknown>, ????
 
@@ -197514,7 +197497,7 @@ Save State: Unsupported
 
 WIP:
 - 0.174: Renamed (boot_matrimbl_cart) to (neocart_matrimbl).
-- 0.154: Added 'Neo Geo Matrimelee Bootleg Cart' device.
+- 0.154: S. Smith added 'Neo Geo Matrimelee Bootleg Cart' device.
 
 ROMSET:
 None required.
@@ -197522,7 +197505,7 @@ None required.
 $end
 $info=neocart_ms4plus
 $mame
-0.154
+0.154 [S. Smith]
 
 Neo Geo Metal Slug 4 Plus PCM2 Cart, <unknown>, ????
 
@@ -197538,7 +197521,7 @@ Save State: Unsupported
 
 WIP:
 - 0.174: Renamed (p2_ms4plus_cart) to (neocart_ms4plus).
-- 0.154: Added 'Neo Geo Metal Slug 4 Plus PCM2 Cart' device.
+- 0.154: S. Smith added 'Neo Geo Metal Slug 4 Plus PCM2 Cart' device.
 
 ROMSET:
 None required.
@@ -197546,7 +197529,7 @@ None required.
 $end
 $info=neocart_ms5plus
 $mame
-0.154
+0.154 [S. Smith]
 
 Neo Geo Metal Slug 5 Plus Bootleg Cart, <unknown>, ????
 
@@ -197562,7 +197545,7 @@ Save State: Unsupported
 
 WIP:
 - 0.174: Renamed (boot_ms5plus_cart) to (neocart_ms5plus).
-- 0.154: Added 'Neo Geo Metal Slug 5 Plus Bootleg Cart' device.
+- 0.154: S. Smith added 'Neo Geo Metal Slug 5 Plus Bootleg Cart' device.
 
 ROMSET:
 None required.
@@ -197570,7 +197553,7 @@ None required.
 $end
 $info=neocart_mslug3
 $mame
-0.154
+0.154 [S. Smith]
 
 Neo Geo Metal Slug 3 SMA Cart (green), <unknown>, ????
 
@@ -197587,7 +197570,7 @@ Save State: Unsupported
 WIP:
 - 0.186: Changed description to 'Neo Geo Metal Slug 3 SMA Cart (green)'.
 - 0.174: Renamed (sma_mslug3_cart) to (neocart_mslug3).
-- 0.154: Added 'Neo Geo Metal Slug 3 SMA Cart' device.
+- 0.154: S. Smith added 'Neo Geo Metal Slug 3 SMA Cart' device.
 
 ROMSET:
 None required.
@@ -197618,7 +197601,7 @@ None required.
 $end
 $info=neocart_mslug3b6
 $mame
-0.154
+0.154 [S. Smith]
 
 Neo Geo Metal Slug 6 Bootleg Cart, <unknown>, ????
 
@@ -197634,7 +197617,7 @@ Save State: Unsupported
 
 WIP:
 - 0.174: Renamed (boot_mslug3b6_cart) to (neocart_mslug3b6).
-- 0.154: Added 'Neo Geo Metal Slug 6 Bootleg Cart' device.
+- 0.154: S. Smith added 'Neo Geo Metal Slug 6 Bootleg Cart' device.
 
 ROMSET:
 None required.
@@ -197642,7 +197625,7 @@ None required.
 $end
 $info=neocart_mslug3h
 $mame
-0.154
+0.154 [S. Smith]
 
 Neo Geo Metal Slug 3 AES CMC42 Cart, <unknown>, ????
 
@@ -197658,7 +197641,7 @@ Save State: Unsupported
 
 WIP:
 - 0.174: Renamed (cmc_mslug3h_cart) to (neocart_mslug3h).
-- 0.154: Added 'Neo Geo Metal Slug 3 AES CMC42 Cart' device.
+- 0.154: S. Smith added 'Neo Geo Metal Slug 3 AES CMC42 Cart' device.
 
 ROMSET:
 None required.
@@ -197666,7 +197649,7 @@ None required.
 $end
 $info=neocart_mslug4
 $mame
-0.154
+0.154 [S. Smith]
 
 Neo Geo Metal Slug 3 PCM2 Cart, <unknown>, ????
 
@@ -197683,7 +197666,7 @@ Save State: Unsupported
 WIP:
 - 0.186: Changed description to 'Neo Geo Metal Slug 3 PCM2 Cart'.
 - 0.174: Renamed (p2_mslug4_cart) to (neocart_mslug4).
-- 0.154: Added 'Neo Geo Metal Slug 4 PCM2 Cart' device.
+- 0.154: S. Smith added 'Neo Geo Metal Slug 4 PCM2 Cart' device.
 
 ROMSET:
 None required.
@@ -197691,7 +197674,7 @@ None required.
 $end
 $info=neocart_mslug5
 $mame
-0.154
+0.154 [S. Smith]
 
 Neo Geo Metal Slug 5 PVC Cart, <unknown>, ????
 
@@ -197707,7 +197690,7 @@ Save State: Unsupported
 
 WIP:
 - 0.174: Renamed (p2_mslug5_cart) to (neocart_mslug5).
-- 0.154: Added 'Neo Geo Metal Slug 5 PVC Cart' device.
+- 0.154: S. Smith added 'Neo Geo Metal Slug 5 PVC Cart' device.
 
 ROMSET:
 None required.
@@ -197761,7 +197744,7 @@ None required.
 $end
 $info=neocart_nitd
 $mame
-0.154
+0.154 [S. Smith]
 
 Neo Geo NITD CMC42 Cart, <unknown>, ????
 
@@ -197777,7 +197760,7 @@ Save State: Unsupported
 
 WIP:
 - 0.174: Renamed (cmc_nitd_cart) to (neocart_nitd).
-- 0.154: Added 'Neo Geo NITD CMC42 Cart' device.
+- 0.154: S. Smith added 'Neo Geo NITD CMC42 Cart' device.
 
 ROMSET:
 None required.
@@ -197808,7 +197791,7 @@ None required.
 $end
 $info=neocart_pnyaa
 $mame
-0.154
+0.154 [S. Smith]
 
 Neo Geo Pnyaa PCM2 Cart, <unknown>, ????
 
@@ -197824,7 +197807,7 @@ Save State: Unsupported
 
 WIP:
 - 0.174: Renamed (p2_pnyaa_cart) to (neocart_pnyaa).
-- 0.154: Added 'Neo Geo Pnyaa PCM2 Cart' device.
+- 0.154: S. Smith added 'Neo Geo Pnyaa PCM2 Cart' device.
 
 ROMSET:
 None required.
@@ -197832,7 +197815,7 @@ None required.
 $end
 $info=neocart_preisle2
 $mame
-0.154
+0.154 [S. Smith]
 
 Neo Geo Prehistoric Isle 2 CMC42 Cart, <unknown>, ????
 
@@ -197849,7 +197832,7 @@ Save State: Unsupported
 WIP:
 - 0.186: Changed description to 'Neo Geo Prehistoric Isle 2 CMC42 Cart'.
 - 0.174: Renamed (cmc_preisle2_cart) to (neocart_preisle2).
-- 0.154: Added 'Neo Geo Prehistorik Isle 2 CMC42 Cart' device.
+- 0.154: S. Smith added 'Neo Geo Prehistorik Isle 2 CMC42 Cart' device.
 
 ROMSET:
 None required.
@@ -197880,7 +197863,7 @@ None required.
 $end
 $info=neocart_rom
 $mame
-0.154
+0.154 [S. Smith]
 
 Neo Geo Standard Carts, <unknown>, ????
 
@@ -197896,7 +197879,7 @@ Save State: Unsupported
 
 WIP:
 - 0.174: Renamed (neogeo_rom) to (neocart_rom).
-- 0.154: Added 'Neo Geo Standard Carts' device.
+- 0.154: S. Smith added 'Neo Geo Standard Carts' device.
 
 ROMSET:
 None required.
@@ -197904,7 +197887,7 @@ None required.
 $end
 $info=neocart_rotd
 $mame
-0.154
+0.154 [S. Smith]
 
 Neo Geo Rage of the Dragon PCM2 Cart, <unknown>, ????
 
@@ -197920,7 +197903,7 @@ Save State: Unsupported
 
 WIP:
 - 0.174: Renamed (p2_rotd_cart) to (neocart_rotd).
-- 0.154: Added 'Neo Geo Rage of the Dragon PCM2 Cart' device.
+- 0.154: S. Smith added 'Neo Geo Rage of the Dragon PCM2 Cart' device.
 
 ROMSET:
 None required.
@@ -197928,7 +197911,7 @@ None required.
 $end
 $info=neocart_s1945p
 $mame
-0.154
+0.154 [S. Smith]
 
 Neo Geo Strikers 1945 Plus CMC42 Cart, <unknown>, ????
 
@@ -197944,7 +197927,7 @@ Save State: Unsupported
 
 WIP:
 - 0.174: Renamed (cmc_s1945p_cart) to (neocart_s1945p).
-- 0.154: Added 'Neo Geo Strikers 1945 Plus CMC42 Cart' device.
+- 0.154: S. Smith added 'Neo Geo Strikers 1945 Plus CMC42 Cart' device.
 
 ROMSET:
 None required.
@@ -197975,7 +197958,7 @@ None required.
 $end
 $info=neocart_samsho5
 $mame
-0.154
+0.154 [S. Smith]
 
 Neo Geo Samurai Shodown 5 Cart, <unknown>, ????
 
@@ -197991,7 +197974,7 @@ Save State: Unsupported
 
 WIP:
 - 0.174: Renamed (k2k_ss5_cart) to (neocart_samsho5).
-- 0.154: Added 'Neo Geo Samurai Shodown 5 Cart' device.
+- 0.154: S. Smith added 'Neo Geo Samurai Shodown 5 Cart' device.
 
 ROMSET:
 None required.
@@ -197999,7 +197982,7 @@ None required.
 $end
 $info=neocart_samsho5b
 $mame
-0.154
+0.154 [S. Smith]
 
 Neo Geo Samurai Shodown 5 Bootleg Cart, <unknown>, ????
 
@@ -198015,7 +197998,7 @@ Save State: Unsupported
 
 WIP:
 - 0.174: Renamed (boot_samsho5b_cart) to (neocart_samsho5b).
-- 0.154: Added 'Neo Geo Samurai Shodown 5 Bootleg Cart' device.
+- 0.154: S. Smith added 'Neo Geo Samurai Shodown 5 Bootleg Cart' device.
 
 ROMSET:
 None required.
@@ -198023,7 +198006,7 @@ None required.
 $end
 $info=neocart_sbp
 $mame
-0.174
+0.154 [S. Smith]
 
 Neo Geo Super Bubble Pop Cart, <unknown>, ????
 
@@ -198038,7 +198021,8 @@ Graphics: Good
 Save State: Unsupported
 
 WIP:
-- 0.174: Added 'Neo Geo Super Bubble Pop Cart' device.
+- 0.174: Renamed (sbp_prot) to (neocart_sbp).
+- 0.154: S. Smith added 'Neo Geo Super Bubble Pop Cart' device.
 
 ROMSET:
 None required.
@@ -198046,7 +198030,7 @@ None required.
 $end
 $info=neocart_sengoku3
 $mame
-0.154
+0.154 [S. Smith]
 
 Neo Geo Sengoku 3 CMC42 Cart, <unknown>, ????
 
@@ -198062,7 +198046,7 @@ Save State: Unsupported
 
 WIP:
 - 0.174: Renamed (cmc_sengoku3_cart) to (neocart_sengoku3).
-- 0.154: Added 'Neo Geo Sengoku 3 CMC42 Cart' device.
+- 0.154: S. Smith added 'Neo Geo Sengoku 3 CMC42 Cart' device.
 
 ROMSET:
 None required.
@@ -198093,7 +198077,7 @@ None required.
 $end
 $info=neocart_svc
 $mame
-0.154
+0.154 [S. Smith]
 
 Neo Geo SNK vs Capcom PVC Cart, <unknown>, ????
 
@@ -198109,7 +198093,7 @@ Save State: Unsupported
 
 WIP:
 - 0.174: Renamed (p2_svc_cart) to (neocart_svc).
-- 0.154: Added 'Neo Geo SNK vs Capcom PVC Cart' device.
+- 0.154: S. Smith added 'Neo Geo SNK vs Capcom PVC Cart' device.
 
 ROMSET:
 None required.
@@ -198117,7 +198101,7 @@ None required.
 $end
 $info=neocart_svcboot
 $mame
-0.154
+0.154 [S. Smith]
 
 Neo Geo SVC Bootleg Cart, <unknown>, ????
 
@@ -198133,7 +198117,7 @@ Save State: Unsupported
 
 WIP:
 - 0.174: Renamed (boot_svcboot_cart) to (neocart_svcboot).
-- 0.154: Added 'Neo Geo SVC Bootleg Cart' device.
+- 0.154: S. Smith added 'Neo Geo SVC Bootleg Cart' device.
 
 ROMSET:
 None required.
@@ -198141,7 +198125,7 @@ None required.
 $end
 $info=neocart_svcplus
 $mame
-0.154
+0.154 [S. Smith]
 
 Neo Geo SVC Plus Bootleg Cart, <unknown>, ????
 
@@ -198157,7 +198141,7 @@ Save State: Unsupported
 
 WIP:
 - 0.174: Renamed (boot_svcplus_cart) to (neocart_svcplus).
-- 0.154: Added 'Neo Geo SVC Plus Bootleg Cart' device.
+- 0.154: S. Smith added 'Neo Geo SVC Plus Bootleg Cart' device.
 
 ROMSET:
 None required.
@@ -198165,7 +198149,7 @@ None required.
 $end
 $info=neocart_svcplusa
 $mame
-0.154
+0.154 [S. Smith]
 
 Neo Geo SVC Plus Alt Bootleg Cart, <unknown>, ????
 
@@ -198181,7 +198165,7 @@ Save State: Unsupported
 
 WIP:
 - 0.174: Renamed (boot_svcplusa_cart) to (neocart_svcplusa).
-- 0.154: Added 'Neo Geo SVC Plus Alt Bootleg Cart' device.
+- 0.154: S. Smith added 'Neo Geo SVC Plus Alt Bootleg Cart' device.
 
 ROMSET:
 None required.
@@ -198189,7 +198173,7 @@ None required.
 $end
 $info=neocart_svcsplus
 $mame
-0.154
+0.154 [S. Smith]
 
 Neo Geo SVC S.Plus Bootleg Cart, <unknown>, ????
 
@@ -198205,7 +198189,7 @@ Save State: Unsupported
 
 WIP:
 - 0.174: Renamed (boot_svcsplus_cart) to (neocart_svcsplus).
-- 0.154: Added 'Neo Geo SVC S.Plus Bootleg Cart' device.
+- 0.154: S. Smith added 'Neo Geo SVC S.Plus Bootleg Cart' device.
 
 ROMSET:
 None required.
@@ -198236,7 +198220,7 @@ None required.
 $end
 $info=neocart_zupapa
 $mame
-0.154
+0.154 [S. Smith]
 
 Neo Geo Zupapa CMC42 Cart, <unknown>, ????
 
@@ -198252,7 +198236,7 @@ Save State: Unsupported
 
 WIP:
 - 0.174: Renamed (cmc_zupapa_cart) to (neocart_zupapa).
-- 0.154: Added 'Neo Geo Zupapa CMC42 Cart' device.
+- 0.154: S. Smith added 'Neo Geo Zupapa CMC42 Cart' device.
 
 ROMSET:
 None required.
@@ -203188,7 +203172,7 @@ Save State: Unsupported
 WIP:
 - 0.235: Renamed (nes_kf23ca) to (nes_fk23ca) and description changed to 'NES Cart FK23CA PCB'.
 - 0.186: Renamed (nes_fk23ca) to (nes_kf23ca) and description changed to 'NES Cart KF23CA PCB'.
-- 0.148u4: Added 'NES Cart FK23CA PCB' device.
+- 0.148u4: Added (nes_fk23ca) 'NES Cart FK23CA PCB' device.
 
 ROMSET:
 None required.
@@ -203421,7 +203405,7 @@ Save State: Unsupported
 WIP:
 - 0.235: Renamed (nes_g2004) to (nes_gs2004).
 - 0.186: Renamed (nes_gs2004) to (nes_g2004).
-- 0.148u4: Added 'NES Cart RCM GS-2004 PCB' device.
+- 0.148u4: Added (nes_gs2004) 'NES Cart RCM GS-2004 PCB' device.
 
 ROMSET:
 None required.
@@ -203446,7 +203430,7 @@ Save State: Unsupported
 WIP:
 - 0.235: Renamed (nes_g2013) to (nes_gs2013).
 - 0.186: Renamed (nes_gs2013) to (nes_g2013).
-- 0.148u4: Added 'NES Cart RCM GS-2013 PCB' device.
+- 0.148u4: Added (nes_gs2013) 'NES Cart RCM GS-2013 PCB' device.
 
 ROMSET:
 None required.
@@ -203471,7 +203455,7 @@ Save State: Unsupported
 WIP:
 - 0.235: Renamed (nes_g2015) to (nes_gs2015).
 - 0.186: Renamed (nes_gs2015) to (nes_g2015).
-- 0.148u4: Added 'NES Cart RCM GS-2015 PCB' device.
+- 0.148u4: Added (nes_gs2015) 'NES Cart RCM GS-2015 PCB' device.
 
 ROMSET:
 None required.
@@ -205720,7 +205704,7 @@ Save State: Unsupported
 WIP:
 - 0.235: Renamed (nes_fh_asder) to (nes_ntdec_fh).
 - 0.186: Renamed (nes_ntdec_fh) to (nes_fh_asder).
-- 0.148u4: Added 'NES Cart NTDEC Fighting Hero PCB' device.
+- 0.148u4: Added (nes_ntdec_fh) 'NES Cart NTDEC Fighting Hero PCB' device.
 
 ROMSET:
 None required.
@@ -224314,6 +224298,7 @@ RESOURCES:
 Snap, Title, Icon and machine picture (in "Cabinet" collection).
 
 WIP:
+- 0.289: BugFIX#09345 [Misc.] (nec/pc9821.cpp) pc9821ap2 [Flame Zapper Kotsujin]: Fails to start with an allocation error [Angelo Salese].
 - 0.158: Added 'newly dumped BIOS [caius].
 - 0.155: caius added 'NEC PC-9821AP2/U8W (98MATE A)' system.
 
@@ -227371,7 +227356,7 @@ WIP:
 - 0.184: Save state fixes for i386/pc_vga/cs4031: Save cs4031 emulated A20 state, additional i386 attribute registers/flags, and VGA palette configuration. Fixed broken VGA port reads on state load. Fixed enum range check in i386 [moralrecordings].
 - 0.181: Renamed (xtvga) to (pcvga).
 - 0.135: Fixed bus problem [Miodrag Milanović].
-- 0.37b4: Peter Trauner added 'IBM PC-XT Video Graphics Adapter, MF' system.
+- 0.37b4: Peter Trauner added (xtvga) 'IBM PC-XT Video Graphics Adapter, MF' system.
 
 ROMSET:
 458752 bytes in 48 files / 305.23Kb packed
@@ -242786,7 +242771,7 @@ Save State: Unsupported
 
 WIP:
 - 0.186: Renamed (spu) to (psxspu) and description changed to 'PlayStation SPU'.
-- 0.175: Added 'SPU' device.
+- 0.175: Added (spu) 'SPU' device.
 
 ROMSET:
 None required.
@@ -243251,37 +243236,6 @@ Snap and Title.
 
 WIP:
 - 0.280: TeamEurope and David Haywood added 'Takara Tomy Punirunes (PUNIRUNZU_MAIN_DICE_V1, mint, Japan)' system.
-
-ROMSET:
-8388608 bytes in 1 file / 3.86Mb packed
-
-$end
-$info=punij1pk
-$mame
-0.280 [TeamEurope, David Haywood]
-
-Punirunes (PUNIRUNZU_MAIN_DICE_V1, pink, Japan), Takara Tomy, 2021
-
-The Punirunes Puni Mint Squishy is an interactive toy shaped like a small, soft, round object, featuring an LCD screen at its center. Designed for children ages 6 and up, it lets kids interact with a cute digital character by inserting their finger into a hole on the side—this action stimulates the character on the screen, which responds with expressive animations and movements. The toy reacts to touch as if it were alive, and it can even "melt" when left alone, creating a heartwarming and engaging experience. It requires 3 AAA batteries and combines the satisfying tactile sensation of a squishy with the magic of a simple yet charming digital world—perfect for anyone who loves nurturing and interacting with virtual creatures in a gentle, fun way.
-
-DRIVER:
-handheld/generalplus_gpl951xx.cpp
-
-DRIVER STATUS:
-Emulation: Preliminary
-Color: Good
-Sound: Imperfect
-Graphics: Good
-Save State: Unsupported
-
-SOFTWARE LIST:
--
-
-RESOURCES:
-Snap and Title.
-
-WIP:
-- 0.280: TeamEurope and David Haywood added 'Takara Tomy Punirunes (PUNIRUNZU_MAIN_DICE_V1, pink, Japan)' system.
 
 ROMSET:
 8388608 bytes in 1 file / 3.86Mb packed
@@ -246500,6 +246454,7 @@ RESOURCES:
 Snap, Title, Icon, machine picture (in "Cabinet" collection), Control Panel, Flyer, pdf Manual and Marquee.
 
 WIP:
+- 0.289: Add extra wait state to m1 cycles (#15380) [Brian Johnson].
 - 0.272: Add checksums for multifont rom dumps (#12910) [Brian Johnson].
 - 0.249: Added YM2149-based sound card. Added hard disk support for the Epson QX-10 (IDE and ComFiler CR-1510 option boards) [Brian Johnson].
 - 0.242: Implement floppy motor on timer. Install software timer interrupts. Add multifont option card [Brian Johnson].
@@ -256543,7 +256498,7 @@ Save State: Unsupported
 
 WIP:
 - 0.186: Renamed (s100) to (s100_bus) and description changed to 'S100 bus'.
-- 0.149u1: Added 'S100' device.
+- 0.149u1: Added (s100) 'S100' device.
 
 ROMSET:
 None required.
@@ -259687,6 +259642,7 @@ Graphics: Good
 Save State: Unsupported
 
 WIP:
+- 0.289: Extend mirror ranges of registers [Angelo Salese].
 - 0.286: Renamed (stvcd) to (saturn_cd_hle). MAX_BLOCKS cleanup; command 0x51 is confirmed it doesn't generate a DRDY, pause drive when in (buffull) state; remove unnecessary device_memory_interface trampoline; use emu_timer in place of timer generic. Fix directory parsing on cross sector boundaries. Fix chaossd and sengblad bootups; rename to (saturn_cd_hle), relicense to BSD-3 [Angelo Salese].
 - 0.283: Minor log fixup [Angelo Salese].
 - 0.275: Unload image on tray open [Angelo Salese].
@@ -263769,7 +263725,7 @@ WIP:
 - 0.256: Changed description to 'Epson SED1200D-0A LCD Controller'.
 - 0.186: Changed description to 'Epson SED1200D-0A'.
 - 0.184: Renamed (sed1200) to (sed1200da).
-- 0.148: Added 'sed1200d-0a' device.
+- 0.148: Added (sed1200) 'sed1200d-0a' device.
 
 ROMSET:
 2048 bytes in 1 file / 0.59Kb packed
@@ -265319,7 +265275,7 @@ Save State: Unsupported
 
 WIP:
 - 0.186: Renamed (sega_segacd_europe) to (segacd_europe) and description changed to 'Sega Mega-CD (PAL)'.
-- 0.149u1: Added 'sega_segacd_europe' device.
+- 0.149u1: Added (sega_segacd_europe) 'sega_segacd_europe' device.
 
 ROMSET:
 None required.
@@ -273490,7 +273446,7 @@ Save State: Unsupported
 WIP:
 - 0.254: Renamed (snapsot_image) to (snapshot_image).
 - 0.186: Renamed (snapshot_image) to (snapsot_image).
-- 0.149u1: Added 'Snapshot' device.
+- 0.149u1: Added (snapshot_image) 'Snapshot' device.
 
 ROMSET:
 None required.
@@ -275092,7 +275048,7 @@ Save State: Unsupported
 
 WIP:
 - 0.186: Renamed (sns_rom21_srtc) to (sns_rom21_rtc).
-- 0.148u2: Added 'SNES Cart (HiROM) + S-RTC' device.
+- 0.148u2: Added (sns_rom21_srtc) 'SNES Cart (HiROM) + S-RTC' device.
 
 ROMSET:
 None required.
@@ -275504,7 +275460,7 @@ Snap, Title and Icon.
 WIP:
 - 0.170: Renamed (snspellb) to (snspellub).
 - 0.161: Renamed (snspella) to (snspellb).
-- 0.157: hap and Lord Nightmare, Kevin Horton, Sean Riddle added 'Texas Instruments Speak & Spell (US set 2)' system.
+- 0.157: hap and Lord Nightmare, Kevin Horton, Sean Riddle added (snspella) 'Texas Instruments Speak & Spell (US set 2)' system.
 
 ROMSET:
 16384 bytes in 1 file / 15.58Kb packed
@@ -277206,7 +277162,7 @@ Save State: Unsupported
 WIP:
 - 0.232: Changed description to 'Filtered DAC'.
 - 0.186: Renamed (speaker_sound) to (speaker_sound_device).
-- 0.149u1: Added 'Filtered 1-bit DAC' device.
+- 0.149u1: Added (speaker_sound) 'Filtered 1-bit DAC' device.
 
 ROMSET:
 None required.
@@ -282430,6 +282386,7 @@ Graphics: Good
 Save State: Unsupported
 
 WIP:
+- 0.289: Fixed line drawing loop start, allocate frame buffer on start [Vas Crabb].
 - 0.288: Renamed (blhandheldlcdc) to (st7735) and changed description to 'Sitronix ST7735 LCD Controller'. Fixed row drawing loop start [Vas Crabb].
 - 0.227: David Haywood added 'BaoBaoLong Handhelds LCD Controller' device.
 
@@ -291365,7 +291322,7 @@ Save State: Unsupported
 WIP:
 - 0.283: Changed description to 'Tandy 1000 built-in video (VIDEO-ARRAY)'.
 - 0.186: Renamed (tandy_1000_graphics_adapter) to (tandy_1000_graphics).
-- 0.152: Added 'Tandy 1000 Graphics Adapter' device.
+- 0.152: Added (tandy_1000_graphics_adapter) 'Tandy 1000 Graphics Adapter' device.
 
 ROMSET:
 16384 bytes in 1 file / 3.50Kb packed
@@ -296599,7 +296556,7 @@ Save State: Unsupported
 
 WIP:
 - 0.186: Renamed (ti8xbitsock) to (ti8x_bitsock).
-- 0.184: Added 'TI-8x Bit Socket' device.
+- 0.184: Added (ti8xbitsock) 'TI-8x Bit Socket' device.
 
 ROMSET:
 None required.
@@ -296648,7 +296605,7 @@ Save State: Unsupported
 
 WIP:
 - 0.186: Renamed (ti8xlink) to (ti8x_link_port).
-- 0.184: Added 'TI-8x Link Port' device.
+- 0.184: Added (ti8xlink) 'TI-8x Link Port' device.
 
 ROMSET:
 None required.
@@ -296672,7 +296629,7 @@ Save State: Unsupported
 
 WIP:
 - 0.186: Renamed (ti8xmspkr) to (ti8x_mspkr).
-- 0.184: Added 'TI-8x Speaker (Mono)' device.
+- 0.184: Added (ti8xmspkr) 'TI-8x Speaker (Mono)' device.
 
 ROMSET:
 None required.
@@ -296696,7 +296653,7 @@ Save State: Unsupported
 
 WIP:
 - 0.186: Renamed (ti8xstspkr) to (ti8x_stspkr).
-- 0.184: Added 'TI-8x Speaker (Stereo)' device.
+- 0.184: Added (ti8xstspkr) 'TI-8x Speaker (Stereo)' device.
 
 ROMSET:
 None required.
@@ -296721,7 +296678,7 @@ Save State: Unsupported
 WIP:
 - 0.189: Renamed (it8x_tconn) to (ti8x_tconn).
 - 0.186: Renamed (ti8xtconn) to (it8x_tconn) and description changed to 'TI-8x T-connector'.
-- 0.184: Added 'T-connector' device.
+- 0.184: Added (ti8xtconn) 'T-connector' device.
 
 ROMSET:
 None required.
@@ -296937,7 +296894,7 @@ Save State: Unsupported
 
 WIP:
 - 0.186: Renamed (ti99_32k) to (ti99_32kmem).
-- 0.145u2: Added 'TI-99 32KiB memory expansion card' device.
+- 0.145u2: Added (ti99_32k) 'TI-99 32KiB memory expansion card' device.
 
 ROMSET:
 None required.
@@ -297862,7 +297819,7 @@ Save State: Unsupported
 
 WIP:
 - 0.186: Renamed (ti_pio_attached) to (ti99_pio_attached) and description changed to 'TI-99 Parallel attached device'.
-- 0.163: Added 'Parallel attached' device.
+- 0.163: Added (ti_pio_attached) 'Parallel attached' device.
 
 ROMSET:
 None required.
@@ -297910,7 +297867,7 @@ Save State: Unsupported
 
 WIP:
 - 0.186: Renamed (ti_rs232_attached) to (ti99_rs232_atttached) and description changed to 'TI-99 Serial attached device'.
-- 0.163: Added 'Serial attached' device.
+- 0.163: Added (ti_rs232_attached) 'Serial attached' device.
 
 ROMSET:
 None required.
@@ -298117,7 +298074,7 @@ Save State: Unsupported
 
 WIP:
 - 0.186: Renamed (twinjoy) to (ti99_twinjoy) and description changed to 'TI-99/4(A) Twin Joysticks'.
-- 0.146u2: Added 'TI-99/4(A) Twin Joystick' device.
+- 0.146u2: Added (twinjoy) 'TI-99/4(A) Twin Joystick' device.
 
 ROMSET:
 None required.
@@ -298302,7 +298259,7 @@ Save State: Unsupported
 
 WIP:
 - 0.186: Renamed (tap_990) to (ti990_hdc) and description changed to 'Generic TI-990 Hard Disk Controller'.
-- 0.149u1: Added 'Generic TI-990 Tape Controller' device.
+- 0.149u1: Added (tap_990) 'Generic TI-990 Tape Controller' device.
 
 ROMSET:
 None required.
@@ -298326,7 +298283,7 @@ Save State: Unsupported
 
 WIP:
 - 0.186: Renamed (hdc_990) to (ti990_tap) and description changed to 'Generic TI-900 Tape Controller'.
-- 0.153: Added 'Generic TI-990 Hard Disk Controller' device.
+- 0.153: Added (hdc_990) 'Generic TI-990 Hard Disk Controller' device.
 
 ROMSET:
 None required.
@@ -298491,7 +298448,7 @@ Save State: Unsupported
 WIP:
 - 0.186: Renamed (oso) to (ti998_oso) and description changed to 'TI-99/8 Hexbus interface'.
 - 0.173: Renamed (ti998_oso) to (oso).
-- 0.152: Added 'Hexbus interface' device.
+- 0.152: Added (ti998_oso) 'Hexbus interface' device.
 
 ROMSET:
 None required.
@@ -298539,7 +298496,7 @@ Save State: Unsupported
 
 WIP:
 - 0.186: Renamed (cartridge) to (ti99cart).
-- 0.145u2: Added 'TI-99 cartridge' device.
+- 0.145u2: Added (cartridge) 'TI-99 cartridge' device.
 
 ROMSET:
 None required.
@@ -298665,7 +298622,7 @@ Snap, Title, Icon, machine picture (in "Cabinet" collection) and pdf Manual.
 
 WIP:
 - 0.170: Renamed (tibusan1) to (tibusan).
-- 0.157: hap and Sean Riddle added 'Texas Instruments TI Business Analyst-I' system.
+- 0.157: hap and Sean Riddle added (tibusan1) 'Texas Instruments TI Business Analyst-I' system.
 
 ROMSET:
 7833 bytes in 5 files / 3.83Kb packed
@@ -302039,6 +301996,7 @@ Graphics: Good
 Save State: Unsupported
 
 WIP:
+- 0.289: Attempted to fix setcd for the case with two bits set.  It was definitely wrong before - the mask to clear the first bit was calculated incorrectly [Vas Crabb].
 - 0.286: Fix 32-bit pixel writes [AJR].
 - 0.270: Implemented TMS34020 cvdxyl_b instruction (#12670). Used by Atronic gambling systems [Priit Laes].
 - 0.266: Suppress side effects for debugger reads (#12287) [cam900].
@@ -309515,6 +309473,7 @@ RESOURCES:
 Snap, Title, Icon, machine picture (in "Cabinet" collection), Control Panel, Flyer and Marquee.
 
 WIP:
+- 0.289: Fix array oob access [hap].
 - 0.198: Turned off auto wait states – fixes cassette loading [Michael Zapf].
 - 0.159: Added 'dump for Marine Adventure in tutor.xml [Team Europe].
 - 0.135: Added 'centronics interface [Miodrag Milanović].
@@ -319623,6 +319582,37 @@ ROMSET:
 16777216 bytes in 1 file / 6.08Mb packed
 
 $end
+$info=vibes240a
+$mame
+0.288 [TeamEurope]
+
+Vibes Retro Pocket Gamer 240-in-1 (set 2), <unknown>, 202?
+
+The "Vibes Retro Pocket Gamer 240-in-1" is an affordable standalone handheld console, sold as a nostalgic gadget primarily in B&M Retail stores in the UK and marketed by various European brands (such as Silvergear or QSS) using the same basic hardware. The device is a typical pocket-sized clone (Famiclone) designed to replicate the classic visual and aesthetic style of 8-bit handheld systems from the 1990s.
+
+DRIVER:
+nintendo/nes_vt369_vtunknown.cpp
+
+DRIVER STATUS:
+Emulation: Preliminary
+Color: Good
+Sound: Good
+Graphics: Imperfect
+Save State: Unsupported
+
+SOFTWARE LIST:
+-
+
+RESOURCES:
+No resources available.
+
+WIP:
+- 0.288: TeamEurope added 'Vibes Retro Pocket Gamer 240-in-1 (set 2)' system.
+
+ROMSET:
+16777216 bytes in 1 file / 6.08Mb packed
+
+$end
 $info=vic_pl190
 $mame
 0.238 [Devin Acker]
@@ -320191,7 +320181,7 @@ Save State: Unsupported
 
 WIP:
 - 0.186: Renamed (speakeasyvic20) to (vic20_speakeasy) and description changed to 'PPP Speakeasy VIC-20'.
-- 0.183: Added 'Speakeasy VIC20' device.
+- 0.183: Added (speakeasyvic20) 'Speakeasy VIC20' device.
 
 ROMSET:
 None required.
@@ -326872,6 +326862,7 @@ RESOURCES:
 Snap, Title, Icon, machine picture (in "Cabinet" collection), Control Panel and Marquee.
 
 WIP:
+- 0.289: BugFIX#09478 [Media Support] (wang/wangpc.cpp) wangpc: The system will not boot from floppy disks [AJR].
 - 0.259: Derive clocks from XTAL values [AJR].
 - 0.254: Fix DMA-related regression [AJR].
 - 0.177: Improvements: Fixed interrupt handling - boots to DOS now * Fixed keyboard error on POST. Machine promoted from NOT_WORKING status [Curt Coder].
@@ -334177,7 +334168,7 @@ Save State: Unsupported
 
 WIP:
 - 0.187: Renamed (ym3429) to (ym3439) and description changed to 'YM3439 SSGC'.
-- 0.184: Added 'YM3439' device.
+- 0.184: Added (ym3429) 'YM3439' device.
 
 ROMSET:
 None required.
@@ -338844,6 +338835,7 @@ $drv
 0.36b6 [Dan Boris, Fabio Priuli, Mike Saarna, Robert Tuccitto]
 
 WIP:
+- 0.289: (a7800.xml) Be consistent with other software lists for "Mazy 2" [Vas Crabb].
 - 0.288: Updates and cleanups (#15140): Use bool type for Boolean values, made some variables const, reduced duplication; fixed debugger and save state issues, use BIT helper to extract bits; use a memory view for BIOS ROM overlay, cleaned up code [cam900].
 - 0.286: (a7800.xml) Added 21 working Inufuto homebrews (#14885) [Ectoplasm].
 - 0.278: Update 1on1 comment again [hap]. PCB type and proper rom names for most entries. (a7800.xml) Big documentation update. Corrected ROM label for rampage. More PCB and ROM label updates [Guru]. Redumped and corrected ROM labels for foodfu, karatekau, polepos2u. Added PCB values for some more sets [Guru]. Verified dump and improved documentation for aceoface [Guru].
@@ -339811,6 +339803,7 @@ $drv
 0.156 [R. Belmont]
 
 WIP:
+- 0.289: Use downcast for better diagnostics in debug builds [Vas Crabb]. Add optional shift key mod for models that support it (permanently enabled for apple2ep, as before) [AJR].
 - 0.283: Try to actually show the value that would be read in the debugger for C000 I/O [Vas Crabb]
 - 0.281: Add mirrors and fix polarity of IOUDIS and DHIRES readbacks.  Fixes double lo-res from BASIC on the IIc [R. Belmont].
 - 0.273: Improved Apple IIe/IIc keyboard layout and language switch handling. Added German and Swedish Apple IIe and Apple IIc variants. Improved IIe keyboard layout/language switch handling (#12756) [as-tb-dev]: Added UK variants of Apple IIe Platinum and Apple //c; removed the 40/80 column switch from Apple //c+; added the 40/80 column switch the the Franklin Ace 500 and VTech Laser 128 series; added the keyboard/language selection switch to UK, French and Spanish //e variants and various clones; added the character set switch to the Franklin ACE; added DVORAK mod support to US Apple //e models and VTech Laser 128 series; improved key labels and default assignments, and added notes about keyboards and ROMs; initialize //c+ drive state variables on start. Add DE and SE Apple IIe/IIc models (#13086) [as-tb-dev].
@@ -340823,6 +340816,7 @@ $drv
 0.36b15 [Curt Coder]
 
 WIP:
+- 0.289: BugFIX08584 [Media Support] (commodore/c64.cpp) c64 all versions: Formatting floppy disks is very slow [Curt Coder].
 - 0.269: Demote all .d81 files to not working in 'c64_flop_misc.xml'. QA checkpoint; demote riveraid and pitfall2 from 'c64_cart.xml'. QA games in 'c64_flop_orig.xml' [Angelo Salese].
 - 0.253: BugFIX #05777 [Misc.] (commodore/c64.cpp) c64 all systems: C64 [systemm1] Software disconnect is not implemented [Curt Coder]. Fix CIA1 FLAG handling in 'c64.xml' [Curt Coder]. Added one working item, and removed redundant items in 'c64_cass.xml' [Zo? Blade, The?Ultimate Tape Archive Team].
 - 0.252: Use full country names in descriptions in 'c64_flop_misc.xml' [ArcadeShadow].
@@ -341636,6 +341630,7 @@ $drv
 0.78 [Per Ola Ingvarsson, Tomas Karlsson]
 
 WIP:
+- 0.289: (compis.xml) Demoted various items due to undumped keys or being listed as not working [Vas Crabb].
 - 0.246: Driver placed in the sub-folder "telenova/".
 - 0.222: Added five new dumps in 'compis.xml' [FakeShemp].
 - 0.78: Per Ola Ingvarsson and Tomas Karlsson added compis.cpp driver.
@@ -343449,6 +343444,7 @@ $drv
 0.154 [Robbbert, Anna Wu]
 
 WIP:
+- 0.289: Cleanups: Convert chargen area to a memory view; move cart hookup in memory map; fix game driver type (is a COMPuter not a CONSole) [Angelo Salese].
 - 0.262: Denote clearly missing MCU dump [Angelo Salese].
 - 0.246: Driver placed in the sub-folder "skeleton/".
 - 0.211: BugFIX #07353 [Interface]: hangs when save to cassette [Robbbert].
@@ -343891,6 +343887,7 @@ $drv
 0.282 [David Haywood]
 
 WIP:
+- 0.289: Removed (punij1pk) 'Takara Tomy Punirunes (PUNIRUNZU_MAIN_DICE_V1, pink, Japan)' system.
 - 0.227: David Haywood added tvgames/generalplus_gpl951xx.cpp driver.
 
 $end
@@ -345911,8 +345908,9 @@ $drv
 0.269 [Felipe Corrêa da Silva Sanches]
 
 WIP:
+- 0.289: Generally cleaned up code [Vas Crabb].
 - 0.283: Fix VGA RAM size [Angelo Salese].
-- 0.280: A few minor improvements to kn5000 (#14055). Handle Computer Interface Selection dipswitches without runtime tag lookups. Use set_constant. [Felipe Corrêa da Silva Sanches].
+- 0.280: A few minor improvements to kn5000 (#14055). Handle Computer Interface Selection dipswitches without runtime tag lookups. Use set_constant [Felipe Corrêa da Silva Sanches].
 - 0.269: Felipe Corrêa da Silva Sanches added matsushita/kn5000.cpp driver.
 
 $end
@@ -346152,6 +346150,7 @@ $drv
 0.207 [David Haywood]
 
 WIP:
+- 0.289: (leapfrog_leappad_cart.xml) More consistent transliteration of Japanese dates [Vas Crabb].
 - 0.273: Verified the Cocopad BIOS ROM matches the corresponding Leappad one [David Haywood, TeamEurope]. Added sixteen items (not working) to 'leapfrog_leappad_cart.xml' [David Haywood, TeamEurope, Fujix, Ivan Vangelista].
 - 0.269: Dumped 21 CocoPad cartridges and one LeapPad cartridge (#12626) (added to 'leapfrog_leappad_cart.xml') [David Haywood, TeamEurope]. Fixed a description [Vas Crabb].
 - 0.257: Added placeholders for undumped microcontroller ROM [Sean Riddle, ClawGrip].
@@ -346517,6 +346516,7 @@ $drv
 0.142 [Curt Coder, Ales Dlabac]
 
 WIP:
+- 0.289: Added a side effects check. (m5_cass.xml) Restored WAV dumps of Solar System Forces tapes. The proper raw recordings from Ola Andersson were replaced with cooked dumps with no explanation.  If they work now, they can be promoted again, but I haven't tested them.  If raw tapes don't work, that needs to actually be fixed [Vas Crabb].
 - 0.288: Modernised driver (#14491): Added FD-5 floppies (emulation works but only with ROM hack); updated Sord m5 www links; added fd5 utility disk to software list - not original dump, made from program listings; added support of optional SRAM in Basic-F and Basic-G cartridges. Works only if shortname(softlist) is used; marked 32/64KB RAM expansions EM-5, 64KBI, 64KBF, 64KRX as supported in software list; reenabled and refactored memory banking; added support of E and F block types for cassettes; m5p_brno: Switched to ROM including basic-i; m5p_brno: Reenabled and fixed memory banking; repaired all not working ROMs except one and all cassettes [dlabi]. (m5_cart.xml), (m5_cass.xml), (m5_flop.xml) Remove some angle brackets from publisher metadata [AJR]. (m5_flop.xml) Marked reconstructed disk image as a bad dump [Vas Crabb].
 - 0.284: (m5_cart.xml), (m5_cass.xml): (#14643) Additions and enhancements to Sord M5 cassette and cart software lists: 7 additions to m5_cass (all working); 4 bad dumps replaced with working dumps in m5_cart (Up Up Balloon was not working, other 3 revised dumps did work with 36K on older versions of MAME but not on current versions and should not require additional RAM); all items in m5_cass updated with requirement for BASIC-I or BASIC-G cart, as appropriate; some minor additional tweaks to metadata [paul75s]. (m5_cass.xml) Remove incorrect alternate title for UFO Game (#14655) [paul75s].
 - 0.254: Corrected capitalisation in list names in 'm5_flop.xml' [ArcadeShadow].
@@ -346768,6 +346768,7 @@ $drv
 0.258 [R. Belmont]
 
 WIP:
+- 0.289: Changed default RAM size for maclc575 to a power of 2, also changed lc475 and lc575 to LC040 which is more correct (MAMETesters #9455) [R. Belmont].
 - 0.260: Add LC PDS slots to machines that have them [R. Belmont].
 - 0.258: R. Belmont added apple/macquadra605.cpp driver.
 
@@ -347933,6 +347934,7 @@ $drv
 0.283 [R. Belmont]
 
 WIP:
+- 0.289: Suppress side effects for debugger reads; don't pretend switch matrix is a multiplexer [Vas Crabb].
 - 0.284: Correct CPU RAM and ROM mapping, invert screen colors, stub out the record control register, and add notes [R. Belmont]. Add layout and hook up drum pads [R. Belmont, Guru]. Put a valid ATAPI device on the ATA bus to stop the long delay on startup. Only a Zip250 is actually supported by the firmware [R. Belmont].
 - 0.283: R. Belmont added akai\mpc2000.cpp driver.
 
@@ -347942,6 +347944,7 @@ $drv
 0.201 [R. Belmont]
 
 WIP:
+- 0.289: mpc3000.cpp, skeleton/softbox.cpp: Suppress side effects for debugger reads; don't pretend switch matrix is a multiplexer [Vas Crabb].
 - 0.284: Fixed variation slider to be read by the subcpu [R. Belmont].
 - 0.282: Updates. Corrected issues with the input matrix; corrected LCD display colors based on photos of hardware; corrected swapped floppy density readback, HD disks now format as 1.44MB; added drum pads, data entry dial, and variation adjuster; added clickable layout [R. Belmont, Guru]. Fix copypasta'd serial IRQ merging. Fix NVRAM hookup and sync up save states. Hooked up subcpu/maincpu comms and front panel key matrix [R. Belmont]. Reordered headers to spec, added software list, and updated the layout [R. Belmont, Guru].
 - 0.281: Correct V53 clock [AJR].
@@ -347955,6 +347958,7 @@ $drv
 0.230 [AJR]
 
 WIP:
+- 0.289: Suppress side effects for debugger reads; don't pretend switch matrix is a multiplexer [Vas Crabb].
 - 0.288: Updates: Added a clone supporting the aftermarket SCSI option and 2.14 BIOS; fixed a few mis-routed buttons and LEDs in the layout; upgraded from MACHINE_NO_SOUND to MACHINE_IMPERFECT_SOUND; added a software list with a good chunk of the factory disks [R. Belmont].
 - 0.284: Fixed labeling of Enter key [R. Belmont].
 - 0.246: Driver placed in the sub-folder "akai/".
@@ -348544,6 +348548,7 @@ $drv
 0.34b1 [Shin Emu Keikaku team, Allard van der Bas, Bryan McPhail, Fuzz]
 
 WIP:
+- 0.289: Merged neogeo project with snk project [Vas Crabb].
 - 0.288: (neogeo.xml) Added 5 working items (#15191) [ArcadeShadow].
 - 0.284: (neogeo.xml) Added 1 working item (#14654) [ArcadeShadow].  Note that Korean Breakers 2 cartridges are the same [Vas Crabb].
 - 0.283: (neogeo.xml) Added 2 working items (#14553). Bang Bang Busters 2 (demo) [PixelHeart]. Double Dragon One (beta 3, 20250916) [OzzyOuzo, ArcadeShadow].
@@ -348596,7 +348601,7 @@ $drv
 0.1 [Brad Oliver, Fabio Priuli]
 
 WIP:
-- 0.288: 
+- 0.288:
 - 0.287: (nes.xml) Added two partially working prototypes and two working clones (#15036) [ICEknigh7].
 - 0.282: (nes.xml) Use uppercase for filters like most consoles, avoid unnecessarily replacing device [Vas Crabb].
 - 0.280: Consolidate driver in single file [AJR].
@@ -348765,6 +348770,7 @@ $drv
 0.221 [Patrick Mackinlay]
 
 WIP:
+- 0.289: Implement NWS-1250 driver (#15364) [Brice Onken].
 - 0.281: Add small note about mouse MCU type (#14123) [ClawGrip].
 - 0.280: Add (not working) NWS-1250 (#13984) [ClawGrip].
 - 0.268: (sony_news.xml) Added proper compatibility flags for different generations [Vas Crabb].
@@ -349564,6 +349570,7 @@ $drv
 0.236 [Angelo Salese, Carl]
 
 WIP:
+- 0.289: Remove SB16 left-over lambda [Angelo Salese].
 - 0.287: Implement PC-9821 PEGC Planar Mode (#15001) [BlueRain-debug].
 - 0.284: Use fdc_2hd_2dd_ctrl fns as intended [Angelo Salese].
 - 0.283: Implement PEGC VRAM view. BREAKING CHANGE: RAM options are now using M notation in place of K on i386+ machines, like 4M in place of 3712K. Read DSW2 and DSW3 from SDIP for pc9821ce. Fix pc9821ce IDE loading [Angelo Salese].
@@ -349688,7 +349695,7 @@ $drv
 0.286 [Angelo Salese]
 
 WIP:
-- 0.288: Hookup basic Apollo Pro Northbridge override. Kickoff an Apollo Pro + 596 chipset. Case implementation of a Winbond W83877TF Super I/O. Bump ga6vx to VT82C596 southbridge. Allows booting on non-f1a BIOSes, allows installing win98se [Angelo Salese]. 
+- 0.288: Hookup basic Apollo Pro Northbridge override. Kickoff an Apollo Pro + 596 chipset. Case implementation of a Winbond W83877TF Super I/O. Bump ga6vx to VT82C596 southbridge. Allows booting on non-f1a BIOSes, allows installing win98se [Angelo Salese].
 - 0.287: Fix PCI config space for slots; fix AGP card ID [Angelo Salese].
 - 0.286: Angelo Salese added pcipc_via.cpp driver.
 
@@ -351626,6 +351633,7 @@ $drv
 0.63 [David Haywood, Angelo Salese, Olivier Galibert, Mariusz Wojcieszek, R. Belmont]
 
 WIP:
+- 0.289: (sat_cart.xml) Demote ar to supported=no, test1f to supported=partial [Angelo Salese].
 - 0.287: (saturn.xml) Added two prototypes (#15048) [David 'Foxhack' Silva].
 - 0.286: (saturn.xml) Substitute iso-mp3 sources images with redump.org versions. Update QA, fix winpost parent-clone relationships. (saturn_v.cpp) Fix error: expression cannot be used as a function [Angelo Salese].
 - 0.283: Cleanup function and variable namings. saturn_v.cpp: Port over QA notes from #8919 [Angelo Salese].
@@ -352064,6 +352072,7 @@ $drv
 The chess engine is Kaare Danielsen's Enterprise program. It's the 16KB 'sequel' to LogiChess used in Enterprise "S" (emulated in saitek/companion2.cpp).
 
 WIP:
+- 0.289: Move LCD hardware to its own device [hap].
 - 0.261: hap added cxg/senterprise.cpp driver.
 
 $end
@@ -352386,6 +352395,7 @@ $drv
 0.148u5 [Curt Coder, Mike Naberezny]
 
 WIP:
+- 0.289: Suppress side effects for debugger reads [Vas Crabb].
 - 0.260: Consolidate drivers in one source file each [AJR].
 - 0.246: Driver placed in the sub-folder "skeleton/".
 - 0.155: Added BIOS revision 8/9/81 [Nils Eilers, Mike Naberezny].
@@ -356178,6 +356188,7 @@ $drv
 0.149u2 [Robbbert, Vas Crabb]
 
 WIP:
+- 0.289: Set raw screen parameters. This gives the correct resolution. The actual horizontal total should be 910, as it switches to 9 clocks per character during horizontal blanking, but I don't think our 8275 CRTC device can deal with that [Vas Crabb].
 - 0.279: Improved save state support and cleaned up code (#13305) [Naoki Saito].
 - 0.260: Consolidate drivers in one source file each [AJR].
 - 0.246: Driver placed in the sub-folder "skeleton/".
