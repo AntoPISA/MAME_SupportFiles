@@ -1,4 +1,4 @@
-﻿#    MESSINFO.DAT v0.289    Latest update:    Aug 24, 2026
+﻿#    MESSINFO.DAT v0.289    Latest update:    Aug 25, 2026
 #                            Project started: May  8, 2011
 #
 #    Author: Antonio Paradossi "AntoPISA" from Pisa (Tuscany > Italy > Europe > Earth > Solar System > Universe)
@@ -6484,6 +6484,7 @@ Graphics: Good
 Save State: Unsupported
 
 WIP:
+- 0.289: Change default BIOS to older revision and note why [AJR].
 - 0.287: AJR added 'Apple II Serial Interface Card' device.
 
 ROMSET:
@@ -15551,6 +15552,7 @@ Graphics: Good
 Save State: Unsupported
 
 WIP:
+- 0.289: Disassemble IDLE instruction (not emulated yet) [AJR].
 - 0.285: Corrected some tabulaton that had rotted [Vas Crabb].
 - 0.260: Fix one operation. Fix a couple of disassembly regressions [AJR].
 - 0.259: Fix one operation. Fix a couple of disassembly regressions. Fix more comments in disassembler. Code cleanup. Use BIT helpers for unpacking and disassembling opcodes. Use count_leading_zeros_32 for "detect exponent" operations rather than shift loops. Convert comments to C++ single line style. Convert some constant macros to unscoped enums. Deobfuscate bit manipulation in the "mode control" instruction [AJR].
@@ -23418,6 +23420,7 @@ RESOURCES:
 Snap, Title, Icon, machine picture (in "Cabinet" collection), Control Panel, Flyer, pdf Manual, Marquee and PCB.
 
 WIP:
+- 0.289: Followup #15626: add comments where hardware behavior differs from documentation (#15628) [arekkusu42].
 - 0.288: Implement open-bus Mega II cycles, which breaks Lancaster-style vaporlock reading the UNUSED8, matching hardware; add 50Hz support; prevent various debugger side-effects; fix slot reads disabling Zip acceleration; make C0xx I/O visible to the debugger. More accurate address map (#15335): Revisit 2fb9b7c, restore direct r/w of expansion RAM; fix reads of unpopulated RAM/ROM banks; implement expansion RAM ghosting, per Hardware Ref [arekkusu42].
 - 0.287: Fix aux text page2 shadowing to work like page1 (#15124) [arekkusu42].
 - 0.286: Tidy up (#14968): After 3292c78, uKeyboardC010 is bit7 only .: not needed in C011-1F; after 410a3db, final C00X handling is redundant; eliminate the screen_update trampoline; no functional change [arekkusu42].
@@ -32406,6 +32409,7 @@ RESOURCES:
 Snap, Title, Icon, machine picture (in "Cabinet" collection), Flyer and pdf Manual.
 
 WIP:
+- 0.289: subcpu uses the same internal ROM as maincpu; hook up subcpu and keys (#15701) [Devin Acker].
 - 0.191: Added roms, notes, and flesh [Robbbert].
 - 0.179: Arashikage and R. Belmont added 'Akai AX80' system.
 
@@ -44689,6 +44693,7 @@ RESOURCES:
 Snap, Title, Icon, machine picture (in "Cabinet" collection) and pdf Manual.
 
 WIP:
+- 0.289: Generate a fake internal ROM [AJR].
 - 0.225: Corrado Tomaselli added 'Sony Trinitron Color Video Monitor BVM-20F1E' system.
 
 ROMSET:
@@ -47281,6 +47286,7 @@ Graphics: Good
 Save State: Unsupported
 
 WIP:
+- 0.289: Suppress side effects on reads [Angelo Salese].
 - 0.145u2: Added 'C64 Epyx Fast Load cartridge' device.
 
 ROMSET:
@@ -54033,6 +54039,7 @@ Graphics: Good
 Save State: Unsupported
 
 WIP:
+- 0.289: Implemented bandlimited oscillator sync (#15427). Minor comment fixes [m1macrophage]. 
 - 0.288: m1macrophage added 'CEM3340 Voltage Controlled Oscillator' device.
 
 $end
@@ -55940,6 +55947,7 @@ Graphics: Good
 Save State: Unsupported
 
 WIP:
+- 0.289: Fix sound output channel (#15695). Corrected stream.put arguments for sound output, to allocated stream [BensonRSI].
 - 0.149u1: Added 'Channel F Sound' device.
 
 ROMSET:
@@ -56512,7 +56520,7 @@ RESOURCES:
 Snap, Title and machine picture (in "Cabinet" collection).
 
 WIP:
-- 0.285: Added missing credits (#14734) [holub].
+- 0.285: Added missing credits (#14734) [Andrei I. Holub].
 - 0.267: Andrew Owen and Andrei I. Holub added 'Chloe Corporation Chloe 280SE' system.
 
 ROMSET:
@@ -65465,6 +65473,7 @@ Graphics: Good
 Save State: Unsupported
 
 WIP:
+- 0.289: Reset keyboard controller command d1 write status after the data write. Fixes MT5547. Without this unrelated keyboard controller data writes could end up being blocked [Dirk Best].
 - 0.286: Bulk replace uintN_t to uN [Angelo Salese].
 - 0.184: Save state fixes for i386/pc_vga/cs4031: Save cs4031 emulated A20 state, additional i386 attribute registers/flags, and VGA palette configuration. Fixed broken VGA port reads on state load. Fixed enum range check in i386 [moralrecordings].
 - 0.149u1: Added 'CS4031' device.
@@ -77602,6 +77611,7 @@ RESOURCES:
 Snap, Title, Icon, machine picture (in "Cabinet" collection) and pdf Manual.
 
 WIP:
+- 0.289: Preliminary ADSP hookup [AJR].
 - 0.222: DBWBP added 'Novation Drum Station' system.
 
 ROMSET:
@@ -83471,6 +83481,7 @@ RESOURCES:
 Snap and Title.
 
 WIP:
+- 0.289: Identify one CPU architecture [AJR].
 - 0.286: TeamEurope added 'Easy Karaoke Karaoke Screen Party (EKS-515)' system.
 
 ROMSET:
@@ -88612,6 +88623,7 @@ Graphics: Good
 Save State: Unsupported
 
 WIP:
+- 0.289: Inline implies static linkage - no need for both. Also use constexpr (which implies inline) [Vas Crabb].
 - 0.286: Fix opcodes in ES5510 (#14979):ABS uses operand B; CMP runs even when skippable and only updates flags (no dst write); SIGREG bit 22 drives mul shift; CCR/CMR readback encoding; ABS should update zero flag; ASL2/ASL8 overflow/carry/flag logic [Giulio Zausa].
 - 0.272: Removed hack that never could possibly have worked, comparing a uint8_t to a 24-bit constant [R. Belmont].
 - 0.256: Changed description to 'Ensoniq ES5510'.
@@ -88909,7 +88921,7 @@ ROMSET:
 None required.
 
 $end
-$info=esq2x40
+$info=esq2x40_esq1
 $mame
 0.149u1
 
@@ -88926,7 +88938,8 @@ Graphics: Good
 Save State: Unsupported
 
 WIP:
-- 0.149u1: Added 'Ensoniq 2x40 VFD' device.
+- 0.289: Renamed (esq2x40) to (esq2x40_esq1).
+- 0.149u1: Added (esq2x40) 'Ensoniq 2x40 VFD' device.
 
 ROMSET:
 None required.
@@ -89059,7 +89072,7 @@ ROMSET:
 None required.
 
 $end
-$info=esqpanel240
+$info=esqpanel240_esq1
 $mame
 0.149u1
 
@@ -89076,8 +89089,9 @@ Graphics: Good
 Save State: Unsupported
 
 WIP:
+- 0.289: Renamed (esqpanel240) to (esqpanel240_esq1).
 - 0.284: Use IPT_KEYPAD for front-panel button i/o ports,instead of IPT_KEYBOARD. Change VFX-family buttons from IPT_KEYBOARD to IPT_KEYPAD (#14565). In VFX family keyboards, don't use the KEYBOARD_HACK keybooard input, because all front panel buttons are available on the default layout [Christian Brunschen].
-- 0.149u1: Added 'Ensoniq front panel with 2x40 VFD' device.
+- 0.149u1: Added (esqpanel240) 'Ensoniq front panel with 2x40 VFD' device.
 
 ROMSET:
 None required.
@@ -103198,7 +103212,7 @@ ROMSET:
 350896 bytes in 2 files / 122.84Kb packed
 
 $end
-$info=gcm394
+$info=gpl16250va
 $mame
 0.209
 
@@ -103215,8 +103229,9 @@ Graphics: Good
 Save State: Unsupported
 
 WIP:
+- 0.289: Renamed (gcm394) to (gpl16250va).
 - 0.222: Chaged description to 'GeneralPlus GPL16250 System-on-a-Chip'. GPL16250: Added support for double-height tilemaps and improved other functionality used by jak_pf. Adjusted DMA and drawing behaviour. Added notes for getting tkmag220 to show something, and corrected some logging masks. Added I/O ports, and identified tkmag220 as a bad dump. Some small GPL16250 tweaks/hacks allowing tkmag220 and lazertag to show sprites with expected colours. Prepared SunPlus video rendering code for sharing between GPL16250 SoCs. Removed some palette bank hacks from GPL16250 video rendering code [David Haywood].
-- 0.209: Added 'SunPlus GCM394 System-on-a-Chip' device.
+- 0.209: Added (gcm394) 'SunPlus GCM394 System-on-a-Chip' device.
 
 ROMSET:
 None required.
@@ -106342,7 +106357,7 @@ Graphics: Good
 Save State: Unsupported
 
 WIP:
-- 0.286: (glukrs.h) Fixed region size (#14955) [holub].
+- 0.286: (glukrs.h) Fixed region size (#14955) [Andrei I. Holub].
 - 0.280: Added expected clock value validation (#13944) [Andrei I. Holub].
 - 0.279: Replaced custom RTC with verified KR512VI1/MC146818 (#13932). Updated clock to schematics defined (#13942) [Andrei I. Holub].
 - 0.239: Andrei I. Holub added 'Mr Gluk Reset Service' device.
@@ -125497,6 +125512,7 @@ RESOURCES:
 Snap, Title and Icon.
 
 WIP:
+- 0.289: Drive the screen from the MC6845 CRTC (#15419). Replace the placeholder tilemap renderer with an MC6845_UPDATE_ROW callback driven by the CRTC at ports 0x08/0x09, so the geometry and column count come from the CRTC registers the boot ROM programs. Also made some adjustments to the color palette so that it better matches photos of the real device [Felipe Corrêa da Silva Sanches].
 - 0.163: Felipe Corrêa da Silva Sanches added 'a skeleton driver of Itautec I-7000' system.
 
 ROMSET:
@@ -129368,6 +129384,7 @@ RESOURCES:
 Snap and Title.
 
 WIP:
+- 0.289: Implemented the Z80 I/O processor and SCSI subsystem (#15531). Implemented the host<->IOP mailbox at 0xa000a0, the MiniBus main-memory bridge, the NCR5385 wiring with the DREQ-driven 74LS646 byte/word DMA path, the completion interrupt back to the NS32202, and the MM58274C real-time clock [David Rand].
 - 0.264: Add SCSI controller [Patrick Mackinlay].
 - 0.259: smj_crash added 'National Semiconductor ICM-3216' system.
 
@@ -134900,6 +134917,7 @@ Graphics: Good
 Save State: Unsupported
 
 WIP:
+- 0.289: Convert to remap fn [Angelo Salese].
 - 0.145u2: Added 'IDE Fixed Drive Adapter' device.
 
 ROMSET:
@@ -146079,7 +146097,7 @@ Graphics: Good
 Save State: Unsupported
 
 WIP:
-- 0.286: Added constant-type argument (#14922) [holub].
+- 0.286: Added constant-type argument (#14922) [Andrei I. Holub].
 - 0.277: Improved save state support (#13303) [Andrei I. Holub].
 - 0.274: Improved VAX-11 code decoder in user space (#13107) [Andrei I. Holub].
 - 0.270: Andrei I. Holub added 'KL1839VM1' device.
@@ -149070,8 +149088,9 @@ Graphics: Good
 Save State: Unsupported
 
 WIP:
-- 0.288: Fixed palette index with offset wraps around (#15149) [holub]. Fixed issue with scroll edge case [David Haywood].
-- 0.286: De-duplicate drawing loop [Vas Crabb]. Reimplemented layer2 belnding modes with support of priority pen (#14740) [holub].
+- 0.289: Latched pixels read between screen updates (#15437) [Andrei I. Holub].
+- 0.288: Fixed palette index with offset wraps around (#15149) [Andrei I. Holub]. Fixed issue with scroll edge case [David Haywood].
+- 0.286: De-duplicate drawing loop [Vas Crabb]. Reimplemented layer2 belnding modes with support of priority pen (#14740) [Andrei I. Holub].
 - 0.282: Mixing layer2 with transparent color is transparent (#14224) [Andrei I. Holub].
 - 0.267: Andrei I. Holub added 'Spectrum Next Layer2' device.
 
@@ -150823,6 +150842,7 @@ Graphics: Good
 Save State: Unsupported
 
 WIP:
+- 0.289: Make default INT and ROM address to be usable out-of-box [Angelo Salese].
 - 0.287: Fix SCSI crash regression [Angelo Salese].
 - 0.284: Angelo Salese added 'Logitec LHA-201/20B SCSI interface' device.
 
@@ -157216,7 +157236,7 @@ Graphics: Good
 Save State: Unsupported
 
 WIP:
-- 0.289: Update bftst to reluctant reads when fetching data from memory (#15365) [Brice Onken].
+- 0.289: Update bftst to reluctant reads when fetching data from memory (#15365) [Brice Onken]. m68000.h: Use std::countr_zero [AJR].
 - 0.286: Fix the 68LC040 so it actually has 68040 opcodes [Doug Brown, R. Belmont].
 - 0.283: Add basic state viewer for Coldfire [Angelo Salese].
 - 0.279: Fix disassembly of CAS [Doug Brown, R. Belmont].
@@ -181744,6 +181764,7 @@ Graphics: Good
 Save State: Unsupported
 
 WIP:
+- 0.289: Fixed non-expanded multicolor sprite collision detection. Fixes Space Taxi on c64 [Curt Coder].
 - 0.186: Changed description to 'MOS 6566 VIC-II'.
 - 0.149u1: Added 'MOS6566' device.
 
@@ -218520,6 +218541,7 @@ Graphics: Good
 Save State: Unsupported
 
 WIP:
+- 0.289: Added a helper for 6-bit BGR palettes [cam900].
 - 0.278: Added xGRB format [Ivan Vangelista].
 - 0.153: Added 'palette' device.
 
@@ -222448,6 +222470,7 @@ SOFTWARE LIST:
 pc8801_cdrom.xml
 
 WIP:
+- 0.289: Bulk replace SASI -> SCSI wording [Angelo Salese].
 - 0.284: Latch a form of CD motor sense. Fix pc8801_flop:dslayed to fall back to FM mode when no disc is in tray [Angelo Salese].
 - 0.283: Pinpoint DMA enable bit. Just ack the bytes on data ports. Fix mirrors hang at startup. Fix SCSI hookup, translate PCE CD implementation in NSCSI device as PC8801-30. Allow SWs booting to some extent [Angelo Salese].
 - 0.243: Angelo Salese added 'NEC PC8801-31 CD-ROM I/F' device.
@@ -222822,6 +222845,7 @@ Graphics: Good
 Save State: Unsupported
 
 WIP:
+- 0.289: VD support. Implement CLS [Angelo Salese].
 - 0.251: Angelo Salese added 'NEC PC88VA Super Graphic Processor' device.
 
 ROMSET:
@@ -229005,7 +229029,7 @@ RESOURCES:
 Snap and Title.
 
 WIP:
-- 0.286: Cleaned up inherited unused driver's Configuration (#14798) [holub].
+- 0.286: Cleaned up inherited unused driver's Configuration (#14798) [Andrei I. Holub].
 - 0.249: Andrei I. Holub added 'NedoPC ZX Evolution: BASECONF' system.
 
 ROMSET:
@@ -257540,7 +257564,7 @@ ROMSET:
 None required.
 
 $end
-$info=sa1403d
+$info=nscsi_sa1403d
 $mame
 0.147u4
 
@@ -257557,7 +257581,8 @@ Graphics: Good
 Save State: Unsupported
 
 WIP:
-- 0.147u4: Added 'Shugart SA1403D' device.
+- 0.289: Renamed (sa1403d) to (nscsi_sa1403d).
+- 0.147u4: Added (sa1403d) 'Shugart SA1403D' device.
 
 ROMSET:
 None required.
@@ -260174,6 +260199,7 @@ Graphics: Good
 Save State: Unsupported
 
 WIP:
+- 0.289: Concile with the new CT1741 DSP core. Convert CT1741 from ISA variant as standalone device [Angelo Salese].
 - 0.284: Subscribe to ISA remap. Round up cnt reads to actual raw writes. Move OPL3 ranges in host_io map. Mode bit 1 is for silence, fix fwmigolf card detection. Fix MT09316. Convert IRQ triggers to input_merger. Ack IRQ16 too when reading 0x22e from host side [Angelo Salese].
 - 0.283: Silence spammy ports [Angelo Salese].
 - 0.273: Halve DMA length if Stereo mode is selected. Convert fifo size checks to a named entity [Angelo Salese].
@@ -260200,6 +260226,7 @@ Graphics: Good
 Save State: Unsupported
 
 WIP:
+- 0.289: Hookup joy port [Angelo Salese].
 - 0.272: AJR added 'Creative Sound Blaster 16 CT-2720' device.
 
 ROMSET:
@@ -268276,6 +268303,7 @@ Graphics: Good
 Save State: Unsupported
 
 WIP:
+- 0.289: DIVU OVF/OVFIE are full r/w flags; fix MT09485 [Angelo Salese].
 - 0.283: Fix BCR1/BCR2 and VCRDIV accessing [Angelo Salese].
 - 0.259: Renamed (sh2) to (sh2_7604) and description changed to 'Hitachi SH-2 (SH7604)'. Refactored SH-2 refactored code to separate onboard peripherals from CPU core [Windy Fairy].
 - 0.248: Add exception hook calls [AJR].
@@ -270219,6 +270247,7 @@ RESOURCES:
 Snap and Title.
 
 WIP:
+- 0.289: Improved accuracy (#15700): Corrected the range of the pitch wheel; added VCF capacitor jitter. Corrected the range of VCO capacitor jitter; increased the overall audio volume; added some key bindings to make it possible to play chords with the computer keyboard; updated the NVRAM, since change first two changes require a tuning and pitch wheel centering; added a warning in the layout if outdated NVRAM content is detected [m1macrophage].
 - 0.283: Changed description to 'Six-Trak (Model 610) Rev B/C'.
 - 0.281: DBWBP added 'Sequential Circuits Six-Trak (Model 610)' system.
 
@@ -276065,7 +276094,7 @@ ROMSET:
 None required.
 
 $end
-$info=sonicwtc
+$info=atw_soni
 $mame
 0.286 [TeamEurope]
 
@@ -276090,7 +276119,8 @@ RESOURCES:
 Snap and Title.
 
 WIP:
-- 0.286: TeamEurope added 'Accutime Sonic the Hedgehog Kids Smart Watch' system.
+- 0.289: Renamed (sonicwtc) to (atw_soni).
+- 0.286: TeamEurope added (sonicwtc) 'Accutime Sonic the Hedgehog Kids Smart Watch' system.
 
 ROMSET:
 16777216 bytes in 1 file / 6.58Mb packed
@@ -276113,6 +276143,7 @@ Graphics: Good
 Save State: Unsupported
 
 WIP:
+- 0.289: Fix decoding of BCLR and BSET. Add WDT register stub [AJR].
 - 0.288: Add preliminary execution core; fix order of calculations for carry flag in ALU operations; improve flags display; add ALU overflow test [AJR].
 - 0.282: AJR added 'Sonix 16-bit DSP' device.
 
@@ -277437,7 +277468,8 @@ Graphics: Good
 Save State: Unsupported
 
 WIP:
-- 0.286: Optimized execution for sequential NOPs (#14754) [holub].
+- 0.289: NOP uses ula coordinates for base offset (#15388). Added disassembler (#15403) [Andrei I. Holub].
+- 0.286: Optimized execution for sequential NOPs (#14754) [Andrei I. Holub].
 - 0.282: Improved logging (#14248) [Andrei I. Holub].
 - 0.267: Andrei I. Holub added 'Spectrum Next Copper' device.
 
@@ -277505,7 +277537,8 @@ Graphics: Good
 Save State: Unsupported
 
 WIP:
-- 0.288: Fixed counter state returning natural value in ZXN mode (#15179) [holub].
+- 0.289: Forced Search mode to Transfer instead (#15528). Added undocumented logging [Andrei I. Holub].
+- 0.288: Fixed counter state returning natural value in ZXN mode (#15179) [Andrei I. Holub].
 - 0.282: Implemented prescaler (#14296). Fixed prescaler reg init (#14260) [Andrei I. Holub]. Tidy [Vas Crabb].
 - 0.279: Added prescaler register (#13958) [Andrei I. Holub].
 - 0.267: Andrei I. Holub added 'Spectrum Next DMA' device.
@@ -277539,7 +277572,7 @@ None required.
 $end
 $info=specnext_ks1
 $mame
-0.287 [holub]
+0.287 [Andrei I. Holub]
 
 ZX Spectrum Next: KS1, SpecNext Ltd., Victor Trucco, Fabio Belavenuto, 2020
 
@@ -277570,7 +277603,7 @@ None required.
 $end
 $info=specnext_ks2
 $mame
-0.287 [holub]
+0.287 [Andrei I. Holub]
 
 ZX Spectrum Next: KS2, SpecNext Ltd., Victor Trucco, Fabio Belavenuto, 2023
 
@@ -277601,7 +277634,7 @@ None required.
 $end
 $info=specnext_ks3
 $mame
-0.287 [holub]
+0.287 [Andrei I. Holub]
 
 ZX Spectrum Next: KS3, SpecNext Ltd., Victor Trucco, Fabio Belavenuto, 2025
 
@@ -277655,7 +277688,7 @@ None required.
 $end
 $info=specnext_uart
 $mame
-0.287 [holub]
+0.287 [Andrei I. Holub]
 
 Spectrum Next UART, <unknown>, ????
 
@@ -279854,7 +279887,7 @@ Graphics: Good
 Save State: Unsupported
 
 WIP:
-- 0.285: Added configurable read/seek delays (#14763) [holub].
+- 0.285: Added configurable read/seek delays (#14763) [Andrei I. Holub].
 - 0.271: Vas Crabb added 'SD Card (SPI interface)' device.
 
 ROMSET:
@@ -280345,7 +280378,7 @@ RESOURCES:
 Snap, Title and PCB.
 
 WIP:
-- 0.285: Added missing credits (#14734) [holub].
+- 0.285: Added missing credits (#14734) [Andrei I. Holub].
 - 0.275: Add onboard media devices before adding slots to make media options less unstable (#13373). Also adjusted default mouse axis sensitivity [Andrei I. Holub].
 - 0.255: Andrei I. Holub added 'Peters Plus, Ivan Mak Sprinter Sp2000' system.
 
@@ -280370,6 +280403,7 @@ Graphics: Good
 Save State: Unsupported
 
 WIP:
+- 0.289: Fixed memory corruption (#15509) [Andrei I. Holub].
 - 0.283: Detected sprites collision (#14409) [Andrei I. Holub].
 - 0.282: Fixed 4/5 sprite's descriptor (#14242). Prematured sprites collision detection (#14386) [Andrei I. Holub].
 - 0.267: Andrei I. Holub added 'Spectrum Next Sprites' device.
@@ -298889,7 +298923,7 @@ Graphics: Good
 Save State: Unsupported
 
 WIP:
-- 0.288: Better support edge case where tilemap or data wraps around available region (#15216) [holub].
+- 0.288: Better support edge case where tilemap or data wraps around available region (#15216) [Andrei I. Holub].
 - 0.283: Support global transparent color for tiles mode1 [Andrei I. Holub].
 - 0.282: Reordered tiles layers. Fixed tiles again (#14249) [Andrei I. Holub].
 - 0.267: Andrei I. Holub added 'Spectrum Next Tiles' device.
@@ -298923,6 +298957,7 @@ RESOURCES:
 Snap, Title, Icon, machine picture (in "Cabinet" collection) and PCB.
 
 WIP:
+- 0.289: Add HFE floppy format [AJR].
 - 0.271: Use raw parameters for screen. Updates: Replace generic keyboard emulation with CDP1802-based keyboard. Hook up RS-232 port to other Z180 ASCI channel. Enable floppy sounds. Eliminate tag macro [AJR].
 - 0.263: Add expansion bus support and AY card [Marko Solajic, Miodrag Milanović]. Expansion should be empty by deafault [Miodrag Milanović].
 - 0.245: Hookup serial keyboard [Miodrag Milanović].
@@ -312074,7 +312109,7 @@ Graphics: Good
 Save State: Unsupported
 
 WIP:
-- 0.286: Allowed border to respect priority and draw separatly from background below the main screen (#14927) [holub].
+- 0.286: Allowed border to respect priority and draw separatly from background below the main screen (#14927) [Andrei I. Holub].
 - 0.283: Fixed alignment optimization [Andrei I. Holub].
 - 0.282: Improved ULA mode to support half-pixel rendering [Andrei I. Holub].
 - 0.267: Andrei I. Holub added 'Spectrum ULA Next' device.
@@ -312100,7 +312135,7 @@ Graphics: Good
 Save State: Unsupported
 
 WIP:
-- 0.286: Allowed border to respect priority and draw separatly from background below the main screen (#14927) [holub].
+- 0.286: Allowed border to respect priority and draw separatly from background below the main screen (#14927) [Andrei I. Holub].
 - 0.283: Fixed alignment optimization [Andrei I. Holub].
 - 0.282: Improved ULA mode to support half-pixel rendering [Andrei I. Holub].
 - 0.267: Andrei I. Holub added 'Spectrum ULA+' device.
@@ -313350,6 +313385,7 @@ Graphics: Good
 Save State: Unsupported
 
 WIP:
+- 0.289: Reset status on set interrupt mask ME low. Fix pc8801:laptick garbage text layer display [Angelo Salese].
 - 0.251: Skip lines also skip strips, fix sorcer (pc8801) text layer not syncing drawing [Angelo Salese].
 - 0.236: Consider an attribute end of 0 equal to max size, fixes starfire. Convert AT1/AT0/SC to an aggregate variable. Convert attribute fetch to be a client delegate. Fix last value of attribute row (7narabe), fix graphic mode when in width 40 (15puzzle). Fix scrolling glitch when unthrottled. Implement bulk of attribute fields. RVV is definitely a global reverse rather than acting on palette for PC8001, document flgworld attribute weirdness (double somersault). Fix olyboss compile and crashing, add rvv signal [Angelo Salese].
 - 0.186: Changed description to 'NEC uPD3301'.
@@ -313932,6 +313968,7 @@ Graphics: Good
 Save State: Unsupported
 
 WIP:
+- 0.289: Fix default DRQ behavior during write/scan (#15543). Standard uPD765-style FDCs should default to generating one DRQ per byte for write/scan commands rather than behaving like they have the 82072-style FIFO [Devin Acker]. Don't set side bit in st0 before a seek. Fix formatting. Make sure ST0 side bit it set to the last side actually accessed [cracyc].
 - 0.287: Let the controller idle during soft reset [Curt Coder].
 - 0.284: Add support for machines that have non-standard TS (two-sided) line hookups [R. Belmont].
 - 0.282: upd72069 data rate control [cracyc].
@@ -313974,6 +314011,7 @@ Graphics: Good
 Save State: Unsupported
 
 WIP:
+- 0.289: Fix default DRQ behavior during write/scan (#15543). Standard uPD765-style FDCs should default to generating one DRQ per byte for write/scan commands rather than behaving like they have the 82072-style FIFO [Devin Acker]. Don't set side bit in st0 before a seek. Fix formatting. Make sure ST0 side bit it set to the last side actually accessed [cracyc].
 - 0.287: Let the controller idle during soft reset [Curt Coder].
 - 0.284: Add support for machines that have non-standard TS (two-sided) line hookups [R. Belmont].
 - 0.282: upd72069 data rate control [cracyc].
@@ -319356,7 +319394,8 @@ RESOURCES:
 Snap and Title.
 
 WIP:
-- 0.255: Improved list description in 'vgmplay.xml' [ArcadeShadow].
+- 0.289: Fix OKI clock regression [hap].
+- 0.255: (vgmplay.xml) Improved list description [ArcadeShadow].
 - 0.253: Workaround for 7759 md pin write [hap].
 - 0.202: Updates: Added support for Sega 32X sound. Added support for Y8950, YM2608, YM2610 and YM2612 sample playback. Added support for C6280, SN76496 and YM2203 sample playback. Automatically enable NES APU and Sega 32X channels in bad rips missing the enable commands. Assume default header size if header size read from file is invalid. Fixed off-by-one error in bounds check on PCM write [smf].
 - 0.201: Added 'X1-010 support. Fixed C6280 and ES5503 addresses [cam900]. Added software list support. Re-initialise on loading a new track. Added C140, ES5503, SAA1099, SCSP, VSU, WonderSwan audio, Y8950, YM2610, YMF262, YMF278B and uPD7759 support. Fixed K054539 and YM2610 support. Added clock change support to ES5503, ES5506, SAA1099, uPD7756/uPD7759, and Virtual Boy sound. Added support for Oki M6258 data streams and clock/divider changes [smf]. Added software list to including titles from all major packagers (VGMRips, SMSPower, and Project2612) [Tafoid].
@@ -327363,6 +327402,7 @@ Graphics: Good
 Save State: Unsupported
 
 WIP:
+- 0.289: Disable verbose logging by default (#15431) [David Rand].
 - 0.207: Dirk Best added 'Western Digital WD1010-05' device.
 
 ROMSET:
@@ -334534,6 +334574,7 @@ RESOURCES:
 Snap and Title.
 
 WIP:
+- 0.289: Map more ROM to pass a checksum test [AJR].
 - 0.282: David Haywood and TeamEurope added 'Yule Yuan Xingzuo Dianzi Chongwu Ji' system.
 
 ROMSET:
@@ -334967,9 +335008,10 @@ Graphics: Good
 Save State: Unsupported
 
 WIP:
+- 0.289: cpu/z80/z80.cpp: Prioritized non maskable interrupt over maskable in case of race (#15434). Fixed minor hw discrepancy (#15478) [Andrei I. Holub]. 
 - 0.287: Don't accept nmi at reset time; no need for that m_reset_time local variable [hap].
 - 0.286: Rename BUSRQ to BUSREQ [hap].
-- 0.285: Fixed IRQ state if comes from daisy chain (#14776) [holub].
+- 0.285: Fixed IRQ state if comes from daisy chain (#14776) [Andrei I. Holub].
 - 0.278: Changed macro call syntax in generator input (#13671). Help compiler. Fix. Flatten 16b rw operations in order to avoid vars manipulations (#13676). Optimized detection of attention needed in service step (#13630). Removed internal TADR variable - effective addresses can be passed around as needed (#13654) [Andrei I. Holub]. Don't clear all input pins state at reset. Set the flags after loadstate. Support accessing F register in debugger. Use z80 terminology for the flag vars. Fix debugger h flag [hap].
 - 0.277: Around 10% performance gain by checking if devcb is unset that is called on every opcode. z80.lst: Fix nsc800 compile [hap].
 - 0.268: Started implementing the R800 instruction set and timings [Wilbert Pol]. Reset m_ref when PC is changed through state_import [hap].
@@ -335335,7 +335377,7 @@ Save State: Unsupported
 
 WIP:
 - 0.288: Update RDY immediately but defer the side effects. Fixes abc1600 floppy write, does not seem to break x1turbo40 [Curt Coder].
-- 0.284: Relaxed fatal error which were used for unknown commands catching (#14627) [holub].
+- 0.284: Relaxed fatal error which were used for unknown commands catching (#14627) [Andrei I. Holub].
 - 0.282: Always return live status regardless of when read command was sent; minor logging refinements. Refactor read register emulation; more logging cleanups [AJR]. z80dma.h: Keep member declarations together [Vas Crabb].
 - 0.281: lear BUSRQ line upon device reset to prevent CPU from freezing after a soft reset (#14192) [Andrei I. Holub].
 - 0.280: Implement BAO callback [Curt Coder].
@@ -335370,7 +335412,8 @@ Graphics: Good
 Save State: Unsupported
 
 WIP:
-- 0.284: Skipped memory write in stackless NMI mode (#14678) [holub].
+- 0.289: Fixed NMI handling (RAMS' frogger works now) (#15477) [Andrei I. Holub].
+- 0.284: Skipped memory write in stackless NMI mode (#14678) [Andrei I. Holub].
 - 0.279: Updated timings for z80n instructions (#13985) [Andrei I. Holub].
 - 0.267: Andrei I. Holub added 'Z80N' device.
 
@@ -335582,6 +335625,7 @@ Graphics: Good
 Save State: Unsupported
 
 WIP:
+- 0.289: Fix Rx interrupt logic (#15394) [F. Ulivi].
 - 0.274: Add support for wait/ready, fix RX int logic, fix SDLC bit stuffing bug [F. Ulivi].
 - 0.216: Verified sync byte behavior in SDLC/HDLC mode, and improved logging [Joakim Larsson Edström].
 - 0.211: Improved synchronous mode emulation using HP98406 tests for guidance [F. Ulivi].
@@ -339149,6 +339193,7 @@ $drv
 0.184 [R. Belmont, Sergey Svishchev]
 
 WIP:
+- 0.289: Experimental write support for 840KB floppies (#15362) [shattered].
 - 0.286: Use gameio bus; change CPU clock so that writes to diskii work (#14980) [Sergey Svishchev].
 - 0.246: Placed driver in the sub-folder "agat/".
 - 0.227: Added native keyboard emulation, and improved video and floppy emulation [Sergey Svishchev].
@@ -339803,7 +339848,7 @@ $drv
 0.156 [R. Belmont]
 
 WIP:
-- 0.289: Use downcast for better diagnostics in debug builds [Vas Crabb]. Add optional shift key mod for models that support it (permanently enabled for apple2ep, as before) [AJR].
+- 0.289: Use downcast for better diagnostics in debug builds [Vas Crabb]. Add optional shift key mod for models that support it (permanently enabled for apple2ep, as before). Initialize variable [AJR].
 - 0.283: Try to actually show the value that would be read in the debugger for C000 I/O [Vas Crabb]
 - 0.281: Add mirrors and fix polarity of IOUDIS and DHIRES readbacks.  Fixes double lo-res from BASIC on the IIc [R. Belmont].
 - 0.273: Improved Apple IIe/IIc keyboard layout and language switch handling. Added German and Swedish Apple IIe and Apple IIc variants. Improved IIe keyboard layout/language switch handling (#12756) [as-tb-dev]: Added UK variants of Apple IIe Platinum and Apple //c; removed the 40/80 column switch from Apple //c+; added the 40/80 column switch the the Franklin Ace 500 and VTech Laser 128 series; added the keyboard/language selection switch to UK, French and Spanish //e variants and various clones; added the character set switch to the Franklin ACE; added DVORAK mod support to US Apple //e models and VTech Laser 128 series; improved key labels and default assignments, and added notes about keyboards and ROMs; initialize //c+ drive state variables on start. Add DE and SE Apple IIe/IIc models (#13086) [as-tb-dev].
@@ -340226,6 +340271,7 @@ $drv
 0.165 [Robbbert]
 
 WIP:
+- 0.289: Consolidate driver in single file [AJR].
 - 0.246: Driver placed in the sub-folder "ausnz/".
 - 0.165: Robbbert added aussiebyte.cpp driver.
 
@@ -340816,7 +340862,7 @@ $drv
 0.36b15 [Curt Coder]
 
 WIP:
-- 0.289: BugFIX08584 [Media Support] (commodore/c64.cpp) c64 all versions: Formatting floppy disks is very slow [Curt Coder].
+- 0.289: BugFIX08584 [Media Support] (commodore/c64.cpp) c64 all versions: Formatting floppy disks is very slow [Curt Coder]. (c64_cass.xml) Move game collections as separate category, perform some QA on them. Bulk replace BraveStarr SW item titles; promote skylinea; note claimed to press CBM but game prompts to press RUN STOP instead [Angelo Salese]. Improved keyboard mapping. Emulated the Action Replay cartridge (v4.1 and up). Fix performance drop while formatting a diskette. Fixes MT 08584 [Curt Coder].
 - 0.269: Demote all .d81 files to not working in 'c64_flop_misc.xml'. QA checkpoint; demote riveraid and pitfall2 from 'c64_cart.xml'. QA games in 'c64_flop_orig.xml' [Angelo Salese].
 - 0.253: BugFIX #05777 [Misc.] (commodore/c64.cpp) c64 all systems: C64 [systemm1] Software disconnect is not implemented [Curt Coder]. Fix CIA1 FLAG handling in 'c64.xml' [Curt Coder]. Added one working item, and removed redundant items in 'c64_cass.xml' [Zo? Blade, The?Ultimate Tape Archive Team].
 - 0.252: Use full country names in descriptions in 'c64_flop_misc.xml' [ArcadeShadow].
@@ -341700,6 +341746,7 @@ $drv
 0.125 [Curt Coder]
 
 WIP:
+- 0.289: Consolidate driver in single file [AJR].
 - 0.246: Driver placed in the sub-folder "comx/".
 - 0.147u4: Added floppy software list [Curt Coder].
 - 0.144u1: Fixed quickload [Curt Coder].
@@ -343887,7 +343934,7 @@ $drv
 0.282 [David Haywood]
 
 WIP:
-- 0.289: Removed (punij1pk) 'Takara Tomy Punirunes (PUNIRUNZU_MAIN_DICE_V1, pink, Japan)' system.
+- 0.289: Removed (punij1pk) 'Takara Tomy Punirunes (PUNIRUNZU_MAIN_DICE_V1, pink, Japan)' systemFactory reset some sets, remove one that is a duplicate after factory resetting [David Haywood].
 - 0.227: David Haywood added tvgames/generalplus_gpl951xx.cpp driver.
 
 $end
@@ -344143,6 +344190,7 @@ $drv
 0.187 [Sergey Svishchev]
 
 WIP:
+- 0.289: Replaced driver of bubble memory subsystem with i7110 (#15395) [F. Ulivi].
 - 0.288: Implement RS232 (#15096) [Valera Klachkov].
 - 0.246: Driver placed in the sub-folder "gridcomp/".
 - 0.187: Sergey Svishchev added gridcomp.cpp driver.
@@ -345353,6 +345401,7 @@ $drv
 0.132 [Sandro Ronco]
 
 WIP:
+- 0.289: Added CSW format and better support for real tapes [Miodrag Milanović].
 - 0.246: Driver placed in the sub-folder "zpa/".
 - 0.132: Sandro Ronco added iq151.cpp driver.
 
@@ -346715,6 +346764,7 @@ $drv
 0.230 [R. Belmont, Olivier Galibert]
 
 WIP:
+- 0.289: Side effects check, formatting [Vas Crabb]. Allow AMIC to be properly detected and use zeroed PRAM when no save exists (Github #14191). This allows pmac6100 to be identified when returning hardware-accurate values, and fixes issues stemming from our Cuda default PRAM being acceptable for 68k but poisoning PowerMacs.  Will recheck late-period 68k machines to see if they're better this way as well. Further RAM mapping improvements. Fixes random instability, including 8.1 hanging at Finder and 8.5 not booting. Improve RAM mapping, sizes up to 136MiB now work [R. Belmont].
 - 0.281: Map SCC without select (fixes startup) [AJR].
 - 0.279: Fix HMC reads and writes, map RAM properly, and hook up NuBus [R. Belmont].
 - 0.274: Hold the 601 in HALT until Cuda's ready for it. Fixes the stuttering boot chime. Fix HMC reads and writes, map RAM properly, and hook up NuBus [R. Belmont].
@@ -348770,7 +348820,7 @@ $drv
 0.221 [Patrick Mackinlay]
 
 WIP:
-- 0.289: Implement NWS-1250 driver (#15364) [Brice Onken].
+- 0.289: Implement NWS-1250 driver (#15364). Fix typo in nws12x0 DIP switch defaults (#15409) [Brice Onken]. 
 - 0.281: Add small note about mouse MCU type (#14123) [ClawGrip].
 - 0.280: Add (not working) NWS-1250 (#13984) [ClawGrip].
 - 0.268: (sony_news.xml) Added proper compatibility flags for different generations [Vas Crabb].
@@ -349438,6 +349488,7 @@ $drv
 0.132 [Angelo Salese]
 
 WIP:
+- 0.289: 31 new dumps (#15645). Add screen set_raw, hookup 5.25 floppies for mkIISR machines. Fix kanji handling in pc6001mk2sr/pc6601sr. Fix pc6001 crashes with some SWs. Fix pc6001mk2sr/pc6601sr boot regression. Hookup bus request, remove one level of indirection in rom loadings. Hookup pc6001mk2sr_flop SW list. Hookup tape play, stop and baud select commands. Implement 16K RAM option for pc6001. Implement pc6001mk2sr/pc6601sr text mode CLUT. Kick off pc6001mk2_flop and pc6001mk2sr_cass SW lists hash/pc6001_cass.xml: remove "power", part of the AX-6 set as Powered Knight hash/pc6001_cass.xml: remove "block", part of the AX-1 set as Break Out L hash/pc6001mk2_cass.xml: mark castleex as bad dump. Move CGSW view handling in base pc6001 under PPI port C handling. Fix tutankhm and turpin text display. Narrow bus request to 256x192 when in VDG mode. Use a snapshot image for cas and p6 handling [Angelo Salese].
 - 0.288: Add printer port (#15211) [Devin Acker].
 - 0.285: Move pc6001 cartslot mapping to memory map [Angelo Salese]. Note just how bad the MCU dump appears to be [AJR].
 - 0.284: Mark MCU as bad dump [AJR]. Add cassette software lists (#14596) [paul75s].
@@ -349456,6 +349507,7 @@ $drv
 0.135 [Curt Coder]
 
 WIP:
+- 0.289: Fix clang error: 'ram_w' is a protected member of 'pc8001_state' [AJR]. Backport video from mk2SR to mk2. Convert loose membanks into memory_view. Fix snapshot regression. Hookup ALU memory_view for mk2sr. Hookup expansion slot. Hookup GVRAM for mk2/mk2sr. Implement 320x200 2 plane mode for pc8001mk2sr. Implement PR2 video priority swap and flush ALU register on port 33 writes for pc8001mk2sr. Make pc8001mk2sr N80SR BASIC bootable. Move PICU handling from pc8801.p c8001mk2 implement 2bpp video mode and PR1 [Angelo Salese].
 - 0.275: Grant a slot for DIY expansion ROMs [Angelo Salese].
 - 0.246: Driver placed in the sub-folder "nec/".
 - 0.243: Major groundwork cleanups. Reduce signature name fns. Separate dictionary and CD-ROM later model use into own state machines. Clean input ports a bit. Bulk printf -> logerror. Initial batch of exporting PC8801-31 to a separate' device. Fix configuration mistake for CPU speed. Add base diplocations, massage documentation of ports $30, $31, $40, misc cleanups. Fix mouse cursor jump bugs, remove deprecated PORT_RESET usage. Rework and extend expansion slot descriptions. Add note about extended FH keyboards. Add dip positions for BASIC dips. Blind fix kanji LV2 hookup. Use required_region_ptr for ROM regions, split kanji_lv2 to own one. Move a few notes to XML. Remove unneeded port $33 hookup (should be unmapped on all PC8801 variants). Initial implementation of interrupts using i8214 as base. Fixes at least yojukiko and bishojbg BGMs. Add clock calculation for internal DAC1BIT, add reported V1 revision numbers for each romset. Move OPN/OPNA sound chip mounts to internal model types, add stereo mixing. Add sound irq pending mechanism, particularly needed by Telenet games. Improve irq semantics, connect rxrdy_irq_w signal. Make OPNA a bit less louder, QA checkpoint. Fix broken link, unmapped I/O documentation. Add JMB-X1 map, other minor notes. Start inheriting from base pc8001_base_state, add initial hooks for actual 3301 + i8257 devices. Fix port40_r reading mistake. Fix 24kHz pixel clock. 3301 irq is tied to VRTC not INT. Simplify bitmap 3bpp drawing and add preliminary palette rasters. Misc documentation updates. Add BG Pal handling, honor transparency in all bitmap layers. Better handling of bitmap fills. Carry over attribute fetches between lines when 3301 is in color mode. Implement colorized b&w graphic modes. Cleanup obsolete functions. Add boilerplate code for base irq mechanism. Add expansion card support, with JMB-X1 (partly addresses #8709), PC-8801-23 and PCG-8100 as PoC examples. Promote some romsets to parent. save_item to all variables in state machines. Fixed many issues and refactored code to better align with current standards [Angelo Salese]. Initialized a variable which was causing problems in regression testing and actually save some states [Ivan Vangelista].
@@ -349480,6 +349532,7 @@ $drv
 0.37b15 [Angelo Salese]
 
 WIP:
+- 0.289: Dump pc8801ma actual BIOS; hookup setup mode overlay at startup [cybermind]. Dump pc8801mc actual BIOS [Ford Seidel, Coolfox]. Kick off a pc8801_flop_orig SW list. Move ALU hookup in a device, share with pc8001mk2sr. Remove V2 options for pc8801/pc8801mk2. Translate area 8000-83ff as memory_view; also lift MACHINE_IMPERFECT_GRAPHICS flag for all systems but vanilla PC-8801 [Angelo Salese].
 - 0.283: (pc8801_cdrom.xml) Hypenate a suffix [Vas Crabb]. Mark missing index images as baddump. Misc QA notes.Hookup DMA memory writes. Better OPNA default mixing [Angelo Salese].
 - 0.281: (pc8801_flop.xml) Minor notes. (generic_flop_525.xml), (pc8801_flop.xml) Use the new write protect flag for gruppe and rtishtar. Fix #2349 [Angelo Salese].
 - 0.279: (pc8801_cass.xml) Demote all tapes to not working [Angelo Salese]. (pc8801_flop.xml) Actually mark clones as clones, transliterate title for S.F.3.D. Added 1 working item (#13269). Fix region size for hibernia. Fix broken image and mark bad. Updated comments for Babylon (#13262) [Naoki Saito].
@@ -349501,6 +349554,7 @@ $drv
 0.132 [Angelo Salese]
 
 WIP:
+- 0.289: Hookup HALT to HREQ signal. Hack CPU clock to double speed. Hookup MEMSW variant. Implement DAC1BIT. shanghai clicks when selecting tiles. Tentatively hookup RAM at 512KB~640KB mark; fix hatisora crash after stage 1 [Angelo Salese].
 - 0.288: Kickoff (pc88va_flop_orig.xml) [Angelo Salese].
 - 0.277: Port SASI support from PC-9801 [Angelo Salese].
 - 0.276: (pc88va.xml) Update QA. Fix validation. Add Inufuto entries. (pc98_cd.xml) Add metadata to freebsd21. Preliminary C-Bus slot hookup. Multiplane mode don't fallback in singleplane if AACC disabled. Implement GVRAM single/multiplane ROP registers. pc88va_v.cpp: Vestigial interlace support. Hookup TSP Maximum Raster Address (line height per char). Hook GDEN0 and VW nec/pc88va_sgp.cpp: hook start_dot for destination transfers. Draw sprites to odd lines when MG is 1. Add display start address, fix bobs display in shinraba, add offset base for split graphics nec/pc88va_sgp.cpp: Handle source negative pitches, avoid out of bounds accesses in rtype. pc88va_sgp.cpp: Make RMW shifting more reliable, add 1bpp to 1bpp/4bpp OPs. Implement ROP and TPMOD functions, fix pitch bugs in (boomer) and (shinraba). Add RGB565 ROPs nec/pc88va_v.cpp: use DSA in draw_packed_gfx_4bpp, halve pitch for draw_direct_gfx_rgb565 (pc88va.xml) update QA, and use saner defaults where applicable. Add 8bpp mode, fix tetris text [Angelo Salese].
@@ -349589,6 +349643,7 @@ $drv
 PC98LT/HA class machine "Handy98" aka 1st Gen LCD PC98.
 
 WIP:
+- 0.289: Hookup HALT to HREQ signal. Hack CPU clock to double speed. Hookup MEMSW variant. Implement DAC1BIT. shanghai clicks when selecting tiles. Tentatively hookup RAM at 512KB~640KB mark; fix hatisora crash after stage 1 [Angelo Salese].
 - 0.284: Add remaining FDC semantics [Angelo Salese].
 - 0.249: Kickoff a bungo_flop.xml SW list [Angelo Salese].
 - 0.246: Driver placed in the sub-folder "nec/".
@@ -350460,6 +350515,7 @@ $drv
 0.281 [m1macrophage]
 
 WIP:
+- 0.289: Implemented bandlimited oscillator sync (#15427). Minor comment fixes [m1macrophage].
 - 0.288: Added oscillators (no tuning yet) (#15285): Added a missing DC-block stage after the filter; added randomness to oscillator and filter timing components; corrected calibration of the LFO balance trimmer [m1macrophage].Emulated polymod and autotune. Promoted to working (#15316). Also, multiple minor changes [m1macrophage].
 - 0.284: Added interactive internal artwork. Also increased the resolution of most knob adjusters and set reasonable defaults (#14575) [m1macrophage].
 - 0.281: m1macrophage added prophet5.cpp driver.
@@ -351880,7 +351936,7 @@ $drv
 0.125 [Miodrag Milanović]
 
 WIP:
-- 0.286:  Cleaned up inherited unused driver's Configuration (#14798) [holub].
+- 0.286:  Cleaned up inherited unused driver's Configuration (#14798) [Andrei I. Holub].
 - 0.274: Updated new ProfROM V.4.xx.043.9226su BIOS for ZS-256 TURBO+ (#13256). Added three variants of the new Scorpion GMX ProfROM +GMX V.6.xx.043.9226s BIOS (#13254) [Andrei I. Holub].
 - 0.258: Added Scorpion GMX [Andrei I. Holub].
 - 0.246: Driver placed in the sub-folder "sinclair/".
@@ -352029,6 +352085,7 @@ $drv
 0.149u2 [David Haywood]
 
 WIP:
+- 0.289: Write to upd MD together with reset [hap].
 - 0.261: Implemented initial external interrupt support for Copera [QUFB].
 - 0.246: Driver placed in the sub-folder "sega/".
 - 0.245: Connected sound interrupt [ValleyBell].
@@ -352491,11 +352548,12 @@ $drv
 0.267 [Andrei I. Holub]
 
 WIP:
-- 0.288: Fixed postponed CTC timer update (#15217); forced more screen updated where required (#15130). Pulled up unmapped IO (#15125); implemented mouse dpi and buttons swap configuration (#15122). Added MIDI extension (#15150); simulated random state of the SIMM (#15151); refactored NMI handling (#15086); fixed CTC clock (#15190); duplicate palette workaround which doesn't allow color index escape (sprite) palette boundaries (#15167); simulated behaviour of Anti-Brick core working (#15208); I found the way to simulate flasher core bootrom. As of now if we load with Anti-Brick's bootrom it's waiting until core switch and loads requested coreId (Next the one we have) with corresponting BIOS and reboots; Forced more updates on tilemap writes; better handling DivMMC CS instant switch; pulled up unmapped value on 0x2ffd & 0x3ffd reads [holub]. Fixed video mode initialization; added notes regarding Anti-Brick core [David Haywood].
-- 0.287: Emulated The Spectrum Next UART (#15058). Separated VRAM memory (#15117). The Next moved typical VRAM pages (bank5&7) from SRAM to internal FPGA BRAM. bank7 has only 0x2000 and it's mirrored to the second half - this is also covered in this implementation. KS1..3 variants as clones; Added v30204 BIOS options (#14997). "dot commands" loading issue with NextZXOS - switched back to safer sdcard implementation which not such sensitive to timings (#15066) [holub].
-- 0.286: Cleaned up inherited unused driver's Configuration (#14798). Added raster offsets to save states (#14878). Also moved the setters to make it clearer that these can be changed on-the-fly; added initial implementation of KS3 features (#14880): Support for an additional 2MiB of RAM, SD swap bit; also disabled NMI in config mode (fixes existing bug). expansion bus control (#14328). Refactored INT/IRQ and implemented configuable DMA halt (delay) (#14739) [holub]. Added PS/2 Keyboard mapping (#14765) [Chris Taylor].
-- 0.285: Added missing credits (#14734). Added missing save states (#14744) [holub].
-- 0.284: Various fixes (#14683): Enabled timer-based steps for SPI; fixed visarea clipping; refactored video modes with blending; fixed ULA+ pen parser - GGGRRRBB instead of RRRGGGBB; renamed "Video" Machine Configuration option to less confusing "Captured Video Resolution" screen_ula.cpp; ULA+ palette matches original ULA+ specnext_layer2.cpp; revisited blending layers processing; fixed the layer clipping specnext_lores.cpp; added support of Radastan (4bpp) variant; fixed palette configured with offset parameter specnext_sprites.cpp; fixed drawing of sprites from negative offset position specnext_tiles.cpp; fixed "always on top" option; fixed priority in all variants of textmode. Various fixes (#14691). Deleay resolution change which simulates VGA/HDMI output sinclair/specnext_sprites.cpp: Fixed sprites clipping broken after refresh rate changed sinclair/*: Stylistic cleanups. Always route regs space r/w access through specific (#14614) [holub].
+- 0.289: Added support of *.nex snapshot format (#15634). Fixed AY selection (#15503). Fixed io ports 0x153b, 0x163b reads (#15677). Fixed regressing in specnext (#15640). Partially reverting 2c61e52f4dc2cd54e19b569608c965abcfb9c803. Fixed regs 0xb0, 0xb1 read and 0x0a write (#15471). Handled BRAM RO case (#15524). Implemented DMA delay (allows to stop DMA in Continious mode for ISR) (#15378). Rearranged IO mapping to proritize proper port selection in case of decoring 'conflict' (#15502) [Andrei I. Holub].
+- 0.288: Fixed postponed CTC timer update (#15217); forced more screen updated where required (#15130). Pulled up unmapped IO (#15125); implemented mouse dpi and buttons swap configuration (#15122). Added MIDI extension (#15150); simulated random state of the SIMM (#15151); refactored NMI handling (#15086); fixed CTC clock (#15190); duplicate palette workaround which doesn't allow color index escape (sprite) palette boundaries (#15167); simulated behaviour of Anti-Brick core working (#15208); I found the way to simulate flasher core bootrom. As of now if we load with Anti-Brick's bootrom it's waiting until core switch and loads requested coreId (Next the one we have) with corresponting BIOS and reboots; Forced more updates on tilemap writes; better handling DivMMC CS instant switch; pulled up unmapped value on 0x2ffd & 0x3ffd reads [Andrei I. Holub]. Fixed video mode initialization; added notes regarding Anti-Brick core [David Haywood].
+- 0.287: Emulated The Spectrum Next UART (#15058). Separated VRAM memory (#15117). The Next moved typical VRAM pages (bank5&7) from SRAM to internal FPGA BRAM. bank7 has only 0x2000 and it's mirrored to the second half - this is also covered in this implementation. KS1..3 variants as clones; Added v30204 BIOS options (#14997). "dot commands" loading issue with NextZXOS - switched back to safer sdcard implementation which not such sensitive to timings (#15066) [Andrei I. Holub].
+- 0.286: Cleaned up inherited unused driver's Configuration (#14798). Added raster offsets to save states (#14878). Also moved the setters to make it clearer that these can be changed on-the-fly; added initial implementation of KS3 features (#14880): Support for an additional 2MiB of RAM, SD swap bit; also disabled NMI in config mode (fixes existing bug). expansion bus control (#14328). Refactored INT/IRQ and implemented configuable DMA halt (delay) (#14739) [Andrei I. Holub]. Added PS/2 Keyboard mapping (#14765) [Chris Taylor].
+- 0.285: Added missing credits (#14734). Added missing save states (#14744) [Andrei I. Holub].
+- 0.284: Various fixes (#14683): Enabled timer-based steps for SPI; fixed visarea clipping; refactored video modes with blending; fixed ULA+ pen parser - GGGRRRBB instead of RRRGGGBB; renamed "Video" Machine Configuration option to less confusing "Captured Video Resolution" screen_ula.cpp; ULA+ palette matches original ULA+ specnext_layer2.cpp; revisited blending layers processing; fixed the layer clipping specnext_lores.cpp; added support of Radastan (4bpp) variant; fixed palette configured with offset parameter specnext_sprites.cpp; fixed drawing of sprites from negative offset position specnext_tiles.cpp; fixed "always on top" option; fixed priority in all variants of textmode. Various fixes (#14691). Deleay resolution change which simulates VGA/HDMI output sinclair/specnext_sprites.cpp: Fixed sprites clipping broken after refresh rate changed sinclair/*: Stylistic cleanups. Always route regs space r/w access through specific (#14614) [Andrei I. Holub].
 - 0.283: Various fixes (#14549). Added second SDCARD; route mono speaker to both channels; fixed typo in joystick mapping; missing screen updates sinclair/screen_ula.cpp: Fixed half pixel scroll; fix bug in rendering sinclair/specnext_tiles.cpp: Fixed scroll for different types of tiles. Various fixes (#14527). Fix line interrupt offset. Added Kempston/MD Pad inputs (#14509) [Andrei I. Holub].
 - 0.282: Improved IRQ handling (#14340). Improved interrupts handling (#14399). Fixed few gfx bugs with screen update and overscaned area for layer2 (#14298). Improved blending modes (#14295). Fixed copper + tiles (#14221). Improved Copper timings. Configured cascading for CTC counters (#14363). Improved LoRes/ULA mode to support half-pixel rendering (#14354) [Andrei I. Holub].
 - 0.281: Fixed copper offset direction (#14188). Added video output configuration (VGA/HDMI); refresh rate 50/60Hz; timings for all reference machines (#13992). Fixed uninitialized default for ula port #ff (#14183) [Andrei I. Holub].
@@ -352523,8 +352581,9 @@ $drv
 0.36b6 [Kevin Thacker]
 
 WIP:
+- 0.289: (spectrum_cass.xml) Bulk replace BraveStarr SW item titles [Angelo Salese].
 - 0.288: (spectrum_cass.xml) Added 6 working items (#15222) [ArcadeShadow].
-- 0.287: (spectrum_cass.xml) Added 11 working items + 1 redumped (#15109). Cleanups and fixes: parent/clone relationships, descriptions, publishers, years and languages info. Added "" property (replacing the usage property in several cases) [ArcadeShadow]. Focus on debugger memory window crashing the emulator if exp devices are not activated (#15066) [holub].
+- 0.287: (spectrum_cass.xml) Added 11 working items + 1 redumped (#15109). Cleanups and fixes: parent/clone relationships, descriptions, publishers, years and languages info. Added "" property (replacing the usage property in several cases) [ArcadeShadow]. Focus on debugger memory window crashing the emulator if exp devices are not activated (#15066) [Andrei I. Holub].
 - 0.284: (spectrum_cass.xml) Added fifteen working items (#14537): Also improved metadata, and combined multiple parts that were separate items: The Adventures of Jane Jelly - The Treasure of Zedin (set 1, Bumfun) + The Adventures of Jane Jelly - The Treasure of Zedin - Nightmare Version (set 1, Bumfun); The Adventures of Jane Jelly - The Treasure of Zedin (set 2, older) + The Adventures of Jane Jelly - The Treasure of Zedin - Nightmare Version (set 2, older); The Adventures of Jane Jelly - The Treasure of Zedin (set 3, turbo loader, with trainer) + The Adventures of Jane Jelly - The Treasure of Zedin - Nightmare Version (set 3, turbo loader, with trainer); Frostland (Party Version, English) + Frostland (Party Version, Russian); Run Away Nose (Party Version, English) + Run Away Nose (Party Version, Russian); Kubanoid (Party Version, English) + Kubanoid (Party Version, Russian); Adventure Builder System + Artworx (compilation). Improved metadata (#14723): Improved parent/clone relationships, descriptions, publishers, years, part_id, and languages info; also combined Space Junk items that are actually parts of the same releases [ArcadeShadow].
 - 0.283: Re-enable extra inputs for natural keyboard mapping [Andrei I. Holub].
 - 0.282: (spectrum_cass.xml) Added 31 working items (#14173). Also demoted Photon to not working (it freezes after loading), and improved metadata [ArcadeShadow].
@@ -353568,6 +353627,7 @@ $drv
 0.175 [R. Belmont]
 
 WIP:
+- 0.289: Added the X2210 NVRAM for Ethernet (#15517). Rename region for bootrom to "bootrom" (#15534) [Adam Billyard].
 - 0.264: #include local headers first, etc. [Vas Crabb]. Update comments. Add MSU floppy drive device [Patrick Mackinlay].
 - 0.246: Driver placed in the sub-folder "tektronix/".
 - 0.244: Add SCSI controller [AJR].
@@ -354279,8 +354339,8 @@ $drv
 0.239 [Andrei I. Holub]
 
 WIP:
-- 0.286: Cleaned up inherited unused driver's Configuration (#14798) [holub]. (tsconf.xml) SPG format. Added 29 items (#13122) [HalfElf, holub].
-- 0.285: Added missing credits (#14734) [holub].
+- 0.286: Cleaned up inherited unused driver's Configuration (#14798) [Andrei I. Holub]. (tsconf.xml) SPG format. Added 29 items (#13122) [HalfElf, holub].
+- 0.285: Added missing credits (#14734) [Andrei I. Holub].
 - 0.284: (spectrum_betadisc_flop.xml) Added 23 working items (#14693) [ArcadeShadow].
 - 0.281: Added FPGA 100K variant; implemented Copper for it (#14008) [Andrei I. Holub].
 - 0.278: Added CRAM initialisation, changed initial system RAM fill to 0x00 (#13823). Initial RAM system RAM content is indeterminate, but tested software seems to work better with 0x00 than with 0xff. Enabled memory waits and access cache at 14Mhz (#13840) [Andrei I. Holub].
@@ -355651,6 +355711,7 @@ $drv
 0.132 [Curt Coder]
 
 WIP:
+- 0.289: Moved ROM load macros out of macros [Vas Crabb]. 820-II disk personalities, SASI rigid disks, and the 16/8 8086 coprocessor (#15485). Replace bad u35 dump in the 820-II v5.0 v018 BIOS (#15467) [David Rand].
 - 0.246: Driver placed in the sub-folder "xerox/".
 - 0.234: Marked bigboard and mk82 as MNW - haven't been able to boot a floppy for years [Robbbert].
 - 0.233: Use memory view for bankswitching [AJR].
