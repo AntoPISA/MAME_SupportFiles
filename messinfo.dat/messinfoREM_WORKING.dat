@@ -1,4 +1,4 @@
-﻿#    MESSINFO_REM.DAT v0.289    Latest update:  Sep  1, 2026
+﻿#    MESSINFO_REM.DAT v0.289    Latest update:  Sep  6, 2026
 #                                Project start: Nov  7, 2011
 #
 #    Author:  Antonio Paradossi (AntoPISA) from Pisa (Tuscany/Italy)
@@ -9,41 +9,9 @@
 #    homepage: http://www.progettosnaps.net/messinfo
 #
 #    Internal version: 15.05
-#    Total items: 367
+#    Total items: 371
 #
 #
-$info=punij1pk
-$mame
-0.280 [TeamEurope, David Haywood]
-
-Punirunes (PUNIRUNZU_MAIN_DICE_V1, pink, Japan), Takara Tomy, 2021
-
-The Punirunes Puni Mint Squishy is an interactive toy shaped like a small, soft, round object, featuring an LCD screen at its center. Designed for children ages 6 and up, it lets kids interact with a cute digital character by inserting their finger into a hole on the side—this action stimulates the character on the screen, which responds with expressive animations and movements. The toy reacts to touch as if it were alive, and it can even "melt" when left alone, creating a heartwarming and engaging experience. It requires 3 AAA batteries and combines the satisfying tactile sensation of a squishy with the magic of a simple yet charming digital world—perfect for anyone who loves nurturing and interacting with virtual creatures in a gentle, fun way.
-
-DRIVER:
-handheld/generalplus_gpl951xx.cpp
-
-DRIVER STATUS:
-Emulation: Preliminary
-Color: Good
-Sound: Imperfect
-Graphics: Good
-Save State: Unsupported
-
-SOFTWARE LIST:
--
-
-RESOURCES:
-Snap and Title.
-
-WIP:
-- 0.289: Machine removed.
-- 0.280: TeamEurope and David Haywood added (punij1pk) 'Takara Tomy Punirunes (PUNIRUNZU_MAIN_DICE_V1, pink, Japan)' system.
-
-ROMSET:
-8388608 bytes in 1 file / 3.86Mb packed
-
-$end
 $info=24c16a
 $mame
 0.207 [smf]
@@ -2940,6 +2908,58 @@ WIP:
 - 0.158: Added EXT Port device.
 
 $end
+$info=gpac800
+$mame
+0.217 [David Haywood, AJR]
+
+GeneralPlus GPL1625x System-on-a-Chip (with NAND handling), <unknown>, ????
+
+DRIVER:
+devices/machine/generalplus_gpl1625x_soc.cpp
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Unsupported
+
+WIP:
+- 0.289: Device removed.
+- 0.282: Changed description to 'GeneralPlus GPL1625x System-on-a-Chip (with NAND handling)'.
+- 0.222: Changed description to 'GeneralPlus GPL16250 System-on-a-Chip (with NAND handling)'.
+- 0.217: David Haywood and AJR added 'GeneralPlus GPAC800 System-on-a-Chip' device.
+
+ROMSET:
+None required.
+
+$end
+$info=gpac800spi
+$mame
+0.218
+
+GeneralPlus GPL1625x System-on-a-Chip (with SPI handling), <unknown>, ????
+
+DRIVER:
+devices/machine/generalplus_gpl1625x_soc.cpp
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Unsupported
+
+WIP:
+- 0.289: Device removed.
+- 0.282: Changed description to 'GeneralPlus GPL1625x System-on-a-Chip (with SPI handling)'.
+- 0.222: Changed description to 'GeneralPlus GPL16250 (with SPI handling)'.
+- 0.218: Added 'GeneralPlus unSP20 SPI-based SoC' device.
+
+ROMSET:
+None required.
+
+$end
 $info=gpac800spi_direct
 $mame
 0.227 [David Haywood]
@@ -5199,6 +5219,32 @@ WIP:
 - 0.155: Added Odyssey 2 16K Carts device.
 
 $end
+$info=opus108pm
+$mame
+0.246 [Patrick Mackinlay]
+
+Opus 108PM, <unknown>, ????
+
+The Opus UNIX processor in the PC generates and uses radio frequency energy and if not installed and used properly, that is, in strict accordance with  the instructions contained in this manual, may cause interference to radio and television reception. It has been type tested and found to comply with the limits for a Class B computing device in accordance with the specifications of Subpart J of Part 15 of FCC Rules, which are designed to provide reasonable protection against such interference in a residential installation. However, there is no guarantee that interference will not occur in a particular installation.
+
+DRIVER:
+devices/bus/isa/opus100pm.cpp
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Unsupported
+
+WIP:
+- 0.289: Device removed.
+- 0.246: Patrick Mackinlay added 'Opus 108PM' device.
+
+ROMSET:
+None required.
+
+$end
 $info=osborne1_daisy
 $mame
 0.162
@@ -5506,6 +5552,38 @@ WIP:
 
 ROMSET:
 67680 bytes in 2 files / 54.46Kb packed
+
+$end
+$info=punij1pk
+$mame
+0.280 [TeamEurope, David Haywood]
+
+Punirunes (PUNIRUNZU_MAIN_DICE_V1, pink, Japan), Takara Tomy, 2021
+
+The Punirunes Puni Mint Squishy is an interactive toy shaped like a small, soft, round object, featuring an LCD screen at its center. Designed for children ages 6 and up, it lets kids interact with a cute digital character by inserting their finger into a hole on the side—this action stimulates the character on the screen, which responds with expressive animations and movements. The toy reacts to touch as if it were alive, and it can even "melt" when left alone, creating a heartwarming and engaging experience. It requires 3 AAA batteries and combines the satisfying tactile sensation of a squishy with the magic of a simple yet charming digital world—perfect for anyone who loves nurturing and interacting with virtual creatures in a gentle, fun way.
+
+DRIVER:
+handheld/generalplus_gpl951xx.cpp
+
+DRIVER STATUS:
+Emulation: Preliminary
+Color: Good
+Sound: Imperfect
+Graphics: Good
+Save State: Unsupported
+
+SOFTWARE LIST:
+-
+
+RESOURCES:
+Snap and Title.
+
+WIP:
+- 0.289: Machine removed.
+- 0.280: TeamEurope and David Haywood added (punij1pk) 'Takara Tomy Punirunes (PUNIRUNZU_MAIN_DICE_V1, pink, Japan)' system.
+
+ROMSET:
+8388608 bytes in 1 file / 3.86Mb packed
 
 $end
 $info=rrd45
@@ -5846,6 +5924,31 @@ TI SN74S381 ALU / Function Generator, ???, ????
 WIP:
 - 0.222: Device removed.
 - 0.211: Added TI SN74S381 ALU / Function Generator device.
+
+$end
+$info=sonix16
+$mame
+0.282 [AJR]
+
+Sonix 16-bit DSP, <unknown>, ????
+
+DRIVER:
+devices/cpu/sonix16/sonix16.cpp
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Unsupported
+
+WIP:
+- 0.289: Fix decoding of BCLR and BSET. Add WDT register stub [AJR]. Device removed.
+- 0.288: Add preliminary execution core; fix order of calculations for carry flag in ALU operations; improve flags display; add ALU overflow test [AJR].
+- 0.282: AJR added 'Sonix 16-bit DSP' device.
+
+ROMSET:
+None required.
 
 $end
 $info=speechrom
