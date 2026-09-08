@@ -1,5 +1,5 @@
 ﻿#     ==========================================================
-#     MAME RENAMESET.DAT v0.290git  Latest update:  Sep  1, 2026
+#     MAME RENAMESET.DAT v0.290git  Latest update:  Sep  8, 2026
 #     ==========================================================
 #
 #     Home-page: https://www.progettosnaps.net/renameset/
@@ -18,10 +18,11 @@
 #
 #               Internal Version 16.06
 #
-#       826 removed machines/devices/bios overall in the history of MAME
-#     6.965 renamed machines/devices/bios overall in the history of MAME
+#       823 removed machines/devices/bios overall in the history of MAME
+#     6.959 renamed machines/devices/bios overall in the history of MAME
 #
 #           Rename/Delete Software Lists (in dat): From version 0.141u2 to 0.170 already rechecked
+#           Rename errors found but still to be fixed: 32
 #
 #
 $0.289 [#728]
@@ -299,7 +300,7 @@ unkpara            > dreamcha               (mID: 49400) M
 5 del (0/5/0):
 evo_cpu                                     (mID: 46838) D
 md_rom_radica                               (mID: 32889) D
-md_rom_topf                                 (miD: 32905) D
+md_rom_topf                                 (mID: 32905) D
 serial_vfd                                  (mID: 49385) D
 gpac800spi_direct                           (mID: 43367) D
 
@@ -402,9 +403,8 @@ tr707_audio_device > tr707_audio            (mID: 49228) D
 unk2019hh          > gbox2019               (mID: 45236) M
 unk2020hh          > gbox2020               (mID: 45237) M
 winbingoa          > winbingo_gm051         (mID:  8796) M
-11 del (6/5/0):
+10 del (5/5/0):
 alpinesa                                    (mID:  5841) M
-gepoker2                                    (mID:  6161) M
 mc6847_pal                                  (mID: 32849) D
 mc6847t1_pal                                (mID: 37820) D
 mc6847y_pal                                 (mID: 37822) D
@@ -644,7 +644,7 @@ ddsomjr2           > ddsomjr1          (mID: 37494) M
 dolphntru          > dolphntrua        (mID: 35664) M
 eforsta5ce         > eforstcea         (mID: 38177) M
 eforsta5cea        > eforstce          (mID: 38926) M
-m65sc02            > g65sc02           (mID: 32734) D
+m65sc02            > g65sc02           (mID: 48244) D
 galaxia            > galaxiaa          (mID:  6030) M
 galaxiab           > galaxia           (mID: 29620) M
 galaxiac           > galaxiab          (mID: 29621) M
@@ -787,7 +787,7 @@ fexcel124          > fexcel12          (mID: 37711) M
 fexcelpb           > fexcelpa          (mID: 37712) M
 gambit             > classic           (mID: 42367) M
 hbarrelu           > hbarrelua         (mID:   489) M
-hsf2j1             > hsf2j2            (mID:  6458) M
+hsf2j1             > hsf2j2            (mID:  7347) M
 mgfx               > mgzz              (mID:  6565) M
 mgzz               > mgzza             (mID: 47374) M
 n7751              > upd7751           (mID: 29221) D
@@ -1054,7 +1054,7 @@ megemb                                 (mID: 40501) D
 serflash                               (mID: 29066) D
 
 
-$0.260 [#699] PLEASE CHECK AGAIN!
+$0.260 [#699]
 2023/10/25
 46.186 total items, 2.924 drivers (+2), 39.945 machines (+38), 13.584 parents (+9), 26.361 clones (+29), 75 BIOSes, 6.166 devices (+12), 1.182 requires CHDs (+3), 1.841 use samples (+14), 25.683 audio mono (+30), 8.926 audio stereo (+8), 2.073 audio multichannel (-1), 3.263 no audio (+1)
 15.076 working (+27), 24.869 not working (+11), 15.594 mechanicals (+11), 24.351 not mechanicals (+27), 13.649 save supported (+16), 26.296 save unsupported (+22)
@@ -1064,21 +1064,21 @@ $0.260 [#699] PLEASE CHECK AGAIN!
 700 software list, 135.994 software (+98), 690 active SL, 10 orphan SL, 135.234 active software (+98), 760 orphan software, 93.892 software parents (+59), 42.102 software clones (+39)
 230.913 software roms (+88), 11.019 software CHD (+13), 96.013 supported software (+63), 1.676 partially supported software (+14), 38.305 unsupported software (+21)
 15 ren (14/1/0):
-phrcraze         > phrcrazeb           (mID:  5096) M
-phrcrazea        > phrcrazec           (mID:  8707) M
-phrcrazeb        > phrcraze            (mID:  7476) M
-phrcrazec        > phrcrazea           (mID:  8708) M
-rezon            > rezono              (mID:  2477) M
-rezont           > rezon               (mID:  5525) M
-sh2a_sh7021      > sh7021              (mID: 35403) D
-tictac           > tictaca             (mID:  5098) M
-trvwz3h          > trvwz3b             (mID:  6231) M
-trvwz3ha         > trvwz3              (mID:  7490) M
-trvwz4           > trvwz4v             (mID:  6050) M
-trvwz4a          > trvwz4va            (mID:  7491) M
-trvwzh           > trvwz               (mID:  5100) M
-trvwzha          > trvwza              (mID: 43271) M
-trvwzhb          > trvwzb              (mID:  7492) M
+phrcraze           > phrcrazeb         (mID:  5096) M
+phrcrazea          > phrcrazec         (mID:  8707) M
+phrcrazeb          > phrcraze          (mID:  7476) M
+phrcrazec          > phrcrazea         (mID:  8708) M
+rezon              > rezono            (mID:  2477) M
+rezont             > rezon             (mID:  5525) M
+sh2a_sh7021        > sh7021            (mID: 35403) D
+tictac             > tictaca           (mID:  5098) M
+trvwz3h            > trvwz3b           (mID:  6231) M
+trvwz3ha           > trvwz3            (mID:  7490) M
+trvwz4             > trvwz4v           (mID:  6050) M
+trvwz4a            > trvwz4va          (mID:  7491) M
+trvwzh             > trvwz             (mID:  5100) M
+trvwzha            > trvwza            (mID: 43271) M
+trvwzhb            > trvwzb            (mID:  7492) M
 0 del (0/0/0):
 -
 
@@ -1437,7 +1437,7 @@ $0.250 [#689]
 679 software list (+1), 134.162 software (-7/+144), 669 active SL (+1), 10 orphan SL, 133.402 active software (-7/+144), 760 orphan software, 92.463 software parents (+104), 41.699 software clones (+47)
 228.639 software roms (+193), 10.813 software CHD, 96.129 supported software (+132), 1.503 partially supported software (+12), 36.530 unsupported software (+7)
 32 ren (32/0/0):
-alpines            > alpinesa          (mID:  5841) M
+alpinesa           > alpines           (mID: 45474) M
 cx5m               > cx5mu             (mID: 31707) M
 cx5m2              > cx5miib           (mID: 31709) M
 cx7m               > cx7128            (mID: 31710) M
@@ -1535,7 +1535,7 @@ $0.248 [#687]
 ddr2ml             > ddr2mla           (mID: 10351) M
 ddr2mla            > ddr2mlb           (mID:  6315) M
 drmn9m             > drmn9ma           (mID: 10360) M
-fscc12             > fscc12a           (mID: 35981) M
+fscc12b            > fscc12a           (mID: 35981) M
 gtgt               > gtgt20            (mID:  9136) M
 gtgt1              > gtgt10            (mID:  4756) M
 n2a03              > rp2a03            (mID: 33169) D
@@ -1626,7 +1626,7 @@ m4tridic                               (mID: 11934) M
 vcs_4k                                 (mID: 34905) D
 
 
-$0.245 [#684] PLEASE CHECK AGAIN!
+$0.245 [#684]
 2022/06/29
 44.747 total items, 2.786 drivers (+11), 39.014 machines (-5/+85), 13.213 parents (-2/+29), 25.801 clones (-3/+56), 73 BIOSes, 5.660 devices (+45), 1.094 requires CHDs (+1), 1.761 use samples (+18), 19.610 audio mono (-1/+37), 14.661 audio stereo (-4/+34), 1.608 audio multichannel (+3), 3.135 no audio (+11)
 14.548 working (-1/+277), 24.466 not working (-196), 15.483 mechanicals (-4/+20), 23.531 not mechanicals (-1/+65), 13.008 save supported (-1/+59), 26.006 save unsupported (-4/+26)
@@ -1635,7 +1635,7 @@ $0.245 [#684] PLEASE CHECK AGAIN!
 331.557 total roms (-1566), 328.735 machines roms (-1593), 2.236 devices roms (+27), 586 BIOSes roms, 1.210 CHDs (+1), 531 sample files, 70 sample packs, 323.935 good dumps (-1611), 5.431 no dumps (+25), 3.401 bad dumps (+21), 9 bugs fixed
 669 software list (+1), 133.283 software (-3/+574), 658 active SL (+1), 11 orphan SL, 132.516 active software (-3/+574), 767 orphan software, 91.820 software parents (+450), 41.463 software clones (+127)
 225.821 software roms (+3311), 10.767 software CHD (+1), 95.429 supported software (+468), 1.447 partially supported software (+38), 36.407 unsupported software (+71)
-222 ren (218/4/0):
+220 ren (216/4/0):
 andretti           > andretti0         (mID:  9182) M
 andretti4          > andretti          (mID:  9183) M
 butrfly            > butrflybl         (mID:  7432) M
@@ -1643,7 +1643,7 @@ cueball2           > cueballa          (mID: 36887) M
 cueball3           > cueballb          (mID: 36888) M
 deco_back06        > deco_bac06        (mID: 28862) D
 doaab              > doaae             (mID: 44843) M
-europc_keyb        > europc_keyb       (mID: 43251) D
+europc_keyb        > europc_kbd        (mID: 43251) D
 freddy             > freddy3           (mID:  9502) M
 freddy4            > freddy            (mID:  9503) M
 gokidetor          > cucaracha         (mID: 38715) M
@@ -1662,34 +1662,34 @@ m4c9__a2           > m4c999g           (mID: 22135) M
 m4c9__a3           > m4c999h           (mID: 22136) M
 m4c9__ay           > m4c999i           (mID: 22161) M
 m4c9__az           > m4c999j           (mID: 22162) M
-m4c9__n            > m4c999            (mID: 22174) M
+m4c9__n            > m4c999            (mID: 22186) M
 m4c999             > m4c999c           (mID: 22174) M
 m4c999a            > m4c999d           (mID: 22187) M
 m4c999b            > m4c999a           (mID: 22188) M
 m4c999c            > m4c999b           (mID: 22189) M
 m4centpt           > m4swpnotb         (mID: 11519) M
-m4centpta          > m4centpt          (mID: 11519) M
+m4centpta          > m4centpt          (mID: 14181) M
 m4ch30             > m4nnww__ay        (mID: 11521) M
 m4cld02            > m4rhrc__9         (mID: 11540) M
 m4crzjwl           > m4crzjwle         (mID: 11568) M
 m4crzjwle          > m4crzjwl          (mID: 22619) M
 m4crzjwlh          > m4cjdlx           (mID: 22622) M
-m4csoc             > m4csoc__j         (mID: 22627) M
-m4csoc__a          > m4csoc            (mID: 22628) M
-m4csoc__b          > m4csoc__a         (mID: 22629) M
-m4csoc__c          > m4csoc__b         (mID: 22630) M
-m4csoc__d          > m4csoc__c         (mID: 22631) M
-m4csoc__e          > m4csoc__d         (mID: 22632) M
-m4csoc__f          > m4csoc__e         (mID: 22633) M
+m4csoc             > m4csoc__j         (mID: 11571) M
+m4csoc__a          > m4csoc            (mID: 22627) M
+m4csoc__b          > m4csoc__a         (mID: 22628) M
+m4csoc__c          > m4csoc__b         (mID: 22629) M
+m4csoc__d          > m4csoc__c         (mID: 22630) M
+m4csoc__e          > m4csoc__d         (mID: 22631) M
+m4csoc__f          > m4csoc__e         (mID: 22632) M
 m4csoc__j          > m4csoc__f         (mID: 22636) M
 m4eaw__bz          > m4eaw51           (mID: 22868) M
 m4exotic           > m4exotic__c       (mID: 11598) M
 m4exotic__a        > m4exotic          (mID: 22913) M
 m4exotic__b        > m4exotic__a       (mID: 22914) M
 m4exotic__c        > m4exotic__b       (mID: 22915) M
-m4hvhel__f         > m4hvhel__g        (mID: 23266) M
-m4hvhel__g         > m4hvhel__h        (mID: 23267) M
-m4hvhel__h         > m4hvhel__f        (mID: 11679) M
+m4hvhel__f         > m4hvhel__g        (mID: 23265) M
+m4hvhel__g         > m4hvhel__h        (mID: 23266) M
+m4hvhel__h         > m4hvhel__f        (mID: 23267) M
 m4hypvip           > m4shv             (mID: 23271) M
 m4hypvip__a        > m4shv__q          (mID: 23272) M
 m4hypvip__b        > m4shv__g          (mID: 11681) M
@@ -1757,9 +1757,9 @@ m4rhr__9           > m4supst__b7       (mID: 24870) M
 m4ssclas__f        > m4supst__b6       (mID: 18976) M
 m4sss              > m4przsss__1       (mID: 25235) M
 m4sss__a           > m4sss             (mID: 11869) M
-m4suphv            > m4shv__e          (mID: 25286) M
+m4suphv            > m4shv__e          (mID: 11890) M
 m4suphv__a         > m4shv__i          (mID: 25287) M
-m4suphv__b         > m4shv__s          (mID: 11890) M
+m4suphv__b         > m4shv__s          (mID: 25286) M
 m4suphv__c         > m4shv__x          (mID: 25288) M
 m4suphv__d         > m4shv__j          (mID: 25289) M
 m4suphv__e         > m4shv__t          (mID: 25290) M
@@ -1800,42 +1800,40 @@ m4tutfrt__aw       > m4tutbwb_a        (mID: 25862) M
 m4tutfrt__ax       > m4tutbwb_b        (mID: 25863) M
 m4tutfrt__ay       > m4tutbwb_c        (mID: 25864) M
 m4tutfrt__az       > m4tutbwb_d        (mID: 25865) M
-m4vivalv           > m4vivalv__z       (mID: 26038) M
-m4vivalv__0        > m4vivalv__l       (mID: 26039) M
-m4vivalv__1        > m4vivalv__m       (mID: 26040) M
-m4vivalv__2        > m4vivalv__n       (mID: 26041) M
-m4vivalv__3        > m4vivalv__o       (mID: 26042) M
-m4vivalv__4        > m4vivalv__p       (mID: 26043) M
-m4vivalv__5        > m4vivalv__q       (mID: 26044) M
-m4vivalv__6        > m4vivalv__r       (mID: 26045) M
-m4vivalv__7        > m4vivalv__s       (mID: 26046) M
-m4vivalv__8        > m4vivalv__t       (mID: 26047) M
-m4vivalv__9        > m4vivalv__h       (mID: 26048) M
-m4vivalv__a        > m4vivalv__i       (mID: 11961) M
+m4vivalv           > m4vivalv__z       (mID: 11961) M
+m4vivalv__0        > m4vivalv__l       (mID: 26058) M
+m4vivalv__1        > m4vivalv__m       (mID: 26059) M
+m4vivalv__2        > m4vivalv__n       (mID: 26060) M
+m4vivalv__3        > m4vivalv__o       (mID: 26061) M
+m4vivalv__4        > m4vivalv__p       (mID: 26062) M
+m4vivalv__5        > m4vivalv__q       (mID: 26063) M
+m4vivalv__6        > m4vivalv__r       (mID: 26064) M
+m4vivalv__7        > m4vivalv__s       (mID: 26065) M
+m4vivalv__8        > m4vivalv__t       (mID: 26066) M
+m4vivalv__9        > m4vivalv__h       (mID: 26054) M
+m4vivalv__a        > m4vivalv__i       (mID: 26055) M
 m4vivalv__b        > m4vegast__0       (mID: 26049) M
-m4vivalv__c        > m4vegast__1       (mID: 26046) M
-m4vivalv__e        > m4vivalv__0       (mID: 26051) M
-m4vivalv__f        > m4vivalv__1       (mID: 26052) M
-m4vivalv__g        > m4vivalv__u       (mID: 26053) M
-m4vivalv__h        > m4vivalv__v       (mID: 26054) M
-m4vivalv__i        > m4vivalv__2       (mID: 26055) M
-m4vivalv__j        > m4vivalv__3       (mID: 26056) M
-m4vivalv__k        > m4vivalv__4       (mID: 26057) M
-m4vivalv__l        > m4vivalv__5       (mID: 26058) M
-m4vivalv__m        > m4vivalv__6       (mID: 26059) M
-m4vivalv__n        > m4vivalv__w       (mID: 26060) M
-m4vivalv__o        > m4vivalv__x       (mID: 26061) M
-m4vivalv__p        > m4vivalv__y       (mID: 26062) M
-m4vivalv__q        > m4vivalv__a       (mID: 26063) M
-m4vivalv__r        > m4vivalv__b       (mID: 26064) M
-m4vivalv__s        > m4vivalv__c       (mID: 26065) M
-m4vivalv__t        > m4vivalv__d       (mID: 26066) M
-m4vivalv__u        > m4vivalv__e       (mID: 26067) M
-m4vivalv__v        > m4vivalv__f       (mID: 26068) M
-m4vivalv__w        > m4vivalv          (mID: 26069) M
-m4vivalv__x        > m4vivalv__g       (mID: 26070) M
-m4vivalv__y        > m4vivalv__j       (mID: 26071) M
-m4vivalv__z        > m4vivalv__k       (mID: 26072) M
+m4vivalv__c        > m4vegast__1       (mID: 26050) M
+m4vivalv__e        > m4vivalv__0       (mID: 26039) M
+m4vivalv__f        > m4vivalv__1       (mID: 26040) M
+m4vivalv__g        > m4vivalv__u       (mID: 26067) M
+m4vivalv__h        > m4vivalv__v       (mID: 26068) M
+m4vivalv__i        > m4vivalv__2       (mID: 26041) M
+m4vivalv__j        > m4vivalv__3       (mID: 26042) M
+m4vivalv__k        > m4vivalv__4       (mID: 26043) M
+m4vivalv__l        > m4vivalv__5       (mID: 26044) M
+m4vivalv__m        > m4vivalv__6       (mID: 26045) M
+m4vivalv__n        > m4vivalv__w       (mID: 26069) M
+m4vivalv__o        > m4vivalv__x       (mID: 26070) M
+m4vivalv__p        > m4vivalv__y       (mID: 26071) M
+m4vivalv__q        > m4vivalv__a       (mID: 26072) M
+m4vivalv__r        > m4vivalv__b       (mID: 26047) M
+m4vivalv__t        > m4vivalv__d       (mID: 26048) M
+m4vivalv__u        > m4vivalv__e       (mID: 26051) M
+m4vivalv__v        > m4vivalv__f       (mID: 26052) M
+m4vivalv__x        > m4vivalv__g       (mID: 26053) M
+m4vivalv__y        > m4vivalv__j       (mID: 26056) M
+m4vivalv__z        > m4vivalv__k       (mID: 26057) M
 m4xtrm             > m4xtrm__b         (mID: 26179) M
 m4xtrm__b          > m4xtrm            (mID: 11976) M
 nb_48gc            > nb_mdc48          (mID: 33184) D
@@ -2033,7 +2031,7 @@ popn1              > popn1a            (mID:  6540) M
 mc_pg150                               (mID: 39167) M
 
 
-$0.237 [#676] PLEASE CHECK AGAIN!
+$0.237 [#676]
 2021/10/26
 43.908 total items, 2.726 drivers (+3), 38.434 machines (+31), 13.011 parents (+8), 25.423 clones (+23), 73 BIOSes (-1), 5.401 devices (-5/+35), 1.074 requires CHDs, 1.273 use samples (-1/+1), 19.107 audio mono (+5), 14.595 audio stereo (+26), 1.403 audio multichannel (+5), 3.329 no audio (-5)
 14.108 working (+18), 24.326 not working (+13), 15.434 mechanicals (+3), 23.000 not mechanicals (+28), 11.021 save supported (+56), 27.413 save unsupported (-25)
@@ -2184,7 +2182,7 @@ j6slagne           > j6snakesk         (mID: 27521) M
 j6slagnf           > j6snakesl         (mID: 27522) M
 j6slagng           > j6slagnb          (mID: 27523) M
 j6slagnh           > j6slagnc          (mID: 27524) M
-ncr5380            > scsipdma          (mID: 37840) D
+ncr5380            > scsipdma          (mID: 33200) D
 pcnfrk2m           > pcnfrk2mk         (mID: 40740) M
 pcnfrk3m           > pcnfrk3mk         (mID:  6525) M
 pcnfrk5m           > pcnfrk5mk         (mID: 38363) M
@@ -2267,7 +2265,7 @@ radarscp           > radarscpc         (mID:   246) M
 blitz11                                (mID:  5860) M
 
 
-$0.228 [#667] PLEASE CHECK AGAIN!
+$0.228 [#667]
 2021/01/26
 43.152 total items, 2.652 drivers (+12), 37.922 machines (-2/+70), 12.807 parents (-1/+23), 25.115 clones (-1/+47), 73 BIOSes, 5.157 devices (-2/+31), 1.019 requires CHDs (+20), 1.241 use samples (-1), 18.908 audio mono (-2/+23), 14.461 audio stereo (+18), 1.266 audio multichannel (+4), 3.287 no audio (+25)
 13.660 working (+34), 24.262 not working (-2/+36), 15.377 mechanicals (-1/+10), 22.545 not mechanicals (-1/+60), 10.734 save supported (+16), 27.188 save unsupported (-2/+54)
@@ -2436,7 +2434,7 @@ puzzlet_io                                  (mID: 29775) D
 u8106                                       (mID: 29116) D
 
 
-$0.224 [#663] PLEASE CHECK AGAIN!
+$0.224 [#663]
 2020/08/26
 42.685 total items, 2.584 drivers (+3), 37.572 machines (+74), 12.609 parents (+32), 24.963 clones (+42), 73 BIOSes, 5.040 devices (-2/+28), 986 requires CHDs (+2), 1.239 use samples (-19), 18.754 audio mono (+52), 14.284 audio stereo (+22), 1.340 audio multichannel (+1), 3.194 no audio (-1)
 13.480 working (+46), 24.092 not working (+28), 15.342 mechanicals (+3), 22.230 not mechanicals (+71), 10.605 save supported (+64), 26.967 save unsupported (+10)
@@ -2584,7 +2582,7 @@ atarscom           > atariscom         (mID: 28833) D
 c8095              > c8095_90          (mID: 31429) D
 elevator           > elevatora         (mID:    90) M
 elevator4          > elevator          (mID: 37045) M
-franticf           > franticfa         (mID: 29292) M
+franticf           > franticfa         (mID: 12663) M
 frontlin           > frontlina         (mID:   136) M
 mooncrstu          > mooncrstuu        (mID:  3450) M
 rolandpcm          > mb87419_mb87420   (mID: 42132) D
@@ -2660,7 +2658,7 @@ m6502_vt1682                           (mID: 41468) D
 nes_ddr                                (mID: 40091) D
 
 
-$0.218 [#657] PLEASE CHECK AGAIN!
+$0.218 [#657]
 2020/02/01
 41.415 total items, 2.462 drivers (+37), 36.569 machines (-3/+163), 12.253 parents (+77), 24.316 clones (-3/+86), 72 BIOSes, 4.774 devices (-1/+29), 973 requires CHDs (+10), 1.264 use samples (-1/+1), 18.404 audio mono (+51), 13.772 audio stereo (-3/+46), 1.297 audio multichannel (+43), 3.096 no audio (+23)
 13.098 working (-2/+59), 23.471 not working (-1/+104), 15.299 mechanicals (+5), 21.270 not mechanicals (-3/+158), 9.644 save supported (+31), 26.925 save unsupported (-3/+132)
@@ -3016,7 +3014,7 @@ samesamech         > samesamecn        (mID: 40251) M
 -
 
 
-$0.206 [#645] PLEASE CHECK AGAIN!
+$0.206 [#645]
 2019/01/30
 39.954 total items, 2.275 drivers (+12), 35.589 machines (+119), 11.820 parents (+56), 23.769 clones (+63), 72 BIOSes (-1), 4.293 devices (-8/+62), 946 requires CHDs (+13), 1.238 use samples, 18.253 audio mono (+34), 13.334 audio stereo (+54), 975 audio multichannel (+4), 3.027 no audio (+27)
 12.686 working (+98), 22.903 not working (+21), 15.249 mechanicals (+2), 20.340 not mechanicals (+117), 9.293 save supported (+13), 26.296 save unsupported (+106)
@@ -3067,7 +3065,7 @@ sfex2p             > sfex2pu           (mID:  5161) M
 sftmj              > sftmj112          (mID:  2753) M
 3 del (2/1/0):
 3do_m2                                 (mID: 30791) M
-poolchama                              (mID : 9857) M
+poolchama                              (mID:  9857) M
 taito8741_4pack                        (mID: 29850) D
 
 
@@ -3155,7 +3153,7 @@ weclemana           > weclemanb                  (mID: 26554) M
 weclemanb           > weclemanc                  (mID: 35734) M
 2 del (2/0/0):
 imds                                             (mID: 32451) M
-rpatrola                                         (mID: 36775) M
+rpatrola                                         (mID: 49713) M
 
 
 $0.201 [#640]
@@ -3240,7 +3238,7 @@ puyofev            > puyofevj               (mID:  7948) M
 z80scc                                      (mID: 38056) D
 
 
-$0.198 [#637] PLEASE CHECK AGAIN!
+$0.198 [#637]
 2018/05/30
 39.160 total items, 2.195 drivers (+3), 35.115 machines (+74), 11.611 parents (+28), 23.504 clones (+46), 71 BIOSes, 3.974 devices (+49), 921 requires CHDs (+3), 1.219 use samples (+3), 18.087 audio mono (+47), 13.143 audio stereo (+10),  947 audio multichannel (+17), 2.938 no audio
 12.400 working (+49), 22.715 not working (+25), 15.222 mechanicals (+6), 19.893 not mechanicals (+68), 8.567 save supported (+47), 26.548 save unsupported (+27)
@@ -3318,7 +3316,7 @@ strngsci                > strngscia         (mID: 10076) M
 -
 
 
-$0.195 [#634] PLEASE CHECK AGAIN!
+$0.195 [#634]
 
 2018/02/28
 38.901 total items, 2.179 drivers (+7), 34.934 machines (+83), 11.531 parents (+49), 23.403 clones (+34), 71 BIOSes, 3.896 devices (+25), 910 requires CHDs (+1), 1.186 use samples, 17.972 audio mono (-28), 13.122 audio stereo (+102), 925 audio multichannel (+3), 2.915 no audio (+6)
@@ -3425,7 +3423,7 @@ m68k                                   (mID: 37805) D
 marmagicub                             (mID: 38213) M
 
 
-$0.192 [#631] PLEASE CHECK AGAIN!
+$0.192 [#631]
 2017/11/29
 38.584 total items, 2.137 drivers (+30), 34.683 machines (-1/+102), 11.404 parents (+60), 23.279 clones (-1/+42), 71 BIOSes, 3.830 devices (-5/+53), 905 requires CHDs (+1), 1.184 use samples (+4), 17.882 audio mono (+63), 12.986 audio stereo (-15), 914 audio multichannel (-1/+11), 2.901 no audio (+43)
 12.093 working (-1/+31), 22.590 not working (+71), 15.203 mechanicals, 19.480 not mechanicals (-1/+102), 8.338 save supported (+72), 26.345 save unsupported (-1/+30)
@@ -4003,7 +4001,7 @@ qnilea             > qnilec                 (mID: 36542) M
 qnileb             > qnilea                 (mID:  8111) M
 qnilec             > qnile                  (mID: 36770) M
 raiden2g           > raiden2eg              (mID: 30422) M
-scc85c30           > scc85c30               (mID: 36701) D
+scc85C30           > scc85c30               (mID: 36701) D
 sed1200            > sed1200da              (mID: 34252) D
 suprgolf           > suprgolfj              (mID:  5126) M
 swhr2              > swhr2a                 (mID: 36599) M
@@ -4582,7 +4580,7 @@ $0.174 [#613]
 264.292 total roms (+346), 262.811 machines roms (+336), 1.031 devices roms (+8), 450 BIOSes roms (+2), 884 CHDs (+3), 945 sample files, 88 sample packs, 259.582 good dumps (+369), 3.529 no dumps (+3), 2.065 bad dumps (-23), 16 bugs fixed
 429 software list (-1/+15), 92.880 software (-33/+4498), 411 active SL (-1/+15), 19 orphan SL, 89.304 active software (-33/+4494), 3.704 orphan software (+4), 60.122 software parents (+2517), 32.758 software clones (+2014)
 116.186 software roms (+5527), 5.808 software CHD (+247), 56.492 supported software (+4119), 571 partially supported software (+17), 35.817 unsupported software (+395)
-67 ren (8/59/0):
+66 ren (8/58/0):
 boot_ct2k3sa_cart  > neocart_ct2k3sa   (mID: 33212) D
 boot_ct2k3sp_cart  > neocart_ct2k3sp   (mID: 33213) D
 boot_cthd2003_cart > neocart_ct2k3     (mID: 33211) D
@@ -4626,7 +4624,6 @@ jleague            > jleagueo          (mID:  3647) M
 k2k_k2k_cart       > neocart_kof2002   (mID: 33231) D
 k2k_k2kpls_cart    > neocart_kf2k2pls  (mID: 33221) D
 k2k_matrim_cart    > neocart_matrim    (mID: 33240) D
-k2k_ss5_cart       > neocart_samsho5   (mID: 30027) D
 k2k_ss5_cart       > neocart_samsho5   (mID: 33256) D
 k2k_ss5s_cart      > neocart_samsh5sp  (mID: 33255) D
 mosyougi           > moshougi          (mID:  1568) M
@@ -4764,7 +4761,8 @@ $0.172 [#611] [MAME is now Free and Open Source software based on GPL-2.0+ licen
 249.168 total roms (+954), 247.749 machines roms (+945), 1.023 devices roms (+8), 396 BIOSes roms (+1), 881 CHDs (+3), 945 sample files, 88 sample packs, 244.486 good dumps (+948), 3.499 no dumps (+2), 2.064 bad dumps (+7), 9 bugs fixed
 412 software list (+2), 88.274 software (-7/+35), 394 active SL (-1), 19 orphan SL (+1), 84.702 active software (-7/+30), 3.700 orphan software (+5), 57.532 software parents (+36), 30.742 software clones (+6)
 110.566 software roms (+68), 5.561 software CHD, 52.299 supported software (+24), 553 partially supported software, 35.422 unsupported software (+18)
-9 ren (7/2/0):
+10 ren (8/2/0):
+cmast99            > cmast99b          (mID: 36199) M
 crimfght           > crimfghtu         (mID:  1552) M
 crimfght2          > crimfght          (mID:  2040) M
 h63484             > hd63484           (mID: 28920) D
@@ -4774,9 +4772,7 @@ pepk0756           > pepk0756a         (mID: 35849) M
 pepk0756a          > pepk0756b         (mID: 35850) M
 pepk0756b          > pepk0756c         (mID: 35851) M
 sbishik            > sbishika          (mID:  7061) M
-
-5 del (5/0/0):
-colecob                                (mID: 34537) M
+4 del (4/0/0):
 newbraineim                            (mID: 33585) M
 sv328n80                               (mID: 34530) M
 sv328p80                               (mID: 34531) M
@@ -5495,15 +5491,15 @@ fsharkbla          > fnshark           (mID: 18682) M
 hellfire1          > hellfire1a        (mID:  3431) M
 hellfire2          > hellfire2a        (mID:  6331) M
 hellfire3          > hellfire1         (mID:  8333) M
-kov2p              > kov2p204          (mID:  7931) M
+kov2p              > kov2p204          (mID:  5929) M
 kov2p205           > kov2p             (mID:  7931) M
 outzone            > outzoneh          (mID:  6080) M
 outzoneb           > outzonec          (mID:  1371) M
 outzonec           > outzone           (mID:  5960) M
 outzoned           > outzoneb          (mID:  8596) M
-rfjetsa            > rfjets            (mID: 28673) M
+rfjets             > rfjetsa           (mID: 28673) M
+rfjetsa            > rfjets            (mID:  5300) M
 shangha3           > shangha3j         (mID:  2237) M
-shangha3           > shangha3j         (mID: 29833) M
 1 del (1/0/0):
 wb35a                                  (mID:  8852) M
 
@@ -5573,7 +5569,7 @@ ddp2               > ddp2j             (mID:  7979) M
 ddp2100            > ddp2100j          (mID:  5427) M
 ddp2101            > ddp2101j          (mID:  9063) M
 puckman            > puckmanb          (mID:    12) M
-puckmana           > puckman           (mID:   185) M
+puckmana           > puckman           (mID: 50820) M
 snowbros3          > snowbro3          (mID:  3743) M
 superchs           > superchsu         (mID:  2850) M
 0 del (0/0/0):
@@ -5724,7 +5720,7 @@ j6tbirdsa          > j6tbirdsr         (mID: 11293) M
 j6tbirdsb          > j6tbirds          (mID: 25575) M
 j6twstd            > j6twstdt          (mID: 11299) M
 m1glada            > m1gladz           (mID: 12722) M
-m1gladsh           > m1gladz           (mID: 17723) M
+m1gladsh           > m1glad0           (mID: 17723) M
 m1monod            > m1monodt          (mID: 12749) M
 m1pp               > m1pinkp           (mID: 12758) M
 m1ppd              > m1ppdt            (mID: 12760) M
@@ -5799,7 +5795,7 @@ sc1chaina                              (mID: 18871) M
 sc1clbwb                               (mID: 18886) M
 sc1csclb                               (mID: 18893) M
 sc1csclc                               (mID: 18894) M
-sc1potpa                               (mID: 50824) M
+sc1potpa                               (mID: 50823) M
 sc1pwrla                               (mID: 18913) M
 sc1winstb                              (mID: 18925) M
 sc1winstbp                             (mID: 18926) M
@@ -5836,7 +5832,7 @@ hcastlej           > akumajou          (mID:  1606) M
 hcastleo           > hcastlek          (mID:  1561) M
 hcastljo           > akumajoun         (mID:  3280) M
 suprloco           > suprlocoo         (mID:  1247) M
-suprloco           > suprlocoo         (mID:  8170) M
+suprlocoa          > suprloco          (mID:  8170) M
 vimana1            > vimanaj           (mID:  1180) M
 wexpressb          > wexpressb1        (mID:   962) M
 0 del (0/0/0):
@@ -6171,7 +6167,7 @@ $0.145u7 [#568]
 sc_pacmn           > sc4pacmn          (mID: 13669) M
 sc4ggame           > sc4ggtb           (mID: 13571) M
 sc4ggamee          > sc4ggtba          (mID: 14686) M
-sc4ggameh          > sc4ggame          (mID: 50461) M
+sc4ggameh          > sc4ggame          (mID: 26046) M
 sc4ggameo          > sc4ggtbb          (mID: 14687) M
 sc4ggg             > sc4gggtb          (mID: 14684) M
 sc4ggga            > sc4ggg            (mID: 14666) M
@@ -6312,9 +6308,8 @@ $0.145u1 [#562]
 188.474 total roms (+279), 188.139 machines roms (+279), 14 devices roms, 321 BIOSes roms, 559 CHDs (+2), 772 sample files (+227), 76 sample packs (+36), 186.099 good dumps (+279), 2.019 no dumps (+1), 915 bad dumps (+1), 15 bugs fixed
 3 software list, 347 software, 3 active SL, 0 orphan SL, 347 active software, 0 orphan software, 250 software parents, 97 software clones
 3.492 software roms, 0 software CHD, 305 supported software, 0 partially supported software, 42 unsupported software
-6 ren (6/0/0):
+5 ren (5/0/0):
 dynabb             > dynabb97          (mID:  5188) M
-eyeszac            > eyeszacb          (mID:  6111) M
 jojoba             > jojobaa           (mID:  4975) M
 jojoban            > jojobaan          (mID:  4899) M
 jojobane           > jojobaane         (mID:  6693) M
@@ -6362,10 +6357,11 @@ $0.144u6 [#559]
 187.664 total roms (+184), 187.330 machines roms (+184), 14 devices roms, 320 BIOSes roms, 554 CHDs, 545 sample files, 40 sample packs, 185.287 good dumps (+170), 2.018 no dumps (+5), 913 bad dumps (+9), 8 bugs fixed
 3 software list, 347 software, 3 active SL, 0 orphan SL, 347 active software, 0 orphan software, 250 software parents, 97 software clones
 3.492 software roms, 0 software CHD, 305 supported software, 0 partially supported software, 42 unsupported software
-6 ren (6/0/0):
+7 ren (6/1/0):
 beaminva           > pacominv          (mID:  6257) M
+eyeszac            > eyeszacb          (mID:  6111) M
 galpanis           > galpanisj         (mID:  3528) M
-mpr8210            > simutrek          (mID: 19469) M
+mpr8210            > simutrek          (mID: 19469) D
 saeuro             > spaceaceeuro      (mID:  6438) M
 spaceaa            > spaceacea         (mID:  6436) M
 spaceaa2           > spaceacea2        (mID:  6437) M
@@ -6452,7 +6448,6 @@ $0.144u1 [#554]
 3.492 software roms, 0 software CHD, 305 supported software, 0 partially supported software, 42 unsupported software
 2 ren (2/0/0):
 cprosocc           > cpsoccer          (mID:  2817) M
-dolphin            > dolphunk          (mID:  8305) M
 galpani3           > galpani3j         (mID:  5008) M
 0 del (0/0/0):
 -
@@ -6558,12 +6553,12 @@ ddp3blk            > ddpdojblk         (mID:  9065) M
 m3optunla          > m3optunl          (mID: 11359) M
 sc_film            > ad4film           (mID: 13169) M
 sc4cf              > sc4czfr           (mID: 13519) M
-sc4phgcl           > sc4pglcl          (mID: 50462) M
+sc4phgcl           > sc4pglcl          (mID: 17384) M
 sc5cmony           > sc5colmo          (mID: 18026) M
-sc5rh              > sc5hog            (mID: 50463) M
-sc5u6606           > sc5rhrd           (mID: 15918) M
+sc5rh              > sc5hog            (mID: 13909) M
+sc5u6606           > sc5rhrd           (mID: 13966) M
 sc5u7606           > sc5rhre           (mID: 15919) M
-sc5witwi           > sc5sitwi          (mID: 50464) M
+sc5witwi           > sc5sitwi          (mID: 13975) M
 smgpu3             > smgpu1            (mID:  5867) M
 4 del (4/0/0):
 ac1piadx                               (mID: 13164) M
@@ -6572,7 +6567,7 @@ sc4pptp                                (mID: 15054) M
 sc4redal                               (mID: 15065) M
 
 
-$0.143u6 [#549]
+$0.143u6 [#549] CHECK ALL THE RENAMES AGAIN!
 2011/09/20
 15.868 total items, 1.186 drivers (+5), 15.793 machines (+1780), 8.393 parents (+225), 7.400 clones (+1555), 62 BIOSes, 13 devices (+1), 508 requires CHDs, 181 use samples, 6.915 audio mono (+41), 7.009 audio stereo (+1790), 17 audio multichannel, 1.852 no audio (-51)
 7.850 working (+15), 7.943 not working (+1765), 5.690 mechanicals (+1754), 10.103 not mechanicals (+26), 4.518 save supported (+17), 11.275 save unsupported (+1763)
@@ -6581,7 +6576,7 @@ $0.143u6 [#549]
 181.055 total roms (+5981), 180.779 machines roms (+5980), 14 devices roms (+1), 262 BIOSes roms, 536 CHDs, 545 sample files, 40 sample packs, 178.741 good dumps (+5961), 1.971 no dumps (+11), 879 bad dumps (+9), 8 bugs fixed
 2 software list, 107 software, 2 active SL, 0 orphan SL, 107 active software, 0 orphan software, 99 software parents, 8 software clones
 541 software roms, 0 software CHD, 65 supported software, 0 partially supported software, 42 unsupported software
-615 ren (615/0/0):
+614 ren (614/0/0):
 exvania            > exvaniaj          (mID:  2864) M
 futari15           > futari15a         (mID: 10603) M
 ikari3             > ikari3u           (mID:  1497) M
@@ -6973,7 +6968,7 @@ sc_mopl            > sc5mopl           (mID: 13936) M
 sc_mor2r           > sc5mor2r          (mID: 13937) M
 sc_motor           > sc4motor          (mID: 13654) M
 sc_mou             > sc4mou            (mID: 13655) M
-sc_mowow           > sc4mowow          (mID: 26712) M
+sc_mowow           > sc4mowowd         (mID: 14264) M
 sc_mr2r            > ad5mr2r           (mID: 13192) M
 sc_mrh             > sc4mrh            (mID: 13656) M
 sc_mrrcl           > sc5mrrcl          (mID: 13938) M
@@ -6995,7 +6990,6 @@ sc_outlw           > sc4outlw          (mID: 13665) M
 sc_oyf             > sc4oyf            (mID: 13666) M
 sc_paccl           > sc4paccl          (mID: 13667) M
 sc_paccs           > sc4paccs          (mID: 13668) M
-sc_pacmn           > sc4pacmn          (mID: 13669) M
 sc_pacpl           > sc4pacpl          (mID: 13670) M
 sc_parot           > sc5parot          (mID: 13944) M
 sc_party           > sc4party          (mID: 13671) M
@@ -7303,7 +7297,7 @@ m_brkfs4           > sc2brkfs4         (mID:  8446) M
 m_brkfs5           > sc2brkfs5         (mID:  8447) M
 m_brkfst           > sc2brkfs          (mID: 18982) M
 m_clattr           > sc1clatt          (mID:  7854) M
-m_cpeno1           > sc2cpe            (mID: 19062) M
+m_cpeno1           > sc2cpe            (mID:  7759) M
 m_lotsse           > sc1lotus          (mID:  7855) M
 m_luvjub           > sc2luvv           (mID:  7780) M
 m_roulet           > sc1roul           (mID:  7856) M
@@ -7792,7 +7786,7 @@ fatfursa           > fatfurspa         (mID:  4486) M
 gangwars           > gangwarsu         (mID:  1490) M
 gangwarsb          > gangwars          (mID:  1489) M
 gwingjd            > gigawingjd        (mID:  7346) M
-kof99              > kof99h            (mID: 46811) M
+kof99              > kof99h            (mID: 32712) M
 kof99a             > kof99             (mID:  2610) M
 progerjd           > progearjbl        (mID:  7354) M
 rdftdi             > rdftadi           (mID:  5705) M
@@ -8368,7 +8362,7 @@ act2000d2          > act2000dx         (mID:  7563) M
 act2000v           > act2000v1         (mID:  7567) M
 act2000v2          > act2000           (mID:  7559) M
 act2000v3          > act2000vx         (mID:  7568) M
-anibonus           > anibonusxo        (mID:  7570) M
+anibonus           > anibonusxo        (mID:  7580) M
 anibonus2          > anibonuso         (mID:  7575) M
 anibonus3          > anibonusxo2       (mID:  7581) M
 anibonus4          > anibonusxo3       (mID:  7582) M
@@ -8378,7 +8372,7 @@ anibonusb          > anibonusb1        (mID:  7571) M
 anibonusd          > anibonusd1        (mID:  7573) M
 anibonusv          > anibonusv1        (mID:  7578) M
 anibonusv3         > anibonus          (mID:  7570) M
-anithunt           > anithunto         (mID:  7583) M
+anithunt           > anithunto         (mID:  7585) M
 anithunt2          > anithunto2        (mID:  7586) M
 anithuntb          > anithunt          (mID:  7583) M
 anithuntd          > anithuntd1        (mID:  7584) M
@@ -8404,18 +8398,17 @@ classiced          > classiced1        (mID:  7610) M
 classiced3         > classice          (mID:  7607) M
 classicev          > classicev1        (mID:  7612) M
 classicev3         > classicev         (mID:  7612) M
-cuebrckj           > cuebrickj         (mID:  4059) M
 cuebrckj           > cuebrickj         (mID:  1803) M
 dblchal            > dblchalo          (mID:  7615) M
-dblchalb           > dblchal           (mID:  7615) M
-dblchalc           > dblchalc1         (mID:  7616) M
-dblchald           > dblchald1         (mID:  7617) M
+dblchalb           > dblchal           (mID:  7616) M
+dblchalc           > dblchalc1         (mID:  7617) M
+dblchald           > dblchald1         (mID:  7618) M
 dblchalv           > dblchalv1         (mID:  7619) M
 drgwrld3           > drgnwrldv30       (mID:  6023) M
 fb2gen             > fb2geno           (mID:  7622) M
 fb2gena            > fb2geno2          (mID:  7628) M
 fb2genc            > fb2genc1          (mID:  7623) M
-fb2gend            > fb2gend1          (mID:  7625) M
+fb2gend            > fb2gend1          (mID:  7629) M
 fb2genv            > fb2genv1          (mID:  7629) M
 fb2genv3           > fb2gen            (mID:  7622) M
 fb2nd              > fb2ndo            (mID:  7631) M
@@ -8431,13 +8424,13 @@ fb4d               > fb4d1             (mID:  7642) M
 fb4v               > fb4v1             (mID:  7647) M
 fb4v3              > fb4exp            (mID:  7644) M
 fb6d               > fb6d2             (mID:  7889) M
-fb6d2              > fb6d1             (mID:  7889) M
+fb6d2              > fb6d1             (mID:  7888) M
 fb6s               > fb6s1             (mID:  7890) M
 fb6se              > fb6sed1           (mID:  7892) M
-fb6sed             > fb6sed2           (mID:  7894) M
+fb6sed             > fb6sed2           (mID:  7893) M
 fb6sed2            > fb6se             (mID:  7894) M
 fb6sev             > fb6sev1           (mID:  7895) M
-fb6sev3            > fb6sev            (mID:  7895) M
+fb6sev3            > fb6sev            (mID:  7897) M
 fb6v               > fb6v1             (mID:  7898) M
 fb6v3              > fb6v              (mID:  7898) M
 fcnudge            > fcnudgeo3         (mID:  7649) M
@@ -8528,6 +8521,7 @@ sfruitbd           > sfruitbd2         (mID:  7793) M
 sfruitbd2          > sfruitbdh         (mID:  7794) M
 sfruitbd3          > sfruitbd1         (mID:  7792) M
 sfruitbv           > sfruitbv1         (mID:  7799) M
+sfruitbv2          > sfruitb           (mID:  7798) M
 sfruitbv3          > sfruitbh          (mID:  7795) M
 sfruitbv4          > sfruitbvh         (mID:  7801) M
 sfruitbv5          > sfruitbv2         (mID:  7800) M
@@ -8663,7 +8657,7 @@ buggybjr           > buggyboyjr        (mID:  4203) M
 buggycht           > buggychlt         (mID:  2300) M
 bullfgts           > bullfgtrs         (mID:  3404) M
 burnfrco           > burnforco         (mID:  6056) M
-calspeda           > calspeeda         (mID:  5920) M
+calspeda           > calspeeda         (mID:  4646) M
 cannbalv           > cannballv         (mID:  7524) M
 captavna           > captavena         (mID:  3817) M
 captavne           > captavene         (mID:  3261) M
@@ -8990,7 +8984,7 @@ kicknruu           > kicknrunu         (mID:  6890) M
 kikcubib           > kikcubicb         (mID:  5663) M
 kingbalj           > kingballj         (mID:  1226) M
 knckhedj           > knckheadj         (mID:  2872) M
-kungfud            > kungfumd          (mID:   934) M
+kungfud            > kungfumd          (mID:   933) M
 kuniokub           > kuniokunb         (mID:   727) M
 kyukaido           > kyukaidko         (mID:  2048) M
 labyrunk           > labyrunrk         (mID:  3972) M
@@ -9807,8 +9801,8 @@ $0.130u1 [#476]
 6 ren (6/0/0):
 citalian           > cpokerpkg         (mID:  7881) M
 citaliana          > citalcup          (mID:  7880) M
-maglord            > maglordh          (mID:  1073) M
 maglord            > maglordh          (mID:   674) M
+maglordh           > maglord           (mID:  1073) M
 mfish_2            > mfish_12          (mID:  7838) M
 mfish_2a           > mfish_12a         (mID:  7839) M
 0 del (0/0/0):
@@ -9968,8 +9962,8 @@ $0.129 [#468]
 112.695 total roms (+925), 112.535 machines roms (+913), 0 devices roms, 160 BIOSes roms (+12), 306 CHDs (+6), 407 sample files, 35 sample packs, 111.042 good dumps (+784), 1.386 no dumps (+140), 573 bad dumps (+7), 39 bugs fixed
 13 ren (13/0/0):
 chryigld           > chrygld           (mID:  7396) M
-cmaster            > cmast91           (mID:  7434) M
-cmasterb           > cmaster           (mID:  5744) M
+cmaster            > cmast91           (mID:  7419) M
+cmasterb           > cmaster           (mID:  7434) M
 jojo               > jojoa             (mID:  6679) M
 jojoalt            > jojo              (mID:  6695) M
 jojoaltn           > jojon             (mID:  9072) M
@@ -10149,7 +10143,7 @@ $0.127u6 [#457]
 296 use stick, 0 use gambling, 0 use joystick, 0 use keyboard, 0 use keypad, 177 use lightgun, 0 use mahjong, 0 use mouse, 0 use buttons only, 259 use paddle, 282 use pedal, 0 use positional, 360 use dial, 197 use trackball, 0 use hanafuda
 107.793 total roms (+56), 107.655 machines roms (+56), 0 devices roms, 138 BIOSes roms, 295 CHDs, 394 sample files, 34 sample packs, 106.333 good dumps (+51), 1.222 no dumps (+2), 533 bad dumps (+3), 8 bugs fixed
 6 ren (6/0/0):
-20pacgal           > 20pacgaa          (mID:  8770) M
+20pacgal           > 20pacgaa          (mID:  6371) M
 csclub             > csclub1           (mID:  4058) M
 kof95              > kof95h            (mID:  1010) M
 kof95a             > kof95             (mID:  3995) M
@@ -10518,11 +10512,12 @@ $0.124u2 [#431]
 103.883 total roms (+92), 103.771 machines roms (+92), 0 devices roms, 112 BIOSes roms, 247 CHDs, 394 sample files, 34 sample packs, 102.446 good dumps (+85), 1.145 no dumps (+5), 539 bad dumps (+2), 18 bugs fixed
 6 ren (6/0/0):
 cupsoc             > cupsocs2          (mID:  4649) M
+cupsoc2            > cupsoc            (mID:  4648) M
 cupsocbl           > cupsocsb          (mID:  4650) M
-cupsocs2           > cupsoc            (mID:  4648) M
 falcona            > falconz           (mID:  5693) M
 pallavol           > spikes91          (mID:  6572) M
 vautour2           > vautourz          (mID:  5737) M
+
 0 del (0/0/0):
 -
 
@@ -10588,16 +10583,16 @@ $0.123u5 [#426]
 286 use stick, 0 use gambling, 0 use joystick, 0 use keyboard, 0 use keypad, 161 use lightgun (+5), 0 use mahjong, 0 use mouse, 0 use buttons only, 247 use paddle, 270 use pedal, 0 use positional, 349 use dial, 194 use trackball, 0 use hanafuda
 103.496 total roms (+27), 103.384 machines roms (+27), 0 devices roms, 112 BIOSes roms, 245 CHDs, 391 sample files, 33 sample packs, 102.069 good dumps (+21), 1.135 no dumps, 537 bad dumps (+6), 8 bugs fixed
 11 ren (11/0/0):
-gepoker1           > amuse             (mID:  6160) M
-gepoker2           > gepoker1          (mID:  6161) M
-gepoker3           > gepoker2          (mID: 37155) M
+gepoker1           > amuse             (mID:  6158) M
+gepoker2           > gepoker1          (mID:  6160) M
+gepoker3           > gepoker2          (mID:  6161) M
 gt101c             > gtsers3           (mID:  7034) M
 gt101c1            > gtsers4           (mID:  7035) M
 gt102b             > gtsers2           (mID:  7033) M
 gt102c             > gtsers1           (mID:  7032) M
-gt102c1            > gtsers5           (mID:  7037) M
-gt102c2            > gtsers7           (mID:  7038) M
-gt102c3            > gtsersa           (mID:  7039) M
+gt102c1            > gtsers7           (mID:  7037) M
+gt102c2            > gtsersa           (mID:  7038) M
+gt102c3            > gtsersb           (mID:  7039) M
 m075               > jokpoker          (mID:  6307) M
 0 del (0/0/0):
 -
@@ -11402,8 +11397,8 @@ $0.113u3 [#369]
 4.724 horizontal screen (+30), 1.827 vertical screen (+1), 6.471 raster graphics (+31), 80 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless, 1.045 one player (+5), 4.787 two players (+15), 121 three players, 533 more than three players
 272 use stick (-1), 0 use gambling, 0 use joystick, 0 use keyboard, 0 use keypad, 132 use lightgun, 0 use mahjong, 0 use mouse, 0 use buttons only, 232 use paddle, 259 use pedal, 0 use positional, 340 use dial (+1), 181 use trackball (-1), 0 use hanafuda
 97.811 total roms (+251), 97.722 machines roms (+251), 0 devices roms, 89 BIOSes roms, 201 CHDs (+3), 403 sample files (-1), 35 sample packs, 96.839 good dumps (+238), 709 no dumps (+6), 464 bad dumps (+10), 1 bug fixed
-1 ren (1/0/0):
-pcnfrk3m           > drmn3m            (mID:  6525) M
+0 ren (0/0/0):
+-
 0 del (0/0/0):
 -
 
@@ -12467,7 +12462,7 @@ $0.102u4 [#293]
 arabfgt            > arabfgtu          (mID:  3619) M
 jollycdb           > jolycdcr          (mID:  5806) M
 jollycdc           > jolycdit          (mID:  5807) M
-jollycdd           > jolycdat          (mID: 48858) M
+jollycdd           > jolycdat          (mID:  5913) M
 jollycde           > jolycdab          (mID:  5830) M
 mace               > macea             (mID:  4658) M
 mchampdx           > mchampda          (mID:  5671) M
@@ -12635,7 +12630,7 @@ $0.100u4 [#282]
 211 use stick (+22), 0 use gambling, 4.278 use joystick (-103), 0 use keyboard, 0 use keypad, 112 use lightgun, 0 use mahjong, 0 use mouse, 0 use buttons only, 183 use paddle, 0 use pedal, 0 use positional, 349 use dial (+84), 175 use trackball (+1), 0 use hanafuda
 88.026 total roms (+71), 87.946 machines roms (+71), 0 devices roms, 80 BIOSes roms, 76 CHDs, 422 sample files, 35 sample packs, 87.580 good dumps (+74), 248 no dumps, 274 bad dumps (-3), 1 bug fixed
 4 ren (4/0/0):
-bonuscrd           > jollycdd          (mID: 48858) M
+bonuscrd           > jollycdd          (mID:  5913) M
 igpoker            > jollycde          (mID:  5830) M
 poker4             > bigdeal           (mID:  5826) M
 poker8             > bigdealb          (mID:  5827) M
@@ -13330,7 +13325,7 @@ $0.92 [#232]
 3.872 horizontal screen (+53), 1.636 vertical screen (+12), 5.435 raster graphics (+65), 73 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless, 785 one player (-74), 4.039 two players (+146), 142 three players, 498 more than three players (+1)
 174 use stick, 0 use gambling, 4.169 use joystick (+29), 0 use keyboard, 0 use keypad, 101 use lightgun (+7), 0 use mahjong, 0 use mouse, 0 use buttons only, 169 use paddle, 0 use pedal, 0 use positional, 271 use dial (+1), 154 use trackball (+31), 0 use hanafuda
 83.890 total roms (+1104), 83.811 machines roms (+1104), 0 devices roms, 79 BIOSes roms, 75 CHDs, 422 sample files, 35 sample packs, 83.573 good dumps (+1094), 220 no dumps (+4), 172 bad dumps (+6), 0 bugs fixed
-76 ren (76/0/0):
+77 ren (77/0/0):
 alexkida           > alexkidd          (mID:  1535) M
 alexkidd           > alexkid1          (mID:   806) M
 aliensya           > aliensy2          (mID:  1538) M
@@ -13359,8 +13354,8 @@ goldnaxb           > goldnax1          (mID:  1558) M
 goldnaxc           > goldnaxu          (mID:  1559) M
 goldnaxe           > goldnax2          (mID:   516) M
 goldnxj2           > goldnax3          (mID:  5331) M
-gprider            > gprider1          (mID: 35541) M
-gpridera           > gprider           (mID: 35541) M
+gprider            > gprider1          (mID:  5319) M
+gpridera           > gprider           (mID:  5320) M
 jyuo8571           > altbeasj          (mID:  5071) M
 jyuohki            > altbeaj1          (mID:  1953) M
 jyuohki2           > altbeaj3          (mID:  5329) M
@@ -13404,6 +13399,7 @@ toutrunk           > toutrun           (mID:  5327) M
 wb3a               > wb31              (mID:  5317) M
 wb3b               > wb3               (mID:  1528) M
 wb3ba              > wb33              (mID:  1600) M
+wb3bb              > wb32              (mID:  5279) M
 wrestwra           > wrestwa1          (mID:  5342) M
 wrestwrb           > wrestwa2          (mID:  5392) M
 wwallyb            > wwally1           (mID:  4867) M
@@ -13954,7 +13950,7 @@ $0.84u6 [#193]
 0 ren (0/0/0):
 -
 1 del (1/0/0):
-columns2                               (mID:  2446) M
+columns2                               (mID:  2444) M
 
 
 $0.84u5 [#192]
@@ -14951,7 +14947,7 @@ $0.67 [#124]
 -
 2 del (2/0/0):
 raflsiau                               (mID:  6694) M
-xmen6p                                 (mID:  5714) M
+xmen6p                                 (mID:  4478) M
 
 
 $0.66 [#123]
@@ -15239,7 +15235,7 @@ dondokod           > dondokdj          (mID:  2188) M
 galxwars           > galxwart          (mID:    50) M
 npacmod            > puckmod           (mID:  1244) M
 pacman             > puckman           (mID:    12) M
-pacmanjp           > puckmana          (mID:   185) M
+pacmanjp           > puckmana          (mID: 50820) M
 pacmanm            > pacman            (mID:     4) M
 pbobblbs           > pbobble           (mID:  2165) M
 pbobble            > pbobblen          (mID:   683) M
@@ -15408,7 +15404,7 @@ $0.37b9 [#102] [Removed "ridhero" and readded another machine with same name]
 37.308 total roms (+610), 37.298 machines roms (+610), 0 devices roms, 10 BIOSes roms, 0 CHDs, 563 sample files (+2), 30 sample packs (+1), 37.222 good dumps (+613), 86 no dumps (-3), 0 bad dumps, 0 bugs fixed
 1 ren (1/0/0):
 mk2                > mk2r31            (mID:   942) M
-1 del:
+1 del (1/0/0):
 ridhero                                (mID:   688) M
 
 
@@ -15519,7 +15515,7 @@ grobda3            > grobda            (mID:  1355) M
 rtype              > rtypepj           (mID:  1750) M
 spyhunt2           > spyhnt2a          (mID:  1756) M
 1 del (1/0/0):
-rtypeb                                 (mID:  6933) M
+rtypeb                                 (mID:  1752) M
 
 
 $0.36 [#093]
@@ -15889,7 +15885,7 @@ $0.35rc2 [#071]
 8 ren (8/0/0):
 1943jap            > 1943j             (mID:   537) M
 ccjap              > cclimbrj          (mID:    40) M
-gngcross           > gnga              (mID:  1439) M
+gngcross           > gnga              (mID:   180) M
 gngjap             > makaimur          (mID:  1444) M
 indytem2           > indytem3          (mID:  1283) M
 japirem            > gteikoku          (mID:    26) M
@@ -15907,7 +15903,7 @@ $0.35rc1 [#070]
 21 use stick, 0 use gambling, 1.241 use joystick (-1/+29), 0 use keyboard, 0 use keypad, 12 use lightgun, 0 use mahjong, 0 use mouse, 0 use buttons only, 22 use paddle, 0 use pedal, 0 use positional, 71 use dial (+3), 44 use trackball, 0 use hanafuda
 21.195 total roms (+450), 21.192 machines roms (+450), 0 devices roms, 3 BIOSes roms, 0 CHDs, 438 sample files (-3), 31 sample packs (-2), 21.159 good dumps (+451), 36 no dumps (-1), 0 bad dumps, 0 bugs fixed
 8 ren (8/0/0):
-devilfsh           > devilfsg          (mID:  1108) M
+devilfsh           > devilfsg          (mID:  1403) M
 digdug             > digdugat          (mID:   153) M
 digdugnm           > digdug            (mID:   152) M
 jhunt              > jungleh           (mID:    91) M
@@ -16326,8 +16322,7 @@ $0.33b7 [#043]
 287 horizontal screen (-2/+12), 341 vertical screen (-7/+21), 582 raster graphics (-9/+30), 46 vector graphics (+3), 0 lcd graphics, 0 svg graphics, 0 screenless, 126 one player (-2/+9), 482 two players (-7/+23), 5 three players, 15 more than three players (+1)
 15 use stick (-1), 0 use gambling, 536 use joystick (-7/+28), 0 use keyboard, 0 use keypad, 0 use lightgun, 0 use mahjong, 0 use mouse, 0 use buttons only, 14 use paddle (+1), 0 use pedal, 0 use positional, 33 use dial (-1/+2), 22 use trackball (+1), 0 use hanafuda
 8.160 total roms (+508), 8.160 machines roms (+508), 0 devices roms, 0 BIOSes roms, 0 CHDs, 352 sample files (+2), 25 sample packs (+1), 8.150 good dumps (+507), 10 no dumps (+1), 0 bad dumps, 0 bugs fixed
-26 ren (26/0/0):
-1942               > 1942a             (mID:    98) M
+25 ren (25/0/0):
 asteroi2           > asteroid          (mID:   148) M
 asteroid           > asteroi1          (mID:   200) M
 bagman             > bagmans           (mID:    18) M
@@ -16372,8 +16367,8 @@ $0.33b6 [#042]
 277 horizontal screen (+14), 327 vertical screen (+7), 561 raster graphics (+21), 43 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless, 119 one player (+4), 466 two players (+16), 5 three players, 14 more than three players (+1)
 16 use stick (+2), 0 use gambling, 515 use joystick (+16), 0 use keyboard, 0 use keypad, 0 use lightgun, 0 use mahjong, 0 use mouse, 0 use buttons only, 13 use paddle (+1), 0 use pedal, 0 use positional, 32 use dial, 21 use trackball (+1), 0 use hanafuda
 7.652 total roms (+306), 7.652 machines roms (+306), 0 devices roms, 0 BIOSes roms, 0 CHDs, 350 sample files (+114), 24 sample packs (+5), 7.643 good dumps (+304), 9 no dumps (+2), 0 bad dumps, 0 bugs fixed
-0 ren (0/0/0):
--
+1 ren (1/0/0):
+1942               > 1942a             (mID:    98) M
 0 del (0/0/0):
 -
 
