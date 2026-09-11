@@ -1,5 +1,5 @@
 ﻿#     ==========================================================
-#     MAME RENAMESET.DAT v0.290git  Latest update:  Sep  8, 2026
+#     MAME RENAMESET.DAT v0.290git  Latest update:  Sep 11, 2026
 #     ==========================================================
 #
 #     Home-page: https://www.progettosnaps.net/renameset/
@@ -18,11 +18,11 @@
 #
 #               Internal Version 16.06
 #
-#       823 removed machines/devices/bios overall in the history of MAME
-#     6.959 renamed machines/devices/bios overall in the history of MAME
+#       824 removed machines/devices/bios overall in the history of MAME
+#     6.955 renamed machines/devices/bios overall in the history of MAME
 #
 #           Rename/Delete Software Lists (in dat): From version 0.141u2 to 0.170 already rechecked
-#           Rename errors found but still to be fixed: 32
+#           Rename errors found but still to be fixed: 26
 #
 #
 $0.289 [#728]
@@ -3250,7 +3250,7 @@ $0.198 [#637]
 17 ren (8/9/0):
 astrocade          > astrocade_io      (mID: 31145) D
 ffightj3           > ffightj4          (mID: 29289) M
-i82439tx           > i82439tx_legacy   (mID: 37774) D
+i82439tx           > i82439tx_legacy   (mID: 32402) D
 i82439tx_new       > i82439tx          (mID: 37774) D
 lastmisn           > lastmisnu6        (mID:  1116) M
 lastmisno          > lastmisnu5        (mID:  1115) M
@@ -7426,11 +7426,13 @@ $0.142u6 [#542]
 142.688 total roms (+63), 142.432 machines roms (+61), 0 devices roms, 256 BIOSes roms (+2), 530 CHDs (+1), 545 sample files, 40 sample packs, 140.637 good dumps (+60), 1.715 no dumps (+1), 866 bad dumps (+3), 7 bugs fixed
 2 software list, 107 software, 2 active SL, 0 orphan SL, 107 active software, 0 orphan software, 99 software parents, 8 software clones
 541 software roms, 0 software CHD, 65 supported software, 0 partially supported software, 42 unsupported software
-4 ren (4/0/0):
+6 ren (6/0/0):
 dolphntr           > dolphtra          (mID:  8125) M
 dolphtra           > dolphntr          (mID:  8126) M
 ghostb             > ghostb2a          (mID:   968) M
 kkojnoli           > kkotnoli          (mID:  7509) M
+nfb96              > nfb96a            (mID:  7545) M
+nfb96a             > nfb96             (mID:  7689) M
 0 del (0/0/0):
 -
 
@@ -8442,14 +8444,14 @@ hldspin1           > hldspin1o         (mID:  7658) M
 hldspin1b          > hldspin1          (mID:  7656) M
 hldspin1d          > hldspin1dt        (mID:  7657) M
 hldspin1v          > hldspin1vt        (mID:  7659) M
-hldspin2           > hldspin2o         (mID:  7660) M
+hldspin2           > hldspin2o         (mID:  7662) M
 hldspin2b          > hldspin2          (mID:  7660) M
 hldspin2d          > hldspin2d1        (mID:  7661) M
 hldspin2v          > hldspin2v1        (mID:  7663) M
-moneymac           > moneymacv1        (mID:  7676) M
-moneymacd          > moneymacd1        (mID:  7679) M
+moneymac           > moneymacv1        (mID:  7679) M
+moneymacd          > moneymacd1        (mID:  7677) M
 moneymacv          > moneymac          (mID:  7676) M
-parrot3            > parrot3o          (mID:  7696) M
+parrot3            > parrot3o          (mID:  7699) M
 parrot3b           > parrot3b1         (mID:  7697) M
 parrot3d           > parrot3d1         (mID:  7698) M
 parrot3v           > parrot3           (mID:  7696) M
@@ -9595,7 +9597,7 @@ $0.132u1 [#486]
 118.846 total roms (+146), 118.681 machines roms (+146), 0 devices roms, 165 BIOSes roms, 396 CHDs (+4), 407 sample files, 35 sample packs, 117.175 good dumps (+129), 1.425 no dumps (+3), 642 bad dumps (+18), 7 bugs fixed
 6 ren (6/0/0):
 crusnexo           > crusnexa          (mID:  5060) M
-guab               > guab6             (mID:  7055) M
+guab               > guab6             (mID:  8142) M
 guab3              > guab              (mID:  7055) M
 quart2             > quartet2a         (mID:  3982) M
 quart21            > quartet2          (mID:   829) M
@@ -9878,7 +9880,7 @@ vball              > vballb            (mID:  2777) M
 
 $0.129u4 [#472]
 2009/02/17
-7.800 total items, 993 drivers (+2), 7.759 machines (+261), 4.025 parents (+47), 3.734 clones (+214), 41 BIOSes, 0 devices, 294 requires CHDs, 129 use samples, 4.734 audio mono (+252), 2.791 audio stereo (+13), 22 audio multichannel, 212 no audio (-4)
+7.800 total items, 993 drivers (+2), 7.759 machines (-1/+262), 4.025 parents (-1/+48), 3.734 clones (+214), 41 BIOSes, 0 devices, 294 requires CHDs, 129 use samples, 4.734 audio mono (+252), 2.791 audio stereo (+13), 22 audio multichannel, 212 no audio (-4)
 6.595 working (+79), 1.164 not working (+182), 0 mechanicals, 7.759 not mechanicals (+261), 1.533 save supported (+24), 6.226 save unsupported (+237)
 5.781 horizontal screen (+233), 1.954 vertical screen (+8), 7.653 raster graphics (+240), 82 vector graphics (+1), 0 lcd graphics, 0 svg graphics, 24 screenless (+20), 1.665 one player (+241), 5.279 two players (+17), 136 three players (+1), 621 more than three players
 300 use stick (+1), 0 use gambling, 0 use joystick, 0 use keyboard, 0 use keypad, 191 use lightgun (+3), 0 use mahjong, 0 use mouse, 0 use buttons only, 261 use paddle (+1), 283 use pedal (+1), 0 use positional, 366 use dial (+1), 199 use trackball, 0 use hanafuda
@@ -9899,8 +9901,8 @@ skullfng           > skullfnj          (mID:  4749) M
 socbrala           > socbrawla         (mID: 45992) M
 thunderh           > thundrhu          (mID:  5802) M
 tophunta           > tophuntra         (mID:  8340) M
-0 del (0/0/0):
--
+1 del (1/0/0):
+fruit                                  (mID: 51102) M
 
 
 $0.129u3 [#471]
@@ -10129,8 +10131,8 @@ $0.127u7 [#458]
 107.924 total roms (+131), 107.786 machines roms (+131), 0 devices roms, 138 BIOSes roms, 295 CHDs, 394 sample files, 34 sample packs, 106.468 good dumps (+135), 1.222 no dumps, 529 bad dumps (-4), 26 bugs fixed
 3 ren (3/0/0):
 decathlt           > decathlo          (mID:  4233) M
-megat3a            > megat3ca          (mID: 28635) M
-megat3b            > megat3a           (mID:  6403) M
+megat3a            > megat3ca          (mID:  6403) M
+megat3b            > megat3a           (mID:  7096) M
 0 del (0/0/0):
 -
 
@@ -10399,8 +10401,9 @@ $0.125u4 [#439]
 5.184 horizontal screen (+23), 1.901 vertical screen (+1), 7.004 raster graphics (+24), 81 vector graphics, 0 lcd graphics, 0 svg graphics, 4 screenless, 1.237 one player (+16), 5.129 two players (+6), 124 three players, 554 more than three players (+2)
 287 use stick, 0 use gambling, 0 use joystick, 0 use keyboard, 0 use keypad, 169 use lightgun, 0 use mahjong, 0 use mouse, 0 use buttons only, 252 use paddle, 276 use pedal (+1), 0 use positional, 357 use dial, 194 use trackball, 0 use hanafuda
 104.847 total roms (+195), 104.735 machines roms (+195), 0 devices roms, 112 BIOSes roms, 248 CHDs, 394 sample files, 34 sample packs, 103.406 good dumps (+177), 1.161 no dumps (+21), 528 bad dumps (-3), 15 bugs fixed
-1 ren (1/0/0):
+2 ren (2/0/0):
 gatcards           > poker41           (mID:  7098) M
+gatslots           > pulltabs          (mID:  7099) M
 0 del (0/0/0):
 -
 
@@ -11079,7 +11082,7 @@ kicka              > kickc             (mID:   666) M
 trvwhzha           > trvwzha           (mID:  5736) M
 trvwhzho           > trvwzh            (mID:  5100) M
 trvwhzii           > trvwz2            (mID:  5099) M
-trvwhziv           > trvwz4            (mID: 46807) M
+trvwhziv           > trvwz4            (mID:  6050) M
 trvwhzva           > trvwzva           (mID:  6738) M
 trvwhzve           > trvwzv            (mID:  6051) M
 trvwziii           > trvwz3h           (mID:  6231) M
@@ -12325,8 +12328,8 @@ $0.104u1 [#302]
 4.287 horizontal screen (+5), 1.742 vertical screen, 5.952 raster graphics (+5), 77 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless, 869 one player (+2), 4.456 two players (+4), 148 three players, 518 more than three players
 215 use stick (+1), 0 use gambling, 4.438 use joystick (+4), 0 use keyboard, 0 use keypad, 117 use lightgun, 0 use mahjong, 0 use mouse, 0 use buttons only, 193 use paddle, 0 use pedal, 0 use positional, 354 use dial (+1), 177 use trackball, 0 use hanafuda
 91.605 total roms (+139), 91.522 machines roms (+139), 0 devices roms, 83 BIOSes roms, 83 CHDs, 422 sample files, 35 sample packs, 91.094 good dumps (+115), 291 no dumps (+24), 303 bad dumps, 1 bug fixed
-0 ren (0/0/0):
--
+1 ren (1/0/0):
+fort2b             > fort2ba           (mID:  5898) M
 0 del (0/0/0):
 -
 
@@ -12386,8 +12389,12 @@ $0.103u3 [#298]
 4.266 horizontal screen (+7), 1.734 vertical screen, 5.923 raster graphics (+7), 77 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless, 865 one player, 4.429 two players (+7), 148 three players, 518 more than three players
 213 use stick, 0 use gambling, 4.418 use joystick (+2), 0 use keyboard, 0 use keypad, 114 use lightgun, 0 use mahjong, 0 use mouse, 0 use buttons only, 193 use paddle (+5), 0 use pedal, 0 use positional, 353 use dial, 178 use trackball, 0 use hanafuda
 91.035 total roms (+147), 90.952 machines roms (+147), 0 devices roms, 83 BIOSes roms, 83 CHDs, 422 sample files, 35 sample packs, 90.553 good dumps (+149), 269 no dumps (-6), 296 bad dumps (+4), 0 bugs fixed
-1 ren (1/0/0):
+5 ren (5/0/0):
+kof2003            > kf2k3pcb          (mID:  5985) M
+kof2003a           > kof2003           (mID:  5986) M
 sf2049te           > sf2049            (mID:  5465) M
+svcchaos           > svcpcb            (mID:  6011) M
+svchaosa           > svc               (mID:  6010) M
 0 del (0/0/0):
 -
 
@@ -13095,16 +13102,16 @@ $0.95u5 [#249]
 
 $0.95u4 [#248]
 2005/04/21
-5.634 total items, 804 drivers, 5.609 machines (+4), 3.094 parents (+1), 2.515 clones (+3), 25 BIOSes, 0 devices, 76 requires CHDs, 155 use samples (+1), 3.274 audio mono (+1), 2.049 audio stereo (+2), 5 audio multichannel, 281 no audio (+1)
-4.949 working (+1), 660 not working (+3), 0 mechanicals, 5.609 not mechanicals (+4), 0 save supported, 5.609 save unsupported (+4)
+5.634 total items, 804 drivers, 5.609 machines (-1/+5), 3.094 parents (-1/+2), 2.515 clones (+3), 25 BIOSes, 0 devices, 76 requires CHDs, 155 use samples (+1), 3.274 audio mono (+1), 2.049 audio stereo (+2), 5 audio multichannel, 281 no audio (+1)
+4.949 working (-1/+2), 660 not working (+3), 0 mechanicals, 5.609 not mechanicals (-1/+5), 0 save supported, 5.609 save unsupported (-1/+5)
 3.951 horizontal screen (+3), 1.658 vertical screen (+1), 5.536 raster graphics (+4), 73 vector graphics, 0 lcd graphics, 0 svg graphics, 0 screenless, 753 one player (+1), 4.159 two players (+3), 144 three players, 506 more than three players
 180 use stick, 0 use gambling, 4.244 use joystick (+3), 0 use keyboard, 0 use keypad, 107 use lightgun, 0 use mahjong, 0 use mouse, 0 use buttons only, 169 use paddle, 0 use pedal, 0 use positional, 276 use dial, 162 use trackball, 0 use hanafuda
 85.364 total roms (+37), 85.285 machines roms (+37), 0 devices roms, 79 BIOSes roms, 76 CHDs, 422 sample files, 35 sample packs, 84.977 good dumps (+31), 239 no dumps (+6), 224 bad dumps, 0 bugs fixed
 2 ren (2/0/0):
 pktgaldx           > pktgaldj          (mID:  5033) M
 worldc94           > twrldc94          (mID:  4454) M
-0 del (0/0/0):
--
+1 del (1/0/0):
+cwbbc97                                (mID: 51101) M
 
 
 $0.95u3 [#247]
@@ -13356,7 +13363,7 @@ goldnaxe           > goldnax2          (mID:   516) M
 goldnxj2           > goldnax3          (mID:  5331) M
 gprider            > gprider1          (mID:  5319) M
 gpridera           > gprider           (mID:  5320) M
-jyuo8571           > altbeasj          (mID:  5071) M
+jyuo8751           > altbeasj          (mID:  5071) M
 jyuohki            > altbeaj1          (mID:  1953) M
 jyuohki2           > altbeaj3          (mID:  5329) M
 lghost             > lghostu           (mID:  5281) M
