@@ -2212,8 +2212,8 @@ ZX Spectrum IDE [Kevin Thacker]
 
 Source changes:
 ---------------
-- m24: add z8000 apb support [Carl, Andreas Senk, rfka01].
-- gambl186: update communication with EEPROM [Peter Ferrie].
+- m24: Add z8000 apb support [Carl, Andreas Senk, rfka01].
+- gambl186: Update communication with EEPROM [Peter Ferrie].
 - Add more (undumped, needed) roms as NO_DUMP to the VT100 driver after consulting later VT100 Tech manual. Correct one misnamed undumped ROM on the GPO board. [Lord Nightmare].
 - Add newer VT320 Firmware [Matt Burke].
 - Optimized some netlist devices [Couriersud].
@@ -2222,12 +2222,12 @@ Source changes:
 - Correct VT220 xtal, and add the romset listed in the schematics as NO_DUMP. [Lord Nightmare].
 - vt240.c: Add two DEC VT240 ROMsets and enable driver [Matt Burke, Balrog, Lord Nightmare].
 - Added 4 controller support for N64/N64DD, as well as rough mouse support... [LuigiBlood].
-- miniboy7: fixed video emulation and added inputs [Sandro Ronco].
+- miniboy7: Fixed video emulation and added inputs [Sandro Ronco].
 - pet_rom.xml: Added BASIC Programmer's Toolkit for BASIC 2.0 [Mike Naberezny].
 - DEC Rainbow updates [Karl-Ludwig Deisenhofer]:
   * Hard disk R/W support and real-time clock support emulating ClikClok card;
-  * wd2010: provides IRQ / (B)DRQ signals. Honors DRIVE_READY and WRITE FAULT (DRDY / WF) now. Set WF to GND and DRDY to VCC in your driver if signals are not serviced;
-  * ds1315 : Handle chip enable / chip reset / phantom writes to RTC.
+  * wd2010: Provides IRQ / (B)DRQ signals. Honors DRIVE_READY and WRITE FAULT (DRDY / WF) now. Set WF to GND and DRDY to VCC in your driver if signals are not serviced;
+  * ds1315: Handle chip enable / chip reset / phantom writes to RTC.
 - Update 315_5124.c palette in TMS99x8 modes [nitrofurano].
 - Drop NO_SDL_GLEXT define on OSX [mbcoguno].
 - VT240: Map the T11 ROMs into cpu space in the correct order/interleave. [Lord Nightmare].
@@ -2242,14 +2242,14 @@ Source changes:
 - WMS driver... Hooked the Analog Devices ADSP-2105 CPU (still need proper memory maps). Added technical notes [Roberto Fresca].
 - gambl186: Worked a complete set of inputs + DIP switches, fixed the CPU frequency, added findings and tech notes. Now the four games could be selected. Roulette, Bingo and Black Jack are playable. Casino 10 (poker) needs the watchdog implemented to work properly. Also changed the game name to Multi Game (Vxxx) [Roberto Fresca].
 - VT240 and VT320: add links to DEC-O-LOG service notes for different firmware changes, add firmware version numbers [Lord Nightmare].
-- Netlist [Couriersud]:
-  * improved 9312 device ==> 20% speed increase:
-  * remove netlist_state_t ==> no added value;
-  * removed dead code in solver;
-  * various minor modifications;
-  * performance monitoring now also displays stats for subdevices;
-  * fixed save-state issues;
-  * fixed save state in 9312;
+- Netlist update [Couriersud]:
+  * Improved 9312 device ==> 20% speed increase:
+  * Remove netlist_state_t ==> no added value;
+  * Removed dead code in solver;
+  * Various minor modifications;
+  * Performance monitoring now also displays stats for subdevices;
+  * Fixed save-state issues;
+  * Fixed save state in 9312;
   * Added EXTCLOCK which can generate arbitrary timing patterns;
   * Use two EXTCLOCKs to replace timing circuit (9316) in breakout. This gives a speed increase from 60% to 75%.
 - Mini.Boy 7: Added lamps and a internal button-lamps layout based on the cabinet pictures. Lamps are currently disabled due to other unknown writes are happening on the same port. Need more investigation. Also added the coin counter [Roberto Fresca].
@@ -2345,7 +2345,7 @@ Source changes:
   * Remove custom 6845 emulation and use our standard core;
   * Use the slot system for the parallel interface, fix and implement the joystick as a slot device and create a printer slot device;
   * Add support for the RS-232 port;
- * Add support for the Break key (causes NMI).
+  * Add support for the Break key (causes NMI).
 - abc80: Default to ABC 830 disk drive with fast controller [Curt Coder].
 - Cocoa debugger: Autosize controls for custom font size choice [Vas Crabb].
 - nascom: Clean up, add NASBUS emulation and make the floppy disc controller a NASBUS card, convert to the new wdc emulation, add generic socket emulation, add initial software list [Dirk Best]:
@@ -2374,3 +2374,4 @@ Source changes:
   * Added cassette load and save;
   * Added TAP cassette support;
   * Most (but not all) programs are working.
+- Bump MAME 0.162 [Miodrag Milanović].

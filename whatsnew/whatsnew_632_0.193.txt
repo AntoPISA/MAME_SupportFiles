@@ -328,7 +328,7 @@ Source changes:
 - alphatpx: Identified more keys [helwie44].
 - pc_vga.cpp: Left-shift CRTC start address depending on mode, thanks to DOSBox-X (github issue #2954) [MoochMcGee].
 - play_2.cpp: Updated cop402 ROM for zira [PinMAME].
-- cps1.cpp, kenseim.cpp: Reqplaced ioc1 PAL logical equivalent with real dump from an unprotected device [Porchy, The Dumping Union].
+- cps1.cpp, kenseim.cpp: Replaced ioc1 PAL logical equivalent with real dump from an unprotected device [Porchy, The Dumping Union].
 - alphatpx: Added sound emulation [rfka01].
 - alphatpx: Made many improvements to emulation and documentation [rfka01, helwie44, Carl].
 - compc.cpp, pc10iii: Added BIOS v4.35c and matching character generator ROM [rfka01].
@@ -336,5 +336,6 @@ Source changes:
 - segae.cpp: Corrected ROM labels for Hang On Jr. [ShouTime].
 - Corrected years for a number of systems: Galaxian 3 - Theater 6: Project Dragoon, Galaxian 3 - Theater 6 J2: Attack of The Zolgear, LD Mahjong #4 Shabon-Dama, Master's Golf, Correct Operation Thunder Hurricane, Paca Paca Passion, Panic Park, Soreike! Anpanman Popcorn Factory, Virtua Striker 2 '99 [sjy96525].
 - Improved controls for Landing Gear, Hyper Bishi Bashi Champ, and Salary Man Champ [sjy96525].
-- Raise a fatal error if lua console is requested but the console plugin is not found (rather than crashing) [Sylvain Glaize].
+- Raise a fatal error if LUA console is requested but the console plugin is not found (rather than crashing) [Sylvain Glaize].
 - cdi.cpp: Decapped and dumped quizard3 MCU [Team Europe].
+- Bump MAME 0.193 [Vas Crabb].

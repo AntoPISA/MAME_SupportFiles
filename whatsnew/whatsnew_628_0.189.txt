@@ -187,7 +187,7 @@ MAME Testers Bugs Fixed (20):
 -----------------------------
 - 00470: [DIP/Input] (seattle.cpp) hyprdriv: Despite successful calibration the brake button doesn't function (Ted Green)
 - 00975: [DIP/Input] (seattle.cpp) calspeed: Even if you choose manual gear your car has automatic gear (Ted Green)
-- 01005: [Sound] (shangkid.cpp) shangkid: In the later levels, sound starts to get really screwy. (AJR)
+- 01005: [Sound] (shangkid.cpp) shangkid: In the later levels, sound starts to get really screwy (AJR)
 - 01991: [Crash/Freeze] (vegas.cpp) gauntleg: Game randomly freezes (Ted Green)
 - 04024: [Graphics] (toaplan2.cpp) ghox: Missing background for hi-score screen (Caps0f)
 - 04872: [Graphics] (labyrunr.cpp) tricktrp: Graphic priority issue (Angelo Salese)
@@ -254,7 +254,7 @@ Source changes:
   * Don't instantly finish the RECALIBRATE command (fixes accessing second drive on psi98);
   * Made SEEK also take some time (fixes KOS FORMAT command on psi98).
 - Added Nintendo GameCube skeleton driver. Decrypts the IPL and the CPU executes the first few instructions [Dirk Best].
-- gyruss - various small updates [Dirk Best, Tele-Viper]:
+- gyruss: Various small updates [Dirk Best, Tele-Viper]:
   * Added missing DIP location for DSW3;
   * Fixed dip switches and added correct ROM labels/locations for (gyrussce);
   * Fixed labels for (gyrussb);
@@ -413,7 +413,7 @@ Source changes:
 - mos6526.cpp: Show state of registers that can be read without side effects in debugger [David Viens].
 - om6502.lst: Corrected cycle counts for undocumented $BF instruction. Now passes Lorenz testsuite-2.15's cputiming.prg (and does not break laxay.prg) [David Viens].
 - Improved Android build support. Updated for NDK r14b, build-tools 21.1.2, gradle 2.2.1, and jdk1.8.0_144 [Miso Kim].
-- Renamed (grtesoro) sets to 'play2000', gave it it's own machine structure and memory map.  Added some workarounds so that it actually boots, fixed GFX ROM loading [David Haywood].
+- Renamed (grtesoro) sets to (play2000), gave it it's own machine structure and memory map.  Added some workarounds so that it actually boots, fixed GFX ROM loading [David Haywood].
 - Added basic Saturn CD Block device to load the ROMs [David Haywood].
 - imgtool modernisation and miscellaneous fixes [Nathan Woods]:
   * Fixed a std::string(nullptr) bug.
@@ -449,3 +449,4 @@ Source changes:
 - mitchell.cpp: Added PALs and EEPROM dumps to pkladiesla, and corrected ROM labels [f205v].
 - mario.cpp: Identified marioj as Revision C [Corrado Tomaselli].
 - hiscore.dat: Updated for recent changes [Leezer].
+- Bump MAME 0.189 [Vas Crabb].

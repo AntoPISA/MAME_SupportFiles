@@ -178,7 +178,7 @@ Source changes:
 - VME bus improvements [Joakim Larsson Edstrom]:
   * Added new VME slave board: mzr8300;
   * Added device installers for A16:D8, A16:D16, A24:D8 and A24:D16;
-  * mzr8300: hooked up the 7201 correctly and added RS232, now supporting the mzr8105 over VME bus as previously faked;
+  * mzr8300: Hooked up the 7201 correctly and added RS232, now supporting the mzr8105 over VME bus as previously faked;
   * Converted mvme350 board driver to slot device;
   * Force Computers: Converted fcisio1 and fcscsi1 boards to slot devices and added VME interface to (fccpu30);
   * Force Computers: Added VME interface to (fccpu1), (fccpu20) and (hk68v10);
@@ -189,7 +189,7 @@ Source changes:
   * fccpu30: Improved documentation;
   * miniFORCE: Added address map info and feature list for three models;
   * fccpu20: Added PCB layout and hooked up the Rx part, terminal is working now;
-  * Added (fccpu20( to Miniforce as a VME card;
+  * Added (fccpu20) to Miniforce as a VME card;
   * fccpu20: Moved all code and documentation to the slot device, promoted to working driver.
 - Added MC68153 Bus Interrupter Module device [Joakim Larsson Edstrom].
 - MPCC improvements [Joakim Larsson Edstrom]:
@@ -432,3 +432,4 @@ Source changes:
   * Added info on Zenith Supersport, Bondwell Pro28, and Atari PCs;
   * Added info on several already emulated systems in the header;
   * Added detailed information on Data General One, Commodore PC-1, Commodere PC10-III and PC20-III, Zenith SuperSport, Siemens Sicomp PC16-05, NCR PC4i, Olivetti M15, Sharp PC-7000, Sanyo MBC-16, Atari PC-3, Eagle 1600, VTech Laser Turbo XT and XT/3.
+- Bump MAME 0.182 [Vas Crabb].

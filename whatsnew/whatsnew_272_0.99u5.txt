@@ -9,9 +9,9 @@ The First Funky Fighter [Luca Elia]
 
 New Clones Added
 ----------------
-SAR - Search And Rescue (Japan) [Pierpaolo Prazzoli]
 American Poker II (set 4) [Roberto Fresca]
-
+Plotting (US) [David Haywood]
+SAR - Search And Rescue (Japan) [Pierpaolo Prazzoli]
 
 MAME Testers Bugs Fixed (4):
 ---------------------------
@@ -25,7 +25,7 @@ Source changes:
 ---------------
 - Completed renaming of core structures. Most pervasive change was "struct tilemap" is now just "tilemap" [Aaron Giles].
 - Added save state support to the Cinematronics vector games [Buddabing].
-- Added blending to the alt tilemap code in psikyosh.c, fixing the final boss in Sol Divide [David Haywood].
+- Added blending to the alt tilemap code in psikyosh.c, fixing the final boss in 'Sol Divide' [David Haywood].
 - Improvements to the 'Witch/Pinball Champ '95' driver [Sebasten Hegon]:
   * The games now show some graphics (the palette seems OK) and play some music and sounds;
   * Since the controls are not yet figured out completely, they are still mapped as DIP switches;
@@ -35,7 +35,7 @@ Source changes:
   * The coin in/out mecanism needs some work too.
 - Some improvements to 'Jolly Card' [Roberto Fresca]:
   * Added extra hardware info (pinouts and dips);
-  * Added the correct DIP switch to Jolly Card. Hopper and Points/pulse not tested due to preliminary driver state. The rest are working properly. Remember to delete the NVRAM and reinitialize to see some changes;
+  * Added the correct DIP switch to 'Jolly Card'. Hopper and Points/pulse not tested due to preliminary driver state. The rest are working properly. Remember to delete the NVRAM and reinitialize to see some changes;
   * Added almost the same DIP switch to Magic Card II (Bulgaria).
 - Significant changes to the save state system [Aaron Giles]:
   * Added alternate save state pre-/post-load function types that take integer or pointer parameters. Updated several sound cores and other files to take advantage of this;
@@ -49,3 +49,4 @@ Source changes:
   * Added save state support to the classic Namco sound system;
   * Added save state support to the samples sound system;
   * Removed anonymous timer usage in machine/scramble.c.
+- Bump MAME 0.99u5 [Aaron Giles].

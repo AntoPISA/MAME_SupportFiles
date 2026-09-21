@@ -53,7 +53,6 @@ New NOT_WORKING Software List Additions
 ---------------------------------------
 gamate.xml:
   Volcano Panic [Juan Felix Mateos and Mr. Postman]
-gamate.xml:
   Hot Hero; Baseball [Peter Wilhelmsen]
 gba_ereader.xml:
   Starting work doing the GBA e-reader software-list [Shideravan]
@@ -114,7 +113,7 @@ Source changes:
 - Add Net-DIMM 3.03 firmware [letoram, gamerfan, Mark F., Smitdogg, The Dumping Union].
 - Netlist improvements [Couriersud]:
   * nltool now accepts -Ddefine=value to pass on to netlists;
-  * improved option handling and added "dummy" options to add grouping and examples in help output;
+  * Improved option handling and added "dummy" options to add grouping and examples in help output;
   * Improved --cmd=listdevices output;
   * Fix dynamic timestepping. This will work with breakout using real capacitor modelling instead of delay devices. Really slow, but very useful to calibrate timings;
   * Fix an awful bug in timing for delay devices;
@@ -133,7 +132,7 @@ Source changes:
   * Cleanup patches for Direct3D renderer;
   * BGFX: fix crash when bgfx effect folder is not present,
 - Fixed priority issues in Legionnaire, Heated Barrel, Denjin Makai and Godzilla [Angelo Salese].
-- opwolf.cpp: fix all the gameplay problems by improving the c-chip protection simulation [Bryan McPhail].
+- opwolf.cpp: Fix all the gameplay problems by improving the c-chip protection simulation [Bryan McPhail].
 - Miscellaneous modernisation [Nathan Woods]:
   * File create and format refactoring, better name/path validation (with POSIX implementation from Vas Crabb);
   * Use string objects in in core_file static functions, menu items, strconv functions, image device extensions and softlist classes;
@@ -224,3 +223,4 @@ Source changes:
 - alto2: Hunting the jiggly cursor bug [Juergen Buchmueller].
 - chihiro: Added 837-13551 jvs input device, completed the communication with jvs devices through USB [Samuele Zannoli].
 - chihiro: Game crtaxihr "Crazy Taxi High Roller (Rev B)" boots too [Samuele Zannoli].
+- Bump MAME 0.176 [Miodrag Milanović].

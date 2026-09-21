@@ -224,7 +224,7 @@ Source changes:
 - Fixed name to a better guess for MCU name for plump pop, and marked as bad pending verification that it is the same MCU which drtoppel and extermination use. [Lord Nightmare].
 - tnzs.cpp: Updated a slew of comments, added most missing PALs as undumped, fixed some ROM labels, added a chart of the different Taito/Seta PCBs covered by tnzs.cpp and the differences between each. [Lord Nightmare].
 - toaplan1.cpp: Fixed DSWB reading (seems to be inverted when read by the MCU), also reverted changes to TJUMP jumper settings and inverted those as well on read, though it still seems to be a bit screwy for some settings. [Lord Nightmare].
-- toaplan1.cpp: vimana regions should work fine now. [Lord Nightmare].
+- toaplan1.cpp: Vimana regions should work fine now. [Lord Nightmare].
 - Don't use mem_mask as ATA doesn't have an equivalent mechanism for byte accesses and it could mask out data that real hardware would keep, instead fix issue with 68000 byte writes to sector count by only taking the bottom 8 bits from the bus [smf].
 - Fixed ATA Write Multiple (command c5) ignoring the block count on the first block [smf].
 - Update disassembly if IP or CS are changed in the debugger; also update IP and CS when PC or CURPC changes [smf].
@@ -310,7 +310,7 @@ Source changes:
 - shootout: Fixed missing title screen music, fixed coin counter and simplified ROM loading [darq].
 - sidepckt: Fixed cocktail mode and added Y scroll [darq].
 - tecmo_mix: Fixed the saturated colors in Final Star Force (Level 2) [darq].
-- aristmk5: redumped chickna5u and topbana, now pass checksums [Heihachi_73].
+- aristmk5: Redumped chickna5u and topbana, now pass checksums [Heihachi_73].
 - ccastles.cpp: Clarified input situation by assigning port conditions/names to the button inputs so they have proper default mappings between Upright/Cocktail [Tafoid].
 - New softlist: HP Integral PC [shattered].
 - cps1.cpp: Added missing PAL dump to daimakai [caius, Silvio Grazini].
@@ -333,3 +333,4 @@ Source changes:
   * Added clone relationships;
   * More consistency in set naming and metadata.
 - apple1.xml: Redumped dis-assembler [Dagarman].
+- Bump MAME 0.181 [Vas Crabb].

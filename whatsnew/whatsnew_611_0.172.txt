@@ -79,16 +79,16 @@ Sega Ninja (315-5113) [Mathieu Patard]
 
 New WORKING Software List Additions
 -----------------------------------
-tutor.xml:
-  Super Bike (Jpn) [Jim]
-  Battle Fighter (Jpn) [Jim]
-  4-nin Mahjan (Jpn, set 2) [Jim]
-crvision.xml
-  Tennis (Dick Smith, earlier, 6k Cart) [Luca Antignano, Herman Heritage]
 apple3.xml
   Atomic Defense [R. Belmont]
   Tic-Tac-Toe [R. Belmont]
   + more
+crvision.xml
+  Tennis (Dick Smith, earlier, 6k Cart) [Luca Antignano, Herman Heritage]
+tutor.xml:
+  Super Bike (Jpn) [Jim]
+  Battle Fighter (Jpn) [Jim]
+  4-nin Mahjan (Jpn, set 2) [Jim]
 
 New NOT_WORKING Software List Additions
 ---------------------------------------
@@ -113,7 +113,7 @@ Spanish [A. Viloria]
 
 MAME Testers Bugs Fixed (9):
 ----------------------------
-- 02389: [DIP/Input] (nbmj8688.c) housemnq, housemn2, bijokkog, bijokkoy: Inputs slightly wrong for the LCD games (cuavas)
+- 02389: [DIP/Input] (nbmj8688.c) housemnq, housemn2, bijokkog, bijokkoy: Inputs slightly wrong for the LCD games (Vas Crabb)
 - 06143: [Documentation] They are "Master Sets", NOT "Originals" (dankan1890)
 - 06144: [Crash/Freeze] Running with -video d3d -numscreens 2 and above crashes MAME (B2K24)
 - 06145: [DIP/Input] (astrocde.c) gorf and clones: Gorf Outputs missing Quark Laser (Joystick) Lamp Output (David Haywood)
@@ -121,7 +121,7 @@ MAME Testers Bugs Fixed (9):
 - 06152: [Interface] "Show mouse pointer" option stays off (dankan1890)
 - 06156: [Interface] a5200, a7800, smspal, sms1, sms1pal, aes, vectrex, a400, a800, c64, c128: GUI software list cartridge picker fails to select cartridge (B2K24)
 - 06159: [Crash/Freeze] (triforce.c) triforce: Crash/Exception before OK (Osso)
-- 06168: [Crash/Freeze] (neogeo.c) kof10th: Unable to start/Fatal error (ajrhacker)
+- 06168: [Crash/Freeze] (neogeo.c) kof10th: Unable to start/Fatal error (AJR)
 
 
 Source changes:
@@ -155,7 +155,7 @@ Source changes:
   - All shaders after pre-scale are now based on screen coordinates (workaground until both raster and vector passes can work on texture coordinates);
   - Disabled distortion shader for more than one screen and for artworks in full mode, does not affect artworks in cropped mode (workaground until both raster and vector passes can work on texture coordinates).
 - at: Created at motherboard device and split PCI and PS/2 machines into own files [Carl].
-- UI [Maurizio Petrarota]:
+- UI update [Maurizio Petrarota]:
   * Enabled user interface navigation through UI_CONFIGURE button (tab key by default);
   * Added support for "covers" images collection by AntoPISA;
   * Added support for "gameinit.dat" by AntoPISA;
@@ -222,7 +222,7 @@ Source changes:
   * Fixed: PIF reportedly only clears top bit of status byte;
   * Fixed: DD read fail needs to mask against head as well as track.
 - Fixed flipped sprite positioning in toypop [Katsuhiko Kagami].
-- crazybon improvements [Vas Crabb, Ioannis Bampoulas]:
+- crazybon: Improvements [Vas Crabb, Ioannis Bampoulas]:
   * Updated DIP switch descriptions/defaults according to manual;
   * Hooked up reel stop buttons and add to layout.
 - Added original Dyna Cherry Master '99 QL-1 V9B.00 set [Vas Crabb, Ioannis Bampoulas]:
@@ -335,3 +335,4 @@ Source changes:
 - Initial Z80SCC baudrate generator support [Joakim Larsson].
 - svga_s3: Fixed potential crash when hardware pointer is at the edge of VRAM, and fixed viewport scrolling in XF86_S3 [Barry Rodewald].
 - atarittl.cpp: Bugle ROM redumped for Steeplechase [Andrew Welburn].
+- Bump MAME 0.172 [Miodrag Milanović].

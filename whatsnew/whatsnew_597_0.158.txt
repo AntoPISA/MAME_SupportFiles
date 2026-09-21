@@ -51,7 +51,7 @@ Source changes:
 - winprefix: Support some C99 extensions in older MSVC [Peter Ferrie].
 - Make cross-compilation easier [Ramiro Polla].
 - luaengine: Add HUD-like capabilities [Luca Bruno].
-- Added irq ack mechanism in Senjyo HW and removed long standing hack from the driver [Angelo Salese].
+- Added IRQ ack mechanism in Senjyo HW and removed long standing hack from the driver [Angelo Salese].
 - SDL: Driver accel (draw13.c) now supports "-filter", i.e. bilinear filtering [Couriersud].
 - UI: Added "Reset" option to DipSwitch and ConfSettings menu, as well as to the File Manager, for consistency with other menus where an hard reset is of help [Fabio Priuli].
 - UI: Fixed DipLocation drawing so that it remains on screen also when  highlighting switches without locations [Fabio Priuli].
@@ -86,7 +86,7 @@ Source changes:
   * Tecmo World Cup '98 has correct Tecmo logo / Title screen;
   * Steep Slope Sliders, Radiant Silvergun no longer use custom protection simulations (end result is the same).
   - For Model 2:
-    * Zero Gunner, Pilot Kids and Dynamite Cop no longer use custom protection simulations (end result is the same).
+  * Zero Gunner, Pilot Kids and Dynamite Cop no longer use custom protection simulations (end result is the same).
   - For Model 3:
   * Dirt Devils, Magical Truck Adventure, Virtual On 2 and Machineguns correctly decrypts 2D graphics;
   * Daytona USA 2 correctly decrypts encrypted code block, no longer requires ROM patches to avoid it;
@@ -114,6 +114,7 @@ Source changes:
   * Safer implementation of PACKUSWB PACKSSDW SHUFPS UNPCKLPS UNPCKHPS;
   * The safer implementation is needed in cases where the source and destination registers are the same.
 - Solaris 11 build support [Couriersud].
-- Replace 'discof' dump with a new one [f205v].
+- Replace (discof) dump with a new one [f205v].
 - Added preliminary emulation of video screen on Caveman (Exidy Pinball) [David Haywood].
 - Updated funkball.c to use intelfsh.c for Flash Rom handling, making use of bankdev to provide a virtual space in which they map [David Haywood].
+- Bump MAME 0.158 [Miodrag Milanović].

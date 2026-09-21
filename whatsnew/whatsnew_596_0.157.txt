@@ -79,15 +79,15 @@ Source changes:
 - Add some Smashing Drive hw details [Demul Team].
 - Redump / verify 'Fight Fever' romsets [DsNo].
 - Add communication MCU ROM (dumped from a prototype) to the 'Riding Hero' sets [Brian Hargrove].
-- atvtrack.c make Smashing Drive going somewhere instead of hang emulator [MetalliC, Demul team].
+- atvtrack.c: Make Smashing Drive going somewhere instead of hang emulator [MetalliC, Demul team].
 - renegade.c: Replace custom sound with MSM5205 [Alex Jackson].
 - raiden2cop.c: Endian safety fix [Alex Jackson].
 - btime.c: Fix flip screen [Alex Jackson].
-- naomi.c: use full M4 PIC16 dumps instead of partial "readouts", add handmade 'dumps' with master keys for not yet properly dumped PICs [rtw, MetalliC].
+- naomi.c: Use full M4 PIC16 dumps instead of partial "readouts", add handmade 'dumps' with master keys for not yet properly dumped PICs [rtw, MetalliC].
 - Chihiro vertex programs update [Samuele Zannoli].
 - SDL: Fix build with non-framework SDL 2 issue on OS X [mbcoguno].
 - lindbergh: Fake pit and real pci bridges [Olivier Galibert].
-- pci: expansion ROM management [Olivier Galibert].
+- pci: Expansion ROM management [Olivier Galibert].
 - lindbergh: Match card and video bios [Olivier Galibert].
 - Fix debugger memory display of little-endian memory regions [Alex Jackson].
 - m68k: Disassembler support for FTRAP [R. Belmont].
@@ -97,10 +97,10 @@ Source changes:
 - i82875p: Toud display fix [Olivier Galibert].
 - Redumped "Melty Blood Act Cadenza Version B (GDL-0039)" [rtw, ShouTime].
 - Changed Melty Blood series game names as per title screen texts [MetalliC].
-- igs009.c - Updated dips and added locations to comply with the manual for 'Jingle Bell' ans 'Gran Prix '98' [Bad A. Billy].
+- igs009.c: Updated dips and added locations to comply with the manual for 'Jingle Bell' ans 'Gran Prix '98' [Bad A. Billy].
 - 82875p: Add overflow device, high smram [Olivier Galibert].
 - pci: Add more pci bridge registers [Olivier Galibert].
-- hikaru.c update add protecton keys for AirTrix and Planet Harriers [CaH4e3, MetalliC].
+- hikaru.c: Update add protecton keys for AirTrix and Planet Harriers [CaH4e3, MetalliC].
 - ROM labels and ROM_LOADs corrections&cleanup [MetalliC].
 - Use consistent logical ID for joystick registration log [tomyun].
 - Bump version in *nix man pages [wallyweek].
@@ -123,14 +123,14 @@ Source changes:
 - Significant change to Stepper motor device behaviour, using devcb2 interfaces [James Wallace].
 - cpu: Rewrote Rockwell PPS-4 CPU core based on bitsavers.org documents. Add led8seg_gts1 (Futaba) to rendlay.c/h and use them in gts1.lay. Add Rockwell devices 10696, 10788 and A17xx preliminary implementations [Juergen Buchmueller].
 - New functions added:
-  MCFG_STEPPER_ADD(tag) - add a stepper device.
-  MCFG_STEPPER_REEL_TYPE(type) - the equivalent of the first line in the old interface, now also takes NOT_A_REEL for printer and similar applications.      
-  MCFG_STEPPER_START_INDEX(int index) - the old second line of the interface, the position (in half steps) where the optic tab first triggers.           
-  MCFG_STEPPER_END_INDEX(int index)  - the old third line of the interface, the last position (in half steps) where the optic tab triggers. 
-  MCFG_STEPPER_INDEX_PATTERN(int pattern) - a coil pattern in hexadecimal that has to be on the motor for the index to trigger (0 if no specific pattern is needed) 
-  MCFG_STEPPER_INIT_PHASE(int phase) - starting phase of the motor. All drivers have been updated, testing done to all specific drivers - 'Scorpion 4' was particularly complex [James Wallace].
+  MCFG_STEPPER_ADD(tag): Add a stepper device.
+  MCFG_STEPPER_REEL_TYPE(type): The equivalent of the first line in the old interface, now also takes NOT_A_REEL for printer and similar applications.      
+  MCFG_STEPPER_START_INDEX(int index): The old second line of the interface, the position (in half steps) where the optic tab first triggers.           
+  MCFG_STEPPER_END_INDEX(int index): The old third line of the interface, the last position (in half steps) where the optic tab triggers. 
+  MCFG_STEPPER_INDEX_PATTERN(int pattern): A coil pattern in hexadecimal that has to be on the motor for the index to trigger (0 if no specific pattern is needed) 
+  MCFG_STEPPER_INIT_PHASE(int phase): Starting phase of the motor. All drivers have been updated, testing done to all specific drivers - 'Scorpion 4' was particularly complex [James Wallace].
 - qt/debug: Device tree view. Looks cool with mu100 or lindbios [Olivier Galibert].
-- tms5110.c: Implement output and read bit commands. [Lord Nightmare].
+- tms5110.c: Implement output and read bit commands [Lord Nightmare].
 - namcops2 updates:
   * Added BIOS and dongle for Time Crisis 4 [Guru].
   * Added dongle for Gundam vs. Gundam [Guru, Darksoft].
@@ -138,7 +138,7 @@ Source changes:
 - SDL2: Improved Alt-Enter functionality (now works on all screens at once) and prefer upper-left placement of windowed mode windows [R. Belmont].
 - dinohunt: Fixed player 3 inputs (MT05804) [darq].
 - luaengine: Add memory-reading capabilities [Luca Bruno].
-- chihiro: added support for zbuffer and stencil plus render target methods [Samuele Zannoli].
+- chihiro: Added support for zbuffer and stencil plus render target methods [Samuele Zannoli].
 - Fix "-mt" for SDLMAME windows build [Calamity, Couriersud].
 - Changed sdl_window_info to be closer to C++ [Couriersud]:
   * Made some members private;
@@ -147,3 +147,4 @@ Source changes:
 - Fixed save state regressions in the following drivers: arcadecl.c, batman.c, eprom.c, foodf.c, liberatr.c, atarisys2.c, gstream.c, pasha2.c, f-32.c, lastfght.c, bfm_sc1.c, bmcpokr.c, centiped.c, jangou.c, merit.c, segas16a.c, asteroid.c, seibuspi.c [Osso].
 - Started developing a CPU core for the series of processors based on the ARCompact instruction set, namely the ARCtangent A-5. This is still preliminary, the disassembly is mostly complete but the output could still be tidied, and many instructions are not yet implemented and based on code execution some of the ones that are could be incorrect. This is currently used by the 'leapster' driver [David Haywood].
 - m68k: Generate the correct kind of stack frame for 68010 bus errors [R. Belmont].
+- Bump MAME 0.157 [Miodrag Milanović].

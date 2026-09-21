@@ -65,14 +65,15 @@ Wonder Boy (system 2, set 2, 315-5176) [Silvio Grazini]
 
 New WORKING Software List Additions
 -----------------------------------
-coco_flop:
+coco_flop.xml:
   Donkey Kong Remix [Sock Master]
+lynx.xml:
+  Zaku
 megadriv.xml:
   F1 - World Championship Edition (US, Prototype) [oliverthepig]
 neogeo.xml:
   Last Hope
-lynx.xml:
-  Zaku
+
 
 New NOT_WORKING Software List Additions
 ---------------------------------------
@@ -94,7 +95,7 @@ MAME Testers Bugs Fixed (16):
 - 06170: [Compiling] OpenMP: OpenMP-enabled builds of MAME 0.172 fail to compile (Jindřich Makovička)
 - 06172: [DIP/Input] (sms.c) Default input mapping for two paddle devices causes a conflict (AJR)
 - 06173: [Core] All software saving SRAM: Software loaded outside of software list (e.g. -cart PATH_TO_ROM) fails to save SRAM (dankan1890)
-- 06174: [DIP/Input] (twincobr.c) fshark, skyshark, hishouza, tp84, tp84a, tp84b: Dipswitch info
+- 06174: [DIP/Input] (twincobr.c) fshark, skyshark, hishouza, tp84, tp84a, tp84b: DIP switch info (ketburai)
 - 06175: [Misc.] (apple2.c) apple2jp: Ctrl-T = Inverse kana ? (R. Belmont)
 - 06176: [Crash/Freeze] (ksys573.c) All sets in ksys573.c using CD: Unable to boot (crazyc)
 - 06178: [Crash/Freeze] liblrabl: Reset during second loop of attract mode (Angelo Salese)
@@ -122,17 +123,17 @@ Source changes:
 - Magic10 driver: Added technical notes, game status, defined clocks, fixed inaccurate notes, and some driver cleanups [Roberto Fresca].
 - screen: SVG rendering from inside the ROM [Olivier Galibert].
 - Updated Portuguese language (Brazil) [Ashura-X].
-- luaengine: add plugin options menu [Carl].
+- luaengine: Add plugin options menu [Carl].
 - Major Havoc: Updated Gamma CPU address decoding/mirroring from the schematic [Lord Nightmare].
 - FB01: Fix ROM label to match actual chip [anonymous].
 - Magic Crystals: Improve ROM labeling for Japan set based on PCB picture, and noted that the Japan set we have is revision 2, but a revision 0 exists, undumped [Lord Nightmare].
 - TMS5220: Add a 'combined rs/ws write' function for systems which require both pins to change at exactly the same time and not to reset the chip [Lord Nightmare].
 - Revert software-installed slot/image options when changing software. Remove emu.h's stealth include of emuopts.h through mconfig.h; reduce dependency on emuopts.h in other headers and source files. MCFG_CPU_FORCE_NO_DRC is now a CPU configuration parameter rather than a global one; it still works to override the -drc option setting [AJR].
-- Fix some missing gfx in bbusters/mechatt [dink].
+- Fix some missing GFX in bbusters/mechatt [dink].
 - Make overscan on integer scaled targets optional (add option -intoverscan) [Calamity].
 - luaengine: Direct and region accessors [Carl].
 - This one documents what I think is a real bug of the Japanese game Sports Pad Soccer: part of the player 2 input is read from player 1 input instead. Also, reorganized code of the Japanese Sports Pad controller device and replace some PORT_CUSTOM/PORT_CHANGED callbacks with PORT_READ_LINE/PORT_WRITE_LINE [Enik].
-- Add experimental cheat lua plugin [Carl].
+- Add experimental cheat LUA plugin [Carl].
 - Improvements to tape driver of hp9845b [F. Ulivi].
 - info.cpp: Improved documentation of input devices in the -listxml output, since having just a generic 'number of buttons' is rather pointless in the context of home systems with configurable controllers (being them keyboards, keypads or joypads). Now the various controllers are listed separately with the number of buttons they have. Frontend authors who relied on the "buttons" attribute of the input node for any kind of filter shall now scan all available controllers and take the maximum among their "buttons" attribute (possibly discarding keyboards and keypads if they want) to recover the old value [Fabio Priuli].
 - info.cpp: Started to acknowledge PORT_16WAY inputs in -lx, since they were reported as 8-ways so far [Fabio Priuli].
@@ -195,9 +196,9 @@ Source changes:
 - Implemented dynamic loading of precompiled solver code [Couriersud].
 - saturn.cpp: Converted controllers to work through slot devices, cleaning up the related code. [Fabio Priuli].
 - saturn.cpp: Added support for SegaTap adapter (4 controllers) and  Sega Multitap adapter (6 controllers). Saturn Bomberman can now be played as intended [Fabio Priuli].
-- softlist.cpp: add support for "rom_ignore" [Fabio Priuli].
+- softlist.cpp: Add support for "rom_ignore" [Fabio Priuli].
 - itgambl2.cpp driver: Added technical notes and some clean-ups [Roberto Fresca].
-- apple2: Fixed Apple II J-Plus text drawing, and updated notes [R. Belmont].
+- apple2: Fixed 'Apple II J-Plus' text drawing, and updated notes [R. Belmont].
 - r9751: Add more floppy debugging and fix DMA masking [Brandon Munger].
 - ioport.cpp: Extended core input to support up to 10 players [Fabio Priuli].
 - Dumped Dreamcast bios MPR-21933, confirmed match MPR-21931 [CoolMod].
@@ -234,3 +235,4 @@ Source changes:
   * Fixed issues with Horizon Ramdisk.
 - n64: Do SI dma transfer after delay, not before [Happy].
 - tourvis.cpp: Changed to use Software Lists, trimmed all ROMs to correct sizes, confirming that the majority match exactly the PCE roms (only 3 differ, Gomola Speed which could be an alt revision, R-Type II which has been hacked, and Be Ball where there is an unknown single byte change [David Haywood].
+- Bump MAME 0.173 [Miodrag Milanović].

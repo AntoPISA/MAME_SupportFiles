@@ -194,9 +194,9 @@ Tetris + Cherry Master (Corsica, v8.01, set 2) [Roberto Fresca, John Mpampoylas 
 
 MAME Testers Bugs Fixed (46):
 -----------------------------
-- 00371: [Graphics] (alpha68k.c) gangwarsu: There's a problem in the 3rd stage, just before the boss. (David Haywood)
+- 00371: [Graphics] (alpha68k.c) gangwarsu: There's a problem in the 3rd stage, just before the boss (David Haywood)
 - 00493: [Graphics] (kaneko16.c) berlwall: When finishing a level, the timer bonus doesn't show correctly. It says "Timer x 10 = " (Luca Elia)
-- 01109: [Graphics] (rpunch.c) svolleyk: [possible] Red arrow indicator doesn't appear. (David Haywood)
+- 01109: [Graphics] (rpunch.c) svolleyk: [possible] Red arrow indicator doesn't appear (David Haywood)
 - 01546: [Gameplay] (taito_l.c) champwr: The gameplay is too fast (Mamesick)
 - 01630: [Color/Palette] (tecmo16.c) fstarfrc, ginkun, riot: broken colors on sprites (David Haywood)
 - 03164: [Graphics] (taito_l.c) fhawk, fhawkj: Rare sprites'bug (David Haywood)
@@ -211,7 +211,7 @@ MAME Testers Bugs Fixed (46):
 - 05246: [Misc.] (parodius.c) all parodius.c sets: AddressSanitizer: heap-use-after-free (Alex Jackson)
 - 05264: [Sound] (taito_l.c) champwr: Music cues missing (do not play) (Mamesick)
 - 05442: [Graphics] (astinvad.c) kamikaze, astinvad: Incorrect flashing on screen (hap)
-- 05487: [DIP/Input] (fromanc2.c) fromancr: Can't save any Service menu (F2) settings. (hap)
+- 05487: [DIP/Input] (fromanc2.c) fromancr: Can't save any Service menu (F2) settings (hap)
 - 05491: [Gameplay] (bfm_sc4.c) All sets in bfm_sc4.c: Failure to pass INITIALIZING in-game (R. Belmont)
 - 05499: [Crash/Freeze] (namcona1.c) All sets in namcona1.c: Assert after OK (Alex Jackson)
 - 05500: [Crash/Freeze] (galaga.c) galaga, digdug, polepos: Game freezes just before finishing POST (hap)
@@ -227,7 +227,7 @@ MAME Testers Bugs Fixed (46):
 - 05537: [Multisession] (namcos1.c) All namcos1.c sets: switching games from namcos1 driver in mame internal menu cause program to crash (Alex Jackson)
 - 05542: [DIP/Input] (surpratk.c) suratk, suratka: Last dip switch currently called 'Unused' (after 'Service Mode' ON/OFF) should be renamed to "Bonus Quiz" (Tafoid)
 - 05543: [DIP/Input] (goodejan.c) goodejan, totmejan: I found out most of DIP-SW settings. On mame most of settings are unknown (Tafoid)
-- 05548: [DIP/Input] (system1.c) wbml, wbmlb, wbmlbg, wbmlbge, wbmljb, wbmljo, wbmlvc: DIP Setting FREE PLAY option is missing. Unknown DIP is should be Unused.
+- 05548: [DIP/Input] (system1.c) wbml, wbmlb, wbmlbg, wbmlbge, wbmljb, wbmljo, wbmlvc: DIP Setting FREE PLAY option is missing. Unknown DIP is should be Unused (kamilz)
 - 05555: [Crash/Freeze] (upscope.c) upscope: Game jumps into Service Mode (Duke)
 - 05562: [Sound] (lwings.c) lwings, trojan, sectionz, avengers and clones: The music tempo is fast (hap)
 - 05569: [Compiling] Makefile misinterprets host name in BIGENDIAN autodetection (R. Belmont)
@@ -238,7 +238,7 @@ MAME Testers Bugs Fixed (46):
 - 05602: [Save/Restore] (nitedrvr.c) nitedrvr: Random characters appear in the middle of the screen using -autosave (hap)
 - 05609: [DIP/Input] (dec0.c) baddudes and drgninja: Continue Dip Switch is incorrect (Tafoid)
 - 05616: [Save/Restore] All sets using 6809/6309 cpu: Unreliable (failing) save states (Alex Jackson)
-- 05620: [Graphics] Crosshair: Selected graphic does not display properly
+- 05620: [Graphics] Crosshair: Selected graphic does not display properly (MAMEBase)
 - 05627: [Speed] (dec0.c) slyspy and clones: comparing to other games in this driver performance is low (Alex Jackson)
 
 
@@ -254,13 +254,13 @@ Source changes:
 - Fixed bloom misalignment with HLSL [MooglyGuy].
 - Maygay M1 and MV1 converted to standard i8279 drivers [J. Wallace].
 - konamigx: Reverb me harder baby! [Olivier Galibert].
-- namcona1.c improvements [Alex Jackson]:
+- namcona1.c: Improvements [Alex Jackson]:
   * Rewrite tilemap drawing code;
   * Use set_palette_offset;
   * Use GFXDECODE_RAM;
   * ROM loading and miscellaneous cleanups.
 - Chihiro improvements [Samuele Zannoli]:
-  * i386 cpu x87 opcodes FPREM and FPREM1 must clear status bit C2 not C0;
+  * i386 CPU x87 opcodes FPREM and FPREM1 must clear status bit C2 not C0;
   * Add basic management of some Nvidia APU sound registers;
   * Store modelview/projection matrices and translate/scale vectors sent to NV2A;
   * Store vertex program (vertex shader) sent to NV2A 3d accelerator;
@@ -454,7 +454,7 @@ Source changes:
 - funworld.c: Inserted some more switches, Saloon now boots, and service mode is mostly working.  Added default NVRAM to jolycrdb, game seems to work now [Peter Ferrie].
 - sh2: Fix and enable memory system bypass for SH-1 & SH-2 DRC [R. Belmont].
 - schedule.c: Make yield() actually yield again, rather than be a synonym for spin() [Alex Jackson].
-- schedule.c: rebuild_execute_list() after loading a savestate to ensure the order of execution remains consistent. Fixes 0.153 savestate regressions in various drivers [Alex Jackson].
+- schedule.c: Rebuild_execute_list() after loading a savestate to ensure the order of execution remains consistent. Fixes 0.153 savestate regressions in various drivers [Alex Jackson].
 - nec v25: Implement programmable clock divider via execute_clocks_to_cycles() instead of set_clock_scale(). Properly restore the clock divider on state load [Alex Jackson].
 - Cool Pool: Added 2nd button and button labels [Gamez Fan].
 - Document recent measurements done on the AY8910 [Couriersud].
@@ -482,3 +482,4 @@ Source changes:
 - Dakar, Motor Show improved [Robbbert].
 - Fix uninitialized auto; should fix instances where a game with cheats active using multiple expressions in one action crashes at start.  [m4st4].
 - JSMESS: Add shim for Web Audio sound module [Katelyn Gadd, Justin Kerk].
+- Bump MAME 0.154 [Miodrag Milanović].

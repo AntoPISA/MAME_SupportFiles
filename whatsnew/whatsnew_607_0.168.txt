@@ -79,7 +79,7 @@ Source changes:
 ---------------
 - zx: Start of a hardware-correct rewrite [Olivier Galibert].
 - Aristocrat MKV driver: More accurate documentation. Also added some technical notes [Roberto Fresca].
-- osborne1 improvements [Vas Crabb]:
+- osborne1: Improvements [Vas Crabb]:
   * Bank low 16k according to schematics, passes memory test;
   * Handle memory mapped I/O addresses according to schematics;
   * Correct vectoring of IEEE488 interrupt;
@@ -131,24 +131,24 @@ Source changes:
 - naomi.c: Added "NAOMI Development BIOS v1.10" [Andy Geezer, MetalliC].
 - Aristocrat MKIV driver: Changed the Fever Pitch input scheme and artwork layout, since it seems that the game lacks of a gambling or double-up feature. Also cleaned a bit the driver [Roberto Fresca].
 - Aristocrat MKIV driver: Fever Pitch service input is just 'reserve' feature/function. Changed the inputs and artwork layout accordingly [Roberto Fresca].
-- HLSL [ImJezze]:
- * Removed duplicate prescale fields;
- * Made visibility of HLSL options depending on screen type;
- * Disabled scanlines for LCD screen type. Fixed reset of HLSL settings;
- * Fixed bug that resets the HLSL settings when the screen size has changed;
- * Removed hardcoded HLSL presets;
- * Updates HLSL readme;
- * Fixed creation order of D3D and HLSL resources;
- * Sliders will be hidden when toggled off and will be shown when toggled on again;
- * Screen adjustment (scale, offset) can now be handled by the respective render API itself (default behavior is as before);
- * D3D (if HLSL) is activated handles screen adjustment by itself within the shader, which fixes the odd behavior of some effects (e.g. round corners) when screen scale and offset is used;
- * Fixed bug that resets the HLSL settings when switching between window mode and fullscreen;
- * Fixed changed screen adjustment for multi screens;
- * The vector renderer now tries to detect a invariabel vector intensity and disables the calculation of a dynamic beam width;
- * Fixed not used HLSL settings from <custom>.ini if MAME was started without driver parameter;
- * Removed default values from HLSL sliders, the defaults here are more like null values to hint when an effect would be disable;
- * Slightly changed default HLSL settings;
- * Fixed missing shadow mask texture when switching between window mode and full screen.
+- HLSL update [ImJezze]:
+  * Removed duplicate prescale fields;
+  * Made visibility of HLSL options depending on screen type;
+  * Disabled scanlines for LCD screen type. Fixed reset of HLSL settings;
+  * Fixed bug that resets the HLSL settings when the screen size has changed;
+  * Removed hardcoded HLSL presets;
+  * Updates HLSL readme;
+  * Fixed creation order of D3D and HLSL resources;
+  * Sliders will be hidden when toggled off and will be shown when toggled on again;
+  * Screen adjustment (scale, offset) can now be handled by the respective render API itself (default behavior is as before);
+  * D3D (if HLSL) is activated handles screen adjustment by itself within the shader, which fixes the odd behavior of some effects (e.g. round corners) when screen scale and offset is used;
+  * Fixed bug that resets the HLSL settings when switching between window mode and fullscreen;
+  * Fixed changed screen adjustment for multi screens;
+  * The vector renderer now tries to detect a invariabel vector intensity and disables the calculation of a dynamic beam width;
+  * Fixed not used HLSL settings from <custom>.ini if MAME was started without driver parameter;
+  * Removed default values from HLSL sliders, the defaults here are more like null values to hint when an effect would be disable;
+  * Slightly changed default HLSL settings;
+  * Fixed missing shadow mask texture when switching between window mode and full screen.
 - z800x: Fix the disassembly [Oliver Lehmann].
 - ap2_dsk.c: Support 36-track Apple II NIB images [Peter Ferrie].
 - wozfdc: Warp factor 4 Scotty (much less CPU usage now!) [Olivier Galibert].
@@ -162,3 +162,4 @@ Source changes:
 - se3208: Make sure the low bits of the stack pointer are always 0 [Luca Elia].
 - se3208.c: Disallowed unaligned dword reads/writes, this allows "Donggul Donggul Haerong" to function, although not 100% sure it's the correct fix [David Haywood].
 - Allow for Emscripten compile to JavaScript out of the box. MAME can now be built using Emscripten's 'emmake' tool, e.g. like so: emmake make SUBTARGET=pacman SOURCES=src/mame/drivers/pacman.cpp. This should produce a .js file which can be supplied to an HTML front-end [Justin Kerk].
+- Bump MAME 0.168 [Miodrag Milanović].

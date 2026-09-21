@@ -62,26 +62,26 @@ VT100 w/VT1xx-AC STP. [Lord Nightmare].
 
 New WORKING Software List Additions
 -----------------------------------
-gamegear.xml:
-  Cave Dude, (USA, prototype) [uncredited]
-sms.xml:
-  Sky Fighter (Samsung Gam*Boy) [uncredited]
-sms.xml:
-  Action Fighter (prototype), Captain Silver (prototype) [SMS Power]
-kim1_cass.xml:
-  mchess [Dagarman]
-ibm5150.xml:
-  Karateka (Beta 1986-03-03) [Jason Scott, Jordan Mechner]
-ibm5150.xml, ibm5170.xml:
-  Additions from various sources [Justin Kerk]
-electron_flop.xml:
-  Added floppies [Nigel Barnes]
-bbcb_flop:
-  Various software items [Nigel Barnes]
 apple2.xml:
   Dungeon Master's Assistant, Genesis, Pigpen, Renegade [TRex]
+bbcb_flop:
+  Various software items [Nigel Barnes]
+electron_flop.xml:
+  Added floppies [Nigel Barnes]
+gamegear.xml:
+  Cave Dude, (USA, prototype) [uncredited]
+ibm5150.xml:
+  Karateka (Beta 1986-03-03) [Jason Scott, Jordan Mechner]
+  Additions from various sources [Justin Kerk]
+ibm5170.xml:
+  Additions from various sources [Justin Kerk]
+kim1_cass.xml:
+  mchess [Dagarman]
 pce_tourvision.xml:
   Barunba, Power Tennis [system11]
+sms.xml:
+  Sky Fighter (Samsung Gam*Boy) [uncredited]
+  Action Fighter (prototype), Captain Silver (prototype) [SMS Power]
 x68k_flop.xml:
   Additional clones [nekoziman]
 
@@ -114,7 +114,7 @@ MAME Testers Bugs Fixed (22):
 
 Source changes:
 ---------------
-- Move UI dats to Lua plugin [Carl]:
+- Move UI dats to LUA plugin [Carl]:
   * Changes the selgame UI sidebar get the dat information from a plugin rather than the hardcoded C++;
   * Much easier to add other dat files and allow for scripted data;
   * Example included that uses the hi2txt XML parser files to display high score info from hiscore file or NVRAM.
@@ -241,7 +241,7 @@ Source changes:
   * Replaced bootleg MCU code on sqix and sqixr1 sets with a dump created from the sqixu MCU, based on the bootleg MCU code;
   * Cleaned up MCU semaphore implementation for sqix and clones, shuffled the superqix machine configurations to make more sense.
 - atarist: Added correct ROM labels for the TOS 1.02 and 1.04 ROMs for the MegaST [Lord Nightmare, techfury90].
-- bhiscore.dat: Various updates [Leezer].
+- hiscore.dat: Various updates [Leezer].
 - fmtowns: Switched off layer debug keys by default [Barry Rodewald].
 - chessmst: Fixed HALT button [Sandro Ronco].
 - pc1512 Various improvements [Curt Coder]:
@@ -350,3 +350,4 @@ Source changes:
 - Changed use of IPT_START to IPT_START1 in (bartop52), (guab), (midyunit), (namcos22), (sshot) and (turrett) [MASH].
 - apollo: Eliminate logerror spam on unmapped ISA access [Hans Ostermeyer].
 - psx.xml: Removed duplicates, fixed shortname consistency. Some images were identical but dumped with different offset [Aeternal].
+- Bump MAME 0.178 [Miodrag Milanović].

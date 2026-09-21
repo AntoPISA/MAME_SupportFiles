@@ -101,7 +101,7 @@ Source changes:
 - Experiments in PCI land [Olivier Galibert].
 - Fixed an annoying inconsistency between memory_share and memory_region: the width() method of the former returned the width in bits (8, 16, 32 or 64) while the width() method of the latter returned the width in bytes (1, 2, 4 or 8). Now both classes have a bitwidth() method and a bytewidth() method. Updated all callers to use whichever one was more appropriate. Also removed the implicit-cast-to-any-integer-pointer of memory_regions, which was rather unsafe (if you weren't careful with your * operators and casts it was easy to accidentally get a pointer to the memory_region object itself instead of to the data, with no warning from the compiler... or at least I kept doing it) Updated all devices and drivers that were accessing regions that way to use a region_ptr_finder when possible, and otherwise to call base() explicitly [Alex Jackson].
 - The tilemap system now respects gfx_element::total_colors(). Fixed various drivers and devices that were using incorrect total_colors for GFX elements used in tilemaps [Alex Jackson].
-- Added language ROM for Lunar Lander [Mariusz Wojcieszek].
+- Added language ROM for 'Lunar Lander' [Mariusz Wojcieszek].
 - rsp: Made the RSP interpreter core functional again [MooglyGuy].
 - Long-overdue documentation about how to use priority-masked drawing (aka pdrawgfx); add some useful constants [Alex Jackson].
 - Added preliminary layout for Alien Invaders based on screenshot [Tafoid].
@@ -117,17 +117,17 @@ Source changes:
 - tmaster.c: Reverse-engineered the keys for all protected TouchMaster games; removed the protection hacks.  [Peter Ferrie].
 - cbombers: Fix TC0480SCP text layer colors [Alex Jackson].
 - pci: Add remapping notifiers [Olivier Galibert].
-- upd7810.c [Ramiro Polla]:
+- upd7810.c: Update [Ramiro Polla]:
   * Small ADC improvements;
   * Clean up interrupt handler and make it edge triggered;
   * Set extended timer/event counter interrupts;
   * Fix and export extended timer/event counter output.
-- mario.c: fix Monitor switch so it correctly affects both tiles and sprites [Alex Jackson].
+- mario.c: Fix Monitor switch so it correctly affects both tiles and sprites [Alex Jackson].
 - Added command-line option -[no]drc_log_uml to control DRC UML disassembly logging. This allows logging of DRC UML disassembly without re-compiling [Oliver Stoneberg].
 - Added command-line option -[no]drc_log_native to control DRC  native diassembly logging.  This allows logging of DRC native disassembly without re-compiling [Oliver Stoneberg].
 - calomega.c: Improve color emulation by analogy with tugboat.c (which is actually a heavily modified Cal Omega board) [Alex Jackson].
 - SEGA YBoard: Mapping the port bits used to provide motor movement feedback [Felipe Corrêa da Silva Sanches].
-- naomi.c: Redumped F355 [Andy Geezer]
+- naomi.c: Redumped F355 [Andy Geezer].
 - pci: A little more, reaches an unemulated pslldq at fd228 [Olivier Galibert].
 - Converted the various Hard Drivin' board types to be devices, allowing the side screens to be hooked up on Race Drivin' Panorama, which is now close to working (the side screens fail when selecting one of the car types) [David Haywood].
 - rspdrc: Added undocumented ops VADDB, VACCB, VSUBB, and VSUCB [MooglyGuy].
@@ -145,7 +145,7 @@ Source changes:
 - mips3drc: Generate -0.0 for NEG.S/D of 0.0 as FNEG does not on x86 [MooglyGuy].
 - mips3drc: Sign-extend ROUND.L, TRUNC.L, CEIL.L and FLOOR.L [MooglyGuy].
 - rspdrc: Add destination address support to the BREAK opcode [MooglyGuy].
-- naomi.c: samba2k and ringout correct maskrom size and labels [Arzeno Fabrice, MetalliC].
+- naomi.c: (samba2k) and (ringout) correct maskrom size and labels [Arzeno Fabrice, MetalliC].
 - Power Drift: Portbits for Limit & Safety switches.
 - G-LOC: Mapping portbits related to the moving cabinet limit switches [Miodrag Milanović].
 - Galaxy Force II: Adding gforce_output_cb1 (the values written there seem to select the meaning of some of the PORTC bits related to motor control) [Miodrag Milanović].
@@ -157,7 +157,7 @@ Source changes:
 - segaufo update: Added better layouts + made ufo800 work + added upd sound to ufo21 + misc fixes  [hap].
 - Man pages (*nix): Fixed some typos and bumped version to 0.155.
 - Fixed Mametesters 05769 by reducing ATA flash card seek time to zero [smf].
-- naomi.c: kingrt66 use real MaskROM cart layout and labels instead of flashcart [Arzeno Fabrice].
+- naomi.c: (kingrt66) use real MaskROM cart layout and labels instead of flashcart [Arzeno Fabrice].
 - Handcrafted CPS-1 PALs for Area 88 and Strider PCBs [Palindrome].
 - i386: Fix segment present check for calls to a TSS [Miodrag Milanović].
 - i386: Mark tss busy [Carl].
@@ -175,7 +175,7 @@ Source changes:
 - windows.mak: Include WinPCap headers during Windows build; suppress MSVC debug build warning.
 - Altered FIRQ and NMI handling to improve Maygay M1 operation.
 - Add remaining PAL from 'jumping' sets [Porchy].
-- naomi.c [Arzeno Fabrice]:
+- naomi.c: Update [Arzeno Fabrice]:
   * HOTD2 Proto BIOS added;
   * Label correction for Club Kart Prize.
 - SDL: SDL2 is now the default except for OS/2 builds [R. Belmont].
@@ -201,6 +201,6 @@ Source changes:
 - Capcom updates: Fixed some incorrect info about the SF2 bootlegs and got them running better [any].
 - Dumped 8571 MCU from a bootleg Top Secret/Bionic Commando PCB.
 - k054156: Save state register all video RAM, including the optional "external linescroll RAM"; fixes Lethal Enforcers save states [Alex Jackson].
-- More devfind: [Alex Jackson].
 - i386: Move initialisation of m_lock to i386_common_init(), so that it is always initialised.
 - i6300esb: More more more [Olivier Galibert].
+- Bump MAME 0.156 [Miodrag Milanović].

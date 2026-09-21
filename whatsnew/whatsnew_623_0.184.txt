@@ -223,7 +223,7 @@ Source changes:
 - netlist: Added a heap priority queue, fix netlist stats collection, fixed new clang warnings, reduced footprint of extended clock [Couriersud].
 - Decoded popper color PROMs [Joe Magiera, Couriersud].
 - sdk86.cpp: Fixed ROM loading. [Lord Nightmare].
-- pes.cpp: use combined /RS and /WS function since the MCU/CPU can in theory change both lines at once, and since it uses a TMS5220C it does matter in this case. [Lord Nightmare].
+- pes.cpp: Use combined /RS and /WS function since the MCU/CPU can in theory change both lines at once, and since it uses a TMS5220C it does matter in this case. [Lord Nightmare].
 - segas32.cpp: Added uPD7725 DSP with ROM loading to Air Rescue (disabled for now). [Lord Nightmare].
 - upd7725: Added preliminary IRQ support, corrected SI/SO bit order, added SIACK/SOACK registers, fixed save state registration, fixed reset state. [Lord Nightmare].
 - Fixed an off-by-one error when loading upd96050 roms for SNES games. [Lord Nightmare].
@@ -328,3 +328,4 @@ Source changes:
 - chihiro.cpp: Redumped Ollie King (GDX-0007) [Ordyne, The Dumping Union].
 - konamigx.cpp: Corrected two ROM names and redumped sound ROM for Rushing Heroes [Smitdogg, The Dumping Union].
 - Updated hiscore.dat [Leezer].
+- Bump MAME 0.184 [Vas Crabb].

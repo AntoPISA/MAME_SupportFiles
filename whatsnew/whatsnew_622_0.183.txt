@@ -168,9 +168,9 @@ MAME Testers Bugs Fixed (9):
 - 05577: [DIP/Input] (nbmj9195.cpp) mjanbari: DIP Settings resolved (kamilz)
 - 05599: [DIP/Input] (srmp2.cpp) rmgoldyh: DIP Settings (kamilz)
 - 06470: [DIP/Input] (qix.cpp) qix: Unable to map service buttons with ctrlr.cfg (OzFalcon)
-- 06477: [Cheat System] All systems: MAME should ignore problematic cheats (or at least exit gracefully) (cuavas)
+- 06477: [Cheat System] All systems: MAME should ignore problematic cheats (or at least exit gracefully) (Vas Crabb)
 - 06485: [Documentation] (peyper.cpp) ator: The year of publication is 1985 (AJR)
-- 06499: [Gameplay] (xain.cpp) xsleena and clones: Some enemies in the second stage has disappeared (cuavas)
+- 06499: [Gameplay] (xain.cpp) xsleena and clones: Some enemies in the second stage has disappeared (Vas Crabb)
 - 06500: [Interface] DAT files: Unable to use multiple paths (crazyc)
 - 06503: [DIP/Input] (galaxian.cpp) galaxianmo: Bonus Life dip switch information is incorrect (GoldS_TCRF)
 
@@ -316,7 +316,7 @@ Source changes:
 - segas16b.cpp: Improved inputs for 'Excite League' and 'Super League' [Angelo Salese].
 - sh4: Fixed FMOV* opcodes [MetalliC].
 - naomi.cpp: Redumped "Crackin' DJ Part 2" [billy16jr, Cereth, cpsystem3, MetalliC, rtw].
-- naomi.cpp documentation updates [MetalliC]:
+- naomi.cpp: Documentation updates [MetalliC]:
   * Added two Japan Mushiking cart serial numbers;
   * Documented Atomiswave game exe Build timestamps shown in Test Mode;
   * Corrected few game years;
@@ -335,7 +335,7 @@ Source changes:
 - Added Preliminary TLCS-870 CPU core - work in progress [David Haywood].
 - spacecr: Added continue button [AJR].
 - De-hardcoded service inputs for gekisou and Atari games [AJR].
-- polepos.cpp input improvements [AJR]:
+- polepos.cpp: Input improvements [AJR]:
   * Corrected DIP switches and locations for (polepos2bi) and (polepos2bs);
   * Fix bootleg manufacturer info for (polepos2bs);
   * Use modern DEVCB features to make extra 4-bit input ports unnecessary.
@@ -423,3 +423,4 @@ Source changes:
   * Fixed parallel poll logic in PHI;
   * Working support for HP9895 dual floppy drive with MFI image format;
   * Corrected aspect ratio of alpha and graphic video modes using a layout file.
+- Bump MAME 0.183 [Vas Crabb].

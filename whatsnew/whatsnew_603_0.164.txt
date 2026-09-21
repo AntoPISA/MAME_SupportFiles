@@ -99,7 +99,7 @@ Source changes:
 - Improved kidniki sound quality while maintaining speed by adding more frontiers. Added LOGIC_INPUT to netlist which allows to specify a logic family, i.e. output characterics. Used this for improved AY8910 port modeling [Couriersud].
 - m68k: Fix '020 cache emulation corner case [Hans Ostermeyer].
 - 3c505: move option ROM to the card to reflect real h/w [Hans Ostermeyer].
-- apollo: improved mouse emulation [Hans Ostermeyer].
+- apollo: Improved mouse emulation [Hans Ostermeyer].
 - Add MCFG_FORCE_NO_DRC [MooglyGuy].
 - Redumped bad ROM from Mayjinsen 3 (Aleck64), internal checksum now matches ROM dump [Brizzo, theboy181, Zoinkity].
 - pet_flop.xml: Added alternate Commodore SFD-1001 Test/Demo diskette [Curt Coder].
@@ -121,7 +121,7 @@ Source changes:
 - g64_dsk: Respect the number of tracks specified in the image header [Curt Coder].
 - c128_flop.xml: Added Paperback Writer 128, Term Paper Writer, The Great War, and Your Personal Financial Planner 128 disk images [Curt Coder].
 - Document progress on congo bongo. Gorilla sound now works. Performance up from 30% to 170%. Use ./nltool -c run -f nl_examples/congoBongo.c -t 2 to test. Minor enhancements and bugfixes [Couriersud].
-- m68k: fix unaligned pc-relative accesses [Olivier Galibert].
+- m68k: Fix unaligned pc-relative accesses [Olivier Galibert].
 - scfinals: Add correct default eeproms [Olivier Galibert].
 - Add a second ROM label variant to NSS Super Mario World IC1 [byuu].
 - peoplepc: Split from pc.c and make it work [Carl].
@@ -153,7 +153,7 @@ Source changes:
 - firebeat: Added basic SPU board emulation [Ville Linde].
 - rspcp2: Make the align declarations gcc-compatible [Olivier Galibert].
 - Decrypted external ARM code in slqz3 [iq_132].
-- a7800: fix 0x2800 mirroring behavior [Mike Saarna, Robert Tuccitto].
+- a7800: Fix 0x2800 mirroring behavior [Mike Saarna, Robert Tuccitto].
 - Added Commodore VIC-1515 printer [Curt Coder].
 - Added Commodore VIC-1520 plotter [Jim Brain, Curt Coder].
 - Add ROM locations to zookeeper sets [Lord Nightmare].
@@ -168,11 +168,12 @@ Source changes:
 - Commodore 1526/MPS-802/4023 printer [Curt Coder].
 - c128: Added a skeleton for the PARTNER 128 cartridge [Curt Coder].
 - ti99: MFM low-level hard disk emulation, removed legacy floppy [Michael Zapf].
-- 315_5124.c: avoid saving the dynamic RAM used for temp rendering, the save state system does not currently agree with RAM that gets reallocated at run time which was happening whenever the resolution changed [Miodrag Milanović].
+- 315_5124.c: Avoid saving the dynamic RAM used for temp rendering, the save state system does not currently agree with RAM that gets reallocated at run time which was happening whenever the resolution changed [Miodrag Milanović].
 - shadfrce: Remove runtime tag lookups and optimized video rendering to restore speed back to what it was in versions prior to 0.161 [David Haywood].
-- dreamwld.c: fix visible areas based on PCB tests, fixed linescroll modes, fixed tilemap sizes etc. This improves visuals in cutefght, rolcrush, baryon etc [David Haywood].
+- dreamwld.c: Fix visible areas based on PCB tests, fixed linescroll modes, fixed tilemap sizes etc. This improves visuals in cutefght, rolcrush, baryon etc [David Haywood].
 - sm510: Initial Sharp SM510 MCU core [hap].
 - tb303: Hooked up basic button inputs and ext. RAM [hap].
 - Additional gameking dumps listed in Software List, including 2 for Game King 3 [Team Europe].
 - Some additional famiclone BIOS sets [Team Europe].
-- Added / completed /enabled save state support to the following drivers: decos32.c, destroyr.c, gstriker.c, itech8.c, namcona1.c, namcond1.c, namcos86.c, naughtyb.c, nbmj9195.c, paranoia.c, pcktgal.c, poolshrk.c, sbowling.c, spbactn.c, spdodgeb.c, starcrus.c, tank8.c, tapatune.c, ttchamp.c and vicdual.c [Osso]
+- Added / completed /enabled save state support to the following drivers: decos32.c, destroyr.c, gstriker.c, itech8.c, namcona1.c, namcond1.c, namcos86.c, naughtyb.c, nbmj9195.c, paranoia.c, pcktgal.c, poolshrk.c, sbowling.c, spbactn.c, spdodgeb.c, starcrus.c, tank8.c, tapatune.c, ttchamp.c and vicdual.c [Osso].
+- Bump MAME 0.164 [Miodrag Milanović].

@@ -59,17 +59,17 @@ Tora Tora (prototype?, set 2)  [Siftware]
 
 New WORKING Software List Additions
 -----------------------------------
-tutor.xml:
-  Rescue Copter [3D] (Jpn) [Ryan Holtz, Team Europe]
-  Triple Command (Jpn) [Ryan Holtz, Team Europe]
-nes.xml:
-  Booky Man (Spa) [SSJ, TeamEurope]
 a800_flop.xml:
   Elektra Glide [Curt Coder]
   KoalaPainter (Light Pen) [Curt Coder]
 c64_flop.xml:
   Elektra Glide [Curt Coder]
   KoalaPainter (Light Pen) [Curt Coder]
+nes.xml:
+  Booky Man (Spa) [SSJ, TeamEurope]
+tutor.xml:
+  Rescue Copter [3D] (Jpn) [Ryan Holtz, Team Europe]
+  Triple Command (Jpn) [Ryan Holtz, Team Europe]
 
 New NOT_WORKING Software List Additions
 ---------------------------------------
@@ -80,6 +80,8 @@ gameking3.xml:
 gbcolor.xml:
   Magic Lamp [SSJ, TeamEurope, Taizou]
   Binary Monster 2 - Adventure of Hell(TW) [SSJ, TeamEurope]
+jaguar.xml:
+  Air Cars (1994 version) [Porchy]
 nes.xml:
   Coolboy RS-17 (203-in-1) [SSJ, TeamEurope]
 pico.xml:
@@ -93,8 +95,6 @@ pico.xml:
   Susie-chan to Marvy o-Tetsudai Da~isuki! (Jpn) [TeamEurope]
 vc4000.xml:
   Come Frutas [SSJ, TeamEurope]
-jaguar.xml:
-  Air Cars (1994 version) [Porchy]
 
 
 MAME Testers Bugs Fixed (14):
@@ -160,7 +160,7 @@ Source changes:
 - Sega X-Board [David Haywood, Ariane Fugmann]:
   * Converted 'X Board' to be a device;
   * Correctly emulated the 'Twin' X-Board setup which was used by GP Rider (a bridge board with shared RAM).
-- bbc: clones, floppy formats, softlists, and cleanups [Nigel Barnes]:
+- bbc: Clones, floppy formats, softlists, and cleanups [Nigel Barnes]:
   * Added clone bbcb1770, bbcb now 8271 only;
   * Added clone pro128s, Olivetti Prodest PC 128S;
   * Added clones Acorn Business Computers and Cambridge Workstation;
@@ -203,11 +203,12 @@ Source changes:
   * Preliminary work for separating VI and RDP functionality;
   * VI timing period is now set dynamically from the VI registers. VI timing should now be accurate (for NTSC).
 - DEC LA120: Redumped firmware ROM, now passes checksum test [Brian Walenz].
-- a2600: new 6502 PC=cur inst, old 6502 PC=prev inst (MT 5345) [Mike Saarna, Trebor, R. Belmont].
+- a2600: New 6502 PC=cur inst, old 6502 PC=prev inst (MT 5345) [Mike Saarna, Trebor, R. Belmont].
 - Seperate Space Warp into it's own skeleton driver [mixxmaster].
-- m68k: fix 020+ PACK/UNPK nibble ordering [Till Harbaum, R. Belmont].
+- m68k: Fix 020+ PACK/UNPK nibble ordering [Till Harbaum, R. Belmont].
 - i8271: Modernize [Carl].
 - Convert galastrm, model2, midzeus, namcos23, and hng64 drivers to universal "poly" rasterizing interface [Andrew Gardner].
 - Preliminary refactor of IGS017/IGS031 video hardware to be a device so that it can be used by the igs_m027.c games (IGS gamblers) once the internal ARM roms have been dumped [David Haywood].
 - Reduce tagmap lookups in taito_f3.c (was causing severe slowdown in arkretrn) [David Haywood].
 - a7800: More accurate representation of the Activision cart hardware for utilized hotspots. Rampage no longer crashes when P1 selects Lizzy [Mike Saarna].
+- Bump MAME 0.166 [Miodrag Milanović].

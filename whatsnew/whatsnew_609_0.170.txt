@@ -102,22 +102,23 @@ Sega Bass Fishing Challenge Version A [gamerfan, brizzo, MetalliC, Smitdogg, The
 
 New WORKING Software List Additions
 -----------------------------------
+c64_cart.xml:
+  KoalaPainter [Curt Coder]
+c64_flop.xml:
+  Little Knight Arthur [Pasi Hytönen]
+snotec.xml:
+  4 new cart dumps [TeamEurope]
+  10 new cart dumps for PreComputer 1000 [TeamEurope]
+  2 new cart dumps for Ordisavant (France) [TeamEurope, dlfrsilver]
 tutor.xml:
   Tron (Jpn) [TeamEurope, Steve]
-snotec.xml:
-  4 new cart dumps [TeamEurope].
-  10 new cart dumps for PreComputer 1000 [TeamEurope].
-  2 new cart dumps for Ordisavant (France). [TeamEurope, dlfrsilver]
-c64_flop.xml:
-  Little Knight Arthur. [Pasi Hytönen]
-c64_cart.xml:
-  KoalaPainter [Curt Coder].
+
 
 New NOT_WORKING Software List Additions
 ---------------------------------------
 casloopy.xml:
   Loopy Town no Oheya ga Hoshii! [TeamEurope, Steve]
-  Lupiton no Wonder Palette  [TeamEurope, Steve]
+  Lupiton no Wonder Palette [TeamEurope, Steve]
 database.xml:
   Leapfrog [TeamEurope & Steve]
 
@@ -149,9 +150,9 @@ Source changes:
 - Removed this == nullptr checks and fixed most of the resulting crashes [MooglyGuy, Tafoid].
 - psychic5.cpp: Added SCREEN_RAW_PARAMS [Angelo Salese].
 - More configuration fixes [AJR]:
-  * terrafb: remove unused NB1414M4.
-  * segas16b.cpp: sanity check forgotten in last confix.
-  * sega16sp.cpp: fix region width, make required (as last confix allows).
+  * terrafb: Remove unused NB1414M4.
+  * segas16b.cpp: Sanity check forgotten in last confix.
+  * sega16sp.cpp: Fix region width, make required (as last confix allows).
 - psychic5.cpp: Fixed sprite disable for Bombs Away [Angelo Salese].
 - Pass and return palette devices by reference, not as pointers [AJR]:
   * Add screen_device::has_palette();
@@ -227,3 +228,4 @@ Source changes:
   - Added hum bar simulation based on [MooglyGuy's] GLSL port of the MAME shader pipeline;
   - Added monochrome-chessboard.png;
   - Added slot-mask-aligned.png (to simulate a TFT LCD).
+- Bump MAME 0.170 [Miodrag Milanović].

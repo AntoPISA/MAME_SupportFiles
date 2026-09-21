@@ -481,7 +481,7 @@ Merged pull requests
 - 15360: tvgames/spg110.cpp: Added a working JAKKS Pacific Spider-Man TV game [TeamEurope, David Haywood]
 - 15361: tecmo/tehkanwc.cpp: Added a note about different ROM arrangements used for year hack bootlegs [ClawGrip]
 - 15362: bus/a2bus/agat_fdc.cpp: Added preliminary support for writing to 840 kB floppy disks [shattered]
-- 15363: cpu/z80: Call the interrupt hook for interrupts triggered via the daisy chain interface [holub]
+- 15363: cpu/z80: Call the interrupt hook for interrupts triggered via the daisy chain interface [Andrei I. Holub]
 - 15364: sony/news_68k.cpp: Emulated the NWS-1250 system, and marked it working [Brice Onken, Plamen Mihaylov]
 - 15365: cpu/m68000/m68kops.cpp: Use the minimum read size necessary to obtain the selected bits for BFTST [Brice Onken]
 - 15366: namco/namcos12.cpp: Marked the Kart Duel games as having unemulated networking [JimCarlTay]
@@ -491,17 +491,17 @@ Merged pull requests
 - 15370: taito/taito_l.cpp: Added the European version of Play Girls 2 [kebrank, Sergio Galiano]
 - 15371: casio/ctrc1.cpp: Added preliminary Casiotone RC-1 emulation; cpu/upd7810: Fixed INT0 behavior [Devin Acker, =CO=Windler]
 - 15372: mame/toshiba/t250.cpp: Emulated the Toshiba T-200 and T-250 CP/M systems [David Rand]
-- 15377: sinclair/next/specnext_vtest.cpp: Emulated the ZX Spectrum Next video test pattern generator [holub]
-- 15378: sinclair/next/specnext.cpp: Implemented DMA delays [holub]
-- 15379: plugins/keypress: Added a plug-in that shows the state of host controls [holub]
+- 15377: sinclair/next/specnext_vtest.cpp: Emulated the ZX Spectrum Next video test pattern generator [Andrei I. Holub]
+- 15378: sinclair/next/specnext.cpp: Implemented DMA delays [Andrei I. Holub]
+- 15379: plugins/keypress: Added a plug-in that shows the state of host controls [Andrei I. Holub]
 - 15380: epson/qx10.cpp: Added extra wait states for M1 cycles (fixes GitHub #7963) [Brian Johnson]
 - 15382: adp/stella8085.cpp: Hooked up the 8255 PPI and improved I/O addressing [stonedDiscord]
 - 15384: apple/apple2e.cpp: Improved Laser 128 family emulation and added a newer BIOS for the Laser 128EX [arekkusu42]
 - 15385: formats/imd_dsk.cpp: Added support for writing to ImageDisk IMD disk images [David Rand]
 - 15386: zilog/s8k.cpp, bus/zbi: Added preliminary Zilog System 8000 emulation [ArcLight22]
 - 15387: apple/apple2e.cpp, apple/apple2gs.cpp: Improved accelerator I/O delay emulation [arekkusu42]
-- 15388: sinclair/next/specnext.cpp: Use ULA coordinates for “copper” screen position calculation [holub]
-- 15389: sinclair/sprinter.cpp: Fixed video RAM write aliasing [holub]
+- 15388: sinclair/next/specnext.cpp: Use ULA coordinates for “copper” screen position calculation [Andrei I. Holub]
+- 15389: sinclair/sprinter.cpp: Fixed video RAM write aliasing [Andrei I. Holub]
 - 15390: smarttv_cart.xml: Dumped seven SmarTV Adventures cartridges (not working) [TeamEurope, David Haywood]
 - 15391: akai/x7000.cpp Added a preliminary driver for the Akai S612, S700 and X7000 samplers [DBWBP, Devin Acker]
 - 15393: sega/segaxbd.cpp: Dumped a newer version of After Burner [vivacap]
@@ -510,7 +510,7 @@ Merged pull requests
 - 15396: digiblast_cart.xml: Dumped sixteen digiBLAST cartridges (not working) [trabantrom, anonymous, David Haywood]
 - 15397: zaccaria/zaccaria.cpp: Added brute-forced PLD content for the recently added Money Money set [Luis Arrufat, ClawGrip]
 - 15398: akai/x7000.cpp: Fixed DMA controller addressing [Devin Acker]
-- 15403: sinclair/next/specnext_copper_dasm.cpp: Added a ZX Spectrum Next “copper” disassembler [holub]
+- 15403: sinclair/next/specnext_copper_dasm.cpp: Added a ZX Spectrum Next “copper” disassembler [Andrei I. Holub]
 - 15408: akai/x7000.cpp: Added the MB87013 Quick Disk controller and corrected some inputs [Devin Acker]
 - 15409: sony/news_68k.cpp: Corrected the default display type DIP switch setting for the NWS-1250 [Brice Onken]
 - 15410: sony_news.xml: Added the NWU-671CA (NWF-671C) installation tapes for NEWS-OS 4.1C (not working) [Bitsavers, Brice Onken]
@@ -528,13 +528,13 @@ Merged pull requests
 - 15431: machine/wd1010.cpp: Disable verbose logging by default [David Rand]
 - 15432: smarttv_cart.xml: Dumped five cartridges; yeno_laptop_cart.xml: Dumped two cartridges [TeamEurope, David Haywood]
 - 15433: vsmile_cart.xml: Added Elmo's World - Elmo's Big Discoveries (USA) [Sterophonick]
-- 15434: cpu/z80: Service non-maskable interrupts detected during IRQ acknowledgement before servicing IRQ [holub]
-- 15436: cpu/z80: Always service acknowledged IRQ interrupts (reverts #15434) [holub]
-- 15437: sinclair/next/specnext_layer2.cpp: Latch pixels read across screen updates [holub]
+- 15434: cpu/z80: Service non-maskable interrupts detected during IRQ acknowledgement before servicing IRQ [Andrei I. Holub]
+- 15436: cpu/z80: Always service acknowledged IRQ interrupts (reverts #15434) [Andrei I. Holub]
+- 15437: sinclair/next/specnext_layer2.cpp: Latch pixels read across screen updates [Andrei I. Holub]
 - 15438: Improved VT369 emulation, and promoted the 36-in-1 Classic Games phone case to working [Roman Kuraev]
 - 15440: nintendo/snesb.cpp: Fixed inputs and protection simulation for the International Superstar Soccer bootleg [Devin Acker]
 - 15444: Fixed quoting for the SDL INI_PATH build configuration setting [Cesare Falco]
-- 15447: sinclair/screen_ula.cpp: Latch pixels read across screen updates [holub]
+- 15447: sinclair/screen_ula.cpp: Latch pixels read across screen updates [Andrei I. Holub]
 - 15448: nscsi/hd.cpp: Moved seek time simulation to the base SCSI hard disk device [David Rand].
 - 15451: ussr/sm7238.cpp: Use more idiomatic class member declaration grouping [shattered].
 - 15453: bus/scsi/scsihle.cpp: Deassert REQ between phases, and keep BSY asserted in COMMAND [David Rand].
@@ -547,12 +547,12 @@ Merged pull requests
 - 15468: akai/x7000.cpp: Added sound playback and sampling support [Devin Acker]
 - 15469: ensoniq/esq5505.cpp, ensoniq/esqpanel.cpp, ensoniq/esqvfd.cpp: Updated internal layouts [Christian Brunschen]
 - 15470: pc88va_flop_orig.xml: Always use eight characters for 32-bit CRCs [Thomas Klausner]
-- 15471: sinclair/next/specnext.cpp: Fixed reading registers 0xb0 and 0xb1 and writing register 0x0a [holub]
+- 15471: sinclair/next/specnext.cpp: Fixed reading registers 0xb0 and 0xb1 and writing register 0x0a [Andrei I. Holub]
 - 15472: ensoniq/esqvfd.cpp, esq1by22_eps.lay: Added an internal layout for the Ensoniq EPS family VFD [Christian Brunschen]
 - 15474: konami/nemesis.cpp: Cleaned up machine configuration and improved address maps [cam900]
 - 15476: Attempted to improve nametable page selection for Lexibook games; Marked 33 VT-based systems working [David Haywood]
-- 15477: cpu/z80/z80n.cpp: Fixed non-maskable interrupt latch handling [holub]
-- 15478: cpu/z80: Fixed issues with Z80N non-maskable interrupt handling [holub]
+- 15477: cpu/z80/z80n.cpp: Fixed non-maskable interrupt latch handling [Andrei I. Holub]
+- 15478: cpu/z80: Fixed issues with Z80N non-maskable interrupt handling [Andrei I. Holub]
 - 15479: sound/va_vco.cpp: Moved the generic oscillator functionality from the CEM3340 to a separate device [m1macrophage]
 - 15482: sound/segapcm.cpp: Split the discrete logic variant and 315-5218 variant into separate devices [cam900]
 - 15483: machine/nscsi_hle.cpp: Allow targets to defer bus phase transitions [David Rand]
@@ -569,21 +569,21 @@ Merged pull requests
 - 15499: machine/ns32082.cpp: Fixed PTE address composition, bypass translation for interrupt acknowledgement cycles [David Rand]
 - 15500: machine/ns32202.cpp: Fixed pending state for level-sensitive interrupts, and priority-gated acknowledgement [David Rand]
 - 15501: bus/isa/pd32.cpp: Emulated the PD-32 NS32016 coprocessor card described in Micro Cornucopia #32 (1986) [David Rand]
-- 15502: sinclair/next/specnext.cpp: Improved I/O address decoding and peripheral selection [holub]
-- 15503: sinclair/next/specnext.cpp: Fixed PSG chip I/O selection [holub]
+- 15502: sinclair/next/specnext.cpp: Improved I/O address decoding and peripheral selection [Andrei I. Holub]
+- 15503: sinclair/next/specnext.cpp: Fixed PSG chip I/O selection [Andrei I. Holub]
 - 15504: mylife_cart.xml: Added one item; smarttv_cart.xml: Added one item, and re-dumped one item [TeamEurope, David Haywood]
 - 15505: sound/swp30.cpp: Saturate the result of sample interpolation (fixes audible clicks) [Charles Vestal]
 - 15506: bus/pc98_cbus/pc9801_96.cpp: Added a preliminary CLGD5428-based PC-9801-96 card [BlueRain-debug]
-- 15509: sinclair/next/specnext_sprites.cpp: Fixed out-of-range attribute RAM accesses that caused memory corruption [holub]
+- 15509: sinclair/next/specnext_sprites.cpp: Fixed out-of-range attribute RAM accesses that caused memory corruption [Andrei I. Holub]
 - 15511: Added three multi-game systems (two working) [TeamEurope, David Haywood]
 - 15512: machine/am9517a.cpp: Re-implemented the µPD71071 within the AM9517 DMA controller device family [Devin Acker]
 - 15513: machine/ncr5385.cpp: Complete selection as soon as the target responds [David Rand]
 - 15514: igs/igs009.cpp, igs/spoker.cpp: Fixed debugger and save state issues and cleaned up code [cam900]
 - 15517: tektronix/tek440x.cpp: Added the X2210 non-volatile RAM used for storing the Ethernet MAC address [Adam Billyard]
-- 15524: sinclair/next/specnext.cpp: Implemented read-only BRAM configurations [holub]
+- 15524: sinclair/next/specnext.cpp: Implemented read-only BRAM configurations [Andrei I. Holub]
 - 15526: phoenix/phoenix.cpp: Added the German version of Germ Wars (original title of Survival) [Dillweed, David Haywood]
 - 15527: cpu/es5510/es5510.cpp: Perform signed rounding towards zero when writing data to DOL [Christian Brunschen]
-- 15528: sinclair/next/specnext_dma.cpp: Force search mode to transfer instead [holub]
+- 15528: sinclair/next/specnext_dma.cpp: Force search mode to transfer instead [Andrei I. Holub]
 - 15530: machine/keyboard.cpp: Added control characters to inputs for natural keyboard mode [David Rand]
 - 15531: natsemi/icm3216.cpp: Emulated the Z80 I/O processor and the SCSI subsystem, and marked the system working [David Rand]
 - 15532: video/pc_vga_cirrus.cpp: Fixed transparent colour mask indices, and fixed VRAM type handling [BlueRain-debug]
@@ -602,11 +602,11 @@ Merged pull requests
 - 15555: cpu/ns32000: Added a translation look-aside buffer to the NS32532 on-chip MMU [David Rand]
 - 15556: nintendo/nes_vt02_vt03.cpp, nintendo/nes_vt369_vtunknown.cpp Dumped two TV games (one working) [TeamEurope, David Haywood]
 - 15557: bus/rs232/auto3a.cpp: Added a simulated terminal with automatic framing detection and basic ADM-3A emulation [David Rand]
-- 15558: machine/z80dma.cpp, sinclair/next: Added some member variables to saved states [holub]
+- 15558: machine/z80dma.cpp, sinclair/next: Added some member variables to saved states [Andrei I. Holub]
 - 15563: igs/goldstar.cpp: Corrected DIP switches and inputs for Cherry Bonus [Ioannis Bampoulas]
 - 15564: machine/mc68681.cpp: Fixed race conditions that caused incorrect handling of transmission completion [David Rand]
 - 15566: akai/s900.cpp: Added a preliminary driver for the Akai S900/S950 sampler family [DBWBP, Devin Acker]
-- 15567: formats/scl_dsk.cpp: Added support for SCL format TR-DOS disk images [holub]
+- 15567: formats/scl_dsk.cpp: Added support for SCL format TR-DOS disk images [Andrei I. Holub]
 - 15569: cpu/ns32000: Added the NS32CG16 graphics/printer variant [David Rand]
 - 15570: sound/va_vco.cpp: Added pulse wave DC compensation, reset-type sync and triangle-derived pulse waves [m1macrophage]
 - 15571: machine/ncr5380.cpp: Don’t generate an interrupt on ICR-issued SCSI reset for the DP8490 [David Rand]
@@ -650,11 +650,11 @@ Merged pull requests
 - 15630: machine/generalplus_gpl951xx_soc.cpp: Added internal ROM support [cyanic, David Haywood]
 - 15631: igs/igs_m027xa.cpp: Updated the note about PCBs used for Jungle King 2004 [Ioannis Bampoulas]
 - 15633: cpu/ns32000: Fetch the module static base after restoring the PSR on RETT or RETI [David Rand]
-- 15634: sinclair/next/snapshot_nex.cpp: Added NEX ZX Spectrum Next snapshot format handling [holub]
-- 15635: sinclair/spec_snqk.cpp: Support files with SNX extension containing SNA format data [holub]
+- 15634: sinclair/next/snapshot_nex.cpp: Added NEX ZX Spectrum Next snapshot format handling [Andrei I. Holub]
+- 15635: sinclair/spec_snqk.cpp: Support files with SNX extension containing SNA format data [Andrei I. Holub]
 - 15636: sound/cem3394.cpp: Replaced the CV-dispatching function with multiple setter functions [m1macrophage]
 - 15638: Added foot switches to various Ensoniq synthesizer layouts [Christian Brunschen]
-- 15640: sinclair/next/specnext.cpp: Fixed mismatched memory share sizes [holub]
+- 15640: sinclair/next/specnext.cpp: Fixed mismatched memory share sizes [Andrei I. Holub]
 - 15651: bus/xerox820: Instantiate device finders for card interfaces; xerox/xerox820.cpp: Tidied ROM definitions [David Rand]
 - 15642: sega/model1.cpp: Improved video and timer emulation (improves NetMerc, fixes MT06600) [Francisco José García García]
 - 15644: formats/p6001_cas.cpp: Removed PC-6001 cassette format that never worked [Angelo Salese]
@@ -670,7 +670,7 @@ Merged pull requests
 - 15658: machine/ncr5380.cpp: Fixed issues with initiator DMA, bus release and self-initiated bus reset [David Rand]
 - 15659: igs/pgm.cpp: Marked Dragon World 2 games as not working, and also cleaned up some code [cam900]
 - 15661: konami/ddribble.cpp: Treat sprite X coordinates as 9-bit signed values [Andrea Bogazzi]
-- 15663: Updated to allow building with Emscripten 6.0.2 [holub, Steve Elbows]
+- 15663: Updated to allow building with Emscripten 6.0.2 [Andrei I. Holub, Steve Elbows]
 - 15665: machine/wd1002_05.cpp: Support all documented floppy sector sizes [David Rand]
 - 15668: xerox/xerox820.cpp: Refactored the floppy and G25 keyboard emulation, and completed the MK-83/MK-84 emulation [David Rand]
 - 15669: sound/coreaudio_sound.cpp: Fixed a potential deadlock on exit [David Rand]
@@ -679,7 +679,7 @@ Merged pull requests
 - 15673: nmk/nmk16.cpp: Added Puzzle World [alfa75, nnap, David Haywood]
 - 15675: Adjusted metadata for many Taito and Hot-B games [JimCarlTay]
 - 15676: gaelco/gaelco3d_v.cpp: Fixed some graphics alignment issues (fixes MT03342) [Jos van Mourik]
-- 15677: sinclair/next/specnext.cpp: Fixed issues with UART I/O port reads [holub]
+- 15677: sinclair/next/specnext.cpp: Fixed issues with UART I/O port reads [Andrei I. Holub]
 - 15678: cpu/h8/h8_dma.cpp: Update the active channel on starting or stopping DMA (fixes MT09456) [Leopold]
 - 15679: jaleco/megasys1.cpp: Dumped the microcontroller for Avenging Spirit [Tailsnic Retroworks, Sergio Galiano]
 - 15680: akai/s1000.cpp, sound/l6009.cpp: Added preliminary Akai S1000 and S1100 emulation [Robin Whittle, Devin Acker]
@@ -740,293 +740,172 @@ Source changes
   * generalplus_gpl951xx_rtc: Allow setting / reading of timer registers.
   * generalplus_gpl951xx.cpp: Various cleanups driver-side, including template use.
 - dominator/senterprise: Move LCD hardware to its own device [hap].
-
-- skeleton/zorba.cpp: Set raw screen parameters [Vas Crabb]
-  * This gives the correct resolution.  The actual horizontal total should be 910, as it switches to 9 clocks per character during
-    horizontal blanking, but I don't think our 8275 CRTC device can deal with that.
-
-- adp/adp.cpp: Add new not working game (#15336) [stonedDiscord]
-
-- Changed ROM extensions for all games to match their PCB footprint position names [stonedDiscord]
-
-- skeleton/fc100.cpp: cleanups: [Angelo Salese]
-  * convert chargen area to a memory view;
-  * move cart hookup in memory map;
-  * fix game driver type (is a COMPuter not a CONSole);
-
-- skeleton/flashvga2.cpp: make it execute some code [Angelo Salese]
-
-- sega/saturn_cd_hle.cpp: extend mirror ranges of registers [Angelo Salese]
-
-- hash/sat_cart.xml: demote ar to supported=no, test1f to supported=partial [Angelo Salese]
-
+- skeleton/zorba.cpp: Set raw screen parameters. This gives the correct resolution.  The actual horizontal total should be 910, as it switches to 9 clocks per character during horizontal blanking, but I don't think our 8275 CRTC device can deal with that [Vas Crabb].
+- adp/adp.cpp: Add new not working game (#15336) [stonedDiscord].
+- Changed ROM extensions for all games to match their PCB footprint position names [stonedDiscord].
+- skeleton/fc100.cpp: Cleanups [Angelo Salese]:
+  * Convert chargen area to a memory view;
+  * Move cart hookup in memory map;
+  * Fix game driver type (is a COMPuter not a CONSole).
+- skeleton/flashvga2.cpp: Make it execute some code [Angelo Salese].
+- sega/saturn_cd_hle.cpp: Extend mirror ranges of registers [Angelo Salese].
+- hash/sat_cart.xml: Demote ar to supported=no, test1f to supported=partial [Angelo Salese].
 - popnrun: Remove "Yukai Tsukai" from companystring, remove useless quantum (besides, with the scanline timer it's already more than 60hz) [hap].
-
-- skeleton/flashvga2.cpp: Hook up UART [AJR]
-
-- igs/igs036crypt.cpp: added some notes and corrected a couple of decryption keys [IQ_132]
-
-- skeleton/flashvga2.cpp: basic video hookup [Angelo Salese]
-
-- igs/igs036crypt.cpp: Fixed misspelling in notes (#15367) [James Charles Taylor]
-
-- tecmo/tehkanwc.cpp: Add note about 'tehkanwch' with double sized ROMs (#15361) [ClawGrip]
-
-- namcos2.cpp: Correct Final Lap 2 ROM labels [sjy96525] (#15359) [sjy555525]
-  * namcos2.cpp: Correct Final Lap 2 ROM labels [sjy96525]
-  * vegas.cpp: Correct San Francisco Rush 2049 description [sjy96525]
-  * namcos2.cpp: Correct Parent Final Lap 2 description
-  * namcos2.cpp: Correct clone finalap3a description
-  * spacing
-
-- skeleton/flashvga2.cpp: map i2c EEPROM and Timekeeper [Angelo Salese]
-
-- Split midway project into bally and williams according to brand owner [Vas Crabb]
-  * Videa/Sente stuff from the brief period before it was acquired by Bally is still in the bally project.
-
-- bally, williams: Updated #include guards [Vas Crabb]
-
-- sunwise/jankmg2.cpp: Add CTC, sound and output stubs [AJR]
-
-- emu/driver.cpp: Marked several device_t overrides as final [Vas Crabb]
-  * There's too much opportunity for confusion if these are overridden further down the tree.
-
-- handheld/unknown_bftetris_lcdc.cpp: 256KiB is too heavy for a device class [Vas Crabb]
-
-- taito/cucaracha.cpp: add LCD screen and GFX bank [Angelo Salese]
-
-- adp/stellafr.cpp: Add non working games (#15324) [stonedDiscord]
-
-- igs/goldstar.cpp: decrypted jkrmastc. Needs own portmap [Ivan Vangelista]
-
-- skeleton/extrema_m27sv.cpp: Fix gfx_layout, add NVRAM and attribute RAM view selects, hookup most inputs [Angelo Salese]
-
-- osd/eminline.h: Retired operations that are in C++20 <bit> [Vas Crabb]
-  * cpu/tms34010: Attempted to fix setcd for the case with two bits set.  It was definitely wrong before - the mask to clear the
-    first bit was calculated incorrectly.
+- skeleton/flashvga2.cpp: Hook up UART [AJR].
+- igs/igs036crypt.cpp: Added some notes and corrected a couple of decryption keys [IQ_132].
+- skeleton/flashvga2.cpp: Basic video hookup [Angelo Salese].
+- igs/igs036crypt.cpp: Fixed misspelling in notes (#15367) [James Charles Taylor].
+- tecmo/tehkanwc.cpp: Add note about 'tehkanwch' with double sized ROMs (#15361) [ClawGrip].
+- namcos2.cpp: Correct Final Lap 2 ROM labels (#15359) [sjy555525]:
+  * namcos2.cpp: Correct Final Lap 2 ROM labels.
+  * vegas.cpp: Correct San Francisco Rush 2049 description.
+  * namcos2.cpp: Correct Parent Final Lap 2 description.
+  * namcos2.cpp: Correct clone finalap3a description.
+  * Spacing.
+- skeleton/flashvga2.cpp: Map i2c EEPROM and Timekeeper [Angelo Salese].
+- Split Midway project into Bally and Williams according to brand owner. Videa/Sente stuff from the brief period before it was acquired by Bally is still in the bally project [Vas Crabb].
+- bally, williams: Updated #include guards [Vas Crabb].
+- sunwise/jankmg2.cpp: Add CTC, sound and output stubs [AJR].
+- emu/driver.cpp: Marked several device_t overrides as final. There's too much opportunity for confusion if these are overridden further down the tree [Vas Crabb].
+- handheld/unknown_bftetris_lcdc.cpp: 256KiB is too heavy for a device class [Vas Crabb].
+- taito/cucaracha.cpp: Add LCD screen and GFX bank [Angelo Salese].
+- adp/stellafr.cpp: Add non working games (#15324) [stonedDiscord].
+- igs/goldstar.cpp: Decrypted jkrmastc. Needs own portmap [Ivan Vangelista].
+- skeleton/extrema_m27sv.cpp: Fix gfx_layout, add NVRAM and attribute RAM view selects, hookup most inputs [Angelo Salese].
+- osd/eminline.h: Retired operations that are in C++20 <bit> [Vas Crabb]:
+  * cpu/tms34010: Attempted to fix setcd for the case with two bits set.  It was definitely wrong before - the mask to clear the first bit was calculated incorrectly.
   * akai/mpc60.cpp, akai/mpc2000.cpp, akai/mpc3000.cpp, skeleton/softbox.cpp: Suppress side effects for debugger reads.
   * akai/mpc60.cpp, akai/mpc2000.cpp, akai/mpc3000.cpp: Don't pretend switch matrix is a multiplexer.
-
-- Merged neogeo project with snk project [Vas Crabb]
-
-- Updated the rarely-used ci.flt [Vas Crabb]
-
-- qx10: Add extra wait state to m1 cycles (#15380) [Brian Johnson]
-
-- cpu/h8: Formalize the contracts between H8 family peripherals and the CPU and interrupt controller so H8/500 can share.
- [R. Belmont]
-
-- taito/cucaracha.cpp: Add base inputs and DIPs [Angelo Salese]
-
-- image.cpp: Fix regression with opening sockets [AJR]
-
-- Fixed up some stuff: [Vas Crabb]
+- Merged neogeo project with snk project [Vas Crabb].
+- Updated the rarely-used ci.flt [Vas Crabb].
+- qx10: Add extra wait state to m1 cycles (#15380) [Brian Johnson].
+- cpu/h8: Formalize the contracts between H8 family peripherals and the CPU and interrupt controller so H8/500 can share [R. Belmont].
+- taito/cucaracha.cpp: Add base inputs and DIPs [Angelo Salese].
+- image.cpp: Fix regression with opening sockets [AJR].
+- Fixed up some stuff [Vas Crabb]:
   * video/st7735_lcdc.cpp: Fixed line drawing loop start, allocate frame buffer on start.
   * apple/apple2video.cpp: Configuration doesn't belong in saved states.
-
-- cpu/m68000: Update bftst to reluctant reads when fetching data from memory (#15365) [Brice Onken]
-
-- apple/macquadra605.cpp: Changed default RAM size for maclc575 to a power of 2, also changed lc475 and lc575 to LC040 which is more
- correct. (MAMETesters #9455) [R. Belmont]
-
-- cpu/h8500/h8500dasm.cpp: Fixed incorrect disassembly of SCB, PJSR, PJMP, and TRAPA [R. Belmont]
-
-- circus: Update screen per scanline for more accurate collision detection [hap]
-
-- lib/formats/flopimg.h: Add missing header [Patrick Mackinlay]
-
-- taito/cucaracha.cpp: Replace video emulation with artwork based LED matrix [Angelo Salese]
-  * Add scrollx and scrolly
-  * Fix SFX playback at game start (missing OKI mirror)
-  * Game engine timer IRQ is more around 100 Hz, for lip sync at game start
-
-- apple2e: laser128 improvements (#15384) [arekkusu42]
-  * Fix laserprn_busy_r() to handle Cnxx banking, fixes #15373
-  * Add EX 6.0 BIOS
-  * Fix machine date and name metadata
-  * Add notes on unemulated EX/2 features
-
-- Add Casiotone RC-1 driver, fix uPD7801 INT0 behavior (#15371) [Devin Acker]
-
-- taito/cpzodiac.cpp: Base video and inputs [Angelo Salese]
-
-- Cleaned up various stuff [Vas Crabb]
-
-- apple/apple2e.cpp: Use downcast for better diagnostics in debug builds [Vas Crabb]
-
-- nintendo/nes_vt369_vtunknown_soc.cpp: Fixed initialiser list [Vas Crabb]
-
-- circus: Add sprite wraparound [hap]
-
-- circus: Small correction to border lines, add border to ripcord [hap]
-
-- acedrive: Remove unofficial sub-title [hap]
-
-- nemesis: Add bs_ prefix to bubsys games, mark bs_rf2 a not working [hap]
-
-- nemesis: Group bubsys mcfg with the other mcfgs [hap]
-
-- sony/news_68k.cpp: Implement NWS-1250 driver (#15364) [Brice Onken]
-
-- adp/stella8085.cpp: Fix 4040 board IO (#15382) [stonedDiscord]
-  * Add 4040 board IO map
-  * Replace DIY IO70 with proper 8255 PPI
-  * Replace device tags
-  * Remove io73
-
+- cpu/m68000: Update bftst to reluctant reads when fetching data from memory (#15365) [Brice Onken].
+- apple/macquadra605.cpp: Changed default RAM size for maclc575 to a power of 2, also changed lc475 and lc575 to LC040 which is more correct (MAMETesters #9455) [R. Belmont].
+- cpu/h8500/h8500dasm.cpp: Fixed incorrect disassembly of SCB, PJSR, PJMP, and TRAPA [R. Belmont].
+- circus: Update screen per scanline for more accurate collision detection [hap].
+- lib/formats/flopimg.h: Add missing header [Patrick Mackinlay].
+- taito/cucaracha.cpp: Replace video emulation with artwork based LED matrix [Angelo Salese]:
+  * Add scrollx and scrolly;
+  * Fix SFX playback at game start (missing OKI mirror);
+  * Game engine timer IRQ is more around 100 Hz, for lip sync at game start.
+- apple2e: laser128 improvements (#15384) [arekkusu42]:
+  * Fix laserprn_busy_r() to handle Cnxx banking, fixes #15373;
+  * Add EX 6.0 BIOS;
+  * Fix machine date and name metadata;
+  * Add notes on unemulated EX/2 features.
+- Add Casiotone RC-1 driver, fix uPD7801 INT0 behavior (#15371) [Devin Acker].
+- taito/cpzodiac.cpp: Base video and inputs [Angelo Salese].
+- Cleaned up various stuff [Vas Crabb].
+- apple/apple2e.cpp: Use downcast for better diagnostics in debug builds [Vas Crabb].
+- nintendo/nes_vt369_vtunknown_soc.cpp: Fixed initialiser list [Vas Crabb].
+- circus: Add sprite wraparound [hap].
+- circus: Small correction to border lines, add border to ripcord [hap].
+- acedrive: Remove unofficial sub-title [hap].
+- nemesis: Add bs_ prefix to bubsys games, mark bs_rf2 a not working [hap].
+- nemesis: Group bubsys mcfg with the other mcfgs [hap].
+- sony/news_68k.cpp: Implement NWS-1250 driver (#15364) [Brice Onken].
+- adp/stella8085.cpp: Fix 4040 board IO (#15382) [stonedDiscord]:
+  * Add 4040 board IO map;
+  * Replace DIY IO70 with proper 8255 PPI;
+  * Replace device tags;
+  * Remove io73.
 - Converted several things from std::enable_if to requires clauses. Gets rid of a layer of templating in emu/emumem_hedp.cpp, makes a few other things easier to read [Vas Crabb].
-
-- sord/m5.cpp: Added a side effects check [Vas Crabb]
-
-- matsushita/kn5000_cpanel.cpp, matsushita/kn5000.cpp: Generally cleaned up code [Vas Crabb]
-
+- sord/m5.cpp: Added a side effects check [Vas Crabb].
+- matsushita/kn5000_cpanel.cpp, matsushita/kn5000.cpp: Generally cleaned up code [Vas Crabb].
 - m5_cass.xml: Restored WAV dumps of Solar System Forces tapes. The proper raw recordings from Ola Andersson were replaced with cooked dumps with no explanation.  If they work now, they can be promoted again, but I haven't tested them.  If raw tapes don't work, that needs to actually be fixed [Vas Crabb].
-
-- a2gameio: Change SW0/SW1/SW2/SW3 inputs to normally read as 1 instead of 0 if unconnected. This agrees with observed behavior on actual Apple II family hardware [AJR]
-  * apple/apple2e.cpp: Add optional shift key mod for models that support it (permanently enabled for apple2ep, as before)
-
-- apple2: improve accelerator delay emulation (#15387) [arekkusu42]
-  * Implement the (sticky) Zip Chip delay cancel via C05E
-  * Fix default slot speeds to match Zip hardware and Laser documentation
-  * Fix DEVSEL writes to trigger delays
-  * Fix IOSEL and C800 access to only delay on Laser, per documentation
-  * Fix PTRIG to only delay on C070
-  * Wrap address map direct accessors in delay lambdas
-  * apple2gs: Improve accelerator delay emulation
-  * Implement the (one-shot) Zip GS delay cancel via any write
-  * Fix default slot speeds to match Zip hardware
-  * Fix DEVSEL writes to trigger delays
-  * Fix IOSEL and C800 access to not delay
-  * Fix PTRIG to delay on C020 and C070
-  * Implement IRQ and counter delays
-  * Implement C036 motor-on bits override of C05C slot speeds
-  * Also fix the 5x/Ax un/lock keys
-
-- ripcord: Workaround for initial ram contents issues [hap]
-
-- layout/cucaracha.lay: LED colors closer approximation [Dirk Best]
-
-- hash/32x.xml: QA pass [Angelo Salese]
-
-- namco/dangbar.cpp: Split dangbar to own state, hookup Z80 LED CPU in there [Angelo Salese]
-
-- emu, util: Replaced most uses of enable_if with requires clauses [Vas Crabb]
+- a2gameio: Change SW0/SW1/SW2/SW3 inputs to normally read as 1 instead of 0 if unconnected. This agrees with observed behavior on actual Apple II family hardware [AJR].
+- apple/apple2e.cpp: Add optional shift key mod for models that support it (permanently enabled for apple2ep, as before) [AJR].
+- apple2: Improve accelerator delay emulation (#15387) [arekkusu42]:
+  * Implement the (sticky) Zip Chip delay cancel via C05E;
+  * Fix default slot speeds to match Zip hardware and Laser documentation;
+  * Fix DEVSEL writes to trigger delays;
+  * Fix IOSEL and C800 access to only delay on Laser, per documentation;
+  * Fix PTRIG to only delay on C070;
+  * Wrap address map direct accessors in delay lambdas;
+  * apple2gs: Improve accelerator delay emulation;
+  * Implement the (one-shot) Zip GS delay cancel via any write;
+  * Fix default slot speeds to match Zip hardware;
+  * Fix DEVSEL writes to trigger delays;
+  * Fix IOSEL and C800 access to not delay;
+  * Fix PTRIG to delay on C020 and C070;
+  * Implement IRQ and counter delays;
+  * Implement C036 motor-on bits override of C05C slot speeds;
+  * Also fix the 5x/Ax un/lock keys.
+- ripcord: Workaround for initial ram contents issues [hap].
+- layout/cucaracha.lay: LED colors closer approximation [Dirk Best].
+- hash/32x.xml: QA pass [Angelo Salese].
+- namco/dangbar.cpp: Split dangbar to own state, hookup Z80 LED CPU in there [Angelo Salese].
+- emu, util: Replaced most uses of enable_if with requires clauses [Vas Crabb]:
   * This uses requires clauses to replace enable_if in almost all cases where it was just used to exclude functions from overload resolution. This makes the code more readable.  enable_if is still used for partial specialisation.
-  * util/strformat.h: Un-templated a number of functions.  Several of these could have been un-templated when we adopted C++17 (due to if constexpr) but it wasn't done at the time.  Also completely dropped C++17 support since requires clauses are a C++20 feature.
+  * util/strformat.h: Un-templated a number of functions. Several of these could have been un-templated when we adopted C++17 (due to if constexpr) but it wasn't done at the time.  Also completely dropped C++17 support since requires clauses are a C++20 feature.
   * emu/device.h: Added first-class concepts for a couple of things.
-
-- emu: Hopefully pacify GCC [Vas Crabb]
-
-- util/delegate.h: More effort to pacify the Generally Cursed Compiler [Vas Crabb]
-
-- namcos22: Revert cdea363c3eae1a019474ed2bf05880f16be31f21 [hap]
-
-- Add some digiblast carts (#15396) [David Haywood]
-
-- Added 7 Smart TV carts [TeamEurope] (#15390) [David Haywood]
-
-- Use C++20 mathematical constants rather than M_PI and similar macros [AJR]
-
-- shared/xbox_nv2a.cpp: Remove outdated workaround for missing library function [AJR]
-
-- sound/votrax.cpp: Add missing library header [AJR]
-
-- akai/x7000.cpp: Fix DMA controller addressing (#15398) [Devin Acker]
-
-- gridcomp: Replaced driver of bubble memory subsystem with i7110 (#15395) [fulivi]
-
-- sinclair/next/specnext_copper.cpp: NOP uses ula coordinates for base offset (#15388) [holub]
-
-- bus/megadrive/cart/sram.cpp: Fix Sega SRAM view register (bit 0 is enable and bit 1 is write protect) [Angelo Salese]
-
+- emu: Hopefully pacify GCC [Vas Crabb].
+- util/delegate.h: More effort to pacify the Generally Cursed Compiler [Vas Crabb].
+- namcos22: Revert cdea363c3eae1a019474ed2bf05880f16be31f21 [hap].
+- Add some digiblast carts (#15396) [David Haywood].
+- Added 7 Smart TV carts [TeamEurope] (#15390) [David Haywood].
+- Use C++20 mathematical constants rather than M_PI and similar macros [AJR].
+- shared/xbox_nv2a.cpp: Remove outdated workaround for missing library function [AJR].
+- sound/votrax.cpp: Add missing library header [AJR].
+- akai/x7000.cpp: Fix DMA controller addressing (#15398) [Devin Acker].
+- gridcomp: Replaced driver of bubble memory subsystem with i7110 (#15395) [F. Ulivi].
+- sinclair/next/specnext_copper.cpp: NOP uses ula coordinates for base offset (#15388) [Andrei I. Holub].
+- bus/megadrive/cart/sram.cpp: Fix Sega SRAM view register (bit 0 is enable and bit 1 is write protect) [Angelo Salese].
 - emu/output.cpp: Allow initialising output finders with arrays of matching dimensions. Also got rid of all but one of thee uses of get_value/set_value in emulation code and marked them deprecated [Vas Crabb].
-
-- pinball/flicker.cpp: Outputs still need to be resolved manually [Vas Crabb]
-
-- emu/output.h: Fixed dangling reference (was supposed to be in the first commit) [Vas Crabb]
-
-- sony/news_68k.cpp: Fix typo in nws12x0 DIP switch defaults (#15409) [Brice Onken]
-
-- formats/mfi_dsk: drop debug histogram dump that segfaults on small MFI (#15414) [Felipe Corrêa da Silva Sanches]
-  * mfi_format::load() ended with a debug block that dumped a per-track cell-length histogram to stderr, walking a hard-coded 46-track x 2-side grid. get_buffer() only bounds-checks with assert (compiled out in release builds), so on an MFI smaller than 46 tracks or single-sided the loop indexes track_array past its end and segfaults.
+- pinball/flicker.cpp: Outputs still need to be resolved manually [Vas Crabb].
+- emu/output.h: Fixed dangling reference (was supposed to be in the first commit) [Vas Crabb].
+- sony/news_68k.cpp: Fix typo in nws12x0 DIP switch defaults (#15409) [Brice Onken].
+- formats/mfi_dsk: drop debug histogram dump that segfaults on small MFI (#15414) [Felipe Corrêa da Silva Sanches]:
+  * mfi_format::load() ended with a debug block that dumped a per-track cell-length histogram to stderr, walking a hard-coded 46-track x 2-side grid. get_buffer() only bounds-checks with assert (compiled out in release builds), so on an MFI smaller than 46 tracks or single-sided the loop indexes track_array past its end and segfaults;
   * Remove the debug dump; load() now just returns once the tracks are in.
-
-- ssapphire: ssaphire was a typo [hap]
-
-- itautec/i7000: drive the screen from the MC6845 CRTC (#15419). Replace the placeholder tilemap renderer with an MC6845_UPDATE_ROW callback driven by the CRTC at ports 0x08/0x09, so the geometry and column count come from the CRTC registers the boot ROM programs. Also made some adjustments to the color palette so that it better matches photos of the real device [Felipe Corrêa da Silva Sanches].
-
-- z80sio: Fix Rx interrupt logic (#15394) [fulivi]
-
-- taito/taito_l.cpp: New plgirls2 parent set (Europe) (#15370) [Sergio G.]
-
-- nakajima/nakajies.cpp: Several updates (#15368) [wilbertpol]
-  * Add 10Hz timer, fixes empty battery display.
-  * Add PC Card/PCMCIA support.
+- ssapphire: ssaphire was a typo [hap].
+- itautec/i7000: Drive the screen from the MC6845 CRTC (#15419). Replace the placeholder tilemap renderer with an MC6845_UPDATE_ROW callback driven by the CRTC at ports 0x08/0x09, so the geometry and column count come from the CRTC registers the boot ROM programs. Also made some adjustments to the color palette so that it better matches photos of the real device [Felipe Corrêa da Silva Sanches].
+- z80sio: Fix Rx interrupt logic (#15394) [F. Ulivi].
+- taito/taito_l.cpp: New plgirls2 parent set (Europe) (#15370) [Sergio G.].
+- nakajima/nakajies.cpp: Several updates (#15368) [Wilbert Pol]:
+  * Add 10Hz timer, fixes empty battery display;
+  * Add PC Card/PCMCIA support;
   * Add power button.
-
-- hash/c64_cass.xml, hash/spectrum_cass.xml: Bulk replace BraveStarr SW item titles [Angelo Salese]
-
+- hash/c64_cass.xml, hash/spectrum_cass.xml: Bulk replace BraveStarr SW item titles [Angelo Salese].
 - hash/c64_cass.xml: promote skylinea; note claimed to press CBM but game prompts to press RUN STOP instead [Angelo Salese].
-
-- bus/c64/epyx_fast_load.cpp: Suppress side effects on reads [Angelo Salese]
-
-- hash: Bulk add hyphen to Yie Ar Kung-Fu titles [Angelo Salese]
-
-- hash/c64_cass.xml: Update QA [Angelo Salese]
-
-- Core header streamlining [AJR]
-  * Retired the util::endianness enum class in favor of the std::endian type introduced in C++20.
-  * Stripped save privileges from endianness_t (now an alias for std::endian), since its specific values may be nonstandard. This type is mostly used for configuration parameters anyway.
+- bus/c64/epyx_fast_load.cpp: Suppress side effects on reads [Angelo Salese].
+- hash: Bulk add hyphen to Yie Ar Kung-Fu titles [Angelo Salese].
+- hash/c64_cass.xml: Update QA [Angelo Salese].
+- Core header streamlining [AJR]:
+  * Retired the util::endianness enum class in favor of the std::endian type introduced in C++20;
+  * Stripped save privileges from endianness_t (now an alias for std::endian), since its specific values may be nonstandard. This type is mostly used for configuration parameters anyway;
   * Removed the endianness and floating point utilities from emucore.h. C++20 versions of the latter now reside in their own utility header (corefloat.h).
-
-- util/endianness.h: Remove accidentally reintroduced emucore.h names [AJR]
-
+- util/endianness.h: Remove accidentally reintroduced emucore.h names [AJR].
 - mos6566: Fixed non-expanded multicolor sprite collision detection. Fixes Space Taxi on c64 [Curt Coder].
-
-- src/emu: #include <cstdio> for future-proofing [AJR]
-
-- emu/output.cpp: Updated API: [Vas Crabb]
-  * Added a lightweight output proxy class for interacting with outputs from outside a device context.  If an output doesn't exist, it stores a local value. Note that this means layouts cannot create outputs, e.g. to communicate between views. Outputs are only created by output finders when resolving objects.
-  * Made output finders participate in object resolution in the device lifecycle.  They no longer need to be manually resolved. Conversely, you can't avoid creating outputs by not explicitly resolving them.
-  * Added some validation rules for output names.
-  * Got rid of the deprecated get_value/set_value.  The Lua versions will stick around a bit longer to give people time to migrate.
+- src/emu: #include <cstdio> for future-proofing [AJR].
+- emu/output.cpp: Updated API: [Vas Crabb]:
+  * Added a lightweight output proxy class for interacting with outputs from outside a device context.  If an output doesn't exist, it stores a local value. Note that this means layouts cannot create outputs, e.g. to communicate between views. Outputs are only created by output finders when resolving objects;
+  * Made output finders participate in object resolution in the device lifecycle.  They no longer need to be manually resolved. Conversely, you can't avoid creating outputs by not explicitly resolving them;
+  * Added some validation rules for output names;
+  * Got rid of the deprecated get_value/set_value. The Lua versions will stick around a bit longer to give people time to migrate;
   * Some other internal API changes in preparation for per-device outputs.
-
-- emu, util: Replaced remaining uses of std::enable_if and void_t with C++20 constraints and concepts.  This makes some lines
- considerably shorter, to the point that some of them may even fit on your screen [Vas Crabb]
-
-- util/strformat.h: Fixed formatting bool values with numeric conversions [Vas Crabb]
-
-- emu/devfind.cpp: Made object finders and similar things explicitly non-copyable.  Copying them never behaved intuitively.
- [Vas Crabb]
-
-- util/dynamicclass.h: Brought back an enable_if as GCC doesn't seem to be able to deal with the alternative [Vas Crabb]
-
-- micropin.cpp: Added override qualifiers, removed declaration of non-existent method [Vas Crabb]
-
-- segapico: Write to upd MD together with reset [hap]
-
+- emu, util: Replaced remaining uses of std::enable_if and void_t with C++20 constraints and concepts. This makes some lines considerably shorter, to the point that some of them may even fit on your screen [Vas Crabb].
+- util/strformat.h: Fixed formatting bool values with numeric conversions [Vas Crabb].
+- emu/devfind.cpp: Made object finders and similar things explicitly non-copyable.  Copying them never behaved intuitively [Vas Crabb].
+- util/dynamicclass.h: Brought back an enable_if as GCC doesn't seem to be able to deal with the alternative [Vas Crabb].
+- micropin.cpp: Added override qualifiers, removed declaration of non-existent method [Vas Crabb].
+- segapico: Write to upd MD together with reset [hap].
 - There are a lot of clock information in device instanciation that gets a 0 because the information is not available or it just doesn't make sense. Allow them to be removed and push that to the constructors. There are a number of cases where a weird interaction between DEFINE_DEVICE_TYPE_PRIVATE and pure methods make it impossible, see DL1416T for instance [Olivier Galibert].
-
-- misc: Remove some empty device/machine_start [hap]
-
-- vgmplay: Fix OKI clock regression [hap]
-
-- Move timer setups with time_until_pos from device_start to device_reset so that they're correctly resynced on reset.
- [Olivier Galibert]
-
-- Change decrmc3 not to avoid ambiguity between clock and entries [Olivier Galibert]
-
-- cem3340.cpp, prophet5.cpp: Implemented bandlimited oscillator sync. (#15427) [m1macrophage]
-  * cem3340.cpp, prophet5.cpp: Implemented bandlimited oscillator sync.
-  * cem3340: Minor comment fixes.
-
-- Revert "Move timer setups with time_until_pos from device_start to" [Olivier Galibert]
-  * This reverts commit ea7f65ecb1b65d975c259b3936d658b33780d133.
+- misc: Remove some empty device/machine_start [hap].
+- vgmplay: Fix OKI clock regression [hap].
+- Move timer setups with time_until_pos from device_start to device_reset so that they're correctly resynced on reset [Olivier Galibert].
+- Change decrmc3 not to avoid ambiguity between clock and entries [Olivier Galibert].
+- cem3340.cpp, prophet5.cpp: Implemented bandlimited oscillator sync (#15427). Minor comment fixes [m1macrophage]. 
+- Revert "Move timer setups with time_until_pos from device_start to" [Olivier Galibert]:
+  * This reverts commit ea7f65ecb1b65d975c259b3936d658b33780d133;
   * Not 100% it's not going to break anything, and it's kinda hard to test and not that important.
-
-- machine/wd1010: Disable verbose logging by default (#15431) [David Rand]
-
+- machine/wd1010: Disable verbose logging by default (#15431) [David Rand].
 - Fixed up a bunch of stuff [Vas Crabb]:
   * nichibutsu: Fixed passing NB1413M3 variant as clock. This is the kind of regression that could have lurked for months and been a nightmare to track down.  This is why you need to actually check your changes before committing.
   * virtual/vgmplay.cpp: Fixed passing divider as clock when instantiating C352.
@@ -1039,37 +918,21 @@ Source changes
   * frontend/mame/luaengine.cpp: Added Lua bindings for new public output API, added deprecation warnings to the wrappers that emulate the old API.  Also updated the two affected internal layouts to use the new API.
   * emu/output.cpp: Shuffled the code for the output proxy move assignment operator to handle self-assignment properly.
   * Losing a whole night's sleep trying to play spot the bug in a massive bulk change that clearly wasn't actually reviewed by a human before pushing isn't my idea of fun.  Nextt time, I'll just revert it.
-
-- util/delegate.h; Put requires clauses on template parameter lists [Vas Crabb]
-
-- cpu/z80/z80.cpp: Prioritized non maskable interrupt over maskable in case of race. (#15434) [holub]
-
-- Some non-working Software List additions (Smart TV) (#15432) [David Haywood]
-
-- generalplus_gpl951xx.cpp: Factory reset some sets, remove one that is a duplicate after factory resetting [David Haywood]
-
-- New NOT WORKING system (My Life) (#15429) [David Haywood]
-
-- cpu/z80/z80.cpp: Revert #15434 "Prioritized non maskable interrupt over maskable in case of race." (#15436) [holub]
-
-- Fix CI [Olivier Galibert]
-
+- util/delegate.h; Put requires clauses on template parameter lists [Vas Crabb].
+- cpu/z80/z80.cpp: Prioritized non maskable interrupt over maskable in case of race (#15434) [Andrei I. Holub].
+- Some non-working Software List additions (Smart TV) (#15432) [David Haywood].
+- generalplus_gpl951xx.cpp: Factory reset some sets, remove one that is a duplicate after factory resetting [David Haywood].
+- New NOT WORKING system (My Life) (#15429) [David Haywood].
+- cpu/z80/z80.cpp: Revert #15434 "Prioritized non maskable interrupt over maskable in case of race." (#15436) [Andrei I. Holub].
+- Fix CI [Olivier Galibert].
 - scripts/src/osd/sdl_cfg.lua: Fix INI_PATH quoting (#15444) [Cesare Falco].
-
-- issdxb: Add dips and protection simulation (#15440) [Devin Acker]
-
-- sinclair/next/specnext_layer2.cpp: Latched pixels read between screen updates. (#15437) [holub]
-
-- hash: Bulk replace ThunderCats SW item titles [Angelo Salese]
-
-- ui/tapectrl.cpp: Comment typo fix [Angelo Salese]
-
-- hash/c64_cass.xml: Move game collections as separate category, perform some QA on them [Angelo Salese]
-
-- tim011: Add HFE floppy format [AJR]
-
-- macpwrbk030: Correct asc device type in memory maps [hap]
-
+- issdxb: Add dips and protection simulation (#15440) [Devin Acker].
+- sinclair/next/specnext_layer2.cpp: Latched pixels read between screen updates (#15437) [Andrei I. Holub].
+- hash: Bulk replace ThunderCats SW item titles [Angelo Salese].
+- ui/tapectrl.cpp: Comment typo fix [Angelo Salese].
+- hash/c64_cass.xml: Move game collections as separate category, perform some QA on them [Angelo Salese].
+- tim011: Add HFE floppy format [AJR].
+- macpwrbk030: Correct asc device type in memory maps [hap].
 - mb87013: move out of roland dir; akai/x7000.cpp: Add mb87013, other small corrections (#15408) [Devin Acker]:
   * mb87013: move out of roland dir, add to s700 and x7000.
   * s612: correct DRAM size [skip ci].
@@ -1282,15 +1145,15 @@ Source changes
 - docs: Improved compiling environment documentation. Link back to tutorial for Windows set up on main web site, better MSYS2 debugger recommendations, updated macOS/Xcode requirement for out-of-the-box building [Vas Crabb].
 - namco/cgang.cpp: Don't require -mouse to work in click-to-play mode, also allows playing on a touch screen (makes the game too easy) [Vas Crabb].
 - New working USA V.Smile dump (#15433) [Atapi].
-- sinclair/next/specnext.cpp: Fixed regs 0xb0, 0xb1 read and 0x0a write (#15471) [holub].
+- sinclair/next/specnext.cpp: Fixed regs 0xb0, 0xb1 read and 0x0a write (#15471) [Andrei I. Holub].
 - jpm/jpmsru.cpp: Updated reel outputs in layouts [Vas Crabb].
 - Bulk updated remaining slot machine layouts that use yscroll for reel scroll [Vas Crabb].
 - intel/i430lx.cpp: Hookup SW lists [Angelo Salese].
 - Removed some unnecessarily added :pos from some layouts. Only the output names changed, the element names don't need to change [Vas Crabb].
 - barcrest, bfm, jpm, maygay, misc: Made reel tags match layouts. Also removed some more unnecessary :pos (still plenty more where that came from) [Vas Crabb].
 - floppy: Fix bad seek rate calculation with 4-phase steps as used with Apple II; add direction feature to sound sample declarations [Michael Zapf].
-- cpu/z80/z80n.cpp: Fixed NMI handling (RAMS' frogger works now) (#15477) [holub].
-- cpu/z80/z80.lst: Fixed minor hw discrepancy (#15478) [holub].
+- cpu/z80/z80n.cpp: Fixed NMI handling (RAMS' frogger works now) (#15477) [Andrei I. Holub].
+- cpu/z80/z80.lst: Fixed minor hw discrepancy (#15478) [Andrei I. Holub].
 - pic8259: Don't clear interrupt requests when ICW1 is rewritten in level active mode and lines are active. Fixes wangpc boot [AJR]:
   * wang/wangpc.cpp: Minor updates:
   - Change PIC timers 0 & 2 to set interrupt outputs when active low;
@@ -1306,7 +1169,7 @@ Source changes
   * Device windows show more information about address spaces and allow double-clicking to open a memory view;
   * Properly treat names as UTF-8 in a couple of places.
 - hash/pc8801_flop.xml: Update QA Koei redbook edition [Angelo Salese].
-- sinclair/sprinter.cpp: Fixed VRAM write mirroring (#15389) [holub].
+- sinclair/sprinter.cpp: Fixed VRAM write mirroring (#15389) [Andrei I. Holub].
 - williams/williams.cpp: Added Robotron: 2084 prototype (Release 3) (#15358). This prototype/location test version was recovered from a Vid Kidz development system [SynaMax].
 - sound/va_vco.cpp: Moved generic oscillator functionality from cem3340 to va_vco (#15479) [m1macrophage].
 - 1942, vulgus: Add 2nd soundlatch [hap, Jim Westfall].
@@ -1326,7 +1189,7 @@ Source changes
   * Targets that queue everything up front never reach the new path; no behavior change for existing devices.
 - Add bruteforced PLDs to "triviaes4" [Jordi Tuells] (#15492) [ClawGrip].
 - cpu/i86: Support port I/O wait states via access retry (#15497). IN, OUT, INS and OUTS (including the 80186/80286 REP forms) now restart the bus cycle when a device signals a wait state through cpu_device::retry_access(), allowing ISA IOCHRDY to be modelled. Register and string-pointer updates are deferred until the access completes, so a stalled cycle has no side effects.  No behavior change for devices that never request a retry [David Rand].
-- bus/isa: add Definicon DSI-32 coprocessor board (#15494) [David Rand]:
+- bus/isa: Add Definicon DSI-32 coprocessor board (#15494) [David Rand]:
   * NS32032 (10 MHz) + NS32081 FPU + NS32082 MMU + 2MB RAM + SCN2681 DUART on an ISA card (Definicon Systems, 1985; BYTE August/September 1985). The board carries no firmware: the host loads the 32IO kernel and user program through a paged 64K memory window (segment E000h or D000h, page latch and control port jumper-selectable) and releases the 32032 from reset; the two processors then converse through a mailbox page, with the DUART's OP5 driving the PC's IRQ2;
   * Modelled from the original loader sources (32KH.INC, 32K.ASM, IOPROC.ASM, LOAD.C) and 32IO.A32.  Verified with the unmodified production software under PC-DOS 2.10 and CP/M-86 1.1: LOAD.EXE, LOAD.CMD and LOADINT (interrupt mode) boot the shipped 32IO and Definicon monitor, and the period Green Hills C compiler, assembler and linker self-host on the card.  Documentation, software and ready-made boot disks: https://github.com/davidlrand/mame-system-media (Definicon-DSI-32).
 - machine/ns32082: Fix translated address composition, do not translate interrupt cycles (#15499) [David Rand]:
@@ -1335,17 +1198,17 @@ Source changes
 - apple2e: machine_config consistency (#15495) [arekkusu42]:
   * Make -listslots ordering consistent across apple2 family.
   * Don't redundantly configure W65C02 and dasm_trampoline.
-  * tk3000, ace2200: don't use A2E swlist on W65C02 machines.
-  * ace500: does not have internal gameio, followup #14388.
+  * tk3000, ace2200: Don't use A2E swlist on W65C02 machines.
+  * ace500: Does not have internal gameio, followup #14388.
 - machine/ns32202: Track level-triggered pending state, honor in-service priority on acknowledge (#15500) [David Rand]:
   * Level-triggered pending bits now continuously reflect the input lines: a bit clears when its line is no longer active, including when ELTG or TPL writes change a bit's effective sense.  Software uses this to dismiss and re-arm latched interrupts by toggling a line between level and edge sensing;
   * In fixed-priority (NTAR) mode, interrupt acknowledge no longer acknowledges a pending interrupt that an in-service interrupt of higher or equal priority blocks (an equal-priority in-service cascade remains acknowledgeable); a blocked acknowledge returns the spurious vector, as the hardware would never have asserted INT for it.  The interrupt output is fully re-evaluated after every acknowledge instead of using an approximation that left it asserted while only blocked interrupts were pending.
 - eks515: Identify one CPU architecture [AJR].
 - Redump one smarttv cart, add another, add a mylife cart (#15504) [David Haywood].
 - smarttv_cart.xml: Disney/Pixar Cars 2 (Italy). Redumped smarttv_cart enlunait [TeamEurope].
-- sinclair/next/specnext_sprites.cpp: Fixed memory corruption (#15509) [holub].
-- sinclair/next/specnext.cpp: Rearranged IO mapping to proritize proper port selection in case of decoring 'conflict' (#15502) [holub].
-- sinclair/next/specnext.cpp: Fixed AY selection (#15503) [holub].
+- sinclair/next/specnext_sprites.cpp: Fixed memory corruption (#15509) [Andrei I. Holub].
+- sinclair/next/specnext.cpp: Rearranged IO mapping to proritize proper port selection in case of decoring 'conflict' (#15502) [Andrei I. Holub].
+- sinclair/next/specnext.cpp: Fixed AY selection (#15503) [Andrei I. Holub].
 - Replaced deprecated reel components in some slot machine layouts [Vas Crabb].
 - Replaced most of the remaining deprecated reel components in slot machine layouts [Vas Crabb]:
   * I'm pretty sure some of these have the wrong number of symbols on the reels, but it's really hard to check when some of them aren't even hooked up to any systems and they often have empty strings as symbol text;
@@ -1552,7 +1415,7 @@ Source changes
 - Added 2 VT sets (#15556) [David Haywood].
 - edsp: Add a few more instructions [AJR].
 - apple/macpdm.cpp: Further RAM mapping improvements. Fixes random instability, including 8.1 hanging at Finder and 8.5 not booting [R. Belmont].
-- machine/z80dma.cpp,sinclair/next/specnext*.cpp: Fixed few missing save states (#15558) [holub].
+- machine/z80dma.cpp, sinclair/next/specnext*.cpp: Fixed few missing save states (#15558) [Andrei I. Holub].
 - pc98: Add prototype support of CLGD5428 based PC-9801-96 (#15506) [BlueRain-debug].
 - mylife: Confirm XTAL value [AJR].
 - upd71071: Refactor based on v5x_dmau_device (#15512) [Devin Acker].
@@ -1621,7 +1484,7 @@ Source changes
   * The copro RAM data port (TGP side) had a bug that broke VF's collision pre-filter (op 0x63), causing skipped knockdowns and the characteristic "both fighters fall on one hit" double-knockdown;
   * VF stores each vertex to check as 4 bytes (X/Y/Z/radius) and bits 16 & 17 of the address select the stride for the address auto-increment. VF is the only game that sets the stride to anything other than 1 so this is a no-op for the other games.
 - Added Lexibook Plasma Console (#15589) [David Haywood].
-- sinclair/next/specnext.cpp: Handled BRAM RO case (#15524) [holub].
+- sinclair/next/specnext.cpp: Handled BRAM RO case (#15524) [Andrei I. Holub].
 - machine/keyboard: Add natural-keyboard control characters to generic_keyboard (#15530) [David Rand].
 - c64: Improved keyboard mapping [Curt Coder].
 - taito/pres2k.cpp: Fix VDP clock [AJR].
@@ -1670,17 +1533,17 @@ Source changes
 - shared/timeplt_a.cpp: Runs in IM1, no need for set_input_line_and_vector [Angelo Salese].
 - seibu: Convert single irq source drivers to set_irq_acknowledge_callback [Angelo Salese].
 - technos/blockout.cpp: audiocpu runs in IM 1, no need for set_input_line_and_vector [Angelo Salese].
-- upl/xxmissio.cpp: (allegedly) convert to set_irq_acknowledge_callback [Angelo Salese].
+- upl/xxmissio.cpp: (allegedly) Convert to set_irq_acknowledge_callback [Angelo Salese].
 - tatsumi/apache3.cpp, tatsumi/roundup5.cpp: Convert to set_irq_acknowledge_callback [Angelo Salese].
 - Cleaned up some stuff [Vas Crabb].
 - nec/pc88va_v.cpp: Fix animefrm color regression [Angelo Salese].
 - nec/pc88va_v.cpp: Document shinraba text layer intro btanb [Angelo Salese].
 - hash/pc98.xml: Fix validation [Angelo Salese].
 - Revert "gridcomp: replaced driver of bubble memory subsystem with i7110 (#15395)" (#15602). This reverts commit 7a8ed907ef9298b2907c8eb02e786dfee2b94b47 [Valera Klachkov].
-- cuebrick: PCB notes [AJR].
-- cuebrick: Note undumped ROM [AJR].
-- cuebrickj: Move comments to correct HW revision [AJR].
 - cuebrick: Add (correct) PCB ID in comments [AJR].
+- cuebrick: Note undumped ROM [AJR].
+- cuebrick: PCB notes [AJR].
+- cuebrickj: Move comments to correct HW revision [AJR].
 - cpu/powerpc: BxxL instructions need to set LR even if the branch is not taken.  Allows Mac OS 9 to boot to Finder. AI disclosure: Claude Opus 4.8 helped trace the bug, the (trivial) fix is completely hand-written [R. Belmont].
 - upd765: Fix formatting [cracyc].
 - edsp: Disassembler checkpoint [AJR].
@@ -1697,16 +1560,16 @@ Source changes
   - Completion with TxRDY clear and nothing buffered did nothing, leaving the transmitter idle with both TxRDY and TxEMT clear;
   * In either case TxRDY never re-asserts and the transmit clock stays stopped, so a byte never drains and a polled transmitter spins forever waiting on TxRDY;
   * Decide from the queue instead: load a buffered byte if one is present, otherwise mark the transmitter idle by setting both TxRDY (THR empty) and TxEMT (shift register empty).  This is a no-op on the normal path, where tra_callback has already set TxRDY by the time completion is reached.
-- sinclair/next/specnext_dma.cpp: Forced Search mode to Transfer instead (#15528). Added undocumented logging [holub].
-- lib/formats/scl_dsk.cpp: Added SCL format support (#15567) [holub].
-- sound/swp30: saturate AWM2 interpolation output to prevent wrap clicks (#15505) [Charles Vestal]:
+- sinclair/next/specnext_dma.cpp: Forced Search mode to Transfer instead (#15528). Added undocumented logging [Andrei I. Holub].
+- lib/formats/scl_dsk.cpp: Added SCL format support (#15567) [Andrei I. Holub].
+- sound/swp30: Saturate AWM2 interpolation output to prevent wrap clicks (#15505) [Charles Vestal]:
   * The 4-tap cubic interpolation result in streaming_block::step() was stored straight into an s16. Cubic interpolation overshoots the input range near peaks, so when source samples approach full scale the value exceeds the s16 range and the store wraps (+32767 -> -32768) -- a one-sample sign inversion that is audible as a click on loud notes (e.g. bright sustained strings), while quiet notes are unaffected;
   * Accumulate in s32 and saturate to the s16 range. Hardware saturates, so this also matches the real device.
 - es5510.cpp: Fix `WRITE_REG{16}` macros. (#15579) [Christian Brunschen]:
   * es5510.cpp: Fix `WRITE_REG{16}` macros.
   - As identified by sjs@sojusrecords.com, the `WRITE_REG` and `WRITE_REG16` macros were not writing their 'x' parameter to a register as intended, but were instead writing the contents of the `value` variable from calling code. Quite frequently this happened to be the correct thing to write, which hid the bug.
   * Remove redundant #ifdef section; LOG_EXEC's use of LOGMASKED already handles the compile-time conditional logging.
-- i8259: fix OCW3 write behavior (#15580) [Devin Acker]:
+- i8259: Fix OCW3 write behavior (#15580) [Devin Acker]:
   * Only set/clear RIS when RR=1;
   * Only set/clear SMM when ESMM=1;
   * Exit polling mode after one read cycle.
@@ -1716,9 +1579,9 @@ Source changes
 - homebrew/pc532: Wire the AIC6250 pseudo-DMA; boot System V; mark working (#15607) [David Rand]:
   * Wire the AIC6250 SCSI controller's BREQ/BACK pseudo-DMA, mirroring the existing DP8490 path: a CPU-RDY-gated doubleword transfer through the 0x3800'0000 window, each byte acknowledged with back_w(1). Add the AIC6250 DMA window, hook breq_cb (resolving the prior drq TODO), and a 10 us quantum for the CPU<->DUART/ICU interleave. Add a dual-boot BIOS (AIC6250/System V + DP8490/NetBSD loader);
   * With the disk path working the board boots System V Release 2.0 to login off the AIC6250 SCSI disk; mark the driver working.
-- sinclair/screen_ula.cpp: Latched pixels read between screen updates (#15447) [holub].
-- plugins/keypress: New plugin for recording player behaviour (#15379) [holub, Angelo Salese].
-- sinclair/next/specnext.cpp: Implemented DMA delay (allows to stop DMA in Continious mode for ISR) (#15378) [holub].
+- sinclair/screen_ula.cpp: Latched pixels read between screen updates (#15447) [Andrei I. Holub].
+- plugins/keypress: New plugin for recording player behaviour (#15379) [Andrei I. Holub, Angelo Salese].
+- sinclair/next/specnext.cpp: Implemented DMA delay (allows to stop DMA in Continious mode for ISR) (#15378) [Andrei I. Holub].
 - Added working homebrew cartridges. For the My Vision, Megaduck and PV-1000 (#15590) [Ectoplasm].
 - sega/model1: HUD layering, blink palette and wireframe fixes (#15597) [Francisco José García García]
   * sega/model1: tile palette bit15 = intensity/shade bit
@@ -1742,7 +1605,7 @@ Source changes
   * sega/model1: iterate overlay stencil by scanline within cliprect
   - Walk the snapshot/restore buffers with row pointers over the cliprect instead of a flat loop with a divide and modulo per pixel, and name the near-black threshold.
 - hash: Consistency for WWF WrestleMania (#15357) [ArcadeShadow].
-- sinclair/next/specnext.cpp: Attempt to fix edge rendering cases (#15376) [holub]:
+- sinclair/next/specnext.cpp: Attempt to fix edge rendering cases (#15376) [Andrei I. Holub]:
   * sinclair/next/specnext.cpp: Attempt to fix edge rendering cases;
   * Fix border.
 - akai/x7000.cpp: Add playback and sampling (#15468) [Devin Acker].
@@ -1876,11 +1739,11 @@ Source changes
 - apple2gs: Followup #15626: add comments where hardware behavior differs from documentation (#15628) [arekkusu42].
 - nec/pc88va_v.cpp: Push down one line if past the X wrap point [Angelo Salese].
 - ns32000: Fetch module static base after PSR restore on RETT/RETI (#15633) [David Rand].
-- sinclair/next/specnext_copper.cpp: Added disassembler (#15403) [holub].
-- sinclair/next/specnext_vtest.cpp: Factory Video test (joystick's XYZ to activate) (#15377) [holub].
-- cpu/z80: Allowed 'Run to Next Interrupt on this CPU' not just for standard_irq but daisy as well (#15363) [holub].
-- sinclair/spec_snqk.cpp: Allowed to use snx as a sna alias (#15635) [holub].
-- sinclair/next/specnext.cpp: Added support of *.nex snapshot format (#15634) [holub].
+- sinclair/next/specnext_copper.cpp: Added disassembler (#15403) [Andrei I. Holub].
+- sinclair/next/specnext_vtest.cpp: Factory Video test (joystick's XYZ to activate) (#15377) [Andrei I. Holub].
+- cpu/z80: Allowed 'Run to Next Interrupt on this CPU' not just for standard_irq but daisy as well (#15363) [Andrei I. Holub].
+- sinclair/spec_snqk.cpp: Allowed to use snx as a sna alias (#15635) [Andrei I. Holub].
+- sinclair/next/specnext.cpp: Added support of *.nex snapshot format (#15634) [Andrei I. Holub].
 - sonix16: Fix decoding of BCLR and BSET [AJR].
 - cpu/drcbeut.cpp: Add support for invalidating code blocks in a specific logical address range without flushing the entire cache. This allows TLB/MMU page invalidations to do targeted generated-code flushes without the performance hit of flushing the entire DRC. PowerPC DRC changes which use this are currently being regression tested and will follow [R. Belmont].
 - Cleaned up some Xerox 820 stuff. Mostly putting private classes in anonymous namespaces and keeping member initialisation in the same file as the constructor body [Vas Crabb].
@@ -1888,7 +1751,7 @@ Source changes
 - nec/pc88va.cpp, nec/pc98ha.cpp: Hookup HALT to HREQ signal [Angelo Salese].
 - nec/pc88va_v.cpp: Implement multiplane Y scroll and fix address bank/mask [Angelo Salese].
 - machine/wd1002_hd0.cpp: Fix build after a14a0c1a000e7e68387abc3040783b472fc366c7 [AJR].
-- sinclair/next/specnext.cpp: Fixed regressing in specnext (#15640). Partially reverting 2c61e52f4dc2cd54e19b569608c965abcfb9c803 [holub].
+- sinclair/next/specnext.cpp: Fixed regressing in specnext (#15640). Partially reverting 2c61e52f4dc2cd54e19b569608c965abcfb9c803 [Andrei I. Holub].
 - devices/cpu: Invalidate up to the max length of a sequence prior to the starting address to catch sequences extending into the window; not 100% ideal, but it performs well inside the constraints of the existing DRC data structures [R. Belmont].
 - bus/a2bus/a2applicard.cpp: Updates and refinements [AJR]:
   * Add maximum quantum to allow CP/M to boot reasonably quickly.
@@ -1903,9 +1766,9 @@ Source changes
   * DRC code cache size bumped from 32 MiB to 128 MiB.  The working set of Mac OS 9.1 idling in Finder was over 32 MiB so the cache was constantly thrashing:
   - This greatly improves the stability of pmac6100 and makes Mac OS 9.1 fully usable (see my video of it running MacMAME full speed with sound from a network share). Regression tested against an assortment of Konami and Taito PowerPC-based arcade games;
   - AI disclosure: Bug finding assistance by Claude Opus 4.8 and it suggested some design elements for the 601 self-modify fix. Code is by me.
-- generalplus_gpl951xx_soc.cpp: added GPL951xx internal ROM and allow systems to boot from it [cyanic, David Haywood] (#15630) [David Haywood].
+- generalplus_gpl951xx_soc.cpp: Added GPL951xx internal ROM and allow systems to boot from it (#15630) [cyanic, David Haywood].
 - bionicc: Add tile flipping to tx tilemap, fix palette brightness [hap, Jim Westfall].
-- bus/xerox820: Restored card-interface device_finder instantiations. (#15641) [David Rand]:
+- bus/xerox820: Restored card-interface device_finder instantiations (#15641) [David Rand]:
   * The copro and disk-daughterboard card device types are exposed through their abstract interfaces via DEFINE_DEVICE_TYPE_PRIVATE, which does not instantiate the device_finder templates. Without an explicit instantiation, a required_device/optional_device of device_xerox820_copro_card_interface or device_xerox820_dbslot_card_interface fails with an undefined symbol at link time, so instantiate them in each interface's source file;
   * Also define the identical x820ii5/x820iis/x820iilp ROM sets in terms of x820ii's rather than repeating the shared content macro.
 - hash/apple2_rom.xml: Correct release year for Programmer's Aid #1 [AJR].
@@ -1977,7 +1840,7 @@ Source changes
   - cpu/z8000/8000dasm.cpp: Fixed incorrectly displayed cpb and ldb instructions.
 - zilog/s8k.cpp: Output finders no longer need (or have) resolve() [AJR].
 - i386: Fix copy paste error in fxsave [bachimusprime].
-- tools/castool.cpp: retire pc6001_cas format (#15644). Was a non-working attempt to make it fit a needle in an haystack [Angelo Salese].
+- tools/castool.cpp: Retire pc6001_cas format (#15644). Was a non-working attempt to make it fit a needle in an haystack [Angelo Salese].
 - konami/konamigv.cpp: Added freshly initialised Flash content for Dead Eye [Vas Crabb].
 - sega/model1: Repair 2-bit corruption in 315-5711 TGP copro ROM (Wing War, SWA, NetMerc) (#15649) [Francisco José García García]:
   * The 315-5711.bin dump has two single-bit corruptions (spurious bit 1 in the low byte, likely a D1 line fault during ROM capture):
@@ -2141,13 +2004,13 @@ Source changes
 - Added Puzzle World (#15673) [David Haywood].
 - upd765: Don't set side bit in st0 before a seek [cracyc].
 - sound/cem3394.cpp: replaced CV dispatching function with multiple setter functions (#15636) [m1macrophage].
-- sequential/sixtrak.cpp: removed no-longer-used LOG_CV [m1macrophage].
+- sequential/sixtrak.cpp: Removed no-longer-used LOG_CV [m1macrophage].
 - misc/amstarz80.cpp: Fleshed out the driver. AI disclosure: Claude Opus 4.8 helped with the GFX ROMs decoding [Ivan Vangelista].
 - apple/apple2e.cpp: General cleanup [AJR]:
   * Don't use magic numbers from ROM locations to determine system type;
   * Set up system type flags during machine configuration;
   * Use ROM_RELOAD to eliminate duplicate file names and hashes within sets.
-- sinclair/next/specnext.cpp: Fixed io ports 0x153b, 0x163b reads (#15677) [holub].
+- sinclair/next/specnext.cpp: Fixed io ports 0x153b, 0x163b reads (#15677) [Andrei I. Holub].
 - GPL16250 cleanup checkpoint / milestone (#15654) [David Haywood]:
   * Added 2 internal ROMs from GPL16250 devices (assumed to be generic for GPL16250 parts for the time being) [cyanic].
   * Removed sketchy NAND handling logic from gpl16250_soc and pump through the nandflash.cpp device instead;
@@ -2217,10 +2080,10 @@ Source changes
 - vsystem/aerofgt.cpp: Fix and Add notes about sprite delay (#15690). Made sprite RAM double-buffered, delaying sprites by one frame [cam900].
 - Preliminary Akai S1000/S1100 driver (#15680) [Devin Acker].
 - channelf_a.cpp: Fix sound output channel (#15695). Corrected stream.put arguments for sound output, to allocated stream [BensonRSI].
-- nec/pc6001.cpp: modernize banks for pc6001mk2 (#15689) [Angelo Salese]
-  * use a ram_device in place of differing work RAM uses;
-  * hookup cart for pc6001mk2;
-  * pc6001mk2sr/pc6601sr: implement pc6001/pc6001mk2 fallback compatibilty mode.
+- nec/pc6001.cpp: Modernize banks for pc6001mk2 (#15689) [Angelo Salese]:
+  * Use a ram_device in place of differing work RAM uses;
+  * Hookup cart for pc6001mk2;
+  * pc6001mk2sr/pc6601sr: Implement pc6001/pc6001mk2 fallback compatibilty mode.
 - topbladv: Corrected Sonokong capitalization (#15683) [James Charles Taylor].
 - 11beat, kabukikl, neobombe, panicbom, starsldr: Changed manufacturer name ("Hudson") to "Hudson Soft" (#15682) [James Charles Taylor].
 - gaelco3d.cpp: Graphics off-by-one fixes (#15676) [JvM]:
@@ -2412,7 +2275,7 @@ Source changes
   * No influence on IF1 Sinclair Interface, which is only stubbed;
   * Started as a continuation of previous work but then changed the internal representation to allow format/write;
   * Also did some cleaning/upgrade to the driver (but did not touch the serial communication and clock parts of the zx8302).
-- asmjs: Made buildable with latest emscripten 6.0.2 -- [holub, Steve Elbows] (#15663) [holub].
+- asmjs: Made buildable with latest emscripten 6.0.2 -- [Andrei I. Holub, Steve Elbows] (#15663) [Andrei I. Holub].
 - compis.xml: Add 36 new dumps (#15717) [Rebecca Wallander]:
   * ## New working software list items (compis.xml) Användbara procedurer i Pascal 1.5 (nät/skollicens) [FakeShemp] Compis Pascal 3.12 [FakeShemp] CompisNet 2.0 (version 5314) [FakeShemp] CompisNet II Plus (CPMBOOT, version 7244) [FakeShemp] Datorn i början (enanvändare) [FakeShemp] Enter 1.3 (demo, nät/skollicens) [FakeShemp] HarmoniEtt 2.0 (gamma) [FakeShemp] HarmoniTvå 2.0 (alfa) [FakeShemp] Skriv lätt, skriv rätt (version 6401) [FakeShemp] Spara-låna-vinna (enanvändare) [FakeShemp] Systemskiva I (version 6245) [FakeShemp] Systemskiva 2.0 [FakeShemp] Systemskiva för hårdskiveenhet 2.01 (version 6335) [FakeShemp] Systemskiva för hårdskiveenhet 1.00 (version 7242) [FakeShemp] Turbo Pascal 3.01 [FakeShemp] Uppgraderingspaket 1 för Compis I (version 6262) [FakeShemp].
   * ## New not working software list items (compis.xml) CompisNet IB 2.01 (version 6191) [FakeShemp] Skatteprogram S91 [FakeShemp] Compis Kommunikation 1.2 [FakeShemp] CompisNet I PASBOOT med nyteknik [FakeShemp] Distributionskunskap (version 8014) [FakeShemp] GraphMaster 2.0 (nät/skollicens) [FakeShemp] IBM DOS 3.00 [FakeShemp] Intresse-fallenhet-yrkesval (enanvändare) [FakeShemp] Kemi 1 (nät/skollicens) [FakeShemp] Matematikverkstad I (beta 19860606) [FakeShemp] Mät absorption (nät/skollicens) [FakeShemp] Mät halveringstid (nät/skollicens) [FakeShemp] Mät med fotoceller 1.0 (enanvändare) [FakeShemp] MätEtt (nät-skollicens) [FakeShemp] Mätvärdesinsamling 1.0 (alfa, enanvändare) [FakeShemp] ProfiRange (version 6181) [FakeShemp] ProfiText: Textbehandling med Compis (version 6181) [FakeShemp] Skriv lätt, skriv rätt (version 8101, ekonomiredaktionen) [FakeShemp] StatEtt (beta, nät/skollicens) [FakeShemp] Tabba lätt (version 7235) [FakeShemp].

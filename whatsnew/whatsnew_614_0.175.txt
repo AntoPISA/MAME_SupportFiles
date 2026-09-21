@@ -80,8 +80,8 @@ pet_cass.xml:
   Added Supermon (Toronto PET User Group) [Ken White]
   Replaced bad dump of Side B of Squiggle, Big Time / Monitor (the m command in the monitor now works correctly) [Ken White]
 psx.xml:
-  Added CHD images of redump.org USA disc set. [Aeternal]
-  Added some more prototypes and misc disks. [Fabio Priuli]
+  Added CHD images of redump.org USA disc set [Aeternal]
+  Added some more prototypes and misc disks [Fabio Priuli]
 sorcerer_cass.xml:
   Added many games [Robbbert]
 
@@ -111,11 +111,11 @@ MAME Testers Bugs Fixed (14):
 - 06221: [Interface] PLUGINS: pluginspath option not fully recognized (crazyc)
 - 06222: [Graphics] Artwork + HLSL + Vector Game = Cropped Screen and Wrong Screen Position (Jezze)
 - 06223: [Crash/Freeze] (ataxx.c) All sets in ataxx.cpp: Fatal error: Missing some required objects, unable to proceed (Tafoid)
-- 06225: [Crash/Freeze] (midtunit.c) mk, mk2: Game doesn't start - crash while loading (cuavas)
+- 06225: [Crash/Freeze] (midtunit.c) mk, mk2: Game doesn't start - crash while loading (Vas Crabb)
 - 06234: [DIP/Input] (nbmj9195.c) mscoutm, imekura, mjegolf: Incorrect inputs in some mahjong games (Tourniquet)
 - 06235: [Graphics] (pacman.c) pacman: X and Y flip bits are ignored when sprite is rendered at top of screen due to vertical wrapping (Robbbert)
 - 06236: [Misc.] (ptcsol.c) sol20: SVT format file names problem! (Robbbert)
-- 06241: [Crash/Freeze] Most sets in neodriv.hxx: cheats enabled cause MAME to crash (cuavas)
+- 06241: [Crash/Freeze] Most sets in neodriv.hxx: cheats enabled cause MAME to crash (Vas Crabb)
 - 06244: [Speed] (namconb1.c) machbrkr, outfxies: Degraded performance speed (Osso)
 
 
@@ -148,15 +148,15 @@ Source changes:
   * Added technical notes and corrected CRT 810 layout + old notes;
   * Some cleanup for coding standards, and fixed Coinage DIP switches.
 - Magic Fly driver: Refactored PCB layout and pinout with new findings and PCB trace. Also added some technical notes [Roberto Fresca].
-- Major Poker [Roberto Fresca]:
+- Major Poker update [Roberto Fresca]:
   * Added missing G2 gal16v8d;
   * Added missing PLDs, plus technical notes.
-- Royal Card (Austrian, set 8) [Roberto Fresca]:
+- Royal Card (Austrian, set 8) update [Roberto Fresca]:
   * Added mirrored VRAM to $4000/$5000;
   * Worked and added a default NVRAM. The game now is working properly.
 - Buena Suerte: Completed the Protel PCB set. Rearranged the graphics ROMs to get accurate gfx banks. Discrete sound needs to be traced. Game is working properly [Roberto Fresca].
 - Buena Suerte (Protel PCB): Added technical notes and a WIP edge connector and mech counters pinout [Roberto Fresca, Gaby].
-- Flaming 7 [Roberto Fresca]:
+- Flaming 7 update [Roberto Fresca]:
   * Added new technical notes;
   * Flaming 7: Decrypted the graphics ROMs & fixed the gfxdecode. Bipolar PROM decode is still wrong;
   * Graphics Bank 1 is color-accurate. Added some technical notes about the missing extra layer for bonus graphics with the related VRAM used range;
@@ -198,7 +198,7 @@ Source changes:
   * Sun3 MMU and unique hardware implemented, all models now POST including 3/2xx.
 - sun4 updates: Preliminary implementation of sun4c MMU and related hardware [R. Belmont].
 - gba.xml: Documented some more Game Boy Advance PCBs. [Fabio Priuli]
-- gba.cpp: several improvements [Fabio Priuli]:
+- gba.cpp: Several improvements [Fabio Priuli]:
   * Implemented emulation of the "General Purpose I/O" port (GPIO) of GBA;
   * Hooked up S-3511 RTC emulation through the GPIO port. This allows to avoid the "Internal battery has run dry [...] clock-based events will no longer occur" messages in Pokémon Emerald / Ruby /!Sapphire. This also promotes Sennen Kazoku to working state;
   * Hooked up Boktai Light Sensor emulation through the GPIO port. This allows to avoid the "Solar Sensor is broken" message in Boktai / Bokura no Taiyou, which is now playable and to recharge your weapons in all three games of the series. Light level has to be chosen via the "Machine Configuration" menu, until we get some kind of camera input;
@@ -229,7 +229,7 @@ Source changes:
   * Eliminate some trampolines;
   * Build fixes from Vas Crabb and balr0g.
 - n64.cpp: Disabled fast RAM, as it prevents watchpoints from working and doesn't gain much on the interpreter core [Ryan Holtz].
-- rainbow.cpp: add 23-090b1 z80 arbitrator PROM dump [Lord Nightmare].
+- rainbow.cpp: Add 23-090b1 z80 arbitrator PROM dump [Lord Nightmare].
 - Small update of italian traslation [AntoPISA].
 - Fix keyboard shortcuts for disassembly comments pane [Vas Crabb]:
   * Win32 previously recognised Ctrl+N but menu incorrectly showed Ctrl+M;
@@ -337,3 +337,4 @@ Source changes:
 - Flaming 7 (original): Fixed the Paytable DIP switches [Roberto Fresca].
 - Add older version SPARCstation IPX (Sun 4/50) ROM as an alt bios, and add ROM locations [Lord Nightmare].
 - trs80: Fixed loss of keyboard control on some games [Robbbert].
+- Bump MAME 0.175 [Miodrag Milanović].

@@ -68,12 +68,12 @@ Wangan Midnight Maximum Tune (Japan) (Rev B) [ShouTime, rtw]
 
 New WORKING Software List Additions
 -----------------------------------
-pc98_cd.xml:
-  Added more disks + FM Towns hybrids [rzero9]
-fmtowns_cd.xml:
-  New dumps [rzero9]
 coco_cart.xml:
   Switched (cclimbra) to (cclimber) [Nathan Woods]
+fmtowns_cd.xml:
+  New dumps [rzero9]
+pc98_cd.xml:
+  Added more disks + FM Towns hybrids [rzero9]
 pofo.xml:
   Dumped the File Manager/Tutorial card [Curt Coder]
 
@@ -85,27 +85,27 @@ gba_ereader.xml:
 
 MAME Testers Bugs Fixed (21):
 -----------------------------
-- 00550: [Graphics] (atarisy2.c) apb: There is a graphics problem with your police car at the point you drive away from your starting square [crazyc].
-- 01455: [DIP/Input] (segas18.c) lghost: Problem with crosshair [Pitou].
-- 05584: [Gameplay] (konamigx.c) rungun2, slamdnk2: during run mame produces several messages about unknown protection command [Tafoid].
-- 05823: [Core] (coco12.c) -ramsize does nothing for emulation although it does change the .ini file [Nathan Woods].
-- 06185: [DIP/Input] LIGHTGUNS: Aimtrak Dual Lightguns no longer properly detect [Pitou].
-- 06269: [Debugger] DEBUGGER: Unable to use any valid cheats while using debug [Ryan Holtz].
-- 06292: [Crash/Freeze] (victor9k.c) victor9k [cpm86]: Freeze with 'cpm86' disk [Curt Coder].
-- 06314: [Crash/Freeze] Fatal error - All sets using '-centronics p72' slot/option [Ryan Holtz].
-- 06315: [Crash/Freeze] Fatal error - All sets using c4023, c1526, mps802 devices [Ryan Holtz].
-- 06316: [Crash/Freeze] (pc1512.c) pc1512, pc1512dd, pc1512hd10: Use of 'ibm_mfc' slot option causes Fatal error [Ryan Holtz].
-- 06317: [Crash/Freeze] (pc1512.c) pc1512, pc1512dd, pc1512hd10: Use of '3c503' slot option causes Fatal error [Ryan Holtz].
-- 06326: [Crash/Freeze] (megadriv.c) megadriv, 32x and clones, some segac2.c sets: Selecting machine and game via softlist though internal menu results exception/crash [Osso].
-- 06328: [Crash/Freeze] Various ISA using machines: Crash/Exception at Initialization [crazyc].
-- 06330: [Crash/Freeze] (altos5.c) altos5: Crash/.Exception on start [crazyc].
-- 06331: [Crash/Freeze] (apollo.c) dn3500_19i, dsp3000, dsp3500, dsp5500: Crash/Exception on start [Osso].
-- 06332: [Graphics] (galaga.c) digdug and clones: Graphics from Tilemap 0 are missing [Osso].
-- 06335: [Interface] UI:: Input (general) selection menus do not display correctly or at all [Vas Crabb].
-- 06342: [Crash/Freeze] pc (pccga): System crashing while loading [crazyc].
-- 06343: [DIP/Input] (taito_l.c) plottingu: Coinage DIP switches are labeled incorrectly [Tafoid].
-- 06349: [Gameplay] brapboys: MAME crashed when exiting game [Olivier Galibert].
-- 06352: [Crash/Freeze] (cps1.c) mbombrd, mbombrdj: Crash in demonstration mode [Osso].
+- 00550: [Graphics] (atarisy2.c) apb: There is a graphics problem with your police car at the point you drive away from your starting square (crazyc)
+- 01455: [DIP/Input] (segas18.c) lghost: Problem with crosshair (Pitou)
+- 05584: [Gameplay] (konamigx.c) rungun2, slamdnk2: during run mame produces several messages about unknown protection command (Tafoid)
+- 05823: [Core] (coco12.c) -ramsize does nothing for emulation although it does change the .ini file (Nathan Woods)
+- 06185: [DIP/Input] LIGHTGUNS: Aimtrak Dual Lightguns no longer properly detect (Pitou)
+- 06269: [Debugger] DEBUGGER: Unable to use any valid cheats while using debug (Ryan Holtz)
+- 06292: [Crash/Freeze] (victor9k.c) victor9k [cpm86]: Freeze with 'cpm86' disk (Curt Coder)
+- 06314: [Crash/Freeze] Fatal error - All sets using '-centronics p72' slot/option (Ryan Holtz)
+- 06315: [Crash/Freeze] Fatal error - All sets using c4023, c1526, mps802 devices (Ryan Holtz)
+- 06316: [Crash/Freeze] (pc1512.c) pc1512, pc1512dd, pc1512hd10: Use of 'ibm_mfc' slot option causes Fatal error (Ryan Holtz)
+- 06317: [Crash/Freeze] (pc1512.c) pc1512, pc1512dd, pc1512hd10: Use of '3c503' slot option causes Fatal error (Ryan Holtz)
+- 06326: [Crash/Freeze] (megadriv.c) megadriv, 32x and clones, some segac2.c sets: Selecting machine and game via softlist though internal menu results exception/crash (Osso)
+- 06328: [Crash/Freeze] Various ISA using machines: Crash/Exception at Initialization (crazyc)
+- 06330: [Crash/Freeze] (altos5.c) altos5: Crash/.Exception on start (crazyc)
+- 06331: [Crash/Freeze] (apollo.c) dn3500_19i, dsp3000, dsp3500, dsp5500: Crash/Exception on start (Osso)
+- 06332: [Graphics] (galaga.c) digdug and clones: Graphics from Tilemap 0 are missing (Osso)
+- 06335: [Interface] UI:: Input (general) selection menus do not display correctly or at all (Vas Crabb)
+- 06342: [Crash/Freeze] pc (pccga): System crashing while loading (crazyc)
+- 06343: [DIP/Input] (taito_l.c) plottingu: Coinage DIP switches are labeled incorrectly (Tafoid)
+- 06349: [Gameplay] brapboys: MAME crashed when exiting game (Olivier Galibert)
+- 06352: [Crash/Freeze] (cps1.c) mbombrd, mbombrdj: Crash in demonstration mode (Osso)
 
 
 Translations Added or Modified
@@ -242,7 +242,7 @@ Source changes:
   * Changed tile/sprite ROM regions to be 16-bit to better match hardware;
   * Represent 16-bit text layer block on Z80 games as a device;
   * Split up state classes some more and use derived machine configs.
-- Fixed regression: using IPT_START in sms makes mame think joypad 1 is occupied and inserts joypad 2&3 instead of joypad 1&2 [hap].
+- Fixed regression: Using IPT_START in sms makes mame think joypad 1 is occupied and inserts joypad 2&3 instead of joypad 1&2 [hap].
 - dotrikun improvements [hap]:
   * Much better video timing, but still shows glitches in ccovell's ROM;
   * eat_cycles clamps to 0, adjust_icount does do what I intended;
@@ -311,7 +311,7 @@ Source changes:
   * Sub CPU seems to expect certain H8 SCI behavior, otherwise it locks up after a few minutes making controls unresponsive;
   * Bypassed 'COIN ERROR' at bootup by patching the sub CPU program;
   * Swapped 'th1fl3l.12' and 'th1fl3u.13' and placed them at proper memory location (0x1800000) so game no longer crashes at Namco logo.
-- namconb1: fix sound timing for some games. Fixes the sound tempo in nebulray, gslugrsj, gslgr94u and clones, and vshoot [superctr].
+- namconb1: Fix sound timing for some games. Fixes the sound tempo in nebulray, gslugrsj, gslgr94u and clones, and vshoot [superctr].
 - Byteswapped timecris sample ROM, remove MACHINE_IMPERFECT_SOUND flags for C352 games [superctr].
 - Namco C352 improvements [superctr]:
   * Replaced C352 core with new one used in VGMPlay (fixes noise generation and sample interpolation);
@@ -416,3 +416,4 @@ Source changes:
 - dynax.cpp: Dumped color PROMs for Intergirl [f205v].
 - arkanoid.cpp: Cleaned up comments; updated notes about which MCUs are used [Lord Nightmare].
 - Synchronise with PinMAME and add many new pinball sets [Osso].
+- Bump MAME 0.177 [Miodrag Milanović].

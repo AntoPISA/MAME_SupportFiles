@@ -352,8 +352,7 @@ Source changes:
   * Fixed a bug in switching bjt implementation.
 - Fixed noise period on AY8910 [Dr. Venom, Couriersud].
 - Prevent clock bit to be deleted after CRC in FM [Michael Zapf].
-- Use proper AY8910 mixing model for MSX. Volumes set to match MSX
- hardware [Dr. Venom, Couriersud].
+- Use proper AY8910 mixing model for MSX. Volumes set to match MSX hardware [Dr. Venom, Couriersud].
 - BBC Micro keyboard updates/fixes [Nigel Barnes]:
   * Added numeric keypad on Master series;
   * Fixed CAPS LOCK and SHIFT LOCK;
@@ -410,7 +409,7 @@ Source changes:
 - bankdev.c: Don't change the current bank on reset, because another device might have already changed the bank when it was reset [smf].
 - clcd.c: Implemented MMU making it usable. Hooked up rtc, rs232, centronics and sound. LCD colors are matched up from this photograph http://vivaamigafilm.blogspot.co.uk/2012/02/chillin-with-porter.html. The character ROM is not dumped http://www.floodgap.com/retrobits/ckb/secret/cbm-vlcd-charrom.jpg. So a fake font is used which takes the unused upper case font in the kernel ROM as a starting point and adds lower case characters, trying to make them match the available screen shots http://www.floodgap.com/retrobits/ckb/secret/cbm-lcd-screen.gif. There appears to be several bugs in the roms that affect the rtc [smf].
 - Added unknown encrypted Royal Card. This game is running on Dino 4 encrypted hardware, with a CPU+PLCC daughterboard. Decrypted program address + data, but code still jumps into $48xx range where there's no valid code. Decoded and partially decrypted the graphics set [Roberto Fresca, ANY].
-- n68681: make loopback operate at the current baud rate instead of instantaneously. Fixes dectalk DUART self-test [R. Belmont].
+- n68681: Make loopback operate at the current baud rate instead of instantaneously. Fixes dectalk DUART self-test [R. Belmont].
 - z180.c: Modernized CPU core [Wilbert Pol].
 - tourvis.c: Correct 1 cart name and add newly dumped U4-43 BIOS [The Dumping Union].
 - Converted MSM58321 to DEVCB2, uses level logic rather than edge detection for strobes (as per datasheet), added NVRAM interface as there are some configuration bits to save, added support for 12 and 24 hour. It defaults to 12 hour, but you can configure it in the driver to default to 24H. You can configure what year 0 is in the driver, which is used when setting the date at startup [smf].
@@ -671,3 +670,4 @@ Source changes:
 - Various Atari vector drivers: derive (fake) refresh rate from CPU IRQ frequency to reduce judder [Alex Jackson].
 - toaplan1.c: Correct SCREEN_RAW_PARAMS for all games based on CRTC registers [Alex Jackson].
 - naomi.c: Redumped cfield CHD from GDI source, documented PIC used by ngdup23e set [MetalliC].
+- Bump MAME 0.153 [Miodrag Milanović].

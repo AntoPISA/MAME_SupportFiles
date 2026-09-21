@@ -61,7 +61,7 @@ Usagi Online (v2.04J) [ShouTime, The Dumping Union, R. Belmont]
 
 
 MAME Testers Bugs Fixed (18):
-----------------------------
+-----------------------------
 - 00032: [Graphics] (taito_f3.c) tcobra2: There are stray flashing pixels on the bottom left of the helicopter (David Haywood)
 - 00416: [Crash/Freeze] (ddragon.c) ddragonw1: When finishing the game its reset and so go to check ROM screen again and freezes! (Phil Bennett)
 - 00942: [Sound] (topspeed.c) topspeed: Engine sounds only play when driving in tunnels or under bridges, and turbo sounds never play (Phil Bennett)
@@ -97,9 +97,9 @@ Source changes:
 - Adds a watchpoint debug view [Andrew Gardner].
 - Adds the watchpoint view to the QT Debugger's "Break|Watchpoints" window [Andrew Gardner].
 - Fix long-standing architectural wart: the priority bitmap is no longer. Owned by the tilemap system, and no longer exists globally in the machine. Instead it is allocated per-screen for all systems. This has several side-effects [Aaron Giles]:
-  1. Previously, the pdrawgfx* functions were already changed to take the priority bitmap as a parameter. Now all other hand-crafted functions that mess with the priority bitmap generally must do so as well, and have been updated.
-  2. Calls to the tilemap system now need to provide a screen_device. This is not just for the priority_bitmap, but also for screen flipping, which previously always assumed the "primary screen" when doing flipping calculations.
-  3. All devices that implemented tilemap-like functionality have been updated to follow the same pattern, since they largely tend to call through to the core tilemap system at some point.
+  * Previously, the pdrawgfx* functions were already changed to take the priority bitmap as a parameter. Now all other hand-crafted functions that mess with the priority bitmap generally must do so as well, and have been updated;
+  * Calls to the tilemap system now need to provide a screen_device. This is not just for the priority_bitmap, but also for screen flipping, which previously always assumed the "primary screen" when doing flipping calculations;
+  * All devices that implemented tilemap-like functionality have been updated to follow the same pattern, since they largely tend to call through to the core tilemap system at some point.
 - ym2413.c: Reverted KSL value order to 0, 1.5, 3.0, 6.0dB/oct after testing with a real YM2413 [Wouter Vermaelen].
 - Modernized galaxian sound device [Osso].
 - Split eeprom.c into a base class base_eepr-om_device and a [Aaron Giles]:
@@ -115,7 +115,7 @@ Source changes:
 - Modernized the s14001a and exidy sound devices [Osso].
 - Modernized the Seibu ADPCM device and converted the Seibu sound system to be a device [Osso].
 - Added makefile define FASTDEBUG to disable some debug-specific stuff, that is causing performance hits (for e.g. profiling) [Oliver Stoneberg].
-- neogeo.c: endian fix for kof2003 protection [Alex Jackson].
+- neogeo.c: Endian fix for kof2003 protection [Alex Jackson].
 - Converted the T5182 to a device [Osso].
 - Add support for a China internal ROM to kov2p sets [XingXing].
 - Modernized Mirco3D noise device [Osso].
@@ -152,7 +152,7 @@ Source changes:
   * Corrected b14-67-1/b14-68-1 ROM locations.
 - PGM: Implement some missing asic25/asic28 registers. This fixes the high score screen for olds & clones [rockywall, Creamy Mami].
 - multipcm: Use address space instead of direct memory region [R. Belmont].
-- chihiro.c [Samuele Zannoli]:
+- chihiro.c update [Samuele Zannoli]:
   * Add more patches needed until usb is implemented;
   * Add support for more texture formats and drawing primitives to the 3D accelerator.
 - Separate Ensoniq "pump" device out from esq5505.c [R. Belmont].
@@ -165,12 +165,12 @@ Source changes:
 - Fix sprite priority issues in nmk16.c (tested on tdragon2 PCB) [trap15].
 - Fixed dblewing Lives dip switch [lain].
 - Modernized Sega Model 1 sound board; now shared instead of copy/pasted [R. Belmont].
-- segae.c: clean up, add savestate support [Alex Jackson].
+- segae.c: Clean up, add savestate support [Alex Jackson].
 - terracre.c: Remove nonexistent second ym2203 from terracren. Remove silly input port hack from horekid [Alex Jackson].
 - ISA16_IDE_CD in southbridge_device with two BUS_MASTER_IDE_CONTROLLERs [smf].
 - snk68.c: Added DIP switch locations to all sets in the driver [Brian Troha].
 - cave.c: Correct name to Guwange (Japan, Special Ver. 00/07/07) as verified by hex editor [Brian Troha].
-- 8080bw.c: fix setnames for Space Invaders (TV/Cocktail version) sets based on recent dump: sitva->sitv (newer 'tv0h' version), sitv->sitvo (older 'tv01' version) [Lord Nightmare, Andrew Welburn]
+- 8080bw.c: Fix setnames for Space Invaders (TV/Cocktail version) sets based on recent dump: sitva->sitv (newer 'tv0h' version), sitv->sitvo (older 'tv01' version) [Lord Nightmare, Andrew Welburn]
 - Removed local ATAPI code in preparation to use the new code, but the CPU gets lost after executing the first instruction [smf].
 - Refactored to use ATA_INTERFACE [smf].
 - HLSL updates [MooglyGuy]:
@@ -181,7 +181,7 @@ Source changes:
 - galpani2.c: Added complete PCB layout [Guru].
 - galpani2.c: Added Dipswitch locations to all sets [Brian Troha].
 - Restructured NTSC encode/decode shaders for better readability. [MooglyGuy].
-- MIDI: fixed some SysEx issues [Christian Brunschen].
+- MIDI: Fixed some SysEx issues [Christian Brunschen].
 - updated zlib to 1.2.8 [Oliver Stoneberg].
 - Made both DRC and Non-DRC compile for MIPS, RSP and SH2 core and added option to enable/disable DRC from command line (-drc -nodrc  by default it's on) [Miodrag Milanović].
 - Added command line option to force DRC C backend [Miodrag Milanović].
@@ -196,7 +196,7 @@ Source changes:
 - Started re-architecting the HLSL system to be data-driven [MooglyGuy].
 - PowerVR: Added YUV_TW texture hook-up (used by Soul Calibur at very least) [Angelo Salese].
 - PowerVR: Support for non-textured polygons with packed and floating colors [Angelo Salese].
-- namcos22: revised hardware info [Guru].
+- namcos22: Revised hardware info [Guru].
 - Updates to jedutils and other minor things [Kevin Eschbach]:
   * Documentation on the earlier version of the Deco Cassette System;
   * Documented some pals on a bootleg Free Kick that need to be dumped;
@@ -205,7 +205,7 @@ Source changes:
   * Added some preliminary work on figuring out what the undocumented fuses for the PALCE16V8 are (The data sheet does not document what all of the fuses are).
 - Refactored dreamcast to use an ATA interface [smf].
 - 2 new BIOS versions, 1 new CHRROM, and existing CHRROM confirmed good [Cowering].
-- stfight.c - Hooked up ADPCM/coin control MCU. Changed YM2203 clocks to 1.5MHz for cshooter and 4.5MHz for empcity/stfight (see notes) [Phil Bennett].
+- stfight.c: Hooked up ADPCM/coin control MCU. Changed YM2203 clocks to 1.5MHz for cshooter and 4.5MHz for empcity/stfight (see notes) [Phil Bennett].
 - Renamed TLCS900H to TMP95C061, moved the I/O handling into it's own class & hooked up TO1/TO3 to output on Port A. A hack is needed because ngpc doesn't set PACR/PAFC, which may be because it's a custom part. Changed Taito PJC to use TMP95C063. Separated I/O Ports on both CPU's so you can apply the devcb2 callbacks individually [smf].
 - Added 8/16 bit data bus configuration to TLCS900H. Default is 16bit, neogeo pocket is 8 bit [smf].
 - ddealer.c: Correct clock speeds for Double Dealer to match PCB [system11].
@@ -222,9 +222,10 @@ Source changes:
   * Implemented common RAM bus lock;
   * Added interrupt hacks.
 - peplus.c: Minor corrections and documentation updates including known payout tables for some sets [Brian Troha].
-- cubeqcpu.c, f8.c, minx.c, i8085.c, i860.c, i960.c, jaguar.c, lh5801.c, m6800.c, m37710.c, mb86233.c, mb88xx.c, mcs48.c, mc68hc11.c, mcs51.c, mn10200.c, pic16c5x.c, pic16c62x.c, tlcs900.c, pps4.c, s2650.c: Modernized cpu cores [Wilbert Pol].
+- cubeqcpu.c, f8.c, minx.c, i8085.c, i860.c, i960.c, jaguar.c, lh5801.c, m6800.c, m37710.c, mb86233.c, mb88xx.c, mcs48.c, mc68hc11.c, mcs51.c, mn10200.c, pic16c5x.c, pic16c62x.c, tlcs900.c, pps4.c, s2650.c: Modernized CPU cores [Wilbert Pol].
 - exprraid.c: Cleanups from schematics [Phil Bennett]:
   * Corrected CPU and YM3526 clock frequencies;
   * Improved protection simulation;
   * Added interrupt acks;
   * Added service coin input.
+- Bump MAME 0.150 [Miodrag Milanović].

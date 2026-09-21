@@ -214,7 +214,7 @@ Source changes:
   * Fixed register-base shift with a value >= 32, this fixes the RISC OS graphics issues;
   * Fixed carry for ROR and preserve IRQ_MASK in LDR R15,***.
 - mmodular, risc2500: Moved Saitek RISC 2500 into a separate driver and added internal layout and inputs [Sandro Ronco].
-- a310: reworked HLE keyboard and added mouse input [Sandro Ronco].
+- a310: Reworked HLE keyboard and added mouse input [Sandro Ronco].
 - aristmk5: Various improvements [Sandro Ronco]:
   * Hooked up EEPROMs, UARTs and some inputs;
   * Fixed video DMA when vidstart != 0;
@@ -235,7 +235,7 @@ Source changes:
   * 9334/DM9334 8-Bit Addressable Latch;
   * 7400 Quad 2-Input NAND Gate, 7404 Hex Inverter, 82S126/82S129 256x4-bit PROM.
 - sun4: Simplified DMA implementation [Ryan Holtz].
-- naomi: various naming changes [MetalliC]:
+- naomi: Various naming changes [MetalliC]:
   * Added supported region info;
   * Changed all games to "Export name / Japan name" template;
   * Correct a few names as per title screens.
@@ -292,7 +292,7 @@ Source changes:
   * Hooked up serial lines, Concurrent DOS can now use the first serial port as an extra terminal;
   * Fixed Z80 RAM banking past 256kB.
 - fmtowns: Addded support for IC Memory Card images. Limited to 16MB in size until software that supports more can be found.
--x68k: Added keyboard LEDs to layout display. Among other things, this fixes the 'dancing keyboard' display when running Cotton [Barry Rodewald].
+- x68k: Added keyboard LEDs to layout display. Among other things, this fixes the 'dancing keyboard' display when running Cotton [Barry Rodewald].
 - mac: Split 128/512/Plus into a new separate, more modern driver [R. Belmont].
 - mac: Corrected regression in IIvx/IIvi models [R. Belmont].
 - apple2gs: Switched to use z80scc, added printer and modem ports [R. Belmont].
@@ -343,7 +343,7 @@ Source changes:
 - bbc: Added ACP 1770 DFS to acorn1770 FDC [Nigel Barnes].
 - electron: Added PRES ADFS versions to Plus3 expansion [Nigel Barnes].
 - a310: Added new NOT WORKING machines Archimedes 305, Archimedes 440, Archimedes 3000, Archimedes 410/1, Archimedes 420/1, Archimedes 440/1, Archimedes 540, Acorn A5000, Acorn A4, Acorn A4000, Acorn A5000 Alpha [Nigel Barnes]:
-  * Renamed a310->aa310 to avoid conflict with Amiga machines;
+  * Renamed (a310) to (aa31 to avoid conflict with Amiga machines;
   * Added all missing OS releases Arthur 0.30, RISC OS 2.01, RISC OS 3.00, RISC OS 3.10, RISC OS 3.19 (German);
   * Made all machines default to the OS (Arthur, RISC OS 2, RISC OS 3) they were shipped with;
   * Corrected ROM labels/locations;
@@ -428,4 +428,5 @@ Source changes:
 - fds: Detached the other cart lists [Reagan Roush].
 - zorba: Added software list for floppy disks as well as some documentation to the driver file [Reagan Roush].
 - isbc: Added new isbc 286 ROM version v1.0 [Al Kossow].
-- isbc_208: Added device [Carl.
+- isbc_208: Added device [Carl].
+- Bump MAME 0.180 [Vas Crabb].

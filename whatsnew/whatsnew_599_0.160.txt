@@ -64,10 +64,8 @@ MAME Testers Bugs Fixed (6):
 
 Source changes:
 ---------------
--Enable OpenGL renderer on Windows. By default, run-time function
- resolution is enabled. To resolve addresses, the code now first tries
- GetProcAddress followed by wglGetProcAddress [Couriersud].
--Fix memory leak warning (autorelease pool) on OSX [Couriersud].
+- Enable OpenGL renderer on Windows. By default, run-time function resolution is enabled. To resolve addresses, the code now first tries GetProcAddress followed by wglGetProcAddress [Couriersud].
+- Fix memory leak warning (autorelease pool) on OSX [Couriersud].
 - Iimprovements to monkelf (bootleg of avspirit), now playable [iq_132]
 - Neo-Geo documentation updates [JacKc]:
   * kof96h: Tagged AES version;
@@ -110,8 +108,8 @@ Source changes:
 - tms6100.c: Add the tms6125 4KiB VSM pinout [Lord Nightmare, plgdavid].
 - chelnov: Simulate some protection instead of patching ROM [iq_132].
 - iteagle: work-in-progress [Ted Green]:
- * Hooked up PCI devices and bridge correctly using new PCI subsystem;
- * Fixed BIOS selection.
+  * Hooked up PCI devices and bridge correctly using new PCI subsystem;
+  * Fixed BIOS selection.
 - vrc4373: Fix PCI target accesses [Ted Green].
 - Identified that Table Tennis Champions uses the same style DMA/blitter as the recently added Spider, made some improvements, added sound, it isn't driven by PIC, role of PIC still unknown [David Haywood].
 - Add basic hookups of internal peripherals to the V53, made it an actual CPU type derived from the V33. Most of these have come from the PC emulation [David Haywood]:
@@ -125,3 +123,4 @@ Source changes:
 - luaengine: Clip screen coordinates to screen size [Luca Bruno].
 - ui: Use per-container pixel aspect (LUA draw_text bugfix) [Luca Bruno].
 - docs: Add initial documentation for luaengine API [Luca Bruno].
+- Bump MAME 0.160 [Miodrag Milanović].

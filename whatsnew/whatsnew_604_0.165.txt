@@ -74,15 +74,15 @@ Source changes:
 - utf8 support for pstring. Opted for a scalable solution which should be easily extensible to utf16 and utf32 as well. All position related operations now operate on char code positions instead of byte positions [Couriersud].
 - chihiro.c: Move parts common with Xbox console into their own files machine/xbox.c and includes/xbox.h [Samuele Zannoli].
 - gei.c: Minor clean up [Brian Troha].
-- Xbox console driver now uses the base common machine setup with Chihiro [Samuele Zannoli].
+- XBOX console driver now uses the base common machine setup with Chihiro [Samuele Zannoli].
 - Add support for M58819 'VSM-emulator', fixes speech in Radar Scope TRS01 set [Lord Nightmare].
 - Replaced the frame parse and speech generation code from tms5110.c with the code from tms5220.c, should be significantly more accurate and allow the cores to be much more easily merged in the future. This also allowed finally getting rid of the COEFF_ENERGY_SENTINEL hack in tms5110r.inc [Lord Nightmare].
 - deco32.c: Verified and corrected the ROM labels for the Fighter's History (World ver 43-07, DE-0380-2 PCB) set [Charles MacDonald].
-- monzagp.c Updates (part 2) [Sandro Ronco]:
+- monzagp.c: Updates (part 2) [Sandro Ronco]:
   * Fixed gfx RAM;
   * Added 7-seg artwork;
   * Added my car sprite.
-- hp64k: fix to allow multiple screens (for RS232 terminal) [F. Ulivi].
+- hp64k: Fix to allow multiple screens (for RS232 terminal) [F. Ulivi].
 - goldstar.c DIP switch documentation [hsialin]:
   * Hold Pair for cmv4, cmv801 and crazybon.
   * Card Shuffle Animation for cmv801.
@@ -91,7 +91,7 @@ Source changes:
 - c128: Emulated the PARTNER 128 cartridge [Curt Coder].
 - Fixed 3wondersb [Robbbert].
 - apple2: Fix Ivel Ultra's unique text drawing (MT#5814) [R. Belmont].
-- tms51xx: removed target_x variables in favor of reloading from coefficient ROM during the generation loop (as the real device does). Implemented proper ZPAR and unvoiced ZPAR logic for zeroing parameters during idle and unvoiced frames. Changed the pitch zeroing logic during frame inhibit to last an entire interpolation period rather than one sample. Replaced the speech-is-synthesizing state machine with the original patent TALK, TALKD and SPEN bits. Redid the talk_status logic to use (TALKD || SPEN) as the real device does. [Lord Nightmare].
+- tms51xx: Removed target_x variables in favor of reloading from coefficient ROM during the generation loop (as the real device does). Implemented proper ZPAR and unvoiced ZPAR logic for zeroing parameters during idle and unvoiced frames. Changed the pitch zeroing logic during frame inhibit to last an entire interpolation period rather than one sample. Replaced the speech-is-synthesizing state machine with the original patent TALK, TALKD and SPEN bits. Redid the talk_status logic to use (TALKD || SPEN) as the real device does. [Lord Nightmare].
 - pet: Added French CBM 8032 ROMs. [Hervé Warin].
 - pet_rom.xml: Added Edex (France, v4.4) [Hervé Warin].
 - floppy.c: Added drive sounds (must be activated in drivers using MCFG_FLOPPY_DRIVE_SOUND(true); quite simple still, same sounds for all drives) [Michael Zapf].
@@ -104,6 +104,7 @@ Source changes:
   * Added depth test and write enables;
   * Slightly improved rasterization.
 - OS/2 patches for MAME 0.164 [KO Myung-Hun].
-- x68k: added brightness controls, used for fade in/out effects [Barry Rodewald].
+- x68k: Added brightness controls, used for fade in/out effects [Barry Rodewald].
 - Dumped thedealr's i8742 internal ROM [Porchy].
 - Added correct color PROMs for tahjong [Mike Coates].
+- Bump MAME 0.165 [Miodrag Milanović].

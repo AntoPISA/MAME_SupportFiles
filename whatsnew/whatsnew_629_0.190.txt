@@ -146,7 +146,7 @@ Source changes:
 - megaplay: Routed start buttons through BIOS, still not working properly [AJR].
 - quizpun2: Emulate COP402 MCU [AJR].
 - COP400 overhaul [AJR]:
- * Rewrote execution control logic to fetch each byte of an instruction separately in one pass of the main loop;
+  * Rewrote execution control logic to fetch each byte of an instruction separately in one pass of the main loop;
   * Provides EEPROM-compatible timing for the SIO shift register, allowing the 93C46 on quizpun2 to be read and written properly;
   * Added M pseudo-register (internal RAM referenced by B) to debugger state;
   * Added T register to debugger state on devices where it only affects SKT;
@@ -289,6 +289,7 @@ Source changes:
 - Fixed corrupt bytes in two MC68705 dumps after re-analyzing raw dump data [Lord Nightmare, ShouTime].
 - retofinvb3: Fixed colors. [Lord Nightmare].
 - hexion.cpp: Fixed INT_TIME callback from K053252 CCU (fixes music speed), fixed music pitch for hexionb. [Lord Nightmare].
-- notetaker.cpp: Updated notes, and added PROMs typed from source listings. [Lord Nightmare].
+- notetaker.cpp: Updated notes, and added PROMs typed from source listings [Lord Nightmare].
 - Updated hiscore.dat [Leezer].
 - tnzs.cpp: Corrected ROM PCB locations and added Guru-Readme for the P0-25-A PCB [Guru].
+- Bump MAME 0.190 [Vas Crabb].

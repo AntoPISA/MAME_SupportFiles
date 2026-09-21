@@ -123,13 +123,13 @@ Source changes:
 - scsi: Fixed hard disk images with 256-byte sectors [Curt Coder].
 - Added a simple DC blocker filter to the speaker toggle device [R. Belmont].
 - konendev.c: Corrected CPU type (PPC403) and added some hardware notes [Phil Bennett].
-- sf.c: update prom names for Street Fighter (World, Analog buttons) set [Porchy].
+- sf.c: Update PROM names for Street Fighter (World, Analog buttons) set [Porchy].
 - exidy440.c: Replaced prom dump for all games in driver located at 3K. It is unique to all the other proms and different in size [Joe Magiera, Tafoid].
 - nss.c: Update bios ROM locations and update inst ROM label for smw; marked nss v3 bios as possible hack [Kiddcade, Porchy].
 - CPS-1 update: Redumped CDU_22A.7F in dinou to match real pcb, verified on two different sources [Artemio Urbina].
 - Tweaks to the idehd timing, which are still based on complete fiction [smf].
 - Added a new macro MCFG_DEVICE_CARD_DEFAULT_BIOS, which can be used in the machine config to set the default BIOS for a slot card device [Curt Coder].
-- SDL: fix non-Qt non-Windows build (MT #5364) [R. Belmont].
+- SDL: Fix non-Qt non-Windows build (MT #5364) [R. Belmont].
 - Added SCSI status code & set it in all command handlers. It is sent over the bus when in status phase. In case of an error further information should be set in m_sense_key/m_sense_asc/m_sense_ascq & m_sense_information so that it can be returned by executing a request sense command [smf].
 - Set the error bit in the IDE status register if the command causes a check condition [smf].
 - vsnes.c: Update labels of vs. Super Mario Bros roms to match physical chips exactly [Dead_Body].
@@ -199,7 +199,7 @@ Source changes:
 - Added the SHA1 for System 573 700B01 now that we have a dump. It currently expects a different response from the H8 at bootup than the other BIOS versions, so the data is stored in a fake ROM until it's HLE'd better of we get a dump of the H8 internal rom [smf, innocent2k, anthonyoftga].
 - Document that ketsui roms exist with different fill in the unused areas [Artemio Urbina].
 - upd765: Fixed sense drive status command, and allow floppy connectors without drives [Curt Coder].
-- Fixed scudsp & ssp1601 entries [Vito].
+- Fixed scudsp and ssp1601 entries [Vito].
 - Reduce smearing on HLSL prescale [MooglyGuy].
 - Corrected 7486 description in head file [MASH].
 - Various PGM protection cleanups / fixes (orlegend, olds, svgpcb) [iq_132].
@@ -211,15 +211,15 @@ Source changes:
 - Redumped some System 573 CD's [Guru].
 - CPS-1 update: Added S222B.1A PAL to ffightj and clones [Charles MacDonald, Porchy, Smitdogg, The Dumping Union].
 - Created DS1204 device & switched megatouch to use it instead of it's own local version (driver could do with some more tidying up as not all games use a key but currently it is hooked up to all games). Default data comes from a region instead of coded in driver, commands & security match are now compared, data is clocked on the correct edge, key can be written to and is saved to NVRAM [smf].
-- Redumped bad roms for First Funky Fighter [Yohji, Smitdogg, The Dumping Union].
+- Redumped bad ROMs for 'First Funky Fighter' [Yohji, Smitdogg, The Dumping Union].
 - Merged othldrby.c with toaplan2.c driver [Angelo Salese].
-- Converted Toaplan 2 to use SCREEN_RAW_PARAMS [Angelo Salese].
+- Converted 'Toaplan 2' to use SCREEN_RAW_PARAMS [Angelo Salese].
 - Added a core for uPD4992 RTC, used by Othello Derby and Power Kick [Angelo Salese].
 - Hooked up ds1204, but haven't found what it checks for yet. Change PATCH_PROTECTION to 0 in tmaster.c and VERBOSE_LEVEL to 2 in ds1204.c then look for "-> command" in error.log to find the subsequent read from the dq pin for reading the identification and secure memory. For tm4k the first two bytes of the NVRAM need to be 0x00, 0xa0. From scratch you'll need to play a game before it will complain about the protection, but after that it will complain on every boot. It tries five different contents for the compare register at various points during the bootup, this may be for obfuscation as the real chip will return random results if the key is wrong. If the keys are available it might be easier to dump them than figure out exactly what it wants [smf].
 - svgpcb: Added igs027a rom, runs intro, dies trying to go in game, not sure why yet [rtw, David Haywood].
 - Created a skeleton for the Konami 573 Multi Session Unit, renamed digital io board source file to match and moved pcb layout from driver [smf].
 - Added skeleton for konami 573 memory card reader and network PCB unit devices [smf].
-- Redumped Keyboard Mania 3 [Guru].
+- Redumped 'Keyboard Mania 3' [Guru].
 - Updated konam80s atapi dma kludge so that Guitar Freaks 7th Mix (and alot of others) load again [smf].
 - Mambo A GO-GO CD redump in raw mode + raw subcode [any].
 - Improved Sega Bloxeed DIP switches [Zaphod].
@@ -266,6 +266,7 @@ Source changes:
 - Replaced read callbacks in I8251/Z80DART (and clones)/MC2661/MC68901/IM6402/MOS6551/Z80STI/MC6852/MC6854/ZX8302 with write handlers, which allows multiple chips to be connected together without using glue methods [smf].
 - Removed a load of unused code from MC68901, probably left over when it was converted to use diserial [smf].
 - Removed dependency clutter in c64 expansion port, c128 driver, ecbbus & econet [smf].
--nemesis.c: added PORT_TOGGLE and PORT_NAMEs to Konami GT [baritonomarchetto].
+- nemesis.c: Added PORT_TOGGLE and PORT_NAMEs to Konami GT [baritonomarchetto].
 - Rom locations added for Battles (Xevious bootleg), G.I. Joe, Ghosts'n Goblins (US), Victory Road and Guerilla War (Version 1) as well as NVRAM location to The Simpsons [Kevin Eshbach].
 - Added readmes for gijoe, moo, xexex, lethal, mystwarr also updating simpsons [Guru].
+- Bump MAME 0.152 [Miodrag Milanović].

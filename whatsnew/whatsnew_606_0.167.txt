@@ -127,7 +127,7 @@ Source changes:
   * Add sound to first gen -35 games;
   * Various fixes based on schematics and measurements.
 - TMS52xx: Fix a bug where if the FIFO contained exactly 0 bytes and a SPEAK (VSM) command was issued, the command would instantly terminate due to the FIFO being empty even though the chip wasn't in SPEAK EXTERNAL mode. Fixes speech in TI Extended Basic. [Lord Nightmare].
-- wackygtr: added inputs and internal layout [Sandro Ronco].
+- wackygtr: Added inputs and internal layout [Sandro Ronco].
 - Aristocrat MKV driver: Added the undumped PLD devices to Adonis (parent) ROM_LOAD since is running in the same hardware than the recent added clon [Roberto Fresca].
 - Aristocrat MKV driver: Added PCB ASCII layout and components
  description. Added extra documentation and some notes [Roberto Fresca].
@@ -137,7 +137,7 @@ Source changes:
   * Added character rounding;
   * Improved control code handling;
   * Added ROMs for variants saa5051, saa5053, saa5054, saa5055, saa5056 and saa5057.
-- osborne1: add SCREEN-PAC support [Vas Crabb]:
+- osborne1: Add SCREEN-PAC support [Vas Crabb]:
   * Implement 104-column and pseudo-80-column modes;
   * Correct scrolling in 52-column mode according to schematics;
   * Approximate scrolling in 104-column and pseudo-80-column modes;
@@ -202,7 +202,8 @@ Source changes:
 - namcos23: Go back to z-sorting [Olivier Galibert].
 - Deorphaned the software lists for cd32, 3do_m2 and pippin so that they get parsed by the validity checker etc. [Shideravan].
 - amstrad: Added Draysoft Doubler expansion [Barry Rodewald].
-- Changed the qotna set to run in a US-Export hardware. Even when is NSW/ACT, the program seems to run in that hardware. Added more documentation [Roberto Fresca].
+- Changed the (qotna) set to run in a US-Export hardware. Even when is NSW/ACT, the program seems to run in that hardware. Added more documentation [Roberto Fresca].
 - apple2: Fixed "The Mill" 6809 card so OS9 can boot [robj, R. Belmont].
 - Changed the vpoker set description to Videotronics Draw Poker, since the game is Draw Poker. Two companies sold it with different name. Documented the legal issues and added links [Roberto Fresca].
 - Update VMX/Altivec RGB implementation (fixes PowerPC) [Vas Crabb].
+- Bump MAME 0.167 [Miodrag Milanović].

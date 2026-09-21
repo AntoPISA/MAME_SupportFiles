@@ -96,11 +96,11 @@ Source changes:
 - Added proper sound comms for hng64 [Angelo Salese].
 - Fix SegaPCM volume register overflow [superctr].
 - netdev: Fix race condition/crash when using the OSD to choose pcap devices [Rob Braun].
-- mtwins pal [Corrado Tomaselli].
-- goldstar.c DIP/input updates [Bad A. Billy].
+- mtwins PAL [Corrado Tomaselli].
+- goldstar.c: DIP/input updates [Bad A. Billy].
 - More iteagle improvements [Ted Green]:
-  * PCI: allow BAR of 0; change "invalid" from 0 to -1;
-  * vrc4373: implement bus-master DMA;
+  * PCI: Allow BAR of 0; change "invalid" from 0 to -1;
+  * vrc4373: Implement bus-master DMA;
   * es1373: Do some processing and DMA, and issue IRQs.
 - z80pio: Added individual write line handlers for port bits [Curt Coder].
 - Fix yuv texture conversion for opengl [Olivier Galibert].
@@ -139,3 +139,4 @@ Source changes:
 - SDLMAME v0.160 selects the first mode unconditionally as a best mode when -switchres is used on SDL12 [KO Myung-Hun].
 - Fix build on OpenBSD [ibara].
 - Added/enabled save state support for the following drivers: aztarac.c, bagman.c, bigstrkb.c, cheekyms.c, clshroad.c, headonb.c, invqix.c, jackie.c, lwings.c, m107.c, m72.c, mainsnk.c, mirax.c, murogem.c, murogmbl.c, niyanpai.c, pitnrun.c, portrait.c, powerins.c, ppmast93.c, quizdna.c, rmhaihai.c, rotaryf.c, roul.c, route16.c, sauro.c, sbugger.c, shangha3.c, shanghai.c, shangkid.c, shaolins.c, spcforce.c, splash.c, spoker.c, spool99.c, ssfindo.c, stactics.c, thepit.c, toobin.c, truco.c, tunhunt.c, unkhorse.c, vamphalf.c, victory.c, vigilant.c, vroulet.c, warpsped.c and wiz.c [Osso].
+- Bump MAME 0.161 [Miodrag Milanović].

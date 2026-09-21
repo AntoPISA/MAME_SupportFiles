@@ -82,7 +82,7 @@ Source changes:
 - h8: Add dtc, dma, watchdog (WIP) [Olivier Galibert].
 - h8: Fixes, lots of [Olivier Galibert].
 - cybiko: Make work a little emore, add v1 flash [Olivier Galibert].
-- a5200: fixed regression when loading headerless carts from fullpath [Fabio Priuli].
+- a5200: Fixed regression when loading headerless carts from fullpath [Fabio Priuli].
 - neogeo.cpp: Huge clean up of the cartslot code in order to better exploit slot devices [Fabio Priuli]:
   * Moved cart-specific components to the carts itself removing the fake protection devices from the main system, since they never belonged there;
   * Removed hacky ROM region destruction/construction when a new cart is inserted, replacing it with proper bank pointers to the carts (except for ymsnd and ymsnd.deltat region which will require modernization of the ym devices);
@@ -166,3 +166,4 @@ Source changes:
 - r9751.xml: Add CBX 9005.2.79 software [Brandon Munger].
 - r9751: Fix race condition in PDC device. Multi disk load now possible [Brandon Munger].
 - DirectInput8: Correct joystick polling methods to better support older joysticks which previously only worked with DirectInput7 [Quench].
+- Bump MAME 0.174 [Miodrag Milanović].

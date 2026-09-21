@@ -194,7 +194,7 @@ MAME Testers Bugs Fixed (14):
 - 00599: [DIP/Input] (m72.cpp) poundfor: You can't move the arrows on the menu screens to choose the other boxer or game (AJR)
 - 06103: [Documentation] (taitopjc.cpp) optiger: The correct description is "Operation Tiger (Ver 2.14 O)" (sjy96525)
 - 06540: [Crash/Freeze] (hh_tms1k.cpp) bshipb: [debug] Assert when starting emulation (Robbbert)
-- 06541: [Crash/Freeze] (laserbat.cpp) laserbat, lazarian: [debug] Assert when starting emulation (Robbbert).
+- 06541: [Crash/Freeze] (laserbat.cpp) laserbat, lazarian: [debug] Assert when starting emulation (Robbbert)
 - 06542: [Crash/Freeze] (toratora.cpp) All set in toratora.cpp: [debug] Assert when starting emulation (Robbbert)
 - 06544: [Crash/Freeze] (didact.cpp) can09: [debug] Assert when starting emulation (Robbbert)
 - 06547: [Crash/Freeze] (tv990.cpp) All sets in tv990.cpp: [debug] Assert when starting emulation (Robbbert)
@@ -289,7 +289,7 @@ Source changes:
   * Fixed the flank timer value, which improves but doesn't completely fix the vectrex regression.
 - z80scc: Implemented Reset Tx Interrupt Pending Command (fixes virtpool) [Joakim Larsson Edstrom].
 - Added support for Seiko S-29X90 16-bit EEPROMs [Luca Elia].
-- Seta ST-0020 updates: added 4 tilemaps and switchable resolution - ST-0032 video on par with ST-0020 [Luca Elia].
+- Seta ST-0020 updates: Added 4 tilemaps and switchable resolution - ST-0032 video on par with ST-0020 [Luca Elia].
 - jclub2.cpp: 'Jockey Club II' updates [Luca Elia]:
   * Split sets by software revision;
   * Added default EEPROMs and documented the procedure;
@@ -447,3 +447,4 @@ Source changes:
 - Updated Taito Power JC and Taito Type Zero descriptions [sjy96525].
 - williams.cpp: Redumped defenderj bad ROM, game now works [ShouTime].
 - xbox: Replaced bad dump of MCPX 1.0 ROM with checksums with correct checksums [Mark Riley].
+- Bump MAME 0.186 [Vas Crabb].

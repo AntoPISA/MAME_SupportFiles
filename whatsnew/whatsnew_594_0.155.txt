@@ -260,7 +260,7 @@ MAME Testers Bugs Fixed (31):
 Source changes:
 ---------------
 - tourvis.c: Added version 5.3 BIOS to the Tourvision driver [system11].
-- m68kmake.c: change overlapping memcpy() to memmove() [Casper Ti. Vector].
+- m68kmake.c: Change overlapping memcpy() to memmove() [Casper Ti. Vector].
 - Changed set mpoker and driver to mgames. Also description from Multi-Poker to Match Games accordingly with the official flyer http://flyers.arcade-museum.com/?page=thumbs&db=videodb&id=6500 In fact, these are skill instead of poker games. Also added way more documentation and some cosmetic fixes [Roberto Fresca].
 - Unknown Pac-Man gambling game: Rename and redefine the inputs to match the behavior of both games. Added complete instructions to play the stealth gambling game [Roberto Fresca].
 - Unknown Pac-Man gambling game: Added proper sound support. Rearranged some inputs and hooked extra port. Found some DIP switches. Added technical notes and instructions. Cleaned up the whole driver [Roberto Fresca].
@@ -354,7 +354,7 @@ Source changes:
 - peplus.c: Various fixes, all sets should be working now [Brian Troha].
 - WebUI: Clean up and fixed HTML compliance [Firehawke].
 - Added makefile variable OPENMP to enable usage of OpenMP (includes vconv support of -fopenmp) [Oliver Stöneberg].
-- blktiger priority fixes [Mamesick].
+- blktiger: Priority fixes [Mamesick].
 - dragrace.c: Added tachometer outputs [Comboman].
 - Handcrafted PAL for actual Varth US PCB [Palindrome].
 - awboard: add "offset protection" used by some carts.  samsptk and kofxi boot now [R. Belmont, MetalliC].
@@ -383,3 +383,4 @@ Source changes:
 - Added note about tharrier Dipswitches being likely read via the protection device (not yet hooked up) [David Haywood].
 - Fix girls 4,5,6 in the 'popbingo' bonus rounds [David Haywood].
 - Fix what appears to be bad sound ROM banking in sandscrp [Dink, David Haywood].
+- Bump MAME 0.155 [Miodrag Milanović].
