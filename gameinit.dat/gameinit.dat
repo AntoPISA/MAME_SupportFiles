@@ -119,11 +119,11 @@ CSAVE"x" - save a tape
 but, it doesn't work.
 
 $end
-$info=aa3010,aa310,aa500,aa5000,aa680,am4
+$info=aa3000,aa3010,aa3010_de,aa3020,aa305,aa310,aa4,aa4000,aa4101,aa500,aa5000,aa5000a,aa500d,aa540,aa680,am4,ar140,ar225,ar260,av20dev
 $mame
 TIPS:
 * Notes:
-* - aa310: shows a bad mode at start. Use HELP to get help.
+* - When in the monitor program use HELP to get help.
 * - Hold DEL down during boot reset the CMOS memory to the default values.
 * - default NVRAM is plainly wrong. Use the status/configure commands to set up properly
 *   (Scroll Lock is currently mapped with Right SHIFT, use this to move to next page of status).
@@ -134,37 +134,10 @@ TIPS:
 *   Then reboot / reset the machine, and use cat to (attempt) to list a floppy's contents.
 
 $end
-$info=aar_101,batmanf,baywatch,btmn_106,ckpt_a17,ctcheese,frankst,gnr_300,hook_408,jupk_513,lah_112,lw3_208,mav_402,mj_130,rab_320,stwr_106,tftc_303,tmnt_104,tomy_400,trek_201,wwfr_106
+$info=aar_101
 $mame
-INITIALIZATION:
-Here are the key codes to enable play:
-- Some games need you to hit H after the ball enters the shooter lane.
-- If the game wants you to choose something at start of ball 1, hit a Shift key.
-
-Game                                   NUM    Start game                          End ball
----------------------------------------------------------------------------------------------
-Back to the Future                    5009    Hold CDE, hit 1                     CDE
-Checkpoint                            5010    Hold CDE, hit 1                     CDE
-Batman                                5011    Hold CDE, hit 1                     CDE
-The Simpsons                          5012    Hold CDE, hit 1                     CDE
-Star Trek                             5014    Hold CDE, hit 1                     CDE
-Teenage Mutant Ninja Turtles          5017    Hold CDE, hit 1                     CDE
-Tales from the Crypt                  5018    Hold ABCDE, hit 1                   Hold ABCD, hit F
-Hook                                  5019    Hold CDE, hit 1                     CDE
-Jurassic Park                         5020    Hold ABCDEF, hit 1                  ABCDEF
-Adv. of Rocky & Bullwinkle & Friends  5022    Hold CDE, hit 1                     CDE
-WWF Royal Rumble                      5023    Hold ABC, hit 1                     Hold ABC, hit F
-Star Wars                             5024    Hold CDE, hit 1                     CDE
-Lethal Weapon 3                       5026    Hold CDE, hit 1                     CDE
-Last Action Hero                      5027    Hold ABC, hit 1                     BCF
-The Who's Tommy Pinball Wizard        5028    Hold ABC, hit 1                     Hold ABC, hit F
-Guns n' Roses                         5029    Hold A, hit 1                       ABCDEF
-Aaron Spelling                         --     Hold CDE, hit 1                     CDE
-Maverick the Movie                    5031    Hold CDE, hit 1                     Hold CDE, hit F
-Baywatch                              5033    Hold BCD, hit 1                     Hold BCD, hit F
-Mary Shelley's Frankenstein           5036    Hold A, hit 1 then H then Shift     Hold A, hit F
-Batman Forever                        5038    Hold CDEF, hit 1                    CDEF
-Cut the Cheese (redemption)           5048    6                                   INP17-40 (40=toilet)
+TIPS:
+To start the game, hold down CDE together, and hit 1. To end a ball, hold down CDE together.
 
 $end
 $info=aavenger,atarians,midearth,spcrider,time2000
@@ -1186,6 +1159,18 @@ INITIALIZATION:
 Due to a regression, need to wait up to 5 minutes at a black screen before it suddenly springs to life.
 
 $end
+$info=batmanf,bmf_at,bmf_be,bmf_ch,bmf_cn,bmf_de,bmf_fr,bmf_it,bmf_ita,bmf_itb,bmf_jp,bmf_nl,bmf_nl302,bmf_no,bmf_sp,bmf_sv,bmf_time,bmf_uk
+$mame
+TIPS:
+To start the game, hold down CDEF together, and hit 1, let go then press Shift. To end a ball, hold down CDEF together.
+
+$end
+$info=baywatch,bay_d300,bay_d400,bay_e400,bay_f201,bay_g300
+$mame
+TIPS:
+To start the game, hold down BCD together, and hit 1. To end a ball, hold down BCD together and hit F.
+
+$end
 $info=bbcb,bbcm
 $mame
 TIPS:
@@ -1713,7 +1698,19 @@ INITIALIZATION:
 Hold [ F2 ] and hit [ F3 ]. Keep holding [ F2 ] until it says to Release Test Switch. The game will begin.
 
 $end
-$info=bttf_a28,kiko_a10,lwar_a83,mnfb_c29,poto_a32,play_a24,robo_a34,ssvc_a26,simp_a27,tmac_a24,torp_e21
+$info=btmn_101,btmn_103,btmn_103f,btmn_106
+$mame
+TIPS:
+To start the game, hold down CDE together, and hit 1. To end a ball, hold down CDE together.
+
+$end
+$info=bttf_a20,bttf_a21,bttf_a27,bttf_a28,bttf_g27
+$mame
+TIPS:
+To start the game, hold down CDE together, and hit 1. To end a ball, hold down CDE together.
+
+$end
+$info=kiko_a10,lwar_a83,mnfb_c29,poto_a32,play_a24,robo_a34,ssvc_a26,simp_a27,tmac_a24,torp_e21
 $mame
 TIPS:
 Here are the key codes to enable play:
@@ -2183,6 +2180,12 @@ At start-up a "NEED COIN ADJUSTMENT" pops up. Press Service Mode [ F2 ], go to '
 
 SOURCE:
 mameinfo.dat
+
+$end
+$info=ckpt_a17
+$mame
+TIPS:
+To start the game, hold down CDE together, and hit 1. To end a ball, hold down CDE together.
 
 $end
 $info=classiceo
@@ -4122,6 +4125,12 @@ To save a tape: SAVE
 To load a tape: LOAD
 
 $end
+$info=frankst,frankstg,franksti
+$mame
+TIPS:
+To start the game, hold down A and hit 1, let go, hit H then Shift. To end a ball, hold down A and hit F.
+
+$end
 $info=ft68m
 $mame
 TIPS:
@@ -4297,6 +4306,12 @@ The first time you run the game, the EEPROM 7D shows as BAD in the RAM/ROM Check
 
 SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
+
+$end
+$info=gnr_200,gnr_300,gnr_300d,gnr_300f
+$mame
+TIPS:
+To start the game, hold down A and hit 1. To end a ball, hold down ABCDEF together.
 
 $end
 $info=gobyrc,rcdego
@@ -4630,6 +4645,12 @@ INITIALIZATION:
 All commands must be entered in UPPER case, and since the capslock doesn't work, you need to hold the shift key down.
 
 There is next to no error checking, for example the T command is to set the time. Entering T by itself will set the time to 99:99:99, while G will cause a jump to 9999 and so forth. Also the parameter must be right next to the command, spaces will cause invalid input. Example M1234 will display a byte of memory at 1234, while M 1234 will display memory at 9123.
+
+$end
+$info=hook_400,hook_401,hook_401_p,hook_404,hook_408,hook_e406,hook_f401
+$mame
+TIPS:
+To start the game, hold down CDE together, and hit 1. To end a ball, hold down CDE together.
 
 $end
 $info=hp48gx,hp48sx,hp48g,hp48gp,hp48s
@@ -5330,6 +5351,12 @@ Snaps
 These are .ace files. Just load it and in theory it should start.
 
 $end
+$info=jupk_305,jupk_307,jupk_501,jupk_501g,jupk_513
+$mame
+TIPS:
+To start the game, hold down ABCDEF together, and hit 1. To end a ball, hold down ABCDEF together.
+
+$end
 $info=jwildb52h
 $mame
 INITIALIZATION:
@@ -5675,6 +5702,12 @@ $info=kuzmich
 $mame
 TIPS:
 Press R to start a game.
+
+$end
+$info=lah_104f,lah_104s,lah_106c,lah_107,lah_108s,lah_110,lah_112,lah_xxx_s105
+$mame
+TIPS:
+To start the game, hold down ABCEF together, and hit 1. To end a ball, hold down ABCEF together.
 
 $end
 $info=landmakr
@@ -6106,6 +6139,12 @@ INITIALIZATION:
 On first run it will say ERROR FOUND, let it do that 3 times then it will stop. Press - (minus) key and it will fix itself.
 
 $end
+$info=lw3_200,lw3_203,lw3_204e,lw3_205,lw3_207,lw3_207c,lw3_208
+$mame
+TIPS:
+To start the game, hold down CDE together, and hit 1. To end a ball, hold down CDE together.
+
+$end
 $info=lynx48k,lynx96k,lynx128k
 $mame
 TIPS:
@@ -6310,23 +6349,29 @@ TIPS:
 Supposed to be the same as the PMD85, but it won't load a tape. The only files have no extension and look like HEX files, which is not supported.
 
 $end
+$info=mav_100,mav_200,mac_400,mav_401,mav_402,mav_404g
+$mame
+TIPS:
+To start the game, hold down CDE together and hit 1. To end a ball, hold down CDE together and hit F.
+
+$end
 $info=mbc020
 $mame
 TIPS:
 SERVOMON COMMANDS: [] is optional parameter, $ is a hex digit (0-9,A-F)
-Command and Format	Description
-M [[$$,]$$$$[-$$$$]]	MEM: Memory examine, modify, [search,] hex data editor starting at address [-end]
-R 	REG: Examine and modify user registers PC,S,F,A,X,Y
-G [$$$$]	GO: Restore all user registers [except PC=address, S=FD] and resume execution.
-V [$$$$[-$$$$]]	VER: View/Verify display data and checkums [starting at address [-to end]]
-D [$$$$]	DEP: Deposit hex data to memory [starting address]
-C [$$,]$$$$[-$$$$]	CALC: Calculate two's complement [-displacement], with [,offset]
-B $$$$,$$$$-$$$$	BMOV: Move data to address, from start -to end
-J $	JUMP: Restore user registers, except PC=listed entry in jump table, S=FD, and jump to it
-J 1 	MPC DIGITAL DRIVE REV 4.0 JUL-1983. AXES FOUND ONLINE : 1 Ok
-SD $$$$-$$$$	SDBL: Store double byte from address -to address
-F $$,$$$$-$$$$	FILL: Fill data, from memory address -to address
-S1 [$$$$]	Save ASCII data to memory [starting address].
+Command and Format      Description
+M [[$$,]$$$$[-$$$$]]    MEM: Memory examine, modify, [search,] hex data editor starting at address [-end]
+R                       REG: Examine and modify user registers PC,S,F,A,X,Y
+G [$$$$]                GO: Restore all user registers [except PC=address, S=FD] and resume execution.
+V [$$$$[-$$$$]]         VER: View/Verify display data and checkums [starting at address [-to end]]
+D [$$$$]                DEP: Deposit hex data to memory [starting address]
+C [$$,]$$$$[-$$$$]      CALC: Calculate two's complement [-displacement], with [,offset]
+B $$$$,$$$$-$$$$        BMOV: Move data to address, from start -to end
+J $                     JUMP: Restore user registers, except PC=listed entry in jump table, S=FD, and jump to it
+J 1                     MPC DIGITAL DRIVE REV 4.0 JUL-1983. AXES FOUND ONLINE : 1 Ok
+SD $$$$-$$$$            SDBL: Store double byte from address -to address
+F $$,$$$$-$$$$          FILL: Fill data, from memory address -to address
+S1 [$$$$]               Save ASCII data to memory [starting address].
 
 SOURCE: http://apple-crapple.blogspot.com/2022/06/synertek-mbc020.html
 
@@ -6789,6 +6834,12 @@ L switch to terminal mode
 M
 N modify memory in a limited way
 P this does a rti and causes a momentary crash. Weird.
+
+$end
+$info=mj_130
+$mame
+TIPS:
+To start the game, hold down CDE together, and hit 1. To end a ball, hold down CDE together.
 
 $end
 $info=mjyuugi
@@ -9353,13 +9404,10 @@ SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
 
 $end
-$info=racinfrc
+$info=rab_103s,rab_110be,rab_130,rab_320
 $mame
-INITIALIZATION:
-The first time you run the game, the EEPROM 22D shows as BAD in the RAM/ROM Check. Hold down the Test switch [ F2 ] and then also hit [ F3 ] to reset the machine, creating the EEPROM for you.
-
-SOURCE:
-http://wiki.mamedev.org/index.php/FAQ:Games
+TIPS:
+To start the game, hold down CDE together, and hit 1. To end a ball, hold down CDE together.
 
 $end
 $info=radio86
@@ -10292,6 +10340,12 @@ SOURCE:
 mameinfo.dat
 
 $end
+$info=simp_a20,simp_a27
+$mame
+TIPS:
+To start the game, hold down CDE together, and hit 1. To end a ball, hold down CDE together.
+
+$end
 $info=simpbowl
 $mame
 INITIALIZATION:
@@ -10819,26 +10873,26 @@ To compose a manual message, click these buttons one at a time, and wait for a r
 To send your message, press STA to send morse code. The special words cause a long series of beeps so just wait patiently for it say END on the display.
 
 Meaning of the buttons (meanings change depending on operation in progress):
-0/NO	Zero, or NO
-1/YES	One, or YES
-2/·	Two, or Dot (morse)
-3/—	Three, or Dash (morse)
-4-9	Number
-:	Attention (German: Achtung)
-/	Separator (German: Trennung)
-+	End of speech transmission
-=	Address separator in morse code telegram
-?	End of morse transmission, or 200 ms relay
-SPC	Space
-RES	Reset (puts device in startup situation)
-STA/STP	Start/stop playback of telegram
-→	Forward, or Skip setting
-←	Backward, or Skip setting
-MODE	Set mode of operation
-INP	Input of telegram
-OUT	Output from a given point
-CLR	Clear (message)
-EX	Execute (in combination with CLR, OUT or RES)
+0/NO    Zero, or NO
+1/YES   One, or YES
+2/·     Two, or Dot (morse)
+3/—     Three, or Dash (morse)
+4-9     Number
+:       Attention (German: Achtung)
+/       Separator (German: Trennung)
++       End of speech transmission
+=       Address separator in morse code telegram
+?       End of morse transmission, or 200 ms relay
+SPC     Space
+RES     Reset (puts device in startup situation)
+STA/STP Start/stop playback of telegram
+→       Forward, or Skip setting
+←       Backward, or Skip setting
+MODE    Set mode of operation
+INP     Input of telegram
+OUT     Output from a given point
+CLR     Clear (message)
+EX      Execute (in combination with CLR, OUT or RES)
 
 Errors:
 01: This is not a function key
@@ -10980,6 +11034,12 @@ $info=studio2,mtc9016,apollo80,cm1200,shmc1200,mpt02,mpt02h,visicom
 $mame
 INITIALIZATION:
 After loading a cart, press F3. It might then run, or you might have to hit other keys until it starts.
+
+$end
+$info=stwr_101,stwr_101g,stwr_102,stwr_102e,stwr_103,stwr_103_a104,stwr_106,stwr_106_a046,stwr_106_s105
+$mame
+TIPS:
+To start the game, hold down CDE together, and hit 1. To end a ball, hold down CDE together.
 
 $end
 $info=sun1,super6,superslv,sys16
@@ -11340,6 +11400,12 @@ Slugfest                        60001  O
 Hot Shot                        60017  1 then C then A. Keep hitting I to score a basket.
 
 $end
+$info=tftc_104s,tftc_200,tftc_300,tftc_302,tftc_303
+$mame
+TIPS:
+To start the game, hold down ABCDEF together, and hit 1. To end a ball, hold down ABCDEF together.
+
+$end
 $info=tgtpanic
 $mame
 TIPS:
@@ -11523,6 +11589,12 @@ To save a tape: PSAVE
 To load a tape: PLOAD
 
 $end
+$info=tmnt_101,tmnt_103,tmnt_104
+$mame
+TIPS:
+To start the game, hold down CDE together, and hit 1. To end a ball, hold down CDE together.
+
+$end
 $info=tmnt2
 $mame
 INITIALIZATION:
@@ -11548,6 +11620,12 @@ Insert coin [ 5 ] and keep pressed Aux Lever [ 2 ] and Lever [ 1 ] until the ree
 
 SOURCE:
 mameinfo.dat
+
+$end
+$info=tomy_102,tomy_102be,tomy_201h,tomy_300h,tomy_301g,tomy_400
+$mame
+TIPS:
+To start the game, hold down ABCEF together, and hit 1. To end a ball, hold down ABCEF together.
 
 $end
 $info=topaz_l1,pomp_l1,arist_l1,taurs_l1,kingt_l1,omni_l1,bstrk_l1,tstrk_l1,szone_l5,alcat_l7,tts_l2,gmine_l2,tdawg_l1,shfin_l1
@@ -11613,6 +11691,12 @@ To have the high score table properly initialized, the first time you run the ga
 
 SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
+
+$end
+$info=trek_110,trek_110_a027,trek_117,trek_120,trek_200,trek_201
+$mame
+TIPS:
+To start the game, hold down CDE together, and hit 1. To end a ball, hold down CDE together.
 
 $end
 $info=triplhnt
@@ -12283,6 +12367,12 @@ When the game is running, hit [ F2 ] to get to the internal service menu. Hit [ 
 
 SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
+
+$end
+$info=wwfr_103,wwfr_103f,wwfr_106
+$mame
+TIPS:
+To start the game, hold down ABCEF together, and hit 1. To end a ball, hold down ABCEF together.
 
 $end
 $info=x07
