@@ -5488,12 +5488,13 @@ ROBOTRON HC900, KC85-2
 
 For some reason KCC images are assigned to both cassette and quickload.
 
-SSS images, although supposedly supported, are all rejected and unusable.
+SSS images must be loaded into BASIC.
 
 Games generally only work on one of the computers, so they will be suffixed with [2],[3],[4].
 
 A menu item can be selected either by typing its name, or by moving the cursor to the selection and hitting Enter.
 
+BASIC may be entered by typeing BASIC. To Quit BASIC, use the BYE command.
 
 Cartridge
 ---------
@@ -5520,8 +5521,7 @@ It's presumed the JUMP command could be used to go to an address, but it always 
 In Basic:
 - To save a tape: CSAVE "x"
 - To load a tape: CLOAD "x"
-
-Image types tested to work are KCC and TAP.
+- To load a sss tape image: CLOAD"A"
 
 $end
 $info=kdeadeye
