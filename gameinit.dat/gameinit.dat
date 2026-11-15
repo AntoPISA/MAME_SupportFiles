@@ -140,28 +140,21 @@ TIPS:
 To start the game, hold down CDE together, and hit 1. To end a ball, hold down CDE together.
 
 $end
-$info=aavenger,atarians,midearth,spcrider,time2000
+$info=aavenger
 $mame
 TIPS:
-Outhole for each game:
-- spcrider: M  (solenoid 5)
-- midearth: M  (solenoid 1)
-- atarians: G  (solenoid unknown)
-- time2000: J  (solenoid 12)
-- aavenger: X  (solenoid 4)
+Outhole is X.
 
 $end
-$info=abc80,abc800c,abc802,abc806
+$info=abc80,abc80l,abc800c,abc800m,abc802,dtc,tkn80
 $mame
 TIPS:
-LUXOR ABC-80 series
-===================
-LOAD CAS:   to load a tape
-SAVE CAS:   to save a tape
+To load a tape: LOAD CAS:
+To save a tape: SAVE CAS:
 
-The manual states you can SAVE name, but this doesn't work.
+The manual states you can SAVE name, but this doesn't work. Motor control only partially works.
 
-Cassette works in ABC80 only
+Tapes are compatible between ABC80, ABC80L, TKN. Tapes are compatible between ABC800C, ABC800M, ABC802, DTC. The 2 groups are not cross-compatible.
 
 $end
 $info=ac1,ac1_32
@@ -233,7 +226,7 @@ Note that left-most digit is not wired up, and therefore will always be blank.
 $end
 $info=acrnsys2,acrnsys3_6809
 $mame
-INITIALIZATION:
+TIPS:
 Commands must be in UPPER case.
 
 To load a tape: LOAD"x"
@@ -306,20 +299,10 @@ T  = goes crazy
 Tape commands are unknown.
 
 $end
-$info=agsoccer,dinoeggs,mystcast,pstlpkr,punchy,usafootb,usafootf,wrldtour
+$info=agsoccer
 $mame
 TIPS:
-Here are the key codes to enable play:
-
-Game                                     NUM    Start game                          End ball
--------------------------------------------------------------------------------------------------
-A G Soccer-Ball                           01    Hold N, hit 8                       (timed game)
-Al's Garage Band Goes On A World Tour     03    Hold ABC, hit 1                     ABC
-USA Football (head to head)               05    Hold N and Quote, hit 8             (timed game)
-Punchy the Clown                          06    Hold EF, hit 1                      (mnw)
-Mystery Castle                            08    Hold CDE, hit 1                     (mnw)
-Pistol Poker                              10    Hold CDE, hit 1                     (mnw)
-USA Football (redemption)                 11    Hold A, hit 1                       (mnw)
+To start the game, hold N and hit 8.
 
 $end
 $info=ai1000,pb2000c
@@ -380,9 +363,7 @@ $end
 $info=al8800bt
 $mame
 TIPS:
-Floppies are not supported.
-
-Oddly, BIN files are. What kind of files are they?
+Floppies are not supported. Oddly, BIN files are.
 
 Press space to input your command line (not return). All numbers are in octal, and all input is to be UPPER case.
 
@@ -392,25 +373,10 @@ Jaaaaaa        - Jump to address
 Maaaaaa        - Modify memory
 
 $end
-$info=ali,biggame,catacomp,cheetah,cue,dragfist,freefall,galaxypi,ironmaid,lazrlord,lightnin,meteorp,nineball,orbitor1,quicksil,seawitch,spltsecp,stargzr,viperp
+$info=ali,biggame,cheetah,cheetahb,cue,dragfist,galaxypi,meteorp,meteorpo,quicksil,seawitch,stargzr
 $mame
 TIPS:
-Here are the key codes to enable play:
-
-Game              NUM  Start game                End ball
------------------------------------------------------------------------------------------------
-Nine Ball         125  X'; hit 1                 X';
-Lightning         126  X./ hit 1                 X./
-Flight 2000       128  X./ hit 1                 X./
-Freefall          134  X./ hit 1                 X./
-Split Second      144  X./ hit 1                 X./
-Catacomb          147  1                         unknown
-Viper             148  X./ hit 1                 X./
-Iron Maiden       151  X./ hit 1                 X./
-Orbitor 1         165  X. hit 1                  X. (last ball is difficult to end)
-Lazer Lord        ---  1                         unknown
-Gamatron          ---  X./ hit 1                 X./
-Others            ---  1                         X
+To end a ball, press [X]
 
 $end
 $info=aligatorp
@@ -419,7 +385,7 @@ INITIALIZATION:
 At the error screen, press 1 to proceed.
 
 $end
-$info=allied
+$info=allied,circa33,disco79,erosone,foathens,heartspd,hoedown,royclark,starshot,suprpick,takefive,thndbolt
 $mame
 TIPS:
 Hold down X while inserting a coin. At the start of each ball, the display will be flashing. You need to hit Z, and then you can get a score. When the ball indicator goes out, your game is over. Game doesn't have a backup battery, so all info is lost at poweroff.
@@ -497,9 +463,7 @@ $end
 $info=altos586
 $mame
 TIPS:
-Floppies don't seem to work.
-
-When in the monitor program, input must be in UPPER case.
+Floppies don't boot, and no known hard drive images. When in the monitor program, input must be in UPPER case.
 
 $end
 $info=altos8600
@@ -608,7 +572,7 @@ $end
 $info=amuse
 $mame
 TIPS:
-The first time you run the game, an ERROR appears because the NVRAM needs initializing. Press [ F2 ] + [ F3 ] to enter TEST MODE. Exit with [ F2 ].
+The first time you run the game, an ERROR appears because the NVRAM needs initializing. Hold [ F2 ] and hit [ F3 ] to enter TEST MODE. Exit with [ F2 ].
 
 SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
@@ -617,14 +581,10 @@ $end
 $info=amust
 $mame
 TIPS:
-Monitor Commands:
------------------
-B = Boot from floppy
-
-Not Working.
+At boot you're in the monitor. It only has one command: B to boot the floppy. This doesn't work.
 
 $end
-$info=andretti,barbwire,bighurt,brooks,cueball,freddy,gladiatp,rescu911,sfightii,shaqattq,smbmush,smbp,snspares,stargatp,teedoffp,waterwld,wcsoccer,wipeout
+$info=andretti,barbwire,bighurt,cueball,freddy,gladiatp,rescu911,sfightii,shaqattq,smbmush,smbp,snspares,stargatp,teedoffp,waterwld,wcsoccer,wipeout
 $mame
 TIPS:
 Setting up must be done before you can play. Press NUM-0, press Left Flipper 3 times, press Right
@@ -649,7 +609,6 @@ Frank Thomas Big Hurt                    745  Hit 1, press EM                   
 Waterworld                               746  Hit 1, press RS                      R
 Mario Andretti                           747  Hit 1, press FN                      N
 Barb Wire                                748  Hit 1, press GO                      G
-Brooks & Dunn                            749  (unfinished prototype)
 Super Mario Brothers Mushroom World     N105  (not working)
 Strikes n Spares                        N111  (not working, press F3 to see the screen)
 machinaZOIS Virtual Training Center           Hit 1, press LM                      M
@@ -657,7 +616,6 @@ machinaZOIS Virtual Training Center           Hit 1, press LM                   
 Status:
 - Some machines are playable
 - Strikes n Spares: sound, needs 2 DMD screens.
-- Brooks & Dunn: roms are missing. Program was not finished, game will never work.
 
 $end
 $info=animalc,kingyosu
@@ -697,8 +655,6 @@ $end
 $info=apexc
 $mame
 TIPS:
-APEXC
-=====
 After mounting a cylinder file, hit Enter to make it run.
 
 $end
@@ -722,9 +678,7 @@ Tapes can only be processed through BASIC. So, load the basic cart from the soft
 CLOAD     to load the tape
 CSAVE     to save.
 
-A tape can only be successfully loaded if the machine it was recorded on has the same amount of RAM as the destination machine.
-
-Even then, tape loading is unreliable and there's no error if things go wrong.
+A tape can only be successfully loaded if the machine it was recorded on has the same amount of RAM as the destination machine. Even then, tape loading is unreliable and there's no error if things go wrong.
 
 $end
 $info=apogee
@@ -949,6 +903,12 @@ The first time you run the game, the EEPROM 17B shows as BAD in the RAM/ROM Chec
 
 SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
+
+$end
+$info=atarians
+$mame
+TIPS:
+Outhole is G.
 
 $end
 $info=athena
@@ -1710,7 +1670,7 @@ TIPS:
 To start the game, hold down CDE together, and hit 1. To end a ball, hold down CDE together.
 
 $end
-$info=kiko_a10,lwar_a83,mnfb_c29,poto_a32,play_a24,robo_a34,ssvc_a26,simp_a27,tmac_a24,torp_e21
+$info=kiko_a10,lwar_a83,mnfb_c29,poto_a32,play_a24,robo_a34,ssvc_a26,tmac_a24,torp_e21
 $mame
 TIPS:
 Here are the key codes to enable play:
@@ -3968,25 +3928,10 @@ The test buttons are unknown. The ball number doesn't show. So, after starting t
 - Meg Aaton: Ball number doesn't show. Can suddenly reboot in the middle of a game. Match digits are reversed.
 
 $end
-$info=flight2k
+$info=flight2k,freefall,gamatron,ironmaid,lightnin,spltsecp,viperp
 $mame
 TIPS:
-Here are the key codes to enable play:
-
-Game              NUM  Start game                End ball
------------------------------------------------------------------------------------------------
-Nine Ball         125  X'; hit 1                 X';
-Lightning         126  X./ hit 1                 X./
-Flight 2000       128  X./ hit 1                 X./
-Freefall          134  X./ hit 1                 X./
-Split Second      144  X./ hit 1                 X./
-Catacomb          147  1                         unknown
-Viper             148  X./ hit 1                 X./
-Iron Maiden       151  X./ hit 1                 X./
-Orbitor 1         165  X. hit 1                  X. (last ball is difficult to end)
-Lazer Lord        ---  1                         unknown
-Gamatron          ---  X./ hit 1                 X./
-Others            ---  1                         X
+To start the game, hold [X][.][/] together and hit 1. To end the ball, hold the same 3 keys.
 
 $end
 $info=fm7,fm77av,fm7740sx,fmnew7
@@ -6351,7 +6296,7 @@ TIPS:
 Supposed to be the same as the PMD85, but it won't load a tape. The only files have no extension and look like HEX files, which is not supported.
 
 $end
-$info=mav_100,mav_200,mac_400,mav_401,mav_402,mav_404g
+$info=mav_100,mav_200,mav_400,mav_401,mav_402,mav_404g
 $mame
 TIPS:
 To start the game, hold down CDE together and hit 1. To end a ball, hold down CDE together and hit F.
@@ -6765,6 +6710,12 @@ After 'ERROR ON CARTRIDGE' press [ 9 ] (SERVICE Key) and then [ F2 ] (TEST) to g
 
 SOURCE:
 http://wiki.mamedev.org/index.php/FAQ:Games
+
+$end
+$info=midearth,spcrider
+$mame
+TIPS:
+Outhole is M.
 
 $end
 $info=mikro80
@@ -7786,6 +7737,12 @@ How to set it up for the first time
 - Next time you start the console, the game will run by itself and you won't have to set up anything.
 
 $end
+$info=nineball
+$mame
+TIPS:
+To start the game, hold [X]['][;] together and hit 1. To end the ball, hold the same 3 keys.
+
+$end
 $info=nor6007a,nor6007b
 $mame
 INITIALIZATION:
@@ -7935,6 +7892,12 @@ To load a tape: LOAD"" (for filetype B), or LMEM"" (for filetype O).
 TAP files don't fully load.
 
 To quit Basic: EXIT (orao103 only)
+
+$end
+$info=orbitor1
+$mame
+TIPS:
+To start the game, hold [X][.] together and hit 1. To end the ball, hold the same 2 keys. The last ball can be difficult to end.
 
 $end
 $info=oric1,orica,telstrat,prav8d,prav8dd
@@ -11038,7 +11001,7 @@ TIPS:
 To start the game, hold down CDE together, and hit 1. To end a ball, hold down CDE together.
 
 $end
-$info=sun1,super6,superslv,sys16
+$info=sun1,super6,sys16
 $mame
 INITIALIZATION:
 H to get a list of commands.
@@ -11502,6 +11465,12 @@ Working floppies boot into cp/m.
 
 
 Non-working floppies need to be in B: after booting cp/m on A: - BUT they seem to be broken/unusable.
+
+$end
+$info=time2000
+$mame
+TIPS:
+Outhole is J.
 
 $end
 $info=timecris
@@ -11989,6 +11958,12 @@ L - list registers
 M - ?
 
 $end
+$info=usafootb
+$mame
+TIPS:
+To start game, hold N and quote toogether, and hit 8.
+
+$end
 $info=ut88
 $mame
 INITIALIZATION:
@@ -12344,6 +12319,12 @@ INITIALIZATION:
 Setting it up:
 
 When you first start WMG, you need to initialise the NVRAM properly. Do this by starting wmg, pressing 1 to cycle through the games list, pressing 2 to run the game. When it says "FACTORY SETTINGS RESTORED", press F3 to return to the menu. Repeat this procedure for all 6 games. After that, quit wmg, then restart. On the Setup menu you can personalise the settings with the 1 and 2 keys. The inputs default to be the same as on the original hardware. You may change any input individually for each game. Note that the WMG hardware has the Flap and Inviso buttons wired together. JOUST can be played by 2 players at the same time, player 1 uses the left joystick and the Flap button, while player 2 uses the right joystick and the Fire button. SPLAT would normally require 4 joysticks, but since the WMG only has 2, it is limited to a one-player game. Cocktail mode is not supported, WMG must be played on an upright only. After playing a game, returning to the menu will return to the place you left from. You can force a return to the Setup by Auto Up and pressing F3. You can also clear out the menu's NVRAM (not the game's NVRAM), by holding down L and pressing F3.
+
+$end
+$info=wrldtour
+$mame
+TIPS:
+To start the game, hold B and hit 1.
 
 $end
 $info=wtennis
